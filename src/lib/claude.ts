@@ -1,4 +1,7 @@
+import Anthropic from '@anthropic-ai/sdk';
 import { QuestionType } from "@/types/question";
+
+export const getQuestionTypes = () => QUESTION_TYPES;
 
 const QUESTION_TYPES: QuestionType[] = [
   {
@@ -13,8 +16,6 @@ const QUESTION_TYPES: QuestionType[] = [
   },
 ];
 
-export const getQuestionTypes = () => QUESTION_TYPES;
-
 export const generateQuestion = async (
   type: QuestionType,
   text: string
@@ -25,27 +26,23 @@ export const generateQuestion = async (
     throw new Error("API 키가 설정되지 않았습니다.");
   }
 
-  const response = await fetch("https://api.anthropic.com/v1/messages", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "x-api-key": apiKey,
-      "anthropic-version": "2023-06-01"
-    },
-    body: JSON.stringify({
+  const anthropic = new Anthropic({
+    apiKey: apiKey,
+  });
+
+  try {
+    const message = await anthropic.messages.create({
       model: "claude-3-opus-20240229",
       max_tokens: 1024,
       messages: [{
         role: "user",
         content: `${type.prompt}\n\n지문: ${text}`
       }]
-    }),
-  });
+    });
 
-  if (!response.ok) {
-    throw new Error("API 요청 실패");
+    return message.content[0].text;
+  } catch (error) {
+    console.error('Claude API Error:', error);
+    throw new Error("문제 생성 중 오류가 발생했습니다.");
   }
-
-  const data = await response.json();
-  return data.content[0].text;
 };

@@ -4,12 +4,14 @@ import { Input } from "@/components/ui/input";
 import {
   Dialog,
   DialogContent,
+  DialogDescription,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Settings, CheckCircle, XCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import Anthropic from '@anthropic-ai/sdk';
 
 export const APIConfig = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,21 +21,17 @@ export const APIConfig = () => {
 
   const testConnection = async () => {
     try {
-      const response = await fetch("https://api.anthropic.com/v1/messages", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "x-api-key": apiKey,
-          "anthropic-version": "2023-06-01"
-        },
-        body: JSON.stringify({
-          model: "claude-3-opus-20240229",
-          max_tokens: 1,
-          messages: [{ role: "user", content: "test" }]
-        })
+      const anthropic = new Anthropic({
+        apiKey: apiKey,
       });
 
-      if (response.ok) {
+      const response = await anthropic.messages.create({
+        model: "claude-3-opus-20240229",
+        max_tokens: 1,
+        messages: [{ role: "user", content: "test" }]
+      });
+
+      if (response) {
         setIsConnected(true);
         localStorage.setItem("CLAUDE_API_KEY", apiKey);
         toast({
@@ -41,19 +39,12 @@ export const APIConfig = () => {
           description: "Claude API가 성공적으로 연동되었습니다.",
         });
         setIsOpen(false);
-      } else {
-        setIsConnected(false);
-        toast({
-          title: "연결 실패",
-          description: "API 키를 확인해주세요.",
-          variant: "destructive",
-        });
       }
     } catch (error) {
       setIsConnected(false);
       toast({
         title: "연결 실패",
-        description: "API 연동 중 오류가 발생했습니다.",
+        description: "API 키를 확인해주세요.",
         variant: "destructive",
       });
     }
@@ -70,6 +61,9 @@ export const APIConfig = () => {
         <DialogContent>
           <DialogHeader>
             <DialogTitle>Claude API 설정</DialogTitle>
+            <DialogDescription>
+              API 키를 입력하여 Claude API를 연동하세요.
+            </DialogDescription>
           </DialogHeader>
           <div className="grid gap-4 py-4">
             <Input
