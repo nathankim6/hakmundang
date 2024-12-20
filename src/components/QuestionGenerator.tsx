@@ -47,16 +47,10 @@ export const QuestionGenerator = () => {
   return (
     <div className="flex gap-8">
       <div className="w-64 flex-shrink-0">
-        <TypeSelector
-          selectedType={selectedType}
-          onSelect={setSelectedType}
-        />
+        <TypeSelector selectedType={selectedType} onSelect={setSelectedType} />
       </div>
       <div className="flex-1 space-y-8">
-        <TextInput
-          value={text}
-          onChange={setText}
-        />
+        <TextInput value={text} onChange={setText} />
         <div className="flex justify-center gap-4">
           <Button
             onClick={handleGenerate}
@@ -67,9 +61,7 @@ export const QuestionGenerator = () => {
             {isLoading ? "생성 중..." : "문제 생성하기"}
           </Button>
         </div>
-        {generatedQuestion && (
-          <GeneratedQuestion content={generatedQuestion} />
-        )}
+        {generatedQuestion && <GeneratedQuestion content={generatedQuestion} />}
       </div>
     </div>
   );
