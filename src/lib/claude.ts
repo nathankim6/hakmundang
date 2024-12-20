@@ -19,11 +19,17 @@ export const generateQuestion = async (
   type: QuestionType,
   text: string
 ): Promise<string> => {
+  const apiKey = localStorage.getItem("CLAUDE_API_KEY");
+  
+  if (!apiKey) {
+    throw new Error("API 키가 설정되지 않았습니다.");
+  }
+
   const response = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "x-api-key": "YOUR_API_KEY", // 실제 구현시 환경변수나 사용자 입력으로 대체
+      "x-api-key": apiKey,
       "anthropic-version": "2023-06-01"
     },
     body: JSON.stringify({
