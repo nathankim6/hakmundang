@@ -45,28 +45,32 @@ export const QuestionGenerator = () => {
   };
 
   return (
-    <div className="space-y-8">
-      <TypeSelector
-        selectedType={selectedType}
-        onSelect={setSelectedType}
-      />
-      <TextInput
-        value={text}
-        onChange={setText}
-      />
-      <div className="flex justify-center gap-4">
-        <Button
-          onClick={handleGenerate}
-          disabled={isLoading}
-          className="w-full max-w-md bg-gradient-to-r from-primary via-accent to-primary hover:opacity-90 transition-all duration-300 animate-glow"
-        >
-          <Sparkles className="w-4 h-4 mr-2" />
-          {isLoading ? "생성 중..." : "문제 생성하기"}
-        </Button>
+    <div className="flex gap-8">
+      <div className="w-64 flex-shrink-0">
+        <TypeSelector
+          selectedType={selectedType}
+          onSelect={setSelectedType}
+        />
       </div>
-      {generatedQuestion && (
-        <GeneratedQuestion content={generatedQuestion} />
-      )}
+      <div className="flex-1 space-y-8">
+        <TextInput
+          value={text}
+          onChange={setText}
+        />
+        <div className="flex justify-center gap-4">
+          <Button
+            onClick={handleGenerate}
+            disabled={isLoading}
+            className="w-full max-w-md bg-gradient-to-r from-primary via-accent to-primary hover:opacity-90 transition-all duration-300 animate-glow"
+          >
+            <Sparkles className="w-4 h-4 mr-2" />
+            {isLoading ? "생성 중..." : "문제 생성하기"}
+          </Button>
+        </div>
+        {generatedQuestion && (
+          <GeneratedQuestion content={generatedQuestion} />
+        )}
+      </div>
     </div>
   );
 };

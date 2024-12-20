@@ -18,13 +18,15 @@ export const TypeSelector = ({ selectedType, onSelect }: TypeSelectorProps) => {
 
   return (
     <div className="space-y-4">
-      <h2 className="text-xl font-semibold text-primary animate-sparkle">문제 유형</h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <h2 className="text-xl font-semibold text-primary animate-sparkle flex items-center gap-2">
+        <span className="text-2xl">👑</span> Question Types
+      </h2>
+      <div className="grid grid-cols-1 gap-2 max-h-[70vh] overflow-y-auto pr-2">
         {types.map((type) => (
           <button
             key={type.id}
             onClick={() => onSelect(type)}
-            className={`p-4 rounded-lg border-2 transition-all duration-300 ${
+            className={`p-3 rounded-lg border-2 transition-all duration-300 text-left ${
               selectedType?.id === type.id
                 ? "border-primary bg-primary/20 text-primary"
                 : "border-muted hover:border-primary/50 hover:bg-primary/10"
