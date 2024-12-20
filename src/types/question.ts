@@ -1,0 +1,12 @@
+export type QuestionType = {
+  id: string;
+  name: string;
+  prompt: string;
+};
+
+export type GeneratedQuestion = {
+  question: string;
+  options?: string[];
+  answer?: string;
+  explanation?: string;
+};
