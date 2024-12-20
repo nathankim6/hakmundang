@@ -7,16 +7,17 @@ interface TextInputProps {
 
 export const TextInput = ({ value, onChange }: TextInputProps) => {
   return (
-    <div className="space-y-2">
-      <label className="block text-sm font-medium text-gray-700">
-        지문 입력
-      </label>
-      <Textarea
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        placeholder="문제로 만들 지문을 입력하세요"
-        className="min-h-[200px]"
-      />
+    <div className="space-y-4">
+      <h2 className="text-xl font-semibold text-primary animate-sparkle">지문 입력</h2>
+      <div className="relative">
+        <Textarea
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
+          placeholder="문제로 만들 지문을 입력하세요"
+          className="min-h-[200px] bg-card border-2 border-muted focus:border-primary transition-colors duration-300"
+        />
+        <div className="absolute inset-0 pointer-events-none border-2 border-primary/20 rounded-md" />
+      </div>
     </div>
   );
 };

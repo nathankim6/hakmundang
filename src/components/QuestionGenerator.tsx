@@ -6,6 +6,7 @@ import { generateQuestion } from "@/lib/claude";
 import { QuestionType } from "@/types/question";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
+import { Sparkles } from "lucide-react";
 
 export const QuestionGenerator = () => {
   const [selectedType, setSelectedType] = useState<QuestionType | null>(null);
@@ -44,7 +45,7 @@ export const QuestionGenerator = () => {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       <TypeSelector
         selectedType={selectedType}
         onSelect={setSelectedType}
@@ -53,12 +54,13 @@ export const QuestionGenerator = () => {
         value={text}
         onChange={setText}
       />
-      <div className="flex justify-center">
+      <div className="flex justify-center gap-4">
         <Button
           onClick={handleGenerate}
           disabled={isLoading}
-          className="w-full max-w-xs"
+          className="w-full max-w-md bg-gradient-to-r from-primary via-accent to-primary hover:opacity-90 transition-all duration-300 animate-glow"
         >
+          <Sparkles className="w-4 h-4 mr-2" />
           {isLoading ? "생성 중..." : "문제 생성하기"}
         </Button>
       </div>
