@@ -28,6 +28,7 @@ export const generateQuestion = async (
 
   const anthropic = new Anthropic({
     apiKey: apiKey,
+    dangerouslyAllowBrowser: true
   });
 
   try {

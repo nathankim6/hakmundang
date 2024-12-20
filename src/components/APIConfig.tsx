@@ -32,6 +32,7 @@ export const APIConfig = () => {
 
       const anthropic = new Anthropic({
         apiKey: apiKey,
+        dangerouslyAllowBrowser: true
       });
 
       const response = await anthropic.messages.create({
