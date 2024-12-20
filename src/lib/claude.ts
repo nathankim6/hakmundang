@@ -40,7 +40,13 @@ export const generateQuestion = async (
       }]
     });
 
-    return message.content[0].text;
+    // Handle different content block types
+    const textContent = message.content.find(block => block.type === 'text');
+    if (!textContent || textContent.type !== 'text') {
+      throw new Error("예상치 못한 응답 형식입니다.");
+    }
+
+    return textContent.text;
   } catch (error) {
     console.error('Claude API Error:', error);
     throw new Error("문제 생성 중 오류가 발생했습니다.");
