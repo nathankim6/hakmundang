@@ -40,9 +40,12 @@ export const generateQuestion = async (
       }]
     });
 
-    // Handle different content block types
-    const textContent = message.content.find(block => block.type === 'text');
-    if (!textContent || textContent.type !== 'text') {
+    if (!message.content || message.content.length === 0) {
+      throw new Error("API 응답이 비어있습니다.");
+    }
+
+    const textContent = message.content[0];
+    if (textContent.type !== 'text') {
       throw new Error("예상치 못한 응답 형식입니다.");
     }
 
