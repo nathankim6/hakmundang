@@ -1,4 +1,4 @@
-import { Document, Paragraph, TextRun } from 'docx';
+import { Document, Paragraph, TextRun, Packer } from 'docx';
 import { saveAs } from 'file-saver';
 
 interface QuestionData {
