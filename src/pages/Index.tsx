@@ -21,11 +21,11 @@ const Index = () => {
             <div className="absolute w-[400px] h-[400px] bg-primary/15 rounded-full blur-[60px] animate-pulse delay-700" />
           </div>
           
-          <h1 className="text-7xl font-bold animate-title tracking-wider mb-6 relative group">
-            <span className="inline-block transform transition-transform group-hover:scale-105 duration-300">
+          <h1 className="text-7xl font-bold tracking-wider mb-6 relative group">
+            <span className="inline-block transform transition-transform group-hover:scale-105 duration-300 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-primary to-purple-600 drop-shadow-[0_0_10px_rgba(155,135,245,0.8)]">
               ORUN AI QUIZ MAKER
             </span>
-            <div className="absolute inset-0 bg-primary/20 blur-3xl -z-10 group-hover:bg-primary/30 transition-colors duration-300" />
+            <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 blur-lg opacity-75 group-hover:opacity-100 transition-opacity duration-500 -z-10" />
           </h1>
           
           <div className="relative h-1 max-w-2xl mx-auto overflow-hidden">
