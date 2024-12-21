@@ -142,10 +142,15 @@ export const QuestionGenerator = () => {
                   <Button
                     onClick={() => handleGenerate(typeEntry.type.id, passage.id)}
                     disabled={isLoading[passage.id]}
-                    className="w-full max-w-md metallic-button"
+                    className="w-full max-w-md bg-gradient-to-r from-primary via-primary/90 to-primary relative group overflow-hidden transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl"
                   >
-                    <Sparkles className="w-4 h-4 mr-2" />
-                    {isLoading[passage.id] ? "생성 중..." : "문제 생성하기"}
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-shimmer" />
+                    <div className="relative flex items-center justify-center gap-2">
+                      <Sparkles className="w-5 h-5 animate-pulse" />
+                      <span className="font-semibold tracking-wide">
+                        {isLoading[passage.id] ? "생성 중..." : "문제 생성하기"}
+                      </span>
+                    </div>
                   </Button>
                 </div>
                 
