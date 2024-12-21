@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -36,13 +36,16 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: linear-gradient(to bottom, #000000, #0a0a0a);
-    background-image: 
-      radial-gradient(circle at 50% 50%, hsla(271, 81%, 56%, 0.08) 0%, transparent 60%);
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: -0.02em;
   }
 }
 
@@ -54,8 +57,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(155, 135, 245, 0.4);
-  filter: drop-shadow(0 0 4px rgba(155, 135, 245, 0.4));
+  text-shadow: 0 0 2px rgba(155, 135, 245, 0.8);
 }
 
 @keyframes titleAnimation {
@@ -65,41 +67,32 @@
 }
 
 .metallic-border {
-  background: linear-gradient(145deg, rgba(155, 135, 245, 0.08), rgba(217, 70, 239, 0.04));
-  border: 1px solid rgba(155, 135, 245, 0.15);
-  backdrop-filter: blur(8px);
+  background: rgba(15, 15, 15, 0.8);
+  border: 1px solid rgba(155, 135, 245, 0.2);
+  backdrop-filter: blur(4px);
   box-shadow: 
-    0 4px 12px rgba(155, 135, 245, 0.08),
-    inset 0 0 16px rgba(155, 135, 245, 0.04);
+    0 4px 6px rgba(0, 0, 0, 0.1),
+    inset 0 0 8px rgba(155, 135, 245, 0.05);
 }
 
 .metallic-button-type {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(145deg, rgba(155, 135, 245, 0.08), rgba(217, 70, 239, 0.04));
-  border: 1px solid rgba(155, 135, 245, 0.15);
+  background: rgba(15, 15, 15, 0.9);
+  border: 1px solid rgba(155, 135, 245, 0.2);
+  font-weight: 500;
 }
 
 .metallic-button-type:hover {
-  transform: translateY(-2px);
-  background: linear-gradient(145deg, rgba(155, 135, 245, 0.12), rgba(217, 70, 239, 0.08));
-  border-color: rgba(155, 135, 245, 0.25);
+  transform: translateY(-1px);
+  background: rgba(20, 20, 20, 0.95);
+  border-color: rgba(155, 135, 245, 0.3);
 }
 
 .metallic-button-type.selected {
-  background: linear-gradient(145deg, rgba(155, 135, 245, 0.15), rgba(217, 70, 239, 0.1));
+  background: rgba(25, 25, 25, 1);
   box-shadow: 
-    0 0 16px rgba(155, 135, 245, 0.2),
-    inset 0 0 12px rgba(155, 135, 245, 0.15);
-}
-
-@layer utilities {
-  .animate-shimmer {
-    animation: shimmer 2s infinite;
-  }
-  
-  .animate-spin-slow {
-    animation: spin-slow 3s linear infinite;
-  }
+    0 0 12px rgba(155, 135, 245, 0.15),
+    inset 0 0 8px rgba(155, 135, 245, 0.1);
 }
