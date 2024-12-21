@@ -6,10 +6,10 @@ interface GeneratedQuestionProps {
 
 export const GeneratedQuestion = ({ content }: GeneratedQuestionProps) => {
   return (
-    <Card className="mt-8 metallic-border bg-card/80 backdrop-blur">
+    <Card className="mt-8 bg-secondary/50 border border-primary/20 backdrop-blur-sm">
       <CardContent className="p-6">
         <div className="prose prose-invert max-w-none">
-          <h3 className="text-xl font-bold text-primary mb-4 animate-sparkle">생성된 문제</h3>
+          <h3 className="text-2xl font-bold text-primary animate-title mb-6">Generated Question</h3>
           <div className="whitespace-pre-wrap text-foreground/90 leading-relaxed">{content}</div>
         </div>
       </CardContent>

@@ -10,19 +10,17 @@ export const TypeSelector = ({ selectedType, onSelect }: TypeSelectorProps) => {
   const types = getQuestionTypes();
 
   return (
-    <div className="space-y-4">
-      <h2 className="text-xl font-bold text-primary animate-sparkle flex items-center gap-2">
-        <span className="text-2xl">👑</span> Question Types
+    <div className="space-y-6">
+      <h2 className="text-2xl font-bold text-primary animate-title flex items-center gap-3">
+        <span className="text-3xl">✨</span> Question Types
       </h2>
-      <div className="grid grid-cols-1 gap-2 max-h-[70vh] overflow-y-auto pr-2">
+      <div className="grid grid-cols-1 gap-3 max-h-[70vh] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-primary/20 scrollbar-track-transparent">
         {types.map((type) => (
           <button
             key={type.id}
             onClick={() => onSelect(type)}
-            className={`p-4 rounded-lg transition-all duration-300 text-left metallic-border ${
-              selectedType?.id === type.id
-                ? "border-primary bg-primary/20 text-primary shadow-lg"
-                : "hover:border-primary/50 hover:bg-primary/10"
+            className={`type-button ${
+              selectedType?.id === type.id ? "selected" : ""
             }`}
           >
             <span className="font-medium tracking-wide">{type.name}</span>
