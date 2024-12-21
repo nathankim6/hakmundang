@@ -54,11 +54,11 @@
 .animate-title {
   background: linear-gradient(
     to right,
-    #996515,  /* Darker gold */
-    #DAA520,  /* Goldenrod */
-    #B8860B,  /* Dark goldenrod */
-    #CD853F,  /* Peru */
-    #996515   /* Darker gold */
+    #8B4513,  /* Saddle Brown */
+    #8B4513,  /* Saddle Brown */
+    #704214,  /* Darker Brown */
+    #8B4513,  /* Saddle Brown */
+    #8B4513   /* Saddle Brown */
   );
   background-size: 200% auto;
   -webkit-background-clip: text;
@@ -66,7 +66,7 @@
   color: transparent;
   animation: shine 3s linear infinite;
   font-weight: 900;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  text-shadow: none;
   letter-spacing: 2px;
   position: relative;
 }
@@ -78,8 +78,7 @@
   left: -10%;
   right: -10%;
   bottom: -10%;
-  background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
-  animation: sparkle 2s infinite;
+  background: none;
   pointer-events: none;
 }
 
