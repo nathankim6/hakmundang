@@ -18,7 +18,7 @@ export const TextInput = ({ value, onChange }: TextInputProps) => {
           value={value}
           onChange={(e) => onChange(e.target.value)}
           placeholder="Enter your text here..."
-          className="h-[120px] bg-secondary/50 border-2 border-primary/20 focus:border-primary transition-all duration-300 rounded-lg text-foreground placeholder:text-muted-foreground resize-none relative backdrop-blur-sm"
+          className="h-[80px] w-full max-w-[500px] bg-secondary/50 border-2 border-primary/20 focus:border-primary transition-all duration-300 rounded-lg text-foreground placeholder:text-muted-foreground resize-none relative backdrop-blur-sm"
         />
       </div>
     </div>
