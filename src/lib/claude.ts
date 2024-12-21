@@ -54,7 +54,7 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
     let prompt = "";
     
     if (type.id === "title") {
-      prompt = `당신은 영어 지문을 바탕으로 '제목 고르기' 문제를 만드는 전문가입니다. 다음 지침에 따라 문제를 만들어주세요:
+      prompt = `당신은 영어 지문을 바탕으로 '제목 고르기' 문제를 만드는 전문 수능 영어 출제위원입니다. 다음 지침에 따라 문제를 만들어주세요:
 
 1. 입력된 지문을 꼼꼼히 분석하여 다음 사항들을 파악하세요:
    - 글의 주요 주제
