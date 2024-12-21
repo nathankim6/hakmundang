@@ -28,11 +28,13 @@ export const QuestionGenerator = () => {
     setIsLoading(true);
     try {
       const result = await generateQuestion(selectedType, text);
-      setGeneratedQuestion(result);
-      toast({
-        title: "문제 생성 완료",
-        description: "AI가 문제를 생성했습니다.",
-      });
+      if (typeof result === 'string') {
+        setGeneratedQuestion(result);
+        toast({
+          title: "문제 생성 완료",
+          description: "AI가 문제를 생성했습니다.",
+        });
+      }
     } catch (error) {
       toast({
         title: "오류 발생",
