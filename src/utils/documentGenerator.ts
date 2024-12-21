@@ -1,4 +1,4 @@
-import { Document, Paragraph, TextRun, Packer } from 'docx';
+import { Document, Paragraph, TextRun, Packer, PageBreak } from 'docx';
 import { saveAs } from 'file-saver';
 
 interface QuestionData {
@@ -12,50 +12,75 @@ export const generateDocument = async (questions: QuestionData[]) => {
       properties: {},
       children: [
         // Questions Section
-        ...questions.map(q => new Paragraph({
-          children: [
-            new TextRun({
-              text: `문제 ${q.questionNumber}\n`,
-              bold: true,
-            }),
-            new TextRun(q.content),
-            new TextRun("\n\n"),
-          ],
-        })),
-
-        // Answers and Explanations Section
-        new Paragraph({
-          children: [
-            new TextRun({
-              text: "\n정답 및 해설\n",
-              bold: true,
-              size: 28,
-            }),
-          ],
-        }),
-        
-        ...questions.map(q => {
-          const content = q.content;
-          const answerMatch = content.match(/\[정답\] (.*?)\n/);
-          const explanationMatch = content.match(/\[해설\] (.*?)(?=(\n|$))/);
-          
-          return new Paragraph({
+        ...questions.flatMap((q, index) => [
+          new Paragraph({
             children: [
               new TextRun({
                 text: `문제 ${q.questionNumber}\n`,
                 bold: true,
+                size: 24
               }),
               new TextRun({
-                text: `정답: ${answerMatch?.[1] || '정답 없음'}\n`,
-              }),
-              new TextRun({
-                text: `해설: ${explanationMatch?.[1] || '해설 없음'}\n\n`,
-              }),
-            ],
-          });
+                text: q.content,
+                size: 24
+              })
+            ]
+          }),
+          // Add two line breaks between questions
+          new Paragraph({
+            children: [new TextRun("\n")]
+          }),
+          new Paragraph({
+            children: [new TextRun("\n")]
+          })
+        ]),
+
+        // Page break before answers section
+        new Paragraph({
+          children: [new TextRun({ break: 1 })]
         }),
-      ],
-    }],
+
+        // Answers and Explanations Section Title
+        new Paragraph({
+          children: [
+            new TextRun({
+              text: "정답 및 해설\n\n",
+              bold: true,
+              size: 28
+            })
+          ]
+        }),
+        
+        // Answers and Explanations Content
+        ...questions.flatMap(q => {
+          const content = q.content;
+          const answerMatch = content.match(/\[정답\] (.*?)\n/);
+          const explanationMatch = content.match(/\[해설\] (.*?)(?=(\n|$))/);
+          
+          return [
+            new Paragraph({
+              children: [
+                new TextRun({
+                  text: `문제 ${q.questionNumber}\n`,
+                  bold: true,
+                  size: 24
+                }),
+                new TextRun({
+                  text: `정답: ${answerMatch?.[1] || '정답 없음'}\n`,
+                  size: 24
+                }),
+                new TextRun({
+                  text: `해설: ${explanationMatch?.[1] || '해설 없음'}\n`,
+                  size: 24
+                }),
+                // Add one line break after each answer
+                new TextRun("\n")
+              ]
+            })
+          ];
+        })
+      ]
+    }]
   });
 
   const buffer = await Packer.toBlob(doc);
