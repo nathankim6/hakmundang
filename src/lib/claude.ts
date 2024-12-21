@@ -40,14 +40,15 @@ const questionTypes: QuestionType[] = [
 export const getQuestionTypes = () => questionTypes;
 
 export const generateQuestion = async (type: QuestionType, text: string) => {
-  const client = new Anthropic({
-    apiKey: localStorage.getItem("claude_api_key") || "",
-  });
+  try {
+    const client = new Anthropic({
+      apiKey: localStorage.getItem("claude_api_key") || "",
+    });
 
-  let prompt = "";
-  
-  if (type.id === "title") {
-    prompt = `Generate a title selection question based on the following text. Follow these steps:
+    let prompt = "";
+    
+    if (type.id === "title") {
+      prompt = `Generate a title selection question based on the following text. Follow these steps:
 
 1. Analyze the text to identify:
    - Main topic
@@ -75,18 +76,27 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
 [해설] [Explanation in Korean about why the third option is the best title]
 
 Here's the text to analyze: ${text}`;
-  } else {
-    prompt = `Generate a question of type ${type.name} based on the following text: ${text}`;
+    } else {
+      prompt = `Generate a question of type ${type.name} based on the following text: ${text}`;
+    }
+
+    const response = await client.messages.create({
+      model: "claude-3-sonnet-20240229",
+      messages: [{
+        role: "user",
+        content: prompt
+      }],
+      max_tokens: 1000,
+      temperature: 0.7,
+    });
+
+    if (!response.content) {
+      throw new Error("No content received from Claude API");
+    }
+
+    return response.content;
+  } catch (error) {
+    console.error("Error generating question:", error);
+    throw new Error("문제 생성 중 오류가 발생했습니다. 다시 시도해 주세요.");
   }
-
-  const response = await client.messages.create({
-    model: "claude-3-sonnet-20240229",
-    messages: [{
-      role: "user",
-      content: prompt
-    }],
-    max_tokens: 150,
-  });
-
-  return response.content;
 };
