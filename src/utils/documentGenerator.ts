@@ -12,30 +12,28 @@ export const generateDocument = async (questions: QuestionData[]) => {
       properties: {},
       children: [
         // Questions Section
-        ...questions.flatMap((q) => {
+        ...questions.map((q) => {
           // Split content into question part and answer/explanation part
           const parts = q.content.split('[정답]');
           const questionPart = parts[0].trim();
           
-          return [
-            new Paragraph({
-              children: [
-                new TextRun({
-                  text: `문제 ${q.questionNumber}\n`,
-                  bold: true,
-                  size: 24
-                }),
-                new TextRun({
-                  text: questionPart,
-                  size: 24
-                })
-              ]
-            }),
-            // Add a single line break after each question
-            new Paragraph({
-              children: [new TextRun("\n")]
-            })
-          ];
+          return new Paragraph({
+            children: [
+              new TextRun({
+                text: `문제 ${q.questionNumber}\n`,
+                bold: true,
+                size: 24
+              }),
+              new TextRun({
+                text: questionPart,
+                size: 24
+              }),
+              new TextRun({
+                text: "\n\n",  // Add spacing between questions
+                size: 24
+              })
+            ]
+          });
         }),
 
         // Page break before answers section
