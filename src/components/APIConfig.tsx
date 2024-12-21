@@ -1,109 +1,78 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Settings, CheckCircle, XCircle } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
-import Anthropic from '@anthropic-ai/sdk';
+import { Label } from "@/components/ui/label";
 
-export const APIConfig = () => {
+interface APIResponse {
+  success: boolean;
+  message: string;
+}
+
+export function APIConfig() {
   const [apiKey, setApiKey] = useState("");
-  const [isConnected, setIsConnected] = useState(false);
-  const [showSuccessEffect, setShowSuccessEffect] = useState(false);
-  const { toast } = useToast();
+  const [testResult, setTestResult] = useState<APIResponse | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
 
-  const testConnection = async () => {
+  const handleTestConnection = async () => {
+    if (!apiKey) {
+      setTestResult({
+        success: false,
+        message: "API 키를 입력해주세요.",
+      });
+      return;
+    }
+
+    setIsLoading(true);
     try {
-      if (!apiKey.trim().startsWith('sk-')) {
-        toast({
-          title: "API 키 형식 오류",
-          description: "올바른 Claude API 키를 입력해주세요. (sk-로 시작)",
-          variant: "destructive",
-        });
-        return;
-      }
-
-      const anthropic = new Anthropic({
-        apiKey: apiKey,
-        dangerouslyAllowBrowser: true
+      const response = await fetch("/api/test-connection", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ apiKey }),
       });
 
-      const response = await anthropic.messages.create({
-        model: "claude-3-opus-20240229",
-        max_tokens: 1,
-        messages: [{ role: "user", content: "test" }]
-      });
-
-      if (response) {
-        setIsConnected(true);
-        localStorage.setItem("CLAUDE_API_KEY", apiKey);
-        setShowSuccessEffect(true);
-        setTimeout(() => setShowSuccessEffect(false), 2000);
-        toast({
-          title: "연결 성공",
-          description: "Claude API가 성공적으로 연동되었습니다.",
-        });
-      }
+      const data = await response.json();
+      setTestResult(data);
     } catch (error) {
-      console.error("Claude API Error:", error);
-      setIsConnected(false);
-      
-      let errorMessage = "API 키를 확인해주세요.";
-      if (error instanceof Error) {
-        if (error.message.includes("401")) {
-          errorMessage = "잘못된 API 키입니다. 다시 확인해주세요.";
-        } else if (error.message.includes("403")) {
-          errorMessage = "API 키의 권한이 없습니다.";
-        } else if (error.message.includes("429")) {
-          errorMessage = "너무 많은 요청이 발생했습니다. 잠시 후 다시 시도해주세요.";
-        }
-      }
-
-      toast({
-        title: "연결 실패",
-        description: errorMessage,
-        variant: "destructive",
+      setTestResult({
+        success: false,
+        message: "연결 테스트 중 오류가 발생했습니다.",
       });
+    } finally {
+      setIsLoading(false);
     }
   };
 
   return (
     <div className="space-y-4">
-      <div className="flex items-center justify-between">
-        <h2 className="text-2xl font-bold flex items-center gap-2">
-          <Settings className="h-6 w-6" />
-          Claude API 설정
-        </h2>
-        {isConnected ? (
-          <div className="relative">
-            <CheckCircle className="h-5 w-5 text-green-500" />
-            {showSuccessEffect && (
-              <>
-                <div className="absolute inset-0 animate-ping rounded-full bg-green-500/30" />
-                <div className="absolute inset-[-8px] animate-pulse rounded-full bg-green-500/20" />
-                <div className="absolute inset-[-16px] animate-pulse delay-75 rounded-full bg-green-500/10" />
-              </>
-            )}
-          </div>
-        ) : (
-          <XCircle className="h-5 w-5 text-red-500" />
-        )}
+      <div className="space-y-2">
+        <Label htmlFor="apiKey">Claude API Key</Label>
+        <div className="flex space-x-2">
+          <Input
+            id="apiKey"
+            type="password"
+            value={apiKey}
+            onChange={(e) => setApiKey(e.target.value)}
+            className="flex-1"
+          />
+          <Button onClick={handleTestConnection}>
+            확인
+          </Button>
+        </div>
       </div>
       
-      <div className="flex gap-4">
-        <Input
-          placeholder="API 키를 입력하세요"
-          type="password"
-          value={apiKey}
-          onChange={(e) => setApiKey(e.target.value)}
-          className="flex-1"
-        />
-        <Button 
-          onClick={testConnection}
-          className="bg-gradient-to-r from-[#9b87f5] via-[#7E69AB] to-[#6E59A5] hover:scale-105 transition-all duration-300"
+      {testResult && (
+        <div
+          className={`p-4 rounded-md ${
+            testResult.success
+              ? "bg-green-100 text-green-700"
+              : "bg-red-100 text-red-700"
+          }`}
         >
-          연결 테스트
-        </Button>
-      </div>
+          {testResult.message}
+        </div>
+      )}
     </div>
   );
-};
+}

@@ -5,12 +5,12 @@ const Index = () => {
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8 relative">
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-50 z-0" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white via-[#F1F0FB] to-[#E5DEFF] z-0" />
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
       </div>
 
-      <div className="max-w-7xl mx-auto space-y-8 relative z-10">
+      <div className="max-w-7xl mx-auto space-y-4 relative z-10">
         <div className="flex items-center justify-center space-x-6">
           <img 
             src="/lovable-uploads/352a49ca-b123-4f07-992a-cf59e4b7058a.png" 
