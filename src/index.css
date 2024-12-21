@@ -54,11 +54,11 @@
 .animate-title {
   background: linear-gradient(
     to right,
-    #8B4513,  /* Saddle Brown */
-    #8B4513,  /* Saddle Brown */
-    #704214,  /* Darker Brown */
-    #8B4513,  /* Saddle Brown */
-    #8B4513   /* Saddle Brown */
+    #4B2F1C,  /* Very Dark Brown */
+    #4B2F1C,  /* Very Dark Brown */
+    #3B1F0F,  /* Darker Brown */
+    #4B2F1C,  /* Very Dark Brown */
+    #4B2F1C   /* Very Dark Brown */
   );
   background-size: 200% auto;
   -webkit-background-clip: text;
