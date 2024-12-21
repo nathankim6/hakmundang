@@ -27,7 +27,7 @@ const Index = () => {
           </h1>
           <div className="h-1 bg-gradient-to-r from-transparent via-primary to-transparent max-w-2xl mx-auto mb-8" />
           
-          <div className="max-w-4xl mx-auto mb-12">
+          <div className="max-w-2xl mx-auto mb-12">
             <Carousel
               opts={{
                 align: "start",
@@ -37,12 +37,12 @@ const Index = () => {
             >
               <CarouselContent>
                 {schoolLogos.map((logo, index) => (
-                  <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/4">
+                  <CarouselItem key={index} className="md:basis-1/6">
                     <div className="p-2">
-                      <div className="rounded-full overflow-hidden bg-white/5 backdrop-blur-sm p-4 hover:scale-105 transition-transform duration-300 metallic-border">
+                      <div className="rounded-full overflow-hidden bg-white/5 backdrop-blur-sm p-2 hover:scale-105 transition-transform duration-300 metallic-border">
                         <img
                           src={logo}
-                          alt={`School logo ${index + 1}`}
+                          alt=""
                           className="w-full h-auto object-contain"
                         />
                       </div>
