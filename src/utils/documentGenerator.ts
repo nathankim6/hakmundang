@@ -12,31 +12,38 @@ export const generateDocument = async (questions: QuestionData[]) => {
       properties: {},
       children: [
         // Questions Section
-        ...questions.flatMap((q, index) => [
-          new Paragraph({
-            children: [
-              new TextRun({
-                text: `문제 ${q.questionNumber}\n`,
-                bold: true,
-                size: 24
-              }),
-              new TextRun({
-                text: q.content,
-                size: 24
-              })
-            ]
-          }),
-          // Add three line breaks between questions for better readability
-          new Paragraph({
-            children: [new TextRun("\n")]
-          }),
-          new Paragraph({
-            children: [new TextRun("\n")]
-          }),
-          new Paragraph({
-            children: [new TextRun("\n")]
-          })
-        ]),
+        ...questions.flatMap((q, index) => {
+          // Split content into question part and answer/explanation part
+          const parts = q.content.split('[정답]');
+          const questionPart = parts[0].trim();
+          const answerPart = parts[1] ? '[정답]' + parts[1] : '';
+          
+          return [
+            new Paragraph({
+              children: [
+                new TextRun({
+                  text: `문제 ${q.questionNumber}\n`,
+                  bold: true,
+                  size: 24
+                }),
+                new TextRun({
+                  text: questionPart,
+                  size: 24
+                })
+              ]
+            }),
+            // Add three line breaks between questions for better readability
+            new Paragraph({
+              children: [new TextRun("\n")]
+            }),
+            new Paragraph({
+              children: [new TextRun("\n")]
+            }),
+            new Paragraph({
+              children: [new TextRun("\n")]
+            })
+          ];
+        }),
 
         // Page break before answers section
         new Paragraph({
