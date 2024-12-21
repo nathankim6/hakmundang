@@ -41,8 +41,14 @@ export const getQuestionTypes = () => questionTypes;
 
 export const generateQuestion = async (type: QuestionType, text: string) => {
   try {
+    const apiKey = localStorage.getItem("claude_api_key");
+    if (!apiKey) {
+      throw new Error("Claude API key not found. Please enter your API key in the settings.");
+    }
+
     const client = new Anthropic({
-      apiKey: localStorage.getItem("claude_api_key") || "",
+      apiKey: apiKey,
+      dangerouslyAllowBrowser: true // Enable browser environment
     });
 
     let prompt = "";
@@ -98,11 +104,11 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
       temperature: 0.7,
     });
 
-    if (!response.content) {
+    if (!response.content[0]?.text) {
       throw new Error("No content received from Claude API");
     }
 
-    return response.content;
+    return response.content[0].text;
   } catch (error) {
     console.error("Error generating question:", error);
     throw new Error("문제 생성 중 오류가 발생했습니다. 다시 시도해 주세요.");
