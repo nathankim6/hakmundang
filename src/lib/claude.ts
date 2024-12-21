@@ -44,11 +44,46 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
     apiKey: localStorage.getItem("claude_api_key") || "",
   });
 
+  let prompt = "";
+  
+  if (type.id === "title") {
+    prompt = `Generate a title selection question based on the following text. Follow these steps:
+
+1. Analyze the text to identify:
+   - Main topic
+   - Key points
+   - Examples used
+
+2. Generate 5 title choices where:
+   - One should be about the rise and fall of the main topic
+   - One about the perfection or rarity of the main topic
+   - One about understanding and leveraging the main topic (this should be the correct answer)
+   - One about technology's impact on the main topic
+   - One connecting the first and last examples mentioned
+
+3. Format the response as:
+**다음 글의 제목으로 가장 적절한 것은?**
+[Original Text]
+
+① [First Title Option]
+② [Second Title Option]
+③ [Third Title Option]
+④ [Fourth Title Option]
+⑤ [Fifth Title Option]
+
+[정답] ③
+[해설] [Explanation in Korean about why the third option is the best title]
+
+Here's the text to analyze: ${text}`;
+  } else {
+    prompt = `Generate a question of type ${type.name} based on the following text: ${text}`;
+  }
+
   const response = await client.messages.create({
     model: "claude-3-sonnet-20240229",
     messages: [{
       role: "user",
-      content: `Generate a question of type ${type.name} based on the following text: ${text}`
+      content: prompt
     }],
     max_tokens: 150,
   });
