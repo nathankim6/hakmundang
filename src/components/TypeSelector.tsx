@@ -30,7 +30,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
       <button
         key={type.id}
         onClick={() => isSelected ? onRemove(type.id) : onSelect(type)}
-        className={`type-button w-full text-left ${isSelected ? "selected" : ""}`}
+        className={`type-button w-full text-left ${isSelected ? "selected bg-primary/20 text-primary font-semibold shadow-md" : ""}`}
       >
         <span className="relative z-10 flex items-center justify-between">
           <span>{type.name}</span>

@@ -157,19 +157,21 @@ export const QuestionGenerator = () => {
         ))}
 
         {selectedTypes.length > 0 && (
-          <Button
-            onClick={handleGenerateAll}
-            disabled={isLoading}
-            className="w-full max-w-2xl mx-auto bg-gradient-to-r from-primary via-primary/90 to-primary relative group overflow-hidden transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl"
-          >
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-shimmer" />
-            <div className="relative flex items-center justify-center gap-2">
-              <Sparkles className="w-5 h-5 animate-pulse" />
-              <span className="font-semibold tracking-wide">
-                {isLoading ? "모든 문제 생성 중..." : "모든 문제 생성하기"}
-              </span>
-            </div>
-          </Button>
+          <div className="flex justify-center w-full">
+            <Button
+              onClick={handleGenerateAll}
+              disabled={isLoading}
+              className="max-w-md w-full bg-gradient-to-r from-primary via-primary/90 to-primary relative group overflow-hidden transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-shimmer" />
+              <div className="relative flex items-center justify-center gap-2">
+                <Sparkles className="w-5 h-5 animate-pulse" />
+                <span className="font-semibold tracking-wide">
+                  {isLoading ? "문제 생성 중..." : "문제 생성하기"}
+                </span>
+              </div>
+            </Button>
+          </div>
         )}
       </div>
     </div>
