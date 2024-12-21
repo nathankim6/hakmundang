@@ -21,7 +21,7 @@ interface TypeEntry {
 
 export const QuestionGenerator = () => {
   const [selectedTypes, setSelectedTypes] = useState<TypeEntry[]>([]);
-  const [isLoading, setIsLoading] = useState<{ [key: string]: boolean }>({});
+  const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();
 
   const handleTypeSelect = (type: QuestionType) => {
@@ -63,38 +63,40 @@ export const QuestionGenerator = () => {
     ));
   };
 
-  const handleGenerate = async (typeId: string, passageId: string) => {
-    const typeEntry = selectedTypes.find(entry => entry.type.id === typeId);
-    const passage = typeEntry?.passages.find(p => p.id === passageId);
-    
-    if (!typeEntry || !passage || !passage.text.trim()) {
+  const handleGenerateAll = async () => {
+    const hasEmptyPassages = selectedTypes.some(type => 
+      type.passages.some(passage => !passage.text.trim())
+    );
+
+    if (hasEmptyPassages) {
       toast({
         title: "입력 확인",
-        description: "지문을 입력해주세요.",
+        description: "모든 지문을 입력해주세요.",
         variant: "destructive",
       });
       return;
     }
 
-    setIsLoading(prev => ({ ...prev, [passageId]: true }));
+    setIsLoading(true);
     try {
-      const result = await generateQuestion(typeEntry.type, passage.text);
-      if (typeof result === 'string') {
-        setSelectedTypes(prev => prev.map(entry => 
-          entry.type.id === typeId 
-            ? {
-                ...entry,
-                passages: entry.passages.map(p => 
-                  p.id === passageId ? { ...p, result } : p
-                )
-              }
-            : entry
-        ));
-        toast({
-          title: "문제 생성 완료",
-          description: "AI가 문제를 생성했습니다.",
-        });
+      const updatedTypes = [...selectedTypes];
+      
+      for (let typeIndex = 0; typeIndex < updatedTypes.length; typeIndex++) {
+        const typeEntry = updatedTypes[typeIndex];
+        for (let passageIndex = 0; passageIndex < typeEntry.passages.length; passageIndex++) {
+          const passage = typeEntry.passages[passageIndex];
+          const result = await generateQuestion(typeEntry.type, passage.text);
+          if (typeof result === 'string') {
+            updatedTypes[typeIndex].passages[passageIndex].result = result;
+          }
+        }
       }
+      
+      setSelectedTypes(updatedTypes);
+      toast({
+        title: "문제 생성 완료",
+        description: "모든 문제가 생성되었습니다.",
+      });
     } catch (error) {
       toast({
         title: "오류 발생",
@@ -102,7 +104,7 @@ export const QuestionGenerator = () => {
         variant: "destructive",
       });
     } finally {
-      setIsLoading(prev => ({ ...prev, [passageId]: false }));
+      setIsLoading(false);
     }
   };
 
@@ -137,23 +139,6 @@ export const QuestionGenerator = () => {
                 </div>
                 
                 <TextInput value={passage.text} onChange={(text) => handleTextChange(typeEntry.type.id, passage.id, text)} />
-                
-                <div className="flex justify-center gap-4">
-                  <Button
-                    onClick={() => handleGenerate(typeEntry.type.id, passage.id)}
-                    disabled={isLoading[passage.id]}
-                    className="w-full max-w-md bg-gradient-to-r from-primary via-primary/90 to-primary relative group overflow-hidden transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl"
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-shimmer" />
-                    <div className="relative flex items-center justify-center gap-2">
-                      <Sparkles className="w-5 h-5 animate-pulse" />
-                      <span className="font-semibold tracking-wide">
-                        {isLoading[passage.id] ? "생성 중..." : "문제 생성하기"}
-                      </span>
-                    </div>
-                  </Button>
-                </div>
-                
                 {passage.result && <GeneratedQuestion content={passage.result} />}
               </div>
             ))}
@@ -168,6 +153,22 @@ export const QuestionGenerator = () => {
             </Button>
           </div>
         ))}
+
+        {selectedTypes.length > 0 && (
+          <Button
+            onClick={handleGenerateAll}
+            disabled={isLoading}
+            className="w-full max-w-2xl mx-auto bg-gradient-to-r from-primary via-primary/90 to-primary relative group overflow-hidden transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl"
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-shimmer" />
+            <div className="relative flex items-center justify-center gap-2">
+              <Sparkles className="w-5 h-5 animate-pulse" />
+              <span className="font-semibold tracking-wide">
+                {isLoading ? "모든 문제 생성 중..." : "모든 문제 생성하기"}
+              </span>
+            </div>
+          </Button>
+        )}
       </div>
     </div>
   );
