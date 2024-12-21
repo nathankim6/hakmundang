@@ -19,11 +19,11 @@ export const TypeSelector = ({ selectedType, onSelect }: TypeSelectorProps) => {
           <button
             key={type.id}
             onClick={() => onSelect(type)}
-            className={`type-button ${
+            className={`type-button font-medium tracking-wide ${
               selectedType?.id === type.id ? "selected" : ""
             }`}
           >
-            <span className="font-medium tracking-wide">{type.name}</span>
+            {type.name}
           </button>
         ))}
       </div>
