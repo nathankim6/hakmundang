@@ -1,13 +1,15 @@
 import { QuestionType } from "@/types/question";
 import { getQuestionTypes } from "@/lib/claude";
 import { ScrollArea } from "./ui/scroll-area";
+import { X } from "lucide-react";
 
 interface TypeSelectorProps {
-  selectedType: QuestionType | null;
+  selectedTypes: QuestionType[];
   onSelect: (type: QuestionType) => void;
+  onRemove: (typeId: string) => void;
 }
 
-export const TypeSelector = ({ selectedType, onSelect }: TypeSelectorProps) => {
+export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelectorProps) => {
   const types = getQuestionTypes();
   const suneungTypes = types.slice(0, 15);
   const schoolTypes = types.slice(15, 22);
@@ -21,17 +23,22 @@ export const TypeSelector = ({ selectedType, onSelect }: TypeSelectorProps) => {
     </div>
   );
 
-  const TypeButton = ({ type }: { type: QuestionType }) => (
-    <button
-      key={type.id}
-      onClick={() => onSelect(type)}
-      className={`type-button w-full text-left ${
-        selectedType?.id === type.id ? "selected" : ""
-      }`}
-    >
-      <span className="relative z-10">{type.name}</span>
-    </button>
-  );
+  const TypeButton = ({ type }: { type: QuestionType }) => {
+    const isSelected = selectedTypes.some(t => t.id === type.id);
+    
+    return (
+      <button
+        key={type.id}
+        onClick={() => isSelected ? onRemove(type.id) : onSelect(type)}
+        className={`type-button w-full text-left ${isSelected ? "selected" : ""}`}
+      >
+        <span className="relative z-10 flex items-center justify-between">
+          <span>{type.name}</span>
+          {isSelected && <X className="w-4 h-4" />}
+        </span>
+      </button>
+    );
+  };
 
   return (
     <div className="space-y-6">
