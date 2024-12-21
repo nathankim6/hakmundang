@@ -11,23 +11,23 @@ const Index = () => {
       </div>
 
       <div className="max-w-7xl mx-auto space-y-8 relative z-10">
-        <div className="flex flex-col items-center justify-center space-y-6">
+        <div className="flex items-center justify-center space-x-6">
           <img 
             src="/lovable-uploads/352a49ca-b123-4f07-992a-cf59e4b7058a.png" 
             alt="ORUN ACADEMY Logo" 
-            className="w-32 h-32 object-contain animate-pulse"
+            className="w-32 h-32 object-contain"
           />
           
-          <h1 className="text-7xl font-bold animate-title tracking-wider mb-6 relative group">
+          <h1 className="text-7xl font-bold animate-title tracking-wider relative group">
             <span className="inline-block transform transition-transform group-hover:scale-105 duration-300">
               ORUN AI QUIZ MAKER
             </span>
           </h1>
+        </div>
           
-          <div className="relative h-1 max-w-2xl mx-auto overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#DAA520] to-transparent" />
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#FFD700] to-transparent animate-pulse" />
-          </div>
+        <div className="relative h-1 max-w-2xl mx-auto overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#DAA520] to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#FFD700] to-transparent animate-pulse" />
         </div>
 
         <div className="metallic-border rounded-xl p-6 backdrop-blur-lg">
