@@ -54,19 +54,20 @@
 .animate-title {
   background: linear-gradient(
     to right,
-    #4A3000,
-    #8B6508,
-    #A67D0C,
-    #8B6508,
-    #4A3000
+    #222222,
+    #333333,
+    #444444,
+    #333333,
+    #222222
   );
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
+  color: #222222;
   animation: shine 3s linear infinite;
   font-weight: 900;
-  text-shadow: none;
+  text-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.3);
   letter-spacing: 2px;
   opacity: 1;
 }
