@@ -48,7 +48,7 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
 
     const client = new Anthropic({
       apiKey: apiKey,
-      dangerouslyAllowBrowser: true // Enable browser environment
+      dangerouslyAllowBrowser: true
     });
 
     let prompt = "";
@@ -104,11 +104,13 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
       temperature: 0.7,
     });
 
-    if (!response.content[0]?.text) {
-      throw new Error("No content received from Claude API");
+    const content = response.content[0];
+    
+    if (!content || typeof content !== 'object' || !('type' in content) || content.type !== 'text' || !('text' in content)) {
+      throw new Error("Invalid response format from Claude API");
     }
 
-    return response.content[0].text;
+    return content.text;
   } catch (error) {
     console.error("Error generating question:", error);
     throw new Error("문제 생성 중 오류가 발생했습니다. 다시 시도해 주세요.");
