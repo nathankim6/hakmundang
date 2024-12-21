@@ -8,7 +8,9 @@ interface QuestionData {
 export const generateDocument = async (questions: QuestionData[]) => {
   // Prepare questions section
   let questionsText = "[ 문제 ]\n\n";
-  let answersText = "\n\n[ 정답 및 해설 ]\n\n";
+  let answersText = "\n\n\n";  // Add extra newlines for visual separation
+  answersText += "=".repeat(80) + "\n";  // Add a separator line
+  answersText += "[ 정답 및 해설 ]\n\n";
   
   questions.forEach((q) => {
     // Split content into question part and answer/explanation part
@@ -21,8 +23,11 @@ export const generateDocument = async (questions: QuestionData[]) => {
     answersText += `문제 ${q.questionNumber}\n${answerPart}\n\n`;
   });
 
-  // Combine all text
-  const fullText = questionsText + answersText;
+  // Add page break markers between questions and answers
+  const pageBreak = "\n".repeat(5) + "=".repeat(80) + "\n".repeat(5);
+  
+  // Combine all text with clear separation
+  const fullText = questionsText + pageBreak + answersText;
 
   // Create and save the text file
   const blob = new Blob([fullText], { type: 'text/plain;charset=utf-8' });
