@@ -139,7 +139,11 @@ export const QuestionGenerator = () => {
                     )}
                   </div>
                   
-                  <TextInput value={passage.text} onChange={(text) => handleTextChange(typeEntry.type.id, passage.id, text)} />
+                  <TextInput 
+                    value={passage.text} 
+                    onChange={(text) => handleTextChange(typeEntry.type.id, passage.id, text)}
+                    onEnterPress={() => handleAddPassage(typeEntry.type.id)}
+                  />
                   {passage.result && <GeneratedQuestion content={passage.result} />}
                 </div>
               ))}

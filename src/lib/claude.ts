@@ -41,11 +41,11 @@ export const getQuestionTypes = () => questionTypes;
 
 export const generateQuestion = async (type: QuestionType, text: string) => {
   const client = new Anthropic({
-    apiKey: localStorage.getItem("anthropicApiKey") || "",
+    apiKey: localStorage.getItem("claude_api_key") || "",
   });
 
   const response = await client.messages.create({
-    model: "claude-2",
+    model: "claude-3-sonnet-20240229",
     messages: [{
       role: "user",
       content: `Generate a question of type ${type.name} based on the following text: ${text}`

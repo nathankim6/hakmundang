@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/components/ui/use-toast";
+import { CheckCircle } from "lucide-react";
 
 interface APIResponse {
   success: boolean;
@@ -15,7 +16,6 @@ export function APIConfig() {
   const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();
 
-  // Load API key from localStorage on component mount
   useEffect(() => {
     const savedApiKey = localStorage.getItem("claude_api_key");
     if (savedApiKey) {
@@ -38,9 +38,7 @@ export function APIConfig() {
 
     setIsLoading(true);
     try {
-      // Simple validation of API key format
       if (apiKey.startsWith("sk-") && apiKey.length > 20) {
-        // Store API key in localStorage
         localStorage.setItem("claude_api_key", apiKey);
         
         setTestResult({
@@ -83,7 +81,15 @@ export function APIConfig() {
   return (
     <div className="space-y-4">
       <div className="space-y-2">
-        <Label htmlFor="apiKey">Claude API Key</Label>
+        <div className="flex items-center gap-2">
+          <Label htmlFor="apiKey">Claude API Key</Label>
+          {testResult?.success && (
+            <div className="flex items-center">
+              <CheckCircle className="w-4 h-4 text-blue-500 animate-pulse" />
+              <div className="w-2 h-2 rounded-full bg-blue-500 animate-ping absolute" />
+            </div>
+          )}
+        </div>
         <div className="flex space-x-2">
           <Input
             id="apiKey"
@@ -98,18 +104,6 @@ export function APIConfig() {
           </Button>
         </div>
       </div>
-      
-      {testResult && (
-        <div
-          className={`p-4 rounded-md ${
-            testResult.success
-              ? "bg-green-100 text-green-700"
-              : "bg-red-100 text-red-700"
-          }`}
-        >
-          {testResult.message}
-        </div>
-      )}
     </div>
   );
-}
+};
