@@ -54,11 +54,11 @@
 .animate-title {
   background: linear-gradient(
     to right,
-    #B8860B,
-    #FFD700,
-    #DAA520,
-    #FDB931,
-    #B8860B
+    #996515,  /* Darker gold */
+    #DAA520,  /* Goldenrod */
+    #B8860B,  /* Dark goldenrod */
+    #CD853F,  /* Peru */
+    #996515   /* Darker gold */
   );
   background-size: 200% auto;
   -webkit-background-clip: text;
