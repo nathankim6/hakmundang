@@ -63,47 +63,18 @@
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
+  color: #B8860B;
   animation: shine 3s linear infinite;
   font-weight: 900;
   text-shadow: 
     0 2px 4px rgba(0, 0, 0, 0.3),
-    0 0 15px rgba(184, 134, 11, 0.5),
-    0 0 30px rgba(218, 165, 32, 0.3);
+    0 0 15px rgba(184, 134, 11, 0.5);
   letter-spacing: 2px;
-  position: relative;
-}
-
-.animate-title::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(45deg, 
-    transparent 30%, 
-    rgba(255, 215, 0, 0.3) 45%, 
-    rgba(255, 215, 0, 0.4) 50%, 
-    rgba(255, 215, 0, 0.3) 55%, 
-    transparent 70%
-  );
-  background-size: 200% 200%;
-  animation: shimmer 2s linear infinite;
-  pointer-events: none;
+  opacity: 1;
 }
 
 @keyframes shine {
   to {
-    background-position: 200% center;
-  }
-}
-
-@keyframes shimmer {
-  0% {
-    background-position: -200% center;
-  }
-  100% {
     background-position: 200% center;
   }
 }
