@@ -84,10 +84,10 @@ export const APIConfig = () => {
         <DialogTrigger asChild>
           <Button 
             variant="outline" 
-            className="relative overflow-hidden transition-all duration-300 bg-gradient-to-r from-[#B8860B] via-[#DAA520] to-[#CD853F] hover:scale-105 hover:shadow-lg hover:shadow-primary/50 border-primary flex items-center gap-2"
+            className="relative overflow-hidden transition-all duration-300 bg-gradient-to-r from-[#9b87f5] via-[#7E69AB] to-[#6E59A5] hover:scale-105 hover:shadow-lg hover:shadow-[#9b87f5]/50 border-[#9b87f5] flex items-center gap-2 px-4 py-2 rounded-lg"
           >
-            <Settings className="h-4 w-4 text-background animate-spin-slow" />
-            <span className="text-background">API 설정</span>
+            <Settings className="h-4 w-4 text-white animate-spin-slow" />
+            <span className="text-white font-medium tracking-wide">API 설정</span>
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer" />
           </Button>
         </DialogTrigger>
@@ -107,7 +107,7 @@ export const APIConfig = () => {
             />
             <Button 
               onClick={testConnection}
-              className="bg-gradient-to-r from-[#B8860B] via-[#DAA520] to-[#CD853F] hover:scale-105 transition-all duration-300"
+              className="bg-gradient-to-r from-[#9b87f5] via-[#7E69AB] to-[#6E59A5] hover:scale-105 transition-all duration-300"
             >
               연결 테스트
             </Button>
