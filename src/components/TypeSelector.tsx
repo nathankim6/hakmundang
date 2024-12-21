@@ -14,9 +14,11 @@ export const TypeSelector = ({ selectedType, onSelect }: TypeSelectorProps) => {
   const descriptiveTypes = types.slice(22);
 
   const CategoryTitle = ({ children }: { children: React.ReactNode }) => (
-    <h3 className="text-lg font-semibold text-primary/80 py-2">
-      {children}
-    </h3>
+    <div className="flex items-center justify-center mb-4">
+      <h3 className="text-xl font-bold text-primary/90 py-2 px-6 rounded-full bg-secondary/50 shadow-sm">
+        {children}
+      </h3>
+    </div>
   );
 
   const TypeButton = ({ type }: { type: QuestionType }) => (
@@ -38,8 +40,8 @@ export const TypeSelector = ({ selectedType, onSelect }: TypeSelectorProps) => {
       </h2>
       
       <ScrollArea className="h-[70vh] pr-4">
-        <div className="space-y-6">
-          <div className="space-y-2">
+        <div className="space-y-8">
+          <div className="space-y-4">
             <CategoryTitle>수능형</CategoryTitle>
             <div className="grid gap-2">
               {suneungTypes.map((type) => (
@@ -48,7 +50,7 @@ export const TypeSelector = ({ selectedType, onSelect }: TypeSelectorProps) => {
             </div>
           </div>
 
-          <div className="space-y-2">
+          <div className="space-y-4">
             <CategoryTitle>학교별 시그니처</CategoryTitle>
             <div className="grid gap-2">
               {schoolTypes.map((type) => (
@@ -57,7 +59,7 @@ export const TypeSelector = ({ selectedType, onSelect }: TypeSelectorProps) => {
             </div>
           </div>
 
-          <div className="space-y-2">
+          <div className="space-y-4">
             <CategoryTitle>서술형</CategoryTitle>
             <div className="grid gap-2">
               {descriptiveTypes.map((type) => (
