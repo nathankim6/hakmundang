@@ -79,15 +79,15 @@ export const APIConfig = () => {
   };
 
   return (
-    <div className="flex items-center gap-2 relative">
+    <div className="flex items-center gap-2 relative ml-auto">
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogTrigger asChild>
           <Button 
             variant="outline" 
-            size="icon"
-            className="relative overflow-hidden transition-all duration-300 bg-gradient-to-r from-[#B8860B] via-[#DAA520] to-[#CD853F] hover:scale-105 hover:shadow-lg hover:shadow-primary/50 border-primary"
+            className="relative overflow-hidden transition-all duration-300 bg-gradient-to-r from-[#B8860B] via-[#DAA520] to-[#CD853F] hover:scale-105 hover:shadow-lg hover:shadow-primary/50 border-primary flex items-center gap-2"
           >
             <Settings className="h-4 w-4 text-background animate-spin-slow" />
+            <span className="text-background">API 설정</span>
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer" />
           </Button>
         </DialogTrigger>
