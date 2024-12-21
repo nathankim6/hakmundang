@@ -7,6 +7,7 @@ import { generateDocument } from "@/utils/documentGenerator";
 import { QuestionType } from "@/types/question";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
+import { Progress } from "@/components/ui/progress";
 import { Sparkles, Plus, Trash2, FileDown } from "lucide-react";
 
 interface PassageEntry {
@@ -23,6 +24,7 @@ interface TypeEntry {
 export const QuestionGenerator = () => {
   const [selectedTypes, setSelectedTypes] = useState<TypeEntry[]>([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [progress, setProgress] = useState({ current: 0, total: 0 });
   const { toast } = useToast();
 
   const handleTypeSelect = (type: QuestionType) => {
@@ -80,7 +82,10 @@ export const QuestionGenerator = () => {
 
     setIsLoading(true);
     try {
-      let questionNumber = 1;
+      let currentQuestion = 0;
+      const totalQuestions = selectedTypes.reduce((sum, type) => sum + type.passages.length, 0);
+      setProgress({ current: 0, total: totalQuestions });
+      
       const updatedTypes = [...selectedTypes];
       
       for (let typeIndex = 0; typeIndex < updatedTypes.length; typeIndex++) {
@@ -88,11 +93,13 @@ export const QuestionGenerator = () => {
         for (let passageIndex = 0; passageIndex < typeEntry.passages.length; passageIndex++) {
           const passage = typeEntry.passages[passageIndex];
           try {
+            currentQuestion++;
+            setProgress({ current: currentQuestion, total: totalQuestions });
+            
             const result = await generateQuestion(typeEntry.type, passage.text);
             if (typeof result === 'string') {
               updatedTypes[typeIndex].passages[passageIndex].result = result;
               setSelectedTypes([...updatedTypes]);
-              questionNumber++;
             }
           } catch (error) {
             console.error(`Error generating question for passage ${passageIndex + 1}:`, error);
@@ -117,6 +124,7 @@ export const QuestionGenerator = () => {
       });
     } finally {
       setIsLoading(false);
+      setProgress({ current: 0, total: 0 });
     }
   };
 
@@ -217,34 +225,46 @@ export const QuestionGenerator = () => {
 
         {selectedTypes.length > 0 && (
           <>
-            <div className="flex justify-center w-full gap-4">
-              <Button
-                onClick={handleGenerateAll}
-                disabled={isLoading}
-                className="max-w-md w-full bg-gradient-to-r from-primary via-primary/90 to-primary relative group overflow-hidden transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl"
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-shimmer" />
-                <div className="relative flex items-center justify-center gap-2">
-                  <Sparkles className="w-5 h-5 animate-pulse" />
-                  <span className="font-semibold tracking-wide">
-                    {isLoading ? "문제 생성 중..." : "문제 생성하기"}
-                  </span>
+            <div className="flex flex-col gap-4">
+              {isLoading && progress.total > 0 && (
+                <div className="space-y-2">
+                  <div className="flex justify-between text-sm text-muted-foreground">
+                    <span>문제 생성 중...</span>
+                    <span>{progress.current} / {progress.total}</span>
+                  </div>
+                  <Progress value={(progress.current / progress.total) * 100} />
                 </div>
-              </Button>
+              )}
+              
+              <div className="flex justify-center w-full gap-4">
+                <Button
+                  onClick={handleGenerateAll}
+                  disabled={isLoading}
+                  className="max-w-md w-full bg-gradient-to-r from-primary via-primary/90 to-primary relative group overflow-hidden transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-shimmer" />
+                  <div className="relative flex items-center justify-center gap-2">
+                    <Sparkles className="w-5 h-5 animate-pulse" />
+                    <span className="font-semibold tracking-wide">
+                      {isLoading ? "문제 생성 중..." : "문제 생성하기"}
+                    </span>
+                  </div>
+                </Button>
 
-              <Button
-                onClick={handleDownloadDoc}
-                disabled={isLoading}
-                variant="outline"
-                className="max-w-md w-full relative group overflow-hidden transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl"
-              >
-                <div className="relative flex items-center justify-center gap-2">
-                  <FileDown className="w-5 h-5" />
-                  <span className="font-semibold tracking-wide">
-                    문제 저장하기
-                  </span>
-                </div>
-              </Button>
+                <Button
+                  onClick={handleDownloadDoc}
+                  disabled={isLoading}
+                  variant="outline"
+                  className="max-w-md w-full relative group overflow-hidden transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl"
+                >
+                  <div className="relative flex items-center justify-center gap-2">
+                    <FileDown className="w-5 h-5" />
+                    <span className="font-semibold tracking-wide">
+                      문제 저장하기
+                    </span>
+                  </div>
+                </Button>
+              </div>
             </div>
 
             <div className="space-y-0">

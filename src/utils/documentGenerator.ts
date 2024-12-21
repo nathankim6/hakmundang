@@ -26,7 +26,10 @@ export const generateDocument = async (questions: QuestionData[]) => {
               }),
               new TextRun({
                 text: questionPart,
-                size: 24
+                size: 24,
+                font: {
+                  name: "맑은 고딕"
+                }
               }),
               new TextRun({
                 text: "\n\n",  // Add spacing between questions
@@ -47,7 +50,10 @@ export const generateDocument = async (questions: QuestionData[]) => {
             new TextRun({
               text: "정답 및 해설\n\n",
               bold: true,
-              size: 28
+              size: 28,
+              font: {
+                name: "맑은 고딕"
+              }
             })
           ]
         }),
@@ -63,15 +69,24 @@ export const generateDocument = async (questions: QuestionData[]) => {
               new TextRun({
                 text: `문제 ${q.questionNumber}\n`,
                 bold: true,
-                size: 24
+                size: 24,
+                font: {
+                  name: "맑은 고딕"
+                }
               }),
               new TextRun({
                 text: `정답: ${answerMatch?.[1] || '정답 없음'}\n`,
-                size: 24
+                size: 24,
+                font: {
+                  name: "맑은 고딕"
+                }
               }),
               new TextRun({
                 text: `해설: ${explanationMatch?.[1] || '해설 없음'}\n\n`,
-                size: 24
+                size: 24,
+                font: {
+                  name: "맑은 고딕"
+                }
               })
             ]
           });
