@@ -122,26 +122,28 @@ export const QuestionGenerator = () => {
           <div key={typeEntry.type.id} className="space-y-6 p-6 rounded-lg border-2 border-primary/20 relative">
             <h3 className="text-xl font-bold text-primary">{typeEntry.type.name}</h3>
             
-            {typeEntry.passages.map((passage, index) => (
-              <div key={passage.id} className="space-y-4">
-                <div className="flex items-center justify-between">
-                  <h4 className="text-lg font-semibold">지문 {index + 1}</h4>
-                  {typeEntry.passages.length > 1 && (
-                    <Button
-                      variant="ghost"
-                      size="icon"
-                      onClick={() => handleRemovePassage(typeEntry.type.id, passage.id)}
-                      className="text-destructive hover:text-destructive/80"
-                    >
-                      <Trash2 className="w-4 h-4" />
-                    </Button>
-                  )}
+            <div className="grid grid-cols-3 gap-4">
+              {typeEntry.passages.map((passage, index) => (
+                <div key={passage.id} className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <h4 className="text-sm font-semibold">지문 {index + 1}</h4>
+                    {typeEntry.passages.length > 1 && (
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        onClick={() => handleRemovePassage(typeEntry.type.id, passage.id)}
+                        className="text-destructive hover:text-destructive/80"
+                      >
+                        <Trash2 className="w-4 h-4" />
+                      </Button>
+                    )}
+                  </div>
+                  
+                  <TextInput value={passage.text} onChange={(text) => handleTextChange(typeEntry.type.id, passage.id, text)} />
+                  {passage.result && <GeneratedQuestion content={passage.result} />}
                 </div>
-                
-                <TextInput value={passage.text} onChange={(text) => handleTextChange(typeEntry.type.id, passage.id, text)} />
-                {passage.result && <GeneratedQuestion content={passage.result} />}
-              </div>
-            ))}
+              ))}
+            </div>
             
             <Button
               variant="outline"
