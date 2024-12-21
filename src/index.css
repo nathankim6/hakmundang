@@ -52,18 +52,30 @@
 }
 
 .animate-title {
-  background: linear-gradient(90deg, #000000, #333333);
+  background: linear-gradient(
+    to right,
+    #B8860B,
+    #FFD700,
+    #DAA520,
+    #FDB931,
+    #B8860B
+  );
+  background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  animation: shine 3s linear infinite;
+  font-weight: 800;
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.2),
+    0 0 10px rgba(218, 165, 32, 0.3);
+  letter-spacing: 2px;
 }
 
-@keyframes titleAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
 }
 
 .metallic-border {
