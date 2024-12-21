@@ -7,32 +7,32 @@
 @layer base {
   :root {
     --background: 0 0% 7%;
-    --foreground: 45 80% 98%;
+    --foreground: 38 40% 98%;
 
     --card: 0 0% 10%;
-    --card-foreground: 45 80% 98%;
+    --card-foreground: 38 40% 98%;
 
     --popover: 0 0% 10%;
-    --popover-foreground: 45 80% 98%;
+    --popover-foreground: 38 40% 98%;
 
-    --primary: 45 80% 60%;
+    --primary: 38 40% 50%;
     --primary-foreground: 0 0% 7%;
 
     --secondary: 0 0% 15%;
-    --secondary-foreground: 45 80% 98%;
+    --secondary-foreground: 38 40% 98%;
 
     --muted: 0 0% 15%;
-    --muted-foreground: 45 80% 80%;
+    --muted-foreground: 38 40% 80%;
 
-    --accent: 45 80% 60%;
+    --accent: 38 40% 50%;
     --accent-foreground: 0 0% 7%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 45 80% 98%;
+    --destructive-foreground: 38 40% 98%;
 
-    --border: 45 80% 60%;
+    --border: 38 40% 50%;
     --input: 0 0% 15%;
-    --ring: 45 80% 60%;
+    --ring: 38 40% 50%;
 
     --radius: 0.75rem;
   }
@@ -48,22 +48,22 @@
     font-family: 'Orbitron', sans-serif;
     background: linear-gradient(135deg, hsl(0 0% 7%), hsl(0 0% 4%));
     background-image: 
-      radial-gradient(circle at 50% 50%, hsla(45, 80%, 60%, 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 0% 0%, hsla(45, 80%, 60%, 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 100% 100%, hsla(45, 80%, 60%, 0.1) 0%, transparent 50%);
+      radial-gradient(circle at 50% 50%, hsla(38, 40%, 50%, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 0% 0%, hsla(38, 40%, 50%, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 100% 100%, hsla(38, 40%, 50%, 0.1) 0%, transparent 50%);
   }
 }
 
 .animate-title {
   animation: titleAnimation 8s infinite;
-  background: linear-gradient(90deg, #FFD700, #FFA500, #DAA520);
+  background: linear-gradient(90deg, #B8860B, #DAA520, #CD853F);
   background-size: 300% auto;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
-  text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
-  filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.3));
+  text-shadow: 0 0 30px rgba(184, 134, 11, 0.5);
+  filter: drop-shadow(0 0 8px rgba(184, 134, 11, 0.3));
 }
 
 @keyframes titleAnimation {
@@ -73,37 +73,37 @@
 }
 
 .metallic-border {
-  background: linear-gradient(145deg, rgba(255, 215, 0, 0.1), rgba(218, 165, 32, 0.05));
-  border: 1px solid rgba(255, 215, 0, 0.2);
+  background: linear-gradient(145deg, rgba(184, 134, 11, 0.1), rgba(205, 133, 63, 0.05));
+  border: 1px solid rgba(184, 134, 11, 0.2);
   backdrop-filter: blur(8px);
-  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(184, 134, 11, 0.1);
 }
 
 .metallic-button {
-  background: linear-gradient(145deg, #FFD700, #DAA520);
+  background: linear-gradient(145deg, #B8860B, #CD853F);
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(184, 134, 11, 0.2);
 }
 
 .metallic-button:hover {
-  background: linear-gradient(145deg, #FFA500, #FFD700);
+  background: linear-gradient(145deg, #DAA520, #B8860B);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+  box-shadow: 0 8px 25px rgba(184, 134, 11, 0.4);
 }
 
 .type-button {
   @apply px-4 py-3 rounded-lg transition-all duration-300 bg-secondary/50 hover:bg-primary/20 border border-primary/20 hover:border-primary/40 text-foreground;
-  background: linear-gradient(145deg, rgba(255, 215, 0, 0.1), rgba(218, 165, 32, 0.05));
+  background: linear-gradient(145deg, rgba(184, 134, 11, 0.1), rgba(205, 133, 63, 0.05));
   backdrop-filter: blur(8px);
-  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(184, 134, 11, 0.1);
 }
 
 .type-button.selected {
   @apply bg-primary/20 border-primary;
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+  box-shadow: 0 0 20px rgba(184, 134, 11, 0.3);
 }
 
 .type-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.2);
+  box-shadow: 0 8px 25px rgba(184, 134, 11, 0.2);
 }
