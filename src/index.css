@@ -108,6 +108,23 @@
   box-shadow: 0 8px 25px rgba(184, 134, 11, 0.2);
 }
 
+/* Add new carousel styles */
+.embla__slide {
+  transition: transform 0.3s ease;
+}
+
+.embla__slide:hover {
+  transform: scale(1.05);
+}
+
+.carousel-container {
+  background: linear-gradient(145deg, rgba(184, 134, 11, 0.1), rgba(205, 133, 63, 0.05));
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
 @keyframes shimmer {
   0% {
     transform: translateX(-100%);
@@ -135,3 +152,4 @@
     animation: spin-slow 3s linear infinite;
   }
 }
+
