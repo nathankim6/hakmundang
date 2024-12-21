@@ -62,7 +62,7 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
    - 글에서 사용된 구체적인 예시들
    - 글의 전반적인 흐름과 목적
 
-2. 분석을 바탕으로 5개의 제목 보기를 만드세요:
+2. 분석을 바탕으로 5개의 영어로 된 제목 보기를 만드세요:
    - 정답이 될 가장 적절한 제목 1개
    - 그럴듯하지만 부적절한 오답 4개
    각 보기는 다음 기준을 따라야 합니다:
@@ -75,7 +75,7 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
    - 정답이 적절한 이유를 구체적으로 설명
    - 각 오답이 부적절한 이유를 간단히 설명
    - 가능한 경우 본문의 구절을 직접 인용
-
+   
 4. 다음 형식으로 출력하세요:
 **다음 글의 제목으로 가장 적절한 것은?**
 [입력된 지문]
