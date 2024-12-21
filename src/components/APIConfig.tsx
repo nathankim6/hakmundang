@@ -1,20 +1,11 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
 import { Settings, CheckCircle, XCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import Anthropic from '@anthropic-ai/sdk';
 
 export const APIConfig = () => {
-  const [isOpen, setIsOpen] = useState(false);
   const [apiKey, setApiKey] = useState("");
   const [isConnected, setIsConnected] = useState(false);
   const [showSuccessEffect, setShowSuccessEffect] = useState(false);
@@ -42,8 +33,6 @@ export const APIConfig = () => {
         messages: [{ role: "user", content: "test" }]
       });
 
-      console.log("API Response:", response);
-
       if (response) {
         setIsConnected(true);
         localStorage.setItem("CLAUDE_API_KEY", apiKey);
@@ -53,7 +42,6 @@ export const APIConfig = () => {
           title: "연결 성공",
           description: "Claude API가 성공적으로 연동되었습니다.",
         });
-        setIsOpen(false);
       }
     } catch (error) {
       console.error("Claude API Error:", error);
@@ -79,55 +67,43 @@ export const APIConfig = () => {
   };
 
   return (
-    <div className="flex items-center gap-2 relative ml-auto">
-      <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogTrigger asChild>
-          <Button 
-            variant="outline" 
-            className="relative overflow-hidden transition-all duration-300 bg-gradient-to-r from-[#9b87f5] via-[#7E69AB] to-[#6E59A5] hover:scale-105 hover:shadow-lg hover:shadow-[#9b87f5]/50 border-[#9b87f5] flex items-center gap-2 px-4 py-2 rounded-lg"
-          >
-            <Settings className="h-4 w-4 text-white animate-spin-slow" />
-            <span className="text-white font-medium tracking-wide">API 설정</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer" />
-          </Button>
-        </DialogTrigger>
-        <DialogContent>
-          <DialogHeader>
-            <DialogTitle>Claude API 설정</DialogTitle>
-            <DialogDescription>
-              API 키를 입력하여 Claude API를 연동하세요.
-            </DialogDescription>
-          </DialogHeader>
-          <div className="grid gap-4 py-4">
-            <Input
-              placeholder="API 키를 입력하세요"
-              type="password"
-              value={apiKey}
-              onChange={(e) => setApiKey(e.target.value)}
-            />
-            <Button 
-              onClick={testConnection}
-              className="bg-gradient-to-r from-[#9b87f5] via-[#7E69AB] to-[#6E59A5] hover:scale-105 transition-all duration-300"
-            >
-              연결 테스트
-            </Button>
+    <div className="space-y-4">
+      <div className="flex items-center justify-between">
+        <h2 className="text-2xl font-bold flex items-center gap-2">
+          <Settings className="h-6 w-6" />
+          Claude API 설정
+        </h2>
+        {isConnected ? (
+          <div className="relative">
+            <CheckCircle className="h-5 w-5 text-green-500" />
+            {showSuccessEffect && (
+              <>
+                <div className="absolute inset-0 animate-ping rounded-full bg-green-500/30" />
+                <div className="absolute inset-[-8px] animate-pulse rounded-full bg-green-500/20" />
+                <div className="absolute inset-[-16px] animate-pulse delay-75 rounded-full bg-green-500/10" />
+              </>
+            )}
           </div>
-        </DialogContent>
-      </Dialog>
-      {isConnected ? (
-        <div className="relative">
-          <CheckCircle className="h-5 w-5 text-green-500" />
-          {showSuccessEffect && (
-            <>
-              <div className="absolute inset-0 animate-ping rounded-full bg-green-500/30" />
-              <div className="absolute inset-[-8px] animate-pulse rounded-full bg-green-500/20" />
-              <div className="absolute inset-[-16px] animate-pulse delay-75 rounded-full bg-green-500/10" />
-            </>
-          )}
-        </div>
-      ) : (
-        <XCircle className="h-5 w-5 text-red-500" />
-      )}
+        ) : (
+          <XCircle className="h-5 w-5 text-red-500" />
+        )}
+      </div>
+      
+      <div className="flex gap-4">
+        <Input
+          placeholder="API 키를 입력하세요"
+          type="password"
+          value={apiKey}
+          onChange={(e) => setApiKey(e.target.value)}
+          className="flex-1"
+        />
+        <Button 
+          onClick={testConnection}
+          className="bg-gradient-to-r from-[#9b87f5] via-[#7E69AB] to-[#6E59A5] hover:scale-105 transition-all duration-300"
+        >
+          연결 테스트
+        </Button>
+      </div>
     </div>
   );
 };
