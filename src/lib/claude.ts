@@ -48,34 +48,42 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
     let prompt = "";
     
     if (type.id === "title") {
-      prompt = `Generate a title selection question based on the following text. Follow these steps:
+      prompt = `당신은 영어 지문을 바탕으로 '제목 고르기' 문제를 만드는 전문가입니다. 다음 지침에 따라 문제를 만들어주세요:
 
-1. Analyze the text to identify:
-   - Main topic
-   - Key points
-   - Examples used
+1. 입력된 지문을 꼼꼼히 분석하여 다음 사항들을 파악하세요:
+   - 글의 주요 주제
+   - 핵심 논점들
+   - 글에서 사용된 구체적인 예시들
+   - 글의 전반적인 흐름과 목적
 
-2. Generate 5 title choices where:
-   - One should be about the rise and fall of the main topic
-   - One about the perfection or rarity of the main topic
-   - One about understanding and leveraging the main topic (this should be the correct answer)
-   - One about technology's impact on the main topic
-   - One connecting the first and last examples mentioned
+2. 분석을 바탕으로 5개의 제목 보기를 만드세요:
+   - 정답이 될 가장 적절한 제목 1개
+   - 그럴듯하지만 부적절한 오답 4개
+   각 보기는 다음 기준을 따라야 합니다:
+   - 학술적이고 전문적인 어조 유지
+   - 간결하면서도 포괄적인 표현 사용
+   - 본문의 예시나 키워드를 활용
+   - 서로 다른 관점이나 측면 반영
 
-3. Format the response as:
+3. 정답 선택의 근거가 되는 해설을 작성하세요:
+   - 정답이 적절한 이유를 구체적으로 설명
+   - 각 오답이 부적절한 이유를 간단히 설명
+   - 가능한 경우 본문의 구절을 직접 인용
+
+4. 다음 형식으로 출력하세요:
 **다음 글의 제목으로 가장 적절한 것은?**
-[Original Text]
+[입력된 지문]
 
-① [First Title Option]
-② [Second Title Option]
-③ [Third Title Option]
-④ [Fourth Title Option]
-⑤ [Fifth Title Option]
+① [첫 번째 보기]
+② [두 번째 보기]
+③ [세 번째 보기]
+④ [네 번째 보기]
+⑤ [다섯 번째 보기]
 
-[정답] ③
-[해설] [Explanation in Korean about why the third option is the best title]
+[정답] [번호]
+[해설] [상세한 해설]
 
-Here's the text to analyze: ${text}`;
+여기 분석할 지문입니다: ${text}`;
     } else {
       prompt = `Generate a question of type ${type.name} based on the following text: ${text}`;
     }
