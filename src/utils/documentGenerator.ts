@@ -1,4 +1,4 @@
-import { Document, Paragraph, TextRun, Packer, PageBreak } from 'docx';
+import { Document, Paragraph, TextRun, Packer } from 'docx';
 import { saveAs } from 'file-saver';
 
 interface QuestionData {
@@ -26,7 +26,10 @@ export const generateDocument = async (questions: QuestionData[]) => {
               })
             ]
           }),
-          // Add two line breaks between questions
+          // Add three line breaks between questions for better readability
+          new Paragraph({
+            children: [new TextRun("\n")]
+          }),
           new Paragraph({
             children: [new TextRun("\n")]
           }),
@@ -73,8 +76,8 @@ export const generateDocument = async (questions: QuestionData[]) => {
                   text: `해설: ${explanationMatch?.[1] || '해설 없음'}\n`,
                   size: 24
                 }),
-                // Add one line break after each answer
-                new TextRun("\n")
+                // Add two line breaks after each answer and explanation
+                new TextRun("\n\n")
               ]
             })
           ];
