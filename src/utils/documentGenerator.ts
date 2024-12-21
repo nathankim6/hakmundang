@@ -6,7 +6,7 @@ interface QuestionData {
   questionNumber: number;
 }
 
-export const generateDocument = (questions: QuestionData[]) => {
+export const generateDocument = async (questions: QuestionData[]) => {
   const doc = new Document({
     sections: [{
       properties: {},
@@ -58,8 +58,6 @@ export const generateDocument = (questions: QuestionData[]) => {
     }],
   });
 
-  doc.save().then((buffer) => {
-    const blob = new Blob([buffer], { type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' });
-    saveAs(blob, 'ORUN_AI_QUIZ.docx');
-  });
+  const buffer = await Packer.toBlob(doc);
+  saveAs(buffer, 'ORUN_AI_QUIZ.docx');
 };

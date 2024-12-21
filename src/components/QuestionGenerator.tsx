@@ -120,7 +120,7 @@ export const QuestionGenerator = () => {
     }
   };
 
-  const handleDownloadDoc = () => {
+  const handleDownloadDoc = async () => {
     const questions = selectedTypes
       .flatMap(typeEntry => 
         typeEntry.passages
@@ -141,11 +141,20 @@ export const QuestionGenerator = () => {
       return;
     }
 
-    generateDocument(questions);
-    toast({
-      title: "문서 생성 완료",
-      description: "문제가 DOCX 파일로 저장되었습니다.",
-    });
+    try {
+      await generateDocument(questions);
+      toast({
+        title: "문서 생성 완료",
+        description: "문제가 DOCX 파일로 저장되었습니다.",
+      });
+    } catch (error) {
+      console.error('Error generating document:', error);
+      toast({
+        title: "오류 발생",
+        description: "문서 생성 중 오류가 발생했습니다.",
+        variant: "destructive",
+      });
+    }
   };
 
   // Calculate total question number for each passage
