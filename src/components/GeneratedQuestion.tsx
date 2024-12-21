@@ -6,9 +6,9 @@ interface GeneratedQuestionProps {
 
 export const GeneratedQuestion = ({ content }: GeneratedQuestionProps) => {
   return (
-    <Card className="mt-8 relative overflow-hidden group transform hover:scale-[1.01] transition-all duration-300">
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 animate-pulse" />
-      <div className="absolute inset-0 bg-secondary/50 backdrop-blur-sm" />
+    <Card className="mt-8 relative overflow-hidden group transform hover:scale-[1.01] transition-all duration-300 gradient-border">
+      <div className="absolute inset-0 bg-gradient-to-r from-[#E5DEFF] via-[#FFDEE2] to-[#FDE1D3] opacity-10" />
+      <div className="absolute inset-0 bg-white/95 backdrop-blur-sm" />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-50" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
       
@@ -21,8 +21,7 @@ export const GeneratedQuestion = ({ content }: GeneratedQuestionProps) => {
             </span>
           </h3>
           
-          <div className="whitespace-pre-wrap text-foreground/90 leading-relaxed relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-primary/5 animate-pulse" />
+          <div className="result-text whitespace-pre-wrap text-foreground/90 leading-relaxed relative">
             {content}
           </div>
         </div>

@@ -54,21 +54,19 @@
 .animate-title {
   background: linear-gradient(
     to right,
-    #B8860B,
-    #FFD700,
-    #DAA520,
-    #FDB931,
-    #B8860B
+    #4A3000,
+    #8B6508,
+    #A67D0C,
+    #8B6508,
+    #4A3000
   );
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
-  color: #B8860B;
+  color: transparent;
   animation: shine 3s linear infinite;
   font-weight: 900;
-  text-shadow: 
-    0 2px 4px rgba(0, 0, 0, 0.3),
-    0 0 15px rgba(184, 134, 11, 0.5);
+  text-shadow: none;
   letter-spacing: 2px;
   opacity: 1;
 }
@@ -129,6 +127,27 @@
   box-shadow: 
     0 0 20px rgba(0, 0, 0, 0.1),
     inset 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+/* Add new styles for text input and results */
+.input-text, .result-text {
+  font-family: 'Gulim', '굴림', sans-serif;
+}
+
+.gradient-border {
+  position: relative;
+  background: linear-gradient(to right, #E5DEFF, #FFDEE2, #FDE1D3);
+  padding: 1px;
+  border-radius: 0.5rem;
+}
+
+.gradient-border > * {
+  background: white;
+  border-radius: inherit;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 
 @keyframes shimmer {
