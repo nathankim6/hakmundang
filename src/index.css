@@ -92,10 +92,12 @@
 }
 
 .type-button {
-  @apply px-4 py-3 rounded-lg transition-all duration-300 bg-secondary/50 hover:bg-primary/20 border border-primary/20 hover:border-primary/40 text-foreground;
+  @apply px-4 py-3 rounded-lg transition-all duration-300 bg-secondary/50 hover:bg-primary/20 border border-primary/20 hover:border-primary/40;
   background: linear-gradient(145deg, rgba(184, 134, 11, 0.1), rgba(205, 133, 63, 0.05));
   backdrop-filter: blur(8px);
   box-shadow: 0 4px 15px rgba(184, 134, 11, 0.1);
+  color: #9b87f5;
+  text-shadow: 0 0 10px rgba(155, 135, 245, 0.3);
 }
 
 .type-button.selected {
