@@ -5,7 +5,7 @@ import { GeneratedQuestion } from "./GeneratedQuestion";
 import { generateQuestion } from "@/lib/claude";
 import { QuestionType } from "@/types/question";
 import { Button } from "@/components/ui/button";
-import { useToast } from "@/components/ui/use-toast";
+import { useToast } from "@/hooks/use-toast";
 import { Sparkles, Plus, Trash2 } from "lucide-react";
 
 interface PassageEntry {
@@ -79,20 +79,31 @@ export const QuestionGenerator = () => {
 
     setIsLoading(true);
     try {
+      let questionNumber = 1;
       const updatedTypes = [...selectedTypes];
       
       for (let typeIndex = 0; typeIndex < updatedTypes.length; typeIndex++) {
         const typeEntry = updatedTypes[typeIndex];
         for (let passageIndex = 0; passageIndex < typeEntry.passages.length; passageIndex++) {
           const passage = typeEntry.passages[passageIndex];
-          const result = await generateQuestion(typeEntry.type, passage.text);
-          if (typeof result === 'string') {
-            updatedTypes[typeIndex].passages[passageIndex].result = result;
+          try {
+            const result = await generateQuestion(typeEntry.type, passage.text);
+            if (typeof result === 'string') {
+              updatedTypes[typeIndex].passages[passageIndex].result = result;
+              setSelectedTypes([...updatedTypes]);
+              questionNumber++;
+            }
+          } catch (error) {
+            console.error(`Error generating question for passage ${passageIndex + 1}:`, error);
+            toast({
+              title: "오류 발생",
+              description: `${passageIndex + 1}번 지문 처리 중 오류가 발생했습니다.`,
+              variant: "destructive",
+            });
           }
         }
       }
       
-      setSelectedTypes(updatedTypes);
       toast({
         title: "문제 생성 완료",
         description: "모든 문제가 생성되었습니다.",
@@ -106,6 +117,13 @@ export const QuestionGenerator = () => {
     } finally {
       setIsLoading(false);
     }
+  };
+
+  // Calculate total question number for each passage
+  let questionCounter = 0;
+  const getQuestionNumber = () => {
+    questionCounter++;
+    return questionCounter;
   };
 
   return (
@@ -122,7 +140,7 @@ export const QuestionGenerator = () => {
           <div key={typeEntry.type.id} className="space-y-6 p-6 rounded-lg border-2 border-primary/20 relative">
             <h3 className="text-xl font-bold text-primary">{typeEntry.type.name}</h3>
             
-            <div className="grid grid-cols-3 gap-4">
+            <div className="space-y-4">
               {typeEntry.passages.map((passage, index) => (
                 <div key={passage.id} className="space-y-2">
                   <div className="flex items-center justify-between">
@@ -144,7 +162,6 @@ export const QuestionGenerator = () => {
                     onChange={(text) => handleTextChange(typeEntry.type.id, passage.id, text)}
                     onEnterPress={() => handleAddPassage(typeEntry.type.id)}
                   />
-                  {passage.result && <GeneratedQuestion content={passage.result} />}
                 </div>
               ))}
             </div>
@@ -161,21 +178,37 @@ export const QuestionGenerator = () => {
         ))}
 
         {selectedTypes.length > 0 && (
-          <div className="flex justify-center w-full">
-            <Button
-              onClick={handleGenerateAll}
-              disabled={isLoading}
-              className="max-w-md w-full bg-gradient-to-r from-primary via-primary/90 to-primary relative group overflow-hidden transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl"
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-shimmer" />
-              <div className="relative flex items-center justify-center gap-2">
-                <Sparkles className="w-5 h-5 animate-pulse" />
-                <span className="font-semibold tracking-wide">
-                  {isLoading ? "문제 생성 중..." : "문제 생성하기"}
-                </span>
-              </div>
-            </Button>
-          </div>
+          <>
+            <div className="flex justify-center w-full">
+              <Button
+                onClick={handleGenerateAll}
+                disabled={isLoading}
+                className="max-w-md w-full bg-gradient-to-r from-primary via-primary/90 to-primary relative group overflow-hidden transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-shimmer" />
+                <div className="relative flex items-center justify-center gap-2">
+                  <Sparkles className="w-5 h-5 animate-pulse" />
+                  <span className="font-semibold tracking-wide">
+                    {isLoading ? "문제 생성 중..." : "문제 생성하기"}
+                  </span>
+                </div>
+              </Button>
+            </div>
+
+            <div className="space-y-8">
+              {selectedTypes.map((typeEntry) => (
+                typeEntry.passages.map((passage, passageIndex) => (
+                  passage.result && (
+                    <GeneratedQuestion 
+                      key={passage.id}
+                      content={passage.result}
+                      questionNumber={getQuestionNumber()}
+                    />
+                  )
+                ))
+              )).flat().filter(Boolean)}
+            </div>
+          </>
         )}
       </div>
     </div>
