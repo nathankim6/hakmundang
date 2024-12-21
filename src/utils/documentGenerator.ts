@@ -12,11 +12,10 @@ export const generateDocument = async (questions: QuestionData[]) => {
       properties: {},
       children: [
         // Questions Section
-        ...questions.flatMap((q, index) => {
+        ...questions.flatMap((q) => {
           // Split content into question part and answer/explanation part
           const parts = q.content.split('[정답]');
           const questionPart = parts[0].trim();
-          const answerPart = parts[1] ? '[정답]' + parts[1] : '';
           
           return [
             new Paragraph({
@@ -32,13 +31,7 @@ export const generateDocument = async (questions: QuestionData[]) => {
                 })
               ]
             }),
-            // Add three line breaks between questions for better readability
-            new Paragraph({
-              children: [new TextRun("\n")]
-            }),
-            new Paragraph({
-              children: [new TextRun("\n")]
-            }),
+            // Add a single line break after each question
             new Paragraph({
               children: [new TextRun("\n")]
             })
@@ -62,32 +55,28 @@ export const generateDocument = async (questions: QuestionData[]) => {
         }),
         
         // Answers and Explanations Content
-        ...questions.flatMap(q => {
+        ...questions.map(q => {
           const content = q.content;
           const answerMatch = content.match(/\[정답\] (.*?)\n/);
           const explanationMatch = content.match(/\[해설\] (.*?)(?=(\n|$))/);
           
-          return [
-            new Paragraph({
-              children: [
-                new TextRun({
-                  text: `문제 ${q.questionNumber}\n`,
-                  bold: true,
-                  size: 24
-                }),
-                new TextRun({
-                  text: `정답: ${answerMatch?.[1] || '정답 없음'}\n`,
-                  size: 24
-                }),
-                new TextRun({
-                  text: `해설: ${explanationMatch?.[1] || '해설 없음'}\n`,
-                  size: 24
-                }),
-                // Add two line breaks after each answer and explanation
-                new TextRun("\n\n")
-              ]
-            })
-          ];
+          return new Paragraph({
+            children: [
+              new TextRun({
+                text: `문제 ${q.questionNumber}\n`,
+                bold: true,
+                size: 24
+              }),
+              new TextRun({
+                text: `정답: ${answerMatch?.[1] || '정답 없음'}\n`,
+                size: 24
+              }),
+              new TextRun({
+                text: `해설: ${explanationMatch?.[1] || '해설 없음'}\n\n`,
+                size: 24
+              })
+            ]
+          });
         })
       ]
     }]
