@@ -3,10 +3,11 @@ import { TypeSelector } from "./TypeSelector";
 import { TextInput } from "./TextInput";
 import { GeneratedQuestion } from "./GeneratedQuestion";
 import { generateQuestion } from "@/lib/claude";
+import { generateDocument } from "@/utils/documentGenerator";
 import { QuestionType } from "@/types/question";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
-import { Sparkles, Plus, Trash2 } from "lucide-react";
+import { Sparkles, Plus, Trash2, FileDown } from "lucide-react";
 
 interface PassageEntry {
   id: string;
@@ -119,6 +120,34 @@ export const QuestionGenerator = () => {
     }
   };
 
+  const handleDownloadDoc = () => {
+    const questions = selectedTypes
+      .flatMap(typeEntry => 
+        typeEntry.passages
+          .filter(passage => passage.result)
+          .map((passage, index) => ({
+            content: passage.result,
+            questionNumber: index + 1,
+          }))
+      )
+      .sort((a, b) => a.questionNumber - b.questionNumber);
+
+    if (questions.length === 0) {
+      toast({
+        title: "문제 없음",
+        description: "저장할 문제가 없습니다. 먼저 문제를 생성해주세요.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    generateDocument(questions);
+    toast({
+      title: "문서 생성 완료",
+      description: "문제가 DOCX 파일로 저장되었습니다.",
+    });
+  };
+
   // Calculate total question number for each passage
   let questionCounter = 0;
   const getQuestionNumber = () => {
@@ -179,7 +208,7 @@ export const QuestionGenerator = () => {
 
         {selectedTypes.length > 0 && (
           <>
-            <div className="flex justify-center w-full">
+            <div className="flex justify-center w-full gap-4">
               <Button
                 onClick={handleGenerateAll}
                 disabled={isLoading}
@@ -190,6 +219,20 @@ export const QuestionGenerator = () => {
                   <Sparkles className="w-5 h-5 animate-pulse" />
                   <span className="font-semibold tracking-wide">
                     {isLoading ? "문제 생성 중..." : "문제 생성하기"}
+                  </span>
+                </div>
+              </Button>
+
+              <Button
+                onClick={handleDownloadDoc}
+                disabled={isLoading}
+                variant="outline"
+                className="max-w-md w-full relative group overflow-hidden transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                <div className="relative flex items-center justify-center gap-2">
+                  <FileDown className="w-5 h-5" />
+                  <span className="font-semibold tracking-wide">
+                    문제 저장하기
                   </span>
                 </div>
               </Button>
