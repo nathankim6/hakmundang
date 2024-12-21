@@ -25,7 +25,7 @@ export const TypeSelector = ({ selectedType, onSelect }: TypeSelectorProps) => {
         <span className="text-3xl">✨</span> Question Types
       </h2>
       
-      <ScrollArea className="h-[70vh] pr-4">
+      <ScrollArea className="h-[calc(100vh-12rem)] pr-4 scrollbar-none">
         <div className="space-y-6">
           <div className="space-y-2">
             <CategoryTitle>수능형</CategoryTitle>
