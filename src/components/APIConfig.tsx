@@ -17,6 +17,7 @@ export const APIConfig = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [apiKey, setApiKey] = useState("");
   const [isConnected, setIsConnected] = useState(false);
+  const [showSuccessEffect, setShowSuccessEffect] = useState(false);
   const { toast } = useToast();
 
   const testConnection = async () => {
@@ -46,6 +47,8 @@ export const APIConfig = () => {
       if (response) {
         setIsConnected(true);
         localStorage.setItem("CLAUDE_API_KEY", apiKey);
+        setShowSuccessEffect(true);
+        setTimeout(() => setShowSuccessEffect(false), 2000);
         toast({
           title: "연결 성공",
           description: "Claude API가 성공적으로 연동되었습니다.",
@@ -76,11 +79,16 @@ export const APIConfig = () => {
   };
 
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-2 relative">
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogTrigger asChild>
-          <Button variant="outline" size="icon">
-            <Settings className="h-4 w-4" />
+          <Button 
+            variant="outline" 
+            size="icon"
+            className="relative overflow-hidden transition-all duration-300 bg-gradient-to-r from-[#B8860B] via-[#DAA520] to-[#CD853F] hover:scale-105 hover:shadow-lg hover:shadow-primary/50 border-primary"
+          >
+            <Settings className="h-4 w-4 text-background animate-spin-slow" />
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer" />
           </Button>
         </DialogTrigger>
         <DialogContent>
@@ -97,12 +105,26 @@ export const APIConfig = () => {
               value={apiKey}
               onChange={(e) => setApiKey(e.target.value)}
             />
-            <Button onClick={testConnection}>연결 테스트</Button>
+            <Button 
+              onClick={testConnection}
+              className="bg-gradient-to-r from-[#B8860B] via-[#DAA520] to-[#CD853F] hover:scale-105 transition-all duration-300"
+            >
+              연결 테스트
+            </Button>
           </div>
         </DialogContent>
       </Dialog>
       {isConnected ? (
-        <CheckCircle className="h-5 w-5 text-green-500" />
+        <div className="relative">
+          <CheckCircle className="h-5 w-5 text-green-500" />
+          {showSuccessEffect && (
+            <>
+              <div className="absolute inset-0 animate-ping rounded-full bg-green-500/30" />
+              <div className="absolute inset-[-8px] animate-pulse rounded-full bg-green-500/20" />
+              <div className="absolute inset-[-16px] animate-pulse delay-75 rounded-full bg-green-500/10" />
+            </>
+          )}
+        </div>
       ) : (
         <XCircle className="h-5 w-5 text-red-500" />
       )}
