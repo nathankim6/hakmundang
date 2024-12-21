@@ -49,6 +49,59 @@
   }
 }
 
+.metallic-button-type {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  background: rgba(15, 15, 15, 0.9);
+  border: 1px solid rgba(155, 135, 245, 0.2);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-shadow: 0 0 2px rgba(155, 135, 245, 0.3);
+}
+
+.metallic-button-type:hover {
+  transform: translateY(-1px);
+  background: rgba(20, 20, 20, 0.95);
+  border-color: rgba(155, 135, 245, 0.3);
+  box-shadow: 
+    0 4px 12px rgba(155, 135, 245, 0.1),
+    inset 0 0 8px rgba(155, 135, 245, 0.2);
+}
+
+.metallic-button-type.selected {
+  background: rgba(25, 25, 25, 1);
+  box-shadow: 
+    0 0 12px rgba(155, 135, 245, 0.15),
+    inset 0 0 8px rgba(155, 135, 245, 0.1);
+}
+
+.metallic-button-type::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, transparent, rgba(155, 135, 245, 0.1), transparent);
+  z-index: -1;
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% {
+    opacity: 0.2;
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.2;
+    transform: translateX(100%);
+  }
+}
+
 .animate-title {
   animation: titleAnimation 8s infinite;
   background: linear-gradient(90deg, #9b87f5, #8B5CF6);
@@ -73,26 +126,4 @@
   box-shadow: 
     0 4px 6px rgba(0, 0, 0, 0.1),
     inset 0 0 8px rgba(155, 135, 245, 0.05);
-}
-
-.metallic-button-type {
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  background: rgba(15, 15, 15, 0.9);
-  border: 1px solid rgba(155, 135, 245, 0.2);
-  font-weight: 500;
-}
-
-.metallic-button-type:hover {
-  transform: translateY(-1px);
-  background: rgba(20, 20, 20, 0.95);
-  border-color: rgba(155, 135, 245, 0.3);
-}
-
-.metallic-button-type.selected {
-  background: rgba(25, 25, 25, 1);
-  box-shadow: 
-    0 0 12px rgba(155, 135, 245, 0.15),
-    inset 0 0 8px rgba(155, 135, 245, 0.1);
 }
