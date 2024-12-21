@@ -15,12 +15,19 @@ export const generateDocument = async (questions: QuestionData[]) => {
   questions.forEach((q) => {
     // Split content into question part and answer/explanation part
     const parts = q.content.split('[정답]');
-    const questionPart = parts[0].trim();
-    const answerPart = parts[1] ? '[정답]' + parts[1].trim() : '';
     
-    // Add to respective sections
-    questionsText += `문제 ${q.questionNumber}\n${questionPart}\n\n`;
-    answersText += `문제 ${q.questionNumber}\n${answerPart}\n\n`;
+    if (parts.length >= 2) {
+      const questionPart = parts[0].trim();
+      // Join all remaining parts in case there are multiple [정답] occurrences
+      const answerPart = parts.slice(1).join('[정답]').trim();
+      
+      // Add to respective sections
+      questionsText += `문제 ${q.questionNumber}\n${questionPart}\n\n`;
+      answersText += `문제 ${q.questionNumber}\n[정답]${answerPart}\n\n`;
+    } else {
+      // If no [정답] is found, treat the entire content as a question
+      questionsText += `문제 ${q.questionNumber}\n${q.content.trim()}\n\n`;
+    }
   });
 
   // Add page break markers between questions and answers
