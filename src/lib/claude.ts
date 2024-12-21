@@ -1,5 +1,5 @@
 import { QuestionType } from "@/types/question";
-import { anthropic } from "@anthropic-ai/sdk";
+import { Anthropic } from "@anthropic-ai/sdk";
 
 const questionTypes: QuestionType[] = [
   // 수능형
@@ -40,15 +40,18 @@ const questionTypes: QuestionType[] = [
 export const getQuestionTypes = () => questionTypes;
 
 export const generateQuestion = async (type: QuestionType, text: string) => {
-  const client = new anthropic({
+  const client = new Anthropic({
     apiKey: localStorage.getItem("anthropicApiKey") || "",
   });
 
-  const response = await client.completions.create({
+  const response = await client.messages.create({
     model: "claude-2",
-    prompt: `Generate a question of type ${type.name} based on the following text: ${text}`,
+    messages: [{
+      role: "user",
+      content: `Generate a question of type ${type.name} based on the following text: ${text}`
+    }],
     max_tokens: 150,
   });
 
-  return response.completion;
+  return response.content;
 };

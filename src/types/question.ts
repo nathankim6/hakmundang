@@ -1,7 +1,7 @@
 export type QuestionType = {
   id: string;
   name: string;
-  prompt: string;
+  prompt?: string;
 };
 
 export type GeneratedQuestion = {
