@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/components/ui/use-toast";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, ExternalLink } from "lucide-react";
 
 interface APIResponse {
   success: boolean;
@@ -102,8 +102,15 @@ export function APIConfig() {
           <Button onClick={handleTestConnection} disabled={isLoading}>
             {isLoading ? "확인 중..." : "확인"}
           </Button>
+          <Button
+            variant="outline"
+            onClick={() => window.open("https://www.youtube.com/watch?v=5yf-8Wz1CDM", "_blank")}
+          >
+            <ExternalLink className="mr-2 h-4 w-4" />
+            API 발급 방법
+          </Button>
         </div>
       </div>
     </div>
   );
-};
+}
