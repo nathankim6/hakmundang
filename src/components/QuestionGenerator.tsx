@@ -174,7 +174,7 @@ export const QuestionGenerator = () => {
 
   return (
     <div className="flex gap-8">
-      <div className="w-72 flex-shrink-0">
+      <div className="w-72 flex-shrink-0 bg-gray-50 p-4 rounded-lg">
         <TypeSelector 
           selectedTypes={selectedTypes.map(entry => entry.type)} 
           onSelect={handleTypeSelect}
@@ -183,7 +183,7 @@ export const QuestionGenerator = () => {
       </div>
       <div className="flex-1 space-y-8">
         {selectedTypes.map((typeEntry) => (
-          <div key={typeEntry.type.id} className="space-y-6 p-6 rounded-lg border-2 border-primary/20 relative">
+          <div key={typeEntry.type.id} className="space-y-6 p-6 rounded-lg border-2 border-primary/20 relative bg-gray-50">
             <h3 className="text-xl font-bold text-primary">{typeEntry.type.name}</h3>
             
             <div className="space-y-4">
@@ -267,7 +267,7 @@ export const QuestionGenerator = () => {
               </div>
             </div>
 
-            <div className="space-y-0">
+            <div className="space-y-0 bg-gray-50 p-6 rounded-lg">
               {selectedTypes.map((typeEntry) => (
                 typeEntry.passages.map((passage, passageIndex) => (
                   passage.result && (
