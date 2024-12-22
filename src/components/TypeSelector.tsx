@@ -47,9 +47,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
 
   return (
     <div className="space-y-6">
-      <h2 className="text-2xl font-bold flex items-center gap-3 text-[#1A1F2C]">
-        <span className="text-3xl">✨</span> Question Types
-      </h2>
+      <h2 className="text-2xl font-bold text-[#1A1F2C] flex items-center gap-3 whitespace-nowrap">✨ Question Types</h2>
       
       <ScrollArea className="h-[70vh] pr-4">
         <div className="space-y-8">
