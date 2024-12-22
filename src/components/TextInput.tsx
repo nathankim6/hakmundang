@@ -1,17 +1,32 @@
 import { Textarea } from "@/components/ui/textarea";
-import { KeyboardEvent } from "react";
+import { KeyboardEvent, ClipboardEvent } from "react";
 
 interface TextInputProps {
   value: string;
   onChange: (value: string) => void;
   onEnterPress?: () => void;
+  onPaste?: (values: string[]) => void;
 }
 
-export const TextInput = ({ value, onChange, onEnterPress }: TextInputProps) => {
+export const TextInput = ({ value, onChange, onEnterPress, onPaste }: TextInputProps) => {
   const handleKeyDown = (e: KeyboardEvent<HTMLTextAreaElement>) => {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
       onEnterPress?.();
+    }
+  };
+
+  const handlePaste = (e: ClipboardEvent<HTMLTextAreaElement>) => {
+    e.preventDefault();
+    const text = e.clipboardData.getData('text');
+    
+    // Split by tabs and newlines to handle Excel paste
+    const values = text.split(/[\t\n]+/).filter(Boolean);
+    
+    if (values.length > 1 && onPaste) {
+      onPaste(values);
+    } else {
+      onChange(text);
     }
   };
 
@@ -23,6 +38,7 @@ export const TextInput = ({ value, onChange, onEnterPress }: TextInputProps) => 
           value={value}
           onChange={(e) => onChange(e.target.value)}
           onKeyDown={handleKeyDown}
+          onPaste={handlePaste}
           placeholder="Enter your text here..."
           className="input-text h-[80px] w-full bg-white/90 focus:border-primary transition-all duration-300 rounded-lg text-foreground placeholder:text-muted-foreground resize-none relative backdrop-blur-sm text-sm"
         />

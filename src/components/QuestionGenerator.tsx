@@ -67,14 +67,15 @@ export const QuestionGenerator = () => {
   };
 
   const handleGenerateAll = async () => {
-    const hasEmptyPassages = selectedTypes.some(type => 
-      type.passages.some(passage => !passage.text.trim())
-    );
+    const nonEmptyTypes = selectedTypes.map(type => ({
+      ...type,
+      passages: type.passages.filter(passage => passage.text.trim() !== '')
+    })).filter(type => type.passages.length > 0);
 
-    if (hasEmptyPassages) {
+    if (nonEmptyTypes.length === 0) {
       toast({
         title: "입력 확인",
-        description: "모든 지문을 입력해주세요.",
+        description: "생성할 문제가 없습니다.",
         variant: "destructive",
       });
       return;
@@ -83,23 +84,27 @@ export const QuestionGenerator = () => {
     setIsLoading(true);
     try {
       let currentQuestion = 0;
-      const totalQuestions = selectedTypes.reduce((sum, type) => sum + type.passages.length, 0);
+      const totalQuestions = nonEmptyTypes.reduce((sum, type) => sum + type.passages.length, 0);
       setProgress({ current: 0, total: totalQuestions });
       
       const updatedTypes = [...selectedTypes];
       
       for (let typeIndex = 0; typeIndex < updatedTypes.length; typeIndex++) {
         const typeEntry = updatedTypes[typeIndex];
-        for (let passageIndex = 0; passageIndex < typeEntry.passages.length; passageIndex++) {
-          const passage = typeEntry.passages[passageIndex];
+        const validPassages = typeEntry.passages.filter(p => p.text.trim() !== '');
+        
+        for (let passageIndex = 0; passageIndex < validPassages.length; passageIndex++) {
+          const passage = validPassages[passageIndex];
           try {
             currentQuestion++;
             setProgress({ current: currentQuestion, total: totalQuestions });
             
             const result = await generateQuestion(typeEntry.type, passage.text);
             if (typeof result === 'string') {
-              updatedTypes[typeIndex].passages[passageIndex].result = result;
-              setSelectedTypes([...updatedTypes]);
+              const originalPassageIndex = typeEntry.passages.findIndex(p => p.id === passage.id);
+              if (originalPassageIndex !== -1) {
+                updatedTypes[typeIndex].passages[originalPassageIndex].result = result;
+              }
             }
           } catch (error) {
             console.error(`Error generating question for passage ${passageIndex + 1}:`, error);
@@ -111,6 +116,8 @@ export const QuestionGenerator = () => {
           }
         }
       }
+      
+      setSelectedTypes(updatedTypes);
       
       toast({
         title: "문제 생성 완료",
@@ -128,48 +135,29 @@ export const QuestionGenerator = () => {
     }
   };
 
-  const handleDownloadDoc = async () => {
-    const questions = selectedTypes
-      .flatMap(typeEntry => 
-        typeEntry.passages
-          .filter(passage => passage.result)
-          .map((passage, index) => ({
-            content: passage.result,
-            questionNumber: index + 1,
-          }))
-      )
-      .sort((a, b) => a.questionNumber - b.questionNumber);
-
-    if (questions.length === 0) {
-      toast({
-        title: "문제 없음",
-        description: "저장할 문제가 없습니다. 먼저 문제를 생성해주세요.",
-        variant: "destructive",
-      });
-      return;
-    }
-
-    try {
-      await generateDocument(questions);
-      toast({
-        title: "문서 생성 완료",
-        description: "문제가 DOCX 파일로 저장되었습니다.",
-      });
-    } catch (error) {
-      console.error('Error generating document:', error);
-      toast({
-        title: "오류 발생",
-        description: "문서 생성 중 오류가 발생했습니다.",
-        variant: "destructive",
-      });
-    }
-  };
-
-  // Calculate total question number for each passage
-  let questionCounter = 0;
-  const getQuestionNumber = () => {
-    questionCounter++;
-    return questionCounter;
+  const handlePasteValues = (typeId: string, passageId: string, values: string[]) => {
+    setSelectedTypes(prev => {
+      const updatedTypes = [...prev];
+      const typeIndex = updatedTypes.findIndex(t => t.type.id === typeId);
+      
+      if (typeIndex === -1) return prev;
+      
+      const passageIndex = updatedTypes[typeIndex].passages.findIndex(p => p.id === passageId);
+      if (passageIndex === -1) return prev;
+      
+      updatedTypes[typeIndex].passages[passageIndex].text = values[0];
+      
+      const remainingValues = values.slice(1);
+      const newPassages = remainingValues.map(value => ({
+        id: crypto.randomUUID(),
+        text: value,
+        result: ""
+      }));
+      
+      updatedTypes[typeIndex].passages.splice(passageIndex + 1, 0, ...newPassages);
+      
+      return updatedTypes;
+    });
   };
 
   return (
@@ -210,6 +198,7 @@ export const QuestionGenerator = () => {
                     value={passage.text} 
                     onChange={(text) => handleTextChange(typeEntry.type.id, passage.id, text)}
                     onEnterPress={() => handleAddPassage(typeEntry.type.id)}
+                    onPaste={(values) => handlePasteValues(typeEntry.type.id, passage.id, values)}
                   />
                 </div>
               ))}
