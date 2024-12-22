@@ -26,7 +26,6 @@ export const QuestionGenerator = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [progress, setProgress] = useState({ current: 0, total: 0 });
   const { toast } = useToast();
-  const [questionCounter, setQuestionCounter] = useState(1);
 
   const handleTypeSelect = (type: QuestionType) => {
     if (!selectedTypes.find(entry => entry.type.id === type.id)) {
@@ -65,12 +64,6 @@ export const QuestionGenerator = () => {
           }
         : entry
     ));
-  };
-
-  const getQuestionNumber = () => {
-    const currentNumber = questionCounter;
-    setQuestionCounter(prev => prev + 1);
-    return currentNumber;
   };
 
   const handleDownloadDoc = () => {
@@ -196,6 +189,17 @@ export const QuestionGenerator = () => {
     });
   };
 
+  // Calculate question numbers once during render
+  const generatedQuestions = selectedTypes.flatMap((typeEntry, typeIndex) => 
+    typeEntry.passages
+      .map((passage, passageIndex) => ({
+        id: passage.id,
+        content: passage.result,
+        questionNumber: typeIndex * 100 + passageIndex + 1 // Ensures unique numbers across types
+      }))
+      .filter(q => q.content) // Only include questions with results
+  ).sort((a, b) => a.questionNumber - b.questionNumber);
+
   return (
     <div className="flex gap-8">
       <div className="w-72 flex-shrink-0 bg-[#F1F0FB]/50 p-4 rounded-lg border border-[#D6BCFA]/30">
@@ -295,17 +299,13 @@ export const QuestionGenerator = () => {
             </div>
 
             <div className="space-y-0 bg-[#F8F7FF] p-6 rounded-lg border border-[#D6BCFA]/30">
-              {selectedTypes.map((typeEntry) => (
-                typeEntry.passages.map((passage, passageIndex) => (
-                  passage.result && (
-                    <GeneratedQuestion 
-                      key={passage.id}
-                      content={passage.result}
-                      questionNumber={getQuestionNumber()}
-                    />
-                  )
-                ))
-              )).flat().filter(Boolean)}
+              {generatedQuestions.map((question) => (
+                <GeneratedQuestion 
+                  key={question.id}
+                  content={question.content}
+                  questionNumber={question.questionNumber}
+                />
+              ))}
             </div>
           </>
         )}
