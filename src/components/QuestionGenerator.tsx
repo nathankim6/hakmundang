@@ -26,6 +26,7 @@ export const QuestionGenerator = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [progress, setProgress] = useState({ current: 0, total: 0 });
   const { toast } = useToast();
+  const [questionCounter, setQuestionCounter] = useState(1);
 
   const handleTypeSelect = (type: QuestionType) => {
     if (!selectedTypes.find(entry => entry.type.id === type.id)) {
@@ -64,6 +65,41 @@ export const QuestionGenerator = () => {
           }
         : entry
     ));
+  };
+
+  const getQuestionNumber = () => {
+    const currentNumber = questionCounter;
+    setQuestionCounter(prev => prev + 1);
+    return currentNumber;
+  };
+
+  const handleDownloadDoc = () => {
+    const questions = selectedTypes
+      .flatMap(typeEntry => 
+        typeEntry.passages
+          .filter(passage => passage.result)
+          .map((passage, index) => ({
+            content: passage.result,
+            questionNumber: index + 1
+          }))
+      )
+      .sort((a, b) => a.questionNumber - b.questionNumber);
+
+    if (questions.length === 0) {
+      toast({
+        title: "다운로드 실패",
+        description: "저장할 문제가 없습니다.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    generateDocument(questions);
+    
+    toast({
+      title: "다운로드 완료",
+      description: "문제가 성공적으로 저장되었습니다.",
+    });
   };
 
   const handleGenerateAll = async () => {
