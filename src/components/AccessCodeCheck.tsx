@@ -83,7 +83,7 @@ export function AccessCodeCheck() {
               <div className="relative">
                 <Key className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
                 <Input
-                  type="text"
+                  type="password"
                   placeholder="엑세스 코드를 입력하세요..."
                   value={code}
                   onChange={(e) => setCode(e.target.value)}
@@ -107,4 +107,4 @@ export function AccessCodeCheck() {
       </div>
     </div>
   );
-}
+};
