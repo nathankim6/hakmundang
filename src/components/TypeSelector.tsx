@@ -1,6 +1,5 @@
 import { QuestionType } from "@/types/question";
 import { getQuestionTypes } from "@/lib/claude";
-import { ScrollArea } from "./ui/scroll-area";
 import { X } from "lucide-react";
 
 interface TypeSelectorProps {
@@ -49,45 +48,43 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
     <div className="space-y-6">
       <h2 className="text-2xl font-bold text-[#1A1F2C] flex items-center gap-3 whitespace-nowrap">✨ Question Types</h2>
       
-      <ScrollArea className="h-[70vh] pr-4">
-        <div className="space-y-8">
-          <div className="space-y-4">
-            <CategoryTitle>수능형</CategoryTitle>
-            <div className="grid gap-2">
-              {suneungTypes.map((type) => (
-                <TypeButton key={type.id} type={type} />
-              ))}
-            </div>
-          </div>
-
-          <div className="space-y-4">
-            <CategoryTitle>내신형</CategoryTitle>
-            <div className="grid gap-2">
-              {schoolTypes.map((type) => (
-                <TypeButton key={type.id} type={type} />
-              ))}
-            </div>
-          </div>
-
-          <div className="space-y-4">
-            <CategoryTitle>서술형</CategoryTitle>
-            <div className="grid gap-2">
-              {descriptiveTypes.map((type) => (
-                <TypeButton key={type.id} type={type} />
-              ))}
-            </div>
-          </div>
-
-          <div className="space-y-4">
-            <CategoryTitle>옳은영어 콘텐츠</CategoryTitle>
-            <div className="grid gap-2">
-              {contentTypes.map((type) => (
-                <TypeButton key={type.id} type={type} />
-              ))}
-            </div>
+      <div className="space-y-8">
+        <div className="space-y-4">
+          <CategoryTitle>수능형</CategoryTitle>
+          <div className="grid gap-2">
+            {suneungTypes.map((type) => (
+              <TypeButton key={type.id} type={type} />
+            ))}
           </div>
         </div>
-      </ScrollArea>
+
+        <div className="space-y-4">
+          <CategoryTitle>내신형</CategoryTitle>
+          <div className="grid gap-2">
+            {schoolTypes.map((type) => (
+              <TypeButton key={type.id} type={type} />
+            ))}
+          </div>
+        </div>
+
+        <div className="space-y-4">
+          <CategoryTitle>서술형</CategoryTitle>
+          <div className="grid gap-2">
+            {descriptiveTypes.map((type) => (
+              <TypeButton key={type.id} type={type} />
+            ))}
+          </div>
+        </div>
+
+        <div className="space-y-4">
+          <CategoryTitle>옳은영어 콘텐츠</CategoryTitle>
+          <div className="grid gap-2">
+            {contentTypes.map((type) => (
+              <TypeButton key={type.id} type={type} />
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
