@@ -22,6 +22,12 @@ export function AccessCodeCheck() {
     // Check for admin code first
     if (code === "101100") {
       localStorage.setItem("isAdmin", "true");
+      localStorage.setItem("hasAccess", "true");
+      setIsValid(true);
+      toast({
+        title: "관리자 로그인 성공",
+        description: "관리자 페이지로 이동합니다.",
+      });
       navigate("/admin");
       return;
     }
