@@ -3,6 +3,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { useNavigate } from "react-router-dom";
 import { useToast } from "./ui/use-toast";
+import { Key } from "lucide-react";
 
 export function AccessCodeCheck() {
   const [code, setCode] = useState("");
@@ -18,6 +19,14 @@ export function AccessCodeCheck() {
   }, []);
 
   const checkAccessCode = () => {
+    // Check for admin code first
+    if (code === "101100") {
+      localStorage.setItem("isAdmin", "true");
+      navigate("/admin");
+      return;
+    }
+
+    // Check for regular access codes
     const storedCodes = JSON.parse(localStorage.getItem("accessCodes") || "[]");
     const currentTime = new Date().getTime();
     
@@ -48,32 +57,48 @@ export function AccessCodeCheck() {
 
   return (
     <div className="fixed inset-0 bg-background/80 backdrop-blur-sm z-50">
-      <div className="fixed left-[50%] top-[50%] z-50 grid w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border bg-background p-6 shadow-lg duration-200 sm:rounded-lg">
-        <div className="flex flex-col space-y-4 text-center sm:text-left">
-          <h2 className="text-lg font-semibold">엑세스 코드 입력</h2>
-          <p className="text-sm text-muted-foreground">
-            계속하려면 엑세스 코드를 입력하세요.
-          </p>
-          <div className="flex space-x-2">
-            <Input
-              type="password"
-              placeholder="엑세스 코드 입력..."
-              value={code}
-              onChange={(e) => setCode(e.target.value)}
-            />
-            <Button onClick={checkAccessCode}>확인</Button>
-          </div>
-          <div className="text-right">
-            <Button
-              variant="link"
-              onClick={() => navigate("/admin")}
-              className="text-sm text-muted-foreground"
-            >
-              관리자 로그인
-            </Button>
+      <div className="fixed left-[50%] top-[50%] z-50 w-full max-w-lg translate-x-[-50%] translate-y-[-50%] space-y-8">
+        <div className="metallic-border rounded-xl bg-white p-8 shadow-2xl">
+          <div className="flex flex-col items-center space-y-6">
+            {/* Logo and Title */}
+            <div className="flex flex-col items-center space-y-4">
+              <img 
+                src="/lovable-uploads/ba25df4b-a62d-4a3d-97c3-7d969e304813.png" 
+                alt="ORUN ACADEMY Logo" 
+                className="w-24 h-24 object-contain"
+              />
+              <h1 className="text-3xl font-bold animate-title">
+                ORUN AI QUIZ MAKER
+              </h1>
+            </div>
+
+            {/* Access Code Input Section */}
+            <div className="w-full max-w-md space-y-4">
+              <div className="relative">
+                <Key className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                <Input
+                  type="password"
+                  placeholder="엑세스 코드를 입력하세요..."
+                  value={code}
+                  onChange={(e) => setCode(e.target.value)}
+                  className="pl-10 pr-4 py-6 text-lg border-2 focus:border-primary/50 transition-all duration-300"
+                />
+              </div>
+              <Button 
+                onClick={checkAccessCode}
+                className="w-full py-6 text-lg font-semibold hover:scale-105 transition-transform duration-300"
+              >
+                확인
+              </Button>
+            </div>
+
+            {/* Additional Info */}
+            <p className="text-sm text-muted-foreground text-center">
+              엑세스 코드가 필요하신 경우 관리자에게 문의하세요.
+            </p>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
