@@ -17,7 +17,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
 
   const CategoryTitle = ({ children }: { children: React.ReactNode }) => (
     <div className="flex items-center justify-center mb-4">
-      <h3 className="text-xl font-bold text-primary/90 py-2 px-6 rounded-full bg-secondary/50 shadow-sm">
+      <h3 className="text-xl font-bold text-[#7E69AB] py-2 px-6 rounded-full bg-[#F1F0FB] shadow-sm">
         {children}
       </h3>
     </div>
@@ -30,7 +30,11 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
       <button
         key={type.id}
         onClick={() => isSelected ? onRemove(type.id) : onSelect(type)}
-        className={`type-button w-full text-left ${isSelected ? "selected bg-primary/20 text-primary font-semibold shadow-md" : ""}`}
+        className={`type-button w-full text-left ${
+          isSelected 
+            ? "selected bg-[#9b87f5]/20 text-[#1A1F2C] font-semibold shadow-md" 
+            : "hover:bg-[#F1F0FB] hover:text-[#7E69AB]"
+        }`}
       >
         <span className="relative z-10 flex items-center justify-between">
           <span>{type.name}</span>
@@ -42,7 +46,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
 
   return (
     <div className="space-y-6">
-      <h2 className="text-2xl font-bold flex items-center gap-3">
+      <h2 className="text-2xl font-bold flex items-center gap-3 text-[#1A1F2C]">
         <span className="text-3xl">✨</span> Question Types
       </h2>
       

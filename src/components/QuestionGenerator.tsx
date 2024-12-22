@@ -174,7 +174,7 @@ export const QuestionGenerator = () => {
 
   return (
     <div className="flex gap-8">
-      <div className="w-72 flex-shrink-0 bg-gray-50 p-4 rounded-lg">
+      <div className="w-72 flex-shrink-0 bg-[#F1F0FB]/50 p-4 rounded-lg border border-[#D6BCFA]/30">
         <TypeSelector 
           selectedTypes={selectedTypes.map(entry => entry.type)} 
           onSelect={handleTypeSelect}
@@ -183,8 +183,11 @@ export const QuestionGenerator = () => {
       </div>
       <div className="flex-1 space-y-8">
         {selectedTypes.map((typeEntry) => (
-          <div key={typeEntry.type.id} className="space-y-6 p-6 rounded-lg border-2 border-primary/20 relative bg-gray-50">
-            <h3 className="text-xl font-bold text-primary">{typeEntry.type.name}</h3>
+          <div 
+            key={typeEntry.type.id} 
+            className="space-y-6 p-6 rounded-lg border-2 border-[#9b87f5]/20 relative bg-[#F8F7FF]"
+          >
+            <h3 className="text-xl font-bold text-[#7E69AB]">{typeEntry.type.name}</h3>
             
             <div className="space-y-4">
               {typeEntry.passages.map((passage, index) => (
@@ -240,9 +243,8 @@ export const QuestionGenerator = () => {
                 <Button
                   onClick={handleGenerateAll}
                   disabled={isLoading}
-                  className="max-w-md w-full bg-gradient-to-r from-primary via-primary/90 to-primary relative group overflow-hidden transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl"
+                  className="max-w-md w-full bg-gradient-to-r from-[#9b87f5] to-[#7E69AB] relative group overflow-hidden transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-shimmer" />
                   <div className="relative flex items-center justify-center gap-2">
                     <Sparkles className="w-5 h-5 animate-pulse" />
                     <span className="font-semibold tracking-wide">
@@ -255,7 +257,7 @@ export const QuestionGenerator = () => {
                   onClick={handleDownloadDoc}
                   disabled={isLoading}
                   variant="outline"
-                  className="max-w-md w-full relative group overflow-hidden transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl"
+                  className="max-w-md w-full relative group overflow-hidden transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl border-[#9b87f5]/30 hover:border-[#9b87f5]/50"
                 >
                   <div className="relative flex items-center justify-center gap-2">
                     <FileDown className="w-5 h-5" />
@@ -267,7 +269,7 @@ export const QuestionGenerator = () => {
               </div>
             </div>
 
-            <div className="space-y-0 bg-gray-50 p-6 rounded-lg">
+            <div className="space-y-0 bg-[#F8F7FF] p-6 rounded-lg border border-[#D6BCFA]/30">
               {selectedTypes.map((typeEntry) => (
                 typeEntry.passages.map((passage, passageIndex) => (
                   passage.result && (
