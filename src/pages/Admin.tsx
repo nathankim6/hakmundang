@@ -3,25 +3,42 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/use-toast";
 import { useNavigate } from "react-router-dom";
+import { supabase } from "@/lib/supabase";
 
 const Admin = () => {
   const [adminCode, setAdminCode] = useState("");
   const [isAdmin, setIsAdmin] = useState(false);
   const [newCode, setNewCode] = useState("");
   const [expiryDays, setExpiryDays] = useState("7");
-  const [accessCodes, setAccessCodes] = useState<Array<{ code: string; expiryDate: number }>>([]);
+  const [accessCodes, setAccessCodes] = useState<Array<{ code: string; expiry_date: string }>>([]);
   const { toast } = useToast();
   const navigate = useNavigate();
 
   useEffect(() => {
-    const storedCodes = JSON.parse(localStorage.getItem("accessCodes") || "[]");
-    setAccessCodes(storedCodes);
-    
+    const fetchAccessCodes = async () => {
+      const { data, error } = await supabase
+        .from('access_codes')
+        .select('*')
+        .order('created_at', { ascending: false });
+
+      if (error) {
+        toast({
+          title: "오류 발생",
+          description: "엑세스 코드 목록을 불러오는데 실패했습니다.",
+          variant: "destructive",
+        });
+        return;
+      }
+
+      setAccessCodes(data || []);
+    };
+
     const adminStatus = localStorage.getItem("isAdmin");
     if (adminStatus === "true") {
       setIsAdmin(true);
+      fetchAccessCodes();
     }
-  }, []);
+  }, [toast]);
 
   const handleAdminLogin = () => {
     if (adminCode === "101100") {
@@ -40,7 +57,7 @@ const Admin = () => {
     }
   };
 
-  const addAccessCode = () => {
+  const addAccessCode = async () => {
     if (!newCode) {
       toast({
         title: "오류",
@@ -53,13 +70,31 @@ const Admin = () => {
     const expiryDate = new Date();
     expiryDate.setDate(expiryDate.getDate() + parseInt(expiryDays));
     
-    const updatedCodes = [
-      ...accessCodes,
-      { code: newCode, expiryDate: expiryDate.getTime() }
-    ];
-    
-    localStorage.setItem("accessCodes", JSON.stringify(updatedCodes));
-    setAccessCodes(updatedCodes);
+    const { error } = await supabase
+      .from('access_codes')
+      .insert([
+        { 
+          code: newCode, 
+          expiry_date: expiryDate.toISOString() 
+        }
+      ]);
+
+    if (error) {
+      toast({
+        title: "오류 발생",
+        description: "엑세스 코드 추가에 실패했습니다.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // Refresh the access codes list
+    const { data: updatedCodes } = await supabase
+      .from('access_codes')
+      .select('*')
+      .order('created_at', { ascending: false });
+
+    setAccessCodes(updatedCodes || []);
     setNewCode("");
     
     toast({
@@ -68,10 +103,22 @@ const Admin = () => {
     });
   };
 
-  const removeAccessCode = (codeToRemove: string) => {
-    const updatedCodes = accessCodes.filter(c => c.code !== codeToRemove);
-    localStorage.setItem("accessCodes", JSON.stringify(updatedCodes));
-    setAccessCodes(updatedCodes);
+  const removeAccessCode = async (codeToRemove: string) => {
+    const { error } = await supabase
+      .from('access_codes')
+      .delete()
+      .eq('code', codeToRemove);
+
+    if (error) {
+      toast({
+        title: "오류 발생",
+        description: "엑세스 코드 삭제에 실패했습니다.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setAccessCodes(accessCodes.filter(c => c.code !== codeToRemove));
     
     toast({
       title: "성공",
@@ -148,7 +195,7 @@ const Admin = () => {
                 <div>
                   <span className="font-mono">{code.code}</span>
                   <span className="ml-4 text-sm text-gray-500">
-                    만료: {new Date(code.expiryDate).toLocaleDateString()}
+                    만료: {new Date(code.expiry_date).toLocaleDateString()}
                   </span>
                 </div>
                 <Button

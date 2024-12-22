@@ -4,21 +4,27 @@ import { Input } from "./ui/input";
 import { useNavigate } from "react-router-dom";
 import { useToast } from "./ui/use-toast";
 import { Key } from "lucide-react";
+import { supabase } from "@/lib/supabase";
 
 export function AccessCodeCheck() {
   const [code, setCode] = useState("");
   const [isValid, setIsValid] = useState(false);
+  const [subscriptionExpiry, setSubscriptionExpiry] = useState<string | null>(null);
   const navigate = useNavigate();
   const { toast } = useToast();
 
   useEffect(() => {
     const hasAccess = localStorage.getItem("hasAccess");
     if (hasAccess === "true") {
+      const storedExpiry = localStorage.getItem("subscriptionExpiry");
+      if (storedExpiry) {
+        setSubscriptionExpiry(storedExpiry);
+      }
       setIsValid(true);
     }
   }, []);
 
-  const checkAccessCode = () => {
+  const checkAccessCode = async () => {
     // Check for admin code first
     if (code === "101100") {
       localStorage.setItem("isAdmin", "true");
@@ -32,26 +38,36 @@ export function AccessCodeCheck() {
       return;
     }
 
-    // Check for regular access codes
-    const storedCodes = JSON.parse(localStorage.getItem("accessCodes") || "[]");
-    const currentTime = new Date().getTime();
-    
-    const validCode = storedCodes.find(
-      (c: { code: string; expiryDate: number }) =>
-        c.code === code && c.expiryDate > currentTime
-    );
+    try {
+      // Query Supabase for the access code
+      const { data: accessCode, error } = await supabase
+        .from('access_codes')
+        .select('*')
+        .eq('code', code)
+        .single();
 
-    if (validCode) {
-      localStorage.setItem("hasAccess", "true");
-      setIsValid(true);
+      if (error) throw error;
+
+      if (accessCode && new Date(accessCode.expiry_date) > new Date()) {
+        localStorage.setItem("hasAccess", "true");
+        localStorage.setItem("subscriptionExpiry", accessCode.expiry_date);
+        setSubscriptionExpiry(accessCode.expiry_date);
+        setIsValid(true);
+        toast({
+          title: "접속 성공",
+          description: "엑세스 코드가 확인되었습니다.",
+        });
+      } else {
+        toast({
+          title: "접속 실패",
+          description: "유효하지 않은 엑세스 코드입니다.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
       toast({
-        title: "접속 성공",
-        description: "엑세스 코드가 확인되었습니다.",
-      });
-    } else {
-      toast({
-        title: "접속 실패",
-        description: "유효하지 않은 엑세스 코드입니다.",
+        title: "오류 발생",
+        description: "엑세스 코드 확인 중 오류가 발생했습니다.",
         variant: "destructive",
       });
     }
@@ -76,6 +92,11 @@ export function AccessCodeCheck() {
               <h1 className="text-3xl font-bold animate-title">
                 ORUN AI QUIZ MAKER
               </h1>
+              {subscriptionExpiry && (
+                <p className="text-sm text-gray-600">
+                  구독 유효기간: {new Date(subscriptionExpiry).toLocaleDateString()}
+                </p>
+              )}
             </div>
 
             {/* Access Code Input Section */}
@@ -83,7 +104,7 @@ export function AccessCodeCheck() {
               <div className="relative">
                 <Key className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
                 <Input
-                  type="password"
+                  type="text"
                   placeholder="엑세스 코드를 입력하세요..."
                   value={code}
                   onChange={(e) => setCode(e.target.value)}
@@ -107,4 +128,4 @@ export function AccessCodeCheck() {
       </div>
     </div>
   );
-};
+}
