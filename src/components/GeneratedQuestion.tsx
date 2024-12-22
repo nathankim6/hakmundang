@@ -6,6 +6,7 @@ interface GeneratedQuestionProps {
 }
 
 export const GeneratedQuestion = ({ content, questionNumber }: GeneratedQuestionProps) => {
+  // Split content into question and answer parts
   const parts = content.split('[정답]');
   const questionPart = parts[0].trim();
   const answerPart = parts.length > 1 ? '[정답]' + parts.slice(1).join('[정답]').trim() : '';
@@ -20,12 +21,14 @@ export const GeneratedQuestion = ({ content, questionNumber }: GeneratedQuestion
         </h3>
         
         <div className="space-y-4">
-          <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F1F0FB] p-4 rounded-lg border border-[#D6BCFA]/30">
+          {/* Question section with soft purple background */}
+          <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#E5DEFF] p-4 rounded-lg border border-[#9b87f5]/20">
             {questionPart}
           </div>
           
+          {/* Answer section with soft gray background */}
           {answerPart && (
-            <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#9b87f5]/20">
+            <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F1F0FB] p-4 rounded-lg border border-[#9b87f5]/20">
               {answerPart}
             </div>
           )}
