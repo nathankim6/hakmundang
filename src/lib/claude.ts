@@ -19,7 +19,7 @@ const questionTypes: QuestionType[] = [
   { id: "insert", name: "[38-39] 문장삽입" },
   { id: "summary", name: "[40] 요약문" },
 
-  // 학교별 시그니처
+  // 내신형
   { id: "sungVocab1", name: "[숭의여고] 어휘1(동의어)" },
   { id: "sungVocab2", name: "[숭의여고] 어휘2(예문)" },
   { id: "sungExternal", name: "[숭의여고] 외부지문" },
@@ -34,7 +34,13 @@ const questionTypes: QuestionType[] = [
   { id: "descriptiveConditionKor", name: "[서술형] 조건영작(우리말O)" },
   { id: "descriptiveCondition", name: "[서술형] 조건영작(우리말X)" },
   { id: "descriptiveVocab", name: "[서술형] 어휘" },
-  { id: "descriptiveGrammar", name: "[서술형] 어법" }
+  { id: "descriptiveGrammar", name: "[서술형] 어법" },
+
+  // 옳은영어 콘텐츠
+  { id: "synonymAntonym", name: "동의어/반의어" },
+  { id: "trueOrFalse", name: "True or False" },
+  { id: "fourKings", name: "4대천왕" },
+  { id: "weekendClinic", name: "주말클리닉" }
 ];
 
 export const getQuestionTypes = () => questionTypes;

@@ -13,11 +13,12 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
   const types = getQuestionTypes();
   const suneungTypes = types.slice(0, 15);
   const schoolTypes = types.slice(15, 22);
-  const descriptiveTypes = types.slice(22);
+  const descriptiveTypes = types.slice(22, 28);
+  const contentTypes = types.slice(28);
 
   const CategoryTitle = ({ children }: { children: React.ReactNode }) => (
     <div className="flex items-center justify-center mb-4">
-      <h3 className="text-xl font-bold text-[#7E69AB] py-2 px-6 rounded-full bg-[#F1F0FB] shadow-sm">
+      <h3 className="text-xl font-bold text-[#0EA5E9] py-2 px-6 rounded-full bg-[#D3E4FD] shadow-sm">
         {children}
       </h3>
     </div>
@@ -32,8 +33,8 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
         onClick={() => isSelected ? onRemove(type.id) : onSelect(type)}
         className={`type-button w-full text-left ${
           isSelected 
-            ? "selected bg-[#9b87f5]/20 text-[#1A1F2C] font-semibold shadow-md" 
-            : "hover:bg-[#F1F0FB] hover:text-[#7E69AB]"
+            ? "selected bg-[#0EA5E9]/20 text-[#1A1F2C] font-semibold shadow-md" 
+            : "hover:bg-[#D3E4FD] hover:text-[#0EA5E9]"
         }`}
       >
         <span className="relative z-10 flex items-center justify-between">
@@ -62,7 +63,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
           </div>
 
           <div className="space-y-4">
-            <CategoryTitle>학교별 시그니처</CategoryTitle>
+            <CategoryTitle>내신형</CategoryTitle>
             <div className="grid gap-2">
               {schoolTypes.map((type) => (
                 <TypeButton key={type.id} type={type} />
@@ -74,6 +75,15 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
             <CategoryTitle>서술형</CategoryTitle>
             <div className="grid gap-2">
               {descriptiveTypes.map((type) => (
+                <TypeButton key={type.id} type={type} />
+              ))}
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <CategoryTitle>옳은영어 콘텐츠</CategoryTitle>
+            <div className="grid gap-2">
+              {contentTypes.map((type) => (
                 <TypeButton key={type.id} type={type} />
               ))}
             </div>
