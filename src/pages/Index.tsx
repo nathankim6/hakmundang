@@ -13,7 +13,6 @@ const Index = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Get subscription expiry from localStorage
     const storedExpiry = localStorage.getItem("subscriptionExpiry");
     if (storedExpiry) {
       const formattedDate = new Date(storedExpiry).toLocaleDateString('ko-KR', {
@@ -24,7 +23,6 @@ const Index = () => {
       setExpiryDate(formattedDate);
     }
 
-    // Get user name from localStorage
     const storedName = localStorage.getItem("userName");
     if (storedName) {
       setUserName(storedName);
@@ -32,23 +30,19 @@ const Index = () => {
   }, []);
 
   const handleLogout = () => {
-    // Clear all localStorage items
     localStorage.removeItem("hasAccess");
     localStorage.removeItem("subscriptionExpiry");
     localStorage.removeItem("userName");
     localStorage.removeItem("isAdmin");
     
-    // Show success toast
     toast({
       title: "로그아웃 성공",
       description: "성공적으로 로그아웃되었습니다.",
     });
     
-    // Reset states
     setUserName("");
     setExpiryDate("");
     
-    // Force page reload to show login screen
     window.location.reload();
   };
 
@@ -75,38 +69,29 @@ const Index = () => {
           </h1>
         </div>
 
-        {/* User Info Section with Logout Button */}
-        {(userName || expiryDate) && (
-          <div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 max-w-xl mx-auto mt-4 shadow-lg border border-gray-200">
-            <div className="text-center space-y-2">
-              {userName && (
-                <p className="text-lg font-medium text-gray-800">
-                  사용자: <span className="text-blue-600">{userName}</span>
-                </p>
-              )}
-              {expiryDate && (
-                <p className="text-lg font-medium text-gray-800">
-                  구독 만료일: <span className="text-blue-600">{expiryDate}</span>
-                </p>
-              )}
-              <Button 
-                onClick={handleLogout}
-                variant="outline"
-                className="mt-2 text-red-600 hover:text-red-700 hover:bg-red-50"
-              >
-                <LogOut className="mr-2 h-4 w-4" />
-                로그아웃
-              </Button>
-            </div>
-          </div>
-        )}
-          
         <div className="relative h-1 max-w-2xl mx-auto overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#DAA520] to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#FFD700] to-transparent animate-pulse" />
         </div>
 
         <div className="metallic-border rounded-xl p-6 backdrop-blur-lg">
+          {(userName || expiryDate) && (
+            <div className="mb-4 text-sm text-gray-600 flex items-center justify-between bg-white/50 rounded-lg p-2">
+              <div className="flex-1 text-left space-x-4">
+                {userName && <span>사용자: {userName}</span>}
+                {expiryDate && <span>만료일: {expiryDate}</span>}
+              </div>
+              <Button 
+                onClick={handleLogout}
+                variant="ghost"
+                size="sm"
+                className="text-red-600 hover:text-red-700 hover:bg-red-50"
+              >
+                <LogOut className="h-4 w-4 mr-1" />
+                로그아웃
+              </Button>
+            </div>
+          )}
           <APIConfig />
         </div>
         
