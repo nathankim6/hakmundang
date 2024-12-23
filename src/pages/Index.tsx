@@ -1,10 +1,16 @@
 import { QuestionGenerator } from "@/components/QuestionGenerator";
 import { APIConfig } from "@/components/APIConfig";
 import { useEffect, useState } from "react";
+import { Button } from "@/components/ui/button";
+import { LogOut } from "lucide-react";
+import { useToast } from "@/components/ui/use-toast";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
   const [userName, setUserName] = useState<string>("");
   const [expiryDate, setExpiryDate] = useState<string>("");
+  const { toast } = useToast();
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Get subscription expiry from localStorage
@@ -24,6 +30,27 @@ const Index = () => {
       setUserName(storedName);
     }
   }, []);
+
+  const handleLogout = () => {
+    // Clear all localStorage items
+    localStorage.removeItem("hasAccess");
+    localStorage.removeItem("subscriptionExpiry");
+    localStorage.removeItem("userName");
+    localStorage.removeItem("isAdmin");
+    
+    // Show success toast
+    toast({
+      title: "로그아웃 성공",
+      description: "성공적으로 로그아웃되었습니다.",
+    });
+    
+    // Reset states
+    setUserName("");
+    setExpiryDate("");
+    
+    // Force page reload to show login screen
+    window.location.reload();
+  };
 
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8 relative">
@@ -48,7 +75,7 @@ const Index = () => {
           </h1>
         </div>
 
-        {/* User Info Section */}
+        {/* User Info Section with Logout Button */}
         {(userName || expiryDate) && (
           <div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 max-w-xl mx-auto mt-4 shadow-lg border border-gray-200">
             <div className="text-center space-y-2">
@@ -62,6 +89,14 @@ const Index = () => {
                   구독 만료일: <span className="text-blue-600">{expiryDate}</span>
                 </p>
               )}
+              <Button 
+                onClick={handleLogout}
+                variant="outline"
+                className="mt-2 text-red-600 hover:text-red-700 hover:bg-red-50"
+              >
+                <LogOut className="mr-2 h-4 w-4" />
+                로그아웃
+              </Button>
             </div>
           </div>
         )}
