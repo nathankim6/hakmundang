@@ -15,18 +15,21 @@ export type Database = {
           created_at: string
           expiry_date: string
           id: string
+          name: string
         }
         Insert: {
           code: string
           created_at?: string
           expiry_date: string
           id?: string
+          name?: string
         }
         Update: {
           code?: string
           created_at?: string
           expiry_date?: string
           id?: string
+          name?: string
         }
         Relationships: []
       }

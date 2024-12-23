@@ -1,7 +1,30 @@
 import { QuestionGenerator } from "@/components/QuestionGenerator";
 import { APIConfig } from "@/components/APIConfig";
+import { useEffect, useState } from "react";
 
 const Index = () => {
+  const [userName, setUserName] = useState<string>("");
+  const [expiryDate, setExpiryDate] = useState<string>("");
+
+  useEffect(() => {
+    // Get subscription expiry from localStorage
+    const storedExpiry = localStorage.getItem("subscriptionExpiry");
+    if (storedExpiry) {
+      const formattedDate = new Date(storedExpiry).toLocaleDateString('ko-KR', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
+      setExpiryDate(formattedDate);
+    }
+
+    // Get user name from localStorage
+    const storedName = localStorage.getItem("userName");
+    if (storedName) {
+      setUserName(storedName);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8 relative">
       <div className="absolute inset-0 overflow-hidden">
@@ -24,6 +47,24 @@ const Index = () => {
             </span>
           </h1>
         </div>
+
+        {/* User Info Section */}
+        {(userName || expiryDate) && (
+          <div className="bg-white/80 backdrop-blur-sm rounded-lg p-4 max-w-xl mx-auto mt-4 shadow-lg border border-gray-200">
+            <div className="text-center space-y-2">
+              {userName && (
+                <p className="text-lg font-medium text-gray-800">
+                  사용자: <span className="text-blue-600">{userName}</span>
+                </p>
+              )}
+              {expiryDate && (
+                <p className="text-lg font-medium text-gray-800">
+                  구독 만료일: <span className="text-blue-600">{expiryDate}</span>
+                </p>
+              )}
+            </div>
+          </div>
+        )}
           
         <div className="relative h-1 max-w-2xl mx-auto overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#DAA520] to-transparent" />

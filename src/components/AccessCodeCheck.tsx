@@ -29,6 +29,7 @@ export function AccessCodeCheck() {
     if (code === "101100") {
       localStorage.setItem("isAdmin", "true");
       localStorage.setItem("hasAccess", "true");
+      localStorage.setItem("userName", "관리자");
       setIsValid(true);
       toast({
         title: "관리자 로그인 성공",
@@ -51,6 +52,7 @@ export function AccessCodeCheck() {
       if (accessCode && new Date(accessCode.expiry_date) > new Date()) {
         localStorage.setItem("hasAccess", "true");
         localStorage.setItem("subscriptionExpiry", accessCode.expiry_date);
+        localStorage.setItem("userName", accessCode.name);
         setSubscriptionExpiry(accessCode.expiry_date);
         setIsValid(true);
         toast({
