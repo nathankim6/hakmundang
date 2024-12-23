@@ -40,14 +40,16 @@ export function AccessCodeCheck() {
     }
 
     try {
-      // Query Supabase for the access code
+      // Query Supabase for the access code using maybeSingle() instead of single()
       const { data: accessCode, error } = await supabase
         .from('access_codes')
         .select('*')
         .eq('code', code)
-        .single();
+        .maybeSingle();
 
-      if (error) throw error;
+      if (error) {
+        throw error;
+      }
 
       if (accessCode && new Date(accessCode.expiry_date) > new Date()) {
         localStorage.setItem("hasAccess", "true");
@@ -72,6 +74,7 @@ export function AccessCodeCheck() {
         description: "엑세스 코드 확인 중 오류가 발생했습니다.",
         variant: "destructive",
       });
+      console.error("Access code check error:", error);
     }
   };
 
