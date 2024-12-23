@@ -5,10 +5,9 @@ import { TextInput } from "./TextInput";
 import { TypeSelector } from "./TypeSelector";
 import { useToast } from "@/components/ui/use-toast";
 import { QuestionDisplay } from "./QuestionDisplay";
-import { QuestionType } from "@/types/question";
 
 export function QuestionGenerator() {
-  const [selectedType, setSelectedType] = useState<string>("객관식");
+  const [selectedType, setSelectedType] = useState("객관식");
   const [inputText, setInputText] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [generatedQuestions, setGeneratedQuestions] = useState<any[]>([]);
@@ -99,7 +98,7 @@ ${inputText}
     <div className="space-y-6">
       <TypeSelector 
         selectedTypes={[{ id: selectedType, name: selectedType }]} 
-        onSelect={(type: QuestionType) => setSelectedType(type.id)}
+        onSelect={(type) => setSelectedType(type.id)}
         onRemove={() => {}}
       />
       
