@@ -3,12 +3,11 @@ import { getQuestionTypes } from "@/lib/claude";
 import { X } from "lucide-react";
 
 interface TypeSelectorProps {
-  selectedTypes: QuestionType[];
-  onSelect: (type: QuestionType) => void;
-  onRemove: (typeId: string) => void;
+  selectedType: string;
+  onTypeSelect: (type: string) => void;
 }
 
-export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelectorProps) => {
+export const TypeSelector = ({ selectedType, onTypeSelect }: TypeSelectorProps) => {
   const types = getQuestionTypes();
   const suneungTypes = types.slice(0, 15);
   const schoolTypes = types.slice(15, 22);
@@ -24,12 +23,12 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
   );
 
   const TypeButton = ({ type }: { type: QuestionType }) => {
-    const isSelected = selectedTypes.some(t => t.id === type.id);
+    const isSelected = type.name === selectedType;
     
     return (
       <button
         key={type.id}
-        onClick={() => isSelected ? onRemove(type.id) : onSelect(type)}
+        onClick={() => onTypeSelect(type.name)}
         className={`type-button w-full text-left ${
           isSelected 
             ? "selected bg-[#0EA5E9]/20 text-[#1A1F2C] font-semibold shadow-md" 
