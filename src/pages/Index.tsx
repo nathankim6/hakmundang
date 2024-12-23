@@ -47,14 +47,14 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8 relative">
+    <div className="min-h-screen py-8 px-4 sm:px-6 lg:px-8 relative">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-white via-[#F1F0FB] to-[#E5DEFF] z-0" />
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
       </div>
 
-      <div className="max-w-7xl mx-auto space-y-4 relative z-10">
+      <div className="max-w-7xl mx-auto space-y-3 relative z-10">
         <div className="flex items-center justify-center space-x-6">
           <img 
             src="/lovable-uploads/352a49ca-b123-4f07-992a-cf59e4b7058a.png" 
@@ -74,9 +74,9 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#FFD700] to-transparent animate-pulse" />
         </div>
 
-        <div className="metallic-border rounded-xl p-6 backdrop-blur-lg">
+        <div className="metallic-border rounded-xl p-4 backdrop-blur-lg bg-gradient-to-b from-white/90 to-gray-50/90">
           {(userName || expiryDate) && (
-            <div className="mb-4 text-sm text-gray-600 flex items-center justify-between bg-white/50 rounded-lg p-2">
+            <div className="mb-3 text-sm text-gray-600 flex items-center justify-between bg-white/80 rounded-lg p-2 border-b border-gray-100">
               <div className="flex-1 text-left space-x-4">
                 {userName && <span>사용자: {userName}</span>}
                 {expiryDate && <span>만료일: {expiryDate}</span>}
