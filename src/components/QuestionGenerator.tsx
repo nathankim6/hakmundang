@@ -5,21 +5,13 @@ import { TextInput } from "./TextInput";
 import { TypeSelector } from "./TypeSelector";
 import { useToast } from "@/components/ui/use-toast";
 import { QuestionDisplay } from "./QuestionDisplay";
-
-type QuestionType = "객관식" | "주관식" | "OX퀴즈";
-
-interface GeneratedQuestion {
-  question: string;
-  options?: string[];
-  answer: string;
-  explanation?: string;
-}
+import { QuestionType } from "@/types/question";
 
 export function QuestionGenerator() {
-  const [selectedType, setSelectedType] = useState<QuestionType>("객관식");
+  const [selectedType, setSelectedType] = useState<string>("객관식");
   const [inputText, setInputText] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [generatedQuestions, setGeneratedQuestions] = useState<GeneratedQuestion[]>([]);
+  const [generatedQuestions, setGeneratedQuestions] = useState<any[]>([]);
   const { toast } = useToast();
 
   const handleGenerateQuestion = async () => {
@@ -105,7 +97,11 @@ ${inputText}
 
   return (
     <div className="space-y-6">
-      <TypeSelector selectedType={selectedType} onTypeSelect={setSelectedType} />
+      <TypeSelector 
+        selectedTypes={[{ id: selectedType, name: selectedType }]} 
+        onSelect={(type: QuestionType) => setSelectedType(type.id)}
+        onRemove={() => {}}
+      />
       
       <div className="space-y-4">
         <TextInput
