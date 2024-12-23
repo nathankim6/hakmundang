@@ -105,7 +105,10 @@ ${inputText}
 
   return (
     <div className="space-y-6">
-      <TypeSelector selectedType={selectedType} onTypeSelect={setSelectedType} />
+      <TypeSelector
+        selectedType={selectedType}
+        onTypeSelect={setSelectedType}
+      />
       
       <div className="space-y-4">
         <TextInput
