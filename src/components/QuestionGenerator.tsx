@@ -1,110 +1,32 @@
 import { useState } from "react";
-import { TypeSelector } from "./TypeSelector";
-import { TextInput } from "./TextInput";
-import { GeneratedQuestion } from "./GeneratedQuestion";
-import { generateQuestion } from "@/lib/claude";
-import { generateDocument } from "@/utils/documentGenerator";
-import { QuestionType } from "@/types/question";
 import { Button } from "@/components/ui/button";
-import { useToast } from "@/hooks/use-toast";
-import { Progress } from "@/components/ui/progress";
-import { Sparkles, Plus, Trash2, FileDown } from "lucide-react";
+import { Loader2 } from "lucide-react";
+import { TextInput } from "./TextInput";
+import { TypeSelector } from "./TypeSelector";
+import { useToast } from "@/components/ui/use-toast";
+import { QuestionDisplay } from "./QuestionDisplay";
 
-interface PassageEntry {
-  id: string;
-  text: string;
-  result: string;
+type QuestionType = "객관식" | "주관식" | "OX퀴즈";
+
+interface GeneratedQuestion {
+  question: string;
+  options?: string[];
+  answer: string;
+  explanation?: string;
 }
 
-interface TypeEntry {
-  type: QuestionType;
-  passages: PassageEntry[];
-}
-
-export const QuestionGenerator = () => {
-  const [selectedTypes, setSelectedTypes] = useState<TypeEntry[]>([]);
+export function QuestionGenerator() {
+  const [selectedType, setSelectedType] = useState<QuestionType>("객관식");
+  const [inputText, setInputText] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [progress, setProgress] = useState({ current: 0, total: 0 });
+  const [generatedQuestions, setGeneratedQuestions] = useState<GeneratedQuestion[]>([]);
   const { toast } = useToast();
 
-  const handleTypeSelect = (type: QuestionType) => {
-    if (!selectedTypes.find(entry => entry.type.id === type.id)) {
-      setSelectedTypes(prev => [...prev, { type, passages: [{ id: crypto.randomUUID(), text: "", result: "" }] }]);
-    }
-  };
-
-  const handleRemoveType = (typeId: string) => {
-    setSelectedTypes(prev => prev.filter(entry => entry.type.id !== typeId));
-  };
-
-  const handleAddPassage = (typeId: string) => {
-    setSelectedTypes(prev => prev.map(entry => 
-      entry.type.id === typeId 
-        ? { ...entry, passages: [...entry.passages, { id: crypto.randomUUID(), text: "", result: "" }] }
-        : entry
-    ));
-  };
-
-  const handleRemovePassage = (typeId: string, passageId: string) => {
-    setSelectedTypes(prev => prev.map(entry => 
-      entry.type.id === typeId 
-        ? { ...entry, passages: entry.passages.filter(p => p.id !== passageId) }
-        : entry
-    ));
-  };
-
-  const handleTextChange = (typeId: string, passageId: string, newText: string) => {
-    setSelectedTypes(prev => prev.map(entry => 
-      entry.type.id === typeId 
-        ? {
-            ...entry,
-            passages: entry.passages.map(p => 
-              p.id === passageId ? { ...p, text: newText } : p
-            )
-          }
-        : entry
-    ));
-  };
-
-  const handleDownloadDoc = () => {
-    const questions = selectedTypes
-      .flatMap(typeEntry => 
-        typeEntry.passages
-          .filter(passage => passage.result)
-          .map((passage, index) => ({
-            content: passage.result,
-            questionNumber: index + 1
-          }))
-      )
-      .sort((a, b) => a.questionNumber - b.questionNumber);
-
-    if (questions.length === 0) {
+  const handleGenerateQuestion = async () => {
+    if (!inputText.trim()) {
       toast({
-        title: "다운로드 실패",
-        description: "저장할 문제가 없습니다.",
-        variant: "destructive",
-      });
-      return;
-    }
-
-    generateDocument(questions);
-    
-    toast({
-      title: "다운로드 완료",
-      description: "문제가 성공적으로 저장되었습니다.",
-    });
-  };
-
-  const handleGenerateAll = async () => {
-    const nonEmptyTypes = selectedTypes.map(type => ({
-      ...type,
-      passages: type.passages.filter(passage => passage.text.trim() !== '')
-    })).filter(type => type.passages.length > 0);
-
-    if (nonEmptyTypes.length === 0) {
-      toast({
-        title: "입력 확인",
-        description: "생성할 문제가 없습니다.",
+        title: "오류",
+        description: "텍스트를 입력해주세요.",
         variant: "destructive",
       });
       return;
@@ -112,204 +34,121 @@ export const QuestionGenerator = () => {
 
     setIsLoading(true);
     try {
-      let currentQuestion = 0;
-      const totalQuestions = nonEmptyTypes.reduce((sum, type) => sum + type.passages.length, 0);
-      setProgress({ current: 0, total: totalQuestions });
-      
-      const updatedTypes = [...selectedTypes];
-      
-      for (let typeIndex = 0; typeIndex < updatedTypes.length; typeIndex++) {
-        const typeEntry = updatedTypes[typeIndex];
-        const validPassages = typeEntry.passages.filter(p => p.text.trim() !== '');
-        
-        for (let passageIndex = 0; passageIndex < validPassages.length; passageIndex++) {
-          const passage = validPassages[passageIndex];
-          try {
-            currentQuestion++;
-            setProgress({ current: currentQuestion, total: totalQuestions });
-            
-            const result = await generateQuestion(typeEntry.type, passage.text);
-            if (typeof result === 'string') {
-              const originalPassageIndex = typeEntry.passages.findIndex(p => p.id === passage.id);
-              if (originalPassageIndex !== -1) {
-                updatedTypes[typeIndex].passages[originalPassageIndex].result = result;
-              }
-            }
-          } catch (error) {
-            console.error(`Error generating question for passage ${passageIndex + 1}:`, error);
-            toast({
-              title: "오류 발생",
-              description: `${passageIndex + 1}번 지문 처리 중 오류가 발생했습니다.`,
-              variant: "destructive",
-            });
-          }
-        }
+      const apiKey = localStorage.getItem("claude_api_key");
+      if (!apiKey) {
+        throw new Error("API 키가 설정되지 않았습니다.");
       }
-      
-      setSelectedTypes(updatedTypes);
-      
-      toast({
-        title: "문제 생성 완료",
-        description: "모든 문제가 생성되었습니다.",
+
+      const response = await fetch("https://api.anthropic.com/v1/messages", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "x-api-key": apiKey,
+          "anthropic-version": "2023-06-01",
+        },
+        body: JSON.stringify({
+          model: "claude-3-opus-20240229",
+          max_tokens: 4096,
+          messages: [
+            {
+              role: "user",
+              content: `다음 지문을 바탕으로 ${selectedType} 문제를 생성해주세요. 문제는 한국어로 작성해주세요:
+
+${inputText}
+
+다음 JSON 형식으로 응답해주세요:
+{
+  "question": "문제",
+  ${selectedType === "객관식" ? '"options": ["보기1", "보기2", "보기3", "보기4"],' : ""}
+  "answer": "정답",
+  "explanation": "해설"
+}`,
+            },
+          ],
+        }),
       });
+
+      if (!response.ok) {
+        throw new Error("API 요청 실패");
+      }
+
+      const data = await response.json();
+      const content = data.content[0].text;
+      
+      try {
+        const parsedQuestion = JSON.parse(content);
+        setGeneratedQuestions(prev => [...prev, parsedQuestion]);
+        setInputText("");
+      } catch (e) {
+        console.error("JSON 파싱 오류:", e);
+        toast({
+          title: "오류",
+          description: "응답 처리 중 오류가 발생했습니다.",
+          variant: "destructive",
+        });
+      }
     } catch (error) {
+      console.error("API 오류:", error);
       toast({
-        title: "오류 발생",
+        title: "오류",
         description: "문제 생성 중 오류가 발생했습니다.",
         variant: "destructive",
       });
     } finally {
       setIsLoading(false);
-      setProgress({ current: 0, total: 0 });
     }
   };
 
-  const handlePasteValues = (typeId: string, passageId: string, values: string[]) => {
-    setSelectedTypes(prev => {
-      const updatedTypes = [...prev];
-      const typeIndex = updatedTypes.findIndex(t => t.type.id === typeId);
-      
-      if (typeIndex === -1) return prev;
-      
-      const passageIndex = updatedTypes[typeIndex].passages.findIndex(p => p.id === passageId);
-      if (passageIndex === -1) return prev;
-      
-      updatedTypes[typeIndex].passages[passageIndex].text = values[0];
-      
-      const remainingValues = values.slice(1);
-      const newPassages = remainingValues.map(value => ({
-        id: crypto.randomUUID(),
-        text: value,
-        result: ""
-      }));
-      
-      updatedTypes[typeIndex].passages.splice(passageIndex + 1, 0, ...newPassages);
-      
-      return updatedTypes;
-    });
+  const handlePaste = (values: string[]) => {
+    setInputText(values.join("\n"));
   };
 
-  // Calculate question numbers once during render
-  const generatedQuestions = selectedTypes.flatMap((typeEntry, typeIndex) => 
-    typeEntry.passages
-      .map((passage, passageIndex) => ({
-        id: passage.id,
-        content: passage.result,
-        questionNumber: typeIndex * 100 + passageIndex + 1 // Ensures unique numbers across types
-      }))
-      .filter(q => q.content) // Only include questions with results
-  ).sort((a, b) => a.questionNumber - b.questionNumber);
-
   return (
-    <div className="flex gap-8">
-      <div className="w-72 flex-shrink-0 bg-[#F1F0FB]/50 p-4 rounded-lg border border-[#D6BCFA]/30">
-        <TypeSelector 
-          selectedTypes={selectedTypes.map(entry => entry.type)} 
-          onSelect={handleTypeSelect}
-          onRemove={handleRemoveType}
+    <div className="space-y-6">
+      <TypeSelector selectedType={selectedType} onTypeSelect={setSelectedType} />
+      
+      <div className="space-y-4">
+        <TextInput
+          value={inputText}
+          onChange={setInputText}
+          onEnterPress={handleGenerateQuestion}
+          onPaste={handlePaste}
         />
-      </div>
-      <div className="flex-1 space-y-8">
-        {selectedTypes.map((typeEntry) => (
-          <div 
-            key={typeEntry.type.id} 
-            className="space-y-6 p-6 rounded-lg border-2 border-[#9b87f5]/20 relative bg-[#F8F7FF]"
+        
+        <div className="flex justify-end">
+          <Button
+            onClick={handleGenerateQuestion}
+            disabled={isLoading || !inputText.trim()}
+            className="bg-[#0FA0CE] hover:bg-[#1EAEDB] text-white transition-all duration-300 transform hover:scale-105"
           >
-            <h3 className="text-xl font-bold text-[#7E69AB]">{typeEntry.type.name}</h3>
-            
-            <div className="space-y-4">
-              {typeEntry.passages.map((passage, index) => (
-                <div key={passage.id} className="space-y-2">
-                  <div className="flex items-center justify-between">
-                    <h4 className="text-sm font-semibold">지문 {index + 1}</h4>
-                    {typeEntry.passages.length > 1 && (
-                      <Button
-                        variant="ghost"
-                        size="icon"
-                        onClick={() => handleRemovePassage(typeEntry.type.id, passage.id)}
-                        className="text-destructive hover:text-destructive/80"
-                      >
-                        <Trash2 className="w-4 h-4" />
-                      </Button>
-                    )}
-                  </div>
-                  
-                  <TextInput 
-                    value={passage.text} 
-                    onChange={(text) => handleTextChange(typeEntry.type.id, passage.id, text)}
-                    onEnterPress={() => handleAddPassage(typeEntry.type.id)}
-                    onPaste={(values) => handlePasteValues(typeEntry.type.id, passage.id, values)}
-                  />
-                </div>
-              ))}
-            </div>
-            
-            <Button
-              variant="outline"
-              onClick={() => handleAddPassage(typeEntry.type.id)}
-              className="w-full mt-4"
-            >
-              <Plus className="w-4 h-4 mr-2" />
-              지문 추가하기
-            </Button>
-          </div>
-        ))}
-
-        {selectedTypes.length > 0 && (
-          <>
-            <div className="flex flex-col gap-4">
-              {isLoading && progress.total > 0 && (
-                <div className="space-y-2">
-                  <div className="flex justify-between text-sm text-muted-foreground">
-                    <span>문제 생성 중...</span>
-                    <span>{progress.current} / {progress.total}</span>
-                  </div>
-                  <Progress value={(progress.current / progress.total) * 100} />
-                </div>
-              )}
-              
-              <div className="flex justify-center w-full gap-4">
-                <Button
-                  onClick={handleGenerateAll}
-                  disabled={isLoading}
-                  className="max-w-md w-full bg-gradient-to-r from-[#9b87f5] to-[#7E69AB] relative group overflow-hidden transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl"
-                >
-                  <div className="relative flex items-center justify-center gap-2">
-                    <Sparkles className="w-5 h-5 animate-pulse" />
-                    <span className="font-semibold tracking-wide">
-                      {isLoading ? "문제 생성 중..." : "문제 생성하기"}
-                    </span>
-                  </div>
-                </Button>
-
-                <Button
-                  onClick={handleDownloadDoc}
-                  disabled={isLoading}
-                  variant="outline"
-                  className="max-w-md w-full relative group overflow-hidden transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl border-[#9b87f5]/30 hover:border-[#9b87f5]/50"
-                >
-                  <div className="relative flex items-center justify-center gap-2">
-                    <FileDown className="w-5 h-5" />
-                    <span className="font-semibold tracking-wide">
-                      문제 저장하기
-                    </span>
-                  </div>
-                </Button>
-              </div>
-            </div>
-
-            <div className="space-y-0 bg-[#F8F7FF] p-6 rounded-lg border border-[#D6BCFA]/30">
-              {generatedQuestions.map((question) => (
-                <GeneratedQuestion 
-                  key={question.id}
-                  content={question.content}
-                  questionNumber={question.questionNumber}
-                />
-              ))}
-            </div>
-          </>
-        )}
+            {isLoading ? (
+              <>
+                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                생성 중...
+              </>
+            ) : (
+              "문제생성하기"
+            )}
+          </Button>
+        </div>
       </div>
+
+      {generatedQuestions.length > 0 && (
+        <div className="space-y-4">
+          {generatedQuestions.map((question, index) => (
+            <QuestionDisplay
+              key={index}
+              question={question}
+              type={selectedType}
+              onDelete={() => {
+                setGeneratedQuestions(prev =>
+                  prev.filter((_, i) => i !== index)
+                );
+              }}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
-};
+}
