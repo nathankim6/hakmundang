@@ -8,7 +8,6 @@ import { supabase } from "@/lib/supabase";
 
 export function AccessCodeCheck() {
   const [code, setCode] = useState("");
-  const [isValid, setIsValid] = useState(false);
   const [subscriptionExpiry, setSubscriptionExpiry] = useState<string | null>(null);
   const navigate = useNavigate();
   const { toast } = useToast();
@@ -20,9 +19,9 @@ export function AccessCodeCheck() {
       if (storedExpiry) {
         setSubscriptionExpiry(storedExpiry);
       }
-      setIsValid(true);
+      navigate("/");
     }
-  }, []);
+  }, [navigate]);
 
   const checkAccessCode = async () => {
     // Check for admin code first
@@ -30,7 +29,6 @@ export function AccessCodeCheck() {
       localStorage.setItem("isAdmin", "true");
       localStorage.setItem("hasAccess", "true");
       localStorage.setItem("userName", "관리자");
-      setIsValid(true);
       toast({
         title: "관리자 로그인 성공",
         description: "관리자 페이지로 이동합니다.",
@@ -40,7 +38,6 @@ export function AccessCodeCheck() {
     }
 
     try {
-      // Query Supabase for the access code using maybeSingle() instead of single()
       const { data: accessCode, error } = await supabase
         .from('access_codes')
         .select('*')
@@ -56,11 +53,11 @@ export function AccessCodeCheck() {
         localStorage.setItem("subscriptionExpiry", accessCode.expiry_date);
         localStorage.setItem("userName", accessCode.name);
         setSubscriptionExpiry(accessCode.expiry_date);
-        setIsValid(true);
         toast({
           title: "접속 성공",
           description: "엑세스 코드가 확인되었습니다.",
         });
+        navigate("/");
       } else {
         toast({
           title: "접속 실패",
@@ -77,10 +74,6 @@ export function AccessCodeCheck() {
       console.error("Access code check error:", error);
     }
   };
-
-  if (isValid) {
-    return null;
-  }
 
   return (
     <div className="fixed inset-0 bg-background/80 backdrop-blur-sm z-50">
