@@ -1,14 +1,13 @@
 import { useState } from "react";
 import { TypeSelector } from "./TypeSelector";
-import { TextInput } from "./TextInput";
-import { GeneratedQuestion } from "./GeneratedQuestion";
 import { LoadingProgress } from "./LoadingProgress";
 import { generateQuestion } from "@/lib/claude";
 import { generateDocument } from "@/utils/documentGenerator";
 import { QuestionType } from "@/types/question";
-import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
-import { Sparkles, Plus, Trash2, FileDown } from "lucide-react";
+import { TypeEntry } from "./question/TypeEntry";
+import { GeneratedQuestions } from "./question/GeneratedQuestions";
+import { ActionButtons } from "./question/ActionButtons";
 
 interface PassageEntry {
   id: string;
@@ -189,16 +188,16 @@ export const QuestionGenerator = () => {
     });
   };
 
-  // Calculate question numbers once during render
-  const generatedQuestions = selectedTypes.flatMap((typeEntry, typeIndex) => 
+  // Generate questions array with sequential numbers
+  const generatedQuestions = selectedTypes.flatMap((typeEntry) => 
     typeEntry.passages
-      .map((passage, passageIndex) => ({
+      .map((passage) => ({
         id: passage.id,
         content: passage.result,
-        questionNumber: typeIndex * 100 + passageIndex + 1 // Ensures unique numbers across types
+        questionNumber: 0 // This will be assigned sequentially in GeneratedQuestions
       }))
-      .filter(q => q.content) // Only include questions with results
-  ).sort((a, b) => a.questionNumber - b.questionNumber);
+      .filter(q => q.content)
+  );
 
   return (
     <div className="flex gap-8">
@@ -211,48 +210,15 @@ export const QuestionGenerator = () => {
       </div>
       <div className="flex-1 space-y-8">
         {selectedTypes.map((typeEntry) => (
-          <div 
-            key={typeEntry.type.id} 
-            className="space-y-6 p-6 rounded-lg border-2 border-[#9b87f5]/20 relative bg-[#F8F7FF]"
-          >
-            <h3 className="text-xl font-bold text-[#7E69AB]">{typeEntry.type.name}</h3>
-            
-            <div className="space-y-4">
-              {typeEntry.passages.map((passage, index) => (
-                <div key={passage.id} className="space-y-2">
-                  <div className="flex items-center justify-between">
-                    <h4 className="text-sm font-semibold">지문 {index + 1}</h4>
-                    {typeEntry.passages.length > 1 && (
-                      <Button
-                        variant="ghost"
-                        size="icon"
-                        onClick={() => handleRemovePassage(typeEntry.type.id, passage.id)}
-                        className="text-destructive hover:text-destructive/80"
-                      >
-                        <Trash2 className="w-4 h-4" />
-                      </Button>
-                    )}
-                  </div>
-                  
-                  <TextInput 
-                    value={passage.text} 
-                    onChange={(text) => handleTextChange(typeEntry.type.id, passage.id, text)}
-                    onEnterPress={() => handleAddPassage(typeEntry.type.id)}
-                    onPaste={(values) => handlePasteValues(typeEntry.type.id, passage.id, values)}
-                  />
-                </div>
-              ))}
-            </div>
-            
-            <Button
-              variant="outline"
-              onClick={() => handleAddPassage(typeEntry.type.id)}
-              className="w-full mt-4"
-            >
-              <Plus className="w-4 h-4 mr-2" />
-              지문 추가하기
-            </Button>
-          </div>
+          <TypeEntry
+            key={typeEntry.type.id}
+            type={typeEntry.type}
+            passages={typeEntry.passages}
+            onAddPassage={handleAddPassage}
+            onRemovePassage={handleRemovePassage}
+            onTextChange={handleTextChange}
+            onPasteValues={handlePasteValues}
+          />
         ))}
 
         {selectedTypes.length > 0 && (
@@ -265,45 +231,14 @@ export const QuestionGenerator = () => {
                 />
               )}
               
-              <div className="flex justify-center w-full gap-4">
-                <Button
-                  onClick={handleGenerateAll}
-                  disabled={isLoading}
-                  className="max-w-md w-full bg-gradient-to-r from-[#9b87f5] to-[#7E69AB] relative group overflow-hidden transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl"
-                >
-                  <div className="relative flex items-center justify-center gap-2">
-                    <Sparkles className="w-5 h-5 animate-pulse" />
-                    <span className="font-semibold tracking-wide">
-                      {isLoading ? "문제 생성 중..." : "문제 생성하기"}
-                    </span>
-                  </div>
-                </Button>
-
-                <Button
-                  onClick={handleDownloadDoc}
-                  disabled={isLoading}
-                  variant="outline"
-                  className="max-w-md w-full relative group overflow-hidden transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl border-[#9b87f5]/30 hover:border-[#9b87f5]/50"
-                >
-                  <div className="relative flex items-center justify-center gap-2">
-                    <FileDown className="w-5 h-5" />
-                    <span className="font-semibold tracking-wide">
-                      문제 저장하기
-                    </span>
-                  </div>
-                </Button>
-              </div>
+              <ActionButtons
+                onGenerate={handleGenerateAll}
+                onDownload={handleDownloadDoc}
+                isLoading={isLoading}
+              />
             </div>
 
-            <div className="space-y-0 bg-[#F8F7FF] p-6 rounded-lg border border-[#D6BCFA]/30">
-              {generatedQuestions.map((question) => (
-                <GeneratedQuestion 
-                  key={question.id}
-                  content={question.content}
-                  questionNumber={question.questionNumber}
-                />
-              ))}
-            </div>
+            <GeneratedQuestions questions={generatedQuestions} />
           </>
         )}
       </div>
