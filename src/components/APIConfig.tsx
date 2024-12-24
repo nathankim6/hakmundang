@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/components/ui/use-toast";
-import { CheckCircle, ExternalLink } from "lucide-react";
+import { CheckCircle, ExternalLink, LogOut, User, Calendar } from "lucide-react";
 import { Settings } from "./Settings";
 
 interface APIResponse {
@@ -15,16 +15,34 @@ export function APIConfig() {
   const [apiKey, setApiKey] = useState("");
   const [testResult, setTestResult] = useState<APIResponse | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [userName, setUserName] = useState<string>("");
+  const [expiryDate, setExpiryDate] = useState<string>("");
   const { toast } = useToast();
 
   useEffect(() => {
     const savedApiKey = localStorage.getItem("claude_api_key");
+    const storedName = localStorage.getItem("userName");
+    const storedExpiry = localStorage.getItem("subscriptionExpiry");
+
     if (savedApiKey) {
       setApiKey(savedApiKey);
       setTestResult({
         success: true,
         message: "저장된 API 키가 있습니다.",
       });
+    }
+
+    if (storedName) {
+      setUserName(storedName);
+    }
+
+    if (storedExpiry) {
+      const formattedDate = new Date(storedExpiry).toLocaleDateString('ko-KR', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
+      setExpiryDate(formattedDate);
     }
   }, []);
 
@@ -79,8 +97,50 @@ export function APIConfig() {
     }
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem("hasAccess");
+    localStorage.removeItem("subscriptionExpiry");
+    localStorage.removeItem("userName");
+    localStorage.removeItem("isAdmin");
+    
+    toast({
+      title: "로그아웃 성공",
+      description: "성공적으로 로그아웃되었습니다.",
+    });
+    
+    window.location.reload();
+  };
+
   return (
     <div className="space-y-4">
+      {(userName || expiryDate) && (
+        <div className="flex items-center justify-between bg-white/80 rounded-lg p-3 border border-gray-200 shadow-sm">
+          <div className="flex items-center space-x-4">
+            {userName && (
+              <div className="flex items-center text-gray-700">
+                <User className="w-4 h-4 mr-2" />
+                <span>{userName}</span>
+              </div>
+            )}
+            {expiryDate && (
+              <div className="flex items-center text-gray-700">
+                <Calendar className="w-4 h-4 mr-2" />
+                <span>만료일: {expiryDate}</span>
+              </div>
+            )}
+          </div>
+          <Button 
+            onClick={handleLogout}
+            variant="ghost"
+            size="sm"
+            className="text-red-600 hover:text-red-700 hover:bg-red-50"
+          >
+            <LogOut className="h-4 w-4 mr-1" />
+            로그아웃
+          </Button>
+        </div>
+      )}
+      
       <div className="space-y-2">
         <div className="flex items-center gap-2">
           <Label htmlFor="apiKey">Claude API Key</Label>
