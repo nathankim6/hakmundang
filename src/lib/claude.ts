@@ -1,6 +1,6 @@
 import { QuestionType } from "@/types/question";
 import { Anthropic } from "@anthropic-ai/sdk";
-import { getPurposePrompt, getClaimPrompt, getImplicationPrompt } from "./prompts";
+import { getPurposePrompt, getClaimPrompt, getImplicationPrompt, getMoodPrompt } from "./prompts";
 
 const questionTypes: QuestionType[] = [
   // 수능형
@@ -70,6 +70,9 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
         break;
       case "implication":
         prompt = getImplicationPrompt(text);
+        break;
+      case "mood":
+        prompt = getMoodPrompt(text);
         break;
       default:
         prompt = `Generate a question of type ${type.name} based on the following text: ${text}`;
