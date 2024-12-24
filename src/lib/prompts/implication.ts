@@ -1,8 +1,8 @@
 export const getImplicationPrompt = (text: string) => `당신은 영어 지문을 입력받아 한국어 선다형 문제를 만드는 전문가입니다. 다음 규칙과 예시에 따라 문제를 만들어주세요:
 
 문제 형식
-중요: 구문 앞뒤에 ** 기호를 리터럴 텍스트로 표시
 문제 유형: '밑줄 친 "구문"이(가) 다음 글에서 의미하는 바로 가장 적절한 것은?'
+제시문: 원문 영어 지문을 그대로 사용하되 함축적 의미를 가진 중요구문 앞뒤에 ** 기호를 리터럴 텍스트로 표시
 선택지는 5개의 영어 선택지 (①~⑤)
 
 선택지 작성 규칙
@@ -40,7 +40,5 @@ The position of the architect rose during the Roman Empire, as architecture symb
 [정답] ③
 [해설] 이 구문이 나오는 맥락을 보면, 이론과 학문에만 의존하는 건축가들을 지칭하고 있으며, 이들이 실용적 기술 없이 이상만을 쫓고 있다는 의미로 사용되었다. 따라서 "pursuing the ideals of architecture without the practical skills"가 가장 적절하다.
 
-이제 [INPUT]으로 영어 지문을 제시하면, 위 형식에 맞춰 문제를 만들어주세요.
-
-여기 분석할 지문입니다:
+이제 [INPUT]으로 영어 지문을 제시하면, 위 형식에 맞춰 문제를 만들어주세요:
 ${text}`;
