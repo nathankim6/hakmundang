@@ -76,8 +76,8 @@ const Index = () => {
 
         <div className="metallic-border rounded-xl p-4 backdrop-blur-lg bg-gradient-to-b from-white/90 to-gray-50/90">
           {(userName || expiryDate) && (
-            <div className="mb-3 text-sm text-gray-600 flex items-center justify-between bg-white/80 rounded-lg p-2 border-b border-gray-100">
-              <div className="flex-1 text-left space-x-4">
+            <div className="mb-3 text-sm flex items-center justify-between bg-white/80 rounded-lg p-2 border-b border-gray-100">
+              <div className="flex-1 text-left space-x-4 text-[#0EA5E9]">
                 {userName && <span>사용자: {userName}</span>}
                 {expiryDate && <span>만료일: {expiryDate}</span>}
               </div>
