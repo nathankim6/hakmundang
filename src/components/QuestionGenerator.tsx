@@ -110,42 +110,45 @@ export const QuestionGenerator = () => {
     }
 
     setIsLoading(true);
+    const totalQuestions = nonEmptyTypes.reduce((sum, type) => sum + type.passages.length, 0);
+    setProgress({ current: 0, total: totalQuestions });
+    
     try {
-      let currentQuestion = 0;
-      const totalQuestions = nonEmptyTypes.reduce((sum, type) => sum + type.passages.length, 0);
-      setProgress({ current: 0, total: totalQuestions });
-      
       const updatedTypes = [...selectedTypes];
-      
-      for (let typeIndex = 0; typeIndex < updatedTypes.length; typeIndex++) {
-        const typeEntry = updatedTypes[typeIndex];
+      let currentQuestion = 0;
+
+      for (const typeEntry of updatedTypes) {
         const validPassages = typeEntry.passages.filter(p => p.text.trim() !== '');
         
-        for (let passageIndex = 0; passageIndex < validPassages.length; passageIndex++) {
-          const passage = validPassages[passageIndex];
+        for (const passage of validPassages) {
           try {
+            // Process one passage at a time
+            const result = await generateQuestion(typeEntry.type, passage.text);
+            
+            // Update the result in the state
+            const typeIndex = updatedTypes.findIndex(t => t.type.id === typeEntry.type.id);
+            const passageIndex = updatedTypes[typeIndex].passages.findIndex(p => p.id === passage.id);
+            
+            if (typeIndex !== -1 && passageIndex !== -1) {
+              updatedTypes[typeIndex].passages[passageIndex].result = result;
+            }
+
+            // Update progress
             currentQuestion++;
             setProgress({ current: currentQuestion, total: totalQuestions });
             
-            const result = await generateQuestion(typeEntry.type, passage.text);
-            if (typeof result === 'string') {
-              const originalPassageIndex = typeEntry.passages.findIndex(p => p.id === passage.id);
-              if (originalPassageIndex !== -1) {
-                updatedTypes[typeIndex].passages[originalPassageIndex].result = result;
-              }
-            }
+            // Update state after each passage is processed
+            setSelectedTypes([...updatedTypes]);
           } catch (error) {
-            console.error(`Error generating question for passage ${passageIndex + 1}:`, error);
+            console.error(`Error generating question:`, error);
             toast({
               title: "오류 발생",
-              description: `${passageIndex + 1}번 지문 처리 중 오류가 발생했습니다.`,
+              description: "문제 생성 중 오류가 발생했습니다.",
               variant: "destructive",
             });
           }
         }
       }
-      
-      setSelectedTypes(updatedTypes);
       
       toast({
         title: "문제 생성 완료",
