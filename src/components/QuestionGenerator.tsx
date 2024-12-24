@@ -2,12 +2,12 @@ import { useState } from "react";
 import { TypeSelector } from "./TypeSelector";
 import { TextInput } from "./TextInput";
 import { GeneratedQuestion } from "./GeneratedQuestion";
+import { LoadingProgress } from "./LoadingProgress";
 import { generateQuestion } from "@/lib/claude";
 import { generateDocument } from "@/utils/documentGenerator";
 import { QuestionType } from "@/types/question";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
-import { Progress } from "@/components/ui/progress";
 import { Sparkles, Plus, Trash2, FileDown } from "lucide-react";
 
 interface PassageEntry {
@@ -259,13 +259,10 @@ export const QuestionGenerator = () => {
           <>
             <div className="flex flex-col gap-4">
               {isLoading && progress.total > 0 && (
-                <div className="space-y-2">
-                  <div className="flex justify-between text-sm text-muted-foreground">
-                    <span>문제 생성 중...</span>
-                    <span>{progress.current} / {progress.total}</span>
-                  </div>
-                  <Progress value={(progress.current / progress.total) * 100} />
-                </div>
+                <LoadingProgress 
+                  current={progress.current} 
+                  total={progress.total}
+                />
               )}
               
               <div className="flex justify-center w-full gap-4">
