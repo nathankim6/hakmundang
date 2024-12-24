@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useState } from "react";
 import Index from "./pages/Index";
 import Admin from "./pages/Admin";
+import { AccessCodeCheck } from "./components/AccessCodeCheck";
 
 const App = () => {
   const [queryClient] = useState(() => new QueryClient());
