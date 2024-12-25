@@ -26,7 +26,6 @@ const questionTypes: QuestionType[] = [
   { id: "mainPoint", name: "[22] 요지" },
   { id: "topic", name: "[23] 주제" },
   { id: "title", name: "[24] 제목" },
-  { id: "grammar", name: "[29] 어법" },
   { id: "vocabulary", name: "[30] 어휘" },
   { id: "blank", name: "[31] 빈칸" },
   { id: "blankMultiple", name: "[32-34] 빈칸" },
