@@ -45,52 +45,37 @@ export const useQuestionActions = ({
       const updatedTypes = [...selectedTypes];
       let currentQuestion = 0;
 
-      // Process one type at a time
       for (const typeEntry of updatedTypes) {
         const validPassages = typeEntry.passages.filter(p => p.text.trim() !== '');
         
-        // Process one passage at a time
         for (const passage of validPassages) {
           try {
             if (controller.signal.aborted) {
               return;
             }
 
-            // Generate question for a single passage
-            console.log(`Generating question for type: ${typeEntry.type.name}, passage ID: ${passage.id}`);
             const result = await generateQuestion(typeEntry.type, passage.text);
-            console.log(`Question generated successfully for passage ID: ${passage.id}`);
             
-            // Update the result for this specific passage
             const typeIndex = updatedTypes.findIndex(t => t.type.id === typeEntry.type.id);
             const passageIndex = updatedTypes[typeIndex].passages.findIndex(p => p.id === passage.id);
             
             if (typeIndex !== -1 && passageIndex !== -1) {
               updatedTypes[typeIndex].passages[passageIndex].result = result;
-              
-              // Update state after each successful generation
-              setSelectedTypes([...updatedTypes]);
-              
-              currentQuestion++;
-              setProgress({ current: currentQuestion, total: totalQuestions });
-              
-              // Add a small delay between requests to prevent rate limiting
-              await new Promise(resolve => setTimeout(resolve, 1000));
             }
+
+            currentQuestion++;
+            setProgress({ current: currentQuestion, total: totalQuestions });
+            setSelectedTypes([...updatedTypes]);
           } catch (error) {
             if (error.name === 'AbortError') {
               return;
             }
-            console.error(`Error generating question for passage ${passage.id}:`, error);
+            console.error(`Error generating question:`, error);
             toast({
               title: "오류 발생",
-              description: `문제 생성 중 오류가 발생했습니다: ${error.message}`,
+              description: "문제 생성 중 오류가 발생했습니다.",
               variant: "destructive",
             });
-            
-            // Continue with next passage even if current one fails
-            currentQuestion++;
-            setProgress({ current: currentQuestion, total: totalQuestions });
           }
         }
       }
@@ -101,7 +86,6 @@ export const useQuestionActions = ({
       });
     } catch (error) {
       if (error.name !== 'AbortError') {
-        console.error("Generation process error:", error);
         toast({
           title: "오류 발생",
           description: "문제 생성 중 오류가 발생했습니다.",
