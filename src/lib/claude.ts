@@ -5,7 +5,9 @@ import {
   getClaimPrompt, 
   getImplicationPrompt, 
   getMoodPrompt,
-  getMainPointPrompt 
+  getMainPointPrompt,
+  getTopicPrompt,
+  getTitlePrompt
 } from "./prompts";
 
 const questionTypes: QuestionType[] = [
@@ -85,6 +87,9 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
         break;
       case "topic":
         prompt = getTopicPrompt(text);
+        break;
+      case "title":
+        prompt = getTitlePrompt(text);
         break;
       default:
         prompt = `Generate a question of type ${type.name} based on the following text: ${text}`;
