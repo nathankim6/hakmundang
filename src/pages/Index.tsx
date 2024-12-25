@@ -7,7 +7,6 @@ import { LogOut, Key } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "@/lib/supabase";
-import { SidebarProvider, Sidebar, SidebarContent, SidebarGroup, SidebarGroupContent, SidebarMenu, SidebarMenuItem, SidebarMenuButton } from "@/components/ui/sidebar";
 
 const Index = () => {
   const [userName, setUserName] = useState<string>("");
@@ -98,130 +97,99 @@ const Index = () => {
   };
 
   return (
-    <SidebarProvider>
-      <div className="flex min-h-screen w-full">
-        <Sidebar side="left" variant="sidebar" collapsible="icon">
-          <SidebarContent>
-            <SidebarGroup>
-              <SidebarGroupContent>
-                <SidebarMenu>
-                  <SidebarMenuItem>
-                    <SidebarMenuButton>
-                      <span>(1단) 출제 목적</span>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
-                  <SidebarMenuItem>
-                    <SidebarMenuButton>
-                      <span>(1단) 성경/문학기</span>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
-                  <SidebarMenuItem>
-                    <SidebarMenuButton>
-                      <span>(2단) 주장</span>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
-                  {/* Add more menu items as needed */}
-                </SidebarMenu>
-              </SidebarGroupContent>
-            </SidebarGroup>
-          </SidebarContent>
-        </Sidebar>
-
-        <main className="flex-1 overflow-hidden">
-          <div className="min-h-screen py-8 px-4 sm:px-6 lg:px-8 relative">
-            <div className="absolute inset-0 overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-white via-[#F1F0FB] to-[#E5DEFF] z-0" />
-              <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
-            </div>
-
-            <div className="max-w-7xl mx-auto space-y-3 relative z-10">
-              <div className="flex items-center justify-center space-x-6">
-                <img 
-                  src="/lovable-uploads/352a49ca-b123-4f07-992a-cf59e4b7058a.png" 
-                  alt="ORUN ACADEMY Logo" 
-                  className="w-32 h-32 object-contain"
-                />
-                
-                <div className="flex flex-col items-center">
-                  <h1 className="text-7xl font-bold animate-title tracking-wider relative group">
-                    <span className="inline-block transform transition-transform group-hover:scale-105 duration-300">
-                      ORUN AI QUIZ MAKER
-                    </span>
-                  </h1>
-                  <h2 className="text-2xl mt-2 text-gray-600">옳은영어 AI 퀴즈메이커</h2>
-                </div>
-              </div>
-
-              <div className="relative h-1 max-w-2xl mx-auto overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#DAA520] to-transparent" />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#FFD700] to-transparent animate-pulse" />
-              </div>
-
-              <div className="metallic-border rounded-xl p-4 backdrop-blur-lg bg-gradient-to-b from-white/90 to-gray-50/90">
-                {showLoginForm ? (
-                  <div className="mb-3 p-4 bg-white/80 rounded-lg border border-gray-100">
-                    <div className="flex space-x-2">
-                      <div className="relative flex-1">
-                        <Key className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
-                        <Input
-                          type="text"
-                          placeholder="엑세스 코드를 입력하세요..."
-                          value={accessCode}
-                          onChange={(e) => setAccessCode(e.target.value)}
-                          className="pl-10"
-                        />
-                      </div>
-                      <Button onClick={handleLogin}>로그인</Button>
-                      <Button variant="outline" onClick={() => setShowLoginForm(false)}>취소</Button>
-                    </div>
-                  </div>
-                ) : (userName || expiryDate) ? (
-                  <div className="mb-3 text-sm flex items-center justify-between bg-white/80 rounded-lg p-2 border-b border-gray-100">
-                    <div className="flex-1 text-left space-x-4 text-[#0EA5E9]">
-                      {userName && <span>사용자: {userName}</span>}
-                      {expiryDate && <span>만료일: {expiryDate}</span>}
-                    </div>
-                    <Button 
-                      onClick={handleLogout}
-                      variant="ghost"
-                      size="sm"
-                      className="text-red-600 hover:text-red-700 hover:bg-red-50"
-                    >
-                      <LogOut className="h-4 w-4 mr-1" />
-                      로그아웃
-                    </Button>
-                  </div>
-                ) : (
-                  <div className="mb-3 flex justify-end">
-                    <Button 
-                      variant="ghost"
-                      size="sm"
-                      onClick={() => setShowLoginForm(true)}
-                      className="text-[#0EA5E9] hover:text-[#0EA5E9]/80"
-                    >
-                      <Key className="h-4 w-4 mr-1" />
-                      엑세스 코드로 로그인
-                    </Button>
-                  </div>
-                )}
-                <APIConfig />
-              </div>
-              
-              <div className="metallic-border rounded-xl p-8">
-                <QuestionGenerator />
-              </div>
-            </div>
-
-            <footer className="mt-16 text-center relative z-10">
-              <p className="text-sm text-gray-500 hover:text-gray-700 transition-colors">
-                © 2024 ORUN AI QUIZ MAKER. All rights reserved by 옳은영어 김성진T
-              </p>
-            </footer>
-          </div>
-        </main>
+    <div className="min-h-screen py-8 px-4 sm:px-6 lg:px-8 relative">
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-white via-[#F1F0FB] to-[#E5DEFF] z-0" />
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
       </div>
-    </SidebarProvider>
+
+      <div className="max-w-7xl mx-auto space-y-3 relative z-10">
+        <div className="flex items-center justify-center space-x-6">
+          <img 
+            src="/lovable-uploads/352a49ca-b123-4f07-992a-cf59e4b7058a.png" 
+            alt="ORUN ACADEMY Logo" 
+            className="w-32 h-32 object-contain"
+          />
+          
+          <div className="flex flex-col items-center">
+            <h1 className="text-7xl font-bold animate-title tracking-wider relative group">
+              <span className="inline-block transform transition-transform group-hover:scale-105 duration-300">
+                ORUN AI QUIZ MAKER
+              </span>
+            </h1>
+            <h2 className="text-2xl font-bold mt-2 tracking-wide text-gray-700">
+              옳은영어 AI 퀴즈메이커
+            </h2>
+          </div>
+        </div>
+
+        <div className="relative h-1 max-w-2xl mx-auto overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#DAA520] to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#FFD700] to-transparent animate-pulse" />
+        </div>
+
+        <div className="metallic-border rounded-xl p-4 backdrop-blur-lg bg-gradient-to-b from-white/90 to-gray-50/90">
+          {showLoginForm ? (
+            <div className="mb-3 p-4 bg-white/80 rounded-lg border border-gray-100">
+              <div className="flex space-x-2">
+                <div className="relative flex-1">
+                  <Key className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                  <Input
+                    type="text"
+                    placeholder="엑세스 코드를 입력하세요..."
+                    value={accessCode}
+                    onChange={(e) => setAccessCode(e.target.value)}
+                    className="pl-10"
+                  />
+                </div>
+                <Button onClick={handleLogin}>로그인</Button>
+                <Button variant="outline" onClick={() => setShowLoginForm(false)}>취소</Button>
+              </div>
+            </div>
+          ) : (userName || expiryDate) ? (
+            <div className="mb-3 text-sm flex items-center justify-between bg-white/80 rounded-lg p-2 border-b border-gray-100">
+              <div className="flex-1 text-left space-x-4 text-[#0EA5E9]">
+                {userName && <span>사용자: {userName}</span>}
+                {expiryDate && <span>만료일: {expiryDate}</span>}
+              </div>
+              <Button 
+                onClick={handleLogout}
+                variant="ghost"
+                size="sm"
+                className="text-red-600 hover:text-red-700 hover:bg-red-50"
+              >
+                <LogOut className="h-4 w-4 mr-1" />
+                로그아웃
+              </Button>
+            </div>
+          ) : (
+            <div className="mb-3 flex justify-end">
+              <Button 
+                variant="ghost"
+                size="sm"
+                onClick={() => setShowLoginForm(true)}
+                className="text-[#0EA5E9] hover:text-[#0EA5E9]/80"
+              >
+                <Key className="h-4 w-4 mr-1" />
+                엑세스 코드로 로그인
+              </Button>
+            </div>
+          )}
+          <APIConfig />
+        </div>
+        
+        <div className="metallic-border rounded-xl p-8">
+          <QuestionGenerator />
+        </div>
+      </div>
+
+      <footer className="mt-16 text-center relative z-10">
+        <p className="text-sm text-gray-500 hover:text-gray-700 transition-colors">
+          © 2024 ORUN AI QUIZ MAKER. All rights reserved by 옳은영어 김성진T
+        </p>
+      </footer>
+    </div>
   );
 };
 
