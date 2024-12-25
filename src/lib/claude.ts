@@ -83,6 +83,9 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
       case "mainPoint":
         prompt = getMainPointPrompt(text);
         break;
+      case "topic":
+        prompt = getTopicPrompt(text);
+        break;
       default:
         prompt = `Generate a question of type ${type.name} based on the following text: ${text}`;
     }
