@@ -9,3 +9,4 @@ export * from './vocabulary';
 export * from './blank';
 export * from './blankMultiple';
 export * from './irrelevant';
+export * from './order';

@@ -11,7 +11,8 @@ import {
   getVocabularyPrompt,
   getBlankPrompt,
   getBlankMultiplePrompt,
-  getIrrelevantPrompt
+  getIrrelevantPrompt,
+  getOrderPrompt
 } from "./prompts";
 
 const questionTypes: QuestionType[] = [
@@ -106,6 +107,9 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
         break;
       case "irrelevant":
         prompt = getIrrelevantPrompt(text);
+        break;
+      case "order":
+        prompt = getOrderPrompt(text);
         break;
       default:
         prompt = `Generate a question of type ${type.name} based on the following text: ${text}`;
