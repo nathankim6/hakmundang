@@ -26,6 +26,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
   const TypeButton = ({ type }: { type: QuestionType }) => {
     const isSelected = selectedTypes.some(t => t.id === type.id);
     const isSungui = type.name.includes("숭의여고");
+    const isSungnam = type.name.includes("성남고");
     
     return (
       <button
@@ -42,6 +43,13 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
             <img 
               src="/lovable-uploads/463ace92-8cb3-402e-9a22-852f579f8c25.png"
               alt="Sungui Girls' High School Logo"
+              className="w-5 h-5 object-contain"
+            />
+          )}
+          {isSungnam && (
+            <img 
+              src="/lovable-uploads/46cde7ad-f85a-405a-867c-665d2764ed71.png"
+              alt="Sungnam High School Logo"
               className="w-5 h-5 object-contain"
             />
           )}
