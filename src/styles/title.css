@@ -8,9 +8,9 @@
   background: linear-gradient(
     92deg,
     #000000,
+    #000000,
     #1A1A1A,
-    #2A2A2A,
-    #1A1A1A,
+    #000000,
     #000000
   );
   background-size: 300% auto;
@@ -21,8 +21,8 @@
   font-weight: 900;
   letter-spacing: 3px;
   text-shadow: 
-    2px 2px 4px rgba(0, 0, 0, 0.6),
-    -1px -1px 1px rgba(255, 255, 255, 0.9);
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    -1px -1px 1px rgba(255, 255, 255, 1);
   animation: titleGradient 8s linear infinite;
 }
 
