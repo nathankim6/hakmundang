@@ -119,7 +119,7 @@ const Index = () => {
               </span>
             </h1>
             <h2 className="text-2xl font-bold mt-2 tracking-wide text-gray-700">
-              옳은영어 AI 퀴즈메이커
+              옳은영어 자체개발 AI 퀴즈메이커
             </h2>
           </div>
         </div>
