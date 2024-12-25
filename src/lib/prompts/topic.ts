@@ -24,11 +24,22 @@ export const getTopicPrompt = (text: string) => `당신은 영어 지문을 입�
    - 원문에 없는 내용의 과도한 확대 해석 금지
    - 선택지 간 의미가 명확히 구분되도록 작성
 
-예시:
-The arrival of the Industrial Age changed the relationship among time, labor, and capital. Factories could produce around the clock, and they could do so with greater speed and volume than ever before. A machine that runs twelve hours a day will produce more widgets than one that runs for only eight hours per day — and a machine that runs twenty-four hours per day will produce the most widgets of all. As such, at many factories, the workday is divided into eight-hour shifts, so that there will always be people on hand to keep the widget machines humming. Industrialization raised the potential value of every single work hour — the more hours you worked, the more widgets you produced, and the more money you made — and thus wages became tied to effort and production. Labor, previously guided by harvest cycles, became clock-oriented, and society started to reorganize around new principles of productivity.
+5. 출력 형식
+   - 문제 제시: "다음 글의 주제로 가장 적절한 것은?"
+   - 원문 지문 제시
+   - 5개의 영어 선택지 (①~⑤)
+   - 정답 표시
+   - 한국어 해설 제시 (정답 설명 및 오답 이유 간략히 설명)
 
+예시:
+[INPUT]
 다음 글의 주제로 가장 적절한 것은?
 The arrival of the Industrial Age changed the relationship among time, labor, and capital. Factories could produce around the clock, and they could do so with greater speed and volume than ever before. A machine that runs twelve hours a day will produce more widgets than one that runs for only eight hours per day — and a machine that runs twenty-four hours per day will produce the most widgets of all. As such, at many factories, the workday is divided into eight-hour shifts, so that there will always be people on hand to keep the widget machines humming. Industrialization raised the potential value of every single work hour — the more hours you worked, the more widgets you produced, and the more money you made — and thus wages became tied to effort and production. Labor, previously guided by harvest cycles, became clock-oriented, and society started to reorganize around new principles of productivity.
+
+[OUTPUT]
+다음 글의 주제로 가장 적절한 것은?
+
+${text}
 
 ① shift in the work-time paradigm brought about by industrialization
 ② effects of standardizing production procedures on labor markets
