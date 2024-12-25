@@ -35,28 +35,28 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
   return (
     <div className="space-y-8">
       <TypeCategory
-        title="독해 유형"
+        title="수능형"
         types={readingTypes}
         selectedTypes={selectedTypes}
         hasAccess={hasAccess}
         onTypeClick={handleTypeClick}
       />
       <TypeCategory
-        title="학교 유형"
+        title="내신형"
         types={schoolTypes}
         selectedTypes={selectedTypes}
         hasAccess={hasAccess}
         onTypeClick={handleTypeClick}
       />
       <TypeCategory
-        title="서술형 유형"
+        title="서술형"
         types={descriptiveTypes}
         selectedTypes={selectedTypes}
         hasAccess={hasAccess}
         onTypeClick={handleTypeClick}
       />
       <TypeCategory
-        title="내용 유형"
+        title="옳은영어 전용"
         types={contentTypes}
         selectedTypes={selectedTypes}
         hasAccess={hasAccess}
