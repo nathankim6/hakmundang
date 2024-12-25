@@ -11,9 +11,9 @@ interface TypeSelectorProps {
 export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelectorProps) => {
   const types = getQuestionTypes();
   const suneungTypes = types.slice(0, 15);
-  const schoolTypes = types.slice(15, 20);
-  const descriptiveTypes = types.slice(20, 26);
-  const contentTypes = types.slice(26);
+  const schoolTypes = types.slice(15, 22);
+  const descriptiveTypes = types.slice(22, 28);
+  const contentTypes = types.slice(28);
 
   const CategoryTitle = ({ children }: { children: React.ReactNode }) => (
     <div className="flex items-center justify-center mb-4">
