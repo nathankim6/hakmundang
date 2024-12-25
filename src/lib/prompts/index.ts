@@ -5,3 +5,4 @@ export * from './mood';
 export * from './mainPoint';
 export * from './topic';
 export * from './title';
+export * from './vocabulary';
