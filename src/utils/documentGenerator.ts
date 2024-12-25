@@ -21,7 +21,7 @@ export const generateDocument = async (questions: QuestionData[]) => {
       // Join all remaining parts in case there are multiple [정답] occurrences
       const answerPart = parts.slice(1).join('[정답]').trim();
       
-      // Add numbered sections with [문제N] format
+      // Use the questionNumber from the QuestionData interface
       questionsText += `[문제${q.questionNumber}]\n${questionPart}\n\n`;
       answersText += `[문제${q.questionNumber}]\n[정답]${answerPart}\n\n`;
     } else {
