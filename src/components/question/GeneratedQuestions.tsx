@@ -28,7 +28,7 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
             className="gap-2"
           >
             <Table className="w-4 h-4" />
-            동의어/반의어 표 보기
+            동반어 편집기
           </Button>
         )}
       </div>

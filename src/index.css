@@ -48,6 +48,14 @@
     font-family: Gulim, '굴림', sans-serif !important;
   }
 
+  /* Add specific font styling for content types */
+  [data-question-type="synonymAntonym"] .result-text,
+  [data-question-type="arrangeWriting"] .result-text,
+  [data-question-type="conditionalWriting"] .result-text,
+  [data-question-type="summaryBlank"] .result-text {
+    font-family: Gulim, '굴림', sans-serif !important;
+  }
+
   body::before {
     content: '';
     position: fixed;
