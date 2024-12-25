@@ -37,10 +37,12 @@ const questionTypes: QuestionType[] = [
   // 내신형
   { id: "sungVocab1", name: "[숭의여고] 어휘1(동의어)" },
   { id: "sungVocab2", name: "[숭의여고] 어휘2(예문)" },
+  { id: "sungVocab3", name: "[숭의여고] 어휘3(영영사전)" },
   { id: "sungExternal", name: "[숭의여고] 외부지문" },
   { id: "sungReference", name: "[숭의여고] 지칭추론" },
   { id: "seongVocab1", name: "[성남고] 어휘1(동의어)" },
   { id: "seongVocab2", name: "[성남고] 어휘2(예문)" },
+  { id: "seongVocab3", name: "[성남고] 어휘3(영영사전)" },
   { id: "dangListen", name: "[당곡고] 듣기변형" },
 
   // 서술형
