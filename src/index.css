@@ -63,13 +63,12 @@
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
-  color: #222222;
+  color: transparent;
   animation: shine 3s linear infinite;
   font-weight: 900;
   text-shadow: 
     0 2px 4px rgba(0, 0, 0, 0.3);
   letter-spacing: 2px;
-  opacity: 1;
 }
 
 @keyframes shine {
