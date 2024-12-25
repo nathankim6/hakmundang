@@ -106,7 +106,7 @@ const Index = () => {
 
       <div className="max-w-[1600px] mx-auto relative z-10">
         <div className="flex flex-col space-y-8">
-          {/* Title Section */}
+          {/* Title Section with enhanced styling */}
           <div className="flex items-center justify-center space-x-6">
             <img 
               src="/lovable-uploads/352a49ca-b123-4f07-992a-cf59e4b7058a.png" 
@@ -114,8 +114,11 @@ const Index = () => {
               className="w-32 h-32 object-contain"
             />
             
-            <div className="flex flex-col items-center">
-              <h1 className="text-7xl font-bold animate-title tracking-wider relative group">
+            <div className="flex flex-col items-center animate-title-container">
+              <h1 
+                className="text-7xl font-bold animate-title tracking-wider relative group"
+                data-text="ORUN AI QUIZ MAKER"
+              >
                 <span className="inline-block transform transition-transform group-hover:scale-105 duration-300">
                   ORUN AI QUIZ MAKER
                 </span>
@@ -123,9 +126,10 @@ const Index = () => {
             </div>
           </div>
 
+          {/* Decorative line with enhanced styling */}
           <div className="relative h-1 max-w-2xl mx-auto overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#DAA520] to-transparent" />
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#FFD700] to-transparent animate-pulse" />
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#7C3AED] to-transparent opacity-50" />
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#EC4899] to-transparent animate-pulse opacity-30" />
           </div>
 
           {/* Login/Config Section */}
