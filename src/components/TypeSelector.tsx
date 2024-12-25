@@ -1,7 +1,38 @@
 import { QuestionType } from "@/types/question";
-import { getQuestionTypes } from "@/lib/claude";
-import { useToast } from "./ui/use-toast";
 import { TypeCategory } from "./type-selector/TypeCategory";
+import { ScrollArea } from "./ui/scroll-area";
+
+const CATEGORIES = [
+  {
+    title: "독해 유형",
+    types: [
+      { id: "blank", name: "빈칸 추론" },
+      { id: "blankMultiple", name: "빈칸 2개" },
+      { id: "insert", name: "문장 삽입" },
+      { id: "order", name: "문단 순서" },
+      { id: "irrelevant", name: "문장 삭제" },
+      { id: "summary", name: "요약문" },
+    ]
+  },
+  {
+    title: "학교 유형",
+    types: [
+      { id: "mainPoint", name: "요지/주제" },
+      { id: "purpose", name: "목적" },
+      { id: "claim", name: "주장" },
+      { id: "topic", name: "제목" },
+      { id: "mood", name: "분위기/심경" },
+      { id: "vocabulary", name: "어휘" },
+    ]
+  },
+  {
+    title: "서술형 유형",
+    types: [
+      { id: "implication", name: "시사점" },
+      { id: "title", name: "제목" },
+    ]
+  }
+];
 
 interface TypeSelectorProps {
   selectedTypes: QuestionType[];
@@ -10,58 +41,28 @@ interface TypeSelectorProps {
 }
 
 export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelectorProps) => {
-  const types = getQuestionTypes();
-  const readingTypes = types.slice(0, 15);
-  const schoolTypes = types.slice(15, 22);
-  const descriptiveTypes = types.slice(22, 28);
-  const contentTypes = types.slice(28);
-  
-  const { toast } = useToast();
-  const hasAccess = localStorage.getItem("hasAccess") === "true";
-
   const handleTypeClick = (type: QuestionType, isSelected: boolean) => {
-    if (!hasAccess) {
-      toast({
-        title: "접근 제한",
-        description: "문제 유형을 선택하려면 로그인이 필요합니다.",
-        variant: "destructive",
-      });
-      return;
+    if (isSelected) {
+      onRemove(type.id);
+    } else {
+      onSelect(type);
     }
-    
-    isSelected ? onRemove(type.id) : onSelect(type);
   };
 
   return (
-    <div className="space-y-8">
-      <TypeCategory
-        title="독해 유형"
-        types={readingTypes}
-        selectedTypes={selectedTypes}
-        hasAccess={hasAccess}
-        onTypeClick={handleTypeClick}
-      />
-      <TypeCategory
-        title="학교 유형"
-        types={schoolTypes}
-        selectedTypes={selectedTypes}
-        hasAccess={hasAccess}
-        onTypeClick={handleTypeClick}
-      />
-      <TypeCategory
-        title="서술형 유형"
-        types={descriptiveTypes}
-        selectedTypes={selectedTypes}
-        hasAccess={hasAccess}
-        onTypeClick={handleTypeClick}
-      />
-      <TypeCategory
-        title="내용 유형"
-        types={contentTypes}
-        selectedTypes={selectedTypes}
-        hasAccess={hasAccess}
-        onTypeClick={handleTypeClick}
-      />
-    </div>
+    <ScrollArea className="h-[calc(100vh-12rem)]">
+      <div className="space-y-6 pr-4">
+        {CATEGORIES.map((category) => (
+          <TypeCategory
+            key={category.title}
+            title={category.title}
+            types={category.types}
+            selectedTypes={selectedTypes}
+            hasAccess={true}
+            onTypeClick={handleTypeClick}
+          />
+        ))}
+      </div>
+    </ScrollArea>
   );
 };
