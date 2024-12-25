@@ -16,6 +16,7 @@ import {
   getInsertPrompt,
   getSummaryPrompt,
   getSynonymAntonymPrompt,
+  getTrueOrFalsePrompt,
   getFourKingsPrompt
 } from "./prompts";
 
@@ -117,6 +118,9 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
         break;
       case "synonymAntonym":
         prompt = getSynonymAntonymPrompt(text);
+        break;
+      case "trueOrFalse":
+        prompt = getTrueOrFalsePrompt(text);
         break;
       default:
         prompt = `Generate a question of type ${type.name} based on the following text: ${text}`;

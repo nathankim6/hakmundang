@@ -13,4 +13,5 @@ export * from './order';
 export * from './insert';
 export * from './summary';
 export * from './synonymAntonym';
+export * from './trueOrFalse';
 export * from './fourKings';
