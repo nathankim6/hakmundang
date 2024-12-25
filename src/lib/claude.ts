@@ -9,7 +9,8 @@ import {
   getTopicPrompt,
   getTitlePrompt,
   getVocabularyPrompt,
-  getBlankPrompt
+  getBlankPrompt,
+  getBlankMultiplePrompt
 } from "./prompts";
 
 const questionTypes: QuestionType[] = [
