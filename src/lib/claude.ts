@@ -14,9 +14,7 @@ import {
   getIrrelevantPrompt,
   getOrderPrompt,
   getInsertPrompt,
-  getSummaryPrompt,
-  getSynonymAntonymPrompt,
-  getFourKingsPrompt
+  getSummaryPrompt
 } from "./prompts";
 
 const questionTypes: QuestionType[] = [
@@ -37,22 +35,29 @@ const questionTypes: QuestionType[] = [
   { id: "summary", name: "[40] 요약문" },
 
   // 내신형
-  { id: "sungseongVocab1", name: "[숭의성남] 어휘1(동반어)" },
-  { id: "sungseongVocab2", name: "[숭의성남] 어휘2(예문)" },
-  { id: "sungseongVocab3", name: "[숭의성남] 어휘3(영영사전)" },
-  { id: "sungReference", name: "[숭의] 지칭추론" },
-  { id: "sungExternal", name: "[숭의] 외부지문" },
+  { id: "sungVocab1", name: "[숭의여고] 어휘1(동의어)" },
+  { id: "sungVocab2", name: "[숭의여고] 어휘2(예문)" },
+  { id: "sungVocab3", name: "[숭의여고] 어휘3(영영사전)" },
+  { id: "seongVocab1", name: "[성남고] 어휘1(동의어)" },
+  { id: "seongVocab2", name: "[성남고] 어휘2(예문)" },
+  { id: "seongVocab3", name: "[성남고] 어휘3(영영사전)" },
+  { id: "dangListen", name: "[당곡고] 듣기변형" },
 
-  // 서답형
-  { id: "arrangeWriting", name: "[서답형] 배열영작" },
-  { id: "conditionalWriting", name: "[서답형] 조건영작" },
-  { id: "summaryBlank", name: "[서답형] 요약문 빈칸" },
+  // 서술형
+  { id: "descriptiveSummary", name: "[서술형] 요약문 빈칸완성" },
+  { id: "descriptiveArrange", name: "[서술형] 배열영작(우리말O)" },
+  { id: "descriptiveConditionKor", name: "[서술형] 조건영작(우리말O)" },
+  { id: "descriptiveCondition", name: "[서술형] 조건영작(우리말X)" },
+  { id: "descriptiveVocab", name: "[서술형] 어휘" },
+  { id: "descriptiveVocabBlank", name: "[서술형] 어휘 빈칸완성" },
+  { id: "descriptiveGrammar", name: "[서술형] 어법" },
+  { id: "descriptiveConditionKor2", name: "[서술형] 조건영작(우리말O)" },
 
-  // 옳은영어 콘텐츠
+  // 옳은영어 전용
   { id: "synonymAntonym", name: "동의어/반의어" },
   { id: "trueOrFalse", name: "True or False" },
   { id: "fourKings", name: "4대천왕" },
-  { id: "weekendClinic", name: "주말클리닉 워크북" },
+  { id: "weekendClinic", name: "주말클리닉" },
   { id: "philosophersStone", name: "Philosopher's Stone" }
 ];
 
@@ -114,9 +119,6 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
         break;
       case "summary":
         prompt = getSummaryPrompt(text);
-        break;
-      case "synonymAntonym":
-        prompt = getSynonymAntonymPrompt(text);
         break;
       default:
         prompt = `Generate a question of type ${type.name} based on the following text: ${text}`;
