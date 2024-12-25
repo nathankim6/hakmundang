@@ -99,6 +99,9 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
       case "blank":
         prompt = getBlankPrompt(text);
         break;
+      case "blankMultiple":
+        prompt = getBlankMultiplePrompt(text);
+        break;
       default:
         prompt = `Generate a question of type ${type.name} based on the following text: ${text}`;
     }
