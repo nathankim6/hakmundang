@@ -13,7 +13,8 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
   const types = getQuestionTypes();
   const readingTypes = types.slice(0, 14);
   const schoolTypes = types.slice(14, 19);
-  const contentTypes = types.slice(19);
+  const essayTypes = types.slice(19, 22);
+  const contentTypes = types.slice(22);
   
   const { toast } = useToast();
   const hasAccess = localStorage.getItem("hasAccess") === "true";
@@ -43,6 +44,13 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
       <TypeCategory
         title="내신형"
         types={schoolTypes}
+        selectedTypes={selectedTypes}
+        hasAccess={hasAccess}
+        onTypeClick={handleTypeClick}
+      />
+      <TypeCategory
+        title="서답형"
+        types={essayTypes}
         selectedTypes={selectedTypes}
         hasAccess={hasAccess}
         onTypeClick={handleTypeClick}

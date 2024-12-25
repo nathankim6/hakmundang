@@ -43,6 +43,11 @@ const questionTypes: QuestionType[] = [
   { id: "sungReference", name: "[숭의] 지칭추론" },
   { id: "sungExternal", name: "[숭의] 외부지문" },
 
+  // 서답형
+  { id: "arrangeWriting", name: "[서답형] 배열영작" },
+  { id: "conditionalWriting", name: "[서답형] 조건영작" },
+  { id: "summaryBlank", name: "[서답형] 요약문 빈칸" },
+
   // 옳은영어 콘텐츠
   { id: "synonymAntonym", name: "동의어/반의어" },
   { id: "trueOrFalse", name: "True or False" },
