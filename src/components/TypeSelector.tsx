@@ -1,6 +1,7 @@
 import { QuestionType } from "@/types/question";
 import { getQuestionTypes } from "@/lib/claude";
-import { Check, Sparkles } from "lucide-react";
+import { Check, Sparkles, Lock } from "lucide-react";
+import { useToast } from "./ui/use-toast";
 
 interface TypeSelectorProps {
   selectedTypes: QuestionType[];
@@ -14,6 +15,8 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
   const schoolTypes = types.slice(15, 22);
   const descriptiveTypes = types.slice(22, 28);
   const contentTypes = types.slice(28);
+  const { toast } = useToast();
+  const hasAccess = localStorage.getItem("hasAccess") === "true";
 
   const CategoryTitle = ({ children }: { children: React.ReactNode }) => (
     <div className="flex items-center justify-center mb-4">
@@ -22,6 +25,19 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
       </h3>
     </div>
   );
+
+  const handleTypeClick = (type: QuestionType, isSelected: boolean) => {
+    if (!hasAccess) {
+      toast({
+        title: "접근 제한",
+        description: "문제 유형을 선택하려면 로그인이 필요합니다.",
+        variant: "destructive",
+      });
+      return;
+    }
+    
+    isSelected ? onRemove(type.id) : onSelect(type);
+  };
 
   const TypeButton = ({ type }: { type: QuestionType }) => {
     const isSelected = selectedTypes.some(t => t.id === type.id);
@@ -32,15 +48,22 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
     return (
       <button
         key={type.id}
-        onClick={() => isSelected ? onRemove(type.id) : onSelect(type)}
+        onClick={() => handleTypeClick(type, isSelected)}
         className={`type-button group relative w-full text-left transition-all duration-300 hover:scale-[1.02] ${
-          isSelected 
-            ? "selected bg-[#0EA5E9]/20 text-[#1A1F2C] font-semibold shadow-md" 
-            : "hover:bg-[#D3E4FD] hover:text-[#0EA5E9]"
+          !hasAccess 
+            ? "opacity-50 cursor-not-allowed hover:scale-100"
+            : isSelected 
+              ? "selected bg-[#0EA5E9]/20 text-[#1A1F2C] font-semibold shadow-md" 
+              : "hover:bg-[#D3E4FD] hover:text-[#0EA5E9]"
         }`}
       >
         <span className="relative z-10 flex items-center justify-between gap-2">
-          {!isSelected && (
+          {!hasAccess && (
+            <Lock 
+              className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"
+            />
+          )}
+          {!isSelected && hasAccess && (
             <Sparkles 
               className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-[#FFD700] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               style={{ filter: 'drop-shadow(0 0 2px rgba(255, 215, 0, 0.5))' }}
@@ -68,7 +91,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
             />
           )}
           <span className="flex-1">{type.name}</span>
-          {isSelected && (
+          {isSelected && hasAccess && (
             <Check className="w-4 h-4 text-[#0EA5E9] animate-bounce" />
           )}
         </span>
