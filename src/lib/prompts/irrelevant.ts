@@ -1,19 +1,26 @@
-export const getIrrelevantPrompt = (text: string) => `당신은 영어 지문을 입력받아 '전체 흐름과 관계없는 문장 찾기' 문제를 만드는 수능 영어 전문가입니다. 제가 영어 지문을 제시하면, 다음 규칙에 따라 문제를 만들어주세요:
+export const getIrrelevantPrompt = (text: string) => `아래 예시와 같은 형식으로, 제가 입력한 영어 지문을 바탕으로 문제를 만들어주세요. 정답은 지문의 주제와 일부 관련은 있으나 전체적인 흐름이나 논리상 어색한 문장이어야 합니다. 보기는 지문의 첫 문장을 제외한 나머지 부분에서 균형있게 선택되어야 합니다.
 
-1. 기존 지문의 문장들을 그대로 유지하면서, 중간에 글의 흐름과 관계없는 한 문장을 추가해주세요.
-2. 5개의 문장 앞에 각각 ①~⑤ 번호를 붙여주세요.
-3. 정답과 풀이를 함께 제시해주세요.
-
-요구사항:
-- 추가할 문장은 글의 핵심 주제나 논지와 확실히 관계없는 내용이어야 합니다.
-- 추가할 문장은 문맥상 자연스럽게 보이되, 주제와는 동떨어진 내용이어야 합니다.
-- 풀이는 글의 중심 내용을 먼저 제시한 후, 추가된 문장이 왜 흐름과 관계없는지 설명해야 합니다.
-
-다음 형식으로 답변해주세요:
-
-다음 글에서 전체 흐름과 관계 없는 문장은?
-
+[INPUT]
 ${text}
 
-[정답] [번호]
-[풀이] [설명]`;
+[OUTPUT]
+다음 글에서 전체 흐름과 관계 없는 문장은?
+
+{지문의 첫 문장을 그대로 작성한 후, 나머지 부분에서 균형있게 선택한 4개의 문장과 1개의 새로운 문장으로 구성합니다. 선택된 4개의 문장과 새로운 문장 앞에 ①, ②, ③, ④, ⑤ 번호를 붙입니다. 새로운 문장(정답)의 위치는 무작위로 배치합니다.}
+
+[정답] {정답 번호}
+[풀이]
+{정답 선택지가 전체 흐름과 관계없는 이유에 대한 간단한 설명}
+
+예시:
+[INPUT]
+The expansion of sports tourism in the twentieth century has been influenced by further developments in transportation. Just as the railways revolutionized travel in the nineteenth century, so the automobile produced even more dramatic changes in the twentieth. The significance of the car in the development of sport and tourism generally has attracted considerable coverage and it has had no less an impact on sports tourism specifically. Although originally invented towards the end of the nineteenth century, it started to become a mass form of transport in the 1920s in the USA and rather later in Britain. Apart from its convenience and flexibility, the car has the additional advantages of affording access to many areas not served by public transport, as well as allowing the easy transport of luggage and equipment. As a result, it was invaluable for the development of many forms of sports tourism but especially those which require the transportation of people and equipment to relatively remote locations.
+
+[OUTPUT]
+다음 글에서 전체 흐름과 관계 없는 문장은?
+
+The expansion of sports tourism in the twentieth century has been influenced by further developments in transportation. ① Just as the railways revolutionized travel in the nineteenth century, so the automobile produced even more dramatic changes in the twentieth. ② The significance of the car in the development of sport and tourism generally has attracted considerable coverage and it has had no less an impact on sports tourism specifically. ③ Although originally invented towards the end of the nineteenth century, it started to become a mass form of transport in the 1920s in the USA and rather later in Britain. ④ The expansion of reasonably priced, good quality accommodation associated with tourism growth has also facilitated the growth of locally based restaurants. ⑤ As a result, it was invaluable for the development of many forms of sports tourism but especially those which require the transportation of people and equipment to relatively remote locations.
+
+[정답] ④
+[풀이]
+이 글은 20세기에 교통수단이 발전하면서 스포츠 관광이 확대되었고, 특히 자동차가 스포츠와 관광 발전에 중요한 역할을 했다는 내용을 다루고 있다. 그러나 ④번 문장은 관광 성장과 관련된 합리적인 가격의 숙박 시설 확대가 현지 식당의 성장을 촉진했다는 내용을 담고 있어, 교통수단의 발전과 스포츠 관광의 확대라는 글의 중심 주제와 관계가 없다.`;
