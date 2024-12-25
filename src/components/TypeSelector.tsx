@@ -69,7 +69,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
   };
 
   return (
-    <div className="space-y-6 min-w-[300px]">
+    <div className="space-y-6 w-[320px]">
       <h2 className="text-2xl font-bold text-[#1A1F2C] flex items-center gap-3 whitespace-nowrap">✨ Question Types</h2>
       
       <div className="space-y-8">
