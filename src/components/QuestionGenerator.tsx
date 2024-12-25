@@ -67,20 +67,20 @@ export const QuestionGenerator = () => {
           />
         </div>
         <div className="flex-1 space-y-8">
-          {selectedTypes.map((typeEntry) => (
-            <TypeEntry
-              key={typeEntry.type.id}
-              type={typeEntry.type}
-              passages={typeEntry.passages}
-              onAddPassage={handleAddPassage}
-              onRemovePassage={handleRemovePassage}
-              onTextChange={handleTextChange}
-              onPasteValues={handlePasteValues}
-            />
-          ))}
-
-          {selectedTypes.length > 0 && (
+          {selectedTypes.length > 0 ? (
             <>
+              {selectedTypes.map((typeEntry) => (
+                <TypeEntry
+                  key={typeEntry.type.id}
+                  type={typeEntry.type}
+                  passages={typeEntry.passages}
+                  onAddPassage={handleAddPassage}
+                  onRemovePassage={handleRemovePassage}
+                  onTextChange={handleTextChange}
+                  onPasteValues={handlePasteValues}
+                />
+              ))}
+
               <div className="flex flex-col gap-4">
                 {isLoading && progress.total > 0 && (
                   <LoadingProgress 
@@ -99,6 +99,18 @@ export const QuestionGenerator = () => {
 
               <GeneratedQuestions questions={generatedQuestions} />
             </>
+          ) : (
+            <div className="flex flex-col items-center justify-center h-[400px] bg-[#F1F0FB]/30 rounded-lg border-2 border-dashed border-[#D6BCFA]/30 p-8 space-y-4">
+              <img 
+                src="/lovable-uploads/352a49ca-b123-4f07-992a-cf59e4b7058a.png" 
+                alt="ORUN ACADEMY Logo" 
+                className="w-24 h-24 object-contain opacity-50"
+              />
+              <div className="text-center space-y-2">
+                <h3 className="text-xl font-semibold text-[#1A1F2C]">문제 유형을 선택해주세요</h3>
+                <p className="text-sm text-[#6B7280]">왼쪽 메뉴에서 원하시는 문제 유형을 선택하시면<br />지문 입력 섹션이 나타납니다.</p>
+              </div>
+            </div>
           )}
         </div>
       </div>

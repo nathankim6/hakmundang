@@ -51,7 +51,7 @@ const questionTypes: QuestionType[] = [
   { id: "descriptiveVocab", name: "[서술형] 어휘" },
   { id: "descriptiveVocabBlank", name: "[서술형] 어휘 빈칸완성" },
   { id: "descriptiveGrammar", name: "[서술형] 어법" },
-  { id: "descriptiveConditionKor2", name: "[서술형] 조건영작(우리말O]" },
+  { id: "descriptiveConditionKor2", name: "[서술형] 조건영작(우리말O)" },
 
   // 옳은영어 전용
   { id: "synonymAntonym", name: "동의어/반의어" },
