@@ -79,6 +79,7 @@ export const QuestionGenerator = () => {
                   onRemovePassage={handleRemovePassage}
                   onTextChange={handleTextChange}
                   onPasteValues={handlePasteValues}
+                  onRemoveType={handleRemoveType}
                 />
               ))}
 

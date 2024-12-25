@@ -17,6 +17,7 @@ interface TypeEntryProps {
   onRemovePassage: (typeId: string, passageId: string) => void;
   onTextChange: (typeId: string, passageId: string, text: string) => void;
   onPasteValues: (typeId: string, passageId: string, values: string[]) => void;
+  onRemoveType: (typeId: string) => void;
 }
 
 export const TypeEntry = ({
@@ -26,25 +27,16 @@ export const TypeEntry = ({
   onRemovePassage,
   onTextChange,
   onPasteValues,
+  onRemoveType,
 }: TypeEntryProps) => {
   const { toast } = useToast();
 
-  const handleDeleteAllPassages = () => {
-    // Delete all passages except the first one
-    passages.forEach((passage, index) => {
-      if (index > 0) {
-        onRemovePassage(type.id, passage.id);
-      }
-    });
-    
-    // Clear the text of the first passage
-    if (passages.length > 0) {
-      onTextChange(type.id, passages[0].id, "");
-    }
+  const handleDeleteAll = () => {
+    onRemoveType(type.id);
     
     toast({
-      title: "지문 삭제 완료",
-      description: "모든 지문이 삭제되었습니다.",
+      title: "문제 유형 삭제",
+      description: "선택한 문제 유형이 삭제되었습니다.",
     });
   };
 
@@ -52,17 +44,15 @@ export const TypeEntry = ({
     <div className="space-y-6 p-6 rounded-lg border-2 border-[#9b87f5]/20 relative bg-[#F8F7FF]">
       <div className="flex items-center justify-between">
         <h3 className="text-xl font-bold text-[#7E69AB]">{type.name}</h3>
-        {passages.length > 1 && (
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={handleDeleteAllPassages}
-            className="text-destructive hover:text-destructive/80 hover:bg-destructive/10"
-          >
-            <X className="w-4 h-4 mr-1" />
-            전체 삭제
-          </Button>
-        )}
+        <Button
+          variant="ghost"
+          size="sm"
+          onClick={handleDeleteAll}
+          className="text-destructive hover:text-destructive/80 hover:bg-destructive/10"
+        >
+          <X className="w-4 h-4 mr-1" />
+          전체 삭제
+        </Button>
       </div>
       
       <div className="space-y-4">
