@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/use-toast";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "@/lib/supabase";
+import { Copy } from "lucide-react";
 
 export const AccessCodeManager = () => {
   const [newCode, setNewCode] = useState("");
@@ -95,6 +96,22 @@ export const AccessCodeManager = () => {
     });
   };
 
+  const copyAccessCode = async (code: string) => {
+    try {
+      await navigator.clipboard.writeText(code);
+      toast({
+        title: "복사 성공",
+        description: "엑세스 코드가 클립보드에 복사되었습니다.",
+      });
+    } catch (error) {
+      toast({
+        title: "복사 실패",
+        description: "엑세스 코드 복사에 실패했습니다.",
+        variant: "destructive",
+      });
+    }
+  };
+
   return (
     <div className="min-h-screen p-6 bg-gradient-to-br from-white via-[#F1F0FB] to-[#E5DEFF]">
       <div className="max-w-4xl mx-auto space-y-6">
@@ -135,9 +152,17 @@ export const AccessCodeManager = () => {
                 key={code.code}
                 className="flex justify-between items-center p-3 bg-gray-50 rounded"
               >
-                <div>
+                <div className="flex items-center space-x-4">
                   <span className="font-mono">{code.code}</span>
-                  <span className="ml-4 text-sm text-gray-500">
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={() => copyAccessCode(code.code)}
+                    className="text-gray-500 hover:text-gray-700"
+                  >
+                    <Copy className="h-4 w-4" />
+                  </Button>
+                  <span className="text-sm text-gray-500">
                     만료: {new Date(code.expiry_date).toLocaleDateString()}
                   </span>
                 </div>
