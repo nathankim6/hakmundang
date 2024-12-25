@@ -15,8 +15,6 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
   const descriptiveTypes = types.slice(22, 28);
   const contentTypes = types.slice(28);
 
-  const hasSungui = schoolTypes.some(type => type.name.includes("숭의여고"));
-
   const CategoryTitle = ({ children }: { children: React.ReactNode }) => (
     <div className="flex items-center justify-center mb-4">
       <h3 className="text-xl font-bold text-[#0EA5E9] py-2 px-6 rounded-full bg-[#D3E4FD] shadow-sm">
@@ -27,6 +25,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
 
   const TypeButton = ({ type }: { type: QuestionType }) => {
     const isSelected = selectedTypes.some(t => t.id === type.id);
+    const isSungui = type.name.includes("숭의여고");
     
     return (
       <button
@@ -38,9 +37,16 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
             : "hover:bg-[#D3E4FD] hover:text-[#0EA5E9]"
         }`}
       >
-        <span className="relative z-10 flex items-center justify-between">
-          <span>{type.name}</span>
-          {isSelected && <X className="w-4 h-4" />}
+        <span className="relative z-10 flex items-center justify-between gap-2">
+          {isSungui && (
+            <img 
+              src="/lovable-uploads/463ace92-8cb3-402e-9a22-852f579f8c25.png"
+              alt="Sungui Girls' High School Logo"
+              className="w-5 h-5 object-contain"
+            />
+          )}
+          <span className="flex-1">{type.name}</span>
+          {isSelected && <X className="w-4 h-4 flex-shrink-0" />}
         </span>
       </button>
     );
@@ -61,16 +67,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
         </div>
 
         <div className="space-y-4">
-          <div className="flex flex-col items-center gap-4">
-            {hasSungui && (
-              <img 
-                src="/lovable-uploads/463ace92-8cb3-402e-9a22-852f579f8c25.png"
-                alt="Sungui Girls' High School Logo"
-                className="w-16 h-16 object-contain"
-              />
-            )}
-            <CategoryTitle>내신형</CategoryTitle>
-          </div>
+          <CategoryTitle>내신형</CategoryTitle>
           <div className="grid gap-2">
             {schoolTypes.map((type) => (
               <TypeButton key={type.id} type={type} />
