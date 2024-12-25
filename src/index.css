@@ -133,46 +133,6 @@
   border-color: rgba(14, 165, 233, 0.4);
 }
 
-@keyframes twinkle {
-  0%, 100% { opacity: 1; transform: scale(1) translateY(-50%); }
-  50% { opacity: 0.5; transform: scale(0.8) translateY(-50%); }
-}
-
-@keyframes twinkle-delayed {
-  0%, 100% { opacity: 0.5; transform: scale(0.8) translateY(-50%); }
-  50% { opacity: 1; transform: scale(1) translateY(-50%); }
-}
-
-@keyframes borderGlow {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
-}
-
-@keyframes gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.animate-twinkle {
-  animation: twinkle 2s ease-in-out infinite;
-}
-
-.animate-twinkle-delayed {
-  animation: twinkle-delayed 2s ease-in-out infinite;
-  animation-delay: 1s;
-}
-
-.animate-gradient {
-  background-size: 200% auto;
-  animation: gradient 3s linear infinite;
-}
-
-.mask-gradient {
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask-composite: exclude;
-}
-
 /* Add new styles for text input and results */
 .input-text, .result-text {
   font-family: 'Gulim', '굴림', sans-serif;
