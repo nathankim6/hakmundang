@@ -36,27 +36,6 @@ const questionTypes: QuestionType[] = [
   { id: "insert", name: "[38-39] 문장삽입" },
   { id: "summary", name: "[40] 요약문" },
 
-  // 내신형
-  { id: "sungVocab1", name: "[숭의여고] 어휘1(동의어)" },
-  { id: "sungVocab2", name: "[숭의여고] 어휘2(예문)" },
-  { id: "sungVocab3", name: "[숭의여고] 어휘3(영영사전)" },
-  { id: "seongVocab1", name: "[성남고] 어휘1(동의어)" },
-  { id: "seongVocab2", name: "[성남고] 어휘2(예문)" },
-  { id: "seongVocab3", name: "[성남고] 어휘3(영영사전)" },
-  { id: "dangListen", name: "[당곡고] 듣기변형" },
-  { id: "contentMatch", name: "내용일치" },
-  { id: "contentMismatch", name: "내용 불일치" },
-
-  // 서술형
-  { id: "descriptiveSummary", name: "[서술형] 요약문 빈칸완성" },
-  { id: "descriptiveArrange", name: "[서술형] 배열영작(우리말O)" },
-  { id: "descriptiveConditionKor", name: "[서술형] 조건영작(우리말O)" },
-  { id: "descriptiveCondition", name: "[서술형] 조건영작(우리말X)" },
-  { id: "descriptiveVocab", name: "[서술형] 어휘" },
-  { id: "descriptiveVocabBlank", name: "[서술형] 어휘 빈칸완성" },
-  { id: "descriptiveGrammar", name: "[서술형] 어법" },
-  { id: "descriptiveConditionKor2", name: "[서술형] 조건영작(우리말O)" },
-
   // 옳은영어 콘텐츠
   { id: "synonymAntonym", name: "동의어/반의어" },
   { id: "trueOrFalse", name: "True or False" },

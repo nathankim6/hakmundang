@@ -11,10 +11,8 @@ interface TypeSelectorProps {
 
 export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelectorProps) => {
   const types = getQuestionTypes();
-  const readingTypes = types.slice(0, 15);
-  const schoolTypes = types.slice(15, 24);
-  const descriptiveTypes = types.slice(24, 32);
-  const contentTypes = types.slice(32);
+  const readingTypes = types.slice(0, 14);
+  const contentTypes = types.slice(14);
   
   const { toast } = useToast();
   const hasAccess = localStorage.getItem("hasAccess") === "true";
@@ -37,20 +35,6 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
       <TypeCategory
         title="수능형"
         types={readingTypes}
-        selectedTypes={selectedTypes}
-        hasAccess={hasAccess}
-        onTypeClick={handleTypeClick}
-      />
-      <TypeCategory
-        title="내신형"
-        types={schoolTypes}
-        selectedTypes={selectedTypes}
-        hasAccess={hasAccess}
-        onTypeClick={handleTypeClick}
-      />
-      <TypeCategory
-        title="서술형"
-        types={descriptiveTypes}
         selectedTypes={selectedTypes}
         hasAccess={hasAccess}
         onTypeClick={handleTypeClick}
