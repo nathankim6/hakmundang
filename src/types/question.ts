@@ -10,3 +10,14 @@ export type GeneratedQuestion = {
   answer?: string;
   explanation?: string;
 };
+
+export interface PassageEntry {
+  id: string;
+  text: string;
+  result: string;
+}
+
+export interface TypeEntry {
+  type: QuestionType;
+  passages: PassageEntry[];
+}
