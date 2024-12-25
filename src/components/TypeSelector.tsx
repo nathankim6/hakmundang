@@ -33,7 +33,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
       <button
         key={type.id}
         onClick={() => isSelected ? onRemove(type.id) : onSelect(type)}
-        className={`type-button w-full text-left ${
+        className={`type-button w-[280px] text-left ${
           isSelected 
             ? "selected bg-[#0EA5E9]/20 text-[#1A1F2C] font-semibold shadow-md" 
             : "hover:bg-[#D3E4FD] hover:text-[#0EA5E9]"
