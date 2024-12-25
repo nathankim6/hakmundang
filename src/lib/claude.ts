@@ -53,7 +53,7 @@ const questionTypes: QuestionType[] = [
   { id: "descriptiveVocab", name: "[서술형] 어휘" },
   { id: "descriptiveGrammar", name: "[서술형] 어법" },
 
-  // 옳은영어 콘텐츠
+  // 옳은영어 전용
   { id: "synonymAntonym", name: "동의어/반의어" },
   { id: "trueOrFalse", name: "True or False" },
   { id: "fourKings", name: "4대천왕" },

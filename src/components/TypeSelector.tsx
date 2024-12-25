@@ -11,9 +11,9 @@ interface TypeSelectorProps {
 export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelectorProps) => {
   const types = getQuestionTypes();
   const suneungTypes = types.slice(0, 15);
-  const schoolTypes = types.slice(15, 22);
-  const descriptiveTypes = types.slice(22, 28);
-  const contentTypes = types.slice(28);
+  const schoolTypes = types.slice(15, 20);
+  const descriptiveTypes = types.slice(20, 26);
+  const contentTypes = types.slice(26);
 
   const CategoryTitle = ({ children }: { children: React.ReactNode }) => (
     <div className="flex items-center justify-center mb-4">
@@ -101,7 +101,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
         </div>
 
         <div className="space-y-4">
-          <CategoryTitle>옳은영어 콘텐츠</CategoryTitle>
+          <CategoryTitle>옳은영어 전용</CategoryTitle>
           <div className="grid gap-2">
             {contentTypes.map((type) => (
               <TypeButton key={type.id} type={type} />
