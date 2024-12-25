@@ -8,9 +8,9 @@
   background: linear-gradient(
     92deg,
     #000000,
+    #000000,
     #1A1A1A,
-    #2C2C2C,
-    #1A1A1A,
+    #000000,
     #000000
   );
   background-size: 300% auto;
@@ -19,51 +19,27 @@
   color: transparent;
   position: relative;
   font-weight: 900;
-  letter-spacing: 4px;
-  text-transform: uppercase;
+  letter-spacing: 3px;
   text-shadow: 
-    0 2px 4px rgba(0, 0, 0, 0.8),
-    0 -1px 1px rgba(255, 255, 255, 0.2),
-    2px 2px 8px rgba(0, 0, 0, 0.6),
-    -2px -2px 8px rgba(255, 255, 255, 0.1);
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    -1px -1px 1px rgba(255, 255, 255, 1);
   animation: titleGradient 8s linear infinite;
-  position: relative;
-  z-index: 1;
 }
 
 .animate-title::before {
   content: '';
   position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(
-    45deg,
-    rgba(124, 58, 237, 0.2),
-    rgba(236, 72, 153, 0.2)
-  );
-  filter: blur(10px);
-  z-index: -1;
-  animation: glowPulse 3s ease-in-out infinite alternate;
-}
-
-.animate-title::after {
-  content: attr(data-text);
-  position: absolute;
-  left: 0;
   top: 0;
-  z-index: -2;
+  left: -100%;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(
-    45deg,
-    rgba(124, 58, 237, 0.1),
-    rgba(236, 72, 153, 0.1)
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    transparent 100%
   );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  filter: blur(8px);
-  animation: neonPulse 2s ease-in-out infinite alternate;
+  animation: titleShimmer 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 @keyframes titleGradient {
@@ -75,56 +51,11 @@
   }
 }
 
-@keyframes glowPulse {
+@keyframes titleShimmer {
   0% {
-    opacity: 0.5;
-    transform: scale(0.98);
+    transform: translateX(0);
   }
   100% {
-    opacity: 0.8;
-    transform: scale(1.02);
-  }
-}
-
-@keyframes neonPulse {
-  0% {
-    opacity: 0.4;
-    filter: blur(8px);
-  }
-  100% {
-    opacity: 0.8;
-    filter: blur(4px);
-  }
-}
-
-/* Add metallic reflection effect */
-.animate-title-container {
-  position: relative;
-  overflow: hidden;
-}
-
-.animate-title-container::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(
-    45deg,
-    transparent,
-    rgba(255, 255, 255, 0.1),
-    transparent
-  );
-  transform: rotate(45deg);
-  animation: reflectionSweep 4s linear infinite;
-}
-
-@keyframes reflectionSweep {
-  0% {
-    transform: translateX(-100%) translateY(-100%) rotate(45deg);
-  }
-  100% {
-    transform: translateX(100%) translateY(100%) rotate(45deg);
+    transform: translateX(200%);
   }
 }
