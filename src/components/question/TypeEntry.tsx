@@ -30,12 +30,17 @@ export const TypeEntry = ({
   const { toast } = useToast();
 
   const handleDeleteAllPassages = () => {
-    // Keep only one empty passage
-    const firstPassage = passages[0];
-    passages.slice(1).forEach(passage => {
-      onRemovePassage(type.id, passage.id);
+    // Delete all passages except the first one
+    passages.forEach((passage, index) => {
+      if (index > 0) {
+        onRemovePassage(type.id, passage.id);
+      }
     });
-    onTextChange(type.id, firstPassage.id, "");
+    
+    // Clear the text of the first passage
+    if (passages.length > 0) {
+      onTextChange(type.id, passages[0].id, "");
+    }
     
     toast({
       title: "지문 삭제 완료",
