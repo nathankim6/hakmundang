@@ -7,6 +7,7 @@ interface QuestionActionsProps {
   setIsLoading: (loading: boolean) => void;
   setProgress: (progress: { current: number; total: number }) => void;
   setSelectedTypes: (types: TypeEntry[]) => void;
+  setAbortController: (controller: AbortController | null) => void;
   toast: any;
 }
 
@@ -15,6 +16,7 @@ export const useQuestionActions = ({
   setIsLoading,
   setProgress,
   setSelectedTypes,
+  setAbortController,
   toast
 }: QuestionActionsProps) => {
   const handleGenerateAll = async () => {
@@ -36,6 +38,9 @@ export const useQuestionActions = ({
     const totalQuestions = nonEmptyTypes.reduce((sum, type) => sum + type.passages.length, 0);
     setProgress({ current: 0, total: totalQuestions });
     
+    const controller = new AbortController();
+    setAbortController(controller);
+    
     try {
       const updatedTypes = [...selectedTypes];
       let currentQuestion = 0;
@@ -45,6 +50,10 @@ export const useQuestionActions = ({
         
         for (const passage of validPassages) {
           try {
+            if (controller.signal.aborted) {
+              return;
+            }
+
             const result = await generateQuestion(typeEntry.type, passage.text);
             
             const typeIndex = updatedTypes.findIndex(t => t.type.id === typeEntry.type.id);
@@ -58,6 +67,9 @@ export const useQuestionActions = ({
             setProgress({ current: currentQuestion, total: totalQuestions });
             setSelectedTypes([...updatedTypes]);
           } catch (error) {
+            if (error.name === 'AbortError') {
+              return;
+            }
             console.error(`Error generating question:`, error);
             toast({
               title: "오류 발생",
@@ -73,14 +85,17 @@ export const useQuestionActions = ({
         description: "모든 문제가 생성되었습니다.",
       });
     } catch (error) {
-      toast({
-        title: "오류 발생",
-        description: "문제 생성 중 오류가 발생했습니다.",
-        variant: "destructive",
-      });
+      if (error.name !== 'AbortError') {
+        toast({
+          title: "오류 발생",
+          description: "문제 생성 중 오류가 발생했습니다.",
+          variant: "destructive",
+        });
+      }
     } finally {
       setIsLoading(false);
       setProgress({ current: 0, total: 0 });
+      setAbortController(null);
     }
   };
 

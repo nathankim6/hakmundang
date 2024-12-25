@@ -1,12 +1,14 @@
 import { Progress } from "@/components/ui/progress";
-import { Sparkles } from "lucide-react";
+import { Sparkles, StopCircle } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 interface LoadingProgressProps {
   current: number;
   total: number;
+  onStop: () => void;
 }
 
-export const LoadingProgress = ({ current, total }: LoadingProgressProps) => {
+export const LoadingProgress = ({ current, total, onStop }: LoadingProgressProps) => {
   const percentage = (current / total) * 100;
 
   return (
@@ -16,9 +18,19 @@ export const LoadingProgress = ({ current, total }: LoadingProgressProps) => {
           <Sparkles className="w-5 h-5 text-[#9b87f5] animate-pulse" />
           <span className="font-semibold text-[#7E69AB]">문제 생성 중...</span>
         </div>
-        <span className="text-sm text-muted-foreground">
-          {current} / {total}
-        </span>
+        <div className="flex items-center gap-4">
+          <span className="text-sm text-muted-foreground">
+            {current} / {total}
+          </span>
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={onStop}
+            className="text-destructive hover:text-destructive/80"
+          >
+            <StopCircle className="w-5 h-5" />
+          </Button>
+        </div>
       </div>
 
       <div className="relative">

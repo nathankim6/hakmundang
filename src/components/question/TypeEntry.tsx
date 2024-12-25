@@ -35,16 +35,15 @@ export const TypeEntry = ({
           <div key={passage.id} className="space-y-2">
             <div className="flex items-center justify-between">
               <h4 className="text-sm font-semibold">지문 {index + 1}</h4>
-              {passages.length > 1 && (
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  onClick={() => onRemovePassage(type.id, passage.id)}
-                  className="text-destructive hover:text-destructive/80"
-                >
-                  <Trash2 className="w-4 h-4" />
-                </Button>
-              )}
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => onRemovePassage(type.id, passage.id)}
+                className="text-destructive hover:text-destructive/80"
+                disabled={passages.length === 1}
+              >
+                <Trash2 className="w-4 h-4" />
+              </Button>
             </div>
             
             <TextInput 
@@ -57,14 +56,16 @@ export const TypeEntry = ({
         ))}
       </div>
       
-      <Button
-        variant="outline"
-        onClick={() => onAddPassage(type.id)}
-        className="w-full mt-4"
-      >
-        <Plus className="w-4 h-4 mr-2" />
-        지문 추가하기
-      </Button>
+      <div className="flex gap-2">
+        <Button
+          variant="outline"
+          onClick={() => onAddPassage(type.id)}
+          className="w-full"
+        >
+          <Plus className="w-4 h-4 mr-2" />
+          지문 추가하기
+        </Button>
+      </div>
     </div>
   );
 };

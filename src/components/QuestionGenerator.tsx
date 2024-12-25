@@ -20,6 +20,8 @@ export const QuestionGenerator = () => {
     handleRemovePassage,
     handleTextChange,
     handlePasteValues,
+    handleStopGeneration,
+    setAbortController,
     toast
   } = useQuestionState();
 
@@ -28,16 +30,16 @@ export const QuestionGenerator = () => {
     setIsLoading,
     setProgress,
     setSelectedTypes: (types) => selectedTypes.splice(0, selectedTypes.length, ...types),
+    setAbortController,
     toast
   });
 
-  // Generate questions array with sequential numbers
   const generatedQuestions = selectedTypes.flatMap((typeEntry) => 
     typeEntry.passages
       .map((passage) => ({
         id: passage.id,
         content: passage.result,
-        questionNumber: 0 // This will be assigned sequentially in GeneratedQuestions
+        questionNumber: 0
       }))
       .filter(q => q.content)
   );
@@ -84,6 +86,7 @@ export const QuestionGenerator = () => {
                   <LoadingProgress 
                     current={progress.current} 
                     total={progress.total}
+                    onStop={handleStopGeneration}
                   />
                 )}
                 
