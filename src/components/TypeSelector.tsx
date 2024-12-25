@@ -27,6 +27,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
     const isSelected = selectedTypes.some(t => t.id === type.id);
     const isSungui = type.name.includes("숭의여고");
     const isSungnam = type.name.includes("성남고");
+    const isDanggok = type.name.includes("당곡고");
     
     return (
       <button
@@ -50,6 +51,13 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
             <img 
               src="/lovable-uploads/46cde7ad-f85a-405a-867c-665d2764ed71.png"
               alt="Sungnam High School Logo"
+              className="w-5 h-5 object-contain"
+            />
+          )}
+          {isDanggok && (
+            <img 
+              src="/lovable-uploads/51f83aca-e232-429f-a8cf-b0faea121ab0.png"
+              alt="Danggok High School Logo"
               className="w-5 h-5 object-contain"
             />
           )}
