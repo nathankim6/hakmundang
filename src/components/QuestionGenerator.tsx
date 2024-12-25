@@ -59,7 +59,7 @@ export const QuestionGenerator = () => {
   return (
     <QuestionProvider value={contextValue}>
       <div className="flex gap-8">
-        <div className="w-72 flex-shrink-0 bg-[#F1F0FB]/50 p-4 rounded-lg border border-[#D6BCFA]/30">
+        <div className="w-80 flex-shrink-0 bg-[#F1F0FB]/50 p-4 rounded-lg border border-[#D6BCFA]/30">
           <TypeSelector 
             selectedTypes={selectedTypes.map(entry => entry.type)} 
             onSelect={handleTypeSelect}
