@@ -21,12 +21,12 @@ export const generateDocument = async (questions: QuestionData[]) => {
       // Join all remaining parts in case there are multiple [정답] occurrences
       const answerPart = parts.slice(1).join('[정답]').trim();
       
-      // Add to respective sections
-      questionsText += `문제 ${q.questionNumber}\n${questionPart}\n\n`;
-      answersText += `문제 ${q.questionNumber}\n[정답]${answerPart}\n\n`;
+      // Add numbered labels to both question and answer sections
+      questionsText += `[문제 ${q.questionNumber}]\n${questionPart}\n\n`;
+      answersText += `[문제 ${q.questionNumber}]\n[정답]${answerPart}\n\n`;
     } else {
       // If no [정답] is found, treat the entire content as a question
-      questionsText += `문제 ${q.questionNumber}\n${q.content.trim()}\n\n`;
+      questionsText += `[문제 ${q.questionNumber}]\n${q.content.trim()}\n\n`;
     }
   });
 
