@@ -60,13 +60,20 @@ export const QuestionGenerator = () => {
   return (
     <QuestionProvider value={contextValue}>
       <div className="flex gap-8">
-        <div className="w-80 flex-shrink-0 bg-[#F1F0FB]/50 p-4 rounded-lg border border-[#D6BCFA]/30">
-          <TypeSelector 
-            selectedTypes={selectedTypes.map(entry => entry.type)} 
-            onSelect={handleTypeSelect}
-            onRemove={handleRemoveType}
-          />
+        {/* Type Selector Frame - Now positioned on the left */}
+        <div className="w-80 flex-shrink-0">
+          <div className="sticky top-8">
+            <div className="bg-[#F1F0FB]/50 p-4 rounded-lg border border-[#D6BCFA]/30">
+              <TypeSelector 
+                selectedTypes={selectedTypes.map(entry => entry.type)} 
+                onSelect={handleTypeSelect}
+                onRemove={handleRemoveType}
+              />
+            </div>
+          </div>
         </div>
+
+        {/* Main Content Area */}
         <div className="flex-1 space-y-8">
           {selectedTypes.length > 0 ? (
             <>

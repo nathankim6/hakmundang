@@ -104,80 +104,85 @@ const Index = () => {
         <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
       </div>
 
-      <div className="max-w-7xl mx-auto space-y-3 relative z-10">
-        <div className="flex items-center justify-center space-x-6">
-          <img 
-            src="/lovable-uploads/352a49ca-b123-4f07-992a-cf59e4b7058a.png" 
-            alt="ORUN ACADEMY Logo" 
-            className="w-32 h-32 object-contain"
-          />
-          
-          <div className="flex flex-col items-center">
-            <h1 className="text-7xl font-bold animate-title tracking-wider relative group">
-              <span className="inline-block transform transition-transform group-hover:scale-105 duration-300">
-                ORUN AI QUIZ MAKER
-              </span>
-            </h1>
+      <div className="max-w-[1600px] mx-auto relative z-10">
+        <div className="flex flex-col space-y-8">
+          {/* Title Section */}
+          <div className="flex items-center justify-center space-x-6">
+            <img 
+              src="/lovable-uploads/352a49ca-b123-4f07-992a-cf59e4b7058a.png" 
+              alt="ORUN ACADEMY Logo" 
+              className="w-32 h-32 object-contain"
+            />
+            
+            <div className="flex flex-col items-center">
+              <h1 className="text-7xl font-bold animate-title tracking-wider relative group">
+                <span className="inline-block transform transition-transform group-hover:scale-105 duration-300">
+                  ORUN AI QUIZ MAKER
+                </span>
+              </h1>
+            </div>
           </div>
-        </div>
 
-        <div className="relative h-1 max-w-2xl mx-auto overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#DAA520] to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#FFD700] to-transparent animate-pulse" />
-        </div>
+          <div className="relative h-1 max-w-2xl mx-auto overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#DAA520] to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#FFD700] to-transparent animate-pulse" />
+          </div>
 
-        <div className="metallic-border rounded-xl p-4 backdrop-blur-lg bg-gradient-to-b from-white/90 to-gray-50/90">
-          {showLoginForm ? (
-            <div className="mb-3 p-4 bg-white/80 rounded-lg border border-gray-100">
-              <div className="flex space-x-2">
-                <div className="relative flex-1">
-                  <Key className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
-                  <Input
-                    type="text"
-                    placeholder="엑세스 코드를 입력하세요..."
-                    value={accessCode}
-                    onChange={(e) => setAccessCode(e.target.value)}
-                    className="pl-10"
-                  />
+          {/* Login/Config Section */}
+          <div className="metallic-border rounded-xl p-4 backdrop-blur-lg bg-gradient-to-b from-white/90 to-gray-50/90">
+            {showLoginForm ? (
+              <div className="mb-3 p-4 bg-white/80 rounded-lg border border-gray-100">
+                <div className="flex space-x-2">
+                  <div className="relative flex-1">
+                    <Key className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                    <Input
+                      type="text"
+                      placeholder="엑세스 코드를 입력하세요..."
+                      value={accessCode}
+                      onChange={(e) => setAccessCode(e.target.value)}
+                      className="pl-10"
+                    />
+                  </div>
+                  <Button onClick={handleLogin}>로그인</Button>
+                  <Button variant="outline" onClick={() => setShowLoginForm(false)}>취소</Button>
                 </div>
-                <Button onClick={handleLogin}>로그인</Button>
-                <Button variant="outline" onClick={() => setShowLoginForm(false)}>취소</Button>
               </div>
-            </div>
-          ) : (userName || expiryDate) ? (
-            <div className="mb-3 text-sm flex items-center justify-between bg-white/80 rounded-lg p-2 border-b border-gray-100">
-              <div className="flex-1 text-left space-x-4 text-[#0EA5E9]">
-                {userName && <span>사용자: {userName}</span>}
-                {expiryDate && <span>만료일: {expiryDate}</span>}
+            ) : (userName || expiryDate) ? (
+              <div className="mb-3 text-sm flex items-center justify-between bg-white/80 rounded-lg p-2 border-b border-gray-100">
+                <div className="flex-1 text-left space-x-4 text-[#0EA5E9]">
+                  {userName && <span>사용자: {userName}</span>}
+                  {expiryDate && <span>만료일: {expiryDate}</span>}
+                </div>
+                <Button 
+                  onClick={handleLogout}
+                  variant="ghost"
+                  size="sm"
+                  className="text-red-600 hover:text-red-700 hover:bg-red-50"
+                >
+                  <LogOut className="h-4 w-4 mr-1" />
+                  로그아웃
+                </Button>
               </div>
-              <Button 
-                onClick={handleLogout}
-                variant="ghost"
-                size="sm"
-                className="text-red-600 hover:text-red-700 hover:bg-red-50"
-              >
-                <LogOut className="h-4 w-4 mr-1" />
-                로그아웃
-              </Button>
-            </div>
-          ) : (
-            <div className="mb-3 flex justify-end">
-              <Button 
-                variant="ghost"
-                size="sm"
-                onClick={() => setShowLoginForm(true)}
-                className="text-[#0EA5E9] hover:text-[#0EA5E9]/80"
-              >
-                <Key className="h-4 w-4 mr-1" />
-                엑세스 코드로 로그인
-              </Button>
-            </div>
-          )}
-          <APIConfig />
-        </div>
-        
-        <div className="metallic-border rounded-xl p-8">
-          <QuestionGenerator />
+            ) : (
+              <div className="mb-3 flex justify-end">
+                <Button 
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => setShowLoginForm(true)}
+                  className="text-[#0EA5E9] hover:text-[#0EA5E9]/80"
+                >
+                  <Key className="h-4 w-4 mr-1" />
+                  엑세스 코드로 로그인
+                </Button>
+              </div>
+            )}
+            <APIConfig />
+          </div>
+          
+          {/* Main Content Section */}
+          <div className="metallic-border rounded-xl p-8">
+            <QuestionGenerator />
+          </div>
         </div>
       </div>
 
