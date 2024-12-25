@@ -7,11 +7,11 @@
 .animate-title {
   background: linear-gradient(
     92deg,
-    #2C2C2C,
-    #4A4A4A,
-    #666666,
-    #2C2C2C,
-    #4A4A4A
+    #9F9EA1,
+    #C8C8C9,
+    #F1F1F1,
+    #8E9196,
+    #9F9EA1
   );
   background-size: 300% auto;
   -webkit-background-clip: text;
@@ -21,7 +21,9 @@
   position: relative;
   font-weight: 900;
   letter-spacing: 3px;
-  -webkit-text-stroke: 2px rgba(44, 44, 44, 0.2);
+  text-shadow: 
+    0 2px 4px rgba(159, 158, 161, 0.3),
+    0 -1px 4px rgba(200, 200, 201, 0.3);
 }
 
 .animate-title::before {
@@ -34,7 +36,7 @@
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.8) 50%,
     transparent 100%
   );
   animation: shimmer 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
