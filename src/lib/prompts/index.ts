@@ -8,3 +8,4 @@ export * from './title';
 export * from './vocabulary';
 export * from './blank';
 export * from './blankMultiple';
+export * from './irrelevant';
