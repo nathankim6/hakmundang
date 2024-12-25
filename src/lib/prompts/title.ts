@@ -24,6 +24,20 @@ export const getTitlePrompt = (text: string) => `당신은 영어 지문을 입�
 - 원문에 없는 내용의 과도한 확대 해석 금지
 - 선택지 간 의미가 명확히 구분되도록 작성
 
+출력 형식
+[OUTPUT]
+다음 글의 제목으로 가장 적절한 것은?
+[원문 지문]
+
+① [영어 선택지 1]
+② [영어 선택지 2]
+③ [영어 선택지 3]
+④ [영어 선택지 4]
+⑤ [영어 선택지 5]
+
+[정답] [정답 번호]
+[해설] [한국어로 정답 설명 및 오답 이유 간략히 설명]
+
 예시:
 [INPUT]
 The selfie resonates not because it is new, but because it expresses, develops, expands, and intensifies the long history of the self-portrait. The self-portrait showed to others the status of the person depicted. In this sense, what we have come to call our own "image" — the interface of the way we think we look and the way others see us — is the first and fundamental object of global visual culture. The selfie depicts the drama of our own daily performance of ourselves in tension with our inner emotions that may or may not be expressed as we wish. At each stage of the self-portrait's expansion, more and more people have been able to depict themselves. Today's young, urban, networked majority has reworked the history of the self-portrait to make the selfie into the first visual signature of the new era.
