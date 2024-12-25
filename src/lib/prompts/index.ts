@@ -6,3 +6,4 @@ export * from './mainPoint';
 export * from './topic';
 export * from './title';
 export * from './vocabulary';
+export * from './blank';
