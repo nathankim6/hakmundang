@@ -44,6 +44,10 @@
     overflow-x: hidden;
   }
 
+  .input-text, .result-text {
+    font-family: Gulim, '굴림', sans-serif !important;
+  }
+
   body::before {
     content: '';
     position: fixed;
