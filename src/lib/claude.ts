@@ -16,8 +16,6 @@ import {
   getInsertPrompt,
   getSummaryPrompt,
   getSynonymAntonymPrompt,
-  getTrueOrFalsePrompt,
-  getWeekendClinicPrompt,
   getFourKingsPrompt
 } from "./prompts";
 
@@ -51,7 +49,7 @@ const questionTypes: QuestionType[] = [
   { id: "summaryBlank", name: "[서답형] 요약문 빈칸" },
 
   // 옳은영어 콘텐츠
-  { id: "synonymAntonym", name: "동반어 단어장" },
+  { id: "synonymAntonym", name: "동의어/반의어" },
   { id: "trueOrFalse", name: "True or False" },
   { id: "fourKings", name: "4대천왕" },
   { id: "weekendClinic", name: "주말클리닉 워크북" },
@@ -119,12 +117,6 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
         break;
       case "synonymAntonym":
         prompt = getSynonymAntonymPrompt(text);
-        break;
-      case "trueOrFalse":
-        prompt = getTrueOrFalsePrompt(text);
-        break;
-      case "weekendClinic":
-        prompt = getWeekendClinicPrompt(text);
         break;
       default:
         prompt = `Generate a question of type ${type.name} based on the following text: ${text}`;
