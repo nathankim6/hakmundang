@@ -1,6 +1,6 @@
 import { QuestionType } from "@/types/question";
 import { getQuestionTypes } from "@/lib/claude";
-import { Check } from "lucide-react";
+import { Check, Sparkles } from "lucide-react";
 
 interface TypeSelectorProps {
   selectedTypes: QuestionType[];
@@ -33,13 +33,19 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
       <button
         key={type.id}
         onClick={() => isSelected ? onRemove(type.id) : onSelect(type)}
-        className={`type-button w-full text-left ${
+        className={`type-button group relative w-full text-left transition-all duration-300 hover:scale-[1.02] ${
           isSelected 
             ? "selected bg-[#0EA5E9]/20 text-[#1A1F2C] font-semibold shadow-md" 
             : "hover:bg-[#D3E4FD] hover:text-[#0EA5E9]"
         }`}
       >
         <span className="relative z-10 flex items-center justify-between gap-2">
+          {!isSelected && (
+            <Sparkles 
+              className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-[#FFD700] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              style={{ filter: 'drop-shadow(0 0 2px rgba(255, 215, 0, 0.5))' }}
+            />
+          )}
           {isSungui && (
             <img 
               src="/lovable-uploads/463ace92-8cb3-402e-9a22-852f579f8c25.png"
@@ -63,16 +69,20 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
           )}
           <span className="flex-1">{type.name}</span>
           {isSelected && (
-            <Check className="w-4 h-4 text-[#0EA5E9]" />
+            <Check className="w-4 h-4 text-[#0EA5E9] animate-bounce" />
           )}
         </span>
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 animate-shimmer" />
       </button>
     );
   };
 
   return (
     <div className="space-y-6">
-      <h2 className="text-2xl font-bold text-[#1A1F2C] flex items-center gap-3 whitespace-nowrap">✨ Question Types</h2>
+      <h2 className="text-2xl font-bold text-[#1A1F2C] flex items-center gap-3 whitespace-nowrap">
+        <Sparkles className="w-6 h-6 text-[#FFD700] animate-pulse" />
+        Question Types
+      </h2>
       
       <div className="space-y-8">
         <div className="space-y-4">
