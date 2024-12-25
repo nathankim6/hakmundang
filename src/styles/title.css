@@ -7,11 +7,11 @@
 .animate-title {
   background: linear-gradient(
     92deg,
-    #E8E8E8,
-    #C0C0C0,
-    #A9A9A9,
-    #E8E8E8,
-    #C0C0C0
+    #2C2C2C,
+    #4A4A4A,
+    #666666,
+    #2C2C2C,
+    #4A4A4A
   );
   background-size: 300% auto;
   -webkit-background-clip: text;
@@ -21,10 +21,10 @@
   position: relative;
   font-weight: 900;
   letter-spacing: 3px;
-  -webkit-text-stroke: 2px rgba(192, 192, 192, 0.2);
+  -webkit-text-stroke: 2px rgba(44, 44, 44, 0.2);
   text-shadow: 
-    0 2px 4px rgba(192, 192, 192, 0.3),
-    0 -1px 4px rgba(232, 232, 232, 0.3);
+    0 2px 4px rgba(44, 44, 44, 0.3),
+    0 -1px 4px rgba(74, 74, 74, 0.3);
   transform-style: preserve-3d;
   transition: all 0.3s ease;
 }
@@ -39,7 +39,7 @@
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(232, 232, 232, 0.6) 50%,
+    rgba(74, 74, 74, 0.6) 50%,
     transparent 100%
   );
   animation: shimmer 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
@@ -48,8 +48,8 @@
 .animate-title:hover {
   transform: perspective(1000px) rotateX(10deg) scale(1.05);
   text-shadow: 
-    0 4px 8px rgba(192, 192, 192, 0.4),
-    0 -2px 8px rgba(232, 232, 232, 0.4);
+    0 4px 8px rgba(44, 44, 44, 0.4),
+    0 -2px 8px rgba(74, 74, 74, 0.4);
 }
 
 /* Decorative line styles */
@@ -64,9 +64,9 @@
   background: linear-gradient(
     90deg,
     transparent,
-    #C0C0C0,
-    #E8E8E8,
-    #C0C0C0,
+    #4A4A4A,
+    #666666,
+    #4A4A4A,
     transparent
   );
   animation: lineShimmer 2s ease-in-out infinite;
