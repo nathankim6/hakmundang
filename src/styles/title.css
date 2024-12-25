@@ -7,23 +7,22 @@
 .animate-title {
   background: linear-gradient(
     92deg,
-    #9F9EA1,
-    #C8C8C9,
-    #F1F1F1,
-    #8E9196,
-    #9F9EA1
+    #4A4A4A,
+    #6E6E6E,
+    #8E8E8E,
+    #6E6E6E,
+    #4A4A4A
   );
-  background-size: 300% auto;
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
-  animation: shine 8s linear infinite;
+  color: #4A4A4A;
   position: relative;
   font-weight: 900;
   letter-spacing: 3px;
   text-shadow: 
-    0 2px 4px rgba(159, 158, 161, 0.3),
-    0 -1px 4px rgba(200, 200, 201, 0.3);
+    2px 2px 4px rgba(0, 0, 0, 0.2),
+    -1px -1px 1px rgba(255, 255, 255, 0.5);
+  animation: shine 8s linear infinite;
 }
 
 .animate-title::before {
