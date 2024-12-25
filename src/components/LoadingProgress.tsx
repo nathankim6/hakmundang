@@ -12,11 +12,11 @@ export const LoadingProgress = ({ current, total, onStop }: LoadingProgressProps
   const percentage = (current / total) * 100;
 
   return (
-    <div className="space-y-4 p-6 rounded-lg border-2 border-[#9b87f5]/20 relative bg-[#F8F7FF]">
+    <div className="space-y-4 p-6 rounded-lg border-2 border-[#0EA5E9]/20 relative bg-[#F8F7FF]">
       <div className="flex items-center justify-between mb-2">
         <div className="flex items-center gap-2">
-          <Sparkles className="w-5 h-5 text-[#9b87f5] animate-pulse" />
-          <span className="font-semibold text-[#7E69AB]">문제 생성 중...</span>
+          <Sparkles className="w-5 h-5 text-[#0EA5E9] animate-pulse" />
+          <span className="font-semibold text-[#403E43]">문제 생성 중...</span>
         </div>
         <div className="flex items-center gap-4">
           <span className="text-sm text-muted-foreground">
@@ -36,7 +36,7 @@ export const LoadingProgress = ({ current, total, onStop }: LoadingProgressProps
       <div className="relative">
         <Progress 
           value={percentage} 
-          className="h-2 bg-[#E5DEFF]"
+          className="h-2 bg-[#D3E4FD]"
         />
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
           <div 
@@ -56,7 +56,7 @@ export const LoadingProgress = ({ current, total, onStop }: LoadingProgressProps
           {[...Array(3)].map((_, i) => (
             <div
               key={i}
-              className="w-2 h-2 rounded-full bg-[#9b87f5]/60 animate-bounce"
+              className="w-2 h-2 rounded-full bg-[#0EA5E9]/60 animate-bounce"
               style={{
                 animationDelay: `${i * 0.2}s`
               }}
