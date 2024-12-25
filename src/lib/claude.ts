@@ -15,7 +15,8 @@ import {
   getOrderPrompt,
   getInsertPrompt,
   getSummaryPrompt,
-  getSynonymAntonymPrompt
+  getSynonymAntonymPrompt,
+  getFourKingsPrompt
 } from "./prompts";
 
 const questionTypes: QuestionType[] = [
@@ -43,6 +44,8 @@ const questionTypes: QuestionType[] = [
   { id: "seongVocab2", name: "[성남고] 어휘2(예문)" },
   { id: "seongVocab3", name: "[성남고] 어휘3(영영사전)" },
   { id: "dangListen", name: "[당곡고] 듣기변형" },
+  { id: "contentMatch", name: "내용일치" },
+  { id: "contentMismatch", name: "내용 불일치" },
 
   // 서술형
   { id: "descriptiveSummary", name: "[서술형] 요약문 빈칸완성" },
@@ -59,9 +62,7 @@ const questionTypes: QuestionType[] = [
   { id: "trueOrFalse", name: "True or False" },
   { id: "fourKings", name: "4대천왕" },
   { id: "weekendClinic", name: "주말클리닉 워크북" },
-  { id: "philosophersStone", name: "Philosopher's Stone" },
-  { id: "contentMatch", name: "내용일치" },
-  { id: "contentMismatch", name: "내용 불일치" }
+  { id: "philosophersStone", name: "Philosopher's Stone" }
 ];
 
 export const getQuestionTypes = () => questionTypes;

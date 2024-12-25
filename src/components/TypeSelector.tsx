@@ -12,9 +12,9 @@ interface TypeSelectorProps {
 export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelectorProps) => {
   const types = getQuestionTypes();
   const readingTypes = types.slice(0, 15);
-  const schoolTypes = types.slice(15, 22);
-  const descriptiveTypes = types.slice(22, 28);
-  const contentTypes = types.slice(28);
+  const schoolTypes = types.slice(15, 24);
+  const descriptiveTypes = types.slice(24, 32);
+  const contentTypes = types.slice(32);
   
   const { toast } = useToast();
   const hasAccess = localStorage.getItem("hasAccess") === "true";
