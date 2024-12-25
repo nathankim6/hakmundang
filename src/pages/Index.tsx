@@ -118,9 +118,6 @@ const Index = () => {
                 ORUN AI QUIZ MAKER
               </span>
             </h1>
-            <h2 className="text-2xl font-bold mt-2 tracking-wide text-gray-700">
-              옳은영어 AI 퀴즈메이커
-            </h2>
           </div>
         </div>
 
