@@ -54,24 +54,26 @@
 .animate-title {
   background: linear-gradient(
     92deg,
-    #666666,
-    #9CA3AF,
-    #D1D5DB,
-    #9CA3AF,
-    #666666
+    #4F46E5,
+    #7C3AED,
+    #EC4899,
+    #7C3AED,
+    #4F46E5
   );
   background-size: 300% auto;
   -webkit-background-clip: text;
   background-clip: text;
-  color: #666666;
-  animation: shine 6s linear infinite;
+  color: transparent;
+  animation: shine 8s linear infinite;
   position: relative;
   font-weight: 900;
-  letter-spacing: 2px;
-  -webkit-text-stroke: 1px rgba(156, 163, 175, 0.3);
+  letter-spacing: 3px;
+  -webkit-text-stroke: 2px rgba(124, 58, 237, 0.2);
   text-shadow: 
-    0 1px 2px rgba(255, 255, 255, 0.7),
-    0 -1px 2px rgba(0, 0, 0, 0.1);
+    0 2px 4px rgba(124, 58, 237, 0.3),
+    0 -1px 4px rgba(236, 72, 153, 0.3);
+  transform-style: preserve-3d;
+  transition: all 0.3s ease;
 }
 
 .animate-title::before {
@@ -84,10 +86,17 @@
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.4) 50%,
     transparent 100%
   );
-  animation: shimmer 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  animation: shimmer 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-title:hover {
+  transform: perspective(1000px) rotateX(10deg) scale(1.05);
+  text-shadow: 
+    0 4px 8px rgba(124, 58, 237, 0.4),
+    0 -2px 8px rgba(236, 72, 153, 0.4);
 }
 
 @keyframes shine {
