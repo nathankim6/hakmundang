@@ -54,12 +54,14 @@ const questionTypes: QuestionType[] = [
   { id: "descriptiveGrammar", name: "[서술형] 어법" },
   { id: "descriptiveConditionKor2", name: "[서술형] 조건영작(우리말O)" },
 
-  // 옳은영어 전용
+  // 옳은영어 콘텐츠
   { id: "synonymAntonym", name: "동의어/반의어" },
   { id: "trueOrFalse", name: "True or False" },
   { id: "fourKings", name: "4대천왕" },
-  { id: "weekendClinic", name: "주말클리닉" },
-  { id: "philosophersStone", name: "Philosopher's Stone" }
+  { id: "weekendClinic", name: "주말클리닉 워크북" },
+  { id: "philosophersStone", name: "Philosopher's Stone" },
+  { id: "contentMatch", name: "내용일치" },
+  { id: "contentMismatch", name: "내용 불일치" }
 ];
 
 export const getQuestionTypes = () => questionTypes;

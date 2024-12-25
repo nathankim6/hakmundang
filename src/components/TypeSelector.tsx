@@ -56,7 +56,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
         onTypeClick={handleTypeClick}
       />
       <TypeCategory
-        title="옳은영어 전용"
+        title="옳은영어 콘텐츠"
         types={contentTypes}
         selectedTypes={selectedTypes}
         hasAccess={hasAccess}
