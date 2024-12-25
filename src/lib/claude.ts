@@ -36,6 +36,13 @@ const questionTypes: QuestionType[] = [
   { id: "insert", name: "[38-39] 문장삽입" },
   { id: "summary", name: "[40] 요약문" },
 
+  // 내신형
+  { id: "sungseongVocab1", name: "[숭의성남] 어휘1(동반어)" },
+  { id: "sungseongVocab2", name: "[숭의성남] 어휘2(예문)" },
+  { id: "sungseongVocab3", name: "[숭의성남] 어휘3(영영사전)" },
+  { id: "sungReference", name: "[숭의] 지칭추론" },
+  { id: "sungExternal", name: "[숭의] 외부지문" },
+
   // 옳은영어 콘텐츠
   { id: "synonymAntonym", name: "동의어/반의어" },
   { id: "trueOrFalse", name: "True or False" },
