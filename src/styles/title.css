@@ -13,16 +13,17 @@
     #6E6E6E,
     #4A4A4A
   );
+  background-size: 300% auto;
   -webkit-background-clip: text;
   background-clip: text;
-  color: #4A4A4A;
+  color: transparent;
   position: relative;
   font-weight: 900;
   letter-spacing: 3px;
   text-shadow: 
     2px 2px 4px rgba(0, 0, 0, 0.2),
     -1px -1px 1px rgba(255, 255, 255, 0.5);
-  animation: shine 8s linear infinite;
+  animation: titleGradient 8s linear infinite;
 }
 
 .animate-title::before {
@@ -38,10 +39,10 @@
     rgba(255, 255, 255, 0.8) 50%,
     transparent 100%
   );
-  animation: shimmer 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  animation: titleShimmer 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
-@keyframes shine {
+@keyframes titleGradient {
   0% {
     background-position: 0% 50%;
   }
@@ -50,7 +51,7 @@
   }
 }
 
-@keyframes shimmer {
+@keyframes titleShimmer {
   0% {
     transform: translateX(0);
   }
