@@ -1,12 +1,11 @@
 import * as XLSX from 'xlsx';
 import jsPDF from 'jspdf';
 import 'jspdf-autotable';
-import { WordEntry } from '@/types/word';
 
 // Add Korean font support
-import NanumGothic from '@/fonts/NanumGothic-Regular.ttf';
+import NanumGothic from '../fonts/NanumGothic-Regular.ttf';
 
-export const exportToExcel = (words: WordEntry[], toast: any) => {
+export const exportToExcel = (words: any[], toast: any) => {
   const worksheet = XLSX.utils.json_to_sheet(words);
   const workbook = XLSX.utils.book_new();
   XLSX.utils.book_append_sheet(workbook, worksheet, "동반어 목록");
@@ -19,7 +18,7 @@ export const exportToExcel = (words: WordEntry[], toast: any) => {
   });
 };
 
-export const exportToPDF = (words: WordEntry[], toast: any) => {
+export const exportToPDF = (words: any[], toast: any) => {
   const doc = new jsPDF();
   
   // Add Korean font
