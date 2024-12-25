@@ -1,6 +1,6 @@
 import { QuestionType } from "@/types/question";
 import { getQuestionTypes } from "@/lib/claude";
-import { X } from "lucide-react";
+import { Check, X } from "lucide-react";
 
 interface TypeSelectorProps {
   selectedTypes: QuestionType[];
@@ -62,7 +62,12 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
             />
           )}
           <span className="flex-1">{type.name}</span>
-          {isSelected && <X className="w-4 h-4 flex-shrink-0" />}
+          {isSelected && (
+            <div className="flex items-center gap-2">
+              <Check className="w-4 h-4 text-[#0EA5E9]" />
+              <X className="w-4 h-4 flex-shrink-0" />
+            </div>
+          )}
         </span>
       </button>
     );
