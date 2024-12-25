@@ -108,7 +108,7 @@ export const QuestionGenerator = () => {
               />
               <div className="text-center space-y-2">
                 <h3 className="text-xl font-semibold text-[#1A1F2C]">문제 유형을 선택해주세요</h3>
-                <p className="text-sm text-[#6B7280]">왼쪽 메뉴에서 원하시는 문제 유형을 선택하시면<br />지문 입력 섹션이 나타납니다.</p>
+                <p className="text-sm text-[#6B7280]">왼쪽 메뉴에서 원하는 문제 유형을 선택하면<br />지문 입력 및 문제생성 기능이 활성됩니다.</p>
               </div>
             </div>
           )}
