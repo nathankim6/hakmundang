@@ -13,7 +13,8 @@ import {
   getBlankMultiplePrompt,
   getIrrelevantPrompt,
   getOrderPrompt,
-  getInsertPrompt
+  getInsertPrompt,
+  getSummaryPrompt
 } from "./prompts";
 
 const questionTypes: QuestionType[] = [
@@ -116,6 +117,9 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
         break;
       case "insert":
         prompt = getInsertPrompt(text);
+        break;
+      case "summary":
+        prompt = getSummaryPrompt(text);
         break;
       default:
         prompt = `Generate a question of type ${type.name} based on the following text: ${text}`;
