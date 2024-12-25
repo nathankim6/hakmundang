@@ -7,11 +7,11 @@
 .animate-title {
   background: linear-gradient(
     92deg,
+    #000000,
+    #1A1A1A,
     #2A2A2A,
-    #4A4A4A,
-    #6E6E6E,
-    #4A4A4A,
-    #2A2A2A
+    #1A1A1A,
+    #000000
   );
   background-size: 300% auto;
   -webkit-background-clip: text;
@@ -21,8 +21,8 @@
   font-weight: 900;
   letter-spacing: 3px;
   text-shadow: 
-    2px 2px 4px rgba(0, 0, 0, 0.4),
-    -1px -1px 1px rgba(255, 255, 255, 0.7);
+    2px 2px 4px rgba(0, 0, 0, 0.6),
+    -1px -1px 1px rgba(255, 255, 255, 0.9);
   animation: titleGradient 8s linear infinite;
 }
 
