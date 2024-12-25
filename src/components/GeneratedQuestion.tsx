@@ -7,8 +7,11 @@ interface GeneratedQuestionProps {
 
 export const GeneratedQuestion = ({ content, questionNumber }: GeneratedQuestionProps) => {
   const parts = content.split('[정답]');
-  const questionPart = parts[0].trim();
+  let questionPart = parts[0].trim();
   const answerPart = parts.length > 1 ? '[정답]' + parts.slice(1).join('[정답]').trim() : '';
+
+  // Remove "[OUTPUT]" from the question part if it exists
+  questionPart = questionPart.replace('[OUTPUT]', '').trim();
 
   return (
     <div className="mb-8">
