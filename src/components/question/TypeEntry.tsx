@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { Plus, Trash2 } from "lucide-react";
+import { Plus, Trash2, X } from "lucide-react";
 import { TextInput } from "../TextInput";
 import { QuestionType } from "@/types/question";
+import { useToast } from "@/components/ui/use-toast";
 
 interface PassageEntry {
   id: string;
@@ -26,9 +27,38 @@ export const TypeEntry = ({
   onTextChange,
   onPasteValues,
 }: TypeEntryProps) => {
+  const { toast } = useToast();
+
+  const handleDeleteAllPassages = () => {
+    // Keep only one empty passage
+    const firstPassage = passages[0];
+    passages.slice(1).forEach(passage => {
+      onRemovePassage(type.id, passage.id);
+    });
+    onTextChange(type.id, firstPassage.id, "");
+    
+    toast({
+      title: "지문 삭제 완료",
+      description: "모든 지문이 삭제되었습니다.",
+    });
+  };
+
   return (
     <div className="space-y-6 p-6 rounded-lg border-2 border-[#9b87f5]/20 relative bg-[#F8F7FF]">
-      <h3 className="text-xl font-bold text-[#7E69AB]">{type.name}</h3>
+      <div className="flex items-center justify-between">
+        <h3 className="text-xl font-bold text-[#7E69AB]">{type.name}</h3>
+        {passages.length > 1 && (
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={handleDeleteAllPassages}
+            className="text-destructive hover:text-destructive/80 hover:bg-destructive/10"
+          >
+            <X className="w-4 h-4 mr-1" />
+            전체 삭제
+          </Button>
+        )}
+      </div>
       
       <div className="space-y-4">
         {passages.map((passage, index) => (
