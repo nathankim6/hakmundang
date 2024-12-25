@@ -55,9 +55,7 @@
   background: linear-gradient(
     to right,
     #000000,
-    #444444,
-    #000000,
-    #444444,
+    #333333,
     #000000
   );
   background-size: 200% auto;
@@ -66,10 +64,9 @@
   color: transparent;
   animation: shine 3s linear infinite;
   font-weight: 900;
-  text-shadow: 
-    0 4px 8px rgba(0, 0, 0, 0.7),
-    0 0 15px rgba(0, 0, 0, 0.2);
-  letter-spacing: 3px;
+  text-shadow: none;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
 }
 
 @keyframes shine {
