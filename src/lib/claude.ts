@@ -17,6 +17,7 @@ import {
   getSummaryPrompt,
   getSynonymAntonymPrompt,
   getTrueOrFalsePrompt,
+  getWeekendClinicPrompt,
   getFourKingsPrompt
 } from "./prompts";
 
@@ -121,6 +122,9 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
         break;
       case "trueOrFalse":
         prompt = getTrueOrFalsePrompt(text);
+        break;
+      case "weekendClinic":
+        prompt = getWeekendClinicPrompt(text);
         break;
       default:
         prompt = `Generate a question of type ${type.name} based on the following text: ${text}`;
