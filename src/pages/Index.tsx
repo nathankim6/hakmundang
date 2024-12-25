@@ -112,11 +112,16 @@ const Index = () => {
             className="w-32 h-32 object-contain"
           />
           
-          <h1 className="text-7xl font-bold animate-title tracking-wider relative group">
-            <span className="inline-block transform transition-transform group-hover:scale-105 duration-300">
-              ORUN AI QUIZ MAKER
-            </span>
-          </h1>
+          <div className="flex flex-col items-center space-y-2">
+            <h1 className="text-7xl font-bold tracking-wider relative group platinum-title">
+              <span className="inline-block transform transition-transform group-hover:scale-105 duration-300">
+                ORUN AI QUIZ MAKER
+              </span>
+            </h1>
+            <h2 className="text-3xl font-bold tracking-wider text-gray-700">
+              옳은영어 AI 퀴즈메이커
+            </h2>
+          </div>
         </div>
 
         <div className="relative h-1 max-w-2xl mx-auto overflow-hidden">
