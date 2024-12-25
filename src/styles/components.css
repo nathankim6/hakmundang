@@ -1,0 +1,59 @@
+.metallic-border {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(124, 58, 237, 0.1);
+  box-shadow: 
+    0 4px 20px rgba(124, 58, 237, 0.05),
+    inset 0 0 20px rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.metallic-border:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 8px 30px rgba(124, 58, 237, 0.1),
+    inset 0 0 30px rgba(255, 255, 255, 0.6);
+}
+
+.type-button {
+  @apply px-4 py-3 rounded-lg transition-all duration-300;
+  background: linear-gradient(145deg, #ffffff, #f8f8f8);
+  box-shadow: 
+    0 4px 15px rgba(124, 58, 237, 0.05),
+    inset 0 0 10px rgba(255, 255, 255, 0.5);
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.type-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 8px 25px rgba(124, 58, 237, 0.1),
+    inset 0 0 15px rgba(255, 255, 255, 0.6);
+  border-color: rgba(124, 58, 237, 0.2);
+}
+
+.type-button.selected {
+  background: linear-gradient(145deg, #f0f0f0, #e8e8e8);
+  box-shadow: 
+    0 0 20px rgba(124, 58, 237, 0.1),
+    inset 0 0 15px rgba(255, 255, 255, 0.4);
+  border-color: rgba(124, 58, 237, 0.4);
+}
+
+.gradient-border {
+  position: relative;
+  background: linear-gradient(to right, #E5DEFF, #FFDEE2, #FDE1D3);
+  padding: 1px;
+  border-radius: 0.5rem;
+}
+
+.gradient-border > * {
+  background: white;
+  border-radius: inherit;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+}

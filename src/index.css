@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+@import './styles/animations.css';
+@import './styles/title.css';
+@import './styles/components.css';
 
 @tailwind base;
 @tailwind components;
@@ -7,32 +10,23 @@
 :root {
   --background: 0 0% 100%;
   --foreground: 240 10% 3.9%;
-
   --card: 0 0% 98%;
   --card-foreground: 240 10% 3.9%;
-
   --popover: 0 0% 100%;
   --popover-foreground: 240 10% 3.9%;
-
-  --primary: 240 5.9% 10%;
+  --primary: 259 94% 51%;
   --primary-foreground: 0 0% 98%;
-
   --secondary: 240 4.8% 95.9%;
   --secondary-foreground: 240 5.9% 10%;
-
   --muted: 240 4.8% 95.9%;
   --muted-foreground: 240 3.8% 46.1%;
-
-  --accent: 240 4.8% 95.9%;
-  --accent-foreground: 240 5.9% 10%;
-
+  --accent: 259 94% 51%;
+  --accent-foreground: 0 0% 98%;
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 0 0% 98%;
-
   --border: 240 5.9% 90%;
   --input: 240 5.9% 90%;
-  --ring: 240 5.9% 10%;
-
+  --ring: 259 94% 51%;
   --radius: 0.75rem;
 }
 
@@ -44,160 +38,23 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Orbitron', sans-serif;
-    background: linear-gradient(to bottom, #ffffff, #f8f8f8);
+    background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
   }
-}
 
-.animate-title {
-  background: linear-gradient(
-    92deg,
-    #4F46E5,
-    #7C3AED,
-    #EC4899,
-    #7C3AED,
-    #4F46E5
-  );
-  background-size: 300% auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: shine 8s linear infinite;
-  position: relative;
-  font-weight: 900;
-  letter-spacing: 3px;
-  -webkit-text-stroke: 2px rgba(124, 58, 237, 0.2);
-  text-shadow: 
-    0 2px 4px rgba(124, 58, 237, 0.3),
-    0 -1px 4px rgba(236, 72, 153, 0.3);
-  transform-style: preserve-3d;
-  transition: all 0.3s ease;
-}
-
-.animate-title::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    rgba(255, 255, 255, 0.4) 50%,
-    transparent 100%
-  );
-  animation: shimmer 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-}
-
-.animate-title:hover {
-  transform: perspective(1000px) rotateX(10deg) scale(1.05);
-  text-shadow: 
-    0 4px 8px rgba(124, 58, 237, 0.4),
-    0 -2px 8px rgba(236, 72, 153, 0.4);
-}
-
-@keyframes shine {
-  to {
-    background-position: -300% center;
-  }
-}
-
-@keyframes shimmer {
-  to {
-    left: 200%;
-  }
-}
-
-.metallic-border {
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 
-    0 4px 15px rgba(0, 0, 0, 0.05),
-    inset 0 0 20px rgba(255, 255, 255, 0.5);
-  position: relative;
-  overflow: hidden;
-}
-
-.metallic-button {
-  background: linear-gradient(145deg, #ffffff, #f0f0f0);
-  transition: all 0.3s ease;
-  box-shadow: 
-    0 4px 15px rgba(0, 0, 0, 0.1),
-    inset 0 0 20px rgba(255, 255, 255, 0.5);
-  position: relative;
-  overflow: hidden;
-}
-
-.metallic-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 
-    0 8px 25px rgba(0, 0, 0, 0.15),
-    inset 0 0 20px rgba(255, 255, 255, 0.6);
-}
-
-.type-button {
-  @apply px-4 py-3 rounded-lg transition-all duration-300;
-  background: linear-gradient(145deg, #ffffff, #f8f8f8);
-  box-shadow: 
-    0 4px 15px rgba(0, 0, 0, 0.05),
-    inset 0 0 10px rgba(255, 255, 255, 0.5);
-  color: #333333;
-  position: relative;
-  overflow: hidden;
-  border: 2px solid transparent;
-}
-
-.type-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 
-    0 8px 25px rgba(0, 0, 0, 0.1),
-    inset 0 0 15px rgba(255, 255, 255, 0.6);
-  border-color: rgba(14, 165, 233, 0.2);
-}
-
-.type-button.selected {
-  background: linear-gradient(145deg, #f0f0f0, #e8e8e8);
-  box-shadow: 
-    0 0 20px rgba(0, 0, 0, 0.1),
-    inset 0 0 15px rgba(255, 255, 255, 0.4);
-  border-color: rgba(14, 165, 233, 0.4);
-}
-
-/* Add new styles for text input and results */
-.input-text, .result-text {
-  font-family: 'Gulim', '굴림', sans-serif;
-}
-
-.gradient-border {
-  position: relative;
-  background: linear-gradient(to right, #E5DEFF, #FFDEE2, #FDE1D3);
-  padding: 1px;
-  border-radius: 0.5rem;
-}
-
-.gradient-border > * {
-  background: white;
-  border-radius: inherit;
-}
-
-.gradient-bg {
-  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
-}
-
-@keyframes spin-slow {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-@layer utilities {
-  .animate-shimmer {
-    animation: shimmer 2s infinite;
-  }
-  
-  .animate-spin-slow {
-    animation: spin-slow 3s linear infinite;
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+      radial-gradient(circle at 20% 20%, rgba(124, 58, 237, 0.03) 0%, transparent 70%),
+      radial-gradient(circle at 80% 80%, rgba(236, 72, 153, 0.03) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: -1;
   }
 }
