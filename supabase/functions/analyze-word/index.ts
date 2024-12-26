@@ -18,18 +18,27 @@ serve(async (req) => {
     const apiKey = Deno.env.get('CLAUDE_API_KEY');
 
     if (!apiKey) {
-      throw new Error('CLAUDE_API_KEY is not set');
+      console.error('CLAUDE_API_KEY is not set');
+      throw new Error('CLAUDE_API_KEY environment variable is not set');
     }
 
     if (!word) {
+      console.error('Word parameter is missing');
       throw new Error('Word parameter is required');
     }
 
     console.log(`Starting analysis for word: ${word}`);
 
-    const anthropic = new Anthropic({
-      apiKey: apiKey,
-    });
+    // Initialize Anthropic client with proper error handling
+    let anthropic;
+    try {
+      anthropic = new Anthropic({
+        apiKey: apiKey,
+      });
+    } catch (error) {
+      console.error('Failed to initialize Anthropic client:', error);
+      throw new Error('Failed to initialize AI service');
+    }
 
     const response = await anthropic.messages.create({
       model: "claude-3-sonnet-20240229",
