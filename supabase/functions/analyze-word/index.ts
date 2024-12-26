@@ -40,6 +40,11 @@ serve(async (req) => {
       throw new Error('Failed to initialize AI service');
     }
 
+    // Ensure the client is properly initialized before using it
+    if (!anthropic) {
+      throw new Error('Failed to initialize AI service');
+    }
+
     const response = await anthropic.messages.create({
       model: "claude-3-sonnet-20240229",
       max_tokens: 1000,
