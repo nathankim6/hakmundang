@@ -1,9 +1,10 @@
 export interface TableRowData {
   headword: string;
   meaning: string;
-  difficulty: 1 | 2 | 3; // 1=easy, 2=medium, 3=hard
+  difficulty: number;
   partOfSpeech: string;
   example?: string;
+  exampleTranslation?: string;
   synonyms: string[];
   synonymMeanings: string[];
   antonyms: string[];
