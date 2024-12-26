@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Button } from '@/components/ui/button';
-import { Plus } from 'lucide-react';
-import { Info } from 'lucide-react';
+import { Plus, Info } from 'lucide-react';
 import { TextEntry } from './sentence-matcher/TextEntry';
 import { MatchedTable } from './sentence-matcher/MatchedTable';
 import { splitIntoSentences, matchSentences } from './sentence-matcher/TextProcessor';
@@ -14,11 +13,16 @@ interface TextPair {
   korean: string;
 }
 
+interface MatchedSet {
+  setNumber: number;
+  sentences: Array<{ english: string; korean: string }>;
+}
+
 export const SentenceMatcher = () => {
   const [textPairs, setTextPairs] = useState<TextPair[]>([
     { id: '1', english: '', korean: '' }
   ]);
-  const [matchedSentences, setMatchedSentences] = useState<Array<{english: string, korean: string}>>([]);
+  const [matchedSets, setMatchedSets] = useState<MatchedSet[]>([]);
   const [info, setInfo] = useState('');
 
   const addNewPair = () => {
@@ -26,6 +30,12 @@ export const SentenceMatcher = () => {
       ...prev,
       { id: String(prev.length + 1), english: '', korean: '' }
     ]);
+  };
+
+  const deletePair = (id: string) => {
+    if (textPairs.length > 1) {
+      setTextPairs(prev => prev.filter(pair => pair.id !== id));
+    }
   };
 
   const updateText = (id: string, field: 'english' | 'korean', value: string) => {
@@ -37,21 +47,27 @@ export const SentenceMatcher = () => {
   };
 
   const handleMatch = () => {
-    let allEnglishSentences: string[] = [];
-    let allKoreanSentences: string[] = [];
+    const newMatchedSets: MatchedSet[] = [];
+    let totalSentences = 0;
 
-    textPairs.forEach(pair => {
-      if (pair.english.trim()) {
-        allEnglishSentences = allEnglishSentences.concat(splitIntoSentences(pair.english));
-      }
-      if (pair.korean.trim()) {
-        allKoreanSentences = allKoreanSentences.concat(splitIntoSentences(pair.korean));
+    textPairs.forEach((pair, index) => {
+      if (pair.english.trim() && pair.korean.trim()) {
+        const englishSentences = splitIntoSentences(pair.english);
+        const koreanSentences = splitIntoSentences(pair.korean);
+        const matched = matchSentences(englishSentences, koreanSentences);
+        
+        if (matched.length > 0) {
+          newMatchedSets.push({
+            setNumber: index + 1,
+            sentences: matched
+          });
+          totalSentences += matched.length;
+        }
       }
     });
 
-    const matched = matchSentences(allEnglishSentences, allKoreanSentences);
-    setMatchedSentences(matched);
-    setInfo(`총 ${matched.length}개의 문장이 매칭되었습니다.`);
+    setMatchedSets(newMatchedSets);
+    setInfo(`총 ${newMatchedSets.length}개의 지문에서 ${totalSentences}개의 문장이 매칭되었습니다.`);
   };
 
   return (
@@ -65,12 +81,14 @@ export const SentenceMatcher = () => {
                 value={pair.english}
                 onChange={(value) => updateText(pair.id, 'english', value)}
                 onEnterPress={addNewPair}
+                onDelete={() => deletePair(pair.id)}
                 placeholder="영어 텍스트를 입력하세요..."
               />
               <TextEntry
                 label={`한글 텍스트 ${index + 1}`}
                 value={pair.korean}
                 onChange={(value) => updateText(pair.id, 'korean', value)}
+                onDelete={() => deletePair(pair.id)}
                 placeholder="한글 텍스트를 입력하세요..."
               />
             </div>
@@ -101,8 +119,8 @@ export const SentenceMatcher = () => {
             </Alert>
           )}
 
-          {matchedSentences.length > 0 && (
-            <MatchedTable sentences={matchedSentences} />
+          {matchedSets.length > 0 && (
+            <MatchedTable matchedSets={matchedSets} />
           )}
         </div>
       </CardContent>
