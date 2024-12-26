@@ -11,27 +11,44 @@ const styles = StyleSheet.create({
     fontSize: 24,
     marginBottom: 20,
     textAlign: 'center',
+    color: '#4A21EF',
+    fontWeight: 'bold'
   },
   tableContainer: {
     width: '100%',
     display: 'flex',
     flexDirection: 'column',
     borderWidth: 1,
-    borderColor: '#000',
+    borderColor: '#E2E8F0',
   },
   row: {
     display: 'flex',
     flexDirection: 'row',
     borderBottomWidth: 1,
-    borderBottomColor: '#000',
+    borderBottomColor: '#E2E8F0',
     minHeight: 24,
-    flexWrap: 'wrap',
+    padding: 8,
+    backgroundColor: '#FFFFFF',
+  },
+  headerRow: {
+    display: 'flex',
+    flexDirection: 'row',
+    borderBottomWidth: 1,
+    borderBottomColor: '#E2E8F0',
+    backgroundColor: '#F8F9FA',
+    padding: 12,
+  },
+  headerCell: {
+    padding: 8,
+    fontSize: 12,
+    fontWeight: 'bold',
+    color: '#1A1A1A',
   },
   cell: {
-    padding: 5,
+    padding: 8,
     fontSize: 10,
     borderRightWidth: 1,
-    borderRightColor: '#000',
+    borderRightColor: '#E2E8F0',
   },
 });
 
@@ -44,18 +61,15 @@ export const VocabularyPDF = ({ vocabularyList }: Props) => (
     <Page size="A4" style={styles.page}>
       <Text style={styles.title}>Vocabulary List</Text>
       <View style={styles.tableContainer}>
-        <View style={styles.row}>
-          <View style={[styles.cell, { width: '25%' }]}>
-            <Text>Word / Part of Speech / Definition</Text>
+        <View style={styles.headerRow}>
+          <View style={[styles.headerCell, { width: '30%' }]}>
+            <Text>단어 / 품사 / 의미</Text>
           </View>
-          <View style={[styles.cell, { width: '25%' }]}>
-            <Text>Meaning</Text>
+          <View style={[styles.headerCell, { width: '35%' }]}>
+            <Text>동의어</Text>
           </View>
-          <View style={[styles.cell, { width: '25%' }]}>
-            <Text>Synonyms</Text>
-          </View>
-          <View style={[styles.cell, { width: '25%' }]}>
-            <Text>Antonyms</Text>
+          <View style={[styles.headerCell, { width: '35%' }]}>
+            <Text>반의어</Text>
           </View>
         </View>
         {vocabularyList.map((entry, index) => (

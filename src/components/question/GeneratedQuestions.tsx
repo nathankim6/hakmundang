@@ -13,7 +13,6 @@ interface GeneratedQuestionsProps {
 }
 
 export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
-  // Sort questions by their content to maintain consistency
   const sortedQuestions = [...questions].sort((a, b) => {
     if (!a.content && !b.content) return 0;
     if (!a.content) return 1;
@@ -21,13 +20,11 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
     return a.questionNumber - b.questionNumber;
   });
 
-  // Reassign sequential numbers
   const displayQuestions = sortedQuestions.map((question, index) => ({
     ...question,
     questionNumber: index + 1
   }));
 
-  // Combine all content for vocabulary list
   const allContent = displayQuestions.map(q => q.content).join('\n');
 
   return (
@@ -42,7 +39,7 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
       ))}
       
       {displayQuestions.length > 0 && (
-        <div className="flex justify-center pt-4 border-t border-[#D6BCFA]/30">
+        <div className="flex justify-center pt-6 mt-8 border-t border-[#D6BCFA]/30">
           <VocabularyListModal content={allContent} />
         </div>
       )}
