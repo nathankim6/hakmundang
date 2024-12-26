@@ -1,10 +1,11 @@
 import { GeneratedQuestion } from "../GeneratedQuestion";
+import { VocabularyListModal } from "../VocabularyListModal";
 
 interface Question {
   id: string;
   content: string;
   questionNumber: number;
-  originalText?: string;  // Add optional originalText
+  originalText?: string;
 }
 
 interface GeneratedQuestionsProps {
@@ -26,8 +27,11 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
     questionNumber: index + 1
   }));
 
+  // Combine all content for vocabulary list
+  const allContent = displayQuestions.map(q => q.content).join('\n');
+
   return (
-    <div className="space-y-0 bg-[#F8F7FF] p-6 rounded-lg border border-[#D6BCFA]/30">
+    <div className="space-y-6 bg-[#F8F7FF] p-6 rounded-lg border border-[#D6BCFA]/30">
       {displayQuestions.map((question) => (
         <GeneratedQuestion 
           key={question.id}
@@ -36,6 +40,12 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
           originalText={question.originalText}
         />
       ))}
+      
+      {displayQuestions.length > 0 && (
+        <div className="flex justify-center pt-4 border-t border-[#D6BCFA]/30">
+          <VocabularyListModal content={allContent} />
+        </div>
+      )}
     </div>
   );
 };

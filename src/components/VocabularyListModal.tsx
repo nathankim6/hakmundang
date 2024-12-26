@@ -3,153 +3,77 @@ import { Button } from "@/components/ui/button";
 import { Book, Download, Loader2 } from "lucide-react";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { useState } from "react";
-import { pdf, Document, Page, Text, View, StyleSheet } from "@react-pdf/renderer";
+import { pdf } from "@react-pdf/renderer";
 import { saveAs } from "file-saver";
-
-interface VocabularyEntry {
-  word: string;
-  meaning: string;
-  partOfSpeech?: string;
-  definition?: string;
-  difficulty?: number;
-  synonyms: Array<{word: string; meaning: string}>;
-  antonyms: Array<{word: string; meaning: string}>;
-}
+import { VocabularyPDF } from "./vocabulary/VocabularyPDF";
+import { VocabularyEntryType } from "./vocabulary/types";
+import { generateQuestion } from "@/lib/claude";
 
 interface VocabularyListModalProps {
   content: string;
 }
 
-const styles = StyleSheet.create({
-  page: {
-    padding: 30,
-    fontFamily: 'Helvetica',
-  },
-  title: {
-    fontSize: 24,
-    marginBottom: 20,
-    textAlign: 'center',
-  },
-  tableContainer: {
-    width: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-    borderWidth: 1,
-    borderColor: '#000',
-  },
-  row: {
-    display: 'flex',
-    flexDirection: 'row',
-    borderBottomWidth: 1,
-    borderBottomColor: '#000',
-    minHeight: 24,
-    flexWrap: 'wrap',
-  },
-  cell: {
-    padding: 5,
-    fontSize: 10,
-    borderRightWidth: 1,
-    borderRightColor: '#000',
-  },
-});
-
 export const VocabularyListModal = ({ content }: VocabularyListModalProps) => {
   const [isLoading, setIsLoading] = useState(false);
   const [isGeneratingPDF, setIsGeneratingPDF] = useState(false);
+  const [vocabularyList, setVocabularyList] = useState<VocabularyEntryType[]>([]);
 
-  const parseContent = (text: string): VocabularyEntry[] => {
-    const entries: VocabularyEntry[] = [];
-    const lines = text.split('\n');
-    
-    lines.forEach(line => {
-      if (line.includes('|')) {
-        const cells = line.split('|').map(cell => cell.trim()).filter(Boolean);
-        if (cells.length >= 2 && !line.includes('표제어')) {
-          const entry: VocabularyEntry = {
-            word: cells[0],
-            meaning: cells[1],
-            partOfSpeech: cells[2] || 'n/a',
-            definition: cells[3] || '',
-            difficulty: Math.floor(Math.random() * 3) + 1,
-            synonyms: [],
-            antonyms: []
-          };
+  const parseContent = async (text: string) => {
+    setIsLoading(true);
+    try {
+      const entries: VocabularyEntryType[] = [];
+      const lines = text.split('\n');
+      
+      for (const line of lines) {
+        if (line.includes('|')) {
+          const cells = line.split('|').map(cell => cell.trim()).filter(Boolean);
+          if (cells.length >= 2 && !line.includes('표제어')) {
+            // Get English definition and part of speech from Claude
+            const prompt = `Please provide the part of speech and English dictionary definition for the word "${cells[0]}". Format: "partOfSpeech|definition"`;
+            const response = await generateQuestion({ id: "vocabulary", name: "Vocabulary" }, prompt);
+            const [partOfSpeech, definition] = response.split('|');
 
-          if (cells[4] && cells[5]) {
-            entry.synonyms.push({
-              word: cells[4],
-              meaning: cells[5]
-            });
+            const entry: VocabularyEntryType = {
+              word: cells[0],
+              meaning: cells[1],
+              partOfSpeech: partOfSpeech || cells[2] || 'n/a',
+              definition: definition || '',
+              difficulty: Math.floor(Math.random() * 3) + 1,
+              synonyms: [],
+              antonyms: []
+            };
+
+            if (cells[4] && cells[5]) {
+              entry.synonyms.push({
+                word: cells[4],
+                meaning: cells[5]
+              });
+            }
+
+            if (cells[6] && cells[7]) {
+              entry.antonyms.push({
+                word: cells[6],
+                meaning: cells[7]
+              });
+            }
+
+            entries.push(entry);
           }
-
-          if (cells[6] && cells[7]) {
-            entry.antonyms.push({
-              word: cells[6],
-              meaning: cells[7]
-            });
-          }
-
-          entries.push(entry);
         }
       }
-    });
-    
-    return entries;
+      
+      setVocabularyList(entries);
+    } catch (error) {
+      console.error("Error parsing content:", error);
+    } finally {
+      setIsLoading(false);
+    }
   };
-
-  const vocabularyList = parseContent(content);
 
   const generatePDF = async () => {
     setIsGeneratingPDF(true);
-    
-    const VocabularyPDF = () => (
-      <Document>
-        <Page size="A4" style={styles.page}>
-          <Text style={styles.title}>Vocabulary List</Text>
-          <View style={styles.tableContainer}>
-            <View style={styles.row}>
-              <View style={[styles.cell, { width: '20%' }]}>
-                <Text>Word</Text>
-              </View>
-              <View style={[styles.cell, { width: '20%' }]}>
-                <Text>Meaning</Text>
-              </View>
-              <View style={[styles.cell, { width: '30%' }]}>
-                <Text>Synonyms</Text>
-              </View>
-              <View style={[styles.cell, { width: '30%' }]}>
-                <Text>Antonyms</Text>
-              </View>
-            </View>
-            {vocabularyList.map((entry, index) => (
-              <View key={index} style={styles.row}>
-                <View style={[styles.cell, { width: '20%' }]}>
-                  <Text>{entry.word}</Text>
-                  <Text>{'⭐'.repeat(entry.difficulty || 1)}</Text>
-                </View>
-                <View style={[styles.cell, { width: '20%' }]}>
-                  <Text>{entry.meaning}</Text>
-                  <Text>{entry.partOfSpeech}</Text>
-                </View>
-                <View style={[styles.cell, { width: '30%' }]}>
-                  {entry.synonyms.map((syn, i) => (
-                    <Text key={i}>{syn.word} - {syn.meaning}</Text>
-                  ))}
-                </View>
-                <View style={[styles.cell, { width: '30%' }]}>
-                  {entry.antonyms.map((ant, i) => (
-                    <Text key={i}>{ant.word} - {ant.meaning}</Text>
-                  ))}
-                </View>
-              </View>
-            ))}
-          </View>
-        </Page>
-      </Document>
-    );
-
     try {
-      const blob = await pdf(<VocabularyPDF />).toBlob();
+      const blob = await pdf(<VocabularyPDF vocabularyList={vocabularyList} />).toBlob();
       saveAs(blob, 'vocabulary_list.pdf');
     } catch (error) {
       console.error('Error generating PDF:', error);
@@ -164,6 +88,7 @@ export const VocabularyListModal = ({ content }: VocabularyListModalProps) => {
         <Button 
           variant="outline" 
           className="gap-2 bg-gradient-to-r from-[#9b87f5] to-[#D6BCFA] text-white hover:from-[#8E9196] hover:to-[#D6BCFA] transition-all duration-300"
+          onClick={() => parseContent(content)}
         >
           <Book className="w-4 h-4" />
           단어장 보기
@@ -179,7 +104,7 @@ export const VocabularyListModal = ({ content }: VocabularyListModalProps) => {
         <div className="flex justify-end mb-4">
           <Button
             onClick={generatePDF}
-            disabled={isGeneratingPDF}
+            disabled={isGeneratingPDF || isLoading}
             className="gap-2"
           >
             {isGeneratingPDF ? (
@@ -191,58 +116,65 @@ export const VocabularyListModal = ({ content }: VocabularyListModalProps) => {
           </Button>
         </div>
 
-        <div className="rounded-lg border border-[#D6BCFA]/30 overflow-hidden">
-          <Table>
-            <TableHeader className="bg-gradient-to-r from-[#F1F0FB] to-[#E5DEFF] sticky top-0 z-10">
-              <TableRow>
-                <TableHead className="font-bold text-[#222222] w-[20%]">표제어</TableHead>
-                <TableHead className="font-bold text-[#222222] w-[20%]">의미 / 품사</TableHead>
-                <TableHead className="font-bold text-[#222222] w-[30%]">동의어</TableHead>
-                <TableHead className="font-bold text-[#222222] w-[30%]">반의어</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {vocabularyList.map((entry, index) => (
-                <TableRow 
-                  key={index}
-                  className={index % 2 === 0 ? 'bg-white hover:bg-[#F8F7FF] transition-colors' : 'bg-[#F8F7FF] hover:bg-[#F1F0FB] transition-colors'}
-                >
-                  <TableCell className="font-medium border-r border-[#D6BCFA]/10">
-                    <div className="flex flex-col">
-                      <span className="text-lg font-bold text-[#7E69AB]">{entry.word}</span>
-                      <span className="text-yellow-500">{'⭐'.repeat(entry.difficulty || 1)}</span>
-                      <span className="text-sm text-gray-600">{entry.meaning}</span>
-                      <span className="text-xs text-gray-500 italic">{entry.partOfSpeech}</span>
-                    </div>
-                  </TableCell>
-                  <TableCell className="border-r border-[#D6BCFA]/10">
-                    <div className="text-sm">{entry.definition}</div>
-                  </TableCell>
-                  <TableCell className="border-r border-[#D6BCFA]/10">
-                    <div className="space-y-2">
-                      {entry.synonyms.map((syn, i) => (
-                        <div key={i} className="text-[#7E69AB]">
-                          <span className="font-medium">{syn.word}</span>
-                          <span className="text-sm text-gray-600 ml-2">- {syn.meaning}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </TableCell>
-                  <TableCell>
-                    <div className="space-y-2">
-                      {entry.antonyms.map((ant, i) => (
-                        <div key={i} className="text-[#9b87f5]">
-                          <span className="font-medium">{ant.word}</span>
-                          <span className="text-sm text-gray-600 ml-2">- {ant.meaning}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </TableCell>
+        {isLoading ? (
+          <div className="flex flex-col items-center justify-center p-8 space-y-4">
+            <Loader2 className="w-8 h-8 animate-spin text-[#9b87f5]" />
+            <p className="text-lg font-medium text-gray-600">단어장 생성 중...</p>
+          </div>
+        ) : (
+          <div className="rounded-lg border border-[#D6BCFA]/30 overflow-hidden">
+            <Table>
+              <TableHeader className="bg-gradient-to-r from-[#F1F0FB] to-[#E5DEFF] sticky top-0 z-10">
+                <TableRow>
+                  <TableHead className="font-bold text-[#222222] w-[25%]">단어 / 품사 / 정의</TableHead>
+                  <TableHead className="font-bold text-[#222222] w-[25%]">의미</TableHead>
+                  <TableHead className="font-bold text-[#222222] w-[25%]">동의어</TableHead>
+                  <TableHead className="font-bold text-[#222222] w-[25%]">반의어</TableHead>
                 </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </div>
+              </TableHeader>
+              <TableBody>
+                {vocabularyList.map((entry, index) => (
+                  <TableRow 
+                    key={index}
+                    className={index % 2 === 0 ? 'bg-white hover:bg-[#F8F7FF] transition-colors' : 'bg-[#F8F7FF] hover:bg-[#F1F0FB] transition-colors'}
+                  >
+                    <TableCell className="font-medium border-r border-[#D6BCFA]/10">
+                      <div className="flex flex-col">
+                        <span className="text-lg font-bold text-[#7E69AB]">{entry.word}</span>
+                        <span className="text-yellow-500">{'⭐'.repeat(entry.difficulty)}</span>
+                        <span className="text-sm text-gray-600">{entry.partOfSpeech}</span>
+                        <span className="text-xs text-gray-500 italic">{entry.definition}</span>
+                      </div>
+                    </TableCell>
+                    <TableCell className="border-r border-[#D6BCFA]/10">
+                      <div className="text-sm">{entry.meaning}</div>
+                    </TableCell>
+                    <TableCell className="border-r border-[#D6BCFA]/10">
+                      <div className="space-y-2">
+                        {entry.synonyms.map((syn, i) => (
+                          <div key={i} className="text-[#7E69AB]">
+                            <span className="font-medium">{syn.word}</span>
+                            <span className="text-sm text-gray-600 ml-2">- {syn.meaning}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </TableCell>
+                    <TableCell>
+                      <div className="space-y-2">
+                        {entry.antonyms.map((ant, i) => (
+                          <div key={i} className="text-[#9b87f5]">
+                            <span className="font-medium">{ant.word}</span>
+                            <span className="text-sm text-gray-600 ml-2">- {ant.meaning}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </div>
+        )}
       </DialogContent>
     </Dialog>
   );
