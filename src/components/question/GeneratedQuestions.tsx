@@ -1,5 +1,6 @@
 import { GeneratedQuestion } from "../GeneratedQuestion";
 import { SynonymAntonymEditor } from "../SynonymAntonymEditor";
+import { VocabularyListModal } from "../vocabulary/VocabularyListModal";
 
 interface Question {
   id: string;
@@ -48,6 +49,12 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
           originalText={question.originalText}
         />
       ))}
+
+      {hasSynonymAntonymQuestions && (
+        <div className="mt-8">
+          <VocabularyListModal questions={displayQuestions} />
+        </div>
+      )}
     </div>
   );
 };
