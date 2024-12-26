@@ -1,5 +1,5 @@
-import "https://deno.land/x/xhr@0.1.0/mod.ts";
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
+import "https://deno.land/x/xhr@0.1.0/mod.ts";
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
@@ -15,11 +15,13 @@ serve(async (req) => {
   try {
     const apiKey = Deno.env.get('CLAUDE_API_KEY');
     if (!apiKey) {
+      console.error('CLAUDE_API_KEY is not set');
       throw new Error('CLAUDE_API_KEY is not set');
     }
 
     const { word } = await req.json();
     if (!word) {
+      console.error('Word parameter is missing');
       throw new Error('Word parameter is required');
     }
 
@@ -42,7 +44,7 @@ Format the response as JSON:
 
     console.log('Sending request to Claude API...');
 
-    const response = await fetch('https://api.anthropic.com/v1/messages', {
+    const claudeResponse = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -60,46 +62,59 @@ Format the response as JSON:
       })
     });
 
-    if (!response.ok) {
-      console.error('Claude API error:', response.status, response.statusText);
-      const errorText = await response.text();
+    if (!claudeResponse.ok) {
+      console.error('Claude API error:', claudeResponse.status, claudeResponse.statusText);
+      const errorText = await claudeResponse.text();
       console.error('Error details:', errorText);
-      throw new Error(`Claude API error: ${response.status} ${response.statusText}`);
+      throw new Error(`Claude API error: ${claudeResponse.status} ${claudeResponse.statusText}`);
     }
 
-    const data = await response.json();
-    console.log('Claude API raw response:', JSON.stringify(data));
+    const data = await claudeResponse.json();
+    console.log('Claude API response:', JSON.stringify(data));
 
-    if (!data.content || !Array.isArray(data.content) || data.content.length === 0) {
-      console.error('Invalid response format from Claude API:', data);
-      throw new Error('Invalid response format from Claude API: content array is empty or missing');
+    if (!data.content) {
+      console.error('No content in Claude API response:', data);
+      throw new Error('No content in Claude API response');
+    }
+
+    if (!Array.isArray(data.content) || data.content.length === 0) {
+      console.error('Invalid content format in Claude API response:', data.content);
+      throw new Error('Invalid content format in Claude API response');
     }
 
     const content = data.content[0];
     if (!content || typeof content !== 'object' || !('text' in content)) {
-      console.error('Invalid content format from Claude API:', content);
-      throw new Error('Invalid content format from Claude API: text property missing');
+      console.error('Invalid content object format:', content);
+      throw new Error('Invalid content object format in Claude API response');
     }
 
+    let analysis;
     try {
-      const analysis = JSON.parse(content.text);
-      console.log('Parsed analysis:', analysis);
-
-      // Validate the analysis object has all required fields
-      const requiredFields = ['partOfSpeech', 'example', 'exampleTranslation', 'difficulty', 'meaning'];
-      for (const field of requiredFields) {
-        if (!(field in analysis)) {
-          throw new Error(`Missing required field in analysis: ${field}`);
-        }
-      }
-
-      return new Response(JSON.stringify(analysis), {
-        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-      });
+      analysis = JSON.parse(content.text);
     } catch (parseError) {
       console.error('Failed to parse Claude response as JSON:', content.text);
       throw new Error(`Failed to parse Claude response as JSON: ${parseError.message}`);
     }
+
+    // Validate required fields
+    const requiredFields = ['partOfSpeech', 'example', 'exampleTranslation', 'difficulty', 'meaning'];
+    const missingFields = requiredFields.filter(field => !(field in analysis));
+    
+    if (missingFields.length > 0) {
+      console.error('Missing required fields in analysis:', missingFields);
+      throw new Error(`Missing required fields in analysis: ${missingFields.join(', ')}`);
+    }
+
+    // Validate field types
+    if (typeof analysis.difficulty !== 'number' || analysis.difficulty < 1 || analysis.difficulty > 3) {
+      console.error('Invalid difficulty value:', analysis.difficulty);
+      analysis.difficulty = 1; // Default to 1 if invalid
+    }
+
+    return new Response(JSON.stringify(analysis), {
+      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+    });
+
   } catch (error) {
     console.error('Error in analyze-word function:', error);
     return new Response(
