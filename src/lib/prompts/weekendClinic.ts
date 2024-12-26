@@ -45,4 +45,6 @@ Water (1 have) → ______ unique properties that (2 make) → ______ it essentia
 [동사 워크북]
 has  2. make  3. absorb  4. helps  5. are supported  6. exists  7. freezes  8. expands  9. becomes  10. allowing  11. float  12. protects  13. creating
 
+위의 예시와 같은 형식으로 다음 지문에 대한 문제를 생성해주세요:
+
 ${text}`;
