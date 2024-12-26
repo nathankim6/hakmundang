@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import {
   Dialog,
   DialogContent,
+  DialogTitle,
 } from "@/components/ui/dialog";
 import { useToast } from "@/components/ui/use-toast";
 import { parseTableContent, type VocabularyEntry } from './vocabulary/VocabularyParser';
@@ -32,7 +33,7 @@ export const VocabularyModal = ({ isOpen, onClose, content, questionNumber }: Vo
   const [processedData, setProcessedData] = useState<WordData[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [progress, setProgress] = useState({ current: 0, total: 0 });
-  const contentRef = useRef<HTMLDivElement>(null);
+  const abortControllerRef = useRef<AbortController | null>(null);
   const { toast } = useToast();
 
   const processVocabularyWithClaude = async (entries: VocabularyEntry[]) => {
@@ -52,9 +53,14 @@ export const VocabularyModal = ({ isOpen, onClose, content, questionNumber }: Vo
     const total = entries.length;
     setProgress({ current: 0, total });
     const processedEntries: WordData[] = [];
+    abortControllerRef.current = new AbortController();
 
     try {
       for (let i = 0; i < entries.length; i++) {
+        if (abortControllerRef.current?.signal.aborted) {
+          throw new Error('Processing cancelled');
+        }
+
         const entry = entries[i];
         const prompt = `
           다음 단어에 대한 정보를 분석하여 JSON 형식으로 반환해주세요:
@@ -94,7 +100,8 @@ export const VocabularyModal = ({ isOpen, onClose, content, questionNumber }: Vo
               role: 'user',
               content: prompt
             }]
-          })
+          }),
+          signal: abortControllerRef.current.signal
         });
 
         if (!response.ok) {
@@ -105,6 +112,9 @@ export const VocabularyModal = ({ isOpen, onClose, content, questionNumber }: Vo
         const result = JSON.parse(data.content[0].text);
         processedEntries.push(result);
         setProgress({ current: i + 1, total });
+        
+        // Add a small delay to show progress
+        await new Promise(resolve => setTimeout(resolve, 500));
       }
 
       setProcessedData(processedEntries);
@@ -113,6 +123,13 @@ export const VocabularyModal = ({ isOpen, onClose, content, questionNumber }: Vo
         description: "단어장이 성공적으로 생성되었습니다.",
       });
     } catch (error) {
+      if (error.message === 'Processing cancelled') {
+        toast({
+          title: "중단됨",
+          description: "단어장 생성이 중단되었습니다.",
+        });
+        return;
+      }
       console.error('Error processing vocabulary:', error);
       toast({
         title: "오류 발생",
@@ -122,6 +139,13 @@ export const VocabularyModal = ({ isOpen, onClose, content, questionNumber }: Vo
     } finally {
       setIsLoading(false);
       setProgress({ current: 0, total: 0 });
+      abortControllerRef.current = null;
+    }
+  };
+
+  const handleStop = () => {
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort();
     }
   };
 
@@ -129,17 +153,26 @@ export const VocabularyModal = ({ isOpen, onClose, content, questionNumber }: Vo
     if (isOpen && vocabularyList.length > 0) {
       processVocabularyWithClaude(vocabularyList);
     }
+    
+    return () => {
+      if (abortControllerRef.current) {
+        abortControllerRef.current.abort();
+      }
+    };
   }, [isOpen, vocabularyList]);
 
   return (
     <Dialog open={isOpen} onOpenChange={() => onClose()}>
-      <DialogContent className="max-w-7xl max-h-[90vh] overflow-y-auto font-nanum" ref={contentRef}>
+      <DialogContent className="max-w-7xl max-h-[90vh] overflow-y-auto font-nanum">
+        <DialogTitle className="text-lg font-bold text-center mb-4">
+          단어장 생성
+        </DialogTitle>
         {isLoading ? (
           <div className="flex flex-col items-center justify-center p-8">
             <LoadingProgress 
               current={progress.current} 
               total={progress.total}
-              onStop={() => setIsLoading(false)}
+              onStop={handleStop}
             />
           </div>
         ) : (
