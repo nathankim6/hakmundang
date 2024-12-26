@@ -14,12 +14,47 @@ export const GeneratedQuestion = ({ content, questionNumber, originalText }: Gen
   // Remove "[OUTPUT]" from the question part if it exists
   questionPart = questionPart.replace('[OUTPUT]', '').trim();
 
-  // Check if this is a weekend clinic question by looking for the specific sections
-  const isWeekendClinic = questionPart.includes('[주제]') && 
-                         questionPart.includes('[제목]') && 
-                         questionPart.includes('[요약문]') && 
-                         questionPart.includes('[동사 워크북]');
+  // Check if this is a True/False question by looking for "(T/F)" in the content
+  const isTrueFalse = questionPart.includes('(T/F)');
 
+  // For True/False questions, we need to handle the format differently
+  if (isTrueFalse) {
+    const lines = questionPart.split('\n');
+    const titleAndText = lines.slice(0, 2).join('\n'); // First two lines (title and original text)
+    const questions = lines.slice(2).join('\n'); // Remaining lines (questions)
+
+    return (
+      <div className="mb-8">
+        <div className="prose max-w-none">
+          <h3 className="text-2xl font-bold mb-2 flex items-center gap-2">
+            <span className="bg-gradient-to-r from-[#0EA5E9] to-[#403E43] bg-clip-text text-transparent">
+              문제 {questionNumber}
+            </span>
+          </h3>
+          
+          <div className="space-y-4">
+            <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F1F0FB] p-4 rounded-lg border border-[#D3E4FD]/30">
+              {titleAndText}
+            </div>
+            
+            <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20">
+              {questions}
+            </div>
+            
+            {answerPart && (
+              <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20">
+                {answerPart}
+              </div>
+            )}
+          </div>
+        </div>
+        
+        <div className="mt-6 h-px bg-gradient-to-r from-transparent via-[#0EA5E9]/30 to-transparent" />
+      </div>
+    );
+  }
+
+  // For other question types, keep the existing format
   return (
     <div className="mb-8">
       <div className="prose max-w-none">
@@ -31,7 +66,7 @@ export const GeneratedQuestion = ({ content, questionNumber, originalText }: Gen
         
         <div className="space-y-4">
           {/* Only show originalText if it's not a weekend clinic question */}
-          {!isWeekendClinic && originalText && (
+          {originalText && (
             <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20 mb-4">
               {originalText}
             </div>
