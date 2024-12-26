@@ -1,5 +1,5 @@
-import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 import "https://deno.land/x/xhr@0.1.0/mod.ts";
+import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
@@ -7,16 +7,20 @@ const corsHeaders = {
 };
 
 serve(async (req) => {
+  // Handle CORS preflight requests
   if (req.method === 'OPTIONS') {
     return new Response(null, { headers: corsHeaders });
   }
 
   try {
-    const { word } = await req.json();
     const apiKey = Deno.env.get('CLAUDE_API_KEY');
-
     if (!apiKey) {
       throw new Error('CLAUDE_API_KEY is not set');
+    }
+
+    const { word } = await req.json();
+    if (!word) {
+      throw new Error('Word parameter is required');
     }
 
     console.log(`Analyzing word: ${word}`);
@@ -36,7 +40,7 @@ Format the response as JSON:
   "meaning": string
 }`;
 
-    console.log('Sending request to Claude API with prompt:', prompt);
+    console.log('Sending request to Claude API...');
 
     const response = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
@@ -64,31 +68,28 @@ Format the response as JSON:
     }
 
     const data = await response.json();
-    console.log('Claude API response:', JSON.stringify(data));
+    console.log('Claude API raw response:', JSON.stringify(data));
 
-    // Check if data.content exists and is an array
-    if (!data.content || !Array.isArray(data.content)) {
+    if (!data.content || !Array.isArray(data.content) || data.content.length === 0) {
       console.error('Invalid response format from Claude API:', data);
-      throw new Error('Invalid response format from Claude API');
+      throw new Error('Invalid response format from Claude API: content array is empty or missing');
     }
 
-    // Get the first content item
     const content = data.content[0];
     if (!content || typeof content !== 'object' || !('text' in content)) {
       console.error('Invalid content format from Claude API:', content);
-      throw new Error('Invalid content format from Claude API');
+      throw new Error('Invalid content format from Claude API: text property missing');
     }
 
     try {
-      // Parse the JSON response from the text content
       const analysis = JSON.parse(content.text);
       console.log('Parsed analysis:', analysis);
-      
+
       // Validate the analysis object has all required fields
       const requiredFields = ['partOfSpeech', 'example', 'exampleTranslation', 'difficulty', 'meaning'];
       for (const field of requiredFields) {
         if (!(field in analysis)) {
-          throw new Error(`Missing required field: ${field}`);
+          throw new Error(`Missing required field in analysis: ${field}`);
         }
       }
 
@@ -100,11 +101,10 @@ Format the response as JSON:
       throw new Error(`Failed to parse Claude response as JSON: ${parseError.message}`);
     }
   } catch (error) {
-    console.error('Error:', error);
+    console.error('Error in analyze-word function:', error);
     return new Response(
       JSON.stringify({ 
         error: error.message,
-        details: error.stack,
         timestamp: new Date().toISOString()
       }), 
       {
