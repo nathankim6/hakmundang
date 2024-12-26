@@ -30,11 +30,11 @@ export const VocabularyList = ({ questions }: VocabularyListProps) => {
               if (analysis) {
                 question.rows[i] = {
                   ...row,
-                  partOfSpeech: analysis.partOfSpeech,
-                  example: analysis.example,
-                  exampleTranslation: analysis.exampleTranslation,
-                  difficulty: analysis.difficulty,
-                  meaning: analysis.meaning
+                  partOfSpeech: analysis.partOfSpeech || '[명사]',
+                  example: analysis.example || '',
+                  exampleTranslation: analysis.exampleTranslation || '',
+                  difficulty: analysis.difficulty || 1,
+                  meaning: analysis.meaning || row.meaning
                 };
               }
             } catch (error) {
@@ -56,19 +56,41 @@ export const VocabularyList = ({ questions }: VocabularyListProps) => {
   }, [questions]);
 
   return (
-    <div className="grid gap-8 print:gap-4">
-      {analyzedQuestions.map((question, index) => (
-        <div key={index} className="space-y-4">
-          <h3 className="text-xl font-bold text-purple-600 print:text-black">
-            [문제 {question.number}]
-          </h3>
-          <div className="grid gap-4 print:gap-2">
-            {question.rows.map((row, rowIndex) => (
-              <VocabularyCard key={rowIndex} word={row} />
-            ))}
+    <div className="print:p-0 print:m-0">
+      <style>
+        {`
+          @media print {
+            @page {
+              size: A4;
+              margin: 1cm;
+            }
+            body {
+              font-family: 'Noto Serif KR', serif;
+            }
+            .print-grid {
+              display: grid;
+              grid-template-columns: 1fr;
+              gap: 0.5rem;
+            }
+          }
+        `}
+      </style>
+      <div className="grid gap-4 print:gap-2 print-grid">
+        {analyzedQuestions.map((question, qIndex) => (
+          <div key={qIndex} className="space-y-4 print:space-y-2">
+            <div className="grid gap-4 print:gap-2">
+              {question.rows.map((row, rowIndex) => (
+                <VocabularyCard 
+                  key={rowIndex} 
+                  word={row}
+                  showQuestionNumber={rowIndex === 0}
+                  questionNumber={question.number}
+                />
+              ))}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
