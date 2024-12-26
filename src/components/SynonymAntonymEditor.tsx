@@ -6,6 +6,7 @@ import { generateDocument } from "@/utils/documentGenerator";
 import { VocabularyTable } from './vocabulary/VocabularyTable';
 import { ExportToolbar } from './vocabulary/ExportToolbar';
 import { QuestionData, TableRowData } from './vocabulary/types';
+import { supabase } from "@/integrations/supabase/client";
 
 interface Question {
   id: string;
@@ -26,16 +27,27 @@ const parseQuestionContent = (content: string): TableRowData[] => {
       const cells = line.split('|').map(cell => cell.trim());
       if (cells.length >= 7 && !line.includes('-----')) {
         if (cells[1] && cells[1] !== '표제어') {
+          // Split multiple synonyms and antonyms by comma or semicolon
+          const synonyms = cells[3].split(/[,;]/).map(s => s.trim()).filter(s => s);
+          const synonymMeanings = cells[4].split(/[,;]/).map(s => s.trim()).filter(s => s);
+          const antonyms = cells[5].split(/[,;]/).map(s => s.trim()).filter(s => s);
+          const antonymMeanings = cells[6].split(/[,;]/).map(s => s.trim()).filter(s => s);
+
+          // Ensure arrays have length 3, pad with empty strings if needed
+          const padArray = (arr: string[]) => {
+            return [...arr, '', '', ''].slice(0, 3);
+          };
+
           rows.push({
             headword: cells[1],
             meaning: cells[2],
             difficulty: 1,
             partOfSpeech: '',
             example: '',
-            synonyms: [cells[3], '', ''],
-            synonymMeanings: [cells[4], '', ''],
-            antonyms: [cells[5], '', ''],
-            antonymMeanings: [cells[6], '', '']
+            synonyms: padArray(synonyms),
+            synonymMeanings: padArray(synonymMeanings),
+            antonyms: padArray(antonyms),
+            antonymMeanings: padArray(antonymMeanings)
           });
         }
       }
@@ -55,17 +67,12 @@ export const SynonymAntonymEditor = ({ questions }: SynonymAntonymEditorProps) =
 
   const analyzeWord = async (word: string) => {
     try {
-      const response = await fetch('/functions/analyze-word', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ word })
+      const { data, error } = await supabase.functions.invoke('analyze-word', {
+        body: { word }
       });
 
-      if (!response.ok) {
-        throw new Error('Failed to analyze word');
-      }
-
-      return await response.json();
+      if (error) throw error;
+      return data;
     } catch (error) {
       console.error('Error analyzing word:', error);
       return null;
