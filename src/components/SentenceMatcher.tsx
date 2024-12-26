@@ -123,7 +123,7 @@ export const SentenceMatcher = () => {
               onClick={handleMatch}
               className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
             >
-              문장 매칭하기
+              문장 나누기
             </button>
           </div>
 

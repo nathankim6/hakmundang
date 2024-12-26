@@ -45,7 +45,23 @@ export const TypeEntry = ({
   const isSentenceMatcher = type.id === "sentenceSplitter";
 
   if (isSentenceMatcher) {
-    return <SentenceMatcher />;
+    return (
+      <div className="space-y-6 p-6 rounded-lg border-2 border-[#9b87f5]/20 relative bg-[#F8F7FF]">
+        <div className="flex items-center justify-between">
+          <h3 className="text-xl font-bold text-[#7E69AB]">{type.name}</h3>
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={handleDeleteAll}
+            className="text-destructive hover:text-destructive/80 hover:bg-destructive/10"
+          >
+            <X className="w-4 h-4 mr-1" />
+            전체 삭제
+          </Button>
+        </div>
+        <SentenceMatcher />
+      </div>
+    );
   }
 
   return (
