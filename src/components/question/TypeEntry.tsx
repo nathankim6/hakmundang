@@ -3,6 +3,7 @@ import { Plus, Trash2, X } from "lucide-react";
 import { TextInput } from "../TextInput";
 import { QuestionType } from "@/types/question";
 import { useToast } from "@/components/ui/use-toast";
+import { SentenceMatcher } from "../SentenceMatcher";
 
 interface PassageEntry {
   id: string;
@@ -39,6 +40,13 @@ export const TypeEntry = ({
       description: "선택한 문제 유형이 삭제되었습니다.",
     });
   };
+
+  // Check if this is the sentence matcher type
+  const isSentenceMatcher = type.id === "sentenceSplitter";
+
+  if (isSentenceMatcher) {
+    return <SentenceMatcher />;
+  }
 
   return (
     <div className="space-y-6 p-6 rounded-lg border-2 border-[#9b87f5]/20 relative bg-[#F8F7FF]">
