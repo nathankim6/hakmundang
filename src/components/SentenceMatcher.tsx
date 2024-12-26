@@ -60,21 +60,33 @@ export const SentenceMatcher = () => {
     return sentences;
   };
 
-  // 문장 매칭 처리
+  // 문장 매칭 처리 개선
   const matchSentences = (engSentences: string[], korSentences: string[]) => {
-    // 두 배열의 길이를 같게 만듦
     const maxLength = Math.max(engSentences.length, korSentences.length);
+    const minLength = Math.min(engSentences.length, korSentences.length);
+    
+    // 영어와 한글 문장 수를 일치시키기 위한 처리
     const normalizedEng = [...engSentences];
     const normalizedKor = [...korSentences];
 
-    // 부족한 부분을 빈 문자열로 채움
-    while (normalizedEng.length < maxLength) normalizedEng.push('');
-    while (normalizedKor.length < maxLength) normalizedKor.push('');
+    if (engSentences.length > korSentences.length) {
+      // 영어 문장이 더 많은 경우, 마지막 한글 문장에 나머지 영어 문장들을 합침
+      const remainingEng = normalizedEng.splice(minLength).join(' ');
+      if (normalizedKor[minLength - 1]) {
+        normalizedKor[minLength - 1] += ' ' + remainingEng;
+      }
+    } else if (korSentences.length > engSentences.length) {
+      // 한글 문장이 더 많은 경우, 마지막 영어 문장에 나머지 한글 문장들을 합침
+      const remainingKor = normalizedKor.splice(minLength).join(' ');
+      if (normalizedEng[minLength - 1]) {
+        normalizedEng[minLength - 1] += ' ' + remainingKor;
+      }
+    }
 
-    // 1:1 매칭
+    // 1:1 매칭 생성
     return normalizedEng.map((eng, index) => ({
-      english: eng,
-      korean: normalizedKor[index]
+      english: eng || '',
+      korean: normalizedKor[index] || ''
     }));
   };
 
@@ -87,10 +99,7 @@ export const SentenceMatcher = () => {
     setMatchedSentences(matched.filter(pair => pair.english || pair.korean));
 
     // 정보 메시지 설정
-    const message = englishSentences.length !== koreanSentences.length
-      ? `영어 ${englishSentences.length}문장과 한글 ${koreanSentences.length}문장이 1:1로 매칭되었습니다.`
-      : `총 ${englishSentences.length}개의 문장이 매칭되었습니다.`;
-    setInfo(message);
+    setInfo(`총 ${matched.length}개의 문장이 매칭되었습니다.`);
   };
 
   return (
@@ -139,6 +148,7 @@ export const SentenceMatcher = () => {
               <table className="w-full border-collapse">
                 <thead>
                   <tr>
+                    <th className="border p-2 bg-gray-100 w-[60px]">번호</th>
                     <th className="border p-2 bg-gray-100 w-1/2">English</th>
                     <th className="border p-2 bg-gray-100 w-1/2">한글</th>
                   </tr>
@@ -146,6 +156,7 @@ export const SentenceMatcher = () => {
                 <tbody>
                   {matchedSentences.map((pair, index) => (
                     <tr key={index}>
+                      <td className="border p-2 text-center">{index + 1}</td>
                       <td className="border p-2 align-top">{pair.english}</td>
                       <td className="border p-2 align-top">{pair.korean}</td>
                     </tr>
