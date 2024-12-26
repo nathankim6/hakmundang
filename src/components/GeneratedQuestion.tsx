@@ -20,7 +20,8 @@ export const GeneratedQuestion = ({ content, questionNumber, originalText }: Gen
   // For True/False questions, we need to handle the format differently
   if (isTrueFalse) {
     const lines = questionPart.split('\n');
-    const titleAndText = lines.slice(0, 2).join('\n'); // First two lines (title and original text)
+    const title = lines[0]; // First line (title)
+    const originalText = lines[1]; // Second line (original text)
     const questions = lines.slice(2).join('\n'); // Remaining lines (questions)
 
     return (
@@ -33,14 +34,17 @@ export const GeneratedQuestion = ({ content, questionNumber, originalText }: Gen
           </h3>
           
           <div className="space-y-4">
+            {/* Original Text */}
             <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F1F0FB] p-4 rounded-lg border border-[#D3E4FD]/30">
-              {titleAndText}
+              {originalText}
             </div>
             
+            {/* Questions */}
             <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20">
               {questions}
             </div>
             
+            {/* Answers and Explanations */}
             {answerPart && (
               <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20">
                 {answerPart}
