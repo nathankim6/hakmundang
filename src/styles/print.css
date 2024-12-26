@@ -1,10 +1,12 @@
 @media print {
   @page {
-    margin: 1cm;
+    size: A4;
+    margin: 1.5cm;
   }
 
   body {
     background: white !important;
+    font-family: 'Noto Serif KR', serif !important;
   }
 
   .print\:hidden {
@@ -25,5 +27,17 @@
 
   .print\:gap-2 {
     gap: 0.5rem !important;
+  }
+
+  .print\:border-none {
+    border: none !important;
+  }
+
+  .print\:shadow-none {
+    box-shadow: none !important;
+  }
+
+  .print\:break-inside-avoid {
+    break-inside: avoid !important;
   }
 }

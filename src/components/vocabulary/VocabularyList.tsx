@@ -30,11 +30,11 @@ export const VocabularyList = ({ questions }: VocabularyListProps) => {
               if (analysis) {
                 question.rows[i] = {
                   ...row,
-                  partOfSpeech: analysis.partOfSpeech,
-                  example: analysis.example,
-                  exampleTranslation: analysis.exampleTranslation,
-                  difficulty: analysis.difficulty,
-                  meaning: analysis.meaning
+                  partOfSpeech: analysis.partOfSpeech || row.partOfSpeech,
+                  example: analysis.example || row.example,
+                  exampleTranslation: analysis.exampleTranslation || row.exampleTranslation,
+                  difficulty: analysis.difficulty || row.difficulty || 1,
+                  meaning: analysis.meaning || row.meaning
                 };
               }
             } catch (error) {
@@ -56,15 +56,17 @@ export const VocabularyList = ({ questions }: VocabularyListProps) => {
   }, [questions]);
 
   return (
-    <div className="grid gap-8 print:gap-4">
-      {analyzedQuestions.map((question, index) => (
-        <div key={index} className="space-y-4">
-          <h3 className="text-xl font-bold text-purple-600 print:text-black">
-            [문제 {question.number}]
-          </h3>
+    <div className="grid gap-4 print:gap-2 @container">
+      {analyzedQuestions.map((question, questionIndex) => (
+        <div key={questionIndex} className="space-y-4 print:break-inside-avoid">
           <div className="grid gap-4 print:gap-2">
             {question.rows.map((row, rowIndex) => (
-              <VocabularyCard key={rowIndex} word={row} />
+              <VocabularyCard 
+                key={rowIndex} 
+                word={row} 
+                isFirstInQuestion={rowIndex === 0}
+                questionNumber={rowIndex === 0 ? question.number : undefined}
+              />
             ))}
           </div>
         </div>
