@@ -20,9 +20,8 @@ export const GeneratedQuestion = ({ content, questionNumber, originalText }: Gen
   // For True/False questions, we need to handle the format differently
   if (isTrueFalse) {
     const lines = questionPart.split('\n');
-    const title = lines[0]; // "다음 글의 내용으로 옳고 그름(T/F)을 고르시오."
-    const originalTextPart = lines[1]; // The original text
-    const questions = lines.slice(2).join('\n'); // The questions
+    const titleAndText = lines.slice(0, 2).join('\n'); // First two lines (title and original text)
+    const questions = lines.slice(2).join('\n'); // Remaining lines (questions)
 
     return (
       <div className="mb-8">
@@ -35,11 +34,7 @@ export const GeneratedQuestion = ({ content, questionNumber, originalText }: Gen
           
           <div className="space-y-4">
             <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F1F0FB] p-4 rounded-lg border border-[#D3E4FD]/30">
-              {title}
-            </div>
-
-            <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20">
-              {originalTextPart}
+              {titleAndText}
             </div>
             
             <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20">
