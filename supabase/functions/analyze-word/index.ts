@@ -29,21 +29,9 @@ serve(async (req) => {
 
     console.log(`Starting analysis for word: ${word}`);
 
-    // Initialize Anthropic client with proper error handling
-    let anthropic;
-    try {
-      anthropic = new Anthropic({
-        apiKey: apiKey,
-      });
-    } catch (error) {
-      console.error('Failed to initialize Anthropic client:', error);
-      throw new Error('Failed to initialize AI service');
-    }
-
-    // Ensure the client is properly initialized before using it
-    if (!anthropic) {
-      throw new Error('Failed to initialize AI service');
-    }
+    const anthropic = new Anthropic({
+      apiKey: apiKey,
+    });
 
     const response = await anthropic.messages.create({
       model: "claude-3-sonnet-20240229",
