@@ -8,6 +8,7 @@ const corsHeaders = {
 };
 
 serve(async (req) => {
+  // Handle CORS preflight requests
   if (req.method === 'OPTIONS') {
     return new Response(null, { headers: corsHeaders });
   }
@@ -24,7 +25,7 @@ serve(async (req) => {
       throw new Error('Word parameter is required');
     }
 
-    console.log(`Analyzing word: ${word}`);
+    console.log(`Starting analysis for word: ${word}`);
 
     const anthropic = new Anthropic({
       apiKey: apiKey,
@@ -64,7 +65,13 @@ Format your response as a valid JSON object with these exact keys:
 
     let analysis;
     try {
-      analysis = JSON.parse(response.content[0].text);
+      const text = response.content[0].text.trim();
+      // Find the JSON object in the response
+      const jsonMatch = text.match(/\{[\s\S]*\}/);
+      if (!jsonMatch) {
+        throw new Error('No JSON object found in response');
+      }
+      analysis = JSON.parse(jsonMatch[0]);
     } catch (error) {
       console.error('Failed to parse response:', response.content[0].text);
       throw new Error('Failed to parse Claude API response as JSON');
