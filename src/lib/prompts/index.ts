@@ -15,3 +15,4 @@ export * from './summary';
 export * from './weekendClinic';
 export * from './trueOrFalse';
 export * from './synonymAntonym';
+export * from './logicFlow';
