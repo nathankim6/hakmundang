@@ -21,8 +21,7 @@ export const GeneratedQuestion = ({ content, questionNumber, originalText }: Gen
   if (isTrueFalse) {
     const lines = questionPart.split('\n');
     const title = lines[0]; // First line (title)
-    const originalText = lines[1]; // Second line (original text)
-    const questions = lines.slice(2).join('\n'); // Remaining lines (questions)
+    const questions = lines.slice(1).join('\n'); // Remaining lines (questions)
 
     return (
       <div className="mb-8">
@@ -42,7 +41,7 @@ export const GeneratedQuestion = ({ content, questionNumber, originalText }: Gen
             
             {/* Questions Section */}
             <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20">
-              <h4 className="font-semibold text-[#403E43] mb-2">문제</h4>
+              <h4 className="font-semibold text-[#403E43] mb-2">다음 글의 내용으로 옳고 그름(T/F)을 고르시오</h4>
               {questions}
             </div>
             
