@@ -7,6 +7,7 @@ import { VocabularyTable } from './vocabulary/VocabularyTable';
 import { ExportToolbar } from './vocabulary/ExportToolbar';
 import { QuestionData, TableRowData } from './vocabulary/types';
 import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/components/ui/use-toast";
 
 interface Question {
   id: string;
@@ -64,6 +65,7 @@ export const SynonymAntonymEditor = ({ questions }: SynonymAntonymEditorProps) =
       rows: parseQuestionContent(question.content)
     }))
   );
+  const { toast } = useToast();
 
   const analyzeWord = async (word: string) => {
     try {
@@ -71,7 +73,15 @@ export const SynonymAntonymEditor = ({ questions }: SynonymAntonymEditorProps) =
         body: { word }
       });
 
-      if (error) throw error;
+      if (error) {
+        toast({
+          title: "단어 분석 오류",
+          description: "단어를 분석하는 중 오류가 발생했습니다.",
+          variant: "destructive",
+        });
+        throw error;
+      }
+
       return data;
     } catch (error) {
       console.error('Error analyzing word:', error);
@@ -93,6 +103,11 @@ export const SynonymAntonymEditor = ({ questions }: SynonymAntonymEditorProps) =
 
       if (field === 'headword' && typeof value === 'string' && value !== row.headword) {
         // Analyze the new headword using Claude API
+        toast({
+          title: "단어 분석 중",
+          description: "Claude API를 통해 단어를 분석하고 있습니다...",
+        });
+
         analyzeWord(value).then(analysis => {
           if (analysis) {
             setTableData(current => {
@@ -107,6 +122,12 @@ export const SynonymAntonymEditor = ({ questions }: SynonymAntonymEditorProps) =
               
               updatedQuestion.rows[rowIndex] = updatedRow;
               updatedData[questionIndex] = updatedQuestion;
+
+              toast({
+                title: "단어 분석 완료",
+                description: "단어 정보가 성공적으로 업데이트되었습니다.",
+              });
+
               return updatedData;
             });
           }
