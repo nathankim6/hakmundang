@@ -14,8 +14,7 @@ import {
   getIrrelevantPrompt,
   getOrderPrompt,
   getInsertPrompt,
-  getSummaryPrompt,
-  getTrueOrFalsePrompt
+  getSummaryPrompt
 } from "./prompts";
 
 const questionTypes: QuestionType[] = [
@@ -46,7 +45,6 @@ const questionTypes: QuestionType[] = [
 
   // 옳은영어 전용
   { id: "synonymAntonym", name: "동의어/반의어" },
-  { id: "trueOrFalse", name: "True or False" },
   { id: "fourKings", name: "4대천왕" },
   { id: "philosophersStone", name: "Philosopher's Stone" }
 ];
@@ -109,9 +107,6 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
         break;
       case "summary":
         prompt = getSummaryPrompt(text);
-        break;
-      case "trueOrFalse":
-        prompt = getTrueOrFalsePrompt(text);
         break;
       default:
         prompt = `Generate a question of type ${type.name} based on the following text: ${text}`;
