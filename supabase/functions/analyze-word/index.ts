@@ -36,6 +36,8 @@ Format the response as JSON:
   "meaning": string
 }`;
 
+    console.log('Sending request to Claude API with prompt:', prompt);
+
     const response = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: {
@@ -44,7 +46,7 @@ Format the response as JSON:
         'anthropic-version': '2023-06-01'
       },
       body: JSON.stringify({
-        model: 'claude-3-opus-20240229',
+        model: 'claude-3-sonnet-20240229',
         max_tokens: 1000,
         messages: [{ 
           role: 'user', 
@@ -64,11 +66,13 @@ Format the response as JSON:
     const data = await response.json();
     console.log('Claude API response:', JSON.stringify(data));
 
+    // Check if data.content exists and is an array
     if (!data.content || !Array.isArray(data.content)) {
       console.error('Invalid response format from Claude API:', data);
       throw new Error('Invalid response format from Claude API');
     }
 
+    // Get the first content item
     const content = data.content[0];
     if (!content || typeof content !== 'object' || !('text' in content)) {
       console.error('Invalid content format from Claude API:', content);
@@ -76,6 +80,7 @@ Format the response as JSON:
     }
 
     try {
+      // Parse the JSON response from the text content
       const analysis = JSON.parse(content.text);
       console.log('Parsed analysis:', analysis);
       
