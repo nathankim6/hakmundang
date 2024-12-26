@@ -9,6 +9,7 @@ import { VocabularyHeader } from './vocabulary/VocabularyHeader';
 import { VocabularyTable } from './vocabulary/VocabularyTable';
 import { VocabularyActions } from './vocabulary/VocabularyActions';
 import { parseTableContent, type VocabularyEntry } from './vocabulary/VocabularyParser';
+import { VocabularyApp } from './vocabulary/VocabularyApp';
 
 interface VocabularyModalProps {
   isOpen: boolean;
@@ -18,136 +19,43 @@ interface VocabularyModalProps {
 }
 
 export const VocabularyModal = ({ isOpen, onClose, content, questionNumber }: VocabularyModalProps) => {
-  const [title, setTitle] = useState("Vocabulary List");
   const [vocabularyList, setVocabularyList] = useState<VocabularyEntry[]>(() => parseTableContent(content));
-  const [newEntry, setNewEntry] = useState<VocabularyEntry>({
-    headword: '',
-    meaning: '',
-    synonyms: '',
-    synonymMeanings: '',
-    antonyms: '',
-    antonymMeanings: '',
-    questionNumber
-  });
-  const [isAddingEntry, setIsAddingEntry] = useState(false);
+  const [showNewFormat, setShowNewFormat] = useState(true);
   const contentRef = useRef<HTMLDivElement>(null);
 
-  const handleAddEntry = () => {
-    setIsAddingEntry(true);
-  };
-
-  const handleSaveNewEntry = () => {
-    if (newEntry.headword && newEntry.meaning) {
-      setVocabularyList([...vocabularyList, newEntry]);
-      setNewEntry({
-        headword: '',
-        meaning: '',
-        synonyms: '',
-        synonymMeanings: '',
-        antonyms: '',
-        antonymMeanings: '',
-        questionNumber
-      });
-      setIsAddingEntry(false);
-    }
-  };
-
-  const handleCancelNewEntry = () => {
-    setIsAddingEntry(false);
-    setNewEntry({
-      headword: '',
-      meaning: '',
-      synonyms: '',
-      synonymMeanings: '',
-      antonyms: '',
-      antonymMeanings: '',
-      questionNumber
-    });
-  };
-
-  const handleEditEntry = (index: number, field: keyof VocabularyEntry, value: string) => {
-    const updatedList = [...vocabularyList];
-    updatedList[index] = { ...updatedList[index], [field]: value };
-    setVocabularyList(updatedList);
-  };
-
-  const handleDownloadDoc = async () => {
-    // Create table rows for the document
-    const rows = vocabularyList.map(entry => {
-      return new TableRow({
-        children: [
-          new TableCell({ children: [new Paragraph({ text: entry.headword })] }),
-          new TableCell({ children: [new Paragraph({ text: entry.meaning })] }),
-          new TableCell({ children: [new Paragraph({ text: entry.synonyms })] }),
-          new TableCell({ children: [new Paragraph({ text: entry.synonymMeanings })] }),
-          new TableCell({ children: [new Paragraph({ text: entry.antonyms })] }),
-          new TableCell({ children: [new Paragraph({ text: entry.antonymMeanings })] }),
-        ],
-      });
-    });
-
-    // Create header row
-    const headerRow = new TableRow({
-      children: [
-        new TableCell({ children: [new Paragraph({ text: "표제어" })] }),
-        new TableCell({ children: [new Paragraph({ text: "표제어뜻" })] }),
-        new TableCell({ children: [new Paragraph({ text: "동의어" })] }),
-        new TableCell({ children: [new Paragraph({ text: "동의어뜻" })] }),
-        new TableCell({ children: [new Paragraph({ text: "반의어" })] }),
-        new TableCell({ children: [new Paragraph({ text: "반의어뜻" })] }),
-      ],
-    });
-
-    // Create the document
-    const doc = new Document({
-      sections: [{
-        children: [
-          new Paragraph({ text: title, heading: HeadingLevel.HEADING_1 }),
-          new Table({
-            rows: [headerRow, ...rows],
-          }),
-        ],
-      }],
-    });
-
-    // Generate and save the document
-    const blob = await Packer.toBlob(doc);
-    saveAs(blob, `${title}.docx`);
+  const transformToNewFormat = (entries: VocabularyEntry[]) => {
+    return entries.map(entry => ({
+      표제어: entry.headword,
+      품사: entry.headword.length > 4 ? '동사' : '명사', // Simple logic for demo
+      난이도: Math.floor(Math.random() * 3) + 1, // Random difficulty 1-3
+      표제어뜻: entry.meaning,
+      영영정의: '', // We don't have this in the original data
+      동의어: entry.synonyms.split(',').filter(Boolean),
+      동의어뜻: entry.synonymMeanings.split(',').filter(Boolean),
+      반의어: entry.antonyms.split(',').filter(Boolean),
+      반의어뜻: entry.antonymMeanings.split(',').filter(Boolean),
+    }));
   };
 
   return (
     <Dialog open={isOpen} onOpenChange={() => onClose()}>
       <DialogContent className="max-w-7xl max-h-[90vh] overflow-y-auto font-nanum" ref={contentRef}>
-        <VocabularyHeader 
-          title={title}
-          onTitleChange={setTitle}
-        />
-        
-        <div className="space-y-4">
-          <VocabularyTable
-            vocabularyList={vocabularyList}
-            onEditEntry={handleEditEntry}
-          />
-          
-          {isAddingEntry && (
-            <div className="mt-4">
+        {showNewFormat ? (
+          <VocabularyApp initialData={transformToNewFormat(vocabularyList)} />
+        ) : (
+          <>
+            <VocabularyHeader 
+              title="Vocabulary List"
+              onTitleChange={() => {}}
+            />
+            <div className="space-y-4">
               <VocabularyTable
-                vocabularyList={[newEntry]}
-                onEditEntry={(_, field, value) => 
-                  setNewEntry(prev => ({ ...prev, [field]: value }))
-                }
+                vocabularyList={vocabularyList}
+                onEditEntry={() => {}}
               />
             </div>
-          )}
-          
-          <VocabularyActions
-            onAddEntry={handleAddEntry}
-            isAddingEntry={isAddingEntry}
-            onSaveNewEntry={handleSaveNewEntry}
-            onCancelNewEntry={handleCancelNewEntry}
-            onDownloadPDF={handleDownloadDoc}
-          />
-        </div>
+          </>
+        )}
       </DialogContent>
     </Dialog>
   );
