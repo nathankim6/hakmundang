@@ -24,7 +24,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
   
   // 옳은영어 전용
   const contentTypes = types.filter(type => 
-    type.id.match(/^(synonymAntonym|trueOrFalse|fourKings|philosophersStone)$/)
+    type.id.match(/^(synonymAntonym|trueOrFalse|logicFlow|philosophersStone)$/)
   );
   
   const { toast } = useToast();
