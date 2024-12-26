@@ -2,14 +2,8 @@ import React from 'react';
 import { VocabularyDialog } from './vocabulary/VocabularyDialog';
 import { QuestionData, TableRowData } from './vocabulary/types';
 
-interface Question {
-  id: string;
-  content: string;
-  questionNumber: number;
-}
-
 interface SynonymAntonymEditorProps {
-  questions: Question[];
+  questions: QuestionData[];
 }
 
 const parseQuestionContent = (content: string): TableRowData[] => {
@@ -46,10 +40,5 @@ const parseQuestionContent = (content: string): TableRowData[] => {
 }
 
 export const SynonymAntonymEditor = ({ questions }: SynonymAntonymEditorProps) => {
-  const questionData: QuestionData[] = questions.map((question, index) => ({
-    number: question.questionNumber,
-    rows: parseQuestionContent(question.content)
-  }));
-
-  return <VocabularyDialog questions={questionData} />;
+  return <VocabularyDialog questions={questions} />;
 };
