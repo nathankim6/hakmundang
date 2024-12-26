@@ -3,7 +3,7 @@ import {
   Dialog,
   DialogContent,
 } from "@/components/ui/dialog";
-import { Document, Paragraph, Table, TableRow, TableCell, HeadingLevel } from "docx";
+import { Document, Paragraph, Table, TableRow, TableCell, HeadingLevel, Packer } from "docx";
 import { saveAs } from "file-saver";
 import { VocabularyHeader } from './vocabulary/VocabularyHeader';
 import { VocabularyTable } from './vocabulary/VocabularyTable';
