@@ -1,6 +1,7 @@
 import { GeneratedQuestion } from "../GeneratedQuestion";
 import { SynonymAntonymEditor } from "../SynonymAntonymEditor";
 import { VocabularyListModal } from "../vocabulary/VocabularyListModal";
+import { QuestionData } from "../vocabulary/types";
 
 interface Question {
   id: string;
@@ -33,11 +34,19 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
     q.content.includes('| 표제어 | 표제어뜻 | 동의어 | 동의어뜻 | 반의어 | 반의어뜻 |')
   );
 
+  // Transform questions for SynonymAntonymEditor
+  const vocabularyQuestions: QuestionData[] = displayQuestions
+    .filter(q => q.content.includes('| 표제어 | 표제어뜻 | 동의어 | 동의어뜻 | 반의어 | 반의어뜻 |'))
+    .map(q => ({
+      number: q.questionNumber,
+      rows: [] // This will be populated by the SynonymAntonymEditor
+    }));
+
   return (
     <div className="space-y-4 bg-[#F8F7FF] p-6 rounded-lg border border-[#D6BCFA]/30">
-      {hasSynonymAntonymQuestions && (
+      {hasSynonymAntonymQuestions && vocabularyQuestions.length > 0 && (
         <div className="mb-4">
-          <SynonymAntonymEditor questions={displayQuestions} />
+          <SynonymAntonymEditor questions={vocabularyQuestions} />
         </div>
       )}
       
@@ -50,9 +59,9 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
         />
       ))}
 
-      {hasSynonymAntonymQuestions && (
+      {hasSynonymAntonymQuestions && vocabularyQuestions.length > 0 && (
         <div className="mt-8">
-          <VocabularyListModal questions={displayQuestions} />
+          <VocabularyListModal questions={vocabularyQuestions} />
         </div>
       )}
     </div>
