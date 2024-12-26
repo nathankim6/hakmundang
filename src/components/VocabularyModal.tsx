@@ -29,7 +29,7 @@ interface VocabularyEntry {
 
 export const VocabularyModal = ({ isOpen, onClose, content, questionNumber }: VocabularyModalProps) => {
   const [title, setTitle] = useState("Vocabulary List");
-  const [vocabularyList, setVocabularyList] = useState<VocabularyEntry[]>(() => parseTableContent(content, questionNumber));
+  const [vocabularyList, setVocabularyList] = useState<VocabularyEntry[]>(() => parseTableContent(content));
   const [newEntry, setNewEntry] = useState<VocabularyEntry>({
     headword: '',
     meaning: '',
@@ -42,26 +42,29 @@ export const VocabularyModal = ({ isOpen, onClose, content, questionNumber }: Vo
   const [isAddingEntry, setIsAddingEntry] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
 
-  function parseTableContent(content: string, questionNumber?: number): VocabularyEntry[] {
-    console.log('Parsing content:', content); // Debug log
+  function parseTableContent(content: string): VocabularyEntry[] {
+    console.log('Parsing content:', content);
     
     if (!content.trim()) {
-      console.log('Content is empty'); // Debug log
+      console.log('Content is empty');
       return [];
     }
 
-    const tables = content.split('\n\n');
+    const sections = content.split(/문제 \d+/);
     const tableData: VocabularyEntry[] = [];
-    
-    tables.forEach((table, tableIndex) => {
-      const lines = table.split('\n');
+    let currentQuestionNumber = 1;
+
+    sections.forEach((section, sectionIndex) => {
+      if (!section.trim()) return;
+
+      const lines = section.split('\n');
       lines.forEach(line => {
         if (line.includes('|')) {
           const cells = line.split('|')
             .map(cell => cell.trim())
             .filter(cell => cell !== '');
           
-          console.log('Parsed cells:', cells); // Debug log
+          console.log('Parsed cells:', cells);
           
           if (cells.length >= 6 && !line.includes('표제어')) {
             tableData.push({
@@ -71,14 +74,15 @@ export const VocabularyModal = ({ isOpen, onClose, content, questionNumber }: Vo
               synonymMeanings: cells[3],
               antonyms: cells[4],
               antonymMeanings: cells[5],
-              questionNumber: tableIndex + 1
+              questionNumber: currentQuestionNumber
             });
           }
         }
       });
+      currentQuestionNumber++;
     });
     
-    console.log('Parsed table data:', tableData); // Debug log
+    console.log('Parsed table data:', tableData);
     return tableData;
   }
 

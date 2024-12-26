@@ -35,21 +35,21 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
 
   // Combine all vocabulary content with question numbers
   const getAllVocabularyContent = () => {
-    const vocabContent = sortedQuestions
+    const vocabQuestions = sortedQuestions
       .filter(question => 
         question.content.includes('| 표제어 |') || 
         question.content.includes('동의어') || 
         question.content.includes('반의어')
       )
-      .map(question => {
-        // Remove the explanatory text
+      .map((question, index) => {
         const content = question.content;
         const tableStart = content.indexOf('|');
-        return tableStart !== -1 ? content.substring(tableStart) : content;
-      })
-      .join('\n\n');
-    
-    console.log('Vocabulary content:', vocabContent); // Debug log
+        const tableContent = tableStart !== -1 ? content.substring(tableStart) : content;
+        return `문제 ${index + 1}\n${tableContent}`;
+      });
+
+    const vocabContent = vocabQuestions.join('\n\n');
+    console.log('Vocabulary content:', vocabContent);
     return vocabContent;
   };
 
