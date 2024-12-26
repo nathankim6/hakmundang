@@ -1,102 +1,39 @@
 import React, { useState } from 'react';
 import { Star, Edit2, Printer } from 'lucide-react';
 
-const VocabularyApp = () => {
+interface FooterProps {
+  pageNumber: number;
+}
+
+const Footer = ({ pageNumber }: FooterProps) => (
+  <div className="flex items-center justify-end py-4 px-4 print:py-2">
+    <div className="text-sm text-gray-500">
+      - {pageNumber} -
+    </div>
+  </div>
+);
+
+export interface VocabularyWord {
+  표제어: string;
+  품사: string;
+  난이도: number;
+  표제어뜻: string;
+  영영정의: string;
+  동의어: string[];
+  동의어뜻: string[];
+  반의어: string[];
+  반의어뜻: string[];
+}
+
+export interface VocabularyAppProps {
+  data: VocabularyWord[];
+}
+
+export const VocabularyApp: React.FC<VocabularyAppProps> = ({ data }) => {
   const [title, setTitle] = useState("옳은보카(영등포고 1학년 1학기 중간고사 대비)");
   const [isEditingTitle, setIsEditingTitle] = useState(false);
 
-  const data = [
-    {
-      표제어: 'envy',
-      품사: '동사',
-      난이도: 2,
-      표제어뜻: '부러워하다',
-      영영정의: 'to feel unhappy because you want something that someone else has',
-      동의어: ['covet', 'desire', 'long for'],
-      동의어뜻: ['탐내다', '바라다', '갈망하다'],
-      반의어: ['admire', 'appreciate'],
-      반의어뜻: ['감탄하다', '감사하다']
-    },
-    {
-      표제어: 'deceive',
-      품사: '동사',
-      난이도: 3,
-      표제어뜻: '속이다',
-      영영정의: 'to make someone believe something that is not true',
-      동의어: ['mislead', 'delude', 'trick'],
-      동의어뜻: ['오도하다', '현혹하다', '속이다'],
-      반의어: ['enlighten', 'inform'],
-      반의어뜻: ['깨우치다', '알리다']
-    },
-    {
-      표제어: 'ownership',
-      품사: '명사',
-      난이도: 2,
-      표제어뜻: '소유권',
-      영영정의: 'the fact of owning something',
-      동의어: ['possession', 'proprietorship'],
-      동의어뜻: ['소유', '소유권'],
-      반의어: ['dispossession'],
-      반의어뜻: ['박탈']
-    },
-    {
-      표제어: 'passion',
-      품사: '명사',
-      난이도: 2,
-      표제어뜻: '열정',
-      영영정의: 'a very strong feeling of love, hatred, anger, enthusiasm',
-      동의어: ['enthusiasm', 'fervor', 'zeal'],
-      동의어뜻: ['열의', '열광', '열성'],
-      반의어: ['apathy', 'indifference'],
-      반의어뜻: ['무관심', '무관심']
-    },
-    {
-      표제어: 'treat',
-      품사: '동사',
-      난이도: 2,
-      표제어뜻: '대하다',
-      영영정의: 'to behave toward someone or deal with something in a particular way',
-      동의어: ['handle', 'deal with', 'behave toward'],
-      동의어뜻: ['다루다', '처리하다', '대우하다'],
-      반의어: [],
-      반의어뜻: []
-    },
-    {
-      표제어: 'kindly',
-      품사: '부사',
-      난이도: 1,
-      표제어뜻: '친절하게',
-      영영정의: 'in a kind and friendly way',
-      동의어: ['benevolently', 'gently', 'considerately'],
-      동의어뜻: ['자비롭게', '부드럽게', '배려하여'],
-      반의어: ['harshly', 'cruelly'],
-      반의어뜻: ['잔인하게', '잔혹하게']
-    },
-    {
-      표제어: 'limitation',
-      품사: '명사',
-      난이도: 3,
-      표제어뜻: '제한',
-      영영정의: 'a rule or condition that limits something',
-      동의어: ['constraint', 'restriction', 'boundary'],
-      동의어뜻: ['제약', '제한', '경계'],
-      반의어: ['freedom', 'liberty'],
-      반의어뜻: ['자유', '자유']
-    },
-    {
-      표제어: 'cognitive',
-      품사: '형용사',
-      난이도: 3,
-      표제어뜻: '인지의',
-      영영정의: 'related to the mental process of understanding',
-      동의어: ['mental', 'intellectual', 'cerebral'],
-      동의어뜻: ['정신적인', '지적인', '두뇌의'],
-      반의어: [],
-      반의어뜻: []
-    }
-  ];
-
-  const renderDifficulty = (level) => (
+  const renderDifficulty = (level: number) => (
     <div className="flex">
       {[...Array(level)].map((_, i) => (
         <Star key={i} className="w-3 h-3 text-yellow-400 fill-current" />
@@ -105,20 +42,11 @@ const VocabularyApp = () => {
   );
 
   const handlePrint = () => {
-    // PDF 출력을 위한 스타일 적용
     const originalTitle = document.title;
-    document.title = title; // 현재 단어장 제목으로 변경
+    document.title = title;
     window.print();
-    document.title = originalTitle; // 원래 제목으로 복구
+    document.title = originalTitle;
   };
-
-  const Footer = ({ pageNumber }) => (
-    <div className="flex items-center justify-end py-4 px-4 print:py-2">
-      <div className="text-sm text-gray-500">
-        - {pageNumber} -
-      </div>
-    </div>
-  );
 
   return (
     <div className="min-h-screen bg-gray-50 print:bg-white">
@@ -246,7 +174,7 @@ const VocabularyApp = () => {
               </div>
               {index % 8 === 7 && (
                 <div className="col-span-2 print:break-after-page">
-                  <Footer />
+                  <Footer pageNumber={Math.floor(index / 8) + 1} />
                 </div>
               )}
             </React.Fragment>
@@ -257,5 +185,3 @@ const VocabularyApp = () => {
     </div>
   );
 };
-
-export default VocabularyApp;

@@ -9,7 +9,7 @@ import { VocabularyHeader } from './vocabulary/VocabularyHeader';
 import { VocabularyTable } from './vocabulary/VocabularyTable';
 import { VocabularyActions } from './vocabulary/VocabularyActions';
 import { parseTableContent, type VocabularyEntry } from './vocabulary/VocabularyParser';
-import { VocabularyApp } from './vocabulary/VocabularyApp';
+import VocabularyApp from './vocabulary/VocabularyApp';
 import { Button } from './ui/button';
 
 interface VocabularyModalProps {
@@ -75,7 +75,6 @@ export const VocabularyModal = ({ isOpen, onClose, content, questionNumber }: Vo
   };
 
   const handleDownloadDoc = async () => {
-    // Create table rows for the document
     const rows = vocabularyList.map(entry => {
       return new TableRow({
         children: [
@@ -89,7 +88,6 @@ export const VocabularyModal = ({ isOpen, onClose, content, questionNumber }: Vo
       });
     });
 
-    // Create header row
     const headerRow = new TableRow({
       children: [
         new TableCell({ children: [new Paragraph({ text: "표제어" })] }),
@@ -101,7 +99,6 @@ export const VocabularyModal = ({ isOpen, onClose, content, questionNumber }: Vo
       ],
     });
 
-    // Create the document
     const doc = new Document({
       sections: [{
         children: [
@@ -113,7 +110,6 @@ export const VocabularyModal = ({ isOpen, onClose, content, questionNumber }: Vo
       }],
     });
 
-    // Generate and save the document
     const blob = await Packer.toBlob(doc);
     saveAs(blob, `${title}.docx`);
   };
@@ -121,14 +117,14 @@ export const VocabularyModal = ({ isOpen, onClose, content, questionNumber }: Vo
   const transformDataForVocabularyApp = () => {
     return vocabularyList.map(entry => ({
       표제어: entry.headword,
-      품사: '동사', // Default value, you might want to make this dynamic
-      난이도: 2, // Default value, you might want to make this dynamic
+      품사: '동사',
+      난이도: 2,
       표제어뜻: entry.meaning,
-      영영정의: '', // You might want to add this field to your VocabularyEntry type
-      동의어: entry.synonyms.split(',').map(s => s.trim()),
-      동의어뜻: entry.synonymMeanings.split(',').map(s => s.trim()),
-      반의어: entry.antonyms.split(',').map(s => s.trim()),
-      반의어뜻: entry.antonymMeanings.split(',').map(s => s.trim())
+      영영정의: '',
+      동의어: entry.synonyms.split(',').map(s => s.trim()).filter(Boolean),
+      동의어뜻: entry.synonymMeanings.split(',').map(s => s.trim()).filter(Boolean),
+      반의어: entry.antonyms.split(',').map(s => s.trim()).filter(Boolean),
+      반의어뜻: entry.antonymMeanings.split(',').map(s => s.trim()).filter(Boolean)
     }));
   };
 
