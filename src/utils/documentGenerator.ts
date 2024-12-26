@@ -52,19 +52,24 @@ export const generateDocument = (questions: Question[]) => {
             .filter(line => line.includes('|'))
             .map(line => line.split('|').map(cell => cell.trim()));
 
-          const table = new Table({
-            rows: rows.map(cells => new TableRow({
-              children: cells
-                .filter(cell => cell !== '')
-                .map(cell => new TableCell({
-                  children: [new Paragraph({
-                    children: [new TextRun({ text: cell, size: 20 })]
-                  })]
+          // Create a paragraph to wrap the table
+          const tableParagraph = new Paragraph({
+            children: [
+              new Table({
+                rows: rows.map(cells => new TableRow({
+                  children: cells
+                    .filter(cell => cell !== '')
+                    .map(cell => new TableCell({
+                      children: [new Paragraph({
+                        children: [new TextRun({ text: cell, size: 20 })]
+                      })]
+                    }))
                 }))
-            }))
+              })
+            ]
           });
 
-          paragraphs.push(table);
+          paragraphs.push(tableParagraph);
         } else {
           // Add regular question content
           paragraphs.push(

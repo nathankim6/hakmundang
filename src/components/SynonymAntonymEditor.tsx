@@ -26,6 +26,32 @@ interface SynonymAntonymEditorProps {
   questions: Question[];
 }
 
+const parseQuestionContent = (content: string): TableRow[] => {
+  const rows: TableRow[] = [];
+  const lines = content.split('\n');
+  let currentRow: Partial<TableRow> = {};
+
+  lines.forEach(line => {
+    if (line.includes('|')) {
+      const cells = line.split('|').map(cell => cell.trim());
+      if (cells.length >= 7 && !line.includes('-----')) {
+        if (cells[1] && cells[1] !== '표제어') {
+          rows.push({
+            headword: cells[1],
+            meaning: cells[2],
+            synonyms: [cells[3]],
+            synonymMeanings: [cells[4]],
+            antonyms: [cells[5]],
+            antonymMeanings: [cells[6]]
+          });
+        }
+      }
+    }
+  });
+
+  return rows;
+};
+
 export const SynonymAntonymEditor = ({ questions }: SynonymAntonymEditorProps) => {
   const [tableData, setTableData] = useState<{ number: number; rows: TableRow[] }[]>(() => 
     questions.map((question, index) => ({
@@ -33,32 +59,6 @@ export const SynonymAntonymEditor = ({ questions }: SynonymAntonymEditorProps) =
       rows: parseQuestionContent(question.content)
     }))
   );
-
-  const parseQuestionContent = (content: string): TableRow[] => {
-    const rows: TableRow[] = [];
-    const lines = content.split('\n');
-    let currentRow: Partial<TableRow> = {};
-
-    lines.forEach(line => {
-      if (line.includes('|')) {
-        const cells = line.split('|').map(cell => cell.trim());
-        if (cells.length >= 7 && !line.includes('-----')) {
-          if (cells[1] && cells[1] !== '표제어') {
-            rows.push({
-              headword: cells[1],
-              meaning: cells[2],
-              synonyms: [cells[3]],
-              synonymMeanings: [cells[4]],
-              antonyms: [cells[5]],
-              antonymMeanings: [cells[6]]
-            });
-          }
-        }
-      }
-    });
-
-    return rows;
-  };
 
   const handleQuestionNumberChange = (questionIndex: number, newNumber: number) => {
     setTableData(prev => 
@@ -116,15 +116,6 @@ export const SynonymAntonymEditor = ({ questions }: SynonymAntonymEditorProps) =
     XLSX.writeFile(workbook, 'synonym_antonym_tables.xlsx');
   };
 
-  const exportToDoc = () => {
-    const formattedQuestions = tableData.map(question => ({
-      content: formatTableToString(question),
-      questionNumber: question.number,
-    }));
-    
-    generateDocument(formattedQuestions);
-  };
-
   const formatTableToString = (question: { number: number; rows: TableRow[] }) => {
     return `[문제 ${question.number}]\n\n` + 
       '| 표제어 | 표제어뜻 | 동의어 | 동의어뜻 | 반의어 | 반의어뜻 |\n' +
@@ -132,6 +123,15 @@ export const SynonymAntonymEditor = ({ questions }: SynonymAntonymEditorProps) =
       question.rows.map(row => 
         `| ${row.headword} | ${row.meaning} | ${row.synonyms.join(', ')} | ${row.synonymMeanings.join(', ')} | ${row.antonyms.join(', ')} | ${row.antonymMeanings.join(', ')} |`
       ).join('\n');
+  };
+
+  const exportToDoc = () => {
+    const formattedQuestions = tableData.map(question => ({
+      content: formatTableToString(question),
+      questionNumber: question.number,
+    }));
+    
+    generateDocument(formattedQuestions);
   };
 
   return (
