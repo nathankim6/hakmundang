@@ -24,19 +24,30 @@ export const VocabularyListModal = ({ content }: VocabularyListModalProps) => {
     lines.forEach(line => {
       if (line.includes('|')) {
         const cells = line.split('|').map(cell => cell.trim()).filter(Boolean);
-        if (cells.length >= 6 && !line.includes('표제어')) {
+        if (cells.length >= 2 && !line.includes('표제어')) {
           const entry: VocabularyEntry = {
             word: cells[0],
             meaning: cells[1],
-            synonyms: [{
+            synonyms: [],
+            antonyms: []
+          };
+
+          // Process synonyms (cells[2] and cells[3])
+          if (cells[2] && cells[3]) {
+            entry.synonyms.push({
               word: cells[2],
               meaning: cells[3]
-            }],
-            antonyms: [{
+            });
+          }
+
+          // Process antonyms (cells[4] and cells[5])
+          if (cells[4] && cells[5]) {
+            entry.antonyms.push({
               word: cells[4],
               meaning: cells[5]
-            }]
-          };
+            });
+          }
+
           entries.push(entry);
         }
       }
@@ -66,7 +77,7 @@ export const VocabularyListModal = ({ content }: VocabularyListModalProps) => {
         </DialogHeader>
         <div className="rounded-lg border border-[#D6BCFA]/30 overflow-hidden">
           <Table>
-            <TableHeader className="bg-gradient-to-r from-[#F1F0FB] to-[#E5DEFF]">
+            <TableHeader className="bg-gradient-to-r from-[#F1F0FB] to-[#E5DEFF] sticky top-0 z-10">
               <TableRow>
                 <TableHead className="font-bold text-[#222222] w-[15%]">표제어</TableHead>
                 <TableHead className="font-bold text-[#222222] w-[15%]">표제어 뜻</TableHead>
@@ -80,23 +91,23 @@ export const VocabularyListModal = ({ content }: VocabularyListModalProps) => {
               {vocabularyList.map((entry, index) => (
                 <TableRow 
                   key={index}
-                  className={index % 2 === 0 ? 'bg-white' : 'bg-[#F8F7FF]'}
+                  className={index % 2 === 0 ? 'bg-white hover:bg-[#F8F7FF] transition-colors' : 'bg-[#F8F7FF] hover:bg-[#F1F0FB] transition-colors'}
                 >
-                  <TableCell className="font-medium">{entry.word}</TableCell>
-                  <TableCell>{entry.meaning}</TableCell>
-                  <TableCell>
+                  <TableCell className="font-medium border-r border-[#D6BCFA]/10">{entry.word}</TableCell>
+                  <TableCell className="border-r border-[#D6BCFA]/10">{entry.meaning}</TableCell>
+                  <TableCell className="border-r border-[#D6BCFA]/10">
                     {entry.synonyms.map((syn, i) => (
-                      <div key={i} className="mb-1">{syn.word}</div>
+                      <div key={i} className="mb-1 text-[#7E69AB]">{syn.word}</div>
                     ))}
                   </TableCell>
-                  <TableCell>
+                  <TableCell className="border-r border-[#D6BCFA]/10">
                     {entry.synonyms.map((syn, i) => (
                       <div key={i} className="mb-1">{syn.meaning}</div>
                     ))}
                   </TableCell>
-                  <TableCell>
+                  <TableCell className="border-r border-[#D6BCFA]/10">
                     {entry.antonyms.map((ant, i) => (
-                      <div key={i} className="mb-1">{ant.word}</div>
+                      <div key={i} className="mb-1 text-[#9b87f5]">{ant.word}</div>
                     ))}
                   </TableCell>
                   <TableCell>
