@@ -14,3 +14,4 @@ export * from './insert';
 export * from './summary';
 export * from './weekendClinic';
 export * from './trueOrFalse';
+export * from './synonymAntonym';

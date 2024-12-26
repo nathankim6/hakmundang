@@ -15,7 +15,8 @@ import {
   getOrderPrompt,
   getInsertPrompt,
   getSummaryPrompt,
-  getTrueOrFalsePrompt
+  getTrueOrFalsePrompt,
+  getSynonymAntonymPrompt
 } from "./prompts";
 
 const questionTypes: QuestionType[] = [
@@ -112,6 +113,9 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
         break;
       case "trueOrFalse":
         prompt = getTrueOrFalsePrompt(text);
+        break;
+      case "synonymAntonym":
+        prompt = getSynonymAntonymPrompt(text);
         break;
       default:
         prompt = `Generate a question of type ${type.name} based on the following text: ${text}`;
