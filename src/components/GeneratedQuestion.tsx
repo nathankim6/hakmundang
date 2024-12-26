@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { VocabularyListModal } from "./VocabularyListModal";
 
 interface GeneratedQuestionProps {
   content: string;
@@ -9,20 +10,17 @@ interface GeneratedQuestionProps {
 export const GeneratedQuestion = ({ content, questionNumber, originalText }: GeneratedQuestionProps) => {
   const parts = content.split('[정답]');
   let questionPart = parts[0].trim();
-  // Join all parts after the first occurrence of [정답] and trim
   const answerPart = parts.length > 1 ? '[정답]' + parts.slice(1).join('').trim() : '';
 
-  // Remove "[OUTPUT]" from the question part if it exists
   questionPart = questionPart.replace('[OUTPUT]', '').trim();
 
-  // Check if this is a True/False question by looking for "(T/F)" in the content
   const isTrueFalse = questionPart.includes('(T/F)');
+  const isSynonymAntonym = content.includes('| 표제어 |') || content.includes('|표제어|');
 
-  // For True/False questions, we need to handle the format differently
   if (isTrueFalse) {
     const lines = questionPart.split('\n');
-    const title = lines[0]; // First line (title)
-    const questions = lines.slice(1).join('\n'); // Remaining lines (questions)
+    const title = lines[0];
+    const questions = lines.slice(1).join('\n');
 
     return (
       <div className="mb-8">
@@ -34,13 +32,11 @@ export const GeneratedQuestion = ({ content, questionNumber, originalText }: Gen
           </h3>
           
           <div className="space-y-4">
-            {/* Questions Section */}
             <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20">
               <h4 className="font-semibold text-[#403E43] mb-2">다음 글의 내용으로 옳고 그름(T/F)을 고르시오</h4>
               {questions}
             </div>
             
-            {/* Answers and Explanations Section */}
             {answerPart && (
               <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20">
                 <h4 className="font-semibold text-[#403E43] mb-2">정답 및 해설</h4>
@@ -55,7 +51,31 @@ export const GeneratedQuestion = ({ content, questionNumber, originalText }: Gen
     );
   }
 
-  // For other question types, keep the existing format
+  if (isSynonymAntonym) {
+    return (
+      <div className="mb-8">
+        <div className="prose max-w-none">
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-2xl font-bold flex items-center gap-2 m-0">
+              <span className="bg-gradient-to-r from-[#0EA5E9] to-[#403E43] bg-clip-text text-transparent">
+                문제 {questionNumber}
+              </span>
+            </h3>
+            <VocabularyListModal content={content} />
+          </div>
+          
+          <div className="space-y-4">
+            <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F1F0FB] p-4 rounded-lg border border-[#D3E4FD]/30">
+              {content}
+            </div>
+          </div>
+        </div>
+        
+        <div className="mt-6 h-px bg-gradient-to-r from-transparent via-[#0EA5E9]/30 to-transparent" />
+      </div>
+    );
+  }
+
   return (
     <div className="mb-8">
       <div className="prose max-w-none">
@@ -66,7 +86,6 @@ export const GeneratedQuestion = ({ content, questionNumber, originalText }: Gen
         </h3>
         
         <div className="space-y-4">
-          {/* Only show originalText if it's not a weekend clinic question */}
           {originalText && (
             <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20 mb-4">
               {originalText}

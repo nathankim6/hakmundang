@@ -1,17 +1,14 @@
-export interface TableRowData {
-  headword: string;
+export interface WordPair {
+  word: string;
   meaning: string;
-  difficulty: number;
-  partOfSpeech: string;
-  example?: string;
-  exampleTranslation?: string;
-  synonyms: string[];
-  synonymMeanings: string[];
-  antonyms: string[];
-  antonymMeanings: string[];
 }
 
-export interface QuestionData {
-  number: number;
-  rows: TableRowData[];
+export interface VocabularyEntryType {
+  word: string;
+  meaning: string;
+  partOfSpeech: string;
+  definition: string;
+  difficulty: number;
+  synonyms: WordPair[];
+  antonyms: WordPair[];
 }
