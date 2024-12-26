@@ -26,14 +26,8 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
     return a.questionNumber - b.questionNumber;
   });
 
-  // Reassign sequential numbers
-  const displayQuestions = sortedQuestions.map((question, index) => ({
-    ...question,
-    questionNumber: index + 1
-  }));
-
   // Check if any questions are synonym/antonym type
-  const hasSynonymAntonym = displayQuestions.some(
+  const hasSynonymAntonym = sortedQuestions.some(
     question => question.content.includes('| 표제어 |') || 
                 question.content.includes('동의어') || 
                 question.content.includes('반의어')
@@ -41,19 +35,28 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
 
   // Combine all vocabulary content
   const getAllVocabularyContent = () => {
-    return displayQuestions
+    return sortedQuestions
       .filter(question => 
         question.content.includes('| 표제어 |') || 
         question.content.includes('동의어') || 
         question.content.includes('반의어')
       )
-      .map(question => question.content)
+      .map(question => {
+        // Remove the explanatory text
+        const content = question.content;
+        const tableStart = content.indexOf('|');
+        return {
+          content: tableStart !== -1 ? content.substring(tableStart) : content,
+          questionNumber: question.questionNumber
+        };
+      })
+      .map(({ content, questionNumber }) => ({ content, questionNumber }))
       .join('\n\n');
   };
 
   return (
     <div className="space-y-0 bg-[#F8F7FF] p-6 rounded-lg border border-[#D6BCFA]/30">
-      {displayQuestions.map((question) => (
+      {sortedQuestions.map((question) => (
         <GeneratedQuestion 
           key={question.id}
           content={question.content}
