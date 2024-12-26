@@ -43,6 +43,13 @@ export const VocabularyModal = ({ isOpen, onClose, content, questionNumber }: Vo
   const contentRef = useRef<HTMLDivElement>(null);
 
   function parseTableContent(content: string, questionNumber?: number): VocabularyEntry[] {
+    console.log('Parsing content:', content); // Debug log
+    
+    if (!content.trim()) {
+      console.log('Content is empty'); // Debug log
+      return [];
+    }
+
     const tables = content.split('\n\n');
     const tableData: VocabularyEntry[] = [];
     
@@ -53,6 +60,9 @@ export const VocabularyModal = ({ isOpen, onClose, content, questionNumber }: Vo
           const cells = line.split('|')
             .map(cell => cell.trim())
             .filter(cell => cell !== '');
+          
+          console.log('Parsed cells:', cells); // Debug log
+          
           if (cells.length >= 6 && !line.includes('표제어')) {
             tableData.push({
               headword: cells[0],
@@ -68,6 +78,7 @@ export const VocabularyModal = ({ isOpen, onClose, content, questionNumber }: Vo
       });
     });
     
+    console.log('Parsed table data:', tableData); // Debug log
     return tableData;
   }
 

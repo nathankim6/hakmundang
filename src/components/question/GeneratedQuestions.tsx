@@ -35,7 +35,7 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
 
   // Combine all vocabulary content with question numbers
   const getAllVocabularyContent = () => {
-    return sortedQuestions
+    const vocabContent = sortedQuestions
       .filter(question => 
         question.content.includes('| 표제어 |') || 
         question.content.includes('동의어') || 
@@ -45,12 +45,12 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
         // Remove the explanatory text
         const content = question.content;
         const tableStart = content.indexOf('|');
-        return {
-          content: tableStart !== -1 ? content.substring(tableStart) : content,
-          questionNumber: question.questionNumber
-        };
+        return tableStart !== -1 ? content.substring(tableStart) : content;
       })
       .join('\n\n');
+    
+    console.log('Vocabulary content:', vocabContent); // Debug log
+    return vocabContent;
   };
 
   return (
