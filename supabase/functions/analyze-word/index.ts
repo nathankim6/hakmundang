@@ -19,6 +19,8 @@ serve(async (req) => {
       throw new Error('CLAUDE_API_KEY is not set');
     }
 
+    console.log(`Analyzing word: ${word}`);
+
     const prompt = `Analyze the English word "${word}" and provide:
 1. Part of speech (as [명사], [동사], [형용사], [부사], [전치사] etc.)
 2. A simple example sentence with Korean translation
@@ -51,16 +53,41 @@ Format the response as JSON:
     });
 
     const data = await response.json();
-    const analysis = JSON.parse(data.content[0].text);
+    console.log('Claude API response:', JSON.stringify(data));
 
-    return new Response(JSON.stringify(analysis), {
-      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-    });
+    if (!data.content || !Array.isArray(data.content) || data.content.length === 0) {
+      console.error('Invalid response format from Claude API:', data);
+      throw new Error('Invalid response format from Claude API');
+    }
+
+    const content = data.content[0];
+    if (!content || typeof content !== 'object' || !('text' in content)) {
+      console.error('Invalid content format from Claude API:', content);
+      throw new Error('Invalid content format from Claude API');
+    }
+
+    try {
+      const analysis = JSON.parse(content.text);
+      console.log('Parsed analysis:', analysis);
+      
+      return new Response(JSON.stringify(analysis), {
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+      });
+    } catch (parseError) {
+      console.error('Failed to parse Claude response as JSON:', content.text);
+      throw new Error('Failed to parse Claude response as JSON');
+    }
   } catch (error) {
     console.error('Error:', error);
-    return new Response(JSON.stringify({ error: error.message }), {
-      status: 500,
-      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-    });
+    return new Response(
+      JSON.stringify({ 
+        error: error.message,
+        details: error.stack
+      }), 
+      {
+        status: 500,
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+      }
+    );
   }
 });
