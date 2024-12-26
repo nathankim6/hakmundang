@@ -15,7 +15,6 @@ import {
   getOrderPrompt,
   getInsertPrompt,
   getSummaryPrompt,
-  getWeekendClinicPrompt,
   getTrueOrFalsePrompt
 } from "./prompts";
 
@@ -45,21 +44,10 @@ const questionTypes: QuestionType[] = [
   { id: "seongVocab3", name: "[성남고] 어휘3(영영사전)" },
   { id: "dangListen", name: "[당곡고] 듣기변형" },
 
-  // 서술형
-  { id: "descriptiveSummary", name: "[서술형] 요약문 빈칸완성" },
-  { id: "descriptiveArrange", name: "[서술형] 배열영작(우리말O)" },
-  { id: "descriptiveConditionKor", name: "[서술형] 조건영작(우리말O)" },
-  { id: "descriptiveCondition", name: "[서술형] 조건영작(우리말X)" },
-  { id: "descriptiveVocab", name: "[서술형] 어휘" },
-  { id: "descriptiveVocabBlank", name: "[서술형] 어휘 빈칸완성" },
-  { id: "descriptiveGrammar", name: "[서술형] 어법" },
-  { id: "descriptiveConditionKor2", name: "[서술형] 조건영작(우리말O)" },
-
   // 옳은영어 전용
   { id: "synonymAntonym", name: "동의어/반의어" },
   { id: "trueOrFalse", name: "True or False" },
   { id: "fourKings", name: "4대천왕" },
-  { id: "weekendClinic", name: "주말클리닉" },
   { id: "philosophersStone", name: "Philosopher's Stone" }
 ];
 
@@ -121,9 +109,6 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
         break;
       case "summary":
         prompt = getSummaryPrompt(text);
-        break;
-      case "weekendClinic":
-        prompt = getWeekendClinicPrompt(text);
         break;
       case "trueOrFalse":
         prompt = getTrueOrFalsePrompt(text);
