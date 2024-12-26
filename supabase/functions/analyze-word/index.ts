@@ -1,6 +1,6 @@
-import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 import "https://deno.land/x/xhr@0.1.0/mod.ts";
-import { Anthropic } from "https://esm.sh/@anthropic-ai/sdk@0.10.2";
+import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
+import { Anthropic } from "npm:@anthropic-ai/sdk";
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
@@ -33,6 +33,8 @@ serve(async (req) => {
       apiKey: apiKey,
     });
 
+    console.log('Anthropic client initialized successfully');
+
     const response = await anthropic.messages.create({
       model: "claude-3-sonnet-20240229",
       max_tokens: 1000,
@@ -58,7 +60,7 @@ Format your response as a valid JSON object with these exact keys:
       }]
     });
 
-    console.log('Raw Claude response:', JSON.stringify(response));
+    console.log('Received response from Anthropic:', response);
 
     if (!response?.content?.[0]?.text) {
       console.error('Invalid response structure:', response);
@@ -96,7 +98,6 @@ Format your response as a valid JSON object with these exact keys:
     return new Response(JSON.stringify(analysis), {
       headers: { ...corsHeaders, 'Content-Type': 'application/json' },
     });
-
   } catch (error) {
     console.error('Error in analyze-word function:', error);
     return new Response(JSON.stringify({ 
