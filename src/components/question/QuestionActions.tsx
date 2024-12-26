@@ -122,7 +122,8 @@ export const useQuestionActions = ({
           .filter(passage => passage.result)
           .map((passage, index) => ({
             content: passage.result,
-            questionNumber: index + 1
+            questionNumber: index + 1,
+            originalText: typeEntry.type.id === "weekendClinic" ? passage.text : undefined
           }))
       )
       .sort((a, b) => a.questionNumber - b.questionNumber);
