@@ -46,16 +46,25 @@ Format the response as JSON:
       body: JSON.stringify({
         model: 'claude-3-opus-20240229',
         max_tokens: 1000,
-        messages: [
-          { role: 'user', content: prompt }
-        ]
+        messages: [{ 
+          role: 'user', 
+          content: prompt 
+        }],
+        temperature: 0.7
       })
     });
+
+    if (!response.ok) {
+      console.error('Claude API error:', response.status, response.statusText);
+      const errorText = await response.text();
+      console.error('Error details:', errorText);
+      throw new Error(`Claude API error: ${response.status} ${response.statusText}`);
+    }
 
     const data = await response.json();
     console.log('Claude API response:', JSON.stringify(data));
 
-    if (!data.content || !Array.isArray(data.content) || data.content.length === 0) {
+    if (!data.content || !Array.isArray(data.content)) {
       console.error('Invalid response format from Claude API:', data);
       throw new Error('Invalid response format from Claude API');
     }
@@ -70,19 +79,28 @@ Format the response as JSON:
       const analysis = JSON.parse(content.text);
       console.log('Parsed analysis:', analysis);
       
+      // Validate the analysis object has all required fields
+      const requiredFields = ['partOfSpeech', 'example', 'exampleTranslation', 'difficulty', 'meaning'];
+      for (const field of requiredFields) {
+        if (!(field in analysis)) {
+          throw new Error(`Missing required field: ${field}`);
+        }
+      }
+
       return new Response(JSON.stringify(analysis), {
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
       });
     } catch (parseError) {
       console.error('Failed to parse Claude response as JSON:', content.text);
-      throw new Error('Failed to parse Claude response as JSON');
+      throw new Error(`Failed to parse Claude response as JSON: ${parseError.message}`);
     }
   } catch (error) {
     console.error('Error:', error);
     return new Response(
       JSON.stringify({ 
         error: error.message,
-        details: error.stack
+        details: error.stack,
+        timestamp: new Date().toISOString()
       }), 
       {
         status: 500,
