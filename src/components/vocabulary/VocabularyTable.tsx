@@ -6,14 +6,12 @@ import { QuestionData, TableRowData } from './types';
 interface VocabularyTableProps {
   question: QuestionData;
   questionIndex: number;
-  onQuestionNumberChange: (questionIndex: number, newNumber: number) => void;
   onCellChange: (questionIndex: number, rowIndex: number, field: keyof TableRowData, value: string | number, subIndex?: number) => void;
 }
 
 export const VocabularyTable = ({ 
   question, 
-  questionIndex, 
-  onQuestionNumberChange,
+  questionIndex,
   onCellChange 
 }: VocabularyTableProps) => {
   return (

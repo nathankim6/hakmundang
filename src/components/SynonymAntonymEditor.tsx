@@ -138,7 +138,6 @@ export const SynonymAntonymEditor = ({ questions }: SynonymAntonymEditorProps) =
               key={questionIndex}
               question={question}
               questionIndex={questionIndex}
-              onQuestionNumberChange={handleCellChange}
               onCellChange={handleCellChange}
             />
           ))}
