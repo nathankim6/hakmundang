@@ -26,11 +26,12 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
     return a.questionNumber - b.questionNumber;
   });
 
-  // Check if any questions are synonym/antonym type
-  const hasSynonymAntonym = sortedQuestions.some(
+  // Check if any questions are vocabulary or synonym/antonym type
+  const hasVocabulary = sortedQuestions.some(
     question => question.content.includes('| 표제어 |') || 
                 question.content.includes('동의어') || 
-                question.content.includes('반의어')
+                question.content.includes('반의어') ||
+                question.content.includes('vocabulary')
   );
 
   // Combine all vocabulary content with question numbers
@@ -39,7 +40,8 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
       .filter(question => 
         question.content.includes('| 표제어 |') || 
         question.content.includes('동의어') || 
-        question.content.includes('반의어')
+        question.content.includes('반의어') ||
+        question.content.includes('vocabulary')
       )
       .map((question, index) => {
         const content = question.content;
@@ -65,7 +67,7 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
         />
       ))}
       
-      {hasSynonymAntonym && (
+      {hasVocabulary && (
         <div className="flex justify-center mt-8">
           <Button
             variant="outline"
