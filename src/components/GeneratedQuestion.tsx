@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { VocabularyListModal } from "./VocabularyListModal";
 
 interface GeneratedQuestionProps {
   content: string;
@@ -17,6 +18,9 @@ export const GeneratedQuestion = ({ content, questionNumber, originalText }: Gen
 
   // Check if this is a True/False question by looking for "(T/F)" in the content
   const isTrueFalse = questionPart.includes('(T/F)');
+  
+  // Check if this is a synonym/antonym question by looking for the table format
+  const isSynonymAntonym = content.includes('| 표제어 |') || content.includes('|표제어|');
 
   // For True/False questions, we need to handle the format differently
   if (isTrueFalse) {
@@ -47,6 +51,32 @@ export const GeneratedQuestion = ({ content, questionNumber, originalText }: Gen
                 {answerPart}
               </div>
             )}
+          </div>
+        </div>
+        
+        <div className="mt-6 h-px bg-gradient-to-r from-transparent via-[#0EA5E9]/30 to-transparent" />
+      </div>
+    );
+  }
+
+  // For synonym/antonym questions, show the vocabulary list modal
+  if (isSynonymAntonym) {
+    return (
+      <div className="mb-8">
+        <div className="prose max-w-none">
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-2xl font-bold flex items-center gap-2 m-0">
+              <span className="bg-gradient-to-r from-[#0EA5E9] to-[#403E43] bg-clip-text text-transparent">
+                문제 {questionNumber}
+              </span>
+            </h3>
+            <VocabularyListModal content={content} />
+          </div>
+          
+          <div className="space-y-4">
+            <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F1F0FB] p-4 rounded-lg border border-[#D3E4FD]/30">
+              {content}
+            </div>
           </div>
         </div>
         
