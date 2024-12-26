@@ -67,6 +67,7 @@ export const VocabularyModal = ({ isOpen, onClose, content, questionNumber }: Vo
           console.log('Parsed cells:', cells);
           
           if (cells.length >= 6 && !line.includes('표제어')) {
+            // Handle multiple entries by preserving commas
             tableData.push({
               headword: cells[0],
               meaning: cells[1],
@@ -153,7 +154,7 @@ export const VocabularyModal = ({ isOpen, onClose, content, questionNumber }: Vo
 
   return (
     <Dialog open={isOpen} onOpenChange={() => onClose()}>
-      <DialogContent className="max-w-7xl max-h-[90vh] overflow-y-auto" ref={contentRef}>
+      <DialogContent className="max-w-7xl max-h-[90vh] overflow-y-auto font-nanum" ref={contentRef}>
         <VocabularyHeader 
           title={title}
           onTitleChange={setTitle}
