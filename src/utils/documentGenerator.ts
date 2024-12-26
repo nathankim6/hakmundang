@@ -1,4 +1,4 @@
-import { Document, Paragraph, TextRun, Table, TableRow, TableCell, Packer } from "docx";
+import { Document, Paragraph, TextRun, Table, TableRow, TableCell, Packer, BorderStyle } from "docx";
 import { saveAs } from "file-saver";
 
 interface Question {
@@ -14,16 +14,21 @@ export const generateDocument = (questions: Question[]) => {
       children: questions.flatMap(question => {
         const paragraphs: Paragraph[] = [];
 
-        // Add question number
+        // Add question number with enhanced styling
         paragraphs.push(
           new Paragraph({
             children: [
               new TextRun({
                 text: `문제 ${question.questionNumber}`,
                 bold: true,
-                size: 28,
+                size: 32,
+                color: "2563EB",
               }),
             ],
+            spacing: {
+              before: 400,
+              after: 200,
+            },
           })
         );
 
@@ -56,17 +61,43 @@ export const generateDocument = (questions: Question[]) => {
           const tableParagraph = new Paragraph({
             children: [
               new Table({
-                rows: rows.map(cells => new TableRow({
+                rows: rows.map((cells, rowIndex) => new TableRow({
                   children: cells
                     .filter(cell => cell !== '')
-                    .map(cell => new TableCell({
+                    .map((cell, cellIndex) => new TableCell({
                       children: [new Paragraph({
-                        children: [new TextRun({ text: cell, size: 20 })]
-                      })]
+                        children: [new TextRun({ 
+                          text: cell, 
+                          size: 20,
+                          bold: rowIndex === 0, // Make header row bold
+                          color: rowIndex === 0 ? "2563EB" : "000000" // Blue header text
+                        })]
+                      })],
+                      borders: {
+                        top: { style: BorderStyle.SINGLE, size: 1, color: "E5E7EB" },
+                        bottom: { style: BorderStyle.SINGLE, size: 1, color: "E5E7EB" },
+                        left: { style: BorderStyle.SINGLE, size: 1, color: "E5E7EB" },
+                        right: { style: BorderStyle.SINGLE, size: 1, color: "E5E7EB" },
+                      },
+                      shading: {
+                        fill: rowIndex === 0 ? "F3F4F6" : "FFFFFF", // Light gray header background
+                      },
+                      width: {
+                        size: cellIndex === 0 || cellIndex === 1 ? 2000 : 2500,
+                        type: "dxa",
+                      },
                     }))
-                }))
+                })),
+                width: {
+                  size: 9000,
+                  type: "dxa",
+                },
               })
-            ]
+            ],
+            spacing: {
+              before: 200,
+              after: 400,
+            },
           });
 
           paragraphs.push(tableParagraph);
@@ -93,7 +124,7 @@ export const generateDocument = (questions: Question[]) => {
     }],
   });
 
-  // Generate and save the document using Packer
+  // Generate and save the document
   Packer.toBlob(doc).then((blob) => {
     saveAs(blob, "generated_questions.docx");
   });
