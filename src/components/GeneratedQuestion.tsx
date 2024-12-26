@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 interface GeneratedQuestionProps {
   content: string;
   questionNumber: number;
-  originalText?: string;  // Add optional originalText prop
+  originalText?: string;
 }
 
 export const GeneratedQuestion = ({ content, questionNumber, originalText }: GeneratedQuestionProps) => {
@@ -30,7 +30,8 @@ export const GeneratedQuestion = ({ content, questionNumber, originalText }: Gen
         </h3>
         
         <div className="space-y-4">
-          {isWeekendClinic && originalText && (
+          {/* Only show originalText if it's not a weekend clinic question */}
+          {!isWeekendClinic && originalText && (
             <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20 mb-4">
               {originalText}
             </div>
