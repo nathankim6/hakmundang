@@ -33,12 +33,6 @@ export const GeneratedQuestion = ({ content, questionNumber, originalText }: Gen
           </h3>
           
           <div className="space-y-4">
-            {/* Original Text Section */}
-            <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F1F0FB] p-4 rounded-lg border border-[#D3E4FD]/30">
-              <h4 className="font-semibold text-[#403E43] mb-2">원문</h4>
-              {originalText}
-            </div>
-            
             {/* Questions Section */}
             <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20">
               <h4 className="font-semibold text-[#403E43] mb-2">다음 글의 내용으로 옳고 그름(T/F)을 고르시오</h4>
