@@ -11,10 +11,21 @@ interface TypeSelectorProps {
 
 export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelectorProps) => {
   const types = getQuestionTypes();
-  const readingTypes = types.slice(0, 15);
-  const schoolTypes = types.slice(15, 22);
-  const descriptiveTypes = types.slice(22, 28);
-  const contentTypes = types.slice(28);
+  
+  // 수능형 (index 0-13)
+  const readingTypes = types.filter(type => 
+    type.id.match(/^(purpose|mood|claim|implication|mainPoint|topic|title|vocabulary|blank|blankMultiple|irrelevant|order|insert|summary)$/)
+  );
+  
+  // 내신형 (index 14-20)
+  const schoolTypes = types.filter(type => 
+    type.id.match(/^(sung|seong|dang)/)
+  );
+  
+  // 옳은영어 전용
+  const contentTypes = types.filter(type => 
+    type.id.match(/^(synonymAntonym|trueOrFalse|fourKings|philosophersStone)$/)
+  );
   
   const { toast } = useToast();
   const hasAccess = localStorage.getItem("hasAccess") === "true";
@@ -44,13 +55,6 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
       <TypeCategory
         title="내신형"
         types={schoolTypes}
-        selectedTypes={selectedTypes}
-        hasAccess={hasAccess}
-        onTypeClick={handleTypeClick}
-      />
-      <TypeCategory
-        title="서술형"
-        types={descriptiveTypes}
         selectedTypes={selectedTypes}
         hasAccess={hasAccess}
         onTypeClick={handleTypeClick}
