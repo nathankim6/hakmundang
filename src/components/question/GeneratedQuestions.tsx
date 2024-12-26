@@ -1,7 +1,6 @@
-import { GeneratedQuestion } from "../GeneratedQuestion";
-import { SynonymAntonymEditor } from "../SynonymAntonymEditor";
-import { VocabularyListModal } from "../vocabulary/VocabularyListModal";
-import { QuestionData } from "../vocabulary/types";
+import React from 'react';
+import { SynonymAntonymEditor } from '../SynonymAntonymEditor';
+import { QuestionData } from '../vocabulary/types';
 
 interface Question {
   id: string;
@@ -14,54 +13,57 @@ interface GeneratedQuestionsProps {
   questions: Question[];
 }
 
-export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
-  // Sort questions by their content to maintain consistency
-  const sortedQuestions = [...questions].sort((a, b) => {
-    if (!a.content && !b.content) return 0;
-    if (!a.content) return 1;
-    if (!b.content) return -1;
-    return a.questionNumber - b.questionNumber;
-  });
-
-  // Reassign sequential numbers
-  const displayQuestions = sortedQuestions.map((question, index) => ({
-    ...question,
-    questionNumber: index + 1
+export const GeneratedQuestions: React.FC<GeneratedQuestionsProps> = ({ questions }) => {
+  // Transform questions into QuestionData format
+  const vocabularyQuestions: QuestionData[] = questions.map((question) => ({
+    number: question.questionNumber,
+    rows: question.content.split('\n')
+      .filter(line => line.includes('|'))
+      .map(line => {
+        const cells = line.split('|').map(cell => cell.trim());
+        if (cells.length >= 7 && !line.includes('-----') && cells[1] && cells[1] !== '표제어') {
+          return {
+            headword: cells[1],
+            meaning: cells[2],
+            difficulty: 1,
+            partOfSpeech: '',
+            example: '',
+            synonyms: cells[3].split(/[,;\n]/).map(s => s.trim()).filter(s => s),
+            synonymMeanings: cells[4].split(/[,;\n]/).map(s => s.trim()).filter(s => s),
+            antonyms: cells[5].split(/[,;\n]/).map(s => s.trim()).filter(s => s),
+            antonymMeanings: cells[6].split(/[,;\n]/).map(s => s.trim()).filter(s => s)
+          };
+        }
+        return null;
+      })
+      .filter(row => row !== null)
   }));
 
-  // Check if any questions are synonym/antonym type
-  const hasSynonymAntonymQuestions = displayQuestions.some(q => 
-    q.content.includes('| 표제어 | 표제어뜻 | 동의어 | 동의어뜻 | 반의어 | 반의어뜻 |')
-  );
-
-  // Transform questions for SynonymAntonymEditor
-  const vocabularyQuestions: QuestionData[] = displayQuestions
-    .filter(q => q.content.includes('| 표제어 | 표제어뜻 | 동의어 | 동의어뜻 | 반의어 | 반의어뜻 |'))
-    .map(q => ({
-      number: q.questionNumber,
-      rows: [] // This will be populated by the SynonymAntonymEditor
-    }));
-
   return (
-    <div className="space-y-4 bg-[#F8F7FF] p-6 rounded-lg border border-[#D6BCFA]/30">
-      {hasSynonymAntonymQuestions && vocabularyQuestions.length > 0 && (
-        <div className="mb-4">
-          <SynonymAntonymEditor questions={vocabularyQuestions} />
-        </div>
-      )}
-      
-      {displayQuestions.map((question) => (
-        <GeneratedQuestion 
-          key={question.id}
-          content={question.content}
-          questionNumber={question.questionNumber}
-          originalText={question.originalText}
-        />
-      ))}
-
-      {hasSynonymAntonymQuestions && vocabularyQuestions.length > 0 && (
-        <div className="mt-8">
-          <VocabularyListModal questions={vocabularyQuestions} />
+    <div className="space-y-8">
+      {questions.length > 0 && (
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold">생성된 문제</h2>
+          <div className="space-y-6">
+            {questions.map((question, index) => (
+              <div key={question.id} className="p-6 bg-white rounded-lg shadow-sm border border-gray-100">
+                <div className="prose max-w-none">
+                  <h3 className="text-lg font-semibold mb-4">문제 {index + 1}</h3>
+                  {question.originalText && (
+                    <div className="mb-4 p-4 bg-gray-50 rounded-md">
+                      <h4 className="text-sm font-medium text-gray-500 mb-2">원문</h4>
+                      <p className="text-sm text-gray-700 whitespace-pre-wrap">{question.originalText}</p>
+                    </div>
+                  )}
+                  <div className="whitespace-pre-wrap">{question.content}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          {vocabularyQuestions.length > 0 && (
+            <SynonymAntonymEditor questions={vocabularyQuestions} />
+          )}
         </div>
       )}
     </div>
