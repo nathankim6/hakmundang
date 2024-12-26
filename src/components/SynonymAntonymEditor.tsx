@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import * as XLSX from 'xlsx';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
@@ -22,33 +22,32 @@ interface SynonymAntonymEditorProps {
 const parseQuestionContent = (content: string): TableRowData[] => {
   const rows: TableRowData[] = [];
   const lines = content.split('\n');
-
+  
+  let currentRow: TableRowData | null = null;
+  
   lines.forEach(line => {
     if (line.includes('|')) {
       const cells = line.split('|').map(cell => cell.trim());
       if (cells.length >= 7 && !line.includes('-----')) {
+        // Skip header row
         if (cells[1] && cells[1] !== '표제어') {
-          // Split multiple synonyms and antonyms by comma or semicolon
-          const synonyms = cells[3].split(/[,;]/).map(s => s.trim()).filter(s => s);
-          const synonymMeanings = cells[4].split(/[,;]/).map(s => s.trim()).filter(s => s);
-          const antonyms = cells[5].split(/[,;]/).map(s => s.trim()).filter(s => s);
-          const antonymMeanings = cells[6].split(/[,;]/).map(s => s.trim()).filter(s => s);
+          // Split multiple synonyms and antonyms by comma, semicolon, or newline
+          const synonyms = cells[3].split(/[,;\n]/).map(s => s.trim()).filter(s => s);
+          const synonymMeanings = cells[4].split(/[,;\n]/).map(s => s.trim()).filter(s => s);
+          const antonyms = cells[5].split(/[,;\n]/).map(s => s.trim()).filter(s => s);
+          const antonymMeanings = cells[6].split(/[,;\n]/).map(s => s.trim()).filter(s => s);
 
-          // Ensure arrays have length 3, pad with empty strings if needed
-          const padArray = (arr: string[]) => {
-            return [...arr, '', '', ''].slice(0, 3);
-          };
-
+          // Create a row for each word
           rows.push({
             headword: cells[1],
             meaning: cells[2],
             difficulty: 1,
             partOfSpeech: '',
             example: '',
-            synonyms: padArray(synonyms),
-            synonymMeanings: padArray(synonymMeanings),
-            antonyms: padArray(antonyms),
-            antonymMeanings: padArray(antonymMeanings)
+            synonyms: [...synonyms, '', '', ''].slice(0, 3),
+            synonymMeanings: [...synonymMeanings, '', '', ''].slice(0, 3),
+            antonyms: [...antonyms, '', '', ''].slice(0, 3),
+            antonymMeanings: [...antonymMeanings, '', '', ''].slice(0, 3)
           });
         }
       }
@@ -56,7 +55,7 @@ const parseQuestionContent = (content: string): TableRowData[] => {
   });
 
   return rows;
-};
+}
 
 export const SynonymAntonymEditor = ({ questions }: SynonymAntonymEditorProps) => {
   const [tableData, setTableData] = useState<QuestionData[]>(() => 
@@ -66,6 +65,40 @@ export const SynonymAntonymEditor = ({ questions }: SynonymAntonymEditorProps) =
     }))
   );
   const { toast } = useToast();
+
+  // Analyze all headwords when component mounts
+  useEffect(() => {
+    const analyzeAllHeadwords = async () => {
+      const updatedData = [...tableData];
+      
+      for (let questionIndex = 0; questionIndex < updatedData.length; questionIndex++) {
+        const question = updatedData[questionIndex];
+        for (let rowIndex = 0; rowIndex < question.rows.length; rowIndex++) {
+          const row = question.rows[rowIndex];
+          if (row.headword && !row.partOfSpeech) {
+            try {
+              const analysis = await analyzeWord(row.headword);
+              if (analysis) {
+                question.rows[rowIndex] = {
+                  ...row,
+                  partOfSpeech: analysis.partOfSpeech,
+                  example: `${analysis.example}\n${analysis.exampleTranslation}`,
+                  difficulty: analysis.difficulty,
+                  meaning: analysis.meaning
+                };
+              }
+            } catch (error) {
+              console.error(`Error analyzing word ${row.headword}:`, error);
+            }
+          }
+        }
+      }
+      
+      setTableData(updatedData);
+    };
+
+    analyzeAllHeadwords();
+  }, []);
 
   const analyzeWord = async (word: string) => {
     try {
