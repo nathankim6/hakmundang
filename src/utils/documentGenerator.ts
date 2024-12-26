@@ -4,7 +4,6 @@ import { saveAs } from "file-saver";
 interface Question {
   content: string;
   questionNumber: number;
-  originalText?: string;
 }
 
 export const generateDocument = (questions: Question[]) => {
@@ -19,7 +18,7 @@ export const generateDocument = (questions: Question[]) => {
           new Paragraph({
             children: [
               new TextRun({
-                text: `문제 ${question.questionNumber}`,
+                text: `[문제 ${question.questionNumber}]`,
                 bold: true,
                 size: 32,
                 color: "2563EB",
@@ -44,30 +43,45 @@ export const generateDocument = (questions: Question[]) => {
             rows: rows.map((cells, rowIndex) => new TableRow({
               children: cells
                 .filter(cell => cell !== '')
-                .map((cell, cellIndex) => new TableCell({
-                  children: [new Paragraph({
-                    children: [new TextRun({ 
-                      text: cell, 
-                      size: 24,
-                      bold: rowIndex === 0,
-                      color: rowIndex === 0 ? "2563EB" : "000000"
+                .map((cell, cellIndex) => {
+                  // Extract difficulty stars if present
+                  const stars = cell.match(/★+/)?.[0]?.length || 0;
+                  const cleanText = cell.replace(/★+/, '').trim();
+                  
+                  return new TableCell({
+                    children: [new Paragraph({
+                      children: [
+                        new TextRun({ 
+                          text: cleanText,
+                          size: 24,
+                          bold: rowIndex === 0,
+                          color: rowIndex === 0 ? "2563EB" : "000000"
+                        }),
+                        ...(stars > 0 ? [
+                          new TextRun({
+                            text: " " + "★".repeat(stars),
+                            color: "FFD700",
+                            size: 24,
+                          })
+                        ] : [])
+                      ],
+                      spacing: { before: 120, after: 120 },
                     })],
-                    spacing: { before: 120, after: 120 },
-                  })],
-                  borders: {
-                    top: { style: BorderStyle.SINGLE, size: 1, color: "E5E7EB" },
-                    bottom: { style: BorderStyle.SINGLE, size: 1, color: "E5E7EB" },
-                    left: { style: BorderStyle.SINGLE, size: 1, color: "E5E7EB" },
-                    right: { style: BorderStyle.SINGLE, size: 1, color: "E5E7EB" },
-                  },
-                  shading: {
-                    fill: rowIndex === 0 ? "F3F4F6" : "FFFFFF",
-                  },
-                  width: {
-                    size: cellIndex === 0 || cellIndex === 1 ? 2000 : 2500,
-                    type: "dxa",
-                  },
-                })),
+                    borders: {
+                      top: { style: BorderStyle.SINGLE, size: 1, color: "E5E7EB" },
+                      bottom: { style: BorderStyle.SINGLE, size: 1, color: "E5E7EB" },
+                      left: { style: BorderStyle.SINGLE, size: 1, color: "E5E7EB" },
+                      right: { style: BorderStyle.SINGLE, size: 1, color: "E5E7EB" },
+                    },
+                    shading: {
+                      fill: rowIndex === 0 ? "F3F4F6" : "FFFFFF",
+                    },
+                    width: {
+                      size: cellIndex === 0 || cellIndex === 1 ? 2000 : 2500,
+                      type: "dxa",
+                    },
+                  });
+                }),
               height: { value: 400, rule: "atLeast" },
             })),
             width: {
@@ -76,29 +90,7 @@ export const generateDocument = (questions: Question[]) => {
             },
           });
 
-          // Wrap table in a paragraph
-          paragraphs.push(
-            new Paragraph({
-              children: [table],
-              spacing: { before: 200, after: 400 },
-            })
-          );
-        } else {
-          // Add regular question content
-          paragraphs.push(
-            new Paragraph({
-              children: [
-                new TextRun({
-                  text: question.content,
-                  size: 24,
-                }),
-              ],
-              spacing: {
-                before: 400,
-                after: 800,
-              },
-            })
-          );
+          paragraphs.push(new Paragraph({ children: [table] }));
         }
 
         return paragraphs;
@@ -106,7 +98,6 @@ export const generateDocument = (questions: Question[]) => {
     }],
   });
 
-  // Generate and save the document
   Packer.toBlob(doc).then((blob) => {
     saveAs(blob, "generated_questions.docx");
   });

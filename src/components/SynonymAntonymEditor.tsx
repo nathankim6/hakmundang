@@ -29,6 +29,9 @@ const parseQuestionContent = (content: string): TableRowData[] => {
           rows.push({
             headword: cells[1],
             meaning: cells[2],
+            difficulty: 1,
+            partOfSpeech: '',
+            example: '',
             synonyms: [cells[3], '', ''],
             synonymMeanings: [cells[4], '', ''],
             antonyms: [cells[5], '', ''],
