@@ -1,6 +1,6 @@
 import React from 'react';
 import { VocabularyDialog } from './vocabulary/VocabularyDialog';
-import { QuestionData } from './vocabulary/types';
+import { QuestionData, TableRowData } from './vocabulary/types';
 
 interface Question {
   id: string;
