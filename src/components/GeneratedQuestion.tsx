@@ -1,11 +1,4 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { useState } from "react";
-import { FileDown } from "lucide-react";
-import * as XLSX from 'xlsx';
-import { saveAs } from 'file-saver';
-import { Document, Paragraph, Table, TableRow, TableCell, Packer } from "docx";
 
 interface GeneratedQuestionProps {
   content: string;
@@ -14,90 +7,22 @@ interface GeneratedQuestionProps {
 }
 
 export const GeneratedQuestion = ({ content, questionNumber, originalText }: GeneratedQuestionProps) => {
-  const [editableNumber, setEditableNumber] = useState(questionNumber);
   const parts = content.split('[정답]');
   let questionPart = parts[0].trim();
+  // Join all parts after the first occurrence of [정답] and trim
   const answerPart = parts.length > 1 ? '[정답]' + parts.slice(1).join('').trim() : '';
 
+  // Remove "[OUTPUT]" from the question part if it exists
   questionPart = questionPart.replace('[OUTPUT]', '').trim();
+
+  // Check if this is a True/False question by looking for "(T/F)" in the content
   const isTrueFalse = questionPart.includes('(T/F)');
-  const isSynonymAntonym = content.includes('| 표제어 | 표제어뜻 |');
 
-  const handleExportToExcel = () => {
-    if (!isSynonymAntonym) return;
-
-    // Parse table data
-    const rows = content.split('\n')
-      .filter(row => row.includes('|'))
-      .map(row => row.split('|').map(cell => cell.trim()).filter(cell => cell));
-
-    const headers = rows[0];
-    const data = rows.slice(2); // Skip header and separator row
-
-    // Create worksheet
-    const ws = XLSX.utils.aoa_to_sheet([headers, ...data]);
-    const wb = XLSX.utils.book_new();
-    XLSX.utils.book_append_sheet(wb, ws, `문제 ${editableNumber}`);
-
-    // Generate Excel file
-    const excelBuffer = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
-    const blob = new Blob([excelBuffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
-    saveAs(blob, `동의어_반의어_문제${editableNumber}.xlsx`);
-  };
-
-  const handleExportToDoc = () => {
-    if (!isSynonymAntonym) return;
-
-    // Parse table data
-    const rows = content.split('\n')
-      .filter(row => row.includes('|'))
-      .map(row => row.split('|').map(cell => cell.trim()).filter(cell => cell));
-
-    const headers = rows[0];
-    const data = rows.slice(2); // Skip header and separator row
-
-    // Create document
-    const doc = new Document({
-      sections: [{
-        children: [
-          new Paragraph({
-            text: `문제 ${editableNumber}`,
-            heading: 'Heading1'
-          }),
-          new Table({
-            rows: [
-              new TableRow({
-                children: headers.map(header => 
-                  new TableCell({
-                    children: [new Paragraph({ text: header })]
-                  })
-                )
-              }),
-              ...data.map(row => 
-                new TableRow({
-                  children: row.map(cell => 
-                    new TableCell({
-                      children: [new Paragraph({ text: cell || '' })]
-                    })
-                  )
-                })
-              )
-            ]
-          })
-        ]
-      }]
-    });
-
-    Packer.toBlob(doc).then(blob => {
-      saveAs(blob, `동의어_반의어_문제${editableNumber}.docx`);
-    });
-  };
-
-  // For True/False questions
+  // For True/False questions, we need to handle the format differently
   if (isTrueFalse) {
     const lines = questionPart.split('\n');
-    const title = lines[0];
-    const questions = lines.slice(1).join('\n');
+    const title = lines[0]; // First line (title)
+    const questions = lines.slice(1).join('\n'); // Remaining lines (questions)
 
     return (
       <div className="mb-8">
@@ -109,11 +34,13 @@ export const GeneratedQuestion = ({ content, questionNumber, originalText }: Gen
           </h3>
           
           <div className="space-y-4">
+            {/* Questions Section */}
             <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20">
               <h4 className="font-semibold text-[#403E43] mb-2">다음 글의 내용으로 옳고 그름(T/F)을 고르시오</h4>
               {questions}
             </div>
             
+            {/* Answers and Explanations Section */}
             {answerPart && (
               <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20">
                 <h4 className="font-semibold text-[#403E43] mb-2">정답 및 해설</h4>
@@ -128,61 +55,7 @@ export const GeneratedQuestion = ({ content, questionNumber, originalText }: Gen
     );
   }
 
-  // For Synonym/Antonym questions
-  if (isSynonymAntonym) {
-    return (
-      <div className="mb-8">
-        <div className="prose max-w-none">
-          <div className="flex items-center justify-between mb-4">
-            <div className="flex items-center gap-4">
-              <h3 className="text-2xl font-bold flex items-center gap-2 m-0">
-                <span className="bg-gradient-to-r from-[#0EA5E9] to-[#403E43] bg-clip-text text-transparent">
-                  문제
-                </span>
-              </h3>
-              <Input
-                type="number"
-                value={editableNumber}
-                onChange={(e) => setEditableNumber(Number(e.target.value))}
-                className="w-20 text-center"
-                min="1"
-              />
-            </div>
-            <div className="flex gap-2">
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={handleExportToExcel}
-                className="flex items-center gap-2"
-              >
-                <FileDown className="w-4 h-4" />
-                Excel 저장
-              </Button>
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={handleExportToDoc}
-                className="flex items-center gap-2"
-              >
-                <FileDown className="w-4 h-4" />
-                Word 저장
-              </Button>
-            </div>
-          </div>
-          
-          <div className="space-y-4">
-            <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20 overflow-x-auto">
-              {content}
-            </div>
-          </div>
-        </div>
-        
-        <div className="mt-6 h-px bg-gradient-to-r from-transparent via-[#0EA5E9]/30 to-transparent" />
-      </div>
-    );
-  }
-
-  // For other question types
+  // For other question types, keep the existing format
   return (
     <div className="mb-8">
       <div className="prose max-w-none">
@@ -193,6 +66,7 @@ export const GeneratedQuestion = ({ content, questionNumber, originalText }: Gen
         </h3>
         
         <div className="space-y-4">
+          {/* Only show originalText if it's not a weekend clinic question */}
           {originalText && (
             <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20 mb-4">
               {originalText}
