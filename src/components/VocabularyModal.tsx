@@ -3,7 +3,7 @@ import {
   Dialog,
   DialogContent,
 } from "@/components/ui/dialog";
-import { Document, Paragraph, Table, TableRow, TableCell, Packer } from "docx";
+import { Document, Paragraph, Table, TableRow, TableCell, HeadingLevel } from "docx";
 import { saveAs } from "file-saver";
 import { VocabularyHeader } from './vocabulary/VocabularyHeader';
 import { VocabularyTable } from './vocabulary/VocabularyTable';
@@ -102,7 +102,7 @@ export const VocabularyModal = ({ isOpen, onClose, content, questionNumber }: Vo
     const doc = new Document({
       sections: [{
         children: [
-          new Paragraph({ text: title, heading: 1 }),
+          new Paragraph({ text: title, heading: HeadingLevel.HEADING_1 }),
           new Table({
             rows: [headerRow, ...rows],
           }),

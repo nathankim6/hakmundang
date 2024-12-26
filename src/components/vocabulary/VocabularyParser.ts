@@ -27,13 +27,23 @@ export const parseTableContent = (content: string): VocabularyEntry[] => {
     let currentRow: string[] = [];
     
     const lines = section.split('\n');
+    let isHeader = true;
+
     lines.forEach(line => {
       if (line.includes('|')) {
+        // Skip the header rows
+        if (isHeader) {
+          if (!line.includes('표제어 |')) {
+            isHeader = false;
+          }
+          return;
+        }
+
         const cells = line.split('|')
           .map(cell => cell.trim())
           .filter(cell => cell !== '');
         
-        if (cells.length >= 6 && !line.includes('표제어')) {
+        if (cells.length >= 6) {
           // If this is a new row (has a headword), start a new entry
           if (cells[0]) {
             if (currentRow.length > 0) {
