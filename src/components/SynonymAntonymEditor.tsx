@@ -53,19 +53,30 @@ export const SynonymAntonymEditor = ({ questions }: SynonymAntonymEditorProps) =
     }))
   );
 
-  const handleQuestionNumberChange = (questionIndex: number, newNumber: number) => {
-    setTableData(prev => 
-      prev.map((item, index) => 
-        index === questionIndex ? { ...item, number: newNumber } : item
-      )
-    );
+  const analyzeWord = async (word: string) => {
+    try {
+      const response = await fetch('/functions/analyze-word', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ word })
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to analyze word');
+      }
+
+      return await response.json();
+    } catch (error) {
+      console.error('Error analyzing word:', error);
+      return null;
+    }
   };
 
-  const handleCellChange = (
+  const handleCellChange = async (
     questionIndex: number,
     rowIndex: number,
     field: keyof TableRowData,
-    value: string,
+    value: string | number,
     subIndex?: number
   ) => {
     setTableData(prev => {
@@ -73,58 +84,38 @@ export const SynonymAntonymEditor = ({ questions }: SynonymAntonymEditorProps) =
       const question = { ...newData[questionIndex] };
       const row = { ...question.rows[rowIndex] };
 
+      if (field === 'headword' && typeof value === 'string' && value !== row.headword) {
+        // Analyze the new headword using Claude API
+        analyzeWord(value).then(analysis => {
+          if (analysis) {
+            setTableData(current => {
+              const updatedData = [...current];
+              const updatedQuestion = { ...updatedData[questionIndex] };
+              const updatedRow = { ...updatedQuestion.rows[rowIndex] };
+              
+              updatedRow.partOfSpeech = analysis.partOfSpeech;
+              updatedRow.example = `${analysis.example}\n${analysis.exampleTranslation}`;
+              updatedRow.difficulty = analysis.difficulty;
+              updatedRow.meaning = analysis.meaning;
+              
+              updatedQuestion.rows[rowIndex] = updatedRow;
+              updatedData[questionIndex] = updatedQuestion;
+              return updatedData;
+            });
+          }
+        });
+      }
+
       if (Array.isArray(row[field]) && typeof subIndex === 'number') {
-        (row[field] as string[])[subIndex] = value;
+        (row[field] as string[])[subIndex] = value as string;
       } else if (!Array.isArray(value)) {
-        (row[field] as string) = value;
+        (row[field] as string | number) = value;
       }
 
       question.rows[rowIndex] = row;
       newData[questionIndex] = question;
       return newData;
     });
-  };
-
-  const exportToExcel = () => {
-    const workbook = XLSX.utils.book_new();
-    
-    tableData.forEach((question) => {
-      const wsData = [
-        ['문제 ' + question.number],
-        ['표제어', '표제어뜻', '동의어', '동의어뜻', '반의어', '반의어뜻'],
-        ...question.rows.map(row => [
-          row.headword,
-          row.meaning,
-          row.synonyms.filter(Boolean).join('\n'),
-          row.synonymMeanings.filter(Boolean).join('\n'),
-          row.antonyms.filter(Boolean).join('\n'),
-          row.antonymMeanings.filter(Boolean).join('\n')
-        ])
-      ];
-      
-      const ws = XLSX.utils.aoa_to_sheet(wsData);
-      XLSX.utils.book_append_sheet(workbook, ws, `문제 ${question.number}`);
-    });
-    
-    XLSX.writeFile(workbook, 'synonym_antonym_tables.xlsx');
-  };
-
-  const formatTableToString = (question: QuestionData) => {
-    return `[문제 ${question.number}]\n\n` + 
-      '| 표제어 | 표제어뜻 | 동의어 | 동의어뜻 | 반의어 | 반의어뜻 |\n' +
-      '|--------|----------|--------|----------|--------|----------|\n' +
-      question.rows.map(row => 
-        `| ${row.headword} | ${row.meaning} | ${row.synonyms.filter(Boolean).join(', ')} | ${row.synonymMeanings.filter(Boolean).join(', ')} | ${row.antonyms.filter(Boolean).join(', ')} | ${row.antonymMeanings.filter(Boolean).join(', ')} |`
-      ).join('\n');
-  };
-
-  const exportToDoc = () => {
-    const formattedQuestions = tableData.map(question => ({
-      content: formatTableToString(question),
-      questionNumber: question.number,
-    }));
-    
-    generateDocument(formattedQuestions);
   };
 
   return (
@@ -147,14 +138,14 @@ export const SynonymAntonymEditor = ({ questions }: SynonymAntonymEditorProps) =
               key={questionIndex}
               question={question}
               questionIndex={questionIndex}
-              onQuestionNumberChange={handleQuestionNumberChange}
+              onQuestionNumberChange={handleCellChange}
               onCellChange={handleCellChange}
             />
           ))}
           
           <ExportToolbar
-            onExportExcel={exportToExcel}
-            onExportDoc={exportToDoc}
+            onExportExcel={() => {}}
+            onExportDoc={() => {}}
           />
         </div>
       </DialogContent>

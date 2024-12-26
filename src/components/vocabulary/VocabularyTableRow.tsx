@@ -32,7 +32,7 @@ export const VocabularyTableRow = ({ row, onCellChange }: VocabularyTableRowProp
           <Input
             value={row.partOfSpeech}
             onChange={(e) => onCellChange('partOfSpeech', e.target.value)}
-            placeholder="품사 (예: n., v., adj.)"
+            placeholder="품사 (예: [명사], [동사], [형용사])"
             className="text-sm border-slate-200 focus:border-blue-400"
           />
           <Input
