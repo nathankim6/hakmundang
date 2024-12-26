@@ -17,7 +17,8 @@ import {
   getSummaryPrompt,
   getTrueOrFalsePrompt,
   getSynonymAntonymPrompt,
-  getLogicFlowPrompt
+  getLogicFlowPrompt,
+  getWeekendClinicPrompt
 } from "./prompts";
 
 const questionTypes: QuestionType[] = [
@@ -50,7 +51,7 @@ const questionTypes: QuestionType[] = [
   { id: "synonymAntonym", name: "동의어/반의어" },
   { id: "trueOrFalse", name: "True or False" },
   { id: "logicFlow", name: "Logic Flow" },
-  { id: "philosophersStone", name: "Philosopher's Stone" }
+  { id: "weekendClinic", name: "주말클리닉" }
 ];
 
 export const getQuestionTypes = () => questionTypes;
