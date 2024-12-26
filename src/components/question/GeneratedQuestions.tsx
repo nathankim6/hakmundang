@@ -33,7 +33,7 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
                 question.content.includes('반의어')
   );
 
-  // Combine all vocabulary content
+  // Combine all vocabulary content with question numbers
   const getAllVocabularyContent = () => {
     return sortedQuestions
       .filter(question => 
@@ -50,17 +50,16 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
           questionNumber: question.questionNumber
         };
       })
-      .map(({ content, questionNumber }) => ({ content, questionNumber }))
       .join('\n\n');
   };
 
   return (
     <div className="space-y-0 bg-[#F8F7FF] p-6 rounded-lg border border-[#D6BCFA]/30">
-      {sortedQuestions.map((question) => (
+      {sortedQuestions.map((question, index) => (
         <GeneratedQuestion 
           key={question.id}
           content={question.content}
-          questionNumber={question.questionNumber}
+          questionNumber={index + 1}
           originalText={question.originalText}
           showVocabButton={false}
         />

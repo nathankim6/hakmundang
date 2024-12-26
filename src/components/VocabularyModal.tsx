@@ -43,27 +43,29 @@ export const VocabularyModal = ({ isOpen, onClose, content, questionNumber }: Vo
   const contentRef = useRef<HTMLDivElement>(null);
 
   function parseTableContent(content: string, questionNumber?: number): VocabularyEntry[] {
-    const lines = content.split('\n');
+    const tables = content.split('\n\n');
     const tableData: VocabularyEntry[] = [];
     
-    let isInTable = false;
-    lines.forEach(line => {
-      if (line.includes('|')) {
-        const cells = line.split('|')
-          .map(cell => cell.trim())
-          .filter(cell => cell !== '');
-        if (cells.length >= 6 && !line.includes('표제어')) {
-          tableData.push({
-            headword: cells[0],
-            meaning: cells[1],
-            synonyms: cells[2],
-            synonymMeanings: cells[3],
-            antonyms: cells[4],
-            antonymMeanings: cells[5],
-            questionNumber
-          });
+    tables.forEach((table, tableIndex) => {
+      const lines = table.split('\n');
+      lines.forEach(line => {
+        if (line.includes('|')) {
+          const cells = line.split('|')
+            .map(cell => cell.trim())
+            .filter(cell => cell !== '');
+          if (cells.length >= 6 && !line.includes('표제어')) {
+            tableData.push({
+              headword: cells[0],
+              meaning: cells[1],
+              synonyms: cells[2],
+              synonymMeanings: cells[3],
+              antonyms: cells[4],
+              antonymMeanings: cells[5],
+              questionNumber: tableIndex + 1
+            });
+          }
         }
-      }
+      });
     });
     
     return tableData;
