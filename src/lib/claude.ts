@@ -15,7 +15,8 @@ import {
   getOrderPrompt,
   getInsertPrompt,
   getSummaryPrompt,
-  getWeekendClinicPrompt
+  getWeekendClinicPrompt,
+  getTrueOrFalsePrompt
 } from "./prompts";
 
 const questionTypes: QuestionType[] = [
@@ -123,6 +124,9 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
         break;
       case "weekendClinic":
         prompt = getWeekendClinicPrompt(text);
+        break;
+      case "trueOrFalse":
+        prompt = getTrueOrFalsePrompt(text);
         break;
       default:
         prompt = `Generate a question of type ${type.name} based on the following text: ${text}`;

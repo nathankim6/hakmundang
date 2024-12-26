@@ -1,4 +1,4 @@
-import { Document, Paragraph, TextRun } from "docx";
+import { Document, Paragraph, TextRun, Packer } from "docx";
 import { saveAs } from "file-saver";
 
 interface Question {
@@ -66,11 +66,8 @@ export const generateDocument = (questions: Question[]) => {
     }],
   });
 
-  // Generate and save the document
-  doc.save().then((buffer) => {
-    const blob = new Blob([buffer], {
-      type: "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-    });
+  // Generate and save the document using Packer
+  Packer.toBlob(doc).then((blob) => {
     saveAs(blob, "generated_questions.docx");
   });
 };
