@@ -18,27 +18,27 @@ export const VocabularyTable = ({
   onCellChange 
 }: VocabularyTableProps) => {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 bg-white rounded-lg shadow-lg p-6 border border-slate-200">
       <div className="flex items-center gap-2">
-        <span className="font-semibold">문제</span>
+        <span className="font-semibold text-lg text-blue-600">문제</span>
         <Input
           type="number"
           value={question.number}
           onChange={(e) => onQuestionNumberChange(questionIndex, parseInt(e.target.value))}
-          className="w-20"
+          className="w-20 border-blue-200 focus:border-blue-400"
         />
       </div>
       
-      <div className="rounded-lg border border-slate-200 shadow-sm">
+      <div className="rounded-lg border border-slate-200 overflow-hidden">
         <Table>
           <TableHeader>
-            <TableRow className="bg-slate-50">
-              <TableHead className="w-[150px] font-semibold">표제어</TableHead>
-              <TableHead className="w-[150px] font-semibold">표제어뜻</TableHead>
-              <TableHead className="w-[200px] font-semibold">동의어</TableHead>
-              <TableHead className="w-[200px] font-semibold">동의어뜻</TableHead>
-              <TableHead className="w-[200px] font-semibold">반의어</TableHead>
-              <TableHead className="w-[200px] font-semibold">반의어뜻</TableHead>
+            <TableRow className="bg-gradient-to-r from-blue-50 to-purple-50">
+              <TableHead className="w-[150px] font-semibold text-blue-700">표제어</TableHead>
+              <TableHead className="w-[150px] font-semibold text-blue-700">표제어뜻</TableHead>
+              <TableHead className="w-[200px] font-semibold text-blue-700">동의어</TableHead>
+              <TableHead className="w-[200px] font-semibold text-blue-700">동의어뜻</TableHead>
+              <TableHead className="w-[200px] font-semibold text-blue-700">반의어</TableHead>
+              <TableHead className="w-[200px] font-semibold text-blue-700">반의어뜻</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>

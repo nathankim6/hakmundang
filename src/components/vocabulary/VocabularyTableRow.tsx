@@ -15,13 +15,14 @@ export const VocabularyTableRow = ({ row, onCellChange }: VocabularyTableRowProp
         <Input
           value={row.headword}
           onChange={(e) => onCellChange('headword', e.target.value)}
-          className="font-medium"
+          className="font-medium border-slate-200 focus:border-blue-400"
         />
       </TableCell>
       <TableCell className="align-top">
         <Input
           value={row.meaning}
           onChange={(e) => onCellChange('meaning', e.target.value)}
+          className="border-slate-200 focus:border-blue-400"
         />
       </TableCell>
       <TableCell className="align-top space-y-2">
@@ -31,7 +32,7 @@ export const VocabularyTableRow = ({ row, onCellChange }: VocabularyTableRowProp
             value={row.synonyms[index] || ''}
             onChange={(e) => onCellChange('synonyms', e.target.value, index)}
             placeholder={index === 0 ? '' : '추가 동의어...'}
-            className={index === 0 ? '' : 'text-slate-500'}
+            className={`border-slate-200 focus:border-blue-400 ${index === 0 ? '' : 'text-slate-500'}`}
           />
         ))}
       </TableCell>
@@ -42,7 +43,7 @@ export const VocabularyTableRow = ({ row, onCellChange }: VocabularyTableRowProp
             value={row.synonymMeanings[index] || ''}
             onChange={(e) => onCellChange('synonymMeanings', e.target.value, index)}
             placeholder={index === 0 ? '' : '추가 동의어 뜻...'}
-            className={index === 0 ? '' : 'text-slate-500'}
+            className={`border-slate-200 focus:border-blue-400 ${index === 0 ? '' : 'text-slate-500'}`}
           />
         ))}
       </TableCell>
@@ -53,7 +54,7 @@ export const VocabularyTableRow = ({ row, onCellChange }: VocabularyTableRowProp
             value={row.antonyms[index] || ''}
             onChange={(e) => onCellChange('antonyms', e.target.value, index)}
             placeholder={index === 0 ? '' : '추가 반의어...'}
-            className={index === 0 ? '' : 'text-slate-500'}
+            className={`border-slate-200 focus:border-blue-400 ${index === 0 ? '' : 'text-slate-500'}`}
           />
         ))}
       </TableCell>
@@ -64,7 +65,7 @@ export const VocabularyTableRow = ({ row, onCellChange }: VocabularyTableRowProp
             value={row.antonymMeanings[index] || ''}
             onChange={(e) => onCellChange('antonymMeanings', e.target.value, index)}
             placeholder={index === 0 ? '' : '추가 반의어 뜻...'}
-            className={index === 0 ? '' : 'text-slate-500'}
+            className={`border-slate-200 focus:border-blue-400 ${index === 0 ? '' : 'text-slate-500'}`}
           />
         ))}
       </TableCell>
