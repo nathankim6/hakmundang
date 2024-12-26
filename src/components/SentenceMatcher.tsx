@@ -71,7 +71,7 @@ export const SentenceMatcher = () => {
   };
 
   return (
-    <Card className="w-full max-w-4xl mx-auto p-4">
+    <Card className="w-full max-w-4xl mx-auto p-4 font-[Gulim]">
       <CardContent>
         <div className="space-y-4">
           {textPairs.map((pair, index) => (

@@ -11,7 +11,7 @@ interface MatchedTableProps {
 
 export const MatchedTable = ({ matchedSets }: MatchedTableProps) => {
   return (
-    <div className="mt-6 space-y-8">
+    <div className="mt-6 space-y-8 font-[Gulim]">
       {matchedSets.map((set) => (
         <div key={set.setNumber} className="space-y-4">
           <h3 className="text-lg font-semibold text-[#7E69AB]">문제 {set.setNumber}</h3>

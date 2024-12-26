@@ -27,7 +27,7 @@ export const TextEntry = ({
   };
 
   return (
-    <div className="relative">
+    <div className="relative font-[Gulim]">
       <div className="flex justify-between items-center mb-2">
         <label className="block text-sm font-medium">{label}</label>
         {onDelete && (
@@ -42,7 +42,7 @@ export const TextEntry = ({
         )}
       </div>
       <textarea
-        className="w-full h-32 p-2 border rounded"
+        className="w-full h-32 p-2 border rounded font-[Gulim]"
         value={value}
         onChange={(e) => onChange(e.target.value)}
         onKeyDown={handleKeyDown}
