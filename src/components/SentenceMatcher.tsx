@@ -9,12 +9,14 @@ export const SentenceMatcher = () => {
   const [matchedSentences, setMatchedSentences] = useState<Array<{english: string, korean: string}>>([]);
   const [info, setInfo] = useState('');
 
-  // 예외 단어 목록
+  // 예외 단어 목록 (마침표가 있지만 문장의 끝이 아닌 경우)
   const exceptions = [
-    'St.', 'Dr.', 'A.M.', 'P.M.', 'Mr.', 'Mrs.',
+    'St.', 'Dr.', 'Mr.', 'Mrs.', 'Ms.',
     'Jan.', 'Feb.', 'Mar.', 'Apr.', 'Aug.', 'Sep.', 'Sept.', 'Oct.', 'Nov.', 'Dec.',
-    'Sun.', 'Mon.', 'Tue.', 'Wed.', 'Thur.', 'Fri.', 'Sat.',
-    'cf.', 'ref.', 'prof.'
+    'Sun.', 'Mon.', 'Tue.', 'Wed.', 'Thu.', 'Thur.', 'Fri.', 'Sat.',
+    'cf.', 'ref.', 'prof.', 'etc.', 'e.g.', 'i.e.',
+    'A.M.', 'P.M.', 'a.m.', 'p.m.',
+    'U.S.', 'U.K.', 'U.N.'
   ];
 
   // 제거할 특수 기호 목록
@@ -32,7 +34,7 @@ export const SentenceMatcher = () => {
 
     // 예외 단어들의 마침표를 임시 표시로 변경
     exceptions.forEach(exception => {
-      const regex = new RegExp(exception.replace('.', '\\.'), 'g');
+      const regex = new RegExp(`\\b${exception.replace('.', '\\.')}\\b`, 'g');
       processed = processed.replace(regex, exception.replace('.', '@POINT@'));
     });
 
@@ -49,15 +51,37 @@ export const SentenceMatcher = () => {
     // 텍스트 전처리
     let processed = preprocessText(text);
 
-    // 마침표, 느낌표, 물음표로만 문장 구분 (콜론은 제외)
+    // 마침표, 느낌표, 물음표로 문장 구분
     const sentences = processed
-      .replace(/([.!?]["]?)\s+/g, "$1|")  // 문장 구분자 뒤에 공백이 있는 경우
-      .replace(/([.!?]["]?)$/g, "$1|")    // 문장 구분자로 텍스트가 끝나는 경우
-      .split("|")
+      .split(/([.!?]+["']?\s*)/)
+      .filter(Boolean)
+      .map(part => part.trim())
+      .reduce((acc: string[], part, i, arr) => {
+        // 마지막 부분이거나 다음 부분이 대문자로 시작하는 경우에만 새로운 문장으로 처리
+        if (i % 2 === 0) {
+          const nextPart = arr[i + 1];
+          if (nextPart) {
+            acc.push(part + nextPart);
+          } else {
+            acc.push(part);
+          }
+        }
+        return acc;
+      }, [])
       .map(sentence => sentence.replace(/@POINT@/g, '.').trim())
       .filter(sentence => sentence.length > 0);
 
     return sentences;
+  };
+
+  // 영어/한글 텍스트 검증
+  const validateText = (text: string, isEnglish: boolean) => {
+    // 영어 텍스트 검증 (영어, 숫자, 특수문자만 허용)
+    const englishRegex = /^[A-Za-z0-9\s.,!?'"()\-:;@#$%&*]+$/;
+    // 한글 텍스트 검증 (한글, 숫자, 특수문자만 허용)
+    const koreanRegex = /^[가-힣0-9\s.,!?'"()\-:;@#$%&*]+$/;
+
+    return isEnglish ? englishRegex.test(text) : koreanRegex.test(text);
   };
 
   // 문장 매칭 처리 개선
@@ -83,11 +107,21 @@ export const SentenceMatcher = () => {
       }
     }
 
-    // 1:1 매칭 생성
-    return normalizedEng.map((eng, index) => ({
-      english: eng || '',
-      korean: normalizedKor[index] || ''
-    }));
+    // 1:1 매칭 생성 전 텍스트 검증
+    const validatedPairs = normalizedEng.map((eng, index) => {
+      const kor = normalizedKor[index] || '';
+      
+      // 영어와 한글 텍스트 검증
+      const isValidEng = validateText(eng, true);
+      const isValidKor = validateText(kor, false);
+
+      return {
+        english: isValidEng ? eng : '',
+        korean: isValidKor ? kor : ''
+      };
+    });
+
+    return validatedPairs.filter(pair => pair.english && pair.korean);
   };
 
   // 매칭 실행
@@ -96,7 +130,7 @@ export const SentenceMatcher = () => {
     const koreanSentences = splitIntoSentences(koreanText);
 
     const matched = matchSentences(englishSentences, koreanSentences);
-    setMatchedSentences(matched.filter(pair => pair.english || pair.korean));
+    setMatchedSentences(matched);
 
     // 정보 메시지 설정
     setInfo(`총 ${matched.length}개의 문장이 매칭되었습니다.`);
