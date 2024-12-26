@@ -1,6 +1,6 @@
 import React from 'react';
 import { VocabularyDialog } from './vocabulary/VocabularyDialog';
-import { QuestionData, TableRowData } from './vocabulary/types';
+import { QuestionData } from './vocabulary/types';
 
 interface Question {
   id: string;
@@ -26,22 +26,16 @@ const parseQuestionContent = (content: string): TableRowData[] => {
           const antonyms = cells[5].split(/[,;\n]/).map(s => s.trim()).filter(s => s);
           const antonymMeanings = cells[6].split(/[,;\n]/).map(s => s.trim()).filter(s => s);
 
-          // Ensure we have exactly 3 entries for synonyms and antonyms
-          const paddedSynonyms = [...synonyms, '', '', ''].slice(0, 3);
-          const paddedSynonymMeanings = [...synonymMeanings, '', '', ''].slice(0, 3);
-          const paddedAntonyms = [...antonyms, '', '', ''].slice(0, 3);
-          const paddedAntonymMeanings = [...antonymMeanings, '', '', ''].slice(0, 3);
-
           rows.push({
             headword: cells[1],
             meaning: cells[2],
             difficulty: 1,
             partOfSpeech: '',
             example: '',
-            synonyms: paddedSynonyms,
-            synonymMeanings: paddedSynonymMeanings,
-            antonyms: paddedAntonyms,
-            antonymMeanings: paddedAntonymMeanings
+            synonyms: [...synonyms, '', '', ''].slice(0, 3),
+            synonymMeanings: [...synonymMeanings, '', '', ''].slice(0, 3),
+            antonyms: [...antonyms, '', '', ''].slice(0, 3),
+            antonymMeanings: [...antonymMeanings, '', '', ''].slice(0, 3)
           });
         }
       }
