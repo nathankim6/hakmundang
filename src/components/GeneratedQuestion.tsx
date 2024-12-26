@@ -1,24 +1,32 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Book } from "lucide-react";
-import { useState } from "react";
-import { VocabularyModal } from "./VocabularyModal";
 
 interface GeneratedQuestionProps {
   content: string;
   questionNumber: number;
   originalText?: string;
+  showVocabButton?: boolean;
 }
 
-export const GeneratedQuestion = ({ content, questionNumber, originalText }: GeneratedQuestionProps) => {
-  const [isVocabModalOpen, setIsVocabModalOpen] = useState(false);
+export const GeneratedQuestion = ({ 
+  content, 
+  questionNumber, 
+  originalText,
+  showVocabButton = true
+}: GeneratedQuestionProps) => {
   const parts = content.split('[정답]');
   let questionPart = parts[0].trim();
   const answerPart = parts.length > 1 ? '[정답]' + parts.slice(1).join('').trim() : '';
 
+  // Remove explanatory text for synonym/antonym questions
+  if (content.includes('| 표제어 |') || content.includes('동의어') || content.includes('반의어')) {
+    const tableStart = questionPart.indexOf('|');
+    if (tableStart !== -1) {
+      questionPart = questionPart.substring(tableStart);
+    }
+  }
+
   questionPart = questionPart.replace('[OUTPUT]', '').trim();
   const isTrueFalse = questionPart.includes('(T/F)');
-  const isSynonymAntonym = content.includes('| 표제어 |') || content.includes('동의어') || content.includes('반의어');
 
   // For True/False questions, we need to handle the format differently
   if (isTrueFalse) {
@@ -61,21 +69,10 @@ export const GeneratedQuestion = ({ content, questionNumber, originalText }: Gen
   return (
     <div className="mb-8">
       <div className="prose max-w-none">
-        <h3 className="text-2xl font-bold mb-2 flex items-center justify-between">
+        <h3 className="text-2xl font-bold mb-2">
           <span className="bg-gradient-to-r from-[#0EA5E9] to-[#403E43] bg-clip-text text-transparent">
             문제 {questionNumber}
           </span>
-          
-          {isSynonymAntonym && (
-            <Button
-              variant="outline"
-              onClick={() => setIsVocabModalOpen(true)}
-              className="text-[#9b87f5] hover:text-[#7E69AB] border-[#9b87f5] hover:border-[#7E69AB]"
-            >
-              <Book className="w-4 h-4 mr-2" />
-              단어장 생성
-            </Button>
-          )}
         </h3>
         
         <div className="space-y-4">
@@ -97,14 +94,6 @@ export const GeneratedQuestion = ({ content, questionNumber, originalText }: Gen
           )}
         </div>
       </div>
-      
-      {isSynonymAntonym && (
-        <VocabularyModal
-          isOpen={isVocabModalOpen}
-          onClose={() => setIsVocabModalOpen(false)}
-          content={content}
-        />
-      )}
       
       <div className="mt-6 h-px bg-gradient-to-r from-transparent via-[#0EA5E9]/30 to-transparent" />
     </div>
