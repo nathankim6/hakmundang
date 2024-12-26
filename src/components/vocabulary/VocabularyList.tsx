@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { VocabularyCard } from './VocabularyCard';
-import { QuestionData, TableRowData } from './types';
+import { QuestionData } from './types';
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/components/ui/use-toast";
 
@@ -34,7 +34,7 @@ export const VocabularyList = ({ questions }: VocabularyListProps) => {
                   example: analysis.example,
                   exampleTranslation: analysis.exampleTranslation,
                   difficulty: analysis.difficulty,
-                  meaning: analysis.meaning
+                  meaning: analysis.meaning || row.meaning
                 };
               }
             } catch (error) {
@@ -56,19 +56,21 @@ export const VocabularyList = ({ questions }: VocabularyListProps) => {
   }, [questions]);
 
   return (
-    <div className="grid gap-8 print:gap-4">
-      {analyzedQuestions.map((question, index) => (
-        <div key={index} className="space-y-4">
-          <h3 className="text-xl font-bold text-purple-600 print:text-black">
-            [문제 {question.number}]
-          </h3>
-          <div className="grid gap-4 print:gap-2">
-            {question.rows.map((row, rowIndex) => (
-              <VocabularyCard key={rowIndex} word={row} />
-            ))}
+    <div className="max-w-[210mm] mx-auto bg-white p-8 print:p-0 print:bg-white">
+      <div className="grid gap-6 print:gap-4">
+        {analyzedQuestions.map((question, index) => (
+          <div key={index} className="space-y-3">
+            <h3 className="text-xl font-bold text-purple-600 print:text-black border-b border-purple-200 pb-2 print:border-gray-300">
+              [문제 {question.number}]
+            </h3>
+            <div className="grid gap-3 print:gap-2">
+              {question.rows.map((row, rowIndex) => (
+                <VocabularyCard key={rowIndex} word={row} />
+              ))}
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

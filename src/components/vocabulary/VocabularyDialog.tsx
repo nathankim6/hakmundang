@@ -22,15 +22,15 @@ export const VocabularyDialog = ({ questions }: VocabularyDialogProps) => {
           동반어 단어장 제작
         </Button>
       </DialogTrigger>
-      <DialogContent className="max-w-[90vw] max-h-[90vh] overflow-y-auto print:overflow-visible">
-        <DialogHeader>
+      <DialogContent className="max-w-[90vw] h-[90vh] overflow-y-auto print:overflow-visible print:h-auto print:max-w-none">
+        <DialogHeader className="print:hidden">
           <DialogTitle className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent flex items-center gap-2">
             <Book className="w-6 h-6" />
             동반어 단어장
           </DialogTitle>
         </DialogHeader>
         
-        <div className="space-y-8 p-4">
+        <div className="space-y-8 p-4 print:p-0">
           <VocabularyList questions={questions} />
           
           <div className="flex justify-end print:hidden">
