@@ -4,6 +4,7 @@ interface Question {
   id: string;
   content: string;
   questionNumber: number;
+  originalText?: string;  // Add optional originalText
 }
 
 interface GeneratedQuestionsProps {
@@ -32,6 +33,7 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
           key={question.id}
           content={question.content}
           questionNumber={question.questionNumber}
+          originalText={question.originalText}
         />
       ))}
     </div>

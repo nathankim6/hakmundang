@@ -40,7 +40,8 @@ export const QuestionGenerator = () => {
       .map((passage) => ({
         id: passage.id,
         content: passage.result,
-        questionNumber: 0
+        questionNumber: 0,
+        originalText: typeEntry.type.id === "weekendClinic" ? passage.text : undefined
       }))
       .filter(q => q.content)
   );
