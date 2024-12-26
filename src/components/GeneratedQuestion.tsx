@@ -9,7 +9,8 @@ interface GeneratedQuestionProps {
 export const GeneratedQuestion = ({ content, questionNumber, originalText }: GeneratedQuestionProps) => {
   const parts = content.split('[정답]');
   let questionPart = parts[0].trim();
-  const answerPart = parts.length > 1 ? '[정답]' + parts.slice(1).join('[정답]').trim() : '';
+  // Join all parts after the first occurrence of [정답] and trim
+  const answerPart = parts.length > 1 ? '[정답]' + parts.slice(1).join('').trim() : '';
 
   // Remove "[OUTPUT]" from the question part if it exists
   questionPart = questionPart.replace('[OUTPUT]', '').trim();
