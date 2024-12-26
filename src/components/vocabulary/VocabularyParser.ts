@@ -23,6 +23,9 @@ export const parseTableContent = (content: string): VocabularyEntry[] => {
   sections.forEach((section) => {
     if (!section.trim()) return;
 
+    const rows: string[][] = [];
+    let currentRow: string[] = [];
+    
     const lines = section.split('\n');
     lines.forEach(line => {
       if (line.includes('|')) {
@@ -30,21 +33,48 @@ export const parseTableContent = (content: string): VocabularyEntry[] => {
           .map(cell => cell.trim())
           .filter(cell => cell !== '');
         
-        console.log('Parsed cells:', cells);
-        
         if (cells.length >= 6 && !line.includes('표제어')) {
-          tableData.push({
-            headword: cells[0],
-            meaning: cells[1],
-            synonyms: cells[2],
-            synonymMeanings: cells[3],
-            antonyms: cells[4],
-            antonymMeanings: cells[5],
-            questionNumber: currentQuestionNumber
-          });
+          // If this is a new row (has a headword), start a new entry
+          if (cells[0]) {
+            if (currentRow.length > 0) {
+              rows.push(currentRow);
+            }
+            currentRow = [...cells];
+          } else {
+            // This is a continuation of the previous row
+            // Append values to existing cells
+            cells.forEach((cell, index) => {
+              if (cell) {
+                currentRow[index] = currentRow[index] ? 
+                  currentRow[index] + '\n' + cell : 
+                  cell;
+              }
+            });
+          }
         }
       }
     });
+    
+    // Don't forget to push the last row
+    if (currentRow.length > 0) {
+      rows.push(currentRow);
+    }
+
+    // Convert rows to VocabularyEntry objects
+    rows.forEach(row => {
+      if (row.length >= 6) {
+        tableData.push({
+          headword: row[0],
+          meaning: row[1],
+          synonyms: row[2],
+          synonymMeanings: row[3],
+          antonyms: row[4],
+          antonymMeanings: row[5],
+          questionNumber: currentQuestionNumber
+        });
+      }
+    });
+    
     currentQuestionNumber++;
   });
   

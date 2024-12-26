@@ -1,8 +1,6 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { FileDown, Plus } from "lucide-react";
-import html2canvas from 'html2canvas';
-import jsPDF from 'jspdf';
 
 interface VocabularyActionsProps {
   onAddEntry: () => void;
@@ -50,7 +48,7 @@ export const VocabularyActions = ({
           className="bg-gradient-to-r from-[#9b87f5] to-[#7E69AB] hover:opacity-90"
         >
           <FileDown className="w-4 h-4 mr-2" />
-          PDF로 저장하기
+          WORD로 저장하기
         </Button>
       )}
     </div>
