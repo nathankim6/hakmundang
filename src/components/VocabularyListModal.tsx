@@ -30,19 +30,22 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     textAlign: 'center',
   },
-  table: {
-    display: 'table',
+  tableContainer: {
     width: '100%',
-    borderStyle: 'solid',
+    display: 'flex',
+    flexDirection: 'column',
     borderWidth: 1,
     borderColor: '#000',
   },
-  tableRow: {
+  row: {
+    display: 'flex',
     flexDirection: 'row',
     borderBottomWidth: 1,
     borderBottomColor: '#000',
+    minHeight: 24,
+    flexWrap: 'wrap',
   },
-  tableCell: {
+  cell: {
     padding: 5,
     fontSize: 10,
     borderRightWidth: 1,
@@ -67,12 +70,11 @@ export const VocabularyListModal = ({ content }: VocabularyListModalProps) => {
             meaning: cells[1],
             partOfSpeech: cells[2] || 'n/a',
             definition: cells[3] || '',
-            difficulty: Math.floor(Math.random() * 3) + 1, // Temporary random difficulty
+            difficulty: Math.floor(Math.random() * 3) + 1,
             synonyms: [],
             antonyms: []
           };
 
-          // Process synonyms and antonyms
           if (cells[4] && cells[5]) {
             entry.synonyms.push({
               word: cells[4],
@@ -104,25 +106,37 @@ export const VocabularyListModal = ({ content }: VocabularyListModalProps) => {
       <Document>
         <Page size="A4" style={styles.page}>
           <Text style={styles.title}>Vocabulary List</Text>
-          <View style={styles.table}>
+          <View style={styles.tableContainer}>
+            <View style={styles.row}>
+              <View style={[styles.cell, { width: '20%' }]}>
+                <Text>Word</Text>
+              </View>
+              <View style={[styles.cell, { width: '20%' }]}>
+                <Text>Meaning</Text>
+              </View>
+              <View style={[styles.cell, { width: '30%' }]}>
+                <Text>Synonyms</Text>
+              </View>
+              <View style={[styles.cell, { width: '30%' }]}>
+                <Text>Antonyms</Text>
+              </View>
+            </View>
             {vocabularyList.map((entry, index) => (
-              <View key={index} style={styles.tableRow}>
-                <View style={[styles.tableCell, { width: '20%' }]}>
+              <View key={index} style={styles.row}>
+                <View style={[styles.cell, { width: '20%' }]}>
                   <Text>{entry.word}</Text>
                   <Text>{'⭐'.repeat(entry.difficulty || 1)}</Text>
                 </View>
-                <View style={[styles.tableCell, { width: '20%' }]}>
+                <View style={[styles.cell, { width: '20%' }]}>
                   <Text>{entry.meaning}</Text>
                   <Text>{entry.partOfSpeech}</Text>
                 </View>
-                <View style={[styles.tableCell, { width: '30%' }]}>
-                  <Text>Synonyms:</Text>
+                <View style={[styles.cell, { width: '30%' }]}>
                   {entry.synonyms.map((syn, i) => (
                     <Text key={i}>{syn.word} - {syn.meaning}</Text>
                   ))}
                 </View>
-                <View style={[styles.tableCell, { width: '30%' }]}>
-                  <Text>Antonyms:</Text>
+                <View style={[styles.cell, { width: '30%' }]}>
                   {entry.antonyms.map((ant, i) => (
                     <Text key={i}>{ant.word} - {ant.meaning}</Text>
                   ))}
