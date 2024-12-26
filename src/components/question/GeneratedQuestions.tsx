@@ -1,11 +1,10 @@
 import { GeneratedQuestion } from "../GeneratedQuestion";
-import { SynonymAntonymEditor } from "../SynonymAntonymEditor";
 
 interface Question {
   id: string;
   content: string;
   questionNumber: number;
-  originalText?: string;
+  originalText?: string;  // Add optional originalText
 }
 
 interface GeneratedQuestionsProps {
@@ -27,19 +26,8 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
     questionNumber: index + 1
   }));
 
-  // Check if any questions are synonym/antonym type
-  const hasSynonymAntonymQuestions = displayQuestions.some(q => 
-    q.content.includes('| 표제어 | 표제어뜻 | 동의어 | 동의어뜻 | 반의어 | 반의어뜻 |')
-  );
-
   return (
-    <div className="space-y-4 bg-[#F8F7FF] p-6 rounded-lg border border-[#D6BCFA]/30">
-      {hasSynonymAntonymQuestions && (
-        <div className="mb-4">
-          <SynonymAntonymEditor questions={displayQuestions} />
-        </div>
-      )}
-      
+    <div className="space-y-0 bg-[#F8F7FF] p-6 rounded-lg border border-[#D6BCFA]/30">
       {displayQuestions.map((question) => (
         <GeneratedQuestion 
           key={question.id}
