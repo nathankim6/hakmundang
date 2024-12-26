@@ -49,7 +49,7 @@ export const SentenceMatcher = () => {
     // 텍스트 전처리
     let processed = preprocessText(text);
 
-    // 마침표, 느낌표, 물음표로 문장 구분 (큰따옴표가 있는 경우도 포함)
+    // 마침표, 느낌표, 물음표로만 문장 구분 (콜론은 제외)
     const sentences = processed
       .replace(/([.!?]["]?)\s+/g, "$1|")  // 문장 구분자 뒤에 공백이 있는 경우
       .replace(/([.!?]["]?)$/g, "$1|")    // 문장 구분자로 텍스트가 끝나는 경우
