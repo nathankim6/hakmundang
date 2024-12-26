@@ -3,27 +3,17 @@ import {
   Dialog,
   DialogContent,
 } from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 import { VocabularyHeader } from './vocabulary/VocabularyHeader';
 import { VocabularyTable } from './vocabulary/VocabularyTable';
 import { VocabularyActions } from './vocabulary/VocabularyActions';
+import { parseTableContent, type VocabularyEntry } from './vocabulary/VocabularyParser';
 
 interface VocabularyModalProps {
   isOpen: boolean;
   onClose: () => void;
   content: string;
-  questionNumber?: number;
-}
-
-interface VocabularyEntry {
-  headword: string;
-  meaning: string;
-  synonyms: string;
-  synonymMeanings: string;
-  antonyms: string;
-  antonymMeanings: string;
   questionNumber?: number;
 }
 
@@ -41,51 +31,6 @@ export const VocabularyModal = ({ isOpen, onClose, content, questionNumber }: Vo
   });
   const [isAddingEntry, setIsAddingEntry] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
-
-  function parseTableContent(content: string): VocabularyEntry[] {
-    console.log('Parsing content:', content);
-    
-    if (!content.trim()) {
-      console.log('Content is empty');
-      return [];
-    }
-
-    const sections = content.split(/문제 \d+/);
-    const tableData: VocabularyEntry[] = [];
-    let currentQuestionNumber = 1;
-
-    sections.forEach((section, sectionIndex) => {
-      if (!section.trim()) return;
-
-      const lines = section.split('\n');
-      lines.forEach(line => {
-        if (line.includes('|')) {
-          const cells = line.split('|')
-            .map(cell => cell.trim())
-            .filter(cell => cell !== '');
-          
-          console.log('Parsed cells:', cells);
-          
-          if (cells.length >= 6 && !line.includes('표제어')) {
-            // Handle multiple entries by preserving commas
-            tableData.push({
-              headword: cells[0],
-              meaning: cells[1],
-              synonyms: cells[2],
-              synonymMeanings: cells[3],
-              antonyms: cells[4],
-              antonymMeanings: cells[5],
-              questionNumber: currentQuestionNumber
-            });
-          }
-        }
-      });
-      currentQuestionNumber++;
-    });
-    
-    console.log('Parsed table data:', tableData);
-    return tableData;
-  }
 
   const handleAddEntry = () => {
     setIsAddingEntry(true);
