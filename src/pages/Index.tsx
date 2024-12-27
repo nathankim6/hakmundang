@@ -7,7 +7,6 @@ import { useNavigate } from "react-router-dom";
 import { supabase } from "@/lib/supabase";
 import { AppHeader } from "@/components/header/AppHeader";
 import { LoginSection } from "@/components/auth/LoginSection";
-import { ActionButtons } from "@/components/buttons/ActionButtons";
 
 const Index = () => {
   const [userName, setUserName] = useState<string>("");
@@ -97,12 +96,6 @@ const Index = () => {
     }
   };
 
-  const [showVocabModal, setShowVocabModal] = useState(false);
-  const [showAIManagementModal, setShowAIManagementModal] = useState(false);
-
-  const openVocabModal = () => setShowVocabModal(true);
-  const openAIManagementModal = () => setShowAIManagementModal(true);
-
   return (
     <div className="min-h-screen py-8 px-4 sm:px-6 lg:px-8 relative">
       <div className="absolute inset-0 overflow-hidden">
@@ -132,53 +125,8 @@ const Index = () => {
           <div className="metallic-border rounded-xl p-8">
             <QuestionGenerator />
           </div>
-
-          <ActionButtons 
-            openVocabModal={openVocabModal}
-            openAIManagementModal={openAIManagementModal}
-          />
         </div>
       </div>
-
-      {/* Vocabulary Modal */}
-      {showVocabModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white w-[95vw] h-[95vh] rounded-lg shadow-2xl relative">
-            <Button
-              variant="ghost"
-              className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
-              onClick={() => setShowVocabModal(false)}
-            >
-              ✕
-            </Button>
-            <iframe
-              src="https://vocabulary-voyage.lovable.app/"
-              className="w-full h-full rounded-lg"
-              title="Vocabulary Generator"
-            />
-          </div>
-        </div>
-      )}
-
-      {/* AI Management Modal */}
-      {showAIManagementModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white w-[95vw] h-[95vh] rounded-lg shadow-2xl relative">
-            <Button
-              variant="ghost"
-              className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
-              onClick={() => setShowAIManagementModal(false)}
-            >
-              ✕
-            </Button>
-            <iframe
-              src="http://orunstudy.site"
-              className="w-full h-full rounded-lg"
-              title="AI Learning Management"
-            />
-          </div>
-        </div>
-      )}
 
       <footer className="mt-16 text-center relative z-10">
         <p className="text-sm text-gray-500 hover:text-gray-700 transition-colors">

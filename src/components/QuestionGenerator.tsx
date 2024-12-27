@@ -2,11 +2,12 @@ import { TypeSelector } from "./TypeSelector";
 import { LoadingProgress } from "./LoadingProgress";
 import { TypeEntry } from "./question/TypeEntry";
 import { GeneratedQuestions } from "./question/GeneratedQuestions";
-import { ActionButtons } from "./question/ActionButtons";
+import { ActionButtons } from "./buttons/ActionButtons";
 import { QuestionProvider } from "./question/QuestionContext";
 import { useQuestionState } from "./question/QuestionState";
 import { useQuestionActions } from "./question/QuestionActions";
 import { Star } from "lucide-react";
+import { useState } from "react";
 
 export const QuestionGenerator = () => {
   const {
@@ -34,6 +35,9 @@ export const QuestionGenerator = () => {
     setAbortController,
     toast
   });
+
+  const [showVocabModal, setShowVocabModal] = useState(false);
+  const [showAIManagementModal, setShowAIManagementModal] = useState(false);
 
   const generatedQuestions = selectedTypes.flatMap((typeEntry) => 
     typeEntry.passages
@@ -71,6 +75,14 @@ export const QuestionGenerator = () => {
                 onRemove={handleRemoveType}
               />
             </div>
+            
+            {/* Action Buttons now positioned below TypeSelector */}
+            <div className="mt-4">
+              <ActionButtons 
+                openVocabModal={() => setShowVocabModal(true)}
+                openAIManagementModal={() => setShowAIManagementModal(true)}
+              />
+            </div>
           </div>
         </div>
 
@@ -99,12 +111,6 @@ export const QuestionGenerator = () => {
                     onStop={handleStopGeneration}
                   />
                 )}
-                
-                <ActionButtons
-                  onGenerate={handleGenerateAll}
-                  onDownload={handleDownloadDoc}
-                  isLoading={isLoading}
-                />
               </div>
 
               <GeneratedQuestions questions={generatedQuestions} />
@@ -134,6 +140,43 @@ export const QuestionGenerator = () => {
           )}
         </div>
       </div>
+
+      {/* Modals */}
+      {showVocabModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white w-[95vw] h-[95vh] rounded-lg shadow-2xl relative">
+            <button
+              className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+              onClick={() => setShowVocabModal(false)}
+            >
+              ✕
+            </button>
+            <iframe
+              src="https://vocabulary-voyage.lovable.app/"
+              className="w-full h-full rounded-lg"
+              title="Vocabulary Generator"
+            />
+          </div>
+        </div>
+      )}
+
+      {showAIManagementModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white w-[95vw] h-[95vh] rounded-lg shadow-2xl relative">
+            <button
+              className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+              onClick={() => setShowAIManagementModal(false)}
+            >
+              ✕
+            </button>
+            <iframe
+              src="http://orunstudy.site"
+              className="w-full h-full rounded-lg"
+              title="AI Learning Management"
+            />
+          </div>
+        </div>
+      )}
     </QuestionProvider>
   );
 };
