@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { BookOpen, Settings } from "lucide-react";
+import { Star, Settings } from "lucide-react";
 
 interface ActionButtonsProps {
   openVocabModal: () => void;
@@ -14,20 +14,20 @@ export const ActionButtons = ({ openVocabModal, openAIManagementModal }: ActionB
     <div className="flex justify-center mt-8 space-x-4">
       <Button
         onClick={openVocabModal}
-        className={`${buttonBaseClass} bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700`}
+        className={`${buttonBaseClass} bg-[#1A1F2C] hover:bg-[#2A2F3C] border border-[#2A2F3C]/50`}
       >
-        <BookOpen className="w-6 h-6 mr-2 animate-pulse" />
+        <Star className="w-6 h-6 mr-2 text-[#FFD700]" />
         단어장생성기
-        <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 rounded-xl transition-opacity duration-200"></div>
+        <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-5 rounded-xl transition-opacity duration-200"></div>
       </Button>
 
       <Button
         onClick={openAIManagementModal}
-        className={`${buttonBaseClass} bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600`}
+        className={`${buttonBaseClass} bg-[#1A1F2C] hover:bg-[#2A2F3C] border border-[#2A2F3C]/50`}
       >
-        <Settings className="w-6 h-6 mr-2 animate-spin-slow" />
+        <Settings className="w-6 h-6 mr-2 animate-spin-slow text-[#FFD700]" />
         옳은영어 자비스2.0
-        <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 rounded-xl transition-opacity duration-200"></div>
+        <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-5 rounded-xl transition-opacity duration-200"></div>
       </Button>
     </div>
   );
