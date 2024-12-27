@@ -3,7 +3,7 @@ import { APIConfig } from "@/components/APIConfig";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { LogOut, Key } from "lucide-react";
+import { LogOut, Key, BookOpen } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "@/lib/supabase";
@@ -96,6 +96,12 @@ const Index = () => {
     }
   };
 
+  const [showVocabModal, setShowVocabModal] = useState(false);
+
+  const openVocabModal = () => {
+    setShowVocabModal(true);
+  };
+
   return (
     <div className="min-h-screen py-8 px-4 sm:px-6 lg:px-8 relative">
       <div className="absolute inset-0 overflow-hidden">
@@ -106,7 +112,6 @@ const Index = () => {
 
       <div className="max-w-[1600px] mx-auto relative z-10">
         <div className="flex flex-col space-y-8">
-          {/* Title Section */}
           <div className="flex items-center justify-center space-x-6">
             <img 
               src="/lovable-uploads/352a49ca-b123-4f07-992a-cf59e4b7058a.png" 
@@ -121,11 +126,6 @@ const Index = () => {
                 </span>
               </h1>
             </div>
-          </div>
-
-          <div className="relative h-1 max-w-2xl mx-auto overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#DAA520] to-transparent" />
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#FFD700] to-transparent animate-pulse" />
           </div>
 
           {/* Login/Config Section */}
@@ -183,8 +183,40 @@ const Index = () => {
           <div className="metallic-border rounded-xl p-8">
             <QuestionGenerator />
           </div>
+
+          {/* Vocabulary Generator Button */}
+          <div className="flex justify-center mt-8">
+            <Button
+              onClick={openVocabModal}
+              className="group relative px-8 py-6 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white rounded-xl shadow-lg hover:shadow-xl transform transition-all duration-200 hover:-translate-y-1 text-lg font-semibold"
+            >
+              <BookOpen className="w-6 h-6 mr-2 animate-pulse" />
+              단어장생성기
+              <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 rounded-xl transition-opacity duration-200"></div>
+            </Button>
+          </div>
         </div>
       </div>
+
+      {/* Vocabulary Modal */}
+      {showVocabModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white w-[95vw] h-[95vh] rounded-lg shadow-2xl relative">
+            <Button
+              variant="ghost"
+              className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+              onClick={() => setShowVocabModal(false)}
+            >
+              ✕
+            </Button>
+            <iframe
+              src="https://vocabulary-voyage.lovable.app/"
+              className="w-full h-full rounded-lg"
+              title="Vocabulary Generator"
+            />
+          </div>
+        </div>
+      )}
 
       <footer className="mt-16 text-center relative z-10">
         <p className="text-sm text-gray-500 hover:text-gray-700 transition-colors">
