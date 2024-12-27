@@ -21,7 +21,12 @@ export const TextInput = ({ value, onChange, onEnterPress, onPaste }: TextInputP
     const text = e.clipboardData.getData('text');
     
     // Split by tabs and newlines to handle Excel paste
-    const values = text.split(/[\t\n]+/).filter(Boolean);
+    const values = text
+      .split(/[\n\r]+/)  // First split by newlines
+      .map(row => row.split(/\t/)) // Then split each row by tabs
+      .flat() // Flatten the array
+      .map(cell => cell.trim()) // Trim whitespace
+      .filter(cell => cell !== ''); // Remove empty cells
     
     if (values.length > 1 && onPaste) {
       onPaste(values);
