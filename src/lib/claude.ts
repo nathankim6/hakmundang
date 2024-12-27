@@ -30,7 +30,6 @@ const questionTypes: QuestionType[] = [
   { id: "mainPoint", name: "[22] 요지" },
   { id: "topic", name: "[23] 주제" },
   { id: "title", name: "[24] 제목" },
-  { id: "vocabulary", name: "[30] 어휘" },
   { id: "blank", name: "[31] 빈칸" },
   { id: "blankMultiple", name: "[32-34] 빈칸" },
   { id: "irrelevant", name: "[35] 무관한 문장" },
@@ -51,8 +50,7 @@ const questionTypes: QuestionType[] = [
   { id: "synonymAntonym", name: "동의어/반의어" },
   { id: "trueOrFalse", name: "True or False" },
   { id: "logicFlow", name: "Logic Flow" },
-  { id: "sentenceSplitter", name: "한영문장분리" },
-  { id: "vocabulary", name: "단어장" }
+  { id: "sentenceSplitter", name: "한영문장분리" }
 ];
 
 export const getQuestionTypes = () => questionTypes;
