@@ -172,7 +172,7 @@ const Index = () => {
               ✕
             </Button>
             <iframe
-              src="https://ai-learning-management.lovable.app/"
+              src="http://orunstudy.site"
               className="w-full h-full rounded-lg"
               title="AI Learning Management"
             />

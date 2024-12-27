@@ -26,7 +26,7 @@ export const ActionButtons = ({ openVocabModal, openAIManagementModal }: ActionB
         className={`${buttonBaseClass} bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600`}
       >
         <Settings className="w-6 h-6 mr-2 animate-spin-slow" />
-        AI학습매니지먼트
+        옳은영어 자비스2.0
         <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 rounded-xl transition-opacity duration-200"></div>
       </Button>
     </div>
