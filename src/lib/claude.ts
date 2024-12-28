@@ -116,14 +116,3 @@ export const getQuestionTypes = () => [
     name: "주말 클리닉",
   },
 ];
-
-export const generateQuestion = async (type: { id: string; name: string }, text: string) => {
-  const prompt = await import(`./prompts/${type.id}`).then(module => {
-    const promptFn = Object.values(module)[0];
-    return promptFn(text);
-  });
-
-  // Here you would typically make an API call to generate the question
-  // For now, we'll return a placeholder response
-  return `Generated question for ${type.name} using text: ${text}`;
-};
