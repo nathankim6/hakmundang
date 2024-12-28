@@ -12,20 +12,22 @@ export const getSummaryBlankPrompt = (text: string) => `당신은 고등학교 �
    - 해설에는 각 빈칸의 정답이 정답인 이유를 설명해야 합니다.
    - 각 빈칸의 정답은 반드시 본문에서 찾을 수 있어야 합니다.
 
-다음과 같은 형식으로 문제를 생성해주세요:
-
 [문제]
 다음 글의 내용을 아래와 같이 요약하고자 한다. 빈칸 (A), (B), (C)에 들어갈 말로 가장 적절한 것을 본문에서 찾아서 그대로 쓰시오.
 
 ${text}
 
-[요약문]
-The ___(A)___ of ... ___(B)___ ... ___(C)___ ...
+${text}
+
+Humans are prone to boredom because their (A) ______ ______ are designed to respond less to repeated stimuli and more to (B) ______ ______ ______ This trait likely evolved to help our ancestors focus on (C) ______ ______ ______ in their surroundings.
+(A) ______ ______ (2단어)
+(B) ______ ______ ______ (3단어)
+(C) ______ ______ ______ (3단어)
 
 [정답]
-(A) [2-3단어]
-(B) [2-3단어]
-(C) [2-3단어]
+(A) [2단어]
+(B) [3단어]
+(C) [3단어]
 
 [해설]
 (A) [빈칸에 들어갈 표현이 정답인 이유와 본문에서의 맥락 설명]
