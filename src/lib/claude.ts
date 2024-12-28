@@ -20,7 +20,8 @@ import {
   getLogicFlowPrompt,
   getWeekendClinicPrompt,
   getDictionaryPrompt,
-  getSummaryBlankPrompt
+  getSummaryBlankPrompt,
+  getOrderWritingBasicPrompt
 } from "./prompts";
 
 export const getQuestionTypes = () => [
@@ -130,6 +131,9 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
         break;
       case "weekendClinic":
         prompt = getWeekendClinicPrompt(text);
+        break;
+      case "orderWritingBasic":
+        prompt = getOrderWritingBasicPrompt(text);
         break;
       case "dangDict":
         prompt = getDictionaryPrompt(text);

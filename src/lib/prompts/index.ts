@@ -18,3 +18,4 @@ export * from './synonymAntonym';
 export * from './logicFlow';
 export * from './dictionary';
 export * from './summaryBlank';
+export * from './orderWritingBasic';
