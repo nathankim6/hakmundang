@@ -56,38 +56,37 @@ export const splitIntoSentences = (text: string) => {
 };
 
 export const validateText = (text: string, isEnglish: boolean) => {
+  if (!text.trim()) return false;
+  
   const englishRegex = /^[A-Za-z0-9\s.,!?'"()\-:;@#$%&*]+$/;
   const koreanRegex = /^[가-힣0-9\s.,!?'"()\-:;@#$%&*]+$/;
+  
   return isEnglish ? englishRegex.test(text) : koreanRegex.test(text);
 };
 
 export const matchSentences = (engSentences: string[], korSentences: string[]) => {
-  const minLength = Math.min(engSentences.length, korSentences.length);
-  const normalizedEng = [...engSentences];
-  const normalizedKor = [...korSentences];
+  // Create arrays of valid sentences
+  const validatedEng = engSentences.filter(eng => validateText(eng, true));
+  const validatedKor = korSentences.filter(kor => validateText(kor, false));
 
-  if (engSentences.length > korSentences.length) {
-    const remainingEng = normalizedEng.splice(minLength).join(' ');
-    if (normalizedKor[minLength - 1]) {
-      normalizedKor[minLength - 1] += ' ' + remainingEng;
-    }
-  } else if (korSentences.length > engSentences.length) {
-    const remainingKor = normalizedKor.splice(minLength).join(' ');
-    if (normalizedEng[minLength - 1]) {
-      normalizedEng[minLength - 1] += ' ' + remainingKor;
-    }
+  // Get the maximum length to ensure we match all sentences
+  const maxLength = Math.max(validatedEng.length, validatedKor.length);
+  
+  // Create arrays padded to the same length
+  const paddedEng = [...validatedEng];
+  const paddedKor = [...validatedKor];
+  
+  // Pad the shorter array with empty strings if necessary
+  while (paddedEng.length < maxLength) {
+    paddedEng.push('');
+  }
+  while (paddedKor.length < maxLength) {
+    paddedKor.push('');
   }
 
-  const validatedPairs = normalizedEng.map((eng, index) => {
-    const kor = normalizedKor[index] || '';
-    const isValidEng = validateText(eng, true);
-    const isValidKor = validateText(kor, false);
-
-    return {
-      english: isValidEng ? eng : '',
-      korean: isValidKor ? kor : ''
-    };
-  });
-
-  return validatedPairs.filter(pair => pair.english && pair.korean);
+  // Create pairs of sentences
+  return paddedEng.map((eng, index) => ({
+    english: eng,
+    korean: paddedKor[index] || ''
+  })).filter(pair => pair.english && pair.korean); // Only return pairs where both sentences exist
 };
