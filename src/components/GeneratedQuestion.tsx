@@ -36,16 +36,10 @@ export const GeneratedQuestion = ({
             </span>
           </h3>
 
-          {/* Original Text Section */}
-          <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20 mb-4">
-            <h4 className="font-semibold text-[#403E43] mb-2">원문</h4>
-            {originalText}
-          </div>
-
-          {/* Question Sections */}
+          {/* Questions Section */}
           <div className="space-y-4">
             {formattedSections.map((section, index) => {
-              // Skip rendering the [정답] section and everything after it initially
+              // Skip rendering the [정답] section initially
               if (section.title.includes('정답')) {
                 return null;
               }
@@ -65,7 +59,7 @@ export const GeneratedQuestion = ({
 
           {/* Answer Section */}
           <div className="mt-8 pt-6 border-t-2 border-[#0EA5E9]/20">
-            <h4 className="font-semibold text-[#403E43] mb-4">정답 및 해설</h4>
+            <h4 className="font-semibold text-[#403E43] mb-4">정답</h4>
             <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20">
               {formattedSections
                 .filter(section => section.title.includes('정답'))
