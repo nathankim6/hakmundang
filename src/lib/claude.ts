@@ -50,7 +50,8 @@ const questionTypes: QuestionType[] = [
   { id: "synonymAntonym", name: "동의어/반의어" },
   { id: "trueOrFalse", name: "True or False" },
   { id: "logicFlow", name: "Logic Flow" },
-  { id: "sentenceSplitter", name: "한영문장분리" }
+  { id: "sentenceSplitter", name: "한영문장분리" },
+  { id: "weekendClinic", name: "주말클리닉" }
 ];
 
 export const getQuestionTypes = () => questionTypes;
