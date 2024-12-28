@@ -4,7 +4,7 @@ export const getOrderWritingBasicPrompt = (text: string) => `Create English sent
 ${text}
 
 [OUTPUT]
-[서답형] 다음 글을 읽고, 물음에 답하시오.
+다음 글을 읽고, 물음에 답하시오.
 
 ${text}
 
