@@ -17,3 +17,4 @@ export * from './trueOrFalse';
 export * from './synonymAntonym';
 export * from './logicFlow';
 export * from './dictionary';
+export * from './summaryBlank';
