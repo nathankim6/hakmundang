@@ -36,36 +36,26 @@ export const GeneratedQuestion = ({
             </span>
           </h3>
 
-          {/* Questions Section */}
-          <div className="space-y-4">
-            {formattedSections.map((section, index) => {
-              // Skip rendering the [정답] section initially
-              if (section.title.includes('정답')) {
-                return null;
-              }
-
-              return (
-                <div key={index} className="space-y-2">
-                  <h4 className="font-semibold text-[#403E43]">
-                    [{section.title}]
-                  </h4>
-                  <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F1F0FB] p-4 rounded-lg border border-[#D3E4FD]/30">
-                    {section.content}
-                  </div>
-                </div>
-              );
-            })}
+          {/* Original Text Section */}
+          <div className="mb-6">
+            <h4 className="font-semibold text-[#403E43] mb-2">원문</h4>
+            <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20">
+              {originalText}
+            </div>
           </div>
 
-          {/* Answer Section */}
-          <div className="mt-8 pt-6 border-t-2 border-[#0EA5E9]/20">
-            <h4 className="font-semibold text-[#403E43] mb-4">정답</h4>
-            <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20">
-              {formattedSections
-                .filter(section => section.title.includes('정답'))
-                .map(section => section.content)
-                .join('\n\n')}
-            </div>
+          {/* Questions Section - Now unified */}
+          <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F1F0FB] p-4 rounded-lg border border-[#D3E4FD]/30">
+            {formattedSections.map((section, index) => (
+              <div key={index} className="mb-4 last:mb-0">
+                <div className="font-semibold text-[#403E43] mb-2">
+                  [{section.title}]
+                </div>
+                <div className="whitespace-pre-wrap">
+                  {section.content}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
         
