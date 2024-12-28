@@ -8,6 +8,7 @@ import { useQuestionState } from "./question/QuestionState";
 import { useQuestionActions } from "./question/QuestionActions";
 import { Star } from "lucide-react";
 import { useState } from "react";
+import { ActionButtons as QuestionActionButtons } from "./question/ActionButtons";
 
 export const QuestionGenerator = () => {
   const {
@@ -110,6 +111,12 @@ export const QuestionGenerator = () => {
                   />
                 )}
               </div>
+
+              <QuestionActionButtons
+                onGenerate={handleGenerateAll}
+                onDownload={handleDownloadDoc}
+                isLoading={isLoading}
+              />
 
               <GeneratedQuestions questions={generatedQuestions} />
             </>
