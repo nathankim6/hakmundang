@@ -36,9 +36,8 @@ export const GeneratedQuestion = ({
             </span>
           </h3>
 
-          {/* Original Text Section */}
+          {/* Original Text Section - without the label */}
           <div className="mb-6">
-            <h4 className="font-semibold text-[#403E43] mb-2">원문</h4>
             <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20">
               {originalText}
             </div>
