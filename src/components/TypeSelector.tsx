@@ -27,7 +27,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
     type.id.match(/^(orderWritingBasic|orderWritingAdvanced)$/)
   );
   
-  // 옳은영어 전용
+  // 옳은영어 콘텐츠
   const contentTypes = types.filter(type => 
     type.id.match(/^(synonymAntonym|trueOrFalse|logicFlow|sentenceSplitter|weekendClinic)$/)
   );
@@ -72,7 +72,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
         onTypeClick={handleTypeClick}
       />
       <TypeCategory
-        title="옳은영어 전용"
+        title="옳은영어 콘텐츠"
         types={contentTypes}
         selectedTypes={selectedTypes}
         hasAccess={hasAccess}
