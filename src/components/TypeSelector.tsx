@@ -17,9 +17,9 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
     type.id.match(/^(purpose|mood|claim|implication|mainPoint|topic|title|vocabulary|blank|blankMultiple|irrelevant|order|insert|summary)$/)
   );
   
-  // 내신형 (index 14-20)
+  // 내신형
   const schoolTypes = types.filter(type => 
-    type.id.match(/^(sung|seong|dang)/)
+    type.id.match(/^(sungnamVocab|sungExternal|sungReference|yeongExternal|dangDict)/)
   );
   
   // 서답형
