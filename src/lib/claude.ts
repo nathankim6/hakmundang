@@ -122,6 +122,9 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
       case "logicFlow":
         prompt = getLogicFlowPrompt(text);
         break;
+      case "weekendClinic":
+        prompt = getWeekendClinicPrompt(text);
+        break;
       default:
         prompt = `Generate a question of type ${type.name} based on the following text: ${text}`;
     }
@@ -142,7 +145,13 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
       throw new Error("Invalid response format from Claude API");
     }
 
-    return content.text;
+    // For weekend clinic type, we need to ensure the [OUTPUT] tag is removed
+    let result = content.text;
+    if (type.id === "weekendClinic") {
+      result = result.replace("[OUTPUT]\n\n", "");
+    }
+
+    return result;
   } catch (error) {
     console.error("Error generating question:", error);
     throw new Error("문제 생성 중 오류가 발생했습니다. 다시 시도해 주세요.");
