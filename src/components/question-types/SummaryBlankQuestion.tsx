@@ -11,6 +11,18 @@ export const SummaryBlankQuestion = ({
   questionPart,
   answerPart
 }: SummaryBlankQuestionProps) => {
+  // Split the question part into the instruction and summary
+  const parts = questionPart.split('[요약문]');
+  const instruction = parts[0].trim();
+  const summary = parts.length > 1 ? parts[1].trim() : '';
+
+  // Format the answer part
+  const formattedAnswer = answerPart
+    .split('\n')
+    .map(line => line.trim())
+    .filter(line => line)
+    .join('\n');
+
   return (
     <div className="mb-8">
       <div className="prose max-w-none">
@@ -26,8 +38,14 @@ export const SummaryBlankQuestion = ({
             <div className="font-semibold text-[#403E43] mb-2">
               [문제]
             </div>
-            <div className="whitespace-pre-wrap">
-              {questionPart}
+            <div className="whitespace-pre-wrap mb-4">
+              {instruction}
+            </div>
+            <div className="font-semibold text-[#403E43] mb-2">
+              [요약문]
+            </div>
+            <div className="whitespace-pre-wrap font-medium">
+              {summary}
             </div>
           </div>
           
@@ -37,7 +55,7 @@ export const SummaryBlankQuestion = ({
               [정답]
             </div>
             <div className="whitespace-pre-wrap">
-              {answerPart}
+              {formattedAnswer}
             </div>
           </div>
         </div>
