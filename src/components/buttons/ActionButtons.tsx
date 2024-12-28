@@ -4,10 +4,9 @@ import { Star, Settings } from "lucide-react";
 
 interface ActionButtonsProps {
   openVocabModal: () => void;
-  openAIManagementModal: () => void;
 }
 
-export const ActionButtons = ({ openVocabModal, openAIManagementModal }: ActionButtonsProps) => {
+export const ActionButtons = ({ openVocabModal }: ActionButtonsProps) => {
   const buttonBaseClass = "group relative w-full px-8 py-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 font-semibold";
   
   return (
@@ -23,15 +22,21 @@ export const ActionButtons = ({ openVocabModal, openAIManagementModal }: ActionB
         <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity duration-200"></div>
       </Button>
 
-      <Button
-        onClick={openAIManagementModal}
-        className={`${buttonBaseClass} bg-white border-2 border-[#9b87f5] text-[#7E69AB] hover:bg-[#F8F7FF]`}
+      <a
+        href="http://orunstudy.site"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        <div className="flex items-center justify-center gap-2">
-          <Settings className="w-6 h-6 animate-spin-slow" />
-          <span>옳은영어 자비스2.0</span>
-        </div>
-      </Button>
+        <Button
+          className={`${buttonBaseClass} bg-gradient-to-r from-[#9b87f5] to-[#7E69AB] text-white hover:opacity-90`}
+        >
+          <div className="flex items-center justify-center gap-2">
+            <Settings className="w-6 h-6 animate-spin-slow" />
+            <span>옳은영어 자비스2.0</span>
+          </div>
+          <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity duration-200"></div>
+        </Button>
+      </a>
     </div>
   );
 };

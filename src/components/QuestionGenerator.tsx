@@ -37,7 +37,6 @@ export const QuestionGenerator = () => {
   });
 
   const [showVocabModal, setShowVocabModal] = useState(false);
-  const [showAIManagementModal, setShowAIManagementModal] = useState(false);
 
   const generatedQuestions = selectedTypes.flatMap((typeEntry) => 
     typeEntry.passages
@@ -80,7 +79,6 @@ export const QuestionGenerator = () => {
             <div className="mt-4">
               <ActionButtons 
                 openVocabModal={() => setShowVocabModal(true)}
-                openAIManagementModal={() => setShowAIManagementModal(true)}
               />
             </div>
           </div>
@@ -141,7 +139,7 @@ export const QuestionGenerator = () => {
         </div>
       </div>
 
-      {/* Modals */}
+      {/* Vocab Modal */}
       {showVocabModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white w-[95vw] h-[95vh] rounded-lg shadow-2xl relative">
@@ -155,24 +153,6 @@ export const QuestionGenerator = () => {
               src="https://vocabulary-voyage.lovable.app/"
               className="w-full h-full rounded-lg"
               title="Vocabulary Generator"
-            />
-          </div>
-        </div>
-      )}
-
-      {showAIManagementModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white w-[95vw] h-[95vh] rounded-lg shadow-2xl relative">
-            <button
-              className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
-              onClick={() => setShowAIManagementModal(false)}
-            >
-              ✕
-            </button>
-            <iframe
-              src="http://orunstudy.site"
-              className="w-full h-full rounded-lg"
-              title="AI Learning Management"
             />
           </div>
         </div>
