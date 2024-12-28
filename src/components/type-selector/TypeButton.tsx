@@ -6,9 +6,10 @@ interface TypeButtonProps {
   isSelected: boolean;
   hasAccess: boolean;
   onClick: () => void;
+  logo?: string;
 }
 
-export const TypeButton = ({ type, isSelected, hasAccess, onClick }: TypeButtonProps) => {
+export const TypeButton = ({ type, isSelected, hasAccess, onClick, logo }: TypeButtonProps) => {
   return (
     <button
       key={type.id}
@@ -21,7 +22,14 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick }: TypeButtonP
             : "hover:bg-[#D3E4FD] hover:text-[#0EA5E9]"
       }`}
     >
-      <span className="relative z-10 flex items-center justify-between gap-2">
+      <span className="relative z-10 flex items-center gap-2">
+        {logo && (
+          <img 
+            src={logo} 
+            alt="School logo" 
+            className="w-6 h-6 object-contain"
+          />
+        )}
         {!hasAccess && (
           <Lock 
             className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"

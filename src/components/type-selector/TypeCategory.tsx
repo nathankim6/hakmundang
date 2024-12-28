@@ -10,6 +10,22 @@ interface TypeCategoryProps {
   onTypeClick: (type: QuestionType, isSelected: boolean) => void;
 }
 
+const getSchoolLogo = (typeId: string): string | undefined => {
+  if (typeId.startsWith('sungnamVocab')) {
+    return '/lovable-uploads/f65366ac-b1b1-445b-b193-e2f14c9dfd82.png';
+  }
+  if (typeId.startsWith('sung')) {
+    return '/lovable-uploads/21a8d8a1-8477-4ccd-b993-e77b9fef8e2b.png';
+  }
+  if (typeId.startsWith('yeong')) {
+    return '/lovable-uploads/9a8b2f51-6d3e-473c-b09c-528ecc1f6613.png';
+  }
+  if (typeId.startsWith('dang')) {
+    return '/lovable-uploads/31f3e37e-b83a-4053-b1db-3b652acfb6c4.png';
+  }
+  return undefined;
+};
+
 export const TypeCategory = ({ 
   title, 
   types, 
@@ -22,6 +38,7 @@ export const TypeCategory = ({
       <CategoryTitle>{title}</CategoryTitle>
       {types.map((type) => {
         const isSelected = selectedTypes.some(t => t.id === type.id);
+        const logo = getSchoolLogo(type.id);
         return (
           <TypeButton
             key={type.id}
@@ -29,6 +46,7 @@ export const TypeCategory = ({
             isSelected={isSelected}
             hasAccess={hasAccess}
             onClick={() => onTypeClick(type, isSelected)}
+            logo={logo}
           />
         );
       })}
