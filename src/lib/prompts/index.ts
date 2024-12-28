@@ -16,3 +16,4 @@ export * from './weekendClinic';
 export * from './trueOrFalse';
 export * from './synonymAntonym';
 export * from './logicFlow';
+export * from './dictionary';

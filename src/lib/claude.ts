@@ -18,7 +18,8 @@ import {
   getTrueOrFalsePrompt,
   getSynonymAntonymPrompt,
   getLogicFlowPrompt,
-  getWeekendClinicPrompt
+  getWeekendClinicPrompt,
+  getDictionaryPrompt
 } from "./prompts";
 
 export const getQuestionTypes = () => [
@@ -127,6 +128,9 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
         break;
       case "weekendClinic":
         prompt = getWeekendClinicPrompt(text);
+        break;
+      case "dangDict":
+        prompt = getDictionaryPrompt(text);
         break;
       default:
         prompt = `Generate a question of type ${type.name} based on the following text: ${text}`;
