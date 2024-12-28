@@ -56,7 +56,7 @@ export const getQuestionTypes = () => [
   { id: "orderWritingAdvanced", name: "배열영작(우리말O,어형변화O)" },
   { id: "summaryBlank", name: "요약문 빈칸완성" },
 
-  // 옳은영어 전용
+  // 옳은영어 콘텐츠
   { id: "synonymAntonym", name: "동의어/반의어" },
   { id: "trueOrFalse", name: "True or False" },
   { id: "logicFlow", name: "Logic Flow" },
