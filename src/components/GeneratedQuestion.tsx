@@ -15,51 +15,69 @@ export const GeneratedQuestion = ({
 }: GeneratedQuestionProps) => {
   // Special handling for weekend clinic format
   if (originalText) {
-    const sections = content.split(/\[.*?\]/g).filter(Boolean);
-    if (sections.length > 0) {
-      return (
-        <div className="mb-8">
-          <div className="prose max-w-none">
-            <h3 className="text-2xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-[#0EA5E9] to-[#403E43] bg-clip-text text-transparent">
-                문제 {questionNumber}
-              </span>
-            </h3>
+    const sections = content.split(/\[(.*?)\]/g).filter(Boolean);
+    const formattedSections: { title: string; content: string }[] = [];
+    
+    for (let i = 0; i < sections.length; i += 2) {
+      if (sections[i + 1]) {
+        formattedSections.push({
+          title: sections[i],
+          content: sections[i + 1].trim()
+        });
+      }
+    }
 
-            {/* Original Text Section */}
-            <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20 mb-4">
-              <h4 className="font-semibold text-[#403E43] mb-2">원문</h4>
-              {originalText}
-            </div>
+    return (
+      <div className="mb-8">
+        <div className="prose max-w-none">
+          <h3 className="text-2xl font-bold mb-4">
+            <span className="bg-gradient-to-r from-[#0EA5E9] to-[#403E43] bg-clip-text text-transparent">
+              문제 {questionNumber}
+            </span>
+          </h3>
 
-            {/* Analysis Sections */}
-            <div className="space-y-4">
-              {content.split(/\[([^\]]+)\]/).map((section, index) => {
-                if (index % 2 === 1) { // Section titles
-                  return (
-                    <h4 key={index} className="font-semibold text-[#403E43] mt-4">
-                      [{section}]
-                    </h4>
-                  );
-                } else if (section.trim()) { // Section content
-                  return (
-                    <div 
-                      key={index}
-                      className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F1F0FB] p-4 rounded-lg border border-[#D3E4FD]/30"
-                    >
-                      {section.trim()}
-                    </div>
-                  );
-                }
+          {/* Original Text Section */}
+          <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20 mb-4">
+            <h4 className="font-semibold text-[#403E43] mb-2">원문</h4>
+            {originalText}
+          </div>
+
+          {/* Question Sections */}
+          <div className="space-y-4">
+            {formattedSections.map((section, index) => {
+              // Skip rendering the [정답] section and everything after it initially
+              if (section.title.includes('정답')) {
                 return null;
-              })}
+              }
+
+              return (
+                <div key={index} className="space-y-2">
+                  <h4 className="font-semibold text-[#403E43]">
+                    [{section.title}]
+                  </h4>
+                  <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F1F0FB] p-4 rounded-lg border border-[#D3E4FD]/30">
+                    {section.content}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Answer Section */}
+          <div className="mt-8 pt-6 border-t-2 border-[#0EA5E9]/20">
+            <h4 className="font-semibold text-[#403E43] mb-4">정답 및 해설</h4>
+            <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20">
+              {formattedSections
+                .filter(section => section.title.includes('정답'))
+                .map(section => section.content)
+                .join('\n\n')}
             </div>
           </div>
-          
-          <div className="mt-6 h-px bg-gradient-to-r from-transparent via-[#0EA5E9]/30 to-transparent" />
         </div>
-      );
-    }
+        
+        <div className="mt-6 h-px bg-gradient-to-r from-transparent via-[#0EA5E9]/30 to-transparent" />
+      </div>
+    );
   }
 
   // Default rendering for other question types
