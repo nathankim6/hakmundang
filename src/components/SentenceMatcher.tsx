@@ -50,22 +50,21 @@ export const SentenceMatcher = () => {
     const newMatchedSets: MatchedSet[] = [];
     let totalSentences = 0;
 
-    // Combine all English and Korean texts
-    const allEnglishText = textPairs.map(pair => pair.english).join(' ');
-    const allKoreanText = textPairs.map(pair => pair.korean).join(' ');
-
-    // Split and match all sentences at once
-    const englishSentences = splitIntoSentences(allEnglishText);
-    const koreanSentences = splitIntoSentences(allKoreanText);
-    const matched = matchSentences(englishSentences, koreanSentences);
-
-    if (matched.length > 0) {
-      newMatchedSets.push({
-        setNumber: 1,
-        sentences: matched
-      });
-      totalSentences = matched.length;
-    }
+    textPairs.forEach((pair, index) => {
+      if (pair.english.trim() && pair.korean.trim()) {
+        const englishSentences = splitIntoSentences(pair.english);
+        const koreanSentences = splitIntoSentences(pair.korean);
+        const matched = matchSentences(englishSentences, koreanSentences);
+        
+        if (matched.length > 0) {
+          newMatchedSets.push({
+            setNumber: index + 1,
+            sentences: matched
+          });
+          totalSentences += matched.length;
+        }
+      }
+    });
 
     setMatchedSets(newMatchedSets);
     setInfo(`총 ${newMatchedSets.length}개의 지문에서 ${totalSentences}개의 문장이 매칭되었습니다.`);
