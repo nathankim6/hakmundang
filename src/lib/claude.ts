@@ -21,7 +21,7 @@ import {
   getWeekendClinicPrompt
 } from "./prompts";
 
-const questionTypes: QuestionType[] = [
+export const getQuestionTypes = () => [
   // 수능형
   { id: "purpose", name: "[18] 글의 목적" },
   { id: "mood", name: "[19] 심경/분위기" },
@@ -30,6 +30,7 @@ const questionTypes: QuestionType[] = [
   { id: "mainPoint", name: "[22] 요지" },
   { id: "topic", name: "[23] 주제" },
   { id: "title", name: "[24] 제목" },
+  { id: "vocabulary", name: "[31] 어휘" },
   { id: "blank", name: "[31] 빈칸" },
   { id: "blankMultiple", name: "[32-34] 빈칸" },
   { id: "irrelevant", name: "[35] 무관한 문장" },
@@ -46,6 +47,10 @@ const questionTypes: QuestionType[] = [
   { id: "seongVocab3", name: "[성남고] 어휘3(영영사전)" },
   { id: "dangListen", name: "[당곡고] 듣기변형" },
 
+  // 서답형
+  { id: "orderWritingBasic", name: "배열영작(우리말O,어형변화X)" },
+  { id: "orderWritingAdvanced", name: "배열영작(우리말O,어형변화O)" },
+
   // 옳은영어 전용
   { id: "synonymAntonym", name: "동의어/반의어" },
   { id: "trueOrFalse", name: "True or False" },
@@ -53,8 +58,6 @@ const questionTypes: QuestionType[] = [
   { id: "sentenceSplitter", name: "한영문장분리" },
   { id: "weekendClinic", name: "주말클리닉" }
 ];
-
-export const getQuestionTypes = () => questionTypes;
 
 export const generateQuestion = async (type: QuestionType, text: string) => {
   try {
