@@ -32,7 +32,7 @@ export const ActionButtons = ({ openVocabModal }: ActionButtonsProps) => {
         >
           <div className="flex items-center justify-center gap-2">
             <Settings className="w-6 h-6 animate-spin-slow" />
-            <span>옳은영어 자비스2.0</span>
+            <span>AI학습매니지먼트</span>
           </div>
           <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity duration-200"></div>
         </Button>
