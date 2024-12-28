@@ -16,7 +16,7 @@ export const LoadingProgress = ({ current, total, onStop }: LoadingProgressProps
       <div className="flex items-center justify-between mb-2">
         <div className="flex items-center gap-2">
           <Sparkles className="w-5 h-5 text-[#0EA5E9] animate-pulse" />
-          <span className="font-semibold text-[#403E43]">단어장 생성 중...</span>
+          <span className="font-semibold text-[#403E43]">문제 생성 중...</span>
         </div>
         <div className="flex items-center gap-4">
           <span className="text-sm text-muted-foreground">

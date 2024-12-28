@@ -68,6 +68,17 @@ export const GeneratedQuestion = ({
   let questionPart = parts[0].trim();
   const answerPart = parts.length > 1 ? '[정답]' + parts.slice(1).join('').trim() : '';
 
+  // Remove [INPUT] section if present
+  if (questionPart.includes('[INPUT]')) {
+    const inputEndIndex = questionPart.indexOf('[OUTPUT]');
+    if (inputEndIndex !== -1) {
+      questionPart = questionPart.substring(inputEndIndex);
+    }
+  }
+
+  // Remove [OUTPUT] tag
+  questionPart = questionPart.replace('[OUTPUT]', '').trim();
+
   // Remove explanatory text for synonym/antonym questions
   if (content.includes('| 표제어 |') || content.includes('동의어') || content.includes('반의어')) {
     const tableStart = questionPart.indexOf('|');
@@ -76,7 +87,6 @@ export const GeneratedQuestion = ({
     }
   }
 
-  questionPart = questionPart.replace('[OUTPUT]', '').trim();
   const isTrueFalse = questionPart.includes('(T/F)');
 
   // For True/False questions, handle the format differently
