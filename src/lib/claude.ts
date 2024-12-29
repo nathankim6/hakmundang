@@ -22,7 +22,8 @@ import {
   getDictionaryPrompt,
   getSummaryBlankPrompt,
   getOrderWritingBasicPrompt,
-  getOrderWritingAdvancedPrompt
+  getOrderWritingAdvancedPrompt,
+  getDaeguGirls1Prompt
 } from "./prompts";
 
 export const getQuestionTypes = () => [
@@ -148,6 +149,9 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
         break;
       case "summaryBlank":
         prompt = getSummaryBlankPrompt(text);
+        break;
+      case "daeguGirls1":
+        prompt = getDaeguGirls1Prompt(text);
         break;
       default:
         prompt = `Generate a question of type ${type.name} based on the following text: ${text}`;

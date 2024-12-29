@@ -20,3 +20,4 @@ export * from './dictionary';
 export * from './summaryBlank';
 export * from './orderWritingBasic';
 export * from './orderWritingAdvanced';
+export * from './daeguGirls1';
