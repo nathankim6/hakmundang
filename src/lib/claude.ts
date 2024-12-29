@@ -61,7 +61,11 @@ export const getQuestionTypes = () => [
   { id: "trueOrFalse", name: "True or False" },
   { id: "logicFlow", name: "Logic Flow" },
   { id: "sentenceSplitter", name: "한영문장분리" },
-  { id: "weekendClinic", name: "주말클리닉" }
+  { id: "weekendClinic", name: "주말클리닉" },
+
+  // 임시
+  { id: "daeguGirls1", name: "[임시]대구여고1" },
+  { id: "daeguGirls2", name: "[임시]대구여고2" }
 ];
 
 export const generateQuestion = async (type: QuestionType, text: string) => {

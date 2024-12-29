@@ -31,6 +31,11 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
   const contentTypes = types.filter(type => 
     type.id.match(/^(synonymAntonym|trueOrFalse|logicFlow|sentenceSplitter|weekendClinic)$/)
   );
+
+  // 임시
+  const tempTypes = types.filter(type => 
+    type.id.match(/^(daeguGirls1|daeguGirls2)$/)
+  );
   
   const { toast } = useToast();
   const hasAccess = localStorage.getItem("hasAccess") === "true";
@@ -74,6 +79,13 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
       <TypeCategory
         title="옳은영어 콘텐츠"
         types={contentTypes}
+        selectedTypes={selectedTypes}
+        hasAccess={hasAccess}
+        onTypeClick={handleTypeClick}
+      />
+      <TypeCategory
+        title="임시"
+        types={tempTypes}
         selectedTypes={selectedTypes}
         hasAccess={hasAccess}
         onTypeClick={handleTypeClick}
