@@ -11,10 +11,14 @@ export const SummaryBlankQuestion = ({
   questionPart,
   answerPart
 }: SummaryBlankQuestionProps) => {
-  // Split the question part to separate the original text and the question
-  const parts = questionPart.split('다음 글을 읽고, 물음에 답하시오.');
+  // Split the content into sections
+  const parts = questionPart.split('[문제]');
   const originalText = parts[0].trim();
-  const actualQuestion = parts[1]?.trim() || '';
+  const questionText = parts[1]?.trim() || '';
+
+  // Extract summary text if present
+  const summaryMatch = questionText.match(/\[요약문\]([\s\S]*?)(?=\[|$)/);
+  const summaryText = summaryMatch ? summaryMatch[1].trim() : '';
 
   // Format the answer part
   const formattedAnswer = answerPart
@@ -43,7 +47,12 @@ export const SummaryBlankQuestion = ({
             <div className="font-semibold text-[#403E43] mb-2">
               [문제]
             </div>
-            {actualQuestion}
+            <div className="mb-4">다음 글의 내용을 아래와 같이 요약하고자 한다. 빈칸 (A), (B), (C)에 들어갈 말로 가장 적절한 것을 본문에서 찾아서 그대로 쓰시오.</div>
+            
+            <div className="font-semibold text-[#403E43] mb-2">
+              [요약문]
+            </div>
+            <div className="mb-4">{summaryText}</div>
           </div>
           
           {/* Answer Section */}

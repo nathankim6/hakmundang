@@ -12,17 +12,19 @@ export const getSummaryBlankPrompt = (text: string) => `당신은 고등학교 �
    - 해설에는 각 빈칸의 정답이 정답인 이유를 설명해야 합니다.
    - 각 빈칸의 정답은 반드시 본문에서 찾을 수 있어야 합니다.
 
+[INPUT]
+${text}
+
+[OUTPUT]
+다음 글을 읽고, 물음에 답하시오.
+
+${text}
+
 [문제]
 다음 글의 내용을 아래와 같이 요약하고자 한다. 빈칸 (A), (B), (C)에 들어갈 말로 가장 적절한 것을 본문에서 찾아서 그대로 쓰시오.
 
-${text}
-
-${text}
-
-Humans are prone to boredom because their (A) ______ ______ are designed to respond less to repeated stimuli and more to (B) ______ ______ ______ This trait likely evolved to help our ancestors focus on (C) ______ ______ ______ in their surroundings.
-(A) ______ ______ (2단어)
-(B) ______ ______ ______ (3단어)
-(C) ______ ______ ______ (3단어)
+[요약문]
+(A) ______ ______ 와/과 (B) ______ ______ ______ 는/은 (C) ______ ______ ______ 하다.
 
 [정답]
 (A) [2단어]
