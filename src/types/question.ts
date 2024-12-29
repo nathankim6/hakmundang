@@ -1,7 +1,7 @@
 export type QuestionType = {
   id: string;
   name: string;
-  getPrompt: (text: string) => string;
+  prompt?: string;
 };
 
 export type GeneratedQuestion = {

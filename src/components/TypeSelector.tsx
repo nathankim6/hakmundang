@@ -19,7 +19,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
   
   // 내신형
   const schoolTypes = types.filter(type => 
-    type.id.match(/^(sungnamVocab|sungExternal|sungReference|yeongExternal|dangDict|daeguGirls1|daeguGirls2)/)
+    type.id.match(/^(sungnamVocab|sungExternal|sungReference|yeongExternal|dangDict)/)
   );
   
   // 서답형

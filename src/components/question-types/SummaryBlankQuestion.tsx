@@ -11,20 +11,17 @@ export const SummaryBlankQuestion = ({
   questionPart,
   answerPart
 }: SummaryBlankQuestionProps) => {
-  // Extract the original text (everything before [문제])
-  const originalText = questionPart.split('[문제]')[0].trim();
-  
-  // Extract the question part (everything between [문제] and [정답])
-  const questionMatch = questionPart.match(/\[문제\]([\s\S]*?)(?=\[정답\]|$)/);
-  const questionText = questionMatch ? questionMatch[1].trim() : '';
-  
-  // Extract the answer part (everything after [정답])
-  const answerMatch = answerPart.match(/\[정답\]([\s\S]*?)(?=\[해설\]|$)/);
-  const answerText = answerMatch ? answerMatch[1].trim() : '';
-  
-  // Extract the explanation part (everything after [해설])
-  const explanationMatch = answerPart.match(/\[해설\]([\s\S]*?)$/);
-  const explanationText = explanationMatch ? explanationMatch[1].trim() : '';
+  // Split the question part into the instruction and summary
+  const parts = questionPart.split('[요약문]');
+  const instruction = parts[0].trim();
+  const summary = parts.length > 1 ? parts[1].trim() : '';
+
+  // Format the answer part
+  const formattedAnswer = answerPart
+    .split('\n')
+    .map(line => line.trim())
+    .filter(line => line)
+    .join('\n');
 
   return (
     <div className="mb-8">
@@ -36,25 +33,19 @@ export const SummaryBlankQuestion = ({
         </h3>
         
         <div className="space-y-4">
-          <div className="text-base font-medium mb-2">
-            다음 글의 내용을 아래와 같이 요약하고자 한다. 빈칸 (A), (B), (C)에 들어갈 말로 가장 적절한 것을 본문에서 찾아서 그대로 쓰시오.
-          </div>
-
-          {/* Original Text Section */}
-          <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F1F0FB] p-4 rounded-lg border border-[#D3E4FD]/30">
-            <div className="font-semibold text-[#403E43] mb-2">
-              [영어 지문]
-            </div>
-            {originalText}
-          </div>
-
           {/* Question Section */}
           <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F1F0FB] p-4 rounded-lg border border-[#D3E4FD]/30">
             <div className="font-semibold text-[#403E43] mb-2">
               [문제]
             </div>
-            <div className="whitespace-pre-wrap">
-              {questionText}
+            <div className="whitespace-pre-wrap mb-4">
+              {instruction}
+            </div>
+            <div className="font-semibold text-[#403E43] mb-2">
+              [요약문]
+            </div>
+            <div className="whitespace-pre-wrap font-medium">
+              {summary}
             </div>
           </div>
           
@@ -64,17 +55,7 @@ export const SummaryBlankQuestion = ({
               [정답]
             </div>
             <div className="whitespace-pre-wrap">
-              {answerText}
-            </div>
-          </div>
-
-          {/* Explanation Section */}
-          <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20">
-            <div className="font-semibold text-[#403E43] mb-2">
-              [해설]
-            </div>
-            <div className="whitespace-pre-wrap">
-              {explanationText}
+              {formattedAnswer}
             </div>
           </div>
         </div>
