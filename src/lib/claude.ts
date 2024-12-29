@@ -1,27 +1,12 @@
 import { QuestionType } from "@/types/question";
-import { Anthropic } from '@anthropic-ai/sdk';
 import { 
-  getBlankPrompt,
-  getBlankMultiplePrompt,
-  getClaimPrompt,
-  getDictionaryPrompt,
-  getImplicationPrompt,
-  getInsertPrompt,
-  getIrrelevantPrompt,
-  getLogicFlowPrompt,
-  getMainPointPrompt,
-  getMoodPrompt,
-  getOrderPrompt,
-  getOrderWritingAdvancedPrompt,
-  getOrderWritingBasicPrompt,
-  getPurposePrompt,
-  getSummaryBlankPrompt,
-  getSummaryPrompt,
-  getSynonymAntonymPrompt,
-  getTitlePrompt,
-  getTopicPrompt,
-  getTrueOrFalsePrompt,
-  getVocabularyPrompt,
+  getBlankPrompt, getBlankMultiplePrompt, getClaimPrompt,
+  getDictionaryPrompt, getImplicationPrompt, getInsertPrompt,
+  getIrrelevantPrompt, getLogicFlowPrompt, getMainPointPrompt,
+  getMoodPrompt, getOrderPrompt, getOrderWritingAdvancedPrompt,
+  getOrderWritingBasicPrompt, getPurposePrompt, getSummaryBlankPrompt,
+  getSummaryPrompt, getSynonymAntonymPrompt, getTitlePrompt,
+  getTopicPrompt, getTrueOrFalsePrompt, getVocabularyPrompt,
   getWeekendClinicPrompt,
 } from "./prompts";
 
@@ -147,55 +132,11 @@ export const getQuestionTypes = (): QuestionType[] => [
     getPrompt: getVocabularyPrompt,
   },
   {
-    id: "daeguGirls2",
+    id: "daeguGirls2", 
     name: "[임시]대구여고2",
-    description: "대구여고 문제 유형 2",
+    description: "대구여고 문제 유형 2", 
     getPrompt: getVocabularyPrompt,
-  },
-  {
-    id: "orderWritingBasic",
-    name: "우리말 순서 배열 (기본)",
-    description: "우리말을 영작하여 순서 배열하기 (기본)",
-    getPrompt: getOrderWritingBasicPrompt,
-  },
-  {
-    id: "orderWritingAdvanced",
-    name: "우리말 순서 배열 (심화)",
-    description: "우리말을 영작하여 순서 배열하기 (심화)",
-    getPrompt: getOrderWritingAdvancedPrompt,
-  },
-  {
-    id: "summaryBlank",
-    name: "요약문 빈칸",
-    description: "요약문의 빈칸 채우기",
-    getPrompt: getSummaryBlankPrompt,
-  },
-  {
-    id: "synonymAntonym",
-    name: "동의어/반의어",
-    description: "동의어/반의어 찾기",
-    getPrompt: getSynonymAntonymPrompt,
-  },
-  {
-    id: "trueOrFalse",
-    name: "참/거짓",
-    description: "참/거짓 판단하기",
-    getPrompt: getTrueOrFalsePrompt,
-  },
-  {
-    id: "logicFlow",
-    name: "논리 전개",
-    description: "논리 전개 파악하기",
-    getPrompt: getLogicFlowPrompt,
-  },
-  {
-    id: "weekendClinic",
-    name: "주말진료소",
-    description: "주말진료소 문제",
-    getPrompt: getWeekendClinicPrompt,
-  },
+  }
 ];
 
-export const anthropic = new Anthropic({
-  apiKey: import.meta.env.VITE_CLAUDE_API_KEY,
-});
+export { generateQuestion } from './question-generator';

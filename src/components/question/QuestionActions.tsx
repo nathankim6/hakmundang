@@ -1,4 +1,4 @@
-import { generateQuestion } from "@/lib/claude";
+import { generateQuestion } from "@/lib/question-generator";
 import { generateDocument } from "@/utils/documentGenerator";
 import { TypeEntry } from "@/types/question";
 
