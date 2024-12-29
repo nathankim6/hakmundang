@@ -18,8 +18,13 @@ export const SummaryBlankQuestion = ({
   const questionMatch = questionPart.match(/\[문제\]([\s\S]*?)(?=\[정답\]|$)/);
   const questionText = questionMatch ? questionMatch[1].trim() : '';
   
-  // Format the answer part (everything after [정답])
-  const formattedAnswer = answerPart.trim();
+  // Extract the answer part (everything after [정답])
+  const answerMatch = answerPart.match(/\[정답\]([\s\S]*?)(?=\[해설\]|$)/);
+  const answerText = answerMatch ? answerMatch[1].trim() : '';
+  
+  // Extract the explanation part (everything after [해설])
+  const explanationMatch = answerPart.match(/\[해설\]([\s\S]*?)$/);
+  const explanationText = explanationMatch ? explanationMatch[1].trim() : '';
 
   return (
     <div className="mb-8">
@@ -52,7 +57,17 @@ export const SummaryBlankQuestion = ({
               [정답]
             </div>
             <div className="whitespace-pre-wrap">
-              {formattedAnswer}
+              {answerText}
+            </div>
+          </div>
+
+          {/* Explanation Section */}
+          <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20">
+            <div className="font-semibold text-[#403E43] mb-2">
+              [해설]
+            </div>
+            <div className="whitespace-pre-wrap">
+              {explanationText}
             </div>
           </div>
         </div>
