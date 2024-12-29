@@ -11,12 +11,12 @@ export const SummaryBlankQuestion = ({
   questionPart,
   answerPart
 }: SummaryBlankQuestionProps) => {
-  // Extract the original text (everything before [문제])
-  const originalText = questionPart.split('[문제]')[0].trim();
+  // Extract the original text (everything before [요약문])
+  const originalText = questionPart.split('[요약문]')[0].trim();
   
-  // Extract the question part (everything between [문제] and [정답])
-  const questionMatch = questionPart.match(/\[문제\]([\s\S]*?)(?=\[정답\]|$)/);
-  const questionText = questionMatch ? questionMatch[1].trim() : '';
+  // Extract the summary part (everything between [요약문] and [정답])
+  const summaryMatch = questionPart.match(/\[요약문\]([\s\S]*?)(?=\[정답\]|$)/);
+  const summaryText = summaryMatch ? summaryMatch[1].trim() : '';
   
   // Extract the answer part (everything after [정답])
   const answerMatch = answerPart.match(/\[정답\]([\s\S]*?)(?=\[해설\]|$)/);
@@ -45,13 +45,13 @@ export const SummaryBlankQuestion = ({
             {originalText}
           </div>
 
-          {/* Question Section */}
+          {/* Summary Section */}
           <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F1F0FB] p-4 rounded-lg border border-[#D3E4FD]/30">
             <div className="font-semibold text-[#403E43] mb-2">
-              [문제]
+              [요약문]
             </div>
             <div className="whitespace-pre-wrap">
-              {questionText}
+              {summaryText}
             </div>
           </div>
           
