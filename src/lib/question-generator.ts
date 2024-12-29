@@ -14,7 +14,12 @@ export const generateQuestion = async (type: QuestionType, text: string): Promis
       }],
     });
 
-    return response.content[0].text;
+    // Access the text content safely
+    if (response.content[0].type === 'text') {
+      return response.content[0].text;
+    }
+    
+    throw new Error('Unexpected response format from Claude API');
   } catch (error) {
     console.error('Error generating question:', error);
     throw error;
