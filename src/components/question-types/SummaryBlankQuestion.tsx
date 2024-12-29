@@ -36,6 +36,10 @@ export const SummaryBlankQuestion = ({
         </h3>
         
         <div className="space-y-4">
+          <div className="text-base font-medium mb-2">
+            다음 글의 내용을 아래와 같이 요약하고자 한다. 빈칸 (A), (B), (C)에 들어갈 말로 가장 적절한 것을 본문에서 찾아서 그대로 쓰시오.
+          </div>
+
           {/* Original Text Section */}
           <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F1F0FB] p-4 rounded-lg border border-[#D3E4FD]/30">
             {originalText}
