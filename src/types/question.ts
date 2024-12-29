@@ -1,7 +1,6 @@
 export type QuestionType = {
   id: string;
   name: string;
-  description: string;
   getPrompt: (text: string) => string;
 };
 
