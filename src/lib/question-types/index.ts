@@ -10,7 +10,7 @@ import {
   getWeekendClinicPrompt,
 } from "../prompts";
 
-// Reading comprehension types
+// Reading comprehension types (수능형)
 export const readingTypes: QuestionType[] = [
   {
     id: "purpose",
@@ -84,7 +84,7 @@ export const readingTypes: QuestionType[] = [
   }
 ];
 
-// School exam types
+// School exam types (내신형)
 export const schoolTypes: QuestionType[] = [
   {
     id: "sungnamVocab",
@@ -123,7 +123,7 @@ export const schoolTypes: QuestionType[] = [
   },
 ];
 
-// Writing types
+// Writing types (서답형)
 export const writingTypes: QuestionType[] = [
   {
     id: "orderWritingBasic",
@@ -142,7 +142,7 @@ export const writingTypes: QuestionType[] = [
   },
 ];
 
-// Content types
+// Content types (옳은영어 콘텐츠)
 export const contentTypes: QuestionType[] = [
   {
     id: "synonymAntonym",
