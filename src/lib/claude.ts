@@ -1,5 +1,4 @@
 import { QuestionType } from "@/types/question";
-import { Anthropic } from "@anthropic-ai/sdk";
 import { 
   getPurposePrompt, 
   getClaimPrompt, 
@@ -50,6 +49,8 @@ export const getQuestionTypes = () => [
   { id: "sungReference", name: "[숭의여고] 지칭추론" },
   { id: "yeongExternal", name: "[영등포고] 외부지문" },
   { id: "dangDict", name: "[당곡고] 영영사전" },
+  { id: "daeguGirls1", name: "[임시]대구여고1" },
+  { id: "daeguGirls2", name: "[임시]대구여고2" },
 
   // 서답형
   { id: "orderWritingBasic", name: "배열영작(우리말O,어형변화X)" },
