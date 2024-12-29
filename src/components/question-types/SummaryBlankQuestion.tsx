@@ -11,6 +11,11 @@ export const SummaryBlankQuestion = ({
   questionPart,
   answerPart
 }: SummaryBlankQuestionProps) => {
+  // Split the question part to separate the original text and the question
+  const parts = questionPart.split('다음 글을 읽고, 물음에 답하시오.');
+  const originalText = parts[0].trim();
+  const actualQuestion = parts[1]?.trim() || '';
+
   // Format the answer part
   const formattedAnswer = answerPart
     .split('\n')
@@ -28,9 +33,17 @@ export const SummaryBlankQuestion = ({
         </h3>
         
         <div className="space-y-4">
+          {/* Original Text Section */}
+          <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F1F0FB] p-4 rounded-lg border border-[#D3E4FD]/30">
+            {originalText}
+          </div>
+
           {/* Question Section */}
           <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F1F0FB] p-4 rounded-lg border border-[#D3E4FD]/30">
-            {questionPart}
+            <div className="font-semibold text-[#403E43] mb-2">
+              [문제]
+            </div>
+            {actualQuestion}
           </div>
           
           {/* Answer Section */}
