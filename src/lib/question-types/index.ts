@@ -166,4 +166,4 @@ export const contentTypes: QuestionType[] = [
   },
 ];
 
-export { generateQuestion } from './question-generator';
+export { generateQuestion } from '../question-generator';
