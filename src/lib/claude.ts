@@ -1,181 +1,201 @@
 import { QuestionType } from "@/types/question";
-import { Anthropic } from "@anthropic-ai/sdk";
+import { Anthropic } from '@anthropic-ai/sdk';
 import { 
-  getPurposePrompt, 
-  getClaimPrompt, 
-  getImplicationPrompt, 
-  getMoodPrompt,
-  getMainPointPrompt,
-  getTopicPrompt,
-  getTitlePrompt,
-  getVocabularyPrompt,
   getBlankPrompt,
   getBlankMultiplePrompt,
-  getIrrelevantPrompt,
-  getOrderPrompt,
-  getInsertPrompt,
-  getSummaryPrompt,
-  getTrueOrFalsePrompt,
-  getSynonymAntonymPrompt,
-  getLogicFlowPrompt,
-  getWeekendClinicPrompt,
+  getClaimPrompt,
   getDictionaryPrompt,
-  getSummaryBlankPrompt,
+  getImplicationPrompt,
+  getInsertPrompt,
+  getIrrelevantPrompt,
+  getLogicFlowPrompt,
+  getMainPointPrompt,
+  getMoodPrompt,
+  getOrderPrompt,
+  getOrderWritingAdvancedPrompt,
   getOrderWritingBasicPrompt,
-  getOrderWritingAdvancedPrompt
+  getPurposePrompt,
+  getSummaryBlankPrompt,
+  getSummaryPrompt,
+  getSynonymAntonymPrompt,
+  getTitlePrompt,
+  getTopicPrompt,
+  getTrueOrFalsePrompt,
+  getVocabularyPrompt,
+  getWeekendClinicPrompt,
 } from "./prompts";
 
-export const getQuestionTypes = () => [
-  // 수능형
-  { id: "purpose", name: "[18] 글의 목적" },
-  { id: "mood", name: "[19] 심경/분위기" },
-  { id: "claim", name: "[20] 주장" },
-  { id: "implication", name: "[21] 함축의미" },
-  { id: "mainPoint", name: "[22] 요지" },
-  { id: "topic", name: "[23] 주제" },
-  { id: "title", name: "[24] 제목" },
-  { id: "vocabulary", name: "[31] 어휘" },
-  { id: "blank", name: "[31] 빈칸" },
-  { id: "blankMultiple", name: "[32-34] 빈칸" },
-  { id: "irrelevant", name: "[35] 무관한 문장" },
-  { id: "order", name: "[36-37] 순서" },
-  { id: "insert", name: "[38-39] 문장삽입" },
-  { id: "summary", name: "[40] 요약문" },
-
-  // 내신형
-  { id: "sungnamVocab1", name: "[숭의성남] 어휘1(동의어)" },
-  { id: "sungnamVocab2", name: "[숭의성남] 어휘2(예문)" },
-  { id: "sungnamVocab3", name: "[숭의성남] 어휘3(영영사전)" },
-  { id: "sungExternal", name: "[숭의여고] 외부지문" },
-  { id: "sungReference", name: "[숭의여고] 지칭추론" },
-  { id: "yeongExternal", name: "[영등포고] 외부지문" },
-  { id: "dangDict", name: "[당곡고] 영영사전" },
-  { id: "daeguGirls1", name: "[임시]대구여고1" },
-  { id: "daeguGirls2", name: "[임시]대구여고2" },
-
-  // 서답형
-  { id: "orderWritingBasic", name: "배열영작(우리말O,어형변화X)" },
-  { id: "orderWritingAdvanced", name: "배열영작(우리말O,어형변화O)" },
-  { id: "summaryBlank", name: "요약문 빈칸완성" },
-
-  // 옳은영어 콘텐츠
-  { id: "synonymAntonym", name: "동의어/반의어" },
-  { id: "trueOrFalse", name: "True or False" },
-  { id: "logicFlow", name: "Logic Flow" },
-  { id: "sentenceSplitter", name: "한영문장분리" },
-  { id: "weekendClinic", name: "주말클리닉" }
+export const getQuestionTypes = (): QuestionType[] => [
+  {
+    id: "purpose",
+    name: "목적",
+    description: "글의 목적을 묻는 문제",
+    getPrompt: getPurposePrompt,
+  },
+  {
+    id: "mood",
+    name: "분위기/심경",
+    description: "글의 분위기나 심경을 묻는 문제",
+    getPrompt: getMoodPrompt,
+  },
+  {
+    id: "claim",
+    name: "주장",
+    description: "글쓴이의 주장을 묻는 문제",
+    getPrompt: getClaimPrompt,
+  },
+  {
+    id: "implication",
+    name: "함축",
+    description: "글의 함축적 의미를 묻는 문제",
+    getPrompt: getImplicationPrompt,
+  },
+  {
+    id: "mainPoint",
+    name: "요지",
+    description: "글의 요지를 묻는 문제",
+    getPrompt: getMainPointPrompt,
+  },
+  {
+    id: "topic",
+    name: "주제",
+    description: "글의 주제를 묻는 문제",
+    getPrompt: getTopicPrompt,
+  },
+  {
+    id: "title",
+    name: "제목",
+    description: "글의 제목을 묻는 문제",
+    getPrompt: getTitlePrompt,
+  },
+  {
+    id: "vocabulary",
+    name: "어휘",
+    description: "어휘 문제",
+    getPrompt: getVocabularyPrompt,
+  },
+  {
+    id: "blank",
+    name: "빈칸",
+    description: "빈칸 추론 문제",
+    getPrompt: getBlankPrompt,
+  },
+  {
+    id: "blankMultiple",
+    name: "빈칸 (복수)",
+    description: "복수 빈칸 추론 문제",
+    getPrompt: getBlankMultiplePrompt,
+  },
+  {
+    id: "irrelevant",
+    name: "어색한 문장",
+    description: "흐름과 무관한 문장 찾기",
+    getPrompt: getIrrelevantPrompt,
+  },
+  {
+    id: "order",
+    name: "순서 배열",
+    description: "문장 순서 배열하기",
+    getPrompt: getOrderPrompt,
+  },
+  {
+    id: "insert",
+    name: "문장 삽입",
+    description: "주어진 문장 삽입하기",
+    getPrompt: getInsertPrompt,
+  },
+  {
+    id: "summary",
+    name: "요약문",
+    description: "요약문 완성하기",
+    getPrompt: getSummaryPrompt,
+  },
+  {
+    id: "sungnamVocab",
+    name: "성남외고 어휘",
+    description: "성남외고 어휘 문제",
+    getPrompt: getVocabularyPrompt,
+  },
+  {
+    id: "sungExternal",
+    name: "성남외고 외부지문",
+    description: "성남외고 외부지문 문제",
+    getPrompt: getVocabularyPrompt,
+  },
+  {
+    id: "sungReference",
+    name: "성남외고 지문참조",
+    description: "성남외고 지문참조 문제",
+    getPrompt: getVocabularyPrompt,
+  },
+  {
+    id: "yeongExternal",
+    name: "영신여고 외부지문",
+    description: "영신여고 외부지문 문제",
+    getPrompt: getVocabularyPrompt,
+  },
+  {
+    id: "dangDict",
+    name: "당곡고 사전활용",
+    description: "당곡고 사전활용 문제",
+    getPrompt: getDictionaryPrompt,
+  },
+  {
+    id: "daeguGirls1",
+    name: "[임시]대구여고1",
+    description: "대구여고 문제 유형 1",
+    getPrompt: getVocabularyPrompt,
+  },
+  {
+    id: "daeguGirls2",
+    name: "[임시]대구여고2",
+    description: "대구여고 문제 유형 2",
+    getPrompt: getVocabularyPrompt,
+  },
+  {
+    id: "orderWritingBasic",
+    name: "우리말 순서 배열 (기본)",
+    description: "우리말을 영작하여 순서 배열하기 (기본)",
+    getPrompt: getOrderWritingBasicPrompt,
+  },
+  {
+    id: "orderWritingAdvanced",
+    name: "우리말 순서 배열 (심화)",
+    description: "우리말을 영작하여 순서 배열하기 (심화)",
+    getPrompt: getOrderWritingAdvancedPrompt,
+  },
+  {
+    id: "summaryBlank",
+    name: "요약문 빈칸",
+    description: "요약문의 빈칸 채우기",
+    getPrompt: getSummaryBlankPrompt,
+  },
+  {
+    id: "synonymAntonym",
+    name: "동의어/반의어",
+    description: "동의어/반의어 찾기",
+    getPrompt: getSynonymAntonymPrompt,
+  },
+  {
+    id: "trueOrFalse",
+    name: "참/거짓",
+    description: "참/거짓 판단하기",
+    getPrompt: getTrueOrFalsePrompt,
+  },
+  {
+    id: "logicFlow",
+    name: "논리 전개",
+    description: "논리 전개 파악하기",
+    getPrompt: getLogicFlowPrompt,
+  },
+  {
+    id: "weekendClinic",
+    name: "주말진료소",
+    description: "주말진료소 문제",
+    getPrompt: getWeekendClinicPrompt,
+  },
 ];
 
-export const generateQuestion = async (type: QuestionType, text: string) => {
-  try {
-    const apiKey = localStorage.getItem("claude_api_key");
-    if (!apiKey) {
-      throw new Error("Claude API key not found. Please enter your API key in the settings.");
-    }
-
-    const client = new Anthropic({
-      apiKey: apiKey,
-      dangerouslyAllowBrowser: true
-    });
-
-    let prompt = "";
-    
-    switch (type.id) {
-      case "purpose":
-        prompt = getPurposePrompt(text);
-        break;
-      case "claim":
-        prompt = getClaimPrompt(text);
-        break;
-      case "implication":
-        prompt = getImplicationPrompt(text);
-        break;
-      case "mood":
-        prompt = getMoodPrompt(text);
-        break;
-      case "mainPoint":
-        prompt = getMainPointPrompt(text);
-        break;
-      case "topic":
-        prompt = getTopicPrompt(text);
-        break;
-      case "title":
-        prompt = getTitlePrompt(text);
-        break;
-      case "vocabulary":
-        prompt = getVocabularyPrompt(text);
-        break;
-      case "blank":
-        prompt = getBlankPrompt(text);
-        break;
-      case "blankMultiple":
-        prompt = getBlankMultiplePrompt(text);
-        break;
-      case "irrelevant":
-        prompt = getIrrelevantPrompt(text);
-        break;
-      case "order":
-        prompt = getOrderPrompt(text);
-        break;
-      case "insert":
-        prompt = getInsertPrompt(text);
-        break;
-      case "summary":
-        prompt = getSummaryPrompt(text);
-        break;
-      case "trueOrFalse":
-        prompt = getTrueOrFalsePrompt(text);
-        break;
-      case "synonymAntonym":
-        prompt = getSynonymAntonymPrompt(text);
-        break;
-      case "logicFlow":
-        prompt = getLogicFlowPrompt(text);
-        break;
-      case "weekendClinic":
-        prompt = getWeekendClinicPrompt(text);
-        break;
-      case "orderWritingBasic":
-        prompt = getOrderWritingBasicPrompt(text);
-        break;
-      case "orderWritingAdvanced":
-        prompt = getOrderWritingAdvancedPrompt(text);
-        break;
-      case "dangDict":
-        prompt = getDictionaryPrompt(text);
-        break;
-      case "summaryBlank":
-        prompt = getSummaryBlankPrompt(text);
-        break;
-      default:
-        prompt = `Generate a question of type ${type.name} based on the following text: ${text}`;
-    }
-
-    const response = await client.messages.create({
-      model: "claude-3-sonnet-20240229",
-      messages: [{
-        role: "user",
-        content: prompt
-      }],
-      max_tokens: 1000,
-      temperature: 0.7,
-    });
-
-    const content = response.content[0];
-    
-    if (!content || typeof content !== 'object' || !('type' in content) || content.type !== 'text' || !('text' in content)) {
-      throw new Error("Invalid response format from Claude API");
-    }
-
-    // For weekend clinic type, we need to ensure the [OUTPUT] tag is removed
-    let result = content.text;
-    if (type.id === "weekendClinic") {
-      result = result.replace("[OUTPUT]\n\n", "");
-    }
-
-    return result;
-  } catch (error) {
-    console.error("Error generating question:", error);
-    throw new Error("문제 생성 중 오류가 발생했습니다. 다시 시도해 주세요.");
-  }
-};
+export const anthropic = new Anthropic({
+  apiKey: import.meta.env.VITE_CLAUDE_API_KEY,
+});
