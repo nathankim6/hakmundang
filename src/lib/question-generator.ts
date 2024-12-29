@@ -5,6 +5,10 @@ export const generateQuestion = async (type: QuestionType, text: string): Promis
   const prompt = type.getPrompt(text);
   
   try {
+    if (!localStorage.getItem("claude_api_key")) {
+      throw new Error("Claude API key not found. Please set your API key in the settings.");
+    }
+
     const response = await anthropic.messages.create({
       model: 'claude-3-opus-20240229',
       max_tokens: 4000,
