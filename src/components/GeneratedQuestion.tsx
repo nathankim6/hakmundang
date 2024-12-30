@@ -38,12 +38,9 @@ export const GeneratedQuestion = ({
   if (questionPart.includes('[INPUT]')) {
     const inputEndIndex = questionPart.indexOf('[OUTPUT]');
     if (inputEndIndex !== -1) {
-      questionPart = questionPart.substring(inputEndIndex);
+      questionPart = questionPart.substring(inputEndIndex + '[OUTPUT]'.length);
     }
   }
-
-  // Remove [OUTPUT] tag
-  questionPart = questionPart.replace('[OUTPUT]', '').trim();
 
   // Remove explanatory text for synonym/antonym questions
   if (content.includes('| 표제어 |') || content.includes('동의어') || content.includes('반의어')) {

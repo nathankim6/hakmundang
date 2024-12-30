@@ -1,4 +1,3 @@
-// Export all prompt functions
 export * from './purpose';
 export * from './claim';
 export * from './implication';
@@ -21,4 +20,3 @@ export * from './dictionary';
 export * from './summaryBlank';
 export * from './orderWritingBasic';
 export * from './orderWritingAdvanced';
-export * from './daeguGirls1';

@@ -1,5 +1,29 @@
 import { QuestionType } from "@/types/question";
 import { Anthropic } from "@anthropic-ai/sdk";
+import { 
+  getPurposePrompt, 
+  getClaimPrompt, 
+  getImplicationPrompt, 
+  getMoodPrompt,
+  getMainPointPrompt,
+  getTopicPrompt,
+  getTitlePrompt,
+  getVocabularyPrompt,
+  getBlankPrompt,
+  getBlankMultiplePrompt,
+  getIrrelevantPrompt,
+  getOrderPrompt,
+  getInsertPrompt,
+  getSummaryPrompt,
+  getTrueOrFalsePrompt,
+  getSynonymAntonymPrompt,
+  getLogicFlowPrompt,
+  getWeekendClinicPrompt,
+  getDictionaryPrompt,
+  getSummaryBlankPrompt,
+  getOrderWritingBasicPrompt,
+  getOrderWritingAdvancedPrompt
+} from "./prompts";
 
 export const getQuestionTypes = () => [
   // 수능형
@@ -37,11 +61,7 @@ export const getQuestionTypes = () => [
   { id: "trueOrFalse", name: "True or False" },
   { id: "logicFlow", name: "Logic Flow" },
   { id: "sentenceSplitter", name: "한영문장분리" },
-  { id: "weekendClinic", name: "주말클리닉" },
-
-  // 임시
-  { id: "daeguGirls1", name: "[임시]대구여고1" },
-  { id: "daeguGirls2", name: "[임시]대구여고2" }
+  { id: "weekendClinic", name: "주말클리닉" }
 ];
 
 export const generateQuestion = async (type: QuestionType, text: string) => {
@@ -56,61 +76,78 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
       dangerouslyAllowBrowser: true
     });
 
-    // Dynamically import the prompt based on the question type
-    const getPrompt = async () => {
-      switch (type.id) {
-        case "purpose":
-          return (await import("./prompts/purpose")).getPurposePrompt(text);
-        case "claim":
-          return (await import("./prompts/claim")).getClaimPrompt(text);
-        case "implication":
-          return (await import("./prompts/implication")).getImplicationPrompt(text);
-        case "mood":
-          return (await import("./prompts/mood")).getMoodPrompt(text);
-        case "mainPoint":
-          return (await import("./prompts/mainPoint")).getMainPointPrompt(text);
-        case "topic":
-          return (await import("./prompts/topic")).getTopicPrompt(text);
-        case "title":
-          return (await import("./prompts/title")).getTitlePrompt(text);
-        case "vocabulary":
-          return (await import("./prompts/vocabulary")).getVocabularyPrompt(text);
-        case "blank":
-          return (await import("./prompts/blank")).getBlankPrompt(text);
-        case "blankMultiple":
-          return (await import("./prompts/blankMultiple")).getBlankMultiplePrompt(text);
-        case "irrelevant":
-          return (await import("./prompts/irrelevant")).getIrrelevantPrompt(text);
-        case "order":
-          return (await import("./prompts/order")).getOrderPrompt(text);
-        case "insert":
-          return (await import("./prompts/insert")).getInsertPrompt(text);
-        case "summary":
-          return (await import("./prompts/summary")).getSummaryPrompt(text);
-        case "trueOrFalse":
-          return (await import("./prompts/trueOrFalse")).getTrueOrFalsePrompt(text);
-        case "synonymAntonym":
-          return (await import("./prompts/synonymAntonym")).getSynonymAntonymPrompt(text);
-        case "logicFlow":
-          return (await import("./prompts/logicFlow")).getLogicFlowPrompt(text);
-        case "weekendClinic":
-          return (await import("./prompts/weekendClinic")).getWeekendClinicPrompt(text);
-        case "orderWritingBasic":
-          return (await import("./prompts/orderWritingBasic")).getOrderWritingBasicPrompt(text);
-        case "orderWritingAdvanced":
-          return (await import("./prompts/orderWritingAdvanced")).getOrderWritingAdvancedPrompt(text);
-        case "dangDict":
-          return (await import("./prompts/dictionary")).getDictionaryPrompt(text);
-        case "summaryBlank":
-          return (await import("./prompts/summaryBlank")).getSummaryBlankPrompt(text);
-        case "daeguGirls1":
-          return (await import("./prompts/daeguGirls1")).getDaeguGirls1Prompt(text);
-        default:
-          return `Generate a question of type ${type.name} based on the following text: ${text}`;
-      }
-    };
-
-    const prompt = await getPrompt();
+    let prompt = "";
+    
+    switch (type.id) {
+      case "purpose":
+        prompt = getPurposePrompt(text);
+        break;
+      case "claim":
+        prompt = getClaimPrompt(text);
+        break;
+      case "implication":
+        prompt = getImplicationPrompt(text);
+        break;
+      case "mood":
+        prompt = getMoodPrompt(text);
+        break;
+      case "mainPoint":
+        prompt = getMainPointPrompt(text);
+        break;
+      case "topic":
+        prompt = getTopicPrompt(text);
+        break;
+      case "title":
+        prompt = getTitlePrompt(text);
+        break;
+      case "vocabulary":
+        prompt = getVocabularyPrompt(text);
+        break;
+      case "blank":
+        prompt = getBlankPrompt(text);
+        break;
+      case "blankMultiple":
+        prompt = getBlankMultiplePrompt(text);
+        break;
+      case "irrelevant":
+        prompt = getIrrelevantPrompt(text);
+        break;
+      case "order":
+        prompt = getOrderPrompt(text);
+        break;
+      case "insert":
+        prompt = getInsertPrompt(text);
+        break;
+      case "summary":
+        prompt = getSummaryPrompt(text);
+        break;
+      case "trueOrFalse":
+        prompt = getTrueOrFalsePrompt(text);
+        break;
+      case "synonymAntonym":
+        prompt = getSynonymAntonymPrompt(text);
+        break;
+      case "logicFlow":
+        prompt = getLogicFlowPrompt(text);
+        break;
+      case "weekendClinic":
+        prompt = getWeekendClinicPrompt(text);
+        break;
+      case "orderWritingBasic":
+        prompt = getOrderWritingBasicPrompt(text);
+        break;
+      case "orderWritingAdvanced":
+        prompt = getOrderWritingAdvancedPrompt(text);
+        break;
+      case "dangDict":
+        prompt = getDictionaryPrompt(text);
+        break;
+      case "summaryBlank":
+        prompt = getSummaryBlankPrompt(text);
+        break;
+      default:
+        prompt = `Generate a question of type ${type.name} based on the following text: ${text}`;
+    }
 
     const response = await client.messages.create({
       model: "claude-3-sonnet-20240229",
@@ -128,6 +165,7 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
       throw new Error("Invalid response format from Claude API");
     }
 
+    // For weekend clinic type, we need to ensure the [OUTPUT] tag is removed
     let result = content.text;
     if (type.id === "weekendClinic") {
       result = result.replace("[OUTPUT]\n\n", "");
