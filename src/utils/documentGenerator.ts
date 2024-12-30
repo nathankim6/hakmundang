@@ -1,4 +1,3 @@
-import { Document, Paragraph, TextRun, Packer, HeadingLevel, BorderStyle } from "docx";
 import { saveAs } from "file-saver";
 
 interface Question {
@@ -8,127 +7,41 @@ interface Question {
 }
 
 export const generateDocument = (questions: Question[]) => {
-  const doc = new Document({
-    sections: [{
-      properties: {},
-      children: questions.flatMap(question => {
-        const paragraphs: Paragraph[] = [];
+  let questionsText = "";
+  let explanationsText = "\n\n===== 정답 및 해설 =====\n\n";
+  
+  questions.forEach((question, index) => {
+    const questionNumber = index + 1;
+    
+    // Process question content
+    let questionContent = question.content;
+    let explanation = "";
+    
+    // Split content into question and answer parts
+    const parts = questionContent.split('[정답]');
+    if (parts.length > 1) {
+      questionContent = parts[0].trim();
+      explanation = parts[1].trim();
+    }
 
-        // Add question number with consistent styling
-        paragraphs.push(
-          new Paragraph({
-            children: [
-              new TextRun({
-                text: `문제 ${question.questionNumber}`,
-                bold: true,
-                size: 32,
-                color: "#403E43",
-              }),
-            ],
-            spacing: {
-              before: 400,
-              after: 240,
-            },
-          })
-        );
+    // Add original text if it exists (for weekend clinic format)
+    if (question.originalText) {
+      questionsText += `[문제 ${questionNumber}]\n\n${question.originalText}\n\n`;
+    }
 
-        // Add original text for weekend clinic questions with proper styling
-        if (question.originalText) {
-          paragraphs.push(
-            new Paragraph({
-              children: [
-                new TextRun({
-                  text: question.originalText,
-                  size: 24,
-                }),
-              ],
-              spacing: {
-                before: 240,
-                after: 240,
-              },
-              border: {
-                top: { style: BorderStyle.SINGLE, size: 1, color: "#0EA5E9", space: 1 },
-                bottom: { style: BorderStyle.SINGLE, size: 1, color: "#0EA5E9", space: 1 },
-                left: { style: BorderStyle.SINGLE, size: 1, color: "#0EA5E9", space: 1 },
-                right: { style: BorderStyle.SINGLE, size: 1, color: "#0EA5E9", space: 1 },
-              },
-              shading: {
-                fill: "#F8F7FF",
-              },
-            })
-          );
-        }
+    // Add question content
+    questionsText += `[문제 ${questionNumber}]\n\n${questionContent}\n\n`;
 
-        // Process question content sections
-        const sections = question.content.split(/\[(.*?)\]/g).filter(Boolean);
-        for (let i = 0; i < sections.length; i += 2) {
-          if (sections[i] && sections[i + 1]) {
-            // Add section title
-            paragraphs.push(
-              new Paragraph({
-                children: [
-                  new TextRun({
-                    text: `[${sections[i]}]`,
-                    bold: true,
-                    size: 24,
-                    color: "#403E43",
-                  }),
-                ],
-                spacing: {
-                  before: 240,
-                  after: 120,
-                },
-              })
-            );
-
-            // Add section content
-            paragraphs.push(
-              new Paragraph({
-                children: [
-                  new TextRun({
-                    text: sections[i + 1].trim(),
-                    size: 24,
-                  }),
-                ],
-                spacing: {
-                  before: 120,
-                  after: 240,
-                },
-                border: {
-                  top: { style: BorderStyle.SINGLE, size: 1, color: "#D3E4FD", space: 1 },
-                  bottom: { style: BorderStyle.SINGLE, size: 1, color: "#D3E4FD", space: 1 },
-                  left: { style: BorderStyle.SINGLE, size: 1, color: "#D3E4FD", space: 1 },
-                  right: { style: BorderStyle.SINGLE, size: 1, color: "#D3E4FD", space: 1 },
-                },
-                shading: {
-                  fill: "#F1F0FB",
-                },
-              })
-            );
-          }
-        }
-
-        // Add separator line
-        paragraphs.push(
-          new Paragraph({
-            children: [new TextRun({ text: "", size: 24 })],
-            spacing: {
-              before: 240,
-              after: 240,
-            },
-            border: {
-              bottom: { style: BorderStyle.SINGLE, size: 1, color: "#0EA5E9", space: 1 },
-            },
-          })
-        );
-
-        return paragraphs;
-      }),
-    }],
+    // Add to explanations section
+    if (explanation) {
+      explanationsText += `[문제 ${questionNumber} 정답]\n${explanation}\n\n`;
+    }
   });
 
-  // Generate and save the document
-  Packer.toBlob(doc).then((blob) => {
-    saveAs(blob, "generated_questions.docx");
-  });
+  // Combine questions and explanations
+  const fullContent = questionsText + explanationsText;
+
+  // Create and save the text file
+  const blob = new Blob([fullContent], { type: "text/plain;charset=utf-8" });
+  saveAs(blob, "generated_questions.txt");
 };
