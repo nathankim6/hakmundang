@@ -6,9 +6,19 @@ import { ActionButtons } from "./buttons/ActionButtons";
 import { QuestionProvider } from "./question/QuestionContext";
 import { useQuestionState } from "./question/QuestionState";
 import { useQuestionActions } from "./question/QuestionActions";
-import { Star } from "lucide-react";
-import { useState } from "react";
+import { Star, Loader2 } from "lucide-react";
+import { useState, Suspense, lazy } from "react";
 import { ActionButtons as QuestionActionButtons } from "./question/ActionButtons";
+
+// Lazy load the VocabularyModal component
+const VocabularyModal = lazy(() => import("./vocabulary/VocabularyModal"));
+
+// Loading component for the modal
+const ModalLoadingSpinner = () => (
+  <div className="flex items-center justify-center min-h-[50vh]">
+    <Loader2 className="w-8 h-8 animate-spin text-blue-500" />
+  </div>
+);
 
 export const QuestionGenerator = () => {
   const {
@@ -146,23 +156,15 @@ export const QuestionGenerator = () => {
         </div>
       </div>
 
-      {/* Vocab Modal */}
+      {/* Vocabulary Modal with Suspense */}
       {showVocabModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white w-[95vw] h-[95vh] rounded-lg shadow-2xl relative">
-            <button
-              className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
-              onClick={() => setShowVocabModal(false)}
-            >
-              ✕
-            </button>
-            <iframe
-              src="https://vocabulary-voyage.lovable.app/"
-              className="w-full h-full rounded-lg"
-              title="Vocabulary Generator"
-            />
-          </div>
-        </div>
+        <Suspense fallback={<ModalLoadingSpinner />}>
+          <VocabularyModal
+            isOpen={showVocabModal}
+            onClose={() => setShowVocabModal(false)}
+            content={getAllVocabularyContent()}
+          />
+        </Suspense>
       )}
     </QuestionProvider>
   );
