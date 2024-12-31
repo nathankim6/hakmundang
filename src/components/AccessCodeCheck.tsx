@@ -70,7 +70,7 @@ export function AccessCodeCheck() {
           title: "접속 성공",
           description: "엑세스 코드가 확인되었습니다.",
         });
-        navigate("/");
+        navigate("/"); // This will now directly take users to the question generator page
       } else {
         toast({
           title: "코드 오류",
