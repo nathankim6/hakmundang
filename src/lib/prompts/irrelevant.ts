@@ -9,7 +9,6 @@ export const getIrrelevantPrompt = (text: string) => `당신은 영어 지문을
 번호는 반드시 ①부터 ⑤까지 순서대로 앞에서부터 배치되어야 합니다.
 새로 삽입한 문장 앞에도 번호를 붙여야 하며, 이 번호가 정답이 됩니다.
 
-[OUTPUT]
 다음 글에서 전체 흐름과 관계 없는 문장은?
 
 ${text}
