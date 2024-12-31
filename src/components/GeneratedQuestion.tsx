@@ -63,9 +63,9 @@ export const GeneratedQuestion = ({
   // Display original text if available
   const displayOriginalText = extractedOriginalText || originalText;
 
-  // For title type questions, always include the original text if available
+  // For title type questions, always include the original text and question
   const formattedQuestionPart = isTitleType ? 
-    (displayOriginalText ? displayOriginalText + '\n\n다음 글의 제목으로 가장 적절한 것은?\n\n' + questionPart : questionPart) :
+    (extractedOriginalText + '\n\n[문제]\n다음 글의 제목으로 가장 적절한 것은?\n\n' + questionPart.replace('[문제]\n다음 글의 제목으로 가장 적절한 것은?\n\n', '')) :
     (displayOriginalText ? displayOriginalText + '\n\n' + questionPart : questionPart);
 
   if (isTrueFalse) {
