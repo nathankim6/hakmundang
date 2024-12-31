@@ -52,7 +52,8 @@ export function AccessCodeCheck() {
           description: "엑세스 코드가 확인되었습니다.",
         });
         
-        navigate("/");
+        // Immediately navigate to the main page after successful verification
+        navigate("/", { replace: true });
       } else {
         toast({
           title: "코드 오류",
