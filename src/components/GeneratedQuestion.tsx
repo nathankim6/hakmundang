@@ -42,14 +42,6 @@ export const GeneratedQuestion = ({
     }
   }
 
-  // Special handling for irrelevant sentence questions
-  if (content.includes('전체 흐름과 관계 없는 문장은?')) {
-    questionPart = questionPart
-      .replace(/\[INPUT\].*?(?=다음 글에서)/s, '')
-      .replace('[OUTPUT]', '')
-      .trim();
-  }
-
   // Remove explanatory text for synonym/antonym questions
   if (content.includes('| 표제어 |') || content.includes('동의어') || content.includes('반의어')) {
     const tableStart = questionPart.indexOf('|');
