@@ -67,6 +67,9 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
 
       // Add question to questions text
       questionsText += `문제${questionNumber}\n`;
+      if (question.originalText) {
+        questionsText += `${question.originalText}\n\n`;
+      }
       questionsText += `${questionPart}\n\n`;
 
       // Add answer to answers text
