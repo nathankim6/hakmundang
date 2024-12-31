@@ -1,6 +1,6 @@
 import { GeneratedQuestion } from "../GeneratedQuestion";
 import { Button } from "@/components/ui/button";
-import { Book } from "lucide-react";
+import { Book, FileDown } from "lucide-react";
 import { useState } from "react";
 import { VocabularyModal } from "../VocabularyModal";
 
@@ -50,9 +50,48 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
         return `문제 ${index + 1}\n${tableContent}`;
       });
 
-    const vocabContent = vocabQuestions.join('\n\n');
-    console.log('Vocabulary content:', vocabContent);
-    return vocabContent;
+    return vocabQuestions.join('\n\n');
+  };
+
+  const handleSaveToTxt = () => {
+    // Separate questions and answers
+    const questionsText: string[] = [];
+    const answersText: string[] = [];
+
+    sortedQuestions.forEach((question, index) => {
+      const content = question.content;
+      const parts = content.split('[정답]');
+      
+      if (parts.length > 1) {
+        // Add question number and question part
+        questionsText.push(`문제 ${index + 1}\n${parts[0].trim()}\n`);
+        // Add answer number and answer part
+        answersText.push(`문제 ${index + 1} 정답 및 해설\n[정답]${parts[1].trim()}\n`);
+      } else {
+        // If no [정답] separator found, add entire content to questions
+        questionsText.push(`문제 ${index + 1}\n${content.trim()}\n`);
+      }
+    });
+
+    // Create and download questions file
+    const questionsBlob = new Blob([questionsText.join('\n')], { type: 'text/plain;charset=utf-8' });
+    const questionsUrl = URL.createObjectURL(questionsBlob);
+    const questionsLink = document.createElement('a');
+    questionsLink.href = questionsUrl;
+    questionsLink.download = '문제.txt';
+    document.body.appendChild(questionsLink);
+    questionsLink.click();
+    document.body.removeChild(questionsLink);
+
+    // Create and download answers file
+    const answersBlob = new Blob([answersText.join('\n')], { type: 'text/plain;charset=utf-8' });
+    const answersUrl = URL.createObjectURL(answersBlob);
+    const answersLink = document.createElement('a');
+    answersLink.href = answersUrl;
+    answersLink.download = '정답및해설.txt';
+    document.body.appendChild(answersLink);
+    answersLink.click();
+    document.body.removeChild(answersLink);
   };
 
   return (
@@ -76,6 +115,23 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
           >
             <Book className="w-4 h-4 mr-2" />
             단어장 생성
+          </Button>
+        </div>
+      )}
+
+      {sortedQuestions.length > 0 && (
+        <div className="flex justify-center mt-8">
+          <Button
+            onClick={handleSaveToTxt}
+            variant="outline"
+            className="max-w-md w-full relative group overflow-hidden transform hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl border-[#9b87f5]/30 hover:border-[#9b87f5]/50"
+          >
+            <div className="relative flex items-center justify-center gap-2">
+              <FileDown className="w-5 h-5" />
+              <span className="font-semibold tracking-wide">
+                문제 저장하기
+              </span>
+            </div>
           </Button>
         </div>
       )}
