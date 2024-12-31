@@ -52,8 +52,8 @@ export function AccessCodeCheck() {
           description: "엑세스 코드가 확인되었습니다.",
         });
         
-        // Immediately navigate to the main page after successful verification
-        navigate("/", { replace: true });
+        // Force a hard navigation to the main page
+        window.location.href = "/";
       } else {
         toast({
           title: "코드 오류",
