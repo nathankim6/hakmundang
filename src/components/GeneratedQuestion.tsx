@@ -34,11 +34,16 @@ export const GeneratedQuestion = ({
   let questionPart = parts[0].trim();
   const answerPart = parts.length > 1 ? parts[1].trim() : '';
 
-  // Remove [INPUT] section if present
+  // Extract original text if present in [INPUT] section
+  let extractedOriginalText = '';
   if (questionPart.includes('[INPUT]')) {
     const inputEndIndex = questionPart.indexOf('[OUTPUT]');
     if (inputEndIndex !== -1) {
-      questionPart = questionPart.substring(inputEndIndex + '[OUTPUT]'.length);
+      extractedOriginalText = questionPart.substring(
+        questionPart.indexOf('[INPUT]') + '[INPUT]'.length,
+        inputEndIndex
+      ).trim();
+      questionPart = questionPart.substring(inputEndIndex + '[OUTPUT]'.length).trim();
     }
   }
 
@@ -54,11 +59,14 @@ export const GeneratedQuestion = ({
   const isOrderWriting = questionPart.includes('[우리말]');
   const isSummaryBlank = content.includes('다음 글의 내용을 아래와 같이 요약하고자 한다. 빈칸 (A), (B), (C)에 들어갈 말로 가장 적절한 것을 본문에서 찾아서 그대로 쓰시오.');
 
+  // Display original text if available
+  const displayOriginalText = extractedOriginalText || originalText;
+
   if (isTrueFalse) {
     return (
       <TrueFalseQuestion
         questionNumber={questionNumber}
-        questionPart={questionPart}
+        questionPart={displayOriginalText ? displayOriginalText + '\n\n' + questionPart : questionPart}
         answerPart={answerPart}
       />
     );
@@ -68,7 +76,7 @@ export const GeneratedQuestion = ({
     return (
       <OrderWritingQuestion
         questionNumber={questionNumber}
-        questionPart={questionPart}
+        questionPart={displayOriginalText ? displayOriginalText + '\n\n' + questionPart : questionPart}
         answerPart={answerPart}
       />
     );
@@ -78,7 +86,7 @@ export const GeneratedQuestion = ({
     return (
       <SummaryBlankQuestion
         questionNumber={questionNumber}
-        questionPart={questionPart}
+        questionPart={displayOriginalText ? displayOriginalText + '\n\n' + questionPart : questionPart}
         answerPart={answerPart}
       />
     );
@@ -87,7 +95,7 @@ export const GeneratedQuestion = ({
   return (
     <DefaultQuestion
       questionNumber={questionNumber}
-      questionPart={questionPart}
+      questionPart={displayOriginalText ? displayOriginalText + '\n\n' + questionPart : questionPart}
       answerPart={answerPart}
     />
   );

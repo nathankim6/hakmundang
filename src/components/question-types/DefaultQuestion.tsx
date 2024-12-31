@@ -11,6 +11,9 @@ export const DefaultQuestion = ({
   questionPart,
   answerPart
 }: DefaultQuestionProps) => {
+  // Split answer part into answer and explanation if both exist
+  const [answer, explanation] = answerPart.split('[해설]').map(part => part.trim());
+
   return (
     <div className="mb-8">
       <div className="prose max-w-none">
@@ -25,9 +28,14 @@ export const DefaultQuestion = ({
             {questionPart}
           </div>
           
-          {answerPart && (
+          {answer && (
             <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20">
-              {answerPart}
+              [정답] {answer}
+              {explanation && (
+                <>
+                  {'\n'}[해설] {explanation}
+                </>
+              )}
             </div>
           )}
         </div>
