@@ -23,7 +23,7 @@ export const GeneratedQuestion = ({
     return (
       <WeekendClinicQuestion
         questionNumber={questionNumber}
-        content={content}
+        content={content.replace("[OUTPUT]", "").trim()}
         originalText={originalText}
       />
     );
@@ -41,6 +41,9 @@ export const GeneratedQuestion = ({
       questionPart = questionPart.substring(inputEndIndex + '[OUTPUT]'.length);
     }
   }
+
+  // Remove [OUTPUT] text
+  questionPart = questionPart.replace("[OUTPUT]", "").trim();
 
   // Remove explanatory text for synonym/antonym questions
   if (content.includes('| 표제어 |') || content.includes('동의어') || content.includes('반의어')) {
