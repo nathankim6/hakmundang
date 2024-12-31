@@ -1,3 +1,4 @@
+import { Document, Paragraph, TextRun, Packer } from "docx";
 import { saveAs } from "file-saver";
 
 interface Question {
@@ -7,41 +8,66 @@ interface Question {
 }
 
 export const generateDocument = (questions: Question[]) => {
-  let questionsText = "";
-  let explanationsText = "\n\n===== 정답 및 해설 =====\n\n";
-  
-  questions.forEach((question, index) => {
-    const questionNumber = index + 1;
-    
-    // Process question content
-    let questionContent = question.content;
-    let explanation = "";
-    
-    // Split content into question and answer parts
-    const parts = questionContent.split('[정답]');
-    if (parts.length > 1) {
-      questionContent = parts[0].trim();
-      explanation = parts[1].trim();
-    }
+  const doc = new Document({
+    sections: [{
+      properties: {},
+      children: questions.flatMap(question => {
+        const paragraphs: Paragraph[] = [];
 
-    // Add original text if it exists (for weekend clinic format)
-    if (question.originalText) {
-      questionsText += `[문제 ${questionNumber}]\n\n${question.originalText}\n\n`;
-    }
+        // Add question number
+        paragraphs.push(
+          new Paragraph({
+            children: [
+              new TextRun({
+                text: `문제 ${question.questionNumber}`,
+                bold: true,
+                size: 28,
+              }),
+            ],
+          })
+        );
 
-    // Add question content
-    questionsText += `[문제 ${questionNumber}]\n\n${questionContent}\n\n`;
+        // Add original text for weekend clinic questions
+        if (question.originalText) {
+          paragraphs.push(
+            new Paragraph({
+              children: [
+                new TextRun({
+                  text: question.originalText,
+                  size: 24,
+                }),
+              ],
+              spacing: {
+                before: 400,
+                after: 400,
+              },
+            })
+          );
+        }
 
-    // Add to explanations section
-    if (explanation) {
-      explanationsText += `[문제 ${questionNumber} 정답]\n${explanation}\n\n`;
-    }
+        // Add question content
+        paragraphs.push(
+          new Paragraph({
+            children: [
+              new TextRun({
+                text: question.content,
+                size: 24,
+              }),
+            ],
+            spacing: {
+              before: 400,
+              after: 800,
+            },
+          })
+        );
+
+        return paragraphs;
+      }),
+    }],
   });
 
-  // Combine questions and explanations
-  const fullContent = questionsText + explanationsText;
-
-  // Create and save the text file
-  const blob = new Blob([fullContent], { type: "text/plain;charset=utf-8" });
-  saveAs(blob, "generated_questions.txt");
+  // Generate and save the document using Packer
+  Packer.toBlob(doc).then((blob) => {
+    saveAs(blob, "generated_questions.docx");
+  });
 };

@@ -34,7 +34,8 @@ export const TrueFalseQuestion = ({
           {/* Answers and Explanations Section */}
           {answerPart && (
             <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20">
-              <h4 className="font-semibold text-[#403E43] mb-2">[정답] {answerPart}</h4>
+              <h4 className="font-semibold text-[#403E43] mb-2">정답 및 해설</h4>
+              {answerPart}
             </div>
           )}
         </div>
