@@ -58,6 +58,7 @@ export const GeneratedQuestion = ({
   const isTrueFalse = questionPart.includes('(T/F)');
   const isOrderWriting = questionPart.includes('[우리말]');
   const isSummaryBlank = content.includes('다음 글의 내용을 아래와 같이 요약하고자 한다. 빈칸 (A), (B), (C)에 들어갈 말로 가장 적절한 것을 본문에서 찾아서 그대로 쓰시오.');
+  const isTitleType = content.includes('다음 글의 제목으로 가장 적절한 것은?');
 
   // Display original text if available
   const displayOriginalText = extractedOriginalText || originalText;
@@ -95,7 +96,7 @@ export const GeneratedQuestion = ({
   return (
     <DefaultQuestion
       questionNumber={questionNumber}
-      questionPart={displayOriginalText ? displayOriginalText + '\n\n' + questionPart : questionPart}
+      questionPart={isTitleType && displayOriginalText ? displayOriginalText + '\n\n' + questionPart : questionPart}
       answerPart={answerPart}
     />
   );
