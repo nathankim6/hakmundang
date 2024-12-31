@@ -59,22 +59,39 @@ export const GeneratedQuestion = ({
   const isOrderWriting = questionPart.includes('[우리말]');
   const isSummaryBlank = content.includes('다음 글의 내용을 아래와 같이 요약하고자 한다. 빈칸 (A), (B), (C)에 들어갈 말로 가장 적절한 것을 본문에서 찾아서 그대로 쓰시오.');
   const isTitleType = content.includes('다음 글의 제목으로 가장 적절한 것은?');
+  const isIrrelevantType = content.includes('다음 글에서 전체 흐름과 관계 없는 문장은?');
+  const isOrderType = content.includes('주어진 글 다음에 이어질 글의 순서로 가장 적절한 것을 고르시오.');
+  const isInsertType = content.includes('글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.');
 
   // Display original text if available
   const displayOriginalText = extractedOriginalText || originalText;
 
-  // For title type questions, remove "[문제]" text and "문제 제시: " text
-  const formattedQuestionPart = isTitleType ? 
-    (extractedOriginalText + '\n\n다음 글의 제목으로 가장 적절한 것은?\n\n' + questionPart
-      .replace('[문제]\n다음 글의 제목으로 가장 적절한 것은?\n\n', '')
-      .replace('문제 제시: 다음 글의 제목으로 가장 적절한 것은?\n', '')) :
-    (displayOriginalText ? displayOriginalText + '\n\n' + questionPart : questionPart);
+  // Format question part based on question type
+  let formattedQuestionPart = questionPart;
+
+  if (isTitleType) {
+    formattedQuestionPart = extractedOriginalText + '\n\n다음 글의 제목으로 가장 적절한 것은?\n\n' + 
+      questionPart.replace('[문제]\n다음 글의 제목으로 가장 적절한 것은?\n\n', '')
+                 .replace('문제 제시: 다음 글의 제목으로 가장 적절한 것은?\n', '');
+  } else if (isIrrelevantType) {
+    formattedQuestionPart = '다음 글에서 전체 흐름과 관계 없는 문장은?\n\n' + 
+      questionPart.replace(/문장 수가.*문제 출제가 가능합니다\.[\s\S]*?이 문장을 .*에 삽입하겠습니다\./g, '');
+  } else if (isOrderType) {
+    formattedQuestionPart = '주어진 글 다음에 이어질 글의 순서로 가장 적절한 것을 고르시오.\n\n' + questionPart;
+  } else if (isInsertType) {
+    formattedQuestionPart = '글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.\n\n' + 
+      questionPart.replace(/제공해 주신 영어 지문의.*괄호를 삽입하면 다음과 같습니다:/g, '');
+  } else {
+    formattedQuestionPart = displayOriginalText ? 
+      displayOriginalText + '\n\n' + questionPart.replace('[문제]\n', '') : 
+      questionPart.replace('[문제]\n', '');
+  }
 
   if (isTrueFalse) {
     return (
       <TrueFalseQuestion
         questionNumber={questionNumber}
-        questionPart={displayOriginalText ? displayOriginalText + '\n\n' + questionPart : questionPart}
+        questionPart={formattedQuestionPart}
         answerPart={answerPart}
       />
     );
@@ -84,7 +101,7 @@ export const GeneratedQuestion = ({
     return (
       <OrderWritingQuestion
         questionNumber={questionNumber}
-        questionPart={displayOriginalText ? displayOriginalText + '\n\n' + questionPart : questionPart}
+        questionPart={formattedQuestionPart}
         answerPart={answerPart}
       />
     );
@@ -94,7 +111,7 @@ export const GeneratedQuestion = ({
     return (
       <SummaryBlankQuestion
         questionNumber={questionNumber}
-        questionPart={displayOriginalText ? displayOriginalText + '\n\n' + questionPart : questionPart}
+        questionPart={formattedQuestionPart}
         answerPart={answerPart}
       />
     );
