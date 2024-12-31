@@ -1,6 +1,6 @@
 import { GeneratedQuestion } from "../GeneratedQuestion";
 import { Button } from "@/components/ui/button";
-import { Book } from "lucide-react";
+import { Book, Save } from "lucide-react";
 import { useState } from "react";
 import { VocabularyModal } from "../VocabularyModal";
 
@@ -18,7 +18,6 @@ interface GeneratedQuestionsProps {
 export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
   const [isVocabModalOpen, setIsVocabModalOpen] = useState(false);
   
-  // Sort questions by their content to maintain consistency
   const sortedQuestions = [...questions].sort((a, b) => {
     if (!a.content && !b.content) return 0;
     if (!a.content) return 1;
@@ -26,7 +25,6 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
     return a.questionNumber - b.questionNumber;
   });
 
-  // Check if any questions are vocabulary or synonym/antonym type
   const hasVocabulary = sortedQuestions.some(
     question => question.content.includes('| 표제어 |') || 
                 question.content.includes('동의어') || 
@@ -34,7 +32,6 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
                 question.content.includes('vocabulary')
   );
 
-  // Combine all vocabulary content with question numbers
   const getAllVocabularyContent = () => {
     const vocabQuestions = sortedQuestions
       .filter(question => 
@@ -55,6 +52,43 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
     return vocabContent;
   };
 
+  const saveQuestionsToFile = () => {
+    let questionsText = "";
+    let answersText = "정답 및 해설\n\n";
+
+    sortedQuestions.forEach((question, index) => {
+      const questionNumber = index + 1;
+      const content = question.content;
+
+      // Split content into question and answer parts
+      const parts = content.split('[정답]');
+      const questionPart = parts[0].trim();
+      const answerPart = parts.length > 1 ? parts[1].trim() : '';
+
+      // Add question to questions text
+      questionsText += `문제${questionNumber}\n`;
+      questionsText += `${questionPart}\n\n`;
+
+      // Add answer to answers text
+      answersText += `문제${questionNumber}\n`;
+      answersText += `${answerPart}\n\n`;
+    });
+
+    // Create and download questions file
+    const questionsBlob = new Blob([questionsText], { type: 'text/plain;charset=utf-8' });
+    const questionsLink = document.createElement('a');
+    questionsLink.href = URL.createObjectURL(questionsBlob);
+    questionsLink.download = '문제.txt';
+    questionsLink.click();
+
+    // Create and download answers file
+    const answersBlob = new Blob([answersText], { type: 'text/plain;charset=utf-8' });
+    const answersLink = document.createElement('a');
+    answersLink.href = URL.createObjectURL(answersBlob);
+    answersLink.download = '정답및해설.txt';
+    answersLink.click();
+  };
+
   return (
     <div className="space-y-0 bg-[#F8F7FF] p-6 rounded-lg border border-[#D6BCFA]/30">
       {sortedQuestions.map((question, index) => (
@@ -67,7 +101,7 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
         />
       ))}
       
-      {hasVocabulary && (
+      {hasVocabulary ? (
         <div className="flex justify-center mt-8">
           <Button
             variant="outline"
@@ -76,6 +110,17 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
           >
             <Book className="w-4 h-4 mr-2" />
             단어장 생성
+          </Button>
+        </div>
+      ) : (
+        <div className="flex justify-center mt-8">
+          <Button
+            variant="outline"
+            onClick={saveQuestionsToFile}
+            className="text-[#9b87f5] hover:text-[#7E69AB] border-[#9b87f5] hover:border-[#7E69AB]"
+          >
+            <Save className="w-4 h-4 mr-2" />
+            문제저장
           </Button>
         </div>
       )}
