@@ -8,7 +8,7 @@ import Index from "./pages/Index";
 import Admin from "./pages/Admin";
 import { AccessCodeCheck } from "./components/AccessCodeCheck";
 
-function App() {
+const App = () => {
   const [queryClient] = useState(() => new QueryClient());
   const hasAccess = localStorage.getItem("hasAccess") === "true";
 
@@ -33,6 +33,6 @@ function App() {
       </TooltipProvider>
     </QueryClientProvider>
   );
-}
+};
 
 export default App;

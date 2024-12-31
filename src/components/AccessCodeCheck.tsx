@@ -23,68 +23,49 @@ export function AccessCodeCheck() {
     }
   }, [navigate]);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setCode(e.target.value);
-  };
+  const handleInputChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const inputCode = e.target.value;
+    setCode(inputCode);
 
-  const handleVerification = async () => {
-    if (code.length < 4) {
-      toast({
-        title: "코드 오류",
-        description: "엑세스 코드는 최소 4자리 이상이어야 합니다.",
-        variant: "destructive",
-      });
-      return;
-    }
-
-    // Check for admin code first
-    if (code === "101100") {
-      localStorage.setItem("isAdmin", "true");
-      localStorage.setItem("hasAccess", "true");
-      localStorage.setItem("userName", "관리자");
-      toast({
-        title: "관리자 로그인 성공",
-        description: "관리자 페이지로 이동합니다.",
-      });
-      navigate("/admin");
-      return;
-    }
-
-    try {
-      const { data: accessCode, error } = await supabase
-        .from('access_codes')
-        .select('*')
-        .eq('code', code)
-        .maybeSingle();
-
-      if (error) {
-        throw error;
-      }
-
-      if (accessCode && new Date(accessCode.expiry_date) > new Date()) {
+    if (inputCode.length >= 4) { // Only check if code is at least 4 characters
+      // Check for admin code first
+      if (inputCode === "101100") {
+        localStorage.setItem("isAdmin", "true");
         localStorage.setItem("hasAccess", "true");
-        localStorage.setItem("subscriptionExpiry", accessCode.expiry_date);
-        localStorage.setItem("userName", accessCode.name);
-        setSubscriptionExpiry(accessCode.expiry_date);
+        localStorage.setItem("userName", "관리자");
         toast({
-          title: "접속 성공",
-          description: "엑세스 코드가 확인되었습니다.",
+          title: "관리자 로그인 성공",
+          description: "관리자 페이지로 이동합니다.",
         });
-        navigate("/");
-      } else {
-        toast({
-          title: "코드 오류",
-          description: "유효하지 않은 엑세스 코드입니다.",
-          variant: "destructive",
-        });
+        navigate("/admin");
+        return;
       }
-    } catch (error) {
-      console.error("Access code check error:", error);
-      toast({
-        title: "오류 발생",
-        description: "엑세스 코드 확인 중 오류가 발생했습니다.",
-        variant: "destructive",
-      });
+
+      try {
+        const { data: accessCode, error } = await supabase
+          .from('access_codes')
+          .select('*')
+          .eq('code', inputCode)
+          .maybeSingle();
+
+        if (error) {
+          throw error;
+        }
+
+        if (accessCode && new Date(accessCode.expiry_date) > new Date()) {
+          localStorage.setItem("hasAccess", "true");
+          localStorage.setItem("subscriptionExpiry", accessCode.expiry_date);
+          localStorage.setItem("userName", accessCode.name);
+          setSubscriptionExpiry(accessCode.expiry_date);
+          toast({
+            title: "접속 성공",
+            description: "엑세스 코드가 확인되었습니다.",
+          });
+          navigate("/");
+        }
+      } catch (error) {
+        console.error("Access code check error:", error);
+      }
     }
   };
 
@@ -125,12 +106,6 @@ export function AccessCodeCheck() {
                   className="pl-10 pr-4 py-6 text-lg border-2 focus:border-primary/50 transition-all duration-300"
                 />
               </div>
-              <Button 
-                onClick={handleVerification}
-                className="w-full py-6 text-lg font-medium bg-gradient-to-r from-[#403E43] via-[#555555] to-[#403E43] hover:opacity-90 transition-opacity"
-              >
-                확인
-              </Button>
             </div>
 
             {/* Additional Info */}
