@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { useNavigate } from "react-router-dom";
@@ -8,20 +8,8 @@ import { supabase } from "@/lib/supabase";
 
 export function AccessCodeCheck() {
   const [code, setCode] = useState("");
-  const [subscriptionExpiry, setSubscriptionExpiry] = useState<string | null>(null);
   const navigate = useNavigate();
   const { toast } = useToast();
-
-  useEffect(() => {
-    const hasAccess = localStorage.getItem("hasAccess");
-    if (hasAccess === "true") {
-      const storedExpiry = localStorage.getItem("subscriptionExpiry");
-      if (storedExpiry) {
-        setSubscriptionExpiry(storedExpiry);
-      }
-      navigate("/");
-    }
-  }, [navigate]);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setCode(e.target.value);
@@ -65,12 +53,14 @@ export function AccessCodeCheck() {
         localStorage.setItem("hasAccess", "true");
         localStorage.setItem("subscriptionExpiry", accessCode.expiry_date);
         localStorage.setItem("userName", accessCode.name);
-        setSubscriptionExpiry(accessCode.expiry_date);
+        
         toast({
           title: "접속 성공",
           description: "엑세스 코드가 확인되었습니다.",
         });
-        navigate("/"); // This will now directly take users to the question generator page
+        
+        // Navigate after setting localStorage
+        navigate("/");
       } else {
         toast({
           title: "코드 오류",
@@ -106,11 +96,6 @@ export function AccessCodeCheck() {
                   <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 animate-shimmer"></span>
                 </span>
               </h1>
-              {subscriptionExpiry && (
-                <p className="text-sm text-gray-600">
-                  구독 유효기간: {new Date(subscriptionExpiry).toLocaleDateString()}
-                </p>
-              )}
             </div>
 
             {/* Access Code Input Section */}
