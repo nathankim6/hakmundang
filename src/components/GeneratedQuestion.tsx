@@ -63,6 +63,11 @@ export const GeneratedQuestion = ({
   // Display original text if available
   const displayOriginalText = extractedOriginalText || originalText;
 
+  // For title type questions, always include the original text if available
+  const formattedQuestionPart = isTitleType ? 
+    (displayOriginalText ? displayOriginalText + '\n\n다음 글의 제목으로 가장 적절한 것은?\n\n' + questionPart : questionPart) :
+    (displayOriginalText ? displayOriginalText + '\n\n' + questionPart : questionPart);
+
   if (isTrueFalse) {
     return (
       <TrueFalseQuestion
@@ -96,7 +101,7 @@ export const GeneratedQuestion = ({
   return (
     <DefaultQuestion
       questionNumber={questionNumber}
-      questionPart={isTitleType && displayOriginalText ? displayOriginalText + '\n\n' + questionPart : questionPart}
+      questionPart={formattedQuestionPart}
       answerPart={answerPart}
     />
   );
