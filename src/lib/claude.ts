@@ -97,3 +97,13 @@ export const getQuestionTypes = () => [
     name: "요약 빈칸",
   },
 ];
+
+export const generateQuestion = async (type: { id: string; name: string; prompt?: string }, text: string) => {
+  try {
+    // For now, return a simple response for testing
+    return JSON.stringify([{ english: "Sample English", korean: "샘플 한글" }]);
+  } catch (error) {
+    console.error('Error generating question:', error);
+    throw error;
+  }
+};
