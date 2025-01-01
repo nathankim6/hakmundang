@@ -6,7 +6,7 @@ export const AppHeader = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-[#E5E7EB]/40 to-[#9CA3AF]/30 opacity-70 animate-gradient"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(156,163,175,0.3),transparent_70%)] mix-blend-overlay"></div>
       
-      <div className="w-32 h-32 rounded-full bg-white flex items-center justify-center shadow-lg relative z-10">
+      <div className="w-32 h-32 rounded-full bg-white/90 flex items-center justify-center shadow-lg relative z-10">
         <img 
           src="/lovable-uploads/352a49ca-b123-4f07-992a-cf59e4b7058a.png" 
           alt="ORUN ACADEMY Logo" 
