@@ -88,8 +88,8 @@ export function APIConfig() {
   return (
     <div className="space-y-3 bg-[#F1F0FB] p-3 rounded-lg border border-[#E5DEFF]">
       <div className="space-y-3">
-        <div className="flex items-center justify-between">
-          <Label className="text-sm font-medium text-gray-700">AI 모델 선택</Label>
+        <div className="flex items-center space-x-4">
+          <Label className="text-sm font-medium text-gray-700 whitespace-nowrap">AI 모델 선택</Label>
           <RadioGroup
             value={selectedAPI}
             onValueChange={setSelectedAPI}
