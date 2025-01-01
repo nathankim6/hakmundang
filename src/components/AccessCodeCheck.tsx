@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useToast } from "./ui/use-toast";
 import { Key } from "lucide-react";
 import { supabase } from "@/lib/supabase";
+import { Button } from "./ui/button";
 
 interface AccessCodeCheckProps {
   onAccessGranted: () => void;
@@ -15,13 +16,15 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
   const navigate = useNavigate();
   const { toast } = useToast();
 
-  const handleInputChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const inputCode = e.target.value;
     setCode(inputCode);
+  };
 
-    if (inputCode.length >= 4) {
+  const handleSubmit = async () => {
+    if (code.length >= 4) {
       // Check for admin code first
-      if (inputCode === "101100") {
+      if (code === "101100") {
         onAccessGranted();
         localStorage.setItem("isAdmin", "true");
         localStorage.setItem("userName", "관리자");
@@ -37,7 +40,7 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
         const { data: accessCode, error } = await supabase
           .from('access_codes')
           .select('*')
-          .eq('code', inputCode)
+          .eq('code', code)
           .maybeSingle();
 
         if (error) {
@@ -53,9 +56,20 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
             description: "엑세스 코드가 확인되었습니다.",
           });
           navigate("/");
+        } else {
+          toast({
+            title: "접속 실패",
+            description: "유효하지 않은 엑세스 코드입니다.",
+            variant: "destructive",
+          });
         }
       } catch (error) {
         console.error("Access code check error:", error);
+        toast({
+          title: "오류 발생",
+          description: "엑세스 코드 확인 중 오류가 발생했습니다.",
+          variant: "destructive",
+        });
       }
     }
   };
@@ -74,7 +88,7 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h1 className="text-3xl font-light animate-title bg-gradient-to-r from-[#403E43] via-[#555555] to-[#403E43] bg-clip-text text-transparent relative group transition-all duration-300">
+              <h1 className="text-3xl font-medium animate-title bg-gradient-to-r from-[#403E43] via-[#555555] to-[#403E43] bg-clip-text text-transparent relative group transition-all duration-300">
                 <span className="inline-block transform hover:scale-105 transition-transform duration-300 relative">
                   ORUN AI QUIZ MAKER
                   <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 animate-shimmer"></span>
@@ -99,6 +113,12 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
                   className="pl-10 pr-4 py-6 text-lg border-2 focus:border-primary/50 transition-all duration-300"
                 />
               </div>
+              <Button 
+                onClick={handleSubmit}
+                className="w-full py-6 text-lg font-medium"
+              >
+                확인
+              </Button>
             </div>
 
             {/* Additional Info */}
