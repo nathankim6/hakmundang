@@ -55,21 +55,21 @@
     font-weight: 900;
     background: linear-gradient(
       92deg,
-      #403E43 0%,
-      #555555 15%,
-      #403E43 30%,
-      #555555 45%,
-      #403E43 60%,
-      #555555 75%,
-      #403E43 100%
+      #9b87f5 0%,
+      #D946EF 50%,
+      #9b87f5 100%
     );
-    background-size: 300% auto;
+    background-size: 200% auto;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
-    letter-spacing: -0.5px;
+    text-shadow: 
+      3px 3px 6px rgba(155, 135, 245, 0.3),
+      -1px -1px 4px rgba(217, 70, 239, 0.2);
+    letter-spacing: 2px;
     animation: shine 3s linear infinite;
+    transform: perspective(500px) rotateX(10deg);
+    padding-bottom: 0.5rem;
   }
 
   body::before {
