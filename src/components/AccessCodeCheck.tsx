@@ -77,7 +77,7 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
   return (
     <div className="fixed inset-0 bg-background/80 backdrop-blur-sm z-50">
       <div className="fixed left-[50%] top-[50%] z-50 w-full max-w-lg translate-x-[-50%] translate-y-[-50%] space-y-8">
-        <div className="metallic-border rounded-xl bg-white p-8 shadow-2xl">
+        <div className="metallic-border rounded-xl bg-gradient-to-br from-[#F8F7FF] via-[#F6F6F7] to-[#F1F0FB] p-8 shadow-2xl">
           <div className="flex flex-col items-center space-y-6">
             {/* Logo and Title */}
             <div className="flex flex-col items-center space-y-4">
