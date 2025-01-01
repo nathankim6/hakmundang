@@ -16,7 +16,7 @@ export const ActionButtons = ({ openVocabModal }: ActionButtonsProps) => {
         className={`${buttonBaseClass} bg-gradient-to-r from-[#E5DEFF] via-[#FFDEE2] to-[#FDE1D3] text-gray-700 hover:opacity-90`}
       >
         <div className="flex items-center justify-center gap-2">
-          <Star className="w-6 h-6" />
+          <Star className="w-6 h-6 animate-spin-slow" />
           <span>단어장생성기</span>
         </div>
         <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 rounded-xl transition-opacity duration-200"></div>
