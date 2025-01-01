@@ -11,7 +11,7 @@ export const AppHeader = () => {
       
       <div className="flex flex-col items-center">
         <h1 className="text-7xl font-bold animate-title tracking-wider relative group">
-          <span className="inline-block transform transition-transform group-hover:scale-105 duration-300">
+          <span className="inline-block transform transition-transform group-hover:scale-105 duration-300 relative">
             ORUN AI QUIZ MAKER
           </span>
         </h1>
