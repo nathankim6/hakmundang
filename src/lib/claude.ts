@@ -23,7 +23,8 @@ import {
   getDictionaryPrompt,
   getSummaryBlankPrompt,
   getOrderWritingBasicPrompt,
-  getOrderWritingAdvancedPrompt
+  getOrderWritingAdvancedPrompt,
+  getTopicWritingPrompt
 } from "./prompts";
 
 export const getQuestionTypes = () => [
@@ -56,6 +57,7 @@ export const getQuestionTypes = () => [
   { id: "orderWritingBasic", name: "배열영작(우리말O,어형변화X)" },
   { id: "orderWritingAdvanced", name: "배열영작(우리말O,어형변화O)" },
   { id: "summaryBlank", name: "요약문 빈칸완성" },
+  { id: "topicWriting", name: "주제문 영작" },
 
   // 옳은영어 콘텐츠
   { id: "synonymAntonym", name: "동의어/반의어" },
@@ -144,6 +146,9 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
         break;
       case "summaryBlank":
         prompt = getSummaryBlankPrompt(text);
+        break;
+      case "topicWriting":
+        prompt = getTopicWritingPrompt(text);
         break;
       default:
         prompt = `Generate a question of type ${type.name} based on the following text: ${text}`;
