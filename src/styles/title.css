@@ -15,13 +15,17 @@
     #cb9b51 78%,
     #462523 100%
   );
-  color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+  color: #cb9b51;
+  -webkit-text-fill-color: transparent;
   position: relative;
   font-weight: 900;
   letter-spacing: 3px;
   animation: shine 4s linear infinite;
+  text-shadow: 
+    2px 2px 4px rgba(0,0,0,0.3),
+    -2px -2px 4px rgba(255,255,255,0.3);
 }
 
 @keyframes shine {
