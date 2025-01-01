@@ -7,13 +7,13 @@
 .animate-title {
   background: linear-gradient(
     92deg,
-    #e0e0e0 0%,
-    #ffffff 15%,
-    #d8d8d8 30%,
-    #ffffff 45%,
-    #d8d8d8 60%,
-    #ffffff 75%,
-    #e0e0e0 100%
+    #403E43 0%,
+    #555555 15%,
+    #403E43 30%,
+    #555555 45%,
+    #403E43 60%,
+    #555555 75%,
+    #403E43 100%
   );
   background-size: 300% auto;
   color: transparent;
@@ -25,8 +25,8 @@
   letter-spacing: 3px;
   animation: shine 1.5s linear infinite;
   text-shadow: 
-    0 0 2px rgba(255, 255, 255, 0.8),
-    2px 2px 4px rgba(192, 192, 192, 0.3);
+    0 0 2px rgba(64, 62, 67, 0.8),
+    2px 2px 4px rgba(34, 31, 38, 0.3);
 }
 
 @keyframes shine {
@@ -66,12 +66,12 @@
   height: 100%;
   pointer-events: none;
   background-image: 
-    radial-gradient(2px 2px at 20px 30px, #ffffff 0%, rgba(255,255,255,0) 100%),
-    radial-gradient(2px 2px at 40px 70px, #f0f0f0 0%, rgba(240,240,240,0) 100%),
-    radial-gradient(2px 2px at 50px 160px, #ffffff 0%, rgba(255,255,255,0) 100%),
-    radial-gradient(2px 2px at 90px 40px, #f0f0f0 0%, rgba(240,240,240,0) 100%),
-    radial-gradient(2px 2px at 130px 80px, #ffffff 0%, rgba(255,255,255,0) 100%),
-    radial-gradient(2px 2px at 160px 120px, #f0f0f0 0%, rgba(240,240,240,0) 100%);
+    radial-gradient(2px 2px at 20px 30px, #555555 0%, rgba(64, 62, 67, 0) 100%),
+    radial-gradient(2px 2px at 40px 70px, #403E43 0%, rgba(64, 62, 67, 0) 100%),
+    radial-gradient(2px 2px at 50px 160px, #555555 0%, rgba(64, 62, 67, 0) 100%),
+    radial-gradient(2px 2px at 90px 40px, #403E43 0%, rgba(64, 62, 67, 0) 100%),
+    radial-gradient(2px 2px at 130px 80px, #555555 0%, rgba(64, 62, 67, 0) 100%),
+    radial-gradient(2px 2px at 160px 120px, #403E43 0%, rgba(64, 62, 67, 0) 100%);
   background-repeat: repeat;
   animation: silverSparkle 1.5s linear infinite;
 }
