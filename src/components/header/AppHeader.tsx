@@ -21,6 +21,7 @@ export const AppHeader = () => {
             ORUN AI QUIZ MAKER
           </span>
         </h1>
+        <div className="title-bar"></div>
       </div>
 
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-purple-200 to-transparent"></div>
