@@ -2,9 +2,9 @@ import React from 'react';
 
 export const AppHeader = () => {
   return (
-    <div className="flex items-center justify-center space-x-6 p-8 rounded-2xl bg-gradient-to-r from-white/80 via-purple-50/50 to-white/80 shadow-lg border border-purple-100 backdrop-blur-sm relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-[#9b87f5]/40 to-[#D6BCFA]/30 opacity-70 animate-gradient"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(126,105,171,0.3),transparent_70%)] mix-blend-overlay"></div>
+    <div className="flex items-center justify-center space-x-6 p-8 rounded-2xl bg-gradient-to-r from-white/80 via-gray-50/50 to-white/80 shadow-lg border border-gray-200 backdrop-blur-sm relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-[#E5E7EB]/40 to-[#9CA3AF]/30 opacity-70 animate-gradient"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(156,163,175,0.3),transparent_70%)] mix-blend-overlay"></div>
       
       <div className="w-32 h-32 rounded-full bg-white flex items-center justify-center shadow-lg relative z-10">
         <img 
@@ -25,10 +25,10 @@ export const AppHeader = () => {
         <p className="font-nanum text-lg mt-2 text-gray-700 tracking-tight">옳은영어 AI 퀴즈메이커</p>
       </div>
 
-      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-purple-200 to-transparent"></div>
-      <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-purple-200 to-transparent"></div>
-      <div className="absolute left-0 top-0 h-full w-px bg-gradient-to-b from-transparent via-purple-200 to-transparent"></div>
-      <div className="absolute right-0 top-0 h-full w-px bg-gradient-to-b from-transparent via-purple-200 to-transparent"></div>
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
+      <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent"></div>
+      <div className="absolute left-0 top-0 h-full w-px bg-gradient-to-b from-transparent via-gray-200 to-transparent"></div>
+      <div className="absolute right-0 top-0 h-full w-px bg-gradient-to-b from-transparent via-gray-200 to-transparent"></div>
     </div>
   );
 };
