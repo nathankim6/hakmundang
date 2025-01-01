@@ -6,62 +6,58 @@
 
 .animate-title {
   background: linear-gradient(
-    to right,
+    92deg,
     #462523 0,
     #cb9b51 22%, 
     #f6e27a 45%,
-    #f6f2c0 50%,
+    #ffffff 50%,
     #f6e27a 55%,
     #cb9b51 78%,
     #462523 100%
   );
+  background-size: 200% auto;
+  color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  color: #cb9b51;
   -webkit-text-fill-color: transparent;
   position: relative;
   font-weight: 900;
   letter-spacing: 3px;
-  animation: shine 4s linear infinite;
+  animation: shine 3s linear infinite;
   text-shadow: 
-    2px 2px 4px rgba(0,0,0,0.3),
-    -2px -2px 4px rgba(255,255,255,0.3);
+    0 0 10px rgba(203, 155, 81, 0.5),
+    0 0 20px rgba(203, 155, 81, 0.3),
+    0 0 30px rgba(203, 155, 81, 0.2);
 }
 
 @keyframes shine {
-  0% {
-    background-position: 0;
-  }
-  100% {
-    background-position: 200%;
+  to {
+    background-position: 200% center;
   }
 }
 
-.animate-title::before,
-.animate-title::after {
+.animate-title::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
   background: inherit;
-  filter: blur(8px);
+  filter: blur(10px);
   opacity: 0.7;
-  animation: pulse 2s ease-in-out infinite alternate;
-}
-
-.animate-title::after {
-  filter: blur(16px);
-  opacity: 0.3;
+  z-index: -1;
+  animation: pulse 2s ease-in-out infinite;
 }
 
 @keyframes pulse {
-  0% {
-    opacity: 0.3;
+  0%, 100% {
+    opacity: 0.5;
+    filter: blur(10px);
   }
-  100% {
-    opacity: 0.7;
+  50% {
+    opacity: 0.8;
+    filter: blur(8px);
   }
 }
 
@@ -71,11 +67,11 @@
   height: 100%;
   pointer-events: none;
   background-image: 
-    radial-gradient(2px 2px at 20px 30px, #fff, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 50px 160px, #fff, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
-    radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0));
+    radial-gradient(2px 2px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 40px 70px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 50px 160px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 90px 40px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 130px 80px, #ffffff, rgba(0,0,0,0));
   background-repeat: repeat;
   animation: sparkle 4s linear infinite;
 }
