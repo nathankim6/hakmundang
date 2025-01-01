@@ -10,7 +10,7 @@ import { AccessCodeCheck } from "./components/AccessCodeCheck";
 
 const App = () => {
   const [queryClient] = useState(() => new QueryClient());
-  const hasAccess = localStorage.getItem("hasAccess") === "true";
+  const [hasAccess, setHasAccess] = useState(false);
 
   return (
     <QueryClientProvider client={queryClient}>
@@ -25,7 +25,13 @@ const App = () => {
             />
             <Route
               path="/login"
-              element={hasAccess ? <Navigate to="/" /> : <AccessCodeCheck />}
+              element={
+                hasAccess ? (
+                  <Navigate to="/" />
+                ) : (
+                  <AccessCodeCheck onAccessGranted={() => setHasAccess(true)} />
+                )
+              }
             />
             <Route path="/admin" element={<Admin />} />
           </Routes>

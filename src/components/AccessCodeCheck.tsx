@@ -1,36 +1,29 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Input } from "./ui/input";
 import { useNavigate } from "react-router-dom";
 import { useToast } from "./ui/use-toast";
 import { Key } from "lucide-react";
 import { supabase } from "@/lib/supabase";
 
-export function AccessCodeCheck() {
+interface AccessCodeCheckProps {
+  onAccessGranted: () => void;
+}
+
+export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
   const [code, setCode] = useState("");
   const [subscriptionExpiry, setSubscriptionExpiry] = useState<string | null>(null);
   const navigate = useNavigate();
   const { toast } = useToast();
 
-  useEffect(() => {
-    const hasAccess = localStorage.getItem("hasAccess");
-    if (hasAccess === "true") {
-      const storedExpiry = localStorage.getItem("subscriptionExpiry");
-      if (storedExpiry) {
-        setSubscriptionExpiry(storedExpiry);
-      }
-      navigate("/");
-    }
-  }, [navigate]);
-
   const handleInputChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const inputCode = e.target.value;
     setCode(inputCode);
 
-    if (inputCode.length >= 4) { // Only check if code is at least 4 characters
+    if (inputCode.length >= 4) {
       // Check for admin code first
       if (inputCode === "101100") {
+        onAccessGranted();
         localStorage.setItem("isAdmin", "true");
-        localStorage.setItem("hasAccess", "true");
         localStorage.setItem("userName", "관리자");
         toast({
           title: "관리자 로그인 성공",
@@ -52,8 +45,7 @@ export function AccessCodeCheck() {
         }
 
         if (accessCode && new Date(accessCode.expiry_date) > new Date()) {
-          localStorage.setItem("hasAccess", "true");
-          localStorage.setItem("subscriptionExpiry", accessCode.expiry_date);
+          onAccessGranted();
           localStorage.setItem("userName", accessCode.name);
           setSubscriptionExpiry(accessCode.expiry_date);
           toast({
