@@ -130,18 +130,23 @@ export function APIConfig() {
             <Button onClick={handleTestConnection} disabled={isLoading}>
               {isLoading ? "확인 중..." : "확인"}
             </Button>
-            <Button
-              variant="outline"
-              onClick={() => {
-                const url = selectedAPI === "claude" 
-                  ? "https://www.youtube.com/watch?v=5yf-8Wz1CDM"
-                  : "https://platform.openai.com/api-keys";
-                window.open(url, "_blank");
-              }}
-            >
-              <ExternalLink className="mr-2 h-4 w-4" />
-              API 발급 방법
-            </Button>
+            {selectedAPI === "claude" ? (
+              <Button
+                variant="outline"
+                onClick={() => window.open("https://www.youtube.com/watch?v=5yf-8Wz1CDM", "_blank")}
+              >
+                <ExternalLink className="mr-2 h-4 w-4" />
+                Claude API 발급 방법
+              </Button>
+            ) : (
+              <Button
+                variant="outline"
+                onClick={() => window.open("https://www.youtube.com/watch?v=8h-OCfC_EU0", "_blank")}
+              >
+                <ExternalLink className="mr-2 h-4 w-4" />
+                GPT API 발급 방법
+              </Button>
+            )}
             <Settings />
           </div>
         </div>
