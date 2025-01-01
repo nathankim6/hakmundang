@@ -112,9 +112,9 @@ export function APIConfig() {
               {selectedAPI === "claude" ? "Claude" : "OpenAI"} API Key
             </Label>
             {testResult?.success && (
-              <div className="flex items-center">
-                <CheckCircle className="w-4 h-4 text-blue-500 animate-pulse" />
-                <div className="w-2 h-2 rounded-full bg-blue-500 animate-ping absolute" />
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-4 h-4 text-green-500" />
+                <span className="text-sm text-green-600">API 연결됨</span>
               </div>
             )}
           </div>
