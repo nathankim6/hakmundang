@@ -81,7 +81,7 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
           <div className="flex flex-col items-center space-y-6">
             {/* Logo and Title */}
             <div className="flex flex-col items-center space-y-4">
-              <div className="rounded-full border-2 border-gray-200 p-0 overflow-hidden flex items-center justify-center bg-white w-24 h-24">
+              <div className="rounded-full border-2 border-gray-200 p-0 overflow-hidden flex items-center justify-center bg-gradient-to-br from-[#F1F0FB] to-[#F6F6F7] w-24 h-24">
                 <img 
                   src="/lovable-uploads/ba25df4b-a62d-4a3d-97c3-7d969e304813.png" 
                   alt="ORUN ACADEMY Logo" 
@@ -115,7 +115,7 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
               </div>
               <Button 
                 onClick={handleSubmit}
-                className="w-full py-6 text-lg font-medium"
+                className="w-full py-6 text-lg font-medium bg-gradient-to-r from-[#4A4A4A] via-[#363636] to-[#4A4A4A] hover:from-[#363636] hover:via-[#2D2D2D] hover:to-[#363636] border border-gray-600 shadow-inner transition-all duration-300"
               >
                 확인
               </Button>
