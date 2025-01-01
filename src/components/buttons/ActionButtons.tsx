@@ -13,7 +13,7 @@ export const ActionButtons = ({ openVocabModal }: ActionButtonsProps) => {
     <div className="flex flex-col space-y-4 mt-8 px-4">
       <Button
         onClick={openVocabModal}
-        className={`${buttonBaseClass} bg-gradient-to-r from-[#9b87f5] to-[#7E69AB] text-white hover:opacity-90`}
+        className={`${buttonBaseClass} bg-gradient-to-r from-[#E5DEFF] via-[#FFDEE2] to-[#FDE1D3] text-gray-700 hover:opacity-90`}
       >
         <div className="flex items-center justify-center gap-2">
           <Star className="w-6 h-6" />
@@ -28,7 +28,7 @@ export const ActionButtons = ({ openVocabModal }: ActionButtonsProps) => {
         rel="noopener noreferrer"
       >
         <Button
-          className={`${buttonBaseClass} bg-gradient-to-r from-[#9b87f5] to-[#7E69AB] text-white hover:opacity-90`}
+          className={`${buttonBaseClass} bg-gradient-to-r from-[#E5DEFF] via-[#FFDEE2] to-[#FDE1D3] text-gray-700 hover:opacity-90`}
         >
           <div className="flex items-center justify-center gap-2">
             <Settings className="w-6 h-6 animate-spin-slow" />
