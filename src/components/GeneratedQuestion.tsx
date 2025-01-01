@@ -58,6 +58,7 @@ export const GeneratedQuestion = ({
   const isOrderWriting = questionPart.includes('[우리말]');
   const isSummaryBlank = content.includes('다음 글의 내용을 아래와 같이 요약하고자 한다. 빈칸 (A), (B), (C)에 들어갈 말로 가장 적절한 것을 본문에서 찾아서 그대로 쓰시오.');
   const isIrrelevantSentence = questionPart.includes('다음 글에서 전체 흐름과 관계 없는 문장은?');
+  const isInsertQuestion = questionPart.includes('글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳을 고르시오.');
 
   if (isTrueFalse) {
     return (
@@ -92,6 +93,19 @@ export const GeneratedQuestion = ({
   // For irrelevant sentence questions, combine question and answer in one section
   if (isIrrelevantSentence) {
     const combinedContent = `${questionPart}\n\n[정답] ${answerPart}`;
+    return (
+      <DefaultQuestion
+        questionNumber={questionNumber}
+        questionPart={combinedContent}
+        answerPart=""
+      />
+    );
+  }
+
+  // For insert questions, combine question and answer in one section
+  if (isInsertQuestion) {
+    const [answer, explanation] = answerPart.split('[해설]').map(part => part.trim());
+    const combinedContent = `${questionPart}\n\n[정답] ${answer}\n[해설] ${explanation}`;
     return (
       <DefaultQuestion
         questionNumber={questionNumber}
