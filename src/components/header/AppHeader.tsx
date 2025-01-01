@@ -22,7 +22,7 @@ export const AppHeader = () => {
           </span>
         </h1>
         <div className="title-bar"></div>
-        <p className="font-nanum text-lg mt-2 text-gray-700 tracking-tight">옳은영어 AI 퀴즈메이커</p>
+        <p className="font-nanum text-xl mt-3 animate-fade-in">옳은영어 AI 퀴즈메이커</p>
       </div>
 
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-purple-200 to-transparent"></div>
