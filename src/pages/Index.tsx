@@ -130,7 +130,7 @@ const Index = () => {
 
       <footer className="mt-16 text-center relative z-10">
         <p className="text-sm text-gray-500 hover:text-gray-700 transition-colors">
-          © 2024 ORUN AI QUIZ MAKER. All rights reserved by 옳은영어 김성진T
+          © 2025 ORUN AI QUIZ MAKER. desinged and developed by 옳은영어 김성진T
         </p>
       </footer>
     </div>
