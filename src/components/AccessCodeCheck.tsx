@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Input } from "./ui/input";
 import { useNavigate } from "react-router-dom";
 import { useToast } from "./ui/use-toast";
@@ -10,11 +10,59 @@ interface AccessCodeCheckProps {
   onAccessGranted: () => void;
 }
 
+const SESSION_TIMEOUT = 2 * 60 * 60 * 1000; // 2 hours in milliseconds
+
 export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
   const [code, setCode] = useState("");
   const [subscriptionExpiry, setSubscriptionExpiry] = useState<string | null>(null);
   const navigate = useNavigate();
   const { toast } = useToast();
+
+  useEffect(() => {
+    // Check for existing session
+    const lastLoginTime = localStorage.getItem("lastLoginTime");
+    const hasAccess = localStorage.getItem("hasAccess");
+    
+    if (lastLoginTime && hasAccess) {
+      const timeDiff = Date.now() - parseInt(lastLoginTime);
+      if (timeDiff < SESSION_TIMEOUT) {
+        // Session is still valid
+        onAccessGranted();
+        navigate("/");
+      } else {
+        // Session expired
+        handleLogout();
+      }
+    }
+
+    // Set up session timeout check
+    const intervalId = setInterval(() => {
+      const lastLogin = localStorage.getItem("lastLoginTime");
+      if (lastLogin) {
+        const timeDiff = Date.now() - parseInt(lastLogin);
+        if (timeDiff >= SESSION_TIMEOUT) {
+          handleLogout();
+        }
+      }
+    }, 60000); // Check every minute
+
+    // Clean up interval on component unmount
+    return () => clearInterval(intervalId);
+  }, [navigate, onAccessGranted]);
+
+  const handleLogout = () => {
+    localStorage.removeItem("hasAccess");
+    localStorage.removeItem("lastLoginTime");
+    localStorage.removeItem("subscriptionExpiry");
+    localStorage.removeItem("userName");
+    localStorage.removeItem("isAdmin");
+    navigate("/login");
+    toast({
+      title: "세션 만료",
+      description: "보안을 위해 자동으로 로그아웃되었습니다.",
+      variant: "destructive",
+    });
+  };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const inputCode = e.target.value;
@@ -28,6 +76,8 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
         onAccessGranted();
         localStorage.setItem("isAdmin", "true");
         localStorage.setItem("userName", "관리자");
+        localStorage.setItem("hasAccess", "true");
+        localStorage.setItem("lastLoginTime", Date.now().toString());
         toast({
           title: "관리자 로그인 성공",
           description: "관리자 페이지로 이동합니다.",
@@ -50,6 +100,9 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
         if (accessCode && new Date(accessCode.expiry_date) > new Date()) {
           onAccessGranted();
           localStorage.setItem("userName", accessCode.name);
+          localStorage.setItem("hasAccess", "true");
+          localStorage.setItem("lastLoginTime", Date.now().toString());
+          localStorage.setItem("subscriptionExpiry", accessCode.expiry_date);
           setSubscriptionExpiry(accessCode.expiry_date);
           toast({
             title: "접속 성공",
