@@ -23,16 +23,10 @@
   position: relative;
   font-weight: 900;
   letter-spacing: 3px;
-  animation: shine 1.5s linear infinite;
+  animation: shine 3s linear infinite;
   text-shadow: 
     0 0 2px rgba(64, 62, 67, 0.8),
     2px 2px 4px rgba(34, 31, 38, 0.3);
-}
-
-@keyframes shine {
-  to {
-    background-position: -300% center;
-  }
 }
 
 .animate-title::before {
@@ -42,21 +36,37 @@
   left: -2px;
   right: -2px;
   bottom: -2px;
-  background: inherit;
-  filter: blur(1px);
-  opacity: 0.7;
-  z-index: -1;
-  animation: silverPulse 2s ease-in-out infinite;
+  background: linear-gradient(
+    225deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.4) 30%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.4) 70%,
+    transparent 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: glassReflection 2s infinite;
+  filter: blur(0.5px);
 }
 
-@keyframes silverPulse {
-  0%, 100% {
+@keyframes shine {
+  to {
+    background-position: -300% center;
+  }
+}
+
+@keyframes glassReflection {
+  0% {
+    background-position: -100% 0;
     opacity: 0.7;
-    filter: blur(1px);
   }
   50% {
-    opacity: 0.9;
-    filter: blur(0.5px);
+    opacity: 1;
+  }
+  100% {
+    background-position: 200% 0;
+    opacity: 0.7;
   }
 }
 
@@ -66,26 +76,27 @@
   height: 100%;
   pointer-events: none;
   background-image: 
-    radial-gradient(2px 2px at 20px 30px, #555555 0%, rgba(64, 62, 67, 0) 100%),
-    radial-gradient(2px 2px at 40px 70px, #403E43 0%, rgba(64, 62, 67, 0) 100%),
-    radial-gradient(2px 2px at 50px 160px, #555555 0%, rgba(64, 62, 67, 0) 100%),
-    radial-gradient(2px 2px at 90px 40px, #403E43 0%, rgba(64, 62, 67, 0) 100%),
-    radial-gradient(2px 2px at 130px 80px, #555555 0%, rgba(64, 62, 67, 0) 100%),
-    radial-gradient(2px 2px at 160px 120px, #403E43 0%, rgba(64, 62, 67, 0) 100%);
+    radial-gradient(2px 2px at 20px 30px, rgba(255, 255, 255, 0.8) 0%, rgba(64, 62, 67, 0) 100%),
+    radial-gradient(2px 2px at 40px 70px, rgba(255, 255, 255, 0.6) 0%, rgba(64, 62, 67, 0) 100%),
+    radial-gradient(2px 2px at 50px 160px, rgba(255, 255, 255, 0.8) 0%, rgba(64, 62, 67, 0) 100%),
+    radial-gradient(2px 2px at 90px 40px, rgba(255, 255, 255, 0.6) 0%, rgba(64, 62, 67, 0) 100%),
+    radial-gradient(2px 2px at 130px 80px, rgba(255, 255, 255, 0.8) 0%, rgba(64, 62, 67, 0) 100%),
+    radial-gradient(2px 2px at 160px 120px, rgba(255, 255, 255, 0.6) 0%, rgba(64, 62, 67, 0) 100%);
   background-repeat: repeat;
-  animation: silverSparkle 1.5s linear infinite;
+  animation: silverSparkle 3s linear infinite;
+  mix-blend-mode: overlay;
 }
 
 @keyframes silverSparkle {
   0% { 
     background-position: 0 0;
-    opacity: 0.95;
+    opacity: 0.5;
   }
   50% {
     opacity: 1;
   }
   100% { 
     background-position: 30px 30px;
-    opacity: 0.95;
+    opacity: 0.5;
   }
 }
