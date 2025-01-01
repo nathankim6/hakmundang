@@ -3,11 +3,13 @@ import React from 'react';
 export const AppHeader = () => {
   return (
     <div className="flex items-center justify-center space-x-6">
-      <img 
-        src="/lovable-uploads/352a49ca-b123-4f07-992a-cf59e4b7058a.png" 
-        alt="ORUN ACADEMY Logo" 
-        className="w-32 h-32 object-contain"
-      />
+      <div className="w-32 h-32 rounded-full bg-white flex items-center justify-center shadow-lg">
+        <img 
+          src="/lovable-uploads/352a49ca-b123-4f07-992a-cf59e4b7058a.png" 
+          alt="ORUN ACADEMY Logo" 
+          className="w-28 h-28 object-contain"
+        />
+      </div>
       
       <div className="flex flex-col items-center relative">
         <div className="title-sparkle"></div>
