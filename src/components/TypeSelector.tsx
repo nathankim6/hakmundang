@@ -1,7 +1,12 @@
 import { QuestionType } from "@/types/question";
-import { getQuestionTypes } from "@/lib/questionTypes";
+import { getQuestionTypes } from "@/lib/claude";
 import { useToast } from "./ui/use-toast";
 import { TypeCategory } from "./type-selector/TypeCategory";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 interface TypeSelectorProps {
   selectedTypes: QuestionType[];
@@ -48,6 +53,43 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
     isSelected ? onRemove(type.id) : onSelect(type);
   };
 
+  const renderTypeButton = (type: QuestionType, isSelected: boolean) => {
+    const button = (
+      <button
+        key={type.id}
+        onClick={() => handleTypeClick(type, isSelected)}
+        className={`type-button group relative w-full text-left transition-all duration-300 hover:scale-[1.02] ${
+          !hasAccess 
+            ? "opacity-50 cursor-not-allowed hover:scale-100"
+            : isSelected 
+              ? "selected bg-[#0EA5E9]/20 text-[#1A1F2C] font-semibold shadow-md" 
+              : "hover:bg-[#D3E4FD] hover:text-[#0EA5E9]"
+        }`}
+      >
+        {type.name}
+      </button>
+    );
+
+    if (type.id === "topicWriting") {
+      return (
+        <Tooltip key={type.id}>
+          <TooltipTrigger asChild>
+            {button}
+          </TooltipTrigger>
+          <TooltipContent side="right" className="w-[800px] p-0">
+            <img 
+              src="/lovable-uploads/3498b1d4-41af-4eef-9b32-d68fbcc513b7.png" 
+              alt="주제문 영작 예시" 
+              className="rounded-lg"
+            />
+          </TooltipContent>
+        </Tooltip>
+      );
+    }
+
+    return button;
+  };
+
   return (
     <div className="space-y-8">
       <TypeCategory
@@ -56,6 +98,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
         selectedTypes={selectedTypes}
         hasAccess={hasAccess}
         onTypeClick={handleTypeClick}
+        renderTypeButton={renderTypeButton}
       />
       <TypeCategory
         title="내신형"
@@ -63,6 +106,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
         selectedTypes={selectedTypes}
         hasAccess={hasAccess}
         onTypeClick={handleTypeClick}
+        renderTypeButton={renderTypeButton}
       />
       <TypeCategory
         title="서답형"
@@ -70,6 +114,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
         selectedTypes={selectedTypes}
         hasAccess={hasAccess}
         onTypeClick={handleTypeClick}
+        renderTypeButton={renderTypeButton}
       />
       <TypeCategory
         title="옳은영어 콘텐츠"
@@ -77,6 +122,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
         selectedTypes={selectedTypes}
         hasAccess={hasAccess}
         onTypeClick={handleTypeClick}
+        renderTypeButton={renderTypeButton}
       />
     </div>
   );
