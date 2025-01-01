@@ -102,24 +102,11 @@ export const GeneratedQuestion = ({
     );
   }
 
-  // For insert questions, combine question and answer in one section
-  if (isInsertQuestion) {
-    const [answer, explanation] = answerPart.split('[해설]').map(part => part.trim());
-    const combinedContent = `${questionPart}\n\n[정답] ${answer}\n[해설] ${explanation}`;
-    return (
-      <DefaultQuestion
-        questionNumber={questionNumber}
-        questionPart={combinedContent}
-        answerPart=""
-      />
-    );
-  }
-
   return (
     <DefaultQuestion
       questionNumber={questionNumber}
       questionPart={questionPart}
-      answerPart={`[정답] ${answerPart}`}
+      answerPart={answerPart ? `[정답] ${answerPart}` : ""}
     />
   );
 };
