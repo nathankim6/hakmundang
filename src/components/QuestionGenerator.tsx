@@ -125,7 +125,7 @@ export const QuestionGenerator = () => {
               <GeneratedQuestions questions={generatedQuestions} />
             </>
           ) : (
-            <div className="flex flex-col items-center justify-center h-[400px] bg-[#F1F0FB]/30 rounded-lg border-2 border-dashed border-[#D6BCFA]/30 p-8 space-y-4">
+            <div className="flex flex-col items-center justify-center h-[800px] bg-[#F1F0FB]/30 rounded-lg border-2 border-dashed border-[#D6BCFA]/30 p-8 space-y-4">
               <div className="relative">
                 <Star 
                   className="w-24 h-24 text-[#FFD700] animate-bounce filter drop-shadow-lg
