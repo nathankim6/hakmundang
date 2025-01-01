@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/components/ui/use-toast";
-import { CheckCircle, ExternalLink } from "lucide-react";
+import { CheckCircle, ExternalLink, XCircle } from "lucide-react";
 import { Settings } from "./Settings";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 
@@ -111,10 +111,19 @@ export function APIConfig() {
             <Label htmlFor="apiKey" className="text-sm font-medium text-gray-700">
               {selectedAPI === "claude" ? "Claude" : "OpenAI"} API Key
             </Label>
-            {testResult?.success && (
+            {testResult !== null && (
               <div className="flex items-center gap-1">
-                <CheckCircle className="w-3 h-3 text-green-500" />
-                <span className="text-xs text-green-600">API 연결됨</span>
+                {testResult.success ? (
+                  <>
+                    <CheckCircle className="w-3 h-3 text-green-500" />
+                    <span className="text-xs text-green-600">API 연결됨</span>
+                  </>
+                ) : (
+                  <>
+                    <XCircle className="w-3 h-3 text-red-500" />
+                    <span className="text-xs text-red-600">API 연결 안 됨</span>
+                  </>
+                )}
               </div>
             )}
           </div>
