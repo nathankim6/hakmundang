@@ -101,7 +101,7 @@ export function APIConfig() {
             </div>
             <div className="flex items-center space-x-2">
               <RadioGroupItem value="gpt" id="gpt" />
-              <Label htmlFor="gpt">GPT-4</Label>
+              <Label htmlFor="gpt">GPT-4o</Label>
             </div>
           </RadioGroup>
         </div>
