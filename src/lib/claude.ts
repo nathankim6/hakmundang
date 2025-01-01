@@ -1,5 +1,6 @@
 import { QuestionType } from "@/types/question";
 import { Anthropic } from "@anthropic-ai/sdk";
+import OpenAI from "openai";
 import { 
   getPurposePrompt, 
   getClaimPrompt, 
@@ -66,18 +67,17 @@ export const getQuestionTypes = () => [
 
 export const generateQuestion = async (type: QuestionType, text: string) => {
   try {
-    const apiKey = localStorage.getItem("claude_api_key");
-    if (!apiKey) {
-      throw new Error("Claude API key not found. Please enter your API key in the settings.");
+    const claudeApiKey = localStorage.getItem("claude_api_key");
+    const gptApiKey = localStorage.getItem("gpt_api_key");
+    
+    // Use Claude if it's available or if GPT key is not set
+    const useClaudeApi = claudeApiKey || !gptApiKey;
+    
+    if (!claudeApiKey && !gptApiKey) {
+      throw new Error("API key not found. Please enter your API key in the settings.");
     }
 
-    const client = new Anthropic({
-      apiKey: apiKey,
-      dangerouslyAllowBrowser: true
-    });
-
     let prompt = "";
-    
     switch (type.id) {
       case "purpose":
         prompt = getPurposePrompt(text);
@@ -149,29 +149,62 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
         prompt = `Generate a question of type ${type.name} based on the following text: ${text}`;
     }
 
-    const response = await client.messages.create({
-      model: "claude-3-sonnet-20240229",
-      messages: [{
-        role: "user",
-        content: prompt
-      }],
-      max_tokens: 1000,
-      temperature: 0.7,
-    });
+    if (useClaudeApi) {
+      const client = new Anthropic({
+        apiKey: claudeApiKey,
+        dangerouslyAllowBrowser: true
+      });
 
-    const content = response.content[0];
-    
-    if (!content || typeof content !== 'object' || !('type' in content) || content.type !== 'text' || !('text' in content)) {
-      throw new Error("Invalid response format from Claude API");
+      const response = await client.messages.create({
+        model: "claude-3-sonnet-20240229",
+        messages: [{
+          role: "user",
+          content: prompt
+        }],
+        max_tokens: 1000,
+        temperature: 0.7,
+      });
+
+      const content = response.content[0];
+      
+      if (!content || typeof content !== 'object' || !('type' in content) || content.type !== 'text' || !('text' in content)) {
+        throw new Error("Invalid response format from Claude API");
+      }
+
+      let result = content.text;
+      if (type.id === "weekendClinic") {
+        result = result.replace("[OUTPUT]\n\n", "");
+      }
+
+      return result;
+    } else {
+      const openai = new OpenAI({
+        apiKey: gptApiKey,
+        dangerouslyAllowBrowser: true
+      });
+
+      const response = await openai.chat.completions.create({
+        model: "gpt-4-turbo-preview",
+        messages: [{
+          role: "user",
+          content: prompt
+        }],
+        temperature: 0.7,
+        max_tokens: 1000,
+      });
+
+      let result = response.choices[0]?.message?.content;
+      
+      if (!result) {
+        throw new Error("Invalid response format from GPT API");
+      }
+
+      if (type.id === "weekendClinic") {
+        result = result.replace("[OUTPUT]\n\n", "");
+      }
+
+      return result;
     }
-
-    // For weekend clinic type, we need to ensure the [OUTPUT] tag is removed
-    let result = content.text;
-    if (type.id === "weekendClinic") {
-      result = result.replace("[OUTPUT]\n\n", "");
-    }
-
-    return result;
   } catch (error) {
     console.error("Error generating question:", error);
     throw new Error("문제 생성 중 오류가 발생했습니다. 다시 시도해 주세요.");

@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label";
 import { useToast } from "@/components/ui/use-toast";
 import { CheckCircle, ExternalLink } from "lucide-react";
 import { Settings } from "./Settings";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 
 interface APIResponse {
   success: boolean;
@@ -15,18 +16,22 @@ export function APIConfig() {
   const [apiKey, setApiKey] = useState("");
   const [testResult, setTestResult] = useState<APIResponse | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [selectedAPI, setSelectedAPI] = useState("claude"); // Default to Claude
   const { toast } = useToast();
 
   useEffect(() => {
-    const savedApiKey = localStorage.getItem("claude_api_key");
+    const savedApiKey = localStorage.getItem(`${selectedAPI}_api_key`);
     if (savedApiKey) {
       setApiKey(savedApiKey);
       setTestResult({
         success: true,
         message: "저장된 API 키가 있습니다.",
       });
+    } else {
+      setApiKey("");
+      setTestResult(null);
     }
-  }, []);
+  }, [selectedAPI]);
 
   const handleTestConnection = async () => {
     if (!apiKey) {
@@ -39,8 +44,9 @@ export function APIConfig() {
 
     setIsLoading(true);
     try {
-      if (apiKey.startsWith("sk-") && apiKey.length > 20) {
-        localStorage.setItem("claude_api_key", apiKey);
+      const keyPrefix = selectedAPI === "claude" ? "sk-" : selectedAPI === "gpt" ? "sk-" : "";
+      if (apiKey.startsWith(keyPrefix) && apiKey.length > 20) {
+        localStorage.setItem(`${selectedAPI}_api_key`, apiKey);
         
         setTestResult({
           success: true,
@@ -81,36 +87,63 @@ export function APIConfig() {
 
   return (
     <div className="space-y-4">
-      <div className="space-y-2">
-        <div className="flex items-center gap-2">
-          <Label htmlFor="apiKey">Claude API Key</Label>
-          {testResult?.success && (
-            <div className="flex items-center">
-              <CheckCircle className="w-4 h-4 text-blue-500 animate-pulse" />
-              <div className="w-2 h-2 rounded-full bg-blue-500 animate-ping absolute" />
-            </div>
-          )}
-        </div>
-        <div className="flex space-x-2">
-          <Input
-            id="apiKey"
-            type="password"
-            value={apiKey}
-            onChange={(e) => setApiKey(e.target.value)}
-            className="flex-1"
-            placeholder="sk-..."
-          />
-          <Button onClick={handleTestConnection} disabled={isLoading}>
-            {isLoading ? "확인 중..." : "확인"}
-          </Button>
-          <Button
-            variant="outline"
-            onClick={() => window.open("https://www.youtube.com/watch?v=5yf-8Wz1CDM", "_blank")}
+      <div className="space-y-4">
+        <div className="flex flex-col space-y-2">
+          <Label>AI 모델 선택</Label>
+          <RadioGroup
+            value={selectedAPI}
+            onValueChange={setSelectedAPI}
+            className="flex space-x-4"
           >
-            <ExternalLink className="mr-2 h-4 w-4" />
-            API 발급 방법
-          </Button>
-          <Settings />
+            <div className="flex items-center space-x-2">
+              <RadioGroupItem value="claude" id="claude" />
+              <Label htmlFor="claude">Claude Sonnet 3.5</Label>
+            </div>
+            <div className="flex items-center space-x-2">
+              <RadioGroupItem value="gpt" id="gpt" />
+              <Label htmlFor="gpt">GPT-4</Label>
+            </div>
+          </RadioGroup>
+        </div>
+
+        <div className="space-y-2">
+          <div className="flex items-center gap-2">
+            <Label htmlFor="apiKey">
+              {selectedAPI === "claude" ? "Claude" : "OpenAI"} API Key
+            </Label>
+            {testResult?.success && (
+              <div className="flex items-center">
+                <CheckCircle className="w-4 h-4 text-blue-500 animate-pulse" />
+                <div className="w-2 h-2 rounded-full bg-blue-500 animate-ping absolute" />
+              </div>
+            )}
+          </div>
+          <div className="flex space-x-2">
+            <Input
+              id="apiKey"
+              type="password"
+              value={apiKey}
+              onChange={(e) => setApiKey(e.target.value)}
+              className="flex-1"
+              placeholder="sk-..."
+            />
+            <Button onClick={handleTestConnection} disabled={isLoading}>
+              {isLoading ? "확인 중..." : "확인"}
+            </Button>
+            <Button
+              variant="outline"
+              onClick={() => {
+                const url = selectedAPI === "claude" 
+                  ? "https://www.youtube.com/watch?v=5yf-8Wz1CDM"
+                  : "https://platform.openai.com/api-keys";
+                window.open(url, "_blank");
+              }}
+            >
+              <ExternalLink className="mr-2 h-4 w-4" />
+              API 발급 방법
+            </Button>
+            <Settings />
+          </div>
         </div>
       </div>
     </div>
