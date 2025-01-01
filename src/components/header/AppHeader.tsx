@@ -3,8 +3,8 @@ import React from 'react';
 export const AppHeader = () => {
   return (
     <div className="flex items-center justify-center space-x-6 p-8 rounded-2xl bg-gradient-to-r from-white/80 via-purple-50/50 to-white/80 shadow-lg border border-purple-100 backdrop-blur-sm relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-100/20 to-transparent opacity-50"></div>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(139,92,246,0.1),transparent_70%)]"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-300/40 to-pink-200/30 opacity-70 animate-gradient"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(139,92,246,0.2),transparent_70%)]"></div>
       
       <div className="w-32 h-32 rounded-full bg-white flex items-center justify-center shadow-lg relative z-10">
         <img 

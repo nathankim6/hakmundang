@@ -67,14 +67,23 @@ export default {
         },
         shimmer: {
           '0%': { transform: 'translateX(-100%)' },
-          '100%': { transform: 'translateX(100%)' }
+          to: { transform: 'translateX(100%)' }
+        },
+        gradient: {
+          '0%, 100%': {
+            opacity: '0.7'
+          },
+          '50%': {
+            opacity: '0.9'
+          }
         }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'spin-slow': 'spin 3s linear infinite',
-        'shimmer': 'shimmer 2s infinite'
+        'shimmer': 'shimmer 2s infinite',
+        'gradient': 'gradient 3s ease-in-out infinite'
       }
     }
   },
