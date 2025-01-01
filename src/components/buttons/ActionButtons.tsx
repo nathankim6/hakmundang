@@ -7,7 +7,7 @@ interface ActionButtonsProps {
 }
 
 export const ActionButtons = ({ openVocabModal }: ActionButtonsProps) => {
-  const buttonBaseClass = "group relative w-full px-8 py-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 font-semibold";
+  const buttonBaseClass = "group relative w-full px-8 py-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 font-nanum font-bold";
   
   return (
     <div className="flex flex-col space-y-4 mt-8 px-4">
