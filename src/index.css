@@ -52,13 +52,24 @@
 
   .font-nanum {
     font-family: 'Noto Sans KR', sans-serif !important;
-    font-weight: 700;
-    background: linear-gradient(to right, #6366f1, #8b5cf6);
+    font-weight: 900;
+    background: linear-gradient(
+      92deg,
+      #403E43 0%,
+      #555555 15%,
+      #403E43 30%,
+      #555555 45%,
+      #403E43 60%,
+      #555555 75%,
+      #403E43 100%
+    );
+    background-size: 300% auto;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
     letter-spacing: -0.5px;
+    animation: shine 3s linear infinite;
   }
 
   body::before {
