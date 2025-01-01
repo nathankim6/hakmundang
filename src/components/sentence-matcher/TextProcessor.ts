@@ -59,7 +59,6 @@ export const splitIntoSentences = (text: string) => {
 export const validateText = (text: string, isEnglish: boolean) => {
   if (!text.trim()) return false;
   
-  // Updated regex patterns to be more precise
   const englishRegex = /^[A-Za-z0-9\s.,!?'"()\-:;@#$%&*]+$/;
   const koreanRegex = /^[가-힣0-9\s.,!?'"()\-:;@#$%&*]+$/;
   
@@ -69,7 +68,6 @@ export const validateText = (text: string, isEnglish: boolean) => {
 
 export const matchSentences = async (engSentences: string[], korSentences: string[]) => {
   try {
-    // Create a prompt for Claude to match sentences
     const prompt = `
     Please match these English and Korean sentences exactly, maintaining their original meaning and ensuring no sentences are omitted.
     Keep the exact same sentences, just match them correctly.
@@ -82,37 +80,29 @@ export const matchSentences = async (engSentences: string[], korSentences: strin
     
     Format your response as a JSON array of objects with 'english' and 'korean' properties.
     Example format: [{"english": "Hello", "korean": "안녕하세요"}]
+    
+    Important: Make sure to return ONLY the JSON array, with no additional text or formatting.
     `;
 
     // Use Claude to match sentences
     const result = await generateQuestion({ id: "sentenceSplitter", name: "한영문장분리" }, prompt);
     
     try {
-      const matches = JSON.parse(result);
-      if (Array.isArray(matches) && matches.length > 0) {
+      // Clean the result string to ensure it only contains valid JSON
+      const cleanResult = result.trim().replace(/```json\n?|\n?```/g, '').trim();
+      const matches = JSON.parse(cleanResult);
+      
+      if (Array.isArray(matches) && matches.length > 0 && 
+          matches.every(m => typeof m === 'object' && 'english' in m && 'korean' in m)) {
+        console.log('Successfully matched sentences:', matches);
         return matches;
+      } else {
+        throw new Error('Invalid response format');
       }
     } catch (parseError) {
       console.error('Error parsing Claude response:', parseError);
+      throw parseError;
     }
-
-    // Fallback to basic matching if Claude fails
-    console.warn('Falling back to basic sentence matching');
-    const validatedEng = engSentences.filter(eng => eng.trim() && validateText(eng, true));
-    const validatedKor = korSentences.filter(kor => kor.trim() && validateText(kor, false));
-    
-    if (validatedEng.length !== validatedKor.length) {
-      console.warn('Warning: Number of English and Korean sentences do not match', {
-        english: validatedEng.length,
-        korean: validatedKor.length
-      });
-    }
-    
-    const minLength = Math.min(validatedEng.length, validatedKor.length);
-    return validatedEng.slice(0, minLength).map((eng, index) => ({
-      english: eng,
-      korean: validatedKor[index]
-    }));
   } catch (error) {
     console.error('Error in sentence matching:', error);
     throw error;
