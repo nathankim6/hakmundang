@@ -43,7 +43,7 @@ export const splitIntoSentences = (text: string) => {
         const nextPart = arr[i + 1];
         if (nextPart) {
           acc.push(part + nextPart);
-        } else {
+        } else if (part) {
           acc.push(part);
         }
       }
@@ -58,35 +58,36 @@ export const splitIntoSentences = (text: string) => {
 export const validateText = (text: string, isEnglish: boolean) => {
   if (!text.trim()) return false;
   
+  // Updated regex patterns to be more precise
   const englishRegex = /^[A-Za-z0-9\s.,!?'"()\-:;@#$%&*]+$/;
   const koreanRegex = /^[가-힣0-9\s.,!?'"()\-:;@#$%&*]+$/;
   
-  return isEnglish ? englishRegex.test(text) : koreanRegex.test(text);
+  const textToValidate = text.trim();
+  return isEnglish ? englishRegex.test(textToValidate) : koreanRegex.test(textToValidate);
 };
 
 export const matchSentences = (engSentences: string[], korSentences: string[]) => {
-  // Create arrays of valid sentences
-  const validatedEng = engSentences.filter(eng => validateText(eng, true));
-  const validatedKor = korSentences.filter(kor => validateText(kor, false));
+  // Filter out empty sentences and validate
+  const validatedEng = engSentences.filter(eng => eng.trim() && validateText(eng, true));
+  const validatedKor = korSentences.filter(kor => kor.trim() && validateText(kor, false));
 
-  // Get the maximum length to ensure we match all sentences
-  const maxLength = Math.max(validatedEng.length, validatedKor.length);
-  
-  // Create arrays padded to the same length
-  const paddedEng = [...validatedEng];
-  const paddedKor = [...validatedKor];
-  
-  // Pad the shorter array with empty strings if necessary
-  while (paddedEng.length < maxLength) {
-    paddedEng.push('');
-  }
-  while (paddedKor.length < maxLength) {
-    paddedKor.push('');
+  // Check if the number of sentences match
+  if (validatedEng.length !== validatedKor.length) {
+    console.warn('Warning: Number of English and Korean sentences do not match', {
+      english: validatedEng.length,
+      korean: validatedKor.length
+    });
+    // Return only pairs up to the shorter array's length
+    const minLength = Math.min(validatedEng.length, validatedKor.length);
+    return validatedEng.slice(0, minLength).map((eng, index) => ({
+      english: eng,
+      korean: validatedKor[index]
+    }));
   }
 
-  // Create pairs of sentences
-  return paddedEng.map((eng, index) => ({
+  // Create pairs of sentences with exact matching
+  return validatedEng.map((eng, index) => ({
     english: eng,
-    korean: paddedKor[index] || ''
-  })).filter(pair => pair.english && pair.korean); // Only return pairs where both sentences exist
+    korean: validatedKor[index]
+  }));
 };

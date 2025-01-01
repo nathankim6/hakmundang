@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Button } from '@/components/ui/button';
-import { Plus, Info } from 'lucide-react';
+import { Plus, Info, AlertTriangle } from 'lucide-react';
 import { TextEntry } from './sentence-matcher/TextEntry';
 import { MatchedTable } from './sentence-matcher/MatchedTable';
 import { splitIntoSentences, matchSentences } from './sentence-matcher/TextProcessor';
+import { useToast } from "@/components/ui/use-toast";
 
 interface TextPair {
   id: string;
@@ -24,6 +25,8 @@ export const SentenceMatcher = () => {
   ]);
   const [matchedSets, setMatchedSets] = useState<MatchedSet[]>([]);
   const [info, setInfo] = useState('');
+  const [warning, setWarning] = useState('');
+  const { toast } = useToast();
 
   const addNewPair = () => {
     setTextPairs(prev => [
@@ -49,14 +52,29 @@ export const SentenceMatcher = () => {
   const handleMatch = () => {
     const newMatchedSets: MatchedSet[] = [];
     let totalSentences = 0;
+    setWarning('');
 
     // Combine all English and Korean texts
     const allEnglishText = textPairs.map(pair => pair.english).join(' ');
     const allKoreanText = textPairs.map(pair => pair.korean).join(' ');
 
+    if (!allEnglishText.trim() || !allKoreanText.trim()) {
+      toast({
+        title: "입력 오류",
+        description: "영어와 한글 텍스트를 모두 입력해주세요.",
+        variant: "destructive"
+      });
+      return;
+    }
+
     // Split and match all sentences at once
     const englishSentences = splitIntoSentences(allEnglishText);
     const koreanSentences = splitIntoSentences(allKoreanText);
+
+    if (englishSentences.length !== koreanSentences.length) {
+      setWarning(`문장 수가 일치하지 않습니다. 영어: ${englishSentences.length}개, 한글: ${koreanSentences.length}개`);
+    }
+
     const matched = matchSentences(englishSentences, koreanSentences);
 
     if (matched.length > 0) {
@@ -112,6 +130,13 @@ export const SentenceMatcher = () => {
               문장 나누기
             </Button>
           </div>
+
+          {warning && (
+            <Alert variant="destructive">
+              <AlertTriangle className="h-4 w-4" />
+              <AlertDescription>{warning}</AlertDescription>
+            </Alert>
+          )}
 
           {info && (
             <Alert>
