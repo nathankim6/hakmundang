@@ -103,7 +103,7 @@
 
 .title-bar {
   position: relative;
-  width: 180px;
+  width: 540px;  /* Changed from 180px to 540px (3x longer) */
   height: 4px;
   margin-top: 12px;
   background: linear-gradient(
