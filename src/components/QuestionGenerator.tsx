@@ -68,12 +68,16 @@ export const QuestionGenerator = () => {
         {/* Type Selector Frame - Now positioned on the left */}
         <div className="w-80 flex-shrink-0">
           <div className="sticky top-8">
-            <div className="bg-[#F1F0FB]/50 p-4 rounded-lg border border-[#D6BCFA]/30">
-              <TypeSelector 
-                selectedTypes={selectedTypes.map(entry => entry.type)} 
-                onSelect={handleTypeSelect}
-                onRemove={handleRemoveType}
-              />
+            <div className="bg-gradient-to-r from-white/80 via-gray-50/50 to-white/80 shadow-lg border border-gray-200 backdrop-blur-sm p-4 rounded-lg relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#E5E7EB]/40 to-[#9CA3AF]/30 opacity-70 animate-gradient"></div>
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(156,163,175,0.3),transparent_70%)] mix-blend-overlay"></div>
+              <div className="relative z-10">
+                <TypeSelector 
+                  selectedTypes={selectedTypes.map(entry => entry.type)} 
+                  onSelect={handleTypeSelect}
+                  onRemove={handleRemoveType}
+                />
+              </div>
             </div>
             
             {/* Action Buttons now positioned below TypeSelector */}
