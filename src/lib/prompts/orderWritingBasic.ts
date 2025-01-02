@@ -13,13 +13,13 @@ ${text}
 (단, 단어의 형태는 변형하지 마시오.)
 
 [우리말]
-{Write a Korean sentence that captures a key idea from the text}
+{Write a Korean translation of the answer sentence}
 
 [단어]
-{List 6-8 key words from the passage in their base form, separated by / }
+{Take all words from the answer sentence and scramble them, separated by /}
 
 [정답]
-{Write ONE grammatically correct English sentence using ALL given words in their exact form}
+{Write ONE grammatically correct English sentence that matches the Korean translation}
 
 [해설]
 {Explain how the words were arranged to form a grammatically correct sentence that captures the main idea of the text}`;
