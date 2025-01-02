@@ -22,3 +22,4 @@ export * from './orderWriting';
 export * from './topicWriting';
 export * from './sungnamVocab1';
 export * from './sungnamVocab2';
+export * from './sungnamVocab3';

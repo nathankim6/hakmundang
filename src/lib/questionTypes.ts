@@ -1,3 +1,4 @@
+import { QuestionType } from "@/types/question";
 import {
   getPurposePrompt,
   getClaimPrompt,
@@ -22,7 +23,8 @@ import {
   getOrderWritingPrompt,
   getTopicWritingPrompt,
   getSungnamVocab1Prompt,
-  getSungnamVocab2Prompt
+  getSungnamVocab2Prompt,
+  getSungnamVocab3Prompt
 } from "./prompts";
 
 export const getPromptForType = (type: QuestionType, text: string): string => {
@@ -75,6 +77,8 @@ export const getPromptForType = (type: QuestionType, text: string): string => {
       return getSungnamVocab1Prompt(text);
     case "sungnamVocab2":
       return getSungnamVocab2Prompt(text);
+    case "sungnamVocab3":
+      return getSungnamVocab3Prompt(text);
     default:
       return `Generate a question of type ${type.name} based on the following text: ${text}`;
   }
