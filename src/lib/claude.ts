@@ -21,6 +21,10 @@ import {
   getLogicFlowPrompt,
   getWeekendClinicPrompt,
   getDictionaryPrompt,
+  getOrderWritingPrompt,
+  getConditionWritingPrompt,
+  getSummaryBlankPrompt,
+  getTopicWritingPrompt,
 } from "./prompts";
 
 export const getQuestionTypes = () => [
@@ -48,6 +52,12 @@ export const getQuestionTypes = () => [
   { id: "sungReference", name: "[숭의여고] 지칭추론" },
   { id: "yeongExternal", name: "[영등포고] 외부지문" },
   { id: "dangDict", name: "[당곡고] 영영사전" },
+
+  // 서답형
+  { id: "orderWriting", name: "배열영작" },
+  { id: "conditionWriting", name: "조건영작" },
+  { id: "summaryBlank", name: "요약문 빈칸" },
+  { id: "topicWriting", name: "주제문영작" },
 
   // 옳은영어 콘텐츠
   { id: "synonymAntonym", name: "동의어/반의어" },

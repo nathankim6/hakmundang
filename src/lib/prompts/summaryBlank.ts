@@ -1,35 +1,33 @@
-export const getSummaryBlankPrompt = (text: string) => `당신은 고등학교 영어 수능 출제위원입니다. 영어 지문을 읽고 요약문의 빈칸 추론 문제를 만드는 역할을 합니다.
-
-아래는 문제 생성의 필수 요구사항입니다:
-
-1. 입력된 영어 지문을 읽고 핵심 내용을 파악합니다.
-2. 지문의 핵심 내용을 담은 한 문장의 요약문을 생성합니다.
-   - 요약문은 지문의 내용을 자연스럽게 한 문장으로 요약해야 합니다.
-   - 요약문에서 핵심적인 세 부분을 선택하여 (A), (B), (C) 빈칸으로 만듭니다.
-   - 빈칸은 지문의 핵심 개념이나 관계를 테스트할 수 있어야 합니다.
-   - 각 빈칸에는 2-3개의 단어가 들어가야 합니다.
-3. 정답과 함께 상세한 해설을 제공합니다.
-   - 해설에는 각 빈칸의 정답이 정답인 이유를 설명해야 합니다.
-   - 각 빈칸의 정답은 반드시 본문에서 찾을 수 있어야 합니다.
+export const getSummaryBlankPrompt = (text: string) => `
+You are an expert at creating summary completion questions based on English texts.
 
 [INPUT]
 ${text}
 
+Please generate a question following these rules:
+
+1. Create a summary sentence that:
+   - Captures the main idea of the text
+   - Contains 3 blank spaces
+   - Flows naturally
+
+2. Each blank should:
+   - Test understanding of key concepts
+   - Be 2-3 words long
+   - Be findable in the original text
+
+The output must follow this exact format:
+
 [OUTPUT]
-다음 글을 읽고, 물음에 답하시오.
-
-${text}
-
-[문제]
-다음 글의 내용을 아래와 같이 요약하고자 한다. 빈칸 (A), (B), (C)에 들어갈 말로 가장 적절한 것을 본문에서 찾아서 그대로 쓰시오.
+다음 글의 내용을 요약하여 빈칸을 완성하시오.
 
 [요약문]
 (A) ______ ______ 와/과 (B) ______ ______ ______ 는/은 (C) ______ ______ ______ 하다.
 
 [정답]
-(A) [2단어]
-(B) [3단어]
-(C) [3단어]
+(A) [2-3단어]
+(B) [2-3단어]
+(C) [2-3단어]
 
 [해설]
 (A) [빈칸에 들어갈 표현이 정답인 이유와 본문에서의 맥락 설명]
