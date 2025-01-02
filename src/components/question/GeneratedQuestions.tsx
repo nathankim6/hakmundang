@@ -54,7 +54,6 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
   };
 
   const handleSaveToTxt = () => {
-    // Separate questions and answers
     const questionsText: string[] = [];
     const answersText: string[] = [];
 
@@ -63,35 +62,44 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
       const parts = content.split('[정답]');
       
       if (parts.length > 1) {
-        // Add question number and question part
+        // Add question part
         questionsText.push(`문제 ${index + 1}\n${parts[0].trim()}\n`);
-        // Add answer number and answer part (simplified title)
-        answersText.push(`문제 ${index + 1}\n${parts[1].trim()}\n`);
+        
+        // Process answer part
+        let answerPart = parts[1].trim();
+        
+        // Handle explanation part if exists
+        if (answerPart.includes('[해설]')) {
+          const [answer, explanation] = answerPart.split('[해설]');
+          answerPart = `[정답]${answer.trim()} [해설]${explanation.trim()}`;
+        } else {
+          answerPart = `[정답]${answerPart}`;
+        }
+        
+        answersText.push(`문제 ${index + 1}\n${answerPart}\n`);
       } else {
         // If no [정답] separator found, add entire content to questions
         questionsText.push(`문제 ${index + 1}\n${content.trim()}\n`);
       }
     });
 
-    // Create and download questions file
-    const questionsBlob = new Blob([questionsText.join('\n')], { type: 'text/plain;charset=utf-8' });
-    const questionsUrl = URL.createObjectURL(questionsBlob);
-    const questionsLink = document.createElement('a');
-    questionsLink.href = questionsUrl;
-    questionsLink.download = '문제.txt';
-    document.body.appendChild(questionsLink);
-    questionsLink.click();
-    document.body.removeChild(questionsLink);
+    // Combine questions and answers with a separator
+    const combinedText = [
+      "===== 문제 =====\n",
+      questionsText.join('\n'),
+      "\n===== 정답 =====\n",
+      answersText.join('\n')
+    ].join('');
 
-    // Create and download answers file
-    const answersBlob = new Blob([answersText.join('\n')], { type: 'text/plain;charset=utf-8' });
-    const answersUrl = URL.createObjectURL(answersBlob);
-    const answersLink = document.createElement('a');
-    answersLink.href = answersUrl;
-    answersLink.download = '정답.txt';
-    document.body.appendChild(answersLink);
-    answersLink.click();
-    document.body.removeChild(answersLink);
+    // Create and download combined file
+    const blob = new Blob([combinedText], { type: 'text/plain;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = '문제와정답.txt';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
