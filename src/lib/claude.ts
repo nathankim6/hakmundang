@@ -21,10 +21,6 @@ import {
   getLogicFlowPrompt,
   getWeekendClinicPrompt,
   getDictionaryPrompt,
-  getSummaryBlankPrompt,
-  getOrderWritingBasicPrompt,
-  getOrderWritingAdvancedPrompt,
-  getTopicWritingPrompt
 } from "./prompts";
 
 export const getQuestionTypes = () => [
@@ -52,12 +48,6 @@ export const getQuestionTypes = () => [
   { id: "sungReference", name: "[숭의여고] 지칭추론" },
   { id: "yeongExternal", name: "[영등포고] 외부지문" },
   { id: "dangDict", name: "[당곡고] 영영사전" },
-
-  // 서답형
-  { id: "orderWritingBasic", name: "배열영작(우리말O)" },
-  { id: "orderWritingAdvanced", name: "배열영작(우리말O)" },
-  { id: "summaryBlank", name: "요약문 빈칸완성" },
-  { id: "topicWriting", name: "주제문 영작" },
 
   // 옳은영어 콘텐츠
   { id: "synonymAntonym", name: "동의어/반의어" },
@@ -105,16 +95,8 @@ const getPromptForType = (type: QuestionType, text: string): string => {
       return getLogicFlowPrompt(text);
     case "weekendClinic":
       return getWeekendClinicPrompt(text);
-    case "orderWritingBasic":
-      return getOrderWritingBasicPrompt(text);
-    case "orderWritingAdvanced":
-      return getOrderWritingAdvancedPrompt(text);
     case "dangDict":
       return getDictionaryPrompt(text);
-    case "summaryBlank":
-      return getSummaryBlankPrompt(text);
-    case "topicWriting":
-      return getTopicWritingPrompt(text);
     default:
       return `Generate a question of type ${type.name} based on the following text: ${text}`;
   }

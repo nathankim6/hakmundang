@@ -22,11 +22,6 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
     type.id.match(/^(sungnamVocab|sungExternal|sungReference|yeongExternal|dangDict)/)
   );
   
-  // 서답형
-  const writingTypes = types.filter(type => 
-    type.id.match(/^(orderWritingBasic|orderWritingAdvanced|summaryBlank|topicWriting)$/)
-  );
-  
   // 옳은영어 콘텐츠
   const contentTypes = types.filter(type => 
     type.id.match(/^(synonymAntonym|trueOrFalse|logicFlow|sentenceSplitter|weekendClinic)$/)
@@ -60,13 +55,6 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
       <TypeCategory
         title="내신형"
         types={schoolTypes}
-        selectedTypes={selectedTypes}
-        hasAccess={hasAccess}
-        onTypeClick={handleTypeClick}
-      />
-      <TypeCategory
-        title="서답형"
-        types={writingTypes}
         selectedTypes={selectedTypes}
         hasAccess={hasAccess}
         onTypeClick={handleTypeClick}
