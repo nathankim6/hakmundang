@@ -26,10 +26,21 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
   });
 
   const hasVocabulary = sortedQuestions.some(
-    question => question.content.includes('| 표제어 |') || 
-                question.content.includes('동의어') || 
-                question.content.includes('반의어') ||
-                question.content.includes('vocabulary')
+    question => {
+      // Skip vocabulary button for special vocabulary types
+      if (
+        question.content.includes('[숭의성남] 어휘1') ||
+        question.content.includes('[숭의성남] 어휘2') ||
+        question.content.includes('[숭의성남] 어휘3')
+      ) {
+        return false;
+      }
+      
+      return question.content.includes('| 표제어 |') || 
+             question.content.includes('동의어') || 
+             question.content.includes('반의어') ||
+             question.content.includes('vocabulary');
+    }
   );
 
   const getAllVocabularyContent = () => {
