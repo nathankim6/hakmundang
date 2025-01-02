@@ -1,31 +1,7 @@
 import { QuestionType } from "@/types/question";
 import { Anthropic } from "@anthropic-ai/sdk";
 import OpenAI from "openai";
-import { 
-  getPurposePrompt, 
-  getClaimPrompt, 
-  getImplicationPrompt, 
-  getMoodPrompt,
-  getMainPointPrompt,
-  getTopicPrompt,
-  getTitlePrompt,
-  getVocabularyPrompt,
-  getBlankPrompt,
-  getBlankMultiplePrompt,
-  getIrrelevantPrompt,
-  getOrderPrompt,
-  getInsertPrompt,
-  getSummaryPrompt,
-  getTrueOrFalsePrompt,
-  getSynonymAntonymPrompt,
-  getLogicFlowPrompt,
-  getWeekendClinicPrompt,
-  getDictionaryPrompt,
-  getSummaryBlankPrompt,
-  getOrderWritingBasicPrompt,
-  getOrderWritingAdvancedPrompt,
-  getTopicWritingPrompt
-} from "./prompts";
+import { getPromptForType } from "./questionTypes";
 
 export const getQuestionTypes = () => [
   // 수능형
@@ -79,80 +55,7 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
       throw new Error("API key not found. Please enter your API key in the settings.");
     }
 
-    let prompt = "";
-    switch (type.id) {
-      case "purpose":
-        prompt = getPurposePrompt(text);
-        break;
-      case "claim":
-        prompt = getClaimPrompt(text);
-        break;
-      case "implication":
-        prompt = getImplicationPrompt(text);
-        break;
-      case "mood":
-        prompt = getMoodPrompt(text);
-        break;
-      case "mainPoint":
-        prompt = getMainPointPrompt(text);
-        break;
-      case "topic":
-        prompt = getTopicPrompt(text);
-        break;
-      case "title":
-        prompt = getTitlePrompt(text);
-        break;
-      case "vocabulary":
-        prompt = getVocabularyPrompt(text);
-        break;
-      case "blank":
-        prompt = getBlankPrompt(text);
-        break;
-      case "blankMultiple":
-        prompt = getBlankMultiplePrompt(text);
-        break;
-      case "irrelevant":
-        prompt = getIrrelevantPrompt(text);
-        break;
-      case "order":
-        prompt = getOrderPrompt(text);
-        break;
-      case "insert":
-        prompt = getInsertPrompt(text);
-        break;
-      case "summary":
-        prompt = getSummaryPrompt(text);
-        break;
-      case "trueOrFalse":
-        prompt = getTrueOrFalsePrompt(text);
-        break;
-      case "synonymAntonym":
-        prompt = getSynonymAntonymPrompt(text);
-        break;
-      case "logicFlow":
-        prompt = getLogicFlowPrompt(text);
-        break;
-      case "weekendClinic":
-        prompt = getWeekendClinicPrompt(text);
-        break;
-      case "orderWritingBasic":
-        prompt = getOrderWritingBasicPrompt(text);
-        break;
-      case "orderWritingAdvanced":
-        prompt = getOrderWritingAdvancedPrompt(text);
-        break;
-      case "dangDict":
-        prompt = getDictionaryPrompt(text);
-        break;
-      case "summaryBlank":
-        prompt = getSummaryBlankPrompt(text);
-        break;
-      case "topicWriting":
-        prompt = getTopicWritingPrompt(text);
-        break;
-      default:
-        prompt = `Generate a question of type ${type.name} based on the following text: ${text}`;
-    }
+    const prompt = getPromptForType(type, text);
 
     if (useClaudeApi) {
       const client = new Anthropic({

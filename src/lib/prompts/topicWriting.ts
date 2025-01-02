@@ -1,37 +1,67 @@
 export const getTopicWritingPrompt = (text: string) => `당신은 영어 지문을 입력받아 영어 서답형 문제와 한국어 해설을 만드는 수능영어 전문가입니다. 다음 규칙과 예시에 따라 문제를 만들어주세요:
 
-1. 문제 형식
-   - 문제 유형: "다음 글의 주제를 영어로 쓰시오."
-   - 지문은 원문 영어 텍스트를 그대로 사용
-   - 정답은 영어로 작성된 주제문
-
-2. 주제문 작성 규칙
-   - 명사구 또는 동명사구 형태로 작성
-   - 글의 핵심 내용을 정확하게 요약
-   - 간결하고 명확하게 표현
-   - 불필요한 관사나 수식어 제외
-
-3. 출력 형식
-   - 문제 제시: "다음 글의 주제를 영어로 쓰시오."
-   - 원문 지문 제시
-   - 정답 표시
-   - 한국어 해설 제시 (정답 설명 및 주제문 선정 이유)
-
-예시:
 [INPUT]
-다음 글의 주제를 영어로 쓰시오.
+${text}
 
-The arrival of the Industrial Age changed the relationship among time, labor, and capital. Factories could produce around the clock, and they could do so with greater speed and volume than ever before. A machine that runs twelve hours a day will produce more widgets than one that runs for only eight hours per day — and a machine that runs twenty-four hours per day will produce the most widgets of all. As such, at many factories, the workday is divided into eight-hour shifts, so that there will always be people on hand to keep the widget machines humming. Industrialization raised the potential value of every single work hour — the more hours you worked, the more widgets you produced, and the more money you made — and thus wages became tied to effort and production. Labor, previously guided by harvest cycles, became clock-oriented, and society started to reorganize around new principles of productivity.
+# 입력 형식 분석
+1. 핵심 주제 파악
+   - 지문의 주요 논점 식별
+   - 중심 개념과 관련 개념 구분
+   - 논리적 관계와 인과 관계 파악
+
+2. 텍스트 구조 분석
+   - 길이와 복잡도 평가
+   - 사용된 주요 용어와 개념 추출
+   - 문장 구조와 논리 전개 방식 파악
+
+# 문제 생성 절차
+1. 단어 수 결정
+   - 200단어 미만 → 10단어
+   - 200-300단어 → 12단어
+   - 300단어 이상 → 14단어
+
+2. 단어 선택 기준
+   필수 포함:
+   - 핵심 명사 (2-3개)
+   - 주요 동사 (1-2개)
+   - 형용사 (1-2개)
+   - 전치사/접속사 (2-3개)
+   - 부사 (0-1개, 필요시)
+
+3. 정답 문장 요구사항
+   - 지문의 핵심을 정확하게 요약
+   - 모든 제시어를 정확히 한번씩 사용
+   - 문법적으로 완벽한 영어 문장
+   - 자연스러운 어순과 표현
+
+# 품질 검증
+1. 단어 선택
+   - 모든 필수 품사 포함
+   - 지문 내용과 관련성
+   - 난이도 적절성
+
+2. 정답 문장
+   - 정확한 단어 수
+   - 모든 제시어 사용
+   - 문법적 정확성
+   - 내용의 타당성
+
+3. 전체 구성
+   - 지시문의 명확성
+   - 형식적 완결성
+   - 난이도의 적절성
 
 [OUTPUT]
-다음 글의 주제를 영어로 쓰시오.
+다음 글을 읽고, 주제문을 주어진 조건에 맞게 완성하시오.
 
 ${text}
 
-[정답] transformation of labor patterns due to industrialization
+[조건]
+1) {단어 수}단어로 빈칸을 완성하시오.
+2) 다음 단어를 한 번씩 사용하여 배열하시오.
+    {선택된 단어들을 / 로 구분하여 나열}
 
-[해설] 이 글은 산업화로 인해 노동 패턴이 어떻게 변화했는지를 설명하고 있습니다. 24시간 가동되는 공장 시스템의 도입으로 노동 시간의 가치가 높아졌고, 수확 주기에 맞춰져 있던 노동이 시계 중심으로 바뀌었으며, 사회가 생산성 원칙을 중심으로 재편되었다는 내용을 'transformation of labor patterns due to industrialization'이라는 명사구 형태로 표현했습니다.
+주제문: __________________________________________.
 
-위의 예시와 같은 형식으로 다음 지문에 대한 주제문 영작 문제를 생성해주세요:
-
-${text}`;
+[정답]
+{정답 문장}`;
