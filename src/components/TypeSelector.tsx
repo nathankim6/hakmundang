@@ -24,7 +24,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
   
   // 서답형
   const writingTypes = types.filter(type => 
-    type.id.match(/^(orderWritingBasic|orderWritingAdvanced|summaryBlank)$/)
+    type.id.match(/^(orderWritingBasic|orderWritingAdvanced|summaryBlank|topicWriting)$/)
   );
   
   // 옳은영어 콘텐츠
