@@ -43,6 +43,25 @@ export const TypeEntry = ({
 
   // Check if this is the sentence matcher type
   const isSentenceMatcher = type.id === "sentenceSplitter";
+  
+  // Check if this is one of the special vocabulary types
+  const isSpecialVocabType = [
+    "sungnamVocab1",
+    "sungnamVocab2",
+    "sungnamVocab3"
+  ].includes(type.id);
+
+  // Modified paste handler for special vocabulary types
+  const handlePaste = (typeId: string, passageId: string, values: string[]) => {
+    if (isSpecialVocabType) {
+      // For special vocab types, join all values with newlines
+      const combinedText = values.join('\n');
+      onTextChange(typeId, passageId, combinedText);
+    } else {
+      // For other types, use the original paste behavior
+      onPasteValues(typeId, passageId, values);
+    }
+  };
 
   if (isSentenceMatcher) {
     return (
@@ -98,23 +117,25 @@ export const TypeEntry = ({
             <TextInput 
               value={passage.text} 
               onChange={(text) => onTextChange(type.id, passage.id, text)}
-              onEnterPress={() => onAddPassage(type.id)}
-              onPaste={(values) => onPasteValues(type.id, passage.id, values)}
+              onEnterPress={() => !isSpecialVocabType && onAddPassage(type.id)}
+              onPaste={(values) => handlePaste(type.id, passage.id, values)}
             />
           </div>
         ))}
       </div>
       
-      <div className="flex gap-2">
-        <Button
-          variant="outline"
-          onClick={() => onAddPassage(type.id)}
-          className="w-full"
-        >
-          <Plus className="w-4 h-4 mr-2" />
-          지문 추가하기
-        </Button>
-      </div>
+      {!isSpecialVocabType && (
+        <div className="flex gap-2">
+          <Button
+            variant="outline"
+            onClick={() => onAddPassage(type.id)}
+            className="w-full"
+          >
+            <Plus className="w-4 h-4 mr-2" />
+            지문 추가하기
+          </Button>
+        </div>
+      )}
     </div>
   );
 };
