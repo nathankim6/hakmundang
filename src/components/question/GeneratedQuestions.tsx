@@ -18,7 +18,6 @@ interface GeneratedQuestionsProps {
 export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
   const [isVocabModalOpen, setIsVocabModalOpen] = useState(false);
   
-  // Sort questions by their content to maintain consistency
   const sortedQuestions = [...questions].sort((a, b) => {
     if (!a.content && !b.content) return 0;
     if (!a.content) return 1;
@@ -26,7 +25,6 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
     return a.questionNumber - b.questionNumber;
   });
 
-  // Check if any questions are vocabulary or synonym/antonym type
   const hasVocabulary = sortedQuestions.some(
     question => question.content.includes('| 표제어 |') || 
                 question.content.includes('동의어') || 
@@ -34,7 +32,6 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
                 question.content.includes('vocabulary')
   );
 
-  // Combine all vocabulary content with question numbers
   const getAllVocabularyContent = () => {
     const vocabQuestions = sortedQuestions
       .filter(question => 
@@ -68,11 +65,14 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
         // Process answer part
         let answerPart = parts[1].trim();
         
-        // Handle explanation part if exists
-        if (answerPart.includes('[해설]')) {
-          const [answer, explanation] = answerPart.split('[해설]');
-          answerPart = `[정답]${answer.trim()} [해설]${explanation.trim()}`;
-        } else {
+        // Combine explanation sections if they exist
+        answerPart = answerPart
+          .replace(/2\s*정답\s*설명/, '[해설]')
+          .replace(/3\.\s*오답\s*설명/, '')
+          .replace(/\[해설\].*?\[해설\]/g, '[해설]');
+        
+        // If no [해설] tag exists, add it for consistency
+        if (!answerPart.includes('[해설]')) {
           answerPart = `[정답]${answerPart}`;
         }
         
