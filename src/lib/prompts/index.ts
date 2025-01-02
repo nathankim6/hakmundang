@@ -20,3 +20,4 @@ export * from './dictionary';
 export * from './summaryBlank';
 export * from './orderWriting';
 export * from './topicWriting';
+export * from './sungnamVocab1';

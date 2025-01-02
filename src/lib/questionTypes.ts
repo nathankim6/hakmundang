@@ -21,7 +21,8 @@ import {
   getDictionaryPrompt,
   getSummaryBlankPrompt,
   getOrderWritingPrompt,
-  getTopicWritingPrompt
+  getTopicWritingPrompt,
+  getSungnamVocab1Prompt
 } from "./prompts";
 
 export const getPromptForType = (type: QuestionType, text: string): string => {
@@ -70,6 +71,8 @@ export const getPromptForType = (type: QuestionType, text: string): string => {
       return getSummaryBlankPrompt(text);
     case "topicWriting":
       return getTopicWritingPrompt(text);
+    case "sungnamVocab1":
+      return getSungnamVocab1Prompt(text);
     default:
       return `Generate a question of type ${type.name} based on the following text: ${text}`;
   }
