@@ -25,24 +25,6 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
     return a.questionNumber - b.questionNumber;
   });
 
-  const hasVocabulary = sortedQuestions.some(
-    question => {
-      // Skip vocabulary button for special vocabulary types
-      if (
-        question.content.includes('[숭의성남] 어휘1') ||
-        question.content.includes('[숭의성남] 어휘2') ||
-        question.content.includes('[숭의성남] 어휘3')
-      ) {
-        return false;
-      }
-      
-      return question.content.includes('| 표제어 |') || 
-             question.content.includes('동의어') || 
-             question.content.includes('반의어') ||
-             question.content.includes('vocabulary');
-    }
-  );
-
   const getAllVocabularyContent = () => {
     const vocabQuestions = sortedQuestions
       .filter(question => 
@@ -126,19 +108,6 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
           showVocabButton={false}
         />
       ))}
-      
-      {hasVocabulary && (
-        <div className="flex justify-center mt-8">
-          <Button
-            variant="outline"
-            onClick={() => setIsVocabModalOpen(true)}
-            className="text-[#9b87f5] hover:text-[#7E69AB] border-[#9b87f5] hover:border-[#7E69AB]"
-          >
-            <Book className="w-4 h-4 mr-2" />
-            단어장 생성
-          </Button>
-        </div>
-      )}
 
       {sortedQuestions.length > 0 && (
         <div className="flex justify-center mt-8">
