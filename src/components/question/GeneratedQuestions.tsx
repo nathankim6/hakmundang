@@ -65,8 +65,8 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
       if (parts.length > 1) {
         // Add question number and question part
         questionsText.push(`문제 ${index + 1}\n${parts[0].trim()}\n`);
-        // Add answer number and answer part
-        answersText.push(`문제 ${index + 1} 정답 및 해설\n[정답]${parts[1].trim()}\n`);
+        // Add answer number and answer part (simplified title)
+        answersText.push(`문제 ${index + 1}\n${parts[1].trim()}\n`);
       } else {
         // If no [정답] separator found, add entire content to questions
         questionsText.push(`문제 ${index + 1}\n${content.trim()}\n`);
@@ -88,7 +88,7 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
     const answersUrl = URL.createObjectURL(answersBlob);
     const answersLink = document.createElement('a');
     answersLink.href = answersUrl;
-    answersLink.download = '정답및해설.txt';
+    answersLink.download = '정답.txt';
     document.body.appendChild(answersLink);
     answersLink.click();
     document.body.removeChild(answersLink);
