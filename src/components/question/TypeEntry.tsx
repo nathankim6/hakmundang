@@ -46,9 +46,9 @@ export const TypeEntry = ({
 
   if (isSentenceMatcher) {
     return (
-      <div className="space-y-6 p-6 rounded-lg border-2 border-[#0EA5E9]/20 relative bg-[#F0F9FF]">
+      <div className="space-y-6 p-6 rounded-lg border-2 border-[#9b87f5]/20 relative bg-[#F8F7FF]">
         <div className="flex items-center justify-between">
-          <h3 className="text-xl font-bold text-[#0EA5E9]">{type.name}</h3>
+          <h3 className="text-xl font-bold text-[#7E69AB]">{type.name}</h3>
           <Button
             variant="ghost"
             size="sm"
@@ -65,9 +65,9 @@ export const TypeEntry = ({
   }
 
   return (
-    <div className="space-y-6 p-6 rounded-lg border-2 border-[#0EA5E9]/20 relative bg-[#F0F9FF]">
+    <div className="space-y-6 p-6 rounded-lg border-2 border-[#9b87f5]/20 relative bg-[#F8F7FF]">
       <div className="flex items-center justify-between">
-        <h3 className="text-xl font-bold text-[#0EA5E9]">{type.name}</h3>
+        <h3 className="text-xl font-bold text-[#7E69AB]">{type.name}</h3>
         <Button
           variant="ghost"
           size="sm"
@@ -109,7 +109,7 @@ export const TypeEntry = ({
         <Button
           variant="outline"
           onClick={() => onAddPassage(type.id)}
-          className="w-full hover:bg-[#0EA5E9]/5"
+          className="w-full"
         >
           <Plus className="w-4 h-4 mr-2" />
           지문 추가하기
