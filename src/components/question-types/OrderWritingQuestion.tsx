@@ -17,6 +17,14 @@ export const OrderWritingQuestion = ({
     .filter(line => line.trim())
     .join('\n');
 
+  // Extract Korean text from questionPart
+  const koreanText = questionPart.match(/\[우리말\]\s*(.*?)(?=\s*\[단어\]|\s*$)/s)?.[1]?.trim() || '';
+
+  // Remove the original English text and Korean text section, keeping only the question framework
+  const cleanedQuestionPart = questionPart
+    .replace(/\[우리말\].*?(?=\[단어\]|\s*$)/s, '')
+    .replace(/^(.*?)\n/, '$1\n\n' + koreanText + '\n');
+
   return (
     <Card className="mb-6">
       <CardContent className="pt-6">
@@ -28,7 +36,7 @@ export const OrderWritingQuestion = ({
 
           {/* Question Section */}
           <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F1F0FB] p-4 rounded-lg border border-[#D3E4FD]/30">
-            {questionPart}
+            {cleanedQuestionPart}
           </div>
           
           {/* Answer Section */}
