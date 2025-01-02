@@ -1,7 +1,29 @@
 import { QuestionType } from "@/types/question";
-import { Anthropic } from "@anthropic-ai/sdk";
-import OpenAI from "openai";
-import { getPromptForType } from "./questionTypes";
+import {
+  getPurposePrompt,
+  getClaimPrompt,
+  getImplicationPrompt,
+  getMoodPrompt,
+  getMainPointPrompt,
+  getTopicPrompt,
+  getTitlePrompt,
+  getVocabularyPrompt,
+  getBlankPrompt,
+  getBlankMultiplePrompt,
+  getIrrelevantPrompt,
+  getOrderPrompt,
+  getInsertPrompt,
+  getSummaryPrompt,
+  getTrueOrFalsePrompt,
+  getSynonymAntonymPrompt,
+  getLogicFlowPrompt,
+  getWeekendClinicPrompt,
+  getDictionaryPrompt,
+  getSummaryBlankPrompt,
+  getOrderWritingBasicPrompt,
+  getOrderWritingAdvancedPrompt,
+  getTopicWritingPrompt
+} from "./prompts";
 
 export const getQuestionTypes = () => [
   // 수능형
@@ -30,8 +52,8 @@ export const getQuestionTypes = () => [
   { id: "dangDict", name: "[당곡고] 영영사전" },
 
   // 서답형
-  { id: "orderWritingBasic", name: "배열영작(우리말O,어형변화X)" },
-  { id: "orderWritingAdvanced", name: "배열영작(우리말O,어형변화O)" },
+  { id: "orderWritingBasic", name: "배열영작(우리말O)" },
+  { id: "orderWritingAdvanced", name: "배열영작(우리말O)" },
   { id: "summaryBlank", name: "요약문 빈칸완성" },
   { id: "topicWriting", name: "주제문 영작" },
 

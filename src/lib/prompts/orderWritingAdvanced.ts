@@ -1,29 +1,40 @@
-export const getOrderWritingAdvancedPrompt = (text: string) => `Create English sentence arrangement questions following this format:
+export const getOrderWritingAdvancedPrompt = (text: string) => `
+You are an expert at creating sentence completion questions based on English texts.
 
 [INPUT]
 ${text}
 
+Please generate a question following these rules:
+
+1. Select a key sentence from the text that:
+   - Contains core content
+   - Can be completed independently
+   - Has contextual significance
+
+2. Mark the blank with exactly 23 underscores (_) with spaces before and after
+
+3. Present words:
+   - Use words exactly as they appear in the original sentence
+   - Present them in order of appearance
+   - No modifications to parts of speech or form
+
+4. Answer:
+   - Use the original sentence exactly
+   - Use each given word exactly once
+   - Maintain the original meaning
+
+The output must follow this exact format:
+
 [OUTPUT]
-[서답형] 다음 글을 읽고, 물음에 답하시오.
+다음 글을 읽고, 빈칸을 주어진 조건에 맞게 완성하시오.
 
-${text}
+[Selected text with blank marked by 23 underscores]
 
-[문제]
-주어진 단어들을 바르게 배열하여 우리말과 같은 의미가 되도록 영작하시오.
-(단, 단어의 형태를 필요에 따라 적절히 변형하시오.)
-
-[우리말]
-{Write a Korean sentence that captures a key idea from the text}
-
-[단어]
-{List 6-8 key words from the passage in their base form, separated by / }
+[조건]
+1) [N]단어로 빈칸을 완성하시오.
+2) 다음 단어를 한 번씩 사용하여 배열하시오.
+    [Words from the original sentence in order of appearance]
 
 [정답]
-{Write ONE grammatically correct English sentence that matches the Korean meaning, using ALL given words with appropriate form changes}
-
-[해설]
-1. 주어진 단어의 형태 변화:
-{List each word that was changed and explain why - e.g., verb tense, plural form, etc.}
-
-2. 문장 구조 설명:
-{Explain the sentence structure and how it matches the Korean meaning}`;
+[Original sentence]
+`;
