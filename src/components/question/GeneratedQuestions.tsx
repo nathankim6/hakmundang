@@ -62,20 +62,22 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
         // Add question part
         questionsText.push(`문제 ${index + 1}\n${parts[0].trim()}\n`);
         
-        // Process answer part
+        // Process answer part while preserving format
         let answerPart = parts[1].trim();
         
-        // Combine explanation sections if they exist
+        // Replace explanation sections with [해설] tag
         answerPart = answerPart
           .replace(/2\s*정답\s*설명/, '[해설]')
           .replace(/3\.\s*오답\s*설명/, '')
-          .replace(/\[해설\].*?\[해설\]/g, '[해설]');
+          .replace(/\[해설\].*?\[해설\]/g, '[해설]')
+          .trim();
         
-        // If no [해설] tag exists, add it for consistency
-        if (!answerPart.includes('[해설]')) {
-          answerPart = `[정답]${answerPart}`;
+        // Add [정답] prefix if not present
+        if (!answerPart.startsWith('[정답]')) {
+          answerPart = `[정답] ${answerPart}`;
         }
         
+        // Add to answers text while preserving format
         answersText.push(`문제 ${index + 1}\n${answerPart}\n`);
       } else {
         // If no [정답] separator found, add entire content to questions
@@ -91,7 +93,7 @@ export const GeneratedQuestions = ({ questions }: GeneratedQuestionsProps) => {
       answersText.join('\n')
     ].join('');
 
-    // Create and download combined file
+    // Create and download file
     const blob = new Blob([combinedText], { type: 'text/plain;charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
