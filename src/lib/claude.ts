@@ -22,7 +22,6 @@ import {
   getWeekendClinicPrompt,
   getDictionaryPrompt,
   getOrderWritingPrompt,
-  getConditionWritingPrompt,
   getSummaryBlankPrompt,
   getTopicWritingPrompt,
 } from "./prompts";
@@ -105,6 +104,12 @@ const getPromptForType = (type: QuestionType, text: string): string => {
       return getLogicFlowPrompt(text);
     case "weekendClinic":
       return getWeekendClinicPrompt(text);
+    case "orderWriting":
+      return getOrderWritingPrompt(text);
+    case "summaryBlank":
+      return getSummaryBlankPrompt(text);
+    case "topicWriting":
+      return getTopicWritingPrompt(text);
     case "dangDict":
       return getDictionaryPrompt(text);
     default:

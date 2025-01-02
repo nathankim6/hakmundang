@@ -10,13 +10,18 @@ Please generate a question following these rules:
    - Contains core content
    - Can be completed independently
    - Has contextual significance
+   - Is approximately 12 words long
 
-2. Present words:
-   - Use words exactly as they appear in the original sentence
-   - Present them in order of appearance
+2. Create a blank in the sentence by:
+   - Identifying a complete phrase or clause that can be reconstructed from given words
+   - Marking the blank with exactly 23 underscores (___)
+
+3. Present words:
+   - Use exactly 12 words from the original sentence
+   - Present them in scrambled order, separated by /
    - No modifications to parts of speech or form
 
-3. Answer:
+4. Answer:
    - Use the original sentence exactly
    - Use each given word exactly once
    - Maintain the original meaning
@@ -24,13 +29,14 @@ Please generate a question following these rules:
 The output must follow this exact format:
 
 [OUTPUT]
-다음 글을 읽고, 주어진 단어들을 바르게 배열하여 문장을 완성하시오.
+다음 글을 읽고, 빈칸을 주어진 조건에 맞게 완성하시오.
 
-[단어]
-{Take all words from the answer sentence and scramble them, separated by /}
+[Selected text with blank marked by 23 underscores]
+
+[조건]
+1) 12단어로 빈칸을 완성하시오.
+2) 다음 단어를 한 번씩 사용하여 배열하시오.
+    [12 words from the original sentence, separated by /]
 
 [정답]
-{Write the original sentence from the text}
-
-[해설]
-{Explain how the words were arranged to form a grammatically correct sentence that captures the main idea of the text}`;
+[Original sentence that fits in the blank]`;

@@ -18,6 +18,5 @@ export * from './synonymAntonym';
 export * from './logicFlow';
 export * from './dictionary';
 export * from './summaryBlank';
-export * from './orderWritingBasic';
-export * from './orderWritingAdvanced';
+export * from './orderWriting';
 export * from './topicWriting';
