@@ -31,6 +31,10 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
       window.open("https://chatgpt.com/g/g-rGMRYG1t6-sungyiyeogo-dongbanyieo/c/6779edff-5f3c-8000-812f-731f071bbb99", "_blank");
       return;
     }
+    if (type.id === "sungnamVocab2") {
+      window.open("https://chatgpt.com/g/g-pjnh7FMaA-sungyiyeogo-yemun/c/6779eeb6-c030-8000-8deb-46cee384031a", "_blank");
+      return;
+    }
     onClick();
   };
 
@@ -64,13 +68,13 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
             className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"
           />
         )}
-        {!isSelected && hasAccess && type.id !== "dangDict" && type.id !== "summaryBlank" && type.id !== "sungReference" && type.id !== "sungExternal" && type.id !== "sungnamVocab1" && (
+        {!isSelected && hasAccess && type.id !== "dangDict" && type.id !== "summaryBlank" && type.id !== "sungReference" && type.id !== "sungExternal" && type.id !== "sungnamVocab1" && type.id !== "sungnamVocab2" && (
           <Sparkles 
             className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-[#FFD700] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             style={{ filter: 'drop-shadow(0 0 2px rgba(255, 215, 0, 0.5))' }}
           />
         )}
-        {isSelected && hasAccess && type.id !== "dangDict" && type.id !== "summaryBlank" && type.id !== "sungReference" && type.id !== "sungExternal" && type.id !== "sungnamVocab1" && (
+        {isSelected && hasAccess && type.id !== "dangDict" && type.id !== "summaryBlank" && type.id !== "sungReference" && type.id !== "sungExternal" && type.id !== "sungnamVocab1" && type.id !== "sungnamVocab2" && (
           <Check className="w-4 h-4 text-[#0EA5E9] animate-bounce" />
         )}
         <span className="flex-1">{type.name}</span>
