@@ -1,4 +1,4 @@
-import { Check, Sparkles, Lock, ExternalLink } from "lucide-react";
+import { Check, Sparkles, Lock } from "lucide-react";
 import { QuestionType } from "@/types/question";
 
 interface TypeButtonProps {
@@ -52,11 +52,6 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
           <Sparkles 
             className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-[#FFD700] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             style={{ filter: 'drop-shadow(0 0 2px rgba(255, 215, 0, 0.5))' }}
-          />
-        )}
-        {type.id === "dangDict" && (
-          <ExternalLink 
-            className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-blue-500"
           />
         )}
         {isSelected && hasAccess && type.id !== "dangDict" && (
