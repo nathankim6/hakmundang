@@ -20,7 +20,7 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
       return;
     }
     if (type.id === "sungReference") {
-      window.open("https://chatgpt.com/gpts/editor/g-674a7a15d3348191b9ff6a9c1763a21a", "_blank");
+      window.open("https://chatgpt.com/gpts/editor/g-6779f42e26208191bcbfffeedd80d875", "_blank");
       return;
     }
     if (type.id === "sungExternal") {
