@@ -1,12 +1,20 @@
-export const getTopicWritingPrompt = (text: string) => `다음 글의 주제문을 우리말로 주어진 단어들을 순서대로 배열하여 영작하시오.
+export const getTopicWritingPrompt = (text: string) => `[INPUT]
+${text}
+
+[OUTPUT]
+다음 글을 읽고, 물음에 답하시오.
 
 ${text}
 
+[문제]
+다음 글의 주제문을 우리말로 주어진 단어들을 순서대로 배열하여 영작하시오.
+(단, 단어의 형태는 변형하지 마시오.)
+
 [우리말]
-(본문의 주제를 담은 한국어 문장)
+{Write a Korean translation of the topic sentence}
 
 [단어]
-(본문에서 사용된 단어들을 / 로 구분하여 나열)
+{Take all words from the topic sentence and scramble them, separated by /}
 
 [정답]
-(주어진 단어들을 순서대로 배열한 영어 문장)`;
+{Write ONE grammatically correct English sentence that matches the Korean translation}`;
