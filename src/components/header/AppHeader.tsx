@@ -2,16 +2,16 @@ import React from 'react';
 
 export const AppHeader = () => {
   return (
-    <div className="flex items-center justify-center space-x-6 p-8 rounded-2xl bg-gradient-to-r from-[#F1F0FB]/90 via-[#E5DEFF]/80 to-[#F1F0FB]/90 shadow-lg border border-[#9b87f5]/20 backdrop-blur-sm relative overflow-hidden">
+    <div className="flex items-center justify-center space-x-6 p-8 rounded-2xl bg-gradient-to-r from-[#E5F6FF]/90 via-[#F0FAFF]/80 to-[#E5F6FF]/90 shadow-lg border border-[#38BDF8]/20 backdrop-blur-sm relative overflow-hidden">
       {/* Sophisticated gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#4C1D95]/30 via-[#6D28D9]/25 to-[#7C3AED]/20 opacity-90 animate-gradient"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-[#0EA5E9]/20 via-[#38BDF8]/15 to-[#7DD3FC]/10 opacity-90 animate-gradient"></div>
       
       {/* Enhanced radial gradient */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(214,188,250,0.2),transparent_70%)] mix-blend-overlay"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(186,230,253,0.2),transparent_70%)] mix-blend-overlay"></div>
       
       {/* Logo container with refined styling */}
-      <div className="group w-28 h-28 rounded-full bg-gradient-to-br from-[#F1F0FB] via-white to-[#E5DEFF] flex items-center justify-center relative z-10 border border-[#9b87f5]/30 shadow-[0_8px_32px_-8px_rgba(155,135,245,0.3)] transition-all duration-1000 hover:shadow-[0_12px_36px_-8px_rgba(155,135,245,0.4)] hover:scale-105">
-        <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#9b87f5]/10 via-transparent to-[#7E69AB]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
+      <div className="group w-28 h-28 rounded-full bg-gradient-to-br from-[#F0FAFF] via-white to-[#E5F6FF] flex items-center justify-center relative z-10 border border-[#38BDF8]/30 shadow-[0_8px_32px_-8px_rgba(56,189,248,0.3)] transition-all duration-1000 hover:shadow-[0_12px_36px_-8px_rgba(56,189,248,0.4)] hover:scale-105">
+        <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#38BDF8]/10 via-transparent to-[#7DD3FC]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
         <div className="absolute inset-0 rounded-full shadow-inner"></div>
         <img 
           src="/lovable-uploads/352a49ca-b123-4f07-992a-cf59e4b7058a.png" 
@@ -32,10 +32,10 @@ export const AppHeader = () => {
       </div>
 
       {/* Refined border gradients */}
-      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#9b87f5]/20 to-transparent"></div>
-      <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#9b87f5]/20 to-transparent"></div>
-      <div className="absolute left-0 top-0 h-full w-px bg-gradient-to-b from-transparent via-[#9b87f5]/20 to-transparent"></div>
-      <div className="absolute right-0 top-0 h-full w-px bg-gradient-to-b from-transparent via-[#9b87f5]/20 to-transparent"></div>
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#38BDF8]/20 to-transparent"></div>
+      <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#38BDF8]/20 to-transparent"></div>
+      <div className="absolute left-0 top-0 h-full w-px bg-gradient-to-b from-transparent via-[#38BDF8]/20 to-transparent"></div>
+      <div className="absolute right-0 top-0 h-full w-px bg-gradient-to-b from-transparent via-[#38BDF8]/20 to-transparent"></div>
     </div>
   );
 };
