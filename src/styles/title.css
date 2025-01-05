@@ -8,11 +8,11 @@
   background: linear-gradient(
     90deg,
     #2a2a2a 0%,
-    #4a4a4a 20%,
-    #727272 40%,
-    #919191 50%,
-    #727272 60%,
-    #4a4a4a 80%,
+    #3a3a3a 20%,
+    #4a4a4a 40%,
+    #5a5a5a 50%,
+    #4a4a4a 60%,
+    #3a3a3a 80%,
     #2a2a2a 100%
   );
   background-size: 200% auto;
@@ -23,7 +23,7 @@
   position: relative;
   font-weight: 900;
   letter-spacing: 3px;
-  animation: shine 12s linear infinite;
+  animation: shine 16s linear infinite;
   text-shadow: 
     0 0 1px rgba(255, 255, 255, 0.1),
     0 0 2px rgba(255, 255, 255, 0.2),
@@ -40,12 +40,12 @@
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0.6) 50%,
     transparent 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
-  animation: glassShine 8s ease-in-out infinite;
+  animation: glassShine 12s ease-in-out infinite;
   filter: blur(0.3px);
 }
 
@@ -63,11 +63,11 @@
     background-position: -200% 0;
     opacity: 0;
   }
-  40% {
-    opacity: 0.8;
+  45% {
+    opacity: 0.5;
   }
-  60% {
-    opacity: 0.8;
+  55% {
+    opacity: 0.5;
   }
   100% {
     background-position: 200% 0;
@@ -81,28 +81,28 @@
   height: 100%;
   pointer-events: none;
   background-image: 
-    radial-gradient(2px 2px at 20px 30px, rgba(255, 255, 255, 0.9) 0%, transparent 100%),
-    radial-gradient(2px 2px at 40px 70px, rgba(255, 255, 255, 0.8) 0%, transparent 100%),
-    radial-gradient(2px 2px at 50px 160px, rgba(255, 255, 255, 0.9) 0%, transparent 100%),
-    radial-gradient(2px 2px at 90px 40px, rgba(255, 255, 255, 0.8) 0%, transparent 100%),
-    radial-gradient(2px 2px at 130px 80px, rgba(255, 255, 255, 0.9) 0%, transparent 100%),
-    radial-gradient(2px 2px at 160px 120px, rgba(255, 255, 255, 0.8) 0%, transparent 100%);
+    radial-gradient(2px 2px at 20px 30px, rgba(255, 255, 255, 0.7) 0%, transparent 100%),
+    radial-gradient(2px 2px at 40px 70px, rgba(255, 255, 255, 0.6) 0%, transparent 100%),
+    radial-gradient(2px 2px at 50px 160px, rgba(255, 255, 255, 0.7) 0%, transparent 100%),
+    radial-gradient(2px 2px at 90px 40px, rgba(255, 255, 255, 0.6) 0%, transparent 100%),
+    radial-gradient(2px 2px at 130px 80px, rgba(255, 255, 255, 0.7) 0%, transparent 100%),
+    radial-gradient(2px 2px at 160px 120px, rgba(255, 255, 255, 0.6) 0%, transparent 100%);
   background-repeat: repeat;
-  animation: sparkleFloat 8s linear infinite;
+  animation: sparkleFloat 12s linear infinite;
   mix-blend-mode: overlay;
 }
 
 @keyframes sparkleFloat {
   0% { 
     background-position: 0 0;
-    opacity: 0.5;
+    opacity: 0.3;
   }
   50% {
-    opacity: 0.8;
+    opacity: 0.5;
   }
   100% { 
     background-position: 100px 100px;
-    opacity: 0.5;
+    opacity: 0.3;
   }
 }
 
@@ -114,9 +114,9 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(156, 163, 175, 0.3),
-    rgba(209, 213, 219, 0.5),
-    rgba(156, 163, 175, 0.3),
+    rgba(156, 163, 175, 0.2),
+    rgba(209, 213, 219, 0.3),
+    rgba(156, 163, 175, 0.2),
     transparent
   );
   border-radius: 2px;
@@ -133,10 +133,10 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.4),
     transparent
   );
-  animation: shimmerBar 4s infinite;
+  animation: shimmerBar 6s infinite;
 }
 
 @keyframes shimmerBar {
