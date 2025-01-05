@@ -4,7 +4,7 @@ export const AppHeader = () => {
   return (
     <div className="flex items-center justify-center space-x-6 p-8 rounded-2xl bg-gradient-to-r from-white/90 via-gray-50/80 to-white/90 shadow-lg border border-white/20 backdrop-blur-sm relative overflow-hidden">
       {/* Glamorous gradient overlay with increased opacity and vibrancy */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/20 via-[#D6BCFA]/15 to-[#D946EF]/15 opacity-90 animate-gradient"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-[#4C1D95]/30 via-[#6D28D9]/25 to-[#7C3AED]/20 opacity-90 animate-gradient"></div>
       
       {/* Elegant radial gradient */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(249,255,182,0.2),transparent_70%)] mix-blend-overlay"></div>
