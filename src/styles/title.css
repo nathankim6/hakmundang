@@ -23,7 +23,7 @@
   position: relative;
   font-weight: 900;
   letter-spacing: 3px;
-  animation: shine 8s linear infinite;
+  animation: shine 16s linear infinite;
   text-shadow: 
     0 0 1px rgba(255, 255, 255, 0.1),
     0 0 2px rgba(255, 255, 255, 0.2),
@@ -45,7 +45,7 @@
   );
   -webkit-background-clip: text;
   background-clip: text;
-  animation: glassShine 4s ease-in-out infinite;
+  animation: glassShine 8s ease-in-out infinite;
   filter: blur(0.3px);
 }
 
@@ -64,10 +64,10 @@
     opacity: 0;
   }
   45% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
   55% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
   100% {
     background-position: 200% 0;
@@ -88,21 +88,21 @@
     radial-gradient(2px 2px at 130px 80px, rgba(255, 255, 255, 0.9) 0%, transparent 100%),
     radial-gradient(2px 2px at 160px 120px, rgba(255, 255, 255, 0.8) 0%, transparent 100%);
   background-repeat: repeat;
-  animation: sparkleFloat 8s linear infinite;
+  animation: sparkleFloat 12s linear infinite;
   mix-blend-mode: overlay;
 }
 
 @keyframes sparkleFloat {
   0% { 
     background-position: 0 0;
-    opacity: 0.5;
+    opacity: 0.4;
   }
   50% {
-    opacity: 0.8;
+    opacity: 0.7;
   }
   100% { 
     background-position: 100px 100px;
-    opacity: 0.5;
+    opacity: 0.4;
   }
 }
 
@@ -136,7 +136,7 @@
     rgba(255, 255, 255, 0.6),
     transparent
   );
-  animation: shimmerBar 4s infinite;
+  animation: shimmerBar 8s infinite;
 }
 
 @keyframes shimmerBar {
