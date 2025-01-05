@@ -16,7 +16,7 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
       return;
     }
     if (type.id === "summaryBlank") {
-      window.open("https://chatgpt.com/g/g-674ea64db4648191b245476ce685ed9d-danggoggo-seosulhyeong-yoyagmun-binkan/c/6779eca6-ca00-8000-bd70-d8fe3fba74e7", "_blank");
+      window.open("https://chatgpt.com/gpts/editor/g-6779efe1a5ac819192283bbdb41de569", "_blank");
       return;
     }
     if (type.id === "sungReference") {
