@@ -6,11 +6,13 @@
 
 .glass-title {
   background: linear-gradient(
-    135deg,
+    90deg,
     #2a2a2a 0%,
-    #353535 25%,
-    #1f1f1f 50%,
-    #353535 75%,
+    #4a4a4a 20%,
+    #727272 40%,
+    #919191 50%,
+    #727272 60%,
+    #4a4a4a 80%,
     #2a2a2a 100%
   );
   background-size: 200% auto;
@@ -21,7 +23,7 @@
   position: relative;
   font-weight: 900;
   letter-spacing: 3px;
-  animation: shine 8s linear infinite;
+  animation: shine 12s linear infinite;
   text-shadow: 
     0 0 1px rgba(255, 255, 255, 0.1),
     0 0 2px rgba(255, 255, 255, 0.2),
@@ -36,18 +38,21 @@
   right: -2px;
   bottom: -2px;
   background: linear-gradient(
-    45deg,
+    90deg,
     transparent 0%,
     rgba(255, 255, 255, 0.8) 50%,
     transparent 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
-  animation: glassShine 4s infinite;
+  animation: glassShine 8s ease-in-out infinite;
   filter: blur(0.3px);
 }
 
 @keyframes shine {
+  from {
+    background-position: 0% center;
+  }
   to {
     background-position: 200% center;
   }
@@ -58,15 +63,14 @@
     background-position: -200% 0;
     opacity: 0;
   }
-  25% {
-    opacity: 1;
+  40% {
+    opacity: 0.8;
   }
-  50% {
-    background-position: 200% 0;
-    opacity: 0;
+  60% {
+    opacity: 0.8;
   }
   100% {
-    background-position: -200% 0;
+    background-position: 200% 0;
     opacity: 0;
   }
 }
@@ -84,21 +88,21 @@
     radial-gradient(2px 2px at 130px 80px, rgba(255, 255, 255, 0.9) 0%, transparent 100%),
     radial-gradient(2px 2px at 160px 120px, rgba(255, 255, 255, 0.8) 0%, transparent 100%);
   background-repeat: repeat;
-  animation: sparkleFloat 4s linear infinite;
+  animation: sparkleFloat 8s linear infinite;
   mix-blend-mode: overlay;
 }
 
 @keyframes sparkleFloat {
   0% { 
     background-position: 0 0;
-    opacity: 0.7;
+    opacity: 0.5;
   }
   50% {
-    opacity: 1;
+    opacity: 0.8;
   }
   100% { 
-    background-position: 50px 50px;
-    opacity: 0.7;
+    background-position: 100px 100px;
+    opacity: 0.5;
   }
 }
 
@@ -132,7 +136,7 @@
     rgba(255, 255, 255, 0.6),
     transparent
   );
-  animation: shimmerBar 2s infinite;
+  animation: shimmerBar 4s infinite;
 }
 
 @keyframes shimmerBar {
