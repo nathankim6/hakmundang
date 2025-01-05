@@ -99,16 +99,16 @@ const Index = () => {
   return (
     <div className="min-h-screen py-8 px-4 sm:px-6 lg:px-8 relative">
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#FFFFFF] via-[#FFF8E7] to-[#FFE5B4] z-0" />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#FFD700]/30 to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#FFD700]/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#E6EAF2] via-[#D8E0ED] to-[#C9D6E8] z-0" />
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
       </div>
 
       <div className="max-w-[1600px] mx-auto relative z-10">
         <div className="flex flex-col space-y-8">
           <AppHeader />
 
-          <div className="metallic-border rounded-xl p-4 backdrop-blur-lg bg-gradient-to-b from-white/90 via-[#FFF8E7]/90 to-[#FFE5B4]/90">
+          <div className="metallic-border rounded-xl p-4 backdrop-blur-lg bg-gradient-to-b from-white/90 to-gray-50/90">
             <LoginSection 
               showLoginForm={showLoginForm}
               userName={userName}
@@ -122,14 +122,14 @@ const Index = () => {
             <APIConfig />
           </div>
           
-          <div className="metallic-border rounded-xl p-8 bg-gradient-to-br from-white/95 via-[#FFF8E7]/90 to-[#FFE5B4]/95">
+          <div className="metallic-border rounded-xl p-8">
             <QuestionGenerator />
           </div>
         </div>
       </div>
 
       <footer className="mt-16 text-center relative z-10">
-        <p className="text-sm text-[#FFD700] hover:text-[#FFE5B4] transition-colors">
+        <p className="text-sm text-gray-500 hover:text-gray-700 transition-colors">
           © 2025 ORUN AI QUIZ MAKER. desinged and developed by 옳은영어 김성진T
         </p>
       </footer>
