@@ -44,7 +44,11 @@ export function APIConfig() {
 
     setIsLoading(true);
     try {
-      const keyPrefix = selectedAPI === "claude" ? "sk-" : selectedAPI === "gpt" ? "sk-" : "";
+      const keyPrefix = 
+        selectedAPI === "claude" ? "sk-" : 
+        selectedAPI === "gpt" ? "sk-" :
+        selectedAPI === "deepseek" ? "sk-" : "";
+        
       if (apiKey.startsWith(keyPrefix) && apiKey.length > 20) {
         localStorage.setItem(`${selectedAPI}_api_key`, apiKey);
         
@@ -103,13 +107,18 @@ export function APIConfig() {
               <RadioGroupItem value="gpt" id="gpt" />
               <Label htmlFor="gpt" className="text-sm">GPT-4o</Label>
             </div>
+            <div className="flex items-center space-x-2">
+              <RadioGroupItem value="deepseek" id="deepseek" />
+              <Label htmlFor="deepseek" className="text-sm">DeepSeek</Label>
+            </div>
           </RadioGroup>
         </div>
 
         <div className="space-y-2">
           <div className="flex items-center justify-between">
             <Label htmlFor="apiKey" className="text-sm font-medium text-gray-700">
-              {selectedAPI === "claude" ? "Claude" : "OpenAI"} API Key
+              {selectedAPI === "claude" ? "Claude" : 
+               selectedAPI === "gpt" ? "OpenAI" : "DeepSeek"} API Key
             </Label>
             {testResult !== null && (
               <div className="flex items-center gap-1">
@@ -152,7 +161,7 @@ export function APIConfig() {
                 <ExternalLink className="mr-2 h-3 w-3" />
                 Claude API 발급 방법
               </Button>
-            ) : (
+            ) : selectedAPI === "gpt" ? (
               <Button
                 variant="outline"
                 onClick={() => window.open("https://www.youtube.com/watch?v=8h-OCfC_EU0", "_blank")}
@@ -160,6 +169,15 @@ export function APIConfig() {
               >
                 <ExternalLink className="mr-2 h-3 w-3" />
                 GPT API 발급 방법
+              </Button>
+            ) : (
+              <Button
+                variant="outline"
+                onClick={() => window.open("https://platform.deepseek.com/", "_blank")}
+                className="h-9 px-3 text-sm whitespace-nowrap"
+              >
+                <ExternalLink className="mr-2 h-3 w-3" />
+                DeepSeek API 발급 방법
               </Button>
             )}
             <Settings />

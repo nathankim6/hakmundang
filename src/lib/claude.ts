@@ -1,30 +1,6 @@
 import { QuestionType } from "@/types/question";
 import { Anthropic } from "@anthropic-ai/sdk";
 import OpenAI from "openai";
-import {
-  getPurposePrompt,
-  getClaimPrompt,
-  getImplicationPrompt,
-  getMoodPrompt,
-  getMainPointPrompt,
-  getTopicPrompt,
-  getTitlePrompt,
-  getVocabularyPrompt,
-  getBlankPrompt,
-  getBlankMultiplePrompt,
-  getIrrelevantPrompt,
-  getOrderPrompt,
-  getInsertPrompt,
-  getSummaryPrompt,
-  getTrueOrFalsePrompt,
-  getSynonymAntonymPrompt,
-  getLogicFlowPrompt,
-  getWeekendClinicPrompt,
-  getDictionaryPrompt,
-  getOrderWritingPrompt,
-  getSummaryBlankPrompt,
-  getTopicWritingPrompt,
-} from "./prompts";
 
 export const getQuestionTypes = () => [
   // 수능형
@@ -121,11 +97,14 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
   try {
     const claudeApiKey = localStorage.getItem("claude_api_key");
     const gptApiKey = localStorage.getItem("gpt_api_key");
+    const deepseekApiKey = localStorage.getItem("deepseek_api_key");
     
-    // Use Claude if it's available or if GPT key is not set
-    const useClaudeApi = claudeApiKey || !gptApiKey;
+    // Use Claude if it's available, then GPT, then DeepSeek
+    const useClaudeApi = claudeApiKey;
+    const useGPTApi = !claudeApiKey && gptApiKey;
+    const useDeepSeekApi = !claudeApiKey && !gptApiKey && deepseekApiKey;
     
-    if (!claudeApiKey && !gptApiKey) {
+    if (!claudeApiKey && !gptApiKey && !deepseekApiKey) {
       throw new Error("API key not found. Please enter your API key in the settings.");
     }
 
@@ -159,7 +138,7 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
       }
 
       return result;
-    } else {
+    } else if (useGPTApi) {
       const openai = new OpenAI({
         apiKey: gptApiKey,
         dangerouslyAllowBrowser: true
@@ -179,6 +158,41 @@ export const generateQuestion = async (type: QuestionType, text: string) => {
       
       if (!result) {
         throw new Error("Invalid response format from GPT API");
+      }
+
+      if (type.id === "weekendClinic") {
+        result = result.replace("[OUTPUT]\n\n", "");
+      }
+
+      return result;
+    } else {
+      // DeepSeek API call
+      const response = await fetch('https://api.deepseek.com/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${deepseekApiKey}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          model: "deepseek-chat",
+          messages: [{
+            role: "user",
+            content: prompt
+          }],
+          temperature: 0.7,
+          max_tokens: 1000,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`DeepSeek API error: ${response.statusText}`);
+      }
+
+      const data = await response.json();
+      let result = data.choices[0]?.message?.content;
+
+      if (!result) {
+        throw new Error("Invalid response format from DeepSeek API");
       }
 
       if (type.id === "weekendClinic") {
