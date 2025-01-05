@@ -11,25 +11,23 @@ export const OrderWritingQuestion = ({
   questionPart,
   answerPart
 }: OrderWritingQuestionProps) => {
+  // Extract the passage text from questionPart
+  const passageText = questionPart.split('다음 글을 읽고, 물음에 답하시오.\n\n')[1]?.split('\n\n[문제]')[0]?.trim();
+  
+  // Extract the question text
+  const questionText = questionPart.match(/\[문제\](.*?)(?=\[우리말\])/s)?.[1]?.trim() || '';
+  
+  // Extract Korean text from questionPart
+  const koreanText = questionPart.match(/\[우리말\](.*?)(?=\[단어\])/s)?.[1]?.trim() || '';
+  
+  // Extract word list
+  const wordList = questionPart.match(/\[단어\](.*?)(?=\[정답\])/s)?.[1]?.trim() || '';
+
   // Format the answer part
   const formattedAnswer = answerPart
     .split('\n')
     .filter(line => line.trim())
     .join('\n');
-
-  // Extract Korean text from questionPart
-  const koreanText = questionPart.match(/\[우리말\]\s*(.*?)(?=\s*\[단어\]|\s*$)/s)?.[1]?.trim() || '';
-
-  // Remove the original English text and Korean text section, keeping only the question framework
-  const cleanedQuestionPart = questionPart
-    .replace(/\[우리말\].*?(?=\[단어\]|\s*$)/s, '')
-    .replace(/^(.*?)\n/, '$1\n\n' + koreanText + '\n');
-
-  // Add a note about the sentence being from the main text
-  const questionWithNote = cleanedQuestionPart.replace(
-    '주어진 단어들을 순서대로 배열하여 우리말과 같은 의미가 되도록 영작하시오.',
-    '다음 본문의 핵심 내용을 담고 있는 문장을 주어진 단어들을 순서대로 배열하여 우리말과 같은 의미가 되도록 영작하시오.'
-  );
 
   return (
     <Card className="mb-6">
@@ -40,9 +38,32 @@ export const OrderWritingQuestion = ({
             {questionNumber}번
           </div>
 
+          {/* Passage Section */}
+          {passageText && (
+            <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-white p-4 rounded-lg border border-[#D3E4FD]/30">
+              {passageText}
+            </div>
+          )}
+
           {/* Question Section */}
           <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F1F0FB] p-4 rounded-lg border border-[#D3E4FD]/30">
-            {questionWithNote}
+            {questionText}
+          </div>
+
+          {/* Korean Translation */}
+          <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F1F0FB] p-4 rounded-lg border border-[#D3E4FD]/30">
+            <div className="font-semibold text-[#403E43] mb-2">
+              [우리말]
+            </div>
+            {koreanText}
+          </div>
+
+          {/* Word List */}
+          <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F1F0FB] p-4 rounded-lg border border-[#D3E4FD]/30">
+            <div className="font-semibold text-[#403E43] mb-2">
+              [단어]
+            </div>
+            {wordList}
           </div>
           
           {/* Answer Section */}
