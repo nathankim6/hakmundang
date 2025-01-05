@@ -2,19 +2,16 @@ export const getTopicWritingPrompt = (text: string) => `[INPUT]
 ${text}
 
 [OUTPUT]
-다음 글을 읽고, 물음에 답하시오.
+다음 글을 읽고, 주제문을 주어진 조건에 맞게 완성하시오.
 
 ${text}
 
-[문제]
-다음 글의 주제문을 우리말로 주어진 단어들을 순서대로 배열하여 영작하시오.
-(단, 단어의 형태는 변형하지 마시오.)
+[조건]
+1) 10단어로 빈칸을 완성하시오.
+2) 다음 단어를 한 번씩 사용하여 배열하시오.
+    {List 10 key words from the passage, separated by / }
 
-[우리말]
-{Write a Korean translation of the topic sentence}
-
-[단어]
-{Take all words from the topic sentence and scramble them, separated by /}
+주제문: __________________________________________.
 
 [정답]
-{Write ONE grammatically correct English sentence that matches the Korean translation}`;
+{Write a 10-word sentence using all given words}`;
