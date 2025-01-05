@@ -18,8 +18,8 @@ export const AppHeader = () => {
       
       <div className="flex flex-col items-center relative z-10">
         <div className="title-sparkle"></div>
-        <h1 className="text-7xl font-bold animate-title tracking-wider relative group">
-          <span className="inline-block transform transition-transform group-hover:scale-105 duration-300">
+        <h1 className="text-7xl font-bold tracking-wider relative group">
+          <span className="glass-title inline-block transform transition-transform group-hover:scale-105 duration-300">
             ORUN AI QUIZ MAKER
           </span>
         </h1>
