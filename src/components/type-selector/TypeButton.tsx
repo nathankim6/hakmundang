@@ -15,6 +15,10 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
       window.open("https://chatgpt.com/g/g-675422c0793c81918b65a1a25e82e7a0-danggoggo-yeongyeongsajeon", "_blank");
       return;
     }
+    if (type.id === "summaryBlank") {
+      window.open("https://chatgpt.com/g/g-674ea64db4648191b245476ce685ed9d-danggoggo-seosulhyeong-yoyagmun-binkan/c/6779eca6-ca00-8000-bd70-d8fe3fba74e7", "_blank");
+      return;
+    }
     onClick();
   };
 
@@ -48,13 +52,13 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
             className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"
           />
         )}
-        {!isSelected && hasAccess && type.id !== "dangDict" && (
+        {!isSelected && hasAccess && type.id !== "dangDict" && type.id !== "summaryBlank" && (
           <Sparkles 
             className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-[#FFD700] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             style={{ filter: 'drop-shadow(0 0 2px rgba(255, 215, 0, 0.5))' }}
           />
         )}
-        {isSelected && hasAccess && type.id !== "dangDict" && (
+        {isSelected && hasAccess && type.id !== "dangDict" && type.id !== "summaryBlank" && (
           <Check className="w-4 h-4 text-[#0EA5E9] animate-bounce" />
         )}
         <span className="flex-1">{type.name}</span>
