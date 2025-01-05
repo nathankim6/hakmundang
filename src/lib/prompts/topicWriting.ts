@@ -1,36 +1,15 @@
-export const getTopicWritingPrompt = (text: string) => `
-You are an expert at creating topic sentence writing questions based on English texts.
+export const getTopicWritingPrompt = (text: string) => `당신은 영어 교육 자료 제작 전문가입니다. 제공된 영어 지문을 분석하여 "주제문영작" 유형의 문제를 만들어주세요.
 
-[INPUT]
-${text}
+다음 지침을 따라주세요:
+[OUTPUT] 섹션에서는:
+첫 줄에 "다음 글의 주제문을 우리말로 주어진 단어들을 순서대로 배열하여 영작하시오." 표시
+두 번째 줄부터 원본 지문을 그대로 표시
+그 다음 줄에 [우리말] 섹션에 한국어 주제문 작성
+그 다음 줄에 [단어] 섹션에 영어 단어들을 나열 (반드시 본문에서 사용된 단어들만 사용)
 
-Please generate a question following these rules:
+[정답] 섹션에서는:
+"[정답]"으로 시작
+그 밑에 정답 문장을 작성
+해설은 작성하지 않음
 
-1. Create a topic sentence that:
-   - Captures the main idea of the text
-   - Uses clear and concise language
-   - Can be written with given words
-
-2. Provide words that:
-   - Are essential for expressing the main idea
-   - Include necessary grammar words
-   - Can be arranged to form a complete sentence
-
-The output must follow this exact format:
-
-[OUTPUT]
-다음 글을 읽고, 주제문을 주어진 조건에 맞게 완성하시오.
-
-[조건] 
-1) 12단어로 빈칸을 완성하시오.
-2) 다음 단어를 한 번씩 사용하여 배열하시오.
-
-{List of 12 words separated by / that can form a topic sentence}
-
-주제문: __________________________________________.
-
-[정답]
-{Write a 12-word topic sentence using all given words}
-
-[해설]
-{Explain how the topic sentence captures the main idea of the text and how the words were arranged}`;
+${text}`;

@@ -1,16 +1,15 @@
-export const getOrderWritingPrompt = (text: string) => `
-[INPUT]
-${text}
+export const getOrderWritingPrompt = (text: string) => `당신은 영어 교육 자료 제작 전문가입니다. 제공된 영어 지문을 분석하여 "배열영작" 유형의 문제를 만들어주세요.
 
-[OUTPUT]
-다음 글을 읽고, 빈칸을 주어진 조건에 맞게 완성하시오.
+다음 지침을 따라주세요:
+[OUTPUT] 섹션에서는:
+첫 줄에 "다음 본문의 핵심 내용을 담고 있는 문장을 주어진 단어들을 순서대로 배열하여 우리말과 같은 의미가 되도록 영작하시오." 표시
+두 번째 줄부터 원본 지문을 그대로 표시
+그 다음 줄에 [우리말] 섹션에 한국어 문장 작성
+그 다음 줄에 [단어] 섹션에 영어 단어들을 나열 (반드시 본문에서 사용된 단어들만 사용)
 
-[Selected text with blank marked by 23 underscores]
+[정답] 섹션에서는:
+"[정답]"으로 시작
+그 밑에 정답 문장을 작성
+해설은 작성하지 않음
 
-[조건]
-1) 12단어로 빈칸을 완성하시오.
-2) 다음 단어를 한 번씩 사용하여 배열하시오.
-    [12 words from the original sentence, separated by /]
-
-[정답]
-[Original sentence that fits in the blank]`;
+${text}`;
