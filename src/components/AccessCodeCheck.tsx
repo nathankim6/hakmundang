@@ -15,8 +15,37 @@ const SESSION_TIMEOUT = 2 * 60 * 60 * 1000; // 2 hours in milliseconds
 export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
   const [code, setCode] = useState("");
   const [subscriptionExpiry, setSubscriptionExpiry] = useState<string | null>(null);
+  const [backgroundUrl, setBackgroundUrl] = useState<string | null>(null);
   const navigate = useNavigate();
   const { toast } = useToast();
+
+  useEffect(() => {
+    // Fetch the latest background media from storage
+    const fetchBackgroundMedia = async () => {
+      const { data: files, error } = await supabase
+        .storage
+        .from('backgrounds')
+        .list();
+
+      if (error) {
+        console.error('Error fetching background:', error);
+        return;
+      }
+
+      if (files && files.length > 0) {
+        // Get the latest uploaded file
+        const latestFile = files[files.length - 1];
+        const { data: { publicUrl } } = supabase
+          .storage
+          .from('backgrounds')
+          .getPublicUrl(latestFile.name);
+          
+        setBackgroundUrl(publicUrl);
+      }
+    };
+
+    fetchBackgroundMedia();
+  }, []);
 
   useEffect(() => {
     // Check for existing session
@@ -127,10 +156,36 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
     }
   };
 
+  const isVideo = backgroundUrl?.match(/\.(mp4|webm|ogg)$/i);
+  const isGif = backgroundUrl?.match(/\.gif$/i);
+
   return (
-    <div className="fixed inset-0 bg-background/80 backdrop-blur-sm z-50">
+    <div className="fixed inset-0 bg-background/80 backdrop-blur-sm z-50 overflow-hidden">
+      {/* Background Media */}
+      {backgroundUrl && (
+        <div className="absolute inset-0 -z-10">
+          {isVideo ? (
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            >
+              <source src={backgroundUrl} type={`video/${backgroundUrl.split('.').pop()}`} />
+            </video>
+          ) : (
+            <img
+              src={backgroundUrl}
+              alt="Background"
+              className="w-full h-full object-cover"
+            />
+          )}
+        </div>
+      )}
+      
       <div className="fixed left-[50%] top-[50%] z-50 w-full max-w-lg translate-x-[-50%] translate-y-[-50%] space-y-8">
-        <div className="metallic-border rounded-xl bg-gradient-to-br from-[#F8F7FF] via-[#F6F6F7] to-[#F1F0FB] p-8 shadow-2xl">
+        <div className="metallic-border rounded-xl bg-gradient-to-br from-[#F8F7FF]/90 via-[#F6F6F7]/90 to-[#F1F0FB]/90 p-8 shadow-2xl backdrop-blur-md">
           <div className="flex flex-col items-center space-y-6">
             {/* Logo and Title */}
             <div className="flex flex-col items-center space-y-4">
