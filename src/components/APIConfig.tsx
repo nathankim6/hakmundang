@@ -109,7 +109,7 @@ export function APIConfig() {
             </div>
             <div className="flex items-center space-x-2">
               <RadioGroupItem value="deepseek" id="deepseek" />
-              <Label htmlFor="deepseek" className="text-sm">DeepSeek</Label>
+              <Label htmlFor="deepseek" className="text-sm">Deep Seek 3.5</Label>
             </div>
           </RadioGroup>
         </div>
@@ -118,7 +118,7 @@ export function APIConfig() {
           <div className="flex items-center justify-between">
             <Label htmlFor="apiKey" className="text-sm font-medium text-gray-700">
               {selectedAPI === "claude" ? "Claude" : 
-               selectedAPI === "gpt" ? "OpenAI" : "DeepSeek"} API Key
+               selectedAPI === "gpt" ? "OpenAI" : "Deep Seek 3.5"} API Key
             </Label>
             {testResult !== null && (
               <div className="flex items-center gap-1">
@@ -177,7 +177,7 @@ export function APIConfig() {
                 className="h-9 px-3 text-sm whitespace-nowrap"
               >
                 <ExternalLink className="mr-2 h-3 w-3" />
-                DeepSeek API 발급 방법
+                Deep Seek 3.5 API 발급 방법
               </Button>
             )}
             <Settings />

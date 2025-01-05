@@ -1,6 +1,30 @@
 import { QuestionType } from "@/types/question";
 import { Anthropic } from "@anthropic-ai/sdk";
 import OpenAI from "openai";
+import {
+  getPurposePrompt,
+  getClaimPrompt,
+  getImplicationPrompt,
+  getMoodPrompt,
+  getMainPointPrompt,
+  getTopicPrompt,
+  getTitlePrompt,
+  getVocabularyPrompt,
+  getBlankPrompt,
+  getBlankMultiplePrompt,
+  getIrrelevantPrompt,
+  getOrderPrompt,
+  getInsertPrompt,
+  getSummaryPrompt,
+  getTrueOrFalsePrompt,
+  getSynonymAntonymPrompt,
+  getLogicFlowPrompt,
+  getWeekendClinicPrompt,
+  getOrderWritingPrompt,
+  getSummaryBlankPrompt,
+  getTopicWritingPrompt,
+  getDictionaryPrompt
+} from "./prompts";
 
 export const getQuestionTypes = () => [
   // 수능형
