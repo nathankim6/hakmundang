@@ -1,4 +1,4 @@
-import { Check, Sparkles, Lock } from "lucide-react";
+import { Check, Sparkles, Lock, ExternalLink } from "lucide-react";
 import { QuestionType } from "@/types/question";
 
 interface TypeButtonProps {
@@ -10,10 +10,18 @@ interface TypeButtonProps {
 }
 
 export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: TypeButtonProps) => {
+  const handleClick = () => {
+    if (type.id === "dangDict") {
+      window.open("https://chatgpt.com/g/g-675422c0793c81918b65a1a25e82e7a0-danggoggo-yeongyeongsajeon", "_blank");
+      return;
+    }
+    onClick();
+  };
+
   return (
     <button
       key={type.id}
-      onClick={onClick}
+      onClick={handleClick}
       className={`type-button group relative w-full text-left transition-all duration-300 hover:scale-[1.02] ${
         !hasAccess 
           ? "opacity-50 cursor-not-allowed hover:scale-100"
@@ -40,26 +48,21 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
             className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"
           />
         )}
-        {!isSelected && hasAccess && (
+        {!isSelected && hasAccess && type.id !== "dangDict" && (
           <Sparkles 
             className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-[#FFD700] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             style={{ filter: 'drop-shadow(0 0 2px rgba(255, 215, 0, 0.5))' }}
           />
         )}
-        {isSelected && (
-          <div 
-            className="absolute inset-0 bg-gradient-to-r from-[#0EA5E9]/10 via-[#0EA5E9]/5 to-transparent 
-              animate-shimmer"
-            style={{
-              backgroundSize: '200% 100%',
-              animation: 'shimmer 2s infinite',
-            }}
+        {type.id === "dangDict" && (
+          <ExternalLink 
+            className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-blue-500"
           />
         )}
-        <span className="flex-1">{type.name}</span>
-        {isSelected && hasAccess && (
+        {isSelected && hasAccess && type.id !== "dangDict" && (
           <Check className="w-4 h-4 text-[#0EA5E9] animate-bounce" />
         )}
+        <span className="flex-1">{type.name}</span>
       </span>
     </button>
   );
