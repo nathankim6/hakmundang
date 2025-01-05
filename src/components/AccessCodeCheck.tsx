@@ -160,7 +160,7 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
   const isGif = backgroundUrl?.match(/\.gif$/i);
 
   return (
-    <div className="fixed inset-0 bg-background/80 backdrop-blur-sm z-50 overflow-hidden">
+    <div className="fixed inset-0 bg-background/50 backdrop-blur-sm z-50 overflow-hidden">
       {/* Background Media */}
       {backgroundUrl && (
         <div className="absolute inset-0 -z-10">
@@ -185,11 +185,11 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
       )}
       
       <div className="fixed left-[50%] top-[50%] z-50 w-full max-w-lg translate-x-[-50%] translate-y-[-50%] space-y-8">
-        <div className="metallic-border rounded-xl bg-gradient-to-br from-[#F8F7FF]/90 via-[#F6F6F7]/90 to-[#F1F0FB]/90 p-8 shadow-2xl backdrop-blur-md">
+        <div className="metallic-border rounded-xl bg-gradient-to-br from-[#F8F7FF]/60 via-[#F6F6F7]/60 to-[#F1F0FB]/60 p-8 shadow-2xl backdrop-blur-md">
           <div className="flex flex-col items-center space-y-6">
             {/* Logo and Title */}
             <div className="flex flex-col items-center space-y-4">
-              <div className="rounded-full border-2 border-gray-200 p-0 overflow-hidden flex items-center justify-center bg-gradient-to-br from-[#F1F0FB] to-[#F6F6F7] w-24 h-24">
+              <div className="rounded-full border-2 border-gray-200/80 p-0 overflow-hidden flex items-center justify-center bg-gradient-to-br from-[#F1F0FB]/80 to-[#F6F6F7]/80 w-24 h-24">
                 <img 
                   src="/lovable-uploads/ba25df4b-a62d-4a3d-97c3-7d969e304813.png" 
                   alt="ORUN ACADEMY Logo" 
@@ -203,7 +203,7 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
                 </span>
               </h1>
               {subscriptionExpiry && (
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-gray-800">
                   구독 유효기간: {new Date(subscriptionExpiry).toLocaleDateString()}
                 </p>
               )}
@@ -212,25 +212,25 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
             {/* Access Code Input Section */}
             <div className="w-full max-w-md space-y-4">
               <div className="relative">
-                <Key className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+                <Key className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-600" />
                 <Input
                   type="text"
                   placeholder="엑세스 코드를 입력하세요..."
                   value={code}
                   onChange={handleInputChange}
-                  className="pl-10 pr-4 py-6 text-lg border-2 focus:border-primary/50 transition-all duration-300"
+                  className="pl-10 pr-4 py-6 text-lg border-2 border-gray-200/50 focus:border-primary/50 transition-all duration-300 bg-white/70"
                 />
               </div>
               <Button 
                 onClick={handleSubmit}
-                className="w-full py-6 text-lg font-medium bg-gradient-to-r from-[#4A4A4A] via-[#363636] to-[#4A4A4A] hover:from-[#363636] hover:via-[#2D2D2D] hover:to-[#363636] border border-gray-600 shadow-inner transition-all duration-300"
+                className="w-full py-6 text-lg font-medium bg-gradient-to-r from-[#4A4A4A]/90 via-[#363636]/90 to-[#4A4A4A]/90 hover:from-[#363636] hover:via-[#2D2D2D] hover:to-[#363636] border border-gray-600/50 shadow-inner transition-all duration-300"
               >
                 확인
               </Button>
             </div>
 
             {/* Additional Info */}
-            <p className="text-sm text-muted-foreground text-center">
+            <p className="text-sm text-gray-800 text-center">
               엑세스 코드가 필요하신 경우 관리자에게 문의하세요.
             </p>
           </div>
