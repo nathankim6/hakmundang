@@ -1,3 +1,23 @@
+@keyframes shine {
+  to { background-position: -300% center; }
+}
+
+@keyframes shimmer {
+  to { left: 200%; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(124, 58, 237, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(124, 58, 237, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(124, 58, 237, 0); }
+}
+
 .title-container {
   position: relative;
   padding: 2rem;
@@ -23,7 +43,7 @@
   position: relative;
   font-weight: 900;
   letter-spacing: 3px;
-  animation: shine 24s linear infinite;
+  animation: shine 3s linear infinite;
   text-shadow: 
     0 0 1px rgba(255, 255, 255, 0.1),
     0 0 2px rgba(255, 255, 255, 0.2),
@@ -45,7 +65,7 @@
   );
   -webkit-background-clip: text;
   background-clip: text;
-  animation: glassShine 12s ease-in-out infinite;
+  animation: glassShine 3s ease-in-out infinite;
   filter: blur(0.3px);
 }
 
@@ -88,7 +108,7 @@
     radial-gradient(2px 2px at 130px 80px, rgba(255, 255, 255, 0.9) 0%, transparent 100%),
     radial-gradient(2px 2px at 160px 120px, rgba(255, 255, 255, 0.8) 0%, transparent 100%);
   background-repeat: repeat;
-  animation: sparkleFloat 16s linear infinite;
+  animation: sparkleFloat 3s linear infinite;
   mix-blend-mode: overlay;
 }
 
@@ -136,7 +156,7 @@
     rgba(255, 255, 255, 0.6),
     transparent
   );
-  animation: shimmerBar 12s infinite;
+  animation: shimmerBar 3s infinite;
 }
 
 @keyframes shimmerBar {
