@@ -83,7 +83,8 @@ export default {
         'accordion-up': 'accordion-up 0.2s ease-out',
         'spin-slow': 'spin 3s linear infinite',
         'shimmer': 'shimmer 2s infinite',
-        'gradient': 'gradient 3s ease-in-out infinite'
+        'gradient': 'gradient 3s ease-in-out infinite',
+        'gradient-fast': 'gradient 1.5s ease-in-out infinite'
       }
     }
   },
