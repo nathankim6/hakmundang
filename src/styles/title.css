@@ -43,7 +43,7 @@
   position: relative;
   font-weight: 900;
   letter-spacing: 3px;
-  animation: shine 10s linear infinite;
+  animation: shine 5s linear infinite;
   text-shadow: 
     0 0 1px rgba(255, 255, 255, 0.1),
     0 0 2px rgba(255, 255, 255, 0.2),
@@ -65,7 +65,7 @@
   );
   -webkit-background-clip: text;
   background-clip: text;
-  animation: glassShine 10s ease-in-out infinite;
+  animation: glassShine 5s ease-in-out infinite;
   filter: blur(0.3px);
 }
 
@@ -108,7 +108,7 @@
     radial-gradient(2px 2px at 130px 80px, rgba(255, 255, 255, 0.9) 0%, transparent 100%),
     radial-gradient(2px 2px at 160px 120px, rgba(255, 255, 255, 0.8) 0%, transparent 100%);
   background-repeat: repeat;
-  animation: sparkleFloat 10s linear infinite;
+  animation: sparkleFloat 5s linear infinite;
   mix-blend-mode: overlay;
 }
 
@@ -156,7 +156,7 @@
     rgba(255, 255, 255, 0.6),
     transparent
   );
-  animation: shimmerBar 10s infinite;
+  animation: shimmerBar 5s infinite;
 }
 
 @keyframes shimmerBar {
