@@ -45,9 +45,9 @@
   letter-spacing: 3px;
   animation: shine 15s linear infinite;
   text-shadow: 
-    0 0 1px rgba(255, 255, 255, 0.1),
-    0 0 2px rgba(255, 255, 255, 0.2),
-    0 0 30px rgba(139, 92, 246, 0.05);
+    0 0 1px rgba(255, 255, 255, 0.05),
+    0 0 2px rgba(255, 255, 255, 0.1),
+    0 0 30px rgba(139, 92, 246, 0.02);
 }
 
 .glass-title::before {
@@ -60,7 +60,7 @@
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0.4) 50%,
     transparent 100%
   );
   -webkit-background-clip: text;
@@ -84,10 +84,10 @@
     opacity: 0;
   }
   45% {
-    opacity: 0.6;
+    opacity: 0.3;
   }
   55% {
-    opacity: 0.6;
+    opacity: 0.3;
   }
   100% {
     background-position: 200% 0;
@@ -101,28 +101,29 @@
   height: 100%;
   pointer-events: none;
   background-image: 
-    radial-gradient(2px 2px at 20px 30px, rgba(255, 255, 255, 0.9) 0%, transparent 100%),
-    radial-gradient(2px 2px at 40px 70px, rgba(255, 255, 255, 0.8) 0%, transparent 100%),
-    radial-gradient(2px 2px at 50px 160px, rgba(255, 255, 255, 0.9) 0%, transparent 100%),
-    radial-gradient(2px 2px at 90px 40px, rgba(255, 255, 255, 0.8) 0%, transparent 100%),
-    radial-gradient(2px 2px at 130px 80px, rgba(255, 255, 255, 0.9) 0%, transparent 100%),
-    radial-gradient(2px 2px at 160px 120px, rgba(255, 255, 255, 0.8) 0%, transparent 100%);
+    radial-gradient(2px 2px at 20px 30px, rgba(255, 255, 255, 0.4) 0%, transparent 100%),
+    radial-gradient(2px 2px at 40px 70px, rgba(255, 255, 255, 0.3) 0%, transparent 100%),
+    radial-gradient(2px 2px at 50px 160px, rgba(255, 255, 255, 0.4) 0%, transparent 100%),
+    radial-gradient(2px 2px at 90px 40px, rgba(255, 255, 255, 0.3) 0%, transparent 100%),
+    radial-gradient(2px 2px at 130px 80px, rgba(255, 255, 255, 0.4) 0%, transparent 100%),
+    radial-gradient(2px 2px at 160px 120px, rgba(255, 255, 255, 0.3) 0%, transparent 100%);
   background-repeat: repeat;
   animation: sparkleFloat 15s linear infinite;
   mix-blend-mode: overlay;
+  opacity: 0.5;
 }
 
 @keyframes sparkleFloat {
   0% { 
     background-position: 0 0;
-    opacity: 0.4;
+    opacity: 0.2;
   }
   50% {
-    opacity: 0.7;
+    opacity: 0.3;
   }
   100% { 
     background-position: 100px 100px;
-    opacity: 0.4;
+    opacity: 0.2;
   }
 }
 
@@ -134,9 +135,9 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(192, 192, 192, 0.3),
-    rgba(255, 255, 255, 0.4),
-    rgba(192, 192, 192, 0.3),
+    rgba(192, 192, 192, 0.2),
+    rgba(255, 255, 255, 0.3),
+    rgba(192, 192, 192, 0.2),
     transparent
   );
   border-radius: 2px;
@@ -153,7 +154,7 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.3),
     transparent
   );
   animation: shimmerBar 15s infinite;
