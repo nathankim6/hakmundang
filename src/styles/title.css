@@ -23,11 +23,11 @@
   position: relative;
   font-weight: 900;
   letter-spacing: 3px;
-  animation: titleGlow 20s ease-in-out infinite;
+  animation: titleGlow 30s ease-in-out infinite;
   text-shadow: 
-    0 0 1px rgba(255, 255, 255, 0.03),
-    0 0 3px rgba(255, 255, 255, 0.05),
-    0 0 10px rgba(139, 92, 246, 0.1);
+    0 0 1px rgba(255, 255, 255, 0.02),
+    0 0 2px rgba(255, 255, 255, 0.03),
+    0 0 5px rgba(139, 92, 246, 0.05);
 }
 
 @keyframes titleGlow {
@@ -37,7 +37,7 @@
   }
   50% {
     background-position: 100% center;
-    filter: brightness(1.1);
+    filter: brightness(1.05);
   }
 }
 
@@ -51,13 +51,13 @@
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.1) 50%,
     transparent 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
   opacity: 0;
-  animation: shimmerEffect 20s ease-in-out infinite;
+  animation: shimmerEffect 30s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 @keyframes shimmerEffect {
@@ -66,7 +66,7 @@
     transform: translateX(-100%);
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.3;
     transform: translateX(100%);
   }
 }
@@ -77,64 +77,64 @@
   height: 100%;
   pointer-events: none;
   background-image: 
-    radial-gradient(1px 1px at 20px 30px, rgba(255, 255, 255, 0.4) 0%, transparent 100%),
-    radial-gradient(1px 1px at 40px 70px, rgba(255, 255, 255, 0.4) 0%, transparent 100%),
-    radial-gradient(1px 1px at 50px 160px, rgba(255, 255, 255, 0.4) 0%, transparent 100%),
-    radial-gradient(1px 1px at 90px 40px, rgba(255, 255, 255, 0.4) 0%, transparent 100%),
-    radial-gradient(1px 1px at 130px 80px, rgba(255, 255, 255, 0.4) 0%, transparent 100%),
-    radial-gradient(1px 1px at 160px 120px, rgba(255, 255, 255, 0.4) 0%, transparent 100%);
+    radial-gradient(1px 1px at 20px 30px, rgba(255, 255, 255, 0.2) 0%, transparent 100%),
+    radial-gradient(1px 1px at 40px 70px, rgba(255, 255, 255, 0.2) 0%, transparent 100%),
+    radial-gradient(1px 1px at 50px 160px, rgba(255, 255, 255, 0.2) 0%, transparent 100%),
+    radial-gradient(1px 1px at 90px 40px, rgba(255, 255, 255, 0.2) 0%, transparent 100%),
+    radial-gradient(1px 1px at 130px 80px, rgba(255, 255, 255, 0.2) 0%, transparent 100%),
+    radial-gradient(1px 1px at 160px 120px, rgba(255, 255, 255, 0.2) 0%, transparent 100%);
   background-repeat: repeat;
   mix-blend-mode: screen;
   opacity: 0;
-  animation: starlight 20s ease-in-out infinite;
+  animation: starlight 30s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 @keyframes starlight {
   0%, 100% {
-    opacity: 0.05;
+    opacity: 0.02;
     transform: scale(1);
   }
   50% {
-    opacity: 0.2;
-    transform: scale(1.02);
+    opacity: 0.05;
+    transform: scale(1.01);
   }
 }
 
 .title-bar {
   position: relative;
   width: 540px;
-  height: 4px;
+  height: 3px;
   margin-top: 12px;
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(192, 192, 192, 0.2),
-    rgba(255, 255, 255, 0.4),
-    rgba(192, 192, 192, 0.2),
+    rgba(192, 192, 192, 0.1),
+    rgba(255, 255, 255, 0.2),
+    rgba(192, 192, 192, 0.1),
     transparent
   );
   border-radius: 2px;
   overflow: hidden;
-  opacity: 0.5;
-  animation: barGlow 20s ease-in-out infinite;
+  opacity: 0.3;
+  animation: barGlow 30s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 @keyframes barGlow {
   0%, 100% {
-    opacity: 0.3;
+    opacity: 0.2;
     transform: scaleX(0.98);
     filter: brightness(0.9);
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.3;
     transform: scaleX(1);
-    filter: brightness(1.1);
+    filter: brightness(1.05);
   }
 }
 
 /* Add an elegant hover effect */
 .glass-title:hover {
   animation-play-state: paused;
-  filter: brightness(1.15);
+  filter: brightness(1.1);
   transition: filter 0.3s ease;
 }
