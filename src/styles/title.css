@@ -23,9 +23,17 @@
   position: relative;
   font-weight: 900;
   letter-spacing: 3px;
+  animation: titleShine 3s linear infinite;
   text-shadow: 
     0 0 1px rgba(255, 255, 255, 0.03),
-    0 0 2px rgba(255, 255, 255, 0.05);
+    0 0 2px rgba(255, 255, 255, 0.05),
+    0 0 15px rgba(139, 92, 246, 0.1);
+}
+
+@keyframes titleShine {
+  to {
+    background-position: 200% center;
+  }
 }
 
 .glass-title::before {
@@ -38,11 +46,50 @@
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0.2) 50%,
     transparent 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
+  animation: glowPulse 2s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.title-sparkle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: 
+    radial-gradient(2px 2px at 20px 30px, #fff 0%, transparent 100%),
+    radial-gradient(2px 2px at 40px 70px, #fff 0%, transparent 100%),
+    radial-gradient(2px 2px at 50px 160px, #fff 0%, transparent 100%),
+    radial-gradient(2px 2px at 90px 40px, #fff 0%, transparent 100%),
+    radial-gradient(2px 2px at 130px 80px, #fff 0%, transparent 100%),
+    radial-gradient(2px 2px at 160px 120px, #fff 0%, transparent 100%);
+  background-repeat: repeat;
+  animation: sparkleFloat 4s ease-in-out infinite;
+  mix-blend-mode: screen;
+  opacity: 0.3;
+}
+
+@keyframes sparkleFloat {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-10px) scale(1.1);
+    opacity: 0.5;
+  }
 }
 
 .title-bar {
@@ -53,11 +100,23 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(192, 192, 192, 0.1),
-    rgba(255, 255, 255, 0.2),
-    rgba(192, 192, 192, 0.1),
+    rgba(192, 192, 192, 0.3),
+    rgba(255, 255, 255, 0.5),
+    rgba(192, 192, 192, 0.3),
     transparent
   );
   border-radius: 2px;
   overflow: hidden;
+  animation: barPulse 2s ease-in-out infinite;
+}
+
+@keyframes barPulse {
+  0%, 100% {
+    opacity: 0.7;
+    transform: scaleX(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleX(1.05);
+  }
 }
