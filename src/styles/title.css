@@ -19,6 +19,25 @@
     0 4px 8px rgba(0, 0, 0, 0.1);
   transform: scale(1.05);
   transition: all 0.3s ease;
+  position: relative;
+}
+
+.glass-title::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    transparent 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: text-twinkle 4s ease-in-out infinite;
 }
 
 .glass-title:hover {
@@ -84,5 +103,20 @@
   100% {
     transform: translateX(400%);
     opacity: 0;
+  }
+}
+
+@keyframes text-twinkle {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
   }
 }
