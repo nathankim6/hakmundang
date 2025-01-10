@@ -5,17 +5,7 @@
 }
 
 .glass-title {
-  background: linear-gradient(
-    90deg,
-    #1a1a1a 0%,
-    #404040 25%,
-    #808080 45%,
-    #ffffff 50%,
-    #808080 55%,
-    #404040 75%,
-    #1a1a1a 100%
-  );
-  background-size: 200% auto;
+  background: linear-gradient(135deg, #1E293B 0%, #334155 50%, #475569 100%);
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
@@ -23,116 +13,29 @@
   position: relative;
   font-family: 'Orbitron', sans-serif;
   font-weight: 900;
-  letter-spacing: 0.1em;
-  animation: titleGlow 12s linear infinite;
+  letter-spacing: 0.15em;
   text-shadow: 
     0 2px 4px rgba(0, 0, 0, 0.2),
     0 4px 8px rgba(0, 0, 0, 0.1);
   transform: scale(1.05);
+  transition: all 0.3s ease;
 }
 
-@keyframes titleGlow {
-  0% {
-    background-position: 0% center;
-  }
-  100% {
-    background-position: 200% center;
-  }
-}
-
-.glass-title::before {
-  content: attr(data-text);
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    rgba(255, 255, 255, 0.15) 50%,
-    transparent 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: shimmerEffect 8s ease-in-out infinite;
-  opacity: 0.7;
-}
-
-@keyframes shimmerEffect {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  20%, 80% {
-    opacity: 0.7;
-  }
-  100% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-}
-
-.title-sparkle {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(
-    circle at center,
-    rgba(255, 255, 255, 0.1) 0%,
-    transparent 70%
-  );
-  mix-blend-mode: overlay;
-  animation: sparkleEffect 6s ease-in-out infinite;
-  pointer-events: none;
-}
-
-@keyframes sparkleEffect {
-  0%, 100% {
-    opacity: 0.3;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.5;
-    transform: scale(1.05);
-  }
+.glass-title:hover {
+  transform: scale(1.08);
 }
 
 .title-bar {
   position: relative;
   width: 100%;
-  height: 2px;
+  height: 3px;
   margin-top: 1rem;
   background: linear-gradient(
     90deg,
-    transparent 0%,
-    rgba(155, 135, 245, 0.3) 20%,
-    rgba(155, 135, 245, 0.5) 50%,
-    rgba(155, 135, 245, 0.3) 80%,
-    transparent 100%
+    #1E293B 0%,
+    #334155 50%,
+    #475569 100%
   );
-  border-radius: 1px;
-  overflow: hidden;
-}
-
-.title-bar::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    rgba(255, 255, 255, 0.4) 50%,
-    transparent 100%
-  );
-  animation: barShine 8s ease-in-out infinite;
-}
-
-@keyframes barShine {
-  to {
-    transform: translateX(200%);
-  }
+  border-radius: 2px;
+  opacity: 0.7;
 }
