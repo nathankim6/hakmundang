@@ -8,13 +8,11 @@
   background: linear-gradient(
     90deg,
     #1a1a1a 0%,
-    #404040 15%,
-    #808080 30%,
-    #c0c0c0 45%,
+    #404040 25%,
+    #808080 45%,
     #ffffff 50%,
-    #c0c0c0 55%,
-    #808080 70%,
-    #404040 85%,
+    #808080 55%,
+    #404040 75%,
     #1a1a1a 100%
   );
   background-size: 200% auto;
@@ -24,14 +22,20 @@
   -webkit-text-fill-color: transparent;
   position: relative;
   font-family: 'Orbitron', sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.15em;
+  font-weight: 900;
+  letter-spacing: 0.1em;
   animation: titleGlow 12s linear infinite;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  text-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.2),
+    0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
 }
 
 @keyframes titleGlow {
-  to {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
     background-position: 200% center;
   }
 }
@@ -44,24 +48,28 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(
-    120deg,
+    90deg,
     transparent 0%,
-    rgba(255, 255, 255, 0.2) 10%,
-    rgba(255, 255, 255, 0.4) 20%,
-    transparent 30%
+    rgba(255, 255, 255, 0.15) 50%,
+    transparent 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
   animation: shimmerEffect 8s ease-in-out infinite;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 @keyframes shimmerEffect {
   0% {
     transform: translateX(-100%);
+    opacity: 0;
+  }
+  20%, 80% {
+    opacity: 0.7;
   }
   100% {
     transform: translateX(100%);
+    opacity: 0;
   }
 }
 
@@ -70,22 +78,23 @@
   width: 100%;
   height: 100%;
   background: radial-gradient(
-    circle at 50% 50%,
+    circle at center,
     rgba(255, 255, 255, 0.1) 0%,
-    transparent 60%
+    transparent 70%
   );
   mix-blend-mode: overlay;
   animation: sparkleEffect 6s ease-in-out infinite;
+  pointer-events: none;
 }
 
 @keyframes sparkleEffect {
   0%, 100% {
-    opacity: 0.2;
+    opacity: 0.3;
     transform: scale(1);
   }
   50% {
-    opacity: 0.3;
-    transform: scale(1.02);
+    opacity: 0.5;
+    transform: scale(1.05);
   }
 }
 
@@ -97,9 +106,9 @@
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(155, 135, 245, 0.2) 20%,
-    rgba(155, 135, 245, 0.4) 50%,
-    rgba(155, 135, 245, 0.2) 80%,
+    rgba(155, 135, 245, 0.3) 20%,
+    rgba(155, 135, 245, 0.5) 50%,
+    rgba(155, 135, 245, 0.3) 80%,
     transparent 100%
   );
   border-radius: 1px;
@@ -119,7 +128,7 @@
     rgba(255, 255, 255, 0.4) 50%,
     transparent 100%
   );
-  animation: barShine 6s ease-in-out infinite;
+  animation: barShine 8s ease-in-out infinite;
 }
 
 @keyframes barShine {
