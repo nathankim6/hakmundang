@@ -7,17 +7,15 @@
 .glass-title {
   background: linear-gradient(
     90deg,
-    #2d2d2d 0%,
-    #4d4d4d 10%,
-    #7b7b7b 20%,
-    #a8a8a8 30%,
-    #d4d4d4 40%,
+    #1a1a1a 0%,
+    #404040 15%,
+    #808080 30%,
+    #c0c0c0 45%,
     #ffffff 50%,
-    #d4d4d4 60%,
-    #a8a8a8 70%,
-    #7b7b7b 80%,
-    #4d4d4d 90%,
-    #2d2d2d 100%
+    #c0c0c0 55%,
+    #808080 70%,
+    #404040 85%,
+    #1a1a1a 100%
   );
   background-size: 200% auto;
   color: transparent;
@@ -27,12 +25,9 @@
   position: relative;
   font-family: 'Orbitron', sans-serif;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 0.15em;
   animation: titleGlow 12s linear infinite;
-  text-shadow: 
-    2px 2px 4px rgba(0, 0, 0, 0.3),
-    -2px -2px 4px rgba(255, 255, 255, 0.2);
-  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.3));
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 @keyframes titleGlow {
@@ -49,15 +44,16 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(
-    45deg,
+    120deg,
     transparent 0%,
-    rgba(255, 255, 255, 0.1) 50%,
-    transparent 100%
+    rgba(255, 255, 255, 0.2) 10%,
+    rgba(255, 255, 255, 0.4) 20%,
+    transparent 30%
   );
   -webkit-background-clip: text;
   background-clip: text;
-  animation: shimmerEffect 6s linear infinite;
-  opacity: 0.5;
+  animation: shimmerEffect 8s ease-in-out infinite;
+  opacity: 0.6;
 }
 
 @keyframes shimmerEffect {
@@ -73,40 +69,61 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  pointer-events: none;
   background: radial-gradient(
     circle at 50% 50%,
     rgba(255, 255, 255, 0.1) 0%,
-    transparent 50%
+    transparent 60%
   );
   mix-blend-mode: overlay;
-  animation: sparkleEffect 8s ease-in-out infinite;
+  animation: sparkleEffect 6s ease-in-out infinite;
 }
 
 @keyframes sparkleEffect {
   0%, 100% {
-    opacity: 0.3;
+    opacity: 0.2;
     transform: scale(1);
   }
   50% {
-    opacity: 0.5;
-    transform: scale(1.05);
+    opacity: 0.3;
+    transform: scale(1.02);
   }
 }
 
 .title-bar {
   position: relative;
   width: 100%;
-  height: 3px;
-  margin-top: 12px;
+  height: 2px;
+  margin-top: 1rem;
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(192, 192, 192, 0.3) 20%,
-    rgba(255, 255, 255, 0.5) 50%,
-    rgba(192, 192, 192, 0.3) 80%,
+    rgba(155, 135, 245, 0.2) 20%,
+    rgba(155, 135, 245, 0.4) 50%,
+    rgba(155, 135, 245, 0.2) 80%,
     transparent 100%
   );
-  border-radius: 2px;
+  border-radius: 1px;
   overflow: hidden;
+}
+
+.title-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    transparent 100%
+  );
+  animation: barShine 6s ease-in-out infinite;
+}
+
+@keyframes barShine {
+  to {
+    transform: translateX(200%);
+  }
 }
