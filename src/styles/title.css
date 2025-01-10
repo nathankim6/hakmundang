@@ -19,7 +19,7 @@
     0 4px 8px rgba(0, 0, 0, 0.1);
   transform: scale(1.05);
   transition: all 0.3s ease;
-  animation: text-twinkle 2s ease-in-out infinite;
+  animation: text-twinkle 1s ease-in-out infinite;
 }
 
 .glass-title:hover {
@@ -55,11 +55,11 @@
     rgba(255, 255, 255, 0.8) 50%,
     transparent 100%
   );
-  animation: static-shine 3s ease-in-out infinite;
+  animation: static-shine 1.5s ease-in-out infinite;
 }
 
 .title-bar::after {
-  animation-delay: 1.5s;
+  animation-delay: 0.75s;
 }
 
 @keyframes text-twinkle {
