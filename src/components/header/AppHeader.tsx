@@ -20,11 +20,11 @@ export const AppHeader = () => {
         />
       </div>
       
-      {/* Title section with enhanced styling */}
+      {/* Title section with enhanced metallic styling */}
       <div className="flex flex-col items-center relative z-10">
         <div className="title-sparkle"></div>
         <h1 className="text-7xl font-bold tracking-wider relative group">
-          <span className="glass-title inline-block transform transition-transform group-hover:scale-105 duration-500">
+          <span className="glass-title inline-block transform transition-transform group-hover:scale-105 duration-500" data-text="ORUN AI QUIZ MAKER">
             ORUN AI QUIZ MAKER
           </span>
         </h1>
