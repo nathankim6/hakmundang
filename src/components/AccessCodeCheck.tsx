@@ -16,35 +16,8 @@ const SESSION_TIMEOUT = 2 * 60 * 60 * 1000; // 2 hours in milliseconds
 export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
   const [code, setCode] = useState("");
   const [subscriptionExpiry, setSubscriptionExpiry] = useState<string | null>(null);
-  const [backgroundUrl, setBackgroundUrl] = useState<string | null>(null);
   const navigate = useNavigate();
   const { toast } = useToast();
-
-  useEffect(() => {
-    const fetchBackgroundMedia = async () => {
-      const { data: files, error } = await supabase
-        .storage
-        .from('backgrounds')
-        .list();
-
-      if (error) {
-        console.error('Error fetching background:', error);
-        return;
-      }
-
-      if (files && files.length > 0) {
-        const latestFile = files[files.length - 1];
-        const { data: { publicUrl } } = supabase
-          .storage
-          .from('backgrounds')
-          .getPublicUrl(latestFile.name);
-          
-        setBackgroundUrl(publicUrl);
-      }
-    };
-
-    fetchBackgroundMedia();
-  }, []);
 
   useEffect(() => {
     const lastLoginTime = localStorage.getItem("lastLoginTime");
@@ -148,13 +121,12 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
     }
   };
 
-  const isVideo = backgroundUrl?.match(/\.(mp4|webm|ogg)$/i);
-
   return (
     <div className="fixed inset-0 z-50 overflow-hidden">
-      {backgroundUrl && (
-        <BackgroundMedia url={backgroundUrl} isVideo={!!isVideo} />
-      )}
+      <BackgroundMedia
+        url="https://jpanpwbdlhsxnyaldddm.supabase.co/storage/v1/object/public/backgrounds/20250105_1334_Lighthouse%20Guardianship_simple_compose_01jgtbw8pnfgab82e4whsqq2dm%20(1).mp4"
+        isVideo={true}
+      />
       
       <div className="fixed left-[50%] top-[50%] z-50 w-full max-w-lg translate-x-[-50%] translate-y-[-50%] space-y-8">
         <div className="rounded-xl p-8">
