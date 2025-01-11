@@ -1,0 +1,28 @@
+.title-container {
+  position: relative;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.glass-title {
+  background: linear-gradient(135deg, #9b87f5 0%, #8B5CF6 50%, #D6BCFA 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  text-shadow: 
+    0 0 10px rgba(155, 135, 245, 0.3),
+    0 0 20px rgba(139, 92, 246, 0.2),
+    0 0 30px rgba(214, 188, 250, 0.1);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  animation: glow 3s ease-in-out infinite, twinkle 1.5s ease-in-out infinite;
+}
+
+.glass-title:hover {
+  transform: scale(1.08);
+}
