@@ -20,7 +20,7 @@
     0 0 30px rgba(214, 188, 250, 0.1);
   transform: scale(1.05);
   transition: all 0.3s ease;
-  animation: glow 3s ease-in-out infinite;
+  animation: glow 3s ease-in-out infinite, twinkle 1.5s ease-in-out infinite;
 }
 
 .glass-title:hover {
@@ -97,5 +97,16 @@
   100% {
     transform: translateX(100%);
     opacity: 0;
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.9;
+    filter: brightness(1);
+  }
+  50% {
+    opacity: 1;
+    filter: brightness(1.2);
   }
 }
