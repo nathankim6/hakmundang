@@ -61,21 +61,21 @@
     width: 100%;
     height: 100%;
     background: 
-      radial-gradient(circle at 20% 20%, rgba(124, 58, 237, 0.02) 0%, transparent 70%),
-      radial-gradient(circle at 80% 80%, rgba(236, 72, 153, 0.02) 0%, transparent 70%),
+      radial-gradient(circle at 20% 20%, rgba(124, 58, 237, 0.015) 0%, transparent 70%),
+      radial-gradient(circle at 80% 80%, rgba(236, 72, 153, 0.015) 0%, transparent 70%),
       repeating-linear-gradient(
         45deg,
-        rgba(124, 58, 237, 0.01) 0px,
-        rgba(124, 58, 237, 0.01) 1px,
+        rgba(124, 58, 237, 0.008) 0px,
+        rgba(124, 58, 237, 0.008) 1px,
         transparent 1px,
-        transparent 10px
+        transparent 12px
       ),
       repeating-linear-gradient(
         -45deg,
-        rgba(236, 72, 153, 0.01) 0px,
-        rgba(236, 72, 153, 0.01) 1px,
+        rgba(236, 72, 153, 0.008) 0px,
+        rgba(236, 72, 153, 0.008) 1px,
         transparent 1px,
-        transparent 10px
+        transparent 12px
       );
     pointer-events: none;
     z-index: -1;
