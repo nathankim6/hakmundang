@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { supabase } from "@/lib/supabase";
 import { AppHeader } from "@/components/header/AppHeader";
 import { LoginSection } from "@/components/auth/LoginSection";
+import { BackgroundMedia } from "@/components/login/BackgroundMedia";
 
 const Index = () => {
   const [userName, setUserName] = useState<string>("");
@@ -98,11 +99,10 @@ const Index = () => {
 
   return (
     <div className="min-h-screen py-8 px-4 sm:px-6 lg:px-8 relative">
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#E6EAF2] via-[#D8E0ED] to-[#C9D6E8] z-0" />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
-      </div>
+      <BackgroundMedia
+        url="https://jpanpwbdlhsxnyaldddm.supabase.co/storage/v1/object/public/backgrounds/background.mp4"
+        isVideo={true}
+      />
 
       <div className="max-w-[1600px] mx-auto relative z-10">
         <div className="flex flex-col space-y-8">
