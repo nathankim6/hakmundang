@@ -27,7 +27,7 @@ export const BackgroundMedia = ({ url, isVideo }: BackgroundMediaProps) => {
           className="absolute h-full w-full object-cover"
         />
       )}
-      <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]" />
+      <div className="absolute inset-0 bg-black/20" />
     </div>
   );
 };
