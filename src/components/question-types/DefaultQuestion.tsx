@@ -11,38 +11,54 @@ export const DefaultQuestion = ({
   questionPart,
   answerPart
 }: DefaultQuestionProps) => {
-  // Split answer part into answer number and explanation if both exist
-  const [answer, explanation] = answerPart.split('[해설]').map(part => part.trim());
+  // For Logic Flow questions, split content into sections and filter out empty ones
+  const isLogicFlow = questionPart.includes('[지문 요약]') || questionPart.includes('[서론]');
+  
+  if (isLogicFlow) {
+    const sections = questionPart.split(/\[(.*?)\]/g).filter(Boolean);
+    const formattedSections: { title: string; content: string }[] = [];
+    
+    for (let i = 0; i < sections.length; i += 2) {
+      if (sections[i + 1] && sections[i + 1].trim()) {  // Only add sections with non-empty content
+        formattedSections.push({
+          title: sections[i],
+          content: sections[i + 1].trim()
+        });
+      }
+    }
 
-  return (
-    <div className="mb-8">
-      <div className="prose max-w-none">
-        <h3 className="text-2xl font-bold mb-2">
-          <span className="bg-gradient-to-r from-[#0EA5E9] to-[#403E43] bg-clip-text text-transparent">
-            문제 {questionNumber}
-          </span>
-        </h3>
-        
-        <div className="space-y-4">
-          <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F1F0FB] p-4 rounded-lg border border-[#D3E4FD]/30">
-            {questionPart}
-          </div>
-          
+    return (
+      <Card className="mb-4">
+        <CardContent className="pt-6">
+          <div className="text-lg font-semibold mb-4">문제 {questionNumber}</div>
+          {formattedSections.map((section, index) => (
+            <div key={index} className="mb-4">
+              <div className="font-medium text-gray-700">[{section.title}]</div>
+              <div className="mt-1 whitespace-pre-wrap">{section.content}</div>
+            </div>
+          ))}
           {answerPart && (
-            <div className="result-text whitespace-pre-wrap leading-relaxed relative bg-[#F8F7FF] p-4 rounded-lg border border-[#0EA5E9]/20">
-              {answer}
-              {explanation && (
-                <>
-                  <br />
-                  [해설] {explanation}
-                </>
-              )}
+            <div className="mt-4 pt-4 border-t border-gray-200">
+              {answerPart}
             </div>
           )}
-        </div>
-      </div>
-      
-      <div className="mt-6 h-px bg-gradient-to-r from-transparent via-[#0EA5E9]/30 to-transparent" />
-    </div>
+        </CardContent>
+      </Card>
+    );
+  }
+
+  // For non-Logic Flow questions, keep the original rendering
+  return (
+    <Card className="mb-4">
+      <CardContent className="pt-6">
+        <div className="text-lg font-semibold mb-4">문제 {questionNumber}</div>
+        <div className="whitespace-pre-wrap">{questionPart}</div>
+        {answerPart && (
+          <div className="mt-4 pt-4 border-t border-gray-200">
+            {answerPart}
+          </div>
+        )}
+      </CardContent>
+    </Card>
   );
 };
