@@ -55,6 +55,7 @@ export const getQuestionTypes = () => [
 
   // 서답형
   { id: "orderWriting", name: "배열영작" },
+  { id: "conditionWriting", name: "조건영작" },
   { id: "summaryBlank", name: "요약문 빈칸" },
   { id: "topicWriting", name: "주제문영작" },
 
