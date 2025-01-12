@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useToast } from "./ui/use-toast";
-import { supabase } from "@/lib/supabase";
+import { supabase } from "@/integrations/supabase/client";
 import { LoginLogo } from "./login/LoginLogo";
 import { LoginTitle } from "./login/LoginTitle";
 import { LoginForm } from "./login/LoginForm";
@@ -15,6 +15,7 @@ const SESSION_TIMEOUT = 2 * 60 * 60 * 1000; // 2 hours in milliseconds
 
 export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
   const [code, setCode] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const [subscriptionExpiry, setSubscriptionExpiry] = useState<string | null>(null);
   const navigate = useNavigate();
   const { toast } = useToast();
@@ -65,7 +66,18 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
   };
 
   const handleSubmit = async () => {
-    if (code.length >= 4) {
+    if (code.length < 4) {
+      toast({
+        title: "입력 오류",
+        description: "엑세스 코드는 최소 4자리 이상이어야 합니다.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsLoading(true);
+
+    try {
       if (code === "101100") {
         onAccessGranted();
         localStorage.setItem("isAdmin", "true");
@@ -80,44 +92,57 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
         return;
       }
 
-      try {
-        const { data: accessCode, error } = await supabase
-          .from('access_codes')
-          .select('*')
-          .eq('code', code)
-          .maybeSingle();
+      const { data: accessCode, error } = await supabase
+        .from('access_codes')
+        .select('*')
+        .eq('code', code)
+        .maybeSingle();
 
-        if (error) {
-          throw error;
-        }
+      if (error) {
+        console.error("Supabase error:", error);
+        throw new Error("데이터베이스 접근 중 오류가 발생했습니다.");
+      }
 
-        if (accessCode && new Date(accessCode.expiry_date) > new Date()) {
-          onAccessGranted();
-          localStorage.setItem("userName", accessCode.name);
-          localStorage.setItem("hasAccess", "true");
-          localStorage.setItem("lastLoginTime", Date.now().toString());
-          localStorage.setItem("subscriptionExpiry", accessCode.expiry_date);
-          setSubscriptionExpiry(accessCode.expiry_date);
-          toast({
-            title: "접속 성공",
-            description: "엑세스 코드가 확인되었습니다.",
-          });
-          navigate("/");
-        } else {
-          toast({
-            title: "접속 실패",
-            description: "유효하지 않은 엑세스 코드입니다.",
-            variant: "destructive",
-          });
-        }
-      } catch (error) {
-        console.error("Access code check error:", error);
+      if (!accessCode) {
         toast({
-          title: "오류 발생",
-          description: "엑세스 코드 확인 중 오류가 발생했습니다.",
+          title: "접속 실패",
+          description: "유효하지 않은 엑세스 코드입니다.",
           variant: "destructive",
         });
+        return;
       }
+
+      if (new Date(accessCode.expiry_date) <= new Date()) {
+        toast({
+          title: "접속 실패",
+          description: "만료된 엑세스 코드입니다.",
+          variant: "destructive",
+        });
+        return;
+      }
+
+      onAccessGranted();
+      localStorage.setItem("userName", accessCode.name);
+      localStorage.setItem("hasAccess", "true");
+      localStorage.setItem("lastLoginTime", Date.now().toString());
+      localStorage.setItem("subscriptionExpiry", accessCode.expiry_date);
+      setSubscriptionExpiry(accessCode.expiry_date);
+      
+      toast({
+        title: "접속 성공",
+        description: "엑세스 코드가 확인되었습니다.",
+      });
+      navigate("/");
+
+    } catch (error) {
+      console.error("Access code check error:", error);
+      toast({
+        title: "오류 발생",
+        description: error instanceof Error ? error.message : "엑세스 코드 확인 중 오류가 발생했습니다.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -137,6 +162,7 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
               code={code}
               onCodeChange={handleInputChange}
               onSubmit={handleSubmit}
+              isLoading={isLoading}
             />
           </div>
         </div>
