@@ -58,7 +58,7 @@ export const getQuestionTypes = () => [
   { id: "summaryBlank", name: "요약문 빈칸" },
   { id: "topicWriting", name: "주제문영작" },
 
-  // 옳은영어 콘텐츠
+  // 기타 유형
   { id: "synonymAntonym", name: "동의어/반의어" },
   { id: "trueOrFalse", name: "True or False" },
   { id: "logicFlow", name: "Logic Flow" },
