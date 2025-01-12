@@ -43,6 +43,10 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
       window.open("https://chatgpt.com/g/g-6779f097fc348191acb04db248fc7fce-seodabhyeong-baeyeolyeongjag", "_blank");
       return;
     }
+    if (type.id === "vocabBook") {
+      window.open("https://vocabbook-60.lovable.app", "_blank");
+      return;
+    }
     onClick();
   };
 
@@ -76,13 +80,13 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
             className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"
           />
         )}
-        {!isSelected && hasAccess && type.id !== "dangDict" && type.id !== "summaryBlank" && type.id !== "sungReference" && type.id !== "sungExternal" && type.id !== "sungnamVocab1" && type.id !== "sungnamVocab2" && type.id !== "topicWriting" && type.id !== "orderWriting" && (
+        {!isSelected && hasAccess && type.id !== "dangDict" && type.id !== "summaryBlank" && type.id !== "sungReference" && type.id !== "sungExternal" && type.id !== "sungnamVocab1" && type.id !== "sungnamVocab2" && type.id !== "topicWriting" && type.id !== "orderWriting" && type.id !== "vocabBook" && (
           <Sparkles 
             className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-[#FFD700] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             style={{ filter: 'drop-shadow(0 0 2px rgba(255, 215, 0, 0.5))' }}
           />
         )}
-        {isSelected && hasAccess && type.id !== "dangDict" && type.id !== "summaryBlank" && type.id !== "sungReference" && type.id !== "sungExternal" && type.id !== "sungnamVocab1" && type.id !== "sungnamVocab2" && type.id !== "topicWriting" && type.id !== "orderWriting" && (
+        {isSelected && hasAccess && type.id !== "dangDict" && type.id !== "summaryBlank" && type.id !== "sungReference" && type.id !== "sungExternal" && type.id !== "sungnamVocab1" && type.id !== "sungnamVocab2" && type.id !== "topicWriting" && type.id !== "orderWriting" && type.id !== "vocabBook" && (
           <Check className="w-4 h-4 text-[#0EA5E9] animate-bounce" />
         )}
         <span className="flex-1">{type.name}</span>

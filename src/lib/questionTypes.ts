@@ -63,7 +63,8 @@ export const getQuestionTypes = () => [
   { id: "trueOrFalse", name: "True or False" },
   { id: "logicFlow", name: "Logic Flow" },
   { id: "sentenceSplitter", name: "한영문장분리" },
-  { id: "weekendClinic", name: "주말클리닉" }
+  { id: "weekendClinic", name: "주말클리닉" },
+  { id: "vocabBook", name: "단어장생성" }
 ];
 
 export const getPromptForType = (type: QuestionType, text: string): string => {
