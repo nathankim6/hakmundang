@@ -150,7 +150,7 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
   return (
     <div className="fixed inset-0 z-50 overflow-hidden">
       <BackgroundMedia
-        url="https://jpanpwbdlhsxnyaldddm.supabase.co/storage/v1/object/public/backgrounds/20250105_1334_Lighthouse%20Guardianship_simple_compose_01jgtbw8pnfgab82e4whsqq2dm%20(1).mp4"
+        url="https://wxjazdqabryflvfztujk.supabase.co/storage/v1/object/sign/hakmoondang/20250112_1415_AI%20Quizmaker%20Unveiled_simple_compose_01jhcf0xhvf519j4h32pk0k5xv.mp4?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJoYWttb29uZGFuZy8yMDI1MDExMl8xNDE1X0FJIFF1aXptYWtlciBVbnZlaWxlZF9zaW1wbGVfY29tcG9zZV8wMWpoY2YweGh2ZjUxOWo0aDMycGswazV4di5tcDQiLCJpYXQiOjE3MzY2NjAwNDUsImV4cCI6MjA1MjAyMDA0NX0.J2_yG0K_2L7mdHFnRfblI3QiKF-YDaafg17xO7Vbc3k&t=2025-01-12T05%3A34%3A05.338Z"
         isVideo={true}
       />
       
