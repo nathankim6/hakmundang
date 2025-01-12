@@ -11,7 +11,7 @@ type AccessCode = Database['public']['Tables']['access_codes']['Row'];
 
 export const AccessCodeManager = () => {
   const [newCode, setNewCode] = useState("");
-  const [expiryDays, setExpiryDays] = useState("7");
+  const [expiryDays, setExpiryDays] = useState("");
   const [accessCodes, setAccessCodes] = useState<AccessCode[]>([]);
   const { toast } = useToast();
   const navigate = useNavigate();
