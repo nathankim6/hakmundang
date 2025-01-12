@@ -15,7 +15,7 @@ export const WeekendClinicQuestion = ({
   const formattedSections: { title: string; content: string }[] = [];
   
   for (let i = 0; i < sections.length; i += 2) {
-    if (sections[i + 1]) {
+    if (sections[i + 1] && sections[i + 1].trim()) {  // Only add sections with non-empty content
       formattedSections.push({
         title: sections[i],
         content: sections[i + 1].trim()
