@@ -18,13 +18,10 @@ import {
   getSynonymAntonymPrompt,
   getLogicFlowPrompt,
   getWeekendClinicPrompt,
-  getDictionaryPrompt,
-  getSummaryBlankPrompt,
   getOrderWritingPrompt,
+  getSummaryBlankPrompt,
   getTopicWritingPrompt,
-  getSungnamVocab1Prompt,
-  getSungnamVocab2Prompt,
-  getSungnamVocab3Prompt
+  getDictionaryPrompt
 } from "./prompts";
 
 export const getQuestionTypes = () => [
@@ -56,7 +53,7 @@ export const getQuestionTypes = () => [
   // 서답형
   { id: "orderWriting", name: "배열영작" },
   { id: "summaryBlank", name: "요약문 빈칸" },
-  { id: "topicWriting", name: "주제문 영작" },
+  { id: "topicWriting", name: "주제문영작" },
 
   // 옳은영어 콘텐츠
   { id: "synonymAntonym", name: "동의어/반의어" },
