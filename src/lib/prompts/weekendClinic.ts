@@ -12,7 +12,7 @@ export const getWeekendClinicPrompt = (text: string) => `당신은 영어학원�
 Water's unique ability to (A)__________ heat and change its (B)__________ makes it essential for regulating Earth's temperature and protecting aquatic life.
 
 [동사 워크북]
-Water (1 have) → ______ unique properties that (2 make) → ______ it essential for life. It can (3 absorb) → ______ large amounts of heat, which (4 help) → ______ regulate temperature on Earth. Many organisms (5 be) → ___ __________ by water's special characteristics. Water (6 exist) → ______ in three states. When water (7 freeze) → ______, it (8 expand) → ________ and (9 become) → ________ less dense, (10 allow) → ________ ice (11 float) → ______ on liquid water. This property (12 protect) → ________ aquatic life during winter by (13 create) → ________ an insulating layer of ice.
+Water (1) have → ______ unique properties that (2) make → ______ it essential for life. It can (3) absorb → ______ large amounts of heat, which (4) help → ______ regulate temperature on Earth.
 
 [정답]
 [요약문]
@@ -20,7 +20,7 @@ Water (1 have) → ______ unique properties that (2 make) → ______ it essentia
 [해설] 물의 고유한 열을 흡수하는 능력과 밀도를 변화시키는 특성은 지구의 온도를 조절하고 수중 생물을 보호하는 데 필수적이다.
 
 [동사 워크북]
-1. has  2. make  3. absorb  4. helps  5. are supported  6. exists  7. freezes  8. expands  9. becomes  10. allowing  11. float  12. protects  13. creating
+1. has  2. make  3. absorb  4. helps
 
 주의사항:
 1. 반드시 원문의 모든 문장을 포함하여 동사 워크북을 작성하세요.
@@ -29,6 +29,7 @@ Water (1 have) → ______ unique properties that (2 make) → ______ it essentia
 4. 수동태의 경우 be동사 형태로 추출하고 정답은 전체 수동태 형태로 제시하세요.
 5. to부정사, 동명사 등은 모두 동사 원형으로 처리하세요.
 6. 빈칸은 정답 길이에 맞게 언더바(_)로 표시하세요.
+7. 동사 워크북에서 괄호 안의 숫자는 밑줄에 포함되지 않도록 하세요. 예: "(1) have → ______" (O), "(1 have) → ______" (X)
 
 위 예시와 동일한 형식으로 다음 지문을 분석하여 문제를 생성해주세요:
 
