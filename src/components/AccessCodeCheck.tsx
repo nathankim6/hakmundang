@@ -6,6 +6,7 @@ import { LoginLogo } from "./login/LoginLogo";
 import { LoginTitle } from "./login/LoginTitle";
 import { LoginForm } from "./login/LoginForm";
 import { BackgroundMedia } from "./login/BackgroundMedia";
+import type { Database } from "@/integrations/supabase/types";
 
 interface AccessCodeCheckProps {
   onAccessGranted: () => void;
@@ -122,7 +123,7 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
       }
 
       onAccessGranted();
-      localStorage.setItem("userName", accessCode.name);
+      localStorage.setItem("userName", accessCode.name || '');
       localStorage.setItem("hasAccess", "true");
       localStorage.setItem("lastLoginTime", Date.now().toString());
       localStorage.setItem("subscriptionExpiry", accessCode.expiry_date);

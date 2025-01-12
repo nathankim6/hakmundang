@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { LoginSection } from "@/components/auth/LoginSection";
 import { APIConfig } from "@/components/APIConfig";
+import type { Database } from "@/integrations/supabase/types";
 
 export const AuthContainer = () => {
   const [userName, setUserName] = useState<string>("");
@@ -42,7 +43,7 @@ export const AuthContainer = () => {
       if (accessCodeData && new Date(accessCodeData.expiry_date) > new Date()) {
         localStorage.setItem("hasAccess", "true");
         localStorage.setItem("subscriptionExpiry", accessCodeData.expiry_date);
-        localStorage.setItem("userName", accessCodeData.name);
+        localStorage.setItem("userName", accessCodeData.name || '');
         
         const formattedDate = new Date(accessCodeData.expiry_date).toLocaleDateString('ko-KR', {
           year: 'numeric',
@@ -51,7 +52,7 @@ export const AuthContainer = () => {
         });
         
         setExpiryDate(formattedDate);
-        setUserName(accessCodeData.name);
+        setUserName(accessCodeData.name || '');
         setShowLoginForm(false);
         setAccessCode("");
         

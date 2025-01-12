@@ -5,11 +5,14 @@ import { useToast } from "@/components/ui/use-toast";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { Copy } from "lucide-react";
+import type { Database } from "@/integrations/supabase/types";
+
+type AccessCode = Database['public']['Tables']['access_codes']['Row'];
 
 export const AccessCodeManager = () => {
   const [newCode, setNewCode] = useState("");
   const [expiryDays, setExpiryDays] = useState("7");
-  const [accessCodes, setAccessCodes] = useState<Array<{ code: string; expiry_date: string }>>([]);
+  const [accessCodes, setAccessCodes] = useState<AccessCode[]>([]);
   const { toast } = useToast();
   const navigate = useNavigate();
 
@@ -149,7 +152,7 @@ export const AccessCodeManager = () => {
             <h2 className="font-semibold">현재 엑세스 코드 목록</h2>
             {accessCodes.map((code) => (
               <div
-                key={code.code}
+                key={code.id}
                 className="flex justify-between items-center p-3 bg-gray-50 rounded"
               >
                 <div className="flex items-center space-x-4">
