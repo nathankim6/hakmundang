@@ -37,11 +37,8 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-luxury-dark text-white min-h-screen relative overflow-x-hidden;
     font-family: 'Orbitron', sans-serif;
-    min-height: 100vh;
-    position: relative;
-    overflow-x: hidden;
   }
 
   .input-text, .result-text {
@@ -51,4 +48,25 @@
   .font-nanum {
     font-family: 'Nanum Gothic', sans-serif !important;
   }
+}
+
+.luxury-card {
+  @apply bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl shadow-xl;
+  background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.1) 100%);
+}
+
+.luxury-button {
+  @apply bg-luxury-accent text-white px-4 py-2 rounded-lg transition-all duration-300
+         hover:shadow-lg hover:scale-105 active:scale-95;
+  background: linear-gradient(135deg, #9b87f5 0%, #7E69AB 100%);
+}
+
+.luxury-input {
+  @apply bg-white/10 border border-white/20 rounded-lg px-4 py-2 text-white
+         placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-luxury-accent/50;
+}
+
+.luxury-title {
+  @apply text-transparent bg-clip-text animate-luxury-fade;
+  background: linear-gradient(135deg, #9b87f5 0%, #E5DEFF 100%);
 }

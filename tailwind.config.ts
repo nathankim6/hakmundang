@@ -27,6 +27,12 @@ export default {
         ring: 'hsl(var(--ring))',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
+        luxury: {
+          dark: '#1A1F2C',
+          purple: '#7E69AB',
+          accent: '#9b87f5',
+          light: '#F1F0FB'
+        },
         primary: {
           DEFAULT: 'hsl(var(--primary))',
           foreground: 'hsl(var(--primary-foreground))'
@@ -76,6 +82,16 @@ export default {
           '50%': {
             opacity: '0.9'
           }
+        },
+        'luxury-fade': {
+          '0%': { 
+            opacity: '0',
+            transform: 'translateY(10px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          }
         }
       },
       animation: {
@@ -83,7 +99,13 @@ export default {
         'accordion-up': 'accordion-up 0.2s ease-out',
         'spin-slow': 'spin 3s linear infinite',
         'shimmer': 'shimmer 0.5s infinite',
-        'gradient': 'gradient 3s ease-in-out infinite'
+        'gradient': 'gradient 3s ease-in-out infinite',
+        'luxury-fade': 'luxury-fade 0.5s ease-out'
+      },
+      backgroundImage: {
+        'luxury-gradient': 'linear-gradient(135deg, #1A1F2C 0%, #403E43 100%)',
+        'luxury-accent': 'linear-gradient(135deg, #9b87f5 0%, #7E69AB 100%)',
+        'luxury-light': 'linear-gradient(135deg, #F1F0FB 0%, #E5DEFF 100%)'
       }
     }
   },
