@@ -57,3 +57,28 @@
 .gradient-bg {
   background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
+
+.platinum-title {
+  background: linear-gradient(
+    135deg,
+    #E5E4E2 0%,
+    #D3D3D3 25%,
+    #E5E4E2 50%,
+    #D3D3D3 75%,
+    #E5E4E2 100%
+  );
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: platinum-shimmer 3s linear infinite;
+  text-shadow: 
+    0 0 1px rgba(229, 228, 226, 0.2),
+    0 0 2px rgba(211, 211, 211, 0.3);
+}
+
+@keyframes platinum-shimmer {
+  to {
+    background-position: 200% center;
+  }
+}

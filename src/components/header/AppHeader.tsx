@@ -21,9 +21,9 @@ export const AppHeader = () => {
           />
         </div>
         
-        {/* Title section with luxury styling */}
+        {/* Title section with platinum metallic styling */}
         <div className="flex flex-col items-center">
-          <h1 className="text-6xl font-bold tracking-wider text-[#1A1F2C] relative group">
+          <h1 className="text-6xl font-bold tracking-wider platinum-title relative group">
             학문당 AI QUIZ MAKER
             <div className="absolute inset-0 bg-luxury-accent/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </h1>
