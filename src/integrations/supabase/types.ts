@@ -9,27 +9,24 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
-      access_codes: {
+      secrets: {
         Row: {
-          code: string
           created_at: string
-          expiry_date: string
           id: string
           name: string
+          value: string
         }
         Insert: {
-          code: string
           created_at?: string
-          expiry_date: string
           id?: string
-          name?: string
+          name: string
+          value: string
         }
         Update: {
-          code?: string
           created_at?: string
-          expiry_date?: string
           id?: string
           name?: string
+          value?: string
         }
         Relationships: []
       }
