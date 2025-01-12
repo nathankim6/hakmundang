@@ -22,7 +22,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
     type.id.match(/^(orderWriting|conditionWriting|summaryBlank|topicWriting)$/)
   );
   
-  // 옳은영어 콘텐츠
+  // 기타 유형
   const contentTypes = types.filter(type => 
     type.id.match(/^(synonymAntonym|trueOrFalse|logicFlow|sentenceSplitter|weekendClinic)$/)
   );
@@ -60,7 +60,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
         onTypeClick={handleTypeClick}
       />
       <TypeCategory
-        title="옳은영어 콘텐츠"
+        title="기타 유형"
         types={contentTypes}
         selectedTypes={selectedTypes}
         hasAccess={hasAccess}
