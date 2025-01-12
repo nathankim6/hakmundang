@@ -19,7 +19,7 @@ export const LoadingProgress = ({ current, total, onStop }: LoadingProgressProps
           <span className="font-semibold text-[#403E43]">문제 생성 중...</span>
         </div>
         <div className="flex items-center gap-4">
-          <span className="text-sm text-muted-foreground">
+          <span className="text-sm text-[#6B7280]">
             {current} / {total} 단어
           </span>
           <Button

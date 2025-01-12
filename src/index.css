@@ -37,12 +37,13 @@
   }
 
   body {
-    @apply bg-luxury-dark text-white min-h-screen relative overflow-x-hidden;
+    @apply bg-luxury-dark text-[#E5DEFF] min-h-screen relative overflow-x-hidden;
     font-family: 'Orbitron', sans-serif;
   }
 
   .input-text, .result-text {
     font-family: Gulim, '굴림', sans-serif !important;
+    @apply text-[#1A1F2C];
   }
 
   .font-nanum {
@@ -56,13 +57,13 @@
 }
 
 .luxury-button {
-  @apply bg-luxury-accent text-white px-4 py-2 rounded-lg transition-all duration-300
+  @apply bg-luxury-accent text-[#F1F0FB] px-4 py-2 rounded-lg transition-all duration-300
          hover:shadow-lg hover:scale-105 active:scale-95;
   background: linear-gradient(135deg, #9b87f5 0%, #7E69AB 100%);
 }
 
 .luxury-input {
-  @apply bg-white/10 border border-white/20 rounded-lg px-4 py-2 text-white
+  @apply bg-white/10 border border-white/20 rounded-lg px-4 py-2 text-[#F1F0FB]
          placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-luxury-accent/50;
 }
 
