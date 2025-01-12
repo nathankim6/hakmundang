@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
 import { useNavigate } from "react-router-dom";
-import { supabase } from "@/lib/supabase";
+import { supabase } from "@/integrations/supabase/client";
 import { LoginSection } from "@/components/auth/LoginSection";
 import { APIConfig } from "@/components/APIConfig";
 
