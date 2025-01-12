@@ -8,11 +8,11 @@ export const AppHeader = () => {
         <div className="absolute inset-0" 
           style={{
             backgroundImage: `
-              radial-gradient(circle at 25% 25%, rgba(155, 135, 245, 0.1) 0%, transparent 50%),
-              radial-gradient(circle at 75% 75%, rgba(214, 188, 250, 0.1) 0%, transparent 50%)
+              repeating-linear-gradient(45deg, #000 0, #000 1px, transparent 0, transparent 50%),
+              repeating-linear-gradient(-45deg, #000 0, #000 1px, transparent 0, transparent 50%)
             `,
-            backgroundSize: '50px 50px',
-            backgroundPosition: '0 0, 25px 25px'
+            backgroundSize: '20px 20px',
+            backgroundPosition: 'center center'
           }}>
         </div>
       </div>
