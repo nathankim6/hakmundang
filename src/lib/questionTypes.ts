@@ -55,17 +55,15 @@ export const getQuestionTypes = () => [
 
   // 서답형
   { id: "orderWriting", name: "배열영작" },
-  { id: "conditionWriting", name: "조건영작" },
   { id: "summaryBlank", name: "요약문 빈칸" },
   { id: "topicWriting", name: "주제문영작" },
 
-  // 기타 유형
+  // 옳은영어 콘텐츠
   { id: "synonymAntonym", name: "동의어/반의어" },
   { id: "trueOrFalse", name: "True or False" },
   { id: "logicFlow", name: "Logic Flow" },
   { id: "sentenceSplitter", name: "한영문장분리" },
-  { id: "weekendClinic", name: "주말클리닉" },
-  { id: "vocabBook", name: "단어장 생성" }
+  { id: "weekendClinic", name: "주말클리닉" }
 ];
 
 export const getPromptForType = (type: QuestionType, text: string): string => {
@@ -112,6 +110,14 @@ export const getPromptForType = (type: QuestionType, text: string): string => {
       return getSummaryBlankPrompt(text);
     case "topicWriting":
       return getTopicWritingPrompt(text);
+    case "dangDict":
+      return getDictionaryPrompt(text);
+    case "sungnamVocab1":
+      return getSungnamVocab1Prompt(text);
+    case "sungnamVocab2":
+      return getSungnamVocab2Prompt(text);
+    case "sungnamVocab3":
+      return getSungnamVocab3Prompt(text);
     default:
       return `Generate a question of type ${type.name} based on the following text: ${text}`;
   }

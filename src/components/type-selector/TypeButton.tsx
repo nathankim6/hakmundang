@@ -10,54 +10,40 @@ interface TypeButtonProps {
 }
 
 export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: TypeButtonProps) => {
-  const isExternalLink = [
-    "dangDict",
-    "summaryBlank",
-    "sungReference",
-    "sungExternal",
-    "sungnamVocab1",
-    "sungnamVocab2",
-    "topicWriting",
-    "orderWriting",
-    "vocabBook"
-  ].includes(type.id);
-
   const handleClick = () => {
-    if (!isExternalLink) {
-      onClick();
+    if (type.id === "dangDict") {
+      window.open("https://chatgpt.com/g/g-675422c0793c81918b65a1a25e82e7a0-danggoggo-yeongyeongsajeon", "_blank");
       return;
     }
-
-    // Handle external links
-    switch (type.id) {
-      case "dangDict":
-        window.open("https://chatgpt.com/g/g-675422c0793c81918b65a1a25e82e7a0-danggoggo-yeongyeongsajeon", "_blank");
-        break;
-      case "summaryBlank":
-        window.open("https://chatgpt.com/g/g-6779efe1a5ac819192283bbdb41de569-seodabhyeong-yoyagmun-binkan", "_blank");
-        break;
-      case "sungReference":
-        window.open("https://chatgpt.com/gpts/editor/g-6779f42e26208191bcbfffeedd80d875", "_blank");
-        break;
-      case "sungExternal":
-        window.open("https://chatgpt.com/gpts/editor/g-67498d63f1048191a987654ac0a2bd44", "_blank");
-        break;
-      case "sungnamVocab1":
-        window.open("https://chatgpt.com/g/g-rGMRYG1t6-sungyiyeogo-dongbanyieo/c/6779edff-5f3c-8000-812f-731f071bbb99", "_blank");
-        break;
-      case "sungnamVocab2":
-        window.open("https://chatgpt.com/g/g-pjnh7FMaA-sungyiyeogo-yemun/c/6779eeb6-c030-8000-8deb-46cee384031a", "_blank");
-        break;
-      case "topicWriting":
-        window.open("https://chatgpt.com/g/g-6779ef32ec3c8191845ee7aae1b2e827-seodabhyeong-jujemun/c/6779ef4c-2440-8000-a8dc-506ecc2c9eb1", "_blank");
-        break;
-      case "orderWriting":
-        window.open("https://chatgpt.com/g/g-6779f097fc348191acb04db248fc7fce-seodabhyeong-baeyeolyeongjag", "_blank");
-        break;
-      case "vocabBook":
-        window.open("https://vocabbook-60.lovable.app", "_blank");
-        break;
+    if (type.id === "summaryBlank") {
+      window.open("https://chatgpt.com/g/g-6779efe1a5ac819192283bbdb41de569-seodabhyeong-yoyagmun-binkan", "_blank");
+      return;
     }
+    if (type.id === "sungReference") {
+      window.open("https://chatgpt.com/gpts/editor/g-6779f42e26208191bcbfffeedd80d875", "_blank");
+      return;
+    }
+    if (type.id === "sungExternal") {
+      window.open("https://chatgpt.com/gpts/editor/g-67498d63f1048191a987654ac0a2bd44", "_blank");
+      return;
+    }
+    if (type.id === "sungnamVocab1") {
+      window.open("https://chatgpt.com/g/g-rGMRYG1t6-sungyiyeogo-dongbanyieo/c/6779edff-5f3c-8000-812f-731f071bbb99", "_blank");
+      return;
+    }
+    if (type.id === "sungnamVocab2") {
+      window.open("https://chatgpt.com/g/g-pjnh7FMaA-sungyiyeogo-yemun/c/6779eeb6-c030-8000-8deb-46cee384031a", "_blank");
+      return;
+    }
+    if (type.id === "topicWriting") {
+      window.open("https://chatgpt.com/g/g-6779ef32ec3c8191845ee7aae1b2e827-seodabhyeong-jujemun/c/6779ef4c-2440-8000-a8dc-506ecc2c9eb1", "_blank");
+      return;
+    }
+    if (type.id === "orderWriting") {
+      window.open("https://chatgpt.com/g/g-6779f097fc348191acb04db248fc7fce-seodabhyeong-baeyeolyeongjag", "_blank");
+      return;
+    }
+    onClick();
   };
 
   return (
@@ -90,13 +76,13 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
             className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"
           />
         )}
-        {!isSelected && hasAccess && !isExternalLink && (
+        {!isSelected && hasAccess && type.id !== "dangDict" && type.id !== "summaryBlank" && type.id !== "sungReference" && type.id !== "sungExternal" && type.id !== "sungnamVocab1" && type.id !== "sungnamVocab2" && type.id !== "topicWriting" && type.id !== "orderWriting" && (
           <Sparkles 
             className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-[#FFD700] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             style={{ filter: 'drop-shadow(0 0 2px rgba(255, 215, 0, 0.5))' }}
           />
         )}
-        {isSelected && hasAccess && !isExternalLink && (
+        {isSelected && hasAccess && type.id !== "dangDict" && type.id !== "summaryBlank" && type.id !== "sungReference" && type.id !== "sungExternal" && type.id !== "sungnamVocab1" && type.id !== "sungnamVocab2" && type.id !== "topicWriting" && type.id !== "orderWriting" && (
           <Check className="w-4 h-4 text-[#0EA5E9] animate-bounce" />
         )}
         <span className="flex-1">{type.name}</span>
