@@ -17,8 +17,8 @@ export const AppHeader = () => {
         </div>
       </div>
       
-      {/* Logo container with refined styling */}
-      <div className="w-28 h-28 rounded-full bg-white flex items-center justify-center relative z-10 shadow-lg transition-transform duration-300 hover:scale-105">
+      {/* Logo without circular background */}
+      <div className="relative z-10 transition-transform duration-300 hover:scale-105">
         <img 
           src="/lovable-uploads/f91b258e-bdcf-40aa-95e8-5668f20b8129.png" 
           alt="학문당입시학원 Logo" 
@@ -29,8 +29,8 @@ export const AppHeader = () => {
       {/* Title section with enhanced styling */}
       <div className="flex flex-col items-center relative z-10">
         <h1 className="text-6xl font-bold tracking-wider relative">
-          <span className="glass-title glow-effect" data-text="ORUN AI QUIZ MAKER">
-            ORUN AI QUIZ MAKER
+          <span className="glass-title glow-effect" data-text="학문당 AI 퀴즈메이커">
+            학문당 AI 퀴즈메이커
           </span>
         </h1>
         <div className="title-bar glow-bar"></div>
