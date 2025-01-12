@@ -34,11 +34,11 @@ export const DefaultQuestion = ({
           {formattedSections.map((section, index) => (
             <div key={index} className="mb-4">
               <div className="font-medium text-gray-700">[{section.title}]</div>
-              <div className="mt-1 whitespace-pre-wrap">{section.content}</div>
+              <div className="mt-1 whitespace-pre-wrap question-content">{section.content}</div>
             </div>
           ))}
           {answerPart && (
-            <div className="mt-4 pt-4 border-t border-gray-200">
+            <div className="mt-4 pt-4 border-t border-gray-200 question-content">
               {answerPart}
             </div>
           )}
@@ -52,9 +52,9 @@ export const DefaultQuestion = ({
     <Card className="mb-4">
       <CardContent className="pt-6">
         <div className="text-lg font-semibold mb-4">문제 {questionNumber}</div>
-        <div className="whitespace-pre-wrap">{questionPart}</div>
+        <div className="whitespace-pre-wrap question-content">{questionPart}</div>
         {answerPart && (
-          <div className="mt-4 pt-4 border-t border-gray-200">
+          <div className="mt-4 pt-4 border-t border-gray-200 question-content">
             {answerPart}
           </div>
         )}
