@@ -65,7 +65,7 @@ export const getQuestionTypes = () => [
   { id: "logicFlow", name: "Logic Flow" },
   { id: "sentenceSplitter", name: "한영문장분리" },
   { id: "weekendClinic", name: "주말클리닉" },
-  { id: "vocabBook", name: "단어장생성" }
+  { id: "vocabBook", name: "단어장 생성" }
 ];
 
 export const getPromptForType = (type: QuestionType, text: string): string => {
@@ -112,14 +112,6 @@ export const getPromptForType = (type: QuestionType, text: string): string => {
       return getSummaryBlankPrompt(text);
     case "topicWriting":
       return getTopicWritingPrompt(text);
-    case "dangDict":
-      return getDictionaryPrompt(text);
-    case "sungnamVocab1":
-      return getSungnamVocab1Prompt(text);
-    case "sungnamVocab2":
-      return getSungnamVocab2Prompt(text);
-    case "sungnamVocab3":
-      return getSungnamVocab3Prompt(text);
     default:
       return `Generate a question of type ${type.name} based on the following text: ${text}`;
   }
