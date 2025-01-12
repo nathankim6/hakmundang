@@ -27,11 +27,6 @@ export const AppHeader = () => {
             학문당 AI QUIZ MAKER
             <div className="absolute inset-0 bg-luxury-accent/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </h1>
-          
-          {/* Animated underline */}
-          <div className="h-1 w-full mt-4 bg-gradient-to-r from-transparent via-luxury-accent to-transparent rounded-full">
-            <div className="h-full w-1/3 bg-white/30 rounded-full animate-shimmer"></div>
-          </div>
         </div>
       </div>
     </div>
