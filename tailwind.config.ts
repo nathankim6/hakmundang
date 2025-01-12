@@ -103,6 +103,14 @@ export default {
             opacity: '1',
             textShadow: '0 0 10px rgba(229, 228, 226, 0.8), 0 0 20px rgba(229, 228, 226, 0.5), 0 0 30px rgba(229, 228, 226, 0.3)',
           }
+        },
+        glow: {
+          '0%, 100%': {
+            textShadow: '0 0 4px rgba(229, 228, 226, 0.3), 0 0 8px rgba(229, 228, 226, 0.3), 0 0 12px rgba(229, 228, 226, 0.3)',
+          },
+          '50%': {
+            textShadow: '0 0 8px rgba(229, 228, 226, 0.5), 0 0 16px rgba(229, 228, 226, 0.5), 0 0 24px rgba(229, 228, 226, 0.5)',
+          }
         }
       },
       animation: {
@@ -113,6 +121,7 @@ export default {
         'gradient': 'gradient 3s ease-in-out infinite',
         'luxury-fade': 'luxury-fade 0.5s ease-out',
         'twinkle': 'twinkle 2s ease-in-out infinite',
+        'glow': 'glow 3s ease-in-out infinite',
       },
       backgroundImage: {
         'luxury-gradient': 'linear-gradient(135deg, #1A1F2C 0%, #403E43 100%)',
