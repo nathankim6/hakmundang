@@ -71,3 +71,8 @@
   @apply text-[#1A1F2C] bg-clip-text animate-luxury-fade font-bold;
   background: linear-gradient(135deg, #1A1F2C 0%, #4B5563 100%);
 }
+
+/* Add specific styling for question content */
+.question-content {
+  font-family: Gulim, '굴림', sans-serif !important;
+}
