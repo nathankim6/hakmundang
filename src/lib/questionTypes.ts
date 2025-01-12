@@ -24,8 +24,7 @@ import {
   getTopicWritingPrompt,
   getSungnamVocab1Prompt,
   getSungnamVocab2Prompt,
-  getSungnamVocab3Prompt,
-  getConditionWritingPrompt
+  getSungnamVocab3Prompt
 } from "./prompts";
 
 export const getQuestionTypes = () => [
@@ -56,7 +55,6 @@ export const getQuestionTypes = () => [
 
   // 서답형
   { id: "orderWriting", name: "배열영작" },
-  { id: "conditionWriting", name: "조건영작" },
   { id: "summaryBlank", name: "요약문 빈칸" },
   { id: "topicWriting", name: "주제문 영작" },
 
@@ -120,8 +118,6 @@ export const getPromptForType = (type: QuestionType, text: string): string => {
       return getSungnamVocab2Prompt(text);
     case "sungnamVocab3":
       return getSungnamVocab3Prompt(text);
-    case "conditionWriting":
-      return getConditionWritingPrompt(text);
     default:
       return `Generate a question of type ${type.name} based on the following text: ${text}`;
   }
