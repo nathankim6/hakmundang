@@ -22,6 +22,7 @@ export default {
         nanum: ['Nanum Gothic', 'sans-serif'],
       },
       colors: {
+        platinum: '#E5E4E2',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
@@ -92,6 +93,16 @@ export default {
             opacity: '1',
             transform: 'translateY(0)'
           }
+        },
+        twinkle: {
+          '0%, 100%': {
+            opacity: '0.85',
+            textShadow: '0 0 5px rgba(229, 228, 226, 0.5), 0 0 10px rgba(229, 228, 226, 0.3)',
+          },
+          '50%': {
+            opacity: '1',
+            textShadow: '0 0 10px rgba(229, 228, 226, 0.8), 0 0 20px rgba(229, 228, 226, 0.5), 0 0 30px rgba(229, 228, 226, 0.3)',
+          }
         }
       },
       animation: {
@@ -100,7 +111,8 @@ export default {
         'spin-slow': 'spin 3s linear infinite',
         'shimmer': 'shimmer 0.5s infinite',
         'gradient': 'gradient 3s ease-in-out infinite',
-        'luxury-fade': 'luxury-fade 0.5s ease-out'
+        'luxury-fade': 'luxury-fade 0.5s ease-out',
+        'twinkle': 'twinkle 2s ease-in-out infinite',
       },
       backgroundImage: {
         'luxury-gradient': 'linear-gradient(135deg, #1A1F2C 0%, #403E43 100%)',
