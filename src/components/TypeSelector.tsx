@@ -17,11 +17,6 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
     type.id.match(/^(purpose|mood|claim|implication|mainPoint|topic|title|vocabulary|blank|blankMultiple|irrelevant|order|insert|summary)$/)
   );
   
-  // 내신형
-  const schoolTypes = types.filter(type => 
-    type.id.match(/^(sungnamVocab|sungExternal|sungReference|yeongExternal|dangDict)/)
-  );
-  
   // 서답형
   const writingTypes = types.filter(type => 
     type.id.match(/^(orderWriting|conditionWriting|summaryBlank|topicWriting)$/)
@@ -53,13 +48,6 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
       <TypeCategory
         title="수능형"
         types={readingTypes}
-        selectedTypes={selectedTypes}
-        hasAccess={hasAccess}
-        onTypeClick={handleTypeClick}
-      />
-      <TypeCategory
-        title="내신형"
-        types={schoolTypes}
         selectedTypes={selectedTypes}
         hasAccess={hasAccess}
         onTypeClick={handleTypeClick}
