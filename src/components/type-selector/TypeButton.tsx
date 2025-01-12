@@ -40,7 +40,7 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
       return;
     }
     if (type.id === "orderWriting") {
-      window.open("https://chatgpt.com/gpts/editor/g-6779f097fc348191acb04db248fc7fce", "_blank");
+      window.open("https://chatgpt.com/g/g-6779f097fc348191acb04db248fc7fce-seodabhyeong-baeyeolyeongjag", "_blank");
       return;
     }
     onClick();
