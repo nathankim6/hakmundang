@@ -17,7 +17,7 @@ export const AppHeader = () => {
           <img 
             src="/lovable-uploads/f91b258e-bdcf-40aa-95e8-5668f20b8129.png" 
             alt="학문당입시학원 Logo" 
-            className="relative w-24 h-24 object-contain"
+            className="relative w-24 h-24 rounded-full object-cover"
           />
         </div>
         
