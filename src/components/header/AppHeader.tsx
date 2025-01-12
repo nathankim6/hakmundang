@@ -31,8 +31,10 @@ export const AppHeader = () => {
           </div>
         </div>
 
-        {/* Bar decoration */}
-        <div className="title-bar glow-bar mt-4" style={{ width: 'calc(100% - 4rem)' }}></div>
+        {/* Shimmering bar decoration */}
+        <div className="relative w-full flex justify-center">
+          <div className="title-bar glow-bar mt-4" style={{ width: 'calc(100% - 4rem)' }}></div>
+        </div>
       </div>
     </div>
   );
