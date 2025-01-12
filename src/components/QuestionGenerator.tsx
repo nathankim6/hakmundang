@@ -2,7 +2,6 @@ import { TypeSelector } from "./TypeSelector";
 import { LoadingProgress } from "./LoadingProgress";
 import { TypeEntry } from "./question/TypeEntry";
 import { GeneratedQuestions } from "./question/GeneratedQuestions";
-import { ActionButtons } from "./buttons/ActionButtons";
 import { QuestionProvider } from "./question/QuestionContext";
 import { useQuestionState } from "./question/QuestionState";
 import { useQuestionActions } from "./question/QuestionActions";
@@ -78,13 +77,6 @@ export const QuestionGenerator = () => {
                   onRemove={handleRemoveType}
                 />
               </div>
-            </div>
-            
-            {/* Action Buttons now positioned below TypeSelector */}
-            <div className="mt-4">
-              <ActionButtons 
-                openVocabModal={() => setShowVocabModal(true)}
-              />
             </div>
           </div>
         </div>
