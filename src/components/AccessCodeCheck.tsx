@@ -154,8 +154,8 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
         isVideo={true}
       />
       
-      <div className="fixed left-[50%] top-[50%] z-50 w-full max-w-lg translate-x-[-50%] translate-y-[-50%] space-y-8">
-        <div className="rounded-xl p-8">
+      <div className="fixed bottom-0 left-0 right-0 z-50 p-8 bg-black/30 backdrop-blur-sm">
+        <div className="mx-auto max-w-lg">
           <div className="flex flex-col items-center space-y-8">
             <LoginLogo />
             <LoginTitle subscriptionExpiry={subscriptionExpiry} />
