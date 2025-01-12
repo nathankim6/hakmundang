@@ -8,13 +8,9 @@
   font-family: 'Orbitron', sans-serif;
   font-weight: 900;
   letter-spacing: 0.15em;
-  text-shadow: 
-    0 0 10px rgba(26, 31, 44, 0.3),
-    0 0 20px rgba(64, 62, 67, 0.2),
-    0 0 30px rgba(85, 85, 85, 0.1);
   transform: scale(1.05);
   transition: all 0.3s ease;
-  animation: glow 3s ease-in-out infinite, twinkle 1.5s ease-in-out infinite;
+  animation: twinkle 1.5s ease-in-out infinite;
 }
 
 .glass-title:hover {
