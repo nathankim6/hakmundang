@@ -25,7 +25,7 @@ export const AppHeader = () => {
           {/* Title section with platinum metallic styling */}
           <div className="flex flex-col items-center">
             <h1 className="text-6xl font-bold tracking-wider platinum-title relative group animate-glow">
-              학문당 AI QUIZ MAKER
+              학문당 AI 문제생성 프로그램
               <div className="absolute inset-0 bg-luxury-accent/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </h1>
           </div>
