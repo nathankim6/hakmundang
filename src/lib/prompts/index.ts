@@ -23,4 +23,3 @@ export * from './topicWriting';
 export * from './sungnamVocab1';
 export * from './sungnamVocab2';
 export * from './sungnamVocab3';
-export * from './conditionWriting';

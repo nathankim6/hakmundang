@@ -21,7 +21,10 @@ import {
   getOrderWritingPrompt,
   getSummaryBlankPrompt,
   getTopicWritingPrompt,
-  getDictionaryPrompt
+  getDictionaryPrompt,
+  getSungnamVocab1Prompt,
+  getSungnamVocab2Prompt,
+  getSungnamVocab3Prompt
 } from "./prompts";
 
 export const getQuestionTypes = () => [

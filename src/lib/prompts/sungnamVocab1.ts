@@ -17,20 +17,4 @@ Please generate a question following these rules:
 [정답] [Total count]개 (List all synonym/antonym pairs excluding the example)
 [해설] [보기]의 단어 관계는 [explanation of the relationship]
 [동의어] [word1] - [word2] ([meaning of word1] - [meaning of word2])
-[반의어] [word1] - [word2] ([meaning of word1] - [meaning of word2])
-
-The output must follow this exact format:
-
-두 단어의 관계가 다음과 같은 것은 몇 개인가?
-<보기> [word1] - [word2]
-
-[7 random word pairs, one per line]
-
-[정답] [count]개 ([pairs])
-[해설] [보기]의 단어 관계는 [explanation]
-
-[동의어]
-[synonym pairs with meanings]
-
-[반의어]
-[antonym pairs with meanings]`;
+[반의어] [word1] - [word2] ([meaning of word1] - [meaning of word2])`;

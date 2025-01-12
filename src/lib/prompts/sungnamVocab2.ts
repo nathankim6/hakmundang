@@ -17,10 +17,4 @@ Select 5 random sentence pairs from the provided list and format them as follows
 ④ [Korean translation 4]
 [English sentence 4]
 ⑤ [Korean translation 5]
-[English sentence 5]
-
-Important:
-1. Do not create any errors or modifications in the sentences
-2. Use the exact sentences from the provided list
-3. Present them in their original form
-4. The errors will be manually added later`;
+[English sentence 5]`;
