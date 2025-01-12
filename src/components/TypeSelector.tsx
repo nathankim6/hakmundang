@@ -21,7 +21,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
   
   // 서답형
   const writingTypes = types.filter(type => 
-    type.id.match(/^(orderWriting|conditionWriting|summaryBlank|topicWriting)$/)
+    type.id.match(/^(summaryBlank|topicWriting)$/)
   );
   
   // 기타 유형
