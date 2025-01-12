@@ -11,7 +11,7 @@ export const AppHeader = () => {
       
       {/* Content container */}
       <div className="relative z-10 flex flex-col items-center justify-center p-8">
-        <div className="flex items-center space-x-6">
+        <div className="flex items-center space-x-6 w-full justify-center">
           {/* Logo with enhanced styling */}
           <div className="relative transform transition-transform duration-300 hover:scale-105">
             <div className="absolute inset-0 bg-luxury-accent/20 rounded-full blur-xl animate-pulse"></div>
@@ -31,8 +31,10 @@ export const AppHeader = () => {
           </div>
         </div>
 
-        {/* Shimmering bar decoration */}
-        <div className="title-bar glow-bar mt-4 w-1/2 mx-auto"></div>
+        {/* Shimmering bar decoration - adjusted to match content width */}
+        <div className="relative w-full flex justify-center">
+          <div className="title-bar glow-bar mt-4" style={{ width: 'calc(100% - 4rem)' }}></div>
+        </div>
       </div>
     </div>
   );
