@@ -11,6 +11,34 @@ export const AppHeader = () => {
       
       {/* Content container */}
       <div className="relative z-10 flex flex-col items-center justify-center p-8">
+        {/* Side decorations */}
+        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-32 h-32">
+          <div className="absolute inset-0 bg-luxury-accent/10 rounded-full blur-2xl animate-pulse"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-luxury-purple/20 to-transparent rounded-full"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 border border-white/10 rounded-full"></div>
+        </div>
+        
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-32 h-32">
+          <div className="absolute inset-0 bg-luxury-accent/10 rounded-full blur-2xl animate-pulse delay-500"></div>
+          <div className="absolute inset-0 bg-gradient-to-l from-luxury-purple/20 to-transparent rounded-full"></div>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 border border-white/10 rounded-full"></div>
+        </div>
+
+        {/* Diagonal lines decoration */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0" 
+            style={{
+              backgroundImage: `repeating-linear-gradient(
+                45deg,
+                #fff 0px,
+                #fff 1px,
+                transparent 1px,
+                transparent 20px
+              )`
+            }}>
+          </div>
+        </div>
+
         <div className="flex items-center space-x-6 w-full justify-center">
           {/* Logo with enhanced styling */}
           <div className="relative transform transition-transform duration-300 hover:scale-105">
