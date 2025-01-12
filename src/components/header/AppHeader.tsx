@@ -20,8 +20,8 @@ export const AppHeader = () => {
       {/* Logo container with refined styling */}
       <div className="w-28 h-28 rounded-full bg-white flex items-center justify-center relative z-10 shadow-lg transition-transform duration-300 hover:scale-105">
         <img 
-          src="/lovable-uploads/352a49ca-b123-4f07-992a-cf59e4b7058a.png" 
-          alt="ORUN ACADEMY Logo" 
+          src="/lovable-uploads/f91b258e-bdcf-40aa-95e8-5668f20b8129.png" 
+          alt="학문당입시학원 Logo" 
           className="w-24 h-24 object-contain"
         />
       </div>
