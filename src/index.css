@@ -37,13 +37,13 @@
   }
 
   body {
-    @apply bg-luxury-dark text-[#E5DEFF] min-h-screen relative overflow-x-hidden;
+    @apply bg-luxury-dark text-[#F1F0FB] min-h-screen relative overflow-x-hidden;
     font-family: 'Orbitron', sans-serif;
   }
 
   .input-text, .result-text {
     font-family: Gulim, '굴림', sans-serif !important;
-    @apply text-[#1A1F2C];
+    @apply text-[#1A1F2C] font-bold;
   }
 
   .font-nanum {
@@ -57,17 +57,17 @@
 }
 
 .luxury-button {
-  @apply bg-luxury-accent text-[#F1F0FB] px-4 py-2 rounded-lg transition-all duration-300
-         hover:shadow-lg hover:scale-105 active:scale-95;
+  @apply bg-luxury-accent text-white px-4 py-2 rounded-lg transition-all duration-300
+         hover:shadow-lg hover:scale-105 active:scale-95 font-semibold;
   background: linear-gradient(135deg, #9b87f5 0%, #7E69AB 100%);
 }
 
 .luxury-input {
-  @apply bg-white/10 border border-white/20 rounded-lg px-4 py-2 text-[#F1F0FB]
+  @apply bg-white/10 border border-white/20 rounded-lg px-4 py-2 text-white
          placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-luxury-accent/50;
 }
 
 .luxury-title {
-  @apply text-transparent bg-clip-text animate-luxury-fade;
-  background: linear-gradient(135deg, #9b87f5 0%, #E5DEFF 100%);
+  @apply text-transparent bg-clip-text animate-luxury-fade font-bold;
+  background: linear-gradient(135deg, #9b87f5 0%, #F1F0FB 100%);
 }
