@@ -59,9 +59,9 @@ export const AppHeader = () => {
           </div>
         </div>
 
-        {/* Shimmering bar decoration */}
-        <div className="relative w-full flex justify-center">
-          <div className="title-bar glow-bar mt-4" style={{ width: 'calc(100% - 4rem)' }}></div>
+        {/* Centered shimmering bar decoration */}
+        <div className="relative w-full flex justify-center mt-6">
+          <div className="title-bar glow-bar" style={{ width: '60%', maxWidth: '600px' }}></div>
         </div>
       </div>
     </div>
