@@ -4,13 +4,6 @@ import { useToast } from "./ui/use-toast";
 import { TypeCategory } from "./type-selector/TypeCategory";
 import { Button } from "./ui/button";
 import { ExternalLink } from "lucide-react";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
-import { useState } from "react";
 
 interface TypeSelectorProps {
   selectedTypes: QuestionType[];
@@ -20,7 +13,6 @@ interface TypeSelectorProps {
 
 export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelectorProps) => {
   const types = getQuestionTypes();
-  const [isVocabModalOpen, setIsVocabModalOpen] = useState(false);
   
   // 수능형 (index 0-13)
   const readingTypes = types.filter(type => 
@@ -54,7 +46,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
   };
 
   const handleVocabBookClick = () => {
-    setIsVocabModalOpen(true);
+    window.open("https://vocabbook-60.lovable.app", "_blank");
   };
 
   return (
@@ -89,26 +81,6 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
           <ExternalLink className="w-4 h-4" />
         </Button>
       </div>
-
-      <Dialog open={isVocabModalOpen} onOpenChange={setIsVocabModalOpen}>
-        <DialogContent className="sm:max-w-[425px]">
-          <DialogHeader>
-            <DialogTitle>단어장 생성</DialogTitle>
-          </DialogHeader>
-          <div className="flex flex-col items-center justify-center p-6">
-            <p className="text-center mb-4">
-              아래 링크를 클릭하여 단어장 생성 페이지로 이동하세요.
-            </p>
-            <Button
-              onClick={() => window.open("https://vocabbook-60.lovable.app", "_blank")}
-              className="bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600"
-            >
-              단어장 생성 페이지로 이동
-              <ExternalLink className="w-4 h-4 ml-2" />
-            </Button>
-          </div>
-        </DialogContent>
-      </Dialog>
     </div>
   );
 };
