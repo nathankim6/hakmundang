@@ -22,18 +22,39 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
   const { toast } = useToast();
 
   useEffect(() => {
-    const lastLoginTime = localStorage.getItem("lastLoginTime");
-    const hasAccess = localStorage.getItem("hasAccess");
-    
-    if (lastLoginTime && hasAccess) {
-      const timeDiff = Date.now() - parseInt(lastLoginTime);
-      if (timeDiff < SESSION_TIMEOUT) {
-        onAccessGranted();
-        navigate("/");
-      } else {
+    const checkExistingSession = async () => {
+      try {
+        const lastLoginTime = localStorage.getItem("lastLoginTime");
+        const hasAccess = localStorage.getItem("hasAccess");
+        
+        if (lastLoginTime && hasAccess) {
+          const timeDiff = Date.now() - parseInt(lastLoginTime);
+          if (timeDiff < SESSION_TIMEOUT) {
+            // Verify access code is still valid
+            const storedCode = localStorage.getItem("accessCode");
+            if (storedCode) {
+              const { data: accessCode } = await supabase
+                .from('access_codes')
+                .select('*')
+                .eq('code', storedCode)
+                .maybeSingle();
+
+              if (accessCode && new Date(accessCode.expiry_date) > new Date()) {
+                onAccessGranted();
+                navigate("/");
+                return;
+              }
+            }
+          }
+          handleLogout();
+        }
+      } catch (error) {
+        console.error("Session check error:", error);
         handleLogout();
       }
-    }
+    };
+
+    checkExistingSession();
 
     const intervalId = setInterval(() => {
       const lastLogin = localStorage.getItem("lastLoginTime");
@@ -54,6 +75,7 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
     localStorage.removeItem("subscriptionExpiry");
     localStorage.removeItem("userName");
     localStorage.removeItem("isAdmin");
+    localStorage.removeItem("accessCode");
     navigate("/login");
     toast({
       title: "세션 만료",
@@ -85,6 +107,7 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
         localStorage.setItem("userName", "관리자");
         localStorage.setItem("hasAccess", "true");
         localStorage.setItem("lastLoginTime", Date.now().toString());
+        localStorage.setItem("accessCode", code);
         toast({
           title: "관리자 로그인 성공",
           description: "관리자 페이지로 이동합니다.",
@@ -127,6 +150,7 @@ export function AccessCodeCheck({ onAccessGranted }: AccessCodeCheckProps) {
       localStorage.setItem("hasAccess", "true");
       localStorage.setItem("lastLoginTime", Date.now().toString());
       localStorage.setItem("subscriptionExpiry", accessCode.expiry_date);
+      localStorage.setItem("accessCode", code);
       setSubscriptionExpiry(accessCode.expiry_date);
       
       toast({
