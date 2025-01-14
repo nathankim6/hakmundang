@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { useToast } from "@/components/ui/use-toast";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
-import { Copy } from "lucide-react";
+import { Copy, Shuffle } from "lucide-react";
 import type { Database } from "@/integrations/supabase/types";
 
 type AccessCode = Database['public']['Tables']['access_codes']['Row'];
@@ -20,6 +20,17 @@ export const AccessCodeManager = () => {
   useEffect(() => {
     fetchAccessCodes();
   }, []);
+
+  const generateRandomCode = () => {
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    const length = 8;
+    let result = '';
+    for (let i = 0; i < length; i++) {
+      const randomIndex = Math.floor(Math.random() * characters.length);
+      result += characters.charAt(randomIndex);
+    }
+    setNewCode(result);
+  };
 
   const fetchAccessCodes = async () => {
     const { data, error } = await supabase
@@ -175,11 +186,20 @@ export const AccessCodeManager = () => {
 
         <div className="bg-white p-6 rounded-lg shadow-lg space-y-4">
           <div className="flex space-x-2">
-            <Input
-              placeholder="새 엑세스 코드..."
-              value={newCode}
-              onChange={(e) => setNewCode(e.target.value)}
-            />
+            <div className="flex-1 flex space-x-2">
+              <Input
+                placeholder="새 엑세스 코드..."
+                value={newCode}
+                onChange={(e) => setNewCode(e.target.value)}
+              />
+              <Button
+                variant="outline"
+                onClick={generateRandomCode}
+                title="랜덤 코드 생성"
+              >
+                <Shuffle className="h-4 w-4" />
+              </Button>
+            </div>
             <Input
               type="number"
               placeholder="유효기간 (일)"
