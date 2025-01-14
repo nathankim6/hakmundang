@@ -13,6 +13,7 @@ export const AccessCodeManager = () => {
   const [newCode, setNewCode] = useState("");
   const [expiryDays, setExpiryDays] = useState("");
   const [accessCodes, setAccessCodes] = useState<AccessCode[]>([]);
+  const [extensionDays, setExtensionDays] = useState<{ [key: string]: string }>({});
   const { toast } = useToast();
   const navigate = useNavigate();
 
@@ -99,6 +100,43 @@ export const AccessCodeManager = () => {
     });
   };
 
+  const extendExpiry = async (code: AccessCode) => {
+    const days = parseInt(extensionDays[code.code] || "0");
+    if (!days || days <= 0) {
+      toast({
+        title: "오류",
+        description: "유효한 연장 기간을 입력해주세요.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    const newExpiryDate = new Date(code.expiry_date);
+    newExpiryDate.setDate(newExpiryDate.getDate() + days);
+
+    const { error } = await supabase
+      .from('access_codes')
+      .update({ expiry_date: newExpiryDate.toISOString() })
+      .eq('code', code.code);
+
+    if (error) {
+      toast({
+        title: "오류 발생",
+        description: "유효기간 연장에 실패했습니다.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    await fetchAccessCodes();
+    setExtensionDays(prev => ({ ...prev, [code.code]: "" }));
+    
+    toast({
+      title: "성공",
+      description: "유효기간이 성공적으로 연장되었습니다.",
+    });
+  };
+
   const copyAccessCode = async (code: string) => {
     try {
       await navigator.clipboard.writeText(code);
@@ -114,6 +152,10 @@ export const AccessCodeManager = () => {
       });
     }
   };
+
+  const now = new Date();
+  const validCodes = accessCodes.filter(code => new Date(code.expiry_date) > now);
+  const expiredCodes = accessCodes.filter(code => new Date(code.expiry_date) <= now);
 
   return (
     <div className="min-h-screen p-6 bg-gradient-to-br from-white via-[#F1F0FB] to-[#E5DEFF]">
@@ -148,9 +190,9 @@ export const AccessCodeManager = () => {
             <Button onClick={addAccessCode}>추가</Button>
           </div>
 
-          <div className="space-y-2">
-            <h2 className="font-semibold">현재 엑세스 코드 목록</h2>
-            {accessCodes.map((code) => (
+          <div className="space-y-4">
+            <h2 className="font-semibold">유효한 엑세스 코드</h2>
+            {validCodes.map((code) => (
               <div
                 key={code.id}
                 className="flex justify-between items-center p-3 bg-gray-50 rounded"
@@ -169,15 +211,77 @@ export const AccessCodeManager = () => {
                     만료: {new Date(code.expiry_date).toLocaleDateString()}
                   </span>
                 </div>
-                <Button
-                  variant="destructive"
-                  size="sm"
-                  onClick={() => removeAccessCode(code.code)}
-                >
-                  삭제
-                </Button>
+                <div className="flex items-center space-x-2">
+                  <Input
+                    type="number"
+                    placeholder="연장 기간 (일)"
+                    value={extensionDays[code.code] || ""}
+                    onChange={(e) => setExtensionDays(prev => ({
+                      ...prev,
+                      [code.code]: e.target.value
+                    }))}
+                    className="w-32"
+                  />
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    onClick={() => extendExpiry(code)}
+                  >
+                    연장
+                  </Button>
+                  <Button
+                    variant="destructive"
+                    size="sm"
+                    onClick={() => removeAccessCode(code.code)}
+                  >
+                    삭제
+                  </Button>
+                </div>
               </div>
             ))}
+
+            <div className="mt-8">
+              <h2 className="font-semibold text-gray-500">만료된 엑세스 코드</h2>
+              {expiredCodes.map((code) => (
+                <div
+                  key={code.id}
+                  className="flex justify-between items-center p-3 bg-gray-100 rounded mt-2 opacity-75"
+                >
+                  <div className="flex items-center space-x-4">
+                    <span className="font-mono text-gray-500">{code.code}</span>
+                    <span className="text-sm text-gray-500">
+                      만료: {new Date(code.expiry_date).toLocaleDateString()}
+                    </span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Input
+                      type="number"
+                      placeholder="연장 기간 (일)"
+                      value={extensionDays[code.code] || ""}
+                      onChange={(e) => setExtensionDays(prev => ({
+                        ...prev,
+                        [code.code]: e.target.value
+                      }))}
+                      className="w-32"
+                    />
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={() => extendExpiry(code)}
+                    >
+                      연장
+                    </Button>
+                    <Button
+                      variant="destructive"
+                      size="sm"
+                      onClick={() => removeAccessCode(code.code)}
+                    >
+                      삭제
+                    </Button>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
