@@ -10,14 +10,14 @@ import type { Database } from "@/integrations/supabase/types";
 type AccessCode = Database['public']['Tables']['access_codes']['Row'];
 type AccessCodeUsage = Database['public']['Tables']['access_code_usage']['Row'];
 
-interface AccessCodeWithUsage extends AccessCode {
-  usage_count?: number;
+interface AccessCodeWithLastAccess extends AccessCode {
+  last_access?: string;
 }
 
 export const AccessCodeManager = () => {
   const [newCode, setNewCode] = useState("");
   const [expiryDays, setExpiryDays] = useState("");
-  const [accessCodes, setAccessCodes] = useState<AccessCodeWithUsage[]>([]);
+  const [accessCodes, setAccessCodes] = useState<AccessCodeWithLastAccess[]>([]);
   const [extensionDays, setExtensionDays] = useState<{ [key: string]: string }>({});
   const { toast } = useToast();
   const navigate = useNavigate();
@@ -53,27 +53,34 @@ export const AccessCodeManager = () => {
       return;
     }
 
-    // Then, fetch usage data for all codes
+    // Then, fetch the most recent access date for each code
     const { data: usageData, error: usageError } = await supabase
       .from('access_code_usage')
-      .select('access_code_id, id');
+      .select('access_code_id, used_at')
+      .order('used_at', { ascending: false });
 
     if (usageError) {
       toast({
         title: "오류 발생",
-        description: "사용량 데이터를 불러오는데 실패했습니다.",
+        description: "접속 기록을 불러오는데 실패했습니다.",
         variant: "destructive",
       });
       return;
     }
 
     // Combine the data
-    const codesWithUsage = codesData.map(code => ({
-      ...code,
-      usage_count: usageData.filter(usage => usage.access_code_id === code.id).length
-    }));
+    const codesWithLastAccess = codesData.map(code => {
+      const lastAccess = usageData
+        .filter(usage => usage.access_code_id === code.id)
+        .sort((a, b) => new Date(b.used_at!).getTime() - new Date(a.used_at!).getTime())[0]?.used_at;
+      
+      return {
+        ...code,
+        last_access: lastAccess
+      };
+    });
 
-    setAccessCodes(codesWithUsage);
+    setAccessCodes(codesWithLastAccess);
   };
 
   const addAccessCode = async () => {
@@ -299,7 +306,9 @@ export const AccessCodeManager = () => {
                       만료: {new Date(code.expiry_date).toLocaleDateString()}
                     </span>
                     <span className="text-sm text-gray-500">
-                      총 사용횟수: {code.usage_count || 0}회
+                      최근 접속: {code.last_access 
+                        ? new Date(code.last_access).toLocaleDateString()
+                        : '기록 없음'}
                     </span>
                   </div>
                   <div className="flex items-center space-x-2">
