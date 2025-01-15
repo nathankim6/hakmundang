@@ -8,11 +8,16 @@ import { Copy, Shuffle } from "lucide-react";
 import type { Database } from "@/integrations/supabase/types";
 
 type AccessCode = Database['public']['Tables']['access_codes']['Row'];
+type AccessCodeUsage = Database['public']['Tables']['access_code_usage']['Row'];
+
+interface AccessCodeWithUsage extends AccessCode {
+  usage_count?: number;
+}
 
 export const AccessCodeManager = () => {
   const [newCode, setNewCode] = useState("");
   const [expiryDays, setExpiryDays] = useState("");
-  const [accessCodes, setAccessCodes] = useState<AccessCode[]>([]);
+  const [accessCodes, setAccessCodes] = useState<AccessCodeWithUsage[]>([]);
   const [extensionDays, setExtensionDays] = useState<{ [key: string]: string }>({});
   const { toast } = useToast();
   const navigate = useNavigate();
@@ -33,12 +38,13 @@ export const AccessCodeManager = () => {
   };
 
   const fetchAccessCodes = async () => {
-    const { data, error } = await supabase
+    // First, fetch all access codes
+    const { data: codesData, error: codesError } = await supabase
       .from('access_codes')
       .select('*')
       .order('created_at', { ascending: false });
 
-    if (error) {
+    if (codesError) {
       toast({
         title: "오류 발생",
         description: "엑세스 코드 목록을 불러오는데 실패했습니다.",
@@ -47,7 +53,27 @@ export const AccessCodeManager = () => {
       return;
     }
 
-    setAccessCodes(data || []);
+    // Then, fetch usage data for all codes
+    const { data: usageData, error: usageError } = await supabase
+      .from('access_code_usage')
+      .select('access_code_id, id');
+
+    if (usageError) {
+      toast({
+        title: "오류 발생",
+        description: "사용량 데이터를 불러오는데 실패했습니다.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // Combine the data
+    const codesWithUsage = codesData.map(code => ({
+      ...code,
+      usage_count: usageData.filter(usage => usage.access_code_id === code.id).length
+    }));
+
+    setAccessCodes(codesWithUsage);
   };
 
   const addAccessCode = async () => {
@@ -271,6 +297,9 @@ export const AccessCodeManager = () => {
                     <span className="font-mono text-gray-500">{code.code}</span>
                     <span className="text-sm text-gray-500">
                       만료: {new Date(code.expiry_date).toLocaleDateString()}
+                    </span>
+                    <span className="text-sm text-gray-500">
+                      총 사용횟수: {code.usage_count || 0}회
                     </span>
                   </div>
                   <div className="flex items-center space-x-2">

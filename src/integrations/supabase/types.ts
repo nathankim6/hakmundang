@@ -9,6 +9,39 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
+      access_code_usage: {
+        Row: {
+          access_code_id: string
+          id: string
+          used_at: string | null
+        }
+        Insert: {
+          access_code_id: string
+          id?: string
+          used_at?: string | null
+        }
+        Update: {
+          access_code_id?: string
+          id?: string
+          used_at?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "access_code_usage_access_code_id_fkey"
+            columns: ["access_code_id"]
+            isOneToOne: false
+            referencedRelation: "access_codes"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "fk_access_code"
+            columns: ["access_code_id"]
+            isOneToOne: false
+            referencedRelation: "access_codes"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       access_codes: {
         Row: {
           code: string
