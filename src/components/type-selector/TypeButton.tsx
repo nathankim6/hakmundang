@@ -1,5 +1,6 @@
 import { Check, Sparkles, Lock } from "lucide-react";
 import { QuestionType } from "@/types/question";
+import { cn } from "@/lib/utils";
 
 interface TypeButtonProps {
   type: QuestionType;
@@ -11,6 +12,8 @@ interface TypeButtonProps {
 
 export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: TypeButtonProps) => {
   const handleClick = () => {
+    if (!hasAccess) return;
+    
     if (type.id === "dangDict") {
       window.open("https://chatgpt.com/g/g-675422c0793c81918b65a1a25e82e7a0-danggoggo-yeongyeongsajeon", "_blank");
       return;
@@ -50,13 +53,12 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
     <button
       key={type.id}
       onClick={handleClick}
-      className={`type-button group relative w-full text-left transition-all duration-300 hover:scale-[1.02] ${
-        !hasAccess 
-          ? "opacity-50 cursor-not-allowed hover:scale-100"
-          : isSelected 
-            ? "selected bg-[#0EA5E9]/20 text-[#1A1F2C] font-semibold shadow-md" 
-            : "hover:bg-[#D3E4FD] hover:text-[#0EA5E9]"
-      }`}
+      className={cn(
+        "type-button group relative w-full text-left transition-all duration-300",
+        hasAccess ? "hover:scale-[1.02]" : "cursor-not-allowed opacity-50",
+        isSelected && hasAccess && "selected bg-[#0EA5E9]/20 text-[#1A1F2C] font-semibold shadow-md",
+        !isSelected && hasAccess && "hover:bg-[#D3E4FD] hover:text-[#0EA5E9]"
+      )}
     >
       <span className="relative z-10 flex items-center gap-2">
         {logos.length > 0 && (
@@ -73,7 +75,7 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
         )}
         {!hasAccess && (
           <Lock 
-            className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"
+            className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 animate-pulse"
           />
         )}
         {!isSelected && hasAccess && type.id !== "dangDict" && type.id !== "summaryBlank" && type.id !== "sungReference" && type.id !== "sungExternal" && type.id !== "sungnamVocab1" && type.id !== "sungnamVocab2" && type.id !== "topicWriting" && type.id !== "orderWriting" && (
