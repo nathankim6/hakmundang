@@ -24,7 +24,10 @@ import {
   getDictionaryPrompt,
   getSungnamVocab1Prompt,
   getSungnamVocab2Prompt,
-  getSungnamVocab3Prompt
+  getSungnamVocab3Prompt,
+  getContentMatchPrompt,
+  getContentMismatchPrompt,
+  getInferencePrompt
 } from "./prompts";
 
 export const getQuestionTypes = () => [
@@ -121,6 +124,12 @@ export const getPromptForType = (type: QuestionType, text: string): string => {
       return getSungnamVocab2Prompt(text);
     case "sungnamVocab3":
       return getSungnamVocab3Prompt(text);
+    case "contentMatch":
+      return getContentMatchPrompt(text);
+    case "contentMismatch":
+      return getContentMismatchPrompt(text);
+    case "inference":
+      return getInferencePrompt(text);
     default:
       return `Generate a question of type ${type.name} based on the following text: ${text}`;
   }
