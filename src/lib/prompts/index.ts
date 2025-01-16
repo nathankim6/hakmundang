@@ -27,31 +27,33 @@ import { getSungnamVocab1Prompt } from "./sungnamVocab1";
 import { getSungnamVocab2Prompt } from "./sungnamVocab2";
 import { getSungnamVocab3Prompt } from "./sungnamVocab3";
 
-export * from "./contentMatch";
-export * from "./contentMismatch";
-export * from "./inference";
-export * from "./purpose";
-export * from "./claim";
-export * from "./implication";
-export * from "./mood";
-export * from "./mainPoint";
-export * from "./topic";
-export * from "./title";
-export * from "./vocabulary";
-export * from "./blank";
-export * from "./blankMultiple";
-export * from "./irrelevant";
-export * from "./order";
-export * from "./insert";
-export * from "./summary";
-export * from "./trueOrFalse";
-export * from "./synonymAntonym";
-export * from "./logicFlow";
-export * from "./weekendClinic";
-export * from "./orderWriting";
-export * from "./summaryBlank";
-export * from "./topicWriting";
-export * from "./dictionary";
-export * from "./sungnamVocab1";
-export * from "./sungnamVocab2";
-export * from "./sungnamVocab3";
+export {
+  getContentMatchPrompt,
+  getContentMismatchPrompt,
+  getInferencePrompt,
+  getPurposePrompt,
+  getClaimPrompt,
+  getImplicationPrompt,
+  getMoodPrompt,
+  getMainPointPrompt,
+  getTopicPrompt,
+  getTitlePrompt,
+  getVocabularyPrompt,
+  getBlankPrompt,
+  getBlankMultiplePrompt,
+  getIrrelevantPrompt,
+  getOrderPrompt,
+  getInsertPrompt,
+  getSummaryPrompt,
+  getTrueOrFalsePrompt,
+  getSynonymAntonymPrompt,
+  getLogicFlowPrompt,
+  getWeekendClinicPrompt,
+  getOrderWritingPrompt,
+  getSummaryBlankPrompt,
+  getTopicWritingPrompt,
+  getDictionaryPrompt,
+  getSungnamVocab1Prompt,
+  getSungnamVocab2Prompt,
+  getSungnamVocab3Prompt
+};
