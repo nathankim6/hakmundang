@@ -19,7 +19,8 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
     type.id.match(/^(purpose|mood|claim|implication|mainPoint|topic|title|vocabulary|blank|blankMultiple|irrelevant|order|insert|summary)$/)
   );
   
-  // 서ingTypes = types.filter(type => 
+  // 서답형
+  const writingTypes = types.filter(type => 
     type.id.match(/^(summaryBlank|topicWriting|orderWriting)$/)
   );
   
