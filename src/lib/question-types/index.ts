@@ -3,7 +3,6 @@ import { suneungTypes } from "./suneung";
 import { schoolTypes } from "./school";
 import { writingTypes } from "./writing";
 import { contentTypes } from "./content";
-import { getPromptForType } from "../prompts";
 
 export const getQuestionTypes = (): QuestionType[] => [
   ...suneungTypes,
@@ -11,5 +10,3 @@ export const getQuestionTypes = (): QuestionType[] => [
   ...writingTypes,
   ...contentTypes
 ];
-
-export { getPromptForType };

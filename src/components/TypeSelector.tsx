@@ -42,7 +42,11 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
       return;
     }
     
-    isSelected ? onRemove(type.id) : onSelect(type);
+    if (isSelected) {
+      onRemove(type.id);
+    } else {
+      onSelect(type);
+    }
   };
 
   const handleVocabBookClick = () => {

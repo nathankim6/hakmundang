@@ -31,7 +31,9 @@ export const QuestionGenerator = () => {
     selectedTypes,
     setIsLoading,
     setProgress,
-    setSelectedTypes: (types) => selectedTypes.splice(0, selectedTypes.length, ...types),
+    setSelectedTypes: (types) => {
+      selectedTypes.splice(0, selectedTypes.length, ...types);
+    },
     setAbortController,
     toast
   });
