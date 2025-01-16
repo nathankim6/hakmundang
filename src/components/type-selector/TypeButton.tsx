@@ -68,14 +68,14 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
         "transform hover:-translate-y-0.5 active:translate-y-0",
         hasAccess ? (
           isSelected ? 
-            "bg-gradient-to-r from-luxury-accent to-luxury-purple shadow-lg" : 
-            "hover:scale-[1.01] hover:bg-gradient-to-r hover:from-luxury-light hover:to-white"
+            "bg-gradient-to-r from-[#FDE1D3] to-[#FEC6A1] shadow-lg" : 
+            "hover:scale-[1.01] hover:bg-gradient-to-r hover:from-[#FEF7CD] hover:to-white"
         ) : "cursor-not-allowed opacity-50",
         isSelected && hasAccess && [
-          "border-luxury-accent/20",
-          "shadow-[0_2px_15px_-2px_rgba(155,135,245,0.4)]",
+          "border-[#FEC6A1]/20",
+          "shadow-[0_2px_15px_-2px_rgba(254,198,161,0.4)]",
         ],
-        !isSelected && hasAccess && "hover:border-luxury-accent/20 hover:shadow-[0_4px_12px_-4px_rgba(124,58,237,0.15)]"
+        !isSelected && hasAccess && "hover:border-[#FEF7CD]/20 hover:shadow-[0_4px_12px_-4px_rgba(254,247,205,0.3)]"
       )}
     >
       <div className="relative z-10 flex items-center gap-2">
@@ -103,25 +103,25 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
         )}
         {!isSelected && hasAccess && !isGptLink && (
           <Sparkles 
-            className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-[#FFD700] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            style={{ filter: 'drop-shadow(0 0 4px rgba(255, 215, 0, 0.7))' }}
+            className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-[#FEC6A1] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            style={{ filter: 'drop-shadow(0 0 4px rgba(254,198,161,0.7))' }}
           />
         )}
         {isSelected && hasAccess && !isGptLink && (
-          <Check className="w-4 h-4 text-white" />
+          <Check className="w-4 h-4 text-[#1A1F2C]" />
         )}
         <span className={cn(
           "flex-1 font-medium",
           "transition-all duration-300",
-          isSelected ? "text-white font-bold" : "text-[#1A1F2C]",
-          "group-hover:text-luxury-accent"
+          isSelected ? "text-[#1A1F2C] font-bold" : "text-[#1A1F2C]",
+          "group-hover:text-[#1A1F2C]"
         )}>
           {type.name}
         </span>
         {isGptLink && (
           <ExternalLink 
             className={cn(
-              "w-4 h-4 text-white/90",
+              "w-4 h-4 text-[#1A1F2C]/90",
               "transition-all duration-300",
               "group-hover:scale-105"
             )}
