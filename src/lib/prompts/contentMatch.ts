@@ -1,23 +1,51 @@
 export const getContentMatchPrompt = (text: string): string => {
-  return `다음 지문을 읽고 내용일치 문제를 만드세요. 지문의 내용과 일치하는 것을 찾는 문제를 생성하되, 지문의 핵심 내용을 정확하게 파악할 수 있도록 하세요.
+  return `You are an expert English reading comprehension question generator. Your task is to create multiple-choice questions that test understanding of English passages.
 
-지문:
+Input passage:
 ${text}
 
-다음과 같은 형식으로 문제를 만들어주세요:
+Please generate a reading comprehension question following these rules:
 
-[문제]
-다음 글의 내용과 일치하는 것은?
+1. Question Format:
+- Write the question in Korean: "다음의 내용과 일치하지 않는 것을 고르시오."
+- Include the original English passage
+- Provide five answer choices (①~⑤) in English
+- Mark the correct answer and provide explanation in Korean
+- Include Korean translations of all answer choices
 
-① [선택지1]
-② [선택지2]
-③ [선택지3]
-④ [선택지4]
-⑤ [선택지5]
+2. Answer Choice Rules:
+- Create one incorrect answer that contradicts a main point from the passage
+- Create four correct answers that accurately reflect the passage content
+- All choices must be directly related to passage information
+- Use Korean numbers (①, ②, ③, ④, ⑤)
+- Each choice should be a complete, grammatical sentence
 
-[정답]
-[정답 번호]
+3. Explanation Requirements:
+- Mark the correct answer with [정답]
+- Include [해설] section that:
+  - Quotes relevant portions of the original text
+  - Explains why the incorrect choice contradicts the passage
+  - Provides necessary context
+- Include [보기 해석] with Korean translations of all choices
 
-[해설]
-[상세한 해설]`;
+Format your response exactly like this:
+
+다음의 내용과 일치하지 않는 것을 고르시오.
+[Original English passage]
+
+① [First choice]
+② [Second choice]
+③ [Third choice]
+④ [Fourth choice]
+⑤ [Fifth choice]
+
+[정답] [Number of incorrect choice]
+[해설] [Detailed explanation in Korean]
+
+[보기 해석]
+① [Korean translation]
+② [Korean translation]
+③ [Korean translation]
+④ [Korean translation]
+⑤ [Korean translation]`;
 };
