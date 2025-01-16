@@ -78,10 +78,10 @@ export default {
         },
         gradient: {
           '0%, 100%': {
-            opacity: '0.7'
+            backgroundPosition: '0% 50%'
           },
           '50%': {
-            opacity: '0.9'
+            backgroundPosition: '100% 50%'
           }
         },
         'luxury-fade': {
@@ -92,6 +92,14 @@ export default {
           '100%': {
             opacity: '1',
             transform: 'translateY(0)'
+          }
+        },
+        float: {
+          '0%, 100%': {
+            transform: 'translateY(0)'
+          },
+          '50%': {
+            transform: 'translateY(-20px)'
           }
         },
         twinkle: {
@@ -118,8 +126,9 @@ export default {
         'accordion-up': 'accordion-up 0.2s ease-out',
         'spin-slow': 'spin 3s linear infinite',
         'shimmer': 'shimmer 0.5s infinite',
-        'gradient': 'gradient 3s ease-in-out infinite',
+        'gradient': 'gradient 15s ease infinite',
         'luxury-fade': 'luxury-fade 0.5s ease-out',
+        'float': 'float 6s ease-in-out infinite',
         'twinkle': 'twinkle 2s ease-in-out infinite',
         'glow': 'glow 3s ease-in-out infinite',
       },
