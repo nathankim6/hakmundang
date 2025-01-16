@@ -100,7 +100,7 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
         )}
         {!hasAccess && (
           <Lock 
-            className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 animate-pulse"
+            className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-white/50 animate-pulse"
           />
         )}
         {!isSelected && hasAccess && !isGptLink && (
@@ -113,7 +113,7 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
           <Check className="w-4 h-4 text-luxury-accent animate-[bounce_1.5s_infinite]" />
         )}
         <span className={cn(
-          "flex-1 font-medium text-[#1A1F2C]",
+          "flex-1 font-medium text-white",
           "transition-all duration-500",
           "group-hover:text-luxury-accent",
           isSelected && "text-luxury-accent font-semibold scale-105"
@@ -123,7 +123,7 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
         {isGptLink && (
           <ExternalLink 
             className={cn(
-              "w-4 h-4 text-luxury-purple/70",
+              "w-4 h-4 text-white/70",
               "transition-all duration-300",
               "group-hover:text-luxury-accent group-hover:scale-110",
               "animate-[pulse_2s_ease-in-out_infinite]"
