@@ -26,6 +26,7 @@ import { getDictionaryPrompt } from "./dictionary";
 import { getSungnamVocab1Prompt } from "./sungnamVocab1";
 import { getSungnamVocab2Prompt } from "./sungnamVocab2";
 import { getSungnamVocab3Prompt } from "./sungnamVocab3";
+import { getIllustrationPrompt } from "./illustration";
 
 export {
   getContentMatchPrompt,
@@ -55,5 +56,6 @@ export {
   getDictionaryPrompt,
   getSungnamVocab1Prompt,
   getSungnamVocab2Prompt,
-  getSungnamVocab3Prompt
+  getSungnamVocab3Prompt,
+  getIllustrationPrompt
 };
