@@ -40,14 +40,18 @@ export const AppHeader = () => {
         </div>
 
         <div className="flex items-center space-x-6 w-full justify-center">
-          {/* Logo with enhanced styling */}
+          {/* Logo with enhanced styling and glowing border */}
           <div className="relative transform transition-transform duration-300 hover:scale-105">
             <div className="absolute inset-0 bg-[#403E43]/20 rounded-full blur-xl animate-pulse"></div>
-            <img 
-              src="/lovable-uploads/f91b258e-bdcf-40aa-95e8-5668f20b8129.png" 
-              alt="학문당입시학원 Logo" 
-              className="relative w-24 h-24 rounded-full object-cover"
-            />
+            <div className="relative">
+              {/* Glowing border effect */}
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-platinum via-[#E5E4E2] to-platinum rounded-full opacity-75 animate-twinkle blur-sm"></div>
+              <img 
+                src="/lovable-uploads/f91b258e-bdcf-40aa-95e8-5668f20b8129.png" 
+                alt="학문당입시학원 Logo" 
+                className="relative w-24 h-24 rounded-full object-cover border-2 border-platinum/30"
+              />
+            </div>
           </div>
           
           {/* Title section with platinum metallic styling */}
