@@ -1,4 +1,4 @@
-import { Check, Sparkles, Lock } from "lucide-react";
+import { Check, Sparkles, Lock, ExternalLink } from "lucide-react";
 import { QuestionType } from "@/types/question";
 import { cn } from "@/lib/utils";
 
@@ -53,6 +53,9 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
     onClick();
   };
 
+  // Check if this button links to a GPT
+  const isGptLink = ["dangDict", "summaryBlank", "sungReference", "sungExternal", "sungnamVocab1", "sungnamVocab2", "topicWriting", "orderWriting", "illustration"].includes(type.id);
+
   return (
     <button
       key={type.id}
@@ -100,14 +103,24 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
             className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 animate-pulse"
           />
         )}
-        {!isSelected && hasAccess && type.id !== "dangDict" && type.id !== "summaryBlank" && type.id !== "sungReference" && type.id !== "sungExternal" && type.id !== "sungnamVocab1" && type.id !== "sungnamVocab2" && type.id !== "topicWriting" && type.id !== "orderWriting" && type.id !== "illustration" && (
+        {!isSelected && hasAccess && !isGptLink && (
           <Sparkles 
             className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-[#FFD700] opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-twinkle"
             style={{ filter: 'drop-shadow(0 0 4px rgba(255, 215, 0, 0.7))' }}
           />
         )}
-        {isSelected && hasAccess && type.id !== "dangDict" && type.id !== "summaryBlank" && type.id !== "sungReference" && type.id !== "sungExternal" && type.id !== "sungnamVocab1" && type.id !== "sungnamVocab2" && type.id !== "topicWriting" && type.id !== "orderWriting" && type.id !== "illustration" && (
+        {isSelected && hasAccess && !isGptLink && (
           <Check className="w-4 h-4 text-luxury-accent animate-[bounce_1.5s_infinite]" />
+        )}
+        {isGptLink && (
+          <ExternalLink 
+            className={cn(
+              "w-4 h-4 text-luxury-purple/70",
+              "transition-all duration-300",
+              "group-hover:text-luxury-accent group-hover:scale-110",
+              "animate-[pulse_2s_ease-in-out_infinite]"
+            )}
+          />
         )}
         <span className={cn(
           "flex-1 font-medium text-[#1A1F2C]",
