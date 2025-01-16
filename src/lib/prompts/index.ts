@@ -1,5 +1,6 @@
 import { getContentMatchPrompt } from "./contentMatch";
 import { getContentMismatchPrompt } from "./contentMismatch";
+import { getInferencePrompt } from "./inference";
 import { getPurposePrompt } from "./purpose";
 import { getClaimPrompt } from "./claim";
 import { getImplicationPrompt } from "./implication";
@@ -78,6 +79,8 @@ export const getPromptForType = (type: QuestionType, text: string): string => {
       return getContentMatchPrompt(text);
     case "contentMismatch":
       return getContentMismatchPrompt(text);
+    case "inference":
+      return getInferencePrompt(text);
     case "illustration":
       return getIllustrationPrompt(text);
     case "sungnamVocab1":
@@ -94,6 +97,7 @@ export const getPromptForType = (type: QuestionType, text: string): string => {
 export {
   getContentMatchPrompt,
   getContentMismatchPrompt,
+  getInferencePrompt,
   getPurposePrompt,
   getClaimPrompt,
   getImplicationPrompt,
