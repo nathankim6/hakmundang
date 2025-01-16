@@ -142,7 +142,7 @@ export function APIConfig() {
               type="password"
               value={apiKey}
               onChange={(e) => setApiKey(e.target.value)}
-              className="flex-1 h-9 text-sm bg-white/10 border-white/20"
+              className="flex-1 h-9 text-sm bg-white border-white/20"
               placeholder="sk-..."
             />
             <Button 
