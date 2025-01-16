@@ -53,7 +53,6 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
     onClick();
   };
 
-  // Check if this button links to a GPT
   const isGptLink = ["dangDict", "summaryBlank", "sungReference", "sungExternal", "sungnamVocab1", "sungnamVocab2", "topicWriting", "orderWriting", "illustration"].includes(type.id);
 
   return (
@@ -61,23 +60,22 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
       key={type.id}
       onClick={handleClick}
       className={cn(
-        "group relative w-full text-left transition-all duration-500",
+        "group relative w-full text-left transition-all duration-300",
         "px-4 py-3 rounded-lg overflow-hidden",
         "bg-gradient-to-r from-white/90 to-white/80 backdrop-blur-sm",
         "border border-transparent",
-        "shadow-[0_2px_10px_-3px_rgba(124,58,237,0.1)]",
+        "shadow-sm",
         "transform hover:-translate-y-0.5 active:translate-y-0",
         hasAccess ? (
           isSelected ? 
-            "scale-[1.02] hover:scale-[1.03] bg-gradient-to-r from-luxury-accent to-luxury-purple shadow-[0_4px_20px_-2px_rgba(155,135,245,0.5)]" : 
+            "bg-gradient-to-r from-luxury-accent to-luxury-purple shadow-lg" : 
             "hover:scale-[1.01] hover:bg-gradient-to-r hover:from-luxury-light hover:to-white"
         ) : "cursor-not-allowed opacity-50",
         isSelected && hasAccess && [
-          "border-luxury-accent",
-          "shadow-[0_0_25px_-3px_rgba(155,135,245,0.6)]",
-          "animate-[pulse_3s_ease-in-out_infinite]"
+          "border-luxury-accent/20",
+          "shadow-[0_2px_15px_-2px_rgba(155,135,245,0.4)]",
         ],
-        !isSelected && hasAccess && "hover:border-luxury-accent/20 hover:shadow-[0_8px_25px_-5px_rgba(124,58,237,0.2)]"
+        !isSelected && hasAccess && "hover:border-luxury-accent/20 hover:shadow-[0_4px_12px_-4px_rgba(124,58,237,0.15)]"
       )}
     >
       <div className="relative z-10 flex items-center gap-2">
@@ -91,8 +89,8 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
                 className={cn(
                   "w-6 h-6 object-contain rounded-full bg-white/90 p-0.5",
                   "shadow-[0_2px_4px_-1px_rgba(0,0,0,0.1)]",
-                  "transition-all duration-500",
-                  "group-hover:scale-110 group-hover:rotate-[360deg]"
+                  "transition-all duration-300",
+                  "group-hover:scale-105"
                 )}
               />
             ))}
@@ -100,22 +98,22 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
         )}
         {!hasAccess && (
           <Lock 
-            className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 animate-pulse"
+            className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"
           />
         )}
         {!isSelected && hasAccess && !isGptLink && (
           <Sparkles 
-            className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-[#FFD700] opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-twinkle"
+            className="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 text-[#FFD700] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             style={{ filter: 'drop-shadow(0 0 4px rgba(255, 215, 0, 0.7))' }}
           />
         )}
         {isSelected && hasAccess && !isGptLink && (
-          <Check className="w-4 h-4 text-white animate-[bounce_1.5s_infinite]" />
+          <Check className="w-4 h-4 text-white" />
         )}
         <span className={cn(
           "flex-1 font-medium",
-          "transition-all duration-500",
-          isSelected ? "text-white font-bold scale-105" : "text-[#1A1F2C]",
+          "transition-all duration-300",
+          isSelected ? "text-white font-bold" : "text-[#1A1F2C]",
           "group-hover:text-luxury-accent"
         )}>
           {type.name}
@@ -125,8 +123,7 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
             className={cn(
               "w-4 h-4 text-white/90",
               "transition-all duration-300",
-              "group-hover:scale-110",
-              "animate-[pulse_2s_ease-in-out_infinite]"
+              "group-hover:scale-105"
             )}
           />
         )}
@@ -135,13 +132,9 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
         "absolute inset-0 rounded-lg",
         "bg-gradient-to-r from-transparent via-white/10 to-transparent",
         "opacity-0 group-hover:opacity-100",
-        "transition-opacity duration-500",
-        "animate-shimmer",
+        "transition-opacity duration-300",
         isSelected && "opacity-100"
       )} />
-      {isSelected && (
-        <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-luxury-accent to-luxury-purple animate-pulse" />
-      )}
     </button>
   );
 };
