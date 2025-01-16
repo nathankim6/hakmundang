@@ -8,6 +8,5 @@ export const contentTypes: QuestionType[] = [
   { id: "weekendClinic", name: "주말클리닉" },
   { id: "contentMatch", name: "내용일치" },
   { id: "contentMismatch", name: "내용불일치" },
-  { id: "inference", name: "내용추론" },
   { id: "illustration", name: "삽화제작" }
 ];
