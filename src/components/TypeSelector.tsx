@@ -1,5 +1,5 @@
 import { QuestionType } from "@/types/question";
-import { getQuestionTypes } from "@/lib/claude";
+import { getQuestionTypes } from "@/lib/question-types";
 import { useToast } from "./ui/use-toast";
 import { TypeCategory } from "./type-selector/TypeCategory";
 import { Button } from "./ui/button";
@@ -14,13 +14,12 @@ interface TypeSelectorProps {
 export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelectorProps) => {
   const types = getQuestionTypes();
   
-  // 수능형 (index 0-13)
+  // 수능형
   const readingTypes = types.filter(type => 
     type.id.match(/^(purpose|mood|claim|implication|mainPoint|topic|title|vocabulary|blank|blankMultiple|irrelevant|order|insert|summary)$/)
   );
   
-  // 서답형
-  const writingTypes = types.filter(type => 
+  // 서ingTypes = types.filter(type => 
     type.id.match(/^(summaryBlank|topicWriting|orderWriting)$/)
   );
   
