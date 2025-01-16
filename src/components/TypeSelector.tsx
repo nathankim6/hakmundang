@@ -24,7 +24,7 @@ export const TypeSelector = ({ selectedTypes, onSelect, onRemove }: TypeSelector
     type.id.match(/^(summaryBlank|topicWriting|orderWriting)$/)
   );
   
-  // 기타 유형 - contentMatch(내용일치), contentMismatch(내용불일치), inference(내용추론) 추가
+  // 기타 유형
   const contentTypes = types.filter(type => 
     type.id.match(/^(synonymAntonym|trueOrFalse|logicFlow|sentenceSplitter|weekendClinic|contentMatch|contentMismatch|inference|illustration)$/)
   );
