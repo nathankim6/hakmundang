@@ -34,7 +34,7 @@ const Index = () => {
         <div className="flex flex-col space-y-8">
           <AppHeader />
           <AuthContainer />
-          <div className="metallic-border rounded-xl p-8 bg-gradient-to-br from-luxury-dark/30 via-luxury-purple/10 to-luxury-dark/30 animate-gradient">
+          <div className="metallic-border rounded-xl p-8">
             <QuestionGenerator />
           </div>
         </div>
