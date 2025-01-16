@@ -1,12 +1,23 @@
 export const getInferencePrompt = (text: string): string => {
-  return `Given the following text, generate an inference question that tests the reader's ability to draw logical conclusions from the information provided. Include 5 options (①-⑤) where one option represents the most logical inference based on the text.
+  return `다음 지문을 읽고 내용추론 문제를 만드세요. 지문의 내용을 바탕으로 추론할 수 있는 내용을 묻는 문제를 생성하되, 지문에 직접적으로 언급되지 않은 내용을 추론하도록 하세요.
 
-Text:
+지문:
 ${text}
 
-Please format your response as follows:
-[Question]
-[5 Options marked with ①-⑤]
-[Answer]
-[Explanation]`;
+다음과 같은 형식으로 문제를 만들어주세요:
+
+[문제]
+다음 글의 내용을 통해 추론할 수 있는 것은?
+
+① [선택지1]
+② [선택지2]
+③ [선택지3]
+④ [선택지4]
+⑤ [선택지5]
+
+[정답]
+[정답 번호]
+
+[해설]
+[상세한 해설]`;
 };
