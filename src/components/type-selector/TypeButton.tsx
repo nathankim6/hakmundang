@@ -69,12 +69,12 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
         "transform hover:-translate-y-0.5 active:translate-y-0",
         hasAccess ? (
           isSelected ? 
-            "scale-[1.02] hover:scale-[1.03] bg-gradient-to-r from-luxury-accent/10 to-luxury-purple/10" : 
+            "scale-[1.02] hover:scale-[1.03] bg-gradient-to-r from-luxury-accent to-luxury-purple shadow-[0_4px_20px_-2px_rgba(155,135,245,0.5)]" : 
             "hover:scale-[1.01] hover:bg-gradient-to-r hover:from-luxury-light hover:to-white"
         ) : "cursor-not-allowed opacity-50",
         isSelected && hasAccess && [
-          "border-luxury-accent/30",
-          "shadow-[0_0_25px_-3px_rgba(155,135,245,0.4)]",
+          "border-luxury-accent",
+          "shadow-[0_0_25px_-3px_rgba(155,135,245,0.6)]",
           "animate-[pulse_3s_ease-in-out_infinite]"
         ],
         !isSelected && hasAccess && "hover:border-luxury-accent/20 hover:shadow-[0_8px_25px_-5px_rgba(124,58,237,0.2)]"
@@ -110,22 +110,22 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
           />
         )}
         {isSelected && hasAccess && !isGptLink && (
-          <Check className="w-4 h-4 text-luxury-accent animate-[bounce_1.5s_infinite]" />
+          <Check className="w-4 h-4 text-white animate-[bounce_1.5s_infinite]" />
         )}
         <span className={cn(
-          "flex-1 font-medium text-[#1A1F2C]",
+          "flex-1 font-medium",
           "transition-all duration-500",
-          "group-hover:text-luxury-accent",
-          isSelected && "text-luxury-accent font-semibold scale-105"
+          isSelected ? "text-white font-bold scale-105" : "text-[#1A1F2C]",
+          "group-hover:text-luxury-accent"
         )}>
           {type.name}
         </span>
         {isGptLink && (
           <ExternalLink 
             className={cn(
-              "w-4 h-4 text-luxury-purple/70",
+              "w-4 h-4 text-white/90",
               "transition-all duration-300",
-              "group-hover:text-luxury-accent group-hover:scale-110",
+              "group-hover:scale-110",
               "animate-[pulse_2s_ease-in-out_infinite]"
             )}
           />
@@ -140,7 +140,7 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
         isSelected && "opacity-100"
       )} />
       {isSelected && (
-        <div className="absolute inset-0 rounded-lg bg-luxury-accent/5 animate-pulse" />
+        <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-luxury-accent to-luxury-purple animate-pulse" />
       )}
     </button>
   );
