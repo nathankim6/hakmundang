@@ -27,7 +27,8 @@ import {
   getSungnamVocab3Prompt,
   getContentMatchPrompt,
   getContentMismatchPrompt,
-  getIllustrationPrompt
+  getIllustrationPrompt,
+  getInferencePrompt
 } from "./prompts";
 
 export const getQuestionTypes = (): QuestionType[] => [
@@ -69,7 +70,8 @@ export const getQuestionTypes = (): QuestionType[] => [
   { id: "weekendClinic", name: "주말클리닉" },
   { id: "contentMatch", name: "내용일치" },
   { id: "contentMismatch", name: "내용불일치" },
-  { id: "illustration", name: "삽화제작" }
+  { id: "illustration", name: "삽화제작" },
+  { id: "inference", name: "내용추론" }
 ];
 
 export const getPromptForType = (type: QuestionType, text: string): string => {
@@ -130,6 +132,8 @@ export const getPromptForType = (type: QuestionType, text: string): string => {
       return getContentMismatchPrompt(text);
     case "illustration":
       return getIllustrationPrompt(text);
+    case "inference":
+      return getInferencePrompt(text);
     default:
       return `Generate a question of type ${type.name} based on the following text: ${text}`;
   }
