@@ -8,7 +8,7 @@ export const suneungTypes: QuestionType[] = [
   { id: "mainPoint", name: "[22] 요지" },
   { id: "topic", name: "[23] 주제" },
   { id: "title", name: "[24] 제목" },
-  { id: "vocabulary", name: "[31] 어휘" },
+  { id: "vocabulary", name: "[30] 어휘" },
   { id: "blank", name: "[31] 빈칸" },
   { id: "blankMultiple", name: "[32-34] 빈칸" },
   { id: "irrelevant", name: "[35] 무관한 문장" },

@@ -70,8 +70,8 @@ export const QuestionGenerator = () => {
         <div className="w-80 flex-shrink-0">
           <div className="sticky top-8">
             <div className="bg-gradient-to-r from-white/80 via-gray-50/50 to-white/80 shadow-lg border border-gray-200 backdrop-blur-sm p-4 rounded-lg relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#F1F0FB]/40 to-[#E5DEFF]/30 opacity-70 animate-gradient"></div>
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(241,240,251,0.8),rgba(229,222,255,0.6)_70%)] mix-blend-overlay"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#1A1F2C]/40 to-[#403E43]/30 opacity-70 animate-gradient"></div>
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(26,31,44,0.8),rgba(64,62,67,0.6)_70%)] mix-blend-overlay"></div>
               <div className="relative z-10">
                 <TypeSelector 
                   selectedTypes={selectedTypes.map(entry => entry.type)} 
