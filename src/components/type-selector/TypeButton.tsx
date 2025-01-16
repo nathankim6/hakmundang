@@ -112,6 +112,14 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
         {isSelected && hasAccess && !isGptLink && (
           <Check className="w-4 h-4 text-luxury-accent animate-[bounce_1.5s_infinite]" />
         )}
+        <span className={cn(
+          "flex-1 font-medium text-[#1A1F2C]",
+          "transition-all duration-500",
+          "group-hover:text-luxury-accent",
+          isSelected && "text-luxury-accent font-semibold scale-105"
+        )}>
+          {type.name}
+        </span>
         {isGptLink && (
           <ExternalLink 
             className={cn(
@@ -122,14 +130,6 @@ export const TypeButton = ({ type, isSelected, hasAccess, onClick, logos }: Type
             )}
           />
         )}
-        <span className={cn(
-          "flex-1 font-medium text-[#1A1F2C]",
-          "transition-all duration-500",
-          "group-hover:text-luxury-accent",
-          isSelected && "text-luxury-accent font-semibold scale-105"
-        )}>
-          {type.name}
-        </span>
       </div>
       <div className={cn(
         "absolute inset-0 rounded-lg",
