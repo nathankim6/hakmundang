@@ -30,7 +30,7 @@ import {
   getInferencePrompt
 } from "./prompts";
 
-export const getQuestionTypes = () => [
+export const getQuestionTypes = (): QuestionType[] => [
   // 수능형
   { id: "purpose", name: "[18] 글의 목적" },
   { id: "mood", name: "[19] 심경/분위기" },
