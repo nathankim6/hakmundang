@@ -1,51 +1,23 @@
 export const getContentMatchPrompt = (text: string): string => {
-  return `You are an expert English reading comprehension question generator. Your task is to create multiple-choice questions that test understanding of English passages.
+  return `당신은 영어 지문을 입력받아 내용일치 문제를 만드는 수능 영어 전문가입니다. 아래 지침에 따라 문제를 생성하세요:
 
-Input passage:
+[INPUT]
 ${text}
 
-Please generate a reading comprehension question following these rules:
+[OUTPUT]
+다음 글의 내용과 일치하는 것은?
 
-1. Question Format:
-- Write the question in Korean: "다음의 내용과 일치하지 않는 것을 고르시오."
-- Include the original English passage
-- Provide five answer choices (①~⑤) in English
-- Mark the correct answer and provide explanation in Korean
-- Include Korean translations of all answer choices
+${text}
 
-2. Answer Choice Rules:
-- Create one incorrect answer that contradicts a main point from the passage
-- Create four correct answers that accurately reflect the passage content
-- All choices must be directly related to passage information
-- Use Korean numbers (①, ②, ③, ④, ⑤)
-- Each choice should be a complete, grammatical sentence
+① {Write an incorrect statement about the passage in English}
+② {Write an incorrect statement about the passage in English}
+③ {Write a correct statement about the passage in English}
+④ {Write an incorrect statement about the passage in English}
+⑤ {Write an incorrect statement about the passage in English}
 
-3. Explanation Requirements:
-- Mark the correct answer with [정답]
-- Include [해설] section that:
-  - Quotes relevant portions of the original text
-  - Explains why the incorrect choice contradicts the passage
-  - Provides necessary context
-- Include [보기 해석] with Korean translations of all choices
+[정답] ③
 
-Format your response exactly like this:
-
-다음의 내용과 일치하지 않는 것을 고르시오.
-[Original English passage]
-
-① [First choice]
-② [Second choice]
-③ [Third choice]
-④ [Fourth choice]
-⑤ [Fifth choice]
-
-[정답] [Number of incorrect choice]
-[해설] [Detailed explanation in Korean]
-
-[보기 해석]
-① [Korean translation]
-② [Korean translation]
-③ [Korean translation]
-④ [Korean translation]
-⑤ [Korean translation]`;
+[해설]
+③번 선택지는 지문에서 "{지문의 실제 내용}"이라고 언급한 것과 일치합니다.
+나머지 선택지들은 지문의 내용과 일치하지 않습니다.`;
 };
