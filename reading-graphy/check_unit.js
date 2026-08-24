@@ -27,6 +27,31 @@ if (kind === "full") {
   if (!fs.existsSync(kb)) errs.push(`KB 도식 없음: ${kb}`);
 }
 const src = fs.readFileSync(file, "utf8");
+// 블록 주석이 코드를 삼켰는지 검사한다 — 치환 스크립트가 주석의 닫는 기호를 지우면
+// 문법은 유효한 채 한 구역이 통째로 사라진다(렌더는 통과하므로 여기서 잡아야 한다).
+(() => {
+  const CODE = /K\.push\(|exSeg\(|new TableRow|new Paragraph|writeField\(|\bT\(\[/;
+  for (let i = 0; i < src.length; i++) {
+    const c = src[i];
+    if (c === '"' || c === "'" || c === "`") {           // 문자열 리터럴 건너뛰기
+      const q = c; i++;
+      while (i < src.length) { if (src[i] === "\\") { i += 2; continue; } if (src[i] === q) break; i++; }
+      continue;
+    }
+    if (c === "/" && src[i + 1] === "/") { const j = src.indexOf("\n", i); i = j < 0 ? src.length : j; continue; }
+    if (c === "/" && src[i + 1] === "*") {
+      const j = src.indexOf("*/", i + 2);
+      const end = j < 0 ? src.length : j + 2;
+      const body = src.slice(i, end);
+      if (CODE.test(body)) {
+        const line = src.slice(0, i).split("\n").length;
+        errs.push(`${line}행 블록 주석이 코드 ${body.split("\n").length}줄을 삼킴 (닫는 */ 누락) — ${body.slice(0, 50).trim()}...`);
+      }
+      i = end - 1;
+      continue;
+    }
+  }
+})();
 if (src.includes("banner_u01.png") && nn !== "01") errs.push("banner_u01.png가 남아 있음 (banner_u" + nn + ".png로 교체)");
 if (src.includes("kb_u01.png") && nn !== "01") errs.push("kb_u01.png가 남아 있음");
 
