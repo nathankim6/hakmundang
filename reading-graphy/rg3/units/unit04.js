@@ -313,9 +313,9 @@ K.push(T(aw, [
       { w, va: VerticalAlign.CENTER, m: { top: 0, bottom: 0, left: 0, right: 40 } });
     const gapC = (w) => cel(p(t(""), { after: 0 }), { w, m: { top: 0, bottom: 0, left: 0, right: 0 } });
     const chips2 = (a, b, cw) => T([cw, 230, cw], [new TableRow({ children: [chipC(a, cw), gapC(230), chipC(b, cw)] })]);
-    const chips8 = () => T([820, 1200, 170, 1200, 300, 930, 1200, 170, 1200], [new TableRow({ children: [
-      labC("they =", 820), chipC("사람들", 1200), gapC(170), chipC("버스들", 1200), gapC(300),
-      labC("them =", 930), chipC("사람들", 1200), gapC(170), chipC("버스들", 1200),
+    const chips8 = () => T([907, 1121, 193, 1119, 330, 1019, 1119, 193, 1119], [new TableRow({ children: [
+      labC("they =", 907), chipC("사람들", 1121), gapC(193), chipC("버스들", 1119), gapC(330),
+      labC("them =", 1019), chipC("사람들", 1119), gapC(193), chipC("버스들", 1119),
     ] })]);
     return [
     ["2", "It", [t("the most dangerous animal (가장 위험한 동물)", { size: 18, color: SUB }), t("   예시", { size: 14, bold: true, color: GOLD })], true],
@@ -743,13 +743,13 @@ K.push(T([W], [new TableRow({ children: [cel([
   p([t("독해력 5단계 훈련", { size: 16, bold: true, color: NAVY })], { after: 42 }),
   p([t("STEP 1 ", { size: 19, bold: true, color: NAVY2 }), t("1-1 ②   1-2 mosquitoes · Iceland · temperature        ", { size: 19, bold: true }),
      t("STEP 2 ", { size: 19, bold: true, color: NAVY2 }), t("2-1 반전 · 이유 · 반전 · 조건   2-2 [B] 예외 · [E] 제안   2-3 ①", { size: 19, bold: true })], { after: 25 }),
-  p([t("STEP 3 ", { size: 19, bold: true, color: NAVY2 }), t("3-3 ⓒ → ⓐ → ⓑ → ⓓ  ·  Mosquitoes can’t survive in Iceland because the temperature changes too quickly for them.", { size: 19, bold: true })], { after: 25 }),
+  p([t("STEP 3 ", { size: 19, bold: true, color: NAVY2 }), t("3-3 (c) → (a) → (b) → (d)  ·  Mosquitoes can’t survive in Iceland because the temperature changes too quickly for them.", { size: 19, bold: true })], { after: 25 }),
   p([t("STEP 4 ", { size: 19, bold: true, color: NAVY2 }), t("(1) dangerous  (2) cold  (3) temperature  (4) bites        ", { size: 19, bold: true }),
      t("STEP 5 ", { size: 19, bold: true, color: NAVY2 }), t("문장 4 ②  문장 6 ①  문장 8 ③  문장 12 ②", { size: 19, bold: true })], { after: 150 }),
   p([t("RE:RIGHT", { f: FO, size: 13, bold: true, color: NAVY, ls: 10 })], { after: 42 }),
   p([t("R1 ", { size: 19, bold: true, color: NAVY2 }), t("1T · 2F · 3T · 4F · 5T · 6F · 7T · 8F        ", { size: 19, bold: true }),
-     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("ⓑ → ⓐ → ⓒ → ⓓ", { size: 19, bold: true })], { after: 25 }),
-  p([t("R3 ", { size: 19, bold: true, color: NAVY2 }), t("1ⓔ · 2ⓑ · 3ⓐ · 4ⓓ · 5ⓕ · 6ⓒ        ", { size: 19, bold: true }),
+     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("(b) → (a) → (c) → (d)", { size: 19, bold: true })], { after: 25 }),
+  p([t("R3 ", { size: 19, bold: true, color: NAVY2 }), t("1(e) · 2(b) · 3(a) · 4(d) · 5(f) · 6(c)        ", { size: 19, bold: true }),
      t("R4 ", { size: 19, bold: true, color: NAVY2 }), t("(1) are  (2) worry  (3) be found  (4) enjoy", { size: 19, bold: true })], { after: 25 }),
   p([t("R5 ", { size: 19, bold: true, color: NAVY2 }), t("(1) mosquito (2) diseases (3) survive (4) cold (5) temperature (6) quickly (7) escape (8) bites", { size: 19, bold: true })], { after: 25 }),
   p([t("R7 ", { size: 19, bold: true, color: NAVY2 }), t("(1) They kill about 725,000 people per year.  (2) You can enjoy the beautiful nature and won’t get any mosquito bites.", { size: 19, bold: true })], { after: 0 }),

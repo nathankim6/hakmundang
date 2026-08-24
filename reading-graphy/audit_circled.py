@@ -6,7 +6,7 @@
 """
 import re, sys, os
 
-CIRCLED = re.compile(r'[ⓐ-ⓩ]')
+CIRCLED = re.compile(r'[ⓐ-ⓩ]|\\\\u24[Dd][0-9A-Fa-f]')
 HANGUL = re.compile(r'[가-힣]')
 # Hs("...") / H("...") 제목과, bold: true 가 붙은 t("...") 런
 HS = re.compile(r'\bHs?\("((?:[^"\\]|\\.)*)"\)')
@@ -22,11 +22,11 @@ for f in sorted(sys.argv[1:]):
     hits = []
     for m in HS.finditer(src):
         s = unesc(m.group(1))
-        if CIRCLED.search(s) and HANGUL.search(s):
+        if CIRCLED.search(s):
             hits.append(('제목', s))
     for m in BOLDRUN.finditer(src):
         s = unesc(m.group(1))
-        if CIRCLED.search(s) and HANGUL.search(s):
+        if CIRCLED.search(s):
             hits.append(('굵은런', s))
     for kind, s in hits:
         print(f'{tag} [{kind}] {s[:90]}')

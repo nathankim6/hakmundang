@@ -279,9 +279,9 @@ K.push(T(aw, [
       { w, va: VerticalAlign.CENTER, m: { top: 0, bottom: 0, left: 0, right: 40 } });
     const gapC = (w) => cel(p(t(""), { after: 0 }), { w, m: { top: 0, bottom: 0, left: 0, right: 0 } });
     const chips2 = (a, b, cw) => T([cw, 230, cw], [new TableRow({ children: [chipC(a, cw), gapC(230), chipC(b, cw)] })]);
-    const chips8 = () => T([800, 1150, 150, 1150, 250, 800, 1150, 150, 1150], [new TableRow({ children: [
-      labC("their₁ =", 800), chipC("사이렌의", 1150), gapC(150), chipC("선원들의", 1150), gapC(250),
-      labC("their₂ =", 800), chipC("선원들의", 1150), gapC(150), chipC("사이렌의", 1150),
+    const chips8 = () => T([956, 1056, 160, 1055, 267, 956, 1055, 160, 1055], [new TableRow({ children: [
+      labC("their₁ =", 956), chipC("사이렌의", 1056), gapC(160), chipC("선원들의", 1055), gapC(267),
+      labC("their₂ =", 956), chipC("선원들의", 1055), gapC(160), chipC("사이렌의", 1055),
     ] })]);
     return [
     ["6", "This strategy", [t("마감을 스스로 정하기 (자기 통제 전략)", { size: 18, color: SUB }), t("   예시", { size: 14, bold: true, color: GOLD })], true],
@@ -405,7 +405,7 @@ K.push(T([W], [new TableRow({ children: [cel([
   p([t("STEP 1 ", { size: 19, bold: true, color: NAVY2 }), t("1-1 ②   1-2 contract · self-control · goals   1-3 아래 참조", { size: 19, bold: true })], { after: 75 }),
   p([t("RE:RIGHT", { f: FO, size: 13, bold: true, color: NAVY, ls: 10 })], { after: 42 }),
   p([t("R1 ", { size: 19, bold: true, color: NAVY2 }), t("1T · 2F · 3T · 4F · 5T · 6F · 7T · 8F        ", { size: 19, bold: true }),
-     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("ⓑ → ⓐ → ⓒ → ⓓ", { size: 19, bold: true })], { after: 0 }),
+     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("(b) → (a) → (c) → (d)", { size: 19, bold: true })], { after: 0 }),
 ], { w: W, shade: COOL, b: { top: bd(12, NAVY), bottom: bd(4, GOLD), left: NOB, right: NOB }, m: { top: 74, bottom: 74, left: 250, right: 250 } })] })]));
 K.push(sp(68));
 Hs("독해 01   제목   ·   정답 ①");

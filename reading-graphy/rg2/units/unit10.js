@@ -313,9 +313,9 @@ K.push(T(aw, [
       { w, va: VerticalAlign.CENTER, m: { top: 0, bottom: 0, left: 0, right: 40 } });
     const gapC = (w) => cel(p(t(""), { after: 0 }), { w, m: { top: 0, bottom: 0, left: 0, right: 0 } });
     const chips2 = (a, b, cw) => T([cw, 230, cw], [new TableRow({ children: [chipC(a, cw), gapC(230), chipC(b, cw)] })]);
-    const chips8 = () => T([900, 1200, 170, 1200, 300, 900, 1200, 170, 1200], [new TableRow({ children: [
-      labC("They =", 900), chipC("자원봉사자", 1200), gapC(170), chipC("브라이언", 1200), gapC(300),
-      labC("him =", 900), chipC("자원봉사자", 1200), gapC(170), chipC("브라이언", 1200),
+    const chips8 = () => T([872, 1278, 174, 1129, 295, 792, 1277, 174, 1129], [new TableRow({ children: [
+      labC("They =", 872), chipC("자원봉사자", 1278), gapC(174), chipC("브라이언", 1129), gapC(295),
+      labC("him =", 792), chipC("자원봉사자", 1277), gapC(174), chipC("브라이언", 1129),
     ] })]);
     return [
     ["3", "it", [t("명암을 나타내는 it (가리키는 말이 따로 없음)", { size: 18, color: SUB }), t("   예시", { size: 14, bold: true, color: GOLD })], true],
@@ -741,13 +741,13 @@ K.push(T([W], [new TableRow({ children: [cel([
   p([t("독해력 5단계 훈련", { size: 16, bold: true, color: NAVY })], { after: 42 }),
   p([t("STEP 1 ", { size: 19, bold: true, color: NAVY2 }), t("1-1 ②   1-2 volunteers · AI · blind        ", { size: 19, bold: true }),
      t("STEP 2 ", { size: 19, bold: true, color: NAVY2 }), t("2-1 때 · 반전 · 나열 · 덧붙임   2-2 [B] 앱 등장 · [E] 기대   2-3 ①", { size: 19, bold: true })], { after: 25 }),
-  p([t("STEP 3 ", { size: 19, bold: true, color: NAVY2 }), t("3-3 ⓒ → ⓐ → ⓓ → ⓑ  ·  Volunteers and AI in Be My Eyes help blind people do more amazing things.", { size: 19, bold: true })], { after: 25 }),
+  p([t("STEP 3 ", { size: 19, bold: true, color: NAVY2 }), t("3-3 (c) → (a) → (d) → (b)  ·  Volunteers and AI in Be My Eyes help blind people do more amazing things.", { size: 19, bold: true })], { after: 25 }),
   p([t("STEP 4 ", { size: 19, bold: true, color: NAVY2 }), t("(1) blind  (2) volunteers  (3) AI  (4) lives        ", { size: 19, bold: true }),
      t("STEP 5 ", { size: 19, bold: true, color: NAVY2 }), t("문장 1 ②  문장 6 ①  문장 8 ①  문장 11 ③", { size: 19, bold: true })], { after: 150 }),
   p([t("RE:RIGHT", { f: FO, size: 13, bold: true, color: NAVY, ls: 10 })], { after: 42 }),
   p([t("R1 ", { size: 19, bold: true, color: NAVY2 }), t("1T · 2T · 3F · 4T · 5T · 6F · 7F · 8F        ", { size: 19, bold: true }),
-     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("ⓑ → ⓓ → ⓒ → ⓐ", { size: 19, bold: true })], { after: 25 }),
-  p([t("R3 ", { size: 19, bold: true, color: NAVY2 }), t("1ⓔ · 2ⓒ · 3ⓐ · 4ⓕ · 5ⓑ · 6ⓓ        ", { size: 19, bold: true }),
+     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("(b) → (d) → (c) → (a)", { size: 19, bold: true })], { after: 25 }),
+  p([t("R3 ", { size: 19, bold: true, color: NAVY2 }), t("1(e) · 2(c) · 3(a) · 4(f) · 5(b) · 6(d)        ", { size: 19, bold: true }),
      t("R4 ", { size: 19, bold: true, color: NAVY2 }), t("(1) can only tell  (2) is  (3) has  (4) describe", { size: 19, bold: true })], { after: 25 }),
   p([t("R5 ", { size: 19, bold: true, color: NAVY2 }), t("(1) blind (2) sight (3) volunteers (4) describe (5) labels (6) upgrade (7) important (8) lives", { size: 19, bold: true })], { after: 25 }),
   p([t("R7 ", { size: 19, bold: true, color: NAVY2 }), t("(1) These volunteers describe things Brian can’t see.  (2) It has more than 6 million volunteers all over the world.", { size: 19, bold: true })], { after: 0 }),

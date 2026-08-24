@@ -397,7 +397,7 @@ K.push(T([W], [new TableRow({ children: [cel([
   p([t("STEP 1 ", { size: 19, bold: true, color: NAVY2 }), t("1-1 \u2462   1-2 fishers · dolphins · friendship   1-3 아래 참조", { size: 19, bold: true })], { after: 75 }),
   p([t("RE:RIGHT", { f: FO, size: 13, bold: true, color: NAVY, ls: 10 })], { after: 42 }),
   p([t("R1 ", { size: 19, bold: true, color: NAVY2 }), t("1T · 2F · 3T · 4T · 5F · 6F · 7T · 8F        ", { size: 19, bold: true }),
-     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("\u24D1 → \u24D2 → \u24D0 → \u24D3", { size: 19, bold: true })], { after: 0 }),
+     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("(b) → (c) → (a) → (d)", { size: 19, bold: true })], { after: 0 }),
 ], { w: W, shade: COOL, b: { top: bd(12, NAVY), bottom: bd(4, GOLD), left: NOB, right: NOB }, m: { top: 74, bottom: 74, left: 250, right: 250 } })] })]));
 K.push(sp(68));
 Hs("독해 01   제목   ·   정답 \u2461");

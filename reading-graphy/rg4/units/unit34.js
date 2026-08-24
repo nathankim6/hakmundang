@@ -313,9 +313,9 @@ K.push(T(aw, [
       { w, va: VerticalAlign.CENTER, m: { top: 0, bottom: 0, left: 0, right: 40 } });
     const gapC = (w) => cel(p(t(""), { after: 0 }), { w, m: { top: 0, bottom: 0, left: 0, right: 0 } });
     const chips2 = (a, b, cw) => T([cw, 230, cw], [new TableRow({ children: [chipC(a, cw), gapC(230), chipC(b, cw)] })]);
-    const chips8 = () => T([820, 1200, 170, 1200, 300, 930, 1200, 170, 1200], [new TableRow({ children: [
-      labC("there =", 820), chipC("블루 홀 안", 1200), gapC(170), chipC("바다 표면", 1200), gapC(300),
-      labC("which =", 930), chipC("톱상어 두 마리", 1200), gapC(170), chipC("과학자들", 1200),
+    const chips8 = () => T([841, 1139, 165, 1104, 280, 924, 1434, 165, 1068], [new TableRow({ children: [
+      labC("there =", 841), chipC("블루 홀 안", 1139), gapC(165), chipC("바다 표면", 1104), gapC(280),
+      labC("which =", 924), chipC("톱상어 두 마리", 1434), gapC(165), chipC("과학자들", 1068),
     ] })]);
     return [
     ["4", "they", [t("blue holes (블루 홀)", { size: 18, color: SUB }), t("   예시", { size: 14, bold: true, color: GOLD })], true],
@@ -741,13 +741,13 @@ K.push(T([W], [new TableRow({ children: [cel([
   p([t("독해력 5단계 훈련", { size: 16, bold: true, color: NAVY })], { after: 42 }),
   p([t("STEP 1 ", { size: 19, bold: true, color: NAVY2 }), t("1-1 ②   1-2 blue holes · sea life · dangerous        ", { size: 19, bold: true }),
      t("STEP 2 ", { size: 19, bold: true, color: NAVY2 }), t("2-1 이유 · 덧붙임 · 예시 · 결과   2-2 [B] 생물 · [E] 마무리   2-3 ①", { size: 19, bold: true })], { after: 25 }),
-  p([t("STEP 3 ", { size: 19, bold: true, color: NAVY2 }), t("3-3 ⓑ → ⓒ → ⓓ → ⓐ  ·  Blue holes are full of sea life, but they are dangerous to explore.", { size: 19, bold: true })], { after: 25 }),
+  p([t("STEP 3 ", { size: 19, bold: true, color: NAVY2 }), t("3-3 (b) → (c) → (d) → (a)  ·  Blue holes are full of sea life, but they are dangerous to explore.", { size: 19, bold: true })], { after: 25 }),
   p([t("STEP 4 ", { size: 19, bold: true, color: NAVY2 }), t("(1) caves  (2) life  (3) dangerous  (4) equipment        ", { size: 19, bold: true }),
      t("STEP 5 ", { size: 19, bold: true, color: NAVY2 }), t("문장 2 ②  문장 4 ①  문장 9 ②  문장 11 ③", { size: 19, bold: true })], { after: 150 }),
   p([t("RE:RIGHT", { f: FO, size: 13, bold: true, color: NAVY, ls: 10 })], { after: 42 }),
   p([t("R1 ", { size: 19, bold: true, color: NAVY2 }), t("1T · 2F · 3T · 4F · 5T · 6F · 7T · 8F        ", { size: 19, bold: true }),
-     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("ⓑ → ⓒ → ⓓ → ⓐ", { size: 19, bold: true })], { after: 25 }),
-  p([t("R3 ", { size: 19, bold: true, color: NAVY2 }), t("1ⓔ · 2ⓑ · 3ⓐ · 4ⓕ · 5ⓒ · 6ⓓ        ", { size: 19, bold: true }),
+     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("(b) → (c) → (d) → (a)", { size: 19, bold: true })], { after: 25 }),
+  p([t("R3 ", { size: 19, bold: true, color: NAVY2 }), t("1(e) · 2(b) · 3(a) · 4(f) · 5(c) · 6(d)        ", { size: 19, bold: true }),
      t("R4 ", { size: 19, bold: true, color: NAVY2 }), t("(1) are  (2) discovered  (3) be  (4) are", { size: 19, bold: true })], { after: 25 }),
   p([t("R5 ", { size: 19, bold: true, color: NAVY2 }), t("(1) caves (2) deepest (3) interested (4) endangered (5) formed (6) dangerous (7) divers (8) equipment", { size: 19, bold: true })], { after: 25 }),
   p([t("R7 ", { size: 19, bold: true, color: NAVY2 }), t("(1) That can be extremely dangerous.  (2) Since submarines cannot be sent down, explorers must enter the blue holes.", { size: 19, bold: true })], { after: 0 }),

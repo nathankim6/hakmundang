@@ -310,9 +310,9 @@ K.push(T(aw, [
       { w, va: VerticalAlign.CENTER, m: { top: 0, bottom: 0, left: 0, right: 40 } });
     const gapC = (w) => cel(p(t(""), { after: 0 }), { w, m: { top: 0, bottom: 0, left: 0, right: 0 } });
     const chips2 = (a, b, cw) => T([cw, 230, cw], [new TableRow({ children: [chipC(a, cw), gapC(230), chipC(b, cw)] })]);
-    const chips8 = () => T([820, 1200, 170, 1200, 300, 930, 1200, 170, 1200], [new TableRow({ children: [
-      labC("they =", 820), chipC("사람들", 1200), gapC(170), chipC("버스들", 1200), gapC(300),
-      labC("them =", 930), chipC("사람들", 1200), gapC(170), chipC("버스들", 1200),
+    const chips8 = () => T([907, 1121, 193, 1119, 330, 1019, 1119, 193, 1119], [new TableRow({ children: [
+      labC("they =", 907), chipC("사람들", 1121), gapC(193), chipC("버스들", 1119), gapC(330),
+      labC("them =", 1019), chipC("사람들", 1119), gapC(193), chipC("버스들", 1119),
     ] })]);
     return [
     ["3", "there", [t("on Trindade island (그 섬에서)", { size: 18, color: SUB }), t("   예시", { size: 14, bold: true, color: GOLD })], true],
@@ -737,13 +737,13 @@ K.push(T([W], [new TableRow({ children: [cel([
   p([t("독해력 5단계 훈련", { size: 16, bold: true, color: NAVY })], { after: 42 }),
   p([t("STEP 1 ", { size: 19, bold: true, color: NAVY2 }), t("1-1 ②   1-2 rocks · evidence · human        ", { size: 19, bold: true }),
      t("STEP 2 ", { size: 19, bold: true, color: NAVY2 }), t("2-1 반전 · 순서 · 예시 · 나열   2-2 [B] 발견 · [E] 의미   2-3 ①", { size: 19, bold: true })], { after: 25 }),
-  p([t("STEP 3 ", { size: 19, bold: true, color: NAVY2 }), t("3-3 ⓒ → ⓐ → ⓑ → ⓓ  ·  These plastic rocks are evidence of how human actions are changing natural processes.", { size: 19, bold: true })], { after: 25 }),
+  p([t("STEP 3 ", { size: 19, bold: true, color: NAVY2 }), t("3-3 (c) → (a) → (b) → (d)  ·  These plastic rocks are evidence of how human actions are changing natural processes.", { size: 19, bold: true })], { after: 25 }),
   p([t("STEP 4 ", { size: 19, bold: true, color: NAVY2 }), t("(1) remote  (2) plastic  (3) melted  (4) evidence        ", { size: 19, bold: true }),
      t("STEP 5 ", { size: 19, bold: true, color: NAVY2 }), t("문장 2 ②  문장 4 ①  문장 5 ③  문장 8 ①", { size: 19, bold: true })], { after: 150 }),
   p([t("RE:RIGHT", { f: FO, size: 13, bold: true, color: NAVY, ls: 10 })], { after: 42 }),
   p([t("R1 ", { size: 19, bold: true, color: NAVY2 }), t("1T · 2F · 3T · 4F · 5T · 6F · 7T · 8F        ", { size: 19, bold: true }),
-     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("ⓑ → ⓒ → ⓓ → ⓐ", { size: 19, bold: true })], { after: 25 }),
-  p([t("R3 ", { size: 19, bold: true, color: NAVY2 }), t("1ⓑ · 2ⓒ · 3ⓔ · 4ⓕ · 5ⓐ · 6ⓓ        ", { size: 19, bold: true }),
+     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("(b) → (c) → (d) → (a)", { size: 19, bold: true })], { after: 25 }),
+  p([t("R3 ", { size: 19, bold: true, color: NAVY2 }), t("1(b) · 2(c) · 3(e) · 4(f) · 5(a) · 6(d)        ", { size: 19, bold: true }),
      t("R4 ", { size: 19, bold: true, color: NAVY2 }), t("(1) There are  (2) is  (3) them  (4) melted", { size: 19, bold: true })], { after: 25 }),
   p([t("R5 ", { size: 19, bold: true, color: NAVY2 }), t("(1) remote (2) geologist (3) curious (4) ordinary (5) currents (6) melted (7) impact (8) evidence", { size: 19, bold: true })], { after: 25 }),
   p([t("R7 ", { size: 19, bold: true, color: NAVY2 }), t("(1) The island is home to rare animals and a place with almost no humans.  (2) She was curious about them and took some back to her lab.", { size: 19, bold: true })], { after: 0 }),

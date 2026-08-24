@@ -312,9 +312,9 @@ K.push(T(aw, [
       { w, va: VerticalAlign.CENTER, m: { top: 0, bottom: 0, left: 0, right: 40 } });
     const gapC = (w) => cel(p(t(""), { after: 0 }), { w, m: { top: 0, bottom: 0, left: 0, right: 0 } });
     const chips2 = (a, b, cw) => T([cw, 230, cw], [new TableRow({ children: [chipC(a, cw), gapC(230), chipC(b, cw)] })]);
-    const chips8 = () => T([820, 1200, 170, 1200, 300, 930, 1200, 170, 1200], [new TableRow({ children: [
-      labC("They =", 820), chipC("자원봉사자들", 1200), gapC(170), chipC("가게 주인들", 1200), gapC(300),
-      labC("us =", 930), chipC("우리 단체", 1200), gapC(170), chipC("배고픈 사람들", 1200),
+    const chips8 = () => T([800, 1357, 164, 1244, 278, 624, 1097, 164, 1392], [new TableRow({ children: [
+      labC("They =", 800), chipC("자원봉사자들", 1357), gapC(164), chipC("가게 주인들", 1244), gapC(278),
+      labC("us =", 624), chipC("우리 단체", 1097), gapC(164), chipC("배고픈 사람들", 1392),
     ] })]);
     return [
     ["8", "this food", [t("leftover food (남은 음식)", { size: 18, color: SUB }), t("   예시", { size: 14, bold: true, color: GOLD })], true],
@@ -742,13 +742,13 @@ K.push(T([W], [new TableRow({ children: [cel([
   p([t("독해력 5단계 훈련", { size: 16, bold: true, color: NAVY })], { after: 42 }),
   p([t("STEP 1 ", { size: 19, bold: true, color: NAVY2 }), t("1-1 ②   1-2 food · hungry · goal        ", { size: 19, bold: true }),
      t("STEP 2 ", { size: 19, bold: true, color: NAVY2 }), t("2-1 순서 · 반전 · 결과 · 덧붙임   2-2 [B] 목표 · [D] 일손   2-3 ①", { size: 19, bold: true })], { after: 25 }),
-  p([t("STEP 3 ", { size: 19, bold: true, color: NAVY2 }), t("3-3 ⓒ → ⓓ → ⓐ → ⓑ  ·  Our goal is to make sure food goes to people who are hungry.", { size: 19, bold: true })], { after: 25 }),
+  p([t("STEP 3 ", { size: 19, bold: true, color: NAVY2 }), t("3-3 (c) → (d) → (a) → (b)  ·  Our goal is to make sure food goes to people who are hungry.", { size: 19, bold: true })], { after: 25 }),
   p([t("STEP 4 ", { size: 19, bold: true, color: NAVY2 }), t("(1) waste  (2) hungry  (3) volunteers  (4) join        ", { size: 19, bold: true }),
      t("STEP 5 ", { size: 19, bold: true, color: NAVY2 }), t("문장 5 ②  문장 7 ①  문장 9 ①  문장 12 ①", { size: 19, bold: true })], { after: 150 }),
   p([t("RE:RIGHT", { f: FO, size: 13, bold: true, color: NAVY, ls: 10 })], { after: 42 }),
   p([t("R1 ", { size: 19, bold: true, color: NAVY2 }), t("1T · 2T · 3T · 4F · 5F · 6T · 7F · 8F        ", { size: 19, bold: true }),
-     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("ⓒ → ⓑ → ⓐ → ⓓ", { size: 19, bold: true })], { after: 25 }),
-  p([t("R3 ", { size: 19, bold: true, color: NAVY2 }), t("1ⓔ · 2ⓑ · 3ⓕ · 4ⓐ · 5ⓒ · 6ⓓ        ", { size: 19, bold: true }),
+     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("(c) → (b) → (a) → (d)", { size: 19, bold: true })], { after: 25 }),
+  p([t("R3 ", { size: 19, bold: true, color: NAVY2 }), t("1(e) · 2(b) · 3(f) · 4(a) · 5(c) · 6(d)        ", { size: 19, bold: true }),
      t("R4 ", { size: 19, bold: true, color: NAVY2 }), t("(1) helping  (2) is  (3) can’t  (4) deliver", { size: 19, bold: true })], { after: 25 }),
   p([t("R5 ", { size: 19, bold: true, color: NAVY2 }), t("(1) hunger (2) waste (3) hungry (4) collect (5) give (6) volunteers (7) deliver (8) join", { size: 19, bold: true })], { after: 25 }),
   p([t("R7 ", { size: 19, bold: true, color: NAVY2 }), t("(1) They deliver the food for us.  (2) But without our amazing volunteers, we can’t do this work.", { size: 19, bold: true })], { after: 0 }),

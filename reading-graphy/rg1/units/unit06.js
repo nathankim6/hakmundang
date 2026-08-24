@@ -276,8 +276,8 @@ K.push(T(aw, [
       { w, va: VerticalAlign.CENTER, m: { top: 0, bottom: 0, left: 0, right: 40 } });
     const gapC = (w) => cel(p(t(""), { after: 0 }), { w, m: { top: 0, bottom: 0, left: 0, right: 0 } });
     const chips2 = (a, b, cw) => T([cw, 230, cw], [new TableRow({ children: [chipC(a, cw), gapC(230), chipC(b, cw)] })]);
-    const chips8 = (la, a1, a2, lb, b1, b2) => T([820, 1200, 170, 1200, 300, 930, 1200, 170, 1200], [new TableRow({ children: [
-      labC(la, 820), chipC(a1, 1200), gapC(170), chipC(a2, 1200), gapC(300),
+    const chips8 = (la, a1, a2, lb, b1, b2) => T([820, 1200, 170, 1200, 230, 930, 1200, 170, 1200], [new TableRow({ children: [
+      labC(la, 820), chipC(a1, 1200), gapC(170), chipC(a2, 1200), gapC(230),
       labC(lb, 930), chipC(b1, 1200), gapC(170), chipC(b2, 1200),
     ] })]);
     return [
@@ -402,7 +402,7 @@ K.push(T([W], [new TableRow({ children: [cel([
   p([t("STEP 1 ", { size: 19, bold: true, color: NAVY2 }), t("1-1 ②   1-2 butterflies · salt · sweat   1-3 아래 참조", { size: 19, bold: true })], { after: 75 }),
   p([t("RE:RIGHT", { f: FO, size: 13, bold: true, color: NAVY, ls: 10 })], { after: 42 }),
   p([t("R1 ", { size: 19, bold: true, color: NAVY2 }), t("1T · 2F · 3T · 4F · 5T · 6F · 7T · 8F        ", { size: 19, bold: true }),
-     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("ⓑ → ⓓ → ⓐ → ⓒ", { size: 19, bold: true })], { after: 0 }),
+     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("(b) → (d) → (a) → (c)", { size: 19, bold: true })], { after: 0 }),
 ], { w: W, shade: COOL, b: { top: bd(12, NAVY), bottom: bd(4, GOLD), left: NOB, right: NOB }, m: { top: 74, bottom: 74, left: 250, right: 250 } })] })]));
 K.push(sp(68));
 Hs("독해 01   제목   ·   정답 ①");

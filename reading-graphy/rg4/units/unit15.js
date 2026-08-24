@@ -276,9 +276,9 @@ K.push(T(aw, [
     const chips2 = (a, b, cw) => T([cw, 230, cw], [new TableRow({ children: [chipC(a, cw), gapC(230), chipC(b, cw)] })]);
     const labC = (s, w) => cel(new Paragraph({ children: [t(s, { size: 16, bold: true, color: NAVY2 })], spacing: { after: 0 } }),
       { w, va: VerticalAlign.CENTER, m: { top: 0, bottom: 0, left: 0, right: 40 } });
-    const chips8 = () => T([700, 1150, 120, 1150, 200, 1080, 1150, 120, 1150], [new TableRow({ children: [
-      labC("their =", 700), chipC("못생긴 식물", 1150), gapC(120), chipC("과학자들", 1150), gapC(200),
-      labC("these plants =", 1080), chipC("못생긴 식물", 1150), gapC(120), chipC("화려한 꽃", 1150),
+    const chips8 = () => T([707, 1138, 141, 953, 156, 1359, 1136, 141, 989], [new TableRow({ children: [
+      labC("their =", 707), chipC("못생긴 식물", 1138), gapC(141), chipC("과학자들", 953), gapC(156),
+      labC("these plants =", 1359), chipC("못생긴 식물", 1136), gapC(141), chipC("화려한 꽃", 989),
     ] })]);
     return [
     ["2", "their", [t("식물 과학자들의 (선택)", { size: 18, color: SUB }), t("   예시", { size: 14, bold: true, color: GOLD })], true],
@@ -402,7 +402,7 @@ K.push(T([W], [new TableRow({ children: [cel([
   p([t("STEP 1 ", { size: 19, bold: true, color: NAVY2 }), t("1-1 ②   1-2 ugly · attention · role   1-3 아래 참조", { size: 19, bold: true })], { after: 75 }),
   p([t("RE:RIGHT", { f: FO, size: 13, bold: true, color: NAVY, ls: 10 })], { after: 42 }),
   p([t("R1 ", { size: 19, bold: true, color: NAVY2 }), t("1T · 2T · 3F · 4T · 5F · 6T · 7F · 8F        ", { size: 19, bold: true }),
-     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("ⓑ → ⓐ → ⓒ → ⓓ", { size: 19, bold: true })], { after: 0 }),
+     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("(b) → (a) → (c) → (d)", { size: 19, bold: true })], { after: 0 }),
 ], { w: W, shade: COOL, b: { top: bd(12, NAVY), bottom: bd(4, GOLD), left: NOB, right: NOB }, m: { top: 74, bottom: 74, left: 250, right: 250 } })] })]));
 K.push(sp(68));
 Hs("독해 01   제목   ·   정답 ①");

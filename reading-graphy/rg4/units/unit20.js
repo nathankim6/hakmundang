@@ -278,9 +278,9 @@ K.push(T(aw, [
       { w, va: VerticalAlign.CENTER, m: { top: 0, bottom: 0, left: 0, right: 40 } });
     const gapC = (w) => cel(p(t(""), { after: 0 }), { w, m: { top: 0, bottom: 0, left: 0, right: 0 } });
     const chips2 = (a, b, cw) => T([cw, 230, cw], [new TableRow({ children: [chipC(a, cw), gapC(230), chipC(b, cw)] })]);
-    const chips8 = () => T([760, 1100, 170, 1100, 300, 1050, 1100, 170, 1100], [new TableRow({ children: [
-      labC("They =", 760), chipC("연구자들", 1100), gapC(170), chipC("로리스들", 1100), gapC(300),
-      labC("these animals =", 1050), chipC("로리스들", 1100), gapC(170), chipC("연구자들", 1100),
+    const chips8 = () => T([742, 972, 155, 974, 262, 1512, 974, 155, 974], [new TableRow({ children: [
+      labC("They =", 742), chipC("연구자들", 972), gapC(155), chipC("로리스들", 974), gapC(262),
+      labC("these animals =", 1512), chipC("로리스들", 974), gapC(155), chipC("연구자들", 974),
     ] })]);
     return [
     ["2", "They", [t("slow lorises (느림보로리스)", { size: 18, color: SUB }), t("   예시", { size: 14, bold: true, color: GOLD })], true],
@@ -404,7 +404,7 @@ K.push(T([W], [new TableRow({ children: [cel([
   p([t("STEP 1 ", { size: 19, bold: true, color: NAVY2 }), t("1-1 ②   1-2 poison · fight · species   1-3 아래 참조", { size: 19, bold: true })], { after: 75 }),
   p([t("RE:RIGHT", { f: FO, size: 13, bold: true, color: NAVY, ls: 10 })], { after: 42 }),
   p([t("R1 ", { size: 19, bold: true, color: NAVY2 }), t("1T · 2F · 3T · 4F · 5T · 6F · 7T · 8F        ", { size: 19, bold: true }),
-     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("ⓓ → ⓑ → ⓐ → ⓒ", { size: 19, bold: true })], { after: 0 }),
+     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("(d) → (b) → (a) → (c)", { size: 19, bold: true })], { after: 0 }),
 ], { w: W, shade: COOL, b: { top: bd(12, NAVY), bottom: bd(4, GOLD), left: NOB, right: NOB }, m: { top: 74, bottom: 74, left: 250, right: 250 } })] })]));
 K.push(sp(68));
 Hs("독해 01   제목   ·   정답 ①");

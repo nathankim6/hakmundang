@@ -300,9 +300,9 @@ K.push(T(aw, [
       { w, va: VerticalAlign.CENTER, m: { top: 0, bottom: 0, left: 0, right: 40 } });
     const gapC = (w) => cel(p(t(""), { after: 0 }), { w, m: { top: 0, bottom: 0, left: 0, right: 0 } });
     const chips2 = (a, b, cw) => T([cw, 230, cw], [new TableRow({ children: [chipC(a, cw), gapC(230), chipC(b, cw)] })]);
-    const chips8 = () => T([820, 1200, 170, 1200, 300, 930, 1200, 170, 1200], [new TableRow({ children: [
-      labC("she =", 820), chipC("심판", 1200), gapC(170), chipC("의료진", 1200), gapC(300),
-      labC("them =", 930), chipC("심판", 1200), gapC(170), chipC("의료진", 1200),
+    const chips8 = () => T([872, 1036, 202, 1181, 345, 1067, 1034, 202, 1181], [new TableRow({ children: [
+      labC("she =", 872), chipC("심판", 1036), gapC(202), chipC("의료진", 1181), gapC(345),
+      labC("them =", 1067), chipC("심판", 1034), gapC(202), chipC("의료진", 1181),
     ] })]);
     return [
     ["3", "This card", [t("the white card (새 흰 카드)", { size: 18, color: SUB }), t("   예시", { size: 14, bold: true, color: GOLD })], true],
@@ -727,13 +727,13 @@ K.push(T([W], [new TableRow({ children: [cel([
   p([t("독해력 5단계 훈련", { size: 16, bold: true, color: NAVY })], { after: 42 }),
   p([t("STEP 1 ", { size: 19, bold: true, color: NAVY2 }), t("1-1 ②   1-2 white card · medical staff · good behavior        ", { size: 19, bold: true }),
      t("STEP 2 ", { size: 19, bold: true, color: NAVY2 }), t("2-1 때 · 결과 · 반전 · 덧붙임   2-2 [B] 쓰임 · [E] 질문   2-3 ①", { size: 19, bold: true })], { after: 25 }),
-  p([t("STEP 3 ", { size: 19, bold: true, color: NAVY2 }), t("3-3 ⓑ → ⓓ → ⓒ → ⓐ  ·  The white card is for players, coaches, or medical staff who show good behavior.", { size: 19, bold: true })], { after: 25 }),
+  p([t("STEP 3 ", { size: 19, bold: true, color: NAVY2 }), t("3-3 (b) → (d) → (c) → (a)  ·  The white card is for players, coaches, or medical staff who show good behavior.", { size: 19, bold: true })], { after: 25 }),
   p([t("STEP 4 ", { size: 19, bold: true, color: NAVY2 }), t("(1) white  (2) behavior  (3) Portugal  (4) approved        ", { size: 19, bold: true }),
      t("STEP 5 ", { size: 19, bold: true, color: NAVY2 }), t("문장 1 ①  문장 6 ②  문장 7 ①  문장 8 ②", { size: 19, bold: true })], { after: 150 }),
   p([t("RE:RIGHT", { f: FO, size: 13, bold: true, color: NAVY, ls: 10 })], { after: 42 }),
   p([t("R1 ", { size: 19, bold: true, color: NAVY2 }), t("1T · 2F · 3T · 4F · 5T · 6F · 7F · 8T        ", { size: 19, bold: true }),
-     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("ⓒ → ⓑ → ⓓ → ⓐ", { size: 19, bold: true })], { after: 25 }),
-  p([t("R3 ", { size: 19, bold: true, color: NAVY2 }), t("1ⓓ · 2ⓕ · 3ⓔ · 4ⓒ · 5ⓐ · 6ⓑ        ", { size: 19, bold: true }),
+     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("(c) → (b) → (d) → (a)", { size: 19, bold: true })], { after: 25 }),
+  p([t("R3 ", { size: 19, bold: true, color: NAVY2 }), t("1(d) · 2(f) · 3(e) · 4(c) · 5(a) · 6(b)        ", { size: 19, bold: true }),
      t("R4 ", { size: 19, bold: true, color: NAVY2 }), t("(1) don’t  (2) there’s  (3) went  (4) is", { size: 19, bold: true })], { after: 25 }),
   p([t("R5 ", { size: 19, bold: true, color: NAVY2 }), t("(1) rules (2) white (3) behavior (4) referee (5) help (6) response (7) approved (8) countries", { size: 19, bold: true })], { after: 25 }),
   p([t("R7 ", { size: 19, bold: true, color: NAVY2 }), t("(1) But now, there’s a new white card!  (2) In Portugal, a referee named Catarina Campos started to use the white card first.", { size: 19, bold: true })], { after: 0 }),

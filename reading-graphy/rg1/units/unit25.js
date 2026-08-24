@@ -315,9 +315,9 @@ K.push(T(aw, [
       { w, va: VerticalAlign.CENTER, m: { top: 0, bottom: 0, left: 0, right: 40 } });
     const gapC = (w) => cel(p(t(""), { after: 0 }), { w, m: { top: 0, bottom: 0, left: 0, right: 0 } });
     const chips2 = (a, b, cw) => T([cw, 230, cw], [new TableRow({ children: [chipC(a, cw), gapC(230), chipC(b, cw)] })]);
-    const chips8 = () => T([820, 1200, 170, 1200, 300, 930, 1200, 170, 1200], [new TableRow({ children: [
-      labC("this =", 820), chipC("냄새", 1200), gapC(170), chipC("상자", 1200), gapC(300),
-      labC("it =", 930), chipC("하칼", 1200), gapC(170), chipC("상어", 1200),
+    const chips8 = () => T([960, 1129, 216, 1130, 369, 840, 1130, 216, 1130], [new TableRow({ children: [
+      labC("this =", 960), chipC("냄새", 1129), gapC(216), chipC("상자", 1130), gapC(369),
+      labC("it =", 840), chipC("하칼", 1130), gapC(216), chipC("상어", 1130),
     ] })]);
     return [
     ["2", "It", [t("Hákarl (하칼)", { size: 18, color: SUB }), t("   예시", { size: 14, bold: true, color: GOLD })], true],
@@ -745,13 +745,13 @@ K.push(T([W], [new TableRow({ children: [cel([
   p([t("독해력 5단계 훈련", { size: 16, bold: true, color: NAVY })], { after: 42 }),
   p([t("STEP 1 ", { size: 19, bold: true, color: NAVY2 }), t("1-1 ②   1-2 Hákarl · smells · special        ", { size: 19, bold: true }),
      t("STEP 2 ", { size: 19, bold: true, color: NAVY2 }), t("2-1 반전 · 결과 · 순서 · ~이지만   2-2 [B] 문제점 · [E] 마무리   2-3 ①", { size: 19, bold: true })], { after: 25 }),
-  p([t("STEP 3 ", { size: 19, bold: true, color: NAVY2 }), t("3-3 ⓑ → ⓓ → ⓐ → ⓒ  ·  Although it smells strong, Hákarl is a very special food for Icelanders.", { size: 19, bold: true })], { after: 25 }),
+  p([t("STEP 3 ", { size: 19, bold: true, color: NAVY2 }), t("3-3 (b) → (d) → (a) → (c)  ·  Although it smells strong, Hákarl is a very special food for Icelanders.", { size: 19, bold: true })], { after: 25 }),
   p([t("STEP 4 ", { size: 19, bold: true, color: NAVY2 }), t("(1) harmful  (2) months  (3) smell  (4) special        ", { size: 19, bold: true }),
      t("STEP 5 ", { size: 19, bold: true, color: NAVY2 }), t("문장 3 ②  문장 5 ③  문장 10 ①  문장 12 ③", { size: 19, bold: true })], { after: 150 }),
   p([t("RE:RIGHT", { f: FO, size: 13, bold: true, color: NAVY, ls: 10 })], { after: 42 }),
   p([t("R1 ", { size: 19, bold: true, color: NAVY2 }), t("1T · 2F · 3T · 4F · 5T · 6F · 7T · 8F        ", { size: 19, bold: true }),
-     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("ⓓ → ⓐ → ⓒ → ⓑ", { size: 19, bold: true })], { after: 25 }),
-  p([t("R3 ", { size: 19, bold: true, color: NAVY2 }), t("1ⓑ · 2ⓔ · 3ⓕ · 4ⓐ · 5ⓓ · 6ⓒ        ", { size: 19, bold: true }),
+     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("(d) → (a) → (c) → (b)", { size: 19, bold: true })], { after: 25 }),
+  p([t("R3 ", { size: 19, bold: true, color: NAVY2 }), t("1(b) · 2(e) · 3(f) · 4(a) · 5(d) · 6(c)        ", { size: 19, bold: true }),
      t("R4 ", { size: 19, bold: true, color: NAVY2 }), t("(1) is  (2) has  (3) to dry  (4) are", { size: 19, bold: true })], { after: 25 }),
   p([t("R5 ", { size: 19, bold: true, color: NAVY2 }), t("(1) dish (2) sick (3) harmful (4) ferment (5) hang (6) smell (7) special (8) proud", { size: 19, bold: true })], { after: 25 }),
   p([t("R7 ", { size: 19, bold: true, color: NAVY2 }), t("(1) The shark has harmful things in its body.  (2) They’re proud of it and love their tradition.", { size: 19, bold: true })], { after: 0 }),

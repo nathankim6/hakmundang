@@ -314,9 +314,9 @@ K.push(T(aw, [
       { w, va: VerticalAlign.CENTER, m: { top: 0, bottom: 0, left: 0, right: 40 } });
     const gapC = (w) => cel(p(t(""), { after: 0 }), { w, m: { top: 0, bottom: 0, left: 0, right: 0 } });
     const chips2 = (a, b, cw) => T([cw, 230, cw], [new TableRow({ children: [chipC(a, cw), gapC(230), chipC(b, cw)] })]);
-    const chips8 = () => T([820, 1200, 170, 1200, 300, 930, 1200, 170, 1200], [new TableRow({ children: [
-      labC("They =", 820), chipC("흰따오기", 1200), gapC(170), chipC("수수두꺼비", 1200), gapC(300),
-      labC("them =", 930), chipC("흰따오기", 1200), gapC(170), chipC("수수두꺼비", 1200),
+    const chips8 = () => T([836, 1114, 172, 1261, 291, 900, 1113, 172, 1261], [new TableRow({ children: [
+      labC("They =", 836), chipC("흰따오기", 1114), gapC(172), chipC("수수두꺼비", 1261), gapC(291),
+      labC("them =", 900), chipC("흰따오기", 1113), gapC(172), chipC("수수두꺼비", 1261),
     ] })]);
     return [
     ["2", "them", [t("the white ibis (흰따오기)", { size: 18, color: SUB }), t("   예시", { size: 14, bold: true, color: GOLD })], true],
@@ -724,8 +724,8 @@ const H = (s) => K.push(T([W], [new TableRow({ children: [
   cel(new Paragraph({ children: [t(s, { size: 18, bold: true, color: NAVY })], spacing: { after: 0, line: 250 } }),
     { w: W, m: { top: 25, bottom: 25, left: 150, right: 0 }, b: { top: NOB, bottom: NOB, right: NOB, left: bd(12, YEL) } }),
 ] })]));
-const B = (s, last) => K.push(p([t(s, { size: 17, color: SUB })], { after: last ? 200 : 38, line: 258, indent: { left: 0 } }));
-const Hs = (s) => { K.push(sp(82)); H(s); K.push(sp(46)); };
+const B = (s, last) => K.push(p([t(s, { size: 17, color: SUB })], { after: last ? 150 : 26, line: 244, indent: { left: 0 } }));
+const Hs = (s) => { K.push(sp(56)); H(s); K.push(sp(30)); };
 
 K.push(...tab("정답 및 해설", "UNIT 04  호주 ‘쓰레기통 닭’의 색다른 모습!", CHAR, "✓"));
 K.push(sp(150));
@@ -743,13 +743,13 @@ K.push(T([W], [new TableRow({ children: [cel([
   p([t("독해력 5단계 훈련", { size: 16, bold: true, color: NAVY })], { after: 42 }),
   p([t("STEP 1 ", { size: 19, bold: true, color: NAVY2 }), t("1-1 ②   1-2 ibis · toads · control        ", { size: 19, bold: true }),
      t("STEP 2 ", { size: 19, bold: true, color: NAVY2 }), t("2-1 이유 · 반전 · 덧붙임 · 순서   2-2 [C] 문제 · [E] 마무리   2-3 ①", { size: 19, bold: true })], { after: 25 }),
-  p([t("STEP 3 ", { size: 19, bold: true, color: NAVY2 }), t("3-3 ⓑ → ⓓ → ⓐ → ⓒ  ·  The white ibis is helping control the number of cane toads in Australia.", { size: 19, bold: true })], { after: 25 }),
+  p([t("STEP 3 ", { size: 19, bold: true, color: NAVY2 }), t("3-3 (b) → (d) → (a) → (c)  ·  The white ibis is helping control the number of cane toads in Australia.", { size: 19, bold: true })], { after: 25 }),
   p([t("STEP 4 ", { size: 19, bold: true, color: NAVY2 }), t("(1) trash  (2) poison  (3) toads  (4) control        ", { size: 19, bold: true }),
      t("STEP 5 ", { size: 19, bold: true, color: NAVY2 }), t("문장 2 ②  문장 6 ①  문장 8 ②  문장 9 ①", { size: 19, bold: true })], { after: 150 }),
   p([t("RE:RIGHT", { f: FO, size: 13, bold: true, color: NAVY, ls: 10 })], { after: 42 }),
   p([t("R1 ", { size: 19, bold: true, color: NAVY2 }), t("1T · 2F · 3T · 4F · 5T · 6F · 7T · 8F        ", { size: 19, bold: true }),
-     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("ⓐ → ⓒ → ⓑ → ⓓ", { size: 19, bold: true })], { after: 25 }),
-  p([t("R3 ", { size: 19, bold: true, color: NAVY2 }), t("1ⓒ · 2ⓔ · 3ⓐ · 4ⓕ · 5ⓑ · 6ⓓ        ", { size: 19, bold: true }),
+     t("R2 ", { size: 19, bold: true, color: NAVY2 }), t("(a) → (c) → (b) → (d)", { size: 19, bold: true })], { after: 25 }),
+  p([t("R3 ", { size: 19, bold: true, color: NAVY2 }), t("1(c) · 2(e) · 3(a) · 4(f) · 5(b) · 6(d)        ", { size: 19, bold: true }),
      t("R4 ", { size: 19, bold: true, color: NAVY2 }), t("(1) is  (2) were  (3) had  (4) eating", { size: 19, bold: true })], { after: 25 }),
   p([t("R5 ", { size: 19, bold: true, color: NAVY2 }), t("(1) called (2) trash (3) introduced (4) spread (5) poison (6) threat (7) flip (8) control", { size: 19, bold: true })], { after: 25 }),
   p([t("R7 ", { size: 19, bold: true, color: NAVY2 }), t("(1) Fortunately, the white ibis learned a way to eat them safely.  (2) They then wash them in water before eating.", { size: 19, bold: true })], { after: 0 }),
