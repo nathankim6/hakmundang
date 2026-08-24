@@ -210,12 +210,12 @@ K.push(T([W], [new TableRow({ children: [cel([
     t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 9를 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
-  T([800, 3300, 800, 1400, 2630], [new TableRow({ children: [
-    exSeg([t("But", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 800),
+  T([803, 3300, 800, 1399, 2628], [new TableRow({ children: [
+    exSeg([t("But", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 803),
     exSeg([t("without our amazing volunteers", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 3300),
     exSeg([t("we", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 800),
-    exSeg([t("can’t do", { size: 18, bold: true, color: NAVY })], "V 한 덩어리", NAVY, 1400, "△"),
-    exSeg([t("this work", { size: 18 })], "", FAINT, 2630),
+    exSeg([t("can’t do", { size: 18, bold: true, color: NAVY })], "V 한 덩어리", NAVY, 1399, "△"),
+    exSeg([t("this work", { size: 18 })], "", FAINT, 2628),
   ] })]),
 ], { w: W, shade: PAPER, b: { top: bd(4, GOLD), bottom: bd(4, GOLD), left: bd(4, GOLD), right: bd(4, GOLD) }, m: { top: 44, bottom: 44, left: 200, right: 200 } })] })]));
 K.push(spF(2, 85, 0.06));

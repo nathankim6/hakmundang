@@ -176,12 +176,12 @@ K.push(T([W], [new TableRow({ children: [cel([
     t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 3을 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
-  T([1700, 2000, 1900, 750, 2580], [new TableRow({ children: [
-    exSeg([t("This layer", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1700),
-    exSeg([t("was destroyed", { size: 18, bold: true, color: NAVY })], "V 한 덩어리", NAVY, 2000, "\u25b3"),
-    exSeg([t("by pollution", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 1900),
-    exSeg([t("but", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 750),
-    exSeg([t("now it’s healing slowly", { size: 18 })], "", FAINT, 2580),
+  T([1687, 1989, 1888, 796, 2570], [new TableRow({ children: [
+    exSeg([t("This layer", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1687),
+    exSeg([t("was destroyed", { size: 18, bold: true, color: NAVY })], "V 한 덩어리", NAVY, 1989, "\u25b3"),
+    exSeg([t("by pollution", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 1888),
+    exSeg([t("but", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 796),
+    exSeg([t("now it’s healing slowly", { size: 18 })], "", FAINT, 2570),
   ] })]),
 ], { w: W, shade: PAPER, b: { top: bd(4, GOLD), bottom: bd(4, GOLD), left: bd(4, GOLD), right: bd(4, GOLD) }, m: { top: 44, bottom: 44, left: 200, right: 200 } })] })]));
 K.push(spF(2, 85, 0.06));

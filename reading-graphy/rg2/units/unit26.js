@@ -177,14 +177,14 @@ K.push(T([W], [new TableRow({ children: [cel([
     t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 11을 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
-  T([880, 640, 800, 1750, 640, 1420, 2800], [new TableRow({ children: [
-    exSeg([t("When", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 880),
-    exSeg([t("you", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 640),
-    exSeg([t("stay", { size: 18, bold: true, color: NAVY })], "V′ 동사", NAVY, 800, "△"),
-    exSeg([t("at this hotel,", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 1750),
-    exSeg([t("you", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 640),
-    exSeg([t("can learn", { size: 18, bold: true, color: NAVY })], "V 한 덩어리", NAVY, 1420, "△"),
-    exSeg([t("how to protect our planet.", { size: 18 })], "", FAINT, 2800),
+  T([989, 630, 784, 1725, 630, 1396, 2776], [new TableRow({ children: [
+    exSeg([t("When", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 989),
+    exSeg([t("you", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 630),
+    exSeg([t("stay", { size: 18, bold: true, color: NAVY })], "V′ 동사", NAVY, 784, "△"),
+    exSeg([t("at this hotel,", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 1725),
+    exSeg([t("you", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 630),
+    exSeg([t("can learn", { size: 18, bold: true, color: NAVY })], "V 한 덩어리", NAVY, 1396, "△"),
+    exSeg([t("how to protect our planet.", { size: 18 })], "", FAINT, 2776),
   ] })]),
 ], { w: W, shade: PAPER, b: { top: bd(4, GOLD), bottom: bd(4, GOLD), left: bd(4, GOLD), right: bd(4, GOLD) }, m: { top: 44, bottom: 44, left: 200, right: 200 } })] })]));
 K.push(spF(2, 85, 0.06));

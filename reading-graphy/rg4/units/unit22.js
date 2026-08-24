@@ -208,13 +208,13 @@ K.push(T([W], [new TableRow({ children: [cel([
     t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 6을 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
-  T([1300, 2100, 2200, 800, 1000, 1530], [new TableRow({ children: [
-    exSeg([t("This heat", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1300),
-    exSeg([t("is then transferred", { size: 18, bold: true, color: NAVY })], "V 한 덩어리", NAVY, 2100, "△"),
-    exSeg([t("into a heat exchanger", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 2200),
-    exSeg([t("and", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 800),
-    exSeg([t("warms", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 1000, "△"),
-    exSeg([t("the pool’s water", { size: 18 })], "", FAINT, 1530),
+  T([1292, 2093, 2196, 827, 994, 1528], [new TableRow({ children: [
+    exSeg([t("This heat", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1292),
+    exSeg([t("is then transferred", { size: 18, bold: true, color: NAVY })], "V 한 덩어리", NAVY, 2093, "△"),
+    exSeg([t("into a heat exchanger", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 2196),
+    exSeg([t("and", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 827),
+    exSeg([t("warms", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 994, "△"),
+    exSeg([t("the pool’s water", { size: 18 })], "", FAINT, 1528),
   ] })]),
 ], { w: W, shade: PAPER, b: { top: bd(4, GOLD), bottom: bd(4, GOLD), left: bd(4, GOLD), right: bd(4, GOLD) }, m: { top: 44, bottom: 44, left: 200, right: 200 } })] })]));
 K.push(spF(2, 85, 0.06));

@@ -172,13 +172,13 @@ K.push(T([W], [new TableRow({ children: [cel([
     t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 1을 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
-  T([1900, 1000, 1500, 700, 1500, 1300, 1030], [new TableRow({ children: [
-    exSeg([t("For a long time", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 1900),
-    exSeg([t("people", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1000),
-    exSeg([t("have known", { size: 18, bold: true, color: NAVY })], "V 한 덩어리", NAVY, 1500, "△"),
-    exSeg([t("that", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 700),
-    exSeg([t("our feelings", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 1500),
-    exSeg([t("can affect", { size: 18, bold: true, color: NAVY })], "V′ 한 덩어리", NAVY, 1300, "△"),
+  T([1858, 974, 1471, 858, 1469, 1270, 1030], [new TableRow({ children: [
+    exSeg([t("For a long time", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 1858),
+    exSeg([t("people", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 974),
+    exSeg([t("have known", { size: 18, bold: true, color: NAVY })], "V 한 덩어리", NAVY, 1471, "△"),
+    exSeg([t("that", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 858),
+    exSeg([t("our feelings", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 1469),
+    exSeg([t("can affect", { size: 18, bold: true, color: NAVY })], "V′ 한 덩어리", NAVY, 1270, "△"),
     exSeg([t("our stomachs", { size: 18 })], "", FAINT, 1030),
   ] })]),
 ], { w: W, shade: PAPER, b: { top: bd(4, GOLD), bottom: bd(4, GOLD), left: bd(4, GOLD), right: bd(4, GOLD) }, m: { top: 44, bottom: 44, left: 200, right: 200 } })] })]));

@@ -208,12 +208,12 @@ K.push(T([W], [new TableRow({ children: [cel([
     t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 9를 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
-  T([1100, 600, 3200, 700, 1700, 1630], [new TableRow({ children: [
-    exSeg([t("Hershey", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1100),
-    exSeg([t("is", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 600, "△"),
-    exSeg([t("home to the chocolate factory", { size: 18 })], "", FAINT, 3200),
-    exSeg([t("and", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 700),
-    exSeg([t("the whole town", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 1700),
+  T([1076, 569, 3148, 827, 1680, 1630], [new TableRow({ children: [
+    exSeg([t("Hershey", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1076),
+    exSeg([t("is", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 569, "△"),
+    exSeg([t("home to the chocolate factory", { size: 18 })], "", FAINT, 3148),
+    exSeg([t("and", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 827),
+    exSeg([t("the whole town", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 1680),
     exSeg([t("smells like chocolate", { size: 18, bold: true, color: NAVY })], "V′ 본동사", NAVY, 1630, "△"),
   ] })]),
 ], { w: W, shade: PAPER, b: { top: bd(4, GOLD), bottom: bd(4, GOLD), left: bd(4, GOLD), right: bd(4, GOLD) }, m: { top: 44, bottom: 44, left: 200, right: 200 } })] })]));

@@ -208,13 +208,13 @@ K.push(T([W], [new TableRow({ children: [cel([
     t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 2을 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
-  T([700, 700, 1700, 700, 2900, 2230], [new TableRow({ children: [
-    exSeg([t("They", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 700),
-    exSeg([t("are", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 700, "△"),
-    exSeg([t("not real mice,", { size: 18 })], "", FAINT, 1700),
-    exSeg([t("but", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 700),
-    exSeg([t("rather small balls of moss", { size: 18 })], "", FAINT, 2900),
-    exSeg([t("that grow on glaciers", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 2230),
+  T([691, 684, 1676, 796, 2867, 2216], [new TableRow({ children: [
+    exSeg([t("They", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 691),
+    exSeg([t("are", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 684, "△"),
+    exSeg([t("not real mice,", { size: 18 })], "", FAINT, 1676),
+    exSeg([t("but", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 796),
+    exSeg([t("rather small balls of moss", { size: 18 })], "", FAINT, 2867),
+    exSeg([t("that grow on glaciers", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 2216),
   ] })]),
 ], { w: W, shade: PAPER, b: { top: bd(4, GOLD), bottom: bd(4, GOLD), left: bd(4, GOLD), right: bd(4, GOLD) }, m: { top: 44, bottom: 44, left: 200, right: 200 } })] })]));
 K.push(spF(2, 85, 0.06));

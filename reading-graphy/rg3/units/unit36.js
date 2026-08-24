@@ -177,14 +177,14 @@ K.push(T([W], [new TableRow({ children: [cel([
     t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 2를 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
-  T([2500, 850, 1900, 1080, 600, 1150, 850], [new TableRow({ children: [
-    exSeg([t("Simply growing more food", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 2500),
-    exSeg([t("isn’t", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 850, "△"),
-    exSeg([t("always the solution", { size: 18 })], "", FAINT, 1900),
-    exSeg([t("because", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 1080),
-    exSeg([t("it", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 600),
-    exSeg([t("requires", { size: 18, bold: true, color: NAVY })], "V′ 동사", NAVY, 1150, "△"),
-    exSeg([t("energy", { size: 18 })], "", FAINT, 850),
+  T([2493, 817, 1883, 1217, 566, 1121, 833], [new TableRow({ children: [
+    exSeg([t("Simply growing more food", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 2493),
+    exSeg([t("isn’t", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 817, "△"),
+    exSeg([t("always the solution", { size: 18 })], "", FAINT, 1883),
+    exSeg([t("because", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 1217),
+    exSeg([t("it", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 566),
+    exSeg([t("requires", { size: 18, bold: true, color: NAVY })], "V′ 동사", NAVY, 1121, "△"),
+    exSeg([t("energy", { size: 18 })], "", FAINT, 833),
   ] })]),
 ], { w: W, shade: PAPER, b: { top: bd(4, GOLD), bottom: bd(4, GOLD), left: bd(4, GOLD), right: bd(4, GOLD) }, m: { top: 44, bottom: 44, left: 200, right: 200 } })] })]));
 K.push(spF(2, 85, 0.06));

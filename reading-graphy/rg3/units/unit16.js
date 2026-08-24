@@ -208,14 +208,14 @@ K.push(T([W], [new TableRow({ children: [cel([
     t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 3을 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
-  T([700, 1300, 1150, 1200, 1450, 700, 2430], [new TableRow({ children: [
-    exSeg([t("While", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 700),
-    exSeg([t("most birds", { size: 18, bold: true, color: SGRN, underline: {} })], "S\u2032 주어", SGRN, 1300),
-    exSeg([t("fly away", { size: 18, bold: true, color: NAVY })], "V\u2032 동사", NAVY, 1150, "\u25b3"),
-    exSeg([t("from them", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 1200),
-    exSeg([t("shearwaters", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1450),
-    exSeg([t("fly", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 700, "\u25b3"),
-    exSeg([t("straight into them", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 2430),
+  T([985, 1264, 1107, 1177, 1414, 650, 2333], [new TableRow({ children: [
+    exSeg([t("While", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 985),
+    exSeg([t("most birds", { size: 18, bold: true, color: SGRN, underline: {} })], "S\u2032 주어", SGRN, 1264),
+    exSeg([t("fly away", { size: 18, bold: true, color: NAVY })], "V\u2032 동사", NAVY, 1107, "\u25b3"),
+    exSeg([t("from them", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 1177),
+    exSeg([t("shearwaters", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1414),
+    exSeg([t("fly", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 650, "\u25b3"),
+    exSeg([t("straight into them", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 2333),
   ] })]),
 ], { w: W, shade: PAPER, b: { top: bd(4, GOLD), bottom: bd(4, GOLD), left: bd(4, GOLD), right: bd(4, GOLD) }, m: { top: 44, bottom: 44, left: 200, right: 200 } })] })]));
 K.push(spF(2, 85, 0.06));

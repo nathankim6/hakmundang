@@ -177,13 +177,13 @@ K.push(T([W], [new TableRow({ children: [cel([
     t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 10을 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
-  T([800, 1600, 900, 2900, 900, 1830], [new TableRow({ children: [
-    exSeg([t("This", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 800),
-    exSeg([t("can happen", { size: 18, bold: true, color: NAVY })], "V 한 덩어리", NAVY, 1600, "△"),
-    exSeg([t("when", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 900),
-    exSeg([t("close friends or family", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 2900),
-    exSeg([t("have", { size: 18, bold: true, color: NAVY })], "V′ 동사", NAVY, 900, "△"),
-    exSeg([t("a hard time", { size: 18 })], "", FAINT, 1830),
+  T([790, 1586, 980, 2877, 889, 1808], [new TableRow({ children: [
+    exSeg([t("This", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 790),
+    exSeg([t("can happen", { size: 18, bold: true, color: NAVY })], "V 한 덩어리", NAVY, 1586, "△"),
+    exSeg([t("when", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 980),
+    exSeg([t("close friends or family", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 2877),
+    exSeg([t("have", { size: 18, bold: true, color: NAVY })], "V′ 동사", NAVY, 889, "△"),
+    exSeg([t("a hard time", { size: 18 })], "", FAINT, 1808),
   ] })]),
 ], { w: W, shade: PAPER, b: { top: bd(4, GOLD), bottom: bd(4, GOLD), left: bd(4, GOLD), right: bd(4, GOLD) }, m: { top: 44, bottom: 44, left: 200, right: 200 } })] })]));
 K.push(spF(2, 85, 0.06));

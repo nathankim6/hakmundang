@@ -173,13 +173,13 @@ K.push(T([W], [new TableRow({ children: [cel([
     t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 5를 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
-  T([2200, 1000, 1000, 1100, 700, 1600, 1330], [new TableRow({ children: [
-    exSeg([t("During the festival", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 2200),
-    exSeg([t("twins", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1000),
-    exSeg([t("dress", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 1000, "△"),
-    exSeg([t("the same", { size: 18 })], "", FAINT, 1100),
-    exSeg([t("and", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 700),
-    exSeg([t("participate", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 1600, "△"),
+  T([2170, 975, 974, 1086, 827, 1568, 1330], [new TableRow({ children: [
+    exSeg([t("During the festival", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 2170),
+    exSeg([t("twins", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 975),
+    exSeg([t("dress", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 974, "△"),
+    exSeg([t("the same", { size: 18 })], "", FAINT, 1086),
+    exSeg([t("and", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 827),
+    exSeg([t("participate", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 1568, "△"),
     exSeg([t("in various activities", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 1330),
   ] })]),
 ], { w: W, shade: PAPER, b: { top: bd(4, GOLD), bottom: bd(4, GOLD), left: bd(4, GOLD), right: bd(4, GOLD) }, m: { top: 44, bottom: 44, left: 200, right: 200 } })] })]));

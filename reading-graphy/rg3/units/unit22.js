@@ -197,14 +197,14 @@ K.push(T([W], [new TableRow({ children: [cel([
     t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 1을 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
-  T([500, 1250, 2150, 900, 950, 1750, 1430], [new TableRow({ children: [
-    exSeg([t("It", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 500),
-    exSeg([t("has been", { size: 18, bold: true, color: NAVY })], "V 한 덩어리", NAVY, 1250, "△"),
-    exSeg([t("more than 50 years", { size: 18 })], "", FAINT, 2150),
-    exSeg([t("since", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 900),
-    exSeg([t("people", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 950),
-    exSeg([t("last visited", { size: 18, bold: true, color: NAVY })], "V′ 동사", NAVY, 1750, "△"),
-    exSeg([t("the Moon", { size: 18 })], "", FAINT, 1430),
+  T([496, 1244, 2142, 942, 946, 1739, 1421], [new TableRow({ children: [
+    exSeg([t("It", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 496),
+    exSeg([t("has been", { size: 18, bold: true, color: NAVY })], "V 한 덩어리", NAVY, 1244, "△"),
+    exSeg([t("more than 50 years", { size: 18 })], "", FAINT, 2142),
+    exSeg([t("since", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 942),
+    exSeg([t("people", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 946),
+    exSeg([t("last visited", { size: 18, bold: true, color: NAVY })], "V′ 동사", NAVY, 1739, "△"),
+    exSeg([t("the Moon", { size: 18 })], "", FAINT, 1421),
   ] })]),
 ], { w: W, shade: PAPER, b: { top: bd(4, GOLD), bottom: bd(4, GOLD), left: bd(4, GOLD), right: bd(4, GOLD) }, m: { top: 44, bottom: 44, left: 200, right: 200 } })] })]));
 K.push(spF(2, 85, 0.06));

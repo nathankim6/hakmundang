@@ -178,14 +178,14 @@ K.push(T([W], [new TableRow({ children: [cel([
     t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 8을 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
-  T([1200, 900, 1250, 2100, 600, 1230, 1650], [new TableRow({ children: [
-    exSeg([t("Scientists", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1200),
-    exSeg([t("tested", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 900, "△"),
-    exSeg([t("this system", { size: 18 })], "", FAINT, 1250),
-    exSeg([t("on mice with cancer,", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 2100),
-    exSeg([t("and", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 600),
-    exSeg([t("the results", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 1230),
-    exSeg([t("were amazing!", { size: 18, bold: true, color: NAVY })], "V′ 본동사", NAVY, 1650, "△"),
+  T([1159, 858, 1214, 2067, 827, 1197, 1608], [new TableRow({ children: [
+    exSeg([t("Scientists", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1159),
+    exSeg([t("tested", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 858, "△"),
+    exSeg([t("this system", { size: 18 })], "", FAINT, 1214),
+    exSeg([t("on mice with cancer,", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 2067),
+    exSeg([t("and", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 827),
+    exSeg([t("the results", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 1197),
+    exSeg([t("were amazing!", { size: 18, bold: true, color: NAVY })], "V′ 본동사", NAVY, 1608, "△"),
   ] })]),
 ], { w: W, shade: PAPER, b: { top: bd(4, GOLD), bottom: bd(4, GOLD), left: bd(4, GOLD), right: bd(4, GOLD) }, m: { top: 44, bottom: 44, left: 200, right: 200 } })] })]));
 K.push(spF(2, 85, 0.06));

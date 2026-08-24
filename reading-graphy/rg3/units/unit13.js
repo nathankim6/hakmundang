@@ -205,14 +205,14 @@ K.push(T([W], [new TableRow({ children: [cel([
     t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 3을 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
-  T([1750, 700, 900, 560, 650, 1500, 2870], [new TableRow({ children: [
-    exSeg([t("These sculptures", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1750),
-    exSeg([t("are", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 700, "\u25b3"),
-    exSeg([t("so small", { size: 18 })], "", FAINT, 900),
-    exSeg([t("that", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 560),
-    exSeg([t("they", { size: 18, bold: true, color: SGRN, underline: {} })], "S\u2032 주어", SGRN, 650),
-    exSeg([t("can be placed", { size: 18, bold: true, color: NAVY })], "V\u2032 한 덩어리", NAVY, 1500, "\u25b3"),
-    exSeg([t("even in the eye of a needle", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 2870),
+  T([1715, 633, 875, 858, 616, 1457, 2776], [new TableRow({ children: [
+    exSeg([t("These sculptures", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1715),
+    exSeg([t("are", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 633, "\u25b3"),
+    exSeg([t("so small", { size: 18 })], "", FAINT, 875),
+    exSeg([t("that", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 858),
+    exSeg([t("they", { size: 18, bold: true, color: SGRN, underline: {} })], "S\u2032 주어", SGRN, 616),
+    exSeg([t("can be placed", { size: 18, bold: true, color: NAVY })], "V\u2032 한 덩어리", NAVY, 1457, "\u25b3"),
+    exSeg([t("even in the eye of a needle", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 2776),
   ] })]),
 ], { w: W, shade: PAPER, b: { top: bd(4, GOLD), bottom: bd(4, GOLD), left: bd(4, GOLD), right: bd(4, GOLD) }, m: { top: 44, bottom: 44, left: 200, right: 200 } })] })]));
 K.push(spF(2, 85, 0.06));

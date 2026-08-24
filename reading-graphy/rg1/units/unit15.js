@@ -177,13 +177,13 @@ K.push(T([W], [new TableRow({ children: [cel([
     t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 6을 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
-  T([950, 1300, 1550, 1250, 2300, 1580], [new TableRow({ children: [
-    exSeg([t("When", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 950),
-    exSeg([t("a book", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 1300),
-    exSeg([t("gets older", { size: 18, bold: true, color: NAVY })], "V′ 동사", NAVY, 1550, "△"),
-    exSeg([t("lignin", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1250),
-    exSeg([t("breaks down and makes", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 2300, "△"),
-    exSeg([t("a unique smell", { size: 18 })], "", FAINT, 1580),
+  T([989, 1289, 1540, 1238, 2299, 1575], [new TableRow({ children: [
+    exSeg([t("When", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 989),
+    exSeg([t("a book", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 1289),
+    exSeg([t("gets older", { size: 18, bold: true, color: NAVY })], "V′ 동사", NAVY, 1540, "△"),
+    exSeg([t("lignin", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1238),
+    exSeg([t("breaks down and makes", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 2299, "△"),
+    exSeg([t("a unique smell", { size: 18 })], "", FAINT, 1575),
   ] })]),
 ], { w: W, shade: PAPER, b: { top: bd(4, GOLD), bottom: bd(4, GOLD), left: bd(4, GOLD), right: bd(4, GOLD) }, m: { top: 44, bottom: 44, left: 200, right: 200 } })] })]));
 K.push(spF(2, 85, 0.06));

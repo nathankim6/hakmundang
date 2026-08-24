@@ -176,13 +176,13 @@ K.push(T([W], [new TableRow({ children: [cel([
     t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 3을 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
-  T([1450, 800, 1300, 800, 700, 2080, 1800], [new TableRow({ children: [
-    exSeg([t("His heart", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1450),
-    exSeg([t("was", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 800, "△"),
-    exSeg([t("so weak", { size: 18 })], "", FAINT, 1300),
-    exSeg([t("that", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 800),
-    exSeg([t("he", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 700),
-    exSeg([t("couldn’t receive", { size: 18, bold: true, color: NAVY })], "V′ 한 덩어리", NAVY, 2080, "△"),
+  T([1437, 791, 1287, 858, 691, 2066, 1800], [new TableRow({ children: [
+    exSeg([t("His heart", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1437),
+    exSeg([t("was", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 791, "△"),
+    exSeg([t("so weak", { size: 18 })], "", FAINT, 1287),
+    exSeg([t("that", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 858),
+    exSeg([t("he", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 691),
+    exSeg([t("couldn’t receive", { size: 18, bold: true, color: NAVY })], "V′ 한 덩어리", NAVY, 2066, "△"),
     exSeg([t("a human heart transplant", { size: 18 })], "", FAINT, 1800),
   ] })]),
 ], { w: W, shade: PAPER, b: { top: bd(4, GOLD), bottom: bd(4, GOLD), left: bd(4, GOLD), right: bd(4, GOLD) }, m: { top: 44, bottom: 44, left: 200, right: 200 } })] })]));

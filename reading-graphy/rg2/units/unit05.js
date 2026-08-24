@@ -174,15 +174,15 @@ K.push(T([W], [new TableRow({ children: [cel([
     t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 3을 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
-  T([560, 620, 1050, 800, 1250, 1000, 1700, 1950], [new TableRow({ children: [
-    exSeg([t("We", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 560),
-    exSeg([t("use", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 620, "△"),
-    exSeg([t("this word", { size: 18 })], "", FAINT, 1050),
-    exSeg([t("when", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 800),
-    exSeg([t("companies", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 1250),
-    exSeg([t("pretend", { size: 18, bold: true, color: NAVY })], "V′ 동사", NAVY, 1000, "△"),
-    exSeg([t("to be eco-friendly", { size: 18 })], "", FAINT, 1700),
-    exSeg([t("to sell more products", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 1950),
+  T([529, 585, 1022, 980, 1218, 967, 1678, 1951], [new TableRow({ children: [
+    exSeg([t("We", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 529),
+    exSeg([t("use", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 585, "△"),
+    exSeg([t("this word", { size: 18 })], "", FAINT, 1022),
+    exSeg([t("when", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 980),
+    exSeg([t("companies", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 1218),
+    exSeg([t("pretend", { size: 18, bold: true, color: NAVY })], "V′ 동사", NAVY, 967, "△"),
+    exSeg([t("to be eco-friendly", { size: 18 })], "", FAINT, 1678),
+    exSeg([t("to sell more products", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 1951),
   ] })]),
 ], { w: W, shade: PAPER, b: { top: bd(4, GOLD), bottom: bd(4, GOLD), left: bd(4, GOLD), right: bd(4, GOLD) }, m: { top: 44, bottom: 44, left: 200, right: 200 } })] })]));
 K.push(spF(2, 85, 0.06));

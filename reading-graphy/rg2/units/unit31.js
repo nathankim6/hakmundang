@@ -208,14 +208,14 @@ K.push(T([W], [new TableRow({ children: [cel([
     t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 8을 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
-  T([1100, 800, 1900, 600, 950, 1750, 1830], [new TableRow({ children: [
-    exSeg([t("Families", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1100),
-    exSeg([t("began", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 800, "\u25b3"),
-    exSeg([t("to have fewer kids,", { size: 18 })], "", FAINT, 1900),
-    exSeg([t("so", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 600),
-    exSeg([t("each kid", { size: 18, bold: true, color: SGRN, underline: {} })], "S\u2032 주어", SGRN, 950),
-    exSeg([t("was able to get", { size: 18, bold: true, color: NAVY })], "V\u2032 한 덩어리", NAVY, 1750, "\u25b3"),
-    exSeg([t("more attention", { size: 18 })], "", FAINT, 1830),
+  T([1085, 791, 1886, 691, 943, 1731, 1803], [new TableRow({ children: [
+    exSeg([t("Families", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1085),
+    exSeg([t("began", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 791, "\u25b3"),
+    exSeg([t("to have fewer kids,", { size: 18 })], "", FAINT, 1886),
+    exSeg([t("so", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 691),
+    exSeg([t("each kid", { size: 18, bold: true, color: SGRN, underline: {} })], "S\u2032 주어", SGRN, 943),
+    exSeg([t("was able to get", { size: 18, bold: true, color: NAVY })], "V\u2032 한 덩어리", NAVY, 1731, "\u25b3"),
+    exSeg([t("more attention", { size: 18 })], "", FAINT, 1803),
   ] })]),
 ], { w: W, shade: PAPER, b: { top: bd(4, GOLD), bottom: bd(4, GOLD), left: bd(4, GOLD), right: bd(4, GOLD) }, m: { top: 44, bottom: 44, left: 200, right: 200 } })] })]));
 K.push(spF(2, 85, 0.06));

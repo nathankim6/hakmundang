@@ -176,12 +176,12 @@ K.push(T([W], [new TableRow({ children: [cel([
     t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 6을 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
-  T([800, 2600, 2500, 600, 2430], [new TableRow({ children: [
-    exSeg([t("But", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 800),
-    exSeg([t("finding the best way", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어(동명사)", SGRN, 2600),
-    exSeg([t("to make this happen", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 2500),
+  T([803, 2599, 2499, 600, 2429], [new TableRow({ children: [
+    exSeg([t("But", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 803),
+    exSeg([t("finding the best way", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어(동명사)", SGRN, 2599),
+    exSeg([t("to make this happen", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 2499),
     exSeg([t("is", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 600, "△"),
-    exSeg([t("not easy", { size: 18 })], "", FAINT, 2430),
+    exSeg([t("not easy", { size: 18 })], "", FAINT, 2429),
   ] })]),
 ], { w: W, shade: PAPER, b: { top: bd(4, GOLD), bottom: bd(4, GOLD), left: bd(4, GOLD), right: bd(4, GOLD) }, m: { top: 44, bottom: 44, left: 200, right: 200 } })] })]));
 K.push(spF(2, 85, 0.06));

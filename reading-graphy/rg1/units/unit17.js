@@ -177,13 +177,13 @@ K.push(T([W], [new TableRow({ children: [cel([
     t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 12를 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
-  T([1150, 750, 1350, 800, 2650, 1250, 980], [new TableRow({ children: [
-    exSeg([t("His goal", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1150),
-    exSeg([t("is", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 750, "△"),
-    exSeg([t("to show us", { size: 18 })], "", FAINT, 1350),
-    exSeg([t("that", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 800),
+  T([1137, 731, 1336, 858, 2650, 1238, 980], [new TableRow({ children: [
+    exSeg([t("His goal", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1137),
+    exSeg([t("is", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 731, "△"),
+    exSeg([t("to show us", { size: 18 })], "", FAINT, 1336),
+    exSeg([t("that", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 858),
     exSeg([t("old machines like typewriters", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 2650),
-    exSeg([t("can make", { size: 18, bold: true, color: NAVY })], "V′ 한 덩어리", NAVY, 1250, "△"),
+    exSeg([t("can make", { size: 18, bold: true, color: NAVY })], "V′ 한 덩어리", NAVY, 1238, "△"),
     exSeg([t("amazing art", { size: 18 })], "", FAINT, 980),
   ] })]),
 ], { w: W, shade: PAPER, b: { top: bd(4, GOLD), bottom: bd(4, GOLD), left: bd(4, GOLD), right: bd(4, GOLD) }, m: { top: 44, bottom: 44, left: 200, right: 200 } })] })]));

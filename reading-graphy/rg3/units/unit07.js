@@ -209,12 +209,12 @@ K.push(T([W], [new TableRow({ children: [cel([
     t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 4을 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
-  T([700, 2900, 1300, 2100, 1930], [new TableRow({ children: [
-    exSeg([t("But", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 700),
-    exSeg([t("this burning orange glow", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 2900),
-    exSeg([t("only lasts", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 1300, "△"),
-    exSeg([t("for a few minutes", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 2100),
-    exSeg([t("before sunset", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 1930),
+  T([803, 2870, 1282, 2076, 1899], [new TableRow({ children: [
+    exSeg([t("But", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 803),
+    exSeg([t("this burning orange glow", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 2870),
+    exSeg([t("only lasts", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 1282, "△"),
+    exSeg([t("for a few minutes", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 2076),
+    exSeg([t("before sunset", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 1899),
   ] })]),
 ], { w: W, shade: PAPER, b: { top: bd(4, GOLD), bottom: bd(4, GOLD), left: bd(4, GOLD), right: bd(4, GOLD) }, m: { top: 44, bottom: 44, left: 200, right: 200 } })] })]));
 K.push(spF(2, 85, 0.06));

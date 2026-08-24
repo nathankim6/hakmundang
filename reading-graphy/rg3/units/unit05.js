@@ -178,14 +178,14 @@ K.push(T([W], [new TableRow({ children: [cel([
     t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 4를 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
-  T([900, 1150, 800, 950, 750, 1400, 2980], [new TableRow({ children: [
-    exSeg([t("Even if", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 900),
+  T([918, 1150, 797, 948, 747, 1397, 2973], [new TableRow({ children: [
+    exSeg([t("Even if", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 918),
     exSeg([t("the animals", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 1150),
-    exSeg([t("seem", { size: 18, bold: true, color: NAVY })], "V′ 동사", NAVY, 800, "△"),
-    exSeg([t("friendly,", { size: 18 })], "", FAINT, 950),
-    exSeg([t("they", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 750),
-    exSeg([t("could attack", { size: 18, bold: true, color: NAVY })], "V 한 덩어리", NAVY, 1400, "△"),
-    exSeg([t("selfie-takers at any moment", { size: 18 })], "", FAINT, 2980),
+    exSeg([t("seem", { size: 18, bold: true, color: NAVY })], "V′ 동사", NAVY, 797, "△"),
+    exSeg([t("friendly,", { size: 18 })], "", FAINT, 948),
+    exSeg([t("they", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 747),
+    exSeg([t("could attack", { size: 18, bold: true, color: NAVY })], "V 한 덩어리", NAVY, 1397, "△"),
+    exSeg([t("selfie-takers at any moment", { size: 18 })], "", FAINT, 2973),
   ] })]),
 ], { w: W, shade: PAPER, b: { top: bd(4, GOLD), bottom: bd(4, GOLD), left: bd(4, GOLD), right: bd(4, GOLD) }, m: { top: 44, bottom: 44, left: 200, right: 200 } })] })]));
 K.push(spF(2, 85, 0.06));

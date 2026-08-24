@@ -209,14 +209,14 @@ K.push(T([W], [new TableRow({ children: [cel([
     t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 1을 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
-  T([950, 1500, 900, 1400, 900, 700, 2580], [new TableRow({ children: [
-    exSeg([t("When", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 950),
-    exSeg([t("new products", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 1500),
-    exSeg([t("fail,", { size: 18, bold: true, color: NAVY })], "V′ 동사", NAVY, 900, "△"),
-    exSeg([t("companies", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1400),
-    exSeg([t("often", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어", MRED, 900),
-    exSeg([t("try", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 700, "△"),
-    exSeg([t("to forget them fast.", { size: 18 })], "", FAINT, 2580),
+  T([989, 1497, 893, 1395, 895, 695, 2566], [new TableRow({ children: [
+    exSeg([t("When", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 989),
+    exSeg([t("new products", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 1497),
+    exSeg([t("fail,", { size: 18, bold: true, color: NAVY })], "V′ 동사", NAVY, 893, "△"),
+    exSeg([t("companies", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1395),
+    exSeg([t("often", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어", MRED, 895),
+    exSeg([t("try", { size: 18, bold: true, color: NAVY })], "V 본동사", NAVY, 695, "△"),
+    exSeg([t("to forget them fast.", { size: 18 })], "", FAINT, 2566),
   ] })]),
 ], { w: W, shade: PAPER, b: { top: bd(4, GOLD), bottom: bd(4, GOLD), left: bd(4, GOLD), right: bd(4, GOLD) }, m: { top: 44, bottom: 44, left: 200, right: 200 } })] })]));
 K.push(spF(2, 85, 0.06));

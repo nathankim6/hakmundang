@@ -174,13 +174,13 @@ K.push(T([W], [new TableRow({ children: [cel([
     t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 3을 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
-  T([1700, 1750, 1600, 750, 2130, 1000], [new TableRow({ children: [
-    exSeg([t("Most mummies", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1700),
-    exSeg([t("are wrapped", { size: 18, bold: true, color: NAVY })], "V 한 덩어리", NAVY, 1750, "△"),
-    exSeg([t("in bandages", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 1600),
-    exSeg([t("but", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 750),
-    exSeg([t("these crocodiles", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 2130),
-    exSeg([t("weren’t", { size: 18, bold: true, color: NAVY })], "V′ 본동사", NAVY, 1000, "△"),
+  T([1694, 1738, 1590, 796, 2117, 995], [new TableRow({ children: [
+    exSeg([t("Most mummies", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 1694),
+    exSeg([t("are wrapped", { size: 18, bold: true, color: NAVY })], "V 한 덩어리", NAVY, 1738, "△"),
+    exSeg([t("in bandages", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 1590),
+    exSeg([t("but", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 796),
+    exSeg([t("these crocodiles", { size: 18, bold: true, color: SGRN, underline: {} })], "S′ 주어", SGRN, 2117),
+    exSeg([t("weren’t", { size: 18, bold: true, color: NAVY })], "V′ 본동사", NAVY, 995, "△"),
   ] })]),
 ], { w: W, shade: PAPER, b: { top: bd(4, GOLD), bottom: bd(4, GOLD), left: bd(4, GOLD), right: bd(4, GOLD) }, m: { top: 44, bottom: 44, left: 200, right: 200 } })] })]));
 K.push(spF(2, 85, 0.06));

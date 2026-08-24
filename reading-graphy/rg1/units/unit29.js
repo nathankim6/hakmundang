@@ -182,13 +182,13 @@ K.push(T([W], [new TableRow({ children: [cel([
     t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 14를 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
-  T([900, 1600, 2400, 800, 700, 2530], [new TableRow({ children: [
-    exSeg([t("You", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 900),
-    exSeg([t("must live", { size: 18, bold: true, color: NAVY })], "V 한 덩어리", NAVY, 1600, "△"),
-    exSeg([t("in the United States", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 2400),
-    exSeg([t("and", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 800),
-    exSeg([t("be", { size: 18, bold: true, color: NAVY })], "V 동사", NAVY, 700, "△"),
-    exSeg([t("18 years or older.", { size: 18 })], "", FAINT, 2530),
+  T([896, 1594, 2395, 827, 697, 2521], [new TableRow({ children: [
+    exSeg([t("You", { size: 18, bold: true, color: SGRN, underline: {} })], "S 주어", SGRN, 896),
+    exSeg([t("must live", { size: 18, bold: true, color: NAVY })], "V 한 덩어리", NAVY, 1594, "△"),
+    exSeg([t("in the United States", { size: 18, bold: true, color: MGRY, underline: {} })], "M 수식어(구)", MRED, 2395),
+    exSeg([t("and", { size: 18, bold: true, color: AMB, border: { style: BorderStyle.SINGLE, size: 10, color: AMB, space: 3 } })], "접속사", AMB, 827),
+    exSeg([t("be", { size: 18, bold: true, color: NAVY })], "V 동사", NAVY, 697, "△"),
+    exSeg([t("18 years or older.", { size: 18 })], "", FAINT, 2521),
   ] })]),
 ], { w: W, shade: PAPER, b: { top: bd(4, GOLD), bottom: bd(4, GOLD), left: bd(4, GOLD), right: bd(4, GOLD) }, m: { top: 44, bottom: 44, left: 200, right: 200 } })] })]));
 K.push(spF(2, 85, 0.06));
