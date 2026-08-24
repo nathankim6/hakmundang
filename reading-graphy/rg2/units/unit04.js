@@ -453,7 +453,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓒ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓒ가 맨 앞 — 주인공 Bill이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (c)가 맨 앞 — 주인공 Bill이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -764,7 +764,7 @@ B("2-1   문장 3 So — 더 나은 신발을 원했기 때문에 일어난 ‘�
 B("2-2   [C] 계기(문장 7–9: 와플 기계의 무늬에서 아이디어를 얻는다), [E] 오늘날(문장 12–13: 러너들이 빨라졌고 지금도 쓰인다). 보기의 ‘요리법’은 이 글에 없는 역할이다. [A] 소개 → [B] 노력 → [C] 계기 → [D] 성공 → [E] 오늘날 — 발명 이야기의 전형적인 흐름이다.");
 B("2-3   정답 ①. 실존 인물의 발명 이야기를 사실대로 들려주는 설명문이다. ② 사라는 말·가격이 없으니 광고가 아니고, ③ I·Today로 시작하는 하루 기록이 아니며, ④ 받는 사람이 없고, ⑤ should·I think 같은 주장의 신호도 없다.");
 B("[학습 포인트]   연결어만 표시해도 글의 지도가 그려진다. So(결과), if(조건), while(동안), but(반전). 특히 발명·성공 이야기에서 But 뒤에는 ‘실패를 이겨 낸 이야기’가 온다 — 반전 뒤의 문장이 글의 핵심 재료다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 waffle · faster     3-3 ⓒ → ⓑ → ⓓ → ⓐ");
+Hs("STEP 3   주제문 만들기   ·   3-1 waffle · faster     3-3 (c) → (b) → (d) → (a)");
 B("3-1  재료 찾기 — (2) 문장 12에서 waffle에 ○: 새 신발의 이름은 waffle shoes다. breakfast는 계기가 된 시간일 뿐이다. (3) 문장 12에서 faster에 ○: 신발이 러너들을 더 빠르게 만들었다. slower는 반대말이다. 주제문의 재료는 언제나 본문 안에 있다.");
 B("3-2  뼈대 채우기 — (1) kept trying  (2) waffle  (3) faster.  넣으면 Bill kept trying, and the new waffle shoes made runners much faster.가 완성된다.");
 B("3-3  정답 순서 — ⓒ Bill kept trying, → ⓑ and the new waffle shoes → ⓓ made runners → ⓐ much faster.  완성 문장: Bill kept trying, and the new waffle shoes made runners much faster.");

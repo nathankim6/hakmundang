@@ -466,7 +466,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓒ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓒ가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (c)가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -777,7 +777,7 @@ B("2-1   문장 2 and — 아름다운 자연에 캠핑 인기를 '덧붙임'.  
 B("2-2   [B] 문제(문장 3–5: 음식을 가져가는 도둑게), [E] 존중(문장 12–14: 먹지 않고 돌본다). 보기의 '요리법'은 이 글에 없는 역할이다.");
 B("2-3   정답 ①. 섬과 게에 대한 사실을 알려 주는 설명문이다. ② 가격·명령문이 없어 광고가 아니고, ③ I·날짜, ④ Dear ~, ⑤ 옛이야기의 형식도 없다.");
 B("[학습 포인트]   But이 두 번 나오는 글이다(문장 3·7). 방향이 바뀌는 자리를 표시하면 '좋다 → 조심 → 안심'의 흐름이 한눈에 보인다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 look after · respect     3-3 ⓒ → ⓑ → ⓓ → ⓐ");
+Hs("STEP 3   주제문 만들기   ·   3-1 look after · respect     3-3 (c) → (b) → (d) → (a)");
 B("3-1  재료 찾기 — (2) 문장 14에서 look after에 ○: 섬사람들이 하는 일이다. catch는 오히려 문장 13과 반대다. (3) respect에 ○: 섬사람들의 태도다. fear는 본문에 없다.");
 B("3-2  뼈대 채우기 — (1) these crabs  (2) look after  (3) respect.  넣으면 The people on the island look after these crabs and treat them with respect.가 완성된다.");
 B("3-3  정답 순서 — ⓒ The people on the island → ⓑ look after these crabs → ⓓ and treat them → ⓐ with respect.");
@@ -796,9 +796,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T — 문장 1.   2 F — 문장 4: 약한 게 아니라 뛰어난 후각이다.   3 T — 문장 5.   4 F — 문장 8: 사람을 해치지 않는다.   5 T — 문장 9.   6 F — 문장 10: 요리 자리 옆이 아니라 멀리 떨어진 곳에 친다.   7 T — 문장 13.   8 F — 문장 14: 잡아먹는 게 아니라 돌본다.  거짓 문장은 모두 한 요소(weak, often hurt, next to, catch)만 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓐ → ⓒ → ⓓ");
+Hs("R2   사건 순서   ·   (b) → (a) → (c) → (d)");
 B("ⓑ 캠핑객이 요리를 시작한다(문장 6) → ⓐ 게들이 냄새를 맡고 모여든다(문장 6) → ⓒ 똑똑한 캠핑객은 음식을 나무에 매단다(문장 9) → ⓓ 밤에 게가 텐트에 오지 않는다(문장 11). 문제가 먼저, 해결이 뒤 — 설명문의 전형적인 차례다.", true);
-Hs("R3   영영풀이   ·   1 ⓒ · 2 ⓐ · 3 ⓔ · 4 ⓕ · 5 ⓑ · 6 ⓓ");
+Hs("R3   영영풀이   ·   1 (c) · 2 (a) · 3 (e) · 4 (f) · 5 (b) · 6 (d)");
 B("island = 물로 둘러싸인 땅 · huge = 아주아주 큰 · gather = 한곳에 모이다 · hang = 바닥에 닿지 않게 매달다 · spot = 어떤 일이 일어나는 자리 · respect = 누군가를 아끼는 마음.", true);
 Hs("R4   어법 기초   ·   (1) is  (2) camping  (3) have  (4) smell");
 B("(1) 뒤의 주어가 an amazing place(단수)이므로 there is.   (2) love 뒤에는 ~ing나 to+동사원형 — camping.   (3) 주어 These crabs는 복수 — have.   (4) 주어 the crabs도 복수 — smell.", true);

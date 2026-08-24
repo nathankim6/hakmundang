@@ -464,7 +464,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓑ  )", { size: 19 }), t("  \u2192  (      )  \u2192  (      )  \u2192  (      )", { size: 19 }),
-  t("      ⓑ가 맨 앞 \u2014 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (b)가 맨 앞 \u2014 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -775,7 +775,7 @@ B("2-1   문장 3 That’s why \u2014 비용이 비싼 것의 ‘결과’로 �
 B("2-2   [B] 소개(문장 3–5: 스타크리트의 발명과 정체), [E] 전망(문장 11–13: 우주 임무가 더 싸고 간단해진다). 보기의 ‘요리법’은 이 글에 없는 역할이다. 문제 → 소개 → 강도 → 가벼움 → 전망의 흐름이다.");
 B("2-3   정답 ①. 새 재료의 정체·성질·쓸모를 사실 위주로 알려 주는 설명문이다. ② 가격이나 명령문이 없어 광고가 아니고, ③ 일기·④ 편지·⑤ 동화의 신호도 없다.");
 B("[학습 포인트]   That’s why는 ‘그래서’, because와 Since는 ‘왜냐하면’이다. 방향이 반대인 두 신호를 구분하면 원인과 결과가 저절로 정리된다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 strong · light     3-3 ⓑ → ⓓ → ⓐ → ⓒ");
+Hs("STEP 3   주제문 만들기   ·   3-1 strong · light     3-3 (b) → (d) → (a) → (c)");
 B("3-1  재료 찾기 \u2014 (2) 문장 7에서 strong에 ○: 지구 콘크리트의 두 배라고 했다. (3) 문장 9에서 light에 ○: 우주로 보내는 것은 가벼워야 한다. weak·heavy는 본문과 반대되는 말이다.");
 B("3-2  뼈대 채우기 \u2014 (1) StarCrete  (2) strong  (3) light. 넣으면 StarCrete is a strong and light concrete made from potato starch for space missions.가 된다.");
 B("3-3  정답 순서 \u2014 ⓑ StarCrete is → ⓓ a strong and light concrete → ⓐ made from potato starch → ⓒ for space missions.");
@@ -794,9 +794,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T \u2014 문장 3.   2 F \u2014 문장 2: 2천 달러가 아니라 200만 달러(million)다.   3 T \u2014 문장 4.   4 F \u2014 문장 6: 소금이 아니라 녹말(starch)이 접착제다.   5 T \u2014 문장 7.   6 F \u2014 문장 9: 무거운 게 아니라 가벼워야(light) 한다.   7 T \u2014 문장 12.   8 F \u2014 문장 13: 추가 장비가 필요 없다고 했다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓓ → ⓐ → ⓒ");
+Hs("R2   사건 순서   ·   (b) → (d) → (a) → (c)");
 B("ⓑ 화성으로 벽돌을 보내는 값이 너무 비쌌다(문장 2) → ⓓ 과학자들이 우주 먼지·소금·감자 녹말을 섞었다(문장 3–4) → ⓐ 지구 콘크리트보다 두 배 강한 콘크리트가 나왔다(문장 7) → ⓒ 우주 임무가 더 간단하고 싸질 수 있다(문장 13).", true);
-Hs("R3   영영풀이   ·   1 ⓒ · 2 ⓕ · 3 ⓐ · 4 ⓔ · 5 ⓓ · 6 ⓑ");
+Hs("R3   영영풀이   ·   1 (c) · 2 (f) · 3 (a) · 4 (e) · 5 (d) · 6 (b)");
 B("structure = 사람이 지은 건축물 · invent = 처음으로 새것을 만들다 · combination = 둘 이상을 섞은 것 · unique = 다른 것과 같지 않은, 특별한 · strength = 얼마나 강한가 · equipment = 일에 필요한 도구와 기계.", true);
 Hs("R4   어법 기초   ·   (1) made  (2) uses  (3) needs  (4) be");
 B("(1) ‘~로 만들어진’은 과거분사 made가 앞의 concrete를 꾸민다.   (2) 주어 StarCrete는 3인칭 단수 \u2014 uses.   (3) Everything은 단수 취급 \u2014 needs.   (4) 조동사 could 뒤에는 동사원형 be.", true);

@@ -466,7 +466,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  \u24D2  )", { size: 19 }), t("  \u2192  (      )  \u2192  (      )  \u2192  (      )", { size: 19 }),
-  t("      \u24D2가 맨 앞 \u2014 명령문은 동사부터!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (c)가 맨 앞 \u2014 명령문은 동사부터!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());

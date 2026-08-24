@@ -465,7 +465,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓑ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓑ이 맨 앞 — 주인공 We가 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (b)이 맨 앞 — 주인공 We가 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -778,7 +778,7 @@ B("2-1   문장 3 But — 아는 것(백색)에서 모르는 것(핑크·브라�
 B("2-2   [B] 공통점(문장 4–5: 세 소리 모두 진정 효과가 있다는 공통점과 질문), [E] 브라운 소음(문장 12–15: 가장 깊은 소리 소개와 마무리 질문). 보기의 '만드는 법'은 이 글에 없는 역할이다. [A] 소개 → [B] 공통점 → [C] 백색 → [D] 핑크 → [E] 브라운 — 하나씩 차례로 소개하는 설명문의 전형적인 흐름이다.");
 B("2-3   정답 ①. 세 가지 소음이라는 대상을 소개하고 사실을 알려 주는 설명문이다 — 현재시제로 대상의 이름과 특징이 이어진다(문장 6·9·12). ② 가격이나 명령문이 없어 광고가 아니고, ③ I·Today가 없어 일기도, ④ 받는 사람이 없어 편지도, ⑤ 등장인물과 사건이 없어 동화도 아니다.");
 B("[학습 포인트]   연결어만 표시해도 글의 지도가 그려진다. But(반전) · so(결과) · because(이유). 설명문은 '소개 → 공통점 → 하나씩 차례로'가 기본 뼈대다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 color · calming     3-3 ⓑ → ⓓ → ⓐ → ⓒ");
+Hs("STEP 3   주제문 만들기   ·   3-1 color · calming     3-3 (b) → (d) → (a) → (c)");
 B("3-1  재료 찾기 — (2) 문장 1에서 color에 ○: 소음을 설명할 때 쓰는 도구다. shape는 본문에 없다. (3) 문장 4에서 calming에 ○: 세 소리의 공통 효과다. boring은 반대 방향의 말이다. 주제문의 재료는 언제나 본문 안에 있다.");
 B("3-2  뼈대 채우기 — (1) noise  (2) color  (3) calming.  넣으면 We use color to describe three types of noise with a calming effect.가 완성된다.");
 B("3-3  정답 순서 — ⓑ we use color → ⓓ to describe → ⓐ three types of noise → ⓒ with a calming effect.  완성 문장: We use color to describe three types of noise with a calming effect.");
@@ -797,9 +797,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 T · 5 F · 6 T · 7 F · 8 F");
 B("1 T — 문장 1.   2 F — 문장 4: 두 소리가 아니라 세 소리 모두(All these three)다.   3 T — 문장 6.   4 T — 문장 7.   5 F — 문장 9: 더 높은 게 아니라 더 낮은(lower) 소리다.   6 T — 문장 10.   7 F — 문장 12: 가장 높은 게 아니라 가장 깊은(deepest) 소리다.   8 F — 문장 14: 해치는 게 아니라 향상시키는 데(improve) 도움이 된다.  거짓 문장은 모두 본문에서 딱 한 요소(two, higher, highest, hurt)를 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓒ → ⓓ → ⓐ");
+Hs("R2   사건 순서   ·   (b) → (c) → (d) → (a)");
 B("ⓑ 세 소리의 차이가 무엇인지 묻는다(문장 5) → ⓒ 가장 잘 알려진 백색 소음을 소개한다(문장 6) → ⓓ 자연 소리 같은 핑크 소음을 소개한다(문장 9) → ⓐ 가장 깊은 브라운 소음을 소개한다(문장 12). 문장 5의 질문이 글 전체의 목차 역할을 한다 — 질문을 던진 뒤 하나씩 답해 나가는 순서다.", true);
-Hs("R3   영영풀이   ·   1 ⓔ · 2 ⓒ · 3 ⓐ · 4 ⓕ · 5 ⓑ · 6 ⓓ");
+Hs("R3   영영풀이   ·   1 (e) · 2 (c) · 3 (a) · 4 (f) · 5 (b) · 6 (d)");
 B("describe = 어떤 것이 어떠한지 말하다 · noise = 크거나 원하지 않는 소리 · calming = 조용하고 편안하게 만드는 · well-known = 많은 사람이 아는 · similar = 다른 것과 거의 같은 · improve = 더 좋게 만들다.", true);
 Hs("R4   어법 기초   ·   (1) have  (2) is  (3) uses  (4) help");
 B("(1) 주어 sounds는 복수 — have.   (2) 주어 White noise는 단수 — is.   (3) 3인칭 단수 주어 뒤 현재시제 동사에는 -s — uses.   (4) 조동사 could 뒤에는 동사원형 — help. 2면 분석 Tip에서 could help를 한 덩어리로 표시한 그 원칙이다.", true);

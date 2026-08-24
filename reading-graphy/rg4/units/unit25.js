@@ -462,7 +462,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓒ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓒ가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (c)가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -770,7 +770,7 @@ B("2-1   문장 4 In other words — 앞의 크기를 쉬운 비유로 '바꿔 �
 B("2-2   [B] 크기(문장 2–4: 목성보다 크고 지구 1,300개가 들어간다), [E] 목표(문장 9–10: 이런 항성계를 더 찾아 행성 형성을 이해하려 한다). 보기의 '가격'은 이 글에 없는 역할이다. [A] 발견 → [B] 크기 → [C] 무게 → [D] 놀라움 → [E] 목표.");
 B("2-3   정답 ①. 새로 발견한 행성의 사실을 차례로 알려 주는 설명문이다. ② 사라는 말·가격이 없어 광고가 아니고, ③ I·날짜가 없어 일기도, ④ Dear ~가 없어 편지도, ⑤ 지어낸 이야기도 아니다.");
 B("[학습 포인트]   설명문은 '무엇을 발견했나 → 어떤 것인가 → 왜 놀라운가 → 앞으로 무엇을 할 것인가'로 흐른다. 연결어에 동그라미만 쳐도 이 지도가 보인다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 light · surprise     3-3 ⓒ → ⓐ → ⓑ → ⓓ");
+Hs("STEP 3   주제문 만들기   ·   3-1 light · surprise     3-3 (c) → (a) → (b) → (d)");
 B("3-1  재료 찾기 — (2) 문장 1에서 light에 ○: 마시멜로에 견준 것은 무게다. heavy는 정반대. (3) 문장 7에서 surprise에 ○: 천문학자들의 반응이 곧 글쓴이의 평가다. problem은 본문에 없다.");
 B("3-2  뼈대 채우기 — (1) planet  (2) light  (3) surprise.  넣으면 The giant planet as light as a marshmallow is a surprise to astronomers.가 완성된다.");
 B("3-3  정답 순서 — ⓒ The giant planet → ⓐ as light as a marshmallow → ⓑ is a surprise → ⓓ to astronomers.");
@@ -789,9 +789,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 T · 3 F · 4 T · 5 F · 6 F · 7 T · 8 F");
 B("1 T — 문장 1.   2 T — 문장 2.   3 F — 문장 3: smaller가 아니라 larger다.   4 T — 문장 4.   5 F — 문장 5: heavier가 아니라 lighter다.   6 F — 문장 6: sink가 아니라 뜬다(float).   7 T — 문장 8.   8 F — 문장 9: close가 아니라 far away에서만 찾아 왔다.  거짓 문장은 모두 딱 한 단어(smaller, heavier, sink, close)를 비튼 것이다 — 그 한 단어를 찾는 것이 정독이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓐ → ⓒ → ⓓ");
+Hs("R2   사건 순서   ·   (b) → (a) → (c) → (d)");
 B("ⓑ 거대 행성은 적색왜성 곁에 못 생긴다고 믿어 왔다(문장 8, 발견 이전) → ⓐ 애리조나에서 거대 행성을 발견한다(문장 1) → ⓒ 마시멜로만큼 가볍다는 것을 알아낸다(문장 5–6) → ⓓ 행성 형성을 이해하겠다는 목표를 세운다(문장 10). 서술 순서는 ⓐ가 먼저지만 실제로는 ⓑ의 믿음이 먼저 있었다 — 그래서 이 발견이 놀라운 것이다.", true);
-Hs("R3   영영풀이   ·   1 ⓑ · 2 ⓒ · 3 ⓓ · 4 ⓕ · 5 ⓐ · 6 ⓔ");
+Hs("R3   영영풀이   ·   1 (b) · 2 (c) · 3 (d) · 4 (f) · 5 (a) · 6 (e)");
 B("astronomer = 별과 행성을 연구하는 사람 · float = 물 위나 공중에 떠 있다 · huge = 아주아주 큰 · fit = 어떤 공간에 알맞게 들어가다 · discover = 처음으로 찾아내다 · goal = 이루고자 하는 것.", true);
 Hs("R4   어법 기초   ·   (1) is  (2) would float  (3) To discover  (4) Finding");
 B("(1) 주어 This planet은 단수 — is.   (2) 조동사 would 뒤에는 동사원형 — would float. 2면 분석 Tip처럼 한 덩어리의 동사다.   (3) 주어 자리의 to부정사 — To discover.   (4) 주어 자리의 동명사 — Finding. (3)과 (4)는 동사를 주어로 만드는 두 가지 방법이다.", true);

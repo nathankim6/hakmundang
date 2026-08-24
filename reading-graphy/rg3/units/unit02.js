@@ -421,7 +421,7 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R2 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T — 문장 2.   2 F — 문장 3: 둥근 라켓이 아니라 네모난(square) 라켓이다.   3 T — 문장 4.   4 F — 문장 5: 배우기 어려운 게 아니라 쉽다(easy).   5 T — 문장 6.   6 F — 문장 7: 어린아이가 아니라 노인들(the elderly)이 즐겼다.   7 T — 문장 9.   8 F — 문장 9: 줄어드는 게 아니라 빠르게 늘고 있다(increasing).  거짓 문장은 모두 딱 한 요소(round, hard, young children, going down)를 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓐ → ⓒ → ⓓ");
+Hs("R2   사건 순서   ·   (b) → (a) → (c) → (d)");
 B("ⓑ 세 종목을 섞은 새 경기가 생긴다(문장 2) → ⓐ 노인들 사이에서 인기를 얻는다(문장 7) → ⓒ 젊은 사람들도 라켓을 잡는다(문장 8) → ⓓ 최근 선수의 절반이 55세 미만이 된다(문장 9). In the past → But now → Recently라는 시간 표지가 순서를 그대로 알려 준다 — 이 글은 서술 순서와 시간 순서가 같다.", true);
 K.push(sp(70));
 K.push(T([W], [new TableRow({ children: [cel([

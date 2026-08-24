@@ -460,7 +460,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  \u24D2  )", { size: 19 }), t("  \u2192  (      )  \u2192  (      )  \u2192  (      )", { size: 19 }),
-  t("      ⓒ가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (c)가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -768,7 +768,7 @@ B("2-1   문장 2 Though — '99%가 물이지만'이라는 '양보'.   문장 4
 B("2-2   [B] 변화(문장 4: 먹는 것에 따라 침이 달라진다), [E] 기대(문장 9–10: 건강한 식습관으로 이어지길 바란다). 보기의 '요리법'은 이 글에 없는 역할이다. [A] 소개 → [B] 변화 → [C] 실험 → [D] 사람도 → [E] 기대 — 사실을 쌓아 가는 설명문의 전형이다.");
 B("2-3   정답 ①. 침이라는 대상을 소개하고 실험 결과라는 사실을 알려 주는 설명문이다. ② I·오늘 같은 일기의 신호가 없고, ③ 가격·명령문이 없어 광고도 아니며, ④ 받는 사람도 ⑤ 지어낸 이야기도 없다.");
 B("[학습 포인트]   설명문에서는 But과 For example이 짝을 이룰 때가 많다 — 반전으로 방향을 틀고, 예시로 못을 박는다. 연결어에 동그라미만 쳐도 글의 지도가 그려진다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 changes · effect     3-3 ⓒ → ⓐ → ⓑ → ⓓ");
+Hs("STEP 3   주제문 만들기   ·   3-1 changes · effect     3-3 (c) → (a) → (b) → (d)");
 B("3-1  재료 찾기 — (2) 문장 4에서 changes에 ○: 침이 하는 일이다. stops는 본문에 없는 말이다. (3) 문장 2에서 effect에 ○: 맛에 미치는 '영향'이다. water는 침의 성분일 뿐 주제가 아니다. 주제문의 재료는 언제나 본문 안에 있다.");
 B("3-2  뼈대 채우기 — (1) Saliva  (2) changes  (3) effect.  넣으면 Saliva changes depending on what we eat and has a big effect on taste.가 완성된다.");
 B("3-3  정답 순서 — ⓒ Saliva changes → ⓐ depending on what we eat → ⓑ and has a big effect → ⓓ on taste.");
@@ -787,9 +787,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T — 문장 1.   2 F — 문장 2: 50%가 아니라 99%가 물이다.   3 T — 문장 3.   4 F — 문장 5: 단 음식이 아니라 쓴(bitter) 음식을 먹였다.   5 T — 문장 5.   6 F — 문장 7: 다른(different) 방식이 아니라 비슷한(similar) 방식이다.   7 T — 문장 8.   8 F — 문장 9: 더 좋아 보이게(look)가 아니라 더 맛있게(taste) 만들려 한다.  거짓 문장은 모두 한 단어(50 percent, sweet, different, look)만 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓓ → ⓐ → ⓒ");
+Hs("R2   사건 순서   ·   (b) → (d) → (a) → (c)");
 B("ⓑ 연구자들이 쥐에게 쓴 음식을 먹인다(문장 5) → ⓓ 쥐들의 침이 변한다(문장 5) → ⓐ 쥐들이 그 맛을 받아들이기 시작한다(문장 5) → ⓒ 연구자들이 건강식을 더 맛있게 만들기를 바란다(문장 9). 한 문장 안에 세 단계가 들어 있으므로, 문장 5를 콤마 단위로 끊어 읽는 것이 관건이다.", true);
-Hs("R3   영영풀이   ·   1 ⓒ · 2 ⓔ · 3 ⓐ · 4 ⓕ · 5 ⓑ · 6 ⓓ");
+Hs("R3   영영풀이   ·   1 (c) · 2 (e) · 3 (a) · 4 (f) · 5 (b) · 6 (d)");
 B("saliva = 입안에서 나와 먹는 것을 돕는 물(침) · liquid = 물처럼 따를 수 있는 것(액체) · bitter = 달지 않고 쓴 · accept = 받아들이기 시작하다 · mix = 두 가지 이상을 섞다 · encourage = 하고 싶게 만들다, 장려하다.", true);
 Hs("R4   어법 기초   ·   (1) is  (2) mixes  (3) were  (4) studying");
 B("(1) saliva는 셀 수 없는 명사라 단수 취급 — is.   (2) 주어 It은 3인칭 단수, 현재시제 — mixes.   (3) 주어 rats는 복수, 과거 — were.   (4) 전치사 by 뒤에는 동명사 — studying. 2면 구문 카드에서 배운 그 문장이다.", true);

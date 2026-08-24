@@ -464,7 +464,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓑ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓑ가 맨 앞 — 주어부터!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (b)가 맨 앞 — 주어부터!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -774,7 +774,7 @@ B("2-1   문장 2 During — 파이어폴이 일어나는 '때'.   문장 4 But 
 B("2-2   [B] 시기(문장 3: 2월에 호스테일 폭포가 파이어폴로 변한다), [E] 준비(문장 11–12: 언제 가야 하고 예약이 필요하다). 보기의 '가격'은 이 글에 없는 역할이다. 소개 → 시기 → 짧은 순간 → 조건 → 준비의 흐름이다.");
 B("2-3   정답 ①. 볼거리를 소개하고 필요한 조건과 시간을 알려 주는 안내문이다. 값이나 명령형 광고 문구가 없고, 일기·편지·동화·시의 신호도 없다.");
 B("[학습 포인트]   But 다음에 So가 오면 '문제 → 그래서 이렇게 하라'는 뼈대다. 이 두 연결어만 찾아도 글쓴이의 조언이 어디 있는지 보인다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 spot · time     3-3 ⓑ → ⓒ → ⓓ → ⓐ");
+Hs("STEP 3   주제문 만들기   ·   3-1 spot · time     3-3 (b) → (c) → (d) → (a)");
 B("3-1  재료 찾기 — (2) 문장 5에서 spot에 ○: '알맞은 자리'다. snow는 조건일 뿐 주제문의 자리가 아니다. (3) 문장 5에서 time에 ○: '알맞은 때'다. month는 본문에 없는 말이다.");
 B("3-2  뼈대 채우기 — (1) the Firefall  (2) spot  (3) time. 넣으면 You need the right spot and the right time to enjoy the Firefall.가 된다.");
 B("3-3  정답 순서 — ⓑ You need → ⓒ the right spot → ⓓ and the right time → ⓐ to enjoy the Firefall.");
@@ -793,9 +793,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 T · 3 F · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T — 문장 1.   2 T — 문장 2.   3 F — 문장 3: 7월이 아니라 2월이다.   4 F — 문장 4: 몇 시간(hours)이 아니라 몇 분(minutes)이다.   5 T — 문장 7.   6 F — 문장 8: 눈을 얼리는(freeze) 것이 아니라 녹일(melt) 만큼 따뜻해야 한다.   7 T — 문장 9.   8 F — 문장 12: 예약 없이는 들어갈 수 없다.  거짓 문장은 모두 한 요소(July, hours, cold, without)만 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓒ → ⓓ → ⓐ");
+Hs("R2   사건 순서   ·   (b) → (c) → (d) → (a)");
 B("ⓑ 공원 입장 예약을 한다(문장 12) → ⓒ 눈·기온·하늘을 확인한다(문장 7–9) → ⓓ 해 지기 전에 알맞은 자리를 잡는다(문장 5·11) → ⓐ 몇 분간 주황빛을 본다(문장 4). 예약은 본문 맨 마지막에 적혀 있지만 실제로는 가장 먼저 해야 하는 일이다 — 서술 순서와 사건 순서가 다른 지점이다.", true);
-Hs("R3   영영풀이   ·   1 ⓑ · 2 ⓓ · 3 ⓒ · 4 ⓕ · 5 ⓔ · 6 ⓐ");
+Hs("R3   영영풀이   ·   1 (b) · 2 (d) · 3 (c) · 4 (f) · 5 (e) · 6 (a)");
 B("glow = 부드럽고 따뜻한 빛 · melt = 얼음이나 눈이 물로 바뀌다 · necessary = 꼭 필요한 · spot = (작은) 자리·장소 · reservation = 자리를 미리 잡아 두는 약속 · sunset = 해가 지는 때.", true);
 Hs("R4   어법 기초   ·   (1) must be  (2) are  (3) has  (4) to be");
 B("(1) 조동사 must 뒤에는 동사원형 be.   (2) 주어 skies가 복수이므로 are.   (3) 주어 The Sun은 3인칭 단수이므로 has.   (4) need 뒤에는 to+동사원형 — to be. 2면 구문 카드에서 배운 there must be가 여기서 다시 나온다.", true);

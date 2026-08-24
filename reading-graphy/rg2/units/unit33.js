@@ -420,7 +420,7 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R2 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 T · 5 F · 6 F · 7 T · 8 F");
 B("1 T \u2014 문장 1.   2 F \u2014 문장 2: clear가 아니라 not clear다.   3 T \u2014 문장 3.   4 T \u2014 문장 7.   5 F \u2014 문장 7: never가 아니라 sometimes다.   6 F \u2014 문장 9: helping이 아니라 harming이다.   7 T \u2014 문장 10.   8 F \u2014 문장 12: fight가 아니라 help each other다.  거짓 넷은 모두 한 요소(clear, never, helping, fight)만 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   \u24D1 \u2192 \u24D2 \u2192 \u24D0 \u2192 \u24D3");
+Hs("R2   사건 순서   ·   (b) \u2192 (c) \u2192 (a) \u2192 (d)");
 B("\u24D1 돌고래가 특별한 잠수를 한다(문장 3) \u2192 \u24D2 어부들이 그물을 던져 더 많이 잡는다(문장 4, 6) \u2192 \u24D0 과학자들이 이 우정을 관찰해 흥미로운 것을 발견한다(문장 5) \u2192 \u24D3 오염된 물이 돌고래의 삶을 힘들게 한다(문장 8\u20139). 본문은 관찰(문장 5)을 협력의 결과(문장 6)보다 먼저 서술하지만, 실제 사건은 협력이 먼저다 \u2014 서술 순서와 사건 순서를 구분하자.", true);
 K.push(sp(70));
 K.push(T([W], [new TableRow({ children: [cel([

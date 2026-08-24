@@ -461,7 +461,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓑ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓑ이 맨 앞 — 장소가 먼저!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (b)이 맨 앞 — 장소가 먼저!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -770,7 +770,7 @@ B("2-1   문장 1 When — 사람들이 그렇게 물을 '때'.   문장 2 But �
 B("2-2   [B] 유래(문장 3–4: 12세기 무어인이 동굴을 넓혔다), [E] 마무리(문장 10–11: 포도밭은 사라졌지만 여전히 유명하다). 보기의 '요리법'은 이 글에 없는 역할이다. [A] 소개 → [B] 유래 → [C] 이름 ① → [D] 이름 ② → [E] 마무리.");
 B("2-3   정답 ①. 마을의 집·역사·이름을 사실 그대로 알려 주는 설명문이다. ②는 가격·명령문이 없어 광고가 아니고, ③은 I·Today가 없으며, ④는 Dear·안부가 없고, ⑤는 지어낸 인물과 사건이 없다.");
 B("[학습 포인트]   문장 2의 But이 이 글의 문을 연다. 관용 표현을 뒤집는 But 뒤에 진짜 소재가 나오는 것은 설명문이 즐겨 쓰는 도입 방식이다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 Spanish · houses     3-3 ⓑ → ⓐ → ⓒ → ⓓ");
+Hs("STEP 3   주제문 만들기   ·   3-1 Spanish · houses     3-3 (b) → (a) → (c) → (d)");
 B("3-1  재료 찾기 — (2) 문장 2에서 Spanish에 ○: 마을이 있는 나라다. Latin은 문장 6의 낱말 유래일 뿐이다. (3) 문장 2에서 houses에 ○: 사람들이 사는 건물이다. caves는 그 집이 만들어진 재료 자리다.");
 B("3-2  뼈대 채우기 — (1) inside rocks  (2) Spanish  (3) houses.  넣으면 In a Spanish town, people really live in houses built inside rocks.가 완성된다.");
 B("3-3  정답 순서 — ⓑ in a Spanish town, → ⓐ people really live → ⓒ in houses → ⓓ built inside rocks.");
@@ -789,9 +789,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 T · 3 F · 4 T · 5 F · 6 T · 7 F · 8 F");
 B("1 T — 문장 2.   2 T — 문장 3.   3 F — 문장 4: 새 집을 지은 게 아니라 동굴을 넓혔다.   4 T — 문장 6.   5 F — 문장 7: 세 번이 아니라 일곱 번(seven times)이다.   6 T — 문장 8.   7 F — 문장 10: 포도밭 대부분이 곤충에 파괴되었다.   8 F — 문장 11: 포도주가 아니라 올리브와 아몬드로 유명하다.  거짓 문장은 모두 딱 한 요소(brand-new, three, all, only wine)를 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓐ → ⓓ → ⓒ");
+Hs("R2   사건 순서   ·   (b) → (a) → (d) → (c)");
 B("ⓑ 12세기 무어인이 스페인을 침입해 마을을 세운다(문장 3) → ⓐ 15세기 가톨릭 세력이 일곱 번 되찾으려 한다(문장 7) → ⓓ 정착민들이 포도밭을 들여온다(문장 9) → ⓒ 1800년대에 곤충이 포도밭을 대부분 망가뜨린다(문장 10). 세기를 나타내는 표현이 순서의 열쇠다.", true);
-Hs("R3   영영풀이   ·   1 ⓒ · 2 ⓔ · 3 ⓐ · 4 ⓕ · 5 ⓑ · 6 ⓓ");
+Hs("R3   영영풀이   ·   1 (c) · 2 (e) · 3 (a) · 4 (f) · 5 (b) · 6 (d)");
 B("invade = 군대를 이끌고 어떤 나라에 들어가다 · cave = 바위나 땅속의 큰 구멍 · explain = 무엇을 이해하기 쉽게 만들다 · ruler = 나라를 이끄는 사람 · settler = 새로운 곳으로 옮겨 사는 사람 · destroy = 무엇을 완전히 부수다.", true);
 Hs("R4   어법 기초   ·   (1) live  (2) were  (3) to stay  (4) explains");
 B("(1) 주어 people은 복수 — live.   (2) 주어 houses가 복수인 수동태 — were made.   (3) '~하기 위해'는 to+동사원형 — to stay.   (4) 주어 name은 3인칭 단수 — explains.", true);

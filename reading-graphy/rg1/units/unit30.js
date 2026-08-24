@@ -421,7 +421,7 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R2 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 T · 5 F · 6 T · 7 F · 8 F");
 B("1 T — 문장 1.   2 F — 문장 4: 상체(upper)가 아니라 하체(lower body)에 부상이 많다.   3 T — 문장 5.   4 T — 문장 6.   5 F — 문장 7: 가장 약한(weakest)이 아니라 가장 튼튼한(strongest) 데님이다.   6 T — 문장 9.   7 F — 문장 11: 일반 바지만큼 편안하다.   8 F — 문장 12: 한 번이 아니라 여러 번 쓸 수 있다.  거짓 문장은 모두 딱 한 요소(upper, weakest, heavier, only one time)를 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓓ → ⓐ → ⓒ");
+Hs("R2   사건 순서   ·   (b) → (d) → (a) → (c)");
 B("ⓑ 라이더가 에어백 청바지를 입는다 → ⓓ 오토바이에서 떨어진다(문장 9) → ⓐ 에어백이 곧바로 부풀어 오른다(문장 9) → ⓒ 나중에 같은 청바지를 다시 쓴다(문장 12). '여러 번 쓸 수 있다'는 마지막 문장이 곧 마지막 단계라는 것을 잡아내는 것이 핵심이다.", true);
 K.push(sp(70));
 K.push(T([W], [new TableRow({ children: [cel([

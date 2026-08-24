@@ -463,7 +463,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓑ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓑ이 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (b)이 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -773,7 +773,7 @@ B("2-1   문장 2 because — 이름이 붙은 '이유'.   문장 5 So — 값�
 B("2-2   [B] 쓰임(문장 3–5: 전국을 달리고 값이 싸서 많이 탄다), [E] 마무리(문장 11–12: 그래도 아주 특별하다). 보기의 '요리법'은 이 글에 없는 역할이다.");
 B("2-3   정답 ①. 치킨 버스라는 대상을 소개하고 사실을 알려 주는 설명문이다. 광고의 신호(사라는 말·가격)도, 일기의 I·날짜도, 편지의 Dear도, 동화의 등장인물도 없다.");
 B("[학습 포인트]   because·So·Then·But 네 개만 표시해도 글의 지도가 그려진다. 특히 마무리 직전의 But은 글쓴이가 진짜 하고 싶은 말의 신호다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 old · special     3-3 ⓑ → ⓓ → ⓐ → ⓒ");
+Hs("STEP 3   주제문 만들기   ·   3-1 old · special     3-3 (b) → (d) → (a) → (c)");
 B("3-1  재료 찾기 — (2) 문장 10에서 old에 ○: 버스의 지금 상태다. new는 반대말이다. (3) 문장 11에서 special에 ○: 글쓴이의 평가다. cheap은 문장 4의 사실일 뿐 평가가 아니다.");
 B("3-2  뼈대 채우기 — (1) Chicken buses  (2) old  (3) special.  넣으면 Chicken buses are old, but they are still very special to Guatemala.가 완성된다.");
 B("3-3  정답 순서 — ⓑ Chicken buses → ⓓ are old, → ⓐ but they are still very special → ⓒ to Guatemala.");
@@ -792,9 +792,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T — 문장 3.   2 F — 문장 4: 비싼 게 아니라 아주 싸다(cheap).   3 T — 문장 6.   4 F — 문장 7: 높은 값이 아니라 낮은 값(low price)이다.   5 T — 문장 8.   6 F — 문장 9: 장식이 없는 게 아니라 재미있는 장식이 있다.   7 T — 문장 10.   8 F — 문장 11: 여전히 아주 특별하다.  거짓 문장은 모두 한 요소(a lot of money, high, no, no longer)만 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓒ → ⓐ → ⓓ → ⓑ");
+Hs("R2   사건 순서   ·   (c) → (a) → (d) → (b)");
 B("ⓒ 미국의 스쿨버스였다(문장 6) → ⓐ 낮은 값에 산다(문장 7) → ⓓ 밝은 색으로 칠한다(문장 8) → ⓑ 사람들을 태우고 달린다(문장 3–5). 본문은 쓰임(문장 3–5)을 유래(문장 6–8)보다 먼저 말한다 — 서술 순서와 사건 순서가 다른 지점이다.", true);
-Hs("R3   영영풀이   ·   1 ⓒ · 2 ⓐ · 3 ⓔ · 4 ⓑ · 5 ⓕ · 6 ⓓ");
+Hs("R3   영영풀이   ·   1 (c) · 2 (a) · 3 (e) · 4 (b) · 5 (f) · 6 (d)");
 B("colorful = 여러 색으로 가득한 · carry = 다른 곳으로 옮기다 · cheap = 돈이 많이 들지 않는 · price = 무언가에 내는 돈 · bright = 색이 밝고 진한 · fix = 고장 난 것을 다시 쓰게 만들다.", true);
 Hs("R4   어법 기초   ·   (1) are  (2) Riding  (3) them  (4) paint");
 B("(1) there 뒤의 명사가 복수(buses)라 are.   (2) 주어 자리에는 동명사 Riding — 2면 구문에서 배운 그 문장이다.   (3) 동사 use 뒤 목적어 자리에는 목적격 them.   (4) 주어 they는 복수라 paint(-s 없음).", true);

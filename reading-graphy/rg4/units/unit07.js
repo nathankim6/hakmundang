@@ -460,7 +460,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓑ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓑ이 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (b)이 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -770,7 +770,7 @@ B("2-1   문장 2 But — 젊을 때와 달라진다는 '반전'.   문장 9 As 
 B("2-2   [B] 예외(문장 4: 감정 조절만은 예외다), [E] 마무리(문장 12: 나이 듦을 긍정적으로 보자). 보기의 '반박'은 이 글에 없는 역할이다. [A] 도입 → [B] 예외 → [C] 연구 → [D] 이유 → [E] 마무리 — 설명문의 전형적인 흐름이다.");
 B("2-3   정답 ①. 심리학자의 연구 결과를 근거로 사실을 알려 주는 설명문이다. ②은 가격·명령문이 없어 광고가 아니고, ③는 I·Today가 없어 일기가 아니며, ④은 Dear·안부가 없고, ⑤는 등장인물과 사건이 없다.");
 B("[학습 포인트]   But·However가 나오면 그 뒤가 글쓴이가 진짜 하고 싶은 말이다. 문장 4의 However가 이 글 전체의 방향을 바꾼다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 controlling · positive     3-3 ⓑ → ⓐ → ⓒ → ⓓ");
+Hs("STEP 3   주제문 만들기   ·   3-1 controlling · positive     3-3 (b) → (a) → (c) → (d)");
 B("3-1  재료 찾기 — (2) 문장 4에서 controlling에 ○: better at 뒤에는 동명사가 온다. forgetting은 문장 3의 '나빠지는 것'이라 반대다. (3) 문장 11에서 positive에 ○: 나이 든 사람들이 집중하는 방향이다. negative는 문장 7의 대상일 뿐이다.");
 B("3-2  뼈대 채우기 — (1) older people  (2) controlling  (3) positive.  넣으면 Older people are better at controlling their emotions and focus on positive things.가 완성된다.");
 B("3-3  정답 순서 — ⓑ older people → ⓐ are better at controlling → ⓒ their emotions → ⓓ and focus on positive things.");
@@ -789,9 +789,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 T · 3 F · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T — 문장 1.   2 T — 문장 4.   3 F — 문장 5: 50년이 아니라 20년(the past 20 years)이다.   4 F — 문장 6: 더 많은 게 아니라 더 적은(fewer) 관계다.   5 T — 문장 7.   6 F — 문장 9: 생각 전에 행동하는 게 아니라 행동 전에 더 생각한다.   7 T — 문장 11.   8 F — 문장 12: 두렵게 하는 게 아니라 긍정적인 태도를 갖게 한다(inspire).  거짓 문장은 모두 딱 한 요소(50, more, act before we think, afraid)를 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓐ → ⓒ → ⓓ");
+Hs("R2   사건 순서   ·   (b) → (a) → (c) → (d)");
 B("ⓑ 나이가 든다(문장 9) → ⓐ 뇌가 행동 전에 더 생각하게 만든다(문장 9) → ⓒ 침착해지고 감정을 더 잘 조절한다(문장 4·10) → ⓓ 나이 듦에 더 긍정적인 태도를 갖는다(문장 12). 본문은 결과(문장 4)를 먼저 말하고 원인(문장 9)을 나중에 설명한다 — 서술 순서와 실제 순서가 다른 지점이다.", true);
-Hs("R3   영영풀이   ·   1 ⓒ · 2 ⓕ · 3 ⓔ · 4 ⓐ · 5 ⓑ · 6 ⓓ");
+Hs("R3   영영풀이   ·   1 (c) · 2 (f) · 3 (e) · 4 (a) · 5 (b) · 6 (d)");
 B("improve = 전보다 더 나아지다 · exception = 다른 것들과 같지 않은 것 · emotion = 기쁨이나 분노 같은 강한 감정 · upset = 속상하거나 걱정스러운 · calm = 조용하고 편안한 · attitude = 무엇에 대해 생각하거나 느끼는 방식.", true);
 Hs("R4   어법 기초   ·   (1) improve  (2) controlling  (3) get  (4) helps");
 B("(1) 주어 our skills는 복수 — improve.   (2) 전치사 at 뒤에는 동명사 — controlling. 2면 구문 카드의 그 원칙이다.   (3) 주어 They는 복수 — get.   (4) 주어 This는 3인칭 단수 — helps.", true);

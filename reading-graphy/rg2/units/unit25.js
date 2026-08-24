@@ -467,7 +467,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓑ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓑ가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (b)가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -777,7 +777,7 @@ B("2-1   문장 4 So — 앞의 뜻풀이에서 나온 '결과'.   문장 5 But 
 B("2-2   [B] 이름 뜻(문장 3–5: 이름의 뜻을 풀고 강이 없다는 모순을 던진다), [E] 마무리(문장 10–12: 그 뒤의 역사와 정리). 보기의 '요리법'은 이 글에 없는 역할이다. [A] 소개 → [B] 이름 뜻 → [C] 의문 → [D] 유래 → [E] 마무리 — 유래를 설명하는 글의 전형적인 흐름이다.");
 B("2-3   정답 ①. 도시 이름이 어떻게 생겼는지 사실을 알려 주는 설명문이다. ② 광고의 신호(사라는 말·가격)가 없고, ③ 일기의 I·오늘도, ④ 편지의 Dear도, ⑤ 동화의 상상 속 인물도 없다.");
 B("[학습 포인트]   연결어만 표시해도 글의 지도가 그려진다. So(결과), But(반전), Since(이유·시점). 특히 But 뒤에는 글쓴이가 진짜 하고 싶은 말이 온다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 mistake · stayed     3-3 ⓑ → ⓓ → ⓐ → ⓒ");
+Hs("STEP 3   주제문 만들기   ·   3-1 mistake · stayed     3-3 (b) → (d) → (a) → (c)");
 B("3-1  재료 찾기 — (2) 문장 8에서 mistake에 ○: 이름이 생긴 계기다. river는 잘못 본 대상일 뿐 계기가 아니다. (3) 문장 11에서 stayed에 ○: 이름이 그대로였다는 결과다. changed는 본문과 반대다.");
 B("3-2  뼈대 채우기 — (1) name  (2) mistake  (3) stayed.  넣으면 Rio de Janeiro got its name by mistake, but the name stayed the same.가 완성된다.");
 B("3-3  정답 순서 — ⓑ Rio de Janeiro got → ⓓ its name by mistake, → ⓐ but the name → ⓒ stayed the same.");
@@ -796,9 +796,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 T · 5 F · 6 T · 7 F · 8 F");
 B("1 T — 문장 1.   2 F — 문장 3: Rio는 January가 아니라 river다.   3 T — 문장 5.   4 T — 문장 7.   5 F — 문장 8: 호수(lake)가 아니라 강(river)이라고 착각했다.   6 T — 문장 9.   7 F — 문장 10: 스페인이 아니라 포르투갈의 지배를 받았다.   8 F — 문장 11: 독립한 뒤에도 이름은 그대로였다.  거짓 문장은 모두 딱 한 요소(January, lake, Spain, changed)를 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓓ → ⓒ → ⓐ");
+Hs("R2   사건 순서   ·   (b) → (d) → (c) → (a)");
 B("ⓑ 포르투갈 사람들이 넓은 만에 도착한다(문장 7) → ⓓ 그곳을 'Rio de Janeiro'라고 부른다(문장 9) → ⓒ 포르투갈이 300년 넘게 브라질을 지배한다(문장 10) → ⓐ 브라질이 독립하지만 이름은 그대로다(문장 11). 이 글은 이름의 뜻(문장 3–5)을 먼저 말하고 유래를 나중에 밝히지만, 사건 자체는 문장 7–11의 순서 그대로다.", true);
-Hs("R3   영영풀이   ·   1 ⓒ · 2 ⓐ · 3 ⓓ · 4 ⓕ · 5 ⓔ · 6 ⓑ");
+Hs("R3   영영풀이   ·   1 (c) · 2 (a) · 3 (d) · 4 (f) · 5 (e) · 6 (b)");
 B("famous = 많은 사람에게 알려진 · arrive = 어떤 곳에 닿다 · bay = 육지가 감싼 바다의 한 부분(만) · mistake = 그러려고 한 것이 아닌데 잘못한 일 · rule = 한 나라를 다스리다 · independent = 남의 지배에서 벗어난.", true);
 Hs("R4   어법 기초   ·   (1) is  (2) isn’t  (3) was  (4) was ruled");
 B("(1) 주어 Rio de Janeiro는 하나(단수) — is.   (2) there is/are는 뒤의 명사가 주어다. a river는 단수 — isn’t. 2면 구문에서 배운 그 문장이다.   (3) thought(과거)와 시제를 맞춘다 — was.   (4) 지배를 '받은' 쪽이 주어이므로 수동태 — was ruled.", true);

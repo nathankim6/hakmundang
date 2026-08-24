@@ -466,7 +466,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓑ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓑ가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (b)가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -777,7 +777,7 @@ B("2-1   문장 8 or — 여우가 택할 수 있는 두 가지 중 하나라는
 B("2-2   [B] 회피와 공격(문장 4–6: 거북과 상어), [E] 마무리(문장 11–13: 방식이 관계를 좌우한다). 보기의 '실험 결과'는 이 글에 없는 역할이다. [A] 소개 → [B] 회피와 공격 → [C] 양보와 절충 → [D] 협력 → [E] 마무리 — 유형을 차례로 나열하는 설명문의 전형이다.");
 B("2-3   정답 ①. 다섯 유형을 하나씩 나누어 설명하고 마지막에 의미를 정리하는 설명문이다. ② I·오늘 같은 일기의 신호가 없고, ③ 가격·명령문이 없어 광고도 아니며, ④ 받는 사람도 ⑤ 지어낸 이야기도 없다.");
 B("[학습 포인트]   유형을 나열하는 글은 이름(The Turtle, The Shark…)이 곧 소제목이다. 이름 옆에 '목표 / 관계' 두 글자만 적어 두면 다섯 유형이 한눈에 정리된다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 unique · relationships     3-3 ⓑ → ⓓ → ⓐ → ⓒ");
+Hs("STEP 3   주제문 만들기   ·   3-1 unique · relationships     3-3 (b) → (d) → (a) → (c)");
 B("3-1  재료 찾기 — (2) 문장 11에서 unique에 ○: 사람마다 방식이 다르다는 말이다. same은 정반대다. (3) 문장 11에서 relationships에 ○: 이 방식들이 영향을 주는 대상이다. problems는 문장 1의 말일 뿐이다.");
 B("3-2  뼈대 채우기 — (1) Everyone  (2) unique  (3) relationships.  넣으면 Everyone has their unique ways of solving conflicts, and these styles can influence relationships.가 완성된다.");
 B("3-3  정답 순서 — ⓑ Everyone has their unique ways → ⓓ of solving conflicts, → ⓐ and these styles → ⓒ can influence relationships.");
@@ -796,9 +796,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T — 문장 1.   2 F — 문장 3: 네 가지가 아니라 다섯 가지(five) 방식이다.   3 T — 문장 5.   4 F — 문장 6: 신경 쓰는 게 아니라 신경 쓰지 않는다(don’t care).   5 T — 문장 7.   6 F — 문장 9: 혼자가 아니라 함께(together) 협력한다.   7 T — 문장 10.   8 F — 문장 13: 중요하지 않은 게 아니라 중요하다(important).  거짓 문장은 모두 딱 한 요소(four, care, alone, not)만 비튼 것이다.", true);
-Hs("R2   전개 순서   ·   ⓑ → ⓐ → ⓒ → ⓓ");
+Hs("R2   전개 순서   ·   (b) → (a) → (c) → (d)");
 B("ⓑ 존슨이 사람들이 문제를 다루는 방식을 연구한다(문장 1) → ⓐ 다섯 가지 방식으로 분류한다(문장 3) → ⓒ 다섯 동물 유형을 하나씩 설명한다(문장 4–10) → ⓓ 각자의 방식을 이해하는 것이 중요하다고 마무리한다(문장 13). 설명문은 사건이 아니라 '설명이 쌓이는 순서'를 따라간다.", true);
-Hs("R3   영영풀이   ·   1 ⓓ · 2 ⓕ · 3 ⓐ · 4 ⓒ · 5 ⓑ · 6 ⓔ");
+Hs("R3   영영풀이   ·   1 (d) · 2 (f) · 3 (a) · 4 (c) · 5 (b) · 6 (e)");
 B("conflict = 사람들 사이의 강한 의견 충돌(갈등) · goal = 하고 싶거나 얻고 싶은 것(목표) · sacrifice = 중요한 것을 포기하다(희생하다) · persuade = 하도록 동의하게 만들다(설득하다) · solution = 문제를 푸는 방법(해결책) · influence = 일이 되어 가는 모습을 바꾸다(영향을 주다).", true);
 Hs("R4   어법 기초   ·   (1) run  (2) to win  (3) has  (4) Understanding");
 B("(1) 주어 Turtles는 복수 — run.   (2) want 뒤에는 to부정사 — to win.   (3) Everyone은 -one으로 끝나는 단수 취급 — has.   (4) 주어 자리에는 동명사 — Understanding. 2면 구문 카드에서 배운 그 문장이다.", true);

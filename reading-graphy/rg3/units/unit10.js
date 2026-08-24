@@ -464,7 +464,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓒ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓒ가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (c)가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -773,7 +773,7 @@ B("2-1   문장 5 because of — 움직임의 '이유'가 해다.   문장 6 whe
 B("2-2   [B] 발견(문장 4–5: 움직인다는 사실과 그 원인), [E] 마무리(문장 10–11: 아직 답이 없는 수수께끼). 보기의 '사용법'은 이 글에 없는 역할이다. 소개 → 발견 → 관찰 → 이상한 점 → 마무리의 흐름이다.");
 B("2-3   정답 ①. 과학자들이 밝혀낸 사실과 아직 모르는 점을 알려 주는 설명문이다. 일기의 I·날짜도, 광고의 가격·명령문도, 동화의 등장인물도 없다.");
 B("[학습 포인트]   설명문에서 마지막 But 뒤 문장은 글쓴이가 가장 하고 싶은 말이다. 문장 8의 But이 이 글의 진짜 주제로 가는 문이다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 together · mystery     3-3 ⓒ → ⓐ → ⓓ → ⓑ");
+Hs("STEP 3   주제문 만들기   ·   3-1 together · mystery     3-3 (c) → (a) → (d) → (b)");
 B("3-1  재료 찾기 — (2) 문장 9에서 together에 ○: 함께 움직였다는 것이 핵심이다. alone은 본문과 반대다. (3) 문장 11에서 mystery에 ○: 글쓴이의 평가다. answer는 아직 찾지 못했다.");
 B("3-2  뼈대 채우기 — (1) moss balls  (2) together  (3) mystery. 넣으면 The moss balls move together across the ice, and it is still a mystery.가 된다.");
 B("3-3  정답 순서 — ⓒ The moss balls → ⓐ move together → ⓓ across the ice, → ⓑ and it is still a mystery.");
@@ -792,9 +792,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 T · 3 F · 4 T · 5 F · 6 T · 7 F · 8 F");
 B("1 T — 문장 2.   2 T — 문장 3.   3 F — 문장 5: 바람(wind)이 아니라 해(sun) 때문이다.   4 T — 문장 6.   5 F — 문장 7: 6일(days)이 아니라 6년(years) 이상이다.   6 T — 문장 9.   7 F — 문장 10: 아직 분명한 답을 찾지 못했다.   8 F — 문장 4: 가만히 있는 것이 아니라 얼음 위를 움직인다는 사실에 놀랐다.  거짓 문장은 모두 한 요소(wind, days, already, stay still)만 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓓ → ⓐ → ⓒ");
+Hs("R2   사건 순서   ·   (b) → (d) → (a) → (c)");
 B("ⓑ 이끼 공이 얼음 위를 움직인다는 사실을 알게 된다(문장 4) → ⓓ 해 때문에 움직인다는 것을 밝혀낸다(문장 5) → ⓐ 6년 이상 산다는 것도 알아낸다(문장 7) → ⓒ 무리처럼 함께 움직인다는 것을 알아차린다(문장 9). 연구가 한 단계씩 깊어지는 순서 그대로다.", true);
-Hs("R3   영영풀이   ·   1 ⓒ · 2 ⓔ · 3 ⓐ · 4 ⓕ · 5 ⓑ · 6 ⓓ");
+Hs("R3   영영풀이   ·   1 (c) · 2 (e) · 3 (a) · 4 (f) · 5 (b) · 6 (d)");
 B("glacier = 천천히 움직이는 아주 큰 얼음 지대 · moss = 젖은 바위에 자라는 작은 초록 식물 · survive = 살아남다 · direction = 무언가가 향하는 방향 · herd = 함께 다니는 동물 무리 · researcher = 새로운 사실을 밝히려 연구하는 사람.", true);
 Hs("R4   어법 기초   ·   (1) are  (2) be found  (3) melts  (4) trying");
 B("(1) 주어 They는 복수 — are.   (2) 조동사 can 뒤에는 동사원형 — be found. 2면 구문 카드의 그 문장이다.   (3) 주어 the sun은 3인칭 단수 — melts.   (4) be+~ing 진행형은 한 덩어리의 동사 — trying.", true);

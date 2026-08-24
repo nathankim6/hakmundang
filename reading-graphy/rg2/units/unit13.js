@@ -462,7 +462,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓒ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓒ가 맨 앞 — 주인공 Puffins가 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (c)가 맨 앞 — 주인공 Puffins가 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -773,7 +773,7 @@ B("2-1   문장 2 so — 친근하다는 앞 내용의 '결과'로 사람을 무
 B("2-2   [B] 위기(문장 4–5: 멸종 위기와 온난화), [E] 결과(문장 13: 목록 제외). 보기의 '유래'는 이 글에 없는 역할이다. [A] 소개 → [B] 위기 → [C] 노력 → [D] 회복 → [E] 결과 — 위기 극복형 설명문의 전형적인 흐름이다.");
 B("2-3   정답 ①. 퍼핀이라는 대상을 소개하고 사실을 알려 주는 설명문이다. There are(문장 10) 같은 표현과 사실 나열이 신호다. ② 광고의 신호(사라는 말·가격)가 없고, ③ 일기·④ 편지·⑤ 동화의 형식도 아니다.");
 B("[학습 포인트]   문장 4의 But이 이 글의 축이다. 소개(사랑받는 새) 뒤의 But은 글이 진짜 하려는 이야기(위기와 회복)의 신호다. once(한때)와 Now(지금)의 대비도 함께 표시해 두자.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 endangered · more     3-3 ⓒ → ⓐ → ⓑ → ⓓ");
+Hs("STEP 3   주제문 만들기   ·   3-1 endangered · more     3-3 (c) → (a) → (b) → (d)");
 B("3-1  재료 찾기 — (2) 문장 4에서 endangered에 ○: 한때의 위기다. friendly는 문장 2의 성격일 뿐 위기가 아니다. (3) 문장 10에서 more에 ○: 지금 달라진 수다. fewer는 문장 11의 관광객 이야기다. 주제문의 재료는 언제나 본문 안에 있다.");
 B("3-2  뼈대 채우기 — (1) Puffins  (2) endangered  (3) more.  넣으면 Puffins were once an endangered species, but now there are more puffins than before.가 완성된다.");
 B("3-3  정답 순서 — ⓒ Puffins were once → ⓐ an endangered species, → ⓑ but now there are → ⓓ more puffins than before.");

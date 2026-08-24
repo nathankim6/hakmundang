@@ -461,7 +461,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓒ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓒ가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (c)가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -772,7 +772,7 @@ B("2-1   문장 5 Plus — 문제 하나를 더 '덧붙임'.   문장 7 So — �
 B("2-2   [B] 문제(문장 3–5: 아동 노동과 벌목), [E] 평가(문장 11–13: 지구와 사람에게 더 좋다). 보기의 '요리법'은 이 글에 없는 역할이다. 소개 → 문제 → 등장 → 특징 → 평가의 흐름이다.");
 B("2-3   정답 ①. 새로운 초콜릿이라는 대상을 소개하고 사실을 알려 주는 설명문이다(문장 2·10). ② 가격이나 사라는 말이 없어 광고가 아니고, ③ I나 날짜, ④ Dear, ⑤ 옛이야기의 신호도 없다.");
 B("[학습 포인트]   연결어만 표시해도 글의 지도가 그려진다. Plus(덧붙임), So(결과), However(반전), if(조건). 특히 마지막 문장의 But은 글쓴이가 진짜 하고 싶은 말의 신호다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 cacao beans · better     3-3 ⓒ → ⓐ → ⓑ → ⓓ");
+Hs("STEP 3   주제문 만들기   ·   3-1 cacao beans · better     3-3 (c) → (a) → (b) → (d)");
 B("3-1  재료 찾기 — (2) 문장 9에서 cacao beans에 ○: 새 초콜릿이 쓰지 '않는' 재료다. barley는 대신 쓰는 재료라 자리가 다르다. (3) 문장 11에서 better에 ○: 글쓴이의 평가다.");
 B("3-2  뼈대 채우기 — (1) This new chocolate  (2) cacao beans  (3) better.  넣으면 This new chocolate without cacao beans is better for the Earth and people.이 된다.");
 B("3-3  정답 순서 — ⓒ This new chocolate → ⓐ without cacao beans → ⓑ is better → ⓓ for the Earth and people.");
@@ -791,9 +791,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T — 문장 2.   2 F — 문장 4: 어른(adults)이 아니라 아이들(children)이다.   3 T — 문장 5.   4 F — 문장 6: 해결한(solved) 것이 아니라 약속만(promised) 했다.   5 T — 문장 7.   6 F — 문장 9: 조금도 쓰지 않는다.   7 T — 문장 10.   8 F — 문장 12: 싼(cheap) 것이 아니라 비쌀(expensive) 수 있다.  거짓 문장은 모두 한 요소만 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓒ → ⓐ → ⓓ");
+Hs("R2   사건 순서   ·   (b) → (c) → (a) → (d)");
 B("ⓑ 카카오 농장의 문제가 생긴다(문장 4–5) → ⓒ 큰 회사들이 해결을 약속한다(문장 6) → ⓐ 영국의 한 회사가 새 초콜릿을 만든다(문장 7) → ⓓ 사람들이 사면 산업이 밝아진다(문장 13). 문제 → 약속 → 대안 → 기대의 순서다.", true);
-Hs("R3   영영풀이   ·   1 ⓔ · 2 ⓒ · 3 ⓐ · 4 ⓕ · 5 ⓑ · 6 ⓓ");
+Hs("R3   영영풀이   ·   1 (e) · 2 (c) · 3 (a) · 4 (f) · 5 (b) · 6 (d)");
 B("hidden = 쉽게 보이지 않는 · promise = 나중에 하겠다고 말하다 · solve = 문제의 답을 찾다 · regular = 보통의, 특별하지 않은 · expensive = 돈이 많이 드는 · industry = 한 가지를 만드는 회사 전체(산업).", true);
 Hs("R4   어법 기초   ·   (1) eating  (2) is made  (3) are  (4) to make");
 B("(1) love 뒤에는 동명사 eating이 올 수 있다.   (2) 간식은 만들어지는 쪽이므로 수동태 is made — 2면 구문에서 배운 그 문장이다.   (3) there 뒤 진짜 주어는 problems(복수)이므로 are.   (4) '~하기 위해'는 to+동사원형 to make.", true);

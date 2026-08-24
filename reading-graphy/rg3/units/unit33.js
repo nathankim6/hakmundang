@@ -422,7 +422,7 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R2 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T — 문장 2.   2 F — 문장 3: 원했던(wanted) 것이 아니라 원치 않았다(didn’t want).   3 T — 문장 5.   4 F — 문장 7: 더 비싼(more expensive) 것이 아니라 더 쌌다(cheaper).   5 T — 문장 8.   6 F — 문장 10: 극장 밖(outside)이 아니라 로비(in the lobby)에서 팔았다.   7 T — 문장 11.   8 F — 문장 1: 언제나(always) 허용된 것이 아니라 늘 허용되지는 않았다.  거짓 문장은 모두 딱 한 요소(wanted, more expensive, outside, always)를 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓒ → ⓓ → ⓐ");
+Hs("R2   사건 순서   ·   (b) → (c) → (d) → (a)");
 B("ⓑ 극장이 상류층만의 고급 장소였다(문장 2) → ⓒ 대공황으로 많은 사람이 일자리를 잃는다(문장 5) → ⓓ 값싼 영화표 덕분에 극장이 인기 장소가 된다(문장 7–8) → ⓐ 주인들이 마침내 로비에서 팝콘을 팔기 시작한다(문장 9–10). 이 글은 시간 순서 그대로 서술되어 있으므로, 문장 번호를 따라가면 순서가 보인다.", true);
 K.push(sp(70));
 K.push(T([W], [new TableRow({ children: [cel([

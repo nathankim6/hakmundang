@@ -463,7 +463,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓒ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓒ가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (c)가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -771,7 +771,7 @@ B("2-1   문장 3 However — 사람 없는 섬이라더니 이상한 것이 나
 B("2-2   [B] 발견(문장 3–4: 지질학자가 이상한 돌을 찾아 실험실로 가져간다), [E] 의미(문장 8–10: 인간의 영향이 지층에 남는다). 보기의 '가격'은 이 글에 없는 역할이다. [A] 섬 소개 → [B] 발견 → [C] 정체 → [D] 형성 → [E] 의미.");
 B("2-3   정답 ①. 한 과학자의 발견과 그 원인·의미를 사실대로 알려 주는 설명문이다. ② 사라는 말·가격이 없고, ③ I·날짜가 없으며, ④ 시의 형식도, ⑤ 초대장의 형식도 아니다.");
 B("[학습 포인트]   However는 글의 방향이 꺾이는 신호다. '사람이 거의 없는 섬'에서 '인간의 흔적'이 나오는 이 반전이 곧 이 글의 핵심이다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 evidence · human     3-3 ⓒ → ⓐ → ⓑ → ⓓ");
+Hs("STEP 3   주제문 만들기   ·   3-1 evidence · human     3-3 (c) → (a) → (b) → (d)");
 B("3-1  재료 찾기 — (2) 문장 9에서 evidence에 ○: 이 돌들은 보물이 아니라 '증거'다. (3) 문장 9에서 human에 ○: 자연의 과정을 바꾸고 있는 것은 인간의 행동이다. 주제문의 재료는 언제나 본문 안에 있다.");
 B("3-2  뼈대 채우기 — (1) rocks  (2) evidence  (3) human.  넣으면 These plastic rocks are evidence of how human actions are changing natural processes.가 완성된다.");
 B("3-3  정답 순서 — ⓒ These plastic rocks → ⓐ are evidence of → ⓑ how human actions → ⓓ are changing natural processes.");
@@ -790,9 +790,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T — 문장 1.   2 F — 문장 2: 많은 사람이 아니라 사람이 거의 없다.   3 T — 문장 3.   4 F — 문장 4: 남겨 둔 게 아니라 몇 개를 실험실로 가져갔다.   5 T — 문장 5.   6 F — 문장 6: 섬에서 멀리가 아니라 섬으로(to) 실어 왔다.   7 T — 문장 7.   8 F — 문장 10: 곧 사라지는 게 아니라 오래 남는 흔적이 된다.  거짓은 모두 딱 한 요소(Many, left, away, disappear)를 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓒ → ⓓ → ⓐ");
+Hs("R2   사건 순서   ·   (b) → (c) → (d) → (a)");
 B("ⓑ 해류가 플라스틱 쓰레기를 섬으로 실어 온다(문장 6) → ⓒ 뜨거운 햇볕에 녹아 해변에 들러붙는다(문장 7) → ⓓ 산토스가 파란 초록빛 돌을 발견한다(문장 3) → ⓐ 몇 개를 실험실로 가져간다(문장 4). 글은 발견(ⓓ)을 먼저 말하고 원인(ⓑ·ⓒ)을 뒤에 설명한다 — 서술 순서와 사건 순서가 다른 지점이 바로 여기다.", true);
-Hs("R3   영영풀이   ·   1 ⓑ · 2 ⓒ · 3 ⓔ · 4 ⓕ · 5 ⓐ · 6 ⓓ");
+Hs("R3   영영풀이   ·   1 (b) · 2 (c) · 3 (e) · 4 (f) · 5 (a) · 6 (d)");
 B("remote = 다른 곳에서 멀리 떨어진 · geologist = 암석과 지구를 연구하는 사람 · curious = 더 알고 싶어 하는 · ordinary = 특별하지 않은, 평범한 · melt = 열에 녹다 · evidence = 무언가가 사실임을 보여 주는 근거.", true);
 Hs("R4   어법 기초   ·   (1) There are  (2) is  (3) them  (4) melted");
 B("(1) There 뒤의 places가 복수이므로 There are.   (2) 주어 The island는 단수 — is.   (3) 전치사 about 뒤에는 목적격 them.   (4) 뒤의 stuck과 시제를 맞춰 과거형 melted. 모두 2면 구문 카드·분석 Tip에서 다룬 원칙이다.", true);

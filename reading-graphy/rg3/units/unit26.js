@@ -418,7 +418,7 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R2 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T — 문장 1.   2 F — 문장 3: 넓은 곳이 아니라 작은 구역(small areas)에만 효과가 있다.   3 T — 문장 4.   4 F — 문장 5: 땅이 아니라 하늘(sky)을 향한 빔이다.   5 T — 문장 6.   6 F — 문장 7: 색(color)이 아니라 경로(path)를 바꾸었다.   7 T — 문장 8.   8 F — 문장 9: 더 비싸게가 아니라 더 싸게(cheaper) 만들기를 바란다.  거짓 문장은 모두 딱 한 요소(large places, ground, color, more expensive)만 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓐ → ⓒ → ⓓ");
+Hs("R2   사건 순서   ·   (b) → (a) → (c) → (d)");
 B("ⓑ 프랭클린이 금속 피뢰침을 발명한다(문장 1) → ⓐ 몇몇 연구가 실험실 안에서만 레이저를 시험한다(문장 6) → ⓒ 과학자들이 밖에서 아이디어를 시도한다(문장 7) → ⓓ 넓은 지역으로 번개를 유도하려 한다(문장 8, 앞으로의 계획). 문장 6의 Before와 문장 7의 Recently, 문장 8의 Next가 시간의 이정표다 — 서술 순서가 아니라 시간 표시어를 따라가야 한다.", true);
 K.push(sp(70));
 K.push(T([W], [new TableRow({ children: [cel([

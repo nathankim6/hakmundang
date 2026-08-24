@@ -465,7 +465,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓑ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓑ가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (b)가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -775,7 +775,7 @@ B("2-1   문장 5 because — 갈색 지방이 중요한 '이유'.   문장 6 As
 B("2-2   [B] 갈색 지방(문장 3–4: 두 번째 지방의 정체와 있는 자리), [E] 기대(문장 10–12: 실험 결과와 앞으로의 바람). 보기의 '운동법'은 이 글에 없는 역할이다. [A] 소개 → [B] 갈색 지방 → [C] 쓰임과 변화 → [D] 실험 → [E] 기대.");
 B("2-3   정답 ①. 몸속 지방의 종류와 원리를 사실대로 알려 주는 설명문이다. ② 광고의 신호(가격·사라는 말)가 없고, ③ 일기의 I·오늘도, ④ 편지의 Dear도, ⑤ 동화의 등장인물도 없다.");
 B("[학습 포인트]   설명문에서 But이 나오면 그 뒤가 글의 무게중심이다. 문장 8의 But 뒤부터 '문제'에서 '해결'로 방향이 바뀐다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 calories · medicine     3-3 ⓑ → ⓓ → ⓒ → ⓐ");
+Hs("STEP 3   주제문 만들기   ·   3-1 calories · medicine     3-3 (b) → (d) → (c) → (a)");
 B("3-1  재료 찾기 — (2) 문장 5에서 calories에 ○: 갈색 지방이 태우는 대상이다. weight는 양이 줄인 것이지 태우는 대상이 아니다. (3) 문장 11에서 medicine에 ○: 과학자들이 만들려는 것이다. experiment는 이미 한 일이다.");
 B("3-2  뼈대 채우기 — (1) brown fat  (2) calories  (3) medicine.  넣으면 Brown fat burns calories, so scientists hope to develop a new medicine.이 완성된다.");
 B("3-3  정답 순서 — ⓑ Brown fat → ⓓ burns calories, → ⓒ so scientists → ⓐ hope to develop a new medicine.");
@@ -794,9 +794,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 T · 5 F · 6 T · 7 F · 8 F");
 B("1 T — 문장 1.   2 F — 문장 2: 흰 지방은 갈색이 아니라 희거나 누르스름하다.   3 T — 문장 4.   4 T — 문장 5.   5 F — 문장 6: 자라면서 갈색 지방은 오히려 줄어든다.   6 T — 문장 9.   7 F — 문장 10: 무거워진 게 아니라 살이 빠졌다.   8 F — 문장 11: 이미 파는 것이 아니라 만들기를 바라는 단계다.  거짓 문장은 모두 딱 한 요소를 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓓ → ⓐ → ⓒ");
+Hs("R2   사건 순서   ·   (b) → (d) → (a) → (c)");
 B("ⓑ 과학자들이 갈색 지방을 늘릴 방법을 찾는다(문장 8) → ⓓ 뚱뚱한 양에게 갈색 지방을 주사한다(문장 9) → ⓐ 양이 살이 빠지고 건강해진다(문장 10) → ⓒ 사람을 위한 약을 만들기를 바란다(문장 11). 실험은 '방법 찾기 → 시도 → 결과 → 다음 계획'의 순서로 흘러간다.", true);
-Hs("R3   영영풀이   ·   1 ⓒ · 2 ⓔ · 3 ⓕ · 4 ⓐ · 5 ⓑ · 6 ⓓ");
+Hs("R3   영영풀이   ·   1 (c) · 2 (e) · 3 (f) · 4 (a) · 5 (b) · 6 (d)");
 B("newborn = 갓 태어난 · burn = 몸속 에너지를 써서 없애다 · gain = 더 많이 얻다 · cause = 어떤 일이 일어나게 하다 · experiment = 새로운 것을 알아내려고 하는 실험 · develop = 시간을 들여 새로 만들어 내다.", true);
 Hs("R4   어법 기초   ·   (1) have  (2) is  (3) keeps  (4) injecting");
 B("(1) 주어 bodies는 복수 — have.   (2) 주어 One type은 단수 — is. 2면 구문에서 배운 is called의 그 문장이다.   (3) and 앞의 burns와 모양을 맞춘다 — keeps.   (4) 전치사 by 뒤의 동사는 -ing — injecting.", true);

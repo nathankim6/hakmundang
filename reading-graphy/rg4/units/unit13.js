@@ -463,7 +463,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓒ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓒ가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (c)가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -772,7 +772,7 @@ B("2-1   문장 2 than — 두 집단을 '비교'한다.   문장 9 also — 앞
 B("2-2   [B] 두 믿음(문장 3–5: 지능은 정해져 있다 vs 자란다), [E] 마무리(문장 11: 믿으면 배운다). 보기의 '광고'는 이 글에 없는 역할이다.");
 B("2-3   정답 ①. 연구의 대상·방법·결과를 사실대로 알려 주는 설명문이다. 날짜와 I가 없어 일기가 아니고, 가격·명령문이 없어 광고도 아니다.");
 B("[학습 포인트]   대조 신호(On the other hand)를 만나면 두 집단을 표로 나눠 적어 보자. 고등 독해의 대조 구조 문항이 여기서 자란다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 pay attention · faster     3-3 ⓒ → ⓓ → ⓐ → ⓑ");
+Hs("STEP 3   주제문 만들기   ·   3-1 pay attention · faster     3-3 (c) → (d) → (a) → (b)");
 B("3-1  재료 찾기 — (2) 문장 2에서 pay attention에 ○: 아이들이 실수에 하는 행동이다. ignore는 반대편(문장 10)의 태도다. (3) faster에 ○: 연구가 밝힌 결과다.");
 B("3-2  뼈대 채우기 — (1) Kids  (2) pay attention  (3) faster. 넣으면 Kids who pay attention to their mistakes actually learn faster than those who don’t.가 완성된다.");
 B("3-3  정답 순서 — ⓒ Kids who pay attention → ⓓ to their mistakes → ⓐ actually learn faster → ⓑ than those who don’t.");
@@ -791,9 +791,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 T · 3 F · 4 T · 5 F · 6 T · 7 F · 8 F");
 B("1 T — 문장 2.   2 T — 문장 3.   3 F — 문장 6: fish가 아니라 animals를 잡는 게임이다.   4 T — 문장 7.   5 F — 문장 8: less가 아니라 more attention이다.   6 T — 문장 9.   7 F — 문장 10: correct가 아니라 ignore했다.   8 F — 문장 11: 바뀔 수 없다는 것은 고정 마인드셋 아이들의 믿음(문장 4)일 뿐이다.  거짓 넷은 모두 한 요소(fish, less, correct, never)만 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓒ → ⓐ → ⓓ");
+Hs("R2   사건 순서   ·   (b) → (c) → (a) → (d)");
 B("ⓑ 아이들의 믿음을 확인해 두 집단으로 나눈다(문장 4–5) → ⓒ 특수 모자를 쓰고 컴퓨터 게임을 한다(문장 6–7) → ⓐ 두 집단의 결과 차이가 드러난다(문장 8–10) → ⓓ 연구의 결론을 정리한다(문장 11). 연구 글은 대상 → 방법 → 결과 → 결론의 차례로 흐른다.", true);
-Hs("R3   영영풀이   ·   1 ⓒ · 2 ⓓ · 3 ⓐ · 4 ⓕ · 5 ⓔ · 6 ⓑ");
+Hs("R3   영영풀이   ·   1 (c) · 2 (d) · 3 (a) · 4 (f) · 5 (e) · 6 (b)");
 B("mistake = 잘못한 일 · attention = 주의 깊게 보고 듣는 것 · intelligence = 배우고 이해하는 능력 · record = 나중을 위해 정보를 남기다 · correct = 다시 바르게 만들다 · ignore = 신경 쓰지 않다.", true);
 Hs("R4   어법 기초   ·   (1) pay  (2) recorded  (3) correcting  (4) can get");
 B("(1) 선행사 kids가 복수이므로 who pay.   (2) 앞의 wore와 시제를 맞춰 recorded.   (3) 전치사 at 뒤의 동사는 -ing — correcting. 2면 구문에서 배운 그 자리다.   (4) 조동사 can 뒤에는 동사원형 — can get.", true);

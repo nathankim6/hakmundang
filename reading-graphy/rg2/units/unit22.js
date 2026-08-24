@@ -465,7 +465,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  \u24D2  )", { size: 19 }), t("  \u2192  (      )  \u2192  (      )  \u2192  (      )", { size: 19 }),
-  t("      ⓒ가 맨 앞 — 주어(Our goal)부터!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (c)가 맨 앞 — 주어(Our goal)부터!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -776,7 +776,7 @@ B("2-1   문장 8 Then — 음식을 모은 다음의 '순서'.   문장 9 But �
 B("2-2   [B] 목표(문장 5–6: 우리가 누구이고 무엇을 이루려는지), [D] 일손(문장 9–10: 자원봉사자가 음식을 배달한다). 보기의 '요리법'은 이 글에 없는 역할이다. [A] 초대 → [B] 목표 → [C] 하는 일 → [D] 일손 → [E] 권유 — 사람을 모으는 글의 전형적인 흐름이다.");
 B("2-3   정답 ①. 단체를 소개하고 함께하자고 권하는 모집 광고다. 명령문(Join us, come and join)과 느낌표가 그 신호다. ② 일기의 날짜와 하루, ③ 요리법, ④ 시의 리듬, ⑤ 편지의 Dear ~ 형식이 없다.");
 B("[학습 포인트]   Then(순서) · But(반전) · So(결과) · also(덧붙임) 네 신호만 표시해도 글의 지도가 그려진다. 특히 마지막 부분의 So는 글쓴이가 진짜 하고 싶은 말로 이어진다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 goal · hungry     3-3 ⓒ → ⓓ → ⓐ → ⓑ");
+Hs("STEP 3   주제문 만들기   ·   3-1 goal · hungry     3-3 (c) → (d) → (a) → (b)");
 B("3-1  재료 찾기 — (2) 문장 6에서 goal에 ○: 이 단체가 이루려는 것이다. party는 본문에 없다. (3) 문장 6에서 hungry에 ○: 음식이 가야 할 사람들의 상태다. happy는 반대 방향이다. 주제문의 재료는 언제나 본문 안에 있다.");
 B("3-2  뼈대 채우기 — (1) food  (2) goal  (3) hungry.  넣으면 Our goal is to make sure food goes to people who are hungry.가 완성된다.");
 B("3-3  정답 순서 — ⓒ Our goal is → ⓓ to make sure → ⓐ food goes to people → ⓑ who are hungry.  완성 문장: Our goal is to make sure food goes to people who are hungry.");
@@ -795,9 +795,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 T · 3 T · 4 F · 5 F · 6 T · 7 F · 8 F");
 B("1 T — 문장 5.   2 T — 문장 6.   3 T — 문장 7.   4 F — 문장 8: 파는(sell) 것이 아니라 준다(give).   5 F — 문장 9: 자원봉사자 없이는 이 일을 할 수 없다.   6 T — 문장 10.   7 F — 문장 3: 겨울 방학이 아니라 여름 방학(summer vacation)이다.   8 F — 문장 12: 도울 수 없다가 아니라 도울 수 있게 된다.  거짓 문장은 모두 본문에서 딱 한 요소(sell, without, winter, not)를 비튼 것이다 — 그 한 단어를 찾는 것이 정독이다.", true);
-Hs("R2   사건 순서   ·   ⓒ → ⓑ → ⓐ → ⓓ");
+Hs("R2   사건 순서   ·   (c) → (b) → (a) → (d)");
 B("ⓒ 가게와 식당에 음식이 남는다(문장 7) → ⓑ 412 푸드 레스큐가 남은 음식을 모은다(문장 7) → ⓐ 자원봉사자가 음식을 배달한다(문장 10) → ⓓ 배고픈 이웃이 음식을 받는다(문장 8). 본문은 문장 8에서 '음식을 준다'를 먼저 말하고 문장 10에서야 배달을 말한다 — 서술 순서와 사건 순서가 갈리는 지점이다.", true);
-Hs("R3   영영풀이   ·   1 ⓔ · 2 ⓑ · 3 ⓕ · 4 ⓐ · 5 ⓒ · 6 ⓓ");
+Hs("R3   영영풀이   ·   1 (e) · 2 (b) · 3 (f) · 4 (a) · 5 (c) · 6 (d)");
 B("hunger = 음식이 필요할 때 드는 느낌(배고픔) · prevent = 어떤 일이 일어나지 않게 막다 · leftover = 먹거나 쓰지 않고 남은 · collect = 여러 가지를 한곳에 모으다 · deliver = 사람이나 장소로 가져다주다 · volunteer = 돈을 받지 않고 돕는 사람.", true);
 Hs("R4   어법 기초   ·   (1) helping  (2) is  (3) can’t  (4) deliver");
 B("(1) 전치사 in 뒤에는 동사원형이 아니라 동명사 — helping.   (2) 주어 Our goal은 단수 — is.   (3) '~할 수 없다'는 can’t+동사원형. 2면 분석 Tip대로 조동사+동사는 한 덩어리다.   (4) 주어 They는 복수 — deliver.", true);

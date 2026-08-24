@@ -466,7 +466,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓑ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓑ가 맨 앞 — 동명사가 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (b)가 맨 앞 — 동명사가 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -777,7 +777,7 @@ B("2-1   문장 3 But — 두고 간 옷인 줄 알았다가 쪽지를 발견하
 B("2-2   [B] 쪽지(문장 4: 옷에 달린 쪽지의 내용), [E] 교훈(문장 12–14: 누구나 가져가도 되고, 남을 돕는 일은 공동체에 중요하다). 보기의 '광고'는 이 글에 없는 역할이다.");
 B("2-3   정답 ①. 실제 있는 활동을 사실대로 알려 주는 글이다. ② 가격이나 사라는 말이 없어 광고가 아니고, ③ I·날짜, ④ Dear ~, ⑤ 시의 형식도 보이지 않는다.");
 B("[학습 포인트]   First와 Then이 보이면 순서를 설명하는 대목이다. 번호를 매기며 읽으면 활동의 단계가 그대로 정리된다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 important · the community     3-3 ⓑ → ⓒ → ⓓ → ⓐ");
+Hs("STEP 3   주제문 만들기   ·   3-1 important · the community     3-3 (b) → (c) → (d) → (a)");
 B("3-1  재료 찾기 — (2) 문장 14에서 important에 ○: 글쓴이의 평가다. difficult는 본문에 없다. (3) the community에 ○: 그 행동이 이로운 곳이다. the school도 본문에 없다.");
 B("3-2  뼈대 채우기 — (1) Helping others  (2) important  (3) the community.  넣으면 Helping others in need is important for the community.가 완성된다.");
 B("3-3  정답 순서 — ⓑ Helping others → ⓒ in need → ⓓ is important → ⓐ for the community.");
@@ -796,9 +796,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T — 문장 1.   2 F — 문장 4: 쪽지는 '잃어버린 게 아니다'라고 했다.   3 T — 문장 7.   4 F — 문장 8: 더운 여름이 아니라 추운 겨울이다.   5 T — 문장 9.   6 F — 문장 10: 가족이 아니라 지역 아이들이다.   7 T — 문장 12.   8 F — 문장 14: 중요하지 않은 게 아니라 중요하다.  거짓 문장은 모두 한 요소(lost, summer, family, not)만 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓓ → ⓒ → ⓐ");
+Hs("R2   사건 순서   ·   (b) → (d) → (c) → (a)");
 B("ⓑ 타라가 기부를 부탁한다(문장 9) → ⓓ 아이들에게 도와 달라고 부탁한다(문장 10) → ⓒ 함께 옷을 기둥에 묶는다(문장 11) → ⓐ 사람들이 쪽지를 발견한다(문장 3). 글은 발견 장면을 먼저 들려주지만 실제로는 준비가 먼저다 — 서술 순서와 사건 순서가 다른 지점이다.", true);
-Hs("R3   영영풀이   ·   1 ⓓ · 2 ⓑ · 3 ⓕ · 4 ⓐ · 5 ⓔ · 6 ⓒ");
+Hs("R3   영영풀이   ·   1 (d) · 2 (b) · 3 (f) · 4 (a) · 5 (e) · 6 (c)");
 B("tie = 끈으로 묶다 · pole = 세워진 길고 둥근 막대 · donation = 남을 돕기 위해 주는 것 · homeless = 살 곳이 없는 · community = 한 마을에 함께 사는 사람들 · lesson = 배우게 되는 중요한 것.", true);
 Hs("R4   어법 기초   ·   (1) is  (2) loves  (3) tie  (4) is");
 B("(1) There 뒤의 주어가 a nice lady(단수)이므로 is.   (2) 주어 She는 3인칭 단수 — loves.   (3) 주어 they는 복수 — tie.   (4) 동명사 주어는 한 덩어리라서 단수 취급 — is. 2면 구문에서 배운 그 규칙이다.", true);

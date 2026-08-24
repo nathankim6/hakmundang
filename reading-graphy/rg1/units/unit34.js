@@ -464,7 +464,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓑ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓑ가 맨 앞 — 장소와 주인공이 먼저!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (b)가 맨 앞 — 장소와 주인공이 먼저!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -773,7 +773,7 @@ B("2-1   문장 6 So — 앞의 달력 구조가 낳은 '결과'.   문장 7 as 
 B("2-2   [B] 달력(문장 2–3: 13개월과 30일), [D] 시간(문장 7–9: 하루를 둘로 나누고 6시부터 센다). 보기의 '날씨'는 이 글에 없는 역할이다. 소개 → 달력 → 13번째 달 → 시간 → 마무리, 두 가지를 나란히 설명하는 글이다.");
 B("2-3   정답 ①. 다른 나라의 문화를 사실 그대로 알려 주는 설명문이다. ② I나 날짜가 없어 일기가 아니고, ③ 받는 사람이 없어 편지도, ④ 가격·명령문이 없어 광고도, ⑤ 지어낸 이야기도 아니다.");
 B("[학습 포인트]   as well, also 같은 말은 '이야기가 하나 더 있다'는 신호다. 이 신호를 만나면 글이 두 덩어리로 나뉜다고 생각하자.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 special · days and time     3-3 ⓑ → ⓐ → ⓓ → ⓒ");
+Hs("STEP 3   주제문 만들기   ·   3-1 special · days and time     3-3 (b) → (a) → (d) → (c)");
 B("3-1  재료 찾기 — (2) 문장 1에서 special에 ○: 글쓴이의 평가다. boring(지루한)은 본문에 없다. (3) 문장 1에서 days and time에 ○: 세는 대상 두 가지다. day and night는 본문에 없는 말이다.");
 B("3-2  뼈대 채우기 — (1) Ethiopia  (2) special  (3) days and time.  넣으면 In Ethiopia, people have a special way of counting days and time.이 된다.");
 B("3-3  정답 순서 — ⓑ In Ethiopia, people have → ⓐ a special way → ⓓ of counting → ⓒ days and time.");
@@ -792,9 +792,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T — 문장 2.   2 F — 문장 3: 31일이 아니라 30일이다.   3 T — 문장 5.   4 F — 문장 6: 외워야 하는 게 아니라 외울 필요가 없다.   5 T — 문장 8.   6 F — 문장 9: 12시가 아니라 아침 6시부터 센다.   7 T — 문장 10.   8 F — 문장 11: 아침 4시가 아니라 오후 4시다.  거짓 문장은 모두 한 요소(31, have to, 12:00, morning)만 비튼 것이다.", true);
-Hs("R2   설명 순서   ·   ⓑ → ⓒ → ⓐ → ⓓ");
+Hs("R2   설명 순서   ·   (b) → (c) → (a) → (d)");
 B("ⓑ 13개월 달력(문장 2) → ⓒ 5~6일뿐인 13번째 달(문장 5) → ⓐ 12시간씩 둘로 나눈 하루(문장 8) → ⓓ 10시가 오후 4시라는 예(문장 11). 이 글은 사건이 아니라 두 가지 제도를 차례로 설명한다 — 달력이 먼저, 시간이 나중이다.", true);
-Hs("R3   영영풀이   ·   1 ⓓ · 2 ⓕ · 3 ⓑ · 4 ⓔ · 5 ⓒ · 6 ⓐ");
+Hs("R3   영영풀이   ·   1 (d) · 2 (f) · 3 (b) · 4 (e) · 5 (c) · 6 (a)");
 B("calendar = 한 해의 날짜를 보여 주는 표 · month = 한 해의 열두 부분 중 하나 · remember = 무엇을 마음에 담아 두다 · divide = 더 작은 부분으로 나누다 · noon = 한낮 12시 · midnight = 밤 12시.", true);
 Hs("R4   어법 기초   ·   (1) has  (2) don’t  (3) counting  (4) wants");
 B("(1) 주어 calendar는 3인칭 단수 — has.   (2) 주어 They는 복수 — don’t.   (3) start 뒤에는 ~ing를 쓸 수 있다 — counting.   (4) 주어 a friend는 단수 — wants. 주어를 먼저 찾는 것이 어법 문제의 첫걸음이다.", true);

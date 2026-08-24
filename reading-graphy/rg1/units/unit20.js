@@ -424,7 +424,7 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R2 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T — 문장 2.   2 F — 문장 3: 지난주가 아니라 어제(yesterday) 있었던 일이다.   3 T — 문장 4.   4 F — 문장 6: 괴물이 아니라 닭(chicken) 의상이다.   5 T — 문장 7–8.   6 F — 문장 9: 아무도 웃지 않은 게 아니라 모두가(Everyone) 웃었다.   7 T — 문장 12.   8 F — 문장 13: 한 명이 아니라 새 친구를 많이(lots of) 사귀었다.  거짓 문장은 모두 본문에서 딱 한 요소(last week, monster, Nobody, only one)를 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓓ → ⓐ → ⓒ");
+Hs("R2   사건 순서   ·   (b) → (d) → (a) → (c)");
 B("ⓑ 리사가 닭 의상을 입는다(문장 6) → ⓓ 닭 발에 걸려 넘어진다(문장 7) → ⓐ 진흙 웅덩이에 빠진다(문장 8) → ⓒ 친구들이 “Muddy Chicken”이라는 별명을 붙인다(문장 12). 이 편지는 일이 일어난 순서 그대로 쓰였으므로, 문장 번호를 따라가면 순서가 보인다.", true);
 K.push(sp(70));
 K.push(T([W], [new TableRow({ children: [cel([

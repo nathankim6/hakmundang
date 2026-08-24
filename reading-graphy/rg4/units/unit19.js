@@ -466,7 +466,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓒ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓒ가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (c)가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -776,7 +776,7 @@ B("2-1   문장 1 because of — 산호초가 어려움을 겪는 '이유'.   �
 B("2-2   [B] 해결책(문장 4–5: 새 기술 eDNA의 등장), [D] 자료 모으기(문장 8–9: 큰 DNA 자료실 만들기). 보기의 '요리법'은 이 글에 없는 역할이다. [A] 문제 → [B] 해결책 → [C] 방법 → [D] 자료 모으기 → [E] 기대.");
 B("2-3   정답 ①. 새로운 과학 기술이 무엇이고 어떻게 쓰이는지 사실을 알려 주는 설명문이다(문장 5–7). ② 가격·명령문이 없어 광고가 아니고, ③ I나 날짜가 없어 일기도 아니다.");
 B("[학습 포인트]   문제 → 해결 → 방법 → 기대는 과학 설명문의 기본 골격이다. because of · but · So · Fortunately에 표시만 해도 글의 지도가 그려진다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 monitor · protect     3-3 ⓒ → ⓐ → ⓑ → ⓓ");
+Hs("STEP 3   주제문 만들기   ·   3-1 monitor · protect     3-3 (c) → (a) → (b) → (d)");
 B("3-1  재료 찾기 — (2) 문장 10에서 monitor에 ○: 자료실로 산호초를 '관찰한다'. collect는 물과 흙을 모으는 앞 단계일 뿐이다. (3) 문장 12에서 protect에 ○: 산호초에 기대어 사는 생물을 '보호한다'.");
 B("3-2  뼈대 채우기 — (1) eDNA  (2) monitor  (3) protect.  넣으면 Scientists use eDNA to monitor coral reefs and protect the life depending on them.이 완성된다.");
 B("3-3  정답 순서 — ⓒ Scientists use eDNA → ⓐ to monitor coral reefs → ⓑ and protect the life → ⓓ depending on them.");
@@ -795,9 +795,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T — 문장 1.   2 F — 문장 2: not이 붙어 뜻이 뒤집혔다(산호는 온도에 매우 민감하다).   3 T — 문장 2.   4 F — 문장 6: far from이 아니라 near(가까이)이다.   5 T — 문장 6.   6 F — 문장 9: small이 아니라 large(큰) 자료실이다.   7 T — 문장 10.   8 F — 문장 11: beautiful이 아니라 threatened(위협받는) 종을 알려 준다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓒ → ⓐ → ⓓ");
+Hs("R2   사건 순서   ·   (b) → (c) → (a) → (d)");
 B("ⓑ 더워진 물 때문에 산호가 죽는다(문장 2–3) → ⓒ 과학자들이 산호초 근처의 물과 흙을 모은다(문장 6) → ⓐ 모은 정보를 큰 DNA 자료실에 넣는다(문장 9) → ⓓ 산호초를 관찰하고 손상된 곳을 고친다(문장 10–12).", true);
-Hs("R3   영영풀이   ·   1 ⓓ · 2 ⓕ · 3 ⓐ · 4 ⓒ · 5 ⓔ · 6 ⓑ");
+Hs("R3   영영풀이   ·   1 (d) · 2 (f) · 3 (a) · 4 (c) · 5 (e) · 6 (b)");
 B("sensitive = 작은 변화에도 쉽게 반응하는 · discover = 처음으로 찾아내다 · collect = 여럿을 모아 한곳에 두다 · harm = 다치게 하거나 망가뜨리다 · monitor = 오랫동안 주의 깊게 지켜보다 · threatened = 사라질 위험에 놓인.", true);
 Hs("R4   어법 기초   ·   (1) are  (2) have  (3) to learn  (4) can fix");
 B("(1) 주어 Coral reefs는 복수 — are.   (2) 주어 Scientists가 복수이므로 have+과거분사.   (3) '~하기 위해'는 to+동사원형 — to learn. 2면 구문에서 배운 그 문장이다.   (4) 조동사 can 뒤에는 동사원형 — can fix.", true);

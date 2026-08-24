@@ -465,7 +465,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓑ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓑ가 맨 앞 — 콜론(:)까지 한 덩어리!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (b)가 맨 앞 — 콜론(:)까지 한 덩어리!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -775,7 +775,7 @@ B("2-1   문장 1 When — 제품이 실패할 '때'.   문장 2 But — 그런�
 B("2-2   [B] 전시물(문장 3–5: 언제 어디서 시작했고 무엇을 볼 수 있는지), [E] 마무리(문장 10–12: 실패 공유 벽과 메시지). 보기의 '가격표'는 이 글에 없는 역할이다. [A] 소개 → [B] 전시물 → [C] 만든 사람 → [D] 근거 → [E] 마무리의 흐름이다.");
 B("2-3   정답 ①. 한 박물관이 무엇이고 무엇을 보여 주는지 사실을 알려 주는 설명문이다. ② 광고의 신호(사라는 말·가격)가 없고, ③ 일기의 I·오늘도, ④ 편지의 Dear도, ⑤ 동화의 상상 속 인물도 없다.");
 B("[학습 포인트]   연결어만 표시해도 글의 지도가 그려진다. When(때), But(반전), and(덧붙임), At the end(순서). 특히 첫 문장의 But 뒤에 글의 주인공이 등장한다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 making · better     3-3 ⓑ → ⓓ → ⓐ → ⓒ");
+Hs("STEP 3   주제문 만들기   ·   3-1 making · better     3-3 (b) → (d) → (a) → (c)");
 B("3-1  재료 찾기 — (2) 문장 12에서 making에 ○: 실수를 '하는 것'이다. hiding(숨기는 것)은 본문과 반대다. (3) 문장 12에서 better에 ○: 실수 끝에 이르는 상태다. famous는 본문에 없는 말이다.");
 B("3-2  뼈대 채우기 — (1) Samuel  (2) making  (3) better.  넣으면 Samuel’s message is clear: making mistakes is just a way to become better.가 완성된다.");
 B("3-3  정답 순서 — ⓑ Samuel’s message is clear: → ⓓ making mistakes → ⓐ is just a way → ⓒ to become better.");
@@ -794,9 +794,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 T · 5 F · 6 T · 7 F · 8 F");
 B("1 T — 문장 1.   2 F — 문장 3: 노르웨이(Norway)가 아니라 스웨덴(Sweden)이다.   3 T — 문장 4.   4 T — 문장 5.   5 F — 문장 6: 여자가 아니라 남자(A man)다.   6 T — 문장 7.   7 F — 문장 8: 큰 회사들도 실수를 했다.   8 F — 문장 11: 방문객은 자기 실수를 적을 수 있다.  거짓 문장은 모두 딱 한 요소(Norway, woman, never, must not)를 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓓ → ⓑ → ⓐ → ⓒ");
+Hs("R2   사건 순서   ·   (d) → (b) → (a) → (c)");
 B("ⓓ 큰 회사들이 실수를 한다(문장 8) → ⓑ 사무엘 웨스트가 스웨덴에서 박물관을 만든다(문장 3·6) → ⓐ 박물관이 세계를 돈다(문장 3) → ⓒ 방문객이 메모지에 자기 실수를 적는다(문장 11). 본문은 박물관 이야기를 먼저 하고 회사들의 실수를 나중에 말하지만, 실제로는 실수가 먼저 있었다 — 서술 순서와 사건 순서가 다른 지점이다.", true);
-Hs("R3   영영풀이   ·   1 ⓕ · 2 ⓑ · 3 ⓓ · 4 ⓔ · 5 ⓐ · 6 ⓒ");
+Hs("R3   영영풀이   ·   1 (f) · 2 (b) · 3 (d) · 4 (e) · 5 (a) · 6 (c)");
 B("fail = 잘되지 않거나 아예 작동하지 않다 · product = 회사가 팔려고 만드는 것 · museum = 특별한 것들을 볼 수 있는 곳 · mistake = 그러려고 한 것이 아닌데 잘못한 일 · visitor = 어떤 곳을 보러 오는 사람 · improve = 전보다 나아지다.", true);
 Hs("R4   어법 기초   ·   (1) named  (2) is  (3) can write  (4) Making");
 B("(1) '~라는 이름의'는 과거분사 named가 앞의 명사를 뒤에서 꾸민다. 2면 구문에서 배운 그 문장이다.   (2) there 뒤의 명사 a wall이 진짜 주어 — 단수이므로 is.   (3) 조동사 can 뒤에는 언제나 동사원형 — can write.   (4) 주어 자리에 동사를 쓰려면 ~ing — Making.", true);

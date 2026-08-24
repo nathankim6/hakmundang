@@ -465,7 +465,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓒ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓒ가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (c)가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -777,7 +777,7 @@ B("2-1   문장 5 But — 위험하다는 앞 내용을 뒤집는 '반전'.   �
 B("2-2   [B] 예외(문장 5–7: 아이슬란드에는 모기가 없다), [E] 제안(문장 12–13: 여름에 아이슬란드에 가 보라). 보기의 '치료법'은 이 글에 없는 역할이다. [A] 소개 → [B] 예외 → [C] 의문 → [D] 까닭 → [E] 제안, 설명문의 전형적인 흐름이다.");
 B("2-3   정답 ①. 모기라는 대상의 사실을 알려 주고 까닭을 설명하는 설명문이다. ② 가격·명령문이 없어 광고가 아니고, ③ 날짜와 I가 없으며, ④ Dear ~ 같은 인사가 없고, ⑤ 지어낸 인물과 사건도 없다.");
 B("[학습 포인트]   연결어만 표시해도 글의 지도가 그려진다. But·However(반전), because(이유), If(조건). 설명문에서 반전 뒤에 오는 문장이 글쓴이가 진짜 하고 싶은 말인 경우가 많다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 Iceland · temperature     3-3 ⓒ → ⓐ → ⓑ → ⓓ");
+Hs("STEP 3   주제문 만들기   ·   3-1 Iceland · temperature     3-3 (c) → (a) → (b) → (d)");
 B("3-1  재료 찾기 — (2) 문장 6에서 Iceland에 ○: 모기가 살지 못하는 그 나라다. Norway는 오히려 모기가 있는 나라다. (3) 문장 11에서 temperature에 ○: 너무 빨리 바뀌는 것은 여름이 아니라 기온이다.");
 B("3-2  뼈대 채우기 — (1) Mosquitoes  (2) Iceland  (3) temperature.  넣으면 Mosquitoes can’t survive in Iceland because the temperature changes too quickly for them.이 완성된다.");
 B("3-3  정답 순서 — ⓒ Mosquitoes can’t survive → ⓐ in Iceland → ⓑ because the temperature → ⓓ changes too quickly for them.");
@@ -796,9 +796,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T — 문장 3.   2 F — 문장 4: 725명이 아니라 약 725,000명이다.   3 T — 문장 5.   4 F — 문장 7: 너무 더운 게 아니라 너무 춥다(too cold).   5 T — 문장 8.   6 F — 문장 10: 여름이 아니라 겨울(winter)에 얼음 아래 숨는다.   7 T — 문장 11.   8 F — 문장 13: 많이 물리는 게 아니라 전혀 물리지 않는다.  거짓 문장은 모두 딱 한 요소만 비튼 것이다.", true);
-Hs("R2   설명 순서   ·   ⓑ → ⓐ → ⓒ → ⓓ");
+Hs("R2   설명 순서   ·   (b) → (a) → (c) → (d)");
 B("ⓑ 모기가 병을 옮겨 많은 사람을 죽인다(문장 3–4) → ⓐ 그런데 아이슬란드 사람들은 걱정하지 않는다(문장 5) → ⓒ 기온이 너무 빨리 바뀌어 숨을 수 없기 때문이다(문장 11) → ⓓ 그러니 여름에 아이슬란드에 가 보라(문장 12–13). 문제 제기 → 예외 → 까닭 → 제안, 설명문은 이 차례로 흐른다.", true);
-Hs("R3   영영풀이   ·   1 ⓔ · 2 ⓑ · 3 ⓐ · 4 ⓓ · 5 ⓕ · 6 ⓒ");
+Hs("R3   영영풀이   ·   1 (e) · 2 (b) · 3 (a) · 4 (d) · 5 (f) · 6 (c)");
 B("dangerous = 다치게 하거나 죽일 수 있는 · insect = 다리가 여섯 개인 아주 작은 동물 · spread = 더 많은 곳이나 사람에게 퍼지다 · survive = 살아남다 · temperature = 얼마나 덥거나 추운지 · escape = 어떤 곳이나 대상에게서 벗어나다.", true);
 Hs("R4   어법 기초   ·   (1) are  (2) worry  (3) be found  (4) enjoy");
 B("(1) 주어 Mosquitoes는 복수 — are.   (2) don’t have to 뒤에는 동사원형 — worry.   (3) '발견되다'는 be+p.p, 조동사 can 뒤이므로 원형 be found. 2면 분석 Tip의 그 원칙이다.   (4) 조동사 can 뒤에는 동사원형 — enjoy.", true);

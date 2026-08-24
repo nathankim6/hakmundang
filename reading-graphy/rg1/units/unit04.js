@@ -469,7 +469,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓑ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓑ이 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (b)이 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -783,7 +783,7 @@ B("2-1   문장 3 When — 아기일 '때'.   문장 5 But — 흰 발이 파랗
 B("2-2   [B] 변화(문장 3–5: 흰 발이 자라면서 파랗게 바뀐다), [E] 마무리(문장 14–16: 우스워 보여도 수컷에게는 중요하다). 보기의 '사냥법'은 이 글에 없는 역할이다.");
 B("2-3   정답 ①. 파란발부비새라는 동물의 특징을 소개하고 사실을 알려 주는 설명문이다. 광고의 신호(사라는 말·가격)도, 일기의 날짜도, 편지의 Dear도, 시의 운율도 없다.");
 B("[학습 포인트]   문장 5의 But과 문장 15의 But이 이 글의 두 전환점이다. 마무리 직전의 But은 글쓴이가 진짜 하고 싶은 말의 신호다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 health · attractive     3-3 ⓑ → ⓓ → ⓐ → ⓒ");
+Hs("STEP 3   주제문 만들기   ·   3-1 health · attractive     3-3 (b) → (d) → (a) → (c)");
 B("3-1  재료 찾기 — (2) 문장 9에서 health에 ○: 파란 발이 보여 주는 것이다. danger는 본문에 없다. (3) 문장 11에서 attractive에 ○: 암컷이 받는 인상이다. funny는 사람이 춤을 볼 때의 느낌이다.");
 B("3-2  뼈대 채우기 — (1) Blue feet  (2) health  (3) attractive.  넣으면 Blue feet are a sign of good health and are attractive to the female.이 완성된다.");
 B("3-3  정답 순서 — ⓑ Blue feet → ⓓ are a sign of good health → ⓐ and are attractive → ⓒ to the female.");
@@ -802,9 +802,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T — 문장 2.   2 F — 문장 3–4: 파란색이 아니라 하얀(white) 깃털과 발이다.   3 T — 문장 7.   4 F — 문장 9: 나쁜 건강이 아니라 좋은 건강(good health)의 표시다.   5 T — 문장 10.   6 F — 문장 12: 암컷이 아니라 수컷(male)이 춤춘다.   7 T — 문장 14.   8 F — 문장 15: 중요하지 않은 게 아니라 중요하다.  거짓 문장은 모두 한 요소만 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓒ → ⓓ → ⓐ");
+Hs("R2   사건 순서   ·   (b) → (c) → (d) → (a)");
 B("ⓑ 아기 때는 발이 하얗다(문장 3–4) → ⓒ 색소가 든 신선한 물고기를 먹는다(문장 7) → ⓓ 발이 파랗게 변한다(문장 5·8) → ⓐ 한 발씩 들어 올리며 춤춘다(문장 13). 본문은 파랗게 변한다는 결과(문장 5)를 그 이유(문장 7–8)보다 먼저 말한다 — 서술 순서와 사건 순서가 다른 지점이다.", true);
-Hs("R3   영영풀이   ·   1 ⓒ · 2 ⓐ · 3 ⓔ · 4 ⓓ · 5 ⓕ · 6 ⓑ");
+Hs("R3   영영풀이   ·   1 (c) · 2 (a) · 3 (e) · 4 (d) · 5 (f) · 6 (b)");
 B("feathers = 새를 덮고 있는 가볍고 부드러운 것 · fluffy = 만지면 부드럽고 가벼운 · attract = 누군가를 오게 만들다 · partner = 무언가를 함께 하는 상대 · show off = 자기가 얼마나 좋은지 보여 주다 · lift = 위로 들어 올리다.", true);
 Hs("R4   어법 기초   ·   (1) are  (2) Having  (3) their  (4) dances");
 B("(1) 주어 boobies가 복수라 are.   (2) 주어 자리에는 동명사 Having — 2면 구문에서 배운 그 문장이다.   (3) 명사 feet 앞에는 소유격 their.   (4) 주어 The male booby는 3인칭 단수라 dances.", true);

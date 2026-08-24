@@ -453,7 +453,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓑ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓑ가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (b)가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -761,7 +761,7 @@ B("2-1   문장 1 when — 규칙을 지키지 않을 '때' 카드를 쓴다.   
 B("2-2   [B] 쓰임(문장 3: 누구에게 주는 카드인가), [E] 질문(문장 10: 독자에게 묻는 마무리). 보기의 '광고'는 이 글에 없는 역할이다. [A] 소개 → [B] 쓰임 → [C] 첫 사용 → [D] 한계 → [E] 질문 — 새것을 소개하는 설명문의 전형적인 흐름이다.");
 B("2-3   정답 ①. 새로운 것(흰 카드)을 소개하고 사실을 알려 주는 설명문이다(문장 1–3의 현재시제, 대상의 이름과 쓰임). ② 광고의 신호(가격·사라는 말)가 없고, ③ 일기·④ 편지·⑤ 시의 형식도 아니다.");
 B("[학습 포인트]   마무리의 질문(문장 10)은 글쓴이가 독자를 생각에 초대하는 장치다. 설명문 끝의 물음표를 만나면 '나라면 어떻게 답할까?'까지 생각해 보자.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 good · medical staff     3-3 ⓑ → ⓓ → ⓒ → ⓐ");
+Hs("STEP 3   주제문 만들기   ·   3-1 good · medical staff     3-3 (b) → (d) → (c) → (a)");
 B("3-1  재료 찾기 — (2) 문장 3에서 good에 ○: 카드를 주는 까닭이 되는 행동의 성격이다. quick은 문장 7 의료진의 반응일 뿐. (3) 문장 3에서 medical staff에 ○: referees는 카드를 '주는' 쪽이지 받는 쪽이 아니다.");
 B("3-2  뼈대 채우기 — (1) white  (2) good  (3) medical staff.  넣으면 The white card is for players, coaches, or medical staff who show good behavior.가 완성된다.");
 B("3-3  정답 순서 — ⓑ The white card is for → ⓓ players, coaches, or medical staff → ⓒ who show → ⓐ good behavior.");

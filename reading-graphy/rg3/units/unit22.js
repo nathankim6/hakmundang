@@ -446,7 +446,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓑ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓑ이 맨 앞 — 쉼표까지가 한 덩어리!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (b)이 맨 앞 — 쉼표까지가 한 덩어리!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -756,7 +756,7 @@ B("2-1   문장 6 On the other hand — 옛 우주복의 단점과 새 우주복
 B("2-2   [B] 문제점(문장 5: 옛 우주복은 움직이기 힘들고 맞지 않았다), [E] 전망(문장 12: 더 많은 사람이 달에 가게 될 것). 보기의 '유래'는 이 글에 없는 역할이다. 소개 → 문제점 → 장점 → 색의 비밀 → 전망 — 옛것의 문제를 새것이 푸는 설명문의 흐름이다.");
 B("2-3   정답 ①. 새 우주복의 특징과 장점을 사실대로 알려 주는 설명문이다. ② 광고의 신호(사라는 말·가격·느낌표 연발)가 없고, ③ 일기의 신호(I·Today·하루 일과)도 없다.");
 B("[학습 포인트]   On the other hand가 나오면 글이 둘로 나뉜다 — 앞은 옛것, 뒤는 새것. 대조 연결어는 비교 설명문의 뼈대이므로, 표시만 해도 글의 지도가 그려진다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 move · better     3-3 ⓑ → ⓐ → ⓒ → ⓓ");
+Hs("STEP 3   주제문 만들기   ·   3-1 move · better     3-3 (b) → (a) → (c) → (d)");
 B("3-1  재료 찾기 — (2) 문장 8에서 move에 ○: 새 우주복이 가능하게 하는 동작이다. sleep은 본문에 없다. (3) 문장 8에서 better에 ○: 달 연구가 나아지는 방향이다. worse는 반대말. 주제문의 재료는 언제나 본문 안에 있다.");
 B("3-2  뼈대 채우기 — (1) new spacesuits  (2) move  (3) better.  넣으면 With new spacesuits, astronauts can move more easily and study the Moon better.가 완성된다.");
 B("3-3  정답 순서 — ⓑ With new spacesuits, → ⓐ astronauts can move → ⓒ more easily → ⓓ and study the Moon better.");
@@ -775,9 +775,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 F · 4 T · 5 T · 6 T · 7 F · 8 F");
 B("1 T — 문장 1.   2 F — 문장 4: 10년이 아니라 40년 만의 첫 재설계다.   3 F — 문장 5: 쉬운 게 아니라 움직이기 힘들었다(hard).   4 T — 문장 6.   5 T — 문장 7.   6 T — 문장 9.   7 F — 문장 11: 실제 우주복은 검은색이 아니라 흰색이다.   8 F — 문장 12: 소수가 아니라 더 많은(more) 사람이다.  거짓 문장은 모두 본문에서 딱 한 요소(10, easy, black, only a few)를 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓓ → ⓐ → ⓒ");
+Hs("R2   사건 순서   ·   (b) → (d) → (a) → (c)");
 B("ⓑ 사람들이 마지막으로 달을 방문한다(문장 1, 50여 년 전) → ⓓ 옛 우주복이 오랫동안 쓰이며 문제를 드러낸다(문장 5) → ⓐ NASA가 40년 만에 우주복을 재설계한다(문장 4) → ⓒ 우주비행사들이 새 우주복을 입고 달로 돌아간다(문장 2·3, 미래). 본문은 임무 소개(문장 2)를 먼저 말하지만 실제 시간은 과거 → 현재 → 미래 순이다 — 서술 순서와 사건 순서를 구분하는 것이 핵심이다.", true);
-Hs("R3   영영풀이   ·   1 ⓑ · 2 ⓓ · 3 ⓒ · 4 ⓔ · 5 ⓕ · 6 ⓐ");
+Hs("R3   영영풀이   ·   1 (b) · 2 (d) · 3 (c) · 4 (e) · 5 (f) · 6 (a)");
 B("mission = 맡겨진 중요한 임무 · flexible = 잘 구부러지고 움직이기 쉬운 · fit = 크기가 꼭 맞다 · reflect = 빛이나 열을 되돌려 보내다 · extreme = 보통보다 훨씬 심한, 극단적인 · allow = ~하게 해 주다.", true);
 Hs("R4   어법 기초   ·   (1) were  (2) move  (3) has  (4) reflect");
 B("(1) 주어 The old suits는 복수 — were.   (2) 조동사 can 뒤에는 동사원형 — move. 2면 분석 Tip의 '조동사+동사 한 덩어리' 원칙이다.   (3) 주어 The helmet은 3인칭 단수 — has.   (4) '~하기 위해'는 to+동사원형 — reflect. 2면 구문에서 배운 그 형태다.", true);

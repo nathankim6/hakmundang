@@ -465,7 +465,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓑ  )", { size: 19 }), t("  \u2192  (      )  \u2192  (      )  \u2192  (      )", { size: 19 }),
-  t("      ⓑ가 맨 앞 \u2014 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (b)가 맨 앞 \u2014 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -775,7 +775,7 @@ B("2-1   문장 4 because \u2014 과학자들이 관심을 갖는 ‘이유’. 
 B("2-2   [B] 생물(문장 4–5: 바다 생물로 가득하다), [E] 마무리(문장 11–12: 훈련과 장비가 필요하고 가장 덜 연구된 곳이다). 보기의 ‘광고’는 이 글에 없는 역할이다. 소개 → 생물 → 기록 → 위험 → 마무리의 흐름이다.");
 B("2-3   정답 ①. 블루 홀이라는 자연 현상의 정체·가치·위험을 사실 위주로 알려 주는 설명문이다. ② 가격이나 명령문이 없고, ③ 일기·④ 편지·⑤ 동화의 신호도 없다.");
 B("[학습 포인트]   For example 뒤의 숫자(100명)는 예시일 뿐 주제가 아니다. 예시는 앞 문장을 뒷받침하는 근거로 읽자.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 sea life · dangerous     3-3 ⓑ → ⓒ → ⓓ → ⓐ");
+Hs("STEP 3   주제문 만들기   ·   3-1 sea life · dangerous     3-3 (b) → (c) → (d) → (a)");
 B("3-1  재료 찾기 \u2014 (2) 문장 4에서 sea life에 ○: 블루 홀이 가득 품은 것이다. fresh water는 본문에 없다. (3) 문장 9에서 dangerous에 ○: 탐험에 대한 평가다. easy는 정반대다.");
 B("3-2  뼈대 채우기 \u2014 (1) Blue holes  (2) sea life  (3) dangerous. 넣으면 Blue holes are full of sea life, but they are dangerous to explore.가 된다.");
 B("3-3  정답 순서 \u2014 ⓑ Blue holes → ⓒ are full of → ⓓ sea life, → ⓐ but they are dangerous to explore.");
@@ -794,9 +794,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T \u2014 문장 2.   2 F \u2014 문장 3: 300센티미터가 아니라 300미터(meters)다.   3 T \u2014 문장 4.   4 F \u2014 문장 5: 살아 있는 게 아니라 죽은(dead) 톱상어였다.   5 T \u2014 문장 7.   6 F \u2014 문장 8: 잠수함은 내려보낼 수 없다.   7 T \u2014 문장 10.   8 F \u2014 문장 12: 가장 많이가 아니라 가장 적게(least) 연구된 곳이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓒ → ⓓ → ⓐ");
+Hs("R2   사건 순서   ·   (b) → (c) → (d) → (a)");
 B("ⓑ 해수면이 지금보다 훨씬 낮았다(문장 7) → ⓒ 그때 블루 홀이 깊은 동굴로 만들어졌다(문장 7) → ⓓ 잠수함을 못 쓰니 탐험가가 직접 들어간다(문장 8) → ⓐ 그 안에서 죽은 톱상어를 발견한다(문장 5). 발견(문장 5)이 먼저 서술되지만 실제로는 가장 나중의 일이다.", true);
-Hs("R3   영영풀이   ·   1 ⓔ · 2 ⓑ · 3 ⓐ · 4 ⓕ · 5 ⓒ · 6 ⓓ");
+Hs("R3   영영풀이   ·   1 (e) · 2 (b) · 3 (a) · 4 (f) · 5 (c) · 6 (d)");
 B("cave = 땅이나 물속의 큰 구멍 · endangered = 영원히 사라질 위험에 처한 · explorer = 새로운 곳을 알아보러 다니는 사람 · proper = 그 목적에 알맞은 · necessary = 꼭 있어야 하는 · wonder = 사람들이 보고 싶어 하는 놀라운 것.", true);
 Hs("R4   어법 기초   ·   (1) are  (2) discovered  (3) be  (4) are");
 B("(1) 주어 Blue holes는 복수 \u2014 are.   (2) once(예전에)는 과거를 가리킨다 \u2014 discovered.   (3) 조동사 cannot 뒤에는 동사원형 \u2014 be sent.   (4) A and B 형태의 주어는 복수 \u2014 are.", true);

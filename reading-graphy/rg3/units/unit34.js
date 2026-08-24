@@ -467,7 +467,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓑ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓑ이 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (b)이 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -778,7 +778,7 @@ B("2-1   문장 6 and — 두 가지 할 일을 '덧붙임'.   문장 10 But —
 B("2-2   [B] 모습(문장 3–4: 길이·깊이 등 케이블의 생김새), [D] 비교(문장 8–10: 위성과 견주어 케이블이 빠른 이유). 보기의 '광고'는 이 글에 없는 역할이다. [A] 소개 → [B] 모습 → [C] 설치 → [D] 비교 → [E] 마무리 — 설명문의 전형적인 흐름이다.");
 B("2-3   정답 ①. 해저 케이블에 관한 사실을 차례로 알려 주는 설명문이다. ② 가격·명령문이 없어 광고가 아니고, ③ I·날짜, ④ 등장인물과 사건, ⑤ 초대의 형식도 없다.");
 B("[학습 포인트]   But 뒤가 글쓴이가 진짜 하고 싶은 말인 경우가 많다. 문장 10의 But 뒤에 이 글의 주제(케이블이 빠르다)가 놓여 있다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 undersea cables · fast     3-3 ⓑ → ⓓ → ⓒ → ⓐ");
+Hs("STEP 3   주제문 만들기   ·   3-1 undersea cables · fast     3-3 (b) → (d) → (c) → (a)");
 B("3-1  재료 찾기 — (2) 문장 1에서 undersea cables에 ○: 데이터가 지나가는 길이다. big clouds는 글쓴이가 아니라고 못 박은 말이다. (3) 문장 10에서 fast에 ○: 케이블의 가장 큰 장점이다. slow는 위성 쪽 이야기다.");
 B("3-2  뼈대 채우기 — (1) international data  (2) undersea cables  (3) fast.  넣으면 Most international data travels through big undersea cables because they are very fast.가 완성된다.");
 B("3-3  정답 순서 — ⓑ Most international data → ⓓ travels → ⓒ through big undersea cables → ⓐ because they are very fast.");
@@ -797,9 +797,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T — 문장 2.   2 F — 문장 3: 800미터가 아니라 8,000미터 아래다.   3 T — 문장 4.   4 F — 문장 5: 쉬운(easy) 일이 아니라 힘든(hard) 일이다.   5 T — 문장 6.   6 F — 문장 7: 며칠(days)이 아니라 몇 달(months)이 걸린다.   7 T — 문장 10.   8 F — 문장 11: 더 적은(fewer) 것이 아니라 더 많은(more) 케이블이 필요하다.  거짓 문장은 모두 본문에서 딱 한 요소를 비튼 것이다 — 그 한 곳을 찾는 것이 정독이다.", true);
-Hs("R2   사건 순서   ·   ⓐ → ⓑ → ⓒ → ⓓ");
+Hs("R2   사건 순서   ·   (a) → (b) → (c) → (d)");
 B("ⓐ 어업·군사 구역을 피해 가장 좋은 경로를 고른다(문장 6) → ⓑ 특별한 배가 케이블을 싣고 나가 내려놓는다(문장 6) → ⓒ 그 작업은 바다에서 몇 달이 걸린다(문장 7) → ⓓ 완성된 케이블로 데이터가 오간다(문장 1). 글은 ⓓ를 문장 1에서 가장 먼저 말하지만 실제로는 가장 나중의 일이다 — 서술 순서와 사건 순서가 다른 지점이 이 문항의 핵심이다.", true);
-Hs("R3   영영풀이   ·   1 ⓒ · 2 ⓐ · 3 ⓓ · 4 ⓕ · 5 ⓔ · 6 ⓑ");
+Hs("R3   영영풀이   ·   1 (c) · 2 (a) · 3 (d) · 4 (f) · 5 (e) · 6 (b)");
 B("float = 물이나 공기 위에 떠 있다 · surface = 물이나 땅의 맨 윗부분 · path = 한 곳에서 다른 곳으로 가는 길 · avoid = 무엇을 피하다 · delay = 예정보다 늦어지는 시간 · patient = 화내지 않고 기다릴 줄 아는.", true);
 Hs("R4   어법 기초   ·   (1) is  (2) Laying  (3) to place  (4) are");
 B("(1) 'percent of + 셀 수 없는 명사'는 단수로 본다 — is sent.   (2) 주어 자리에는 동사원형이 올 수 없다 — 동명사 Laying.   (3) '~하기 위해'는 to+동사원형 — to place. 2면 구문과 이어진다.   (4) 주어 The workers는 복수 — are doing.", true);

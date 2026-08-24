@@ -463,7 +463,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓒ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓒ가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (c)가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -772,7 +772,7 @@ B("2-1   문장 2 After — 태어난 뒤에 배웠다는 '순서'.   문장 9 U
 B("2-2   [B] 훈련(문장 2–3: 탄자니아에서 냄새로 찾는 법을 배우고 캄보디아로 옮겨 일을 시작한다), [E] 평가(문장 10–11: 많은 목숨을 구한 용감한 쥐라는 평가). 보기의 '홍보'는 이 글에 없는 역할이다. [A] 소개 → [B] 훈련 → [C] 활약 → [D] 이별 → [E] 평가 — 한 주인공의 일생을 따라가는 흐름이다.");
 B("2-3   정답 ①. 실제로 있었던 한 동물의 삶과 업적을 사실대로 알려 주는 글이다. ② 광고의 신호(가격·사라는 말)가 없고, ③ 편지의 형식(Dear ~)도, ④ 요리법도, ⑤ 지어낸 이야기의 신호도 없다.");
 B("[학습 포인트]   연결어만 표시해도 글의 지도가 그려진다. After(순서), because(이유), but(반전). 특히 마지막 문장의 but은 글쓴이가 진짜 하고 싶은 말의 신호 — 여기서 주제문의 재료(brave)가 나온다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 brave · landmines     3-3 ⓒ → ⓓ → ⓐ → ⓑ");
+Hs("STEP 3   주제문 만들기   ·   3-1 brave · landmines     3-3 (c) → (d) → (a) → (b)");
 B("3-1  재료 찾기 — (2) 문장 11에서 brave에 ○: 글쓴이가 마가와에게 붙인 평가다. afraid는 본문에 없는 말이다. (3) 문장 7에서 landmines에 ○: 마가와가 찾아낸 것이다. soccer fields는 넓이를 견주는 비유일 뿐. 주제문의 재료는 언제나 본문 안에 있다.");
 B("3-2  뼈대 채우기 — (1) rat  (2) brave  (3) landmines.  넣으면 Magawa was a brave rat who found landmines and saved so many lives.가 완성된다.");
 B("3-3  정답 순서 — ⓒ Magawa was → ⓓ a brave rat → ⓐ who found landmines → ⓑ and saved so many lives.  완성 문장: Magawa was a brave rat who found landmines and saved so many lives.");
@@ -791,9 +791,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 T · 5 F · 6 T · 7 F · 8 F");
 B("1 T — 문장 1.   2 F — 문장 2: 캄보디아가 아니라 탄자니아에서 태어났다.   3 T — 문장 2.   4 T — 문장 5.   5 F — 문장 7: 20개 미만이 아니라 100개가 넘는다.   6 T — 문장 8.   7 F — 문장 9: 12살이 아니라 8살에 세상을 떠났다.   8 F — 문장 10: 몇 안 되는 목숨이 아니라 아주 많은 목숨(so many lives)을 구했다.  거짓 문장은 모두 딱 한 요소(Cambodia, fewer than 20, 12, only a few)만 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓒ → ⓐ → ⓓ");
+Hs("R2   사건 순서   ·   (b) → (c) → (a) → (d)");
 B("ⓑ 탄자니아에서 태어난다(문장 2) → ⓒ 캄보디아로 옮겨 일을 시작한다(문장 3) → ⓐ 금메달을 받는다(문장 8) → ⓓ 은퇴한 뒤 세상을 떠난다(문장 9). 문장 1은 일생 전체를 먼저 요약한 소개라서 서술 순서와 사건 순서가 어긋난다 — 첫 문장에 속지 말고 사건의 시간을 따라가자.", true);
-Hs("R3   영영풀이   ·   1 ⓒ · 2 ⓔ · 3 ⓕ · 4 ⓐ · 5 ⓑ · 6 ⓓ");
+Hs("R3   영영풀이   ·   1 (c) · 2 (e) · 3 (f) · 4 (a) · 5 (b) · 6 (d)");
 B("landmine = 땅속에 숨겨진 폭탄 · conflict = 집단이나 나라 사이의 싸움 · clear = 위험한 것을 치워 없애다 · retire = 나이가 들어 일을 그만두다 · brave = 위험을 두려워하지 않는 · thankful = 해 준 일에 대해 고마워하는.", true);
 Hs("R4   어법 기초   ·   (1) was  (2) moving  (3) To thank  (4) has");
 B("(1) 주어 Magawa는 단수이고 시제는 과거 — was.   (2) 전치사 after 뒤에는 동명사가 온다 — moving. 2면 구문의 by using과 같은 원리다.   (3) '~하기 위해'는 to+동사원형 — To thank.   (4) 주어 Magawa는 3인칭 단수 — has passed away.", true);

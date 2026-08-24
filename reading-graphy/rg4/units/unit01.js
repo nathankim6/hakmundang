@@ -464,7 +464,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓑ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓑ가 맨 앞 — Thanks to로 시작!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (b)가 맨 앞 — Thanks to로 시작!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -772,7 +772,7 @@ B("2-1   문장 1 because — 벌이 중요한 '이유'.   문장 3 However — 
 B("2-2   [B] 문제(문장 3–4: 세균성 질병이 벌 가족을 무너뜨린다), [E] 마무리(문장 10: 더 많은 벌이 일을 이어 갈 수 있다). 보기의 '요리법'은 이 글에 없는 역할이다.");
 B("2-3   정답 ①. 꿀벌과 백신이라는 대상을 소개하고 사실을 알려 주는 설명문이다. ② 가격·명령문이 없어 광고가 아니고, ③ I나 날짜가 없어 일기도 아니다.");
 B("[학습 포인트]   However와 So만 표시해도 '문제 → 해결'의 뼈대가 드러난다. 설명문은 이 두 신호를 따라가면 절반은 읽은 것이다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 important · spreading     3-3 ⓑ → ⓓ → ⓐ → ⓒ");
+Hs("STEP 3   주제문 만들기   ·   3-1 important · spreading     3-3 (b) → (d) → (a) → (c)");
 B("3-1  재료 찾기 — (2) 문장 10에서 important에 ○: 벌의 일에 대한 글쓴이의 평가다. (3) spreading에 ○: 벌은 꽃가루를 '퍼뜨린다'. 주제문의 재료는 언제나 본문 안에 있다.");
 B("3-2  뼈대 채우기 — (1) vaccine  (2) important  (3) spreading.  넣으면 Thanks to the vaccine, more bees can continue their important work of spreading pollen.이 완성된다.");
 B("3-3  정답 순서 — ⓑ Thanks to the vaccine, → ⓓ more bees can continue → ⓐ their important work → ⓒ of spreading pollen.");
@@ -791,9 +791,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T — 문장 1.   2 F — 문장 2: 절반이 아니라 3분의 1(one-third)이다.   3 T — 문장 4.   4 F — 문장 6: 주사를 놓는 대신 먹이에 섞는다.   5 T — 문장 6.   6 F — 문장 7: 날개가 아니라 알(eggs)로 들어간다.   7 T — 문장 9.   8 F — 문장 8: 너무 늦은 게 아니라 딱 알맞은 때(the right moment)였다.  거짓 문장은 모두 한 요소(half, a shot, wings, too late)만 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓐ → ⓒ → ⓓ");
+Hs("R2   사건 순서   ·   (b) → (a) → (c) → (d)");
 B("ⓑ 많은 벌이 세균성 질병에 걸린다(문장 3) → ⓐ 한 회사가 백신을 개발한다(문장 5) → ⓒ 약을 여왕벌의 먹이에 섞는다(문장 6) → ⓓ 약이 알로 들어가 다른 벌을 지킨다(문장 7). '문제 → 해결 → 방법 → 결과' 순서로 읽으면 된다.", true);
-Hs("R3   영영풀이   ·   1 ⓔ · 2 ⓑ · 3 ⓕ · 4 ⓐ · 5 ⓒ · 6 ⓓ");
+Hs("R3   영영풀이   ·   1 (e) · 2 (b) · 3 (f) · 4 (a) · 5 (c) · 6 (d)");
 B("insect = 다리가 여섯 개인 작은 동물 · destroy = 완전히 부수다 · vaccine = 병에 걸리지 않게 해 주는 약 · mix = 둘 이상을 한데 섞다 · disappear = 사라져서 보이지 않다 · spread = 여러 곳으로 퍼뜨리다.", true);
 Hs("R4   어법 기초   ·   (1) are  (2) destroy  (3) to protect  (4) eats");
 B("(1) 주어 Honeybees는 복수 — are.   (2) 조동사 can 뒤에는 동사원형 — destroy.   (3) '~하기 위해'는 to+동사원형 — to protect. 2면 구문에서 배운 그 문장이다.   (4) 주어 the queen은 3인칭 단수 — eats.", true);

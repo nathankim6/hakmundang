@@ -465,7 +465,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓒ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓒ가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (c)가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -777,7 +777,7 @@ B("2-1   문장 7 because of — 공항이 생긴 '이유'.   문장 10 but — 
 B("2-2   [B] 특징(문장 4–5: 큰 건물도 관제탑도 없고 활주로 하나뿐), [D] 이유(문장 9–12: 사람이 몰려 길이 막히니 비행기가 필요하다). 보기의 '가격'은 이 글에 없는 역할이다. 소개 → 특징 → 유래 → 이유 → 마무리, 소개형 설명문의 전형적인 흐름이다.");
 B("2-3   정답 ①. 있는 사실을 알려 주며 대상을 소개하는 설명문이다. ② 광고의 신호(가격·사라는 말)가 없고, ③ I·날짜가 없어 일기도 아니며, ④ 받는 사람이 없어 편지도, ⑤ 지어낸 이야기도 아니다.");
 B("[학습 포인트]   because of(이유) → So(결과)는 짝으로 다닌다. 두 신호만 표시해도 글의 뼈대가 잡힌다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 special · Burning Man     3-3 ⓒ → ⓐ → ⓓ → ⓑ");
+Hs("STEP 3   주제문 만들기   ·   3-1 special · Burning Man     3-3 (c) → (a) → (d) → (b)");
 B("3-1  재료 찾기 — (2) 문장 1에서 special에 ○: 글쓴이의 평가다. busy(바쁜)는 본문에 없다. (3) 문장 7에서 Burning Man에 ○: 공항이 생긴 이유가 된 축제 이름이다. 주제문의 재료는 언제나 본문 안에 있다.");
 B("3-2  뼈대 채우기 — (1) Black Rock City Airport  (2) special  (3) Burning Man.  넣으면 Black Rock City Airport is a special airport only for the Burning Man festival.이 된다.");
 B("3-3  정답 순서 — ⓒ Black Rock City Airport → ⓐ is a special airport → ⓓ only for → ⓑ the Burning Man festival.");
@@ -796,9 +796,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T — 문장 1.   2 F — 문장 2: 한 달(month)이 아니라 한 주(week)다.   3 T — 문장 4.   4 F — 문장 5: 활주로가 많은(many) 게 아니라 단순한 활주로 하나뿐이다.   5 T — 문장 7–8.   6 F — 문장 9: 7,000명이 아니라 약 70,000명이다.   7 T — 문장 11.   8 F — 문장 13: 남아 있는 게 아니라 사라진다.  거짓 문장은 모두 한 요소(month, many, 7,000, stays)만 비튼 것이다 — 그 한 곳을 찾는 것이 정독이다.", true);
-Hs("R2   사건 순서   ·   ⓒ → ⓑ → ⓓ → ⓐ");
+Hs("R2   사건 순서   ·   (c) → (b) → (d) → (a)");
 B("ⓒ 사막에서 버닝맨 축제가 시작된다(문장 7) → ⓑ 7만 명이 축제를 즐기러 사막으로 온다(문장 9) → ⓓ 일부는 작은 제트기로 날아온다(문장 11) → ⓐ 축제가 끝나면 공항이 사라진다(문장 13). 본문은 공항의 모습(문장 1–5)을 먼저 말하고 유래(문장 7)를 나중에 말한다 — 서술 순서와 사건 순서가 다른 지점이다.", true);
-Hs("R3   영영풀이   ·   1 ⓓ · 2 ⓔ · 3 ⓑ · 4 ⓕ · 5 ⓐ · 6 ⓒ");
+Hs("R3   영영풀이   ·   1 (d) · 2 (e) · 3 (b) · 4 (f) · 5 (a) · 6 (c)");
 B("desert = 모래가 많은 아주 건조한 곳 · disappear = 사라져 보이지 않게 되다 · runway = 비행기를 위한 길고 평평한 길 · culture = 한 집단의 생활 방식 · join = 다른 사람들과 함께하다 · adventure = 신나고 새로운 경험.", true);
 Hs("R4   어법 기초   ·   (1) shows  (2) doesn’t  (3) come  (4) is");
 B("(1) 주어 It은 3인칭 단수 — shows.   (2) 주어가 it이므로 doesn’t.   (3) 주어 people은 복수 — come.   (4) 주어 the festival은 단수 — is. 모두 '주어가 몇 명(개)인가'를 먼저 보는 문제다.", true);

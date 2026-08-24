@@ -464,7 +464,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  \u24D2  )", { size: 19 }), t("  \u2192  (      )  \u2192  (      )  \u2192  (      )", { size: 19 }),
-  t("      \u24D2가 맨 앞 \u2014 동명사가 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (c)가 맨 앞 \u2014 동명사가 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -774,7 +774,7 @@ B("2-1   문장 3 While — 다른 새들과 슴새를 맞세우는 '대조'.   
 B("2-2   [B] 놀라운 관찰(문장 4–6: 눈 근처에서 여덟 시간을 머무는 모습), [E] 마무리(문장 11–12: 이유와 평가). 보기의 '광고'는 이 글에 없는 역할이다. [A] 소개 → [B] 놀라운 관찰 → [C] 연구 → [D] 두 갈래 → [E] 마무리.");
 B("2-3   정답 ①. 슴새라는 동물의 행동과 과학자들의 관찰 결과를 사실대로 알려 주는 설명문이다. ② 가격이나 사라는 말이 없고, ③·④·⑤의 형식적 신호(날짜·Dear·행갈이)도 없다.");
 B("[학습 포인트]   대조의 While과 한편의 Meanwhile은 '둘을 나란히 놓는다'는 점이 같다. 이런 말이 보이면 무엇과 무엇이 갈리는지부터 표시해 두자.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 center · trick     3-3 ⓒ → ⓓ → ⓐ → ⓑ");
+Hs("STEP 3   주제문 만들기   ·   3-1 center · trick     3-3 (c) → (d) → (a) → (b)");
 B("3-1  재료 찾기 — (2) 문장 4에서 center에 ○: 슴새가 향하는 폭풍의 한가운데다. edges는 다른 무리가 도는 가장자리다. (3) 문장 12에서 trick에 ○: 글쓴이의 평가가 담긴 말이다. danger는 문장 11의 세부 사항일 뿐이다.");
 B("3-2  뼈대 채우기 — (1) Flying  (2) center  (3) trick.  넣으면 Flying into a storm’s center is a smart trick that only shearwaters know.가 완성된다.");
 B("3-3  정답 순서 — ⓒ Flying into → ⓓ a storm’s center → ⓐ is a smart trick → ⓑ that only shearwaters know.");
@@ -793,9 +793,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 F · 6 T · 7 T · 8 F");
 B("1 T — 문장 1.   2 F — 문장 3: 대부분의 새는 폭풍에서 멀리 달아난다.   3 T — 문장 4.   4 F — 문장 5: 여덟 분(minutes)이 아니라 여덟 시간(hours)이다.   5 F — 문장 6: 이렇게 하는 새는 슴새 말고는 없다.   6 T — 문장 7.   7 T — 문장 8–9.   8 F — 문장 11: 에너지를 더 쓰는 게 아니라 아끼려고 한다.  거짓 넷은 모두 한 요소만 비튼 것이다.", true);
-Hs("R2   연구 순서   ·   ⓑ → ⓐ → ⓓ → ⓒ");
+Hs("R2   연구 순서   ·   (b) → (a) → (d) → (c)");
 B("ⓑ 폭풍의 눈 가까이 나는 슴새를 발견한다(문장 4) → ⓐ 11년 동안 비행 경로를 추적한다(문장 7) → ⓓ 일부는 가장자리를 돈다는 것을 알아낸다(문장 8) → ⓒ 에너지를 아끼려는 행동이라고 추측한다(문장 11). 관찰 → 조사 → 발견 → 해석, 과학 글의 전형적인 순서다.", true);
-Hs("R3   영영풀이   ·   1 ⓒ · 2 ⓓ · 3 ⓕ · 4 ⓔ · 5 ⓐ · 6 ⓑ");
+Hs("R3   영영풀이   ·   1 (c) · 2 (d) · 3 (f) · 4 (e) · 5 (a) · 6 (b)");
 B("ocean = 아주 넓은 소금물의 구역 · storm = 강한 바람과 비가 몰아치는 나쁜 날씨 · notice = 처음으로 알아채다 · track = 어디로 가는지 따라가며 기록하다 · avoid = ~에서 떨어져 있다, 피하다 · behavior = 사람이나 동물이 행동하는 방식.", true);
 Hs("R4   어법 기초   ·   (1) are  (2) was  (3) might do  (4) Flying");
 B("(1) 주어 Shearwaters는 복수 — are.   (2) 주어 This는 단수이고 과거의 일 — was.   (3) 조동사 might 뒤에는 동사원형 — might do. 2면 구문 카드의 그 원칙이다.   (4) '~하는 것은'이라는 주어는 동사원형+ing — Flying.", true);

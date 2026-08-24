@@ -463,7 +463,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓑ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓑ가 맨 앞 — 조건(If)을 먼저!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (b)가 맨 앞 — 조건(If)을 먼저!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -773,7 +773,7 @@ B("2-1   문장 4 But — 질문에서 새 이야기로 바뀌는 '반전'.   �
 B("2-2   [B] 예고(문장 4–5: 어떻게 돕는지 알아보자), [E] 해결(문장 10–12: 지우면 에너지가 절약된다). 보기의 '광고'는 이 글에 없는 역할이다. 질문 → 예고 → 설명 → 문제 → 해결의 흐름이다.");
 B("2-3   정답 ①. 데이터 센터라는 사실을 알려 주고 마지막에 실천을 권하는 설명문이다(문장 6·12). ② 가격이나 사라는 말이 없어 광고가 아니고, ③ 날짜·④ Dear·⑤ 옛이야기의 신호도 없다.");
 B("[학습 포인트]   연결어만 표시해도 글의 지도가 그려진다. But(반전), When(때), because(이유), So(결과). 특히 마지막 So 문장은 글쓴이가 진짜 하고 싶은 말이다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 energy · our planet     3-3 ⓑ → ⓓ → ⓐ → ⓒ");
+Hs("STEP 3   주제문 만들기   ·   3-1 energy · our planet     3-3 (b) → (d) → (a) → (c)");
 B("3-1  재료 찾기 — (2) 문장 10에서 energy에 ○: 지우면 아끼는 것은 돈이 아니라 에너지다. (3) 문장 12에서 our planet에 ○: 이 글이 돕자고 하는 대상이다.");
 B("3-2  뼈대 채우기 — (1) your old emails  (2) energy  (3) our planet.  넣으면 If you delete your old emails, you can save energy and help our planet.이 된다.");
 B("3-3  정답 순서 — ⓑ If you delete → ⓓ your old emails, → ⓐ you can save energy → ⓒ and help our planet.");
@@ -792,9 +792,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T — 문장 3.   2 F — 문장 4: 지구를 도울 수 있다고 했다.   3 T — 문장 6.   4 F — 문장 8: 밤에도 늘 켜져 있다.   5 T — 문장 8.   6 F — 문장 9: 더 적은(less) 것이 아니라 더 많은(more) 에너지를 쓴다.   7 T — 문장 10.   8 F — 문장 11: 켜는(on) 것이 아니라 끄는(off) 것에 비유했다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓐ → ⓒ → ⓓ");
+Hs("R2   사건 순서   ·   (b) → (a) → (c) → (d)");
 B("ⓑ 메일을 주고받는다(문장 1) → ⓐ 그 정보가 데이터 센터에 저장된다(문장 6) → ⓒ 센터가 에너지를 더 많이 쓴다(문장 9) → ⓓ 오래된 메일을 지워 에너지를 아낀다(문장 10). 원인과 결과가 이어지는 과정 글이다.", true);
-Hs("R3   영영풀이   ·   1 ⓒ · 2 ⓐ · 3 ⓕ · 4 ⓑ · 5 ⓔ · 6 ⓓ");
+Hs("R3   영영풀이   ·   1 (c) · 2 (a) · 3 (f) · 4 (b) · 5 (e) · 6 (d)");
 B("inbox = 새 메일이 도착하는 곳 · delete = 없어지도록 지우다 · store = 한곳에 보관하다 · huge = 아주 아주 큰 · power = 기계를 움직이는 에너지(전기) · save = 덜 쓰다, 아끼다.", true);
 Hs("R4   어법 기초   ·   (1) do  (2) use  (3) Storing  (4) can save");
 B("(1) 주어가 you이므로 do.   (2) 주어 centers는 복수이므로 use.   (3) 주어 자리에는 동사+ing인 Storing — 2면 구문에서 배운 동명사 주어다.   (4) 조동사 can 뒤에는 동사원형 save.", true);

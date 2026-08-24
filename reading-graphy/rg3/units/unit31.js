@@ -466,7 +466,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓑ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓑ이 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (b)이 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -777,7 +777,7 @@ B("2-1   문장 1 so — 뛰어난 기술의 '결과'로 인상적인 구조물�
 B("2-2   [B] 수수께끼(문장 3–4: 오랜 세월 풀리지 않던 비밀을 마침내 찾아냄), [E] 기대(문장 12–13: 오늘의 결과와 현대 콘크리트에 대한 기대). 보기의 '요리법'은 이 글에 없는 역할이다. [A] 소개 → [B] 수수께끼 → [C] 발견 → [D] 원리 → [E] 기대 — 설명문의 전형적인 흐름이다.");
 B("2-3   정답 ①. 과학이 밝혀낸 사실을 차례로 알려 주는 설명문이다. ② 가격이나 명령문이 없어 광고가 아니고, ③ I·날짜, ④ Dear ~, ⑤ 운율 같은 신호도 없다.");
 B("[학습 포인트]   연결어만 표시해도 글의 지도가 그려진다. so(결과), In fact(강조), When(때), before(순서). 설명문은 '무엇이 있다 → 왜 그런가 → 그래서 어떻다'로 흐른다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 self-healing · lime clasts     3-3 ⓑ → ⓓ → ⓐ → ⓒ");
+Hs("STEP 3   주제문 만들기   ·   3-1 self-healing · lime clasts     3-3 (b) → (d) → (a) → (c)");
 B("3-1  재료 찾기 — (2) 문장 4에서 self-healing에 ○: 연구자들이 찾아낸 비밀이다. man-made는 본문에 없는 말이다. (3) 문장 9에서 lime clasts에 ○: 물과 닿으면 접착제처럼 작용하는 알갱이다. volcanic ash는 재료 중 하나일 뿐이다.");
 B("3-2  뼈대 채우기 — (1) Roman concrete  (2) self-healing  (3) lime clasts.  넣으면 Roman concrete has a self-healing ability because lime clasts fill tiny cracks.가 완성된다.");
 B("3-3  정답 순서 — ⓑ Roman concrete has → ⓓ a self-healing ability → ⓐ because lime clasts → ⓒ fill tiny cracks.  완성 문장: Roman concrete has a self-healing ability because lime clasts fill tiny cracks.");
@@ -796,9 +796,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T — 문장 2.   2 F — 문장 5: 낮은(low) 온도가 아니라 높은(high) 온도에서 섞었다.   3 T — 문장 6.   4 F — 문장 9: 페인트(paint)가 아니라 접착제(glue)처럼 작용한다.   5 T — 문장 10.   6 F — 문장 11: 느리게(slowly)가 아니라 빠르게(quickly) 일어난다.   7 T — 문장 12.   8 F — 문장 13: 유리(glass)가 아니라 현대 콘크리트를 개선하려는 것이다.  거짓 문장은 모두 본문에서 딱 한 요소(low, paint, slowly, glass)를 비튼 것이다 — 그 한 단어를 찾는 것이 정독이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓓ → ⓐ → ⓒ");
+Hs("R2   사건 순서   ·   (b) → (d) → (a) → (c)");
 B("ⓑ 로마인들이 재료를 높은 온도에서 섞는다(문장 5) → ⓓ 물이 닿아 석회 덩어리가 균열을 메운다(문장 9–10) → ⓐ 연구자들이 흰 덩어리를 발견한다(문장 6) → ⓒ 연구자들이 자가 치유의 비밀을 밝힌다(문장 4). 글은 ⓒ를 문장 4에서 가장 먼저 말하지만 실제로는 가장 나중의 일이다 — 서술 순서와 사건 순서가 다른 지점이 이 문항의 핵심이다.", true);
-Hs("R3   영영풀이   ·   1 ⓒ · 2 ⓐ · 3 ⓔ · 4 ⓕ · 5 ⓑ · 6 ⓓ");
+Hs("R3   영영풀이   ·   1 (c) · 2 (a) · 3 (e) · 4 (f) · 5 (b) · 6 (d)");
 B("ancient = 아주 오래전의, 고대의 · survive = 오랫동안 살아남다 · mystery = 사람들이 설명하지 못하는 것 · notice = 보고 알아차리다 · crack = 갈라진 작은 틈 · repair = 망가진 것을 다시 고치다.", true);
 Hs("R4   어법 기초   ·   (1) have  (2) mixed  (3) act  (4) happens");
 B("(1) 주어 buildings는 복수 — have survived. have+p.p는 한 덩어리의 동사다.   (2) 한 문장에는 본동사가 반드시 필요하다 — mixed. mixing은 동사 자리에 홀로 올 수 없다.   (3) 주어 they는 복수 — act.   (4) 주어 This reaction은 3인칭 단수 — happens.", true);

@@ -449,7 +449,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓒ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓒ가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (c)가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -760,7 +760,7 @@ B("2-1   문장 2 But — 많은 사람들과 달리 유명 화가들은 달랐�
 B("2-2   [B] 문제점(문장 5: 유화 물감만의 약점 — 변색과 주름), [E] 마무리(문장 12–13: 노른자의 중요성 정리). 보기의 '유래'는 이 글에 없는 역할이다. [A] 소개 → [B] 문제점 → [C]·[D] 해결의 효과 → [E] 마무리 — 문제와 해결이 있는 설명문의 흐름이다.");
 B("2-3   정답 ①. 현재시제로 대상(노른자)의 특징과 사실을 알려 주는 설명문이다. ② 일기의 신호(I·날짜)가 없고, ③ 사라는 말·가격이 없으니 광고도 아니며, ④ 동화·⑤ 주장 글의 형식도 아니다.");
 B("[학습 포인트]   연결어만 표시해도 글의 지도가 그려진다. But(반전), if(조건), As a result(결과), Also(덧붙임). 특히 '문제 → 해결의 효과' 짝은 설명문 흐름의 단골이다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 important · protected     3-3 ⓒ → ⓑ → ⓐ → ⓓ");
+Hs("STEP 3   주제문 만들기   ·   3-1 important · protected     3-3 (c) → (b) → (a) → (d)");
 B("3-1  재료 찾기 — (2) 문장 12에서 important에 ○: 글쓴이의 평가다. yellow는 문장 11의 세부 사실일 뿐. (3) 문장 10에서 protected에 ○: 주인공이 한 일이다. changed는 문장 5의 '문제'였다. 주제문의 재료는 언제나 본문 안에 있다.");
 B("3-2  뼈대 채우기 — (1) Egg yolk  (2) important  (3) protected.  넣으면 Egg yolk was important in art history because it protected the paint.가 완성된다.");
 B("3-3  정답 순서 — ⓒ Egg yolk → ⓑ was important → ⓐ in art history → ⓓ because it protected the paint.");
@@ -779,9 +779,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 F · 4 T · 5 T · 6 F · 7 F · 8 T");
 B("1 T — 문장 1.   2 F — 문장 3: 우유가 아니라 달걀노른자(egg yolk)다.   3 F — 문장 5: 색을 지키는 게 아니라 변한다(changes).   4 T — 문장 6.   5 T — 문장 7.   6 F — 문장 10: 불이 아니라 물(water)로부터 보호했다.   7 F — 문장 11: 누렇게 변하지 않았다(didn’t turn yellow).   8 T — 문장 11.  거짓 문장은 모두 본문에서 딱 한 요소(milk, keeps, fire, turned)를 비튼 것이다 — 그 한 단어를 찾는 것이 정독이다.", true);
-Hs("R2   사건 순서   ·   ⓒ → ⓓ → ⓐ → ⓑ");
+Hs("R2   사건 순서   ·   (c) → (d) → (a) → (b)");
 B("ⓒ 화가들이 노른자를 유화 물감에 섞는다(문장 6) → ⓓ 물감이 걸쭉해진다(문장 6) → ⓐ 물감이 갈라지거나 주름지지 않는다(문장 7) → ⓑ 그림이 좋은 상태로 오래 남는다(문장 8·11). 원인에서 결과로 이어지는 사슬을 따라가면 순서가 보인다.", true);
-Hs("R3   영영풀이   ·   1 ⓒ · 2 ⓔ · 3 ⓐ · 4 ⓑ · 5 ⓕ · 6 ⓓ");
+Hs("R3   영영풀이   ·   1 (c) · 2 (e) · 3 (a) · 4 (b) · 5 (f) · 6 (d)");
 B("wrinkle = 작은 주름이 지다 · mix = 다른 것들을 한데 섞다 · crack = 표면에 가는 금이 가며 갈라지다 · condition = 어떤 것이 놓인 상태 · guard = 안전하게 지켜 주는 사람이나 것 · last = 한동안 계속되다(last는 '마지막'이라는 뜻도 있는 다의어!).", true);
 Hs("R4   어법 기초   ·   (1) used  (2) their  (3) changes  (4) have");
 B("(1) Long ago(옛날에)는 과거 — used.   (2) 뒤에 명사 paint가 있으니 소유격 — their.   (3) 주어 Oil paint는 3인칭 단수 — changes.   (4) 조동사 might 뒤에는 동사원형 — have. 2면 분석 Tip의 '조동사+동사 한 덩어리' 원칙이다.", true);

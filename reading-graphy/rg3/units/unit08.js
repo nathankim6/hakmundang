@@ -425,7 +425,7 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R2 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 T · 3 F · 4 T · 5 F · 6 F · 7 T · 8 F");
 B("1 T — 문장 1.   2 T — 문장 2.   3 F — 문장 3: 너무 싸진(cheap) 것이 아니라 너무 비싸졌다(expensive).   4 T — 문장 7.   5 F — 문장 8: 더 비싼 것이 아니라 더 쌌다(cheaper).   6 F — 문장 9: 처음부터 계획한 것이 아니라 우연히(accidentally) 일어났다.   7 T — 문장 11.   8 F — 문장 12: 덜 편한 것이 아니라 더 편하다고(more convenient) 느꼈다.  거짓 문장은 모두 한 요소(cheap, more expensive, planned, less)만 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓐ → ⓓ → ⓒ");
+Hs("R2   사건 순서   ·   (b) → (a) → (d) → (c)");
 B("ⓑ 양철통 값이 너무 비싸진다(문장 3) → ⓐ 실크 주머니로 샘플을 보내기 시작한다(문장 7) → ⓓ 일부 고객이 주머니째 끓는 물에 넣는다(문장 11) → ⓒ 티백이 큰 인기를 얻는다(문장 13). 문장 9는 '다음에 일어난 일'을 미리 알려 주는 예고 문장이어서, 서술 순서와 사건 순서가 한 번 어긋난다.", true);
 K.push(sp(70));
 K.push(T([W], [new TableRow({ children: [cel([

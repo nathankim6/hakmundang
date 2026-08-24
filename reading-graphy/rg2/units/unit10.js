@@ -465,7 +465,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓒ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓒ가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (c)가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -775,7 +775,7 @@ B("2-1   문장 2 when — 시력을 잃은 '때'를 알려 준다.   문장 4 H
 B("2-2   [B] 앱 등장(문장 4: However와 함께 Be My Eyes가 나타난다), [E] 기대(문장 12: 삶이 나아지기를 바란다). 보기의 '가격 비교'는 이 글에 없는 역할이다. [A] 소개 → [B] 앱 등장 → [C] 쓰임 → [D] 변화 → [E] 기대 — 소개형 설명문의 전형적 흐름이다.");
 B("2-3   정답 ①. 앱의 정체와 쓰임, 새 기능을 사실 위주로 알려 주는 설명문이다. ② 가격·명령문이 없으니 광고가 아니고, ③ 날짜와 '나의 하루'가 없으니 일기도, ④ Dear·받는 사람이 없으니 편지도 아니다.");
 B("[학습 포인트]   However와 But은 글의 방향을 바꾸는 신호다. 문장 4의 However 앞뒤를 비교하면 '보이지 않는 삶'에서 '앱과 함께하는 삶'으로 이야기가 넘어간 것이 한눈에 보인다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 AI · amazing things     3-3 ⓒ → ⓐ → ⓓ → ⓑ");
+Hs("STEP 3   주제문 만들기   ·   3-1 AI · amazing things     3-3 (c) → (a) → (d) → (b)");
 B("3-1  재료 찾기 — (2) 문장 10에서 AI에 ○: 새로 더해지는 기능의 이름이다. video calls는 이미 있던 방식일 뿐. (3) 문장 12에서 amazing things에 ○: 시각장애인이 하게 될 일이다. product labels는 자원봉사자가 읽어 주는 예시다.");
 B("3-2  뼈대 채우기 — (1) Volunteers  (2) AI  (3) amazing things.  넣으면 Volunteers and AI in Be My Eyes help blind people do more amazing things.가 완성된다.");
 B("3-3  정답 순서 — ⓒ Volunteers and AI → ⓐ in Be My Eyes → ⓓ help blind people → ⓑ do more amazing things.");
@@ -794,9 +794,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 T · 3 F · 4 T · 5 T · 6 F · 7 F · 8 F");
 B("1 T — 문장 2.   2 T — 문장 3.   3 F — 문장 5: 문자 메시지가 아니라 영상 통화(video calls)로 연결한다.   4 T — 문장 6.   5 T — 문장 7.   6 F — 문장 8: 상표만이 아니라 우편물·사진 설명·길 안내까지 한다.   7 F — 문장 10: 가상현실이 아니라 인공지능(AI)이다.   8 F — 문장 11: 자원봉사자는 여전히(still) 중요하다.  거짓 문장은 모두 딱 한 요소(text messages, only, virtual reality, no longer)를 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓓ → ⓒ → ⓐ");
+Hs("R2   사건 순서   ·   (b) → (d) → (c) → (a)");
 B("ⓑ 13살에 시력을 대부분 잃는다(문장 2) → ⓓ 밝고 어두운 것만 구분하게 된다(문장 3) → ⓒ 자원봉사자들이 대신 설명해 주기 시작한다(문장 5–7) → ⓐ 앱이 AI를 더하기 시작한다(문장 10). 글은 현재(문장 1)로 시작해 과거(문장 2)로 돌아간다 — 서술 순서와 사건 순서가 다른 지점이다.", true);
-Hs("R3   영영풀이   ·   1 ⓔ · 2 ⓒ · 3 ⓐ · 4 ⓕ · 5 ⓑ · 6 ⓓ");
+Hs("R3   영영풀이   ·   1 (e) · 2 (c) · 3 (a) · 4 (f) · 5 (b) · 6 (d)");
 B("blind = 볼 수 없는 · sight = 사물을 보는 힘(시력) · volunteer = 돈을 받지 않고 돕는 사람 · describe = 어떤 것이 어떠한지 말해 주다 · guide = 누군가에게 길을 알려 주다 · improve = 무언가를 더 좋게 만들다.", true);
 Hs("R4   어법 기초   ·   (1) can only tell  (2) is  (3) has  (4) describe");
 B("(1) 조동사 can 뒤에는 동사원형 — can tell.   (2) 주어 an app은 단수이므로 is helping. 2면 구문에서 배운 진행형이다.   (3) 주어 It에 맞는 3인칭 단수 — has.   (4) 주어 These volunteers는 복수 — describe.", true);

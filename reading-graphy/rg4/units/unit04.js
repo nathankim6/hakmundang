@@ -467,7 +467,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓑ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓑ가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (b)가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -777,7 +777,7 @@ B("2-1   문장 2 because — 별명이 붙은 '이유'.   문장 3 But — 나�
 B("2-2   [C] 문제(문장 6–8: 빠른 번식과 강한 독으로 토종 동물을 위협한다), [E] 마무리(문장 12–13: 두꺼비 수를 줄이는 데 도움이 된다). 보기의 '광고'는 이 글에 없는 역할이다.");
 B("2-3   정답 ①. 흰따오기와 수수두꺼비라는 대상을 소개하고 사실을 알려 주는 설명문이다. ② 가격·명령문이 없어 광고가 아니고, ③ I나 날짜가 없어 일기도 아니다.");
 B("[학습 포인트]   문장 3의 But이 글 전체의 방향을 바꾼다. 마무리 직전이 아니라 도입부의 But은 '이제부터 진짜 이야기'라는 신호다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 control · Australia     3-3 ⓑ → ⓓ → ⓐ → ⓒ");
+Hs("STEP 3   주제문 만들기   ·   3-1 control · Australia     3-3 (b) → (d) → (a) → (c)");
 B("3-1  재료 찾기 — (2) 문장 12에서 control에 ○: 따오기가 두꺼비 수에 하는 일이다. raise(늘리다)는 정반대. (3) 문장 8에서 Australia에 ○: 이 모든 일이 벌어지는 곳이다.");
 B("3-2  뼈대 채우기 — (1) white ibis  (2) control  (3) Australia.  넣으면 The white ibis is helping control the number of cane toads in Australia.가 완성된다.");
 B("3-3  정답 순서 — ⓑ The white ibis → ⓓ is helping control → ⓐ the number of cane toads → ⓒ in Australia.");
@@ -796,9 +796,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T — 문장 2.   2 F — 문장 4: 1830년대가 아니라 1930년대다.   3 T — 문장 5.   4 F — 문장 6: 느리게가 아니라 빠르게(rapidly) 퍼졌다.   5 T — 문장 7.   6 F — 문장 8: 천적이 많았던 게 아니라 없었다(no).   7 T — 문장 10.   8 F — 문장 11: 씻지 않고가 아니라 물에 씻은 뒤 먹는다.  거짓 문장은 모두 한 요소만 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓐ → ⓒ → ⓑ → ⓓ");
+Hs("R2   사건 순서   ·   (a) → (c) → (b) → (d)");
 B("ⓐ 1930년대에 수수두꺼비가 호주에 들어온다(문장 4) → ⓒ 빠르게 퍼지며 토종 동물을 죽인다(문장 6–7) → ⓑ 흰따오기가 안전하게 먹는 법을 익힌다(문장 9) → ⓓ 공중에 던져 독을 빼고 물에 씻어 먹는다(문장 10–11). 문제가 먼저, 해결이 나중이다.", true);
-Hs("R3   영영풀이   ·   1 ⓒ · 2 ⓔ · 3 ⓐ · 4 ⓕ · 5 ⓑ · 6 ⓓ");
+Hs("R3   영영풀이   ·   1 (c) · 2 (e) · 3 (a) · 4 (f) · 5 (b) · 6 (d)");
 B("snatch = 재빨리 낚아채다 · spread = 여러 곳으로 퍼지다 · poison = 몸을 아주 아프게 하는 것(독) · native = 그곳에서 원래부터 살아온 · threat = 해를 끼칠 수 있는 것(위협) · flip = 재빨리 뒤집다.", true);
 Hs("R4   어법 기초   ·   (1) is  (2) were  (3) had  (4) eating");
 B("(1) there 뒤의 진짜 주어는 a bird(단수) — is.   (2) 주어 Cane toads는 복수 — were.   (3) became(과거)과 시제를 맞춘다 — had.   (4) 전치사 before 뒤에는 동명사 — eating.", true);

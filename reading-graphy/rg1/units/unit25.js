@@ -468,7 +468,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓑ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓑ가 맨 앞 — Although로 시작해요!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (b)가 맨 앞 — Although로 시작해요!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -779,7 +779,7 @@ B("2-1   문장 3 But — 국민 음식이라더니 바로 먹으면 아프다�
 B("2-2   [B] 문제점(문장 3–4: 바로 먹으면 아프다, 해로운 것이 있다), [E] 마무리(문장 10–13: 호불호가 갈려도 특별한 전통 음식이다). 보기의 '가격 안내'는 이 글에 없는 역할이다. [A] 소개 → [B] 문제점 → [C] 해결 → [D] 만드는 법 → [E] 마무리의 흐름이다.");
 B("2-3   정답 ①. 하칼이 무엇이고 어떻게 만드는지 사실을 알려 주는 설명문이다. ② 광고의 신호(사라는 말·가격)가 없고, ③ 일기의 I·오늘도, ④ 편지의 Dear도, ⑤ 동화의 상상 속 인물도 없다.");
 B("[학습 포인트]   연결어만 표시해도 글의 지도가 그려진다. But(반전), So(결과), Then(순서), Although(~이지만). 특히 마지막의 Although 뒤에 글쓴이가 진짜 하고 싶은 말이 온다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 strong · special     3-3 ⓑ → ⓓ → ⓐ → ⓒ");
+Hs("STEP 3   주제문 만들기   ·   3-1 strong · special     3-3 (b) → (d) → (a) → (c)");
 B("3-1  재료 찾기 — (2) 문장 12에서 strong에 ○: 냄새의 상태다. sweet는 본문과 반대다. (3) 문장 12에서 special에 ○: 아이슬란드 사람들의 평가다. cheap(값싼)은 본문에 없는 말이다.");
 B("3-2  뼈대 채우기 — (1) Hákarl  (2) strong  (3) special.  넣으면 Although it smells strong, Hákarl is a very special food for Icelanders.가 완성된다.");
 B("3-3  정답 순서 — ⓑ Although it smells strong, → ⓓ Hákarl → ⓐ is a very special food → ⓒ for Icelanders.");
@@ -798,9 +798,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T — 문장 1.   2 F — 문장 2: 고래(whale)가 아니라 상어(shark)로 만든다.   3 T — 문장 3.   4 F — 문장 5: 삶는(boil) 것이 아니라 발효시키고 말린다.   5 T — 문장 7.   6 F — 문장 8: 4~5일(days)이 아니라 4~5달(months)이다.   7 T — 문장 10.   8 F — 문장 13: 자랑스러워한다.  거짓 문장은 모두 딱 한 요소(whale, boil, days, not proud)를 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓓ → ⓐ → ⓒ → ⓑ");
+Hs("R2   사건 순서   ·   (d) → (a) → (c) → (b)");
 B("ⓓ 상어 고기를 손질한다(문장 7) → ⓐ 상자에 넣어 여러 주 둔다(문장 7) → ⓒ 바깥에 걸어 4~5달 말린다(문장 8) → ⓑ 해로운 것이 사라지고 먹을 준비가 된다(문장 9). ⓑ의 내용은 문장 6에서 먼저 서술되지만, 실제로는 맨 마지막에 일어나는 일이다 — 서술 순서와 사건 순서가 다른 지점이다.", true);
-Hs("R3   영영풀이   ·   1 ⓑ · 2 ⓔ · 3 ⓕ · 4 ⓐ · 5 ⓓ · 6 ⓒ");
+Hs("R3   영영풀이   ·   1 (b) · 2 (e) · 3 (f) · 4 (a) · 5 (d) · 6 (c)");
 B("dish = 특별한 방법으로 만든 요리 · harmful = 사람을 아프게 하거나 다치게 하는 · ferment = 오래 두고 먹도록 음식을 천천히 변하게 하다 · hang = 위에 걸어 두다 · ready = 이제 쓰거나 먹을 수 있는 · proud = 자기가 가진 것을 자랑스러워하는.", true);
 Hs("R4   어법 기초   ·   (1) is  (2) has  (3) to dry  (4) are");
 B("(1) 주어 It은 단수 — is. be동사+과거분사(is made)가 한 덩어리의 수동태다.   (2) 주어 The shark는 3인칭 단수 — has.   (3) '말리기 위해'는 to+동사원형 — to dry. 2면 구문에서 배운 그 문장이다.   (4) 주어 They는 복수 — are.", true);

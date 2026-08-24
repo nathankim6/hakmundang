@@ -769,7 +769,7 @@ B("2-1   문장 2 But \u2014 앞의 소개에서 방향을 바꾸는 '반전'.  
 B("2-2   [B] 제작 과정(문장 4\u20136: 현미경\u2192바늘 도구\u2192속눈썹 붓), [E] 마무리(문장 9: 작은 것도 큰 영향을 준다는 평가). 보기의 '광고'는 이 글에 없는 역할이다. [A] 소개 \u2192 [B] 제작 과정 \u2192 [C] 메시지 \u2192 [D] 당부 \u2192 [E] 마무리.");
 B("2-3   정답 \u2460. 한 예술가와 그의 작업 방식·메시지를 사실 그대로 알려 주는 설명문이다. \u2461 가격이나 사라는 말이 없어 광고가 아니고, \u2462\u00b7\u2463\u00b7\u2464의 형식적 신호(요리 순서·Dear·날짜)도 없다.");
 B("[학습 포인트]   First\u00b7Then처럼 순서를 알리는 말이 나오면 그 뒤는 과정 설명이다. 과정이 끝나는 지점에서 글쓴이의 평가가 시작된다 \u2014 그 자리가 주제문이다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 smallest · impact     3-3 \u24D1 \u2192 \u24D3 \u2192 \u24D2 \u2192 \u24D0");
+Hs("STEP 3   주제문 만들기   ·   3-1 smallest · impact     3-3 (b) \u2192 (d) \u2192 (c) \u2192 (a)");
 B("3-1  재료 찾기 \u2014 (2) 문장 9에서 smallest에 \u25cb: '가장 작은'이라는 뜻으로 이 글의 핵심 대비다. biggest는 정반대다. (3) 문장 9에서 impact에 \u25cb: 작은 것이 남기는 '영향'이다. problem은 문장 6의 세부 사항일 뿐이다.");
 B("3-2  뼈대 채우기 \u2014 (1) tiny artworks  (2) smallest  (3) impact.  넣으면 Wigan\u2019s tiny artworks show that even the smallest things can have a big impact.가 완성된다.");
 B("3-3  정답 순서 \u2014 \u24D1 Wigan\u2019s tiny artworks \u2192 \u24D3 show \u2192 \u24D2 that even the smallest things \u2192 \u24D0 can have a big impact.");
@@ -788,9 +788,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 T · 3 F · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T \u2014 문장 1.   2 T \u2014 문장 3.   3 F \u2014 문장 4: 쉬운 일(easy job)이 아니라 큰 도전(challenge)이다.   4 F \u2014 문장 5: 망원경(telescope)이 아니라 현미경(microscope)이다.   5 T \u2014 문장 6.   6 F \u2014 문장 6: 심장이 뛰는 동안(during)이 아니라 박동 사이(between)에 작업한다.   7 T \u2014 문장 7.   8 F \u2014 문장 8: 문제가 없는 게 아니라 세상이 위험에 처해 있다.  거짓 넷은 모두 한 요소만 비튼 것이다.", true);
-Hs("R2   제작 순서   ·   \u24D1 \u2192 \u24D2 \u2192 \u24D0 \u2192 \u24D3");
+Hs("R2   제작 순서   ·   (b) \u2192 (c) \u2192 (a) \u2192 (d)");
 B("\u24D1 현미경으로 작품을 들여다본다(문장 5) \u2192 \u24D2 바늘로 만든 도구로 형태를 깎는다(문장 5) \u2192 \u24D0 속눈썹으로 색을 칠한다(문장 6) \u2192 \u24D3 사람들이 작은 것의 가치를 깨닫는다(문장 9). 문장 5에는 두 단계가 한 문장에 담겨 있다 \u2014 '보는 일'이 '깎는 일'보다 먼저다.", true);
-Hs("R3   영영풀이   ·   1 \u24D2 · 2 \u24D4 · 3 \u24D1 · 4 \u24D5 · 5 \u24D3 · 6 \u24D0");
+Hs("R3   영영풀이   ·   1 (c) · 2 (e) · 3 (b) · 4 (f) · 5 (d) · 6 (a)");
 B("sculpture = 돌·나무·금속을 깎아 만든 예술품 · challenge = 해내기 어려운 일 · microscope = 아주 작은 것을 크게 보여 주는 도구 · pulse = 몸에서 느껴지는 피의 박동 · protect = 안전하게 지키다 · impact = 강한 영향.", true);
 Hs("R4   어법 기초   ·   (1) is  (2) has  (3) using  (4) to make");
 B("(1) 동명사 주어 Making ~는 하나로 보아 단수 취급 \u2014 is. 2면 구문 카드의 그 원칙이다.   (2) 주어 The artist는 3인칭 단수 \u2014 has.   (3) 전치사 by 뒤에는 동명사 \u2014 using.   (4) need 뒤에는 to+동사원형 \u2014 to make.", true);

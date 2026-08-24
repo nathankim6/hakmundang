@@ -452,7 +452,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓒ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓒ가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (c)가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -764,7 +764,7 @@ B("2-1   문장 3 Because of — 뉴톡이 문제를 겪는 '이유'.   문장 7
 B("2-2   [B] 땅의 특징(문장 4–6: 늘 얼어 있는 영구 동토층), [E] 경고(문장 13–14: 더 많은 마을이 그렇게 될지도). 보기의 '유래'는 이 글에 없는 역할이다. [A] 소개 → [B] 특징 → [C] 위기 → [D] 결정 → [E] 경고 — 문제를 다루는 설명문의 흐름이다.");
 B("2-3   정답 ①. 뉴톡이라는 마을의 사실을 알려 주는 설명문이다(현재시제, 대상의 이름과 특징). ② 광고의 신호(사라는 말·가격)가 없고, ③ 일기·④ 편지·⑤ 동화의 형식도 아니다.");
 B("[학습 포인트]   문장 7의 But이 이 글의 방향을 바꾼다 — 녹지 않던 땅이 녹기 시작하는 지점. 반전 연결어 뒤에 글의 진짜 문제가 온다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 move · climate change     3-3 ⓒ → ⓔ → ⓐ → ⓓ → ⓑ");
+Hs("STEP 3   주제문 만들기   ·   3-1 move · climate change     3-3 (c) → (e) → (a) → (d) → (b)");
 B("3-1  재료 찾기 — (2) 문장 11에서 move에 ○: 마을이 해야 하는 일이다. stay는 본문과 반대 방향. (3) 문장 13에서 climate change에 ○: 이사의 원인이다. cold weather는 문장 6의 사실일 뿐 원인이 아니다.");
 B("3-2  뼈대 채우기 — (1) Newtok  (2) move  (3) climate change.  넣으면 Newtok became one of the first villages to move because of climate change.가 완성된다.");
 B("3-3  정답 순서 — ⓒ Newtok → ⓔ became → ⓐ one of the first villages → ⓓ to move → ⓑ because of climate change.");

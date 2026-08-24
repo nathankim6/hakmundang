@@ -463,7 +463,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓒ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓒ가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (c)가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -772,7 +772,7 @@ B("2-1   문장 2 Even — 작은 것조차 그렇다는 '강조'.   문장 6 th
 B("2-2   [B] 아이디어(문장 3–4: 폐열로 수영장을 데우는 발상과 설치), [D] 효과(문장 7–9: 가스비 62% 절감과 냉각비 절약). 보기의 '요리법'은 이 글에 없는 역할이다. [A] 배경 → [B] 아이디어 → [C] 방법 → [D] 효과 → [E] 평가.");
 B("2-3   정답 ①. 새로운 기술이 어떻게 쓰이는지 사실을 알려 주는 설명문이다(문장 4–6). ② 가격·명령문이 없어 광고가 아니고, ③ I나 날짜가 없어 일기도 아니다.");
 B("[학습 포인트]   배경 → 아이디어 → 방법 → 효과 → 평가는 기술 소개 글의 기본 골격이다. 숫자(62%)는 효과 구간에 나온다는 것도 기억해 두자.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 waste heat · warm     3-3 ⓒ → ⓑ → ⓓ → ⓐ");
+Hs("STEP 3   주제문 만들기   ·   3-1 waste heat · warm     3-3 (c) → (b) → (d) → (a)");
 B("3-1  재료 찾기 — (2) 문장 3에서 waste heat에 ○: 회사가 가져다 쓰는 재료다. cold air는 본문에 없다. (3) 문장 3에서 warm에 ○: 그 열로 수영장을 '데운다'. cool은 반대 방향이다.");
 B("3-2  뼈대 채우기 — (1) Deep Green  (2) waste heat  (3) warm.  넣으면 Deep Green uses the waste heat from its data center to warm a pool.이 완성된다.");
 B("3-3  정답 순서 — ⓒ Deep Green uses → ⓑ the waste heat → ⓓ from its data center → ⓐ to warm a pool.");
@@ -791,9 +791,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 F · 7 T · 8 F");
 B("1 T — 문장 1.   2 F — 문장 2: little(거의 없다)이 아니라 a lot of(많이) 만든다.   3 T — 문장 4.   4 F — 문장 5: 물(water)이 아니라 기름(oil)이 컴퓨터를 감싼다.   5 T — 문장 6.   6 F — 문장 8: 26%가 아니라 62%다.   7 T — 문장 10.   8 F — 문장 11: 그만두는 것이 아니라 더 많은 수영장에 할 계획이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓒ → ⓐ → ⓓ");
+Hs("R2   사건 순서   ·   (b) → (c) → (a) → (d)");
 B("ⓑ 데이터 센터의 컴퓨터가 폐열을 낸다(문장 2·5) → ⓒ 컴퓨터를 감싼 기름이 그 열을 붙잡는다(문장 5) → ⓐ 열 교환기가 수영장 물을 데운다(문장 6) → ⓓ 수영장이 가스 소비를 62% 줄인다(문장 8). 본문은 결과(문장 3)를 먼저 말하지만, 실제 순서는 열이 옮겨 가는 길을 따라간다.", true);
-Hs("R3   영영풀이   ·   1 ⓒ · 2 ⓔ · 3 ⓐ · 4 ⓕ · 5 ⓓ · 6 ⓑ");
+Hs("R3   영영풀이   ·   1 (c) · 2 (e) · 3 (a) · 4 (f) · 5 (d) · 6 (b)");
 B("store = 나중에 쓰려고 보관하다 · install = 기계를 쓸 수 있게 설치하다 · surround = 무언가를 빙 둘러싸다 · capture = 붙잡아 두다 · transfer = 한 곳에서 다른 곳으로 옮기다 · expenses = 어떤 일에 쓰는 돈.", true);
 Hs("R4   어법 기초   ·   (1) are  (2) produce  (3) to warm  (4) plans");
 B("(1) 주어 Data centers는 복수 — are.   (2) 주어 ones도 복수 — produce.   (3) '~하기 위해'는 to+동사원형 — to warm. 2면 구문에서 배운 그 문장이다.   (4) 주어 Deep Green은 3인칭 단수 — plans.", true);

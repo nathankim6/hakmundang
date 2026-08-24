@@ -463,7 +463,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓒ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓒ가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (c)가 맨 앞 — 주인공이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -773,7 +773,7 @@ B("2-1   문장 3 while — 시청이 만든 슬로건과 주민이 만든 슬�
 B("2-2   [B] 만드는 사람(문장 3–5: 시청이 만드나, 주민이 만드나), [E] 마무리(문장 12: 슬로건은 주민의 정체성을 보여 준다). 보기의 '요리법'은 이 글에 없는 역할이다.");
 B("2-3   정답 ①. 슬로건이 무엇인지 설명하고 허쉬와 그래비티를 예로 든 설명문이다. 가격·명령문이 없어 광고가 아니고, 날짜와 I가 없어 일기도 아니다.");
 B("[학습 포인트]   설명문에서 예시(For instance, Here are ~)가 나오면 그 앞 문장이 곧 주장이다. 예시를 읽기 전에 앞 문장을 다시 확인하는 습관을 들이자.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 identities and creativity · the people who live there     3-3 ⓒ → ⓑ → ⓓ → ⓐ");
+Hs("STEP 3   주제문 만들기   ·   3-1 identities and creativity · the people who live there     3-3 (c) → (b) → (d) → (a)");
 B("3-1  재료 찾기 — (2) 문장 12에서 identities and creativity에 ○: 슬로건이 보여 주는 두 가지다. (3) the people who live there에 ○: 그 정체성의 주인이다. 관광객이 아니라 '사는 사람'이라는 점이 핵심이다.");
 B("3-2  뼈대 채우기 — (1) City slogans  (2) identities and creativity  (3) the people who live there.");
 B("3-3  정답 순서 — ⓒ City slogans → ⓑ show the unique identities → ⓓ and creativity → ⓐ of the people who live there.");
@@ -792,9 +792,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 F · 4 T · 5 F · 6 T · 7 T · 8 F");
 B("1 T — 문장 1.   2 F — 문장 3: 주민이 만드는 슬로건도 있다.   3 F — 문장 5: 유머를 쓴 도시들이 있다.   4 T — 문장 7.   5 F — 문장 8: 1890년이 아니라 1990년부터다.   6 T — 문장 9.   7 T — 문장 11.   8 F — 문장 11: down to earth는 '웃긴'이 아니라 '실용적인'이라는 뜻이다.  거짓 넷은 모두 한 요소(only, never, 1890, funny)만 비튼 것이다.", true);
-Hs("R2   생각의 차례   ·   ⓒ → ⓑ → ⓐ → ⓓ");
+Hs("R2   생각의 차례   ·   (c) → (b) → (a) → (d)");
 B("ⓒ 슬로건은 도시가 자신을 알리는 말이라고 밝힌다(문장 1–2) → ⓑ 누가 왜 만드는지 설명한다(문장 3–5) → ⓐ 허쉬와 그래비티 두 사례를 든다(문장 6–11) → ⓓ 슬로건이 주민의 정체성을 보여 준다고 맺는다(문장 12). 설명문은 대개 주장 → 설명 → 예시 → 결론으로 흐른다.", true);
-Hs("R3   영영풀이   ·   1 ⓒ · 2 ⓐ · 3 ⓓ · 4 ⓕ · 5 ⓔ · 6 ⓑ");
+Hs("R3   영영풀이   ·   1 (c) · 2 (a) · 3 (d) · 4 (f) · 5 (e) · 6 (b)");
 B("slogan = 기억하기 쉬운 짧은 문구 · resident = 그곳에 사는 사람 · attract = 오고 싶게 만들다 · unique = 다른 어떤 것과도 같지 않은 · celebrate = 중요한 것을 특별하게 기리다 · practical = 실제 생활에 쓸모 있는.", true);
 Hs("R4   어법 기초   ·   (1) use  (2) are created  (3) has been  (4) is");
 B("(1) 주어 Cities는 복수 — use.   (2) 슬로건은 만들어지는 쪽이므로 수동태 are created. 2면 구문에서 배운 자리다.   (3) 주어 This는 단수 — has been.   (4) 도시 이름 Hershey는 단수 — is.", true);

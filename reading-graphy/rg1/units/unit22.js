@@ -464,7 +464,7 @@ K.push(T([W], [new TableRow({ children: [cel(
 K.push(spF(6, 200, 0.05));
 K.push(p([t("순서   ", { size: 17, bold: true, color: NAVY2 }),
   t("(  ⓑ  )", { size: 19 }), t("  →  (      )  →  (      )  →  (      )", { size: 19 }),
-  t("      ⓑ이 맨 앞 — 만든 사람이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
+  t("      (b)이 맨 앞 — 만든 사람이 주어!", { size: 14, color: GOLD, bold: true })], { after: 0, align: AlignmentType.CENTER }));
 
 /* ═══════════ 6~7면 [DATA] STEP 4 요약 · STEP 5 같은 뜻 찾기 ═══════════ */
 K.push(brk());
@@ -776,7 +776,7 @@ B("2-1   문장 2 But — 귀여운 소개에서 문제로 방향이 바뀌는 '
 B("2-2   [B] 문제(문장 3–4: 앞다리가 반대로 휘어 서지도 걷지도 못한다), [E] 마무리(문장 12–14: 두 달 뒤 혼자 걷고 친구들과 뛰논다). 보기의 '가격 안내'는 이 글에 없는 역할이다. [A] 소개 → [B] 문제 → [C] 도움 요청 → [D] 해결 → [E] 마무리 — 문제 해결형 이야기의 전형적인 흐름이다.");
 B("2-3   정답 ①. 실제로 있었던 일을 시간 순서대로 들려주는 이야기다 — 등장인물(므시투니·닥터 아라)과 사건, 과거시제가 이어진다. ② 가격·명령문이 없어 광고가 아니고, ③ 요리법·④ 받는 사람·⑤ 시의 형식도 아니다.");
 B("[학습 포인트]   연결어만 표시해도 글의 지도가 그려진다. But(반전) · So(결과) · then(순서). 특히 마지막 But은 '그래도 해냈다'는 결말의 신호다.", true);
-Hs("STEP 3   주제문 만들기   ·   3-1 special · walk     3-3 ⓑ → ⓐ → ⓓ → ⓒ");
+Hs("STEP 3   주제문 만들기   ·   3-1 special · walk     3-3 (b) → (a) → (d) → (c)");
 B("3-1  재료 찾기 — (2) 문장 11에서 special에 ○: 므시투니만을 위해 새로 만든 보조기다. cheap(값싼)은 본문에 없다. (3) 문장 13에서 walk에 ○: 두 달 뒤 해낸 일이다. swim은 본문에 없다. 주제문의 재료는 언제나 본문 안에 있다.");
 B("3-2  뼈대 채우기 — (1) braces  (2) special  (3) walk.  넣으면 Dr. Ara made special braces for Msituni, and she could walk by herself.가 완성된다.");
 B("3-3  정답 순서 — ⓑ Dr. Ara made special braces → ⓐ for Msituni, → ⓓ and she could walk → ⓒ by herself.  완성 문장: Dr. Ara made special braces for Msituni, and she could walk by herself.");
@@ -795,9 +795,9 @@ K.push(...tab("정답 및 해설", "RE:RIGHT R1 – R7 · 전문 해석", CHAR, 
 K.push(sp(190));
 Hs("R1   True / False   ·   1 T · 2 F · 3 T · 4 F · 5 T · 6 T · 7 F · 8 F");
 B("1 T — 문장 1.   2 F — 문장 3: 뒷다리가 아니라 앞다리(front legs)다.   3 T — 문장 5.   4 F — 문장 7: 많은 기린과 일한 게 아니라 한 번도(never) 없었다.   5 T — 문장 8.   6 T — 문장 10.   7 F — 문장 12: 쉬운 게 아니라 힘들었다(hard).   8 F — 문장 13: 두 주가 아니라 두 달(two months) 뒤다.  거짓 문장은 모두 본문에서 딱 한 요소(back, many, easy, two weeks)를 비튼 것이다.", true);
-Hs("R2   사건 순서   ·   ⓑ → ⓓ → ⓐ → ⓒ");
+Hs("R2   사건 순서   ·   (b) → (d) → (a) → (c)");
 B("ⓑ 앞다리가 반대로 휜다(문장 3) → ⓓ 사육사들이 닥터 아라에게 도움을 청한다(문장 5) → ⓐ 닥터 아라가 므시투니만을 위한 보조기를 만든다(문장 11) → ⓒ 두 달 뒤 보조기 없이 혼자 걷는다(문장 13). 이 글은 일이 일어난 순서 그대로 서술되어 있으므로, 문장 번호를 따라가면 순서가 보인다.", true);
-Hs("R3   영영풀이   ·   1 ⓔ · 2 ⓒ · 3 ⓐ · 4 ⓕ · 5 ⓑ · 6 ⓓ");
+Hs("R3   영영풀이   ·   1 (e) · 2 (c) · 3 (a) · 4 (f) · 5 (b) · 6 (d)");
 B("bend = 곧지 않고 휘다 · problem = 풀어야 할 좋지 않은 일 · zookeeper = 동물원 동물을 돌보는 사람 · experience = 전에 해 본 일들 · brace = 몸의 한 부분을 제자리에 잡아 주는 것 · study = 무언가를 자세히 배우다.", true);
 Hs("R4   어법 기초   ·   (1) was  (2) were  (3) was  (4) walk");
 B("(1) There 뒤의 진짜 주어는 a baby giraffe(단수) — was.   (2) 주어 legs는 복수 — were.   (3) 동명사 주어 Making her braces는 단수 취급 — was. 2면 구문에서 배운 그 원칙이다.   (4) 조동사 could 뒤에는 동사원형 — walk.", true);
