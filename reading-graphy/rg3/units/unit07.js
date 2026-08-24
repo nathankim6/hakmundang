@@ -196,7 +196,17 @@ K.push(spF(2, 75, 0.07));
 
 K.push(sp(40));
 
-/* 먼저 보기 — 다 표시된 문장 4을 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
+/* 먼저 보기 — 다 표시된 문장 (문장 4) */
+const SGRN = "2E7D32", MRED = "C0392B", MGRY = "8A8F94";
+const exSeg = (wordRuns, label, labColor, wid, topMark) => cel([
+  new Paragraph({ children: [t(topMark || "\u00A0", { size: 13, bold: true, color: NAVY })], alignment: AlignmentType.CENTER, spacing: { after: 4, line: 150 } }),
+  new Paragraph({ children: wordRuns, alignment: AlignmentType.CENTER, spacing: { after: 18, line: 270 } }),
+  new Paragraph({ children: [t(label, { size: 12, bold: true, color: labColor })], alignment: AlignmentType.CENTER, spacing: { after: 0, line: 160 } }),
+], { w: wid, va: VerticalAlign.CENTER, m: { top: 14, bottom: 14, left: 20, right: 20 } });
+K.push(T([W], [new TableRow({ children: [cel([
+  new Paragraph({ children: [
+    t("먼저 보기", { size: 14, bold: true, color: GOLD, ls: 10 }),
+    t("   ORUN FLOW를 쓰기 전에, 다 표시된 문장 4을 먼저 구경하세요. 라벨은 단어 ", { size: 15, color: SUB }),
     t("바로 밑", { size: 15, bold: true, color: INK }), t("에!", { size: 15, color: SUB }),
   ], spacing: { after: 42, line: 212 } }),
   T([700, 2900, 1300, 2100, 1930], [new TableRow({ children: [
