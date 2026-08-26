@@ -1,0 +1,86 @@
+
+<div id="app">
+  <header class="bar">
+    <div class="brand">
+      <b>ORUN NEXUS UNIVERSE</b>
+      <span id="brand-sub">옳은영어 커리큘럼 유니버스</span>
+    </div>
+    <div class="seg gal" id="gal-pick" role="group" aria-label="은하 선택"></div>
+    <div class="spacer"></div>
+    <div class="legend" id="legend" aria-label="학년별 전류 색상"></div>
+    <div class="readout"><span class="dot"></span> NODES <b id="rd-nodes">—</b></div>
+    <div class="readout">CHAPTERS <b id="rd-ch">—</b></div>
+    <div class="readout">SHEETS <b id="rd-sheets">—</b></div>
+    <button class="tool" id="btn-solo" aria-pressed="false">패널 접기</button>
+  </header>
+
+  <main>
+    <aside class="rail l" id="rail" aria-label="커리큘럼 패널">
+      <section class="rsec">
+        <div class="rail-hd"><h2>Concept Chain</h2><p>큰개념 → 맵핑 → 세부설명</p></div>
+        <div class="rail-body" id="sec-chain"></div>
+      </section>
+      <section class="rsec">
+        <div class="rail-hd"><h2>Grade Gradient</h2><p>학년별 차등개념</p></div>
+        <div class="rail-body" id="sec-grade"></div>
+      </section>
+      <section class="rsec last">
+        <div class="rail-hd"><h2>Direct Access</h2><p>교재 · 단원 바로 선택</p></div>
+        <div class="rail-body" id="sec-jump"></div>
+      </section>
+    </aside>
+    <div id="stage">
+      <canvas id="map"></canvas>
+      <div class="stage-crumb" id="crumb"></div>
+      <div class="stage-tools">
+        <div class="seg" id="grade-filter" role="group" aria-label="학년 필터"></div>
+        <button class="tool" id="btn-uni" disabled>우주로</button>
+        <button class="tool" id="btn-all" aria-pressed="false">전체 전개</button>
+        <button class="tool" id="btn-home">코어로</button>
+        <button class="tool" id="btn-fit">화면 맞춤</button>
+        <button class="tool" id="btn-spin" aria-pressed="true">모션 정지</button>
+        <select class="tool fxsel" id="fx-pick" aria-label="연결선 테마"></select>
+      </div>
+      <div class="hint">
+        <div><b>은하 클릭</b> 진입 · <b>ESC</b> 우주로 · <b>드래그</b> 회전 · <b>휠</b> 확대</div>
+        <div><b>← →</b> 회전 · <b>↑ ↓</b> 기울기 · <b>Shift+←→↑↓</b> 이동 · <b>+ −</b> 확대</div>
+        <div>최종 노드 클릭 → 시험지 발행</div>
+      </div>
+      <div id="boot"><div class="bootin" id="bootin"></div></div>
+    </div>
+  </main>
+
+  <footer class="bar bot">
+    <div class="readout" id="rd-path">CORE // 대기</div>
+    <div class="spacer"></div>
+    <div class="readout">옳은영어 ORUN ENGLISH</div>
+  </footer>
+</div>
+
+<div id="modal" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+  <div class="sheetwrap">
+    <div class="sheet-hd">
+      <div class="t">
+        <div class="eyebrow" id="sheet-eyebrow"></div>
+        <h2 id="sheet-title"></h2>
+      </div>
+      <button class="x" id="btn-close" aria-label="닫기">✕</button>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" id="tab-b" aria-selected="true" aria-controls="preview">POP QUIZ</button>
+      <button class="tab" role="tab" id="tab-p" aria-selected="false" aria-controls="preview">GRAMMAR CHECK</button>
+      <div class="spacer"></div>
+      <button class="keytog" id="btn-key" aria-pressed="false">정답 보기</button>
+    </div>
+    <div class="preview" id="preview" role="tabpanel"><div class="pages" id="pages"></div></div>
+    <div class="sheet-ft">
+      <div class="note" id="sheet-note"></div>
+      <button class="act" id="btn-docx">Word 저장</button>
+      <button class="act" id="btn-pdf">PDF 저장</button>
+      <button class="act gold" id="btn-print">인쇄</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
