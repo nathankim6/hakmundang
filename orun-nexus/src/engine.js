@@ -3,26 +3,53 @@
    ============================================================ */
 function readData(id){ return JSON.parse(document.getElementById(id).textContent); }
 
-/* 우주 배치. pos 는 우주 좌표(x 가로 · y 높이(-가 위) · z 깊이)이고 세 은하의
-   합이 0이라 우주 모드의 무게중심이 화면 한가운데 온다. orient 는 은하마다
+/* ── 우주 구도 ────────────────────────────────────────────────────────
+   세 은하를 눈대중 좌표로 흩어 두었더니 크기도 높이도 제각각이었다 —
+   앞으로 나온 은하는 원근 때문에 혼자 커지고, 한쪽으로 쏠려 기울어 보였다.
+
+   이제는 카메라를 기준으로 배치한다.
+   · 우주 모드의 요(U_YAW)를 0으로 고정하면 세계의 X축이 화면의 가로축과
+     그대로 겹친다 — 좌우를 ±U_SX 로 두는 것만으로 화면에서 정확히 대칭이 된다.
+   · 세 은하를 카메라에서 같은 깊이(U_DEPTH)에 두면 원근 배율이 같아
+     원반 크기가 셋 다 똑같아진다. 높이를 바꾸면 깊이가 따라 변하므로,
+     uPlace() 가 그만큼 z 를 되돌려 깊이를 일정하게 지킨다.
+   구도는 가운데가 낮고 양옆이 올라간 좌우 대칭 삼각형 — 가장 무거운
+   문법 은하가 한가운데 아래에 앉아 전체를 받친다. */
+const U_YAW=0, U_PITCH=0.46, U_PUSH=1250;
+const U_DEPTH=1320;          /* 카메라에서 세 은하까지의 공통 깊이 */
+const U_SX=1180;             /* 좌우 은하의 가로 간격             */
+const U_UP=-390, U_DOWN=450; /* 양옆은 올리고 가운데는 내린다      */
+/* 이름판이 앉는 높이. 원반의 위쪽 테두리는 중심에서 253 남짓 올라오므로
+   그보다 넉넉히 위여야 글자가 별밭에 묻히지 않는다. */
+const NP_Y=-430;
+function uPlace(sx,wy){
+  const sp=Math.sin(U_PITCH), cp=Math.cos(U_PITCH);
+  /* 화면 깊이 z2 = wy·sin(pitch) + wz·cos(pitch) 가 U_DEPTH 로 일정하도록 wz 를 푼다 */
+  return {x:sx, y:wy, z:(U_DEPTH-wy*sp)/cp - U_PUSH};
+}
+
+/* 우주 배치. pos 는 uPlace 가 계산한 우주 좌표(x 가로 · y 높이(-가 위) · z 깊이). orient 는 은하마다
    다른 원반 기울기 — 실제 심우주 사진처럼 제각각 기울어 떠 있다가, 한 은하로
    파고들면 그 은하만 수평으로 돌아온다(oAmt). 기울기는 작게만 준다: 카메라
    피치(0.46)와 은하 자체 기울기(0.20) 위에 음수 rx 를 얹으면 원반이 옆에서
    본 각도로 눌려 이름표가 서로 겹친 줄무늬가 된다 — 독해 은하가 그랬다. accent 는 은하의 고유 전류색,
    silver 는 전체 전개(은하 모드)에서 격자가 입는 은은한 금속색이다. */
+/* 왼쪽부터 보카 · 문법 · 독해 — 화면 순서가 곧 학습 순서(어휘 → 문법 → 독해)이고,
+   머리띠의 은하 단추와 왼쪽 패널의 카드도 같은 차례로 선다.
+   기울기도 좌우가 서로의 거울이다(rz 부호만 반대). */
 const GALAXIES=[
+  { id:'vocab', name:'VOCAB', kr:'보카 은하', tagline:'옳은보카 VOL.0 – ULTIMATE',
+    dataId:'nexus-data-vocab', fullDepth:2,
+    pos:uPlace(-U_SX,U_UP),  orient:{rx:0.20,rz:0.16},
+    accent:[74,223,158],  silver:{base:[146,200,172],hot:[226,255,240]} },
   { id:'grammar', name:'GRAMMAR', kr:'문법 은하', tagline:'중등 문법 커리큘럼',
     dataId:'nexus-data-grammar', fullDepth:2,
-    pos:{x:-1180,y:-20,z:200},  orient:{rx:0.16,rz:-0.10},
+    pos:uPlace(0,U_DOWN),    orient:{rx:0.26,rz:0},
     accent:[41,168,255],  silver:{base:[152,176,208],hot:[240,248,255]} },
   { id:'reading', name:'READING', kr:'독해 은하', tagline:'READING GRAPHY · 옳은 독해',
     dataId:'nexus-data-reading', fullDepth:3,
-    pos:{x:1140,y:-120,z:190},  orient:{rx:0.12,rz:0.15},
+    pos:uPlace(U_SX,U_UP),   orient:{rx:0.20,rz:-0.16},
     accent:[255,138,80],  silver:{base:[216,172,142],hot:[255,238,222]} },
-  { id:'vocab', name:'VOCAB', kr:'보카 은하', tagline:'옳은보카 VOL.0 – ULTIMATE',
-    dataId:'nexus-data-vocab', fullDepth:2,
-    pos:{x:20,y:150,z:-430},    orient:{rx:0.26,rz:-0.20},
-    accent:[74,223,158],  silver:{base:[146,200,172],hot:[226,255,240]} },
 ];
 
 /* ── 활성 은하의 상태는 이 전역들로 풀려 들어온다(bindGalaxy) ──
@@ -134,7 +161,7 @@ function stashGalaxy(){
    카메라를 스치며 투영이 폭주해 프레임이 터진다. 뒤로 물리면 원근도
    심우주답게 순해진다. 은하로 파고들면(uAmt→0) 밀림도 0으로 돌아와
    활성 은하는 예전 그대로의 자리에서 그려진다. */
-function uPush(){ return 1250*uAmt; }
+function uPush(){ return U_PUSH*uAmt; }
 function setGOFF(g){
   GOFF.x=g.pos.x-WC.x; GOFF.y=g.pos.y-WC.y; GOFF.z=g.pos.z-WC.z+uPush();
 }
@@ -211,7 +238,9 @@ function mk(kind,label,sub,payload){
 /* ============================================================
    4. LAYOUT — concentric orbital rings, one focus path
    ============================================================ */
-const RADII=[0,205,424,596];
+/* 교재 고리를 205 에서 넓혔다 — 표지 열 권이 고르게 서려면 둘레가 그만큼
+   필요하다. 챕터 고리(424)와는 여전히 넉넉히 떨어져 있다. */
+const RADII=[0,258,424,596];
 /* A fan sized to its child count. A fixed wedge strands 3 units across the
    same arc it gives 12 chapters, so they read as orphans rather than a branch. */
 const PERCHILD=[0,9.5,11];
@@ -253,14 +282,35 @@ function layoutFull(){
   const seen=new Set([ROOT]);
   rot=0;
   const FD=fullDepth();
+  const RSTEP=[0,0,64,86];
   (function place(node,start,span,depth){
     if(depth>FD) return;
     let a=start;
-    kidsOf(node).forEach((k,i)=>{
-      const w=span*leaves(k,depth)/leaves(node,depth-1);
+    const kids=kidsOf(node);
+    /* 교재가 원을 똑같이 나눠 가지면, 챕터가 많은 교재는 좁은 몫에 몰린다
+       (옳은보카 Ultimate 는 29 파트가 36° 안에 든다). 각으로 못 벌린 만큼
+       반지름으로 벌린다 — 아홉 개마다 한 겹씩, 최대 네 겹. */
+    const rings = depth>=2 ? Math.max(2,Math.min(4,Math.ceil(kids.length/9)))
+                : depth===1 ? 2 : 1;
+    const spread= depth===2 ? 150 : 180;
+    const step  = depth>=2 ? (rings>2 ? spread/(rings-1) : RSTEP[depth])
+                : depth===1 ? 76 : 0;
+    kids.forEach((k,i)=>{
+      /* 교재(ring 1)는 담은 단원 수와 상관없이 원을 똑같이 나눠 갖는다.
+         예전에는 단원 수에 비례해 나눠서, 29파트짜리 옳은보카 Ultimate 혼자
+         원의 3분의 1을 차지하고 작은 교재들의 표지는 서로 포개졌다.
+         표지가 고르게 놓여야 지도가 대칭으로 읽힌다 — 세 은하 모두 같다.
+         그 아래 챕터는 제 교재가 받은 몫 안에서 다시 고르게 나뉜다. */
+      const w = depth===1 ? span/kids.length
+                          : span*leaves(k,depth)/leaves(node,depth-1);
       k.baseA=a+w/2; k.a=k.baseA;
-      /* alternate rings outward so neighbouring labels never sit level */
-      k.r=RADII[depth]+(depth>=2 ? (i%2)*(depth===2?64:86) : 0);
+      /* 같은 겹의 이웃까지 벌어진 각 — 이름표를 낼 자리가 있는지 재는 데 쓴다 */
+      k.arcW = w*rings;
+      /* 이웃한 것끼리 같은 고리에 서지 않도록 한 칸씩 밖으로 물린다.
+         표지도 마찬가지다 — 원반은 기울어 있어서 고리의 좌우 끝에서는
+         이웃 표지가 원근에 눌려 달라붙는다. 두 겹으로 엇갈리게 놓으면
+         그 자리에서도 반지름 차이만큼 간격이 생긴다. */
+      k.r=RADII[depth]+(i%rings)*step;
       live.push(k); seen.add(k);
       place(k,a,w,depth+1);
       a+=w;
@@ -405,7 +455,11 @@ const FOV=1500;
    등대가 그 한가운데 선 것처럼 읽힌다. 한 교재로 파고든 화면은 그 각으로
    보면 배치가 한쪽으로 쏠려서, 내려다보는 각으로 되돌린다.
    사용자가 직접 기울인 뒤에는(pitchUser) 건드리지 않는다. */
-const PITCH_GALAXY=0.38, PITCH_FOCUS=0.80, PITCH_UNIVERSE=0.46;
+const PITCH_GALAXY=0.38, PITCH_FOCUS=0.80, PITCH_UNIVERSE=U_PITCH;
+/* 우주 화면의 요는 0 이어야 좌우 대칭이 성립한다(세계의 X축 = 화면의 가로축).
+   은하로 파고들면 등대를 비스듬히 보는 예전 각으로 돌아간다. */
+const YAW_UNIVERSE=U_YAW, YAW_FOCUS=-0.42;
+let yawUser=false;
 let pitchUser=false;
 const cam={
   yaw:-0.42,  tyaw:-0.42,
@@ -421,9 +475,11 @@ const PITCH_MIN=0.44, PITCH_MAX=1.30;
 /* 화면을 아직 자동으로 잡아도 되는가. 사용자가 카메라에 손을 대면 꺼지고,
    화면 맞춤·전개 전환처럼 다시 잡아 달라는 신호가 오면 켜진다. */
 let autoFrame=true, framePend=false;
-function modePitch(){
-  if(pitchUser) return;
-  cam.tpitch = universeMode? PITCH_UNIVERSE : (expandAll? PITCH_GALAXY : PITCH_FOCUS);
+function modePose(){
+  if(!pitchUser)
+    cam.tpitch = universeMode? PITCH_UNIVERSE : (expandAll? PITCH_GALAXY : PITCH_FOCUS);
+  if(!yawUser)
+    cam.tyaw = universeMode? YAW_UNIVERSE : YAW_FOCUS;
 }
 
 function resize(){
@@ -679,12 +735,12 @@ function frameAt(z){
       }
     }
     /* 등대와 그 머리 위의 이름판 */
-    const tip=project(0,-336,0), foot=project(0,14,0);
+    const tip=project(0,NP_Y-46,0), foot=project(0,14,0);
     add(tip.sx,tip.sy,130*inv,22*inv);
     add(foot.sx,foot.sy,60*inv,16*inv);
   } else {
     /* 파고든 화면은 판이 멈춰 있다 — 노드 자리를 그대로 재도 흔들리지 않는다. */
-    const tip=project(0,-336,0), foot=project(0,0,0);
+    const tip=project(0,NP_Y-46,0), foot=project(0,0,0);
     add(tip.sx,tip.sy,120*inv,22*inv); add(foot.sx,foot.sy,86,40);
     live.forEach(n=>{
       const q=project(n.tx,lift(n),n.ty);
@@ -753,7 +809,7 @@ function universeFit(){
           let q=project(wx,-84,wz); add(q.sx,q.sy,reach);
           q=project(wx, 84,wz);     add(q.sx,q.sy,reach);
         }
-        const tip=project(0,-360,0);      /* 등대 머리 위 이름판 */
+        const tip=project(0,NP_Y-46,0);   /* 등대 머리 위 이름판 */
         add(tip.sx,tip.sy,155*inv);
         towerUpright=false;
       });
@@ -2063,8 +2119,11 @@ function drawLamp(){
   const c=pt(0,-LANTERN,0), k=c[2]*cam.zoom, R=26*k;
   ctx.save(); ctx.globalCompositeOperation='lighter';
   const g=ctx.createRadialGradient(c[0],c[1],0,c[0],c[1],R);
-  g.addColorStop(0,'rgba(226,246,255,'+(!motionOn?.30:.26+Math.sin(T*0.05)*0.03)+')');
-  g.addColorStop(.4,'rgba(140,214,255,.10)');
+  /* 배경으로 물러난 은하는 램프도 같이 물러나야 한다 — 탑만 흐리게 하고
+     램프는 그대로 두었더니, 먼 은하의 등불만 또렷이 떠 있었다. */
+  const lm=(!motionOn?.30:.26+Math.sin(T*0.05)*0.03)*GDIM;
+  g.addColorStop(0,'rgba(226,246,255,'+lm+')');
+  g.addColorStop(.4,'rgba(140,214,255,'+(.10*GDIM)+')');
   g.addColorStop(1,'rgba(120,200,255,0)');
   ctx.fillStyle=g; ctx.beginPath(); ctx.arc(c[0],c[1],R,0,Math.PI*2); ctx.fill();
   ctx.restore();
@@ -2159,7 +2218,7 @@ function npAnchor(g){
   const kx=GOFF.x, ky=GOFF.y, kz=GOFF.z;
   setGOFF(g);
   towerUpright=true;
-  const q=pt(0,-308,0);
+  const q=pt(0,NP_Y,0);
   towerUpright=false;
   GOFF.x=kx; GOFF.y=ky; GOFF.z=kz;
   return q;
@@ -2207,7 +2266,7 @@ function drawNameplates(){
     /* 등대 꼭대기로 내려가는 실 한 가닥 — 이름과 탑을 잇는다 */
     const tipK=GOFF, kx=GOFF.x,ky=GOFF.y,kz=GOFF.z;
     setGOFF(g);
-    towerUpright=true; const tip=pt(0,-248,0); towerUpright=false;
+    towerUpright=true; const tip=pt(0,-252,0); towerUpright=false;
     GOFF.x=kx; GOFF.y=ky; GOFF.z=kz;
     ctx.strokeStyle=RGBA(AC,.30); ctx.lineWidth=.8;
     ctx.beginPath(); ctx.moveTo(x,ry+px*0.72); ctx.lineTo(tip[0],tip[1]); ctx.stroke();
@@ -2620,6 +2679,38 @@ function drawCovers(){
                  });
   const crowd=live.length>90?.62:1;
   const anySel=live.some(n=>n.kind==='book'&&isOnPath(n));
+  /* 표지끼리 겹치지 않게, 가장 가까운 이웃 표지까지의 화면 거리를 재서
+     그 안에 들어오도록 폭을 깎는다. 교재가 몇 권이든 어느 은하든 저절로
+     맞으므로, 권수마다 크기를 손으로 정해 줄 필요가 없다. */
+  list.forEach(o=>{
+    /* 표지는 화면 밖으로 나가지 않게 세로 위치가 눌린다 — 그 눌린 자리로
+       재야 실제로 겹치는지 알 수 있다. */
+    const sel0=isOnPath(o.n), zz0=o.s[2]*cam.zoom;
+    const hN=Math.min(sel0?188:126,(sel0?112:75)*zz0);
+    o.cy=Math.max(hN/2+10,Math.min(H-hN/2-10,o.s[1]));
+  });
+  list.forEach((o,i)=>{
+    let d=1e9;
+    list.forEach((q,j)=>{
+      if(i===j) return;
+      /* 직사각형 둘은 가로로 떨어져 있거나 세로로 떨어져 있으면 안 겹친다.
+         가운데 거리(hypot)로 폭만 깎으면, 위아래로 포개진 짝은 그대로
+         겹친 채 남는다 — 두 축을 각각 보고 더 넉넉한 쪽을 기준으로 삼는다. */
+      const dx=Math.abs(o.s[0]-q.s[0]), dy=Math.abs(o.cy-q.cy);
+      d=Math.min(d, Math.max(dx, dy*PW/PH));
+    });
+    o.cap = d<1e8 ? d*0.94 : 1e9;
+  });
+  /* 표지 크기를 하나로 맞춘다. 원근대로 제각각 두면 고리 뒤쪽 표지만
+     작아져서, 각도는 고르게 놓였는데도 줄이 흐트러져 보인다. 고른 간격은
+     고른 크기와 같이 가야 눈에 고르게 읽힌다. 고른 뒤에도 최소 34px 는
+     지켜 표지가 알아볼 수 없이 작아지지는 않게 한다. */
+  let uniW=1e9;
+  list.forEach(o=>{
+    const zz0=o.s[2]*cam.zoom;
+    uniW=Math.min(uniW, Math.min(126*PW/PH, 75*zz0*PW/PH), o.cap);
+  });
+  uniW=Math.max(34,uniW);
   list.forEach(o=>{
     const n=o.n, [x,y,k,z]=o.s;
     const zz=k*cam.zoom;
@@ -2633,8 +2724,12 @@ function drawCovers(){
             *Math.min(1,(zz-.3)/.22)
             *(sel?1 : hover===n?.95 : anySel?.5 : .9);
     if(A<=.02) return;
-    const h=Math.min(sel?188:126,(sel?112:75)*zz*(hover===n?1.12:1)), w=h*PW/PH;
-    const cy=Math.max(h/2+10,Math.min(H-h/2-10, y));
+    /* 고른 크기를 쓰되, 고른 것과 커서가 얹힌 것만 앞으로 한 걸음 나온다 */
+    let w=uniW*(sel?1.5:hover===n?1.14:1);
+    let h=w*PH/PW;
+    /* 간격을 잴 때 쓴 바로 그 세로 위치를 그대로 쓴다 — 재는 자리와 그리는
+       자리가 어긋나면 그 차이만큼 표지가 다시 겹친다. */
+    const cy=o.cy;
     const plate=coverPlate(n.payload);
     ctx.save();
     ctx.globalAlpha=A;
@@ -2702,6 +2797,13 @@ function drawLabel(n,x,y,R,st,A,k){
   if(n.kind==='item'&&zz<(live.length>60?.72:.5)&&hover!==n) return;
   if(n.kind==='chap'&&live.length>60&&zz<.46&&hover!==n&&!isOnPath(n)) return;
   if(n.kind==='chap'&&zz<.4) return;
+  /* 이웃과 겹칠 만큼 촘촘하면 아예 내지 않는다. 교재가 원을 똑같이 나눠 갖는
+     이상, 챕터가 많은 교재(옳은보카 Ultimate 29파트)는 좁은 몫에 몰릴 수밖에
+     없다 — 뭉개진 글자 덩어리는 아무것도 알려 주지 않으므로, 자리가 날 만큼
+     확대했을 때 비로소 내준다. 커서를 얹거나 고른 것은 언제나 보인다. */
+  if(expandAll && n.arcW && hover!==n && !isOnPath(n)){
+    if(n.r*(n.arcW*Math.PI/180)*zz < 30) return;
+  }
   const c=pt(0,0,0);
   const dx=x-c[0], dy=y-c[1], dl=Math.hypot(dx,dy)||1;
   const left=dx<0, off=R+10;
@@ -2819,6 +2921,7 @@ cv.addEventListener('pointermove',e=>{
       cam.tyaw=drag.yaw+dx*0.006;
       cam.tpitch=Math.max(PITCH_MIN,Math.min(PITCH_MAX,drag.pitch+dy*0.005));
       if(Math.abs(dy)>2) pitchUser=true;
+      if(Math.abs(dx)>2) yawUser=true;
     }
     return;
   }
@@ -2875,7 +2978,7 @@ function activate(n){
   sync();
 }
 function sync(doFit){
-  layout(); modePitch();
+  layout(); modePose();
   if(doFit!==false){ autoFrame=true; framePend=true; }
   renderRails();
   renderCrumb();
@@ -2897,7 +3000,7 @@ function enterGalaxy(g){
   universeMode=false;
   WCT.x=g.pos.x; WCT.y=g.pos.y; WCT.z=g.pos.z;
   expandAll=true; focus=[ROOT];
-  pitchUser=false; autoFrame=true; framePend=true;
+  pitchUser=false; yawUser=false; autoFrame=true; framePend=true;
   hover=null; plateHover=null;
   syncGalaxyChrome();
   relayoutAll();
@@ -2909,10 +3012,10 @@ function toUniverse(){
   expandAll=true; focus=[ROOT]; layout();
   universeMode=true;
   WCT.x=0; WCT.y=0; WCT.z=0;
-  pitchUser=false; autoFrame=true; framePend=true;
+  pitchUser=false; yawUser=false; autoFrame=true; framePend=true;
   hover=null;
   relayoutAll();
-  modePitch();
+  modePose();
   syncGalaxyChrome();
   renderRails(); renderCrumb();
 }
@@ -5131,6 +5234,7 @@ function keyNav(){
     if(U) cam.tpy+=step; if(D) cam.tpy-=step;
     clampPan();
   } else {
+    if(L||R) yawUser=true;
     if(L) cam.tyaw-=.026; if(R) cam.tyaw+=.026;
     if(U){ cam.tpitch=Math.min(PITCH_MAX,cam.tpitch+.018); pitchUser=true; }
     if(D){ cam.tpitch=Math.max(PITCH_MIN,cam.tpitch-.018); pitchUser=true; }
@@ -5345,7 +5449,7 @@ document.getElementById('btn-spin').onclick=function(){
   b.textContent = motionOn?'모션 정지':'모션 시작';
 })();
 document.getElementById('btn-fit').onclick=()=>{
-  pitchUser=false; modePitch(); autoFrame=true; framePend=true; refit();
+  pitchUser=false; yawUser=false; modePose(); autoFrame=true; framePend=true; refit();
 };
 (function(){
   const sel=document.getElementById('fx-pick');
@@ -5391,6 +5495,10 @@ async function boot(){
   bindGalaxy(GALAXIES[0]);
   buildGalPick();
   syncGalaxyChrome();
+  /* 첫 화면도 우주 모드의 제 각도로 세운다 — 이게 빠져 있어 요가 -0.42 로
+     남았고, 세계의 X축이 화면 가로축과 어긋나 좌우 대칭이 성립하지 않았다. */
+  modePose();
+  cam.yaw=cam.tyaw; cam.pitch=cam.tpitch;
   refit(); renderRails(); renderCrumb();
   requestAnimationFrame(draw);
   boot();
