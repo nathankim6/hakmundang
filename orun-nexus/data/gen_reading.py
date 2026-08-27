@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""옳은 독해 은하 데이터 생성기.
+"""옳은 독해 Galaxy 데이터 생성기.
 
 옳은영어 자체 독해 라인 기준:
   READING GRAPHY Level 1~4 (중등) — 지문 36개 = 풀 유닛 12(1·4·7·…) + 축약 24
@@ -100,12 +100,27 @@ ORUN_PARTS = [
 ]
 
 RG_BOOKS = [
-    # id, level, base, hot, grades, band, gradeTag
-    ("r1", 1, [235, 164, 96], [250, 208, 156], ["g0", "g1"], "예비중1·중1", "중등 독해 입문"),
-    ("r2", 2, [226, 132, 64], [248, 182, 124], ["g1", "g2"], "중1·중2", "중등 독해 기본"),
-    ("r3", 3, [206, 94, 60], [240, 152, 112], ["g2", "g3"], "중2·중3", "중등 독해 실력"),
-    ("r4", 4, [170, 66, 52], [228, 122, 98], ["g3"], "중3·예비고1", "중등 독해 완성"),
+    # 표지 실물 기준: ORUN Reading 시리즈, 권마다 레벨(Prep B/A/S)과 고유색을 갖는다.
+    # 색은 표지에서 직접 뽑았고(#ee784a · #2e5a45 · #445a7a), 지도의 별빛으로 쓰는
+    # base/hot 은 그 색을 밝은 쪽으로 끌어올린 값이다 — 원본 그대로는 어두워
+    # 별이 보이지 않는다. 표지에는 cover.ink 의 원색이 그대로 쓰인다.
+    # id, level, ink(표지 원색), base, hot, grades, band, levelName, gradeTag
+    ("r1", 1, [238, 120, 74], [238, 120, 74], [250, 200, 176],
+     ["g0", "g1"], "예비중1·중1", "Prep B", "중등 독해의 기본기"),
+    ("r2", 2, [46, 90, 69], [74, 138, 106], [166, 216, 190],
+     ["g1", "g2"], "중1·중2", "Prep A", "중등 독해의 확장"),
+    ("r3", 3, [68, 90, 122], [98, 128, 172], [180, 202, 236],
+     ["g2", "g3"], "중2·중3", "Prep S", "구조 독해와 추론"),
+    # 4권은 아직 표지가 없다 — 레벨명을 지어내지 않고 비워 둔다(표지에 LEVEL 칸이 서지 않는다).
+    ("r4", 4, [58, 74, 104], [86, 108, 150], [172, 190, 224],
+     ["g3"], "중3·예비고1", "", "고급 독해로의 도약"),
 ]
+
+# 표지 뒷면에 적힌 실제 구성 — 한 지문을 아홉 번 다르게 만난다.
+RG_STEPS = ("01 READING 고교 내신 유형 그대로의 독해 4문항 · 02 CORE SYNTAX 핵심 구문 2가지 · "
+            "03 SENTENCE STRUCTURE ORUN FLOW 구조 표기 · 04 TRANSLATION 직독직해 · "
+            "05 READ RIGHT 다섯 번 다시 읽기 · 06 RE:RIGHT 워크북 7종")
+
 
 # ── 샘플 유닛 r1-u1 · The Bread Bus ───────────────────────────────────
 # 지문(자체 제작): 11문장 · 약 100단어 · 소개→쓰임→과거→문제→해결→마무리
@@ -289,20 +304,23 @@ def rg_chapters(bid):
 
 def build():
     books = []
-    for rank, (bid, lv, base, hot, grades, band, gtag) in enumerate(RG_BOOKS, 1):
+    for rank, (bid, lv, ink, base, hot, grades, band, lvname, gtag) in enumerate(RG_BOOKS, 1):
         books.append({
             "id": bid,
-            "short": "READING GRAPHY %d" % lv,
-            "chip": "GRAPHY %d" % lv,
-            "title": "READING GRAPHY Level %d" % lv,
-            "publisher": "ORUN ENGLISH 어학연구소",
-            "band": band, "grades": grades, "gradeTag": gtag,
-            "desc": "지문 36편 — 풀 유닛 12(지문 1·4·7·…) + 축약 유닛 24. 5단계 READ RIGHT 훈련과 RE:RIGHT 워크북으로 도는 중등 독해 교재.",
+            "short": "ORUN Reading %d" % lv,
+            "chip": "Reading %d" % lv,
+            "title": "ORUN Reading %d · READING GRAPHY %d" % (lv, lv),
+            "publisher": "옳은영어 ORUN ENGLISH 어학연구소",
+            "band": band, "grades": grades,
+            "gradeTag": (lvname + " · " + gtag) if lvname else gtag,
+            "desc": "한 지문을 아홉 번 다르게 만납니다. 지문 36편(풀 유닛 12 + 축약 24) — " + RG_STEPS + ".",
             "unitWord": "UNIT",
             "confidence": "draft",
-            "basis": "유닛 수·풀/축약 구성은 교재 사양 확정, 지문 제목은 실제 지문 연동 전 잠정안입니다.",
+            "basis": "표지·레벨·구성은 실물 표지 확정, 지문 제목은 실제 지문 연동 전 잠정안입니다."
+                     + ("" if lvname else " 4권은 표지가 아직 없어 LEVEL 표기를 비워 두었습니다."),
             "current": {"rank": rank, "of": 5, "base": base, "hot": hot},
-            "cover": {"motif": "rg", "lines": ["READING", "GRAPHY"], "vol": "LEVEL %d" % lv, "big": str(lv)},
+            "cover": {"motif": "rg", "vol": "READING GRAPHY %d" % lv,
+                      "level": lvname, "ink": ink},
             "chapters": rg_chapters(bid),
         })
 
@@ -332,7 +350,10 @@ def build():
         "confidence": "draft",
         "basis": "유닛 구성(14면 체제)은 교재 사양 확정, 지문 제목은 실제 지문 연동 전 잠정안입니다.",
         "current": {"rank": 5, "of": 5, "base": [150, 44, 80], "hot": [224, 116, 156]},
-        "cover": {"motif": "bar", "lines": ["옳은 독해", "ORUN READING"], "vol": "LEVEL 3"},
+        # 표지 뒷면이 밝히듯 「옳은독해」는 READING GRAPHY 를 바탕으로 만든 워크북이라
+        # 같은 계열 표지를 쓴다. 실물 표지는 아직 없어 LEVEL 칸은 비워 둔다.
+        "cover": {"motif": "rg", "vol": "옳은 독해 Level 3", "level": "",
+                  "big": "\ub3c5", "ink": [150, 44, 80]},
         "chapters": ro_chapters,
     })
 

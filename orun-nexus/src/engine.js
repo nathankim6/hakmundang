@@ -1,23 +1,23 @@
 /* ============================================================
-   1. DATA  — 우주: 세 은하(문법·독해·보카)의 커리큘럼 격자
+   1. DATA  — 우주: 세 Galaxy(문법·독해·보카)의 커리큘럼 격자
    ============================================================ */
 function readData(id){ return JSON.parse(document.getElementById(id).textContent); }
 
 /* ── 우주 구도 ────────────────────────────────────────────────────────
-   세 은하를 눈대중 좌표로 흩어 두었더니 크기도 높이도 제각각이었다 —
-   앞으로 나온 은하는 원근 때문에 혼자 커지고, 한쪽으로 쏠려 기울어 보였다.
+   세 Galaxy를 눈대중 좌표로 흩어 두었더니 크기도 높이도 제각각이었다 —
+   앞으로 나온 Galaxy는 원근 때문에 혼자 커지고, 한쪽으로 쏠려 기울어 보였다.
 
    이제는 카메라를 기준으로 배치한다.
    · 우주 모드의 요(U_YAW)를 0으로 고정하면 세계의 X축이 화면의 가로축과
      그대로 겹친다 — 좌우를 ±U_SX 로 두는 것만으로 화면에서 정확히 대칭이 된다.
-   · 세 은하를 카메라에서 같은 깊이(U_DEPTH)에 두면 원근 배율이 같아
+   · 세 Galaxy를 카메라에서 같은 깊이(U_DEPTH)에 두면 원근 배율이 같아
      원반 크기가 셋 다 똑같아진다. 높이를 바꾸면 깊이가 따라 변하므로,
      uPlace() 가 그만큼 z 를 되돌려 깊이를 일정하게 지킨다.
    구도는 가운데가 낮고 양옆이 올라간 좌우 대칭 삼각형 — 가장 무거운
-   문법 은하가 한가운데 아래에 앉아 전체를 받친다. */
+   문법 Galaxy가 한가운데 아래에 앉아 전체를 받친다. */
 const U_YAW=0, U_PITCH=0.46, U_PUSH=1250;
-const U_DEPTH=1320;          /* 카메라에서 세 은하까지의 공통 깊이 */
-const U_SX=1180;             /* 좌우 은하의 가로 간격             */
+const U_DEPTH=1320;          /* 카메라에서 세 Galaxy까지의 공통 깊이 */
+const U_SX=1180;             /* 좌우 Galaxy의 가로 간격             */
 const U_UP=-390, U_DOWN=450; /* 양옆은 올리고 가운데는 내린다      */
 /* 이름판이 앉는 높이. 원반의 위쪽 테두리는 중심에서 253 남짓 올라오므로
    그보다 넉넉히 위여야 글자가 별밭에 묻히지 않는다. */
@@ -28,45 +28,45 @@ function uPlace(sx,wy){
   return {x:sx, y:wy, z:(U_DEPTH-wy*sp)/cp - U_PUSH};
 }
 
-/* 우주 배치. pos 는 uPlace 가 계산한 우주 좌표(x 가로 · y 높이(-가 위) · z 깊이). orient 는 은하마다
-   다른 원반 기울기 — 실제 심우주 사진처럼 제각각 기울어 떠 있다가, 한 은하로
-   파고들면 그 은하만 수평으로 돌아온다(oAmt). 기울기는 작게만 준다: 카메라
-   피치(0.46)와 은하 자체 기울기(0.20) 위에 음수 rx 를 얹으면 원반이 옆에서
-   본 각도로 눌려 이름표가 서로 겹친 줄무늬가 된다 — 독해 은하가 그랬다. accent 는 은하의 고유 전류색,
-   silver 는 전체 전개(은하 모드)에서 격자가 입는 은은한 금속색이다. */
+/* 우주 배치. pos 는 uPlace 가 계산한 우주 좌표(x 가로 · y 높이(-가 위) · z 깊이). orient 는 Galaxy마다
+   다른 원반 기울기 — 실제 심우주 사진처럼 제각각 기울어 떠 있다가, 한 Galaxy로
+   파고들면 그 Galaxy만 수평으로 돌아온다(oAmt). 기울기는 작게만 준다: 카메라
+   피치(0.46)와 Galaxy 자체 기울기(0.20) 위에 음수 rx 를 얹으면 원반이 옆에서
+   본 각도로 눌려 이름표가 서로 겹친 줄무늬가 된다 — 독해 Galaxy가 그랬다. accent 는 Galaxy의 고유 전류색,
+   silver 는 전체 전개(Galaxy 모드)에서 격자가 입는 은은한 금속색이다. */
 /* 왼쪽부터 보카 · 문법 · 독해 — 화면 순서가 곧 학습 순서(어휘 → 문법 → 독해)이고,
-   머리띠의 은하 단추와 왼쪽 패널의 카드도 같은 차례로 선다.
+   머리띠의 Galaxy 단추와 왼쪽 패널의 카드도 같은 차례로 선다.
    기울기도 좌우가 서로의 거울이다(rz 부호만 반대). */
 const GALAXIES=[
-  { id:'vocab', name:'VOCAB', kr:'보카 은하', tagline:'옳은보카 VOL.0 – ULTIMATE',
+  { id:'vocab', name:'VOCAB', kr:'보카 Galaxy', tagline:'옳은보카 VOL.0 – ULTIMATE',
     dataId:'nexus-data-vocab', fullDepth:2,
     pos:uPlace(-U_SX,U_UP),  orient:{rx:0.20,rz:0.16},
     accent:[74,223,158],  silver:{base:[146,200,172],hot:[226,255,240]} },
-  { id:'grammar', name:'GRAMMAR', kr:'문법 은하', tagline:'중등 문법 커리큘럼',
+  { id:'grammar', name:'GRAMMAR', kr:'문법 Galaxy', tagline:'중등 문법 커리큘럼',
     dataId:'nexus-data-grammar', fullDepth:2,
     pos:uPlace(0,U_DOWN),    orient:{rx:0.26,rz:0},
     accent:[41,168,255],  silver:{base:[152,176,208],hot:[240,248,255]} },
-  { id:'reading', name:'READING', kr:'독해 은하', tagline:'READING GRAPHY · 옳은 독해',
+  { id:'reading', name:'READING', kr:'독해 Galaxy', tagline:'ORUN Reading · 한 지문을 아홉 번',
     dataId:'nexus-data-reading', fullDepth:3,
     pos:uPlace(U_SX,U_UP),   orient:{rx:0.20,rz:-0.16},
     accent:[255,138,80],  silver:{base:[216,172,142],hot:[255,238,222]} },
 ];
 
-/* ── 활성 은하의 상태는 이 전역들로 풀려 들어온다(bindGalaxy) ──
-   엔진의 나머지 전부가 이 이름들을 읽으므로, 은하 전환은 곧 전역 교체다. */
+/* ── 활성 Galaxy의 상태는 이 전역들로 풀려 들어온다(bindGalaxy) ──
+   엔진의 나머지 전부가 이 이름들을 읽으므로, Galaxy 전환은 곧 전역 교체다. */
 let DATA, BOOK, ITEM, CHAP, STRAND, TOPIC, TOPICMETA, GRADE, TR, UW, MB_NAME,
     ROOT, focus, live, rot, spin, expandAll, gradeFilter, galaxyAmt, jumpBook,
     totalItems, totalSheets, SILVER, ACCENT, FULL_DEPTH, GDUST;
 let ACTIVE=null, CURG=null;
 
-/* 우주 모드: 셋이 한 하늘에 떠 있다. 은하 하나로 파고들면 세계의 중심(WC)이
-   그 은하 자리로 미끄러져, 활성 은하는 언제나 원점에 온다 — 원점을 가정하고
+/* 우주 모드: 셋이 한 하늘에 떠 있다. Galaxy 하나로 파고들면 세계의 중심(WC)이
+   그 Galaxy 자리로 미끄러져, 활성 Galaxy는 언제나 원점에 온다 — 원점을 가정하고
    짜인 기존 배치·프레이밍 코드가 그대로 성립하는 이유다. */
 let universeMode=true, uAmt=1;
 const WC={x:0,y:0,z:0}, WCT={x:0,y:0,z:0};
-const GOFF={x:0,y:0,z:0};              /* 지금 그리는 은하의 세계 오프셋 */
-let GOR={rx:0,rz:0}, GORA=0;           /* 그 은하의 원반 기울기와 강도   */
-let GDIM=1;                            /* 배경 은하 감쇠                 */
+const GOFF={x:0,y:0,z:0};              /* 지금 그리는 Galaxy의 세계 오프셋 */
+let GOR={rx:0,rz:0}, GORA=0;           /* 그 Galaxy의 원반 기울기와 강도   */
+let GDIM=1;                            /* 배경 Galaxy 감쇠                 */
 
 function buildGalaxyState(gal){
   const dat=readData(gal.dataId);
@@ -125,7 +125,7 @@ function buildGalaxyState(gal){
   S.SILVER={base:gal.silver.base,hot:gal.silver.hot,rank:0,of:1,label:''};
   S.ACCENT=gal.accent;
   S.FULL_DEPTH=gal.fullDepth||2;
-  /* 은하마다 제 먼지 벨트를 갖는다 — 같은 배열을 셋이 나눠 쓰면 세 은하가
+  /* Galaxy마다 제 먼지 벨트를 갖는다 — 같은 배열을 셋이 나눠 쓰면 세 Galaxy가
      같은 무늬로 반짝여 복제품처럼 보인다. */
   S.GDUST=[];
   for(let i=0;i<300;i++){
@@ -134,7 +134,7 @@ function buildGalaxyState(gal){
     S.GDUST.push({a:a,r:r,y:(Math.random()-.5)*90*(1-r/(596*1.2)),
                   b:Math.pow(Math.random(),1.7),s:(Math.random()*.10+.02)*(Math.random()<.5?-1:1)});
   }
-  /* 등대 회로선 팔레트 — 은하의 전류색으로 물든다 */
+  /* 등대 회로선 팔레트 — Galaxy의 전류색으로 물든다 */
   const AC=gal.accent;
   const mxc=(a,b,t)=>[Math.round(a[0]+(b[0]-a[0])*t),Math.round(a[1]+(b[1]-a[1])*t),Math.round(a[2]+(b[2]-a[2])*t)];
   const pale=mxc(AC,[255,255,255],.55), lite=mxc(AC,[255,255,255],.75);
@@ -157,10 +157,10 @@ function stashGalaxy(){
   S.jumpBook=jumpBook;
 }
 /* 우주 돌리 — 우주 모드에서는 하늘 전체를 카메라에서 밀어낸다.
-   은하들이 FOV(1500)와 맞먹는 깊이에 떠 있으면 앞쪽 원반 가장자리가
+   Galaxy들이 FOV(1500)와 맞먹는 깊이에 떠 있으면 앞쪽 원반 가장자리가
    카메라를 스치며 투영이 폭주해 프레임이 터진다. 뒤로 물리면 원근도
-   심우주답게 순해진다. 은하로 파고들면(uAmt→0) 밀림도 0으로 돌아와
-   활성 은하는 예전 그대로의 자리에서 그려진다. */
+   심우주답게 순해진다. Galaxy로 파고들면(uAmt→0) 밀림도 0으로 돌아와
+   활성 Galaxy는 예전 그대로의 자리에서 그려진다. */
 function uPush(){ return U_PUSH*uAmt; }
 function setGOFF(g){
   GOFF.x=g.pos.x-WC.x; GOFF.y=g.pos.y-WC.y; GOFF.z=g.pos.z-WC.z+uPush();
@@ -182,8 +182,8 @@ function bindGalaxy(g){
   SILVER=S.SILVER; ACCENT=S.ACCENT; FULL_DEPTH=S.FULL_DEPTH; GDUST=S.GDUST;
   setGalaxyFrame(g);
 }
-/* 잠깐 다른 은하를 손에 들고 일한다 — 시뮬레이션·배경 렌더용.
-   활성 은하의 전역은 끝나면 제자리로 돌아온다. */
+/* 잠깐 다른 Galaxy를 손에 들고 일한다 — 시뮬레이션·배경 렌더용.
+   활성 Galaxy의 전역은 끝나면 제자리로 돌아온다. */
 function withGalaxy(g,fn){
   if(g===ACTIVE){ setGalaxyFrame(g); fn(); stashGalaxy(); return; }
   const prev=ACTIVE;
@@ -225,10 +225,10 @@ function strandsOf(chap){ return STRAND[chap.bookId+'/'+chap.no]||[]; }
 
 /* ============================================================
    3. TREE  (core → band → book → chapter → item)
-   — 트리는 buildGalaxyState 가 은하마다 하나씩 세운다.
+   — 트리는 buildGalaxyState 가 Galaxy마다 하나씩 세운다.
    ============================================================ */
 function mk(kind,label,sub,payload){
-  /* 카운터를 함수에 붙인다 — 이 함수는 은하 상태를 세우는 초기 실행보다
+  /* 카운터를 함수에 붙인다 — 이 함수는 Galaxy 상태를 세우는 초기 실행보다
      늦게 선언되므로, 바깥 let 카운터는 TDZ 에 걸린다. */
   mk.N=(mk.N||0)+1;
   return {uid:mk.N,kind,label,sub:sub||'',payload:payload||null,
@@ -245,11 +245,11 @@ const RADII=[0,258,424,596];
    same arc it gives 12 chapters, so they read as orphans rather than a branch. */
 const PERCHILD=[0,9.5,11];
 const MAXWEDGE=[0,112,40];
-/* focus/live 는 은하 상태 — bindGalaxy 가 채운다 */
+/* focus/live 는 Galaxy 상태 — bindGalaxy 가 채운다 */
 
 function isOnPath(n){ return focus.indexOf(n)>=0; }
 
-/* rot·expandAll·gradeFilter 도 은하 상태다 */
+/* rot·expandAll·gradeFilter 도 Galaxy 상태다 */
 function bookShown(n){
   if(!gradeFilter) return true;
   const g=n&&n.payload&&n.payload.grades;
@@ -260,10 +260,10 @@ function kidsOf(n){ return n===ROOT ? n.children.filter(bookShown) : n.children;
 
 /* 전체 전개는 CHAPTER 까지만 편다 — UNIT 까지 펼치면 454개가 한 화면에
    깔려 아무것도 읽히지 않는다. UNIT 은 교재를 골라 들어가면 나온다. */
-/* FULL_DEPTH 는 은하 상태 — 문법·보카 2(CHAPTER 까지), 독해 3(UNIT 까지) */
-/* 다만 그건 그 은하를 보고 있을 때 이야기다. 우주 화면과 배경으로 물러난
-   은하는 어느 것이든 CHAPTER 까지만 편다 — 독해 은하만 UNIT 168개까지
-   펼치면 원반이 혼자 1.4배로 커져 옆 은하를 밀어내고, 그 크기에서 지문
+/* FULL_DEPTH 는 Galaxy 상태 — 문법·보카 2(CHAPTER 까지), 독해 3(UNIT 까지) */
+/* 다만 그건 그 Galaxy를 보고 있을 때 이야기다. 우주 화면과 배경으로 물러난
+   Galaxy는 어느 것이든 CHAPTER 까지만 편다 — 독해 Galaxy만 UNIT 168개까지
+   펼치면 원반이 혼자 1.4배로 커져 옆 Galaxy를 밀어내고, 그 크기에서 지문
    제목은 어차피 읽히지 않는다. 들어가면 그때 UNIT 까지 펼쳐진다. */
 function fullDepth(){
   return (CURG===ACTIVE && !universeMode) ? FULL_DEPTH : Math.min(2,FULL_DEPTH);
@@ -299,7 +299,7 @@ function layoutFull(){
       /* 교재(ring 1)는 담은 단원 수와 상관없이 원을 똑같이 나눠 갖는다.
          예전에는 단원 수에 비례해 나눠서, 29파트짜리 옳은보카 Ultimate 혼자
          원의 3분의 1을 차지하고 작은 교재들의 표지는 서로 포개졌다.
-         표지가 고르게 놓여야 지도가 대칭으로 읽힌다 — 세 은하 모두 같다.
+         표지가 고르게 놓여야 지도가 대칭으로 읽힌다 — 세 Galaxy 모두 같다.
          그 아래 챕터는 제 교재가 받은 몫 안에서 다시 고르게 나뉜다. */
       const w = depth===1 ? span/kids.length
                           : span*leaves(k,depth)/leaves(node,depth-1);
@@ -322,9 +322,9 @@ function layoutFull(){
 /* The books drift clockwise around the lighthouse whenever nothing is open.
    Angles are the stored form (n.a) and the cartesian target is derived, so a
    single global offset turns the whole lattice rigidly — fans included. */
-/* spin 도 은하 상태다.
+/* spin 도 Galaxy 상태다.
    초당 각도다. 프레임당으로 세면 느린 기계에서 더 느리게 돌아 같은 화면이
-   아니게 된다. 은하는 한 바퀴 ~2분, 파고든 화면은 ~2.9분. */
+   아니게 된다. Galaxy는 한 바퀴 ~2분, 파고든 화면은 ~2.9분. */
 const SPIN_GAL=3.0, SPIN_FOCUS=2.1;
 /* 화면의 움직임 전부를 쥔 스위치 — 회전, 연결선을 지나는 전류, 별의 반짝임.
    예전에는 이것들이 OS 의 '동작 줄이기'에 묶여 있어서, 그 설정을 켜 둔
@@ -335,7 +335,7 @@ let motionOn=true;
 try{ motionOn = localStorage.getItem('orun.spin')!=='0'; }catch(e){}
 function orbit(dt){
   /* 파고든 화면에서는 이름표를 읽으라고 커서가 노드에 얹히면 멈춘다.
-     은하는 노드가 611개라 커서가 거의 항상 뭔가에 걸리고, 그러면 판이
+     Galaxy는 노드가 611개라 커서가 거의 항상 뭔가에 걸리고, 그러면 판이
      통째로 얼어붙는다 — 여기서는 끌고 있을 때만 멈춘다. */
   const calm = expandAll ? !drag : (focus.length<=1 && !hover && !drag);
   /* prefers-reduced-motion 에 묶어 두었더니, OS 에서 '동작 줄이기'를 켠
@@ -451,13 +451,13 @@ const cv=document.getElementById('map');
 let ctx=cv.getContext('2d');
 const LIFT=[0,38,94,158];
 const FOV=1500;
-/* 두 모드는 보는 각이 다르다. 은하는 낮게 깔아야 원반이 원반으로 보이고
+/* 두 모드는 보는 각이 다르다. Galaxy는 낮게 깔아야 원반이 원반으로 보이고
    등대가 그 한가운데 선 것처럼 읽힌다. 한 교재로 파고든 화면은 그 각으로
    보면 배치가 한쪽으로 쏠려서, 내려다보는 각으로 되돌린다.
    사용자가 직접 기울인 뒤에는(pitchUser) 건드리지 않는다. */
 const PITCH_GALAXY=0.38, PITCH_FOCUS=0.80, PITCH_UNIVERSE=U_PITCH;
 /* 우주 화면의 요는 0 이어야 좌우 대칭이 성립한다(세계의 X축 = 화면의 가로축).
-   은하로 파고들면 등대를 비스듬히 보는 예전 각으로 돌아간다. */
+   Galaxy로 파고들면 등대를 비스듬히 보는 예전 각으로 돌아간다. */
 const YAW_UNIVERSE=U_YAW, YAW_FOCUS=-0.42;
 let yawUser=false;
 let pitchUser=false;
@@ -510,8 +510,8 @@ function buildBackdrop(){
   g1.addColorStop(0,'rgba(2,7,16,0)');
   g1.addColorStop(1,'rgba(1,4,11,.55)');
   g.fillStyle=g1; g.fillRect(0,H*.55,W,H*.45);
-  /* 심우주 — 세 은하가 한 하늘에 떠 있으니, 바탕도 하늘이어야 한다.
-     아주 옅은 별밭과 세 은하 전류색의 성운 기운 한 겹씩. 구울 때만 그린다. */
+  /* 심우주 — 세 Galaxy가 한 하늘에 떠 있으니, 바탕도 하늘이어야 한다.
+     아주 옅은 별밭과 세 Galaxy 전류색의 성운 기운 한 겹씩. 구울 때만 그린다. */
   for(let i=0;i<190;i++){
     const x=Math.random()*W, y=Math.random()*H, r=Math.random();
     g.fillStyle='rgba(208,228,250,'+(0.04+r*0.20).toFixed(3)+')';
@@ -536,7 +536,7 @@ function drawBackdrop(){
    500 facets every frame to show the same pixels is the single biggest
    waste in the loop, so each is baked and blitted until the camera moves. */
 function layerKey(){
-  /* 우주 오프셋·원반 기울기·은하 전개량도 키에 들어간다 — 세계가 미끄러지는
+  /* 우주 오프셋·원반 기울기·Galaxy 전개량도 키에 들어간다 — 세계가 미끄러지는
      전환 동안 구운 층이 낡은 자리에 눌러앉지 않도록. */
   return [cam.yaw.toFixed(4),cam.pitch.toFixed(4),cam.zoom.toFixed(4),
           Math.round(cam.px),Math.round(cam.py),W|0,H|0,
@@ -619,7 +619,7 @@ function project(wx,wy,wz){
     const y0=wy*ct - wz*st, z0=wy*st + wz*ct;
     wy=y0; wz=z0;
   }
-  /* 은하마다 다른 원반 기울기 — 심우주 사진의 문법이다. 롤(rz) 다음 틸트(rx).
+  /* Galaxy마다 다른 원반 기울기 — 심우주 사진의 문법이다. 롤(rz) 다음 틸트(rx).
      등대와 이름판(towerUpright)은 이 기울기에서도 빠져 꼿꼿이 선다. */
   if(GORA>0.004 && !towerUpright){
     const rz=GOR.rz*GORA, cz=Math.cos(rz), szn=Math.sin(rz);
@@ -629,7 +629,7 @@ function project(wx,wy,wz){
     const y2b=wy*cx - wz*sx2, z1b=wy*sx2 + wz*cx;
     wy=y2b; wz=z1b;
   }
-  /* 우주 오프셋 — 지금 그리는 은하가 하늘 어디에 떠 있는가 */
+  /* 우주 오프셋 — 지금 그리는 Galaxy가 하늘 어디에 떠 있는가 */
   wx+=GOFF.x; wy+=GOFF.y; wz+=GOFF.z;
   const cy=Math.cos(cam.yaw), sy=Math.sin(cam.yaw);
   const x1 =  wx*cy - wz*sy;
@@ -656,13 +656,13 @@ function toScreen(n){ return pt(n.x,lift(n),n.y); }
 /* ── 화면 맞춤 ────────────────────────────────────────────────────────
    판이 찌그러져 보이던 이유는 두 가지였다.
 
-   (1) 은하 모드의 판은 쉬지 않고 돈다. 이름표는 노드에서 바깥으로 뻗으므로
+   (1) Galaxy 모드의 판은 쉬지 않고 돈다. 이름표는 노드에서 바깥으로 뻗으므로
        '지금 이 순간의 노드 자리'로 외곽을 재면, 판이 도는 동안 외곽선이
        계속 달라진다. 그걸 매 프레임 다시 재니 배율이 숨을 쉬듯 오르내렸다.
        회전과 무관한 것 — 원반의 반지름과 이름표가 뻗는 길이 — 으로 재면
        어느 각도에서도 같은 프레임이 나온다.
 
-   (2) 전환(은하 진입·우주 복귀·전개 토글)이 흐르는 도중의 포즈로 재면
+   (2) 전환(Galaxy 진입·우주 복귀·전개 토글)이 흐르는 도중의 포즈로 재면
        카메라가 움직이는 표적을 쫓느라 끝내 자리를 잡지 못한다. 잴 때는
        전환이 끝난 뒤의 포즈로 재고(poseSettled), 한 번만 정한 뒤
        카메라가 그 자리로 미끄러지게 둔다. */
@@ -782,8 +782,8 @@ function fit(){
   });
 }
 
-/* 우주 프레임: 세 은하의 원반과 이름판이 모두 들어오게 잡는다. 원반은
-   회전 불변한 반지름으로 재므로 세 은하가 각자 도는 동안에도 흔들리지 않는다. */
+/* 우주 프레임: 세 Galaxy의 원반과 이름판이 모두 들어오게 잡는다. 원반은
+   회전 불변한 반지름으로 재므로 세 Galaxy가 각자 도는 동안에도 흔들리지 않는다. */
 function universeFit(){
   poseSettled(()=>{
     const kx=GOFF.x, ky=GOFF.y, kz=GOFF.z;
@@ -797,7 +797,7 @@ function universeFit(){
       GALAXIES.forEach(g=>{
         setGOFF(g);
         towerUpright=true;
-        /* 고정 반지름으로 재던 것이 독해 은하를 잘라 먹었다 — 은하마다
+        /* 고정 반지름으로 재던 것이 독해 Galaxy를 잘라 먹었다 — Galaxy마다
            제 노드가 실제로 뻗은 데까지 잰다. */
         const L=(g===ACTIVE)?live:(g.S.live||[]);
         let Rm=0; L.forEach(n=>{ if(n.r>Rm) Rm=n.r; });
@@ -876,12 +876,12 @@ function draw(ts){
   cam.px    += (cam.tpx   -cam.px   )*.09;
   cam.py    += (cam.tpy   -cam.py   )*.09;
 
-  /* 세계의 중심이 목표 은하로 미끄러진다 — 카메라가 나는 게 아니라
-     우주가 흐른다. 활성 은하는 언제나 원점에 도착한다. */
+  /* 세계의 중심이 목표 Galaxy로 미끄러진다 — 카메라가 나는 게 아니라
+     우주가 흐른다. 활성 Galaxy는 언제나 원점에 도착한다. */
   WC.x+=(WCT.x-WC.x)*.075; WC.y+=(WCT.y-WC.y)*.075; WC.z+=(WCT.z-WC.z)*.075;
   uAmt+=((universeMode?1:0)-uAmt)*.06;
 
-  /* 은하마다 제 궤도 시뮬레이션을 돈다 — 배경 은하도 계속 살아 돈다 */
+  /* Galaxy마다 제 궤도 시뮬레이션을 돈다 — 배경 Galaxy도 계속 살아 돈다 */
   GALAXIES.forEach(g=>{
     const inFocus=(g===ACTIVE&&!universeMode);
     g.oAmt=(g.oAmt==null?1:g.oAmt)+((inFocus?0:1)-g.oAmt)*.055;
@@ -900,14 +900,14 @@ function draw(ts){
 
   drawBackdrop();
 
-  /* 은하는 1~2초에 걸쳐 열리고, 열리면서 판이 커진다. 세계가 미끄러지는
+  /* Galaxy는 1~2초에 걸쳐 열리고, 열리면서 판이 커진다. 세계가 미끄러지는
      동안에도 따라가며 다시 잡고, 멈추면 손을 뗀다. */
   /* 화면 맞춤은 전환이 시작될 때 '끝난 뒤의 모습'으로 한 번만 정한다.
      흐르는 동안 매 프레임 다시 재면 카메라가 움직이는 표적을 쫓느라
      판이 커졌다 작아졌다 하며 찌그러져 보였다. */
   if(autoFrame && framePend){ framePend=false; refit(); }
 
-  /* 먼 은하부터 — 가까운 은하가 그 위를 덮는다 */
+  /* 먼 Galaxy부터 — 가까운 Galaxy가 그 위를 덮는다 */
   const gOrder=GALAXIES.map(g=>{
     towerUpright=true;
     const q=project(g.pos.x-WC.x-GOFF.x, g.pos.y-WC.y-GOFF.y, g.pos.z-WC.z-GOFF.z);
@@ -916,23 +916,23 @@ function draw(ts){
   }).sort((a,b)=>b.z-a.z);
   gOrder.forEach(o=>{
     const g=o.g, inFocus=(g===ACTIVE&&!universeMode);
-    const back=(!inFocus&&!universeMode);          /* 파고든 화면의 배경 은하 */
+    const back=(!inFocus&&!universeMode);          /* 파고든 화면의 배경 Galaxy */
     withGalaxy(g,()=>{
-      /* 파고든 화면의 배경 은하는 '먼 하늘'이어야 한다. 예전에는 이름표를
-         그대로 달아서, 옆 은하의 지문 제목이 지금 보는 은하의 이름표 위로
+      /* 파고든 화면의 배경 Galaxy는 '먼 하늘'이어야 한다. 예전에는 이름표를
+         그대로 달아서, 옆 Galaxy의 지문 제목이 지금 보는 Galaxy의 이름표 위로
          겹쳐 흘렀다 — 화면이 어지러워 보이던 진짜 이유다. 배경에서는
          별빛과 등대만 남기고 글자는 전부 거둔다. */
       GDIM=back?0.20:1;
       drawPlane();
       drawGround();
       drawGalaxy();
-      if(!back) drawLinks();                       /* 배경 은하는 별빛만 남긴다 */
+      if(!back) drawLinks();                       /* 배경 Galaxy는 별빛만 남긴다 */
       drawLighthouse();
       labelQ.length=0;
       drawNodes();
-      /* 우주 화면에서는 어느 은하도 노드 이름표를 달지 않는다. 그 배율에서
-         단원 이름은 어차피 읽히지 않고, 은하를 고르는 화면의 이름은
-         등대 위 이름판 하나면 된다. (노드가 적은 독해 은하만 가시성
+      /* 우주 화면에서는 어느 Galaxy도 노드 이름표를 달지 않는다. 그 배율에서
+         단원 이름은 어차피 읽히지 않고, Galaxy를 고르는 화면의 이름은
+         등대 위 이름판 하나면 된다. (노드가 적은 독해 Galaxy만 가시성
          문턱을 넘어 저 혼자 이름표를 달고 있었다.) */
       g._labels = (back||universeMode) ? [] : labelQ.slice();
       labelQ.length=0;
@@ -952,7 +952,7 @@ function draw(ts){
     ctx.globalAlpha=.3*(o.g===ACTIVE||universeMode?1:0.34);
     ctx.drawImage(L.c,0,0,W,H); ctx.restore();
   });
-  /* 이름표는 은하마다 제 문맥(색·중심)으로 그린다 — 블룸 뒤라 글자가 번지지 않는다 */
+  /* 이름표는 Galaxy마다 제 문맥(색·중심)으로 그린다 — 블룸 뒤라 글자가 번지지 않는다 */
   gOrder.forEach(o=>{
     if(!o.g._labels||!o.g._labels.length) return;
     withGalaxy(o.g,()=>{ o.g._labels.forEach(a=>drawLabel(a[0],a[1],a[2],a[3],a[4],a[5],a[6])); });
@@ -1863,14 +1863,14 @@ try{ const v=localStorage.getItem('orun.linkfx'); if(v&&LINKFX.some(f=>f.id===v)
 /* Full expand is a different picture from the focused one: 129 chapters at
    once. Grade colour stops being useful there — nothing is being compared —
    so the whole lattice goes silver and reads as one galaxy. */
-/* SILVER·galaxyAmt·GDUST 는 은하 상태 — buildGalaxyState 가 만든다 */
+/* SILVER·galaxyAmt·GDUST 는 Galaxy 상태 — buildGalaxyState 가 만든다 */
 function drawGalaxy(){
   if(galaxyAmt<=.01) return;
   const A=galaxyAmt*GDIM;
   const AC=ACCENT||[41,168,255];
   const mixw=t=>[Math.round(206+(AC[0]-206)*t),Math.round(226+(AC[1]-226)*t),Math.round(255+(AC[2]-255)*t)];
   ctx.save(); ctx.globalCompositeOperation='lighter';
-  /* the halo the arms sit in — 은하의 전류색으로 살짝 물든다 */
+  /* the halo the arms sit in — Galaxy의 전류색으로 살짝 물든다 */
   const c=pt(0,-40,0), k=c[2]*cam.zoom, sq=Math.max(.18,Math.cos(cam.pitch));
   const R=RADII[3]*1.25*k;
   const hg=ctx.createRadialGradient(c[0],c[1],0,c[0],c[1],R);
@@ -1913,7 +1913,7 @@ function setLinkFx(id){
 
 /* Each textbook carries its own current colour, so a glance at the lattice
    tells you which grade track a branch belongs to. Cyan climbs to magenta. */
-/* GRADE 는 은하 상태 — buildGalaxyState 가 만든다 */
+/* GRADE 는 Galaxy 상태 — buildGalaxyState 가 만든다 */
 const GDEF={base:[110,140,200],hot:[190,210,240],rank:0,of:1,label:''};
 function CSS(c){ return 'rgb('+c[0]+','+c[1]+','+c[2]+')'; }
 function RGBA(c,a){ return 'rgba('+c[0]+','+c[1]+','+c[2]+','+a+')'; }
@@ -2119,8 +2119,8 @@ function drawLamp(){
   const c=pt(0,-LANTERN,0), k=c[2]*cam.zoom, R=26*k;
   ctx.save(); ctx.globalCompositeOperation='lighter';
   const g=ctx.createRadialGradient(c[0],c[1],0,c[0],c[1],R);
-  /* 배경으로 물러난 은하는 램프도 같이 물러나야 한다 — 탑만 흐리게 하고
-     램프는 그대로 두었더니, 먼 은하의 등불만 또렷이 떠 있었다. */
+  /* 배경으로 물러난 Galaxy는 램프도 같이 물러나야 한다 — 탑만 흐리게 하고
+     램프는 그대로 두었더니, 먼 Galaxy의 등불만 또렷이 떠 있었다. */
   const lm=(!motionOn?.30:.26+Math.sin(T*0.05)*0.03)*GDIM;
   g.addColorStop(0,'rgba(226,246,255,'+lm+')');
   g.addColorStop(.4,'rgba(140,214,255,'+(.10*GDIM)+')');
@@ -2209,10 +2209,10 @@ function drawBeams(){
 let labelQ=[];
 function drawLabels(){ labelQ.forEach(a=>drawLabel(a[0],a[1],a[2],a[3],a[4],a[5],a[6])); labelQ.length=0; }
 
-/* ── 은하 이름판 ─────────────────────────────────────────────
-   각 은하 중심의 등대 머리 위, ORBITRON 으로 GRAMMAR · READING · VOCAB.
+/* ── Galaxy 이름판 ─────────────────────────────────────────────
+   각 Galaxy 중심의 등대 머리 위, ORBITRON 으로 GRAMMAR · READING · VOCAB.
    등대처럼 원반 기울기에서 빠져 꼿꼿이 서고, 블룸 뒤에 그려 번지지 않는다.
-   이름판 자체가 그 은하로 들어가는 문 — 클릭 표적(plateRect)이 된다. */
+   이름판 자체가 그 Galaxy로 들어가는 문 — 클릭 표적(plateRect)이 된다. */
 let plateHover=null;
 function npAnchor(g){
   const kx=GOFF.x, ky=GOFF.y, kz=GOFF.z;
@@ -2224,9 +2224,9 @@ function npAnchor(g){
   return q;
 }
 function drawNameplates(){
-  /* 파고든 화면에서는 지금 보는 은하의 이름판만 남긴다. 배경 은하의 이름판은
-     제 은하가 화면 밖이나 왼쪽 패널 뒤에 있어도 그려져서, 커다란 활자가
-     '…AR' '…AB' 같은 조각으로 잘려 보였다. 다른 은하로 가는 문은 머리띠의
+  /* 파고든 화면에서는 지금 보는 Galaxy의 이름판만 남긴다. 배경 Galaxy의 이름판은
+     제 Galaxy가 화면 밖이나 왼쪽 패널 뒤에 있어도 그려져서, 커다란 활자가
+     '…AR' '…AB' 같은 조각으로 잘려 보였다. 다른 Galaxy로 가는 문은 머리띠의
      UNIVERSE·GRAMMAR·READING·VOCAB 가 이미 맡고 있다. */
   const shown=GALAXIES.filter(g=>universeMode||g===ACTIVE);
   GALAXIES.forEach(g=>{ if(shown.indexOf(g)<0) g.plateRect=null; });
@@ -2247,7 +2247,7 @@ function drawNameplates(){
     try{ ctx.letterSpacing=(px*0.20).toFixed(1)+'px'; }catch(e){}
     const t=g.name;
     const w=ctx.measureText(t).width;
-    /* 이름은 두 번 — 은하색 후광 한 번, 흰 심 한 번 */
+    /* 이름은 두 번 — Galaxy색 후광 한 번, 흰 심 한 번 */
     ctx.globalAlpha=Math.min(1,a);
     ctx.shadowColor=RGBA(AC,.9); ctx.shadowBlur=Math.max(9,px*0.85);
     ctx.fillStyle=RGBA(pale,.96);
@@ -2572,43 +2572,54 @@ function coverPlate(b){
     }
     return finishPlate(g,cv2,b,A);
   } else if(cov.motif==='rg'){
-    /* READING GRAPHY: 시험지와 같은 네이비 판, 금색 규칙선,
-       READING 흰색 · GRAPHY 금색, 레벨 숫자는 유령 활자로. */
-    const grd=g.createLinearGradient(0,0,PW*.4,PH);
-    grd.addColorStop(0,'#155e8a'); grd.addColorStop(.6,'#0d4266'); grd.addColorStop(1,'#0a3454');
-    rrect(g,0,0,PW,PH,7); g.fillStyle=grd; g.fill();
-    /* 유령 레벨 숫자 */
-    const bigS=String(cov.big||'');
-    if(bigS){
-      g.font="800 118px 'Noto Sans',sans-serif";
-      g.textAlign='right'; g.textBaseline='alphabetic';
-      g.fillStyle='rgba(255,255,255,.07)';
-      g.fillText(bigS, PW+6, PH-26);
+    /* ORUN Reading 실물 표지 그대로.
+       밝은 회청색 바탕에 ORUN(먹) + Reading(레벨색) 워드마크, 흰 띠에 권 이름,
+       오른쪽 아래를 가득 채우는 큰 R, 그 끝을 잘라내는 밝은 사선, 그리고 LEVEL.
+       레벨색(cov.ink)은 표지에서 그대로 뽑은 값이라 지도의 별빛색과 따로 논다 —
+       표지는 표지의 색으로, 별은 보이는 색으로. */
+    const RI = cov.ink || A, DK = '#191c22';
+    g.fillStyle='#dbe2e8'; g.fillRect(0,0,PW,PH);
+    g.textAlign='left'; g.textBaseline='alphabetic';
+
+    /* 큰 R — 오른쪽 아래를 채우고 판 밖으로 걸쳐 나간다(바깥 clip 이 잘라 준다) */
+    g.font="800 140px 'Noto Sans',sans-serif";
+    g.fillStyle=RGBA(RI,1);
+    g.fillText(cov.big||'R', PW*0.33, PH+24);
+    /* 그 끝을 자르는 밝은 사선. 실물에서도 R 의 다리는 여기서 잘려 나가고,
+       LEVEL 표기가 그 밝은 면 위에 앉는다 — 사선을 줄이면 글자가 R 위로
+       올라타 읽히지 않는다. */
+    g.beginPath();
+    g.moveTo(PW,PH-68); g.lineTo(PW,PH); g.lineTo(PW-68,PH); g.closePath();
+    g.fillStyle='#c7d0d8'; g.fill();
+
+    /* 워드마크 */
+    g.font="800 15.5px 'Noto Sans',sans-serif";
+    g.fillStyle=DK; g.fillText('ORUN', 12, 30);
+    g.font="800 17.5px 'Noto Sans',sans-serif";
+    g.fillStyle=RGBA(RI,1); g.fillText('Reading', 12, 49);
+    g.font="600 5.4px 'Noto Sans KR','Noto Sans',sans-serif";
+    g.fillStyle='#5c6771';
+    g.fillText('옳은영어 중등 독해 시리즈', 12, 61);
+    g.fillText('ORUN ENGLISH 어학연구소', 12, 69);
+
+    /* 흰 띠 — 권 이름 */
+    const volS=cov.vol||'';
+    g.fillStyle='#ffffff'; rrect(g,12,80,PW-24,17,1.5); g.fill();
+    const fv=fitText(g,volS,PW-38,'700',8.4,5.6);
+    g.fillStyle=RGBA(RI,1);
+    g.fillText(volS, 19, 92);
+
+    /* LEVEL — 표지가 있는 권만 */
+    if(cov.level){
+      g.textAlign='right';
+      g.strokeStyle='rgba(25,28,34,.42)'; g.lineWidth=.9;
+      g.beginPath(); g.moveTo(PW-52,PH-31); g.lineTo(PW-12,PH-31); g.stroke();
+      g.font="600 5.6px 'Noto Sans',sans-serif"; g.fillStyle='#4a545e';
+      g.fillText('LEVEL', PW-12, PH-34);
+      g.font="800 10.5px 'Noto Sans',sans-serif"; g.fillStyle=DK;
+      g.fillText(cov.level, PW-12, PH-19);
       g.textAlign='left';
     }
-    g.font="600 5.4px 'Noto Sans','Noto Sans KR',sans-serif";
-    g.fillStyle='rgba(255,255,255,.55)';
-    g.fillText('ORUN ENGLISH 어학연구소', 12, 18);
-    g.fillStyle='#f5c518'; g.fillRect(12,28,26,2.4);
-    g.font="800 19.5px 'Noto Sans',sans-serif";
-    g.fillStyle='#ffffff'; g.fillText('READING', 12, 62);
-    g.fillStyle='#f5c518'; g.fillText('GRAPHY', 12, 85);
-    g.font="500 6.4px 'Noto Sans KR',sans-serif";
-    g.fillStyle='rgba(255,255,255,.72)';
-    g.fillText('중등 독해 시리즈 · 5단계 READ RIGHT', 12, 102);
-    g.fillText('RE:RIGHT 워크북 수록', 12, 113);
-    /* 레벨 칩 */
-    if(cov.vol){
-      g.font="800 8.5px 'Noto Sans',sans-serif";
-      const wv=g.measureText(cov.vol).width+16;
-      g.fillStyle='#f5c518'; rrect(g,12,PH-42,wv,16,2); g.fill();
-      g.fillStyle='#0c4064'; g.textBaseline='middle';
-      g.fillText(cov.vol, 20, PH-33.4);
-      g.textBaseline='alphabetic';
-    }
-    g.font="700 6px 'Noto Sans',sans-serif";
-    g.fillStyle='rgba(255,255,255,.6)';
-    g.fillText('ORUN ENGLISH', 12, PH-12);
     return finishPlate(g,cv2,b,A);
   } else {                                   /* bar */
     let bg=g.createLinearGradient(mx,my,mx+mw,my+mh);
@@ -2680,7 +2691,7 @@ function drawCovers(){
   const crowd=live.length>90?.62:1;
   const anySel=live.some(n=>n.kind==='book'&&isOnPath(n));
   /* 표지끼리 겹치지 않게, 가장 가까운 이웃 표지까지의 화면 거리를 재서
-     그 안에 들어오도록 폭을 깎는다. 교재가 몇 권이든 어느 은하든 저절로
+     그 안에 들어오도록 폭을 깎는다. 교재가 몇 권이든 어느 Galaxy든 저절로
      맞으므로, 권수마다 크기를 손으로 정해 줄 필요가 없다. */
   list.forEach(o=>{
     /* 표지는 화면 밖으로 나가지 않게 세로 위치가 눌린다 — 그 눌린 자리로
@@ -2875,7 +2886,7 @@ function hit(mx,my){
   });
   return best;
 }
-/* 이름판 히트 — 어느 모드에서든 이름판 클릭은 그 은하로 들어가는 문이다 */
+/* 이름판 히트 — 어느 모드에서든 이름판 클릭은 그 Galaxy로 들어가는 문이다 */
 function plateAt(mx,my){
   let best=null,bd=1e9;
   GALAXIES.forEach(g=>{
@@ -2887,7 +2898,7 @@ function plateAt(mx,my){
   });
   return best;
 }
-/* 우주 모드에서 은하 원반 아무 데나 클릭해도 들어간다 */
+/* 우주 모드에서 Galaxy 원반 아무 데나 클릭해도 들어간다 */
 function galaxyAt(mx,my){
   let best=null,bd=1e9;
   const kx=GOFF.x,ky=GOFF.y,kz=GOFF.z;
@@ -2984,16 +2995,16 @@ function sync(doFit){
   renderCrumb();
 }
 
-/* ── 은하 진입 / 우주 귀환 ─────────────────────────────────── */
-/* 전개 깊이가 모드에 따라 달라지므로(fullDepth), 모드가 바뀌면 세 은하를
-   모두 다시 편다. 안 그러면 배경 은하가 낡은 배치로 남아 크기가 어긋난다. */
+/* ── Galaxy 진입 / 우주 귀환 ─────────────────────────────────── */
+/* 전개 깊이가 모드에 따라 달라지므로(fullDepth), 모드가 바뀌면 세 Galaxy를
+   모두 다시 편다. 안 그러면 배경 Galaxy가 낡은 배치로 남아 크기가 어긋난다. */
 function relayoutAll(){
   GALAXIES.forEach(g=>withGalaxy(g,()=>{ layout(); }));
   bindGalaxy(ACTIVE);
 }
 function enterGalaxy(g){
   cam.idle=0;
-  /* 떠나는 은하는 은하 모습(전체 전개)으로 되돌려 두고 간다 — 배경에서
+  /* 떠나는 Galaxy는 Galaxy 모습(전체 전개)으로 되돌려 두고 간다 — 배경에서
      파고든 흔적(펼쳐진 부채)이 아니라 온전한 나선으로 떠 있어야 한다. */
   if(ACTIVE&&ACTIVE!==g&&!universeMode){ expandAll=true; focus=[ROOT]; layout(); }
   bindGalaxy(g);
@@ -3008,7 +3019,7 @@ function enterGalaxy(g){
 }
 function toUniverse(){
   cam.idle=0;
-  /* 파고들었던 은하는 은하 모습으로 되돌려 두고 나간다 */
+  /* 파고들었던 Galaxy는 Galaxy 모습으로 되돌려 두고 나간다 */
   expandAll=true; focus=[ROOT]; layout();
   universeMode=true;
   WCT.x=0; WCT.y=0; WCT.z=0;
@@ -3068,7 +3079,7 @@ function renderUniverseRails(){
       +'<dt>'+esc(S.TR.unit||'UNIT')+'</dt><dd class="num">'+S.totalItems+'</dd>'
       +'<dt>시험지</dt><dd class="num">'+S.totalSheets+' / '+S.totalItems+'</dd>'
       +'</dl>'
-      +'<button class="act gold" style="width:100%;margin-top:10px" data-enter-btn="'+g.id+'">'+esc(g.name)+' 은하 진입</button>'
+      +'<button class="act gold" style="width:100%;margin-top:10px" data-enter-btn="'+g.id+'">'+esc(g.name)+' Galaxy 진입</button>'
       +'</div>';
   }).join('');
   L.querySelectorAll('[data-enter-btn]').forEach(b=>b.onclick=()=>{
@@ -3076,16 +3087,16 @@ function renderUniverseRails(){
     if(g) enterGalaxy(g);
   });
   R.innerHTML='<div class="slab"><h3>ORUN UNIVERSE</h3>'
-    +'<p>세 은하가 한 하늘에 떠 있습니다. 각 은하의 중심에는 옳은영어의 등대가 서고, '
-    +'등대 머리 위의 이름을 클릭하면 그 은하로 들어갑니다.</p>'
+    +'<p>세 Galaxy가 한 하늘에 떠 있습니다. 각 Galaxy의 중심에는 옳은영어의 등대가 서고, '
+    +'등대 머리 위의 이름을 클릭하면 그 Galaxy로 들어갑니다.</p>'
     +'<dl class="kv" style="margin-top:10px">'
-    +'<dt>은하</dt><dd class="num">3</dd>'
+    +'<dt>Galaxy</dt><dd class="num">3</dd>'
     +'<dt>교재</dt><dd class="num">'+U_BOOKS+'권</dd>'
     +'<dt>단원 노드</dt><dd class="num">'+U_UNITS+'</dd>'
     +'<dt>시험지</dt><dd class="num">'+U_SHEETS+'</dd>'
     +'</dl></div>'
     +'<div class="slab"><h3>항법</h3>'
-    +'<p style="font-size:12px;color:var(--text-dim)">은하 클릭 · 이름판 클릭 → 진입<br>'
+    +'<p style="font-size:12px;color:var(--text-dim)">Galaxy 클릭 · 이름판 클릭 → 진입<br>'
     +'ESC 또는 [우주로] → 이 화면으로 복귀<br>드래그 회전 · 휠 확대</p></div>';
   J.innerHTML=GALAXIES.map(g=>{
     const AC='rgb('+g.accent[0]+','+g.accent[1]+','+g.accent[2]+')';
@@ -3275,7 +3286,7 @@ function renderRails(){
 }
 /* A fast path that does not require flying the lattice: choose the book,
    pick the chapter, and drop straight onto a unit's worksheet.
-   jumpBook 은 은하 상태다 — bindGalaxy 가 채운다. */
+   jumpBook 은 Galaxy 상태다 — bindGalaxy 가 채운다. */
 function renderJump(){
   const el=document.getElementById('sec-jump');
   const shown=DATA.books.filter(b=>!gradeFilter||(b.grades||[]).indexOf(gradeFilter)>=0);
@@ -4214,7 +4225,7 @@ function bjFit(b,opt,ck,PG){
    POP QUIZ + GRAMMAR CHECK 가 한 세트로 붙어 있고 세트가 유닛 순서대로
    이어진다. 정답과 해설은 학생이 미리 넘겨보지 못하도록 전부 맨 뒤에
    모아 둔다.  표지 → 목차 → 본문 → 정답과 해설.                  */
-/* 트랙 이름표 TR·UW·MB_NAME 은 은하 상태다 — 문법/독해/보카가 여기서 갈라진다.
+/* 트랙 이름표 TR·UW·MB_NAME 은 Galaxy 상태다 — 문법/독해/보카가 여기서 갈라진다.
    recall: 회상 시험지 · check: 문제 시험지 · vol: 묶음책 이름.
    buildGalaxyState 가 meta.track 에서 만들고 bindGalaxy 가 풀어 넣는다. */
 /* 좌측 패널의 ORUN GRAMMAR 발행 카드 노출 여부. false 면 카드만 사라지고
@@ -5339,7 +5350,7 @@ function toast(msg,bad){
 /* ============================================================
    15. CHROME
    ============================================================ */
-/* ── 은하 선택 세그먼트(헤더) + 모드에 따른 크롬 동기화 ── */
+/* ── Galaxy 선택 세그먼트(헤더) + 모드에 따른 크롬 동기화 ── */
 function buildGalPick(){
   const el=document.getElementById('gal-pick');
   if(!el) return;
