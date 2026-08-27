@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """ORUN NEXUS UNIVERSE 조립기.
 
-src/head.html + src/body.html + data/{grammar,reading,vocab}.json + src/engine.js
+src/head.html + src/body.html + data/{grammar,reading,vocab,usage,syntax}.json + src/engine.js
 → ORUN_NEXUS_UNIVERSE.html (자기완결 단일 파일)
 
 데이터를 고치면 data/gen_*.py 를 돌린 뒤 이 스크립트를 다시 돌린다.
@@ -25,7 +25,9 @@ def main():
     blobs = []
     for gid, fname in (("grammar", "grammar.json"),
                        ("reading", "reading.json"),
-                       ("vocab", "vocab.json")):
+                       ("vocab", "vocab.json"),
+                       ("usage", "usage.json"),
+                       ("syntax", "syntax.json")):
         raw = read("data", fname).strip()
         # </script> 가 데이터 안에 나타나면 조기 종료된다 — JSON 문자열 안에서도
         # < 이스케이프는 동일한 값이므로 안전하게 눌러 둔다.

@@ -17,8 +17,12 @@ function readData(id){ return JSON.parse(document.getElementById(id).textContent
    문법 Galaxy가 한가운데 아래에 앉아 전체를 받친다. */
 const U_YAW=0, U_PITCH=0.46, U_PUSH=1250;
 const U_DEPTH=1320;          /* 카메라에서 세 Galaxy까지의 공통 깊이 */
-const U_SX=1180;             /* 좌우 Galaxy의 가로 간격             */
-const U_UP=-390, U_DOWN=450; /* 양옆은 올리고 가운데는 내린다      */
+/* 다섯이 되면서 한 줄로는 화면이 감당하지 못한다 — 아랫줄 셋, 윗줄 둘의
+   좌우 대칭 피라미드로 세운다. 윗줄 둘은 아랫줄 셋의 사이(±U_SX2)에 앉아
+   가로로도 세로로도 대칭이 맞는다. */
+const U_SX=1290;             /* 아랫줄 좌우 Galaxy의 가로 간격      */
+const U_SX2=655;             /* 윗줄 두 Galaxy의 가로 간격          */
+const U_UP=-560, U_DOWN=430; /* 윗줄은 올리고 아랫줄은 내린다       */
 /* 이름판이 앉는 높이. 원반의 위쪽 테두리는 중심에서 253 남짓 올라오므로
    그보다 넉넉히 위여야 글자가 별밭에 묻히지 않는다. */
 const NP_Y=-430;
@@ -37,18 +41,29 @@ function uPlace(sx,wy){
 /* 왼쪽부터 보카 · 문법 · 독해 — 화면 순서가 곧 학습 순서(어휘 → 문법 → 독해)이고,
    머리띠의 Galaxy 단추와 왼쪽 패널의 카드도 같은 차례로 선다.
    기울기도 좌우가 서로의 거울이다(rz 부호만 반대). */
+/* 순서는 학습 순서다 — 어휘 → 문법 → 구문 → 어법 → 독해. 머리띠의 단추와
+   왼쪽 패널 카드가 이 차례로 서고, 하늘에서는 아랫줄에 보카·문법·독해가,
+   윗줄에 구문·어법이 앉는다. 기울기는 좌우가 서로의 거울이다(rz 부호 반대). */
 const GALAXIES=[
   { id:'vocab', name:'VOCAB', kr:'보카 Galaxy', tagline:'옳은보카 VOL.0 – ULTIMATE',
     dataId:'nexus-data-vocab', fullDepth:2,
-    pos:uPlace(-U_SX,U_UP),  orient:{rx:0.20,rz:0.16},
+    pos:uPlace(-U_SX,U_DOWN),  orient:{rx:0.22,rz:0.16},
     accent:[74,223,158],  silver:{base:[146,200,172],hot:[226,255,240]} },
   { id:'grammar', name:'GRAMMAR', kr:'문법 Galaxy', tagline:'중등 문법 커리큘럼',
     dataId:'nexus-data-grammar', fullDepth:2,
-    pos:uPlace(0,U_DOWN),    orient:{rx:0.26,rz:0},
+    pos:uPlace(0,U_DOWN),      orient:{rx:0.26,rz:0},
     accent:[41,168,255],  silver:{base:[152,176,208],hot:[240,248,255]} },
+  { id:'syntax', name:'SYNTAX', kr:'구문 Galaxy', tagline:'ORUN WEEKLY · 매주 한 회',
+    dataId:'nexus-data-syntax', fullDepth:3, spin0:-180,   /* 한 권짜리 — 표지를 등대 앞자리에 세운다 */
+    pos:uPlace(-U_SX2,U_UP),   orient:{rx:0.18,rz:0.11},
+    accent:[255,196,84],  silver:{base:[214,190,146],hot:[255,244,214]} },
+  { id:'usage', name:'USAGE', kr:'어법 Galaxy', tagline:'ORUN USAGE · 어디를 보는가',
+    dataId:'nexus-data-usage', fullDepth:3, spin0:-180,   /* 한 권짜리 — 표지를 등대 앞자리에 세운다 */
+    pos:uPlace(U_SX2,U_UP),    orient:{rx:0.18,rz:-0.11},
+    accent:[176,124,255],  silver:{base:[186,166,214],hot:[240,232,255]} },
   { id:'reading', name:'READING', kr:'독해 Galaxy', tagline:'ORUN Reading · 한 지문을 아홉 번',
     dataId:'nexus-data-reading', fullDepth:3,
-    pos:uPlace(U_SX,U_UP),   orient:{rx:0.20,rz:-0.16},
+    pos:uPlace(U_SX,U_DOWN),   orient:{rx:0.22,rz:-0.16},
     accent:[255,138,80],  silver:{base:[216,172,142],hot:[255,238,222]} },
 ];
 
@@ -120,7 +135,11 @@ function buildGalaxyState(gal){
     n.children.forEach(c=>depth(c,d+1, n.kind==='book'? n.payload.id : bk));
   })(root,0,null);
   S.ROOT=root;
-  S.focus=[root]; S.live=[]; S.rot=0; S.spin=Math.random()*360;
+  S.focus=[root]; S.live=[]; S.rot=0;
+  /* 시작 위상은 Galaxy마다 고정이다 — 난수로 두면 열 때마다 표지가 다른
+     자리에서 시작해, 한 권짜리 Galaxy는 표지가 등대에 겹친 채 열리기도 했다.
+     돌기는 그대로 돌되 첫 화면만은 언제나 같은 구도로 선다. */
+  S.spin=gal.spin0||0;
   S.expandAll=true; S.gradeFilter=null; S.galaxyAmt=1; S.jumpBook=null;
   S.SILVER={base:gal.silver.base,hot:gal.silver.hot,rank:0,of:1,label:''};
   S.ACCENT=gal.accent;
@@ -265,8 +284,15 @@ function kidsOf(n){ return n===ROOT ? n.children.filter(bookShown) : n.children;
    Galaxy는 어느 것이든 CHAPTER 까지만 편다 — 독해 Galaxy만 UNIT 168개까지
    펼치면 원반이 혼자 1.4배로 커져 옆 Galaxy를 밀어내고, 그 크기에서 지문
    제목은 어차피 읽히지 않는다. 들어가면 그때 UNIT 까지 펼쳐진다. */
+/* 다만 CHAPTER 까지만 펴면 한 권짜리 Galaxy는 우주 화면에서 노드 다섯 개짜리
+   빈 원반이 된다 — 등대만 서 있고 은하가 없다. 다 펴도 작은 Galaxy는 다 편다:
+   기준은 깊이가 아니라 노드 수다. */
+const UNI_NODE_CAP=64;
 function fullDepth(){
-  return (CURG===ACTIVE && !universeMode) ? FULL_DEPTH : Math.min(2,FULL_DEPTH);
+  if(CURG===ACTIVE && !universeMode) return FULL_DEPTH;
+  if(FULL_DEPTH<=2) return FULL_DEPTH;
+  /* 배경 Galaxy를 그릴 때도 전역은 이미 그 Galaxy의 것이다(withGalaxy) */
+  return totalItems<=UNI_NODE_CAP ? FULL_DEPTH : 2;
 }
 /* Angle is shared out by leaf count, not by sibling count, so every chapter
    ends up the same width no matter how lopsided the books are. */
@@ -518,7 +544,9 @@ function buildBackdrop(){
     const s2=r<.86?1:1.6;
     g.fillRect(x,y,s2,s2);
   }
-  [[0.16,0.30,[41,168,255]],[0.84,0.24,[255,138,80]],[0.46,0.80,[74,223,158]]].forEach(v=>{
+  /* 성운 기운은 Galaxy 의 전류색에서 뽑는다 — 셋으로 굳혀 두었더니 Galaxy 가
+     늘어도 하늘은 그대로였다. 화면을 가로질러 고르게 흩는다. */
+  GALAXIES.map((g,i)=>[ (i+0.5)/GALAXIES.length, i%2?0.26:0.74, g.accent ]).forEach(v=>{
     const c=v[2];
     const gg=g.createRadialGradient(W*v[0],H*v[1],0,W*v[0],H*v[1],Math.max(W,H)*.30);
     gg.addColorStop(0,'rgba('+c[0]+','+c[1]+','+c[2]+',.05)');
@@ -2571,6 +2599,208 @@ function coverPlate(b){
       g.fillText(cov.vol, ix, PH-9);
     }
     return finishPlate(g,cv2,b,A);
+  } else if(cov.motif==='usage'){
+    /* ORUN USAGE 실물 표지: 밤하늘 위에 금색 판 하나. 판 안에 ORUN USAGE 가
+       먹색으로 서고, 그 아래 옳은 어법과 적용 범위 칩. 판의 오른쪽 아래를
+       물고 있는 검은 원이 SETS 36 ROUNDS 다. 색은 표지에서 그대로 뽑았다
+       (금 #c9a227 · 밤하늘 #1e2a3d · 먹 #0e2a47). */
+    const GOLD='#c9a227', NAVY='#0e2a47';
+    let sky=g.createLinearGradient(0,0,0,PH);
+    sky.addColorStop(0,'#1e2a3d'); sky.addColorStop(.62,'#111a2b'); sky.addColorStop(1,'#04060b');
+    g.fillStyle=sky; g.fillRect(0,0,PW,PH);
+    /* 별과 혜성 한 줄 */
+    for(let i=0;i<26;i++){
+      const hx=hash01(i*3.71)*PW, hy=hash01(i*7.13)*PH*0.9;
+      g.fillStyle='rgba(226,238,255,'+(0.20+hash01(i*1.9)*0.5).toFixed(2)+')';
+      g.fillRect(hx,hy,1,1);
+    }
+    let com=g.createLinearGradient(PW*0.62,0,PW,PH*0.5);
+    com.addColorStop(0,'rgba(255,255,255,0)');
+    com.addColorStop(.5,'rgba(214,232,255,.30)');
+    com.addColorStop(1,'rgba(255,255,255,0)');
+    g.strokeStyle=com; g.lineWidth=7;
+    g.beginPath(); g.moveTo(PW*0.60,-6); g.lineTo(PW+8,PH*0.46); g.stroke();
+
+    /* 금색 판 */
+    const px=9, py=9, pw=PW-32, ph=112;
+    g.fillStyle=GOLD; g.fillRect(px,py,pw,ph);
+    const cxp=px+pw/2;
+    g.textAlign='center'; g.textBaseline='alphabetic';
+    /* 눈썹줄 — 좌우에 짧은 규칙선 */
+    g.font="700 4.8px 'Noto Sans KR',sans-serif"; g.fillStyle=NAVY;
+    const eb=cov.eyebrow||'';
+    g.fillText(eb, cxp, py+15);
+    const ebw=g.measureText(eb).width;
+    g.strokeStyle='rgba(14,42,71,.75)'; g.lineWidth=.7;
+    g.beginPath();
+    g.moveTo(cxp-ebw/2-9,py+13); g.lineTo(cxp-ebw/2-3,py+13);
+    g.moveTo(cxp+ebw/2+3,py+13); g.lineTo(cxp+ebw/2+9,py+13);
+    g.stroke();
+    /* 제호 */
+    g.font="800 17px 'Noto Sans',sans-serif";
+    g.strokeStyle='#ffffff'; g.lineWidth=2.6; g.lineJoin='round';
+    g.strokeText('ORUN',cxp,py+38); g.strokeText('USAGE',cxp,py+58);
+    g.fillStyle=NAVY;
+    g.fillText('ORUN',cxp,py+38); g.fillText('USAGE',cxp,py+58);
+    /* 한글 제호 */
+    g.strokeStyle='rgba(14,42,71,.55)'; g.lineWidth=.7;
+    g.beginPath(); g.moveTo(cxp-26,py+66); g.lineTo(cxp+26,py+66); g.stroke();
+    g.font="800 7.4px 'Noto Sans KR',sans-serif"; g.fillStyle=NAVY;
+    g.fillText(cov.kr||'옳은 어법',cxp,py+79);
+    g.beginPath(); g.moveTo(cxp-26,py+84); g.lineTo(cxp+26,py+84); g.stroke();
+    /* 적용 범위 칩 */
+    if(cov.tag){
+      g.font="700 5.2px 'Noto Sans KR',sans-serif";
+      const tw=g.measureText(cov.tag).width+16;
+      g.strokeStyle=NAVY; g.lineWidth=.9;
+      rrect(g,cxp-tw/2,py+90,tw,12,6); g.stroke();
+      g.fillStyle=NAVY; g.fillText(cov.tag,cxp,py+99);
+    }
+    /* SETS 36 ROUNDS 배지 — 판의 오른쪽 아래를 문다 */
+    const bx=px+pw, by=py+ph-6, br=21;
+    g.fillStyle='#0a0e18';
+    g.beginPath(); g.arc(bx,by,br,0,Math.PI*2); g.fill();
+    g.font="700 4.2px 'Noto Sans',sans-serif"; g.fillStyle='rgba(226,238,255,.72)';
+    g.fillText('SETS',bx,by-7);
+    g.font="800 14px 'Noto Sans',sans-serif"; g.fillStyle=GOLD;
+    g.fillText(cov.big||'36',bx,by+6);
+    g.font="700 4.2px 'Noto Sans',sans-serif"; g.fillStyle='rgba(226,238,255,.72)';
+    g.fillText('ROUNDS',bx,by+14);
+    /* 밑단 */
+    g.textAlign='left';
+    g.font="700 4.4px 'Noto Sans',sans-serif"; g.fillStyle='rgba(201,162,39,.92)';
+    g.fillText('ORUN ENGLISH GRAMMAR SERIES',10,PH-13);
+    g.textAlign='right';
+    g.font="800 7.2px 'Noto Sans KR',sans-serif"; g.fillStyle='#ffffff';
+    g.fillText('옳은영어',PW-10,PH-19);
+    g.font="600 4.4px 'Noto Sans',sans-serif"; g.fillStyle='rgba(214,228,248,.70)';
+    g.fillText('ORUN ENGLISH',PW-10,PH-11);
+    g.textAlign='left';
+    return finishPlate(g,cv2,b,A);
+  } else if(cov.motif==='weekly'){
+    /* ORUN WEEKLY 실물 표지: 밤바다 위 등대 하나. 흰 ORUN WEEKL + 금색 Y,
+       오른쪽 위 금색 VOL 원판, 아래로 금빛 물결. 등대에서 뻗어 나온 빛줄기가
+       제호를 가로질러 왼쪽 위로 빠져나간다 — 이 Galaxy 중심의 등대와 같은
+       물건이라, 표지가 곧 지도의 축소판이다. */
+    const GOLD='#f2b93c', GOLD_D='#c9931f', SLATE='#2f4a63', DEEP='#131c2b';
+    let sky=g.createLinearGradient(0,0,0,PH);
+    sky.addColorStop(0,'#1b2436'); sky.addColorStop(.52,'#141d2c'); sky.addColorStop(1,'#0a0f19');
+    g.fillStyle=sky; g.fillRect(0,0,PW,PH);
+    /* 별 */
+    for(let i=0;i<30;i++){
+      const hx=hash01(i*3.71)*PW, hy=hash01(i*7.13)*PH*0.72;
+      g.fillStyle='rgba(226,238,255,'+(0.16+hash01(i*1.9)*0.46).toFixed(2)+')';
+      g.fillRect(hx,hy,1,1);
+    }
+    /* 등대 자리 — 오른쪽 아래 */
+    const lx=PW*0.655, ly=132, LK=0.80;
+    /* 빛줄기 두 갈래: 제호를 가로질러 왼쪽 위로 */
+    g.save();
+    [[-0.86,-0.52,15],[-0.95,-0.24,9]].forEach(function(v){
+      const bg=g.createLinearGradient(lx,ly-18,lx+v[0]*PW*1.5,ly-18+v[1]*PW*1.5);
+      bg.addColorStop(0,'rgba(242,185,60,.50)');
+      bg.addColorStop(.45,'rgba(242,185,60,.17)');
+      bg.addColorStop(1,'rgba(242,185,60,0)');
+      g.strokeStyle=bg; g.lineWidth=v[2];
+      g.beginPath(); g.moveTo(lx,ly-18); g.lineTo(lx+v[0]*PW*1.5,ly-18+v[1]*PW*1.5); g.stroke();
+    });
+    g.restore();
+    /* 등대 뒤 달무리 */
+    let halo=g.createRadialGradient(lx,ly-16,2,lx,ly-16,32);
+    halo.addColorStop(0,'rgba(242,185,60,.24)'); halo.addColorStop(1,'rgba(242,185,60,0)');
+    g.fillStyle=halo; g.beginPath(); g.arc(lx,ly-16,32,0,Math.PI*2); g.fill();
+    /* 아래부터는 등대 제 좌표계 — 한 자리에서 크기를 잡는다 */
+    g.save(); g.translate(lx,ly); g.scale(LK,LK); g.translate(-lx,-ly);
+    /* 등대: 금색 몸통 + 파란 띠 + 흰 창 */
+    g.fillStyle=GOLD;
+    g.beginPath();
+    g.moveTo(lx-8,ly+26); g.lineTo(lx-5.4,ly-13); g.lineTo(lx+5.4,ly-13); g.lineTo(lx+8,ly+26);
+    g.closePath(); g.fill();
+    g.fillStyle=SLATE;
+    g.fillRect(lx-6.6,ly-9,13.2,3.4);
+    g.fillRect(lx-7.6,ly+6,15.2,3.4);
+    g.fillStyle='#ffffff'; rrect(g,lx-2.1,ly+11,4.2,7,2); g.fill();
+    /* 등롱 */
+    g.fillStyle=SLATE; rrect(g,lx-6.4,ly-19,12.8,6,1.4); g.fill();
+    g.fillStyle=GOLD;  rrect(g,lx-4.2,ly-24.5,8.4,5.6,1.2); g.fill();
+    g.fillStyle=SLATE; rrect(g,lx-7.4,ly-26.5,14.8,2.4,1); g.fill();
+    /* 빛살 — 등롱에서 사방으로 */
+    g.strokeStyle=GOLD; g.lineWidth=1.5; g.lineCap='round';
+    for(let i=0;i<7;i++){
+      const a=-Math.PI*0.92+i*Math.PI*0.145;
+      g.beginPath();
+      g.moveTo(lx+Math.cos(a)*11, ly-21.5+Math.sin(a)*11);
+      g.lineTo(lx+Math.cos(a)*17, ly-21.5+Math.sin(a)*17);
+      g.stroke();
+    }
+    g.lineCap='butt';
+    g.restore();
+    /* 물결 — 밑단 세 겹 */
+    const wy=PH-32;
+    [[0,GOLD_D,.55,7],[6,SLATE,.85,6],[12,'#1d2b3d',1,5]].forEach(function(v){
+      g.strokeStyle=typeof v[1]==='string'?v[1]:v[1]; g.globalAlpha=v[2];
+      g.lineWidth=1.7; g.beginPath();
+      for(let x=-4;x<PW+6;x+=v[3]*2){
+        g.moveTo(x,wy+v[0]);
+        g.quadraticCurveTo(x+v[3]/2,wy+v[0]-2.6,x+v[3],wy+v[0]);
+        g.quadraticCurveTo(x+v[3]*1.5,wy+v[0]+2.6,x+v[3]*2,wy+v[0]);
+      }
+      g.stroke(); g.globalAlpha=1;
+    });
+    /* 눈썹줄 — 라틴 표어 */
+    g.textAlign='center'; g.textBaseline='alphabetic';
+    if(cov.eyebrow){
+      const fs=fitText(g,cov.eyebrow,PW-22,'700',4.2,3.2);
+      g.fillStyle='rgba(242,185,60,.86)';
+      g.fillText(cov.eyebrow, PW/2, 13);
+      g.strokeStyle='rgba(242,185,60,.55)'; g.lineWidth=.7;
+      g.beginPath(); g.moveTo(PW/2-15,18.5); g.lineTo(PW/2+15,18.5); g.stroke();
+    }
+    /* 제호 — ORUN / WEEKL+Y */
+    g.textAlign='left';
+    g.font="800 21px 'Noto Sans',sans-serif";
+    g.fillStyle='#ffffff'; g.fillText('ORUN', 11, 41);
+    g.fillText('WEEKL', 11, 61);
+    const wkw=g.measureText('WEEKL').width;
+    g.fillStyle=GOLD; g.fillText('Y', 11+wkw, 61);
+    /* VOL 원판 */
+    const vr=15, vx=PW-vr-9, vy=31;
+    g.fillStyle=GOLD_D; g.beginPath(); g.arc(vx,vy+1.2,vr,0,Math.PI*2); g.fill();
+    g.fillStyle=GOLD;   g.beginPath(); g.arc(vx,vy,vr,0,Math.PI*2); g.fill();
+    g.textAlign='center';
+    g.font="700 4.6px 'Noto Sans',sans-serif"; g.fillStyle=DEEP;
+    g.fillText('VOL',vx,vy-3.5);
+    g.font="800 14px 'Noto Sans',sans-serif";
+    g.fillText(String(cov.big||'1'),vx,vy+10);
+    /* 부제 — 옳은영어 주간지 for Top/고1 */
+    g.textAlign='left';
+    g.strokeStyle=GOLD; g.lineWidth=2.2;
+    g.beginPath(); g.moveTo(11,71); g.lineTo(26,71); g.stroke();
+    g.font="800 8.4px 'Noto Sans KR',sans-serif"; g.fillStyle='#ffffff';
+    g.fillText(cov.kr||'옳은영어 주간지', 11, 84);
+    const krw=g.measureText(cov.kr||'옳은영어 주간지').width;
+    if(cov.tag){
+      g.font="800 8.4px 'Noto Sans',sans-serif"; g.fillStyle=GOLD;
+      g.fillText(cov.tag, 13+krw, 84);
+    }
+    if(cov.foot){
+      const fs2=fitText(g,cov.foot,PW-22,'600',4.6,3.4);
+      g.fillStyle='rgba(190,206,228,.78)';
+      g.fillText(cov.foot, 11, 84+fs2+6);
+    }
+    /* 밑단 — 로고와 이름 */
+    g.strokeStyle='rgba(242,185,60,.5)'; g.lineWidth=.7;
+    g.beginPath(); g.moveTo(11,PH-15); g.lineTo(PW-11,PH-15); g.stroke();
+    g.fillStyle=GOLD; g.beginPath(); g.arc(15.5,PH-7.6,4,0,Math.PI*2); g.fill();
+    g.font="700 5px 'Noto Sans',sans-serif"; g.fillStyle='rgba(232,240,252,.9)';
+    g.fillText('ORUN ENGLISH', 23, PH-5.8);
+    if(cov.vol){
+      g.textAlign='right';
+      g.font="700 5px 'Noto Sans',sans-serif"; g.fillStyle='rgba(242,185,60,.9)';
+      g.fillText(cov.vol, PW-11, PH-5.8);
+      g.textAlign='left';
+    }
+    return finishPlate(g,cv2,b,A);
   } else if(cov.motif==='rg'){
     /* ORUN Reading 실물 표지 그대로.
        밝은 회청색 바탕에 ORUN(먹) + Reading(레벨색) 워드마크, 흰 띠에 권 이름,
@@ -2722,6 +2952,28 @@ function drawCovers(){
     uniW=Math.min(uniW, Math.min(126*PW/PH, 75*zz0*PW/PH), o.cap);
   });
   uniW=Math.max(34,uniW);
+  /* 최소 크기 34px 를 지키느라 더는 깎지 못하는 자리가 있다 — 고리 뒤쪽에서
+     두 권이 화면상 거의 같은 점에 오는 때다. 그러면 폭을 줄이는 대신 뒤엣것을
+     흐려 보낸다: 포개진 표지 두 장은 지도가 아니고, 알아볼 수 없이 작은 표지도
+     지도가 아니다. 회전하다 스쳐 지나는 순간이라 깜빡 꺼지지 않게 서서히
+     사라진다 — 별과 이름표는 그대로 남으니 권이 지도에서 없어지지는 않는다. */
+  const wOf=o=>uniW*(isOnPath(o.n)?1.5:hover===o.n?1.14:1);
+  const front=list.slice().reverse();     /* 앞에 있는 표지부터 자리를 잡는다 */
+  front.forEach((o,i)=>{
+    const w=wOf(o), h=w*PH/PW;
+    let f=1;
+    for(let j=0;j<i;j++){
+      const q=front[j], qw=wOf(q), qh=qw*PH/PW;
+      const needX=(w+qw)/2, needY=(h+qh)/2;
+      const sx=Math.abs(o.s[0]-q.s[0])/needX, sy=Math.abs(o.cy-q.cy)/needY;
+      const sep=Math.max(sx,sy);           /* 한 축만 벌어져도 안 겹친다 */
+      /* 겹치는 동안은 아예 안 보이고(sep<1), 떨어지자마자 살아난다. 폭을 깎을
+         때 이미 6% 여유를 두므로 보통 짝은 sep≈1.06 로 늘 온전히 보인다 —
+         이 좁은 띠에 걸리는 것은 최소 크기에 막혀 더는 못 깎은 짝뿐이다. */
+      f=Math.min(f, Math.max(0,Math.min(1,(sep-1)/0.05)));
+    }
+    o.fade=f;
+  });
   list.forEach(o=>{
     const n=o.n, [x,y,k,z]=o.s;
     const zz=k*cam.zoom;
@@ -2732,7 +2984,7 @@ function drawCovers(){
     /* the chosen book steps forward: larger, at full strength, while the
        rest fall back — otherwise ten covers all shout at once */
     const A=n.vis*(n.dim==null?1:n.dim)*fog(z)*crowd
-            *Math.min(1,(zz-.3)/.22)
+            *Math.min(1,(zz-.3)/.22)*(o.fade==null?1:o.fade)
             *(sel?1 : hover===n?.95 : anySel?.5 : .9);
     if(A<=.02) return;
     /* 고른 크기를 쓰되, 고른 것과 커서가 얹힌 것만 앞으로 한 걸음 나온다 */
@@ -3039,8 +3291,9 @@ const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;',
 function renderCrumb(){
   const el=document.getElementById('crumb');
   if(universeMode){
-    el.innerHTML='<span class="crumb tail">UNIVERSE · 3 GALAXIES · '+U_BOOKS+'권 · '+U_UNITS+' NODES</span>';
-    document.getElementById('rd-path').textContent='UNIVERSE // GRAMMAR · READING · VOCAB';
+    el.innerHTML='<span class="crumb tail">UNIVERSE · '+GALAXIES.length+' GALAXIES · '
+      +U_BOOKS+'권 · '+U_UNITS+' NODES</span>';
+    document.getElementById('rd-path').textContent='UNIVERSE // '+GALAXIES.map(g=>g.name).join(' · ');
     return;
   }
   const uni='<button class="crumb" data-uni="1">UNIVERSE</button><span class="crumb-sep">/</span>';
@@ -3087,10 +3340,10 @@ function renderUniverseRails(){
     if(g) enterGalaxy(g);
   });
   R.innerHTML='<div class="slab"><h3>ORUN UNIVERSE</h3>'
-    +'<p>세 Galaxy가 한 하늘에 떠 있습니다. 각 Galaxy의 중심에는 옳은영어의 등대가 서고, '
-    +'등대 머리 위의 이름을 클릭하면 그 Galaxy로 들어갑니다.</p>'
+    +'<p>'+GALAXIES.length+'개 Galaxy가 한 하늘에 떠 있습니다. 각 Galaxy의 중심에는 '
+    +'옳은영어의 등대가 서고, 등대 머리 위의 이름을 클릭하면 그 Galaxy로 들어갑니다.</p>'
     +'<dl class="kv" style="margin-top:10px">'
-    +'<dt>Galaxy</dt><dd class="num">3</dd>'
+    +'<dt>Galaxy</dt><dd class="num">'+GALAXIES.length+'</dd>'
     +'<dt>교재</dt><dd class="num">'+U_BOOKS+'권</dd>'
     +'<dt>단원 노드</dt><dd class="num">'+U_UNITS+'</dd>'
     +'<dt>시험지</dt><dd class="num">'+U_SHEETS+'</dd>'
@@ -3702,9 +3955,14 @@ function splitKoEn(v,depth){
   /* 'X → Y' 짝은 화살표를 데리고 줄을 바꾼다(영어끼리도) */
   let a=s.match(/^([\s\S]{4,}?)\s+([→⇒][\s\S]*)$/);
   if(a&&!/[→⇒]/.test(a[1])) return rec(a[1].trim(), a[2].trim());
-  /* 이음표는 버린다 */
+  /* 이음표는 버린다 — 다만 '우리말 발문 — 예문' 자리에서만. 우리말이 앞
+     토막 어딘가에만 있으면 되게 두었더니, 머리에 [주어-동사 수일치] 같은
+     이름표만 달린 영어 원문이 문장 한복판의 이음표에서 잘리고 그 이음표가
+     사라졌다(동격을 끊어 읽는 자리라 뜻이 바뀐다). 이음표 바로 앞이
+     우리말일 때만 가른다. */
   let m=s.match(/^([\s\S]{4,}?)\s*[—–]\s*([\s\S]+)$/);
-  if(m&&HAN.test(m[1])&&/[A-Za-z가-힣]/.test(m[2])) return rec(m[1].trim(), m[2].trim());
+  if(m&&HAN.test(m[1].slice(-12))&&/[A-Za-z가-힣]/.test(m[2]))
+    return rec(m[1].trim(), m[2].trim());
   if(!HAN.test(s)) return [s];
   /* 우리말 토막이 끝나고 영어가 시작하는 첫 자리에서 가른다. 발문 안에
      'It', 'be동사' 처럼 영문이 섞여 있어도 걸리도록 앞부분은 열어 둔다. */
