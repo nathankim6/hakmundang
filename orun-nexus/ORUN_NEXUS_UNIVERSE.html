@@ -679,20 +679,22 @@ function readData(id){ return JSON.parse(document.getElementById(id).textContent
 /* 우주 배치. pos 는 우주 좌표(x 가로 · y 높이(-가 위) · z 깊이)이고 세 은하의
    합이 0이라 우주 모드의 무게중심이 화면 한가운데 온다. orient 는 은하마다
    다른 원반 기울기 — 실제 심우주 사진처럼 제각각 기울어 떠 있다가, 한 은하로
-   파고들면 그 은하만 수평으로 돌아온다(oAmt). accent 는 은하의 고유 전류색,
+   파고들면 그 은하만 수평으로 돌아온다(oAmt). 기울기는 작게만 준다: 카메라
+   피치(0.46)와 은하 자체 기울기(0.20) 위에 음수 rx 를 얹으면 원반이 옆에서
+   본 각도로 눌려 이름표가 서로 겹친 줄무늬가 된다 — 독해 은하가 그랬다. accent 는 은하의 고유 전류색,
    silver 는 전체 전개(은하 모드)에서 격자가 입는 은은한 금속색이다. */
 const GALAXIES=[
   { id:'grammar', name:'GRAMMAR', kr:'문법 은하', tagline:'중등 문법 커리큘럼',
     dataId:'nexus-data-grammar', fullDepth:2,
-    pos:{x:-1240,y:-30,z:240}, orient:{rx:0.15,rz:-0.10},
+    pos:{x:-1180,y:-20,z:200},  orient:{rx:0.16,rz:-0.10},
     accent:[41,168,255],  silver:{base:[152,176,208],hot:[240,248,255]} },
   { id:'reading', name:'READING', kr:'독해 은하', tagline:'READING GRAPHY · 옳은 독해',
     dataId:'nexus-data-reading', fullDepth:3,
-    pos:{x:1210,y:-130,z:260}, orient:{rx:-0.22,rz:0.18},
+    pos:{x:1140,y:-120,z:190},  orient:{rx:0.12,rz:0.15},
     accent:[255,138,80],  silver:{base:[216,172,142],hot:[255,238,222]} },
   { id:'vocab', name:'VOCAB', kr:'보카 은하', tagline:'옳은보카 VOL.0 – ULTIMATE',
     dataId:'nexus-data-vocab', fullDepth:2,
-    pos:{x:30,y:160,z:-500},   orient:{rx:0.30,rz:-0.26},
+    pos:{x:20,y:150,z:-430},    orient:{rx:0.26,rz:-0.20},
     accent:[74,223,158],  silver:{base:[146,200,172],hot:[226,255,240]} },
 ];
 
@@ -903,11 +905,18 @@ function kidsOf(n){ return n===ROOT ? n.children.filter(bookShown) : n.children;
 /* 전체 전개는 CHAPTER 까지만 편다 — UNIT 까지 펼치면 454개가 한 화면에
    깔려 아무것도 읽히지 않는다. UNIT 은 교재를 골라 들어가면 나온다. */
 /* FULL_DEPTH 는 은하 상태 — 문법·보카 2(CHAPTER 까지), 독해 3(UNIT 까지) */
+/* 다만 그건 그 은하를 보고 있을 때 이야기다. 우주 화면과 배경으로 물러난
+   은하는 어느 것이든 CHAPTER 까지만 편다 — 독해 은하만 UNIT 168개까지
+   펼치면 원반이 혼자 1.4배로 커져 옆 은하를 밀어내고, 그 크기에서 지문
+   제목은 어차피 읽히지 않는다. 들어가면 그때 UNIT 까지 펼쳐진다. */
+function fullDepth(){
+  return (CURG===ACTIVE && !universeMode) ? FULL_DEPTH : Math.min(2,FULL_DEPTH);
+}
 /* Angle is shared out by leaf count, not by sibling count, so every chapter
    ends up the same width no matter how lopsided the books are. */
 function leaves(n,d){
   d=d||0;
-  const k=(d>=FULL_DEPTH)?[]:kidsOf(n);
+  const k=(d>=fullDepth())?[]:kidsOf(n);
   if(!k.length) return 1;
   return k.reduce((s,c)=>s+leaves(c,d+1),0);
 }
@@ -916,8 +925,9 @@ function layoutFull(){
   ROOT.a=ROOT.baseA=0; ROOT.r=0;
   const seen=new Set([ROOT]);
   rot=0;
+  const FD=fullDepth();
   (function place(node,start,span,depth){
-    if(depth>FULL_DEPTH) return;
+    if(depth>FD) return;
     let a=start;
     kidsOf(node).forEach((k,i)=>{
       const w=span*leaves(k,depth)/leaves(node,depth-1);
@@ -1077,7 +1087,10 @@ const cam={
   px:0, py:0, tpx:0, tpy:0,
   idle:0,
 };
-const PITCH_MIN=0.30, PITCH_MAX=1.36;
+/* 하한을 0.30 에서 올렸다 — 그보다 눕히면 원반이 한 줄 실선으로 눌려
+   이름표가 서로 겹쳐 읽히지 않는다. 기울일 자유는 두되, 판이 읽히는
+   각도 안에서만 움직이게 한다. */
+const PITCH_MIN=0.44, PITCH_MAX=1.30;
 /* 화면을 아직 자동으로 잡아도 되는가. 사용자가 카메라에 손을 대면 꺼지고,
    화면 맞춤·전개 전환처럼 다시 잡아 달라는 신호가 오면 켜진다. */
 let autoFrame=true, framePend=false;
@@ -1207,7 +1220,8 @@ function bloom(){
   ctx.restore();
 }
 
-new ResizeObserver(()=>{resize();buildBackdrop();}).observe(document.getElementById('stage'));
+new ResizeObserver(()=>{ resize(); buildBackdrop(); if(autoFrame) framePend=true; })
+  .observe(document.getElementById('stage'));
 resize();
 
 /* world → camera-relative screen offset (before zoom/pan) */
@@ -1256,6 +1270,58 @@ function toScreen(n){ return pt(n.x,lift(n),n.y); }
    구성' 같은 긴 이름은 그 상수를 넘겨서 창이 좁으면 글자가 화면 밖으로
    잘렸다. 글자 폭을 실제로 재서 그 끝까지 화면 안에 넣는다.
    이름표 크기는 zoom 에 딸려 움직이므로 배율을 두 번 굴려 수렴시킨다. */
+/* ── 화면 맞춤 ────────────────────────────────────────────────────────
+   판이 찌그러져 보이던 이유는 두 가지였다.
+
+   (1) 은하 모드의 판은 쉬지 않고 돈다. 이름표는 노드에서 바깥으로 뻗으므로
+       '지금 이 순간의 노드 자리'로 외곽을 재면, 판이 도는 동안 외곽선이
+       계속 달라진다. 그걸 매 프레임 다시 재니 배율이 숨을 쉬듯 오르내렸다.
+       회전과 무관한 것 — 원반의 반지름과 이름표가 뻗는 길이 — 으로 재면
+       어느 각도에서도 같은 프레임이 나온다.
+
+   (2) 전환(은하 진입·우주 복귀·전개 토글)이 흐르는 도중의 포즈로 재면
+       카메라가 움직이는 표적을 쫓느라 끝내 자리를 잡지 못한다. 잴 때는
+       전환이 끝난 뒤의 포즈로 재고(poseSettled), 한 번만 정한 뒤
+       카메라가 그 자리로 미끄러지게 둔다. */
+
+/* 재는 동안만 카메라·세계의 애니메이션 변수를 목표값으로 스냅한다. */
+function poseSettled(fn){
+  const k={ wx:WC.x, wy:WC.y, wz:WC.z, u:uAmt, p:cam.pitch, y:cam.yaw,
+            ga:galaxyAmt, gora:GORA, ox:GOFF.x, oy:GOFF.y, oz:GOFF.z };
+  WC.x=WCT.x; WC.y=WCT.y; WC.z=WCT.z;
+  uAmt = universeMode?1:0;
+  cam.pitch=cam.tpitch; cam.yaw=cam.tyaw;
+  galaxyAmt = expandAll?1:0;
+  if(CURG){ GORA=(CURG===ACTIVE&&!universeMode)?0:1; setGOFF(CURG); }
+  try{ return fn(); }
+  finally{
+    WC.x=k.wx; WC.y=k.wy; WC.z=k.wz; uAmt=k.u;
+    cam.pitch=k.p; cam.yaw=k.y; galaxyAmt=k.ga; GORA=k.gora;
+    GOFF.x=k.ox; GOFF.y=k.oy; GOFF.z=k.oz;
+  }
+}
+
+/* 이름표가 노드 바깥으로 뻗는 최대 길이(화면 px).
+   글자 수로 '가장 긴 이름'을 고르면 틀린다 — 'The Post Office on th…' 보다
+   글자 수는 적어도 더 넓게 그려지는 이름이 있다. 실제 폭을 재고, 같은
+   문자열은 한 번만 재도록 캐시한다. */
+const REACH_CACHE={};
+function labelReach(z){
+  const zk=z.toFixed(2);
+  let best=0;
+  live.forEach(n=>{
+    if(n.kind==='core'||n.kind==='book') return;
+    const cap = n.kind==='item'?22:20;
+    let t=n.label||'';
+    if(t.length>cap) t=t.slice(0,cap-1)+'…';
+    const key=n.kind+'|'+zk+'|'+t;
+    let w=REACH_CACHE[key];
+    if(w==null) w=REACH_CACHE[key]=mw(t, labelFont(n, 1, z));
+    if(w>best) best=w;
+  });
+  return best ? 13 + 10 + best + 8 : 0;
+}
+
 function frameAt(z){
   let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
   const add=(sx,sy,pad,padY)=>{
@@ -1263,71 +1329,120 @@ function frameAt(z){
     y0=Math.min(y0,sy-padY); y1=Math.max(y1,sy+padY);
   };
   const inv=1/Math.max(.05,z);                 /* 화면 px → project 단위 */
+
   if(expandAll){
-    add(0,0,40,40);                            /* the ring itself sets the frame */
-  } else {
-    const tip=project(0,-244,0), foot=project(0,0,0);
-    add(tip.sx,tip.sy,62,46); add(foot.sx,foot.sy,86,40);
-  }
-  live.forEach(n=>{
-    const p=project(n.tx,lift(n),n.ty);
-    /* 파고든 화면은 노드가 몇 개뿐이라 예전 상수 여백으로도 잘리지 않고,
-       그 편이 등대를 가운데 두는 구도가 나온다. 실측은 이름표가 사방으로
-       뻗어 잘리던 은하에만 쓴다. */
-    if(!expandAll){
-      const pad = n.kind==='item'?176: n.kind==='chap'?152: 104;
-      add(p.sx,p.sy,pad*p.k,42*p.k); return;
+    /* 회전 불변 외곽 — 가장 바깥 링을 한 바퀴 훑는다. 판이 어느 각도로
+       돌아 있든 같은 값이 나오므로 배율이 흔들리지 않는다. */
+    let Rm=0; live.forEach(n=>{ if(n.r>Rm) Rm=n.r; });
+    if(!Rm) Rm=RADII[1];
+    const RIM=RADII[RADII.length-1]||600;
+    const rr=Rm*1.17;
+    const tR=Math.min(1.35,rr/RIM);
+    const puff=16+62*Math.exp(-tR*tR*2.4)+14;   /* 원반 두께 + 흔들림 여유 */
+    const reach=labelReach(z)*inv;
+    for(let i=0;i<48;i++){
+      const a=i/48*Math.PI*2;
+      const warp=Math.sin(a+0.55)*54*Math.pow(tR,1.7);
+      const wx=Math.cos(a)*rr, wz=Math.sin(a)*rr;
+      for(let sgn=-1;sgn<=1;sgn+=2){
+        const q=project(wx, warp+puff*sgn, wz);
+        const dl=Math.hypot(q.sx,q.sy)||1;
+        add(q.sx+q.sx/dl*reach, q.sy+q.sy/dl*reach, 4, 9*inv);
+        add(q.sx,q.sy,6,6);
+      }
     }
-    if(n.kind==='book'){ add(p.sx,p.sy,104*p.k,54*p.k); return; }
-    const R=nodeStyle(n).rad*p.k*z;
-    let t=n.label||''; const cap=n.kind==='item'?22:20;
-    if(t.length>cap) t=t.slice(0,cap-1)+'…';
-    const reach=(R+10+mw(t,labelFont(n,p.k,z))+8)*inv;
-    const dl=Math.hypot(p.sx,p.sy)||1;
-    add(p.sx+p.sx/dl*reach, p.sy+p.sy/dl*reach, 4, 9*inv);
-    add(p.sx,p.sy,(R+4)*inv,(R+4)*inv);
-  });
+    /* 등대와 그 머리 위의 이름판 */
+    const tip=project(0,-336,0), foot=project(0,14,0);
+    add(tip.sx,tip.sy,130*inv,22*inv);
+    add(foot.sx,foot.sy,60*inv,16*inv);
+  } else {
+    /* 파고든 화면은 판이 멈춰 있다 — 노드 자리를 그대로 재도 흔들리지 않는다. */
+    const tip=project(0,-336,0), foot=project(0,0,0);
+    add(tip.sx,tip.sy,120*inv,22*inv); add(foot.sx,foot.sy,86,40);
+    live.forEach(n=>{
+      const q=project(n.tx,lift(n),n.ty);
+      const pad = n.kind==='item'?176: n.kind==='chap'?152: 104;
+      add(q.sx,q.sy,pad*q.k,42*q.k);
+    });
+  }
   const w=Math.max(1,x1-x0), h=Math.max(1,y1-y0);
-  return {z:Math.max(.4,Math.min(2.1,Math.min(W/w,H/h)*0.98)), cx:(x0+x1)/2, cy:(y0+y1)/2};
-}
-function fit(){
-  if(!live.length) return;
-  framePend=framePend||Math.abs((expandAll?1:0)-galaxyAmt)>0.006;
-  /* 배율 → 이름표 크기 → 차지하는 자리 → 배율. 서로 물려 있어 한 번에
-     안 떨어진다. 몇 번 굴려 수렴시키고, 마지막은 작은 쪽을 택해 잘림보다
-     여백 쪽으로 틀리게 한다. */
-  let f=frameAt(cam.zoom), z=f.z;
-  for(let i=0;i<4;i++){ const g=frameAt(z); z=Math.min(z,g.z); f=g; }
-  f=frameAt(z);
-  cam.tzoom=z;
-  cam.tpx=-f.cx*z;
-  cam.tpy=-f.cy*z;
+  return {z:Math.max(.22,Math.min(2.1,Math.min(W/w,H/h)*0.92)), cx:(x0+x1)/2, cy:(y0+y1)/2};
 }
 
-/* 우주 프레임: 세 은하의 원반과 이름판이 모두 들어오게 잡는다.
-   towerUpright 로 기울기를 끄고 재므로 근사치지만, 원반 반지름에
-   여유를 실어 잘림보다 여백 쪽으로 틀린다. */
-function universeFit(){
-  let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
-  const kx=GOFF.x, ky=GOFF.y, kz=GOFF.z;
-  GALAXIES.forEach(g=>{
-    setGOFF(g);
-    towerUpright=true;
-    const R=RADII[3]*1.30;
-    [[0,-360,0],[R,0,0],[-R,0,0],[0,0,R],[0,0,-R],[0,80,0]].forEach(v=>{
-      const q2=project(v[0],v[1],v[2]);
-      x0=Math.min(x0,q2.sx); x1=Math.max(x1,q2.sx);
-      y0=Math.min(y0,q2.sy); y1=Math.max(y1,q2.sy);
-    });
-    towerUpright=false;
-  });
-  GOFF.x=kx; GOFF.y=ky; GOFF.z=kz;
-  const w=Math.max(1,x1-x0+260), h=Math.max(1,y1-y0+190);
-  const z=Math.max(.13,Math.min(1.1,Math.min(W/w,H/h)));
-  cam.tzoom=z;
-  cam.tpx=-(x0+x1)/2*z;
-  cam.tpy=-(y0+y1)/2*z;
+/* 마지막으로 '딱 맞는' 배율과 그때의 중심. 손으로 확대·축소하거나 끌 때
+   이 값을 기준으로 범위를 묶어, 판이 점이 되거나 화면 밖으로 나가지 않게 한다. */
+let fitZoom=1, fitPx=0, fitPy=0;
+function applyFrame(z,cx,cy){
+  fitZoom=z; cam.tzoom=z;
+  fitPx=-cx*z; fitPy=-cy*z;
+  cam.tpx=fitPx; cam.tpy=fitPy;
 }
+/* 손으로 만진 배율·위치를 읽을 수 있는 범위 안에 묶는다 */
+function zoomLo(){ return Math.max(.12, fitZoom*0.55); }
+function zoomHi(){ return Math.min(3.2, fitZoom*4.2); }
+function clampPan(){
+  const mx=W*0.85, my=H*0.85;
+  cam.tpx=Math.max(fitPx-mx,Math.min(fitPx+mx,cam.tpx));
+  cam.tpy=Math.max(fitPy-my,Math.min(fitPy+my,cam.tpy));
+}
+
+function fit(){
+  if(!live.length) return;
+  poseSettled(()=>{
+    /* 배율 → 이름표 크기 → 차지하는 자리 → 배율. 서로 물려 있어 한 번에
+       안 떨어진다. 몇 번 굴려 수렴시키고, 마지막은 작은 쪽을 택해 잘림보다
+       여백 쪽으로 틀리게 한다. */
+    let f=frameAt(fitZoom||1), z=f.z;
+    for(let i=0;i<4;i++){ const g=frameAt(z); z=Math.min(z,g.z); f=g; }
+    f=frameAt(z);
+    applyFrame(z,f.cx,f.cy);
+  });
+}
+
+/* 우주 프레임: 세 은하의 원반과 이름판이 모두 들어오게 잡는다. 원반은
+   회전 불변한 반지름으로 재므로 세 은하가 각자 도는 동안에도 흔들리지 않는다. */
+function universeFit(){
+  poseSettled(()=>{
+    const kx=GOFF.x, ky=GOFF.y, kz=GOFF.z;
+    const solve=z=>{
+      let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
+      const add=(sx,sy,pad)=>{
+        x0=Math.min(x0,sx-pad); x1=Math.max(x1,sx+pad);
+        y0=Math.min(y0,sy-pad); y1=Math.max(y1,sy+pad);
+      };
+      const inv=1/Math.max(.05,z);
+      GALAXIES.forEach(g=>{
+        setGOFF(g);
+        towerUpright=true;
+        /* 고정 반지름으로 재던 것이 독해 은하를 잘라 먹었다 — 은하마다
+           제 노드가 실제로 뻗은 데까지 잰다. */
+        const L=(g===ACTIVE)?live:(g.S.live||[]);
+        let Rm=0; L.forEach(n=>{ if(n.r>Rm) Rm=n.r; });
+        if(!Rm) Rm=RADII[2];
+        const R=Rm*1.17, reach=70*inv;
+        for(let i=0;i<28;i++){
+          const a=i/28*Math.PI*2;
+          const wx=Math.cos(a)*R, wz=Math.sin(a)*R;
+          let q=project(wx,-84,wz); add(q.sx,q.sy,reach);
+          q=project(wx, 84,wz);     add(q.sx,q.sy,reach);
+        }
+        const tip=project(0,-360,0);      /* 등대 머리 위 이름판 */
+        add(tip.sx,tip.sy,155*inv);
+        towerUpright=false;
+      });
+      GOFF.x=kx; GOFF.y=ky; GOFF.z=kz;
+      const w=Math.max(1,x1-x0), h=Math.max(1,y1-y0);
+      return {z:Math.max(.10,Math.min(1.1,Math.min(W/w,H/h)*0.93)), cx:(x0+x1)/2, cy:(y0+y1)/2};
+    };
+    let f=solve(fitZoom||.5), z=f.z;
+    for(let i=0;i<4;i++){ const g=solve(z); z=Math.min(z,g.z); f=g; }
+    f=solve(z);
+    applyFrame(z,f.cx,f.cy);
+  });
+}
+
+/* 지금 모드에 맞는 화면 맞춤 */
+function refit(){ (universeMode?universeFit:fit)(); }
 
 /* ============================================================
    6. AMBIENT — dust shells + the scanning sweep
@@ -1404,13 +1519,10 @@ function draw(ts){
 
   /* 은하는 1~2초에 걸쳐 열리고, 열리면서 판이 커진다. 세계가 미끄러지는
      동안에도 따라가며 다시 잡고, 멈추면 손을 뗀다. */
-  if(autoFrame){
-    const gliding = Math.abs(WCT.x-WC.x)+Math.abs(WCT.y-WC.y)+Math.abs(WCT.z-WC.z)>2
-                 || Math.abs((universeMode?1:0)-uAmt)>0.01;
-    const opening = Math.abs((expandAll?1:0)-galaxyAmt)>0.006;
-    if(gliding||opening){ (universeMode?universeFit:fit)(); framePend=true; }
-    else if(framePend){ framePend=false; (universeMode?universeFit:fit)(); }
-  }
+  /* 화면 맞춤은 전환이 시작될 때 '끝난 뒤의 모습'으로 한 번만 정한다.
+     흐르는 동안 매 프레임 다시 재면 카메라가 움직이는 표적을 쫓느라
+     판이 커졌다 작아졌다 하며 찌그러져 보였다. */
+  if(autoFrame && framePend){ framePend=false; refit(); }
 
   /* 먼 은하부터 — 가까운 은하가 그 위를 덮는다 */
   const gOrder=GALAXIES.map(g=>{
@@ -1423,7 +1535,11 @@ function draw(ts){
     const g=o.g, inFocus=(g===ACTIVE&&!universeMode);
     const back=(!inFocus&&!universeMode);          /* 파고든 화면의 배경 은하 */
     withGalaxy(g,()=>{
-      GDIM=back?0.34:1;
+      /* 파고든 화면의 배경 은하는 '먼 하늘'이어야 한다. 예전에는 이름표를
+         그대로 달아서, 옆 은하의 지문 제목이 지금 보는 은하의 이름표 위로
+         겹쳐 흘렀다 — 화면이 어지러워 보이던 진짜 이유다. 배경에서는
+         별빛과 등대만 남기고 글자는 전부 거둔다. */
+      GDIM=back?0.20:1;
       drawPlane();
       drawGround();
       drawGalaxy();
@@ -1431,7 +1547,12 @@ function draw(ts){
       drawLighthouse();
       labelQ.length=0;
       drawNodes();
-      g._labels=labelQ.slice(); labelQ.length=0;
+      /* 우주 화면에서는 어느 은하도 노드 이름표를 달지 않는다. 그 배율에서
+         단원 이름은 어차피 읽히지 않고, 은하를 고르는 화면의 이름은
+         등대 위 이름판 하나면 된다. (노드가 적은 독해 은하만 가시성
+         문턱을 넘어 저 혼자 이름표를 달고 있었다.) */
+      g._labels = (back||universeMode) ? [] : labelQ.slice();
+      labelQ.length=0;
       GDIM=1;
     });
   });
@@ -2717,7 +2838,13 @@ function npAnchor(g){
   return q;
 }
 function drawNameplates(){
-  const list=GALAXIES.map(g=>({g:g,q:npAnchor(g)})).sort((a,b)=>b.q[3]-a.q[3]);
+  /* 파고든 화면에서는 지금 보는 은하의 이름판만 남긴다. 배경 은하의 이름판은
+     제 은하가 화면 밖이나 왼쪽 패널 뒤에 있어도 그려져서, 커다란 활자가
+     '…AR' '…AB' 같은 조각으로 잘려 보였다. 다른 은하로 가는 문은 머리띠의
+     UNIVERSE·GRAMMAR·READING·VOCAB 가 이미 맡고 있다. */
+  const shown=GALAXIES.filter(g=>universeMode||g===ACTIVE);
+  GALAXIES.forEach(g=>{ if(shown.indexOf(g)<0) g.plateRect=null; });
+  const list=shown.map(g=>({g:g,q:npAnchor(g)})).sort((a,b)=>b.q[3]-a.q[3]);
   list.forEach(o=>{
     const g=o.g, x=o.q[0], y=o.q[1], k=o.q[2], z=o.q[3];
     const zz=k*cam.zoom, AC=g.accent;
@@ -3360,7 +3487,7 @@ cv.addEventListener('pointermove',e=>{
     const dx=e.clientX-drag.x, dy=e.clientY-drag.y;
     drag.moved=Math.max(drag.moved,Math.hypot(dx,dy));
     cam.idle=0;
-    if(drag.pan){ cam.tpx=drag.px+dx; cam.tpy=drag.py+dy; cam.px=cam.tpx; cam.py=cam.tpy; }
+    if(drag.pan){ cam.tpx=drag.px+dx; cam.tpy=drag.py+dy; clampPan(); cam.px=cam.tpx; cam.py=cam.tpy; }
     else{
       cam.tyaw=drag.yaw+dx*0.006;
       cam.tpitch=Math.max(PITCH_MIN,Math.min(PITCH_MAX,drag.pitch+dy*0.005));
@@ -3397,7 +3524,11 @@ cv.addEventListener('pointerup',e=>{
 cv.addEventListener('pointercancel',()=>{drag=null;cv.classList.remove('drag')});
 cv.addEventListener('wheel',e=>{
   e.preventDefault(); cam.idle=0;
-  cam.tzoom=Math.max(.2,Math.min(2.6,cam.tzoom*Math.exp(-e.deltaY*0.0012)));
+  /* 손으로 배율을 잡는 순간 자동 맞춤은 물러난다 — 안 그러면 다음 전환이
+     사용자의 배율을 덮어쓴다. 대신 '딱 맞는 배율'을 기준으로 위아래를
+     묶어, 점이 되도록 줄이거나 화면 밖으로 터지도록 키울 수 없게 한다. */
+  autoFrame=false;
+  cam.tzoom=Math.max(zoomLo(),Math.min(zoomHi(),cam.tzoom*Math.exp(-e.deltaY*0.0012)));
 },{passive:false});
 
 function activate(n){
@@ -3418,12 +3549,18 @@ function activate(n){
 }
 function sync(doFit){
   layout(); modePitch();
-  if(doFit!==false){ autoFrame=true; framePend=true; setTimeout(fit,30); }
+  if(doFit!==false){ autoFrame=true; framePend=true; }
   renderRails();
   renderCrumb();
 }
 
 /* ── 은하 진입 / 우주 귀환 ─────────────────────────────────── */
+/* 전개 깊이가 모드에 따라 달라지므로(fullDepth), 모드가 바뀌면 세 은하를
+   모두 다시 편다. 안 그러면 배경 은하가 낡은 배치로 남아 크기가 어긋난다. */
+function relayoutAll(){
+  GALAXIES.forEach(g=>withGalaxy(g,()=>{ layout(); }));
+  bindGalaxy(ACTIVE);
+}
 function enterGalaxy(g){
   cam.idle=0;
   /* 떠나는 은하는 은하 모습(전체 전개)으로 되돌려 두고 간다 — 배경에서
@@ -3436,6 +3573,7 @@ function enterGalaxy(g){
   pitchUser=false; autoFrame=true; framePend=true;
   hover=null; plateHover=null;
   syncGalaxyChrome();
+  relayoutAll();
   sync();
 }
 function toUniverse(){
@@ -3446,6 +3584,7 @@ function toUniverse(){
   WCT.x=0; WCT.y=0; WCT.z=0;
   pitchUser=false; autoFrame=true; framePend=true;
   hover=null;
+  relayoutAll();
   modePitch();
   syncGalaxyChrome();
   renderRails(); renderCrumb();
@@ -5663,13 +5802,14 @@ function keyNav(){
     const step=11/Math.max(.35,cam.tzoom);
     if(L) cam.tpx+=step; if(R) cam.tpx-=step;
     if(U) cam.tpy+=step; if(D) cam.tpy-=step;
+    clampPan();
   } else {
     if(L) cam.tyaw-=.026; if(R) cam.tyaw+=.026;
     if(U){ cam.tpitch=Math.min(PITCH_MAX,cam.tpitch+.018); pitchUser=true; }
     if(D){ cam.tpitch=Math.max(PITCH_MIN,cam.tpitch-.018); pitchUser=true; }
   }
-  if(HELD.has('+')||HELD.has('=')) cam.tzoom=Math.min(2.6,cam.tzoom*1.022);
-  if(HELD.has('-')||HELD.has('_')) cam.tzoom=Math.max(.2, cam.tzoom/1.022);
+  if(HELD.has('+')||HELD.has('=')) cam.tzoom=Math.min(zoomHi(),cam.tzoom*1.022);
+  if(HELD.has('-')||HELD.has('_')) cam.tzoom=Math.max(zoomLo(),cam.tzoom/1.022);
   if(L||R||U||D||HELD.has('+')||HELD.has('=')||HELD.has('-')||HELD.has('_')) cam.idle=0;
 }
 document.getElementById('btn-key').onclick=function(){
@@ -5878,8 +6018,7 @@ document.getElementById('btn-spin').onclick=function(){
   b.textContent = motionOn?'모션 정지':'모션 시작';
 })();
 document.getElementById('btn-fit').onclick=()=>{
-  pitchUser=false; modePitch(); autoFrame=true; framePend=true;
-  (universeMode?universeFit:fit)();
+  pitchUser=false; modePitch(); autoFrame=true; framePend=true; refit();
 };
 (function(){
   const sel=document.getElementById('fx-pick');
@@ -5891,7 +6030,7 @@ document.getElementById('btn-solo').onclick=function(){
   const on=document.body.classList.toggle('solo');
   this.setAttribute('aria-pressed',on);
   this.textContent=on?'패널 펼치기':'패널 접기';
-  setTimeout(()=>{resize();autoFrame=true;framePend=true;fit();},380);
+  setTimeout(()=>{ resize(); autoFrame=true; framePend=true; refit(); },380);
 };
 
 /* ============================================================
@@ -5925,7 +6064,7 @@ async function boot(){
   bindGalaxy(GALAXIES[0]);
   buildGalPick();
   syncGalaxyChrome();
-  universeFit(); renderRails(); renderCrumb();
+  refit(); renderRails(); renderCrumb();
   requestAnimationFrame(draw);
   boot();
 })();
