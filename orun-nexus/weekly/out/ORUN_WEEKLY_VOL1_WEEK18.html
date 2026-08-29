@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ORUN WEEKLY VOL.1 · WEEK 18</title>
+<style>
+:root{
+  --navy:#0e2a47; --navy2:#16375b; --gold:#c9a227; --gold-l:#f2b93c;
+  --ink:#16202b; --ink2:#4a5a6b; --line:#d8dfe6; --tint:#f4f7fa;
+  --red:#c0392b; --green:#1d7a4c; --paper:#ffffff; --shell:#eef2f6;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--shell);color:var(--ink);
+     font-family:'Pretendard','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',
+                 system-ui,-apple-system,sans-serif;
+     font-size:14px;line-height:1.62;-webkit-text-size-adjust:100%}
+.wrap{max-width:900px;margin:0 auto;padding:0 0 80px}
+
+/* ── 표지 ── */
+.cover{background:linear-gradient(160deg,#16375b 0%,#0e2a47 46%,#081a2e 100%);
+       color:#fff;padding:38px 34px 30px;position:relative;overflow:hidden}
+.cover:after{content:'';position:absolute;right:-60px;bottom:-90px;width:280px;height:280px;
+       border-radius:50%;background:radial-gradient(circle,rgba(242,185,60,.20),transparent 70%)}
+.eyebrow{font-size:10.5px;letter-spacing:.22em;color:var(--gold-l);text-transform:uppercase;
+       font-weight:700;margin-bottom:14px}
+.mark{font-size:34px;font-weight:800;letter-spacing:.02em;line-height:1.06}
+.mark em{font-style:normal;color:var(--gold-l)}
+.sub{margin-top:8px;font-size:14px;color:#c8d7e8}
+.sub b{color:var(--gold-l)}
+.wknum{position:absolute;right:30px;top:26px;width:82px;height:82px;border-radius:50%;
+       background:var(--gold-l);color:#0e2a47;display:grid;place-content:center;text-align:center;
+       box-shadow:0 6px 22px rgba(0,0,0,.32)}
+.wknum span{display:block;font-size:9.5px;letter-spacing:.2em;font-weight:700}
+.wknum b{display:block;font-size:31px;font-weight:800;line-height:1}
+.stats{display:flex;gap:0;margin-top:24px;border-top:1px solid rgba(255,255,255,.22);
+       padding-top:16px;position:relative;z-index:2;flex-wrap:wrap}
+.stat{flex:1 1 100px;min-width:100px}
+.stat b{display:block;font-size:22px;font-weight:800;color:#fff}
+.stat span{font-size:9.5px;letter-spacing:.18em;color:#9fb6cf;text-transform:uppercase}
+
+/* ── 목차 바 ── */
+nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);
+    backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:2px 2px;padding:8px 14px;align-items:center}
+nav a{font-size:12px;color:var(--navy);text-decoration:none;padding:5px 11px;border-radius:3px;
+      font-weight:600}
+nav a:hover{background:var(--tint)}
+nav .sp{flex:1}
+@media (max-width:560px){nav .sp{flex-basis:100%;height:0}
+  nav button{margin-top:6px}}
+nav button{font:inherit;font-size:11.5px;font-weight:700;border:1px solid var(--navy);
+      background:#fff;color:var(--navy);border-radius:3px;padding:5px 12px;cursor:pointer}
+nav button[aria-pressed=true]{background:var(--navy);color:#fff}
+
+/* ── 섹션 ── */
+section{background:var(--paper);margin:18px 0 0;padding:26px 34px 30px;
+        border:1px solid var(--line);border-top:3px solid var(--navy)}
+h2{margin:0 0 4px;font-size:18px;font-weight:800;color:var(--navy);letter-spacing:-.01em}
+h2 .en{font-size:10.5px;letter-spacing:.2em;color:var(--gold);display:block;
+       font-weight:700;margin-bottom:5px}
+.lead{margin:0 0 18px;font-size:12.5px;color:#5b6b7c}
+.note{background:var(--tint);border-left:3px solid var(--gold);padding:11px 14px;
+      font-size:12.5px;margin:0 0 18px;border-radius:0 3px 3px 0}
+
+ol.guide{margin:0;padding-left:0;list-style:none;counter-reset:g}
+ol.guide li{counter-increment:g;position:relative;padding:9px 0 9px 40px;
+      border-bottom:1px solid #eef1f5;font-size:13px}
+ol.guide li:last-child{border-bottom:none}
+ol.guide li:before{content:counter(g,decimal-leading-zero);position:absolute;left:0;top:9px;
+      font-size:11px;font-weight:800;color:#fff;background:var(--navy);
+      width:23px;height:19px;display:grid;place-content:center;border-radius:2px}
+
+/* ── 표 ── */
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th{background:var(--navy);color:#fff;font-size:10px;letter-spacing:.14em;font-weight:700;
+   padding:7px 8px;text-align:left;text-transform:uppercase}
+td{padding:5px 8px;border-bottom:1px solid #eef1f5;vertical-align:top}
+tr:nth-child(even) td{background:#fafcfd}
+td.n{width:34px;color:#93a3b3;font-size:11px;text-align:right;font-variant-numeric:tabular-nums}
+td.w{font-weight:700;color:var(--navy2);width:31%;word-break:break-word}
+td.p{width:52px;color:#7b8a99;font-size:11px;white-space:nowrap}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}
+@media (max-width:720px){.cols{grid-template-columns:1fr}}
+td.blank{border-bottom:1px solid #cfd8e0;min-width:120px}
+
+/* ── 문장 ── */
+.s{padding:15px 0 15px 46px;border-bottom:1px solid #eef1f5;position:relative}
+.s:last-child{border-bottom:none}
+.s .no{position:absolute;left:0;top:15px;width:32px;text-align:right;font-size:12px;
+       font-weight:800;color:var(--navy);font-variant-numeric:tabular-nums}
+.tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.04em;
+     background:#fdf4dc;color:#8a6d10;border:1px solid #ecd9a0;border-radius:2px;
+     padding:1px 7px;margin-bottom:6px}
+.en{font-size:13.5px;line-height:1.66;word-break:normal;overflow-wrap:break-word}
+.ko{margin-top:5px;font-size:12.5px;color:#5c6b7a;line-height:1.6}
+
+/* ── 해설 ── */
+.gd{margin-top:11px;border:1px solid #e3e9ef;border-radius:3px;overflow:hidden}
+.gd>summary{cursor:pointer;list-style:none;padding:7px 12px;background:var(--tint);
+     font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--navy);
+     display:flex;align-items:center;gap:9px}
+.gd>summary::-webkit-details-marker{display:none}
+.gd>summary:before{content:'＋';font-weight:800;color:var(--gold)}
+.gd[open]>summary:before{content:'－'}
+.gdbody{padding:14px 14px 16px;display:grid;grid-template-columns:1fr 1fr;gap:0 22px}
+@media (max-width:760px){.gdbody{grid-template-columns:1fr;gap:16px 0}}
+.gh{font-size:9.5px;letter-spacing:.16em;font-weight:800;color:var(--gold);
+    text-transform:uppercase;margin:0 0 7px;padding-bottom:4px;border-bottom:1px solid #ecd9a0}
+.fix{font-size:13px;margin-bottom:12px}
+.fix .bad{color:var(--red);text-decoration:line-through;text-decoration-thickness:1px}
+.fix .arw{color:#93a3b3;margin:0 7px}
+.fix .good{color:var(--green);font-weight:700}
+.ana{font-size:12.5px;color:#3d4c5a;line-height:1.66}
+ul.st{margin:0;padding:0;list-style:none;font-size:12.5px}
+ul.st li{padding:5px 0;border-bottom:1px dotted #e3e9ef;line-height:1.55}
+ul.st li:last-child{border-bottom:none}
+
+/* ── 정답 ── */
+.keys{display:grid;grid-template-columns:repeat(2,1fr);gap:0 26px}
+@media (max-width:720px){.keys{grid-template-columns:1fr}}
+.k{display:flex;gap:9px;padding:4px 0;border-bottom:1px solid #f0f3f6;font-size:12.5px}
+.k b{color:var(--navy);font-weight:800;min-width:30px;text-align:right;
+     font-variant-numeric:tabular-nums}
+.k .bad{color:var(--red)} .k .good{color:var(--green);font-weight:700}
+.k .arw{color:#93a3b3;margin:0 6px}
+
+.missing{background:#fff8e6;border:1px solid #ecd9a0;padding:16px 18px;font-size:13px;
+         border-radius:3px;color:#6d5710}
+.errata{background:#fdf1ef;border:1px solid #edc3bb;border-left:3px solid var(--red);
+        padding:12px 15px;font-size:12.5px;margin:0 0 16px;border-radius:0 3px 3px 0}
+.errata b{color:var(--red)}
+.errata ul{margin:7px 0 0;padding-left:17px}
+.errata li{margin:3px 0}
+footer{padding:26px 34px;font-size:11px;color:#8794a3;text-align:center}
+footer b{color:var(--navy)}
+
+@media print{
+  body{background:#fff;font-size:10.5pt}
+  nav{display:none}
+  .wrap{max-width:none;padding:0}
+  section{border:none;margin:0;padding:14pt 0 10pt;page-break-inside:auto}
+  section+section{border-top:1.5pt solid var(--navy);page-break-before:always}
+  .cover{page-break-after:always}
+  .s,.k,tr{page-break-inside:avoid}
+  .gd{page-break-inside:avoid}
+  .gd>summary{display:none}
+  .gd:not([open]) .gdbody{display:grid}
+  h2{page-break-after:avoid}
+  @page{size:A4;margin:14mm 13mm 16mm}
+}
+</style></head>
+<body><div class="wrap">
+<header class="cover">
+  <div class="wknum"><span>WEEK</span><b>18</b></div>
+  <div class="eyebrow">New Veritas · Nova Via ad Excellentiam</div>
+  <div class="mark">ORUN WEEKL<em>Y</em></div>
+  <div class="sub">옳은영어 주간지 <b>for Top/고1</b> · VOL.1</div>
+  <div class="sub" style="font-size:11.5px;color:#8fa6bf;letter-spacing:.1em;margin-top:2px">
+    EVERY WEEK · VOCA + USAGE + SYNTAX</div>
+  <div class="stats"><div class="stat"><b>100</b><span>Answer Key</span></div><div class="stat"><b>—</b><span>본문 미확보</span></div></div>
+</header>
+<nav><a href="#key">정답</a></nav>
+<section><h2><span class="en">Notice</span>본문 지면 미확보</h2><div class="missing">이 주차는 제공된 8개 PDF에 <b>목차와 정답지</b>만 들어 있습니다. 본문 100문장·핵심 어휘·단어 시험·ORUN GUIDE 해설 지면은 파일에 포함되지 않아 아래 정답만 싣습니다. 해당 지면을 주시면 다른 주차와 같은 구성으로 채워 드립니다.</div></section><section id="key"><h2><span class="en">Answer Key</span>WEEK 18 정답 <span style="font-size:12px;color:#7b8a99">100문항</span></h2><p class="lead">정답지(Grammar Corrections) 원문 그대로입니다. 전권 통번호 1701–1800번에 해당합니다.</p><div class="keys"><div class="k"><b>1</b><span><span class="bad">to decide</span><span class="arw">→</span><span class="good">to have decided</span></span></div><div class="k"><b>2</b><span><span class="bad">about</span><span class="arw">→</span><span class="good">that</span></span></div><div class="k"><b>3</b><span><span class="bad">had made</span><span class="arw">→</span><span class="good">made</span></span></div><div class="k"><b>4</b><span><span class="bad">limit</span><span class="arw">→</span><span class="good">limiting</span></span></div><div class="k"><b>5</b><span><span class="bad">Remembering</span><span class="arw">→</span><span class="good">Remember</span></span></div><div class="k"><b>6</b><span><span class="bad">giving</span><span class="arw">→</span><span class="good">being given</span></span></div><div class="k"><b>7</b><span><span class="bad">neither</span><span class="arw">→</span><span class="good">nor</span></span></div><div class="k"><b>8</b><span><span class="bad">intentional</span><span class="arw">→</span><span class="good">intentionally</span></span></div><div class="k"><b>9</b><span><span class="bad">to transport</span><span class="arw">→</span><span class="good">to be transported</span></span></div><div class="k"><b>10</b><span><span class="bad">is devoted to</span><span class="arw">→</span><span class="good">devoted to</span></span></div><div class="k"><b>11</b><span><span class="bad">enhance</span><span class="arw">→</span><span class="good">enhances</span></span></div><div class="k"><b>12</b><span><span class="bad">planning</span><span class="arw">→</span><span class="good">planned</span></span></div><div class="k"><b>13</b><span><span class="bad">if allowing</span><span class="arw">→</span><span class="good">if allowed</span></span></div><div class="k"><b>14</b><span><span class="bad">distressed</span><span class="arw">→</span><span class="good">distressing</span></span></div><div class="k"><b>15</b><span><span class="bad">get down you</span><span class="arw">→</span><span class="good">get you down</span></span></div><div class="k"><b>16</b><span><span class="bad">to underestimate</span><span class="arw">→</span><span class="good">to be underestimated</span></span></div><div class="k"><b>17</b><span><span class="bad">what</span><span class="arw">→</span><span class="good">that</span></span></div><div class="k"><b>18</b><span><span class="bad">distracting</span><span class="arw">→</span><span class="good">distracted</span></span></div><div class="k"><b>19</b><span><span class="bad">which</span><span class="arw">→</span><span class="good">whose</span></span></div><div class="k"><b>20</b><span><span class="bad">which</span><span class="arw">→</span><span class="good">that</span></span></div><div class="k"><b>21</b><span><span class="bad">noticing</span><span class="arw">→</span><span class="good">noticed</span></span></div><div class="k"><b>22</b><span><span class="bad">to welcome</span><span class="arw">→</span><span class="good">to be welcomed</span></span></div><div class="k"><b>23</b><span><span class="bad">yelling at</span><span class="arw">→</span><span class="good">yelled at</span></span></div><div class="k"><b>24</b><span><span class="bad">sweeping</span><span class="arw">→</span><span class="good">swept</span></span></div><div class="k"><b>25</b><span><span class="bad">has intended</span><span class="arw">→</span><span class="good">had intended</span></span></div><div class="k"><b>26</b><span><span class="bad">him</span><span class="arw">→</span><span class="good">himself</span></span></div><div class="k"><b>27</b><span><span class="bad">holding</span><span class="arw">→</span><span class="good">held</span></span></div><div class="k"><b>28</b><span><span class="bad">is derived from</span><span class="arw">→</span><span class="good">derived from</span></span></div><div class="k"><b>29</b><span><span class="bad">are performed</span><span class="arw">→</span><span class="good">performed</span></span></div><div class="k"><b>30</b><span><span class="bad">frustrated</span><span class="arw">→</span><span class="good">frustrating</span></span></div><div class="k"><b>31</b><span><span class="bad">to seem</span><span class="arw">→</span><span class="good">seem</span></span></div><div class="k"><b>32</b><span><span class="bad">to shrink</span><span class="arw">→</span><span class="good">to have shrunk</span></span></div><div class="k"><b>33</b><span><span class="bad">hiring</span><span class="arw">→</span><span class="good">to hire</span></span></div><div class="k"><b>34</b><span><span class="bad">that</span><span class="arw">→</span><span class="good">of</span></span></div><div class="k"><b>35</b><span><span class="bad">accurate</span><span class="arw">→</span><span class="good">accurately</span></span></div><div class="k"><b>36</b><span><span class="bad">which</span><span class="arw">→</span><span class="good">in which</span></span></div><div class="k"><b>37</b><span><span class="bad">create</span><span class="arw">→</span><span class="good">creates</span></span></div><div class="k"><b>38</b><span><span class="bad">not to discourage</span><span class="arw">→</span><span class="good">not to be discouraged</span></span></div><div class="k"><b>39</b><span><span class="bad">dressing</span><span class="arw">→</span><span class="good">dressed</span></span></div><div class="k"><b>40</b><span><span class="bad">getting</span><span class="arw">→</span><span class="good">got</span></span></div><div class="k"><b>41</b><span><span class="bad">that</span><span class="arw">→</span><span class="good">if</span></span></div><div class="k"><b>42</b><span><span class="bad">found</span><span class="arw">→</span><span class="good">to find</span></span></div><div class="k"><b>43</b><span><span class="bad">her</span><span class="arw">→</span><span class="good">herself</span></span></div><div class="k"><b>44</b><span><span class="bad">Finding</span><span class="arw">→</span><span class="good">Found</span></span></div><div class="k"><b>45</b><span><span class="bad">was consisted of</span><span class="arw">→</span><span class="good">consisted of</span></span></div><div class="k"><b>46</b><span><span class="bad">was known</span><span class="arw">→</span><span class="good">known</span></span></div><div class="k"><b>47</b><span><span class="bad">what</span><span class="arw">→</span><span class="good">whether</span></span></div><div class="k"><b>48</b><span><span class="bad">Oddly</span><span class="arw">→</span><span class="good">Odd</span></span></div><div class="k"><b>49</b><span><span class="bad">allow</span><span class="arw">→</span><span class="good">allows</span></span></div><div class="k"><b>50</b><span><span class="bad">cheap</span><span class="arw">→</span><span class="good">cheaply</span></span></div><div class="k"><b>51</b><span><span class="bad">goes through</span><span class="arw">→</span><span class="good">going through</span></span></div><div class="k"><b>52</b><span><span class="bad">stay</span><span class="arw">→</span><span class="good">staying</span></span></div><div class="k"><b>53</b><span><span class="bad">subject to</span><span class="arw">→</span><span class="good">are subjected to</span></span></div><div class="k"><b>54</b><span><span class="bad">to float</span><span class="arw">→</span><span class="good">float</span></span></div><div class="k"><b>55</b><span><span class="bad">which</span><span class="arw">→</span><span class="good">that</span></span></div><div class="k"><b>56</b><span><span class="bad">rendered</span><span class="arw">→</span><span class="good">rendering</span></span></div><div class="k"><b>57</b><span><span class="bad">opens up you</span><span class="arw">→</span><span class="good">opens you up</span></span></div><div class="k"><b>58</b><span><span class="bad">than</span><span class="arw">→</span><span class="good">to</span></span></div><div class="k"><b>59</b><span><span class="bad">comparative</span><span class="arw">→</span><span class="good">comparatively</span></span></div><div class="k"><b>60</b><span><span class="bad">though</span><span class="arw">→</span><span class="good">despite</span></span></div><div class="k"><b>61</b><span><span class="bad">to recognize</span><span class="arw">→</span><span class="good">to recognizing</span></span></div><div class="k"><b>62</b><span><span class="bad">to collect</span><span class="arw">→</span><span class="good">collecting</span></span></div><div class="k"><b>63</b><span><span class="bad">are consisted of</span><span class="arw">→</span><span class="good">consist of</span></span></div><div class="k"><b>64</b><span><span class="bad">sustaining</span><span class="arw">→</span><span class="good">sustained</span></span></div><div class="k"><b>65</b><span><span class="bad">seeing</span><span class="arw">→</span><span class="good">having seen</span></span></div><div class="k"><b>66</b><span><span class="bad">are based on</span><span class="arw">→</span><span class="good">based on</span></span></div><div class="k"><b>67</b><span><span class="bad">Granting</span><span class="arw">→</span><span class="good">Granted</span></span></div><div class="k"><b>68</b><span><span class="bad">skills</span><span class="arw">→</span><span class="good">skill</span></span></div><div class="k"><b>69</b><span><span class="bad">to sway</span><span class="arw">→</span><span class="good">swaying</span></span></div><div class="k"><b>70</b><span><span class="bad">of</span><span class="arw">→</span><span class="good">that</span></span></div><div class="k"><b>71</b><span><span class="bad">had occurred</span><span class="arw">→</span><span class="good">occurred</span></span></div><div class="k"><b>72</b><span><span class="bad">are flooding</span><span class="arw">→</span><span class="good">flooding</span></span></div><div class="k"><b>73</b><span><span class="bad">comparing to</span><span class="arw">→</span><span class="good">compared to</span></span></div><div class="k"><b>74</b><span><span class="bad">what</span><span class="arw">→</span><span class="good">that</span></span></div><div class="k"><b>75</b><span><span class="bad">providing</span><span class="arw">→</span><span class="good">provide</span></span></div><div class="k"><b>76</b><span><span class="bad">formed</span><span class="arw">→</span><span class="good">forming</span></span></div><div class="k"><b>77</b><span><span class="bad">mean</span><span class="arw">→</span><span class="good">means</span></span></div><div class="k"><b>78</b><span><span class="bad">Reason</span><span class="arw">→</span><span class="good">Reasoning</span></span></div><div class="k"><b>79</b><span><span class="bad">what</span><span class="arw">→</span><span class="good">that</span></span></div><div class="k"><b>80</b><span><span class="bad">is grading</span><span class="arw">→</span><span class="good">is being graded</span></span></div><div class="k"><b>81</b><span><span class="bad">Raising</span><span class="arw">→</span><span class="good">Raised</span></span></div><div class="k"><b>82</b><span><span class="bad">arming</span><span class="arw">→</span><span class="good">armed</span></span></div><div class="k"><b>83</b><span><span class="bad">make</span><span class="arw">→</span><span class="good">made</span></span></div><div class="k"><b>84</b><span><span class="bad">frightening</span><span class="arw">→</span><span class="good">frightened</span></span></div><div class="k"><b>85</b><span><span class="bad">to live</span><span class="arw">→</span><span class="good">living</span></span></div><div class="k"><b>86</b><span><span class="bad">was left</span><span class="arw">→</span><span class="good">left</span></span></div><div class="k"><b>87</b><span><span class="bad">that</span><span class="arw">→</span><span class="good">if</span></span></div><div class="k"><b>88</b><span><span class="bad">extending</span><span class="arw">→</span><span class="good">to extend</span></span></div><div class="k"><b>89</b><span><span class="bad">coupling with</span><span class="arw">→</span><span class="good">coupled with</span></span></div><div class="k"><b>90</b><span><span class="bad">gauged</span><span class="arw">→</span><span class="good">gauging</span></span></div><div class="k"><b>91</b><span><span class="bad">which</span><span class="arw">→</span><span class="good">that</span></span></div><div class="k"><b>92</b><span><span class="bad">increasing</span><span class="arw">→</span><span class="good">increasingly</span></span></div><div class="k"><b>93</b><span><span class="bad">heightening</span><span class="arw">→</span><span class="good">heightened</span></span></div><div class="k"><b>94</b><span><span class="bad">are built</span><span class="arw">→</span><span class="good">built</span></span></div><div class="k"><b>95</b><span><span class="bad">influence</span><span class="arw">→</span><span class="good">influences</span></span></div><div class="k"><b>96</b><span><span class="bad">asking</span><span class="arw">→</span><span class="good">being asked</span></span></div><div class="k"><b>97</b><span><span class="bad">take</span><span class="arw">→</span><span class="good">taking</span></span></div><div class="k"><b>98</b><span><span class="bad">sense</span><span class="arw">→</span><span class="good">sensing</span></span></div><div class="k"><b>99</b><span><span class="bad">hard</span><span class="arw">→</span><span class="good">harder</span></span></div><div class="k"><b>100</b><span><span class="bad">make</span><span class="arw">→</span><span class="good">making</span></span></div></div></section>
+<footer>ORUN WEEKLY VOL.1 · WEEK 18 / 20 &nbsp;·&nbsp; <b>옳은영어 ORUN ENGLISH</b><br>
+실물 교재 8개 PDF에서 추출·검증한 내용입니다.</footer>
+</div><script>
+(function(){
+  var all=document.getElementById('tg-all');
+  if(!all) return;
+  all.onclick=function(){
+    var on=all.getAttribute('aria-pressed')!=='true';
+    all.setAttribute('aria-pressed',on?'true':'false');
+    all.textContent=on?'해설 접기':'해설 모두 펼치기';
+    document.querySelectorAll('details.gd').forEach(function(d){ d.open=on; });
+  };
+})();
+</script></body></html>
