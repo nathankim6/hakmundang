@@ -553,13 +553,13 @@
    "type": "mc",
    "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· The teacher suggested that Harin ____ in the front row. (앞줄에 앉아야 한다고)\n· The judge ordered that the witness ____ down.",
    "choices": [
-    "sit",
     "sits",
     "sat",
     "sitting",
+    "sit",
     "to sit"
    ],
-   "answer": 1,
+   "answer": 4,
    "why": "suggest와 order 모두 당위의 that절을 이끌므로 두 빈칸 모두 (should)+동사원형 sit이 알맞다.",
    "no": 37
   },
@@ -568,13 +568,13 @@
    "type": "mc",
    "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· Mom insisted that the window ____ closed at night. (닫혀 있어야 한다고)\n· The rule requires that the gate ____ locked after dark.",
    "choices": [
-    "be",
     "is",
     "was",
     "been",
-    "being"
+    "being",
+    "be"
    ],
-   "answer": 1,
+   "answer": 5,
    "why": "두 문장 모두 당위의 that절 수동태이므로 (should) be p.p.의 원형 be가 공통으로 들어간다.",
    "no": 38
   },
@@ -673,13 +673,13 @@
    "type": "mc",
    "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Can we hand in the report tomorrow?\nB: No. I demand that it ____ in today.",
    "choices": [
-    "be handed",
     "is handed",
     "was handed",
     "hands",
+    "be handed",
     "handing"
    ],
-   "answer": 1,
+   "answer": 4,
    "why": "demand 뒤 that절의 수동태는 (should) be p.p.이므로 be handed가 알맞다.",
    "no": 45
   },
@@ -688,13 +688,13 @@
    "type": "mc",
    "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: The music in this mall is too loud.\nB: I agree. Let's talk to the manager.\n→ They requested that the music ____ turned down.",
    "choices": [
-    "be",
     "is",
     "was",
     "been",
-    "being"
+    "being",
+    "be"
    ],
-   "answer": 1,
+   "answer": 5,
    "why": "request 뒤 that절의 수동태는 (should) be turned down이므로 원형 be가 알맞다.",
    "no": 46
   },
@@ -925,13 +925,13 @@
    "type": "mc",
    "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe environmental group demanded that the city ____ the number of plastic bags used in local markets.",
    "choices": [
-    "reduce",
     "reduces",
     "reduced",
     "reducing",
-    "to reduce"
+    "to reduce",
+    "reduce"
    ],
-   "answer": 1,
+   "answer": 5,
    "why": "demand 뒤 당위의 that절에는 (should)+동사원형 reduce를 쓴다. 직설법 시제인 reduces·reduced는 틀리다.",
    "no": 69
   },
@@ -1075,13 +1075,13 @@
    "type": "mc",
    "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nIt was demanded that the test results ____ public immediately.",
    "choices": [
-    "be made",
     "are made",
     "were made",
     "making",
+    "be made",
     "made"
    ],
-   "answer": 1,
+   "answer": 4,
    "why": "demand의 수동 구문 「It was demanded that ~」에서도 that절에는 (should)+동사원형을 쓰므로 be made가 알맞다.",
    "no": 79
   },
@@ -1480,13 +1480,13 @@
    "type": "mc",
    "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· The manual requires that the password ____ changed every ninety days.\n· The residents demanded that the noise rule ____ enforced more strictly.",
    "choices": [
-    "be",
     "is",
     "was",
     "been",
+    "be",
     "being"
    ],
-   "answer": 1,
+   "answer": 4,
    "why": "require와 demand 뒤 당위의 that절 수동태는 (should) be p.p.이므로 원형 be가 공통으로 들어간다.",
    "no": 106
   },
@@ -1510,13 +1510,13 @@
    "type": "mc",
    "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· The zoo requests that visitors ____ feeding the animals.\n· Her doctor advised that she ____ salty food for a month.",
    "choices": [
-    "avoid",
     "avoids",
     "avoided",
     "avoiding",
-    "to avoid"
+    "to avoid",
+    "avoid"
    ],
-   "answer": 1,
+   "answer": 5,
    "why": "request와 advise 뒤 that절에는 (should)+동사원형을 쓰므로 avoid가 공통으로 알맞다.",
    "no": 108
   },
@@ -1525,13 +1525,13 @@
    "type": "mc",
    "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: The Wi-Fi in the dorm is too slow.\nB: Then let's write to the office and request that it ____.",
    "choices": [
-    "be upgraded",
     "is upgraded",
     "was upgraded",
     "upgrades",
+    "be upgraded",
     "upgrading"
    ],
-   "answer": 1,
+   "answer": 4,
    "why": "request 뒤 that절의 수동태는 (should) be upgraded가 알맞다.",
    "no": 109
   },
@@ -1555,13 +1555,13 @@
    "type": "mc",
    "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: The stairs are icy this morning.\nB: Right. The guard insisted that salt ____ on them right away. (소금이 뿌려져야 한다고)",
    "choices": [
-    "be spread",
     "is spread",
     "was spread",
     "spreads",
-    "spreading"
+    "spreading",
+    "be spread"
    ],
-   "answer": 1,
+   "answer": 5,
    "why": "insist가 당위를 나타내므로 that절의 수동태는 (should) be spread가 알맞다.",
    "no": 111
   },
@@ -1822,13 +1822,13 @@
    "type": "mc",
    "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe detective insisted that the safe ____ by someone who knew the code, since there was no sign of forced entry.",
    "choices": [
-    "had been opened",
     "be opened",
     "opening",
     "to be opened",
+    "had been opened",
     "be opening"
    ],
-   "answer": 1,
+   "answer": 4,
    "why": "금고가 이미 열렸다는 '사실'에 대한 주장이므로 직설법(과거보다 앞선 일 → had been opened)을 쓴다. be opened는 당위의 의미가 되어 문맥과 맞지 않다.",
    "no": 136
   },
@@ -1882,13 +1882,13 @@
    "type": "mc",
    "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nAll the evidence suggested that the fire ____ in the kitchen.",
    "choices": [
-    "had started",
     "start",
     "starting",
     "to start",
-    "be started"
+    "be started",
+    "had started"
    ],
-   "answer": 1,
+   "answer": 5,
    "why": "증거가 '시사한' 사실이므로 직설법을 쓰며, 화재 발생은 그보다 앞선 일이므로 had started가 알맞다.",
    "no": 140
   },
@@ -1897,13 +1897,13 @@
    "type": "mc",
    "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe union leader demanded that the overtime records ____ to an outside auditor.",
    "choices": [
-    "be shown",
     "were shown",
     "are shown",
     "showing",
-    "showed"
+    "showed",
+    "be shown"
    ],
-   "answer": 1,
+   "answer": 5,
    "why": "demand는 항상 당위의 that절을 이끌므로 수동태 (should) be shown이 알맞다.",
    "no": 141
   },
@@ -1942,13 +1942,13 @@
    "type": "mc",
    "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nHis constant yawning suggested that he ____ enough sleep the night before.",
    "choices": [
-    "had not gotten",
     "not get",
     "don't get",
     "not getting",
+    "had not gotten",
     "not to get"
    ],
-   "answer": 1,
+   "answer": 4,
    "why": "suggest가 '시사하다'의 뜻이므로 직설법을 쓴다. the night before(전날 밤)의 일이므로 had not gotten이 알맞다.",
    "no": 144
   },
@@ -2467,13 +2467,13 @@
    "type": "mc",
    "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· The counselor suggested that Erin ____ her worries down before bed. (적어 보라고 제안했다)\n· The editor demanded that the reporter ____ a correction by noon.",
    "choices": [
-    "write",
     "writes",
     "wrote",
     "writing",
-    "written"
+    "written",
+    "write"
    ],
-   "answer": 1,
+   "answer": 5,
    "why": "suggest와 demand 모두 당위의 that절을 이끌므로 (should)+동사원형 write가 공통으로 알맞다.",
    "no": 179
   },
@@ -2482,13 +2482,13 @@
    "type": "mc",
    "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· The regulations require that the emergency exits ____ kept clear at all times.\n· The director ordered that the set ____ rebuilt before Friday's shoot.",
    "choices": [
-    "be",
     "is",
     "are",
     "was",
+    "be",
     "been"
    ],
-   "answer": 1,
+   "answer": 4,
    "why": "require와 order 뒤 당위의 that절 수동태는 (should) be p.p.이므로 원형 be가 공통으로 알맞다.",
    "no": 180
   },

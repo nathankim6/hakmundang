@@ -1,0 +1,2592 @@
+{
+ "id": "hs-03",
+ "grade": "고등",
+ "name": "뒤에서 꾸미는 분사",
+ "points": [
+  "현재분사/과거분사 후치 수식",
+  "능동·수동 판별",
+  "감정분사"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe boy ____ soccer over there is my brother.",
+   "choices": [
+    "play",
+    "plays",
+    "playing",
+    "played",
+    "to play"
+   ],
+   "answer": 3,
+   "why": "소년이 축구를 '하는' 능동 관계이므로 현재분사 playing이 명사를 뒤에서 꾸민다. 문장의 동사는 is이므로 play, plays 같은 동사 형태는 올 수 없다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nLook at the dog ____ after the ball.",
+   "choices": [
+    "run",
+    "running",
+    "ran",
+    "runs",
+    "to running"
+   ],
+   "answer": 2,
+   "why": "개가 공을 '쫓아가는' 능동 관계이므로 현재분사 running이 the dog을 뒤에서 수식한다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe language ____ in Brazil is Portuguese.",
+   "choices": [
+    "speak",
+    "speaking",
+    "spoken",
+    "speaks",
+    "to speak"
+   ],
+   "answer": 3,
+   "why": "언어는 사람들에 의해 '말해지는' 수동 관계이므로 과거분사 spoken이 알맞다. speaking은 언어가 스스로 말하는 능동의 뜻이 되어 어색하다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nI know the girl ____ a red hat.",
+   "choices": [
+    "worn",
+    "wear",
+    "wears",
+    "wearing",
+    "to wear"
+   ],
+   "answer": 4,
+   "why": "소녀가 모자를 '쓰고 있는' 능동 관계이고 뒤에 목적어 a red hat이 있으므로 현재분사 wearing이 알맞다. worn 뒤에는 목적어가 올 수 없다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe cookies ____ by my mom were delicious.",
+   "choices": [
+    "bake",
+    "baking",
+    "bakes",
+    "baked",
+    "to bake"
+   ],
+   "answer": 4,
+   "why": "쿠키는 엄마에 의해 '구워진' 수동 관계이므로 과거분사 baked가 알맞다. by my mom이 수동의 단서이다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe man ____ next to me on the bus was a famous actor.",
+   "choices": [
+    "sitting",
+    "sat",
+    "sits",
+    "sit",
+    "to sit"
+   ],
+   "answer": 1,
+   "why": "남자가 '앉아 있는' 능동 관계이므로 현재분사 sitting이 알맞다. 문장의 동사 was가 이미 있으므로 sat, sits는 쓸 수 없다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThis is a picture ____ by a famous painter.",
+   "choices": [
+    "paint",
+    "painting",
+    "painted",
+    "paints",
+    "to paint"
+   ],
+   "answer": 3,
+   "why": "그림은 화가에 의해 '그려진' 수동 관계이므로 과거분사 painted가 알맞다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe students ____ in the library look very busy.",
+   "choices": [
+    "study",
+    "studies",
+    "studied",
+    "studying",
+    "to study"
+   ],
+   "answer": 4,
+   "why": "학생들이 '공부하고 있는' 능동 관계이므로 현재분사 studying이 알맞다. 동사는 look 하나면 충분하다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe car ____ in front of the house is mine.",
+   "choices": [
+    "park",
+    "parking",
+    "parks",
+    "to park",
+    "parked"
+   ],
+   "answer": 5,
+   "why": "차는 누군가에 의해 '주차된' 수동 관계이므로 과거분사 parked가 알맞다. parking은 차가 스스로 주차하는 능동의 뜻이 된다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nDo you know the woman ____ with Mr. Kim?",
+   "choices": [
+    "talked",
+    "talks",
+    "talking",
+    "talk",
+    "to talk"
+   ],
+   "answer": 3,
+   "why": "여자가 '이야기하고 있는' 능동 관계이므로 현재분사 talking이 the woman을 뒤에서 수식한다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe letter ____ in French was hard to read.",
+   "choices": [
+    "write",
+    "wrote",
+    "writing",
+    "to write",
+    "written"
+   ],
+   "answer": 5,
+   "why": "편지는 '쓰인' 수동 관계이므로 과거분사 written이 알맞다. writing은 편지가 스스로 쓰는 능동의 뜻이 되어 어색하다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe kids ____ in the pool are my cousins.",
+   "choices": [
+    "swimming",
+    "swim",
+    "swims",
+    "swam",
+    "to swim"
+   ],
+   "answer": 1,
+   "why": "아이들이 '수영하고 있는' 능동 관계이므로 현재분사 swimming이 알맞다. 문장의 동사는 are이다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현끼리 바르게 짝지은 것은?\n(A) The girl [singing / sung] on the stage is Mina.\n(B) I read a novel [writing / written] by Hemingway.\n(C) The man [driving / driven] the bus is very kind.",
+   "choices": [
+    "singing - writing - driving",
+    "singing - written - driving",
+    "singing - written - driven",
+    "sung - writing - driven",
+    "sung - written - driving"
+   ],
+   "answer": 2,
+   "why": "(A) 소녀가 노래하는 능동 → singing, (B) 소설은 쓰인 수동 → written, (C) 남자가 버스를 운전하는 능동 → driving.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현끼리 바르게 짝지은 것은?\n(A) The bread [selling / sold] at this bakery is fresh.\n(B) The people [waiting / waited] for the bus look tired.\n(C) I found a wallet [losing / lost] on the street.",
+   "choices": [
+    "selling - waiting - losing",
+    "selling - waited - lost",
+    "sold - waiting - lost",
+    "sold - waited - lost",
+    "sold - waiting - losing"
+   ],
+   "answer": 3,
+   "why": "(A) 빵은 '팔리는' 수동 → sold, (B) 사람들이 '기다리는' 능동 → waiting, (C) 지갑은 '분실된' 수동 → lost.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현끼리 바르게 짝지은 것은?\n(A) The woman [holding / held] a baby is my aunt.\n(B) Look at the mountain [covering / covered] with snow.\n(C) The boy [calling / called] Tom is my classmate.",
+   "choices": [
+    "holding - covering - calling",
+    "holding - covered - called",
+    "holding - covered - calling",
+    "held - covered - called",
+    "held - covering - called"
+   ],
+   "answer": 2,
+   "why": "(A) 여자가 아기를 '안고 있는' 능동 → holding, (B) 산은 눈으로 '덮인' 수동 → covered, (C) 소년은 Tom이라고 '불리는' 수동 → called.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현끼리 바르게 짝지은 것은?\n(A) The song [playing / played] on the radio now is my favorite.\n(B) The fence [painting / painted] white looks nice.\n(C) The girls [dancing / danced] in the hall are my friends.",
+   "choices": [
+    "playing - painting - dancing",
+    "playing - painted - danced",
+    "played - painted - dancing",
+    "playing - painted - dancing",
+    "played - painting - danced"
+   ],
+   "answer": 4,
+   "why": "(A) 노래가 지금 '흘러나오고 있는' 진행·능동 → playing, (B) 울타리는 하얗게 '칠해진' 수동 → painted, (C) 소녀들이 '춤추는' 능동 → dancing.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현끼리 바르게 짝지은 것은?\n(A) The house [building / built] in 1900 is now a museum.\n(B) Who is the man [standing / stood] at the gate?\n(C) The cheese [making / made] in France is expensive.",
+   "choices": [
+    "building - standing - making",
+    "built - standing - made",
+    "built - stood - made",
+    "building - stood - made",
+    "built - standing - making"
+   ],
+   "answer": 2,
+   "why": "(A) 집은 '지어진' 수동 → built, (B) 남자가 '서 있는' 능동 → standing, (C) 치즈는 '만들어진' 수동 → made.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe movie was so ____ that I fell asleep.",
+   "choices": [
+    "bore",
+    "bored",
+    "boring",
+    "to bore",
+    "bores"
+   ],
+   "answer": 3,
+   "why": "영화가 지루함을 '느끼게 하는' 쪽이므로 현재분사형 형용사 boring이 알맞다. bored는 지루함을 '느끼는' 사람에게 쓴다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nWe were ____ at the sudden loud noise.",
+   "choices": [
+    "surprised",
+    "surprising",
+    "surprise",
+    "surprises",
+    "to surprise"
+   ],
+   "answer": 1,
+   "why": "우리가 놀라움을 '느낀' 것이므로 과거분사형 형용사 surprised가 알맞다. surprising은 놀라움을 주는 대상에 쓴다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe soccer game last night was really ____. (아주 신나는)",
+   "choices": [
+    "excite",
+    "excited",
+    "excites",
+    "to excite",
+    "exciting"
+   ],
+   "answer": 5,
+   "why": "경기가 신나는 감정을 '일으키는' 쪽이므로 exciting이 알맞다. excited는 감정을 느끼는 사람에게 쓴다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nShe is ____ in Korean history.",
+   "choices": [
+    "interest",
+    "interesting",
+    "interested",
+    "interests",
+    "to interest"
+   ],
+   "answer": 3,
+   "why": "그녀가 흥미를 '느끼는' 것이므로 interested가 알맞다. be interested in은 '~에 흥미가 있다'는 뜻이다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe ending of the novel was ____ to everyone. (충격적인)",
+   "choices": [
+    "shocked",
+    "shocking",
+    "shock",
+    "shocks",
+    "to shock"
+   ],
+   "answer": 2,
+   "why": "결말이 충격을 '주는' 쪽이므로 shocking이 알맞다. shocked는 충격을 받은 사람을 묘사할 때 쓴다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nAfter the long walk, everyone felt ____. (피곤한)",
+   "choices": [
+    "tiring",
+    "tired",
+    "tire",
+    "to tire",
+    "tires"
+   ],
+   "answer": 2,
+   "why": "사람들이 피곤함을 '느낀' 것이므로 tired가 알맞다. tiring은 피곤하게 만드는 일을 묘사할 때 쓴다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe magic show was ____ to the children. (놀라운)",
+   "choices": [
+    "amaze",
+    "amazed",
+    "amazes",
+    "amazing",
+    "to amaze"
+   ],
+   "answer": 4,
+   "why": "마술 쇼가 놀라움을 '주는' 쪽이므로 amazing이 알맞다. amazed는 놀란 사람을 묘사한다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "The man wearing glasses is our teacher.",
+    "The boy played the guitar is my friend.",
+    "I like the cake making by my grandma.",
+    "The window breaking by the wind was big.",
+    "Look at the bird sang in the tree."
+   ],
+   "answer": 1,
+   "why": "남자가 안경을 '쓰고 있는' 능동이므로 wearing이 옳다. 나머지는 각각 playing, made, broken, singing으로 고쳐야 한다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은?",
+   "choices": [
+    "The girl reading a book is Jenny.",
+    "The car made in Germany is expensive.",
+    "The boy invited to the party was happy.",
+    "The woman cooked dinner in the kitchen is my mom.",
+    "The toys sold in this shop are cheap."
+   ],
+   "answer": 4,
+   "why": "여자가 저녁을 '요리하고 있는' 능동 관계이므로 cooked가 아니라 cooking이 되어야 한다. 문장의 동사는 is이다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장 중 어법에 맞는 것은?",
+   "choices": [
+    "This is the photo taking in Paris.",
+    "The news was very surprised.",
+    "I was boring during the class.",
+    "The pizza delivering to us was cold.",
+    "The people living in this town are friendly."
+   ],
+   "answer": 5,
+   "why": "사람들이 '살고 있는' 능동이므로 living이 옳다. 나머지는 taken, surprising, bored, delivered로 고쳐야 한다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장 중 어법에 어긋나는 것은?",
+   "choices": [
+    "He has a dog named Max.",
+    "The stars shining in the sky are beautiful.",
+    "English is a language speaking all over the world.",
+    "The fans cheering for the team were loud.",
+    "I bought a bag made of leather."
+   ],
+   "answer": 3,
+   "why": "언어는 전 세계에서 '말해지는' 수동 관계이므로 speaking이 아니라 spoken이 되어야 한다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "The kid cried loudly is my nephew.",
+    "The movie was touched.",
+    "She was excite to see the star.",
+    "The bridge built 100 years ago is still strong.",
+    "The money stealing from the bank was found."
+   ],
+   "answer": 4,
+   "why": "다리는 '지어진' 수동이므로 built가 옳다. 나머지는 crying, touching, excited, stolen으로 고쳐야 한다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 틀린 것은?",
+   "choices": [
+    "The girl swimming in the sea is brave.",
+    "Rice grown in this region tastes good.",
+    "The boy stood by the door is my cousin.",
+    "The picture hanging on the wall is old.",
+    "We ate the fish caught this morning."
+   ],
+   "answer": 3,
+   "why": "소년이 문 옆에 '서 있는' 능동 관계이므로 stood가 아니라 standing이 되어야 한다. 문장의 동사는 is이다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 틀린 것은?",
+   "choices": [
+    "The woman <u>singing</u> on TV is famous.",
+    "I have a friend <u>living</u> in Canada.",
+    "The bike <u>stolen</u> last night was found.",
+    "The cookies <u>selling</u> at that store are sweet.",
+    "The man <u>fixing</u> my computer is skillful."
+   ],
+   "answer": 4,
+   "why": "쿠키는 가게에서 '팔리는' 수동 관계이므로 selling이 아니라 sold가 되어야 한다. 나머지는 모두 능동·수동 관계가 올바르다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 옳은 것은?",
+   "choices": [
+    "The letter <u>sending</u> to me was long.",
+    "The kids <u>played</u> in the park are noisy.",
+    "The road <u>covering</u> with ice was dangerous.",
+    "The tree <u>planting</u> by my father grew tall.",
+    "The girl <u>smiling</u> at me is my sister."
+   ],
+   "answer": 5,
+   "why": "소녀가 '미소 짓고 있는' 능동이므로 smiling이 옳다. 나머지는 sent, playing, covered, planted로 고쳐야 한다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 틀린 것을 고르면?",
+   "choices": [
+    "The cap <u>worn</u> by the player is red.",
+    "The boy <u>running</u> to school is late.",
+    "The songs <u>sung</u> by the choir were beautiful.",
+    "The dog <u>barked</u> at strangers is not mine.",
+    "The juice <u>made</u> from fresh oranges is sweet."
+   ],
+   "answer": 4,
+   "why": "개가 낯선 사람에게 '짖는' 능동 관계이므로 barked가 아니라 barking이 되어야 한다. 문장의 동사는 is이다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 감정을 나타내는 말 중 어법상 틀린 것은?",
+   "choices": [
+    "The trip was really <u>tired</u>.",
+    "I was <u>pleased</u> with the gift.",
+    "The test result was <u>disappointing</u>.",
+    "He looked <u>confused</u> by the question.",
+    "The story sounds <u>interesting</u>."
+   ],
+   "answer": 1,
+   "why": "여행이 피곤함을 '느끼게 하는' 쪽이므로 tired가 아니라 tiring이 되어야 한다. 감정을 느끼는 사람에게는 과거분사를 쓴다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 감정을 나타내는 말 중 어법상 옳은 것은?",
+   "choices": [
+    "The roller coaster was <u>excited</u>.",
+    "The result was <u>satisfying</u> to us.",
+    "I felt <u>embarrassing</u> at that moment.",
+    "She was <u>amazing</u> at the view.",
+    "The class was <u>bored</u> today."
+   ],
+   "answer": 2,
+   "why": "결과가 만족감을 '주는' 쪽이므로 satisfying이 옳다. 나머지는 exciting, embarrassed, amazed, boring으로 고쳐야 한다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 분사 중 어법상 틀린 것은?",
+   "choices": [
+    "Look at the baby <u>sleeping</u> in the crib.",
+    "The apples <u>picked</u> yesterday are fresh.",
+    "The shop <u>opened</u> last month is popular.",
+    "The novel <u>reading</u> by many teens is fun.",
+    "The girl <u>waiting</u> outside is my classmate."
+   ],
+   "answer": 4,
+   "why": "소설은 십 대들에 의해 '읽히는' 수동 관계이므로 reading이 아니라 read(과거분사)가 되어야 한다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "두 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· The boy ____ the drum is Jack.\n· The girl ____ with her phone is Amy.",
+   "choices": [
+    "playing",
+    "plays",
+    "played",
+    "to play",
+    "play"
+   ],
+   "answer": 1,
+   "why": "소년이 북을 '치는', 소녀가 휴대폰을 '가지고 노는' 모두 능동 관계이므로 현재분사 playing이 공통으로 들어간다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "두 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· This is a doll ____ in China.\n· The paper cranes ____ by Sue were pretty.",
+   "choices": [
+    "making",
+    "made",
+    "makes",
+    "to make",
+    "make"
+   ],
+   "answer": 2,
+   "why": "인형과 종이학 모두 '만들어진' 수동 관계이므로 과거분사 made가 공통으로 들어간다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?\n· The man (A)____ the piano is blind.\n· The song (B)____ by him was sweet.",
+   "choices": [
+    "playing - playing",
+    "playing - played",
+    "played - playing",
+    "played - played",
+    "plays - played"
+   ],
+   "answer": 2,
+   "why": "(A) 남자가 피아노를 '치는' 능동 → playing, (B) 노래는 그에 의해 '연주된' 수동 → played.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?\n· The game was (A)____. (지루한)\n· The fans were (B)____ with the game. (지루해하는)",
+   "choices": [
+    "boring - boring",
+    "bored - boring",
+    "boring - bored",
+    "bored - bored",
+    "bore - bored"
+   ],
+   "answer": 3,
+   "why": "경기는 지루함을 '주는' 쪽 → boring, 팬들은 지루함을 '느끼는' 쪽 → bored.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Who is the girl ____ a yellow dress?\nB: She is my little sister.",
+   "choices": [
+    "wear",
+    "wears",
+    "worn",
+    "wearing",
+    "to wear"
+   ],
+   "answer": 4,
+   "why": "소녀가 드레스를 '입고 있는' 능동 관계이고 목적어 a yellow dress가 있으므로 현재분사 wearing이 알맞다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: How was the musical?\nB: It was really ____. I want to see it again!",
+   "choices": [
+    "touched",
+    "touching",
+    "touch",
+    "touches",
+    "to touch"
+   ],
+   "answer": 2,
+   "why": "뮤지컬이 감동을 '주는' 쪽이므로 touching이 알맞다. touched는 감동을 받은 사람에게 쓴다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: What's this?\nB: It's a robot ____ by my brother. He loves making things.",
+   "choices": [
+    "built",
+    "build",
+    "builds",
+    "building",
+    "to build"
+   ],
+   "answer": 1,
+   "why": "로봇은 형에 의해 '만들어진' 수동 관계이므로 과거분사 built가 알맞다. by my brother가 수동의 단서이다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Do you know that man ____ over there?\nB: Yes, he's our new coach.",
+   "choices": [
+    "stands",
+    "stood",
+    "standing",
+    "to stand",
+    "stand"
+   ],
+   "answer": 3,
+   "why": "남자가 '서 있는' 능동 관계이므로 현재분사 standing이 that man을 뒤에서 수식한다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n벤치에 앉아 있는 저 노인은 우리 할아버지이다.",
+   "choices": [
+    "The old man sat on the bench is my grandfather.",
+    "The old man sitting on the bench is my grandfather.",
+    "The old man is sitting on the bench my grandfather.",
+    "The sitting old man on the bench is my grandfather.",
+    "The old man to sit on the bench is my grandfather."
+   ],
+   "answer": 2,
+   "why": "'앉아 있는'은 능동이므로 현재분사 sitting이 수식어구와 함께 명사를 뒤에서 꾸민다. 문장의 동사는 is 하나여야 한다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n나는 영어로 쓰인 이메일을 받았다.",
+   "choices": [
+    "I received an email writing in English.",
+    "I received an email wrote in English.",
+    "I received an email written in English.",
+    "I received a written email in English.",
+    "I received an email to write in English."
+   ],
+   "answer": 3,
+   "why": "이메일은 '쓰인' 수동 관계이므로 과거분사 written이 email을 뒤에서 수식한다. writing은 능동의 뜻이 되어 어색하다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말 '무대에서 춤추고 있는 소년들'을 바르게 표현한 것은?",
+   "choices": [
+    "the boys danced on the stage",
+    "the dancing boys on the stage",
+    "the boys to dance on the stage",
+    "the boys were dancing on the stage",
+    "the boys dancing on the stage"
+   ],
+   "answer": 5,
+   "why": "분사가 수식어구(on the stage)를 데리고 있으면 명사를 뒤에서 꾸민다. 따라서 the boys dancing on the stage가 알맞다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n그 소식은 매우 실망스러웠다.",
+   "choices": [
+    "The news was very disappointed.",
+    "The news was very disappointing.",
+    "The news was very disappoint.",
+    "The news disappointed very.",
+    "The news was to disappoint very."
+   ],
+   "answer": 2,
+   "why": "소식이 실망을 '주는' 쪽이므로 disappointing이 알맞다. disappointed는 실망을 느낀 사람에게 쓴다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nThe woman (stand) at the door is my aunt.",
+   "answer": "standing",
+   "why": "여자가 문가에 '서 있는' 능동 관계이므로 현재분사 standing으로 쓴다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nThe bread (bake) this morning smells good.",
+   "answer": "baked",
+   "why": "빵은 오늘 아침에 '구워진' 수동 관계이므로 과거분사 baked로 쓴다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nThe boy (ride) a bike over there is Minho.",
+   "answer": "riding",
+   "why": "소년이 자전거를 '타고 있는' 능동 관계이고 목적어 a bike가 있으므로 현재분사 riding으로 쓴다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nThe vegetables (sell) at the market are cheap.",
+   "answer": "sold",
+   "why": "채소는 시장에서 '팔리는' 수동 관계이므로 과거분사 sold로 쓴다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nLook at the cat (sleep) on the sofa.",
+   "answer": "sleeping",
+   "why": "고양이가 '자고 있는' 능동 관계이므로 현재분사 sleeping으로 쓴다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nThe poem (write) by her moved many people.",
+   "answer": "written",
+   "why": "시는 그녀에 의해 '쓰인' 수동 관계이므로 과거분사 written으로 쓴다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nThe children (laugh) loudly are having fun.",
+   "answer": "laughing",
+   "why": "아이들이 '웃고 있는' 능동 관계이므로 현재분사 laughing으로 쓴다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nThe wall (paint) blue looks cool.",
+   "answer": "painted",
+   "why": "벽은 파란색으로 '칠해진' 수동 관계이므로 과거분사 painted로 쓴다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nThe window <u>breaking</u> by the ball was replaced.",
+   "answer": "broken",
+   "why": "창문은 공에 의해 '깨진' 수동 관계이므로 과거분사 broken으로 고친다. by the ball이 수동의 단서이다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nThe man <u>helped</u> the old lady across the street is kind.",
+   "answer": "helping",
+   "why": "남자가 할머니를 '도와드리는' 능동 관계이고 문장의 동사는 is이므로 현재분사 helping으로 고친다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nThe photos <u>taking</u> in Jeju were amazing.",
+   "answer": "taken",
+   "why": "사진은 제주에서 '찍힌' 수동 관계이므로 과거분사 taken으로 고친다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nThe girl <u>played</u> the violin on the stage is my niece.",
+   "answer": "playing",
+   "why": "소녀가 바이올린을 '연주하고 있는' 능동 관계이고 목적어가 있으므로 현재분사 playing으로 고친다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nThe movie was so <u>bored</u> that I left early.",
+   "answer": "boring",
+   "why": "영화가 지루함을 '주는' 쪽이므로 boring으로 고친다. bored는 지루함을 느끼는 사람에게 쓴다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nHe was <u>surprising</u> to hear the news.",
+   "answer": "surprised",
+   "why": "그가 놀라움을 '느낀' 것이므로 surprised로 고친다. surprising은 놀라움을 주는 대상에 쓴다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 interest를 알맞은 형태로 바꿔 쓰시오.\nThe documentary was really ____.",
+   "answer": "interesting",
+   "why": "다큐멘터리가 흥미를 '일으키는' 쪽이므로 현재분사형 형용사 interesting을 쓴다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 excite를 알맞은 형태로 바꿔 쓰시오.\nThe children were ____ about the field trip.",
+   "answer": "excited",
+   "why": "아이들이 신나는 감정을 '느낀' 것이므로 과거분사형 형용사 excited를 쓴다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 tire를 알맞은 형태로 바꿔 쓰시오.\nClimbing the mountain was ____.",
+   "answer": "tiring",
+   "why": "등산이 피곤함을 '느끼게 하는' 쪽이므로 tiring을 쓴다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 disappoint를 알맞은 형태로 바꿔 쓰시오.\nWe were ____ with the final score.",
+   "answer": "disappointed",
+   "why": "우리가 실망을 '느낀' 것이므로 disappointed를 쓴다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말에 맞게 빈칸에 알맞은 한 단어를 쓰시오. (cook 이용)\n아빠에 의해 요리된 스파게티는 맛있었다.\nThe spaghetti ____ by Dad was delicious.",
+   "answer": "cooked",
+   "why": "스파게티는 아빠에 의해 '요리된' 수동 관계이므로 과거분사 cooked를 쓴다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말에 맞게 빈칸에 알맞은 한 단어를 쓰시오. (carry 이용)\n무거운 상자를 나르고 있는 저 남자를 도와주자.\nLet's help the man ____ the heavy box.",
+   "answer": "carrying",
+   "why": "남자가 상자를 '나르고 있는' 능동 관계이고 목적어가 있으므로 현재분사 carrying을 쓴다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe theory ____ by the scientist in the 1920s changed physics forever.",
+   "choices": [
+    "proposing",
+    "proposed",
+    "proposes",
+    "to propose",
+    "propose"
+   ],
+   "answer": 2,
+   "why": "이론은 과학자에 의해 '제안된' 수동 관계이므로 과거분사 proposed가 알맞다. by the scientist가 수동의 단서이다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nPassengers ____ for the delayed flight were given free meals.",
+   "choices": [
+    "waiting",
+    "waited",
+    "wait",
+    "waits",
+    "to waiting"
+   ],
+   "answer": 1,
+   "why": "승객들이 '기다리고 있는' 능동 관계이므로 현재분사 waiting이 알맞다. 문장의 동사는 were given이다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe data ____ from the survey will be analyzed next week.",
+   "choices": [
+    "collecting",
+    "collects",
+    "collected",
+    "to collect",
+    "collect"
+   ],
+   "answer": 3,
+   "why": "자료는 설문에서 '수집된' 수동 관계이므로 과거분사 collected가 알맞다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe company hired an engineer ____ on the new project.",
+   "choices": [
+    "worked",
+    "works",
+    "to work on",
+    "working",
+    "work"
+   ],
+   "answer": 4,
+   "why": "엔지니어가 프로젝트에서 '일하는' 능동 관계이므로 현재분사 working이 알맞다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe novel, ____ into more than thirty languages, is loved worldwide.",
+   "choices": [
+    "translating",
+    "translated",
+    "translates",
+    "to translate",
+    "translate"
+   ],
+   "answer": 2,
+   "why": "소설은 30여 개 언어로 '번역된' 수동 관계이므로 과거분사 translated가 알맞다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nStudents ____ to the program will receive an email next Monday.",
+   "choices": [
+    "admitting",
+    "admits",
+    "admit",
+    "to admit",
+    "admitted"
+   ],
+   "answer": 5,
+   "why": "학생들이 프로그램에 '입학 허가를 받은' 수동 관계이므로 과거분사 admitted가 알맞다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe volunteers ____ meals to the homeless deserve our respect.",
+   "choices": [
+    "serving",
+    "served",
+    "serve",
+    "serves",
+    "to serving"
+   ],
+   "answer": 1,
+   "why": "자원봉사자들이 식사를 '제공하는' 능동 관계이고 목적어 meals가 있으므로 현재분사 serving이 알맞다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe bridge ____ the two islands was completed in 2010.",
+   "choices": [
+    "connected",
+    "connecting",
+    "connects",
+    "to connect",
+    "connect"
+   ],
+   "answer": 2,
+   "why": "다리가 두 섬을 '연결하는' 능동 관계이고 목적어 the two islands가 있으므로 현재분사 connecting이 알맞다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nTourists visiting the palace can see treasures ____ for centuries.",
+   "choices": [
+    "preserving",
+    "preserved",
+    "preserve",
+    "preserves",
+    "to preserve"
+   ],
+   "answer": 2,
+   "why": "보물들은 수 세기 동안 '보존되어 온' 수동 관계이므로 과거분사 preserved가 알맞다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe amount of energy ____ by this device is surprisingly small.",
+   "choices": [
+    "consuming",
+    "consumes",
+    "consume",
+    "consumed",
+    "to consume"
+   ],
+   "answer": 4,
+   "why": "에너지는 장치에 의해 '소비되는' 수동 관계이므로 과거분사 consumed가 알맞다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현끼리 바르게 짝지은 것은?\n(A) The man [injuring / injured] in the accident was taken to the hospital.\n(B) The firefighters [rescuing / rescued] people from the building were praised.\n(C) The documentary was so [moving / moved] that everyone cried.",
+   "choices": [
+    "injuring - rescuing - moving",
+    "injured - rescued - moving",
+    "injured - rescuing - moved",
+    "injured - rescuing - moving",
+    "injuring - rescued - moved"
+   ],
+   "answer": 4,
+   "why": "(A) 남자는 사고에서 '다친' 수동 → injured, (B) 소방관들이 사람들을 '구조하는' 능동 → rescuing, (C) 다큐가 감동을 '주는' 쪽 → moving.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현끼리 바르게 짝지은 것은?\n(A) The results [announcing / announced] yesterday shocked the fans.\n(B) The audience seemed [boring / bored] during the long speech.\n(C) The girl [choosing / chosen] as the class president gave a speech.",
+   "choices": [
+    "announcing - boring - choosing",
+    "announced - boring - chosen",
+    "announced - bored - chosen",
+    "announcing - bored - chosen",
+    "announced - bored - choosing"
+   ],
+   "answer": 3,
+   "why": "(A) 결과는 '발표된' 수동 → announced, (B) 청중이 지루함을 '느낀' 것 → bored, (C) 소녀는 회장으로 '뽑힌' 수동 → chosen.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현끼리 바르게 짝지은 것은?\n(A) The typhoon [approaching / approached] the coast is getting stronger.\n(B) Roads [blocking / blocked] by fallen trees were cleared quickly.\n(C) It was an [embarrassing / embarrassed] moment for the singer.",
+   "choices": [
+    "approaching - blocked - embarrassing",
+    "approached - blocked - embarrassed",
+    "approaching - blocking - embarrassing",
+    "approached - blocking - embarrassed",
+    "approaching - blocked - embarrassed"
+   ],
+   "answer": 1,
+   "why": "(A) 태풍이 해안에 '접근하는' 능동 → approaching, (B) 도로는 나무에 '막힌' 수동 → blocked, (C) 순간이 당황스러움을 '주는' 쪽 → embarrassing.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현끼리 바르게 짝지은 것은?\n(A) The paintings [displaying / displayed] in this hall are all originals.\n(B) The reporter [interviewing / interviewed] the actor works for a daily newspaper.\n(C) The fans were [disappointing / disappointed] by the sudden cancellation.",
+   "choices": [
+    "displaying - interviewing - disappointing",
+    "displayed - interviewed - disappointed",
+    "displayed - interviewing - disappointing",
+    "displaying - interviewed - disappointed",
+    "displayed - interviewing - disappointed"
+   ],
+   "answer": 5,
+   "why": "(A) 그림은 '전시된' 수동 → displayed, (B) 기자가 배우를 '인터뷰하는' 능동(목적어 the actor) → interviewing, (C) 팬들이 실망을 '느낀' 것 → disappointed.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현끼리 바르게 짝지은 것은?\n(A) The article [publishing / published] last week caused a big debate.\n(B) People [living / lived] near the airport complain about the noise.\n(C) The trip to the desert was [exhausting / exhausted].",
+   "choices": [
+    "publishing - living - exhausted",
+    "published - lived - exhausting",
+    "published - living - exhausted",
+    "publishing - lived - exhausted",
+    "published - living - exhausting"
+   ],
+   "answer": 5,
+   "why": "(A) 기사는 '게재된' 수동 → published, (B) 사람들이 '사는' 능동 → living, (C) 여행이 지치게 '만드는' 쪽 → exhausting.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현끼리 바르게 짝지은 것은?\n(A) The password [requiring / required] to log in has eight letters.\n(B) The scientist [conducting / conducted] the experiment recorded every detail.\n(C) The story about the lost dog was [touching / touched].",
+   "choices": [
+    "required - conducting - touching",
+    "requiring - conducting - touching",
+    "required - conducted - touched",
+    "requiring - conducted - touching",
+    "required - conducting - touched"
+   ],
+   "answer": 1,
+   "why": "(A) 비밀번호는 로그인에 '요구되는' 수동 → required, (B) 과학자가 실험을 '수행하는' 능동 → conducting, (C) 이야기가 감동을 '주는' 쪽 → touching.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 ①~⑤ 중 어법상 틀린 것은?\nThe students ①<u>attending</u> the science camp visited a lab ②<u>filled</u> with robots ③<u>designing</u> by young engineers, and they looked really ④<u>excited</u> about the machines ⑤<u>moving</u> around the room.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "로봇은 엔지니어들에 의해 '설계된' 수동 관계이므로 designing이 아니라 designed가 되어야 한다. by young engineers가 단서이다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 ①~⑤ 중 어법상 틀린 것은?\nThe chef ①<u>known</u> for his creative dishes opened a restaurant ②<u>serving</u> food ③<u>made</u> with local ingredients, and customers ④<u>waited</u> in long lines say the menu is really ⑤<u>satisfying</u>.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 4,
+   "why": "손님들이 줄을 서서 '기다리는' 능동 관계이고 문장의 동사는 say이므로 waited가 아니라 waiting이 되어야 한다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 ①~⑤ 중 어법상 틀린 것은?\nThe photographs ①<u>taken</u> by the artist show children ②<u>playing</u> in streets ③<u>destroyed</u> by the war, and the images were so ④<u>shocked</u> that visitors ⑤<u>standing</u> in front of them could not say a word.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 4,
+   "why": "이미지가 충격을 '주는' 쪽이므로 shocked가 아니라 shocking이 되어야 한다. shocked는 충격을 받은 사람에게 쓴다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 ①~⑤ 중 어법상 틀린 것은?\nAnyone ①<u>interested</u> in the contest should fill out the form ②<u>attaching</u> to the notice and hand it to the teacher ③<u>sitting</u> in the office ④<u>located</u> on the second floor before the deadline ⑤<u>printed</u> on the poster.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 2,
+   "why": "양식은 공지에 '첨부된' 수동 관계이므로 attaching이 아니라 attached가 되어야 한다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 옳은 문장을 고르면?",
+   "choices": [
+    "The tickets selling online are cheaper than those at the door.",
+    "The man arresting by the police denied everything.",
+    "The girl surprising by the gift burst into tears.",
+    "The issues discussed at the meeting remain unsolved.",
+    "The building destroying in the fire will be rebuilt."
+   ],
+   "answer": 4,
+   "why": "쟁점들은 회의에서 '논의된' 수동이므로 discussed가 옳다. 나머지는 sold, arrested, surprised, destroyed로 고쳐야 한다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 틀린 문장을 고르면?",
+   "choices": [
+    "The medicine developed by the team saved thousands of lives.",
+    "The runner leading the race fell just before the finish line.",
+    "The witness describing the accident spoke calmly.",
+    "The items ordering last week arrived today.",
+    "The trees planted along the road provide cool shade."
+   ],
+   "answer": 4,
+   "why": "물건들은 지난주에 '주문된' 수동 관계이므로 ordering이 아니라 ordered가 되어야 한다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 감정을 나타내는 분사의 쓰임이 옳은 문장은?",
+   "choices": [
+    "I found the lecture really bored.",
+    "She was frightening by the loud thunder.",
+    "It was a confused explanation for most students.",
+    "He felt embarrassing about his mistake.",
+    "The passengers looked frightened after the sudden stop."
+   ],
+   "answer": 5,
+   "why": "승객들이 무서움을 '느낀' 것이므로 frightened가 옳다. 나머지는 boring, frightened, confusing, embarrassed로 고쳐야 한다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 분사의 쓰임이 어법상 틀린 문장은?",
+   "choices": [
+    "The bread baked in this oven stays fresh for days.",
+    "The politician giving the speech avoided the question.",
+    "The children excited about the snow ran outside.",
+    "The information providing by the app was inaccurate.",
+    "The song played at the ceremony brought back memories."
+   ],
+   "answer": 4,
+   "why": "정보는 앱에 의해 '제공된' 수동 관계이므로 providing이 아니라 provided가 되어야 한다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 옳은 문장의 개수는?\nㄱ. The boy raised by his grandmother became a doctor.\nㄴ. The team winning the finals will go to the world championship.\nㄷ. The letters sending to soldiers cheered them up.\nㄹ. The audience was amazing at the magician's tricks.\nㅁ. The road leading to the beach is crowded in summer.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ(길러진, 수동)·ㄴ(우승하는, 능동)·ㅁ(이어지는, 능동)이 옳다. ㄷ은 sent, ㄹ은 amazed가 되어야 하므로 옳은 문장은 3개이다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 틀린 문장의 개수는?\nㄱ. The car damaging in the crash was towed away.\nㄴ. Everyone invited to the wedding received a small gift.\nㄷ. The girl bored with the game turned off the computer.\nㄹ. The noise coming from upstairs kept me awake.\nㅁ. The results were quite satisfied.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 차가 '파손된' 수동이므로 damaged, ㅁ은 결과가 만족을 '주는' 쪽이므로 satisfying이 되어야 한다. 틀린 문장은 2개이다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장을 분사를 이용해 바꿔 쓸 때 빈칸에 알맞은 것은?\nThe woman who is watering the flowers is our neighbor.\n= The woman ____ the flowers is our neighbor.",
+   "choices": [
+    "watering",
+    "watered",
+    "waters",
+    "to water",
+    "water"
+   ],
+   "answer": 1,
+   "why": "'주어＋be동사(who is)'가 생략되면 현재분사 watering만 남아 명사를 뒤에서 수식한다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바꿀 때 빈칸에 알맞은 것은?\nI bought a used car. + It was made in 2015.\n= I bought a used car ____ in 2015.",
+   "choices": [
+    "make",
+    "making",
+    "makes",
+    "to make",
+    "made"
+   ],
+   "answer": 5,
+   "why": "차는 2015년에 '만들어진' 수동 관계이므로 과거분사 made가 car를 뒤에서 수식한다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분을 분사구로 바꿔 쓴 것으로 알맞은 것은?\nThe boy <u>who was bitten by a snake</u> was rushed to the hospital.",
+   "choices": [
+    "biting by a snake",
+    "bitten by a snake",
+    "who biting by a snake",
+    "to bite by a snake",
+    "being bite by a snake"
+   ],
+   "answer": 2,
+   "why": "'관계대명사＋be동사(who was)'를 생략하면 과거분사 bitten만 남는다. 소년은 뱀에게 '물린' 수동 관계이다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 같은 것은?\nThe students taking the exam look nervous.",
+   "choices": [
+    "The students who are taken the exam look nervous.",
+    "The students who are taking the exam look nervous.",
+    "The students who took the exam looked nervous.",
+    "The students taken the exam look nervous.",
+    "The exam taking the students looks nervous."
+   ],
+   "answer": 2,
+   "why": "현재분사 후치 수식은 '관계대명사＋be동사＋현재분사'로 풀어 쓸 수 있다. 학생들이 시험을 '치르고 있는' 능동이므로 who are taking이 알맞다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· The man ____ the project is my uncle.\n· The path ____ to the lake is narrow.",
+   "choices": [
+    "leading",
+    "led",
+    "leads",
+    "to lead",
+    "lead"
+   ],
+   "answer": 1,
+   "why": "남자가 프로젝트를 '이끄는', 길이 호수로 '이어지는' 모두 능동 관계이므로 현재분사 leading이 공통으로 들어간다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말로 바르게 짝지어진 것은?\nThe documentary (A)____ the lives of penguins was (B)____ to children. (펭귄의 삶을 보여 주는 / 흥미로운)",
+   "choices": [
+    "showing - interesting",
+    "shown - interesting",
+    "showing - interested",
+    "shown - interested",
+    "shows - interesting"
+   ],
+   "answer": 1,
+   "why": "(A) 다큐가 펭귄의 삶을 '보여 주는' 능동(목적어 있음) → showing, (B) 다큐가 흥미를 '주는' 쪽 → interesting.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말로 바르게 짝지어진 것은?\n· The tourists (A)____ in the storm stayed at the airport overnight. (폭풍에 발이 묶인)\n· They were (B)____ by the long delay. (짜증이 난)",
+   "choices": [
+    "catching - annoying",
+    "caught - annoyed",
+    "caught - annoying",
+    "catching - annoyed",
+    "to catch - annoyed"
+   ],
+   "answer": 2,
+   "why": "(A) 관광객들이 폭풍에 '붙잡힌' 수동 → caught, (B) 그들이 짜증을 '느낀' 것 → annoyed.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Did you enjoy the exhibition?\nB: Yes! The sculptures ____ from recycled metal were my favorite.",
+   "choices": [
+    "create",
+    "creating",
+    "created",
+    "creates",
+    "to create"
+   ],
+   "answer": 3,
+   "why": "조각품은 재활용 금속으로 '만들어진' 수동 관계이므로 과거분사 created가 알맞다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Why do you look so ____?\nB: I've been cleaning the house all day.",
+   "choices": [
+    "tiring",
+    "tired",
+    "tire",
+    "to tire",
+    "tires"
+   ],
+   "answer": 2,
+   "why": "상대방이 피곤함을 '느끼는' 것이므로 tired가 알맞다. tiring은 피곤하게 만드는 일에 쓴다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Who is that woman ____ by reporters over there?\nB: She's the new CEO of the company.",
+   "choices": [
+    "surrounding",
+    "surrounds",
+    "to surround",
+    "surrounded",
+    "surround"
+   ],
+   "answer": 4,
+   "why": "여자가 기자들에게 '둘러싸인' 수동 관계이므로 과거분사 surrounded가 알맞다. by reporters가 단서이다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n그 폭풍의 피해를 입은 농부들은 정부에 도움을 요청했다.",
+   "choices": [
+    "The farmers affecting by the storm asked the government for help.",
+    "The farmers affected by the storm asked the government for help.",
+    "The farmers were affected by the storm asked the government for help.",
+    "The farmers to affect by the storm asked the government for help.",
+    "Affected farmers by the storm asked the government for help."
+   ],
+   "answer": 2,
+   "why": "농부들이 폭풍의 영향을 '받은' 수동 관계이므로 과거분사 affected가 명사를 뒤에서 수식한다. 문장의 동사는 asked 하나여야 한다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n그의 갑작스러운 은퇴는 팬들에게 충격적이었다.",
+   "choices": [
+    "His sudden retirement was shocked to the fans.",
+    "His sudden retirement was shock to the fans.",
+    "His sudden retirement was shocking to the fans.",
+    "His sudden retirement shocked to the fans.",
+    "His sudden retirement was to shock the fans."
+   ],
+   "answer": 3,
+   "why": "은퇴가 충격을 '주는' 쪽이므로 shocking이 알맞다. shocked는 충격을 받은 사람을 묘사한다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n프랑스에서 수입된 치즈가 이 가게에서 가장 잘 팔린다.",
+   "choices": [
+    "The cheese importing from France sells best in this store.",
+    "The cheese was imported from France sells best in this store.",
+    "The cheese to import from France sells best in this store.",
+    "The cheese imported from France sells best in this store.",
+    "Importing cheese from France sells best in this store."
+   ],
+   "answer": 4,
+   "why": "치즈는 '수입된' 수동 관계이므로 과거분사 imported가 cheese를 뒤에서 수식한다. 동사가 두 개인 ②는 틀린 문장이다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "분사의 능동·수동 쓰임이 어법상 옳은 문장은?",
+   "choices": [
+    "The crowd cheered for the players exhausting after the match.",
+    "The recipe handed down for generations is our family's secret.",
+    "The mystery surrounded the old castle attracts many visitors.",
+    "The manual translating into Korean was full of errors.",
+    "I was pleasing with the service at the hotel."
+   ],
+   "answer": 2,
+   "why": "요리법은 대대로 '전해 내려온' 수동이므로 handed down이 옳다. 나머지는 exhausted, surrounding, translated, pleased로 고쳐야 한다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "분사의 능동·수동 쓰임이 어법상 틀린 문장은?",
+   "choices": [
+    "The girl elected as team captain thanked her classmates.",
+    "The train heading for Busan leaves at seven.",
+    "The essay written in a hurry was full of mistakes.",
+    "The scientist studying volcanoes travels around the world.",
+    "The workers repaired the road wore bright vests."
+   ],
+   "answer": 5,
+   "why": "인부들이 도로를 '수리하는' 능동 관계이고 문장의 동사는 wore이므로 repaired가 아니라 repairing이 되어야 한다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분의 쓰임이 나머지 넷과 다른 것은?",
+   "choices": [
+    "The man <u>painting</u> the fence is my uncle.",
+    "My hobby is <u>collecting</u> old coins.",
+    "Do you know the girl <u>carrying</u> a big box?",
+    "The dog <u>chasing</u> the cat is fast.",
+    "Look at the clouds <u>floating</u> in the sky."
+   ],
+   "answer": 2,
+   "why": "②의 collecting은 보어로 쓰인 동명사('모으는 것')이고, 나머지는 모두 앞의 명사를 뒤에서 꾸미는 현재분사이다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 과거분사형의 쓰임이 나머지 넷과 다른 것은?",
+   "choices": [
+    "The wallet <u>found</u> on the bus was returned.",
+    "The house was <u>built</u> in the 1970s.",
+    "The songs <u>loved</u> by teenagers change every year.",
+    "The fish <u>caught</u> in this river is safe to eat.",
+    "The money <u>saved</u> over the years paid for the trip."
+   ],
+   "answer": 2,
+   "why": "②의 built는 was와 함께 쓰인 수동태 동사이고, 나머지는 모두 앞의 명사를 뒤에서 꾸미는 과거분사이다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe child ____ from the group was found near the gate an hour later.",
+   "choices": [
+    "separating",
+    "separated",
+    "separates",
+    "to separate",
+    "separate"
+   ],
+   "answer": 2,
+   "why": "아이가 무리에서 '떨어진(분리된)' 수동 관계이므로 과거분사 separated가 알맞다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe reporter asked questions ____ many viewers uncomfortable.",
+   "choices": [
+    "making",
+    "made",
+    "make",
+    "makes",
+    "to making"
+   ],
+   "answer": 1,
+   "why": "질문들이 시청자들을 불편하게 '만드는' 능동 관계이므로 현재분사 making이 questions를 뒤에서 수식한다. 문장의 동사는 asked이다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nFood ____ in the refrigerator too long can lose its flavor.",
+   "choices": [
+    "keeping",
+    "keeps",
+    "kept",
+    "to keep",
+    "keep"
+   ],
+   "answer": 3,
+   "why": "음식은 냉장고에 '보관되는' 수동 관계이므로 과거분사 kept가 알맞다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 분사를 이용하여 같은 뜻의 문장으로 바꿔 쓰시오.\nThe man who is washing the car is my father.",
+   "answer": "The man washing the car is my father.",
+   "why": "'관계대명사＋be동사(who is)'를 생략하면 현재분사 washing이 명사를 뒤에서 수식한다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 분사를 이용하여 같은 뜻의 문장으로 바꿔 쓰시오.\nThe cookies which were baked by Jane sold out quickly.",
+   "answer": "The cookies baked by Jane sold out quickly.",
+   "why": "'관계대명사＋be동사(which were)'를 생략하면 과거분사 baked만 남아 수동의 뜻으로 명사를 수식한다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 분사를 이용하여 같은 뜻의 문장으로 바꿔 쓰시오.\nDo you know the students who are singing in the hallway?",
+   "answer": "Do you know the students singing in the hallway?",
+   "why": "who are를 생략하고 현재분사 singing이 the students를 뒤에서 수식하게 한다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 분사를 이용하여 같은 뜻의 문장으로 바꿔 쓰시오.\nThe books that were donated by alumni filled the library shelves.",
+   "answer": "The books donated by alumni filled the library shelves.",
+   "why": "that were를 생략하면 과거분사 donated가 남아 '기증된'이라는 수동의 뜻으로 명사를 수식한다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장을 분사를 이용하여 한 문장으로 바꿔 쓰시오.\nThe woman is a lawyer. + She is talking on the phone.",
+   "answer": "The woman talking on the phone is a lawyer.",
+   "why": "여자가 '통화하고 있는' 능동 관계이므로 현재분사구 talking on the phone이 the woman을 뒤에서 수식한다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장을 분사를 이용하여 한 문장으로 바꿔 쓰시오.\nI ate the soup. + It was made by my grandmother.",
+   "answer": "I ate the soup made by my grandmother.",
+   "why": "수프는 할머니에 의해 '만들어진' 수동 관계이므로 과거분사구 made by my grandmother가 the soup을 뒤에서 수식한다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장을 분사를 이용하여 한 문장으로 바꿔 쓰시오.\nThe boy is my cousin. + He is flying a drone in the park.",
+   "answer": "The boy flying a drone in the park is my cousin.",
+   "why": "소년이 드론을 '날리고 있는' 능동 관계이므로 현재분사구가 the boy를 뒤에서 수식한다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장을 분사를 이용하여 한 문장으로 바꿔 쓰시오.\nWe visited the temple. + It was built 500 years ago.",
+   "answer": "We visited the temple built 500 years ago.",
+   "why": "절은 500년 전에 '지어진' 수동 관계이므로 과거분사구 built 500 years ago가 the temple을 뒤에서 수식한다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nThe audience (impress) by her voice gave a standing ovation.",
+   "answer": "impressed",
+   "why": "청중이 목소리에 '감명을 받은' 수동 관계이므로 과거분사 impressed로 쓴다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nThe typhoon (move) toward the coast will hit the city tomorrow.",
+   "answer": "moving",
+   "why": "태풍이 해안 쪽으로 '이동하고 있는' 능동 관계이므로 현재분사 moving으로 쓴다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nThe products (display) in the window are on sale.",
+   "answer": "displayed",
+   "why": "상품들은 진열창에 '전시된' 수동 관계이므로 과거분사 displayed로 쓴다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nThe students (prepare) for the festival stayed late at school.",
+   "answer": "preparing",
+   "why": "학생들이 축제를 '준비하는' 능동 관계이므로 현재분사 preparing으로 쓴다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nThe documents (steal) from the office were found in his car.",
+   "answer": "stolen",
+   "why": "서류들은 사무실에서 '도난당한' 수동 관계이므로 과거분사 stolen으로 쓴다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nHis speech (give) at the graduation inspired many students.",
+   "answer": "given",
+   "why": "연설은 졸업식에서 '행해진' 수동 관계이므로 과거분사 given으로 쓴다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nThe salad <u>making</u> with fresh herbs tasted wonderful.",
+   "answer": "made",
+   "why": "샐러드는 신선한 허브로 '만들어진' 수동 관계이므로 과거분사 made로 고친다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nThe player <u>injuring</u> in the first half returned in the second half.",
+   "answer": "injured",
+   "why": "선수가 전반전에 '부상을 당한' 수동 관계이므로 과거분사 injured로 고친다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nThe crowd <u>waited</u> outside the stadium began to sing together.",
+   "answer": "waiting",
+   "why": "군중이 '기다리고 있는' 능동 관계이고 문장의 동사는 began이므로 현재분사 waiting으로 고친다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nThe lecture was so <u>confused</u> that half the students gave up taking notes.",
+   "answer": "confusing",
+   "why": "강의가 혼란을 '주는' 쪽이므로 confusing으로 고친다. confused는 혼란을 느끼는 사람에게 쓴다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nThe fans were (thrill) to meet the singer in person.",
+   "answer": "thrilled",
+   "why": "팬들이 흥분을 '느낀' 것이므로 과거분사형 형용사 thrilled로 쓴다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nWaiting in line for three hours was really (annoy).",
+   "answer": "annoying",
+   "why": "세 시간 줄 서기가 짜증을 '일으키는' 쪽이므로 annoying으로 쓴다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nResearchers ____ the effects of sleep deprivation found that students sleeping less than six hours performed far worse on memory tests.",
+   "choices": [
+    "studying",
+    "studied",
+    "being studied",
+    "to studying",
+    "study"
+   ],
+   "answer": 1,
+   "why": "연구자들이 효과를 '연구하는' 능동 관계이고 목적어가 있으므로 현재분사 studying이 알맞다. 문장의 동사는 found이다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe manuscript, ____ in a monastery for over eight centuries and forgotten by scholars, was finally restored last year.",
+   "choices": [
+    "preserving",
+    "preserved",
+    "preserves",
+    "having preserved",
+    "to preserve"
+   ],
+   "answer": 2,
+   "why": "필사본은 수도원에 '보존되어 온' 수동 관계이므로 과거분사 preserved가 알맞다. 뒤의 forgotten과 병렬을 이루는 것도 단서이다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nConsumers ____ with misleading advertisements are increasingly turning to reviews written by actual buyers.",
+   "choices": [
+    "bombarding",
+    "bombarded",
+    "bombard",
+    "to bombard",
+    "having bombarded"
+   ],
+   "answer": 2,
+   "why": "소비자들이 광고 '세례를 받는' 수동 관계이므로 과거분사 bombarded가 알맞다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe satellite ____ signals back to Earth every ninety minutes allows scientists to track changes in the polar ice.",
+   "choices": [
+    "sending",
+    "sent",
+    "being sent",
+    "to send",
+    "sends"
+   ],
+   "answer": 1,
+   "why": "위성이 신호를 '보내는' 능동 관계이고 목적어 signals가 있으므로 현재분사 sending이 알맞다. 문장의 동사는 allows이다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe safety rules ____ on the wall must be followed by every worker entering the lab.",
+   "choices": [
+    "posting",
+    "posts",
+    "to post",
+    "posted",
+    "being posting"
+   ],
+   "answer": 4,
+   "why": "안전 수칙은 벽에 '게시된' 수동 관계이므로 과거분사 posted가 알맞다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe melody ____ from the old radio reminded her of the summers she had spent at her grandmother's house.",
+   "choices": [
+    "drifting",
+    "drifted",
+    "being drifted",
+    "to drift",
+    "drifts"
+   ],
+   "answer": 1,
+   "why": "멜로디가 라디오에서 '흘러나오는' 능동 관계이므로 현재분사 drifting이 알맞다. 문장의 동사는 reminded이다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe percentage of teenagers ____ to social media before the age of ten has doubled over the past decade.",
+   "choices": [
+    "exposing",
+    "exposes",
+    "exposed",
+    "to expose",
+    "being exposing"
+   ],
+   "answer": 3,
+   "why": "십 대들이 소셜 미디어에 '노출된' 수동 관계이므로 과거분사 exposed가 알맞다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe committee rejected the proposal ____ by the junior researcher without giving any detailed explanation.",
+   "choices": [
+    "submitting",
+    "submits",
+    "to submit",
+    "being submitting",
+    "submitted"
+   ],
+   "answer": 5,
+   "why": "제안서는 연구원에 의해 '제출된' 수동 관계이므로 과거분사 submitted가 알맞다. by가 수동의 단서이다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은?\nThe villagers ①<u>living</u> near the volcano were told to leave, but many of them, ②<u>attached</u> to the land ③<u>farmed</u> by their families for generations, refused to abandon the homes ④<u>filling</u> with memories of their ancestors, which made the evacuation extremely ⑤<u>frustrating</u> for officials.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 4,
+   "why": "집은 추억으로 '가득 채워진' 수동 관계이므로 filling이 아니라 filled가 되어야 한다. be filled with처럼 filled with로 쓴다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은?\nThe scientists ①<u>analyzing</u> the samples ②<u>collected</u> from the ocean floor discovered bacteria ③<u>producing</u> a chemical ④<u>known</u> to break down plastic, a finding ⑤<u>considering</u> a major breakthrough in the fight against pollution.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 5,
+   "why": "그 발견은 대발견으로 '여겨지는' 수동 관계이므로 considering이 아니라 considered가 되어야 한다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은?\nThe refugees ①<u>arriving</u> at the border carried only a few belongings ②<u>packed</u> in small bags, and the aid workers ③<u>greeted</u> them handed out blankets ④<u>donated</u> by citizens ⑤<u>moved</u> by their stories.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "구호 요원들이 난민들을 '맞이하는' 능동 관계이고 그 절의 동사는 handed이므로 greeted가 아니라 greeting이 되어야 한다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은?\nThe documentary ①<u>featuring</u> interviews with workers ②<u>employed</u> at the factory revealed conditions so ③<u>shocked</u> that viewers ④<u>watching</u> the program flooded the company with complaints ⑤<u>demanding</u> immediate change.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "작업 환경이 충격을 '주는' 쪽이므로 shocked가 아니라 shocking이 되어야 한다. so ~ that 구문 속 감정분사 판별 문제이다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은?\nTourists ①<u>drawn</u> to the ancient city walk along streets ②<u>lined</u> with shops ③<u>selling</u> handmade crafts, and those ④<u>interesting</u> in history can join tours ⑤<u>led</u> by local experts.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 4,
+   "why": "사람들이 역사에 흥미를 '느끼는' 것이므로 interesting이 아니라 interested가 되어야 한다. be interested in의 interested와 같은 쓰임이다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은?\nThe novel, ①<u>based</u> on events ②<u>witnessed</u> by the author's grandfather, describes a soldier ③<u>returning</u> home to a village ④<u>destroyed</u> in the war, and critics have called it the most ⑤<u>fascinated</u> war story of the decade.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 5,
+   "why": "이야기가 매혹을 '일으키는' 쪽이므로 fascinated가 아니라 fascinating이 되어야 한다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은?\nThe company's new phone, ①<u>equipped</u> with a camera ②<u>designed</u> by a German firm, disappointed customers ③<u>expecting</u> a longer battery life, and the reviews ④<u>posting</u> online within hours were ⑤<u>devastating</u> for the marketing team.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 4,
+   "why": "리뷰는 온라인에 '게시된' 수동 관계이므로 posting이 아니라 posted가 되어야 한다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 옳은 것은?\nThe letters ①<u>writing</u> by the poet to his wife, ②<u>discovering</u> in an attic last spring, contain lines ③<u>describing</u> the city ④<u>bombing</u> during the war, and reading them is a deeply ⑤<u>moved</u> experience.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "구절이 도시를 '묘사하는' 능동 관계이므로 describing만 옳다. 나머지는 written, discovered, bombed, moving으로 고쳐야 한다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것만을 있는 대로 고른 것은?\nㄱ. The evidence presented at the trial convinced the jury.\nㄴ. The candidate supporting by young voters won the election.\nㄷ. The theme song used in the drama topped the charts.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄱ(제시된)·ㄷ(사용된)은 수동의 과거분사로 옳다. ㄴ은 후보가 '지지를 받는' 수동이므로 supported가 되어야 한다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것만을 있는 대로 고른 것은?\nㄱ. The passengers were annoying by the repeated delays.\nㄴ. The smell of bread baking in the oven filled the house.\nㄷ. The regulations applied to imported goods will change next year.",
+   "choices": [
+    "ㄱ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄴ의 baking은 빵이 '구워지고 있는' 진행의 의미를 나타내는 관용적 현재분사로 옳고, ㄷ의 applied(적용되는)도 옳다. ㄱ은 승객이 짜증을 '느낀' 것이므로 annoyed가 되어야 한다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것만을 있는 대로 고른 것은?\nㄱ. The girl standing between the twins is hard to recognize.\nㄴ. The mission assigning to the team required months of training.\nㄷ. The results were so amazed that the lab repeated the test.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 1,
+   "why": "ㄱ의 standing(서 있는)만 옳다. ㄴ은 임무가 '부여된' 수동이므로 assigned, ㄷ은 결과가 놀라움을 '주는' 쪽이므로 amazing이 되어야 한다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것만을 있는 대로 고른 것은?\nㄱ. The audience listening to the debate remained silent.\nㄴ. The funds raised at the charity event exceeded expectations.\nㄷ. The instructions given by the coach were confusing to the rookies.",
+   "choices": [
+    "ㄱ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 5,
+   "why": "ㄱ listening(듣고 있는, 능동), ㄴ raised(모금된, 수동), ㄷ given(주어진, 수동)과 confusing(혼란을 주는) 모두 올바른 쓰임이다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 틀린 것만을 있는 대로 고른 것은?\nㄱ. The species discovering in the cave has no eyes.\nㄴ. The workers exhausted from the night shift went straight home.\nㄷ. The rumor spreading through the school turned out to be false.",
+   "choices": [
+    "ㄴ",
+    "ㄱ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 종이 '발견된' 수동이므로 discovered가 되어야 한다. ㄴ의 exhausted(지친)와 ㄷ의 spreading(퍼지고 있는, 자동사의 능동)은 옳다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 틀린 것만을 있는 대로 고른 것은?\nㄱ. The message left on my desk was from the principal.\nㄴ. The tourists were fascinating by the northern lights.\nㄷ. The files attaching to the email were too large.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄴ은 관광객이 매혹을 '느낀' 것이므로 fascinated, ㄷ은 파일이 '첨부된' 수동이므로 attached가 되어야 한다. ㄱ의 left(남겨진)는 옳다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 문장의 개수는?\nㄱ. The prisoners escaping from the jail were caught within hours.\nㄴ. The technology developing by the startup attracted investors.\nㄷ. The girl raising her hand knew the answer.\nㄹ. The coins collecting by my uncle are worth a fortune.\nㅁ. The photo attached to the file would not open.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ(탈옥하는, 능동)·ㄷ(손을 드는, 능동)·ㅁ(첨부된, 수동)이 옳다. ㄴ과 ㄹ은 by가 있는 수동 관계이므로 developed, collected가 되어야 한다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 틀린 문장의 개수는?\nㄱ. The suspect questioning by the detective kept silent.\nㄴ. The bakery run by the couple is famous for its croissants.\nㄷ. The employees were satisfying with the new policy.\nㄹ. The glacier melting at an alarming rate worries scientists.\nㅁ. The comments posted under the video were mostly supportive.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 용의자가 '심문을 받는' 수동이므로 questioned, ㄷ은 직원들이 만족을 '느낀' 것이므로 satisfied가 되어야 한다. 틀린 문장은 2개이다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 문장의 개수는?\nㄱ. The alarm installing in the hallway went off at midnight.\nㄴ. The students confused by the schedule change asked for help.\nㄷ. The wind blowing from the north brought colder air.\nㄹ. The trophy displayed in the lobby was won in 1998.\nㅁ. The interview broadcast live drew millions of viewers.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "ㄴ·ㄷ·ㄹ·ㅁ이 옳다(broadcast는 과거분사도 broadcast). ㄱ은 경보기가 '설치된' 수동이므로 installed가 되어야 하며, 옳은 문장은 4개이다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 틀린 문장의 개수는?\nㄱ. The actor starring in the film broke his leg during shooting.\nㄴ. The luggage leaving at the station was never claimed.\nㄷ. The peaches picked this morning taste heavenly.\nㄹ. The article was full of statistics taking from old reports.\nㅁ. The manager was disappointing with the sales figures.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄴ은 짐이 '남겨진' 수동이므로 left, ㄹ은 통계가 '가져와진' 수동이므로 taken, ㅁ은 매니저가 실망을 '느낀' 것이므로 disappointed가 되어야 한다. 틀린 문장은 3개이다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 올바른 문장은?",
+   "choices": [
+    "The theory basing on flawed data was soon abandoned.",
+    "The species threatening by climate change need protection.",
+    "The witnesses called to testify described the scene in detail.",
+    "The debate surrounded the new law continues to divide the country.",
+    "The victims were shocking by the court's decision."
+   ],
+   "answer": 3,
+   "why": "증인들은 증언하도록 '소환된' 수동이므로 called가 옳다. 나머지는 based, threatened, surrounding, shocked로 고쳐야 한다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 문장은?",
+   "choices": [
+    "The bill proposed by the senator faces strong opposition.",
+    "The chemicals released into the river poisoned the fish.",
+    "The message encoded in the file took days to crack.",
+    "The scholars studying ancient texts gathered in Rome.",
+    "The athletes competed in the marathon trained for years."
+   ],
+   "answer": 5,
+   "why": "선수들이 마라톤에 '참가하는' 능동 관계이고 문장의 동사는 trained이므로 competed가 아니라 competing이 되어야 한다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장들 중 어법상 옳은 것은?",
+   "choices": [
+    "The silence following his announcement was deafening.",
+    "It was an exhausted journey across the desert.",
+    "The crew felt frustrating after the third failed launch.",
+    "The passengers trapping in the elevator called for help.",
+    "The evidence collecting at the scene proved his innocence."
+   ],
+   "answer": 1,
+   "why": "침묵이 발표를 '뒤따르는' 능동이므로 following이 옳다. 나머지는 exhausting, frustrated, trapped, collected로 고쳐야 한다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장들 중 어법상 틀린 것은?",
+   "choices": [
+    "The novel banned in several countries became a bestseller.",
+    "The scent of flowers drifting through the window woke her gently.",
+    "The employees affected by the layoffs will receive support.",
+    "The paintings stole from the museum have never been recovered.",
+    "The girl chosen for the lead role practiced day and night."
+   ],
+   "answer": 4,
+   "why": "그림들은 박물관에서 '도난당한' 수동 관계이므로 stole이 아니라 과거분사 stolen이 되어야 한다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 -ing 형태의 쓰임이 나머지 넷과 다른 것은?",
+   "choices": [
+    "The train <u>approaching</u> the platform slowed down.",
+    "The kids were <u>building</u> sandcastles on the beach.",
+    "The man <u>leaning</u> against the wall looked suspicious.",
+    "The smoke <u>rising</u> from the chimney signaled dinner time.",
+    "The dog <u>guarding</u> the warehouse barked all night."
+   ],
+   "answer": 2,
+   "why": "②의 building은 were와 함께 쓰인 과거진행형 동사이고, 나머지는 모두 앞의 명사를 뒤에서 꾸미는 현재분사이다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현끼리 바르게 짝지은 것은?\n(A) The refugees [fleeing / fled] the war crossed the mountains on foot.\n(B) The supplies [sending / sent] by international agencies arrived too late.\n(C) The situation was deeply [depressing / depressed] to the volunteers.",
+   "choices": [
+    "fleeing - sending - depressing",
+    "fleeing - sent - depressed",
+    "fled - sent - depressing",
+    "fleeing - sent - depressing",
+    "fled - sending - depressed"
+   ],
+   "answer": 4,
+   "why": "(A) 난민들이 전쟁을 '피해 달아나는' 능동 → fleeing, (B) 물자는 '보내진' 수동 → sent, (C) 상황이 우울함을 '주는' 쪽 → depressing.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현끼리 바르게 짝지은 것은?\n(A) The candidate [interviewing / interviewed] for the position seemed overqualified.\n(B) The questions [asking / asked] by the panel focused on teamwork.\n(C) Anyone [hoping / hoped] to apply must submit a portfolio.",
+   "choices": [
+    "interviewing - asking - hoping",
+    "interviewed - asked - hoping",
+    "interviewed - asking - hoped",
+    "interviewing - asked - hoping",
+    "interviewed - asked - hoped"
+   ],
+   "answer": 2,
+   "why": "(A) 후보자는 면접을 '받는' 수동 → interviewed, (B) 질문은 패널에 의해 '던져진' 수동 → asked, (C) 지원하기를 '바라는' 능동 → hoping.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현끼리 바르게 짝지은 것은?\n(A) The glass [containing / contained] the chemical must be sealed.\n(B) The instructions [printing / printed] on the label warn against heat.\n(C) The workers [handling / handled] the material wear special gloves.",
+   "choices": [
+    "containing - printing - handling",
+    "containing - printed - handled",
+    "contained - printed - handling",
+    "containing - printed - handling",
+    "contained - printing - handled"
+   ],
+   "answer": 4,
+   "why": "(A) 유리병이 화학물질을 '담고 있는' 능동(목적어 있음) → containing, (B) 지시문은 '인쇄된' 수동 → printed, (C) 작업자들이 재료를 '다루는' 능동 → handling.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThe constant noise from the construction site was so ____ that residents filed a complaint. (짜증 나게 하는)",
+   "choices": [
+    "irritating",
+    "irritated",
+    "irritate",
+    "irritates",
+    "to irritate"
+   ],
+   "answer": 1,
+   "why": "소음이 짜증을 '일으키는' 쪽이므로 현재분사형 형용사 irritating이 알맞다. irritated는 짜증을 느끼는 사람에게 쓴다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말로 바르게 짝지어진 것은?\nHis acceptance speech, (A)____ with humor and gratitude, left the audience deeply (B)____.",
+   "choices": [
+    "filling - touching",
+    "filled - touched",
+    "filling - touched",
+    "filled - touching",
+    "fills - touched"
+   ],
+   "answer": 2,
+   "why": "(A) 연설이 유머와 감사로 '채워진' 수동 → filled, (B) 청중이 감동을 '느낀' 상태 → touched.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 관계대명사를 이용해 바꿔 쓴 것으로 알맞은 것은?\nThe fossils unearthed at the site belong to an unknown species.",
+   "choices": [
+    "The fossils which unearthed at the site belong to an unknown species.",
+    "The fossils which were unearthed at the site belong to an unknown species.",
+    "The fossils which they unearthed at the site belongs to an unknown species.",
+    "The fossils were unearthed at the site belong to an unknown species.",
+    "The fossils which unearthing at the site belong to an unknown species."
+   ],
+   "answer": 2,
+   "why": "과거분사 후치 수식은 '관계대명사＋be동사＋과거분사'로 풀어 쓴다. 화석이 '발굴된' 수동이므로 which were unearthed가 알맞다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 같은 것은?\nThe equipment stored in the basement was damaged by the flood.",
+   "choices": [
+    "The equipment which stored in the basement was damaged by the flood.",
+    "The equipment which was storing in the basement was damaged by the flood.",
+    "The equipment which was stored in the basement was damaged by the flood.",
+    "The equipment stored the basement and was damaged by the flood.",
+    "The equipment which stores in the basement was damaged by the flood."
+   ],
+   "answer": 3,
+   "why": "stored는 '보관된'이라는 수동의 과거분사이므로 which was stored로 풀어 쓸 수 있다. ①은 능동의 동사 stored가 되어 목적어가 없으므로 틀리다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은?",
+   "choices": [
+    "The password <u>required</u> for access changes every month.",
+    "The chef <u>preparing</u> the banquet trained in Paris.",
+    "The buildings <u>surrounding</u> the plaza date back to the 1800s.",
+    "The team was <u>encouraging</u> by the coach's speech.",
+    "The documents <u>shredded</u> by mistake contained key evidence."
+   ],
+   "answer": 4,
+   "why": "팀이 연설에 격려를 '받은' 것이므로 encouraging이 아니라 encouraged가 되어야 한다. by the coach's speech가 수동의 단서이다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 다섯 부분 중 어법상 옳은 것은?",
+   "choices": [
+    "The jewels <u>hiding</u> in the cellar were found by workers.",
+    "The soldiers <u>wounding</u> in the battle were flown home.",
+    "The satellite <u>launching</u> last month stopped responding.",
+    "The lecture was <u>fascinated</u> from beginning to end.",
+    "The audience <u>invited</u> to the preview gave mixed reactions."
+   ],
+   "answer": 5,
+   "why": "청중은 시사회에 '초대된' 수동이므로 invited가 옳다. 나머지는 hidden, wounded, launched, fascinating으로 고쳐야 한다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 문장의 개수는?\nㄱ. The scenery seen from the summit was breathtaking.\nㄴ. The tone of the letter was so threatened that she called the police.\nㄷ. The dancers performing tonight flew in from New York.\nㄹ. The error hidden in the code crashed the entire system.\nㅁ. The fans were thrilled to hear about the reunion tour.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "ㄱ(보이는, 수동)·ㄷ(공연하는, 능동)·ㄹ(숨겨진, 수동)·ㅁ(감격을 느낀)이 옳다. ㄴ은 어조가 위협을 '주는' 쪽이므로 threatening이 되어야 한다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "두 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· The costs ____ in the project exceeded the budget.\n· The people ____ in the accident were unhurt.",
+   "choices": [
+    "involving",
+    "involved",
+    "involves",
+    "to involve",
+    "involve"
+   ],
+   "answer": 2,
+   "why": "비용과 사람들 모두 '관련된'이라는 수동·상태의 의미이므로 과거분사 involved가 공통으로 들어간다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Why was the flight delayed?\nB: There was a problem with the fuel line, and the passengers ____ on board had to wait two hours.",
+   "choices": [
+    "keeping",
+    "keep",
+    "to keep",
+    "kept",
+    "being keep"
+   ],
+   "answer": 4,
+   "why": "승객들이 기내에 '붙들려 있게 된' 수동 관계이므로 과거분사 kept가 알맞다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n이 지역에서 재배되는 커피의 대부분은 유럽으로 수출된다.",
+   "choices": [
+    "Most of the coffee grows in this region is exported to Europe.",
+    "Most of the coffee grown in this region is exported to Europe.",
+    "Most of the coffee growing in this region are exported to Europe.",
+    "Most of the coffee to grow in this region is exported to Europe.",
+    "Most of the coffee is grown in this region is exported to Europe."
+   ],
+   "answer": 2,
+   "why": "커피는 '재배되는' 수동 관계이므로 과거분사 grown이 알맞다. ③은 수 일치(are)도 틀렸고, ①·⑤는 동사가 두 개가 되어 틀리다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n취재진에 둘러싸인 그 선수는 침착함을 유지했다.",
+   "choices": [
+    "The player surrounding by reporters stayed calm.",
+    "The player was surrounded by reporters stayed calm.",
+    "The player surrounded by reporters stayed calm.",
+    "The surrounded player by reporters stayed calm.",
+    "The player to surround by reporters stayed calm."
+   ],
+   "answer": 3,
+   "why": "선수가 '둘러싸인' 수동 관계이므로 과거분사 surrounded가 뒤에서 수식한다. ②는 동사가 두 개(was, stayed)라서 틀리다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것만을 있는 대로 고른 것은?\nㄱ. The amount of data stored on the server doubled last year.\nㄴ. The tourists watching the sunrise stood in complete silence.\nㄷ. The conclusion drawing from the study surprised the researchers.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄱ stored(저장된, 수동)와 ㄴ watching(보고 있는, 능동)은 옳다. ㄷ은 결론이 '도출된' 수동이므로 drawn이 되어야 한다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 분사구로 바꾸어 문장 전체를 다시 쓰시오.\nThe scientists <u>who were awarded the Nobel Prize</u> donated the money to charity.",
+   "answer": "The scientists awarded the Nobel Prize donated the money to charity.",
+   "why": "'관계대명사＋be동사(who were)'를 생략하면 과거분사 awarded가 수동의 뜻으로 명사를 뒤에서 수식한다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 분사구로 바꾸어 문장 전체를 다시 쓰시오.\nThe girl <u>who is playing the cello on the stage</u> is only twelve years old.",
+   "answer": "The girl playing the cello on the stage is only twelve years old.",
+   "why": "who is를 생략하면 현재분사 playing이 능동의 뜻으로 the girl을 뒤에서 수식한다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장을 분사를 이용하여 한 문장으로 쓰시오. (관계대명사 사용 금지)\nThe bridge collapsed last night. + It was built over a century ago.",
+   "answer": "The bridge built over a century ago collapsed last night.",
+   "why": "다리는 '지어진' 수동 관계이므로 과거분사구 built over a century ago가 주어 the bridge를 뒤에서 수식하고, 동사는 collapsed 하나만 남는다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장을 분사를 이용하여 한 문장으로 쓰시오. (관계대명사 사용 금지)\nThe woman is my professor. + She is giving a lecture on climate change.",
+   "answer": "The woman giving a lecture on climate change is my professor.",
+   "why": "여자가 강연을 '하고 있는' 능동 관계이므로 현재분사구 giving a lecture on climate change가 주어를 뒤에서 수식한다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장을 분사를 이용하여 한 문장으로 쓰시오. (관계대명사 사용 금지)\nThe paintings were sold for millions. + They were stolen from the gallery in 1990.",
+   "answer": "The paintings stolen from the gallery in 1990 were sold for millions.",
+   "why": "그림들은 '도난당한' 수동 관계이므로 과거분사구 stolen from the gallery in 1990이 주어를 뒤에서 수식한다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 모두 한 번씩만 사용하여 우리말에 맞게 문장을 완성하시오.\n그 화재로 파손된 서류들은 복구될 수 없다.\n(the fire, the documents, in, damaged, cannot, restored, be)",
+   "answer": "The documents damaged in the fire cannot be restored.",
+   "why": "서류가 '파손된' 수동 관계이므로 과거분사구 damaged in the fire가 주어를 뒤에서 수식하고, 동사는 cannot be restored이다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 모두 한 번씩만 사용하여 우리말에 맞게 문장을 완성하시오.\n경찰을 기다리고 있는 목격자들은 초조해 보였다.\n(for, waiting, the witnesses, the police, nervous, looked)",
+   "answer": "The witnesses waiting for the police looked nervous.",
+   "why": "목격자들이 '기다리고 있는' 능동 관계이므로 현재분사구 waiting for the police가 주어를 뒤에서 수식한다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 모두 한 번씩만 사용하여 우리말에 맞게 문장을 완성하시오.\n그 회의에서 논의된 계획은 비밀로 유지되었다.\n(discussed, the plan, at, the meeting, kept, was, secret)",
+   "answer": "The plan discussed at the meeting was kept secret.",
+   "why": "계획이 '논의된' 수동 관계이므로 과거분사구 discussed at the meeting이 주어를 뒤에서 수식한다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "어법상 틀린 부분을 찾아 바르게 고쳐 문장 전체를 다시 쓰시오.\nThe technology introducing at the fair drew huge crowds.",
+   "answer": "The technology introduced at the fair drew huge crowds.",
+   "why": "기술은 박람회에서 '소개된' 수동 관계이므로 introducing을 과거분사 introduced로 고친다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "어법상 틀린 부분을 찾아 바르게 고쳐 문장 전체를 다시 쓰시오.\nThe volunteers helped the children affecting by the earthquake.",
+   "answer": "The volunteers helped the children affected by the earthquake.",
+   "why": "아이들이 지진의 피해를 '입은' 수동 관계이므로 affecting을 affected로 고친다. by the earthquake가 단서이다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "어법상 틀린 부분을 찾아 바르게 고쳐 문장 전체를 다시 쓰시오.\nThe results of the study were deeply disappointed to the research team.",
+   "answer": "The results of the study were deeply disappointing to the research team.",
+   "why": "결과가 실망을 '주는' 쪽이므로 disappointed를 disappointing으로 고친다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "어법상 틀린 부분을 찾아 분사를 이용해 한 단어만 고쳐 문장 전체를 다시 쓰시오.\nThe tower stood in the center of the city was built in 1889.",
+   "answer": "The tower standing in the center of the city was built in 1889.",
+   "why": "문장의 동사는 was built이므로 stood를 현재분사 standing으로 고쳐 the tower를 수식하게 한다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 어법에 맞게 한 단어로 바꿔 쓰시오.\nThe candidates (select) for the final interview will be notified by email.",
+   "answer": "selected",
+   "why": "후보자들이 최종 면접에 '선발된' 수동 관계이므로 과거분사 selected로 쓴다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 어법에 맞게 한 단어로 바꿔 쓰시오.\nThe rumors (go) around the school upset the teachers.",
+   "answer": "going",
+   "why": "소문이 학교에 '돌고 있는' 능동 관계이므로 현재분사 going으로 쓴다. 문장의 동사는 upset이다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 어법에 맞게 한 단어로 바꿔 쓰시오.\nThe refugees (exhaust) from the long journey fell asleep immediately.",
+   "answer": "exhausted",
+   "why": "난민들이 여정으로 '지친' 상태이므로 과거분사 exhausted로 쓴다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 어법에 맞게 한 단어로 바꿔 쓰시오.\nThe passengers (annoy) by the constant delays demanded a refund.",
+   "answer": "annoyed",
+   "why": "승객들이 짜증을 '느끼게 된' 수동 관계이므로 과거분사 annoyed로 쓴다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 같은 뜻이 되도록 빈칸에 알맞은 한 단어를 쓰시오.\nThe cars which are produced in this factory are shipped worldwide.\n= The cars ____ in this factory are shipped worldwide.",
+   "answer": "produced",
+   "why": "'관계대명사＋be동사(which are)'를 생략하면 과거분사 produced만 남아 수동의 뜻으로 명사를 수식한다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 같은 뜻이 되도록 빈칸에 알맞은 한 단어를 쓰시오.\nPeople who hope to attend the concert must buy tickets in advance.\n= People ____ to attend the concert must buy tickets in advance.",
+   "answer": "hoping",
+   "why": "who hope의 능동 의미를 살려 현재분사 hoping으로 바꾸면 people을 뒤에서 수식한다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "어법상 틀린 부분을 찾아 바르게 고쳐 문장 전체를 다시 쓰시오.\nThe ending of the film was so surprised that nobody left their seats.",
+   "answer": "The ending of the film was so surprising that nobody left their seats.",
+   "why": "결말이 놀라움을 '주는' 쪽이므로 surprised를 surprising으로 고친다. surprised는 놀란 사람에게 쓴다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 모두 한 번씩만 사용하여 우리말에 맞게 문장을 완성하시오.\n그 유적지를 방문하는 관광객의 수가 증가하고 있다.\n(visiting, the number, tourists, the site, of, increasing, is)",
+   "answer": "The number of tourists visiting the site is increasing.",
+   "why": "관광객들이 유적지를 '방문하는' 능동 관계이므로 현재분사구 visiting the site가 tourists를 뒤에서 수식하고, 주어 the number에 맞춰 동사는 is increasing이다.",
+   "no": 200
+  }
+ ]
+}

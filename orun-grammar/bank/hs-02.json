@@ -1,0 +1,2637 @@
+{
+ "id": "hs-02",
+ "grade": "고등",
+ "name": "관계부사·복합관계사",
+ "points": [
+  "관계부사 선행사 생략",
+  "how와 the way",
+  "복합관계부사 however 어순"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? This is the town ____ I was born.",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "what"
+   ],
+   "answer": 2,
+   "why": "선행사 the town이 장소이고 뒤의 절(I was born)이 완전하므로 관계부사 where가 알맞다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것을 고르시오. Do you know the reason ____ Mia is angry?",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "what"
+   ],
+   "answer": 3,
+   "why": "선행사 the reason(이유) 뒤에 완전한 절이 오므로 관계부사 why를 쓴다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? I remember the day ____ we first met.",
+   "choices": [
+    "where",
+    "when",
+    "why",
+    "how",
+    "what"
+   ],
+   "answer": 2,
+   "why": "선행사 the day가 시간이므로 관계부사 when이 알맞다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말을 고르시오. Tell me ____ you solved the puzzle. (방법)",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "what"
+   ],
+   "answer": 4,
+   "why": "'방법'을 나타내므로 how가 알맞다. how는 선행사 the way 없이 단독으로 쓴다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 알맞은 말은? Summer is the season ____ many people travel.",
+   "choices": [
+    "why",
+    "how",
+    "where",
+    "when",
+    "what"
+   ],
+   "answer": 4,
+   "why": "선행사 the season이 시간이므로 관계부사 when을 쓴다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 관계사는? This is the hotel ____ we stayed last summer.",
+   "choices": [
+    "when",
+    "why",
+    "where",
+    "how",
+    "what"
+   ],
+   "answer": 3,
+   "why": "선행사 the hotel이 장소이고 뒤 절이 완전하므로 where가 알맞다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말은? Nobody knows the reason ____ the singer left the band.",
+   "choices": [
+    "how",
+    "where",
+    "when",
+    "why",
+    "what"
+   ],
+   "answer": 4,
+   "why": "선행사 the reason(이유) 뒤에는 관계부사 why를 쓴다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것을 고르면? 2002 was the year ____ Korea hosted the World Cup.",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "which"
+   ],
+   "answer": 1,
+   "why": "선행사 the year가 시간이므로 when. hosted의 목적어(the World Cup)가 이미 있어 which는 들어갈 자리가 없다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 옳은 것은? A library is a place ____ you should be quiet.",
+   "choices": [
+    "which",
+    "when",
+    "why",
+    "where",
+    "how"
+   ],
+   "answer": 4,
+   "why": "선행사 a place(장소) 뒤에 완전한 절이 오므로 관계부사 where가 알맞다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은? Monday is the day ____ the museum is closed.",
+   "choices": [
+    "where",
+    "why",
+    "when",
+    "how",
+    "which"
+   ],
+   "answer": 3,
+   "why": "선행사 the day(시간) → 관계부사 when.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 관계부사는? That is the restaurant ____ my uncle works.",
+   "choices": [
+    "why",
+    "which",
+    "when",
+    "how",
+    "where"
+   ],
+   "answer": 5,
+   "why": "선행사 the restaurant(장소) 뒤에 완전한 절(my uncle works)이 오므로 where.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? I want to know ____ this machine works. (방법)",
+   "choices": [
+    "what",
+    "when",
+    "why",
+    "how",
+    "where"
+   ],
+   "answer": 4,
+   "why": "'이 기계가 작동하는 방법'이므로 how가 알맞다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? ____ hard you try, you cannot please everyone.",
+   "choices": [
+    "Whatever",
+    "Whoever",
+    "However",
+    "Whenever",
+    "Wherever"
+   ],
+   "answer": 3,
+   "why": "뒤에 부사 hard가 이어지므로 'however+부사+주어+동사(아무리 ~해도)' 구문의 However가 알맞다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 복합관계부사는? ____ you go, I will follow you. (네가 어디에 가더라도)",
+   "choices": [
+    "However",
+    "Whatever",
+    "Whenever",
+    "Wherever",
+    "Whichever"
+   ],
+   "answer": 4,
+   "why": "'어디에 ~하더라도'는 wherever(= no matter where)로 나타낸다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말을 고르면? ____ I visit my grandmother, she makes cookies for me. (~할 때마다)",
+   "choices": [
+    "Whenever",
+    "Wherever",
+    "However",
+    "Whatever",
+    "Whoever"
+   ],
+   "answer": 1,
+   "why": "'~할 때마다'는 whenever(= every time)로 나타낸다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말은? You may order ____ you want from the menu. (무엇이든지)",
+   "choices": [
+    "however",
+    "whoever",
+    "whenever",
+    "wherever",
+    "whatever"
+   ],
+   "answer": 5,
+   "why": "want의 목적어가 빠진 불완전한 절이므로 '무엇이든지'의 whatever가 알맞다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것을 고르시오. ____ breaks this rule will be punished. (누구든지)",
+   "choices": [
+    "Whoever",
+    "Whatever",
+    "Whichever",
+    "However",
+    "Wherever"
+   ],
+   "answer": 1,
+   "why": "breaks의 주어 역할을 하며 '~하는 사람은 누구든지'를 뜻하는 Whoever가 알맞다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 알맞은 말을 고르면? Take ____ of the two umbrellas you prefer.",
+   "choices": [
+    "however",
+    "whenever",
+    "whichever",
+    "whoever",
+    "wherever"
+   ],
+   "answer": 3,
+   "why": "정해진 둘 중에서 '어느 것이든'을 고르는 것이므로 whichever가 알맞다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은? ____ tired he was, he never skipped soccer practice.",
+   "choices": [
+    "Whatever",
+    "However",
+    "Whenever",
+    "Wherever",
+    "Whichever"
+   ],
+   "answer": 2,
+   "why": "형용사 tired 앞이므로 'however+형용사+주어+동사(아무리 ~해도)'의 However가 알맞다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 복합관계부사는? Sit ____ you like; every seat is empty. (어디든지)",
+   "choices": [
+    "whenever",
+    "however",
+    "whatever",
+    "wherever",
+    "whichever"
+   ],
+   "answer": 4,
+   "why": "'네가 좋아하는 어디든지'이므로 wherever.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? ____ busy she is, she always answers my calls.",
+   "choices": [
+    "Whenever",
+    "Whatever",
+    "Wherever",
+    "Whoever",
+    "However"
+   ],
+   "answer": 5,
+   "why": "형용사 busy가 바로 뒤에 오므로 However busy she is(아무리 바빠도)가 된다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말을 고르시오. Call me ____ you need help. (언제든지)",
+   "choices": [
+    "whenever",
+    "wherever",
+    "however",
+    "whatever",
+    "whichever"
+   ],
+   "answer": 1,
+   "why": "'도움이 필요한 언제든지'이므로 whenever(= at any time when).",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 들어갈 수 없는 것은? Tell me ____ you made this soup.",
+   "choices": [
+    "how",
+    "the way",
+    "the way that",
+    "the way in which",
+    "the way how"
+   ],
+   "answer": 5,
+   "why": "the way와 how는 나란히 함께 쓸 수 없다. how, the way, the way that, the way in which는 모두 가능하다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "This is the way how I study English.",
+    "I remember the house where I grew up.",
+    "Tell me the reason when you were late.",
+    "However you are tired, finish your homework.",
+    "Sunday is the day where we go to church."
+   ],
+   "answer": 2,
+   "why": "장소 선행사 the house + 완전한 절이므로 ②가 옳다. ①the way how 불가, ③이유는 why, ④However tired you are 어순, ⑤요일은 when.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은?",
+   "choices": [
+    "This is the city where I met my best friend.",
+    "I will never forget the moment when I won the prize.",
+    "That's why she was late for school.",
+    "I like the way how he talks.",
+    "Whenever I see this photo, I smile."
+   ],
+   "answer": 4,
+   "why": "the way와 how는 함께 쓸 수 없으므로 the way 또는 how 하나만 써야 한다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "어법상 옳지 않은 문장을 고르시오.",
+   "choices": [
+    "However cold it is, he takes a walk every day.",
+    "Wherever you are, I'll find you.",
+    "Whoever comes first will get the ticket.",
+    "However you are busy, you should eat lunch.",
+    "Whatever happens, stay calm."
+   ],
+   "answer": 4,
+   "why": "however 뒤에는 형용사/부사가 바로 와야 한다. However busy you are가 옳은 어순이다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?",
+   "choices": [
+    "This is the park <u>where</u> we played badminton.",
+    "I know the reason <u>why</u> he cried.",
+    "Spring is the season <u>when</u> flowers bloom.",
+    "This is the way <u>how</u> she saved money.",
+    "Do you know <u>how</u> birds fly?"
+   ],
+   "answer": 4,
+   "why": "the way how는 불가능한 조합이다. This is the way she saved money 또는 This is how she saved money로 써야 한다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 어색한 것은?",
+   "choices": [
+    "<u>Whenever</u> you come, you are welcome.",
+    "<u>However</u> high the wall is, we can climb it.",
+    "You may eat <u>whatever</u> is on the table.",
+    "<u>Whoever</u> wins the game will get a medal.",
+    "<u>However</u> you go fast, you can't catch the train."
+   ],
+   "answer": 5,
+   "why": "however 바로 뒤에 부사가 와야 하므로 However fast you go가 옳은 어순이다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 전치사는? I can't forget the day ____ which I passed the exam.",
+   "choices": [
+    "in",
+    "on",
+    "at",
+    "for",
+    "of"
+   ],
+   "answer": 2,
+   "why": "날짜(the day) 앞에는 전치사 on을 쓴다. on which = when.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 전치사를 고르시오. This is the house ____ which the famous poet lived.",
+   "choices": [
+    "on",
+    "in",
+    "at",
+    "for",
+    "to"
+   ],
+   "answer": 2,
+   "why": "집 '안에서' 살았으므로 in which(= where)가 알맞다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 전치사는? Tell me the reason ____ which she refused the offer.",
+   "choices": [
+    "in",
+    "on",
+    "at",
+    "for",
+    "by"
+   ],
+   "answer": 4,
+   "why": "이유를 나타내는 전치사 for를 써서 for which(= why)가 된다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 전치사는? Spring is the season ____ which cherry blossoms bloom.",
+   "choices": [
+    "on",
+    "at",
+    "in",
+    "for",
+    "with"
+   ],
+   "answer": 3,
+   "why": "계절 앞에는 전치사 in을 쓴다. in which = when.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 전치사를 고르면? That is the way ____ which he solved the problem.",
+   "choices": [
+    "on",
+    "at",
+    "for",
+    "with",
+    "in"
+   ],
+   "answer": 5,
+   "why": "the way in which는 the way(that)와 같은 뜻으로, 방법을 나타낼 때 전치사 in을 쓴다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 전치사 하나를 고르시오. Noon is the time ____ which we usually have lunch.",
+   "choices": [
+    "at",
+    "on",
+    "in",
+    "for",
+    "by"
+   ],
+   "answer": 1,
+   "why": "시각(the time) 앞에는 전치사 at을 쓴다. at which = when.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은? A: Do you remember ____ we first met? B: Of course. It was in the school library, near the window.",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "what"
+   ],
+   "answer": 2,
+   "why": "B가 장소(도서관)로 대답하고 있으므로 where가 알맞다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은? A: ____ did you learn to swim? B: I watched online videos and practiced every day.",
+   "choices": [
+    "When",
+    "Where",
+    "Why",
+    "How",
+    "What"
+   ],
+   "answer": 4,
+   "why": "B가 배운 '방법'을 설명하고 있으므로 How가 알맞다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은? •I remember the day ____ we went camping. •Tell me ____ you will arrive.",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "what"
+   ],
+   "answer": 1,
+   "why": "첫 문장은 시간 선행사 the day 뒤의 관계부사 when, 둘째 문장은 '언제 도착할지'의 when이다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 들어갈 말을 고르시오. •Do you know the reason ____ the sky is blue? •That's ____ I like her.",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "what"
+   ],
+   "answer": 3,
+   "why": "둘 다 이유를 나타내는 why. 두 번째 문장은 선행사 the reason이 생략된 형태이다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 알맞은 것은? •The gym is the place ____ I exercise every day. •This is ____ Kevin parked his car.",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "what"
+   ],
+   "answer": 2,
+   "why": "둘 다 장소의 where. 두 번째 문장은 선행사 the place가 생략되어 where만 남은 형태이다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은? A: Why were you late this morning? B: I missed the bus. That's ____ I was late.",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "what"
+   ],
+   "answer": 3,
+   "why": "버스를 놓친 것이 지각의 '이유'이므로 That's why(그것이 ~한 이유이다)가 알맞다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "두 문장의 의미가 같도록 빈칸에 알맞은 것은? However rich you are, you cannot buy time. = ____ rich you are, you cannot buy time.",
+   "choices": [
+    "No matter how",
+    "No matter what",
+    "No matter who",
+    "No matter when",
+    "No matter where"
+   ],
+   "answer": 1,
+   "why": "however+형용사 = no matter how+형용사(아무리 ~해도)이다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "의미가 같도록 빈칸에 알맞은 것을 고르시오. Whatever happens, don't give up. = ____ happens, don't give up.",
+   "choices": [
+    "No matter how",
+    "No matter what",
+    "No matter who",
+    "No matter when",
+    "No matter where"
+   ],
+   "answer": 2,
+   "why": "whatever(무슨 일이 ~하더라도) = no matter what.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 부분과 바꿔 쓸 수 있는 것은? <u>Whenever</u> I hear this song, I think of you.",
+   "choices": [
+    "Every time",
+    "Everywhere",
+    "Anything",
+    "Every way",
+    "Anyone"
+   ],
+   "answer": 1,
+   "why": "whenever(~할 때마다)는 every time으로 바꿔 쓸 수 있다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "의미가 같도록 할 때 빈칸에 알맞은 것은? Wherever you go, remember your family. = No matter ____ you go, remember your family.",
+   "choices": [
+    "how",
+    "what",
+    "where",
+    "when",
+    "which"
+   ],
+   "answer": 3,
+   "why": "wherever = no matter where(어디에 ~하더라도).",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "두 문장을 한 문장으로 바르게 연결한 것은? I remember the day. + We met on that day.",
+   "choices": [
+    "I remember the day when we met.",
+    "I remember the day where we met.",
+    "I remember the day why we met.",
+    "I remember the day how we met.",
+    "I remember the day which we met."
+   ],
+   "answer": 1,
+   "why": "시간 선행사 the day이므로 관계부사 when. which를 쓰려면 on which처럼 전치사가 있어야 한다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "두 문장을 한 문장으로 바르게 만든 것은? This is the house. + My aunt lives in the house.",
+   "choices": [
+    "This is the house which my aunt lives.",
+    "This is the house where my aunt lives.",
+    "This is the house where my aunt lives in.",
+    "This is the house when my aunt lives.",
+    "This is the house how my aunt lives."
+   ],
+   "answer": 2,
+   "why": "장소 선행사이므로 where. where는 in the house를 대신하므로 뒤에 전치사 in을 다시 쓰면 안 된다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 네가 아무리 바쁘더라도, 아침을 먹어라.",
+   "choices": [
+    "However you are busy, eat breakfast.",
+    "However busy are you, eat breakfast.",
+    "However busy you are, eat breakfast.",
+    "Whatever busy you are, eat breakfast.",
+    "How busy you are, eat breakfast."
+   ],
+   "answer": 3,
+   "why": "'아무리 ~해도'는 however+형용사+주어+동사 어순이다. 도치(are you)나 However you are busy는 틀린 어순이다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것을 고르시오. 이곳이 내가 자란 마을이다.",
+   "choices": [
+    "This is the town when I grew up.",
+    "This is the town which I grew up.",
+    "This is the town where I grew up.",
+    "This is the town where I grew up in.",
+    "This is the town how I grew up."
+   ],
+   "answer": 3,
+   "why": "장소 선행사 the town + 완전한 절이므로 where. where 뒤에 전치사 in을 다시 쓰지 않는다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 관계부사를 한 단어로 쓰시오. This is the café ____ I often study.",
+   "answer": "where",
+   "why": "선행사 the café가 장소이고 뒤 절이 완전하므로 관계부사 where를 쓴다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 관계부사를 쓰시오. I can't forget the day ____ I first rode a bike.",
+   "answer": "when",
+   "why": "시간 선행사 the day 뒤에는 관계부사 when을 쓴다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 관계부사 한 단어를 쓰시오. Tell me the reason ____ you didn't come yesterday.",
+   "answer": "why",
+   "why": "이유 선행사 the reason 뒤에는 관계부사 why를 쓴다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 한 단어로 고쳐 쓰시오. This is <u>the way how</u> she makes pasta.",
+   "answer": "how",
+   "why": "the way와 how는 함께 쓸 수 없으므로 둘 중 하나만 남긴다. 한 단어로 쓰면 how이다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "어법상 틀린 부분을 바로잡아 문장 전체를 다시 쓰시오. However you are tired, you must finish this.",
+   "answer": "However tired you are, you must finish this.",
+   "why": "however 뒤에는 형용사가 바로 와서 'However tired you are(아무리 피곤해도)' 어순이 되어야 한다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "두 문장이 같은 뜻이 되도록 빈칸에 한 단어를 쓰시오. No matter how cold it is, he goes jogging. = ____ cold it is, he goes jogging.",
+   "answer": "However",
+   "alt": [
+    "however"
+   ],
+   "why": "no matter how = however(아무리 ~해도).",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 복합관계부사를 한 단어로 쓰시오. You may leave ____ you want to. (네가 원하는 언제든지)",
+   "answer": "whenever",
+   "why": "'언제든지'는 whenever(= at any time when)로 쓴다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. You can park ____ you want. (네가 원하는 어디든지)",
+   "answer": "wherever",
+   "why": "'어디든지'는 wherever(= at any place where)로 쓴다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 복합관계대명사를 한 단어로 쓰시오. ____ told you that was wrong. (그것을 네게 말한 사람이 누구든지)",
+   "answer": "Whoever",
+   "alt": [
+    "whoever"
+   ],
+   "why": "'~한 사람은 누구든지'는 whoever(= anyone who)로 쓰며, told의 주어 역할을 한다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "두 문장을 한 문장으로 만들 때 빈칸에 알맞은 관계부사를 쓰시오. I remember the year. + My brother was born in that year. → I remember the year ____ my brother was born.",
+   "answer": "when",
+   "why": "in that year(시간)를 대신하므로 관계부사 when을 쓴다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "두 문장을 한 문장으로 만들 때 빈칸에 알맞은 말을 한 단어로 쓰시오. This is the stadium. + We watched the final there. → This is the stadium ____ we watched the final.",
+   "answer": "where",
+   "why": "장소 부사 there를 대신하므로 관계부사 where를 쓴다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "두 문장을 한 문장으로 만들 때 빈칸에 알맞은 말을 쓰시오. Do you know the reason? + She quit her job for the reason. → Do you know the reason ____ she quit her job?",
+   "answer": "why",
+   "why": "for the reason(이유)을 대신하므로 관계부사 why를 쓴다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분이 어법상 옳으면 O, 틀리면 바르게 고쳐 쓰시오. Monday is the day <u>where</u> I have piano lessons.",
+   "answer": "when",
+   "why": "선행사 the day는 시간이므로 where가 아니라 when을 써야 한다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분이 옳으면 O, 틀리면 고쳐 쓰시오. I love the way <u>that</u> my mom hugs me.",
+   "answer": "O",
+   "why": "the way 뒤에는 how는 못 오지만 that은 올 수 있으므로 옳은 문장이다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 말을 골라 쓰시오. (However / Whatever) hard it rains, the game will go on.",
+   "answer": "However",
+   "why": "뒤에 부사 hard가 있으므로 'however+부사(아무리 ~해도)'의 However가 알맞다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 것을 골라 쓰시오. (Wherever / Whenever) I feel sad, I listen to music. (~할 때마다)",
+   "answer": "Whenever",
+   "why": "'슬플 때마다'라는 시간의 뜻이므로 Whenever가 알맞다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 관계대명사를 쓰시오. I remember the day on ____ we had the school festival.",
+   "answer": "which",
+   "why": "전치사 on 뒤에는 관계부사가 아니라 관계대명사 which를 쓴다. on which = when.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "두 문장이 같은 뜻이 되도록 빈칸에 두 단어를 쓰시오. This is how he won the race. = This is ____ he won the race.",
+   "answer": "the way",
+   "why": "how는 the way로 바꿔 쓸 수 있다. 단, the way how로 겹쳐 쓰지는 못한다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. That's ____ we call him Captain. (그것이 ~한 이유이다)",
+   "answer": "why",
+   "why": "선행사 the reason이 생략된 관계부사 why가 알맞다. That's why = 그것이 ~한 이유이다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "두 문장이 같은 뜻이 되도록 빈칸에 한 단어를 쓰시오. No matter what you say, I won't change my mind. = ____ you say, I won't change my mind.",
+   "answer": "Whatever",
+   "alt": [
+    "whatever"
+   ],
+   "why": "no matter what = whatever(무엇을 ~하더라도).",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The Internet has changed the way ____ people communicate with each other.",
+   "choices": [
+    "how",
+    "in which",
+    "for which",
+    "at which",
+    "what"
+   ],
+   "answer": 2,
+   "why": "the way 뒤에는 how를 쓸 수 없고, that이나 in which는 쓸 수 있다. 따라서 in which가 알맞다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? Kenya is the country ____ my father spent his childhood.",
+   "choices": [
+    "which",
+    "where",
+    "when",
+    "why",
+    "how"
+   ],
+   "answer": 2,
+   "why": "뒤 절(my father spent his childhood)이 완전하므로 장소 선행사 뒤에는 관계부사 where를 쓴다. which는 절이 불완전할 때 쓴다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말을 고르시오. The 1990s were a period ____ the Internet began to spread rapidly.",
+   "choices": [
+    "which",
+    "where",
+    "when",
+    "why",
+    "how"
+   ],
+   "answer": 3,
+   "why": "시간 선행사 a period 뒤에 완전한 절이 오므로 관계부사 when이 알맞다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은? Can you explain the reason ____ the project was delayed?",
+   "choices": [
+    "which",
+    "where",
+    "when",
+    "why",
+    "how"
+   ],
+   "answer": 4,
+   "why": "이유 선행사 the reason 뒤에 완전한 절이 오므로 why를 쓴다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 어법상 알맞은 것은? I visited the village ____ is famous for its green tea fields.",
+   "choices": [
+    "where",
+    "when",
+    "which",
+    "why",
+    "how"
+   ],
+   "answer": 3,
+   "why": "빈칸은 is의 주어 자리로 절이 불완전하다. 관계부사가 아닌 관계대명사 which(주격)를 써야 한다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 옳은 것은? The apartment ____ Jane moved into last month is near the river.",
+   "choices": [
+    "where",
+    "which",
+    "when",
+    "how",
+    "why"
+   ],
+   "answer": 2,
+   "why": "전치사 into의 목적어가 빠진 불완전한 절이므로 관계대명사 which를 쓴다. where를 쓰면 into가 남아 어법에 어긋난다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "괄호 안에서 어법상 알맞은 것끼리 순서대로 짝지은 것은? •This is the office (which / where) my mother works. •That is the building (which / where) my mother designed. •He explained (how / the way how) he escaped from the island.",
+   "choices": [
+    "which – which – how",
+    "where – which – how",
+    "where – where – the way how",
+    "which – where – how",
+    "where – which – the way how"
+   ],
+   "answer": 2,
+   "why": "첫째는 완전한 절이므로 where, 둘째는 designed의 목적어가 빠졌으므로 which, 셋째는 the way how가 불가능하므로 how이다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.",
+   "choices": [
+    "The bakery <u>where</u> I buy bread opens at seven.",
+    "I'll never forget the summer <u>when</u> we traveled to Jeju.",
+    "He didn't tell me the reason <u>why</u> he sold his car.",
+    "I was impressed by the way <u>how</u> she handled the complaint.",
+    "Busan is the city <u>where</u> the film festival is held."
+   ],
+   "answer": 4,
+   "why": "the way와 how는 함께 쓸 수 없다. the way 또는 how 하나만 써야 한다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 옳지 않은 것은?",
+   "choices": [
+    "<u>Whenever</u> I open this book, I fall asleep.",
+    "<u>However</u> carefully he drives, his mother still worries.",
+    "You may give the ticket to <u>whoever</u> wants it.",
+    "<u>Wherever</u> she goes, her dog follows her.",
+    "<u>However</u> the box is heavy, I can lift it."
+   ],
+   "answer": 5,
+   "why": "however 뒤에는 형용사가 바로 와야 하므로 However heavy the box is가 옳다. ③은 wants의 주어이므로 whoever가 맞다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 고르시오.",
+   "choices": [
+    "The way how he speaks reminds me of his father.",
+    "December is the month when everything is covered with snow.",
+    "This is the lab which the vaccine was developed.",
+    "However you practice hard, results take time.",
+    "I know a store where sells old records."
+   ],
+   "answer": 2,
+   "why": "시간 선행사 the month + when이므로 ②가 옳다. ①the way how 불가, ③which→where, ④However hard you practice, ⑤주어가 없는 불완전한 절이므로 which sells.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장들의 빈칸에 공통으로 들어갈 말은? •I don't know the exact time ____ the accident happened. •Do you remember ____ we have to hand in the report?",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "which"
+   ],
+   "answer": 1,
+   "why": "첫째는 시간 선행사 the time 뒤의 관계부사 when, 둘째는 '언제 제출해야 하는지'의 when이다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 들어갈 말로 알맞은 것은? •This is ____ the ancient people stored their food. (장소) •Daegu is the city ____ I attended high school.",
+   "choices": [
+    "when",
+    "why",
+    "where",
+    "how",
+    "which"
+   ],
+   "answer": 3,
+   "why": "둘 다 장소의 where. 첫 문장은 선행사 the place가 생략된 형태이다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 옮긴 것 중 옳은 것은? 그가 아무리 부자라도, 그는 행복해 보이지 않는다.",
+   "choices": [
+    "However he is rich, he doesn't look happy.",
+    "However rich is he, he doesn't look happy.",
+    "Whatever rich he is, he doesn't look happy.",
+    "However rich he is, he doesn't look happy.",
+    "No matter he is rich, he doesn't look happy."
+   ],
+   "answer": 4,
+   "why": "'아무리 ~해도'는 however+형용사+주어+동사 어순이다. 도치하거나 형용사를 뒤로 보내면 틀린다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 바르게 영작한 것은? 나는 그 가수가 노래하는 방식이 좋다.",
+   "choices": [
+    "I like the way how the singer sings.",
+    "I like how the way the singer sings.",
+    "I like the way the singer sings.",
+    "I like the how the singer sings.",
+    "I like way that the singer sings."
+   ],
+   "answer": 3,
+   "why": "the way와 how는 함께 쓸 수 없고 둘 중 하나만 쓴다. the way the singer sings 또는 how the singer sings가 옳다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분과 바꿔 쓸 수 있는 말은? <u>No matter where</u> you hide, the cat will find you.",
+   "choices": [
+    "Whenever",
+    "However",
+    "Whatever",
+    "Wherever",
+    "Whichever"
+   ],
+   "answer": 4,
+   "why": "no matter where = wherever(어디에 ~하더라도).",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분과 의미가 같은 것은? <u>No matter how</u> hard the test is, do your best.",
+   "choices": [
+    "Whatever",
+    "Whenever",
+    "Wherever",
+    "Whoever",
+    "However"
+   ],
+   "answer": 5,
+   "why": "no matter how = however(아무리 ~해도).",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "의미가 같도록 빈칸에 알맞은 말은? Anyone who finishes the quiz may leave early. = ____ finishes the quiz may leave early.",
+   "choices": [
+    "Whoever",
+    "Whomever",
+    "Whatever",
+    "However",
+    "Whichever"
+   ],
+   "answer": 1,
+   "why": "anyone who = whoever. finishes의 주어 역할이므로 목적격 whomever는 쓸 수 없다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 문장이 같은 뜻이 되도록 빈칸에 알맞은 것은? Anything that is in the fridge is yours. = ____ is in the fridge is yours.",
+   "choices": [
+    "Whoever",
+    "Whichever",
+    "Whatever",
+    "Whenever",
+    "However"
+   ],
+   "answer": 3,
+   "why": "anything that = whatever(~하는 것은 무엇이든지).",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nㄱ. This is the playground where we used to play soccer.\nㄴ. Tell me the way how you memorized all the words.\nㄷ. Whoever arrives last has to clean the classroom.\nㄹ. However late you are, don't run in the hallway.\nㅁ. I miss the days which we swam in this river.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ, ㄷ, ㄹ이 옳다. ㄴ은 the way how가 불가하고, ㅁ은 완전한 절이므로 which가 아니라 when을 써야 한다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 들어갈 수 없는 것은? I remember the day ____ I got my first phone.",
+   "choices": [
+    "when",
+    "on which",
+    "that",
+    "(아무것도 쓰지 않음)",
+    "where"
+   ],
+   "answer": 5,
+   "why": "시간 선행사이므로 when, on which, that이 가능하고 관계부사는 생략도 가능하다. 장소의 where는 쓸 수 없다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 알맞은 말은? A: This town has changed a lot. B: Right. This is ____ the old market used to be, but now it's a shopping mall.",
+   "choices": [
+    "when",
+    "why",
+    "how",
+    "where",
+    "what"
+   ],
+   "answer": 4,
+   "why": "'옛 시장이 있던 곳'이라는 장소이므로 선행사(the place)가 생략된 where가 알맞다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말을 고르시오. A: ____ do you keep your plants so healthy? B: I water them every morning and give them plenty of sunlight.",
+   "choices": [
+    "How",
+    "Why",
+    "When",
+    "Where",
+    "What"
+   ],
+   "answer": 1,
+   "why": "B가 식물을 건강하게 기르는 '방법'을 설명하므로 How가 알맞다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 문장을 관계부사를 이용해 한 문장으로 만든 것으로 옳은 것은? June is the month. + My favorite singer releases a new album in June.",
+   "choices": [
+    "June is the month which my favorite singer releases a new album.",
+    "June is the month when my favorite singer releases a new album.",
+    "June is the month when my favorite singer releases a new album in.",
+    "June is the month where my favorite singer releases a new album.",
+    "June is the month why my favorite singer releases a new album."
+   ],
+   "answer": 2,
+   "why": "when이 in June을 대신하므로 뒤에 전치사 in을 남기지 않는다. 시간 선행사이므로 where나 why는 불가하다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 문장을 한 문장으로 만든 것 중 옳은 것은? The company built a factory. + Hundreds of people work in the factory.",
+   "choices": [
+    "The company built a factory which hundreds of people work.",
+    "The company built a factory where hundreds of people work in.",
+    "The company built a factory where hundreds of people work.",
+    "The company built a factory when hundreds of people work.",
+    "The company built a factory how hundreds of people work."
+   ],
+   "answer": 3,
+   "why": "where가 in the factory를 대신하므로 전치사 in 없이 완전한 절이 이어진다. which를 쓰려면 work in처럼 전치사가 남아야 한다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분과 바꿔 쓸 수 있는 것을 고르시오. I remember the moment <u>when</u> the lights went out.",
+   "choices": [
+    "at which",
+    "in where",
+    "on that",
+    "for which",
+    "to which"
+   ],
+   "answer": 1,
+   "why": "the moment(시점) 앞에는 전치사 at을 쓰므로 when = at which이다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분과 바꿔 쓸 수 있는 것은? This is the reason <u>why</u> the flight was canceled.",
+   "choices": [
+    "at which",
+    "in which",
+    "on which",
+    "for which",
+    "of which"
+   ],
+   "answer": 4,
+   "why": "이유의 전치사 for를 써서 why = for which이다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 where와 바꿔 쓸 수 있는 것은? The town <u>where</u> the movie was filmed attracts many tourists.",
+   "choices": [
+    "which",
+    "for which",
+    "on which",
+    "to which",
+    "in which"
+   ],
+   "answer": 5,
+   "why": "도시·마을 앞에는 전치사 in을 쓰므로 where = in which이다. which만 쓰면 절이 완전하여 어법에 어긋난다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말에 맞게 단어를 배열할 때 세 번째 오는 단어는? 아무리 어렵더라도, 포기하지 마라. (difficult / however / it / is), don't give up.",
+   "choices": [
+    "difficult",
+    "it",
+    "is",
+    "don't",
+    "however"
+   ],
+   "answer": 2,
+   "why": "However difficult it is, don't give up. 순서이므로 세 번째 단어는 it이다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 문장은?",
+   "choices": [
+    "Whenever it rains, the river rises quickly.",
+    "The way she treats her students shows her warm heart.",
+    "Whoever wants extra practice can stay after class.",
+    "The gallery where I saw the painting is closed on Mondays.",
+    "I wonder the reason how he passed the exam without studying."
+   ],
+   "answer": 5,
+   "why": "the reason 뒤에는 how가 아니라 why를 써야 한다. ②처럼 the way 뒤에 관계부사 없이 절이 바로 오는 것은 가능하다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 올바른 문장을 고르면?",
+   "choices": [
+    "Tell me the way how I can get to the station.",
+    "He remembers the day where he lost his wallet.",
+    "However hot it gets, the workers keep building.",
+    "This is the reason which she gave up the plan.",
+    "Wherever hungry you are, wait for your turn."
+   ],
+   "answer": 3,
+   "why": "However+형용사(hot)+주어+동사 어순으로 ③이 옳다. ①the way how 불가, ②day→when, ④완전한 절이므로 why, ⑤형용사 앞은 however.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 어법상 알맞은 것은? However ____, she finishes the marathon every year.",
+   "choices": [
+    "tired she is",
+    "she is tired",
+    "is she tired",
+    "she tired is",
+    "tired is she"
+   ],
+   "answer": 1,
+   "why": "however 바로 뒤에 형용사가 오고 주어+동사가 이어지는 'However tired she is' 어순이 옳다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말을 고르시오. ____ you may go, keep your passport safe. (어디에 가든지)",
+   "choices": [
+    "Wherever",
+    "However",
+    "Whatever",
+    "Whoever",
+    "Whichever"
+   ],
+   "answer": 1,
+   "why": "'어디에 가더라도'는 wherever(= no matter where)이다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Give this ticket to ____ arrives first at the gate.",
+   "choices": [
+    "whomever",
+    "whichever",
+    "whoever",
+    "whatever",
+    "however"
+   ],
+   "answer": 3,
+   "why": "전치사 to 뒤이지만 빈칸은 절 안에서 arrives의 주어이므로 주격 whoever를 쓴다. whomever는 목적격이라 불가하다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 어법상 알맞은 것은? You can choose ____ topic interests you most.",
+   "choices": [
+    "however",
+    "whichever",
+    "whoever",
+    "whomever",
+    "wherever"
+   ],
+   "answer": 2,
+   "why": "명사 topic을 수식하며 '어느 ~든지'를 뜻하는 whichever가 알맞다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? ____ she wears, she looks stylish.",
+   "choices": [
+    "However",
+    "Whoever",
+    "Wherever",
+    "Whatever",
+    "Whenever"
+   ],
+   "answer": 4,
+   "why": "wears의 목적어가 빠진 불완전한 절이므로 '무엇을 입어도'의 Whatever가 알맞다. however/whenever 뒤에는 완전한 절이 온다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 것은? •____ happens, I will be on your side. •You can eat ____ you like at the buffet.",
+   "choices": [
+    "Whatever",
+    "Whoever",
+    "Whichever",
+    "However",
+    "Whenever"
+   ],
+   "answer": 1,
+   "why": "첫째는 happens의 주어, 둘째는 like의 목적어 역할을 하는 whatever(무엇이든)가 공통으로 알맞다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 들어갈 말을 고르면? •This is the way ____ he trains his dog. •I believe ____ she is honest.",
+   "choices": [
+    "how",
+    "which",
+    "why",
+    "what",
+    "that"
+   ],
+   "answer": 5,
+   "why": "the way 뒤에는 that을 쓸 수 있고(how는 불가), believe 뒤에는 명사절 접속사 that이 온다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?\nㄱ. The reason why I'm calling is to ask a favor.\nㄴ. However quickly you run, you can't beat a cheetah.\nㄷ. This is the way how ants find their way home.\nㄹ. I visited the town where the writer was born.\nㅁ. Whomever knocks on the door, don't open it.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ㄷ(the way how 불가)과 ㅁ(knocks의 주어이므로 Whoever)이 틀려서 2개이다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은? A: Do you know ____ the bakery is closed today? B: Yes. The owner is on vacation.",
+   "choices": [
+    "why",
+    "where",
+    "when",
+    "how",
+    "what"
+   ],
+   "answer": 1,
+   "why": "B가 문을 닫은 '이유'를 말하고 있으므로 why가 알맞다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 관계사는? The stage ____ the band performed was decorated with lights.",
+   "choices": [
+    "which",
+    "when",
+    "why",
+    "where",
+    "whose"
+   ],
+   "answer": 4,
+   "why": "장소 선행사 the stage 뒤에 완전한 절(the band performed)이 오므로 관계부사 where를 쓴다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분 앞에 생략된 말로 알맞은 것은? This is <u>where</u> the two rivers meet.",
+   "choices": [
+    "the place",
+    "the time",
+    "the reason",
+    "the way",
+    "the day"
+   ],
+   "answer": 1,
+   "why": "관계부사 where 앞에는 일반적인 장소 선행사 the place가 생략될 수 있다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 수 있는 말은? This is ____ I came to love science. (방법)",
+   "choices": [
+    "the way how",
+    "which",
+    "how",
+    "the how",
+    "what"
+   ],
+   "answer": 3,
+   "why": "'~하게 된 방법(경위)'이므로 how를 쓴다. the way how는 불가능한 조합이다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분과 의미가 같은 것을 고르시오. You may visit us <u>whenever</u> you like.",
+   "choices": [
+    "at any time when",
+    "no matter what",
+    "in any place where",
+    "every way that",
+    "at the moment which"
+   ],
+   "answer": 1,
+   "why": "whenever(언제든지)는 at any time when으로 풀어 쓸 수 있다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 같은 것은? Wherever he travels, he keeps a journal.",
+   "choices": [
+    "No matter when he travels, he keeps a journal.",
+    "No matter how he travels, he keeps a journal.",
+    "Anywhere which he travels, he keeps a journal.",
+    "No matter where he travels, he keeps a journal.",
+    "However he travels, he keeps a journal."
+   ],
+   "answer": 4,
+   "why": "wherever = no matter where(어디로 ~하더라도).",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은? The morning (A) ____ the storm hit, all flights were canceled. / The airport (B) ____ we waited was crowded.",
+   "choices": [
+    "when – where",
+    "when – which",
+    "where – when",
+    "which – where",
+    "where – which"
+   ],
+   "answer": 1,
+   "why": "(A)는 시간 선행사 the morning이므로 when, (B)는 장소 선행사 뒤 완전한 절이므로 where이다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분을 한 단어로 바꿔 쓸 때 알맞은 것은? The concert hall <u>in which</u> the orchestra rehearses was built in 1900.",
+   "choices": [
+    "which",
+    "when",
+    "where",
+    "why",
+    "how"
+   ],
+   "answer": 3,
+   "why": "장소 선행사 + in which는 관계부사 where 한 단어로 바꿀 수 있다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 관계부사를 쓰시오. Do you remember the afternoon ____ we got caught in the rain?",
+   "answer": "when",
+   "why": "시간 선행사 the afternoon 뒤에 완전한 절이 오므로 when을 쓴다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 관계부사를 한 단어로 쓰시오. The office ____ my sister works is on the 12th floor.",
+   "answer": "where",
+   "why": "장소 선행사 the office 뒤에 완전한 절이 오므로 where를 쓴다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 말을 한 단어로 쓰시오. No one knows the reason ____ the old bridge was closed.",
+   "answer": "why",
+   "why": "이유 선행사 the reason 뒤에는 관계부사 why를 쓴다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 두 단어로 어법에 맞게 고쳐 쓰시오. Science explains <u>the way how</u> rainbows form.",
+   "answer": "the way",
+   "why": "the way와 how는 함께 쓸 수 없다. 두 단어로 쓰면 the way만 남긴다(한 단어로는 how).",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분이 옳으면 O, 틀리면 한 단어로 고쳐 쓰시오. The stadium <u>which</u> the concert was held can hold 50,000 people.",
+   "answer": "where",
+   "why": "the concert was held는 완전한 절이므로 관계대명사 which가 아니라 관계부사 where를 써야 한다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분이 어법상 옳으면 O, 틀리면 고치시오. The year <u>when</u> the war ended is carved on the monument.",
+   "answer": "O",
+   "why": "시간 선행사 the year 뒤에 완전한 절이 오므로 when은 옳다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 배열하여 쓰시오. However <u>you are angry</u>, you shouldn't shout at others.",
+   "answer": "angry you are",
+   "why": "however 뒤에는 형용사가 바로 와서 However angry you are 어순이 되어야 한다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장이 같은 뜻이 되도록 빈칸에 한 단어를 쓰시오. Every time I smell fresh bread, I think of my grandmother. = ____ I smell fresh bread, I think of my grandmother.",
+   "answer": "Whenever",
+   "alt": [
+    "whenever"
+   ],
+   "why": "every time(~할 때마다) = whenever.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "같은 뜻이 되도록 빈칸에 한 단어를 쓰시오. Anyone who breaks the rules will lose points. = ____ breaks the rules will lose points.",
+   "answer": "Whoever",
+   "alt": [
+    "whoever"
+   ],
+   "why": "anyone who = whoever(~하는 사람은 누구든지). breaks의 주어이므로 주격을 쓴다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "같은 뜻이 되도록 빈칸에 한 단어를 쓰시오. Anything that you say may be used against you. = ____ you say may be used against you.",
+   "answer": "Whatever",
+   "alt": [
+    "whatever"
+   ],
+   "why": "anything that = whatever(~하는 것은 무엇이든지).",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장을 관계부사를 이용하여 한 문장으로 쓰시오. (This is the park로 시작할 것) This is the park. + The old men play chess in the park.",
+   "answer": "This is the park where the old men play chess.",
+   "why": "in the park를 관계부사 where로 바꾸어 선행사 the park 뒤에 완전한 절을 잇는다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장을 관계부사를 이용하여 한 문장으로 쓰시오. (I'll never forget으로 시작할 것) I'll never forget the night. + We watched the meteor shower on that night.",
+   "answer": "I'll never forget the night when we watched the meteor shower.",
+   "alt": [
+    "I will never forget the night when we watched the meteor shower."
+   ],
+   "why": "on that night(시간)를 관계부사 when으로 바꾼다. when 뒤에 전치사 on을 남기지 않는다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장을 관계부사를 이용하여 한 문장으로 쓰시오. (Tell me로 시작할 것) Tell me the reason. + You were absent yesterday for the reason.",
+   "answer": "Tell me the reason why you were absent yesterday.",
+   "why": "for the reason을 관계부사 why로 바꾸어 이유 선행사 뒤에 잇는다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 '전치사 + which' 두 단어로 바꿔 쓰시오. I'll always remember the day <u>when</u> I graduated.",
+   "answer": "on which",
+   "why": "날짜(the day) 앞에는 전치사 on을 쓰므로 when = on which이다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 공통으로 들어갈 한 단어를 쓰시오. •That's ____ I admire her. •Do you know ____ the baby is crying?",
+   "answer": "why",
+   "why": "둘 다 이유를 나타내는 why이다. 첫 문장은 선행사 the reason이 생략된 형태이다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말에 맞게 괄호 안의 단어를 배열하시오. 아무리 값이 비싸더라도, 나는 그 책을 살 것이다. → ____ ____ ____ ____, I will buy the book. (expensive / however / is / it)",
+   "answer": "However expensive it is",
+   "alt": [
+    "however expensive it is"
+   ],
+   "why": "however+형용사+주어+동사 어순으로 However expensive it is가 된다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말에 맞게 빈칸에 한 단어를 쓰시오. 네가 어디에 살든, 이웃에게 친절해라. → ____ you live, be kind to your neighbors.",
+   "answer": "Wherever",
+   "alt": [
+    "wherever"
+   ],
+   "why": "'어디에 ~하더라도'는 wherever(= no matter where)이다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "같은 뜻이 되도록 빈칸에 한 단어를 쓰시오. He explained the way the machine works. = He explained ____ the machine works.",
+   "answer": "how",
+   "why": "the way는 how로 바꿔 쓸 수 있다. 단, 두 단어를 겹쳐 the way how로 쓰지는 못한다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "선행사를 생략하여 같은 뜻이 되도록 빈칸에 한 단어를 쓰시오. This is the reason why I study English every day. = This is ____ I study English every day.",
+   "answer": "why",
+   "why": "관계부사 why 앞의 선행사 the reason은 생략할 수 있다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "선행사를 생략하여 같은 뜻이 되도록 빈칸에 한 단어를 쓰시오. The library is the place where I feel most comfortable. = The library is ____ I feel most comfortable.",
+   "answer": "where",
+   "why": "관계부사 where 앞의 일반적 선행사 the place는 생략할 수 있다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\nThe small fishing village ① <u>where</u> I spent my childhood has changed a lot. I still remember the mornings ② <u>when</u> the fog rolled in from the sea and the way ③ <u>how</u> the fishermen called out to one another. ④ <u>Whenever</u> I visit now, I can hardly find the spots ⑤ <u>where</u> we used to play.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "the way와 how는 함께 쓸 수 없으므로 ③은 that으로 고치거나 삭제해야 한다. 나머지는 각각 장소·시간 선행사와 어울린다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것을 고르시오.\n① <u>Whatever</u> field you choose, success rarely comes quickly. ② <u>However</u> talented you are, mastery requires years of practice. Experts often point to the way ③ <u>that</u> champions structure their daily routines. The gym ④ <u>which</u> Olympic athletes train is open around the clock, and ⑤ <u>whoever</u> hopes to reach the top must learn to love routine.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 4,
+   "why": "train 뒤에 목적어가 없는 완전한 절이므로 관계대명사 which가 아니라 관계부사 where(또는 in which)를 써야 한다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. However late it was, the crew kept filming the documentary.\nㄴ. The critic praised the way how the director handled the ending.\nㄷ. Memory is the means by which we preserve the moments when we felt most alive.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 however+형용사 어순, ㄷ은 by which와 시간 선행사+when이 모두 옳다. ㄴ은 the way how가 불가하다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것끼리 짝지은 것은?\nㄱ. Whomever left the laboratory door unlocked must report to the professor.\nㄴ. The 1960s were a decade when social movements reshaped the nation.\nㄷ. Wherever the exhibition travels, it draws record crowds.",
+   "choices": [
+    "ㄱ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄱ은 left의 주어이므로 Whoever여야 한다. ㄴ의 decade+when, ㄷ의 wherever+완전한 절은 옳다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 모두 고른 것은?\nㄱ. This is how the ancient Egyptians moved massive stones.\nㄴ. This is the way how modern cranes lift heavy loads.\nㄷ. The engineer described the way in which the bridge absorbs shock.\nㄹ. Nobody could explain the reason why the signal suddenly disappeared.",
+   "choices": [
+    "ㄱ, ㄷ",
+    "ㄱ, ㄹ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄴ, ㄷ, ㄹ",
+    "ㄱ, ㄴ, ㄷ, ㄹ"
+   ],
+   "answer": 3,
+   "why": "how 단독, the way in which, the reason why는 모두 가능하지만 ㄴ의 the way how는 불가능한 조합이다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 ㄱ~ㅁ 중 어법상 옳은 문장의 개수는?\nㄱ. However complex the problem seems, breaking it into steps helps.\nㄴ. The moment when she stepped onto the stage, the hall fell silent.\nㄷ. Hand this envelope to whomever is sitting at the front desk.\nㄹ. The reason why for which he resigned remains unclear.\nㅁ. Wherever you may wander, your habits travel with you.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ, ㄴ, ㅁ이 옳다. ㄷ은 is의 주어이므로 whoever, ㄹ은 why와 for which를 겹쳐 쓸 수 없다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 가장 적절한 것은? Democracy depends on citizens' understanding of ____ their government makes decisions.",
+   "choices": [
+    "what",
+    "which",
+    "how",
+    "whatever",
+    "the way how"
+   ],
+   "answer": 3,
+   "why": "makes의 목적어(decisions)가 이미 있는 완전한 절이므로 '방법'의 how가 알맞다. what/whatever는 불완전한 절을 이끈다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 어법상 알맞은 말은? The scientist could not identify the reason ____ the cells stopped dividing.",
+   "choices": [
+    "which",
+    "how",
+    "where",
+    "why",
+    "what"
+   ],
+   "answer": 4,
+   "why": "이유 선행사 the reason 뒤에 완전한 절이 오므로 관계부사 why를 쓴다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 가장 알맞은 것은? There comes a moment in every career ____ one must choose between comfort and growth.",
+   "choices": [
+    "which",
+    "where",
+    "why",
+    "when",
+    "how"
+   ],
+   "answer": 4,
+   "why": "시간 선행사 a moment 뒤에 완전한 절이 이어지므로 관계부사 when이 알맞다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 들어갈 말로 알맞은 것을 고르시오. •The neighborhood ____ artists once gathered is now full of luxury shops. •The stadium ____ the final was played holds 80,000 people.",
+   "choices": [
+    "which",
+    "when",
+    "why",
+    "how",
+    "where"
+   ],
+   "answer": 5,
+   "why": "두 문장 모두 장소 선행사 뒤에 완전한 절이 오므로 관계부사 where가 공통으로 알맞다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 어법에 맞게 영작한 것은? 아무리 사소해 보일지라도, 어떤 실수도 무시되어서는 안 된다.",
+   "choices": [
+    "However it may seem small, no mistake should be ignored.",
+    "However small it may seem, no mistake should be ignored.",
+    "Whatever small it may seem, no mistake should be ignored.",
+    "However small may it seem, no mistake should be ignored.",
+    "No matter small how it seems, no mistake should be ignored."
+   ],
+   "answer": 2,
+   "why": "however+형용사(small)+주어+동사 어순이다. 도치(may it)나 However it may seem small은 틀린 어순이다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 가장 바르게 옮긴 것은? 이것이 그 회사가 위기를 극복한 방식이다.",
+   "choices": [
+    "This is the way how the company overcame the crisis.",
+    "This is the how the company overcame the crisis.",
+    "This is the way in that the company overcame the crisis.",
+    "This is how the company overcame the crisis.",
+    "This is which the company overcame the crisis."
+   ],
+   "answer": 4,
+   "why": "how는 단독으로 방법의 관계부사절을 이끈다. the way how, the way in that은 불가능한 조합이다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "두 문장의 의미가 같도록 빈칸에 들어갈 말은? No matter which route you take, the journey takes at least three hours. = ____ route you take, the journey takes at least three hours.",
+   "choices": [
+    "Whoever",
+    "Whenever",
+    "Whichever",
+    "Wherever",
+    "However"
+   ],
+   "answer": 3,
+   "why": "no matter which = whichever. 명사 route를 수식하는 형용사 역할도 whichever가 한다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The lecture explained ____ medieval builders raised cathedral ceilings without modern machinery.",
+   "choices": [
+    "what",
+    "how",
+    "which",
+    "whose",
+    "the way how"
+   ],
+   "answer": 2,
+   "why": "raised의 목적어가 이미 있는 완전한 절이므로 방법의 how가 알맞다. what은 불완전한 절을 이끌고 the way how는 불가하다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 옳지 않은 것은?",
+   "choices": [
+    "The era <u>when</u> silent films dominated ended with recorded sound.",
+    "Critics debate the reason <u>why</u> the empire collapsed so rapidly.",
+    "The archive <u>where</u> the letters are stored is rarely opened to the public.",
+    "The historian described the way <u>how</u> ancient scribes copied texts.",
+    "<u>Whenever</u> new evidence surfaces, textbooks must be revised."
+   ],
+   "answer": 4,
+   "why": "the way how는 함께 쓸 수 없으므로 that으로 바꾸거나 how를 삭제해야 한다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 옳은 것은?",
+   "choices": [
+    "The clinic <u>which</u> the trials were conducted follows strict protocols.",
+    "Spring is the season <u>where</u> allergy sufferers struggle most.",
+    "He never revealed the way <u>how</u> he funded the expedition.",
+    "<u>However</u> you are skilled, surgery demands constant learning.",
+    "The committee will support <u>whoever</u> presents the most practical plan."
+   ],
+   "answer": 5,
+   "why": "⑤는 presents의 주어 역할이므로 whoever가 옳다. ①which→where, ②season은 when, ③the way how 불가, ④However skilled you are.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말에 맞게 배열할 때 네 번째에 오는 단어는? 그 소음이 아무리 크더라도, 그는 계속 잤다. (loud / the / noise / however / was), he kept sleeping.",
+   "choices": [
+    "loud",
+    "the",
+    "noise",
+    "was",
+    "however"
+   ],
+   "answer": 3,
+   "why": "However loud the noise was, he kept sleeping. 순서이므로 네 번째 단어는 noise이다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은? •____ long the meeting ran, no decision was reached. •____ hard we pushed, the door would not open.",
+   "choices": [
+    "Whenever",
+    "However",
+    "Whatever",
+    "Wherever",
+    "Whichever"
+   ],
+   "answer": 2,
+   "why": "둘 다 'however+형용사/부사(아무리 ~해도)' 구문이므로 However가 공통이다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 ㄱ~ㅁ 중 어법상 틀린 문장의 개수는?\nㄱ. The orchard where my grandfather planted apple trees still bears fruit.\nㄴ. However carefully the cargo was packed, some glassware broke.\nㄷ. That is how the rumor spread through the entire school.\nㄹ. This is the office where my father works in.\nㅁ. Whomever you meet on the road, greet them warmly.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 1,
+   "why": "ㄹ만 틀렸다. where가 in the office를 대신하므로 in을 또 쓸 수 없다. ㅁ은 meet의 목적어이므로 whomever가 옳다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)에서 어법에 맞는 것끼리 짝지은 것은? The lab (A) [which / where] the team analyzed the samples was underfunded. (B) [However / Whatever] limited their resources were, they published groundbreaking results. This is (C) [how / the way how] small teams sometimes outperform giants.",
+   "choices": [
+    "which – However – how",
+    "where – However – how",
+    "where – Whatever – the way how",
+    "which – Whatever – how",
+    "where – However – the way how"
+   ],
+   "answer": 2,
+   "why": "(A)는 완전한 절이므로 where, (B)는 형용사 limited 앞이므로 However, (C)는 the way how가 불가하므로 how이다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)에 들어갈 말로 바르게 짝지은 것은? Success often visits (A) [whoever / whomever] prepares before opportunity knocks. The month (B) [when / which] the company launched its app saw record downloads. No one fully understands the reason (C) [why / which] some videos go viral.",
+   "choices": [
+    "whomever – when – why",
+    "whoever – which – why",
+    "whoever – when – which",
+    "whoever – when – why",
+    "whomever – which – which"
+   ],
+   "answer": 4,
+   "why": "(A)는 prepares의 주어이므로 whoever, (B)는 시간 선행사+완전한 절이므로 when, (C)는 이유 선행사+완전한 절이므로 why이다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분과 바꿔 쓸 수 없는 것은? He described <u>the way</u> the immune system recognizes invaders.",
+   "choices": [
+    "how",
+    "the way that",
+    "the way in which",
+    "the manner in which",
+    "the way how"
+   ],
+   "answer": 5,
+   "why": "the way는 how, the way that, the way in which 등으로 바꿀 수 있지만 the way how는 불가능한 조합이다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "두 문장을 한 문장으로 만든 것으로 가장 적절한 것은? The cave was discovered in 1940. + Prehistoric paintings cover the walls in the cave.",
+   "choices": [
+    "The cave which prehistoric paintings cover the walls was discovered in 1940.",
+    "The cave where prehistoric paintings cover the walls in was discovered in 1940.",
+    "The cave where prehistoric paintings cover the walls was discovered in 1940.",
+    "The cave when prehistoric paintings cover the walls was discovered in 1940.",
+    "The cave whose prehistoric paintings cover the walls was discovered in 1940."
+   ],
+   "answer": 3,
+   "why": "where가 in the cave를 대신하므로 뒤 절은 완전하고 전치사 in을 남기지 않는다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 가장 알맞은 것은? ____ of the two proposals the board approves, the project will strain the budget.",
+   "choices": [
+    "Whatever",
+    "Whoever",
+    "Whenever",
+    "However",
+    "Whichever"
+   ],
+   "answer": 5,
+   "why": "한정된 둘 중의 선택이므로 whichever(of the two)가 알맞다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말로 가장 적절한 것은? ____ the weather turns severe, the ferry service is suspended.",
+   "choices": [
+    "However",
+    "Whichever",
+    "Whenever",
+    "Whoever",
+    "Whatever"
+   ],
+   "answer": 3,
+   "why": "'날씨가 나빠질 때마다/언제든지'라는 시간의 뜻이고 뒤 절이 완전하므로 Whenever가 알맞다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것을 고르면?\nWolves thrive ① <u>wherever</u> prey is abundant. Biologists have long studied the way ② <u>which</u> packs coordinate their hunts. The season ③ <u>when</u> pups are born demands constant vigilance. ④ <u>However</u> harsh the winter becomes, the pack shares its kills. This is ⑤ <u>why</u> wolves are considered nature's most cooperative hunters.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 2,
+   "why": "coordinate 뒤 절이 완전하므로 which는 불가하다. the way that 또는 the way in which로 써야 한다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 적절하지 않은 것은?\nEvery December, the town square becomes a market ① <u>where</u> craftsmen sell handmade goods. Visitors love ② <u>how</u> the stalls glow under strings of lights. ③ <u>Whoever</u> attends the opening night receives a small gift. ④ <u>Whatever</u> cold it gets, the crowds keep coming. The mayor still recalls the year ⑤ <u>when</u> the tradition nearly ended.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 4,
+   "why": "형용사 cold 앞이므로 Whatever가 아니라 However cold it gets(아무리 추워도)로 써야 한다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 가장 적절한 문장은?",
+   "choices": [
+    "The clinic where I volunteer at is short of staff.",
+    "I asked him the way how he had trained his memory.",
+    "Wherever comfortable you feel, stay alert in the water.",
+    "The day which we planted the tree, it rained heavily.",
+    "However strange it may sound, octopuses have three hearts."
+   ],
+   "answer": 5,
+   "why": "⑤는 however+형용사+주어+동사 어순으로 옳다. ①where+at 중복, ②the way how 불가, ③형용사 앞은 however, ④시간 선행사이므로 when.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 들어갈 말은? •The documentary shows ____ skillfully honeybees build their combs. •I was amazed at ____ calmly she handled the emergency.",
+   "choices": [
+    "how",
+    "what",
+    "why",
+    "when",
+    "however"
+   ],
+   "answer": 1,
+   "why": "둘 다 'how+부사(얼마나 ~하게)' 구문이므로 how가 공통으로 알맞다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 바르게 영작한 것을 고르시오. 그녀가 어디에 숨든지 간에, 진실은 결국 드러날 것이다.",
+   "choices": [
+    "Whatever she hides, the truth will eventually come out.",
+    "Wherever she hides, the truth will eventually come out.",
+    "However she hides, the truth will eventually come out.",
+    "Wherever does she hide, the truth will eventually come out.",
+    "She hides wherever, the truth will eventually come out."
+   ],
+   "answer": 2,
+   "why": "'어디에 ~하든지'는 wherever이며 뒤에 평서문 어순의 완전한 절이 온다. whatever는 '무엇을 숨기든'이라는 다른 뜻이 된다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분을 어법에 맞게 고친 것은? The ease <u>which</u> she solved the equation stunned the examiners.",
+   "choices": [
+    "how",
+    "with which",
+    "in where",
+    "when",
+    "for which"
+   ],
+   "answer": 2,
+   "why": "she solved the equation은 완전한 절이므로 with the ease의 with를 살려 with which로 고쳐야 한다(the ease with which ~).",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 전치사는? The degree ____ which stress affects memory varies from person to person.",
+   "choices": [
+    "in",
+    "at",
+    "to",
+    "on",
+    "for"
+   ],
+   "answer": 3,
+   "why": "'~하는 정도'는 the degree to which로 쓴다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말로 알맞게 짝지은 것은? (A) ____ unlikely it seemed, the plan worked, and that is (B) ____ we remember it today. (B는 '이유')",
+   "choices": [
+    "However – why",
+    "Whatever – why",
+    "Whatever – the reason",
+    "However – which",
+    "Whatever – how"
+   ],
+   "answer": 1,
+   "why": "(A)는 형용사 unlikely 앞이므로 However, (B)는 이유를 나타내며 선행사가 생략된 why이다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고르시오.\nㄱ. Whichever path you choose, walk it with conviction.\nㄴ. The warehouse where the evidence was stored in burned down.\nㄷ. However skillfully the lawyer argued, the jury was unmoved.\nㄹ. The reason why whales migrate such long distances is still debated.",
+   "choices": [
+    "ㄱ, ㄷ",
+    "ㄱ, ㄹ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄱ, ㄴ, ㄷ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "ㄴ은 where가 in the warehouse를 대신하므로 in을 또 쓸 수 없어 틀렸다. 나머지 셋은 모두 옳다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "두 문장을 한 문장으로 만들 때 가장 적절한 것은? Nobody knows the reason. + The colony vanished for the reason.",
+   "choices": [
+    "Nobody knows the reason which the colony vanished.",
+    "Nobody knows the reason why the colony vanished.",
+    "Nobody knows the reason why the colony vanished for.",
+    "Nobody knows why the reason the colony vanished.",
+    "Nobody knows the reason where the colony vanished."
+   ],
+   "answer": 2,
+   "why": "why가 for the reason을 대신하므로 전치사 for를 남기지 않고 the reason why ~로 쓴다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 들어갈 수 없는 것을 고르시오. He wrote a book about ____ he survived alone in the Arctic.",
+   "choices": [
+    "how",
+    "the way",
+    "the way in which",
+    "where",
+    "the way how"
+   ],
+   "answer": 5,
+   "why": "how, the way, the way in which는 방법, where는 장소의 명사절로 모두 가능하지만 the way how는 불가능한 조합이다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (however의 어순에 유의할 것)",
+   "choices": [
+    "However may it be difficult, keep going.",
+    "However difficult it may be, keep going.",
+    "However it may be difficult, keep going.",
+    "However difficult may it be, keep going.",
+    "Difficult however it may be, keep going."
+   ],
+   "answer": 2,
+   "why": "however+형용사+주어+(조)동사 어순이므로 However difficult it may be가 옳다. 의문문식 도치는 불가하다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 가장 알맞은 말은? A: The keynote speaker canceled at the last minute. B: So that's ____ the schedule was suddenly changed. I was wondering.",
+   "choices": [
+    "what",
+    "how",
+    "when",
+    "why",
+    "where"
+   ],
+   "answer": 4,
+   "why": "A의 말이 일정 변경의 '이유'이므로 That's why(그래서 ~한 것이군요)가 알맞다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분의 쓰임이 나머지 넷과 다른 것은?",
+   "choices": [
+    "This is the house <u>where</u> the mayor lives.",
+    "The park <u>where</u> we jog is closed today.",
+    "I asked him <u>where</u> he had parked the car.",
+    "The station <u>where</u> we said goodbye has been rebuilt.",
+    "Busan is the port city <u>where</u> my family settled."
+   ],
+   "answer": 3,
+   "why": "③은 선행사 없이 asked의 목적어가 되는 의문사(간접의문문)이고, 나머지는 모두 장소 선행사를 수식하는 관계부사이다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 when의 쓰임이 나머지 넷과 다른 것은?",
+   "choices": [
+    "I remember the day <u>when</u> the school festival was canceled.",
+    "Fall is the season <u>when</u> the leaves turn red.",
+    "Do you know <u>when</u> the next train leaves?",
+    "The hour <u>when</u> the market opens varies by season.",
+    "He misses the years <u>when</u> his children were small."
+   ],
+   "answer": 3,
+   "why": "③은 '언제 ~하는지'를 묻는 의문사이고, 나머지는 시간 선행사를 수식하는 관계부사이다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은? ____ many times I read this poem, I discover something new.",
+   "choices": [
+    "Whatever",
+    "Whenever",
+    "However",
+    "Whichever",
+    "Wherever"
+   ],
+   "answer": 3,
+   "why": "'however+형용사(many)+명사(아무리 여러 번 ~해도)' 구문이므로 However가 알맞다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 바르게 옮긴 것은? 경찰이 언제 도착하든지, 증거는 보존되어야 한다.",
+   "choices": [
+    "However the police arrive, the evidence must be preserved.",
+    "Whenever do the police arrive, the evidence must be preserved.",
+    "Wherever the police arrive, the evidence must be preserved.",
+    "Whenever the police arrive, the evidence must be preserved.",
+    "The police arrive whenever, the evidence must be preserved."
+   ],
+   "answer": 4,
+   "why": "'언제 ~하든지'는 whenever이며 뒤에 평서문 어순의 절이 온다. wherever는 '어디에 도착하든'이라는 다른 뜻이다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분을 어법에 맞게 고친 것으로 알맞은 것은? <u>Whatever tired you feel</u>, submit the report by noon.",
+   "choices": [
+    "However tired you feel",
+    "Whatever you feel tired",
+    "However you feel tired",
+    "Tired whatever you feel",
+    "However tired do you feel"
+   ],
+   "answer": 1,
+   "why": "형용사 tired 앞에는 whatever가 아니라 however를 쓰고, however+형용사+주어+동사 어순을 지킨다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글에서 어법상 틀린 부분이 포함된 문장은?\n① The valley where the monks built their monastery lies beyond the ridge. ② Pilgrims still climb the trail whenever the weather permits. ③ Records describe the way how the founders carried stones up the slope. ④ However steep the path becomes, visitors press on. ⑤ That is why the site is called the Stairway of Devotion.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "③의 the way how는 불가능한 조합으로, the way (that)나 how 하나만 써야 한다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B)에서 어법에 맞는 표현끼리 짝지은 것은? The auditors examined the process (A) [which / in which] funds were transferred and questioned (B) [whoever / whomever] had approved each payment.",
+   "choices": [
+    "which – whoever",
+    "in which – whoever",
+    "in which – whomever",
+    "which – whomever",
+    "in which – however"
+   ],
+   "answer": 2,
+   "why": "(A)는 뒤 절이 완전하므로 in which(= where), (B)는 had approved의 주어이므로 whoever이다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 ㄱ~ㅁ 중 어법상 틀린 것의 개수는?\nㄱ. However urgent the request sounds, verify it before responding.\nㄴ. This is the way how phishing scams typically unfold.\nㄷ. Delete whatever attachments look suspicious.\nㄹ. The moment you click a fake link, malware installs itself.\nㅁ. Report the incident to whomever manages your network.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ㄴ(the way how 불가)과 ㅁ(manages의 주어이므로 whoever)이 틀려서 2개이다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 However로 시작하여 같은 뜻으로 다시 쓰시오. No matter how dangerous the mission was, the firefighters went in.",
+   "answer": "However dangerous the mission was, the firefighters went in.",
+   "why": "no matter how+형용사 = however+형용사이며, 뒤에 주어+동사 어순이 이어진다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 Whatever로 시작하여 같은 뜻으로 다시 쓰시오. No matter what the critics say, the show will go on.",
+   "answer": "Whatever the critics say, the show will go on.",
+   "why": "no matter what = whatever(무엇을 ~하더라도).",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 Whoever로 시작하여 같은 뜻의 한 문장으로 쓰시오. Anyone who solves this riddle deserves a prize.",
+   "answer": "Whoever solves this riddle deserves a prize.",
+   "why": "anyone who = whoever(~하는 사람은 누구든지).",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. The laboratory <u>which</u> the samples are frozen must stay below zero.",
+   "answer": "where",
+   "why": "the samples are frozen은 완전한 절이므로 관계대명사 which가 아니라 관계부사 where를 써야 한다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 세 단어로 어법에 맞게 고쳐 쓰시오. Grandma never explained <u>the way how</u> she kept her garden so alive.",
+   "answer": "the way that",
+   "why": "the way how는 불가능한 조합이다. 세 단어로는 the way that으로 쓴다(the way 또는 how 하나만 써도 됨).",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. ____ thoroughly you proofread, a fresh reader will catch something you missed. (아무리 ~해도)",
+   "answer": "However",
+   "alt": [
+    "however"
+   ],
+   "why": "부사 thoroughly 앞에서 '아무리 ~해도'를 나타내는 However(= no matter how)가 알맞다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사를 쓰시오. This is the page ____ which the map is printed.",
+   "answer": "on",
+   "why": "지면 '위에' 인쇄되므로 on which(= where)가 된다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사 한 단어를 쓰시오. I admire the patience ____ which she endured the criticism.",
+   "answer": "with",
+   "why": "with patience(인내심을 갖고)의 with를 관계대명사 앞으로 옮긴 the patience with which 구문이다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장을 관계부사를 이용하여 한 문장으로 쓰시오. (The morning으로 시작할 것) The morning was foggy. + The expedition set out on that morning.",
+   "answer": "The morning when the expedition set out was foggy.",
+   "why": "on that morning을 관계부사 when으로 바꾸어 주어 The morning 뒤에 삽입한다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장을 관계부사를 이용하여 한 문장으로 쓰시오. (Nobody로 시작할 것) Nobody remembers the reason. + The two families started their feud for the reason.",
+   "answer": "Nobody remembers the reason why the two families started their feud.",
+   "why": "for the reason을 관계부사 why로 바꾸어 이유 선행사 뒤에 잇는다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말에 맞게 괄호 안의 단어를 배열하여 쓰시오. 아무리 그 문제가 복잡해 보여도, 해결책은 존재한다. → ____ ____ ____ ____ ____, a solution exists. (complicated / however / the / problem / seems)",
+   "answer": "However complicated the problem seems",
+   "alt": [
+    "however complicated the problem seems"
+   ],
+   "why": "however+형용사+주어+동사 어순으로 However complicated the problem seems가 된다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말에 맞게 괄호 안의 단어를 배열하시오. 네가 무엇을 결정하든, 우리는 너를 지지할 것이다. → ____ ____ ____, we will support you. (decide / whatever / you)",
+   "answer": "Whatever you decide",
+   "alt": [
+    "whatever you decide"
+   ],
+   "why": "whatever(무엇을 ~하든)가 절 앞에 오고 주어+동사가 이어진다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 복합관계사를 한 단어로 쓰시오. The committee will approve ____ design costs the least. (어느 것이든)",
+   "answer": "whichever",
+   "why": "명사 design을 수식하며 '어느 ~이든'을 뜻하는 whichever가 알맞다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "같은 뜻이 되도록 빈칸에 한 단어를 쓰시오. The way she greeted us made everyone comfortable. = ____ she greeted us made everyone comfortable.",
+   "answer": "How",
+   "alt": [
+    "how"
+   ],
+   "why": "the way는 how로 바꿔 쓸 수 있다(두 단어를 겹쳐 쓰는 것만 불가).",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분이 옳으면 O, 틀리면 바르게 고쳐 쓰시오. <u>Whomever</u> spread that rumor should apologize publicly.",
+   "answer": "Whoever",
+   "alt": [
+    "whoever"
+   ],
+   "why": "spread의 주어 역할이므로 주격 Whoever를 써야 한다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분이 어법상 옳으면 O, 틀리면 고쳐 쓰시오. You may quote this article <u>however</u> you see fit.",
+   "answer": "O",
+   "why": "however가 '어떤 방식으로든(in whatever way)'의 뜻으로 완전한 절을 이끌므로 옳다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "선행사 the place를 생략하여 문장을 다시 쓰시오. Home is the place where the heart finds rest.",
+   "answer": "Home is where the heart finds rest.",
+   "why": "일반적 선행사 the place는 생략하고 관계부사 where만 남길 수 있다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "선행사 the reason을 생략하여 문장을 다시 쓰시오. That is the reason why volcanic soil is so fertile.",
+   "answer": "That is why volcanic soil is so fertile.",
+   "why": "선행사 the reason을 생략하고 why만 남겨 That is why ~로 쓴다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "같은 뜻이 되도록 빈칸에 한 단어를 쓰시오. I was moved by the way in which the community rebuilt the school. = I was moved by ____ the community rebuilt the school.",
+   "answer": "how",
+   "why": "the way in which는 한 단어 how로 바꿔 쓸 수 있다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "같은 뜻이 되도록 빈칸에 세 단어를 쓰시오. However loudly you knock, no one will answer. = ____ ____ ____ loudly you knock, no one will answer.",
+   "answer": "No matter how",
+   "alt": [
+    "no matter how"
+   ],
+   "why": "however+부사 = no matter how+부사(아무리 ~해도).",
+   "no": 200
+  }
+ ]
+}
