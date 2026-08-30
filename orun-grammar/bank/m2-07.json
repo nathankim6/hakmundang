@@ -1,0 +1,2598 @@
+{
+ "id": "m2-07",
+ "grade": "중2",
+ "name": "to부정사 형용사적 용법",
+ "points": [
+  "명사 뒤 수식",
+  "-thing+형용사+to-v",
+  "전치사가 남는 to-v"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I have a lot of homework ____ today.",
+   "choices": [
+    "doing",
+    "to do",
+    "do",
+    "did",
+    "to doing"
+   ],
+   "answer": 2,
+   "why": "명사 homework를 뒤에서 꾸미는 to부정사(형용사적 용법)가 필요하므로 to do가 알맞다. doing, do 등은 명사를 뒤에서 이렇게 꾸밀 수 없다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She wants something ____ right now.",
+   "choices": [
+    "drink",
+    "drinks",
+    "to drink",
+    "drinking",
+    "drank"
+   ],
+   "answer": 3,
+   "why": "something을 뒤에서 꾸며 '마실 것'이라는 뜻을 만들려면 to부정사 to drink를 써야 한다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "We need more time ____ the work.",
+   "choices": [
+    "finish",
+    "finishing",
+    "to finish",
+    "finished",
+    "to finishing"
+   ],
+   "answer": 3,
+   "why": "'끝낼 시간'처럼 명사 time을 꾸미는 것은 to+동사원형(to finish)이다. to finishing처럼 to 뒤에 -ing를 쓰면 안 된다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He bought a book ____ on the train.",
+   "choices": [
+    "to read",
+    "read",
+    "reading",
+    "reads",
+    "to reading"
+   ],
+   "answer": 1,
+   "why": "'기차에서 읽을 책'이므로 a book을 꾸미는 to read가 알맞다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Do you have anything ____ me?",
+   "choices": [
+    "tell",
+    "to tell",
+    "telling",
+    "tells",
+    "told"
+   ],
+   "answer": 2,
+   "why": "anything을 뒤에서 꾸며 '나에게 말할 것'이 되도록 to tell을 쓴다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I want something cold ____.",
+   "choices": [
+    "drink",
+    "drinking",
+    "to drink",
+    "drank",
+    "to drinking"
+   ],
+   "answer": 3,
+   "why": "-thing + 형용사 + to부정사 어순이므로 something cold 뒤에 to drink가 온다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Seoul has many places ____.",
+   "choices": [
+    "visit",
+    "to visit",
+    "visiting",
+    "visited",
+    "visits"
+   ],
+   "answer": 2,
+   "why": "'방문할 많은 장소'이므로 places를 꾸미는 to visit이 알맞다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She has no friends ____ with.",
+   "choices": [
+    "play",
+    "playing",
+    "to play",
+    "played",
+    "plays"
+   ],
+   "answer": 3,
+   "why": "play with(~와 놀다)의 with가 뒤에 남아 있으므로 to부정사 to play를 넣어 '함께 놀 친구'를 만든다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I need a pen ____ with.",
+   "choices": [
+    "write",
+    "writing",
+    "to write",
+    "wrote",
+    "written"
+   ],
+   "answer": 3,
+   "why": "write with a pen(펜으로 쓰다)에서 전치사 with가 남은 형태이므로 to write가 알맞다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "There is nothing ____ in the fridge.",
+   "choices": [
+    "eat",
+    "to eat",
+    "eating",
+    "ate",
+    "eats"
+   ],
+   "answer": 2,
+   "why": "nothing을 뒤에서 꾸며 '먹을 것이 없다'가 되도록 to eat을 쓴다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He is looking for a house ____ in.",
+   "choices": [
+    "live",
+    "living",
+    "lived",
+    "to live",
+    "lives"
+   ],
+   "answer": 4,
+   "why": "live in a house에서 in이 남은 구조이므로 to live를 써서 '살 집'을 만든다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She needs someone ____ her.",
+   "choices": [
+    "help",
+    "helping",
+    "helped",
+    "to help",
+    "helps"
+   ],
+   "answer": 4,
+   "why": "someone을 꾸며 '그녀를 도와줄 사람'이 되도록 to help를 쓴다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It's time ____ to bed.",
+   "choices": [
+    "go",
+    "going",
+    "to go",
+    "goes",
+    "went"
+   ],
+   "answer": 3,
+   "why": "time을 꾸미는 to부정사 to go가 알맞다. It's time to go to bed는 '잘 시간이다'라는 뜻이다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I have some questions ____ you.",
+   "choices": [
+    "ask",
+    "to ask",
+    "asking",
+    "asked",
+    "asks"
+   ],
+   "answer": 2,
+   "why": "questions를 꾸며 '너에게 물어볼 질문'이 되도록 to ask를 쓴다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "I want hot something to drink.",
+    "I want something hot to drink.",
+    "I want something to hot drink.",
+    "I want to something hot drink.",
+    "I want something hot drink."
+   ],
+   "answer": 2,
+   "why": "-thing으로 끝나는 말은 형용사가 뒤에서 꾸미고 그다음 to부정사가 오므로 something hot to drink 어순이 옳다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n\"나는 읽을 재미있는 것이 필요하다.\"",
+   "choices": [
+    "I need interesting something to read.",
+    "I need something interesting to read.",
+    "I need something to read interesting.",
+    "I need something interesting read.",
+    "I need something interesting reading."
+   ],
+   "answer": 2,
+   "why": "something + 형용사(interesting) + to부정사(to read) 어순이 옳다. 형용사를 -thing 앞에 두면 틀린다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 틀린 것은?",
+   "choices": [
+    "I have work <u>to do</u>.",
+    "She wants a sandwich <u>to eat</u>.",
+    "We need water <u>to drink</u>.",
+    "He has a letter <u>to send</u>.",
+    "They have a game <u>play</u> tonight."
+   ],
+   "answer": 5,
+   "why": "명사를 뒤에서 꾸미려면 to부정사가 필요하므로 play는 to play로 고쳐야 한다. 나머지는 모두 올바른 형용사적 용법이다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Give me a chance ____ again.",
+   "choices": [
+    "try",
+    "trying",
+    "tried",
+    "to try",
+    "tries"
+   ],
+   "answer": 4,
+   "why": "chance를 꾸며 '다시 해 볼 기회'가 되도록 to try를 쓴다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My mom has a lot of things ____ today.",
+   "choices": [
+    "do",
+    "does",
+    "doing",
+    "to do",
+    "did"
+   ],
+   "answer": 4,
+   "why": "things를 뒤에서 꾸미는 to do가 알맞다. '오늘 할 일이 많다'는 뜻이 된다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Is there anything ____ in this town?",
+   "choices": [
+    "see",
+    "seeing",
+    "saw",
+    "sees",
+    "to see"
+   ],
+   "answer": 5,
+   "why": "anything을 꾸며 '볼 것'이라는 뜻을 만드는 to see가 알맞다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I need some paper ____ on.",
+   "choices": [
+    "write",
+    "writing",
+    "wrote",
+    "to write",
+    "writes"
+   ],
+   "answer": 4,
+   "why": "write on paper(종이에 쓰다)에서 on이 남은 구조이므로 to write를 쓴다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "We have good news ____ you.",
+   "choices": [
+    "tell",
+    "telling",
+    "to tell",
+    "told",
+    "tells"
+   ],
+   "answer": 3,
+   "why": "news를 꾸며 '너에게 말해 줄 좋은 소식'이 되도록 to tell을 쓴다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He wants a robot ____ his room.",
+   "choices": [
+    "clean",
+    "cleaning",
+    "cleaned",
+    "cleans",
+    "to clean"
+   ],
+   "answer": 5,
+   "why": "robot을 꾸며 '방을 청소해 줄 로봇'이 되도록 to clean을 쓴다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She brought a snack ____ during the break.",
+   "choices": [
+    "eat",
+    "eating",
+    "to eat",
+    "ate",
+    "eats"
+   ],
+   "answer": 3,
+   "why": "snack을 꾸며 '쉬는 시간에 먹을 간식'이 되도록 to eat을 쓴다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Do you know a good way ____ English words?",
+   "choices": [
+    "learn",
+    "learning",
+    "learned",
+    "learns",
+    "to learn"
+   ],
+   "answer": 5,
+   "why": "way를 꾸며 '영어 단어를 배울 좋은 방법'이 되도록 to learn을 쓴다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Busan is a great city ____.",
+   "choices": [
+    "visit",
+    "visiting",
+    "to visit",
+    "visited",
+    "visits"
+   ],
+   "answer": 3,
+   "why": "city를 꾸며 '방문하기 좋은 도시'가 되도록 to visit을 쓴다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "'마실 것'을 뜻하는 표현으로 옳은 것은?",
+   "choices": [
+    "something drink",
+    "something to drink",
+    "to something drink",
+    "something drinking to",
+    "drink something to"
+   ],
+   "answer": 2,
+   "why": "something을 to부정사가 뒤에서 꾸미는 something to drink가 '마실 것'이다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은? (의자)",
+   "choices": [
+    "She needs a chair to sit.",
+    "She needs a chair to sit on.",
+    "She needs a chair sitting on.",
+    "She needs a chair sit on.",
+    "She needs a chair to sits on."
+   ],
+   "answer": 2,
+   "why": "sit on a chair(의자에 앉다)이므로 전치사 on을 남긴 to sit on이 옳다. to sit만 쓰면 on이 빠져 틀린다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은?",
+   "choices": [
+    "I have a book to read.",
+    "He has many friends to help him.",
+    "We need something eat.",
+    "She has a dress to wear.",
+    "They have time to rest."
+   ],
+   "answer": 3,
+   "why": "something을 꾸미려면 to부정사가 필요하므로 something eat은 something to eat으로 고쳐야 한다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 to부정사가 앞의 명사를 꾸미는 것은?",
+   "choices": [
+    "I want <u>to sleep</u>.",
+    "She has a book <u>to read</u>.",
+    "<u>To swim</u> is fun.",
+    "He likes <u>to sing</u>.",
+    "My dream is <u>to fly</u>."
+   ],
+   "answer": 2,
+   "why": "a book to read의 to read는 명사 book을 꾸미는 형용사적 용법이다. 나머지는 목적어·주어·보어로 쓰인 명사적 용법이다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I'm so hungry. I need something ____.",
+   "choices": [
+    "eat",
+    "eating",
+    "ate",
+    "to eat",
+    "eats"
+   ],
+   "answer": 4,
+   "why": "something을 꾸며 '먹을 것'이 되도록 to eat을 쓴다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "There are many books ____ in the library.",
+   "choices": [
+    "read",
+    "reading",
+    "to read",
+    "reads",
+    "to reading"
+   ],
+   "answer": 3,
+   "why": "books를 꾸며 '읽을 책이 많다'가 되도록 to read를 쓴다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He has no money ____ a new bike.",
+   "choices": [
+    "buy",
+    "buying",
+    "bought",
+    "to buy",
+    "buys"
+   ],
+   "answer": 4,
+   "why": "money를 꾸며 '새 자전거를 살 돈'이 되도록 to buy를 쓴다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "We found a good place ____ lunch.",
+   "choices": [
+    "have",
+    "having",
+    "to have",
+    "had",
+    "has"
+   ],
+   "answer": 3,
+   "why": "place를 꾸며 '점심을 먹을 좋은 장소'가 되도록 to have를 쓴다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I want a friend ____ to.",
+   "choices": [
+    "talk",
+    "talking",
+    "talked",
+    "talks",
+    "to talk"
+   ],
+   "answer": 5,
+   "why": "talk to a friend(친구에게 말하다)에서 to가 남은 구조이므로 to talk를 써서 '이야기할 친구'를 만든다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She has a cute doll ____ with.",
+   "choices": [
+    "play",
+    "playing",
+    "to play",
+    "played",
+    "plays"
+   ],
+   "answer": 3,
+   "why": "play with a doll(인형을 가지고 놀다)에서 with가 남았으므로 to play가 알맞다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Dad needs a big box ____ these books in.",
+   "choices": [
+    "put",
+    "putting",
+    "puts",
+    "to put",
+    "to putting"
+   ],
+   "answer": 4,
+   "why": "put the books in a box에서 in이 남은 구조이므로 to put을 써서 '책을 넣을 상자'를 만든다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: I'm bored.\nB: Do you have anything fun ____?",
+   "choices": [
+    "do",
+    "to do",
+    "doing",
+    "did",
+    "does"
+   ],
+   "answer": 2,
+   "why": "anything fun 뒤에는 to부정사가 와서 '재미있게 할 것'이 된다. -thing + 형용사 + to-v 어순이다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: Why do you need scissors?\nB: I have some paper ____.",
+   "choices": [
+    "cut",
+    "cutting",
+    "cuts",
+    "to cutting",
+    "to cut"
+   ],
+   "answer": 5,
+   "why": "paper를 꾸며 '자를 종이'가 되도록 to cut을 쓴다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 단어들을 바르게 배열한 것은?\nGive me ____. (warm / something / wear / to)",
+   "choices": [
+    "warm something to wear",
+    "something to wear warm",
+    "something warm to wear",
+    "to wear warm something",
+    "something warm wear to"
+   ],
+   "answer": 3,
+   "why": "-thing + 형용사 + to부정사 어순이므로 something warm to wear가 옳다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Is there ____ at the festival?",
+   "choices": [
+    "special anything to see",
+    "anything special to see",
+    "anything to see special",
+    "to see anything special",
+    "anything special seeing"
+   ],
+   "answer": 2,
+   "why": "anything은 형용사(special)가 뒤에서 꾸미고 그 뒤에 to부정사가 오므로 anything special to see가 옳다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은? (할 말)",
+   "choices": [
+    "He has nothing say.",
+    "He has nothing to say.",
+    "He has to nothing say.",
+    "He has nothing saying.",
+    "He has nothing says."
+   ],
+   "answer": 2,
+   "why": "nothing을 꾸미는 to부정사 to say를 붙인 He has nothing to say.가 옳다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 틀린 것은? (형태)",
+   "choices": [
+    "I need time <u>to think</u>.",
+    "She has a song <u>to sing</u>.",
+    "We have a plan <u>to travel</u>.",
+    "He wants something <u>drinking</u>.",
+    "They have a story <u>to share</u>."
+   ],
+   "answer": 4,
+   "why": "something을 꾸미는 것은 to부정사이므로 drinking이 아니라 to drink로 써야 한다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 들어갈 말은?\n• I have a letter ____ write.\n• She needs a friend ____ help her.",
+   "choices": [
+    "to",
+    "for",
+    "of",
+    "in",
+    "at"
+   ],
+   "answer": 1,
+   "why": "두 문장 모두 명사(letter, friend)를 꾸미는 to부정사 자리이므로 to가 공통으로 들어간다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: What are you looking for?\nB: I'm looking for a cap ____.",
+   "choices": [
+    "wear",
+    "wearing",
+    "wore",
+    "wears",
+    "to wear"
+   ],
+   "answer": 5,
+   "why": "cap을 꾸며 '쓸 모자'가 되도록 to wear를 쓴다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My grandma needs glasses ____ the newspaper.",
+   "choices": [
+    "read",
+    "reading",
+    "reads",
+    "to reading",
+    "to read"
+   ],
+   "answer": 5,
+   "why": "glasses를 꾸며 '신문을 읽을 안경'이 되도록 to read를 쓴다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She made a plan ____ money.",
+   "choices": [
+    "save",
+    "saving",
+    "to save",
+    "saved",
+    "saves"
+   ],
+   "answer": 3,
+   "why": "plan을 꾸며 '돈을 모을 계획'이 되도록 to save를 쓴다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: Are you free this weekend?\nB: No, I have a lot of work ____.",
+   "choices": [
+    "do",
+    "doing",
+    "did",
+    "to do",
+    "done"
+   ],
+   "answer": 4,
+   "why": "work를 꾸며 '할 일이 많다'가 되도록 to do를 쓴다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\nI have many books ____ (read).",
+   "answer": "to read",
+   "why": "명사 books를 뒤에서 꾸미는 to부정사 형태 to read가 알맞다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\nShe wants something ____ (drink).",
+   "answer": "to drink",
+   "why": "something을 뒤에서 꾸며 '마실 것'을 만드는 to drink가 알맞다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\nWe need time ____ (rest).",
+   "answer": "to rest",
+   "why": "명사 time을 꾸미는 to부정사 to rest가 알맞다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\nHe has a letter ____ (send).",
+   "answer": "to send",
+   "why": "letter를 꾸며 '보낼 편지'가 되도록 to send를 쓴다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\nIs there anything ____ (eat)?",
+   "answer": "to eat",
+   "why": "anything을 꾸며 '먹을 것'이 되도록 to eat을 쓴다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사 한 단어를 쓰시오.\nI need a friend to play ____.",
+   "answer": "with",
+   "why": "play with a friend(친구와 놀다)에서 전치사 with가 to부정사 뒤에 남는다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사 한 단어를 쓰시오.\nShe is looking for a house to live ____.",
+   "answer": "in",
+   "why": "live in a house(집에 살다)에서 전치사 in이 to부정사 뒤에 남는다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사 한 단어를 쓰시오.\nI need a pen to write ____.",
+   "answer": "with",
+   "why": "write with a pen(펜으로 쓰다)에서 도구를 나타내는 with가 남는다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사 한 단어를 쓰시오.\nGive me a chair to sit ____.",
+   "answer": "on",
+   "why": "sit on a chair(의자에 앉다)에서 전치사 on이 남는다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사 한 단어를 쓰시오.\nHe wants someone to talk ____.",
+   "answer": "to",
+   "alt": [
+    "with"
+   ],
+   "why": "talk to(with) someone(누군가와 이야기하다)에서 전치사 to(또는 with)가 남는다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하시오.\nI want ____. (something / cold / to / drink)",
+   "answer": "something cold to drink",
+   "why": "-thing + 형용사 + to부정사 어순으로 something cold to drink가 된다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하시오.\nDo you have ____ today? (anything / special / to / do)",
+   "answer": "anything special to do",
+   "why": "anything은 형용사 special이 뒤에서 꾸미고 그 뒤에 to do가 온다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하시오.\nI have ____ for the party. (nothing / to / wear)",
+   "answer": "nothing to wear",
+   "why": "nothing을 to부정사 to wear가 뒤에서 꾸며 '입을 것이 없다'가 된다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하시오.\nShe bought ____. (a book / to / read)",
+   "answer": "a book to read",
+   "why": "명사 a book을 to read가 뒤에서 꾸민다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하시오.\nHe needs ____. (something / warm / to / eat)",
+   "answer": "something warm to eat",
+   "why": "-thing + 형용사 + to부정사 어순으로 something warm to eat이 된다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nI want something <u>drink</u>.",
+   "answer": "to drink",
+   "why": "something을 꾸미려면 동사원형이 아니라 to부정사 to drink를 써야 한다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nShe has a lot of homework <u>doing</u> today.",
+   "answer": "to do",
+   "why": "homework를 뒤에서 꾸미는 것은 to부정사이므로 doing을 to do로 고친다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nHe needs a cap <u>wear</u>.",
+   "answer": "to wear",
+   "why": "cap을 꾸며 '쓸 모자'가 되려면 to wear로 고쳐야 한다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nDo you have time <u>help</u> me?",
+   "answer": "to help",
+   "why": "time을 꾸미는 to부정사 to help로 고쳐야 '나를 도와줄 시간'이 된다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThere are many places <u>visit</u> in Jeju.",
+   "answer": "to visit",
+   "why": "places를 꾸미는 to부정사 to visit으로 고쳐야 '방문할 곳이 많다'가 된다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "I need a piece of paper ____.",
+   "choices": [
+    "to write",
+    "to write on",
+    "writing",
+    "to writing on",
+    "write on"
+   ],
+   "answer": 2,
+   "why": "write on paper(종이에 쓰다)이므로 전치사 on을 남긴 to write on이 옳다. to write만 쓰면 on이 빠져 어법상 틀린다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "He has no friends ____.",
+   "choices": [
+    "to talk",
+    "to talk to",
+    "talking",
+    "to talking",
+    "talk to"
+   ],
+   "answer": 2,
+   "why": "talk to a friend(친구에게 말하다)에서 전치사 to를 남긴 to talk to가 옳다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "We are looking for a hotel ____.",
+   "choices": [
+    "to stay",
+    "staying",
+    "to stay at",
+    "stay at",
+    "to staying at"
+   ],
+   "answer": 3,
+   "why": "stay at a hotel(호텔에 묵다)이므로 전치사 at을 남긴 to stay at이 옳다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "She needs a spoon ____.",
+   "choices": [
+    "to eat",
+    "to eat with",
+    "eating with",
+    "eat with",
+    "to eating"
+   ],
+   "answer": 2,
+   "why": "eat with a spoon(숟가락으로 먹다)이므로 도구의 with를 남긴 to eat with가 옳다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 수 없는 것은?\nI want something ____.",
+   "choices": [
+    "to eat",
+    "to drink",
+    "to read",
+    "to wear",
+    "to sleep"
+   ],
+   "answer": 5,
+   "why": "sleep은 목적어를 가질 수 없는 동사라서 something을 꾸밀 수 없다. eat, drink, read, wear는 something을 목적어로 삼을 수 있다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 to부정사의 쓰임이 나머지 넷과 다른 것은?",
+   "choices": [
+    "I have many things <u>to do</u>.",
+    "She needs a book <u>to read</u>.",
+    "He wants <u>to buy</u> a new phone.",
+    "We found a place <u>to park</u>.",
+    "There is nothing <u>to fear</u>."
+   ],
+   "answer": 3,
+   "why": "③은 wants의 목적어로 쓰인 명사적 용법이고, 나머지는 모두 앞의 (대)명사를 꾸미는 형용사적 용법이다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분의 쓰임이 <보기>와 같은 것은?\n<보기> Would you like something <u>to drink</u>?",
+   "choices": [
+    "My hobby is <u>to collect</u> coins.",
+    "<u>To exercise</u> every day is important.",
+    "I hope <u>to see</u> you again.",
+    "It's time <u>to say</u> goodbye.",
+    "He decided <u>to leave</u> early."
+   ],
+   "answer": 4,
+   "why": "보기의 to drink는 something을 꾸미는 형용사적 용법이고, ④의 to say도 명사 time을 꾸민다. 나머지는 보어·주어·목적어로 쓰인 명사적 용법이다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은? (룸메이트)",
+   "choices": [
+    "He is looking for a roommate to live.",
+    "He is looking for a roommate to live with.",
+    "He is looking for a roommate living with.",
+    "He is looking for a roommate to living with.",
+    "He is looking for a roommate to lives with."
+   ],
+   "answer": 2,
+   "why": "live with a roommate(룸메이트와 살다)이므로 with를 남긴 to live with가 옳다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은? (필기)",
+   "choices": [
+    "I have a lot of emails to answer.",
+    "She found a nice bag to carry her books in.",
+    "We need someone to fix the computer.",
+    "Do you have a pencil to write?",
+    "There are many mountains to climb in Korea."
+   ],
+   "answer": 4,
+   "why": "write with a pencil이므로 a pencil to write with로 써야 한다. 전치사 with가 빠져 틀렸다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은?",
+   "choices": [
+    "I bought a magazine <u>to read</u> on the train.",
+    "She wants something hot <u>to drink</u>.",
+    "He has no house <u>to live</u>.",
+    "We have great news <u>to tell</u> you.",
+    "They need more time <u>to practice</u>."
+   ],
+   "answer": 3,
+   "why": "live in a house이므로 to live in으로 써야 한다. 전치사 in이 빠져 틀렸다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n\"나는 오늘 해야 할 숙제가 많다.\"",
+   "choices": [
+    "I have many homework to do today.",
+    "I have a lot of homework to do today.",
+    "I have a lot of homework doing today.",
+    "I have a lot of homework to doing today.",
+    "I have a lot of homework do today."
+   ],
+   "answer": 2,
+   "why": "homework는 셀 수 없는 명사라 a lot of를 쓰고, 이를 꾸미는 to do를 뒤에 붙인다. many homework는 수량 표현이 틀렸다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n\"그는 함께 놀 친구가 필요하다.\"",
+   "choices": [
+    "He needs a friend to play.",
+    "He needs a friend playing with.",
+    "He needs a friend to play with.",
+    "He needs to play a friend with.",
+    "He needs with a friend to play."
+   ],
+   "answer": 3,
+   "why": "play with a friend에서 with를 남긴 a friend to play with가 옳다. with가 없으면 '함께'의 의미가 사라져 틀린다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n\"냉장고에 먹을 것이 아무것도 없다.\"",
+   "choices": [
+    "There is nothing to eat in the fridge.",
+    "There is anything to eat in the fridge.",
+    "There is nothing eating in the fridge.",
+    "There is nothing to eating in the fridge.",
+    "There is to eat nothing in the fridge."
+   ],
+   "answer": 1,
+   "why": "nothing을 to eat이 뒤에서 꾸미는 어순이 옳다. 긍정문에서 '아무것도 없다'는 anything이 아닌 nothing을 쓴다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 들어갈 말은?\n• He has a lot of work ____ do.\n• Is there anything ____ see near here?",
+   "choices": [
+    "to",
+    "for",
+    "with",
+    "on",
+    "of"
+   ],
+   "answer": 1,
+   "why": "두 문장 모두 명사·대명사(work, anything)를 꾸미는 to부정사 자리이므로 to가 들어간다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A: I'm thirsty.\nB: Here is ____ for you.",
+   "choices": [
+    "something cold to drink",
+    "cold something to drink",
+    "something to drink cold",
+    "to drink something cold",
+    "something cold drinking"
+   ],
+   "answer": 1,
+   "why": "-thing + 형용사 + to부정사 어순인 something cold to drink가 옳다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The teacher gave us a lot of problems ____.",
+   "choices": [
+    "solve",
+    "solving",
+    "to solve",
+    "solved",
+    "to solving"
+   ],
+   "answer": 3,
+   "why": "problems를 꾸며 '풀어야 할 문제'가 되도록 to solve를 쓴다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Kevin was busy, so he had no time ____ breakfast.",
+   "choices": [
+    "eat",
+    "to eat",
+    "eating",
+    "ate",
+    "to eating"
+   ],
+   "answer": 2,
+   "why": "time을 꾸미는 to부정사 to eat이 알맞다. '아침을 먹을 시간이 없었다'는 뜻이다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "I'm cold. Please give me something warm ____.",
+   "choices": [
+    "wear",
+    "to wear",
+    "wearing",
+    "wore",
+    "to wearing"
+   ],
+   "answer": 2,
+   "why": "something warm 뒤에 to부정사를 붙여 '입을 따뜻한 것'을 만든다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "We need a big house to live ____.",
+   "choices": [
+    "to",
+    "with",
+    "in",
+    "on",
+    "at"
+   ],
+   "answer": 3,
+   "why": "live in a house(집에 살다)이므로 전치사 in이 남는다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "She wants a friend to talk ____.",
+   "choices": [
+    "in",
+    "at",
+    "for",
+    "to",
+    "from"
+   ],
+   "answer": 4,
+   "why": "talk to a friend(친구에게 이야기하다)이므로 전치사 to가 남는다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "I bought a new brush to paint ____.",
+   "choices": [
+    "on",
+    "with",
+    "in",
+    "to",
+    "for"
+   ],
+   "answer": 2,
+   "why": "paint with a brush(붓으로 그리다)이므로 도구를 나타내는 with가 남는다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Do you have a box to put these toys ____?",
+   "choices": [
+    "on",
+    "at",
+    "in",
+    "with",
+    "to"
+   ],
+   "answer": 3,
+   "why": "put the toys in a box(상자에 장난감을 넣다)이므로 in이 남는다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 to부정사의 쓰임이 나머지 넷과 다른 것은? (여행)",
+   "choices": [
+    "Busan has many beaches <u>to enjoy</u>.",
+    "I brought a book <u>to read</u> during the trip.",
+    "She has a promise <u>to keep</u>.",
+    "He went to the store <u>to buy</u> milk.",
+    "We have a lot of photos <u>to show</u> you."
+   ],
+   "answer": 4,
+   "why": "④는 '사기 위해'라는 목적을 나타내는 부사적 용법이고, 나머지는 앞의 명사를 꾸미는 형용사적 용법이다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 수 없는 것은?\nI need a ____ to write with.",
+   "choices": [
+    "pen",
+    "pencil",
+    "crayon",
+    "notebook",
+    "marker"
+   ],
+   "answer": 4,
+   "why": "notebook은 write in(공책에 쓰다)으로 쓰는 물건이라 to write with(도구)와 어울리지 않는다. 나머지는 모두 필기 도구다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 수 없는 것은?\nShe is looking for a ____ to live in.",
+   "choices": [
+    "house",
+    "city",
+    "town",
+    "apartment",
+    "job"
+   ],
+   "answer": 5,
+   "why": "live in은 장소에 쓰는 표현이므로 job(직업)은 들어갈 수 없다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A: What do you want for your birthday?\nB: I want a puppy ____ with.",
+   "choices": [
+    "play",
+    "to play",
+    "playing",
+    "played",
+    "to playing"
+   ],
+   "answer": 2,
+   "why": "play with a puppy에서 with가 남았으므로 to play가 알맞다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은? (전치사)",
+   "choices": [
+    "She has an essay to finish by Friday.",
+    "I know a good restaurant to try.",
+    "We found a topic to talk.",
+    "He needs glasses to see the board.",
+    "There are many songs to listen to."
+   ],
+   "answer": 3,
+   "why": "talk about a topic이므로 a topic to talk about으로 써야 한다. about이 빠져 틀렸다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n\"우리는 오늘 밤 묵을 호텔을 찾았다.\"",
+   "choices": [
+    "We found a hotel to stay tonight.",
+    "We found a hotel to stay at tonight.",
+    "We found a hotel staying tonight.",
+    "We found a hotel to staying at tonight.",
+    "We found to stay at a hotel tonight."
+   ],
+   "answer": 2,
+   "why": "stay at a hotel이므로 전치사 at을 남긴 to stay at이 옳다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Mina has three cats ____ care of.",
+   "choices": [
+    "take",
+    "taking",
+    "to take",
+    "took",
+    "takes"
+   ],
+   "answer": 3,
+   "why": "take care of(돌보다)의 of가 뒤에 남아 있으므로 to take를 넣어 '돌봐야 할 고양이'를 만든다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 단어들을 바르게 배열하여 문장을 완성할 때 옳은 것은?\nHe has ____ me.",
+   "choices": [
+    "something important to tell",
+    "important something to tell",
+    "something to tell important",
+    "to tell something important",
+    "something important telling"
+   ],
+   "answer": 1,
+   "why": "something + 형용사 + to부정사 어순인 something important to tell이 옳다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "This is a difficult question ____.",
+   "choices": [
+    "answer",
+    "answering",
+    "answered",
+    "to answer",
+    "to answering"
+   ],
+   "answer": 4,
+   "why": "question을 꾸며 '대답하기 어려운 질문'이 되도록 to answer를 쓴다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? (전치사)",
+   "choices": [
+    "I need a friend <u>to travel with</u>.",
+    "She wants a chair <u>to sit on</u>.",
+    "He is looking for paper <u>to draw on</u>.",
+    "We need music <u>to listen</u>.",
+    "They found a house <u>to live in</u>."
+   ],
+   "answer": 4,
+   "why": "listen to music이므로 to listen to로 써야 한다. 전치사 to가 빠져 틀렸다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 들어갈 말은?\n• I have no one to talk ____.\n• She will give the book ____ him.",
+   "choices": [
+    "to",
+    "with",
+    "on",
+    "in",
+    "for"
+   ],
+   "answer": 1,
+   "why": "talk to(~에게 말하다)의 to와 give A to B의 to가 공통이다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A: Let's go camping this weekend.\nB: Good! I'll bring a tent ____ in.",
+   "choices": [
+    "sleep",
+    "sleeping",
+    "to sleep",
+    "slept",
+    "sleeps"
+   ],
+   "answer": 3,
+   "why": "sleep in a tent(텐트에서 자다)에서 in이 남았으므로 to sleep이 알맞다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "My grandmother needs someone ____ after her dog.",
+   "choices": [
+    "look",
+    "looking",
+    "looked",
+    "to look",
+    "looks"
+   ],
+   "answer": 4,
+   "why": "someone을 꾸며 '개를 돌봐줄 사람'이 되도록 to look을 쓴다. look after는 '돌보다'라는 뜻이다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Yumi was hungry, so she wanted ____.",
+   "choices": [
+    "warm something to eat",
+    "something warm to eat",
+    "something to eat warm",
+    "to eat warm something",
+    "something warm eating"
+   ],
+   "answer": 2,
+   "why": "-thing + 형용사 + to부정사 어순인 something warm to eat이 옳다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The children need a park ____ in.",
+   "choices": [
+    "play",
+    "to play",
+    "playing",
+    "played",
+    "plays"
+   ],
+   "answer": 2,
+   "why": "play in a park(공원에서 놀다)에서 in이 남았으므로 to play가 알맞다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n\"쓸 것(필기도구) 좀 있나요?\"",
+   "choices": [
+    "Do you have anything to write?",
+    "Do you have anything to write with?",
+    "Do you have anything writing with?",
+    "Do you have to write anything with?",
+    "Do you have anything with to write?"
+   ],
+   "answer": 2,
+   "why": "필기도구를 묻는 것이므로 write with의 with를 남긴 anything to write with가 옳다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 문장을 한 문장으로 바르게 바꾼 것은?\nI need a friend. + I can talk to the friend.",
+   "choices": [
+    "I need a friend to talk.",
+    "I need a friend to talk to.",
+    "I need a friend talking to.",
+    "I need to talk a friend.",
+    "I need a friend to talking to."
+   ],
+   "answer": 2,
+   "why": "talk to의 전치사 to를 그대로 남겨 a friend to talk to로 만들어야 한다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 문장을 한 문장으로 바르게 바꾼 것은?\nMary has homework. + She must finish it today.",
+   "choices": [
+    "Mary has homework to finish it today.",
+    "Mary has homework to finish today.",
+    "Mary has homework finishing today.",
+    "Mary has to homework finish today.",
+    "Mary has homework to finishes today."
+   ],
+   "answer": 2,
+   "why": "꾸밈을 받는 homework가 finish의 목적어이므로 뒤에 it을 또 쓰면 안 된다. to finish today가 옳다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Sam has an interesting story ____ us.",
+   "choices": [
+    "tell",
+    "telling",
+    "to tell",
+    "told",
+    "tells"
+   ],
+   "answer": 3,
+   "why": "story를 꾸며 '우리에게 들려줄 이야기'가 되도록 to tell을 쓴다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은? (벤치)",
+   "choices": [
+    "There is no bench to sit in the park.",
+    "There is no bench to sit on in the park.",
+    "There is no bench sitting on in the park.",
+    "There is no bench to sits on in the park.",
+    "There is no bench sit on in the park."
+   ],
+   "answer": 2,
+   "why": "sit on a bench이므로 on을 남긴 to sit on이 옳다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 수 없는 것은?\nI want something ____ to eat.",
+   "choices": [
+    "sweet",
+    "spicy",
+    "delicious",
+    "quickly",
+    "warm"
+   ],
+   "answer": 4,
+   "why": "-thing 뒤에는 형용사가 와야 하는데 quickly는 부사라서 들어갈 수 없다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A: I'm going to Jeju next week.\nB: Great! There are many things ____ there.",
+   "choices": [
+    "see",
+    "seeing",
+    "to see",
+    "saw",
+    "to seeing"
+   ],
+   "answer": 3,
+   "why": "things를 꾸며 '볼 것이 많다'가 되도록 to see를 쓴다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 들어갈 말은?\n• Please give me a fork to eat ____.\n• I need a friend to go shopping ____.",
+   "choices": [
+    "to",
+    "in",
+    "with",
+    "on",
+    "at"
+   ],
+   "answer": 3,
+   "why": "eat with a fork(도구), go shopping with a friend(동반)의 with가 공통으로 남는다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 to부정사가 앞의 명사를 꾸미는 것은?",
+   "choices": [
+    "He plans <u>to move</u> to Busan.",
+    "I'm happy <u>to meet</u> you.",
+    "She got up early <u>to catch</u> the bus.",
+    "Do you have time <u>to talk</u>?",
+    "It began <u>to rain</u>."
+   ],
+   "answer": 4,
+   "why": "④의 to talk는 명사 time을 꾸미는 형용사적 용법이다. ①⑤는 목적어(명사적), ②는 감정의 원인, ③은 목적(부사적)이다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\nHe has many places ____ (visit) this summer.",
+   "answer": "to visit",
+   "why": "places를 꾸미는 to부정사 to visit이 알맞다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\nShe needs something ____ (wear) to the party.",
+   "answer": "to wear",
+   "why": "something을 꾸며 '입을 것'이 되도록 to wear를 쓴다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 이용하여 빈칸을 3단어로 채우시오.\nI need a pencil ____ (write).",
+   "answer": "to write with",
+   "why": "write with a pencil(연필로 쓰다)이므로 전치사 with까지 남긴 to write with가 되어야 한다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 이용하여 빈칸을 3단어로 채우시오.\nWe are looking for a house ____ (live).",
+   "answer": "to live in",
+   "why": "live in a house이므로 전치사 in을 남긴 to live in이 되어야 한다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 이용하여 빈칸을 3단어로 채우시오.\nShe has no friends ____ (talk).",
+   "answer": "to talk to",
+   "alt": [
+    "to talk with"
+   ],
+   "why": "talk to(with) a friend이므로 전치사를 남긴 to talk to(또는 to talk with)가 되어야 한다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nDo you have a chair <u>to sit</u>?",
+   "answer": "to sit on",
+   "why": "sit on a chair이므로 전치사 on을 붙여 to sit on으로 고친다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nI want <u>cold something</u> to drink.",
+   "answer": "something cold",
+   "why": "-thing으로 끝나는 말은 형용사가 뒤에서 꾸미므로 something cold 어순이 옳다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nHe has a lot of questions <u>asking</u>.",
+   "answer": "to ask",
+   "why": "questions를 뒤에서 꾸미는 것은 to부정사이므로 to ask로 고친다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThere is nothing <u>to worry</u>.",
+   "answer": "to worry about",
+   "why": "worry about(~에 대해 걱정하다)이므로 전치사 about을 붙여 to worry about으로 고친다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하시오.\nI have ____ today. (to / important / something / do)",
+   "answer": "something important to do",
+   "why": "something + 형용사(important) + to부정사(to do) 어순이다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하시오.\nJenny wants ____. (a friend / with / to / play)",
+   "answer": "a friend to play with",
+   "why": "play with의 with를 맨 뒤에 남긴 a friend to play with 어순이다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하시오.\nGive me some paper ____. (to / draw / on)",
+   "answer": "to draw on",
+   "why": "draw on paper(종이에 그리다)이므로 to draw on 어순이다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장을 to부정사를 이용해 한 문장으로 바꿔 쓰시오.\nShe needs a chair. + She will sit on it.",
+   "answer": "She needs a chair to sit on.",
+   "why": "sit on의 전치사 on을 남기고 it은 지우고 a chair to sit on으로 연결한다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장을 to부정사를 이용해 한 문장으로 바꿔 쓰시오.\nI bought a magazine. + I will read it on the plane.",
+   "answer": "I bought a magazine to read on the plane.",
+   "why": "magazine이 read의 목적어이므로 it을 지우고 to read on the plane으로 연결한다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장을 to부정사를 이용해 한 문장으로 바꿔 쓰시오.\nHe wants a friend. + He can talk to the friend.",
+   "answer": "He wants a friend to talk to.",
+   "why": "talk to의 전치사 to를 문장 끝에 남겨 a friend to talk to로 만든다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사 한 단어를 쓰시오.\nMy baby brother needs a spoon to eat ____.",
+   "answer": "with",
+   "why": "eat with a spoon(숟가락으로 먹다)이므로 도구의 with가 남는다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사 한 단어를 쓰시오.\nThis is the best city to live ____.",
+   "answer": "in",
+   "why": "live in a city(도시에 살다)이므로 전치사 in이 남는다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사 한 단어를 쓰시오.\nI have no one to play ____.",
+   "answer": "with",
+   "why": "play with(~와 놀다)의 with가 to부정사 뒤에 남는다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\nIs there anything ____ (drink) in the fridge?",
+   "answer": "to drink",
+   "why": "anything을 꾸며 '마실 것'이 되도록 to drink를 쓴다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 괄호 안의 동사를 이용하여 빈칸을 2단어로 채우시오.\n그는 지켜야 할 약속이 있다. = He has a promise ____ (keep).",
+   "answer": "to keep",
+   "why": "promise를 꾸며 '지켜야 할 약속'이 되도록 to keep을 쓴다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nㄱ. I have a lot of work to do before dinner.\nㄴ. She wants something cold to drink.\nㄷ. He has no friends to play.\nㄹ. We found a nice bench to sit on.\nㅁ. There is special nothing to watch tonight.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ, ㄴ, ㄹ이 옳다. ㄷ은 play with의 with가 빠져 to play with로, ㅁ은 nothing special to watch 어순으로 고쳐야 한다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. Do you have anything interesting to read?\nㄴ. I need a piece of paper to write.\nㄷ. She was looking for someone to help her.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 -thing+형용사+to-v 어순, ㄷ은 someone을 꾸미는 to help로 옳다. ㄴ은 write on paper이므로 to write on이 되어야 한다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 틀린 것을 모두 고른 것은?\nㄱ. He needs a house to live in with his family.\nㄴ. I want hot something to eat.\nㄷ. We have many problems to solve them.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄴ은 something hot to eat 어순이어야 하고, ㄷ은 problems가 solve의 목적어이므로 them을 지워야 한다. ㄱ은 to live in이 올바르다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은?\nJake packed a warm jacket ①<u>to wear</u> at night, some snacks ②<u>to share</u> with his friends, and a flashlight ③<u>to use</u> in the dark. He also brought a notebook ④<u>to write</u> his ideas and a pen ⑤<u>to write with</u>.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 4,
+   "why": "공책에는 write in a notebook처럼 전치사가 필요하므로 to write his ideas in으로 고쳐야 한다. 나머지는 모두 올바른 형용사적 용법이다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 to부정사의 용법이 나머지 넷과 다른 것은?",
+   "choices": [
+    "There are many ways <u>to save</u> energy.",
+    "She has the ability <u>to speak</u> three languages.",
+    "I was surprised <u>to hear</u> the news.",
+    "We need more time <u>to prepare</u> for the festival.",
+    "He is not a man <u>to tell</u> a lie."
+   ],
+   "answer": 3,
+   "why": "③은 감정(surprised)의 원인을 나타내는 부사적 용법이고, 나머지는 모두 앞의 명사를 꾸미는 형용사적 용법이다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n\"나는 그 파티에 입고 갈 것이 하나도 없다.\"",
+   "choices": [
+    "I don't have nothing to wear to the party.",
+    "I have nothing to wear to the party.",
+    "I have nothing to wear the party.",
+    "I have anything to wear to the party.",
+    "I have nothing wearing to the party."
+   ],
+   "answer": 2,
+   "why": "nothing to wear가 옳고, '파티에'는 to the party로 나타낸다. ①은 이중 부정, ④는 긍정문의 anything이 틀렸다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "두 문장을 한 문장으로 바르게 바꾼 것은?\nThe boy has many toys. + He plays with them.",
+   "choices": [
+    "The boy has many toys to play.",
+    "The boy has many toys to play with them.",
+    "The boy has many toys to play with.",
+    "The boy has many toys playing with.",
+    "The boy has to play many toys with."
+   ],
+   "answer": 3,
+   "why": "play with의 with는 남기고 them은 지워야 하므로 many toys to play with가 옳다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Emily kept looking for a topic ____ with her new classmates.",
+   "choices": [
+    "talk about",
+    "to talk",
+    "to talk about",
+    "talking about",
+    "to talking about"
+   ],
+   "answer": 3,
+   "why": "talk about a topic이므로 전치사 about을 남긴 to talk about이 옳다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 순서대로 바르게 짝지어진 것은?\nWe need chairs to sit ____ and cups to drink ____.",
+   "choices": [
+    "on – from",
+    "on – with",
+    "in – from",
+    "on – to",
+    "at – from"
+   ],
+   "answer": 1,
+   "why": "sit on a chair, drink from a cup이므로 on – from 순서가 옳다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?\nㄱ. Please give me something to write with.\nㄴ. He has two kids to take care.\nㄷ. I found the perfect gift to give my mom.\nㄹ. She wants new something to try.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ㄴ은 take care of의 of가 빠졌고, ㄹ은 something new to try 어순이어야 하므로 틀린 문장은 2개다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분의 쓰임이 <보기>와 같은 것은?\n<보기> He is looking for a partner <u>to practice with</u>.",
+   "choices": [
+    "I hope <u>to travel</u> abroad someday.",
+    "<u>To learn</u> a new language takes time.",
+    "Sora has an interesting hobby <u>to tell</u> you about.",
+    "I turned on the TV <u>to watch</u> the news.",
+    "My plan is <u>to read</u> twenty books this year."
+   ],
+   "answer": 3,
+   "why": "보기는 명사 partner를 꾸미는 형용사적 용법이고, ③의 to tell you about도 hobby를 꾸민다. ①⑤는 명사적, ②는 주어, ④는 목적의 부사적 용법이다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은? (시간)",
+   "choices": [
+    "Minho has no time to playing games.",
+    "Minho has no time to play games.",
+    "Minho has no time play games.",
+    "Minho has not time to play games.",
+    "Minho has no time for play games."
+   ],
+   "answer": 2,
+   "why": "time을 꾸미는 to부정사는 to+동사원형이므로 to play games가 옳다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 순서대로 바르게 짝지어진 것은?\nA: Do you have a pen ____?\nB: Sorry, I only have a notebook ____.",
+   "choices": [
+    "to write – to write",
+    "to write with – to write in",
+    "to write in – to write with",
+    "to write with – to write with",
+    "writing with – writing in"
+   ],
+   "answer": 2,
+   "why": "펜은 도구이므로 write with, 공책은 그 안에 쓰므로 write in을 남겨야 한다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 짝지어진 대화가 어색한 것은?",
+   "choices": [
+    "A: I'm bored. B: Here's a comic book to read.",
+    "A: I'm thirsty. B: There's some juice to drink in the fridge.",
+    "A: I'm cold. B: Take this blanket to cover yourself with.",
+    "A: I'm hungry. B: I have nothing to eat, sorry.",
+    "A: I'm sleepy. B: Here's a math problem to solve."
+   ],
+   "answer": 5,
+   "why": "졸린 사람에게 풀 수학 문제를 주는 것은 대화의 흐름상 어울리지 않는다. 나머지는 상황에 맞는 응답이다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The hikers finally found a cave ____.",
+   "choices": [
+    "to spend the night",
+    "to spend the night in",
+    "spending the night",
+    "to spend in the night",
+    "to spending the night in"
+   ],
+   "answer": 2,
+   "why": "spend the night in a cave(동굴에서 밤을 보내다)이므로 전치사 in을 맨 뒤에 남긴 to spend the night in이 옳다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은? (공원)\nㄱ. Yuna brought a mat to sit on at the park.\nㄴ. I need warm clothes to wear in winter.\nㄷ. He wants a partner to dance.",
+   "choices": [
+    "ㄱ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄱ의 to sit on, ㄴ의 to wear는 옳다. ㄷ은 dance with a partner이므로 to dance with가 되어야 한다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은?\nOur school library has many books ①<u>to borrow</u>, quiet corners ②<u>to read</u>, and computers ③<u>to work on</u>. But it has no comfortable sofas ④<u>to relax on</u>, and students want ⑤<u>something new to enjoy</u>.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 2,
+   "why": "read in a corner(구석에서 읽다)이므로 to read in으로 전치사가 남아야 한다. 나머지는 모두 올바르다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n\"그 아기는 가지고 놀 안전한 장난감이 필요하다.\"",
+   "choices": [
+    "The baby needs a safe toy to play.",
+    "The baby needs a safe toy to play with.",
+    "The baby needs safe a toy to play with.",
+    "The baby needs a toy to play safe with.",
+    "The baby needs a safe toy playing with."
+   ],
+   "answer": 2,
+   "why": "play with a toy의 with를 남긴 a safe toy to play with가 옳다. with가 없으면 '가지고 놀'의 의미가 되지 않는다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 수 없는 것은?\nJulie needs something ____.",
+   "choices": [
+    "to eat",
+    "to think about",
+    "to wear to the wedding",
+    "to talk",
+    "to be proud of"
+   ],
+   "answer": 4,
+   "why": "talk는 목적어를 직접 가질 수 없으므로 to talk about처럼 전치사가 있어야 something을 꾸밀 수 있다. 나머지는 모두 가능하다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? (집안일)\nㄱ. Dad found a big box to keep his tools in.\nㄴ. I want a quiet room to study in.\nㄷ. She has three letters to send them tomorrow.\nㄹ. Do you know anyone to ask about this problem?\nㅁ. We have no bread to make sandwiches with.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "ㄷ만 틀렸다. letters가 send의 목적어이므로 them을 지워야 한다. 나머지 넷은 전치사가 남는 to부정사를 올바르게 썼다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은? (형태)",
+   "choices": [
+    "The hikers needed a guide to show them the way.",
+    "I have an old sweater to give away.",
+    "Minji brought snacks to share with her classmates.",
+    "He was the only student to solving the puzzle.",
+    "We need volunteers to clean the beach."
+   ],
+   "answer": 4,
+   "why": "to 뒤에는 동사원형이 와야 하므로 to solving이 아니라 to solve로 써야 한다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "두 문장을 한 문장으로 바르게 바꾼 것은?\nShe has two dogs. + She must walk them every morning.",
+   "choices": [
+    "She has two dogs to walk them every morning.",
+    "She has two dogs to walk every morning.",
+    "She has two dogs walking every morning.",
+    "She has to walk two dogs to every morning.",
+    "She has two dogs to walks every morning."
+   ],
+   "answer": 2,
+   "why": "dogs가 walk의 목적어이므로 them을 지우고 to walk every morning으로 연결한다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 들어갈 말은?\n• I need someone to go shopping ____.\n• She wants a friend to share the room ____.",
+   "choices": [
+    "with",
+    "on",
+    "in",
+    "to",
+    "for"
+   ],
+   "answer": 1,
+   "why": "go shopping with someone, share the room with a friend이므로 둘 다 with가 남는다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분을 어법에 맞게 고친 것은?\nKen has no one <u>to going to the concert with</u>.",
+   "choices": [
+    "to go to the concert",
+    "to go to the concert with",
+    "going to the concert with",
+    "to goes to the concert with",
+    "go to the concert with"
+   ],
+   "answer": 2,
+   "why": "to 뒤에는 동사원형이 오고, '함께 갈' 사람이므로 with도 남겨야 한다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 틀린 것을 모두 고른 것은? (오늘)\nㄱ. I have important nothing to do today.\nㄴ. She found a website to learn Chinese from.\nㄷ. He has a family to support.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ"
+   ],
+   "answer": 1,
+   "why": "ㄱ은 nothing important to do 어순이어야 한다. ㄴ은 learn from의 from을 남긴 올바른 문장, ㄷ은 family를 꾸미는 to support로 옳다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은?\nBefore the trip, Mina made a list of things ①<u>to pack</u>. She needed a hat ②<u>to protect</u> her face, comfortable shoes ③<u>to walk in</u>, and a small bag ④<u>to carry</u> her camera in. Most of all, she wanted someone special ⑤<u>traveling with</u>.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 5,
+   "why": "someone special을 꾸미려면 to부정사가 필요하므로 traveling with가 아니라 to travel with로 써야 한다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "A: Why are you carrying that big bag?\nB: I have a lot of things ____ today — books, shoes, and old clothes.",
+   "choices": [
+    "to give away",
+    "giving away",
+    "to giving away",
+    "give away",
+    "to gave away"
+   ],
+   "answer": 1,
+   "why": "things를 꾸미는 to부정사 to give away(나눠 줄, 처분할)가 알맞다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 순서대로 바르게 짝지어진 것은?\nI'm looking for a house ____ and a garden ____.",
+   "choices": [
+    "to live – to grow vegetables",
+    "to live in – to grow vegetables in",
+    "to live in – to grow vegetables",
+    "living in – growing vegetables in",
+    "to live – to grow vegetables in"
+   ],
+   "answer": 2,
+   "why": "live in a house, grow vegetables in a garden이므로 두 곳 모두 전치사 in이 남아야 한다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? (점심)\nㄱ. Would you like something sweet to eat?\nㄴ. I don't have anyone to sit with at lunch.\nㄷ. I need quiet somewhere to study.\nㄹ. There's a lot of housework to finish before Mom comes home.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ, ㄴ, ㄹ이 옳다. ㄷ은 somewhere quiet to study처럼 형용사가 somewhere 뒤에 와야 한다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 옮길 때 필요 없는 단어는?\n\"나는 앉을 의자가 필요하다.\"",
+   "choices": [
+    "chair",
+    "to",
+    "sit",
+    "on",
+    "at"
+   ],
+   "answer": 5,
+   "why": "I need a chair to sit on.이 되므로 at은 쓰이지 않는다. sit on a chair의 on은 반드시 남는다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 옮길 때 필요 없는 단어는?\n\"그는 함께 살 룸메이트를 찾고 있다.\"",
+   "choices": [
+    "roommate",
+    "to",
+    "live",
+    "with",
+    "in"
+   ],
+   "answer": 5,
+   "why": "He is looking for a roommate to live with.가 되므로 in은 필요 없다. '함께'는 with로 나타낸다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 단어들을 바르게 배열하여 문장을 만들 때 네 번째로 오는 것은?\n(something / I / need / cold / drink / to)",
+   "choices": [
+    "something",
+    "cold",
+    "to",
+    "drink",
+    "need"
+   ],
+   "answer": 2,
+   "why": "I need something cold to drink.가 되므로 네 번째 단어는 cold다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 단어들을 바르게 배열하여 문장을 만들 때 다섯 번째로 오는 것은?\n(with / a pen / write / to / borrowed / he)",
+   "choices": [
+    "a pen",
+    "to",
+    "write",
+    "with",
+    "borrowed"
+   ],
+   "answer": 3,
+   "why": "He borrowed a pen to write with.가 되므로 다섯 번째는 write다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The reporter had many people to interview and many stories ____.",
+   "choices": [
+    "write",
+    "to write",
+    "writing",
+    "wrote",
+    "to writes"
+   ],
+   "answer": 2,
+   "why": "stories를 꾸미는 to부정사 to write가 알맞다. 앞의 to interview와 대등한 구조다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 고쳐야 할 부분은?\nShe wants a partner to practice English.",
+   "choices": [
+    "practice → practicing",
+    "to practice → to practice with",
+    "wants → want",
+    "a partner → partners",
+    "고칠 필요 없음"
+   ],
+   "answer": 2,
+   "why": "practice English with a partner(파트너와 영어를 연습하다)이므로 with를 붙여 to practice English with가 되어야 한다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Tom has nothing to be afraid ____.",
+   "choices": [
+    "of",
+    "at",
+    "on",
+    "with",
+    "to"
+   ],
+   "answer": 1,
+   "why": "be afraid of(~을 두려워하다)의 of가 to부정사 뒤에 남는다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "to부정사가 명사를 꾸미는(형용사적 용법) 문장끼리 짝지은 것은?\nㄱ. I have a report to finish tonight.\nㄴ. She came home early to watch the drama.\nㄷ. There are many rules to remember.\nㄹ. His dream is to become a pilot.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄱ의 to finish는 report를, ㄷ의 to remember는 rules를 꾸민다. ㄴ은 목적(부사적), ㄹ은 보어(명사적)다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "A: The movie starts in ten minutes!\nB: Don't worry. We still have time ____ there.",
+   "choices": [
+    "get",
+    "to get",
+    "getting",
+    "got",
+    "to getting"
+   ],
+   "answer": 2,
+   "why": "time을 꾸미는 to부정사 to get이 알맞다. '거기에 갈 시간이 아직 있다'는 뜻이다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 나머지 넷과 다른 것은?",
+   "choices": [
+    "I need a friend to go camping ____.",
+    "She has no one to eat lunch ____.",
+    "He bought crayons to color ____.",
+    "We found a house to live ____.",
+    "Do you have a racket to play tennis ____?"
+   ],
+   "answer": 4,
+   "why": "④는 live in a house의 in이 들어가고, 나머지는 모두 동반·도구를 나타내는 with가 들어간다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 나머지 넷과 다른 것은? (장소)",
+   "choices": [
+    "Give me a chair to sit ____.",
+    "I need a mat to lie ____.",
+    "She wants paper to draw ____.",
+    "We need a stage to dance ____.",
+    "They are looking for an apartment to live ____."
+   ],
+   "answer": 5,
+   "why": "⑤는 live in an apartment의 in이 들어가고, 나머지는 모두 표면 위를 나타내는 on이 들어간다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "두 문장을 한 문장으로 바르게 바꾼 것은?\nThe kids want a yard. + They can run around in it.",
+   "choices": [
+    "The kids want a yard to run around.",
+    "The kids want a yard to run around in.",
+    "The kids want a yard to run around in it.",
+    "The kids want a yard running around in.",
+    "The kids want to run a yard around in."
+   ],
+   "answer": 2,
+   "why": "run around in a yard의 in은 남기고 it은 지워야 하므로 a yard to run around in이 옳다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은? (주말)",
+   "choices": [
+    "Sujin has a lot of chores to do this weekend.",
+    "Sujin has a lot of chores to do them this weekend.",
+    "Sujin has a lot of chores doing this weekend.",
+    "Sujin has a lot of chores to doing this weekend.",
+    "Sujin has a lot of chores do this weekend."
+   ],
+   "answer": 1,
+   "why": "chores가 do의 목적어이므로 them 없이 to do만 붙인 ①이 옳다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은? (취미)\nㄱ. He said funny something to make us laugh.\nㄴ. I finally found a club to join.\nㄷ. She has a warm scarf to wear on cold days.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄱ은 something funny 어순이어야 한다. ㄴ의 to join, ㄷ의 to wear는 올바른 형용사적 용법이다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "After the long hike, all I wanted was a soft bed ____.",
+   "choices": [
+    "to sleep",
+    "to sleep in",
+    "sleeping in",
+    "to sleeping",
+    "sleep in"
+   ],
+   "answer": 2,
+   "why": "sleep in a bed(침대에서 자다)이므로 전치사 in을 남긴 to sleep in이 옳다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은?\nEveryone needs a hobby ①<u>to enjoy</u> in their free time. My uncle collects old coins ②<u>to show</u> his friends. My aunt grows flowers ③<u>to put</u> in her vases. As for me, I look for new recipes ④<u>to try</u> and interesting people ⑤<u>to talk</u>.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 5,
+   "why": "talk to(with) people이므로 to talk to처럼 전치사가 남아야 한다. 나머지는 모두 올바르다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은? (계획)",
+   "choices": [
+    "We need a leader to guide us.",
+    "I have exciting news to tell you.",
+    "She bought a diary to write her secrets in.",
+    "Do you have anything to say about the plan?",
+    "He needs a quiet place to study in it."
+   ],
+   "answer": 5,
+   "why": "to부정사 뒤에 꾸밈받는 명사를 가리키는 it을 또 쓰면 안 되므로 to study in까지만 써야 한다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장을 to부정사를 이용해 한 문장으로 바꿔 쓰시오.\nI need a roommate. + I will share the apartment with him.",
+   "answer": "I need a roommate to share the apartment with.",
+   "why": "share with의 with를 문장 끝에 남기고 him을 지워 a roommate to share the apartment with로 연결한다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장을 to부정사를 이용해 한 문장으로 바꿔 쓰시오.\nShe bought a diary. + She will write her plans in it.",
+   "answer": "She bought a diary to write her plans in.",
+   "why": "write in a diary의 in을 남기고 it을 지워 a diary to write her plans in으로 만든다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장을 to부정사를 이용해 한 문장으로 바꿔 쓰시오.\nThey found a cave. + They could stay in it during the storm.",
+   "answer": "They found a cave to stay in during the storm.",
+   "why": "stay in a cave의 in을 남기고 it을 지워 a cave to stay in during the storm으로 연결한다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nMinho wants <u>special something</u> to do on his birthday.",
+   "answer": "something special",
+   "why": "-thing으로 끝나는 말은 형용사가 뒤에서 꾸미므로 something special이 옳다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nI have three dogs <u>to take care</u>.",
+   "answer": "to take care of",
+   "why": "take care of(돌보다)는 전치사 of까지 하나의 표현이므로 of를 남겨야 한다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nShe needs a friend <u>to travel</u>.",
+   "answer": "to travel with",
+   "why": "travel with a friend(친구와 함께 여행하다)이므로 with를 붙여야 '함께 여행할 친구'가 된다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 이용하여 빈칸을 4단어로 채우시오.\nI have ____ today. (report, finish)",
+   "answer": "a report to finish",
+   "why": "report를 to finish가 뒤에서 꾸며 '끝내야 할 보고서'가 된다. 관사 a를 포함해 4단어다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\nJunho is looking for a partner ____ (practice) tennis with.",
+   "answer": "to practice",
+   "why": "partner를 꾸미는 to부정사 자리이므로 to practice가 알맞다. 문장 끝의 with가 '함께 연습할'의 의미를 만든다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하시오.\nThere is ____. (nothing / to / about / worry)",
+   "answer": "nothing to worry about",
+   "why": "worry about의 about을 맨 뒤에 남긴 nothing to worry about 어순이다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하시오.\nI want ____. (someone / go / with / to / to the movies)",
+   "answer": "someone to go to the movies with",
+   "why": "go to the movies with someone에서 with를 맨 뒤에 남긴 어순이다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 괄호 안의 단어를 이용하여 빈칸을 5단어로 채우시오.\n그는 앉을 의자를 찾지 못했다. = He couldn't find ____. (chair, sit)",
+   "answer": "a chair to sit on",
+   "why": "sit on a chair의 on까지 남겨 a chair to sit on(5단어)으로 쓴다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 이용하여 빈칸을 3단어로 채우시오.\nThe fridge had nothing ____. (fresh, eat)",
+   "answer": "fresh to eat",
+   "why": "nothing + 형용사(fresh) + to부정사(to eat) 어순으로 '신선한 먹을 것이 없었다'가 된다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장을 to부정사를 이용해 한 문장으로 바꿔 쓰시오.\nEmma has many letters. + She must answer them.",
+   "answer": "Emma has many letters to answer.",
+   "why": "letters가 answer의 목적어이므로 them을 지우고 to answer만 붙인다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nWe need a bigger table <u>to put all the food</u>.",
+   "answer": "to put all the food on",
+   "why": "put the food on a table(식탁 위에 음식을 놓다)이므로 전치사 on을 끝에 붙여야 한다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nDo you have a pen <u>to write in</u>?",
+   "answer": "to write with",
+   "why": "펜은 도구이므로 write with a pen의 with를 남긴 to write with가 옳다. in은 공책 등 안에 쓸 때 쓴다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\nThe first thing ____ (remember) is safety.",
+   "answer": "to remember",
+   "why": "thing을 꾸며 '기억해야 할 첫 번째 것'이 되도록 to remember를 쓴다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사 한 단어를 쓰시오.\nThis app gives you interesting topics to talk ____ with friends.",
+   "answer": "about",
+   "why": "talk about a topic(주제에 대해 이야기하다)의 about이 to부정사 뒤에 남는다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사 한 단어를 쓰시오.\nHana needs a big vase to put the roses ____.",
+   "answer": "in",
+   "why": "put the roses in a vase(꽃병에 장미를 넣다)이므로 in이 남는다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장을 to부정사를 이용해 한 문장으로 바꿔 쓰시오.\nI want a friend. + I can play badminton with her.",
+   "answer": "I want a friend to play badminton with.",
+   "why": "play with의 with를 남기고 her를 지워 a friend to play badminton with로 연결한다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 괄호 안의 말을 이용하여 빈칸을 5단어로 채우시오.\n그 등산객들은 밤을 보낼 오두막을 발견했다. = The hikers found a hut ____. (spend, the night)",
+   "answer": "to spend the night in",
+   "why": "spend the night in a hut이므로 전치사 in을 맨 뒤에 남긴 to spend the night in(5단어)이 된다.",
+   "no": 200
+  }
+ ]
+}

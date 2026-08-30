@@ -1,0 +1,2604 @@
+{
+ "id": "m1-16",
+ "grade": "중1",
+ "name": "비교급·최상급",
+ "points": [
+  "-er/-est·more/most",
+  "불규칙 변화",
+  "than·the+최상급+in/of"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nTom is ____ than Mike.",
+   "choices": [
+    "tall",
+    "taller",
+    "tallest",
+    "more tall",
+    "most tall"
+   ],
+   "answer": 2,
+   "why": "뒤에 than이 있으므로 비교급 taller를 쓴다. tall은 원급, tallest는 최상급이라 맞지 않는다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nThis box is ____ than that one. (이 상자가 더 무겁다)",
+   "choices": [
+    "heavy",
+    "heavyer",
+    "heavier",
+    "heaviest",
+    "most heavy"
+   ],
+   "answer": 3,
+   "why": "heavy처럼 「자음+y」로 끝나는 형용사는 y를 i로 바꾸고 -er를 붙여 heavier가 된다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "big의 비교급으로 알맞은 것은?",
+   "choices": [
+    "bigger",
+    "biger",
+    "more big",
+    "biggest",
+    "bigest"
+   ],
+   "answer": 1,
+   "why": "big은 「단모음+단자음」으로 끝나므로 마지막 자음 g를 한 번 더 쓰고 -er를 붙여 bigger가 된다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "happy의 최상급으로 알맞은 것은?",
+   "choices": [
+    "happyest",
+    "most happy",
+    "happier",
+    "happiest",
+    "happyer"
+   ],
+   "answer": 4,
+   "why": "happy는 y를 i로 바꾸고 -est를 붙여 happiest가 된다. happier는 비교급이다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nAn elephant is ____ than a mouse.",
+   "choices": [
+    "big",
+    "biger",
+    "the biggest",
+    "bigger",
+    "biggest"
+   ],
+   "answer": 4,
+   "why": "than 앞이므로 비교급 bigger를 쓴다. g를 겹쳐 쓰는 것에 주의한다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nWinter is the ____ season of the four.",
+   "choices": [
+    "cold",
+    "colder",
+    "coldest",
+    "most cold",
+    "more cold"
+   ],
+   "answer": 3,
+   "why": "「the+최상급+of+복수」 구문이므로 최상급 coldest를 쓴다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "good의 비교급으로 알맞은 것은?",
+   "choices": [
+    "gooder",
+    "better",
+    "weller",
+    "best",
+    "more good"
+   ],
+   "answer": 2,
+   "why": "good은 불규칙 변화로 good-better-best이다. best는 최상급이다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "bad의 최상급으로 알맞은 것은?",
+   "choices": [
+    "badest",
+    "baddest",
+    "worse",
+    "worst",
+    "most bad"
+   ],
+   "answer": 4,
+   "why": "bad는 불규칙 변화로 bad-worse-worst이다. worse는 비교급이다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nThis movie is ____ interesting than that one.",
+   "choices": [
+    "very",
+    "much",
+    "more",
+    "most",
+    "many"
+   ],
+   "answer": 3,
+   "why": "interesting처럼 긴 형용사는 앞에 more를 붙여 비교급을 만든다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nMt. Everest is the ____ mountain in the world.",
+   "choices": [
+    "high",
+    "higher",
+    "more high",
+    "most high",
+    "highest"
+   ],
+   "answer": 5,
+   "why": "「the+최상급+in+장소」 구문이므로 highest를 쓴다. high는 -est를 붙이는 짧은 형용사다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nShe is the ____ singer in Korea. (가장 유명한)",
+   "choices": [
+    "famous",
+    "famouser",
+    "more famous",
+    "most famous",
+    "famousest"
+   ],
+   "answer": 4,
+   "why": "famous는 긴 형용사이므로 최상급은 most famous이다. -er/-est를 붙이지 않는다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nA cheetah runs ____ than a horse.",
+   "choices": [
+    "fast",
+    "faster",
+    "fastest",
+    "more fast",
+    "most fast"
+   ],
+   "answer": 2,
+   "why": "than이 있으므로 비교급 faster를 쓴다. fast는 -er를 붙이는 짧은 단어다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "many의 비교급으로 알맞은 것은?",
+   "choices": [
+    "manier",
+    "much",
+    "most",
+    "many",
+    "more"
+   ],
+   "answer": 5,
+   "why": "many는 불규칙 변화로 many-more-most이다. most는 최상급이다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nMy room is ____ than yours. (내 방이 더 크다)",
+   "choices": [
+    "large",
+    "largest",
+    "larger",
+    "more large",
+    "most large"
+   ],
+   "answer": 3,
+   "why": "large는 -e로 끝나므로 -r만 붙여 larger가 된다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nToday is ____ than yesterday. (오늘이 더 덥다)",
+   "choices": [
+    "hot",
+    "hotter",
+    "hoter",
+    "hottest",
+    "the hottest"
+   ],
+   "answer": 2,
+   "why": "hot은 「단모음+단자음」이므로 t를 겹쳐 hotter가 된다. than과 함께 비교급을 쓴다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nEnglish is ____ than math for me. (더 쉽다)",
+   "choices": [
+    "easy",
+    "easyer",
+    "easier",
+    "easiest",
+    "most easy"
+   ],
+   "answer": 3,
+   "why": "easy는 y를 i로 바꾸고 -er를 붙여 easier가 된다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nMinho is the ____ boy in his class. (키가 가장 큰)",
+   "choices": [
+    "tall",
+    "taller",
+    "most tall",
+    "tallest",
+    "more tall"
+   ],
+   "answer": 4,
+   "why": "「the+최상급+in+단체」이므로 tallest를 쓴다. taller는 than과 함께 쓰는 비교급이다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "원급 - 비교급 - 최상급이 바르게 짝지어진 것은?",
+   "choices": [
+    "big - biger - bigest",
+    "easy - easier - easiest",
+    "good - gooder - goodest",
+    "pretty - prettyer - prettyest",
+    "famous - famouser - famousest"
+   ],
+   "answer": 2,
+   "why": "easy는 y를 i로 바꿔 easier-easiest가 된다. big은 bigger-biggest, good은 better-best, pretty는 prettier-prettiest, famous는 more/most famous이다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "원급 - 비교급 - 최상급이 잘못 짝지어진 것은?",
+   "choices": [
+    "tall - taller - tallest",
+    "hot - hotter - hottest",
+    "bad - worse - worst",
+    "nice - nicer - nicest",
+    "easy - easyer - easyest"
+   ],
+   "answer": 5,
+   "why": "easy는 y를 i로 바꿔 easier-easiest로 써야 한다. 나머지는 모두 올바른 변화형이다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nThis question is ____ than that one. (더 어렵다)",
+   "choices": [
+    "difficult",
+    "difficulter",
+    "more difficult",
+    "most difficult",
+    "the most difficult"
+   ],
+   "answer": 3,
+   "why": "difficult는 긴 형용사이므로 비교급은 more difficult이다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nFebruary is the ____ month of the year.",
+   "choices": [
+    "short",
+    "shorter",
+    "shortest",
+    "more short",
+    "most short"
+   ],
+   "answer": 3,
+   "why": "「the+최상급+of the year」 구문이므로 최상급 shortest를 쓴다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nHealth is ____ than money. (더 중요하다)",
+   "choices": [
+    "important",
+    "importanter",
+    "most important",
+    "more important",
+    "much important"
+   ],
+   "answer": 4,
+   "why": "important는 긴 형용사이므로 more important로 비교급을 만든다. -er는 붙일 수 없다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nThe Amazon is ____ than the Han River.",
+   "choices": [
+    "long",
+    "longer",
+    "longest",
+    "more long",
+    "most long"
+   ],
+   "answer": 2,
+   "why": "than이 있으므로 비교급 longer를 쓴다. long은 -er를 붙이는 짧은 형용사다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nJane is the ____ student in her school. (가장 똑똑한)",
+   "choices": [
+    "smart",
+    "smarter",
+    "more smart",
+    "most smart",
+    "smartest"
+   ],
+   "answer": 5,
+   "why": "「the+최상급+in+장소」이므로 smartest를 쓴다. smart는 -est를 붙이는 짧은 형용사다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "small의 최상급으로 알맞은 것은?",
+   "choices": [
+    "smaller",
+    "smallest",
+    "most small",
+    "more small",
+    "smallless"
+   ],
+   "answer": 2,
+   "why": "small은 짧은 형용사이므로 -est를 붙여 smallest가 된다. smaller는 비교급이다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nMy hands are ____ than yours. (더 작다)",
+   "choices": [
+    "small",
+    "smaller",
+    "the smallest",
+    "more small",
+    "most small"
+   ],
+   "answer": 2,
+   "why": "than이 있으므로 비교급 smaller를 쓴다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "nice의 비교급으로 알맞은 것은?",
+   "choices": [
+    "nicer",
+    "nicier",
+    "more nice",
+    "nicest",
+    "niceer"
+   ],
+   "answer": 1,
+   "why": "nice는 -e로 끝나므로 -r만 붙여 nicer가 된다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "large의 최상급으로 알맞은 것은?",
+   "choices": [
+    "largest",
+    "largeest",
+    "most large",
+    "larger",
+    "more large"
+   ],
+   "answer": 1,
+   "why": "large는 -e로 끝나므로 -st만 붙여 largest가 된다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "pretty의 비교급으로 알맞은 것은?",
+   "choices": [
+    "prettyer",
+    "prettier",
+    "more pretty",
+    "prettiest",
+    "most pretty"
+   ],
+   "answer": 2,
+   "why": "「자음+y」로 끝나므로 y를 i로 바꾸고 -er를 붙여 prettier가 된다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "busy의 최상급으로 알맞은 것은?",
+   "choices": [
+    "busyest",
+    "busier",
+    "busiest",
+    "most busy",
+    "busyer"
+   ],
+   "answer": 3,
+   "why": "y를 i로 바꾸고 -est를 붙여 busiest가 된다. busier는 비교급이다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "well의 비교급으로 알맞은 것은?",
+   "choices": [
+    "weller",
+    "more well",
+    "better",
+    "best",
+    "gooder"
+   ],
+   "answer": 3,
+   "why": "well은 불규칙 변화로 well-better-best이다. best는 최상급이다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "little의 비교급으로 알맞은 것은?",
+   "choices": [
+    "littler",
+    "littlest",
+    "less",
+    "least",
+    "more little"
+   ],
+   "answer": 3,
+   "why": "little(양이 적은)은 불규칙 변화로 little-less-least이다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nSujin is ____ than her friend Mina. (더 친절하다)",
+   "choices": [
+    "kind",
+    "kinder",
+    "kindest",
+    "more kind",
+    "most kind"
+   ],
+   "answer": 2,
+   "why": "than이 있으므로 비교급 kinder를 쓴다. kind는 -er를 붙이는 짧은 형용사다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nThis street is ____ than that street. (더 넓다)",
+   "choices": [
+    "wide",
+    "widest",
+    "wider",
+    "more wide",
+    "most wide"
+   ],
+   "answer": 3,
+   "why": "wide는 -e로 끝나므로 -r만 붙여 wider가 된다. than과 함께 비교급을 쓴다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nHe is the ____ student in our class. (가장 웃긴)",
+   "choices": [
+    "funny",
+    "funnier",
+    "funniest",
+    "most funny",
+    "funnyest"
+   ],
+   "answer": 3,
+   "why": "「the+최상급+in+단체」이므로 y를 i로 바꾼 funniest를 쓴다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nThis car is ____ than that bike. (더 비싸다)",
+   "choices": [
+    "expensive",
+    "expensiver",
+    "more expensive",
+    "most expensive",
+    "the most expensive"
+   ],
+   "answer": 3,
+   "why": "expensive는 긴 형용사이므로 비교급은 more expensive이다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nA plane is ____ than a train.",
+   "choices": [
+    "fast",
+    "faster",
+    "the fastest",
+    "more fast",
+    "most fast"
+   ],
+   "answer": 2,
+   "why": "than이 있으므로 비교급 faster를 쓴다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nThis is the ____ book in the library. (가장 오래된)",
+   "choices": [
+    "old",
+    "older",
+    "oldest",
+    "most old",
+    "more old"
+   ],
+   "answer": 3,
+   "why": "「the+최상급+in+장소」이므로 oldest를 쓴다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nMy hair is ____ than my sister's. (더 길다)",
+   "choices": [
+    "long",
+    "longest",
+    "longer",
+    "more long",
+    "most long"
+   ],
+   "answer": 3,
+   "why": "than이 있으므로 비교급 longer를 쓴다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "young의 최상급으로 알맞은 것은?",
+   "choices": [
+    "youngger",
+    "younger",
+    "youngest",
+    "most young",
+    "more young"
+   ],
+   "answer": 3,
+   "why": "young은 -est를 붙여 youngest가 된다. younger는 비교급이다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "원급 - 비교급이 바르게 짝지어진 것은?",
+   "choices": [
+    "hot - hoter",
+    "big - biger",
+    "thin - thinner",
+    "easy - easyer",
+    "good - gooder"
+   ],
+   "answer": 3,
+   "why": "thin은 「단모음+단자음」이므로 n을 겹쳐 thinner가 된다. hot은 hotter, big은 bigger, easy는 easier, good은 better이다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "원급 - 최상급이 잘못 짝지어진 것은?",
+   "choices": [
+    "small - smallest",
+    "happy - happiest",
+    "nice - nicest",
+    "much - most",
+    "well - wellest"
+   ],
+   "answer": 5,
+   "why": "well의 최상급은 불규칙 변화형 best이다. 나머지는 모두 옳다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nThis is the ____ room in the house. (가장 깨끗한)",
+   "choices": [
+    "clean",
+    "cleaner",
+    "cleanest",
+    "most clean",
+    "more clean"
+   ],
+   "answer": 3,
+   "why": "「the+최상급+in+장소」이므로 cleanest를 쓴다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nMy dog is ____ than your dog. (더 귀엽다)",
+   "choices": [
+    "cute",
+    "cuter",
+    "cutest",
+    "more cute",
+    "most cute"
+   ],
+   "answer": 2,
+   "why": "cute는 -e로 끝나므로 -r만 붙여 cuter가 된다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nTom is ____ than his father. (더 힘이 세다)",
+   "choices": [
+    "strong",
+    "stronger",
+    "strongest",
+    "more strong",
+    "most strong"
+   ],
+   "answer": 2,
+   "why": "than이 있으므로 비교급 stronger를 쓴다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nI am the ____ in my family. (키가 가장 작다)",
+   "choices": [
+    "short",
+    "shorter",
+    "shortest",
+    "most short",
+    "more short"
+   ],
+   "answer": 3,
+   "why": "「the+최상급+in+단체」이므로 shortest를 쓴다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "easy의 비교급으로 알맞은 것은?",
+   "choices": [
+    "easyer",
+    "easier",
+    "more easy",
+    "easiest",
+    "easyest"
+   ],
+   "answer": 2,
+   "why": "y를 i로 바꾸고 -er를 붙여 easier가 된다. easiest는 최상급이다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nA turtle is ____ than a rabbit.",
+   "choices": [
+    "slow",
+    "slower",
+    "slowest",
+    "more slow",
+    "most slow"
+   ],
+   "answer": 2,
+   "why": "than이 있으므로 비교급 slower를 쓴다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "big의 비교급을 쓰시오.",
+   "answer": "bigger",
+   "why": "big은 「단모음+단자음」으로 끝나므로 g를 겹쳐 쓰고 -er를 붙인다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "easy의 최상급을 쓰시오.",
+   "answer": "easiest",
+   "why": "「자음+y」로 끝나므로 y를 i로 바꾸고 -est를 붙인다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "good의 비교급을 쓰시오.",
+   "answer": "better",
+   "why": "good은 불규칙 변화로 good-better-best이다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "bad의 비교급을 쓰시오.",
+   "answer": "worse",
+   "why": "bad는 불규칙 변화로 bad-worse-worst이다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "hot의 최상급을 쓰시오.",
+   "answer": "hottest",
+   "why": "「단모음+단자음」으로 끝나므로 t를 겹쳐 쓰고 -est를 붙인다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "famous의 비교급을 두 단어로 쓰시오.",
+   "answer": "more famous",
+   "why": "famous처럼 긴 형용사는 앞에 more를 붙여 비교급을 만든다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nMy brother is (young) than me.",
+   "answer": "younger",
+   "why": "뒤에 than이 있으므로 비교급 younger로 쓴다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nSeoul is the (big) city in Korea.",
+   "answer": "biggest",
+   "why": "「the ____ in+장소」이므로 최상급 biggest를 쓴다. g를 겹쳐 쓴다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nThis flower is (pretty) than that one.",
+   "answer": "prettier",
+   "why": "than이 있으므로 비교급으로 쓴다. y를 i로 바꾸고 -er를 붙여 prettier가 된다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "much의 최상급을 쓰시오.",
+   "answer": "most",
+   "why": "much는 불규칙 변화로 much-more-most이다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "small의 비교급을 쓰시오.",
+   "answer": "smaller",
+   "why": "small은 짧은 형용사이므로 -er를 붙인다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "happy의 비교급을 쓰시오.",
+   "answer": "happier",
+   "why": "y를 i로 바꾸고 -er를 붙여 happier가 된다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "well의 최상급을 쓰시오.",
+   "answer": "best",
+   "why": "well은 불규칙 변화로 well-better-best이다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "little의 최상급을 쓰시오.",
+   "answer": "least",
+   "why": "little은 불규칙 변화로 little-less-least이다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "nice의 최상급을 쓰시오.",
+   "answer": "nicest",
+   "why": "nice는 -e로 끝나므로 -st만 붙인다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "sad의 비교급을 쓰시오.",
+   "answer": "sadder",
+   "why": "「단모음+단자음」으로 끝나므로 d를 겹쳐 쓰고 -er를 붙인다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "difficult의 최상급을 두 단어로 쓰시오.",
+   "answer": "most difficult",
+   "why": "difficult처럼 긴 형용사는 앞에 most를 붙여 최상급을 만든다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nWinter days are (short) than summer days.",
+   "answer": "shorter",
+   "why": "than이 있으므로 비교급 shorter를 쓴다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nRussia is the (large) country in the world.",
+   "answer": "largest",
+   "why": "「the ____ in the world」이므로 최상급 largest를 쓴다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nThis puzzle is (easy) than that one.",
+   "answer": "easier",
+   "why": "than이 있으므로 y를 i로 바꾼 비교급 easier를 쓴다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nRussia is the largest country ____ the world.",
+   "choices": [
+    "of",
+    "in",
+    "at",
+    "on",
+    "for"
+   ],
+   "answer": 2,
+   "why": "최상급 뒤에 장소·범위를 나타내는 단수 명사(the world)가 오면 in을 쓴다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nJinsu is the fastest runner ____ the five boys.",
+   "choices": [
+    "in",
+    "at",
+    "of",
+    "on",
+    "to"
+   ],
+   "answer": 3,
+   "why": "최상급 뒤에 비교 대상이 되는 복수 명사(the five boys)가 오면 of를 쓴다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 틀린 문장은?",
+   "choices": [
+    "Tom is stronger than Sam.",
+    "This is the most expensive watch in the store.",
+    "She is more taller than her sister.",
+    "My cold is worse than yesterday.",
+    "He is the busiest man in town."
+   ],
+   "answer": 3,
+   "why": "taller가 이미 비교급이므로 앞에 more를 또 쓸 수 없다. taller than으로 써야 한다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 옳은 문장은?",
+   "choices": [
+    "Suji is smarter than her brother.",
+    "This building is the higher in our city.",
+    "Math is difficulter than science.",
+    "He is most famous singer in Korea.",
+    "Today is more hot than yesterday."
+   ],
+   "answer": 1,
+   "why": "smarter than은 올바른 비교급이다. ②는 the highest, ③은 more difficult, ④는 the most famous, ⑤는 hotter로 써야 한다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 틀린 것은?",
+   "choices": [
+    "My bag is <u>heavier</u> than yours.",
+    "He is <u>the tallest</u> boy in his class.",
+    "This book is <u>usefuler</u> than that one.",
+    "She sings <u>better</u> than me.",
+    "It was <u>the worst</u> day of my life."
+   ],
+   "answer": 3,
+   "why": "useful은 긴 형용사이므로 more useful로 비교급을 만든다. -er를 붙일 수 없다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 빈칸에 공통으로 알맞은 말은?\nI need ____ time to finish my homework.\nThis movie is ____ exciting than that one.",
+   "choices": [
+    "much",
+    "many",
+    "more",
+    "most",
+    "better"
+   ],
+   "answer": 3,
+   "why": "more time(더 많은 시간)과 more exciting(더 신나는, exciting의 비교급) 모두 more가 들어간다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 두 빈칸에 공통으로 알맞은 말은?\nA: Which do you like ____, dogs or cats?\nB: I like dogs ____.",
+   "choices": [
+    "good",
+    "well",
+    "better",
+    "best",
+    "more good"
+   ],
+   "answer": 3,
+   "why": "둘(dogs, cats) 중에서 더 좋아하는 것을 물을 때는 well의 비교급 better를 쓴다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n치타는 세상에서 가장 빠른 동물이다.",
+   "choices": [
+    "A cheetah is the faster animal in the world.",
+    "A cheetah is the fastest animal in the world.",
+    "A cheetah is fastest animal in the world.",
+    "A cheetah is the most fast animal in the world.",
+    "A cheetah is the fastest animal of the world."
+   ],
+   "answer": 2,
+   "why": "「the+최상급(fastest)+in+장소(the world)」로 쓴다. 최상급 앞에는 the가 필요하고, the world 앞에는 in을 쓴다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n이 문제는 저 문제보다 더 어렵다.",
+   "choices": [
+    "This question is difficult than that one.",
+    "This question is difficulter than that one.",
+    "This question is more difficult than that one.",
+    "This question is the most difficult than that one.",
+    "This question is more difficult that that one."
+   ],
+   "answer": 3,
+   "why": "difficult의 비교급은 more difficult이고, 비교 대상 앞에는 than을 쓴다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "괄호 안의 단어가 알맞게 변한 것은?\nToday is the (happy) day of my life.",
+   "choices": [
+    "happy",
+    "happier",
+    "happyest",
+    "happiest",
+    "most happy"
+   ],
+   "answer": 4,
+   "why": "「the+최상급+of my life」이므로 happy의 y를 i로 바꾸고 -est를 붙인 happiest를 쓴다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nThis is the ____ movie of the three. (가장 재미있는)",
+   "choices": [
+    "interesting",
+    "more interesting",
+    "most interesting",
+    "interestingest",
+    "most interested"
+   ],
+   "answer": 3,
+   "why": "interesting은 긴 형용사이므로 최상급은 most interesting이다. of the three와 함께 쓰였다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 ①~⑤ 중 어법상 틀린 것은?\nThis is ①<u>the</u> ②<u>more</u> beautiful ③<u>flower</u> ④<u>in</u> the ⑤<u>garden</u>.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 2,
+   "why": "in the garden(정원에서)이라는 범위가 있으므로 최상급 the most beautiful을 써야 한다. more를 most로 고친다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nMy bag is heavier ____ yours.",
+   "choices": [
+    "that",
+    "then",
+    "than",
+    "as",
+    "to"
+   ],
+   "answer": 3,
+   "why": "비교급 뒤에서 비교 대상을 나타내는 말은 than이다. then(그때)과 혼동하지 않는다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n건강이 돈보다 더 중요하다.",
+   "choices": [
+    "Health is important than money.",
+    "Health is more important than money.",
+    "Health is the most important than money.",
+    "Health is importanter than money.",
+    "Health is more important money."
+   ],
+   "answer": 2,
+   "why": "important의 비교급은 more important이고, 비교 대상(money) 앞에 than을 쓴다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "I have more books than my sister.",
+    "I have many books than my sister.",
+    "I have much books than my sister.",
+    "I have the most books of my sister.",
+    "I have more book than my sister."
+   ],
+   "answer": 1,
+   "why": "many의 비교급 more와 복수 명사 books, than을 바르게 썼다. than 앞에는 비교급이 와야 하고 books는 복수형이어야 한다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\nA: How was the math test?\nB: It was ____ than the last one. I got only 50 points.",
+   "choices": [
+    "bad",
+    "badder",
+    "worse",
+    "worst",
+    "the worst"
+   ],
+   "answer": 3,
+   "why": "than이 있으므로 bad의 불규칙 비교급 worse를 쓴다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nJunho is the ____ of the three brothers. (가장 어린)",
+   "choices": [
+    "young",
+    "younger",
+    "youngest",
+    "more young",
+    "most young"
+   ],
+   "answer": 3,
+   "why": "「the+최상급+of+복수(the three brothers)」이므로 youngest를 쓴다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nThe blue whale is ____ animal in the ocean.",
+   "choices": [
+    "large",
+    "larger",
+    "the larger",
+    "largest",
+    "the largest"
+   ],
+   "answer": 5,
+   "why": "in the ocean이라는 범위 안에서 최고를 나타내므로 최상급을 쓰고, 최상급 앞에는 반드시 the를 붙인다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nWhich is ____, the sun or the moon?",
+   "choices": [
+    "big",
+    "bigger",
+    "biggest",
+    "the biggest",
+    "more big"
+   ],
+   "answer": 2,
+   "why": "둘(the sun, the moon)을 비교하는 의문문이므로 비교급 bigger를 쓴다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 틀린 것은?",
+   "choices": [
+    "He is smartest boy in the class.",
+    "She is taller than her mom.",
+    "This is the cheapest bag in the shop.",
+    "I feel better today.",
+    "July is hotter than June."
+   ],
+   "answer": 1,
+   "why": "최상급 앞에는 the가 필요하므로 the smartest boy로 써야 한다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nMath is ____ subject for me. (가장 어려운 과목)",
+   "choices": [
+    "difficult",
+    "more difficult",
+    "the more difficult",
+    "most difficult",
+    "the most difficult"
+   ],
+   "answer": 5,
+   "why": "difficult의 최상급은 most difficult이고 앞에 the를 붙여 the most difficult로 쓴다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 옳은 것은?",
+   "choices": [
+    "Time is <u>importanter</u> than money.",
+    "This river is <u>the longest</u> in Korea.",
+    "My score is <u>badder</u> than yours.",
+    "He is <u>the most nicest</u> teacher.",
+    "She has <u>much</u> friends than me."
+   ],
+   "answer": 2,
+   "why": "the longest in Korea는 「the+최상급+in+장소」로 올바르다. ①은 more important, ③은 worse, ④는 the nicest, ⑤는 more로 써야 한다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nMinji gets up ____ than her brother. (더 일찍)",
+   "choices": [
+    "early",
+    "earlier",
+    "earliest",
+    "more early",
+    "most early"
+   ],
+   "answer": 2,
+   "why": "early는 y를 i로 바꾸고 -er를 붙여 earlier가 된다. than과 함께 비교급을 쓴다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nHe is the smartest ____ the four students.",
+   "choices": [
+    "in",
+    "of",
+    "at",
+    "to",
+    "for"
+   ],
+   "answer": 2,
+   "why": "최상급 뒤에 복수 명사(the four students)가 오면 of를 쓴다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "비교급·최상급의 쓰임이 어법상 틀린 문장은?",
+   "choices": [
+    "My grade is better than last year.",
+    "This is the saddest movie of the year.",
+    "A giraffe is taller than a horse.",
+    "She is more younger than me.",
+    "I have less money than you."
+   ],
+   "answer": 4,
+   "why": "younger가 이미 비교급이므로 more를 함께 쓸 수 없다. younger than으로 써야 한다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은?",
+   "choices": [
+    "This is the worse day of my life.",
+    "This is the worst day of my life.",
+    "This is the baddest day of my life.",
+    "This is worst day of my life.",
+    "This is the most bad day of my life."
+   ],
+   "answer": 2,
+   "why": "of my life와 함께 최상급을 쓰므로 bad의 불규칙 최상급 worst 앞에 the를 붙인 the worst가 옳다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분이 어법상 틀린 것은?",
+   "choices": [
+    "Apples are <u>cheaper</u> than melons.",
+    "He is <u>the heaviest</u> player on the team.",
+    "My idea is <u>gooder</u> than yours.",
+    "She dances <u>the best</u> in her class.",
+    "This is <u>the sweetest</u> apple of the five."
+   ],
+   "answer": 3,
+   "why": "good의 비교급은 불규칙 변화형 better이다. gooder라는 형태는 없다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 빈칸에 공통으로 알맞은 말은?\nBusan is ____ than Daejeon. (더 크다)\nMy feet are ____ than my brother's.",
+   "choices": [
+    "big",
+    "bigger",
+    "biggest",
+    "more big",
+    "the biggest"
+   ],
+   "answer": 2,
+   "why": "두 문장 모두 than이 있으므로 big의 비교급 bigger가 공통으로 들어간다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\nA: Who is ____, you or your sister?\nB: My sister is. She was born in 2010, and I was born in 2012.",
+   "choices": [
+    "old",
+    "older",
+    "the oldest",
+    "oldest",
+    "more old"
+   ],
+   "answer": 2,
+   "why": "둘(you, your sister)을 비교하는 질문이므로 비교급 older를 쓴다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n8월은 1년 중 가장 더운 달이다.",
+   "choices": [
+    "August is the hottest month of the year.",
+    "August is the hotter month of the year.",
+    "August is hottest month of the year.",
+    "August is the most hot month of the year.",
+    "August is the hotest month of the year."
+   ],
+   "answer": 1,
+   "why": "hot의 최상급은 t를 겹쳐 쓴 hottest이고, 「the+최상급+of the year」로 쓴다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n이 노래가 저 노래보다 더 인기 있다.",
+   "choices": [
+    "This song is popular than that one.",
+    "This song is popularer than that one.",
+    "This song is more popular than that one.",
+    "This song is the most popular than that one.",
+    "This song is more popular then that one."
+   ],
+   "answer": 3,
+   "why": "popular의 비교급은 more popular이고 비교 대상 앞에는 than을 쓴다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "괄호 안의 단어가 알맞게 변한 것은?\nHe is the (brave) man in the village.",
+   "choices": [
+    "brave",
+    "braver",
+    "bravest",
+    "most brave",
+    "braveest"
+   ],
+   "answer": 3,
+   "why": "「the ____ in+장소」이므로 최상급을 쓴다. brave는 -e로 끝나므로 -st만 붙여 bravest가 된다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nThis road is ____ than that road. (더 위험하다)",
+   "choices": [
+    "dangerous",
+    "dangerouser",
+    "more dangerous",
+    "most dangerous",
+    "the most dangerous"
+   ],
+   "answer": 3,
+   "why": "dangerous는 긴 형용사이므로 비교급은 more dangerous이다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 ①~⑤ 중 어법상 틀린 것은?\nThis is ①<u>the</u> ②<u>biggest</u> fish ③<u>of</u> ④<u>the</u> ⑤<u>river</u>.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "최상급 뒤에 장소를 나타내는 단수 명사(the river)가 오므로 of가 아니라 in을 써야 한다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nI think love is ____ thing in life. (가장 중요한)",
+   "choices": [
+    "important",
+    "more important",
+    "most important",
+    "the most important",
+    "the more important"
+   ],
+   "answer": 4,
+   "why": "important의 최상급은 most important이고 앞에 the를 붙인다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 두 빈칸에 공통으로 알맞은 말은?\nA: Which season do you like ____, spring, summer, fall, or winter?\nB: I like summer ____. I love swimming.",
+   "choices": [
+    "good",
+    "well",
+    "better",
+    "best",
+    "most good"
+   ],
+   "answer": 4,
+   "why": "넷 이상 중에서 가장 좋아하는 것을 물을 때는 최상급 best를 쓴다. better는 둘을 비교할 때 쓴다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "비교급·최상급의 쓰임이 어법상 옳지 않은 문장은?",
+   "choices": [
+    "She speaks English better than me.",
+    "I ate more than my brother.",
+    "Today is colder than yesterday.",
+    "This hotel is the most cheapest in town.",
+    "He is the oldest member of the club."
+   ],
+   "answer": 4,
+   "why": "cheapest가 이미 최상급이므로 most를 함께 쓸 수 없다. the cheapest로 써야 한다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nWhich do you think is ____, health or money? (더 중요한)",
+   "choices": [
+    "important",
+    "more important",
+    "the most important",
+    "most important",
+    "importanter"
+   ],
+   "answer": 2,
+   "why": "둘(health, money)을 비교하므로 비교급 more important를 쓴다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\nA: I got 80 on the test.\nB: I got 90. My score is ____ than yours.",
+   "choices": [
+    "high",
+    "higher",
+    "highest",
+    "more high",
+    "the highest"
+   ],
+   "answer": 2,
+   "why": "than이 있으므로 비교급 higher를 쓴다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nThis is the ____ pizza in this town. (가장 맛있는)",
+   "choices": [
+    "delicious",
+    "deliciouser",
+    "more delicious",
+    "most delicious",
+    "deliciousest"
+   ],
+   "answer": 4,
+   "why": "delicious는 긴 형용사이므로 최상급은 most delicious이다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "비교급·최상급의 쓰임이 어법상 옳은 문장은?",
+   "choices": [
+    "My voice is louder than yours.",
+    "This box is more heavy than that one.",
+    "He is the most strongest man here.",
+    "Silver is expensiver than iron.",
+    "Kate is kindest girl in the club."
+   ],
+   "answer": 1,
+   "why": "louder than은 올바른 비교급이다. ②는 heavier, ③은 the strongest, ④는 more expensive, ⑤는 the kindest로 써야 한다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nThe Han River is ____ river in Seoul. (가장 긴)",
+   "choices": [
+    "long",
+    "longer",
+    "longest",
+    "the longest",
+    "most long"
+   ],
+   "answer": 4,
+   "why": "최상급 앞에는 the를 붙여 the longest로 쓴다. longest만 쓰면 the가 빠져 틀린다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nScience class is ____ than music class for me. (더 지루하다)",
+   "choices": [
+    "boring",
+    "boringer",
+    "more boring",
+    "most boring",
+    "the most boring"
+   ],
+   "answer": 3,
+   "why": "boring은 긴 형용사이므로 비교급은 more boring이다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분이 어법상 옳은 것은?",
+   "choices": [
+    "This tower is <u>taller</u> than that building.",
+    "I am <u>shortest</u> than my friend.",
+    "He has <u>the more</u> books in our class.",
+    "Julie is <u>most busy</u> on Mondays.",
+    "Winter is <u>the most cold</u> season."
+   ],
+   "answer": 1,
+   "why": "taller than은 올바른 비교급이다. ②는 shorter, ③은 the most, ④는 the busiest, ⑤는 the coldest로 써야 한다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n나는 우리 반에서 가장 어린 학생이다.",
+   "choices": [
+    "I am the youngest student in my class.",
+    "I am youngest student in my class.",
+    "I am the most young student in my class.",
+    "I am the youngest student of my class.",
+    "I am younger student in my class."
+   ],
+   "answer": 1,
+   "why": "「the+최상급(youngest)+in+단체(my class)」로 쓴다. 최상급 앞의 the와 전치사 in에 주의한다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\nA: How do you like your new school?\nB: I like it. It is ____ than my old school. (더 좋다)",
+   "choices": [
+    "good",
+    "well",
+    "better",
+    "best",
+    "the best"
+   ],
+   "answer": 3,
+   "why": "than이 있으므로 good의 불규칙 비교급 better를 쓴다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThis computer is <u>expensiver</u> than mine.",
+   "answer": "more expensive",
+   "why": "expensive는 긴 형용사이므로 -er를 붙이지 않고 more expensive로 쓴다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nHe is the <u>taller</u> boy in his class. (그는 반에서 키가 가장 큰 소년이다)",
+   "answer": "tallest",
+   "why": "「the ____ in+단체」로 범위 안에서 최고를 나타내므로 최상급 tallest를 쓴다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nSumi is the best singer ____ her school.",
+   "answer": "in",
+   "why": "최상급 뒤에 장소·단체를 나타내는 단수 명사(her school)가 오면 in을 쓴다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nThis is the oldest ____ the three buildings.",
+   "answer": "of",
+   "why": "최상급 뒤에 복수 명사(the three buildings)가 오면 of를 쓴다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nYesterday was the (bad) day of the week.",
+   "answer": "worst",
+   "why": "「the ____ of the week」이므로 bad의 불규칙 최상급 worst를 쓴다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nShe has (many) friends than me.",
+   "answer": "more",
+   "why": "than이 있으므로 many의 불규칙 비교급 more를 쓴다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장의 뜻에 맞게 old를 이용하여 빈칸에 한 단어를 쓰시오.\nTom is 15 years old. Jake is 13 years old.\n→ Tom is ____ than Jake.",
+   "answer": "older",
+   "why": "Tom이 Jake보다 나이가 많으므로 old의 비교급 older를 쓴다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "주어진 단어를 모두 한 번씩 사용하여 우리말에 맞는 문장을 완성하시오.\n(is / this / the / building / tallest / in / city / the)\n이것은 그 도시에서 가장 높은 건물이다.",
+   "answer": "This is the tallest building in the city.",
+   "alt": [
+    "This is the tallest building in the city"
+   ],
+   "why": "「the+최상급(tallest)+명사+in+장소」의 어순으로 배열한다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nMy cat is (thin) than yours.",
+   "answer": "thinner",
+   "why": "thin은 「단모음+단자음」으로 끝나므로 n을 겹쳐 쓰고 -er를 붙여 thinner가 된다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 두 단어로 어법에 맞게 고쳐 쓰시오.\nWinter is <u>coldest</u> season of the year.",
+   "answer": "the coldest",
+   "why": "최상급 앞에는 반드시 the를 붙여 the coldest로 쓴다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThis summer is <u>hoter</u> than last summer.",
+   "answer": "hotter",
+   "why": "hot은 「단모음+단자음」으로 끝나므로 t를 겹쳐 쓰고 -er를 붙인다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nSusie is the <u>most pretty</u> girl in the picture.",
+   "answer": "prettiest",
+   "why": "pretty는 짧은 형용사이므로 most를 쓰지 않고 y를 i로 바꿔 -est를 붙인 prettiest로 쓴다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nFall is the best season ____ the four.",
+   "answer": "of",
+   "why": "최상급 뒤에 복수를 나타내는 말(the four)이 오면 of를 쓴다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nHe is the richest man ____ the village.",
+   "answer": "in",
+   "why": "최상급 뒤에 장소를 나타내는 단수 명사(the village)가 오면 in을 쓴다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nThis is the (nice) gift of all.",
+   "answer": "nicest",
+   "why": "「the ____ of all」이므로 최상급을 쓴다. nice는 -st만 붙여 nicest가 된다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nI drink (little) milk than my brother.",
+   "answer": "less",
+   "why": "than이 있으므로 little의 불규칙 비교급 less를 쓴다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장의 뜻에 맞게 short를 이용하여 빈칸에 한 단어를 쓰시오.\nMina is 160cm tall. Sora is 155cm tall.\n→ Sora is ____ than Mina.",
+   "answer": "shorter",
+   "why": "Sora가 Mina보다 키가 작으므로 short의 비교급 shorter를 쓴다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "주어진 단어를 모두 한 번씩 사용하여 우리말에 맞는 문장을 완성하시오.\n(the / of / he / is / fastest / the / three / runners)\n그는 세 명의 달리기 선수 중에서 가장 빠르다.",
+   "answer": "He is the fastest of the three runners.",
+   "alt": [
+    "He is the fastest of the three runners"
+   ],
+   "why": "「the+최상급+of+복수 명사」의 어순으로 배열한다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nMy grandmother is the (old) person in my family.",
+   "answer": "oldest",
+   "why": "「the ____ in my family」이므로 최상급 oldest를 쓴다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 두 단어로 어법에 맞게 고쳐 쓰시오.\nBaseball is <u>popularer</u> than volleyball in my school.",
+   "answer": "more popular",
+   "why": "popular는 긴 형용사이므로 -er를 붙이지 않고 more popular로 쓴다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. This book is more useful than that one.\nㄴ. He is the most fastest runner in our school.\nㄷ. My score is worse than yours.",
+   "choices": [
+    "ㄱ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄱ은 more useful, ㄷ은 bad의 비교급 worse로 옳다. ㄴ은 fastest가 이미 최상급이므로 most를 함께 쓸 수 없다(the fastest).",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 틀린 것을 모두 고른 것은?\nㄱ. She is prettier than her sister.\nㄴ. Today is more hot than yesterday.\nㄷ. He is strongest of the five players.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 5,
+   "why": "ㄴ은 hot의 비교급이 hotter이므로 more hot이 틀렸고, ㄷ은 최상급 앞에 the가 빠져 the strongest로 써야 한다. ㄱ은 옳다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 표의 내용과 일치하고 어법도 옳은 문장은?\n[키] Tom: 160cm / Sam: 170cm / Jake: 165cm",
+   "choices": [
+    "Tom is taller than Jake.",
+    "Sam is shorter than Jake.",
+    "Jake is the tallest of the three.",
+    "Sam is the tallest of the three.",
+    "Tom is taller than Sam."
+   ],
+   "answer": 4,
+   "why": "Sam(170cm)이 셋 중 가장 크므로 「the+최상급+of the three」인 ④가 옳다. 나머지는 표의 내용과 맞지 않는다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 표의 내용과 일치하고 어법도 옳은 문장은?\n[공책 가격] A: 1,000원 / B: 2,000원 / C: 3,000원",
+   "choices": [
+    "Notebook A is more expensive than B.",
+    "Notebook B is the cheapest of the three.",
+    "Notebook C is the most expensive of the three.",
+    "Notebook B is more expensive than C.",
+    "Notebook A is the most expensive of the three."
+   ],
+   "answer": 3,
+   "why": "C가 셋 중 가장 비싸므로 the most expensive of the three가 옳다. A는 가장 싸고 B는 C보다 싸다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (a), (b)에 들어갈 말이 순서대로 짝지어진 것은?\nTom is (a)____ than Sam, and he is (b)____ student in his class.\n(Tom은 Sam보다 똑똑하고, 반에서 가장 똑똑한 학생이다)",
+   "choices": [
+    "smarter - smartest",
+    "smarter - the smartest",
+    "the smarter - smartest",
+    "smartest - the smarter",
+    "more smart - the most smart"
+   ],
+   "answer": 2,
+   "why": "(a)는 than과 함께 비교급 smarter, (b)는 in his class와 함께 「the+최상급」 the smartest를 쓴다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (a), (b)에 들어갈 말이 순서대로 짝지어진 것은?\nWinter is (a)____ season of the year, and January is colder (b)____ December.",
+   "choices": [
+    "the coldest - than",
+    "coldest - than",
+    "the coldest - then",
+    "the colder - than",
+    "most cold - than"
+   ],
+   "answer": 1,
+   "why": "(a)는 of the year와 함께 「the+최상급」 the coldest, (b)는 비교급 colder 뒤이므로 than을 쓴다. then이 아님에 주의한다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 문장의 개수는?\nㄱ. He runs faster than me.\nㄴ. This is the most oldest temple in Korea.\nㄷ. My bag is heavier than yours.\nㄹ. She is the kindest teacher of our school.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ㄱ, ㄷ이 옳다(2개). ㄴ은 the oldest(most 불필요), ㄹ은 단수 명사 our school 앞이므로 of가 아니라 in을 써야 한다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸 (a), (b)에 들어갈 말이 순서대로 짝지어진 것은?\nA: Who is the tallest (a)____ your family?\nB: My dad is. He is taller (b)____ me.",
+   "choices": [
+    "in - than",
+    "of - than",
+    "in - then",
+    "at - than",
+    "of - to"
+   ],
+   "answer": 1,
+   "why": "(a) family는 단체를 나타내는 단수 명사이므로 in, (b) 비교급 taller 뒤에는 than을 쓴다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n이곳은 한국에서 가장 인기 있는 공원이다.",
+   "choices": [
+    "This is the most popular park in Korea.",
+    "This is most popular park in Korea.",
+    "This is the popularest park in Korea.",
+    "This is the most popular park of Korea.",
+    "This is more popular park in Korea."
+   ],
+   "answer": 1,
+   "why": "popular의 최상급은 most popular이고 앞에 the를 붙이며, 단수 장소 명사 Korea 앞에는 in을 쓴다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n그는 우리 팀에서 최고의 선수이다.",
+   "choices": [
+    "He is the best player in our team.",
+    "He is the better player in our team.",
+    "He is best player in our team.",
+    "He is the goodest player in our team.",
+    "He is the most good player in our team."
+   ],
+   "answer": 1,
+   "why": "good의 불규칙 최상급은 best이고 최상급 앞에는 the를 붙인다. gooder/goodest 같은 형태는 없다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 ①~⑤ 중 어법상 틀린 것은?\nJeju is ①<u>the</u> ②<u>most</u> ③<u>beautifulest</u> island ④<u>in</u> ⑤<u>Korea</u>.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "beautiful의 최상급은 the most beautiful이다. beautifulest라는 형태는 없으므로 ③을 beautiful로 고쳐야 한다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 ①~⑤ 중 어법상 틀린 것은?\nI think soccer is ①<u>exciting</u> ②<u>than</u> baseball, but baseball is ③<u>the most</u> ④<u>popular</u> sport ⑤<u>in</u> my class.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 1,
+   "why": "뒤에 than baseball이 있으므로 비교급 more exciting을 써야 한다. 나머지는 모두 옳다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. This is the easiest question of the five.\nㄴ. My puppy is more cute than yours.\nㄷ. He came home earlier than usual.\nㄹ. She is the most famous actress in the world.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄴ, ㄷ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "ㄱ은 of+복수, ㄷ은 early의 비교급 earlier, ㄹ은 the most famous+in으로 모두 옳다. ㄴ은 cute의 비교급이 cuter이므로 more cute가 틀렸다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\nA: This shirt is 20 dollars, and that one is 35 dollars.\nB: Then that shirt is ____ this one.",
+   "choices": [
+    "cheaper than",
+    "more expensive than",
+    "the most expensive",
+    "as expensive as",
+    "expensive than"
+   ],
+   "answer": 2,
+   "why": "35달러인 저 셔츠가 20달러인 이 셔츠보다 비싸므로 more expensive than을 쓴다. 둘의 비교이므로 최상급은 쓸 수 없다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "두 빈칸에 공통으로 알맞은 말은?\nHe sings ____ than I do.\nMy cold got ____ after I took some medicine.",
+   "choices": [
+    "good",
+    "well",
+    "better",
+    "best",
+    "the best"
+   ],
+   "answer": 3,
+   "why": "첫 문장은 well의 비교급, 둘째 문장은 '(병이) 나아졌다'는 뜻으로 모두 better가 들어간다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "두 빈칸에 공통으로 알맞은 말은?\nI like math ____ than English.\nHe has ____ money than I do.",
+   "choices": [
+    "much",
+    "many",
+    "most",
+    "more",
+    "better"
+   ],
+   "answer": 4,
+   "why": "첫 문장은 '수학을 더 좋아한다'의 more, 둘째 문장은 much(많은)의 비교급 more가 들어간다. better는 money 앞에 쓰면 뜻이 통하지 않는다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은?",
+   "choices": [
+    "Today is the worst day of this month.",
+    "This bridge is longer than that one.",
+    "My room is smaller than my brother's.",
+    "He is the most tallest boy in his class.",
+    "Spring is warmer than winter."
+   ],
+   "answer": 4,
+   "why": "tallest가 이미 최상급이므로 most와 함께 쓸 수 없다. the tallest boy로 써야 한다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n이 산이 저 산보다 더 높다.",
+   "choices": [
+    "This mountain is higher than that one.",
+    "This mountain is more higher than that one.",
+    "This mountain is higher then that one.",
+    "This mountain is high than that one.",
+    "This mountain is the highest than that one."
+   ],
+   "answer": 1,
+   "why": "high의 비교급 higher와 than을 함께 쓴다. more higher는 비교급 중복이고, then은 than의 잘못된 표기다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 나머지 넷과 다른 것은?",
+   "choices": [
+    "He is the strongest man ____ the world.",
+    "She is the best cook ____ my family.",
+    "It is the highest building ____ Seoul.",
+    "This is the biggest ____ the four boxes.",
+    "He is the funniest student ____ our class."
+   ],
+   "answer": 4,
+   "why": "④는 복수 명사(the four boxes) 앞이므로 of를 쓰고, 나머지는 모두 장소·단체의 단수 명사 앞이므로 in을 쓴다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분의 쓰임이 옳은 것을 모두 고른 것은?\nㄱ. I got up <u>later</u> than my mom.\nㄴ. She drinks <u>more</u> water than me.\nㄷ. Health is <u>the most important</u> thing in life.",
+   "choices": [
+    "ㄱ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 5,
+   "why": "ㄱ은 late의 비교급, ㄴ은 much의 비교급 more, ㄷ은 important의 최상급으로 셋 다 옳다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\nA: What is ____ animal on land?\nB: The elephant is.",
+   "choices": [
+    "big",
+    "bigger",
+    "the bigger",
+    "the biggest",
+    "most big"
+   ],
+   "answer": 4,
+   "why": "'육지에서 가장 큰 동물'을 묻는 것이므로 「the+최상급」 the biggest를 쓴다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n나의 형은 우리 가족 중에서 가장 일찍 일어난다.",
+   "choices": [
+    "My brother gets up the earliest in my family.",
+    "My brother gets up earliest than my family.",
+    "My brother gets up the most early in my family.",
+    "My brother gets up the earliest of my family.",
+    "My brother gets up earlier in my family."
+   ],
+   "answer": 1,
+   "why": "early의 최상급은 earliest이고, 단체를 나타내는 단수 명사 my family 앞에는 in을 쓴다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (a), (b)에 들어갈 말이 순서대로 짝지어진 것은?\nThis problem is (a)____ than that one, but it is not (b)____ problem in the book.\n(이 문제는 저 문제보다 더 어렵지만, 책에서 가장 어려운 문제는 아니다)",
+   "choices": [
+    "harder - the hardest",
+    "harder - hardest",
+    "the harder - the hardest",
+    "hardest - the harder",
+    "more hard - most hard"
+   ],
+   "answer": 1,
+   "why": "(a)는 than과 함께 비교급 harder, (b)는 in the book과 함께 「the+최상급」 the hardest를 쓴다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. Sugar is sweeter than salt.\nㄴ. This is the deliciousest cake in the bakery.\nㄷ. He studies harder than his friends.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄱ의 sweeter와 ㄷ의 harder는 올바른 비교급이다. ㄴ은 delicious가 긴 형용사이므로 the most delicious로 써야 한다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 틀린 것을 모두 고른 것은?\nㄱ. My score is the highest in my class.\nㄴ. This question is easyer than that one.\nㄷ. She is the most tallest girl in her school.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄴ은 y를 i로 바꾼 easier로, ㄷ은 최상급 중복 없이 the tallest로 써야 한다. ㄱ은 옳다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 표의 내용과 일치하고 어법도 옳은 문장은?\n[나이] Mina: 14살 / Jisu: 16살 / Hana: 15살",
+   "choices": [
+    "Mina is older than Hana.",
+    "Jisu is the oldest of the three.",
+    "Hana is the youngest of the three.",
+    "Jisu is younger than Mina.",
+    "Hana is older than Jisu."
+   ],
+   "answer": 2,
+   "why": "Jisu(16살)가 셋 중 나이가 가장 많으므로 「the+최상급+of the three」인 ②가 옳다. 가장 어린 사람은 Mina이다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 표의 내용과 일치하고 어법도 옳은 문장은?\n[100m 기록] Ben: 15초 / Alex: 13초 / Chris: 14초",
+   "choices": [
+    "Ben is the fastest of the three.",
+    "Alex is slower than Chris.",
+    "Chris is faster than Alex.",
+    "Alex is the fastest of the three.",
+    "Ben is faster than Chris."
+   ],
+   "answer": 4,
+   "why": "기록이 가장 짧은 Alex(13초)가 가장 빠르므로 ④가 옳다. Ben은 셋 중 가장 느리다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (a), (b)에 들어갈 말이 순서대로 짝지어진 것은?\nBaseball is (a)____ than tennis in Korea, but soccer is (b)____ sport of all.\n(야구는 한국에서 테니스보다 인기 있지만, 축구가 모든 스포츠 중 가장 인기 있다)",
+   "choices": [
+    "more popular - the most popular",
+    "popularer - most popular",
+    "more popular - most popular",
+    "the most popular - more popular",
+    "popular - the most popular"
+   ],
+   "answer": 1,
+   "why": "(a)는 than과 함께 비교급 more popular, (b)는 of all과 함께 「the+최상급」 the most popular를 쓴다. ③은 the가 빠져 틀린다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (a), (b)에 들어갈 말이 순서대로 짝지어진 것은?\nMy cat is (a)____ than my dog, but my rabbit is (b)____ of the three.\n(내 고양이는 개보다 작지만, 토끼가 셋 중 가장 작다)",
+   "choices": [
+    "smaller - the smallest",
+    "smaller - smallest",
+    "smallest - the smaller",
+    "more small - the most small",
+    "smaller - the most small"
+   ],
+   "answer": 1,
+   "why": "(a)는 비교급 smaller, (b)는 of the three와 함께 「the+최상급」 the smallest를 쓴다. ②는 the가 빠져 틀린다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 문장의 개수는?\nㄱ. This juice is sweeter than that one.\nㄴ. He is the most funniest boy in the class.\nㄷ. February is shorter than March.\nㄹ. Julie sings the most well in the choir.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ㄱ, ㄷ이 옳다(2개). ㄴ은 최상급 중복이므로 the funniest, ㄹ은 well의 최상급이 불규칙이므로 the best로 써야 한다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸 (a), (b)에 들어갈 말이 순서대로 짝지어진 것은?\nA: Who is (a)____ singer in your class?\nB: Semi is. She sings (b)____ than me.",
+   "choices": [
+    "the best - better",
+    "the best - well",
+    "best - better",
+    "the better - best",
+    "the goodest - better"
+   ],
+   "answer": 1,
+   "why": "(a)는 good의 최상급 best 앞에 the를 붙이고, (b)는 than과 함께 well의 비교급 better를 쓴다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n내 컴퓨터는 네 것보다 더 오래되었지만, 그의 것이 셋 중에 가장 오래되었다.",
+   "choices": [
+    "My computer is older than yours, but his is the oldest of the three.",
+    "My computer is older than yours, but his is oldest of the three.",
+    "My computer is more old than yours, but his is the oldest of the three.",
+    "My computer is older than you, but his is the most oldest of the three.",
+    "My computer is the older than yours, but his is the oldest of the three."
+   ],
+   "answer": 1,
+   "why": "비교급 older than yours와 「the+최상급+of the three」를 모두 바르게 쓴 것은 ①이다. ②는 the가 빠졌고 ④는 최상급 중복이다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n제주도는 한국에서 가장 큰 섬이다.",
+   "choices": [
+    "Jeju is the largest island in Korea.",
+    "Jeju is the most large island in Korea.",
+    "Jeju is largest island in Korea.",
+    "Jeju is the largest island of Korea.",
+    "Jeju is the larger island in Korea."
+   ],
+   "answer": 1,
+   "why": "large의 최상급 largest 앞에 the를 붙이고, 단수 장소 명사 Korea 앞에는 in을 쓴다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 ①~⑤ 중 어법상 틀린 것은?\nFall is ①<u>the</u> ②<u>best</u> season ③<u>for</u> a picnic because the weather is ④<u>coolest</u> ⑤<u>than</u> in summer.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 4,
+   "why": "뒤에 than이 있으므로 최상급 coolest가 아니라 비교급 cooler를 써야 한다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 ①~⑤ 중 어법상 틀린 것은?\nTed is ①<u>taller</u> ②<u>than</u> his brother, and he is also ③<u>the</u> ④<u>heavier</u> boy ⑤<u>in</u> his family.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 4,
+   "why": "「the ____ in his family」로 가족 안에서 최고를 나타내므로 비교급 heavier가 아니라 최상급 heaviest를 써야 한다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. I have less time than you.\nㄴ. This is the most largest room in the hotel.\nㄷ. Her voice is more beautiful than mine.\nㄹ. Today is the luckiest day of my life.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄴ, ㄷ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "ㄱ은 little의 비교급 less, ㄷ은 more beautiful, ㄹ은 lucky의 최상급 luckiest로 모두 옳다. ㄴ은 최상급 중복이므로 the largest로 써야 한다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\nA: This backpack is 30,000 won, that one is 32,000 won, and the red one is 45,000 won.\nB: So the red one is ____ of the three.",
+   "choices": [
+    "cheaper",
+    "the cheapest",
+    "more expensive",
+    "the most expensive",
+    "expensive"
+   ],
+   "answer": 4,
+   "why": "45,000원인 빨간 가방이 셋 중 가장 비싸므로 「the+최상급」 the most expensive를 쓴다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "두 빈칸에 공통으로 알맞은 말은?\nI sleep ____ than before.\nWe had ____ rain this summer than last summer.",
+   "choices": [
+    "little",
+    "less",
+    "least",
+    "fewer",
+    "more little"
+   ],
+   "answer": 2,
+   "why": "'덜 잔다'와 '더 적은 비'는 모두 little의 비교급 less로 나타낸다. rain은 셀 수 없는 명사이므로 fewer는 쓸 수 없다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "두 빈칸에 공통으로 알맞은 말은?\nMy headache is getting ____. (점점 심해진다)\nHis cooking is ____ than mine. (더 형편없다)",
+   "choices": [
+    "bad",
+    "worse",
+    "worst",
+    "badder",
+    "the worst"
+   ],
+   "answer": 2,
+   "why": "두 문장 모두 bad의 불규칙 비교급 worse가 들어간다. badder라는 형태는 없다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "비교 표현이 어법상 틀린 문장은?",
+   "choices": [
+    "The cheetah runs the fastest of all land animals.",
+    "My homework is easier than yours.",
+    "This lake is the deepest in the country.",
+    "She has the most stickers in our class.",
+    "He is more busier than his father."
+   ],
+   "answer": 5,
+   "why": "busier가 이미 비교급이므로 more를 함께 쓸 수 없다. busier than으로 써야 한다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n누가 너의 가족 중에서 가장 나이가 많으시니?",
+   "choices": [
+    "Who is the oldest in your family?",
+    "Who is oldest in your family?",
+    "Who is the most old in your family?",
+    "Who is the oldest of your family?",
+    "Who is older in your family?"
+   ],
+   "answer": 1,
+   "why": "최상급 the oldest와 단체 명사 앞의 in을 바르게 쓴 것은 ①이다. ②는 the가 빠졌고 ④는 of가 아니라 in을 써야 한다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 들어갈 말이 나머지 넷과 다른 하나는?",
+   "choices": [
+    "This rope is longer ____ that one.",
+    "My phone is newer ____ yours.",
+    "He is stronger ____ his brother.",
+    "She is the wisest ____ the five queens.",
+    "Today is warmer ____ yesterday."
+   ],
+   "answer": 4,
+   "why": "④는 최상급 뒤에 복수 명사가 오므로 of를 쓰고, 나머지는 모두 비교급 뒤이므로 than을 쓴다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분의 쓰임이 옳은 것을 모두 고른 것은?\nㄱ. Seoul is <u>bigger</u> than Incheon.\nㄴ. I like apples <u>better</u> than oranges.\nㄷ. He is <u>the laziest</u> student in the class.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 5,
+   "why": "ㄱ은 big의 비교급, ㄴ은 like A better than B(B보다 A를 더 좋아하다), ㄷ은 lazy의 최상급으로 셋 다 옳다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\nA: Which is ____, the KTX or the bus?\nB: The KTX is. It takes only two hours.",
+   "choices": [
+    "fast",
+    "faster",
+    "fastest",
+    "the fastest",
+    "more fast"
+   ],
+   "answer": 2,
+   "why": "둘(the KTX, the bus)을 비교하는 의문문이므로 비교급 faster를 쓴다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n나는 어제보다 기분이 더 좋다.",
+   "choices": [
+    "I feel better than yesterday.",
+    "I feel weller than yesterday.",
+    "I feel more good than yesterday.",
+    "I feel the best than yesterday.",
+    "I feel good than yesterday."
+   ],
+   "answer": 1,
+   "why": "good의 불규칙 비교급 better를 than과 함께 쓴다. weller, more good 같은 형태는 없다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (a), (b)에 들어갈 말이 순서대로 짝지어진 것은?\nEnglish is (a)____ than science for me, but music is (b)____ subject of all.\n(영어는 나에게 과학보다 쉽지만, 음악이 모든 과목 중 가장 쉽다)",
+   "choices": [
+    "easier - the easiest",
+    "easier - easiest",
+    "easyer - the easyest",
+    "more easy - the most easy",
+    "easier - the most easy"
+   ],
+   "answer": 1,
+   "why": "(a)는 y를 i로 바꾼 비교급 easier, (b)는 of all과 함께 「the+최상급」 the easiest를 쓴다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장의 뜻에 맞게 expensive를 이용하여 빈칸에 두 단어를 쓰시오.\nThis bag is 50 dollars. That bag is 30 dollars.\n→ This bag is ____ ____ than that bag.",
+   "answer": "more expensive",
+   "why": "이 가방이 더 비싸므로 expensive의 비교급 more expensive를 쓴다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 두 단어로 어법에 맞게 고쳐 쓰시오.\nHe is <u>the most busiest</u> man in our town.",
+   "answer": "the busiest",
+   "why": "busiest가 이미 최상급이므로 most를 빼고 the busiest로 쓴다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "주어진 단어를 모두 한 번씩 사용하여 우리말에 맞는 의문문을 완성하시오.\n(animal / the / what / smartest / is / in / the / sea)\n바다에서 가장 똑똑한 동물은 무엇이니?",
+   "answer": "What is the smartest animal in the sea?",
+   "alt": [
+    "What is the smartest animal in the sea"
+   ],
+   "why": "의문사 What 뒤에 「is+the+최상급+명사+in+장소」의 어순으로 배열한다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 이용하여 두 단어로 빈칸을 완성하시오.\nSumi is ____ ____ dancer in her school. (good)\n(수미는 학교에서 최고의 춤꾼이다)",
+   "answer": "the best",
+   "why": "good의 불규칙 최상급 best 앞에 the를 붙여 the best로 쓴다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nMy headache got <u>badder</u> last night.",
+   "answer": "worse",
+   "why": "bad의 비교급은 불규칙 변화형 worse이다. badder라는 형태는 없다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "내용에 맞게 large를 이용하여 빈칸에 두 단어를 쓰시오.\nRussia, Canada, China 중에서 Russia가 가장 크다.\n→ Russia is ____ ____ of the three countries.",
+   "answer": "the largest",
+   "why": "셋 중 최고이므로 「the+최상급」 the largest를 쓴다. large는 -st만 붙인다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 단어 하나를 찾아 바르게 고쳐 쓰시오. (고친 단어만 쓸 것)\nToday is the happier day of my life.\n(오늘은 내 인생에서 가장 행복한 날이다)",
+   "answer": "happiest",
+   "why": "of my life와 함께 '가장 행복한'이라는 최상급 의미이므로 happier를 happiest로 고친다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 단어 하나를 찾아 바르게 고쳐 쓰시오. (고친 단어만 쓸 것)\nSujin is the most popular student of her school.",
+   "answer": "in",
+   "why": "her school은 단체를 나타내는 단수 명사이므로 of가 아니라 in을 써야 한다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 이용하여 세 단어로 빈칸을 완성하시오.\nFor me, science is ____ ____ ____ math. (difficult)\n(나에게 과학은 수학보다 더 어렵다)",
+   "answer": "more difficult than",
+   "why": "difficult의 비교급 more difficult 뒤에 비교 대상을 이끄는 than을 쓴다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "주어진 문장을 Tom을 주어로 하여 같은 뜻이 되도록 old를 이용해 빈칸을 완성하시오.\nJake is younger than Tom.\n→ Tom is ____ ____ Jake.",
+   "answer": "older than",
+   "why": "Jake가 Tom보다 어리다는 것은 Tom이 Jake보다 나이가 많다는 뜻이므로 older than을 쓴다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장의 뜻에 맞게 heavy를 이용하여 빈칸에 두 단어를 쓰시오.\nA hippo weighs 1,500kg. A cow weighs 700kg.\n→ A hippo is ____ ____ a cow.",
+   "answer": "heavier than",
+   "why": "하마가 소보다 무거우므로 heavy의 비교급 heavier와 than을 쓴다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 두 단어로 어법에 맞게 고쳐 쓰시오.\nThis is <u>the most worst</u> movie of the year.",
+   "answer": "the worst",
+   "why": "worst가 이미 bad의 최상급이므로 most를 빼고 the worst로 쓴다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "주어진 단어를 모두 한 번씩 사용하여 우리말에 맞는 의문문을 완성하시오.\n(the / is / who / singer / best / in / class / your)\n너희 반에서 최고의 가수는 누구니?",
+   "answer": "Who is the best singer in your class?",
+   "alt": [
+    "Who is the best singer in your class"
+   ],
+   "why": "의문사 Who 뒤에 「is+the+최상급+명사+in+장소」의 어순으로 배열한다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 이용하여 두 단어로 빈칸을 완성하시오.\nFor me, winter is ____ ____ summer. (good)\n(나에게 겨울은 여름보다 더 좋다)",
+   "answer": "better than",
+   "why": "good의 불규칙 비교급 better 뒤에 비교 대상을 이끄는 than을 쓴다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 단어 하나를 찾아 바르게 고쳐 쓰시오. (고친 단어만 쓸 것)\nMinsu is the fastest swimmer of his school.",
+   "answer": "in",
+   "why": "his school은 장소·단체를 나타내는 단수 명사이므로 of가 아니라 in을 써야 한다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 단어 하나를 찾아 바르게 고쳐 쓰시오. (고친 단어만 쓸 것)\nMy little brother eats many food than me.\n(내 남동생은 나보다 더 많은 음식을 먹는다)",
+   "answer": "more",
+   "why": "than이 있으므로 비교급이 필요하고, food는 셀 수 없는 명사이므로 much의 비교급 more를 쓴다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장의 뜻에 맞게 tall을 이용하여 빈칸에 두 단어를 쓰시오.\nThis building has 63 floors. That building has 40 floors.\n→ This building is ____ ____ that building.",
+   "answer": "taller than",
+   "why": "이 건물이 더 높으므로 tall의 비교급 taller와 than을 쓴다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 이용하여 세 단어로 빈칸을 완성하시오.\nBTS is ____ ____ ____ band in Korea. (famous)\n(BTS는 한국에서 가장 유명한 밴드다)",
+   "answer": "the most famous",
+   "why": "famous의 최상급 most famous 앞에 the를 붙여 세 단어로 쓴다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 세 단어로 어법에 맞게 고쳐 쓰시오.\nHe is <u>the importantest</u> person in the meeting.",
+   "answer": "the most important",
+   "why": "important는 긴 형용사이므로 -est를 붙이지 않고 the most important로 쓴다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장의 뜻에 맞게 young을 이용하여 빈칸에 두 단어를 쓰시오.\nI am 14 years old. My sister is 17 years old.\n→ I am ____ ____ my sister.",
+   "answer": "younger than",
+   "why": "내가 언니보다 어리므로 young의 비교급 younger와 than을 쓴다.",
+   "no": 200
+  }
+ ]
+}

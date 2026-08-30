@@ -1,0 +1,2622 @@
+{
+ "id": "m2-19",
+ "grade": "중2",
+ "name": "수의 일치",
+ "points": [
+  "one of+복수명사+단수동사",
+  "every/each+단수",
+  "부분표현 of+명사 일치"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "One of my friends ____ from Canada.",
+   "choices": [
+    "is",
+    "are",
+    "am",
+    "be",
+    "being"
+   ],
+   "answer": 1,
+   "why": "「one of+복수명사」의 주어는 one(단수)이므로 is. are는 복수동사라서 안 된다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "One of the boys ____ very tall.",
+   "choices": [
+    "are",
+    "is",
+    "am",
+    "be",
+    "being"
+   ],
+   "answer": 2,
+   "why": "주어는 one(단수)이므로 단수동사 is. of 뒤의 the boys에 속아 are를 고르면 안 된다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Every student ____ in the classroom now.",
+   "choices": [
+    "am",
+    "are",
+    "is",
+    "be",
+    "being"
+   ],
+   "answer": 3,
+   "why": "every+단수명사는 항상 단수 취급하므로 is.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Each room ____ very clean.",
+   "choices": [
+    "be",
+    "are",
+    "am",
+    "is",
+    "being"
+   ],
+   "answer": 4,
+   "why": "each+단수명사는 단수 취급하므로 is.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Some of the apples ____ green.",
+   "choices": [
+    "is",
+    "are",
+    "am",
+    "be",
+    "being"
+   ],
+   "answer": 2,
+   "why": "some of 뒤의 명사 apples가 복수이므로 복수동사 are.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Most of the students ____ kind.",
+   "choices": [
+    "are",
+    "is",
+    "am",
+    "being",
+    "be"
+   ],
+   "answer": 1,
+   "why": "most of 뒤의 students가 복수이므로 are.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Half of the pizza ____ on the table.",
+   "choices": [
+    "am",
+    "is",
+    "are",
+    "be",
+    "being"
+   ],
+   "answer": 2,
+   "why": "half of 뒤의 pizza가 단수이므로 단수동사 is.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "All of the milk ____ in the bottle.",
+   "choices": [
+    "is",
+    "be",
+    "am",
+    "are",
+    "being"
+   ],
+   "answer": 1,
+   "why": "all of 뒤의 milk는 셀 수 없는 명사(단수 취급)이므로 is.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Some of my friends ____ good at math.",
+   "choices": [
+    "being",
+    "is",
+    "am",
+    "be",
+    "are"
+   ],
+   "answer": 5,
+   "why": "some of 뒤의 friends가 복수이므로 are.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Each of the girls ____ happy today.",
+   "choices": [
+    "is",
+    "are",
+    "be",
+    "am",
+    "being"
+   ],
+   "answer": 1,
+   "why": "「each of+복수명사」는 each가 주어라서 단수동사 is를 쓴다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Most of the water ____ cold.",
+   "choices": [
+    "are",
+    "am",
+    "is",
+    "be",
+    "being"
+   ],
+   "answer": 3,
+   "why": "most of 뒤의 water는 셀 수 없는 명사이므로 단수동사 is.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "All of the players ____ ready now.",
+   "choices": [
+    "be",
+    "being",
+    "am",
+    "is",
+    "are"
+   ],
+   "answer": 5,
+   "why": "all of 뒤의 players가 복수이므로 are.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Every child ____ ice cream.",
+   "choices": [
+    "like",
+    "likes",
+    "liking",
+    "to like",
+    "are liking"
+   ],
+   "answer": 2,
+   "why": "every+단수명사는 단수 취급하므로 3인칭 단수형 likes.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "One of my uncles ____ two cars.",
+   "choices": [
+    "have",
+    "has",
+    "having",
+    "to have",
+    "are having"
+   ],
+   "answer": 2,
+   "why": "「one of+복수명사」의 주어는 one이므로 has.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Each student ____ a locker.",
+   "choices": [
+    "have",
+    "having",
+    "has",
+    "to have",
+    "are having"
+   ],
+   "answer": 3,
+   "why": "each+단수명사는 단수 취급하므로 has.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Every morning, each player ____ up early.",
+   "choices": [
+    "get",
+    "gets",
+    "getting",
+    "to get",
+    "are getting"
+   ],
+   "answer": 2,
+   "why": "each+단수명사는 단수동사 gets를 쓴다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "One of the dogs ____ very loudly at night.",
+   "choices": [
+    "barks",
+    "bark",
+    "barking",
+    "to bark",
+    "are barking"
+   ],
+   "answer": 1,
+   "why": "주어는 one(단수)이므로 barks.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Some of the students ____ the school bus.",
+   "choices": [
+    "takes",
+    "take",
+    "taking",
+    "to take",
+    "is taking"
+   ],
+   "answer": 2,
+   "why": "some of 뒤의 students가 복수이므로 take.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Most of my friends ____ K-pop.",
+   "choices": [
+    "likes",
+    "liking",
+    "like",
+    "to like",
+    "is liking"
+   ],
+   "answer": 3,
+   "why": "most of 뒤의 friends가 복수이므로 like.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Half of the students ____ glasses.",
+   "choices": [
+    "wears",
+    "wearing",
+    "wear",
+    "to wear",
+    "is wearing"
+   ],
+   "answer": 3,
+   "why": "half of 뒤의 students가 복수이므로 wear.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "All of the children ____ in the park every day.",
+   "choices": [
+    "plays",
+    "playing",
+    "to play",
+    "play",
+    "is playing"
+   ],
+   "answer": 4,
+   "why": "all of 뒤의 children이 복수이므로 play.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Every house on the street ____ a small garden.",
+   "choices": [
+    "have",
+    "having",
+    "to have",
+    "are having",
+    "has"
+   ],
+   "answer": 5,
+   "why": "every+단수명사(house)는 단수 취급, on the street는 수식어일 뿐이므로 has.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Each of the boys ____ a different hobby.",
+   "choices": [
+    "have",
+    "has",
+    "having",
+    "to have",
+    "are having"
+   ],
+   "answer": 2,
+   "why": "「each of+복수명사」는 each가 주어이므로 has.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Most of the cheese ____ from France.",
+   "choices": [
+    "come",
+    "comes",
+    "coming",
+    "to come",
+    "are coming"
+   ],
+   "answer": 2,
+   "why": "most of 뒤의 cheese는 셀 수 없는 명사이므로 comes.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "____ every student wear a school uniform?",
+   "choices": [
+    "Do",
+    "Does",
+    "Is",
+    "Are",
+    "Am"
+   ],
+   "answer": 2,
+   "why": "every+단수명사는 단수 취급하므로 Does. 뒤에 동사원형 wear가 있으므로 Is/Are는 안 된다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "____ each of the rooms have a window?",
+   "choices": [
+    "Does",
+    "Do",
+    "Is",
+    "Are",
+    "Am"
+   ],
+   "answer": 1,
+   "why": "「each of+복수명사」는 단수 취급하므로 Does.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "____ some of your friends play soccer?",
+   "choices": [
+    "Does",
+    "Is",
+    "Do",
+    "Are",
+    "Am"
+   ],
+   "answer": 3,
+   "why": "some of 뒤의 friends가 복수이므로 Do.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: ____ one of your sisters live in Seoul? B: Yes, she does.",
+   "choices": [
+    "Do",
+    "Is",
+    "Are",
+    "Does",
+    "Am"
+   ],
+   "answer": 4,
+   "why": "주어가 one(단수)이므로 Does. 대답의 she does도 힌트가 된다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "One of my friends live in Jeju.",
+    "Every students has a book.",
+    "Each of the boys have a bike.",
+    "Some of the apples are red.",
+    "Most of the milk are cold."
+   ],
+   "answer": 4,
+   "why": "some of+복수명사(apples)+are는 옳다. ①은 lives, ②는 every+단수명사, ③은 has, ⑤는 is가 되어야 한다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은?",
+   "choices": [
+    "Every student has a dream.",
+    "One of the cats are black.",
+    "Each of the girls sing well.",
+    "Some of the water are clean.",
+    "Half of the boys plays soccer."
+   ],
+   "answer": 1,
+   "why": "every+단수명사+단수동사(has)는 옳다. ②는 is, ③은 sings, ④는 is, ⑤는 play가 되어야 한다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "어법상 옳은 문장을 고르시오.",
+   "choices": [
+    "Most of my friends likes dogs.",
+    "One of the windows is open.",
+    "Every rooms is clean.",
+    "Each student have a chair.",
+    "All of the juice are cold."
+   ],
+   "answer": 2,
+   "why": "「one of+복수명사」+단수동사(is)는 옳다. ①은 like, ③은 every room, ④는 has, ⑤는 is가 되어야 한다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장 중 어법에 맞는 것은?",
+   "choices": [
+    "One of the boys are my brother.",
+    "Every day are special.",
+    "Some of the bread are soft.",
+    "Each of the dogs bark loudly.",
+    "Half of the students walk to school."
+   ],
+   "answer": 5,
+   "why": "half of+복수명사(students)+복수동사(walk)는 옳다. ①은 is, ②는 is, ③은 is, ④는 barks가 되어야 한다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 올바른 문장은?",
+   "choices": [
+    "Every children likes milk.",
+    "One of my teachers speak English.",
+    "Each room has a clock.",
+    "Most of the salt are in the jar.",
+    "Half of the apples is green."
+   ],
+   "answer": 3,
+   "why": "each+단수명사+단수동사(has)는 옳다. ①은 every child, ②는 speaks, ④는 is, ⑤는 are가 되어야 한다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 옳은 문장을 고르면?",
+   "choices": [
+    "Every bikes has two wheels.",
+    "Most of the juice is in the glass.",
+    "One of the girls are sick today.",
+    "Each of the students carry a bag.",
+    "Some of the milk are on the table."
+   ],
+   "answer": 2,
+   "why": "most of 뒤의 juice는 셀 수 없는 명사이므로 is가 옳다. ①은 every bike, ③은 is, ④는 carries, ⑤는 is가 되어야 한다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "어법상 자연스러운 문장은?",
+   "choices": [
+    "Half of the boys is in the gym.",
+    "Every cat like fish.",
+    "One of my sisters watch TV a lot.",
+    "All of the cookies are sweet.",
+    "Each of the rooms are small."
+   ],
+   "answer": 4,
+   "why": "all of+복수명사(cookies)+are는 옳다. ①은 are, ②는 likes, ③은 watches, ⑤는 is가 되어야 한다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 알맞은 문장은?",
+   "choices": [
+    "Does every class start at nine?",
+    "Do each boy have a hat?",
+    "Is some of your friends tall?",
+    "Do one of the girls dance?",
+    "Does most of the students study here?"
+   ],
+   "answer": 1,
+   "why": "every+단수명사는 단수 취급하므로 Does가 옳다. ②는 Does, ③은 Are, ④는 Does, ⑤는 Do가 되어야 한다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은?",
+   "choices": [
+    "Every bird sings in the morning.",
+    "One of the students are late.",
+    "Some of the eggs are big.",
+    "Each boy has a cap.",
+    "Most of the water is clean."
+   ],
+   "answer": 2,
+   "why": "「one of+복수명사」의 주어는 one이므로 are가 아니라 is를 써야 한다. 나머지는 모두 옳다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 것은?",
+   "choices": [
+    "Some of my friends are tall.",
+    "Each of the cups is full.",
+    "Every children likes candy.",
+    "One of the doors is open.",
+    "Half of the milk is gone."
+   ],
+   "answer": 3,
+   "why": "every 뒤에는 단수명사가 와야 하므로 every child가 되어야 한다. 나머지는 모두 옳다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "어법상 틀린 문장을 고르시오.",
+   "choices": [
+    "Most of the boys like soccer.",
+    "Half of the apples are red.",
+    "One of my aunts is a cook.",
+    "Each of the rooms have a bed.",
+    "Every girl likes the song."
+   ],
+   "answer": 4,
+   "why": "「each of+복수명사」는 단수 취급하므로 have가 아니라 has를 써야 한다. 나머지는 모두 옳다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장 중 어법에 맞지 않는 것은?",
+   "choices": [
+    "Every window is closed.",
+    "One of the babies is crying.",
+    "Most of the students are busy.",
+    "Each of the boys is strong.",
+    "Some of the water are dirty."
+   ],
+   "answer": 5,
+   "why": "some of 뒤의 water는 셀 수 없는 명사(단수 취급)이므로 are가 아니라 is를 써야 한다. 나머지는 모두 옳다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 잘못된 문장은?",
+   "choices": [
+    "Most of my friends likes pizza.",
+    "Every cook wears a hat.",
+    "Some of the books are new.",
+    "One of the rooms is dark.",
+    "Half of the students are girls."
+   ],
+   "answer": 1,
+   "why": "most of 뒤의 friends가 복수이므로 likes가 아니라 like를 써야 한다. 나머지는 모두 옳다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 틀린 문장을 고르면?",
+   "choices": [
+    "Every car has four wheels.",
+    "Half of the pizza are mine.",
+    "Each of the babies has a toy.",
+    "Some of the birds are white.",
+    "One of my shoes is wet."
+   ],
+   "answer": 2,
+   "why": "half of 뒤의 pizza가 단수이므로 are가 아니라 is를 써야 한다. 나머지는 모두 옳다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "어법상 어색한 문장은?",
+   "choices": [
+    "Most of the sugar is in the tea.",
+    "One of the questions is hard.",
+    "All of the students walks fast.",
+    "Every farmer gets up early.",
+    "Some of the coins are old."
+   ],
+   "answer": 3,
+   "why": "all of 뒤의 students가 복수이므로 walks가 아니라 walk를 써야 한다. 나머지는 모두 옳다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳지 않은 문장은?",
+   "choices": [
+    "Does every store open at ten?",
+    "Do most of your friends like games?",
+    "Does each of the boys have a bag?",
+    "Do one of your friends like math?",
+    "Do some of the girls play tennis?"
+   ],
+   "answer": 4,
+   "why": "「one of+복수명사」는 단수 취급하므로 Do가 아니라 Does를 써야 한다. 나머지는 모두 옳다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분이 어법상 틀린 것은?",
+   "choices": [
+    "Every duck <u>swims</u> well.",
+    "One of the girls <u>is</u> my sister.",
+    "Some of the boys <u>plays</u> basketball.",
+    "Most of the juice <u>is</u> in the cup.",
+    "Each of the rooms <u>is</u> warm."
+   ],
+   "answer": 3,
+   "why": "some of 뒤의 boys가 복수이므로 plays가 아니라 play를 써야 한다. 나머지는 모두 옳다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분이 어법상 어색한 것은?",
+   "choices": [
+    "Most of the students <u>are</u> in the gym.",
+    "Every farmer <u>grows</u> rice.",
+    "One of my uncles <u>lives</u> in Busan.",
+    "Half of the cookies <u>is</u> gone.",
+    "Some of the milk <u>is</u> warm."
+   ],
+   "answer": 4,
+   "why": "half of 뒤의 cookies가 복수이므로 is가 아니라 are를 써야 한다. 나머지는 모두 옳다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 주어와 동사가 바르게 짝지어진 것은?",
+   "choices": [
+    "Every boy — have a ball",
+    "One of the girls — are tall",
+    "Some of the apples — is sweet",
+    "Each of the cats — sleep a lot",
+    "Most of the milk — is cold"
+   ],
+   "answer": 5,
+   "why": "most of 뒤의 milk는 단수 취급이므로 is가 옳다. ①은 has, ②는 is, ③은 are, ④는 sleeps가 되어야 한다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은? · Every student ____ a locker. · One of my uncles ____ two cars.",
+   "choices": [
+    "have",
+    "has",
+    "is",
+    "are",
+    "do"
+   ],
+   "answer": 2,
+   "why": "every+단수명사와 「one of+복수명사」 모두 단수 취급이며, '가지고 있다'라는 뜻의 has가 두 문장에 모두 어울린다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 말을 골라 쓰시오: One of my sisters (is, are) a nurse.",
+   "answer": "is",
+   "why": "「one of+복수명사」의 주어는 one(단수)이므로 is.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 말을 골라 쓰시오: Every boy in my class (like, likes) soccer.",
+   "answer": "likes",
+   "why": "every+단수명사는 단수 취급하므로 likes.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 말을 골라 쓰시오: Each of the students (has, have) a dictionary.",
+   "answer": "has",
+   "why": "「each of+복수명사」는 단수 취급하므로 has.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 말을 골라 쓰시오: Some of the eggs (is, are) fresh.",
+   "answer": "are",
+   "why": "some of 뒤의 eggs가 복수이므로 are.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 말을 골라 쓰시오: Most of the bread (is, are) soft.",
+   "answer": "is",
+   "why": "most of 뒤의 bread는 셀 수 없는 명사이므로 is.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 말을 골라 쓰시오: Half of the students (comes, come) by bus.",
+   "answer": "come",
+   "why": "half of 뒤의 students가 복수이므로 come.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 말을 골라 쓰시오: All of the money (is, are) in the box.",
+   "answer": "is",
+   "why": "all of 뒤의 money는 셀 수 없는 명사이므로 is.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 말을 골라 쓰시오: Each girl (dance, dances) well.",
+   "answer": "dances",
+   "why": "each+단수명사는 단수 취급하므로 dances.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 말을 골라 쓰시오: Most of the stars (is, are) bright tonight.",
+   "answer": "are",
+   "why": "most of 뒤의 stars가 복수이므로 are.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 말을 골라 쓰시오: One of the cats (sleep, sleeps) on the sofa.",
+   "answer": "sleeps",
+   "why": "주어는 one(단수)이므로 sleeps.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제에 맞는 형태로 쓰시오: Every student ____ (need) a pencil.",
+   "answer": "needs",
+   "why": "every+단수명사는 단수 취급하므로 needs.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제에 맞는 형태로 쓰시오: One of my friends ____ (play) the piano.",
+   "answer": "plays",
+   "why": "「one of+복수명사」의 주어는 one이므로 plays.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제에 맞는 형태로 쓰시오: Each of the rooms ____ (be) big.",
+   "answer": "is",
+   "why": "「each of+복수명사」는 단수 취급하므로 is.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제에 맞는 형태로 쓰시오: Some of the questions ____ (be) easy.",
+   "answer": "are",
+   "why": "some of 뒤의 questions가 복수이므로 are.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제에 맞는 형태로 쓰시오: Most of the salt ____ (be) in the jar.",
+   "answer": "is",
+   "why": "most of 뒤의 salt는 셀 수 없는 명사이므로 is.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제에 맞는 형태로 쓰시오: Half of the apples ____ (be) green.",
+   "answer": "are",
+   "why": "half of 뒤의 apples가 복수이므로 are.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제에 맞는 형태로 쓰시오: Every window ____ (be) closed now.",
+   "answer": "is",
+   "why": "every+단수명사는 단수 취급하므로 is.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제에 맞는 형태로 쓰시오: All of the students ____ (study) English.",
+   "answer": "study",
+   "why": "all of 뒤의 students가 복수이므로 study.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제에 맞는 형태로 쓰시오: Each child ____ (want) a balloon.",
+   "answer": "wants",
+   "why": "each+단수명사는 단수 취급하므로 wants.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제에 맞는 형태로 쓰시오: Most of my classmates ____ (walk) to school.",
+   "answer": "walk",
+   "why": "most of 뒤의 classmates가 복수이므로 walk.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "One of the most famous places in Seoul ____ Gyeongbokgung Palace.",
+   "choices": [
+    "is",
+    "are",
+    "am",
+    "be",
+    "being"
+   ],
+   "answer": 1,
+   "why": "주어는 one(단수)이므로 is. of 뒤의 복수명사 places에 속으면 안 된다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Every member of the soccer team ____ hard for the finals.",
+   "choices": [
+    "practice",
+    "practices",
+    "practicing",
+    "to practice",
+    "are practicing"
+   ],
+   "answer": 2,
+   "why": "every+단수명사(member)는 단수 취급하므로 practices.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Each of these questions ____ a different answer.",
+   "choices": [
+    "has",
+    "have",
+    "having",
+    "to have",
+    "are having"
+   ],
+   "answer": 1,
+   "why": "「each of+복수명사」는 each가 주어이므로 has.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Some of the information on the Internet ____ not true.",
+   "choices": [
+    "are",
+    "am",
+    "is",
+    "be",
+    "being"
+   ],
+   "answer": 3,
+   "why": "information은 셀 수 없는 명사이므로 some of 뒤에서도 단수 취급하여 is.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Most of the students in my class ____ to school by bike.",
+   "choices": [
+    "comes",
+    "come",
+    "coming",
+    "to come",
+    "is coming"
+   ],
+   "answer": 2,
+   "why": "most of 뒤의 students가 복수이므로 come.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Half of the oranges in the basket ____ from Jeju.",
+   "choices": [
+    "is",
+    "are",
+    "am",
+    "be",
+    "being"
+   ],
+   "answer": 2,
+   "why": "half of 뒤의 oranges가 복수이므로 are.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "About 70 percent of the Earth ____ covered with water.",
+   "choices": [
+    "are",
+    "is",
+    "am",
+    "be",
+    "being"
+   ],
+   "answer": 2,
+   "why": "percent of 뒤의 the Earth가 단수이므로 is.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Every house in this town ____ a flat roof.",
+   "choices": [
+    "have",
+    "having",
+    "has",
+    "to have",
+    "are having"
+   ],
+   "answer": 3,
+   "why": "every+단수명사는 단수 취급하므로 has.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "One of my hobbies ____ taking pictures of flowers.",
+   "choices": [
+    "being",
+    "are",
+    "am",
+    "is",
+    "be"
+   ],
+   "answer": 4,
+   "why": "주어는 one(단수)이므로 is. 뒤의 taking은 보어로 쓰인 동명사이다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Each player on the team ____ a special number on his shirt.",
+   "choices": [
+    "wear",
+    "wears",
+    "wearing",
+    "to wear",
+    "are wearing"
+   ],
+   "answer": 2,
+   "why": "each+단수명사(player)는 단수 취급하므로 wears.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 (A), (B)에 들어갈 말이 바르게 짝지어진 것은? One of the boys (A)(is / are) my cousin, and some of the girls (B)(is / are) my classmates.",
+   "choices": [
+    "is — is",
+    "is — are",
+    "are — is",
+    "are — are",
+    "am — are"
+   ],
+   "answer": 2,
+   "why": "(A) 주어는 one(단수)이므로 is, (B) some of 뒤의 girls가 복수이므로 are.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 (A), (B)에 들어갈 말이 바르게 짝지어진 것은? Every student (A)(has / have) a tablet, and each of the tablets (B)(has / have) a keyboard.",
+   "choices": [
+    "has — has",
+    "has — have",
+    "have — has",
+    "have — have",
+    "having — has"
+   ],
+   "answer": 1,
+   "why": "every+단수명사, 「each of+복수명사」 모두 단수 취급이므로 둘 다 has.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 (A), (B)에 들어갈 말이 바르게 짝지어진 것은? Most of the juice (A)(is / are) gone, but some of the cookies (B)(is / are) still on the plate.",
+   "choices": [
+    "is — is",
+    "are — are",
+    "are — is",
+    "is — are",
+    "am — is"
+   ],
+   "answer": 4,
+   "why": "(A) juice는 셀 수 없는 명사이므로 is, (B) cookies가 복수이므로 are.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 (A), (B)에 들어갈 말이 바르게 짝지어진 것은? Half of the class (A)(want / wants) pizza, and the rest of the students (B)(want / wants) chicken.",
+   "choices": [
+    "want — want",
+    "wants — wants",
+    "want — wants",
+    "wants — want",
+    "wanting — want"
+   ],
+   "answer": 4,
+   "why": "(A) half of 뒤의 class가 단수명사이므로 wants, (B) the rest of 뒤의 students가 복수이므로 want.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 (A), (B)에 들어갈 말이 바르게 짝지어진 것은? (A)(Do / Does) each of the singers have a fan club? (B)(Do / Does) most of the fans buy their albums?",
+   "choices": [
+    "Do — Do",
+    "Does — Does",
+    "Do — Does",
+    "Does — Do",
+    "Is — Do"
+   ],
+   "answer": 4,
+   "why": "(A) 「each of+복수명사」는 단수 취급이므로 Does, (B) most of 뒤의 fans가 복수이므로 Do.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 (A), (B)에 들어갈 말이 바르게 짝지어진 것은? One of the windows in the living room (A)(was / were) open, and all of the leaves on the floor (B)(was / were) wet.",
+   "choices": [
+    "was — was",
+    "were — were",
+    "was — were",
+    "were — was",
+    "is — were"
+   ],
+   "answer": 3,
+   "why": "(A) 주어는 one(단수)이므로 was, (B) all of 뒤의 leaves가 복수이므로 were.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 ①~⑤ 중 어법상 옳은 문장은?",
+   "choices": [
+    "One of my classmates speak Chinese.",
+    "Every students in the gym was excited.",
+    "Each of the countries has its own flag.",
+    "Some of the water in the pool are warm.",
+    "Most of the buses on this road stops here."
+   ],
+   "answer": 3,
+   "why": "「each of+복수명사」+단수동사(has)는 옳다. ①은 speaks, ②는 every student, ④는 is, ⑤는 stop이 되어야 한다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장들 중 어법상 옳은 것을 고르시오.",
+   "choices": [
+    "Most of the food at the party was delicious.",
+    "Half of the students in my class has a pet.",
+    "Each of the shirts were expensive.",
+    "Every rooms in the hotel has an ocean view.",
+    "One of the questions on the test were too hard."
+   ],
+   "answer": 1,
+   "why": "most of 뒤의 food는 셀 수 없는 명사이므로 was가 옳다. ②는 have, ③은 was, ④는 every room, ⑤는 was가 되어야 한다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "Every actor in the play wear a mask.",
+    "One of the songs were too long.",
+    "Some of the popcorn were salty.",
+    "Each of the seats have a number.",
+    "Some of the singers on the show were from Canada."
+   ],
+   "answer": 5,
+   "why": "some of 뒤의 singers가 복수이므로 were가 옳다. ①은 wears, ②는 was, ③은 was, ④는 has가 되어야 한다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 바른 문장을 고르시오.",
+   "choices": [
+    "Each of the players need more practice.",
+    "Half of the milk were sour.",
+    "Every buses stop at this corner.",
+    "Every player on our team practices every day.",
+    "One of my dreams are to travel to space."
+   ],
+   "answer": 4,
+   "why": "every+단수명사+단수동사(practices)는 옳다. ①은 needs, ②는 was, ③은 every bus stops, ⑤는 is가 되어야 한다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 ①~⑤ 중 어법상 틀린 문장은?",
+   "choices": [
+    "Each of the movies has English subtitles.",
+    "One of the movies were really boring.",
+    "Some of the popcorn is on the floor.",
+    "Most of the seats in the theater are empty.",
+    "Every ticket has a seat number."
+   ],
+   "answer": 2,
+   "why": "주어는 one(단수)이므로 were가 아니라 was를 써야 한다. 나머지는 모두 옳다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장들 중 어법상 틀린 것을 고르시오.",
+   "choices": [
+    "Most of the books on the shelf are old.",
+    "One of the computers is broken.",
+    "Some of the students study in groups.",
+    "Each of the desks has a lamp.",
+    "Every student in the library were quiet."
+   ],
+   "answer": 5,
+   "why": "every+단수명사는 단수 취급하므로 were가 아니라 was를 써야 한다. 나머지는 모두 옳다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 어색한 것은?",
+   "choices": [
+    "Half of the apples in the box was bad.",
+    "Every apple on this farm tastes sweet.",
+    "One of the farmers gives us free apples.",
+    "Most of the juice here is made from apples.",
+    "Some of the boxes are heavy."
+   ],
+   "answer": 1,
+   "why": "half of 뒤의 apples가 복수이므로 was가 아니라 were를 써야 한다. 나머지는 모두 옳다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 바르지 않은 문장을 고르시오.",
+   "choices": [
+    "Every taxi in this city is orange.",
+    "Some of the drivers work at night.",
+    "Each of the buses run every ten minutes.",
+    "Most of the traffic is heavy in the morning.",
+    "One of the subway lines goes to the airport."
+   ],
+   "answer": 3,
+   "why": "「each of+복수명사」는 단수 취급하므로 run이 아니라 runs를 써야 한다. 나머지는 모두 옳다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 동사가 어법상 틀린 것을 고르시오.",
+   "choices": [
+    "One of my neighbors <u>grows</u> tomatoes.",
+    "Every farmer in the village <u>gets</u> up early.",
+    "Some of the tomatoes <u>is</u> still green.",
+    "Most of the work <u>is</u> done by hand.",
+    "Each of the baskets <u>holds</u> five kilograms."
+   ],
+   "answer": 3,
+   "why": "some of 뒤의 tomatoes가 복수이므로 is가 아니라 are를 써야 한다. 나머지는 모두 옳다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 동사 중 잘못 쓰인 것은?",
+   "choices": [
+    "Each of my cousins <u>live</u> in Busan.",
+    "Every cousin of mine <u>visits</u> us on New Year's Day.",
+    "Some of my relatives <u>are</u> teachers.",
+    "Most of the family <u>is</u> from Daegu.",
+    "One of my aunts <u>runs</u> a bakery."
+   ],
+   "answer": 1,
+   "why": "「each of+복수명사」는 단수 취급하므로 live가 아니라 lives를 써야 한다. 나머지는 모두 옳다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분이 옳지 않은 것은?",
+   "choices": [
+    "Most of the students <u>was</u> excited about the trip.",
+    "Every seat on the bus <u>was</u> full.",
+    "One of the teachers <u>was</u> taking pictures.",
+    "Some of the snacks <u>were</u> shared on the bus.",
+    "Each of the groups <u>was</u> given a map."
+   ],
+   "answer": 1,
+   "why": "most of 뒤의 students가 복수이므로 was가 아니라 were를 써야 한다. 나머지는 모두 옳다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법에 맞지 않는 것은?",
+   "choices": [
+    "Every dish on the menu <u>look</u> delicious.",
+    "One of the cooks <u>comes</u> from Italy.",
+    "Some of the tables <u>are</u> near the window.",
+    "Most of the bread <u>is</u> baked in the morning.",
+    "Each of the waiters <u>speaks</u> two languages."
+   ],
+   "answer": 1,
+   "why": "every+단수명사(dish)는 단수 취급하므로 look이 아니라 looks를 써야 한다. 나머지는 모두 옳다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "'내 친구들 중 한 명은 요리를 잘한다.'를 영어로 바르게 옮긴 것은?",
+   "choices": [
+    "One of my friend is good at cooking.",
+    "One of my friends is good at cooking.",
+    "One of my friends are good at cooking.",
+    "One of my friends am good at cooking.",
+    "One of friend are good at cooking."
+   ],
+   "answer": 2,
+   "why": "「one of+복수명사(friends)」 뒤에 단수동사 is를 쓴 ②가 옳다. ①⑤는 복수명사가 아니고, ③④는 동사의 수가 틀렸다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "'모든 학생은 교복을 입어야 한다.'를 영어로 바르게 옮긴 것은?",
+   "choices": [
+    "Every students has to wear a school uniform.",
+    "Every student have to wear a school uniform.",
+    "Every student has to wear a school uniform.",
+    "Every of the students has to wear a school uniform.",
+    "Every students have to wear a school uniform."
+   ],
+   "answer": 3,
+   "why": "every+단수명사+단수동사(has to)인 ③이 옳다. every 뒤에 복수명사(①⑤)나 of(④)는 쓸 수 없다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "'그 오렌지들 중 절반은 상자 안에 있다.'를 영어로 바르게 옮긴 것은?",
+   "choices": [
+    "Half of the oranges is in the box.",
+    "Half of the orange are in the box.",
+    "Half of oranges is in the box.",
+    "Half of the oranges are in the box.",
+    "The half of the oranges is in the box."
+   ],
+   "answer": 4,
+   "why": "half of 뒤의 명사 oranges(복수)에 맞춰 are를 쓴 ④가 옳다. ①은 동사, ②는 명사의 수가 틀렸다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "'각각의 방에는 에어컨이 있다.'를 영어로 바르게 옮긴 것은?",
+   "choices": [
+    "Each room has an air conditioner.",
+    "Each rooms has an air conditioner.",
+    "Each room have an air conditioner.",
+    "Each of room has an air conditioner.",
+    "Each rooms have air conditioners."
+   ],
+   "answer": 1,
+   "why": "each+단수명사+단수동사(has)인 ①이 옳다. each 뒤에 복수명사(②⑤)는 쓸 수 없고, each of 뒤에는 복수명사(④)가 와야 한다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은? · Each of the players ____ a water bottle. · Every classroom ____ a TV.",
+   "choices": [
+    "have",
+    "has",
+    "is",
+    "are",
+    "does"
+   ],
+   "answer": 2,
+   "why": "「each of+복수명사」와 every+단수명사 모두 단수 취급이며, '가지고 있다'는 뜻의 has가 두 문장에 모두 어울린다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은? · Most of the students ____ from this town. · Some of my friends ____ interested in K-pop.",
+   "choices": [
+    "is",
+    "are",
+    "am",
+    "be",
+    "do"
+   ],
+   "answer": 2,
+   "why": "두 문장 모두 of 뒤의 명사(students, friends)가 복수이므로 are가 들어간다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은? · ____ every store in this mall open at ten? · ____ one of your brothers work at a bank?",
+   "choices": [
+    "Do",
+    "Does",
+    "Is",
+    "Are",
+    "Am"
+   ],
+   "answer": 2,
+   "why": "every+단수명사와 「one of+복수명사」 모두 단수 취급이고 뒤에 동사원형이 있으므로 Does가 들어간다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은? · Half of the milk ____ still in the glass. · One of the reasons ____ the high price.",
+   "choices": [
+    "is",
+    "are",
+    "am",
+    "be",
+    "do"
+   ],
+   "answer": 1,
+   "why": "milk는 셀 수 없는 명사, 「one of+복수명사」는 단수 취급이므로 두 문장 모두 is가 들어간다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은? A: ____ most of your friends live near the school? B: Yes, they do.",
+   "choices": [
+    "Do",
+    "Does",
+    "Is",
+    "Are",
+    "Doing"
+   ],
+   "answer": 1,
+   "why": "most of 뒤의 friends가 복수이므로 Do. 대답의 they do도 힌트가 된다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은? A: ____ each of the teams have a captain? B: Yes, each team has one.",
+   "choices": [
+    "Do",
+    "Is",
+    "Does",
+    "Are",
+    "Doing"
+   ],
+   "answer": 3,
+   "why": "「each of+복수명사」는 단수 취급하므로 Does.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은? A: Where ____ most of the cheese in this shop come from? B: It comes from Italy.",
+   "choices": [
+    "do",
+    "does",
+    "is",
+    "are",
+    "am"
+   ],
+   "answer": 2,
+   "why": "cheese는 셀 수 없는 명사이므로 단수 취급하여 does. 대답의 It comes도 힌트가 된다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은? A: ____ all of the students in your class like the new teacher? B: Yes, they all do.",
+   "choices": [
+    "Does",
+    "Is",
+    "Do",
+    "Are",
+    "Am"
+   ],
+   "answer": 3,
+   "why": "all of 뒤의 students가 복수이므로 Do.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ㄱ. One of the girls plays the violin. ㄴ. Every window in the house were closed. ㄷ. Some of the bread was too hard. ㄹ. Each of the students have a nickname.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ㄱ(one of+복수명사+단수동사)과 ㄷ(bread는 단수 취급)이 옳다. ㄴ은 was, ㄹ은 has가 되어야 하므로 옳은 문장은 2개.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ㄱ. Most of the snow has melted. ㄴ. Half of the players were tired after the game. ㄷ. Every hospitals in the city stays open at night. ㄹ. One of my teachers gives too much homework.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 4,
+   "why": "ㄱ(snow 단수 취급), ㄴ(players 복수), ㄹ(one이 주어)이 옳다. ㄷ은 every hospital이 되어야 하므로 옳은 문장은 3개.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는? ㄱ. Each of the pictures were taken in Paris. ㄴ. Some of the sugar is in the bowl. ㄷ. Every seat on the bus was taken. ㄹ. Most of my classmates enjoys webtoons.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 was, ㄹ은 enjoy가 되어야 하므로 틀린 문장은 2개. ㄴ(sugar 단수 취급)과 ㄷ(every+단수명사)은 옳다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 주어와 동사의 연결이 어법상 옳은 것은?",
+   "choices": [
+    "One of the answers — are wrong",
+    "Every child — like cartoons",
+    "Each of the desks — have four legs",
+    "Some of the money — is missing",
+    "Most of my friends — enjoys camping"
+   ],
+   "answer": 4,
+   "why": "money는 셀 수 없는 명사이므로 some of 뒤에서도 is가 옳다. ①은 is, ②는 likes, ③은 has, ⑤는 enjoy가 되어야 한다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 주어와 동사의 짝 중 수 일치가 옳은 것은?",
+   "choices": [
+    "Each of the singers — sing well",
+    "Half of the students — walks to school",
+    "One of the busiest streets — is near here",
+    "Every houses — has a garage",
+    "Most of the juice — are cold"
+   ],
+   "answer": 3,
+   "why": "「one of+복수명사」+단수동사(is)가 옳다. ①은 sings, ②는 walk, ④는 every house, ⑤는 is가 되어야 한다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 주어와 동사가 알맞게 연결된 것은?",
+   "choices": [
+    "Some of the stories — was funny",
+    "Every question — needs an answer",
+    "One of the phones — belong to me",
+    "Each of the games — take an hour",
+    "Most of the players — practices daily"
+   ],
+   "answer": 2,
+   "why": "every+단수명사+단수동사(needs)가 옳다. ①은 were, ③은 belongs, ④는 takes, ⑤는 practice가 되어야 한다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (시제는 유지할 것): One of my classmates <u>bring</u> lunch from home every day.",
+   "answer": "brings",
+   "why": "「one of+복수명사」의 주어는 one(단수)이므로 brings로 고친다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (시제는 유지할 것): Every visitor <u>have</u> to sign this paper.",
+   "answer": "has",
+   "why": "every+단수명사는 단수 취급하므로 has로 고친다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (시제는 유지할 것): Each of the dancers <u>practice</u> for three hours a day.",
+   "answer": "practices",
+   "why": "「each of+복수명사」는 단수 취급하므로 practices로 고친다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (시제는 유지할 것): Some of the furniture in this room <u>are</u> very old.",
+   "answer": "is",
+   "why": "furniture는 셀 수 없는 명사이므로 some of 뒤에서도 단수동사 is를 쓴다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (시제는 유지할 것): Most of the students in our school <u>eats</u> lunch at noon.",
+   "answer": "eat",
+   "why": "most of 뒤의 students가 복수이므로 eat으로 고친다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (시제는 유지할 것): Half of the money <u>were</u> spent on snacks.",
+   "answer": "was",
+   "why": "money는 셀 수 없는 명사이므로 half of 뒤에서도 단수동사 was를 쓴다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (시제는 유지할 것): Every leaf on the trees <u>turn</u> red in fall.",
+   "answer": "turns",
+   "why": "주어는 every leaf(단수)이므로 turns. on the trees는 수식어일 뿐이다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (시제는 유지할 것): One of the biggest problems <u>are</u> air pollution.",
+   "answer": "is",
+   "why": "「one of+복수명사」의 주어는 one이므로 is로 고친다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제에 맞게 쓰시오: Each of my parents ____ (work) on weekends.",
+   "answer": "works",
+   "why": "「each of+복수명사」는 단수 취급하므로 works.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제에 맞게 쓰시오: Most of the ice in the cup ____ (be) gone.",
+   "answer": "is",
+   "why": "ice는 셀 수 없는 명사이므로 most of 뒤에서도 is.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제에 맞게 쓰시오: Every train to Busan ____ (leave) from this station.",
+   "answer": "leaves",
+   "why": "every+단수명사는 단수 취급하므로 leaves.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제에 맞게 쓰시오: Some of the players on the team ____ (be) middle school students.",
+   "answer": "are",
+   "why": "some of 뒤의 players가 복수이므로 are.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제에 맞게 쓰시오: One of the girls in the picture ____ (be) my cousin.",
+   "answer": "is",
+   "why": "주어는 one(단수)이므로 is.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제에 맞게 쓰시오: Half of the classrooms ____ (have) new computers.",
+   "answer": "have",
+   "why": "half of 뒤의 classrooms가 복수이므로 have.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 is 또는 are를 쓰시오: Most of the salad ____ already on the table.",
+   "answer": "is",
+   "why": "salad는 셀 수 없는 명사로 쓰였으므로 most of 뒤에서 단수동사 is.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 is 또는 are를 쓰시오: Some of the dishes ____ still in the sink.",
+   "answer": "are",
+   "why": "some of 뒤의 dishes가 복수이므로 are.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 do 또는 does를 알맞은 형태로 쓰시오: ____ every bus on this road stop at the hospital?",
+   "answer": "Does",
+   "why": "every+단수명사는 단수 취급하므로 Does.",
+   "alt": [
+    "does"
+   ],
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 do 또는 does를 알맞은 형태로 쓰시오: ____ most of your relatives live in Korea?",
+   "answer": "Do",
+   "why": "most of 뒤의 relatives가 복수이므로 Do.",
+   "alt": [
+    "do"
+   ],
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 was 또는 were를 쓰시오: Each of the letters ____ written by hand.",
+   "answer": "was",
+   "why": "「each of+복수명사」는 단수 취급하므로 was.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 was 또는 were를 쓰시오: Half of the guests ____ late for the wedding.",
+   "answer": "were",
+   "why": "half of 뒤의 guests가 복수이므로 were.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 모두 고른 것은? ㄱ. One of the most important things in life is health. ㄴ. Each of the team members were given a medal. ㄷ. Most of the advice he gave was helpful.",
+   "choices": [
+    "ㄱ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄱ은 one이 주어라 is, ㄷ은 advice가 셀 수 없는 명사라 was로 모두 옳다. ㄴ은 each가 주어이므로 was가 되어야 한다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 모두 고른 것은? ㄱ. Every scientist in the lab wear a white coat. ㄴ. Some of the trash on the beach was plastic. ㄷ. Half of the students in my school bring their own cups.",
+   "choices": [
+    "ㄴ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 5,
+   "why": "ㄴ은 trash가 단수 취급, ㄷ은 students가 복수라 bring으로 옳다. ㄱ은 every+단수명사이므로 wears가 되어야 한다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 모두 고른 것은? ㄱ. Each of us has a different dream. ㄴ. About 20 percent of the students walks to school. ㄷ. One of my goals this year is to read thirty books.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 each가 주어라 has, ㄷ은 one이 주어라 is로 옳다. ㄴ은 percent of 뒤의 students가 복수이므로 walk가 되어야 한다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 모두 고른 것은? ㄱ. Most of the buildings in this area were built in the 1970s. ㄴ. Each of the singers has a unique voice. ㄷ. Some of the news about the singer was not true.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ",
+    "ㄱ"
+   ],
+   "answer": 4,
+   "why": "ㄱ은 buildings가 복수라 were, ㄴ은 each가 주어라 has, ㄷ은 news가 셀 수 없는 명사라 was로 셋 다 옳다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 모두 고른 것은? ㄱ. Half of the water in the bottles were frozen. ㄴ. Every player on the field knows the rules. ㄷ. One of the oldest cities in the world are Rome.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 2,
+   "why": "ㄴ만 옳다. ㄱ은 water가 단수 취급이라 was, ㄷ은 one이 주어라 is가 되어야 한다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 모두 고른 것은? ㄱ. Some of the questions on the exam was about history. ㄴ. Each of the winners receives a gold medal and a prize. ㄷ. Most of the land in this region is used for farming.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄴ은 each가 주어라 receives, ㄷ은 land가 셀 수 없는 명사라 is로 옳다. ㄱ은 questions가 복수이므로 were가 되어야 한다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 모두 고른 것은? ㄱ. One of the reasons for the delay was the heavy snow. ㄴ. Every window in the old castle were broken. ㄷ. Half of the students in the survey uses the school library.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄴ"
+   ],
+   "answer": 1,
+   "why": "ㄱ만 옳다(one이 주어라 was). ㄴ은 every+단수명사이므로 was, ㄷ은 students가 복수이므로 use가 되어야 한다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 모두 고른 것은? ㄱ. Most of my free time is spent playing games. ㄴ. Each of the robots in the factory works twenty-four hours a day. ㄷ. Some of the passengers on the plane was asleep.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 time이 셀 수 없는 명사라 is, ㄴ은 each가 주어라 works로 옳다. ㄷ은 passengers가 복수이므로 were가 되어야 한다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장을 모두 고른 것은? ㄱ. Every answer on the sheet were correct. ㄴ. One of the paintings in the museum is worth a million dollars. ㄷ. Two thirds of the pizza was eaten by my brother.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ"
+   ],
+   "answer": 1,
+   "why": "ㄱ만 틀렸다. every+단수명사는 단수 취급이므로 was가 되어야 한다. ㄷ은 분수 표현 뒤의 pizza가 단수이므로 was가 맞는다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장을 모두 고른 것은? ㄱ. Each of the students in the club pay a small fee. ㄴ. Most of the fruit in the basket is fresh. ㄷ. Some of the visitors from Japan speaks Korean well.",
+   "choices": [
+    "ㄱ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄱ은 each가 주어라 pays, ㄷ은 visitors가 복수라 speak가 되어야 하므로 틀렸다. ㄴ은 fruit가 단수 취급이라 옳다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ㄱ. One of the students in my class come from Vietnam. ㄴ. Every road in the city was blocked by the snow. ㄷ. Most of the passengers were reading or sleeping. ㄹ. Each of the boxes contain ten books. ㅁ. Half of the class agrees with the plan.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄴ, ㄷ, ㅁ(half of+단수명사 class)이 옳아 3개다. ㄱ은 comes, ㄹ은 contains가 되어야 한다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ㄱ. Some of the ice on the road has melted. ㄴ. Every member of the band write their own songs. ㄷ. One of the easiest ways to relax is listening to music. ㄹ. Most of the shops on this street closes at nine. ㅁ. Each of the questions were worth five points.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ㄱ(ice 단수 취급)과 ㄷ(one이 주어)만 옳아 2개다. ㄴ은 writes, ㄹ은 close, ㅁ은 was가 되어야 한다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는? ㄱ. Half of the chairs in the hall was broken. ㄴ. Every child in the village knows the old song. ㄷ. Some of the money were stolen from the safe. ㄹ. One of the best players on the team is only fourteen. ㅁ. Most of the students in the survey want longer vacations.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ㄱ(chairs 복수→were)과 ㄷ(money 단수 취급→was)이 틀려 2개다. 나머지는 모두 옳다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ㄱ. Each of the countries in Asia has its own culture. ㄴ. About 30 percent of the students has a part-time job. ㄷ. Every bridge over the river were built long ago. ㄹ. Some of the cheese in the fridge smells strange. ㅁ. Most of my cousins lives in other cities.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ㄱ과 ㄹ(cheese 단수 취급)만 옳아 2개다. ㄴ은 have, ㄷ은 was, ㅁ은 live가 되어야 한다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ㄱ. One of the lights in the hallway was still on. ㄴ. Every guest at the hotel receive a free breakfast. ㄷ. Half of the apples on the tree are ready to pick. ㄹ. Most of the information in the report was correct. ㅁ. Each of the twins has a different personality.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "ㄱ, ㄷ, ㄹ(information 단수 취급), ㅁ이 옳아 4개다. ㄴ은 receives가 되어야 한다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는? ㄱ. Every star in the night sky look small. ㄴ. Some of the players on the bench were nervous. ㄷ. One of the rules of the game are simple. ㄹ. Most of the bread in the bakery is sold by noon. ㅁ. Each of the artists paint in a different style.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ(looks), ㄷ(is), ㅁ(paints)이 틀려 3개다. ㄴ과 ㄹ은 옳다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ㄱ. Half of the year is already gone. ㄴ. Each of the movies were about three hours long. ㄷ. Every problem has more than one answer. ㄹ. Some of the students in the gym was dancing. ㅁ. One of my favorite subjects is science.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ(year 단수), ㄷ, ㅁ이 옳아 3개다. ㄴ은 was, ㄹ은 were가 되어야 한다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ㄱ. Most of the paint on the wall was dry. ㄴ. Every farmer in this area grow rice. ㄷ. One of the busiest airports in the world is in Atlanta. ㄹ. Each of the students hands in homework on Friday. ㅁ. Some of the birds in the park stay there all winter.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "ㄱ(paint 단수 취급), ㄷ, ㄹ, ㅁ이 옳아 4개다. ㄴ은 grows가 되어야 한다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 틀린 것은?",
+   "choices": [
+    "One of the problems with plastic bags <u>is</u> that they last for hundreds of years.",
+    "Most of the plastic in the ocean <u>comes</u> from land.",
+    "Each of us <u>have</u> to reduce plastic waste.",
+    "Every small action <u>makes</u> a difference.",
+    "Some of the sea animals <u>eat</u> plastic by mistake."
+   ],
+   "answer": 3,
+   "why": "「each of+복수대명사」도 each가 주어이므로 has to가 되어야 한다. 나머지는 모두 옳다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 동사의 형태가 틀린 것은?",
+   "choices": [
+    "Each of the seasons in Korea <u>has</u> its own beauty.",
+    "Most of the rain <u>falls</u> in summer.",
+    "Every mountain near Seoul <u>is</u> crowded on weekends.",
+    "Some of the leaves <u>turns</u> red in October.",
+    "Half of the year <u>feels</u> like winter to me."
+   ],
+   "answer": 4,
+   "why": "some of 뒤의 leaves가 복수이므로 turn이 되어야 한다. 나머지는 모두 옳다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 잘못된 것을 고르시오.",
+   "choices": [
+    "One of the oldest buildings in town <u>is</u> the library.",
+    "Every book on the second floor <u>is</u> free to borrow.",
+    "Some of the computers there <u>are</u> quite slow.",
+    "Most of the space <u>is</u> used for reading rooms.",
+    "Each of the study rooms <u>hold</u> six people."
+   ],
+   "answer": 5,
+   "why": "「each of+복수명사」는 단수 취급하므로 holds가 되어야 한다. 나머지는 모두 옳다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 어색한 것을 고르면?",
+   "choices": [
+    "Every runner in the marathon <u>were</u> given a number.",
+    "One of the runners <u>was</u> over seventy years old.",
+    "Most of the road <u>was</u> closed to cars.",
+    "Some of the fans <u>were</u> holding signs.",
+    "Each of the water stations <u>was</u> two kilometers apart."
+   ],
+   "answer": 1,
+   "why": "every+단수명사(runner)는 단수 취급하므로 was가 되어야 한다. 나머지는 모두 옳다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 동사 중 수 일치가 틀린 것은?",
+   "choices": [
+    "Most of the food at the festival <u>was</u> sold out by six.",
+    "Each of the food trucks <u>were</u> run by local cooks.",
+    "Every ticket for the night concert <u>was</u> gone.",
+    "Some of the singers <u>were</u> high school students.",
+    "One of the stages <u>was</u> near the river."
+   ],
+   "answer": 2,
+   "why": "「each of+복수명사」는 단수 취급하므로 was가 되어야 한다. 나머지는 모두 옳다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분을 고쳐 써야 하는 것은?",
+   "choices": [
+    "One of the best things about fall <u>is</u> the cool weather.",
+    "Every family in my building <u>enjoys</u> the roof garden.",
+    "Some of the flowers there <u>blooms</u> until November.",
+    "Most of the soil <u>is</u> kept wet by the rain.",
+    "Each of the pots <u>has</u> a name tag on it."
+   ],
+   "answer": 3,
+   "why": "some of 뒤의 flowers가 복수이므로 bloom으로 고쳐야 한다. 나머지는 모두 옳다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 옳지 않은 것을 고르시오.",
+   "choices": [
+    "Each of the club members <u>pays</u> 5,000 won a month.",
+    "Most of the money <u>goes</u> to buying books.",
+    "Every meeting <u>starts</u> with a short quiz.",
+    "One of the members always <u>bring</u> cookies.",
+    "Some of the books <u>are</u> in English."
+   ],
+   "answer": 4,
+   "why": "「one of+복수명사」의 주어는 one이므로 brings가 되어야 한다. 나머지는 모두 옳다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 동사가 어색한 것은?",
+   "choices": [
+    "About half of the students in the survey <u>sleep</u> less than seven hours.",
+    "Every doctor <u>says</u> that sleep is important.",
+    "Some of the students <u>do</u> homework late at night.",
+    "Most of their tiredness <u>comes</u> from using phones in bed.",
+    "Each of the classes <u>start</u> at 8:30 in the morning."
+   ],
+   "answer": 5,
+   "why": "「each of+복수명사」는 단수 취급하므로 starts가 되어야 한다. 나머지는 모두 옳다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "글의 (A), (B), (C)에서 어법에 맞는 것끼리 짝지은 것은? Every city in the world (A)(has / have) its own smell. Most of the smells (B)(comes / come) from food and trees. One of the strongest smells in Seoul (C)(is / are) the smell of street food.",
+   "choices": [
+    "has — come — is",
+    "has — comes — is",
+    "have — come — are",
+    "has — come — are",
+    "have — comes — is"
+   ],
+   "answer": 1,
+   "why": "(A) every+단수명사→has, (B) smells가 복수→come, (C) one이 주어→is.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "글의 (A), (B), (C)에서 어법에 맞는 것끼리 짝지은 것은? Each of the planets (A)(moves / move) around the sun. Some of the planets (B)(has / have) many moons. About 70 percent of the Earth's surface (C)(is / are) water.",
+   "choices": [
+    "move — have — is",
+    "moves — has — is",
+    "moves — have — is",
+    "moves — have — are",
+    "move — has — are"
+   ],
+   "answer": 3,
+   "why": "(A) each가 주어→moves, (B) planets가 복수→have, (C) surface가 단수→is.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "글의 (A), (B), (C)에서 어법에 맞는 것끼리 짝지은 것은? One of my favorite writers (A)(is / are) from England. Every story she writes (B)(become / becomes) popular. Most of her books (C)(was / were) made into movies.",
+   "choices": [
+    "is — become — were",
+    "are — becomes — were",
+    "is — becomes — was",
+    "is — becomes — were",
+    "are — become — was"
+   ],
+   "answer": 4,
+   "why": "(A) one이 주어→is, (B) every+단수명사→becomes, (C) books가 복수→were.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "글의 (A), (B), (C)에서 어법에 맞는 것끼리 짝지은 것은? Half of the students in our school (A)(brings / bring) smartphones to class. Each of the classrooms (B)(has / have) a phone box. Every phone (C)(is / are) kept there until the last class.",
+   "choices": [
+    "brings — has — is",
+    "bring — have — is",
+    "bring — has — is",
+    "bring — has — are",
+    "brings — have — are"
+   ],
+   "answer": 3,
+   "why": "(A) students가 복수→bring, (B) each가 주어→has, (C) every+단수명사→is.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "글의 (A), (B), (C)에서 어법에 맞는 것끼리 짝지은 것은? Most of the water on the Earth (A)(is / are) salt water. One of the biggest problems today (B)(is / are) the lack of clean water. Each of us (C)(needs / need) to save water at home.",
+   "choices": [
+    "is — are — needs",
+    "is — is — needs",
+    "are — is — need",
+    "is — is — need",
+    "are — are — needs"
+   ],
+   "answer": 2,
+   "why": "(A) water는 셀 수 없는 명사→is, (B) one이 주어→is, (C) each가 주어→needs.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "글의 (A), (B), (C)에서 어법에 맞는 것끼리 짝지은 것은? Every animal in the desert (A)(has / have) its own way to survive. Some of the animals (B)(sleeps / sleep) during the day. One of them, the desert fox, (C)(hunts / hunt) at night.",
+   "choices": [
+    "has — sleeps — hunts",
+    "have — sleep — hunt",
+    "has — sleep — hunts",
+    "has — sleep — hunt",
+    "have — sleeps — hunts"
+   ],
+   "answer": 3,
+   "why": "(A) every+단수명사→has, (B) animals가 복수→sleep, (C) one이 주어→hunts.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장으로 가장 적절한 것은?",
+   "choices": [
+    "Each of the answers were checked twice by the teacher.",
+    "One of the things I want to learn is how to swim.",
+    "Every students who joins the club gets a T-shirt.",
+    "Some of the advice my grandmother gives are old but useful.",
+    "Most of the students who took the test says it was easy."
+   ],
+   "answer": 2,
+   "why": "주어가 one이므로 단수동사 is를 쓴 ②가 옳다. ①은 was, ③은 every student, ④는 advice가 단수 취급이라 is, ⑤는 say가 되어야 한다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 맞는 문장을 고르시오.",
+   "choices": [
+    "One of the boys who play soccer with me are my cousin.",
+    "Every house that have a red roof belongs to the company.",
+    "Each of the girls sing in the school choir.",
+    "Most of the trees that were planted last year are growing well.",
+    "Half of the stores in the mall closes early on Sundays."
+   ],
+   "answer": 4,
+   "why": "most of 뒤의 trees(복수)에 are를 맞춘 ④가 옳다. ①은 문장의 동사가 is, ②는 관계사절의 동사가 has, ③은 sings, ⑤는 close가 되어야 한다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 수 일치가 옳은 문장은?",
+   "choices": [
+    "About 60 percent of the human body is water.",
+    "Each of the problems on the board were solved by Mina.",
+    "Every one of the singers have practiced for months.",
+    "Some of the bread that I bought yesterday were too hard.",
+    "One of the fastest animals on land are the cheetah."
+   ],
+   "answer": 1,
+   "why": "percent of 뒤의 body가 단수이므로 is를 쓴 ①이 옳다. ②는 was, ③은 has, ④는 bread가 단수 취급이라 was, ⑤는 is가 되어야 한다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것을 고르면?",
+   "choices": [
+    "One of the paintings that were stolen was found in Paris.",
+    "Some of the questions that he asked were quite hard.",
+    "Every child who visit the museum gets a free gift.",
+    "Most of the rice that we eat is grown in Korea.",
+    "Each of the players who won a medal was interviewed."
+   ],
+   "answer": 3,
+   "why": "관계사절의 선행사가 child(단수)이므로 visit이 아니라 visits가 되어야 한다. ①은 관계사절의 were(선행사 paintings)와 문장의 was(주어 one)가 모두 옳다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 수 일치가 틀린 문장은?",
+   "choices": [
+    "Every teacher in our school knows my name.",
+    "One of the reasons I like winter is the food.",
+    "Some of the snow on the mountain never melts.",
+    "Each of the rooms in the palace was decorated with gold.",
+    "Half of the people in the survey wants a four-day school week."
+   ],
+   "answer": 5,
+   "why": "half of 뒤의 people이 복수이므로 want가 되어야 한다. ③은 snow가 셀 수 없는 명사라 melts가 옳다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳지 않은 것을 고르시오.",
+   "choices": [
+    "Every movie in this series has a happy ending.",
+    "Most of the students in my class thinks that the test was unfair.",
+    "One of the shops that sell old books is near my house.",
+    "Some of the money was used to buy flowers.",
+    "Each of the questions in part two was worth ten points."
+   ],
+   "answer": 2,
+   "why": "most of 뒤의 students가 복수이므로 think가 되어야 한다. ③은 관계사절의 sell(선행사 shops)과 문장의 is(주어 one)가 모두 옳다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "'그 학생들 각각은 자신만의 사물함을 가지고 있다.'를 영어로 바르게 옮긴 것은?",
+   "choices": [
+    "Each of the students have his or her own locker.",
+    "Each of the student has his or her own locker.",
+    "Each of the students has his or her own locker.",
+    "Each student have his or her own locker.",
+    "Each of students has their own locker."
+   ],
+   "answer": 3,
+   "why": "「each of the+복수명사」+단수동사(has)인 ③이 옳다. ①④는 동사, ②는 명사의 수가 틀렸고 ⑤는 the가 빠졌다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "'그 돈의 대부분은 가난한 아이들을 돕는 데 쓰인다.'를 영어로 바르게 옮긴 것은?",
+   "choices": [
+    "Most of the money is used to help poor children.",
+    "Most of the money are used to help poor children.",
+    "Most of money is use to help poor children.",
+    "Most of the moneys are used to help poor children.",
+    "Most of the money is used to helping poor children."
+   ],
+   "answer": 1,
+   "why": "money는 셀 수 없는 명사이므로 단수동사 is를 쓰고 「be used to+동사원형」으로 쓴 ①이 옳다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "'모든 나라는 지켜야 할 자신만의 규칙이 있다.'를 영어로 바르게 옮긴 것은?",
+   "choices": [
+    "Every country have its own rules to follow.",
+    "Every countries has its own rules to follow.",
+    "Every countries have their own rules to follow.",
+    "Every of the countries has its own rules to follow.",
+    "Every country has its own rules to follow."
+   ],
+   "answer": 5,
+   "why": "every+단수명사+단수동사(has)인 ⑤가 옳다. every 뒤에는 복수명사나 of를 쓸 수 없다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "'우리 반 학생들 중 절반이 그 동아리에 가입하기를 원한다.'를 영어로 바르게 옮긴 것은?",
+   "choices": [
+    "Half of the students in my class wants to join the club.",
+    "Half of the students in my class want to join the club.",
+    "Half of the student in my class want to join the club.",
+    "The half of students in my class wants to join the club.",
+    "Half of the students in my class are want to join the club."
+   ],
+   "answer": 2,
+   "why": "half of 뒤의 students(복수)에 맞춰 want를 쓴 ②가 옳다. ①은 동사의 수, ③은 명사의 수가 틀렸다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "One of the most difficult things about learning a language ____ speaking in front of others.",
+   "choices": [
+    "is",
+    "are",
+    "am",
+    "be",
+    "being"
+   ],
+   "answer": 1,
+   "why": "주어는 one(단수)이므로 is. of 뒤의 things에 속으면 안 된다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Every scientist who studies the ocean ____ that it is getting warmer.",
+   "choices": [
+    "know",
+    "knows",
+    "knowing",
+    "to know",
+    "known"
+   ],
+   "answer": 2,
+   "why": "주어는 every scientist(단수)이므로 knows. who studies는 수식하는 관계사절이다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Some of the photos that were taken at the festival ____ now on the school website.",
+   "choices": [
+    "is",
+    "are",
+    "was",
+    "be",
+    "being"
+   ],
+   "answer": 2,
+   "why": "some of 뒤의 photos가 복수이고 now가 있으므로 현재형 복수동사 are.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Two thirds of the students in my class ____ to have the sports day in May.",
+   "choices": [
+    "wants",
+    "want",
+    "wanting",
+    "to want",
+    "be wanting"
+   ],
+   "answer": 2,
+   "why": "분수 표현(two thirds of) 뒤의 students가 복수이므로 want.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 Every로 시작하여 같은 의미의 문장으로 다시 쓰시오. (문장 부호 포함): All the students in my class are kind.",
+   "answer": "Every student in my class is kind.",
+   "why": "every 뒤에는 단수명사(student)를 쓰고 동사도 단수형 is로 바꾼다.",
+   "alt": [
+    "Every student in my class is kind"
+   ],
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 Each of로 시작하여 같은 의미의 문장으로 다시 쓰시오. (문장 부호 포함): All the rooms in the hotel are clean.",
+   "answer": "Each of the rooms in the hotel is clean.",
+   "why": "「each of+복수명사」는 명사는 복수(rooms)로 두되 동사는 단수형 is로 쓴다.",
+   "alt": [
+    "Each of the rooms in the hotel is clean"
+   ],
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 단어들을 모두 한 번씩만 사용하여 어법에 맞는 문장을 쓰시오. (문장 부호 포함): (of / one / the / questions / was / very / easy)",
+   "answer": "One of the questions was very easy.",
+   "why": "「one of+복수명사」가 주어일 때 동사는 단수형 was를 쓴다.",
+   "alt": [
+    "One of the questions was very easy"
+   ],
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 단어들을 모두 한 번씩만 사용하여 어법에 맞는 문장을 쓰시오. (문장 부호 포함): (every / has / child / a / dream)",
+   "answer": "Every child has a dream.",
+   "why": "every+단수명사(child)가 주어이므로 단수동사 has를 쓴다.",
+   "alt": [
+    "Every child has a dream"
+   ],
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 단어들을 모두 한 번씩만 사용하여 어법에 맞는 문장을 쓰시오. (문장 부호 포함): (most / of / the / milk / is / gone)",
+   "answer": "Most of the milk is gone.",
+   "why": "milk는 셀 수 없는 명사이므로 most of 뒤에서도 단수동사 is를 쓴다.",
+   "alt": [
+    "Most of the milk is gone"
+   ],
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 단어들을 모두 한 번씩만 사용하여 어법에 맞는 문장을 쓰시오. (문장 부호 포함): (each / of / the / players / wears / a / cap)",
+   "answer": "Each of the players wears a cap.",
+   "why": "「each of+복수명사」가 주어일 때 동사는 단수형 wears를 쓴다.",
+   "alt": [
+    "Each of the players wears a cap"
+   ],
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 Each student로 시작하여 같은 의미의 문장으로 다시 쓰시오. (문장 부호 포함): Every student in our school learns two languages.",
+   "answer": "Each student in our school learns two languages.",
+   "why": "each+단수명사도 every+단수명사처럼 단수 취급하므로 동사 learns는 그대로 둔다.",
+   "alt": [
+    "Each student in our school learns two languages"
+   ],
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 Half of the apples로 시작하여 같은 의미의 문장으로 다시 쓰시오. (문장 부호 포함): Fifty percent of the apples in the box are red.",
+   "answer": "Half of the apples in the box are red.",
+   "why": "fifty percent of = half of이며, of 뒤의 apples가 복수이므로 are를 그대로 쓴다.",
+   "alt": [
+    "Half of the apples in the box are red"
+   ],
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (시제는 유지할 것): One of the students who joined the contest <u>were</u> my sister.",
+   "answer": "was",
+   "why": "문장의 주어는 one(단수)이므로 were가 아니라 was를 쓴다. who joined의 주어는 students이다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (시제는 유지할 것): Every mountain that I have climbed <u>have</u> a story.",
+   "answer": "has",
+   "why": "문장의 주어는 every mountain(단수)이므로 has를 쓴다. that I have climbed는 수식하는 관계사절이다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (시제는 유지할 것): Each of the letters he sent me <u>were</u> full of jokes.",
+   "answer": "was",
+   "why": "「each of+복수명사」는 단수 취급하므로 was를 쓴다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (시제는 유지할 것): Most of the students who saw the movie <u>says</u> it was great.",
+   "answer": "say",
+   "why": "most of 뒤의 students가 복수이므로 say를 쓴다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (시제는 유지할 것): Some of the information in this book <u>are</u> out of date.",
+   "answer": "is",
+   "why": "information은 셀 수 없는 명사이므로 some of 뒤에서도 단수동사 is를 쓴다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (시제는 유지할 것): About 80 percent of the messages I get <u>is</u> from my club members.",
+   "answer": "are",
+   "why": "percent of 뒤의 messages가 복수이므로 are를 쓴다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞게 현재시제로 쓰시오: One of the things that make me happy ____ (be) my dog.",
+   "answer": "is",
+   "why": "문장의 주어는 one(단수)이므로 is. that make의 주어는 things(복수)이다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞게 현재시제로 쓰시오: Every window in the tall building ____ (be) cleaned once a month.",
+   "answer": "is",
+   "why": "every+단수명사(window)는 단수 취급하므로 is.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞게 현재시제로 쓰시오: Each of the countries at the Olympics ____ (send) its best players.",
+   "answer": "sends",
+   "why": "「each of+복수명사」는 단수 취급하므로 sends.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞게 현재시제로 쓰시오: Most of the rice that Koreans eat ____ (come) from Korean farms.",
+   "answer": "comes",
+   "why": "rice는 셀 수 없는 명사이므로 most of 뒤에서도 단수동사 comes를 쓴다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 was 또는 were를 쓰시오: Some of the students who missed the bus ____ late for the exam.",
+   "answer": "were",
+   "why": "some of 뒤의 students가 복수이므로 were.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 was 또는 were를 쓰시오: One of the questions on the science test ____ about the moon.",
+   "answer": "was",
+   "why": "주어는 one(단수)이므로 was.",
+   "no": 200
+  }
+ ]
+}

@@ -1,0 +1,2684 @@
+{
+ "id": "hs-15",
+ "grade": "고등",
+ "name": "that절의 should 생략",
+ "points": [
+  "주장·요구·명령·제안 동사",
+  "(should)+동사원형",
+  "당위가 아니면 직설법"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe doctor suggested that Mr. Han ____ more vegetables. (채소를 더 먹어야 한다고 제안했다)",
+   "choices": [
+    "eat",
+    "eats",
+    "ate",
+    "eating",
+    "to eat"
+   ],
+   "answer": 1,
+   "why": "제안 동사 suggest 뒤 당위의 that절에는 (should)+동사원형을 쓴다. eats·ate 같은 직설법 시제는 당위의 의미와 맞지 않는다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe teacher demanded that every student ____ the library rules.",
+   "choices": [
+    "follows",
+    "follow",
+    "followed",
+    "following",
+    "to follow"
+   ],
+   "answer": 2,
+   "why": "요구 동사 demand 뒤 that절에는 (should)+동사원형 follow를 쓴다. 주어가 3인칭 단수여도 -s를 붙이지 않는다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe coach insisted that Jimin ____ to practice every morning. (매일 아침 연습에 와야 한다고 주장했다)",
+   "choices": [
+    "comes",
+    "came",
+    "come",
+    "coming",
+    "to come"
+   ],
+   "answer": 3,
+   "why": "주장 동사 insist가 '~해야 한다'는 당위를 나타낼 때 that절에는 (should)+동사원형 come을 쓴다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe manager ordered that the store ____ at nine.",
+   "choices": [
+    "opens",
+    "opened",
+    "opening",
+    "open",
+    "to open"
+   ],
+   "answer": 4,
+   "why": "명령 동사 order 뒤 that절에는 (should)+동사원형 open을 쓴다. opens·opened는 직설법이라 틀리다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nMy mom proposed that we ____ dinner together on Sundays.",
+   "choices": [
+    "has",
+    "had",
+    "having",
+    "to have",
+    "have"
+   ],
+   "answer": 5,
+   "why": "제안 동사 propose 뒤 that절에는 (should)+동사원형 have를 쓴다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe librarian requested that visitors ____ quiet inside.",
+   "choices": [
+    "be",
+    "are",
+    "were",
+    "being",
+    "to be"
+   ],
+   "answer": 1,
+   "why": "요청 동사 request 뒤 that절에는 (should)+동사원형이므로 be동사도 원형 be로 쓴다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe dentist recommended that she ____ her teeth after every meal.",
+   "choices": [
+    "brushes",
+    "brush",
+    "brushed",
+    "brushing",
+    "to brush"
+   ],
+   "answer": 2,
+   "why": "권유 동사 recommend 뒤 that절에는 (should)+동사원형 brush를 쓴다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe law requires that every driver ____ a seat belt.",
+   "choices": [
+    "wears",
+    "wore",
+    "wear",
+    "wearing",
+    "to wear"
+   ],
+   "answer": 3,
+   "why": "요구 동사 require 뒤 that절에는 (should)+동사원형 wear를 쓴다. 주어가 3인칭 단수여도 wears로 쓰지 않는다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe captain commanded that the soldiers ____ at once.",
+   "choices": [
+    "moves",
+    "moved",
+    "moving",
+    "move",
+    "to move"
+   ],
+   "answer": 4,
+   "why": "명령 동사 command 뒤 that절에는 (should)+동사원형 move를 쓴다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nHer lawyer advised that she ____ nothing to the press.",
+   "choices": [
+    "says",
+    "said",
+    "saying",
+    "to say",
+    "say"
+   ],
+   "answer": 5,
+   "why": "충고 동사 advise 뒤 that절에는 (should)+동사원형 say를 쓴다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe principal urged that the meeting ____ held soon.",
+   "choices": [
+    "be",
+    "is",
+    "was",
+    "been",
+    "being"
+   ],
+   "answer": 1,
+   "why": "촉구 동사 urge 뒤 that절이 수동태이면 (should) be p.p.가 되므로 be held가 알맞다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe committee suggested that the plan ____ changed. (계획이 변경되어야 한다고 제안했다)",
+   "choices": [
+    "is",
+    "be",
+    "was",
+    "been",
+    "being"
+   ],
+   "answer": 2,
+   "why": "suggest 뒤 당위의 that절이 수동태이면 (should) be changed이므로 원형 be를 쓴다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nJake demanded that his brother ____ his bike back right away.",
+   "choices": [
+    "gives",
+    "gave",
+    "give",
+    "given",
+    "giving"
+   ],
+   "answer": 3,
+   "why": "demand 뒤 that절에는 (should)+동사원형 give를 쓴다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe nurse insisted that the patient ____ in bed. (침대에 머물러야 한다고 주장했다)",
+   "choices": [
+    "stays",
+    "stayed",
+    "staying",
+    "stay",
+    "to stay"
+   ],
+   "answer": 4,
+   "why": "insist가 당위(머물러야 한다)를 나타내므로 that절에 (should)+동사원형 stay를 쓴다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe judge ordered that the man ____ the fine within a week.",
+   "choices": [
+    "pays",
+    "paid",
+    "paying",
+    "to pay",
+    "pay"
+   ],
+   "answer": 5,
+   "why": "order 뒤 that절에는 (should)+동사원형 pay를 쓴다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nI suggested that Amy ____ the earlier train. (더 이른 기차를 타야 한다고 제안했다)",
+   "choices": [
+    "take",
+    "takes",
+    "took",
+    "taking",
+    "to take"
+   ],
+   "answer": 1,
+   "why": "suggest 뒤 당위의 that절에는 (should)+동사원형 take를 쓴다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe contest rules require that each entry ____ original.",
+   "choices": [
+    "is",
+    "be",
+    "are",
+    "was",
+    "being"
+   ],
+   "answer": 2,
+   "why": "require 뒤 that절에는 (should)+동사원형이므로 be동사도 원형 be를 쓴다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nDad proposed that we ____ camping this weekend.",
+   "choices": [
+    "goes",
+    "went",
+    "go",
+    "going",
+    "gone"
+   ],
+   "answer": 3,
+   "why": "propose 뒤 that절에는 (should)+동사원형 go를 쓴다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe city demanded that the factory ____ polluting the river.",
+   "choices": [
+    "stops",
+    "stopped",
+    "stopping",
+    "stop",
+    "to stop"
+   ],
+   "answer": 4,
+   "why": "demand 뒤 that절에는 (should)+동사원형 stop을 쓴다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nMs. Park recommended that Tom ____ the book before the exam.",
+   "choices": [
+    "reads",
+    "reading",
+    "to read",
+    "has read",
+    "read"
+   ],
+   "answer": 5,
+   "why": "recommend 뒤 that절에는 (should)+동사원형 read를 쓴다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은? [A]",
+   "choices": [
+    "The coach demanded that Sumin runs faster.",
+    "The coach demanded that Sumin ran faster.",
+    "The coach demanded that Sumin run faster.",
+    "The coach demanded that Sumin running faster.",
+    "The coach demanded that Sumin to run faster."
+   ],
+   "answer": 3,
+   "why": "demand 뒤 that절에는 (should)+동사원형을 쓰므로 run이 옳다. runs·ran 같은 직설법 시제나 준동사 형태는 틀리다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은? [B]",
+   "choices": [
+    "The doctor suggested that he should stopped smoking.",
+    "The doctor suggested that he should stop smoking.",
+    "The doctor suggested that he stops smoking.",
+    "The doctor suggested that he to stop smoking.",
+    "The doctor suggested that he stopping smoking."
+   ],
+   "answer": 2,
+   "why": "suggest 뒤 당위의 that절은 should+동사원형 또는 should를 생략한 동사원형을 쓴다. should 뒤에는 반드시 원형이 와야 하므로 ①은 틀리다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은? [C]",
+   "choices": [
+    "Mom insisted that I be home by ten.",
+    "Mom insisted that I am home by ten.",
+    "Mom insisted that I being home by ten.",
+    "Mom insisted that I to be home by ten.",
+    "Mom insisted that I should being home by ten."
+   ],
+   "answer": 1,
+   "why": "insist가 '집에 와 있어야 한다'는 당위를 나타내므로 that절에 (should)+동사원형 be를 쓴 ①이 옳다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은? [D]",
+   "choices": [
+    "The teacher required that all homework is done by Monday.",
+    "The teacher required that all homework done by Monday.",
+    "The teacher required that all homework be done by Monday.",
+    "The teacher required that all homework to be done by Monday.",
+    "The teacher required that all homework being done by Monday."
+   ],
+   "answer": 3,
+   "why": "require 뒤 that절의 수동태는 (should) be p.p.이므로 be done이 옳다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은? [E]",
+   "choices": [
+    "He proposed that the meeting is put off.",
+    "He proposed that the meeting put off.",
+    "He proposed that the meeting to be put off.",
+    "He proposed that the meeting be put off.",
+    "He proposed that the meeting putting off."
+   ],
+   "answer": 4,
+   "why": "propose 뒤 that절의 수동태는 (should) be p.p.이므로 be put off가 옳다. ②는 be가 빠져 수동의 의미를 나타낼 수 없다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은? [F]",
+   "choices": [
+    "The vet advised that the dog not eat chocolate.",
+    "The vet advised that the dog eats not chocolate.",
+    "The vet advised that the dog not eats chocolate.",
+    "The vet advised that the dog doesn't ate chocolate.",
+    "The vet advised that the dog not to eat chocolate."
+   ],
+   "answer": 1,
+   "why": "advise 뒤 that절의 부정은 (should) not+동사원형이므로 not eat이 옳다. do를 쓰거나 not 뒤에 to부정사·-s형을 쓰면 틀리다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은? [A]",
+   "choices": [
+    "The judge ordered that the trial begin on Monday.",
+    "The board proposed that the rule be changed.",
+    "Ms. Choi suggested that Minho join the book club.",
+    "The police demanded that the driver shows his license.",
+    "The doctor recommended that she get more sleep."
+   ],
+   "answer": 4,
+   "why": "demand 뒤 that절에는 (should)+동사원형을 써야 하므로 shows가 아니라 show가 되어야 한다. 나머지는 모두 동사원형을 바르게 썼다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은? [B]",
+   "choices": [
+    "Dad insisted that we leave early for the airport.",
+    "The sign requests that visitors not feed the animals.",
+    "The rule requires that every player wear a helmet.",
+    "The coach urged that the team practice harder.",
+    "Mom suggested that Jane goes to bed earlier."
+   ],
+   "answer": 5,
+   "why": "suggest 뒤 당위의 that절에는 (should)+동사원형을 쓰므로 goes가 아니라 go가 되어야 한다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은? [C]",
+   "choices": [
+    "The king commanded that the gate be closed.",
+    "The teacher demanded that the noise stop at once.",
+    "The manager ordered that the report be finished today.",
+    "The clinic recommends that patients arrive ten minutes early.",
+    "The lawyer advised that she signed the papers quickly."
+   ],
+   "answer": 5,
+   "why": "advise 뒤 that절에는 (should)+동사원형을 써야 하므로 signed가 아니라 sign이 되어야 한다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은? [D]",
+   "choices": [
+    "I suggested that we meet at the bus stop.",
+    "The rules require that phones be turned off in class.",
+    "He requested that the window is opened.",
+    "The doctor ordered that the patient rest for a week.",
+    "She proposed that we share the cost."
+   ],
+   "answer": 3,
+   "why": "request 뒤 that절의 수동태는 (should) be p.p.이므로 is opened가 아니라 be opened가 되어야 한다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은? [E]",
+   "choices": [
+    "The hotel requires that guests should check out by noon.",
+    "The coach insisted that everyone warm up first.",
+    "Mom demanded that my room be cleaned before dinner.",
+    "The teacher proposed that the test being delayed.",
+    "The city urged that people save water."
+   ],
+   "answer": 4,
+   "why": "propose 뒤 that절에는 (should) be delayed처럼 원형 be를 써야 하므로 being delayed는 틀리다. ①처럼 should를 생략하지 않고 그대로 쓰는 것은 옳다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은? [F]",
+   "choices": [
+    "The vet suggested that the cat be kept indoors.",
+    "My teacher recommended that I keep a diary in English.",
+    "The officer ordered that the cars to stop.",
+    "The club requires that new members attend the first meeting.",
+    "Grandpa insisted that the old tree not be cut down."
+   ],
+   "answer": 3,
+   "why": "order 뒤 that절에는 (should)+동사원형을 쓰므로 to stop이 아니라 stop이 되어야 한다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분이 어법상 틀린 것은? [A]",
+   "choices": [
+    "The doctor suggested that Mina <u>exercise</u> every day.",
+    "The judge ordered that the fine <u>be paid</u> at once.",
+    "Mom insisted that I <u>finish</u> my homework first.",
+    "The rule requires that students <u>wears</u> uniforms.",
+    "He proposed that we <u>start</u> over."
+   ],
+   "answer": 4,
+   "why": "require 뒤 that절에는 (should)+동사원형을 쓰므로 wears가 아니라 wear가 되어야 한다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분이 어법상 틀린 것은? [B]",
+   "choices": [
+    "The coach demanded that Jiho <u>run</u> another lap.",
+    "The teacher requested that we <u>be</u> quiet.",
+    "She suggested that her sister <u>took</u> a rest. (쉬어야 한다고 제안했다)",
+    "The law requires that shops <u>close</u> by midnight.",
+    "Dad ordered that the TV <u>be turned</u> off."
+   ],
+   "answer": 3,
+   "why": "suggest가 당위(쉬어야 한다)를 나타내므로 that절에는 took이 아니라 (should)+동사원형 take를 써야 한다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분이 어법상 틀린 것은? [C]",
+   "choices": [
+    "The nurse advised that he <u>not skip</u> breakfast.",
+    "The committee proposed that the festival <u>be held</u> in May.",
+    "The captain commanded that the men <u>stand</u> in line.",
+    "I recommended that Sora <u>watch</u> the movie.",
+    "The manager insisted that the door <u>stays</u> locked at night. (잠겨 있어야 한다고 주장했다)"
+   ],
+   "answer": 5,
+   "why": "insist가 당위를 나타내므로 that절에는 stays가 아니라 (should)+동사원형 stay를 써야 한다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분이 어법상 틀린 것은? [D]",
+   "choices": [
+    "The school requires that every visitor <u>sign</u> in at the office.",
+    "He suggested that we <u>not take</u> the crowded subway.",
+    "The queen ordered that the letter <u>be sent</u> immediately.",
+    "The trainer urged that she <u>drink</u> enough water.",
+    "They demanded that the game <u>was played</u> again."
+   ],
+   "answer": 5,
+   "why": "demand 뒤 that절의 수동태는 (should) be p.p.이므로 was played가 아니라 be played가 되어야 한다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· The teacher suggested that Harin ____ in the front row. (앞줄에 앉아야 한다고)\n· The judge ordered that the witness ____ down.",
+   "choices": [
+    "sit",
+    "sits",
+    "sat",
+    "sitting",
+    "to sit"
+   ],
+   "answer": 1,
+   "why": "suggest와 order 모두 당위의 that절을 이끌므로 두 빈칸 모두 (should)+동사원형 sit이 알맞다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· Mom insisted that the window ____ closed at night. (닫혀 있어야 한다고)\n· The rule requires that the gate ____ locked after dark.",
+   "choices": [
+    "be",
+    "is",
+    "was",
+    "been",
+    "being"
+   ],
+   "answer": 1,
+   "why": "두 문장 모두 당위의 that절 수동태이므로 (should) be p.p.의 원형 be가 공통으로 들어간다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· The doctor recommended that he ____ a break every hour.\n· She proposed that we ____ turns driving.",
+   "choices": [
+    "takes",
+    "take",
+    "took",
+    "taking",
+    "to take"
+   ],
+   "answer": 2,
+   "why": "recommend와 propose 모두 당위의 that절을 이끌므로 (should)+동사원형 take가 공통으로 알맞다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n선생님은 우리가 사전을 가져와야 한다고 제안했다.",
+   "choices": [
+    "The teacher suggested that we bring a dictionary.",
+    "The teacher suggested that we brought a dictionary.",
+    "The teacher suggested that we bringing a dictionary.",
+    "The teacher suggested us to bring a dictionary.",
+    "The teacher suggested that we to bring a dictionary."
+   ],
+   "answer": 1,
+   "why": "suggest 뒤 당위의 that절에는 (should)+동사원형 bring을 쓴다. suggest는 「suggest+목적어+to부정사」 형태로 쓰지 않는다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그들은 그 다리가 즉시 수리되어야 한다고 요구했다.",
+   "choices": [
+    "They demanded that the bridge is repaired at once.",
+    "They demanded that the bridge be repaired at once.",
+    "They demanded that the bridge repaired at once.",
+    "They demanded that the bridge to be repaired at once.",
+    "They demanded that the bridge being repaired at once."
+   ],
+   "answer": 2,
+   "why": "demand 뒤 that절의 수동태는 (should) be p.p.이므로 be repaired가 옳다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n의사는 아빠가 소금을 덜 먹어야 한다고 권했다.",
+   "choices": [
+    "The doctor recommended that Dad eats less salt.",
+    "The doctor recommended that Dad ate less salt.",
+    "The doctor recommended that Dad eat less salt.",
+    "The doctor recommended Dad to eating less salt.",
+    "The doctor recommended that Dad eating less salt."
+   ],
+   "answer": 3,
+   "why": "recommend 뒤 당위의 that절에는 (should)+동사원형 eat을 쓴다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n엄마는 내가 밤늦게 나가지 말아야 한다고 주장하셨다.",
+   "choices": [
+    "Mom insisted that I not go out late at night.",
+    "Mom insisted that I don't go out late at night.",
+    "Mom insisted that I not to go out late at night.",
+    "Mom insisted that I went not out late at night.",
+    "Mom insisted that I not going out late at night."
+   ],
+   "answer": 1,
+   "why": "당위의 that절 부정은 (should) not+동사원형이므로 not go가 옳다. do동사를 쓰거나 not 뒤에 to부정사를 쓰면 틀리다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: I keep coughing these days.\nB: You'd better see a doctor.\n→ B suggested that A ____ a doctor.",
+   "choices": [
+    "see",
+    "sees",
+    "saw",
+    "seeing",
+    "to see"
+   ],
+   "answer": 1,
+   "why": "suggest 뒤 당위의 that절에는 (should)+동사원형 see를 쓴다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Can we hand in the report tomorrow?\nB: No. I demand that it ____ in today.",
+   "choices": [
+    "be handed",
+    "is handed",
+    "was handed",
+    "hands",
+    "handing"
+   ],
+   "answer": 1,
+   "why": "demand 뒤 that절의 수동태는 (should) be p.p.이므로 be handed가 알맞다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: The music in this mall is too loud.\nB: I agree. Let's talk to the manager.\n→ They requested that the music ____ turned down.",
+   "choices": [
+    "be",
+    "is",
+    "was",
+    "been",
+    "being"
+   ],
+   "answer": 1,
+   "why": "request 뒤 that절의 수동태는 (should) be turned down이므로 원형 be가 알맞다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장에서 should를 생략할 때 빈칸에 들어갈 말로 알맞은 것은?\nThe coach insisted that Minsu should apologize to his teammates.\n→ The coach insisted that Minsu ____ to his teammates.",
+   "choices": [
+    "apologize",
+    "apologizes",
+    "apologized",
+    "apologizing",
+    "to apologize"
+   ],
+   "answer": 1,
+   "why": "당위의 that절에서 should를 생략해도 동사원형은 그대로 남으므로 apologize가 알맞다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 (A), (B)에 들어갈 말로 알맞게 짝지어진 것은?\nThe waiter recommended that she (A) the soup, and she asked that it (B) served quickly.",
+   "choices": [
+    "try - is",
+    "try - be",
+    "tries - be",
+    "tries - is",
+    "trying - be"
+   ],
+   "answer": 2,
+   "why": "recommend와 ask 모두 당위의 that절을 이끌므로 (A)는 동사원형 try, (B)는 수동태 원형 be가 알맞다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안 동사를 어법에 맞게 한 단어로 바꿔 빈칸에 쓰시오.\nThe teacher suggested that Yuna ____ (keep) a diary.",
+   "answer": "keep",
+   "alt": [],
+   "why": "suggest 뒤 당위의 that절에는 (should)+동사원형을 쓰며, 한 단어 조건이므로 should 없이 원형 keep을 쓴다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안 동사를 어법에 맞게 한 단어로 바꿔 빈칸에 쓰시오.\nThe rules require that every camper ____ (bring) a flashlight.",
+   "answer": "bring",
+   "alt": [],
+   "why": "require 뒤 that절에는 (should)+동사원형 bring을 쓴다. 주어가 3인칭 단수여도 brings로 쓰지 않는다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안 동사를 어법에 맞게 한 단어로 바꿔 빈칸에 쓰시오.\nThe judge ordered that the man ____ (leave) the court.",
+   "answer": "leave",
+   "alt": [],
+   "why": "order 뒤 that절에는 (should)+동사원형 leave를 쓴다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안 동사를 어법에 맞게 한 단어로 바꿔 빈칸에 쓰시오.\nMom insisted that my brother ____ (wash) the dishes tonight.",
+   "answer": "wash",
+   "alt": [],
+   "why": "insist가 '설거지를 해야 한다'는 당위를 나타내므로 that절에 동사원형 wash를 쓴다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안 동사를 어법에 맞게 한 단어로 바꿔 빈칸에 쓰시오.\nThe doctor recommended that Grandma ____ (walk) every morning.",
+   "answer": "walk",
+   "alt": [],
+   "why": "recommend 뒤 that절에는 (should)+동사원형 walk를 쓴다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안 동사를 어법에 맞게 한 단어로 바꿔 빈칸에 쓰시오.\nHe proposed that the club ____ (meet) twice a month.",
+   "answer": "meet",
+   "alt": [],
+   "why": "propose 뒤 that절에는 (should)+동사원형 meet을 쓴다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안 동사를 어법에 맞게 한 단어로 바꿔 빈칸에 쓰시오.\nThe librarian requested that everyone ____ (be) silent.",
+   "answer": "be",
+   "alt": [],
+   "why": "request 뒤 that절에는 (should)+동사원형이므로 be동사도 원형 be 그대로 쓴다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안 동사를 어법에 맞게 한 단어로 바꿔 빈칸에 쓰시오.\nThe coach demanded that the players ____ (arrive) by eight.",
+   "answer": "arrive",
+   "alt": [],
+   "why": "demand 뒤 that절에는 (should)+동사원형 arrive를 쓴다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe dentist suggested that Jiho <u>uses</u> less sugar.",
+   "answer": "use",
+   "alt": [
+    "should use"
+   ],
+   "why": "suggest 뒤 당위의 that절에는 (should)+동사원형을 쓰므로 uses를 use로 고친다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe officer ordered that the truck <u>stopped</u> at the gate.",
+   "answer": "stop",
+   "alt": [
+    "should stop"
+   ],
+   "why": "order 뒤 that절에는 (should)+동사원형을 쓰므로 stopped를 stop으로 고친다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe school requires that students <u>turns</u> off their phones in class.",
+   "answer": "turn",
+   "alt": [
+    "should turn"
+   ],
+   "why": "require 뒤 that절에는 (should)+동사원형을 쓰므로 turns를 turn으로 고친다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nDad insisted that the picnic <u>is</u> put off until Saturday.",
+   "answer": "be",
+   "alt": [
+    "should be"
+   ],
+   "why": "insist 뒤 당위의 that절 수동태는 (should) be p.p.이므로 is를 원형 be로 고친다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nShe requested that her name <u>is removed</u> from the list.",
+   "answer": "be removed",
+   "alt": [
+    "should be removed"
+   ],
+   "why": "request 뒤 that절의 수동태는 (should) be p.p.이므로 is removed를 be removed로 고친다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe vet advised that the puppy <u>doesn't eat</u> too fast.",
+   "answer": "not eat",
+   "alt": [
+    "should not eat"
+   ],
+   "why": "당위의 that절 부정은 do동사 없이 (should) not+동사원형으로 쓰므로 not eat으로 고친다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 should를 생략하여 문장 전체를 다시 쓰시오.\nThe doctor suggested that he should get more rest.",
+   "answer": "The doctor suggested that he get more rest.",
+   "alt": [],
+   "why": "당위의 that절에서 should를 생략하면 동사원형 get만 남는다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 should를 생략하여 문장 전체를 다시 쓰시오.\nThe captain ordered that the flag should be raised.",
+   "answer": "The captain ordered that the flag be raised.",
+   "alt": [],
+   "why": "should를 생략해도 be raised의 원형 be는 그대로 남는다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 should를 생략하여 문장 전체를 다시 쓰시오.\nMom demanded that we should not waste food.",
+   "answer": "Mom demanded that we not waste food.",
+   "alt": [],
+   "why": "should를 생략하면 부정은 not+동사원형(not waste)만 남는다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 말을 한 단어로 쓰시오.\nThe teacher said to us, \"Clean the classroom.\"\n= The teacher ordered that we ____ the classroom.",
+   "answer": "clean",
+   "alt": [],
+   "why": "order 뒤 that절에는 (should)+동사원형을 쓰며, 한 단어 조건이므로 원형 clean을 쓴다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 말을 한 단어로 쓰시오.\n\"You had better take the subway,\" Mina said to me.\n= Mina suggested that I ____ the subway.",
+   "answer": "take",
+   "alt": [],
+   "why": "suggest 뒤 당위의 that절에는 (should)+동사원형 take를 쓴다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 말을 한 단어로 쓰시오.\n\"Please open the window,\" she said to Tom.\n= She requested that Tom ____ the window.",
+   "answer": "open",
+   "alt": [],
+   "why": "request 뒤 that절에는 (should)+동사원형 open을 쓴다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe environmental group demanded that the city ____ the number of plastic bags used in local markets.",
+   "choices": [
+    "reduce",
+    "reduces",
+    "reduced",
+    "reducing",
+    "to reduce"
+   ],
+   "answer": 1,
+   "why": "demand 뒤 당위의 that절에는 (should)+동사원형 reduce를 쓴다. 직설법 시제인 reduces·reduced는 틀리다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe committee proposed that the annual festival ____ to early October because of the weather.",
+   "choices": [
+    "is moved",
+    "be moved",
+    "moved",
+    "moving",
+    "to be moved"
+   ],
+   "answer": 2,
+   "why": "propose 뒤 that절의 수동태는 (should) be p.p.이므로 be moved가 알맞다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nHer doctor strongly recommended that she ____ at least eight hours of sleep before the surgery.",
+   "choices": [
+    "gets",
+    "got",
+    "get",
+    "getting",
+    "to get"
+   ],
+   "answer": 3,
+   "why": "recommend 뒤 당위의 that절에는 (should)+동사원형 get을 쓴다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe manual requires that the machine ____ off before anyone opens the cover.",
+   "choices": [
+    "is turned",
+    "turned",
+    "turning",
+    "be turned",
+    "turns"
+   ],
+   "answer": 4,
+   "why": "require 뒤 that절의 수동태는 (should) be p.p.이므로 be turned가 알맞다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nMy advisor suggested that I ____ for the exchange program before the deadline.",
+   "choices": [
+    "applies",
+    "applied",
+    "applying",
+    "to apply",
+    "apply"
+   ],
+   "answer": 5,
+   "why": "suggest 뒤 당위의 that절에는 (should)+동사원형 apply를 쓴다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe residents insisted that a crosswalk ____ in front of the elementary school. (횡단보도가 그려져야 한다고 주장했다)",
+   "choices": [
+    "be painted",
+    "is painted",
+    "was painted",
+    "painted",
+    "paints"
+   ],
+   "answer": 1,
+   "why": "insist가 당위를 나타내므로 that절의 수동태는 (should) be painted가 알맞다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe airline requested that passengers ____ their seat belts fastened during the flight.",
+   "choices": [
+    "kept",
+    "keep",
+    "keeps",
+    "keeping",
+    "to keep"
+   ],
+   "answer": 2,
+   "why": "request 뒤 that절에는 (should)+동사원형 keep을 쓴다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe union urged that the safety inspection ____ out every month, not once a year.",
+   "choices": [
+    "carries",
+    "is carried",
+    "be carried",
+    "carrying",
+    "carried"
+   ],
+   "answer": 3,
+   "why": "urge 뒤 that절의 수동태는 (should) be carried out이므로 be carried가 알맞다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe judge ordered that the two companies ____ the case out of court.",
+   "choices": [
+    "settles",
+    "settled",
+    "settling",
+    "settle",
+    "to settle"
+   ],
+   "answer": 4,
+   "why": "order 뒤 that절에는 (should)+동사원형 settle을 쓴다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe board proposed that the new library ____ after the school's first principal.",
+   "choices": [
+    "names",
+    "is named",
+    "naming",
+    "was named",
+    "be named"
+   ],
+   "answer": 5,
+   "why": "propose 뒤 that절의 수동태는 (should) be named가 알맞다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nIt was demanded that the test results ____ public immediately.",
+   "choices": [
+    "be made",
+    "are made",
+    "were made",
+    "making",
+    "made"
+   ],
+   "answer": 1,
+   "why": "demand의 수동 구문 「It was demanded that ~」에서도 that절에는 (should)+동사원형을 쓰므로 be made가 알맞다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe counselor advised that Junho not ____ his part-time job until exams were over.",
+   "choices": [
+    "quits",
+    "quit",
+    "quitted",
+    "quitting",
+    "to quit"
+   ],
+   "answer": 2,
+   "why": "당위의 that절 부정은 (should) not+동사원형이므로 not 뒤에 원형 quit을 쓴다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 (A), (B)에 들어갈 말로 알맞게 짝지어진 것은?\nThe nutritionist suggested that the school (A) healthier lunch options and that soda machines (B) from the hallways.",
+   "choices": [
+    "provide - are removed",
+    "provides - be removed",
+    "provide - be removed",
+    "provides - are removed",
+    "providing - be removed"
+   ],
+   "answer": 3,
+   "why": "suggest가 이끄는 두 that절 모두 당위이므로 (A)는 동사원형 provide, (B)는 수동태 원형 be removed가 알맞다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 (A), (B)에 들어갈 말로 알맞게 짝지어진 것은?\nThe landlord demanded that the rent (A) by the first of the month and insisted that the tenants (B) the hallway clean. (요구·주장 모두 당위)",
+   "choices": [
+    "be paid - keep",
+    "is paid - keep",
+    "be paid - kept",
+    "is paid - kept",
+    "be paid - keeping"
+   ],
+   "answer": 1,
+   "why": "demand와 insist(당위) 뒤 that절에는 (should)+동사원형을 쓰므로 be paid와 keep이 알맞다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 (A), (B)에 들어갈 말로 알맞게 짝지어진 것은?\nThe coach required that every player (A) the morning practice, and he asked that parents (B) near the field gate.",
+   "choices": [
+    "attends - not park",
+    "attend - not parked",
+    "attend - not park",
+    "attends - not parked",
+    "attending - not park"
+   ],
+   "answer": 3,
+   "why": "require와 ask 뒤 that절에는 (should)+동사원형을 쓰므로 attend와 not park가 알맞다. 부정은 not+동사원형이다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 (A), (B)에 들어갈 말로 알맞게 짝지어진 것은?\nThe report recommended that the old bridge (A) to heavy trucks and that a new route (B) within five years.",
+   "choices": [
+    "is closed - be built",
+    "be closed - be built",
+    "be closed - builds",
+    "is closed - builds",
+    "being closed - be built"
+   ],
+   "answer": 2,
+   "why": "recommend가 이끄는 두 that절 모두 당위의 수동태이므로 be closed와 be built가 알맞다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 (A), (B)에 들어갈 말로 알맞게 짝지어진 것은?\nThe doctor insisted that my father (A) his medicine on time and suggested that he (B) for thirty minutes after dinner. (모두 당위의 의미)",
+   "choices": [
+    "take - walk",
+    "takes - walk",
+    "take - walks",
+    "takes - walks",
+    "taking - walking"
+   ],
+   "answer": 1,
+   "why": "insist와 suggest가 당위를 나타내므로 두 that절 모두 (should)+동사원형 take, walk를 쓴다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 (A), (B)에 들어갈 말로 알맞게 짝지어진 것은?\nThe city council proposed that speed cameras (A) near schools and urged that drivers (B) down in those areas.",
+   "choices": [
+    "install - slow",
+    "be installed - slowed",
+    "install - slowed",
+    "be installed - slow",
+    "being installed - slow"
+   ],
+   "answer": 4,
+   "why": "propose 뒤 수동태는 be installed, urge 뒤 능동태는 동사원형 slow가 알맞다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은? [G]",
+   "choices": [
+    "The scientist proposed that the samples be tested again under different conditions.",
+    "The customer demanded that the broken chair be replaced free of charge.",
+    "The guidebook recommends that travelers carry a copy of their passport.",
+    "The mayor urged that the shelter is expanded before winter.",
+    "The clinic requested that patients fill out the form in advance."
+   ],
+   "answer": 4,
+   "why": "urge 뒤 that절의 수동태는 (should) be expanded가 되어야 하므로 is expanded는 틀리다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은? [H]",
+   "choices": [
+    "The contract requires that both sides give thirty days' notice.",
+    "His trainer suggested that he not lift heavy weights for a while.",
+    "The general commanded that the troops hold their positions overnight.",
+    "The librarian requested that the borrowed books be returned by Friday.",
+    "The teacher insisted that Somi rewrites her essay in her own words."
+   ],
+   "answer": 5,
+   "why": "insist가 당위(다시 써야 한다)를 나타내므로 rewrites가 아니라 (should)+동사원형 rewrite를 써야 한다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은? [G]",
+   "choices": [
+    "The committee proposed that the deadline is extended by a week.",
+    "The committee proposed that the deadline extended by a week.",
+    "The committee proposed that the deadline be extended by a week.",
+    "The committee proposed that the deadline to be extended by a week.",
+    "The committee proposed that the deadline being extended by a week."
+   ],
+   "answer": 3,
+   "why": "propose 뒤 that절의 수동태는 (should) be p.p.이므로 be extended가 옳다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은? [H]",
+   "choices": [
+    "The security team demanded that every visitor shows an ID card at the gate.",
+    "The security team demanded that every visitor show an ID card at the gate.",
+    "The security team demanded that every visitor showed an ID card at the gate.",
+    "The security team demanded that every visitor showing an ID card at the gate.",
+    "The security team demanded that every visitor to show an ID card at the gate."
+   ],
+   "answer": 2,
+   "why": "demand 뒤 that절에는 주어의 수와 관계없이 (should)+동사원형 show를 쓴다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은? [I]",
+   "choices": [
+    "The doctor advised that the patient not drink coffee before the blood test.",
+    "The doctor advised that the patient drinks not coffee before the blood test.",
+    "The doctor advised that the patient not to drink coffee before the blood test.",
+    "The doctor advised that the patient didn't drank coffee before the blood test.",
+    "The doctor advised that the patient not drinking coffee before the blood test."
+   ],
+   "answer": 1,
+   "why": "당위의 that절 부정은 (should) not+동사원형이므로 not drink가 옳다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은? [J]",
+   "choices": [
+    "The rules require that a report should submitted after each field trip.",
+    "The rules require that a report should be submitted after each field trip.",
+    "The rules require that a report is submit after each field trip.",
+    "The rules require that a report be submitting after each field trip.",
+    "The rules require that a report to be submitted after each field trip."
+   ],
+   "answer": 2,
+   "why": "require 뒤 that절은 should be submitted 또는 should를 생략한 be submitted로 쓴다. ①은 should 뒤에 원형 be가 빠져 틀리다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은? [I]",
+   "choices": [
+    "The residents requested that the streetlights be repaired as soon as possible.",
+    "The president ordered that the documents be kept secret for ten years.",
+    "The nurse suggested that the boy's temperature is taken every two hours.",
+    "The company requires that all employees complete the safety course.",
+    "The lawyer advised that his client remain silent during questioning."
+   ],
+   "answer": 3,
+   "why": "suggest 뒤 당위의 that절 수동태는 (should) be taken이 되어야 하므로 is taken은 틀리다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은? [J]",
+   "choices": [
+    "Her professor recommended that she study abroad for a semester.",
+    "The manager insisted that the meeting not be delayed again.",
+    "The king commanded that the prisoners be set free at dawn.",
+    "The waiter suggested that we ordered the seasonal dish.",
+    "The school board proposed that classes begin an hour later."
+   ],
+   "answer": 4,
+   "why": "suggest가 제안(주문해야 한다)을 나타내므로 ordered가 아니라 (should)+동사원형 order를 써야 한다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nThe safety officer ①<u>insisted</u> that all workers ②<u>wore</u> helmets ③<u>while</u> they ④<u>were working</u> on the ⑤<u>construction</u> site. (헬멧을 써야 한다고 주장했다)",
+   "choices": [
+    "insisted",
+    "wore",
+    "while",
+    "were working",
+    "construction"
+   ],
+   "answer": 2,
+   "why": "insist가 당위를 나타내므로 that절에는 wore가 아니라 (should)+동사원형 wear를 써야 한다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nThe travel agency ①<u>recommended</u> that tourists ②<u>exchanges</u> some money ③<u>before</u> ④<u>leaving</u> for the ⑤<u>remote</u> island.",
+   "choices": [
+    "recommended",
+    "exchanges",
+    "before",
+    "leaving",
+    "remote"
+   ],
+   "answer": 2,
+   "why": "recommend 뒤 that절에는 (should)+동사원형을 쓰므로 exchanges를 exchange로 고쳐야 한다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nThe tenants ①<u>demanded</u> that the elevator ②<u>is repaired</u> immediately because it ③<u>had been</u> broken ④<u>since</u> early ⑤<u>last</u> month.",
+   "choices": [
+    "demanded",
+    "is repaired",
+    "had been",
+    "since",
+    "last"
+   ],
+   "answer": 2,
+   "why": "demand 뒤 that절의 수동태는 (should) be repaired가 되어야 한다. because절의 had been은 과거보다 앞선 기간을 나타내므로 옳다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nThe doctor ①<u>suggested</u> that Mr. Green ②<u>reduce</u> his screen time and ③<u>spends</u> more time ④<u>outdoors</u> to protect his ⑤<u>eyesight</u>.",
+   "choices": [
+    "suggested",
+    "reduce",
+    "spends",
+    "outdoors",
+    "eyesight"
+   ],
+   "answer": 3,
+   "why": "suggest 뒤 당위의 that절에서 reduce와 병렬을 이루므로 spends가 아니라 동사원형 spend를 써야 한다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nThe principal ①<u>urged</u> that the students ②<u>to take</u> part ③<u>in</u> the survey ④<u>being conducted</u> ⑤<u>by</u> the education office.",
+   "choices": [
+    "urged",
+    "to take",
+    "in",
+    "being conducted",
+    "by"
+   ],
+   "answer": 2,
+   "why": "urge 뒤 that절에는 to부정사가 아니라 (should)+동사원형 take를 써야 한다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nEnvironmental experts ①<u>proposed</u> that the wetland ②<u>be designated</u> as a protected area and that hunting ③<u>is banned</u> there ④<u>until</u> the bird population ⑤<u>recovers</u>.",
+   "choices": [
+    "proposed",
+    "be designated",
+    "is banned",
+    "until",
+    "recovers"
+   ],
+   "answer": 3,
+   "why": "propose가 이끄는 두 번째 that절도 당위이므로 is banned가 아니라 be banned가 되어야 한다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n주민들은 그 공원이 밤에도 개방된 상태로 유지되어야 한다고 요구했다.",
+   "choices": [
+    "The residents demanded that the park is kept open at night.",
+    "The residents demanded that the park be kept open at night.",
+    "The residents demanded that the park kept open at night.",
+    "The residents demanded that the park to be kept open at night.",
+    "The residents demanded that the park being kept open at night."
+   ],
+   "answer": 2,
+   "why": "demand 뒤 that절의 수동태는 (should) be kept이므로 ②가 옳다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n선생님은 우리가 서로의 발표를 평가하지 말아야 한다고 제안하셨다.",
+   "choices": [
+    "The teacher suggested that we not judge each other's presentations.",
+    "The teacher suggested that we don't judged each other's presentations.",
+    "The teacher suggested that we not to judge each other's presentations.",
+    "The teacher suggested us not to judge each other's presentations.",
+    "The teacher suggested that we judging not each other's presentations."
+   ],
+   "answer": 1,
+   "why": "당위의 that절 부정은 (should) not+동사원형이므로 not judge가 옳다. suggest는 목적어+to부정사 구문으로 쓰지 않는다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n회사는 모든 직원이 매년 건강 검진을 받아야 한다고 요구한다.",
+   "choices": [
+    "The company requires that every employee gets a health checkup every year.",
+    "The company requires that every employee got a health checkup every year.",
+    "The company requires that every employee get a health checkup every year.",
+    "The company requires every employee getting a health checkup every year.",
+    "The company requires that every employee to get a health checkup every year."
+   ],
+   "answer": 3,
+   "why": "require 뒤 that절에는 (should)+동사원형 get을 쓴다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그 의사는 수술이 가능한 한 빨리 이루어져야 한다고 주장했다.",
+   "choices": [
+    "The doctor insisted that the operation was performed as soon as possible.",
+    "The doctor insisted that the operation be performed as soon as possible.",
+    "The doctor insisted that the operation performed as soon as possible.",
+    "The doctor insisted that the operation to be performed as soon as possible.",
+    "The doctor insisted that the operation performing as soon as possible."
+   ],
+   "answer": 2,
+   "why": "insist가 당위(이루어져야 한다)를 나타내므로 that절에 (should) be performed를 쓴다. was performed는 과거 사실 서술이 되어 의미가 다르다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n위원회는 우승자가 온라인 투표로 선정되어야 한다고 제안했다.",
+   "choices": [
+    "The committee proposed that the winner is chosen by online voting.",
+    "The committee proposed that the winner chose by online voting.",
+    "The committee proposed that the winner be chosen by online voting.",
+    "The committee proposed that the winner to be chosen by online voting.",
+    "The committee proposed that the winner choosing by online voting."
+   ],
+   "answer": 3,
+   "why": "propose 뒤 that절의 수동태는 (should) be chosen이므로 ③이 옳다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· The manual requires that the password ____ changed every ninety days.\n· The residents demanded that the noise rule ____ enforced more strictly.",
+   "choices": [
+    "be",
+    "is",
+    "was",
+    "been",
+    "being"
+   ],
+   "answer": 1,
+   "why": "require와 demand 뒤 당위의 that절 수동태는 (should) be p.p.이므로 원형 be가 공통으로 들어간다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· The coach suggested that Yeji ____ her routine with an easier jump. (더 쉬운 점프로 시작해야 한다고)\n· The guide recommends that visitors ____ their tour at the north gate.",
+   "choices": [
+    "begin",
+    "begins",
+    "began",
+    "beginning",
+    "to begin"
+   ],
+   "answer": 1,
+   "why": "suggest와 recommend 모두 당위의 that절을 이끌므로 (should)+동사원형 begin이 공통으로 알맞다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· The zoo requests that visitors ____ feeding the animals.\n· Her doctor advised that she ____ salty food for a month.",
+   "choices": [
+    "avoid",
+    "avoids",
+    "avoided",
+    "avoiding",
+    "to avoid"
+   ],
+   "answer": 1,
+   "why": "request와 advise 뒤 that절에는 (should)+동사원형을 쓰므로 avoid가 공통으로 알맞다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: The Wi-Fi in the dorm is too slow.\nB: Then let's write to the office and request that it ____.",
+   "choices": [
+    "be upgraded",
+    "is upgraded",
+    "was upgraded",
+    "upgrades",
+    "upgrading"
+   ],
+   "answer": 1,
+   "why": "request 뒤 that절의 수동태는 (should) be upgraded가 알맞다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Dr. Shin, my eyes get dry when I study late.\nB: I suggest that you ____ a break every thirty minutes and look out the window.",
+   "choices": [
+    "take",
+    "takes",
+    "took",
+    "taking",
+    "to take"
+   ],
+   "answer": 1,
+   "why": "suggest 뒤 당위의 that절에는 (should)+동사원형 take를 쓴다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: The stairs are icy this morning.\nB: Right. The guard insisted that salt ____ on them right away. (소금이 뿌려져야 한다고)",
+   "choices": [
+    "be spread",
+    "is spread",
+    "was spread",
+    "spreads",
+    "spreading"
+   ],
+   "answer": 1,
+   "why": "insist가 당위를 나타내므로 that절의 수동태는 (should) be spread가 알맞다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분이 어법상 틀린 것은? [E]",
+   "choices": [
+    "The festival rules require that all booths <u>be cleared</u> by 10 p.m.",
+    "The chef recommended that the steak <u>be served</u> medium rare.",
+    "The referee ordered that the match <u>restart</u> after the rain stopped.",
+    "The parents requested that the school bus <u>stops</u> at the new apartment complex.",
+    "The senator proposed that the law <u>be reviewed</u> by an independent panel."
+   ],
+   "answer": 4,
+   "why": "request 뒤 that절에는 (should)+동사원형을 쓰므로 stops가 아니라 stop이 되어야 한다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분이 어법상 틀린 것은? [F]",
+   "choices": [
+    "The trainer urged that Hana <u>not skip</u> her warm-up exercises.",
+    "The museum requests that visitors <u>not touch</u> the sculptures.",
+    "The doctor advised that Grandpa <u>not climb</u> the stairs alone.",
+    "The teacher suggested that we <u>not to use</u> our phones during the discussion.",
+    "The rules require that drivers <u>not honk</u> near the hospital."
+   ],
+   "answer": 4,
+   "why": "당위의 that절 부정은 (should) not+동사원형이므로 not to use가 아니라 not use가 되어야 한다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분이 어법상 틀린 것은? [G]",
+   "choices": [
+    "The captain commanded that the anchor <u>be dropped</u> near the bay.",
+    "The board insisted that the CEO <u>explain</u> the sudden decision. (설명해야 한다고 주장했다)",
+    "The clinic recommends that appointments <u>be made</u> a week in advance.",
+    "The city required that the old building <u>be inspected</u> before the sale.",
+    "The lawyer proposed that both sides <u>met</u> halfway on the price."
+   ],
+   "answer": 5,
+   "why": "propose 뒤 당위의 that절에는 met이 아니라 (should)+동사원형 meet을 써야 한다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안 동사를 어법에 맞게 바꿔 빈칸에 쓰시오. (should는 쓰지 말 것)\nThe committee proposed that the results ____ (announce) next Monday.",
+   "answer": "be announced",
+   "alt": [],
+   "why": "propose 뒤 that절의 수동태는 (should) be p.p.이므로 be announced를 쓴다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 어법에 맞게 배열·변형하여 빈칸에 쓰시오. (should는 쓰지 말 것)\nThe doctor insisted that the patient ____ (not, leave) the hospital yet.",
+   "answer": "not leave",
+   "alt": [],
+   "why": "당위의 that절 부정은 (should) not+동사원형이므로 not leave가 알맞다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안 동사를 어법에 맞게 바꿔 빈칸에 쓰시오. (should는 쓰지 말 것)\nThe contract requires that the payment ____ (make) within two weeks.",
+   "answer": "be made",
+   "alt": [],
+   "why": "require 뒤 that절의 수동태는 (should) be made이다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안 동사를 어법에 맞게 바꿔 빈칸에 쓰시오. (should는 쓰지 말 것)\nHer mentor suggested that she ____ (rewrite) the opening paragraph.",
+   "answer": "rewrite",
+   "alt": [],
+   "why": "suggest 뒤 당위의 that절에는 동사원형 rewrite를 쓴다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안 동사를 어법에 맞게 바꿔 빈칸에 쓰시오. (should는 쓰지 말 것)\nThe city ordered that the damaged sign ____ (remove) at once.",
+   "answer": "be removed",
+   "alt": [],
+   "why": "order 뒤 that절의 수동태는 (should) be removed이다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 어법에 맞게 배열·변형하여 빈칸에 쓰시오. (should는 쓰지 말 것)\nThe guidelines recommend that the files ____ (not, share) outside the team.",
+   "answer": "not be shared",
+   "alt": [],
+   "why": "당위의 that절에서 부정 수동태는 (should) not be p.p.이므로 not be shared가 알맞다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안 동사를 어법에 맞게 바꿔 빈칸에 쓰시오. (should는 쓰지 말 것)\nThe captain commanded that no one ____ (go) on deck during the storm.",
+   "answer": "go",
+   "alt": [],
+   "why": "command 뒤 that절에는 (should)+동사원형 go를 쓴다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 어법에 맞게 배열·변형하여 빈칸에 쓰시오. (should는 쓰지 말 것)\nThe host requested that the guests ____ (not, bring) any gifts.",
+   "answer": "not bring",
+   "alt": [],
+   "why": "request 뒤 that절의 부정은 (should) not+동사원형이므로 not bring이 알맞다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe judge ordered that the video evidence <u>is shown</u> to the jury.",
+   "answer": "be shown",
+   "alt": [
+    "should be shown"
+   ],
+   "why": "order 뒤 that절의 수동태는 (should) be p.p.이므로 be shown으로 고친다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe nutritionist suggested that the cafeteria <u>offers</u> more vegetarian dishes.",
+   "answer": "offer",
+   "alt": [
+    "should offer"
+   ],
+   "why": "suggest 뒤 당위의 that절에는 (should)+동사원형을 쓰므로 offer로 고친다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe residents insisted that the crossing gate <u>was fixed</u> before another accident happened. (수리되어야 한다고 주장했다)",
+   "answer": "be fixed",
+   "alt": [
+    "should be fixed"
+   ],
+   "why": "insist가 당위를 나타내므로 that절의 수동태는 (should) be fixed가 되어야 한다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe academy requires that each student <u>practices</u> at least an hour a day.",
+   "answer": "practice",
+   "alt": [
+    "should practice"
+   ],
+   "why": "require 뒤 that절에는 주어의 수와 관계없이 동사원형 practice를 쓴다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nHer coach advised that she <u>didn't change</u> her grip before the finals.",
+   "answer": "not change",
+   "alt": [
+    "should not change"
+   ],
+   "why": "당위의 that절 부정은 do동사 없이 (should) not+동사원형으로 쓴다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe committee proposed that the prize money <u>dividing</u> equally among the winners.",
+   "answer": "be divided",
+   "alt": [
+    "should be divided"
+   ],
+   "why": "propose 뒤 that절은 '상금이 나뉘어야 한다'는 수동의 당위이므로 (should) be divided로 고친다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 should를 생략하여 문장 전체를 다시 쓰시오.\nThe board demanded that the manager should resign from his position.",
+   "answer": "The board demanded that the manager resign from his position.",
+   "alt": [],
+   "why": "당위의 that절에서 should를 생략하면 동사원형 resign만 남는다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 should를 생략하여 문장 전체를 다시 쓰시오.\nThe vet recommended that the injured bird should be kept warm overnight.",
+   "answer": "The vet recommended that the injured bird be kept warm overnight.",
+   "alt": [],
+   "why": "should를 생략해도 수동태의 원형 be kept는 그대로 남는다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 should를 생략하여 문장 전체를 다시 쓰시오.\nThe teacher urged that the students should not compare themselves with others.",
+   "answer": "The teacher urged that the students not compare themselves with others.",
+   "alt": [],
+   "why": "should를 생략하면 부정은 not+동사원형(not compare)으로 남는다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 말을 한 단어로 쓰시오.\nThe doctor said to him, \"Take this medicine after meals.\"\n= The doctor advised that he ____ this medicine after meals.",
+   "answer": "take",
+   "alt": [],
+   "why": "advise 뒤 that절에는 (should)+동사원형을 쓰며, 한 단어 조건이므로 take를 쓴다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 말을 두 단어로 쓰시오. (should는 쓰지 말 것)\n\"Let's hold the meeting online,\" said the manager.\n= The manager proposed that the meeting ____ online.",
+   "answer": "be held",
+   "alt": [],
+   "why": "propose 뒤 that절의 수동태는 (should) be held이므로 be held를 쓴다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 말을 두 단어로 쓰시오. (should는 쓰지 말 것)\n\"You must not tell anyone about this,\" the spy said to her.\n= The spy demanded that she ____ anyone about this.",
+   "answer": "not tell",
+   "alt": [],
+   "why": "demand 뒤 that절의 부정은 (should) not+동사원형이므로 not tell이 알맞다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe witness insisted that she ____ the suspect near the bank on the night of the robbery.",
+   "choices": [
+    "saw",
+    "see",
+    "sees",
+    "seeing",
+    "to see"
+   ],
+   "answer": 1,
+   "why": "insist가 과거의 '사실'을 주장하는 내용이므로 당위가 아니라 직설법 과거 saw를 쓴다. 동사원형 see는 당위(~해야 한다)일 때만 쓴다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe detective insisted that the safe ____ by someone who knew the code, since there was no sign of forced entry.",
+   "choices": [
+    "had been opened",
+    "be opened",
+    "opening",
+    "to be opened",
+    "be opening"
+   ],
+   "answer": 1,
+   "why": "금고가 이미 열렸다는 '사실'에 대한 주장이므로 직설법(과거보다 앞선 일 → had been opened)을 쓴다. be opened는 당위의 의미가 되어 문맥과 맞지 않다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nHer pale face suggested that she ____ ill for quite some time.",
+   "choices": [
+    "had been",
+    "be",
+    "is",
+    "being",
+    "to be"
+   ],
+   "answer": 1,
+   "why": "suggest가 '시사하다'의 뜻으로 사실을 나타내므로 직설법을 쓴다. 창백해진 시점보다 앞서 계속된 상태이므로 had been이 알맞다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe research suggests that regular napping ____ memory in older adults.",
+   "choices": [
+    "improves",
+    "improve",
+    "improving",
+    "to improve",
+    "be improved"
+   ],
+   "answer": 1,
+   "why": "suggest가 '시사하다'의 뜻일 때는 당위가 아니므로 직설법으로 쓴다. 주어 napping이 단수이므로 improves가 알맞다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe manager insisted that the new intern ____ the weekly report from now on.",
+   "choices": [
+    "write",
+    "wrote",
+    "writes",
+    "writing",
+    "written"
+   ],
+   "answer": 1,
+   "why": "from now on(지금부터)이 있어 '작성해야 한다'는 당위이므로 (should)+동사원형 write를 쓴다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nAll the evidence suggested that the fire ____ in the kitchen.",
+   "choices": [
+    "had started",
+    "start",
+    "starting",
+    "to start",
+    "be started"
+   ],
+   "answer": 1,
+   "why": "증거가 '시사한' 사실이므로 직설법을 쓰며, 화재 발생은 그보다 앞선 일이므로 had started가 알맞다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe union leader demanded that the overtime records ____ to an outside auditor.",
+   "choices": [
+    "be shown",
+    "were shown",
+    "are shown",
+    "showing",
+    "showed"
+   ],
+   "answer": 1,
+   "why": "demand는 항상 당위의 that절을 이끌므로 수동태 (should) be shown이 알맞다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nYumi insisted that she ____ her homework by herself, even though her teacher doubted it.",
+   "choices": [
+    "had done",
+    "do",
+    "be done",
+    "doing",
+    "to do"
+   ],
+   "answer": 1,
+   "why": "'숙제를 스스로 했다'는 과거 사실에 대한 주장이므로 직설법 had done을 쓴다. 원형 do는 당위일 때만 가능하다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nThe professor recommended that the draft ____ thoroughly revised before the final submission.",
+   "choices": [
+    "be",
+    "is",
+    "was",
+    "been",
+    "being"
+   ],
+   "answer": 1,
+   "why": "recommend 뒤 당위의 that절 수동태는 (should) be p.p.이므로 원형 be가 알맞다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법상 알맞은 것은?\nHis constant yawning suggested that he ____ enough sleep the night before.",
+   "choices": [
+    "had not gotten",
+    "not get",
+    "don't get",
+    "not getting",
+    "not to get"
+   ],
+   "answer": 1,
+   "why": "suggest가 '시사하다'의 뜻이므로 직설법을 쓴다. the night before(전날 밤)의 일이므로 had not gotten이 알맞다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 모두 고른 것은?\nㄱ. The CEO demanded that the marketing budget be cut by ten percent.\nㄴ. The consultant suggested that the company focuses on its core products.\nㄷ. The auditors required that all receipts be submitted in their original form.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄱ·ㄷ은 당위의 that절에 (should)+동사원형을 바르게 썼다. ㄴ은 suggest의 제안이므로 focuses가 아니라 focus가 되어야 한다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 모두 고른 것은?\nㄱ. The victim insisted that the accident was caused by the truck driver.\nㄴ. The victim demanded that the driver pays for the repairs.\nㄷ. The police suggested that both drivers be tested for alcohol.",
+   "choices": [
+    "ㄱ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄱ은 사고 원인이라는 '사실' 주장이므로 직설법 was caused가 옳고, ㄷ은 당위의 be tested가 옳다. ㄴ은 demand 뒤이므로 pays가 아니라 pay가 되어야 한다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 모두 고른 것은?\nㄱ. The report recommended that the dam not be built near the fault line.\nㄴ. The data suggested that the water level had risen faster than expected.\nㄷ. The engineers proposed that construction is delayed until further study.",
+   "choices": [
+    "ㄱ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 not be built(당위 부정 수동), ㄴ은 '시사하다'의 직설법 had risen으로 옳다. ㄷ은 propose 뒤이므로 is delayed가 아니라 be delayed가 되어야 한다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 모두 고른 것은?\nㄱ. The principal insisted that the ceremony be held indoors because of the fine dust.\nㄴ. The weather forecast suggested that the dust level would drop by the weekend.\nㄷ. Some parents requested that the schedule was announced earlier.",
+   "choices": [
+    "ㄱ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 당위의 be held, ㄴ은 예보가 시사한 내용이므로 직설법 would drop이 옳다. ㄷ은 request 뒤이므로 was announced가 아니라 be announced가 되어야 한다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 모두 고른 것은?\nㄱ. The doctor ordered that the patient be moved to intensive care.\nㄴ. The nurse insisted that she had checked the chart twice that morning.\nㄷ. The family requested that visitors be limited to close relatives.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ",
+    "ㄱ"
+   ],
+   "answer": 4,
+   "why": "ㄱ·ㄷ은 당위의 be p.p.가 옳고, ㄴ은 이미 확인했다는 '사실' 주장이므로 직설법 had checked가 옳다. 세 문장 모두 어법상 옳다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 모두 고른 것은?\nㄱ. His tone suggested that he was hiding something important.\nㄴ. The lawyer suggested that his client not answer that question.\nㄷ. The judge demanded that order is restored in the courtroom.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄱ은 '시사하다'의 직설법, ㄴ은 제안의 당위 부정(not answer)으로 둘 다 옳다. ㄷ은 demand 뒤이므로 is restored가 아니라 be restored가 되어야 한다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 모두 고른 것은?\nㄱ. The regulations require that every lab coat be washed weekly.\nㄴ. The professor proposed that the experiment be repeated with a larger sample.\nㄷ. The results suggest that temperature affects the reaction speed.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄷ",
+    "ㄱ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 5,
+   "why": "ㄱ·ㄴ은 당위의 be p.p., ㄷ은 '시사하다'의 직설법 affects로 모두 옳다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장을 모두 고른 것은?\nㄱ. The captain ordered that the lifeboats were lowered at once.\nㄴ. The sailors insisted that they had followed every safety rule.\nㄷ. The company required that the crew completes extra training.",
+   "choices": [
+    "ㄱ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 order 뒤이므로 be lowered, ㄷ은 require 뒤이므로 complete가 되어야 한다. ㄴ은 과거 사실 주장이므로 직설법 had followed가 옳다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\n(a) The committee proposed that the vote be postponed.\n(b) The dean required that all professors submit grades by Friday.\n(c) The staff demanded that the cafeteria stays open later.\n(d) The study suggests that laughter lowers stress hormones.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 4,
+   "why": "(a)·(b)는 당위의 동사원형, (d)는 '시사하다'의 직설법으로 옳다. (c)는 demand 뒤이므로 stays가 아니라 stay가 되어야 하며, 옳은 문장은 3개다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\n(a) The coach insisted that the rookie trains with the senior players. (훈련해야 한다는 주장)\n(b) The referee ordered that the player leave the field.\n(c) The fans demanded that the ticket prices were lowered.\n(d) Her smile suggested that she had already heard the news.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "(b)의 leave와 (d)의 직설법 had heard(시사)만 옳다. (a)는 당위이므로 train, (c)는 demand 뒤이므로 be lowered가 되어야 한다. 옳은 문장은 2개다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?\n(a) The manual requires that the batteries are replaced every six months.\n(b) The board proposed that the merger be approved.\n(c) The workers urged that safety gear be provide at no cost.\n(d) The customer insisted that he had paid the bill on time.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "(a)는 be replaced, (c)는 be provided가 되어야 하므로 틀린 문장은 2개다. (d)는 이미 지불했다는 사실 주장이므로 직설법 had paid가 옳다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\n(a) The doctor recommended that Mr. Cho walks to work.\n(b) The guests demanded that the hotel refunded the deposit.\n(c) The travel agent proposed that the tour start earlier.\n(d) The school required that the form was signed in ink.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 2,
+   "why": "(c)의 start만 당위의 동사원형으로 옳다. (a)는 walk, (b)는 refund, (d)는 be signed가 되어야 하므로 옳은 문장은 1개다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\n(a) The general commanded that the bridge be destroyed before dawn.\n(b) The spy insisted that he was working alone when he was caught.\n(c) The council urged that the curfew be lifted.\n(d) The mayor asked that the media respect the victims' privacy.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 5,
+   "why": "(a)·(c)·(d)는 당위의 동사원형·be p.p.가 옳고, (b)는 잡혔을 당시의 사실 주장이므로 직설법 was working이 옳다. 네 문장 모두 옳다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?\n(a) Her doctor suggested that she keeps a food diary.\n(b) The airline requires that laptops are stored during takeoff.\n(c) The crew requested that passengers remained seated.\n(d) The report suggested that the engine had failed twice before.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 4,
+   "why": "(a)는 keep, (b)는 be stored, (c)는 remain이 되어야 하므로 틀린 문장은 3개다. (d)는 보고서가 시사한 사실이므로 직설법 had failed가 옳다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nWhen the inspection revealed cracks in the ceiling, the safety board ①<u>demanded</u> that the gym ②<u>was closed</u> immediately and ③<u>proposed</u> that all school facilities ④<u>be examined</u> ⑤<u>twice</u> a year.",
+   "choices": [
+    "demanded",
+    "was closed",
+    "proposed",
+    "be examined",
+    "twice"
+   ],
+   "answer": 2,
+   "why": "demand 뒤 당위의 that절 수동태는 (should) be closed가 되어야 한다. ④ be examined는 propose 뒤의 당위 수동태로 옳다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nThe archaeologist insisted that the tomb ①<u>dated</u> back to the third century and ②<u>recommended</u> that it ③<u>is opened</u> to researchers only, ④<u>fearing</u> that tourists might ⑤<u>damage</u> the wall paintings.",
+   "choices": [
+    "dated",
+    "recommended",
+    "is opened",
+    "fearing",
+    "damage"
+   ],
+   "answer": 3,
+   "why": "recommend 뒤 당위의 that절은 (should) be opened가 되어야 한다. ① dated는 무덤의 연대라는 '사실' 주장이므로 직설법 과거가 옳다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nDoctors ①<u>have long urged</u> that sunscreen ②<u>is applied</u> every two hours, and recent studies ③<u>suggest</u> that most people ④<u>use</u> far less than the ⑤<u>recommended</u> amount.",
+   "choices": [
+    "have long urged",
+    "is applied",
+    "suggest",
+    "use",
+    "recommended"
+   ],
+   "answer": 2,
+   "why": "urge 뒤 당위의 that절 수동태는 (should) be applied가 되어야 한다. ④ use는 suggest(시사하다) 뒤의 직설법으로 옳다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nThe defense lawyer ①<u>argued</u> that his client was innocent and ②<u>requested</u> that the trial ③<u>moved</u> to another city, ④<u>insisting</u> that local news coverage ⑤<u>made</u> a fair jury impossible.",
+   "choices": [
+    "argued",
+    "requested",
+    "moved",
+    "insisting",
+    "made"
+   ],
+   "answer": 3,
+   "why": "request 뒤 당위의 that절은 수동태 (should) be moved가 되어야 한다. ⑤ made는 보도가 공정한 배심을 불가능하게 한다는 '사실' 주장이므로 직설법이 옳다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nAfter the flood, residents ①<u>demanded</u> that the drainage system ②<u>be redesigned</u>, and the city council ③<u>proposed</u> that a special fund ④<u>is created</u> to compensate those ⑤<u>affected</u> by the disaster.",
+   "choices": [
+    "demanded",
+    "be redesigned",
+    "proposed",
+    "is created",
+    "affected"
+   ],
+   "answer": 4,
+   "why": "propose 뒤 당위의 that절 수동태는 (should) be created가 되어야 한다. ② be redesigned는 demand 뒤의 당위 수동태로 옳다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nThe coach ①<u>suggested</u> that the team ②<u>reviews</u> the match video together, but the captain ③<u>insisted</u> that the players ④<u>needed</u> rest more than analysis, ⑤<u>pointing</u> to their exhausting schedule.",
+   "choices": [
+    "suggested",
+    "reviews",
+    "insisted",
+    "needed",
+    "pointing"
+   ],
+   "answer": 2,
+   "why": "suggest의 제안(당위)이므로 reviews가 아니라 동사원형 review를 써야 한다. ④ needed는 선수들의 상태라는 '사실'에 대한 주장이므로 직설법이 옳다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nThe ethics committee ①<u>required</u> that every participant ②<u>signs</u> a consent form and ③<u>recommended</u> that personal data ④<u>be deleted</u> once the study ⑤<u>ended</u>.",
+   "choices": [
+    "required",
+    "signs",
+    "recommended",
+    "be deleted",
+    "ended"
+   ],
+   "answer": 2,
+   "why": "require 뒤 당위의 that절에는 signs가 아니라 동사원형 sign을 써야 한다. ④ be deleted는 recommend 뒤의 당위 수동태로 옳다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nHistorians ①<u>suggest</u> that the castle ②<u>was abandoned</u> after a great fire, and the local government ③<u>has proposed</u> that the ruins ④<u>are restored</u> so that visitors ⑤<u>can experience</u> its former glory.",
+   "choices": [
+    "suggest",
+    "was abandoned",
+    "has proposed",
+    "are restored",
+    "can experience"
+   ],
+   "answer": 4,
+   "why": "propose 뒤 당위의 that절은 (should) be restored가 되어야 한다. ② was abandoned는 역사적 사실을 '시사'하는 직설법으로 옳다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그 과학자는 그 데이터가 조작되었다고 주장했고, 실험이 반복되어야 한다고 요구했다.",
+   "choices": [
+    "The scientist insisted that the data had been manipulated and demanded that the experiment be repeated.",
+    "The scientist insisted that the data be manipulated and demanded that the experiment be repeated.",
+    "The scientist insisted that the data had been manipulated and demanded that the experiment was repeated.",
+    "The scientist insisted that the data manipulated and demanded that the experiment repeated.",
+    "The scientist insisted that the data had manipulated and demanded that the experiment be repeating."
+   ],
+   "answer": 1,
+   "why": "'조작되었다'는 과거 사실 주장이므로 직설법 had been manipulated, '반복되어야 한다'는 당위이므로 be repeated를 쓴 ①이 옳다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n증거는 그가 현장에 있었다는 것을 시사하지만, 그는 하루 종일 집에 있었다고 주장한다.",
+   "choices": [
+    "The evidence suggests that he be at the scene, but he insists that he stay home all day.",
+    "The evidence suggests that he was at the scene, but he insists that he stayed home all day.",
+    "The evidence suggests that he was at the scene, but he insists that he stay home all day.",
+    "The evidence suggests that he were at the scene, but he insists that he stayed home all day.",
+    "The evidence suggest that he was at the scene, but he insist that he stayed home all day."
+   ],
+   "answer": 2,
+   "why": "suggest(시사하다)와 insist(사실 주장) 모두 당위가 아니므로 직설법 was·stayed를 쓴 ②가 옳다. 동사원형 be·stay는 당위일 때만 쓴다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n감독관은 시험 중에 어떤 전자 기기도 사용되어서는 안 된다고 명령했다.",
+   "choices": [
+    "The supervisor ordered that no electronic devices are used during the exam.",
+    "The supervisor ordered that no electronic devices be used during the exam.",
+    "The supervisor ordered that no electronic devices to be used during the exam.",
+    "The supervisor ordered that no electronic devices being used during the exam.",
+    "The supervisor ordered that no electronic devices were used during the exam."
+   ],
+   "answer": 2,
+   "why": "order 뒤 당위의 that절 수동태는 (should) be used이며, 부정의 의미는 no가 담고 있으므로 ②가 옳다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그녀는 회의가 연기되어야 한다고 제안했지만, 그녀의 표정은 그녀가 이미 결정을 내렸다는 것을 시사했다.",
+   "choices": [
+    "She proposed that the meeting was delayed, but her expression suggested that she had already made a decision.",
+    "She proposed that the meeting be delayed, but her expression suggested that she already make a decision.",
+    "She proposed that the meeting be delayed, but her expression suggested that she had already made a decision.",
+    "She proposed that the meeting delaying, but her expression suggested that she has already made a decision.",
+    "She proposed that the meeting be delayed, but her expression suggested that she have already made a decision."
+   ],
+   "answer": 3,
+   "why": "propose 뒤는 당위의 be delayed, suggest(시사하다) 뒤는 직설법 had already made를 쓴 ③이 옳다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n주민들은 그 공장이 배출 기준을 위반했다고 주장하며, 그것이 조사받아야 한다고 요구했다.",
+   "choices": [
+    "The residents insisted that the factory violate the emission standards and demanded that it be investigated.",
+    "The residents insisted that the factory had violated the emission standards and demanded that it was investigated.",
+    "The residents insisted that the factory had violated the emission standards and demanded that it investigated.",
+    "The residents insisted that the factory had violated the emission standards and demanded that it be investigated.",
+    "The residents insisted that the factory be violated the emission standards and demanded that it be investigated."
+   ],
+   "answer": 4,
+   "why": "'위반했다'는 과거 사실 주장이므로 직설법 had violated, '조사받아야 한다'는 당위이므로 be investigated를 쓴 ④가 옳다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)에 들어갈 말로 알맞게 짝지어진 것은?\nThe prosecutor insisted that the witness (A) on the stand, and the judge ordered that his testimony (B) from the record and that the jury (C) it.",
+   "choices": [
+    "was lying - be struck - disregard",
+    "lie - be struck - disregard",
+    "was lying - was struck - disregards",
+    "lie - was struck - disregard",
+    "was lying - be struck - disregards"
+   ],
+   "answer": 1,
+   "why": "(A)는 증인이 거짓말을 하고 있었다는 '사실' 주장이므로 직설법 was lying, (B)·(C)는 order 뒤의 당위이므로 be struck과 동사원형 disregard가 알맞다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)에 들어갈 말로 알맞게 짝지어진 것은?\nThe report suggested that the tunnel (A) structurally unsound, so engineers proposed that traffic (B) to one lane and requested that repairs (C) immediately.",
+   "choices": [
+    "be - be limited - begin",
+    "was - be limited - begin",
+    "was - limits - begin",
+    "was - be limited - began",
+    "be - limits - began"
+   ],
+   "answer": 2,
+   "why": "(A)는 보고서가 '시사한' 사실이므로 직설법 was, (B)·(C)는 propose·request 뒤의 당위이므로 be limited와 동사원형 begin이 알맞다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)에 들어갈 말로 알맞게 짝지어진 것은?\nHer trainer recommended that she (A) more protein to her diet, insisted that she (B) at least eight hours, and suggested that her fatigue (C) from overtraining.",
+   "choices": [
+    "add - sleep - come",
+    "adds - sleep - came",
+    "add - slept - came",
+    "add - sleep - came",
+    "adds - slept - come"
+   ],
+   "answer": 4,
+   "why": "(A)·(B)는 권유·주장의 당위이므로 동사원형 add·sleep, (C)는 피로의 원인을 '시사'하는 직설법이므로 came이 알맞다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)에 들어갈 말로 알맞게 짝지어진 것은?\nThe manager demanded that the error (A) before release, proposed that the team (B) in pairs to review the code, and admitted that the deadline (C) too tight.",
+   "choices": [
+    "corrected - work - was",
+    "be corrected - works - was",
+    "be corrected - work - was",
+    "be corrected - work - be",
+    "corrected - works - be"
+   ],
+   "answer": 3,
+   "why": "(A)·(B)는 demand·propose 뒤의 당위이므로 be corrected와 work, (C)는 admit(인정하다) 뒤의 사실이므로 직설법 was가 알맞다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)에 들어갈 말로 알맞게 짝지어진 것은?\nThe historians suggested that the map (A) drawn in the 1600s, and the museum required that it (B) behind protective glass and that photography (C) in that room.",
+   "choices": [
+    "be - be displayed - banned",
+    "was - displays - be banned",
+    "be - displays - banned",
+    "was - be displayed - banned",
+    "was - be displayed - be banned"
+   ],
+   "answer": 5,
+   "why": "(A)는 지도의 제작 연대를 '시사'하는 직설법 was, (B)·(C)는 require 뒤의 당위 수동태이므로 be displayed와 be banned가 알맞다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: The lab results keep coming out strange.\nB: I know. Dr. Park insisted that the samples ____ at a lower temperature from now on.",
+   "choices": [
+    "be stored",
+    "are stored",
+    "were stored",
+    "storing",
+    "stored"
+   ],
+   "answer": 1,
+   "why": "from now on이 있어 '보관되어야 한다'는 당위이므로 (should) be stored가 알맞다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Why was Jaden so confident about the result?\nB: He insisted that he ____ the whole process with his own eyes.",
+   "choices": [
+    "had watched",
+    "watch",
+    "watches",
+    "be watched",
+    "watching"
+   ],
+   "answer": 1,
+   "why": "자기 눈으로 지켜봤다는 과거 '사실'에 대한 주장이므로 직설법 had watched를 쓴다. 동사원형 watch는 당위일 때만 가능하다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· The counselor suggested that Erin ____ her worries down before bed. (적어 보라고 제안했다)\n· The editor demanded that the reporter ____ a correction by noon.",
+   "choices": [
+    "write",
+    "writes",
+    "wrote",
+    "writing",
+    "written"
+   ],
+   "answer": 1,
+   "why": "suggest와 demand 모두 당위의 that절을 이끌므로 (should)+동사원형 write가 공통으로 알맞다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· The regulations require that the emergency exits ____ kept clear at all times.\n· The director ordered that the set ____ rebuilt before Friday's shoot.",
+   "choices": [
+    "be",
+    "is",
+    "are",
+    "was",
+    "been"
+   ],
+   "answer": 1,
+   "why": "require와 order 뒤 당위의 that절 수동태는 (should) be p.p.이므로 원형 be가 공통으로 알맞다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe witness insisted that he <u>see</u> the car run the red light last night.",
+   "answer": "saw",
+   "alt": [],
+   "why": "last night의 일을 목격했다는 '사실' 주장이므로 당위의 동사원형이 아니라 직설법 과거 saw를 써야 한다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe committee demanded that the funds <u>were returned</u> to the donors.",
+   "answer": "be returned",
+   "alt": [
+    "should be returned"
+   ],
+   "why": "demand는 항상 당위의 that절을 이끌므로 수동태는 (should) be returned가 되어야 한다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nHer silence suggested that she <u>be</u> disappointed with the result.",
+   "answer": "was",
+   "alt": [
+    "had been"
+   ],
+   "why": "suggest가 '시사하다'의 뜻으로 사실을 나타내므로 당위의 be가 아니라 직설법 was를 써야 한다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe new policy requires that every application <u>is reviewed</u> by two officers.",
+   "answer": "be reviewed",
+   "alt": [
+    "should be reviewed"
+   ],
+   "why": "require 뒤 당위의 that절 수동태는 (should) be reviewed가 되어야 한다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe doctor insisted that the patient <u>not leaves</u> the ward without permission.",
+   "answer": "not leave",
+   "alt": [
+    "should not leave"
+   ],
+   "why": "당위의 that절 부정은 (should) not+동사원형이므로 not leave로 고친다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe 2019 study suggested that the participants <u>be</u> more stressed during exams.",
+   "answer": "were",
+   "alt": [],
+   "why": "연구가 '시사한' 과거의 사실이므로 당위의 be가 아니라 직설법 과거 were를 써야 한다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안 동사를 어법에 맞게 바꿔 빈칸에 쓰시오. (should는 쓰지 말 것)\nThe judge ordered that the two men ____ (keep) apart during the trial.",
+   "answer": "be kept",
+   "alt": [],
+   "why": "order 뒤 당위의 that절 수동태는 (should) be kept이다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 어법에 맞게 배열·변형하여 빈칸에 쓰시오. (should는 쓰지 말 것)\nThe activists urged that the law ____ (not, pass) in its current form.",
+   "answer": "not be passed",
+   "alt": [],
+   "why": "당위의 that절에서 부정 수동태는 (should) not be p.p.이므로 not be passed가 알맞다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안 동사를 어법에 맞게 바꿔 빈칸에 쓰시오. (should는 쓰지 말 것)\nThe interviewer requested that candidates ____ (introduce) themselves in English.",
+   "answer": "introduce",
+   "alt": [],
+   "why": "request 뒤 당위의 that절에는 동사원형 introduce를 쓴다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안 동사를 어법에 맞게 바꿔 빈칸에 쓰시오. (should는 쓰지 말 것)\nThe board insisted that the CEO's bonus ____ (cut) in half this year.",
+   "answer": "be cut",
+   "alt": [],
+   "why": "insist가 '삭감되어야 한다'는 당위를 나타내므로 수동태 (should) be cut을 쓴다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안 동사를 어법에 맞게 바꿔 빈칸에 쓰시오. (should는 쓰지 말 것)\nThe manual recommends that the software ____ (update) before installation.",
+   "answer": "be updated",
+   "alt": [],
+   "why": "recommend 뒤 당위의 that절 수동태는 (should) be updated이다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안 동사를 어법에 맞게 바꿔 빈칸에 쓰시오. (should는 쓰지 말 것)\nThe general commanded that the wounded ____ (carry) to safety first.",
+   "answer": "be carried",
+   "alt": [],
+   "why": "command 뒤 당위의 that절에서 the wounded(부상자들)는 옮겨지는 대상이므로 수동태 be carried를 쓴다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 should를 생략하여 문장 전체를 다시 쓰시오.\nThe senator proposed that the hearing should be open to the public.",
+   "answer": "The senator proposed that the hearing be open to the public.",
+   "alt": [],
+   "why": "당위의 that절에서 should를 생략하면 원형 be만 남는다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 should를 생략하여 문장 전체를 다시 쓰시오.\nThe consultant recommended that the two departments should merge their budgets.",
+   "answer": "The consultant recommended that the two departments merge their budgets.",
+   "alt": [],
+   "why": "should를 생략해도 동사원형 merge는 그대로 남는다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 말을 한 단어로 쓰시오.\nThe officer said to the crowd, \"Step back behind the line.\"\n= The officer ordered that the crowd ____ back behind the line.",
+   "answer": "step",
+   "alt": [],
+   "why": "order 뒤 당위의 that절에는 (should)+동사원형을 쓰며, 한 단어 조건이므로 step을 쓴다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 말을 두 단어로 쓰시오. (should는 쓰지 말 것)\n\"Don't touch the exhibits,\" the guard said to the children.\n= The guard demanded that the children ____ the exhibits.",
+   "answer": "not touch",
+   "alt": [],
+   "why": "demand 뒤 당위의 that절 부정은 (should) not+동사원형이므로 not touch가 알맞다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장을 한 문장으로 만들 때 빈칸에 알맞은 말을 두 단어로 쓰시오. (should는 쓰지 말 것)\nThe tenants made a demand. The heating system must be fixed before winter.\n= The tenants demanded that the heating system ____ before winter.",
+   "answer": "be fixed",
+   "alt": [],
+   "why": "demand 뒤 당위의 that절 수동태는 (should) be fixed이므로 be fixed를 쓴다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 뜻이 같도록 괄호 안의 동사를 알맞은 형태로 바꿔 빈칸에 쓰시오. (한 단어)\n코치는 그 선수가 어제 경기에서 규칙을 어겼다고 주장했다.\n= The coach insisted that the player ____ (break) the rules in yesterday's game.",
+   "answer": "broke",
+   "alt": [],
+   "why": "어제 규칙을 어겼다는 '사실'에 대한 주장이므로 당위의 원형이 아니라 직설법 과거 broke를 쓴다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 뜻이 같도록 괄호 안의 동사를 알맞은 형태로 바꿔 빈칸에 쓰시오. (한 단어)\n경비원은 방문객들이 신분증을 착용해야 한다고 주장했다.\n= The guard insisted that visitors ____ (wear) their ID badges.",
+   "answer": "wear",
+   "alt": [],
+   "why": "착용'해야 한다'는 당위의 주장이므로 (should)+동사원형 wear를 쓴다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 뜻이 같도록 괄호 안의 동사를 알맞은 형태로 바꿔 빈칸에 쓰시오. (한 단어)\n그의 억양은 그가 외국에서 자랐다는 것을 시사했다.\n= His accent suggested that he ____ (grow) up abroad.",
+   "answer": "grew",
+   "alt": [],
+   "why": "suggest가 '시사하다'의 뜻으로 사실을 나타내므로 직설법 과거 grew를 쓴다. 한 단어 조건이므로 had grown은 쓸 수 없다.",
+   "no": 200
+  }
+ ]
+}

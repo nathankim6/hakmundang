@@ -1,0 +1,2704 @@
+{
+ "id": "m1-11",
+ "grade": "중1",
+ "name": "감각동사+형용사",
+ "points": [
+  "look/sound/feel/smell/taste+형용사",
+  "+like+명사",
+  "부사 불가"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThis flower smells ____.",
+   "choices": [
+    "sweetly",
+    "softly",
+    "sweet",
+    "loudly",
+    "nicely"
+   ],
+   "answer": 3,
+   "why": "감각동사 smell 뒤에는 형용사가 온다. sweetly, softly 같은 부사는 감각동사의 보어로 쓸 수 없다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nYou look ____ today. (너는 오늘 행복해 보인다.)",
+   "choices": [
+    "happily",
+    "happy",
+    "sadly",
+    "angrily",
+    "nicely"
+   ],
+   "answer": 2,
+   "why": "look 뒤에는 형용사 happy가 온다. happily는 부사라서 쓸 수 없고, 우리말 뜻이 '행복해'이므로 sadly·angrily도 답이 아니다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe music sounds ____.",
+   "choices": [
+    "beautifully",
+    "sweetly",
+    "badly",
+    "beautiful",
+    "softly"
+   ],
+   "answer": 4,
+   "why": "sound는 감각동사이므로 뒤에 형용사 beautiful이 온다. 나머지는 모두 부사이다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThis candy tastes ____.",
+   "choices": [
+    "sweet",
+    "sweetly",
+    "freshly",
+    "nicely",
+    "greatly"
+   ],
+   "answer": 1,
+   "why": "taste 뒤에는 형용사가 온다. sweet만 형용사이고 나머지는 -ly가 붙은 부사이다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nI feel ____ now. (나는 지금 졸리다.)",
+   "choices": [
+    "sleepily",
+    "sadly",
+    "sleepy",
+    "happily",
+    "angrily"
+   ],
+   "answer": 3,
+   "why": "feel 뒤에는 형용사 sleepy가 온다. sleepily는 부사이고, 뜻이 '졸리다'이므로 다른 형용사 계열도 답이 될 수 없다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe pizza smells ____.",
+   "choices": [
+    "well",
+    "nicely",
+    "badly",
+    "greatly",
+    "good"
+   ],
+   "answer": 5,
+   "why": "감각동사 smell 뒤에는 형용사 good이 온다. well, nicely 등 부사는 올 수 없다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThis song ____ sad. (이 노래는 슬프게 들린다.)",
+   "choices": [
+    "smells",
+    "tastes",
+    "sounds",
+    "gives",
+    "makes"
+   ],
+   "answer": 3,
+   "why": "'~하게 들리다'는 sound+형용사로 나타낸다. smell은 냄새, taste는 맛에 쓰는 감각동사이다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThis blanket ____ soft. (이 담요는 부드럽게 느껴진다.)",
+   "choices": [
+    "sounds",
+    "feels",
+    "hears",
+    "listens",
+    "smells"
+   ],
+   "answer": 2,
+   "why": "'~하게 느껴지다'는 feel+형용사이다. hear와 listen은 뒤에 형용사 보어를 쓰는 감각동사가 아니다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe cookies ____ delicious. (그 쿠키는 맛있는 냄새가 난다.)",
+   "choices": [
+    "taste",
+    "sound",
+    "feel",
+    "smell",
+    "look"
+   ],
+   "answer": 4,
+   "why": "'~한 냄새가 나다'는 smell+형용사이다. 주어가 복수이므로 smell 형태가 맞다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nIt smells ____ a rose. (그것은 장미 같은 냄새가 난다.)",
+   "choices": [
+    "as",
+    "to",
+    "like",
+    "with",
+    "for"
+   ],
+   "answer": 3,
+   "why": "감각동사 뒤에 명사(a rose)가 오면 like를 함께 써서 '~같은 냄새가 나다'를 나타낸다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nHe looks ____ his father.",
+   "choices": [
+    "likes",
+    "like",
+    "liking",
+    "alike",
+    "to"
+   ],
+   "answer": 2,
+   "why": "'~처럼 보이다'는 look like+명사이다. likes는 '좋아하다'라는 동사의 형태라서 여기에 쓸 수 없다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThis juice tastes ____ lemon.",
+   "choices": [
+    "as",
+    "in",
+    "like",
+    "at",
+    "on"
+   ],
+   "answer": 3,
+   "why": "뒤에 명사 lemon이 오므로 taste like(~같은 맛이 나다)가 되어야 한다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "어법상 옳은 문장은?",
+   "choices": [
+    "She looks sadly.",
+    "It smells sweetly.",
+    "He feels happily.",
+    "The soup tastes salty.",
+    "The song sounds nicely."
+   ],
+   "answer": 4,
+   "why": "감각동사 뒤에는 형용사가 와야 하므로 tastes salty만 옳다. 나머지는 모두 부사(sadly, sweetly, happily, nicely)를 써서 틀렸다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "어법상 틀린 문장은?",
+   "choices": [
+    "The cake tastes sweet.",
+    "Your voice sounds strange.",
+    "I feel great.",
+    "The flower smells nicely.",
+    "She looks tired."
+   ],
+   "answer": 4,
+   "why": "smell 뒤에는 형용사가 와야 하므로 nicely(부사)가 아니라 nice로 써야 한다. 나머지는 모두 감각동사+형용사로 옳다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 틀린 것은?",
+   "choices": [
+    "The soup smells <u>good</u>.",
+    "She looks <u>angry</u>.",
+    "This tea tastes <u>bitter</u>.",
+    "The silk feels <u>smooth</u>.",
+    "His idea sounds <u>greatly</u>."
+   ],
+   "answer": 5,
+   "why": "sound 뒤에는 형용사 great을 써야 한다. greatly는 부사라서 감각동사의 보어가 될 수 없다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 알맞은 것은?\n• The story sounds ____.\n• You look ____ today.",
+   "choices": [
+    "strange",
+    "strangely",
+    "sweetly",
+    "loudly",
+    "angrily"
+   ],
+   "answer": 1,
+   "why": "sound와 look은 모두 감각동사이므로 뒤에 형용사 strange가 온다. 나머지는 전부 부사이다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\nA: How do you feel today?\nB: I ____ great.",
+   "choices": [
+    "feels",
+    "feeling",
+    "sound",
+    "feel",
+    "sounds"
+   ],
+   "answer": 4,
+   "why": "주어가 I이므로 feel을 쓴다. 질문이 feel로 물었으므로 대답도 feel로 하는 것이 자연스럽다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n'이 수프는 짠맛이 난다.'",
+   "choices": [
+    "This soup taste salty.",
+    "This soup tastes salty.",
+    "This soup tastes like salty.",
+    "This soup is tastes salty.",
+    "This soup tastes salt."
+   ],
+   "answer": 2,
+   "why": "주어가 3인칭 단수이므로 tastes, 그 뒤에는 형용사 salty를 쓴다. like 뒤에는 명사가 와야 하므로 like salty는 틀렸다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe baby's skin feels ____.",
+   "choices": [
+    "softly",
+    "loudly",
+    "sweetly",
+    "soft",
+    "angrily"
+   ],
+   "answer": 4,
+   "why": "feel 뒤에는 형용사 soft가 온다. softly를 비롯한 부사는 쓸 수 없다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nYour plan sounds ____. (네 계획은 좋게 들린다.)",
+   "choices": [
+    "well",
+    "badly",
+    "sadly",
+    "slowly",
+    "good"
+   ],
+   "answer": 5,
+   "why": "sound 뒤에는 형용사 good을 쓴다. well은 부사이므로 감각동사 뒤에 올 수 없다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThis milk smells ____. (이 우유는 상한 냄새가 난다.)",
+   "choices": [
+    "badly",
+    "well",
+    "nicely",
+    "greatly",
+    "bad"
+   ],
+   "answer": 5,
+   "why": "smell 뒤에는 형용사 bad를 쓴다. badly는 부사라서 틀렸다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThat cloud looks ____ a rabbit.",
+   "choices": [
+    "likes",
+    "alike",
+    "be",
+    "like",
+    "so"
+   ],
+   "answer": 4,
+   "why": "뒤에 명사 a rabbit이 오므로 look like(~처럼 보이다)를 쓴다. alike는 명사 앞에 쓸 수 없다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThis sweater ____ warm. (이 스웨터는 따뜻하게 느껴진다.)",
+   "choices": [
+    "feel",
+    "feels",
+    "feeling",
+    "is feel",
+    "feels like"
+   ],
+   "answer": 2,
+   "why": "주어가 3인칭 단수이므로 feels를 쓴다. warm은 형용사이므로 feels like는 쓸 수 없다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 동사 뒤에 like를 넣어야 어법상 옳은 문장이 되는 것은?",
+   "choices": [
+    "The soup tastes salty.",
+    "You look tired.",
+    "This scarf feels silk.",
+    "Her voice sounds lovely.",
+    "The tea tastes bitter."
+   ],
+   "answer": 3,
+   "why": "silk는 명사이므로 feels like silk로 써야 한다. 나머지 문장은 감각동사+형용사로 이미 옳은 문장이다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe lemon tastes ____.",
+   "choices": [
+    "sourly",
+    "sour",
+    "slowly",
+    "loudly",
+    "softly"
+   ],
+   "answer": 2,
+   "why": "감각동사 taste 뒤에는 형용사 sour가 온다. sourly 등 부사는 쓸 수 없다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nMinho looks ____ today. (민호는 오늘 졸려 보인다.)",
+   "choices": [
+    "sleepy",
+    "sleepily",
+    "loudly",
+    "sweetly",
+    "greatly"
+   ],
+   "answer": 1,
+   "why": "look 뒤에는 형용사 sleepy가 온다. 나머지는 모두 부사이다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nHer voice sounds ____. (그녀의 목소리는 사랑스럽게 들린다.)",
+   "choices": [
+    "lovingly",
+    "lovely",
+    "sadly",
+    "nicely",
+    "slowly"
+   ],
+   "answer": 2,
+   "why": "sound 뒤에는 형용사가 온다. lovely는 -ly로 끝나지만 형용사이고, lovingly는 부사라서 쓸 수 없다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe cocoa smells ____. (그 코코아는 달콤한 냄새가 난다.)",
+   "choices": [
+    "sweetly",
+    "softly",
+    "sweet",
+    "badly",
+    "well"
+   ],
+   "answer": 3,
+   "why": "smell 뒤에는 형용사 sweet이 온다. sweetly, well 같은 부사는 감각동사의 보어로 쓸 수 없다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nI feel ____ today. (나는 오늘 기분이 아주 좋다.)",
+   "choices": [
+    "greatly",
+    "badly",
+    "great",
+    "sadly",
+    "nicely"
+   ],
+   "answer": 3,
+   "why": "feel 뒤에는 형용사 great을 쓴다. greatly는 부사라서 틀렸다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe rock feels ____. (그 바위는 단단하게 느껴진다.)",
+   "choices": [
+    "hard",
+    "hardly",
+    "softly",
+    "loudly",
+    "sweetly"
+   ],
+   "answer": 1,
+   "why": "feel 뒤에는 형용사 hard가 온다. hardly는 '거의 ~않다'라는 뜻의 부사라서 답이 될 수 없다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThis orange ____ sweet. (이 오렌지는 달콤한 맛이 난다.)",
+   "choices": [
+    "tastes",
+    "smells",
+    "sounds",
+    "looks",
+    "feels"
+   ],
+   "answer": 1,
+   "why": "'~한 맛이 나다'는 taste+형용사로 나타낸다. 우리말이 '맛'이므로 tastes가 알맞다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nYour bag ____ heavy. (네 가방은 무거워 보인다.)",
+   "choices": [
+    "sounds",
+    "tastes",
+    "smells",
+    "looks",
+    "feels"
+   ],
+   "answer": 4,
+   "why": "'~해 보이다'는 look+형용사이다. 우리말 뜻이 '보인다'이므로 looks가 알맞다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe radio ____ loud. (그 라디오는 시끄럽게 들린다.)",
+   "choices": [
+    "hears",
+    "listens",
+    "looks",
+    "tastes",
+    "sounds"
+   ],
+   "answer": 5,
+   "why": "'~하게 들리다'는 sound+형용사이다. hear와 listen은 이런 쓰임의 감각동사가 아니다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThis ice feels ____ glass. (이 얼음은 유리처럼 느껴진다.)",
+   "choices": [
+    "like",
+    "as",
+    "to",
+    "with",
+    "at"
+   ],
+   "answer": 1,
+   "why": "뒤에 명사 glass가 오므로 feel like(~처럼 느껴지다)의 like가 필요하다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe baby looks ____ an angel.",
+   "choices": [
+    "alike",
+    "likes",
+    "like",
+    "as",
+    "with"
+   ],
+   "answer": 3,
+   "why": "'~처럼 보이다'는 look like+명사이다. alike는 명사 앞에 쓸 수 없다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThis tea smells ____ flowers.",
+   "choices": [
+    "to",
+    "at",
+    "like",
+    "alike",
+    "for"
+   ],
+   "answer": 3,
+   "why": "뒤에 명사 flowers가 오므로 smell like(~같은 냄새가 나다)로 써야 한다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "The juice tastes sweetly.",
+    "Her hair smells nicely.",
+    "He looks tiredly today.",
+    "The dog looks angrily.",
+    "This room smells bad."
+   ],
+   "answer": 5,
+   "why": "smell 뒤에 형용사 bad를 쓴 ⑤만 옳다. 나머지는 감각동사 뒤에 부사를 써서 틀렸다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은?",
+   "choices": [
+    "Suji looks lovely in that dress.",
+    "The pie tastes good.",
+    "The wind feels cold.",
+    "The candy smells sweetly.",
+    "The piano sounds beautiful."
+   ],
+   "answer": 4,
+   "why": "smell 뒤에는 형용사 sweet을 써야 하므로 부사 sweetly는 틀렸다. lovely는 형용사라서 ①은 옳다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법에 맞지 않는 것은?",
+   "choices": [
+    "The mango tastes <u>sweet</u>.",
+    "The town looks <u>quiet</u>.",
+    "The puppy's fur feels <u>soft</u>.",
+    "The sea smells <u>salty</u>.",
+    "Grandpa's voice sounds <u>warmly</u>."
+   ],
+   "answer": 5,
+   "why": "sound 뒤에는 형용사 warm을 써야 한다. warmly는 부사라서 감각동사의 보어가 될 수 없다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 알맞은 것은?\n• This cake smells ____.\n• The garden looks ____.",
+   "choices": [
+    "lovely",
+    "warmly",
+    "nicely",
+    "sweetly",
+    "sadly"
+   ],
+   "answer": 1,
+   "why": "smell과 look 뒤에는 형용사가 와야 한다. lovely는 -ly로 끝나지만 형용사이고 나머지는 모두 부사이다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\nA: How does the soup taste?\nB: It tastes a little ____.",
+   "choices": [
+    "salty",
+    "badly",
+    "greatly",
+    "nicely",
+    "slowly"
+   ],
+   "answer": 1,
+   "why": "taste 뒤에는 형용사 salty가 온다. 나머지는 모두 부사이다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n'그 별은 다이아몬드처럼 보인다.'",
+   "choices": [
+    "The star looks a diamond.",
+    "The star looks like a diamond.",
+    "The star look like a diamond.",
+    "The star sees like a diamond.",
+    "The star is look like a diamond."
+   ],
+   "answer": 2,
+   "why": "'~처럼 보이다'는 look like+명사이고 주어가 3인칭 단수이므로 looks like a diamond가 옳다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe winter wind feels ____. (겨울바람은 차갑게 느껴진다.)",
+   "choices": [
+    "coldly",
+    "warmly",
+    "cold",
+    "softly",
+    "sweetly"
+   ],
+   "answer": 3,
+   "why": "feel 뒤에는 형용사 cold가 온다. coldly는 부사이고, 뜻이 '차갑게'이므로 warmly 계열도 답이 아니다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nDad's stew smells ____. (아빠의 찌개는 매운 냄새가 난다.)",
+   "choices": [
+    "badly",
+    "spicy",
+    "nicely",
+    "sweetly",
+    "greatly"
+   ],
+   "answer": 2,
+   "why": "smell 뒤에는 형용사 spicy를 쓴다. 나머지는 모두 부사라서 쓸 수 없다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThat building looks ____ a pencil.",
+   "choices": [
+    "likes",
+    "like",
+    "alike",
+    "as",
+    "to"
+   ],
+   "answer": 2,
+   "why": "뒤에 명사 a pencil이 오므로 looks like(~처럼 보이다)를 쓴다. likes는 '좋아하다'의 3인칭 단수형이다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThis candy ____ like soap. (이 사탕은 비누 같은 맛이 난다.)",
+   "choices": [
+    "tastes",
+    "taste",
+    "tasting",
+    "is taste",
+    "smells"
+   ],
+   "answer": 1,
+   "why": "'~같은 맛이 나다'는 taste like+명사이고, 주어가 3인칭 단수이므로 tastes를 쓴다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 like를 지워야 어법상 옳은 문장이 되는 것은?",
+   "choices": [
+    "This soup tastes like curry.",
+    "The moon looks like a ball.",
+    "Her scarf feels like silk.",
+    "The song sounds like sad.",
+    "His bag looks like a box."
+   ],
+   "answer": 4,
+   "why": "sad는 형용사이므로 like 없이 sounds sad로 써야 한다. 나머지는 like+명사로 옳은 문장이다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\nA: What's that smell?\nB: Mom is baking cookies. They smell ____!",
+   "choices": [
+    "wonderfully",
+    "wonderful",
+    "well",
+    "nicely",
+    "greatly"
+   ],
+   "answer": 2,
+   "why": "smell 뒤에는 형용사 wonderful이 온다. 나머지는 모두 부사이다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 것을 골라 쓰시오.\nThe cake tastes (sweet / sweetly).",
+   "answer": "sweet",
+   "alt": [],
+   "why": "감각동사 taste 뒤에는 형용사 sweet이 온다. 부사 sweetly는 쓸 수 없다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe roses smell <u>wonderfully</u>.",
+   "answer": "wonderful",
+   "alt": [],
+   "why": "smell 뒤에는 형용사가 와야 하므로 부사 wonderfully를 wonderful로 고친다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nHe looks <u>sadly</u> today.",
+   "answer": "sad",
+   "alt": [],
+   "why": "look 뒤에는 형용사가 와야 하므로 sadly를 sad로 고친다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nThis jelly tastes ____ strawberries. (이 젤리는 딸기 같은 맛이 난다.)",
+   "answer": "like",
+   "alt": [],
+   "why": "감각동사 뒤에 명사(strawberries)가 오면 like가 필요하다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nYour voice ____ strange today. (네 목소리는 오늘 이상하게 들린다.)",
+   "answer": "sounds",
+   "alt": [],
+   "why": "'~하게 들리다'는 sound+형용사이며, 주어가 3인칭 단수이므로 sounds로 쓴다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "주어진 말을 모두 한 번씩 배열하여 문장을 완성하시오.\n(looks / she / angry)",
+   "answer": "She looks angry.",
+   "alt": [
+    "She looks angry"
+   ],
+   "why": "주어 She 뒤에 감각동사 looks, 그 뒤에 형용사 angry를 놓는다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "주어진 말을 모두 한 번씩 배열하여 문장을 완성하시오.\n(like / smells / this soap / lemons)",
+   "answer": "This soap smells like lemons.",
+   "alt": [
+    "This soap smells like lemons"
+   ],
+   "why": "명사 lemons 앞에는 like를 써서 smells like lemons(레몬 같은 냄새가 난다)로 만든다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThis bread smells <u>freshly</u>.",
+   "answer": "fresh",
+   "alt": [],
+   "why": "감각동사 smell 뒤에는 형용사 fresh를 써야 한다. freshly는 부사이다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. (감각동사를 사용할 것)\nI ____ hungry now. (나는 지금 배가 고프다.)",
+   "answer": "feel",
+   "alt": [],
+   "why": "'배가 고프게 느껴진다'는 feel+형용사(hungry)로 나타낸다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe story sounds <u>interestingly</u>.",
+   "answer": "interesting",
+   "alt": [],
+   "why": "sound 뒤에는 형용사가 와야 하므로 interestingly를 interesting으로 고친다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 것을 골라 쓰시오.\nThe night sky looks (dark / darkly).",
+   "answer": "dark",
+   "alt": [],
+   "why": "look 뒤에는 형용사 dark가 온다. darkly는 부사이다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe chocolate tastes <u>bitterly</u>.",
+   "answer": "bitter",
+   "alt": [],
+   "why": "taste 뒤에는 형용사가 와야 하므로 bitterly를 bitter로 고친다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe kitchen smells <u>badly</u>.",
+   "answer": "bad",
+   "alt": [],
+   "why": "smell 뒤에는 형용사 bad를 써야 한다. badly는 부사이다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nThis cap looks ____ a frog. (이 모자는 개구리처럼 보인다.)",
+   "answer": "like",
+   "alt": [],
+   "why": "뒤에 명사(a frog)가 오므로 look like의 like가 필요하다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nThe bell ____ loud. (그 종은 크게 들린다.)",
+   "answer": "sounds",
+   "alt": [],
+   "why": "'~하게 들리다'는 sound+형용사이고 주어가 3인칭 단수이므로 sounds를 쓴다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "주어진 말을 모두 한 번씩 배열하여 문장을 완성하시오.\n(feels / the sand / warm)",
+   "answer": "The sand feels warm.",
+   "alt": [
+    "The sand feels warm"
+   ],
+   "why": "주어 The sand 뒤에 감각동사 feels, 그 뒤에 형용사 warm을 놓는다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "주어진 말을 모두 한 번씩 배열하여 문장을 완성하시오.\n(looks / like / that hill / a turtle)",
+   "answer": "That hill looks like a turtle.",
+   "alt": [
+    "That hill looks like a turtle"
+   ],
+   "why": "명사 a turtle 앞에 like를 놓아 looks like a turtle(거북이처럼 보인다)로 배열한다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nYuna looks <u>happily</u> today.",
+   "answer": "happy",
+   "alt": [],
+   "why": "look 뒤에는 형용사가 와야 하므로 happily를 happy로 고친다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nThis rice cake ____ like honey. (이 떡은 꿀 같은 맛이 난다.)",
+   "answer": "tastes",
+   "alt": [],
+   "why": "'~같은 맛이 나다'는 taste like+명사이고 주어가 3인칭 단수이므로 tastes를 쓴다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe morning air smells <u>sweetly</u>.",
+   "answer": "sweet",
+   "alt": [],
+   "why": "smell 뒤에는 형용사 sweet을 써야 한다. sweetly는 부사이다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것끼리 짝지은 것은?\nThe soup smells ____, but it tastes ____. (그 수프는 좋은 냄새가 나지만 맛이 이상하다.)",
+   "choices": [
+    "well – strange",
+    "good – strangely",
+    "good – strange",
+    "well – strangely",
+    "goodly – strange"
+   ],
+   "answer": 3,
+   "why": "smell과 taste는 모두 감각동사이므로 뒤에 형용사 good, strange를 쓴다. well과 strangely는 부사라서 쓸 수 없다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThis scarf feels ____ silk, but it isn't real silk.",
+   "choices": [
+    "as",
+    "like",
+    "so",
+    "to",
+    "that"
+   ],
+   "answer": 2,
+   "why": "silk는 명사이므로 feel like+명사(~처럼 느껴지다)로 써야 한다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "Kevin looks happily in the picture.",
+    "The bread smells deliciously.",
+    "The medicine tastes bitterly.",
+    "I feel sleepily after lunch.",
+    "This cheese smells like old socks."
+   ],
+   "answer": 5,
+   "why": "smells like+명사(old socks)는 옳은 표현이다. 나머지는 감각동사 뒤에 부사를 써서 모두 틀렸다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 틀린 문장을 고르면?",
+   "choices": [
+    "The night air feels cool.",
+    "That sounds like a great idea.",
+    "Mina looks like happy today.",
+    "These oranges taste sour.",
+    "The soup smells wonderful."
+   ],
+   "answer": 3,
+   "why": "happy는 형용사이므로 like 없이 looks happy로 써야 한다. like 뒤에는 명사가 와야 한다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 틀린 것을 고르면?",
+   "choices": [
+    "This pillow feels <u>hard</u>.",
+    "Grandma's pie smells <u>sweetly</u>.",
+    "The news sounds <u>terrible</u>.",
+    "You look <u>like a movie star</u>.",
+    "The sea water tastes <u>salty</u>."
+   ],
+   "answer": 2,
+   "why": "smell 뒤에는 형용사 sweet을 써야 한다. hard는 형용사이고, like a movie star는 like+명사이므로 옳다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 알맞은 것은?\n• The towel ____ soft. (그 수건은 부드럽게 느껴진다.)\n• His hand ____ like ice. (그의 손은 얼음처럼 느껴진다.)",
+   "choices": [
+    "sounds",
+    "looks",
+    "tastes",
+    "feels",
+    "smells"
+   ],
+   "answer": 4,
+   "why": "두 문장 모두 '느껴지다'라는 뜻이므로 feels가 공통으로 들어간다. feel은 형용사도, like+명사도 취할 수 있다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\nA: What do you think of my plan?\nB: It ____ interesting.",
+   "choices": [
+    "sounds",
+    "sounds like",
+    "hears",
+    "listens",
+    "looks like"
+   ],
+   "answer": 1,
+   "why": "interesting은 형용사이므로 like 없이 sounds interesting으로 쓴다. hear와 listen은 이런 쓰임이 없다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\nA: Why don't you try this soup?\nB: No, thanks. It smells ____. (생선 같은 냄새가 나.)",
+   "choices": [
+    "fish",
+    "like fishy",
+    "to fish",
+    "like fish",
+    "as fish"
+   ],
+   "answer": 4,
+   "why": "명사 fish 앞에는 like를 써서 smells like fish(생선 같은 냄새가 난다)로 표현한다. like 뒤에 형용사 fishy는 올 수 없다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n'그 이야기는 재미있게 들린다.'",
+   "choices": [
+    "The story sounds funnily.",
+    "The story sounds like funny.",
+    "The story hears funny.",
+    "The story is sound funny.",
+    "The story sounds funny."
+   ],
+   "answer": 5,
+   "why": "sound+형용사(funny)가 옳다. funny는 형용사이므로 like를 붙이면 안 되고, hear는 '들리다'의 감각동사로 쓸 수 없다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n'너는 오늘 네 언니처럼 보인다.'",
+   "choices": [
+    "You look your sister today.",
+    "You look like your sister today.",
+    "You looks like your sister today.",
+    "You see like your sister today.",
+    "You are look like your sister today."
+   ],
+   "answer": 2,
+   "why": "'~처럼 보이다'는 look like+명사이다. 주어 You 뒤에는 look을 쓰고, be동사와 함께 쓰지 않는다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 like가 들어갈 수 없는 것은?",
+   "choices": [
+    "This perfume smells ____ roses.",
+    "The moon looks ____ a big cookie.",
+    "This drink tastes ____ honey.",
+    "Her voice sounds ____ sweet.",
+    "The floor feels ____ ice."
+   ],
+   "answer": 4,
+   "why": "sweet은 형용사이므로 like를 쓸 수 없고 sounds sweet으로 써야 한다. 나머지는 모두 뒤에 명사가 있어 like가 필요하다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "감각동사와 뒤에 오는 말의 짝이 어법상 옳은 것은?",
+   "choices": [
+    "taste – wonderfully",
+    "smell – badly",
+    "look – lovely",
+    "sound – strangely",
+    "feel – softly"
+   ],
+   "answer": 3,
+   "why": "lovely는 -ly로 끝나지만 부사가 아니라 형용사이므로 look lovely는 옳다. 나머지는 모두 부사라서 감각동사 뒤에 올 수 없다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe children look ____ after the long trip. (아이들은 긴 여행 후에 피곤해 보인다.)",
+   "choices": [
+    "tiredly",
+    "tired",
+    "sadly",
+    "happily",
+    "angrily"
+   ],
+   "answer": 2,
+   "why": "look 뒤에는 형용사 tired가 온다. tiredly는 부사이고, 뜻이 '피곤해 보인다'이므로 다른 선택지도 답이 아니다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThis new bed feels ____. (이 새 침대는 매우 편안하게 느껴진다.)",
+   "choices": [
+    "very comfortably",
+    "comfortably",
+    "very comfortable",
+    "like comfortable",
+    "like comfortably"
+   ],
+   "answer": 3,
+   "why": "feel 뒤에는 형용사가 오고, 형용사는 very로 꾸밀 수 있으므로 very comfortable이 맞다. like 뒤에는 명사만 온다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 의문문과 부정문 중 어법상 옳은 것은?",
+   "choices": [
+    "Does this milk smells bad?",
+    "This milk doesn't smells bad.",
+    "Is this milk smell bad?",
+    "Does this milk smell bad?",
+    "This milk don't smell bad."
+   ],
+   "answer": 4,
+   "why": "일반동사 의문문은 Does+주어+동사원형이므로 Does this milk smell bad?가 옳다. smell은 일반동사이므로 Is로 물을 수 없다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 알맞은 것은?\n• The cheese smells ____.\n• The weather looks ____ today.",
+   "choices": [
+    "terribly",
+    "like terrible",
+    "wonderfully",
+    "terrible",
+    "nicely"
+   ],
+   "answer": 4,
+   "why": "smell과 look은 감각동사이므로 형용사 terrible이 공통으로 들어간다. like 뒤에는 형용사가 올 수 없다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 like의 쓰임이 나머지 넷과 다른 것은?",
+   "choices": [
+    "This tastes <u>like</u> chicken.",
+    "He looks <u>like</u> his dad.",
+    "We <u>like</u> our new teacher.",
+    "It sounds <u>like</u> a bell.",
+    "That cloud looks <u>like</u> a ship."
+   ],
+   "answer": 3,
+   "why": "③의 like는 '좋아하다'라는 동사이고, 나머지는 감각동사 뒤에서 '~처럼'이라는 뜻으로 쓰인 like이다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\nA: You look ____ today. What's wrong?\nB: I lost my cat.",
+   "choices": [
+    "sad",
+    "sadly",
+    "happy",
+    "happily",
+    "like sad"
+   ],
+   "answer": 1,
+   "why": "look 뒤에는 형용사가 오고, 고양이를 잃어버렸다는 대답과 어울리는 것은 sad이다. sadly는 부사, like sad는 like 뒤에 형용사를 써서 틀렸다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\n(a) The candy tastes sweetly.\n(b) Jenny looks like a doll.\n(c) This song sounds sad.\n(d) The soup smells like delicious.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "0개"
+   ],
+   "answer": 2,
+   "why": "(b)는 like+명사, (c)는 감각동사+형용사로 옳다. (a)는 부사 sweetly, (d)는 like 뒤에 형용사를 써서 틀렸다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n'이 담요는 구름처럼 느껴진다.'",
+   "choices": [
+    "This blanket feels a cloud.",
+    "This blanket feels like cloudy.",
+    "This blanket is feel like a cloud.",
+    "This blanket feels alike a cloud.",
+    "This blanket feels like a cloud."
+   ],
+   "answer": 5,
+   "why": "'~처럼 느껴지다'는 feel like+명사이므로 feels like a cloud가 옳다. like 없이 명사를 바로 쓰거나 like 뒤에 형용사를 쓰면 틀린다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것끼리 짝지은 것은?\nA: How does the pizza ____?\nB: It ____ great.",
+   "choices": [
+    "taste – tastes",
+    "tastes – taste",
+    "taste – taste",
+    "tastes – tastes",
+    "tasting – tastes"
+   ],
+   "answer": 1,
+   "why": "does 뒤에는 동사원형 taste를 쓰고, 대답에서는 주어 It이 3인칭 단수이므로 tastes를 쓴다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 ①~⑤ 중 어법상 <u>틀린</u> 것은?\nMy little sister ①<u>looks</u> ②<u>like</u> ③<u>happy</u> when she ④<u>sings</u> on the ⑤<u>stage</u>.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 2,
+   "why": "happy는 형용사이므로 like 없이 looks happy로 써야 한다. like 뒤에는 명사가 와야 하므로 ②가 틀렸다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nSomething smells ____ in the kitchen. Did you burn the toast?",
+   "choices": [
+    "strangely",
+    "well",
+    "sweetly",
+    "softly",
+    "strange"
+   ],
+   "answer": 5,
+   "why": "smell 뒤에는 형용사 strange가 온다. 나머지는 모두 부사라서 감각동사의 보어로 쓸 수 없다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것끼리 짝지은 것은?\nJimin's cookies ____ good, but they ____ strange. (좋은 냄새가 나지만 이상한 맛이 난다.)",
+   "choices": [
+    "smells – tastes",
+    "smell – taste",
+    "smell – tastes",
+    "smells – taste",
+    "smelling – tasting"
+   ],
+   "answer": 2,
+   "why": "주어가 복수(cookies, they)이므로 smell과 taste를 쓴다. 두 감각동사 뒤에는 각각 형용사 good, strange가 온다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nHis new shoes look ____ boats. (그의 새 신발은 보트처럼 보인다.)",
+   "choices": [
+    "as",
+    "so",
+    "like",
+    "of",
+    "to"
+   ],
+   "answer": 3,
+   "why": "뒤에 명사 boats가 오므로 look like(~처럼 보이다)를 쓴다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 바르게 쓰인 문장은?",
+   "choices": [
+    "This yogurt tastes sourly.",
+    "Her scarf feels softly.",
+    "The sky looks like angry.",
+    "The engine sounds strange today.",
+    "The soup smells like bad."
+   ],
+   "answer": 4,
+   "why": "sounds strange는 감각동사+형용사로 옳다. ①②는 부사를 썼고, ③⑤는 형용사 앞에 like를 붙여서 틀렸다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞지 않는 문장은?",
+   "choices": [
+    "Your voice sounds beautifully today.",
+    "The bread smells fresh.",
+    "That cloud looks like a whale.",
+    "The blanket feels warm and soft.",
+    "This apple tastes sweet."
+   ],
+   "answer": 1,
+   "why": "sound 뒤에는 형용사 beautiful을 써야 하므로 부사 beautifully는 틀렸다. 나머지는 형용사나 like+명사를 써서 옳다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 어색한 것은?",
+   "choices": [
+    "The stew <u>smells spicy</u>.",
+    "This velvet <u>feels smoothly</u>.",
+    "The bell <u>sounds like</u> a bird song.",
+    "Mina <u>looks calm</u> before the test.",
+    "The pie <u>tastes like</u> apples."
+   ],
+   "answer": 2,
+   "why": "feel 뒤에는 형용사 smooth를 써야 한다. smoothly는 부사라서 감각동사의 보어가 될 수 없다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 알맞은 것은?\n• The dish ____ salty. (그 요리는 짠맛이 난다.)\n• This snack ____ like shrimp. (이 과자는 새우 같은 맛이 난다.)",
+   "choices": [
+    "smells",
+    "looks",
+    "feels",
+    "tastes",
+    "sounds"
+   ],
+   "answer": 4,
+   "why": "두 문장 모두 '맛이 나다'라는 뜻이므로 tastes가 공통으로 들어간다. taste는 형용사도, like+명사도 취할 수 있다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\nA: How does your new bed feel?\nB: It ____ really soft.",
+   "choices": [
+    "feel",
+    "is feel",
+    "sounds",
+    "feels like",
+    "feels"
+   ],
+   "answer": 5,
+   "why": "주어 It이 3인칭 단수이므로 feels를 쓴다. soft는 형용사이므로 feels like는 쓸 수 없다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\nA: Listen! Can you hear the violin?\nB: Yes. It sounds ____. (천사의 노래처럼 들려.)",
+   "choices": [
+    "an angel's song",
+    "like an angel's song",
+    "to an angel's song",
+    "angel's song like",
+    "likes an angel's song"
+   ],
+   "answer": 2,
+   "why": "'~처럼 들리다'는 sound like+명사이므로 like an angel's song이 알맞다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n'그 치즈는 오래된 우유 같은 냄새가 난다.'",
+   "choices": [
+    "The cheese smells like old milk.",
+    "The cheese smells old milk.",
+    "The cheese is smell like old milk.",
+    "The cheese smell like old milk.",
+    "The cheese smells likes old milk."
+   ],
+   "answer": 1,
+   "why": "'~같은 냄새가 나다'는 smell like+명사이고 주어가 3인칭 단수이므로 smells like old milk가 옳다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n'그 영화는 무섭게 들린다.'",
+   "choices": [
+    "The movie sounds scarily.",
+    "The movie sounds like scary.",
+    "The movie sounds scary.",
+    "The movie hears scary.",
+    "The movie sounds scare."
+   ],
+   "answer": 3,
+   "why": "sound+형용사(scary)가 옳다. scary는 형용사이므로 like를 붙이지 않고, scare는 동사라서 보어로 쓸 수 없다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 like가 들어갈 수 <u>없는</u> 것은?",
+   "choices": [
+    "The jelly tastes ____ peach.",
+    "His room smells ____ flowers.",
+    "The drum sounds ____ thunder.",
+    "Her cheeks look ____ apples.",
+    "The pool water feels ____ cold."
+   ],
+   "answer": 5,
+   "why": "cold는 형용사이므로 like 없이 feels cold로 써야 한다. 나머지는 모두 뒤에 명사가 있어 like가 필요하다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "감각동사와 뒤에 오는 말의 짝이 어법상 자연스러운 것은?",
+   "choices": [
+    "look – beautifully",
+    "sound – noisily",
+    "taste – salty",
+    "smell – freshly",
+    "feel – warmly"
+   ],
+   "answer": 3,
+   "why": "감각동사 뒤에는 형용사가 와야 하므로 taste salty만 옳다. 나머지는 모두 부사와 짝지어져 틀렸다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nBen looks ____ in his new uniform. (새 교복을 입으니 멋져 보인다.)",
+   "choices": [
+    "nicely",
+    "like nice",
+    "niceness",
+    "nice",
+    "like nicely"
+   ],
+   "answer": 4,
+   "why": "look 뒤에는 형용사 nice가 온다. 부사 nicely나 like+형용사는 쓸 수 없다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThis hot chocolate tastes ____. (이 핫초코는 너무 달게 느껴지는 맛이다.)",
+   "choices": [
+    "too sweetly",
+    "too sweet",
+    "like too sweet",
+    "sweetly too",
+    "too sweetness"
+   ],
+   "answer": 2,
+   "why": "taste 뒤에는 형용사가 오고, too는 형용사 sweet을 꾸밀 수 있으므로 too sweet이 알맞다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 의문문 중 어법상 옳은 것은?",
+   "choices": [
+    "Does the roses smell good?",
+    "Do the roses smell good?",
+    "Do the roses smells good?",
+    "Are the roses smell good?",
+    "Does the roses smells good?"
+   ],
+   "answer": 2,
+   "why": "주어가 복수(the roses)이므로 Do로 묻고 동사원형 smell을 쓴다. smell은 일반동사라서 Are로 물을 수 없다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 알맞은 것은?\n• His joke sounds ____.\n• The quiz looks ____.",
+   "choices": [
+    "funnily",
+    "like funny",
+    "funny",
+    "well",
+    "greatly"
+   ],
+   "answer": 3,
+   "why": "sound와 look 뒤에는 형용사 funny가 공통으로 들어간다. like 뒤에는 형용사가 올 수 없다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 like의 쓰임이 나머지 넷과 <u>다른</u> 것은?",
+   "choices": [
+    "Do you <u>like</u> spicy food?",
+    "I <u>like</u> rainy days.",
+    "The rain sounds <u>like</u> a drum.",
+    "We <u>like</u> our music class.",
+    "They <u>like</u> the new playground."
+   ],
+   "answer": 3,
+   "why": "③의 like는 감각동사 뒤에서 '~처럼'이라는 뜻으로 쓰였고, 나머지는 모두 '좋아하다'라는 동사이다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\nA: You look so ____. Did you win the game?\nB: Yes! We won!",
+   "choices": [
+    "happily",
+    "sad",
+    "sadly",
+    "like happy",
+    "happy"
+   ],
+   "answer": 5,
+   "why": "look 뒤에는 형용사가 오고, 경기에서 이겼다는 대답과 어울리는 것은 happy이다. happily는 부사, like happy는 like 뒤에 형용사를 써서 틀렸다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\n(a) The towel smells like soap.\n(b) The candle smells sweetly.\n(c) Ted looked like a superhero in the cape.\n(d) This pear tastes strangely.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "0개"
+   ],
+   "answer": 2,
+   "why": "(a)와 (c)는 like+명사로 옳다. (b)와 (d)는 감각동사 뒤에 부사를 써서 틀렸다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n'그의 목소리는 로봇처럼 들린다.'",
+   "choices": [
+    "His voice sounds like a robot.",
+    "His voice sounds a robot.",
+    "His voice sound like a robot.",
+    "His voice sounds like robotic.",
+    "His voice hears like a robot."
+   ],
+   "answer": 1,
+   "why": "'~처럼 들리다'는 sound like+명사이고 주어가 3인칭 단수이므로 sounds like a robot이 옳다. like 뒤에 형용사 robotic은 올 수 없다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것끼리 짝지은 것은?\nA: Does this kimchi ____ too spicy?\nB: No, it ____ just right.",
+   "choices": [
+    "tastes – taste",
+    "taste – taste",
+    "tastes – tastes",
+    "taste – tastes",
+    "tasting – taste"
+   ],
+   "answer": 4,
+   "why": "Does 뒤에는 동사원형 taste를 쓰고, 대답의 주어 it은 3인칭 단수이므로 tastes를 쓴다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 ①~⑤ 중 어법상 <u>틀린</u> 것은?\nThis ①<u>green</u> tea ②<u>smells</u> ③<u>likes</u> ④<u>fresh</u> ⑤<u>grass</u>.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "'~같은 냄새가 나다'는 smell like이므로 likes가 아니라 like를 써야 한다. 여기서 like는 동사가 아니므로 -s를 붙이지 않는다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nEverything on the table smells ____, so I can't wait to eat. (아주 맛있는 냄새가 난다.)",
+   "choices": [
+    "so deliciously",
+    "like delicious",
+    "so delicious",
+    "deliciously so",
+    "like so delicious"
+   ],
+   "answer": 3,
+   "why": "smell 뒤에는 형용사가 오고 so가 형용사 delicious를 꾸미므로 so delicious가 알맞다. like 뒤에는 형용사가 올 수 없다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nYour new hairstyle looks <u>greatly</u>.",
+   "answer": "great",
+   "alt": [],
+   "why": "look 뒤에는 형용사가 와야 하므로 부사 greatly를 great으로 고친다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThis lemonade tastes <u>sourly</u>.",
+   "answer": "sour",
+   "alt": [],
+   "why": "taste 뒤에는 형용사 sour를 써야 한다. sourly는 부사이다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nThe little puppy looks ____ a small bear. (그 강아지는 작은 곰처럼 보인다.)",
+   "answer": "like",
+   "alt": [],
+   "why": "뒤에 명사(a small bear)가 오므로 look like(~처럼 보이다)의 like가 필요하다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nThe singer's voice sounds (beauty).",
+   "answer": "beautiful",
+   "alt": [],
+   "why": "감각동사 sound 뒤에는 형용사가 와야 하므로 명사 beauty를 형용사 beautiful로 바꾼다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nThis stew tastes (salt).",
+   "answer": "salty",
+   "alt": [],
+   "why": "taste 뒤에는 형용사가 와야 하므로 명사 salt를 형용사 salty로 바꾼다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "주어진 말을 모두 한 번씩 배열하여 문장을 완성하시오.\n(sounds / your / like / plan / fun)",
+   "answer": "Your plan sounds like fun.",
+   "alt": [
+    "Your plan sounds like fun"
+   ],
+   "why": "fun은 명사이므로 sounds like fun(재미있게 들린다)의 순서로 배열한다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "어법상 틀린 부분을 바르게 고쳐 문장 전체를 다시 쓰시오.\nThe kitten feels softly.",
+   "answer": "The kitten feels soft.",
+   "alt": [
+    "The kitten feels soft"
+   ],
+   "why": "feel 뒤에는 형용사가 와야 하므로 softly를 soft로 고쳐 쓴다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "대화의 빈칸에 알맞은 한 단어를 쓰시오.\nA: Do I ____ okay in this dress?\nB: Yes, you look great.",
+   "answer": "look",
+   "alt": [],
+   "why": "B가 look으로 대답하고 있으므로 겉모습을 묻는 look이 알맞다. Do 뒤이므로 동사원형 look을 쓴다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "주어진 말을 모두 한 번씩 배열하여 문장을 완성하시오.\n(like / tastes / this candy / grapes)",
+   "answer": "This candy tastes like grapes.",
+   "alt": [
+    "This candy tastes like grapes"
+   ],
+   "why": "명사 grapes 앞에는 like를 써서 tastes like grapes(포도 같은 맛이 난다)로 만든다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe ocean wind feels <u>coldly</u>.",
+   "answer": "cold",
+   "alt": [],
+   "why": "feel 뒤에는 형용사 cold를 써야 한다. coldly는 부사이다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe tomato soup smells <u>strangely</u> today.",
+   "answer": "strange",
+   "alt": [],
+   "why": "smell 뒤에는 형용사가 와야 하므로 strangely를 strange로 고친다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nHer new ring looks <u>expensively</u>.",
+   "answer": "expensive",
+   "alt": [],
+   "why": "look 뒤에는 형용사 expensive를 써야 한다. expensively는 부사이다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nThe cotton candy feels ____ a soft pillow. (솜사탕이 부드러운 베개처럼 느껴진다.)",
+   "answer": "like",
+   "alt": [],
+   "why": "뒤에 명사(a soft pillow)가 오므로 feel like의 like가 필요하다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nThe winter sea looks (peace).",
+   "answer": "peaceful",
+   "alt": [],
+   "why": "look 뒤에는 형용사가 와야 하므로 명사 peace를 형용사 peaceful로 바꾼다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nHis voice sounded (anger) on the phone.",
+   "answer": "angry",
+   "alt": [],
+   "why": "sound 뒤에는 형용사가 와야 하므로 명사 anger를 형용사 angry로 바꾼다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "주어진 말을 모두 한 번씩 배열하여 문장을 완성하시오.\n(smells / the bakery / like / sweet bread)",
+   "answer": "The bakery smells like sweet bread.",
+   "alt": [
+    "The bakery smells like sweet bread"
+   ],
+   "why": "명사 sweet bread 앞에 like를 놓아 smells like sweet bread(달콤한 빵 같은 냄새가 난다)로 배열한다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "어법상 틀린 부분을 바르게 고쳐 문장 전체를 다시 쓰시오.\nThe scarf feels warmly.",
+   "answer": "The scarf feels warm.",
+   "alt": [
+    "The scarf feels warm"
+   ],
+   "why": "feel 뒤에는 형용사가 와야 하므로 warmly를 warm으로 고쳐 쓴다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "대화의 빈칸에 알맞은 한 단어를 쓰시오.\nA: This drink ____ like green tea.\nB: Right, but it's just water! (녹차 같은 맛이 나.)",
+   "answer": "tastes",
+   "alt": [],
+   "why": "'~같은 맛이 나다'는 taste like+명사이고 주어가 3인칭 단수이므로 tastes를 쓴다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "주어진 말을 모두 한 번씩 배열하여 문장을 완성하시오.\n(like / looks / a painting / the sunset)",
+   "answer": "The sunset looks like a painting.",
+   "alt": [
+    "The sunset looks like a painting"
+   ],
+   "why": "주어 The sunset 뒤에 looks like+명사(a painting)를 놓아 '그림처럼 보인다'를 나타낸다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe classroom sounds <u>noisily</u> during lunch.",
+   "answer": "noisy",
+   "alt": [],
+   "why": "sound 뒤에는 형용사 noisy를 써야 한다. noisily는 부사이다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. The stew smelled wonderful, so everyone sat down quickly.\nㄴ. When I heard the news, I felt terribly.\nㄷ. That singer sounds like a real angel.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 smelled+형용사, ㄷ은 sounds like+명사로 옳다. ㄴ은 feel 뒤에 부사 terribly를 써서 틀렸고 terrible로 고쳐야 한다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 <u>틀린</u> 것을 모두 고른 것은?\nㄱ. This bread tastes like honey and butter.\nㄴ. My grandmother's hands feel very softly.\nㄷ. The classroom looked empty after school.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 2,
+   "why": "ㄴ은 feel 뒤에 부사 softly를 써서 틀렸고 very soft로 고쳐야 한다. ㄱ은 like+명사, ㄷ은 looked+형용사로 옳다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (a)~(c)에 알맞은 것끼리 짝지은 것은?\nThe morning air (a)____ fresh, the coffee (b)____ like heaven, and everything (c)____ perfect today.\n((a) 신선하게 느껴진다 (b) 천국 같은 냄새가 난다 (c) 완벽해 보인다)",
+   "choices": [
+    "feels – smells – looks",
+    "looks – tastes – feels",
+    "feels – sounds – tastes",
+    "sounds – smells – looks",
+    "feels – smells – sounds"
+   ],
+   "answer": 1,
+   "why": "'느껴진다'는 feels, '냄새가 난다'는 smells, '보인다'는 looks이다. 우리말 뜻에 맞는 감각동사를 순서대로 고른다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 문장을 고르면?",
+   "choices": [
+    "The pie in the oven smells sweetly.",
+    "When she wears that coat, she looks like a princess.",
+    "His voice on the phone sounded angrily.",
+    "I feel like tired after soccer practice.",
+    "These grapes taste sourly, so I can't eat them."
+   ],
+   "answer": 2,
+   "why": "looks like+명사(a princess)는 옳다. ①③⑤는 감각동사 뒤에 부사를 썼고, ④는 형용사 tired 앞에 like를 붙여서 틀렸다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 <u>틀린</u> 문장은?",
+   "choices": [
+    "The night sky looked beautiful from the mountain.",
+    "After the shower, my hair smells like flowers.",
+    "Grandpa's old radio sounds strangely at night.",
+    "This winter jacket feels light but warm.",
+    "The curry at that restaurant tastes really hot."
+   ],
+   "answer": 3,
+   "why": "sound 뒤에는 형용사 strange를 써야 하므로 부사 strangely는 틀렸다. ④의 light와 warm, ⑤의 really hot은 모두 형용사(구)라서 옳다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 <u>틀린</u> 것은?",
+   "choices": [
+    "The kitchen <u>smells like</u> fresh bread in the morning.",
+    "Your voice <u>sounds sleepy</u>. Did you just wake up?",
+    "The road <u>feels slippery</u> after the rain.",
+    "This orange juice <u>tastes freshly</u> and sweet.",
+    "My brother <u>looks serious</u> when he reads books."
+   ],
+   "answer": 4,
+   "why": "taste 뒤에는 형용사가 와야 하므로 freshly가 아니라 fresh를 써야 한다. 나머지는 감각동사+형용사 또는 like+명사로 옳다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n'이 수프는 맛있는 냄새가 나지만, 약 같은 맛이 난다.'",
+   "choices": [
+    "This soup smells deliciously, but it tastes like medicine.",
+    "This soup smells delicious, but it tastes medicine.",
+    "This soup smells delicious, but it tastes like medicine.",
+    "This soup smells like delicious, but it tastes like medicine.",
+    "This soup is smell delicious, but it tastes like medicine."
+   ],
+   "answer": 3,
+   "why": "smell 뒤에는 형용사 delicious, 명사 medicine 앞에는 like가 필요하다. 두 규칙을 모두 지킨 것은 ③뿐이다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (a), (b)에 알맞은 것끼리 짝지은 것은?\nThis cheese smells (a)____, but it tastes (b)____.\n((a) 끔찍한 냄새가 난다 (b) 꿀 같은 맛이 난다)",
+   "choices": [
+    "terribly – like honey",
+    "terrible – like honey",
+    "terrible – honey",
+    "terribly – honey",
+    "like terrible – like honey"
+   ],
+   "answer": 2,
+   "why": "(a)는 감각동사+형용사이므로 terrible, (b)는 명사 honey 앞이므로 like honey가 알맞다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것끼리 짝지은 것은?\nA: How was the school festival?\nB: It was great! The food ____ amazing, and the band ____ fantastic.",
+   "choices": [
+    "tasted – heard",
+    "tasted like – sounded",
+    "tasting – sounding",
+    "tasted – sounded",
+    "tastes – sounds"
+   ],
+   "answer": 4,
+   "why": "과거의 일(was)이므로 과거형 tasted, sounded를 쓴다. amazing과 fantastic은 형용사이므로 like는 붙이지 않는다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\n(a) The moonlight looked like a silver river.\n(b) These cookies smell butter.\n(c) I felt so happily at the party.\n(d) The winter wind sounds like a wolf at night.\n(e) This towel feels rough.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "(a), (d), (e)가 옳다. (b)는 명사 butter 앞에 like가 없어서, (c)는 feel 뒤에 부사 happily를 써서 틀렸다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "감각동사와 뒤에 오는 말의 짝이 어법상 <u>틀린</u> 것은?",
+   "choices": [
+    "looked – nervous",
+    "felt – comfortable",
+    "smelled – like garbage",
+    "sounded – happily",
+    "tasted – like strawberries"
+   ],
+   "answer": 4,
+   "why": "감각동사 뒤에는 형용사나 like+명사가 와야 하므로 부사 happily와의 짝은 틀렸다. sounded happy로 써야 한다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 ①~⑤ 중 어법상 <u>틀린</u> 것은?\nYesterday, my family visited a bakery. The bread there ①<u>smelled</u> ②<u>wonderful</u>. I bought a chocolate roll, and it tasted ③<u>like</u> a sweet dream. Mom said the cheesecake ④<u>looked</u> ⑤<u>prettily</u> in the window.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 5,
+   "why": "look 뒤에는 형용사가 와야 하므로 prettily가 아니라 pretty를 써야 한다. ①②는 감각동사+형용사, ③은 like+명사로 옳다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 ①~⑤ 중 어법상 <u>틀린</u> 것은?\nMy cousin got a new puppy. Its fur ①<u>feels</u> ②<u>soft</u>, and it ③<u>looks</u> ④<u>likes</u> a small cloud. Its bark sounds ⑤<u>cute</u>.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 4,
+   "why": "'~처럼 보이다'는 look like이므로 likes가 아니라 like를 써야 한다. 여기서 like는 동사가 아니라서 -s를 붙이지 않는다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n'그의 계획은 완벽하게 들렸지만, 그 결과는 끔찍해 보였다.'",
+   "choices": [
+    "His plan sounded perfectly, but the result looked terrible.",
+    "His plan sounded perfect, but the result looked terribly.",
+    "His plan sounded like perfect, but the result looked terrible.",
+    "His plan sounds perfect, but the result looked terribly.",
+    "His plan sounded perfect, but the result looked terrible."
+   ],
+   "answer": 5,
+   "why": "과거의 일이므로 sounded, looked를 쓰고 두 감각동사 뒤에는 모두 형용사(perfect, terrible)를 쓴다. 부사나 like+형용사는 틀렸다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\nA: Let's try that new restaurant.\nB: Hmm, the food in the picture doesn't ____ very fresh.",
+   "choices": [
+    "looks",
+    "looking",
+    "look",
+    "look like",
+    "looks like"
+   ],
+   "answer": 3,
+   "why": "doesn't 뒤에는 동사원형 look을 쓰고, fresh는 형용사이므로 like를 붙이지 않는다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B)에서 알맞은 것끼리 짝지은 것은?\nThe soup smelled (A)[strange / strangely], and it tasted (B)[like garlic / garlic].",
+   "choices": [
+    "strangely – like garlic",
+    "strange – garlic",
+    "strange – like garlic",
+    "strangely – garlic",
+    "strange – likes garlic"
+   ],
+   "answer": 3,
+   "why": "(A)는 감각동사 뒤이므로 형용사 strange, (B)는 명사 garlic 앞이므로 like garlic이 알맞다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. My feet feel heavy after the long walk.\nㄴ. That rumor sounds like true.\nㄷ. The lake looked like a big mirror in the morning.\nㄹ. This herb tea smells grass.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 feel+형용사, ㄷ은 looked like+명사로 옳다. ㄴ은 형용사 true 앞에 like를 붙여서, ㄹ은 명사 grass 앞에 like가 없어서 틀렸다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 <u>틀린</u> 것을 모두 고른 것은?\nㄱ. Why does your room smell like old cheese?\nㄴ. The children at the camp looked happily.\nㄷ. This spaghetti tastes wonderfully with cheese.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄴ과 ㄷ은 감각동사 뒤에 부사(happily, wonderfully)를 써서 틀렸다. ㄱ은 smell like+명사를 쓴 옳은 의문문이다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe night market ____ exciting, and everything there smelled delicious. (그 야시장은 신나 보였다.)",
+   "choices": [
+    "looked like",
+    "saw",
+    "watched",
+    "was looked",
+    "looked"
+   ],
+   "answer": 5,
+   "why": "exciting은 형용사이므로 like 없이 looked exciting으로 쓴다. see와 watch는 '~해 보이다'라는 뜻의 감각동사가 아니다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 동사의 쓰임이 나머지 넷과 <u>다른</u> 것은?",
+   "choices": [
+    "Suji <u>looked</u> tired after the test.",
+    "The stew <u>smelled</u> spicy.",
+    "Dad <u>tasted</u> the soup with a spoon.",
+    "His voice <u>sounded</u> nervous.",
+    "The blanket <u>felt</u> warm."
+   ],
+   "answer": 3,
+   "why": "③의 tasted는 '~을 맛보다'라는 뜻으로 목적어(the soup)를 가지는 동작동사이다. 나머지는 형용사 보어를 취하는 감각동사이다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n'이 초콜릿에서 커피 맛이 난다.'",
+   "choices": [
+    "This chocolate tastes coffee.",
+    "This chocolate is tasting like coffee.",
+    "This chocolate taste like coffee.",
+    "This chocolate tastes like coffee.",
+    "This chocolate smells like coffee."
+   ],
+   "answer": 4,
+   "why": "'~같은 맛이 나다'는 taste like+명사이고 주어가 3인칭 단수이므로 tastes like coffee가 옳다. ⑤는 '냄새가 난다'는 뜻이 되어 우리말과 다르다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸 (a), (b)에 알맞은 것끼리 짝지은 것은?\nA: You (a)____ worried. What happened?\nB: I lost my phone. And this park (b)____ a maze. I can't find the exit.",
+   "choices": [
+    "look – looks like",
+    "look like – looks",
+    "looks – looks like",
+    "look – looks",
+    "looking – looks like"
+   ],
+   "answer": 1,
+   "why": "(a)는 형용사 worried 앞이므로 look, (b)는 명사 a maze 앞이므로 looks like를 쓴다. 주어 You에는 look, this park에는 looks가 맞다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 수 <u>없는</u> 것은?\nThe old castle looks ____.",
+   "choices": [
+    "old",
+    "like a palace",
+    "beautiful",
+    "lonely",
+    "wonderfully"
+   ],
+   "answer": 5,
+   "why": "look 뒤에는 형용사나 like+명사가 올 수 있으므로 부사 wonderfully만 들어갈 수 없다. lonely는 -ly로 끝나지만 형용사이다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. After the storm, the town looked quiet and peaceful.\nㄴ. This new soap smells like fresh oranges.\nㄷ. The interview sounded easily at first.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 looked+형용사, ㄴ은 smells like+명사로 옳다. ㄷ은 sound 뒤에 부사 easily를 써서 틀렸고 easy로 고쳐야 한다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 <u>틀린</u> 것을 모두 고른 것은?\nㄱ. Why do you look so seriously today?\nㄴ. The pumpkin soup tasted a little salty.\nㄷ. Their new song sounds like a lullaby.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ"
+   ],
+   "answer": 1,
+   "why": "ㄱ은 look 뒤에 부사 seriously를 써서 틀렸고 serious로 고쳐야 한다. ㄴ은 tasted+형용사, ㄷ은 sounds like+명사로 옳다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (a)~(c)에 알맞은 것끼리 짝지은 것은?\nAt the night market, the fried chicken (a)____ amazing, the music (b)____ exciting, and I (c)____ like a movie star with my new sunglasses.\n((a) 굉장한 냄새가 났다 (b) 신나게 들렸다 (c) 영화배우가 된 것처럼 느껴졌다)",
+   "choices": [
+    "tasted – sounded – looked",
+    "smelled – sounded – felt",
+    "smelled – heard – felt",
+    "sounded – smelled – felt",
+    "smelled – sounded – looked"
+   ],
+   "answer": 2,
+   "why": "'냄새가 났다'는 smelled, '들렸다'는 sounded, '느껴졌다'는 felt이다. hear는 이런 쓰임의 감각동사가 아니다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "The tomatoes in the garden look freshly.",
+    "Her violin sounded beautifully in the hall.",
+    "The muffins smelled like burnt toast this morning.",
+    "The river water felt coolly on my feet.",
+    "That story sounds like strange to me."
+   ],
+   "answer": 3,
+   "why": "smelled like+명사(burnt toast)는 옳다. ①②④는 감각동사 뒤에 부사를 썼고, ⑤는 형용사 앞에 like를 붙여서 틀렸다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 <u>틀린</u> 문장을 고르면?",
+   "choices": [
+    "The library looked crowded after school.",
+    "The mint tea tastes cool and fresh.",
+    "My socks smell terrible after soccer.",
+    "The city lights looked like little stars.",
+    "The piano music sounded sadly in the rain."
+   ],
+   "answer": 5,
+   "why": "sound 뒤에는 형용사 sad를 써야 하므로 부사 sadly는 틀렸다. 나머지는 형용사나 like+명사를 써서 옳다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 <u>틀린</u> 것을 고르면?",
+   "choices": [
+    "The bakery <u>smells like</u> butter cookies.",
+    "The winter street <u>looked lonely</u> at midnight.",
+    "Grandma's quilt <u>feels warmly</u> in winter.",
+    "The lemon tart <u>tastes sour</u> but sweet.",
+    "His whisper <u>sounded nervous</u>."
+   ],
+   "answer": 3,
+   "why": "feel 뒤에는 형용사 warm을 써야 한다. lonely는 -ly로 끝나지만 형용사라서 ②는 옳다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n'그 케이크는 무지개처럼 보이지만, 그저 설탕 같은 맛이 난다.'",
+   "choices": [
+    "The cake looks a rainbow, but it just tastes like sugar.",
+    "The cake looks like a rainbow, but it just tastes sugar.",
+    "The cake look like a rainbow, but it just taste like sugar.",
+    "The cake looks like a rainbow, but it just tastes like sugar.",
+    "The cake is look like a rainbow, but it just tastes like sugar."
+   ],
+   "answer": 4,
+   "why": "두 명사(a rainbow, sugar) 앞에 모두 like가 필요하고, 주어가 3인칭 단수이므로 looks, tastes를 쓴다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (a), (b)에 알맞은 것끼리 짝지은 것은?\nThe stew (a)____ salty, so I added water. Now it (b)____ perfect.\n((a) 짠맛이 났다 (b) 완벽한 맛이 난다)",
+   "choices": [
+    "tastes – tasted",
+    "tasted – tastes",
+    "tasted like – tastes",
+    "tasted – tastes like",
+    "tasting – tastes"
+   ],
+   "answer": 2,
+   "why": "(a)는 과거의 일이므로 tasted, (b)는 Now가 있으므로 현재형 tastes를 쓴다. salty와 perfect는 형용사이므로 like는 붙이지 않는다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것끼리 짝지은 것은?\nA: How was the concert last night?\nB: Fantastic! The stage ____ like a starry sky, and the singer's voice ____ sweet.",
+   "choices": [
+    "looks – sounds",
+    "looked – sounded like",
+    "looked – sounded",
+    "looking – sounding",
+    "looked – sounds"
+   ],
+   "answer": 3,
+   "why": "어젯밤의 일이므로 과거형 looked, sounded를 쓴다. sweet은 형용사이므로 like를 붙이지 않는다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\n(a) The garlic bread smells wonderful.\n(b) Suddenly, the sky looked like ink.\n(c) The medicine tasted bitterly, but I drank it.\n(d) Wet sand feels heavily on your shoes.\n(e) That excuse sounds like a lie.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "(a), (b), (e)가 옳다. (c)와 (d)는 감각동사 뒤에 부사(bitterly, heavily)를 써서 틀렸다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "감각동사와 뒤에 오는 말의 짝이 어법상 <u>틀린</u> 것을 고르면?",
+   "choices": [
+    "smelled – smoky",
+    "looked – like a ghost",
+    "sounded – like a flute",
+    "tasted – terribly",
+    "felt – sticky"
+   ],
+   "answer": 4,
+   "why": "감각동사 뒤에는 형용사나 like+명사가 와야 하므로 부사 terribly와의 짝은 틀렸다. tasted terrible로 써야 한다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 ①~⑤ 중 어법상 <u>틀린</u> 것은?\nLast weekend, we went camping. At night, the forest ①<u>sounded</u> ②<u>like</u> a scary movie. But the campfire ③<u>smelled</u> ④<u>sweet</u>, and my sleeping bag felt ⑤<u>warmly</u>.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 5,
+   "why": "feel 뒤에는 형용사 warm을 써야 하므로 warmly가 틀렸다. ①②는 sounded like+명사, ③④는 smelled+형용사로 옳다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 ①~⑤ 중 어법상 <u>틀린</u> 것은?\nMina made spaghetti for the first time. It ①<u>looked</u> ②<u>deliciously</u>, and it ③<u>smelled</u> ④<u>like</u> a real Italian dish. Everyone said it tasted ⑤<u>great</u>.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 2,
+   "why": "look 뒤에는 형용사 delicious를 써야 하므로 부사 deliciously가 틀렸다. ⑤의 great은 형용사라서 옳다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n'그 바다는 유리처럼 보였고, 바람은 부드럽게 느껴졌다.'",
+   "choices": [
+    "The sea looked glass, and the wind felt soft.",
+    "The sea looked like glass, and the wind felt softly.",
+    "The sea looked like glass, and the wind felt like soft.",
+    "The sea look like glass, and the wind felts soft.",
+    "The sea looked like glass, and the wind felt soft."
+   ],
+   "answer": 5,
+   "why": "명사 glass 앞에는 like를 쓰고, 형용사 soft 앞에는 like를 쓰지 않는다. 과거형 looked, felt를 쓴 ⑤가 옳다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것끼리 짝지은 것은?\nA: Why don't you buy this jacket?\nB: Well, it looks ____, but it doesn't feel ____. (좋아 보이지만 편하게 느껴지지 않아.)",
+   "choices": [
+    "well – comfortable",
+    "good – comfortably",
+    "good – comfortable",
+    "well – comfortably",
+    "like good – comfortable"
+   ],
+   "answer": 3,
+   "why": "look과 feel 뒤에는 형용사 good, comfortable을 쓴다. well과 comfortably는 부사라서 쓸 수 없다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B)에서 알맞은 것끼리 짝지은 것은?\nThe herb garden smelled (A)[fresh / freshly] in the rain, and the raindrops sounded (B)[like music / music].",
+   "choices": [
+    "freshly – like music",
+    "fresh – like music",
+    "fresh – music",
+    "freshly – music",
+    "fresh – likes music"
+   ],
+   "answer": 2,
+   "why": "(A)는 감각동사 뒤이므로 형용사 fresh, (B)는 명사 music 앞이므로 like music이 알맞다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. Does this perfume smell too strong?\nㄴ. The magic show looked like real to us.\nㄷ. My voice sounds funny in this video.\nㄹ. These noodles taste like chicken soup.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄴ, ㄷ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "ㄱ은 의문문에서 동사원형 smell+형용사, ㄷ은 sounds+형용사, ㄹ은 taste like+명사로 옳다. ㄴ은 형용사 real 앞에 like를 붙여서 틀렸다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 <u>틀린</u> 것을 모두 고른 것은?\nㄱ. The pool water felt like ice this morning.\nㄴ. Grandma's stories always sound excitingly.\nㄷ. The onion rings smelled deliciously at the fair.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄴ과 ㄷ은 감각동사 뒤에 부사(excitingly, deliciously)를 써서 틀렸다. ㄱ은 felt like+명사로 옳다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nAfter the rain, the playground ____ empty and quiet. (텅 비고 조용해 보였다.)",
+   "choices": [
+    "looked like",
+    "looked",
+    "saw",
+    "was looked",
+    "watched"
+   ],
+   "answer": 2,
+   "why": "empty와 quiet은 형용사이므로 like 없이 looked를 쓴다. see와 watch는 '~해 보이다'라는 뜻이 아니다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 smelled의 쓰임이 나머지 넷과 <u>다른</u> 것은?",
+   "choices": [
+    "Jenny <u>smelled</u> the roses in the vase.",
+    "The roses <u>smelled</u> sweet.",
+    "The kitchen <u>smelled</u> like curry.",
+    "The candle <u>smelled</u> nice.",
+    "The old book <u>smelled</u> strange."
+   ],
+   "answer": 1,
+   "why": "①의 smelled는 '~의 냄새를 맡았다'라는 뜻으로 목적어를 가지는 동작동사이다. 나머지는 형용사나 like+명사를 보어로 취하는 감각동사이다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n'이 베개는 딱딱하게 느껴지지 않는다.'",
+   "choices": [
+    "This pillow doesn't feels hard.",
+    "This pillow doesn't feel hard.",
+    "This pillow feels not hard.",
+    "This pillow doesn't feel hardly.",
+    "This pillow isn't feel hard."
+   ],
+   "answer": 2,
+   "why": "일반동사 부정문은 doesn't+동사원형이므로 doesn't feel hard가 옳다. hard가 형용사이고 hardly는 '거의 ~않다'라는 부사이다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸 (a), (b)에 알맞은 것끼리 짝지은 것은?\nA: This soup (a)____ amazing! Did you make it?\nB: Yes, but be careful. It (b)____ like fire. It's really hot!",
+   "choices": [
+    "smell – taste",
+    "smells like – tastes",
+    "smells – taste",
+    "smells – tastes",
+    "smelling – tastes"
+   ],
+   "answer": 4,
+   "why": "(a)는 형용사 amazing 앞이므로 smells만 쓰고, (b)는 명사 fire 앞에 이미 like가 있으므로 tastes를 쓴다. 주어가 모두 3인칭 단수이다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 수 <u>없는</u> 것은?\nThe apple pie smells ____.",
+   "choices": [
+    "sweet",
+    "like autumn",
+    "delicious",
+    "like Grandma's kitchen",
+    "freshly"
+   ],
+   "answer": 5,
+   "why": "smell 뒤에는 형용사나 like+명사가 올 수 있으므로 부사 freshly만 들어갈 수 없다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말에 맞게 주어진 말을 모두 한 번씩 사용하여 영작하시오.\n'그 수프는 마늘 같은 냄새가 났다.'\n(the soup / smelled / garlic / like)",
+   "answer": "The soup smelled like garlic.",
+   "alt": [
+    "The soup smelled like garlic"
+   ],
+   "why": "명사 garlic 앞에 like를 놓아 smelled like garlic(마늘 같은 냄새가 났다)으로 배열한다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "어법상 틀린 부분을 바르게 고쳐 문장 전체를 다시 쓰시오.\nThe singers on the stage looked nervously.",
+   "answer": "The singers on the stage looked nervous.",
+   "alt": [
+    "The singers on the stage looked nervous"
+   ],
+   "why": "look 뒤에는 형용사가 와야 하므로 nervously를 nervous로 고친다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "어법상 틀린 부분을 바르게 고쳐 문장 전체를 다시 쓰시오.\nThe rainy streets looked sadly last night.",
+   "answer": "The rainy streets looked sad last night.",
+   "alt": [
+    "The rainy streets looked sad last night"
+   ],
+   "why": "감각동사 look 뒤에는 형용사 sad를 써야 한다. sadly는 부사이다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nThe garden smells (wonder) in spring.",
+   "answer": "wonderful",
+   "alt": [],
+   "why": "smell 뒤에는 형용사가 와야 하므로 명사 wonder를 형용사 wonderful로 바꾼다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nThis old chair still feels (comfort).",
+   "answer": "comfortable",
+   "alt": [],
+   "why": "feel 뒤에는 형용사가 와야 하므로 명사 comfort를 형용사 comfortable로 바꾼다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 공통으로 알맞은 한 단어를 쓰시오.\nThis ice cream tastes ____ mint, and it smells ____ mint, too.",
+   "answer": "like",
+   "alt": [],
+   "why": "두 빈칸 모두 뒤에 명사 mint가 오므로 '~같은'이라는 뜻의 like가 공통으로 들어간다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 부정문으로 바꿔 쓰시오.\nThis math problem looks easy.",
+   "answer": "This math problem doesn't look easy.",
+   "alt": [
+    "This math problem does not look easy.",
+    "This math problem doesn't look easy",
+    "This math problem does not look easy"
+   ],
+   "why": "일반동사 looks의 부정문은 doesn't+동사원형이므로 doesn't look easy로 쓴다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 의문문으로 바꿔 쓰시오.\nYour brother looks like a famous actor.",
+   "answer": "Does your brother look like a famous actor?",
+   "alt": [
+    "Does your brother look like a famous actor"
+   ],
+   "why": "일반동사 looks의 의문문은 Does+주어+동사원형이므로 Does your brother look like ~?가 된다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "주어진 말을 모두 한 번씩 배열하여 문장을 완성하시오. (The ocean으로 시작할 것)\n(at night / sounded / the ocean / like thunder)",
+   "answer": "The ocean sounded like thunder at night.",
+   "alt": [
+    "The ocean sounded like thunder at night"
+   ],
+   "why": "주어 The ocean 뒤에 sounded like+명사(thunder)를 놓고 시간 표현 at night을 문장 끝에 둔다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "어법상 틀린 부분 <u>두 군데</u>를 고쳐 문장 전체를 다시 쓰시오.\nThe lemonade tasted sourly, but it smelled sweetly.",
+   "answer": "The lemonade tasted sour, but it smelled sweet.",
+   "alt": [
+    "The lemonade tasted sour, but it smelled sweet"
+   ],
+   "why": "taste와 smell은 감각동사이므로 부사 sourly, sweetly를 형용사 sour, sweet으로 고친다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말에 맞게 주어진 말을 모두 한 번씩 사용하여 영작하시오.\n'그 도서관은 박물관처럼 보인다.'\n(looks / the library / a museum / like)",
+   "answer": "The library looks like a museum.",
+   "alt": [
+    "The library looks like a museum"
+   ],
+   "why": "명사 a museum 앞에 like를 놓아 looks like a museum(박물관처럼 보인다)으로 배열한다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "어법상 틀린 부분을 바르게 고쳐 문장 전체를 다시 쓰시오.\nThe chocolate milk tasted strangely after lunch.",
+   "answer": "The chocolate milk tasted strange after lunch.",
+   "alt": [
+    "The chocolate milk tasted strange after lunch"
+   ],
+   "why": "taste 뒤에는 형용사가 와야 하므로 strangely를 strange로 고친다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "어법상 틀린 부분을 바르게 고쳐 문장 전체를 다시 쓰시오.\nHis drum sounds too loudly at night.",
+   "answer": "His drum sounds too loud at night.",
+   "alt": [
+    "His drum sounds too loud at night"
+   ],
+   "why": "sound 뒤에는 형용사가 와야 하므로 loudly를 loud로 고친다. too는 형용사 loud를 꾸밀 수 있다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nHer smile looks (love).",
+   "answer": "lovely",
+   "alt": [],
+   "why": "look 뒤에는 형용사가 와야 하므로 명사 love를 형용사 lovely로 바꾼다. lovely는 -ly로 끝나지만 형용사이다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nGrandpa looks (health) these days.",
+   "answer": "healthy",
+   "alt": [],
+   "why": "look 뒤에는 형용사가 와야 하므로 명사 health를 형용사 healthy로 바꾼다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 공통으로 알맞은 한 단어를 쓰시오.\nThe night wind sounds ____ a whistle, and my cheeks feel ____ ice.",
+   "answer": "like",
+   "alt": [],
+   "why": "두 빈칸 모두 뒤에 명사(a whistle, ice)가 오므로 '~처럼'이라는 뜻의 like가 공통으로 들어간다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 부정문으로 바꿔 쓰시오.\nThe perfume smells strong.",
+   "answer": "The perfume doesn't smell strong.",
+   "alt": [
+    "The perfume does not smell strong.",
+    "The perfume doesn't smell strong",
+    "The perfume does not smell strong"
+   ],
+   "why": "일반동사 smells의 부정문은 doesn't+동사원형이므로 doesn't smell strong으로 쓴다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 의문문으로 바꿔 쓰시오.\nThis mushroom soup tastes like cream.",
+   "answer": "Does this mushroom soup taste like cream?",
+   "alt": [
+    "Does this mushroom soup taste like cream"
+   ],
+   "why": "일반동사 tastes의 의문문은 Does+주어+동사원형이므로 Does this mushroom soup taste like cream?이 된다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "주어진 말을 모두 한 번씩 배열하여 문장을 완성하시오. (The big rock으로 시작하고, in the dark는 문장 끝에 둘 것)\n(a bear / like / in the dark / looked / the big rock)",
+   "answer": "The big rock looked like a bear in the dark.",
+   "alt": [
+    "The big rock looked like a bear in the dark"
+   ],
+   "why": "주어 The big rock 뒤에 looked like+명사(a bear)를 놓고 in the dark를 문장 끝에 둔다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "어법상 틀린 부분 <u>두 군데</u>를 고쳐 문장 전체를 다시 쓰시오.\nThe box looked heavily, but it felt lightly.",
+   "answer": "The box looked heavy, but it felt light.",
+   "alt": [
+    "The box looked heavy, but it felt light"
+   ],
+   "why": "look과 feel은 감각동사이므로 부사 heavily, lightly를 형용사 heavy, light로 고친다.",
+   "no": 200
+  }
+ ]
+}
