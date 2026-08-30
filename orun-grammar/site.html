@@ -298,8 +298,8 @@ function examView(){
     '<div class="frow"><label>난이도</label>'+LVS.map(l=>'<button class="chip '+(EX.levels.has(l)?'on':'')+
       '" onclick="EX.levels.has(\''+l+'\')?EX.levels.delete(\''+l+'\'):EX.levels.add(\''+l+'\');render()">'+l+'</button>').join('')+
       '<span class="hint">선택 범위 보유: 객관식 '+pc.mc+' · 주관식 '+pc.sh+'문제</span></div>'+
-    '<div class="frow"><label>객관식</label><input type="number" min="0" max="70" value="'+EX.nMc+'" onchange="EX.nMc=+this.value||0;render()"> 문항'+
-      '<label style="margin-left:16px">주관식</label><input type="number" min="0" max="50" value="'+EX.nShort+'" onchange="EX.nShort=+this.value||0;render()"> 문항</div>'+
+    '<div class="frow"><label>객관식</label><input type="number" min="0" max="140" value="'+EX.nMc+'" onchange="EX.nMc=+this.value||0;render()"> 문항'+
+      '<label style="margin-left:16px">주관식</label><input type="number" min="0" max="60" value="'+EX.nShort+'" onchange="EX.nShort=+this.value||0;render()"> 문항</div>'+
     '<div class="frow"><label>시험 제목</label><input type="text" size="34" placeholder="예: 2학기 중간 대비 문법 TEST" value="'+esc(EX.title)+'" onchange="EX.title=this.value"></div></div>'+
   '<div class="panel"><h3>3. 출력·배포</h3>'+
     '<div class="frow"><button class="btn" '+(ready?'':'disabled')+' onclick="printExam(false)">문제지 인쇄</button>'+
