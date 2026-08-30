@@ -1,0 +1,1329 @@
+{
+ "id": "m1-08",
+ "grade": "중1",
+ "name": "There is/are",
+ "points": [
+  "뒤 명사에 수일치",
+  "부정문·의문문",
+  "과거형 There was/were"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThere ____ a cat under the table.",
+   "choices": [
+    "am",
+    "is",
+    "are",
+    "be",
+    "do"
+   ],
+   "answer": 2,
+   "why": "a cat은 단수이므로 There is를 쓴다. are는 복수 명사 앞에 쓴다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThere ____ two books on the desk.",
+   "choices": [
+    "is",
+    "are",
+    "am",
+    "be",
+    "does"
+   ],
+   "answer": 2,
+   "why": "two books는 복수이므로 There are를 쓴다. is는 단수 명사에 쓴다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThere ____ some milk in the glass.",
+   "choices": [
+    "are",
+    "is",
+    "am",
+    "be",
+    "do"
+   ],
+   "answer": 2,
+   "why": "milk는 셀 수 없는 명사이므로 단수 취급하여 is를 쓴다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThere ____ many students in the classroom.",
+   "choices": [
+    "is",
+    "are",
+    "am",
+    "was",
+    "be"
+   ],
+   "answer": 2,
+   "why": "many students는 복수이므로 are를 쓴다. was는 단수·과거라서 맞지 않는다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\n____ there a bank near here?",
+   "choices": [
+    "Is",
+    "Are",
+    "Am",
+    "Do",
+    "Does"
+   ],
+   "answer": 1,
+   "why": "There is의 의문문은 Is there ~?이다. a bank가 단수이므로 Is를 쓴다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\n____ there any apples in the basket?",
+   "choices": [
+    "Is",
+    "Are",
+    "Am",
+    "Do",
+    "Was"
+   ],
+   "answer": 2,
+   "why": "apples가 복수이므로 Are there ~?로 묻는다. Was는 단수·과거형이다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThere ____ a dog in the park yesterday.",
+   "choices": [
+    "is",
+    "are",
+    "was",
+    "were",
+    "am"
+   ],
+   "answer": 3,
+   "why": "yesterday가 있으므로 과거형을 쓰고, a dog이 단수이므로 was가 알맞다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThere ____ three birds in the tree last Sunday.",
+   "choices": [
+    "is",
+    "are",
+    "was",
+    "were",
+    "be"
+   ],
+   "answer": 4,
+   "why": "last Sunday는 과거이고 three birds는 복수이므로 were를 쓴다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThere ____ a pencil in my bag. (내 가방에는 연필이 없다.)",
+   "choices": [
+    "isn't",
+    "aren't",
+    "don't",
+    "doesn't",
+    "not"
+   ],
+   "answer": 1,
+   "why": "'없다'는 뜻의 부정문이고 a pencil이 단수이므로 There isn't를 쓴다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThere ____ any chairs in the room.",
+   "choices": [
+    "isn't",
+    "aren't",
+    "don't",
+    "not",
+    "doesn't"
+   ],
+   "answer": 2,
+   "why": "any가 쓰인 부정문이고 chairs가 복수이므로 aren't가 알맞다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThere is ____ orange juice in the bottle.",
+   "choices": [
+    "some",
+    "any",
+    "many",
+    "a",
+    "two"
+   ],
+   "answer": 1,
+   "why": "긍정문에는 some을 쓴다. any는 부정문·의문문에 쓰고, juice는 셀 수 없어 a나 two를 쓸 수 없다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThere aren't ____ books on the shelf.",
+   "choices": [
+    "any",
+    "some",
+    "a",
+    "an",
+    "much"
+   ],
+   "answer": 1,
+   "why": "부정문에서는 any를 쓴다. some은 주로 긍정문에 쓴다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "There are a banana on the plate.",
+    "There is many children in the park.",
+    "There are some flowers in the vase.",
+    "There is two windows in the room.",
+    "There are a lot of juice in the glass."
+   ],
+   "answer": 3,
+   "why": "some flowers는 복수이므로 There are가 맞다. 나머지는 뒤의 명사와 be동사의 수가 맞지 않는다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은?",
+   "choices": [
+    "There is a clock on the wall.",
+    "There are four cups on the table.",
+    "There is some bread in the bag.",
+    "There are a big dog in the yard.",
+    "There is an umbrella by the door."
+   ],
+   "answer": 4,
+   "why": "a big dog은 단수이므로 There is를 써야 한다. 나머지는 뒤 명사와 수가 일치한다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 틀린 것은?",
+   "choices": [
+    "There <u>is</u> a spoon on the table.",
+    "There <u>are</u> three pencils in the cup.",
+    "There <u>is</u> some rice in the bowl.",
+    "There <u>are</u> a new bike at the door.",
+    "There <u>is</u> a picture on the wall."
+   ],
+   "answer": 4,
+   "why": "a new bike는 단수이므로 are가 아니라 is를 써야 한다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Is there a library in your town?\nB: Yes, there ____.",
+   "choices": [
+    "is",
+    "are",
+    "isn't",
+    "do",
+    "does"
+   ],
+   "answer": 1,
+   "why": "Is there ~?로 물으면 Yes, there is.로 답한다. Yes 뒤에 부정형 isn't는 올 수 없다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Are there any eggs in the fridge?\nB: No, there ____.",
+   "choices": [
+    "aren't",
+    "isn't",
+    "are",
+    "don't",
+    "not"
+   ],
+   "answer": 1,
+   "why": "Are there ~?로 물었으므로 No, there aren't.로 답한다. eggs가 복수이므로 isn't는 쓸 수 없다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThere ____ a lot of snow last winter.",
+   "choices": [
+    "is",
+    "are",
+    "was",
+    "were",
+    "be"
+   ],
+   "answer": 3,
+   "why": "last winter는 과거이고 snow는 셀 수 없는 명사라 단수 취급하므로 was를 쓴다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThere ____ many people at the concert last night.",
+   "choices": [
+    "is",
+    "are",
+    "was",
+    "were",
+    "am"
+   ],
+   "answer": 4,
+   "why": "last night은 과거이고 many people은 복수이므로 were가 알맞다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 순서대로 바르게 짝지어진 것은?\n· There ____ a boy in the gym.\n· There ____ many girls in the gym.",
+   "choices": [
+    "is - is",
+    "is - are",
+    "are - is",
+    "are - are",
+    "am - is"
+   ],
+   "answer": 2,
+   "why": "a boy는 단수라 is, many girls는 복수라 are를 쓴다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n탁자 위에 사과가 하나 있다.",
+   "choices": [
+    "There are an apple on the table.",
+    "There is a apple on the table.",
+    "It is an apple on the table.",
+    "There is an apple on the table.",
+    "There am an apple on the table."
+   ],
+   "answer": 4,
+   "why": "'~이 있다'는 There is ~로 쓰고, apple은 모음으로 시작하므로 an을 붙인다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n공원에 나무들이 많이 있다.",
+   "choices": [
+    "There is many trees in the park.",
+    "There are many trees in the park.",
+    "There are many tree in the park.",
+    "There is much trees in the park.",
+    "There are a many trees in the park."
+   ],
+   "answer": 2,
+   "why": "many trees는 복수이므로 There are를 쓴다. many 뒤에는 복수 명사가 온다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장을 부정문으로 바르게 바꾼 것은?\nThere is a computer in the room.",
+   "choices": [
+    "There not is a computer in the room.",
+    "There is doesn't a computer in the room.",
+    "There isn't a computer in the room.",
+    "There aren't a computer in the room.",
+    "There doesn't a computer in the room."
+   ],
+   "answer": 3,
+   "why": "There is의 부정문은 be동사 뒤에 not을 붙인 There is not(= isn't) ~이다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장을 의문문으로 바르게 바꾼 것은?\nThere is a park near your house.",
+   "choices": [
+    "Is there a park near your house?",
+    "Are there a park near your house?",
+    "Does there a park near your house?",
+    "There is a park near your house?",
+    "Is a park there near your house?"
+   ],
+   "answer": 1,
+   "why": "There is의 의문문은 be동사를 앞으로 보낸 Is there ~?이다. do/does는 쓰지 않는다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 be동사를 쓰시오.\nThere ____ a bird on the roof now.",
+   "answer": "is",
+   "why": "a bird는 단수이고 now(지금)이므로 현재형 is를 쓴다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 be동사의 현재형을 쓰시오.\nThere ____ five fish in the tank.",
+   "answer": "are",
+   "why": "five fish는 복수이므로 현재형 are를 쓴다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.\nThere <u>is</u> many flowers in the garden.",
+   "answer": "are",
+   "why": "many flowers는 복수이므로 is를 are로 고친다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.\nThere <u>are</u> some water in the bottle.",
+   "answer": "is",
+   "why": "water는 셀 수 없는 명사라 단수 취급하므로 is를 쓴다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 be동사를 쓰시오.\nThere ____ a big tree here ten years ago.",
+   "answer": "was",
+   "why": "ten years ago는 과거이고 a big tree는 단수이므로 was를 쓴다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 be동사를 쓰시오.\nThere ____ many cars on the road last night.",
+   "answer": "were",
+   "why": "last night은 과거이고 many cars는 복수이므로 were를 쓴다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말에 맞게 빈칸에 알맞은 말을 축약형으로 쓰시오.\n탁자 위에 컵이 없다. → There ____ a cup on the table.",
+   "answer": "isn't",
+   "why": "'없다'는 부정문이고 a cup이 단수이므로 is not의 축약형 isn't를 쓴다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 의문문으로 바꿔 쓰시오.\nThere are many parks in Seoul.",
+   "answer": "Are there many parks in Seoul?",
+   "alt": [
+    "Are there many parks in Seoul"
+   ],
+   "why": "There are의 의문문은 be동사를 there 앞으로 보낸 Are there ~?이다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nThere isn't ____ juice in the cup.",
+   "answer": "any",
+   "why": "부정문에서는 some 대신 any를 쓴다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "대화의 빈칸에 알맞은 말을 한 단어로 쓰시오.\nA: Is there a museum in this city?\nB: Yes, there ____.",
+   "answer": "is",
+   "why": "Is there ~?로 물으면 Yes, there is.로 답한다.",
+   "no": 34
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 문장의 빈칸에 공통으로 들어갈 말은?\n· There ____ some bread on the plate.\n· There ____ a new student in our class.\n",
+   "choices": [
+    "is",
+    "are",
+    "am",
+    "be",
+    "aren't"
+   ],
+   "answer": 1,
+   "why": "bread는 셀 수 없는 명사라 단수 취급하고 a new student도 단수이므로 둘 다 is가 들어간다.",
+   "no": 35
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 문장의 빈칸에 공통으로 들어갈 말은?\n· ____ there any water in the pool?\n· ____ there a problem with your phone?\n",
+   "choices": [
+    "Is",
+    "Are",
+    "Am",
+    "Do",
+    "Does"
+   ],
+   "answer": 1,
+   "why": "water는 셀 수 없는 명사, a problem은 단수이므로 둘 다 Is there ~?로 묻는다.",
+   "no": 36
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 옳은 문장은?",
+   "choices": [
+    "There was many cars on the street.",
+    "There is some money in my pocket.",
+    "Are there a hospital near here?",
+    "There were a loud noise last night.",
+    "There isn't no problem."
+   ],
+   "answer": 2,
+   "why": "money는 셀 수 없는 명사라 There is가 맞다. ①은 were, ③은 Is, ④는 was를 써야 하고 ⑤는 not과 no를 겹쳐 쓸 수 없다.",
+   "no": 37
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 틀린 문장은?",
+   "choices": [
+    "There was a rainbow after the rain.",
+    "There are two holidays this month.",
+    "There wasn't any juice left.",
+    "There were a lot of people at the festival.",
+    "There was some birds on the wire."
+   ],
+   "answer": 5,
+   "why": "some birds는 복수이므로 There were를 써야 한다. 나머지는 뒤 명사와 수·시제가 일치한다.",
+   "no": 38
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 어색한 것은?",
+   "choices": [
+    "There <u>is</u> a lot of sugar in this cake.",
+    "There <u>were</u> many tourists in Busan last summer.",
+    "There <u>are</u> some coins in the drawer.",
+    "There <u>was</u> three cats under the bench.",
+    "There <u>isn't</u> any time to waste."
+   ],
+   "answer": 4,
+   "why": "three cats는 복수이므로 과거형도 were를 써야 한다. sugar와 time은 셀 수 없어 단수 취급한다.",
+   "no": 39
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: ____ there many people at the party yesterday?\nB: Yes, there were.",
+   "choices": [
+    "Are",
+    "Were",
+    "Was",
+    "Is",
+    "Did"
+   ],
+   "answer": 2,
+   "why": "yesterday와 대답 were로 보아 과거이고, many people이 복수이므로 Were를 쓴다.",
+   "no": 40
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: What's in the box?\nB: There ____ some balls and a ribbon in it.",
+   "choices": [
+    "is",
+    "are",
+    "was",
+    "were",
+    "am"
+   ],
+   "answer": 2,
+   "why": "현재를 묻는 대화이고, be동사 바로 뒤의 명사 some balls가 복수이므로 are를 쓴다.",
+   "no": 41
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThere ____ a pencil and two erasers in the pencil case.",
+   "choices": [
+    "is",
+    "are",
+    "am",
+    "be",
+    "aren't"
+   ],
+   "answer": 1,
+   "why": "There is/are는 바로 뒤의 명사에 수를 일치시키므로 단수인 a pencil에 맞춰 is를 쓴다.",
+   "no": 42
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n냉장고에 우유가 하나도 없다.",
+   "choices": [
+    "There isn't any milk in the fridge.",
+    "There isn't some milk in the fridge.",
+    "There aren't any milk in the fridge.",
+    "There isn't any milks in the fridge.",
+    "There not is any milk in the fridge."
+   ],
+   "answer": 1,
+   "why": "부정문에는 any를 쓰고, milk는 셀 수 없는 명사라 단수 취급하여 isn't를 쓴다.",
+   "no": 43
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n어젯밤 하늘에 별이 많이 있었다.",
+   "choices": [
+    "There was many stars in the sky last night.",
+    "There were many stars in the sky last night.",
+    "There are many stars in the sky last night.",
+    "There were many star in the sky last night.",
+    "There were much stars in the sky last night."
+   ],
+   "answer": 2,
+   "why": "과거이고 many stars가 복수이므로 There were를 쓴다. many 뒤에는 복수형 stars가 와야 한다.",
+   "no": 44
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장을 의문문으로 바르게 바꾼 것은?\nThere was a fire near the school last night.",
+   "choices": [
+    "Was there a fire near the school last night?",
+    "Were there a fire near the school last night?",
+    "Did there a fire near the school last night?",
+    "Was a fire there near the school last night?",
+    "Is there a fire near the school last night?"
+   ],
+   "answer": 1,
+   "why": "과거 문장이므로 Was를 there 앞으로 보낸 Was there ~?가 된다. do/does/did는 쓰지 않는다.",
+   "no": 45
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 가장 알맞은 것은?\nA: Are there any questions?\nB: ____",
+   "choices": [
+    "No, there aren't.",
+    "No, there isn't.",
+    "No, they aren't.",
+    "No, there don't.",
+    "Yes, there is."
+   ],
+   "answer": 1,
+   "why": "Are there ~?에 대한 부정 대답은 No, there aren't.이다. 주어를 they로 바꾸거나 don't를 쓰지 않는다.",
+   "no": 46
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\n____ are there in a week?",
+   "choices": [
+    "How many day",
+    "How many days",
+    "How much days",
+    "How days",
+    "How much day"
+   ],
+   "answer": 2,
+   "why": "개수를 물을 때는 How many + 복수 명사를 쓴다. much는 셀 수 없는 명사에 쓴다.",
+   "no": 47
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThere ____ a lot of homework to do today.",
+   "choices": [
+    "are",
+    "is",
+    "am",
+    "be",
+    "aren't"
+   ],
+   "answer": 2,
+   "why": "homework는 셀 수 없는 명사이므로 단수 취급하여 is를 쓴다.",
+   "no": 48
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nLook! There ____ someone at the door.",
+   "choices": [
+    "is",
+    "are",
+    "was",
+    "were",
+    "am"
+   ],
+   "answer": 1,
+   "why": "Look!은 지금 일어나는 일이므로 현재형을 쓰고, someone은 단수 취급하므로 is가 알맞다.",
+   "no": 49
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 순서대로 바르게 짝지어진 것은?\n(a) There ____ a lot of rain last summer.\n(b) There ____ a lot of accidents on this road last winter.",
+   "choices": [
+    "was - was",
+    "was - were",
+    "were - was",
+    "were - were",
+    "is - are"
+   ],
+   "answer": 2,
+   "why": "rain은 셀 수 없어 was, accidents는 복수라 were를 쓴다. 둘 다 과거 표현이 있어 현재형은 안 된다.",
+   "no": 50
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 올바른 문장은?",
+   "choices": [
+    "There were a big earthquake in 2017.",
+    "There was some oranges in the box.",
+    "There were two letters for you this morning.",
+    "Was there many people on the subway?",
+    "There weren't no clouds yesterday."
+   ],
+   "answer": 3,
+   "why": "two letters는 복수이므로 were가 맞다. ①은 was, ②는 were, ④는 Were를 써야 하고 ⑤는 부정어를 겹쳐 쓸 수 없다.",
+   "no": 51
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Excuse me. ____ near here?\nB: Yes, there's one on Main Street.",
+   "choices": [
+    "Is there a bus stop",
+    "Are there a bus stop",
+    "Does there a bus stop",
+    "There is a bus stop",
+    "Was there a bus stop"
+   ],
+   "answer": 1,
+   "why": "a bus stop이 단수이므로 Is there ~?로 묻는다. 대답이 현재(there's)이므로 과거 Was도 맞지 않는다.",
+   "no": 52
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThere ____ any tall buildings in this town 20 years ago.",
+   "choices": [
+    "weren't",
+    "wasn't",
+    "aren't",
+    "isn't",
+    "don't"
+   ],
+   "answer": 1,
+   "why": "20 years ago는 과거이고 tall buildings는 복수이므로 were not의 축약형 weren't를 쓴다.",
+   "no": 53
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThere ____ enough chairs for everyone, so some students stood.",
+   "choices": [
+    "weren't",
+    "wasn't",
+    "aren't",
+    "was",
+    "is"
+   ],
+   "answer": 1,
+   "why": "뒤의 stood(과거)로 보아 과거 시제이고 chairs가 복수이므로 weren't가 알맞다.",
+   "no": 54
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 옳은 것은?",
+   "choices": [
+    "There <u>are</u> some butter in the bowl.",
+    "There <u>is</u> five stars on the flag.",
+    "There <u>were</u> a big party last Friday.",
+    "There <u>are</u> a few cookies left.",
+    "There <u>was</u> many actors in the movie."
+   ],
+   "answer": 4,
+   "why": "a few cookies는 복수이므로 are가 맞다. butter는 is, five stars는 are, a big party는 was, many actors는 were를 써야 한다.",
+   "no": 55
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "괄호 안의 단어를 바르게 배열하여 평서문을 만든 것은?\n(are / there / many / books) in the library.",
+   "choices": [
+    "There are many books in the library.",
+    "There many are books in the library.",
+    "Are there many books in the library.",
+    "There are books many in the library.",
+    "Many books there are in the library."
+   ],
+   "answer": 1,
+   "why": "평서문은 There + be동사 + 명사 순서로 쓴다. Are there ~는 의문문 어순이다.",
+   "no": 56
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThere isn't any money in my wallet. = There is ____ money in my wallet.",
+   "choices": [
+    "no",
+    "not",
+    "some",
+    "any",
+    "a"
+   ],
+   "answer": 1,
+   "why": "not any는 no로 바꿔 쓸 수 있다. There is no + 명사는 '~이 전혀 없다'는 뜻이다.",
+   "no": 57
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오.\nThere ____ (be) a lot of people in the mall yesterday.",
+   "answer": "were",
+   "why": "yesterday는 과거이고 a lot of people은 복수이므로 were를 쓴다.",
+   "no": 58
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 빈칸에 쓰시오.\nThere ____ (be) some cheese on the bread now.",
+   "answer": "is",
+   "why": "cheese는 셀 수 없는 명사라 단수 취급하고 now이므로 현재형 is를 쓴다.",
+   "no": 59
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThere <u>are</u> a library and two schools in my town.",
+   "answer": "is",
+   "why": "There be는 바로 뒤의 명사에 일치시키므로 단수인 a library에 맞춰 is를 쓴다.",
+   "no": 60
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThere <u>was</u> many children in the pool last weekend.",
+   "answer": "were",
+   "why": "many children은 복수이므로 과거형 were를 써야 한다.",
+   "no": 61
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 any를 사용한 부정문으로 바꿔 쓰시오.\nThere are some pictures on the wall.",
+   "answer": "There aren't any pictures on the wall.",
+   "alt": [
+    "There are not any pictures on the wall.",
+    "There aren't any pictures on the wall",
+    "There are not any pictures on the wall"
+   ],
+   "why": "부정문에서는 some을 any로 바꾸고 are 뒤에 not을 붙인다.",
+   "no": 62
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 의문문으로 바꿔 쓰시오.\nThere was a soccer game yesterday.",
+   "answer": "Was there a soccer game yesterday?",
+   "alt": [
+    "Was there a soccer game yesterday"
+   ],
+   "why": "과거 문장의 의문문은 Was를 there 앞으로 보낸 Was there ~?이다.",
+   "no": 63
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "대화의 빈칸에 알맞은 말을 한 단어로 쓰시오.\nA: Were there many fans at the stadium?\nB: Yes, there ____.",
+   "answer": "were",
+   "why": "Were there ~?로 물었으므로 Yes, there were.로 답한다.",
+   "no": 64
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장의 빈칸에 공통으로 들어갈 be동사를 현재형으로 쓰시오.\n· There ____ some sugar in the tea.\n· There ____ an old clock on the wall.",
+   "answer": "is",
+   "why": "sugar는 셀 수 없는 명사, an old clock은 단수이므로 둘 다 is가 들어간다.",
+   "no": 65
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 be동사를 쓰시오.\nHow many seasons ____ there in a year?",
+   "answer": "are",
+   "why": "seasons가 복수이므로 How many ~ are there?로 묻는다.",
+   "no": 66
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 말을 쓰시오.\nThere is no salt in the soup. = There ____ any salt in the soup.",
+   "answer": "isn't",
+   "alt": [
+    "is not"
+   ],
+   "why": "no + 명사는 not any + 명사로 바꿔 쓸 수 있으므로 isn't(= is not)를 쓴다.",
+   "no": 67
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. There was heavy rain during the night.\nㄴ. There are a lot of salt in this soup.\nㄷ. Were there any problems with the computer?",
+   "choices": [
+    "ㄱ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "rain은 셀 수 없어 was가 맞고(ㄱ), problems는 복수라 Were there가 맞다(ㄷ). ㄴ은 salt가 셀 수 없는 명사이므로 is를 써야 한다.",
+   "no": 68
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 틀린 것을 모두 고른 것은?\nㄱ. There isn't any bread left.\nㄴ. Is there many people in line?\nㄷ. There was two concerts last month.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 5,
+   "why": "ㄴ은 many people이 복수라 Are there, ㄷ은 two concerts가 복수라 were를 써야 한다. ㄱ은 bread가 셀 수 없는 명사라 isn't가 맞다.",
+   "no": 69
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\n(a) There is a lot of stars in the sky tonight.\n(b) There weren't any clouds yesterday morning.\n(c) Are there a post office near here?\n(d) There were a strange sound outside.\n(e) Is there anything in your pocket?",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "(b)와 (e)만 옳다. (a)는 stars가 복수라 are, (c)는 a post office가 단수라 Is, (d)는 a strange sound가 단수라 was를 써야 한다.",
+   "no": 70
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 틀린 문장은?",
+   "choices": [
+    "There <u>is</u> some honey in the jar.",
+    "There <u>are</u> two mirrors on the wall.",
+    "<u>Was</u> there a full moon last night?",
+    "There <u>weren't</u> any buses after midnight.",
+    "There <u>are</u> a lot of noise in the hallway."
+   ],
+   "answer": 5,
+   "why": "noise는 셀 수 없는 명사라 단수 취급하므로 is를 써야 한다. 나머지는 뒤 명사와 수·시제가 일치한다.",
+   "no": 71
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (A), (B), (C)에 들어갈 말이 순서대로 바르게 짝지어진 것은?\n(A) There ____ some flour in the bowl.\n(B) There ____ two pieces of cake left.\n(C) ____ there any visitors at the museum yesterday?",
+   "choices": [
+    "is - are - Were",
+    "is - are - Was",
+    "are - is - Were",
+    "is - is - Was",
+    "are - are - Were"
+   ],
+   "answer": 1,
+   "why": "flour는 셀 수 없어 is, two pieces는 복수라 are, yesterday의 visitors는 복수 과거라 Were를 쓴다.",
+   "no": 72
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n냉장고에 계란이 하나도 없어서 우리는 가게에 갔다.",
+   "choices": [
+    "There wasn't any eggs in the fridge, so we went to the store.",
+    "There weren't any eggs in the fridge, so we went to the store.",
+    "There weren't some eggs in the fridge, so we went to the store.",
+    "There didn't be any eggs in the fridge, so we went to the store.",
+    "There weren't any egg in the fridge, so we went to the store."
+   ],
+   "answer": 2,
+   "why": "eggs가 복수이므로 weren't를 쓰고, 부정문에는 any + 복수 명사를 쓴다. be동사 부정에 didn't는 쓸 수 없다.",
+   "no": 73
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "두 문장의 빈칸에 공통으로 들어갈 말은?\n· There ____ a lot of traffic this morning, so I was late for school.\n· There ____ some ice on the road an hour ago.",
+   "choices": [
+    "was",
+    "were",
+    "is",
+    "are",
+    "isn't"
+   ],
+   "answer": 1,
+   "why": "traffic과 ice는 셀 수 없는 명사라 단수 취급하고, 둘 다 과거의 일이므로 was가 들어간다.",
+   "no": 74
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 가장 알맞은 것은?\nA: ____\nB: No, there weren't. There was only one small shop.",
+   "choices": [
+    "Were there many stores in this town in the past?",
+    "Was there many stores in this town?",
+    "Are there many stores in this town now?",
+    "Did there many stores in this town?",
+    "Were there much stores in this town?"
+   ],
+   "answer": 1,
+   "why": "대답이 No, there weren't.이므로 과거의 복수 의문문 Were there ~?가 와야 한다. many 뒤에는 복수 명사를 쓰고 much는 쓸 수 없다.",
+   "no": 75
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 의문사 의문문으로 바르게 바꾼 것은?\nThere are twelve months in a year.",
+   "choices": [
+    "How many months are there in a year?",
+    "How many months there are in a year?",
+    "How many month are there in a year?",
+    "How many months is there in a year?",
+    "How much months are there in a year?"
+   ],
+   "answer": 1,
+   "why": "How many + 복수 명사 + are there ~? 어순으로 쓴다. months가 복수이므로 are를 쓰고 much는 쓸 수 없다.",
+   "no": 76
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 문장을 고르면?",
+   "choices": [
+    "There is lots of empty seats in the theater.",
+    "There was a lot of fun things to do.",
+    "There weren't any mistakes in your essay.",
+    "Are there a good restaurant nearby?",
+    "There is three new songs on the album."
+   ],
+   "answer": 3,
+   "why": "mistakes가 복수이므로 weren't any가 맞다. ①·②·⑤는 복수 명사에 단수 be동사를 썼고 ④는 Is there를 써야 한다.",
+   "no": 77
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 어색한 문장을 고르면?",
+   "choices": [
+    "There is an egg and some butter on the counter.",
+    "There were four seasons of that drama.",
+    "There wasn't enough time to finish the test.",
+    "There are a piece of paper on the floor.",
+    "Is there any homework for tomorrow?"
+   ],
+   "answer": 4,
+   "why": "a piece of paper는 단수이므로 There is를 써야 한다. ①은 바로 뒤의 an egg에 맞춰 is를 쓴 옳은 문장이다.",
+   "no": 78
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 ①~⑤ 중 어법상 틀린 것은?\nLast weekend, there ①<u>was</u> a school festival at our school. There ②<u>were</u> many food trucks, and there ③<u>was</u> a big stage in the playground. There ④<u>were</u> a lot of excitement everywhere, and there ⑤<u>was</u> also a dance contest.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 4,
+   "why": "excitement는 셀 수 없는 명사라 단수 취급하므로 ④는 was를 써야 한다. 나머지는 뒤 명사와 수가 일치한다.",
+   "no": 79
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "짝지어진 대화 중 어색한 것은?",
+   "choices": [
+    "A: Is there a pharmacy near here? B: Yes, there is.",
+    "A: Were there any calls for me? B: No, there weren't.",
+    "A: Are there any onions left? B: Yes, there are.",
+    "A: Was there a test today? B: Yes, there was.",
+    "A: Is there any water in the bottle? B: Yes, there are."
+   ],
+   "answer": 5,
+   "why": "water는 셀 수 없는 명사라 단수 취급하므로 Yes, there is.로 답해야 한다.",
+   "no": 80
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThere ____ a few empty seats at the back, so we sat there.",
+   "choices": [
+    "were",
+    "was",
+    "are",
+    "is",
+    "be"
+   ],
+   "answer": 1,
+   "why": "뒤의 sat(과거)으로 보아 과거 시제이고 a few seats는 복수이므로 were를 쓴다.",
+   "no": 81
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n책상 위에 지우개 한 개와 자 두 개가 있다.",
+   "choices": [
+    "There is an eraser and two rulers on the desk.",
+    "There are an eraser and two rulers on the desk.",
+    "There is two rulers and an eraser on the desk.",
+    "There is an eraser and two ruler on the desk.",
+    "There am an eraser and two rulers on the desk."
+   ],
+   "answer": 1,
+   "why": "There be는 바로 뒤의 명사에 일치시키므로 단수 an eraser에 맞춰 is를 쓴다. ③은 복수 two rulers가 바로 뒤라 are를 써야 한다.",
+   "no": 82
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 is를 쓸 수 있는 것을 모두 고른 것은?\nㄱ. There ____ some good news for you.\nㄴ. There ____ a lot of children in the pool.\nㄷ. There ____ a big sale at the mall today.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "news는 셀 수 없는 명사, a big sale은 단수이므로 is를 쓴다. ㄴ의 children은 복수라 are를 써야 한다.",
+   "no": 83
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\n____ there any interesting programs on TV last night?",
+   "choices": [
+    "Were",
+    "Was",
+    "Are",
+    "Is",
+    "Did"
+   ],
+   "answer": 1,
+   "why": "last night은 과거이고 programs가 복수이므로 Were를 쓴다. be동사 의문문에 Did는 쓰지 않는다.",
+   "no": 84
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은?\nThere ____ no clouds in the sky, so we could see the stars.",
+   "choices": [
+    "were",
+    "was",
+    "are",
+    "is",
+    "weren't"
+   ],
+   "answer": 1,
+   "why": "could(과거)로 보아 과거 시제이고 clouds가 복수이므로 were를 쓴다. no가 이미 있어 weren't를 쓰면 부정이 겹친다.",
+   "no": 85
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: How was the museum?\nB: Great! There ____ a lot of old paintings from the 1800s.",
+   "choices": [
+    "was",
+    "were",
+    "is",
+    "are",
+    "be"
+   ],
+   "answer": 2,
+   "why": "How was ~?라는 과거 대화이고 paintings가 복수이므로 were를 쓴다.",
+   "no": 86
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것은?\nThe classroom has thirty desks. = There ____ thirty desks in the classroom.",
+   "choices": [
+    "is",
+    "are",
+    "were",
+    "was",
+    "have"
+   ],
+   "answer": 2,
+   "why": "has가 현재이므로 현재형을 쓰고, thirty desks가 복수이므로 are가 알맞다.",
+   "no": 87
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 바른 것을 모두 고른 것은?\nㄱ. There wasn't any money in the piggy bank.\nㄴ. There were a lot of homework last week.\nㄷ. Are there any famous places in your city?",
+   "choices": [
+    "ㄴ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "money는 셀 수 없어 wasn't가 맞고(ㄱ), places는 복수라 Are there가 맞다(ㄷ). ㄴ의 homework는 셀 수 없는 명사이므로 was를 써야 한다.",
+   "no": 88
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸 (A), (B)에 들어갈 말이 순서대로 짝지어진 것은?\nA: ____ there a parking lot near the stadium?\nB: Yes, but there ____ only a few spaces left now.",
+   "choices": [
+    "Is - are",
+    "Is - is",
+    "Are - are",
+    "Is - was",
+    "Are - is"
+   ],
+   "answer": 1,
+   "why": "a parking lot은 단수라 Is there로 묻고, a few spaces는 복수이며 now(현재)이므로 are를 쓴다.",
+   "no": 89
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n작년에는 우리 학교에 영어 원어민 선생님이 두 분 계셨다.",
+   "choices": [
+    "There was two native English teachers at my school last year.",
+    "There were two native English teachers at my school last year.",
+    "There are two native English teachers at my school last year.",
+    "There were two native English teacher at my school last year.",
+    "There did two native English teachers at my school last year."
+   ],
+   "answer": 2,
+   "why": "last year는 과거이고 two teachers는 복수이므로 There were를 쓴다. two 뒤에는 복수형 teachers가 와야 한다.",
+   "no": 90
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 바르게 배열하여 문장을 완성하시오.\n(weren't / any / there / stars) in the sky last night.",
+   "answer": "There weren't any stars in the sky last night.",
+   "alt": [
+    "There weren't any stars",
+    "There weren't any stars in the sky last night"
+   ],
+   "why": "부정문은 There weren't any + 복수 명사 순서로 쓴다.",
+   "no": 91
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThere <u>was</u> a lot of people at the bus stop this morning.",
+   "answer": "were",
+   "why": "a lot of people은 복수이므로 과거형 were를 써야 한다.",
+   "no": 92
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThere <u>are</u> some cheese and two tomatoes in the basket.",
+   "answer": "is",
+   "why": "There be는 바로 뒤의 명사에 일치시키는데 cheese는 셀 수 없는 명사이므로 is를 쓴다.",
+   "no": 93
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 be동사를 쓰시오.\nThis city has two big parks. = There ____ two big parks in this city.",
+   "answer": "are",
+   "why": "has가 현재이고 two big parks가 복수이므로 are를 쓴다.",
+   "no": 94
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 be동사를 쓰시오.\nOur school had a small garden ten years ago. = There ____ a small garden at our school ten years ago.",
+   "answer": "was",
+   "why": "had(과거)에 맞춰 과거형을 쓰고, a small garden이 단수이므로 was를 쓴다.",
+   "no": 95
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 any를 사용한 의문문으로 바꿔 쓰시오.\nThere were some letters in the mailbox.",
+   "answer": "Were there any letters in the mailbox?",
+   "alt": [
+    "Were there any letters in the mailbox"
+   ],
+   "why": "의문문은 Were를 there 앞으로 보내고 some을 any로 바꾼다.",
+   "no": 96
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 any를 사용한 부정문으로 바꿔 쓰시오. (축약형으로 쓸 것)\nThere was some snow on the mountain.",
+   "answer": "There wasn't any snow on the mountain.",
+   "alt": [
+    "There wasn't any snow on the mountain"
+   ],
+   "why": "was 뒤에 not을 붙여 축약형 wasn't로 쓰고, some을 any로 바꾼다.",
+   "no": 97
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 말을 한 단어로 쓰시오.\n____ there a rainbow after the rain yesterday?",
+   "answer": "Was",
+   "alt": [
+    "was"
+   ],
+   "why": "yesterday는 과거이고 a rainbow가 단수이므로 Was there ~?로 묻는다.",
+   "no": 98
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 be동사를 쓰시오.\nHow many players ____ there on a soccer team?",
+   "answer": "are",
+   "why": "players가 복수이고 일반적인 사실을 묻는 현재형이므로 are를 쓴다.",
+   "no": 99
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 말을 be동사의 축약형으로 쓰시오.\nThere ____ any clean spoons, so I washed one.",
+   "answer": "weren't",
+   "why": "washed(과거)로 보아 과거이고 spoons가 복수이므로 were not의 축약형 weren't를 쓴다.",
+   "no": 100
+  }
+ ]
+}
