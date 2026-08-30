@@ -5,7 +5,7 @@
 | Galaxy | 내용 | 교재 | 단원 노드 |
 |---|---|---|---|
 | **VOCAB** (보카 Galaxy) | 옳은보카 0–8 + Ultimate (표지 라인 기준, DAY가 세부 유닛) | 10권 | 482 DAY |
-| **GRAMMAR** (문법 Galaxy) | 기존 ORUN METABOOK NEXUS 전체 (시험지 478종 포함) | 11권 | 478 UNIT |
+| **GRAMMAR** (문법 Galaxy) | ORUN METABOOK NEXUS 전체 (시험지 611종 포함) | 12권 | 611 UNIT |
 | **SYNTAX** (구문 Galaxy) | ORUN WEEKLY VOL.1 · 옳은영어 주간지 for Top/고1 | 1권 | 20 WEEK |
 | **USAGE** (어법 Galaxy) | ORUN USAGE 옳은 어법 (36차시 · 360문항) | 1권 | 36 ROUND |
 | **READING** (독해 Galaxy) | READING GRAPHY Level 1–4 + 옳은 독해 Level 3 | 5권 | 168 UNIT |
@@ -26,7 +26,7 @@
 - `ORUN_NEXUS_UNIVERSE.html` — **완성본. 이 파일 하나만 열면 된다.**
 - `build.py` — 아래 소스를 완성본 하나로 조립한다.
 - `src/head.html` · `src/body.html` · `src/engine.js` — 화면과 엔진.
-- `data/grammar.json` — 문법 Galaxy 데이터 (원본 넥서스에서 그대로 추출, 생성기 없음).
+- `data/grammar.json` — 문법 Galaxy 데이터 (넥서스에서 그대로 추출, 생성기 없음).
 - `data/vocab.json` ← `data/gen_vocab.py` — 보카 Galaxy 데이터.
 - `data/syntax.json` ← `data/gen_syntax.py` — 구문(ORUN WEEKLY) Galaxy 데이터.
 - `data/usage.json` ← `data/gen_usage.py` — 어법(ORUN USAGE) Galaxy 데이터.
@@ -45,7 +45,11 @@ python3 build.py               # ORUN_NEXUS_UNIVERSE.html 재조립
 
 ## 데이터 상태 (2026-08 기준)
 
-- **문법**: 원본 그대로 — 478 유닛 전부 시험지 연결.
+- **문법**: 원본 그대로 — 611 유닛 전부 시험지 연결(12권·129챕터). 2026-08-25 판
+  ORUN Grammar Nexus 에서 갱신했습니다: `문마중 Level 3`(16챕터·111유닛)와
+  `Grammar Zone 중등 필수`(6챕터·46유닛)가 학년 등급 5·6번 자리에 들어오고,
+  그 자리에 있던 `바로 푸는 문법 2`(24챕터·24유닛)가 빠지면서 1~12번 등급이
+  빈칸 없이 이어집니다. 학년 필터에 `초등`이 생겼습니다.
 - **보카**: 책 라인(권·부제·DAY 수·표지 색)은 표지 PDF 확정값.
   PART(DAY 5일 묶음, Ultimate는 6일)는 목차 연동 전 **잠정안**
   (`confidence:"draft"`, 지도에서 "목차 잠정안" 칩으로 표시).
@@ -68,4 +72,4 @@ python3 build.py               # ORUN_NEXUS_UNIVERSE.html 재조립
 
 시험지를 늘리려면 각 Galaxy의 `worksheets`에 유닛 id 키로
 `{source, baekji:{chapter, sections[]}, popquiz:{chapter, questions[], answerKey[]}}`
-형태를 추가하면 된다 — 형식은 문법 Galaxy의 기존 478종과 동일하다.
+형태를 추가하면 된다 — 형식은 문법 Galaxy의 기존 611종과 동일하다.
