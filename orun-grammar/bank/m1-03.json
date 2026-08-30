@@ -1,0 +1,1324 @@
+{
+ "id": "m1-03",
+ "grade": "중1",
+ "name": "현재진행형",
+ "points": [
+  "be동사+v-ing",
+  "-ing 만드는 규칙",
+  "부정문·의문문"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nI ____ watching TV now.",
+   "choices": [
+    "am",
+    "is",
+    "are",
+    "be",
+    "do"
+   ],
+   "answer": 1,
+   "why": "현재진행형은 「be동사+v-ing」이고 주어가 I이므로 am을 쓴다. is/are는 주어와 맞지 않고 be·do는 이 자리에 올 수 없다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nShe ____ reading a book now.",
+   "choices": [
+    "am",
+    "is",
+    "are",
+    "be",
+    "does"
+   ],
+   "answer": 2,
+   "why": "주어 She는 3인칭 단수이므로 be동사 is를 쓴다. does 뒤에는 v-ing가 올 수 없다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nThey ____ playing soccer now.",
+   "choices": [
+    "am",
+    "is",
+    "are",
+    "be",
+    "do"
+   ],
+   "answer": 3,
+   "why": "주어 They는 복수이므로 are를 쓴다. 현재진행형은 「be동사+v-ing」 형태다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nMy brother ____ drinking milk now.",
+   "choices": [
+    "am",
+    "are",
+    "be",
+    "is",
+    "does"
+   ],
+   "answer": 4,
+   "why": "My brother는 3인칭 단수 주어이므로 is를 쓴다. does 뒤에는 동사원형이 오므로 drinking과 함께 쓸 수 없다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nWe ____ singing a song together now.",
+   "choices": [
+    "is",
+    "am",
+    "be",
+    "do",
+    "are"
+   ],
+   "answer": 5,
+   "why": "주어 We는 복수이므로 are를 쓴다. is/am은 주어와 맞지 않는다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "run의 -ing형으로 알맞은 것은?",
+   "choices": [
+    "runing",
+    "runeing",
+    "running",
+    "runnig",
+    "ranning"
+   ],
+   "answer": 3,
+   "why": "「단모음+단자음」으로 끝나는 동사는 마지막 자음을 한 번 더 쓰고 -ing를 붙인다. run → running.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "make의 -ing형으로 알맞은 것은?",
+   "choices": [
+    "makeing",
+    "making",
+    "makking",
+    "makying",
+    "mekeing"
+   ],
+   "answer": 2,
+   "why": "e로 끝나는 동사는 e를 빼고 -ing를 붙인다. make → making.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "swim의 -ing형으로 알맞은 것은?",
+   "choices": [
+    "swiming",
+    "swimeing",
+    "swimmig",
+    "swimming",
+    "swaming"
+   ],
+   "answer": 4,
+   "why": "swim은 「단모음+단자음」으로 끝나므로 m을 한 번 더 쓰고 -ing를 붙인다. swim → swimming.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "lie의 -ing형으로 알맞은 것은?",
+   "choices": [
+    "lieing",
+    "lying",
+    "liying",
+    "leing",
+    "lyeing"
+   ],
+   "answer": 2,
+   "why": "-ie로 끝나는 동사는 ie를 y로 바꾸고 -ing를 붙인다. lie → lying.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "study의 -ing형으로 알맞은 것은?",
+   "choices": [
+    "studing",
+    "studiing",
+    "studeing",
+    "studyng",
+    "studying"
+   ],
+   "answer": 5,
+   "why": "study는 그대로 -ing만 붙인다. y를 바꾸는 것은 -es/-ed를 붙일 때의 규칙이다. study → studying.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "동사와 -ing형이 잘못 짝지어진 것은?",
+   "choices": [
+    "come – coming",
+    "plan – planning",
+    "play – playing",
+    "sit – siting",
+    "write – writing"
+   ],
+   "answer": 4,
+   "why": "sit은 「단모음+단자음」으로 끝나므로 t를 한 번 더 써서 sitting이 되어야 한다. 나머지는 모두 바르다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "동사와 -ing형이 바르게 짝지어진 것은?",
+   "choices": [
+    "cut – cuting",
+    "die – dieing",
+    "stop – stopping",
+    "give – giveing",
+    "tie – tieing"
+   ],
+   "answer": 3,
+   "why": "stop은 p를 겹쳐 stopping이 된다. cut → cutting, die → dying, give → giving, tie → tying이 바른 형태다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nHe ____ sleeping now. He is doing his homework.",
+   "choices": [
+    "is",
+    "isn't",
+    "am not",
+    "aren't",
+    "not"
+   ],
+   "answer": 2,
+   "why": "뒤에서 숙제를 하고 있다고 했으므로 자고 있지 않다는 부정문이 되어야 한다. 주어 He에 맞는 부정형은 isn't이다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nI am ____ listening to music. I am reading.",
+   "choices": [
+    "no",
+    "don't",
+    "not",
+    "doesn't",
+    "aren't"
+   ],
+   "answer": 3,
+   "why": "현재진행형의 부정은 be동사 뒤에 not을 붙인다. don't/doesn't는 일반동사 현재형의 부정에 쓴다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\n____ you doing your homework now?",
+   "choices": [
+    "Am",
+    "Is",
+    "Do",
+    "Are",
+    "Does"
+   ],
+   "answer": 4,
+   "why": "현재진행형 의문문은 「be동사+주어+v-ing?」이고 주어 you에 맞는 be동사는 Are이다. Do/Does 뒤에는 동사원형이 온다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\n____ Mina cooking dinner now?",
+   "choices": [
+    "Is",
+    "Are",
+    "Am",
+    "Does",
+    "Do"
+   ],
+   "answer": 1,
+   "why": "Mina는 3인칭 단수이므로 Is를 문장 맨 앞에 쓴다. Does 뒤에는 cooking이 아니라 동사원형이 와야 한다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\n\nA: Is your dad washing the car?\nB: Yes, ____.",
+   "choices": [
+    "he is",
+    "he does",
+    "he isn't",
+    "she is",
+    "it is"
+   ],
+   "answer": 1,
+   "why": "be동사로 물으면 be동사로 답한다. your dad는 he로 받아 Yes, he is.가 된다. does로 답할 수 없다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\n\nA: Are the students studying in the library?\nB: No, ____.",
+   "choices": [
+    "they are",
+    "they don't",
+    "they aren't",
+    "he isn't",
+    "we are"
+   ],
+   "answer": 3,
+   "why": "the students는 they로 받고, No 뒤에는 부정형 aren't가 온다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "어법상 옳은 문장은?",
+   "choices": [
+    "He is play the piano.",
+    "I am runing in the park.",
+    "They is jumping now.",
+    "She is dancing on the stage.",
+    "Are you swiming now?"
+   ],
+   "answer": 4,
+   "why": "「be동사+v-ing」가 바르게 쓰인 것은 ④뿐이다. ①은 playing, ②는 running, ③은 are, ⑤는 swimming이어야 한다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "어법상 틀린 문장은?",
+   "choices": [
+    "I am eating breakfast.",
+    "She is smiling at me.",
+    "We are watching a movie.",
+    "Tom is riding his bike.",
+    "They are haveing lunch now."
+   ],
+   "answer": 5,
+   "why": "have는 e를 빼고 having으로 써야 한다. 나머지는 모두 바른 현재진행형이다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nLook! The baby ____ now.",
+   "choices": [
+    "cry",
+    "cries",
+    "crying",
+    "is crying",
+    "is cry"
+   ],
+   "answer": 4,
+   "why": "Look!과 now는 지금 일어나는 일을 나타내므로 현재진행형 is crying을 쓴다. crying만 쓰면 be동사가 없어 틀린다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nMy brother is ____ a letter now.",
+   "choices": [
+    "write",
+    "writes",
+    "writing",
+    "wrote",
+    "to write"
+   ],
+   "answer": 3,
+   "why": "be동사 is 뒤에서 진행의 뜻을 나타내려면 v-ing형인 writing을 쓴다. write는 e를 빼고 -ing를 붙인다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\n\nA: What are you doing?\nB: I ____ cookies.",
+   "choices": [
+    "make",
+    "am making",
+    "making",
+    "am make",
+    "makes"
+   ],
+   "answer": 2,
+   "why": "지금 무엇을 하고 있는지 물었으므로 현재진행형 am making으로 답한다. making만 쓰면 be동사가 없어 문장이 안 된다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n\n그는 지금 TV를 보고 있다.",
+   "choices": [
+    "He watches TV now.",
+    "He is watch TV now.",
+    "He is watching TV now.",
+    "He watching TV now.",
+    "He is watches TV now."
+   ],
+   "answer": 3,
+   "why": "'보고 있다'는 현재진행형 「is+watching」으로 나타낸다. be동사 뒤에 동사원형이나 3인칭 단수형은 올 수 없다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안 동사를 알맞은 형태로 바꿔 빈칸에 쓰시오.\n\nShe is ____ (dance) to the music now.",
+   "answer": "dancing",
+   "why": "e로 끝나는 동사는 e를 빼고 -ing를 붙인다. dance → dancing.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "run의 -ing형을 쓰시오.",
+   "answer": "running",
+   "why": "「단모음+단자음」으로 끝나는 동사는 마지막 자음을 한 번 더 쓰고 -ing를 붙인다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안 동사를 알맞은 형태로 바꿔 빈칸에 쓰시오.\n\nThey are ____ (swim) in the pool now.",
+   "answer": "swimming",
+   "why": "swim은 「단모음+단자음」으로 끝나므로 m을 겹쳐 swimming으로 쓴다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 부정문으로 바꿀 때 빈칸에 알맞은 줄임말을 쓰시오.\n\nHe is playing a game. → He ____ playing a game.",
+   "answer": "isn't",
+   "why": "현재진행형의 부정은 be동사 뒤에 not을 붙이며, is not의 줄임말은 isn't이다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 의문문으로 바꿀 때 빈칸에 알맞은 말을 쓰시오.\n\nYou are eating lunch. → ____ you eating lunch?",
+   "answer": "Are",
+   "alt": [
+    "are"
+   ],
+   "why": "현재진행형 의문문은 be동사를 주어 앞으로 보낸다. Are you eating lunch?",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "lie의 -ing형을 쓰시오.",
+   "answer": "lying",
+   "why": "-ie로 끝나는 동사는 ie를 y로 바꾸고 -ing를 붙인다. lie → lying.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안 동사를 알맞은 형태로 바꿔 빈칸에 쓰시오.\n\nI am ____ (make) a paper plane now.",
+   "answer": "making",
+   "why": "make는 e를 빼고 -ing를 붙여 making으로 쓴다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "대화의 빈칸에 알맞은 한 단어를 쓰시오.\n\nA: Is she singing on the stage?\nB: Yes, she ____.",
+   "answer": "is",
+   "why": "be동사 의문문에는 be동사로 답한다. Yes, she is.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 현재진행형 문장으로 바꿔 쓰시오. (문장 끝에 now를 붙일 것)\n\nHe watches TV.",
+   "answer": "He is watching TV now.",
+   "alt": [
+    "He's watching TV now."
+   ],
+   "why": "현재진행형은 「be동사+v-ing」이므로 watches를 is watching으로 바꾸고 끝에 now를 붙인다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장의 밑줄 친 부분을 줄임말로 쓰시오.\n\nThey <u>are not</u> sleeping now.",
+   "answer": "aren't",
+   "why": "are not의 줄임말은 aren't이다.",
+   "no": 34
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nListen! Someone ____ the piano in the next room.",
+   "choices": [
+    "play",
+    "plays",
+    "is playing",
+    "are playing",
+    "playing"
+   ],
+   "answer": 3,
+   "why": "Listen!은 지금 벌어지는 일이므로 현재진행형을 쓴다. Someone은 단수 취급하므로 is playing이 알맞다.",
+   "no": 35
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nLook! My sisters ____ TV in the living room.",
+   "choices": [
+    "watch",
+    "watches",
+    "is watching",
+    "are watching",
+    "watching"
+   ],
+   "answer": 4,
+   "why": "Look!이 있으므로 지금 하고 있는 일을 나타내는 현재진행형을 쓰고, 주어 My sisters가 복수이므로 are watching이 알맞다.",
+   "no": 36
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은?",
+   "choices": [
+    "Ms. Lee is teaching English now.",
+    "The dogs are barking loudly.",
+    "My mom is makeing pizza.",
+    "I am cleaning my room.",
+    "We are learning Chinese these days."
+   ],
+   "answer": 3,
+   "why": "make는 e를 빼고 making으로 써야 한다. 나머지 문장은 모두 바른 현재진행형이다.",
+   "no": 37
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "Is they helping the old man?",
+    "He isn't wearing a cap now.",
+    "The boy are crying.",
+    "I am not swiming now.",
+    "Does she reading a book?"
+   ],
+   "answer": 2,
+   "why": "②는 「be동사+not+v-ing」가 바르게 쓰였다. ①은 Are they, ③은 is crying, ④는 swimming, ⑤는 Is she reading이어야 한다.",
+   "no": 38
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 틀린 것은?",
+   "choices": [
+    "Julie <u>is taking</u> a shower.",
+    "We <u>are planting</u> trees.",
+    "He <u>is writeing</u> a diary.",
+    "They <u>are lying</u> on the grass.",
+    "The bird <u>is flying</u> high."
+   ],
+   "answer": 3,
+   "why": "write는 e를 빼고 writing으로 써야 한다. lie → lying, fly → flying은 바른 형태다.",
+   "no": 39
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 알맞은 말은? (대소문자는 무시할 것)\n\n• ____ they having lunch now?\n• We ____ waiting for the bus.",
+   "choices": [
+    "am",
+    "is",
+    "are",
+    "do",
+    "does"
+   ],
+   "answer": 3,
+   "why": "첫 문장은 주어 they의 의문문이므로 Are, 둘째 문장은 주어 We이므로 are가 필요하다. 공통으로 are가 들어간다.",
+   "no": 40
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\n\nA: Is Jane doing her homework?\nB: No, ____. She is drawing a picture.",
+   "choices": [
+    "she is",
+    "she isn't",
+    "she doesn't",
+    "he isn't",
+    "they aren't"
+   ],
+   "answer": 2,
+   "why": "No 뒤에는 부정형이 오고, Jane은 she로 받으므로 No, she isn't.가 된다. be동사 의문문에 doesn't로 답할 수 없다.",
+   "no": 41
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\n\nA: ____ is Tom going?\nB: He is going to the library.",
+   "choices": [
+    "What",
+    "Who",
+    "Where",
+    "When",
+    "Why"
+   ],
+   "answer": 3,
+   "why": "도서관이라는 장소로 답했으므로 장소를 묻는 Where가 알맞다.",
+   "no": 42
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n\n우리는 지금 저녁을 먹고 있지 않다.",
+   "choices": [
+    "We don't eat dinner now.",
+    "We aren't eat dinner now.",
+    "We aren't eating dinner now.",
+    "We not eating dinner now.",
+    "We doesn't eating dinner now."
+   ],
+   "answer": 3,
+   "why": "'먹고 있지 않다'는 「be동사+not+v-ing」로 쓴다. aren't 뒤에는 동사원형이 아니라 v-ing가 와야 한다.",
+   "no": 43
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말이 순서대로 짝지어진 것은?\n\nHe usually ____ to school by bus, but he ____ a bike right now.",
+   "choices": [
+    "goes – is riding",
+    "goes – rides",
+    "is going – is riding",
+    "go – is riding",
+    "is going – rides"
+   ],
+   "answer": 1,
+   "why": "usually는 습관을 나타내므로 현재형 goes, right now는 지금 하는 일이므로 현재진행형 is riding을 쓴다.",
+   "no": 44
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 -ing형을 만들 때 마지막 자음을 한 번 더 쓰는 동사는?",
+   "choices": [
+    "eat",
+    "sit",
+    "sing",
+    "cook",
+    "sleep"
+   ],
+   "answer": 2,
+   "why": "sit은 「단모음+단자음」으로 끝나므로 sitting으로 쓴다. 나머지는 그대로 -ing만 붙인다.",
+   "no": 45
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 -ing형을 만들 때 e를 빼고 -ing를 붙이는 동사는?",
+   "choices": [
+    "play",
+    "ride",
+    "go",
+    "walk",
+    "read"
+   ],
+   "answer": 2,
+   "why": "ride는 e로 끝나므로 e를 빼고 riding으로 쓴다. 나머지는 그대로 -ing를 붙인다.",
+   "no": 46
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장을 의문문으로 바르게 바꾼 것은?\n\nThe children are flying kites.",
+   "choices": [
+    "Do the children flying kites?",
+    "Are the children flying kites?",
+    "Are flying the children kites?",
+    "The children are flying kites?",
+    "Is the children flying kites?"
+   ],
+   "answer": 2,
+   "why": "현재진행형 의문문은 be동사만 주어 앞으로 보낸다. 주어가 복수이므로 Are the children flying kites?가 된다.",
+   "no": 47
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\n\nA: What is your mom doing now?\nB: ____",
+   "choices": [
+    "She is a nurse.",
+    "She likes bread.",
+    "She is baking bread.",
+    "She baked bread yesterday.",
+    "Yes, she is."
+   ],
+   "answer": 3,
+   "why": "지금 하고 있는 일을 물었으므로 현재진행형으로 답한 She is baking bread.가 알맞다. Yes/No로 답할 질문이 아니다.",
+   "no": 48
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nBe quiet! My grandpa ____ in the room.",
+   "choices": [
+    "sleep",
+    "sleeps",
+    "is sleeping",
+    "are sleeping",
+    "sleeping"
+   ],
+   "answer": 3,
+   "why": "Be quiet!은 지금 자고 있으니 조용히 하라는 상황이므로 현재진행형 is sleeping이 알맞다.",
+   "no": 49
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장을 부정문으로 바르게 바꾼 것은?\n\nMinho is running in the park.",
+   "choices": [
+    "Minho doesn't run in the park.",
+    "Minho isn't running in the park.",
+    "Minho is running not in the park.",
+    "Minho isn't runing in the park.",
+    "Minho don't running in the park."
+   ],
+   "answer": 2,
+   "why": "현재진행형의 부정은 be동사 뒤에 not을 붙인다. not의 위치가 틀리거나 running의 철자가 틀린 것은 답이 될 수 없다.",
+   "no": 50
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 수 없는 것은?\n\n____ is jumping on the bed.",
+   "choices": [
+    "He",
+    "She",
+    "Tom",
+    "The dog",
+    "They"
+   ],
+   "answer": 5,
+   "why": "be동사가 is이므로 주어는 3인칭 단수여야 한다. 복수인 They는 are와 함께 써야 한다.",
+   "no": 51
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nRight now, Yuna ____ pictures of flowers.",
+   "choices": [
+    "take",
+    "takes",
+    "is taking",
+    "are taking",
+    "is take"
+   ],
+   "answer": 3,
+   "why": "Right now가 있으므로 현재진행형을 쓰고, 주어 Yuna는 단수이므로 is taking이 알맞다.",
+   "no": 52
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분을 바르게 고친 것은?\n\n<u>Do</u> you listening to music now?",
+   "choices": [
+    "Does",
+    "Don't",
+    "Are",
+    "Am",
+    "Did"
+   ],
+   "answer": 3,
+   "why": "뒤에 listening(v-ing)이 있으므로 현재진행형 의문문이 되어야 한다. 주어 you에 맞는 be동사 Are로 고친다.",
+   "no": 53
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n\n지금 눈이 오고 있니?",
+   "choices": [
+    "Does it snow now?",
+    "Is it snow now?",
+    "Is it snowing now?",
+    "Does it snowing now?",
+    "Are it snowing now?"
+   ],
+   "answer": 3,
+   "why": "'오고 있니?'는 현재진행형 의문문 「Is+it+v-ing?」로 쓴다. Is 뒤에 동사원형 snow만 쓰면 틀린다.",
+   "no": 54
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\n\nA: Are you and Jane cleaning the classroom?\nB: Yes, ____.",
+   "choices": [
+    "you are",
+    "we are",
+    "they are",
+    "she is",
+    "we do"
+   ],
+   "answer": 2,
+   "why": "you and Jane(너와 제인)이라고 물었으므로 답할 때는 we(우리)로 받아 Yes, we are.가 된다.",
+   "no": 55
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장 중 어법에 맞는 것은?",
+   "choices": [
+    "The men is moving the boxes.",
+    "She is tying her shoes.",
+    "I am siting next to Jane.",
+    "Are he drawing a picture?",
+    "We are eatting dinner."
+   ],
+   "answer": 2,
+   "why": "tie는 ie를 y로 바꿔 tying으로 쓰므로 ②가 바르다. ①은 are, ③은 sitting, ④는 Is he, ⑤는 eating이어야 한다.",
+   "no": 56
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 옳은 것은?",
+   "choices": [
+    "Amy <u>is cuting</u> the cake.",
+    "They <u>are stoping</u> at the corner.",
+    "We <u>are geting</u> some water.",
+    "She <u>is coming</u> home now.",
+    "I <u>am studing</u> hard."
+   ],
+   "answer": 4,
+   "why": "come은 e를 빼고 coming으로 쓴 ④가 바르다. cut → cutting, stop → stopping, get → getting, study → studying이어야 한다.",
+   "no": 57
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안 동사를 이용하여 빈칸에 알맞은 말을 쓰시오. (두 단어)\n\nLook! A cat ____ ____ the tree. (climb)",
+   "answer": "is climbing",
+   "why": "Look!은 지금 벌어지는 일이므로 현재진행형 「is+climbing」을 쓴다. 주어 A cat은 단수다.",
+   "no": 58
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 부정문으로 바꿔 쓰시오. (줄임말을 사용할 것)\n\nShe is drinking juice.",
+   "answer": "She isn't drinking juice.",
+   "alt": [
+    "She's not drinking juice."
+   ],
+   "why": "현재진행형의 부정은 be동사 뒤에 not을 붙이며, 줄임말로 isn't(또는 She's not)를 쓴다.",
+   "no": 59
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 의문문으로 바꿔 쓰시오.\n\nThey are making a snowman.",
+   "answer": "Are they making a snowman?",
+   "why": "현재진행형 의문문은 be동사를 주어 앞으로 보내 「Are+주어+v-ing?」로 쓴다.",
+   "no": 60
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.\n\nHe is <u>studing</u> math now.",
+   "answer": "studying",
+   "why": "study는 그대로 -ing를 붙여 studying으로 쓴다. y를 빼지 않는다.",
+   "no": 61
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.\n\nWe are <u>planing</u> a surprise party for Dad.",
+   "answer": "planning",
+   "why": "plan은 「단모음+단자음」으로 끝나므로 n을 한 번 더 써서 planning으로 쓴다.",
+   "no": 62
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 공통으로 알맞은 한 단어를 쓰시오.\n\n• ____ your parents working now?\n• ____ the boys swimming in the river?",
+   "answer": "Are",
+   "alt": [
+    "are"
+   ],
+   "why": "your parents와 the boys는 모두 복수 주어이므로 의문문 맨 앞에 Are를 쓴다.",
+   "no": 63
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 현재진행형 문장으로 바꿔 쓰시오. (문장 끝에 now를 붙일 것)\n\nMy dad cooks dinner.",
+   "answer": "My dad is cooking dinner now.",
+   "alt": [
+    "My dad's cooking dinner now."
+   ],
+   "why": "cooks를 「is+cooking」으로 바꾸고 문장 끝에 now를 붙인다.",
+   "no": 64
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "대화의 빈칸에 알맞은 두 단어를 쓰시오.\n\nA: What are Jim and Fred doing?\nB: They ____ ____ badminton.",
+   "answer": "are playing",
+   "why": "지금 하는 일을 물었으므로 현재진행형으로 답한다. 주어 They가 복수이므로 are playing을 쓴다.",
+   "no": 65
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안 동사를 알맞은 형태로 바꿔 빈칸에 쓰시오.\n\nThe boys are ____ (hit) the ball.",
+   "answer": "hitting",
+   "why": "hit은 「단모음+단자음」으로 끝나므로 t를 한 번 더 써서 hitting으로 쓴다.",
+   "no": 66
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 줄임말을 사용한 문장으로 바꿔 쓰시오.\n\nShe is not wearing a coat.",
+   "answer": "She isn't wearing a coat.",
+   "alt": [
+    "She's not wearing a coat."
+   ],
+   "why": "is not은 isn't로 줄여 쓴다. She's not으로 줄이는 것도 가능하다.",
+   "no": 67
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\n\nㄱ. Kevin is looking for his glasses.\nㄴ. Are the girls dancing on the stage?\nㄷ. My uncle is driveing his new truck.",
+   "choices": [
+    "ㄱ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄱ과 ㄴ은 「be동사+v-ing」와 의문문 어순이 모두 바르다. ㄷ은 drive의 e를 빼고 driving으로 써야 한다.",
+   "no": 68
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 틀린 문장의 개수는?\n\n• I am not telling a lie.\n• Is your sister use your phone?\n• The farmers are cutting the rice.\n• He is haveing a good time.\n• Are they staying at the hotel?",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "Is your sister use는 using으로, haveing은 having으로 고쳐야 하므로 틀린 문장은 2개다. 나머지 셋은 바르다.",
+   "no": 69
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글에서 어법상 틀린 것은?\n\nToday is Sunday. My family ①<u>is</u> at the park. My dad ②<u>is reading</u> a newspaper. My mom and I ③<u>are riding</u> bikes. My brother ④<u>is flying</u> a kite. Our dog ⑤<u>are running</u> around us.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 5,
+   "why": "Our dog는 3인칭 단수 주어이므로 are가 아니라 is running으로 써야 한다. 나머지는 주어와 be동사가 바르게 일치한다.",
+   "no": 70
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화 중 어법상 어색한 것은?",
+   "choices": [
+    "A: Are you crying? — B: No, I'm not.",
+    "A: Is Ben using the computer? — B: Yes, he is.",
+    "A: Are they waiting outside? — B: Yes, they are.",
+    "A: Is your mom sleeping? — B: Yes, she does.",
+    "A: Am I talking too fast? — B: No, you aren't."
+   ],
+   "answer": 4,
+   "why": "be동사로 물으면 be동사로 답해야 하므로 Yes, she does.가 아니라 Yes, she is.가 되어야 한다.",
+   "no": 71
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n\n내 여동생은 지금 숙제를 하고 있지 않다.",
+   "choices": [
+    "My sister doesn't do her homework now.",
+    "My sister isn't doing her homework now.",
+    "My sister isn't do her homework now.",
+    "My sister is doing not her homework now.",
+    "My sister don't doing her homework now."
+   ],
+   "answer": 2,
+   "why": "'하고 있지 않다'는 「be동사+not+v-ing」이므로 isn't doing이 바르다. not은 be동사 바로 뒤에 온다.",
+   "no": 72
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 알맞은 말이 바르게 짝지어진 것은?\n\nA: (A)____ Jake and Tom (B)____ computer games?\nB: No, they aren't. They are doing their homework.",
+   "choices": [
+    "Is – playing",
+    "Are – playing",
+    "Are – play",
+    "Do – playing",
+    "Are – plays"
+   ],
+   "answer": 2,
+   "why": "대답이 they aren't이므로 현재진행형 의문문이다. 복수 주어이므로 Are, be동사 뒤에는 v-ing인 playing을 쓴다.",
+   "no": 73
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\n\nㄱ. The women are sitting on the bench.\nㄴ. Snow is falling from the sky.\nㄷ. I amn't listening to you.\nㄹ. Is the babies sleeping now?",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄱ, ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 1,
+   "why": "ㄷ의 am not은 amn't로 줄여 쓸 수 없고, ㄹ은 복수 주어 the babies이므로 Are로 시작해야 한다. ㄱ, ㄴ만 바르다.",
+   "no": 74
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 현재진행형으로 바르게 바꾼 것은?\n\nShe writes in her diary.",
+   "choices": [
+    "She is writes in her diary.",
+    "She writing in her diary.",
+    "She is writeing in her diary.",
+    "She is writing in her diary.",
+    "She are writing in her diary."
+   ],
+   "answer": 4,
+   "why": "「is+v-ing」로 바꾸되 write는 e를 빼고 writing으로 쓴다. be동사 없이 writing만 쓰면 문장이 되지 않는다.",
+   "no": 75
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "동사의 -ing형이 모두 바르게 짝지어진 것은?",
+   "choices": [
+    "die – dieing, get – getting, use – using",
+    "die – dying, get – geting, use – using",
+    "die – dying, get – getting, use – useing",
+    "die – dying, get – getting, use – using",
+    "die – dieing, get – geting, use – useing"
+   ],
+   "answer": 4,
+   "why": "die는 ie를 y로 바꿔 dying, get은 t를 겹쳐 getting, use는 e를 빼고 using으로 쓴다. 셋이 모두 맞는 것은 ④뿐이다.",
+   "no": 76
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 나머지 넷과 다른 것은?",
+   "choices": [
+    "The girl ____ jumping rope.",
+    "My cat ____ hiding under the bed.",
+    "Mr. Park ____ fixing his car.",
+    "The children ____ singing in the hall.",
+    "Water ____ boiling in the pot."
+   ],
+   "answer": 4,
+   "why": "④의 The children은 복수이므로 are가 들어가고, 나머지는 모두 단수 주어라서 is가 들어간다.",
+   "no": 77
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\n\nA: Hi, Sumin. What are you doing?\nB: ____ I can't find my dog, Max.\nA: Oh, no. I'll help you.",
+   "choices": [
+    "I am looking for my dog.",
+    "I am walking my dog now.",
+    "I lost my dog yesterday.",
+    "I am feeding my dog.",
+    "My dog is running in the park."
+   ],
+   "answer": 1,
+   "why": "지금 하는 일을 물었고 뒤에서 개를 찾을 수 없다고 했으므로 개를 찾고 있다는 ①이 알맞다. ②·④·⑤는 개가 곁에 있다는 뜻이 되어 어색하다.",
+   "no": 78
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n\n그들은 강에서 수영을 하고 있니?",
+   "choices": [
+    "Do they swim in the river?",
+    "Are they swim in the river?",
+    "Are they swimming in the river?",
+    "Is they swimming in the river?",
+    "Do they swimming in the river?"
+   ],
+   "answer": 3,
+   "why": "'하고 있니?'는 현재진행형 의문문이므로 「Are+they+swimming?」이 바르다. ①은 습관을 묻는 현재형이다.",
+   "no": 79
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "질문에 대한 대답으로 알맞지 않은 것은?\n\nA: Is your brother playing outside?\nB: ____",
+   "choices": [
+    "Yes, he is.",
+    "No, he isn't.",
+    "Yes, he is playing soccer.",
+    "No, he is doing his homework at home.",
+    "Yes, he does."
+   ],
+   "answer": 5,
+   "why": "be동사 의문문에는 be동사로 답해야 하므로 Yes, he does.는 어법에 맞지 않는다.",
+   "no": 80
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 알맞은 말은?\n\n• Look at the man. He ____ tying his shoes.\n• My phone ____ ringing.",
+   "choices": [
+    "am",
+    "are",
+    "is",
+    "be",
+    "does"
+   ],
+   "answer": 3,
+   "why": "He와 My phone은 모두 3인칭 단수 주어이므로 공통으로 is가 들어간다.",
+   "no": 81
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 틀린 것을 모두 고른 것은?\n\nㄱ. A boy is swiming in the sea.\nㄴ. We aren't buying new shoes.\nㄷ. Is Emma and her sister baking cookies?\nㄹ. The train is leaving now.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄱ, ㄴ, ㄷ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 swimming으로 고쳐야 하고, ㄷ은 주어가 Emma and her sister로 복수이므로 Are로 시작해야 한다. ㄴ, ㄹ은 바르다.",
+   "no": 82
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 의문문으로 바르게 바꾼 것은?\n\nThe men are moving the heavy boxes.",
+   "choices": [
+    "Do the men moving the heavy boxes?",
+    "Is the men moving the heavy boxes?",
+    "Are the men moving the heavy boxes?",
+    "The men are moving the heavy boxes, are?",
+    "Are moving the men the heavy boxes?"
+   ],
+   "answer": 3,
+   "why": "be동사 are만 주어 앞으로 보내면 된다. v-ing까지 함께 앞으로 보내거나 Do를 쓰면 틀린다.",
+   "no": 83
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 부정문으로 바르게 바꾼 것은?\n\nI am drawing cartoons.",
+   "choices": [
+    "I amn't drawing cartoons.",
+    "I am not drawing cartoons.",
+    "I don't drawing cartoons.",
+    "I am drawing not cartoons.",
+    "I not am drawing cartoons."
+   ],
+   "answer": 2,
+   "why": "be동사 바로 뒤에 not을 붙인다. am not은 줄임말이 없으므로 amn't는 쓸 수 없다.",
+   "no": 84
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분을 바르게 고친 것은?\n\nMy grandma is <u>siting</u> on the sofa now.",
+   "choices": [
+    "sit",
+    "sits",
+    "siting",
+    "sitting",
+    "seating"
+   ],
+   "answer": 4,
+   "why": "sit은 「단모음+단자음」으로 끝나므로 t를 겹쳐 sitting으로 쓴다. be동사 뒤에 동사원형이나 3인칭 단수형은 올 수 없다.",
+   "no": 85
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (A)~(C)에 알맞은 말이 바르게 짝지어진 것은?\n\nIt is raining outside, so the kids (A)____ inside. Jina (B)____ a book, and the twins (C)____ a board game.",
+   "choices": [
+    "is staying – is reading – are playing",
+    "are staying – is reading – are playing",
+    "are staying – are reading – are playing",
+    "are staying – is reading – is playing",
+    "are staying – reading – are playing"
+   ],
+   "answer": 2,
+   "why": "the kids와 the twins는 복수이므로 are, Jina는 단수이므로 is를 쓴다. (C)에 be동사 없이 v-ing만 쓸 수는 없다.",
+   "no": 86
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞는 문장은?",
+   "choices": [
+    "The students is planting flowers.",
+    "Somebody is knocking on the door.",
+    "He is getting not off the bus.",
+    "Am I sit in your seat?",
+    "They are runing a race now."
+   ],
+   "answer": 2,
+   "why": "Somebody는 단수 취급하므로 is knocking이 바르다. ①은 are, ③은 isn't getting, ④는 Am I sitting, ⑤는 running이어야 한다.",
+   "no": 87
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 옮길 때 빈칸에 알맞은 것은?\n\n지호는 지금 거짓말을 하고 있는 게 아니야.\n→ Jiho ____ now.",
+   "choices": [
+    "isn't lying",
+    "isn't lieing",
+    "doesn't lie",
+    "isn't laying",
+    "is not lie"
+   ],
+   "answer": 1,
+   "why": "lie(거짓말하다)는 ie를 y로 바꿔 lying으로 쓰고, 진행형의 부정이므로 isn't lying이 알맞다. laying은 lay(놓다)의 -ing형이다.",
+   "no": 88
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말이 순서대로 짝지어진 것은?\n\nA: Where is Dana? ____ she washing her hands?\nB: No, she isn't. She ____ the phone in her room.",
+   "choices": [
+    "Is – answers",
+    "Is – is answering",
+    "Are – is answering",
+    "Is – answering",
+    "Does – is answering"
+   ],
+   "answer": 2,
+   "why": "의문문은 단수 주어 she에 맞춰 Is로 시작하고, 지금 하고 있는 일이므로 is answering으로 답한다.",
+   "no": 89
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분이 어법상 옳은 것은?",
+   "choices": [
+    "Dad <u>is shaveing</u> now.",
+    "The chef <u>is trying</u> a new recipe.",
+    "They <u>are win</u> the game.",
+    "She <u>is puting</u> on her coat.",
+    "We <u>are jog</u> in the park."
+   ],
+   "answer": 2,
+   "why": "try는 그대로 -ing를 붙여 trying으로 쓴 ②가 바르다. shave → shaving, put → putting이고, ③·⑤는 be동사 뒤에 v-ing를 써야 한다.",
+   "no": 90
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 괄호 안의 단어를 배열하여 문장을 완성하시오.\n\n나는 거짓말을 하고 있지 않다. (lying / I / not / am)",
+   "answer": "I am not lying.",
+   "why": "현재진행형의 부정은 「주어+be동사+not+v-ing」 어순으로 쓴다.",
+   "no": 91
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.\n\nThe women are <u>cuting</u> the vegetables in the kitchen.",
+   "answer": "cutting",
+   "why": "cut은 「단모음+단자음」으로 끝나므로 t를 한 번 더 써서 cutting으로 쓴다.",
+   "no": 92
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 주어진 말을 이용하여 문장을 완성하시오. (6단어, 줄임말을 쓰지 말 것)\n\n그 아이들은 지금 잠을 자고 있지 않다. (the children, sleep)",
+   "answer": "The children are not sleeping now.",
+   "why": "복수 주어 the children에 맞춰 are를 쓰고, 부정은 be동사 뒤에 not, sleep은 sleeping으로 바꾼다.",
+   "no": 93
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "대화의 빈칸에 알맞은 두 단어를 쓰시오. (줄임말을 사용할 것)\n\nA: Is Mr. Kim teaching math now?\nB: No, ____ ____. He is teaching science.",
+   "answer": "he isn't",
+   "why": "Mr. Kim은 he로 받고, No 뒤에는 부정형 isn't를 쓴다.",
+   "no": 94
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 의문문으로 바꿔 쓰시오.\n\nYour friends are waiting for you.",
+   "answer": "Are your friends waiting for you?",
+   "why": "be동사 are를 주어 your friends 앞으로 보내고 물음표를 붙인다.",
+   "no": 95
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 현재진행형 문장으로 바꿔 쓰시오. (every morning을 now로 바꿀 것)\n\nSora ties her hair every morning.",
+   "answer": "Sora is tying her hair now.",
+   "alt": [
+    "Now Sora is tying her hair.",
+    "Now, Sora is tying her hair."
+   ],
+   "why": "ties를 「is+tying」으로 바꾼다. tie는 ie를 y로 바꿔 tying으로 쓴다.",
+   "no": 96
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.\n\nThe bus is <u>stoping</u> in front of the school.",
+   "answer": "stopping",
+   "why": "stop은 「단모음+단자음」으로 끝나므로 p를 한 번 더 써서 stopping으로 쓴다.",
+   "no": 97
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 괄호 안의 단어를 배열하여 문장을 완성하시오.\n\n네 여동생은 무엇을 그리고 있니? (is / drawing / what / your / sister)",
+   "answer": "What is your sister drawing?",
+   "why": "의문사가 있는 현재진행형 의문문은 「의문사+be동사+주어+v-ing?」 어순으로 쓴다.",
+   "no": 98
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 부정문으로 바꿔 쓰시오. (줄임말을 쓰지 말 것)\n\nI am using my mom's computer.",
+   "answer": "I am not using my mom's computer.",
+   "why": "be동사 am 바로 뒤에 not을 붙여 부정문을 만든다.",
+   "no": 99
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장이 같은 뜻이 되도록 빈칸에 알맞은 한 단어를 쓰시오.\n\nHe isn't drying his hair. = He ____ not drying his hair.",
+   "answer": "is",
+   "why": "isn't는 is not의 줄임말이므로 빈칸에는 is가 들어간다.",
+   "no": 100
+  }
+ ]
+}

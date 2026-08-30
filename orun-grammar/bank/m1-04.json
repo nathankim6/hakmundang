@@ -1,0 +1,1366 @@
+{
+ "id": "m1-04",
+ "grade": "중1",
+ "name": "미래시제 will·be going to",
+ "points": [
+  "will+동사원형",
+  "be going to",
+  "부정·의문"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?  Tom ____ visit his grandma tomorrow.",
+   "choices": [
+    "will",
+    "wills",
+    "is will",
+    "will to",
+    "going to"
+   ],
+   "answer": 1,
+   "why": "미래는 「will+동사원형」으로 나타낸다. will은 주어와 상관없이 형태가 변하지 않고, going to는 앞에 be동사가 있어야 한다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?  It ____ rain tomorrow.",
+   "choices": [
+    "will",
+    "wills",
+    "is going",
+    "going to",
+    "is go"
+   ],
+   "answer": 1,
+   "why": "「will+동사원형」이 미래를 나타낸다. is going은 to가 없고, going to는 be동사가 없어서 틀리다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?  We ____ going to play soccer after school.",
+   "choices": [
+    "am",
+    "is",
+    "are",
+    "be",
+    "will"
+   ],
+   "answer": 3,
+   "why": "be going to의 be동사는 주어에 맞춘다. 주어가 We이므로 are를 쓴다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?  She is going to ____ a cake this weekend.",
+   "choices": [
+    "makes",
+    "making",
+    "make",
+    "made",
+    "to make"
+   ],
+   "answer": 3,
+   "why": "be going to 뒤에는 동사원형이 온다. 따라서 make가 알맞다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?  I ____ going to buy a new bag tomorrow.",
+   "choices": [
+    "am",
+    "is",
+    "are",
+    "do",
+    "be"
+   ],
+   "answer": 1,
+   "why": "주어가 I이므로 be동사는 am을 쓴다. be going to 앞에는 반드시 주어에 맞는 be동사가 필요하다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?  They will ____ to the museum next week.",
+   "choices": [
+    "go",
+    "goes",
+    "going",
+    "went",
+    "to go"
+   ],
+   "answer": 1,
+   "why": "will 뒤에는 항상 동사원형이 온다. goes, going, went, to go는 모두 원형이 아니다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?  He ____ not come to the party tonight. (그는 오늘 밤 파티에 오지 않을 것이다.)",
+   "choices": [
+    "will",
+    "is",
+    "does",
+    "has",
+    "be"
+   ],
+   "answer": 1,
+   "why": "'오지 않을 것이다'라는 미래의 부정은 「will not+동사원형」으로 쓴다. is not 뒤에는 동사원형 come이 올 수 없다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "will not의 줄임말로 알맞은 것은?",
+   "choices": [
+    "willn't",
+    "won't",
+    "willnot",
+    "wo'nt",
+    "not'll"
+   ],
+   "answer": 2,
+   "why": "will not의 줄임말은 특별한 형태인 won't이다. willn't라는 말은 없다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?  ____ you help me with my homework tomorrow? (내일 내 숙제를 도와줄래?)",
+   "choices": [
+    "Will",
+    "Are",
+    "Do",
+    "Did",
+    "Does"
+   ],
+   "answer": 1,
+   "why": "미래의 일을 부탁·질문할 때는 「Will+주어+동사원형 ~?」을 쓴다. Are 뒤에는 동사원형 help가 올 수 없다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?  ____ she going to join the book club?",
+   "choices": [
+    "Is",
+    "Are",
+    "Does",
+    "Will",
+    "Am"
+   ],
+   "answer": 1,
+   "why": "be going to의 의문문은 be동사를 주어 앞으로 보낸다. 주어가 she이므로 Is를 쓴다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "어법상 옳은 문장은?",
+   "choices": [
+    "I will going to the park.",
+    "She wills buy a hat.",
+    "They are going to watch a movie.",
+    "He is going to plays tennis.",
+    "We will to study math."
+   ],
+   "answer": 3,
+   "why": "be going to 뒤에 동사원형 watch가 온 ③이 옳다. will 뒤에는 원형이 와야 하고(①⑤), will은 -s가 붙지 않으며(②), going to 뒤에도 원형이 온다(④).",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "어법상 틀린 문장은?",
+   "choices": [
+    "Jane will call you later.",
+    "I am going to read this book.",
+    "He will is a doctor.",
+    "We are going to swim tomorrow.",
+    "It will be sunny this afternoon."
+   ],
+   "answer": 3,
+   "why": "will 뒤에는 동사원형이 와야 하므로 He will be a doctor.가 맞다. is는 원형이 아니다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 틀린 부분은?  She <u>is</u> <u>going</u> <u>to</u> <u>meets</u> her friend <u>tomorrow</u>.",
+   "choices": [
+    "is",
+    "going",
+    "to",
+    "meets",
+    "tomorrow"
+   ],
+   "answer": 4,
+   "why": "be going to 뒤에는 동사원형이 오므로 meets를 meet으로 고쳐야 한다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 들어갈 말은?  • We ____ going to clean the room.  • You ____ my best friend.",
+   "choices": [
+    "am",
+    "is",
+    "are",
+    "be",
+    "will"
+   ],
+   "answer": 3,
+   "why": "주어 We와 You 모두 be동사 are를 쓴다. will은 두 번째 문장에서 동사가 없어 성립하지 않는다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?  A: Will you join us for lunch?  B: ____",
+   "choices": [
+    "Yes, I will.",
+    "Yes, I do.",
+    "No, I am.",
+    "Yes, I was.",
+    "No, I don't."
+   ],
+   "answer": 1,
+   "why": "Will로 물으면 will로 답한다. 긍정이면 Yes, I will. 부정이면 No, I won't.가 된다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?  A: Is he going to sell his bike?  B: ____ (아니라는 대답)",
+   "choices": [
+    "No, he isn't.",
+    "No, he doesn't.",
+    "No, he is.",
+    "Yes, he is.",
+    "No, he don't."
+   ],
+   "answer": 1,
+   "why": "be going to 의문문은 be동사로 답한다. 부정 대답은 No, he isn't.이다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "줄임말이 바르게 짝지어진 것은?",
+   "choices": [
+    "will not – wont",
+    "I will – I'll",
+    "she will – she'lls",
+    "it will – it'will",
+    "you will – you're"
+   ],
+   "answer": 2,
+   "why": "I will의 줄임말은 I'll이다. will not은 won't이고(아포스트로피 필요), you're는 you are의 줄임말이다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?  '나는 내일 바쁠 것이다.'",
+   "choices": [
+    "I will busy tomorrow.",
+    "I will am busy tomorrow.",
+    "I will be busy tomorrow.",
+    "I am will busy tomorrow.",
+    "I be busy will tomorrow."
+   ],
+   "answer": 3,
+   "why": "will 뒤에는 동사원형이 필요하므로 be동사의 원형 be를 써서 will be busy로 나타낸다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?  '그녀는 오늘 밤 TV를 볼 예정이다.'",
+   "choices": [
+    "She is going to watch TV tonight.",
+    "She is going to watches TV tonight.",
+    "She going to watch TV tonight.",
+    "She is go to watch TV tonight.",
+    "She will going to watch TV tonight."
+   ],
+   "answer": 1,
+   "why": "「be동사+going to+동사원형」의 형태를 지킨 ①이 옳다. be동사가 빠지거나(③) 동사원형이 아니면(②) 틀리다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?  He ____ going to eat fast food. (그는 패스트푸드를 먹지 않을 예정이다.)",
+   "choices": [
+    "isn't",
+    "aren't",
+    "don't",
+    "won't",
+    "doesn't"
+   ],
+   "answer": 1,
+   "why": "be going to의 부정은 be동사 뒤에 not을 붙인다. 주어가 He이므로 isn't가 알맞다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?  ____ they going to move to Seoul?",
+   "choices": [
+    "Is",
+    "Are",
+    "Do",
+    "Will",
+    "Be"
+   ],
+   "answer": 2,
+   "why": "be going to 의문문은 be동사로 시작하고, 주어 they에는 Are를 쓴다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?  The concert will ____ at 7 p.m. tomorrow.",
+   "choices": [
+    "start",
+    "starts",
+    "starting",
+    "started",
+    "to start"
+   ],
+   "answer": 1,
+   "why": "will 뒤에는 동사원형 start가 온다. 주어가 3인칭 단수여도 -s를 붙이지 않는다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?  I will not ____ late again.",
+   "choices": [
+    "be",
+    "am",
+    "is",
+    "being",
+    "to be"
+   ],
+   "answer": 1,
+   "why": "will not 뒤에도 동사원형이 오므로 be동사의 원형 be를 쓴다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은?",
+   "choices": [
+    "Will he plays soccer tomorrow?",
+    "Is she going to sing at the festival?",
+    "Are they will come to the party?",
+    "Does he will study tonight?",
+    "Will you to open the window?"
+   ],
+   "answer": 2,
+   "why": "be going to 의문문의 형태가 바른 ②가 옳다. Will 뒤에는 동사원형이 오고(①⑤), will은 be동사·do와 함께 쓰지 않는다(③④).",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. (미래를 나타낼 것)  She ____ visit her uncle next Sunday.",
+   "answer": "will",
+   "why": "미래는 「will+동사원형」으로 나타낸다. 주어가 3인칭 단수여도 will의 형태는 변하지 않는다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 쓰시오.  He is going to (buy) some flowers tomorrow.",
+   "answer": "buy",
+   "why": "be going to 뒤에는 동사원형이 오므로 buy를 그대로 쓴다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "will not을 줄임말로 쓰시오.",
+   "answer": "won't",
+   "why": "will not의 줄임말은 won't이다. willn't로 쓰지 않도록 주의한다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "I will을 줄임말로 쓰시오.",
+   "answer": "I'll",
+   "alt": [
+    "i'll"
+   ],
+   "why": "주어+will은 아포스트로피(')를 써서 I'll처럼 줄인다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 부정문으로 바꿔 쓰시오.  She will join the club.",
+   "answer": "She will not join the club.",
+   "alt": [
+    "She won't join the club.",
+    "She will not join the club",
+    "She won't join the club"
+   ],
+   "why": "will의 부정문은 will 바로 뒤에 not을 넣는다. 줄임말 won't도 가능하다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 의문문으로 바꿔 쓰시오.  He is going to learn Chinese.",
+   "answer": "Is he going to learn Chinese?",
+   "alt": [
+    "Is he going to learn Chinese"
+   ],
+   "why": "be going to의 의문문은 be동사 is를 주어 앞으로 보내 만든다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 be동사를 쓰시오.  They ____ going to have a party this Friday.",
+   "answer": "are",
+   "why": "be going to의 be동사는 주어에 맞춘다. 주어 They에는 are를 쓴다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  It will <u>is</u> cold tomorrow.",
+   "answer": "be",
+   "why": "will 뒤에는 동사원형이 와야 하므로 is를 원형 be로 고친다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  We are going to <u>played</u> badminton after lunch.",
+   "answer": "play",
+   "why": "be going to 뒤에는 동사원형이 오므로 played를 play로 고친다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.  ____ your brother wash the dishes tonight? (네 형이 오늘 밤 설거지를 할 거니?)",
+   "answer": "Will",
+   "alt": [
+    "will"
+   ],
+   "why": "미래의 일을 묻는 의문문은 「Will+주어+동사원형 ~?」으로 쓴다. 동사원형 wash가 있으므로 be동사는 올 수 없다.",
+   "no": 34
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?  Look at those dark clouds! It ____ rain soon.",
+   "choices": [
+    "is going to",
+    "will going to",
+    "is go to",
+    "going to",
+    "is going"
+   ],
+   "answer": 1,
+   "why": "눈앞의 근거를 보고 하는 예측은 be going to로 나타낸다. 형태상으로도 「is going to+동사원형」만 어법에 맞는다.",
+   "no": 35
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 틀린 것은?",
+   "choices": [
+    "I'm going to visit my cousins this weekend.",
+    "Will you turn off the light?",
+    "She won't eats breakfast tomorrow.",
+    "Are you going to take a taxi?",
+    "He will be twelve next month."
+   ],
+   "answer": 3,
+   "why": "won't 뒤에는 동사원형이 와야 하므로 eats가 아니라 eat을 써야 한다.",
+   "no": 36
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 틀린 것은?",
+   "choices": [
+    "I <u>will</u> see you soon.",
+    "He is <u>going to</u> sell his car.",
+    "We <u>are going to</u> visit the zoo.",
+    "She will <u>not</u> come today.",
+    "They will <u>going</u> to the beach."
+   ],
+   "answer": 5,
+   "why": "will 뒤에는 동사원형이 와야 하므로 going을 go로 고쳐야 한다.",
+   "no": 37
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?  A: What are you going to do this Saturday?  B: ____",
+   "choices": [
+    "I'm going to go camping with my family.",
+    "I went camping last Saturday.",
+    "I am camping right now.",
+    "Yes, I am.",
+    "I will went camping."
+   ],
+   "answer": 1,
+   "why": "이번 주 토요일의 계획을 물었으므로 be going to로 미래 계획을 말한 ①이 알맞다. ②는 과거, ③은 현재의 일이고, 의문사 의문문에는 Yes/No로 답하지 않는다.",
+   "no": 38
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?  A: ____  B: No, I won't. I'm going to stay home.",
+   "choices": [
+    "Will you go shopping tomorrow?",
+    "Did you go shopping yesterday?",
+    "Are you going shopping now?",
+    "Do you like shopping?",
+    "Are you going to stay home?"
+   ],
+   "answer": 1,
+   "why": "대답이 No, I won't.이므로 Will로 물은 질문이어야 한다. ⑤는 be동사로 답해야 하고, 집에 있을 것이라 했으므로 내용상으로도 No가 어울리지 않는다.",
+   "no": 39
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 들어갈 말은?  • My sisters ____ going to bake cookies.  • You ____ going to love this movie.",
+   "choices": [
+    "am",
+    "is",
+    "are",
+    "was",
+    "were"
+   ],
+   "answer": 3,
+   "why": "주어 My sisters(복수)와 You 모두 be동사 are를 쓴다. 미래 계획이므로 과거형 were는 맞지 않는다.",
+   "no": 40
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?  '우리는 내년에 중국어를 배울 것이다.'",
+   "choices": [
+    "We will learn Chinese next year.",
+    "We will learning Chinese next year.",
+    "We are going to learning Chinese next year.",
+    "We will to learn Chinese next year.",
+    "We learned Chinese next year."
+   ],
+   "answer": 1,
+   "why": "「will+동사원형」을 지킨 ①이 옳다. will/be going to 뒤에 -ing형이나 to부정사를 쓰면 틀리고, ⑤는 과거형이다.",
+   "no": 41
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?  '그는 오늘 오후에 개를 산책시키지 않을 것이다.'",
+   "choices": [
+    "He won't walk his dog this afternoon.",
+    "He won't walks his dog this afternoon.",
+    "He doesn't will walk his dog this afternoon.",
+    "He isn't going to walks his dog this afternoon.",
+    "He will walk his dog this afternoon."
+   ],
+   "answer": 1,
+   "why": "미래의 부정은 「won't+동사원형」으로 쓴다. ⑤는 긍정문이라 우리말 뜻과 반대이다.",
+   "no": 42
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 문장이 같은 뜻이 되도록 빈칸에 알맞은 말은?  She will make dinner tonight. = She ____ make dinner tonight.",
+   "choices": [
+    "is going to",
+    "is going",
+    "going to",
+    "will going to",
+    "is to"
+   ],
+   "answer": 1,
+   "why": "will은 be going to로 바꿔 쓸 수 있다. be동사와 to가 모두 있는 is going to가 알맞다.",
+   "no": 43
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "Is Tom going to joins the band?",
+    "Sena will is a good singer.",
+    "My uncle is going to open a bakery.",
+    "I will not going to the gym.",
+    "Will they coming to the show?"
+   ],
+   "answer": 3,
+   "why": "「be going to+동사원형」을 지킨 ③이 옳다. going to와 will 뒤에는 반드시 동사원형이 온다.",
+   "no": 44
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 단어들을 바르게 배열한 것은?  (will / you / open / the / window)?",
+   "choices": [
+    "Will you open the window?",
+    "Will you window the open?",
+    "You will open window the?",
+    "Will open you the window?",
+    "The window will you open?"
+   ],
+   "answer": 1,
+   "why": "will 의문문은 「Will+주어+동사원형+목적어 ~?」의 어순으로 쓴다.",
+   "no": 45
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?  My family ____ to move to a new house next month.",
+   "choices": [
+    "is going",
+    "will",
+    "are go",
+    "is will",
+    "goes"
+   ],
+   "answer": 1,
+   "why": "빈칸 뒤에 to move가 있으므로 is going을 넣어 be going to 형태를 만든다. will 뒤에는 to 없이 동사원형이 와야 하므로 맞지 않는다.",
+   "no": 46
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장을 부정문으로 바르게 바꾼 것은?  Jisu is going to ride a bike.",
+   "choices": [
+    "Jisu isn't going to ride a bike.",
+    "Jisu doesn't going to ride a bike.",
+    "Jisu is going not to ride a bike.",
+    "Jisu won't going to ride a bike.",
+    "Jisu is going to not rides a bike."
+   ],
+   "answer": 1,
+   "why": "be going to의 부정문은 be동사 뒤에 not을 붙인다. do동사를 쓰지 않는 것에 주의한다.",
+   "no": 47
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?  A: Will your parents be angry?  B: ____",
+   "choices": [
+    "No, they won't.",
+    "No, they aren't.",
+    "No, they don't.",
+    "No, they willn't.",
+    "No, they will."
+   ],
+   "answer": 1,
+   "why": "Will 의문문에는 will/won't로 답한다. 부정 대답은 No, they won't.이며 willn't라는 줄임말은 없다.",
+   "no": 48
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분의 의미가 나머지 넷과 다른 것은?",
+   "choices": [
+    "She <u>is going to</u> write a letter.",
+    "He <u>is going to</u> the library now.",
+    "I <u>am going to</u> clean my room.",
+    "They <u>are going to</u> sell the house.",
+    "We <u>are going to</u> watch the game."
+   ],
+   "answer": 2,
+   "why": "②는 '지금 도서관에 가고 있다'라는 진행형(go의 -ing)이고, 나머지는 모두 '~할 예정이다'라는 미래 표현 be going to+동사원형이다.",
+   "no": 49
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?  A: The phone is ringing.  B: OK, I ____ answer it.",
+   "choices": [
+    "will",
+    "am going",
+    "going to",
+    "will to",
+    "am will"
+   ],
+   "answer": 1,
+   "why": "빈칸 뒤의 동사원형 answer 앞에는 will이 온다. am going은 to가 없어서 동사원형과 연결될 수 없다.",
+   "no": 50
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장을 의문문으로 바르게 바꾼 것은?  They are going to build a new library.",
+   "choices": [
+    "Are they going to build a new library?",
+    "Do they going to build a new library?",
+    "Are they go to build a new library?",
+    "Will they are going to build a new library?",
+    "Is they going to build a new library?"
+   ],
+   "answer": 1,
+   "why": "be going to의 의문문은 be동사 are를 주어 앞으로 보낸다. 주어가 they이므로 Is가 아닌 Are를 쓴다.",
+   "no": 51
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?  A: ____ is going to bring the snacks?  B: Mina is.",
+   "choices": [
+    "Who",
+    "Do",
+    "Are",
+    "Will",
+    "Does"
+   ],
+   "answer": 1,
+   "why": "대답이 'Mina가 (가져올 것이다)'이므로 사람을 묻는 의문사 Who가 주어 자리에 온 것이다.",
+   "no": 52
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "'비가 올 것이다'를 be going to를 사용해 바르게 쓴 것은?",
+   "choices": [
+    "It is going to rain.",
+    "It is going to rains.",
+    "It is going to raining.",
+    "It will rain.",
+    "It is go to rain."
+   ],
+   "answer": 1,
+   "why": "「be going to+동사원형」을 지킨 ①이 알맞다. ④는 뜻은 같지만 be going to를 쓰라는 조건에 맞지 않는다.",
+   "no": 53
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 순서대로 짝지어진 것은?  I ____ going to study, and Jake ____ going to play games.",
+   "choices": [
+    "am – is",
+    "is – am",
+    "am – are",
+    "are – is",
+    "is – is"
+   ],
+   "answer": 1,
+   "why": "주어 I에는 am, 3인칭 단수 Jake에는 is를 쓴다.",
+   "no": 54
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "질문과 대답이 바르게 연결된 것은?",
+   "choices": [
+    "Will you come? – Yes, I do.",
+    "Is she going to dance? – Yes, she is.",
+    "Will he win? – No, he isn't.",
+    "Are they going to move? – Yes, they will.",
+    "Will Amy sing? – No, she doesn't."
+   ],
+   "answer": 2,
+   "why": "be going to 의문문에는 be동사로 답한다. Will 의문문에는 will/won't로 답해야 하므로 나머지는 모두 어긋난다.",
+   "no": 55
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?  He watched TV yesterday, and he ____ a book tomorrow.",
+   "choices": [
+    "will read",
+    "reads",
+    "read",
+    "was reading",
+    "is read"
+   ],
+   "answer": 1,
+   "why": "tomorrow가 있으므로 미래 표현 「will+동사원형」을 쓴다. 과거형이나 현재형은 미래의 일을 나타낼 수 없다.",
+   "no": 56
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "We're going to going fishing.",
+    "Minji will not be late tomorrow.",
+    "Will you sending me the photo?",
+    "He is going to washed his car.",
+    "Are you go to the party tonight?"
+   ],
+   "answer": 2,
+   "why": "will not 뒤에 동사원형 be를 쓴 ②가 옳다. will/be going to 뒤에는 -ing형이나 과거형이 올 수 없다.",
+   "no": 57
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "be going to를 사용하여 같은 뜻의 문장으로 바꿔 쓰시오.  He will clean the classroom.",
+   "answer": "He is going to clean the classroom.",
+   "alt": [
+    "He's going to clean the classroom.",
+    "He is going to clean the classroom",
+    "He's going to clean the classroom"
+   ],
+   "why": "will은 「be going to+동사원형」으로 바꿔 쓸 수 있다. 주어 He에 맞춰 is를 쓴다.",
+   "no": 58
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "will을 사용하여 같은 뜻의 문장으로 바꿔 쓰시오.  She is going to buy a scarf.",
+   "answer": "She will buy a scarf.",
+   "alt": [
+    "She'll buy a scarf.",
+    "She will buy a scarf",
+    "She'll buy a scarf"
+   ],
+   "why": "be going to는 「will+동사원형」으로 바꿔 쓸 수 있다.",
+   "no": 59
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 부정문으로 바꿔 쓰시오.  I am going to tell him the secret.",
+   "answer": "I am not going to tell him the secret.",
+   "alt": [
+    "I'm not going to tell him the secret.",
+    "I am not going to tell him the secret",
+    "I'm not going to tell him the secret"
+   ],
+   "why": "be going to의 부정문은 be동사 뒤에 not을 넣어 만든다.",
+   "no": 60
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 의문문으로 바꿔 쓰시오.  Your sister will like this gift.",
+   "answer": "Will your sister like this gift?",
+   "alt": [
+    "Will your sister like this gift"
+   ],
+   "why": "will 의문문은 will을 주어 앞으로 보내 「Will+주어+동사원형 ~?」으로 만든다.",
+   "no": 61
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (두 단어)  Sumin <u>will is</u> thirteen years old next year.",
+   "answer": "will be",
+   "why": "will 뒤에는 동사원형이 와야 하므로 is를 원형 be로 고쳐 will be로 쓴다.",
+   "no": 62
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Are you going to <u>coming</u> to my birthday party?",
+   "answer": "come",
+   "why": "be going to 뒤에는 동사원형이 오므로 coming을 come으로 고친다.",
+   "no": 63
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말에 맞게 빈칸에 알맞은 한 단어를 쓰시오.  그들은 내일 테니스를 치지 않을 것이다. → They ____ play tennis tomorrow.",
+   "answer": "won't",
+   "why": "'치지 않을 것이다'는 will not이며, 한 단어로는 줄임말 won't를 쓴다.",
+   "no": 64
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "대화의 빈칸에 알맞은 한 단어를 쓰시오.  A: Will Jake join the soccer team?  B: No, he ____.",
+   "answer": "won't",
+   "why": "Will 의문문의 부정 대답은 「No, 주어+won't.」로 한다.",
+   "no": 65
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "대화의 빈칸에 알맞은 한 단어를 쓰시오.  A: ____ you going to make a snowman?  B: Yes, we are.",
+   "answer": "Are",
+   "alt": [
+    "are"
+   ],
+   "why": "대답이 we are이므로 be going to 의문문이다. 주어 you 앞에는 Are를 쓴다.",
+   "no": 66
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하여 문장을 완성하시오.  (going / my dad / cook / is / to) dinner tonight.",
+   "answer": "My dad is going to cook",
+   "alt": [
+    "My dad is going to cook dinner tonight.",
+    "my dad is going to cook"
+   ],
+   "why": "「주어+be동사+going to+동사원형」의 어순으로 배열한다.",
+   "no": 67
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. Junho is going to enter the science contest next month.\nㄴ. Will your parents buys you a bike?\nㄷ. The train won't arrive on time because of the snow.\nㄹ. Is Emma going to studying abroad?",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 be going to+동사원형, ㄷ은 won't+동사원형으로 옳다. ㄴ은 Will 뒤에 원형 buy, ㄹ은 going to 뒤에 원형 study를 써야 한다.",
+   "no": 68
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 틀린 것을 모두 고른 것은?\nㄱ. We will going hiking if it is sunny.\nㄴ. I'm going to take piano lessons this winter.\nㄷ. Will Mr. Kim teaches math next year?\nㄹ. She isn't going to give up her dream.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 will 뒤에 원형 go, ㄷ은 Will 뒤에 원형 teach를 써야 하므로 틀리다. ㄴ, ㄹ은 be going to의 형태가 바르다.",
+   "no": 69
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분의 쓰임이 <보기>와 같은 것은?\n<보기> I am going to visit the museum tomorrow.",
+   "choices": [
+    "She <u>is going to</u> the market with her mom.",
+    "They <u>are going to</u> the concert hall now.",
+    "He <u>is going to</u> fix the broken chair.",
+    "We <u>are going to</u> school by bus.",
+    "I <u>am going to</u> bed early these days."
+   ],
+   "answer": 3,
+   "why": "<보기>와 ③은 '~할 예정이다'라는 미래 표현(be going to+동사원형)이다. 나머지는 모두 '~에 가고 있다/간다'라는 동사 go의 진행형으로, 뒤에 장소가 온다.",
+   "no": 70
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 나머지 넷과 다른 것은?",
+   "choices": [
+    "He ____ going to sell his old comic books.",
+    "____ she going to invite Mina?",
+    "My brother ____ going to travel alone.",
+    "____ your friends going to help you?",
+    "The singer ____ going to release a new song."
+   ],
+   "answer": 4,
+   "why": "④는 주어 your friends가 복수이므로 are가 들어가고, 나머지는 모두 3인칭 단수 주어라서 is가 들어간다.",
+   "no": 71
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\nA: I heard you moved to a new town. How's your new school?\nB: I don't know yet. School starts next week.\nA: ____\nB: Yes. I'm going to join the drama club.",
+   "choices": [
+    "Are you going to join any clubs?",
+    "Did you join the drama club?",
+    "Will you be late for school?",
+    "Do you go to school by bus?",
+    "Are you in the drama club now?"
+   ],
+   "answer": 1,
+   "why": "대답이 Yes 뒤에 미래 계획(be going to)으로 이어지므로, 동아리에 들 계획을 미래로 묻는 ①이 알맞다. 아직 개학 전이므로 과거·현재를 묻는 질문은 맞지 않는다.",
+   "no": 72
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?  '민수는 방과 후에 도서관에 갈 예정이다.'",
+   "choices": [
+    "Minsu is going to go to the library after school.",
+    "Minsu is going to the library go after school.",
+    "Minsu will goes to the library after school.",
+    "Minsu is going go to the library after school.",
+    "Minsu going to go to the library after school."
+   ],
+   "answer": 1,
+   "why": "'갈 예정이다'는 be going to 뒤에 동사원형 go를 그대로 써서 is going to go로 나타낸다. be동사나 to가 빠지면 틀리다.",
+   "no": 73
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "짝지어진 대화가 어색한 것은?",
+   "choices": [
+    "A: Will it be windy tomorrow? B: Yes, it will.",
+    "A: Are you going to sleep now? B: No, I'm not.",
+    "A: Will Tom bring his camera? B: No, he won't.",
+    "A: Is Jenny going to sing at the contest? B: Yes, she does.",
+    "A: Will you lend me your umbrella? B: Sure, I will."
+   ],
+   "answer": 4,
+   "why": "be going to 의문문에는 be동사로 답해야 하므로 Yes, she is.가 맞다. do동사로 답한 ④가 어색하다.",
+   "no": 74
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "두 문장의 연결이 어법·의미상 적절하지 않은 것은?",
+   "choices": [
+    "I will wash the dishes. = I am going to wash the dishes.",
+    "She won't drink coffee. = She isn't going to drink coffee.",
+    "Will he leave soon? = Is he going to leave soon?",
+    "They will not swim. = They don't going to swim.",
+    "We are going to win. = We will win."
+   ],
+   "answer": 4,
+   "why": "be going to의 부정은 be동사+not이므로 They aren't going to swim.이 맞다. don't going to는 어법에 어긋난다.",
+   "no": 75
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 단어들을 바르게 배열하여 문장을 만들 때 네 번째에 오는 단어는?  (to / brother / is / my / study / going) math.",
+   "choices": [
+    "to",
+    "going",
+    "is",
+    "study",
+    "brother"
+   ],
+   "answer": 2,
+   "why": "바르게 배열하면 My brother is going to study math.이므로 네 번째 단어는 going이다.",
+   "no": 76
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 will이 들어갈 수 없는 것은?",
+   "choices": [
+    "Sora ____ help you with your bag.",
+    "____ you close the door, please?",
+    "My mom ____ going to make bulgogi.",
+    "The movie ____ begin at seven.",
+    "I ____ never forget your kindness."
+   ],
+   "answer": 3,
+   "why": "③은 뒤에 going to가 있으므로 be동사 is가 필요하다. will 뒤에는 going to가 아니라 동사원형이 와야 한다.",
+   "no": 77
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 수 없는 것은?  They ____ play badminton this weekend.",
+   "choices": [
+    "will",
+    "won't",
+    "are going to",
+    "will not",
+    "are go to"
+   ],
+   "answer": 5,
+   "why": "동사원형 play 앞에는 will, won't, will not, are going to가 모두 올 수 있지만 are go to는 어법에 없는 형태이다.",
+   "no": 78
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 ①~⑤ 중 어법상 틀린 것은?\nTomorrow is Saturday. My family ①<u>is going to</u> visit my grandparents. My dad ②<u>will drive</u> us there. We ③<u>are going to</u> have lunch together. After lunch, I ④<u>will playing</u> baduk with my grandpa. It ⑤<u>will be</u> a fun day.",
+   "choices": [
+    "① is going to",
+    "② will drive",
+    "③ are going to",
+    "④ will playing",
+    "⑤ will be"
+   ],
+   "answer": 4,
+   "why": "will 뒤에는 동사원형이 와야 하므로 will playing이 아니라 will play가 맞다.",
+   "no": 79
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 ①~⑤ 중 어법상 틀린 것은?\nNext week is Sports Day. Our class ①<u>will practice</u> hard every day. Jiho ②<u>is going to carries</u> the class flag. We ③<u>won't give</u> up until the end. Our parents ④<u>are going to cheer</u> for us. I hope we ⑤<u>will win</u> first prize.",
+   "choices": [
+    "① will practice",
+    "② is going to carries",
+    "③ won't give",
+    "④ are going to cheer",
+    "⑤ will win"
+   ],
+   "answer": 2,
+   "why": "be going to 뒤에는 동사원형이 와야 하므로 carries가 아니라 carry를 써야 한다.",
+   "no": 80
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?  '너는 언제 숙제를 끝낼 거니?'",
+   "choices": [
+    "When will you finish your homework?",
+    "When you will finish your homework?",
+    "When will you finishing your homework?",
+    "When are you finish your homework?",
+    "When do you will finish your homework?"
+   ],
+   "answer": 1,
+   "why": "의문사가 있는 will 의문문은 「의문사+will+주어+동사원형 ~?」의 어순으로 쓴다.",
+   "no": 81
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말이 순서대로 짝지어진 것은?\nA: (A) you going to watch the fireworks tonight?\nB: Yes, I am. My sister (B) come with me, too.",
+   "choices": [
+    "Are – will",
+    "Will – is",
+    "Are – is",
+    "Do – will",
+    "Are – wills"
+   ],
+   "answer": 1,
+   "why": "(A)는 뒤의 going to와 대답 I am으로 보아 Are, (B)는 동사원형 come 앞이므로 will이 알맞다.",
+   "no": 82
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 [조건]에 맞게 영작한 것으로 옳은 것은?\n'그는 그의 방을 청소하지 않을 것이다.' [조건: be going to 사용, 줄임말 없이 8단어]",
+   "choices": [
+    "He is not going to clean his room.",
+    "He will not clean his room.",
+    "He isn't going to clean his room.",
+    "He is going to not clean his room.",
+    "He is not going to cleans his room."
+   ],
+   "answer": 1,
+   "why": "be going to의 부정은 be동사 뒤에 not을 두고 동사원형을 쓴다. ②는 be going to 조건, ③은 줄임말 없이 8단어라는 조건에 어긋난다.",
+   "no": 83
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "질문에 대한 대답이 적절한 것을 모두 고른 것은?\nㄱ. A: Will you be home tonight? B: Yes, I will.\nㄴ. A: Is your dad going to fix the computer? B: Yes, he will.\nㄷ. A: Will Mina and Suji come? B: No, they won't.\nㄹ. A: Are we going to take a test? B: No, we aren't.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ, ㄹ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄱ, ㄴ, ㄷ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "Will 의문문에는 will로, be going to 의문문에는 be동사로 답한다. ㄴ은 Yes, he is.로 답해야 하므로 부적절하다.",
+   "no": 84
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 들어갈 말은?\n• Junho ____ be a middle school student next year. (내년에 ~가 될 것이다)\n• ____ you carry this box for me, please? (~해 줄래?)",
+   "choices": [
+    "will",
+    "is",
+    "are",
+    "does",
+    "did"
+   ],
+   "answer": 1,
+   "why": "두 문장 모두 동사원형(be, carry) 앞에서 미래·부탁을 나타내는 will이 알맞다. be동사나 do동사 뒤에는 이런 형태가 올 수 없다.",
+   "no": 85
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 부정문으로 만들 때 not이 들어갈 위치는?  We ( ① ) are ( ② ) going ( ③ ) to ( ④ ) order ( ⑤ ) chicken tonight.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 2,
+   "why": "be going to의 부정은 be동사 바로 뒤에 not을 넣어 are not going to로 만든다.",
+   "no": 86
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음을 의문문으로 만들 때 Will이 들어갈 위치는?  ( ① ) my ( ② ) grandmother ( ③ ) visit ( ④ ) us ( ⑤ ) this weekend? (할머니가 이번 주말에 우리를 방문하실까?)",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 1,
+   "why": "will 의문문은 will을 주어 앞, 즉 문장 맨 앞에 두어 「Will+주어+동사원형 ~?」으로 만든다.",
+   "no": 87
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 문장을 고르시오.",
+   "choices": [
+    "The band is going to hold a concert next month, so I will buy a ticket soon.",
+    "The band will holds a concert next month.",
+    "I am going to buying a ticket for the concert.",
+    "Willn't you go to the concert with me?",
+    "We are going to seeing the show together."
+   ],
+   "answer": 1,
+   "why": "will과 be going to 뒤에 모두 동사원형을 쓴 ①이 옳다. will not의 줄임말은 won't이며 willn't는 없는 형태이다.",
+   "no": 88
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 표를 보고 빈칸에 알맞은 말을 고르시오.\n[Mina의 주말 계획: 토요일 – 영화 보기 / 일요일 – 봉사활동]\nMina ____ a movie this Saturday, and she is going to do volunteer work on Sunday.",
+   "choices": [
+    "is going to watch",
+    "watches",
+    "watched",
+    "is going to watches",
+    "going to watch"
+   ],
+   "answer": 1,
+   "why": "주말 '계획'을 말하므로 미래 표현 「is going to+동사원형」이 알맞다. 과거형·현재형이나 be동사가 빠진 형태는 맞지 않는다.",
+   "no": 89
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "의문문으로 바르게 바꾼 것을 모두 고른 것은?\nㄱ. She will win the race. → Will she win the race?\nㄴ. They are going to leave. → Are they going to leave?\nㄷ. It will snow. → Does it will snow?",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "will 의문문은 will을, be going to 의문문은 be동사를 주어 앞으로 보낸다. ㄷ처럼 do동사를 will과 함께 쓸 수 없다.",
+   "no": 90
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 주어진 말을 모두 사용하여 영작하시오. (be going to 포함, 10단어)\n'나의 이모는 다음 달에 식당을 열 예정이다.' (my aunt, open, a restaurant, next month)",
+   "answer": "My aunt is going to open a restaurant next month.",
+   "alt": [
+    "My aunt is going to open a restaurant next month"
+   ],
+   "why": "「주어+is going to+동사원형」의 어순으로 쓴다. 주어가 3인칭 단수이므로 be동사는 is를 쓴다.",
+   "no": 91
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "be going to를 사용하여 같은 뜻의 문장으로 바꿔 쓰시오.  Will the students plant flowers?",
+   "answer": "Are the students going to plant flowers?",
+   "alt": [
+    "Are the students going to plant flowers"
+   ],
+   "why": "will 의문문을 be going to 의문문으로 바꿀 때는 주어(복수)에 맞는 be동사 Are를 문장 맨 앞에 둔다.",
+   "no": 92
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (세 단어)  The chefs <u>is going to</u> cook Italian food for us.",
+   "answer": "are going to",
+   "why": "주어 The chefs가 복수이므로 be동사를 are로 고쳐야 한다.",
+   "no": 93
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  We <u>willn't</u> give up.",
+   "answer": "won't",
+   "alt": [
+    "will not"
+   ],
+   "why": "will not의 줄임말은 won't이다. willn't는 존재하지 않는 형태이다.",
+   "no": 94
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "대화의 빈칸에 알맞은 두 단어를 쓰시오.  A: Are you and Jinsu going to practice on Sunday?  B: No, ____ ____.",
+   "answer": "we aren't",
+   "alt": [
+    "we're not",
+    "we are not"
+   ],
+   "why": "you and Jinsu에게 물었으므로 we로 받고, be going to 의문문의 부정 대답은 be동사+not으로 한다.",
+   "no": 95
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "be going to를 사용하여 같은 뜻의 문장으로 바꿔 쓰시오.  It will not be hot tomorrow.",
+   "answer": "It is not going to be hot tomorrow.",
+   "alt": [
+    "It isn't going to be hot tomorrow.",
+    "It's not going to be hot tomorrow.",
+    "It is not going to be hot tomorrow",
+    "It isn't going to be hot tomorrow"
+   ],
+   "why": "will not은 be동사+not going to로 바꾼다. going to 뒤에는 동사원형 be를 그대로 쓴다.",
+   "no": 96
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하여 의문문을 완성하시오.  (will / where / eat / you / lunch)?",
+   "answer": "Where will you eat lunch?",
+   "alt": [
+    "Where will you eat lunch"
+   ],
+   "why": "의문사가 있는 will 의문문은 「의문사+will+주어+동사원형 ~?」의 어순으로 쓴다.",
+   "no": 97
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말에 맞게 빈칸에 알맞은 두 단어를 쓰시오. (won't 사용)  하나는 오늘 밤 숙제를 하지 않을 것이다. → Hana ____ ____ her homework tonight.",
+   "answer": "won't do",
+   "why": "'하지 않을 것이다'는 won't 뒤에 동사원형 do를 써서 나타낸다.",
+   "no": 98
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "대화의 빈칸에 알맞은 세 단어를 쓰시오.  A: What are you going to do during the vacation?  B: I ____ ____ ____ visit my uncle in Busan.",
+   "answer": "am going to",
+   "why": "be going to 의문문에 맞춰 대답도 be going to로 한다. 주어 I에는 am을 쓴다.",
+   "no": 99
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 틀린 부분을 찾아 문장 전체를 다시 쓰시오.  Does Minho going to bring the ball?",
+   "answer": "Is Minho going to bring the ball?",
+   "alt": [
+    "Is Minho going to bring the ball"
+   ],
+   "why": "be going to의 의문문은 do동사가 아니라 be동사로 시작한다. 주어 Minho에 맞춰 Is를 쓴다.",
+   "no": 100
+  }
+ ]
+}

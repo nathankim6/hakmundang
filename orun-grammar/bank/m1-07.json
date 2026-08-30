@@ -1,0 +1,1379 @@
+{
+ "id": "m1-07",
+ "grade": "중1",
+ "name": "의문사 의문문",
+ "points": [
+  "who/what/when/where/why/how",
+  "how+형용사/부사",
+  "의문사+do/does/did 어순"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: ____ is your name?\nB: My name is Jisu.",
+   "choices": [
+    "Who",
+    "When",
+    "What",
+    "Where",
+    "Why"
+   ],
+   "answer": 3,
+   "why": "이름(무엇)을 묻는 말이므로 What이 알맞다. Who는 '누구', Where는 '어디'를 물을 때 쓴다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: ____ do you live?\nB: I live in Seoul.",
+   "choices": [
+    "What",
+    "Where",
+    "When",
+    "Why",
+    "Who"
+   ],
+   "answer": 2,
+   "why": "대답이 사는 장소(in Seoul)이므로 장소를 묻는 Where가 알맞다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: ____ is your birthday?\nB: It's on May 5th.",
+   "choices": [
+    "Who",
+    "Why",
+    "How",
+    "When",
+    "Where"
+   ],
+   "answer": 4,
+   "why": "대답이 날짜(May 5th)이므로 때를 묻는 When이 알맞다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: ____ is that tall boy?\nB: He is my brother.",
+   "choices": [
+    "Who",
+    "What",
+    "When",
+    "Where",
+    "How"
+   ],
+   "answer": 1,
+   "why": "대답이 사람(my brother)이므로 '누구'를 묻는 Who가 알맞다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: ____ are you late?\nB: Because I missed the bus.",
+   "choices": [
+    "When",
+    "Where",
+    "What",
+    "Who",
+    "Why"
+   ],
+   "answer": 5,
+   "why": "Because(~ 때문에)로 이유를 답하고 있으므로 이유를 묻는 Why가 알맞다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: ____ old are you?\nB: I'm thirteen years old.",
+   "choices": [
+    "What",
+    "How",
+    "Who",
+    "When",
+    "Why"
+   ],
+   "answer": 2,
+   "why": "나이는 How old(얼마나 나이 든)로 묻는다. 'How+형용사'의 형태이다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: ____ does she get up?\nB: At six thirty.",
+   "choices": [
+    "Who",
+    "Why",
+    "When",
+    "Where",
+    "What"
+   ],
+   "answer": 3,
+   "why": "대답이 시각(At six thirty)이므로 때를 묻는 When이 알맞다. What은 뒤에 time이 있어야 시각을 물을 수 있다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nHow ____ books do you have in your bag?",
+   "choices": [
+    "many",
+    "much",
+    "old",
+    "long",
+    "tall"
+   ],
+   "answer": 1,
+   "why": "books는 셀 수 있는 명사의 복수형이므로 수를 묻는 How many를 쓴다. much는 셀 수 없는 명사에 쓴다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: How ____ is this bag?\nB: It's 20,000 won.",
+   "choices": [
+    "many",
+    "old",
+    "long",
+    "much",
+    "far"
+   ],
+   "answer": 4,
+   "why": "대답이 가격이므로 값을 묻는 How much가 알맞다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: Where ____ Tom live?\nB: He lives in Busan.",
+   "choices": [
+    "do",
+    "does",
+    "is",
+    "are",
+    "am"
+   ],
+   "answer": 2,
+   "why": "주어 Tom이 3인칭 단수이고 일반동사 live가 있으므로 does를 쓴다. be동사는 일반동사와 함께 쓰지 않는다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: What ____ you do after school?\nB: I play soccer with my friends.",
+   "choices": [
+    "do",
+    "does",
+    "did",
+    "is",
+    "are"
+   ],
+   "answer": 1,
+   "why": "주어가 you이고 대답이 현재시제(play)이므로 do가 알맞다. did는 과거를 물을 때 쓴다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: Why ____ you angry yesterday?\nB: Because my brother broke my toy.",
+   "choices": [
+    "do",
+    "does",
+    "did",
+    "was",
+    "were"
+   ],
+   "answer": 5,
+   "why": "뒤에 일반동사 없이 형용사 angry가 오고 yesterday(과거)이므로 be동사 과거형 were(주어 you)가 알맞다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대답에 알맞은 질문은?\nB: She is my English teacher.",
+   "choices": [
+    "Where is she?",
+    "How is she?",
+    "Who is she?",
+    "What is she doing?",
+    "When is she busy?"
+   ],
+   "answer": 3,
+   "why": "'나의 영어 선생님'이라고 사람이 누구인지 답했으므로 Who is she?가 알맞다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: How ____ is the Han River?\nB: It's about 500 kilometers long.",
+   "choices": [
+    "many",
+    "often",
+    "much",
+    "long",
+    "old"
+   ],
+   "answer": 4,
+   "why": "강의 길이(500 kilometers long)를 묻고 있으므로 How long이 알맞다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: How ____ do you exercise?\nB: Twice a week.",
+   "choices": [
+    "long",
+    "often",
+    "much",
+    "many",
+    "far"
+   ],
+   "answer": 2,
+   "why": "대답이 횟수(일주일에 두 번)이므로 빈도를 묻는 How often이 알맞다. How long은 기간을 묻는다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: Where ____ my keys?\nB: They are on the table.",
+   "choices": [
+    "are",
+    "is",
+    "do",
+    "does",
+    "am"
+   ],
+   "answer": 1,
+   "why": "주어 my keys가 복수이고 위치를 묻는 be동사 의문문이므로 are를 쓴다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "What does she likes?",
+    "Where do he live?",
+    "When is your school festival?",
+    "Why you are sad?",
+    "How much brothers do you have?"
+   ],
+   "answer": 3,
+   "why": "③이 옳다. ①은 likes→like, ②는 do→does, ④는 Why are you sad?, ⑤는 much→many로 고쳐야 한다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은?",
+   "choices": [
+    "Who is that girl?",
+    "What do you want?",
+    "Where does he work?",
+    "When your birthday is?",
+    "How old is your dog?"
+   ],
+   "answer": 4,
+   "why": "의문사 의문문은 '의문사+동사+주어' 어순이므로 ④는 When is your birthday?로 고쳐야 한다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: ____ do you spell your last name?\nB: K-I-M.",
+   "choices": [
+    "What",
+    "Who",
+    "When",
+    "Why",
+    "How"
+   ],
+   "answer": 5,
+   "why": "철자를 어떻게 쓰는지 방법을 묻는 것이므로 How가 알맞다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 짝지어진 대화 중 어색한 것은?",
+   "choices": [
+    "Where is the bank? — It's next to the post office.",
+    "When do you go to bed? — At ten.",
+    "Who is your best friend? — Mina is.",
+    "How is the weather? — It's sunny.",
+    "Why do you like summer? — I like winter."
+   ],
+   "answer": 5,
+   "why": "⑤는 여름을 좋아하는 이유(Because ~)를 답해야 하는데 겨울을 좋아한다고 답해 어색하다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: What ____ is it now?\nB: It's three o'clock.",
+   "choices": [
+    "time",
+    "day",
+    "date",
+    "color",
+    "year"
+   ],
+   "answer": 1,
+   "why": "대답이 시각이므로 시각을 묻는 What time이 알맞다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: What ____ is it today?\nB: It's Friday.",
+   "choices": [
+    "time",
+    "day",
+    "date",
+    "month",
+    "year"
+   ],
+   "answer": 2,
+   "why": "대답이 요일(Friday)이므로 요일을 묻는 What day가 알맞다. What date는 날짜를 물을 때 쓴다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "두 빈칸에 공통으로 알맞은 말은?\n• How ____ water do you drink a day?\n• How ____ is this cap?",
+   "choices": [
+    "many",
+    "old",
+    "often",
+    "much",
+    "long"
+   ],
+   "answer": 4,
+   "why": "water는 셀 수 없는 명사이므로 How much, 가격을 물을 때도 How much를 쓴다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: ____ is your father?\nB: He's fine.",
+   "choices": [
+    "Who",
+    "What",
+    "How",
+    "Where",
+    "When"
+   ],
+   "answer": 3,
+   "why": "대답이 안부(He's fine)이므로 상태·안부를 묻는 How가 알맞다. Who라면 사람이 누구인지 답해야 한다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "대답에 맞게 빈칸에 알맞은 의문사 한 단어를 쓰시오.\nA: ____ is your umbrella?\nB: It's under the chair.",
+   "answer": "Where",
+   "alt": [
+    "where"
+   ],
+   "why": "대답이 위치(의자 아래)이므로 장소를 묻는 Where를 쓴다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "대답에 맞게 빈칸에 알맞은 의문사 한 단어를 쓰시오.\nA: ____ is your favorite singer?\nB: IU is my favorite singer.",
+   "answer": "Who",
+   "alt": [
+    "who"
+   ],
+   "why": "대답이 사람(IU)이므로 '누구'를 묻는 Who를 쓴다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말과 같은 뜻이 되도록 괄호 안의 단어를 바르게 배열하여 문장을 쓰시오.\n그녀는 무엇을 원하니? (does / what / want / she)",
+   "answer": "What does she want?",
+   "alt": [
+    "What does she want"
+   ],
+   "why": "의문사 의문문은 '의문사(What)+does+주어+동사원형' 어순으로 쓴다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "대답에 맞게 빈칸에 알맞은 의문사 한 단어를 쓰시오.\nA: ____ do you go to school?\nB: By bus.",
+   "answer": "How",
+   "alt": [
+    "how"
+   ],
+   "why": "대답이 교통수단(버스로)이므로 방법·수단을 묻는 How를 쓴다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nWhere <u>do</u> Mina live?",
+   "answer": "does",
+   "alt": [],
+   "why": "주어 Mina가 3인칭 단수이므로 do가 아니라 does를 써야 한다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 말을 골라 쓰시오.\nHow (much / many) friends do you have?",
+   "answer": "many",
+   "alt": [],
+   "why": "friends는 셀 수 있는 명사의 복수형이므로 How many를 쓴다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 be동사를 쓰시오.\nWhere ____ you yesterday afternoon?",
+   "answer": "were",
+   "alt": [],
+   "why": "yesterday(과거)이고 주어가 you이므로 be동사 과거형 were를 쓴다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 바르게 배열하여 문장을 쓰시오.\n(old / how / your / is / sister)",
+   "answer": "How old is your sister?",
+   "alt": [
+    "How old is your sister"
+   ],
+   "why": "나이를 물을 때는 'How old+be동사+주어?' 어순으로 쓴다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 묻는 의문문을 쓰시오.\nShe likes <u>pizza</u>.",
+   "answer": "What does she like?",
+   "alt": [
+    "What does she like"
+   ],
+   "why": "'무엇'을 좋아하는지 묻는 것이므로 What does she like?로 쓴다. 주어가 3인칭 단수라 does를 쓰고 동사는 원형 like가 된다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "대답에 맞게 빈칸에 알맞은 한 단어를 쓰시오.\nA: ____ time do you get up?\nB: At seven.",
+   "answer": "What",
+   "alt": [
+    "what"
+   ],
+   "why": "시각을 물을 때는 What time(몇 시)을 쓴다.",
+   "no": 34
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: ____ did you visit last weekend?\nB: I visited my grandmother.",
+   "choices": [
+    "When",
+    "Who",
+    "Why",
+    "How",
+    "Where"
+   ],
+   "answer": 2,
+   "why": "대답이 사람(my grandmother)이므로 방문한 대상을 묻는 Who가 알맞다. When은 때, Where는 장소를 묻는다.",
+   "no": 35
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: When ____ Susan come home last night?\nB: She came home at eleven.",
+   "choices": [
+    "does",
+    "do",
+    "is",
+    "did",
+    "was"
+   ],
+   "answer": 4,
+   "why": "last night(과거)의 일을 묻고 있으므로 did를 쓴다. 의문사 뒤 어순은 'did+주어+동사원형'이다.",
+   "no": 36
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: ____ does your school begin?\nB: It begins at 8:30.",
+   "choices": [
+    "What time",
+    "Who",
+    "Why",
+    "Where",
+    "How"
+   ],
+   "answer": 1,
+   "why": "대답이 시각(8시 30분)이므로 몇 시인지 묻는 What time이 알맞다.",
+   "no": 37
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 ①~⑤ 중 어법상 옳은 문장은?",
+   "choices": [
+    "How often does he plays tennis?",
+    "Why did she cried?",
+    "Where were you last Sunday?",
+    "What do your brother do?",
+    "Who did you met yesterday?"
+   ],
+   "answer": 3,
+   "why": "③이 옳다. does/did 뒤에는 동사원형을 써야 하므로 ①은 play, ②는 cry, ⑤는 meet이 되어야 하고, ④는 주어가 3인칭 단수이므로 does를 써야 한다.",
+   "no": 38
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분이 어법상 틀린 것은?",
+   "choices": [
+    "What <u>does</u> he want for lunch?",
+    "When <u>did</u> you arrive home?",
+    "How <u>much</u> is that shirt?",
+    "Why <u>were</u> they angry then?",
+    "Where <u>is</u> your new shoes?"
+   ],
+   "answer": 5,
+   "why": "⑤의 주어 your new shoes는 복수이므로 is가 아니라 are를 써야 한다.",
+   "no": 39
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: How ____ is it from here to the station?\nB: It's about two kilometers.",
+   "choices": [
+    "long",
+    "often",
+    "far",
+    "much",
+    "tall"
+   ],
+   "answer": 3,
+   "why": "대답이 거리(2킬로미터)이므로 거리를 묻는 How far가 알맞다.",
+   "no": 40
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: How ____ does it take from Seoul to Busan by KTX?\nB: It takes about three hours.",
+   "choices": [
+    "long",
+    "far",
+    "often",
+    "many",
+    "much"
+   ],
+   "answer": 1,
+   "why": "대답이 걸리는 시간(3시간)이므로 시간의 길이를 묻는 How long이 알맞다.",
+   "no": 41
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 빈칸에 공통으로 알맞은 말은?\n• ____ do you think of my new plan?\n• ____ did you have for lunch today?",
+   "choices": [
+    "How",
+    "What",
+    "Why",
+    "When",
+    "Where"
+   ],
+   "answer": 2,
+   "why": "'~에 대해 어떻게 생각하니'는 What do you think of ~?로 쓰고, 점심으로 '무엇을' 먹었는지도 What으로 묻는다.",
+   "no": 42
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: Why were you absent from school yesterday?\nB: ____",
+   "choices": [
+    "Because I had a bad cold.",
+    "At three o'clock.",
+    "By subway.",
+    "For two hours.",
+    "In the school library."
+   ],
+   "answer": 1,
+   "why": "Why(왜)로 이유를 물었으므로 Because(~ 때문에)로 답하는 것이 알맞다.",
+   "no": 43
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 옳게 옮긴 것은?\n너는 왜 그렇게 일찍 일어났니?",
+   "choices": [
+    "Why do you get up so early?",
+    "Why you got up so early?",
+    "Why did you got up so early?",
+    "Why did you get up so early?",
+    "Why were you get up so early?"
+   ],
+   "answer": 4,
+   "why": "과거의 일이므로 'Why did+주어+동사원형' 어순인 ④가 옳다. did 뒤에 got을 쓴 ③은 틀리다.",
+   "no": 44
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 짝지어진 질문과 대답 중 어색한 것은?",
+   "choices": [
+    "How long did you stay in Jeju? — For five days.",
+    "What does your mother do? — She is a nurse.",
+    "Where did you find your wallet? — Under my bed.",
+    "How often do you wash your dog? — For thirty minutes.",
+    "Why do you learn Chinese? — Because I want to travel to China."
+   ],
+   "answer": 4,
+   "why": "How often은 빈도(횟수)를 묻는 말이므로 Once a week처럼 답해야 한다. For thirty minutes는 How long에 대한 대답이다.",
+   "no": 45
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: How often ____ your father cook dinner?\nB: He cooks once a week.",
+   "choices": [
+    "does",
+    "do",
+    "is",
+    "did",
+    "was"
+   ],
+   "answer": 1,
+   "why": "주어 your father가 3인칭 단수이고 대답이 현재시제(cooks)이므로 does가 알맞다.",
+   "no": 46
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 ①~⑤ 중 어법상 틀린 문장은?",
+   "choices": [
+    "What time did the concert end?",
+    "How many students are there in your class?",
+    "Why does she look so happy today?",
+    "Where did they went during the vacation?",
+    "Who is the woman in this picture?"
+   ],
+   "answer": 4,
+   "why": "did 뒤에는 동사원형을 써야 하므로 ④는 Where did they go ~?로 고쳐야 한다.",
+   "no": 47
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대답에 알맞은 질문은?\nB: It's March 14th.",
+   "choices": [
+    "What day is it today?",
+    "What's the date today?",
+    "What time is it now?",
+    "How's the weather today?",
+    "Where do you live?"
+   ],
+   "answer": 2,
+   "why": "대답이 날짜(3월 14일)이므로 날짜를 묻는 What's the date today?가 알맞다. What day는 요일을 묻는다.",
+   "no": 48
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 옳게 옮긴 것은?\n너의 남동생은 몇 살이니?",
+   "choices": [
+    "How old your brother is?",
+    "How your brother is old?",
+    "What old is your brother?",
+    "How is your brother old?",
+    "How old is your brother?"
+   ],
+   "answer": 5,
+   "why": "'How+형용사(old)'가 한 덩어리로 문장 맨 앞에 오고, 그 뒤는 'be동사+주어' 어순이다.",
+   "no": 49
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: ____ did you go to the library?\nB: To borrow some books about space.",
+   "choices": [
+    "Where",
+    "When",
+    "Why",
+    "Who",
+    "What"
+   ],
+   "answer": 3,
+   "why": "대답이 목적(책을 빌리기 위해서)이므로 이유·목적을 묻는 Why가 알맞다.",
+   "no": 50
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: What ____ Jenny and her sister do on weekends?\nB: They go swimming together.",
+   "choices": [
+    "do",
+    "does",
+    "did",
+    "are",
+    "is"
+   ],
+   "answer": 1,
+   "why": "주어 Jenny and her sister는 복수이고 대답이 현재시제이므로 do를 쓴다.",
+   "no": 51
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 알맞은 말이 바르게 짝지어진 것은?\n• Where (A) you buy this cap yesterday?\n• What (B) he usually have for breakfast?",
+   "choices": [
+    "do – does",
+    "did – do",
+    "does – did",
+    "do – did",
+    "did – does"
+   ],
+   "answer": 5,
+   "why": "(A)는 yesterday가 있으므로 과거의 did, (B)는 usually와 3인칭 단수 주어 he가 있으므로 현재의 does를 쓴다.",
+   "no": 52
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대답에 알맞은 질문은?\nB: I go there twice a month.",
+   "choices": [
+    "How long do you watch movies?",
+    "How often do you go to the movies?",
+    "When did you go to the movies?",
+    "Where do you go on weekends?",
+    "Why do you like movies?"
+   ],
+   "answer": 2,
+   "why": "대답이 빈도(한 달에 두 번)이므로 How often으로 묻는 질문이 알맞다.",
+   "no": 53
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: How ____ times a day do you brush your teeth?\nB: Three times a day.",
+   "choices": [
+    "much",
+    "often",
+    "many",
+    "long",
+    "far"
+   ],
+   "answer": 3,
+   "why": "times(번, 횟수)는 셀 수 있는 명사이므로 How many times(몇 번)로 묻는다.",
+   "no": 54
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 옳게 옮긴 것은?\n그녀는 어제 어디에서 점심을 먹었니?",
+   "choices": [
+    "Where did she eat lunch yesterday?",
+    "Where does she ate lunch yesterday?",
+    "Where she did eat lunch yesterday?",
+    "Where did she ate lunch yesterday?",
+    "Where was she eat lunch yesterday?"
+   ],
+   "answer": 1,
+   "why": "과거의 일이므로 '의문사+did+주어+동사원형' 어순인 ①이 옳다. did 뒤에 ate를 쓰면 안 된다.",
+   "no": 55
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 대화의 빈칸에 공통으로 알맞은 말은?\n• A: How ____ is the post office from here? B: It's just 100 meters away.\n• A: How ____ did the ball fly? B: It flew about 50 meters.",
+   "choices": [
+    "long",
+    "far",
+    "often",
+    "much",
+    "many"
+   ],
+   "answer": 2,
+   "why": "두 대답 모두 거리(100미터, 50미터)이므로 거리를 묻는 How far가 알맞다.",
+   "no": 56
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: You look tired. ____\nB: I went to bed at 2 a.m.",
+   "choices": [
+    "How do you go to school?",
+    "Where did you sleep last night?",
+    "When do you usually get up?",
+    "What time did you go to bed last night?",
+    "Why do you sleep so early?"
+   ],
+   "answer": 4,
+   "why": "대답이 잠자리에 든 시각(새벽 2시)이므로 몇 시에 잤는지 묻는 ④가 알맞다. ②는 장소, ③은 일어나는 시각을 묻는다.",
+   "no": 57
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 묻는 의문문을 쓰시오.\nHe bought a new bike <u>last Sunday</u>.",
+   "answer": "When did he buy a new bike?",
+   "alt": [
+    "When did he buy a new bike",
+    "When did he buy his new bike?"
+   ],
+   "why": "'언제' 샀는지 묻는 것이므로 When did he buy ~?로 쓴다. did 뒤에는 동사원형 buy를 쓴다.",
+   "no": 58
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 바르게 배열하여 문장을 쓰시오.\n(did / where / you / buy / your / shoes)",
+   "answer": "Where did you buy your shoes?",
+   "alt": [
+    "Where did you buy your shoes"
+   ],
+   "why": "의문사 의문문은 '의문사(Where)+did+주어+동사원형' 어순으로 쓴다.",
+   "no": 59
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "대답에 맞게 빈칸에 알맞은 두 단어를 쓰시오.\nA: ____ ____ do you visit your grandparents?\nB: Once a month.",
+   "answer": "How often",
+   "alt": [
+    "how often"
+   ],
+   "why": "대답이 빈도(한 달에 한 번)이므로 How often(얼마나 자주)을 쓴다.",
+   "no": 60
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nHow <u>many</u> money do you need?",
+   "answer": "much",
+   "alt": [],
+   "why": "money는 셀 수 없는 명사이므로 many가 아니라 much를 써야 한다.",
+   "no": 61
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "대답에 맞게 빈칸에 알맞은 한 단어를 쓰시오.\nA: What ____ Mr. Kim teach at your school?\nB: He teaches math.",
+   "answer": "does",
+   "alt": [],
+   "why": "주어 Mr. Kim이 3인칭 단수이고 대답이 현재시제(teaches)이므로 does를 쓴다.",
+   "no": 62
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 묻는 의문문을 쓰시오.\nShe was late <u>because she missed the train</u>.",
+   "answer": "Why was she late?",
+   "alt": [
+    "Why was she late"
+   ],
+   "why": "이유를 묻는 것이므로 Why를 쓰고, be동사 문장이므로 'Why+was+주어 ~?' 어순이 된다.",
+   "no": 63
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 바르게 배열하여 문장을 쓰시오.\n(is / how / the / weather / in London)",
+   "answer": "How is the weather in London?",
+   "alt": [
+    "How is the weather in London"
+   ],
+   "why": "날씨를 물을 때는 'How is the weather+장소?' 어순으로 쓴다.",
+   "no": 64
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "대답에 맞게 빈칸에 알맞은 두 단어를 쓰시오.\nA: ____ ____ is your new smartphone?\nB: It's 800,000 won.",
+   "answer": "How much",
+   "alt": [
+    "how much"
+   ],
+   "why": "대답이 가격이므로 값을 묻는 How much를 쓴다.",
+   "no": 65
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nWhere did she <u>found</u> her ring?",
+   "answer": "find",
+   "alt": [],
+   "why": "did가 이미 과거를 나타내므로 뒤에는 동사원형 find를 써야 한다.",
+   "no": 66
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 묻는 의문문을 쓰시오.\nTom studies English <u>in his room</u>.",
+   "answer": "Where does Tom study English?",
+   "alt": [
+    "Where does Tom study English"
+   ],
+   "why": "장소를 묻는 것이므로 Where를 쓰고, 주어가 3인칭 단수이므로 does 뒤에 동사원형 study를 쓴다.",
+   "no": 67
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?\nㄱ. Who wrote this letter?\nㄴ. What did happen last night?\nㄷ. How long does it take to get to the airport?\nㄹ. Why did you so angry this morning?",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 의문사가 주어인 의문문(Who+동사)으로 옳고 ㄷ도 옳다. ㄴ은 What happened ~?로, ㄹ은 형용사 angry가 있으므로 Why were you ~?로 고쳐야 한다.",
+   "no": 68
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: ____ made this delicious cake?\nB: My mom did.",
+   "choices": [
+    "Who",
+    "Who did",
+    "Whom",
+    "What did",
+    "How"
+   ],
+   "answer": 1,
+   "why": "대답이 사람이고 의문사가 문장의 주어이므로 do/does/did 없이 'Who+동사' 형태로 묻는다.",
+   "no": 69
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 의문문 중 어법상 틀린 것은?",
+   "choices": [
+    "Who teaches you science?",
+    "What makes you happy?",
+    "Who did you invite to the party?",
+    "What did make that noise?",
+    "Why did he leave so early?"
+   ],
+   "answer": 4,
+   "why": "④는 의문사 What이 주어이므로 did 없이 What made that noise?로 써야 한다. ③은 의문사가 목적어이므로 did를 쓴 것이 옳다.",
+   "no": 70
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화에서 밑줄 친 부분이 어색한 것은?\nA: ① <u>How was</u> your trip to Gyeongju?\nB: It was great.\nA: ② <u>Who did</u> you go with?\nB: I went with my cousins.\nA: ③ <u>How long</u> did you stay there?\nB: For three days.\nA: ④ <u>When did</u> you stay?\nB: We stayed at a hanok guesthouse.\nA: ⑤ <u>How much</u> was it a night?\nB: It was about 50,000 won.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 4,
+   "why": "대답이 머문 장소(한옥 게스트하우스)이므로 ④는 When이 아니라 Where did you stay?가 되어야 한다.",
+   "no": 71
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (A)~(C)에 알맞은 말이 바르게 짝지어진 것은?\n• Who (A) those boys over there?\n• How many classes (B) you have today?\n• Where (C) Jane last Friday?",
+   "choices": [
+    "is – do – was",
+    "are – does – was",
+    "are – do – was",
+    "are – do – were",
+    "is – does – were"
+   ],
+   "answer": 3,
+   "why": "(A) 주어 those boys가 복수이므로 are, (B) 주어 you와 일반동사 have가 있으므로 do, (C) 주어 Jane이 단수이고 last Friday(과거)이므로 was.",
+   "no": 72
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 짝지어진 것은?\nㄱ. How often do you eat out?\nㄴ. What time does your father leaves for work?\nㄷ. Where was you at nine last night?\nㄹ. Who broke the window?",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㄹ",
+    "ㄱ, ㄴ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "ㄱ과 ㄹ이 옳다. ㄴ은 does 뒤에 동사원형 leave를 써야 하고, ㄷ은 주어 you에 맞게 were를 써야 한다.",
+   "no": 73
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 질문에 대한 대답으로 알맞은 것은?\nHow do you go to your grandma's house?",
+   "choices": [
+    "Twice a year.",
+    "For two hours.",
+    "By train.",
+    "Because I miss her.",
+    "Next Sunday."
+   ],
+   "answer": 3,
+   "why": "How는 방법·수단을 묻는 말이므로 교통수단으로 답한 By train.이 알맞다. ①은 How often, ②는 How long, ④는 Why, ⑤는 When에 대한 대답이다.",
+   "no": 74
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "두 빈칸에 공통으로 알맞은 말은?\n• ____ is wrong with your computer?\n• ____ time did the game finish?",
+   "choices": [
+    "Who",
+    "How",
+    "Why",
+    "When",
+    "What"
+   ],
+   "answer": 5,
+   "why": "'~에 무슨 문제가 있니'는 What is wrong with ~?, 시각을 물을 때는 What time을 쓰므로 공통으로 What이 알맞다.",
+   "no": 75
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 옳게 옮긴 것은?\n민호는 어젯밤에 몇 시간 동안 잤니?",
+   "choices": [
+    "How long Minho slept last night?",
+    "How long did Minho slept last night?",
+    "How often did Minho sleep last night?",
+    "How long did Minho sleep last night?",
+    "How many did Minho sleep last night?"
+   ],
+   "answer": 4,
+   "why": "시간의 길이는 How long으로 묻고, 과거 의문문이므로 'did+주어+동사원형' 어순인 ④가 옳다.",
+   "no": 76
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대답에 알맞은 질문은?\nB: It took about two hours.",
+   "choices": [
+    "How often do you bake cakes?",
+    "How long did it take to make this cake?",
+    "What time is it now?",
+    "How much was the flour?",
+    "When do you bake cakes?"
+   ],
+   "answer": 2,
+   "why": "대답이 걸린 시간(약 두 시간)이므로 How long did it take ~?가 알맞다.",
+   "no": 77
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\n(a) Why is you so tired?\n(b) Who does live next door?\n(c) What day is it today?\n(d) How tall is your brother?\n(e) Where did you lost your phone?",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "(c), (d) 2개가 옳다. (a)는 are you, (b)는 주어 의문사이므로 Who lives ~?, (e)는 did 뒤 동사원형 lose로 고쳐야 한다.",
+   "no": 78
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 질문과 대답의 짝 중 자연스럽지 않은 것은?",
+   "choices": [
+    "How far is the museum from here? — It's about one kilometer from here.",
+    "Who is your homeroom teacher? — Mr. Park is.",
+    "What does your uncle do? — He runs a small restaurant.",
+    "How long is the bridge? — Twice a day.",
+    "When does the winter vacation start? — It starts on December 24th."
+   ],
+   "answer": 4,
+   "why": "How long is the bridge?는 다리의 길이를 묻는 말이므로 길이로 답해야 한다. Twice a day는 How often에 대한 대답이다.",
+   "no": 79
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 밑줄 친 부분 중 어법상 틀린 것은?\n① <u>What</u> ② <u>does</u> your sister ③ <u>wants</u> ④ <u>for</u> her ⑤ <u>birthday</u>?",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "does가 이미 3인칭 단수 현재를 나타내므로 뒤에는 동사원형 want를 써야 한다.",
+   "no": 80
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 가장 가까운 것은?\nHow do you like your new school?",
+   "choices": [
+    "Why do you like your new school?",
+    "How do you go to your new school?",
+    "What do you think of your new school?",
+    "What do you do at your new school?",
+    "Where is your new school?"
+   ],
+   "answer": 3,
+   "why": "How do you like ~?는 '~이 어떠니, 마음에 드니'라는 뜻으로, 생각·느낌을 묻는 What do you think of ~?와 의미가 가장 가깝다.",
+   "no": 81
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 자연스러운 대화를 모두 고른 것은?\nㄱ. A: What was the movie like? B: It was really touching.\nㄴ. A: How much sugar do we need? B: We need three spoons.\nㄷ. A: When did you learn to swim? B: At the sports center near my house.",
+   "choices": [
+    "ㄱ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "What ~ like?는 '어떠했니'라는 뜻이므로 ㄱ은 자연스럽고, ㄴ도 양을 묻고 양으로 답해 자연스럽다. ㄷ은 '언제'를 물었는데 장소로 답해 어색하다.",
+   "no": 82
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 알맞은 말이 바르게 짝지어진 것은?\nA: (A) was your weekend?\nB: It was fantastic!\nA: (B) did you do?\nB: I went camping with my family.",
+   "choices": [
+    "How – What",
+    "How – Where",
+    "What – What",
+    "What – Where",
+    "How – Why"
+   ],
+   "answer": 1,
+   "why": "(A)는 주말이 '어땠는지' 묻는 How, (B)는 '무엇을' 했는지 묻는 What이 알맞다. Where did you do?는 목적어가 없어 어법에 맞지 않는다.",
+   "no": 83
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 옳게 옮긴 것은?\n누가 너에게 그 이야기를 말해 주었니?",
+   "choices": [
+    "Who did tell you the story?",
+    "Whom told you the story?",
+    "Who did you tell the story?",
+    "What told you the story?",
+    "Who told you the story?"
+   ],
+   "answer": 5,
+   "why": "의문사 Who가 주어이므로 did 없이 바로 과거동사 told를 쓴 ⑤가 옳다. ③은 '네가 누구에게 말했니'라는 뜻이 된다.",
+   "no": 84
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것끼리 짝지어진 것은?\nㄱ. How many milk do you drink a day?\nㄴ. What did you do during the vacation?\nㄷ. Why was they late for the meeting?\nㄹ. Where does your aunt live?",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 milk가 셀 수 없는 명사이므로 How much, ㄷ은 주어 they에 맞게 were로 고쳐야 한다. ㄴ, ㄹ은 옳다.",
+   "no": 85
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 알맞은 말이 바르게 짝지어진 것은?\nA: (A) did you get this concert ticket?\nB: My uncle gave it to me.\nA: Wow! (B) is the concert?\nB: This Saturday.",
+   "choices": [
+    "How – When",
+    "How – Where",
+    "Who – When",
+    "When – Where",
+    "Why – When"
+   ],
+   "answer": 1,
+   "why": "(A)는 표를 구한 방법·경위를 묻는 How(삼촌이 주셨다고 답함), (B)는 대답이 때(이번 토요일)이므로 When이 알맞다.",
+   "no": 86
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 잘못 옮긴 것은?",
+   "choices": [
+    "너는 어제 왜 울었니? → Why did you cry yesterday?",
+    "이 강은 얼마나 기니? → How long is this river?",
+    "누가 저녁을 요리했니? → Who cooked dinner?",
+    "그 가방은 얼마니? → How many is the bag?",
+    "너는 언제 숙제를 하니? → When do you do your homework?"
+   ],
+   "answer": 4,
+   "why": "가격을 물을 때는 How many가 아니라 How much is the bag?으로 써야 한다.",
+   "no": 87
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: I can't find my glasses.\nB: ____ did you last see them?\nA: In the living room, I think.",
+   "choices": [
+    "When",
+    "Where",
+    "Why",
+    "Who",
+    "What"
+   ],
+   "answer": 2,
+   "why": "대답이 장소(거실에서)이므로 마지막으로 '어디에서' 보았는지 묻는 Where가 알맞다.",
+   "no": 88
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 들어갈 말이 나머지 넷과 다른 것은?",
+   "choices": [
+    "____ is your favorite subject?",
+    "____ does your mom do on Sundays?",
+    "____ time does the bus come?",
+    "____ do you want for dinner?",
+    "____ old is this temple?"
+   ],
+   "answer": 5,
+   "why": "①~④에는 모두 What이 들어가지만, ⑤는 오래된 정도를 묻는 How old이므로 How가 들어간다.",
+   "no": 89
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\nA: You speak French well! ____\nB: For three years. My family lived in Paris then.",
+   "choices": [
+    "How often do you learn French?",
+    "Where did you learn French?",
+    "How long did you learn French?",
+    "Why do you learn French?",
+    "When did you learn French?"
+   ],
+   "answer": 3,
+   "why": "대답이 기간(3년 동안)이므로 얼마나 오래 배웠는지 묻는 How long이 알맞다. Where나 When이라면 장소나 시점으로 답해야 한다.",
+   "no": 90
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 묻는 세 단어의 의문문을 쓰시오.\n<u>Somebody</u> ate my sandwich.",
+   "answer": "Who ate my sandwich?",
+   "alt": [
+    "Who ate my sandwich"
+   ],
+   "why": "의문사 Who가 주어이므로 do/did 없이 'Who+과거동사(ate)' 형태로 묻는다.",
+   "no": 91
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 바르게 배열하여 문장을 완성하시오.\n(it / how / long / does / take) to get to the subway station?",
+   "answer": "How long does it take",
+   "alt": [
+    "how long does it take"
+   ],
+   "why": "걸리는 시간은 'How long does it take to-v?' 어순으로 묻는다.",
+   "no": 92
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "어법상 틀린 부분을 고쳐 문장 전체를 다시 쓰시오.\nWhat did make you so sad yesterday?",
+   "answer": "What made you so sad yesterday?",
+   "alt": [
+    "What made you so sad yesterday"
+   ],
+   "why": "의문사 What이 주어인 의문문에서는 did를 쓰지 않고 동사를 바로 과거형(made)으로 쓴다.",
+   "no": 93
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 묻는 의문문을 쓰시오.\nHe goes fishing <u>every other weekend</u>.",
+   "answer": "How often does he go fishing?",
+   "alt": [
+    "How often does he go fishing"
+   ],
+   "why": "빈도를 묻는 것이므로 How often을 쓰고, 3인칭 단수 주어이므로 does 뒤에 동사원형 go를 쓴다.",
+   "no": 94
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같은 뜻이 되도록 how로 시작하는 다섯 단어의 영어 문장을 쓰시오.\n그 콘서트는 얼마나 길었니?",
+   "answer": "How long was the concert?",
+   "alt": [
+    "How long was the concert"
+   ],
+   "why": "길이·시간의 정도는 How long으로 묻고, 과거이므로 be동사 was를 쓴다.",
+   "no": 95
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "대답에 맞게 빈칸에 알맞은 두 단어를 쓰시오.\nA: ____ ____ did you pay for these sneakers?\nB: Ninety dollars.",
+   "answer": "How much",
+   "alt": [
+    "how much"
+   ],
+   "why": "지불한 금액을 묻는 것이므로 How much를 쓴다.",
+   "no": 96
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 묻는 의문문을 쓰시오.\nKevin visited Rome <u>to see the Colosseum</u>.",
+   "answer": "Why did Kevin visit Rome?",
+   "alt": [
+    "Why did Kevin visit Rome"
+   ],
+   "why": "목적(~하기 위해)을 묻는 것이므로 Why를 쓰고, 과거이므로 did 뒤에 동사원형 visit을 쓴다.",
+   "no": 97
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nHow often <u>do</u> your sister clean her room?",
+   "answer": "does",
+   "alt": [],
+   "why": "주어 your sister가 3인칭 단수이므로 do가 아니라 does를 써야 한다.",
+   "no": 98
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같은 뜻이 되도록 clean을 사용하여 다섯 단어의 영어 문장을 쓰시오.\n누가 어제 이 창문을 닦았니?",
+   "answer": "Who cleaned this window yesterday?",
+   "alt": [
+    "Who cleaned this window yesterday"
+   ],
+   "why": "의문사 Who가 주어이므로 did 없이 과거형 cleaned를 바로 쓴다.",
+   "no": 99
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 묻는 의문문을 쓰시오. (the station을 주어로 할 것)\nThe station is <u>two kilometers away</u> from the school.",
+   "answer": "How far is the station from the school?",
+   "alt": [
+    "How far is the station from the school"
+   ],
+   "why": "거리를 묻는 것이므로 How far를 쓰고, 'How far+be동사+주어 ~?' 어순으로 쓴다.",
+   "no": 100
+  }
+ ]
+}
