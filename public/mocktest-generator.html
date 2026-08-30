@@ -253,7 +253,7 @@
     border: 1px solid rgba(47,50,57,.14); border-left: 4px solid var(--blue); border-radius: 8px;
     padding: 12px 16px; margin: 10px 0; background: rgba(250,251,252,.9); font-size: 14px;
   }
-  .exam-output ol { padding-left: 22px; }
+  .exam-output ol, .exam-output ul { list-style: none; padding-left: 6px; margin: 6px 0; }
   .exam-output table { border-collapse: collapse; width: 100%; }
   .exam-output table td, .exam-output table th { border: 1px solid rgba(47,50,57,.18); padding: 6px 10px; }
   .exam-output .question, .exam-output .q { margin-bottom: 26px; }
@@ -385,10 +385,12 @@
     <div id="printArea"><div class="exam-output" id="examOutput"></div></div>
     <p class="usage" id="usageInfo"></p>
     <div class="btnbar">
-      <button class="btn" id="printBtn">🖨 인쇄 / PDF 저장</button>
-      <button class="btn ghost" id="downloadBtn">HTML 다운로드</button>
+      <button class="btn" id="pdfBtn">📄 PDF 저장</button>
+      <button class="btn ghost" id="hwpxBtn">HWPX 다운로드</button>
+      <button class="btn ghost" id="docxBtn">DOCX 다운로드</button>
       <button class="btn ghost" id="copyBtn">본문 복사</button>
     </div>
+    <p class="hint" style="margin-top:8px">문서 규격: 2단 편집 · 함초롬바탕 8pt · 상하좌우 여백 7mm — HWP·워드·PDF 동일 적용</p>
   </section>
 
   <footer class="app"><b>옳은영어</b> · Powered by Claude Fable — 생성된 문항은 반드시 검수 후 사용하세요.</footer>
@@ -966,6 +968,7 @@ ${planJson}
 3. 발문(질문 문구), 선지 스타일, 서술형 조건 제시 방식은 원본 시험지의 표현 방식을 그대로 따릅니다.
 4. 객관식 선지는 ①②③④⑤, 매력적인 오답을 포함해 원본과 같은 변별력을 갖추도록 구성합니다.
 5. 시험지 마지막에 "정답 및 해설" 섹션: 문항별 정답, 해설(정답 근거 + 주요 오답이 틀린 이유), 사용 지문 출처를 표기합니다.
+6. 허용 태그는 h1, h2, p, div(class="exam-header"|"question"|"passage"|"answer-key"), b, u, br, ol, li, span 뿐입니다. <table>은 절대 사용하지 마세요 — 표가 필요한 내용(요약문 (A)(B), 배점표 등)은 일반 텍스트 줄로 표현합니다. 이 규칙은 HWP/워드 문서 변환 품질을 위해 반드시 지켜야 합니다.
 
 [출력 형식 — 순수 HTML 조각만 출력. <html>, <head>, <body>, 코드펜스, 설명 문구 금지]
 <div class="exam-header">
@@ -1046,27 +1049,250 @@ ${planJson}
     return s.trim().replace(/^```(?:html)?/i, "").replace(/```$/, "").trim();
   }
 
+  // ==================================================================
+  //  문서 내보내기 — 공통 규격: 2단 · 함초롬바탕 8pt · 여백 7mm
+  // ==================================================================
+
+  // ---------- HTML → 블록 변환 ----------
+  // 블록: {kind:'title'|'center'|'h2'|'p'|'boxp', runs:[{t,b,u}]}  (boxp = 지문 박스 문단)
+  function collectRuns(node, fmt, runs) {
+    node.childNodes.forEach(ch => {
+      if (ch.nodeType === 3) {
+        const t = ch.textContent.replace(/\s+/g, " ");
+        if (t) runs.push({ t, b: fmt.b, u: fmt.u });
+      } else if (ch.nodeType === 1) {
+        const tag = ch.tagName;
+        if (tag === "BR") runs.push({ br: true });
+        else if (tag === "B" || tag === "STRONG") collectRuns(ch, { b: true, u: fmt.u }, runs);
+        else if (tag === "U") collectRuns(ch, { b: fmt.b, u: true }, runs);
+        else collectRuns(ch, fmt, runs);
+      }
+    });
+    return runs;
+  }
+  const BLOCK_TAGS = ["P", "DIV", "OL", "UL", "LI", "H1", "H2", "H3", "TABLE", "BLOCKQUOTE", "HEADER", "SECTION"];
+  function hasBlockChild(el) { return [...el.children].some(c => BLOCK_TAGS.includes(c.tagName)); }
+  function pushRuns(blocks, kind, el) {
+    const runs = collectRuns(el, { b: false, u: false }, []);
+    // <br>로 문단 분리
+    let cur = [];
+    runs.forEach(r => {
+      if (r.br) { if (cur.length) blocks.push({ kind, runs: cur }); cur = []; }
+      else cur.push(r);
+    });
+    if (cur.length || !runs.length) blocks.push({ kind, runs: cur });
+  }
+  function walkBlocks(el, blocks, ctx) {
+    [...el.childNodes].forEach(ch => {
+      if (ch.nodeType === 3) {
+        const t = ch.textContent.trim();
+        if (t) blocks.push({ kind: ctx.box ? "boxp" : "p", runs: [{ t, b: false, u: false }] });
+        return;
+      }
+      if (ch.nodeType !== 1) return;
+      const tag = ch.tagName, cls = ch.className || "";
+      if (tag === "H1") pushRuns(blocks, "title", ch);
+      else if (tag === "H2" || tag === "H3") pushRuns(blocks, "h2", ch);
+      else if (tag === "TABLE") {                       // 표는 텍스트 줄로 평탄화
+        [...ch.querySelectorAll("tr")].forEach(tr => {
+          const line = [...tr.children].map(td => td.textContent.trim()).filter(Boolean).join("  |  ");
+          if (line) blocks.push({ kind: ctx.box ? "boxp" : "p", runs: [{ t: line, b: false, u: false }] });
+        });
+      }
+      else if (tag === "BLOCKQUOTE" || /passage/.test(cls)) walkBlocks(ch, blocks, { box: true, center: false });
+      else if (/exam-header/.test(cls) || tag === "HEADER") walkBlocks(ch, blocks, { box: false, center: true });
+      else if (tag === "OL" || tag === "UL") walkBlocks(ch, blocks, ctx);
+      else if (tag === "LI" || tag === "P") {
+        if (hasBlockChild(ch)) walkBlocks(ch, blocks, ctx);
+        else pushRuns(blocks, ctx.box ? "boxp" : (ctx.center ? "center" : "p"), ch);
+      }
+      else if (BLOCK_TAGS.includes(tag)) {
+        if (hasBlockChild(ch)) walkBlocks(ch, blocks, ctx);
+        else pushRuns(blocks, ctx.box ? "boxp" : (ctx.center ? "center" : "p"), ch);
+      }
+      else {                                            // 인라인 요소가 최상위에 온 경우
+        pushRuns(blocks, ctx.box ? "boxp" : "p", ch);
+      }
+    });
+  }
+  function htmlToBlocks() {
+    const blocks = [];
+    walkBlocks($("examOutput"), blocks, { box: false, center: false });
+    return blocks.filter(b => b.runs.length && b.runs.some(r => (r.t || "").trim()));
+  }
+  function blocksToText(blocks) {
+    return blocks.map(b => b.runs.map(r => r.t || "").join("")).join("\n");
+  }
+  function escXml(s) {
+    return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  }
+  function saveBlob(blob, name) {
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = name;
+    a.click();
+    URL.revokeObjectURL(a.href);
+  }
+  function requireOutput() {
+    if (!$("examOutput").innerText.trim()) { alert("먼저 동형 모의고사를 생성해 주세요."); return false; }
+    return true;
+  }
+
+  // ---------- HWPX 생성 (한글 스켈레톤 기반 OWPML) ----------
+  const HWPX_PAYLOAD_B64 = "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";
+  let hwpxTplCache = null;
+  function hwpxTpl() {
+    if (hwpxTplCache) return hwpxTplCache;
+    if (typeof pako === "undefined") throw new Error("문서 라이브러리를 불러오지 못했습니다. 인터넷 연결을 확인해 주세요.");
+    const bin = Uint8Array.from(atob(HWPX_PAYLOAD_B64), c => c.charCodeAt(0));
+    hwpxTplCache = JSON.parse(new TextDecoder().decode(pako.inflate(bin)));
+    return hwpxTplCache;
+  }
+  // charPr: 7=일반8pt 8=굵게 9=밑줄 10=굵게+밑줄 11=제목 12=소제목 / paraPr: 20=일반 21=박스 22=중앙 23=소제목
+  function hwpxRun(r, forcedCp) {
+    const cp = forcedCp != null ? forcedCp : (r.b && r.u ? 10 : r.b ? 8 : r.u ? 9 : 7);
+    return '<hp:run charPrIDRef="' + cp + '"><hp:t>' + escXml(r.t || "") + "</hp:t></hp:run>";
+  }
+  function hwpxPara(id, ppId, runsXml) {
+    return '<hp:p id="' + id + '" paraPrIDRef="' + ppId + '" styleIDRef="0" pageBreak="0" columnBreak="0" merged="0">' + runsXml + "</hp:p>";
+  }
+  function blockParaSpec(b) {
+    if (b.kind === "title") return { pp: 22, cp: 11 };
+    if (b.kind === "center") return { pp: 22, cp: null };
+    if (b.kind === "h2") return { pp: 23, cp: 12 };
+    if (b.kind === "boxp") return { pp: 21, cp: null };
+    return { pp: 20, cp: null };
+  }
+  async function exportHwpx() {
+    if (!requireOutput()) return;
+    if (typeof JSZip === "undefined") { alert("문서 라이브러리를 불러오지 못했습니다."); return; }
+    const tpl = hwpxTpl();
+    const blocks = htmlToBlocks();
+    let pid = 1, body = "";
+    blocks.forEach((b, i) => {
+      const spec = blockParaSpec(b);
+      const runsXml = b.runs.map(r => hwpxRun(r, spec.cp)).join("") || hwpxRun({ t: "" }, spec.cp);
+      if (i === 0) {
+        // 첫 문단에 구역 설정(7mm 여백) + 2단 컬럼 컨트롤 포함 (OWPML 필수 구조)
+        body += hwpxPara(pid++, spec.pp,
+          '<hp:run charPrIDRef="7">' + tpl.secPr + tpl.colPr + "</hp:run>" + runsXml);
+      } else {
+        body += hwpxPara(pid++, spec.pp, runsXml);
+      }
+    });
+    if (!body) return;
+    const section0 = tpl.secProlog + body + "</hs:sec>";
+    const zip = new JSZip();
+    zip.file("mimetype", "application/hwp+zip", { compression: "STORE" });
+    Object.keys(tpl.files).forEach(path => zip.file(path, tpl.files[path]));
+    zip.file("Contents/section0.xml", section0);
+    zip.file("Preview/PrvText.txt", blocksToText(blocks).slice(0, 1000));
+    const blob = await zip.generateAsync({ type: "blob", mimeType: "application/hwp+zip", compression: "DEFLATE" });
+    saveBlob(blob, "동형모의고사.hwpx");
+  }
+
+  // ---------- DOCX 생성 (OOXML) ----------
+  function docxRun(r, extraRpr) {
+    let rpr = '<w:rPr><w:rFonts w:ascii="함초롬바탕" w:eastAsia="함초롬바탕" w:hAnsi="함초롬바탕" w:cs="함초롬바탕"/>';
+    rpr += extraRpr || "";
+    if (r.b) rpr += "<w:b/>";
+    if (r.u) rpr += '<w:u w:val="single"/>';
+    rpr += "</w:rPr>";
+    return "<w:r>" + rpr + '<w:t xml:space="preserve">' + escXml(r.t || "") + "</w:t></w:r>";
+  }
+  function docxPara(b) {
+    const BOX = '<w:pBdr><w:top w:val="single" w:sz="6" w:space="3" w:color="000000"/><w:left w:val="single" w:sz="6" w:space="6" w:color="000000"/><w:bottom w:val="single" w:sz="6" w:space="3" w:color="000000"/><w:right w:val="single" w:sz="6" w:space="6" w:color="000000"/></w:pBdr>';
+    let ppr = "<w:pPr>", extra = '<w:sz w:val="16"/><w:szCs w:val="16"/>';
+    if (b.kind === "title") { ppr += '<w:keepNext/><w:jc w:val="center"/><w:spacing w:after="60"/>'; extra = '<w:b/><w:sz w:val="26"/><w:szCs w:val="26"/>'; }
+    else if (b.kind === "center") { ppr += '<w:jc w:val="center"/><w:spacing w:after="60"/>'; }
+    else if (b.kind === "h2") { ppr += '<w:keepNext/><w:spacing w:before="160" w:after="60"/><w:pBdr><w:bottom w:val="single" w:sz="8" w:space="2" w:color="000000"/></w:pBdr>'; extra = '<w:b/><w:sz w:val="20"/><w:szCs w:val="20"/>'; }
+    else if (b.kind === "boxp") { ppr += "<w:keepLines/>" + BOX; }
+    else { ppr += '<w:spacing w:after="40"/>'; }
+    ppr += "</w:pPr>";
+    return "<w:p>" + ppr + b.runs.map(r => docxRun(r, extra)).join("") + "</w:p>";
+  }
+  async function exportDocx() {
+    if (!requireOutput()) return;
+    if (typeof JSZip === "undefined") { alert("문서 라이브러리를 불러오지 못했습니다."); return; }
+    const W = 'xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"';
+    const blocks = htmlToBlocks();
+    const bodyXml = blocks.map(docxPara).join("");
+    // A4(11906x16838 twip), 여백 7mm=397twip, 2단(간격 6mm=340twip)
+    const sectPr = '<w:sectPr><w:pgSz w:w="11906" w:h="16838"/>' +
+      '<w:pgMar w:top="397" w:right="397" w:bottom="397" w:left="397" w:header="0" w:footer="0" w:gutter="0"/>' +
+      '<w:cols w:num="2" w:space="340"/></w:sectPr>';
+    const documentXml = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>' +
+      "<w:document " + W + "><w:body>" + bodyXml + sectPr + "</w:body></w:document>";
+    const stylesXml = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>' +
+      "<w:styles " + W + "><w:docDefaults><w:rPrDefault><w:rPr>" +
+      '<w:rFonts w:ascii="함초롬바탕" w:eastAsia="함초롬바탕" w:hAnsi="함초롬바탕" w:cs="함초롬바탕"/>' +
+      '<w:sz w:val="16"/><w:szCs w:val="16"/><w:lang w:val="en-US" w:eastAsia="ko-KR"/></w:rPr></w:rPrDefault>' +
+      '<w:pPrDefault><w:pPr><w:spacing w:line="276" w:lineRule="auto"/></w:pPr></w:pPrDefault></w:docDefaults>' +
+      '<w:style w:type="paragraph" w:default="1" w:styleId="Normal"><w:name w:val="Normal"/></w:style></w:styles>';
+    const zip = new JSZip();
+    zip.file("[Content_Types].xml", '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>' +
+      '<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">' +
+      '<Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/>' +
+      '<Default Extension="xml" ContentType="application/xml"/>' +
+      '<Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/>' +
+      '<Override PartName="/word/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"/></Types>');
+    zip.file("_rels/.rels", '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>' +
+      '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">' +
+      '<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships>');
+    zip.file("word/_rels/document.xml.rels", '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>' +
+      '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">' +
+      '<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>');
+    zip.file("word/document.xml", documentXml);
+    zip.file("word/styles.xml", stylesXml);
+    const blob = await zip.generateAsync({
+      type: "blob",
+      mimeType: "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      compression: "DEFLATE",
+    });
+    saveBlob(blob, "동형모의고사.docx");
+  }
+
+  // ---------- PDF (인쇄 규격 문서 → 브라우저 PDF 저장) ----------
+  function exportPdf() {
+    if (!requireOutput()) return;
+    const printCss =
+      "@page{size:A4;margin:7mm}" +
+      'body{font-family:"함초롬바탕","HCR Batang","Batang","바탕",serif;font-size:8pt;line-height:1.5;margin:0;' +
+      "column-count:2;column-gap:6mm;column-rule:0.5pt solid #999}" +
+      ".exam-header,header,h1{column-span:all;text-align:center}" +
+      "h1{font-size:13pt;margin:0 0 2pt;font-weight:bold}" +
+      ".exam-header p{margin:0 0 6pt}" +
+      "h2{font-size:10pt;font-weight:bold;border-bottom:0.8pt solid #000;padding-bottom:2pt;margin:10pt 0 5pt}" +
+      ".question,.q{break-inside:avoid;page-break-inside:avoid;margin:0 0 8pt}" +
+      ".passage,blockquote{border:0.5pt solid #000;padding:4pt 6pt;margin:3pt 0;break-inside:avoid;page-break-inside:avoid}" +
+      "p{margin:0 0 3pt}ol,ul{list-style:none;margin:2pt 0;padding-left:2pt}li{margin:0 0 1pt}" +
+      "table{border-collapse:collapse;width:100%}td,th{border:0.5pt solid #000;padding:2pt 4pt}" +
+      "u{text-underline-offset:2pt}";
+    const doc = "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><title>동형모의고사</title>" +
+      "<style>" + printCss + "</style></head><body>" + $("examOutput").innerHTML + "</body></html>";
+    const frame = document.createElement("iframe");
+    frame.style.cssText = "position:fixed;right:0;bottom:0;width:0;height:0;border:0;visibility:hidden";
+    document.body.appendChild(frame);
+    frame.srcdoc = doc;
+    frame.onload = () => {
+      setTimeout(() => {
+        frame.contentWindow.focus();
+        frame.contentWindow.print();
+        setTimeout(() => frame.remove(), 60000);
+      }, 250);
+    };
+  }
+
   // ---------- 결과 액션 ----------
-  $("printBtn").addEventListener("click", () => window.print());
+  $("pdfBtn").addEventListener("click", exportPdf);
+  $("hwpxBtn").addEventListener("click", () => { exportHwpx().catch(e => alert("HWPX 저장 실패: " + e.message)); });
+  $("docxBtn").addEventListener("click", () => { exportDocx().catch(e => alert("DOCX 저장 실패: " + e.message)); });
   $("copyBtn").addEventListener("click", async () => {
     try {
       await navigator.clipboard.writeText($("examOutput").innerText);
       $("copyBtn").textContent = "✓ 복사됨";
       setTimeout(() => { $("copyBtn").textContent = "본문 복사"; }, 1500);
     } catch (_) { alert("복사에 실패했습니다."); }
-  });
-  $("downloadBtn").addEventListener("click", () => {
-    const style = document.querySelector("style").textContent;
-    const html = "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><title>동형 모의고사</title>" +
-      "<link rel='preconnect' href='https://fonts.googleapis.com'>" +
-      "<link href='https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap' rel='stylesheet'>" +
-      "<style>" + style + "\nbody{background:#fff}\n</style></head><body><div class='wrap'><div class='exam-output'>" +
-      $("examOutput").innerHTML + "</div></div></body></html>";
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(new Blob([html], { type: "text/html" }));
-    a.download = "동형모의고사.html";
-    a.click();
-    URL.revokeObjectURL(a.href);
   });
 
   $("analyzeBtn").addEventListener("click", analyze);
