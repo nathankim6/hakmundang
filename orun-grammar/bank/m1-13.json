@@ -1,0 +1,1334 @@
+{
+ "id": "m1-13",
+ "grade": "중1",
+ "name": "5형식 make",
+ "points": [
+  "make+목적어+명사/형용사",
+  "목적격 보어 자리에 부사 불가"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe movie made me ____. (그 영화는 나를 슬프게 만들었다.)",
+   "choices": [
+    "sad",
+    "sadly",
+    "sadness",
+    "to sad",
+    "more sadly"
+   ],
+   "answer": 1,
+   "why": "make+목적어 뒤 목적격 보어 자리에는 형용사 sad가 온다. 부사 sadly는 보어 자리에 쓸 수 없다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe news made her ____. (그 소식은 그녀를 행복하게 만들었다.)",
+   "choices": [
+    "happily",
+    "happy",
+    "happiness",
+    "to happy",
+    "happying"
+   ],
+   "answer": 2,
+   "why": "목적격 보어 자리에는 형용사 happy가 알맞다. happily(부사), happiness(명사)는 보어로 쓸 수 없다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nExercise makes us ____. (운동은 우리를 건강하게 만든다.)",
+   "choices": [
+    "health",
+    "healthily",
+    "healthy",
+    "to health",
+    "healthiness"
+   ],
+   "answer": 3,
+   "why": "make+목적어+형용사 구조이므로 healthy가 정답. 명사 health나 부사 healthily는 안 된다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe song made him ____. (그 노래는 그를 스타로 만들었다.)",
+   "choices": [
+    "starry",
+    "to a star",
+    "star of",
+    "a star",
+    "stars he"
+   ],
+   "answer": 4,
+   "why": "make의 목적격 보어 자리에는 명사도 올 수 있다. '그를 스타로'이므로 a star가 알맞다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThis blanket ____ me warm. (이 담요는 나를 따뜻하게 해 준다.)",
+   "choices": [
+    "gives",
+    "says",
+    "makes",
+    "goes",
+    "comes"
+   ],
+   "answer": 3,
+   "why": "'목적어를 ~하게 만들다'는 make+목적어+형용사로 나타낸다. gives, says 등은 이 구조로 쓸 수 없다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "The story made sad me.",
+    "The story made me sadly.",
+    "The story made sadly me.",
+    "The story made me sad.",
+    "The story made me sadness."
+   ],
+   "answer": 4,
+   "why": "어순은 make+목적어(me)+형용사 보어(sad)이다. 보어 자리에 부사 sadly나 명사 sadness는 올 수 없다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 틀린 것은?",
+   "choices": [
+    "The pie made us <u>hungry</u>.",
+    "Yoga makes her <u>calm</u>.",
+    "The test made me <u>nervous</u>.",
+    "The rain made the road <u>wet</u>.",
+    "The music made him <u>sleepily</u>."
+   ],
+   "answer": 5,
+   "why": "make의 목적격 보어 자리에는 형용사만 온다. sleepily(부사)는 sleepy로 고쳐야 한다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe kids made the room ____. (아이들은 방을 지저분하게 만들었다.)",
+   "choices": [
+    "dirt",
+    "dirtily",
+    "dirty",
+    "to dirty",
+    "dirtiness"
+   ],
+   "answer": 3,
+   "why": "보어 자리에는 형용사 dirty가 온다. 명사 dirt, 부사 dirtily는 쓸 수 없다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nHer smile makes everyone ____. (그녀의 미소는 모두를 기분 좋게 만든다.)",
+   "choices": [
+    "gladly",
+    "gladness",
+    "to glad",
+    "glad",
+    "gladding"
+   ],
+   "answer": 4,
+   "why": "make+목적어 뒤에는 형용사 glad가 알맞다. 부사 gladly는 보어가 될 수 없다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe trip made them ____. (그 여행은 그들을 피곤하게 만들었다.)",
+   "choices": [
+    "tired",
+    "tiredly",
+    "tiredness",
+    "to tired",
+    "tire"
+   ],
+   "answer": 1,
+   "why": "목적격 보어 자리에는 형용사 tired가 온다. tiredly(부사), tire(동사)는 안 된다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말과 같도록 바르게 배열한 것은?\n그 선물은 그녀를 신나게 만들었다. (made / the gift / excited / her)",
+   "choices": [
+    "The gift made excited her.",
+    "The gift her made excited.",
+    "The gift made her excited.",
+    "The gift excited made her.",
+    "Made the gift her excited."
+   ],
+   "answer": 3,
+   "why": "make+목적어+형용사 어순이므로 The gift made her excited.가 옳다. 목적어(her)가 보어(excited)보다 앞에 온다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe fire made the room ____. (불이 방을 따뜻하게 만들었다.)",
+   "choices": [
+    "warmly",
+    "warmth",
+    "warm",
+    "to warm",
+    "warming"
+   ],
+   "answer": 3,
+   "why": "보어 자리에는 형용사 warm이 온다. warmly(부사), warmth(명사)는 쓸 수 없다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\nA: Why do you look so happy?\nB: This letter ____ me happy.",
+   "choices": [
+    "makes",
+    "gives",
+    "takes",
+    "puts",
+    "tells"
+   ],
+   "answer": 1,
+   "why": "'나를 행복하게 만든다'는 make+목적어+형용사로 표현한다. gives me happy 등은 어법에 맞지 않다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThey made him ____ of the team. (그들은 그를 팀의 주장으로 만들었다.)",
+   "choices": [
+    "captain",
+    "captainly",
+    "captains",
+    "to captain",
+    "captaining"
+   ],
+   "answer": 1,
+   "why": "make의 보어 자리에 직책을 나타내는 명사 captain이 온다. 나머지는 보어로 쓸 수 없는 형태이다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "어법상 틀린 문장은?",
+   "choices": [
+    "The soup made me full.",
+    "The game made us excited.",
+    "The book made her sleepy.",
+    "The prize made him proudly.",
+    "The dog made the yard dirty."
+   ],
+   "answer": 4,
+   "why": "보어 자리에 부사 proudly는 올 수 없고 형용사 proud로 고쳐야 한다. 나머지는 모두 make+목적어+형용사로 옳다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nWinter makes the days ____. (겨울은 낮을 짧게 만든다.)",
+   "choices": [
+    "shortly",
+    "short",
+    "shortness",
+    "to short",
+    "shorting"
+   ],
+   "answer": 2,
+   "why": "보어 자리에는 형용사 short가 온다. shortly는 '곧'이라는 뜻의 부사라서 보어로 쓸 수 없다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe joke made the class ____. (그 농담은 학급을 시끄럽게 만들었다.)",
+   "choices": [
+    "noise",
+    "noisily",
+    "noisy",
+    "to noise",
+    "noisiness"
+   ],
+   "answer": 3,
+   "why": "make+목적어 뒤 보어 자리에는 형용사 noisy가 알맞다. 명사 noise, 부사 noisily는 안 된다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 바르게 짝지어진 것은?\n· The candy made my hands ____. (끈적하게)\n· The win made the fans ____. (행복하게)",
+   "choices": [
+    "sticky – happily",
+    "stickily – happy",
+    "sticky – happy",
+    "stickily – happily",
+    "stick – happiness"
+   ],
+   "answer": 3,
+   "why": "두 문장 모두 make의 보어 자리이므로 형용사 sticky와 happy가 와야 한다. 부사 형태는 모두 오답이다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nSalt makes food ____. (소금은 음식을 짜게 만든다.)",
+   "choices": [
+    "salt",
+    "salty",
+    "saltily",
+    "to salt",
+    "saltiness"
+   ],
+   "answer": 2,
+   "why": "보어 자리에는 형용사 salty가 온다. 명사 salt나 부사 saltily는 보어가 될 수 없다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe loud TV made the baby ____. (시끄러운 TV가 아기를 짜증나게 만들었다.)",
+   "choices": [
+    "upsetly",
+    "upsetness",
+    "upset",
+    "to upset",
+    "upsettingly"
+   ],
+   "answer": 3,
+   "why": "보어 자리에 형용사 upset이 알맞다. 부사나 to+형용사 형태는 보어로 쓸 수 없다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말을 영어로 옳게 옮긴 것은?\n'그 결과는 그의 부모님을 자랑스럽게 만들었다.'",
+   "choices": [
+    "The result made his parents proud.",
+    "The result made his parents proudly.",
+    "The result made proud his parents.",
+    "The result his parents made proud.",
+    "The result made his parents to proud."
+   ],
+   "answer": 1,
+   "why": "make+목적어(his parents)+형용사(proud)의 어순이 옳다. 부사 proudly나 어순이 바뀐 문장은 틀리다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 들어갈 말은?\n· The rain ____ the ground soft.\n· Her songs ____ her famous.",
+   "choices": [
+    "made",
+    "gave",
+    "went",
+    "said",
+    "came"
+   ],
+   "answer": 1,
+   "why": "두 문장 모두 '목적어를 ~하게 만들었다'는 make+목적어+형용사 구조이므로 made가 공통으로 들어간다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThis app makes learning ____. (이 앱은 학습을 쉽게 만든다.)",
+   "choices": [
+    "ease",
+    "easily",
+    "easy",
+    "to easy",
+    "easiness"
+   ],
+   "answer": 3,
+   "why": "목적격 보어 자리에는 형용사 easy가 온다. 부사 easily는 보어 자리에 올 수 없다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 옳은 것은?",
+   "choices": [
+    "The smell made me <u>hungrily</u>.",
+    "The wind made the room <u>coldly</u>.",
+    "The gift made her <u>joyfully</u>.",
+    "The break made us <u>freshly</u>.",
+    "The walk made me <u>tired</u>."
+   ],
+   "answer": 5,
+   "why": "make의 보어 자리에는 형용사가 온다. tired만 형용사이고 나머지는 모두 부사라서 틀리다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nThe movie made the children (happily).",
+   "answer": "happy",
+   "why": "make의 목적격 보어 자리에는 부사가 아니라 형용사 happy를 써야 한다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 make의 알맞은 형태를 쓰시오. (과거형)\nThe storm ____ the sea rough.",
+   "answer": "made",
+   "why": "과거의 일이므로 make의 과거형 made를 쓴다. made+목적어+형용사(rough) 구조이다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.\nThe hot soup made me <u>warmly</u>.",
+   "answer": "warm",
+   "why": "보어 자리에는 부사 warmly가 아니라 형용사 warm이 와야 한다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nHis lie made her (anger).",
+   "answer": "angry",
+   "why": "보어 자리에는 명사 anger가 아니라 '화가 난'이라는 뜻의 형용사 angry를 써야 한다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.\nThe long class made us <u>sleepily</u>.",
+   "answer": "sleepy",
+   "why": "make+목적어 뒤 보어 자리에는 부사 sleepily가 아니라 형용사 sleepy가 온다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 한 단어를 쓰시오.\n그 역할은 그를 유명하게 만들었다.\nThe role ____ him famous.",
+   "answer": "made",
+   "why": "'~하게 만들었다'이므로 make의 과거형 made가 알맞다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nThe blanket made the bed (softly).",
+   "answer": "soft",
+   "why": "보어 자리에는 부사 softly가 아니라 형용사 soft를 써야 한다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.\nThe good news made them <u>gladly</u>.",
+   "answer": "glad",
+   "why": "make의 목적격 보어 자리에는 형용사 glad가 와야 한다. 부사 gladly는 쓸 수 없다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말과 같도록 단어들을 바르게 배열하여 문장을 완성하시오.\n비가 공기를 시원하게 만들었다. (made / the rain / cool / the air)",
+   "answer": "The rain made the air cool.",
+   "alt": [
+    "The rain made the air cool"
+   ],
+   "why": "make+목적어(the air)+형용사(cool)의 어순으로 배열한다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nToo much homework makes students (tiredly).",
+   "answer": "tired",
+   "why": "보어 자리에는 부사 tiredly가 아니라 형용사 tired가 와야 한다.",
+   "no": 34
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe heavy snow made the roads ____ yesterday. (폭설이 어제 도로를 위험하게 만들었다.)",
+   "choices": [
+    "danger",
+    "dangerous",
+    "dangerously",
+    "to danger",
+    "dangerousness"
+   ],
+   "answer": 2,
+   "why": "make+목적어 뒤 보어 자리에는 형용사 dangerous가 온다. 부사 dangerously와 명사 danger는 보어가 될 수 없다.",
+   "no": 35
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 옳은 문장을 고르시오.",
+   "choices": [
+    "Her advice made my plan perfectly.",
+    "Her advice made my plan perfect.",
+    "Her advice made perfect my plan.",
+    "Her advice made my plan perfection.",
+    "Her advice made perfectly my plan."
+   ],
+   "answer": 2,
+   "why": "make+목적어(my plan)+형용사(perfect)의 어순이 옳다. 부사 perfectly는 보어로 쓸 수 없고, 보어가 목적어 앞에 오면 안 된다.",
+   "no": 36
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은?",
+   "choices": [
+    "The hot weather made everyone <u>thirsty</u>.",
+    "Watching the game made the fans <u>excited</u>.",
+    "The election made her <u>class president</u>.",
+    "The traffic jam made the driver <u>angrily</u>.",
+    "The new curtains made the room <u>bright</u>."
+   ],
+   "answer": 4,
+   "why": "보어 자리에 부사 angrily는 올 수 없고 형용사 angry로 고쳐야 한다. 보어 자리에는 형용사나 명사(class president)가 온다.",
+   "no": 37
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?\nThe long trip made the players (A) ____, but the victory made the coach (B) ____.",
+   "choices": [
+    "tiredly – proud",
+    "tired – proudly",
+    "tired – proud",
+    "tiredly – proudly",
+    "tire – pride"
+   ],
+   "answer": 3,
+   "why": "두 빈칸 모두 make의 목적격 보어 자리이므로 형용사 tired와 proud가 와야 한다.",
+   "no": 38
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nPeople's love made the singer ____. (사람들의 사랑이 그 가수를 스타로 만들었다.)",
+   "choices": [
+    "star of",
+    "a star",
+    "starry",
+    "to star",
+    "stars"
+   ],
+   "answer": 2,
+   "why": "make의 보어 자리에는 명사도 올 수 있으며, '스타로'이므로 a star가 알맞다.",
+   "no": 39
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 들어갈 말은?\n· The drama made the small town ____.\n· The town is ____ for its old castle.",
+   "choices": [
+    "fame",
+    "famous",
+    "famously",
+    "famousness",
+    "more famously"
+   ],
+   "answer": 2,
+   "why": "첫 문장은 make의 보어 자리, 둘째 문장은 be동사 뒤 보어 자리로 둘 다 형용사 famous가 알맞다.",
+   "no": 40
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\nA: You look really tired today.\nB: Yeah, staying up late made me ____.",
+   "choices": [
+    "sleepily",
+    "sleepy",
+    "sleepiness",
+    "to sleepy",
+    "slept"
+   ],
+   "answer": 2,
+   "why": "make+목적어 뒤 보어 자리에는 형용사 sleepy가 온다. 부사·명사·동사 형태는 모두 오답이다.",
+   "no": 41
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n'그 규칙은 그 게임을 공정하게 만든다.'",
+   "choices": [
+    "The rule makes the game fair.",
+    "The rule makes the game fairly.",
+    "The rule makes fair the game.",
+    "The rule makes the game fairness.",
+    "The rule makes fairly the game."
+   ],
+   "answer": 1,
+   "why": "make+목적어(the game)+형용사(fair)의 어순이 옳다. fairly는 부사이므로 보어 자리에 쓸 수 없다.",
+   "no": 42
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nHis kind words always make me ____. (그의 다정한 말은 항상 나를 편안하게 만든다.)",
+   "choices": [
+    "comfort",
+    "comfortable",
+    "comfortably",
+    "to comfort",
+    "comforts"
+   ],
+   "answer": 2,
+   "why": "보어 자리에는 형용사 comfortable이 온다. 부사 comfortably는 보어가 될 수 없다.",
+   "no": 43
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 틀린 문장을 고르시오.",
+   "choices": [
+    "Exercise makes your heart strong.",
+    "The movie made the actor famous.",
+    "Her mistake made the situation badly.",
+    "The team made him their leader.",
+    "The music made the party lively."
+   ],
+   "answer": 3,
+   "why": "보어 자리에 부사 badly는 올 수 없고 형용사 bad로 고쳐야 한다. lively는 -ly로 끝나지만 형용사이므로 옳다.",
+   "no": 44
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe judges made her ____ of the contest. (심사위원들은 그녀를 대회의 우승자로 만들었다.)",
+   "choices": [
+    "win",
+    "the winner",
+    "winningly",
+    "to win",
+    "won"
+   ],
+   "answer": 2,
+   "why": "make의 보어 자리에 명사 the winner가 온다. 동사 win이나 won은 보어로 쓸 수 없다.",
+   "no": 45
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 문장의 빈칸에 들어갈 말이 순서대로 짝지어진 것은?\n· Don't ____ your parents angry.\n· The cold wind made my face ____.",
+   "choices": [
+    "make – red",
+    "makes – red",
+    "make – redly",
+    "made – red",
+    "makes – redly"
+   ],
+   "answer": 1,
+   "why": "명령문 Don't 뒤에는 동사원형 make가 오고, 보어 자리에는 형용사 red가 온다.",
+   "no": 46
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 make의 쓰임이 나머지 넷과 다른 것은?",
+   "choices": [
+    "The news <u>made</u> her sad.",
+    "Mom <u>made</u> me a sandwich.",
+    "The song <u>made</u> him popular.",
+    "The war <u>made</u> the country poor.",
+    "The award <u>made</u> her confident."
+   ],
+   "answer": 2,
+   "why": "②는 '나에게 샌드위치를 만들어 주었다'는 뜻으로 목적어가 두 개인 문장이고, 나머지는 모두 make+목적어+보어(~을 …하게 만들다) 구조이다.",
+   "no": 47
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe magic show made the children ____. (그 마술 쇼는 아이들을 신나게 만들었다.)",
+   "choices": [
+    "excite",
+    "excitedly",
+    "excited",
+    "to excite",
+    "excitement"
+   ],
+   "answer": 3,
+   "why": "보어 자리에는 '신이 난'이라는 뜻의 형용사 excited가 온다. 동사 excite나 부사 excitedly는 안 된다.",
+   "no": 48
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe rain made the picnic ____. (비가 소풍을 불가능하게 만들었다.)",
+   "choices": [
+    "impossible",
+    "impossibly",
+    "impossibility",
+    "to impossible",
+    "possible"
+   ],
+   "answer": 1,
+   "why": "보어 자리에는 형용사가 오고, '불가능하게'이므로 impossible이 알맞다. possible은 뜻이 반대라서 오답이다.",
+   "no": 49
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말과 같도록 단어를 바르게 배열한 것은?\n'그 소식은 온 마을을 슬프게 만들었다.' (the news / made / the whole town / sad)",
+   "choices": [
+    "The news made sad the whole town.",
+    "The news the whole town made sad.",
+    "The news made the whole town sad.",
+    "The whole town made the news sad.",
+    "Sad made the news the whole town."
+   ],
+   "answer": 3,
+   "why": "make+목적어(the whole town)+형용사(sad)의 어순이 옳고, 우리말에 맞게 the news가 주어가 되어야 한다.",
+   "no": 50
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nWhat makes you so ____? (무엇이 너를 그렇게 화나게 만드니?)",
+   "choices": [
+    "anger",
+    "angry",
+    "angrily",
+    "to anger",
+    "angriness"
+   ],
+   "answer": 2,
+   "why": "make+목적어(you) 뒤 보어 자리에는 형용사 angry가 온다. 명사·부사 형태는 오답이다.",
+   "no": 51
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 수 없는 것은?\nThe news made everyone ____.",
+   "choices": [
+    "happy",
+    "sad",
+    "quickly",
+    "nervous",
+    "upset"
+   ],
+   "answer": 3,
+   "why": "make의 보어 자리에는 형용사가 와야 하는데 quickly는 부사이므로 들어갈 수 없다.",
+   "no": 52
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 수 없는 것은?\nHard work made him ____.",
+   "choices": [
+    "rich",
+    "famous",
+    "a great leader",
+    "successful",
+    "successfully"
+   ],
+   "answer": 5,
+   "why": "보어 자리에는 형용사나 명사가 올 수 있지만 부사 successfully는 올 수 없다.",
+   "no": 53
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\nA: How was the horror movie?\nB: It ____ me really scared.",
+   "choices": [
+    "told",
+    "made",
+    "gave",
+    "said",
+    "went"
+   ],
+   "answer": 2,
+   "why": "'나를 무섭게 만들었다'는 make+목적어+형용사(scared) 구조이므로 made가 알맞다.",
+   "no": 54
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe new coach made the team ____ than before. (새 코치는 팀을 전보다 더 강하게 만들었다.)",
+   "choices": [
+    "strong",
+    "strongly",
+    "stronger",
+    "more strongly",
+    "strength"
+   ],
+   "answer": 3,
+   "why": "보어 자리에는 형용사가 오고, 뒤에 than before가 있으므로 비교급 stronger가 알맞다.",
+   "no": 55
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?\n'그의 웃음은 교실을 밝은 곳으로 만들었다.'",
+   "choices": [
+    "His laugh made the classroom a bright place.",
+    "His laugh made a bright place the classroom.",
+    "His laugh made the classroom brightly a place.",
+    "His laugh made the classroom to a bright place.",
+    "His laugh made the classroom bright place."
+   ],
+   "answer": 1,
+   "why": "make+목적어(the classroom)+명사 보어(a bright place)의 어순이 옳다. 명사 보어 앞에 to를 쓰지 않고, 관사 a도 빠뜨리면 안 된다.",
+   "no": 56
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법에 맞는 것은?",
+   "choices": [
+    "The spicy food made my mouth <u>hotly</u>.",
+    "The gift made my sister <u>joyful</u>.",
+    "The test result made my parents <u>angrily</u>.",
+    "The mess made the kitchen <u>dirtily</u>.",
+    "The show made the night <u>specially</u>."
+   ],
+   "answer": 2,
+   "why": "보어 자리에는 형용사가 와야 하므로 joyful만 옳다. 나머지는 모두 부사라서 형용사(hot, angry, dirty, special)로 고쳐야 한다.",
+   "no": 57
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "his letter를 주어로 하여 make의 과거형을 이용해 같은 뜻의 문장으로 바꿔 쓰시오.\nShe was happy because of his letter.",
+   "answer": "His letter made her happy.",
+   "alt": [
+    "His letter made her happy"
+   ],
+   "why": "'그의 편지가 그녀를 행복하게 만들었다'로 바꾼다. make+목적어(her)+형용사(happy) 어순에 주의한다.",
+   "no": 58
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nThe construction made the street (noise) all day.",
+   "answer": "noisy",
+   "why": "보어 자리에는 명사 noise가 아니라 '시끄러운'이라는 뜻의 형용사 noisy를 써야 한다.",
+   "no": 59
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe science project made the students <u>creatively</u>.",
+   "answer": "creative",
+   "why": "make의 목적격 보어 자리에는 부사 creatively가 아니라 형용사 creative가 와야 한다.",
+   "no": 60
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 쓰시오. (한 단어)\n그 사고는 도로를 위험하게 만들었다.\nThe accident ____ the road dangerous.",
+   "answer": "made",
+   "why": "과거의 일이므로 make의 과거형 made를 쓴다.",
+   "no": 61
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오. (한 단어)\nThe internet makes our lives (easy) than before.",
+   "answer": "easier",
+   "why": "뒤에 than before가 있으므로 형용사 easy의 비교급 easier를 보어 자리에 쓴다.",
+   "no": 62
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 단어들을 바르게 배열하시오.\n그 면접은 그녀를 매우 긴장하게 만들었다. (her / the interview / nervous / made / very)",
+   "answer": "The interview made her very nervous.",
+   "alt": [
+    "The interview made her very nervous"
+   ],
+   "why": "make+목적어(her)+형용사 보어(very nervous)의 어순으로 배열한다.",
+   "no": 63
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.\nThe spicy sauce made the dish <u>deliciously</u>.",
+   "answer": "delicious",
+   "why": "보어 자리에는 부사 deliciously가 아니라 형용사 delicious를 써야 한다.",
+   "no": 64
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "the test를 주어로 하여 make의 과거형을 이용한 문장으로 바꿔 쓰시오.\nWe were nervous because of the test.",
+   "answer": "The test made us nervous.",
+   "alt": [
+    "The test made us nervous"
+   ],
+   "why": "'그 시험이 우리를 긴장하게 만들었다'로 바꾼다. 목적어는 목적격 us를 쓰고 보어는 형용사 nervous를 쓴다.",
+   "no": 65
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 make를 알맞은 형태로 쓰시오. (한 단어)\nLook! The falling leaves are ____ the street beautiful.",
+   "answer": "making",
+   "why": "be동사 are 뒤이므로 현재진행형이 되도록 making을 쓴다.",
+   "no": 66
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nDid the loud music make the neighbors (angrily)?",
+   "answer": "angry",
+   "why": "make+목적어 뒤 보어 자리에는 부사 angrily가 아니라 형용사 angry가 온다.",
+   "no": 67
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. The heavy rain made the river dangerously.\nㄴ. Her honesty made her a trustworthy friend.\nㄷ. The long speech made the audience bored.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄱ은 보어 자리에 부사 dangerously를 써서 틀렸고(dangerous로 고쳐야 함), ㄴ은 명사 보어, ㄷ은 형용사 보어로 옳다.",
+   "no": 68
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 틀린 것을 모두 고른 것은?\nㄱ. The bright lights made the stage beautifully.\nㄴ. Winning the prize made her the happiest girl in town.\nㄷ. The smell of bread made everyone hungrily.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄱ의 beautifully와 ㄷ의 hungrily는 부사라서 보어가 될 수 없다(beautiful, hungry로 고쳐야 함). ㄴ은 명사 보어로 옳다.",
+   "no": 69
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 문장의 개수는?\nㄱ. The news made the whole country silent.\nㄴ. His speech made the meeting long and boring.\nㄷ. The victory made him a national hero.\nㄹ. The perfume made the room sweetly.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 4,
+   "why": "ㄱ, ㄴ, ㄷ은 형용사·명사 보어를 써서 옳다. ㄹ은 부사 sweetly를 써서 틀렸으므로(sweet로 고쳐야 함) 옳은 문장은 3개이다.",
+   "no": 70
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 ①~⑤ 중 어법상 틀린 것은?\nThe ① <u>sudden</u> storm ② <u>made</u> the sailors ③ <u>anxiously</u>, and the captain's calm voice made them ④ <u>quiet</u> ⑤ <u>again</u>.",
+   "choices": [
+    "① sudden",
+    "② made",
+    "③ anxiously",
+    "④ quiet",
+    "⑤ again"
+   ],
+   "answer": 3,
+   "why": "made의 목적격 보어 자리이므로 부사 anxiously가 아니라 형용사 anxious가 와야 한다. quiet는 형용사 보어로 옳다.",
+   "no": 71
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 ①~⑤ 중 어법상 틀린 것은?\nHer ① <u>warm</u> smile always ② <u>makes</u> new students ③ <u>comfortable</u> and ④ <u>makes</u> the classroom ⑤ <u>peacefully</u>.",
+   "choices": [
+    "① warm",
+    "② makes",
+    "③ comfortable",
+    "④ makes",
+    "⑤ peacefully"
+   ],
+   "answer": 5,
+   "why": "보어 자리에는 형용사 peaceful을 써야 한다. comfortable은 형용사 보어로 옳게 쓰였다.",
+   "no": 72
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 가장 바르게 옮긴 것은?\n'그 발견은 그를 역사상 가장 유명한 과학자로 만들었다.'",
+   "choices": [
+    "The discovery made him the most famous scientist in history.",
+    "The discovery made the most famous scientist in history him.",
+    "The discovery made him the most famously scientist in history.",
+    "The discovery made him to the most famous scientist in history.",
+    "The discovery made him most famous scientist history."
+   ],
+   "answer": 1,
+   "why": "make+목적어(him)+명사 보어(the most famous scientist)의 어순이 옳다. 보어 앞에 to를 쓰거나 부사 famously를 쓰면 틀리다.",
+   "no": 73
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?\nThe long drought made the land (A) ____, and it made water (B) ____ than gold.",
+   "choices": [
+    "dry – more precious",
+    "drily – more precious",
+    "dry – preciously",
+    "drily – preciously",
+    "dryness – precious"
+   ],
+   "answer": 1,
+   "why": "두 빈칸 모두 보어 자리이므로 형용사가 와야 하고, (B)는 뒤의 than 때문에 비교급 more precious가 알맞다.",
+   "no": 74
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 made의 쓰임이 <보기>와 같은 것은?\n<보기> The scandal made the actor unpopular.",
+   "choices": [
+    "My aunt <u>made</u> me this scarf.",
+    "She <u>made</u> a big mistake yesterday.",
+    "The teamwork <u>made</u> the project a success.",
+    "He <u>made</u> dinner for us.",
+    "The company <u>made</u> 100 cars last month."
+   ],
+   "answer": 3,
+   "why": "<보기>는 make+목적어+보어(~을 …하게 만들다) 구조이다. ③의 a success는 the project를 설명하는 명사 보어로 같은 쓰임이고, 나머지는 '만들다/만들어 주다'의 뜻이다.",
+   "no": 75
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 수 없는 것은?\nThe director's decision made the movie ____.",
+   "choices": [
+    "a big hit",
+    "more interesting",
+    "different",
+    "successfully",
+    "special"
+   ],
+   "answer": 4,
+   "why": "make의 보어 자리에는 명사(a big hit)나 형용사(비교급 포함)가 올 수 있지만 부사 successfully는 올 수 없다.",
+   "no": 76
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 조건에 맞게 영작한 것으로 옳은 것은?\n'스트레스는 사람들을 아프게 만들 수 있다.' (조건: can 사용)",
+   "choices": [
+    "Stress can make people sick.",
+    "Stress can makes people sick.",
+    "Stress can make sick people.",
+    "Stress can make people to sick.",
+    "Stress makes can people sick."
+   ],
+   "answer": 1,
+   "why": "조동사 can 뒤에는 동사원형 make가 오고, 그 뒤는 목적어(people)+형용사 보어(sick)의 어순이어야 한다. ③은 '아픈 사람들을 만들다'가 되어 뜻이 달라진다.",
+   "no": 77
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 어법상 알맞은 것은?\nA: Why is everyone smiling in this photo?\nB: The photographer's funny hat ____ at that moment.",
+   "choices": [
+    "made everyone happy",
+    "made happy everyone",
+    "made everyone happily",
+    "made everyone to happy",
+    "making everyone happy"
+   ],
+   "answer": 1,
+   "why": "make+목적어(everyone)+형용사 보어(happy)의 어순이 옳다. 보어가 목적어 앞에 오거나 부사 happily를 쓰면 틀리다.",
+   "no": 78
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고르면?\nㄱ. The cold weather made the flowers weak.\nㄴ. The billboard made famous the small restaurant.\nㄷ. Years of practice made her an excellent pianist.",
+   "choices": [
+    "ㄱ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄴ은 보어(famous)가 목적어 앞에 와서 어순이 틀렸다(made the small restaurant famous). ㄱ은 형용사 보어, ㄷ은 명사 보어로 옳다.",
+   "no": 79
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 들어갈 수 있는 것은?\n· The bad review made the chef ____.\n· The broken promise made her ____.",
+   "choices": [
+    "upset",
+    "angrily",
+    "sadly",
+    "disappoint",
+    "furiously"
+   ],
+   "answer": 1,
+   "why": "두 문장 모두 보어 자리이므로 형용사 upset만 가능하다. angrily·sadly·furiously는 부사, disappoint는 동사라서 안 된다.",
+   "no": 80
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 같은 것은?\nI became healthy because of morning exercise.",
+   "choices": [
+    "Morning exercise made me healthy.",
+    "I made morning exercise healthy.",
+    "Morning exercise made me healthily.",
+    "Healthy made me morning exercise.",
+    "Morning exercise became me healthy."
+   ],
+   "answer": 1,
+   "why": "'아침 운동이 나를 건강하게 만들었다'로 바꿔 쓸 수 있다. 보어 자리에는 형용사 healthy를 쓰며, 부사 healthily는 틀리다.",
+   "no": 81
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 틀린 문장의 개수는?\nㄱ. The fog made the mountain road very dangerous.\nㄴ. His constant jokes made the meeting noisily.\nㄷ. The scholarship made college possible for her.\nㄹ. The defeat made the players stronger inside.\nㅁ. The rumor made him nervously all week.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ㄴ의 noisily와 ㅁ의 nervously는 부사라서 보어가 될 수 없으므로 틀린 문장은 2개이다(noisy, nervous로 고쳐야 함).",
+   "no": 82
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말 영작으로 옳지 않은 것은?",
+   "choices": [
+    "그 소금은 수프를 짜게 만들었다. → The salt made the soup salty.",
+    "그 램프는 방을 밝게 만든다. → The lamp makes the room bright.",
+    "그 영화는 그녀를 스타로 만들었다. → The movie made her a star.",
+    "그 소음은 나를 미치게 만든다. → The noise makes me crazily.",
+    "그 코트는 그를 따뜻하게 만들었다. → The coat made him warm."
+   ],
+   "answer": 4,
+   "why": "보어 자리에 부사 crazily는 올 수 없고 형용사 crazy를 써야 한다. 나머지는 모두 형용사·명사 보어로 옳다.",
+   "no": 83
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 순서대로 알맞은 것은?\nThe unexpected question made the speaker ____ for a moment, but his honest answer made the audience ____ of him.",
+   "choices": [
+    "speechless – proud",
+    "speechlessly – proud",
+    "speechless – proudly",
+    "speechlessly – proudly",
+    "speech – pride"
+   ],
+   "answer": 1,
+   "why": "두 빈칸 모두 make의 보어 자리이므로 형용사 speechless와 proud(proud of ~: ~을 자랑스러워하는)가 와야 한다.",
+   "no": 84
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화에서 어법상 틀린 부분을 바르게 고친 것은?\nA: How was the school festival?\nB: Great! The dance club's show made the crowd wildly.",
+   "choices": [
+    "made → making",
+    "the crowd → crowd",
+    "wildly → wild",
+    "made → makes",
+    "show → shows"
+   ],
+   "answer": 3,
+   "why": "made의 보어 자리에는 부사 wildly가 아니라 형용사 wild가 와야 한다. 나머지 부분은 어법상 문제가 없다.",
+   "no": 85
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 ①~⑤ 중 어법상 틀린 것은?\nLast weekend, my family painted our old fence. The fresh paint made the fence ① <u>new</u> again. The work made us ② <u>tired</u>, but the result made everyone ③ <u>happily</u>. Mom said the white fence made our house ④ <u>lovely</u> and made our garden ⑤ <u>brighter</u>.",
+   "choices": [
+    "① new",
+    "② tired",
+    "③ happily",
+    "④ lovely",
+    "⑤ brighter"
+   ],
+   "answer": 3,
+   "why": "보어 자리에는 형용사 happy를 써야 한다. lovely는 -ly로 끝나지만 형용사이고, brighter는 형용사의 비교급이므로 옳다.",
+   "no": 86
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "make의 쓰임이 'make+목적어+보어'가 아닌 것은?",
+   "choices": [
+    "The trip made our friendship deeper.",
+    "The chef made the guests a special dessert.",
+    "The app made shopping simple.",
+    "The storm made the sky dark.",
+    "The award made her career bright."
+   ],
+   "answer": 2,
+   "why": "②는 '손님들에게 디저트를 만들어 주었다'는 뜻으로 목적어가 두 개인 문장이다. 나머지는 모두 목적어 뒤에 형용사 보어가 온 구조이다.",
+   "no": 87
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말과 같도록 단어들을 모두 한 번씩 사용해 문장을 만들 때, 네 번째로 오는 단어는?\n'그 축제는 도시를 활기차게 만들었다.' (the / made / city / festival / lively / the)",
+   "choices": [
+    "made",
+    "city",
+    "the",
+    "lively",
+    "festival"
+   ],
+   "answer": 3,
+   "why": "The festival made the city lively.의 어순이므로 네 번째 단어는 the이다. make+목적어(the city)+형용사(lively) 구조이다.",
+   "no": 88
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (A)~(C)에 들어갈 말로 바르게 짝지어진 것은?\nThe recipe looked (A) ____, but the missing step made the cooking (B) ____ and made me (C) ____.",
+   "choices": [
+    "easy – difficult – upset",
+    "easily – difficult – upset",
+    "easy – difficultly – upset",
+    "easy – difficult – upsetly",
+    "easily – difficultly – upsetly"
+   ],
+   "answer": 1,
+   "why": "look 뒤와 make의 보어 자리에는 모두 형용사가 온다. 따라서 easy, difficult, upset이 알맞고 부사 형태는 모두 오답이다.",
+   "no": 89
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 문장으로만 짝지어진 것은?\nㄱ. The gray clouds made the afternoon darkly.\nㄴ. Reading every night made him a better writer.\nㄷ. The kind waiter made our dinner pleasantly.\nㄹ. The seatbelt made the ride safe.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "ㄴ은 명사 보어, ㄹ은 형용사 보어로 옳다. ㄱ의 darkly와 ㄷ의 pleasantly는 부사라서 보어가 될 수 없다(dark, pleasant로 고쳐야 함).",
+   "no": 90
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말을 조건에 맞게 영작하시오.\n'그 긴 회의는 모두를 졸리게 만들었다.'\n(조건: meeting, sleepy를 사용할 것, 과거형, 6단어)",
+   "answer": "The long meeting made everyone sleepy.",
+   "alt": [
+    "The long meeting made everyone sleepy"
+   ],
+   "why": "make의 과거형 made 뒤에 목적어(everyone)와 형용사 보어(sleepy)를 순서대로 쓴다.",
+   "no": 91
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "his success를 주어로 하여 make의 과거형을 이용한 문장으로 바꿔 쓰시오.\nHis parents were proud because of his success.",
+   "answer": "His success made his parents proud.",
+   "alt": [
+    "His success made his parents proud"
+   ],
+   "why": "'그의 성공이 그의 부모님을 자랑스럽게 만들었다'로 바꾼다. 보어 자리에는 형용사 proud를 쓴다.",
+   "no": 92
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe new sofa and soft cushions made the living room <u>cozily</u>.",
+   "answer": "cozy",
+   "alt": [
+    "cosy"
+   ],
+   "why": "make의 보어 자리에는 부사 cozily가 아니라 형용사 cozy를 써야 한다.",
+   "no": 93
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 단어들을 바르게 배열하여 문장을 완성하시오.\n'폭우는 그 운전자를 더 조심하게 만들었다.' (made / the / driver / careful / heavy / more / rain / the)",
+   "answer": "The heavy rain made the driver more careful.",
+   "alt": [
+    "The heavy rain made the driver more careful"
+   ],
+   "why": "make+목적어(the driver)+형용사 비교급 보어(more careful)의 어순으로 배열한다.",
+   "no": 94
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오. (한 단어)\nThe map app made finding the hotel much (easy).",
+   "answer": "easier",
+   "why": "보어 자리에는 형용사가 오고, 앞의 much가 비교급을 강조하므로 easier가 알맞다.",
+   "no": 95
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "the first snow를 주어로 하여 make의 과거형을 이용한 문장으로 바꿔 쓰시오.\nThe children were excited because of the first snow.",
+   "answer": "The first snow made the children excited.",
+   "alt": [
+    "The first snow made the children excited"
+   ],
+   "why": "'첫눈이 아이들을 신나게 만들었다'로 바꾼다. make+목적어+형용사 보어(excited) 구조이다.",
+   "no": 96
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말을 조건에 맞게 영작하시오.\n'그녀의 노력은 그녀를 챔피언으로 만들었다.'\n(조건: effort, champion을 사용할 것, 과거형, 6단어)",
+   "answer": "Her effort made her a champion.",
+   "alt": [
+    "Her effort made her a champion"
+   ],
+   "why": "make의 보어 자리에 명사 a champion을 쓴다. 6단어 조건에 맞게 Her effort made her a champion.으로 쓴다.",
+   "no": 97
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nWhen the actor visited, his autograph made the fans <u>crazily</u> with joy.",
+   "answer": "crazy",
+   "why": "made의 보어 자리에는 부사 crazily가 아니라 형용사 crazy가 와야 한다.",
+   "no": 98
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 make를 알맞은 형태로 쓰시오. (한 단어)\nWill this new rule ____ our school life better?",
+   "answer": "make",
+   "why": "조동사 will 뒤에는 동사원형 make를 쓴다. 보어 자리에는 형용사 비교급 better가 쓰였다.",
+   "no": 99
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말을 조건에 맞게 영작하시오.\n'음악은 내 하루를 특별하게 만든다.'\n(조건: music을 주어로, 현재형, 5단어)",
+   "answer": "Music makes my day special.",
+   "alt": [
+    "Music makes my day special"
+   ],
+   "why": "주어가 3인칭 단수이므로 makes를 쓰고, 목적어(my day) 뒤 보어 자리에 형용사 special을 쓴다.",
+   "no": 100
+  }
+ ]
+}

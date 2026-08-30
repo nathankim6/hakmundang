@@ -1,0 +1,1336 @@
+{
+ "id": "m1-14",
+ "grade": "중1",
+ "name": "재귀대명사",
+ "points": [
+  "재귀 용법(목적어)",
+  "강조 용법(생략 가능)",
+  "관용 표현 by oneself"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nJane looked at ____ in the mirror.",
+   "choices": [
+    "himself",
+    "herself",
+    "myself",
+    "itself",
+    "themselves"
+   ],
+   "answer": 2,
+   "why": "주어 Jane(여자)이 자기 자신을 본 것이므로 재귀대명사 herself를 쓴다. 주어와 성·수가 일치해야 하므로 나머지는 답이 될 수 없다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nI can do it ____. (나 스스로)",
+   "choices": [
+    "yourself",
+    "himself",
+    "myself",
+    "herself",
+    "itself"
+   ],
+   "answer": 3,
+   "why": "주어가 I이므로 재귀대명사는 myself이다. '나 스스로'라는 강조의 뜻을 나타낸다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nWe enjoyed ____ at the party.",
+   "choices": [
+    "ourselves",
+    "myself",
+    "themselves",
+    "yourself",
+    "himself"
+   ],
+   "answer": 1,
+   "why": "enjoy oneself는 '즐거운 시간을 보내다'라는 뜻이고, 주어 We에 맞는 재귀대명사는 ourselves이다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nThe cat washed ____ after eating.",
+   "choices": [
+    "himself",
+    "herself",
+    "itself",
+    "themselves",
+    "myself"
+   ],
+   "answer": 3,
+   "why": "주어 The cat(동물, 단수)에 맞는 재귀대명사는 itself이다. 고양이가 자기 몸을 씻은 것이므로 재귀 용법이다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nThey introduced ____ to the class.",
+   "choices": [
+    "himself",
+    "herself",
+    "ourselves",
+    "themselves",
+    "itself"
+   ],
+   "answer": 4,
+   "why": "introduce oneself는 '자기소개를 하다'라는 뜻으로, 주어 They에 맞는 재귀대명사는 themselves이다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nYou should be proud of ____.",
+   "choices": [
+    "myself",
+    "himself",
+    "yourself",
+    "themselves",
+    "ourselves"
+   ],
+   "answer": 3,
+   "why": "주어 You가 자기 자신을 자랑스러워해야 한다는 뜻이므로 yourself를 쓴다. 주어와 목적어가 같은 대상일 때 재귀대명사를 쓴다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nHe hurt ____ while playing soccer.",
+   "choices": [
+    "herself",
+    "myself",
+    "himself",
+    "itself",
+    "ourselves"
+   ],
+   "answer": 3,
+   "why": "주어 He가 자기 자신을 다치게 한 것이므로 himself가 알맞다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nMy sister made this doll ____. (직접)",
+   "choices": [
+    "himself",
+    "herself",
+    "myself",
+    "itself",
+    "themselves"
+   ],
+   "answer": 2,
+   "why": "'직접 만들었다'는 강조 용법으로, 주어 My sister(여자)에 맞는 herself를 쓴다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nMina talked to ____ quietly. (미나는 혼잣말을 했다)",
+   "choices": [
+    "herself",
+    "himself",
+    "myself",
+    "yourself",
+    "themselves"
+   ],
+   "answer": 1,
+   "why": "talk to oneself는 '혼잣말을 하다'라는 뜻이며, 주어 Mina(여자)에 맞는 재귀대명사는 herself이다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nThe baby cannot feed ____ yet.",
+   "choices": [
+    "myself",
+    "ourselves",
+    "itself",
+    "yourselves",
+    "themselves"
+   ],
+   "answer": 3,
+   "why": "주어 The baby(단수)에 맞는 재귀대명사는 itself이다. 나머지는 주어와 수가 맞지 않는다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 재귀대명사가 아닌 것은?",
+   "choices": [
+    "myself",
+    "himself",
+    "ourselves",
+    "themselves",
+    "them"
+   ],
+   "answer": 5,
+   "why": "them은 인칭대명사의 목적격이고, 나머지는 모두 -self/-selves로 끝나는 재귀대명사이다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 재귀대명사의 형태가 잘못된 것은?",
+   "choices": [
+    "myself",
+    "yourself",
+    "hisself",
+    "herself",
+    "itself"
+   ],
+   "answer": 3,
+   "why": "he의 재귀대명사는 hisself가 아니라 himself이다. 3인칭 남성 단수는 himself로 쓴다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "인칭대명사와 재귀대명사가 잘못 짝지어진 것은?",
+   "choices": [
+    "I – myself",
+    "you – yourself",
+    "he – himself",
+    "we – ourself",
+    "they – themselves"
+   ],
+   "answer": 4,
+   "why": "we는 복수이므로 재귀대명사도 복수형 ourselves가 되어야 한다. ourself는 잘못된 형태이다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nLook at ____, Harry! You are all wet.",
+   "choices": [
+    "himself",
+    "yourself",
+    "myself",
+    "itself",
+    "ourselves"
+   ],
+   "answer": 2,
+   "why": "Harry 한 사람에게 '네 모습을 봐'라고 말하는 것이므로 듣는 사람 자신을 가리키는 yourself를 쓴다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nWe built the doghouse ____. (우리가 직접)",
+   "choices": [
+    "myself",
+    "yourself",
+    "himself",
+    "ourselves",
+    "itself"
+   ],
+   "answer": 4,
+   "why": "'우리가 직접'이라는 강조 용법으로, 주어 We에 맞는 재귀대명사는 ourselves이다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nThe children hid ____ behind the tree.",
+   "choices": [
+    "himself",
+    "herself",
+    "itself",
+    "ourselves",
+    "themselves"
+   ],
+   "answer": 5,
+   "why": "주어 The children(복수)이 자기 자신들을 숨긴 것이므로 themselves를 쓴다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nDad cut ____ while cooking dinner.",
+   "choices": [
+    "himself",
+    "herself",
+    "myself",
+    "itself",
+    "yourselves"
+   ],
+   "answer": 1,
+   "why": "주어 Dad(남자)가 요리하다가 자신을 베인 것이므로 himself가 알맞다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nShe taught ____ how to swim.",
+   "choices": [
+    "himself",
+    "myself",
+    "itself",
+    "herself",
+    "themselves"
+   ],
+   "answer": 4,
+   "why": "주어 She가 자기 자신에게 수영을 가르친 것(독학)이므로 herself를 쓴다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nMy brother fixed the bike ____. (직접)",
+   "choices": [
+    "herself",
+    "myself",
+    "himself",
+    "itself",
+    "ourselves"
+   ],
+   "answer": 3,
+   "why": "주어 My brother(남자)를 강조하는 himself가 알맞다. 강조 용법의 재귀대명사는 생략할 수 있다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\n\nA: Who made this pizza?\nB: I made it ____.",
+   "choices": [
+    "yourself",
+    "herself",
+    "myself",
+    "himself",
+    "itself"
+   ],
+   "answer": 3,
+   "why": "대답의 주어가 I이므로 '내가 직접 만들었다'는 뜻의 myself를 쓴다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 복수형 재귀대명사는?",
+   "choices": [
+    "myself",
+    "yourself",
+    "herself",
+    "itself",
+    "yourselves"
+   ],
+   "answer": 5,
+   "why": "yourselves는 '너희들 자신'이라는 복수형 재귀대명사이다. 나머지는 모두 단수형이다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nThe robot can move by ____.",
+   "choices": [
+    "myself",
+    "itself",
+    "himself",
+    "herself",
+    "ourselves"
+   ],
+   "answer": 2,
+   "why": "by oneself는 '혼자서, 스스로'라는 뜻의 관용 표현으로, 주어 The robot(사물)에 맞는 itself를 쓴다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nPlease help ____ to some cookies, Tom.",
+   "choices": [
+    "himself",
+    "myself",
+    "yourself",
+    "itself",
+    "yourselves"
+   ],
+   "answer": 3,
+   "why": "help oneself to는 '마음껏 먹다'라는 뜻이다. Tom 한 사람에게 말하고 있으므로 yourself가 알맞고, 복수형 yourselves는 쓸 수 없다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nEmily and I enjoyed ____ at the zoo.",
+   "choices": [
+    "myself",
+    "yourself",
+    "herself",
+    "ourselves",
+    "themselves"
+   ],
+   "answer": 4,
+   "why": "Emily and I는 we로 받을 수 있으므로 재귀대명사는 ourselves를 쓴다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 재귀대명사를 쓰시오.\n\nI hurt ____ when I fell down.",
+   "answer": "myself",
+   "alt": [],
+   "why": "주어 I가 넘어져서 자기 자신을 다치게 한 것이므로 myself를 쓴다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 재귀대명사를 쓰시오.\n\nShe is looking at ____ in the water.",
+   "answer": "herself",
+   "alt": [],
+   "why": "주어 She가 물에 비친 자기 모습을 보고 있는 것이므로 herself를 쓴다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 재귀대명사를 쓰시오.\n\nThe dog scratched ____ with its back leg.",
+   "answer": "itself",
+   "alt": [],
+   "why": "주어 The dog(동물, 단수)에 맞는 재귀대명사는 itself이다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 재귀대명사를 쓰시오.\n\nWe should believe in ____.",
+   "answer": "ourselves",
+   "alt": [],
+   "why": "주어 We가 '우리 자신'을 믿어야 한다는 뜻이므로 복수형 재귀대명사 ourselves를 쓴다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 대명사를 알맞은 재귀대명사로 바꿔 쓰시오.\n\nThey enjoyed ____ (they) at the festival.",
+   "answer": "themselves",
+   "alt": [],
+   "why": "enjoy oneself는 '즐거운 시간을 보내다'라는 뜻이고, they의 재귀대명사는 themselves이다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 대명사를 알맞은 재귀대명사로 바꿔 쓰시오.\n\nJunho, you must do your homework ____ (you).",
+   "answer": "yourself",
+   "alt": [],
+   "why": "준호 한 사람에게 '네가 직접' 하라는 뜻이므로 단수형 yourself를 쓴다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 대명사를 알맞은 재귀대명사로 바꿔 쓰시오.\n\nKevin painted the wall ____ (he).",
+   "answer": "himself",
+   "alt": [],
+   "why": "'Kevin이 직접 칠했다'는 강조 용법으로, he의 재귀대명사 himself를 쓴다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "인칭대명사 it의 재귀대명사를 쓰시오.",
+   "answer": "itself",
+   "alt": [],
+   "why": "it의 재귀대명사는 it에 -self를 붙인 itself이다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "인칭대명사 we의 재귀대명사를 쓰시오.",
+   "answer": "ourselves",
+   "alt": [],
+   "why": "we는 복수이므로 소유격 our에 -selves를 붙인 ourselves가 재귀대명사이다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 대명사를 알맞은 재귀대명사로 바꿔 쓰시오.\n\nGrandma knitted this sweater ____ (she).",
+   "answer": "herself",
+   "alt": [],
+   "why": "'할머니가 직접 짜셨다'는 강조 용법으로, she의 재귀대명사 herself를 쓴다.",
+   "no": 34
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nSam went camping by ____ last weekend. (혼자서)",
+   "choices": [
+    "himself",
+    "herself",
+    "myself",
+    "itself",
+    "themselves"
+   ],
+   "answer": 1,
+   "why": "by oneself는 '혼자서'라는 뜻의 관용 표현으로, 주어 Sam(남자)에 맞는 himself를 쓴다.",
+   "no": 35
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 옳은 문장은?",
+   "choices": [
+    "He taught herself French.",
+    "They enjoyed themself at the beach.",
+    "I hurt me yesterday.",
+    "We made the sandwiches ourselves.",
+    "You should take care of youself."
+   ],
+   "answer": 4,
+   "why": "주어 We와 강조의 ourselves가 바르게 쓰였다. ①은 himself, ②는 themselves, ③은 myself, ⑤는 yourself로 고쳐야 한다.",
+   "no": 36
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 틀린 문장은?",
+   "choices": [
+    "I introduced myself to the new teacher.",
+    "We enjoyed usselves at the concert.",
+    "Mary bought herself a new bag.",
+    "The twins looked at themselves in the mirror.",
+    "The cat licked itself."
+   ],
+   "answer": 2,
+   "why": "we의 재귀대명사는 usselves가 아니라 ourselves이다. 재귀대명사 복수형은 소유격/목적격에 -selves를 붙인다.",
+   "no": 37
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 틀린 것은?",
+   "choices": [
+    "Jenny made this card <u>herself</u>.",
+    "The students cleaned the classroom <u>themselves</u>.",
+    "I will go there by <u>myself</u>.",
+    "We made dinner <u>ourselves</u>.",
+    "Peter, you should be proud of <u>himself</u>."
+   ],
+   "answer": 5,
+   "why": "⑤는 Peter 한 사람(you)에게 말하는 것이므로 himself가 아니라 yourself를 써야 한다. 나머지는 주어와 재귀대명사가 일치한다.",
+   "no": 38
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 빈칸에 공통으로 알맞은 말은?\n\n· Jake finished the project by ____.\n· Jake was sitting by ____ in the park.",
+   "choices": [
+    "him",
+    "himself",
+    "his",
+    "herself",
+    "itself"
+   ],
+   "answer": 2,
+   "why": "두 문장 모두 by oneself(혼자서)의 관용 표현으로, 주어 Jake(남자)에 맞는 himself가 공통으로 들어간다.",
+   "no": 39
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분과 바꿔 쓸 수 있는 말은?\n\nI finished the puzzle <u>by myself</u>.",
+   "choices": [
+    "together",
+    "alone",
+    "early",
+    "often",
+    "fast"
+   ],
+   "answer": 2,
+   "why": "by oneself는 '혼자서'라는 뜻이므로 alone과 바꿔 쓸 수 있다.",
+   "no": 40
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 재귀대명사를 생략할 수 있는 것은?",
+   "choices": [
+    "She hurt <u>herself</u> on the ice.",
+    "I looked at <u>myself</u> in the mirror.",
+    "The king <u>himself</u> visited the village.",
+    "They enjoyed <u>themselves</u> at the fair.",
+    "Help <u>yourself</u> to the salad."
+   ],
+   "answer": 3,
+   "why": "③은 주어 The king을 강조하는 강조 용법이므로 생략해도 문장이 성립한다. 나머지는 동사·전치사의 목적어로 쓰인 재귀 용법이라 생략할 수 없다.",
+   "no": 41
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\n\nA: Did your mom help you with this poster?\nB: No, I drew it all by ____.",
+   "choices": [
+    "me",
+    "mine",
+    "myself",
+    "herself",
+    "ourselves"
+   ],
+   "answer": 3,
+   "why": "'혼자서(도움 없이)'라는 뜻의 by oneself 표현으로, 주어 I에 맞는 myself를 쓴다.",
+   "no": 42
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 옳게 옮긴 것은?\n\n그 소년은 자기 자신에게 편지를 썼다.",
+   "choices": [
+    "The boy wrote a letter to him.",
+    "The boy wrote a letter to himself.",
+    "The boy wrote a letter to hisself.",
+    "The boy wrote a letter to itself.",
+    "The boy wrote a letter to themselves."
+   ],
+   "answer": 2,
+   "why": "주어와 같은 대상인 '자기 자신에게'는 재귀대명사 himself로 쓴다. ①의 him은 다른 사람을 가리키고, ③ hisself는 잘못된 형태이다.",
+   "no": 43
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nMr. Kim ____ answered the phone. (김 선생님이 직접)",
+   "choices": [
+    "him",
+    "his",
+    "himself",
+    "hisself",
+    "herself"
+   ],
+   "answer": 3,
+   "why": "주어 Mr. Kim 바로 뒤에서 '직접'이라는 뜻을 더하는 강조 용법의 himself가 알맞다.",
+   "no": 44
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nThe children can't cross the street by ____.",
+   "choices": [
+    "themselves",
+    "himself",
+    "itself",
+    "ourselves",
+    "yourselves"
+   ],
+   "answer": 1,
+   "why": "by oneself(혼자서)의 표현으로, 주어 The children(복수)에 맞는 themselves를 쓴다.",
+   "no": 45
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 herself의 쓰임이 '강조 용법'인 것은?",
+   "choices": [
+    "She cut <u>herself</u> in the kitchen.",
+    "She looked at <u>herself</u> in the window.",
+    "She was proud of <u>herself</u>.",
+    "She baked the bread <u>herself</u>.",
+    "She talked to <u>herself</u>."
+   ],
+   "answer": 4,
+   "why": "④는 '그녀가 직접 빵을 구웠다'며 주어를 강조하는 용법으로 생략할 수 있다. 나머지는 동사·전치사의 목적어인 재귀 용법이다.",
+   "no": 46
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 빈칸에 공통으로 알맞은 말은?\n\n· Make ____ at home, Chris.\n· Chris, you should introduce ____ first.",
+   "choices": [
+    "you",
+    "your",
+    "yourself",
+    "myself",
+    "themselves"
+   ],
+   "answer": 3,
+   "why": "make oneself at home(편히 있다), introduce oneself(자기소개하다) 모두 듣는 사람 Chris 한 명 자신을 가리키므로 yourself가 공통으로 들어간다.",
+   "no": 47
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\n\nA: Who taught you how to play the guitar?\nB: Nobody. I taught ____.",
+   "choices": [
+    "me",
+    "myself",
+    "himself",
+    "yourself",
+    "ourselves"
+   ],
+   "answer": 2,
+   "why": "주어 I가 자기 자신을 가르친 것(독학)이므로 재귀대명사 myself를 쓴다. 목적격 me는 쓸 수 없다.",
+   "no": 48
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nThe old man lives by ____ in the countryside.",
+   "choices": [
+    "herself",
+    "him",
+    "himself",
+    "itself",
+    "hisself"
+   ],
+   "answer": 3,
+   "why": "live by oneself는 '혼자 살다'라는 뜻으로, 주어 The old man(남자)에 맞는 himself를 쓴다.",
+   "no": 49
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 옳게 옮긴 것은?\n\n우리는 소풍에서 즐거운 시간을 보냈다.",
+   "choices": [
+    "We enjoyed us at the picnic.",
+    "We enjoyed ourself at the picnic.",
+    "We enjoyed ourselves at the picnic.",
+    "We enjoyed themselves at the picnic.",
+    "We enjoyed myself at the picnic."
+   ],
+   "answer": 3,
+   "why": "enjoy oneself는 '즐거운 시간을 보내다'라는 뜻이고, 주어 We에 맞는 재귀대명사는 복수형 ourselves이다.",
+   "no": 50
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nHistory repeats ____. (역사는 반복된다)",
+   "choices": [
+    "it",
+    "its",
+    "itself",
+    "themselves",
+    "himself"
+   ],
+   "answer": 3,
+   "why": "주어 History가 '그 자신을' 반복한다는 뜻이므로 단수 사물에 쓰는 재귀대명사 itself가 알맞다.",
+   "no": 51
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은?",
+   "choices": [
+    "Ann and Ben painted the fence themself.",
+    "The actress herself answered my letter.",
+    "You girls should take care of yourselves.",
+    "My little brother dressed himself this morning.",
+    "I sometimes talk to myself."
+   ],
+   "answer": 1,
+   "why": "Ann and Ben은 복수이므로 themself가 아니라 themselves를 써야 한다. 나머지 문장의 재귀대명사는 모두 바르게 쓰였다.",
+   "no": 52
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nMy grandmother grew these tomatoes ____. (직접)",
+   "choices": [
+    "herself",
+    "himself",
+    "myself",
+    "itself",
+    "ourselves"
+   ],
+   "answer": 1,
+   "why": "주어 My grandmother(여자)를 강조하는 herself가 알맞다. 강조 용법이므로 생략도 가능하다.",
+   "no": 53
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\n\nA: Did Mr. Lee's students clean the gym?\nB: Yes, they did it ____.",
+   "choices": [
+    "themself",
+    "themselves",
+    "himself",
+    "ourselves",
+    "itself"
+   ],
+   "answer": 2,
+   "why": "주어 they(학생들)를 강조하여 '그들이 직접 했다'는 뜻이므로 복수형 themselves를 쓴다.",
+   "no": 54
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nBe careful, Somi, or you will cut ____.",
+   "choices": [
+    "yourself",
+    "yourselves",
+    "himself",
+    "myself",
+    "itself"
+   ],
+   "answer": 1,
+   "why": "소미 한 사람에게 하는 말이므로 단수형 yourself가 알맞다. 여러 명에게 말할 때만 yourselves를 쓴다.",
+   "no": 55
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 나머지 넷과 다른 것은?",
+   "choices": [
+    "Tom looked at ____ in the mirror.",
+    "Jack was proud of ____.",
+    "My uncle built this house ____.",
+    "The boy hid ____ under the bed.",
+    "Sujin made this bracelet ____."
+   ],
+   "answer": 5,
+   "why": "①~④는 남자 주어이므로 himself가 들어가지만, ⑤는 주어 Sujin(여자)이므로 herself가 들어간다.",
+   "no": 56
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n\nDid you two enjoy ____ at the festival?",
+   "choices": [
+    "yourselves",
+    "yourself",
+    "themselves",
+    "ourselves",
+    "you"
+   ],
+   "answer": 1,
+   "why": "you two(너희 둘)는 복수이므로 복수형 재귀대명사 yourselves를 써야 한다.",
+   "no": 57
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nDan hurt <u>him</u> when he fell off his bike. (Dan 자신이 다쳤음)",
+   "answer": "himself",
+   "alt": [],
+   "why": "주어 Dan과 다친 대상이 같으므로 목적격 him이 아니라 재귀대명사 himself를 써야 한다.",
+   "no": 58
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 재귀대명사를 쓰시오.\n\nMy little sister brushed her teeth by ____. (혼자서)",
+   "answer": "herself",
+   "alt": [],
+   "why": "by oneself는 '혼자서'라는 뜻으로, 주어 My little sister(여자)에 맞는 herself를 쓴다.",
+   "no": 59
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 재귀대명사를 쓰시오.\n\nShe made the cake alone. = She made the cake by ____.",
+   "answer": "herself",
+   "alt": [],
+   "why": "alone(혼자서)은 by oneself로 바꿔 쓸 수 있고, 주어 She에 맞는 재귀대명사는 herself이다.",
+   "no": 60
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 재귀대명사를 쓰시오.\n\nPlease help ____ to the snacks, everyone.",
+   "answer": "yourselves",
+   "alt": [],
+   "why": "help oneself to는 '마음껏 먹다'라는 뜻이고, everyone(여러분)에게 말하고 있으므로 복수형 yourselves를 쓴다.",
+   "no": 61
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 대명사를 알맞은 재귀대명사로 바꿔 쓰시오.\n\nWe should love ____ (we) first.",
+   "answer": "ourselves",
+   "alt": [],
+   "why": "주어 We와 사랑하는 대상이 같으므로 복수형 재귀대명사 ourselves를 쓴다.",
+   "no": 62
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nThe players believed in <u>themself</u>.",
+   "answer": "themselves",
+   "alt": [],
+   "why": "The players는 복수이므로 재귀대명사도 복수형 themselves로 써야 한다.",
+   "no": 63
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 재귀대명사를 쓰시오.\n\nThe door closed by ____. (저절로)",
+   "answer": "itself",
+   "alt": [],
+   "why": "by itself는 사물에 쓰여 '저절로'라는 뜻을 나타낸다. 주어 The door는 사물 단수이므로 itself를 쓴다.",
+   "no": 64
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 대명사를 알맞은 재귀대명사로 바꿔 쓰시오.\n\nJulie bought ____ (she) a pair of shoes.",
+   "answer": "herself",
+   "alt": [],
+   "why": "주어 Julie가 '자기 자신에게' 신발을 사 준 것이므로 she의 재귀대명사 herself를 쓴다.",
+   "no": 65
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말에 맞게 빈칸에 알맞은 재귀대명사를 쓰시오.\n\nI ____ washed all the dishes. (내가 직접 설거지를 다 했다)",
+   "answer": "myself",
+   "alt": [],
+   "why": "주어 I 바로 뒤에서 '내가 직접'이라고 강조하는 강조 용법의 myself를 쓴다.",
+   "no": 66
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nMinho introduced <u>him</u> to the club members. (민호가 자기소개를 했음)",
+   "answer": "himself",
+   "alt": [],
+   "why": "주어 Minho가 소개한 대상이 자기 자신이므로 him이 아니라 재귀대명사 himself를 써야 한다.",
+   "no": 67
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\n\nㄱ. The children built the sandcastle themselves.\nㄴ. My aunt lives by sheself.\nㄷ. Kate looked at herself in the shop window.\nㄹ. We really enjoyed ourselves at the water park.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄴ, ㄷ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "ㄴ은 sheself라는 형태가 없으므로 herself로 고쳐야 한다. ㄱ은 강조 용법, ㄷ은 재귀 용법, ㄹ은 enjoy oneself가 모두 바르게 쓰였다.",
+   "no": 68
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 틀린 것을 모두 고른 것은?\n\nㄱ. Mr. Park himself carried the heavy boxes.\nㄴ. You should ask yourselves this question, boys.\nㄷ. I taught me how to skate.\nㄹ. Emma drew this picture herselves.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ",
+    "ㄴ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "ㄷ은 주어 I와 목적어가 같으므로 me가 아니라 myself를, ㄹ은 단수 주어 Emma에 맞게 herself를 써야 한다. ㄱ, ㄴ은 옳은 문장이다.",
+   "no": 69
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 재귀대명사의 쓰임이 나머지 넷과 다른 것은?",
+   "choices": [
+    "The chef <u>himself</u> served the food.",
+    "Eric blamed <u>himself</u> for the mistake.",
+    "Mom planted the flowers <u>herself</u>.",
+    "We fixed the tent <u>ourselves</u>.",
+    "The singer <u>herself</u> replied to my message."
+   ],
+   "answer": 2,
+   "why": "②는 동사 blamed의 목적어로 쓰인 재귀 용법이고, 나머지는 주어를 강조하는 강조 용법으로 생략할 수 있다.",
+   "no": 70
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 재귀대명사의 용법이 나머지 넷과 다른 것은?",
+   "choices": [
+    "The teacher <u>herself</u> made the quiz.",
+    "The girl hurt <u>herself</u> on the stairs.",
+    "You should trust <u>yourself</u>.",
+    "He locked <u>himself</u> in the room.",
+    "I saw <u>myself</u> on TV."
+   ],
+   "answer": 1,
+   "why": "①은 주어 The teacher를 강조하는 강조 용법(생략 가능)이고, 나머지는 동사의 목적어로 쓰인 재귀 용법(생략 불가)이다.",
+   "no": 71
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분을 생략할 수 없는 것은?",
+   "choices": [
+    "Dad washed the car <u>himself</u>.",
+    "The queen <u>herself</u> visited the school.",
+    "I planned the trip <u>myself</u>.",
+    "The twins made their beds <u>themselves</u>.",
+    "Susan told <u>herself</u> to stay calm."
+   ],
+   "answer": 5,
+   "why": "⑤의 herself는 동사 told의 목적어인 재귀 용법이므로 생략하면 문장이 성립하지 않는다. 나머지는 강조 용법이라 생략할 수 있다.",
+   "no": 72
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 옳게 옮긴 것은?\n\n그 노부인은 혼자 힘으로 그 정원을 가꾼다.",
+   "choices": [
+    "The old lady takes care of the garden by her.",
+    "The old lady takes care of the garden by sheself.",
+    "The old lady takes care of the garden herself by.",
+    "The old lady takes care of the garden by herself.",
+    "The old lady take care of the garden by herself."
+   ],
+   "answer": 4,
+   "why": "'혼자 힘으로'는 by oneself로 나타내며 주어에 맞는 herself를 by 뒤에 쓴다. ⑤는 3인칭 단수 주어인데 동사 take의 수일치가 틀렸다.",
+   "no": 73
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?\n\nTom cut (A) while he was making a model plane, so his sister had to finish it (B).",
+   "choices": [
+    "himself – herself",
+    "him – her",
+    "himself – himself",
+    "herself – herself",
+    "himself – themselves"
+   ],
+   "answer": 1,
+   "why": "(A)는 Tom이 자신을 베인 재귀 용법이므로 himself, (B)는 여동생(his sister)이 직접 완성했다는 강조 용법이므로 herself가 알맞다.",
+   "no": 74
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 문장의 개수는?\n\n(a) The dog opened the door itself.\n(b) We introduced ourselves to our new neighbors.\n(c) Julia looked at her in the mirror and smiled. (Julia 자신을 보았음)\n(d) Help yourself to the pie, Mr. Brown.\n(e) The boys hid themself in the garage.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "(a), (b), (d)가 옳다. (c)는 Julia 자신을 본 것이므로 her를 herself로, (e)는 복수 주어에 맞게 themself를 themselves로 고쳐야 한다.",
+   "no": 75
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\n\nA: Why is Kevin talking to ____?\nB: He always does that when he is nervous.",
+   "choices": [
+    "him",
+    "himself",
+    "hisself",
+    "itself",
+    "myself"
+   ],
+   "answer": 2,
+   "why": "talk to oneself는 '혼잣말을 하다'라는 뜻으로, Kevin(남자)에 맞는 himself를 쓴다. him을 쓰면 다른 사람에게 말하는 뜻이 된다.",
+   "no": 76
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "두 빈칸에 공통으로 알맞은 말은?\n\n· The candle went out by ____.\n· The problem will not solve ____.",
+   "choices": [
+    "it",
+    "its",
+    "itself",
+    "themselves",
+    "oneself"
+   ],
+   "answer": 3,
+   "why": "첫 문장은 by itself(저절로), 둘째 문장은 solve의 목적어로 쓰인 재귀 용법으로, 둘 다 단수 사물 주어에 맞는 itself가 들어간다.",
+   "no": 77
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 옳게 옮긴 것은?\n\n나는 내 자신이 자랑스러웠다.",
+   "choices": [
+    "I was proud of me.",
+    "I was proud of my.",
+    "I was proud of myself.",
+    "I was proud of mine.",
+    "I proud of myself."
+   ],
+   "answer": 3,
+   "why": "주어 I와 전치사 of의 목적어가 같은 대상이므로 재귀대명사 myself를 쓴다. ⑤는 be동사가 빠져 문장이 성립하지 않는다.",
+   "no": 78
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 틀린 것은?",
+   "choices": [
+    "Sarah herself designed the poster.",
+    "You and Jane should be proud of yourself.",
+    "The computer restarts itself every night.",
+    "My cousins enjoyed themselves at the amusement park.",
+    "Please make yourself at home, Jenny."
+   ],
+   "answer": 2,
+   "why": "②의 주어는 You and Jane(복수)이므로 yourself가 아니라 yourselves를 써야 한다. 나머지는 주어와 재귀대명사가 바르게 일치한다.",
+   "no": 79
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 '재귀 용법'인 것만 고른 것은?\n\nㄱ. Amy taught <u>herself</u> Spanish.\nㄴ. Grandpa <u>himself</u> picked the apples.\nㄷ. The children dressed <u>themselves</u> quickly.\nㄹ. I met the writer <u>himself</u> at the book fair.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄱ과 ㄷ은 동사의 목적어로 쓰인 재귀 용법이다. ㄴ과 ㄹ은 명사를 강조하는 강조 용법으로 생략할 수 있다.",
+   "no": 80
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 순서대로 바르게 짝지어진 것은?\n\n· Mina and I painted the room ____.\n· The printer turns ____ off at night.",
+   "choices": [
+    "ourselves – it",
+    "ourself – itself",
+    "ourselves – itself",
+    "themselves – itself",
+    "ourselves – himself"
+   ],
+   "answer": 3,
+   "why": "Mina and I는 we이므로 강조의 ourselves, The printer는 사물 단수이므로 itself가 알맞다. ourself는 잘못된 형태이다.",
+   "no": 81
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "Minsu drew the map by hisself.",
+    "The baby birds cannot fly by themself.",
+    "My grandfather planted these trees himself.",
+    "Did you make this song yourselfs?",
+    "Ann said to himself, \"Try again.\""
+   ],
+   "answer": 3,
+   "why": "③은 주어를 강조하는 himself가 바르게 쓰였다. ①은 himself, ②는 themselves, ④는 yourself, ⑤는 Ann(여자)이므로 herself로 고쳐야 한다.",
+   "no": 82
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분의 쓰임이 <보기>와 같은 것은?\n\n<보기> The mayor himself came to our school.",
+   "choices": [
+    "I asked <u>myself</u> the same question.",
+    "She hurt <u>herself</u> badly.",
+    "We should not blame <u>ourselves</u>.",
+    "My father built the bookshelf <u>himself</u>.",
+    "The cat hid <u>itself</u> under the sofa."
+   ],
+   "answer": 4,
+   "why": "보기의 himself는 주어를 강조하는 강조 용법이다. ④도 '아버지가 직접'이라는 강조 용법이고, 나머지는 목적어로 쓰인 재귀 용법이다.",
+   "no": 83
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\n\nA: This soup is delicious. Did you buy it?\nB: No, my brother and I made it ____.",
+   "choices": [
+    "myself",
+    "ourselves",
+    "themselves",
+    "ourself",
+    "us"
+   ],
+   "answer": 2,
+   "why": "my brother and I는 we로 받으므로 '우리가 직접 만들었다'는 강조의 ourselves가 알맞다.",
+   "no": 84
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 잘못 옮긴 것은?",
+   "choices": [
+    "그는 혼자 산다. → He lives by him.",
+    "그녀는 혼잣말을 했다. → She talked to herself.",
+    "그 문은 저절로 열렸다. → The door opened by itself.",
+    "우리는 그 일을 직접 했다. → We did the work ourselves.",
+    "마음껏 드세요. → Help yourself."
+   ],
+   "answer": 1,
+   "why": "'혼자'는 by oneself로 나타내므로 He lives by himself가 되어야 한다. by him은 재귀의 뜻을 나타내지 못한다.",
+   "no": 85
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\n\nㄱ. The little girl tied her shoes herself.\nㄴ. Jack and Tom, please introduce yourself to the class.\nㄷ. I sometimes write letters to myself.\nㄹ. My uncle repaired the roof himselves.",
+   "choices": [
+    "ㄱ, ㄷ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄹ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 1,
+   "why": "ㄴ은 두 사람에게 말하므로 yourselves, ㄹ은 단수 주어이므로 himself로 고쳐야 한다. ㄱ(강조 용법)과 ㄷ(재귀 용법)은 옳다.",
+   "no": 86
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분을 고쳐야 하는 것은?",
+   "choices": [
+    "Steve looked at <u>himself</u> in the mirror.",
+    "The girls bought <u>themselves</u> some ice cream.",
+    "Mom said to <u>her</u>, \"I can do this.\" (엄마가 스스로에게 말함)",
+    "We enjoyed <u>ourselves</u> on Jeju-do.",
+    "The clock stopped by <u>itself</u>."
+   ],
+   "answer": 3,
+   "why": "③은 엄마가 자기 자신에게 말한 것이므로 her가 아니라 재귀대명사 herself를 써야 한다. 나머지는 바르게 쓰였다.",
+   "no": 87
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?\n\nThe students planned the festival (A), and Principal Kim (B) praised them. (Principal Kim은 남자이다.)",
+   "choices": [
+    "themselves – himself",
+    "themself – himself",
+    "themselves – him",
+    "ourselves – himself",
+    "themselves – herself"
+   ],
+   "answer": 1,
+   "why": "(A)는 복수 주어 The students를 강조하는 themselves, (B)는 남자인 교장 선생님을 강조하는 himself가 알맞다.",
+   "no": 88
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 말은?\n\nNobody helped Jane clean the house. = Jane cleaned the house ____.",
+   "choices": [
+    "by her",
+    "by herself",
+    "by herselves",
+    "for her",
+    "with herself"
+   ],
+   "answer": 2,
+   "why": "'아무도 도와주지 않았다'는 '혼자서 했다'는 뜻이므로 by oneself를 써서 by herself로 나타낸다.",
+   "no": 89
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "Every student should believe in himselves.",
+    "The town itself is small, but it has a long history.",
+    "My parents built this house theirselves.",
+    "Kate, help yourselves to the cake.",
+    "I looked at me in the window."
+   ],
+   "answer": 2,
+   "why": "②는 명사 The town을 강조하는 itself가 바르게 쓰였다. ① himselves, ③ theirselves는 없는 형태이고, ④는 Kate 한 명이므로 yourself, ⑤는 myself를 써야 한다.",
+   "no": 90
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말을 조건에 맞게 영작하시오.\n\n그 아이들은 스스로를 돌볼 수 있다.\n(조건: take care of를 사용하여 7단어로 쓸 것, The children으로 시작할 것)",
+   "answer": "The children can take care of themselves.",
+   "alt": [
+    "The children can take care of themselves"
+   ],
+   "why": "주어 The children과 돌보는 대상이 같으므로 복수형 재귀대명사 themselves를 목적어로 쓴다.",
+   "no": 91
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nMy sister and I enjoyed <u>myself</u> at the concert.",
+   "answer": "ourselves",
+   "alt": [],
+   "why": "주어 My sister and I는 we이므로 재귀대명사도 복수형 ourselves로 써야 한다.",
+   "no": 92
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 말을 두 단어로 쓰시오.\n\nNobody taught Ella how to bake. She learned it ____ ____.",
+   "answer": "by herself",
+   "alt": [],
+   "why": "아무도 가르쳐 주지 않았으므로 '혼자서' 배운 것이다. by oneself 표현을 주어 She에 맞춰 by herself로 쓴다.",
+   "no": 93
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말에 맞게 빈칸에 알맞은 한 단어를 쓰시오.\n\n그 왕 자신이 그 다리를 건설했다.\n→ The king ____ built the bridge.",
+   "answer": "himself",
+   "alt": [],
+   "why": "주어 The king 바로 뒤에서 '왕이 직접'이라고 강조하는 강조 용법의 himself를 쓴다.",
+   "no": 94
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nMake <u>yourselves</u> at home, Mr. Grey.",
+   "answer": "yourself",
+   "alt": [],
+   "why": "Mr. Grey 한 사람에게 하는 말이므로 복수형 yourselves가 아니라 단수형 yourself를 써야 한다.",
+   "no": 95
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 대명사를 알맞은 재귀대명사로 바꿔 쓰시오.\n\nWe asked ____ (we) many questions before the trip.",
+   "answer": "ourselves",
+   "alt": [],
+   "why": "주어 We가 '우리 자신에게' 질문한 것이므로 복수형 재귀대명사 ourselves를 쓴다.",
+   "no": 96
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 말을 두 단어로 쓰시오.\n\nI made this kite without any help. = I made this kite ____ ____.",
+   "answer": "by myself",
+   "alt": [],
+   "why": "without any help(도움 없이)는 by oneself(혼자 힘으로)로 바꿔 쓸 수 있으므로 by myself를 쓴다.",
+   "no": 97
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nThe two dogs looked at <u>itself</u> in the pond.",
+   "answer": "themselves",
+   "alt": [],
+   "why": "주어 The two dogs는 복수이므로 단수형 itself가 아니라 복수형 themselves를 써야 한다.",
+   "no": 98
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 재귀대명사를 쓰시오.\n\nThe kettle turns ____ off when the water boils.",
+   "answer": "itself",
+   "alt": [],
+   "why": "주전자가 '스스로를' 끄는 것이므로 사물 단수 주어에 맞는 재귀대명사 itself를 쓴다.",
+   "no": 99
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말을 조건에 맞게 영작하시오.\n\n민지(Minji)는 파티에서 즐거운 시간을 보냈다.\n(조건: enjoy를 사용하여 과거시제 6단어로 쓸 것, at the party로 끝낼 것)",
+   "answer": "Minji enjoyed herself at the party.",
+   "alt": [
+    "Minji enjoyed herself at the party"
+   ],
+   "why": "enjoy oneself는 '즐거운 시간을 보내다'라는 뜻으로, 주어 Minji(여자)에 맞는 herself를 쓰고 과거형 enjoyed로 나타낸다.",
+   "no": 100
+  }
+ ]
+}
