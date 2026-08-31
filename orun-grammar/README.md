@@ -22,6 +22,8 @@
 - `site.html` — 템플릿. `__BANK__` 자리에 문제은행이 주입된다.
 - `bank/taxonomy.json` — 85개 문법 항목 분류(학년·항목명·핵심 포인트).
 - `bank/<id>.json` — 항목별 200문항.
+- `bank/textbooks.json` — 학년별 출판사 교재 52종의 단원↔문법 항목 매핑.
+- `bank/orun.json` — 옳은영어 자체 교재(초등 9권 · 중등 11권)의 완성 시험지.
 - `bank/parts/` — 생성 시 쓰인 부분 파일(하/중/상 × 객관식/주관식).
 - `merge_bank.py` — 부분 파일 병합 + 규격 검증(문항 수·난이도 배분·선지 5개·stem 중복 등).
 - `build_site.py` — `bank/*.json` 을 `site.html` 에 심어 `옳은문법.html` 생성.
