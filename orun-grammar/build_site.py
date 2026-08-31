@@ -9,7 +9,8 @@ for f in sorted(glob.glob(H+'/bank/??-??.json')):
     d=json.load(open(f,encoding='utf-8'))
     cats.append(d)
 cats.sort(key=lambda c:order.get(c['id'],999))
-blob=json.dumps({'cats':cats},ensure_ascii=False,separators=(',',':')).replace('</','<\\/')
+books=json.load(open(H+'/bank/textbooks.json',encoding='utf-8'))
+blob=json.dumps({'cats':cats,'books':books},ensure_ascii=False,separators=(',',':')).replace('</','<\\/')
 s=open(H+'/site.html',encoding='utf-8').read()
 assert '__BANK__' in s
 out=s.replace('__BANK__',blob,1)
