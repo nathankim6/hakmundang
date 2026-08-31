@@ -1,0 +1,2672 @@
+{
+ "id": "hs-23",
+ "grade": "고등",
+ "name": "원급·비교급 심화",
+ "points": [
+  "배수사 표현",
+  "the 비교급, the 비교급",
+  "비교급 강조·최상급 대용 표현"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "This tree is twice as ____ as that one.",
+   "choices": [
+    "taller",
+    "more tall",
+    "tallest",
+    "tall",
+    "the tallest"
+   ],
+   "answer": 4,
+   "why": "배수사(twice)는 「as+원급+as」 앞에 붙으므로 원급 tall이 온다. as ~ as 사이에는 비교급이나 최상급을 쓸 수 없다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The new bridge is three times ____ than the old one.",
+   "choices": [
+    "long",
+    "more long",
+    "longest",
+    "longer",
+    "as long"
+   ],
+   "answer": 4,
+   "why": "「배수사+비교급+than」 형태이므로 longer가 맞다. than 앞에는 반드시 비교급이 와야 하므로 원급 long은 쓸 수 없다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Their garden is four times ____ size of ours.",
+   "choices": [
+    "a",
+    "an",
+    "the",
+    "that",
+    "as"
+   ],
+   "answer": 3,
+   "why": "「배수사+the+명사(size)+of」 구문이므로 the가 필요하다. size는 뒤의 of ours로 한정되므로 관사 a를 쓸 수 없다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The harder you try, the ____ your result will be.",
+   "choices": [
+    "good",
+    "well",
+    "more good",
+    "best",
+    "better"
+   ],
+   "answer": 5,
+   "why": "「the+비교급, the+비교급」 구문이므로 the 뒤에는 비교급 better가 온다. good은 원급, best는 최상급이라 쓸 수 없다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The more books you read, the ____ you learn.",
+   "choices": [
+    "much",
+    "many",
+    "the most",
+    "most",
+    "more"
+   ],
+   "answer": 5,
+   "why": "「the+비교급, the+비교급」이므로 뒤 절에도 비교급 more를 쓴다. 앞에 the가 이미 있으므로 the most는 중복이며 최상급도 올 수 없다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Your plan is ____ better than mine.",
+   "choices": [
+    "very",
+    "so",
+    "too",
+    "many",
+    "much"
+   ],
+   "answer": 5,
+   "why": "비교급 better를 강조하는 말은 much, far, even, still, a lot이다. very는 원급만 강조하므로 비교급 앞에 쓸 수 없다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "No other mountain in Korea is ____ high as Hallasan.",
+   "choices": [
+    "than",
+    "as",
+    "more",
+    "most",
+    "very"
+   ],
+   "answer": 2,
+   "why": "「No other+단수명사+as 원급 as」는 최상급을 대신하는 표현이다. 뒤에 as high as의 짝이 필요하므로 첫 자리에도 as가 온다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Nothing is ____ important than family to her.",
+   "choices": [
+    "very",
+    "more",
+    "much",
+    "most",
+    "as"
+   ],
+   "answer": 2,
+   "why": "than이 있으므로 비교급 more important가 와야 한다. 「Nothing is 비교급 than ~」은 최상급을 대신하는 표현이다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "This lake is deeper than any other ____ in the region.",
+   "choices": [
+    "lakes",
+    "lake ones",
+    "the lakes",
+    "of lakes",
+    "lake"
+   ],
+   "answer": 5,
+   "why": "「비교급+than any other+단수명사」가 최상급 대용 표현이므로 lake가 맞다. any other 뒤에는 복수명사를 쓰지 않는다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My backpack is half as ____ as yours.",
+   "choices": [
+    "more heavy",
+    "heavier",
+    "heaviest",
+    "heavy",
+    "much heavier"
+   ],
+   "answer": 4,
+   "why": "half도 배수사와 같이 「as+원급+as」 앞에 놓인다. as ~ as 사이에는 원급 heavy만 올 수 있다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She swims ____ better than her brother.",
+   "choices": [
+    "very",
+    "so",
+    "too",
+    "far",
+    "quite"
+   ],
+   "answer": 4,
+   "why": "비교급 better를 강조하는 부사는 far이다. very, so, too, quite는 원급을 강조하는 말이라 비교급 앞에 올 수 없다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The sooner we leave, the ____ we will arrive.",
+   "choices": [
+    "early",
+    "more early",
+    "earliest",
+    "earlier",
+    "most early"
+   ],
+   "answer": 4,
+   "why": "「the+비교급, the+비교급」이므로 the 뒤에 비교급 earlier가 온다. early는 -y로 끝나므로 more early가 아니라 earlier로 쓴다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "This desk is as ____ as that one.",
+   "choices": [
+    "more wide",
+    "wider",
+    "widest",
+    "wide",
+    "the widest"
+   ],
+   "answer": 4,
+   "why": "「as+원급+as」는 두 대상이 같음을 나타내므로 원급 wide를 쓴다. as ~ as 사이에는 비교급·최상급이 들어갈 수 없다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The new tower is five times ____ tall as that building.",
+   "choices": [
+    "so",
+    "as",
+    "very",
+    "much",
+    "more"
+   ],
+   "answer": 2,
+   "why": "「배수사+as+원급+as」 구문이므로 앞 자리에도 as가 온다. 긍정문에서 so ~ as는 쓰지 않는다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He earns twice as much money ____ his brother does.",
+   "choices": [
+    "than",
+    "as",
+    "that",
+    "then",
+    "so"
+   ],
+   "answer": 2,
+   "why": "「as+원급+as」의 뒤 짝은 as이다. 앞에 than이 아니라 as much가 쓰였으므로 than은 올 수 없다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The population of this city is three times ____ of the neighboring town.",
+   "choices": [
+    "those",
+    "that",
+    "it",
+    "one",
+    "this"
+   ],
+   "answer": 2,
+   "why": "비교 대상인 the population을 대신하는 말이 필요하고, population은 단수이므로 that을 쓴다. 복수를 받는 those는 맞지 않는다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Today is ____ hotter than yesterday.",
+   "choices": [
+    "very",
+    "too",
+    "more",
+    "most",
+    "even"
+   ],
+   "answer": 5,
+   "why": "비교급 hotter를 강조하는 말로 even이 알맞다. very는 원급 강조어이고, hotter 앞에 more를 또 쓸 수는 없다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "To me, family is by far the ____ thing in life.",
+   "choices": [
+    "important",
+    "more important",
+    "as important",
+    "most important",
+    "importantest"
+   ],
+   "answer": 4,
+   "why": "by far는 최상급을 강조하므로 the most important가 온다. important는 3음절 이상이라 -est를 붙이지 않는다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The less we waste, the ____ money we save.",
+   "choices": [
+    "much",
+    "more",
+    "many",
+    "most",
+    "lots of"
+   ],
+   "answer": 2,
+   "why": "「the+비교급, the+비교급」이므로 뒤 절에도 비교급이 온다. money는 셀 수 없는 명사이므로 many가 아니라 more를 쓴다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: How big is the new gym?\nB: It is twice ____ big as the old one.",
+   "choices": [
+    "as",
+    "so",
+    "very",
+    "much",
+    "more"
+   ],
+   "answer": 1,
+   "why": "「배수사+as+원급+as」 구문이므로 twice as big as가 된다. 긍정문에서는 so ~ as를 쓰지 않는다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "This river is ____ longer than that stream.",
+   "choices": [
+    "too",
+    "very",
+    "a lot",
+    "quite",
+    "enough"
+   ],
+   "answer": 3,
+   "why": "비교급을 강조하는 말은 a lot이다. very, too, quite는 원급을 강조하고 enough는 형용사 뒤에 오므로 알맞지 않다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My laptop is not as ____ as yours.",
+   "choices": [
+    "much expensive",
+    "more expensive",
+    "most expensive",
+    "expensiver",
+    "expensive"
+   ],
+   "answer": 5,
+   "why": "부정문이라도 as ~ as 사이에는 원급이 온다. expensive는 more를 붙여 비교급을 만들지만 여기서는 원급이 필요하다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Nothing is ____ than good health.",
+   "choices": [
+    "precious",
+    "as precious",
+    "the most precious",
+    "most precious",
+    "more precious"
+   ],
+   "answer": 5,
+   "why": "than 앞에는 비교급이 오므로 more precious가 맞다. 「Nothing is 비교급 than ~」은 최상급을 대신하는 표현이다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "No other city in this country is ____ than Seoul.",
+   "choices": [
+    "busy",
+    "busiest",
+    "busier",
+    "as busy",
+    "the busiest"
+   ],
+   "answer": 3,
+   "why": "than이 있으므로 비교급 busier가 온다. 「No other+단수명사+비교급+than」은 최상급을 대신하는 표현이다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Her second novel is ____ more interesting than her first one.",
+   "choices": [
+    "very",
+    "too",
+    "still",
+    "enough",
+    "quite"
+   ],
+   "answer": 3,
+   "why": "비교급 more interesting을 강조하는 말로 still이 알맞다. very는 원급만 강조하므로 비교급 앞에 올 수 없다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· This box is twice as heavy ____ that one.\n· Kevin is not so tall ____ his older brother.",
+   "choices": [
+    "so",
+    "than",
+    "as",
+    "that",
+    "to"
+   ],
+   "answer": 3,
+   "why": "두 문장 모두 「as[so]+원급+as」 구문이므로 뒤 짝인 as가 공통으로 들어간다. than은 비교급 뒤에만 쓴다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· He is ____ taller than I am.\n· This test was ____ easier than the last one.",
+   "choices": [
+    "very",
+    "many",
+    "so",
+    "too",
+    "much"
+   ],
+   "answer": 5,
+   "why": "두 문장 모두 비교급 앞자리이므로 강조어 much가 알맞다. very, so, too는 원급을 강조하는 말이다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (배수사 표현)",
+   "choices": [
+    "My room is twice as larger as yours.",
+    "My room is twice as large than yours.",
+    "My room is twice larger as yours.",
+    "My room is twice as large as yours.",
+    "My room is twice the large of yours."
+   ],
+   "answer": 4,
+   "why": "「배수사+as+원급+as」가 기본형이므로 twice as large as가 옳다. as ~ as 사이에는 원급만 오고, 뒤 짝은 than이 아니라 as이다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (the 비교급, the 비교급)",
+   "choices": [
+    "The most you sleep, the best you feel.",
+    "The more you sleep, the good you feel.",
+    "More you sleep, the better you feel.",
+    "The more you sleep, better you feel.",
+    "The more you sleep, the better you feel."
+   ],
+   "answer": 5,
+   "why": "「The+비교급 ~, the+비교급 ...」 구문은 두 자리 모두 the와 비교급이 필요하다. the가 빠지거나 원급·최상급이 온 나머지는 모두 틀렸다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 것은? (비교급 강조)",
+   "choices": [
+    "This bag is very cheaper than that one.",
+    "This bag is far cheaper than that one.",
+    "This bag is even cheaper than that one.",
+    "This bag is much cheaper than that one.",
+    "This bag is a lot cheaper than that one."
+   ],
+   "answer": 1,
+   "why": "비교급은 much, far, even, still, a lot으로 강조한다. very는 원급을 강조하는 말이라 비교급 cheaper 앞에 쓸 수 없다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 것은? (최상급 대용 표현)",
+   "choices": [
+    "Jinho is faster than any other players on the team.",
+    "No other player on the team is faster than Jinho.",
+    "Jinho is faster than any other player on the team.",
+    "No other player on the team is as fast as Jinho.",
+    "Jinho is the fastest player on the team."
+   ],
+   "answer": 1,
+   "why": "any other 뒤에는 단수명사가 오므로 players를 player로 고쳐야 한다. 나머지는 모두 같은 뜻의 최상급 대용 표현이다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nMy new phone is ①<u>twice</u> ②<u>as</u> ③<u>fast</u> ④<u>than</u> ⑤<u>my old one</u>.",
+   "choices": [
+    "twice",
+    "as",
+    "fast",
+    "than",
+    "my old one"
+   ],
+   "answer": 4,
+   "why": "앞에 as fast가 쓰였으므로 뒤 짝은 than이 아니라 as여야 한다. 배수사 twice와 원급 fast는 바르게 쓰였다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nThe ①<u>more</u> you exercise, ②<u>the</u> ③<u>healthy</u> you ④<u>will</u> ⑤<u>become</u>.",
+   "choices": [
+    "more",
+    "the",
+    "healthy",
+    "will",
+    "become"
+   ],
+   "answer": 3,
+   "why": "「the+비교급, the+비교급」 구문이므로 healthy를 비교급 healthier로 고쳐야 한다. 앞 절의 the more는 바르게 쓰였다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nㄱ. This room is three times as wide as that one.\nㄴ. He is very stronger than his brother.\nㄷ. The earlier you get up, the more time you have.\nㄹ. Nothing is more valuable than time.\nㅁ. My bag is twice as heavier as yours.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ·ㄷ·ㄹ이 옳다. ㄴ은 very를 much 등으로 바꿔야 하고, ㅁ은 as ~ as 사이에 원급 heavy를 써야 한다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "(A), (B)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nThis building is twice (A)[as tall / taller] as that one, and the (B)[high / higher] you go, the colder it gets.",
+   "choices": [
+    "as tall – high",
+    "taller – high",
+    "taller – higher",
+    "as tall – higher",
+    "as tall – highest"
+   ],
+   "answer": 4,
+   "why": "(A) 뒤에 as가 있으므로 「배수사+as+원급+as」의 as tall이 맞고, (B)는 「the+비교급, the+비교급」이므로 higher가 맞다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 옳게 옮긴 것은?\n그 다리는 이 다리의 두 배 길이다.",
+   "choices": [
+    "The bridge is twice as long as this one.",
+    "The bridge is twice as longer as this one.",
+    "The bridge is twice as long than this one.",
+    "The bridge is as twice long as this one.",
+    "The bridge is twice long as this one."
+   ],
+   "answer": 1,
+   "why": "「배수사+as+원급+as」 어순이므로 twice as long as가 옳다. 배수사는 as ~ as 앞에 놓이고 사이에는 원급만 온다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 옳게 옮긴 것은?\n연습을 많이 할수록 너는 더 자신감을 갖게 된다.",
+   "choices": [
+    "The more you practice, you become the more confident.",
+    "More you practice, more confident you become.",
+    "The more you practice, the more confident you become.",
+    "The much you practice, the confident you become.",
+    "The more practice you, the more confident become you."
+   ],
+   "answer": 3,
+   "why": "「The+비교급+주어+동사, the+비교급+주어+동사」 어순을 지킨 The more you practice, the more confident you become.가 옳다. the를 빠뜨리거나 비교급을 뒤로 보낸 나머지는 모두 틀렸다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: Is your car cheaper than mine?\nB: Yes. Mine cost only half ____ much as yours.",
+   "choices": [
+    "so",
+    "that",
+    "than",
+    "as",
+    "the"
+   ],
+   "answer": 4,
+   "why": "half는 배수사처럼 「as+원급+as」 앞에 오므로 half as much as가 된다. 긍정문에서 so ~ as는 쓰지 않는다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: Who is the tallest person in your family?\nB: My uncle is. No one in my family is ____ than he is.",
+   "choices": [
+    "taller",
+    "tall",
+    "tallest",
+    "as tall",
+    "the tallest"
+   ],
+   "answer": 1,
+   "why": "than 앞이므로 비교급 taller가 온다. 「No one is 비교급 than ~」은 최상급과 같은 뜻을 나타낸다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The colder it gets, the ____ people go outside.",
+   "choices": [
+    "little",
+    "fewer",
+    "few",
+    "less",
+    "fewest"
+   ],
+   "answer": 2,
+   "why": "「the+비교급, the+비교급」이고 people은 셀 수 있는 명사의 복수형이므로 fewer가 맞다. less는 셀 수 없는 명사에 쓴다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "This year's sales are twice ____ of last year.",
+   "choices": [
+    "that",
+    "them",
+    "those",
+    "it",
+    "ones"
+   ],
+   "answer": 3,
+   "why": "비교 대상인 the sales가 복수이므로 복수를 받는 those를 쓴다. 단수를 받는 that은 쓸 수 없다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My brother is three years ____ than I am.",
+   "choices": [
+    "older",
+    "old",
+    "oldest",
+    "more old",
+    "as old"
+   ],
+   "answer": 1,
+   "why": "than 앞이므로 비교급 older가 오고, three years는 차이를 나타내며 비교급 앞에 놓인다. old는 -er을 붙여 비교급을 만든다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (배수사+the+명사+of)",
+   "choices": [
+    "This field is three times the size than that one.",
+    "This field is three times size of that one.",
+    "This field is three times a size of that one.",
+    "This field is three times as the size of that one.",
+    "This field is three times the size of that one."
+   ],
+   "answer": 5,
+   "why": "「배수사+the+명사+of」 구문이므로 three times the size of가 옳다. 이 구문에는 than이나 as를 쓰지 않으며 the를 빠뜨릴 수 없다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (최상급 대용 표현)",
+   "choices": [
+    "Nothing is very important than health.",
+    "Nothing is importanter than health.",
+    "Nothing is the most important than health.",
+    "Nothing is as more important as health.",
+    "Nothing is more important than health."
+   ],
+   "answer": 5,
+   "why": "than이 있으므로 비교급 more important가 옳다. important는 -er을 붙이지 않고, 최상급이나 원급은 than과 함께 쓸 수 없다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nJane is ①<u>by far</u> ②<u>the</u> ③<u>better</u> ④<u>student</u> ⑤<u>in</u> our class.",
+   "choices": [
+    "by far",
+    "the",
+    "better",
+    "student",
+    "in"
+   ],
+   "answer": 3,
+   "why": "by far는 최상급을 강조하므로 better를 best로 고쳐야 한다. 최상급 앞의 the와 범위를 나타내는 in도 바르게 쓰였다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· The ____ , the merrier.\n· The ____ people join, the more fun we have.",
+   "choices": [
+    "more",
+    "much",
+    "most",
+    "many",
+    "merrier"
+   ],
+   "answer": 1,
+   "why": "둘 다 「the+비교급, the+비교급」 구문의 앞자리이므로 비교급 more가 들어간다. 원급 much·many나 최상급 most는 올 수 없다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nㄱ. Our new office is twice the size of the old one.\nㄴ. The more he talked, the more bored we got.\nㄷ. This road is very wider than that one.\nㄹ. No other animal in the zoo is as big as the elephant.\nㅁ. Time is more precious than anything else.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "ㄷ만 틀렸다. 비교급 wider는 very가 아니라 much·far 등으로 강조해야 한다. 나머지는 배수 표현, the 비교급 구문, 최상급 대용 표현이 모두 바르다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nThe (A)[most / more] you save, the (B)[easy / easier] your life becomes, and money is (C)[very / much] more useful than you think.",
+   "choices": [
+    "most – easier – much",
+    "more – easier – much",
+    "more – easy – much",
+    "more – easier – very",
+    "most – easy – very"
+   ],
+   "answer": 2,
+   "why": "(A)와 (B)는 「the+비교급, the+비교급」이므로 more와 easier, (C)는 비교급 강조이므로 much가 맞다. very는 비교급을 강조하지 못한다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nMy room is three times (large) ____ than yours.",
+   "answer": "larger",
+   "alt": [],
+   "why": "「배수사+비교급+than」 구문이므로 large를 비교급 larger로 바꾼다. than 앞에는 원급을 쓸 수 없다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nThe (much) ____ you give, the more you get.",
+   "answer": "more",
+   "alt": [],
+   "why": "「the+비교급, the+비교급」 구문이므로 much를 비교급 more로 바꾼다. 뒤 절의 the more와 짝을 이룬다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 m으로 시작하는 한 단어로 고쳐 쓰시오.\nHe is <u>very</u> taller than his brother.",
+   "answer": "much",
+   "alt": [],
+   "why": "very는 원급만 강조하므로 비교급 taller 앞에는 쓸 수 없다. m으로 시작하는 비교급 강조어는 much이다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 두 단어를 쓰시오.\nHealth is the most important thing in life.\n= Nothing in life is ____ ____ than health.",
+   "answer": "more important",
+   "alt": [],
+   "why": "최상급은 「Nothing is 비교급 than ~」으로 바꿔 쓸 수 있다. than 앞이므로 important의 비교급 more important를 쓴다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 한 단어를 쓰시오.\nNo other boy in the class is as tall as Sam.\n= Sam is ____ than any other boy in the class.",
+   "answer": "taller",
+   "alt": [],
+   "why": "「No other+단수명사+as 원급 as」는 「비교급+than any other+단수명사」로 바꿔 쓸 수 있으므로 taller가 된다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 세 단어를 쓰시오.\nThis box weighs 10 kg, and that box weighs 20 kg.\n= That box is twice ____ ____ ____ this box.",
+   "answer": "as heavy as",
+   "alt": [],
+   "why": "무게가 두 배임을 나타내므로 「배수사+as+원급+as」를 써서 twice as heavy as로 쓴다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nThe sooner you start, the (good) ____ it is.",
+   "answer": "better",
+   "alt": [],
+   "why": "「the+비교급, the+비교급」 구문이므로 good의 비교급 better를 쓴다. good은 불규칙 변화 형용사이다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nMy car is half as expensive ____ yours.",
+   "answer": "as",
+   "alt": [],
+   "why": "「as+원급+as」의 뒤 짝이 필요하므로 as를 쓴다. half는 배수사처럼 as ~ as 앞에 놓인다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 두 단어를 쓰시오.\nThis tower is 30 meters tall, and that tower is 90 meters tall.\n= That tower is three times ____ ____ this tower.",
+   "answer": "taller than",
+   "alt": [],
+   "why": "「배수사+비교급+than」 구문으로 세 배임을 나타내므로 taller than을 쓴다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 두 단어로 고쳐 쓰시오.\nThe harder you work, the <u>successful</u> you become.",
+   "answer": "more successful",
+   "alt": [],
+   "why": "「the+비교급, the+비교급」 구문이므로 원급 successful을 비교급으로 바꿔야 한다. successful은 3음절이라 more를 붙인다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nNothing is (precious) ____ than time.",
+   "answer": "more precious",
+   "alt": [],
+   "why": "than 앞이므로 비교급이 필요하다. precious는 2음절 이상이므로 more precious로 쓴다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nThis building is four times ____ height of my house.",
+   "answer": "the",
+   "alt": [],
+   "why": "「배수사+the+명사+of」 구문이므로 the height of가 된다. 이 구문에서 명사 앞의 the는 생략할 수 없다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nThe darker it got, the (quiet) ____ the street became.",
+   "answer": "quieter",
+   "alt": [],
+   "why": "「the+비교급, the+비교급」 구문이므로 quiet의 비교급 quieter를 쓴다. quiet는 -er을 붙여 비교급을 만든다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nMy score is three times as <u>higher</u> as his.",
+   "answer": "high",
+   "alt": [],
+   "why": "「배수사+as+원급+as」 구문이므로 as ~ as 사이에는 원급 high가 와야 한다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 한 단어를 쓰시오.\nJane is the smartest girl in her class.\n= Jane is smarter than ____ other girl in her class.",
+   "answer": "any",
+   "alt": [],
+   "why": "최상급은 「비교급+than any other+단수명사」로 바꿔 쓸 수 있으므로 any가 들어간다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 한 단어를 쓰시오.\nMike is the fastest runner on the team.\n= No ____ runner on the team is faster than Mike.",
+   "answer": "other",
+   "alt": [],
+   "why": "최상급은 「No other+단수명사+비교급+than」으로 바꿔 쓸 수 있으므로 other가 들어간다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nThe (little) ____ you worry, the happier you feel.",
+   "answer": "less",
+   "alt": [],
+   "why": "「the+비교급, the+비교급」 구문이므로 little의 비교급 less를 쓴다. little은 little-less-least로 변한다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nOur team scored twice as many goals ____ theirs did.",
+   "answer": "as",
+   "alt": [],
+   "why": "「배수사+as+원급(many goals)+as」 구문이므로 뒤 짝인 as가 필요하다. than은 비교급 뒤에만 쓴다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nNothing is more useful <u>as</u> a good friend.",
+   "answer": "than",
+   "alt": [],
+   "why": "비교급 more useful 뒤에는 as가 아니라 than이 온다. 「Nothing is 비교급 than ~」은 최상급을 대신하는 표현이다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nThis road is (wide) ____ than any other road in town.",
+   "answer": "wider",
+   "alt": [],
+   "why": "than 앞이므로 비교급 wider를 쓴다. 「비교급+than any other+단수명사」는 최상급과 같은 뜻이다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The new stadium can hold three times as ____ people as the old one.",
+   "choices": [
+    "many",
+    "much",
+    "more",
+    "most",
+    "a lot of"
+   ],
+   "answer": 1,
+   "why": "「배수사+as+원급+as」이고 people은 셀 수 있는 명사의 복수형이므로 many가 온다. as ~ as 사이에 비교급 more는 올 수 없다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "This app uses only half as ____ battery power as the previous version.",
+   "choices": [
+    "much",
+    "many",
+    "more",
+    "most",
+    "few"
+   ],
+   "answer": 1,
+   "why": "battery power는 셀 수 없는 명사이므로 much가 알맞다. half는 배수사처럼 as ~ as 앞에 놓인다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The amount of rainfall this summer was twice ____ of last summer.",
+   "choices": [
+    "those",
+    "that",
+    "it",
+    "which",
+    "one"
+   ],
+   "answer": 2,
+   "why": "비교 대상인 the amount를 대신하는 대명사가 필요하고 단수이므로 that을 쓴다. 「배수사+that of ~」로 양을 비교하는 표현이다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The higher the altitude, the ____ the air becomes.",
+   "choices": [
+    "thinner",
+    "thin",
+    "thinnest",
+    "more thin",
+    "most thin"
+   ],
+   "answer": 1,
+   "why": "「The+비교급 ~, the+비교급 ...」 구문이므로 비교급 thinner가 온다. 앞 절은 be동사가 생략된 형태이다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The more difficult the task is, the ____ satisfaction we feel when it is done.",
+   "choices": [
+    "greater",
+    "great",
+    "greatest",
+    "more great",
+    "most great"
+   ],
+   "answer": 1,
+   "why": "「the+비교급」 자리이므로 greater가 온다. great는 1음절이므로 more great가 아니라 -er을 붙인다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "He apologized honestly, so I liked him all the ____ for it.",
+   "choices": [
+    "good",
+    "better",
+    "well",
+    "best",
+    "much"
+   ],
+   "answer": 2,
+   "why": "「all the+비교급+for ~」는 그 이유 때문에 더욱 ~하다는 뜻이므로 better가 온다. all the 뒤에는 비교급만 온다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The scientist's explanation was ____ clearer than the one in the textbook.",
+   "choices": [
+    "far",
+    "fairly",
+    "very",
+    "pretty",
+    "highly"
+   ],
+   "answer": 1,
+   "why": "비교급 clearer를 강조하는 부사는 far이다. very, fairly, pretty, highly는 원급을 꾸미는 말이다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Mount Baekdu is higher than ____ mountain on the Korean Peninsula.",
+   "choices": [
+    "any others",
+    "any other",
+    "other any",
+    "the others",
+    "some others"
+   ],
+   "answer": 2,
+   "why": "「비교급+than any other+단수명사」가 최상급을 대신하는 표현이다. any other 뒤에는 복수형을 쓰지 않는다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "____ other invention has changed our daily lives as much as the smartphone.",
+   "choices": [
+    "Not",
+    "No",
+    "None",
+    "Nothing",
+    "Any"
+   ],
+   "answer": 2,
+   "why": "「No other+단수명사+as 원급 as」는 최상급을 대신하는 표현이다. Nothing이나 None은 뒤에 other invention을 바로 붙일 수 없다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The wings of this bird are twice as long as ____ of a sparrow.",
+   "choices": [
+    "that",
+    "them",
+    "those",
+    "ones",
+    "it"
+   ],
+   "answer": 3,
+   "why": "비교 대상인 the wings가 복수이므로 복수를 받는 those를 쓴다. 대명사를 빠뜨리면 날개와 참새를 비교하게 되어 어색하다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Please send me the sales report as ____ as possible.",
+   "choices": [
+    "more soon",
+    "sooner",
+    "soonest",
+    "soon",
+    "the soonest"
+   ],
+   "answer": 4,
+   "why": "「as+원급+as possible」은 가능한 한 ~하게라는 뜻이므로 원급 soon이 온다. as ~ as 사이에는 비교급을 쓸 수 없다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "She ran as ____ as she could to catch the last train.",
+   "choices": [
+    "faster",
+    "fast",
+    "fastest",
+    "more fast",
+    "most fast"
+   ],
+   "answer": 2,
+   "why": "「as+원급+as+주어+can[could]」 구문이므로 원급 fast가 온다. as ~ as possible과 같은 뜻이다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The company's profit last year was ____ than that of its main rival.",
+   "choices": [
+    "high",
+    "higher",
+    "highest",
+    "as high",
+    "the highest"
+   ],
+   "answer": 2,
+   "why": "than이 있으므로 비교급 higher가 온다. that of는 the profit을 대신하여 비교 대상을 일치시킨 것이다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Nothing in the universe travels ____ than light.",
+   "choices": [
+    "fast",
+    "faster",
+    "fastest",
+    "as fast",
+    "the fastest"
+   ],
+   "answer": 2,
+   "why": "than 앞이므로 비교급 faster가 온다. 「Nothing+비교급+than」은 최상급과 같은 뜻을 나타낸다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Seoul is more crowded than ____ other cities in Korea.",
+   "choices": [
+    "each",
+    "any",
+    "every",
+    "all the",
+    "much"
+   ],
+   "answer": 4,
+   "why": "복수명사 cities 앞이므로 「than all the other+복수명사」가 맞다. any other, every, each 뒤에는 단수명사가 온다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Our new server processes data ten times ____ than the old one did.",
+   "choices": [
+    "fast",
+    "fastest",
+    "faster",
+    "as fast",
+    "more fast"
+   ],
+   "answer": 3,
+   "why": "「배수사+비교급+than」 구문이므로 faster가 온다. than 앞에 원급이나 as fast는 올 수 없다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The tuition fee this year is 1.5 times ____ amount we paid last year.",
+   "choices": [
+    "the",
+    "an",
+    "that",
+    "as",
+    "some"
+   ],
+   "answer": 1,
+   "why": "「배수사+the+명사+of[관계절]」 구문으로, amount 앞에 the가 필요하다. 이 구문에는 as나 than을 쓰지 않는다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The longer he waited in line, the ____ he became.",
+   "choices": [
+    "impatient",
+    "impatienter",
+    "most impatient",
+    "more impatient",
+    "much impatient"
+   ],
+   "answer": 4,
+   "why": "「the+비교급, the+비교급」이므로 비교급이 와야 하고, impatient는 3음절이므로 more impatient로 쓴다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Teenagers are three times as likely to skip breakfast ____ adults are.",
+   "choices": [
+    "as",
+    "than",
+    "that",
+    "so",
+    "like"
+   ],
+   "answer": 1,
+   "why": "「배수사+as+원급+as」 구문이므로 뒤 짝은 as이다. as likely 뒤에 than을 쓸 수 없다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "In my opinion, reading books is ____ more helpful than watching short videos.",
+   "choices": [
+    "very",
+    "so",
+    "too",
+    "quite",
+    "a great deal"
+   ],
+   "answer": 5,
+   "why": "비교급을 강조하는 표현은 a great deal이다. very, so, quite, too는 원급을 강조하는 말이다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· Nothing is ____ important than safety at a construction site.\n· The ____ you know about a subject, the better you can judge it.",
+   "choices": [
+    "much",
+    "very",
+    "most",
+    "more",
+    "many"
+   ],
+   "answer": 4,
+   "why": "첫 문장은 than 앞이라 비교급 more, 둘째 문장은 「the+비교급」 자리라 more가 들어간다. 원급 much·many나 최상급 most는 둘 다 불가능하다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A: How was the second concert?\nB: It was ____ more exciting than the first one. The crowd went wild.",
+   "choices": [
+    "very",
+    "most",
+    "many",
+    "much",
+    "more"
+   ],
+   "answer": 4,
+   "why": "비교급 more exciting을 강조하는 말이므로 much가 알맞다. very는 원급 강조어이고, more를 겹쳐 쓸 수는 없다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (배수 표현 종합)",
+   "choices": [
+    "The Amazon is about four times longer as the Han River.",
+    "The Amazon is about four times as longer as the Han River.",
+    "The Amazon is about four times as the length of the Han River.",
+    "The Amazon is about four times the length than the Han River.",
+    "The Amazon is about four times the length of the Han River."
+   ],
+   "answer": 5,
+   "why": "「배수사+the+명사+of」가 바르게 쓰인 four times the length of the Han River가 옳다. 비교급 뒤에는 than, as ~ as 사이에는 원급이 와야 하므로 나머지는 모두 틀렸다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (the 비교급 구문)",
+   "choices": [
+    "The more carefully you read, the fewest mistakes you make.",
+    "The more carefully you read, the fewer mistakes you make.",
+    "More carefully you read, the fewer mistakes you make.",
+    "The more careful you read, the fewer mistakes you make.",
+    "The more carefully you read, the less mistakes you make."
+   ],
+   "answer": 2,
+   "why": "동사 read를 꾸미므로 부사 carefully의 비교급, mistakes는 셀 수 있는 명사이므로 fewer가 맞다. 앞 절의 the도 빠뜨릴 수 없다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 것은? (비교급 강조어)",
+   "choices": [
+    "The new policy is very more effective than the old one.",
+    "This winter is even colder than last winter.",
+    "The results were still more surprising than we had thought.",
+    "Her latest album is far better than her first one.",
+    "Traffic is a lot heavier on Friday evenings."
+   ],
+   "answer": 1,
+   "why": "비교급은 far, even, still, a lot, much 등으로 강조한다. very는 원급 강조어이므로 more effective 앞에 쓸 수 없다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 것은? (최상급 대용 구문)",
+   "choices": [
+    "No other subject is as practical as English in this school.",
+    "English is more practical than any other subjects in this school.",
+    "English is more practical than all the other subjects in this school.",
+    "Nothing is more practical than English in this school.",
+    "English is more practical than any other subject in this school."
+   ],
+   "answer": 2,
+   "why": "any other 뒤에는 단수명사가 오므로 subjects를 subject로 고쳐야 한다. 복수명사를 쓰려면 all the other subjects로 써야 한다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nResearchers say that the ①<u>more</u> sleep you get, the ②<u>better</u> your brain ③<u>works</u>, and that people who sleep less than six hours a night are ④<u>twice</u> ⑤<u>as likely than</u> others to catch a cold.",
+   "choices": [
+    "more",
+    "better",
+    "works",
+    "twice",
+    "as likely than"
+   ],
+   "answer": 5,
+   "why": "「배수사+as+원급+as」 구문이므로 as likely than을 as likely as로 고쳐야 한다. 앞의 the more ~, the better ~는 바르게 쓰였다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nThe ①<u>deeper</u> we went into the cave, the ②<u>cold</u> the air ③<u>felt</u>, and our flashlights became ④<u>much</u> ⑤<u>less</u> useful.",
+   "choices": [
+    "deeper",
+    "cold",
+    "felt",
+    "much",
+    "less"
+   ],
+   "answer": 2,
+   "why": "「the+비교급, the+비교급」 구문이므로 cold를 colder로 고쳐야 한다. much는 비교급 less를 강조하는 말로 바르게 쓰였다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nㄱ. The new library is twice the size of the old one.\nㄴ. The more he earned, the more he wanted.\nㄷ. This machine is very more efficient than that one.\nㄹ. No other river in Europe is as long as the Volga.\nㅁ. The population of Canada is much smaller than Korea.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ·ㄴ·ㄹ이 옳다. ㄷ은 very를 much·far 등으로 바꿔야 하고, ㅁ은 인구끼리 비교해야 하므로 than that of Korea로 고쳐야 한다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nThe (A)[fast / faster] you drive, the (B)[long / longer] it takes to stop, so drive (C)[much / very] more slowly when it rains.",
+   "choices": [
+    "faster – long – much",
+    "fast – longer – much",
+    "faster – longer – much",
+    "faster – longer – very",
+    "fast – long – very"
+   ],
+   "answer": 3,
+   "why": "(A)와 (B)는 「the+비교급, the+비교급」이므로 faster와 longer, (C)는 비교급 강조이므로 much가 맞다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 옳게 옮긴 것은?\n이 도시의 인구는 우리 도시 인구의 세 배이다.",
+   "choices": [
+    "The population of this city is three times as large as our city.",
+    "The population of this city is three times larger than that of our city.",
+    "The population of this city is three times as larger as that of our city.",
+    "The population of this city is three times the large of our city.",
+    "The population of this city is three times more large than our city."
+   ],
+   "answer": 2,
+   "why": "인구는 인구와 비교해야 하므로 that of our city가 필요하고, 「배수사+비교급+than」이 바르게 쓰인 것은 ②이다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 옳게 옮긴 것은?\n그가 정직했기 때문에 나는 그를 더욱더 좋아했다.",
+   "choices": [
+    "I liked him all the more better because he was honest.",
+    "I liked him the all better because he was honest.",
+    "I liked him all the best because he was honest.",
+    "I liked him all better because he was honest.",
+    "I liked him all the better because he was honest."
+   ],
+   "answer": 5,
+   "why": "「all the+비교급+이유」 구문이므로 all the better가 옳다. all the 뒤에는 최상급이나 원급이 올 수 없고 어순도 바꿀 수 없다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The gap between the two teams was ____ wider this season than last season.",
+   "choices": [
+    "very",
+    "considerably",
+    "fairly",
+    "extremely",
+    "pretty"
+   ],
+   "answer": 2,
+   "why": "비교급 wider를 강조할 수 있는 말은 considerably이다. very, fairly, extremely, pretty는 원급을 강조하는 부사이다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The factory now produces four times as many bicycles ____ it did in 2020.",
+   "choices": [
+    "than",
+    "that",
+    "as",
+    "then",
+    "so"
+   ],
+   "answer": 3,
+   "why": "「배수사+as many+명사+as」 구문이므로 뒤 짝은 as이다. as many 뒤에 than을 쓸 수 없다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The city's air quality is far ____ than it was ten years ago.",
+   "choices": [
+    "good",
+    "well",
+    "the best",
+    "best",
+    "better"
+   ],
+   "answer": 5,
+   "why": "than 앞이므로 비교급 better가 오고, far는 그 비교급을 강조한다. good의 비교급은 better이다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A: Why do you recommend this dictionary?\nB: Because ____ dictionary explains examples as clearly as this one.",
+   "choices": [
+    "not other",
+    "no others",
+    "none other",
+    "any other",
+    "no other"
+   ],
+   "answer": 5,
+   "why": "「No other+단수명사+as 원급 as」는 최상급을 대신하는 표현이다. 주어 자리에 not이나 any other는 쓸 수 없다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Her performance was ____ the most impressive of the evening.",
+   "choices": [
+    "very far",
+    "by much",
+    "by far",
+    "far more",
+    "much far"
+   ],
+   "answer": 3,
+   "why": "by far는 최상급을 강조하여 단연코라는 뜻을 더한다. very는 the very best처럼 the 뒤에 놓여야 하므로 이 자리에 올 수 없다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The problem turned out to be ____ more complex than anyone had predicted.",
+   "choices": [
+    "very",
+    "much",
+    "so",
+    "most",
+    "too"
+   ],
+   "answer": 2,
+   "why": "비교급 more complex를 강조하는 말은 much이다. very, so, too는 원급을 강조하는 말이다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The higher the demand for a product, the ____ its price.",
+   "choices": [
+    "higher",
+    "high",
+    "highest",
+    "more high",
+    "most high"
+   ],
+   "answer": 1,
+   "why": "「The+비교급 ~, the+비교급 ...」 구문에서 be동사가 생략된 형태이므로 higher가 온다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "____ more you exercise, the stronger your heart becomes.",
+   "choices": [
+    "A",
+    "Very",
+    "So",
+    "Much",
+    "The"
+   ],
+   "answer": 5,
+   "why": "「The+비교급 ~, the+비교급 ...」 구문이므로 앞자리에도 The가 필요하다. 이때의 the는 관사가 아니라 부사이다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "(A), (B)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nStudies show that the (A)[most / more] often children read, the larger their vocabulary becomes, and that reading aloud is (B)[very / much] more effective than reading silently.",
+   "choices": [
+    "most – much",
+    "more – much",
+    "more – very",
+    "most – very",
+    "more – so"
+   ],
+   "answer": 2,
+   "why": "(A)는 「the+비교급」 자리이므로 more often, (B)는 비교급 강조이므로 much가 맞다. very는 비교급을 강조하지 못한다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 나머지 넷과 의미가 <u>다른</u> 것은?",
+   "choices": [
+    "Tom is the most diligent student in his class.",
+    "No other student in his class is as diligent as Tom.",
+    "Tom is more diligent than any other student in his class.",
+    "Tom is not more diligent than any other student in his class.",
+    "No other student in his class is more diligent than Tom."
+   ],
+   "answer": 4,
+   "why": "Tom is not more diligent than any other student in his class.만 부정문이어서 Tom이 누구보다 더 부지런하지는 않다는 반대의 뜻이 된다. 나머지 넷은 모두 Tom이 반에서 가장 부지런하다는 뜻의 최상급 대용 표현이다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Jupiter's mass is more than 300 times ____ of the Earth.",
+   "choices": [
+    "it",
+    "those",
+    "that",
+    "one",
+    "this"
+   ],
+   "answer": 3,
+   "why": "비교 대상인 the mass를 대신하는 단수 대명사 that이 필요하다. 「배수사+that of ~」로 크기를 비교한다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nㄱ. The sooner you apply, the better your chances are.\nㄴ. This tablet is three times as expensive as mine.\nㄷ. He is by far the most talented player on the team.\nㄹ. Nothing makes me happier than a long walk by the river.\nㅁ. My house is twice bigger the size of yours.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "ㅁ만 틀렸다. twice the size of yours 또는 twice as big as yours로 써야 하며, 배수 표현 두 가지를 섞어 쓸 수 없다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Fewer people came to the festival this year, and ____ fewer came to the parade.",
+   "choices": [
+    "very",
+    "even",
+    "so",
+    "too",
+    "quite"
+   ],
+   "answer": 2,
+   "why": "비교급 fewer를 강조하는 말은 even이다. very, so, too, quite는 원급을 강조하는 부사이다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A: Is the new highway really that fast?\nB: Yes. It takes only half ____ long to get downtown now.",
+   "choices": [
+    "so",
+    "as",
+    "than",
+    "the",
+    "more"
+   ],
+   "answer": 2,
+   "why": "half as long (as before)에서 뒤의 as ~가 생략된 형태이므로 as가 알맞다. 배수사·분수 뒤에는 as+원급이 온다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nSea levels are now rising three times (fast) ____ than they were in 1990.",
+   "answer": "faster",
+   "alt": [],
+   "why": "「배수사+비교급+than」 구문이므로 fast를 비교급 faster로 바꾼다. than 앞에 원급을 쓸 수 없다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nThe (many) ____ languages you learn, the more open your mind becomes.",
+   "answer": "more",
+   "alt": [],
+   "why": "「the+비교급, the+비교급」 구문이므로 many의 비교급 more를 쓴다. 뒤 절의 the more open과 짝을 이룬다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nOur sales this quarter were twice as high <u>than</u> last quarter's.",
+   "answer": "as",
+   "alt": [],
+   "why": "「배수사+as+원급+as」 구문이므로 as high 뒤에는 than이 아니라 as가 와야 한다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 세 단어로 고쳐 쓰시오.\nThe population of Japan is larger than <u>Korea</u>.",
+   "answer": "that of Korea",
+   "alt": [],
+   "why": "인구는 인구와 비교해야 하므로 the population을 대신하는 that을 넣어 that of Korea로 쓴다. 그대로 두면 인구와 나라를 비교하게 된다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 세 단어를 쓰시오.\nThe N Tower is the tallest building in the city.\n= No other building in the city is ____ ____ ____ the N Tower.",
+   "answer": "as tall as",
+   "alt": [],
+   "why": "최상급은 「No other+단수명사+as 원급 as」로 바꿔 쓸 수 있으므로 as tall as가 들어간다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 두 단어를 쓰시오.\nThe N Tower is the tallest building in the city.\n= The N Tower is taller than ____ ____ building in the city.",
+   "answer": "any other",
+   "alt": [],
+   "why": "최상급은 「비교급+than any other+단수명사」로 바꿔 쓸 수 있다. any other 뒤에는 단수명사 building이 온다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nI respect her all the (much) ____ for her honesty.",
+   "answer": "more",
+   "alt": [],
+   "why": "「all the+비교급+for ~」는 그 때문에 더욱 ~하다는 뜻이므로 much의 비교급 more를 쓴다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nTheir profits last year were three times ____ amount they had expected.",
+   "answer": "the",
+   "alt": [],
+   "why": "「배수사+the+명사+of[관계절]」 구문이므로 amount 앞에 the가 필요하다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nThe more you sleep, the <u>more well</u> you feel.",
+   "answer": "better",
+   "alt": [],
+   "why": "well의 비교급은 more well이 아니라 better이므로 the better가 되어야 한다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nNothing is (dangerous) ____ than driving when you are sleepy.",
+   "answer": "more dangerous",
+   "alt": [],
+   "why": "than 앞이므로 비교급이 필요하고, dangerous는 3음절이므로 more dangerous로 쓴다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 두 단어를 쓰시오.\nHealth is more important than any other thing.\n= Health is more important than ____ ____.",
+   "answer": "anything else",
+   "alt": [],
+   "why": "than any other thing은 than anything else로 바꿔 쓸 수 있다. 둘 다 최상급을 대신하는 표현이다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nThis is by far the (good) ____ result our team has ever recorded.",
+   "answer": "best",
+   "alt": [],
+   "why": "by far는 최상급을 강조하므로 good의 최상급 best를 쓴다. 앞의 the도 최상급과 함께 쓰인 것이다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 f로 시작하는 한 단어로 고쳐 쓰시오.\nThis route is <u>very</u> shorter than the other one.",
+   "answer": "far",
+   "alt": [],
+   "why": "very는 원급만 강조하므로 비교급 shorter 앞에 쓸 수 없다. f로 시작하는 비교급 강조어는 far이다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nThe more slowly you eat, ____ less you eat in total.",
+   "answer": "the",
+   "alt": [],
+   "why": "「the+비교급 ~, the+비교급 ...」 구문이므로 뒤 절의 비교급 앞에도 the가 필요하다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 「The+비교급 ~, the+비교급 ...」 구문으로 바꿔 쓰시오.\nAs we get older, we become wiser.",
+   "answer": "The older we get, the wiser we become.",
+   "alt": [
+    "The older we get, the wiser we become"
+   ],
+   "why": "As절의 비교급을 각각 the와 함께 문두로 보내 「The older we get, the wiser we become.」으로 쓴다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 「The+비교급 ~, the+비교급 ...」 구문으로 바꿔 쓰시오.\nAs you practice more, you make fewer mistakes.",
+   "answer": "The more you practice, the fewer mistakes you make.",
+   "alt": [
+    "The more you practice, the fewer mistakes you make"
+   ],
+   "why": "비교급 more와 fewer mistakes를 각각 the와 함께 앞으로 보낸다. fewer가 꾸미는 명사 mistakes도 함께 이동한다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nThe (early) ____ you book the flight, the cheaper the ticket is.",
+   "answer": "earlier",
+   "alt": [],
+   "why": "「the+비교급, the+비교급」 구문이므로 early의 비교급 earlier를 쓴다. early는 -y를 -i로 바꾸고 -er을 붙인다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 that을 사용하여 네 단어로 고쳐 쓰시오.\nThis year's harvest is twice as big as <u>last year</u>.",
+   "answer": "that of last year",
+   "alt": [],
+   "why": "수확량끼리 비교해야 하므로 the harvest를 대신하는 that을 넣어 that of last year로 쓴다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 두 단어를 쓰시오.\nThailand exports the most rice in the region.\n= No other country in the region exports ____ ____ rice as Thailand does.",
+   "answer": "as much",
+   "alt": [],
+   "why": "「No other+단수명사 ~ as+원급+as」 구문이고 rice는 셀 수 없는 명사이므로 as much rice as가 된다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 No other로 시작하는 문장으로 바꿔 쓰시오. (faster를 그대로 쓸 것)\nTom runs faster than any other student in his class.",
+   "answer": "No other student in his class runs faster than Tom.",
+   "alt": [
+    "No other student in his class runs faster than Tom"
+   ],
+   "why": "「비교급+than any other+단수명사」는 「No other+단수명사+비교급+than」으로 바꿔 쓸 수 있다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Recent data show that the risk of heart disease is nearly twice ____ for smokers as for nonsmokers.",
+   "choices": [
+    "high as",
+    "higher",
+    "so high",
+    "as high",
+    "as higher"
+   ],
+   "answer": 4,
+   "why": "「배수사+as+원급+as」 구문이 for smokers as for nonsmokers로 이어지므로 as high가 맞다. 뒤에 as가 있으므로 비교급 higher는 쓸 수 없다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The deeper the roots of a tree grow, the ____ it is to survive a strong storm.",
+   "choices": [
+    "likely",
+    "much likely",
+    "most likely",
+    "more likely",
+    "as likely"
+   ],
+   "answer": 4,
+   "why": "「The+비교급 ~, the+비교급 ...」 구문이므로 the 뒤에는 비교급 more likely가 온다. likely는 more를 붙여 비교급을 만든다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "____ the demand for electric cars, the faster the charging network expands.",
+   "choices": [
+    "The greater",
+    "Greater",
+    "The greatest",
+    "The more great",
+    "The great"
+   ],
+   "answer": 1,
+   "why": "「The+비교급 ~, the+비교급 ...」에서 앞 절의 be동사가 생략된 형태이므로 The greater가 온다. the를 빠뜨리거나 최상급을 쓸 수 없다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "He failed the audition twice, but the disappointment made him practice all the ____ .",
+   "choices": [
+    "harder",
+    "hard",
+    "hardest",
+    "more hard",
+    "much hard"
+   ],
+   "answer": 1,
+   "why": "「all the+비교급」은 그만큼 더욱 ~하다는 뜻이므로 harder가 온다. all the 뒤에는 원급이나 최상급이 올 수 없다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "She listened to the long explanation twice, but in the end she was none the ____ . (여전히 이해하지 못한)",
+   "choices": [
+    "wise",
+    "wisest",
+    "wiser",
+    "more wise",
+    "much wiser"
+   ],
+   "answer": 3,
+   "why": "「none the+비교급」은 조금도 더 ~하지 않다는 뜻의 관용 표현이므로 none the wiser가 된다. none the 뒤에도 비교급만 온다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The amount of plastic waste produced last year was three times ____ recorded a decade ago.",
+   "choices": [
+    "which",
+    "those",
+    "what",
+    "that",
+    "it"
+   ],
+   "answer": 4,
+   "why": "the amount를 대신하는 단수 대명사 that이 필요하며 뒤의 recorded ~가 이를 수식한다. 선행사를 포함하는 what은 recorded 앞에 올 수 없다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Rents in the capital are more than double ____ in rural areas.",
+   "choices": [
+    "that",
+    "them",
+    "those",
+    "it",
+    "which"
+   ],
+   "answer": 3,
+   "why": "비교 대상인 rents가 복수이므로 those로 받는다. double 뒤에 대명사를 빠뜨리면 집세와 지역을 비교하게 된다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "No other factor in the survey was found to be ____ influential as family background.",
+   "choices": [
+    "as",
+    "so much",
+    "more",
+    "most",
+    "than"
+   ],
+   "answer": 1,
+   "why": "「No other+단수명사 ~ as+원급+as」 구문이므로 as influential as가 된다. 뒤에 as가 있으므로 비교급 more는 쓸 수 없다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Few things in modern medicine are ____ remarkable than the discovery of penicillin.",
+   "choices": [
+    "very",
+    "more",
+    "much",
+    "most",
+    "as"
+   ],
+   "answer": 2,
+   "why": "than 앞이므로 비교급 more remarkable이 온다. 「Few things are 비교급 than ~」도 최상급에 가까운 뜻을 나타낸다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The second report was ____ less detailed than the first, which disappointed the committee.",
+   "choices": [
+    "very",
+    "too",
+    "far",
+    "quite",
+    "highly"
+   ],
+   "answer": 3,
+   "why": "비교급 less detailed를 강조하는 말은 far이다. very, too, quite, highly는 원급을 강조하는 부사이다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The higher the interest rate rises, the ____ people are to borrow money.",
+   "choices": [
+    "less likely",
+    "least likely",
+    "little likely",
+    "less likelier",
+    "the less likely"
+   ],
+   "answer": 1,
+   "why": "「the+비교급, the+비교급」이므로 little의 비교급을 써서 less likely가 된다. 앞에 이미 the가 있으므로 the를 겹쳐 쓸 수 없다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The delay was not so much a technical problem ____ a lack of communication. (기술적 문제라기보다 소통 부족)",
+   "choices": [
+    "than",
+    "as",
+    "but",
+    "that",
+    "like"
+   ],
+   "answer": 2,
+   "why": "「not so much A as B」는 A라기보다는 B라는 뜻의 원급 관용 표현이므로 as가 온다. so ~ as의 짝이므로 than은 쓸 수 없다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nSleep researchers report that ①<u>the</u> less sleep adolescents get, ②<u>the more</u> impulsive their decisions become. In one study, students who slept fewer than six hours were ③<u>nearly twice as likely</u> to report poor concentration ④<u>as</u> those who slept eight hours, and their reaction times were ⑤<u>very slower</u> as well.",
+   "choices": [
+    "the",
+    "the more",
+    "nearly twice as likely",
+    "as",
+    "very slower"
+   ],
+   "answer": 5,
+   "why": "very는 원급만 강조하므로 비교급 slower 앞에는 much, far 등을 써야 한다. ③④의 twice as likely ~ as는 배수 원급 비교로 바르게 쓰였다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nThe new dam is ①<u>three times the height</u> of the old one and can store ②<u>four times as much</u> water ③<u>as</u> its predecessor. Engineers say that ④<u>the stronger</u> the structure, ⑤<u>the fewest</u> repairs it will need over its lifetime.",
+   "choices": [
+    "three times the height",
+    "four times as much",
+    "as",
+    "the stronger",
+    "the fewest"
+   ],
+   "answer": 5,
+   "why": "「the+비교급, the+비교급」 구문이므로 the fewest를 the fewer로 고쳐야 한다. ①의 배수사+the+명사+of와 ②③의 배수 원급 비교는 옳다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nAlthough the second edition is ①<u>considerably</u> longer than the first, it is ②<u>by far</u> the clearest introduction to the subject. ③<u>No other textbook</u> explains the theory ④<u>as simply as</u> this one does, and its diagrams are ⑤<u>more clearer</u> than any others.",
+   "choices": [
+    "considerably",
+    "by far",
+    "No other textbook",
+    "as simply as",
+    "more clearer"
+   ],
+   "answer": 5,
+   "why": "clear의 비교급은 clearer이므로 more를 함께 쓰면 이중 비교급이 된다. ①은 비교급 강조, ②는 최상급 강조로 모두 옳다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nThe new battery lasts (A)[twice as long / twice longer as] the old one, and the (B)[more / most] often you charge it, the (C)[fast / faster] it wears out.",
+   "choices": [
+    "twice as long – most – faster",
+    "twice longer as – more – faster",
+    "twice as long – more – faster",
+    "twice as long – more – fast",
+    "twice longer as – most – fast"
+   ],
+   "answer": 3,
+   "why": "(A)는 「배수사+as+원급+as」이므로 twice as long, (B)와 (C)는 「the+비교급, the+비교급」이므로 more와 faster가 맞다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nThe average income in the city is nearly double (A)[that / those] of the countryside, and the gap has grown (B)[very / much] wider since 2010. Even so, no other region in the country is growing (C)[fast / faster] than this one.",
+   "choices": [
+    "those – much – faster",
+    "that – much – faster",
+    "that – very – faster",
+    "that – much – fast",
+    "those – very – fast"
+   ],
+   "answer": 2,
+   "why": "(A) income은 단수이므로 that, (B) 비교급 wider의 강조는 much, (C) than 앞이므로 faster가 맞다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것끼리 바르게 짝지은 것은?\nㄱ. This desert receives one third as much rain as that one.\nㄴ. The more, the merrier, as the old saying goes.\nㄷ. The expensive medicine made him none the better.\nㄹ. He is more taller than his father now.\nㅁ. No other means of transport is as efficient as the subway here.",
+   "choices": [
+    "ㄱ, ㄴ, ㄷ, ㅁ",
+    "ㄱ, ㄹ",
+    "ㄴ, ㄷ, ㄹ",
+    "ㄱ, ㄴ",
+    "ㄷ, ㄹ, ㅁ"
+   ],
+   "answer": 1,
+   "why": "ㄹ만 틀렸다. taller 자체가 비교급이므로 more를 겹쳐 쓸 수 없다. ㄱ의 분수 표현, ㄴ·ㄷ의 the·none the 비교급, ㅁ의 최상급 대용은 모두 옳다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 <u>틀린</u> 것끼리 바르게 짝지은 것은?\nㄱ. The earth is about 81 times as heavy as the moon.\nㄴ. Her explanation was very clearer than the professor's.\nㄷ. The colder the water is, the more slowly fish digest food.\nㄹ. Nothing is so precious as time in a crisis.\nㅁ. This route is three times shorter as the old one.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㅁ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㅁ",
+    "ㄱ, ㅁ"
+   ],
+   "answer": 2,
+   "why": "ㄴ은 very를 much·far 등으로 바꿔야 하고, ㅁ은 비교급 shorter 뒤이므로 as를 than으로 바꿔야 한다. 나머지는 어법상 옳다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 <u>다른</u> 것은?\nThis tank holds twice as much water as that one.",
+   "choices": [
+    "That tank holds twice as much water as this one.",
+    "The amount of water this tank holds is twice that of the other tank.",
+    "That tank holds half as much water as this one.",
+    "The capacity of this tank is double that of the other tank.",
+    "This tank holds twice the amount of water that one holds."
+   ],
+   "answer": 1,
+   "why": "That tank holds twice as much water as this one.은 두 탱크의 관계가 반대로 바뀌었다. 나머지는 모두 이 탱크가 저 탱크의 두 배라는 같은 뜻의 배수 표현이다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (the 비교급 구문 심화)",
+   "choices": [
+    "The more the students practiced, the confident they grew.",
+    "The more the students practiced, the more confidently they grew.",
+    "More the students practiced, the more confident they grew.",
+    "The most the students practiced, the more confident they grew.",
+    "The more the students practiced, the more confident they grew."
+   ],
+   "answer": 5,
+   "why": "grow는 보어를 취하는 동사이므로 형용사의 비교급 more confident가 와야 하고, 두 절 모두 the+비교급 형태여야 한다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (비교 대상의 일치)",
+   "choices": [
+    "The climate of Jeju is much milder than that of Seoul.",
+    "The climate of Jeju is much milder than Seoul.",
+    "The climate of Jeju is very milder than that of Seoul.",
+    "The climate of Jeju is much milder than those of Seoul.",
+    "The climate of Jeju is much more milder than that of Seoul."
+   ],
+   "answer": 1,
+   "why": "기후는 기후와 비교해야 하므로 that of Seoul이 필요하고, 비교급 강조는 much가 맞다. climate는 단수이므로 those로 받을 수 없다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 것은? (최상급 강조 표현)",
+   "choices": [
+    "She is by far the most experienced negotiator in the firm.",
+    "She is the very best negotiator we have ever hired.",
+    "She is far the most experienced negotiator than any other.",
+    "She is much the best negotiator in the region.",
+    "No other negotiator in the firm is as experienced as she is."
+   ],
+   "answer": 3,
+   "why": "최상급 뒤에는 than을 쓰지 않으므로 far the most experienced negotiator than any other는 성립하지 않는다. by far, the very, much는 모두 최상급을 강조하는 표현이다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Producing one kilogram of beef requires about twenty times ____ water as producing one kilogram of wheat.",
+   "choices": [
+    "so much",
+    "much",
+    "as many",
+    "more",
+    "as much"
+   ],
+   "answer": 5,
+   "why": "water는 셀 수 없는 명사이고 뒤에 as가 있으므로 「배수사+as much+명사+as」의 as much가 맞다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Not only is the second model cheaper to run; it is also ____ more durable than the first.",
+   "choices": [
+    "even",
+    "very",
+    "enough",
+    "too",
+    "quite"
+   ],
+   "answer": 1,
+   "why": "비교급 more durable을 강조하는 말은 even이다. very, too, quite는 원급 강조어이고 enough는 형용사 뒤에 온다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The number of applicants this year was ten times ____ we had anticipated.",
+   "choices": [
+    "that",
+    "those",
+    "what",
+    "which",
+    "than"
+   ],
+   "answer": 3,
+   "why": "뒤에 we had anticipated의 목적어가 빠져 있으므로 선행사를 포함하는 관계대명사 what이 필요하다. 「배수사+what절」로 수량을 비교한다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The company spends twice as much on marketing ____ it does on research.",
+   "choices": [
+    "than",
+    "that",
+    "as",
+    "what",
+    "which"
+   ],
+   "answer": 3,
+   "why": "「twice as much ~ as」의 짝이 필요하므로 as가 온다. as much 뒤에 than은 쓸 수 없다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The government's response was delayed for weeks, which made the criticism all the ____ severe.",
+   "choices": [
+    "much",
+    "most",
+    "very",
+    "more",
+    "many"
+   ],
+   "answer": 4,
+   "why": "「all the+비교급」 구문이므로 more severe가 된다. all the 뒤에 최상급이나 원급 강조어는 올 수 없다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Scientists were surprised to find that the crater was ____ deeper than earlier estimates had suggested.",
+   "choices": [
+    "very",
+    "perfectly",
+    "extremely",
+    "highly",
+    "substantially"
+   ],
+   "answer": 5,
+   "why": "비교급 deeper를 강조할 수 있는 말은 substantially이다. very, extremely, highly, perfectly는 원급을 꾸미는 부사이다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Although the gap between the two economies is ____ than it was in 2000, it remains far from closed.",
+   "choices": [
+    "small",
+    "as small",
+    "smallest",
+    "smaller",
+    "the smallest"
+   ],
+   "answer": 4,
+   "why": "than 앞이므로 비교급 smaller가 온다. 최상급이나 원급은 than과 함께 쓸 수 없다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nUrban planners argue that ①<u>the more green space</u> a city provides, ②<u>the healthier</u> its residents tend to be. One survey found that people living near parks were ③<u>half as likely</u> to report chronic stress ④<u>than</u> those living in concrete districts, and the effect was ⑤<u>even stronger</u> among older adults.",
+   "choices": [
+    "the more green space",
+    "the healthier",
+    "half as likely",
+    "than",
+    "even stronger"
+   ],
+   "answer": 4,
+   "why": "half as likely 뒤의 짝은 as이므로 than을 as로 고쳐야 한다. ①②의 the 비교급 구문과 ⑤의 비교급 강조 even은 옳다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nThe library's new wing is ①<u>twice the size</u> of the original building, yet it cost ②<u>only half as much</u> to build. ③<u>The more visitors</u> it attracts, ④<u>the more difficult</u> it becomes to keep it quiet, but the staff say that no other reading room in the city is ⑤<u>quiet</u> than this one.",
+   "choices": [
+    "twice the size",
+    "only half as much",
+    "The more visitors",
+    "the more difficult",
+    "quiet"
+   ],
+   "answer": 5,
+   "why": "than 앞이므로 원급 quiet를 비교급 quieter로 고쳐야 한다. ①의 배수 표현과 ③④의 the 비교급 구문은 바르게 쓰였다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nStudies on memory show that (A)[the more / more the] often you review new words, the longer you remember them, and that spaced review is (B)[very / far] more effective than cramming. In fact, no other technique produces (C)[as / so] good results as spacing does.",
+   "choices": [
+    "the more – far – so",
+    "more the – far – as",
+    "the more – very – as",
+    "the more – far – as",
+    "more the – very – so"
+   ],
+   "answer": 4,
+   "why": "(A)는 the+비교급이 먼저 와야 하고, (B)는 비교급 강조이므로 far, (C)는 복수명사 앞이므로 as good results as를 쓴다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nThe new engine consumes (A)[half as much / half as many] fuel as the old model, produces (B)[much / very] fewer emissions, and costs (C)[three times the price of / three times the price than] its main rival.",
+   "choices": [
+    "half as much – much – three times the price of",
+    "half as many – much – three times the price of",
+    "half as much – very – three times the price of",
+    "half as much – much – three times the price than",
+    "half as many – very – three times the price than"
+   ],
+   "answer": 1,
+   "why": "(A) fuel은 셀 수 없는 명사라 as much, (B) 비교급 fewer의 강조는 much, (C) 「배수사+the+명사+of」이므로 the price of가 맞다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것끼리 바르게 짝지은 것은?\nㄱ. The higher we climbed, the thinner the air became.\nㄴ. This bridge is five times as long as that one.\nㄷ. Her new novel is more interesting than any other novels.\nㄹ. He seems none the happier for his sudden wealth.\nㅁ. The final cost was twice higher the amount we had budgeted.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄹ, ㅁ",
+    "ㄴ, ㄷ, ㄹ",
+    "ㄱ, ㄴ, ㄹ",
+    "ㄱ, ㄴ, ㄷ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "ㄷ은 any other 뒤에 단수명사 novel을 써야 하고, ㅁ은 twice the amount of 또는 twice as high as로 고쳐야 한다. 나머지는 옳다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 <u>틀린</u> 것끼리 바르게 짝지은 것은?\nㄱ. The sooner, the better, as the saying goes.\nㄴ. Our profits this quarter are three times as large than last quarter's.\nㄷ. He speaks English far more fluently than any other student in the program.\nㄹ. The more difficult the problem is, the greater the reward is.\nㅁ. She is by far the more diligent employee in the company.",
+   "choices": [
+    "ㄱ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㅁ",
+    "ㄱ, ㄹ",
+    "ㄴ, ㅁ"
+   ],
+   "answer": 5,
+   "why": "ㄴ은 as large 뒤이므로 than을 as로, ㅁ은 by far가 최상급을 강조하므로 the more diligent를 the most diligent로 고쳐야 한다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nㄱ. The population of Tokyo is far larger than that of Seoul.\nㄴ. This laptop costs three times what mine did five years ago.\nㄷ. The less you expect, the least you are disappointed.\nㄹ. No other student in the class works as hard as she does.\nㅁ. He is much the tallest boy in his family.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "ㄷ만 틀렸다. 뒤 절도 비교급이어야 하므로 the least를 the less로 고쳐야 한다. ㅁ의 much the tallest는 최상급 강조로 옳다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 옳게 옮긴 것은?\n그 신약은 기존 약의 절반밖에 안 되는 부작용을 가지고 있다.",
+   "choices": [
+    "The new drug has as half many side effects as the existing one.",
+    "The new drug has half as much side effects as the existing one.",
+    "The new drug has half as many side effects as the existing one.",
+    "The new drug has half as many side effects than the existing one.",
+    "The new drug has half many side effects as the existing one."
+   ],
+   "answer": 3,
+   "why": "side effects는 셀 수 있는 명사이므로 as many를, 분수·배수사는 as ~ as 앞에 두어 half as many ~ as로 쓴다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 옳게 옮긴 것은?\n정보가 많으면 많을수록 결정을 내리기가 더 어려워진다.",
+   "choices": [
+    "The more information you have, the difficult it becomes to decide.",
+    "The more information you have, it becomes the more difficult to decide.",
+    "More information you have, the more difficult it becomes to decide.",
+    "The most information you have, the most difficult it becomes to decide.",
+    "The more information you have, the more difficult it becomes to decide."
+   ],
+   "answer": 5,
+   "why": "「The+비교급+주어+동사, the+비교급+주어+동사」 어순을 지키고 information이 more를 따라 앞으로 이동한 The more information you have, the more difficult it becomes to decide.가 옳다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 옳게 옮긴 것은?\n이 도서관만큼 조용한 곳은 이 도시에 없다.",
+   "choices": [
+    "No other place in this city is as quiet as this library.",
+    "No other places in this city is as quiet as this library.",
+    "Not other place in this city is so quiet than this library.",
+    "No other place in this city is quieter as this library.",
+    "Any other place in this city is not as quiet as this library."
+   ],
+   "answer": 1,
+   "why": "「No other+단수명사+as 원급 as」가 최상급을 대신하는 바른 형태이다. any는 부정문의 주어로 쓸 수 없고, 비교급 뒤에는 as가 아니라 than이 온다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장과 바꿔 쓸 수 있는 것은?\nThe more he explained, the less we understood.",
+   "choices": [
+    "As he explained more, we understood less.",
+    "As he explained less, we understood more.",
+    "Although he explained a lot, we understood a lot.",
+    "He explained so much that we understood everything.",
+    "The less he explained, the more we understood."
+   ],
+   "answer": 1,
+   "why": "「the+비교급, the+비교급」은 As절로 풀어 쓸 수 있다. 설명이 많아질수록 이해는 줄었다는 뜻이므로 ①이 같다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· This tunnel is about three times ____ length of the bridge.\n· People often say that ____ more you give, the more you receive.",
+   "choices": [
+    "a",
+    "of",
+    "the",
+    "as",
+    "that"
+   ],
+   "answer": 3,
+   "why": "첫 문장은 「배수사+the+명사+of」, 둘째 문장은 「the+비교급, the+비교급」 구문이므로 둘 다 the가 들어간다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "A: Why did the committee choose the second proposal?\nB: Because it costs only two thirds ____ much as the first one and takes half the time.",
+   "choices": [
+    "so",
+    "than",
+    "as",
+    "that",
+    "what"
+   ],
+   "answer": 3,
+   "why": "분수 표현도 배수사처럼 「as+원급+as」 앞에 놓이므로 two thirds as much as가 된다. 긍정문에서 so ~ as는 쓰지 않는다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (배수사+as many 구문)",
+   "choices": [
+    "Twice as many students applied this year than last year.",
+    "Twice more students applied this year as last year.",
+    "Twice as many students applied this year as last year.",
+    "As twice many students applied this year as last year.",
+    "Twice as much students applied this year as last year."
+   ],
+   "answer": 3,
+   "why": "「배수사+as many+복수명사+as」가 바른 형태이다. 뒤 짝은 than이 아니라 as이고, students는 셀 수 있으므로 much를 쓸 수 없다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 것은? (원급·비교급 종합)",
+   "choices": [
+    "The deeper the snow is, the harder it is to walk.",
+    "Our office is one third the size of theirs.",
+    "He earns three times as much as I do.",
+    "Nothing is more frightening than the sound of silence at night.",
+    "The team played all the worst for the pressure."
+   ],
+   "answer": 5,
+   "why": "「all the+비교급」 구문이므로 all the worst를 all the worse로 고쳐야 한다. 나머지는 the 비교급, 분수 배수 표현, 최상급 대용이 모두 옳다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The project turned out to be ____ than we had expected, so we had to extend the deadline twice.",
+   "choices": [
+    "far more demanding",
+    "as demanding",
+    "demanding",
+    "the most demanding",
+    "very demanding"
+   ],
+   "answer": 1,
+   "why": "than 앞이므로 비교급이 필요하고, far는 그 비교급을 강조한다. 원급이나 최상급은 than과 함께 쓸 수 없다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 「배수사+the+명사+of」 구문으로 바꿔 쓰시오. (size를 사용할 것)\nThe new campus is four times as large as the old one.",
+   "answer": "The new campus is four times the size of the old one.",
+   "alt": [
+    "The new campus is four times the size of the old one"
+   ],
+   "why": "「배수사+as+원급+as」는 「배수사+the+명사+of」로 바꿔 쓸 수 있다. large에 대응하는 명사는 size이며 앞의 the를 빠뜨리면 안 된다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 최상급을 사용한 한 문장으로 바꿔 쓰시오. (The Nile로 시작할 것)\nNo other river in the world is longer than the Nile.",
+   "answer": "The Nile is the longest river in the world.",
+   "alt": [
+    "The Nile is the longest river in the world"
+   ],
+   "why": "「No other+단수명사+비교급+than」은 최상급을 대신하는 표현이므로 최상급 문장으로 되돌리면 the longest river in the world가 된다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 「The+비교급 ~, the+비교급 ...」 구문으로 바꿔 쓰시오.\nAs a city grows larger, its air becomes dirtier.",
+   "answer": "The larger a city grows, the dirtier its air becomes.",
+   "alt": [
+    "The larger a city grows, the dirtier its air becomes"
+   ],
+   "why": "두 비교급 larger와 dirtier를 각각 the와 함께 각 절의 앞으로 보내면 된다. 주어와 동사의 어순은 그대로 유지한다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 세 단어로 고쳐 쓰시오.\nHe is by far <u>the more talented</u> pianist of all the contestants.",
+   "answer": "the most talented",
+   "alt": [],
+   "why": "by far는 최상급을 강조하고 of all the contestants도 최상급과 어울리므로 the most talented로 고쳐야 한다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nThe (far) ____ north you travel, the shorter the summer becomes.",
+   "answer": "farther",
+   "alt": [
+    "further"
+   ],
+   "why": "「the+비교급, the+비교급」 구문이므로 far의 비교급을 쓴다. 거리를 나타낼 때는 farther, 정도를 나타낼 때는 further를 쓰며 둘 다 가능하다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 두 단어를 쓰시오. (slowly를 이용할 것)\nNothing in this office runs ____ ____ than the old copier.",
+   "answer": "more slowly",
+   "alt": [],
+   "why": "than 앞이므로 부사 slowly의 비교급 more slowly가 온다. 「Nothing+비교급+than」은 최상급을 대신하는 표현이다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. (그만큼 덜 신뢰하게 되었다는 뜻)\nHe found out that she had lied to him, and he trusted her all the ____ for it.",
+   "answer": "less",
+   "alt": [],
+   "why": "「all the+비교급+for ~」 구문에서 신뢰가 줄었다는 뜻이므로 little의 비교급 less를 쓴다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nOur revenue this quarter was three times (great) ____ than we had forecast.",
+   "answer": "greater",
+   "alt": [],
+   "why": "「배수사+비교급+than」 구문이므로 great의 비교급 greater를 쓴다. great는 1음절이라 -er을 붙인다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nThe more you worry about sleep, the <u>hard</u> it becomes to fall asleep.",
+   "answer": "harder",
+   "alt": [],
+   "why": "「the+비교급, the+비교급」 구문이므로 원급 hard를 비교급 harder로 고쳐야 한다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 세 단어를 쓰시오.\nThe company produced ____ ____ ____ electric cars last year as it did in 2020. (두 배 많은)",
+   "answer": "twice as many",
+   "alt": [],
+   "why": "셀 수 있는 명사 electric cars 앞이므로 as many를 쓰고, 배수사 twice는 그 앞에 놓아 twice as many ~ as로 쓴다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 No other로 시작하는 문장으로 바꿔 쓰시오. (as ~ as를 사용할 것)\nSeoul is the most expensive city in the country.",
+   "answer": "No other city in the country is as expensive as Seoul.",
+   "alt": [
+    "No other city in the country is as expensive as Seoul"
+   ],
+   "why": "최상급은 「No other+단수명사+as 원급 as」로 바꿔 쓸 수 있다. city는 반드시 단수로 쓴다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nThe final bill came to almost three times ____ we had budgeted for the trip.",
+   "answer": "what",
+   "alt": [],
+   "why": "budgeted의 목적어가 빠져 있으므로 선행사를 포함하는 관계대명사 what이 필요하다. 「배수사+what절」로 금액을 비교한다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nRents in this district are more than double <u>that</u> in the suburbs.",
+   "answer": "those",
+   "alt": [],
+   "why": "비교 대상인 rents가 복수이므로 단수를 받는 that이 아니라 those로 써야 한다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nThe expensive treatment did nothing for him; he was none the (good) ____ for it.",
+   "answer": "better",
+   "alt": [],
+   "why": "「none the+비교급」은 조금도 더 ~하지 않다는 뜻의 관용 표현이므로 good의 비교급 better를 쓴다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 세 단어를 쓰시오.\nNothing is as important as trust in a team.\n= Trust is ____ ____ ____ anything else in a team.",
+   "answer": "more important than",
+   "alt": [],
+   "why": "「Nothing is as 원급 as A」는 「A is 비교급 than anything else」로 바꿔 쓸 수 있다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 「배수사+비교급+than」 구문으로 바꿔 쓰시오. (taller를 사용할 것)\nThis tower is three times as tall as that one.",
+   "answer": "This tower is three times taller than that one.",
+   "alt": [
+    "This tower is three times taller than that one"
+   ],
+   "why": "「배수사+as+원급+as」는 「배수사+비교급+than」으로 바꿔 쓸 수 있다. 원급 tall을 taller로 바꾸고 뒤의 as를 than으로 고친다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nThe (much) ____ carefully you plan a trip, the fewer problems you will face.",
+   "answer": "more",
+   "alt": [],
+   "why": "부사 carefully의 비교급을 만들어야 하므로 much가 아니라 more를 써서 the more carefully가 된다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nFew investments are ____ risky than cryptocurrency, financial experts warn.",
+   "answer": "more",
+   "alt": [],
+   "why": "than 앞이므로 비교급 more risky가 되어야 한다. 「Few things are 비교급 than ~」은 최상급에 가까운 뜻을 나타낸다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 「The+비교급 ~, the+비교급 ...」 구문으로 바꿔 쓰시오.\nAs we waited longer, we grew more anxious.",
+   "answer": "The longer we waited, the more anxious we grew.",
+   "alt": [
+    "The longer we waited, the more anxious we grew"
+   ],
+   "why": "비교급 longer와 more anxious를 각각 the와 함께 절의 앞으로 보낸다. grew의 보어인 anxious도 비교급과 함께 이동한다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 세 단어로 고쳐 쓰시오.\n<u>Any other country</u> in Asia does not export as many semiconductors as Korea.",
+   "answer": "No other country",
+   "alt": [],
+   "why": "any는 부정문의 주어로 쓸 수 없으므로 최상급 대용 구문의 주어는 No other country가 되어야 한다.",
+   "no": 200
+  }
+ ]
+}

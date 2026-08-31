@@ -1,0 +1,2652 @@
+{
+ "id": "hs-21",
+ "grade": "고등",
+ "name": "one of 최상급+복수명사·수의 일치",
+ "points": [
+  "one of the+최상급+복수명사+단수동사",
+  "주격 관대절 동사 일치",
+  "삽입구가 낀 수일치"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Soccer is one of the most popular ____ in the world.",
+   "choices": [
+    "sport",
+    "sporting",
+    "a sport",
+    "sport of",
+    "sports"
+   ],
+   "answer": 5,
+   "why": "「one of the+최상급+복수명사」 형태이므로 sports가 맞다. one of 뒤에는 반드시 복수명사가 오므로 sport나 a sport는 쓸 수 없다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "One of the oldest buildings in this town ____ now a small museum.",
+   "choices": [
+    "are",
+    "were",
+    "be",
+    "being",
+    "is"
+   ],
+   "answer": 5,
+   "why": "주어의 핵은 One이므로 단수동사 is를 쓴다. 바로 앞의 buildings에 이끌려 are로 쓰면 안 되고, now가 있으므로 과거형 were도 안 된다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Mount Everest is one of the ____ mountains in the world.",
+   "choices": [
+    "high",
+    "higher",
+    "most high",
+    "highly",
+    "highest"
+   ],
+   "answer": 5,
+   "why": "「one of the+최상급+복수명사」이므로 최상급 highest가 온다. high는 1음절 형용사라 most high로 쓰지 않는다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "One of my best friends ____ in Busan.",
+   "choices": [
+    "lives",
+    "live",
+    "are living",
+    "living",
+    "have lived"
+   ],
+   "answer": 1,
+   "why": "주어의 핵이 One이므로 3인칭 단수 lives를 쓴다. 앞에 있는 friends에 맞춰 live로 쓰지 않도록 한다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "This is one of the funniest ____ I have ever watched.",
+   "choices": [
+    "movie",
+    "a movie",
+    "movie's",
+    "movies",
+    "the movies"
+   ],
+   "answer": 4,
+   "why": "「one of the+최상급+복수명사」이므로 movies. one of 다음에는 단수명사가 올 수 없고, 이미 the가 있으므로 the movies도 안 된다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "One of the questions on yesterday's test ____ really difficult.",
+   "choices": [
+    "were",
+    "was",
+    "are",
+    "have been",
+    "being"
+   ],
+   "answer": 2,
+   "why": "주어의 핵 One은 단수이고 yesterday's test로 시점이 과거이므로 was가 알맞다. questions에 이끌려 were로 쓰면 안 된다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Jeju Island is one of the most beautiful ____ in Korea.",
+   "choices": [
+    "place",
+    "places",
+    "placing",
+    "a place",
+    "the place"
+   ],
+   "answer": 2,
+   "why": "one of the+최상급 뒤에는 복수명사가 와야 하므로 places가 맞다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "One of the boys in my class ____ the violin very well.",
+   "choices": [
+    "plays",
+    "play",
+    "are playing",
+    "playing",
+    "have played"
+   ],
+   "answer": 1,
+   "why": "주어의 핵은 One이므로 단수동사 plays. of the boys는 수식어일 뿐 동사의 수를 결정하지 않는다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Ronaldo is one of the ____ players in soccer history.",
+   "choices": [
+    "good",
+    "better",
+    "most good",
+    "best",
+    "well"
+   ],
+   "answer": 4,
+   "why": "one of the 뒤에는 최상급이 오므로 good의 최상급 best를 쓴다. good은 불규칙 변화라 most good은 틀린 형태이다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "One of the main reasons for her success ____ her positive attitude.",
+   "choices": [
+    "are",
+    "were",
+    "be",
+    "being",
+    "is"
+   ],
+   "answer": 5,
+   "why": "주어의 핵이 One이므로 단수 is. 현재의 사실을 말하고 있으므로 were는 알맞지 않다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Busan is one of the largest ____ in Korea.",
+   "choices": [
+    "cities",
+    "city",
+    "citys",
+    "a city",
+    "the city"
+   ],
+   "answer": 1,
+   "why": "one of the+최상급 뒤에는 복수명사가 온다. city의 복수형은 y를 i로 고쳐 cities로 쓴다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "One of these two books ____ yours, and the other is mine.",
+   "choices": [
+    "are",
+    "is",
+    "were",
+    "be",
+    "being"
+   ],
+   "answer": 2,
+   "why": "One이 주어이므로 단수동사 is. 뒤의 the other is와 시제·수가 나란히 맞는다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "That was one of the worst ____ of my life.",
+   "choices": [
+    "day",
+    "days",
+    "daies",
+    "a day",
+    "the day"
+   ],
+   "answer": 2,
+   "why": "one of the+최상급 뒤에는 복수명사가 필요하다. day의 복수형은 days이다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "One of the classroom windows ____ broken during the storm last night.",
+   "choices": [
+    "are",
+    "is",
+    "was",
+    "were",
+    "be"
+   ],
+   "answer": 3,
+   "why": "주어의 핵 One은 단수이고 last night이므로 과거형 was가 알맞다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Each of the students ____ a name tag.",
+   "choices": [
+    "has",
+    "have",
+    "are having",
+    "having",
+    "have had"
+   ],
+   "answer": 1,
+   "why": "each of+복수명사는 단수 취급하므로 has를 쓴다. 소유의 have는 진행형으로 쓰지 않는다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Every one of my classmates ____ pizza.",
+   "choices": [
+    "like",
+    "likes",
+    "are liking",
+    "liking",
+    "have like"
+   ],
+   "answer": 2,
+   "why": "every one of+복수명사는 단수 취급하므로 likes. 감정·기호를 나타내는 like는 진행형으로 쓰지 않는다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Both of my parents ____ middle school teachers.",
+   "choices": [
+    "is",
+    "was",
+    "has been",
+    "being",
+    "are"
+   ],
+   "answer": 5,
+   "why": "both of+복수명사는 복수 취급이므로 are. one of, each of가 단수 취급인 것과 반대이다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Neither of the two answers ____ correct.",
+   "choices": [
+    "are",
+    "were",
+    "have been",
+    "being",
+    "is"
+   ],
+   "answer": 5,
+   "why": "neither of+복수명사는 단수 취급이므로 is를 쓴다. 현재의 판단이므로 were는 알맞지 않다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The number of students in our school ____ about six hundred.",
+   "choices": [
+    "are",
+    "were",
+    "is",
+    "have",
+    "being"
+   ],
+   "answer": 3,
+   "why": "「the number of+복수명사」는 '~의 수'라는 뜻으로 단수 취급하여 is를 쓴다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A number of tourists ____ waiting in front of the palace.",
+   "choices": [
+    "is",
+    "are",
+    "was",
+    "has been",
+    "being"
+   ],
+   "answer": 2,
+   "why": "「a number of+복수명사」는 '많은 ~'라는 뜻으로 복수 취급하므로 are를 쓴다. the number of와 반대이다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "One of the most important things in life ____ good health.",
+   "choices": [
+    "are",
+    "were",
+    "be",
+    "is",
+    "being"
+   ],
+   "answer": 4,
+   "why": "주어의 핵이 One이므로 단수동사 is. things에 이끌려 are로 쓰지 않도록 한다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "K-pop is one of the ____ things about Korea.",
+   "choices": [
+    "famous",
+    "more famous",
+    "famousest",
+    "much famous",
+    "most famous"
+   ],
+   "answer": 5,
+   "why": "one of the 뒤에는 최상급이 온다. famous는 3음절이라 most famous로 최상급을 만든다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "One of the photos on the wall ____ my grandmother as a young girl.",
+   "choices": [
+    "shows",
+    "show",
+    "are showing",
+    "showing",
+    "have shown"
+   ],
+   "answer": 1,
+   "why": "주어의 핵 One이 단수이므로 shows. 전치사구 on the wall과 of the photos는 동사의 수에 영향을 주지 않는다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "This is one of the ____ books in the school library.",
+   "choices": [
+    "oldest",
+    "old",
+    "older",
+    "most old",
+    "oldly"
+   ],
+   "answer": 1,
+   "why": "one of the 뒤에는 최상급이 오므로 oldest. old는 1음절이라 most old로 쓰지 않는다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "One of the twins ____ glasses.",
+   "choices": [
+    "wear",
+    "are wearing",
+    "wearing",
+    "wears",
+    "have worn"
+   ],
+   "answer": 4,
+   "why": "주어의 핵은 One이므로 단수동사 wears를 쓴다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Some of the milk in the bottle ____ gone bad.",
+   "choices": [
+    "have",
+    "are",
+    "were",
+    "has",
+    "being"
+   ],
+   "answer": 4,
+   "why": "「some of+명사」는 of 뒤의 명사에 수를 맞춘다. milk는 셀 수 없는 명사라 단수 취급이므로 has gone이 맞다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Some of the apples in the basket ____ already rotten.",
+   "choices": [
+    "is",
+    "was",
+    "has been",
+    "being",
+    "are"
+   ],
+   "answer": 5,
+   "why": "「some of+복수명사」는 복수 취급하므로 are. already가 있으므로 현재 상태를 나타낸다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Most of the water in the lake ____ frozen in January.",
+   "choices": [
+    "is",
+    "are",
+    "were",
+    "have been",
+    "being"
+   ],
+   "answer": 1,
+   "why": "「most of+셀 수 없는 명사」는 단수 취급이므로 is. 해마다 되풀이되는 일이므로 현재시제를 쓴다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Most of the students in this class ____ from Seoul.",
+   "choices": [
+    "is",
+    "was",
+    "comes",
+    "come",
+    "coming"
+   ],
+   "answer": 4,
+   "why": "「most of+복수명사」는 복수 취급이므로 come을 쓴다. 뒤의 students가 아니라 of 뒤 명사의 수에 맞추는 것이 원칙이다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Half of the pizza ____ already gone.",
+   "choices": [
+    "are",
+    "were",
+    "have",
+    "is",
+    "being"
+   ],
+   "answer": 4,
+   "why": "「half of+단수명사」는 단수 취급이므로 is를 쓴다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Half of the guests ____ already left.",
+   "choices": [
+    "have",
+    "has",
+    "is",
+    "was",
+    "having"
+   ],
+   "answer": 1,
+   "why": "「half of+복수명사」는 복수 취급이므로 have left를 쓴다. 앞 문제의 half of the pizza와 비교해 두자.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?\nHanbok is one of the most beautiful (A)____ in Korea, and one of my friends (B)____ one every New Year's Day.",
+   "choices": [
+    "traditions – wears",
+    "traditions – wear",
+    "tradition – wears",
+    "traditions – wearing",
+    "tradition – wear"
+   ],
+   "answer": 1,
+   "why": "(A)는 one of the+최상급 뒤이므로 복수명사 traditions, (B)는 주어의 핵이 One이므로 단수동사 wears이다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 「one of+the+복수명사」 문장으로 어법상 옳은 것은?",
+   "choices": [
+    "One of the girls are my cousin.",
+    "One of the girl is my cousin.",
+    "One of the girls is my cousin.",
+    "One of girls is my cousin.",
+    "One of the girls being my cousin."
+   ],
+   "answer": 3,
+   "why": "one of 뒤에는 「the+복수명사」가 오고 동사는 One에 맞춰 단수 is를 쓴다. ①은 수일치, ②는 복수명사, ④는 the 누락, ⑤는 동사가 없어 틀렸다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 것은? (수량 표현의 수일치)",
+   "choices": [
+    "One of my hobbies is drawing cartoons.",
+    "Neither of the plans are ready yet.",
+    "Each of the rooms has a big window.",
+    "Both of the doors are open.",
+    "Every one of the boxes is heavy."
+   ],
+   "answer": 2,
+   "why": "neither of+복수명사는 단수 취급이므로 are가 아니라 is를 써야 한다. both of만 복수 취급이다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nOne of the ①<u>best</u> ②<u>way</u> ③<u>to stay</u> ④<u>healthy</u> ⑤<u>is</u> to walk every day.",
+   "choices": [
+    "best",
+    "way",
+    "to stay",
+    "healthy",
+    "is"
+   ],
+   "answer": 2,
+   "why": "one of the+최상급 뒤에는 복수명사가 와야 하므로 way를 ways로 고쳐야 한다. 동사 is는 주어의 핵 One에 맞춘 것이라 옳다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\n①<u>Each</u> ②<u>of the</u> students ③<u>have</u> ④<u>a small</u> ⑤<u>notebook</u>.",
+   "choices": [
+    "Each",
+    "of the",
+    "have",
+    "a small",
+    "notebook"
+   ],
+   "answer": 3,
+   "why": "each of+복수명사는 단수 취급이므로 have를 has로 고쳐야 한다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "One of the ____ in the museum was painted three hundred years ago.",
+   "choices": [
+    "painting",
+    "painter",
+    "painters",
+    "paintings",
+    "paint"
+   ],
+   "answer": 4,
+   "why": "one of 뒤에는 복수명사가 오고, 그림이 '그려진' 것이므로 paintings가 알맞다. painters는 사람이라 was painted와 어울리지 않는다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Sumi is one of the ____ students in our class.",
+   "choices": [
+    "smart",
+    "smartest",
+    "smarter",
+    "most smart",
+    "smartly"
+   ],
+   "answer": 2,
+   "why": "one of the 뒤에는 최상급이 오며 smart는 1음절이므로 smartest로 쓴다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "One of the eggs in the box ____ cracked.",
+   "choices": [
+    "is",
+    "are",
+    "were",
+    "have been",
+    "being"
+   ],
+   "answer": 1,
+   "why": "주어의 핵 One이 단수이므로 is. eggs에 이끌려 are로 쓰지 않도록 한다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "One of the most difficult ____ for me is math.",
+   "choices": [
+    "subjects",
+    "subject",
+    "a subject",
+    "subjecting",
+    "the subject"
+   ],
+   "answer": 1,
+   "why": "one of the+최상급 뒤에는 복수명사 subjects가 온다. 문장의 동사 is는 One에 맞춘 것이다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 수량 표현의 수일치가 어법상 옳은 것은?",
+   "choices": [
+    "The number of cars on the road are increasing.",
+    "A number of car is parked outside.",
+    "One of the answers were wrong.",
+    "Each of the players wears a helmet.",
+    "Both of the box is empty."
+   ],
+   "answer": 4,
+   "why": "each of+복수명사는 단수 취급이므로 wears가 맞다. ①은 is, ②는 a number of cars are, ③은 was, ⑤는 both of the boxes are로 고쳐야 한다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My uncle, along with his two sons, ____ fishing every Sunday.",
+   "choices": [
+    "go",
+    "are going",
+    "going",
+    "have gone",
+    "goes"
+   ],
+   "answer": 5,
+   "why": "along with ~는 삽입된 수식어이므로 동사는 주어 My uncle에 맞춰 단수 goes를 쓴다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The teacher, as well as the students, ____ excited about the school festival.",
+   "choices": [
+    "is",
+    "are",
+    "were",
+    "have been",
+    "being"
+   ],
+   "answer": 1,
+   "why": "as well as ~는 삽입구이므로 동사는 앞의 주어 The teacher에 맞춰 단수 is를 쓴다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The boys in the back row ____ very noisy today.",
+   "choices": [
+    "is",
+    "was",
+    "has been",
+    "being",
+    "are"
+   ],
+   "answer": 5,
+   "why": "주어의 핵은 The boys(복수)이고 in the back row는 수식어이므로 are를 쓴다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A box of old toys ____ under my bed.",
+   "choices": [
+    "is",
+    "are",
+    "were",
+    "have been",
+    "being"
+   ],
+   "answer": 1,
+   "why": "주어의 핵은 A box(단수)이고 of old toys는 수식어이므로 단수동사 is를 쓴다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Who is Mr. Han?\nB: He is one of the ____ teachers in our school.",
+   "choices": [
+    "kindest",
+    "kind",
+    "kinder",
+    "most kind",
+    "kindly"
+   ],
+   "answer": 1,
+   "why": "one of the 뒤에는 최상급이 오며 kind는 1음절이므로 kindest로 쓴다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Bulgogi is one of the ____ dishes for foreign visitors.",
+   "choices": [
+    "popular",
+    "more popular",
+    "popularest",
+    "popularly",
+    "most popular"
+   ],
+   "answer": 5,
+   "why": "one of the 뒤에는 최상급이 온다. popular는 3음절이므로 most popular가 최상급이다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "One of the players on the school soccer team ____ from Brazil.",
+   "choices": [
+    "come",
+    "are coming",
+    "coming",
+    "have come",
+    "comes"
+   ],
+   "answer": 5,
+   "why": "주어의 핵이 One이므로 단수동사 comes. 앞의 the players나 team에 이끌리지 않도록 주의한다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nOne of the (box) ____ on the table is empty.",
+   "answer": "boxes",
+   "alt": [],
+   "why": "one of 뒤에는 반드시 복수명사가 오므로 boxes로 쓴다. 동사가 is인 것은 주어의 핵이 One이기 때문이다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nSeoul is one of the (big) ____ cities in Asia.",
+   "answer": "biggest",
+   "alt": [],
+   "why": "one of the 뒤에는 최상급이 온다. big은 단모음+단자음이므로 g를 겹쳐 biggest로 쓴다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 쓰시오.\nOne of my cousins (live) ____ in Canada.",
+   "answer": "lives",
+   "alt": [],
+   "why": "주어의 핵이 One이므로 3인칭 단수형 lives를 쓴다. cousins에 이끌려 live로 쓰지 않도록 한다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 쓰시오.\nEach of the rooms (have) ____ a large window.",
+   "answer": "has",
+   "alt": [],
+   "why": "each of+복수명사는 단수 취급하므로 has를 쓴다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nBaseball is one of the most exciting <u>sport</u> in America.",
+   "answer": "sports",
+   "alt": [],
+   "why": "「one of the+최상급+복수명사」이므로 sport를 sports로 고쳐야 한다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nOne of the doors <u>are</u> locked.",
+   "answer": "is",
+   "alt": [],
+   "why": "주어의 핵은 One이므로 단수동사 is로 고친다. 바로 앞의 doors에 이끌리면 안 된다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nThe number of foreign visitors <u>are</u> growing every year.",
+   "answer": "is",
+   "alt": [],
+   "why": "「the number of+복수명사」는 '~의 수'로 단수 취급하므로 is로 고친다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nA number of students <u>is</u> absent today.",
+   "answer": "are",
+   "alt": [],
+   "why": "「a number of+복수명사」는 '많은 ~'로 복수 취급하므로 are로 고친다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 한 단어로 쓰시오.\n그는 우리 반에서 가장 키가 큰 학생 중 한 명이다.\n→ He is one of the ____ students in our class.",
+   "answer": "tallest",
+   "alt": [],
+   "why": "'가장 ~한 것 중 하나'는 「one of the+최상급+복수명사」로 쓴다. tall의 최상급은 tallest이다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 be동사를 현재시제 한 단어로 쓰시오.\nOne of the questions on this page ____ too hard for me.",
+   "answer": "is",
+   "alt": [],
+   "why": "주어의 핵이 One이므로 단수동사 is를 쓴다. on this page는 수식어일 뿐이다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 쓰시오.\nNeither of my brothers (like) ____ soccer.",
+   "answer": "likes",
+   "alt": [],
+   "why": "neither of+복수명사는 단수 취급이므로 likes로 쓴다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 쓰시오.\nBoth of the answers (be) ____ correct.",
+   "answer": "are",
+   "alt": [],
+   "why": "both of+복수명사는 복수 취급이므로 are를 쓴다. one of, each of와 반대이다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 쓰시오.\nMost of the cake (be) ____ already gone.",
+   "answer": "is",
+   "alt": [],
+   "why": "「most of+단수명사」는 of 뒤 명사에 맞춰 단수 취급하므로 is이다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 쓰시오.\nMost of the cookies (be) ____ already gone.",
+   "answer": "are",
+   "alt": [],
+   "why": "「most of+복수명사」는 복수 취급이므로 are이다. most of the cake와 비교해 두자.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nThis is one of the (funny) ____ stories in the book.",
+   "answer": "funniest",
+   "alt": [],
+   "why": "one of the 뒤에는 최상급이 온다. 「자음+y」로 끝나므로 y를 i로 고쳐 funniest로 쓴다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 쓰시오.\nMy sister, along with her friends, (be) ____ at the library now.",
+   "answer": "is",
+   "alt": [],
+   "why": "along with ~는 삽입구이므로 동사는 주어 My sister에 맞춰 단수 is를 쓴다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nOne of the best (way) ____ to learn English is to read a lot.",
+   "answer": "ways",
+   "alt": [],
+   "why": "one of the+최상급 뒤에는 복수명사가 오므로 ways로 쓴다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nEvery one of the players <u>have</u> a locker.",
+   "answer": "has",
+   "alt": [],
+   "why": "every one of+복수명사는 단수 취급이므로 has로 고친다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nJenny is one of the <u>more</u> popular girls in our school.",
+   "answer": "most",
+   "alt": [],
+   "why": "'가장 ~한 것 중 하나'이므로 비교급 more가 아니라 최상급 most를 써야 한다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 be동사를 현재시제 한 단어로 쓰시오.\n이 책들 중 하나는 내 것이다.\n→ One of these books ____ mine.",
+   "answer": "is",
+   "alt": [],
+   "why": "주어의 핵이 One이므로 단수동사 is를 쓴다. of these books는 수식어이다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Yuna is one of the students who ____ volunteered at the animal shelter.",
+   "choices": [
+    "have",
+    "has",
+    "is",
+    "was",
+    "does"
+   ],
+   "answer": 1,
+   "why": "주격 관계대명사 who의 선행사는 바로 앞의 the students(복수)이므로 have volunteered가 맞다. 문장 전체의 주어 One에 이끌려 has로 쓰지 않도록 한다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Mr. Kim is the only one of the teachers who ____ Spanish fluently.",
+   "choices": [
+    "speak",
+    "are speaking",
+    "have spoken",
+    "speaking",
+    "speaks"
+   ],
+   "answer": 5,
+   "why": "the only one이 앞에 있으면 관계사의 선행사는 one이 되므로 단수동사 speaks를 쓴다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "One of the main reasons why people move to big cities ____ better job opportunities.",
+   "choices": [
+    "are",
+    "were",
+    "is",
+    "have been",
+    "being"
+   ],
+   "answer": 3,
+   "why": "주어의 핵은 One이고 why절은 reasons를 꾸미는 수식어이므로 단수동사 is를 쓴다. 보어가 복수여도 동사는 주어에 맞춘다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The books on the top shelf, which my aunt gave me, ____ very rare.",
+   "choices": [
+    "is",
+    "are",
+    "was",
+    "has been",
+    "being"
+   ],
+   "answer": 2,
+   "why": "주어의 핵은 The books(복수)이고 전치사구와 관계사절은 삽입된 수식어이므로 are를 쓴다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Mathematics, which many students find difficult, ____ my favorite subject.",
+   "choices": [
+    "is",
+    "are",
+    "were",
+    "have been",
+    "being"
+   ],
+   "answer": 1,
+   "why": "-ics로 끝나는 학문명은 형태가 복수처럼 보여도 단수 취급하며, 삽입된 관계사절은 수일치에 영향을 주지 않는다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Amy is one of those people who ____ never satisfied with second place.",
+   "choices": [
+    "is",
+    "was",
+    "has been",
+    "being",
+    "are"
+   ],
+   "answer": 5,
+   "why": "who의 선행사는 those people(복수)이므로 are를 쓴다. one of those people who ~는 복수동사를 받는 대표적인 형태이다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "This is one of the most beautiful songs that ____ ever been written.",
+   "choices": [
+    "has",
+    "is",
+    "was",
+    "having",
+    "have"
+   ],
+   "answer": 5,
+   "why": "that의 선행사는 the most beautiful songs(복수)이므로 have been written이 맞다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?\nKevin is one of the (A)____ who (B)____ within walking distance of the school.",
+   "choices": [
+    "student – live",
+    "student – lives",
+    "students – lives",
+    "students – live",
+    "students – living"
+   ],
+   "answer": 4,
+   "why": "(A) one of 뒤에는 복수명사 students, (B) 관계사 who의 선행사가 students(복수)이므로 live를 쓴다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The price of these running shoes ____ much higher than I expected.",
+   "choices": [
+    "are",
+    "were",
+    "have been",
+    "being",
+    "is"
+   ],
+   "answer": 5,
+   "why": "주어의 핵은 The price(단수)이고 of these running shoes는 수식어이므로 is를 쓴다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Two thirds of the island ____ covered with thick forest.",
+   "choices": [
+    "are",
+    "were",
+    "have been",
+    "being",
+    "is"
+   ],
+   "answer": 5,
+   "why": "「분수+of+명사」는 of 뒤 명사에 수를 맞춘다. the island가 단수이므로 is covered이다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Two thirds of the members ____ agreed to the new rule.",
+   "choices": [
+    "has",
+    "is",
+    "was",
+    "having",
+    "have"
+   ],
+   "answer": 5,
+   "why": "「분수+of+복수명사」는 복수 취급이므로 have agreed로 쓴다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "One of the most serious problems that our city faces ____ air pollution.",
+   "choices": [
+    "is",
+    "are",
+    "were",
+    "have been",
+    "being"
+   ],
+   "answer": 1,
+   "why": "주어의 핵은 One이고 that절은 problems를 꾸미는 수식어이므로 단수동사 is를 쓴다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 관계사절의 수일치가 어법상 옳은 것은?",
+   "choices": [
+    "He is one of the few people who understands the risk.",
+    "He is one of the few people who understand the risk.",
+    "He is one of the few person who understand the risk.",
+    "He is one of few people who understands the risk.",
+    "He is one of the few peoples who understand the risk."
+   ],
+   "answer": 2,
+   "why": "who의 선행사는 the few people(복수)이므로 understand가 맞다. ①은 수일치, ③은 단수명사, ④는 the 누락과 수일치, ⑤는 peoples가 잘못이다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 것은? (삽입구와 부분 표현)",
+   "choices": [
+    "The list of applicants was posted this morning.",
+    "The rest of the money was spent on books.",
+    "The rest of the students were sent home.",
+    "Each of the volunteers were given a T-shirt.",
+    "Every one of the seats was taken."
+   ],
+   "answer": 4,
+   "why": "each of+복수명사는 단수 취급이므로 were가 아니라 was를 써야 한다. ②③은 the rest of 뒤 명사의 수에 맞춘 올바른 문장이다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nJapan is one of the ①<u>few</u> ②<u>countries</u> that ③<u>has</u> ④<u>almost no</u> natural ⑤<u>resources</u>.",
+   "choices": [
+    "few",
+    "countries",
+    "has",
+    "almost no",
+    "resources"
+   ],
+   "answer": 3,
+   "why": "that의 선행사는 the few countries(복수)이므로 has를 have로 고쳐야 한다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 (a)~(e) 중 어법상 옳은 문장의 개수는?\n(a) One of the singers were out of tune.\n(b) The only one of the boys who was chosen is Ted.\n(c) A number of complaints has been filed.\n(d) The number of complaints has increased sharply.\n(e) Neither of the candidates seem honest.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "옳은 것은 (b)와 (d) 둘뿐이다. (a)는 was, (c)는 a number of ~이므로 have, (e)는 neither of ~이므로 seems로 고쳐야 한다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 옮길 때 어법상 옳은 것은?\n그것은 내가 지금까지 읽은 소설 중 가장 감동적인 것 중 하나이다.",
+   "choices": [
+    "It is one of the most moving novel I have ever read.",
+    "It is one of the most moving novels I have ever read.",
+    "It is one of most moving novels I have ever read.",
+    "It is the one of the most moving novels I have ever read.",
+    "It is one of the more moving novels I have ever read."
+   ],
+   "answer": 2,
+   "why": "「one of the+최상급+복수명사」가 기본 형태이다. ①은 단수명사, ③은 the 누락, ④는 the one of가 잘못, ⑤는 비교급이라 틀렸다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n• Each of the applicants ____ to submit two photos.\n• The number of applicants ____ risen sharply this year.",
+   "choices": [
+    "have",
+    "are",
+    "were",
+    "is",
+    "has"
+   ],
+   "answer": 5,
+   "why": "each of+복수명사도, the number of+복수명사도 모두 단수 취급이므로 has가 공통으로 들어간다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Why do you like Ms. Park's class?\nB: Because she is one of the few teachers who ____ our questions seriously.",
+   "choices": [
+    "takes",
+    "is taking",
+    "has taken",
+    "taking",
+    "take"
+   ],
+   "answer": 5,
+   "why": "who의 선행사는 the few teachers(복수)이므로 take가 알맞다. 문장의 주어 she에 이끌려 takes로 쓰지 않도록 한다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Not only the players but also the coach ____ disappointed with yesterday's result.",
+   "choices": [
+    "are",
+    "were",
+    "was",
+    "have been",
+    "being"
+   ],
+   "answer": 3,
+   "why": "not only A but also B는 B에 동사를 맞추므로 the coach에 맞춰 단수. yesterday로 시점이 과거이므로 was이다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Either my parents or my brother ____ going to pick me up.",
+   "choices": [
+    "is",
+    "are",
+    "were",
+    "have been",
+    "being"
+   ],
+   "answer": 1,
+   "why": "either A or B는 동사에 가까운 B(my brother)에 수를 맞추므로 is이다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Either my brother or my parents ____ going to pick me up at the airport.",
+   "choices": [
+    "is",
+    "was",
+    "are",
+    "has been",
+    "being"
+   ],
+   "answer": 3,
+   "why": "either A or B는 B에 수를 맞춘다. B가 my parents(복수)이므로 are이다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The teacher together with her students ____ planting trees in the schoolyard now.",
+   "choices": [
+    "are",
+    "is",
+    "were",
+    "have been",
+    "being"
+   ],
+   "answer": 2,
+   "why": "together with ~는 삽입구이므로 동사는 주어 The teacher에 맞춰 단수 is를 쓴다. now가 있으므로 현재진행형이다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "About 40 percent of the water we use every day ____ wasted.",
+   "choices": [
+    "are",
+    "is",
+    "were",
+    "have been",
+    "being"
+   ],
+   "answer": 2,
+   "why": "「퍼센트+of+명사」는 of 뒤 명사에 맞춘다. water가 셀 수 없는 명사이므로 is wasted이다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "About 40 percent of the students in our school ____ glasses.",
+   "choices": [
+    "wears",
+    "is wearing",
+    "wear",
+    "was wearing",
+    "wearing"
+   ],
+   "answer": 3,
+   "why": "「퍼센트+of+복수명사」는 복수 취급이므로 wear를 쓴다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Sujin is one of the girls who ____ in the school band.",
+   "choices": [
+    "play",
+    "plays",
+    "is playing",
+    "has played",
+    "playing"
+   ],
+   "answer": 1,
+   "why": "who의 선행사는 the girls(복수)이므로 play가 맞다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Every student and every teacher ____ invited to the ceremony held last Friday.",
+   "choices": [
+    "are",
+    "were",
+    "have been",
+    "was",
+    "being"
+   ],
+   "answer": 4,
+   "why": "「every A and every B」는 하나하나를 가리켜 단수 취급한다. last Friday이므로 과거형 was invited이다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The reason for so many accidents on this road ____ careless driving.",
+   "choices": [
+    "are",
+    "were",
+    "have been",
+    "is",
+    "being"
+   ],
+   "answer": 4,
+   "why": "주어의 핵은 The reason(단수)이므로 is. accidents에 이끌려 are로 쓰면 안 된다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "There ____ a number of ways to solve this problem.",
+   "choices": [
+    "is",
+    "was",
+    "has been",
+    "are",
+    "being"
+   ],
+   "answer": 4,
+   "why": "There 구문은 뒤의 명사에 수를 맞춘다. a number of ways는 복수이므로 are이다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "There ____ several reasons why one of the machines keeps breaking down.",
+   "choices": [
+    "are",
+    "is",
+    "was",
+    "has been",
+    "being"
+   ],
+   "answer": 1,
+   "why": "뒤의 several reasons가 복수이므로 There are. 뒤에 이어지는 one of the machines가 단수 keeps를 받는 것과 구별하자.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nSeoul, ①<u>along with</u> Tokyo and Beijing, ②<u>are</u> one of the ③<u>busiest</u> ④<u>cities</u> ⑤<u>in</u> Asia.",
+   "choices": [
+    "along with",
+    "are",
+    "busiest",
+    "cities",
+    "in"
+   ],
+   "answer": 2,
+   "why": "along with ~는 삽입구이므로 동사는 주어 Seoul에 맞춰 단수 is여야 한다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nOne of ①<u>the greatest</u> ②<u>inventions</u> ③<u>that</u> ④<u>changes</u> our daily life ⑤<u>is</u> the smartphone.",
+   "choices": [
+    "the greatest",
+    "inventions",
+    "that",
+    "changes",
+    "is"
+   ],
+   "answer": 4,
+   "why": "that의 선행사는 the greatest inventions(복수)이므로 changes를 change로 고쳐야 한다. 문장의 동사 is는 주어 One에 맞춘 것이라 옳다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Bora is the only one of my friends who ____ to school by bike.",
+   "choices": [
+    "come",
+    "are coming",
+    "have come",
+    "coming",
+    "comes"
+   ],
+   "answer": 5,
+   "why": "the only one이 선행사이므로 관계사절의 동사는 단수 comes이다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "One of the biggest challenges facing our team ____ the lack of practice time.",
+   "choices": [
+    "are",
+    "is",
+    "were",
+    "have been",
+    "being"
+   ],
+   "answer": 2,
+   "why": "주어의 핵은 One이고 facing our team은 challenges를 꾸미는 분사구이므로 단수동사 is를 쓴다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "This museum has one of the largest ____ of ancient coins in the world.",
+   "choices": [
+    "collections",
+    "collection",
+    "collecting",
+    "a collection",
+    "collector"
+   ],
+   "answer": 1,
+   "why": "one of the+최상급 뒤에는 복수명사가 오므로 collections가 맞다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 것은? (of 뒤 명사에 따른 수일치)",
+   "choices": [
+    "Some of the books was missing.",
+    "Half of the classroom is painted blue.",
+    "Half of the seats are already taken.",
+    "Some of the information was useful.",
+    "Most of the homework is finished."
+   ],
+   "answer": 1,
+   "why": "「some of+복수명사」는 복수 취급이므로 were missing으로 고쳐야 한다. information과 homework는 셀 수 없는 명사라 단수동사가 옳다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 옮길 때 가장 알맞은 것은?\n내 친구들 중 한 명은 매일 아침 6시에 일어난다.",
+   "choices": [
+    "One of my friend gets up at six every morning.",
+    "One of my friends get up at six every morning.",
+    "One of my friends gets up at six every morning.",
+    "One of friends gets up at six every morning.",
+    "One of my friends getting up at six every morning."
+   ],
+   "answer": 3,
+   "why": "one of+복수명사에 동사는 One에 맞춘 단수 gets가 맞다. ①은 단수명사, ②는 수일치, ④는 한정어 누락, ⑤는 동사가 없어 틀렸다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Each of the three plans ____ its own strengths and weaknesses.",
+   "choices": [
+    "have",
+    "are having",
+    "having",
+    "has",
+    "have had"
+   ],
+   "answer": 4,
+   "why": "each of+복수명사는 단수 취급이므로 has. 뒤의 its도 단수로 받은 것이 단서이다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A series of storms ____ the southern coast last month.",
+   "choices": [
+    "hits",
+    "have hit",
+    "were hitting",
+    "hitting",
+    "hit"
+   ],
+   "answer": 5,
+   "why": "「a series of+복수명사」는 단수 취급이고 last month이므로 과거형 hit이 맞다. hits는 현재시제라 시점과 맞지 않는다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Reading books and playing the guitar ____ my favorite hobbies.",
+   "choices": [
+    "is",
+    "was",
+    "has been",
+    "are",
+    "being"
+   ],
+   "answer": 4,
+   "why": "and로 연결된 두 개의 동명사구가 주어이므로 복수 취급하여 are를 쓴다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Watching movies with my family ____ one of my favorite weekend activities.",
+   "choices": [
+    "is",
+    "are",
+    "were",
+    "have been",
+    "being"
+   ],
+   "answer": 1,
+   "why": "동명사구 주어는 단수 취급하므로 is. with my family는 삽입된 수식어일 뿐이다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?\nThe number of people who (A)____ alone (B)____ increasing rapidly.",
+   "choices": [
+    "live – is",
+    "lives – is",
+    "live – are",
+    "lives – are",
+    "living – is"
+   ],
+   "answer": 1,
+   "why": "(A) who의 선행사는 people(복수)이므로 live, (B) 문장의 주어는 The number이므로 단수 is이다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Ten thousand won ____ not enough to buy that book.",
+   "choices": [
+    "are",
+    "is",
+    "were",
+    "have been",
+    "being"
+   ],
+   "answer": 2,
+   "why": "금액·거리·시간은 하나의 단위로 보아 단수 취급하므로 is를 쓴다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 시간을 나타내는 주어의 수일치가 어법상 옳은 것은?",
+   "choices": [
+    "Three hours are enough to finish the work.",
+    "Three hours is enough to finish the work.",
+    "Three hour is enough to finish the work.",
+    "Three hours are enough to finishing the work.",
+    "Three hours being enough to finish the work."
+   ],
+   "answer": 2,
+   "why": "시간을 하나의 단위로 볼 때는 단수 취급하므로 Three hours is가 맞다. ③은 복수형 오류, ④는 수일치와 to부정사, ⑤는 동사가 없다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The committee, which meets every Monday, ____ decided to change the rule.",
+   "choices": [
+    "have",
+    "are",
+    "were",
+    "having",
+    "has"
+   ],
+   "answer": 5,
+   "why": "committee를 하나의 집단으로 볼 때는 단수 취급하며, 삽입된 관계사절의 meets가 단수인 것이 단서이다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nOne of my ①<u>classmates</u>, ②<u>whose</u> parents ③<u>are</u> from Canada, ④<u>speak</u> ⑤<u>both</u> English and French.",
+   "choices": [
+    "classmates",
+    "whose",
+    "are",
+    "speak",
+    "both"
+   ],
+   "answer": 4,
+   "why": "문장의 주어는 One이므로 speak를 speaks로 고쳐야 한다. ③의 are는 whose절의 주어 parents에 맞춘 것이라 옳다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 「one of the+최상급+복수명사」로 나타낼 때 빈칸에 알맞은 한 단어를 쓰시오.\nThis bridge is very long. No other bridge in the country is longer.\n→ This bridge is one of the ____ bridges in the country.",
+   "answer": "longest",
+   "alt": [],
+   "why": "'가장 ~한 것 중 하나'는 one of the+최상급+복수명사로 쓰며, long의 최상급은 longest이다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 쓰시오.\nHe is one of the few students who (know) ____ how to code.",
+   "answer": "know",
+   "alt": [],
+   "why": "who의 선행사는 the few students(복수)이므로 know를 쓴다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 쓰시오.\nHe is the only one of the students who (know) ____ how to fix the projector.",
+   "answer": "knows",
+   "alt": [],
+   "why": "the only one이 붙으면 관계사의 선행사가 one이 되므로 단수동사 knows를 쓴다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nThe list of ingredients <u>are</u> printed on the back of the box.",
+   "answer": "is",
+   "alt": [],
+   "why": "주어의 핵은 The list(단수)이고 of ingredients는 수식어이므로 is로 고친다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nMy father, as well as my uncles, <u>enjoy</u> fishing.",
+   "answer": "enjoys",
+   "alt": [],
+   "why": "as well as ~는 삽입구이므로 동사는 주어 My father에 맞춰 enjoys로 고친다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 쓰시오.\nTwo thirds of the earth's surface (be) ____ covered with water.",
+   "answer": "is",
+   "alt": [],
+   "why": "「분수+of+명사」는 of 뒤 명사에 수를 맞춘다. surface가 단수이므로 is covered이다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 쓰시오.\nTwo thirds of the students in my class (wear) ____ glasses.",
+   "answer": "wear",
+   "alt": [],
+   "why": "「분수+of+복수명사」는 복수 취급이므로 wear를 쓴다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nA number of tourists <u>visits</u> this temple every spring.",
+   "answer": "visit",
+   "alt": [],
+   "why": "「a number of+복수명사」는 '많은 ~'로 복수 취급하므로 visit으로 고친다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nThe number of tourists <u>have</u> doubled since 2020.",
+   "answer": "has",
+   "alt": [],
+   "why": "「the number of+복수명사」는 '~의 수'로 단수 취급하므로 has doubled로 고친다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 괄호 안의 말을 모두 바르게 배열하시오.\n제주도는 한국에서 가장 인기 있는 관광지 중 하나이다.\n(of / one / the / most / popular / tourist spots)\n→ Jeju Island is ____ in Korea.",
+   "answer": "one of the most popular tourist spots",
+   "alt": [],
+   "why": "'~중 하나'는 「one of the+최상급+복수명사」 순서로 배열한다. the는 최상급 앞에 온다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재완료형의 알맞은 형태로 바꿔 쓰시오. (두 단어)\nIt is one of the oldest temples that (survive) ____ until today.",
+   "answer": "have survived",
+   "alt": [],
+   "why": "that의 선행사는 the oldest temples(복수)이므로 have survived로 쓴다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 쓰시오.\nEither the manager or his assistants (be) ____ going to call you back.",
+   "answer": "are",
+   "alt": [],
+   "why": "either A or B는 동사에 가까운 B(his assistants)에 수를 맞추므로 are이다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 쓰시오.\nEither the assistants or the manager (be) ____ going to call you back.",
+   "answer": "is",
+   "alt": [],
+   "why": "either A or B는 B에 수를 맞춘다. B가 the manager(단수)이므로 is이다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nMathematics <u>are</u> the subject I struggle with the most.",
+   "answer": "is",
+   "alt": [],
+   "why": "-ics로 끝나는 학문명은 형태가 복수처럼 보여도 단수 취급하므로 is로 고친다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 쓰시오.\nEach of the four rooms (have) ____ its own bathroom.",
+   "answer": "has",
+   "alt": [],
+   "why": "each of+복수명사는 단수 취급이므로 has. 뒤의 its가 단서이다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nSeoul is one of the busiest <u>city</u> in the world.",
+   "answer": "cities",
+   "alt": [],
+   "why": "one of the+최상급 뒤에는 복수명사가 와야 하므로 cities로 고친다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 쓰시오.\nThe boy sitting between the two girls (be) ____ my cousin.",
+   "answer": "is",
+   "alt": [],
+   "why": "주어의 핵은 The boy(단수)이고 sitting 이하는 수식하는 분사구이므로 is를 쓴다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nSome of the milk in the fridge <u>have</u> turned sour.",
+   "answer": "has",
+   "alt": [],
+   "why": "「some of+셀 수 없는 명사」는 단수 취급이므로 has turned로 고친다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 한 단어를 쓰시오. (현재시제)\n그는 그 규칙을 이해하는 몇 안 되는 사람들 중 한 명이다.\n→ He is one of the few people who ____ the rule.",
+   "answer": "understand",
+   "alt": [],
+   "why": "who의 선행사는 the few people(복수)이므로 understand를 쓴다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 「the only one of ~」를 사용한 문장으로 바꿔 쓸 때 빈칸에 알맞은 한 단어를 쓰시오.\nAmong my friends, only Mina has been to Europe.\n→ Mina is the only one of my friends who ____ been to Europe.",
+   "answer": "has",
+   "alt": [],
+   "why": "the only one이 선행사이므로 관계사절의 동사는 단수 has가 된다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nThe blue whale is one of the (A)[largest / most largest] creatures that (B)[has / have] ever lived on the earth, and its heart alone (C)[weigh / weighs] about 180 kilograms.",
+   "choices": [
+    "largest – has – weigh",
+    "most largest – have – weighs",
+    "largest – has – weighs",
+    "most largest – has – weigh",
+    "largest – have – weighs"
+   ],
+   "answer": 5,
+   "why": "(A) large의 최상급은 largest, (B) that의 선행사가 creatures(복수)이므로 have, (C) 주어가 its heart(단수)이므로 weighs이다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nAntarctica is one of the few (A)[region / regions] where the number of visitors (B)[has / have] risen sharply, and most of the damage (C)[is / are] caused by the tourists themselves.",
+   "choices": [
+    "regions – has – is",
+    "region – has – is",
+    "regions – have – are",
+    "regions – has – are",
+    "region – have – is"
+   ],
+   "answer": 1,
+   "why": "(A) one of 뒤에는 복수명사, (B) the number of ~는 단수 취급, (C) damage는 셀 수 없는 명사이므로 is이다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nVenice is one of the (A)[city / cities] that (B)[attract / attracts] millions of tourists every year, but the number of residents (C)[have / has] been falling for decades.",
+   "choices": [
+    "city – attract – has",
+    "cities – attracts – has",
+    "cities – attract – have",
+    "city – attracts – have",
+    "cities – attract – has"
+   ],
+   "answer": 5,
+   "why": "(A) one of 뒤에는 복수명사 cities, (B) that의 선행사가 cities이므로 attract, (C) the number of ~는 단수이므로 has이다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nThe Amazon, together with several other rainforests, (A)[play / plays] a key role in the climate system, and about half of its trees (B)[is / are] now at risk because one of the biggest threats (C)[remain / remains] illegal logging.",
+   "choices": [
+    "play – are – remains",
+    "plays – is – remains",
+    "plays – are – remain",
+    "plays – are – remains",
+    "play – is – remain"
+   ],
+   "answer": 4,
+   "why": "(A) together with ~는 삽입구이므로 주어 The Amazon에 맞춰 plays, (B) half of its trees는 복수이므로 are, (C) 주어의 핵이 one이므로 remains이다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nAmong the ten students who (A)[was / were] chosen for the exchange program, one of the girls (B)[speak / speaks] three languages, and she is the only one of them who (C)[have / has] lived abroad.",
+   "choices": [
+    "was – speaks – has",
+    "were – speaks – has",
+    "were – speak – has",
+    "were – speaks – have",
+    "was – speak – have"
+   ],
+   "answer": 2,
+   "why": "(A) 선행사가 the ten students이므로 were, (B) 주어의 핵이 one이므로 speaks, (C) the only one이 선행사이므로 has이다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nThe smartphone is one of the few inventions ①<u>that</u> ②<u>have</u> changed daily life completely. The number of people who ③<u>depend</u> on it ④<u>are</u> still growing, and each of us ⑤<u>spends</u> hours staring at a screen.",
+   "choices": [
+    "that",
+    "have",
+    "depend",
+    "are",
+    "spends"
+   ],
+   "answer": 4,
+   "why": "문장의 주어는 The number이므로 are를 is로 고쳐야 한다. ③의 depend는 who의 선행사 people에 맞춘 것이라 옳다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nOne of the most common mistakes ①<u>made</u> by beginners ②<u>is</u> to translate word for word. Students who ③<u>practices</u> speaking every day ④<u>improve</u> much faster than ⑤<u>those</u> who only read.",
+   "choices": [
+    "made",
+    "is",
+    "practices",
+    "improve",
+    "those"
+   ],
+   "answer": 3,
+   "why": "who의 선행사가 Students(복수)이므로 practices를 practice로 고쳐야 한다. ②의 is는 주어의 핵 One에 맞춘 것이라 옳다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (a)~(e) 중 어법상 옳은 문장의 개수는?\n(a) One of the boxes were left open all night.\n(b) The only one of the paintings that was stolen has been found.\n(c) A series of experiments were carried out last year.\n(d) Not only the students but also the teacher was surprised at the news.\n(e) Each of the twins have a different personality.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "옳은 것은 (b)와 (d)뿐이다. (a)는 was, (c)는 a series of ~이므로 was, (e)는 each of ~이므로 has로 고쳐야 한다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?\nㄱ. One of the reasons he failed was his overconfidence.\nㄴ. He is one of those writers who is admired all over the world.\nㄷ. Each of the applicants was asked to write a short essay.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄴ은 who의 선행사가 those writers(복수)이므로 are admired로 고쳐야 한다. ㄱ은 주어의 핵 One에 맞춘 was, ㄷ은 each of ~에 맞춘 was로 모두 옳다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?\nㄱ. The number of accidents caused by drunk driving have decreased.\nㄴ. A number of volunteers were cleaning the beach.\nㄷ. Physics is one of the subjects that require constant practice.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄱ은 the number of ~가 단수이므로 has decreased로 고쳐야 한다. ㄴ은 a number of ~가 복수, ㄷ은 that의 선행사가 subjects이므로 require가 옳다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 옮길 때 가장 알맞은 것은?\n그는 그 문제를 해결한 몇 안 되는 과학자들 중 한 명이다.",
+   "choices": [
+    "He is one of the few scientist who has solved the problem.",
+    "He is one of the few scientists who has solved the problem.",
+    "He is one of the few scientists who have solved the problem.",
+    "He is the one of the few scientists who have solved the problem.",
+    "He is one of few scientists who have solved the problem."
+   ],
+   "answer": 3,
+   "why": "one of 뒤에는 「the+복수명사」가 오고, who의 선행사가 the few scientists이므로 have를 쓴다. ④의 the one of와 ⑤의 the 누락도 틀린 형태이다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 삽입구·부분 표현의 수일치가 어법상 옳은 것은?",
+   "choices": [
+    "The quality of the products have improved a lot.",
+    "A pack of hungry wolves were seen near the village.",
+    "The rest of the seats was empty.",
+    "Neither of the two solutions seems perfect.",
+    "Every one of the rooms have a balcony."
+   ],
+   "answer": 4,
+   "why": "neither of+복수명사는 단수 취급이므로 seems가 옳다. ①은 has, ②는 was, ③은 were, ⑤는 has로 고쳐야 한다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nJane Goodall is one of the scientists who ①<u>have</u> spent decades in the field. Her studies of wild chimpanzees ②<u>has</u> changed how we define humanity. Each of her books ③<u>describes</u> animals as individuals with feelings, and a number of researchers ④<u>follow</u> her methods today. She is the only one of her generation who ⑤<u>was</u> honored in this way.",
+   "choices": [
+    "have",
+    "has",
+    "describes",
+    "follow",
+    "was"
+   ],
+   "answer": 2,
+   "why": "주어의 핵은 Her studies(복수)이고 of wild chimpanzees는 수식어이므로 has를 have로 고쳐야 한다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (a)~(e) 중 어법상 <u>틀린</u> 문장의 개수는?\n(a) Two thirds of the budget was spent on advertising.\n(b) One of the questions that appears on every test is about grammar.\n(c) The number of endangered species are increasing.\n(d) Both of the machines need repair.\n(e) Each of the countries has its own flag.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "틀린 것은 (b)와 (c)이다. (b)는 that의 선행사가 questions이므로 appear, (c)는 the number of ~이므로 is로 고쳐야 한다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nOne of the ①<u>most</u> surprising ②<u>facts</u> about honeybees ③<u>are</u> that they communicate by dancing. A single hive, ④<u>including</u> the queen, ⑤<u>contains</u> tens of thousands of bees.",
+   "choices": [
+    "most",
+    "facts",
+    "are",
+    "including",
+    "contains"
+   ],
+   "answer": 3,
+   "why": "주어의 핵은 One이므로 are를 is로 고쳐야 한다. about honeybees는 수식어일 뿐이다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nOne of the traditions that (A)[remain / remains] strong in this village (B)[is / are] the spring festival, and almost half of the residents (C)[takes / take] part in it.",
+   "choices": [
+    "remains – is – take",
+    "remain – are – take",
+    "remain – is – takes",
+    "remain – is – take",
+    "remains – are – takes"
+   ],
+   "answer": 4,
+   "why": "(A) that의 선행사는 the traditions이므로 remain, (B) 문장의 주어는 One이므로 is, (C) half of the residents는 복수이므로 take이다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nSleep, along with diet and exercise, (A)[is / are] one of the three (B)[factor / factors] that (C)[determine / determines] long-term health.",
+   "choices": [
+    "are – factors – determine",
+    "is – factors – determine",
+    "is – factor – determines",
+    "is – factors – determines",
+    "are – factor – determine"
+   ],
+   "answer": 2,
+   "why": "(A) along with ~는 삽입구이므로 주어 Sleep에 맞춰 is, (B) one of the three 뒤에는 복수명사, (C) that의 선행사가 factors이므로 determine이다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?\nㄱ. Ten kilometers is too far to walk in this heat.\nㄴ. The rest of the money were donated to charity.\nㄷ. She is one of the few people that understands my situation.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 1,
+   "why": "ㄱ은 거리를 하나의 단위로 보아 단수 취급하므로 옳다. ㄴ은 money가 단수이므로 was, ㄷ은 that의 선행사가 the few people이므로 understand로 고쳐야 한다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (a)~(e) 중 어법상 옳은 문장의 개수는?\n(a) One of the most difficult things about learning a language is pronunciation.\n(b) Not only the coach but also the players was upset.\n(c) A series of lectures on climate change is being held.\n(d) Most of the furniture in the office was replaced last month.\n(e) Each of the three answers are partly correct.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "옳은 것은 (a), (c), (d) 셋이다. (b)는 but also 뒤의 the players에 맞춰 were, (e)는 each of ~이므로 is로 고쳐야 한다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nThe Great Barrier Reef, ①<u>which</u> stretches for 2,300 kilometers, ②<u>is</u> one of the natural wonders that ③<u>attract</u> divers from all over the world. Sadly, more than half of its coral ④<u>have</u> died since 1995, and the number of visitors ⑤<u>has</u> begun to fall.",
+   "choices": [
+    "which",
+    "is",
+    "attract",
+    "have",
+    "has"
+   ],
+   "answer": 4,
+   "why": "half of its coral의 coral은 셀 수 없는 명사이므로 have를 has로 고쳐야 한다. ③은 선행사 the natural wonders에 맞춘 복수동사라 옳다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 것은? (a number of의 수일치)",
+   "choices": [
+    "One of the reasons for the delay was a mechanical problem.",
+    "The only one of the singers who was invited is Mina.",
+    "Every one of the students in these two classes speaks English well.",
+    "A number of the seats in the front row was empty.",
+    "Half of the students who signed up have already paid."
+   ],
+   "answer": 4,
+   "why": "「a number of+복수명사」는 복수 취급이므로 was를 were로 고쳐야 한다. ②는 the only one이 선행사라 was가 옳다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nThe library, which (A)[hold / holds] over a million books, (B)[is / are] one of the largest in the country, and each of its five floors (C)[has / have] its own reading room.",
+   "choices": [
+    "hold – is – has",
+    "holds – are – has",
+    "holds – is – have",
+    "hold – are – have",
+    "holds – is – has"
+   ],
+   "answer": 5,
+   "why": "(A) which의 선행사는 The library이므로 holds, (B) 문장의 주어도 The library이므로 is, (C) each of ~는 단수 취급이므로 has이다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 옮길 때 가장 알맞은 것은?\n그 사고의 원인들 중 하나는 짙은 안개였다.",
+   "choices": [
+    "One of the causes of the accident were the thick fog.",
+    "One of the cause of the accident was the thick fog.",
+    "One of the causes of the accident was the thick fog.",
+    "One of the causes of the accident have been the thick fog.",
+    "The one of the causes of the accident was the thick fog."
+   ],
+   "answer": 3,
+   "why": "one of 뒤에는 복수명사 causes가 오고 동사는 One에 맞춰 단수 was를 쓴다. ④는 시제와 수, ⑤는 the one of가 잘못이다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nEvery one of the volunteers ①<u>was</u> given a map. Those who ②<u>arrives</u> early ③<u>were</u> asked to set up the tents, while the rest of the group ④<u>waited</u> at the entrance. One of the tasks that ⑤<u>remain</u> is cleaning the parking lot.",
+   "choices": [
+    "was",
+    "arrives",
+    "were",
+    "waited",
+    "remain"
+   ],
+   "answer": 2,
+   "why": "Those who ~에서 who의 선행사는 Those(복수)이므로 arrives를 arrive로 고쳐야 한다. ⑤는 선행사 the tasks에 맞춘 복수동사라 옳다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (a)~(e) 중 어법상 옳은 문장의 개수는?\n(a) There are a number of reasons to be hopeful.\n(b) The number of applications have tripled this year.\n(c) One of the buildings destroyed by the fire was the old library.\n(d) Neither of the reports mention the accident.\n(e) Two thirds of the class was absent because of the flu.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "옳은 것은 (a), (c), (e) 셋이다. (b)는 the number of ~이므로 has tripled, (d)는 neither of ~이므로 mentions로 고쳐야 한다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?\nㄱ. This is one of the best restaurants that serves vegan food.\nㄴ. Mount Halla is one of the most beautiful places I have ever visited.\nㄷ. The teacher as well as her students were praised for the project.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 that의 선행사가 the best restaurants이므로 serve, ㄷ은 as well as ~가 삽입구이므로 was로 고쳐야 한다. ㄴ만 옳다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nOne of the ①<u>oldest</u> ②<u>form</u> of storytelling ③<u>is</u> the folk tale. Stories passed down by word of mouth ④<u>change</u> a little each time, and most of the original wording ⑤<u>disappears</u>.",
+   "choices": [
+    "oldest",
+    "form",
+    "is",
+    "change",
+    "disappears"
+   ],
+   "answer": 2,
+   "why": "one of the+최상급 뒤에는 복수명사가 와야 하므로 form을 forms로 고쳐야 한다. ③의 is는 주어의 핵 One에 맞춘 것이라 옳다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nCoffee is one of the (A)[commodity / commodities] whose price (B)[change / changes] daily, and the number of small farmers who depend on it (C)[is / are] enormous.",
+   "choices": [
+    "commodities – change – is",
+    "commodity – changes – is",
+    "commodities – changes – are",
+    "commodity – change – are",
+    "commodities – changes – is"
+   ],
+   "answer": 5,
+   "why": "(A) one of 뒤에는 복수명사, (B) whose price가 단수 주어이므로 changes, (C) 주어가 the number이므로 is이다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 「one of the+최상급+복수명사」가 어법상 옳은 것은?",
+   "choices": [
+    "One of the most valuable lesson I learned was patience.",
+    "One of the most valuable lessons I learned were patience.",
+    "One of the most valuable lessons I learned was patience.",
+    "The one of the most valuable lessons I learned was patience.",
+    "One of most valuable lessons I learned was patience."
+   ],
+   "answer": 3,
+   "why": "「one of the+최상급+복수명사」에 동사는 One에 맞춘 단수 was이다. ①은 단수명사, ②는 수일치, ④는 the one of, ⑤는 the 누락이 잘못이다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (a)~(e) 중 어법상 <u>틀린</u> 문장의 개수는?\n(a) Each of the players was handed a numbered shirt.\n(b) A pack of hungry wolves was heard in the distance.\n(c) One of the twins who live next door have moved out.\n(d) Both of my grandparents is still healthy.\n(e) Some of the evidence were destroyed in the fire.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "틀린 것은 (c), (d), (e) 셋이다. (c)는 주어의 핵이 One이므로 has moved, (d)는 both of ~이므로 are, (e)는 evidence가 셀 수 없는 명사이므로 was로 고쳐야 한다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nMy grandmother is one of the ①<u>few</u> people in this town who still ②<u>weaves</u> cloth by hand. The tools she uses, ③<u>including</u> a wooden loom, ④<u>are</u> over a century old, and each of them ⑤<u>tells</u> a story.",
+   "choices": [
+    "few",
+    "weaves",
+    "including",
+    "are",
+    "tells"
+   ],
+   "answer": 2,
+   "why": "who의 선행사는 the few people(복수)이므로 weaves를 weave로 고쳐야 한다. ④는 주어 The tools에 맞춘 복수동사라 옳다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nAmong the many species that (A)[live / lives] in the desert, one of the most surprising (B)[is / are] the kangaroo rat, whose kidneys (C)[allow / allows] it to survive without drinking water.",
+   "choices": [
+    "lives – is – allow",
+    "live – are – allow",
+    "live – is – allows",
+    "lives – are – allows",
+    "live – is – allow"
+   ],
+   "answer": 5,
+   "why": "(A) that의 선행사는 the many species이므로 live, (B) 문장의 주어는 one이므로 is, (C) whose kidneys는 복수이므로 allow이다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?\nㄱ. The list of the winners was posted on the board.\nㄴ. One of the students were late for the quiz.\nㄷ. Twenty dollars are a fair price for this book.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ"
+   ],
+   "answer": 1,
+   "why": "ㄴ은 주어의 핵이 One이므로 was, ㄷ은 금액을 하나의 단위로 보아 is로 고쳐야 한다. ㄱ은 주어의 핵 The list에 맞춘 was라 옳다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 옮길 때 가장 알맞은 것은?\n민수는 우리 반에서 그 시험을 통과한 유일한 학생이다.",
+   "choices": [
+    "Minsu is the only one of the students in our class who pass the exam.",
+    "Minsu is the only one of the students in our class who have passed the exam.",
+    "Minsu is the only one of the students in our class who has passed the exam.",
+    "Minsu is one of the only student in our class who has passed the exam.",
+    "Minsu is the only one of the student in our class who has passed the exam."
+   ],
+   "answer": 3,
+   "why": "the only one이 선행사이므로 관계사절의 동사는 단수 has passed이다. ⑤는 of 뒤가 단수명사라 틀렸다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nAmong the inventions of the last century, the refrigerator ①<u>is</u> one of the few that ②<u>have</u> changed the way we eat. The amount of food we waste ③<u>has</u> grown, though. Nearly a third of all food produced ④<u>are</u> thrown away, and each of us ⑤<u>contributes</u> to the problem.",
+   "choices": [
+    "is",
+    "have",
+    "has",
+    "are",
+    "contributes"
+   ],
+   "answer": 4,
+   "why": "a third of all food의 food는 셀 수 없는 명사이므로 are를 is로 고쳐야 한다. ③의 The amount of ~도 단수 취급이라 has가 옳다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 것은? (each of와 half of)",
+   "choices": [
+    "One of the questions was so hard that nobody could answer it.",
+    "The number of the books on the shelf is exactly one hundred.",
+    "A number of the books on the shelf are missing.",
+    "Each of the books have a barcode on the back.",
+    "Half of the books were donated by parents."
+   ],
+   "answer": 4,
+   "why": "each of+복수명사는 단수 취급이므로 have를 has로 고쳐야 한다. ②와 ③은 the number of와 a number of의 차이를 보여 주는 올바른 문장이다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nThe Nile, which (A)[flow / flows] through eleven countries, is one of the (B)[longest / most longest] rivers on the earth, and most of its water (C)[come / comes] from rainfall in the highlands.",
+   "choices": [
+    "flow – longest – comes",
+    "flows – most longest – comes",
+    "flows – longest – come",
+    "flows – longest – comes",
+    "flow – most longest – come"
+   ],
+   "answer": 4,
+   "why": "(A) which의 선행사는 The Nile이므로 flows, (B) long의 최상급은 longest, (C) water는 셀 수 없는 명사이므로 comes이다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (a)~(e) 중 어법상 옳은 문장의 개수는?\n(a) One of the biggest problems facing the city is traffic.\n(b) Not one of the answers were correct.\n(c) The rest of the work has to be finished by Friday.\n(d) There is a number of ways to look at this issue.\n(e) Every one of these paintings was donated by a local artist.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "옳은 것은 (a), (c), (e) 셋이다. (b)는 Not one이 주어이므로 was, (d)는 a number of ways가 복수이므로 There are로 고쳐야 한다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nOne of the reasons ①<u>why</u> the plan failed ②<u>was</u> poor communication. The manager, along with two assistants, ③<u>were</u> unaware of the deadline, and not one of the reports ④<u>arrived</u> on time. Each department ⑤<u>blamed</u> the others.",
+   "choices": [
+    "why",
+    "was",
+    "were",
+    "arrived",
+    "blamed"
+   ],
+   "answer": 3,
+   "why": "along with ~는 삽입구이므로 주어 The manager에 맞춰 was로 고쳐야 한다. ②는 주어의 핵 One에 맞춘 것이라 옳다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?\nㄱ. Each of the rooms on this floor has its own air conditioner.\nㄴ. One of the most exciting moments of the trip were the sunrise.\nㄷ. A number of students have volunteered to help.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄴ은 주어의 핵이 One이므로 was로 고쳐야 한다. ㄱ은 each of ~에 맞춘 단수, ㄷ은 a number of ~에 맞춘 복수라 옳다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 「one of the+복수명사+that ~」이 어법상 옳은 것은?",
+   "choices": [
+    "Chocolate is one of the food that make people happy.",
+    "Chocolate is one of the foods that makes people happy.",
+    "Chocolate is one of the foods that make people happy.",
+    "Chocolate is one of foods that make people happy.",
+    "Chocolate is the one of the foods that make people happy."
+   ],
+   "answer": 3,
+   "why": "one of 뒤에는 「the+복수명사」가 오고 that의 선행사는 the foods이므로 make를 쓴다. ②는 수일치, ④는 the 누락, ⑤는 the one of가 잘못이다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nOne of the (A)[thing / things] that (B)[worry / worries] climate scientists most (C)[is / are] the speed of the change.",
+   "choices": [
+    "things – worry – is",
+    "things – worries – is",
+    "thing – worries – is",
+    "things – worry – are",
+    "thing – worry – are"
+   ],
+   "answer": 1,
+   "why": "(A) one of 뒤에는 복수명사, (B) that의 선행사는 the things이므로 worry, (C) 문장의 주어는 One이므로 is이다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nGyeongju, ①<u>together with</u> Buyeo, ②<u>is</u> one of the ③<u>ancientest</u> capitals in Korea. Most of the treasures found there ④<u>are</u> now in museums, and each year the number of visitors ⑤<u>grows</u>.",
+   "choices": [
+    "together with",
+    "is",
+    "ancientest",
+    "are",
+    "grows"
+   ],
+   "answer": 3,
+   "why": "ancient는 -est를 붙이지 않고 most ancient로 최상급을 만든다. ②는 삽입구를 제외한 주어 Gyeongju에 맞춘 단수동사라 옳다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (a)~(e) 중 어법상 <u>틀린</u> 문장의 개수는?\n(a) The teacher, as well as her two assistants, is in charge of the trip.\n(b) One of the best ways to relax are listening to music.\n(c) Neither of the twins wants to share a room.\n(d) Three fourths of the earth's surface are water.\n(e) Every one of the questions on the exam were multiple choice.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "틀린 것은 (b), (d), (e) 셋이다. (b)는 주어의 핵 One에 맞춰 is, (d)는 surface가 단수이므로 is, (e)는 every one of ~이므로 was로 고쳐야 한다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 것은? (one of ~ who의 수일치)",
+   "choices": [
+    "Alice is one of those students who never give up.",
+    "Alice is the only one of those students who never gives up.",
+    "Alice is one of the students who never gives up.",
+    "Alice, one of my closest friends, never gives up.",
+    "Each of those students never gives up."
+   ],
+   "answer": 3,
+   "why": "③은 who의 선행사가 the students(복수)이므로 give up으로 고쳐야 한다. ②는 the only one이 선행사라 단수동사가 옳다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 옮길 때 가장 알맞은 것은?\n그 마을을 방문하는 관광객의 수는 해마다 줄고 있다.",
+   "choices": [
+    "A number of tourists visiting the village is falling every year.",
+    "The number of tourists visiting the village are falling every year.",
+    "The number of tourists visiting the village is falling every year.",
+    "The number of tourist visiting the village is falling every year.",
+    "A number of tourist visiting the village are falling every year."
+   ],
+   "answer": 3,
+   "why": "'~의 수'는 the number of+복수명사이며 단수 취급하므로 is falling이 맞다. ①⑤의 a number of는 '많은 ~'이라는 다른 뜻이다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 모두 이용하여 우리말에 맞게 빈칸을 완성하시오. (필요하면 형태를 바꾸고 the를 넣을 것)\n준호는 그 팀에서 가장 빠른 선수들 중 한 명이다. (one, of, fast, player)\n→ Junho is ____ on the team.",
+   "answer": "one of the fastest players",
+   "alt": [],
+   "why": "'가장 ~한 것들 중 하나'는 「one of the+최상급+복수명사」이므로 one of the fastest players로 쓴다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nOne of the greatest challenges that <u>faces</u> our generation is climate change.",
+   "answer": "face",
+   "alt": [],
+   "why": "that의 선행사는 the greatest challenges(복수)이므로 face로 고친다. 문장의 동사 is는 주어의 핵 One에 맞춘 것이라 옳다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nShe is the only one of the researchers who <u>have</u> published a paper this year.",
+   "answer": "has",
+   "alt": [],
+   "why": "the only one이 붙으면 관계사의 선행사가 one이 되므로 단수동사 has로 고친다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 쓰시오.\nNot only the branches but also the trunk (need) ____ to be cut.",
+   "answer": "needs",
+   "alt": [],
+   "why": "not only A but also B는 B(the trunk)에 동사를 맞추므로 단수 needs이다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 쓰시오.\nNot only the trunk but also the branches (need) ____ to be cut.",
+   "answer": "need",
+   "alt": [],
+   "why": "not only A but also B는 B(the branches)에 맞추므로 복수 need이다. 앞 문제와 A, B의 순서를 비교해 보자.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 괄호 안의 말을 모두 바르게 배열하시오.\n그는 그 비밀을 아는 유일한 사람이다.\n(the / who / only / one / knows)\n→ He is ____ the secret.",
+   "answer": "the only one who knows",
+   "alt": [],
+   "why": "the only one이 선행사이므로 관계사절의 동사는 단수 knows가 된다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nA number of the passengers <u>was</u> injured in the crash.",
+   "answer": "were",
+   "alt": [],
+   "why": "「a number of+복수명사」는 '많은 ~'로 복수 취급하므로 were로 고친다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nThe amount of plastic waste in the ocean <u>have</u> doubled in ten years.",
+   "answer": "has",
+   "alt": [],
+   "why": "주어의 핵은 The amount(단수)이고 of plastic waste in the ocean은 수식어이므로 has로 고친다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 쓰시오.\nOne of the few museums that (stay) ____ open on Mondays is the city gallery.",
+   "answer": "stay",
+   "alt": [],
+   "why": "that의 선행사는 the few museums(복수)이므로 stay. 문장의 동사 is는 주어의 핵 One에 맞춘 것이다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nTwo thirds of the electricity used in this building <u>come</u> from solar panels.",
+   "answer": "comes",
+   "alt": [],
+   "why": "「분수+of+명사」는 of 뒤 명사에 맞춘다. electricity는 셀 수 없는 명사이므로 comes로 고친다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nTwo thirds of the households in this village <u>uses</u> solar panels.",
+   "answer": "use",
+   "alt": [],
+   "why": "「분수+of+복수명사」는 복수 취급이므로 use로 고친다. 앞 문제의 electricity와 비교해 두자.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장의 뜻이 통하도록 빈칸에 알맞은 말을 세 단어로 쓰시오.\nAmong the ten finalists, only Sora came from a small town.\n→ Sora is ____ of the ten finalists who came from a small town.",
+   "answer": "the only one",
+   "alt": [],
+   "why": "'~중 유일한 한 사람'은 the only one of ~로 쓰며, 이때 관계사절의 동사는 단수형으로 받는다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재완료형의 알맞은 형태로 바꿔 쓰시오. (두 단어)\nHe is one of the athletes who (break) ____ the world record twice.",
+   "answer": "have broken",
+   "alt": [],
+   "why": "who의 선행사는 the athletes(복수)이므로 have broken으로 쓴다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nEach of the countries in the region <u>have</u> its own currency.",
+   "answer": "has",
+   "alt": [],
+   "why": "each of+복수명사는 단수 취급이므로 has로 고친다. 뒤의 its가 단서이다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 이용하여 우리말에 맞게 빈칸을 완성하시오. (the를 포함해 세 단어)\n이것은 그 도시에서 가장 오래된 건물들 중 하나이다. (old, building)\n→ This is one of ____ in the city.",
+   "answer": "the oldest buildings",
+   "alt": [],
+   "why": "one of 뒤에는 「the+최상급+복수명사」가 오므로 the oldest buildings로 쓴다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nOne of the boys standing near the gate <u>are</u> my brother.",
+   "answer": "is",
+   "alt": [],
+   "why": "주어의 핵은 One이고 standing near the gate는 boys를 꾸미는 분사구이므로 is로 고친다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 과거시제의 알맞은 형태로 바꿔 쓰시오.\nA series of earthquakes (strike) ____ the region last summer.",
+   "answer": "struck",
+   "alt": [],
+   "why": "「a series of+복수명사」는 단수 취급이며 last summer이므로 과거형 struck을 쓴다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nSeoul, along with Tokyo and Shanghai, <u>are</u> one of the largest cities in Asia.",
+   "answer": "is",
+   "alt": [],
+   "why": "along with ~는 삽입구이므로 동사는 주어 Seoul에 맞춰 is로 고친다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 두 단어로 쓰시오.\n이 도로를 이용하는 차량의 수는 지난해 이후 증가해 왔다.\n→ ____ of cars using this road has increased since last year.",
+   "answer": "The number",
+   "alt": [],
+   "why": "'~의 수'는 the number of ~이며 단수 취급하므로 뒤에 has increased가 왔다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nOne of the most important discoveries in medical history <u>were</u> penicillin.",
+   "answer": "was",
+   "alt": [],
+   "why": "주어의 핵은 One이므로 단수동사 was로 고친다. 보어가 무엇이든 동사는 주어에 맞춘다.",
+   "no": 200
+  }
+ ]
+}

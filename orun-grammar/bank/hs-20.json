@@ -1,0 +1,2686 @@
+{
+ "id": "hs-20",
+ "grade": "고등",
+ "name": "도치구문",
+ "points": [
+  "부정어(never/little/hardly) 도치",
+  "only+부사구 도치",
+  "so/neither 도치"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Never ____ such a beautiful rainbow.",
+   "choices": [
+    "I have seen",
+    "have I seen",
+    "did I saw",
+    "have seen I",
+    "seen I have"
+   ],
+   "answer": 2,
+   "why": "부정어 Never가 문두에 오면 '조동사+주어+동사원형/과거분사' 어순이 된다. ①은 도치가 안 됐고, ③은 did 뒤에 원형(see)이 와야 하며, ④⑤는 어순 자체가 틀렸다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Little ____ that his life was about to change.",
+   "choices": [
+    "he knew",
+    "knew he",
+    "did he know",
+    "did he knew",
+    "he did knew"
+   ],
+   "answer": 3,
+   "why": "Little은 부정의 뜻이므로 문두에서 도치가 일어나고, 일반동사 과거는 did를 빌려 'did+주어+동사원형'이 된다. ④는 did 뒤에 과거형을 썼고 ②는 조동사 없이 동사만 앞으로 보낸 잘못된 어순이다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Hardly ____ the door when the alarm went off.",
+   "choices": [
+    "he had opened",
+    "had he opened",
+    "did he opened",
+    "had opened he",
+    "he opened had"
+   ],
+   "answer": 2,
+   "why": "Hardly가 문두에 오면 'had+주어+p.p.' 도치가 되고 뒤에 when절이 이어진다. ③은 Hardly ~ when 구문에서 과거완료를 써야 하고 did 뒤 어형도 틀렸다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Seldom ____ to bed before midnight.",
+   "choices": [
+    "Mike goes",
+    "goes Mike",
+    "does Mike go",
+    "does Mike goes",
+    "do Mike go"
+   ],
+   "answer": 3,
+   "why": "Seldom(거의 ~않다)이 문두에 오면 'does+주어+동사원형'으로 도치한다. ④는 does 뒤에 goes를, ⑤는 3인칭 단수에 do를 써서 틀렸고 ①은 도치가 없다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Rarely ____ mistakes in her calculations.",
+   "choices": [
+    "she makes",
+    "does she make",
+    "makes she",
+    "does she makes",
+    "did she makes"
+   ],
+   "answer": 2,
+   "why": "부정 빈도부사 Rarely 뒤에는 'does+주어+동사원형'이 온다. ④⑤처럼 does/did 뒤에 makes를 쓸 수 없고 ③은 조동사 없이 동사를 앞으로 낸 잘못된 형태다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Not until yesterday ____ the truth.",
+   "choices": [
+    "I learned",
+    "did I learn",
+    "did I learned",
+    "learned I",
+    "I did learned"
+   ],
+   "answer": 2,
+   "why": "'Not until+시간'이 문두에 오면 주절이 도치되어 'did+주어+동사원형'이 된다. yesterday가 있으므로 과거의 did를 쓰고, did 뒤에는 반드시 원형 learn이 와야 한다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Only then ____ how tired he was.",
+   "choices": [
+    "he realized",
+    "realized he",
+    "did he realize",
+    "did he realized",
+    "he did realize"
+   ],
+   "answer": 3,
+   "why": "'Only+부사'가 문두에 오면 주어와 조동사가 도치된다. 일반동사 과거이므로 did를 빌려 'did he realize'가 되고, did 뒤 realized는 쓸 수 없다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Under no circumstances ____ the machine alone.",
+   "choices": [
+    "you should touch",
+    "should you touch",
+    "should you touching",
+    "you touch should",
+    "do you should touch"
+   ],
+   "answer": 2,
+   "why": "'Under no circumstances'는 부정어구이므로 문두에 오면 '조동사+주어+동사원형'으로 도치한다. 조동사 should 뒤에는 원형 touch가 오고, 조동사가 있으면 do를 또 쓰지 않는다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Not only ____ the race, but he also set a new record.",
+   "choices": [
+    "he won",
+    "did he win",
+    "did he won",
+    "won he",
+    "he did won"
+   ],
+   "answer": 2,
+   "why": "Not only가 문두에 오면 뒤 절은 도치된다. 과거 일반동사이므로 'did+주어+동사원형'인 did he win이 맞고, did 뒤에 won을 쓸 수 없다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "No sooner ____ the house than it started to rain.",
+   "choices": [
+    "we had left",
+    "had we left",
+    "did we left",
+    "had left we",
+    "we left had"
+   ],
+   "answer": 2,
+   "why": "'No sooner+had+주어+p.p. ~ than ...' 구문이다. 문두 부정어 No sooner 때문에 had we left로 도치되며, 짝은 than이다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: I love pizza.  B: So ____ my sister.",
+   "choices": [
+    "does",
+    "do",
+    "is",
+    "did",
+    "has"
+   ],
+   "answer": 1,
+   "why": "긍정문에 '~도 그렇다'로 동의할 때는 'So+동사+주어'이며, 앞 문장이 일반동사 현재이고 주어가 3인칭 단수 my sister이므로 does가 맞다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: I can't swim.  B: Neither ____ I.",
+   "choices": [
+    "do",
+    "am",
+    "can",
+    "can't",
+    "have"
+   ],
+   "answer": 3,
+   "why": "부정문에 '나도 아니다'라고 할 때는 'Neither+조동사+주어'이며, 앞 문장의 조동사 can을 그대로 쓴다. Neither 자체가 부정이므로 can't를 또 쓰지 않는다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Never ____ he late for class.",
+   "choices": [
+    "is",
+    "does",
+    "do",
+    "has",
+    "being"
+   ],
+   "answer": 1,
+   "why": "be동사 문장은 도치할 때 be동사 자체가 주어 앞으로 나가므로 'Never is he late'가 된다. be동사 문장에는 do/does를 쓰지 않는다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Little ____ she care about money in those days.",
+   "choices": [
+    "do",
+    "does",
+    "did",
+    "is",
+    "was"
+   ],
+   "answer": 3,
+   "why": "in those days가 과거를 나타내므로 과거의 did가 필요하고, 일반동사 care 앞에서 did+주어+원형 어순이 된다. is/was는 일반동사와 함께 쓸 수 없다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Rarely ____ complain about his work.",
+   "choices": [
+    "does he",
+    "he does",
+    "do he",
+    "does he does",
+    "he do"
+   ],
+   "answer": 1,
+   "why": "Rarely 도치문은 'does+주어+동사원형'이다. 주어가 3인칭 단수이므로 do가 아니라 does를 쓰고, 도치이므로 주어가 조동사 뒤에 온다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Not only ____ the dishes, but she also cleaned the floor.",
+   "choices": [
+    "she washed",
+    "did she wash",
+    "did she washed",
+    "washed she",
+    "she did washed"
+   ],
+   "answer": 2,
+   "why": "Not only가 이끄는 절은 도치되어 'did+주어+동사원형'이 된다. 뒤 절의 cleaned로 보아 과거이므로 did she wash가 맞다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Only after lunch ____ his homework.",
+   "choices": [
+    "he began",
+    "did he begin",
+    "did he began",
+    "began he",
+    "he did begin"
+   ],
+   "answer": 2,
+   "why": "'Only+부사구'가 문두에 오면 주어와 조동사를 도치한다. 일반동사 과거이므로 did he begin이 되고 did 뒤에는 원형 begin을 쓴다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Only by studying hard ____ pass the exam.",
+   "choices": [
+    "you can",
+    "can you",
+    "can you to",
+    "you could to",
+    "do you can"
+   ],
+   "answer": 2,
+   "why": "'Only by+동명사'가 문두에 오면 '조동사+주어' 도치가 일어나 can you pass가 된다. 조동사 뒤에는 to 없이 원형이 오고, can이 있으므로 do를 덧붙이지 않는다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Hardly ever ____ TV these days.",
+   "choices": [
+    "do they watch",
+    "they watch",
+    "does they watch",
+    "watch they",
+    "they do watch"
+   ],
+   "answer": 1,
+   "why": "Hardly ever는 부정 빈도부사구이므로 문두에서 도치가 일어나고, 주어가 they이므로 do they watch가 된다. ③은 수 일치가 틀렸다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: Tom was surprised at the news.  B: So ____ we all.",
+   "choices": [
+    "were",
+    "was",
+    "did",
+    "are",
+    "do"
+   ],
+   "answer": 1,
+   "why": "'So+동사+주어'에서 동사는 앞 문장의 시제·형태(was)를 따르되 새 주어 we all에 수를 맞추므로 were가 맞다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: I don't like horror movies.  B: ____ does my brother.",
+   "choices": [
+    "So",
+    "Neither",
+    "Either",
+    "Also",
+    "Too"
+   ],
+   "answer": 2,
+   "why": "부정문에 '~도 그렇지 않다'로 덧붙일 때는 Neither를 쓰고 뒤에 '조동사+주어' 도치가 온다. So는 긍정문에 쓰며 Either/Also/Too는 이 어순을 만들 수 없다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My father can play the guitar, and ____. (나도 칠 수 있다)",
+   "choices": [
+    "so can I",
+    "so I can",
+    "so do I",
+    "I can so",
+    "so am I"
+   ],
+   "answer": 1,
+   "why": "'나도 그렇다'는 'so+조동사+주어' 어순이며 앞 절의 can을 그대로 받는다. so I can은 도치가 없어 '정말 그렇다'는 확인의 뜻이 되고, so do I는 조동사를 잘못 바꾼 것이다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Never before ____ such kindness from a stranger.",
+   "choices": [
+    "I have experienced",
+    "have I experienced",
+    "did I experienced",
+    "have experienced I",
+    "I did experience"
+   ],
+   "answer": 2,
+   "why": "Never before가 문두에 오면 'have+주어+p.p.'로 도치된다. ③은 did 뒤에 과거분사를 썼고 ④⑤는 어순과 형태가 모두 틀렸다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Under no circumstances ____ you share your password.",
+   "choices": [
+    "must",
+    "must to",
+    "you must",
+    "do must",
+    "musting"
+   ],
+   "answer": 1,
+   "why": "부정어구가 문두에 오면 조동사가 주어 앞으로 나가므로 must you share가 된다. 조동사 뒤에는 to 없이 원형을 쓰고 do를 겹쳐 쓰지 않는다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Only in winter ____ this lake freeze completely.",
+   "choices": [
+    "do",
+    "does",
+    "is",
+    "has",
+    "being"
+   ],
+   "answer": 2,
+   "why": "'Only+부사구' 도치문에서 주어 this lake가 3인칭 단수 현재이므로 does가 필요하다. freeze가 일반동사이므로 is/has는 쓸 수 없다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Hardly had the game started ____ it began to snow.",
+   "choices": [
+    "than",
+    "when",
+    "that",
+    "then",
+    "so"
+   ],
+   "answer": 2,
+   "why": "'Hardly[Scarcely]+had+주어+p.p. ~ when ...' 구문이므로 when이 맞다. than은 No sooner와 짝을 이루는 표현이다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "No sooner had she sat down ____ the phone rang.",
+   "choices": [
+    "when",
+    "than",
+    "then",
+    "that",
+    "as"
+   ],
+   "answer": 2,
+   "why": "No sooner는 비교급 표현이므로 짝이 되는 접속사는 than이다. when은 Hardly[Scarcely]와 함께 쓴다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "____ have I felt so relaxed on a Monday morning.",
+   "choices": [
+    "Never",
+    "Ever",
+    "Always",
+    "Often",
+    "Sometimes"
+   ],
+   "answer": 1,
+   "why": "이 어순(have+주어+p.p.)은 부정어가 문두에 왔을 때만 가능하므로 Never가 답이다. Always/Often 등 긍정 부사는 도치를 일으키지 않는다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "____ did I imagine that I would win the contest.",
+   "choices": [
+    "Little",
+    "Much",
+    "Very",
+    "Well",
+    "Quite"
+   ],
+   "answer": 1,
+   "why": "'did+주어+원형' 도치를 만들 수 있는 것은 부정의 뜻을 가진 Little(거의 ~않다)뿐이다. Much/Very 등은 문두 도치를 일으키지 못한다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Only when the bell rang ____ the students leave the room.",
+   "choices": [
+    "do",
+    "did",
+    "were",
+    "had",
+    "was"
+   ],
+   "answer": 2,
+   "why": "'Only when+절'이 문두에 오면 주절이 도치되며, 종속절 동사가 rang(과거)이므로 did를 쓴다. did 뒤에 원형 leave가 이어진다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: I'm not tired at all.  B: ____ am I.",
+   "choices": [
+    "So",
+    "Neither",
+    "Either",
+    "Both",
+    "Very"
+   ],
+   "answer": 2,
+   "why": "부정문에 대한 동의는 'Neither+동사+주어'이다. So는 긍정문에 쓰고, Either는 문두에서 이 어순을 만들지 못한다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She has never been to Paris, and neither ____ I.",
+   "choices": [
+    "have",
+    "has",
+    "do",
+    "did",
+    "am"
+   ],
+   "answer": 1,
+   "why": "neither 뒤에는 앞 절의 조동사를 그대로 받아 도치하는데, 주어가 I이므로 has가 아니라 have를 쓴다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Tom likes soccer, and so ____ his friends.",
+   "choices": [
+    "do",
+    "does",
+    "is",
+    "are",
+    "did"
+   ],
+   "answer": 1,
+   "why": "'so+동사+주어'의 동사는 새 주어에 수를 맞추므로 복수 his friends에는 do를 쓴다. 앞 절이 현재이므로 did도 쓸 수 없다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Seldom ____ such a quiet street in a big city.",
+   "choices": [
+    "you find",
+    "do you find",
+    "does you find",
+    "find you",
+    "you do find"
+   ],
+   "answer": 2,
+   "why": "Seldom이 문두에 오면 'do/does+주어+원형'으로 도치되고, 주어가 you이므로 do you find가 맞다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Not until she apologized ____ her.",
+   "choices": [
+    "I forgave",
+    "did I forgive",
+    "did I forgave",
+    "forgave I",
+    "I did forgave"
+   ],
+   "answer": 2,
+   "why": "'Not until+절'이 문두에 오면 주절이 도치되어 did I forgive가 된다. did 뒤에는 원형 forgive를 쓴다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "On no account ____ the emergency exit.",
+   "choices": [
+    "you may block",
+    "may you block",
+    "may you blocking",
+    "do you may block",
+    "may block you"
+   ],
+   "answer": 2,
+   "why": "On no account는 '결코 ~해서는 안 된다'는 부정어구로, 문두에 오면 '조동사+주어+원형' 도치가 일어나 may you block이 된다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Never ____ I forget what you did for me. (앞으로 결코 잊지 않겠다)",
+   "choices": [
+    "will",
+    "do",
+    "did",
+    "am",
+    "have"
+   ],
+   "answer": 1,
+   "why": "'앞으로 결코 ~하지 않겠다'는 미래의 의지이므로 조동사 will이 알맞고, 부정어 Never 뒤에서 will I forget으로 도치된다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Never ____ she late for work last year.",
+   "choices": [
+    "was",
+    "did",
+    "does",
+    "has",
+    "is"
+   ],
+   "answer": 1,
+   "why": "late은 형용사이므로 be동사가 필요하고, last year가 과거를 가리키므로 was가 답이다. be동사는 도치 시 스스로 주어 앞으로 나간다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은? (부정어 Never의 도치)",
+   "choices": [
+    "Never I have seen a whale.",
+    "Never have I seen a whale.",
+    "Never have seen I a whale.",
+    "Never did I saw a whale.",
+    "Never seen I have a whale."
+   ],
+   "answer": 2,
+   "why": "부정어 Never가 문두에 오면 'have+주어+p.p.' 어순이 되어야 한다. ①은 도치가 없고 ③⑤는 어순이, ④는 did 뒤의 동사 형태가 틀렸다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은? (빈도부사 Seldom의 도치)",
+   "choices": [
+    "Seldom he does exercise.",
+    "Seldom does he exercises.",
+    "Seldom does he exercise.",
+    "Seldom do he exercise.",
+    "Seldom he exercise does."
+   ],
+   "answer": 3,
+   "why": "Seldom 도치문은 'does+주어+동사원형'이다. ②는 does 뒤 exercises, ④는 주어 he에 do를 써서 틀렸다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: I am really hungry.  B: ____ (나도 그래)",
+   "choices": [
+    "So do I.",
+    "So am I.",
+    "Neither am I.",
+    "So I am.",
+    "So have I."
+   ],
+   "answer": 2,
+   "why": "be동사 문장에 '나도 그렇다'로 답할 때는 'So am I.'이다. So I am.은 도치가 없어 '정말 그렇네'라는 확인의 뜻이고, Neither는 부정문에 쓴다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은?",
+   "choices": [
+    "Never have I told a lie.",
+    "Little did he expect the news.",
+    "Only then did she smile.",
+    "Rarely he goes out at night.",
+    "Neither do I."
+   ],
+   "answer": 4,
+   "why": "Rarely가 문두에 왔으므로 'Rarely does he go out at night.'처럼 도치해야 한다. 나머지는 모두 조동사+주어 도치가 바르게 되어 있다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  Hardly ①<u>had</u> we ②<u>arrived</u> at the station ③<u>than</u> the train ④<u>left</u> without ⑤<u>us</u>.",
+   "choices": [
+    "had",
+    "arrived",
+    "than",
+    "left",
+    "us"
+   ],
+   "answer": 3,
+   "why": "Hardly가 이끄는 구문의 짝은 when이므로 than을 when으로 고쳐야 한다. had we arrived는 도치와 시제 모두 알맞다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  Not only ①<u>did</u> he ②<u>finished</u> his homework, ③<u>but</u> he ④<u>also</u> helped ⑤<u>his</u> sister.",
+   "choices": [
+    "did",
+    "finished",
+    "but",
+    "also",
+    "his"
+   ],
+   "answer": 2,
+   "why": "조동사 did 뒤에는 동사원형이 와야 하므로 finished를 finish로 고쳐야 한다. Not only 뒤 도치와 but also의 짝은 알맞다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  나는 그런 이야기를 들어 본 적이 없다.",
+   "choices": [
+    "Never I have heard such a story.",
+    "Never have I heard such a story.",
+    "Never have heard I such a story.",
+    "Never did I heard such a story.",
+    "Never I heard have such a story."
+   ],
+   "answer": 2,
+   "why": "현재완료 문장에서 Never가 문두에 오면 'have+주어+p.p.' 어순이 된다. ①은 도치 누락, ④는 did 뒤 과거분사 사용이 잘못이다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그는 좀처럼 화를 내지 않는다.",
+   "choices": [
+    "Rarely he gets angry.",
+    "Rarely does he get angry.",
+    "Rarely does he gets angry.",
+    "Rarely get he angry.",
+    "Rarely he does get angry."
+   ],
+   "answer": 2,
+   "why": "부정 빈도부사 Rarely가 문두에 오면 'does+주어+동사원형'으로 도치한다. ③은 does 뒤 gets, ④는 조동사 없는 도치라서 틀렸다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말은?  Only ____ did I understand the joke.  /  Not until ____ did the rain stop.",
+   "choices": [
+    "then",
+    "there",
+    "when",
+    "that",
+    "yet"
+   ],
+   "answer": 1,
+   "why": "Only then(그제서야), Not until then(그때가 되어서야)처럼 두 문장 모두 부사 then이 들어가야 도치 구문이 완성된다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: I didn't enjoy the movie at all.  B: ____",
+   "choices": [
+    "Neither did I.",
+    "So did I.",
+    "Neither do I.",
+    "So I did.",
+    "Neither I did."
+   ],
+   "answer": 1,
+   "why": "부정문에 동의할 때는 'Neither+조동사+주어'이며 앞 문장이 과거 일반동사이므로 did를 쓴다. ③은 시제가, ⑤는 어순이 틀렸다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 두 단어를 쓰시오.  (나는 그런 소식을 들어 본 적이 없다.)  →  Never ____ heard such news.",
+   "answer": "have I",
+   "alt": [],
+   "why": "부정어 Never가 문두에 오면 'have+주어+p.p.' 어순으로 도치되므로 have I가 들어간다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 두 단어를 쓰시오.  Little ____ know that the door was locked. (그녀는 문이 잠긴 줄 거의 알지 못했다.)",
+   "answer": "did she",
+   "alt": [],
+   "why": "Little은 부정어이므로 도치가 일어나고, 뒤 절이 과거(was)이며 뒤에 원형 know가 있으므로 did she가 알맞다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 두 단어를 쓰시오.  Hardly ____ finished dinner when the guests arrived. (우리가 저녁을 다 먹자마자)",
+   "answer": "had we",
+   "alt": [],
+   "why": "'Hardly+had+주어+p.p. ~ when ...' 구문이므로 had we가 들어간다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.  Seldom ____ he call his grandparents these days.",
+   "answer": "does",
+   "alt": [],
+   "why": "Seldom이 문두에 오면 'does+주어+동사원형' 도치가 되고, these days가 현재를 나타내며 주어가 3인칭 단수이므로 does를 쓴다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 한 단어를 쓰시오.  (자정이 되어서야 그녀는 보고서를 끝냈다.)  →  Not until midnight ____ she finish her report.",
+   "answer": "did",
+   "alt": [],
+   "why": "'Not until+시간'이 문두에 오면 주절이 도치되고, 뒤에 원형 finish가 있으므로 과거의 did를 쓴다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "대화가 자연스럽도록 빈칸에 알맞은 한 단어를 쓰시오.  A: I like jazz music.  B: So ____ I.",
+   "answer": "do",
+   "alt": [],
+   "why": "긍정문에 '나도 그렇다'로 답할 때 'So+조동사+주어'를 쓰며, 앞 문장이 일반동사 현재이고 주어가 I이므로 do가 알맞다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "대화가 자연스럽도록 빈칸에 알맞은 한 단어를 쓰시오.  A: I can't drive a truck.  B: Neither ____ I.",
+   "answer": "can",
+   "alt": [],
+   "why": "부정문에 대한 동의는 'Neither+조동사+주어'이며 앞 문장의 조동사 can을 그대로 받는다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "대화가 자연스럽도록 빈칸에 알맞은 한 단어를 쓰시오.  A: My parents were very tired.  B: So ____ we.",
+   "answer": "were",
+   "alt": [],
+   "why": "'So+동사+주어'에서 동사는 앞 문장의 시제(과거 be)를 따르고 새 주어 we에 맞추므로 were를 쓴다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 접속사 한 단어를 쓰시오.  No sooner had the bell rung ____ the students ran into the hall.",
+   "answer": "than",
+   "alt": [],
+   "why": "No sooner는 비교급 표현이므로 짝이 되는 접속사는 than이다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 접속사 한 단어를 쓰시오.  Hardly had I sat down ____ the telephone rang.",
+   "answer": "when",
+   "alt": [],
+   "why": "Hardly[Scarcely] ~ when 구문이므로 when이 알맞다. than은 No sooner와 짝을 이룬다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "주어진 문장을 Never로 시작하는 문장으로 바꿔 쓰시오.  I will never forget this day.  →  Never ____ forget this day. (두 단어)",
+   "answer": "will I",
+   "alt": [],
+   "why": "부정어 Never가 문두로 나가면 조동사 will이 주어 앞으로 이동해 will I forget이 된다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "주어진 문장을 Rarely로 시작하는 문장으로 바꿔 쓰시오.  He rarely watches TV.  →  Rarely ____ TV. (세 단어)",
+   "answer": "does he watch",
+   "alt": [],
+   "why": "부정 빈도부사가 문두에 오면 'does+주어+동사원형'으로 도치되므로 does he watch가 된다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Only then <u>I understood</u> the real meaning of her words.",
+   "answer": "did I understand",
+   "alt": [],
+   "why": "'Only+부사'가 문두에 오면 주절이 도치되므로 I understood를 did I understand로 고쳐야 한다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Never <u>I have</u> been so nervous before a test.",
+   "answer": "have I",
+   "alt": [],
+   "why": "부정어 Never가 문두에 왔으므로 조동사 have가 주어 I 앞으로 나가 have I가 되어야 한다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  A: I'm not ready for the trip.  B: Neither <u>do</u> I.",
+   "answer": "am",
+   "alt": [],
+   "why": "앞 문장이 be동사(am not) 문장이므로 대동사도 be동사를 써서 Neither am I.가 되어야 한다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Under no circumstances <u>you should</u> lend him money.",
+   "answer": "should you",
+   "alt": [],
+   "why": "부정어구가 문두에 오면 조동사가 주어 앞으로 나가야 하므로 should you로 도치한다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 두 단어를 쓰시오.  Not only ____ sing, but she also plays the drums.",
+   "answer": "does she",
+   "alt": [],
+   "why": "Not only가 문두에 오면 그 절은 도치되고, 뒤 절 plays로 보아 현재이므로 does she가 알맞다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "주어진 문장을 Only로 시작하는 문장으로 바꿔 쓰시오.  It was only after the show that I met her.  →  Only after the show ____ her. (세 단어)",
+   "answer": "did I meet",
+   "alt": [],
+   "why": "'Only+부사구'가 문두에 오면 주절이 도치되어 did I meet가 된다. did 뒤에는 원형 meet를 쓴다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 한 단어를 쓰시오.  (그들은 앞에 놓인 위험을 거의 상상하지 못했다.)  →  Little ____ they imagine the danger ahead of them.",
+   "answer": "did",
+   "alt": [],
+   "why": "뒤에 원형 imagine이 있고 문맥이 과거이므로 도치의 조동사는 did이다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "대화가 자연스럽도록 빈칸에 알맞은 한 단어를 쓰시오.  A: My sister has finished her homework.  B: So ____ my brother.",
+   "answer": "has",
+   "alt": [],
+   "why": "앞 문장이 현재완료이므로 대동사도 have/has를 쓰며, 새 주어 my brother가 3인칭 단수이므로 has가 알맞다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Never in my life ____ such a generous offer from a stranger.",
+   "choices": [
+    "I have received",
+    "have I received",
+    "did I received",
+    "have received I",
+    "received I have"
+   ],
+   "answer": 2,
+   "why": "부정어구 Never in my life가 문두에 오면 조동사 have가 주어 앞으로 나가 'have+주어+p.p.'가 된다. ③은 did 뒤에 과거분사를 썼고 ④⑤는 어순이 틀렸다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Not once during the long interview ____ nervous.",
+   "choices": [
+    "he looked",
+    "did he look",
+    "did he looked",
+    "looked he",
+    "he did look"
+   ],
+   "answer": 2,
+   "why": "Not once는 부정어구이므로 주절이 도치되고, 일반동사 과거이므로 'did+주어+동사원형'인 did he look이 맞다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Rarely ____ a chance to work with such an experienced director.",
+   "choices": [
+    "young actors get",
+    "do young actors get",
+    "does young actors get",
+    "get young actors",
+    "young actors do get"
+   ],
+   "answer": 2,
+   "why": "Rarely가 문두에 오면 do/does를 빌려 도치하며, 주어 young actors가 복수이므로 do를 쓴다. ③은 수 일치가 틀렸다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Scarcely had the concert begun ____ the power suddenly went out.",
+   "choices": [
+    "than",
+    "when",
+    "that",
+    "then",
+    "as though"
+   ],
+   "answer": 2,
+   "why": "'Scarcely[Hardly]+had+주어+p.p. ~ when ...' 구문이므로 when이 알맞다. than은 No sooner와 짝을 이룬다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Little ____ that a single letter would change the whole course of her career.",
+   "choices": [
+    "she realized",
+    "did she realize",
+    "did she realized",
+    "had she realize",
+    "realized she"
+   ],
+   "answer": 2,
+   "why": "부정의 뜻을 가진 Little이 문두에 오면 도치되며, 과거이므로 'did+주어+동사원형'이 된다. ④는 had 뒤에 원형을 쓸 수 없다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Only recently ____ seriously interested in classical music.",
+   "choices": [
+    "he has become",
+    "has he become",
+    "has become he",
+    "did he became",
+    "he did become"
+   ],
+   "answer": 2,
+   "why": "'Only+부사'가 문두에 오면 조동사와 주어가 도치되므로 has he become이 맞다. ④는 did 뒤에 과거형을 써서 틀렸다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Not only ____ the report overnight, but he also presented it to the board.",
+   "choices": [
+    "he had written",
+    "had he written",
+    "had written he",
+    "did he wrote",
+    "he did write"
+   ],
+   "answer": 2,
+   "why": "Not only가 문두에 오면 그 절은 도치되어 'had+주어+p.p.' 어순이 된다. ①⑤는 도치가 없고 ③④는 어순·형태가 틀렸다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Under no circumstances ____ visitors allowed to feed the animals in the zoo.",
+   "choices": [
+    "are",
+    "do",
+    "have",
+    "being",
+    "is"
+   ],
+   "answer": 1,
+   "why": "수동태 be allowed 문장이므로 be동사가 도치되어 주어 앞으로 나가고, 주어 visitors가 복수이므로 are를 쓴다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Seldom ____ the two singers performed on the same stage since their debut.",
+   "choices": [
+    "have",
+    "has",
+    "did",
+    "do",
+    "are"
+   ],
+   "answer": 1,
+   "why": "since their debut가 현재완료와 어울리고 주어가 복수 the two singers이므로 have가 도치되어 앞에 온다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Never ____ he complained about the long hours he had to work.",
+   "choices": [
+    "has",
+    "have",
+    "did",
+    "does",
+    "is"
+   ],
+   "answer": 1,
+   "why": "뒤에 과거분사 complained가 있으므로 완료시제의 조동사가 필요하고, 주어가 he이므로 has가 알맞다. did/does 뒤에는 원형이 와야 한다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "At no time ____ aware that the ship was sinking.",
+   "choices": [
+    "the crew was",
+    "was the crew",
+    "did the crew was",
+    "the crew were",
+    "was the crew were"
+   ],
+   "answer": 2,
+   "why": "At no time은 부정어구이므로 be동사가 주어 앞으로 나가 was the crew가 된다. be동사 문장에는 do/did를 쓰지 않는다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "In no way ____ responsible for the delay of the flight.",
+   "choices": [
+    "the airline is",
+    "is the airline",
+    "does the airline is",
+    "is the airline is",
+    "airline is"
+   ],
+   "answer": 2,
+   "why": "In no way라는 부정어구가 문두에 왔으므로 be동사가 주어 앞으로 도치되어 is the airline이 된다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Only when the storm ____ did the ferry finally leave the port.",
+   "choices": [
+    "passed",
+    "did pass",
+    "passed did",
+    "did it pass",
+    "does pass"
+   ],
+   "answer": 1,
+   "why": "Only 뒤의 종속절(when절)은 도치하지 않고 평서문 어순 그대로 쓰며, 도치는 주절(did the ferry leave)에서만 일어난다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Only after everyone ____ home did she start cleaning up the hall.",
+   "choices": [
+    "went",
+    "did go",
+    "did she go",
+    "going",
+    "goes"
+   ],
+   "answer": 1,
+   "why": "when/after가 이끄는 종속절은 도치 대상이 아니므로 everyone went가 되어야 하고, 도치는 뒤의 주절에만 적용된다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Not until the last guests had left ____ down for a rest.",
+   "choices": [
+    "she sat",
+    "did she sit",
+    "did she sat",
+    "sat she",
+    "she did sat"
+   ],
+   "answer": 2,
+   "why": "'Not until+절'이 문두에 오면 종속절은 그대로 두고 주절만 도치하므로 did she sit이 맞다. did 뒤에는 원형 sit을 쓴다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Only if you book your ticket early ____ get a discount on the fare.",
+   "choices": [
+    "you can",
+    "can you",
+    "can you to",
+    "do you can",
+    "you could to"
+   ],
+   "answer": 2,
+   "why": "'Only+조건절'이 문두에 오면 주절이 도치되어 can you get이 된다. if절 자체는 도치하지 않는다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Only because it was pouring outside ____ the school picnic.",
+   "choices": [
+    "they canceled",
+    "did they cancel",
+    "did they canceled",
+    "canceled they",
+    "they did canceled"
+   ],
+   "answer": 2,
+   "why": "'Only because+절'이 문두에 오면 주절이 도치되어 'did+주어+원형'이 된다. because절 안은 도치하지 않는다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은? (Only+when절의 도치)",
+   "choices": [
+    "Only when did he arrive we began the meeting.",
+    "Only when he arrived did we begin the meeting.",
+    "Only when he did arrive we began the meeting.",
+    "Only when he arrived we did begin the meeting.",
+    "Only when arrived he did we begin the meeting."
+   ],
+   "answer": 2,
+   "why": "Only+when절이 문두에 오면 when절은 그대로, 주절만 'did+주어+원형'으로 도치한다. ①⑤는 종속절을 도치했고 ③④는 주절 도치가 없다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "My brother didn't pass the driving test, and ____.",
+   "choices": [
+    "neither did I",
+    "so did I",
+    "neither I did",
+    "neither do I",
+    "so I did"
+   ],
+   "answer": 1,
+   "why": "부정문에 '나도 아니다'를 덧붙일 때는 'neither+조동사+주어'이며 앞 절이 과거이므로 did를 쓴다. ④는 시제, ③은 어순이 틀렸다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Sujin has already been to Canada twice, and ____ her cousin.",
+   "choices": [
+    "so has",
+    "so does",
+    "so is",
+    "has so",
+    "so had"
+   ],
+   "answer": 1,
+   "why": "앞 절이 현재완료이므로 대동사도 has를 쓰고, 'so+조동사+주어' 어순을 지켜 so has her cousin이 된다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A: I've never tried Indian food before.  B: ____",
+   "choices": [
+    "Neither have I.",
+    "So have I.",
+    "Neither did I.",
+    "Neither I have.",
+    "So I have."
+   ],
+   "answer": 1,
+   "why": "부정의 현재완료 문장에 동의할 때는 'Neither+have+주어'로 답한다. ③은 시제가, ④는 어순이 틀렸다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The soup was much too salty, and ____ the tomato sauce.",
+   "choices": [
+    "so was",
+    "so were",
+    "neither was",
+    "so did",
+    "was so"
+   ],
+   "answer": 1,
+   "why": "앞 절이 be동사 과거이고 새 주어 the tomato sauce가 단수이므로 so was가 맞다. 긍정문의 추가이므로 neither는 쓸 수 없다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "I'm not very good at math, and ____ my younger sister.",
+   "choices": [
+    "neither is",
+    "neither does",
+    "so is",
+    "neither are",
+    "is neither"
+   ],
+   "answer": 1,
+   "why": "부정 be동사 문장이므로 대동사도 be를 쓰고, 새 주어가 단수이므로 neither is가 맞다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "They will not attend tomorrow's meeting, and ____ we.",
+   "choices": [
+    "neither will",
+    "so will",
+    "neither do",
+    "neither are",
+    "will neither"
+   ],
+   "answer": 1,
+   "why": "앞 절의 조동사 will을 그대로 받아 'neither+will+주어' 어순으로 쓴다. 부정문이므로 so는 쓸 수 없다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A: I didn't sleep well last night.  B: ____ (나도 못 잤어)",
+   "choices": [
+    "So did I.",
+    "Neither did I.",
+    "Neither do I.",
+    "So I didn't.",
+    "Neither I did."
+   ],
+   "answer": 2,
+   "why": "부정문에 대한 동의는 'Neither+조동사+주어'이며 last night이므로 과거의 did를 쓴다. ③은 시제가 맞지 않는다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Emma doesn't eat meat, ____ does her husband.",
+   "choices": [
+    "so",
+    "nor",
+    "either",
+    "also",
+    "too"
+   ],
+   "answer": 2,
+   "why": "앞의 부정 내용에 이어 '~도 아니다'를 덧붙이며 도치 어순(does her husband)을 이끌 수 있는 것은 nor이다. so는 긍정문에 쓴다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  Not until the last guest ①<u>had gone</u> ②<u>did</u> the host ③<u>sat</u> down and ④<u>let</u> out ⑤<u>a</u> long sigh.",
+   "choices": [
+    "had gone",
+    "did",
+    "sat",
+    "let",
+    "a"
+   ],
+   "answer": 3,
+   "why": "조동사 did 뒤에는 동사원형이 와야 하므로 sat을 sit으로 고쳐야 한다. and 뒤의 let은 원형 그대로 이어진 형태로 알맞다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  Only after the sun ①<u>set</u> the desert ②<u>became</u> cool ③<u>enough</u> for us ④<u>to walk</u> ⑤<u>comfortably</u>.",
+   "choices": [
+    "set",
+    "became",
+    "enough",
+    "to walk",
+    "comfortably"
+   ],
+   "answer": 2,
+   "why": "'Only after+절'이 문두에 왔으므로 주절을 도치해 did the desert become으로 써야 한다. 종속절의 set은 도치하지 않는 것이 맞다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  Little ①<u>did</u> the villagers ②<u>knew</u> that the old bridge ③<u>had been</u> damaged ④<u>by</u> the flood ⑤<u>the night before</u>.",
+   "choices": [
+    "did",
+    "knew",
+    "had been",
+    "by",
+    "the night before"
+   ],
+   "answer": 2,
+   "why": "도치의 조동사 did 뒤에는 동사원형 know가 와야 한다. 나머지는 시제·태·전치사 모두 알맞다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  Hardly ①<u>had</u> the plane ②<u>taken</u> off ③<u>than</u> the pilot ④<u>noticed</u> a strange ⑤<u>noise</u> in the engine.",
+   "choices": [
+    "had",
+    "taken",
+    "than",
+    "noticed",
+    "noise"
+   ],
+   "answer": 3,
+   "why": "Hardly가 이끄는 구문의 짝은 when이므로 than을 when으로 고쳐야 한다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  Under no circumstances ①<u>should</u> the medicine ②<u>be</u> given to young children, ③<u>nor</u> ④<u>it should</u> be ⑤<u>kept</u> within their reach.",
+   "choices": [
+    "should",
+    "be",
+    "nor",
+    "it should",
+    "kept"
+   ],
+   "answer": 4,
+   "why": "부정어 nor 뒤에서도 '조동사+주어' 도치가 일어나야 하므로 it should를 should it으로 고쳐야 한다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  Not only ①<u>the museum offers</u> free guided tours, ②<u>but</u> it ③<u>also</u> lends ④<u>audio</u> guides ⑤<u>to</u> visitors.",
+   "choices": [
+    "the museum offers",
+    "but",
+    "also",
+    "audio",
+    "to"
+   ],
+   "answer": 1,
+   "why": "Not only가 문두에 왔으므로 does the museum offer로 도치해야 한다. but ... also의 짝과 나머지 표현은 알맞다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  Never ①<u>has</u> she ②<u>felt</u> so proud of her students, ③<u>and</u> ④<u>neither has</u> her ⑤<u>colleagues</u>.",
+   "choices": [
+    "has",
+    "felt",
+    "and",
+    "neither has",
+    "colleagues"
+   ],
+   "answer": 4,
+   "why": "neither 뒤의 대동사는 새 주어 her colleagues(복수)에 맞춰 neither have가 되어야 한다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  Only by ①<u>practicing</u> every single day ②<u>you can</u> ③<u>master</u> a musical ④<u>instrument</u> ⑤<u>like</u> the violin.",
+   "choices": [
+    "practicing",
+    "you can",
+    "master",
+    "instrument",
+    "like"
+   ],
+   "answer": 2,
+   "why": "'Only by+동명사'가 문두에 왔으므로 주절을 can you로 도치해야 한다. 전치사 by 뒤의 동명사 practicing은 알맞다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그가 도착하고 나서야 우리는 저녁을 먹기 시작했다.",
+   "choices": [
+    "Only after he arrived we began to eat dinner.",
+    "Only after he arrived did we begin to eat dinner.",
+    "Only after did he arrive we began to eat dinner.",
+    "Only after he arrived did we began to eat dinner.",
+    "Only after he arrived we did begin to eat dinner."
+   ],
+   "answer": 2,
+   "why": "종속절(he arrived)은 그대로 두고 주절만 'did+주어+원형'으로 도치해야 한다. ③은 종속절을 도치했고 ④는 did 뒤 동사 형태가 틀렸다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그녀는 그 사고에 대해 거의 알지 못했다.",
+   "choices": [
+    "Little she knew about the accident.",
+    "Little did she know about the accident.",
+    "Little did she knew about the accident.",
+    "Little knew she about the accident.",
+    "Little she did know about the accident."
+   ],
+   "answer": 2,
+   "why": "부정어 Little이 문두에 오면 'did+주어+동사원형' 도치가 필요하다. ①⑤는 도치가 없고 ③은 did 뒤에 과거형을 썼다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  우리가 자리에 앉자마자 공연이 시작되었다.",
+   "choices": [
+    "No sooner we had taken our seats when the show began.",
+    "No sooner had we taken our seats than the show began.",
+    "No sooner had we taken our seats when the show began.",
+    "No sooner we took our seats than the show began.",
+    "No sooner did we take our seats when the show began."
+   ],
+   "answer": 2,
+   "why": "'No sooner+had+주어+p.p. ~ than ...'이 정확한 형태다. ③⑤는 접속사를 when으로 잘못 썼고 ①④는 도치가 빠졌다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  어떤 경우에도 너는 그곳에 혼자 가서는 안 된다.",
+   "choices": [
+    "Under no circumstances you must go there alone.",
+    "Under no circumstances must you go there alone.",
+    "Under no circumstances must go you there alone.",
+    "Under no circumstances do you must go there alone.",
+    "Under no circumstances must you going there alone."
+   ],
+   "answer": 2,
+   "why": "부정어구가 문두에 오면 '조동사+주어+동사원형' 어순이 되므로 must you go가 맞다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그는 시험에 합격했을 뿐만 아니라 장학금도 받았다.",
+   "choices": [
+    "Not only he passed the exam, but he also won a scholarship.",
+    "Not only did he pass the exam, but he also won a scholarship.",
+    "Not only did he passed the exam, but he also won a scholarship.",
+    "Not only passed he the exam, but he also won a scholarship.",
+    "Not only he did pass the exam, but also he won a scholarship."
+   ],
+   "answer": 2,
+   "why": "Not only가 문두에 오면 그 절만 'did+주어+원형'으로 도치하고 뒤 절은 정상 어순으로 쓴다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?  Not until the alarm rang (A)____ up, and only then (B)____ how late it was.",
+   "choices": [
+    "did we get – did we notice",
+    "we got – we noticed",
+    "did we get – we noticed",
+    "we got – did we notice",
+    "did we got – did we noticed"
+   ],
+   "answer": 1,
+   "why": "Not until과 only then이 각각 문두에 왔으므로 두 주절 모두 'did+주어+원형'으로 도치해야 한다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?  Seldom (A)____ my father angry, and never (B)____ he raised his voice at home.",
+   "choices": [
+    "is – has",
+    "does – has",
+    "is – does",
+    "does – have",
+    "are – has"
+   ],
+   "answer": 1,
+   "why": "(A)는 형용사 angry가 뒤따르므로 be동사 is가 도치되고, (B)는 과거분사 raised가 있으므로 완료의 has가 도치된다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?  Only after the meeting (A)____ I realize that not only (B)____ the plan risky, but it was also expensive.",
+   "choices": [
+    "did – was",
+    "do – is",
+    "did – did",
+    "was – was",
+    "did – were"
+   ],
+   "answer": 1,
+   "why": "(A)는 'Only+부사구' 뒤 주절 도치이므로 did I realize, (B)는 형용사 risky가 이어지는 be동사 문장이고 주어가 단수 the plan이므로 was가 도치된다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?  I have never visited Jeju, and (A)____ my brother. (B)____ have we been to Ulleungdo.",
+   "choices": [
+    "neither has – Nor",
+    "so has – Neither",
+    "neither have – Nor",
+    "neither has – So",
+    "so has – Nor"
+   ],
+   "answer": 1,
+   "why": "(A)는 현재완료 부정에 대한 추가이고 주어가 단수이므로 neither has, (B)는 부정의 연결로 문두에 와서 도치를 이끄는 Nor가 알맞다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은? (도치 어순 종합)",
+   "choices": [
+    "Never she has broken a promise.",
+    "Hardly he had entered when the bell rang.",
+    "Only then did he apologize to her.",
+    "Seldom does he studies at night.",
+    "Neither I do."
+   ],
+   "answer": 3,
+   "why": "③만 '조동사+주어+동사원형' 도치가 바르다. ①②는 도치가 빠졌고 ④는 does 뒤 동사 형태, ⑤는 어순이 틀렸다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ㄱ. Not until noon did the fog lift.  ㄴ. Little did we expect to see him there.  ㄷ. Rarely the shop opens on Sundays.  ㄹ. Only then did he apologized.  ㅁ. Never has the team lost at home.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ·ㄴ·ㅁ은 도치가 바르다. ㄷ은 Rarely does the shop open으로, ㄹ은 did he apologize로 고쳐야 하므로 옳은 문장은 3개다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말은?  ____ only did she cook dinner, but she also baked a cake.  /  ____ once did he look back as he walked away.",
+   "choices": [
+    "Not",
+    "Never",
+    "Only",
+    "Little",
+    "Hardly"
+   ],
+   "answer": 1,
+   "why": "Not only ~ but also 구문과 Not once(한 번도 ~않다) 모두 Not이 필요하며, 두 문장 모두 부정어구 때문에 did+주어+원형으로 도치되었다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "주어진 문장을 Hardly로 시작하는 문장으로 바꿔 쓸 때 빈칸에 알맞은 말을 쓰시오. (네 단어)  The manager had hardly explained the plan when the phone rang.  →  Hardly ____ the plan when the phone rang.",
+   "answer": "had the manager explained",
+   "alt": [],
+   "why": "Hardly가 문두로 나가면 'had+주어+p.p.' 어순으로 도치되므로 had the manager explained가 된다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "주어진 문장을 Not until로 시작하는 문장으로 바꿔 쓸 때 빈칸에 알맞은 말을 쓰시오. (세 단어)  We did not realize the mistake until the next morning.  →  Not until the next morning ____ the mistake.",
+   "answer": "did we realize",
+   "alt": [],
+   "why": "'Not until+시간'이 문두에 오면 주절이 도치되어 'did+주어+동사원형'이 된다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 쓰시오. (세 단어)  (그녀가 상자를 열자마자 고양이가 뛰쳐나왔다.)  →  No sooner ____ the box than the cat jumped out.",
+   "answer": "had she opened",
+   "alt": [],
+   "why": "'No sooner+had+주어+p.p. ~ than ...' 구문이므로 had+주어+opened 형태가 되어야 한다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "주어진 문장을 Only in winter로 시작하는 문장으로 바꿔 쓸 때 빈칸에 알맞은 말을 쓰시오. (세 단어)  You can see the northern lights only in winter here.  →  Only in winter ____ the northern lights here.",
+   "answer": "can you see",
+   "alt": [],
+   "why": "'Only+부사구'가 문두에 오면 조동사 can이 주어 앞으로 나가 can you see가 된다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 말을 쓰시오. (세 단어)  Not only ____ Chinese, but he also writes it fluently.",
+   "answer": "does he speak",
+   "alt": [],
+   "why": "Not only가 이끄는 절은 도치되며, 뒤 절의 writes로 보아 현재이므로 does he speak가 알맞다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "주어진 문장을 Seldom으로 시작하는 문장으로 바꿔 쓸 때 빈칸에 알맞은 말을 쓰시오. (세 단어)  I have seldom met a more patient teacher.  →  Seldom ____ a more patient teacher.",
+   "answer": "have I met",
+   "alt": [],
+   "why": "부정 빈도부사가 문두로 나가면 조동사 have가 주어 앞으로 이동해 have I met이 된다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Only after the results were announced <u>we knew</u> who had won the prize.",
+   "answer": "did we know",
+   "alt": [],
+   "why": "'Only after+절' 뒤의 주절은 도치되어야 하므로 we knew를 did we know로 고친다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Little <u>the students knew</u> that a surprise test was waiting for them.",
+   "answer": "did the students know",
+   "alt": [],
+   "why": "부정어 Little이 문두에 왔으므로 'did+주어+동사원형'으로 도치해야 한다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "대화가 자연스럽도록 빈칸에 알맞은 말을 쓰시오. (두 단어)  A: My laptop isn't working today.  B: ____ mine.",
+   "answer": "Neither is",
+   "alt": [
+    "neither is"
+   ],
+   "why": "부정의 be동사 문장에 동의할 때는 'Neither+be동사+주어'이며 주어 mine이 단수이므로 Neither is가 된다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "대화가 자연스럽도록 빈칸에 알맞은 말을 쓰시오. (두 단어)  A: I've already finished my science project.  B: ____ Mina.",
+   "answer": "So has",
+   "alt": [
+    "so has"
+   ],
+   "why": "긍정의 현재완료에 '~도 그렇다'를 붙일 때는 'So+has+주어'이며 주어 Mina가 3인칭 단수이므로 has를 쓴다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "주어진 문장을 Rarely로 시작하는 문장으로 바꿔 쓸 때 빈칸에 알맞은 말을 쓰시오. (네 단어)  The children rarely go to bed before ten.  →  Rarely ____ to bed before ten.",
+   "answer": "do the children go",
+   "alt": [],
+   "why": "Rarely가 문두에 오면 do/does를 빌려 도치하며, 주어가 복수이므로 do the children go가 된다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 쓰시오. (두 단어, can을 사용)  (함께 일해야만 우리는 이 문제를 제시간에 풀 수 있다.)  →  Only by working together ____ solve this problem in time.",
+   "answer": "can we",
+   "alt": [],
+   "why": "'Only by+동명사'가 문두에 오면 조동사가 주어 앞으로 나가므로 can we가 되고 뒤에 원형 solve가 이어진다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.  Under no circumstances should this door ____ opened during the flight.",
+   "answer": "be",
+   "alt": [],
+   "why": "조동사 should 뒤에 수동태가 이어지므로 be opened가 되어야 한다. 도치된 것은 조동사 should뿐이다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  A: I went to the rock concert yesterday.  B: So <u>do</u> I.",
+   "answer": "did",
+   "alt": [],
+   "why": "앞 문장이 과거 일반동사(went)이므로 대동사도 과거의 did를 써서 So did I.가 되어야 한다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "주어진 문장을 Never로 시작하는 문장으로 바꿔 쓰시오. (완전한 문장으로)  He had never seen such a huge crowd.",
+   "answer": "Never had he seen such a huge crowd.",
+   "alt": [
+    "Never had he seen such a huge crowd"
+   ],
+   "why": "부정어 Never를 문두로 보내면 과거완료의 조동사 had가 주어 앞으로 나가 Never had he seen이 된다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "주어진 문장을 Only then으로 시작하는 문장으로 바꿔 쓰시오. (완전한 문장으로)  We realized the danger only then.",
+   "answer": "Only then did we realize the danger.",
+   "alt": [
+    "Only then did we realize the danger"
+   ],
+   "why": "'Only+부사'가 문두에 오면 주절이 도치되어 did we realize가 되고 did 뒤에는 원형을 쓴다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "neither를 사용하여 빈칸을 완성하시오. (세 단어)  She is not interested in politics, and ____.",
+   "answer": "neither am I",
+   "alt": [
+    "Neither am I"
+   ],
+   "why": "부정문에 '나도 아니다'를 덧붙일 때는 'neither+be동사+주어'이며 주어가 I이므로 am을 쓴다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 쓰시오. (네 단어, the team을 사용)  (그 팀은 어느 순간에도 포기하지 않았다.)  →  At no time ____ up, even when they were losing by twenty points.",
+   "answer": "did the team give",
+   "alt": [],
+   "why": "At no time은 부정어구이므로 주절이 도치되어 'did+주어+동사원형'이 된다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 쓰시오. (세 단어, will과 find를 사용)  (당신은 이보다 더 싼 표를 좀처럼 찾지 못할 것이다.)  →  Hardly ever ____ a cheaper ticket than this one.",
+   "answer": "will you find",
+   "alt": [],
+   "why": "Hardly ever가 문두에 오면 조동사 will이 주어 앞으로 나가 will you find가 된다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.  The new plan was not cheap, ____ was it safe.",
+   "answer": "nor",
+   "alt": [
+    "neither"
+   ],
+   "why": "앞의 부정 내용에 이어 '~도 아니다'를 덧붙이며 뒤에 도치(was it)를 이끄는 접속사는 nor이다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Not a single mistake ____ in the final version of the report.",
+   "choices": [
+    "did find",
+    "was found",
+    "did we found",
+    "found was",
+    "was found it"
+   ],
+   "answer": 2,
+   "why": "'Not a single+명사'가 주어 자리에 있는 경우이므로 도치하지 않고 그대로 'was found'를 쓴다. 부정어가 주어일 때는 조동사를 앞으로 보내지 않는다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Only members of the club ____ use the swimming pool after 9 p.m.",
+   "choices": [
+    "can",
+    "can they",
+    "do they can",
+    "can members",
+    "they can"
+   ],
+   "answer": 1,
+   "why": "Only가 주어(members)를 수식할 때는 도치가 일어나지 않으므로 'Only members ... can use'가 된다. 도치는 Only가 부사(구)·부사절을 수식할 때만 일어난다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Never in the history of the festival ____ so many visitors in a single day.",
+   "choices": [
+    "the town has welcomed",
+    "has the town welcomed",
+    "did the town welcomed",
+    "has welcomed the town",
+    "the town welcomed has"
+   ],
+   "answer": 2,
+   "why": "부정어구가 문두에 오면 완료 조동사 has가 주어 앞으로 나가 'has the town welcomed'가 된다. ③은 did 뒤에 과거형을 써서 틀렸다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Not only ____ the deadline, but the client also praised the overall design.",
+   "choices": [
+    "the team met",
+    "did the team meet",
+    "did the team met",
+    "met the team",
+    "the team did met"
+   ],
+   "answer": 2,
+   "why": "Not only가 문두에 오면 그 절만 'did+주어+동사원형'으로 도치되고, but 이하 절은 정상 어순을 유지한다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Rarely, if ever, ____ a politician admit to a serious mistake in public these days.",
+   "choices": [
+    "does",
+    "do",
+    "did",
+    "is",
+    "has"
+   ],
+   "answer": 1,
+   "why": "these days가 현재를 나타내고 주어 a politician이 3인칭 단수이므로 does가 알맞다. 뒤에 원형 admit이 있으므로 is/has는 쓸 수 없다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Only when we compared the two photographs side by side ____ the difference.",
+   "choices": [
+    "we could see",
+    "could we see",
+    "could we saw",
+    "we saw could",
+    "did we could see"
+   ],
+   "answer": 2,
+   "why": "Only+when절이 문두에 오면 when절은 그대로 두고 주절만 도치하므로 could we see가 된다. 조동사가 있을 때 do를 겹쳐 쓰지 않는다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Nowhere else in the world ____ a landscape quite like this one.",
+   "choices": [
+    "you will find",
+    "will you find",
+    "will find you",
+    "do you will find",
+    "you find will"
+   ],
+   "answer": 2,
+   "why": "Nowhere는 부정의 뜻을 가진 부사이므로 문두에 오면 '조동사+주어+동사원형'으로 도치되어 will you find가 된다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "____ had the results been announced than the whole crowd began to cheer.",
+   "choices": [
+    "No sooner",
+    "Hardly",
+    "Scarcely",
+    "Not until",
+    "Only then"
+   ],
+   "answer": 1,
+   "why": "뒤에 than이 있으므로 비교급 표현인 No sooner가 필요하다. Hardly와 Scarcely는 when과 짝을 이루고, Not until과 Only then은 이 구조를 만들지 못한다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  Never before ①<u>had</u> the scientists ②<u>seen</u> such a rapid change in sea ice, ③<u>nor</u> ④<u>they had</u> expected it ⑤<u>to occur</u> so soon.",
+   "choices": [
+    "had",
+    "seen",
+    "nor",
+    "they had",
+    "to occur"
+   ],
+   "answer": 4,
+   "why": "부정의 연결어 nor 뒤에서도 도치가 일어나야 하므로 they had를 had they로 고쳐야 한다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  Only after the war ①<u>had ended</u> ②<u>the families learned</u> ③<u>what</u> had happened ④<u>to</u> the soldiers ⑤<u>who</u> never returned.",
+   "choices": [
+    "had ended",
+    "the families learned",
+    "what",
+    "to",
+    "who"
+   ],
+   "answer": 2,
+   "why": "'Only after+절'이 문두에 왔으므로 주절을 did the families learn으로 도치해야 한다. 종속절 had ended는 도치하지 않는 것이 맞다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  Little ①<u>does</u> the average consumer ②<u>knows</u> about ③<u>how</u> much water ④<u>is used</u> to produce ⑤<u>a single</u> pair of jeans.",
+   "choices": [
+    "does",
+    "knows",
+    "how",
+    "is used",
+    "a single"
+   ],
+   "answer": 2,
+   "why": "도치의 조동사 does 뒤에는 동사원형 know가 와야 한다. 간접의문문 how much water is used의 어순은 알맞다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  Under no circumstances ①<u>are</u> passengers ②<u>allowed</u> to open the doors, ③<u>nor</u> ④<u>should they</u> ⑤<u>using</u> the emergency slides without instruction.",
+   "choices": [
+    "are",
+    "allowed",
+    "nor",
+    "should they",
+    "using"
+   ],
+   "answer": 5,
+   "why": "조동사 should 뒤에는 동사원형이 와야 하므로 using을 use로 고쳐야 한다. nor 뒤의 should they 도치는 알맞다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  Rarely ①<u>has</u> a debut novel ②<u>received</u> such attention, and seldom ③<u>a young writer has</u> ④<u>been</u> compared ⑤<u>to</u> the great masters so early.",
+   "choices": [
+    "has",
+    "received",
+    "a young writer has",
+    "been",
+    "to"
+   ],
+   "answer": 3,
+   "why": "seldom이 문두에 온 두 번째 절도 도치되어야 하므로 a young writer has를 has a young writer로 고쳐야 한다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  Not until she ①<u>had read</u> the letter twice ②<u>did</u> she ③<u>understood</u> what ④<u>her grandmother</u> ⑤<u>had meant</u>.",
+   "choices": [
+    "had read",
+    "did",
+    "understood",
+    "her grandmother",
+    "had meant"
+   ],
+   "answer": 3,
+   "why": "도치의 조동사 did 뒤에는 동사원형 understand가 와야 한다. 종속절의 과거완료와 간접의문문 어순은 알맞다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  Hardly ①<u>the train had</u> ②<u>left</u> the station ③<u>when</u> the passengers ④<u>realized</u> that they ⑤<u>were on</u> the wrong line.",
+   "choices": [
+    "the train had",
+    "left",
+    "when",
+    "realized",
+    "were on"
+   ],
+   "answer": 1,
+   "why": "Hardly가 문두에 왔으므로 had the train left로 도치해야 한다. 짝이 되는 접속사 when은 알맞다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  Only by ①<u>reading</u> the instructions carefully ②<u>can you</u> ③<u>to avoid</u> the mistakes ④<u>that</u> most beginners ⑤<u>make</u>.",
+   "choices": [
+    "reading",
+    "can you",
+    "to avoid",
+    "that",
+    "make"
+   ],
+   "answer": 3,
+   "why": "조동사 can 뒤에는 to 없이 동사원형이 와야 하므로 to avoid를 avoid로 고친다. Only by+동명사 뒤의 can you 도치는 알맞다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  Never ①<u>have</u> I met anyone ②<u>as</u> determined as she is, ③<u>and</u> ④<u>so has</u> my ⑤<u>partner</u>.",
+   "choices": [
+    "have",
+    "as",
+    "and",
+    "so has",
+    "partner"
+   ],
+   "answer": 4,
+   "why": "앞 내용이 부정(Never have I met)이므로 '~도 마찬가지다'는 nor[neither] has로 써야 한다. so는 긍정문을 이어받을 때만 쓴다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  At no time during the negotiation ①<u>did</u> either side ②<u>threaten</u> to leave, ③<u>nor</u> ④<u>did anyone</u> ⑤<u>raised</u> their voice.",
+   "choices": [
+    "did",
+    "threaten",
+    "nor",
+    "did anyone",
+    "raised"
+   ],
+   "answer": 5,
+   "why": "조동사 did 뒤에는 동사원형이 오므로 raised를 raise로 고쳐야 한다. nor did anyone의 도치 어순은 알맞다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)에서 어법상 알맞은 것끼리 짝지은 것은?  Rarely (A)(does / do) the museum open on Mondays, and never (B)(it has / has it) opened on national holidays. Only recently (C)(the board decided / did the board decide) to extend its hours.",
+   "choices": [
+    "does – it has – the board decided",
+    "does – has it – did the board decide",
+    "do – has it – did the board decide",
+    "does – has it – the board decided",
+    "do – it has – did the board decide"
+   ],
+   "answer": 2,
+   "why": "(A) 주어 the museum이 단수이므로 does, (B) never 뒤에서 도치되어 has it, (C) Only recently 뒤 주절 도치로 did the board decide가 맞다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)에서 어법상 알맞은 것끼리 짝지은 것은?  Not until the printer stopped (A)(the students noticed / did the students notice) the smell, and only then (B)(they realized / did they realize) that something (C)(was / were) wrong with the machine.",
+   "choices": [
+    "the students noticed – did they realize – was",
+    "did the students notice – they realized – were",
+    "did the students notice – did they realize – was",
+    "did the students notice – did they realize – were",
+    "the students noticed – they realized – was"
+   ],
+   "answer": 3,
+   "why": "Not until절과 only then 뒤의 주절은 모두 도치되며, (C)의 주어 something은 단수이므로 was가 알맞다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)에서 어법상 알맞은 것끼리 짝지은 것은?  Seldom (A)(is / does) the old lighthouse open to visitors, and neither (B)(is / does) the small museum next to it. Only in summer (C)(you can / can you) go inside.",
+   "choices": [
+    "is – is – can you",
+    "does – is – can you",
+    "is – does – you can",
+    "is – is – you can",
+    "does – does – can you"
+   ],
+   "answer": 1,
+   "why": "(A) open이 형용사 보어이므로 be동사 is, (B)도 같은 be동사를 받아 neither is, (C)는 Only+부사구 뒤 주절 도치로 can you가 된다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)에서 어법상 알맞은 것끼리 짝지은 것은?  Little (A)(did the villagers know / the villagers knew) about the plan, nor (B)(they were / were they) told about it until the last minute; not once (C)(did the mayor mention / the mayor mentioned) it in public.",
+   "choices": [
+    "the villagers knew – were they – did the mayor mention",
+    "did the villagers know – they were – the mayor mentioned",
+    "did the villagers know – were they – did the mayor mention",
+    "did the villagers know – were they – the mayor mentioned",
+    "the villagers knew – they were – the mayor mentioned"
+   ],
+   "answer": 3,
+   "why": "Little, nor, not once 세 부정어(구)가 모두 절의 앞에 있으므로 세 곳 모두 도치되어야 한다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)에서 어법상 알맞은 것끼리 짝지은 것은?  Hardly (A)(had the guests arrived / the guests had arrived) (B)(when / than) the lights went out, and not a single candle (C)(could be found / could it be found) in the house.",
+   "choices": [
+    "had the guests arrived – when – could be found",
+    "the guests had arrived – when – could be found",
+    "had the guests arrived – than – could be found",
+    "had the guests arrived – when – could it be found",
+    "the guests had arrived – than – could it be found"
+   ],
+   "answer": 1,
+   "why": "(A) Hardly 뒤 도치, (B) Hardly의 짝은 when, (C) not a single candle이 주어이므로 도치하지 않고 could be found를 쓴다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)에서 어법상 알맞은 것끼리 짝지은 것은?  Only members of staff (A)(may enter / may they enter) the laboratory, and under no circumstances (B)(the door should / should the door) be left open. Never (C)(has / have) the rules been so strict.",
+   "choices": [
+    "may enter – should the door – have",
+    "may they enter – should the door – have",
+    "may enter – the door should – has",
+    "may enter – should the door – has",
+    "may they enter – the door should – have"
+   ],
+   "answer": 1,
+   "why": "(A) Only가 주어를 수식하므로 도치하지 않고, (B) 부정어구 뒤에서는 도치하며, (C) 주어 the rules가 복수이므로 have가 맞다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)에서 어법상 알맞은 것끼리 짝지은 것은?  No sooner (A)(had the film ended / the film had ended) (B)(than / when) the audience stood up, and so (C)(did / were) the critics in the front row.",
+   "choices": [
+    "had the film ended – than – did",
+    "the film had ended – than – did",
+    "had the film ended – when – did",
+    "had the film ended – than – were",
+    "the film had ended – when – were"
+   ],
+   "answer": 1,
+   "why": "(A) No sooner 뒤 도치, (B) No sooner의 짝은 than, (C) 앞의 일반동사 stood를 대신하므로 did가 알맞다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)에서 어법상 알맞은 것끼리 짝지은 것은?  Not only (A)(the app tracks / does the app track) your sleep, but it (B)(it also shows / also it shows) daily reports; only when you wear it at night (C)(does it work / it works) properly.",
+   "choices": [
+    "does the app track – it also shows – does it work",
+    "the app tracks – it also shows – does it work",
+    "does the app track – also it shows – does it work",
+    "does the app track – it also shows – it works",
+    "the app tracks – also it shows – it works"
+   ],
+   "answer": 1,
+   "why": "(A) Not only 뒤는 도치, (B) but 이하는 정상 어순이라 주어+also+동사, (C) Only when절 뒤 주절은 도치되어 does it work가 된다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ㄱ. Never have I been treated so rudely.  ㄴ. Only after midnight the noise stopped.  ㄷ. Neither of us was ready for the test.  ㄹ. Hardly had we started when it began to rain.  ㅁ. Little he suspected that he was being followed.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ·ㄷ·ㄹ이 옳다. ㄴ은 did the noise stop으로, ㅁ은 Little did he suspect로 도치해야 한다. ㄷ의 Neither of us는 주어이므로 도치하지 않는 것이 맞다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?  ㄱ. Seldom does she asks for help.  ㄴ. Only then did the crowd fall silent.  ㄷ. Not until the results came out did we celebrate.  ㄹ. Never I will forgive him for that.  ㅁ. Nor did he apologize for his mistake.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 does 뒤에 원형 ask를, ㄹ은 Never will I forgive로 도치해야 하므로 틀린 문장은 2개다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ㄱ. Under no circumstances should you sign that contract.  ㄴ. Rarely do the twins argue with each other.  ㄷ. No sooner had he hung up when the phone rang again.  ㄹ. Only by chance did they meet again.  ㅁ. Not only she cooked dinner but she also washed the dishes.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ·ㄴ·ㄹ이 옳다. ㄷ은 when을 than으로, ㅁ은 Not only did she cook으로 고쳐야 한다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ㄱ. Not once did she look back.  ㄴ. Only in this shop you can buy the cheese.  ㄷ. Hardly ever does he take a day off.  ㄹ. Neither am I interested in the offer.  ㅁ. Little was known about the disease at that time.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "ㄴ만 틀렸고(can you buy로 도치해야 함) 나머지는 옳다. ㅁ의 Little은 주어 자리이므로 도치 없이 was known을 쓴다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?  ㄱ. Never has the company faced such a crisis.  ㄴ. Only when the rain stopped did the workers returned.  ㄷ. Not until yesterday I heard the news.  ㄹ. Nor was he willing to explain his decision.  ㅁ. Seldom do we see such a bright comet.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ㄴ은 did 뒤에 원형 return을, ㄷ은 did I hear로 도치해야 하므로 틀린 문장은 2개다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ㄱ. At no time were the children left alone.  ㄴ. Only after he apologized did she speak to him again.  ㄷ. Rarely has such a young player win a medal.  ㄹ. In no way is this decision final.  ㅁ. Little did they knew about the risk.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ·ㄴ·ㄹ이 옳다. ㄷ은 has 뒤에 과거분사 won을, ㅁ은 did 뒤에 원형 know를 써야 한다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은? (Only+부사구와 be동사)",
+   "choices": [
+    "Only in the morning the market is open.",
+    "Only in the morning is the market open.",
+    "Only in the morning does the market is open.",
+    "Only in the morning the market opens is.",
+    "Only in the morning is open the market."
+   ],
+   "answer": 2,
+   "why": "'Only+부사구'가 문두에 오면 be동사가 주어 앞으로 나가 is the market open이 된다. be동사 문장에 does를 덧붙일 수 없다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은? (도치 뒤 동사 형태)",
+   "choices": [
+    "Never had I imagined such a result.",
+    "Hardly could she believe her eyes.",
+    "Not until then did he speak.",
+    "Only recently did the truth came out.",
+    "Nor will I accept your excuse."
+   ],
+   "answer": 4,
+   "why": "④는 도치의 조동사 did 뒤에 과거형 came을 써서 틀렸으며 come으로 고쳐야 한다. 나머지는 모두 바른 도치 어순이다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은? (Nowhere의 도치)",
+   "choices": [
+    "Nowhere you can find better bread than here.",
+    "Nowhere can you find better bread than here.",
+    "Nowhere can find you better bread than here.",
+    "Nowhere do you can find better bread than here.",
+    "Nowhere you find can better bread than here."
+   ],
+   "answer": 2,
+   "why": "부정 부사 Nowhere가 문두에 오면 '조동사+주어+동사원형' 어순이 되어 can you find가 맞다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은? (부정어구의 도치)",
+   "choices": [
+    "Little does he realize how lucky he is.",
+    "Not only was the film long, but it was also boring.",
+    "Seldom have they visited their hometown.",
+    "Under no circumstances you may smoke in this building.",
+    "Only then did I understand her long silence."
+   ],
+   "answer": 4,
+   "why": "부정어구 Under no circumstances 뒤에는 may you smoke처럼 도치해야 한다. 나머지는 조동사·be동사 도치가 모두 알맞다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화 중 어법상 옳은 것은?",
+   "choices": [
+    "A: I can't cook at all.  B: Neither can't I.",
+    "A: I can't cook at all.  B: Neither can I.",
+    "A: I can't cook at all.  B: So can I.",
+    "A: I can't cook at all.  B: Neither I can.",
+    "A: I can't cook at all.  B: Either can I."
+   ],
+   "answer": 2,
+   "why": "부정문에 대한 동의는 'Neither+조동사+주어'이다. Neither가 이미 부정이므로 can't를 쓰지 않고, 긍정의 So나 문두의 Either는 쓸 수 없다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은? (부정어가 주어인 경우)",
+   "choices": [
+    "Not a sound was heard in the empty hall.",
+    "Not a sound did be heard in the empty hall.",
+    "Not a sound heard was in the empty hall.",
+    "Not a sound was it heard in the empty hall.",
+    "Not a sound did hear in the empty hall."
+   ],
+   "answer": 1,
+   "why": "'Not a sound'가 문장의 주어이므로 도치가 일어나지 않고 수동태 was heard를 그대로 쓴다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그 사고에 대해 알려진 것은 거의 없었다.",
+   "choices": [
+    "Little did know about the accident.",
+    "Little was known about the accident.",
+    "Little did it know about the accident.",
+    "Little known was about the accident.",
+    "Little did be known about the accident."
+   ],
+   "answer": 2,
+   "why": "여기서 Little은 주어 역할을 하므로 도치 없이 'Little was known'이 된다. 부사로 쓰인 Little did he know와 구별해야 한다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그녀가 무대에 오르고 나서야 관객들은 조용해졌다.",
+   "choices": [
+    "Only after she took the stage the audience became quiet.",
+    "Only after she took the stage did the audience become quiet.",
+    "Only after did she take the stage the audience became quiet.",
+    "Only after she took the stage did the audience became quiet.",
+    "Only after she took the stage became the audience quiet."
+   ],
+   "answer": 2,
+   "why": "종속절은 그대로 두고 주절만 'did+주어+원형'으로 도치해야 하므로 did the audience become이 맞다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그는 결코 자신의 실수를 인정하려 하지 않았고, 그의 형도 마찬가지였다.",
+   "choices": [
+    "Never would he admit his mistake, and neither would his brother.",
+    "Never he would admit his mistake, and neither his brother would.",
+    "Never would he admit his mistake, and so would his brother.",
+    "Never would he admit his mistake, and nor his brother would.",
+    "Never he would admit his mistake, and so his brother would."
+   ],
+   "answer": 1,
+   "why": "Never 뒤에서 조동사 would가 도치되고, 부정 내용을 이어받을 때는 neither[nor] 뒤에도 '조동사+주어' 도치가 필요하다. so는 긍정을 이어받는다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  어떤 상황에서도 그 정보는 공유되어서는 안 된다.",
+   "choices": [
+    "Under no circumstances the information should be shared.",
+    "Under no circumstances should the information be shared.",
+    "Under no circumstances should be the information shared.",
+    "Under no circumstances should the information shared.",
+    "Under no circumstances does the information should be shared."
+   ],
+   "answer": 2,
+   "why": "부정어구 뒤에서는 조동사만 주어 앞으로 나가므로 should the information be shared가 된다. be동사까지 함께 앞으로 보내면 안 된다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?  Hardly (A)____ the ceremony ended when reporters surrounded the winner, and only then (B)____ how famous she had become.",
+   "choices": [
+    "had – did she realize",
+    "has – she realized",
+    "had – she realized",
+    "did – did she realize",
+    "had – did she realized"
+   ],
+   "answer": 1,
+   "why": "(A) Hardly ~ when 구문은 과거완료 had를 도치해 쓰고, (B) only then 뒤 주절도 did she realize로 도치한다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?  Not only (A)____ the rescue team work through the night, but volunteers (B)____ hot meals to the families.",
+   "choices": [
+    "did – brought",
+    "does – brought",
+    "did – bringing",
+    "was – brought",
+    "did – to bring"
+   ],
+   "answer": 1,
+   "why": "(A) Not only 뒤는 도치되어 did the rescue team work, (B) but 이하 절은 정상 어순의 과거동사 brought가 온다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말은?  ____ then did the audience understand the ending of the film.  /  ____ by working overtime could they finish the project.",
+   "choices": [
+    "Only",
+    "Not",
+    "Never",
+    "Little",
+    "Hardly"
+   ],
+   "answer": 1,
+   "why": "Only then(그제서야)과 Only by ~ing(오직 ~함으로써) 모두 Only가 필요하며, 두 문장 모두 그 때문에 주절이 도치되었다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말은?  Never ____ I seen so many stars in one night.  /  Seldom ____ the twins argued in public since childhood.",
+   "choices": [
+    "have",
+    "has",
+    "did",
+    "do",
+    "were"
+   ],
+   "answer": 1,
+   "why": "두 문장 모두 뒤에 과거분사가 있고 주어가 I와 the twins(복수)이므로 완료의 have가 도치되어 쓰인다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "주어진 문장을 Hardly로 시작하는 문장으로 바꿔 쓰시오. (완전한 문장으로)  The audience had hardly settled down when the curtain rose.",
+   "answer": "Hardly had the audience settled down when the curtain rose.",
+   "alt": [
+    "Hardly had the audience settled down when the curtain rose"
+   ],
+   "why": "Hardly가 문두로 나가면 과거완료의 had가 주어 앞으로 이동해 'had+주어+p.p.'가 되고, 짝이 되는 when절은 그대로 둔다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "주어진 문장을 Not until로 시작하는 문장으로 바꿔 쓰시오. (완전한 문장으로)  We did not understand the meaning of the poem until our teacher explained it.",
+   "answer": "Not until our teacher explained it did we understand the meaning of the poem.",
+   "alt": [
+    "Not until our teacher explained it did we understand the meaning of the poem"
+   ],
+   "why": "'Not until+절'을 문두로 보내면 종속절은 그대로 두고 주절만 'did+주어+동사원형'으로 도치한다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "주어진 문장을 Only when으로 시작하는 문장으로 바꿔 쓰시오. (완전한 문장으로)  You can appreciate the artist's skill only when you see the painting in person.",
+   "answer": "Only when you see the painting in person can you appreciate the artist's skill.",
+   "alt": [
+    "Only when you see the painting in person can you appreciate the artist's skill"
+   ],
+   "why": "Only+when절이 문두에 오면 when절은 정상 어순, 주절은 조동사 can이 주어 앞으로 나가는 도치가 일어난다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "주어진 문장을 No sooner로 시작하는 문장으로 바꿔 쓰시오. (완전한 문장으로)  He had no sooner signed the contract than he regretted it.",
+   "answer": "No sooner had he signed the contract than he regretted it.",
+   "alt": [
+    "No sooner had he signed the contract than he regretted it"
+   ],
+   "why": "No sooner가 문두로 나가면 had가 주어 앞으로 도치되고, 짝이 되는 접속사는 than을 그대로 쓴다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "주어진 문장을 Not only로 시작하는 문장으로 바꿔 쓰시오. (완전한 문장으로)  She not only designed the building but also supervised the construction.",
+   "answer": "Not only did she design the building, but she also supervised the construction.",
+   "alt": [
+    "Not only did she design the building but she also supervised the construction",
+    "Not only did she design the building, but she also supervised the construction"
+   ],
+   "why": "Not only가 문두에 오면 그 절만 'did+주어+동사원형'으로 도치하고, but 이하 절은 주어를 다시 써서 정상 어순으로 이어 간다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Only after the storm passed <u>the rescue teams were</u> able to reach the village.",
+   "answer": "were the rescue teams",
+   "alt": [],
+   "why": "'Only after+절'이 문두에 왔으므로 주절의 be동사가 주어 앞으로 나가 were the rescue teams able이 되어야 한다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Under no circumstances <u>the results should</u> be released before Friday.",
+   "answer": "should the results",
+   "alt": [],
+   "why": "부정어구가 문두에 오면 조동사만 주어 앞으로 나가므로 should the results be released가 된다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Not a single passenger <u>were</u> injured in the accident.",
+   "answer": "was",
+   "alt": [],
+   "why": "Not a single passenger가 주어이므로 도치가 일어나지 않으며, 단수 주어에 맞춰 was를 써야 한다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 쓰시오. (세 단어, 현재완료로, face를 사용)  (그는 자신의 오랜 경력에서 그런 어려운 결정을 마주한 적이 없다.)  →  Never in his long career ____ such a difficult decision.",
+   "answer": "has he faced",
+   "alt": [],
+   "why": "부정어구가 문두에 왔으므로 현재완료의 has가 주어 he 앞으로 도치되어 has he faced가 된다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 쓰시오. (세 단어, can과 get을 사용)  (당신은 어디에서도 더 좋은 전망을 얻을 수 없다.)  →  Nowhere ____ a better view of the city than from this rooftop.",
+   "answer": "can you get",
+   "alt": [],
+   "why": "부정 부사 Nowhere가 문두에 오면 조동사 can이 주어 앞으로 나가고 뒤에는 동사원형 get이 온다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 쓰시오. (네 단어, nor와 the staff를 사용)  (그 호텔은 깨끗하지 않았고, 직원들도 특별히 친절하지 않았다.)  →  The hotel was not clean, ____ particularly friendly.",
+   "answer": "nor was the staff",
+   "alt": [],
+   "why": "부정 내용을 이어받는 nor 뒤에도 '동사+주어' 도치가 일어나므로 nor was the staff가 된다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "대화가 자연스럽도록 빈칸에 알맞은 말을 쓰시오. (세 단어)  A: I have never been so embarrassed in my life.  B: ____.",
+   "answer": "Neither have I",
+   "alt": [
+    "neither have I",
+    "Nor have I"
+   ],
+   "why": "부정의 현재완료에 동의할 때는 'Neither[Nor]+have+주어' 어순으로 답한다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "주어진 문장을 Only after로 시작하는 문장으로 바꿔 쓰시오. (완전한 문장으로)  I realized my error only after the exam was over.",
+   "answer": "Only after the exam was over did I realize my error.",
+   "alt": [
+    "Only after the exam was over did I realize my error"
+   ],
+   "why": "'Only+부사절'이 문두에 오면 그 절은 그대로 두고 주절만 did I realize로 도치한다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Rarely <u>the city sees</u> such heavy snow in October.",
+   "answer": "does the city see",
+   "alt": [],
+   "why": "부정 빈도부사 Rarely가 문두에 왔으므로 'does+주어+동사원형'으로 도치해야 한다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Only students who registered in advance <u>may they enter</u> the main hall.",
+   "answer": "may enter",
+   "alt": [],
+   "why": "Only가 주어(students)를 수식하는 경우에는 도치하지 않으므로 may enter로 써야 한다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "neither를 사용하여 빈칸을 완성하시오. (네 단어)  He will never admit that he was wrong, and ____.",
+   "answer": "neither will his partner",
+   "alt": [
+    "Neither will his partner"
+   ],
+   "why": "부정 내용을 이어받을 때는 'neither+조동사+주어' 어순을 쓰며, 앞 절의 조동사 will을 그대로 받는다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 쓰시오. (세 단어, hear를 사용)  (여행 내내 우리는 아이들에게서 단 한 번의 불평도 듣지 못했다.)  →  Not once during the entire trip ____ a single complaint from the children.",
+   "answer": "did we hear",
+   "alt": [],
+   "why": "Not once가 문두에 온 부정어구이므로 주절이 'did+주어+동사원형'으로 도치된다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "주어진 문장을 Only then으로 시작하는 문장으로 바꿔 쓰시오. (완전한 문장으로)  The truth about the accident became clear only then.",
+   "answer": "Only then did the truth about the accident become clear.",
+   "alt": [
+    "Only then did the truth about the accident become clear"
+   ],
+   "why": "'Only+부사'가 문두에 오면 주절이 도치되어 did the truth ... become이 되고, did 뒤에는 원형 become을 쓴다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Hardly had the meeting begun <u>than</u> the fire alarm went off.",
+   "answer": "when",
+   "alt": [],
+   "why": "Hardly[Scarcely]가 이끄는 구문의 짝은 when이며, than은 No sooner와 함께 쓴다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "주어진 문장을 Never로 시작하는 문장으로 바꿔 쓰시오. (완전한 문장으로)  She had never imagined that her small blog would become so popular.",
+   "answer": "Never had she imagined that her small blog would become so popular.",
+   "alt": [
+    "Never had she imagined that her small blog would become so popular"
+   ],
+   "why": "부정어 Never가 문두로 나가면 과거완료의 had가 주어 앞으로 도치되어 Never had she imagined가 된다.",
+   "no": 200
+  }
+ ]
+}
