@@ -11,7 +11,8 @@ for f in sorted(glob.glob(H+'/bank/??-??.json')):
 cats.sort(key=lambda c:order.get(c['id'],999))
 books=json.load(open(H+'/bank/textbooks.json',encoding='utf-8'))
 orun=json.load(open(H+'/bank/orun.json',encoding='utf-8'))
-blob=json.dumps({'cats':cats,'books':books,'orun':orun},ensure_ascii=False,separators=(',',':')).replace('</','<\\/')
+covers=json.load(open(H+'/bank/covers.json',encoding='utf-8'))
+blob=json.dumps({'cats':cats,'books':books,'orun':orun,'covers':covers},ensure_ascii=False,separators=(',',':')).replace('</','<\\/')
 s=open(H+'/site.html',encoding='utf-8').read()
 assert '__BANK__' in s
 out=s.replace('__BANK__',blob,1)
