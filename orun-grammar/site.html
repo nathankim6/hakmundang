@@ -279,8 +279,9 @@ body{background:#f3f6fb;color:var(--ink)}
 header.top{background:rgba(255,255,255,.74);border-bottom:1px solid rgba(228,234,242,.9);
   backdrop-filter:blur(26px) saturate(180%);-webkit-backdrop-filter:blur(26px) saturate(180%)}
 .hwrap{gap:14px}
-.mark{background:linear-gradient(150deg,#2f7dff,#1546b8);box-shadow:0 6px 18px rgba(31,95,224,.34)}
-.mark svg{stroke:#fff}
+.mark{background:#fff;border:1px solid var(--line);box-shadow:0 3px 10px rgba(16,32,64,.1);overflow:hidden}
+.mark img{width:82%;height:82%;object-fit:contain;display:block}
+.mark svg{stroke:var(--acc)}
 .brand b{color:var(--ink)}
 .brand em{color:var(--acc);font-family:var(--mono);letter-spacing:.26em;font-size:9.5px;font-weight:600}
 nav.seg{margin:0 auto;background:rgba(255,255,255,.72);padding:4px;border-radius:999px;
@@ -705,6 +706,100 @@ table.rep td{padding:9px 13px}
 .codebox{font-size:11.5px;border-radius:12px;letter-spacing:0}
 .pvwrap{border-radius:20px;padding:18px}
 
+
+/* ── 숫자 입력 스피너 제거 ── */
+input[type=number]{-moz-appearance:textfield;appearance:textfield}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none;appearance:none;margin:0}
+
+/* ── 출제 옵션 · 애플 글래스 캡슐 ── */
+.lvbox{gap:10px;align-items:center}
+.lvchip,.numin{position:relative;display:inline-flex;align-items:center;height:40px;padding:0;gap:0;
+  border-radius:999px;border:1px solid rgba(255,255,255,.9);overflow:hidden;
+  background:linear-gradient(180deg,rgba(255,255,255,.94),rgba(246,249,253,.72));
+  backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,1),inset 0 -1px 0 rgba(16,32,64,.04),
+             0 1px 2px rgba(16,32,64,.05),0 8px 20px rgba(16,32,64,.07);
+  transition:.3s var(--spring)}
+.lvchip::after,.numin::after{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  background:linear-gradient(180deg,rgba(255,255,255,.6),transparent 52%)}
+.lvchip:hover,.numin:hover{transform:translateY(-1px);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,1),0 2px 4px rgba(16,32,64,.05),0 12px 26px rgba(16,32,64,.11)}
+.lvchip:focus-within,.numin:focus-within{border-color:rgba(31,95,224,.5);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,1),0 0 0 4px rgba(31,95,224,.13),0 10px 24px rgba(31,95,224,.14)}
+.lvchip>span:first-child,.numin i{position:relative;z-index:1;flex:none;display:flex;align-items:center;
+  margin:5px 0 5px 5px;padding:0 13px;border-radius:999px;align-self:stretch;
+  font-size:11.5px;font-weight:800;letter-spacing:-.005em;font-style:normal;background:#eef2f8;color:var(--sub)}
+.lvchip .num,.numin .num{position:relative;z-index:1;width:56px;height:38px;border:0;background:transparent;
+  box-shadow:none;border-radius:0;text-align:center;font-size:15px;font-weight:800;
+  letter-spacing:-.02em;color:var(--ink);padding:0 6px}
+.lvchip .num:focus,.numin .num:focus{outline:0;box-shadow:none}
+.lvchip.s상>span:first-child{background:rgba(224,82,77,.13);color:#c0413c}
+.lvchip.s중>span:first-child{background:rgba(240,168,27,.16);color:#a8760a}
+.lvchip.s하>span:first-child{background:rgba(14,163,111,.14);color:#0b7a56}
+.lvchip.s객관식>span:first-child{background:rgba(31,95,224,.13);color:var(--acc)}
+.lvchip.s주관식>span:first-child{background:rgba(240,168,27,.16);color:#a8760a}
+.lvchip.s상:focus-within{border-color:rgba(224,82,77,.45);box-shadow:inset 0 1px 0 #fff,0 0 0 4px rgba(224,82,77,.12),0 10px 24px rgba(224,82,77,.13)}
+.lvchip.s중:focus-within,.lvchip.s주관식:focus-within{border-color:rgba(240,168,27,.5);box-shadow:inset 0 1px 0 #fff,0 0 0 4px rgba(240,168,27,.14),0 10px 24px rgba(240,168,27,.15)}
+.lvchip.s하:focus-within{border-color:rgba(14,163,111,.45);box-shadow:inset 0 1px 0 #fff,0 0 0 4px rgba(14,163,111,.13),0 10px 24px rgba(14,163,111,.14)}
+.numin{margin-left:4px}
+.numin i{background:rgba(31,95,224,.1);color:var(--acc)}
+.lvbox .hint{margin-left:4px;font-size:11.5px;color:var(--sub2)}
+
+/* 프리셋 알약도 같은 결로 */
+.pills{gap:7px}
+.pill{height:36px;padding:0 16px;border:1px solid rgba(255,255,255,.9);
+  background:linear-gradient(180deg,rgba(255,255,255,.94),rgba(246,249,253,.72));
+  backdrop-filter:blur(16px) saturate(180%);-webkit-backdrop-filter:blur(16px) saturate(180%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,1),0 1px 2px rgba(16,32,64,.05);font-size:13px}
+.pill:hover{transform:translateY(-1px);border-color:rgba(31,95,224,.4);color:var(--acc);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,1),0 8px 20px rgba(31,95,224,.14)}
+.pill.on{background:linear-gradient(180deg,#243149,var(--ink));border-color:transparent;color:#fff;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 8px 20px rgba(14,23,38,.28)}
+.opt{gap:14px 16px}
+.txt{height:40px;border:1px solid rgba(255,255,255,.9);
+  background:linear-gradient(180deg,rgba(255,255,255,.94),rgba(246,249,253,.72));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,1),0 1px 2px rgba(16,32,64,.05)}
+.sw i{width:42px;height:24px;box-shadow:inset 0 1px 3px rgba(16,32,64,.14)}
+.sw i::after{width:20px;height:20px}
+.sw.on i::after{transform:translateX(18px)}
+
+
+/* ── 선택 상태 이펙트 ── */
+.chk{position:relative;background:linear-gradient(180deg,#fff,#f7f9fc);border:1.5px solid #cdd7e5;
+  box-shadow:inset 0 1px 0 #fff,0 1px 2px rgba(16,32,64,.06);transition:.3s var(--spring)}
+.it:hover .chk,.les>.h:hover .chk{border-color:#a9c2ee}
+.chk svg{stroke-width:3.4}
+.it.sel .chk,.les.allsel>.h .chk{
+  background:linear-gradient(160deg,#4b8bff,var(--acc));border-color:transparent;
+  box-shadow:0 2px 6px rgba(31,95,224,.42),0 0 0 3px rgba(31,95,224,.14);
+  animation:chkpop .34s var(--spring)}
+@keyframes chkpop{0%{transform:scale(.72)}60%{transform:scale(1.12)}100%{transform:scale(1)}}
+.it.sel .chk svg,.les.allsel>.h .chk svg{opacity:1;transform:none;animation:chkdraw .3s .06s var(--spring) both}
+@keyframes chkdraw{from{opacity:0;transform:scale(.4) rotate(-14deg)}to{opacity:1;transform:none}}
+
+.it{transition:.26s var(--spring)}
+.it::before{width:3px;left:0;top:5px;bottom:5px;border-radius:0 3px 3px 0;
+  background:linear-gradient(180deg,#5b95ff,var(--acc));box-shadow:0 0 10px rgba(31,95,224,.5);
+  transform:scaleY(.3);transition:.3s var(--spring)}
+.it:hover::before{opacity:.45;transform:scaleY(1)}
+.it.sel::before{opacity:1;transform:scaleY(1)}
+.it.sel{background:linear-gradient(96deg,rgba(31,95,224,.13),rgba(31,95,224,.05) 62%,rgba(31,95,224,.02));
+  font-weight:700;color:#12315f;box-shadow:inset 0 0 0 1px rgba(31,95,224,.14),0 2px 8px rgba(31,95,224,.08)}
+.it.sel .qn{color:var(--acc);font-weight:800}
+.it.sel .gd{background:rgba(31,95,224,.14);color:var(--acc)}
+
+.les.allsel>.h{background:linear-gradient(96deg,rgba(31,95,224,.16),rgba(31,95,224,.06));
+  color:#12315f;box-shadow:inset 0 0 0 1px rgba(31,95,224,.16)}
+.les.allsel>.h .lb{color:#5b81c4}
+.les.op>.h{background:var(--accSoft);color:var(--acc);box-shadow:inset 0 0 0 1px rgba(31,95,224,.1)}
+.les.op.allsel>.h{background:linear-gradient(96deg,rgba(31,95,224,.18),rgba(31,95,224,.07))}
+.les>.h,.les>.h .cv{transition:.26s var(--spring)}
+.les.op>.h .cv{color:var(--acc)}
+
+/* 카테고리 트리(문법 카테고리별)에서도 동일 */
+.tree .it.sel{border-radius:9px}
+
 /* ══ 시험지 ══ */
 #paper{display:none}
 .sheet{background:#fff;width:210mm;min-height:297mm;margin:0 auto 16px;padding:14mm 13mm 15mm;position:relative;
@@ -712,7 +807,13 @@ table.rep td{padding:9px 13px}
   font-family:'Noto Sans KR','Noto Sans',sans-serif;color:#111}
 .exh{display:flex;align-items:stretch;border-bottom:2.4px solid #0f1b2d;padding-bottom:8px}
 .exh .lft{display:flex;align-items:center;gap:10px}
-.exh .bar{width:4px;border-radius:2px;background:linear-gradient(#f5b01b,#e39a06)}
+.exh .bar{width:3.4px;border-radius:2px;align-self:stretch;min-height:26px;background:linear-gradient(#f5b01b,#e39a06)}
+.exlogo{flex:none;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:2px;padding-right:10px;margin-right:10px;border-right:1px solid #e6ebf2;align-self:center}
+.exlogo img{width:34px;height:auto;display:block}
+.exlogo b{font-size:6.2px;font-weight:800;letter-spacing:.07em;color:#3a3a3a;white-space:nowrap}
+.exlogo.sm img{width:24px}.exlogo.sm b{font-size:5.2px}
+.keyh .exlogo{align-self:center}
 .exh .t1{font-size:19px;font-weight:800;letter-spacing:-.03em;line-height:1.25}
 .exh .t0{font-size:9.5px;font-weight:800;letter-spacing:.22em;color:#8a97a8;margin-bottom:1px}
 .exh .rgt{margin-left:auto;text-align:right;font-size:9.5px;color:#8a97a8;line-height:1.6;align-self:flex-end}
@@ -792,7 +893,7 @@ table.rep td{padding:9px 13px}
 
 <header class="top"><div class="hwrap">
   <div class="brand">
-    <div class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="#f5b01b" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H19v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M8.5 8.5h6M8.5 12h4"/></svg></div>
+    <div class="mark" id="brandMark"></div>
     <div><b>옳은문법</b><em>ORUN GRAMMAR</em></div>
   </div>
   <nav class="seg" id="nav"></nav>
@@ -810,6 +911,7 @@ table.rep td{padding:9px 13px}
 const DATA=JSON.parse(document.getElementById('bank-data').textContent);
 const CATS=DATA.cats, BOOKS=DATA.books||{}, ORUN=DATA.orun||{ele:{books:[]},mid:{books:[]}};
 const COVERS=DATA.covers||{};
+const LOGO=(DATA.logo&&DATA.logo.mark)||'';
 const byId={}; CATS.forEach(c=>byId[c.id]=c);
 const GRADES=['전체','중1','중2','중3','고등'], LVS=['상','중','하'];
 const CIRC=['①','②','③','④','⑤'];
@@ -1362,6 +1464,9 @@ function pqHtml(q,pts){
   }
   return h+'</div>';
 }
+function exLogo(cls){
+  if(!LOGO) return '';
+  return '<div class="exlogo'+(cls?' '+cls:'')+'"><img src="'+LOGO+'" alt=""><b>ORUN ACADEMY</b></div>';}
 function buildPaper(exam,withKey,target){
   const cfg=exam.cfg, qs=exam.qs;
   const per=Math.floor(100/qs.length), ex=100-per*qs.length;
@@ -1372,7 +1477,7 @@ function buildPaper(exam,withKey,target){
   let h='';
   pages.forEach((pg,pi)=>{
     h+='<div class="sheet">'+(pi===0?
-      '<div class="exh"><div class="lft"><div class="bar"></div><div>'+
+      '<div class="exh">'+exLogo()+'<div class="lft"><div class="bar"></div><div>'+
       '<div class="t0">ORUN GRAMMAR · '+esc(cfg.grade)+(cfg.book?' · '+esc(cfg.book):'')+'</div>'+
       '<div class="t1">'+esc(cfg.title)+'</div></div></div>'+
       '<div class="rgt"><b>옳은영어</b>총 '+qs.length+'문항 · 100점 만점</div></div>'+
@@ -1380,13 +1485,13 @@ function buildPaper(exam,withKey,target){
       '<div class="sc"><span>점수</span><i>&nbsp; &nbsp; / 100</i></div></div>'+
       '<div class="exn"><b>유의사항</b> 객관식은 ①~⑤ 중 하나를, 주관식은 빈칸에 알맞은 말을 정확히 쓰시오.'+
       '<span class="sp">난이도 상 · 중 · 하 표기</span></div>'
-      :'<div class="exh"><div class="lft"><div class="bar"></div><div><div class="t0">ORUN GRAMMAR</div>'+
+      :'<div class="exh">'+exLogo('sm')+'<div class="lft"><div class="bar"></div><div><div class="t0">ORUN GRAMMAR</div>'+
        '<div class="t1" style="font-size:15px">'+esc(cfg.title)+'</div></div></div>'+
        '<div class="rgt"><b>옳은영어</b>'+(pi+1)+'쪽</div></div><div style="height:9px"></div>')+
       '<div class="excols">'+pg.map(q=>pqHtml(q,per+(qs.indexOf(q)<ex?1:0))).join('')+'</div>'+foot(pi+1)+'</div>';
   });
   if(withKey){
-    h+='<div class="sheet"><div class="keyh"><div class="bar"></div><div>'+
+    h+='<div class="sheet"><div class="keyh">'+exLogo()+'<div class="bar"></div><div>'+
       '<div class="t0">ANSWER &amp; EXPLANATION</div>'+
       '<div class="t1">'+esc(cfg.title)+' — 정답 및 해설</div></div>'+
       '<div class="rgt"><b>옳은영어</b>교사용</div></div>'+
@@ -1469,12 +1574,34 @@ function wBox(P){
   const runs=P.lines.map(function(l,i){
     return (i?'<w:r><w:br/></w:r>':'')+(l.mk?wRuns(l.mk+' ',{b:1,sz:19}):'')+wRuns(l.tx,{sz:19});}).join('');
   return wP(runs,{after:36,ind:300,right:120,shd:'FAFBFD',box:1});}
+function b64bytes(d){
+  const b=atob(String(d).split(',').pop()), u=new Uint8Array(b.length);
+  for(let i=0;i<b.length;i++)u[i]=b.charCodeAt(i);
+  return u;}
+/* 14mm 폭 인라인 이미지 (EMU) */
+const LOGOW=504000, LOGOH=Math.round(504000*202/240);
+function wLogo(){
+  if(!LOGO) return '';
+  return '<w:r><w:drawing><wp:inline distT="0" distB="0" distL="0" distR="114300" '+
+   'xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing">'+
+   '<wp:extent cx="'+LOGOW+'" cy="'+LOGOH+'"/><wp:docPr id="1" name="ORUN ACADEMY"/>'+
+   '<a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">'+
+   '<a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">'+
+   '<pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">'+
+   '<pic:nvPicPr><pic:cNvPr id="1" name="logo.png"/><pic:cNvPicPr/></pic:nvPicPr>'+
+   '<pic:blipFill><a:blip r:embed="rId2" '+
+   'xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"/>'+
+   '<a:stretch><a:fillRect/></a:stretch></pic:blipFill>'+
+   '<pic:spPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="'+LOGOW+'" cy="'+LOGOH+'"/></a:xfrm>'+
+   '<a:prstGeom prst="rect"><a:avLst/></a:prstGeom></pic:spPr>'+
+   '</pic:pic></a:graphicData></a:graphic></wp:inline></w:drawing></w:r>';}
 function docxBlob(exam,withKey){
   const cfg=exam.cfg, qs=exam.qs, per=Math.floor(100/qs.length), ex=100-per*qs.length;
   const PG='<w:pgSz w:w="11906" w:h="16838"/><w:pgMar w:top="1020" w:right="900" w:bottom="1020" w:left="900" w:header="0" w:footer="0" w:gutter="0"/>';
   const SEC1='<w:sectPr><w:type w:val="continuous"/>'+PG+'<w:cols w:num="1"/></w:sectPr>';
   const SEC2='<w:sectPr><w:type w:val="continuous"/>'+PG+'<w:cols w:num="2" w:space="420" w:sep="1"/></w:sectPr>';
   let b='';
+  b+=wP(wLogo()+wRuns('  ORUN ACADEMY',{b:1,sz:15,c:'3A3A3A'}),{after:10});
   b+=wP(wRuns('ORUN GRAMMAR · '+cfg.grade+(cfg.book?' · '+cfg.book:''),{b:1,sz:15,c:'8A97A8'}),{after:20});
   b+=wP(wRuns(cfg.title,{b:1,sz:32}),{after:70,bdr:18});
   b+=wP(wRuns('학년/반 ____________     이름 ____________     점수 ________ / 100     (총 '+qs.length+'문항)',{sz:18,c:'44506A'}),{after:50});
@@ -1492,6 +1619,7 @@ function docxBlob(exam,withKey){
   let tail='';
   if(withKey){
     tail+='<w:p><w:pPr>'+SEC2+'</w:pPr></w:p>';
+    tail+=wP(wLogo()+wRuns('  ORUN ACADEMY',{b:1,sz:15,c:'3A3A3A'}),{after:10});
     tail+=wP(wRuns('ANSWER & EXPLANATION',{b:1,sz:15,c:'8A97A8'}),{after:20});
     tail+=wP(wRuns(cfg.title+' — 정답 및 해설',{b:1,sz:28}),{after:70,bdr:18});
     qs.forEach(q=>{
@@ -1508,6 +1636,7 @@ function docxBlob(exam,withKey){
      '<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">'+
      '<Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/>'+
      '<Default Extension="xml" ContentType="application/xml"/>'+
+     '<Default Extension="png" ContentType="image/png"/>'+
      '<Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/>'+
      '<Override PartName="/word/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"/></Types>'},
    {name:'_rels/.rels',data:'<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'+
@@ -1515,12 +1644,15 @@ function docxBlob(exam,withKey){
      '<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships>'},
    {name:'word/_rels/document.xml.rels',data:'<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'+
      '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">'+
-     '<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>'},
+     '<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/>'+
+     (LOGO?'<Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/logo.png"/>':'')+
+     '</Relationships>'},
    {name:'word/styles.xml',data:'<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'+
      '<w:styles xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:docDefaults><w:rPrDefault><w:rPr>'+
      '<w:rFonts w:ascii="Noto Sans KR" w:hAnsi="Noto Sans KR" w:eastAsia="Noto Sans KR" w:cs="Noto Sans KR"/>'+
      '<w:sz w:val="20"/><w:szCs w:val="20"/></w:rPr></w:rPrDefault></w:docDefaults></w:styles>'},
-   {name:'word/document.xml',data:doc}]);
+   {name:'word/document.xml',data:doc}]
+   .concat(LOGO?[{name:'word/media/logo.png',data:b64bytes(LOGO)}]:[]));
 }
 function doDocx(withKey){
   try{ dl(docxBlob(S.exam,withKey),
@@ -1806,15 +1938,7 @@ function booksView(){
     '<span class="cnt">'+sh(x[0])+'</span></button>').join('')+'</div></div>';
   if(S.bkI) return seg+sheetView();
   if(S.bkB) return seg+bookView();
-  const nS=T.books.reduce((s,b)=>s+b.chapters.reduce((t,c)=>t+c.items.length,0),0);
-  const nQ=T.books.reduce((s,b)=>s+b.chapters.reduce((t,c)=>t+c.items.reduce((u,i)=>u+i.chk.questions.length,0),0),0);
-  const nR=T.books.reduce((s,b)=>s+b.chapters.reduce((t,c)=>t+c.items.reduce((u,i)=>
-    u+((i.rec&&i.rec.sections)||[]).reduce((v,sec)=>v+(sec.rows||[]).length,0),0),0),0);
   return seg+
-   '<div class="stat"><div><b>'+T.books.length+'</b><span>교재</span></div>'+
-   '<div><b>'+nS+'</b><span>시험지</span></div>'+
-   '<div><b>'+nQ.toLocaleString()+'</b><span>'+T.check+' 문항</span></div>'+
-   '<div><b>'+nR.toLocaleString()+'</b><span>'+T.recall+' 문항</span></div></div>'+
    '<div class="shelf">'+T.books.map((b,i)=>{
      const ns=b.chapters.reduce((t,c)=>t+c.items.length,0);
      return '<div class="bk" style="animation-delay:'+(i*24)+'ms" onclick="openBook(\''+b.id+'\')">'+
@@ -1910,7 +2034,7 @@ function recHtml(it){
 function orunPaper(withKey){
   const T=oTrack(), b=oBook(), it=oItem(), isChk=S.bkTab==='chk';
   const kind=isChk?T.check:T.recall;
-  const head='<div class="exh"><div class="lft"><div class="bar"></div><div>'+
+  const head='<div class="exh">'+exLogo()+'<div class="lft"><div class="bar"></div><div>'+
     '<div class="t0">'+esc(T.vol)+' · '+esc(b.short)+'</div>'+
     '<div class="t1">'+esc(it.t)+'</div></div></div>'+
     '<div class="rgt"><b>'+esc(kind)+'</b>'+esc(it.src||'')+'</div></div>'+
@@ -1987,6 +2111,8 @@ function docxOrun(){
   catch(e){ toast('Word 생성 실패: '+e.message); }
 }
 
+(function(){const m=document.getElementById('brandMark');
+  if(m&&LOGO) m.innerHTML='<img src="'+LOGO+'" alt="ORUN ACADEMY">';})();
 loadLocal(); applyEdits(); sky();
 if(/^#?take$/.test(location.hash.replace('#',''))) S.page='take';
 setTotal(20); S.step=1; render();
