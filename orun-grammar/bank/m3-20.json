@@ -1,0 +1,2733 @@
+{
+ "id": "m3-20",
+ "grade": "중3",
+ "name": "간접화법",
+ "points": [
+  "평서문 전환(시제 일치)",
+  "의문문 전환(어순)",
+  "명령문 전환 to-v"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nHe said to me, \"I am busy.\" → He ____ me that he was busy.",
+   "choices": [
+    "said",
+    "asked",
+    "spoke",
+    "talked",
+    "told"
+   ],
+   "answer": 5,
+   "why": "전달동사 뒤에 듣는 사람(me)이 바로 오면 tell을 쓴다. say to me는 간접화법에서 told me가 된다. said me·spoke me·talked me는 모두 쓸 수 없다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nShe said, \"I like music.\" → She ____ that she liked music.",
+   "choices": [
+    "told",
+    "asked",
+    "told to",
+    "spoke",
+    "said"
+   ],
+   "answer": 5,
+   "why": "듣는 사람이 나와 있지 않으므로 say를 그대로 쓴다. tell은 반드시 목적어(사람)가 필요하므로 told는 쓸 수 없다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nTom said to us, \"I have a plan.\" → Tom told us that he ____ a plan.",
+   "choices": [
+    "has",
+    "will have",
+    "have",
+    "having",
+    "had"
+   ],
+   "answer": 5,
+   "why": "전달동사가 과거(told)이므로 that절의 현재시제 have는 과거 had로 바꾼다(시제 일치).",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nMina said, \"I am hungry.\" → Mina said that ____ hungry.",
+   "choices": [
+    "I am",
+    "she is",
+    "I was",
+    "he was",
+    "she was"
+   ],
+   "answer": 5,
+   "why": "말한 사람이 Mina이므로 I는 she로, 전달동사가 과거이므로 am은 was로 바꾼다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nHe said, \"I can swim.\" → He said that he ____ swim.",
+   "choices": [
+    "can",
+    "cans",
+    "will",
+    "must",
+    "could"
+   ],
+   "answer": 5,
+   "why": "조동사 can도 시제 일치의 대상이라 could로 바꾼다. 의미가 달라지는 will·must는 쓸 수 없다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThey said, \"We will come.\" → They said that they ____ come.",
+   "choices": [
+    "would",
+    "will",
+    "are",
+    "were",
+    "can"
+   ],
+   "answer": 1,
+   "why": "will은 전달동사가 과거일 때 would로 바꾼다. were come, are come은 형태 자체가 틀렸다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nShe said to him, \"You are kind.\" → She told him that ____ kind.",
+   "choices": [
+    "you are",
+    "she was",
+    "he is",
+    "I was",
+    "he was"
+   ],
+   "answer": 5,
+   "why": "따옴표 안의 You는 듣는 사람 him을 가리키므로 he가 되고, are는 시제 일치로 was가 된다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nBen said, \"I met her yesterday.\" → Ben said that he ____ her the day before.",
+   "choices": [
+    "had met",
+    "meeting",
+    "meets",
+    "has met",
+    "will meet"
+   ],
+   "answer": 1,
+   "why": "따옴표 안이 과거시제(met)이면 간접화법에서는 과거완료 had met으로 바꾼다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nAnn said, \"I am reading now.\" → Ann said that she was reading ____.",
+   "choices": [
+    "now",
+    "then",
+    "today",
+    "here",
+    "ago"
+   ],
+   "answer": 2,
+   "why": "말한 시점이 과거로 옮겨지므로 now는 then으로 바꾼다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nHe said, \"I will call you tomorrow.\" → He said that he would call me ____.",
+   "choices": [
+    "tomorrow",
+    "then",
+    "yesterday",
+    "that day",
+    "the next day"
+   ],
+   "answer": 5,
+   "why": "tomorrow는 간접화법에서 the next day(the following day)로 바꾼다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nShe said, \"I live here.\" → She said that she lived ____.",
+   "choices": [
+    "there",
+    "here",
+    "then",
+    "that",
+    "this"
+   ],
+   "answer": 1,
+   "why": "장소를 나타내는 here는 말하는 자리에서 떨어져 전달되므로 there로 바꾼다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nMom said to me, \"I baked this cake.\" → Mom told me that she had baked ____ cake.",
+   "choices": [
+    "this",
+    "that",
+    "these",
+    "those",
+    "its"
+   ],
+   "answer": 2,
+   "why": "지시어 this는 간접화법에서 that으로 바꾼다. cake가 단수이므로 these·those도 쓸 수 없다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nHe said to her, \"Are you okay?\" → He asked her ____ she was okay.",
+   "choices": [
+    "that",
+    "who",
+    "what",
+    "if",
+    "how"
+   ],
+   "answer": 4,
+   "why": "의문사가 없는 의문문은 if[whether]로 연결한다. that은 평서문 전달에 쓴다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nI said to him, \"Where do you live?\" → I asked him where ____.",
+   "choices": [
+    "lived he",
+    "did he live",
+    "he lives",
+    "does he live",
+    "he lived"
+   ],
+   "answer": 5,
+   "why": "간접의문문은 「의문사+주어+동사」 어순이고, 전달동사가 과거이므로 live는 lived가 된다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nShe said to me, \"What is your name?\" → She asked me what ____ name was.",
+   "choices": [
+    "my",
+    "your",
+    "her",
+    "his",
+    "its"
+   ],
+   "answer": 1,
+   "why": "따옴표 안의 your는 듣는 사람인 나(me)를 가리키므로 my로 바꾼다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nSam said to us, \"Do you like pizza?\" → Sam asked us ____ we liked pizza.",
+   "choices": [
+    "that",
+    "whether",
+    "what",
+    "which",
+    "who"
+   ],
+   "answer": 2,
+   "why": "의문사가 없는 의문문이므로 whether[if]로 잇는다. 뒤에 완전한 절이 오므로 what·which는 들어갈 수 없다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThey said to me, \"When will you leave?\" → They asked me when I ____ leave.",
+   "choices": [
+    "will",
+    "am",
+    "would",
+    "was",
+    "do"
+   ],
+   "answer": 3,
+   "why": "전달동사가 과거이므로 will은 would로 바꾼다. 뒤에 동사원형 leave가 있으므로 was·am은 올 수 없다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nJane said to him, \"Can you help me?\" → Jane asked him if he ____ help her.",
+   "choices": [
+    "can",
+    "may",
+    "will",
+    "could",
+    "must"
+   ],
+   "answer": 4,
+   "why": "can은 시제 일치로 could가 된다. 나머지는 원래 문장의 의미(도와줄 수 있니?)와 달라진다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nHe said to me, \"Who is that boy?\" → He asked me who ____ boy was.",
+   "choices": [
+    "this",
+    "a",
+    "these",
+    "those",
+    "that"
+   ],
+   "answer": 5,
+   "why": "원문의 that은 그대로 that으로 쓴다. boy가 단수이므로 these·those는 불가능하다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThe teacher said to us, \"Did you finish it?\" → The teacher asked us if we ____ finished it.",
+   "choices": [
+    "had",
+    "has",
+    "have",
+    "having",
+    "did"
+   ],
+   "answer": 1,
+   "why": "과거의 일(did finish)은 간접화법에서 과거완료 had finished로 바꾼다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nHe said to me, \"Open the door.\" → He told me ____ the door.",
+   "choices": [
+    "open",
+    "to open",
+    "opening",
+    "opened",
+    "opens"
+   ],
+   "answer": 2,
+   "why": "명령문은 간접화법에서 「tell+목적어+to부정사」로 바꾼다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nShe said to him, \"Don't be late.\" → She told him ____ late.",
+   "choices": [
+    "don't be",
+    "to not be",
+    "not to be",
+    "to be not",
+    "not being"
+   ],
+   "answer": 3,
+   "why": "부정 명령문은 「not+to부정사」로 바꾸므로 not to be가 맞다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nMom said to me, \"Wash your hands.\" → Mom told me to wash ____ hands.",
+   "choices": [
+    "your",
+    "his",
+    "her",
+    "my",
+    "our"
+   ],
+   "answer": 4,
+   "why": "명령을 들은 사람이 나(me)이므로 your는 my로 바꾼다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThe doctor said to her, \"Drink warm water.\" → The doctor ____ her to drink warm water.",
+   "choices": [
+    "said",
+    "says",
+    "spoke",
+    "talked",
+    "told"
+   ],
+   "answer": 5,
+   "why": "명령문 전달은 「tell+목적어+to부정사」 형태이며 say는 뒤에 목적어를 바로 쓸 수 없다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nHe said to us, \"Please wait here.\" → He asked us to wait ____.",
+   "choices": [
+    "there",
+    "here",
+    "then",
+    "that",
+    "now"
+   ],
+   "answer": 1,
+   "why": "전달하는 자리가 달라지므로 here는 there로 바꾼다. Please가 있으므로 전달동사는 ask를 썼다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nShe said to me, \"Be quiet.\" → She told me ____ quiet.",
+   "choices": [
+    "be",
+    "to be",
+    "being",
+    "was",
+    "not to be"
+   ],
+   "answer": 2,
+   "why": "명령문 Be quiet.는 to be quiet로 바꾼다. not to be는 부정 명령문일 때 쓴다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은?",
+   "choices": [
+    "He told to me that he was sick.",
+    "He said me that he was sick.",
+    "He told me that he was sick.",
+    "He said to me that he is sick.",
+    "He told that me he was sick."
+   ],
+   "answer": 3,
+   "why": "tell은 뒤에 사람 목적어를 바로 쓰고(told me), say는 사람 앞에 to가 필요하다. ④는 시제 일치가 안 되어 틀렸다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 알맞은 것은?",
+   "choices": [
+    "She asked me what did I want.",
+    "She asked me that I wanted what.",
+    "She asked me what I wanted.",
+    "She asked to me what I wanted.",
+    "She asked me what do I want."
+   ],
+   "answer": 3,
+   "why": "간접의문문은 「의문사+주어+동사」 어순이며 시제 일치로 wanted가 된다. ask는 to 없이 목적어를 취한다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 바른 문장은?",
+   "choices": [
+    "He told me to not touch it.",
+    "He told me don't touch it.",
+    "He said me not to touch it.",
+    "He told me not to touch it.",
+    "He told to me not touching it."
+   ],
+   "answer": 4,
+   "why": "부정 명령문은 「tell+목적어+not+to-v」이다. not은 to 앞에 온다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은?",
+   "choices": [
+    "She said that she was happy.",
+    "She told me that she was happy.",
+    "She told us that she was happy.",
+    "She said to me that she was happy.",
+    "She said me that she was happy."
+   ],
+   "answer": 5,
+   "why": "say는 사람 목적어를 바로 취할 수 없다. said me → told me 또는 said to me로 고쳐야 한다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은?",
+   "choices": [
+    "He asked me if was I free.",
+    "He asked me where I was.",
+    "He asked if I was free.",
+    "He asked whether I liked it.",
+    "He asked me when I would come."
+   ],
+   "answer": 1,
+   "why": "간접의문문에서는 의문문 어순(was I)을 쓰지 않는다. if I was free가 맞다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 것은?",
+   "choices": [
+    "I told him to hurry up.",
+    "I said him to sit down.",
+    "I told them not to run.",
+    "I asked her to open the window.",
+    "The teacher told us to be quiet."
+   ],
+   "answer": 2,
+   "why": "「say+사람」은 불가능하므로 said him → told him으로 고쳐야 한다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nShe <u>told</u> me <u>that</u> she <u>will</u> <u>visit</u> her aunt the <u>next</u> day.",
+   "choices": [
+    "told",
+    "that",
+    "will",
+    "visit",
+    "next"
+   ],
+   "answer": 3,
+   "why": "전달동사 told가 과거이므로 will은 would로 바꿔야 한다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nThe teacher <u>asked</u> us <u>what</u> <u>we</u> <u>are</u> <u>doing</u>.",
+   "choices": [
+    "asked",
+    "what",
+    "we",
+    "are",
+    "doing"
+   ],
+   "answer": 4,
+   "why": "asked가 과거이므로 are는 were가 되어야 한다(시제 일치).",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nMy mom <u>told</u> <u>me</u> <u>clean</u> my <u>room</u> right <u>away</u>.",
+   "choices": [
+    "told",
+    "me",
+    "clean",
+    "room",
+    "away"
+   ],
+   "answer": 3,
+   "why": "명령문 전달은 「tell+목적어+to-v」이므로 clean은 to clean이 되어야 한다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nHe <u>told</u> me <u>not</u> <u>touching</u> the <u>hot</u> <u>pan</u>.",
+   "choices": [
+    "told",
+    "not",
+    "touching",
+    "hot",
+    "pan"
+   ],
+   "answer": 3,
+   "why": "부정 명령문은 not to touch로 쓴다. touching은 쓸 수 없다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n• He ____ me that he was sorry.\n• She ____ us to be careful.",
+   "choices": [
+    "said",
+    "told",
+    "asked",
+    "spoke",
+    "talked"
+   ],
+   "answer": 2,
+   "why": "tell은 「tell+사람+that절」과 「tell+사람+to-v」에 모두 쓸 수 있다. say는 사람 목적어를 바로 못 쓰고, ask는 that절 전달에 어울리지 않는다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n• She asked me ____ I liked the movie.\n• He asked us ____ it was true.",
+   "choices": [
+    "that",
+    "what",
+    "if",
+    "who",
+    "when"
+   ],
+   "answer": 3,
+   "why": "의문사가 없는 의문문을 전달할 때는 if[whether]를 쓴다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Tom said to me, \"I am ready.\"\nB: Really? So Tom told you that he ____ ready.",
+   "choices": [
+    "is",
+    "are",
+    "were",
+    "was",
+    "be"
+   ],
+   "answer": 4,
+   "why": "전달동사 told가 과거이므로 am은 was로 바꾼다. 주어가 he이므로 were도 안 된다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Mina said, \"I am very tired.\"\nB: Oh, she said that she ____ very tired.",
+   "choices": [
+    "is",
+    "are",
+    "being",
+    "were",
+    "was"
+   ],
+   "answer": 5,
+   "why": "주어 she에 맞는 과거형 be동사는 was이다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nⓐ He told me that he was fine.\nⓑ She said me that she was fine.\nⓒ I asked him if he could come.\nⓓ They told us to not go there.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ⓐ, ⓒ가 옳다. ⓑ는 said me(→told me), ⓓ는 to not go(→not to go)가 틀렸다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그는 나에게 자기가 피곤하다고 말했다.",
+   "choices": [
+    "He told me that he was tired.",
+    "He said me that he was tired.",
+    "He told to me that he was tired.",
+    "He said to me that he is tired.",
+    "He told me he is tired."
+   ],
+   "answer": 1,
+   "why": "tell은 사람 목적어를 바로 취하고, 전달동사가 과거이므로 was tired가 되어야 한다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그녀는 나에게 어디에 사는지 물었다.",
+   "choices": [
+    "She asked me where do I live.",
+    "She asked me where did I live.",
+    "She asked me where I lived.",
+    "She asked to me where I lived.",
+    "She asked me that I lived where."
+   ],
+   "answer": 3,
+   "why": "간접의문문 어순 「의문사+주어+동사」와 시제 일치(lived)를 모두 지킨 것은 ③이다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n선생님은 우리에게 조용히 하라고 말씀하셨다.",
+   "choices": [
+    "The teacher said us to be quiet.",
+    "The teacher told us to be quiet.",
+    "The teacher told us be quiet.",
+    "The teacher told to us to be quiet.",
+    "The teacher said to us being quiet."
+   ],
+   "answer": 2,
+   "why": "명령문 전달은 「tell+목적어+to-v」이다. say는 사람 목적어를 바로 쓸 수 없다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nHe said, \"I am not busy.\" → He said that he ____ busy.",
+   "choices": [
+    "is not",
+    "were not",
+    "was not",
+    "does not",
+    "did not"
+   ],
+   "answer": 3,
+   "why": "주어 he에 맞는 be동사 과거 부정형은 was not이다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nShe said to me, \"I saw you last night.\" → She told me that she had seen me ____.",
+   "choices": [
+    "last night",
+    "tomorrow night",
+    "tonight",
+    "the night before",
+    "the next night"
+   ],
+   "answer": 4,
+   "why": "last night은 간접화법에서 the night before(the previous night)로 바꾼다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nHe said, \"I finished my homework.\" → He said that he ____ his homework.",
+   "choices": [
+    "finishes",
+    "finish",
+    "is finishing",
+    "has finished",
+    "had finished"
+   ],
+   "answer": 5,
+   "why": "따옴표 안이 과거시제이면 간접화법에서는 과거완료(had+p.p.)로 바꾼다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nShe said to him, \"Don't open the box.\" → She told him ____ the box.",
+   "choices": [
+    "not to open",
+    "to not open",
+    "not open",
+    "not opening",
+    "don't open"
+   ],
+   "answer": 1,
+   "why": "부정 명령문은 「not to+동사원형」으로 바꾼다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오.\nHe said to me, \"I am happy.\" → He ____ me that he was happy.",
+   "answer": "told",
+   "alt": [
+    "Told"
+   ],
+   "why": "say to+사람은 간접화법에서 tell+사람으로 바꾼다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\nShe said, \"I like cats.\" → She said that she ____ (like) cats.",
+   "answer": "liked",
+   "alt": [
+    "Liked"
+   ],
+   "why": "전달동사가 과거이므로 현재형 like를 과거형 liked로 바꾼다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nTom said, \"I can drive a truck.\" → Tom said that he ____ drive a truck.",
+   "answer": "could",
+   "alt": [
+    "Could"
+   ],
+   "why": "조동사 can은 시제 일치에 따라 could가 된다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nHe said to us, \"I will help you.\" → He told us that he ____ help us.",
+   "answer": "would",
+   "alt": [
+    "Would"
+   ],
+   "why": "will은 전달동사가 과거일 때 would로 바꾼다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nShe <u>said</u> me that she was sick.",
+   "answer": "told",
+   "alt": [
+    "Told"
+   ],
+   "why": "say는 사람 목적어를 바로 쓸 수 없다. said me를 told me로 고친다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 두 단어로 고쳐 쓰시오.\nHe told me <u>go</u> home early.",
+   "answer": "to go",
+   "alt": [
+    "To go"
+   ],
+   "why": "명령문 전달은 「tell+목적어+to-v」이므로 go는 to go가 되어야 한다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 두 단어로 고쳐 쓰시오.\nHe told me <u>to not</u> worry about it.",
+   "answer": "not to",
+   "alt": [
+    "Not to"
+   ],
+   "why": "부정 명령문 전달에서는 not이 to 앞에 온다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. (단, whether는 쓰지 말 것)\nHe said to her, \"Are you tired?\" → He asked her ____ she was tired.",
+   "answer": "if",
+   "alt": [
+    "If"
+   ],
+   "why": "의문사 없는 의문문은 if[whether]로 연결한다. 조건에 따라 if를 쓴다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nI said to him, \"Where are you?\" → I asked him where he ____.",
+   "answer": "was",
+   "alt": [
+    "Was"
+   ],
+   "why": "주어 he에 맞는 be동사 과거형 was로 시제를 일치시킨다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\nShe said to me, \"What do you want?\" → She asked me what I ____ (want).",
+   "answer": "wanted",
+   "alt": [
+    "Wanted"
+   ],
+   "why": "간접의문문은 「의문사+주어+동사」 어순이며 시제 일치로 wanted를 쓴다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 두 단어를 쓰시오.\nMom said to me, \"Clean your room.\" → Mom told me ____ ____ my room.",
+   "answer": "to clean",
+   "alt": [
+    "To clean"
+   ],
+   "why": "명령문은 to부정사로 바꿔 전달한다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 두 단어를 쓰시오.\nHe said to me, \"Don't run.\" → He told me ____ ____ run.",
+   "answer": "not to",
+   "alt": [
+    "Not to"
+   ],
+   "why": "부정 명령문은 「not+to+동사원형」으로 바꾼다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nShe said, \"I am cooking now.\" → She said that she was cooking ____.",
+   "answer": "then",
+   "alt": [
+    "Then"
+   ],
+   "why": "now는 간접화법에서 then으로 바꾼다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. (단, following은 쓰지 말 것)\nHe said, \"I will leave tomorrow.\" → He said that he would leave the ____ day.",
+   "answer": "next",
+   "alt": [
+    "Next"
+   ],
+   "why": "tomorrow는 the next day[the following day]로 바꾼다. 조건에 따라 next를 쓴다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nThey said, \"We are here.\" → They said that they were ____.",
+   "answer": "there",
+   "alt": [
+    "There"
+   ],
+   "why": "here는 전달되는 자리가 달라지므로 there로 바꾼다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 간접화법으로 바꿔 문장 전체를 쓰시오. (that을 반드시 쓸 것)\nJimin said, \"I am a middle school student.\"",
+   "answer": "Jimin said that he was a middle school student.",
+   "alt": [],
+   "why": "I → he, am → was로 바꾸고 that절로 연결한다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 간접화법으로 바꿔 문장 전체를 쓰시오. (that을 반드시 쓸 것)\nHe said to me, \"I am very tired.\"",
+   "answer": "He told me that he was very tired.",
+   "alt": [],
+   "why": "say to me → told me, I → he, am → was로 바꾼다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 간접화법으로 바꿔 문장 전체를 쓰시오. (전달동사는 tell을 쓸 것)\nShe said to me, \"Open the window.\"",
+   "answer": "She told me to open the window.",
+   "alt": [],
+   "why": "명령문은 「tell+목적어+to-v」로 바꾼다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 간접화법으로 바꿔 문장 전체를 쓰시오. (if를 쓸 것)\nHe said to her, \"Are you busy?\"",
+   "answer": "He asked her if she was busy.",
+   "alt": [],
+   "why": "의문사 없는 의문문은 asked+목적어+if+주어+동사로 바꾸고 시제를 일치시킨다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 간접화법으로 바꿔 문장 전체를 쓰시오. (전달동사는 tell을 쓸 것)\nThe teacher said to us, \"Don't be noisy.\"",
+   "answer": "The teacher told us not to be noisy.",
+   "alt": [],
+   "why": "부정 명령문은 「tell+목적어+not to-v」로 바꾼다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nSujin said to me, \"I don't have any money.\" → Sujin told me that she ____ any money.",
+   "choices": [
+    "doesn't have",
+    "didn't have",
+    "hasn't had",
+    "don't have",
+    "hadn't have"
+   ],
+   "answer": 2,
+   "why": "전달동사가 과거(told)이므로 현재형 don't have를 didn't have로 바꾼다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThe reporter said, \"The train left ten minutes ago.\" → The reporter said that the train had left ten minutes ____.",
+   "choices": [
+    "ago",
+    "after",
+    "before",
+    "later",
+    "then"
+   ],
+   "answer": 3,
+   "why": "시간 표현 ago는 간접화법에서 before로 바꾼다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nAlex said to Mia, \"I met your brother today.\" → Alex told Mia that he had met her brother ____.",
+   "choices": [
+    "today",
+    "the next day",
+    "this day",
+    "that day",
+    "the day before"
+   ],
+   "answer": 4,
+   "why": "today는 간접화법에서 that day로 바꾼다. 같은 날의 일이므로 the day before는 뜻이 달라진다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nNora said, \"I have lived in Busan for five years.\" → Nora said that she ____ in Busan for five years.",
+   "choices": [
+    "has lived",
+    "is living",
+    "lives",
+    "would live",
+    "had lived"
+   ],
+   "answer": 5,
+   "why": "현재완료(have lived)는 전달동사가 과거일 때 과거완료 had lived로 바꾼다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nDad said to me, \"You can use my laptop.\" → Dad told me that I ____ use his laptop.",
+   "choices": [
+    "could",
+    "can",
+    "must",
+    "should",
+    "will"
+   ],
+   "answer": 1,
+   "why": "can은 시제 일치에 따라 could가 된다. 나머지는 원문(써도 된다)의 의미를 바꾼다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nEmma said to Jack, \"I will lend you my bike tomorrow.\" → Emma told Jack that she would lend him ____ bike the next day.",
+   "choices": [
+    "your",
+    "her",
+    "my",
+    "his",
+    "their"
+   ],
+   "answer": 2,
+   "why": "말한 사람이 Emma이므로 my는 her로 바꾼다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nLeo said, \"I am going to visit my grandparents this weekend.\" → Leo said that he was going to visit his grandparents ____ weekend.",
+   "choices": [
+    "this",
+    "next",
+    "that",
+    "last",
+    "every"
+   ],
+   "answer": 3,
+   "why": "지시어 this는 간접화법에서 that으로 바꾼다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThe coach said to the players, \"You did a great job.\" → The coach told the players that they ____ a great job.",
+   "choices": [
+    "do",
+    "did",
+    "have done",
+    "had done",
+    "would do"
+   ],
+   "answer": 4,
+   "why": "따옴표 안의 과거시제(did)는 간접화법에서 과거완료 had done으로 바꾼다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nRyan said to us, \"I lost my wallet here.\" → Ryan told us that he ____ his wallet there.",
+   "choices": [
+    "loses",
+    "lose",
+    "would lose",
+    "has lost",
+    "had lost"
+   ],
+   "answer": 5,
+   "why": "과거시제 lost는 과거완료 had lost로 바꾸고, here는 there가 된다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nMr. Han said to me, \"I am waiting for my son.\" → Mr. Han told me that he ____ for his son.",
+   "choices": [
+    "was waiting",
+    "is waiting",
+    "has waited",
+    "had waited",
+    "waits"
+   ],
+   "answer": 1,
+   "why": "현재진행형 am waiting은 시제 일치에 따라 과거진행형 was waiting이 된다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThe police officer said to the man, \"What are you doing here?\" → The police officer asked the man what he ____ there.",
+   "choices": [
+    "is doing",
+    "was doing",
+    "does",
+    "had done",
+    "would do"
+   ],
+   "answer": 2,
+   "why": "현재진행형은 과거진행형으로 바뀌고, 간접의문문 어순 「의문사+주어+동사」를 지킨다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nAmy said to me, \"Have you ever been to Jeju?\" → Amy asked me if I ____ ever been to Jeju.",
+   "choices": [
+    "have",
+    "has",
+    "had",
+    "having",
+    "would"
+   ],
+   "answer": 3,
+   "why": "현재완료는 간접화법에서 과거완료(had p.p.)로 바꾼다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nHe said to her, \"How long will you stay in Seoul?\" → He asked her how long she ____ stay in Seoul.",
+   "choices": [
+    "will",
+    "did",
+    "was",
+    "would",
+    "does"
+   ],
+   "answer": 4,
+   "why": "will은 would로 바꾸며, 뒤에 동사원형 stay가 오므로 was·did는 쓸 수 없다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nShe said to him, \"Why did you call me last night?\" → She asked him why he ____ her the night before.",
+   "choices": [
+    "called",
+    "has called",
+    "calls",
+    "would call",
+    "had called"
+   ],
+   "answer": 5,
+   "why": "과거의 일은 간접화법에서 과거완료 had called로 바꾼다. last night도 the night before로 바뀌었다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nMy friend said to me, \"Is this book yours?\" → My friend asked me if that book ____.",
+   "choices": [
+    "was mine",
+    "is mine",
+    "was yours",
+    "is yours",
+    "were mine"
+   ],
+   "answer": 1,
+   "why": "this는 that으로, yours(=나의 것)는 mine으로 바뀌고 시제 일치로 was를 쓴다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nTed said to Kate, \"Do you know where the station is?\" → Ted asked Kate ____ she knew where the station was.",
+   "choices": [
+    "that",
+    "if",
+    "what",
+    "which",
+    "how"
+   ],
+   "answer": 2,
+   "why": "Do you ~?로 시작하는 의문문이므로 if[whether]로 연결한다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장을 간접화법으로 바르게 바꾼 것은?\nHe said to me, \"Who broke the window?\"",
+   "choices": [
+    "He asked me who did the window break.",
+    "He asked me that who broke the window.",
+    "He asked me who had broken the window.",
+    "He asked me who has broken the window.",
+    "He asked me who breaks the window."
+   ],
+   "answer": 3,
+   "why": "의문사가 주어이면 「의문사+동사」 어순을 그대로 두고, 과거시제는 과거완료로 바꾼다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장을 간접화법으로 바르게 바꾼 것은?\nShe said to me, \"When does the movie start?\"",
+   "choices": [
+    "She asked me when does the movie start.",
+    "She asked to me when the movie started.",
+    "She asked me when did the movie start.",
+    "She asked me when the movie started.",
+    "She asked me that the movie started when."
+   ],
+   "answer": 4,
+   "why": "간접의문문에서는 do·does를 없애고 「의문사+주어+동사」 어순으로 쓰며 시제를 일치시킨다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThe librarian said to us, \"Don't use your phones in the reading room.\" → The librarian told us ____ our phones in the reading room.",
+   "choices": [
+    "to don't use",
+    "to not use",
+    "not using",
+    "don't use",
+    "not to use"
+   ],
+   "answer": 5,
+   "why": "부정 명령문은 「not+to부정사」로 바꾼다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThe nurse said to him, \"Take this medicine twice a day.\" → The nurse ____ him to take that medicine twice a day.",
+   "choices": [
+    "told",
+    "said",
+    "spoke",
+    "said to",
+    "talked"
+   ],
+   "answer": 1,
+   "why": "명령문 전달은 「tell+목적어+to-v」이다. say는 사람 목적어를 바로 취하지 못한다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nGrandma said to me, \"Please close the window.\" → Grandma ____ me to close the window.",
+   "choices": [
+    "said",
+    "asked",
+    "told to",
+    "spoke",
+    "talked"
+   ],
+   "answer": 2,
+   "why": "Please가 붙은 부탁의 명령문은 ask로 전달한다. said me·told to me는 형태가 틀렸다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장을 간접화법으로 바르게 바꾼 것은?\nThe man said to the boy, \"Don't be afraid.\"",
+   "choices": [
+    "The man told the boy don't be afraid.",
+    "The man said the boy not to be afraid.",
+    "The man told the boy not to be afraid.",
+    "The man told to the boy not to be afraid.",
+    "The man told the boy to not being afraid."
+   ],
+   "answer": 3,
+   "why": "부정 명령문은 「tell+목적어+not to+동사원형」으로 바꾼다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nMy coach said to me, \"Run faster.\" → My coach told me ____ faster.",
+   "choices": [
+    "run",
+    "running",
+    "ran",
+    "to run",
+    "to running"
+   ],
+   "answer": 4,
+   "why": "명령문의 동사원형은 to부정사로 바뀐다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "She asked me to not come late.",
+    "She asked me that not to come late.",
+    "She asked to me not to come late.",
+    "She asked me not coming late.",
+    "She asked me not to come late."
+   ],
+   "answer": 5,
+   "why": "not은 to부정사 앞에 붙이고, ask는 to 없이 사람 목적어를 바로 취한다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것끼리 짝지은 것은?\nHe (Ⓐ said / told) me that he (Ⓑ is / was) sorry.",
+   "choices": [
+    "said - is",
+    "said - was",
+    "told - is",
+    "told - was",
+    "told - were"
+   ],
+   "answer": 4,
+   "why": "사람 목적어 me가 바로 오므로 told, 전달동사가 과거이므로 was가 맞다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것끼리 짝지은 것은?\nShe asked me (Ⓐ that / if) I (Ⓑ can / could) come to her party.",
+   "choices": [
+    "that - can",
+    "that - could",
+    "if - can",
+    "if - could",
+    "if - can't"
+   ],
+   "answer": 4,
+   "why": "의문사 없는 의문문 전달은 if로 연결하고, can은 시제 일치로 could가 된다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것끼리 짝지은 것은?\nThe teacher told us (Ⓐ to bring / bring) our textbooks and (Ⓑ not to be / to not be) late.",
+   "choices": [
+    "to bring - not to be",
+    "to bring - to not be",
+    "bring - not to be",
+    "bring - to not be",
+    "to bring - not being"
+   ],
+   "answer": 1,
+   "why": "명령문 전달은 to부정사로 하고, 부정은 not을 to 앞에 쓴다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것끼리 짝지은 것은?\nTom asked me where I (Ⓐ live / lived) and when I (Ⓑ would / will) come back.",
+   "choices": [
+    "live - would",
+    "live - will",
+    "lived - would",
+    "lived - will",
+    "lived - would not"
+   ],
+   "answer": 3,
+   "why": "전달동사 asked가 과거이므로 live→lived, will→would로 시제를 일치시킨다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것끼리 짝지은 것은?\nMy sister said that she (Ⓐ had bought / buys) the shoes the day (Ⓑ before / ago).",
+   "choices": [
+    "had bought - before",
+    "had bought - ago",
+    "buys - before",
+    "buys - ago",
+    "had bought - then"
+   ],
+   "answer": 1,
+   "why": "이미 지난 일이므로 과거완료 had bought를 쓰고, ago는 간접화법에서 before로 바꾼다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nMy teacher <u>asked</u> us <u>where</u> <u>did we</u> <u>find</u> the <u>book</u>.",
+   "choices": [
+    "asked",
+    "where",
+    "did we",
+    "find",
+    "book"
+   ],
+   "answer": 3,
+   "why": "간접의문문에서는 do·did를 쓰지 않고 「의문사+주어+동사」 어순으로 we had found[we found]처럼 쓴다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nNick <u>said</u> to me <u>that</u> he <u>will</u> <u>join</u> the <u>club</u>.",
+   "choices": [
+    "said",
+    "that",
+    "will",
+    "join",
+    "club"
+   ],
+   "answer": 3,
+   "why": "전달동사가 과거(said)이므로 will은 would가 되어야 한다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nShe <u>asked</u> me <u>that</u> I <u>was</u> <u>interested</u> in <u>music</u>.",
+   "choices": [
+    "asked",
+    "that",
+    "was",
+    "interested",
+    "music"
+   ],
+   "answer": 2,
+   "why": "의문문을 전달할 때는 that이 아니라 if[whether]를 쓴다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nMr. Kim <u>told</u> the students <u>to</u> <u>opened</u> their <u>books</u> to page <u>ten</u>.",
+   "choices": [
+    "told",
+    "to",
+    "opened",
+    "books",
+    "ten"
+   ],
+   "answer": 3,
+   "why": "to 뒤에는 동사원형이 오므로 opened가 아니라 open이 맞다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nThe guide <u>told</u> <u>us</u> <u>don't</u> <u>touch</u> the <u>paintings</u>.",
+   "choices": [
+    "told",
+    "us",
+    "don't",
+    "touch",
+    "paintings"
+   ],
+   "answer": 3,
+   "why": "부정 명령문은 간접화법에서 not to touch로 바꾼다. don't를 그대로 쓸 수 없다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳지 않은 것은?",
+   "choices": [
+    "Mina said me that the meeting was over.",
+    "Mina asked me whether I needed help.",
+    "Mina told me to send her an email.",
+    "Mina told me that she had finished the report.",
+    "Mina asked me why I was so quiet."
+   ],
+   "answer": 1,
+   "why": "say는 사람 목적어를 바로 쓸 수 없으므로 said me를 told me로 고쳐야 한다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 바르지 않은 것은?",
+   "choices": [
+    "He asked her if she had seen the movie.",
+    "He asked her when would she arrive.",
+    "He asked her what her favorite song was.",
+    "He asked her to wait for a moment.",
+    "He asked her not to tell anyone."
+   ],
+   "answer": 2,
+   "why": "간접의문문은 「의문사+주어+동사」 어순이므로 when she would arrive로 써야 한다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞는 것은?",
+   "choices": [
+    "The clerk said me that the store was closed.",
+    "The clerk told to me that the store was closed.",
+    "The clerk told me that the store was closed.",
+    "The clerk told me that the store were closed.",
+    "The clerk told that me the store was closed."
+   ],
+   "answer": 3,
+   "why": "told 뒤에 사람 목적어가 바로 오고, 주어 the store에 맞는 be동사는 was이다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 올바른 것은?",
+   "choices": [
+    "She asked me do I want some tea.",
+    "She asked me if did I want some tea.",
+    "She asked me that I wanted some tea.",
+    "She asked me if I wanted some tea.",
+    "She asked me whether do I want some tea."
+   ],
+   "answer": 4,
+   "why": "의문사 없는 의문문은 if[whether]+주어+동사로 전달하고 시제를 일치시킨다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nⓐ He asked me where I had put the key.\nⓑ She told me that she will be back soon.\nⓒ They asked us to join the game.\nⓓ Mom told me not to stay up late.\nⓔ I asked him that he was okay.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ⓐ, ⓒ, ⓓ가 옳다. ⓑ는 will→would, ⓔ는 that→if[whether]로 고쳐야 한다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그녀는 나에게 그 소식을 언제 들었는지 물었다.",
+   "choices": [
+    "She asked me when did I hear the news.",
+    "She asked me when I had heard the news.",
+    "She asked me when I hear the news.",
+    "She asked to me when I had heard the news.",
+    "She asked me that when I had heard the news."
+   ],
+   "answer": 2,
+   "why": "간접의문문 어순과 시제 일치(과거→과거완료)를 모두 지킨 것은 ②이다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그는 나에게 자기가 그 열쇠를 잃어버렸다고 말했다.",
+   "choices": [
+    "He said to me that he loses the key.",
+    "He said me that he had lost the key.",
+    "He told to me that he had lost the key.",
+    "He told me that he has lost the key.",
+    "He told me that he had lost the key."
+   ],
+   "answer": 5,
+   "why": "tell은 사람 목적어를 바로 취하며, 말하기 전에 일어난 일은 과거완료로 쓴다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n엄마는 나에게 문을 잠그라고 말씀하셨다.",
+   "choices": [
+    "Mom told me to lock the door.",
+    "Mom told me lock the door.",
+    "Mom said me to lock the door.",
+    "Mom told to me to lock the door.",
+    "Mom said to me locking the door."
+   ],
+   "answer": 1,
+   "why": "명령문 전달은 「tell+목적어+to부정사」 형태이다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그들은 나에게 그 파티에 올 수 있는지 물었다.",
+   "choices": [
+    "They asked me that I could come to the party.",
+    "They asked me if I could come to the party.",
+    "They asked me if could I come to the party.",
+    "They asked to me if I could come to the party.",
+    "They asked me if I can come to the party."
+   ],
+   "answer": 2,
+   "why": "if 뒤에는 「주어+동사」 어순이 오고, can은 시제 일치로 could가 된다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: What did Brian say to you?\nB: He ____ me that he would be late for the meeting.",
+   "choices": [
+    "said",
+    "asked",
+    "told",
+    "spoke",
+    "talked"
+   ],
+   "answer": 3,
+   "why": "사람 목적어 me가 바로 뒤에 오므로 told를 쓴다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n• The guard asked us ____ we had tickets.\n• He asked me ____ I would join them.",
+   "choices": [
+    "that",
+    "who",
+    "what",
+    "if",
+    "because"
+   ],
+   "answer": 4,
+   "why": "둘 다 의문사가 없는 의문문을 전달하므로 if[whether]가 들어간다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때, 빈칸에 들어갈 말로 알맞은 것은?\nHe said to me, \"Please help me with my homework.\"\n= He asked me ____ him with his homework.",
+   "choices": [
+    "help",
+    "to helping",
+    "helping",
+    "that help",
+    "to help"
+   ],
+   "answer": 5,
+   "why": "부탁하는 명령문은 「ask+목적어+to부정사」로 바꾼다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nThe waiter said to us, \"The soup is very hot.\" → The waiter told us that the soup ____ very hot.",
+   "answer": "was",
+   "alt": [
+    "Was"
+   ],
+   "why": "전달동사 told가 과거이므로 is를 was로 바꾼다(시제 일치).",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 두 단어를 쓰시오.\nKevin said, \"I ate lunch at school.\" → Kevin said that he ____ ____ lunch at school.",
+   "answer": "had eaten",
+   "alt": [
+    "Had eaten"
+   ],
+   "why": "따옴표 안의 과거시제는 간접화법에서 과거완료(had+p.p.)로 바꾼다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nShe asked me <u>that</u> I was free on Sunday.",
+   "answer": "if",
+   "alt": [
+    "whether",
+    "If",
+    "Whether"
+   ],
+   "why": "의문사가 없는 의문문을 전달할 때는 that이 아니라 if[whether]를 쓴다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 두 단어로 고쳐 쓰시오.\nHe told me <u>bring</u> my passport.",
+   "answer": "to bring",
+   "alt": [
+    "To bring"
+   ],
+   "why": "명령문 전달은 「tell+목적어+to부정사」이다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 두 단어로 고쳐 쓰시오.\nThe captain told the sailors <u>to not</u> panic.",
+   "answer": "not to",
+   "alt": [
+    "Not to"
+   ],
+   "why": "부정 명령문 전달에서 not은 to 앞에 온다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nMy uncle said that he <u>will</u> visit us soon.",
+   "answer": "would",
+   "alt": [
+    "Would"
+   ],
+   "why": "전달동사 said가 과거이므로 will을 would로 바꾼다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 두 단어로 고쳐 쓰시오. (뜻: 그들은 내가 어디에 사는지 물었다.)\nThey asked me where <u>did I live</u>.",
+   "answer": "I lived",
+   "alt": [
+    "i lived"
+   ],
+   "why": "간접의문문은 do·did를 쓰지 않고 「의문사+주어+동사」 어순으로 쓴다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nNari said to Tom, \"I saw you at the library yesterday.\" → Nari told Tom that she had seen him the day ____.",
+   "answer": "before",
+   "alt": [
+    "Before"
+   ],
+   "why": "yesterday는 간접화법에서 the day before[the previous day]로 바꾼다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nHe said, \"I am busy today.\" → He said that he was busy ____ day.",
+   "answer": "that",
+   "alt": [
+    "That"
+   ],
+   "why": "today는 간접화법에서 that day로 바꾼다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 두 단어를 쓰시오.\nThe doctor said to me, \"Don't eat too much salt.\" → The doctor told me ____ ____ eat too much salt.",
+   "answer": "not to",
+   "alt": [
+    "Not to"
+   ],
+   "why": "부정 명령문은 「not+to+동사원형」으로 바꾼다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 두 단어를 쓰시오.\nThe manager said to us, \"Come to the office at nine.\" → The manager told us ____ ____ to the office at nine.",
+   "answer": "to come",
+   "alt": [
+    "To come"
+   ],
+   "why": "명령문의 동사원형 Come은 to come으로 바뀐다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nShe said to me, \"Can you speak Chinese?\" → She asked me if I ____ speak Chinese.",
+   "answer": "could",
+   "alt": [
+    "Could"
+   ],
+   "why": "can은 시제 일치에 따라 could가 된다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 간접화법으로 바꿔 문장 전체를 쓰시오. (that을 반드시 쓸 것)\nPeter said to me, \"I don't like horror movies.\"",
+   "answer": "Peter told me that he didn't like horror movies.",
+   "alt": [
+    "Peter told me that he did not like horror movies."
+   ],
+   "why": "say to me → told me, I → he, don't like → didn't like로 바꾼다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 간접화법으로 바꿔 문장 전체를 쓰시오. (that을 반드시 쓸 것)\nSora said, \"I am learning Spanish.\"",
+   "answer": "Sora said that she was learning Spanish.",
+   "alt": [],
+   "why": "I → she, am learning → was learning으로 시제를 일치시킨다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 간접화법으로 바꿔 문장 전체를 쓰시오.\nHe said to me, \"Where are you going?\"",
+   "answer": "He asked me where I was going.",
+   "alt": [],
+   "why": "의문사 의문문은 「ask+목적어+의문사+주어+동사」로 바꾼다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 간접화법으로 바꿔 문장 전체를 쓰시오. (if를 쓸 것)\nMom said to me, \"Did you lock the door?\"",
+   "answer": "Mom asked me if I had locked the door.",
+   "alt": [],
+   "why": "의문사 없는 의문문은 if로 연결하고, 과거시제는 과거완료로 바꾼다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 간접화법으로 바꿔 문장 전체를 쓰시오. (전달동사는 tell을 쓸 것)\nThe teacher said to us, \"Hand in your reports by Friday.\"",
+   "answer": "The teacher told us to hand in our reports by Friday.",
+   "alt": [],
+   "why": "명령문은 to부정사로 바꾸고, your는 듣는 사람인 us에 맞춰 our가 된다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 간접화법으로 바꿔 문장 전체를 쓰시오. (전달동사는 tell을 쓸 것)\nThe old man said to the kids, \"Don't play near the river.\"",
+   "answer": "The old man told the kids not to play near the river.",
+   "alt": [],
+   "why": "부정 명령문은 「tell+목적어+not to-v」로 바꾼다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 간접화법으로 바꿔 문장 전체를 쓰시오.\nShe said to him, \"What do you want to be?\"",
+   "answer": "She asked him what he wanted to be.",
+   "alt": [],
+   "why": "do를 없애고 「의문사+주어+동사」 어순으로 바꾸며 want를 wanted로 일치시킨다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 간접화법으로 바꿔 문장 전체를 쓰시오. (that을 쓰고, tonight도 알맞은 표현으로 바꿀 것)\nJulia said to me, \"I will call you tonight.\"",
+   "answer": "Julia told me that she would call me that night.",
+   "alt": [],
+   "why": "will → would, you → me, tonight → that night으로 바꾼다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 짝지은 것은?\nㄱ. He told me that he had left his umbrella on the bus.\nㄴ. She asked me what was my email address.\nㄷ. They asked us not to make noise after ten.\nㄹ. The clerk said me that the item was sold out.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄴ은 간접의문문 어순이 틀렸고(what my email address was), ㄹ은 said me(→told me)가 틀렸다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 짝지은 것은?\nㄱ. My mom told me to washing the dishes.\nㄴ. The doctor asked him how he felt.\nㄷ. Tim said that he will visit Paris someday.\nㄹ. She asked me whether I had read the article.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "ㄱ은 to wash, ㄷ은 시제 일치에 따라 would visit로 고쳐야 한다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 짝지은 것은?\nㄱ. He asked me if I wanted to join the club.\nㄴ. She told me that she had been busy all day.\nㄷ. They told us don't touch the machine.\nㄹ. The man asked the boy where his parents were.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄱ, ㄴ, ㄹ",
+    "ㄴ, ㄷ, ㄹ",
+    "ㄱ, ㄴ, ㄷ, ㄹ"
+   ],
+   "answer": 3,
+   "why": "ㄷ만 틀렸다. 부정 명령문은 told us not to touch로 바꿔야 한다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것끼리 짝지은 것은?\nㄱ. She said to me that she was hungry.\nㄴ. He asked me that I had a pen.\nㄷ. The teacher told us to be on time.\nㄹ. I asked her when will she come back.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "ㄴ은 that→if[whether], ㄹ은 when she would come back으로 고쳐야 한다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 짝지은 것은?\nㄱ. Ann told me that she had lost her phone the day before.\nㄴ. Ann asked me if I could lend her mine.\nㄷ. Ann said me that she would buy a new one.\nㄹ. Ann asked me what did I think about it.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄹ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ"
+   ],
+   "answer": 1,
+   "why": "ㄷ은 said me(→told me), ㄹ은 what I thought로 어순을 바로잡아야 한다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 직접화법을 간접화법으로 바르게 바꾼 것끼리 짝지은 것은?\nㄱ. She said, \"I am tired.\" → She said that she was tired.\nㄴ. He said to me, \"Close the door.\" → He told me close the door.\nㄷ. Tom said to her, \"Do you like jazz?\" → Tom asked her if she liked jazz.\nㄹ. Mom said to me, \"I will be home late.\" → Mom told me that she will be home late.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄹ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄴ은 to close, ㄹ은 would be로 고쳐야 한다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 직접화법으로 바르게 바꾼 것은?\nHe told me that he had lost his phone the day before.",
+   "choices": [
+    "He said to me, \"I lost my phone yesterday.\"",
+    "He said to me, \"I had lost my phone yesterday.\"",
+    "He told to me, \"I lost my phone the day before.\"",
+    "He said me, \"I lost my phone yesterday.\"",
+    "He said to me, \"I lose my phone yesterday.\""
+   ],
+   "answer": 1,
+   "why": "직접화법으로 되돌리면 과거완료는 과거로, the day before는 yesterday로, tell me는 say to me로 바뀐다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 직접화법으로 바르게 바꾼 것은?\nShe asked me if I had seen her brother.",
+   "choices": [
+    "She said to me, \"Do you see my brother?\"",
+    "She said to me, \"Did you see my brother?\"",
+    "She said to me, \"Had you seen my brother?\"",
+    "She said me, \"Did you see my brother?\"",
+    "She said to me, \"Did I see your brother?\""
+   ],
+   "answer": 2,
+   "why": "간접의문문을 되돌리면 의문문 어순의 과거 의문문이 되고, her brother는 말한 사람 기준으로 my brother가 된다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 직접화법으로 바르게 바꾼 것은?\nThe teacher told us not to run in the hallway.",
+   "choices": [
+    "The teacher said us, \"Don't run in the hallway.\"",
+    "The teacher said to us, \"Not run in the hallway.\"",
+    "The teacher said to us, \"Don't run in the hallway.\"",
+    "The teacher told us, \"Don't running in the hallway.\"",
+    "The teacher said to us, \"You didn't run in the hallway.\""
+   ],
+   "answer": 3,
+   "why": "「not to+동사원형」은 부정 명령문 Don't ~로 되돌리고, 전달동사는 said to us가 된다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 직접화법으로 바르게 바꾼 것은?\nAmy asked Ben where he was going that day.",
+   "choices": [
+    "Amy said to Ben, \"Where were you going today?\"",
+    "Amy said to Ben, \"Where am I going today?\"",
+    "Amy said to Ben, \"Where are you going that day?\"",
+    "Amy said to Ben, \"Where are you going today?\"",
+    "Amy asked to Ben, \"Where are you going today?\""
+   ],
+   "answer": 4,
+   "why": "he → you, was going → are going, that day → today로 되돌리고 의문문 어순으로 쓴다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 간접화법으로 바르게 바꾼 것은?\nMr. Lee said to me, \"I bought this camera in Japan last year.\"",
+   "choices": [
+    "Mr. Lee told me that he bought this camera in Japan last year.",
+    "Mr. Lee said me that he had bought that camera in Japan the year before.",
+    "Mr. Lee told me that he had bought that camera in Japan the year before.",
+    "Mr. Lee told to me that he had bought that camera in Japan the year before.",
+    "Mr. Lee told me that he has bought that camera in Japan the previous year."
+   ],
+   "answer": 3,
+   "why": "과거 → 과거완료, this → that, last year → the year before, say to me → told me를 모두 지킨 것은 ③이다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 간접화법으로 바르게 바꾼 것은?\nSujin said to Minho, \"Can you help me with my science project tomorrow?\"",
+   "choices": [
+    "Sujin asked Minho if he can help her with her science project the next day.",
+    "Sujin asked Minho if could he help her with her science project the next day.",
+    "Sujin asked Minho that he could help her with her science project tomorrow.",
+    "Sujin asked to Minho if he could help her with her science project the next day.",
+    "Sujin asked Minho if he could help her with her science project the next day."
+   ],
+   "answer": 5,
+   "why": "can → could, you → he, me·my → her, tomorrow → the next day로 바뀌고 if 뒤는 「주어+동사」 어순이다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 간접화법으로 바르게 바꾼 것은?\nThe guide said to the tourists, \"Please don't take pictures here.\"",
+   "choices": [
+    "The guide asked the tourists not to take pictures there.",
+    "The guide said the tourists not to take pictures there.",
+    "The guide asked the tourists to not take pictures here.",
+    "The guide asked the tourists don't take pictures there.",
+    "The guide asked to the tourists not to take pictures there."
+   ],
+   "answer": 1,
+   "why": "Please가 있는 부정 명령문은 「ask+목적어+not to-v」로 바꾸고 here는 there가 된다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 간접화법으로 바르게 바꾼 것은?\nMy father said to me, \"What time did you come home last night?\"",
+   "choices": [
+    "My father asked me what time I had come home the night before.",
+    "My father asked me what time did I come home the night before.",
+    "My father asked me what time had I come home the night before.",
+    "My father asked to me what time I had come home the night before.",
+    "My father asked me that what time I had come home the night before."
+   ],
+   "answer": 1,
+   "why": "「의문사+주어+동사」 어순, 과거 → 과거완료, last night → the night before를 모두 지킨 것은 ①이다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 간접화법으로 바르게 바꾼 것은?\nShe said, \"I have never eaten Thai food before.\"",
+   "choices": [
+    "She said that she has never eaten Thai food before.",
+    "She said that she had never eaten Thai food before.",
+    "She said that she never eat Thai food before.",
+    "She said me that she had never eaten Thai food before.",
+    "She told that she had never eaten Thai food before."
+   ],
+   "answer": 2,
+   "why": "현재완료는 과거완료로 바뀌며, 듣는 사람이 없으므로 say를 그대로 쓴다. tell은 목적어가 필요하다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 간접화법으로 바르게 바꾼 것은?\nThe old woman said to the boy, \"Be careful when you cross the street.\"",
+   "choices": [
+    "The old woman told the boy be careful when he crossed the street.",
+    "The old woman said the boy to be careful when he crossed the street.",
+    "The old woman told the boy to be careful when he crossed the street.",
+    "The old woman told the boy to be careful when you crossed the street.",
+    "The old woman told the boy being careful when he crossed the street."
+   ],
+   "answer": 3,
+   "why": "명령문은 to be로 바꾸고, you는 the boy를 가리키므로 he, cross는 시제 일치로 crossed가 된다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\nYesterday my cousin called me. He told me that he <u>had moved</u> to a new town. He asked me <u>if</u> I could visit him during the holidays. He also asked me <u>when would I be</u> free. I told him <u>that</u> I would check my schedule. Then he asked me <u>not to forget</u> his new address.",
+   "choices": [
+    "had moved",
+    "if",
+    "when would I be",
+    "that",
+    "not to forget"
+   ],
+   "answer": 3,
+   "why": "간접의문문은 「의문사+주어+동사」 어순이므로 when I would be로 써야 한다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\nLast week my aunt visited us. She told my mother that she <u>had bought</u> a new house. She asked my mother <u>to come</u> and see it. My mother said <u>that she would</u> visit her the next weekend. My aunt told her <u>don't bring</u> anything. She also said <u>that she was</u> very excited.",
+   "choices": [
+    "had bought",
+    "to come",
+    "that she would",
+    "don't bring",
+    "that she was"
+   ],
+   "answer": 4,
+   "why": "부정 명령문 전달은 not to bring이어야 한다. don't는 간접화법에 그대로 남길 수 없다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\nA police officer stopped a driver. He asked the driver <u>where he was going</u>. The driver said <u>that he was going</u> to the airport. The officer asked him <u>if he had</u> a driver's license. The driver told <u>to him</u> that he had left it at home. The officer told him <u>not to drive</u> without it.",
+   "choices": [
+    "where he was going",
+    "that he was going",
+    "if he had",
+    "to him",
+    "not to drive"
+   ],
+   "answer": 4,
+   "why": "tell은 사람 목적어를 바로 취하므로 told him이 맞다. told to him은 쓸 수 없다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nWhen I met Sora at the bus stop, she <u>told</u> me <u>that</u> she <u>will</u> take the school bus <u>the next day</u> and asked me <u>to join</u> her.",
+   "choices": [
+    "told",
+    "that",
+    "will",
+    "the next day",
+    "to join"
+   ],
+   "answer": 3,
+   "why": "전달동사 told가 과거이므로 will은 would가 되어야 한다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nMy brother <u>asked</u> me <u>whether</u> I <u>have</u> finished the game, and I told him <u>not to</u> <u>worry</u>.",
+   "choices": [
+    "asked",
+    "whether",
+    "have",
+    "not to",
+    "worry"
+   ],
+   "answer": 3,
+   "why": "asked가 과거이므로 현재완료 have finished는 과거완료 had finished가 되어야 한다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nThe nurse <u>told</u> the patient <u>that</u> he <u>had to</u> rest and <u>asked</u> him <u>drink</u> more water.",
+   "choices": [
+    "told",
+    "that",
+    "had to",
+    "asked",
+    "drink"
+   ],
+   "answer": 5,
+   "why": "「ask+목적어+to-v」이므로 drink는 to drink가 되어야 한다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nⓐ He asked me if I had ever met her before.\nⓑ She told me that she is going to quit the club.\nⓒ The coach told us to warm up before the match.\nⓓ My mom asked me what did I want for dinner.\nⓔ They said me that the concert had been canceled.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ⓐ, ⓒ만 옳다. ⓑ는 was going to, ⓓ는 what I wanted, ⓔ는 told me로 고쳐야 한다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nⓐ Ben asked Amy to lend him her umbrella.\nⓑ The teacher told the boys not to fight.\nⓒ He said to me that he had seen the movie the day before.\nⓓ She asked me that I could keep a secret.\nⓔ I asked him how long he had waited.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "ⓓ만 틀렸다. 의문사 없는 의문문 전달이므로 that이 아니라 if[whether]를 써야 한다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?\nⓐ He told to us that the shop was closed.\nⓑ She asked me where I lived.\nⓒ Dad told me to not open the box.\nⓓ They asked us if we were hungry.\nⓔ The guide said us to follow him.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ⓐ(told us), ⓒ(not to open), ⓔ(told us) 세 문장이 틀렸다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThe doctor said to Mina, \"You should stay in bed for a few days.\" → The doctor told Mina that ____ stay in bed for a few days.",
+   "choices": [
+    "you should",
+    "he should",
+    "she shall",
+    "I should",
+    "she should"
+   ],
+   "answer": 5,
+   "why": "따옴표 안의 You는 듣는 사람 Mina를 가리키므로 she로 바꾼다. should는 그대로 쓴다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nJake said to Amy, \"I sent you an email this morning.\" → Jake told Amy that he ____ her an email that morning.",
+   "choices": [
+    "had sent",
+    "sent",
+    "sends",
+    "has sent",
+    "would send"
+   ],
+   "answer": 1,
+   "why": "따옴표 안의 과거시제는 간접화법에서 과거완료 had sent로 바꾼다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nTwo days later, she said to me, \"I saw your sister here yesterday.\" → She told me that she ____ my sister there the day before.",
+   "choices": [
+    "saw",
+    "had seen",
+    "has seen",
+    "would see",
+    "sees"
+   ],
+   "answer": 2,
+   "why": "이미 지난 일이므로 과거완료 had seen을 쓴다. here는 there, your는 my로 바뀌었다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nHe said to me, \"Don't forget to bring your ID card tomorrow.\" → He told me ____ to bring my ID card the next day.",
+   "choices": [
+    "not forget",
+    "to not forget",
+    "not to forget",
+    "don't forget",
+    "not forgetting"
+   ],
+   "answer": 3,
+   "why": "부정 명령문은 「not to+동사원형」으로 바꾼다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nShe said to me, \"What do you want?\" → She asked me ____ I wanted.",
+   "choices": [
+    "that",
+    "if",
+    "whether",
+    "what",
+    "how"
+   ],
+   "answer": 4,
+   "why": "뒤에 wanted의 목적어가 빠져 있으므로 목적어 역할을 하는 의문사 what이 필요하다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n• The manager ____ the staff to arrive early.\n• Grandpa ____ us an interesting story.\n• She ____ me that she was moving abroad.",
+   "choices": [
+    "said",
+    "showed",
+    "asked",
+    "spoke",
+    "told"
+   ],
+   "answer": 5,
+   "why": "tell은 「tell+사람+to-v」, 「tell+사람+이야기」, 「tell+사람+that절」에 모두 쓰인다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n• He ____ me to close the window.\n• They ____ us whether we needed help.",
+   "choices": [
+    "asked",
+    "told",
+    "said",
+    "spoke",
+    "talked"
+   ],
+   "answer": 1,
+   "why": "ask는 부탁(ask+목적어+to-v)과 질문(ask+목적어+whether절)에 모두 쓸 수 있다. tell은 의문을 전달하는 whether절과 함께 쓰지 않는다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것끼리 짝지은 것은?\nThe witness told the police that he (Ⓐ saw / had seen) the man there (Ⓑ the day before / yesterday).",
+   "choices": [
+    "saw - yesterday",
+    "saw - the day before",
+    "had seen - yesterday",
+    "had seen - the day before",
+    "had seen - then"
+   ],
+   "answer": 4,
+   "why": "말하기 전에 일어난 일이므로 과거완료 had seen을 쓰고, yesterday는 the day before로 바꾼다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것끼리 짝지은 것은?\nMy sister asked me (Ⓐ if / that) I (Ⓑ would / will) drive her to the airport.",
+   "choices": [
+    "if - would",
+    "if - will",
+    "that - would",
+    "that - will",
+    "whether - will"
+   ],
+   "answer": 1,
+   "why": "의문문 전달이므로 if를, 전달동사가 과거이므로 would를 쓴다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말끼리 바르게 짝지은 것은?\nA: Why is everyone standing up?\nB: The captain told us ____ our seats and asked us ____ calm.",
+   "choices": [
+    "take - be",
+    "to take - to be",
+    "to take - be",
+    "take - to be",
+    "taking - being"
+   ],
+   "answer": 2,
+   "why": "tell·ask 모두 목적어 뒤에 to부정사를 취하므로 to take, to be가 되어야 한다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n지호는 나에게 자기가 그 책을 이미 읽었다고 말했다.",
+   "choices": [
+    "Jiho told me that he has already read the book.",
+    "Jiho told me that he had already read the book.",
+    "Jiho said me that he had already read the book.",
+    "Jiho told to me that he already read the book.",
+    "Jiho said to me that he has already read the book."
+   ],
+   "answer": 2,
+   "why": "말하기 전에 끝난 일이므로 과거완료 had read를 쓰고, tell 뒤에는 사람 목적어가 바로 온다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그녀는 나에게 그 다음 날 몇 시에 만날 수 있는지 물었다.",
+   "choices": [
+    "She asked me what time could I meet her the next day.",
+    "She asked me what time I could meet her the next day.",
+    "She asked me that what time I could meet her the next day.",
+    "She asked me what time I can meet her the next day.",
+    "She asked to me what time I could meet her the following day."
+   ],
+   "answer": 2,
+   "why": "간접의문문 어순과 can → could의 시제 일치를 모두 지킨 것은 ②이다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n아버지는 나에게 그렇게 늦게까지 게임을 하지 말라고 하셨다.",
+   "choices": [
+    "My father said me not to play games so late.",
+    "My father told me to not play games so late.",
+    "My father told me not to play games so late.",
+    "My father told me don't play games so late.",
+    "My father said to me not playing games so late."
+   ],
+   "answer": 3,
+   "why": "부정 명령문 전달은 「tell+목적어+not to-v」이다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n경찰관은 그 소년에게 어디에 사는지 물었다.",
+   "choices": [
+    "The police officer asked the boy where did he live.",
+    "The police officer asked the boy that he lived where.",
+    "The police officer asked to the boy where he lived.",
+    "The police officer asked the boy where he lived.",
+    "The police officer asked the boy where does he live."
+   ],
+   "answer": 4,
+   "why": "간접의문문은 do·did 없이 「의문사+주어+동사」 어순으로 쓰고 시제를 일치시킨다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: I ran into Daniel yesterday. He said, \"I am moving to Canada next month.\"\nB: Really? So he told you that he ____ moving to Canada the following month.",
+   "choices": [
+    "is",
+    "would",
+    "will be",
+    "had been",
+    "was"
+   ],
+   "answer": 5,
+   "why": "현재진행형 am moving은 전달동사가 과거이므로 was moving이 된다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Did you talk to Ms. Park?\nB: Yes. She asked me ____.",
+   "choices": [
+    "if I had finished the survey",
+    "if I have finished the survey",
+    "that I had finished the survey",
+    "if had I finished the survey",
+    "did I finish the survey"
+   ],
+   "answer": 1,
+   "why": "의문사 없는 의문문은 if+주어+동사로 전달하고, 현재완료는 과거완료로 바꾼다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때, 빈칸에 들어갈 말로 알맞은 것은?\nShe said to him, \"I will wait for you at the gate.\"\n= She told him that ____ at the gate.",
+   "choices": [
+    "I will wait for you",
+    "she would wait for him",
+    "she will wait for him",
+    "she would wait for you",
+    "he would wait for her"
+   ],
+   "answer": 2,
+   "why": "말한 사람 I는 she, 듣는 사람 you는 him이 되고 will은 would가 된다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때, 빈칸에 들어갈 말로 알맞은 것은?\nHe said to me, \"Are you free this Saturday?\"\n= He asked me ____ free that Saturday.",
+   "choices": [
+    "if I were",
+    "that I was",
+    "if I was",
+    "whether was I",
+    "if you were"
+   ],
+   "answer": 3,
+   "why": "의문사 없는 의문문은 if로 잇고, 주어 I에 맞는 과거형 was를 쓴다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때, 빈칸에 들어갈 말로 알맞은 것은?\nThe teacher said to Jun, \"Don't be late again.\"\n= The teacher told Jun ____ again.",
+   "choices": [
+    "don't be late",
+    "to be not late",
+    "not being late",
+    "not to be late",
+    "not to being late"
+   ],
+   "answer": 4,
+   "why": "부정 명령문은 「not to+동사원형」으로 바꾼다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때, 빈칸에 들어갈 말로 알맞은 것은?\nMina said, \"I don't know the answer.\"\n= Mina said that ____ the answer.",
+   "choices": [
+    "I didn't know",
+    "she doesn't know",
+    "I don't know",
+    "she hadn't known",
+    "she didn't know"
+   ],
+   "answer": 5,
+   "why": "I는 she로, 현재시제 don't know는 시제 일치에 따라 didn't know로 바꾼다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분의 쓰임이 나머지 넷과 다른 것은?",
+   "choices": [
+    "He told me <u>that</u> he was happy.",
+    "She said <u>that</u> she would come soon.",
+    "I heard <u>that</u> the news was true.",
+    "He asked me if <u>that</u> book was mine.",
+    "They told us <u>that</u> the shop was closed."
+   ],
+   "answer": 4,
+   "why": "④의 that은 뒤의 명사 book을 꾸미는 지시형용사이고, 나머지는 모두 전달 내용을 이끄는 접속사 that이다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 간접화법으로 바꿔 문장 전체를 쓰시오. (that을 쓰고, yesterday도 알맞은 표현으로 바꿀 것)\nMr. Park said to me, \"I finished the report yesterday.\"",
+   "answer": "Mr. Park told me that he had finished the report the day before.",
+   "alt": [
+    "Mr. Park told me that he had finished the report the previous day."
+   ],
+   "why": "say to me → told me, 과거 → 과거완료, yesterday → the day before로 바꾼다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 간접화법으로 바꿔 문장 전체를 쓰시오. (if를 쓰고, tomorrow도 알맞은 표현으로 바꿀 것)\nShe said to me, \"Are you going to join the club tomorrow?\"",
+   "answer": "She asked me if I was going to join the club the next day.",
+   "alt": [
+    "She asked me if I was going to join the club the following day."
+   ],
+   "why": "의문사 없는 의문문은 if+주어+동사로, are는 was로, tomorrow는 the next day로 바꾼다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 간접화법으로 바꿔 문장 전체를 쓰시오. (전달동사는 tell을 쓸 것)\nThe manager said to the staff, \"Don't leave the door open.\"",
+   "answer": "The manager told the staff not to leave the door open.",
+   "alt": [],
+   "why": "부정 명령문은 「tell+목적어+not to-v」로 바꾼다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 간접화법으로 바꿔 문장 전체를 쓰시오. (시제는 과거완료로, this도 알맞게 바꿀 것)\nHe said to her, \"When did you buy this bag?\"",
+   "answer": "He asked her when she had bought that bag.",
+   "alt": [],
+   "why": "「의문사+주어+동사」 어순으로 쓰고, 과거는 과거완료로, this는 that으로 바꾼다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 직접화법으로 바꿔 문장 전체를 쓰시오. (say to를 쓸 것)\nShe told me that she would visit her grandmother the next day.",
+   "answer": "She said to me, \"I will visit my grandmother tomorrow.\"",
+   "alt": [
+    "She said to me, \"I will visit my grandmother tomorrow\"."
+   ],
+   "why": "told me → said to me, she → I, would → will, the next day → tomorrow로 되돌린다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 직접화법으로 바꿔 문장 전체를 쓰시오. (say to를 쓸 것)\nThe teacher told us to hand in our homework by Monday.",
+   "answer": "The teacher said to us, \"Hand in your homework by Monday.\"",
+   "alt": [
+    "The teacher said to us, \"Hand in your homework by Monday\"."
+   ],
+   "why": "「tell+목적어+to-v」는 명령문으로 되돌리고, our는 듣는 사람 기준으로 your가 된다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (과거완료로 쓸 것, 네 단어)\nThe reporter asked the actor <u>how did he prepare</u> for the role.",
+   "answer": "how he had prepared",
+   "alt": [
+    "How he had prepared"
+   ],
+   "why": "간접의문문은 do·did 없이 「의문사+주어+동사」 어순으로 쓰고, 조건에 따라 과거완료를 쓴다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 세 단어로 고쳐 쓰시오.\nMy coach told me <u>to not give</u> up.",
+   "answer": "not to give",
+   "alt": [
+    "Not to give"
+   ],
+   "why": "부정 명령문 전달에서 not은 to부정사 앞에 온다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 두 단어를 쓰시오.\nAnna said to me, \"I have been to Canada twice.\" → Anna told me that she ____ ____ to Canada twice.",
+   "answer": "had been",
+   "alt": [
+    "Had been"
+   ],
+   "why": "현재완료는 전달동사가 과거일 때 과거완료 had been으로 바꾼다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nThe scientist said to us, \"We collected these samples last month.\" → The scientist told us that they had collected those samples the month ____.",
+   "answer": "before",
+   "alt": [
+    "Before"
+   ],
+   "why": "last month는 간접화법에서 the month before[the previous month]로 바꾼다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 두 단어를 쓰시오.\nShe said to him, \"Please wait for me here.\" → She asked him ____ ____ for her there.",
+   "answer": "to wait",
+   "alt": [
+    "To wait"
+   ],
+   "why": "부탁하는 명령문은 「ask+목적어+to부정사」로 바꾼다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. (축약형으로 쓸 것)\nA: Sam said to me, \"I can't come to the party.\"\nB: Oh, so Sam told you that he ____ come to the party.",
+   "answer": "couldn't",
+   "alt": [
+    "could not",
+    "Couldn't"
+   ],
+   "why": "can't는 시제 일치에 따라 couldn't가 된다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 우리말과 뜻이 같도록 간접화법 문장을 완성하시오. (tell, that, the next day를 쓸 것)\n그는 나에게 자기가 그 다음 날 떠날 것이라고 말했다.",
+   "answer": "He told me that he would leave the next day.",
+   "alt": [],
+   "why": "will은 전달동사가 과거일 때 would가 되고, 명령이 아닌 평서문이므로 that절로 전달한다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 우리말과 뜻이 같도록 간접화법 문장을 완성하시오. (ask, why, angry를 쓸 것)\n그녀는 나에게 내가 왜 화가 나 있는지 물었다.",
+   "answer": "She asked me why I was angry.",
+   "alt": [],
+   "why": "의문사 의문문은 「ask+목적어+의문사+주어+동사」로 쓰고, am angry는 was angry로 일치시킨다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 우리말과 뜻이 같도록 간접화법 문장을 완성하시오. (tell, run, in the classroom을 쓸 것)\n선생님께서는 우리에게 교실에서 뛰지 말라고 하셨다.",
+   "answer": "The teacher told us not to run in the classroom.",
+   "alt": [],
+   "why": "부정 명령문 전달은 「tell+목적어+not to-v」이다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 간접화법으로 바꿔 문장 전체를 쓰시오. (if를 쓸 것)\nBen said to Sue, \"Do you remember my birthday?\"",
+   "answer": "Ben asked Sue if she remembered his birthday.",
+   "alt": [],
+   "why": "Do를 없애고 if+주어+동사로 쓰며, you → she, my → his, remember → remembered로 바꾼다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 간접화법으로 바꿔 문장 전체를 쓰시오. (that을 쓰고, These와 today도 알맞게 바꿀 것)\nThe clerk said to me, \"These shoes are on sale today.\"",
+   "answer": "The clerk told me that those shoes were on sale that day.",
+   "alt": [],
+   "why": "These → those, are → were, today → that day로 바꾸고 say to me는 told me가 된다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 간접화법으로 바꿔 문장 전체를 쓰시오. (전달동사는 tell을 쓸 것)\nGrandma said to me, \"Don't worry about me.\"",
+   "answer": "Grandma told me not to worry about her.",
+   "alt": [],
+   "why": "부정 명령문은 not to worry로 바꾸고, 따옴표 안의 me는 말한 사람인 Grandma를 가리키므로 her가 된다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 간접화법으로 바꿔 문장 전체를 쓰시오. (시제는 과거완료로, this도 알맞게 바꿀 것)\nHe said to me, \"Who wrote this letter?\"",
+   "answer": "He asked me who had written that letter.",
+   "alt": [],
+   "why": "의문사가 주어이면 「의문사+동사」 어순을 그대로 두고, 과거는 과거완료로, this는 that으로 바꾼다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 두 단어로 고쳐 쓰시오.\nThe host asked the guests <u>sit</u> down and enjoy the meal.",
+   "answer": "to sit",
+   "alt": [
+    "To sit"
+   ],
+   "why": "「ask+목적어+to부정사」 형태이므로 sit은 to sit이 되어야 한다.",
+   "no": 200
+  }
+ ]
+}

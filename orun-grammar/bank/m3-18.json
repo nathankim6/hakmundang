@@ -1,0 +1,2702 @@
+{
+ "id": "m3-18",
+ "grade": "중3",
+ "name": "상관접속사",
+ "points": [
+  "not only A but also B",
+  "both A and B·either·neither",
+  "동사 수일치"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Both Jinsu and Mina ____ good at swimming.",
+   "choices": [
+    "is",
+    "does",
+    "was",
+    "has",
+    "are"
+   ],
+   "answer": 5,
+   "why": "「both A and B」는 언제나 복수 취급하므로 복수 동사 are가 맞다. is·was는 단수 동사라 쓸 수 없고, has·does는 형용사 good 앞의 be동사 자리에 올 수 없다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Neither Tom ____ Amy came to the party last night.",
+   "choices": [
+    "or",
+    "so",
+    "and",
+    "but",
+    "nor"
+   ],
+   "answer": 5,
+   "why": "neither는 언제나 nor와 짝을 이룬다(neither A nor B: A도 B도 아니다). or와 짝을 이루는 것은 either이다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Either you ____ Mina must wash the dishes.",
+   "choices": [
+    "and",
+    "nor",
+    "also",
+    "but",
+    "or"
+   ],
+   "answer": 5,
+   "why": "either는 or와 짝을 이룬다(either A or B: A나 B 둘 중 하나). nor는 neither와, and는 both와 짝을 이룬다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Not only Sujin but ____ her friends joined the art club.",
+   "choices": [
+    "too",
+    "also",
+    "either",
+    "neither",
+    "both"
+   ],
+   "answer": 2,
+   "why": "「not only A but also B」(A뿐만 아니라 B도)가 짝이다. too는 문장 끝에 쓰는 부사라 but 뒤에 바로 올 수 없다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "____ Mike and his sister love pizza.",
+   "choices": [
+    "Either",
+    "Neither",
+    "Not only",
+    "Whether",
+    "Both"
+   ],
+   "answer": 5,
+   "why": "뒤에 and가 있으므로 and와 짝을 이루는 both를 쓴다. either는 or, neither는 nor, not only는 but also와 짝을 이룬다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My uncle as well as my cousins ____ soccer every Sunday.",
+   "choices": [
+    "play",
+    "are playing",
+    "playing",
+    "plays",
+    "to play"
+   ],
+   "answer": 4,
+   "why": "「A as well as B」는 앞에 있는 A(My uncle)에 동사를 맞추므로 3인칭 단수 plays가 맞다. 바로 앞의 cousins에 맞춰 play를 쓰면 안 된다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He is not a singer ____ an actor. (그는 가수가 아니라 배우이다.)",
+   "choices": [
+    "and",
+    "or",
+    "so",
+    "nor",
+    "but"
+   ],
+   "answer": 5,
+   "why": "「not A but B」는 'A가 아니라 B'라는 뜻이다. 우리말이 '가수가 아니라 배우'이므로 but을 쓴다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Both my brother and I ____ in Busan.",
+   "choices": [
+    "lives",
+    "is living",
+    "has lived",
+    "live",
+    "was"
+   ],
+   "answer": 4,
+   "why": "「both A and B」는 복수 주어이므로 복수 동사 live를 쓴다. lives·is living·has lived·was는 모두 단수 형태다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Neither the cat nor the dogs ____ hungry now.",
+   "choices": [
+    "is",
+    "was",
+    "does",
+    "has",
+    "are"
+   ],
+   "answer": 5,
+   "why": "「neither A nor B」는 동사에 더 가까운 B(the dogs)에 수를 맞춘다. dogs가 복수이고 now가 있으므로 are가 맞다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Either the boys or Tom ____ the classroom every morning.",
+   "choices": [
+    "clean",
+    "were cleaning",
+    "are cleaning",
+    "cleans",
+    "have cleaned"
+   ],
+   "answer": 4,
+   "why": "「either A or B」는 동사와 가까운 B(Tom)에 수를 맞추므로 3인칭 단수 cleans가 맞다. 나머지는 모두 복수 주어에 쓰는 형태다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Not only Ben but also his brothers ____ soccer after school.",
+   "choices": [
+    "to play",
+    "plays",
+    "playing",
+    "is playing",
+    "play"
+   ],
+   "answer": 5,
+   "why": "「not only A but also B」는 동사와 가까운 B(his brothers)에 수를 맞춘다. brothers가 복수이므로 play가 맞다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?  (1) ____ Amy nor Kate likes carrots.  (2) He has ____ a car nor a bike.",
+   "choices": [
+    "Both",
+    "Either",
+    "Whether",
+    "Neither",
+    "Not only"
+   ],
+   "answer": 4,
+   "why": "두 문장 모두 뒤에 nor가 있으므로 nor와 짝을 이루는 neither가 들어간다. either는 or와, both는 and와 짝을 이룬다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은?",
+   "choices": [
+    "Both Sam and Kate is my friends.",
+    "Either you or I are wrong.",
+    "Neither Tom nor his brothers are here.",
+    "Not only Amy but also her sisters likes music.",
+    "My mom as well as my aunts work at a bank."
+   ],
+   "answer": 3,
+   "why": "③은 nor 뒤의 his brothers가 복수여서 are가 맞다. ①은 both A and B라 are, ②는 I에 맞춰 am, ④는 sisters에 맞춰 like, ⑤는 앞의 My mom에 맞춰 works가 되어야 한다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은?  <u>Both</u> my sister <u>and</u> I <u>is</u> <u>interested</u> <u>in</u> music.",
+   "choices": [
+    "Both",
+    "and",
+    "is",
+    "interested",
+    "in"
+   ],
+   "answer": 3,
+   "why": "「both A and B」는 복수 취급이므로 is가 아니라 are를 써야 한다. both―and의 짝, be interested in의 형태는 모두 옳다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 짝지어진 말이 알맞지 <u>않은</u> 것은?",
+   "choices": [
+    "both ― and",
+    "either ― or",
+    "neither ― nor",
+    "not only ― but also",
+    "not ― and"
+   ],
+   "answer": 5,
+   "why": "not과 짝을 이루는 말은 and가 아니라 but이다(not A but B: A가 아니라 B). 나머지 네 짝은 모두 올바른 상관접속사이다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: Which do you like, cats or dogs?  B: I like ____ cats ____ dogs. I have two cats and one dog.",
+   "choices": [
+    "both ― and",
+    "neither ― nor",
+    "either ― or",
+    "not ― but",
+    "whether ― or"
+   ],
+   "answer": 1,
+   "why": "고양이 두 마리와 개 한 마리를 키운다고 했으므로 둘 다 좋아한다는 both A and B가 알맞다. neither―nor는 둘 다 아니라는 뜻이라 맞지 않는다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Both water and air ____ important to us.",
+   "choices": [
+    "is",
+    "has",
+    "was",
+    "are",
+    "does"
+   ],
+   "answer": 4,
+   "why": "「both A and B」는 복수 취급이므로 are를 쓴다. water, air가 셀 수 없는 명사라도 both로 묶이면 복수가 된다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "____ Sora nor her friends were late for class.",
+   "choices": [
+    "Both",
+    "Either",
+    "Whether",
+    "Not only",
+    "Neither"
+   ],
+   "answer": 5,
+   "why": "뒤에 nor가 있으므로 nor와 짝인 Neither가 알맞다. were는 가까운 주어 her friends에 맞춘 것이다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Not only my dad ____ also my mom likes jazz.",
+   "choices": [
+    "but",
+    "and",
+    "or",
+    "nor",
+    "so"
+   ],
+   "answer": 1,
+   "why": "「not only A but also B」가 짝이므로 but이 들어간다. not only는 and·or·nor와 짝을 이루지 않는다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She can speak both English ____ Chinese.",
+   "choices": [
+    "or",
+    "nor",
+    "but",
+    "and",
+    "with"
+   ],
+   "answer": 4,
+   "why": "both는 and와 짝을 이루어 「both A and B」(A와 B 둘 다)가 된다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I will buy either the blue cap ____ the red one.",
+   "choices": [
+    "and",
+    "nor",
+    "but",
+    "or",
+    "also"
+   ],
+   "answer": 4,
+   "why": "either는 or와 짝을 이루어 「either A or B」(A나 B 둘 중 하나)가 된다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My brother is not a student ____ a teacher. (내 형은 학생이 아니라 선생님이다.)",
+   "choices": [
+    "and",
+    "so",
+    "or",
+    "nor",
+    "but"
+   ],
+   "answer": 5,
+   "why": "「not A but B」(A가 아니라 B) 구문이므로 but이 알맞다. 우리말 '아니라'가 결정적 단서다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Neither my mom nor my dad ____ coffee.",
+   "choices": [
+    "drinks",
+    "drink",
+    "are drinking",
+    "have drunk",
+    "drinking"
+   ],
+   "answer": 1,
+   "why": "「neither A nor B」는 가까운 주어 my dad에 맞추므로 3인칭 단수 drinks가 맞다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Both Mr. Kim and Ms. Park ____ math at our school.",
+   "choices": [
+    "teach",
+    "teaches",
+    "teaching",
+    "is teaching",
+    "to teach"
+   ],
+   "answer": 1,
+   "why": "「both A and B」는 복수 주어이므로 teach를 쓴다. teaches·is teaching은 단수 형태다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Either Jane or her sisters ____ going to help us.",
+   "choices": [
+    "is",
+    "am",
+    "was",
+    "are",
+    "has"
+   ],
+   "answer": 4,
+   "why": "「either A or B」는 가까운 주어 her sisters(복수)에 맞추므로 are가 맞다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Not only the students but also the teacher ____ tired after the trip.",
+   "choices": [
+    "are",
+    "were",
+    "do",
+    "have",
+    "was"
+   ],
+   "answer": 5,
+   "why": "「not only A but also B」는 가까운 주어 the teacher(단수)에 맞춘다. 여행이 끝난 뒤의 일이므로 과거 단수 was가 알맞다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He plays ____ the piano ____ the violin. He can play two instruments.",
+   "choices": [
+    "both ― and",
+    "neither ― nor",
+    "either ― or",
+    "not ― but",
+    "whether ― or"
+   ],
+   "answer": 1,
+   "why": "두 악기를 다 연주할 수 있다고 했으므로 '둘 다'를 뜻하는 both A and B가 알맞다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은?",
+   "choices": [
+    "Both Ann and Bill are kind.",
+    "Either you or he is right.",
+    "Neither he nor I am ready.",
+    "Not only Tom but also his sisters are here.",
+    "Both my cat and my dog is cute."
+   ],
+   "answer": 5,
+   "why": "⑤는 both A and B로 복수 주어이므로 is가 아니라 are를 써야 한다. ②③④는 모두 동사와 가까운 주어에 수를 맞춘 옳은 문장이다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My best friend is not ____ smart but also funny.",
+   "choices": [
+    "also",
+    "too",
+    "even",
+    "only",
+    "very"
+   ],
+   "answer": 4,
+   "why": "「not only A but also B」 구문이므로 빈칸에는 only가 들어간다. also는 but 뒤에 이미 쓰였다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Tom is good at ____ singing and dancing.",
+   "choices": [
+    "either",
+    "neither",
+    "whether",
+    "not",
+    "both"
+   ],
+   "answer": 5,
+   "why": "and가 뒤에 있으므로 and와 짝을 이루는 both가 알맞다(both A and B: A와 B 둘 다).",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Neither the shoes nor the bag ____ expensive.",
+   "choices": [
+    "is",
+    "were",
+    "are",
+    "have",
+    "does"
+   ],
+   "answer": 1,
+   "why": "「neither A nor B」는 가까운 주어 the bag(단수)에 맞추므로 is가 맞다. 앞의 shoes에 맞춰 are를 쓰면 안 된다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Either milk or eggs ____ in the fridge.",
+   "choices": [
+    "is",
+    "was",
+    "has",
+    "are",
+    "does"
+   ],
+   "answer": 4,
+   "why": "「either A or B」는 가까운 주어 eggs(복수)에 맞추므로 are가 맞다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "____ my parents and my brother went to the concert.",
+   "choices": [
+    "Either",
+    "Neither",
+    "Whether",
+    "Not only",
+    "Both"
+   ],
+   "answer": 5,
+   "why": "뒤에 and가 있고 '모두 갔다'는 뜻이므로 and와 짝인 Both가 알맞다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Not only you but also she ____ to bring a pencil.",
+   "choices": [
+    "needs",
+    "need",
+    "needing",
+    "are needing",
+    "have"
+   ],
+   "answer": 1,
+   "why": "「not only A but also B」는 가까운 주어 she에 맞추므로 needs가 맞다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?  (1) You can have ____ juice or water.  (2) ____ Mina or her friends will come.",
+   "choices": [
+    "Both",
+    "Not only",
+    "Neither",
+    "Either",
+    "Whether"
+   ],
+   "answer": 4,
+   "why": "두 문장 모두 뒤에 or가 있으므로 or와 짝인 either가 알맞다. neither는 nor, both는 and와 짝을 이룬다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 들어갈 말이 나머지 넷과 다른 것은?",
+   "choices": [
+    "Both Ann ____ Ben are here.",
+    "She likes both apples ____ pears.",
+    "We study both math ____ science.",
+    "Either Sam ____ Kate will win.",
+    "Both my dad ____ my mom are doctors."
+   ],
+   "answer": 4,
+   "why": "①②③⑤는 both와 짝을 이루는 and가 들어가지만, ④는 either와 짝을 이루는 or가 들어간다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Not only Suji but also Minho ____ from Daegu.",
+   "choices": [
+    "are",
+    "do",
+    "were",
+    "have",
+    "is"
+   ],
+   "answer": 5,
+   "why": "가까운 주어 Minho가 3인칭 단수이므로 is가 맞다. not only 뒤의 Suji에 맞추지 않는다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Both the boy and the girl ____ smiling.",
+   "choices": [
+    "are",
+    "was",
+    "is",
+    "has",
+    "does"
+   ],
+   "answer": 1,
+   "why": "「both A and B」는 복수 취급이므로 진행형의 be동사도 are를 쓴다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Neither Jack nor his friends ____ the answer.",
+   "choices": [
+    "knows",
+    "has known",
+    "is knowing",
+    "know",
+    "knowing"
+   ],
+   "answer": 4,
+   "why": "가까운 주어 his friends가 복수이므로 know가 맞다. know는 진행형으로 쓰지 않는다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She has neither a brother ____ a sister.",
+   "choices": [
+    "and",
+    "or",
+    "but",
+    "nor",
+    "so"
+   ],
+   "answer": 4,
+   "why": "neither와 짝을 이루는 말은 nor이다(neither A nor B: A도 B도 아니다).",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Either Ms. Lee or Mr. Han ____ our new teacher.",
+   "choices": [
+    "are",
+    "were",
+    "do",
+    "have",
+    "is"
+   ],
+   "answer": 5,
+   "why": "「either A or B」는 가까운 주어 Mr. Han(단수)에 맞추므로 is가 맞다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Both reading and writing ____ fun.",
+   "choices": [
+    "are",
+    "is",
+    "was",
+    "has",
+    "does"
+   ],
+   "answer": 1,
+   "why": "「both A and B」는 복수 취급이므로 are가 맞다. 동명사 두 개를 both로 묶어도 복수다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  민수도 지호도 우산을 가져오지 않았다.",
+   "choices": [
+    "Both Minsu and Jiho brought an umbrella.",
+    "Either Minsu or Jiho brought an umbrella.",
+    "Neither Minsu nor Jiho brought an umbrella.",
+    "Not only Minsu but also Jiho brought an umbrella.",
+    "Minsu as well as Jiho brought an umbrella."
+   ],
+   "answer": 3,
+   "why": "'A도 B도 아니다'는 neither A nor B로 나타낸다. ①은 '둘 다', ②는 '둘 중 하나', ④⑤는 '둘 다 가져왔다'는 뜻이라 맞지 않는다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그녀는 축구뿐만 아니라 야구도 좋아한다.",
+   "choices": [
+    "She likes not only soccer but also baseball.",
+    "She likes either soccer or baseball.",
+    "She likes neither soccer nor baseball.",
+    "She likes not soccer but baseball.",
+    "She likes soccer as well as baseball."
+   ],
+   "answer": 1,
+   "why": "'A뿐만 아니라 B도'는 not only A but also B이다. ⑤의 「B as well as A」는 A와 B의 순서가 바뀌어 '야구뿐만 아니라 축구도'라는 뜻이 된다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My grandmother as well as my parents ____ in Jeju.",
+   "choices": [
+    "live",
+    "are living",
+    "living",
+    "lives",
+    "to live"
+   ],
+   "answer": 4,
+   "why": "「A as well as B」는 앞의 A(My grandmother)에 동사를 맞추므로 lives가 맞다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은?  A: Is Mina at home?  B: No. ____ Mina nor her sister is at home now.",
+   "choices": [
+    "Both",
+    "Either",
+    "Whether",
+    "Not only",
+    "Neither"
+   ],
+   "answer": 5,
+   "why": "뒤에 nor가 있고 둘 다 집에 없다는 대답이므로 Neither가 알맞다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Both my shoes and my bag ____ new.",
+   "choices": [
+    "are",
+    "is",
+    "was",
+    "has",
+    "does"
+   ],
+   "answer": 1,
+   "why": "「both A and B」는 복수 취급이므로 are가 맞다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "Neither Ann nor Bill are my friend.",
+    "Both Tom and Sam is tall.",
+    "Either you or she have to go.",
+    "Not only I but also my sister is happy.",
+    "My dad as well as my uncles are a doctor."
+   ],
+   "answer": 4,
+   "why": "④는 가까운 주어 my sister에 맞춰 is를 썼으므로 옳다. ①은 Bill에 맞춰 is, ②는 복수라 are, ③은 she에 맞춰 has, ⑤는 앞의 My dad에 맞춰 is가 되어야 한다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오.  Both Ann ____ Ben are in the library.",
+   "answer": "and",
+   "alt": [
+    "And"
+   ],
+   "why": "both는 and와 짝을 이루어 「both A and B」(A와 B 둘 다)가 된다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오.  Neither Sumi ____ Jina likes horror movies.",
+   "answer": "nor",
+   "alt": [
+    "Nor"
+   ],
+   "why": "neither는 nor와 짝을 이룬다(neither A nor B: A도 B도 아니다).",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오.  Either Tom ____ Jake will help you.",
+   "answer": "or",
+   "alt": [
+    "Or"
+   ],
+   "why": "either는 or와 짝을 이룬다(either A or B: A나 B 둘 중 하나).",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오.  Not only my dad ____ also my mom can drive.",
+   "answer": "but",
+   "alt": [
+    "But"
+   ],
+   "why": "「not only A but also B」(A뿐만 아니라 B도) 구문이므로 but이 들어간다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꾸어 쓰시오.  Both Mina and Suji (be) in the same class now.",
+   "answer": "are",
+   "alt": [
+    "'re"
+   ],
+   "why": "「both A and B」는 복수 취급이므로 현재시제 be동사는 are를 쓴다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꾸어 쓰시오.  Neither the students nor the teacher (know) the answer.",
+   "answer": "knows",
+   "alt": [],
+   "why": "「neither A nor B」는 동사와 가까운 the teacher(단수)에 수를 맞추므로 knows를 쓴다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꾸어 쓰시오.  Either you or your sister (have) to wash the dishes today.",
+   "answer": "has",
+   "alt": [],
+   "why": "「either A or B」는 가까운 주어 your sister(3인칭 단수)에 맞추므로 has를 쓴다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꾸어 쓰시오.  Not only the cat but also the dogs (be) sleeping now.",
+   "answer": "are",
+   "alt": [
+    "'re"
+   ],
+   "why": "가까운 주어 the dogs가 복수이고 지금 일어나는 일이므로 are를 쓴다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꾸어 쓰시오.  My mother as well as my sisters (like) K-pop.",
+   "answer": "likes",
+   "alt": [],
+   "why": "「A as well as B」는 앞의 A(My mother)에 동사를 맞추므로 likes를 쓴다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Both Jenny and Paul <u>is</u> from Canada.",
+   "answer": "are",
+   "alt": [
+    "'re"
+   ],
+   "why": "「both A and B」는 복수 주어이므로 is를 are로 고친다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Neither Tom <u>or</u> Amy came to school today.",
+   "answer": "nor",
+   "alt": [],
+   "why": "neither의 짝은 or가 아니라 nor이다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Either Mina <u>and</u> Bora will bring the ball.",
+   "answer": "or",
+   "alt": [],
+   "why": "either의 짝은 and가 아니라 or이다. and와 짝을 이루는 것은 both이다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Not only Sam but <u>too</u> his friends joined us.",
+   "answer": "also",
+   "alt": [],
+   "why": "「not only A but also B」가 짝이므로 too를 also로 고친다. too는 문장 끝에 쓰는 부사다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Both my brother and I <u>am</u> tired.",
+   "answer": "are",
+   "alt": [
+    "'re"
+   ],
+   "why": "「both A and B」는 복수 주어이므로 am이 아니라 are를 쓴다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 한 단어를 쓰시오.  그는 의사가 아니라 간호사이다.  He is not a doctor ____ a nurse.",
+   "answer": "but",
+   "alt": [],
+   "why": "'A가 아니라 B'는 「not A but B」로 나타낸다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 한 단어를 쓰시오.  나는 개도 고양이도 좋아하지 않는다.  I like neither dogs ____ cats.",
+   "answer": "nor",
+   "alt": [],
+   "why": "neither와 짝을 이루는 말은 nor이므로 '개도 고양이도 아니다'는 neither dogs nor cats가 된다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장을 both ~ and ...를 이용해 한 문장으로 쓰시오.  Tom is kind. Amy is kind.",
+   "answer": "Both Tom and Amy are kind.",
+   "alt": [
+    "Both Amy and Tom are kind."
+   ],
+   "why": "두 사람을 both A and B로 묶으면 복수 주어가 되므로 동사는 are를 쓴다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장을 neither ~ nor ...를 이용해 한 문장으로 쓰시오.  Jane didn't come. Kate didn't come.",
+   "answer": "Neither Jane nor Kate came.",
+   "alt": [
+    "Neither Kate nor Jane came."
+   ],
+   "why": "neither A nor B 자체가 부정의 뜻이므로 didn't를 다시 쓰지 않고 came을 그대로 쓴다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장을 not only ~ but also ...를 이용해 한 문장으로 쓰시오.  He is smart. He is kind.",
+   "answer": "He is not only smart but also kind.",
+   "alt": [
+    "He is not only kind but also smart."
+   ],
+   "why": "「not only A but also B」로 묶을 때 A와 B에는 같은 품사(형용사 smart, kind)가 와야 한다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 한 단어를 쓰시오.  ____ Sam nor Kate is here.  /  I have ____ a pen nor a pencil.",
+   "answer": "neither",
+   "alt": [
+    "Neither"
+   ],
+   "why": "두 문장 모두 nor가 뒤에 있으므로 nor와 짝을 이루는 neither가 들어간다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Not only the museum but also the nearby galleries ____ closed on Mondays.",
+   "choices": [
+    "is",
+    "has been",
+    "was",
+    "are",
+    "does"
+   ],
+   "answer": 4,
+   "why": "「not only A but also B」는 동사와 가까운 B(the nearby galleries)에 수를 맞춘다. 복수이므로 are가 맞다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Both the players and the coach ____ disappointed with the result of yesterday's game.",
+   "choices": [
+    "was",
+    "been",
+    "has been",
+    "is",
+    "were"
+   ],
+   "answer": 5,
+   "why": "「both A and B」는 복수 취급이고 어제 경기 이야기이므로 과거 복수형 were가 알맞다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Neither the manager nor the employees ____ aware of the change at that time.",
+   "choices": [
+    "were",
+    "is",
+    "was",
+    "has",
+    "does"
+   ],
+   "answer": 1,
+   "why": "「neither A nor B」는 가까운 주어 the employees(복수)에 맞추고, at that time이 과거를 가리키므로 were가 맞다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Either the twins or their mother ____ going to pick up the tickets.",
+   "choices": [
+    "are",
+    "were",
+    "have",
+    "is",
+    "do"
+   ],
+   "answer": 4,
+   "why": "「either A or B」는 가까운 주어 their mother(단수)에 맞추므로 is가 맞다. 앞의 the twins에 맞추면 안 된다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The novel as well as the short stories ____ written by a Korean author.",
+   "choices": [
+    "were",
+    "are",
+    "being",
+    "have been",
+    "was"
+   ],
+   "answer": 5,
+   "why": "「A as well as B」는 앞의 A(The novel)에 동사를 맞추므로 단수 was가 맞다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Our club offers not only cooking classes ____ also free cooking tools.",
+   "choices": [
+    "but",
+    "and",
+    "or",
+    "nor",
+    "so"
+   ],
+   "answer": 1,
+   "why": "「not only A but also B」가 짝을 이루는 상관접속사이므로 but이 알맞다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 고르면?",
+   "choices": [
+    "Both the singer and the dancers was on the stage.",
+    "Neither the boys nor Jane have finished the homework.",
+    "Either my sister or my brothers is coming tonight.",
+    "Not only the tourists but also the guide was surprised.",
+    "The teacher as well as the students were late."
+   ],
+   "answer": 4,
+   "why": "④는 가까운 주어 the guide(단수)에 맞춰 was를 썼으므로 옳다. ①은 복수라 were, ②는 Jane에 맞춰 has, ③은 my brothers에 맞춰 are, ⑤는 앞의 The teacher에 맞춰 was가 되어야 한다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "She enjoys both playing the guitar and ____ her own songs.",
+   "choices": [
+    "write",
+    "wrote",
+    "to write",
+    "writing",
+    "writes"
+   ],
+   "answer": 4,
+   "why": "both A and B는 A와 B의 형태가 같아야 한다. 앞이 동명사 playing이므로 뒤도 동명사 writing을 쓴다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The trip was not only exciting but also ____.",
+   "choices": [
+    "education",
+    "educate",
+    "educationally",
+    "educational",
+    "educated"
+   ],
+   "answer": 4,
+   "why": "not only A but also B는 병렬 구조여서 앞의 형용사 exciting과 같은 형용사가 와야 하므로 educational이 맞다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Not only my sister but also I ____ planning to join the marathon.",
+   "choices": [
+    "is",
+    "are",
+    "be",
+    "was",
+    "am"
+   ],
+   "answer": 5,
+   "why": "가까운 주어가 I이므로 be동사는 am이 맞다. 진행의 뜻이므로 현재형을 쓴다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Either you or I ____ to blame for the mistake.",
+   "choices": [
+    "am",
+    "are",
+    "is",
+    "be",
+    "was"
+   ],
+   "answer": 1,
+   "why": "「either A or B」는 가까운 주어 I에 맞추므로 am이 맞다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Both the bridge and the tunnel ____ during the storm last night.",
+   "choices": [
+    "was closed",
+    "were closed",
+    "is closed",
+    "has closed",
+    "closing"
+   ],
+   "answer": 2,
+   "why": "「both A and B」는 복수이고 last night이 과거를 나타내므로 수동태 과거 were closed가 맞다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은?  <u>Not only</u> the children <u>but</u> also their parents <u>was</u> <u>invited</u> to the <u>festival</u>.",
+   "choices": [
+    "Not only",
+    "but",
+    "was",
+    "invited",
+    "festival"
+   ],
+   "answer": 3,
+   "why": "가까운 주어 their parents가 복수이므로 was가 아니라 were를 써야 한다. not only ― but also의 짝과 수동태 형태는 옳다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?  (1) ____ Sora nor her brother has visited Europe.  (2) I could find ____ my passport nor my ticket.",
+   "choices": [
+    "Both",
+    "Either",
+    "Not only",
+    "Neither",
+    "Whether"
+   ],
+   "answer": 4,
+   "why": "두 문장 모두 nor가 뒤따르므로 nor와 짝을 이루는 neither가 알맞다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그 소년은 물리학뿐만 아니라 화학에도 관심이 있다.",
+   "choices": [
+    "The boy is interested in not only physics but also chemistry.",
+    "The boy is interested in either physics or chemistry.",
+    "The boy is interested in neither physics nor chemistry.",
+    "The boy is interested in not physics but chemistry.",
+    "The boy is interested in physics as well as chemistry."
+   ],
+   "answer": 1,
+   "why": "'A뿐만 아니라 B도'는 not only A but also B이다. ⑤의 「B as well as A」는 순서가 바뀌어 '화학뿐만 아니라 물리학에도'라는 뜻이 된다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ㄱ. Both Mia and her sister are vegetarians.  ㄴ. Neither the pens nor the notebook are mine.  ㄷ. Either Tom or his friends have the key.  ㄹ. Not only the singer but also the fans was excited.  ㅁ. The manager as well as the workers wants a break.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "옳은 것은 ㄱ·ㄷ·ㅁ 세 개다. ㄴ은 the notebook에 맞춰 is, ㄹ은 the fans에 맞춰 were가 되어야 한다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Neither the coach nor the players ____ satisfied with the field conditions yesterday.",
+   "choices": [
+    "was",
+    "is",
+    "does",
+    "has",
+    "were"
+   ],
+   "answer": 5,
+   "why": "가까운 주어 the players(복수)에 맞추고 yesterday가 과거를 가리키므로 were가 맞다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "He is not the owner of the shop ____ just a part-time worker.",
+   "choices": [
+    "and",
+    "but",
+    "or",
+    "nor",
+    "so"
+   ],
+   "answer": 2,
+   "why": "「not A but B」(A가 아니라 B) 구문이므로 but이 알맞다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Both Korean and Japanese ____ difficult for many European learners.",
+   "choices": [
+    "is",
+    "are",
+    "was",
+    "has been",
+    "does"
+   ],
+   "answer": 2,
+   "why": "「both A and B」는 복수 취급이므로 are가 맞다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Either the report or the slides ____ to be finished by Friday.",
+   "choices": [
+    "needs",
+    "need",
+    "is needing",
+    "has",
+    "needing"
+   ],
+   "answer": 2,
+   "why": "「either A or B」는 가까운 주어 the slides(복수)에 맞추므로 need가 맞다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Not only the price but also the quality ____ important when you buy a laptop.",
+   "choices": [
+    "is",
+    "were",
+    "are",
+    "have",
+    "do"
+   ],
+   "answer": 1,
+   "why": "가까운 주어 the quality가 단수이고 일반적인 사실이므로 is가 맞다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "My cousin as well as my aunts ____ coming to the wedding next month.",
+   "choices": [
+    "are",
+    "is",
+    "were",
+    "have",
+    "be"
+   ],
+   "answer": 2,
+   "why": "「A as well as B」는 앞의 A(My cousin)에 맞추므로 is가 맞다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "She speaks not only fluently ____ also confidently.",
+   "choices": [
+    "and",
+    "but",
+    "or",
+    "nor",
+    "so"
+   ],
+   "answer": 2,
+   "why": "not only와 짝을 이루는 말은 but이며, 부사 fluently와 confidently가 병렬로 연결된다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞게 짝지어진 것은?  A: Who is going to give the opening speech, Mina or Junho?  B: ____ Mina ____ Junho is. Mr. Park will give it instead.",
+   "choices": [
+    "Both ― and",
+    "Either ― or",
+    "Not only ― but also",
+    "Neither ― nor",
+    "Not ― but"
+   ],
+   "answer": 4,
+   "why": "박 선생님이 대신 한다고 했으므로 둘 다 아니라는 neither A nor B가 알맞다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Both the theory and the experiment ____ the same conclusion.",
+   "choices": [
+    "supports",
+    "support",
+    "is supporting",
+    "has supported",
+    "supporting"
+   ],
+   "answer": 2,
+   "why": "「both A and B」는 복수 주어이므로 support가 맞다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Neither my parents nor my sister ____ my new hairstyle.",
+   "choices": [
+    "like",
+    "likes",
+    "are liking",
+    "have liked",
+    "liking"
+   ],
+   "answer": 2,
+   "why": "가까운 주어 my sister가 단수이므로 likes가 맞다. like는 진행형으로 쓰지 않는다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Either the students or the teacher ____ responsible for the noise in the hallway.",
+   "choices": [
+    "are",
+    "were",
+    "do",
+    "have",
+    "is"
+   ],
+   "answer": 5,
+   "why": "가까운 주어 the teacher가 단수이므로 is가 맞다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은?",
+   "choices": [
+    "Both the car and the motorcycle were washed.",
+    "Neither the boss nor the workers were happy.",
+    "Either the shoes or the hat is too small.",
+    "Not only the app but also the website are useful.",
+    "The chef as well as the waiters was busy."
+   ],
+   "answer": 4,
+   "why": "④는 가까운 주어 the website가 단수이므로 are가 아니라 is를 써야 한다. 나머지는 모두 수일치가 옳다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "He can play both the violin ____ the cello.",
+   "choices": [
+    "and",
+    "nor",
+    "or",
+    "but",
+    "with"
+   ],
+   "answer": 1,
+   "why": "both의 짝은 and이므로 「both A and B」가 된다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The company hires not only engineers but ____ designers.",
+   "choices": [
+    "too",
+    "also",
+    "either",
+    "neither",
+    "both"
+   ],
+   "answer": 2,
+   "why": "「not only A but also B」가 짝이므로 also가 알맞다. too는 but 뒤에 바로 올 수 없다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 들어갈 말이 나머지와 다른 하나는?",
+   "choices": [
+    "Neither the dog ____ the cat is in the yard.",
+    "She has neither time ____ energy for the project.",
+    "Either the bus ____ the subway will take you there.",
+    "Neither my uncle ____ my aunt drives a car.",
+    "I could find neither my keys ____ my wallet."
+   ],
+   "answer": 3,
+   "why": "①②④⑤는 neither와 짝인 nor가 들어가지만, ③은 either와 짝인 or가 들어간다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Both the front door and the back door ____ locked when we arrived.",
+   "choices": [
+    "was",
+    "were",
+    "is",
+    "has been",
+    "being"
+   ],
+   "answer": 2,
+   "why": "「both A and B」는 복수이고 arrived가 과거이므로 were가 맞다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Neither the food nor the service ____ good at that restaurant last weekend.",
+   "choices": [
+    "are",
+    "was",
+    "were",
+    "have been",
+    "being"
+   ],
+   "answer": 2,
+   "why": "가까운 주어 the service가 단수이고 last weekend가 과거이므로 was가 맞다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그 식당은 맛뿐만 아니라 분위기로도 유명하다.",
+   "choices": [
+    "The restaurant is famous not only for its taste but also for its atmosphere.",
+    "The restaurant is famous not for its taste but for its atmosphere.",
+    "The restaurant is famous either for its taste or for its atmosphere.",
+    "The restaurant is famous neither for its taste nor for its atmosphere.",
+    "The restaurant is famous for its taste as well as for its atmosphere."
+   ],
+   "answer": 1,
+   "why": "'A뿐만 아니라 B도'는 not only A but also B이다. ⑤는 as well as 앞뒤가 바뀌어 '분위기뿐만 아니라 맛으로도'라는 뜻이 된다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Not only I but also my brothers ____ interested in astronomy.",
+   "choices": [
+    "is",
+    "am",
+    "was",
+    "are",
+    "has"
+   ],
+   "answer": 4,
+   "why": "가까운 주어 my brothers가 복수이므로 are가 맞다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Either she or her parents ____ going to pay for the trip.",
+   "choices": [
+    "is",
+    "am",
+    "be",
+    "was",
+    "are"
+   ],
+   "answer": 5,
+   "why": "가까운 주어 her parents가 복수이므로 are가 맞다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 두 문장의 뜻이 같지 <u>않은</u> 것은?",
+   "choices": [
+    "Not only Tom but also Amy is smart. = Amy as well as Tom is smart.",
+    "He is not a teacher but a writer. = He is a writer, not a teacher.",
+    "Neither Sue nor Ben came. = Sue didn't come, and Ben didn't, either.",
+    "Both Ann and Kate are nurses. = Ann is a nurse, and Kate is, too.",
+    "Either you or I have to go. = Both you and I have to go."
+   ],
+   "answer": 5,
+   "why": "⑤의 either A or B는 '둘 중 하나'이고 both A and B는 '둘 다'이므로 뜻이 다르다. 나머지는 모두 같은 뜻으로 바꿔 쓴 것이다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Not only the roof but also the walls ____ damaged by the typhoon.",
+   "choices": [
+    "was",
+    "were",
+    "is",
+    "has been",
+    "being"
+   ],
+   "answer": 2,
+   "why": "가까운 주어 the walls가 복수이고 태풍은 이미 지난 일이므로 were damaged가 맞다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "My teacher as well as my classmates ____ always kind to me.",
+   "choices": [
+    "are",
+    "were",
+    "have",
+    "is",
+    "be"
+   ],
+   "answer": 4,
+   "why": "「A as well as B」는 앞의 A(My teacher)에 맞추므로 is가 맞다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Neither the actor nor the director ____ at the press conference yesterday.",
+   "choices": [
+    "were",
+    "are",
+    "being",
+    "have been",
+    "was"
+   ],
+   "answer": 5,
+   "why": "가까운 주어 the director가 단수이고 yesterday가 과거이므로 was가 맞다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Both listening and speaking ____ practice every day.",
+   "choices": [
+    "requires",
+    "require",
+    "is requiring",
+    "has required",
+    "requiring"
+   ],
+   "answer": 2,
+   "why": "「both A and B」는 복수 주어이므로 require가 맞다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Either the blue jacket or the black shoes ____ on sale now.",
+   "choices": [
+    "is",
+    "was",
+    "are",
+    "has",
+    "does"
+   ],
+   "answer": 3,
+   "why": "가까운 주어 the black shoes가 복수이므로 are가 맞다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Not only the topic but also the examples ____ clear and helpful.",
+   "choices": [
+    "is",
+    "was",
+    "are",
+    "has",
+    "does"
+   ],
+   "answer": 3,
+   "why": "가까운 주어 the examples가 복수이므로 are가 맞다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The volunteers spent the weekend not only cleaning the park but also ____ trees.",
+   "choices": [
+    "plant",
+    "planted",
+    "to plant",
+    "planting",
+    "plants"
+   ],
+   "answer": 4,
+   "why": "not only A but also B는 병렬 구조이므로 앞의 cleaning과 같은 동명사 planting을 쓴다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "She promised not to complain ____ to work harder.",
+   "choices": [
+    "and",
+    "but",
+    "or",
+    "nor",
+    "so"
+   ],
+   "answer": 2,
+   "why": "「not A but B」(A가 아니라 B) 구문이며 to부정사끼리 병렬로 연결된다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그는 부산이 아니라 대구에서 태어났다.",
+   "choices": [
+    "He was born not in Busan but in Daegu.",
+    "He was born not only in Busan but also in Daegu.",
+    "He was born either in Busan or in Daegu.",
+    "He was born neither in Busan nor in Daegu.",
+    "He was born in Busan as well as in Daegu."
+   ],
+   "answer": 1,
+   "why": "'A가 아니라 B'는 not A but B이며 전치사구 in Busan과 in Daegu가 병렬로 연결된다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꾸어 쓰시오.  Neither the teachers nor the principal (be) present at the meeting yesterday.",
+   "answer": "was",
+   "alt": [],
+   "why": "「neither A nor B」는 동사와 가까운 the principal(단수)에 맞추고, yesterday가 과거를 가리키므로 was를 쓴다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꾸어 쓰시오.  Both the laptop and the printer (need) to be repaired.",
+   "answer": "need",
+   "alt": [],
+   "why": "「both A and B」는 복수 취급이므로 need를 쓴다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꾸어 쓰시오.  Either my brothers or my sister (have) to walk the dog today.",
+   "answer": "has",
+   "alt": [],
+   "why": "「either A or B」는 가까운 주어 my sister(3인칭 단수)에 맞추므로 has를 쓴다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꾸어 쓰시오.  Not only the singer but also the dancers (be) ready for the show now.",
+   "answer": "are",
+   "alt": [
+    "'re"
+   ],
+   "why": "가까운 주어 the dancers가 복수이고 now가 있으므로 are를 쓴다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꾸어 쓰시오.  The captain as well as the players (be) interested in the new plan.",
+   "answer": "is",
+   "alt": [
+    "'s"
+   ],
+   "why": "「A as well as B」는 앞의 A(The captain)에 동사를 맞추므로 is를 쓴다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Not only the teacher but also the students <u>was</u> surprised by the news.",
+   "answer": "were",
+   "alt": [],
+   "why": "가까운 주어 the students가 복수이므로 was를 were로 고친다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Neither my brother <u>or</u> my sister remembers the password.",
+   "answer": "nor",
+   "alt": [],
+   "why": "neither의 짝은 nor이므로 or를 nor로 고친다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  The report as well as the results <u>were</u> sent to the manager this morning.",
+   "answer": "was",
+   "alt": [],
+   "why": "「A as well as B」는 앞의 A(The report)에 동사를 맞추므로 were를 was로 고친다. 바로 앞의 results에 맞추면 안 된다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Both the road and the bridge <u>was</u> covered with snow.",
+   "answer": "were",
+   "alt": [],
+   "why": "「both A and B」는 복수 주어이므로 was를 were로 고친다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Either the coach or the players <u>is</u> going to speak to the press.",
+   "answer": "are",
+   "alt": [
+    "'re"
+   ],
+   "why": "가까운 주어 the players가 복수이므로 is를 are로 고친다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 as well as를 이용해 같은 뜻의 문장으로 바꾸어 쓰시오.  Not only Tom but also Amy passed the exam.",
+   "answer": "Amy as well as Tom passed the exam.",
+   "alt": [],
+   "why": "「not only A but also B」 = 「B as well as A」이므로 B(Amy)를 앞으로 보낸다. 동사는 앞의 Amy에 맞춘다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 not only ~ but also ...를 이용해 같은 뜻의 문장으로 바꾸어 쓰시오.  The hotel as well as the beach was crowded.",
+   "answer": "Not only the beach but also the hotel was crowded.",
+   "alt": [],
+   "why": "「B as well as A」 = 「not only A but also B」이므로 as well as 뒤의 the beach가 not only 뒤로 간다. 동사는 가까운 the hotel에 맞춰 was 그대로다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 neither ~ nor ...를 이용해 한 문장으로 쓰시오.  My father can't speak French. My mother can't speak French.",
+   "answer": "Neither my father nor my mother can speak French.",
+   "alt": [
+    "Neither my mother nor my father can speak French."
+   ],
+   "why": "neither A nor B에 이미 부정의 뜻이 있으므로 can't가 아니라 can을 쓴다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 both ~ and ...를 이용해 한 문장으로 쓰시오.  The museum is free on Mondays. The zoo is free on Mondays.",
+   "answer": "Both the museum and the zoo are free on Mondays.",
+   "alt": [
+    "Both the zoo and the museum are free on Mondays."
+   ],
+   "why": "both A and B는 복수 주어이므로 is를 are로 바꿔야 한다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 한 단어를 쓰시오.  그 영화는 재미있을 뿐만 아니라 감동적이었다.  The movie was not ____ funny but also touching.",
+   "answer": "only",
+   "alt": [],
+   "why": "'A뿐만 아니라 B도'는 「not only A but also B」이므로 빈칸에는 only가 들어간다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 한 단어를 쓰시오.  너나 지호 둘 중 한 명이 발표를 해야 한다.  ____ you or Jiho has to give the presentation.",
+   "answer": "Either",
+   "alt": [
+    "either"
+   ],
+   "why": "'A나 B 둘 중 하나'는 either A or B이다. 동사는 가까운 Jiho에 맞춰 has를 썼다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 한 단어를 쓰시오.  그 배우는 연기뿐만 아니라 노래도 잘한다.  The actor is good at singing ____ well as acting.",
+   "answer": "as",
+   "alt": [],
+   "why": "「B as well as A」는 'A뿐만 아니라 B도'라는 뜻이므로 as가 들어가 as well as가 된다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꾸어 쓰시오.  She is good at both cooking and (bake) bread.",
+   "answer": "baking",
+   "alt": [],
+   "why": "both A and B는 병렬 구조이므로 앞의 동명사 cooking과 형태를 맞춰 baking을 쓴다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꾸어 쓰시오.  The course was not only useful but also (interest).",
+   "answer": "interesting",
+   "alt": [],
+   "why": "not only A but also B는 병렬 구조여서 앞의 형용사 useful과 같은 품사가 와야 하므로 interesting을 쓴다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 한 단어를 쓰시오.  The library offers not only books ____ also free Wi-Fi.  /  He is not a lawyer ____ a journalist.",
+   "answer": "but",
+   "alt": [],
+   "why": "첫 문장은 not only A but also B, 둘째 문장은 not A but B로 둘 다 but이 짝이 되는 말이다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장끼리 바르게 짝지은 것은?  ㄱ. Not only the students but also the teacher were shocked by the announcement.  ㄴ. Neither the twins nor their mother has arrived at the airport yet.  ㄷ. Both the design and the price of the phone make it attractive.  ㄹ. Either the manager or the assistants is going to handle the complaint.  ㅁ. The director as well as the actors were nervous before the show.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㅁ",
+    "ㄹ, ㅁ"
+   ],
+   "answer": 2,
+   "why": "ㄴ은 가까운 주어 their mother에 맞춘 has, ㄷ은 both A and B의 복수 동사 make로 옳다. ㄱ은 the teacher에 맞춰 was, ㄹ은 the assistants에 맞춰 are, ㅁ은 앞의 The director에 맞춰 was가 되어야 한다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ㄱ. Not only she but also her cousins are moving to Canada.  ㄴ. Neither the report nor the slides was ready.  ㄷ. Both patience and practice is needed to master an instrument.  ㄹ. Either the students or the teacher has to lock the door.  ㅁ. The coach as well as the players was blamed for the loss.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "옳은 것은 ㄱ·ㄹ·ㅁ 세 개다. ㄴ은 the slides에 맞춰 were, ㄷ은 both A and B라서 are가 되어야 한다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은?  <u>Not only</u> the quality of the products <u>but also</u> the attitude of the staff <u>have</u> <u>made</u> this store <u>popular</u>.",
+   "choices": [
+    "Not only",
+    "but also",
+    "have",
+    "made",
+    "popular"
+   ],
+   "answer": 3,
+   "why": "동사와 가까운 주어는 the attitude(단수)이므로 have가 아니라 has를 써야 한다. of the staff는 수식어일 뿐 주어가 아니다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 두 문장의 의미가 서로 같지 <u>않은</u> 것은?",
+   "choices": [
+    "Not only the price but also the design matters. = The design as well as the price matters.",
+    "He is not a scientist but an engineer. = He is an engineer, not a scientist.",
+    "Neither Amy nor Ben knows the truth. = Amy doesn't know the truth, and Ben doesn't either.",
+    "Both Sue and Ken speak Chinese. = Sue speaks Chinese, and so does Ken.",
+    "Not only the novel but also the poems were translated. = The novel as well as the poems were translated."
+   ],
+   "answer": 5,
+   "why": "「not only A but also B」 = 「B as well as A」이므로 ⑤는 The poems as well as the novel이 되어야 하고, 그때 동사도 앞의 poems에 맞춘다. 순서를 그대로 두면 강조 대상이 뒤바뀐다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 세 빈칸에 공통으로 들어갈 말로 알맞은 것은?  (1) ____ the coach nor the players were satisfied.  (2) I have visited ____ Rome nor Paris.  (3) She is ____ rich nor famous.",
+   "choices": [
+    "Both",
+    "Either",
+    "Neither",
+    "Not only",
+    "Whether"
+   ],
+   "answer": 3,
+   "why": "세 문장 모두 뒤에 nor가 있으므로 nor와 짝을 이루는 neither가 들어간다. neither A nor B 자체가 부정이라 not을 따로 쓰지 않는다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Not only the teachers but also the principal ____ that the new policy would fail.",
+   "choices": [
+    "believe",
+    "believes",
+    "are believing",
+    "have believed",
+    "believing"
+   ],
+   "answer": 2,
+   "why": "동사와 가까운 주어 the principal이 단수이므로 believes가 맞다. believe는 진행형으로 쓰지 않는다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Neither the passengers nor the driver ____ injured in the accident that happened last night.",
+   "choices": [
+    "were",
+    "are",
+    "was",
+    "have been",
+    "being"
+   ],
+   "answer": 3,
+   "why": "가까운 주어 the driver가 단수이고 사고는 어젯밤 일이므로 was가 맞다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Both the increase in temperature and the lack of rain ____ the crops this summer.",
+   "choices": [
+    "has damaged",
+    "have damaged",
+    "damages",
+    "is damaging",
+    "damaging"
+   ],
+   "answer": 2,
+   "why": "「both A and B」는 복수 주어이므로 have damaged가 맞다. in temperature, of rain은 수식어라 수일치에 관여하지 않는다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Either the two managers or the CEO ____ to sign the contract before Friday.",
+   "choices": [
+    "need",
+    "needs",
+    "are needing",
+    "have",
+    "needing"
+   ],
+   "answer": 2,
+   "why": "가까운 주어 the CEO가 단수이므로 needs가 맞다. 앞의 the two managers에 맞추면 안 된다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The professor as well as her students ____ surprised at how quickly the project finished.",
+   "choices": [
+    "were",
+    "are",
+    "was",
+    "have been",
+    "being"
+   ],
+   "answer": 3,
+   "why": "「A as well as B」는 앞의 A(The professor)에 맞추고, finished가 과거이므로 was가 맞다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The workshop taught us not only how to write a report but also ____ in an interview.",
+   "choices": [
+    "how behave",
+    "how to behave",
+    "behaving how",
+    "to how behave",
+    "how behaving"
+   ],
+   "answer": 2,
+   "why": "not only A but also B는 병렬 구조이므로 앞의 「how to+동사원형」과 같은 형태인 how to behave가 와야 한다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "She is respected both for her talent and ____ her hard work.",
+   "choices": [
+    "of",
+    "for",
+    "to",
+    "with",
+    "by"
+   ],
+   "answer": 2,
+   "why": "both A and B는 같은 형태끼리 연결하므로 앞의 for her talent와 짝이 되도록 for her hard work를 쓴다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Success depends not on luck but ____ effort.",
+   "choices": [
+    "in",
+    "of",
+    "on",
+    "at",
+    "for"
+   ],
+   "answer": 3,
+   "why": "「not A but B」의 A와 B는 같은 형태여야 하므로 on luck과 짝이 되는 on effort를 쓴다. depend on의 전치사도 on이다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것을 고르시오.",
+   "choices": [
+    "Not only the students who joined the club but also their teacher was invited.",
+    "Neither the book that I ordered nor the magazines have arrived yet.",
+    "Both the man standing at the door and the woman sitting on the bench were waiting for me.",
+    "Either the files you saved or the folder I made is missing.",
+    "The parcel as well as the letters were delivered this morning."
+   ],
+   "answer": 5,
+   "why": "⑤는 「A as well as B」이므로 앞의 The parcel(단수)에 맞춰 was가 되어야 한다. ①②④는 동사와 가까운 주어에, ③은 both A and B의 복수에 맞춘 옳은 문장이다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 고르시오.",
+   "choices": [
+    "Neither the coach nor the players was ready for the final match.",
+    "Both the theory and its application is difficult to understand.",
+    "Not only the roof but also the windows was broken by the storm.",
+    "Either my parents or my sister is going to attend the ceremony.",
+    "The students as well as the teacher was late for the assembly."
+   ],
+   "answer": 4,
+   "why": "④는 가까운 주어 my sister에 맞춰 is를 썼으므로 옳다. ①은 were, ②는 are, ③은 were, ⑤는 앞의 The students에 맞춰 were가 되어야 한다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그 계획은 시간을 절약해 줄 뿐만 아니라 비용도 줄여 준다.",
+   "choices": [
+    "The plan not only saves time but also reduces costs.",
+    "The plan not only saves time but also reduce costs.",
+    "The plan not only save time but also reduces costs.",
+    "The plan saves not only time but also reduces costs.",
+    "The plan not only saves time but reduces also costs."
+   ],
+   "answer": 1,
+   "why": "not only와 but also 뒤에 각각 「동사＋목적어」가 병렬로 오고 주어 The plan이 단수이므로 saves, reduces가 맞다. ④는 not only 뒤가 명사인데 but also 뒤는 동사여서 병렬이 깨진다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  학생들뿐만 아니라 선생님도 그 결과에 놀랐다.",
+   "choices": [
+    "Not only the students but also the teacher was surprised at the result.",
+    "Not only the students but also the teacher were surprised at the result.",
+    "Not only the teacher but also the students was surprised at the result.",
+    "The students as well as the teacher was surprised at the result.",
+    "Neither the students nor the teacher was surprised at the result."
+   ],
+   "answer": 1,
+   "why": "'학생들뿐만 아니라 선생님도'이므로 not only the students but also the teacher이고, 동사는 가까운 the teacher에 맞춰 was를 쓴다. ④는 A와 B의 순서가 뒤바뀌었고 동사도 The students에 맞춰야 한다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Not only his parents but also his younger brother ____ against his decision to quit school.",
+   "choices": [
+    "were",
+    "are",
+    "was",
+    "have been",
+    "being"
+   ],
+   "answer": 3,
+   "why": "가까운 주어 his younger brother가 단수이고 과거의 결정에 대한 반응이므로 was가 맞다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Neither the evidence nor the witnesses ____ able to prove that he was there.",
+   "choices": [
+    "was",
+    "is",
+    "were",
+    "has been",
+    "being"
+   ],
+   "answer": 3,
+   "why": "가까운 주어 the witnesses가 복수이고 문장이 과거이므로 were가 맞다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Both the manager and the team leader ____ responsible for the schedule that was announced yesterday.",
+   "choices": [
+    "is",
+    "was",
+    "are",
+    "has been",
+    "being"
+   ],
+   "answer": 3,
+   "why": "「both A and B」는 복수 취급이므로 are가 맞다. 관계사절 안의 was는 the schedule에 맞춘 것이다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Either the noise from the street or the lights in the hallway ____ keeping the baby awake.",
+   "choices": [
+    "is",
+    "was",
+    "are",
+    "has",
+    "be"
+   ],
+   "answer": 3,
+   "why": "「either A or B」는 동사와 가까운 the lights(복수)에 맞추므로 are가 맞다. 문장 맨 앞의 The noise에 맞추면 안 된다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Either the lights in the hallway or the noise from the street ____ keeping the baby awake.",
+   "choices": [
+    "is",
+    "are",
+    "were",
+    "have",
+    "be"
+   ],
+   "answer": 1,
+   "why": "앞 문장과 A·B의 자리가 바뀌었다. 동사와 가까운 주어가 the noise(단수)이므로 이번에는 is가 맞다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은?  <u>Both</u> the coach <u>and</u> the assistant coach <u>was</u> <u>satisfied</u> with <u>the result</u>.",
+   "choices": [
+    "Both",
+    "and",
+    "was",
+    "satisfied",
+    "the result"
+   ],
+   "answer": 3,
+   "why": "「both A and B」는 복수 주어이므로 was가 아니라 were를 써야 한다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은?  Neither the boys <u>nor</u> their sister <u>have</u> <u>been</u> told <u>about</u> the <u>surprise party</u>.",
+   "choices": [
+    "nor",
+    "have",
+    "been",
+    "about",
+    "surprise party"
+   ],
+   "answer": 2,
+   "why": "가까운 주어 their sister가 단수이므로 have가 아니라 has를 써야 한다. neither―nor의 짝과 수동태 형태는 옳다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?  (1) She is not ____ a doctor but also a researcher.  (2) The gallery is open not ____ on weekdays but also on Sundays.",
+   "choices": [
+    "also",
+    "only",
+    "even",
+    "still",
+    "yet"
+   ],
+   "answer": 2,
+   "why": "두 문장 모두 「not only A but also B」 구문이므로 only가 들어간다. also는 이미 but 뒤에 쓰였다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은?  A: Did Mina or Sujin win the contest?  B: ____. The prize went to a student from another school.",
+   "choices": [
+    "Both Mina and Sujin did",
+    "Either Mina or Sujin did",
+    "Neither Mina nor Sujin did",
+    "Not only Mina but also Sujin did",
+    "Mina as well as Sujin did"
+   ],
+   "answer": 3,
+   "why": "상이 다른 학교 학생에게 돌아갔다고 했으므로 둘 다 이기지 못했다는 neither A nor B가 알맞다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Not only the number of visitors but also the amount of money spent ____ increased this year.",
+   "choices": [
+    "have",
+    "has",
+    "were",
+    "are",
+    "being"
+   ],
+   "answer": 2,
+   "why": "동사와 가까운 주어가 the amount(단수)이므로 has increased가 맞다. of money spent는 수식어다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Both what he said and what he did ____ surprising to everyone in the room.",
+   "choices": [
+    "is",
+    "was",
+    "are",
+    "has been",
+    "being"
+   ],
+   "answer": 3,
+   "why": "「both A and B」는 복수 취급이므로 명사절 두 개를 묶어도 복수 동사 are를 쓴다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Neither the students' answers nor the teacher's explanation ____ clear to me at that moment.",
+   "choices": [
+    "were",
+    "are",
+    "was",
+    "have been",
+    "being"
+   ],
+   "answer": 3,
+   "why": "가까운 주어 the teacher's explanation이 단수이고 at that moment가 과거이므로 was가 맞다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분을 어법에 맞게 고친 것으로 알맞은 것은?  Not only the singers but also the pianist <u>were</u> late for the rehearsal.",
+   "choices": [
+    "was",
+    "are",
+    "have been",
+    "being",
+    "been"
+   ],
+   "answer": 1,
+   "why": "가까운 주어 the pianist가 단수이고 문장이 과거이므로 were를 was로 고쳐야 한다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ㄱ. Both the cat and the dog needs a bath.  ㄴ. Neither my sister nor I am ready to leave.  ㄷ. Either the teacher or the students are wrong.  ㄹ. Not only the food but also the drinks was free.  ㅁ. My brother as well as my parents support my dream.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "옳은 것은 ㄴ·ㄷ 두 개다. ㄱ은 need, ㄹ은 the drinks에 맞춰 were, ㅁ은 앞의 My brother에 맞춰 supports가 되어야 한다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 알맞게 짝지어진 것은?  ㄱ. Both the actor and the director ____ present at the opening ceremony.  ㄴ. Neither the shoes nor the hat ____ me.  ㄷ. Not only the guests but also the host ____ tired.",
+   "choices": [
+    "are ― fits ― looks",
+    "are ― fit ― look",
+    "is ― fits ― look",
+    "are ― fit ― looks",
+    "is ― fit ― looks"
+   ],
+   "answer": 1,
+   "why": "ㄱ은 both A and B라 are, ㄴ은 가까운 the hat에 맞춰 fits, ㄷ은 가까운 the host에 맞춰 looks가 된다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 알맞게 짝지어진 것은?  ㄱ. ____ the twins nor their father speaks Spanish.  ㄴ. She is famous ____ only for her voice but also for her acting.  ㄷ. You can take ____ the bus or the subway.",
+   "choices": [
+    "Neither ― not ― either",
+    "Either ― not ― neither",
+    "Neither ― but ― either",
+    "Both ― not ― either",
+    "Neither ― not ― both"
+   ],
+   "answer": 1,
+   "why": "ㄱ은 nor와 짝인 Neither, ㄴ은 「not only ~ but also」의 not, ㄷ은 or와 짝인 either가 들어간다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Not only the equipment but also the safety rules ____ checked before every dive.",
+   "choices": [
+    "is",
+    "was",
+    "are",
+    "has been",
+    "being"
+   ],
+   "answer": 3,
+   "why": "가까운 주어 the safety rules가 복수이고 습관적인 일이므로 are checked가 맞다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Either the report or the two presentations ____ to be submitted by tomorrow.",
+   "choices": [
+    "has",
+    "have",
+    "is",
+    "was",
+    "having"
+   ],
+   "answer": 2,
+   "why": "가까운 주어 the two presentations가 복수이므로 have to be submitted가 맞다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The main character as well as the supporting characters ____ based on real people.",
+   "choices": [
+    "are",
+    "were",
+    "is",
+    "have been",
+    "being"
+   ],
+   "answer": 3,
+   "why": "「A as well as B」는 앞의 A(The main character)에 맞추므로 is가 맞다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Both the students who studied abroad and the ones who stayed here ____ from the program.",
+   "choices": [
+    "benefits",
+    "benefit",
+    "is benefiting",
+    "has benefited",
+    "benefiting"
+   ],
+   "answer": 2,
+   "why": "「both A and B」는 복수 주어이므로 benefit이 맞다. 관계사절이 길어도 주어의 수는 변하지 않는다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  나는 그를 만난 적도 없고 그에 대해 들어 본 적도 없다.",
+   "choices": [
+    "I have neither met him nor heard of him.",
+    "I have either met him or heard of him.",
+    "I have both met him and heard of him.",
+    "I have not met him but heard of him.",
+    "I have not only met him but also heard of him."
+   ],
+   "answer": 1,
+   "why": "'A도 아니고 B도 아니다'는 neither A nor B이며 과거분사 met과 heard가 병렬로 연결된다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그 문제는 학생들뿐만 아니라 학부모들에게도 영향을 미친다.",
+   "choices": [
+    "The problem affects not only students but also parents.",
+    "The problem affects neither students nor parents.",
+    "The problem affects either students or parents.",
+    "The problem affects not students but parents.",
+    "The problem affects students as well as parents."
+   ],
+   "answer": 1,
+   "why": "'A뿐만 아니라 B도'는 not only A but also B이다. ⑤는 as well as의 앞뒤가 바뀌어 '학부모뿐만 아니라 학생들에게도'라는 뜻이 된다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장을 고르면?",
+   "choices": [
+    "He enjoys not only reading novels but also watching movies.",
+    "She is interested both in history and in art.",
+    "The trip was neither cheap nor comfortable.",
+    "We must decide either to stay here or to move on.",
+    "The book is not only informative but also entertain."
+   ],
+   "answer": 5,
+   "why": "⑤는 병렬 구조가 깨졌다. 앞이 형용사 informative이므로 but also 뒤에도 형용사 entertaining이 와야 한다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞지 <u>않는</u> 문장은?",
+   "choices": [
+    "You can pay either by card or in cash.",
+    "The class focuses not on grammar but on conversation.",
+    "Both writing an essay and give a speech require practice.",
+    "He is respected not only by his students but also by his colleagues.",
+    "She wants neither sympathy nor advice."
+   ],
+   "answer": 3,
+   "why": "③은 both A and B의 병렬이 깨졌다. 앞이 동명사 writing이므로 뒤도 giving a speech가 되어야 한다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "____ the amount of rain and the temperature affect how well rice grows.",
+   "choices": [
+    "Either",
+    "Neither",
+    "Both",
+    "Not only",
+    "Whether"
+   ],
+   "answer": 3,
+   "why": "뒤에 and가 있고 동사가 복수형 affect이므로 and와 짝을 이루며 복수 취급하는 Both가 알맞다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Neither of the two plans ____ acceptable to everyone at the meeting.",
+   "choices": [
+    "are",
+    "were",
+    "is",
+    "have been",
+    "being"
+   ],
+   "answer": 3,
+   "why": "「neither of＋복수명사」는 '둘 다 아니다'라는 뜻으로 단수 취급하므로 is가 맞다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Either of the two roads ____ you to the station.",
+   "choices": [
+    "lead",
+    "leads",
+    "are leading",
+    "have led",
+    "leading"
+   ],
+   "answer": 2,
+   "why": "「either of＋복수명사」는 '둘 중 어느 하나'라는 뜻으로 단수 취급하므로 leads가 맞다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은?  <u>Either</u> the students <u>or</u> the teacher <u>are</u> going to <u>bring</u> the <u>equipment</u>.",
+   "choices": [
+    "Either",
+    "or",
+    "are",
+    "bring",
+    "equipment"
+   ],
+   "answer": 3,
+   "why": "동사와 가까운 주어가 the teacher(단수)이므로 are가 아니라 is를 써야 한다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 가장 가까운 것은?  Not only the price but also the quality of the product satisfied the customers.",
+   "choices": [
+    "The quality of the product as well as the price satisfied the customers.",
+    "The price as well as the quality of the product satisfied the customers.",
+    "Neither the price nor the quality of the product satisfied the customers.",
+    "Either the price or the quality of the product satisfied the customers.",
+    "Not the price but the quality of the product satisfied the customers."
+   ],
+   "answer": 1,
+   "why": "「not only A but also B」 = 「B as well as A」이므로 B(the quality of the product)가 as well as 앞으로 온다. ②는 A와 B가 뒤바뀐 문장이다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꾸어 쓰시오.  Not only the residents but also the mayor (be) worried about the flood last year.",
+   "answer": "was",
+   "alt": [],
+   "why": "「not only A but also B」는 동사와 가까운 the mayor(단수)에 맞추고 last year가 과거이므로 was를 쓴다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꾸어 쓰시오. (현재완료로 쓸 것)  Neither the paintings nor the statue (have) been sold yet.",
+   "answer": "has",
+   "alt": [],
+   "why": "가까운 주어 the statue가 단수이므로 현재완료의 조동사는 has가 된다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꾸어 쓰시오. (현재시제로 쓸 것)  Both the rise in prices and the fall in wages (make) life harder.",
+   "answer": "make",
+   "alt": [],
+   "why": "「both A and B」는 복수 취급이므로 make를 쓴다. in prices, in wages는 수식어라 수일치에 관여하지 않는다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꾸어 쓰시오. (현재시제로 쓸 것)  Either the two guides or the museum director (be) going to explain the exhibit.",
+   "answer": "is",
+   "alt": [
+    "'s"
+   ],
+   "why": "「either A or B」는 가까운 주어 the museum director(단수)에 맞추므로 is를 쓴다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꾸어 쓰시오. (현재시제로 쓸 것)  The novel as well as its two movie versions (be) popular among teenagers.",
+   "answer": "is",
+   "alt": [
+    "'s"
+   ],
+   "why": "「A as well as B」는 앞의 A(The novel)에 동사를 맞추므로 is를 쓴다. 바로 앞의 versions에 맞추면 안 된다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 not only ~ but also ...로 시작하는 같은 뜻의 문장으로 바꾸어 쓰시오.  The teacher as well as the students enjoyed the field trip.",
+   "answer": "Not only the students but also the teacher enjoyed the field trip.",
+   "alt": [],
+   "why": "「B as well as A」 = 「not only A but also B」이므로 as well as 뒤의 the students가 not only 뒤로 간다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 as well as를 이용해 같은 뜻의 문장으로 바꾸어 쓰시오.  Not only the design but also the price attracted buyers.",
+   "answer": "The price as well as the design attracted buyers.",
+   "alt": [],
+   "why": "「not only A but also B」 = 「B as well as A」이므로 B(the price)를 문장 앞으로 보낸다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장을 neither ~ nor ...를 이용해 한 문장으로 쓰시오.  The soup wasn't warm. The bread wasn't warm.",
+   "answer": "Neither the soup nor the bread was warm.",
+   "alt": [
+    "Neither the bread nor the soup was warm."
+   ],
+   "why": "neither A nor B에 부정의 뜻이 있으므로 wasn't가 아니라 was를 쓰고, 동사는 가까운 the bread에 맞춰 단수형이 된다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장을 both ~ and ...를 이용해 한 문장으로 쓰시오.  My aunt lives in Seoul. My uncle lives in Seoul.",
+   "answer": "Both my aunt and my uncle live in Seoul.",
+   "alt": [
+    "Both my uncle and my aunt live in Seoul."
+   ],
+   "why": "both A and B는 복수 주어이므로 lives를 live로 바꾼다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장을 either ~ or ...를 이용해 한 문장으로 쓰시오. (둘 중 한 사람이 할 것이라는 뜻으로)  Sumin will clean the room. Jihun will clean the room.",
+   "answer": "Either Sumin or Jihun will clean the room.",
+   "alt": [
+    "Either Jihun or Sumin will clean the room."
+   ],
+   "why": "'둘 중 한 명이 ~할 것이다'는 either A or B로 묶는다. 조동사 will은 수일치의 영향을 받지 않는다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Not only the tourists but also the guide <u>were</u> unable to find the way.",
+   "answer": "was",
+   "alt": [],
+   "why": "가까운 주어 the guide가 단수이므로 were를 was로 고친다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Both the coach and his assistant <u>has</u> resigned from the team.",
+   "answer": "have",
+   "alt": [
+    "'ve"
+   ],
+   "why": "「both A and B」는 복수 주어이므로 has를 have로 고친다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Either my sister or my parents <u>is</u> going to drive me there.",
+   "answer": "are",
+   "alt": [
+    "'re"
+   ],
+   "why": "가까운 주어 my parents가 복수이므로 is를 are로 고친다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  The program is designed not only to teach English but also <u>helping</u> students make friends.",
+   "answer": "to help",
+   "alt": [],
+   "why": "not only A but also B는 병렬 구조이므로 앞의 to teach와 형태를 맞춰 to help로 고친다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (한 단어로 쓸 것)  The job requires both patience and <u>to be creative</u>.",
+   "answer": "creativity",
+   "alt": [],
+   "why": "both A and B는 같은 품사끼리 연결하므로 명사 patience와 짝이 되도록 명사 creativity로 고친다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Neither the shoes <u>or</u> the jacket matches the dress.",
+   "answer": "nor",
+   "alt": [],
+   "why": "neither의 짝은 nor이다. 동사 matches는 가까운 주어 the jacket에 맞춘 것이라 옳다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Both the students and the teacher <u>was</u> excited about the field trip.",
+   "answer": "were",
+   "alt": [],
+   "why": "「both A and B」는 복수 주어이므로 was를 were로 고친다. 바로 앞의 the teacher에 맞추면 안 된다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 문장을 완성하시오. (not only, but also 이용)  그 도시는 역사뿐만 아니라 음식으로도 유명하다.  The city is famous ____ .",
+   "answer": "not only for its history but also for its food",
+   "alt": [],
+   "why": "not only A but also B의 A와 B는 형태가 같아야 하므로 전치사구 for its history와 for its food를 나란히 연결한다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 우리말을 neither ~ nor ...를 이용해 영작하시오. (attend, the meeting 이용, 과거시제로 쓸 것)  그도 나도 그 회의에 참석하지 않았다.",
+   "answer": "Neither he nor I attended the meeting.",
+   "alt": [],
+   "why": "neither A nor B에 이미 부정의 뜻이 있으므로 didn't를 쓰지 않고 attended를 그대로 쓴다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.  The plan will not ____ save money but also protect the environment.",
+   "answer": "only",
+   "alt": [],
+   "why": "「not only A but also B」 구문이며 동사원형 save와 protect가 병렬로 연결된다.",
+   "no": 200
+  }
+ ]
+}

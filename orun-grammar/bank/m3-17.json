@@ -1,0 +1,2656 @@
+{
+ "id": "m3-17",
+ "grade": "중3",
+ "name": "원급·비교급 관용 표현",
+ "points": [
+  "as ~ as possible",
+  "비교급 and 비교급",
+  "one of the 최상급+복수명사"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Please call me back as soon as ____.",
+   "choices": [
+    "possible",
+    "possibly",
+    "can",
+    "able",
+    "it"
+   ],
+   "answer": 1,
+   "why": "as ~ as possible은 '가능한 한 ~하게'라는 뜻으로, as ... as 뒤에 형용사 possible을 쓴다. possibly는 부사라서 쓸 수 없고, can을 쓰려면 as soon as you can처럼 주어가 필요하다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I ran as fast as I ____ to catch the bus.",
+   "choices": [
+    "can",
+    "could",
+    "possible",
+    "was",
+    "do"
+   ],
+   "answer": 2,
+   "why": "as ~ as 주어+can은 시제를 문장에 맞춘다. ran이 과거시제이므로 could를 쓴다. possible은 주어 I 없이 as fast as possible로 써야 한다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Eat as many vegetables as ____.",
+   "choices": [
+    "possible",
+    "possibly",
+    "many",
+    "can",
+    "much"
+   ],
+   "answer": 1,
+   "why": "as many+명사+as possible은 '가능한 한 많은 ~'이라는 뜻이다. possibly는 부사여서 쓸 수 없고, can은 주어가 있어야 한다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Come home as early as you ____ tonight.",
+   "choices": [
+    "can",
+    "could",
+    "possible",
+    "are",
+    "were"
+   ],
+   "answer": 1,
+   "why": "오늘 밤(tonight)의 일이므로 현재형 can을 쓴다. as ~ as 주어+can 형태이므로 possible은 you 뒤에 올 수 없다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It is getting ____ and colder outside.",
+   "choices": [
+    "cold",
+    "colder",
+    "coldest",
+    "more cold",
+    "most cold"
+   ],
+   "answer": 2,
+   "why": "'점점 더 ~한'은 「비교급 and 비교급」이므로 colder and colder가 되어야 한다. cold는 원급, coldest는 최상급이라 쓸 수 없다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The line at the bakery got longer and ____.",
+   "choices": [
+    "long",
+    "longer",
+    "longest",
+    "more long",
+    "more longer"
+   ],
+   "answer": 2,
+   "why": "「비교급 and 비교급」은 같은 비교급을 두 번 쓴다. long의 비교급은 longer이며 more long은 틀린 형태이다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Learning Chinese is becoming more and ____ interesting.",
+   "choices": [
+    "more",
+    "most",
+    "much",
+    "many",
+    "very"
+   ],
+   "answer": 1,
+   "why": "3음절 이상의 형용사는 more and more+원급으로 쓴다. 따라서 more and more interesting이 알맞다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Soccer is one of the most popular ____ in the world.",
+   "choices": [
+    "sport",
+    "sports",
+    "a sport",
+    "sporting",
+    "the sport"
+   ],
+   "answer": 2,
+   "why": "「one of the+최상급+복수명사」이므로 복수형 sports를 쓴다. '가장 인기 있는 스포츠들 중 하나'라는 뜻이다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She is one of the ____ students in our class.",
+   "choices": [
+    "smart",
+    "smarter",
+    "smartest",
+    "most smart",
+    "smartly"
+   ],
+   "answer": 3,
+   "why": "one of the 뒤에는 최상급이 오므로 smartest가 알맞다. smart의 최상급은 most smart가 아니라 smartest이다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "One of the oldest trees in this park ____ over 300 years old.",
+   "choices": [
+    "are",
+    "is",
+    "were",
+    "be",
+    "being"
+   ],
+   "answer": 2,
+   "why": "「one of the+최상급+복수명사」가 주어이면 핵심은 one이므로 동사는 단수 is를 쓴다. trees에 맞춰 are를 쓰지 않도록 주의한다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I want to buy a bike as ____ as possible.",
+   "choices": [
+    "cheap",
+    "cheaper",
+    "cheapest",
+    "more cheap",
+    "most cheap"
+   ],
+   "answer": 1,
+   "why": "as ~ as possible 사이에는 비교급이 아니라 원급을 쓰므로 cheap이 알맞다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He wrote the letter as ____ as he could.",
+   "choices": [
+    "careful",
+    "carefully",
+    "more carefully",
+    "most careful",
+    "carefullest"
+   ],
+   "answer": 2,
+   "why": "동사 wrote를 꾸미므로 부사 carefully를 쓰고, as ~ as 사이에는 원급을 쓴다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The days are getting shorter and ____ in November.",
+   "choices": [
+    "short",
+    "shorter",
+    "shortest",
+    "more short",
+    "less short"
+   ],
+   "answer": 2,
+   "why": "「비교급 and 비교급」은 같은 비교급을 반복하므로 shorter and shorter가 된다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "More and more ____ are riding bicycles to work these days.",
+   "choices": [
+    "person",
+    "people",
+    "peoples",
+    "a person",
+    "each person"
+   ],
+   "answer": 2,
+   "why": "more and more 뒤에는 복수명사나 셀 수 없는 명사를 쓴다. people은 그 자체로 복수이므로 peoples로 쓰지 않는다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Mt. Everest is one of the most famous ____ in the world.",
+   "choices": [
+    "mountain",
+    "mountains",
+    "mountaining",
+    "a mountain",
+    "mountain's"
+   ],
+   "answer": 2,
+   "why": "one of the+최상급 뒤에는 반드시 복수명사가 오므로 mountains가 알맞다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "This is one of the ____ movies I have ever seen.",
+   "choices": [
+    "good",
+    "better",
+    "best",
+    "well",
+    "most good"
+   ],
+   "answer": 3,
+   "why": "one of the 뒤에는 최상급이 오며 good의 최상급은 best이다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Water the plants as ____ as possible while I am away.",
+   "choices": [
+    "often",
+    "more often",
+    "most often",
+    "oftener",
+    "oftenest"
+   ],
+   "answer": 1,
+   "why": "as ~ as possible 사이에는 원급을 쓰므로 부사 often이 알맞다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She practiced as hard as ____ before the singing contest.",
+   "choices": [
+    "possible",
+    "possibly",
+    "she can",
+    "hardly",
+    "most"
+   ],
+   "answer": 1,
+   "why": "practiced가 과거시제이므로 she can은 시제가 맞지 않고, as hard as possible이 알맞다. possibly는 부사라서 쓸 수 없다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My grades are getting better and ____.",
+   "choices": [
+    "good",
+    "better",
+    "best",
+    "more better",
+    "well"
+   ],
+   "answer": 2,
+   "why": "good의 비교급은 better이며 「비교급 and 비교급」이므로 better and better로 쓴다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The traffic became worse and ____ during the holiday.",
+   "choices": [
+    "bad",
+    "worse",
+    "worst",
+    "more worse",
+    "badly"
+   ],
+   "answer": 2,
+   "why": "bad의 비교급은 worse이고, 같은 비교급을 반복해 worse and worse로 쓴다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Tom is one of the tallest ____ on our basketball team.",
+   "choices": [
+    "boy",
+    "boys",
+    "boy's",
+    "a boy",
+    "the boy"
+   ],
+   "answer": 2,
+   "why": "one of the+최상급 다음에는 복수명사를 쓰므로 boys가 알맞다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "One of my best friends ____ in Busan now.",
+   "choices": [
+    "live",
+    "lives",
+    "living",
+    "are living",
+    "have lived"
+   ],
+   "answer": 2,
+   "why": "주어의 핵심이 One이므로 단수 동사 lives를 쓴다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Let's leave as ____ as possible to avoid the traffic.",
+   "choices": [
+    "early",
+    "earlier",
+    "earliest",
+    "more early",
+    "most early"
+   ],
+   "answer": 1,
+   "why": "as ~ as possible 사이에는 원급 early를 쓴다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The balloon got bigger and ____ until it popped.",
+   "choices": [
+    "big",
+    "bigger",
+    "biggest",
+    "more big",
+    "much big"
+   ],
+   "answer": 2,
+   "why": "「비교급 and 비교급」이므로 bigger and bigger가 알맞다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Korean dramas are becoming more and more ____ around the world.",
+   "choices": [
+    "popular",
+    "popularer",
+    "more popular",
+    "most popular",
+    "popularly"
+   ],
+   "answer": 1,
+   "why": "more and more 뒤에는 원급을 쓰므로 more and more popular가 된다. popular는 more를 붙여 비교급을 만드는 형용사라 popularer는 틀린 형태이다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Jeju Island is one of the ____ places to visit in Korea.",
+   "choices": [
+    "nice",
+    "nicer",
+    "nicest",
+    "most nice",
+    "nicely"
+   ],
+   "answer": 3,
+   "why": "one of the 뒤에는 최상급을 쓰며 nice의 최상급은 nicest이다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은?",
+   "choices": [
+    "Call me as soon as possibly.",
+    "I got up as early as I can yesterday.",
+    "She is one of the best singer in Korea.",
+    "It is getting hotter and hotter these days.",
+    "More and more student are studying abroad."
+   ],
+   "answer": 4,
+   "why": "「비교급 and 비교급」을 바르게 쓴 문장이다. ①은 possible, ②는 could, ③은 singers, ⑤는 students로 고쳐야 한다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은?",
+   "choices": [
+    "Please come as quickly as possible.",
+    "The box is getting heavier and heavier.",
+    "He is one of the most famous actors in Asia.",
+    "I ran as fast as I could.",
+    "This is one of the tallest tower in the world."
+   ],
+   "answer": 5,
+   "why": "one of the+최상급 뒤에는 복수명사가 와야 하므로 tower를 towers로 고쳐야 한다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은? ▸ Study as hard as (A). ▸ The room became darker and (B).",
+   "choices": [
+    "possible – dark",
+    "possible – darker",
+    "possibly – darker",
+    "can – darkest",
+    "possibly – more dark"
+   ],
+   "answer": 2,
+   "why": "(A)는 as ~ as possible이므로 possible, (B)는 「비교급 and 비교급」이므로 darker이다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은? ▸ Finish your report as soon as ____. ▸ Bring as many chairs as ____.",
+   "choices": [
+    "possible",
+    "possibly",
+    "can",
+    "could",
+    "able"
+   ],
+   "answer": 1,
+   "why": "두 문장 모두 '가능한 한 ~'을 뜻하는 as ~ as possible 구문이다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "One of the most difficult ____ for me is math.",
+   "choices": [
+    "subject",
+    "subjects",
+    "subjective",
+    "a subject",
+    "subject's"
+   ],
+   "answer": 2,
+   "why": "one of the+최상급 뒤에는 복수명사 subjects를 쓴다. 주어의 핵심은 One이라 동사는 단수 is이다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The music at the party got louder and ____.",
+   "choices": [
+    "loud",
+    "louder",
+    "loudest",
+    "more loud",
+    "loudly"
+   ],
+   "answer": 2,
+   "why": "「비교급 and 비교급」이므로 louder and louder가 알맞다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I'll be there as soon as I ____.",
+   "choices": [
+    "can",
+    "could",
+    "possible",
+    "will",
+    "am"
+   ],
+   "answer": 1,
+   "why": "as soon as 주어+can 형태이며, 앞으로의 일이므로 현재형 can을 쓴다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She wants to be one of the ____ scientists in the world.",
+   "choices": [
+    "great",
+    "greater",
+    "greatest",
+    "most great",
+    "greatly"
+   ],
+   "answer": 3,
+   "why": "one of the 뒤에는 최상급이 오므로 greatest가 알맞다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말과 같도록 할 때 빈칸에 알맞은 것은? (그 소년은 점점 더 키가 커졌다.) The boy grew ____.",
+   "choices": [
+    "tall and tall",
+    "taller and taller",
+    "tallest and tallest",
+    "more tall and more tall",
+    "taller and tallest"
+   ],
+   "answer": 2,
+   "why": "'점점 더 ~한'은 「비교급 and 비교급」이므로 taller and taller이다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말과 같도록 할 때 빈칸에 알맞은 것은? (그것은 내가 읽은 가장 슬픈 책들 중 하나이다.) It is one of the ____ books I have read.",
+   "choices": [
+    "sad",
+    "sadder",
+    "saddest",
+    "most sad",
+    "sadly"
+   ],
+   "answer": 3,
+   "why": "'가장 ~한 것들 중 하나'는 one of the+최상급+복수명사이므로 saddest가 알맞다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: How much water should I bring? B: Bring as ____ water as possible.",
+   "choices": [
+    "many",
+    "much",
+    "more",
+    "most",
+    "a lot"
+   ],
+   "answer": 2,
+   "why": "water는 셀 수 없는 명사이므로 as much+명사+as possible을 쓴다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: How was the show? B: It got more and more ____.",
+   "choices": [
+    "exciting",
+    "excite",
+    "excitement",
+    "most exciting",
+    "more exciting"
+   ],
+   "answer": 1,
+   "why": "more and more 뒤에는 원급이 오므로 형용사 exciting을 쓴다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Busan is one of the busiest ____ in Korea.",
+   "choices": [
+    "city",
+    "cities",
+    "citys",
+    "a city",
+    "city's"
+   ],
+   "answer": 2,
+   "why": "one of the+최상급 뒤에는 복수명사가 오며 city의 복수형은 cities이다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Please speak as ____ as possible; the baby is sleeping.",
+   "choices": [
+    "quietly",
+    "quiet",
+    "quieter",
+    "more quietly",
+    "quietest"
+   ],
+   "answer": 1,
+   "why": "동사 speak를 꾸미는 부사가 필요하고 as ~ as 사이에는 원급을 쓰므로 quietly가 알맞다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The wind is blowing ____ and harder.",
+   "choices": [
+    "hard",
+    "harder",
+    "hardest",
+    "more hard",
+    "hardly"
+   ],
+   "answer": 2,
+   "why": "hard의 비교급은 harder이고 「비교급 and 비교급」이므로 harder and harder가 된다. hardly는 '거의 ~않다'라는 뜻의 다른 단어이다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "One of the ____ animals in the world is the cheetah.",
+   "choices": [
+    "fast",
+    "faster",
+    "fastest",
+    "most fast",
+    "fastly"
+   ],
+   "answer": 3,
+   "why": "one of the 뒤에는 최상급이 오므로 fastest가 알맞다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Winter is coming, and it gets dark ____ and earlier.",
+   "choices": [
+    "early",
+    "earlier",
+    "earliest",
+    "more early",
+    "earlyer"
+   ],
+   "answer": 2,
+   "why": "early의 비교급은 earlier이며 같은 비교급을 반복해 earlier and earlier로 쓴다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Tell me the news as ____ as you can.",
+   "choices": [
+    "quickly",
+    "quick",
+    "quicker",
+    "quickest",
+    "more quickly"
+   ],
+   "answer": 1,
+   "why": "as ~ as 사이에는 원급을 쓰고 동사 tell을 꾸미므로 부사 quickly가 알맞다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "This is one of the best ____ in our town.",
+   "choices": [
+    "restaurant",
+    "restaurants",
+    "restaurant's",
+    "a restaurant",
+    "restauranting"
+   ],
+   "answer": 2,
+   "why": "one of the+최상급 뒤에는 복수명사 restaurants를 쓴다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The number of visitors is getting ____ and larger every year.",
+   "choices": [
+    "large",
+    "larger",
+    "largest",
+    "more large",
+    "largely"
+   ],
+   "answer": 2,
+   "why": "「비교급 and 비교급」이므로 larger and larger가 알맞다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ㄱ. Run as fast as possible. ㄴ. He is one of the best player. ㄷ. It is getting warmer and warmer. ㄹ. Come home as early as you can.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 4,
+   "why": "ㄱ, ㄷ, ㄹ이 옳아 3개이다. ㄴ은 one of the+최상급 뒤에 복수명사가 와야 하므로 players로 고쳐야 한다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Please keep your answer as ____ as possible.",
+   "choices": [
+    "short",
+    "shorter",
+    "shortest",
+    "more short",
+    "shortly"
+   ],
+   "answer": 1,
+   "why": "as ~ as possible 사이에는 원급을 쓰므로 short가 알맞다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 한 단어로 쓰시오. It is getting (cold) ____ and colder outside.",
+   "answer": "colder",
+   "alt": [],
+   "why": "'점점 더 추워지는'은 「비교급 and 비교급」이므로 colder and colder로 쓴다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 한 단어를 쓰시오. (가능한 한 빨리 여기로 오세요.) Please come here as soon as ____.",
+   "answer": "possible",
+   "alt": [],
+   "why": "as ~ as possible은 '가능한 한 ~하게'라는 뜻이며 possibly는 쓸 수 없다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. She is one of the best <u>dancer</u> in our club.",
+   "answer": "dancers",
+   "alt": [],
+   "why": "one of the+최상급 뒤에는 복수명사를 쓴다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 한 단어로 쓰시오. My puppy is growing (big) ____ and bigger.",
+   "answer": "bigger",
+   "alt": [],
+   "why": "「비교급 and 비교급」은 같은 비교급을 두 번 쓰므로 bigger and bigger이다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. I finished the work as fast as I <u>can</u> yesterday.",
+   "answer": "could",
+   "alt": [],
+   "why": "yesterday라는 과거 시점이므로 as ~ as 주어+could로 시제를 맞춘다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 세 단어를 쓰시오. (한국 음식은 점점 더 인기 있어지고 있다.) Korean food is becoming ____ popular.",
+   "answer": "more and more",
+   "alt": [],
+   "why": "popular처럼 more를 붙여 비교급을 만드는 형용사는 more and more+원급으로 '점점 더 ~한'을 나타낸다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 한 단어로 쓰시오. Seoul is one of the ____ cities in Asia. (large)",
+   "answer": "largest",
+   "alt": [],
+   "why": "one of the 뒤에는 최상급이 오므로 largest를 쓴다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. Call me as soon as <u>possibly</u>.",
+   "answer": "possible",
+   "alt": [],
+   "why": "as ~ as possible이 올바른 형태이며 부사 possibly는 쓸 수 없다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "두 문장이 같은 뜻이 되도록 빈칸에 알맞은 한 단어를 쓰시오. Run as fast as you can. = Run as fast as ____.",
+   "answer": "possible",
+   "alt": [],
+   "why": "as ~ as 주어+can은 as ~ as possible로 바꿔 쓸 수 있다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. One of my friends <u>live</u> in Japan.",
+   "answer": "lives",
+   "alt": [],
+   "why": "주어의 핵심이 One이므로 단수 동사 lives를 쓴다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 한 단어로 쓰시오. The wind became (strong) ____ and stronger at night.",
+   "answer": "stronger",
+   "alt": [],
+   "why": "「비교급 and 비교급」이므로 stronger and stronger로 쓴다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 한 단어로 쓰시오. He is one of the ____ runners in the world. (fast)",
+   "answer": "fastest",
+   "alt": [],
+   "why": "one of the 뒤에는 최상급 fastest가 온다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. Please answer as <u>quick</u> as possible.",
+   "answer": "quickly",
+   "alt": [],
+   "why": "동사 answer를 꾸미므로 부사 quickly를 쓰고, as ~ as 사이에는 원급을 쓴다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "두 문장이 같은 뜻이 되도록 빈칸에 알맞은 한 단어를 쓰시오. I want to see you as soon as I can. = I want to see you as soon as ____.",
+   "answer": "possible",
+   "alt": [],
+   "why": "as soon as 주어+can = as soon as possible이다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 한 단어로 쓰시오. The box got (heavy) ____ and heavier.",
+   "answer": "heavier",
+   "alt": [],
+   "why": "heavy의 비교급은 heavier이고 같은 비교급을 반복한다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. Baseball is one of the most popular <u>sport</u> in Korea.",
+   "answer": "sports",
+   "alt": [],
+   "why": "one of the+최상급 뒤에는 복수명사 sports를 쓴다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 much 또는 many 중 알맞은 것을 쓰시오. Bring as ____ water as possible.",
+   "answer": "much",
+   "alt": [],
+   "why": "water는 셀 수 없는 명사이므로 as much+명사+as possible을 쓴다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 much 또는 many 중 알맞은 것을 쓰시오. Take as ____ photos as you can.",
+   "answer": "many",
+   "alt": [],
+   "why": "photos는 셀 수 있는 복수명사이므로 as many+명사+as를 쓴다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. My English is getting <u>good</u> and better.",
+   "answer": "better",
+   "alt": [],
+   "why": "good의 비교급은 better이며 「비교급 and 비교급」이므로 better and better로 쓴다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 한 단어로 쓰시오. This is one of the ____ days of my life. (bad)",
+   "answer": "worst",
+   "alt": [],
+   "why": "bad의 최상급은 worst이며 one of the 뒤에는 최상급을 쓴다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The scientist tried to explain the theory ____ so that everyone could understand it.",
+   "choices": [
+    "as simple as possible",
+    "as simply as possible",
+    "as simply as possibly",
+    "so simply as possible",
+    "as more simply as possible"
+   ],
+   "answer": 2,
+   "why": "동사 explain을 꾸미므로 부사 simply를 쓰고, '가능한 한 ~하게'는 as+원급+as possible로 쓴다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "We should reduce plastic waste ____ to protect the ocean.",
+   "choices": [
+    "as much as possible",
+    "as many as possible",
+    "as much as possibly",
+    "as more as possible",
+    "so much as possible"
+   ],
+   "answer": 1,
+   "why": "waste는 셀 수 없는 명사이므로 much를 쓰고, as ~ as possible 형태가 되어야 한다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Sujin wanted to finish her project ____, so she stayed up late.",
+   "choices": [
+    "as fast as she can",
+    "as fast as she could",
+    "as fast as possibly",
+    "as faster as possible",
+    "as fast as her could"
+   ],
+   "answer": 2,
+   "why": "wanted가 과거시제이므로 as ~ as 주어+could로 시제를 맞춘다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The math problems in this book are getting ____ to solve.",
+   "choices": [
+    "more and more difficult",
+    "difficult and difficult",
+    "more difficult and difficult",
+    "more and more difficulter",
+    "as difficult as difficult"
+   ],
+   "answer": 1,
+   "why": "difficult처럼 more를 붙여 비교급을 만드는 형용사는 more and more+원급으로 '점점 더 ~한'을 나타낸다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The population of the city has grown ____ over the past ten years.",
+   "choices": [
+    "large and large",
+    "larger and larger",
+    "more and more large",
+    "largest and largest",
+    "more large and more large"
+   ],
+   "answer": 2,
+   "why": "「비교급 and 비교급」으로 '점점 더 ~한'을 나타내며 large의 비교급은 larger이다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Hangeul is ____ in the world.",
+   "choices": [
+    "one of the most scientific writing system",
+    "one of the most scientific writing systems",
+    "one of most scientific writing systems",
+    "the one of the most scientific writing systems",
+    "one of the more scientific writing systems"
+   ],
+   "answer": 2,
+   "why": "「one of the+최상급+복수명사」 형태가 되어야 하므로 the와 복수명사 systems가 모두 필요하다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "One of the most important things in our life ____ good health.",
+   "choices": [
+    "are",
+    "is",
+    "have",
+    "were",
+    "being"
+   ],
+   "answer": 2,
+   "why": "주어의 핵심은 One이므로 단수 동사 is를 쓴다. 현재의 일이므로 were도 알맞지 않다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? Jiho <u>is</u> one of <u>the fastest</u> <u>swimmer</u> <u>in</u> our <u>school</u>.",
+   "choices": [
+    "is",
+    "the fastest",
+    "swimmer",
+    "in",
+    "school"
+   ],
+   "answer": 3,
+   "why": "one of the+최상급 뒤에는 복수명사가 오므로 swimmer를 swimmers로 고쳐야 한다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 알맞은 문장은?",
+   "choices": [
+    "Tell me the truth as soon as possibly.",
+    "The weather is getting warm and warmer.",
+    "Yuna is one of the most popular skaters in the world.",
+    "One of my classmates are from Canada.",
+    "Read as much book as possible."
+   ],
+   "answer": 3,
+   "why": "③은 one of the+최상급+복수명사를 바르게 썼다. ①은 possible, ②는 warmer and warmer, ④는 is, ⑤는 as many books as possible로 고쳐야 한다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 문장은?",
+   "choices": [
+    "Please finish the work as quickly as possible.",
+    "The city is becoming more and more crowded.",
+    "One of the tallest buildings in Seoul is Lotte World Tower.",
+    "He drank as many water as he could.",
+    "I answered the questions as honestly as I could."
+   ],
+   "answer": 4,
+   "why": "water는 셀 수 없는 명사이므로 as many water가 아니라 as much water as he could로 써야 한다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? (수업 중에 가능한 한 많은 질문을 하세요.)",
+   "choices": [
+    "Ask as many questions as possible in class.",
+    "Ask as much questions as possible in class.",
+    "Ask as many questions as possibly in class.",
+    "Ask so many questions as possible in class.",
+    "Ask as more questions as possible in class."
+   ],
+   "answer": 1,
+   "why": "questions는 셀 수 있는 복수명사이므로 as many+명사+as possible로 쓴다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? (그 도시는 점점 더 붐비고 있다.)",
+   "choices": [
+    "The city is getting crowded and crowded.",
+    "The city is getting more crowded and crowded.",
+    "The city is getting more and more crowded.",
+    "The city is getting crowdeder and crowdeder.",
+    "The city is getting the more and more crowded."
+   ],
+   "answer": 3,
+   "why": "crowded는 more를 붙여 비교급을 만드는 형용사이므로 more and more crowded로 쓴다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? (그는 우리 반에서 가장 부지런한 학생들 중 한 명이다.)",
+   "choices": [
+    "He is one of the most diligent student in our class.",
+    "He is one of most diligent students in our class.",
+    "He is one of the most diligent students in our class.",
+    "He is the one of most diligent students in our class.",
+    "He is one of the more diligent students in our class."
+   ],
+   "answer": 3,
+   "why": "'가장 ~한 것들 중 하나'는 one of the+최상급+복수명사로 쓴다. the와 복수명사를 빠뜨리면 안 된다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A: The final exam is tomorrow. B: I know. I'm getting ____.",
+   "choices": [
+    "nervous and nervous",
+    "more nervous and nervous",
+    "more and more nervous",
+    "nervouser and nervouser",
+    "as nervous as nervous"
+   ],
+   "answer": 3,
+   "why": "nervous는 more를 붙여 비교급을 만드는 형용사이므로 more and more nervous가 알맞다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A: How soon do you need my report? B: ____",
+   "choices": [
+    "As soon as possibly.",
+    "As soon as possible.",
+    "So soon as possible.",
+    "As sooner as possible.",
+    "As soon as can."
+   ],
+   "answer": 2,
+   "why": "'가능한 한 빨리'는 as soon as possible이다. possibly나 sooner는 쓸 수 없다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은? ▸ Eat as ____ fruit as possible. ▸ I don't have as ____ free time as you.",
+   "choices": [
+    "many",
+    "much",
+    "more",
+    "most",
+    "some"
+   ],
+   "answer": 2,
+   "why": "fruit와 free time은 모두 셀 수 없는 명사이므로 much를 쓴다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은? ▸ Emma is one of the ____ dancers in our group. ▸ This is the ____ way to get to the station.",
+   "choices": [
+    "good",
+    "better",
+    "best",
+    "well",
+    "most"
+   ],
+   "answer": 3,
+   "why": "첫 문장은 one of the+최상급, 둘째 문장도 the+최상급이므로 good의 최상급 best가 알맞다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸 (A)~(C)에 들어갈 말이 바르게 짝지어진 것은? ▸ Please reply as soon as (A). ▸ In winter the nights get (B). ▸ Bulgogi is one of the most famous Korean (C).",
+   "choices": [
+    "possible – long and longer – dish",
+    "possible – longer and longer – dishes",
+    "possibly – longer and longer – dishes",
+    "possible – longer and longer – dish",
+    "possibly – long and long – dishes"
+   ],
+   "answer": 2,
+   "why": "(A) as ~ as possible, (B) 「비교급 and 비교급」, (C) one of the+최상급+복수명사를 각각 적용한다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ㄱ. Study as much as possible before the test. ㄴ. The box became heavy and heavy. ㄷ. One of the boys were late for class. ㄹ. Suji is one of the kindest people I know.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ㄱ과 ㄹ이 옳아 2개이다. ㄴ은 heavier and heavier, ㄷ은 주어의 핵심이 One이므로 was로 고쳐야 한다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분과 바꿔 쓸 수 있는 것은? Please water the plants <u>as often as possible</u> while I am away.",
+   "choices": [
+    "as often as you can",
+    "as often as you could",
+    "as often as you possible",
+    "so often as you can",
+    "as more often as you can"
+   ],
+   "answer": 1,
+   "why": "as ~ as possible은 as ~ as 주어+can으로 바꿔 쓸 수 있다. 현재의 부탁이므로 could가 아니라 can을 쓴다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "____ people are working from home these days.",
+   "choices": [
+    "More and more",
+    "Much and much",
+    "More and much",
+    "The more and more",
+    "Many and many"
+   ],
+   "answer": 1,
+   "why": "'점점 더 많은'은 more and more+복수명사로 쓴다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "As the story went on, the movie became ____.",
+   "choices": [
+    "interesting and interesting",
+    "more interesting and interesting",
+    "more and more interesting",
+    "most and most interesting",
+    "interestinger and interestinger"
+   ],
+   "answer": 3,
+   "why": "interesting은 more를 붙여 비교급을 만드는 형용사이므로 more and more interesting으로 쓴다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Try to answer the questions ____ during the job interview.",
+   "choices": [
+    "as honest as possible",
+    "as honestly as possible",
+    "as honestly as possibly",
+    "so honestly as possible",
+    "as more honestly as possible"
+   ],
+   "answer": 2,
+   "why": "동사 answer를 꾸미므로 부사 honestly를 쓰고, as+원급+as possible 형태로 쓴다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Air pollution in this area is getting ____ every year.",
+   "choices": [
+    "bad and bad",
+    "worse and worse",
+    "worst and worst",
+    "more bad and more bad",
+    "badder and badder"
+   ],
+   "answer": 2,
+   "why": "bad의 비교급은 worse이며 「비교급 and 비교급」으로 worse and worse로 쓴다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Gyeongju is ____ cities in Korea.",
+   "choices": [
+    "one of the oldest",
+    "one of oldest",
+    "one of the older",
+    "the one of the oldest",
+    "one of the most old"
+   ],
+   "answer": 1,
+   "why": "「one of the+최상급+복수명사」이므로 one of the oldest cities가 알맞다. the를 빠뜨리거나 비교급을 쓰면 안 된다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "One of the best ways to learn a language ____ to read every day.",
+   "choices": [
+    "is",
+    "are",
+    "be",
+    "were",
+    "being"
+   ],
+   "answer": 1,
+   "why": "주어의 핵심은 One이므로 단수 동사 is를 쓴다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? As the sun <u>went</u> down, the air <u>got</u> <u>cold</u> and <u>colder</u> <u>on the beach</u>.",
+   "choices": [
+    "went",
+    "got",
+    "cold",
+    "colder",
+    "on the beach"
+   ],
+   "answer": 3,
+   "why": "'점점 더 추워졌다'는 「비교급 and 비교급」이므로 cold를 colder로 고쳐 colder and colder가 되어야 한다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? Please <u>send</u> me the file <u>as soon</u> <u>as</u> <u>possibly</u> <u>tonight</u>.",
+   "choices": [
+    "send",
+    "as soon",
+    "as",
+    "possibly",
+    "tonight"
+   ],
+   "answer": 4,
+   "why": "as ~ as possible이 올바른 형태이므로 부사 possibly를 형용사 possible로 고쳐야 한다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Recycling is one of the ____ ways to protect the environment.",
+   "choices": [
+    "easy",
+    "easier",
+    "easiest",
+    "most easy",
+    "more easy"
+   ],
+   "answer": 3,
+   "why": "one of the 뒤에는 최상급이 오며 easy의 최상급은 easiest이다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Sora tried to make her speech as short as ____ because the audience looked tired.",
+   "choices": [
+    "possible",
+    "possibly",
+    "she can",
+    "shorter",
+    "can"
+   ],
+   "answer": 1,
+   "why": "tried가 과거시제이므로 she can은 쓸 수 없고, as short as possible이 알맞다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Our English club is getting ____ members every year.",
+   "choices": [
+    "more and more",
+    "much and much",
+    "many and many",
+    "the more and more",
+    "more and much"
+   ],
+   "answer": 1,
+   "why": "'점점 더 많은 회원'은 more and more+복수명사로 나타낸다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "____ of the most surprising facts about koalas is that they sleep about 20 hours a day.",
+   "choices": [
+    "One",
+    "Some",
+    "Many",
+    "Both",
+    "Few"
+   ],
+   "answer": 1,
+   "why": "동사가 단수 is이므로 주어의 핵심은 One이어야 한다. one of the+최상급+복수명사 구문이다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The concert hall was one of the largest ____ I had ever visited.",
+   "choices": [
+    "place",
+    "places",
+    "a place",
+    "the place",
+    "place's"
+   ],
+   "answer": 2,
+   "why": "one of the+최상급 뒤에는 복수명사가 오므로 places를 쓴다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A: Your Korean is really improving. B: Thanks. It's getting ____.",
+   "choices": [
+    "good and good",
+    "better and better",
+    "best and best",
+    "more good and more good",
+    "well and well"
+   ],
+   "answer": 2,
+   "why": "good의 비교급은 better이므로 '점점 더 좋아지고 있다'는 better and better로 쓴다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것은? Call your parents as soon as you can. = Call your parents ____.",
+   "choices": [
+    "as soon as possible",
+    "as soon as possibly",
+    "so soon as possible",
+    "as sooner as possible",
+    "as soon as your can"
+   ],
+   "answer": 1,
+   "why": "as ~ as 주어+can은 as ~ as possible로 바꿔 쓸 수 있다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Water is one of the most precious ____ on the earth.",
+   "choices": [
+    "resource",
+    "resources",
+    "resourceful",
+    "a resource",
+    "resource's"
+   ],
+   "answer": 2,
+   "why": "one of the+최상급 뒤에는 복수명사 resources가 온다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "As we climbed higher up the mountain, the air became ____.",
+   "choices": [
+    "thin and thin",
+    "thinner and thinner",
+    "more thin and thin",
+    "thinnest and thinnest",
+    "as thin as thin"
+   ],
+   "answer": 2,
+   "why": "thin의 비교급은 thinner이며 「비교급 and 비교급」으로 thinner and thinner로 쓴다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The doctor told me to exercise as ____ as possible.",
+   "choices": [
+    "regular",
+    "regularly",
+    "more regularly",
+    "most regular",
+    "regularer"
+   ],
+   "answer": 2,
+   "why": "동사 exercise를 꾸미는 부사 regularly가 필요하고, as ~ as 사이에는 원급을 쓴다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Kimchi is one of the ____ foods in Korean culture.",
+   "choices": [
+    "famous",
+    "famouser",
+    "most famous",
+    "more famous",
+    "famousest"
+   ],
+   "answer": 3,
+   "why": "one of the 뒤에는 최상급이 오며 famous의 최상급은 most famous이다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? (가능한 한 조용히 문을 닫아 주세요.)",
+   "choices": [
+    "Please close the door as quiet as possible.",
+    "Please close the door as quietly as possible.",
+    "Please close the door as quietly as possibly.",
+    "Please close the door so quietly as possible.",
+    "Please close the door as more quietly as possible."
+   ],
+   "answer": 2,
+   "why": "동사 close를 꾸미므로 부사 quietly를 쓰고 as+원급+as possible 형태로 쓴다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? (내 남동생은 점점 더 많은 책을 읽고 있다.)",
+   "choices": [
+    "My brother is reading more and more books.",
+    "My brother is reading many and many books.",
+    "My brother is reading more books and more.",
+    "My brother is reading much and much books.",
+    "My brother is reading the more and more books."
+   ],
+   "answer": 1,
+   "why": "'점점 더 많은 책'은 more and more+복수명사로 쓴다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? ____ in our school is the drama club.",
+   "choices": [
+    "One of the most popular club",
+    "One of the most popular clubs",
+    "One of most popular clubs",
+    "Ones of the most popular clubs",
+    "One of the more popular clubs"
+   ],
+   "answer": 2,
+   "why": "one of the+최상급+복수명사 형태이며, 동사가 is이므로 주어의 핵심은 단수 One이어야 한다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는? ㄱ. He ran as fast as he can last night. ㄴ. My headache is getting worse and worse. ㄷ. This is one of the best song of the year. ㄹ. Bring as many pencils as possible.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 last night이므로 could, ㄷ은 복수명사 songs로 고쳐야 하여 틀린 문장은 2개이다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸 (A)~(C)에 들어갈 말이 바르게 짝지어진 것은? ▸ I tried to speak as (A) as possible. ▸ More and more people (B) using electric cars. ▸ One of the students (C) waiting outside now.",
+   "choices": [
+    "slow – are – is",
+    "slowly – are – is",
+    "slowly – is – are",
+    "slowly – are – are",
+    "slow – is – is"
+   ],
+   "answer": 2,
+   "why": "(A)는 동사를 꾸미는 부사 slowly, (B)의 주어는 복수 people이므로 are, (C)의 주어 핵심은 One이므로 is이다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The line of people waiting for tickets grew ____.",
+   "choices": [
+    "long and longer",
+    "longer and longer",
+    "longest and longest",
+    "more long and longer",
+    "as long as longer"
+   ],
+   "answer": 2,
+   "why": "「비교급 and 비교급」은 같은 비교급을 반복하므로 longer and longer이다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분이 어법상 옳은 것은?",
+   "choices": [
+    "Sam is one of the smartest <u>boy</u> in his class.",
+    "The music got <u>loud and loud</u>.",
+    "Come back home as early as <u>possibly</u>.",
+    "One of the questions <u>was</u> very difficult.",
+    "She sang as <u>beautiful</u> as she could."
+   ],
+   "answer": 4,
+   "why": "④는 주어의 핵심이 One이므로 단수 was가 옳다. 나머지는 boys, louder and louder, possible, beautifully로 고쳐야 한다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 as ~ as possible을 이용하여 같은 뜻의 문장으로 바꿔 쓰시오. Answer the email as quickly as you can.",
+   "answer": "Answer the email as quickly as possible.",
+   "alt": [],
+   "why": "as ~ as 주어+can은 as ~ as possible로 바꿔 쓸 수 있다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 「as ~ as+주어+could」를 이용하여 같은 뜻의 문장으로 바꿔 쓰시오. Mina walked home as fast as possible.",
+   "answer": "Mina walked home as fast as she could.",
+   "alt": [],
+   "why": "as ~ as possible은 as ~ as 주어+can으로 바꿔 쓰며, walked가 과거시제이므로 could를 쓴다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. Tony is one of the most creative <u>artist</u> in the city.",
+   "answer": "artists",
+   "alt": [],
+   "why": "one of the+최상급 뒤에는 복수명사를 쓴다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 세 단어로 고쳐 쓰시오. The weather is getting <u>cold and cold</u> these days.",
+   "answer": "colder and colder",
+   "alt": [],
+   "why": "'점점 더 ~한'은 「비교급 and 비교급」이므로 원급이 아니라 비교급을 반복한다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. One of the best players on our team <u>are</u> Jinsu.",
+   "answer": "is",
+   "alt": [],
+   "why": "주어의 핵심은 One이므로 단수 동사 is를 쓴다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하여 빈칸을 완성하시오. (as / possible / as / much / water) Please drink ____ every day.",
+   "answer": "as much water as possible",
+   "alt": [],
+   "why": "셀 수 없는 명사 water 앞에는 much를 써서 as much+명사+as possible로 배열한다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 이용하여 빈칸에 알맞은 세 단어를 쓰시오. (heavy) The morning traffic is becoming ____.",
+   "answer": "heavier and heavier",
+   "alt": [],
+   "why": "heavy의 비교급 heavier를 반복해 '점점 더 심해지는'을 나타낸다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 이용하여 빈칸에 알맞은 네 단어를 쓰시오. (popular) Online classes are becoming ____ these days.",
+   "answer": "more and more popular",
+   "alt": [],
+   "why": "popular는 more를 붙여 비교급을 만드는 형용사이므로 more and more+원급으로 쓴다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. (possible을 반드시 사용할 것) Please call me as soon as <u>you possible</u>.",
+   "answer": "possible",
+   "alt": [],
+   "why": "as soon as possible에는 주어를 쓰지 않는다. 주어를 쓰려면 as soon as you can으로 써야 한다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 다섯 단어를 쓰시오. (그것은 내가 방문한 가장 아름다운 섬들 중 하나였다.) It was ____ islands I had visited.",
+   "answer": "one of the most beautiful",
+   "alt": [],
+   "why": "'가장 ~한 것들 중 하나'는 one of the+최상급+복수명사로 쓴다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. I studied as hard as I <u>can</u> for the exam last week.",
+   "answer": "could",
+   "alt": [],
+   "why": "last week이라는 과거의 일이므로 as ~ as 주어+could로 시제를 맞춘다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 세 단어로 고쳐 쓰시오. The line in front of the store was getting <u>more long and more long</u>.",
+   "answer": "longer and longer",
+   "alt": [],
+   "why": "long은 -er을 붙여 비교급을 만들며, 같은 비교급을 and로 연결한다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 곳을 바르게 고쳐 문장 전체를 다시 쓰시오. Jeju is one of the most beautiful island in Korea.",
+   "answer": "Jeju is one of the most beautiful islands in Korea.",
+   "alt": [],
+   "why": "one of the+최상급 뒤에는 복수명사가 와야 하므로 island를 islands로 고친다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 곳을 바르게 고쳐 문장 전체를 다시 쓰시오. The days are getting warm and warmer.",
+   "answer": "The days are getting warmer and warmer.",
+   "alt": [],
+   "why": "「비교급 and 비교급」은 같은 비교급을 두 번 쓴다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. Bring as <u>many</u> money as possible.",
+   "answer": "much",
+   "alt": [],
+   "why": "money는 셀 수 없는 명사이므로 as much+명사+as possible을 쓴다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하여 빈칸을 완성하시오. (of / one / the / hardest / questions) That was ____ on the science test.",
+   "answer": "one of the hardest questions",
+   "alt": [],
+   "why": "one of the+최상급+복수명사 순서로 배열한다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 한 단어로 쓰시오. Practice the piano as ____ as possible. (regular)",
+   "answer": "regularly",
+   "alt": [],
+   "why": "동사 practice를 꾸미므로 부사 regularly를 쓰고, as ~ as 사이에는 원급을 쓴다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 세 단어를 쓰시오. (점점 더 많은 학생들이 도서관을 이용한다.) ____ students use the library.",
+   "answer": "More and more",
+   "alt": [
+    "more and more"
+   ],
+   "why": "'점점 더 많은 ~'은 more and more+복수명사로 나타낸다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 as ~ as possible을 이용하여 같은 뜻의 문장으로 바꿔 쓰시오. Speak as clearly as you can.",
+   "answer": "Speak as clearly as possible.",
+   "alt": [],
+   "why": "as ~ as 주어+can과 as ~ as possible은 같은 뜻이다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 세 단어로 고쳐 쓰시오. Chess is one of <u>the more popular</u> games in the world.",
+   "answer": "the most popular",
+   "alt": [],
+   "why": "one of the 뒤에는 비교급이 아니라 최상급을 쓴다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 짝지어진 것은? ㄱ. She tried to arrive at the airport as early as she can. ㄴ. One of the most serious problems in big cities is air pollution. ㄷ. The more and more people are moving to the countryside. ㄹ. As the deadline came closer, he became more and more anxious.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "ㄴ은 one of the+최상급+복수명사와 단수 동사, ㄹ은 more and more+원급을 바르게 썼다. ㄱ은 tried에 맞춰 could, ㄷ은 The를 빼고 More and more people로 써야 한다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? Because the storm <u>was getting</u> <u>strong and stronger</u>, the captain told the crew to return <u>as quickly as</u> <u>possible</u> before the waves <u>became</u> too high.",
+   "choices": [
+    "was getting",
+    "strong and stronger",
+    "as quickly as",
+    "possible",
+    "became"
+   ],
+   "answer": 2,
+   "why": "「비교급 and 비교급」은 같은 비교급을 반복하므로 stronger and stronger로 고쳐야 한다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 바른 것을 고르시오.",
+   "choices": [
+    "The doctor advised him to eat as less sugar as possible.",
+    "Fewer and fewer young people are watching TV these days.",
+    "That was one of the most exciting game I have ever watched.",
+    "He kept the window open as wide as he can yesterday.",
+    "Seoul is one of most expensive cities in Asia."
+   ],
+   "answer": 2,
+   "why": "few의 비교급 fewer를 반복한 바른 문장이다. ①은 as little sugar as possible, ③은 games, ④는 could, ⑤는 one of the most expensive로 고쳐야 한다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는? ㄱ. Try to use as few plastic bags as possible. ㄴ. My grandfather's memory is getting worst and worst. ㄷ. One of the reasons why I like winter is the snow. ㄹ. Busan is one of the most crowded city in Korea. ㅁ. She spoke as slow as she could so that we could understand her.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄴ(worse and worse), ㄹ(cities), ㅁ(slowly)이 틀려 3개이다. ㄱ과 ㄷ은 어법상 옳다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? (그는 가능한 한 실수를 적게 하려고 애썼다.)",
+   "choices": [
+    "He tried to make as few mistakes as possible.",
+    "He tried to make as little mistakes as possible.",
+    "He tried to make as few mistakes as possibly.",
+    "He tried to make as fewer mistakes as possible.",
+    "He tried to make so few mistakes as possible."
+   ],
+   "answer": 1,
+   "why": "mistakes는 셀 수 있는 명사이므로 few를 쓰고, as+원급+as possible 형태로 쓴다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것은? The lawyer explained the contract as clearly as possible. = The lawyer explained the contract as clearly as ____.",
+   "choices": [
+    "he can",
+    "he could",
+    "possibly",
+    "he possible",
+    "he will"
+   ],
+   "answer": 2,
+   "why": "as ~ as possible은 as ~ as 주어+can으로 바꿔 쓰며, explained가 과거시제이므로 could를 쓴다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은? ▸ Fewer and ____ students take the school bus these days. ▸ We had ____ visitors this year than last year.",
+   "choices": [
+    "few",
+    "fewer",
+    "fewest",
+    "less",
+    "little"
+   ],
+   "answer": 2,
+   "why": "첫 문장은 「비교급 and 비교급」, 둘째 문장은 than과 함께 쓰는 비교급이므로 둘 다 fewer가 알맞다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "As technology develops, robots are becoming ____ in factories around the world.",
+   "choices": [
+    "common and common",
+    "more and more common",
+    "more common and more common",
+    "most and most common",
+    "as common as common"
+   ],
+   "answer": 2,
+   "why": "common은 more and more+원급 형태로 '점점 더 ~한'을 나타내는 것이 관용적이다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? Although Suji is <u>one of</u> the <u>quietest</u> <u>student</u> in her class, she answered the teacher's question <u>as confidently as</u> <u>she could</u>.",
+   "choices": [
+    "one of",
+    "quietest",
+    "student",
+    "as confidently as",
+    "she could"
+   ],
+   "answer": 3,
+   "why": "one of the+최상급 뒤에는 복수명사가 오므로 students로 고쳐야 한다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ㄱ. Send the documents back to us as soon as possible. ㄴ. The hall was one of the largest concert halls in the country. ㄷ. His voice grew quiet and quieter until we heard nothing. ㄹ. One of the paintings in this room were stolen last night.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ㄱ과 ㄴ이 옳아 2개이다. ㄷ은 quieter and quieter, ㄹ은 주어의 핵심이 One이므로 was로 고쳐야 한다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳지 않은 것은?",
+   "choices": [
+    "As the years passed, the old house looked more and more like a ruin.",
+    "The teacher asked us to write our answers as neatly as possible.",
+    "One of the most useful inventions of the century is the smartphone.",
+    "Prices at the market are getting high and higher every month.",
+    "She read as many books as she could during the vacation."
+   ],
+   "answer": 4,
+   "why": "'점점 더 오르는'은 higher and higher로 써야 한다. 원급 high를 앞에 쓸 수 없다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The company is trying to cut costs ____ without laying off any workers.",
+   "choices": [
+    "as much as possible",
+    "as many as possible",
+    "as much as possibly",
+    "as more as possible",
+    "much as it possible"
+   ],
+   "answer": 1,
+   "why": "cut costs를 꾸미는 부사 표현으로 as much as possible을 쓴다. possibly는 쓸 수 없다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "One of the most valuable lessons that I learned in middle school ____ never to give up.",
+   "choices": [
+    "is",
+    "are",
+    "were",
+    "being",
+    "have been"
+   ],
+   "answer": 1,
+   "why": "주어의 핵심은 One이므로 단수 동사 is를 쓴다. lessons에 이끌려 are를 쓰지 않도록 한다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "____ these days, so the city has built more bike lanes.",
+   "choices": [
+    "More and more people are riding bicycles",
+    "More and more people is riding bicycles",
+    "Many and many people are riding bicycles",
+    "More and more peoples are riding bicycles",
+    "The more and more people are riding bicycles"
+   ],
+   "answer": 1,
+   "why": "more and more+복수명사가 주어이므로 복수 동사 are를 쓰고, people은 그 자체로 복수라 peoples로 쓰지 않는다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? (그 소년은 자라면서 점점 더 자신의 아버지를 닮아 갔다.)",
+   "choices": [
+    "As the boy grew up, he looked more and more like his father.",
+    "As the boy grew up, he looked like more and more his father.",
+    "As the boy grew up, he looked more like and more like his father.",
+    "As the boy grew up, he looked much and much like his father.",
+    "As the boy grew up, he looked the more and more like his father."
+   ],
+   "answer": 1,
+   "why": "'점점 더 ~처럼 보이다'는 look more and more like ~로 쓴다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (A)~(C)에 들어갈 말이 바르게 짝지어진 것은? Mt. Halla is one of the most popular hiking (A) in Korea, and every year (B) climbers visit it. In winter, the trail becomes (C) because of the ice.",
+   "choices": [
+    "destination – more and more – dangerous and dangerous",
+    "destinations – more and more – more and more dangerous",
+    "destinations – many and many – more and more dangerous",
+    "destination – more and more – more and more dangerous",
+    "destinations – more and more – dangerous and dangerous"
+   ],
+   "answer": 2,
+   "why": "(A) one of the+최상급 뒤에는 복수명사, (B) '점점 더 많은'은 more and more, (C) dangerous는 more and more+원급으로 쓴다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분을 바르게 고친 것은? Every summer, more and more <u>tourist visits</u> this small fishing village.",
+   "choices": [
+    "tourist visit",
+    "tourists visits",
+    "tourists visit",
+    "tourist is visiting",
+    "tourists has visited"
+   ],
+   "answer": 3,
+   "why": "more and more 뒤에는 복수명사 tourists가 오고, 주어가 복수이므로 동사도 visit이 되어야 한다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Please describe the man you saw ____ so that the police can find him.",
+   "choices": [
+    "as detail as possible",
+    "in as much detail as possible",
+    "as much detail as possibly",
+    "in as many detail as possible",
+    "as detailed as possibly"
+   ],
+   "answer": 2,
+   "why": "detail은 셀 수 없는 명사로 쓰여 in as much detail as possible(가능한 한 자세히)이 알맞다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "As she practiced more and more in front of people, she became ____ afraid of speaking in public.",
+   "choices": [
+    "less and less",
+    "little and little",
+    "the less and less",
+    "few and few",
+    "lesser and lesser"
+   ],
+   "answer": 1,
+   "why": "'점점 덜 ~한'은 little의 비교급 less를 반복해 less and less로 쓴다. little and little이나 lesser and lesser는 쓰지 않는다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Mr. Kim is one of the best teachers that I ____ ever had.",
+   "choices": [
+    "has",
+    "have",
+    "had",
+    "am",
+    "was"
+   ],
+   "answer": 2,
+   "why": "'지금까지 ~해 본 것 중 하나'라는 경험을 나타내므로 현재완료 have had를 쓴다. 주어가 I이므로 has는 쓸 수 없다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 짝지어진 것은? ㄱ. The line for the roller coaster got long and longer. ㄴ. Please reply to this message as soon as you can. ㄷ. Jenny is one of the most talented pianists in her country. ㄹ. One of my favorite movies are Home Alone.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄹ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 3,
+   "why": "ㄴ은 as ~ as 주어+can, ㄷ은 one of the+최상급+복수명사를 바르게 썼다. ㄱ은 longer and longer, ㄹ은 is로 고쳐야 한다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? The climbers moved <u>as slowly as</u> <u>possible</u> because the path was <u>getting</u> <u>steeper and steeper</u>, and one of them <u>were</u> already injured.",
+   "choices": [
+    "as slowly as",
+    "possible",
+    "getting",
+    "steeper and steeper",
+    "were"
+   ],
+   "answer": 5,
+   "why": "one of them이 주어이므로 단수 동사 was를 써야 한다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은? ▸ Try to waste as ____ time as possible. ▸ There is ____ hope of finishing the work today.",
+   "choices": [
+    "few",
+    "little",
+    "less",
+    "many",
+    "fewer"
+   ],
+   "answer": 2,
+   "why": "time과 hope는 셀 수 없는 명사이므로 as little+명사+as possible과 little hope로 쓴다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 올바른 문장을 고르시오.",
+   "choices": [
+    "This is one of the most impressive building in the city.",
+    "The night became cold and colder as we waited outside.",
+    "He answered the reporter's questions as calm as possible.",
+    "Machines are doing more and more of the work in this factory.",
+    "One of the windows in the classroom are broken."
+   ],
+   "answer": 4,
+   "why": "more and more는 명사 앞에서도 '점점 더 많은 ~'의 의미로 쓸 수 있다. ①은 buildings, ②는 colder and colder, ③은 calmly, ⑤는 is로 고쳐야 한다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? (그는 가능한 한 빨리 그곳에 도착하려고 택시를 탔다.)",
+   "choices": [
+    "He took a taxi to get there as soon as possible.",
+    "He took a taxi to get there as soon as possibly.",
+    "He took a taxi to get there so soon as possible.",
+    "He took a taxi to get there as sooner as possible.",
+    "He took a taxi to get there as soon as it possible."
+   ],
+   "answer": 1,
+   "why": "'가능한 한 빨리'는 as soon as possible이며, 형용사 possible을 쓰고 앞에 as를 두 번 쓴다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The gap between the rich and the poor is getting ____ in many countries.",
+   "choices": [
+    "wide and wide",
+    "wider and wider",
+    "more wide and more wide",
+    "widest and widest",
+    "as wide as wide"
+   ],
+   "answer": 2,
+   "why": "wide의 비교급 wider를 반복해 '점점 더 벌어지는'을 나타낸다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은? Tofu is one of the healthiest (A) in the world, and it is becoming (B) popular in Western countries.",
+   "choices": [
+    "food – more and more",
+    "foods – more and more",
+    "foods – many and many",
+    "food – most and most",
+    "foods – popular and popular"
+   ],
+   "answer": 2,
+   "why": "(A)는 one of the+최상급+복수명사이므로 foods, (B)는 more and more+원급이므로 more and more popular가 된다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "One of the most difficult things about living abroad ____ missing your family.",
+   "choices": [
+    "is",
+    "are",
+    "were",
+    "be",
+    "have been"
+   ],
+   "answer": 1,
+   "why": "주어의 핵심이 One이므로 단수 동사 is를 쓴다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "As the wind grew stronger, the leaves fell ____ from the old tree.",
+   "choices": [
+    "fast and fast",
+    "faster and faster",
+    "more fast and more fast",
+    "fastest and fastest",
+    "as fast as fast"
+   ],
+   "answer": 2,
+   "why": "fast의 비교급 faster를 반복해 '점점 더 빠르게'를 나타낸다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 바르지 않은 것을 고르시오.",
+   "choices": [
+    "Write down as many ideas as you can in five minutes.",
+    "The road became narrower and narrower as we drove up the hill.",
+    "Chuseok is one of the biggest holidays in Korea.",
+    "One of the best moments of my life was winning that race.",
+    "The audience grew more and more quieter as the film began."
+   ],
+   "answer": 5,
+   "why": "more and more 뒤에는 원급을 쓰므로 more and more quiet로 고쳐야 한다. quieter는 이미 비교급이라 more와 함께 쓸 수 없다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Judy studied as hard as ____ , but she still had trouble with the final exam.",
+   "choices": [
+    "she can",
+    "she could",
+    "possibly",
+    "she was",
+    "can she"
+   ],
+   "answer": 2,
+   "why": "studied가 과거시제이므로 as ~ as 주어+could로 시제를 맞춘다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ㄱ. Please explain the rule as simply as possible. ㄴ. More and more foreigners is learning Korean. ㄷ. It was one of the coldest winters in fifty years. ㄹ. The pain in my leg got bad and worse.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ㄱ과 ㄷ이 옳아 2개이다. ㄴ은 주어가 복수이므로 are, ㄹ은 worse and worse로 고쳐야 한다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The problem of food waste is becoming ____ in large cities.",
+   "choices": [
+    "serious and serious",
+    "more serious and serious",
+    "more and more serious",
+    "most and most serious",
+    "seriouser and seriouser"
+   ],
+   "answer": 3,
+   "why": "serious는 more를 붙여 비교급을 만드므로 more and more serious로 쓴다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? (그녀는 그 대회의 가장 어린 참가자들 중 한 명이었다.)",
+   "choices": [
+    "She was one of the youngest participant in the contest.",
+    "She was one of youngest participants in the contest.",
+    "She was one of the youngest participants in the contest.",
+    "She was one of the younger participants in the contest.",
+    "She was the one of the youngest participant in the contest."
+   ],
+   "answer": 3,
+   "why": "one of the+최상급+복수명사 형태로 the와 복수명사를 모두 갖춘 문장은 ③뿐이다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? The teacher told us to hand in our essays <u>as early as</u> <u>possible</u>, because grading <u>one of</u> the <u>longest assignment</u> of the year <u>takes</u> a lot of time.",
+   "choices": [
+    "as early as",
+    "possible",
+    "one of",
+    "longest assignment",
+    "takes"
+   ],
+   "answer": 4,
+   "why": "one of the+최상급 뒤에는 복수명사가 와야 하므로 longest assignments로 고쳐야 한다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은? ▸ He is one of the ____ swimmers on our team. ▸ Which animal in the world runs the ____?",
+   "choices": [
+    "fast",
+    "faster",
+    "fastest",
+    "most fast",
+    "as fast"
+   ],
+   "answer": 3,
+   "why": "둘 다 최상급이 필요한 자리이며 fast의 최상급은 fastest이다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The number of students in our village school is getting ____, so two classes were combined.",
+   "choices": [
+    "small and small",
+    "smaller and smaller",
+    "more small and more small",
+    "smallest and smallest",
+    "less and less small"
+   ],
+   "answer": 2,
+   "why": "small의 비교급 smaller를 반복해 '점점 더 적어지는'을 나타낸다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 맞는 문장은?",
+   "choices": [
+    "Bring as much snacks as possible to the picnic.",
+    "The traffic jam was becoming bad and bad.",
+    "One of the students in my class speak three languages.",
+    "I tried to finish my speech as short as possibly.",
+    "Tteokbokki is one of the most common street foods in Korea."
+   ],
+   "answer": 5,
+   "why": "⑤는 one of the+최상급+복수명사를 바르게 썼다. ①은 as many snacks, ②는 worse and worse, ③은 speaks, ④는 as short as possible로 고쳐야 한다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Because he wanted to save ____, he compared prices at several online stores.",
+   "choices": [
+    "as much money as possible",
+    "as many money as possible",
+    "as much money as possibly",
+    "as more money as possible",
+    "so much money as possible"
+   ],
+   "answer": 1,
+   "why": "money는 셀 수 없는 명사이므로 as much+명사+as possible을 쓴다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분을 바르게 고친 것은? Sumi is one of the <u>most fast</u> runners in her school.",
+   "choices": [
+    "fast",
+    "faster",
+    "fastest",
+    "more fast",
+    "the more fast"
+   ],
+   "answer": 3,
+   "why": "fast는 -est를 붙여 최상급을 만드는 단어이므로 fastest로 고쳐야 한다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 짝지어진 것은? ㄱ. As the concert went on, the crowd became more and more excited. ㄴ. She is one of the most creative designer in the company. ㄷ. Drink as much water as possible when you have a cold. ㄹ. One of my sisters are studying in Canada.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 more and more+원급, ㄷ은 as much+명사+as possible을 바르게 썼다. ㄴ은 designers, ㄹ은 is로 고쳐야 한다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "As the number of electric cars increases, the air in the city is getting ____.",
+   "choices": [
+    "good and good",
+    "better and better",
+    "best and best",
+    "more good and more good",
+    "well and well"
+   ],
+   "answer": 2,
+   "why": "good의 비교급은 better이므로 better and better로 '점점 더 좋아지는'을 나타낸다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Please turn in your report ____; the deadline is midnight tonight.",
+   "choices": [
+    "as early as possible",
+    "as early as possibly",
+    "as earlier as possible",
+    "so early as possible",
+    "as early as it can"
+   ],
+   "answer": 1,
+   "why": "as+원급+as possible 형태이며 비교급이나 possibly는 쓸 수 없다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는? ㄱ. Answer the phone as fast as you can. ㄴ. His homework is getting more and more difficult. ㄷ. This is one of the most useful app on my phone. ㄹ. One of the reasons for the accident were the heavy rain.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ㄷ(apps)과 ㄹ(was)이 틀려 2개이다. ㄱ과 ㄴ은 어법상 옳다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "One of the most impressive ____ I have ever seen was the night sky in the desert.",
+   "choices": [
+    "sight",
+    "sights",
+    "a sight",
+    "sight's",
+    "seeing"
+   ],
+   "answer": 2,
+   "why": "one of the+최상급 뒤에는 복수명사가 오며, 주어의 핵심은 One이므로 동사는 단수 was이다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분이 어법에 맞는 것을 고르시오.",
+   "choices": [
+    "Try to speak as <u>slow</u> as possible during your presentation.",
+    "The days are getting <u>hot and hotter</u> in July.",
+    "One of the most famous <u>writer</u> in England is Shakespeare.",
+    "She wanted to leave the party as early as she <u>could</u>.",
+    "We collected as <u>much</u> cans as possible for recycling."
+   ],
+   "answer": 4,
+   "why": "과거의 일이므로 as early as she could가 옳다. 나머지는 slowly, hotter and hotter, writers, many로 고쳐야 한다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 곳을 바르게 고쳐 문장 전체를 다시 쓰시오. One of the most popular sport in the world is soccer.",
+   "answer": "One of the most popular sports in the world is soccer.",
+   "alt": [],
+   "why": "one of the+최상급 뒤에는 복수명사가 와야 하므로 sport를 sports로 고친다. 주어의 핵심은 One이므로 동사 is는 그대로 둔다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 네 단어로 고쳐 쓰시오. As the meeting went on, the discussion became <u>heated and heated</u>.",
+   "answer": "more and more heated",
+   "alt": [],
+   "why": "heated는 more를 붙여 비교급을 만드는 말이므로 more and more+원급으로 쓴다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 「as ~ as+주어+could」를 이용하여 같은 뜻의 문장으로 바꿔 쓰시오. (she를 사용할 것) The nurse spoke to the patient as gently as possible.",
+   "answer": "The nurse spoke to the patient as gently as she could.",
+   "alt": [],
+   "why": "as ~ as possible은 as ~ as 주어+can으로 바꿔 쓰며, spoke가 과거시제이므로 could를 쓴다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하여 빈칸을 완성하시오. (as / possible / few / as / mistakes) Try to make ____ on today's test.",
+   "answer": "as few mistakes as possible",
+   "alt": [],
+   "why": "mistakes는 셀 수 있는 명사이므로 few를 쓰고 as+few+명사+as possible로 배열한다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 이용하여 빈칸에 알맞은 네 단어를 쓰시오. (polluted) The river near the factory is getting ____.",
+   "answer": "more and more polluted",
+   "alt": [],
+   "why": "polluted는 more를 붙여 비교급을 만들므로 more and more+원급으로 '점점 더 오염되는'을 나타낸다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. One of the most exciting parts of the trip <u>were</u> the boat ride.",
+   "answer": "was",
+   "alt": [],
+   "why": "주어의 핵심은 One이므로 단수 동사 was를 쓴다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 곳을 바르게 고쳐 문장 전체를 다시 쓰시오. He drove as careful as he could in the heavy snow.",
+   "answer": "He drove as carefully as he could in the heavy snow.",
+   "alt": [],
+   "why": "동사 drove를 꾸미므로 부사 carefully를 쓰며, as ~ as 사이에는 원급을 쓴다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 이용하여 빈칸에 알맞은 세 단어를 쓰시오. (few) ____ people write letters by hand these days.",
+   "answer": "Fewer and fewer",
+   "alt": [
+    "fewer and fewer"
+   ],
+   "why": "few의 비교급 fewer를 반복해 '점점 더 적은 수의 ~'를 나타낸다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하여 빈칸을 완성하시오. (of / one / hardest / the / decisions) Leaving my hometown was ____ of my life.",
+   "answer": "one of the hardest decisions",
+   "alt": [],
+   "why": "one of the+최상급+복수명사 순서로 배열한다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 네 단어로 고쳐 쓰시오. Every holiday season, the airport gets <u>crowded and crowded</u>.",
+   "answer": "more and more crowded",
+   "alt": [],
+   "why": "crowded는 more를 붙여 비교급을 만드는 말이므로 more and more+원급으로 쓴다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 as ~ as possible을 이용하여 같은 뜻의 문장으로 바꿔 쓰시오. The rescue team searched the area as carefully as they could.",
+   "answer": "The rescue team searched the area as carefully as possible.",
+   "alt": [],
+   "why": "as ~ as 주어+could는 as ~ as possible로 바꿔 쓸 수 있다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. Fewer and fewer students <u>studies</u> Latin nowadays.",
+   "answer": "study",
+   "alt": [],
+   "why": "주어가 복수명사 students이므로 동사도 복수형 study를 쓴다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 네 단어를 쓰시오. (그것은 지금까지 내가 본 최고의 영화들 중 하나이다.) It is ____ movies I have ever seen.",
+   "answer": "one of the best",
+   "alt": [],
+   "why": "'가장 ~한 것들 중 하나'는 one of the+최상급+복수명사로 쓴다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 곳을 바르게 고쳐 문장 전체를 다시 쓰시오. Please send us your answer as soon as possibly.",
+   "answer": "Please send us your answer as soon as possible.",
+   "alt": [],
+   "why": "as ~ as possible에는 형용사 possible을 쓰며 부사 possibly는 쓸 수 없다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 다섯 단어를 쓰시오. (가능한 한 많은 에너지를 절약해라.) Save ____.",
+   "answer": "as much energy as possible",
+   "alt": [],
+   "why": "energy는 셀 수 없는 명사이므로 as much+명사+as possible로 쓴다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 두 단어로 고쳐 쓰시오. My cousin is one of the <u>more successful</u> businessmen in the city.",
+   "answer": "most successful",
+   "alt": [],
+   "why": "one of the 뒤에는 비교급이 아니라 최상급이 온다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 「as ~ as+주어+could」를 이용하여 같은 뜻의 문장으로 바꿔 쓰시오. (they를 사용할 것) The firefighters arrived at the scene as quickly as possible.",
+   "answer": "The firefighters arrived at the scene as quickly as they could.",
+   "alt": [],
+   "why": "as ~ as possible은 as ~ as 주어+can으로 바꿔 쓰고, arrived가 과거시제이므로 could를 쓴다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. The waiting list for the concert is getting <u>long</u> and longer.",
+   "answer": "longer",
+   "alt": [],
+   "why": "「비교급 and 비교급」은 같은 비교급을 두 번 쓴다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 곳을 바르게 고쳐 문장 전체를 다시 쓰시오. One of the tallest mountains in the world are located in Nepal.",
+   "answer": "One of the tallest mountains in the world is located in Nepal.",
+   "alt": [],
+   "why": "주어의 핵심은 One이므로 단수 동사 is를 쓴다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 이용하여 빈칸에 알맞은 세 단어를 쓰시오. (good) His condition is getting ____ after the operation.",
+   "answer": "better and better",
+   "alt": [],
+   "why": "good의 비교급 better를 반복해 '점점 더 좋아지는'을 나타낸다.",
+   "no": 200
+  }
+ ]
+}

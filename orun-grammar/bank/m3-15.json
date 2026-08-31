@@ -1,0 +1,2681 @@
+{
+ "id": "m3-15",
+ "grade": "중3",
+ "name": "so that·so ~ that",
+ "points": [
+  "목적 so that S can",
+  "결과 so+형/부+that",
+  "in order to 전환"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It was ____ hot that we stayed inside all day.",
+   "choices": [
+    "so",
+    "such",
+    "very",
+    "too",
+    "much"
+   ],
+   "answer": 1,
+   "why": "뒤에 형용사 hot만 있으므로 「so + 형용사 + that」 형태를 쓴다. such는 뒤에 명사가 있어야 하고, very·too·much는 that절과 짝을 이루지 못한다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She spoke slowly ____ that everyone could understand her.",
+   "choices": [
+    "so",
+    "such",
+    "very",
+    "too",
+    "as"
+   ],
+   "answer": 1,
+   "why": "‘~하기 위해서’라는 목적은 「so that + 주어 + can/could」로 나타낸다. such는 명사와 함께 쓰는 말이다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He is ____ a kind boy that everyone likes him.",
+   "choices": [
+    "so",
+    "such",
+    "very",
+    "too",
+    "quite"
+   ],
+   "answer": 2,
+   "why": "뒤에 「a + 형용사 + 명사」가 오므로 such를 쓴다. so는 형용사·부사 앞에만 쓴다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I got up early ____ that I could catch the first bus.",
+   "choices": [
+    "so",
+    "such",
+    "too",
+    "very",
+    "and"
+   ],
+   "answer": 1,
+   "why": "목적을 나타내는 「so that + 주어 + could + 동사원형」이다. 나머지는 that절을 이끌 수 없다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The soup was so salty ____ I couldn't eat it.",
+   "choices": [
+    "that",
+    "what",
+    "which",
+    "than",
+    "so"
+   ],
+   "answer": 1,
+   "why": "「so + 형용사 + that + 주어 + 동사」로 결과를 나타내므로 that이 알맞다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Please turn off your phone ____ you can focus on the movie.",
+   "choices": [
+    "so that",
+    "such that",
+    "so as",
+    "in order",
+    "that so"
+   ],
+   "answer": 1,
+   "why": "뒤에 「주어 + can + 동사원형」의 절이 오므로 목적을 나타내는 접속사 so that을 쓴다. so as 뒤에는 to부정사가 온다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He studied hard ____ pass the entrance exam.",
+   "choices": [
+    "so that",
+    "in order to",
+    "so as",
+    "such as",
+    "in order"
+   ],
+   "answer": 2,
+   "why": "뒤에 동사원형 pass가 바로 오므로 「in order to + 동사원형」이 알맞다. so that과 in order 뒤에는 절이 와야 한다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It was such ____ interesting book that I read it twice.",
+   "choices": [
+    "a",
+    "an",
+    "the",
+    "one",
+    "so"
+   ],
+   "answer": 2,
+   "why": "such 뒤에는 「a(n) + 형용사 + 명사」가 오는데 interesting이 모음 소리로 시작하므로 an을 쓴다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She was ____ tired that she fell asleep on the sofa.",
+   "choices": [
+    "so",
+    "such",
+    "such a",
+    "quite",
+    "too"
+   ],
+   "answer": 1,
+   "why": "형용사 tired 앞이므로 so를 쓴다. such·such a는 명사가 필요하고 too는 that절과 함께 쓰지 않는다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "There were ____ many people at the concert that I couldn't see the stage.",
+   "choices": [
+    "so",
+    "such",
+    "very",
+    "too",
+    "much"
+   ],
+   "answer": 1,
+   "why": "「so many + 복수명사 + that」의 형태이다. such는 many와 함께 쓰지 않고, much는 셀 수 없는 명사에 쓴다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I had ____ much homework that I stayed up until midnight.",
+   "choices": [
+    "so",
+    "such",
+    "many",
+    "very",
+    "too"
+   ],
+   "answer": 1,
+   "why": "「so much + 셀 수 없는 명사 + that」의 형태이다. many는 셀 수 있는 명사에 쓴다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He wore a thick coat so ____ to keep warm.",
+   "choices": [
+    "as",
+    "that",
+    "than",
+    "of",
+    "for"
+   ],
+   "answer": 1,
+   "why": "‘~하기 위해서’를 뜻하는 「so as to + 동사원형」이다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The movie was ____ boring that I fell asleep in the middle.",
+   "choices": [
+    "so",
+    "such",
+    "such a",
+    "very",
+    "too"
+   ],
+   "answer": 1,
+   "why": "형용사 boring 앞이므로 so가 알맞다. 명사가 없으므로 such 계열은 쓸 수 없다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Kate turned on the light ____ she could read her book.",
+   "choices": [
+    "so that",
+    "such that",
+    "so as",
+    "so as to",
+    "in order"
+   ],
+   "answer": 1,
+   "why": "뒤에 「주어 + could + 동사원형」 절이 오므로 목적의 so that을 쓴다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은? (1) It was ____ cold that the lake froze. (2) He ran ____ fast that no one could catch him.",
+   "choices": [
+    "so",
+    "such",
+    "very",
+    "too",
+    "that"
+   ],
+   "answer": 1,
+   "why": "(1)은 형용사 cold, (2)는 부사 fast 앞이므로 둘 다 「so + 형용사/부사 + that」의 so를 쓴다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은? (1) He is ____ a good singer that everyone loves him. (2) It was ____ an exciting game that we shouted a lot.",
+   "choices": [
+    "so",
+    "such",
+    "very",
+    "too",
+    "quite"
+   ],
+   "answer": 2,
+   "why": "두 문장 모두 「a(n) + 형용사 + 명사」가 뒤따르므로 such를 쓴다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은? (1) I left early ____ that I could avoid the traffic. (2) Speak louder ____ that we can hear you.",
+   "choices": [
+    "so",
+    "such",
+    "very",
+    "too",
+    "as"
+   ],
+   "answer": 1,
+   "why": "두 문장 모두 목적을 나타내는 so that이 필요하므로 so를 쓴다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 바르게 짝지어진 것은? (A) It was ____ a long day that I was exhausted. (B) The tea was ____ hot that I burned my tongue.",
+   "choices": [
+    "such – so",
+    "so – such",
+    "such – such",
+    "so – so",
+    "very – so"
+   ],
+   "answer": 1,
+   "why": "(A)는 「a + 형용사 + 명사」 앞이므로 such, (B)는 형용사 hot 앞이므로 so를 쓴다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 바르게 짝지어진 것은? (A) He exercises every day ____ that he can stay healthy. (B) She was ____ nervous that her hands were shaking.",
+   "choices": [
+    "so – so",
+    "so – such",
+    "such – so",
+    "such – such",
+    "as – so"
+   ],
+   "answer": 1,
+   "why": "(A)는 목적의 so that, (B)는 「so + 형용사 + that」이므로 둘 다 so이다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 바르게 짝지어진 것은? (A) We took a taxi ____ order to arrive on time. (B) He shouted ____ that we could hear him.",
+   "choices": [
+    "in – so",
+    "in – such",
+    "for – so",
+    "to – so",
+    "in – as"
+   ],
+   "answer": 1,
+   "why": "(A)는 「in order to + 동사원형」, (B)는 목적의 so that이므로 in – so가 알맞다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은? (1) The bag was ____ heavy that I could not carry it. (2) There was ____ much snow that the school closed.",
+   "choices": [
+    "so",
+    "such",
+    "very",
+    "too",
+    "many"
+   ],
+   "answer": 1,
+   "why": "(1)은 「so + 형용사 + that」, (2)는 「so much + 셀 수 없는 명사 + that」으로 둘 다 so를 쓴다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 나머지 넷과 다른 것은?",
+   "choices": [
+    "It was ____ a nice day that we went for a walk.",
+    "He is ____ a fast runner that nobody can beat him.",
+    "She was ____ kind that everyone smiled at her.",
+    "It was ____ a boring class that I yawned.",
+    "They were ____ good friends that they shared everything."
+   ],
+   "answer": 3,
+   "why": "③은 형용사 kind 앞이므로 so, 나머지는 모두 명사구 앞이므로 such가 들어간다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은?",
+   "choices": [
+    "It was so a nice day that we went out.",
+    "He is such tall that he can touch the ceiling.",
+    "I ran fast so that I could catch the bus.",
+    "She got up early in order that catch the train.",
+    "The tea was too hot that I couldn't drink it."
+   ],
+   "answer": 3,
+   "why": "③은 「so that + 주어 + could + 동사원형」의 바른 목적 표현이다. ①은 such a, ②는 so tall, ④는 in order to catch, ⑤는 so hot that으로 고쳐야 한다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은?",
+   "choices": [
+    "He spoke so quietly that I couldn't hear him.",
+    "It was such a long movie that I fell asleep.",
+    "I studied hard so that I could pass the test.",
+    "She was so kind girl that everyone liked her.",
+    "We hurried in order to arrive on time."
+   ],
+   "answer": 4,
+   "why": "④는 뒤에 「형용사 + 명사」가 오므로 so가 아니라 such a kind girl로 써야 한다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 알맞은 것은?",
+   "choices": [
+    "The box was such heavy that I couldn't lift it.",
+    "He left early so as he could catch the 7 o'clock train.",
+    "We saved money so as to buying a car.",
+    "It was such an old house that nobody lived in it.",
+    "She spoke so slow that I understood her easily."
+   ],
+   "answer": 4,
+   "why": "④는 「such + a + 형용사 + 명사 + that」의 바른 형태이다. ①은 so heavy, ②는 so that he could catch, ③은 so as to buy, ⑤는 so slowly로 고쳐야 한다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 알맞지 않은 것은?",
+   "choices": [
+    "I wrote it down so that I wouldn't forget it.",
+    "There was so much noise that I couldn't sleep.",
+    "He is such a good cook that his food is famous.",
+    "She was so a busy woman that she had no free time.",
+    "They practiced hard so that they could win."
+   ],
+   "answer": 4,
+   "why": "④는 「a + 형용사 + 명사」 앞이므로 so가 아니라 such a busy woman으로 써야 한다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 바른 것은?",
+   "choices": [
+    "It was so cold that the lake froze.",
+    "He is so a smart student that he solves any problem.",
+    "I turned on the light so that read a book.",
+    "The bag was such expensive that I didn't buy it.",
+    "We left early so as we could get good seats."
+   ],
+   "answer": 1,
+   "why": "①은 「so + 형용사 + that + 주어 + 동사」로 바르다. ②는 such a, ③은 so that I could read, ④는 so expensive, ⑤는 so that we could로 고쳐야 한다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 바르지 않은 것은?",
+   "choices": [
+    "She sang so beautifully that everyone clapped.",
+    "It was such nice weather that we had a picnic.",
+    "He exercises every day so that he can stay healthy.",
+    "I whispered so that not wake the baby.",
+    "The question was so difficult that nobody answered it."
+   ],
+   "answer": 4,
+   "why": "④의 so that 뒤에는 「주어 + 동사」가 와야 하므로 so that I would not wake the baby로 고쳐야 한다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞는 것은?",
+   "choices": [
+    "I closed the window so that the noise wouldn't come in.",
+    "He was such tired that he went to bed early.",
+    "It was so an exciting match that we screamed.",
+    "She studies hard in order to she can be a doctor.",
+    "The coffee was so hot for me to drink."
+   ],
+   "answer": 1,
+   "why": "①은 목적의 so that 절이 바르게 쓰였다. ②는 so tired, ③은 such an exciting match, ④는 in order that she can, ⑤는 too hot으로 고쳐야 한다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞지 않는 것은?",
+   "choices": [
+    "They were so hungry that they ate everything.",
+    "It was such a small room that only one bed fit in it.",
+    "We took an umbrella so that we would not get wet.",
+    "He spoke so fast that I missed half of it.",
+    "The music was such loud that I covered my ears."
+   ],
+   "answer": 5,
+   "why": "⑤는 형용사 loud 앞이므로 such가 아니라 so loud that으로 써야 한다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?",
+   "choices": [
+    "It was <u>so</u> windy that we went home early.",
+    "He is <u>such</u> a good friend that I trust him.",
+    "She was <u>so</u> a lucky girl that she won twice.",
+    "I ate <u>so</u> much that I felt sick.",
+    "We spoke quietly <u>so that</u> the baby could sleep."
+   ],
+   "answer": 3,
+   "why": "③은 「a + 형용사 + 명사」 앞이므로 so를 such로 고쳐야 한다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 알맞지 않은 것은?",
+   "choices": [
+    "He ran <u>so as to</u> catch the bus.",
+    "She was so busy <u>that</u> she skipped lunch.",
+    "It was such <u>a</u> hot day that we went swimming.",
+    "I studied <u>in order to</u> get good grades.",
+    "There were <u>such</u> many people that I got lost."
+   ],
+   "answer": 5,
+   "why": "⑤는 many 앞이므로 such가 아니라 so many people that으로 써야 한다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 바르지 않은 것은?",
+   "choices": [
+    "The story was <u>so</u> sad that I cried.",
+    "He left early <u>so that</u> he could avoid traffic.",
+    "It was <u>such an</u> easy test that everyone passed.",
+    "She spoke <u>so slow</u> that we all understood her.",
+    "We saved money <u>in order to</u> travel abroad."
+   ],
+   "answer": 4,
+   "why": "④는 동사 spoke를 꾸미는 부사가 필요하므로 so slowly로 고쳐야 한다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 각 문장의 밑줄 친 부분 중 어법상 어색한 것은?",
+   "choices": [
+    "I was <u>so</u> excited that I couldn't sleep.",
+    "It was such <u>a</u> beautiful song that I cried.",
+    "He shouted <u>so that</u> everyone could hear him.",
+    "We hurried <u>so as</u> arrive on time.",
+    "There was <u>so</u> much rain that the road flooded."
+   ],
+   "answer": 4,
+   "why": "④는 so as 뒤에 to가 빠졌다. so as to arrive로 고쳐야 한다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법에 맞지 않는 것은?",
+   "choices": [
+    "The bag was <u>so</u> heavy that I couldn't carry it.",
+    "She is <u>such</u> a kind nurse that patients love her.",
+    "I wore a mask <u>so that</u> I wouldn't catch a cold.",
+    "It was <u>such</u> cold that we stayed in.",
+    "He practiced <u>in order to</u> win the contest."
+   ],
+   "answer": 4,
+   "why": "④는 형용사 cold만 있으므로 such가 아니라 so cold that으로 써야 한다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 옳지 않은 것은?",
+   "choices": [
+    "He was <u>so</u> angry that he shouted at us.",
+    "They walked quietly <u>so that</u> nobody would wake up.",
+    "It was such <u>an</u> useful book that I bought two.",
+    "The soup was <u>so</u> hot that I burned my tongue.",
+    "She left early <u>in order to</u> see the doctor."
+   ],
+   "answer": 3,
+   "why": "useful은 [j] 소리로 시작하므로 such a useful book이 맞다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그 상자는 너무 무거워서 나는 그것을 들 수 없었다.",
+   "choices": [
+    "The box was such heavy that I couldn't lift it.",
+    "The box was so heavy that I couldn't lift it.",
+    "The box was so heavy so that I couldn't lift it.",
+    "The box was too heavy that I couldn't lift it.",
+    "The box was very heavy that I couldn't lift it."
+   ],
+   "answer": 2,
+   "why": "‘너무 ~해서 …하다’는 「so + 형용사 + that + 주어 + 동사」로 쓴다. such·too·very는 이 구조에 쓸 수 없다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 나는 첫 기차를 타기 위해 일찍 일어났다.",
+   "choices": [
+    "I got up early so that I could catch the first train.",
+    "I got up early so that catch the first train.",
+    "I got up early in order that catch the first train.",
+    "I got up early so as catch the first train.",
+    "I got up early such that I could catch the first train."
+   ],
+   "answer": 1,
+   "why": "목적은 「so that + 주어 + could + 동사원형」으로 나타낸다. ②③은 절에 주어와 조동사가 없고 ④는 so as to가 되어야 한다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그것은 아주 재미있는 영화여서 나는 그것을 두 번 봤다.",
+   "choices": [
+    "It was so an interesting movie that I watched it twice.",
+    "It was such interesting movie that I watched it twice.",
+    "It was such an interesting movie that I watched it twice.",
+    "It was so interesting movie that I watched it twice.",
+    "It was very an interesting movie that I watched it twice."
+   ],
+   "answer": 3,
+   "why": "「such + a(n) + 형용사 + 명사 + that」이 바른 어순이다. so는 형용사·부사만 꾸민다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그는 감기에 걸리지 않도록 코트를 입었다.",
+   "choices": [
+    "He wore a coat so that he would not catch a cold.",
+    "He wore a coat so that he not catch a cold.",
+    "He wore a coat such that he would not catch a cold.",
+    "He wore a coat so as he would not catch a cold.",
+    "He wore a coat in order that not catch a cold."
+   ],
+   "answer": 1,
+   "why": "‘~하지 않도록’은 「so that + 주어 + would not + 동사원형」으로 쓴다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 날씨가 너무 추워서 우리는 밖에 나갈 수 없었다.",
+   "choices": [
+    "It was such cold that we couldn't go out.",
+    "It was so cold that we couldn't go out.",
+    "It was too cold that we couldn't go out.",
+    "It was so cold so that we couldn't go out.",
+    "It was such a cold that we couldn't go out."
+   ],
+   "answer": 2,
+   "why": "형용사 cold 앞에는 so를 쓰고 뒤에 that절이 이어진다. too는 that절이 아니라 to부정사와 짝을 이룬다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그녀는 살을 빼기 위해 매일 운동한다.",
+   "choices": [
+    "She exercises every day in order to lose weight.",
+    "She exercises every day in order lose weight.",
+    "She exercises every day so as lose weight.",
+    "She exercises every day so that lose weight.",
+    "She exercises every day for lose weight."
+   ],
+   "answer": 1,
+   "why": "「in order to + 동사원형」이 ‘~하기 위해서’를 뜻한다. ③은 so as to, ④는 so that 뒤에 주어와 조동사가 필요하다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 같은 것은? He left early in order to avoid the traffic.",
+   "choices": [
+    "He left early so that he could avoid the traffic.",
+    "He left early so that the traffic could avoid him.",
+    "He left early so as he avoided the traffic.",
+    "He left early such that he avoided the traffic.",
+    "He left early so early that he avoided the traffic."
+   ],
+   "answer": 1,
+   "why": "「in order to + 동사원형」은 「so that + 주어 + could + 동사원형」으로 바꿔 쓸 수 있다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 같은 것은? The box was too heavy for me to move.",
+   "choices": [
+    "The box was so heavy that I could move it.",
+    "The box was so heavy that I couldn't move it.",
+    "The box was such heavy that I couldn't move it.",
+    "The box was so heavy that I moved it easily.",
+    "The box was heavy enough for me to move."
+   ],
+   "answer": 2,
+   "why": "「too + 형용사 + for A + to부정사」는 「so + 형용사 + that + A + can't[couldn't]」로 바꿔 쓴다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 같은 것은? He is strong enough to carry the desk alone.",
+   "choices": [
+    "He is so strong that he can carry the desk alone.",
+    "He is so strong that he can't carry the desk alone.",
+    "He is such strong that he can carry the desk alone.",
+    "He is too strong to carry the desk alone.",
+    "He is so a strong man that he carries the desk alone."
+   ],
+   "answer": 1,
+   "why": "「형용사 + enough + to부정사」는 「so + 형용사 + that + 주어 + can」으로 바꿔 쓸 수 있다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 같은 것은? She studied hard so that she could enter the university.",
+   "choices": [
+    "She studied hard in order to enter the university.",
+    "She studied hard in order that enter the university.",
+    "She studied hard so as enter the university.",
+    "She studied hard so hard that she entered the university.",
+    "She studied hard such that entering the university."
+   ],
+   "answer": 1,
+   "why": "목적의 so that절은 「in order to + 동사원형」으로 바꿔 쓸 수 있다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 같은 것은? It was such a long book that I couldn't finish it.",
+   "choices": [
+    "The book was so long that I couldn't finish it.",
+    "The book was so a long that I couldn't finish it.",
+    "The book was such long that I couldn't finish it.",
+    "The book was long enough for me to finish.",
+    "The book was not long enough for me to finish."
+   ],
+   "answer": 1,
+   "why": "「such + a(n) + 형용사 + 명사」는 명사를 주어로 옮기면 「so + 형용사」가 된다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 같은 것은? I whispered so that the baby would not wake up.",
+   "choices": [
+    "I whispered in order not to wake the baby up.",
+    "I whispered in order to wake the baby up.",
+    "I whispered so as to wake up the baby.",
+    "I whispered so quietly that the baby woke up.",
+    "I whispered such that the baby woke up."
+   ],
+   "answer": 1,
+   "why": "‘~하지 않도록’의 so that ... not은 「in order not to + 동사원형」으로 바꿔 쓸 수 있다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안에서 알맞은 것을 고르시오. It was (so, such) a windy day that the old tree fell down.",
+   "answer": "such",
+   "alt": [],
+   "why": "뒤에 「a + 형용사 + 명사」가 오므로 such를 쓴다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안에서 알맞은 것을 고르시오. The room was (so, such) dark that I turned on the light.",
+   "answer": "so",
+   "alt": [],
+   "why": "형용사 dark만 뒤따르므로 「so + 형용사 + that」의 so를 쓴다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안에서 알맞은 것을 고르시오. I ran fast (so that, so as) I could catch the bus.",
+   "answer": "so that",
+   "alt": [],
+   "why": "뒤에 「주어 + could + 동사원형」 절이 오므로 so that을 쓴다. so as 뒤에는 to부정사가 온다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안에서 알맞은 것을 고르시오. He saved money (in order to, in order that) buy a new bike.",
+   "answer": "in order to",
+   "alt": [],
+   "why": "뒤에 동사원형 buy가 바로 오므로 in order to를 쓴다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안에서 알맞은 것을 고르시오. There was (so, such) much rain that the river rose quickly.",
+   "answer": "so",
+   "alt": [],
+   "why": "「so much + 셀 수 없는 명사 + that」의 형태이다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. He spoke ____ loudly that everyone in the hall heard him.",
+   "answer": "so",
+   "alt": [],
+   "why": "부사 loudly 앞이므로 「so + 부사 + that」의 so를 쓴다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. She is ____ a good dancer that she won first prize.",
+   "answer": "such",
+   "alt": [],
+   "why": "「a + 형용사 + 명사」 앞이므로 such를 쓴다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. I left home early ____ that I could get a good seat.",
+   "answer": "so",
+   "alt": [],
+   "why": "목적을 나타내는 so that의 so가 들어간다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 세 단어를 쓰시오. (in으로 시작할 것) We took a taxi ____ arrive on time. (제시간에 도착하기 위해)",
+   "answer": "in order to",
+   "alt": [],
+   "why": "‘~하기 위해서’는 「in order to + 동사원형」으로 쓴다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고치시오. It was <u>so</u> a cold night that we stayed home.",
+   "answer": "such",
+   "alt": [],
+   "why": "뒤에 「a + 형용사 + 명사」가 오므로 so를 such로 고친다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고치시오. He is <u>such</u> tall that he can reach the top shelf.",
+   "answer": "so",
+   "alt": [],
+   "why": "형용사 tall만 뒤따르므로 such를 so로 고친다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 두 단어로 고치시오. Yesterday I got up early so that I <u>catch</u> the first bus.",
+   "answer": "could catch",
+   "alt": [],
+   "why": "목적의 so that절에는 조동사를 함께 쓰며, 주절이 과거(got up)이므로 could catch로 고친다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고치시오. She studied hard <u>so as</u> pass the exam.",
+   "answer": "so as to",
+   "alt": [
+    "in order to"
+   ],
+   "why": "so as 뒤에는 to부정사가 와야 하므로 so as to로 고친다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고치시오. The bag was so heavy <u>what</u> I couldn't carry it.",
+   "answer": "that",
+   "alt": [],
+   "why": "「so + 형용사 + that + 주어 + 동사」 구조이므로 what을 that으로 고친다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고치시오. There were <u>such</u> many stars that we couldn't count them.",
+   "answer": "so",
+   "alt": [],
+   "why": "many 앞에는 such가 아니라 so를 써서 so many ~ that의 형태로 쓴다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. The tea was too hot for me to drink. = The tea was so hot that I ____ drink it.",
+   "answer": "couldn't",
+   "alt": [
+    "could not"
+   ],
+   "why": "「too ~ to부정사」는 「so ~ that + 주어 + couldn't」로 바꿔 쓴다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. He is rich enough to buy the car. = He is so rich ____ he can buy the car.",
+   "answer": "that",
+   "alt": [],
+   "why": "「형용사 + enough + to부정사」는 「so + 형용사 + that + 주어 + can」으로 바꾼다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 두 단어를 쓰시오. I set an alarm in order to wake up early. = I set an alarm ____ ____ I could wake up early.",
+   "answer": "so that",
+   "alt": [],
+   "why": "in order to는 목적의 so that절로 바꿔 쓸 수 있다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 in order to를 사용하여 같은 뜻의 문장으로 바꿔 쓰시오. (문장 전체를 쓸 것) She practices every day so that she can join the team.",
+   "answer": "She practices every day in order to join the team.",
+   "alt": [
+    "She practices every day in order to join the team"
+   ],
+   "why": "「so that + 주어 + can + 동사원형」은 주어가 같을 때 「in order to + 동사원형」으로 줄여 쓸 수 있다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. It was such a boring class that I fell asleep. = The class was ____ boring that I fell asleep.",
+   "answer": "so",
+   "alt": [],
+   "why": "명사를 주어로 옮기면 「such + a + 형용사 + 명사」는 「so + 형용사」가 된다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The scientist repeated the experiment several times ____ that she could get accurate results.",
+   "choices": [
+    "so",
+    "such",
+    "very",
+    "too",
+    "as"
+   ],
+   "answer": 1,
+   "why": "‘~할 수 있도록’이라는 목적은 「so that + 주어 + could + 동사원형」으로 나타낸다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The concert hall was ____ crowded that we had to stand at the back.",
+   "choices": [
+    "so",
+    "such",
+    "such a",
+    "very",
+    "too"
+   ],
+   "answer": 1,
+   "why": "형용사 crowded 앞이므로 so를 쓴다. such 계열은 명사가 필요하고 too는 that절과 짝을 이루지 못한다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "It was ____ a moving speech that some people in the audience cried.",
+   "choices": [
+    "so",
+    "such",
+    "very",
+    "too",
+    "quite"
+   ],
+   "answer": 2,
+   "why": "「a + 형용사 + 명사」 앞에는 such를 써서 「such + a(n) + 형용사 + 명사 + that」의 형태로 쓴다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "My grandmother writes down her passwords ____ she won't forget them.",
+   "choices": [
+    "so that",
+    "such that",
+    "so as",
+    "in order",
+    "that so"
+   ],
+   "answer": 1,
+   "why": "뒤에 「주어 + won't + 동사원형」의 절이 오므로 목적의 접속사 so that이 알맞다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The team practiced every morning ____ win the national championship.",
+   "choices": [
+    "so that",
+    "in order to",
+    "so as",
+    "such as",
+    "in order"
+   ],
+   "answer": 2,
+   "why": "동사원형 win이 바로 뒤따르므로 「in order to + 동사원형」이 알맞다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "There was ____ little water in the bottle that we had to share it.",
+   "choices": [
+    "so",
+    "such",
+    "very",
+    "too",
+    "few"
+   ],
+   "answer": 1,
+   "why": "「so little + 셀 수 없는 명사 + that」의 형태이다. few는 셀 수 있는 명사에 쓴다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The instructions were ____ clearly written that even a child could follow them.",
+   "choices": [
+    "so",
+    "such",
+    "such a",
+    "very",
+    "too"
+   ],
+   "answer": 1,
+   "why": "부사 clearly 앞이므로 「so + 부사 + that」의 so를 쓴다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "He put on sunscreen ____ as to protect his skin from the strong sun.",
+   "choices": [
+    "so",
+    "such",
+    "in",
+    "that",
+    "for"
+   ],
+   "answer": 1,
+   "why": "‘~하기 위해서’를 뜻하는 「so as to + 동사원형」이 되어야 한다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "They are ____ close friends that they can share anything with each other.",
+   "choices": [
+    "so",
+    "such",
+    "such a",
+    "very",
+    "too"
+   ],
+   "answer": 2,
+   "why": "복수명사 friends 앞이므로 관사 없이 「such + 형용사 + 복수명사 + that」을 쓴다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Dad turned down the volume ____ the neighbors would not complain.",
+   "choices": [
+    "so that",
+    "such that",
+    "so as",
+    "in order",
+    "as that"
+   ],
+   "answer": 1,
+   "why": "‘~하지 않도록’이라는 목적을 나타내는 절이므로 so that을 쓴다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "It was ____ terrible weather that the flight was canceled.",
+   "choices": [
+    "so",
+    "such",
+    "such a",
+    "very",
+    "too"
+   ],
+   "answer": 2,
+   "why": "weather는 셀 수 없는 명사이므로 관사 없이 「such + 형용사 + 명사 + that」으로 쓴다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The runner was ____ exhausted that he could hardly stand up after the race.",
+   "choices": [
+    "so",
+    "such",
+    "such an",
+    "very",
+    "too"
+   ],
+   "answer": 1,
+   "why": "형용사 exhausted 앞이므로 so를 쓴다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은? (1) It was ____ a strange story that nobody believed it. (2) They made ____ rapid progress that their teacher was surprised.",
+   "choices": [
+    "so",
+    "such",
+    "very",
+    "too",
+    "much"
+   ],
+   "answer": 2,
+   "why": "(1)은 「a + 형용사 + 명사」, (2)는 셀 수 없는 명사 progress 앞의 「형용사 + 명사」이므로 둘 다 such를 쓴다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은? (1) The wind blew ____ hard that the umbrella turned inside out. (2) I have ____ many things to do that I don't know where to start.",
+   "choices": [
+    "so",
+    "such",
+    "very",
+    "too",
+    "quite"
+   ],
+   "answer": 1,
+   "why": "(1)은 「so + 부사 + that」, (2)는 「so many + 복수명사 + that」이므로 둘 다 so이다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 바르게 짝지어진 것은? (A) The lecture was ____ boring that half the class fell asleep. (B) It was ____ an exciting final that nobody left early.",
+   "choices": [
+    "so – such",
+    "such – so",
+    "so – so",
+    "such – such",
+    "very – such"
+   ],
+   "answer": 1,
+   "why": "(A)는 형용사 앞이므로 so, (B)는 「an + 형용사 + 명사」 앞이므로 such이다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 바르게 짝지어진 것은? (A) She spoke in a low voice ____ that only I could hear her. (B) He goes jogging every morning ____ order to stay in shape.",
+   "choices": [
+    "so – in",
+    "so – so",
+    "in – so",
+    "such – in",
+    "as – in"
+   ],
+   "answer": 1,
+   "why": "(A)는 목적의 so that, (B)는 「in order to + 동사원형」이므로 so – in이 알맞다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은? (1) He worked overtime ____ that he could finish the report on time. (2) The band played ____ well that the crowd asked for an encore.",
+   "choices": [
+    "so",
+    "such",
+    "very",
+    "too",
+    "as"
+   ],
+   "answer": 1,
+   "why": "(1)은 목적의 so that, (2)는 「so + 부사 + that」으로 둘 다 so를 쓴다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 나머지 넷과 다른 하나는?",
+   "choices": [
+    "It was ____ a valuable painting that they kept it in a safe.",
+    "They had ____ a wonderful time that they stayed one more night.",
+    "The room was ____ quiet that I could hear the clock ticking.",
+    "He told ____ a funny joke that everyone burst out laughing.",
+    "It was ____ a long flight that my legs hurt."
+   ],
+   "answer": 3,
+   "why": "③만 형용사 quiet 앞이라 so가 들어가고, 나머지는 모두 「a + 형용사 + 명사」 앞이라 such가 들어간다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "The problem was so difficult that nobody could solved it.",
+    "She spoke so quietly that we could hardly hear her.",
+    "It was such exciting a game that we cheered loudly.",
+    "They left early so as they could get good seats.",
+    "There was such much traffic that we were late."
+   ],
+   "answer": 2,
+   "why": "②는 「so + 부사 + that + 주어 + 동사」의 바른 형태이다. ①은 could solve, ③은 such an exciting game, ④는 so that they could, ⑤는 so much traffic으로 고쳐야 한다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 것은?",
+   "choices": [
+    "I keep a diary so that I can remember special days.",
+    "It was such a hot summer that many people got sick.",
+    "The suitcase was so heavy that I asked for help.",
+    "He whispered in order that nobody to hear him.",
+    "They sang so beautifully that the judges gave them full marks."
+   ],
+   "answer": 4,
+   "why": "in order that 뒤에는 「주어 + 조동사 + 동사원형」의 절이 와야 하므로 in order that nobody would hear him으로 고쳐야 한다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장들 중 어법상 옳은 것은?",
+   "choices": [
+    "The soup was too salty that I couldn't finish it.",
+    "We arrived early in order to getting good seats.",
+    "It was such a windy day that the tent blew away.",
+    "She is so a talented pianist that she won the contest.",
+    "He ran fast so that he can catch the last bus yesterday."
+   ],
+   "answer": 3,
+   "why": "③은 「such + a + 형용사 + 명사 + that」의 바른 형태이다. ①은 so salty, ②는 to get, ④는 such a talented pianist, ⑤는 과거시제에 맞춰 could로 고쳐야 한다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장들 중 어법상 틀린 것은?",
+   "choices": [
+    "The film was so moving that I watched it three times.",
+    "They saved money in order to travel around Europe.",
+    "It was such nice weather that we ate lunch outside.",
+    "I put a note on the door so that my sister wouldn't miss it.",
+    "There were so much people in the store that I left."
+   ],
+   "answer": 5,
+   "why": "people은 셀 수 있는 명사의 복수이므로 so many people that으로 고쳐야 한다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 오류가 없는 것은?",
+   "choices": [
+    "He spoke so fast that I couldn't catch a single word.",
+    "It was so a serious accident that the road was closed.",
+    "The bag was such expensive that I put it back.",
+    "We took a map so as we would not get lost.",
+    "She studies at night in order that finish her project."
+   ],
+   "answer": 1,
+   "why": "①은 「so + 부사 + that」의 바른 형태이다. ②는 such a, ③은 so expensive, ④는 so that we would not, ⑤는 in order to finish로 고쳐야 한다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 오류가 있는 것은?",
+   "choices": [
+    "I turned off my phone so that I could concentrate.",
+    "The lake was so clear that we could see the bottom.",
+    "It was such an honest answer that everyone respected him.",
+    "He is such kind that all his classmates like him.",
+    "We started early in order to avoid the rush hour."
+   ],
+   "answer": 4,
+   "why": "④는 형용사 kind만 있으므로 such가 아니라 so kind that으로 써야 한다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 정확한 것은?",
+   "choices": [
+    "There was so little time that we had to run to the gate.",
+    "The concert was such loud that my ears hurt.",
+    "He wore glasses so that see the board better.",
+    "It was so an old building that they tore it down.",
+    "She practiced hard so as to she could win."
+   ],
+   "answer": 1,
+   "why": "①은 「so little + 셀 수 없는 명사 + that」의 바른 형태이다. ②는 so loud, ③은 so that he could see, ④는 such an old building, ⑤는 so that she could win으로 고쳐야 한다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 틀린 것을 고르시오.",
+   "choices": [
+    "The teacher spoke slowly so that the new student could follow.",
+    "It was such a difficult question that even the teacher paused.",
+    "The rain was so heavy that the game was called off.",
+    "They are so good friends that they never fight.",
+    "He left a message in order to let us know."
+   ],
+   "answer": 4,
+   "why": "④는 「형용사 + 복수명사」 앞이므로 such good friends that으로 고쳐야 한다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 자연스러운 것은?",
+   "choices": [
+    "I hid the gift so that my brother wouldn't find it.",
+    "The box was too big that it didn't fit in my bag.",
+    "It was such cold morning that the windows froze.",
+    "She sang so beautiful that we all clapped.",
+    "They ran in order that catching the train."
+   ],
+   "answer": 1,
+   "why": "①은 ‘~하지 않도록’의 so that절이 바르다. ②는 so big, ③은 such a cold morning, ④는 so beautifully, ⑤는 in order to catch로 고쳐야 한다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 잘못된 것은?",
+   "choices": [
+    "I saved the file so that I would not lose my work.",
+    "There was so much noise that I couldn't hear the announcement.",
+    "It was such an amazing view that we took many pictures.",
+    "He is so strong that he can lift the box alone.",
+    "The test was such easy that everyone got a perfect score."
+   ],
+   "answer": 5,
+   "why": "⑤는 형용사 easy만 있으므로 so easy that으로 고쳐야 한다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 틀린 것을 고르시오.",
+   "choices": [
+    "The show was <u>so</u> popular that tickets sold out in a day.",
+    "It was such <u>an</u> unusual name that I wrote it down.",
+    "We left early <u>so that</u> we could beat the traffic.",
+    "There was <u>such</u> heavy rain that the road flooded.",
+    "He was <u>so</u> a careful driver that he never had an accident."
+   ],
+   "answer": 5,
+   "why": "⑤는 「a + 형용사 + 명사」 앞이므로 such a careful driver로 고쳐야 한다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 각 문장의 밑줄 친 부분 중 어법상 틀린 것은?",
+   "choices": [
+    "She smiled <u>so</u> brightly that everyone felt happy.",
+    "I bought two tickets <u>in order to</u> take my sister.",
+    "The room was <u>such</u> messy that I cleaned it right away.",
+    "They were <u>so</u> tired that they fell asleep on the bus.",
+    "It was such <u>a</u> long line that we gave up."
+   ],
+   "answer": 3,
+   "why": "③은 형용사 messy만 있으므로 so messy that으로 고쳐야 한다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 잘못된 것은?",
+   "choices": [
+    "He got a part-time job <u>so that</u> he could pay for the trip.",
+    "The story was <u>so</u> touching that I read it twice.",
+    "It was <u>such</u> a windy night that the power went out.",
+    "We took an early flight <u>so as</u> arrive before noon.",
+    "There was <u>so</u> little snow that the ski resort closed."
+   ],
+   "answer": 4,
+   "why": "so as 뒤에는 to부정사가 와야 하므로 so as to arrive로 고쳐야 한다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분이 어법상 틀린 것은?",
+   "choices": [
+    "The coach shouted <u>so that</u> the players could hear him.",
+    "It was <u>such</u> good news that we celebrated all evening.",
+    "The suitcase was <u>too</u> heavy that I couldn't lift it.",
+    "She spoke <u>so</u> politely that nobody got angry.",
+    "He studies at night <u>in order to</u> keep up with his classmates."
+   ],
+   "answer": 3,
+   "why": "too는 that절이 아니라 to부정사와 짝을 이루므로 so heavy that으로 고쳐야 한다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 고쳐야 할 것은?",
+   "choices": [
+    "I wrote it in big letters <u>so that</u> everyone could read it.",
+    "It was <u>such</u> a boring lecture that I nearly fell asleep.",
+    "There were <u>so</u> many questions that we ran out of time.",
+    "The water was <u>so</u> cold that nobody went swimming.",
+    "They practiced hard <u>in order that</u> winning the game."
+   ],
+   "answer": 5,
+   "why": "in order that 뒤에는 절이 와야 하므로 in order to win 또는 in order that they could win으로 고쳐야 한다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 쓰임이 어법상 틀린 것은?",
+   "choices": [
+    "The bakery smells <u>so</u> good that I stop by every day.",
+    "He locked the door <u>so that</u> nobody could get in.",
+    "It was <u>such an</u> honest mistake that we forgave him.",
+    "There were <u>such</u> many dishes on the table that we couldn't finish them.",
+    "She ran <u>so as to</u> catch the last subway."
+   ],
+   "answer": 4,
+   "why": "many 앞에는 such를 쓰지 않으므로 so many dishes that으로 고쳐야 한다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그 소년은 너무 어려서 혼자 여행할 수 없었다.",
+   "choices": [
+    "The boy was so young that he could travel alone.",
+    "The boy was so young that he couldn't travel alone.",
+    "The boy was such young that he couldn't travel alone.",
+    "The boy was too young that he couldn't travel alone.",
+    "The boy was so a young that he couldn't travel alone."
+   ],
+   "answer": 2,
+   "why": "‘너무 어려서 ~할 수 없었다’는 「so + 형용사 + that + 주어 + couldn't」로 쓴다. ①은 뜻이 반대이다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그녀는 시험에 합격하기 위해 도서관에서 공부했다.",
+   "choices": [
+    "She studied at the library so that she pass the exam.",
+    "She studied at the library so as pass the exam.",
+    "She studied at the library in order to pass the exam.",
+    "She studied at the library in order that pass the exam.",
+    "She studied at the library for pass the exam."
+   ],
+   "answer": 3,
+   "why": "목적은 「in order to + 동사원형」으로 나타낸다. ①은 so that she could pass, ②는 so as to pass가 되어야 한다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그것은 아주 감동적인 이야기여서 많은 독자들이 눈물을 흘렸다.",
+   "choices": [
+    "It was so a touching story that many readers cried.",
+    "It was such touching story that many readers cried.",
+    "It was such a touching story that many readers cried.",
+    "It was very touching story that many readers cried.",
+    "It was too touching story that many readers cried."
+   ],
+   "answer": 3,
+   "why": "「such + a(n) + 형용사 + 명사 + that」이 바른 어순이다. so는 명사구를 꾸밀 수 없다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 나는 늦지 않도록 알람을 두 개 맞췄다.",
+   "choices": [
+    "I set two alarms so that I would not be late.",
+    "I set two alarms so that not be late.",
+    "I set two alarms in order that not to be late.",
+    "I set two alarms so as I would not be late.",
+    "I set two alarms such that not being late."
+   ],
+   "answer": 1,
+   "why": "‘~하지 않도록’은 「so that + 주어 + would not + 동사원형」으로 쓴다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 교통 체증이 너무 심해서 우리는 회의에 늦었다.",
+   "choices": [
+    "There was such heavy traffic that we were late for the meeting.",
+    "There was so heavy traffic that we were late for the meeting.",
+    "There was such a heavy traffic that we were late for the meeting.",
+    "There was too heavy traffic that we were late for the meeting.",
+    "There was so a heavy traffic that we were late for the meeting."
+   ],
+   "answer": 1,
+   "why": "traffic은 셀 수 없는 명사이므로 관사 없이 「such + 형용사 + 명사 + that」으로 쓴다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그는 모두가 들을 수 있도록 크게 말했다.",
+   "choices": [
+    "He spoke loudly so that everyone could hear him.",
+    "He spoke loudly so that everyone hear him.",
+    "He spoke loudly so as everyone could hear him.",
+    "He spoke loudly in order that hearing him.",
+    "He spoke so loudly that everyone couldn't hear him."
+   ],
+   "answer": 1,
+   "why": "목적의 so that절에는 「주어 + could + 동사원형」을 쓴다. ⑤는 뜻이 반대이다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장과 바꿔 쓸 수 있는 것은? The problem was so easy that anyone could solve it.",
+   "choices": [
+    "The problem was too easy for anyone to solve.",
+    "The problem was easy enough for anyone to solve.",
+    "The problem was such easy that anyone could solve it.",
+    "The problem was so an easy one that anyone solved it.",
+    "The problem was not easy enough for anyone to solve."
+   ],
+   "answer": 2,
+   "why": "「so + 형용사 + that + 주어 + could」는 「형용사 + enough + to부정사」로 바꿔 쓸 수 있다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 같은 것은? He speaks slowly so that foreign students can understand him.",
+   "choices": [
+    "He speaks slowly in order to help foreign students understand him.",
+    "He speaks so slowly that foreign students can't understand him.",
+    "He speaks slowly so as foreign students understand him.",
+    "He speaks slowly in order that understanding him.",
+    "He speaks such slowly that foreign students understand him."
+   ],
+   "answer": 1,
+   "why": "목적의 so that절을 to부정사구로 바꾼 ①이 같은 뜻이다. ②는 뜻이 반대이고 ③④⑤는 어법상 틀린 문장이다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ⓐ It was such a cold day that the water pipes froze. ⓑ He is so tall that he can touch the ceiling. ⓒ She left early so as to avoid the crowd. ⓓ There was so much dust that I sneezed. ⓔ The bag was such heavy that I dropped it.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "ⓐⓑⓒⓓ가 옳고, ⓔ는 형용사 heavy 앞이므로 so heavy that으로 고쳐야 한다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는? ⓐ I whispered so that the baby wouldn't wake up. ⓑ It was so an interesting book that I finished it in a day. ⓒ They practiced hard in order to win the match. ⓓ There were such many cars that the road was blocked. ⓔ The tea was so hot that I burned my tongue.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ⓑ는 such an interesting book, ⓓ는 so many cars로 고쳐야 하므로 틀린 문장은 두 개이다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은? A: Why did you buy two umbrellas? B: I bought one for my sister ____ she wouldn't get wet on the way home.",
+   "choices": [
+    "so that",
+    "such that",
+    "so as",
+    "in order",
+    "that so"
+   ],
+   "answer": 1,
+   "why": "뒤에 「주어 + wouldn't + 동사원형」의 절이 오므로 목적의 so that을 쓴다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은? A: The soup smells great, but be careful. B: Oh, it is ____ hot that I can't even hold the bowl.",
+   "choices": [
+    "so",
+    "such",
+    "such a",
+    "very",
+    "too"
+   ],
+   "answer": 1,
+   "why": "형용사 hot 앞이고 뒤에 that절이 이어지므로 so가 알맞다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것을 고르시오. The lecture was (so, such) informative that I took three pages of notes.",
+   "answer": "so",
+   "alt": [],
+   "why": "형용사 informative 앞이므로 「so + 형용사 + that」의 so를 쓴다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것을 고르시오. It was (so, such) a foggy morning that all flights were delayed.",
+   "answer": "such",
+   "alt": [],
+   "why": "「a + 형용사 + 명사」 앞이므로 such를 쓴다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것을 고르시오. She left a note (so that, so as) her roommate would know where she was.",
+   "answer": "so that",
+   "alt": [],
+   "why": "뒤에 「주어 + 조동사 + 동사원형」의 절이 오므로 so that을 쓴다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것을 고르시오. They set up a tent (in order to, in order that) sleep near the lake.",
+   "answer": "in order to",
+   "alt": [],
+   "why": "동사원형 sleep이 바로 뒤따르므로 in order to를 쓴다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것을 고르시오. There was (so, such) little sugar left that I couldn't bake the cake.",
+   "answer": "so",
+   "alt": [],
+   "why": "「so little + 셀 수 없는 명사 + that」의 형태이다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. It was ____ a generous offer that we accepted it immediately.",
+   "answer": "such",
+   "alt": [],
+   "why": "「a + 형용사 + 명사」 앞이므로 such를 쓴다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. He trains every morning ____ that he can join the national team.",
+   "answer": "so",
+   "alt": [],
+   "why": "목적을 나타내는 「so that + 주어 + can」의 so가 들어간다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 두 단어를 쓰시오. I labeled every box ____ ____ we could find things easily after the move.",
+   "answer": "so that",
+   "alt": [],
+   "why": "‘~할 수 있도록’이라는 목적은 so that절로 나타낸다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고치시오. The wind was <u>such</u> strong that the shop sign fell down.",
+   "answer": "so",
+   "alt": [],
+   "why": "형용사 strong만 뒤따르므로 such를 so로 고친다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고치시오. It was <u>so</u> a memorable trip that we still talk about it.",
+   "answer": "such",
+   "alt": [],
+   "why": "「a + 형용사 + 명사」 앞이므로 so를 such로 고친다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 세 단어로 고치시오. We booked the tickets early <u>so as</u> get better seats.",
+   "answer": "so as to",
+   "alt": [
+    "in order to"
+   ],
+   "why": "so as 뒤에는 to부정사가 와야 하므로 so as to로 고친다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고치시오. Last night he spoke slowly so that the visitors <u>can</u> understand him.",
+   "answer": "could",
+   "alt": [],
+   "why": "주절이 과거(spoke)이므로 so that절의 조동사도 과거형 could로 일치시킨다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고치시오. There was <u>such</u> much snow that the school was closed for two days.",
+   "answer": "so",
+   "alt": [],
+   "why": "much 앞에는 such를 쓰지 않으므로 so much snow that으로 고친다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고치시오. The exam was so long <u>what</u> I ran out of time.",
+   "answer": "that",
+   "alt": [],
+   "why": "「so + 형용사 + that + 주어 + 동사」 구조이므로 what을 that으로 고친다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 too ~ to를 사용하여 같은 뜻의 문장으로 바꿔 쓰시오. (문장 전체를 쓸 것) The coffee was so hot that I couldn't drink it.",
+   "answer": "The coffee was too hot for me to drink.",
+   "alt": [
+    "The coffee was too hot to drink.",
+    "The coffee was too hot for me to drink"
+   ],
+   "why": "「so + 형용사 + that + 주어 + couldn't + 동사원형」은 「too + 형용사 + (for A) + to부정사」로 바꿔 쓴다. 이때 목적어 it은 반복하지 않는다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 두 단어를 쓰시오. The rope was so long that it could reach the ground. = The rope was long ____ ____ reach the ground.",
+   "answer": "enough to",
+   "alt": [],
+   "why": "「so + 형용사 + that + 주어 + could」는 「형용사 + enough + to부정사」로 바꿔 쓴다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 so ~ that을 사용하여 같은 뜻의 문장으로 바꿔 쓰시오. (문장 전체를 쓸 것) He is smart enough to solve the puzzle.",
+   "answer": "He is so smart that he can solve the puzzle.",
+   "alt": [
+    "He is so smart that he can solve the puzzle"
+   ],
+   "why": "「형용사 + enough + to부정사」는 「so + 형용사 + that + 주어 + can + 동사원형」으로 바꿔 쓴다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 so that을 사용하여 같은 뜻의 문장으로 바꿔 쓰시오. (문장 전체를 쓸 것) She woke up at five in order to watch the sunrise.",
+   "answer": "She woke up at five so that she could watch the sunrise.",
+   "alt": [
+    "She woke up at five so that she could watch the sunrise"
+   ],
+   "why": "「in order to + 동사원형」은 「so that + 주어 + could + 동사원형」으로 바꿔 쓴다. 주절이 과거이므로 could를 쓴다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. It was such an expensive camera that I couldn't buy it. = The camera was ____ expensive that I couldn't buy it.",
+   "answer": "so",
+   "alt": [],
+   "why": "명사를 주어로 옮기면 「such + a(n) + 형용사 + 명사」는 「so + 형용사」가 된다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 두 단어를 쓰시오. The book was so interesting that I read it twice. = It was ____ ____ interesting book that I read it twice.",
+   "answer": "such an",
+   "alt": [],
+   "why": "「so + 형용사」를 명사구로 옮기면 「such + a(n) + 형용사 + 명사」가 되고, interesting은 모음 소리로 시작하므로 an을 쓴다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The documentary was ____ powerful that it changed the way many people think about plastic waste.",
+   "choices": [
+    "so",
+    "such",
+    "such a",
+    "very",
+    "too"
+   ],
+   "answer": 1,
+   "why": "형용사 powerful만 뒤따르므로 「so + 형용사 + that」이다. such·such a는 명사구를 요구하고 too는 that절과 짝을 이루지 못한다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The organizers moved the event indoors ____ the heavy rain would not ruin it.",
+   "choices": [
+    "so that",
+    "so as",
+    "such that",
+    "in order",
+    "so as to"
+   ],
+   "answer": 1,
+   "why": "뒤에 「주어 + would not + 동사원형」의 절이 오므로 목적의 접속사 so that을 쓴다. so as·so as to 뒤에는 to부정사가 온다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "They provided free shuttle buses ____ that visitors could reach the museum without a car.",
+   "choices": [
+    "so",
+    "such",
+    "in",
+    "as",
+    "for"
+   ],
+   "answer": 1,
+   "why": "목적을 나타내는 「so that + 주어 + could + 동사원형」의 so가 들어간다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "It was ____ a well-organized festival that the city decided to hold it again the next year.",
+   "choices": [
+    "such",
+    "so",
+    "very",
+    "too",
+    "quite"
+   ],
+   "answer": 1,
+   "why": "「a + 형용사 + 명사」 앞이므로 such를 쓴다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 바르게 짝지어진 것은? (A) The instructions were written in simple words ____ that even beginners could follow them. (B) There was ____ little information on the website that we had to call the office.",
+   "choices": [
+    "so – so",
+    "so – such",
+    "such – so",
+    "so – too",
+    "as – so"
+   ],
+   "answer": 1,
+   "why": "(A)는 목적의 so that, (B)는 「so little + 셀 수 없는 명사 + that」이므로 둘 다 so이다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 바르게 짝지어진 것은? (A) He made ____ rapid progress that his teacher recommended him for the advanced class. (B) The stadium was ____ noisy that the players could not hear the coach.",
+   "choices": [
+    "such – so",
+    "so – such",
+    "such – such",
+    "so – so",
+    "very – so"
+   ],
+   "answer": 1,
+   "why": "(A)는 셀 수 없는 명사 progress를 포함한 명사구 앞이므로 such, (B)는 형용사 noisy 앞이므로 so이다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은? (1) The professor spoke ____ clearly that nobody had to ask a question. (2) I set my alarm for six ____ that I would not oversleep again.",
+   "choices": [
+    "so",
+    "such",
+    "very",
+    "too",
+    "as"
+   ],
+   "answer": 1,
+   "why": "(1)은 「so + 부사 + that」, (2)는 목적의 so that이므로 공통으로 so가 들어간다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 들어갈 말이 나머지와 다른 것은?",
+   "choices": [
+    "It was ____ a subtle difference that most people missed it.",
+    "There was ____ heavy fog that the ferry service stopped.",
+    "The kitten made ____ a strange sound that we ran to check.",
+    "The exhibition drew ____ large crowds that the gallery extended its hours.",
+    "The line moved ____ slowly that we gave up and left."
+   ],
+   "answer": 5,
+   "why": "⑤만 부사 slowly 앞이라 so가 들어가고, 나머지는 모두 명사구 앞이라 such가 들어간다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "He turned the map around several times ____ figure out where he was standing.",
+   "choices": [
+    "so that",
+    "in order to",
+    "so as",
+    "such as",
+    "in order"
+   ],
+   "answer": 2,
+   "why": "동사원형 figure가 바로 뒤따르므로 「in order to + 동사원형」이 알맞다. so as는 뒤에 to가 필요하고 so that·in order 뒤에는 절이 와야 한다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The instructions were ____ complicated for us to follow, so we asked the staff for help.",
+   "choices": [
+    "too",
+    "so",
+    "such",
+    "very",
+    "enough"
+   ],
+   "answer": 1,
+   "why": "뒤에 「for + 목적격 + to부정사」가 오므로 「too + 형용사 + for A + to부정사」의 too를 쓴다. so는 that절과 짝을 이룬다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 고르시오.",
+   "choices": [
+    "The engineers redesigned the bridge so that it could resist strong winds.",
+    "The engineers redesigned the bridge so as it could resist strong winds.",
+    "The engineers redesigned the bridge in order that resisting strong winds.",
+    "The engineers redesigned the bridge so that resist strong winds.",
+    "The engineers redesigned the bridge such that resisting strong winds."
+   ],
+   "answer": 1,
+   "why": "①은 「so that + 주어 + could + 동사원형」의 바른 목적 표현이다. so as 뒤에는 to부정사가, in order that 뒤에는 완전한 절이 와야 한다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳지 않은 것은?",
+   "choices": [
+    "It was such a convincing argument that even her critics agreed.",
+    "The medicine worked so quickly that the pain disappeared within minutes.",
+    "We arrived so early that the doors were still locked.",
+    "The company lowered the price so that more customers could afford it.",
+    "The report contained so detailed information that we needed a week to read it."
+   ],
+   "answer": 5,
+   "why": "⑤는 「형용사 + 명사(information)」 앞이므로 so가 아니라 such detailed information that으로 써야 한다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 맞게 쓰인 것은?",
+   "choices": [
+    "He hid the letter so that his parents would not read it.",
+    "He hid the letter so that his parents will not read it.",
+    "He hid the letter in order that his parents not to read it.",
+    "He hid the letter so as his parents would not read it.",
+    "He hid the letter for his parents not to reading it."
+   ],
+   "answer": 1,
+   "why": "주절이 과거(hid)이므로 so that절에도 과거형 조동사 would를 쓴다. ②는 시제가 일치하지 않고 ③④⑤는 구조가 틀렸다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 맞지 않게 쓰인 것은?",
+   "choices": [
+    "The team worked overtime in order to meet the deadline.",
+    "The chef used fresh herbs so that the soup would taste better.",
+    "The kitten was so tiny that it fit in my palm.",
+    "It was so a delicate sculpture that no one was allowed to touch it.",
+    "There were so few volunteers that the event was postponed."
+   ],
+   "answer": 4,
+   "why": "④는 「a + 형용사 + 명사」 앞이므로 such a delicate sculpture that으로 고쳐야 한다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 올바른 문장은?",
+   "choices": [
+    "The exam was so difficult for most students to finish in time.",
+    "The exam was such difficult that most students could not finish it.",
+    "The exam was so difficult that most students could not finish it in time.",
+    "The exam was too difficult that most students could not finish it.",
+    "The exam was such a difficult that most students could not finish it."
+   ],
+   "answer": 3,
+   "why": "③만 「so + 형용사 + that + 주어 + 동사」의 바른 형태이다. ①은 too, ②는 so, ④는 so, ⑤는 such a difficult exam으로 고쳐야 한다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 올바르지 않은 문장은?",
+   "choices": [
+    "She saves part of her salary every month so that she can study abroad.",
+    "The road was so icy that three cars slid into the ditch.",
+    "They spoke in whispers in order not to disturb the other guests.",
+    "It was such an emergency that the nurse called the doctor at home.",
+    "The runner trained hard so that to break the national record."
+   ],
+   "answer": 5,
+   "why": "⑤는 so that 뒤에 절이 와야 하므로 so as to break 또는 so that he could break로 고쳐야 한다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 알맞게 쓰인 것은?",
+   "choices": [
+    "The audience was so quiet that you could hear a pin drop.",
+    "The audience was such quiet that you could hear a pin drop.",
+    "The audience was so quiet for you to hear a pin drop.",
+    "The audience was such a quiet that you could hear a pin drop.",
+    "The audience was too quiet that you could hear a pin drop."
+   ],
+   "answer": 1,
+   "why": "형용사 quiet 앞에는 so를 쓰고 뒤에 that절을 이어 결과를 나타낸다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 틀린 것은?",
+   "choices": [
+    "He left the door open so that the cat could come in.",
+    "The children made such a mess that it took an hour to clean up.",
+    "The lake was so deep that divers needed special equipment.",
+    "We wrote the numbers in large print so that older readers will see them clearly.",
+    "It was such fine weather that the market stayed open until midnight."
+   ],
+   "answer": 4,
+   "why": "주절의 wrote가 과거이므로 so that절의 조동사도 과거형 would로 일치시켜 would see로 고쳐야 한다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 문제가 없는 것은?",
+   "choices": [
+    "There were such many applicants that the company added an extra interview day.",
+    "There were so many applicants that the company added an extra interview day.",
+    "There were so much applicants that the company added an extra interview day.",
+    "There were such a many applicants that the company added an extra interview day.",
+    "There were too many applicants that the company added an extra interview day."
+   ],
+   "answer": 2,
+   "why": "「so many + 복수명사 + that」이 바른 형태이다. many 앞에는 such를 쓰지 않고, much는 셀 수 없는 명사에 쓴다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 고쳐야 할 것은?",
+   "choices": [
+    "The scientist explained the theory in simple terms so that ordinary readers could grasp it.",
+    "The storm was so violent that the roof of the barn blew off.",
+    "It was such a rare bird that photographers came from all over the country.",
+    "She practiced the speech many times in order to sound natural.",
+    "The soup was so spicy for the children to eat."
+   ],
+   "answer": 5,
+   "why": "⑤는 「for + 목적격 + to부정사」와 짝을 이루는 too가 필요하므로 too spicy for the children to eat으로 고쳐야 한다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)에서 어법에 맞는 표현을 골라 바르게 짝지은 것은? The exhibition was (A) so / such popular that the museum extended it by two weeks. Visitors came early (B) so that / so as they could avoid the crowds, and the staff opened an extra entrance (C) in order to / in order that manage the long lines.",
+   "choices": [
+    "so – so that – in order to",
+    "such – so that – in order to",
+    "so – so as – in order that",
+    "such – so as – in order to",
+    "so – so that – in order that"
+   ],
+   "answer": 1,
+   "why": "(A)는 형용사 popular 앞이라 so, (B)는 절 앞이라 so that, (C)는 동사원형 manage 앞이라 in order to를 쓴다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)에서 어법에 맞는 표현을 골라 바르게 짝지은 것은? It was (A) so / such an amazing performance that the audience stood up and clapped. The dancers had practiced for months (B) so that / so as they would be ready, and the director rewrote the ending so that the story (C) would / will feel more hopeful.",
+   "choices": [
+    "such – so that – would",
+    "so – so that – would",
+    "such – so as – would",
+    "such – so that – will",
+    "so – so as – will"
+   ],
+   "answer": 1,
+   "why": "(A)는 「an + 형용사 + 명사」 앞이라 such, (B)는 절 앞이라 so that, (C)는 주절이 과거이므로 would를 쓴다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)에서 어법에 맞는 표현을 골라 바르게 짝지은 것은? The road was (A) so / such icy that the bus could not climb the hill. The driver put chains on the tires (B) so that / so as the bus could keep going, and he drove slowly (C) so as to / so as avoid an accident.",
+   "choices": [
+    "so – so that – so as to",
+    "such – so that – so as to",
+    "so – so as – so as to",
+    "so – so that – so as",
+    "such – so as – so as"
+   ],
+   "answer": 1,
+   "why": "(A)는 형용사 icy 앞이라 so, (B)는 절 앞이라 so that, (C)는 동사원형 avoid 앞이라 so as to를 쓴다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)에서 어법에 맞는 표현을 골라 바르게 짝지은 것은? There was (A) so / such heavy fog that the airport closed for six hours. Airlines sent text messages (B) so that / so as passengers would not come to the terminal, and they arranged hotel rooms (C) in order to / in order help the stranded travelers.",
+   "choices": [
+    "such – so that – in order to",
+    "so – so that – in order to",
+    "such – so as – in order to",
+    "such – so that – in order",
+    "so – so as – in order"
+   ],
+   "answer": 1,
+   "why": "(A)는 셀 수 없는 명사 fog를 포함한 명사구 앞이라 such, (B)는 절 앞이라 so that, (C)는 동사원형 help 앞이라 in order to를 쓴다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)에서 어법에 맞는 표현을 골라 바르게 짝지은 것은? The stew was (A) too / so hot for the children to eat, so the cook added cold water (B) so that / so as it would cool down faster. He also served it in shallow bowls (C) so as to / so that let the heat escape.",
+   "choices": [
+    "too – so that – so as to",
+    "so – so that – so as to",
+    "too – so as – so as to",
+    "too – so that – so that",
+    "so – so as – so that"
+   ],
+   "answer": 1,
+   "why": "(A)는 「for + 목적격 + to부정사」와 짝을 이루므로 too, (B)는 절 앞이라 so that, (C)는 동사원형 let 앞이라 so as to를 쓴다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 짝지은 것은? ⓐ It was such an unusual request that the manager hesitated. ⓑ He spoke so softly that even the microphone missed his words. ⓒ They arrived early so as they could get front-row seats. ⓓ There was so little evidence that the case was dropped.",
+   "choices": [
+    "ⓐ, ⓑ",
+    "ⓐ, ⓑ, ⓓ",
+    "ⓑ, ⓒ, ⓓ",
+    "ⓐ, ⓒ",
+    "ⓐ, ⓑ, ⓒ, ⓓ"
+   ],
+   "answer": 2,
+   "why": "ⓒ는 so as 뒤에 절이 왔으므로 틀렸다. so that they could get으로 고쳐야 하고 나머지 셋은 모두 옳다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것끼리 짝지은 것은? ⓐ The wind was such strong that the tent collapsed. ⓑ She left a light on so that the house would look occupied. ⓒ It was so a memorable concert that fans talked about it for years. ⓓ The cave was so dark that we needed flashlights.",
+   "choices": [
+    "ⓐ, ⓑ",
+    "ⓐ, ⓒ",
+    "ⓑ, ⓒ",
+    "ⓒ, ⓓ",
+    "ⓐ, ⓓ"
+   ],
+   "answer": 2,
+   "why": "ⓐ는 so strong, ⓒ는 such a memorable concert로 고쳐야 한다. ⓑ와 ⓓ는 옳은 문장이다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분이 어법상 옳은 것끼리 짝지은 것은? ⓐ The bakery opens at six <u>so that</u> commuters can buy fresh bread. ⓑ It was <u>such</u> a tight schedule that we skipped lunch. ⓒ There were <u>so</u> much people at the fair that we lost each other. ⓓ He whispered <u>in order to</u> not to wake the baby.",
+   "choices": [
+    "ⓐ, ⓑ",
+    "ⓐ, ⓒ",
+    "ⓑ, ⓓ",
+    "ⓐ, ⓑ, ⓒ",
+    "ⓑ, ⓒ, ⓓ"
+   ],
+   "answer": 1,
+   "why": "ⓒ는 so many people, ⓓ는 in order not to wake로 고쳐야 한다. ⓐ와 ⓑ의 밑줄은 옳다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 알맞은 문장의 개수는? ⓐ It was such a cold winter that the river froze completely. ⓑ The engine made such a strange noise that we pulled over. ⓒ She spoke so fluent that we thought she was a native speaker. ⓓ We left the porch light on so that our guests could find the house. ⓔ There was such much dust in the attic that we wore masks.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ⓒ는 동사를 꾸미므로 so fluently, ⓔ는 so much dust로 고쳐야 한다. 옳은 것은 ⓐⓑⓓ 세 개이다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 알맞지 않은 문장의 개수는? ⓐ The film was so long that we missed the last bus. ⓑ He shouted so as everyone could hear him. ⓒ It was such heavy luggage that I asked for a cart. ⓓ They planted trees in order to make the street cooler. ⓔ The tea was too bitter that I added sugar.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ⓑ는 so that everyone could hear, ⓔ는 so bitter that으로 고쳐야 하므로 틀린 문장은 두 개이다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 바른 문장의 개수는? ⓐ She turned the volume down so that the neighbors wouldn't complain. ⓑ It was so an old map that some place names had changed. ⓒ There were so few seats that many people had to stand. ⓓ The dog barked so loudly that the whole street woke up. ⓔ He studied all night in order to passing the interview.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ⓑ는 such an old map, ⓔ는 in order to pass로 고쳐야 한다. 옳은 것은 ⓐⓒⓓ 세 개이다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 바르지 않은 문장의 개수는? ⓐ The box was such light that a child could carry it. ⓑ We booked in advance so that we could get a discount. ⓒ It was such nice music that nobody wanted to leave. ⓓ There was so little time that we skipped the introduction. ⓔ He drove slowly in order that not have an accident.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ⓐ는 so light, ⓔ는 in order not to have로 고쳐야 하므로 틀린 문장은 두 개이다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 오류가 없는 문장의 개수는? ⓐ The lecture hall was so full that students sat on the floor. ⓑ It was such an inconvenient time that half the members skipped the meeting. ⓒ She wrote everything down so that she wouldn't forget the details. ⓓ They were such tired that they went straight to bed. ⓔ The path was too steep for us to climb without ropes.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "ⓓ만 so tired로 고쳐야 하고 나머지 네 문장은 모두 옳다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 오류가 있는 문장의 개수는? ⓐ The coffee was so strong that I couldn't sleep all night. ⓑ He raised his hand so that the teacher will notice him. ⓒ It was such a windy day that the kite flew away. ⓓ There were such many mistakes that the report was returned. ⓔ She takes vitamins every day so as to stay healthy.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ⓑ는 주절이 과거이므로 would notice, ⓓ는 so many mistakes로 고쳐야 한다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장과 바꿔 쓸 수 없는 것은? The suitcase was so heavy that I couldn't carry it by myself.",
+   "choices": [
+    "The suitcase was too heavy for me to carry by myself.",
+    "The suitcase was not light enough for me to carry by myself.",
+    "It was such a heavy suitcase that I couldn't carry it by myself.",
+    "The suitcase was heavy enough for me to carry by myself.",
+    "I couldn't carry the suitcase by myself because it was so heavy."
+   ],
+   "answer": 4,
+   "why": "④는 ‘혼자 옮길 수 있을 만큼 무거웠다’는 뜻이 되어 원문과 반대이다. 나머지는 모두 같은 뜻이다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 다른 것은? She got up at dawn so that she could catch the first ferry.",
+   "choices": [
+    "She got up at dawn in order to catch the first ferry.",
+    "She got up at dawn so as to catch the first ferry.",
+    "She got up at dawn to catch the first ferry.",
+    "She got up at dawn because she had already caught the first ferry.",
+    "She got up at dawn in order that she could catch the first ferry."
+   ],
+   "answer": 4,
+   "why": "④는 목적이 아니라 이유를 나타내며 시간 순서도 반대이다. 나머지는 모두 목적을 나타내는 같은 뜻의 표현이다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 의미가 같도록 할 때 빈칸에 알맞은 것은? It was such a dull movie that I fell asleep halfway through. = The movie was ____ dull ____ I fell asleep halfway through.",
+   "choices": [
+    "so – that",
+    "such – that",
+    "too – to",
+    "very – that",
+    "so – as"
+   ],
+   "answer": 1,
+   "why": "명사를 주어로 옮기면 「such + a + 형용사 + 명사」는 「so + 형용사 + that」이 된다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 같은 것은? The instructions were clear enough for beginners to follow.",
+   "choices": [
+    "The instructions were so clear that beginners could follow them.",
+    "The instructions were so clear that beginners couldn't follow them.",
+    "The instructions were too clear for beginners to follow.",
+    "The instructions were such clear that beginners could follow them.",
+    "The instructions were not clear enough for beginners to follow them."
+   ],
+   "answer": 1,
+   "why": "「형용사 + enough + for A + to부정사」는 「so + 형용사 + that + A + could」로 바꿔 쓴다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 같은 것은? He speaks too fast for me to understand.",
+   "choices": [
+    "He speaks so fast that I can't understand him.",
+    "He speaks so fast that I can understand him.",
+    "He speaks such fast that I can't understand him.",
+    "He speaks fast enough for me to understand him.",
+    "He speaks so fast for me not to understand him."
+   ],
+   "answer": 1,
+   "why": "「too + 부사 + for A + to부정사」는 「so + 부사 + that + A + can't」로 바꿔 쓴다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 바꿔 쓴 것으로 알맞은 것은? They dimmed the ceiling lights in order not to waste electricity.",
+   "choices": [
+    "They dimmed the ceiling lights so that they would not waste electricity.",
+    "They dimmed the ceiling lights so that not waste electricity.",
+    "They dimmed the ceiling lights so as they did not waste electricity.",
+    "They dimmed the ceiling lights so low that they wasted electricity.",
+    "They dimmed the ceiling lights in order that not wasting electricity."
+   ],
+   "answer": 1,
+   "why": "「in order not to + 동사원형」은 「so that + 주어 + would not + 동사원형」으로 바꿔 쓸 수 있다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은? Last month our school held a book fair. It was ① <u>such</u> a popular event that the gym was full all day. The volunteers arrived early ② <u>so that</u> they could set up the tables. They labeled every box clearly ③ <u>in order to</u> save time. Some books were ④ <u>too</u> heavy for younger students to carry, so older students helped them. In the end we raised ⑤ <u>such</u> much money that we bought a new bookshelf.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 5,
+   "why": "much 앞에는 such를 쓰지 않으므로 ⑤는 so much money that으로 고쳐야 한다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은? My uncle runs a small bakery. He gets up at four ① <u>in order to</u> bake fresh bread. The smell is ② <u>so</u> good that people line up before the shop opens. He writes the price on every loaf ③ <u>so that</u> customers can choose easily. Last winter it was ④ <u>such</u> a cold morning that the dough would not rise, so he warmed the room ⑤ <u>so as</u> speed up the process.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 5,
+   "why": "so as 뒤에는 to부정사가 와야 하므로 ⑤는 so as to speed up으로 고쳐야 한다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은? Our class planted flowers in the schoolyard. We chose small plants ① <u>so that</u> everyone could carry them. The soil was ② <u>so</u> dry that we had to water it twice. Mr. Kim brought extra gloves ③ <u>in order to</u> protect our hands. It was ④ <u>so</u> a sunny day that some students got sunburned. Still, the garden looked ⑤ <u>so</u> beautiful that the principal took pictures.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 4,
+   "why": "「a + 형용사 + 명사」 앞이므로 ④는 such a sunny day that으로 고쳐야 한다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은? The city built a new bike path along the river. Engineers made it wide ① <u>so that</u> two bikes could pass at once. They added lights ② <u>so as to</u> keep riders safe at night. On weekends there are ③ <u>such</u> many riders that the path feels crowded. Some sections are ④ <u>too</u> steep for beginners to ride comfortably. The city plans to fix them ⑤ <u>in order to</u> attract more visitors.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "many 앞에는 such를 쓰지 않으므로 ③은 so many riders that으로 고쳐야 한다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 밑줄 친 부분 중 어법상 틀린 것은? A: Why are you carrying two bottles of water? B: The trail is ① <u>so</u> long that I get thirsty easily. I always bring extra ② <u>so as</u> stay safe. A: Good idea. Last summer it was ③ <u>such</u> a hot day that I almost fainted. B: Right. Let's start early ④ <u>so that</u> we can finish before noon. A: And let's walk slowly ⑤ <u>in order not to</u> get tired too soon.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 2,
+   "why": "so as 뒤에는 to부정사가 와야 하므로 ②는 so as to stay safe로 고쳐야 한다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 옳은 것은? The old theater was ① <u>such</u> crowded that people stood in the aisles. The manager opened the balcony ② <u>so as</u> everyone could sit down. The play was ③ <u>so</u> moving that the audience cried. The actors spoke loudly ④ <u>in order that</u> reach the back rows. It was ⑤ <u>so</u> a special night that the local paper wrote about it.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "③은 「so + 형용사 + that」으로 바르다. ①은 so crowded, ②는 so that, ④는 in order to reach, ⑤는 such a special night으로 고쳐야 한다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 so ~ that을 사용하여 같은 뜻의 문장으로 바꿔 쓰시오. (문장 전체를 쓸 것) The leather bag was too expensive for me to buy.",
+   "answer": "The leather bag was so expensive that I couldn't buy it.",
+   "alt": [
+    "The leather bag was so expensive that I could not buy it.",
+    "The leather bag was so expensive that I couldn't buy it"
+   ],
+   "why": "「too + 형용사 + for A + to부정사」는 「so + 형용사 + that + A + couldn't + 동사원형」으로 바꾸며, 이때 생략되었던 목적어 it을 넣어야 한다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 so ~ that을 사용하여 같은 뜻의 문장으로 바꿔 쓰시오. (문장 전체를 쓸 것) The rope was strong enough to hold three people.",
+   "answer": "The rope was so strong that it could hold three people.",
+   "alt": [
+    "The rope was so strong that it could hold three people"
+   ],
+   "why": "「형용사 + enough + to부정사」는 「so + 형용사 + that + 주어 + could + 동사원형」으로 바꿔 쓴다. 주절이 과거이므로 could를 쓴다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 so that을 사용하여 같은 뜻의 문장으로 바꿔 쓰시오. (문장 전체를 쓸 것) She left home early in order to avoid the morning traffic.",
+   "answer": "She left home early so that she could avoid the morning traffic.",
+   "alt": [
+    "She left home early so that she could avoid the morning traffic"
+   ],
+   "why": "「in order to + 동사원형」은 「so that + 주어 + could + 동사원형」으로 바꿔 쓴다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 in order to를 사용하여 같은 뜻의 문장으로 바꿔 쓰시오. (문장 전체를 쓸 것) They saved money for years so that they could buy a small house.",
+   "answer": "They saved money for years in order to buy a small house.",
+   "alt": [
+    "They saved money for years in order to buy a small house"
+   ],
+   "why": "주절과 so that절의 주어가 같으므로 「in order to + 동사원형」으로 줄여 쓸 수 있다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고치시오. The workshop was <u>such</u> useful that we asked the speaker for a second session.",
+   "answer": "so",
+   "alt": [],
+   "why": "형용사 useful만 뒤따르므로 such를 so로 고쳐 「so + 형용사 + that」을 만든다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고치시오. There was <u>so</u> heavy snowfall that the trains stopped running.",
+   "answer": "such",
+   "alt": [],
+   "why": "「형용사 + 명사(snowfall)」 앞이므로 so를 such로 고친다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고치시오. On yesterday's tour the guide spoke slowly so that the tourists <u>can</u> understand him.",
+   "answer": "could",
+   "alt": [],
+   "why": "주절이 과거(spoke)이므로 so that절의 조동사도 could로 시제를 일치시킨다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 세 단어로 고치시오. He covered the young plants with plastic <u>in order to not</u> lose them to the frost.",
+   "answer": "in order not to",
+   "alt": [],
+   "why": "‘~하지 않기 위해서’는 not을 to 앞에 두어 in order not to로 쓴다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 두 단어로 고치시오. The magazine printed the map in color <u>so that to</u> readers could find the route easily.",
+   "answer": "so that",
+   "alt": [],
+   "why": "뒤에 「주어 + could + 동사원형」의 절이 오므로 to를 빼고 so that만 써야 한다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. It was ____ a persuasive presentation that the committee approved the plan on the spot.",
+   "answer": "such",
+   "alt": [],
+   "why": "「a + 형용사 + 명사」 앞이므로 such를 쓴다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. The town installed speed cameras ____ that drivers would slow down near the school.",
+   "answer": "so",
+   "alt": [],
+   "why": "목적을 나타내는 「so that + 주어 + would + 동사원형」의 so가 들어간다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 세 단어를 쓰시오. (so로 시작할 것) The chef tasted the sauce twice ____ make sure it was not too salty.",
+   "answer": "so as to",
+   "alt": [],
+   "why": "‘~하기 위해서’를 뜻하는 「so as to + 동사원형」이 알맞다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 두 단어를 쓰시오. It was such an unexpected result that the researchers repeated the experiment. = The result was ____ ____ that the researchers repeated the experiment.",
+   "answer": "so unexpected",
+   "alt": [],
+   "why": "명사를 주어로 옮기면 「such + a(n) + 형용사 + 명사」는 「so + 형용사」가 된다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 세 단어를 쓰시오. The novel was so long that I gave up after a hundred pages. = It was ____ ____ ____ novel that I gave up after a hundred pages.",
+   "answer": "such a long",
+   "alt": [],
+   "why": "「so + 형용사」를 명사구로 옮기면 「such + a(n) + 형용사 + 명사」가 된다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 too ~ to를 사용하여 같은 뜻의 문장으로 바꿔 쓰시오. (문장 전체를 쓸 것) The ice was so thin that we couldn't skate on it.",
+   "answer": "The ice was too thin for us to skate on.",
+   "alt": [
+    "The ice was too thin to skate on.",
+    "The ice was too thin for us to skate on"
+   ],
+   "why": "「so + 형용사 + that + 주어 + couldn't」는 「too + 형용사 + for A + to부정사」로 바꾸며, 전치사 on은 반드시 남겨야 한다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 enough를 사용하여 같은 뜻의 문장으로 바꿔 쓰시오. (문장 전체를 쓸 것) The hall was so large that it could hold fifty people.",
+   "answer": "The hall was large enough to hold fifty people.",
+   "alt": [
+    "The hall was large enough to hold fifty people"
+   ],
+   "why": "「so + 형용사 + that + 주어 + could」는 「형용사 + enough + to부정사」로 바꿔 쓴다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 두 단어를 쓰시오. They packed the glasses in thick paper ____ ____ they would not break during delivery.",
+   "answer": "so that",
+   "alt": [],
+   "why": "‘~하지 않도록’이라는 목적을 나타내는 절이므로 so that을 쓴다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것을 고르시오. The instructions were (so, such) poorly written that nobody could assemble the shelf.",
+   "answer": "so",
+   "alt": [],
+   "why": "부사 poorly 앞이므로 「so + 부사 + that」의 so를 쓴다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것을 고르시오. There was (so, such) fierce competition that only two teams advanced to the final.",
+   "answer": "such",
+   "alt": [],
+   "why": "「형용사 + 셀 수 없는 명사(competition)」 앞이므로 such를 쓴다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 두 단어로 고치시오. It was <u>so an</u> impressive speech that the whole crowd stood up.",
+   "answer": "such an",
+   "alt": [],
+   "why": "「a(n) + 형용사 + 명사」 앞에는 so가 아니라 such를 쓰므로 such an으로 고친다.",
+   "no": 200
+  }
+ ]
+}

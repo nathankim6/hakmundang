@@ -1,0 +1,2668 @@
+{
+ "id": "m3-16",
+ "grade": "중3",
+ "name": "주의할 수동태",
+ "points": [
+  "조동사+be p.p.",
+  "4형식·5형식 수동태",
+  "by 이외 전치사·동사구 수동태"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The report must ____ by tomorrow morning.",
+   "choices": [
+    "finish",
+    "be finished",
+    "finishes",
+    "being finished",
+    "to finish"
+   ],
+   "answer": 2,
+   "why": "조동사가 있는 수동태는 「조동사+be+p.p.」이므로 must be finished가 맞다. finish/finishes는 능동형이고, being finished나 to finish는 조동사 뒤에 올 수 없다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "These books can ____ for two weeks.",
+   "choices": [
+    "borrow",
+    "borrowed",
+    "to borrow",
+    "be borrowed",
+    "be borrowing"
+   ],
+   "answer": 4,
+   "why": "책은 빌려지는 대상이므로 수동태가 필요하고, 조동사 can 뒤에는 동사원형 be가 와야 하므로 can be borrowed이다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A new library will ____ in our town next year.",
+   "choices": [
+    "build",
+    "building",
+    "be built",
+    "be building",
+    "builds"
+   ],
+   "answer": 3,
+   "why": "도서관은 지어지는 대상이므로 will be built(조동사+be+p.p.)가 맞다. be building은 능동 진행의 뜻이 된다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The flowers should ____ every morning.",
+   "choices": [
+    "water",
+    "be watered",
+    "watered",
+    "be watering",
+    "to water"
+   ],
+   "answer": 2,
+   "why": "꽃은 물을 주는 대상이므로 should be watered가 맞다. should 뒤에는 반드시 동사원형 be가 온다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "This work can ____ in an hour.",
+   "choices": [
+    "do",
+    "does",
+    "done",
+    "be doing",
+    "be done"
+   ],
+   "answer": 5,
+   "why": "일은 행해지는 대상이므로 can be done이다. can 뒤에 done만 쓰면 be가 빠져 수동태가 완성되지 않는다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The rules must ____ by every member of the club.",
+   "choices": [
+    "follow",
+    "be followed",
+    "following",
+    "be following",
+    "to follow"
+   ],
+   "answer": 2,
+   "why": "규칙은 지켜지는 대상이고 by가 행위자를 나타내므로 must be followed가 맞다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Your bag can ____ at the front desk.",
+   "choices": [
+    "leave",
+    "leaves",
+    "be left",
+    "be leaving",
+    "left"
+   ],
+   "answer": 3,
+   "why": "가방은 맡겨지는 대상이므로 can be left이다. 조동사 뒤에 left만 쓰면 be가 빠진 잘못된 형태다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The invitation should ____ today.",
+   "choices": [
+    "send",
+    "sent",
+    "sending",
+    "be sent",
+    "be sending"
+   ],
+   "answer": 4,
+   "why": "초대장은 보내지는 대상이므로 should be sent이다. sent만 쓰면 be가 없어 수동태가 되지 않는다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Can this box ____ by one person?",
+   "choices": [
+    "carry",
+    "carried",
+    "be carried",
+    "be carrying",
+    "to carry"
+   ],
+   "answer": 3,
+   "why": "수동태 의문문은 「조동사+주어+be+p.p.?」 순서이므로 Can this box be carried ...?가 맞다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The old bridge will not ____ this year.",
+   "choices": [
+    "repair",
+    "repaired",
+    "be repaired",
+    "be repairing",
+    "repairing"
+   ],
+   "answer": 3,
+   "why": "부정형 수동태는 「조동사+not+be+p.p.」이므로 will not be repaired이다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The heavy door ____ be opened by a child. (아이의 힘으로는 열릴 수 없다)",
+   "choices": [
+    "can",
+    "can't",
+    "must",
+    "should",
+    "will"
+   ],
+   "answer": 2,
+   "why": "우리말이 불가능을 뜻하므로 can't be opened가 맞다. must/should be opened는 의무의 뜻이 되어 문맥과 맞지 않는다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I ____ a nice watch by my uncle. (나는 삼촌에게서 멋진 시계를 받았다.)",
+   "choices": [
+    "gave",
+    "was gave",
+    "was given",
+    "was giving",
+    "give"
+   ],
+   "answer": 3,
+   "why": "4형식 문장의 간접목적어 I가 주어가 된 수동태이므로 was given이다. was gave는 과거형을 겹쳐 쓴 잘못된 형태다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "An old story was told ____ us by Grandpa.",
+   "choices": [
+    "to",
+    "for",
+    "of",
+    "with",
+    "at"
+   ],
+   "answer": 1,
+   "why": "tell은 직접목적어를 주어로 한 수동태에서 간접목적어 앞에 to를 쓴다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A birthday cake was made ____ me by my sister.",
+   "choices": [
+    "to",
+    "at",
+    "for",
+    "of",
+    "in"
+   ],
+   "answer": 3,
+   "why": "make는 직접목적어를 주어로 한 수동태에서 간접목적어 앞에 for를 쓴다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "This photo was shown ____ the whole class.",
+   "choices": [
+    "for",
+    "to",
+    "of",
+    "with",
+    "by"
+   ],
+   "answer": 2,
+   "why": "show는 4형식 수동태에서 간접목적어 앞에 to를 쓴다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Dinner was cooked ____ us by Dad.",
+   "choices": [
+    "to",
+    "of",
+    "for",
+    "at",
+    "with"
+   ],
+   "answer": 3,
+   "why": "cook은 make, buy와 같이 간접목적어 앞에 for를 쓰는 동사다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "English is taught ____ us by Ms. Kim.",
+   "choices": [
+    "for",
+    "of",
+    "to",
+    "with",
+    "in"
+   ],
+   "answer": 3,
+   "why": "teach는 4형식 수동태에서 간접목적어 앞에 to를 쓴다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The boys were made ____ the classroom after school.",
+   "choices": [
+    "clean",
+    "cleaned",
+    "cleaning",
+    "to clean",
+    "cleans"
+   ],
+   "answer": 4,
+   "why": "사역동사 make가 수동태가 되면 생략되었던 to가 되살아나 「be made to+동사원형」이 된다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She was made ____ for two hours at the airport.",
+   "choices": [
+    "wait",
+    "waited",
+    "to wait",
+    "waiting",
+    "waits"
+   ],
+   "answer": 3,
+   "why": "make의 수동태에서는 목적격보어인 원형부정사가 to부정사로 바뀌므로 was made to wait이다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The baby was ____ Mina by her parents.",
+   "choices": [
+    "name",
+    "named",
+    "naming",
+    "to name",
+    "names"
+   ],
+   "answer": 2,
+   "why": "5형식 name A B의 수동태는 「be named+보어」 형태이므로 was named Mina이다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The room was kept ____ by the children all week.",
+   "choices": [
+    "clean",
+    "cleanly",
+    "cleaned",
+    "to clean",
+    "cleaning"
+   ],
+   "answer": 1,
+   "why": "keep the room clean의 수동태로, 목적격보어인 형용사 clean은 그대로 남는다. 부사 cleanly는 보어가 될 수 없다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The window was found ____ this morning. (깨진 채로)",
+   "choices": [
+    "break",
+    "broke",
+    "broken",
+    "breaking",
+    "to break"
+   ],
+   "answer": 3,
+   "why": "find the window broken의 수동태로, 보어로 쓰인 과거분사 broken이 그대로 남는다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I am interested ____ playing the guitar.",
+   "choices": [
+    "at",
+    "in",
+    "on",
+    "of",
+    "for"
+   ],
+   "answer": 2,
+   "why": "be interested in은 by 대신 in을 쓰는 수동태 표현이다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The box was filled ____ old letters.",
+   "choices": [
+    "of",
+    "in",
+    "with",
+    "for",
+    "to"
+   ],
+   "answer": 3,
+   "why": "be filled with는 '~로 가득 차다'라는 뜻으로 by 대신 with를 쓴다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She was surprised ____ the sudden noise.",
+   "choices": [
+    "at",
+    "for",
+    "in",
+    "of",
+    "to"
+   ],
+   "answer": 1,
+   "why": "be surprised at은 '~에 놀라다'라는 뜻으로 감정의 원인 앞에 at을 쓴다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "We were pleased ____ his kind answer.",
+   "choices": [
+    "at",
+    "of",
+    "with",
+    "for",
+    "in"
+   ],
+   "answer": 3,
+   "why": "be pleased with는 '~에 기뻐하다'라는 뜻으로 with를 쓴다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He is known ____ everyone in this village. (마을 사람 모두에게 알려져 있다)",
+   "choices": [
+    "for",
+    "as",
+    "to",
+    "in",
+    "of"
+   ],
+   "answer": 3,
+   "why": "'~에게 알려져 있다'는 be known to이다. be known for는 '~로 유명하다', be known as는 '~로서 알려지다'라는 뜻이다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "This cheese is made ____ goat milk. (우유가 성질이 변해 치즈가 되었다)",
+   "choices": [
+    "of",
+    "from",
+    "with",
+    "in",
+    "by"
+   ],
+   "answer": 2,
+   "why": "재료의 성질이 완전히 변하면 be made from을 쓴다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "That chair is made ____ wood. (재료가 그대로 보인다)",
+   "choices": [
+    "from",
+    "of",
+    "in",
+    "by",
+    "for"
+   ],
+   "answer": 2,
+   "why": "재료의 성질이 그대로 남아 있으면 be made of를 쓴다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I am worried ____ my little brother.",
+   "choices": [
+    "for",
+    "of",
+    "about",
+    "at",
+    "in"
+   ],
+   "answer": 3,
+   "why": "be worried about은 '~에 대해 걱정하다'라는 뜻으로 about을 쓴다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My father is satisfied ____ his new car.",
+   "choices": [
+    "of",
+    "with",
+    "at",
+    "for",
+    "to"
+   ],
+   "answer": 2,
+   "why": "be satisfied with는 '~에 만족하다'라는 뜻으로 with를 쓴다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The morning train was crowded ____ people.",
+   "choices": [
+    "of",
+    "in",
+    "with",
+    "for",
+    "at"
+   ],
+   "answer": 3,
+   "why": "be crowded with는 '~로 붐비다'라는 뜻으로 with를 쓴다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I am tired ____ doing the same thing every day. (같은 일에 싫증이 난다)",
+   "choices": [
+    "of",
+    "at",
+    "in",
+    "for",
+    "to"
+   ],
+   "answer": 1,
+   "why": "be tired of는 '~에 싫증 나다'라는 뜻이다. be tired from은 '~ 때문에 지치다'라는 뜻이므로 문맥과 다르다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The singer is known ____ her beautiful voice. (아름다운 목소리로 유명하다)",
+   "choices": [
+    "to",
+    "as",
+    "for",
+    "in",
+    "with"
+   ],
+   "answer": 3,
+   "why": "이유나 특징을 나타내어 '~로 유명하다'라고 할 때는 be known for를 쓴다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The ground was covered ____ fallen leaves.",
+   "choices": [
+    "of",
+    "with",
+    "for",
+    "to",
+    "at"
+   ],
+   "answer": 2,
+   "why": "be covered with는 '~로 덮이다'라는 뜻으로 by 대신 with를 쓴다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My sister is scared ____ big dogs.",
+   "choices": [
+    "at",
+    "of",
+    "in",
+    "for",
+    "to"
+   ],
+   "answer": 2,
+   "why": "be scared of는 '~을 무서워하다'라는 뜻으로 of를 쓴다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The sick cat is taken care ____ by Emma.",
+   "choices": [
+    "of",
+    "for",
+    "with",
+    "at",
+    "to"
+   ],
+   "answer": 1,
+   "why": "동사구 take care of가 수동태가 되어도 of는 사라지지 않고 그대로 남는다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He was laughed ____ by his friends.",
+   "choices": [
+    "to",
+    "of",
+    "at",
+    "in",
+    "for"
+   ],
+   "answer": 3,
+   "why": "laugh at의 수동태는 be laughed at으로, 전치사 at을 반드시 함께 써야 한다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The soccer game was put ____ because of the heavy rain. (연기되었다)",
+   "choices": [
+    "on",
+    "off",
+    "up",
+    "in",
+    "at"
+   ],
+   "answer": 2,
+   "why": "put off(연기하다)의 수동태는 be put off이며, off를 빠뜨리면 뜻이 달라진다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My old bike was run ____ by a truck.",
+   "choices": [
+    "over",
+    "in",
+    "for",
+    "up",
+    "off"
+   ],
+   "answer": 1,
+   "why": "run over(치다)의 수동태는 be run over이므로 over가 그대로 남는다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Mr. Lee is looked up ____ by his students.",
+   "choices": [
+    "at",
+    "for",
+    "to",
+    "on",
+    "of"
+   ],
+   "answer": 3,
+   "why": "look up to(존경하다)는 세 단어가 한 덩어리이므로 수동태에서도 be looked up to로 쓴다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (조동사가 있는 수동태)",
+   "choices": [
+    "The room must cleaned every day.",
+    "The room must be cleans every day.",
+    "The room must be cleaned every day.",
+    "The room must being cleaned every day.",
+    "The room must to be cleaned every day."
+   ],
+   "answer": 3,
+   "why": "조동사가 있는 수동태는 「조동사+be+p.p.」이다. be가 빠지거나(①), be 뒤에 동사원형이 아닌 형태가 오면(②④⑤) 모두 틀린다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은? (조동사가 있는 수동태)",
+   "choices": [
+    "The song will be sung by Mina.",
+    "The desk can be moved easily.",
+    "The work must be done today.",
+    "The homework should finished by six.",
+    "The door may be locked at night."
+   ],
+   "answer": 4,
+   "why": "④는 should 뒤에 be가 빠져 있다. should be finished로 고쳐야 한다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그 편지는 내일 보내질 것이다.",
+   "choices": [
+    "The letter will send tomorrow.",
+    "The letter will be sent tomorrow.",
+    "The letter will sent tomorrow.",
+    "The letter will be send tomorrow.",
+    "The letter is will sent tomorrow."
+   ],
+   "answer": 2,
+   "why": "미래 수동태는 will be p.p.이다. be가 없거나(①③) be 뒤에 동사원형을 쓰면(④) 틀린다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말은?  (1) The bottle was filled ____ water.  (2) She is satisfied ____ her new score.",
+   "choices": [
+    "of",
+    "in",
+    "with",
+    "at",
+    "to"
+   ],
+   "answer": 3,
+   "why": "be filled with, be satisfied with 모두 by 대신 with를 쓰는 수동태 표현이다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말은?  (1) This song is known ____ many people.  (2) The first prize was given ____ the winner.",
+   "choices": [
+    "for",
+    "of",
+    "to",
+    "at",
+    "with"
+   ],
+   "answer": 3,
+   "why": "be known to는 '~에게 알려져 있다'이고, give의 4형식 수동태에서도 간접목적어 앞에 to를 쓴다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ㄱ. The car can be fixed today.  ㄴ. The letter must sent now.  ㄷ. He was made to go home early.  ㄹ. I am interested at music.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ㄱ과 ㄷ이 옳다. ㄴ은 must be sent, ㄹ은 be interested in으로 고쳐야 한다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은? (by 이외의 전치사를 쓰는 수동태)",
+   "choices": [
+    "I am interested in cooking.",
+    "She was surprised at the news.",
+    "The box is filled of books.",
+    "He is known to everyone here.",
+    "We were pleased with the show."
+   ],
+   "answer": 3,
+   "why": "③은 be filled with가 맞다. of는 쓰지 않는다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것을 골라 쓰시오.  The window will (break, be broken) by the strong wind.",
+   "answer": "be broken",
+   "alt": [],
+   "why": "창문은 부서지는 대상이므로 미래 수동태 will be broken이 맞다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것을 골라 쓰시오.  This song can (sing, be sung) by young children.",
+   "answer": "be sung",
+   "alt": [],
+   "why": "노래는 불리는 대상이므로 「조동사+be+p.p.」인 can be sung을 쓴다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것을 골라 쓰시오.  The dishes must (wash, be washed) right after dinner.",
+   "answer": "be washed",
+   "alt": [],
+   "why": "접시는 씻기는 대상이므로 must be washed가 맞다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것을 골라 쓰시오.  Tom was made (do, to do) his homework again.",
+   "answer": "to do",
+   "alt": [],
+   "why": "사역동사 make의 수동태에서는 원형부정사가 to부정사로 바뀌므로 was made to do이다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  The classroom should <u>cleaned</u> before six.",
+   "answer": "be cleaned",
+   "alt": [],
+   "why": "조동사 뒤의 수동태는 「조동사+be+p.p.」이므로 should be cleaned로 고친다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  This table can <u>be move</u> by two boys.",
+   "answer": "be moved",
+   "alt": [],
+   "why": "be 뒤에는 과거분사가 와야 하므로 be moved로 고친다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  My little sister was <u>gave</u> a doll by our aunt.",
+   "answer": "given",
+   "alt": [],
+   "why": "4형식 수동태는 be+p.p. 형태이므로 was given이 되어야 한다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 전치사를 쓰시오.  I am interested ____ sea animals.",
+   "answer": "in",
+   "alt": [],
+   "why": "be interested in은 by 대신 in을 쓰는 대표적인 수동태 표현이다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 전치사를 쓰시오.  The glass was filled ____ orange juice.",
+   "answer": "with",
+   "alt": [],
+   "why": "be filled with는 '~로 가득 차다'라는 뜻이다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 전치사를 쓰시오.  She was surprised ____ the loud sound.",
+   "answer": "at",
+   "alt": [],
+   "why": "be surprised at은 '~에 놀라다'라는 뜻으로 놀란 원인 앞에 at을 쓴다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 전치사를 쓰시오.  This ring is made ____ gold. (재료가 그대로 보인다)",
+   "answer": "of",
+   "alt": [],
+   "why": "재료의 성질이 그대로 남아 있으므로 be made of를 쓴다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 전치사를 쓰시오.  Wine is made ____ grapes. (포도가 성질이 변해 만들어진다)",
+   "answer": "from",
+   "alt": [],
+   "why": "재료의 성질이 완전히 변하면 be made from을 쓴다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 전치사를 쓰시오.  The actor is known ____ all the students here. (모두에게 알려져 있다)",
+   "answer": "to",
+   "alt": [],
+   "why": "'~에게 알려져 있다'는 be known to이다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 전치사를 쓰시오.  The puppy is taken care ____ by my grandma.",
+   "answer": "of",
+   "alt": [],
+   "why": "동사구 take care of의 수동태이므로 전치사 of를 그대로 써 준다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 전치사를 쓰시오.  Don't worry. You will not be laughed ____ .",
+   "answer": "at",
+   "alt": [],
+   "why": "laugh at의 수동태는 be laughed at이므로 at을 빠뜨리면 안 된다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (한 단어)  My bike was run <u>on</u> by a bus.",
+   "answer": "over",
+   "alt": [],
+   "why": "run over(치다)의 수동태는 be run over이다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (한 단어)  The class trip was put <u>on</u> until next week. (연기되었다)",
+   "answer": "off",
+   "alt": [],
+   "why": "put off(연기하다)의 수동태는 be put off이다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 Mina를 주어로 하는 수동태 문장으로 바꿔 쓰시오.  Mr. Kim gave Mina a book.",
+   "answer": "Mina was given a book by Mr. Kim.",
+   "alt": [
+    "Mina was given a book by Mr Kim."
+   ],
+   "why": "4형식의 간접목적어를 주어로 하면 「간접목적어+be+p.p.+직접목적어+by+행위자」가 된다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 a cake를 주어로 하는 수동태 문장으로 바꿔 쓰시오.  My mom made me a cake.",
+   "answer": "A cake was made for me by my mom.",
+   "alt": [],
+   "why": "make는 직접목적어를 주어로 할 때 간접목적어 앞에 for를 쓴다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 the work를 주어로 하는 수동태 문장으로 바꿔 쓰시오. (by us는 생략할 것)  We must finish the work today.",
+   "answer": "The work must be finished today.",
+   "alt": [],
+   "why": "조동사가 있는 문장의 수동태는 「조동사+be+p.p.」이므로 must be finished가 된다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "All the tickets ____ online, so you don't have to visit the box office.",
+   "choices": [
+    "can buy",
+    "can be buy",
+    "can be bought",
+    "can bought",
+    "can be buying"
+   ],
+   "answer": 3,
+   "why": "표는 구입되는 대상이므로 「조동사+be+p.p.」인 can be bought가 맞다. can 뒤에는 반드시 동사원형 be가 온다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Several new rules ____ by the school next semester.",
+   "choices": [
+    "will introduce",
+    "will be introduced",
+    "will introducing",
+    "will be introducing",
+    "are introduce"
+   ],
+   "answer": 2,
+   "why": "규칙은 도입되는 대상이므로 미래 수동태 will be introduced가 맞다. will be introducing은 능동 진행의 뜻이다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "This machine ____ by children because it is very dangerous.",
+   "choices": [
+    "must be used",
+    "should be used",
+    "must not be used",
+    "doesn't use",
+    "is not using"
+   ],
+   "answer": 3,
+   "why": "위험하다는 이유가 있으므로 '사용되어서는 안 된다'는 금지의 수동태 must not be used가 알맞다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The essays ____ to the teacher by Friday afternoon.",
+   "choices": [
+    "should hand in",
+    "should be handed in",
+    "should handed in",
+    "should be hand in",
+    "should being handed in"
+   ],
+   "answer": 2,
+   "why": "동사구 hand in의 수동태는 be handed in이고, 조동사 뒤에는 be가 와야 하므로 should be handed in이다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The winner ____ a gold medal by the mayor, and everyone cheered.",
+   "choices": [
+    "gave",
+    "was given",
+    "was given to",
+    "gave to",
+    "were given"
+   ],
+   "answer": 2,
+   "why": "4형식의 간접목적어 the winner가 주어가 된 수동태이므로 was given 뒤에 직접목적어 a gold medal이 그대로 남는다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A warm sweater was knitted ____ my brother by our grandmother.",
+   "choices": [
+    "to",
+    "for",
+    "of",
+    "with",
+    "at"
+   ],
+   "answer": 2,
+   "why": "knit은 make, buy, cook처럼 직접목적어를 주어로 한 수동태에서 간접목적어 앞에 for를 쓴다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The good news was told ____ all of us at the same time.",
+   "choices": [
+    "for",
+    "to",
+    "of",
+    "with",
+    "at"
+   ],
+   "answer": 2,
+   "why": "tell은 give, send, show, teach처럼 간접목적어 앞에 to를 쓰는 동사다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The players were told ____ their best until the last whistle.",
+   "choices": [
+    "do",
+    "did",
+    "to do",
+    "doing",
+    "done"
+   ],
+   "answer": 3,
+   "why": "tell+목적어+to부정사의 수동태이므로 were told 뒤에 to do가 그대로 남는다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The thief was seen ____ out of the back door by a neighbor.",
+   "choices": [
+    "run",
+    "to run",
+    "ran",
+    "runs",
+    "be run"
+   ],
+   "answer": 2,
+   "why": "지각동사 see가 수동태가 되면 생략되었던 to가 되살아나 was seen to run이 된다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The students were made ____ the test again because of the noise.",
+   "choices": [
+    "take",
+    "took",
+    "to take",
+    "taking",
+    "taken"
+   ],
+   "answer": 3,
+   "why": "사역동사 make의 수동태는 「be made to+동사원형」이다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The old house was left ____ for many years, so the roof finally fell in.",
+   "choices": [
+    "empty",
+    "emptily",
+    "to empty",
+    "emptying",
+    "been empty"
+   ],
+   "answer": 1,
+   "why": "leave+목적어+형용사의 수동태로, 목적격보어인 형용사 empty가 그대로 남는다. 부사 emptily는 보어가 될 수 없다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The windows were kept ____ during the whole concert. (닫힌 채로)",
+   "choices": [
+    "closed",
+    "close",
+    "to close",
+    "closing",
+    "closes"
+   ],
+   "answer": 1,
+   "why": "keep+목적어+과거분사의 수동태로 보어 closed가 그대로 남는다. close는 '가까운'이라는 뜻의 형용사여서 문맥에 맞지 않는다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The doctor was pleased ____ how quickly the patient recovered.",
+   "choices": [
+    "at",
+    "of",
+    "with",
+    "for",
+    "to"
+   ],
+   "answer": 3,
+   "why": "be pleased with는 '~에 기뻐하다, 만족하다'라는 뜻으로 by 대신 with를 쓴다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Everyone in the town was shocked ____ the terrible accident.",
+   "choices": [
+    "at",
+    "of",
+    "in",
+    "for",
+    "to"
+   ],
+   "answer": 1,
+   "why": "놀람이나 충격의 원인 앞에는 at을 써서 be shocked at으로 표현한다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The old castle is known ____ its beautiful rose garden.",
+   "choices": [
+    "to",
+    "as",
+    "for",
+    "in",
+    "with"
+   ],
+   "answer": 3,
+   "why": "유명한 이유나 특징을 나타낼 때는 be known for를 쓴다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Ms. Han is known ____ the best pianist in this city.",
+   "choices": [
+    "to",
+    "for",
+    "as",
+    "in",
+    "of"
+   ],
+   "answer": 3,
+   "why": "자격이나 신분을 나타내어 '~로서 알려지다'라고 할 때는 be known as를 쓴다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The valley was covered ____ thick fog early in the morning.",
+   "choices": [
+    "of",
+    "with",
+    "for",
+    "at",
+    "to"
+   ],
+   "answer": 2,
+   "why": "be covered with는 '~로 덮이다'라는 뜻으로 by 대신 with를 쓴다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The stadium was crowded ____ excited fans an hour before the match.",
+   "choices": [
+    "of",
+    "in",
+    "with",
+    "for",
+    "at"
+   ],
+   "answer": 3,
+   "why": "be crowded with는 '~로 붐비다'라는 뜻이다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것은?  Paper is made ____ wood, and this box is made ____ paper.",
+   "choices": [
+    "from - of",
+    "of - from",
+    "from - from",
+    "of - of",
+    "with - of"
+   ],
+   "answer": 1,
+   "why": "나무가 성질이 변해 종이가 되므로 made from, 종이의 성질이 그대로 남은 상자는 made of이다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것은?  He is known ____ his honesty. / This poem is known ____ every Korean student.",
+   "choices": [
+    "for - to",
+    "to - for",
+    "as - to",
+    "for - as",
+    "of - to"
+   ],
+   "answer": 1,
+   "why": "특징이나 이유는 be known for, 알고 있는 사람은 be known to로 나타낸다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The homeless dogs are looked ____ by volunteers every weekend. (돌봐진다)",
+   "choices": [
+    "after",
+    "for",
+    "at",
+    "up",
+    "into"
+   ],
+   "answer": 1,
+   "why": "look after(돌보다)의 수동태는 be looked after이다. look for는 '찾다'라는 뜻이므로 문맥에 맞지 않는다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Our proposal was turned ____ by the committee, so we wrote a new one.",
+   "choices": [
+    "on",
+    "off",
+    "down",
+    "up",
+    "into"
+   ],
+   "answer": 3,
+   "why": "turn down(거절하다)의 수동태는 be turned down이며, 전치사나 부사는 그대로 남는다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The concert was called ____ because the singer suddenly got sick.",
+   "choices": [
+    "on",
+    "off",
+    "up",
+    "for",
+    "in"
+   ],
+   "answer": 2,
+   "why": "call off(취소하다)의 수동태는 be called off이다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "He was brought ____ by his grandparents in a small fishing village.",
+   "choices": [
+    "up",
+    "on",
+    "in",
+    "out",
+    "over"
+   ],
+   "answer": 1,
+   "why": "bring up(기르다)의 수동태는 be brought up이다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "This serious problem must be dealt ____ right away.",
+   "choices": [
+    "with",
+    "on",
+    "at",
+    "for",
+    "to"
+   ],
+   "answer": 1,
+   "why": "deal with(다루다, 처리하다)의 수동태는 be dealt with이므로 with를 반드시 남겨야 한다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (여러 조동사가 쓰인 수동태)",
+   "choices": [
+    "The letter can be sended today.",
+    "The room will be paint tomorrow.",
+    "The garden must be watered every evening.",
+    "The wall should painting this week.",
+    "The window may broken by the ball."
+   ],
+   "answer": 3,
+   "why": "「조동사+be+p.p.」를 지킨 것은 ③뿐이다. ①은 sent, ②는 painted, ④는 be painted, ⑤는 be broken이 되어야 한다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은? (4형식 문장의 수동태)",
+   "choices": [
+    "Mina was given a scholarship by the school.",
+    "A letter was sent to me by my pen pal.",
+    "A new bag was bought for my sister by Dad.",
+    "The recipe was shown for us by the chef.",
+    "Some cookies were made for the children by Mrs. Kim."
+   ],
+   "answer": 4,
+   "why": "show는 간접목적어 앞에 to를 쓰므로 was shown to us가 맞다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은? (5형식 문장의 수동태)",
+   "choices": [
+    "The dog was named Coco by the twins.",
+    "He was elected captain of the team.",
+    "The soup was kept warm on the stove.",
+    "The children were made cleaned the yard.",
+    "She was seen to enter the library."
+   ],
+   "answer": 4,
+   "why": "사역동사 make의 수동태는 「be made to+동사원형」이므로 were made to clean이 되어야 한다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은? (감정·상태를 나타내는 수동태의 전치사)",
+   "choices": [
+    "The mountain was covered with snow.",
+    "I was disappointed at the result.",
+    "The bus was crowded of tourists.",
+    "He is satisfied with his new job.",
+    "She was scared of the dark room."
+   ],
+   "answer": 3,
+   "why": "be crowded with가 맞다. of는 쓰지 않는다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그 아이들은 자기 방을 청소하게 되었다.",
+   "choices": [
+    "The children were made clean their room.",
+    "The children were made to clean their room.",
+    "The children made to clean their room.",
+    "The children were made cleaning their room.",
+    "The children were make to clean their room."
+   ],
+   "answer": 2,
+   "why": "사역동사 make의 수동태는 「be made to+동사원형」이므로 were made to clean이 맞다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  이 다리는 다음 달에 완공될 것이다.",
+   "choices": [
+    "This bridge will complete next month.",
+    "This bridge will completed next month.",
+    "This bridge will be completed next month.",
+    "This bridge will being completed next month.",
+    "This bridge is will completed next month."
+   ],
+   "answer": 3,
+   "why": "미래 수동태는 will be p.p.이므로 will be completed가 맞다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그녀는 그의 갑작스러운 방문에 놀랐다.",
+   "choices": [
+    "She was surprised of his sudden visit.",
+    "She surprised at his sudden visit.",
+    "She was surprised at his sudden visit.",
+    "She was surprising at his sudden visit.",
+    "She was surprised for his sudden visit."
+   ],
+   "answer": 3,
+   "why": "be surprised at이 알맞다. was surprising은 '놀라게 하는'이라는 능동의 뜻이 된다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?  A: Where is my package?  B: It ____ tomorrow morning, so don't worry.",
+   "choices": [
+    "will deliver",
+    "will be delivered",
+    "will delivered",
+    "is delivering",
+    "will be delivering"
+   ],
+   "answer": 2,
+   "why": "소포는 배달되는 대상이므로 미래 수동태 will be delivered가 알맞다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?  A: Can I use this camera?  B: Sorry, it ____ by anyone except the teacher.",
+   "choices": [
+    "can use",
+    "cannot use",
+    "can be used",
+    "cannot be used",
+    "is not using"
+   ],
+   "answer": 4,
+   "why": "Sorry로 보아 허락되지 않는 상황이므로 부정 수동태 cannot be used가 알맞다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?  A: Why is Kevin smiling all day?  B: He ____ class president yesterday.",
+   "choices": [
+    "elected",
+    "was elected",
+    "was elected to",
+    "was electing",
+    "is elected"
+   ],
+   "answer": 2,
+   "why": "elect+목적어+보어의 수동태이므로 was elected 뒤에 보어 class president가 바로 온다. 어제 일이므로 과거형을 쓴다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말은?  (1) The floor was covered ____ dust.  (2) The hall was crowded ____ tourists.",
+   "choices": [
+    "of",
+    "in",
+    "with",
+    "at",
+    "for"
+   ],
+   "answer": 3,
+   "why": "be covered with와 be crowded with 모두 by 대신 with를 쓰는 표현이다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말은?  (1) The child is taken care ____ by a kind nurse.  (2) I am tired ____ hearing the same excuse.",
+   "choices": [
+    "for",
+    "of",
+    "at",
+    "with",
+    "to"
+   ],
+   "answer": 2,
+   "why": "take care of의 수동태에서 of가 남고, be tired of는 '~에 싫증 나다'라는 뜻이다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ㄱ. The report should be written in English.  ㄴ. He was made to wait outside the office.  ㄷ. The bottle was filled of cold water.  ㄹ. The show was put off until next Sunday.  ㅁ. A new bike was bought to me by my dad.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ, ㄴ, ㄹ이 옳다. ㄷ은 filled with, ㅁ은 bought for me로 고쳐야 한다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분이 어법상 틀린 것은?",
+   "choices": [
+    "This song is known <u>to</u> everyone in Korea.",
+    "The wall was painted <u>by</u> my uncle.",
+    "She was pleased <u>with</u> the birthday gift.",
+    "The desk is made <u>from</u> strong wood.",
+    "The park was crowded <u>with</u> children."
+   ],
+   "answer": 4,
+   "why": "나무의 성질이 그대로 남아 있으므로 be made of를 써야 한다. be made from은 성질이 변하는 경우에 쓴다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The library ____ during the holiday, so we studied at a cafe.",
+   "choices": [
+    "could use",
+    "couldn't use",
+    "could be used",
+    "couldn't be used",
+    "didn't use"
+   ],
+   "answer": 4,
+   "why": "카페에서 공부했다는 결과로 보아 도서관이 이용될 수 없었다는 뜻이므로 couldn't be used가 알맞다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "All the windows in the hall ____ before the storm arrived.",
+   "choices": [
+    "had to close",
+    "had to be closed",
+    "must closed",
+    "had to closing",
+    "were had to close"
+   ],
+   "answer": 2,
+   "why": "창문은 닫히는 대상이고 have to의 과거형 뒤에도 be+p.p.가 오므로 had to be closed가 맞다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A special prize will be given ____ the best team at the end of the contest.",
+   "choices": [
+    "for",
+    "to",
+    "of",
+    "with",
+    "at"
+   ],
+   "answer": 2,
+   "why": "give는 4형식 수동태에서 간접목적어 앞에 to를 쓴다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The little boy was found ____ under the desk during the game.",
+   "choices": [
+    "sleep",
+    "sleeps",
+    "sleeping",
+    "to sleep",
+    "slept"
+   ],
+   "answer": 3,
+   "why": "find+목적어+현재분사의 수동태로, 보어인 현재분사 sleeping이 그대로 남는다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Sam was heard ____ loudly in the shower this morning.",
+   "choices": [
+    "sings",
+    "to singing",
+    "singing",
+    "sang",
+    "be sung"
+   ],
+   "answer": 3,
+   "why": "지각동사 hear의 수동태에서는 진행의 뜻을 살려 현재분사 singing을 쓸 수 있다. sings, sang 같은 동사 형태는 보어가 될 수 없다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Small children should be looked ____ carefully near the swimming pool.",
+   "choices": [
+    "after",
+    "for",
+    "at",
+    "into",
+    "up"
+   ],
+   "answer": 1,
+   "why": "look after(돌보다)의 수동태는 be looked after이고, 조동사 뒤이므로 be looked after가 된다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (동사구의 수동태)",
+   "choices": [
+    "The baby was taken care by a nurse.",
+    "The meeting was put until next week.",
+    "He was laughed by his classmates.",
+    "The plan was dealt with quickly.",
+    "She is looked up by her teammates."
+   ],
+   "answer": 4,
+   "why": "동사구의 수동태에서는 전치사나 부사를 빠뜨리면 안 된다. ①은 taken care of, ②는 put off, ③은 laughed at, ⑤는 looked up to가 되어야 한다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것을 골라 쓰시오.  All the answers must (write, be written) in blue ink.",
+   "answer": "be written",
+   "alt": [],
+   "why": "답은 쓰이는 대상이므로 「조동사+be+p.p.」인 must be written이 맞다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것을 골라 쓰시오.  The boy was made (apologize, to apologize) to his little sister.",
+   "answer": "to apologize",
+   "alt": [],
+   "why": "사역동사 make가 수동태가 되면 원형부정사가 to부정사로 바뀐다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것을 골라 쓰시오.  The front gate is kept (lock, locked) after ten at night.",
+   "answer": "locked",
+   "alt": [],
+   "why": "keep+목적어+과거분사의 수동태로 보어 자리에 과거분사 locked가 그대로 남는다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것을 골라 쓰시오.  A new smartphone was bought (to, for) me by my parents.",
+   "answer": "for",
+   "alt": [],
+   "why": "buy는 직접목적어를 주어로 한 수동태에서 간접목적어 앞에 for를 쓴다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것을 골라 쓰시오.  The bedtime story was read (to, for) the children by Ms. Baek.",
+   "answer": "to",
+   "alt": [],
+   "why": "read는 give, tell처럼 간접목적어 앞에 to를 쓰는 동사다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Young trees should <u>plant</u> before the rainy season.",
+   "answer": "be planted",
+   "alt": [],
+   "why": "나무는 심기는 대상이므로 should be planted로 고쳐야 한다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  The kids were made <u>washing</u> their hands before dinner.",
+   "answer": "to wash",
+   "alt": [],
+   "why": "make의 수동태는 「be made to+동사원형」이므로 to wash로 고친다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (한 단어)  The lost dog was taken care <u>for</u> by a kind man.",
+   "answer": "of",
+   "alt": [],
+   "why": "take care of의 수동태이므로 전치사 of를 그대로 써야 한다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (한 단어)  This bottle is made <u>from</u> glass. (유리의 성질이 그대로 남아 있다)",
+   "answer": "of",
+   "alt": [],
+   "why": "재료의 성질이 그대로 보이면 be made of를 쓴다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (한 단어)  In a minute the whole room was filled <u>of</u> smoke.",
+   "answer": "with",
+   "alt": [],
+   "why": "be filled with가 올바른 형태이다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 전치사를 쓰시오.  The whole hill was covered ____ yellow flowers.",
+   "answer": "with",
+   "alt": [
+    "in"
+   ],
+   "why": "be covered with는 '~로 덮이다'라는 뜻으로 by 대신 with를 쓴다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 전치사를 쓰시오.  Nick was disappointed ____ his low test score.",
+   "answer": "at",
+   "alt": [
+    "with",
+    "about"
+   ],
+   "why": "실망의 원인 앞에는 at(또는 with, about)을 써서 be disappointed at으로 표현한다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 전치사를 쓰시오.  This street is known ____ its old bookstores. (오래된 서점으로 유명하다)",
+   "answer": "for",
+   "alt": [],
+   "why": "유명한 이유나 특징을 나타낼 때는 be known for를 쓴다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 a postcard를 주어로 하는 수동태 문장으로 바꿔 쓰시오.  Her uncle sent Julie a postcard.",
+   "answer": "A postcard was sent to Julie by her uncle.",
+   "alt": [],
+   "why": "send의 직접목적어를 주어로 하면 간접목적어 앞에 to를 붙여야 한다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 수동태로 바꿔 쓰시오. (by the neighbors를 쓸 것)  The neighbors call him a hero.",
+   "answer": "He is called a hero by the neighbors.",
+   "alt": [],
+   "why": "5형식 call+목적어+보어의 수동태로, 보어 a hero는 be called 뒤에 그대로 남는다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 we를 주어로 하는 수동태 문장으로 바꿔 쓰시오. (by our coach를 쓸 것)  Our coach made us run ten laps.",
+   "answer": "We were made to run ten laps by our coach.",
+   "alt": [],
+   "why": "사역동사 make의 수동태에서는 원형부정사 run이 to run으로 바뀐다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 the man을 주어로 하는 수동태 문장으로 바꿔 쓰시오. (by 이하는 생략할 것)  Someone saw the man leave the building.",
+   "answer": "The man was seen to leave the building.",
+   "alt": [
+    "The man was seen leaving the building."
+   ],
+   "why": "지각동사 see의 수동태에서는 원형부정사가 to부정사로 바뀌며, 현재분사 leaving도 쓸 수 있다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 this puzzle을 주어로 하는 수동태 문장으로 바꿔 쓰시오. (by you는 생략할 것)  You can solve this puzzle in five minutes.",
+   "answer": "This puzzle can be solved in five minutes.",
+   "alt": [],
+   "why": "조동사가 있는 문장의 수동태는 「조동사+be+p.p.」이다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 my cat을 주어로 하는 수동태 문장으로 바꿔 쓰시오.  A car ran over my cat.",
+   "answer": "My cat was run over by a car.",
+   "alt": [],
+   "why": "동사구 run over는 한 덩어리로 움직이므로 be run over by 형태가 된다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 the picnic을 주어로 하는 수동태 문장으로 바꿔 쓰시오. (by them은 생략할 것)  They put off the picnic until Saturday.",
+   "answer": "The picnic was put off until Saturday.",
+   "alt": [],
+   "why": "put off는 한 덩어리로 취급하여 be put off로 쓰고 off를 빠뜨리면 안 된다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?  ㄱ. The wall must be repainted before the guests arrive.  ㄴ. The boy was made carry the heavy box upstairs.  ㄷ. A gold ring was bought for my mother by my father.",
+   "choices": [
+    "ㄱ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 2,
+   "why": "ㄴ은 사역동사 make의 수동태이므로 was made to carry가 되어야 한다. ㄱ은 조동사+be+p.p., ㄷ은 buy의 수동태에서 for를 바르게 썼다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?  ㄱ. The rumor was laughed at by everyone in the office.  ㄴ. The garden is taken care by the old couple.  ㄷ. The meeting will be put off until the manager returns.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ",
+    "ㄷ"
+   ],
+   "answer": 2,
+   "why": "ㄴ은 take care of의 수동태이므로 is taken care of가 되어야 한다. 동사구 수동태에서는 전치사를 빠뜨리면 안 된다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것을 모두 고른 것은?  ㄱ. She was seen to cross the street alone.  ㄴ. The window may be broke by the storm.  ㄷ. The soup should be kept warm until dinner.  ㄹ. The novel was known as millions of readers.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㄹ",
+    "ㄱ, ㄹ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄴ은 be 뒤에 과거분사 broken이 와야 하고, ㄹ은 '~에게 알려지다'이므로 known to가 되어야 한다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?  ㄱ. The room was filled with the smell of fresh bread.  ㄴ. The children were told go home before dark.  ㄷ. The letter must be sent to her before noon.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 2,
+   "why": "ㄴ은 tell+목적어+to부정사의 수동태이므로 were told to go가 되어야 한다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장끼리 짝지어진 것은?  ㄱ. This shirt is made of cotton, and the juice is made from apples.  ㄴ. The bus was crowded with passengers this morning.  ㄷ. I was disappointed with the ending of the movie.  ㄹ. The baby was made sleep by the soft music.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄴ, ㄷ",
+    "ㄴ, ㄷ, ㄹ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄱ, ㄴ, ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄹ만 틀렸다. make의 수동태에서는 원형부정사가 to부정사로 바뀌어 was made to sleep이 되어야 한다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 수동태로 바꿀 때 가능한 것을 모두 고른 것은?  They gave her a second chance.  ㄱ. She was given a second chance.  ㄴ. A second chance was given to her.  ㄷ. A second chance was given for her.",
+   "choices": [
+    "ㄱ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 2,
+   "why": "4형식은 두 목적어 모두 주어가 될 수 있고, give는 직접목적어가 주어일 때 간접목적어 앞에 to를 쓰므로 ㄷ은 틀리다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은?  The children <u>were made</u> <u>to clean</u> the yard, and then they <u>were given</u> <u>to some cookies</u> <u>by their teacher</u>.",
+   "choices": [
+    "were made",
+    "to clean",
+    "were given",
+    "to some cookies",
+    "by their teacher"
+   ],
+   "answer": 4,
+   "why": "간접목적어 they가 주어인 수동태이므로 직접목적어 some cookies 앞에는 전치사를 쓰지 않는다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은?  The village <u>is known</u> <u>for</u> its hot springs, and every winter the streets <u>are crowded</u> <u>of</u> visitors who <u>are looked after</u> by local guides.",
+   "choices": [
+    "is known",
+    "for",
+    "are crowded",
+    "of",
+    "are looked after"
+   ],
+   "answer": 4,
+   "why": "be crowded with가 올바른 표현이므로 of를 with로 고쳐야 한다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은?  The old bridge <u>must be checked</u> every year, and last month it <u>was found</u> <u>damage</u> by the flood, so it <u>will be repaired</u> <u>before winter</u>.",
+   "choices": [
+    "must be checked",
+    "was found",
+    "damage",
+    "will be repaired",
+    "before winter"
+   ],
+   "answer": 3,
+   "why": "find+목적어+과거분사의 수동태이므로 보어 자리에 damaged가 와야 한다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은?  Sarah <u>was told</u> <u>to wait</u> outside, but she <u>was heard</u> <u>talk</u> on the phone <u>by the nurse</u>.",
+   "choices": [
+    "was told",
+    "to wait",
+    "was heard",
+    "talk",
+    "by the nurse"
+   ],
+   "answer": 4,
+   "why": "지각동사 hear의 수동태에서는 보어가 to talk 또는 talking이 되어야 하며 원형은 쓸 수 없다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은?  A warm meal <u>was cooked</u> <u>for the guests</u>, and the bill <u>was sent</u> <u>for them</u> <u>by the owner</u>.",
+   "choices": [
+    "was cooked",
+    "for the guests",
+    "was sent",
+    "for them",
+    "by the owner"
+   ],
+   "answer": 4,
+   "why": "cook은 간접목적어 앞에 for를 쓰지만 send는 to를 쓰므로 was sent to them이 되어야 한다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은?  Nothing <u>could be done</u> at that time, so the plan <u>was turned</u> <u>up</u> by the board and <u>was never dealt with</u> <u>again</u>.",
+   "choices": [
+    "could be done",
+    "was turned",
+    "up",
+    "was never dealt with",
+    "again"
+   ],
+   "answer": 3,
+   "why": "'거절되다'는 be turned down이므로 up을 down으로 고쳐야 한다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (지각동사·사역동사의 수동태)",
+   "choices": [
+    "He was seen leave the office at nine.",
+    "He was made clean the whiteboard.",
+    "The students were made to memorize the poem.",
+    "She was heard to crying in her room.",
+    "The window was kept to open all night."
+   ],
+   "answer": 3,
+   "why": "사역동사 make의 수동태는 be made to+동사원형이다. ①은 to leave/leaving, ②는 to clean, ④는 to cry/crying, ⑤는 kept open이 되어야 한다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은? (4형식 수동태에 쓰이는 전치사)",
+   "choices": [
+    "The cookies were made for the children.",
+    "The truth was told to the police.",
+    "A new coat was bought to my brother.",
+    "The results will be shown to everyone.",
+    "The song was sung for the audience."
+   ],
+   "answer": 3,
+   "why": "buy는 직접목적어가 주어인 수동태에서 간접목적어 앞에 for를 쓰므로 bought for my brother가 되어야 한다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (조동사와 동사구가 함께 쓰인 수동태)",
+   "choices": [
+    "The garbage should be taken out before eight.",
+    "The garbage should take out before eight.",
+    "The garbage must taken out before eight.",
+    "The garbage will taking out before eight.",
+    "The garbage can be take out before eight."
+   ],
+   "answer": 1,
+   "why": "동사구 take out의 수동태는 be taken out이고, 조동사 뒤에는 반드시 be가 온다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은? (동사구의 수동태)",
+   "choices": [
+    "The problem was looked into by the police.",
+    "The candle was blown out by the wind.",
+    "The child was looked after by her aunt.",
+    "The offer was turned down politely.",
+    "The old man was run by a car."
+   ],
+   "answer": 5,
+   "why": "'차에 치이다'는 be run over이므로 over가 빠지면 안 된다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (by 이외의 전치사를 쓰는 수동태)",
+   "choices": [
+    "The road was covered of ice yesterday.",
+    "I am interested about ancient history.",
+    "She was satisfied of her exam result.",
+    "The jar was filled with fresh honey.",
+    "He was known for everyone in the club."
+   ],
+   "answer": 4,
+   "why": "be filled with가 맞다. ①은 covered with, ②는 interested in, ③은 satisfied with, ⑤는 known to가 되어야 한다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은? (5형식 보어와 4형식 전치사 종합)",
+   "choices": [
+    "Her wallet was found empty on the bench.",
+    "He was made to stay after class.",
+    "The room must be kept quiet during the test.",
+    "The hall was crowded with people.",
+    "The letter was sent for the manager."
+   ],
+   "answer": 5,
+   "why": "send는 간접목적어 앞에 to를 쓰므로 sent to the manager가 되어야 한다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (전치사와 5형식 수동태 종합)",
+   "choices": [
+    "This box can be filled of sand.",
+    "The children were made to line up quietly.",
+    "The award was given for the youngest player.",
+    "The sky was covered of dark clouds.",
+    "She was interested at the new project."
+   ],
+   "answer": 2,
+   "why": "make의 수동태는 be made to+동사원형이다. ①은 filled with, ③은 given to, ④는 covered with, ⑤는 interested in이 맞다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은? (5형식 수동태의 보어)",
+   "choices": [
+    "Kevin was elected class president last spring.",
+    "The baby was named after her grandmother.",
+    "The floor was left wet by the workers.",
+    "The soup was kept warmly on the stove.",
+    "The gate was found open this morning."
+   ],
+   "answer": 4,
+   "why": "keep+목적어+형용사의 수동태이므로 보어 자리에 형용사 warm이 와야 한다. 부사 warmly는 보어가 될 수 없다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 수동태로 바르게 바꾼 것은?  My aunt taught us Chinese for two years.",
+   "choices": [
+    "We were taught Chinese by my aunt for two years.",
+    "We were taught to Chinese by my aunt for two years.",
+    "Chinese was taught us by my aunt for two years.",
+    "We taught Chinese by my aunt for two years.",
+    "Chinese was taught for us by my aunt for two years."
+   ],
+   "answer": 1,
+   "why": "간접목적어 us를 주어로 하면 직접목적어 Chinese는 전치사 없이 그대로 남는다. 직접목적어를 주어로 할 때는 to us를 써야 한다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 수동태로 바르게 바꾼 것은?  The teacher made the students write a report.",
+   "choices": [
+    "The students were made write a report.",
+    "The students were made writing a report.",
+    "The students were made to write a report by the teacher.",
+    "A report was made to write by the students.",
+    "The students made to write a report by the teacher."
+   ],
+   "answer": 3,
+   "why": "사역동사 make의 수동태에서는 원형부정사 write가 to write로 바뀐다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 수동태로 바르게 바꾼 것은?  Someone must clean the windows before the ceremony.",
+   "choices": [
+    "The windows must clean before the ceremony.",
+    "The windows must be cleaned before the ceremony.",
+    "The windows must been cleaned before the ceremony.",
+    "The windows must be cleaning before the ceremony.",
+    "The windows must to be cleaned before the ceremony."
+   ],
+   "answer": 2,
+   "why": "조동사가 있는 문장의 수동태는 「조동사+be+p.p.」이고, 막연한 행위자 someone은 생략한다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 수동태로 바르게 바꾼 것은?  People laughed at his strange hat.",
+   "choices": [
+    "His strange hat was laughed by people.",
+    "His strange hat was laughed at by people.",
+    "His strange hat laughed at by people.",
+    "People were laughed at his strange hat.",
+    "His strange hat was laughing at by people."
+   ],
+   "answer": 2,
+   "why": "laugh at은 한 덩어리이므로 수동태에서도 at을 남겨 be laughed at by로 쓴다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 수동태로 바르게 바꾼 것은?  We will look after the puppies during the holiday.",
+   "choices": [
+    "The puppies will look after during the holiday.",
+    "The puppies will be looked during the holiday.",
+    "The puppies will be looked after during the holiday.",
+    "The puppies will been looked after during the holiday.",
+    "The puppies will be look after during the holiday."
+   ],
+   "answer": 3,
+   "why": "미래 수동태 will be p.p.에 동사구의 after까지 그대로 남겨야 한다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 수동태로 바르게 바꾼 것은?  Her parents call the little girl Sunny.",
+   "choices": [
+    "The little girl is called Sunny by her parents.",
+    "The little girl is called to Sunny by her parents.",
+    "Sunny is called the little girl by her parents.",
+    "The little girl calls Sunny by her parents.",
+    "The little girl is call Sunny by her parents."
+   ],
+   "answer": 1,
+   "why": "5형식의 목적어가 주어가 되고 목적격보어 Sunny는 be called 뒤에 그대로 남는다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그 상자는 아이 혼자서는 옮겨질 수 없다.",
+   "choices": [
+    "The box can't move by a child alone.",
+    "The box can't be moved by a child alone.",
+    "The box can't be move by a child alone.",
+    "The box isn't can be moved by a child alone.",
+    "The box can't being moved by a child alone."
+   ],
+   "answer": 2,
+   "why": "부정형 수동태는 「조동사+not+be+p.p.」이므로 can't be moved가 맞다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그 학생들은 교실에 남아 있어야 했다(강요당했다).",
+   "choices": [
+    "The students were made stay in the classroom.",
+    "The students were made to stay in the classroom.",
+    "The students made to stay in the classroom.",
+    "The students were make to stay in the classroom.",
+    "The students were made staying in the classroom."
+   ],
+   "answer": 2,
+   "why": "사역동사 make의 수동태는 be made to+동사원형이다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  새 컴퓨터 한 대가 그녀에게 주어졌다.",
+   "choices": [
+    "A new computer was given for her.",
+    "A new computer was given her.",
+    "A new computer was given to her.",
+    "A new computer gave to her.",
+    "A new computer was gave to her."
+   ],
+   "answer": 3,
+   "why": "give의 직접목적어를 주어로 한 수동태이므로 간접목적어 앞에 to를 쓴다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그 회의는 폭설 때문에 취소되었다.",
+   "choices": [
+    "The meeting was called on because of the heavy snow.",
+    "The meeting was called off because of the heavy snow.",
+    "The meeting called off because of the heavy snow.",
+    "The meeting was call off because of the heavy snow.",
+    "The meeting was calling off because of the heavy snow."
+   ],
+   "answer": 2,
+   "why": "call off(취소하다)의 수동태는 be called off이다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그의 강아지는 이웃에 의해 돌봐진다.",
+   "choices": [
+    "His puppy is taken care by a neighbor.",
+    "His puppy is taken care of by a neighbor.",
+    "His puppy takes care of by a neighbor.",
+    "His puppy is took care of by a neighbor.",
+    "His puppy is taken care for by a neighbor."
+   ],
+   "answer": 2,
+   "why": "take care of는 세 단어가 한 덩어리이므로 수동태에서도 of를 남기고 그 뒤에 by를 쓴다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그 규칙은 모든 학생에게 설명되어야 한다.",
+   "choices": [
+    "The rule should explain to every student.",
+    "The rule should be explained to every student.",
+    "The rule should be explain to every student.",
+    "The rule should being explained to every student.",
+    "The rule should be explained for every student."
+   ],
+   "answer": 2,
+   "why": "explain은 사람 앞에 to를 쓰며, 조동사 뒤에는 be+p.p.가 온다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The old paintings ____ very carefully, or they will be damaged by sunlight.",
+   "choices": [
+    "must handle",
+    "must be handled",
+    "must be handling",
+    "must handled",
+    "must to be handled"
+   ],
+   "answer": 2,
+   "why": "그림은 다루어지는 대상이므로 must be handled가 맞다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Nothing ____ about the missing key until the police looked into the case.",
+   "choices": [
+    "was known",
+    "knew",
+    "was knowing",
+    "was know",
+    "known"
+   ],
+   "answer": 1,
+   "why": "'알려지지 않았다'는 수동의 뜻이므로 was known이 맞다. know는 진행형으로 쓰지 않는다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Because of the sudden storm, the morning flight ____ off until the next day.",
+   "choices": [
+    "put",
+    "was put",
+    "was putting",
+    "is put",
+    "were put"
+   ],
+   "answer": 2,
+   "why": "비행기는 연기되는 대상이고 과거의 일이므로 was put off가 맞다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "That young writer ____ the next big star by many critics these days.",
+   "choices": [
+    "is called",
+    "calls",
+    "is called to",
+    "was calling",
+    "is call"
+   ],
+   "answer": 1,
+   "why": "call+목적어+보어의 수동태이므로 보어 앞에 전치사 없이 is called를 쓴다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Before the trip, the students ____ to keep their passports in a safe place.",
+   "choices": [
+    "told",
+    "were told",
+    "were telling",
+    "are telling",
+    "was told"
+   ],
+   "answer": 2,
+   "why": "tell+목적어+to부정사의 수동태이며 주어가 복수이고 과거이므로 were told가 맞다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The whole village ____ with muddy water after the heavy rain last August.",
+   "choices": [
+    "was covered",
+    "covered",
+    "was covering",
+    "is covered",
+    "were covered"
+   ],
+   "answer": 1,
+   "why": "마을은 덮이는 대상이고 last August라는 과거 시점이므로 was covered with가 맞다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말은?  (1) The stage was filled ____ bright light.  (2) The judges were pleased ____ her performance.  (3) The small room was crowded ____ reporters.",
+   "choices": [
+    "at",
+    "of",
+    "with",
+    "to",
+    "for"
+   ],
+   "answer": 3,
+   "why": "be filled with, be pleased with, be crowded with 모두 by 대신 with를 쓴다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말은?  (1) The scientist is known ____ people all over the world.  (2) A second chance was given ____ the young player.  (3) Mr. Choi is looked up ____ by his students.",
+   "choices": [
+    "for",
+    "as",
+    "to",
+    "with",
+    "of"
+   ],
+   "answer": 3,
+   "why": "be known to, give의 수동태 to, look up to의 to가 모두 같은 형태다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?  A: Why do you look so upset?  B: My new headphones ____ by my little brother yesterday.",
+   "choices": [
+    "broke",
+    "were broken",
+    "were breaking",
+    "was broken",
+    "are broken"
+   ],
+   "answer": 2,
+   "why": "헤드폰은 부서진 대상이고 주어가 복수, 시점이 과거이므로 were broken이다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?  A: Do I have to wear a helmet here?  B: Yes. Helmets ____ by every rider on this road.",
+   "choices": [
+    "must wear",
+    "must be worn",
+    "must be wear",
+    "must worn",
+    "must be wearing"
+   ],
+   "answer": 2,
+   "why": "헬멧은 착용되는 대상이므로 must be worn이다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ㄱ. The garden must be watered twice a week.  ㄴ. He was seen to enter the building at noon.  ㄷ. The letter was sent for his teacher.  ㄹ. The children were made to apologize.  ㅁ. The road was covered of thick ice.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ, ㄴ, ㄹ이 옳다. ㄷ은 sent to his teacher, ㅁ은 covered with thick ice로 고쳐야 한다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?  ㄱ. The song can be heard from far away.  ㄴ. The baby was taken care by her uncle.  ㄷ. The plan was dealt with at once.  ㄹ. She was made wash the dishes.  ㅁ. The box was filled with old photos.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ㄴ은 taken care of, ㄹ은 made to wash로 고쳐야 하므로 틀린 문장은 두 개다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ㄱ. The gate should be kept closed at night.  ㄴ. He is known as a great scientist.  ㄷ. The soup was cooked for me by my aunt.  ㄹ. The event was put off because of the rain.  ㅁ. She was laughed by her friends.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "ㅁ만 틀렸다. laugh at의 수동태이므로 was laughed at by가 되어야 한다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분의 쓰임이 나머지 넷과 다른 것은?",
+   "choices": [
+    "This town is known <u>for</u> its cherry trees.",
+    "The scientist is known <u>for</u> her early work on light.",
+    "Jeju is known <u>for</u> its black pigs.",
+    "He is known <u>to</u> almost everyone in the village.",
+    "The bakery is known <u>for</u> its soft bread."
+   ],
+   "answer": 4,
+   "why": "①②③⑤는 유명한 이유를 나타내는 be known for이고, ④만 '~에게 알려져 있다'는 be known to이다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 밑줄 친 부분을 주어로 하는 수동태 문장으로 바꿔 쓰시오.  Our teacher made <u>us</u> write the essay again.",
+   "answer": "We were made to write the essay again by our teacher.",
+   "alt": [],
+   "why": "사역동사 make의 수동태에서는 생략되었던 to가 되살아나 were made to write가 된다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 the boy를 주어로 하는 수동태 문장으로 바꿔 쓰시오. (by them은 생략할 것)  They saw the boy climb over the fence.",
+   "answer": "The boy was seen to climb over the fence.",
+   "alt": [
+    "The boy was seen climbing over the fence."
+   ],
+   "why": "지각동사 see의 수동태에서는 원형부정사가 to부정사로 바뀌며, 현재분사도 보어로 쓸 수 있다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 the classroom을 주어로 하는 수동태 문장으로 바꿔 쓰시오. (by them은 생략할 것)  They must keep the classroom clean.",
+   "answer": "The classroom must be kept clean.",
+   "alt": [],
+   "why": "조동사가 있는 5형식의 수동태로, 보어 clean은 be kept 뒤에 그대로 남는다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 this painting을 주어로 하는 수동태 문장으로 바꿔 쓰시오. (전치사는 by를 쓰지 말 것)  People all over the world know this painting.",
+   "answer": "This painting is known to people all over the world.",
+   "alt": [],
+   "why": "'~에게 알려져 있다'는 be known to로 나타내며 by를 쓰지 않는다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 the baseball game을 주어로 하는 수동태 문장으로 바꿔 쓰시오.  The heavy rain put off the baseball game.",
+   "answer": "The baseball game was put off by the heavy rain.",
+   "alt": [],
+   "why": "put off는 한 덩어리로 움직여 be put off by가 되며 off를 빠뜨리면 안 된다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 the accident를 주어로 하는 수동태 문장으로 바꿔 쓰시오. (by 이하는 생략할 것)  Someone will look into the accident soon.",
+   "answer": "The accident will be looked into soon.",
+   "alt": [],
+   "why": "미래 수동태 will be p.p.에 동사구의 into까지 그대로 남긴다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 a letter를 주어로 하는 수동태 문장으로 바꿔 쓰시오.  Jenny wrote him a letter.",
+   "answer": "A letter was written to him by Jenny.",
+   "alt": [],
+   "why": "write는 직접목적어가 주어일 때 간접목적어 앞에 to를 쓴다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 he를 주어로 하는 수동태 문장으로 바꿔 쓰시오.  The company offered him a new job.",
+   "answer": "He was offered a new job by the company.",
+   "alt": [],
+   "why": "간접목적어를 주어로 하면 직접목적어 a new job은 전치사 없이 그대로 남는다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  The old temple can be seen from the hill, and it should <u>visit</u> in the early morning.",
+   "answer": "be visited",
+   "alt": [],
+   "why": "절은 방문되는 대상이므로 should be visited가 되어야 한다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  The new members were made <u>introducing</u> themselves to everyone.",
+   "answer": "to introduce",
+   "alt": [],
+   "why": "make의 수동태는 be made to+동사원형이므로 to introduce로 고친다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (한 단어)  Everyone was surprised <u>of</u> the ending, and the theater was soon filled with cheers.",
+   "answer": "at",
+   "alt": [
+    "by"
+   ],
+   "why": "놀람의 원인 앞에는 at을 써서 be surprised at으로 표현한다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (한 단어)  The stolen bag was found <u>emptily</u> beside the road.",
+   "answer": "empty",
+   "alt": [],
+   "why": "find+목적어+형용사의 수동태이므로 보어 자리에 형용사 empty가 와야 한다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (한 단어)  Small children must be looked <u>for</u> carefully near the water. (돌봐져야 한다)",
+   "answer": "after",
+   "alt": [],
+   "why": "'돌보다'는 look after이므로 수동태는 be looked after이다. look for는 '찾다'라는 뜻이다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 우리말과 같도록 주어진 단어를 모두 바르게 배열하시오.  그 편지는 오늘 부쳐져야 한다.  (be / must / mailed / The letter / today)",
+   "answer": "The letter must be mailed today.",
+   "alt": [],
+   "why": "조동사가 있는 수동태는 「조동사+be+p.p.」 순서로 쓴다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 우리말과 같도록 주어진 단어를 모두 바르게 배열하시오.  그 소년은 자기 방을 청소하도록 시켜졌다.  (was / to / The boy / clean / made / his room)",
+   "answer": "The boy was made to clean his room.",
+   "alt": [],
+   "why": "사역동사 make의 수동태는 be made to+동사원형 순서다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 우리말과 같도록 주어진 단어를 모두 바르게 배열하시오.  그 산은 하얀 눈으로 덮여 있었다.  (covered / The mountain / white snow / was / with)",
+   "answer": "The mountain was covered with white snow.",
+   "alt": [],
+   "why": "be covered with는 '~로 덮이다'라는 뜻으로 by 대신 with를 쓴다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 우리말과 같도록 주어진 단어를 모두 바르게 배열하시오.  그 계획은 위원회에 의해 거절되었다.  (turned / was / by / The plan / down / the committee)",
+   "answer": "The plan was turned down by the committee.",
+   "alt": [],
+   "why": "turn down의 수동태는 be turned down이고 행위자는 by 뒤에 쓴다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 빈칸에 알맞은 말을 세 단어로 쓰시오.  They will finish the road work next month.  = The road work ____ next month.",
+   "answer": "will be finished",
+   "alt": [],
+   "why": "미래 수동태는 will be p.p.이다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 빈칸에 알맞은 말을 세 단어로 쓰시오.  Mr. Park teaches us math every Tuesday.  = Math ____ us by Mr. Park every Tuesday.",
+   "answer": "is taught to",
+   "alt": [],
+   "why": "teach의 직접목적어를 주어로 하면 간접목적어 앞에 to를 써야 한다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 빈칸에 알맞은 말을 세 단어로 쓰시오.  Nobody can move this heavy rock.  = This heavy rock ____ by anybody.",
+   "answer": "can't be moved",
+   "alt": [
+    "cannot be moved",
+    "can not be moved"
+   ],
+   "why": "부정 수동태는 「조동사+not+be+p.p.」이므로 can't be moved가 된다.",
+   "no": 200
+  }
+ ]
+}
