@@ -1,0 +1,2708 @@
+{
+ "id": "hs-26",
+ "grade": "고등",
+ "name": "수동태 심화",
+ "points": [
+  "5형식 수동태(보어 유지)",
+  "사역·지각동사 수동태 to-v",
+  "동사구 수동·by 이외 전치사"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The baby ____ Leo by his parents.",
+   "choices": [
+    "name",
+    "named",
+    "was named",
+    "was naming",
+    "has named"
+   ],
+   "answer": 3,
+   "why": "5형식 name+O+명사보어의 수동태는 「be p.p.+보어」 형태이므로 was named Leo가 맞다. named만 쓰면 동사가 능동이 되어 뒤에 목적어가 없는 문장이 되고, was naming은 능동 진행형이라 틀리다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The room was kept ____ during the cold night.",
+   "choices": [
+    "warm",
+    "warmly",
+    "warmth",
+    "to warm",
+    "warming"
+   ],
+   "answer": 1,
+   "why": "keep+O+형용사보어의 수동태에서 보어인 형용사는 그대로 남는다. 부사 warmly나 명사 warmth는 보어가 될 수 없다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The soup was found ____ by everyone at the table.",
+   "choices": [
+    "delicious",
+    "deliciously",
+    "deliciousness",
+    "to delicious",
+    "being deliciously"
+   ],
+   "answer": 1,
+   "why": "find+O+형용사보어의 수동태이므로 형용사 delicious가 그대로 남는다. 부사 deliciously는 보어 자리에 올 수 없다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? We were asked ____ our shoes off at the door.",
+   "choices": [
+    "take",
+    "taking",
+    "to take",
+    "taken",
+    "takes"
+   ],
+   "answer": 3,
+   "why": "ask+O+to부정사의 수동태는 be asked to-v이므로 to take가 맞다. 원형 take나 동명사 taking은 보어로 쓸 수 없다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The children were told ____ quiet in the library.",
+   "choices": [
+    "stay",
+    "staying",
+    "to stay",
+    "stayed",
+    "stays"
+   ],
+   "answer": 3,
+   "why": "tell+O+to부정사의 수동태는 be told to-v이다. 목적격보어인 to부정사는 수동태에서도 그대로 남는다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? She was advised ____ a doctor right away.",
+   "choices": [
+    "see",
+    "saw",
+    "to see",
+    "seeing",
+    "seen"
+   ],
+   "answer": 3,
+   "why": "advise+O+to부정사의 수동태는 be advised to-v이므로 to see가 맞다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The window was left ____ , so the room became cold.",
+   "choices": [
+    "open",
+    "openly",
+    "opening",
+    "to open",
+    "opens"
+   ],
+   "answer": 1,
+   "why": "leave+O+형용사보어의 수동태로 형용사 open이 보어로 남는다. openly는 '공공연히'라는 뜻의 부사라 의미도 형태도 맞지 않는다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Our classroom door was painted ____ last week.",
+   "choices": [
+    "blue",
+    "bluely",
+    "blueness",
+    "to blue",
+    "bluing"
+   ],
+   "answer": 1,
+   "why": "paint+O+색깔 형용사 구문의 수동태로 형용사 보어 blue가 그대로 남는다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The plan was considered ____ by the whole team.",
+   "choices": [
+    "perfect",
+    "perfectly",
+    "perfection",
+    "to perfect",
+    "perfecting"
+   ],
+   "answer": 1,
+   "why": "consider+O+형용사보어의 수동태이므로 형용사 perfect가 남는다. 부사 perfectly는 보어가 될 수 없다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은?",
+   "choices": [
+    "The dog was named to Max by the kids.",
+    "The dog named Max by the kids.",
+    "The dog was named Max by the kids.",
+    "The dog was naming Max by the kids.",
+    "The dog was been named Max by the kids."
+   ],
+   "answer": 3,
+   "why": "5형식 명사보어는 수동태에서 to 없이 그대로 남으므로 was named Max가 맞다. ②는 동사가 능동, ④는 능동 진행형, ⑤는 was been이라는 형태가 존재하지 않는다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? He was made ____ the dishes after dinner.",
+   "choices": [
+    "wash",
+    "washing",
+    "to wash",
+    "washed",
+    "washes"
+   ],
+   "answer": 3,
+   "why": "사역동사 make의 목적격보어인 원형부정사는 수동태에서 to부정사로 바뀐다. 그래서 was made to wash가 맞다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The boy was seen ____ the empty house alone.",
+   "choices": [
+    "enter",
+    "to enter",
+    "entered",
+    "enters",
+    "be entered"
+   ],
+   "answer": 2,
+   "why": "지각동사 see의 목적격보어인 원형부정사는 수동태에서 to부정사가 되므로 was seen to enter가 맞다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? We were made ____ for more than an hour.",
+   "choices": [
+    "wait",
+    "waited",
+    "to wait",
+    "waits",
+    "be waited"
+   ],
+   "answer": 3,
+   "why": "사역동사 make의 수동태는 be made to-v이므로 to wait가 맞다. 원형 wait는 수동태에서 쓸 수 없다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? She was heard ____ a beautiful song on the stage.",
+   "choices": [
+    "sing",
+    "sings",
+    "to sing",
+    "sang",
+    "sung"
+   ],
+   "answer": 3,
+   "why": "지각동사 hear의 수동태는 be heard to-v이므로 to sing이 맞다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Students were not ____ to use their phones during class. (허락되지 않았다)",
+   "choices": [
+    "let",
+    "allowed",
+    "letting",
+    "allow",
+    "been let"
+   ],
+   "answer": 2,
+   "why": "let은 수동태로 잘 쓰지 않고 be allowed to-v로 바꿔 쓴다. were not let to use는 쓰지 않는 형태다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The old man was helped ____ the heavy box upstairs.",
+   "choices": [
+    "carry",
+    "carrying",
+    "to carry",
+    "carried",
+    "carries"
+   ],
+   "answer": 3,
+   "why": "help의 목적격보어는 원형·to부정사 둘 다 가능하지만 수동태에서는 to부정사만 남으므로 was helped to carry가 맞다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장을 수동태로 바꿀 때 빈칸에 알맞은 것은? My mom made me clean my room. → I ____ my room by my mom.",
+   "choices": [
+    "was made clean",
+    "was made to clean",
+    "made to clean",
+    "was making clean",
+    "was made cleaning"
+   ],
+   "answer": 2,
+   "why": "사역동사 make의 원형부정사 보어는 수동태에서 to부정사가 된다. ①처럼 원형을 그대로 두면 안 된다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The thief was seen ____ the shop at midnight.",
+   "choices": [
+    "leave",
+    "left",
+    "to leave",
+    "leaves",
+    "be left"
+   ],
+   "answer": 3,
+   "why": "지각동사 see의 수동태에서 원형부정사 보어는 to부정사로 바뀌므로 to leave가 맞다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장을 수동태로 바꿀 때 빈칸에 알맞은 것은? Someone heard the girl cry for help. → The girl ____ for help.",
+   "choices": [
+    "was heard cry",
+    "was heard to cry",
+    "heard to cry",
+    "was hearing to cry",
+    "was heard cried"
+   ],
+   "answer": 2,
+   "why": "지각동사 hear의 원형부정사 보어는 수동태에서 to부정사가 되므로 was heard to cry가 맞다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The workers were made ____ late last Friday.",
+   "choices": [
+    "work",
+    "worked",
+    "to work",
+    "works",
+    "be worked"
+   ],
+   "answer": 3,
+   "why": "be made 뒤에는 to부정사가 오므로 to work가 맞다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The baby was taken good care ____ by her grandmother.",
+   "choices": [
+    "for",
+    "of",
+    "with",
+    "to",
+    "at"
+   ],
+   "answer": 2,
+   "why": "take care of가 하나의 동사구이므로 수동태에서도 전치사 of를 반드시 남겨야 한다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The meeting was put ____ until next Monday. (연기되었다)",
+   "choices": [
+    "on",
+    "in",
+    "off",
+    "up",
+    "over"
+   ],
+   "answer": 3,
+   "why": "put off가 '연기하다'라는 뜻의 동사구이므로 수동태에서도 off를 그대로 남긴다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? He was laughed ____ by his classmates.",
+   "choices": [
+    "on",
+    "of",
+    "for",
+    "at",
+    "with"
+   ],
+   "answer": 4,
+   "why": "laugh at(~을 비웃다)은 동사구이므로 수동태에서 전치사 at을 빠뜨리면 안 된다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? This table is made ____ wood.",
+   "choices": [
+    "from",
+    "into",
+    "with",
+    "by",
+    "of"
+   ],
+   "answer": 5,
+   "why": "재료의 성질이 그대로 보이면 be made of를 쓴다. be made from은 성질이 변한 경우에 쓴다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Cheese is made ____ milk.",
+   "choices": [
+    "of",
+    "from",
+    "into",
+    "for",
+    "by"
+   ],
+   "answer": 2,
+   "why": "우유가 치즈가 될 때는 성질이 변하므로 be made from을 쓴다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Grapes are made ____ wine in this village.",
+   "choices": [
+    "of",
+    "from",
+    "into",
+    "with",
+    "by"
+   ],
+   "answer": 3,
+   "why": "'재료가 제품으로 만들어지다'는 be made into를 쓴다. 주어가 재료(Grapes)이므로 into가 맞다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The bottle was filled ____ fresh water.",
+   "choices": [
+    "of",
+    "with",
+    "from",
+    "in",
+    "on"
+   ],
+   "answer": 2,
+   "why": "be filled with(~로 가득 차다)는 by 대신 with를 쓰는 대표적인 수동 표현이다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? I am interested ____ Korean history.",
+   "choices": [
+    "on",
+    "at",
+    "in",
+    "for",
+    "with"
+   ],
+   "answer": 3,
+   "why": "be interested in은 by 대신 in을 쓰는 관용적인 수동 표현이다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? She was satisfied ____ her test score.",
+   "choices": [
+    "in",
+    "for",
+    "of",
+    "with",
+    "on"
+   ],
+   "answer": 4,
+   "why": "be satisfied with(~에 만족하다)로 전치사 with를 쓴다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? This town is known ____ its cherry blossoms. (~로 유명하다)",
+   "choices": [
+    "to",
+    "as",
+    "of",
+    "in",
+    "for"
+   ],
+   "answer": 5,
+   "why": "유명한 '이유'를 말할 때는 be known for를 쓴다. be known as는 자격, be known to는 '~에게 알려져 있다'이다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? He is known ____ a great scientist. (~로서 알려져 있다)",
+   "choices": [
+    "for",
+    "as",
+    "to",
+    "with",
+    "of"
+   ],
+   "answer": 2,
+   "why": "자격·신분을 나타낼 때는 be known as를 쓴다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? We were caught ____ a heavy shower on the way home.",
+   "choices": [
+    "at",
+    "with",
+    "in",
+    "on",
+    "of"
+   ],
+   "answer": 3,
+   "why": "be caught in(비·소나기 등을 만나다)은 in을 쓰는 고정 표현이다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The street was crowded ____ tourists last weekend.",
+   "choices": [
+    "of",
+    "in",
+    "for",
+    "with",
+    "by"
+   ],
+   "answer": 4,
+   "why": "be crowded with(~로 붐비다)는 by 대신 with를 쓴다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The game was called ____ because of the storm. (취소되었다)",
+   "choices": [
+    "on",
+    "up",
+    "for",
+    "in",
+    "off"
+   ],
+   "answer": 5,
+   "why": "call off가 '취소하다'라는 동사구이므로 수동태에서도 off를 남긴다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The project was carried ____ successfully. (실행되었다)",
+   "choices": [
+    "off",
+    "out",
+    "in",
+    "on",
+    "up"
+   ],
+   "answer": 2,
+   "why": "carry out(실행하다)의 수동태이므로 out을 그대로 쓴다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The baby is looked ____ by a babysitter every afternoon.",
+   "choices": [
+    "for",
+    "at",
+    "after",
+    "into",
+    "up"
+   ],
+   "answer": 3,
+   "why": "look after(~을 돌보다)의 수동태이므로 after를 남긴다. look for는 '찾다'라 뜻이 맞지 않는다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The problem was ____ with by the manager.",
+   "choices": [
+    "deal",
+    "dealt",
+    "dealing",
+    "deals",
+    "to deal"
+   ],
+   "answer": 2,
+   "why": "deal with(~을 처리하다)의 수동태는 be dealt with이다. deal의 과거분사는 dealt이다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은?",
+   "choices": [
+    "We were made to stand in line.",
+    "The door was left open.",
+    "He was seen to run away.",
+    "The dog was taken care by Mina.",
+    "The room was filled with smoke."
+   ],
+   "answer": 4,
+   "why": "take care of의 수동태는 be taken care of이므로 ④는 of가 빠져 틀리다. 나머지는 모두 올바른 형태다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그는 모두에게 정직하다고 여겨진다.",
+   "choices": [
+    "He is considered honest by everyone.",
+    "He is considered honestly by everyone.",
+    "He considers honest by everyone.",
+    "He is considering honest by everyone.",
+    "He is considered to honest by everyone."
+   ],
+   "answer": 1,
+   "why": "consider+O+형용사보어의 수동태이므로 형용사 honest가 그대로 남는다. 부사 honestly나 to honest는 보어가 될 수 없다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? A: Why do you look so tired? B: I ____ move all these chairs by my teacher.",
+   "choices": [
+    "was made to",
+    "made to",
+    "was made",
+    "made",
+    "was making"
+   ],
+   "answer": 1,
+   "why": "'~하게 시킴을 당했다'는 be made to-v로 쓴다. 뒤에 동사원형 move가 있으므로 was made to가 필요하다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말은? The shy student was laughed ____ by his classmates. / Everyone was surprised ____ the sudden news.",
+   "choices": [
+    "in",
+    "on",
+    "of",
+    "at",
+    "for"
+   ],
+   "answer": 4,
+   "why": "laugh at의 수동태 be laughed at, 그리고 be surprised at(~에 놀라다) 모두 at을 쓴다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? (a) He was made to stay after school. (b) The box was filled of gifts. (c) The dog was named Coco. (d) She was seen to enter the room.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "(b)만 틀렸다. be filled with가 맞으므로 of를 쓸 수 없다. (a)(c)(d)는 모두 올바르다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은? My little brother was taken care (A)____ by our aunt, and he was made (B)____ his homework first.",
+   "choices": [
+    "of – do",
+    "of – to do",
+    "for – to do",
+    "of – doing",
+    "with – to do"
+   ],
+   "answer": 2,
+   "why": "take care of의 of를 남기고, 사역동사 make의 수동태는 be made to-v이므로 (A) of, (B) to do가 맞다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장을 수동태로 바꿀 때 빈칸에 알맞은 것은? They kept the door closed all day. → The door ____ closed all day.",
+   "choices": [
+    "was kept",
+    "kept",
+    "was keeping",
+    "has kept",
+    "was keep"
+   ],
+   "answer": 1,
+   "why": "keep+O+보어의 수동태는 be kept+보어이므로 was kept가 맞다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장을 수동태로 바꿀 때 빈칸에 알맞은 것은? People call him a genius. → He ____ a genius.",
+   "choices": [
+    "is called",
+    "calls",
+    "is calling",
+    "called",
+    "is call"
+   ],
+   "answer": 1,
+   "why": "call+O+명사보어의 수동태는 be called+명사보어이다. 현재시제 주어가 he이므로 is called가 맞다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장을 수동태로 바꿀 때 빈칸에 알맞은 것은? The teacher made us read the book aloud. → We ____ the book aloud.",
+   "choices": [
+    "were made read",
+    "were made to read",
+    "made to read",
+    "were making read",
+    "were made reading"
+   ],
+   "answer": 2,
+   "why": "사역동사 make의 원형부정사 보어는 수동태에서 to부정사로 바뀐다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? I am tired ____ eating the same food every day. (~에 싫증나다)",
+   "choices": [
+    "with",
+    "from",
+    "in",
+    "at",
+    "of"
+   ],
+   "answer": 5,
+   "why": "be tired of는 '싫증나다', be tired from은 '피곤하다'이다. 우리말 뜻이 '싫증나다'이므로 of가 맞다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Water is made up ____ hydrogen and oxygen.",
+   "choices": [
+    "from",
+    "of",
+    "with",
+    "into",
+    "by"
+   ],
+   "answer": 2,
+   "why": "be made up of(~로 구성되다)는 of를 쓰는 고정 표현이다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 어법에 맞게 바꿔 쓰시오. My brother was made (wash) the family car last Sunday.",
+   "answer": "to wash",
+   "alt": [],
+   "why": "사역동사 make의 수동태는 be made to-v이므로 원형 wash를 to wash로 바꾼다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음은 Someone saw the girl cross the street.를 수동태로 바꾼 문장이다. 빈칸에 알맞은 두 단어를 쓰시오. The girl was seen ____ the street.",
+   "answer": "to cross",
+   "alt": [],
+   "why": "지각동사 see의 원형부정사 보어는 수동태에서 to부정사로 바뀌므로 to cross가 된다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사를 한 단어로 쓰시오. The garden was filled ____ red roses.",
+   "answer": "with",
+   "alt": [
+    "With"
+   ],
+   "why": "be filled with(~로 가득 차다)는 by 대신 with를 쓰는 표현이다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사를 한 단어로 쓰시오. Mr. Han is known ____ his kindness. (~로 유명하다)",
+   "answer": "for",
+   "alt": [
+    "For"
+   ],
+   "why": "유명한 이유를 말할 때는 be known for를 쓴다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사를 한 단어로 쓰시오. We were caught ____ a snowstorm yesterday.",
+   "answer": "in",
+   "alt": [
+    "In"
+   ],
+   "why": "be caught in은 '(비·눈 등을) 만나다'라는 뜻의 고정 표현이다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사를 한 단어로 쓰시오. My puppy was taken care ____ by my cousin.",
+   "answer": "of",
+   "alt": [
+    "Of"
+   ],
+   "why": "take care of가 한 덩어리의 동사구이므로 수동태에서도 of를 남긴다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 수동태로 바꿔 쓰시오. (by people은 생략할 것) People call the city the Big Apple.",
+   "answer": "The city is called the Big Apple.",
+   "alt": [
+    "The city is called the Big Apple"
+   ],
+   "why": "call+O+명사보어의 수동태는 be called+명사보어이며, 보어 the Big Apple은 그대로 남는다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 수동태로 바꿔 쓰시오. (by my mother까지 쓸 것) My mother made me wash the dishes.",
+   "answer": "I was made to wash the dishes by my mother.",
+   "alt": [
+    "I was made to wash the dishes by my mother"
+   ],
+   "why": "사역동사 make의 원형부정사 보어는 수동태에서 to부정사로 바뀌므로 was made to wash가 된다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. The classroom door was kept <u>closing</u> during the test.",
+   "answer": "closed",
+   "alt": [],
+   "why": "keep+O+보어의 수동태로 '닫힌 상태'를 뜻하는 과거분사 형용사 closed가 보어로 남아야 한다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사를 한 단어로 쓰시오. The old rule was done away ____ two years ago.",
+   "answer": "with",
+   "alt": [
+    "With"
+   ],
+   "why": "do away with(~을 없애다)의 수동태이므로 with를 그대로 남긴다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 어법에 맞게 바꿔 쓰시오. We were told (bring) our own lunch on the field trip.",
+   "answer": "to bring",
+   "alt": [],
+   "why": "tell+O+to부정사의 수동태는 be told to-v이므로 to bring이 맞다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 어법에 맞게 바꿔 쓰시오. The students were not allowed (leave) the room early.",
+   "answer": "to leave",
+   "alt": [],
+   "why": "be allowed to-v 구문이므로 to leave로 쓴다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. Jinho was made <u>clean</u> the classroom alone.",
+   "answer": "to clean",
+   "alt": [],
+   "why": "be made 뒤의 목적격보어는 원형이 아니라 to부정사여야 한다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사를 한 단어로 쓰시오. Paper is made ____ wood.",
+   "answer": "from",
+   "alt": [
+    "From"
+   ],
+   "why": "나무가 종이가 될 때는 성질이 변하므로 be made from을 쓴다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사를 한 단어로 쓰시오. In this factory, milk is made ____ butter and cheese.",
+   "answer": "into",
+   "alt": [
+    "Into"
+   ],
+   "why": "재료가 다른 제품으로 바뀔 때는 be made into를 쓴다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 말을 한 단어로 쓰시오. The school festival was put ____ because of the typhoon. (연기되었다)",
+   "answer": "off",
+   "alt": [
+    "Off"
+   ],
+   "why": "put off(연기하다)의 수동태이므로 off를 남긴다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 말을 한 단어로 쓰시오. The safety plan was carried ____ without any trouble. (실행되었다)",
+   "answer": "out",
+   "alt": [
+    "Out"
+   ],
+   "why": "carry out(실행하다)의 수동태이므로 out을 남긴다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 두 단어를 쓰시오. They elected her captain of the team. → She ____ captain of the team.",
+   "answer": "was elected",
+   "alt": [],
+   "why": "elect+O+명사보어의 수동태는 be elected+보어이며, 과거시제이므로 was elected이다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 이용해 빈칸에 알맞은 세 단어를 쓰시오. (allow, 현재시제) My father won't let me go out at night. → I ____ to go out at night.",
+   "answer": "am not allowed",
+   "alt": [],
+   "why": "let은 수동태로 쓰지 않고 be allowed to-v로 바꾼다. 부정이므로 am not allowed가 된다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사를 한 단어로 쓰시오. The subway station was crowded ____ people this morning.",
+   "answer": "with",
+   "alt": [
+    "With"
+   ],
+   "why": "be crowded with(~로 붐비다)는 by 대신 with를 쓴다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The new hall ____ the Kim Ku Memorial Library after the independence activist.",
+   "choices": [
+    "named",
+    "was named",
+    "was naming",
+    "has named",
+    "is naming"
+   ],
+   "answer": 2,
+   "why": "「name+O+명사보어」의 수동태이므로 be named+보어 형태가 되어야 한다. 능동형 named나 진행형 was naming은 뒤에 목적어가 없어 성립하지 않는다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Because of the thick fog, the runway was kept ____ for six hours.",
+   "choices": [
+    "close",
+    "closed",
+    "closing",
+    "to close",
+    "closely"
+   ],
+   "answer": 2,
+   "why": "keep+O+보어의 수동태로 '닫힌 상태'를 뜻하는 과거분사형 형용사 closed가 보어로 남는다. close는 '가까운', closely는 '면밀히'라는 뜻이라 의미가 맞지 않는다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Ms. Yoon was elected ____ of the student council by a wide margin.",
+   "choices": [
+    "to president",
+    "president",
+    "being president",
+    "presidency",
+    "for president"
+   ],
+   "answer": 2,
+   "why": "elect+O+명사보어의 수동태에서 관직·신분을 나타내는 명사보어는 관사 없이 그대로 남는다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Volunteers were asked ____ the animal shelter at least twice a month.",
+   "choices": [
+    "visit",
+    "visiting",
+    "to visit",
+    "visited",
+    "be visited"
+   ],
+   "answer": 3,
+   "why": "ask+O+to부정사의 수동태는 be asked to-v이다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The suspect was seen ____ the building only minutes before the fire started.",
+   "choices": [
+    "to leave",
+    "leave",
+    "left",
+    "leaves",
+    "be left"
+   ],
+   "answer": 1,
+   "why": "지각동사 see의 원형부정사 보어는 수동태에서 to부정사로 바뀌므로 to leave가 맞다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Passengers were made ____ their bags before boarding the plane.",
+   "choices": [
+    "open",
+    "opened",
+    "to open",
+    "opening",
+    "opens"
+   ],
+   "answer": 3,
+   "why": "사역동사 make의 수동태는 be made to-v이므로 to open이 맞다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Strange noises were heard ____ from the basement all night long.",
+   "choices": [
+    "come",
+    "came",
+    "to coming",
+    "coming",
+    "comes"
+   ],
+   "answer": 4,
+   "why": "지각동사의 목적격보어가 현재분사였던 경우에는 수동태에서도 현재분사가 그대로 남으므로 coming이 맞다. to coming 같은 형태는 없다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Local residents were helped ____ up the flood damage by a rescue team.",
+   "choices": [
+    "clean",
+    "cleaning",
+    "to clean",
+    "cleaned",
+    "cleans"
+   ],
+   "answer": 3,
+   "why": "help의 목적격보어는 능동일 때 원형·to부정사가 모두 가능하지만, 수동태에서는 to부정사만 쓸 수 있다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Visitors are not ____ to touch the paintings in this gallery.",
+   "choices": [
+    "let",
+    "letting",
+    "allowed",
+    "allow",
+    "been let"
+   ],
+   "answer": 3,
+   "why": "let은 수동태로 쓰지 않으므로 be allowed to-v로 바꿔 쓴다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The budget proposal was turned ____ by the committee last Thursday. (거절되었다)",
+   "choices": [
+    "off",
+    "over",
+    "down",
+    "up",
+    "out"
+   ],
+   "answer": 3,
+   "why": "turn down(거절하다)의 수동태이므로 down을 그대로 남긴다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? She was brought ____ by her grandparents in a small fishing village.",
+   "choices": [
+    "on",
+    "out",
+    "in",
+    "up",
+    "over"
+   ],
+   "answer": 4,
+   "why": "bring up(양육하다)의 수동태이므로 up을 남긴다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Little attention was paid ____ the early warning signs of the storm.",
+   "choices": [
+    "on",
+    "to",
+    "for",
+    "with",
+    "at"
+   ],
+   "answer": 2,
+   "why": "pay attention to의 수동태로, attention이 주어가 되어도 전치사 to는 그대로 남는다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The old scholar is looked up ____ by every student in the department.",
+   "choices": [
+    "at",
+    "on",
+    "to",
+    "for",
+    "after"
+   ],
+   "answer": 3,
+   "why": "look up to(~을 존경하다)의 수동태이므로 to까지 남겨야 한다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? No one should be looked down ____ because of his or her accent.",
+   "choices": [
+    "to",
+    "at",
+    "for",
+    "on",
+    "up"
+   ],
+   "answer": 4,
+   "why": "look down on(~을 얕보다)의 수동태이므로 on을 남긴다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Such rude behavior should not be put up ____ in a public library.",
+   "choices": [
+    "to",
+    "on",
+    "with",
+    "for",
+    "in"
+   ],
+   "answer": 3,
+   "why": "put up with(~을 참다)의 수동태는 be put up with이므로 with가 필요하다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The new theory is based ____ twenty years of careful observation.",
+   "choices": [
+    "in",
+    "of",
+    "on",
+    "with",
+    "to"
+   ],
+   "answer": 3,
+   "why": "be based on(~에 근거하다)은 by 대신 on을 쓰는 표현이다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The advisory board is composed ____ ten experts from five countries.",
+   "choices": [
+    "with",
+    "of",
+    "in",
+    "on",
+    "by"
+   ],
+   "answer": 2,
+   "why": "be composed of(~로 구성되다)는 of를 쓴다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Mina was so absorbed ____ her novel that she missed her stop.",
+   "choices": [
+    "on",
+    "with",
+    "in",
+    "at",
+    "of"
+   ],
+   "answer": 3,
+   "why": "be absorbed in(~에 몰두하다)은 in을 쓰는 관용 표현이다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? His whole life was devoted ____ helping children in poverty.",
+   "choices": [
+    "for",
+    "on",
+    "with",
+    "to",
+    "in"
+   ],
+   "answer": 4,
+   "why": "be devoted to(~에 헌신하다)의 to는 전치사이므로 뒤에 동명사가 온다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Children in that region are exposed ____ polluted air almost every day.",
+   "choices": [
+    "on",
+    "in",
+    "with",
+    "at",
+    "to"
+   ],
+   "answer": 5,
+   "why": "be exposed to(~에 노출되다)는 to를 쓰는 고정 표현이다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (목적격보어의 형태에 유의할 것)",
+   "choices": [
+    "The storage room was kept lock all weekend.",
+    "He was made wait outside in the rain.",
+    "The novel was made into a popular movie.",
+    "She was seen to crossing the street.",
+    "The child was taken care by a school nurse."
+   ],
+   "answer": 3,
+   "why": "재료·원작이 다른 형태로 바뀔 때는 be made into를 쓴다. ①은 kept locked, ②는 made to wait, ④는 seen to cross, ⑤는 taken care of로 고쳐야 한다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은? (동사구의 수동태에 유의할 것)",
+   "choices": [
+    "The lost dog was looked for by the whole neighborhood.",
+    "The proposal was laughed at by the board members.",
+    "The patient was looked after by two nurses.",
+    "The meeting was put off until Friday.",
+    "The outdated rule was done away last year."
+   ],
+   "answer": 5,
+   "why": "do away with의 수동태는 be done away with이므로 ⑤는 with가 빠져 틀리다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? The volunteers ①<u>were asked</u> ②<u>to gather</u> at the main gate, and each of them ③<u>was made</u> ④<u>sign</u> a safety form before ⑤<u>being sent</u> to the site.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 4,
+   "why": "be made 뒤의 목적격보어는 원형이 아니라 to부정사여야 하므로 sign을 to sign으로 고쳐야 한다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? The researcher ①<u>was heard</u> ②<u>to say</u> that the sample ③<u>had been made</u> ④<u>of</u> plastic, but the tools ⑤<u>were taken care</u> by her assistants.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 5,
+   "why": "take care of의 수동태는 be taken care of이므로 ⑤에는 of가 있어야 한다. ④는 재료의 성질이 남아 있으므로 of가 맞다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? Although the plan ①<u>was carried out</u> carefully, the crew ②<u>were made</u> ③<u>to stay</u> overtime and ④<u>were not satisfied</u> ⑤<u>at</u> their pay.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 5,
+   "why": "be satisfied with(~에 만족하다)가 맞으므로 ⑤의 at을 with로 고쳐야 한다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? The tower ①<u>was designed</u> by a young architect and ②<u>is now known</u> ③<u>for</u> a symbol of the city, though its roof ④<u>was covered</u> ⑤<u>with</u> solar panels.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "'~로서 알려져 있다'는 be known as이므로 ③의 for를 as로 고쳐야 한다. be known for는 유명한 이유를 나타낸다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? Everyone ①<u>was shocked</u> when the champion ②<u>was beaten</u> by a rookie, and the match ③<u>was called</u> ④<u>off</u> after some fans ⑤<u>were allowed entering</u> the field.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 5,
+   "why": "be allowed 뒤에는 to부정사가 오므로 entering을 to enter로 고쳐야 한다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? The girl ①<u>was named</u> after her grandmother, ②<u>was brought up</u> in Busan, and ③<u>was looked</u> after by her aunt, but she ④<u>was never allowed</u> ⑤<u>travel</u> abroad alone.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 5,
+   "why": "be allowed 뒤에는 to부정사가 와야 하므로 travel을 to travel로 고친다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 우리는 두 시간 동안 밖에서 기다리게 되었다.",
+   "choices": [
+    "We were made wait outside for two hours.",
+    "We were made to wait outside for two hours.",
+    "We made to wait outside for two hours.",
+    "We were making to wait outside for two hours.",
+    "We were made waiting outside for two hours."
+   ],
+   "answer": 2,
+   "why": "사역동사 make의 수동태는 be made to-v이므로 were made to wait가 맞다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그 다리는 지진 이후 안전하지 않다고 여겨졌다.",
+   "choices": [
+    "The bridge considered unsafe after the earthquake.",
+    "The bridge was considered unsafely after the earthquake.",
+    "The bridge was considering unsafe after the earthquake.",
+    "The bridge was considered unsafe after the earthquake.",
+    "The bridge was considered to unsafe after the earthquake."
+   ],
+   "answer": 4,
+   "why": "consider+O+형용사보어의 수동태이므로 형용사 unsafe가 그대로 보어로 남는다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그 노인은 마을 사람 모두에게 존경받는다.",
+   "choices": [
+    "The old man is looked up by everyone in the village.",
+    "The old man looks up to by everyone in the village.",
+    "The old man is looked up to by everyone in the village.",
+    "The old man is looking up to by everyone in the village.",
+    "The old man is looked to up by everyone in the village."
+   ],
+   "answer": 3,
+   "why": "look up to의 수동태는 be looked up to이며, 그 뒤에 행위자를 나타내는 by가 따로 온다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그 낡은 우물은 없어졌고, 주민들은 생수를 사야만 했다.",
+   "choices": [
+    "The old well was done away, and the residents were made buy bottled water.",
+    "The old well was done away with, and the residents were made to buy bottled water.",
+    "The old well did away with, and the residents were made to buy bottled water.",
+    "The old well was done away with, and the residents were made buying bottled water.",
+    "The old well was done with away, and the residents were made to buy bottled water."
+   ],
+   "answer": 2,
+   "why": "do away with의 수동태는 be done away with이고, 사역동사 make의 수동태는 be made to-v이다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은? The concert hall was filled (A)____ music, and the young pianist was later seen (B)____ the stage alone.",
+   "choices": [
+    "of – leave",
+    "with – leave",
+    "of – to leave",
+    "with – to leave",
+    "by – to leave"
+   ],
+   "answer": 4,
+   "why": "be filled with가 맞고, 지각동사 see의 수동태에서는 원형부정사가 to부정사로 바뀌므로 to leave가 된다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은? The report was handed (A)____ late, so the intern was made (B)____ it again over the weekend.",
+   "choices": [
+    "in – write",
+    "in – to write",
+    "on – to write",
+    "in – writing",
+    "up – to write"
+   ],
+   "answer": 2,
+   "why": "hand in(제출하다)의 수동태이므로 in을 남기고, 사역동사 make의 수동태 뒤에는 to부정사가 온다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말은? The cave was filled ____ thousands of bats. / The morning subway was crowded ____ office workers.",
+   "choices": [
+    "of",
+    "in",
+    "with",
+    "by",
+    "at"
+   ],
+   "answer": 3,
+   "why": "be filled with와 be crowded with 모두 by가 아닌 with를 쓴다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말은? The professor is well known ____ students all over Asia. / All the samples were exposed ____ direct sunlight.",
+   "choices": [
+    "to",
+    "for",
+    "as",
+    "by",
+    "at"
+   ],
+   "answer": 1,
+   "why": "be known to(~에게 알려져 있다)와 be exposed to(~에 노출되다)는 모두 to를 쓴다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? (a) The window was left open all night. (b) He was made repeat the sentence. (c) The garbage was taken care of at once. (d) The team was satisfied with the result. (e) She was seen to enter the lab.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "(b)만 틀렸다. be made 뒤에는 to repeat가 와야 한다. 나머지 네 문장은 모두 어법상 옳다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? (a) The visitors were let to enter the garden. (b) The child was helped to cross the road. (c) This desk is made from steel. (d) The hero is looked up to by many people. (e) The thief was seen to run into the alley.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "(b)(d)(e) 세 문장이 옳다. (a)는 let을 수동태로 쓸 수 없어 were allowed to enter로 고쳐야 하고, (c)는 재료의 성질이 그대로 남아 있으므로 made of가 맞다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? A: Did the club finish the report? B: No. It ____ until next Monday.",
+   "choices": [
+    "was put off",
+    "put off",
+    "was put",
+    "was putting off",
+    "put off was"
+   ],
+   "answer": 1,
+   "why": "put off의 수동태는 be put off이다. 주어 It이 연기되는 대상이므로 수동형이 맞다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? A: Why does Junho look upset? B: His idea ____ by almost everyone at the meeting.",
+   "choices": [
+    "laughed at",
+    "was laughed",
+    "was laughed at",
+    "was laughing at",
+    "was laughed by"
+   ],
+   "answer": 3,
+   "why": "laugh at의 수동태는 be laughed at이며, 행위자 앞에는 다시 by를 쓴다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The little girl was found ____ on a bench in the park at midnight.",
+   "choices": [
+    "asleep",
+    "sleep",
+    "to asleep",
+    "sleeps",
+    "sleepily"
+   ],
+   "answer": 1,
+   "why": "find+O+형용사보어의 수동태로 형용사 asleep이 보어로 남는다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The dark hallway was made ____ by a row of new lamps.",
+   "choices": [
+    "brightly",
+    "brightness",
+    "bright",
+    "to bright",
+    "brighten"
+   ],
+   "answer": 3,
+   "why": "make+O+형용사보어의 수동태로 보어인 형용사 bright가 그대로 남는다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The students were seen ____ up trash along the riverbank all morning.",
+   "choices": [
+    "pick",
+    "to picking",
+    "picking",
+    "picked",
+    "picks"
+   ],
+   "answer": 3,
+   "why": "지각동사의 보어가 현재분사였던 경우 수동태에서도 현재분사가 그대로 남는다. to picking 같은 형태는 없다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The old printers were made use ____ during the school festival.",
+   "choices": [
+    "for",
+    "with",
+    "by",
+    "of",
+    "to"
+   ],
+   "answer": 4,
+   "why": "make use of(~을 이용하다)의 수동태는 be made use of이므로 of를 남겨야 한다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The young mayor was spoken well ____ by the local press.",
+   "choices": [
+    "about",
+    "of",
+    "for",
+    "with",
+    "to"
+   ],
+   "answer": 2,
+   "why": "speak well of(~을 좋게 말하다)의 수동태이므로 of를 남긴다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The leading runner was caught up ____ by his rival in the final lap.",
+   "choices": [
+    "to",
+    "on",
+    "in",
+    "at",
+    "with"
+   ],
+   "answer": 5,
+   "why": "catch up with(~을 따라잡다)의 수동태는 be caught up with이다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 수동태로 바꿔 쓰시오. (by the teacher까지 쓸 것) The teacher made the students memorize the whole poem.",
+   "answer": "The students were made to memorize the whole poem by the teacher.",
+   "alt": [
+    "The students were made to memorize the whole poem by the teacher"
+   ],
+   "why": "사역동사 make의 원형부정사 보어는 수동태에서 to부정사로 바뀌므로 were made to memorize가 된다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 네 단어를 쓰시오. We saw him run across the field. → He ____ across the field by us.",
+   "answer": "was seen to run",
+   "alt": [],
+   "why": "지각동사 see의 원형부정사 보어는 수동태에서 to부정사로 바뀐다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. The retired teacher is looked up <u>at</u> by all his neighbors.",
+   "answer": "to",
+   "alt": [
+    "To"
+   ],
+   "why": "'존경받다'는 look up to의 수동태 be looked up to이므로 at이 아니라 to를 써야 한다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. The children were not allowed <u>staying</u> up past ten.",
+   "answer": "to stay",
+   "alt": [],
+   "why": "be allowed 뒤에는 to부정사가 온다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. The player was made <u>apologize</u> in front of the whole team.",
+   "answer": "to apologize",
+   "alt": [],
+   "why": "사역동사 make의 수동태 be made 뒤에는 원형이 아니라 to부정사가 온다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. The greenhouse was kept <u>warmly</u> all through the winter.",
+   "answer": "warm",
+   "alt": [],
+   "why": "keep+O+형용사보어의 수동태이므로 보어 자리에는 부사가 아닌 형용사 warm이 와야 한다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. That tower is known <u>for</u> the tallest building in the city. (~로서 알려져 있다)",
+   "answer": "as",
+   "alt": [
+    "As"
+   ],
+   "why": "자격·신분을 나타낼 때는 be known as를 쓴다. be known for는 유명한 이유를 말할 때 쓴다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사를 한 단어로 쓰시오. The jury is composed ____ twelve ordinary citizens.",
+   "answer": "of",
+   "alt": [
+    "Of"
+   ],
+   "why": "be composed of(~로 구성되다)는 of를 쓴다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사를 한 단어로 쓰시오. The film is based ____ a true story from the 1950s.",
+   "answer": "on",
+   "alt": [
+    "On"
+   ],
+   "why": "be based on(~에 근거하다)은 on을 쓰는 표현이다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 두 단어를 쓰시오. People consider her the best pianist of her generation. → She ____ the best pianist of her generation.",
+   "answer": "is considered",
+   "alt": [],
+   "why": "consider+O+명사보어의 수동태는 be considered+보어이며, 현재시제이므로 is considered가 된다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 세 단어를 쓰시오. The neighbors heard the dog bark at midnight. → The dog ____ at midnight by the neighbors.",
+   "answer": "was heard to bark",
+   "alt": [],
+   "why": "지각동사 hear의 원형부정사 보어는 수동태에서 to부정사가 된다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음은 We saw the workers carrying heavy boxes into the truck.을 수동태로 바꾼 문장이다. 괄호 안의 말을 알맞은 형태로 쓰시오. The workers were seen (carry) heavy boxes into the truck.",
+   "answer": "carrying",
+   "alt": [],
+   "why": "지각동사의 보어가 현재분사였으면 수동태에서도 현재분사가 그대로 남는다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 말을 한 단어로 쓰시오. The charity concert was called ____ at the last minute. (취소되었다)",
+   "answer": "off",
+   "alt": [
+    "Off"
+   ],
+   "why": "call off(취소하다)의 수동태이므로 off를 남긴다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사를 한 단어로 쓰시오. The cause of the accident is being looked ____ by the police. (조사되다)",
+   "answer": "into",
+   "alt": [
+    "Into"
+   ],
+   "why": "look into(~을 조사하다)의 수동태이므로 into를 남긴다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사를 한 단어로 쓰시오. The victims were provided ____ food and warm blankets.",
+   "answer": "with",
+   "alt": [
+    "With"
+   ],
+   "why": "be provided with(~을 제공받다)는 by가 아닌 with를 쓴다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 어법에 맞게 바꿔 쓰시오. Every guest was made (feel) welcome by the friendly host.",
+   "answer": "to feel",
+   "alt": [],
+   "why": "be made 뒤의 보어는 to부정사여야 하므로 to feel이 맞다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 이용해 빈칸에 알맞은 네 단어를 쓰시오. (allow) The principal will not let us use the gym on weekends. → We ____ to use the gym on weekends.",
+   "answer": "will not be allowed",
+   "alt": [
+    "won't be allowed"
+   ],
+   "why": "let은 수동태로 쓰지 않으므로 be allowed to-v를 쓴다. 조동사 뒤이므로 will not be allowed가 된다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사를 한 단어로 쓰시오. He was ashamed ____ his careless mistake for a long time.",
+   "answer": "of",
+   "alt": [
+    "Of"
+   ],
+   "why": "be ashamed of(~을 부끄러워하다)는 of를 쓰는 고정 표현이다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. The bestselling novel was made <u>of</u> a musical last year.",
+   "answer": "into",
+   "alt": [
+    "Into"
+   ],
+   "why": "작품이 다른 형태로 바뀔 때는 be made into를 쓴다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사를 한 단어로 쓰시오. The new student was made fun ____ because of his accent.",
+   "answer": "of",
+   "alt": [
+    "Of"
+   ],
+   "why": "make fun of(~을 놀리다)의 수동태는 be made fun of이므로 of를 남긴다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)에 들어갈 말로 가장 적절한 것은? Every applicant was made (A)____ a short essay on site, and those who were seen (B)____ the room early were asked (C)____ their forms at the front desk.",
+   "choices": [
+    "write – leave – to hand in",
+    "to write – to leave – to hand in",
+    "to write – leave – hand in",
+    "write – to leave – to hand in",
+    "to write – to leave – hand in"
+   ],
+   "answer": 2,
+   "why": "사역동사 make와 지각동사 see의 원형부정사 보어는 수동태에서 모두 to부정사가 되고, ask+O+to-v의 수동태도 be asked to-v이다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)에 들어갈 말로 가장 적절한 것은? The old factory was done away (A)____ , the workers were made (B)____ to a newer plant, and the usable machines were made use (C)____ by a recycling firm.",
+   "choices": [
+    "with – move – of",
+    "with – to move – of",
+    "of – to move – of",
+    "with – to move – for",
+    "by – to move – of"
+   ],
+   "answer": 2,
+   "why": "do away with와 make use of는 전치사까지 한 덩어리로 남기고, be made 뒤에는 to부정사가 온다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)에 들어갈 말로 가장 적절한 것은? The lost manuscript was found (A)____ under a floorboard, was later made (B)____ a hit film, and is now known (C)____ readers in dozens of countries.",
+   "choices": [
+    "hiding – into – for",
+    "hidden – of – to",
+    "hidden – into – to",
+    "hidden – into – for",
+    "hiding – into – to"
+   ],
+   "answer": 3,
+   "why": "find+O+분사보어의 수동태로 '숨겨진' 상태이므로 과거분사 hidden, 원작이 영화로 바뀌므로 be made into, '~에게 알려져 있다'는 be known to이다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)에 들어갈 말로 가장 적절한 것은? Attention should be paid (A)____ every small detail, careless complaints must not be put up (B)____ , and no member of the crew should be looked down (C)____ .",
+   "choices": [
+    "to – with – on",
+    "for – with – on",
+    "to – for – on",
+    "to – with – at",
+    "on – with – to"
+   ],
+   "answer": 1,
+   "why": "pay attention to, put up with, look down on 세 동사구 모두 수동태에서 전치사를 그대로 남긴다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)에 들어갈 말로 가장 적절한 것은? The volunteers were told (A)____ before sunrise, were not allowed (B)____ the site alone, and were provided (C)____ helmets and boots.",
+   "choices": [
+    "arrive – to enter – with",
+    "to arrive – enter – with",
+    "to arrive – to enter – of",
+    "to arrive – to enter – with",
+    "to arrive – entering – with"
+   ],
+   "answer": 4,
+   "why": "be told to-v, be allowed to-v, be provided with가 각각 올바른 형태다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)에 들어갈 말로 가장 적절한 것은? The theater was kept (A)____ for a full minute, the audience was made (B)____ uneasy, and the front shelves were filled (C)____ programs for the next show.",
+   "choices": [
+    "darkly – feel – with",
+    "dark – to feel – of",
+    "dark – to feel – with",
+    "dark – feel – with",
+    "darkly – to feel – with"
+   ],
+   "answer": 3,
+   "why": "keep+O+형용사보어의 수동태에서는 형용사 dark가 남고, be made 뒤에는 to부정사, be filled with는 with를 쓴다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)에 들어갈 말로 가장 적절한 것은? During the ceremony the flag was kept (A)____ , the guests were made (B)____ for the anthem, and the veterans were looked up (C)____ by the whole town.",
+   "choices": [
+    "raising – stand – to",
+    "raised – stand – to",
+    "raised – to stand – at",
+    "raised – to stand – to",
+    "raising – to stand – to"
+   ],
+   "answer": 4,
+   "why": "keep+O+과거분사보어의 수동태로 raised가 남고, 사역 make의 수동태는 be made to-v, look up to의 수동태는 be looked up to이다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)에 들어갈 말로 가장 적절한 것은? The new policy was carried (A)____ last month; teachers are no longer made (B)____ overtime, and students are never looked down (C)____ for asking simple questions.",
+   "choices": [
+    "off – to work – on",
+    "out – work – on",
+    "out – to work – at",
+    "out – to work – on",
+    "out – working – on"
+   ],
+   "answer": 4,
+   "why": "carry out(실행하다), be made to-v, look down on의 수동태가 각각 맞다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? In the nineteenth century coffee ①<u>was considered</u> a luxury, so ordinary workers ②<u>were made</u> ③<u>drink</u> cheap substitutes that ④<u>were made from</u> roasted grain and ⑤<u>were sold</u> in street markets.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "사역동사 make의 수동태 뒤에는 원형이 아니라 to부정사가 오므로 drink를 to drink로 고쳐야 한다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? The abandoned puppies ①<u>were taken care of</u> by a nearby shelter, ②<u>were named</u> after the volunteers, and ③<u>were later seen</u> ④<u>to play</u> in the yard, though none of them ⑤<u>was allowed leaving</u> before a checkup.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 5,
+   "why": "be allowed 뒤에는 to부정사가 오므로 leaving을 to leave로 고쳐야 한다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? The proposal ①<u>was turned down</u> at first, but once the figures ②<u>were looked into</u>, it ③<u>was made use</u> by the planning team and was finally ④<u>carried out</u> in a form that ⑤<u>was based on</u> local needs.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "make use of의 수동태는 be made use of이므로 ③에 of가 있어야 한다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? Although the singer ①<u>is known as</u> a quiet person, she ②<u>was heard</u> ③<u>to argue</u> loudly with her manager, and the story ④<u>was picked up</u> by reporters before she ⑤<u>was laughed</u> by online commenters.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 5,
+   "why": "laugh at의 수동태는 be laughed at이므로 ⑤에는 at이 필요하다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? The old custom ①<u>was disappeared</u> from the village after the factory opened, even though it ②<u>had been handed down</u> for generations and ③<u>was still spoken of</u> ④<u>with</u> pride by elders who ⑤<u>had been brought up</u> with it.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 1,
+   "why": "disappear는 목적어를 가질 수 없는 자동사라 수동태로 쓸 수 없으므로 ①은 disappeared로 고쳐야 한다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? The rare manuscript ①<u>was found</u> ②<u>damaged</u> in a church attic, ③<u>was covered with</u> centuries of dust, and ④<u>was dealt</u> by a team of experts whose skill ⑤<u>is known to</u> scholars worldwide.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 4,
+   "why": "deal with의 수동태는 be dealt with이므로 ④에는 with가 있어야 한다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? New employees ①<u>are made</u> ②<u>attend</u> a safety course, ③<u>are provided with</u> protective gear, and ④<u>are not permitted</u> ⑤<u>to work</u> alone after midnight.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 2,
+   "why": "be made 뒤의 목적격보어는 to부정사여야 하므로 attend를 to attend로 고친다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? The runaway dog ①<u>was looked</u> by the whole neighborhood for three days before it ②<u>was found</u> ③<u>trembling</u> under a bridge and ④<u>was taken care of</u> by a vet who ⑤<u>was spoken well of</u> in the town.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 1,
+   "why": "'찾다'는 look for이므로 수동태도 be looked for가 되어야 한다. ①에는 for가 빠져 있다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? Because the mountain road ①<u>was blocked</u> by a landslide, the passengers ②<u>were made</u> ③<u>walking</u> two kilometers in the dark, but they ④<u>were provided with</u> water and ⑤<u>were kept calm</u> by an experienced guide.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "be made 뒤에는 to부정사가 오므로 walking을 to walk로 고쳐야 한다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? The chemist ①<u>was seen</u> ②<u>to enter</u> the laboratory before dawn, ③<u>was heard</u> ④<u>talk</u> to himself for hours, and ⑤<u>was finally found</u> asleep beside his notes.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 4,
+   "why": "지각동사 hear의 수동태 뒤에는 to부정사나 현재분사가 와야 하므로 talk을 to talk로 고쳐야 한다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (동사구와 전치사에 유의할 것)",
+   "choices": [
+    "The refugees were provided of food and shelter by the agency.",
+    "The chairman was made resign after the scandal.",
+    "The dispute was dealt with quickly by an experienced mediator.",
+    "The building is consisted of forty small apartments.",
+    "Nobody was allowed entering the restricted area."
+   ],
+   "answer": 3,
+   "why": "deal with의 수동태 be dealt with가 바르게 쓰였다. ①은 be provided with, ②는 made to resign, ④는 consists of, ⑤는 allowed to enter로 고쳐야 한다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (5형식 수동태의 보어에 유의할 것)",
+   "choices": [
+    "The stage was left dark for a full minute before the music began.",
+    "The stage was left darkly for a full minute before the music began.",
+    "The audience was made staying seated until the end.",
+    "The evening show was called at the last minute.",
+    "The cast was satisfied at the harsh reviews."
+   ],
+   "answer": 1,
+   "why": "leave+O+형용사보어의 수동태이므로 형용사 dark가 남는다. ③은 made to stay, ④는 called off, ⑤는 satisfied with가 맞다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은? (전치사가 필요한 동사구에 유의할 것)",
+   "choices": [
+    "The mountain path is covered with fallen leaves.",
+    "The workers were made to work through the holiday.",
+    "The accounts were looked into by an outside auditor.",
+    "The young pianist is looked up to by thousands of fans.",
+    "The proposal was objected by most of the members."
+   ],
+   "answer": 5,
+   "why": "object to(~에 반대하다)는 전치사가 필요한 동사구이므로 was objected to by로 고쳐야 한다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은? (by 이외의 전치사에 유의할 것)",
+   "choices": [
+    "He was heard to shout from the other side of the wall.",
+    "The prisoners were allowed to write one letter a week.",
+    "The antique vase was found broken on the kitchen floor.",
+    "The small kitchen was filled of the smell of fresh bread.",
+    "The old farmhouse was made of stone and rough timber."
+   ],
+   "answer": 4,
+   "why": "be filled with(~로 가득 차다)가 맞으므로 ④의 of를 with로 고쳐야 한다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (수동태로 쓸 수 없는 동사에 유의할 것)",
+   "choices": [
+    "The child was made cry by the sudden noise.",
+    "The urgent letter was replied by the manager.",
+    "The final plan was agreed on by everyone at the table.",
+    "The research team was consisted of five engineers.",
+    "She was married with a doctor from Daegu."
+   ],
+   "answer": 3,
+   "why": "agree on의 수동태 be agreed on이 바르게 쓰였다. ①은 made to cry, ②는 replied to, ④는 consisted가 아니라 consists of, ⑤는 married to가 맞다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은? (동사구 수동태의 전치사에 유의할 것)",
+   "choices": [
+    "The pedestrian was run over by a delivery truck.",
+    "The same topic was brought up again at the end of the meeting.",
+    "The candidate was spoken ill of on a late-night radio show.",
+    "The spare equipment was made use of by the whole team.",
+    "The broken computers were disposed by the school last week."
+   ],
+   "answer": 5,
+   "why": "dispose of(~을 처분하다)의 수동태는 be disposed of이므로 ⑤에는 of가 필요하다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (사역·허가 동사의 수동태에 유의할 것)",
+   "choices": [
+    "The students were let to choose their own research topics.",
+    "The students were allowed to choose their own research topics.",
+    "The students were allowed choosing their own research topics.",
+    "The students were made choose their own research topics.",
+    "The students were let choosing their own research topics."
+   ],
+   "answer": 2,
+   "why": "let은 수동태로 쓰지 않고 be allowed to-v로 바꿔 쓰며, allow와 make의 수동태 뒤에는 모두 to부정사가 온다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은? (be known·be made 표현에 유의할 것)",
+   "choices": [
+    "The tower is known as the symbol of the harbor city.",
+    "The tower is known to almost every tourist in the region.",
+    "The tower is known for its unusual spiral shape.",
+    "The tower was made from marble and steel in 1931.",
+    "The tower was covered with scaffolding for two years."
+   ],
+   "answer": 4,
+   "why": "대리석과 강철은 성질이 그대로 남아 있으므로 be made of를 써야 한다. be made from은 재료의 성질이 변한 경우에 쓴다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것만을 있는 대로 고른 것은? ㄱ. He was made to hand in his phone before the exam. ㄴ. The main dish was found deliciously by the judges. ㄷ. The twins are looked after by their aunt every summer. ㄹ. The ugly rumor was finally put an end to.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄴ, ㄷ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "ㄴ만 틀렸다. find+O+형용사보어의 수동태이므로 부사 deliciously가 아니라 형용사 delicious가 와야 한다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것만을 있는 대로 고른 것은? ㄱ. The patient was made comfortable by the night nurse. ㄴ. The boy was seen to entering the empty building. ㄷ. The scandal was quickly hushed up by the press. ㄹ. The workers were provided of new uniforms.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄴ은 to entering이라는 형태가 없어 to enter로, ㄹ은 be provided with로 고쳐야 한다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? (a) The children were made to apologize to their teacher. (b) The heavy box was helped to carry by two neighbors. (c) The museum is filled with rare fossils. (d) The mayor was spoken ill of on the radio. (e) The back gate was left unlocked all night.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "(b)만 틀렸다. help의 수동태는 도움을 받는 사람이 주어가 되어야 하므로 상자를 주어로 쓸 수 없다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? (a) The suspect was seen to enter the bank at nine. (b) All the tools were made use by the crew. (c) The proposal was turned down without discussion. (d) The baby was named after her great-grandmother. (e) The room was kept coolly by an old fan.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "(b)는 be made use of, (e)는 형용사 보어 cool이 필요하다. 나머지 세 문장은 옳다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 가장 적절한 것은? The defendant ____ leave the courtroom until the judge had finished reading the verdict.",
+   "choices": [
+    "was not let to",
+    "was not permitted",
+    "did not allow to",
+    "was not made",
+    "was not allowed to"
+   ],
+   "answer": 5,
+   "why": "'~하는 것이 허락되지 않았다'는 be allowed to-v의 부정형이다. let은 수동태로 쓰지 않고, ②는 permitted 뒤에 to가 빠져 있다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 가장 적절한 것은? In many traditional societies elders ____ , and their advice is rarely questioned in public.",
+   "choices": [
+    "look up to",
+    "are looked up",
+    "are looking up to",
+    "are looked up to",
+    "are looked to up"
+   ],
+   "answer": 4,
+   "why": "look up to의 수동태는 전치사 두 개를 그대로 남긴 be looked up to이다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 가장 적절한 것은? Once the appeal period ended, the committee's decision ____ final, and no further complaint was accepted.",
+   "choices": [
+    "considered",
+    "was considering",
+    "was considered",
+    "has considered",
+    "was consider"
+   ],
+   "answer": 3,
+   "why": "consider+O+보어의 수동태이므로 be considered+보어 형태가 되어야 한다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 가장 적절한 것은? Because the storm damaged the runway, every outbound flight ____ until Friday morning.",
+   "choices": [
+    "put off",
+    "were putting off",
+    "have put off",
+    "was put off",
+    "was put"
+   ],
+   "answer": 4,
+   "why": "put off(연기하다)의 수동태는 be put off이며, 주어 every outbound flight는 단수이므로 was put off가 맞다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 가장 적절한 것은? The missing cat ____ for three days before it was finally discovered in a neighbor's shed. (수색되었다)",
+   "choices": [
+    "was looked",
+    "looked for",
+    "was looking for",
+    "was looked after",
+    "was looked for"
+   ],
+   "answer": 5,
+   "why": "look for(찾다)의 수동태는 be looked for이다. be looked after는 '돌봄을 받다'라는 뜻이라 문맥에 맞지 않는다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 가장 적절한 것은? The strict rules about school uniforms ____ two years ago, and hardly anyone misses them now.",
+   "choices": [
+    "were done away",
+    "did away with",
+    "were doing away with",
+    "were done away with",
+    "were done with away"
+   ],
+   "answer": 4,
+   "why": "do away with(폐지하다)의 수동태는 be done away with로, 전치사 두 개를 모두 남긴다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그 소년은 반 친구들에게 놀림을 받았지만, 결코 무시당하지는 않았다.",
+   "choices": [
+    "The boy was made fun by his classmates, but he was never looked down on.",
+    "The boy was made fun of by his classmates, but he was never looked down.",
+    "The boy was made fun of by his classmates, but he was never looked down on.",
+    "The boy made fun of by his classmates, but he was never looked down on.",
+    "The boy was making fun of by his classmates, but he was never looked down on."
+   ],
+   "answer": 3,
+   "why": "make fun of와 look down on 모두 수동태에서 전치사를 남겨야 하므로 be made fun of, be looked down on이 맞다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그 위원회는 열 명의 전문가로 구성되어 있고, 그 항의는 신속히 처리되었다.",
+   "choices": [
+    "The committee is composed with ten experts, and the complaint was dealt with promptly.",
+    "The committee is composed of ten experts, and the complaint was dealt promptly.",
+    "The committee consists of ten experts, and the complaint was dealt promptly.",
+    "The committee is composed of ten experts, and the complaint was dealt with promptly.",
+    "The committee is composing of ten experts, and the complaint was dealt with promptly."
+   ],
+   "answer": 4,
+   "why": "be composed of와 be dealt with가 각각 올바른 형태다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 관객들은 공연이 끝날 때까지 자리를 뜨는 것이 허락되지 않았다.",
+   "choices": [
+    "The audience was not let to leave until the performance was over.",
+    "The audience was not allowed leave until the performance was over.",
+    "The audience did not allow to leave until the performance was over.",
+    "The audience was not allowed leaving until the performance was over.",
+    "The audience was not allowed to leave until the performance was over."
+   ],
+   "answer": 5,
+   "why": "be allowed to-v가 맞으며, let은 수동태로 쓰지 않는다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그 낡은 창고는 미술관으로 바뀌었고, 지금은 그 지역의 자랑으로 알려져 있다.",
+   "choices": [
+    "The old warehouse was made of a gallery and is now known as the pride of the region.",
+    "The old warehouse was made into a gallery and is now known as the pride of the region.",
+    "The old warehouse was made into a gallery and is now known for the pride of the region.",
+    "The old warehouse made into a gallery and is now known as the pride of the region.",
+    "The old warehouse was made into a gallery and is now known to the pride of the region."
+   ],
+   "answer": 2,
+   "why": "재료·건물이 다른 것으로 바뀌면 be made into, 자격을 나타내면 be known as를 쓴다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은? The suspect was seen (A)____ the narrow alley just after ten, and at the station he was made (B)____ his story three times.",
+   "choices": [
+    "enter – repeat",
+    "to enter – repeat",
+    "enter – to repeat",
+    "to enter – to repeat",
+    "to enter – repeating"
+   ],
+   "answer": 4,
+   "why": "지각동사 see와 사역동사 make의 원형부정사 보어는 수동태에서 모두 to부정사가 된다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 세 빈칸에 공통으로 들어갈 말은? The panel is composed ____ five judges. / The spare parts were made use ____ by the crew. / The new boy was made fun ____ for his accent.",
+   "choices": [
+    "of",
+    "with",
+    "for",
+    "to",
+    "on"
+   ],
+   "answer": 1,
+   "why": "be composed of, be made use of, be made fun of 모두 of를 남긴다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 세 빈칸에 공통으로 들어갈 말은? Close attention must be paid ____ safety rules. / Factory workers are often exposed ____ loud noise. / My aunt has been married ____ a pilot for ten years.",
+   "choices": [
+    "at",
+    "to",
+    "with",
+    "in",
+    "for"
+   ],
+   "answer": 2,
+   "why": "be paid attention to, be exposed to, be married to 모두 전치사 to를 쓴다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 세 빈칸에 공통으로 들어갈 말은? The lab is equipped ____ new microscopes. / The hall was filled ____ thick smoke. / Every complaint was dealt ____ within a day.",
+   "choices": [
+    "of",
+    "in",
+    "by",
+    "with",
+    "for"
+   ],
+   "answer": 4,
+   "why": "be equipped with, be filled with, be dealt with 모두 with를 쓴다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 수동태로 바꿀 때 빈칸에 알맞은 것은? Nobody has ever heard him complain about the workload. → He ____ about the workload.",
+   "choices": [
+    "has never heard to complain",
+    "has never been heard to complain",
+    "has never been heard complain",
+    "was never been heard to complain",
+    "has never been hearing to complain"
+   ],
+   "answer": 2,
+   "why": "현재완료 수동태 has been p.p.에 지각동사 보어의 to부정사가 결합해 has never been heard to complain이 된다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 수동태로 바꿀 때 빈칸에 알맞은 것은? The school will make the students take an extra test next month. → The students ____ an extra test next month.",
+   "choices": [
+    "will be made take",
+    "will make to take",
+    "will be making to take",
+    "will be made taking",
+    "will be made to take"
+   ],
+   "answer": 5,
+   "why": "조동사가 있는 수동태는 will be p.p.이고, 사역동사 make의 보어는 수동태에서 to부정사가 되므로 will be made to take가 맞다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "allow를 이용해 다음 문장을 수동태로 바꿔 쓰시오. (by 이하는 쓰지 말 것) The organizers will not let the reporters enter the main hall.",
+   "answer": "The reporters will not be allowed to enter the main hall.",
+   "alt": [
+    "The reporters won't be allowed to enter the main hall.",
+    "The reporters will not be allowed to enter the main hall",
+    "The reporters won't be allowed to enter the main hall"
+   ],
+   "why": "let은 수동태로 쓰지 않으므로 be allowed to-v로 바꾸고, 조동사가 있으므로 will not be allowed가 된다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 세 단어를 쓰시오. The neighbors saw a stranger climbing over the fence. → A stranger ____ over the fence by the neighbors.",
+   "answer": "was seen climbing",
+   "alt": [],
+   "why": "지각동사의 보어가 현재분사였으면 수동태에서도 현재분사가 그대로 남는다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 세 단어를 쓰시오. Someone must look into the cause of the fire. → The cause of the fire must ____ at once.",
+   "answer": "be looked into",
+   "alt": [],
+   "why": "조동사가 있는 수동태는 「조동사+be p.p.」이며, look into의 전치사 into를 반드시 남긴다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 괄호 안의 말을 이용해 빈칸에 알맞은 네 단어를 쓰시오. (put) 그런 소음은 더 이상 참을 수 없다. Such noise can no longer ____ .",
+   "answer": "be put up with",
+   "alt": [],
+   "why": "put up with(~을 참다)의 수동태는 be put up with이며, 조동사 뒤이므로 원형 be를 쓴다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오. Every visitor was made sign the guest book at the entrance.",
+   "answer": "to sign",
+   "alt": [],
+   "why": "사역동사 make의 수동태 be made 뒤에는 원형이 아니라 to부정사가 온다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 네 단어를 쓰시오. The council did away with the outdated rule last spring. → The outdated rule ____ last spring.",
+   "answer": "was done away with",
+   "alt": [],
+   "why": "do away with의 수동태는 전치사를 모두 남긴 be done away with이다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 네 단어를 쓰시오. 그 아이는 이모의 보살핌을 받았다. The child ____ by his aunt.",
+   "answer": "was taken care of",
+   "alt": [],
+   "why": "take care of의 수동태는 be taken care of이고, 그 뒤에 행위자를 나타내는 by가 온다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 네 단어를 쓰시오. The whole audience laughed at the nervous comedian. → The nervous comedian ____ the whole audience.",
+   "answer": "was laughed at by",
+   "alt": [],
+   "why": "laugh at의 수동태 be laughed at 뒤에 행위자를 나타내는 by가 다시 필요하다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 세 단어를 쓰시오. The board turned down her application without any explanation. → Her application ____ without any explanation.",
+   "answer": "was turned down",
+   "alt": [],
+   "why": "turn down(거절하다)의 수동태는 be turned down이다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 여섯 단어를 쓰시오. Nobody has ever seen him lose his temper. → He ____ his temper.",
+   "answer": "has never been seen to lose",
+   "alt": [],
+   "why": "현재완료 수동태 has been p.p.에 지각동사의 to부정사 보어가 결합한 형태이며, Nobody의 부정은 never로 옮긴다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 네 단어를 쓰시오. The manager should deal with the complaint immediately. → The complaint ____ immediately.",
+   "answer": "should be dealt with",
+   "alt": [],
+   "why": "조동사+be p.p.에 deal with의 with를 남겨 should be dealt with가 된다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 세 단어를 쓰시오. The staff kept the museum open until midnight. → The museum ____ until midnight.",
+   "answer": "was kept open",
+   "alt": [],
+   "why": "keep+O+형용사보어의 수동태로 보어 open이 그대로 남는다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 다섯 단어를 쓰시오. All the villagers look up to the old teacher. → The old teacher ____ all the villagers.",
+   "answer": "is looked up to by",
+   "alt": [],
+   "why": "look up to의 수동태는 be looked up to이고, 행위자 앞에는 전치사 by를 다시 쓴다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사를 한 단어로 쓰시오. During the blizzard the mountain village was cut off ____ the rest of the country.",
+   "answer": "from",
+   "alt": [
+    "From"
+   ],
+   "why": "be cut off from(~로부터 고립되다)은 from을 쓰는 표현이다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. The flood victims were provided <u>of</u> temporary housing and warm meals.",
+   "answer": "with",
+   "alt": [
+    "With"
+   ],
+   "why": "be provided with(~을 제공받다)가 올바른 형태다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 네 단어를 쓰시오. My parents made me practice the violin every morning. → I ____ the violin every morning.",
+   "answer": "was made to practice",
+   "alt": [],
+   "why": "사역동사 make의 원형부정사 보어는 수동태에서 to부정사가 된다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 부분을 찾아 한 단어로 바르게 고쳐 쓰시오. The wooden bridge was disappeared during last summer's flood.",
+   "answer": "disappeared",
+   "alt": [],
+   "why": "disappear는 목적어를 취하지 않는 자동사이므로 수동태로 쓸 수 없다. 능동형 disappeared가 맞다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 세 단어를 쓰시오. 그의 제안은 회의에서 거의 주목받지 못했다. Little attention ____ his suggestion at the meeting.",
+   "answer": "was paid to",
+   "alt": [],
+   "why": "pay attention to의 수동태로, attention이 주어가 되어도 전치사 to는 남는다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. Students are not permitted <u>using</u> their phones during the examination.",
+   "answer": "to use",
+   "alt": [],
+   "why": "permit+O+to부정사의 수동태이므로 be permitted 뒤에는 to부정사가 온다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 다섯 단어를 쓰시오. The workers were making use of the empty warehouse. → The empty warehouse ____ by the workers.",
+   "answer": "was being made use of",
+   "alt": [],
+   "why": "진행형 수동태 be being p.p.에 make use of의 use of가 그대로 붙은 형태다.",
+   "no": 200
+  }
+ ]
+}

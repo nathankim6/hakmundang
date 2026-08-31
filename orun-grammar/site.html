@@ -251,8 +251,8 @@ function catView(){
 function qHtml(q){
   let body='<div class="stem">'+fmt(q.stem)+'</div>';
   if(q.type==='mc') body+='<ol class="ch">'+q.choices.map((c,i)=>'<li>'+CIRC[i]+' '+fmt(c)+'</li>').join('')+'</ol>';
-  const ansTxt=q.type==='mc'? CIRC[q.answer-1]+' '+esc(q.choices[q.answer-1]) :
-      esc(q.answer)+(q.alt&&q.alt.length?' <span class="hint">(허용: '+esc(q.alt.join(', '))+')</span>':'');
+  const ansTxt=q.type==='mc'? CIRC[q.answer-1]+' '+fmt(q.choices[q.answer-1]) :
+      fmt(q.answer)+(q.alt&&q.alt.length?' <span class="hint">(허용: '+esc(q.alt.join(', '))+')</span>':'');
   return '<div class="q"><div class="head"><span class="num">'+String(q.no).padStart(2,'0')+'</span>'+
     '<div style="flex:1">'+body+'</div>'+
     '<span class="tags"><span class="tag lv'+q.level+'">'+q.level+'</span><span class="tag">'+(q.type==='mc'?'객관식':'주관식')+'</span></span></div>'+
@@ -340,7 +340,7 @@ function printExam(withKey){
     html+='<div>'+'<div class="pmast"><div class="t1">'+esc(cfg.title)+' — 정답 및 해설</div>'+
       '<div class="t2"><b>ORUN GRAMMAR</b>교사용</div></div>'+
       '<table class="rep pkey" style="margin-top:10px"><tr><th style="width:36px">번호</th><th style="width:170px">정답</th><th>해설</th></tr>'+
-      qs.map(q=>'<tr><td>'+q.seq+'</td><td>'+(q.type==='mc'?CIRC[q.answer-1]+' '+esc(q.choices[q.answer-1]):esc(q.answer))+
+      qs.map(q=>'<tr><td>'+q.seq+'</td><td>'+(q.type==='mc'?CIRC[q.answer-1]+' '+fmt(q.choices[q.answer-1]):fmt(q.answer))+
         '</td><td>'+esc(q.why)+'</td></tr>').join('')+'</table></div>';
   }
   P.innerHTML=html; window.print();
@@ -457,8 +457,8 @@ function reportView(){
   '<div class="panel"><h3>문항별 결과</h3><table class="rep"><tr><th style="width:34px">번호</th><th>문제</th><th style="width:40px">결과</th><th style="width:150px">내 답</th><th style="width:150px">정답</th></tr>'+
   R.rows.map(r=>{
     const q=r.q;
-    const myTxt=q.type==='mc'?(r.my?CIRC[r.my-1]:'—'):esc(r.my||'—');
-    const anTxt=q.type==='mc'?CIRC[q.answer-1]+' '+esc(q.choices[q.answer-1]):esc(q.answer);
+    const myTxt=q.type==='mc'?(r.my?CIRC[r.my-1]:'—'):fmt(r.my||'—');
+    const anTxt=q.type==='mc'?CIRC[q.answer-1]+' '+fmt(q.choices[q.answer-1]):fmt(q.answer);
     return '<tr><td>'+q.seq+'</td><td>'+fmt(q.stem)+(r.ok?'':'<div class="hint" style="margin-top:4px">해설: '+esc(q.why)+'</div>')+'</td>'+
       '<td class="'+(r.ok?'ok">O':'no">X')+'</td><td>'+myTxt+'</td><td>'+anTxt+'</td></tr>';
   }).join('')+'</table></div>';
@@ -476,8 +476,8 @@ function printReport(){
    '<table class="rep" style="margin-top:12px"><tr><th style="width:34px">번호</th><th>문제 / 해설(오답)</th><th style="width:36px">결과</th><th style="width:130px">내 답</th><th style="width:130px">정답</th></tr>'+
    R.rows.map(r=>{const q=r.q;
      return '<tr><td>'+q.seq+'</td><td>'+fmt(q.stem)+(r.ok?'':'<div style="color:#666;margin-top:3px;font-size:12px">'+esc(q.why)+'</div>')+'</td>'+
-     '<td class="'+(r.ok?'ok">O':'no">X')+'</td><td>'+(q.type==='mc'?(r.my?CIRC[r.my-1]:'—'):esc(r.my||'—'))+'</td>'+
-     '<td>'+(q.type==='mc'?CIRC[q.answer-1]:esc(q.answer))+'</td></tr>';}).join('')+'</table>';
+     '<td class="'+(r.ok?'ok">O':'no">X')+'</td><td>'+(q.type==='mc'?(r.my?CIRC[r.my-1]:'—'):fmt(r.my||'—'))+'</td>'+
+     '<td>'+(q.type==='mc'?CIRC[q.answer-1]:fmt(q.answer))+'</td></tr>';}).join('')+'</table>';
   window.print();
 }
 

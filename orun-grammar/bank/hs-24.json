@@ -1,0 +1,2701 @@
+{
+ "id": "hs-24",
+ "grade": "고등",
+ "name": "5형식 심화",
+ "points": [
+  "to-v 목적보어",
+  "사역·지각동사 원형",
+  "get/help의 목적보어"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My mom wants me ____ my room every Saturday.",
+   "choices": [
+    "clean",
+    "to clean",
+    "cleaning",
+    "cleaned",
+    "cleans"
+   ],
+   "answer": 2,
+   "why": "want는 목적격보어로 to부정사를 취하므로 to clean이 맞다. 동사원형·-ing·과거분사는 want의 보어가 될 수 없다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Our teacher made us ____ the poem aloud.",
+   "choices": [
+    "read",
+    "to read",
+    "reading",
+    "to reading",
+    "reads"
+   ],
+   "answer": 1,
+   "why": "사역동사 make는 목적격보어로 동사원형을 쓴다. to read처럼 to를 붙이면 틀린다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I saw Kevin ____ into the classroom a minute ago.",
+   "choices": [
+    "to run",
+    "to running",
+    "run",
+    "ran",
+    "runs"
+   ],
+   "answer": 3,
+   "why": "지각동사 see는 목적격보어로 동사원형을 쓴다. 보어 자리에는 시제를 가진 ran·runs나 to부정사가 올 수 없다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My aunt let her son ____ video games for an hour.",
+   "choices": [
+    "to play",
+    "playing",
+    "play",
+    "played",
+    "plays"
+   ],
+   "answer": 3,
+   "why": "사역동사 let은 목적격보어로 반드시 동사원형을 쓴다. to play·playing은 불가하다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Dad had me ____ the dishes after dinner.",
+   "choices": [
+    "wash",
+    "washing",
+    "to wash",
+    "washes",
+    "washed"
+   ],
+   "answer": 1,
+   "why": "사역동사 have는 목적어가 직접 행동할 때 동사원형을 쓴다. me가 설거지를 하는 주체이므로 p.p.인 washed는 안 된다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Ms. Park helped me ____ the heavy boxes to the third floor.",
+   "choices": [
+    "carrying",
+    "carried",
+    "to carrying",
+    "carries",
+    "carry"
+   ],
+   "answer": 5,
+   "why": "help는 목적격보어로 동사원형이나 to부정사를 쓴다. 선지 중 가능한 형태는 동사원형 carry뿐이다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The doctor advised him ____ more water every day.",
+   "choices": [
+    "drink",
+    "drinking",
+    "drinks",
+    "drunk",
+    "to drink"
+   ],
+   "answer": 5,
+   "why": "advise는 「advise+목적어+to-v」 형태로 쓴다. 사역동사가 아니므로 동사원형 drink는 올 수 없다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I heard the baby ____ in the next room.",
+   "choices": [
+    "to cry",
+    "cried",
+    "cries",
+    "to crying",
+    "cry"
+   ],
+   "answer": 5,
+   "why": "지각동사 hear의 목적격보어는 동사원형이다. cried·cries는 시제를 가진 형태라 보어가 될 수 없다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She got her brother ____ her with the math homework.",
+   "choices": [
+    "to help",
+    "helping",
+    "help",
+    "helped",
+    "helps"
+   ],
+   "answer": 1,
+   "why": "get은 '~하게 하다'라는 뜻이어도 목적격보어로 to부정사를 쓴다. 동사원형 help는 make/have/let에만 쓴다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I had my bike ____ at the shop yesterday.",
+   "choices": [
+    "fix",
+    "to fix",
+    "fixing",
+    "fixes",
+    "fixed"
+   ],
+   "answer": 5,
+   "why": "자전거는 고쳐지는 대상이므로 「have+목적어+p.p.」를 쓴다. 목적어와 보어의 관계가 수동이면 p.p.이다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The teacher told us ____ quiet during the test.",
+   "choices": [
+    "to be",
+    "being",
+    "be",
+    "been",
+    "is"
+   ],
+   "answer": 1,
+   "why": "tell은 「tell+목적어+to-v」로 쓰므로 to be가 맞다. 동사원형 be는 사역·지각동사 뒤에서만 쓴다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Please let me ____ your new tablet for a second.",
+   "choices": [
+    "seeing",
+    "see",
+    "seen",
+    "to see",
+    "sees"
+   ],
+   "answer": 2,
+   "why": "let의 목적격보어는 언제나 동사원형이다. to see·seeing은 쓸 수 없다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My parents don't allow me ____ out after ten.",
+   "choices": [
+    "stay",
+    "staying",
+    "stayed",
+    "stays",
+    "to stay"
+   ],
+   "answer": 5,
+   "why": "allow는 「allow+목적어+to-v」 구문을 쓴다. 동사원형은 사역동사 뒤에만 온다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "We watched the players ____ onto the field.",
+   "choices": [
+    "to walk",
+    "walked",
+    "walks",
+    "walk",
+    "to walking"
+   ],
+   "answer": 4,
+   "why": "지각동사 watch의 목적격보어는 동사원형이다. to walk나 시제형은 보어 자리에 올 수 없다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The heavy rain made the road ____ very dangerous.",
+   "choices": [
+    "to become",
+    "become",
+    "becoming",
+    "became",
+    "becomes"
+   ],
+   "answer": 2,
+   "why": "사역동사 make 뒤에는 동사원형 become이 온다. became은 시제를 가진 형태라 보어가 될 수 없다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Mr. Han helped the children ____ their names on the card.",
+   "choices": [
+    "writing",
+    "wrote",
+    "to writing",
+    "write",
+    "writes"
+   ],
+   "answer": 4,
+   "why": "help는 목적격보어로 동사원형이나 to부정사를 쓴다. 선지에서 가능한 것은 write뿐이다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He asked me ____ him a favor.",
+   "choices": [
+    "do",
+    "doing",
+    "does",
+    "done",
+    "to do"
+   ],
+   "answer": 5,
+   "why": "ask는 「ask+목적어+to-v」로 쓴다. do 같은 동사원형은 사역·지각동사의 보어 형태이다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The coach made the team ____ for two more hours.",
+   "choices": [
+    "to practice",
+    "practiced",
+    "practice",
+    "practices",
+    "to practicing"
+   ],
+   "answer": 3,
+   "why": "사역동사 make의 목적격보어는 동사원형이므로 practice가 맞다. to practice는 make와 함께 쓰지 않는다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Nothing will make me ____ my mind about it.",
+   "choices": [
+    "change",
+    "changing",
+    "to change",
+    "changed",
+    "changes"
+   ],
+   "answer": 1,
+   "why": "make+목적어+동사원형 구문이다. 내가 마음을 바꾸는 능동 관계이므로 changed도 쓸 수 없다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My sister wants us ____ her at the station at six.",
+   "choices": [
+    "meet",
+    "meeting",
+    "to meet",
+    "met",
+    "meets"
+   ],
+   "answer": 3,
+   "why": "want의 목적격보어는 to부정사이다. 「want+목적어+동사원형」은 쓰지 않는다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 (A), (B)의 네모 안에서 어법에 맞는 것끼리 짝지은 것은?\nMr. Kim let us (A)[use / to use] his laptop, and he asked us (B)[return / to return] it by five.",
+   "choices": [
+    "use – return",
+    "use – to return",
+    "to use – return",
+    "to use – to return",
+    "using – to return"
+   ],
+   "answer": 2,
+   "why": "(A) let의 보어는 동사원형 use, (B) ask의 보어는 to부정사 to return이다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 (A), (B)의 네모 안에서 어법에 맞는 것끼리 짝지은 것은?\nMy father made me (A)[wait / to wait] outside, but he allowed my sister (B)[come / to come] in.",
+   "choices": [
+    "wait – come",
+    "to wait – to come",
+    "to wait – come",
+    "wait – to come",
+    "waiting – coming"
+   ],
+   "answer": 4,
+   "why": "(A) 사역동사 make 뒤에는 동사원형 wait, (B) allow 뒤에는 to부정사 to come을 쓴다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 (A), (B)의 네모 안에서 어법에 맞는 것끼리 짝지은 것은?\nI saw a cat (A)[jump / to jump] over the fence, and I heard it (B)[cry / to cry] loudly.",
+   "choices": [
+    "to jump – cry",
+    "jump – to cry",
+    "jump – cry",
+    "to jump – to cry",
+    "jumping – to cry"
+   ],
+   "answer": 3,
+   "why": "지각동사 see와 hear는 모두 목적격보어로 동사원형을 쓴다. 따라서 jump – cry가 맞다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 (A), (B)의 네모 안에서 어법에 맞는 것끼리 짝지은 것은?\nThe nurse got him (A)[take / to take] the pills and helped him (B)[sit / to sitting] up.",
+   "choices": [
+    "take – sit",
+    "to take – sit",
+    "take – to sitting",
+    "to take – to sitting",
+    "taking – sit"
+   ],
+   "answer": 2,
+   "why": "(A) get의 보어는 to부정사 to take, (B) help의 보어는 동사원형 sit 또는 to sit이며 to sitting은 불가능하다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 (A), (B)의 네모 안에서 어법에 맞는 것끼리 짝지은 것은?\nEmma had her hair (A)[cut / cutting] on Friday and had her brother (B)[drive / to drive] her home.",
+   "choices": [
+    "cut – drive",
+    "cut – to drive",
+    "cutting – drive",
+    "cutting – to drive",
+    "cut – driving"
+   ],
+   "answer": 1,
+   "why": "(A) 머리는 잘리는 대상이므로 p.p. cut, (B) 남동생은 직접 운전하는 주체이므로 동사원형 drive를 쓴다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 (A), (B)의 네모 안에서 어법에 맞는 것끼리 짝지은 것은?\nThe law does not permit children (A)[work / to work] at night, and it makes companies (B)[follow / to follow] strict rules.",
+   "choices": [
+    "work – follow",
+    "work – to follow",
+    "to work – follow",
+    "to work – to follow",
+    "to work – following"
+   ],
+   "answer": 3,
+   "why": "(A) permit은 to부정사를 보어로 취하고, (B) 사역동사 make는 동사원형을 보어로 취한다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 (A), (B)의 네모 안에서 어법에 맞는 것끼리 짝지은 것은?\nWe felt the ground (A)[shake / to shake] and watched the lamp (B)[fall / to fall].",
+   "choices": [
+    "shake – to fall",
+    "shake – fall",
+    "to shake – fall",
+    "to shake – to fall",
+    "shaking – to fall"
+   ],
+   "answer": 2,
+   "why": "feel과 watch는 지각동사이므로 목적격보어로 동사원형 shake와 fall을 쓴다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 (A), (B)의 네모 안에서 어법에 맞는 것끼리 짝지은 것은?\nMy teacher encouraged me (A)[join / to join] the club and let me (B)[choose / to choose] my own topic.",
+   "choices": [
+    "join – choose",
+    "join – to choose",
+    "to join – choosing",
+    "to join – to choose",
+    "to join – choose"
+   ],
+   "answer": 5,
+   "why": "(A) encourage는 to부정사를, (B) 사역동사 let은 동사원형을 목적격보어로 취한다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은?",
+   "choices": [
+    "They made him to leave the room.",
+    "She let me to use her umbrella.",
+    "I heard him to sing a song.",
+    "The nurse helped him standing up.",
+    "My dad had me clean the garage."
+   ],
+   "answer": 5,
+   "why": "사역동사 have의 보어는 동사원형이므로 ⑤가 옳다. ①②는 to를 빼야 하고, ③은 sing, ④는 stand[to stand]로 고쳐야 한다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "She got her son to wear a coat.",
+    "The rain made us to stay inside.",
+    "I want you come home early.",
+    "We saw the boys to play soccer.",
+    "He helped me finding my phone."
+   ],
+   "answer": 1,
+   "why": "get은 목적격보어로 to부정사를 쓰므로 ①이 옳다. ③은 to come, ②는 stay, ④는 play, ⑤는 find[to find]로 고쳐야 한다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은?",
+   "choices": [
+    "My mom told me to walk the dog.",
+    "I saw him to enter the shop.",
+    "She had the walls painted.",
+    "The movie made me cry.",
+    "He helped us pack the bags."
+   ],
+   "answer": 2,
+   "why": "지각동사 see의 보어는 동사원형이므로 to enter를 enter로 고쳐야 한다. 나머지는 모두 어법에 맞다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은?",
+   "choices": [
+    "The teacher made the class to line up.",
+    "They asked us to be quiet.",
+    "Let me carry your bag.",
+    "I heard the door close.",
+    "We got the car washed."
+   ],
+   "answer": 1,
+   "why": "사역동사 make의 보어는 동사원형이므로 to line up을 line up으로 고쳐야 한다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "어법상 바른 문장을 고르시오.",
+   "choices": [
+    "She wants me helping her.",
+    "The guard made them show their tickets.",
+    "I had my watch repair.",
+    "He let the dog to run free.",
+    "They watched the plane to take off."
+   ],
+   "answer": 2,
+   "why": "make+목적어+동사원형 구문인 ②가 옳다. ①은 to help, ③은 repaired, ④는 run, ⑤는 take off로 고쳐야 한다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "어법상 어색한 문장을 고르시오.",
+   "choices": [
+    "Please let me to know your answer.",
+    "Nobody heard the alarm ring.",
+    "My sister helped me to write the card.",
+    "The doctor got me to rest for a week.",
+    "They allowed us to take pictures."
+   ],
+   "answer": 1,
+   "why": "let의 목적격보어는 동사원형이므로 to know를 know로 고쳐야 한다. ③의 help는 to부정사도 허용된다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 틀린 것은?",
+   "choices": [
+    "My parents made me <u>study</u> harder.",
+    "She helped her mom <u>cook</u> dinner.",
+    "He let his friend <u>borrow</u> the book.",
+    "I want you <u>be</u> honest with me.",
+    "We heard the bell <u>ring</u>."
+   ],
+   "answer": 4,
+   "why": "want의 목적격보어는 to부정사이므로 be를 to be로 고쳐야 한다. 나머지는 사역·지각·help 동사라 동사원형이 맞다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 어색한 것은?",
+   "choices": [
+    "The teacher had us <u>write</u> an essay.",
+    "I saw her <u>dance</u> on the stage.",
+    "My coach advised me <u>rest</u> for a day.",
+    "They got the room <u>cleaned</u>.",
+    "Mom let me <u>stay</u> up late."
+   ],
+   "answer": 3,
+   "why": "advise는 「advise+목적어+to-v」로 쓰므로 rest를 to rest로 고쳐야 한다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 부분의 쓰임이 바르지 않은 것은?",
+   "choices": [
+    "She asked him <u>to close</u> the window.",
+    "The rule allows students <u>to leave</u> early.",
+    "I had my shoes <u>fixed</u>.",
+    "We watched the sun <u>set</u>.",
+    "He made his sister <u>to laugh</u>."
+   ],
+   "answer": 5,
+   "why": "사역동사 make 뒤에는 동사원형이 오므로 to laugh를 laugh로 고쳐야 한다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분이 어법상 틀린 것은?",
+   "choices": [
+    "I felt something <u>touch</u> my arm.",
+    "The nurse helped the boy <u>to walk</u>.",
+    "Let him <u>speak</u> first.",
+    "They made us <u>wait</u> in line.",
+    "My aunt got me <u>join</u> the choir."
+   ],
+   "answer": 5,
+   "why": "get의 목적격보어는 to부정사이므로 join을 to join으로 고쳐야 한다. ②의 help는 to부정사도 가능하다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· My father ____ me wash the car last Sunday.\n· Sujin ____ her hair cut yesterday.",
+   "choices": [
+    "had",
+    "made",
+    "let",
+    "got",
+    "helped"
+   ],
+   "answer": 1,
+   "why": "have는 목적어가 행동하면 동사원형을, 목적어가 당하면 p.p.를 보어로 쓸 수 있다. let·made는 p.p. 보어를 못 쓰고, got은 첫 문장에서 to wash를 요구한다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· The teacher ____ us to hand in the report by Friday.\n· I ____ my computer repaired last week.",
+   "choices": [
+    "made",
+    "let",
+    "got",
+    "had",
+    "saw"
+   ],
+   "answer": 3,
+   "why": "get은 「get+목적어+to-v」와 「get+목적어+p.p.」를 모두 쓸 수 있다. made·had는 첫 문장에서 동사원형을 요구하므로 안 된다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· Please ____ me know your decision.\n· The librarian didn't ____ us talk loudly.",
+   "choices": [
+    "made",
+    "let",
+    "allow",
+    "get",
+    "had"
+   ],
+   "answer": 2,
+   "why": "두 빈칸 모두 동사원형 자리이면서 뒤에 동사원형 보어가 오므로 let이 알맞다. allow·get은 to부정사 보어를 요구한다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Why do you look so tired today?\nB: My boss made me ____ overtime last night.",
+   "choices": [
+    "works",
+    "to work",
+    "working",
+    "worked",
+    "work"
+   ],
+   "answer": 5,
+   "why": "사역동사 make의 목적격보어는 동사원형이므로 work가 맞다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Can I go camping this weekend?\nB: Sure. But I want you ____ home before eight on Sunday.",
+   "choices": [
+    "come",
+    "coming",
+    "comes",
+    "came",
+    "to come"
+   ],
+   "answer": 5,
+   "why": "want의 목적격보어는 to부정사이므로 to come이 알맞다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Your phone screen looks brand-new.\nB: Yes, I had it ____ at the service center yesterday.",
+   "choices": [
+    "replace",
+    "replaced",
+    "to replace",
+    "replacing",
+    "replaces"
+   ],
+   "answer": 2,
+   "why": "화면은 교체되는 대상이므로 「have+목적어+p.p.」를 써서 replaced가 맞다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\n(a) She let me to drive her car.\n(b) I saw him cross the road.\n(c) The teacher made us to be quiet.\n(d) My mom had me set the table.\n(e) He helped me carry the chairs.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "(b), (d), (e) 세 문장이 옳다. (a)는 drive, (c)는 be로 고쳐야 한다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?\n(a) They got me to sign the paper.\n(b) I had my bag steal on the subway.\n(c) We watched the boys to swim in the pool.\n(d) Please let me help you.\n(e) The news made her cry.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "(b)는 stolen, (c)는 swim으로 고쳐야 하므로 틀린 문장은 두 개다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n선생님은 우리에게 그 책을 읽으라고 요청하셨다.",
+   "choices": [
+    "The teacher asked us read the book.",
+    "The teacher asked to us read the book.",
+    "The teacher asked us reading the book.",
+    "The teacher asked us to read the book.",
+    "The teacher asked us to reading the book."
+   ],
+   "answer": 4,
+   "why": "ask는 「ask+목적어+to-v」 구문을 쓰므로 asked us to read가 맞다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n나는 남동생에게 창문을 닦게 했다.",
+   "choices": [
+    "I had my brother to clean the windows.",
+    "I had my brother cleans the windows.",
+    "I had my brother cleaned the windows.",
+    "I had my brother clean the windows.",
+    "I had to my brother clean the windows."
+   ],
+   "answer": 4,
+   "why": "사역동사 have는 목적격보어로 동사원형을 쓰므로 have[had]+목적어+clean이 맞다. 남동생이 직접 닦으므로 cleaned도 쓸 수 없다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오.\nMy mother made me (do) the dishes last night.",
+   "answer": "do",
+   "alt": [],
+   "why": "사역동사 make의 목적격보어는 동사원형이므로 do를 그대로 쓴다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오.\nDad let me (use) his camera on the trip.",
+   "answer": "use",
+   "alt": [],
+   "why": "let은 목적격보어로 반드시 동사원형을 쓴다. to use나 using은 불가능하다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오.\nShe wants her son (become) a doctor.",
+   "answer": "to become",
+   "alt": [],
+   "why": "want는 「want+목적어+to-v」 구문을 쓰므로 to become이 된다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오. (진행의 뜻은 나타내지 말 것)\nI saw a boy (climb) the tree in the park.",
+   "answer": "climb",
+   "alt": [],
+   "why": "지각동사 see의 목적격보어는 동사원형이다. 진행 중임을 강조할 때만 -ing를 쓴다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오.\nThe doctor told him (stay) in bed for three days.",
+   "answer": "to stay",
+   "alt": [],
+   "why": "tell은 목적격보어로 to부정사를 쓰는 동사이다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오.\nWe had the roof (repair) last month.",
+   "answer": "repaired",
+   "alt": [],
+   "why": "지붕은 수리되는 대상이므로 「have+목적어+p.p.」를 써서 repaired가 된다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 동사원형으로 바꿔 쓰시오.\nHe helped his sister (finish) her science homework.",
+   "answer": "finish",
+   "alt": [],
+   "why": "help는 동사원형과 to부정사를 모두 보어로 쓸 수 있는데, 동사원형으로 쓰라고 했으므로 finish이다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe rain made us <u>to stop</u> the soccer game.",
+   "answer": "stop",
+   "alt": [],
+   "why": "사역동사 make 뒤에는 to 없는 동사원형이 온다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nMy parents allowed me <u>go</u> to the concert.",
+   "answer": "to go",
+   "alt": [],
+   "why": "allow는 목적격보어로 to부정사를 취하는 동사이다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nI heard my dog <u>to bark</u> late at night.",
+   "answer": "bark",
+   "alt": [
+    "barking"
+   ],
+   "why": "지각동사 hear의 목적격보어로는 to부정사를 쓸 수 없고 동사원형(또는 진행을 강조하는 -ing)을 쓴다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nShe got her friend <u>help</u> her with the poster.",
+   "answer": "to help",
+   "alt": [],
+   "why": "get은 사역의 뜻이지만 목적격보어로 to부정사를 쓴다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nLet me <u>to introduce</u> myself to your family.",
+   "answer": "introduce",
+   "alt": [],
+   "why": "let의 목적격보어는 언제나 동사원형이다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nI had my watch <u>fix</u> at the store yesterday.",
+   "answer": "fixed",
+   "alt": [],
+   "why": "시계는 고쳐지는 대상이므로 목적격보어를 p.p.인 fixed로 써야 한다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe teacher had us <u>to write</u> a short essay.",
+   "answer": "write",
+   "alt": [],
+   "why": "사역동사 have의 목적격보어는 동사원형이므로 to를 뺀다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 공통으로 들어갈 한 단어를 쓰시오.\n· Please ____ me know if you need any help.\n· The school rules don't ____ us use phones in class.",
+   "answer": "let",
+   "alt": [],
+   "why": "뒤에 동사원형 보어가 오고 두 빈칸 모두 동사원형 자리이므로 사역동사 let이 알맞다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nI want you ____ be more careful next time.",
+   "answer": "to",
+   "alt": [],
+   "why": "want의 목적격보어는 to부정사이므로 be 앞에 to가 필요하다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.\nThe coach didn't allow us ____ leave the gym early.",
+   "answer": "to",
+   "alt": [],
+   "why": "allow는 「allow+목적어+to-v」로 쓰므로 leave 앞에 to를 넣는다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 「let+목적어+동사원형」을 이용해 같은 뜻이 되도록 바꿔 쓰시오.\nMy father allowed me to watch TV after dinner.",
+   "answer": "My father let me watch TV after dinner.",
+   "alt": [
+    "My father let me watch TV after dinner"
+   ],
+   "why": "allow+목적어+to-v는 let+목적어+동사원형으로 바꿔 쓸 수 있다. 이때 to를 반드시 빼야 한다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 「have+목적어+p.p.」를 이용해 바꿔 쓰시오. (주어는 I로 할 것)\nA painter painted my room last week.",
+   "answer": "I had my room painted last week.",
+   "alt": [
+    "I had my room painted last week"
+   ],
+   "why": "남을 시켜서 한 일이고 방은 칠해지는 대상이므로 「have+목적어+p.p.」를 쓴다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 내용을 「ask+목적어+to-v」를 이용해 한 문장으로 쓰시오.\nHe said to me, \"Please open the window.\"",
+   "answer": "He asked me to open the window.",
+   "alt": [
+    "He asked me to open the window"
+   ],
+   "why": "부탁하는 말은 「ask+목적어+to-v」로 옮긴다. 동사원형 open을 그대로 쓰면 틀린다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The new policy ____ every employee to wear an ID badge in the building.",
+   "choices": [
+    "requires",
+    "lets",
+    "makes",
+    "has",
+    "sees"
+   ],
+   "answer": 1,
+   "why": "빈칸 뒤에 「목적어+to-v」가 왔으므로 to부정사를 보어로 취하는 require가 알맞다. make·let·have·see는 동사원형을 보어로 쓴다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The students were made ____ the whole passage again after class.",
+   "choices": [
+    "memorize",
+    "to memorize",
+    "memorizing",
+    "memorized",
+    "to memorizing"
+   ],
+   "answer": 2,
+   "why": "사역동사 make가 수동태가 되면 동사원형이던 목적격보어가 to부정사로 바뀐다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Two boys were seen ____ over the fence just before the alarm rang.",
+   "choices": [
+    "climb",
+    "to climb",
+    "climbed",
+    "to climbing",
+    "climbs"
+   ],
+   "answer": 2,
+   "why": "지각동사 see의 수동태에서도 동사원형 보어는 to부정사로 바뀐다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "She had her passport ____ twice at the airport.",
+   "choices": [
+    "check",
+    "checking",
+    "checked",
+    "to check",
+    "checks"
+   ],
+   "answer": 3,
+   "why": "여권은 검사받는 대상이므로 「have+목적어+p.p.」를 쓴다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "I got my sister ____ my presentation slides before the class.",
+   "choices": [
+    "check",
+    "to check",
+    "checked",
+    "checking",
+    "checks"
+   ],
+   "answer": 2,
+   "why": "목적어 my sister가 직접 확인하는 주체이므로 get의 보어로 to부정사를 쓴다. checked를 쓰면 누나가 검사당한다는 뜻이 된다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The security guard let the visitors ____ the building through the side door.",
+   "choices": [
+    "to enter",
+    "entering",
+    "entered",
+    "enter",
+    "enters"
+   ],
+   "answer": 4,
+   "why": "let의 목적격보어는 예외 없이 동사원형이다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The principal was heard ____ the new library plan at the meeting.",
+   "choices": [
+    "praise",
+    "praised",
+    "to praise",
+    "praises",
+    "to praising"
+   ],
+   "answer": 3,
+   "why": "지각동사 hear의 수동태이므로 목적격보어가 to부정사 to praise로 바뀐다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The heavy snow caused dozens of flights ____ .",
+   "choices": [
+    "cancel",
+    "to be canceled",
+    "canceled",
+    "to cancel",
+    "being canceled"
+   ],
+   "answer": 2,
+   "why": "cause는 「cause+목적어+to-v」로 쓰고, 항공편은 취소되는 대상이므로 수동형 to be canceled가 알맞다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "This app enables users ____ their daily spending in a few seconds.",
+   "choices": [
+    "track",
+    "to track",
+    "tracking",
+    "tracked",
+    "to tracking"
+   ],
+   "answer": 2,
+   "why": "enable은 목적격보어로 to부정사를 취하는 동사이다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Nobody can force him ____ his mind once he has decided.",
+   "choices": [
+    "change",
+    "changes",
+    "changing",
+    "changed",
+    "to change"
+   ],
+   "answer": 5,
+   "why": "force는 「force+목적어+to-v」 구문을 쓴다. 사역동사가 아니므로 동사원형은 쓸 수 없다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "I watched the snow ____ quietly on the roof all afternoon.",
+   "choices": [
+    "to fall",
+    "fallen",
+    "falls",
+    "falling",
+    "to falling"
+   ],
+   "answer": 4,
+   "why": "지각동사 watch는 진행 중인 동작을 강조할 때 현재분사를 목적격보어로 쓴다. 선지 중 가능한 형태는 falling뿐이다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The librarian did not allow us ____ any food into the reading room.",
+   "choices": [
+    "bring",
+    "brought",
+    "bringing",
+    "to bring",
+    "to bringing"
+   ],
+   "answer": 4,
+   "why": "allow는 목적격보어로 to부정사를 쓰는 동사이다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "He got his car ____ at the garage before the long trip.",
+   "choices": [
+    "check",
+    "to check",
+    "checking",
+    "checks",
+    "checked"
+   ],
+   "answer": 5,
+   "why": "차는 점검받는 대상이므로 「get+목적어+p.p.」를 쓴다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분을 대신하여 쓸 수 있는 것은?\nThe volunteers helped the old man <u>cross</u> the busy road.",
+   "choices": [
+    "crossed",
+    "crossing",
+    "to cross",
+    "to crossing",
+    "crosses"
+   ],
+   "answer": 3,
+   "why": "help는 목적격보어로 동사원형과 to부정사를 모두 쓸 수 있으므로 cross는 to cross로 바꿀 수 있다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Please remind Jenny ____ the electricity bill before Friday.",
+   "choices": [
+    "pay",
+    "to pay",
+    "paying",
+    "paid",
+    "to paying"
+   ],
+   "answer": 2,
+   "why": "remind는 「remind+목적어+to-v」 구문을 쓴다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "I felt the floor ____ under my feet during the earthquake.",
+   "choices": [
+    "to shake",
+    "shaken",
+    "shake",
+    "shakes",
+    "to shaking"
+   ],
+   "answer": 3,
+   "why": "지각동사 feel의 목적격보어로는 동사원형을 쓴다. 바닥이 흔들리는 능동 관계이므로 shaken도 안 된다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 (A), (B)의 네모 안에서 어법에 맞는 것끼리 짝지은 것은?\nThe doctor had the patient (A)[stay / to stay] in bed and had his blood pressure (B)[check / checked] every morning.",
+   "choices": [
+    "stay – check",
+    "to stay – checked",
+    "to stay – check",
+    "stay – checked",
+    "staying – checked"
+   ],
+   "answer": 4,
+   "why": "(A) 환자가 직접 누워 있으므로 동사원형 stay, (B) 혈압은 재어지는 대상이므로 p.p. checked를 쓴다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 (A), (B)의 네모 안에서 어법에 맞는 것끼리 짝지은 것은?\nThe coach let the players (A)[rest / to rest] for ten minutes and then got them (B)[run / to run] one more lap.",
+   "choices": [
+    "rest – run",
+    "to rest – run",
+    "rest – to run",
+    "to rest – to run",
+    "resting – to run"
+   ],
+   "answer": 3,
+   "why": "(A) let 뒤에는 동사원형, (B) get 뒤에는 to부정사가 온다. 같은 '시키다'라도 형태가 다르다는 점이 핵심이다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 (A), (B)의 네모 안에서 어법에 맞는 것끼리 짝지은 것은?\nWe were made (A)[wait / to wait] for an hour, and then a clerk helped us (B)[find / to finding] our seats.",
+   "choices": [
+    "wait – find",
+    "to wait – find",
+    "wait – to finding",
+    "to wait – to finding",
+    "to wait – finding"
+   ],
+   "answer": 2,
+   "why": "(A) make의 수동태이므로 to wait, (B) help의 보어는 동사원형이나 to부정사이며 to finding은 불가능하다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 (A), (B)의 네모 안에서 어법에 맞는 것끼리 짝지은 것은?\nI noticed the man (A)[searching / to search] his pockets and watched him (B)[walk / to walk] back into the café.",
+   "choices": [
+    "searched – walk",
+    "searching – to walk",
+    "to search – walk",
+    "to search – to walk",
+    "searching – walk"
+   ],
+   "answer": 5,
+   "why": "(A) 진행 중인 동작이므로 현재분사 searching, (B) 지각동사 watch의 보어는 동사원형 walk이다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 (A), (B)의 네모 안에서 어법에 맞는 것끼리 짝지은 것은?\nThe law requires drivers (A)[wear / to wear] seat belts and does not permit them (B)[use / to use] phones while driving.",
+   "choices": [
+    "wear – use",
+    "wear – to use",
+    "to wear – to use",
+    "to wear – use",
+    "to wear – using"
+   ],
+   "answer": 3,
+   "why": "require와 permit은 모두 목적격보어로 to부정사를 취한다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 (A), (B)의 네모 안에서 어법에 맞는 것끼리 짝지은 것은?\nShe had her son (A)[clean / cleaned] his own room, and she had the living-room carpet (B)[clean / cleaned] by a professional.",
+   "choices": [
+    "clean – cleaned",
+    "clean – clean",
+    "cleaned – clean",
+    "cleaned – cleaned",
+    "cleaning – cleaned"
+   ],
+   "answer": 1,
+   "why": "(A) 아들이 직접 청소하므로 동사원형, (B) 카펫은 청소되는 대상이므로 p.p.를 쓴다. 목적어와 보어의 관계로 형태가 결정된다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 (A), (B)의 네모 안에서 어법에 맞는 것끼리 짝지은 것은?\nMy uncle got me (A)[try / to try] scuba diving and made me (B)[feel / to feel] confident in the water.",
+   "choices": [
+    "try – feel",
+    "try – to feel",
+    "to try – to feel",
+    "to try – feel",
+    "to try – feeling"
+   ],
+   "answer": 4,
+   "why": "get은 to부정사를, 사역동사 make는 동사원형을 목적격보어로 취한다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 (A), (B)의 네모 안에서 어법에 맞는 것끼리 짝지은 것은?\nThe teacher advised us (A)[review / to review] the notes and let us (B)[keep / to keep] the handouts.",
+   "choices": [
+    "review – keep",
+    "review – to keep",
+    "reviewing – keeping",
+    "to review – to keep",
+    "to review – keep"
+   ],
+   "answer": 5,
+   "why": "advise는 to부정사를, let은 동사원형을 목적격보어로 쓴다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "The guide made us to walk faster.",
+    "He was made clean the classroom alone.",
+    "We saw the door to open slowly.",
+    "She got her son wash the car.",
+    "I had my essay corrected by my tutor."
+   ],
+   "answer": 5,
+   "why": "「have+목적어+p.p.」를 바르게 쓴 ⑤가 옳다. ①은 walk, ②는 to clean, ④는 to wash, ③은 open으로 고쳐야 한다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞는 문장은?",
+   "choices": [
+    "The company forced him resign last month.",
+    "They were heard to argue in the hallway.",
+    "My mom let me to invite friends over.",
+    "I watched him to fix the printer.",
+    "The rain caused the game cancel."
+   ],
+   "answer": 2,
+   "why": "지각동사의 수동태에서 보어가 to부정사가 된 ②가 옳다. ①은 to resign, ③은 invite, ④는 fix, ⑤는 to be canceled로 고쳐야 한다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 바르지 않은 것은?",
+   "choices": [
+    "The noise made the baby to wake up.",
+    "He helped me to move the sofa.",
+    "I had my hair dyed last weekend.",
+    "The medicine enabled her to sleep well.",
+    "They allowed us to stay one more night."
+   ],
+   "answer": 1,
+   "why": "사역동사 make의 목적격보어는 동사원형이므로 to wake up을 wake up으로 고쳐야 한다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞지 않는 문장은?",
+   "choices": [
+    "She was seen to leave the office at six.",
+    "We got the heater repaired yesterday.",
+    "I felt someone tap my shoulder.",
+    "The teacher had us to hand in our reports.",
+    "Let me show you the way to the station."
+   ],
+   "answer": 4,
+   "why": "사역동사 have 뒤에는 to 없는 동사원형이 오므로 to hand in을 hand in으로 고쳐야 한다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 고르시오.",
+   "choices": [
+    "My boss had me to write the report again.",
+    "The nurse helped the patient sitting up.",
+    "He let the students using calculators.",
+    "We were made to apologize to the neighbors.",
+    "I heard my name to call from behind."
+   ],
+   "answer": 4,
+   "why": "make의 수동태에서는 보어가 to부정사가 되므로 ④가 옳다. ①은 write, ②는 sit[to sit], ③은 use, ⑤는 called로 고쳐야 한다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 틀린 것을 고르시오.",
+   "choices": [
+    "The manager made the customer to wait outside.",
+    "She had her luggage carried to the room.",
+    "I saw the dog running after the ball.",
+    "He got his brother to lend him some money.",
+    "The professor urged us to read the article."
+   ],
+   "answer": 1,
+   "why": "make의 목적격보어는 동사원형이므로 to wait를 wait로 고쳐야 한다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분을 고쳐야 하는 문장은?",
+   "choices": [
+    "He was made <u>apologize</u> in front of everyone.",
+    "The rule requires every rider <u>to wear</u> a helmet.",
+    "I had my shirt <u>ironed</u> this morning.",
+    "She let me <u>borrow</u> her lecture notes.",
+    "We watched the actors <u>rehearse</u> the last scene."
+   ],
+   "answer": 1,
+   "why": "사역동사 make의 수동태이므로 apologize를 to apologize로 고쳐야 한다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법에 맞지 않는 것은?",
+   "choices": [
+    "The heat caused the metal <u>to expand</u>.",
+    "My father had the mechanic <u>check</u> the brakes.",
+    "They helped us <u>to set</u> up the tent.",
+    "I got the printer <u>to fix</u> yesterday.",
+    "She heard the phone <u>ring</u> twice."
+   ],
+   "answer": 4,
+   "why": "프린터는 고쳐지는 대상이므로 to fix를 fixed로 고쳐야 한다. ②는 정비사가 직접 점검하므로 동사원형이 맞다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분의 형태가 틀린 것은?",
+   "choices": [
+    "The teacher permitted us <u>to use</u> the lab after school.",
+    "The children were seen <u>play</u> near the river.",
+    "Nothing could make her <u>change</u> her plan.",
+    "I had my photo <u>taken</u> at the studio.",
+    "He got me <u>to sign</u> the form."
+   ],
+   "answer": 2,
+   "why": "지각동사 see의 수동태이므로 play를 to play(또는 playing)로 고쳐야 한다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 목적격보어의 형태가 어법상 틀린 것은?",
+   "choices": [
+    "She noticed a stranger <u>watching</u> her from the corner.",
+    "The doctor advised him <u>to quit</u> smoking.",
+    "We let the dog <u>sleep</u> inside on cold nights.",
+    "My mom made me <u>to promise</u> to be home by ten.",
+    "They had the old tree <u>cut</u> down last week."
+   ],
+   "answer": 4,
+   "why": "사역동사 make 뒤에는 동사원형이 오므로 to promise를 promise로 고쳐야 한다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· The manager ____ us work through the weekend.\n· I ____ my report checked by a colleague.",
+   "choices": [
+    "let",
+    "made",
+    "helped",
+    "got",
+    "had"
+   ],
+   "answer": 5,
+   "why": "have는 목적어가 행위자면 동사원형을, 대상이면 p.p.를 보어로 쓸 수 있다. made는 두 번째 문장에, got은 첫 번째 문장에 쓸 수 없다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· The nurse got the child ____ take the medicine.\n· We expected the meeting ____ end before noon.",
+   "choices": [
+    "of",
+    "for",
+    "to",
+    "in",
+    "that"
+   ],
+   "answer": 3,
+   "why": "get과 expect는 모두 목적격보어로 to부정사를 취하므로 동사 앞에 to가 필요하다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· We were ____ to wait outside in the rain.\n· His joke ____ everyone in the room laugh.",
+   "choices": [
+    "made",
+    "let",
+    "had",
+    "got",
+    "helped"
+   ],
+   "answer": 1,
+   "why": "첫 문장은 make의 수동태 be made to-v, 둘째 문장은 make+목적어+동사원형이다. 두 자리를 모두 채울 수 있는 말은 made뿐이다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: How did you finish the poster so quickly?\nB: I got my classmates ____ me with it.",
+   "choices": [
+    "help",
+    "helping",
+    "helps",
+    "helped",
+    "to help"
+   ],
+   "answer": 5,
+   "why": "get의 목적격보어는 to부정사이므로 to help가 알맞다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Your jacket looks different today.\nB: I had it ____ at the tailor's shop last week.",
+   "choices": [
+    "shorten",
+    "shortened",
+    "to shorten",
+    "shortening",
+    "shortens"
+   ],
+   "answer": 2,
+   "why": "재킷은 줄여지는 대상이므로 「have+목적어+p.p.」를 써서 shortened가 된다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Why is Minsu practicing so hard these days?\nB: His coach expects him ____ the national team this year.",
+   "choices": [
+    "to make",
+    "making",
+    "make",
+    "made",
+    "makes"
+   ],
+   "answer": 1,
+   "why": "expect는 「expect+목적어+to-v」 구문을 쓴다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\n(a) We were made to clean the whole gym.\n(b) I had my luggage delivered to the hotel.\n(c) The teacher got us memorize the poem.\n(d) She was seen to enter the library.\n(e) He helped his father to repair the fence.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "(c)만 틀렸고 나머지 네 문장은 옳다. (c)는 get의 보어이므로 to memorize가 되어야 한다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?\n(a) The film made me to think about my family.\n(b) They had the documents translated into Korean.\n(c) I felt the bus stopping suddenly.\n(d) My parents want me become a teacher.\n(e) The guard let us to take a shortcut.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "(a) think, (d) to become, (e) take로 고쳐야 하므로 틀린 문장은 세 개다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그 코치는 선수들에게 물을 충분히 마시게 했다.",
+   "choices": [
+    "The coach had the players to drink enough water.",
+    "The coach had the players drinks enough water.",
+    "The coach had the players drink enough water.",
+    "The coach had the players drunk enough water.",
+    "The coach had to the players drink enough water."
+   ],
+   "answer": 3,
+   "why": "사역동사 have의 목적격보어는 동사원형이다. 선수들이 직접 마시므로 drunk도 쓸 수 없다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n나는 지난 주말에 세차를 맡겼다. (다른 사람이 하게 함)",
+   "choices": [
+    "I had my car washed last weekend.",
+    "I had my car wash last weekend.",
+    "I had washed my car last weekend.",
+    "I washed my car last weekend.",
+    "I had my car to wash last weekend."
+   ],
+   "answer": 1,
+   "why": "남을 시켜서 한 일이고 차는 씻기는 대상이므로 「have+목적어+p.p.」를 쓴다. ④는 내가 직접 씻었다는 뜻이다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분의 쓰임이 나머지 넷과 다른 것은?",
+   "choices": [
+    "I had my computer <u>repaired</u> yesterday.",
+    "She had her bag <u>stolen</u> on the subway.",
+    "We had the walls <u>painted</u> white.",
+    "He had his students <u>write</u> a short essay.",
+    "They had the package <u>delivered</u> to the office."
+   ],
+   "answer": 4,
+   "why": "①②③⑤는 목적어와 보어가 수동 관계라 p.p.를 썼지만, ④는 학생들이 직접 쓰는 능동 관계라 동사원형을 썼다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장을 수동태로 바꿀 때 빈칸에 알맞은 것은?\nThe teacher made the students rewrite the essay.\n→ The students were made ____ the essay by the teacher.",
+   "choices": [
+    "rewrite",
+    "rewriting",
+    "to rewriting",
+    "rewritten",
+    "to rewrite"
+   ],
+   "answer": 5,
+   "why": "사역동사 make가 수동태가 되면 동사원형 보어가 to부정사로 바뀐다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오.\nThe audience was made (leave) the hall immediately.",
+   "answer": "to leave",
+   "alt": [],
+   "why": "사역동사 make의 수동태에서는 목적격보어인 동사원형이 to부정사로 바뀐다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오. (to부정사로 쓸 것)\nHe was heard (shout) at someone on the phone.",
+   "answer": "to shout",
+   "alt": [],
+   "why": "지각동사 hear의 수동태이므로 보어가 to부정사가 된다. 능동태였다면 동사원형 shout였다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오.\nI had the mechanic (replace) the front tire.",
+   "answer": "replace",
+   "alt": [],
+   "why": "정비사가 직접 교체하는 능동 관계이므로 「have+목적어+동사원형」을 쓴다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오.\nI had the front tire (replace) at the garage.",
+   "answer": "replaced",
+   "alt": [],
+   "why": "타이어는 교체되는 대상이므로 「have+목적어+p.p.」를 쓴다. 앞 문장과 목적어가 달라지면 보어의 형태도 달라진다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오.\nThe rule requires all guests (register) at the front desk.",
+   "answer": "to register",
+   "alt": [],
+   "why": "require는 목적격보어로 to부정사를 취하는 동사이다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 동사원형으로 바꿔 쓰시오.\nWe watched the firefighters (rescue) two children from the roof.",
+   "answer": "rescue",
+   "alt": [],
+   "why": "지각동사 watch의 목적격보어로 동사원형을 쓴다. 진행을 강조할 때만 -ing를 쓴다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오.\nThe new software enables us (share) large files instantly.",
+   "answer": "to share",
+   "alt": [],
+   "why": "enable은 「enable+목적어+to-v」 구문으로 쓴다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오.\nShe got her little brother (tie) his own shoelaces.",
+   "answer": "to tie",
+   "alt": [],
+   "why": "get은 '~하게 하다'라는 뜻이지만 목적격보어로 to부정사를 쓴다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe manager made the client <u>to sign</u> two copies of the contract.",
+   "answer": "sign",
+   "alt": [],
+   "why": "사역동사 make의 목적격보어는 to 없는 동사원형이다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe workers were made <u>work</u> extra hours without pay.",
+   "answer": "to work",
+   "alt": [],
+   "why": "make가 수동태로 쓰이면 보어가 to부정사로 바뀐다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nI got my essay <u>to check</u> by my homeroom teacher.",
+   "answer": "checked",
+   "alt": [],
+   "why": "에세이는 검사받는 대상이므로 「get+목적어+p.p.」를 써야 한다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe professor permitted us <u>record</u> the lecture.",
+   "answer": "to record",
+   "alt": [],
+   "why": "permit은 목적격보어로 to부정사를 취한다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nShe was seen <u>enter</u> the meeting room at noon.",
+   "answer": "to enter",
+   "alt": [
+    "entering"
+   ],
+   "why": "지각동사 see의 수동태에서는 동사원형 보어를 쓸 수 없고 to부정사(또는 현재분사)로 바꿔야 한다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nMy father had his tooth <u>pull</u> out last week.",
+   "answer": "pulled",
+   "alt": [],
+   "why": "이는 뽑히는 대상이므로 목적격보어를 p.p.로 써야 한다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 수동태로 바꿔 쓰시오. (by the teacher를 쓸 것)\nThe teacher made us stand in line.",
+   "answer": "We were made to stand in line by the teacher.",
+   "alt": [
+    "We were made to stand in line by the teacher"
+   ],
+   "why": "사역동사 make의 수동태에서는 동사원형 stand가 to stand로 바뀐다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 The thief로 시작하는 수동태 문장으로 바꿔 쓰시오.\nSomeone saw the thief run out of the shop.",
+   "answer": "The thief was seen to run out of the shop.",
+   "alt": [
+    "The thief was seen to run out of the shop"
+   ],
+   "why": "지각동사 see의 수동태이므로 보어 run이 to run으로 바뀐다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 「let+목적어+동사원형」을 이용해 같은 뜻이 되도록 바꿔 쓰시오.\nThe guard didn't allow us to enter the room.",
+   "answer": "The guard didn't let us enter the room.",
+   "alt": [
+    "The guard didn't let us enter the room",
+    "The guard did not let us enter the room"
+   ],
+   "why": "allow+목적어+to-v는 let+목적어+동사원형으로 바꿔 쓸 수 있고, 이때 to를 뺀다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 「have+목적어+동사원형」을 이용해 같은 뜻이 되도록 바꿔 쓰시오.\nI got the plumber to fix the kitchen sink.",
+   "answer": "I had the plumber fix the kitchen sink.",
+   "alt": [
+    "I had the plumber fix the kitchen sink"
+   ],
+   "why": "get은 to부정사를, have는 동사원형을 목적격보어로 쓴다는 차이를 확인하는 문제이다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 지각동사를 이용한 한 문장으로 바꿔 쓰시오. (I로 시작할 것)\nThe alarm rang. I heard it.",
+   "answer": "I heard the alarm ring.",
+   "alt": [
+    "I heard the alarm ring"
+   ],
+   "why": "지각동사 hear의 목적격보어로 동사원형을 써서 「hear+목적어+동사원형」으로 합친다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 한 문장으로 바꿔 쓰시오. (want를 이용할 것)\nMy parents don't want it. I stay out late.",
+   "answer": "My parents don't want me to stay out late.",
+   "alt": [
+    "My parents don't want me to stay out late",
+    "My parents do not want me to stay out late"
+   ],
+   "why": "want는 「want+목적어+to-v」 구문을 쓰므로 주어 I를 목적격 me로 바꾸고 stay를 to stay로 만든다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nThe editor had the article (A)[rewrite / rewritten] overnight, made his team (B)[present / to present] it in the morning, and thus enabled the client (C)[understand / to understand] the plan clearly.",
+   "choices": [
+    "rewrite – present – to understand",
+    "rewritten – to present – understand",
+    "rewritten – present – understand",
+    "rewrite – to present – to understand",
+    "rewritten – present – to understand"
+   ],
+   "answer": 5,
+   "why": "(A) 기사는 다시 쓰이는 대상이므로 p.p., (B) 사역동사 make의 보어는 동사원형, (C) enable은 to부정사를 보어로 취한다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nBecause the road was blocked, the police did not let anyone (A)[pass / to pass], and drivers were made (B)[wait / to wait] for hours until a crew got the fallen tree (C)[remove / removed].",
+   "choices": [
+    "to pass – wait – removed",
+    "pass – wait – removed",
+    "pass – to wait – remove",
+    "pass – to wait – removed",
+    "to pass – to wait – remove"
+   ],
+   "answer": 4,
+   "why": "(A) let의 보어는 동사원형, (B) make의 수동태이므로 to부정사, (C) 나무는 치워지는 대상이므로 p.p.이다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nWatching the dancers (A)[move / to move] as one body helped the audience (B)[feel / to feeling] the rhythm, and the music made everyone (C)[forget / to forget] the cold.",
+   "choices": [
+    "to move – feel – forget",
+    "move – to feeling – forget",
+    "move – feel – forget",
+    "move – feel – to forget",
+    "to move – to feeling – to forget"
+   ],
+   "answer": 3,
+   "why": "(A) 지각동사 watch의 보어는 동사원형, (B) help의 보어는 동사원형이나 to부정사이며 to feeling은 불가, (C) make의 보어는 동사원형이다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nThe new law requires companies (A)[report / to report] any leak at once and does not allow them (B)[delay / to delay] the notice, since such delays often cause the public (C)[lose / to lose] trust.",
+   "choices": [
+    "report – delay – lose",
+    "to report – delay – to lose",
+    "to report – to delay – lose",
+    "report – to delay – to lose",
+    "to report – to delay – to lose"
+   ],
+   "answer": 5,
+   "why": "require, allow, cause는 모두 목적격보어로 to부정사를 취하는 동사이다. 사역의 뜻이 있어도 동사원형을 쓰지 않는다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nI felt the train (A)[slow / to slow] down, saw passengers (B)[gathering / to gather] near the doors, and heard the conductor (C)[announce / to announce] the final stop.",
+   "choices": [
+    "to slow – gathering – announce",
+    "to slow – to gather – announce",
+    "slow – to gather – to announce",
+    "slow – gathering – to announce",
+    "slow – gathering – announce"
+   ],
+   "answer": 5,
+   "why": "지각동사 feel·see·hear의 보어는 동사원형이며, 진행 중인 동작은 현재분사로 쓸 수 있다. to부정사는 능동태 지각동사 뒤에 올 수 없다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nThe coach got the injured player (A)[examine / examined] by a specialist, had the trainer (B)[design / to design] a lighter routine, and encouraged him (C)[return / to return] step by step.",
+   "choices": [
+    "examine – design – to return",
+    "examined – to design – to return",
+    "examined – design – return",
+    "examined – design – to return",
+    "examine – to design – return"
+   ],
+   "answer": 4,
+   "why": "(A) 선수는 진찰받는 대상이므로 p.p., (B) 트레이너가 직접 설계하므로 have+동사원형, (C) encourage는 to부정사를 취한다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nSince the printer kept jamming, we had it (A)[check / checked], and a technician helped us (B)[replace / replacing] the roller, which enabled the office (C)[finish / to finish] the report on time.",
+   "choices": [
+    "check – replace – to finish",
+    "checked – replacing – to finish",
+    "checked – replace – finish",
+    "checked – replace – to finish",
+    "check – replacing – finish"
+   ],
+   "answer": 4,
+   "why": "(A) 프린터는 점검받는 대상이므로 p.p., (B) help의 보어로 -ing는 쓸 수 없고, (C) enable은 to부정사를 취한다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nThe teacher never makes her students (A)[memorize / to memorize] long word lists; instead she gets them (B)[discuss / to discuss] ideas in pairs and lets each group (C)[choose / to choose] its own topic.",
+   "choices": [
+    "to memorize – to discuss – choose",
+    "memorize – to discuss – choose",
+    "memorize – discuss – choose",
+    "memorize – to discuss – to choose",
+    "to memorize – discuss – to choose"
+   ],
+   "answer": 2,
+   "why": "make와 let은 동사원형을, get은 to부정사를 목적격보어로 취한다. 뜻이 비슷해도 형태가 다르다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nThe volunteers were seen (A)[carry / to carry] boxes all morning, and their energy made the whole town (B)[join / to join] the effort, which helped the shelter (C)[reopen / reopening] within a week.",
+   "choices": [
+    "to carry – join – reopen",
+    "to carry – to join – reopen",
+    "to carry – join – reopening",
+    "carry – join – reopen",
+    "carry – to join – reopening"
+   ],
+   "answer": 1,
+   "why": "(A) 지각동사의 수동태이므로 to부정사, (B) make의 보어는 동사원형, (C) help의 보어로 -ing는 쓸 수 없다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nThe storm caused several trees (A)[fall / to fall] onto the tracks, so the railway had the debris (B)[clear / cleared] overnight, and by noon commuters could see the trains (C)[run / to run] normally again.",
+   "choices": [
+    "fall – cleared – run",
+    "to fall – clear – to run",
+    "to fall – cleared – run",
+    "to fall – cleared – to run",
+    "fall – clear – run"
+   ],
+   "answer": 3,
+   "why": "(A) cause는 to부정사를, (B) 잔해는 치워지는 대상이므로 p.p.를, (C) 지각동사 see는 동사원형을 보어로 쓴다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nMy grandmother won't let anyone (A)[help / to help] her in the kitchen, but she always asks me (B)[taste / to taste] the soup and makes me (C)[say / to say] what is missing.",
+   "choices": [
+    "to help – to taste – say",
+    "help – taste – say",
+    "help – to taste – to say",
+    "to help – taste – to say",
+    "help – to taste – say"
+   ],
+   "answer": 5,
+   "why": "let과 make는 동사원형을, ask는 to부정사를 목적격보어로 취한다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nThe documentary showed how heat makes metal (A)[expand / to expand], and it enabled viewers (B)[see / to see] why engineers have long bridges (C)[build / built] with small gaps.",
+   "choices": [
+    "expand – see – built",
+    "to expand – to see – built",
+    "expand – to see – built",
+    "expand – to see – build",
+    "to expand – see – build"
+   ],
+   "answer": 3,
+   "why": "(A) make의 보어는 동사원형, (B) enable은 to부정사, (C) 다리는 지어지는 대상이므로 have+목적어+p.p.를 쓴다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\nWhen the fire alarm rang, the teacher made everyone <u>line</u> up quietly. She let the youngest students <u>go</u> first and had the door <u>held</u> open by a volunteer. Then she asked the rest of us <u>to walk</u> slowly, and she watched the last student <u>to leave</u> the room.",
+   "choices": [
+    "line",
+    "go",
+    "held",
+    "to walk",
+    "to leave"
+   ],
+   "answer": 5,
+   "why": "지각동사 watch의 목적격보어는 동사원형이므로 to leave를 leave로 고쳐야 한다. 나머지는 사역동사·have+p.p.·ask+to-v로 모두 옳다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\nMy uncle had his old house <u>painted</u> last spring. He got two workers <u>to sand</u> the walls first, and he helped them <u>move</u> the furniture out. Nobody could make him <u>to hire</u> a big company, because he wanted the job <u>done</u> slowly and carefully.",
+   "choices": [
+    "painted",
+    "to sand",
+    "move",
+    "to hire",
+    "done"
+   ],
+   "answer": 4,
+   "why": "사역동사 make의 목적격보어는 동사원형이므로 to hire를 hire로 고쳐야 한다. want+목적어+p.p.인 done은 옳다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\nThe trainer wants every beginner <u>to stretch</u> before running. He never lets anyone <u>skip</u> that step, and he has the whole group <u>warm</u> up together. Yesterday I felt my legs <u>to shake</u> after the first lap, but he encouraged me <u>to keep</u> going.",
+   "choices": [
+    "to stretch",
+    "skip",
+    "warm",
+    "to shake",
+    "to keep"
+   ],
+   "answer": 4,
+   "why": "지각동사 feel의 보어는 동사원형이므로 to shake를 shake로 고쳐야 한다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\nBecause the machine broke down, the manager had it <u>repaired</u> at once. She made the staff <u>work</u> in two shifts and got the supplier <u>to send</u> extra parts. The delay caused several orders <u>be</u> late, but nobody was made <u>to pay</u> for it.",
+   "choices": [
+    "repaired",
+    "work",
+    "to send",
+    "be",
+    "to pay"
+   ],
+   "answer": 4,
+   "why": "cause는 목적격보어로 to부정사를 취하므로 be를 to be로 고쳐야 한다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\nThe guide let us <u>take</u> pictures inside the cave but did not permit us <u>use</u> a flash. We heard water <u>dripping</u> from the ceiling and saw bats <u>hang</u> above our heads. The cold air made the walk <u>feel</u> longer than it really was.",
+   "choices": [
+    "take",
+    "use",
+    "dripping",
+    "hang",
+    "feel"
+   ],
+   "answer": 2,
+   "why": "permit은 「permit+목적어+to-v」로 쓰므로 use를 to use로 고쳐야 한다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\nMy parents always had me <u>do</u> my own laundry. They believed that chores enable children <u>to become</u> independent. Even when I was sick, they only got my sister <u>help</u> me a little, and they never let me <u>skip</u> the rules they had us <u>follow</u>.",
+   "choices": [
+    "do",
+    "to become",
+    "help",
+    "skip",
+    "follow"
+   ],
+   "answer": 3,
+   "why": "get의 목적격보어는 to부정사이므로 help를 to help로 고쳐야 한다. 같은 문장의 had us follow는 사역동사라 동사원형이 옳다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\nThe new app allows drivers <u>to report</u> potholes instantly. City workers are then made <u>to inspect</u> the road within a day, and the mayor has the results <u>posted</u> online. Residents can watch repair teams <u>to fill</u> the holes on a live map, which helps everyone <u>trust</u> the system.",
+   "choices": [
+    "to report",
+    "to inspect",
+    "posted",
+    "to fill",
+    "trust"
+   ],
+   "answer": 4,
+   "why": "지각동사 watch의 보어는 동사원형이므로 to fill을 fill로 고쳐야 한다. are made to inspect는 수동태라 to부정사가 옳다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\nWhen I was traveling in Rome, I had my bag <u>stolen</u> on a crowded bus. A police officer got me <u>to fill</u> out a form and helped me <u>to call</u> my bank. He also advised me <u>keep</u> copies of my passport, and he let me <u>use</u> the station phone.",
+   "choices": [
+    "stolen",
+    "to fill",
+    "to call",
+    "keep",
+    "use"
+   ],
+   "answer": 4,
+   "why": "advise는 「advise+목적어+to-v」로 쓰므로 keep을 to keep으로 고쳐야 한다. help는 to부정사도 허용된다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\nThe professor requires every student <u>to submit</u> a draft. She has the drafts <u>read</u> by two classmates and makes the writer <u>revise</u> the paper twice. Last week she was heard <u>say</u> that revision teaches more than lectures, and she never lets anyone <u>skip</u> it.",
+   "choices": [
+    "to submit",
+    "read",
+    "revise",
+    "say",
+    "skip"
+   ],
+   "answer": 4,
+   "why": "지각동사 hear의 수동태이므로 say를 to say로 고쳐야 한다. has the drafts read는 초고가 읽히는 대상이므로 p.p.가 옳다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?\nAs the storm approached, we saw the sky <u>turn</u> gray and felt the wind <u>growing</u> stronger. My father had the shutters <u>closed</u> and made us <u>to stay</u> indoors. He also got my brother <u>to move</u> the bikes into the garage.",
+   "choices": [
+    "turn",
+    "growing",
+    "closed",
+    "to stay",
+    "to move"
+   ],
+   "answer": 4,
+   "why": "사역동사 make의 보어는 동사원형이므로 to stay를 stay로 고쳐야 한다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?\nㄱ. The teacher had us to summarize the article.\nㄴ. The applicants were made to wait in the lobby.\nㄷ. I had my laptop repaired during the holiday.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 5,
+   "why": "ㄴ은 make의 수동태, ㄷ은 have+목적어+p.p.로 옳다. ㄱ은 사역동사 have 뒤이므로 summarize가 되어야 한다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?\nㄱ. She got her students write in English every day.\nㄴ. Nothing can make him give up his dream.\nㄷ. We were seen to leave the building at ten.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 5,
+   "why": "ㄴ은 make+동사원형, ㄷ은 see의 수동태+to부정사로 옳다. ㄱ은 get의 보어이므로 to write가 되어야 한다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?\nㄱ. The doctor advised her to avoid salty food.\nㄴ. I felt someone to touch my shoulder.\nㄷ. He helped the tourists finding the museum.\nㄹ. My mom let me stay over at a friend's house.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄹ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 3,
+   "why": "ㄱ의 advise+to-v와 ㄹ의 let+동사원형이 옳다. ㄴ은 touch, ㄷ은 find[to find]로 고쳐야 한다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?\nㄱ. The rain caused the match to be postponed.\nㄴ. They had the injured man carry to the ambulance.\nㄷ. The manager got the room decorated for the party.\nㄹ. We watched the ice to melt in the sun.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 cause+to-v(수동), ㄷ은 get+목적어+p.p.로 옳다. ㄴ은 carried, ㄹ은 melt로 고쳐야 한다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?\nㄱ. His speech made the audience feel hopeful.\nㄴ. I was made to apologize for the mistake.\nㄷ. She had her sister to pick her up at the airport.\nㄹ. The rule requires visitors wear a badge.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 1,
+   "why": "ㄱ은 make+동사원형, ㄴ은 make의 수동태로 옳다. ㄷ은 pick, ㄹ은 to wear로 고쳐야 한다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?\nㄱ. We heard the roof creak in the strong wind.\nㄴ. The company forced the workers sign new contracts.\nㄷ. I want this letter sent by tomorrow morning.\nㄹ. He let his son to drive the truck alone.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄹ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 지각동사+동사원형, ㄷ은 want+목적어+p.p.로 옳다. ㄴ은 to sign, ㄹ은 drive로 고쳐야 한다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?\nㄱ. She was heard to sing in the practice room.\nㄴ. The teacher made the essays rewrite by the students.\nㄷ. My father had me to check the tire pressure.\nㄹ. The app enables parents to track the school bus.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄹ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 hear의 수동태, ㄹ은 enable+to-v로 옳다. ㄴ은 make가 p.p. 보어를 쓸 수 없어 틀렸고, ㄷ은 check로 고쳐야 한다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?\nㄱ. They didn't allow us taking photos in the gallery.\nㄴ. The manager had the contract signed the same day.\nㄷ. I saw the bus pulling away from the stop.\nㄹ. Nobody could get him to change his mind.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄴ, ㄷ, ㄹ"
+   ],
+   "answer": 5,
+   "why": "ㄴ은 have+p.p., ㄷ은 지각동사+현재분사, ㄹ은 get+to-v로 모두 옳다. ㄱ은 to take로 고쳐야 한다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 목적격보어의 형태가 어법상 옳은 것은?",
+   "choices": [
+    "I had my prescription filled at the pharmacy.",
+    "He was made rewrite the entire report.",
+    "The heavy traffic caused us arrive late.",
+    "She got the children played outside.",
+    "They watched the suspect to enter the alley."
+   ],
+   "answer": 1,
+   "why": "「have+목적어+p.p.」를 바르게 쓴 ①이 옳다. ③은 to arrive, ②는 to rewrite, ④는 to play, ⑤는 enter로 고쳐야 한다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 자연스러운 문장은?",
+   "choices": [
+    "The manager wants the invoices send today.",
+    "My coach let me to skip practice once.",
+    "We were seen to argue in the parking lot.",
+    "The film made me to cry twice.",
+    "She helped her father repairing the roof."
+   ],
+   "answer": 3,
+   "why": "지각동사 see의 수동태에서 보어가 to부정사가 된 ③이 옳다. ①은 sent, ②는 skip, ④는 cry, ⑤는 repair[to repair]가 되어야 한다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 목적격보어의 형태가 어법상 틀린 것은?",
+   "choices": [
+    "The teacher made us to present our projects in groups.",
+    "I had the old documents shredded.",
+    "The law forbids drivers to use phones while driving.",
+    "He felt his heart beat faster before the interview.",
+    "They got the roof fixed before winter."
+   ],
+   "answer": 1,
+   "why": "사역동사 make의 목적격보어는 동사원형이므로 to present를 present로 고쳐야 한다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 틀린 것은?",
+   "choices": [
+    "The nurse helped the patient to breathe deeply.",
+    "We had our tickets checked at the gate.",
+    "She was made stay after school for an hour.",
+    "The crash caused the bridge to collapse.",
+    "Let me carry those boxes for you."
+   ],
+   "answer": 3,
+   "why": "make가 수동태로 쓰이면 보어가 to부정사가 되므로 stay를 to stay로 고쳐야 한다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "The guard didn't let us to park there.",
+    "I want my room cleaned before the guests arrive.",
+    "They made the students to line up outside.",
+    "He got his hair to cut yesterday.",
+    "We heard the announcement to repeat twice."
+   ],
+   "answer": 2,
+   "why": "방은 청소되는 대상이므로 want+목적어+p.p.를 쓴 ②가 옳다. ①③은 to를 빼고, ④는 cut, ⑤는 repeated로 고쳐야 한다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳지 않은 문장은?",
+   "choices": [
+    "Nothing will make him to leave the team.",
+    "The teacher had the windows opened during the class.",
+    "We saw smoke rising above the hill.",
+    "The system enables users to reset their passwords.",
+    "She got her assistant to book the flight."
+   ],
+   "answer": 1,
+   "why": "make의 목적격보어는 동사원형이므로 to leave를 leave로 고쳐야 한다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 수동태로 바꿀 때 빈칸에 알맞은 것은?\nThe supervisor made the interns stay until midnight.\n→ The interns ____ until midnight by the supervisor.",
+   "choices": [
+    "made to stay",
+    "were made stay",
+    "were made to stay",
+    "were made staying",
+    "made stay"
+   ],
+   "answer": 3,
+   "why": "사역동사 make의 수동태는 「be made+to-v」이다. 능동태의 동사원형 보어가 수동태에서는 to부정사가 된다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것은?\n· I asked the barber to cut my hair short.\n· I had my hair ____ short.",
+   "choices": [
+    "to be cut",
+    "cutting",
+    "to cut",
+    "cuts",
+    "cut"
+   ],
+   "answer": 5,
+   "why": "머리는 잘리는 대상이므로 「have+목적어+p.p.」를 쓴다. cut은 과거분사도 cut이며 to be cut은 이 구문에 쓰지 않는다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 가장 적절한 것은?\nThe manager was so persuasive that he got everyone in the room ____ his plan without a single objection.",
+   "choices": [
+    "to support",
+    "supporting",
+    "support",
+    "supported",
+    "to supporting"
+   ],
+   "answer": 1,
+   "why": "get의 목적어 everyone이 직접 지지하는 능동 관계이므로 to부정사를 쓴다. supported를 쓰면 사람들이 지지받는다는 뜻이 된다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 가장 적절한 것은?\nHaving the report ____ by an outside expert made the committee's conclusion far more convincing.",
+   "choices": [
+    "reviewed",
+    "reviewing",
+    "to review",
+    "review",
+    "reviews"
+   ],
+   "answer": 1,
+   "why": "보고서는 검토받는 대상이므로 「have+목적어+p.p.」를 써야 한다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n나는 어제 미용실에서 머리를 염색했다. (미용사가 해 줌)",
+   "choices": [
+    "I dyed my hair at the salon yesterday.",
+    "I had my hair dye at the salon yesterday.",
+    "I had dyed my hair at the salon yesterday.",
+    "I had my hair dyed at the salon yesterday.",
+    "I got my hair to dye at the salon yesterday."
+   ],
+   "answer": 4,
+   "why": "남에게 시켜서 한 일이므로 「have+목적어+p.p.」를 쓴다. ①은 내가 직접 염색했다는 뜻이고 ③은 과거완료일 뿐이다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그 선생님은 학생들이 자신의 실수를 스스로 고치게 하셨다.",
+   "choices": [
+    "The teacher had her students corrected their own mistakes.",
+    "The teacher had her students correct their own mistakes.",
+    "The teacher had her students correcting their own mistakes.",
+    "The teacher had her students to correct their own mistakes.",
+    "The teacher had corrected her students their own mistakes."
+   ],
+   "answer": 2,
+   "why": "학생들이 직접 고치는 능동 관계이므로 「have+목적어+동사원형」을 쓴다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그 사고 때문에 회사는 공장 가동을 중단할 수밖에 없었다.",
+   "choices": [
+    "The accident forced the company to shut down the plant.",
+    "The accident forced the company shut down the plant.",
+    "The accident forced the company shutting down the plant.",
+    "The accident forced to the company shut down the plant.",
+    "The accident made the company to shut down the plant."
+   ],
+   "answer": 1,
+   "why": "force는 「force+목적어+to-v」 구문을 쓴다. ⑤처럼 make 뒤에 to부정사를 쓰면 틀린다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\n(a) The article made me rethink my whole position.\n(b) He was made to sign the document.\n(c) I got my glasses fixing at the store.\n(d) The teacher helped us to organize the data.\n(e) She saw the car to hit the fence.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "(a), (b), (d) 세 문장이 옳다. (c)는 fixed, (e)는 hit로 고쳐야 한다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· The judge ____ the witness repeat the answer slowly.\n· I ____ the broken pipe replaced this morning.",
+   "choices": [
+    "let",
+    "made",
+    "saw",
+    "got",
+    "had"
+   ],
+   "answer": 5,
+   "why": "have만이 동사원형 보어와 p.p. 보어를 모두 취할 수 있다. made는 둘째 문장에, got은 첫째 문장에 쓸 수 없다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸 (A), (B)에 들어갈 말로 알맞은 것은?\nA: You look exhausted today.\nB: My professor had me (A)____ the same experiment three times and then made me (B)____ a full report.",
+   "choices": [
+    "to repeat – write",
+    "repeat – write",
+    "repeat – to write",
+    "to repeat – to write",
+    "repeating – writing"
+   ],
+   "answer": 2,
+   "why": "have와 make는 모두 사역동사이므로 목적격보어로 동사원형을 쓴다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 수동태로 바꿔 쓰시오. (by the officer를 쓸 것)\nThe officer made the driver open the trunk.",
+   "answer": "The driver was made to open the trunk by the officer.",
+   "alt": [
+    "The driver was made to open the trunk by the officer"
+   ],
+   "why": "사역동사 make의 수동태에서는 동사원형 보어 open이 to open으로 바뀐다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 The boy로 시작하는 수동태 문장으로 바꿔 쓰시오. (by 이하는 생략할 것)\nSeveral people saw the boy climb over the wall.",
+   "answer": "The boy was seen to climb over the wall.",
+   "alt": [
+    "The boy was seen to climb over the wall"
+   ],
+   "why": "지각동사 see의 수동태이므로 목적격보어 climb이 to climb으로 바뀐다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 The singer로 시작하는 수동태 문장으로 바꿔 쓰시오. (by 이하는 생략할 것)\nThe neighbors heard the singer practice late at night.",
+   "answer": "The singer was heard to practice late at night.",
+   "alt": [
+    "The singer was heard to practice late at night"
+   ],
+   "why": "지각동사 hear가 수동태가 되면 동사원형 보어가 to부정사로 바뀐다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 I had로 시작하는 문장으로 바꿔 쓰시오.\nA dentist pulled out my wisdom tooth yesterday.",
+   "answer": "I had my wisdom tooth pulled out yesterday.",
+   "alt": [
+    "I had my wisdom tooth pulled out yesterday"
+   ],
+   "why": "남을 시켜 한 일이고 사랑니는 뽑히는 대상이므로 「have+목적어+p.p.」로 쓴다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 get을 이용해 같은 뜻이 되도록 바꿔 쓰시오.\nI had my brother carry the boxes upstairs.",
+   "answer": "I got my brother to carry the boxes upstairs.",
+   "alt": [
+    "I got my brother to carry the boxes upstairs"
+   ],
+   "why": "have는 동사원형을, get은 to부정사를 목적격보어로 취하므로 carry를 to carry로 바꾼다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 let을 이용해 같은 뜻이 되도록 바꿔 쓰시오.\nThe teacher allowed the students to use their dictionaries.",
+   "answer": "The teacher let the students use their dictionaries.",
+   "alt": [
+    "The teacher let the students use their dictionaries"
+   ],
+   "why": "allow+목적어+to-v를 let+목적어+동사원형으로 바꾸면서 to를 없앤다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 allow를 이용해 같은 뜻이 되도록 바꿔 쓰시오.\nMy father didn't let me go on the school trip.",
+   "answer": "My father didn't allow me to go on the school trip.",
+   "alt": [
+    "My father didn't allow me to go on the school trip",
+    "My father did not allow me to go on the school trip"
+   ],
+   "why": "let+동사원형을 allow+to부정사로 바꾼다. allow 뒤에는 반드시 to가 필요하다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장을 want를 이용한 한 문장으로 바꿔 쓰시오. (7단어로 쓸 것)\nI want it. The report must be finished by noon.",
+   "answer": "I want the report finished by noon.",
+   "alt": [
+    "I want the report finished by noon"
+   ],
+   "why": "보고서는 끝내어지는 대상이므로 「want+목적어+p.p.」로 쓴다. to be finished를 넣으면 단어 수가 맞지 않는다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe company forced its employees <u>working</u> on weekends.",
+   "answer": "to work",
+   "alt": [],
+   "why": "force는 「force+목적어+to-v」 구문을 쓴다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe scandal caused the mayor <u>resign</u> immediately.",
+   "answer": "to resign",
+   "alt": [],
+   "why": "cause는 목적격보어로 to부정사를 취하므로 동사원형을 쓸 수 없다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nTwo witnesses were heard <u>describe</u> the same black car.",
+   "answer": "to describe",
+   "alt": [
+    "describing"
+   ],
+   "why": "지각동사 hear의 수동태이므로 보어를 to부정사(또는 현재분사)로 써야 한다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nWe had the entire kitchen <u>renovate</u> before the winter.",
+   "answer": "renovated",
+   "alt": [],
+   "why": "부엌은 개조되는 대상이므로 「have+목적어+p.p.」를 쓴다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe staff were made <u>apologizing</u> to the angry customers.",
+   "answer": "to apologize",
+   "alt": [],
+   "why": "make의 수동태 뒤에는 to부정사 보어가 온다. -ing형은 쓸 수 없다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe nurse got the patient <u>swallowed</u> the pill with water.",
+   "answer": "to swallow",
+   "alt": [],
+   "why": "환자가 직접 삼키는 능동 관계이므로 get의 보어를 to부정사로 써야 한다. p.p.를 쓰면 환자가 삼켜진다는 뜻이 된다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오.\nThe captain had the sails (lower) as the wind grew stronger.",
+   "answer": "lowered",
+   "alt": [],
+   "why": "돛은 내려지는 대상이므로 「have+목적어+p.p.」를 쓴다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오.\nThe scholarship enabled her (study) abroad for two years.",
+   "answer": "to study",
+   "alt": [],
+   "why": "enable은 목적격보어로 to부정사를 취하는 동사이다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오.\nHaving the contract (review) by a lawyer saved us from a costly mistake.",
+   "answer": "reviewed",
+   "alt": [],
+   "why": "계약서는 검토받는 대상이므로 have+목적어+p.p. 형태가 되어야 한다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 우리말을 조건에 맞게 영작하시오. (make를 수동태로 쓸 것 / The students로 시작할 것)\n그 학생들은 교실을 청소하도록 강요당했다.",
+   "answer": "The students were made to clean the classroom.",
+   "alt": [
+    "The students were made to clean the classroom"
+   ],
+   "why": "make의 수동태는 「be made+to-v」이므로 clean 앞에 to를 반드시 쓴다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 우리말을 조건에 맞게 영작하시오. (get과 과거분사를 쓸 것 / 6단어로 쓸 것)\n나는 어제 컴퓨터를 수리받았다.",
+   "answer": "I got my computer repaired yesterday.",
+   "alt": [
+    "I got my computer repaired yesterday"
+   ],
+   "why": "컴퓨터는 수리되는 대상이므로 「get+목적어+p.p.」로 쓴다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 우리말을 조건에 맞게 영작하시오. (help와 동사원형을 쓸 것 / 6단어로 쓸 것)\n그녀는 내가 그 문제를 푸는 것을 도와주었다.",
+   "answer": "She helped me solve the problem.",
+   "alt": [
+    "She helped me solve the problem"
+   ],
+   "why": "help는 목적격보어로 동사원형과 to부정사를 모두 쓸 수 있는데, 조건이 동사원형이므로 to를 붙이지 않는다.",
+   "no": 200
+  }
+ ]
+}
