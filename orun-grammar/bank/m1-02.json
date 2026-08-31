@@ -1340,6 +1340,1333 @@
    "answer": "did",
    "why": "Did로 물은 과거 의문문의 긍정 대답이므로 Yes, he did.로 한다.",
    "no": 100
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nHe ____ his room every Saturday. (그는 토요일마다 자기 방을 청소한다.)",
+   "choices": [
+    "clean",
+    "cleans",
+    "cleaned",
+    "cleaning",
+    "to clean"
+   ],
+   "answer": 2,
+   "why": "3인칭 단수 주어(He)의 현재 습관이므로 cleans를 쓴다. 우리말이 현재이므로 과거형 cleaned는 답이 아니다.",
+   "no": 101
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe bakery ____ fresh bread every morning. (그 빵집은 매일 아침 신선한 빵을 판다.)",
+   "choices": [
+    "sell",
+    "sells",
+    "sold",
+    "selling",
+    "to sell"
+   ],
+   "answer": 2,
+   "why": "주어 The bakery는 3인칭 단수이고 every morning의 현재 습관이므로 sells가 알맞다. 우리말이 현재이므로 과거형 sold는 안 된다.",
+   "no": 102
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThey ____ to music together yesterday.",
+   "choices": [
+    "listen",
+    "listens",
+    "listened",
+    "listening",
+    "to listen"
+   ],
+   "answer": 3,
+   "why": "yesterday가 있으므로 과거형 listened를 쓴다. listen·listens는 현재형이다.",
+   "no": 103
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "동사와 3인칭 단수 현재형의 짝이 잘못된 것은?",
+   "choices": [
+    "teach – teaches",
+    "wash – washes",
+    "fly – flys",
+    "do – does",
+    "say – says"
+   ],
+   "answer": 3,
+   "why": "fly는 「자음+y」로 끝나므로 y를 i로 바꾸고 -es를 붙인 flies가 맞다. 나머지는 규칙에 맞는 형태이다.",
+   "no": 104
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "동사와 과거형의 짝이 잘못된 것은?",
+   "choices": [
+    "give – gave",
+    "run – ran",
+    "sit – sitted",
+    "write – wrote",
+    "drink – drank"
+   ],
+   "answer": 3,
+   "why": "sit의 과거형은 불규칙인 sat이다. sitted라는 형태는 없다. 나머지는 올바른 불규칙 과거형이다.",
+   "no": 105
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThey ____ live near here. (그들은 이 근처에 살지 않는다.)",
+   "choices": [
+    "don't",
+    "doesn't",
+    "isn't",
+    "didn't",
+    "aren't"
+   ],
+   "answer": 1,
+   "why": "복수 주어 They의 현재 부정문이므로 don't+동사원형을 쓴다. 우리말이 현재이므로 didn't는 안 되고, 일반동사 앞에 be동사 부정형은 쓸 수 없다.",
+   "no": 106
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\n____ he wear glasses? (그는 안경을 쓰니?)",
+   "choices": [
+    "Do",
+    "Does",
+    "Is",
+    "Did",
+    "Are"
+   ],
+   "answer": 2,
+   "why": "3인칭 단수 주어 he의 일반동사 현재 의문문은 Does로 시작한다. 우리말이 현재이므로 Did는 답이 아니다.",
+   "no": 107
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\n____ you enjoy the concert yesterday?",
+   "choices": [
+    "Do",
+    "Does",
+    "Did",
+    "Are",
+    "Were"
+   ],
+   "answer": 3,
+   "why": "yesterday가 있는 과거 의문문이므로 Did+주어+동사원형을 쓴다. 일반동사 enjoy가 있으므로 be동사 Are/Were는 쓸 수 없다.",
+   "no": 108
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "ride의 과거형으로 알맞은 것은?",
+   "choices": [
+    "rided",
+    "rode",
+    "ridden",
+    "rides",
+    "riding"
+   ],
+   "answer": 2,
+   "why": "ride는 불규칙 동사로 과거형이 rode이다. ridden은 과거분사, rides는 3인칭 단수 현재형이다.",
+   "no": 109
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "finish의 3인칭 단수 현재형으로 알맞은 것은?",
+   "choices": [
+    "finishs",
+    "finishes",
+    "finishies",
+    "finished",
+    "finishing"
+   ],
+   "answer": 2,
+   "why": "-sh로 끝나는 동사는 -es를 붙이므로 finishes가 된다. finished는 과거형이다.",
+   "no": 110
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nJunha ____ a picture of his dog last week.",
+   "choices": [
+    "draw",
+    "draws",
+    "drew",
+    "drawn",
+    "drawing"
+   ],
+   "answer": 3,
+   "why": "last week가 있으므로 draw의 불규칙 과거형 drew를 쓴다.",
+   "no": 111
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nI ____ my key this morning, so I can't open the door.",
+   "choices": [
+    "lose",
+    "loses",
+    "lost",
+    "losing",
+    "to lose"
+   ],
+   "answer": 3,
+   "why": "지나간 오늘 아침의 일이므로 lose의 불규칙 과거형 lost를 쓴다.",
+   "no": 112
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "They doesn't like rain.",
+    "She reads a book every night.",
+    "He speak Chinese well.",
+    "Do she drive a car?",
+    "We goes swimming on Fridays."
+   ],
+   "answer": 2,
+   "why": "3인칭 단수 주어 She에 reads를 쓴 ②가 옳다. ①은 don't, ③은 speaks, ④는 Does, ⑤는 go가 되어야 한다.",
+   "no": 113
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 틀린 것은?",
+   "choices": [
+    "Ants live in big groups.",
+    "Leaves fall in autumn.",
+    "I drink water after exercise.",
+    "She wash her car on Sundays.",
+    "They ride bikes to school."
+   ],
+   "answer": 4,
+   "why": "3인칭 단수 주어 She 뒤에는 washes를 써야 한다. 나머지는 주어와 동사가 바르게 일치한다.",
+   "no": 114
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\nA: Do you like spicy food?\nB: No, I ____.",
+   "choices": [
+    "do",
+    "don't",
+    "doesn't",
+    "didn't",
+    "am not"
+   ],
+   "answer": 2,
+   "why": "Do로 물은 현재 의문문의 부정 대답은 No, I don't.로 한다. No 뒤이므로 긍정형 do는 안 된다.",
+   "no": 115
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\nA: Did he pass the test?\nB: Yes, he ____.",
+   "choices": [
+    "do",
+    "does",
+    "did",
+    "is",
+    "was"
+   ],
+   "answer": 3,
+   "why": "Did로 물은 과거 의문문의 긍정 대답은 Yes, he did.로 한다.",
+   "no": 116
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nMy grandmother ____ us stories every night. (할머니는 매일 밤 우리에게 이야기를 들려주신다.)",
+   "choices": [
+    "tell",
+    "tells",
+    "told",
+    "telling",
+    "to tell"
+   ],
+   "answer": 2,
+   "why": "3인칭 단수 주어의 현재 습관이므로 tells를 쓴다. 우리말이 현재이므로 과거형 told는 답이 아니다.",
+   "no": 117
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe train ____ ten minutes ago.",
+   "choices": [
+    "arrive",
+    "arrives",
+    "arrived",
+    "arriving",
+    "to arrive"
+   ],
+   "answer": 3,
+   "why": "ten minutes ago가 있으므로 과거형 arrived를 쓴다.",
+   "no": 118
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "\"We ate lunch outside.\"의 부정문으로 옳은 것은?",
+   "choices": [
+    "We don't eat lunch outside.",
+    "We didn't ate lunch outside.",
+    "We didn't eat lunch outside.",
+    "We aren't eat lunch outside.",
+    "We ate not lunch outside."
+   ],
+   "answer": 3,
+   "why": "ate는 과거형이므로 부정문은 didn't+동사원형 eat으로 쓴다. ①은 시제가 현재로 바뀌었고 ②는 didn't 뒤에 과거형을 써서 틀렸다.",
+   "no": 119
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "\"He runs fast.\"의 의문문으로 옳은 것은?",
+   "choices": [
+    "Do he run fast?",
+    "Does he run fast?",
+    "Does he runs fast?",
+    "Is he run fast?",
+    "Did he runs fast?"
+   ],
+   "answer": 2,
+   "why": "3인칭 단수 현재 의문문은 Does+주어+동사원형 어순이다. Does 뒤에는 runs가 아니라 run을 쓴다.",
+   "no": 120
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nI ____ turn off the computer last night. (나는 어젯밤에 컴퓨터를 끄지 않았다.)",
+   "choices": [
+    "don't",
+    "doesn't",
+    "didn't",
+    "wasn't",
+    "am not"
+   ],
+   "answer": 3,
+   "why": "last night이 있는 과거 부정문이므로 didn't+동사원형을 쓴다.",
+   "no": 121
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "동사원형과 과거형의 짝이 옳은 것은?",
+   "choices": [
+    "sleep – sleeped",
+    "meet – meeted",
+    "win – won",
+    "hold – holded",
+    "send – sended"
+   ],
+   "answer": 3,
+   "why": "win의 과거형은 won이다. sleep–slept, meet–met, hold–held, send–sent가 올바른 짝이다.",
+   "no": 122
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "try의 3인칭 단수 현재형으로 알맞은 것은?",
+   "choices": [
+    "trys",
+    "tries",
+    "tryes",
+    "tried",
+    "trying"
+   ],
+   "answer": 2,
+   "why": "「자음+y」로 끝나는 동사는 y를 i로 바꾸고 -es를 붙여 tries가 된다. tried는 과거형이다.",
+   "no": 123
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\nA: ____ your brother walk to school? (너의 형은 걸어서 학교에 가니?)\nB: No, he takes the bus.",
+   "choices": [
+    "Do",
+    "Does",
+    "Is",
+    "Did",
+    "Was"
+   ],
+   "answer": 2,
+   "why": "주어 your brother는 3인칭 단수이고 우리말과 대답이 모두 현재이므로 Does로 묻는다.",
+   "no": 124
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 쓰시오.\nHe (watch) a soccer game last Sunday.",
+   "answer": "watched",
+   "why": "last Sunday가 있는 과거 문장이므로 -ed를 붙인 watched를 쓴다.",
+   "no": 125
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 쓰시오.\nMy dad (drive) me to school every morning.",
+   "answer": "drives",
+   "why": "3인칭 단수 주어(My dad)의 현재 습관이므로 -s를 붙인 drives를 쓴다.",
+   "no": 126
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 말을 한 단어로 쓰시오.\n____ your sister like dolls? (너의 여동생은 인형을 좋아하니?)",
+   "answer": "Does",
+   "alt": [
+    "does"
+   ],
+   "why": "3인칭 단수 주어의 일반동사 현재 의문문이므로 Does로 시작한다.",
+   "no": 127
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 말을 한 단어로 쓰시오.\nThey ____ know the answer. (그들은 정답을 모른다.)",
+   "answer": "don't",
+   "alt": [
+    "do not"
+   ],
+   "why": "복수 주어 They의 현재 부정문이므로 don't를 쓰고 뒤에 동사원형 know가 온다.",
+   "no": 128
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "동사 pass를 3인칭 단수 현재형으로 쓰시오.",
+   "answer": "passes",
+   "why": "-ss로 끝나는 동사는 -es를 붙이므로 passes가 된다.",
+   "no": 129
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "동사 speak의 과거형을 쓰시오.",
+   "answer": "spoke",
+   "why": "speak는 불규칙 동사로 과거형이 spoke이다.",
+   "no": 130
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nHe <u>haves</u> two dogs.",
+   "answer": "has",
+   "why": "have의 3인칭 단수 현재형은 불규칙인 has이다. haves라는 형태는 없다.",
+   "no": 131
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nDid you <u>watched</u> the news last night?",
+   "answer": "watch",
+   "why": "Did로 시작하는 과거 의문문에서는 주어 뒤에 동사원형을 쓰므로 watched를 watch로 고친다.",
+   "no": 132
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 부정문으로 바꿔 쓰시오. (줄임말 사용 가능)\nShe plays the violin.",
+   "answer": "She doesn't play the violin.",
+   "alt": [
+    "She does not play the violin."
+   ],
+   "why": "3인칭 단수 현재 부정문은 doesn't+동사원형이므로 plays가 play로 돌아간다.",
+   "no": 133
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 쓰시오.\nWe (stop) at a red light a minute ago.",
+   "answer": "stopped",
+   "why": "a minute ago가 있는 과거 문장이며, stop은 「단모음+단자음」으로 끝나므로 p를 겹쳐 stopped로 쓴다.",
+   "no": 134
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 알맞은 말이 바르게 짝지어진 것은?\nJina (A)____ the piano every evening, but she (B)____ the guitar at the festival last week. (지나는 매일 저녁 피아노를 치지만, 지난주 축제에서는 기타를 쳤다.)",
+   "choices": [
+    "plays – played",
+    "play – played",
+    "plays – plays",
+    "played – played",
+    "plays – play"
+   ],
+   "answer": 1,
+   "why": "(A)는 every evening의 현재 습관이고 주어가 3인칭 단수이므로 plays, (B)는 last week의 과거이므로 played를 쓴다. ②는 (A)의 수일치, ③은 (B)의 시제, ④는 (A)의 시제, ⑤는 (B)의 시제가 틀렸다.",
+   "no": 135
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 바른 문장은?",
+   "choices": [
+    "Does your brother likes soccer?",
+    "She didn't answered my call.",
+    "The library closes at six on weekdays.",
+    "Do Junho walk to school?",
+    "My cat catch mice well."
+   ],
+   "answer": 3,
+   "why": "3인칭 단수 주어 The library에 closes를 쓴 ③이 옳다. ①은 Does 뒤에 동사원형 like, ②는 didn't 뒤에 answer, ④는 3인칭 단수이므로 Does, ⑤는 catches가 되어야 한다.",
+   "no": 136
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 어색한 문장은?",
+   "choices": [
+    "Sally carries her lunch box every day.",
+    "Did you take this photo?",
+    "The children don't like broccoli.",
+    "Mr. Han fixed the printer an hour ago.",
+    "The movie start at eight every night."
+   ],
+   "answer": 5,
+   "why": "The movie는 3인칭 단수이므로 starts가 되어야 한다. ①의 carries, ②의 Did+동사원형, ③의 복수 주어+don't, ④의 과거형 fixed는 모두 옳다.",
+   "no": 137
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 어색한 것은?",
+   "choices": [
+    "Ben <u>tries</u> his best in every game.",
+    "The wind <u>blew</u> hard last night.",
+    "Grandma <u>bakes</u> cookies on weekends.",
+    "My uncle <u>selled</u> his old car last month.",
+    "Water <u>boils</u> at 100°C."
+   ],
+   "answer": 4,
+   "why": "sell의 과거형은 불규칙인 sold이므로 selled는 틀렸다. tries·bakes·boils는 3인칭 단수 현재형, blew는 blow의 올바른 과거형이다.",
+   "no": 138
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\nA: What did you do last weekend?\nB: I ____ my grandparents in Daegu.",
+   "choices": [
+    "visit",
+    "visits",
+    "visited",
+    "visiting",
+    "to visit"
+   ],
+   "answer": 3,
+   "why": "last weekend에 한 일을 묻는 과거 질문이므로 과거형 visited로 답한다. visit·visits는 현재형이라 시제가 맞지 않는다.",
+   "no": 139
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 문장의 빈칸에 공통으로 알맞은 것은?\n· ____ they clean the classroom every day? (그들은 매일 교실을 청소하니?)\n· I ____ not agree with you. (나는 너의 말에 동의하지 않는다.)",
+   "choices": [
+    "Do",
+    "Does",
+    "Did",
+    "Am",
+    "Have"
+   ],
+   "answer": 1,
+   "why": "두 문장 모두 우리말이 현재이고 주어가 they·I이므로 조동사 do를 쓴다. Does는 3인칭 단수용, Did는 과거, 일반동사 앞에 Am은 쓸 수 없다.",
+   "no": 140
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "\"그 가게는 일요일에 문을 열지 않는다.\"를 영어로 옳게 옮긴 것은?",
+   "choices": [
+    "The store don't open on Sundays.",
+    "The store doesn't opens on Sundays.",
+    "The store doesn't open on Sundays.",
+    "The store didn't open on Sundays.",
+    "The store not opens on Sundays."
+   ],
+   "answer": 3,
+   "why": "3인칭 단수 주어의 현재 부정문은 doesn't+동사원형이므로 ③이 옳다. ①은 don't, ②는 doesn't 뒤 opens, ④는 과거시제, ⑤는 not의 위치가 틀렸다.",
+   "no": 141
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "\"나의 삼촌은 작년에 새 식당을 열었다.\"를 영어로 옳게 옮긴 것은?",
+   "choices": [
+    "My uncle opens a new restaurant last year.",
+    "My uncle opened a new restaurant last year.",
+    "My uncle open a new restaurant last year.",
+    "My uncle did opened a new restaurant last year.",
+    "My uncle was open a new restaurant last year."
+   ],
+   "answer": 2,
+   "why": "last year의 과거이므로 opened를 쓴 ②가 옳다. ①·③은 현재형, ④는 did와 과거형을 겹쳐 썼고, ⑤는 일반동사 앞에 be동사를 잘못 썼다.",
+   "no": 142
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "\"Leo felt sick this morning.\"의 부정문으로 옳은 것은?",
+   "choices": [
+    "Leo didn't feel sick this morning.",
+    "Leo didn't felt sick this morning.",
+    "Leo doesn't feel sick this morning.",
+    "Leo don't felt sick this morning.",
+    "Leo wasn't feel sick this morning."
+   ],
+   "answer": 1,
+   "why": "felt는 과거형이므로 부정문은 didn't+동사원형 feel로 쓴다. ②는 didn't 뒤에 과거형을 썼고, ③은 시제가 현재로 바뀌었으며, ⑤는 일반동사에 be동사 부정을 썼다.",
+   "no": 143
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "\"The twins broke the vase.\"의 의문문으로 옳은 것은?",
+   "choices": [
+    "Did the twins break the vase?",
+    "Did the twins broke the vase?",
+    "Do the twins broke the vase?",
+    "Does the twins break the vase?",
+    "Were the twins break the vase?"
+   ],
+   "answer": 1,
+   "why": "과거형 broke의 의문문은 Did+주어+동사원형이므로 ①이 옳다. ②·③은 조동사 뒤에 과거형을 썼고, ④는 복수 주어에 Does, ⑤는 be동사를 잘못 썼다.",
+   "no": 144
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 질문으로 알맞은 것은?\nA: ____\nB: No, she didn't. She stayed home.",
+   "choices": [
+    "Did Yuna go to the festival?",
+    "Does Yuna go to the festival?",
+    "Did Yuna went to the festival?",
+    "Do Yuna go to the festival?",
+    "Was Yuna go to the festival?"
+   ],
+   "answer": 1,
+   "why": "대답이 No, she didn't.이므로 Did로 물은 과거 의문문 ①이 알맞다. ②는 대답의 didn't와 시제가 안 맞고, ③은 Did 뒤에 과거형, ④는 3인칭 단수에 Do, ⑤는 be동사를 잘못 썼다.",
+   "no": 145
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe leaves ____ red and yellow last fall.",
+   "choices": [
+    "turn",
+    "turns",
+    "turned",
+    "turning",
+    "to turn"
+   ],
+   "answer": 3,
+   "why": "last fall이 있으므로 과거형 turned를 쓴다. turn·turns는 현재형이고 turning·to turn은 동사 자리에 올 수 없다.",
+   "no": 146
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nOur team ____ the final match two days ago.",
+   "choices": [
+    "win",
+    "wins",
+    "won",
+    "winned",
+    "winning"
+   ],
+   "answer": 3,
+   "why": "two days ago가 있으므로 win의 불규칙 과거형 won을 쓴다. winned라는 형태는 없다.",
+   "no": 147
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nTed ____ wear his coat yesterday, so he caught a cold.",
+   "choices": [
+    "don't",
+    "doesn't",
+    "didn't",
+    "wasn't",
+    "isn't"
+   ],
+   "answer": 3,
+   "why": "yesterday의 과거 부정문이므로 didn't+동사원형을 쓴다. don't·doesn't는 현재형이고, 일반동사 wear 앞에 be동사 부정형은 쓸 수 없다.",
+   "no": 148
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸 (A), (B)에 알맞은 말이 바르게 짝지어진 것은?\nA: (A)____ Somi call you last night?\nB: No. She (B)____ me a text message instead.",
+   "choices": [
+    "Did – sent",
+    "Did – send",
+    "Does – sent",
+    "Did – sends",
+    "Do – sent"
+   ],
+   "answer": 1,
+   "why": "last night의 과거 의문문이므로 (A)는 Did, 대답도 지난밤의 일이므로 (B)는 send의 과거형 sent이다. ②·④는 (B)의 시제, ③·⑤는 (A)가 틀렸다.",
+   "no": 149
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "동사의 과거형이 어법에 맞게 쓰인 문장은?",
+   "choices": [
+    "She telled me a secret.",
+    "I payed for the ticket.",
+    "He hitted the ball hard.",
+    "We slept in a tent last night.",
+    "The thief stealed the bike."
+   ],
+   "answer": 4,
+   "why": "sleep의 과거형은 slept로 ④가 옳다. tell–told, pay–paid, hit–hit, steal–stole이 올바른 불규칙 과거형이다.",
+   "no": 150
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 바르지 않은 것은?",
+   "choices": [
+    "We <u>didn't know</u> the answer.",
+    "<u>Did</u> he bring his lunch?",
+    "She <u>didn't came</u> to the meeting.",
+    "They <u>didn't buy</u> anything.",
+    "<u>Did</u> you find your wallet?"
+   ],
+   "answer": 3,
+   "why": "didn't 뒤에는 동사원형을 써야 하므로 didn't came이 아니라 didn't come이다. 나머지는 didn't/Did 뒤에 동사원형을 바르게 썼다.",
+   "no": 151
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe Earth ____ around the Sun. (지구는 태양 주위를 돈다.)",
+   "choices": [
+    "go",
+    "goes",
+    "went",
+    "going",
+    "to go"
+   ],
+   "answer": 2,
+   "why": "변하지 않는 사실은 현재시제로 쓰고 주어 The Earth가 3인칭 단수이므로 goes가 알맞다. 우리말이 현재이므로 과거형 went는 안 된다.",
+   "no": 152
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 옳은 문장끼리 짝지은 것은?\nㄱ. Hana speaks three languages.\nㄴ. Did you saw the rainbow?\nㄷ. My dad doesn't watch TV.\nㄹ. The bus leave at 7:30 every day.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 3인칭 단수+speaks, ㄷ은 doesn't+동사원형으로 옳다. ㄴ은 Did 뒤에 동사원형 see를 써야 하고, ㄹ은 The bus가 3인칭 단수이므로 leaves가 되어야 한다.",
+   "no": 153
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\nA: Do your cousins live in Jeju?\nB: ____ They moved there last year.",
+   "choices": [
+    "Yes, they do.",
+    "No, they don't.",
+    "Yes, they did.",
+    "Yes, they are.",
+    "No, they didn't."
+   ],
+   "answer": 1,
+   "why": "작년에 제주로 이사해 지금 살고 있으므로 긍정 대답이 자연스럽고, Do로 물었으므로 Yes, they do.로 답한다. ③은 조동사 시제가, ④는 be동사가 질문과 맞지 않는다.",
+   "no": 154
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nSomebody ____ my umbrella yesterday, so I got wet.",
+   "choices": [
+    "take",
+    "takes",
+    "took",
+    "taken",
+    "taking"
+   ],
+   "answer": 3,
+   "why": "yesterday가 있으므로 take의 불규칙 과거형 took을 쓴다. taken은 과거분사여서 단독으로 동사 자리에 못 온다.",
+   "no": 155
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nJulia usually ____ home at six, but yesterday she came home at nine. (줄리아는 보통 6시에 집에 오지만, 어제는 9시에 왔다.)",
+   "choices": [
+    "come",
+    "comes",
+    "came",
+    "coming",
+    "to come"
+   ],
+   "answer": 2,
+   "why": "usually가 붙은 현재의 습관이고 우리말도 현재이므로 3인칭 단수형 comes를 쓴다. 뒤 절의 came은 yesterday의 과거라서 빈칸과 시제가 다르다.",
+   "no": 156
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "\"Dan has breakfast at seven.\"을 과거시제 문장으로 옳게 바꾼 것은?",
+   "choices": [
+    "Dan had breakfast at seven.",
+    "Dan haved breakfast at seven.",
+    "Dan hased breakfast at seven.",
+    "Dan does breakfast at seven.",
+    "Dan was had breakfast at seven."
+   ],
+   "answer": 1,
+   "why": "have의 과거형은 불규칙인 had이므로 ①이 옳다. haved·hased라는 형태는 없고, ④는 현재시제이며, ⑤는 be동사와 과거형을 겹쳐 썼다.",
+   "no": 157
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 쓰시오.\nMinji (study) English for two hours last night.",
+   "answer": "studied",
+   "alt": [],
+   "why": "last night의 과거이므로 y를 i로 바꾸고 -ed를 붙인 studied를 쓴다.",
+   "no": 158
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 쓰시오.\nThe baby (cry) when he is hungry.",
+   "answer": "cries",
+   "alt": [],
+   "why": "배고플 때마다 우는 현재의 일이고 주어가 3인칭 단수이므로, 「자음+y」의 y를 i로 바꾸고 -es를 붙인 cries를 쓴다.",
+   "no": 159
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 부정문으로 바꿔 쓰시오. (줄임말 사용 가능)\nJake wears a school uniform.",
+   "answer": "Jake doesn't wear a school uniform.",
+   "alt": [
+    "Jake does not wear a school uniform."
+   ],
+   "why": "3인칭 단수 현재 부정문은 doesn't+동사원형이므로 wears가 wear로 돌아간다.",
+   "no": 160
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 의문문으로 바꿔 쓰시오.\nHer mom made this doll.",
+   "answer": "Did her mom make this doll?",
+   "alt": [],
+   "why": "과거형 made의 의문문은 Did+주어+동사원형 어순이므로 Did her mom make this doll?로 쓴다.",
+   "no": 161
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nDoes the museum <u>opens</u> at nine?",
+   "answer": "open",
+   "alt": [],
+   "why": "Does로 시작하는 의문문에서는 주어 뒤에 동사원형을 쓰므로 opens를 open으로 고친다.",
+   "no": 162
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nMy sister <u>washs</u> the dishes after dinner.",
+   "answer": "washes",
+   "alt": [],
+   "why": "-sh로 끝나는 동사의 3인칭 단수 현재형은 -es를 붙이므로 washes가 된다.",
+   "no": 163
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 말을 한 단어로 쓰시오.\n____ Peter and Amy walk their dog yesterday? (피터와 에이미는 어제 개를 산책시켰니?)",
+   "answer": "Did",
+   "alt": [
+    "did"
+   ],
+   "why": "yesterday의 과거 의문문이므로 Did+주어+동사원형으로 묻는다.",
+   "no": 164
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 말을 한 단어로 쓰시오.\nThe restaurant ____ serve breakfast. It opens at 11 a.m. (그 식당은 아침 식사를 팔지 않는다.)",
+   "answer": "doesn't",
+   "alt": [
+    "does not"
+   ],
+   "why": "3인칭 단수 주어의 현재 부정문이므로 doesn't를 쓰고 뒤에 동사원형 serve가 온다.",
+   "no": 165
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 과거시제 문장으로 바꿔 쓰시오.\nShe catches the first bus.",
+   "answer": "She caught the first bus.",
+   "alt": [],
+   "why": "catch의 과거형은 불규칙인 caught이므로 She caught the first bus.가 된다.",
+   "no": 166
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "not과 rain을 사용하여 빈칸을 두 단어로 채우시오.\nIt ____ much in this city. (이 도시에는 비가 많이 오지 않는다.)",
+   "answer": "doesn't rain",
+   "alt": [],
+   "why": "3인칭 단수 주어 It의 현재 부정문이므로 doesn't rain 두 단어로 쓴다. 우리말이 현재이므로 didn't rain은 안 된다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 틀린 문장의 개수를 고르면?\nㄱ. Does Mr. Lee drives the school bus?\nㄴ. We didn't hear the bell.\nㄷ. She losed her key yesterday.\nㄹ. My cousin lives near the beach.\nㅁ. Did the show began at six?",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 Does 뒤에 동사원형 drive, ㄷ은 lose의 불규칙 과거형 lost, ㅁ은 Did 뒤에 동사원형 begin을 써야 하므로 틀린 문장은 3개다. ㄴ의 didn't hear와 ㄹ의 lives는 옳다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 문장을 모두 고른 것은?\nㄱ. The train stops at every station.\nㄴ. He doesn't knows my address.\nㄷ. Did your team practice yesterday?\nㄹ. I sended him a gift last week.",
+   "choices": [
+    "ㄱ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 3인칭 단수+stops, ㄷ은 Did+주어+동사원형으로 옳다. ㄴ은 doesn't 뒤에 동사원형 know, ㄹ은 send의 불규칙 과거형 sent를 써야 한다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 밑줄 친 ①~⑤ 중 어법상 어색한 것은?\nA: ①<u>Did</u> you enjoy the school festival?\nB: Yes, I ②<u>did</u>. Our band ③<u>played</u> on the stage.\nA: Cool! ④<u>Does</u> your band ⑤<u>practices</u> every day?\nB: No, we practice twice a week.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 5,
+   "why": "Does로 시작한 의문문에서는 주어 뒤에 동사원형을 써야 하므로 practices가 아니라 practice이다. ①·②는 과거 질문과 대답, ③은 과거형, ④는 3인칭 단수 현재 의문문의 조동사로 모두 옳다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "글의 빈칸 (a)~(c)에 알맞은 말이 바르게 짝지어진 것은?\nEvery morning, Mina (a)____ (feed) her cat. This morning, she (b)____ (get) up late, so her mom (c)____ (feed) it. (미나는 매일 아침 고양이에게 먹이를 준다. 오늘 아침에는 늦게 일어나서 엄마가 먹이를 주셨다.)",
+   "choices": [
+    "feeds – got – fed",
+    "feeds – gets – feeds",
+    "fed – got – fed",
+    "feeds – got – feeds",
+    "feed – got – fed"
+   ],
+   "answer": 1,
+   "why": "(a)는 every morning의 현재 습관이므로 feeds, (b)·(c)는 오늘 아침에 이미 일어난 일이므로 과거형 got과 fed를 쓴다. ②는 (b)·(c)의 시제, ③은 (a)의 시제, ④는 (c)의 시제, ⑤는 (a)의 수일치가 틀렸다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 do/does/did의 쓰임이 <보기>와 같은 것은?\n<보기> He did the laundry this morning.",
+   "choices": [
+    "<u>Do</u> you have a pet?",
+    "She <u>doesn't</u> eat meat.",
+    "We <u>did</u> a science project together.",
+    "<u>Did</u> they win the game?",
+    "He <u>does</u> not like math."
+   ],
+   "answer": 3,
+   "why": "<보기>의 did는 '~을 하다'라는 뜻의 일반동사이고, ③의 did도 프로젝트를 '했다'는 일반동사이다. 나머지는 모두 의문문·부정문을 만드는 조동사 do/does/did이다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "\"우리 할머니는 매주 시장에 가시지만, 지난주에는 가지 않으셨다.\"를 영어로 옳게 옮긴 것은?",
+   "choices": [
+    "My grandmother goes to the market every week, but she didn't go last week.",
+    "My grandmother goes to the market every week, but she didn't went last week.",
+    "My grandmother go to the market every week, but she didn't go last week.",
+    "My grandmother goes to the market every week, but she doesn't go last week.",
+    "My grandmother goes to the market every week, but she didn't goes last week."
+   ],
+   "answer": 1,
+   "why": "앞 절은 3인칭 단수 현재 습관이라 goes, 뒤 절은 last week의 과거 부정이라 didn't+동사원형 go가 옳다. ②·⑤는 didn't 뒤 형태, ③은 수일치, ④는 뒤 절의 시제가 틀렸다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "\"The chef uses fresh eggs.\"를 부정문과 의문문으로 바꾼 것이 모두 옳은 것은?",
+   "choices": [
+    "The chef doesn't use fresh eggs. – Does the chef use fresh eggs?",
+    "The chef doesn't uses fresh eggs. – Does the chef use fresh eggs?",
+    "The chef doesn't use fresh eggs. – Does the chef uses fresh eggs?",
+    "The chef don't use fresh eggs. – Do the chef use fresh eggs?",
+    "The chef didn't use fresh eggs. – Did the chef use fresh eggs?"
+   ],
+   "answer": 1,
+   "why": "3인칭 단수 현재이므로 부정문은 doesn't+동사원형, 의문문은 Does+주어+동사원형이다. ②·③은 조동사 뒤에 uses를 썼고, ④는 don't/Do로 수일치가 틀렸으며, ⑤는 시제가 과거로 바뀌었다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "두 문장의 빈칸에 공통으로 알맞은 것은?\n· Sarah ____ a bad dream last night.\n· We ____ fun at the amusement park yesterday.",
+   "choices": [
+    "made",
+    "did",
+    "had",
+    "took",
+    "got"
+   ],
+   "answer": 3,
+   "why": "have a dream(꿈을 꾸다), have fun(재미있게 놀다)의 과거형 had가 두 빈칸에 모두 어울린다. made·did·took·got은 두 표현 모두와 어울리지 않는다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "짝지어진 대화가 어법상 어색한 것을 고르면?",
+   "choices": [
+    "Did you wash your hands? – Yes, I did.",
+    "Does the bakery sell cake? – Yes, it does.",
+    "Do they speak Korean? – No, they don't.",
+    "Did she finish the race? – Yes, she does.",
+    "Does Tom have a bike? – No, he doesn't."
+   ],
+   "answer": 4,
+   "why": "Did로 물은 과거 의문문에는 Yes, she did.로 답해야 하므로 ④가 어색하다. 나머지는 질문의 조동사와 대답의 조동사가 일치한다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 알맞은 말이 바르게 짝지어진 것은?\nTwo years ago, Mr. Song (A)____ history, but he (B)____ P.E. these days.",
+   "choices": [
+    "taught – teaches",
+    "teaches – taught",
+    "taught – taught",
+    "teached – teaches",
+    "taught – teach"
+   ],
+   "answer": 1,
+   "why": "(A)는 Two years ago의 과거이므로 불규칙 과거형 taught, (B)는 these days의 현재이고 3인칭 단수이므로 teaches를 쓴다. teached라는 형태는 없고, ⑤는 수일치가 틀렸다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 문장의 개수를 고르면?\nㄱ. Julie mixes fruit and yogurt for breakfast.\nㄴ. Did he told you the secret?\nㄷ. The plane landed safely last night.\nㄹ. My parents doesn't argue.\nㅁ. Water freezes at zero degrees.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ의 mixes, ㄷ의 landed, ㅁ의 freezes는 옳으므로 3개다. ㄴ은 Did 뒤에 동사원형 tell, ㄹ은 복수 주어이므로 don't를 써야 한다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: You look tired. ____\nB: No, I didn't. My dog barked all night.",
+   "choices": [
+    "Did you sleep well last night?",
+    "Do you sleep well every night?",
+    "Did you slept well last night?",
+    "Does your dog sleep well?",
+    "Do you go to bed early?"
+   ],
+   "answer": 1,
+   "why": "대답 No, I didn't.와 어울리는 것은 Did로 물은 과거 의문문 ①이다. ②·⑤는 don't로 답해야 하고, ③은 Did 뒤에 과거형을 썼으며, ④는 주어가 대답의 I와 맞지 않는다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 틀린 것을 모두 고르면?\nㄱ. Emily catches the ball well.\nㄴ. Did you brought your textbook?\nㄷ. He standed in line for an hour.\nㄹ. The kids swam in the pool yesterday.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄴ은 Did 뒤에 동사원형 bring, ㄷ은 stand의 불규칙 과거형 stood를 써야 하므로 틀렸다. ㄱ의 catches와 ㄹ의 swam은 옳다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "글의 빈칸 (a), (b)에 알맞은 말이 바르게 짝지어진 것은?\nJimin (a)____ swimming lessons every Tuesday. Last Tuesday, the pool closed early, so he (b)____ home. (지민은 화요일마다 수영 강습을 받는다. 지난 화요일에는 수영장이 일찍 닫아서 집에 왔다.)",
+   "choices": [
+    "takes – came",
+    "took – came",
+    "takes – comes",
+    "take – came",
+    "takes – come"
+   ],
+   "answer": 1,
+   "why": "(a)는 every Tuesday의 현재 습관이고 3인칭 단수이므로 takes, (b)는 Last Tuesday의 과거이므로 came이다. ②는 (a)의 시제, ③·⑤는 (b)의 시제, ④는 (a)의 수일치가 틀렸다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "\"너의 아버지는 매일 아침 신문을 읽으시니?\"를 영어로 옳게 옮긴 것은?",
+   "choices": [
+    "Does your father read a newspaper every morning?",
+    "Does your father reads a newspaper every morning?",
+    "Do your father read a newspaper every morning?",
+    "Did your father read a newspaper every morning?",
+    "Is your father read a newspaper every morning?"
+   ],
+   "answer": 1,
+   "why": "3인칭 단수 주어의 현재 의문문이므로 Does+주어+동사원형이다. ②는 reads를 겹쳐 썼고, ③은 수일치, ④는 우리말이 현재인데 과거로 물었고, ⑤는 일반동사에 be동사를 썼다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "글의 밑줄 친 ①~⑤ 중 어법상 틀린 것은?\nMy friend Hojun ①<u>loves</u> animals. He ②<u>feeds</u> stray cats every evening. Yesterday, he ③<u>finded</u> a small kitten near his house. He ④<u>gave</u> it some milk and ⑤<u>took</u> it to the animal center.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "find의 과거형은 불규칙인 found이므로 finded는 틀렸다. ①·②는 3인칭 단수 현재형, ④·⑤는 give·take의 올바른 불규칙 과거형이다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 들어갈 말이 나머지 넷과 다른 것은?",
+   "choices": [
+    "____ your teacher give homework yesterday?",
+    "____ the boys break the window last night?",
+    "____ you finish the book last weekend?",
+    "____ Jane practice ballet these days?",
+    "____ they move here two months ago?"
+   ],
+   "answer": 4,
+   "why": "④는 these days의 현재이고 주어가 3인칭 단수이므로 Does가 들어간다. 나머지는 yesterday·last night·last weekend·two months ago가 있어 모두 Did가 들어간다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe Wright brothers ____ the first airplane in 1903.",
+   "choices": [
+    "invent",
+    "invents",
+    "invented",
+    "inventing",
+    "invention"
+   ],
+   "answer": 3,
+   "why": "in 1903이라는 과거의 역사적 사실이므로 과거형 invented를 쓴다. invention은 명사라서 동사 자리에 올 수 없다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nMy mom ____ me a scarf last winter. It still keeps me warm.",
+   "choices": [
+    "buy",
+    "buys",
+    "bought",
+    "buyed",
+    "buying"
+   ],
+   "answer": 3,
+   "why": "last winter가 있으므로 buy의 불규칙 과거형 bought를 쓴다. buyed라는 형태는 없다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸 (A), (B)에 알맞은 말이 바르게 짝지어진 것은?\nA: (A)____ Jenny practice taekwondo these days?\nB: Yes. She (B)____ learning it two months ago.",
+   "choices": [
+    "Does – started",
+    "Did – started",
+    "Does – starts",
+    "Do – started",
+    "Does – start"
+   ],
+   "answer": 1,
+   "why": "(A)는 these days의 현재 의문문이고 3인칭 단수이므로 Does, (B)는 two months ago의 과거이므로 started이다. ②는 (A)의 시제, ③·⑤는 (B)의 시제, ④는 수일치가 틀렸다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 동사의 형태가 어법상 옳은 것은?",
+   "choices": [
+    "The bell <u>ringes</u> at nine.",
+    "Sumi <u>enjoyes</u> cooking.",
+    "Dad <u>dries</u> the dishes after dinner.",
+    "He <u>gos</u> jogging every morning.",
+    "The bird <u>flys</u> south in winter."
+   ],
+   "answer": 3,
+   "why": "dry는 「자음+y」이므로 dries가 맞다. ring은 rings, enjoy는 「모음+y」라서 enjoys, go는 goes, fly는 flies가 되어야 한다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?\nThe chef ____ salt to the soup a moment ago, so don't add more.",
+   "choices": [
+    "add",
+    "adds",
+    "added",
+    "adding",
+    "to add"
+   ],
+   "answer": 3,
+   "why": "a moment ago가 있으므로 과거형 added를 쓴다. add·adds는 현재형이라 시간 표현과 맞지 않는다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "\"그는 보통 저녁을 요리하지 않지만, 오늘 저녁에는 파스타를 만들었다.\"를 영어로 옳게 옮긴 것은?",
+   "choices": [
+    "He doesn't usually cook dinner, but he made pasta this evening.",
+    "He doesn't usually cooks dinner, but he made pasta this evening.",
+    "He didn't usually cook dinner, but he makes pasta this evening.",
+    "He doesn't usually cook dinner, but he maked pasta this evening.",
+    "He don't usually cook dinner, but he made pasta this evening."
+   ],
+   "answer": 1,
+   "why": "앞 절은 현재의 습관이라 doesn't+동사원형, 뒤 절은 이미 만든 과거의 일이라 made가 옳다. ②는 doesn't 뒤 cooks, ③은 두 절의 시제가 뒤바뀌었고, ④의 maked는 없는 형태, ⑤는 don't로 수일치가 틀렸다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 우리말을 drink를 사용하여 4단어의 영어 문장으로 쓰시오. (줄임말을 쓸 것)\n그녀는 우유를 마시지 않는다.",
+   "answer": "She doesn't drink milk.",
+   "alt": [],
+   "why": "3인칭 단수 현재 부정문이므로 doesn't+동사원형으로 She doesn't drink milk. 네 단어가 된다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 의문문으로 바꿔 쓰시오.\nThe farmer grew potatoes last year.",
+   "answer": "Did the farmer grow potatoes last year?",
+   "alt": [],
+   "why": "과거형 grew의 의문문은 Did+주어+동사원형이므로 grew가 grow로 돌아간다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nMs. Kim <u>teachs</u> us English this year.",
+   "answer": "teaches",
+   "alt": [],
+   "why": "-ch로 끝나는 동사의 3인칭 단수 현재형은 -es를 붙이므로 teaches가 된다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n<u>Does</u> the children plant trees last spring?",
+   "answer": "Did",
+   "alt": [],
+   "why": "last spring의 과거이고 주어 the children은 복수이므로 조동사는 Did가 되어야 한다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 말을 한 단어로 쓰시오.\nRyan ____ not join the soccer club last month; he joined the band instead.",
+   "answer": "did",
+   "alt": [],
+   "why": "last month의 과거 부정문이므로 did not join이 되도록 did를 쓴다. 현재형 does는 시간 표현과 맞지 않는다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 과거시제 문장으로 바꿔 쓰시오.\nDoes she keep a diary?",
+   "answer": "Did she keep a diary?",
+   "alt": [],
+   "why": "현재 의문문의 조동사 Does를 과거형 Did로 바꾸고, 뒤의 동사원형 keep은 그대로 둔다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 쓰시오.\nThe thief (steal) the painting from the museum last night.",
+   "answer": "stole",
+   "alt": [],
+   "why": "last night의 과거이므로 steal의 불규칙 과거형 stole을 쓴다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 쓰시오.\nMy grandfather (go) fishing every weekend, rain or shine.",
+   "answer": "goes",
+   "alt": [],
+   "why": "every weekend의 현재 습관이고 주어가 3인칭 단수이므로 -es를 붙인 goes를 쓴다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 부정문으로 바꿔 쓰시오. (줄임말 사용 가능)\nThe train left on time.",
+   "answer": "The train didn't leave on time.",
+   "alt": [
+    "The train did not leave on time."
+   ],
+   "why": "과거형 left의 부정문은 didn't+동사원형이므로 left가 leave로 돌아간다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "대화의 빈칸에 알맞은 말을 한 단어로 쓰시오.\nA: Does your mom bake bread at home?\nB: Yes, she ____. She bakes it every Saturday.",
+   "answer": "does",
+   "alt": [],
+   "why": "Does로 물은 현재 의문문의 긍정 대답은 Yes, she does.로 한다. 과거형 did는 질문의 시제와 맞지 않는다.",
+   "no": 200
   }
  ]
 }

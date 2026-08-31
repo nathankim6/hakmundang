@@ -1,0 +1,2652 @@
+{
+ "id": "m2-01",
+ "grade": "중2",
+ "name": "문장의 형식(4·5형식)",
+ "points": [
+  "4형식 수여동사",
+  "5형식 목적격 보어(명사·형용사)",
+  "형식 판별"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Mr. Han teaches ____ science.",
+   "choices": [
+    "we",
+    "us",
+    "they",
+    "he",
+    "she"
+   ],
+   "answer": 2,
+   "why": "수여동사 뒤 간접목적어 자리에는 목적격 us를 쓴다. we/they/he/she는 주격이라 목적어 자리에 올 수 없다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She gave ____ a birthday card.",
+   "choices": [
+    "I",
+    "my",
+    "me",
+    "mine",
+    "myself"
+   ],
+   "answer": 3,
+   "why": "give+간접목적어+직접목적어에서 간접목적어는 목적격 me. myself는 주어(She)와 다른 사람이므로 쓸 수 없다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My aunt bought ____ a new bag.",
+   "choices": [
+    "she",
+    "her",
+    "hers",
+    "he",
+    "they"
+   ],
+   "answer": 2,
+   "why": "buy+사람+사물의 사람 자리에는 목적격 her를 쓴다. hers는 소유대명사라 뒤에 또 명사가 올 수 없다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He wrote a long letter ____ his parents.",
+   "choices": [
+    "of",
+    "at",
+    "from",
+    "under",
+    "to"
+   ],
+   "answer": 5,
+   "why": "write는 3형식으로 바꿀 때 전치사 to를 쓰는 동사이다(wrote a letter to+사람).",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Mom cooked spaghetti ____ us.",
+   "choices": [
+    "to",
+    "of",
+    "for",
+    "at",
+    "on"
+   ],
+   "answer": 3,
+   "why": "cook은 3형식 전환 시 for를 쓰는 동사이다(만들어 주는 동사류: make, buy, cook, get).",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Can I ask a question ____ you?",
+   "choices": [
+    "to",
+    "for",
+    "of",
+    "on",
+    "at"
+   ],
+   "answer": 3,
+   "why": "ask는 3형식 전환 시 전치사 of를 쓴다(ask a question of+사람).",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Ms. Choi showed her photos ____ the students.",
+   "choices": [
+    "for",
+    "of",
+    "to",
+    "with",
+    "at"
+   ],
+   "answer": 3,
+   "why": "show는 3형식 전환 시 to를 쓴다(show A to B).",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Dad made a kite ____ me.",
+   "choices": [
+    "to",
+    "of",
+    "at",
+    "for",
+    "on"
+   ],
+   "answer": 4,
+   "why": "make는 3형식 전환 시 for를 쓴다(make A for B).",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Please lend your umbrella ____ Jane.",
+   "choices": [
+    "for",
+    "to",
+    "of",
+    "in",
+    "at"
+   ],
+   "answer": 2,
+   "why": "lend는 to를 쓰는 동사이다(lend A to B).",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The clown made the children ____.",
+   "choices": [
+    "happily",
+    "to happily",
+    "so happily",
+    "happy",
+    "very happily"
+   ],
+   "answer": 4,
+   "why": "make+목적어 뒤 목적격 보어 자리에는 형용사 happy를 쓴다. 부사(happily)는 보어가 될 수 없다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Keep your hands ____.",
+   "choices": [
+    "cleanly",
+    "to clean",
+    "clean",
+    "cleans",
+    "being cleanly"
+   ],
+   "answer": 3,
+   "why": "keep+목적어+형용사: '~을 …한 상태로 유지하다'. 보어 자리에 부사 cleanly는 불가.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "We named our cat ____.",
+   "choices": [
+    "to Coco",
+    "for Coco",
+    "of Coco",
+    "with Coco",
+    "Coco"
+   ],
+   "answer": 5,
+   "why": "name+목적어+명사(이름): 5형식에서 목적격 보어인 이름 앞에 전치사를 붙이지 않는다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "People call the lion the ____ of the jungle.",
+   "choices": [
+    "kingly",
+    "to king",
+    "for king",
+    "king",
+    "of king"
+   ],
+   "answer": 4,
+   "why": "call+목적어+명사 보어. 보어 명사 앞에 전치사가 오면 틀린다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Please pass ____.",
+   "choices": [
+    "the pepper me",
+    "me to the pepper",
+    "for me the pepper",
+    "the pepper of me",
+    "me the pepper"
+   ],
+   "answer": 5,
+   "why": "4형식 어순은 '동사+간접목적어(사람)+직접목적어(사물)'. the pepper me처럼 순서를 바꾸려면 to가 필요하다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My grandma told ____ an old story.",
+   "choices": [
+    "we",
+    "us",
+    "they",
+    "their",
+    "he"
+   ],
+   "answer": 2,
+   "why": "tell+사람+이야기의 사람 자리에는 목적격 us를 쓴다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I'll get some water ____ you.",
+   "choices": [
+    "of",
+    "at",
+    "for",
+    "with",
+    "on"
+   ],
+   "answer": 3,
+   "why": "get은 3형식 전환 시 for를 쓴다(get A for B).",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He sold his old car ____ my uncle.",
+   "choices": [
+    "of",
+    "at",
+    "to",
+    "from",
+    "with"
+   ],
+   "answer": 3,
+   "why": "sell은 방향을 나타내는 to를 쓰는 동사이다(sell A to B).",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The blanket keeps the baby ____.",
+   "choices": [
+    "warmly",
+    "to warm",
+    "warmness",
+    "warm",
+    "warming"
+   ],
+   "answer": 4,
+   "why": "keep의 목적격 보어 자리에는 형용사 warm. 부사 warmly나 명사 warmness는 안 된다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "We found the quiz ____. (우리는 그 퀴즈가 쉽다고 느꼈다)",
+   "choices": [
+    "easily",
+    "to easily",
+    "ease",
+    "more easily",
+    "easy"
+   ],
+   "answer": 5,
+   "why": "find+목적어+형용사: '~이 …하다고 느끼다'. 우리말 뜻에 맞게 보어 자리에 형용사 easy를 쓴다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Her smile makes everyone ____.",
+   "choices": [
+    "comfortably",
+    "to comfortably",
+    "comfortably so",
+    "comfortable",
+    "in comfortably"
+   ],
+   "answer": 4,
+   "why": "make+목적어+형용사 보어. 부사 comfortably는 보어로 쓸 수 없다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은?\n· Dad bought a cake ____ me.\n· Mom made cookies ____ my friends.",
+   "choices": [
+    "to",
+    "for",
+    "of",
+    "at",
+    "from"
+   ],
+   "answer": 2,
+   "why": "buy와 make는 모두 3형식 전환 시 for를 쓰는 동사이다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은?\n· She gave a rose ____ him.\n· I'll send this photo ____ Grandma.",
+   "choices": [
+    "for",
+    "of",
+    "to",
+    "at",
+    "on"
+   ],
+   "answer": 3,
+   "why": "give와 send는 모두 3형식 전환 시 to를 쓰는 동사이다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\nA: What did you get for your birthday?\nB: My sister gave ____.",
+   "choices": [
+    "a camera me",
+    "me for a camera",
+    "me a camera",
+    "to me a camera",
+    "a camera for I"
+   ],
+   "answer": 3,
+   "why": "give+간접목적어+직접목적어 어순. a camera me처럼 사물이 먼저 오면 to me가 필요하다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\nA: You look busy.\nB: Yes. Can you do a favor ____ me?",
+   "choices": [
+    "to",
+    "of",
+    "for",
+    "at",
+    "on"
+   ],
+   "answer": 3,
+   "why": "do a favor for+사람: '~를 위해 부탁을 들어주다'. do는 for를 쓴다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "He gave I a pen.",
+    "He gave me a pen.",
+    "He gave a pen me.",
+    "He gave to me a pen.",
+    "He gave for me a pen."
+   ],
+   "answer": 2,
+   "why": "4형식은 '주어+동사+간접목적어(목적격)+직접목적어' 어순. 사물이 먼저 오면 give a pen to me로 써야 한다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "어법상 올바른 문장을 고르시오.",
+   "choices": [
+    "She made her son to a cook.",
+    "She made her son a cook.",
+    "She made her son cookly.",
+    "She made a cook to her son.",
+    "She made her son for a cook."
+   ],
+   "answer": 2,
+   "why": "make+목적어+명사 보어(그를 요리사로 만들었다). 보어 앞에 전치사 to/for를 붙이면 틀린다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은?",
+   "choices": [
+    "I sent him a text message.",
+    "She told us a funny joke.",
+    "He bought a hat for his mom.",
+    "We call him Captain.",
+    "The song made her sadly."
+   ],
+   "answer": 5,
+   "why": "make의 목적격 보어 자리에는 형용사 sad를 써야 한다. 부사 sadly는 보어가 될 수 없다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "어법상 어색한 문장을 고르시오.",
+   "choices": [
+    "Mr. Lee teaches us history.",
+    "She asked a favor of me.",
+    "Dad cooked us dinner.",
+    "I'll show to you my room.",
+    "They named the ship Sunrise."
+   ],
+   "answer": 4,
+   "why": "4형식 어순은 show you my room이고, 전치사를 쓰려면 show my room to you로 사물을 먼저 써야 한다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 틀린 것은?",
+   "choices": [
+    "Please show <u>me</u> your ticket.",
+    "Mom made <u>us</u> sandwiches.",
+    "He wrote <u>her</u> a poem.",
+    "She bought <u>for me</u> a scarf.",
+    "I'll tell <u>you</u> the truth."
+   ],
+   "answer": 4,
+   "why": "4형식에서는 간접목적어 앞에 전치사를 쓰지 않는다. bought me a scarf 또는 bought a scarf for me가 맞다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 어색한 것은?",
+   "choices": [
+    "The gift made her <u>happy</u>.",
+    "Keep the soup <u>warm</u>.",
+    "We found the game <u>fun</u>.",
+    "The music made me <u>calm</u>.",
+    "Leave the door <u>openly</u>."
+   ],
+   "answer": 5,
+   "why": "leave+목적어+형용사: '~을 …한 채로 두다'. open 자체가 형용사이므로 openly가 아니라 open을 쓴다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 문장의 형식이 나머지 넷과 다른 것은?",
+   "choices": [
+    "He handed me the keys.",
+    "She sent me a postcard.",
+    "Dad bought me new shoes.",
+    "I met him at the park.",
+    "Grandma told me a story."
+   ],
+   "answer": 4,
+   "why": "④는 '동사+목적어' 하나뿐인 3형식이고, 나머지는 목적어가 두 개인 4형식이다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 made의 쓰임이 나머지 넷과 다른 것은?",
+   "choices": [
+    "He made me a paper boat.",
+    "He made me a wooden chair.",
+    "He made me spaghetti.",
+    "He made me a kite.",
+    "He made me a class leader."
+   ],
+   "answer": 5,
+   "why": "⑤는 '나를 반장으로 만들었다'는 5형식(me=a class leader)이고, 나머지는 '나에게 ~을 만들어 주었다'는 4형식이다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "3형식으로 바꿀 때 쓰는 전치사가 나머지 넷과 다른 동사는?",
+   "choices": [
+    "give",
+    "send",
+    "show",
+    "buy",
+    "tell"
+   ],
+   "answer": 4,
+   "why": "buy는 for를 쓰고, give/send/show/tell은 모두 to를 쓴다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "3형식으로 바꿀 때 전치사 for를 쓰는 동사는?",
+   "choices": [
+    "give",
+    "make",
+    "send",
+    "show",
+    "tell"
+   ],
+   "answer": 2,
+   "why": "make는 for를 쓰는 동사이고 나머지는 모두 to를 쓴다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "3형식으로 바꿀 때 전치사 of를 쓰는 동사는?",
+   "choices": [
+    "buy",
+    "cook",
+    "ask",
+    "lend",
+    "pass"
+   ],
+   "answer": 3,
+   "why": "of를 쓰는 대표 동사는 ask이다. buy/cook은 for, lend/pass는 to를 쓴다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말을 영어로 옮긴 것으로 옳은 것은? '나는 그에게 내 자전거를 빌려주었다.'",
+   "choices": [
+    "I lent him my bike.",
+    "I lent my bike him.",
+    "I lent to him my bike.",
+    "I lent him to my bike.",
+    "I lent my bike for him."
+   ],
+   "answer": 1,
+   "why": "lend+사람+사물 어순이 맞다. 3형식으로 쓰려면 I lent my bike to him이어야 하므로 ⑤의 for는 틀린다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말을 영어로 옮긴 것으로 옳은 것은? '그 노래는 그녀를 스타로 만들었다.'",
+   "choices": [
+    "The song made a star her.",
+    "The song made her to a star.",
+    "The song made for her a star.",
+    "The song made her starly.",
+    "The song made her a star."
+   ],
+   "answer": 5,
+   "why": "make+목적어+명사 보어(her=a star)인 5형식. 보어 앞에 전치사를 붙이지 않는다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "They elected Jina class ____.",
+   "choices": [
+    "presidently",
+    "to president",
+    "for president",
+    "president",
+    "of president"
+   ],
+   "answer": 4,
+   "why": "elect+목적어+명사 보어: '~을 …으로 뽑다'. 보어 앞에 전치사 없이 쓴다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Don't leave your desk ____.",
+   "choices": [
+    "messily",
+    "to messy",
+    "in messily",
+    "messiness",
+    "messy"
+   ],
+   "answer": 5,
+   "why": "leave+목적어+형용사 보어. 부사 messily나 명사 messiness는 보어 자리에 올 수 없다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Exercise keeps our body ____.",
+   "choices": [
+    "strongly",
+    "strength",
+    "strong",
+    "to strong",
+    "in strong"
+   ],
+   "answer": 3,
+   "why": "keep+목적어+형용사 보어. 부사 strongly와 명사 strength는 안 된다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\nA: Wow, your new watch looks nice.\nB: Thanks. My father bought it ____ me.",
+   "choices": [
+    "to",
+    "for",
+    "of",
+    "at",
+    "on"
+   ],
+   "answer": 2,
+   "why": "직접목적어가 대명사 it이므로 3형식 buy A for B 형태를 쓴다. buy의 전치사는 for.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She showed ____.",
+   "choices": [
+    "the pictures her friends",
+    "her friends for the pictures",
+    "to her friends the pictures",
+    "her friends the pictures",
+    "the pictures of her friends"
+   ],
+   "answer": 4,
+   "why": "show+간접목적어(사람)+직접목적어(사물) 어순. 사물을 먼저 쓰려면 the pictures to her friends가 되어야 한다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He got ____ at the market.",
+   "choices": [
+    "some flowers his mom",
+    "his mom to some flowers",
+    "for his mom some flowers",
+    "some flowers of his mom",
+    "his mom some flowers"
+   ],
+   "answer": 5,
+   "why": "get+사람+사물의 4형식 어순. 전치사를 쓰려면 got some flowers for his mom.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My friends call ____ Tiny.",
+   "choices": [
+    "I",
+    "me",
+    "my",
+    "mine",
+    "myself"
+   ],
+   "answer": 2,
+   "why": "call+목적어+이름에서 목적어 자리에는 목적격 me. 주어(My friends)와 다른 사람이므로 myself는 불가.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Her parents named the baby ____ after her grandmother.",
+   "choices": [
+    "to Rose",
+    "for Rose",
+    "Rosely",
+    "Rose",
+    "of Rose"
+   ],
+   "answer": 4,
+   "why": "name+목적어+이름(명사 보어). 보어 앞에 전치사를 쓰지 않는다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "어법상 옳은 문장을 고르면?",
+   "choices": [
+    "Tom told a lie us.",
+    "Tom told us a lie.",
+    "Tom told to us a lie.",
+    "Tom told us to a lie.",
+    "Tom told a lie of us."
+   ],
+   "answer": 2,
+   "why": "tell+간접목적어+직접목적어 어순. 3형식이면 told a lie to us로 써야 한다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 바르게 쓰인 문장은?",
+   "choices": [
+    "Snow makes the world whitely.",
+    "Snow makes white the world.",
+    "Snow makes the world to white.",
+    "Snow makes to the world white.",
+    "Snow makes the world white."
+   ],
+   "answer": 5,
+   "why": "make+목적어+형용사 보어 어순(the world white). 부사 whitely나 전치사가 들어가면 틀린다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He handed his homework ____ the teacher.",
+   "choices": [
+    "for",
+    "of",
+    "to",
+    "with",
+    "at"
+   ],
+   "answer": 3,
+   "why": "hand는 건네는 방향을 나타내는 to를 쓴다(hand A to B).",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사를 쓰시오: She showed her passport ____ the officer.",
+   "answer": "to",
+   "why": "show는 3형식 전환 시 to를 쓰는 동사이다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사를 쓰시오: Grandpa made a chair ____ my sister.",
+   "answer": "for",
+   "why": "make는 3형식 전환 시 for를 쓴다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사를 쓰시오: He asked a strange question ____ me.",
+   "answer": "of",
+   "why": "ask는 3형식 전환 시 of를 쓴다(ask a question of+사람).",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사를 쓰시오: Mom bought new sneakers ____ me.",
+   "answer": "for",
+   "why": "buy는 3형식 전환 시 for를 쓴다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사를 쓰시오: I will send this letter ____ Jane tomorrow.",
+   "answer": "to",
+   "why": "send는 보내는 방향의 to를 쓴다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오: Eating vegetables every day makes us (health) ____.",
+   "answer": "healthy",
+   "why": "make의 목적격 보어 자리에는 형용사가 오므로 명사 health를 형용사 healthy로 바꾼다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 말을 골라 쓰시오: Please keep the classroom (quiet / quietly).",
+   "answer": "quiet",
+   "why": "keep+목적어+형용사 보어. 부사 quietly는 보어가 될 수 없다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오: He teaches <u>we</u> Chinese.",
+   "answer": "us",
+   "why": "간접목적어 자리에는 목적격 us를 쓴다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오: She bought a doll <u>to</u> her daughter.",
+   "answer": "for",
+   "why": "buy는 3형식 전환 시 전치사 for를 쓰는 동사이다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오: I'll lend my notebook <u>for</u> you.",
+   "answer": "to",
+   "why": "lend는 to를 쓰는 동사이다(lend A to B).",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오: The medicine made him <u>sleepily</u>.",
+   "answer": "sleepy",
+   "why": "make의 목적격 보어 자리에는 형용사 sleepy를 써야 한다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오: People call <u>he</u> a walking dictionary.",
+   "answer": "him",
+   "why": "call의 목적어 자리에는 목적격 him을 쓴다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "두 문장이 같은 뜻이 되도록 빈칸에 두 단어를 쓰시오: He gave me his old camera. = He gave his old camera ____ ____.",
+   "answer": "to me",
+   "why": "give는 3형식 전환 시 to+목적격을 쓴다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "두 문장이 같은 뜻이 되도록 빈칸에 두 단어를 쓰시오: Mom cooked us bulgogi. = Mom cooked bulgogi ____ ____.",
+   "answer": "for us",
+   "why": "cook은 3형식 전환 시 for를 쓴다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "두 문장이 같은 뜻이 되도록 빈칸에 두 단어를 쓰시오: She asked him a question. = She asked a question ____ ____.",
+   "answer": "of him",
+   "why": "ask는 3형식 전환 시 of를 쓴다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말에 맞게 괄호 안의 말을 배열하여 문장을 쓰시오: 아빠는 나에게 시계를 사 주셨다. (bought / Dad / a watch / me)",
+   "answer": "Dad bought me a watch.",
+   "alt": [
+    "Dad bought me a watch"
+   ],
+   "why": "buy+간접목적어(me)+직접목적어(a watch)의 4형식 어순으로 배열한다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말에 맞게 괄호 안의 말을 배열하여 문장을 쓰시오: 그 영화는 그를 유명하게 만들었다. (made / him / the movie / famous)",
+   "answer": "The movie made him famous.",
+   "alt": [
+    "The movie made him famous"
+   ],
+   "why": "make+목적어+형용사 보어의 5형식 어순이다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말에 맞게 괄호 안의 말을 배열하여 문장을 쓰시오: 우리는 그 개를 Bobby라고 부른다. (call / we / Bobby / the dog)",
+   "answer": "We call the dog Bobby.",
+   "alt": [
+    "We call the dog Bobby"
+   ],
+   "why": "call+목적어(the dog)+명사 보어(Bobby)의 5형식 어순이다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사를 쓰시오: Sujin told an interesting story ____ her classmates.",
+   "answer": "to",
+   "why": "tell은 3형식 전환 시 to를 쓴다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 말을 골라 쓰시오: The heater keeps the room (warm / warmly).",
+   "answer": "warm",
+   "why": "keep+목적어 뒤 보어 자리에는 형용사 warm을 쓴다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "He gave her some flowers.를 3형식으로 바르게 바꾼 것은?",
+   "choices": [
+    "He gave some flowers to her.",
+    "He gave some flowers for her.",
+    "He gave some flowers of her.",
+    "He gave to her some flowers.",
+    "He gave her to some flowers."
+   ],
+   "answer": 1,
+   "why": "give는 '직접목적어+to+간접목적어' 순서로 바꾼다. for/of는 give와 함께 쓰지 않는다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Mom made me a sweater.를 3형식으로 바르게 바꾼 것은?",
+   "choices": [
+    "Mom made a sweater to me.",
+    "Mom made a sweater for me.",
+    "Mom made a sweater of me.",
+    "Mom made for me a sweater.",
+    "Mom made me for a sweater."
+   ],
+   "answer": 2,
+   "why": "make는 3형식 전환 시 for를 쓰고, '사물+for+사람' 어순이어야 한다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "She asked me a personal question.을 3형식으로 바르게 바꾼 것은?",
+   "choices": [
+    "She asked a personal question to me.",
+    "She asked a personal question for me.",
+    "She asked a personal question of me.",
+    "She asked of me a personal question.",
+    "She asked a personal question at me."
+   ],
+   "answer": 3,
+   "why": "ask는 of를 쓰며 '직접목적어+of+간접목적어' 어순으로 바꾼다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 순서대로 짝지어진 것은?\nThe teacher told an old Korean folktale ____ the students, and it made them ____.",
+   "choices": [
+    "to - sleepy",
+    "for - sleepy",
+    "to - sleepily",
+    "of - sleepy",
+    "for - sleepily"
+   ],
+   "answer": 1,
+   "why": "tell은 to를 쓰고, make의 목적격 보어는 형용사 sleepy여야 한다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 순서대로 짝지어진 것은?\nDad found a nice cap ____ me, and I found it ____. (나는 그것이 예쁘다고 생각했다)",
+   "choices": [
+    "for - pretty",
+    "to - pretty",
+    "for - prettily",
+    "of - pretty",
+    "to - prettily"
+   ],
+   "answer": 1,
+   "why": "find(찾아 주다)는 for를 쓰고, find+목적어+형용사(그것이 예쁘다고 느꼈다)에서 보어는 형용사 pretty이다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장과 형식이 같은 것은? <u>She made her son a doctor.</u>",
+   "choices": [
+    "He made his daughter a toy.",
+    "They made a big cake.",
+    "We made him our captain.",
+    "She made dinner for us.",
+    "The chef made us pasta."
+   ],
+   "answer": 3,
+   "why": "주어진 문장은 5형식(her son=a doctor). ③도 him=our captain인 5형식이다. ①⑤는 4형식, ②④는 3형식.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장과 형식이 같은 것은? <u>My aunt bought me this ring.</u>",
+   "choices": [
+    "I bought this bag at the mall.",
+    "He showed his ID to the guard.",
+    "She wrote him a thank-you note.",
+    "The ring looks expensive.",
+    "We kept the secret."
+   ],
+   "answer": 3,
+   "why": "주어진 문장은 목적어가 두 개인 4형식. ③(him+a thank-you note)도 4형식이다. ①②⑤는 3형식, ④는 2형식.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 틀린 것을 고르시오.",
+   "choices": [
+    "Julie sent <u>her fans</u> holiday cards.",
+    "The coach kept the players <u>calm</u>.",
+    "He bought <u>for his son</u> a robot.",
+    "She told <u>me</u> her secret.",
+    "We named the puppy <u>Choco</u>."
+   ],
+   "answer": 3,
+   "why": "4형식 어순은 bought his son a robot이고, for를 쓰려면 bought a robot for his son으로 사물을 먼저 써야 한다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 잘못 쓰인 것은?",
+   "choices": [
+    "I'll show <u>you</u> something amazing.",
+    "The store sells fresh bread <u>to</u> its neighbors.",
+    "He asked many questions <u>of</u> the speaker.",
+    "Mr. Cho teaches music <u>for</u> his students.",
+    "Grandma made a quilt <u>for</u> me."
+   ],
+   "answer": 4,
+   "why": "teach는 3형식 전환 시 to를 쓴다(teaches music to his students). make는 for가 맞다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 고르시오.",
+   "choices": [
+    "The letter made her happily.",
+    "He bought a snack to me.",
+    "She showed her garden me.",
+    "Mr. Kim told the truth to us.",
+    "They elected president him."
+   ],
+   "answer": 4,
+   "why": "tell의 3형식 'told the truth to us'가 맞다. ①은 happy, ②는 for me, ③은 showed me her garden, ⑤는 elected him president여야 한다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞는 문장은?",
+   "choices": [
+    "Drinking enough water keeps your skin health.",
+    "Drinking enough water keeps your skin healthy.",
+    "Drinking enough water keeps healthy your skin.",
+    "Drinking enough water keeps your skin healthily.",
+    "Drinking enough water keeps your skin to healthy."
+   ],
+   "answer": 2,
+   "why": "keep+목적어+형용사 보어 어순. 명사 health, 부사 healthily는 보어 자리에 올 수 없다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 잘못된 문장은?",
+   "choices": [
+    "My grandmother told me stories about her childhood.",
+    "The judges named her the winner of the contest.",
+    "He got a concert ticket for his brother.",
+    "This app makes learning English easily.",
+    "She handed the report to her boss."
+   ],
+   "answer": 4,
+   "why": "make+목적어+형용사 보어이므로 easily가 아니라 easy를 써야 한다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은?\n· He sold his guitar ____ a collector.\n· Mina lent her charger ____ me.",
+   "choices": [
+    "for",
+    "of",
+    "to",
+    "at",
+    "with"
+   ],
+   "answer": 3,
+   "why": "sell과 lend는 모두 방향의 to를 쓰는 동사이다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은?\n· My father made spaghetti ____ the whole family.\n· She got movie tickets ____ her friends.",
+   "choices": [
+    "to",
+    "of",
+    "for",
+    "at",
+    "from"
+   ],
+   "answer": 3,
+   "why": "make와 get은 모두 3형식 전환 시 for를 쓴다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 동사는?\n· The chef ____ the soup less salty by adding water.\n· The chef ____ us a special dessert.",
+   "choices": [
+    "made",
+    "told",
+    "sent",
+    "taught",
+    "called"
+   ],
+   "answer": 1,
+   "why": "make는 5형식(the soup less salty)과 4형식(us a dessert) 모두 가능하다. 나머지 동사는 첫 문장에 쓸 수 없다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\nA: Did you get a gift for Parents' Day?\nB: Yes, I ____.",
+   "choices": [
+    "gave some flowers my parents",
+    "gave my parents some flowers",
+    "gave to my parents some flowers",
+    "gave for my parents some flowers",
+    "gave my parents for some flowers"
+   ],
+   "answer": 2,
+   "why": "give+간접목적어+직접목적어의 4형식 어순. 사물을 먼저 쓰려면 gave some flowers to my parents.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\nA: How was the science class?\nB: Great. The experiment made the class ____.",
+   "choices": [
+    "fun",
+    "funnily",
+    "to fun",
+    "for fun",
+    "with fun"
+   ],
+   "answer": 1,
+   "why": "make+목적어+형용사 보어. fun이 형용사로 보어 역할을 한다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 옮긴 것으로 옳은 것은? '삼촌은 나에게 종이비행기를 만들어 주셨다.'",
+   "choices": [
+    "My uncle made me a paper plane.",
+    "My uncle made a paper plane to me.",
+    "My uncle made me to a paper plane.",
+    "My uncle made a paper plane of me.",
+    "My uncle made for me to a paper plane."
+   ],
+   "answer": 1,
+   "why": "make의 4형식 어순 'made me a paper plane'. 3형식이면 made a paper plane for me여야 한다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 옮긴 것으로 옳은 것은? '그 소식은 마을 사람들을 불안하게 만들었다.'",
+   "choices": [
+    "The news made the villagers nervous.",
+    "The news made nervous the villagers.",
+    "The news made the villagers nervously.",
+    "The news made the villagers to nervous.",
+    "The news made to the villagers nervous."
+   ],
+   "answer": 1,
+   "why": "make+목적어+형용사 보어(the villagers nervous) 어순이 맞다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 옮긴 것으로 옳은 것은? '나는 그 질문이 어렵다고 느꼈다.' (find 이용)",
+   "choices": [
+    "I found the question difficult.",
+    "I found the question difficultly.",
+    "I found difficult the question.",
+    "I found the question to difficult.",
+    "I found to the question difficult."
+   ],
+   "answer": 1,
+   "why": "find+목적어+형용사: '~이 …하다고 느끼다'. 목적어 뒤에 형용사 보어를 둔다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "문장의 형식이 나머지 넷과 다른 하나는?",
+   "choices": [
+    "He cooked his family a big dinner.",
+    "She read her son a bedtime story.",
+    "I sent my cousin a package.",
+    "They found the empty seat quickly.",
+    "The waiter brought us the menu."
+   ],
+   "answer": 4,
+   "why": "④는 목적어가 하나인 3형식(quickly는 부사)이고, 나머지는 목적어가 두 개인 4형식이다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 형식이 나머지와 다른 문장은?",
+   "choices": [
+    "The trip made us close friends.",
+    "His speech made the audience sleepy.",
+    "The loud music made the baby angry.",
+    "Mom's mistake made the soup salty.",
+    "Dad made the kids pancakes."
+   ],
+   "answer": 5,
+   "why": "⑤는 '아이들에게 팬케이크를 만들어 주었다'는 4형식이고, 나머지는 목적어=보어 관계가 성립하는 5형식이다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? I lost my pen, so Somi lent ____.",
+   "choices": [
+    "me hers",
+    "hers me",
+    "me to hers",
+    "for me hers",
+    "hers for I"
+   ],
+   "answer": 1,
+   "why": "lend+간접목적어+직접목적어 어순. 사물(hers)을 먼저 쓰려면 lent hers to me가 되어야 한다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? He didn't eat the cookie. Instead, he gave ____.",
+   "choices": [
+    "it to his sister",
+    "his sister it",
+    "it his sister",
+    "to his sister it",
+    "it for his sister"
+   ],
+   "answer": 1,
+   "why": "직접목적어가 대명사(it)일 때는 4형식 대신 3형식 'give it to+사람'으로 쓴다. give는 to를 쓴다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 옳은 문장을 고르시오.",
+   "choices": [
+    "Please keep this information secretly.",
+    "Please keep this information a secret.",
+    "Please keep a secret this information.",
+    "Please keep this information to a secret.",
+    "Please keep this information for secret."
+   ],
+   "answer": 2,
+   "why": "keep+목적어+명사 보어(a secret): '~을 비밀로 유지하다'. 부사 secretly는 보어가 될 수 없다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 틀린 문장을 고르시오.",
+   "choices": [
+    "The company sent him a job offer.",
+    "The cold weather made my lips dry.",
+    "She found the new student friendly.",
+    "They elected him captain of the team.",
+    "This program will make you to a better writer."
+   ],
+   "answer": 5,
+   "why": "make+목적어+명사 보어에서는 보어 앞에 to를 쓰지 않는다. make you a better writer가 맞다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 옳은 문장의 개수는?\nㄱ. He gave his seat to the old man.\nㄴ. She made her daughter a beautiful dress.\nㄷ. The joke made everyone happily.\nㄹ. I asked a favor to him.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ㄱ, ㄴ이 옳다. ㄷ은 보어로 형용사 happy, ㄹ은 ask이므로 of him을 써야 한다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장을 4형식으로 바르게 바꾼 것은? <u>She bought a hairpin for her mom.</u>",
+   "choices": [
+    "She bought her mom a hairpin.",
+    "She bought a hairpin her mom.",
+    "She bought her mom for a hairpin.",
+    "She bought for her mom a hairpin.",
+    "She bought a hairpin to her mom."
+   ],
+   "answer": 1,
+   "why": "4형식은 전치사 없이 '사람+사물' 어순으로 쓴다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장을 3형식으로 바르게 바꾼 것은? <u>Mr. Green teaches us math.</u>",
+   "choices": [
+    "Mr. Green teaches math for us.",
+    "Mr. Green teaches math of us.",
+    "Mr. Green teaches math to us.",
+    "Mr. Green teaches us to math.",
+    "Mr. Green teaches math us."
+   ],
+   "answer": 3,
+   "why": "teach는 to를 쓰는 동사이며 '사물+to+사람' 어순으로 바꾼다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? The long hike made everyone ____.",
+   "choices": [
+    "thirsty",
+    "thirstily",
+    "to thirsty",
+    "thirst",
+    "thirstiness"
+   ],
+   "answer": 1,
+   "why": "make의 목적격 보어 자리에는 형용사 thirsty를 쓴다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? Don't leave the window ____ at night. (열린 채로)",
+   "choices": [
+    "open",
+    "openly",
+    "opened",
+    "to open",
+    "opening"
+   ],
+   "answer": 1,
+   "why": "leave+목적어+형용사 보어이며 open 자체가 '열린'이라는 형용사이다. 부사 openly(공공연히)는 뜻도 형태도 맞지 않는다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "동사와 3형식 전환 전치사의 연결이 잘못된 것은?",
+   "choices": [
+    "give - to",
+    "make - for",
+    "ask - of",
+    "send - for",
+    "buy - for"
+   ],
+   "answer": 4,
+   "why": "send는 to를 쓰는 동사이다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "동사와 전치사의 짝이 잘못 연결된 것은?",
+   "choices": [
+    "show - to",
+    "cook - for",
+    "tell - to",
+    "get - for",
+    "lend - for"
+   ],
+   "answer": 5,
+   "why": "lend는 to를 쓰는 동사이다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "She calls her puppy Prince.의 문장 형식은?",
+   "choices": [
+    "1형식",
+    "2형식",
+    "3형식",
+    "4형식",
+    "5형식"
+   ],
+   "answer": 5,
+   "why": "her puppy=Prince의 관계가 성립하는 목적격 보어가 있으므로 5형식이다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "He bought his wife a gold ring.의 문장 형식은?",
+   "choices": [
+    "1형식",
+    "2형식",
+    "3형식",
+    "4형식",
+    "5형식"
+   ],
+   "answer": 4,
+   "why": "간접목적어(his wife)와 직접목적어(a gold ring)가 있는 4형식이다. his wife≠a gold ring이므로 5형식이 아니다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? The teacher found ____ honest.",
+   "choices": [
+    "he",
+    "him",
+    "his",
+    "they",
+    "to him"
+   ],
+   "answer": 2,
+   "why": "find+목적어+형용사의 목적어 자리에는 목적격 him을 쓴다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 순서대로 짝지어진 것은?\nMy aunt got a concert ticket ____ me because the singer's songs make her ____.",
+   "choices": [
+    "for - happy",
+    "to - happy",
+    "for - happily",
+    "of - happy",
+    "to - happily"
+   ],
+   "answer": 1,
+   "why": "get은 for를 쓰고, make의 목적격 보어는 형용사 happy이다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장들 중 밑줄 친 부분이 틀린 것은?",
+   "choices": [
+    "He made <u>himself</u> a cup of tea.",
+    "The blue paint made the room <u>cool</u>.",
+    "I'll get <u>you</u> some snacks.",
+    "The fans call the singer <u>King</u>.",
+    "The rain made the ground <u>wetly</u>."
+   ],
+   "answer": 5,
+   "why": "make의 목적격 보어는 형용사 wet이어야 한다. ①은 '자기 자신에게 차를 만들어 주었다'로 재귀대명사가 맞다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "4형식을 3형식으로 바꾼 것 중 잘못된 것은?",
+   "choices": [
+    "I gave him a hint. → I gave a hint to him.",
+    "She made us cookies. → She made cookies for us.",
+    "He asked her a question. → He asked a question of her.",
+    "Mom bought me a coat. → Mom bought a coat to me.",
+    "I sent them invitations. → I sent invitations to them."
+   ],
+   "answer": 4,
+   "why": "buy는 for를 쓰는 동사이므로 bought a coat for me가 되어야 한다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 수 없는 것은? She ____ me a text message.",
+   "choices": [
+    "sent",
+    "showed",
+    "wrote",
+    "gave",
+    "explained"
+   ],
+   "answer": 5,
+   "why": "explain은 4형식으로 쓸 수 없는 동사로, explain A to B의 3형식만 가능하다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 수 없는 것은? He ____ me his notes.",
+   "choices": [
+    "lent",
+    "showed",
+    "gave",
+    "said",
+    "passed"
+   ],
+   "answer": 4,
+   "why": "say는 간접목적어를 취하지 못하므로 4형식 불가. said his notes to me처럼도 어색하며 말 전달에는 tell을 쓴다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 수 없는 것은? Grandma ____ me a warm scarf.",
+   "choices": [
+    "bought",
+    "made",
+    "got",
+    "found",
+    "wanted"
+   ],
+   "answer": 5,
+   "why": "want는 수여동사가 아니어서 '사람+사물' 두 목적어를 취할 수 없다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 수 없는 것은? We found the movie ____.",
+   "choices": [
+    "great",
+    "sad",
+    "fun",
+    "long",
+    "slowly"
+   ],
+   "answer": 5,
+   "why": "find+목적어 뒤 보어 자리에는 형용사만 가능하다. slowly는 부사라 불가.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 문장의 형식이 서로 같은 것은?",
+   "choices": [
+    "He gave me a map. / She kept the door open.",
+    "I made him a model plane. / I made him a team leader.",
+    "They told us the news. / He wrote her a letter.",
+    "We elected her chairperson. / He bought me lunch.",
+    "She found her keys. / She found the test easy."
+   ],
+   "answer": 3,
+   "why": "③은 둘 다 4형식이다. ①은 4·5형식, ②는 4·5형식, ④는 5·4형식, ⑤는 3·5형식으로 서로 다르다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\nA: The room is too dark.\nB: Turn on the lamp. It will make the room ____.",
+   "choices": [
+    "bright",
+    "brightly",
+    "brightness",
+    "to bright",
+    "in bright"
+   ],
+   "answer": 1,
+   "why": "make+목적어+형용사 보어. 부사 brightly와 명사 brightness는 보어 자리에 올 수 없다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 옮길 때 네 번째로 오는 단어는? '아버지는 우리에게 맛있는 카레를 요리해 주셨다.' (cooked, delicious, curry, us, Father)",
+   "choices": [
+    "cooked",
+    "us",
+    "delicious",
+    "curry",
+    "Father"
+   ],
+   "answer": 3,
+   "why": "Father cooked us delicious curry.의 4형식 어순이 되므로 네 번째 단어는 delicious이다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 3형식으로 바꿔 쓰시오: She gave him her umbrella.",
+   "answer": "She gave her umbrella to him.",
+   "alt": [
+    "She gave her umbrella to him"
+   ],
+   "why": "give는 '직접목적어+to+간접목적어' 어순의 3형식으로 바꾼다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 3형식으로 바꿔 쓰시오: My mom bought me this jacket.",
+   "answer": "My mom bought this jacket for me.",
+   "alt": [
+    "My mom bought this jacket for me"
+   ],
+   "why": "buy는 3형식 전환 시 for를 쓴다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 3형식으로 바꿔 쓰시오: He asked me a few questions.",
+   "answer": "He asked a few questions of me.",
+   "alt": [
+    "He asked a few questions of me"
+   ],
+   "why": "ask는 3형식 전환 시 of를 쓴다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 4형식으로 바꿔 쓰시오: I sent a present to my cousin.",
+   "answer": "I sent my cousin a present.",
+   "alt": [
+    "I sent my cousin a present"
+   ],
+   "why": "4형식은 전치사 없이 '간접목적어+직접목적어' 어순으로 쓴다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 4형식으로 바꿔 쓰시오: Dad cooked ramyeon for us.",
+   "answer": "Dad cooked us ramyeon.",
+   "alt": [
+    "Dad cooked us ramyeon"
+   ],
+   "why": "for us를 없애고 '사람+사물' 어순의 4형식으로 쓴다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오: This blanket will keep you <u>warmly</u>.",
+   "answer": "warm",
+   "why": "keep+목적어+형용사 보어이므로 부사 warmly가 아닌 형용사 warm을 쓴다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오: He showed his new phone <u>for</u> me.",
+   "answer": "to",
+   "why": "show는 3형식 전환 시 to를 쓰는 동사이다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오: She got a glass of juice <u>to</u> her grandfather.",
+   "answer": "for",
+   "why": "get은 3형식 전환 시 for를 쓴다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오: We elected <u>he</u> our club president.",
+   "answer": "him",
+   "why": "elect의 목적어 자리에는 목적격 him을 쓴다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오: Her smile always makes me <u>comfortably</u>.",
+   "answer": "comfortable",
+   "why": "make의 목적격 보어 자리에는 형용사 comfortable을 쓴다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오: The trip made our friendship (strength) ____.",
+   "answer": "strong",
+   "why": "make+목적어+형용사 보어이므로 명사 strength를 형용사 strong으로 바꾼다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오: The good news made everybody (joy) ____.",
+   "answer": "joyful",
+   "why": "보어 자리에는 형용사가 오므로 명사 joy를 joyful로 바꾼다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사 한 단어를 쓰시오: I'll write a postcard ____ you during the trip.",
+   "answer": "to",
+   "why": "write는 3형식 전환 시 to를 쓴다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 전치사 한 단어를 쓰시오: Minho found a good seat ____ his little brother.",
+   "answer": "for",
+   "why": "find(찾아 주다)는 3형식 전환 시 for를 쓴다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말에 맞게 괄호 안의 말을 배열하여 문장을 쓰시오: 그 선생님은 학생들에게 재미있는 게임을 가르쳐 주셨다. (the students / taught / an interesting game / the teacher)",
+   "answer": "The teacher taught the students an interesting game.",
+   "alt": [
+    "The teacher taught the students an interesting game"
+   ],
+   "why": "teach+간접목적어(the students)+직접목적어(an interesting game)의 4형식 어순이다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말에 맞게 괄호 안의 말을 배열하여 문장을 쓰시오: 우리는 그 축제를 the Night of Light라고 이름 지었다. (named / the festival / we / the Night of Light)",
+   "answer": "We named the festival the Night of Light.",
+   "alt": [
+    "We named the festival the Night of Light"
+   ],
+   "why": "name+목적어+명사 보어의 5형식 어순이다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말에 맞게 괄호 안의 말을 배열하여 문장을 쓰시오: 규칙적인 운동은 너를 건강하게 유지해 준다. (keeps / regular exercise / healthy / you)",
+   "answer": "Regular exercise keeps you healthy.",
+   "alt": [
+    "Regular exercise keeps you healthy"
+   ],
+   "why": "keep+목적어+형용사 보어의 5형식 어순이다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장이 같은 뜻이 되도록 빈칸에 세 단어를 쓰시오: He handed the keys to me. = He handed ____ ____ ____.",
+   "answer": "me the keys",
+   "why": "3형식을 4형식으로 바꾸면 전치사 없이 '간접목적어+직접목적어' 어순이 된다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장이 같은 뜻이 되도록 빈칸에 두 단어를 쓰시오: She made us a chocolate cake. = She made a chocolate cake ____ ____.",
+   "answer": "for us",
+   "why": "make는 3형식 전환 시 for+목적격을 쓴다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장이 같은 뜻이 되도록 빈칸에 이어질 말을 쓰시오(4형식으로): The teacher asked the same question of every student. = The teacher asked ____.",
+   "answer": "every student the same question",
+   "why": "of every student의 사람을 간접목적어로 앞에 두는 4형식 어순으로 바꾼다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것끼리 짝지은 것은?\nㄱ. The nurse asked several questions of the patient.\nㄴ. My aunt made a beautiful hanbok to me.\nㄷ. The judges found her performance perfect.\nㄹ. He sent to his fans a thank-you video.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄱ(ask ~ of)과 ㄷ(find+목적어+형용사)이 옳다. ㄴ은 make이므로 for me, ㄹ은 sent his fans ~ 또는 sent ~ to his fans 어순이어야 한다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 문장으로만 묶인 것은?\nㄱ. Winter makes the days shorter and the nights longer.\nㄴ. She bought her parents plane tickets for their anniversary.\nㄷ. Please keep the window closely.\nㄹ. The club members elected Jiho their new leader.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄱ, ㄴ, ㄹ",
+    "ㄴ, ㄷ, ㄹ",
+    "ㄱ, ㄴ, ㄷ, ㄹ"
+   ],
+   "answer": 3,
+   "why": "ㄷ은 keep의 보어로 부사 closely를 쓸 수 없어 틀렸다(closed 등 형용사여야 함). 나머지는 모두 옳다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 틀린 문장의 개수는?\nㄱ. The heavy rain made the road slippery.\nㄴ. He got a cup of coffee to his coworker.\nㄷ. I'll lend you my notes if you need them.\nㄹ. The story made the children curiously.\nㅁ. She asked a big favor of her neighbor.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ㄴ은 get이므로 for, ㄹ은 보어로 형용사 curious를 써야 하므로 틀린 것은 2개이다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 문장의 개수는?\nㄱ. My grandfather built us a tree house.\nㄴ. The coach's advice made the team confident.\nㄷ. She showed the police officer her driver's license.\nㄹ. Mom found for me a math tutor.\nㅁ. This song always makes me calmly.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ, ㄴ, ㄷ이 옳다. ㄹ은 found me a math tutor(또는 found a math tutor for me), ㅁ은 형용사 calm이어야 한다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은?\nLast weekend, my uncle ①<u>bought</u> fresh strawberries ②<u>for</u> us and ③<u>made</u> us strawberry jam, and the sweet smell ④<u>made</u> the whole house ⑤<u>pleasantly</u>.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 5,
+   "why": "make+목적어 뒤 보어는 형용사 pleasant여야 한다. ②는 buy의 3형식 전치사 for로 옳다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은?\nMy sister showed ①<u>me</u> her science project, told ②<u>to me</u> its main idea, and asked a few questions ③<u>of</u> me, and her passion made me ④<u>proud</u> of ⑤<u>her</u>.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 2,
+   "why": "tell의 4형식은 told me its main idea이고, 전치사를 쓰려면 told its main idea to me 어순이어야 한다. ③의 ask ~ of는 옳다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "두 문장의 의미가 서로 같지 않은 것은?",
+   "choices": [
+    "I gave the beggar some coins. = I gave some coins to the beggar.",
+    "He bought me a movie ticket. = He bought a movie ticket for me.",
+    "She made her son a pilot. = She made a pilot for her son.",
+    "The teacher asked us tricky questions. = The teacher asked tricky questions of us.",
+    "Dad got me a new desk. = Dad got a new desk for me."
+   ],
+   "answer": 3,
+   "why": "③의 앞 문장은 '아들을 조종사로 만들었다'는 5형식이라 3형식으로 전환할 수 없다. 뒤 문장은 '아들을 위해 조종사를 만들었다'는 다른 뜻이 된다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 바른 문장은?",
+   "choices": [
+    "The critics called the film a masterpiece.",
+    "The critics called a masterpiece the film.",
+    "The critics called the film masterly a piece.",
+    "The critics called to the film a masterpiece.",
+    "The critics called the film as a masterpiece."
+   ],
+   "answer": 1,
+   "why": "call+목적어+명사 보어 어순이며, call A as B처럼 as를 넣으면 틀린다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 알맞은 문장을 고르면?",
+   "choices": [
+    "Please send we your answer by Friday.",
+    "Please send your answer to us by Friday.",
+    "Please send to us your answer by Friday.",
+    "Please send your answer for us by Friday.",
+    "Please send us to your answer by Friday."
+   ],
+   "answer": 2,
+   "why": "send의 3형식은 '사물+to+사람'. ①은 목적격 us, ③은 어순, ④는 전치사가 틀렸다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳지 않은 문장은?",
+   "choices": [
+    "Steve Jobs made the smartphone a part of daily life.",
+    "The new coach made the training program harder.",
+    "The colorful posters made the hallway bright.",
+    "The designer made the app simple and easy.",
+    "The spicy sauce made the dish deliciously."
+   ],
+   "answer": 5,
+   "why": "make의 목적격 보어는 형용사 delicious여야 한다. ②의 harder는 형용사 비교급이므로 옳다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은?\n· The documentary made the issue ____ to everyone.\n· Keep your explanation ____ and short.",
+   "choices": [
+    "clear",
+    "clearly",
+    "clean",
+    "clearness",
+    "to clear"
+   ],
+   "answer": 1,
+   "why": "두 문장 모두 목적격 보어 자리이므로 형용사 clear가 공통으로 들어간다. clearly는 부사라 불가.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 동사는?\n· Please ____ me your address.\n· Don't ____ him the ending of the movie.",
+   "choices": [
+    "tell",
+    "say",
+    "talk",
+    "speak",
+    "explain"
+   ],
+   "answer": 1,
+   "why": "'사람+사물' 두 목적어를 취하는 4형식 동사는 tell뿐이다. say/talk/speak/explain은 간접목적어를 바로 취할 수 없다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 수 없는 것은? The critics ____ the novel a modern classic.",
+   "choices": [
+    "called",
+    "named",
+    "made",
+    "considered",
+    "wanted"
+   ],
+   "answer": 5,
+   "why": "call/name/make/consider는 '목적어+명사 보어'의 5형식이 가능하지만 want는 이런 구조를 취할 수 없다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은?\nA: This math problem is too hard for me.\nB: Don't worry. I'll ____.",
+   "choices": [
+    "show you an easy way",
+    "show an easy way you",
+    "show you to an easy way",
+    "show for you an easy way",
+    "show to you an easy way"
+   ],
+   "answer": 1,
+   "why": "show+간접목적어+직접목적어의 4형식 어순. 전치사를 쓰려면 show an easy way to you여야 한다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 문장을 3형식으로 바꾼 것으로 옳은 것은? <u>The company offered him a better position.</u>",
+   "choices": [
+    "The company offered a better position to him.",
+    "The company offered a better position for him.",
+    "The company offered a better position of him.",
+    "The company offered him to a better position.",
+    "The company offered a better position him."
+   ],
+   "answer": 1,
+   "why": "offer는 to를 쓰는 동사로 '사물+to+사람' 어순으로 바꾼다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 5형식 문장은?",
+   "choices": [
+    "The chef made the guests a special dessert.",
+    "The judges made her the grand prize winner.",
+    "He made a small mistake in the report.",
+    "She made lunch for the whole team.",
+    "My father made me a bookshelf last week."
+   ],
+   "answer": 2,
+   "why": "②는 her=the grand prize winner 관계가 성립하는 5형식. ①⑤는 4형식, ③④는 3형식이다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 4형식 문장은?",
+   "choices": [
+    "We found the missing dog in the park.",
+    "We found the dog a new home.",
+    "We found the dog lovely.",
+    "The dog found its way home.",
+    "We found out the truth."
+   ],
+   "answer": 2,
+   "why": "②는 '개에게 새 집을 찾아 주었다'로 간접·직접목적어가 있는 4형식. ③은 5형식, 나머지는 3형식이다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "4형식을 3형식으로 바꾼 것 중 옳은 것을 모두 고른 것은?\nㄱ. She wrote him a reply. → She wrote a reply to him.\nㄴ. He cooked her dinner. → He cooked dinner for her.\nㄷ. I'll get you a taxi. → I'll get a taxi of you.\nㄹ. They showed me the way. → They showed the way for me.",
+   "choices": [
+    "ㄱ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "write는 to, cook은 for가 맞다. get은 for, show는 to를 써야 하므로 ㄷ, ㄹ은 틀렸다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 순서대로 짝지어진 것은?\nAfter the earthquake, volunteers sent food and water ____ the town, and their quick help kept the people ____.",
+   "choices": [
+    "to - safe",
+    "for - safe",
+    "to - safely",
+    "of - safe",
+    "for - safely"
+   ],
+   "answer": 1,
+   "why": "send는 to를 쓰고, keep의 목적격 보어는 형용사 safe여야 한다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 동사가 5형식으로 쓰인 것은?",
+   "choices": [
+    "He <u>left</u> his bag on the bus.",
+    "She <u>left</u> the room messy.",
+    "They <u>left</u> for the airport early.",
+    "I <u>left</u> my hometown in 2020.",
+    "The train <u>left</u> at seven."
+   ],
+   "answer": 2,
+   "why": "②는 '방을 지저분한 채로 두었다'로 목적어+형용사 보어의 5형식. ③⑤는 1형식, ①④는 3형식이다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 동사가 4형식으로 쓰인 것은?",
+   "choices": [
+    "The tailor <u>made</u> a suit quickly.",
+    "Everyone <u>made</u> mistakes at first.",
+    "Grandma <u>made</u> us rice cakes.",
+    "The film <u>made</u> the actor a world star.",
+    "Her effort <u>made</u> the project successful."
+   ],
+   "answer": 3,
+   "why": "③은 '우리에게 떡을 만들어 주었다'는 4형식. ④⑤는 5형식, ①②는 3형식이다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "단어들을 모두 한 번씩 사용하여 문장을 만들 때 다섯 번째로 오는 단어는? (kept / the / secret / she / safe)",
+   "choices": [
+    "kept",
+    "the",
+    "secret",
+    "safe",
+    "she"
+   ],
+   "answer": 4,
+   "why": "She kept the secret safe.의 5형식 어순이 되므로 다섯 번째 단어는 보어인 safe이다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 조건에 맞게 영작한 것으로 옳은 것은? '그 선생님은 우리에게 그 규칙을 설명해 주셨다.' (explain 사용)",
+   "choices": [
+    "The teacher explained us the rule.",
+    "The teacher explained the rule to us.",
+    "The teacher explained the rule us.",
+    "The teacher explained us to the rule.",
+    "The teacher explained the rule of us."
+   ],
+   "answer": 2,
+   "why": "explain은 4형식이 불가능한 동사라서 explain A to B의 3형식으로만 쓴다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 것은?",
+   "choices": [
+    "The librarian found me a quiet seat.",
+    "The good harvest made the farmers rich.",
+    "She sang the baby a lullaby.",
+    "He got his daughter a puppy for her birthday.",
+    "Loud music at night makes the neighbors angrily."
+   ],
+   "answer": 5,
+   "why": "make의 목적격 보어는 형용사 angry여야 한다. sing도 4형식으로 쓸 수 있어 ③은 옳다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 수 있는 동사는?\n· She ____ her friend a secret note during class.\n· I ____ my old books to the library last month.",
+   "choices": [
+    "passed",
+    "bought",
+    "made",
+    "cooked",
+    "told"
+   ],
+   "answer": 1,
+   "why": "pass는 4형식(passed her friend a note)과 to를 쓰는 3형식(passed ~ to the library) 모두 가능하다. bought/made/cooked는 for를 쓰는 동사라 둘째 문장에 맞지 않는다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 틀린 것끼리 짝지은 것은?\nㄱ. The map made our trip easier.\nㄴ. Could you get some batteries for me at the store?\nㄷ. The reporter asked several questions to the actor.\nㄹ. The dentist told to me some tips for healthy teeth.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ask는 of를 쓰므로 ㄷ이 틀렸고, ㄹ은 told me some tips 어순이어야 한다. ㄱ의 easier는 형용사 비교급 보어로 옳다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "She bought me these gloves.를 3형식으로 바꿀 때 세 번째로 오는 단어는?",
+   "choices": [
+    "bought",
+    "these",
+    "gloves",
+    "for",
+    "me"
+   ],
+   "answer": 2,
+   "why": "She bought these gloves for me.가 되므로 세 번째 단어는 these이다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞지 않은 것은? The volunteers made the old playground ____.",
+   "choices": [
+    "safe",
+    "beautiful",
+    "a fun place",
+    "clean",
+    "freely"
+   ],
+   "answer": 5,
+   "why": "목적격 보어 자리에는 형용사나 명사가 온다. 부사 freely는 보어가 될 수 없다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 틀린 부분을 바르게 고친 것은? The tour guide showed for the visitors the old palace and told them its history.",
+   "choices": [
+    "for the visitors → the visitors",
+    "showed → shown",
+    "told → told to",
+    "them → they",
+    "its → it's"
+   ],
+   "answer": 1,
+   "why": "show의 4형식은 showed the visitors the old palace로 전치사가 필요 없다. told them its history는 옳은 4형식이다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 틀린 부분을 바르게 고친 것은? This hot tea will keep you warmly during the night hike.",
+   "choices": [
+    "keep → keeps",
+    "warmly → warm",
+    "you → your",
+    "during → while",
+    "hot → hotly"
+   ],
+   "answer": 2,
+   "why": "keep+목적어+형용사 보어이므로 부사 warmly를 형용사 warm으로 고친다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "문장의 형식이 같은 것끼리 바르게 묶인 것은?\nㄱ. The waiter poured me some water.\nㄴ. The actors made the play a big hit.\nㄷ. She teaches children art at the center.\nㄹ. The snowstorm made the roads dangerous.",
+   "choices": [
+    "(ㄱ, ㄴ), (ㄷ, ㄹ)",
+    "(ㄱ, ㄷ), (ㄴ, ㄹ)",
+    "(ㄱ, ㄹ), (ㄴ, ㄷ)",
+    "(ㄱ, ㄴ, ㄷ), (ㄹ)",
+    "(ㄱ), (ㄴ, ㄷ, ㄹ)"
+   ],
+   "answer": 2,
+   "why": "ㄱ, ㄷ은 목적어가 두 개인 4형식이고, ㄴ, ㄹ은 목적어=보어 관계가 성립하는 5형식이다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 4형식 문장의 개수는?\nㄱ. My aunt runs a small bakery near the station.\nㄴ. She often gives the children free cookies.\nㄷ. The sweet smell makes the street pleasant.\nㄹ. Last week she baked me a chocolate muffin.\nㅁ. Everyone calls her the Cookie Queen.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "4형식은 ㄴ(gives the children free cookies)과 ㄹ(baked me a muffin)의 2개. ㄷ, ㅁ은 5형식, ㄱ은 3형식이다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 빈칸에 들어갈 말로 알맞은 것은?\nMinsu's dog waits for him at the gate every day. This small habit ____.",
+   "choices": [
+    "makes Minsu's day special",
+    "makes special Minsu's day",
+    "makes Minsu's day specially",
+    "makes to Minsu's day special",
+    "makes Minsu's day for special"
+   ],
+   "answer": 1,
+   "why": "make+목적어+형용사 보어의 5형식 어순이며, 부사 specially나 전치사는 쓸 수 없다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분의 역할이 나머지 넷과 다른 것은?",
+   "choices": [
+    "She made him <u>a rich man</u>.",
+    "They elected her <u>team captain</u>.",
+    "We call the tower <u>the Pencil</u>.",
+    "He made his son <u>a paper crown</u>.",
+    "People named the storm <u>Nari</u>."
+   ],
+   "answer": 4,
+   "why": "④는 '아들에게 종이 왕관을 만들어 주었다'의 직접목적어이고, 나머지는 목적어의 상태·이름을 설명하는 목적격 보어이다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 올바른 것은?",
+   "choices": [
+    "After the game, the coach bought the players pizza and told them funny stories.",
+    "After the game, the coach bought pizza to the players and told them funny stories.",
+    "After the game, the coach bought the players pizza and told to them funny stories.",
+    "After the game, the coach bought pizza of the players and told them funny stories.",
+    "After the game, the coach bought the players to pizza and told them funny stories."
+   ],
+   "answer": 1,
+   "why": "buy와 tell 모두 '사람+사물'의 4형식 어순이 맞다. buy를 3형식으로 쓰려면 for the players여야 한다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 밑줄 친 부분 중 어법상 틀린 것은?\nA: I ①<u>made</u> my little brother ②<u>a sandcastle</u> at the beach.\nB: Nice! Did it ③<u>make</u> him ④<u>happily</u>?\nA: Yes, he loved ⑤<u>it</u>.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 4,
+   "why": "make+목적어 뒤 보어 자리에는 형용사 happy를 써야 한다. ①②는 '동생에게 모래성을 만들어 주었다'는 4형식으로 옳다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 find의 쓰임이 어법상 틀린 것은?",
+   "choices": [
+    "I found my wallet under the sofa.",
+    "She found me a cheap flight ticket.",
+    "We found the rumor false.",
+    "He found quickly the answer.",
+    "They found the cave a good shelter."
+   ],
+   "answer": 4,
+   "why": "동사와 목적어 사이에 부사를 끼워 넣을 수 없다. He quickly found the answer 또는 He found the answer quickly로 써야 한다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)에 들어갈 말로 알맞게 짝지어진 것은?\nThe city (A)(built / elected) the children a new library, and people (B)(called / sent) it the Dream Box. The cozy reading rooms keep every visitor (C)(comfortable / comfortably).",
+   "choices": [
+    "built - called - comfortable",
+    "built - sent - comfortably",
+    "elected - called - comfortable",
+    "elected - sent - comfortable",
+    "built - called - comfortably"
+   ],
+   "answer": 1,
+   "why": "(A) '지어 주었다'의 4형식 built, (B) call+목적어+이름의 5형식 called, (C) keep의 보어는 형용사 comfortable.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)에 들어갈 말로 알맞게 짝지어진 것은?\nWe bought small gifts (A)(to / for) our teachers, and the surprise made them (B)(happy / happily). Later, they told (C)(us / to us) warm words.",
+   "choices": [
+    "to - happy - us",
+    "for - happy - us",
+    "for - happily - us",
+    "for - happy - to us",
+    "to - happily - to us"
+   ],
+   "answer": 2,
+   "why": "buy는 for, make의 보어는 형용사 happy, tell의 4형식은 전치사 없이 told us warm words이다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은?\nThe class ①<u>elected</u> Suji ②<u>their</u> representative because her ideas always make the discussion ③<u>lively</u>, and she kindly explains difficult topics ④<u>for</u> classmates and gives ⑤<u>them</u> clear examples.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 4,
+   "why": "explain은 to를 쓰는 동사이므로 explains ~ to classmates여야 한다. ③의 lively는 -ly로 끝나지만 형용사이므로 보어로 옳다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 문장의 개수는?\nㄱ. Mr. Oh will teach the beginners chess this winter.\nㄴ. The thick curtains keep the room dark and quiet.\nㄷ. She asked some advice to her mentor.\nㄹ. His rude words made the mood badly.\nㅁ. I'll find you a better seat.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ, ㄴ, ㅁ이 옳다. ㄷ은 ask이므로 of, ㄹ은 형용사 bad를 써야 한다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "'아빠는 나에게 따뜻한 코코아를 만들어 주셨다'를 4형식 문장으로 영작할 때 필요 없는 것은?",
+   "choices": [
+    "Dad",
+    "made",
+    "me",
+    "warm cocoa",
+    "for"
+   ],
+   "answer": 5,
+   "why": "4형식 Dad made me warm cocoa.에는 전치사가 필요 없다. for는 3형식 전환에서만 쓴다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "'우리는 그 문제가 심각하다는 것을 알게 되었다'를 find를 이용해 5형식으로 영작할 때 필요 없는 것은?",
+   "choices": [
+    "We",
+    "found",
+    "the problem",
+    "serious",
+    "that"
+   ],
+   "answer": 5,
+   "why": "5형식 We found the problem serious.로 쓰면 접속사 that이 필요 없다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "문장과 형식의 연결이 잘못된 것은?",
+   "choices": [
+    "He lent the farmer his truck. - 4형식",
+    "The fog made driving dangerous. - 5형식",
+    "She got her brother a bus pass. - 4형식",
+    "The team named the robot Tobot. - 4형식",
+    "I wrote my pen pal a long letter. - 4형식"
+   ],
+   "answer": 4,
+   "why": "name+목적어+이름은 the robot=Tobot 관계가 성립하는 5형식이다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 잘못된 문장을 고르시오.",
+   "choices": [
+    "The counselor gave the students useful advice about exams.",
+    "Don't leave the heater on all night.",
+    "The judges found his answer creative.",
+    "The company will send free samples for the first 100 customers.",
+    "Her calm voice made the room quiet."
+   ],
+   "answer": 4,
+   "why": "send는 to를 쓰는 동사이므로 send free samples to the first 100 customers여야 한다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장들 중 어법상 옳은 것은?",
+   "choices": [
+    "The scouts made the visitors a map and showed them the trail.",
+    "The scouts made a map to the visitors and showed them the trail.",
+    "The scouts made the visitors a map and showed to them the trail.",
+    "The scouts made a map the visitors and showed them the trail.",
+    "The scouts made the visitors for a map and showed them the trail."
+   ],
+   "answer": 1,
+   "why": "make와 show의 4형식 어순이 모두 맞다. make를 3형식으로 쓰려면 made a map for the visitors여야 한다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 3형식으로 바꿔 쓰시오: The chef cooked the guests a seafood dish.",
+   "answer": "The chef cooked a seafood dish for the guests.",
+   "alt": [
+    "The chef cooked a seafood dish for the guests"
+   ],
+   "why": "cook은 3형식 전환 시 for를 쓰며 '사물+for+사람' 어순이 된다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 3형식으로 바꿔 쓰시오: My uncle showed me his old photo albums.",
+   "answer": "My uncle showed his old photo albums to me.",
+   "alt": [
+    "My uncle showed his old photo albums to me"
+   ],
+   "why": "show는 to를 쓰는 동사이다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 3형식으로 바꿔 쓰시오: The reporter asked the mayor a sharp question.",
+   "answer": "The reporter asked a sharp question of the mayor.",
+   "alt": [
+    "The reporter asked a sharp question of the mayor"
+   ],
+   "why": "ask는 3형식 전환 시 of를 쓴다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 4형식으로 바꿔 쓰시오: I sent a small gift to my host family.",
+   "answer": "I sent my host family a small gift.",
+   "alt": [
+    "I sent my host family a small gift"
+   ],
+   "why": "to+사람을 간접목적어로 동사 바로 뒤에 두는 4형식 어순으로 바꾼다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 4형식으로 바꿔 쓰시오: She found a part-time job for her friend.",
+   "answer": "She found her friend a part-time job.",
+   "alt": [
+    "She found her friend a part-time job"
+   ],
+   "why": "find(찾아 주다)는 4형식으로 쓸 때 전치사 없이 '사람+사물' 어순이다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오: His careless words made the meeting <u>uncomfortably</u>.",
+   "answer": "uncomfortable",
+   "why": "make의 목적격 보어 자리에는 형용사 uncomfortable을 써야 한다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오: The waiter brought the wrong dish <u>for</u> our table.",
+   "answer": "to",
+   "why": "bring은 방향의 to를 쓰는 동사이다(bring A to B).",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오: The teacher asked the same favor <u>to</u> every student.",
+   "answer": "of",
+   "why": "ask는 3형식 전환 시 of를 쓴다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오: The good news made her voice <u>brightly</u>.",
+   "answer": "bright",
+   "why": "make+목적어+형용사 보어이므로 부사 brightly가 아니라 bright를 쓴다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말에 맞게 괄호 안의 말을 배열하여 문장을 쓰시오: 그 축제는 우리 마을을 유명하게 만들었다. (our town / made / famous / the festival)",
+   "answer": "The festival made our town famous.",
+   "alt": [
+    "The festival made our town famous"
+   ],
+   "why": "make+목적어+형용사 보어의 5형식 어순이다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말에 맞게 괄호 안의 말을 배열하여 문장을 쓰시오: 그녀는 남동생에게 자신의 오래된 노트북을 주었다. (gave / her old laptop / she / her brother)",
+   "answer": "She gave her brother her old laptop.",
+   "alt": [
+    "She gave her brother her old laptop"
+   ],
+   "why": "give+간접목적어(her brother)+직접목적어(her old laptop)의 4형식 어순이다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말에 맞게 괄호 안의 말을 배열하여 문장을 쓰시오: 우리는 그 프로젝트를 Blue Dream이라고 이름 지었다. (named / we / the project / Blue Dream)",
+   "answer": "We named the project Blue Dream.",
+   "alt": [
+    "We named the project Blue Dream"
+   ],
+   "why": "name+목적어+명사 보어(이름)의 5형식 어순이다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장이 같은 뜻이 되도록 빈칸에 두 단어를 쓰시오: Mr. Baek is our science teacher. = Mr. Baek teaches science ____ ____.",
+   "answer": "to us",
+   "why": "teach는 3형식에서 to+목적격을 쓴다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장이 같은 뜻이 되도록 빈칸에 네 단어를 쓰시오: The store got new shoes for the runner. = The store got ____ ____ ____ ____.",
+   "answer": "the runner new shoes",
+   "why": "for+사람을 간접목적어로 앞에 두는 4형식 어순 the runner new shoes가 된다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오: The blackout left the whole city (darkness) ____.",
+   "answer": "dark",
+   "why": "leave+목적어+형용사 보어이므로 명사 darkness를 형용사 dark로 바꾼다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 쓰시오: The judges' praise made the young chef (confidence) ____.",
+   "answer": "confident",
+   "why": "make의 목적격 보어 자리에는 형용사 confident가 온다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 전치사를 쓰시오: 나는 부모님께 진실을 말씀드렸다. → I told the truth ____ my parents.",
+   "answer": "to",
+   "why": "tell은 3형식 전환 시 to를 쓴다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 전치사를 쓰시오: 그 앱은 사용자들에게 무료 쿠폰을 보내 준다. → The app sends free coupons ____ its users.",
+   "answer": "to",
+   "why": "send는 보내는 방향의 to를 쓴다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 밑줄 친 동사를 그대로 사용하여 4형식으로 바꿔 쓰시오: He <u>wrote</u> a thank-you letter to the firefighters.",
+   "answer": "He wrote the firefighters a thank-you letter.",
+   "alt": [
+    "He wrote the firefighters a thank-you letter"
+   ],
+   "why": "to the firefighters의 사람을 간접목적어로 앞에 두면 4형식이 된다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장이 같은 뜻이 되도록 빈칸에 다섯 단어를 쓰시오: The nurse handed a warm towel to the patient. = The nurse handed ____ ____ ____ ____ ____.",
+   "answer": "the patient a warm towel",
+   "why": "hand의 4형식은 전치사 없이 '사람(the patient)+사물(a warm towel)' 어순이다.",
+   "no": 200
+  }
+ ]
+}

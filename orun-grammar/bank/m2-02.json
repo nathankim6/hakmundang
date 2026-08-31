@@ -1,0 +1,2627 @@
+{
+ "id": "m2-02",
+ "grade": "중2",
+ "name": "5형식 to부정사 목적격 보어",
+ "points": [
+  "want/ask/tell/allow/advise+O+to-v",
+  "부정 not to-v"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nI want you ____ me with my homework.",
+   "choices": [
+    "help",
+    "helps",
+    "to help",
+    "helping",
+    "helped"
+   ],
+   "answer": 3,
+   "why": "want/ask/tell/allow/advise는 목적어 뒤에 to부정사를 목적격 보어로 쓴다. want you 뒤에는 to help가 온다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nShe wants him ____ home early.",
+   "choices": [
+    "comes",
+    "come",
+    "coming",
+    "to come",
+    "came"
+   ],
+   "answer": 4,
+   "why": "want/ask/tell/allow/advise는 목적어 뒤에 to부정사를 목적격 보어로 쓴다. want him 뒤에는 to come이 온다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nMom told me ____ my room.",
+   "choices": [
+    "cleaning",
+    "clean",
+    "to clean",
+    "cleans",
+    "cleaned"
+   ],
+   "answer": 3,
+   "why": "tell+목적어 뒤 보어는 to부정사이므로 to clean이 맞다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nHe asked me ____ the door.",
+   "choices": [
+    "to open",
+    "open",
+    "opens",
+    "opening",
+    "opened"
+   ],
+   "answer": 1,
+   "why": "ask+목적어 뒤 보어는 to부정사이므로 to open이 맞다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nMy parents allow me ____ TV on weekends.",
+   "choices": [
+    "watch",
+    "watches",
+    "watching",
+    "watched",
+    "to watch"
+   ],
+   "answer": 5,
+   "why": "allow+목적어 뒤 보어는 to부정사이므로 to watch가 맞다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThe doctor advised him ____ more water.",
+   "choices": [
+    "drink",
+    "to drink",
+    "drinks",
+    "drinking",
+    "drank"
+   ],
+   "answer": 2,
+   "why": "advise+목적어 뒤 보어는 to부정사이므로 to drink가 맞다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nI told her ____ quiet in the library.",
+   "choices": [
+    "be",
+    "is",
+    "to be",
+    "being",
+    "been"
+   ],
+   "answer": 3,
+   "why": "tell+목적어 뒤 보어는 to부정사이므로 to be가 맞다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nShe asked him ____ the box.",
+   "choices": [
+    "carry",
+    "carries",
+    "carrying",
+    "to carry",
+    "carried"
+   ],
+   "answer": 4,
+   "why": "ask+목적어 뒤 보어는 to부정사이므로 to carry가 맞다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nWe want them ____ our team.",
+   "choices": [
+    "to join",
+    "join",
+    "joins",
+    "joining",
+    "joined"
+   ],
+   "answer": 1,
+   "why": "want+목적어 뒤 보어는 to부정사이므로 to join이 맞다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nDad allowed me ____ his camera.",
+   "choices": [
+    "use",
+    "uses",
+    "to use",
+    "using",
+    "used"
+   ],
+   "answer": 3,
+   "why": "allow+목적어 뒤 보어는 to부정사이므로 to use가 맞다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThe teacher told us ____ our books.",
+   "choices": [
+    "open",
+    "opens",
+    "opening",
+    "to open",
+    "opened"
+   ],
+   "answer": 4,
+   "why": "tell+목적어 뒤 보어는 to부정사이므로 to open이 맞다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nI asked my mom ____ me a new bag.",
+   "choices": [
+    "buy",
+    "to buy",
+    "buys",
+    "buying",
+    "bought"
+   ],
+   "answer": 2,
+   "why": "ask+목적어 뒤 보어는 to부정사이므로 to buy가 맞다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nShe advised me ____ to bed early.",
+   "choices": [
+    "go",
+    "goes",
+    "going",
+    "gone",
+    "to go"
+   ],
+   "answer": 5,
+   "why": "advise+목적어 뒤 보어는 to부정사이므로 to go가 맞다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThey want us ____ the truth.",
+   "choices": [
+    "to tell",
+    "tell",
+    "tells",
+    "telling",
+    "told"
+   ],
+   "answer": 1,
+   "why": "want+목적어 뒤 보어는 to부정사이므로 to tell이 맞다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nHe told his dog ____ down.",
+   "choices": [
+    "sit",
+    "sits",
+    "to sit",
+    "sitting",
+    "sat"
+   ],
+   "answer": 3,
+   "why": "tell+목적어 뒤 보어는 to부정사이므로 to sit이 맞다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nMs. Kim asked us ____ to her story.",
+   "choices": [
+    "listen",
+    "listens",
+    "listening",
+    "to listen",
+    "listened"
+   ],
+   "answer": 4,
+   "why": "ask+목적어 뒤 보어는 to부정사이므로 to listen이 맞다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nMom told me ____ up late.",
+   "choices": [
+    "not stay",
+    "stay not",
+    "not to stay",
+    "to not stay",
+    "to stay not"
+   ],
+   "answer": 3,
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. 따라서 not to stay가 맞다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nHe asked me ____ angry.",
+   "choices": [
+    "not to be",
+    "to not be",
+    "not be",
+    "be not",
+    "to be not"
+   ],
+   "answer": 1,
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. 따라서 not to be가 맞다. to not be는 틀린 어순이다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThe teacher told us ____ in class.",
+   "choices": [
+    "to not talk",
+    "talk not",
+    "not talking",
+    "not to talk",
+    "to talk not"
+   ],
+   "answer": 4,
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. 따라서 not to talk가 맞다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nI want you ____ about it. (걱정하지 말기를)",
+   "choices": [
+    "not worry",
+    "to worry not",
+    "to not worry",
+    "worry not",
+    "not to worry"
+   ],
+   "answer": 5,
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. 따라서 not to worry가 맞다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nShe advised him ____ too much candy.",
+   "choices": [
+    "not to eat",
+    "not eat",
+    "to not eat",
+    "eat not",
+    "to eat not"
+   ],
+   "answer": 1,
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. 따라서 not to eat이 맞다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nDad told me ____ the stove. (만지지 말라고)",
+   "choices": [
+    "to not touch",
+    "not to touch",
+    "touch not",
+    "not touch",
+    "to touch not"
+   ],
+   "answer": 2,
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. 따라서 not to touch가 맞다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThey asked us ____ pictures here. (찍지 말라고)",
+   "choices": [
+    "not take",
+    "to take not",
+    "not to take",
+    "taking not",
+    "to not take"
+   ],
+   "answer": 3,
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. 따라서 not to take가 맞다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nShe told her brother ____ her diary. (읽지 말라고)",
+   "choices": [
+    "not read",
+    "not to read",
+    "to not read",
+    "read not",
+    "to read not"
+   ],
+   "answer": 2,
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. 따라서 not to read가 맞다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nShe ____ me to open the window.",
+   "choices": [
+    "said",
+    "talked",
+    "told",
+    "spoke",
+    "was"
+   ],
+   "answer": 3,
+   "why": "「동사+목적어+to부정사」 형태로 쓸 수 있는 동사는 tell이다. say/talk/speak는 이 형태로 쓰지 않는다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nMr. Park ____ us to bring our lunch.",
+   "choices": [
+    "said",
+    "spoke",
+    "talked",
+    "told",
+    "listened"
+   ],
+   "answer": 4,
+   "why": "us to bring처럼 「목적어+to부정사」를 취할 수 있는 동사는 told뿐이다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nMy parents don't ____ me to play games at night.",
+   "choices": [
+    "let",
+    "make",
+    "allow",
+    "have",
+    "made"
+   ],
+   "answer": 3,
+   "why": "to play가 있으므로 to부정사를 보어로 쓰는 allow가 맞다. let/make/have는 동사원형을 쓴다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThe doctor ____ me to get some rest.",
+   "choices": [
+    "said",
+    "spoke",
+    "advised",
+    "made",
+    "let"
+   ],
+   "answer": 3,
+   "why": "me to get 앞에 올 수 있는 동사는 advised이다. make/let은 to부정사를 쓰지 않는다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nI ____ you to be happy.",
+   "choices": [
+    "hope",
+    "say",
+    "want",
+    "think",
+    "let"
+   ],
+   "answer": 3,
+   "why": "「목적어+to부정사」를 취하는 동사는 want이다. hope는 hope you to-v 형태로 쓰지 않는다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nShe ____ her son to wash his hands.",
+   "choices": [
+    "said to",
+    "told",
+    "spoke",
+    "made",
+    "let"
+   ],
+   "answer": 2,
+   "why": "her son to wash 앞에는 told가 맞다. made/let은 동사원형을 보어로 쓴다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "I want you come early.",
+    "He told me to cleaning.",
+    "She asked me to help her.",
+    "They allow me watch TV.",
+    "Mom advised me drink milk."
+   ],
+   "answer": 3,
+   "why": "ask+목적어+to부정사 형태인 ③이 맞다. 나머지는 보어가 to부정사가 아니어서 틀렸다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 올바른 것은?",
+   "choices": [
+    "He asked me open the door.",
+    "I want her to smile.",
+    "She told us be quiet.",
+    "Dad allowed me using his car.",
+    "They advised him eats less."
+   ],
+   "answer": 2,
+   "why": "want+목적어+to부정사 형태인 ②가 맞다. 나머지는 목적격 보어 자리에 to부정사를 쓰지 않았다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은?",
+   "choices": [
+    "I want you to try again.",
+    "She told me to wait here.",
+    "He asked us to sit down.",
+    "Mom allowed me to going out.",
+    "The doctor advised her to walk every day."
+   ],
+   "answer": 4,
+   "why": "to 뒤에는 동사원형이 와야 하므로 to going이 아니라 to go가 맞다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 어색한 것은?",
+   "choices": [
+    "They want me to sing a song.",
+    "He told her not to cry.",
+    "I asked him to helps me.",
+    "She allows her cat to sleep on the bed.",
+    "We advised them to leave early."
+   ],
+   "answer": 3,
+   "why": "to 뒤에는 동사원형이 오므로 to helps가 아니라 to help가 맞다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 고르면?",
+   "choices": [
+    "He wants me no to go.",
+    "She told me not to run.",
+    "They asked us not sit here.",
+    "Mom told me to don't eat it.",
+    "I advised him not going there."
+   ],
+   "answer": 2,
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. not to run으로 쓴 ②만 맞다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 틀린 것을 고르면?",
+   "choices": [
+    "I want you not to be late.",
+    "She asked him not to shout.",
+    "He told me not to open the box.",
+    "They advised us not to swimming here.",
+    "Dad allowed me not to go."
+   ],
+   "answer": 4,
+   "why": "not to 뒤에는 동사원형이 와야 하므로 not to swim이 맞다. 나머지는 모두 not to-v 어순이 올바르다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "He wanted me going home.",
+    "She asked me sat down.",
+    "The teacher allowed us to use our phones.",
+    "Mom told me to washed the dishes.",
+    "I advised her going to see a doctor."
+   ],
+   "answer": 3,
+   "why": "allow+목적어+to부정사 형태인 ③이 맞다. 나머지는 보어 형태가 틀렸다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 틀린 것은?",
+   "choices": [
+    "She wants him to study hard.",
+    "I told my sister to hurry up.",
+    "He allowed me to ride his bike.",
+    "The doctor advised me to eating less sugar.",
+    "They asked her to join the club."
+   ],
+   "answer": 4,
+   "why": "to 뒤에는 동사원형이 오므로 to eat less sugar가 맞다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?",
+   "choices": [
+    "I <u>want</u> you to listen.",
+    "She told me <u>to wash</u> my hands.",
+    "He asked her <u>helping</u> him.",
+    "Mom allowed me <u>to go</u> out.",
+    "They advised us <u>to wear</u> a coat."
+   ],
+   "answer": 3,
+   "why": "ask의 목적격 보어는 to부정사이므로 helping이 아니라 to help가 맞다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 어색한 것은?",
+   "choices": [
+    "She <u>asked</u> me to wait.",
+    "I told him <u>be</u> careful.",
+    "He wants me <u>to read</u> more books.",
+    "Dad allowed us <u>to play</u> outside.",
+    "The doctor advised her <u>to sleep</u> more."
+   ],
+   "answer": 2,
+   "why": "tell의 목적격 보어는 to부정사이므로 be가 아니라 to be가 맞다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: What did your mom say?\nB: She told me ____ home before six.",
+   "choices": [
+    "came",
+    "come",
+    "to come",
+    "coming",
+    "comes"
+   ],
+   "answer": 3,
+   "why": "tell+목적어 뒤 보어는 to부정사이므로 to come이 맞다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Did you clean the classroom?\nB: Yes. Mr. Lee asked us ____ it.",
+   "choices": [
+    "clean",
+    "to clean",
+    "cleaning",
+    "cleaned",
+    "cleans"
+   ],
+   "answer": 2,
+   "why": "ask+목적어 뒤 보어는 to부정사이므로 to clean이 맞다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Why do you carry a big water bottle?\nB: My doctor told me ____ a lot of water.",
+   "choices": [
+    "drink",
+    "drinks",
+    "drank",
+    "to drink",
+    "drinking"
+   ],
+   "answer": 4,
+   "why": "tell+목적어 뒤 보어는 to부정사이므로 to drink가 맞다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Can I watch TV now?\nB: No. Mom told us ____ TV before dinner.",
+   "choices": [
+    "not watch",
+    "not to watch",
+    "to not watch",
+    "watch not",
+    "to watching"
+   ],
+   "answer": 2,
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. 따라서 not to watch가 맞다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n나는 네가 행복하기를 원한다.",
+   "choices": [
+    "I want you happy be.",
+    "I want you to be happy.",
+    "I want to you be happy.",
+    "I want you be happy.",
+    "I want you being happy."
+   ],
+   "answer": 2,
+   "why": "want+목적어+to부정사 어순인 I want you to be happy.가 맞다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n엄마는 나에게 일찍 일어나라고 말씀하셨다.",
+   "choices": [
+    "Mom told me get up early.",
+    "Mom told to me get up early.",
+    "Mom told me to get up early.",
+    "Mom told me getting up early.",
+    "Mom told for me to get up early."
+   ],
+   "answer": 3,
+   "why": "tell+목적어+to부정사 어순인 Mom told me to get up early.가 맞다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그는 나에게 창문을 닫아 달라고 부탁했다.",
+   "choices": [
+    "He asked me close the window.",
+    "He asked me to close the window.",
+    "He asked to me close the window.",
+    "He asked me closing the window.",
+    "He asked me closed the window."
+   ],
+   "answer": 2,
+   "why": "ask+목적어+to부정사 어순인 He asked me to close the window.가 맞다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그녀는 나에게 늦지 말라고 충고했다.",
+   "choices": [
+    "She advised me to not be late.",
+    "She advised me not be late.",
+    "She advised me not to be late.",
+    "She advised not me to be late.",
+    "She advised me don't be late."
+   ],
+   "answer": 3,
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. advise+목적어+not to-v 어순인 ③이 맞다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 빈칸에 쓰시오.\nI want you ____ (be) my friend.",
+   "answer": "to be",
+   "why": "want의 목적격 보어는 to부정사이므로 to be로 쓴다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 빈칸에 쓰시오.\nShe told me ____ (wash) the dishes.",
+   "answer": "to wash",
+   "why": "tell의 목적격 보어는 to부정사이므로 to wash로 쓴다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 빈칸에 쓰시오.\nHe asked her ____ (sing) a song.",
+   "answer": "to sing",
+   "why": "ask의 목적격 보어는 to부정사이므로 to sing으로 쓴다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 빈칸에 쓰시오.\nMy parents allow me ____ (play) soccer after school.",
+   "answer": "to play",
+   "why": "allow의 목적격 보어는 to부정사이므로 to play로 쓴다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 빈칸에 쓰시오.\nThe doctor advised him ____ (take) a walk every day.",
+   "answer": "to take",
+   "why": "advise의 목적격 보어는 to부정사이므로 to take로 쓴다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 빈칸에 쓰시오.\nMom wants me ____ (eat) more vegetables.",
+   "answer": "to eat",
+   "why": "want의 목적격 보어는 to부정사이므로 to eat으로 쓴다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 빈칸에 쓰시오.\nThe teacher told us ____ (bring) our textbooks.",
+   "answer": "to bring",
+   "why": "tell의 목적격 보어는 to부정사이므로 to bring으로 쓴다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 빈칸에 쓰시오.\nI asked him ____ (turn) off the light.",
+   "answer": "to turn",
+   "why": "ask의 목적격 보어는 to부정사이므로 to turn으로 쓴다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 부정형 to부정사로 바꿔 빈칸에 쓰시오. (3단어)\nShe told me ____ (run) in the hallway.",
+   "answer": "not to run",
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 부정형 to부정사로 바꿔 빈칸에 쓰시오. (3단어)\nHe asked me ____ (be) sad.",
+   "answer": "not to be",
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 부정형 to부정사로 바꿔 빈칸에 쓰시오. (3단어)\nMom told us ____ (make) noise.",
+   "answer": "not to make",
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 부정형 to부정사로 바꿔 빈칸에 쓰시오. (3단어)\nI want you ____ (give) up.",
+   "answer": "not to give",
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 것을 골라 쓰시오.\nHe told me (close / to close) the door.",
+   "answer": "to close",
+   "why": "tell의 목적격 보어는 to부정사이므로 to close가 맞다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 것을 골라 쓰시오.\nShe asked us (wait / to wait) outside.",
+   "answer": "to wait",
+   "why": "ask의 목적격 보어는 to부정사이므로 to wait가 맞다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 것을 골라 쓰시오.\nThey allow students (to use / use) the computer room.",
+   "answer": "to use",
+   "why": "allow의 목적격 보어는 to부정사이므로 to use가 맞다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 것을 골라 쓰시오.\nI want him (not to be / to not be) angry.",
+   "answer": "not to be",
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. not to be가 맞다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nShe asked me <u>open</u> the window.",
+   "answer": "to open",
+   "why": "ask의 목적격 보어는 to부정사이므로 to open으로 고친다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nHe told me <u>studying</u> hard.",
+   "answer": "to study",
+   "why": "tell의 목적격 보어는 to부정사이므로 to study로 고친다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nMom wants me <u>brushes</u> my teeth after meals.",
+   "answer": "to brush",
+   "why": "want의 목적격 보어는 to부정사이므로 to brush로 고친다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe teacher told us <u>to not run</u> in the classroom.",
+   "answer": "not to run",
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. to not run은 틀린 어순이다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nMy teacher wants me ____ in the speech contest.",
+   "choices": [
+    "take part",
+    "takes part",
+    "to take part",
+    "taking part",
+    "took part"
+   ],
+   "answer": 3,
+   "why": "want의 목적격 보어는 to부정사이므로 to take part가 맞다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nSujin asked her brother ____ her with the science project.",
+   "choices": [
+    "help",
+    "to help",
+    "helping",
+    "helps",
+    "helped"
+   ],
+   "answer": 2,
+   "why": "ask의 목적격 보어는 to부정사이므로 to help가 맞다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThe coach told the players ____ up before the game.",
+   "choices": [
+    "warm",
+    "warms",
+    "warmed",
+    "to warm",
+    "warming"
+   ],
+   "answer": 4,
+   "why": "tell의 목적격 보어는 to부정사이므로 to warm up이 맞다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nMy grandmother advised me ____ money for the future.",
+   "choices": [
+    "save",
+    "to save",
+    "saving",
+    "saves",
+    "saved"
+   ],
+   "answer": 2,
+   "why": "advise의 목적격 보어는 to부정사이므로 to save가 맞다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nOur school doesn't allow students ____ their phones during class.",
+   "choices": [
+    "use",
+    "uses",
+    "to use",
+    "using",
+    "used"
+   ],
+   "answer": 3,
+   "why": "allow의 목적격 보어는 to부정사이므로 to use가 맞다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nMr. Brown asked me ____ the poster on the wall.",
+   "choices": [
+    "put",
+    "to put",
+    "putting",
+    "puts",
+    "and put"
+   ],
+   "answer": 2,
+   "why": "ask의 목적격 보어는 to부정사이므로 to put이 맞다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nI want my little sister ____ how to swim this summer.",
+   "choices": [
+    "learn",
+    "learns",
+    "learning",
+    "to learn",
+    "learned"
+   ],
+   "answer": 4,
+   "why": "want의 목적격 보어는 to부정사이므로 to learn이 맞다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThe librarian told the kids ____ quietly.",
+   "choices": [
+    "speak",
+    "to speak",
+    "speaking",
+    "speaks",
+    "spoke"
+   ],
+   "answer": 2,
+   "why": "tell의 목적격 보어는 to부정사이므로 to speak가 맞다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThe police officer told the driver ____ his car here.",
+   "choices": [
+    "not to park",
+    "to not park",
+    "not park",
+    "don't park",
+    "not parking"
+   ],
+   "answer": 1,
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. not to park가 맞다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nEmma asked her friends ____ anyone about the surprise party.",
+   "choices": [
+    "to not tell",
+    "not to tell",
+    "not telling",
+    "don't tell",
+    "to telling not"
+   ],
+   "answer": 2,
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. not to tell이 맞다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThe doctor advised my father ____ fast food too often.",
+   "choices": [
+    "not to eat",
+    "not eating",
+    "to not eat",
+    "don't eat",
+    "not eat"
+   ],
+   "answer": 1,
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. not to eat이 맞다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nMom wants me ____ my time on the computer.",
+   "choices": [
+    "to waste not",
+    "not wasting",
+    "not to waste",
+    "to not waste",
+    "don't waste"
+   ],
+   "answer": 3,
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. not to waste가 맞다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 올바른 문장을 고르시오.",
+   "choices": [
+    "The teacher told us to handing in our homework.",
+    "Jake wants his mom to buy him new shoes.",
+    "She asked me carrying the boxes.",
+    "My parents allow me going camping with my friends.",
+    "He advised her join the book club."
+   ],
+   "answer": 2,
+   "why": "want+목적어+to부정사 형태인 ②가 맞다. 나머지는 목적격 보어 자리에 to부정사를 쓰지 않았다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장을 고르시오.",
+   "choices": [
+    "Minho asked me to lend him my notes.",
+    "The teacher wants everyone to arrive on time.",
+    "Mom allowed me to stay at my friend's house.",
+    "The doctor advised him giving up junk food.",
+    "I told my brother not to touch my computer."
+   ],
+   "answer": 4,
+   "why": "advise의 목적격 보어는 to부정사이므로 giving up이 아니라 to give up이 맞다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 바른 문장은?",
+   "choices": [
+    "I want you not to forget your promise.",
+    "She told me to don't be late.",
+    "He asked us be quiet.",
+    "They allowed her not going to the meeting.",
+    "The coach advised us not to skipping breakfast."
+   ],
+   "answer": 1,
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. not to forget으로 쓴 ①이 맞다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞지 않는 문장은?",
+   "choices": [
+    "My aunt asked me to water her plants.",
+    "The teacher told us not to use our phones.",
+    "Dad wants me to become a doctor.",
+    "She allowed her son to plays outside.",
+    "I advised my friend to see a dentist."
+   ],
+   "answer": 4,
+   "why": "to 뒤에는 동사원형이 오므로 to play가 맞다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은?",
+   "choices": [
+    "He told me not open the box.",
+    "He told me to not open the box.",
+    "He told me not to open the box.",
+    "He told me don't open the box.",
+    "He told me not opening the box."
+   ],
+   "answer": 3,
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. not to open만 올바른 어순이다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.",
+   "choices": [
+    "The teacher asked us <u>to make</u> groups of four.",
+    "I want my parents <u>to understand</u> me.",
+    "Ms. Han told the students <u>memorize</u> the poem.",
+    "The doctor advised her <u>to wear</u> a mask.",
+    "Dad allowed me <u>to invite</u> my friends."
+   ],
+   "answer": 3,
+   "why": "tell의 목적격 보어는 to부정사이므로 to memorize가 맞다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· She ____ me to bring an umbrella.\n· He ____ his teacher a question.",
+   "choices": [
+    "told",
+    "said",
+    "asked",
+    "wanted",
+    "spoke"
+   ],
+   "answer": 3,
+   "why": "asked me to bring(부탁하다), asked a question(질문하다) 모두 ask가 자연스럽다. told/wanted는 두 번째 문장에 쓸 수 없다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· Mom told me ____ to be late for school.\n· I decided ____ to buy the expensive shoes.",
+   "choices": [
+    "not",
+    "no",
+    "don't",
+    "doesn't",
+    "didn't"
+   ],
+   "answer": 1,
+   "why": "to부정사의 부정은 to 앞에 not을 쓴다. don't/didn't는 to부정사 앞에 올 수 없다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· My parents want me ____ my hands before meals.\n· The chef told his helpers ____ the vegetables first.",
+   "choices": [
+    "wash",
+    "washes",
+    "to wash",
+    "washing",
+    "washed"
+   ],
+   "answer": 3,
+   "why": "want와 tell 모두 목적격 보어로 to부정사를 쓰므로 to wash가 공통으로 들어간다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· The teacher allowed us ____ home early.\n· My mom wants me ____ straight home after school.",
+   "choices": [
+    "go",
+    "goes",
+    "going",
+    "to go",
+    "gone"
+   ],
+   "answer": 4,
+   "why": "allow와 want 모두 목적격 보어로 to부정사를 쓰므로 to go가 공통으로 들어간다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것은?\n· He asked me ____ the salt.\n· She told me ____ so fast. (빨리 먹지 말라고)",
+   "choices": [
+    "pass – not eat",
+    "to pass – not to eat",
+    "to pass – to not eat",
+    "passing – not eating",
+    "pass – to eat not"
+   ],
+   "answer": 2,
+   "why": "둘 다 to부정사 보어가 필요하고, 부정은 not to-v이므로 to pass – not to eat이 맞다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것은?\n· I want you ____ this book.\n· Mom allowed me ____ the concert.",
+   "choices": [
+    "read – go to",
+    "to read – to go to",
+    "to read – going to",
+    "reading – to go to",
+    "to read – go to"
+   ],
+   "answer": 2,
+   "why": "want와 allow 모두 목적격 보어로 to부정사를 쓰므로 to read – to go to가 맞다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것은?\n· The doctor advised me ____ outside on fine days.\n· He told his son ____ computer games all day. (하지 말라고)",
+   "choices": [
+    "to exercise – to not play",
+    "exercising – not playing",
+    "to exercise – not to play",
+    "exercise – not play",
+    "to exercise – playing not"
+   ],
+   "answer": 3,
+   "why": "advise의 보어는 to부정사, 부정은 not to-v이므로 to exercise – not to play가 맞다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것은?\n· Ms. Park asked us ____ the classroom.\n· She wants her students ____ kind to each other.",
+   "choices": [
+    "clean – be",
+    "to clean – being",
+    "to clean – to be",
+    "cleaning – to be",
+    "to clean – be"
+   ],
+   "answer": 3,
+   "why": "ask와 want 모두 목적격 보어로 to부정사를 쓰므로 to clean – to be가 맞다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n선생님은 우리에게 도서관에서 조용히 하라고 말씀하셨다.",
+   "choices": [
+    "The teacher told us to be quiet in the library.",
+    "The teacher told us be quiet in the library.",
+    "The teacher told to us to be quiet in the library.",
+    "The teacher told us being quiet in the library.",
+    "The teacher said us to be quiet in the library."
+   ],
+   "answer": 1,
+   "why": "tell+목적어+to부정사 어순인 ①이 맞다. say는 이 형태로 쓸 수 없다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n부모님은 내가 매일 아침을 먹기를 원하신다.",
+   "choices": [
+    "My parents want me have breakfast every day.",
+    "My parents want me to have breakfast every day.",
+    "My parents want me having breakfast every day.",
+    "My parents want to me have breakfast every day.",
+    "My parents want that I have breakfast every day."
+   ],
+   "answer": 2,
+   "why": "want+목적어+to부정사 어순인 ②가 맞다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그녀는 나에게 그 소식을 아무에게도 말하지 말라고 부탁했다.",
+   "choices": [
+    "She asked me to not tell anyone the news.",
+    "She asked me not tell anyone the news.",
+    "She asked me not to tell anyone the news.",
+    "She asked me don't tell anyone the news.",
+    "She asked me not telling anyone the news."
+   ],
+   "answer": 3,
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. ask+목적어+not to-v 어순인 ③이 맞다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n의사는 그에게 매일 운동하라고 충고했다.",
+   "choices": [
+    "The doctor advised him exercise every day.",
+    "The doctor advised him exercising every day.",
+    "The doctor advised to him to exercise every day.",
+    "The doctor advised him to exercise every day.",
+    "The doctor advised him to exercises every day."
+   ],
+   "answer": 4,
+   "why": "advise+목적어+to부정사 어순인 ④가 맞다. to 뒤에는 동사원형이 온다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n엄마는 내가 밤늦게 나가는 것을 허락하지 않으신다.",
+   "choices": [
+    "Mom doesn't allow me to go out late at night.",
+    "Mom doesn't allow me go out late at night.",
+    "Mom doesn't allow me going out late at night.",
+    "Mom doesn't allow to me go out late at night.",
+    "Mom doesn't allow me to going out late at night."
+   ],
+   "answer": 1,
+   "why": "allow+목적어+to부정사 어순인 ①이 맞다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n나는 그에게 나를 기다리지 말라고 말했다.",
+   "choices": [
+    "I told him to not wait for me.",
+    "I told him not wait for me.",
+    "I told him don't wait for me.",
+    "I told him not waiting for me.",
+    "I told him not to wait for me."
+   ],
+   "answer": 5,
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. tell+목적어+not to-v 어순인 ⑤가 맞다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Why did you turn off the TV?\nB: Dad told me ____ my homework first.",
+   "choices": [
+    "finish",
+    "finishing",
+    "to finish",
+    "finished",
+    "finishes"
+   ],
+   "answer": 3,
+   "why": "tell의 목적격 보어는 to부정사이므로 to finish가 맞다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: What did the doctor say?\nB: She advised me ____ up late.",
+   "choices": [
+    "not to stay",
+    "to not stay",
+    "not stay",
+    "don't stay",
+    "not staying"
+   ],
+   "answer": 1,
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. not to stay가 맞다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Can Jenny come to the movie with us?\nB: No, her mom wants her ____ at home tonight.",
+   "choices": [
+    "stay",
+    "stays",
+    "staying",
+    "to stay",
+    "stayed"
+   ],
+   "answer": 4,
+   "why": "want의 목적격 보어는 to부정사이므로 to stay가 맞다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Did you ask Tom ____ the guitar at the school festival?\nB: Yes, and he said okay.",
+   "choices": [
+    "play",
+    "to play",
+    "playing",
+    "plays",
+    "played"
+   ],
+   "answer": 2,
+   "why": "ask의 목적격 보어는 to부정사이므로 to play가 맞다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장을 같은 뜻으로 바꿀 때 빈칸에 알맞은 것은?\nShe said to me, \"Please open the window.\"\n→ She asked me ____ the window.",
+   "choices": [
+    "open",
+    "to open",
+    "opening",
+    "opened",
+    "for open"
+   ],
+   "answer": 2,
+   "why": "「Please+명령문」은 ask+목적어+to부정사로 바꾼다. to open이 맞다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장을 같은 뜻으로 바꿀 때 빈칸에 알맞은 것은?\nMom said to me, \"Don't play games too long.\"\n→ Mom told me ____ games too long.",
+   "choices": [
+    "not play",
+    "don't play",
+    "not to play",
+    "to not play",
+    "not playing"
+   ],
+   "answer": 3,
+   "why": "부정 명령문은 tell+목적어+not to-v로 바꾼다. not to play가 맞다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장을 같은 뜻으로 바꿀 때 빈칸에 알맞은 것은?\nThe teacher said to us, \"Do your best.\"\n→ The teacher told us ____ our best.",
+   "choices": [
+    "do",
+    "doing",
+    "did",
+    "to do",
+    "done"
+   ],
+   "answer": 4,
+   "why": "명령문은 tell+목적어+to부정사로 바꾼다. to do가 맞다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장을 같은 뜻으로 바꿀 때 빈칸에 알맞은 것은?\nHe said to her, \"Please help me with the boxes.\"\n→ He asked her ____ him with the boxes.",
+   "choices": [
+    "help",
+    "to help",
+    "helping",
+    "helped",
+    "helps"
+   ],
+   "answer": 2,
+   "why": "「Please+명령문」은 ask+목적어+to부정사로 바꾼다. to help가 맞다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 to부정사의 쓰임이 나머지 넷과 다른 것은?",
+   "choices": [
+    "I want you <u>to try</u> harder.",
+    "She told me <u>to hurry</u>.",
+    "He asked her <u>to dance</u>.",
+    "I want <u>to travel</u> around the world.",
+    "Mom allowed me <u>to sleep</u> late."
+   ],
+   "answer": 4,
+   "why": "④는 want의 목적어로 쓰인 명사적 용법이고, 나머지는 모두 목적어 뒤에서 목적격 보어로 쓰였다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 수 없는 것은?\nMs. Green ____ us to write a diary in English.",
+   "choices": [
+    "told",
+    "asked",
+    "wanted",
+    "said",
+    "advised"
+   ],
+   "answer": 4,
+   "why": "say는 「목적어+to부정사」 형태로 쓸 수 없다. 나머지는 모두 가능하다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 수 없는 것은?\nMy parents ____ me to come home before dark.",
+   "choices": [
+    "want",
+    "tell",
+    "ask",
+    "allow",
+    "hope"
+   ],
+   "answer": 5,
+   "why": "hope는 「목적어+to부정사」 형태로 쓸 수 없고 hope (that)절로 쓴다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장에서 not이 들어가기에 알맞은 곳은?\nThe teacher ( ① ) told ( ② ) us ( ③ ) to ( ④ ) use ( ⑤ ) our phones in class. (사용하지 말라는 뜻)",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "to부정사의 부정은 to 바로 앞에 not을 두므로 us와 to 사이인 ③이 맞다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 옮길 때 네 번째로 오는 단어는?\n나는 그가 진실을 말하기를 원한다.",
+   "choices": [
+    "I",
+    "want",
+    "him",
+    "to",
+    "tell"
+   ],
+   "answer": 4,
+   "why": "I want him to tell the truth. 어순이므로 네 번째 단어는 to이다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 단어들을 바르게 배열한 문장은?\n(my sister / asked / me / to / close / the door)",
+   "choices": [
+    "My sister asked to me close the door.",
+    "My sister asked me to close the door.",
+    "My sister asked me close to the door.",
+    "My asked sister me to close the door.",
+    "My sister to asked me close the door."
+   ],
+   "answer": 2,
+   "why": "ask+목적어+to부정사 어순이므로 My sister asked me to close the door.가 맞다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 빈칸에 쓰시오.\nThe teacher wants us ____ (arrive) at school by 8:30.",
+   "answer": "to arrive",
+   "why": "want의 목적격 보어는 to부정사이므로 to arrive로 쓴다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 빈칸에 쓰시오.\nMinji asked me ____ (lend) her my umbrella.",
+   "answer": "to lend",
+   "why": "ask의 목적격 보어는 to부정사이므로 to lend로 쓴다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 빈칸에 쓰시오.\nMom told me ____ (feed) the dog before dinner.",
+   "answer": "to feed",
+   "why": "tell의 목적격 보어는 to부정사이므로 to feed로 쓴다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 빈칸에 쓰시오.\nThe doctor advised her ____ (get) more sleep.",
+   "answer": "to get",
+   "why": "advise의 목적격 보어는 to부정사이므로 to get으로 쓴다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 빈칸에 쓰시오.\nMy parents allow me ____ (keep) a hamster at home.",
+   "answer": "to keep",
+   "why": "allow의 목적격 보어는 to부정사이므로 to keep으로 쓴다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 부정형 to부정사로 바꿔 빈칸에 쓰시오. (3단어)\nThe coach told us ____ (be) nervous before the game.",
+   "answer": "not to be",
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 부정형 to부정사로 바꿔 빈칸에 쓰시오. (3단어)\nHe wants me ____ (spend) too much money.",
+   "answer": "not to spend",
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 단어를 부정형 to부정사로 바꿔 빈칸에 쓰시오. (3단어)\nShe asked the children ____ (touch) the paintings.",
+   "answer": "not to touch",
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe teacher told us <u>memorizing</u> the words.",
+   "answer": "to memorize",
+   "why": "tell의 목적격 보어는 to부정사이므로 to memorize로 고친다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nMy mom allowed me <u>watches</u> the late movie.",
+   "answer": "to watch",
+   "why": "allow의 목적격 보어는 to부정사이므로 to watch로 고친다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nHe asked me <u>to not make</u> noise.",
+   "answer": "not to make",
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. to not make는 틀린 어순이다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nI want my brother <u>listen</u> to me.",
+   "answer": "to listen",
+   "why": "want의 목적격 보어는 to부정사이므로 to listen으로 고친다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 같은 뜻이 되도록 바꿀 때 빈칸에 알맞은 말을 쓰시오. (2단어)\nShe said to me, \"Please carry this bag.\"\n→ She asked me ____ this bag.",
+   "answer": "to carry",
+   "why": "「Please+명령문」은 ask+목적어+to부정사로 바꾼다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 같은 뜻이 되도록 바꿀 때 빈칸에 알맞은 말을 쓰시오. (3단어)\nMom said to me, \"Get up early.\"\n→ Mom told me ____ early.",
+   "answer": "to get up",
+   "why": "명령문은 tell+목적어+to부정사로 바꾸므로 to get up이 맞다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 같은 뜻이 되도록 바꿀 때 빈칸에 알맞은 말을 쓰시오. (3단어)\nThe teacher said to us, \"Don't run on the stairs.\"\n→ The teacher told us ____ on the stairs.",
+   "answer": "not to run",
+   "why": "부정 명령문은 tell+목적어+not to-v로 바꾼다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 같은 뜻이 되도록 바꿀 때 빈칸에 알맞은 말을 쓰시오. (3단어)\nDad said to me, \"Don't use my computer.\"\n→ Dad told me ____ his computer.",
+   "answer": "not to use",
+   "why": "부정 명령문은 tell+목적어+not to-v로 바꾼다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말에 맞게 괄호 안의 단어를 바르게 배열하여 문장을 쓰시오.\n나는 네가 내 말을 믿기를 원한다. (want / I / you / believe / to / me)",
+   "answer": "I want you to believe me.",
+   "why": "want+목적어+to부정사 어순으로 배열한다.",
+   "alt": [
+    "I want you to believe me"
+   ],
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말에 맞게 괄호 안의 단어를 바르게 배열하여 문장을 쓰시오.\n그녀는 나에게 문을 잠그라고 말했다. (me / she / to / told / lock / the door)",
+   "answer": "She told me to lock the door.",
+   "why": "tell+목적어+to부정사 어순으로 배열한다.",
+   "alt": [
+    "She told me to lock the door"
+   ],
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말에 맞게 괄호 안의 단어를 바르게 배열하여 문장을 쓰시오.\n그는 우리에게 포기하지 말라고 부탁했다. (not / asked / he / us / to / give up)",
+   "answer": "He asked us not to give up.",
+   "why": "ask+목적어+not to-v 어순으로 배열한다.",
+   "alt": [
+    "He asked us not to give up"
+   ],
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "주어진 단어를 모두 사용하여 우리말에 맞게 문장을 완성하시오. (과거시제)\n의사는 나에게 일찍 자라고 충고했다. (the doctor, advise, me, go to bed early)",
+   "answer": "The doctor advised me to go to bed early.",
+   "why": "advise+목적어+to부정사 어순, 과거시제 advised를 쓴다.",
+   "alt": [
+    "The doctor advised me to go to bed early"
+   ],
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?\nㄱ. The principal asked the students to keep the playground clean.\nㄴ. My parents want me to becoming a teacher.\nㄷ. She told her little brother not to open the oven door.",
+   "choices": [
+    "ㄱ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄴ은 to 뒤에 동사원형 become이 와야 하므로 틀렸다. ㄱ, ㄷ은 to-v와 not to-v를 바르게 썼다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것을 모두 고른 것은?\nㄱ. He advised me to reading the book twice.\nㄴ. The guard told the visitors not to take photos inside.\nㄷ. I asked my teacher explain the problem again.",
+   "choices": [
+    "ㄱ",
+    "ㄷ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 to read, ㄷ은 to explain이 되어야 한다. ㄴ은 not to-v를 바르게 썼다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\n· Mom wants me to walk the dog every morning.\n· The teacher told us handing in the report by Friday.\n· He asked her not to move his things.\n· They allowed the children to swimming in the pool.\n· The doctor advised him to eat less salt.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "두 번째는 to hand in, 네 번째는 to swim이 되어야 하므로 옳은 문장은 3개이다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?\n· I want you to remember this moment.\n· She asked me to turn down the music.\n· Dad told me not to leaving the door open.\n· Our school allows us to wear casual clothes on Fridays.\n· He advised her to not worry about the test.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "not to leaving은 not to leave로, to not worry는 not to worry로 고쳐야 하므로 틀린 문장은 2개이다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 바꿔 쓴 것으로 알맞은 것은?\nThe teacher said to us, \"Don't bring food into the computer room.\"",
+   "choices": [
+    "The teacher told us don't bring food into the computer room.",
+    "The teacher told us not bring food into the computer room.",
+    "The teacher told us not to bring food into the computer room.",
+    "The teacher told us to not bring food into the computer room.",
+    "The teacher told us not bringing food into the computer room."
+   ],
+   "answer": 3,
+   "why": "부정 명령문은 tell+목적어+not to-v로 바꾸므로 ③이 맞다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 바꿔 쓸 때 빈칸에 알맞은 것은?\nMom said to me, \"Please water the plants while I'm away.\"\n→ Mom asked me ____ the plants while she was away.",
+   "choices": [
+    "water",
+    "to water",
+    "watering",
+    "watered",
+    "to watering"
+   ],
+   "answer": 2,
+   "why": "「Please+명령문」은 ask+목적어+to부정사로 바꾸므로 to water가 맞다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\nLast week, my mom ① <u>asked</u> me to take care of my little sister. She told me ② <u>to give</u> her lunch and ③ <u>played</u> with her. She also told me ④ <u>not to give</u> her too much candy. I wanted her ⑤ <u>to have</u> a good time.",
+   "choices": [
+    "① asked",
+    "② to give",
+    "③ played",
+    "④ not to give",
+    "⑤ to have"
+   ],
+   "answer": 3,
+   "why": "told me to give ... and (to) play와 병렬을 이루어야 하므로 played가 아니라 (to) play가 맞다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\nOur coach wants us ① <u>to practice</u> hard every day. Yesterday he told us ② <u>to run</u> ten laps and asked us ③ <u>to stretch</u> after running. He also advised us ④ <u>drinking</u> enough water. Finally, he told us ⑤ <u>not to skip</u> meals.",
+   "choices": [
+    "① to practice",
+    "② to run",
+    "③ to stretch",
+    "④ drinking",
+    "⑤ not to skip"
+   ],
+   "answer": 4,
+   "why": "advise의 목적격 보어는 to부정사이므로 drinking이 아니라 to drink가 맞다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (A), (B), (C)에 들어갈 말로 바르게 짝지어진 것은?\n· The teacher told us (A) ____ the safety rules. (follow)\n· She asked me (B) ____ the window because it was cold. (open, 부정)\n· My parents want me (C) ____ an honest person. (be)",
+   "choices": [
+    "to follow – not to open – to be",
+    "follow – not to open – be",
+    "to follow – to not open – to be",
+    "to follow – not opening – being",
+    "following – not to open – to be"
+   ],
+   "answer": 1,
+   "why": "세 동사 모두 목적격 보어로 to부정사를 쓰고, 부정은 not to-v이므로 ①이 맞다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (A), (B), (C)에 들어갈 말로 바르게 짝지어진 것은?\n· He advised her (A) ____ a doctor right away. (see)\n· Mom allowed me (B) ____ my friends to dinner. (invite)\n· I told him (C) ____ late again. (be, 부정)",
+   "choices": [
+    "see – invite – not be",
+    "to see – to invite – to not be",
+    "to see – inviting – not to be",
+    "to see – to invite – not to be",
+    "seeing – to invite – not to be"
+   ],
+   "answer": 4,
+   "why": "advise/allow/tell 모두 to부정사 보어를 취하고, 부정은 not to be이므로 ④가 맞다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 할 때 빈칸에 알맞은 것은?\nThe doctor said to him, \"Don't drink too much coffee.\"\n= The doctor advised him ____ too much coffee.",
+   "choices": [
+    "not drink",
+    "don't drink",
+    "not to drink",
+    "to not drink",
+    "not drinking"
+   ],
+   "answer": 3,
+   "why": "부정의 충고는 advise+목적어+not to-v로 나타내므로 not to drink가 맞다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 옮긴 것 중 어법상 옳은 것은?\n부모님은 내가 시험 전에 휴대폰을 사용하지 않기를 원하신다.",
+   "choices": [
+    "My parents want me not to use my phone before the exam.",
+    "My parents want me to not use my phone before the exam.",
+    "My parents want me don't use my phone before the exam.",
+    "My parents want not me to use my phone before the exam.",
+    "My parents want me not using my phone before the exam."
+   ],
+   "answer": 1,
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. want+목적어+not to-v 어순인 ①이 맞다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장끼리 짝지어진 것은?\n(a) I asked the waiter to bring the menu.\n(b) She wants her son become a pilot.\n(c) The teacher allowed us to leave early.\n(d) He told me to not touch the wire.",
+   "choices": [
+    "(a), (b)",
+    "(a), (c)",
+    "(b), (d)",
+    "(c), (d)",
+    "(a), (d)"
+   ],
+   "answer": 2,
+   "why": "(b)는 to become, (d)는 not to touch가 되어야 한다. (a), (c)만 옳다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nㄱ. The doctor advised my grandfather to walk slowly on icy roads.\nㄴ. I want everyone in my class to enjoy the field trip.\nㄷ. She asked me not to sitting on her bed.\nㄹ. Our teacher doesn't allow us to eat snacks in class.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "0개"
+   ],
+   "answer": 3,
+   "why": "ㄷ은 not to sit이 되어야 하므로 옳은 문장은 ㄱ, ㄴ, ㄹ 3개이다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 수 없는 것은?\nShe ____ me to check the schedule again.",
+   "choices": [
+    "wanted",
+    "told",
+    "asked",
+    "advised",
+    "said"
+   ],
+   "answer": 5,
+   "why": "say는 「목적어+to부정사」 형태로 쓸 수 없다. 나머지 동사는 모두 가능하다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분과 쓰임이 같은 것은?\nThe teacher asked me <u>to read</u> my essay aloud.",
+   "choices": [
+    "I have a lot of homework <u>to do</u> tonight.",
+    "She was happy <u>to see</u> her old friend.",
+    "My dream is <u>to open</u> a small bakery.",
+    "Mom wants me <u>to clean</u> the bathroom.",
+    "He went to the store <u>to buy</u> some milk."
+   ],
+   "answer": 4,
+   "why": "주어진 문장의 to read는 목적격 보어이다. ④의 to clean도 want의 목적격 보어이다. ①은 형용사적, ②⑤는 부사적, ③은 명사적 용법이다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 틀린 부분을 바르게 고친 것은?\nThe guide told the tourists to not leave the group.",
+   "choices": [
+    "to not leave → don't leave",
+    "to not leave → not leave",
+    "to not leave → not to leave",
+    "to not leave → not leaving",
+    "to not leave → leaving not"
+   ],
+   "answer": 3,
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. 따라서 not to leave로 고쳐야 한다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸 (A), (B)에 들어갈 말로 알맞게 짝지어진 것은?\nA: Did your mom (A) ____ you to come straight home?\nB: Yes. She also told me (B) ____ anywhere on the way.",
+   "choices": [
+    "tell – not to stop",
+    "told – not to stop",
+    "tell – to not stop",
+    "told – not stopping",
+    "tell – don't stop"
+   ],
+   "answer": 1,
+   "why": "조동사 did 뒤에는 동사원형 tell을 쓰고, 부정 보어는 not to stop으로 쓴다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 빈칸에 들어갈 말로 알맞은 것은?\nJisu was worried about her grades, so she talked to her teacher. The teacher advised her ____ a study plan and follow it every day.",
+   "choices": [
+    "make",
+    "made",
+    "to make",
+    "making",
+    "makes"
+   ],
+   "answer": 3,
+   "why": "advise의 목적격 보어는 to부정사이므로 to make가 맞고, 뒤의 follow는 to가 생략된 병렬 구조이다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 나머지 넷과 문장 구조가 다른 것은?",
+   "choices": [
+    "I want to drink something cold.",
+    "I want you to drink enough water.",
+    "She told him to slow down.",
+    "They asked us to vote for them.",
+    "He advised me to take notes in class."
+   ],
+   "answer": 1,
+   "why": "①은 to부정사가 목적어인 3형식이고, 나머지는 「동사+목적어+to부정사(목적격 보어)」의 5형식이다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것을 모두 고른 것은?\nㄱ. My uncle allowed me to feed the horses on the farm.\nㄴ. The teacher wants us to not use slang in essays.\nㄷ. She asked her neighbor to turning down the TV.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄴ은 not to use, ㄷ은 to turn down이 되어야 한다. ㄱ만 옳다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 「동사+목적어+to부정사」 문장으로 바르게 바꾼 것은?\n\"Study for the test,\" Mom said to me.",
+   "choices": [
+    "Mom told me study for the test.",
+    "Mom told me to study for the test.",
+    "Mom told to me to study for the test.",
+    "Mom told me studying for the test.",
+    "Mom told that I study for the test."
+   ],
+   "answer": 2,
+   "why": "명령문은 tell+목적어+to부정사로 바꾸므로 ②가 맞다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 조건을 모두 만족하는 문장은?\n[조건] · advise의 과거형을 쓸 것 · 부정의 to부정사를 쓸 것",
+   "choices": [
+    "The doctor advised me to stay up late.",
+    "The doctor advises me not to stay up late.",
+    "The doctor advised me not to stay up late.",
+    "The doctor advised me to not stay up late.",
+    "The doctor advised me don't stay up late."
+   ],
+   "answer": 3,
+   "why": "과거형 advised와 올바른 부정 어순 not to stay를 모두 갖춘 것은 ③뿐이다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nBecause the roads were icy, the police asked drivers ____ slowly and carefully.",
+   "choices": [
+    "drive",
+    "drove",
+    "to drive",
+    "driving",
+    "to driving"
+   ],
+   "answer": 3,
+   "why": "ask의 목적격 보어는 to부정사이므로 to drive가 맞다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 틀린 곳을 찾아 바르게 고친 것은?\nMy parents don't allow me staying out late on weekdays.",
+   "choices": [
+    "don't → doesn't",
+    "allow → allows",
+    "staying → to stay",
+    "out → to out",
+    "weekdays → weekday"
+   ],
+   "answer": 3,
+   "why": "allow의 목적격 보어는 to부정사이므로 staying을 to stay로 고쳐야 한다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThe teacher told us to bring our textbooks and ____ the first chapter before class.",
+   "choices": [
+    "read",
+    "reads",
+    "reading",
+    "to reading",
+    "being read"
+   ],
+   "answer": 1,
+   "why": "to bring과 병렬 구조이며, 병렬된 두 번째 to부정사는 to를 생략하고 동사원형 read로 쓸 수 있다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: You look tired. What did the doctor say?\nB: He advised me ____ at least eight hours every night, but I can't.",
+   "choices": [
+    "sleep",
+    "slept",
+    "sleeping",
+    "to sleep",
+    "to sleeping"
+   ],
+   "answer": 4,
+   "why": "advise의 목적격 보어는 to부정사이므로 to sleep이 맞다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳게 쓰인 문장은?",
+   "choices": [
+    "Ms. Choi asked the students to hand in their reports by noon.",
+    "Ms. Choi asked the students handing in their reports by noon.",
+    "Ms. Choi asked the students hand in their reports by noon.",
+    "Ms. Choi asked that the students to hand in their reports by noon.",
+    "Ms. Choi asked to the students to hand in their reports by noon."
+   ],
+   "answer": 1,
+   "why": "ask+목적어+to부정사 어순인 ①이 맞다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분이 어법상 옳은 문장의 개수는?\n· He told me <u>not to be</u> afraid of making mistakes.\n· She wants us <u>to not forget</u> the meeting time.\n· Mom asked me <u>not to leave</u> the door open.\n· The coach advised us <u>not skipping</u> practice.\n· They allowed her <u>not to answer</u> the question.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "to not forget과 not skipping은 not to-v 어순이 아니므로 틀렸다. 옳은 것은 3개이다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B)에서 알맞은 것끼리 짝지어진 것은?\nBefore the field trip, our teacher told us (A) [to wear / wearing] comfortable shoes and asked us (B) [not to bring / to bring not] too much money.",
+   "choices": [
+    "to wear – not to bring",
+    "wearing – not to bring",
+    "to wear – to bring not",
+    "wearing – to bring not",
+    "to wear – bringing not"
+   ],
+   "answer": 1,
+   "why": "tell/ask 모두 to부정사 보어를 취하고 부정은 not to-v이므로 to wear – not to bring이 맞다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 「동사+목적어+to부정사」 구조가 쓰이지 않은 문장은?",
+   "choices": [
+    "I want him to win the race.",
+    "She told me to bring my own cup.",
+    "He promised to call me tonight.",
+    "They asked her to move her car.",
+    "The doctor advised us to wash our hands often."
+   ],
+   "answer": 3,
+   "why": "③은 promise+to부정사(목적어)의 3형식이고, 나머지는 목적어 뒤에 to부정사 보어가 온 5형식이다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그 안내원은 방문객들에게 박물관에서 사진을 찍지 말라고 말했다.",
+   "choices": [
+    "The guide told the visitors not to take pictures in the museum.",
+    "The guide told the visitors to not take pictures in the museum.",
+    "The guide told the visitors don't take pictures in the museum.",
+    "The guide told not the visitors to take pictures in the museum.",
+    "The guide said the visitors not to take pictures in the museum."
+   ],
+   "answer": 1,
+   "why": "tell+목적어+not to-v 어순인 ①이 맞다. say는 이 구조로 쓸 수 없다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· The firefighters told everyone ____ calm.\n· My mom wants me ____ more careful with my things.",
+   "choices": [
+    "be",
+    "to be",
+    "being",
+    "been",
+    "to being"
+   ],
+   "answer": 2,
+   "why": "tell과 want 모두 목적격 보어로 to부정사를 쓰므로 to be가 공통으로 들어간다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글에서 어법상 틀린 문장은?\n① My sister wanted me to teach her English. ② So I told her to memorize ten words every day. ③ I also advised her to watching English cartoons. ④ I asked her not to give up easily. ⑤ Now she can introduce herself in English.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "to 뒤에는 동사원형이 오므로 to watching이 아니라 to watch가 맞다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 우리말과 영어가 바르게 짝지어지지 않은 것은?",
+   "choices": [
+    "나는 그가 오기를 원한다. – I want him to come.",
+    "그는 나에게 앉으라고 말했다. – He told me to sit down.",
+    "그녀는 내게 늦지 말라고 부탁했다. – She asked me to be late.",
+    "엄마는 내가 나가는 것을 허락했다. – Mom allowed me to go out.",
+    "의사는 그에게 쉬라고 충고했다. – The doctor advised him to rest."
+   ],
+   "answer": 3,
+   "why": "'늦지 말라고'이므로 asked me not to be late가 되어야 한다. not이 빠져 있다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?\nㄱ. The captain told the sailors to check the weather.\nㄴ. I don't want you to worry about me.\nㄷ. She allowed the kids to played outside.\nㄹ. He asked me to explain the rules again.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄱ, ㄴ, ㄹ",
+    "ㄱ, ㄷ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "ㄷ은 to play가 되어야 하므로 틀렸다. 나머지 ㄱ, ㄴ, ㄹ은 모두 옳다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 같은 것은?\nI said to my brother, \"Don't ride my bike.\"",
+   "choices": [
+    "I told my brother not to ride my bike.",
+    "I told my brother to ride my bike.",
+    "I asked my brother to ride my bike.",
+    "I told my brother that ride my bike.",
+    "I wanted my brother riding my bike."
+   ],
+   "answer": 1,
+   "why": "부정 명령문의 전달은 tell+목적어+not to-v로 나타내므로 ①이 맞다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 수 없는 것은?\nMr. Han ____ his students not to be late for the rehearsal.",
+   "choices": [
+    "told",
+    "asked",
+    "wanted",
+    "advised",
+    "let"
+   ],
+   "answer": 5,
+   "why": "let은 목적격 보어로 동사원형을 쓰므로 not to be 앞에 올 수 없다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 단어들을 모두 한 번씩 사용하여 문장을 만들 때, 다섯 번째에 오는 단어는?\n(the / teacher / told / us / not / to / give / up)",
+   "choices": [
+    "us",
+    "not",
+    "to",
+    "give",
+    "told"
+   ],
+   "answer": 2,
+   "why": "The teacher told us not to give up. 어순이므로 다섯 번째 단어는 not이다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?\nA: Mom, can I go to Jina's house?\nB: Yes, but I want you (A) ____ home by seven. Don't forget!\nA: Okay. Anything else?\nB: Yes, I'm asking you (B) ____ your homework there, too.",
+   "choices": [
+    "to be – to do",
+    "be – do",
+    "to be – doing",
+    "being – to do",
+    "to be – do"
+   ],
+   "answer": 1,
+   "why": "want와 ask 모두 목적격 보어로 to부정사를 쓰므로 to be – to do가 맞다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 어법과 문맥상 알맞은 것은?\nThe museum staff asked the children ____ the old paintings, so they just looked at them.",
+   "choices": [
+    "touch",
+    "to touch",
+    "not to touch",
+    "to not touch",
+    "not touching"
+   ],
+   "answer": 3,
+   "why": "뒤에서 '그냥 보기만 했다'고 했으므로 만지지 말라는 not to touch가 맞다. to not touch는 틀린 어순이다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?\n· He wanted the singer to sign his album.\n· The teacher told to us to review chapter three.\n· I asked Dad to fix my bike chain.\n· Mom advised me to not eat before swimming.\n· She allows her dog to sit on the sofa.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "told to us는 told us로, to not eat은 not to eat으로 고쳐야 하므로 틀린 문장은 2개이다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 조건에 맞게 영작한 것으로 옳은 것은?\n나는 네가 그 시험을 포기하지 않기를 원한다.\n[조건] want와 부정의 to부정사를 사용할 것",
+   "choices": [
+    "I want you not to give up the test.",
+    "I don't want you to give up the test.",
+    "I want you to give not up the test.",
+    "I want you to not give up the test.",
+    "I want not you to give up the test."
+   ],
+   "answer": 1,
+   "why": "부정의 to부정사(not to-v)를 쓴 것은 ①뿐이다. ②는 문장 부정이라 조건에 맞지 않는다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 ①~⑤ 중 어법상 틀린 것은?\nYesterday my grandmother visited us. She asked me ① <u>to show</u> her how to send photos on her phone. I told her ② <u>to tap</u> the camera icon first. She wanted me ③ <u>to write</u> the steps down, so I did. I also advised her ④ <u>not to press</u> the red button. She told me ⑤ <u>calling</u> her if she had questions.",
+   "choices": [
+    "① to show",
+    "② to tap",
+    "③ to write",
+    "④ not to press",
+    "⑤ calling"
+   ],
+   "answer": 5,
+   "why": "tell의 목적격 보어는 to부정사이므로 calling이 아니라 to call이 맞다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바꿀 때 빈칸에 알맞은 것은?\nThe teacher said to me, \"You should read more books.\"\n= The teacher advised me ____ more books.",
+   "choices": [
+    "read",
+    "reading",
+    "to read",
+    "should read",
+    "to reading"
+   ],
+   "answer": 3,
+   "why": "충고의 내용은 advise+목적어+to부정사로 나타내므로 to read가 맞다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 올바르게 쓰인 문장은?",
+   "choices": [
+    "The dentist advised me not to eating candy at night.",
+    "The dentist advised me not to eat candy at night.",
+    "The dentist advised me to don't eat candy at night.",
+    "The dentist advised me not eat candy at night.",
+    "The dentist advised me no to eat candy at night."
+   ],
+   "answer": 2,
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. not to eat으로 쓴 ②만 맞다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 같은 뜻이 되도록 바꿀 때 빈칸에 알맞은 말을 쓰시오. (3단어)\nHe said to me, \"Don't tell Mom about the broken vase.\"\n→ He told me ____ Mom about the broken vase.",
+   "answer": "not to tell",
+   "why": "부정 명령문은 tell+목적어+not to-v로 바꾼다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 「tell+목적어+to부정사」 문장으로 바꿔 쓰시오.\nThe teacher said to us, \"Keep the classroom clean.\"\n(The teacher로 시작할 것)",
+   "answer": "The teacher told us to keep the classroom clean.",
+   "why": "명령문은 tell+목적어+to부정사로 바꾼다. said to는 told로 바뀐다.",
+   "alt": [
+    "The teacher told us to keep the classroom clean"
+   ],
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 같은 뜻이 되도록 바꿀 때 빈칸에 알맞은 말을 쓰시오. (3단어)\nMom said to me, \"Don't waste water.\"\n→ Mom told me ____ water.",
+   "answer": "not to waste",
+   "why": "부정 명령문은 tell+목적어+not to-v로 바꾼다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 우리말을 조건에 맞게 영작하시오.\n나는 네가 울지 않기를 원한다.\n[조건] want, not to를 사용하여 6단어로 쓸 것",
+   "answer": "I want you not to cry.",
+   "why": "want+목적어+not to-v 어순으로 쓴다.",
+   "alt": [
+    "I want you not to cry"
+   ],
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 부정형 to부정사로 바꿔 빈칸에 쓰시오. (3단어)\nThe nurse told the visitors ____ (speak) loudly.",
+   "answer": "not to speak",
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 빈칸에 쓰시오.\nOur teacher wants us ____ (do) our best and never give up.",
+   "answer": "to do",
+   "why": "want의 목적격 보어는 to부정사이므로 to do로 쓴다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe firefighters told everyone <u>to not go</u> near the building.",
+   "answer": "not to go",
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다. to not go는 틀린 어순이다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nMy parents want me <u>becoming</u> a person who helps others.",
+   "answer": "to become",
+   "why": "want의 목적격 보어는 to부정사이므로 to become으로 고친다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nShe asked the man sitting next to her <u>turning</u> off his phone.",
+   "answer": "to turn",
+   "why": "ask의 목적격 보어는 to부정사이므로 to turn으로 고친다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말에 맞게 괄호 안의 단어를 바르게 배열하여 문장을 쓰시오.\n선생님은 우리에게 햄스터에게 먹이를 너무 많이 주지 말라고 말씀하셨다.\n(told / the teacher / us / not / to / feed / the hamster / too much)",
+   "answer": "The teacher told us not to feed the hamster too much.",
+   "why": "tell+목적어+not to-v 어순으로 배열한다.",
+   "alt": [
+    "The teacher told us not to feed the hamster too much"
+   ],
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말에 맞게 괄호 안의 단어를 바르게 배열하여 문장을 쓰시오.\n그녀는 남동생에게 자신의 물감을 쓰지 말라고 말했다.\n(she / her brother / told / not / to / use / her paints)",
+   "answer": "She told her brother not to use her paints.",
+   "why": "tell+목적어+not to-v 어순으로 배열한다.",
+   "alt": [
+    "She told her brother not to use her paints"
+   ],
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 같은 뜻이 되도록 바꿀 때 빈칸에 알맞은 말을 쓰시오. (2단어)\nShe said to him, \"Please water my flowers during the vacation.\"\n→ She asked him ____ her flowers during the vacation.",
+   "answer": "to water",
+   "why": "「Please+명령문」은 ask+목적어+to부정사로 바꾼다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 우리말을 조건에 맞게 영작하시오.\n아빠는 내가 그 영화를 보는 것을 허락하지 않으셨다.\n[조건] allow, watch를 사용한 과거시제 부정문으로 쓸 것 (Dad로 시작)",
+   "answer": "Dad didn't allow me to watch the movie.",
+   "why": "allow+목적어+to부정사 구조를 과거 부정문 didn't allow로 쓴다.",
+   "alt": [
+    "Dad did not allow me to watch the movie"
+   ],
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 부정형 to부정사로 바꿔 빈칸에 쓰시오. (3단어)\nMs. Park asked us ____ (bring) our phones to the exam room.",
+   "answer": "not to bring",
+   "why": "to부정사의 부정은 to 바로 앞에 not을 붙인 not to-v 어순이다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 같은 뜻이 되도록 바꿀 때 빈칸에 알맞은 말을 쓰시오. (2단어)\n\"Exercise every day,\" the doctor said to my uncle.\n→ The doctor told my uncle ____ every day.",
+   "answer": "to exercise",
+   "why": "명령문은 tell+목적어+to부정사로 바꾼다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 단어를 알맞은 형태로 바꿔 빈칸에 쓰시오.\nI wanted my sister ____ (come) to my graduation, so I sent her a ticket.",
+   "answer": "to come",
+   "why": "want의 목적격 보어는 to부정사이므로 to come으로 쓴다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe captain told the passengers <u>stay</u> in their seats during the storm.",
+   "answer": "to stay",
+   "why": "tell의 목적격 보어는 to부정사이므로 to stay로 고친다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 tell을 사용한 「동사+목적어+to부정사」 문장으로 바꿔 쓰시오. (과거시제, My mom으로 시작)\nMy mom said to me, \"Turn off the computer.\"",
+   "answer": "My mom told me to turn off the computer.",
+   "why": "명령문은 tell+목적어+to부정사로 바꾼다.",
+   "alt": [
+    "My mom told me to turn off the computer"
+   ],
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 tell을 사용한 문장으로 바꿔 쓰시오. (과거시제, The police officer로 시작)\nThe police officer said to us, \"Don't cross the street here.\"",
+   "answer": "The police officer told us not to cross the street here.",
+   "why": "부정 명령문은 tell+목적어+not to-v로 바꾼다.",
+   "alt": [
+    "The police officer told us not to cross the street here"
+   ],
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말에 맞게 괄호 안의 단어를 바르게 배열하여 문장을 쓰시오.\n나는 그에게 내 비밀을 아무에게도 말하지 말라고 부탁했다.\n(I / asked / him / not / to / tell / anyone / my secret)",
+   "answer": "I asked him not to tell anyone my secret.",
+   "why": "ask+목적어+not to-v 어순으로 배열한다.",
+   "alt": [
+    "I asked him not to tell anyone my secret"
+   ],
+   "no": 200
+  }
+ ]
+}

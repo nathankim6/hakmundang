@@ -1318,6 +1318,1308 @@
    "answer": "isn't",
    "why": "is not을 한 단어로 줄이면 isn't이다.",
    "no": 100
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말을 고르시오.\nThe sky ____ blue now.",
+   "choices": [
+    "am",
+    "are",
+    "is",
+    "were",
+    "be"
+   ],
+   "answer": 3,
+   "why": "now(지금)가 있으므로 현재형을 쓰고, The sky는 3인칭 단수이므로 is가 알맞다. am/are는 주어가 맞지 않고, were는 과거·복수형, be는 원형이라 쓸 수 없다.",
+   "no": 101
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말을 고르시오.\nMy grandmother ____ in the garden now.",
+   "choices": [
+    "is",
+    "are",
+    "am",
+    "was",
+    "were"
+   ],
+   "answer": 1,
+   "why": "now가 있으므로 현재형이고, My grandmother는 3인칭 단수이므로 is를 쓴다. was/were는 과거형이라 now와 어울리지 않는다.",
+   "no": 102
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말을 고르시오.\nYou ____ a great dancer.",
+   "choices": [
+    "am",
+    "is",
+    "are",
+    "was",
+    "be"
+   ],
+   "answer": 3,
+   "why": "주어 You에는 be동사 are를 쓴다. am은 I, is/was는 3인칭 단수 주어에 쓰고, be는 원형이라 그대로 쓸 수 없다.",
+   "no": 103
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말을 고르시오.\nTom and I ____ hungry now.",
+   "choices": [
+    "am",
+    "are",
+    "is",
+    "was",
+    "were"
+   ],
+   "answer": 2,
+   "why": "Tom and I는 '우리'에 해당하는 복수 주어이고 now가 있으므로 현재형 are를 쓴다. was/were는 과거형이고, am/is는 단수 주어용이다.",
+   "no": 104
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말을 고르시오.\nThe soccer game ____ exciting last Saturday.",
+   "choices": [
+    "was",
+    "is",
+    "are",
+    "were",
+    "am"
+   ],
+   "answer": 1,
+   "why": "last Saturday(지난 토요일)는 과거이고, The soccer game은 단수 주어이므로 was를 쓴다. were는 복수 주어용, is/are/am은 현재형이다.",
+   "no": 105
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말을 고르시오.\nMy grandparents ____ farmers ten years ago.",
+   "choices": [
+    "is",
+    "was",
+    "are",
+    "were",
+    "am"
+   ],
+   "answer": 4,
+   "why": "ten years ago(10년 전)는 과거이고, My grandparents는 복수 주어이므로 were를 쓴다. was는 단수 주어용, is/are/am은 현재형이다.",
+   "no": 106
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말을 고르시오.\n____ this your umbrella?",
+   "choices": [
+    "Am",
+    "Is",
+    "Are",
+    "Do",
+    "Does"
+   ],
+   "answer": 2,
+   "why": "주어 this는 단수이므로 be동사 의문문은 Is this ~?로 만든다. Are는 복수 주어용이고, 일반동사가 없으므로 Do/Does는 쓸 수 없다.",
+   "no": 107
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말을 고르시오.\n____ the students in the classroom two hours ago?",
+   "choices": [
+    "Was",
+    "Is",
+    "Are",
+    "Did",
+    "Were"
+   ],
+   "answer": 5,
+   "why": "two hours ago(두 시간 전)는 과거이고 the students는 복수이므로 Were를 쓴다. Was는 단수 주어용이고, 일반동사가 없으므로 Did는 쓸 수 없다.",
+   "no": 108
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말을 고르시오.\nHe ____ not a police officer.",
+   "choices": [
+    "am",
+    "are",
+    "is",
+    "do",
+    "be"
+   ],
+   "answer": 3,
+   "why": "주어 He는 3인칭 단수이므로 is를 쓰고, 부정문은 is 뒤에 not을 붙인다. am/are는 주어가 맞지 않고, do는 일반동사 부정문에 쓴다.",
+   "no": 109
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말을 고르시오.\nWe ____ not sleepy last night.",
+   "choices": [
+    "am",
+    "was",
+    "are",
+    "is",
+    "were"
+   ],
+   "answer": 5,
+   "why": "last night(어젯밤)은 과거이고 주어 We는 복수이므로 were not(weren't)이 된다. was는 단수 주어용, am/are/is는 현재형이다.",
+   "no": 110
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "줄임말과 원래 표현의 연결이 잘못된 것은?",
+   "choices": [
+    "she's - she is",
+    "we're - we are",
+    "isn't - is not",
+    "weren't - were not",
+    "it's - it are"
+   ],
+   "answer": 5,
+   "why": "it's는 it is의 줄임말이다. it은 단수라서 are와 함께 쓸 수 없다. 나머지는 모두 바르게 연결되었다.",
+   "no": 111
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장에서 not이 들어갈 위치로 알맞은 것은?\nMy ( ① ) father ( ② ) was ( ③ ) busy ( ④ ) yesterday ( ⑤ ).",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "be동사의 부정문은 be동사 바로 뒤에 not을 붙이므로 was 뒤인 ③이 알맞다. 다른 위치에 넣으면 어순이 틀린다.",
+   "no": 112
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말을 고르시오.\nA: Is this book fun?\nB: Yes, ____.",
+   "choices": [
+    "it is",
+    "it isn't",
+    "this is",
+    "they are",
+    "it was"
+   ],
+   "answer": 1,
+   "why": "Is this ~?로 물으면 this를 it으로 받아 Yes, it is.로 답한다. Yes 뒤에 부정형(isn't)은 올 수 없고, 현재 질문에 과거(was)로 답하지 않는다.",
+   "no": 113
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말을 고르시오.\nA: Are you and Minsu on the same team?\nB: Yes, ____.",
+   "choices": [
+    "I am",
+    "you are",
+    "we are",
+    "they are",
+    "we were"
+   ],
+   "answer": 3,
+   "why": "you and Minsu(너와 민수)는 대답하는 사람 입장에서 '우리'이므로 we로 받아 Yes, we are.로 답한다. 현재 질문이므로 과거형 were는 쓸 수 없다.",
+   "no": 114
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말을 고르시오.\nA: Was your trip fun?\nB: No, ____.",
+   "choices": [
+    "it was",
+    "it isn't",
+    "I wasn't",
+    "they weren't",
+    "it wasn't"
+   ],
+   "answer": 5,
+   "why": "Was ~?로 물었으므로 과거형으로 답하고, your trip은 it으로 받는다. No 뒤에는 부정형이 오므로 it wasn't가 알맞다.",
+   "no": 115
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "어법상 올바른 문장을 고르시오.",
+   "choices": [
+    "The babies is cute.",
+    "My teacher are kind.",
+    "I were at the museum.",
+    "The bread was soft.",
+    "You is my friend."
+   ],
+   "answer": 4,
+   "why": "The bread는 단수 취급하는 명사이므로 was가 맞다. The babies(복수)에는 are, My teacher(단수)에는 is, I의 과거에는 was, You에는 are를 써야 한다.",
+   "no": 116
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "어법상 틀린 문장을 고르시오.",
+   "choices": [
+    "We are in the hallway.",
+    "She was a pianist.",
+    "The bags are heavy.",
+    "I am a good swimmer.",
+    "It were windy yesterday."
+   ],
+   "answer": 5,
+   "why": "It은 단수 주어이므로 were가 아니라 was를 써야 한다. 나머지는 주어와 be동사의 짝이 모두 맞다.",
+   "no": 117
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "두 문장의 빈칸에 공통으로 알맞은 말을 고르시오.\n· This ____ my new bike.\n· The juice ____ cold now.",
+   "choices": [
+    "am",
+    "are",
+    "is",
+    "was",
+    "were"
+   ],
+   "answer": 3,
+   "why": "This와 The juice는 모두 단수 주어이고, now가 있으므로 현재형 is가 공통으로 들어간다. was는 과거형이라 now와 어울리지 않는다.",
+   "no": 118
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "주어와 be동사의 짝이 바르게 연결된 것은?",
+   "choices": [
+    "He - are",
+    "I - is",
+    "You - am",
+    "The girls - are",
+    "We - is"
+   ],
+   "answer": 4,
+   "why": "The girls는 복수 주어이므로 are와 짝을 이룬다. He는 is, I는 am, You는 are, We는 are를 써야 한다.",
+   "no": 119
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말을 고르시오.\nMy uncle ____ in Jeju last summer.",
+   "choices": [
+    "is",
+    "are",
+    "am",
+    "was",
+    "were"
+   ],
+   "answer": 4,
+   "why": "last summer(지난여름)는 과거이고, My uncle은 3인칭 단수이므로 was를 쓴다. were는 복수 주어용이고, is/are/am은 현재형이다.",
+   "no": 120
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 be동사의 뜻이 나머지 넷과 다른 것은?",
+   "choices": [
+    "My cap <u>is</u> on the bed.",
+    "She <u>is</u> a scientist.",
+    "Mr. Park <u>is</u> my English teacher.",
+    "The koala <u>is</u> a slow animal.",
+    "I <u>am</u> a member of the band."
+   ],
+   "answer": 1,
+   "why": "①의 is는 장소를 나타내어 '(~에) 있다'라는 뜻이고, 나머지는 모두 뒤에 명사가 와서 '~이다'라는 뜻으로 쓰였다.",
+   "no": 121
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장을 의문문으로 바르게 바꾼 것은?\nThe cooks were in the kitchen.",
+   "choices": [
+    "Were the cooks in the kitchen?",
+    "Was the cooks in the kitchen?",
+    "The cooks were in the kitchen?",
+    "Are the cooks in the kitchen?",
+    "Did the cooks in the kitchen?"
+   ],
+   "answer": 1,
+   "why": "be동사 의문문은 be동사를 주어 앞으로 보낸다. 주어가 복수이고 과거이므로 Were를 그대로 쓴다. 시제를 현재(Are)로 바꾸거나 Did를 쓰면 안 된다.",
+   "no": 122
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장을 부정문으로 바르게 바꾼 것은?\nI am ready for the test.",
+   "choices": [
+    "I amn't ready for the test.",
+    "I am not ready for the test.",
+    "I not am ready for the test.",
+    "I don't ready for the test.",
+    "I wasn't ready for the test."
+   ],
+   "answer": 2,
+   "why": "be동사 부정문은 am 뒤에 not을 붙인다. am not은 줄임말이 없으므로 amn't는 틀리고, 시제를 과거로 바꾸거나 don't를 쓰면 안 된다.",
+   "no": 123
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말을 고르시오.\nThe windows in my room ____ big.",
+   "choices": [
+    "is",
+    "am",
+    "was",
+    "are",
+    "be"
+   ],
+   "answer": 4,
+   "why": "주어는 단수 my room이 아니라 복수 The windows이므로 are를 쓴다. is/was는 단수 주어용이고, be는 원형이라 그대로 쓸 수 없다.",
+   "no": 124
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 be동사의 현재형을 쓰시오.\nMy parents ____ teachers.",
+   "answer": "are",
+   "why": "My parents는 복수 주어이므로 be동사 현재형은 are를 쓴다.",
+   "no": 125
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 be동사를 쓰시오.\nHe ____ in the hospital last month.",
+   "answer": "was",
+   "why": "last month(지난달)는 과거이고, He는 3인칭 단수이므로 was를 쓴다.",
+   "no": 126
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 표현의 줄임말을 쓰시오.\nwas not",
+   "answer": "wasn't",
+   "why": "was not은 wasn't로 줄여 쓴다. 아포스트로피(')는 o가 빠진 자리에 찍는다.",
+   "no": 127
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 표현의 줄임말을 쓰시오.\nThey are",
+   "answer": "They're",
+   "alt": [
+    "they're"
+   ],
+   "why": "They are는 They're로 줄여 쓴다. are의 a가 빠진 자리에 아포스트로피를 찍는다.",
+   "no": 128
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nMy friends (be) in Busan last winter.",
+   "answer": "were",
+   "why": "last winter(지난겨울)는 과거이고, My friends는 복수 주어이므로 were를 쓴다.",
+   "no": 129
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.\nThe books <u>is</u> on the desk.",
+   "answer": "are",
+   "why": "The books는 복수 주어이므로 is가 아니라 are를 써야 한다.",
+   "no": 130
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.\nWe <u>was</u> at the aquarium last Sunday.",
+   "answer": "were",
+   "why": "주어 We는 복수이므로 과거형은 was가 아니라 were를 써야 한다.",
+   "no": 131
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 의문문으로 바꿔 쓰시오.\nShe is your cousin.",
+   "answer": "Is she your cousin?",
+   "why": "be동사 의문문은 is를 주어 She 앞으로 보내고 문장 끝에 물음표를 붙인다.",
+   "no": 132
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 부정문으로 바꿔 쓰시오.\nThe water is warm.",
+   "answer": "The water is not warm.",
+   "alt": [
+    "The water isn't warm."
+   ],
+   "why": "be동사 부정문은 is 뒤에 not을 붙여 is not(isn't)으로 만든다.",
+   "no": 133
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 be동사를 쓰시오.\nI ____ ten years old two years ago.",
+   "answer": "was",
+   "why": "two years ago(2년 전)는 과거이고, 주어 I의 과거형 be동사는 was이다.",
+   "no": 134
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 순서대로 바르게 짝지어진 것은?\nThe classroom ____ dirty this morning, but it ____ clean now.",
+   "choices": [
+    "was - is",
+    "is - was",
+    "was - was",
+    "were - is",
+    "is - is"
+   ],
+   "answer": 1,
+   "why": "but ~ now(그러나 지금은)로 보아 앞은 이미 지난 오늘 아침의 일이므로 과거형 was, 뒤는 현재이므로 is를 쓴다. The classroom과 it은 단수라서 were는 쓸 수 없다.",
+   "no": 135
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말을 고르시오.\nMinji and her mom ____ at the market now.",
+   "choices": [
+    "is",
+    "am",
+    "are",
+    "was",
+    "were"
+   ],
+   "answer": 3,
+   "why": "Minji and her mom은 두 사람, 즉 복수 주어이고 now가 있으므로 현재형 are를 쓴다. was/were는 과거형이고, is/am은 단수 주어용이다.",
+   "no": 136
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "Were the game exciting?",
+    "My feet was cold.",
+    "The tomatoes in the basket are red.",
+    "Was you at the library?",
+    "He and I was classmates."
+   ],
+   "answer": 3,
+   "why": "주어는 복수 The tomatoes이므로 are가 맞다. the game은 단수라서 Was, feet(foot의 복수)는 were, You에는 Were, He and I는 복수라서 were를 써야 한다.",
+   "no": 137
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 틀린 것은?",
+   "choices": [
+    "His teeth are white.",
+    "The men were tall.",
+    "Was the story true?",
+    "The women is kind.",
+    "My arms were tired last night."
+   ],
+   "answer": 4,
+   "why": "women은 woman의 복수형이므로 is가 아니라 are를 써야 한다. teeth·men도 복수라서 are/were가 맞고, the story는 단수라서 Was가 맞다.",
+   "no": 138
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말을 고르시오.\nA: ____ the singers popular in Korea?\nB: Yes, they are. Everyone loves them.",
+   "choices": [
+    "Is",
+    "Are",
+    "Was",
+    "Were",
+    "Am"
+   ],
+   "answer": 2,
+   "why": "대답이 they are로 현재형이므로 질문도 현재형이어야 하고, the singers는 복수이므로 Are가 알맞다. Was/Were는 과거형이라 대답과 시제가 맞지 않는다.",
+   "no": 139
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말을 고르시오.\nA: How ____ the weather in London yesterday?\nB: It was foggy.",
+   "choices": [
+    "is",
+    "are",
+    "be",
+    "was",
+    "were"
+   ],
+   "answer": 4,
+   "why": "yesterday가 있고 대답도 It was로 과거이므로 과거형을 쓰고, the weather는 단수이므로 was가 알맞다. were는 복수 주어용이다.",
+   "no": 140
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 문장의 빈칸에 공통으로 알맞은 말을 고르시오.\n· My hands ____ dirty after the game yesterday.\n· Where ____ you last Friday?",
+   "choices": [
+    "were",
+    "was",
+    "are",
+    "is",
+    "am"
+   ],
+   "answer": 1,
+   "why": "yesterday와 last Friday는 모두 과거이고, My hands(복수)와 you는 둘 다 were를 쓰는 주어이므로 공통으로 were가 들어간다.",
+   "no": 141
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 문장의 빈칸에 공통으로 알맞은 말을 고르시오.\n· My little brother ____ four years old now.\n· The butter on the table ____ mine.",
+   "choices": [
+    "am",
+    "are",
+    "is",
+    "was",
+    "were"
+   ],
+   "answer": 3,
+   "why": "My little brother는 단수이고 now가 있으므로 현재형 is를 쓴다. The butter도 단수 취급하는 명사이므로 is가 공통으로 들어간다. 첫 문장에 now가 있어 과거형 was는 쓸 수 없다.",
+   "no": 142
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그 아이들은 지난주에 아프지 않았다.",
+   "choices": [
+    "The children wasn't sick last week.",
+    "The children aren't sick last week.",
+    "The children didn't sick last week.",
+    "The children weren't sick last week.",
+    "The children weren't not sick last week."
+   ],
+   "answer": 4,
+   "why": "The children은 복수이고 지난주의 일이므로 과거 부정 weren't를 쓴다. wasn't는 단수용, aren't는 현재형이며, not을 두 번 쓰거나 didn't를 쓰면 안 된다.",
+   "no": 143
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n네 장갑은 어디에 있니?",
+   "choices": [
+    "Where is your gloves?",
+    "Where was your gloves?",
+    "Where are your gloves?",
+    "Where your gloves are?",
+    "Where do your gloves?"
+   ],
+   "answer": 3,
+   "why": "gloves(장갑)는 복수 명사이고 '있니'는 현재이므로 Where are ~?가 된다. 의문사 뒤에는 be동사가 주어 앞에 와야 하므로 ④는 어순이 틀렸다.",
+   "no": 144
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화 중 자연스럽지 않은 것은?",
+   "choices": [
+    "A: Is your dog big? B: No, it isn't.",
+    "A: Were you home last night? B: Yes, I was.",
+    "A: Are the muffins sweet? B: Yes, they are.",
+    "A: Was Ms. Lee your teacher? B: Yes, she was.",
+    "A: Are you and Jane sisters? B: Yes, you are."
+   ],
+   "answer": 5,
+   "why": "you and Jane은 대답하는 사람 입장에서 '우리'이므로 Yes, we are.로 답해야 한다. 나머지 대화는 주어와 시제가 모두 맞다.",
+   "no": 145
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대답이 나올 수 있는 질문으로 알맞은 것은?\nYes, they were.",
+   "choices": [
+    "Are the players tired?",
+    "Was the room dark?",
+    "Were the rooms dark?",
+    "Is she a writer?",
+    "Were you alone?"
+   ],
+   "answer": 3,
+   "why": "they were는 복수 주어에 대한 과거 질문의 긍정 대답이므로 Were the rooms ~?가 알맞다. ①은 they are, ②는 it was, ④는 she is, ⑤는 I was로 답해야 한다.",
+   "no": 146
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 수 없는 것은?\n____ was in the box.",
+   "choices": [
+    "The letter",
+    "My ring",
+    "A small key",
+    "The coins",
+    "An old photo"
+   ],
+   "answer": 4,
+   "why": "was는 단수 주어와 쓴다. The coins는 복수이므로 were를 써야 해서 빈칸에 올 수 없다. 나머지는 모두 단수 주어이다.",
+   "no": 147
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 be동사 중 어법상 틀린 것은?",
+   "choices": [
+    "My homework <u>was</u> easy yesterday.",
+    "The salt <u>are</u> in the bottle.",
+    "The two cups <u>are</u> on the shelf.",
+    "Minho and Jisu <u>are</u> good singers.",
+    "I <u>was</u> in bed at ten last night."
+   ],
+   "answer": 2,
+   "why": "The salt는 셀 수 없는 명사로 단수 취급하므로 are가 아니라 is를 써야 한다. 나머지는 주어의 수와 시제에 모두 맞다.",
+   "no": 148
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장을 과거형 문장으로 바르게 바꾼 것은?\nMy room is messy today. (today → yesterday)",
+   "choices": [
+    "My room was messy yesterday.",
+    "My room were messy yesterday.",
+    "My room is messy yesterday.",
+    "My room did messy yesterday.",
+    "My room be messy yesterday."
+   ],
+   "answer": 1,
+   "why": "단수 주어 My room의 be동사 is를 과거형 was로 바꾼다. were는 복수 주어용이고, yesterday와 현재형 is는 함께 쓸 수 없다.",
+   "no": 149
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말이 순서대로 바르게 짝지어진 것은?\nA: ____ the puppies hungry now?\nB: Yes, they ____.",
+   "choices": [
+    "Is - is",
+    "Are - are",
+    "Are - were",
+    "Were - were",
+    "Are - is"
+   ],
+   "answer": 2,
+   "why": "now가 있으므로 현재형이고, the puppies는 복수이므로 Are로 묻는다. 대답도 같은 시제의 they are로 해야 하므로 Are - are가 알맞다.",
+   "no": 150
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분을 줄임말로 바꿔 쓸 수 없는 것은?",
+   "choices": [
+    "<u>You are</u> late again.",
+    "<u>It is</u> a secret.",
+    "He <u>was not</u> alone.",
+    "<u>I am</u> not angry.",
+    "Yes, he <u>is</u>."
+   ],
+   "answer": 5,
+   "why": "Yes, he is.처럼 대답의 맨 끝에 오는 be동사는 줄여 쓸 수 없다(Yes, he's. ✗). 나머지는 You're, It's, wasn't, I'm으로 줄일 수 있다.",
+   "no": 151
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\n(a) The river was clean ten years ago.\n(b) My mittens is in my pocket.\n(c) Were the bottles heavy?\n(d) Susan were my neighbor.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "0개"
+   ],
+   "answer": 2,
+   "why": "(a)와 (c)가 옳아서 2개다. (b)는 복수 My mittens에 are, (d)는 단수 Susan에 was를 써야 한다.",
+   "no": 152
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말을 고르시오.\nA: Who ____ that tall boy over there?\nB: He's my cousin.",
+   "choices": [
+    "am",
+    "was",
+    "is",
+    "are",
+    "were"
+   ],
+   "answer": 3,
+   "why": "대답이 He's(= He is)로 현재형이므로 질문도 현재형이어야 하고, that tall boy는 단수이므로 is가 알맞다.",
+   "no": 153
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 be동사의 현재형이 나머지 넷과 다른 것은?",
+   "choices": [
+    "My aunt and uncle ____ in Canada now.",
+    "These pants ____ too long.",
+    "You ____ a good listener.",
+    "The kids ____ in the kitchen now.",
+    "My science teacher ____ from Busan."
+   ],
+   "answer": 5,
+   "why": "My science teacher는 3인칭 단수라서 is가 들어가고, 나머지는 복수 주어(pants는 항상 복수 취급)와 You라서 모두 are가 들어간다.",
+   "no": 154
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 단어들을 모두 사용하여 평서문을 만들 때 세 번째로 오는 단어는?\n(the / was / not / soup / hot)",
+   "choices": [
+    "the",
+    "soup",
+    "was",
+    "not",
+    "hot"
+   ],
+   "answer": 3,
+   "why": "바르게 배열하면 The soup was not hot.이 되어 세 번째 단어는 was이다. be동사 부정문은 「주어+be동사+not」의 어순이다.",
+   "no": 155
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 'No, I wasn't.'로 대답할 수 있는 질문은?",
+   "choices": [
+    "Are you okay?",
+    "Were you on the bus this morning?",
+    "Was she angry?",
+    "Were they late?",
+    "Is he your uncle?"
+   ],
+   "answer": 2,
+   "why": "I wasn't는 you로 물은 과거 질문에 대한 부정 대답이므로 Were you ~?가 알맞다. ①은 I'm not, ③은 she wasn't, ④는 they weren't, ⑤는 he isn't로 답한다.",
+   "no": 156
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 옮길 때 빈칸에 알맞은 것은?\n그 청바지는 너무 컸다. → The jeans ____ too big.",
+   "choices": [
+    "was",
+    "is",
+    "are",
+    "were",
+    "am"
+   ],
+   "answer": 4,
+   "why": "jeans(청바지)는 항상 복수 취급하는 명사이고 '컸다'는 과거이므로 were를 쓴다. was는 단수용, is/are는 현재형이다.",
+   "no": 157
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 부정문으로 바꿔 쓰시오.\nHis answers were correct.",
+   "answer": "His answers were not correct.",
+   "alt": [
+    "His answers weren't correct."
+   ],
+   "why": "be동사 과거 부정문은 were 뒤에 not을 붙여 were not(weren't)으로 만든다.",
+   "no": 158
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 의문문으로 바꿔 쓰시오.\nThe towels were in the basket.",
+   "answer": "Were the towels in the basket?",
+   "why": "be동사 의문문은 were를 주어 The towels 앞으로 보내고 문장 끝에 물음표를 붙인다.",
+   "no": 159
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nThe leaves (be) red and yellow last fall.",
+   "answer": "were",
+   "why": "last fall(지난가을)은 과거이고, The leaves(leaf의 복수형)는 복수 주어이므로 were를 쓴다.",
+   "no": 160
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nMy favorite fruit (be) watermelon. I eat it every day.",
+   "answer": "is",
+   "why": "뒤 문장 I eat it every day로 보아 현재의 일이고, My favorite fruit는 단수 주어이므로 is를 쓴다.",
+   "no": 161
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.\n<u>Is</u> the children in the gym now?",
+   "answer": "Are",
+   "alt": [
+    "are"
+   ],
+   "why": "the children(child의 복수형)은 복수 주어이므로 의문문의 be동사는 Is가 아니라 Are를 써야 한다.",
+   "no": 162
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.\nThe forks and the spoons <u>is</u> in the drawer.",
+   "answer": "are",
+   "why": "The forks and the spoons는 and로 이어진 복수 주어이므로 is가 아니라 are를 써야 한다.",
+   "no": 163
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "대화의 빈칸에 알맞은 말을 한 단어로 쓰시오.\nA: Were your teammates happy after the game?\nB: Yes, they ____.",
+   "answer": "were",
+   "why": "Were ~?로 물은 과거 질문이므로 대답도 과거형 were로 하고, your teammates는 they로 받는다.",
+   "no": 164
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "줄임말을 사용하여 다음 문장을 다시 쓰시오.\nI am not afraid of spiders.",
+   "answer": "I'm not afraid of spiders.",
+   "why": "am not은 줄임말이 없으므로 I am을 I'm으로 줄여 I'm not으로 쓴다.",
+   "no": 165
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장이 같은 뜻이 되도록 빈칸에 알맞은 말을 한 단어로 쓰시오.\nThey were not in the car. = They ____ in the car.",
+   "answer": "weren't",
+   "why": "were not을 한 단어로 줄이면 weren't이다.",
+   "no": 166
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 모두 한 번씩 사용하여 우리말에 맞는 문장을 쓰시오.\n그 상자들은 비어 있었니? (empty / were / the boxes)",
+   "answer": "Were the boxes empty?",
+   "why": "be동사 의문문은 「Were+주어+형용사 ~?」의 어순으로, Were를 문장 맨 앞에 놓고 물음표를 붙인다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 모두 고른 것은?\nㄱ. The children were noisy at lunchtime.\nㄴ. My favorite subject are history.\nㄷ. Were you at the bakery this morning?\nㄹ. The bus driver were kind.",
+   "choices": [
+    "ㄱ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 복수 주어 The children에 were, ㄷ은 주어 you에 Were가 맞다. ㄴ은 단수 주어 My favorite subject이므로 are가 아니라 is, ㄹ은 단수 주어 The bus driver이므로 were가 아니라 was여야 한다. 따라서 옳은 것은 ㄱ, ㄷ.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장을 모두 고른 것은?\nㄱ. Was the gloves in the drawer?\nㄴ. The bakery was full of people this morning.\nㄷ. My cousins is middle school students.\nㄹ. I was proud of my team yesterday.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄱ, ㄷ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "ㄱ은 복수 주어 the gloves이므로 Was가 아니라 Were, ㄷ은 복수 주어 My cousins이므로 is가 아니라 are여야 하므로 틀렸다. ㄴ은 단수 주어 The bakery+was, ㄹ은 I+was로 옳다. 따라서 틀린 것은 ㄱ, ㄷ.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?\n(a) The firefighters was brave.\n(b) My hometown is a small city.\n(c) Were the cookies in the oven?\n(d) You and Tom was in the same club last year.\n(e) The mirror on the wall are old.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "(a)는 복수 주어이므로 was→were, (d)는 You and Tom이 복수이므로 was→were, (e)는 단수 주어 The mirror이므로 are→is여야 하므로 틀렸다. (b)와 (c)는 옳다. 따라서 틀린 문장은 3개.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nㄱ. Last night, the stars were bright.\nㄴ. The little boy were lost in the mall.\nㄷ. Are these your new sneakers?\nㄹ. The bread and the cheese was on the plate.\nㅁ. I were in the school choir last year.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 복수 주어 the stars+were, ㄷ은 복수 주어 these+Are로 옳다. ㄴ은 단수 주어이므로 were→was, ㄹ은 A and B 복수 주어이므로 was→were, ㅁ은 I의 과거형이므로 were→was여야 한다. 따라서 옳은 문장은 ㄱ, ㄷ의 2개.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "글의 빈칸 (A)~(C)에 들어갈 말이 순서대로 바르게 짝지어진 것은?\nLast weekend, my family (A)____ at a ski resort. The slopes (B)____ full of snow. Now I (C)____ back home, but I miss the mountain.",
+   "choices": [
+    "was - were - am",
+    "were - was - am",
+    "was - was - is",
+    "were - were - was",
+    "was - were - was"
+   ],
+   "answer": 1,
+   "why": "(A)는 Last weekend의 과거이고 my family는 단수 취급이므로 was, (B)는 복수 주어 The slopes의 과거이므로 were, (C)는 Now가 있고 주어가 I이므로 현재형 am이 알맞다. 나머지 선지는 셋 중 하나 이상이 수·시제에 맞지 않는다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 (a)~(e) 중 어법상 틀린 것은?\nThis (a)<u>is</u> my hamster, Coco. Coco (b)<u>was</u> very small last year, but now he (c)<u>is</u> quite big. His cheeks (d)<u>is</u> always full of food. Coco and I (e)<u>are</u> best friends.",
+   "choices": [
+    "(a)",
+    "(b)",
+    "(c)",
+    "(d)",
+    "(e)"
+   ],
+   "answer": 4,
+   "why": "(d)의 주어 His cheeks는 복수이므로 is가 아니라 are여야 한다. (a) This is, (b) last year의 과거 was, (c) now의 현재 is, (e) Coco and I 복수+are는 모두 옳다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 were가 들어갈 수 없는 것은?",
+   "choices": [
+    "The dancers ____ on the stage.",
+    "My sisters ____ in Paris last month.",
+    "____ the tickets expensive?",
+    "You ____ so brave at that time.",
+    "The juice in the bottle ____ cold."
+   ],
+   "answer": 5,
+   "why": "⑤의 주어는 단수인 The juice이므로 was나 is는 가능해도 were는 들어갈 수 없다. ①~④는 주어가 각각 복수(The dancers, My sisters, the tickets)이거나 you이므로 were가 자연스럽게 들어간다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 be동사의 과거형이 나머지 넷과 다른 것은?",
+   "choices": [
+    "The seats ____ empty an hour ago.",
+    "The twins ____ in the garden then.",
+    "Your keys ____ on the sofa last night.",
+    "We ____ at the airport yesterday.",
+    "The salad ____ fresh this morning."
+   ],
+   "answer": 5,
+   "why": "⑤의 주어 The salad는 단수이므로 was가 들어간다. ①~④는 주어가 The seats, The twins, Your keys, We로 모두 복수이므로 were가 들어간다. 따라서 ⑤만 다르다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말이 순서대로 바르게 짝지어진 것은?\nA: ____ you at Mina's birthday party last Saturday?\nB: Yes, I ____. The party ____ great.",
+   "choices": [
+    "Were - was - was",
+    "Were - were - was",
+    "Are - am - is",
+    "Was - was - were",
+    "Were - was - were"
+   ],
+   "answer": 1,
+   "why": "last Saturday의 과거 대화이다. 주어 you의 의문문이므로 Were, 대답의 주어 I에는 was, The party는 단수이므로 was가 맞다. ②는 I were, ③은 시제, ④는 Was you, ⑤는 The party were가 틀렸다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n우리 가족은 지난달에 제주도에 있었다.",
+   "choices": [
+    "My family were in Jeju-do last month.",
+    "My family was in Jeju-do last month.",
+    "My family is in Jeju-do last month.",
+    "My family are in Jeju-do last month.",
+    "My family did in Jeju-do last month."
+   ],
+   "answer": 2,
+   "why": "my family는 단수 취급하고 last month는 과거이므로 was가 맞다. ①·④는 수 일치가 틀렸고, ③은 현재형이라 last month와 맞지 않으며, ⑤의 did는 be동사 자리에 쓸 수 없다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 옳은 것은?",
+   "choices": [
+    "Her hands <u>was</u> dirty.",
+    "The men at the door <u>was</u> tall.",
+    "Math <u>is</u> my favorite subject.",
+    "The women <u>was</u> singers.",
+    "My pajamas <u>was</u> new."
+   ],
+   "answer": 3,
+   "why": "Math는 -s처럼 보이지 않는 단수 명사(과목명)이므로 is가 옳다. ① hands, ② The men, ④ The women, ⑤ pajamas는 모두 복수(취급) 주어이므로 was가 아니라 were여야 한다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "질문과 대답의 짝이 자연스러운 것은?",
+   "choices": [
+    "Q: Were you tired last night? A: Yes, I am.",
+    "Q: Is your brother a cook? A: No, he wasn't.",
+    "Q: Were the buses crowded? A: Yes, they were.",
+    "Q: Was the water cold? A: No, they weren't.",
+    "Q: Are you and Jinsu cousins? A: Yes, you are."
+   ],
+   "answer": 3,
+   "why": "③은 복수 과거 질문에 they were로 답해 시제와 수가 모두 맞다. ①은 과거 질문에 현재 am, ②는 현재 질문에 과거 wasn't, ④는 단수 the water에 they, ⑤는 you and Jinsu로 물었으므로 we are로 답해야 한다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 의문문으로 바꿀 때 빈칸에 알맞은 것은?\nThe players on our team were nervous. → ____ nervous?",
+   "choices": [
+    "Was the players on our team",
+    "Are the players on our team",
+    "Were the players on our team",
+    "Were on our team the players",
+    "Did the players on our team"
+   ],
+   "answer": 3,
+   "why": "be동사 과거 문장의 의문문은 Were+주어 순서로 만든다. 주어는 The players on our team 전체이므로 ③이 맞다. ①은 수 일치, ②는 시제가 틀리고, ④는 어순이 틀리며, ⑤ Did는 일반동사 의문문에 쓴다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "두 문장의 빈칸에 공통으로 알맞은 말을 고르시오.\n· The onion soup ____ too hot at that time.\n· I ____ in the third grade last year.",
+   "choices": [
+    "am",
+    "is",
+    "are",
+    "were",
+    "was"
+   ],
+   "answer": 5,
+   "why": "at that time과 last year 모두 과거이고, 주어가 각각 단수 The onion soup와 I이므로 공통으로 was가 들어간다. am·is는 현재형이고, are·were는 두 주어와 수가 맞지 않는다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 단어들을 모두 사용하여 평서문을 만들 때 네 번째로 오는 단어는?\n(not / the / were / players / ready)",
+   "choices": [
+    "the",
+    "players",
+    "were",
+    "not",
+    "ready"
+   ],
+   "answer": 4,
+   "why": "완성 문장은 The players were not ready.이다. 순서대로 The(1) players(2) were(3) not(4) ready(5)이므로 네 번째 단어는 not이다. be동사의 부정은 be동사 바로 뒤에 not을 둔다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 밑줄 친 (a)~(e) 중 어법상 틀린 것은?\nA: (a)<u>Were</u> you at the club room after school?\nB: No, I (b)<u>wasn't</u>. I (c)<u>was</u> in the library.\nA: Oh, the club members (d)<u>were</u> there. They (e)<u>was</u> busy with the poster.",
+   "choices": [
+    "(a)",
+    "(b)",
+    "(c)",
+    "(d)",
+    "(e)"
+   ],
+   "answer": 5,
+   "why": "(e)의 주어 They는 복수이므로 was가 아니라 were여야 한다. (a) you+Were, (b) I+wasn't, (c) I+was, (d) 복수 the club members+were는 모두 옳다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 순서대로 바르게 짝지어진 것은?\nMy gloves ____ in my backpack this morning, but now they ____ on my hands, and my hands ____ warm.",
+   "choices": [
+    "was - are - are",
+    "were - are - are",
+    "were - were - are",
+    "were - are - is",
+    "was - were - are"
+   ],
+   "answer": 2,
+   "why": "첫 빈칸은 this morning의 과거이고 gloves가 복수이므로 were, 둘째·셋째 빈칸은 now의 현재이고 they와 my hands가 복수이므로 모두 are가 맞다. ①·⑤는 수 일치, ③은 시제, ④는 hands is가 틀렸다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 틀린 부분을 찾아 바르게 고친 것은?\nThe scissors on the desk was sharp yesterday.",
+   "choices": [
+    "scissors → scissor",
+    "was → were",
+    "was → are",
+    "was → is",
+    "sharp → sharply"
+   ],
+   "answer": 2,
+   "why": "scissors는 항상 복수 취급하는 명사이므로 yesterday의 과거형 were로 고쳐야 한다. ①의 scissor는 쓰지 않는 형태이고, ③·④는 yesterday와 시제가 맞지 않으며, ⑤ be동사 뒤에는 형용사 sharp가 와야 한다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 조건에 맞게 영어로 옮긴 것은?\n그들은 어제 박물관에 없었다. (조건: 줄임말을 사용할 것)",
+   "choices": [
+    "They wasn't at the museum yesterday.",
+    "They aren't at the museum yesterday.",
+    "They were not at the museum yesterday.",
+    "They weren't at the museum yesterday.",
+    "They didn't at the museum yesterday."
+   ],
+   "answer": 4,
+   "why": "주어 They의 과거 부정은 were not이고 줄임말 조건이 있으므로 weren't가 맞다. ①은 수 일치가 틀리고, ②는 현재형이라 yesterday와 맞지 않으며, ③은 줄임말 조건 위배, ⑤의 didn't는 be동사 문장에 쓸 수 없다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 are가 들어갈 수 있는 문장의 개수는?\nㄱ. My homework ____ easy today.\nㄴ. Your sunglasses ____ cool.\nㄷ. Tom and Jerry ____ funny.\nㄹ. The cheese ____ on the pizza.\nㅁ. The babies ____ cute.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄴ(sunglasses), ㄷ(A and B), ㅁ(The babies)는 복수 주어라 are가 가능하다. ㄱ의 homework와 ㄹ의 The cheese는 단수 취급 명사이므로 is를 써야 하고 are는 불가하다. 따라서 3개.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 표의 내용과 일치하는 것은?\n[어제와 지금의 위치]\n· Jiho — 어제: at the library / 지금: at the gym\n· Sena and Mia — 어제: at the park / 지금: at home",
+   "choices": [
+    "Jiho was at the gym yesterday.",
+    "Jiho is at the library now.",
+    "Sena and Mia were at home yesterday.",
+    "Jiho were at the library yesterday.",
+    "Sena and Mia are at home now."
+   ],
+   "answer": 5,
+   "why": "표에서 Sena and Mia는 지금 집에 있으므로 복수 현재 are를 쓴 ⑤가 내용·어법 모두 맞다. ①·②·③은 표의 위치와 다르고, ④는 내용은 맞지만 단수 주어 Jiho에 were를 써서 어법이 틀렸다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대답이 나올 수 있는 질문으로 알맞은 것은?\nThey were in my locker.",
+   "choices": [
+    "Where were your books?",
+    "Where was your book?",
+    "Where are your books?",
+    "Where is your locker?",
+    "Was your book in the locker?"
+   ],
+   "answer": 1,
+   "why": "대답의 They were는 복수 주어의 과거이므로 복수·과거로 물은 ①이 알맞다. ②·⑤는 단수(it was)로 답해야 하고, ③은 현재(They are), ④는 It is로 답해야 하므로 어울리지 않는다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분을 줄임말로 바꿔 쓸 수 있는 것의 개수는?\nㄱ. <u>I am</u> not tired.\nㄴ. I <u>am not</u> a coward.\nㄷ. Yes, she <u>is</u>.\nㄹ. <u>They were</u> happy.\nㅁ. He <u>was not</u> alone.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ㄱ의 I am은 I'm으로, ㅁ의 was not은 wasn't로 줄일 수 있어 2개다. ㄴ의 am not은 줄임말이 없고, ㄷ처럼 문장 끝(긍정 대답)의 be동사는 줄이지 못하며, ㄹ의 were는 주어와 붙여 줄이는 형태가 없다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 today를 yesterday로 바꾸어 과거 시제 문장으로 다시 쓰시오.\nThe kids are noisy today.",
+   "answer": "The kids were noisy yesterday.",
+   "why": "yesterday가 있으므로 과거형으로 바꾸고, 주어 The kids가 복수이므로 are의 과거형 were를 쓴다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 빈칸에 공통으로 알맞은 말을 한 단어로 쓰시오.\n· The dishes ____ dirty last night.\n· Why ____ you angry then?",
+   "answer": "were",
+   "why": "last night과 then 모두 과거를 나타내고, 주어가 각각 복수 The dishes와 you이므로 공통으로 were가 들어간다. was는 두 주어 모두와 수가 맞지 않는다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.\nMy feet <u>was</u> very cold last winter.",
+   "answer": "were",
+   "why": "feet은 foot의 불규칙 복수형이므로 복수 주어에 맞는 과거형 were로 고쳐야 한다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.\nThe money in my pocket <u>were</u> wet after the rain yesterday.",
+   "answer": "was",
+   "why": "money는 셀 수 없는 명사로 단수 취급하므로, 과거 문장에서 were가 아니라 was를 써야 한다. 수식어 in my pocket에 이끌려 복수로 착각하지 않도록 한다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 모두 한 번씩 사용하여 우리말에 맞는 문장을 쓰시오.\n그 아기는 어젯밤에 왜 슬펐니? (was / why / the baby / sad / last night)",
+   "answer": "Why was the baby sad last night?",
+   "why": "의문사 Why 뒤에 be동사 과거 was, 주어 the baby, 보어 sad, 시간 표현 last night 순서로 배열한 의문문이다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "줄임말을 사용하여 다음 문장을 부정문으로 바꿔 쓰시오.\nThe tickets were cheap.",
+   "answer": "The tickets weren't cheap.",
+   "why": "be동사 과거의 부정은 were 뒤에 not을 붙이고, 줄임말 조건이 있으므로 were not을 weren't로 줄여 쓴다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "대화의 빈칸에 알맞은 말을 줄임말 한 단어로 쓰시오.\nA: Was Mr. Kim your homeroom teacher last year?\nB: No, he ____. Ms. Choi was my teacher.",
+   "answer": "wasn't",
+   "why": "과거 의문문 Was ~?에 대한 부정 대답이므로 No, he wasn't.가 되어야 한다. 줄임말 한 단어 조건이므로 was not이 아니라 wasn't를 쓴다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장이 같은 뜻이 되도록 빈칸에 알맞은 말을 한 단어로 쓰시오.\nMina and I are not in the same class. = Mina and I ____ in the same class.",
+   "answer": "aren't",
+   "why": "are not의 줄임말은 aren't이다. 한 단어로 써야 하므로 aren't가 정답이며, 주어가 Mina and I로 복수이므로 isn't는 쓸 수 없다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nEveryone in my class (be) quiet during the test yesterday.",
+   "answer": "was",
+   "why": "everyone은 단수 취급하는 대명사이고 yesterday가 있으므로 be동사의 과거 단수형 was를 쓴다. 뜻이 복수처럼 보여도 were를 쓰지 않는 점에 주의한다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 의문문으로 바꿔 쓰시오.\nThe mice were under the sofa.",
+   "answer": "Were the mice under the sofa?",
+   "why": "be동사 문장의 의문문은 be동사를 주어 앞으로 보낸다. mice는 mouse의 복수형이므로 Were the mice ~? 형태가 되고 문장 끝에 물음표를 붙인다.",
+   "no": 200
   }
  ]
 }
