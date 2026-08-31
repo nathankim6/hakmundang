@@ -1,0 +1,2654 @@
+{
+ "id": "m2-04",
+ "grade": "중2",
+ "name": "지각동사",
+ "points": [
+  "see/hear/feel+O+원형/현재분사",
+  "진행 강조 v-ing"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? I saw a cat ____ up the tree.",
+   "choices": [
+    "climbs",
+    "to climb",
+    "climbed",
+    "to climbing",
+    "climb"
+   ],
+   "answer": 5,
+   "why": "지각동사 see의 목적격보어로는 동사원형이나 현재분사를 쓴다. 선택지 중에서는 동사원형 climb만 가능하고, to부정사·3인칭 단수형·과거형은 올 수 없다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? We heard the baby ____ last night.",
+   "choices": [
+    "cries",
+    "cry",
+    "to cry",
+    "cried",
+    "to crying"
+   ],
+   "answer": 2,
+   "why": "hear+목적어+동사원형 형태이므로 cry가 알맞다. 지각동사 뒤에는 to부정사(to cry)나 과거형(cried)을 쓸 수 없다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? I felt something ____ my leg.",
+   "choices": [
+    "touches",
+    "touch",
+    "to touch",
+    "touched",
+    "to touching"
+   ],
+   "answer": 2,
+   "why": "지각동사 feel의 목적격보어 자리이므로 동사원형 touch를 쓴다. to touch, touched는 목적격보어로 쓸 수 없다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? When I opened the door, I saw Mina ____ on the sofa.",
+   "choices": [
+    "sleeps",
+    "to sleep",
+    "sleeping",
+    "slept",
+    "to sleeping"
+   ],
+   "answer": 3,
+   "why": "동작이 진행 중임을 나타내므로 현재분사 sleeping이 알맞다. 동사원형도 가능하지만 선택지에 없고, to sleep·slept는 목적격보어가 될 수 없다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? We watched the boys ____ soccer in the park.",
+   "choices": [
+    "to play",
+    "plays",
+    "playing",
+    "played",
+    "to playing"
+   ],
+   "answer": 3,
+   "why": "watch+목적어+현재분사 형태로 진행 중인 동작을 나타내므로 playing이 알맞다. 동사원형 play도 가능하지만 선택지에 없다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? I heard someone ____ the piano upstairs.",
+   "choices": [
+    "plays",
+    "to play",
+    "playing",
+    "played",
+    "to playing"
+   ],
+   "answer": 3,
+   "why": "지각동사 hear의 목적격보어로 진행 중인 동작을 나타내는 현재분사 playing이 알맞다. to부정사나 3인칭 단수형은 쓸 수 없다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? She saw the man ____ the door.",
+   "choices": [
+    "opens",
+    "opened",
+    "to open",
+    "open",
+    "to opening"
+   ],
+   "answer": 4,
+   "why": "see+목적어+동사원형이므로 open이 알맞다. 지각동사의 목적격보어로 to open이나 opens는 쓸 수 없다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? I felt my heart ____ fast.",
+   "choices": [
+    "beats",
+    "beating",
+    "to beat",
+    "beaten",
+    "to beating"
+   ],
+   "answer": 2,
+   "why": "심장이 뛰고 있는 동작이 진행 중이므로 현재분사 beating이 알맞다. beaten(과거분사)은 '맞은'이라는 수동의 뜻이라 어색하다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Did you hear the phone ____?",
+   "choices": [
+    "rings",
+    "ring",
+    "to ring",
+    "rang",
+    "to ringing"
+   ],
+   "answer": 2,
+   "why": "지각동사 hear 뒤의 목적격보어이므로 동사원형 ring을 쓴다. 조동사 did가 있다고 해서 rang을 쓰면 안 된다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? I saw her ____ into the bookstore.",
+   "choices": [
+    "goes",
+    "go",
+    "to go",
+    "went",
+    "to going"
+   ],
+   "answer": 2,
+   "why": "see+목적어+동사원형이므로 go가 알맞다. 지각동사 뒤에는 to부정사를 쓰지 않는다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? We watched the sun ____ over the sea.",
+   "choices": [
+    "rises",
+    "to rise",
+    "rose",
+    "rise",
+    "to rising"
+   ],
+   "answer": 4,
+   "why": "watch도 지각동사이므로 목적격보어로 동사원형 rise를 쓴다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? I noticed a man ____ in front of the gate.",
+   "choices": [
+    "standing",
+    "stands",
+    "to stand",
+    "stood",
+    "to standing"
+   ],
+   "answer": 1,
+   "why": "notice도 지각동사처럼 쓰여 목적격보어로 현재분사 standing을 쓴다. 서 있는 상태가 진행 중임을 나타낸다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? I heard the rain ____ on the roof.",
+   "choices": [
+    "falls",
+    "falling",
+    "to fall",
+    "fell",
+    "to falling"
+   ],
+   "answer": 2,
+   "why": "비가 내리고 있는 모습이 진행 중이므로 현재분사 falling이 알맞다. to fall이나 fell은 목적격보어가 될 수 없다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? I saw Tom ____ his phone on the bus.",
+   "choices": [
+    "drop",
+    "drops",
+    "to drop",
+    "dropped",
+    "to dropping"
+   ],
+   "answer": 1,
+   "why": "지각동사 see의 목적격보어이므로 동사원형 drop을 쓴다. saw가 과거라고 해서 dropped를 쓰면 안 된다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? I felt the bus ____ suddenly.",
+   "choices": [
+    "stops",
+    "to stop",
+    "stop",
+    "stopped",
+    "to stopping"
+   ],
+   "answer": 3,
+   "why": "feel+목적어+동사원형이므로 stop이 알맞다. 목적격보어 자리에는 시제를 나타내는 형태를 쓰지 않는다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? I heard the wind ____ all night.",
+   "choices": [
+    "blows",
+    "blow",
+    "to blow",
+    "blew",
+    "to blowing"
+   ],
+   "answer": 2,
+   "why": "지각동사 hear 뒤에는 동사원형을 쓰므로 blow가 알맞다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? We watched the girl ____ a picture of the sea.",
+   "choices": [
+    "draw",
+    "draws",
+    "to draw",
+    "drew",
+    "to drawing"
+   ],
+   "answer": 1,
+   "why": "watch+목적어+동사원형이므로 draw가 알맞다. to draw나 drew는 목적격보어로 쓸 수 없다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Look! I can see a dog ____ after the ball.",
+   "choices": [
+    "running",
+    "runs",
+    "to run",
+    "ran",
+    "to running"
+   ],
+   "answer": 1,
+   "why": "Look!이라는 말에서 지금 진행 중인 동작임을 알 수 있으므로 현재분사 running이 알맞다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "어법상 옳은 문장은?",
+   "choices": [
+    "I saw him run in the park.",
+    "I saw him to run in the park.",
+    "I saw him ran in the park.",
+    "I saw him runs in the park.",
+    "I saw him to running in the park."
+   ],
+   "answer": 1,
+   "why": "지각동사 see의 목적격보어는 동사원형이나 현재분사이므로 run이 맞다. to run·ran·runs는 모두 목적격보어가 될 수 없다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "She heard the girls to sing.",
+    "She heard the girls singing.",
+    "She heard the girls sings.",
+    "She heard the girls to singing.",
+    "She heard the girls sang."
+   ],
+   "answer": 2,
+   "why": "hear+목적어+현재분사 형태인 singing이 옳다. 나머지는 to부정사나 시제를 나타내는 형태를 써서 틀렸다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "어법상 틀린 문장은?",
+   "choices": [
+    "I heard her sing a song.",
+    "She watched me to draw a cat.",
+    "I saw the kids dancing.",
+    "We felt the ground shake.",
+    "They heard a dog barking."
+   ],
+   "answer": 2,
+   "why": "지각동사 watch의 목적격보어로 to draw를 쓸 수 없다. draw 또는 drawing으로 고쳐야 한다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은?",
+   "choices": [
+    "I saw him wave at me.",
+    "We heard the birds singing.",
+    "I felt someone to touch my back.",
+    "She felt her face turn red.",
+    "I watched them play badminton."
+   ],
+   "answer": 3,
+   "why": "feel 뒤의 목적격보어는 동사원형이나 현재분사이므로 to touch가 아니라 touch(또는 touching)로 써야 한다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? Yesterday I <u>saw</u> Mina <u>to wait</u> <u>for</u> the bus <u>near</u> the <u>library</u>.",
+   "choices": [
+    "saw",
+    "for",
+    "near",
+    "library",
+    "to wait"
+   ],
+   "answer": 5,
+   "why": "지각동사 see의 목적격보어로 to부정사를 쓸 수 없으므로 to wait를 wait 또는 waiting으로 고쳐야 한다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? I <u>could</u> <u>hear</u> the students <u>to shout</u> <u>in</u> the <u>gym</u>.",
+   "choices": [
+    "could",
+    "hear",
+    "in",
+    "gym",
+    "to shout"
+   ],
+   "answer": 5,
+   "why": "hear의 목적격보어 자리이므로 to shout가 아니라 shout 또는 shouting을 써야 한다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 바르게 짝지어진 것은? I saw the children ____ in the yard. / My mom wants me ____ home early.",
+   "choices": [
+    "to play – to come",
+    "play – come",
+    "play – to come",
+    "playing – come",
+    "to play – coming"
+   ],
+   "answer": 3,
+   "why": "지각동사 see 뒤에는 동사원형 play를, want 뒤에는 to부정사 to come을 쓴다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 바르게 짝지어진 것은? We heard her ____ our names. / She told us ____ quiet.",
+   "choices": [
+    "call – to be",
+    "to call – to be",
+    "call – be",
+    "calling – be",
+    "to call – being"
+   ],
+   "answer": 1,
+   "why": "지각동사 hear 뒤에는 동사원형 call을, tell 뒤에는 to부정사 to be를 쓴다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? 나는 그가 노래하는 것을 들었다.",
+   "choices": [
+    "I heard he sing.",
+    "I heard him to sing.",
+    "I heard him sings.",
+    "I heard to him sing.",
+    "I heard him sing."
+   ],
+   "answer": 5,
+   "why": "hear+목적어(him)+동사원형(sing) 형태가 맞다. 목적어 자리에는 목적격 him을 쓰고 보어에는 to부정사를 쓰지 않는다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? 그녀는 아이들이 놀고 있는 것을 보았다.",
+   "choices": [
+    "She saw the children playing.",
+    "She saw the children to play.",
+    "She saw the children played.",
+    "She saw the children plays.",
+    "She saw the children to playing."
+   ],
+   "answer": 1,
+   "why": "'놀고 있는' 진행 중인 동작이므로 현재분사 playing을 목적격보어로 쓴다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은? A: Where is Mina? B: I saw her ____ into the science room a minute ago.",
+   "choices": [
+    "goes",
+    "went",
+    "to go",
+    "go",
+    "to going"
+   ],
+   "answer": 4,
+   "why": "지각동사 saw의 목적격보어 자리이므로 동사원형 go를 쓴다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "두 빈칸에 공통으로 들어갈 말로 알맞은 것은? I ____ someone knocking on the door. / I ____ the news on the radio yesterday.",
+   "choices": [
+    "saw",
+    "watched",
+    "looked",
+    "felt",
+    "heard"
+   ],
+   "answer": 5,
+   "why": "문 두드리는 소리와 라디오 뉴스는 모두 '소리로 듣는' 것이므로 heard가 공통으로 알맞다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "두 빈칸에 공통으로 들어갈 말로 알맞은 것은? I ____ the ground shaking under my feet. / I ____ sad after the movie.",
+   "choices": [
+    "saw",
+    "heard",
+    "felt",
+    "watched",
+    "noticed"
+   ],
+   "answer": 3,
+   "why": "몸으로 느끼는 것과 감정을 나타내는 것 모두 feel을 쓰므로 felt가 공통으로 알맞다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "두 빈칸에 공통으로 들어갈 말로 알맞은 것은? We ____ the players run onto the field. / We ____ a movie together last night.",
+   "choices": [
+    "heard",
+    "felt",
+    "watched",
+    "listened",
+    "smelled"
+   ],
+   "answer": 3,
+   "why": "'움직이는 것을 지켜보다'와 '영화를 보다'에 모두 쓰이는 말은 watch이다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? I listened to Ms. Park ____ the story to us.",
+   "choices": [
+    "tells",
+    "to tell",
+    "tell",
+    "told",
+    "to telling"
+   ],
+   "answer": 3,
+   "why": "listen to도 지각동사처럼 쓰여 목적격보어로 동사원형 tell을 쓴다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Look at the boy ____ his bike so fast!",
+   "choices": [
+    "riding",
+    "rides",
+    "to ride",
+    "rode",
+    "to riding"
+   ],
+   "answer": 1,
+   "why": "look at도 지각의 뜻을 가지며, 지금 자전거를 타고 있는 중이므로 현재분사 riding이 알맞다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "어법상 옳은 문장을 고르시오.",
+   "choices": [
+    "We felt the house to shake.",
+    "We felt the house shakes.",
+    "We felt the house shake.",
+    "We felt the house shook.",
+    "We felt the house to shaking."
+   ],
+   "answer": 3,
+   "why": "feel+목적어+동사원형이므로 shake가 옳다. to shake, shakes, shook은 모두 목적격보어로 쓸 수 없다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "어법상 틀린 문장을 고르시오.",
+   "choices": [
+    "I saw a plane fly over my house.",
+    "She heard someone laughing loudly.",
+    "They watched him to open the box.",
+    "He felt a bug crawl on his arm.",
+    "I noticed her looking at me."
+   ],
+   "answer": 3,
+   "why": "watch의 목적격보어로 to open을 쓸 수 없다. open 또는 opening으로 고쳐야 한다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? We <u>watched</u> the <u>little</u> girls <u>dances</u> <u>on</u> the <u>stage</u>.",
+   "choices": [
+    "watched",
+    "dances",
+    "little",
+    "on",
+    "stage"
+   ],
+   "answer": 2,
+   "why": "지각동사 watch의 목적격보어 자리에는 동사원형 dance나 현재분사 dancing을 써야 하고 dances는 쓸 수 없다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ⓐ I saw him swim. ⓑ I saw him to swim. ⓒ I saw him swimming. ⓓ I saw him swims.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ⓐ 동사원형과 ⓒ 현재분사는 지각동사의 목적격보어로 옳고, ⓑ to부정사와 ⓓ 3인칭 단수형은 틀리다. 따라서 2개이다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? She heard the kids ____ in the hallway.",
+   "choices": [
+    "shouts",
+    "to shout",
+    "shouted",
+    "shouting",
+    "to shouting"
+   ],
+   "answer": 4,
+   "why": "hear의 목적격보어로 진행 중인 동작을 나타내는 현재분사 shouting이 알맞다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? I ____ the boys jump into the pool.",
+   "choices": [
+    "saw",
+    "wanted",
+    "told",
+    "asked",
+    "expected"
+   ],
+   "answer": 1,
+   "why": "목적격보어로 동사원형 jump가 왔으므로 지각동사 saw만 올 수 있다. want, tell, ask, expect는 목적격보어로 to부정사를 쓴다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? She ____ her baby cry in the next room.",
+   "choices": [
+    "allowed",
+    "heard",
+    "told",
+    "wanted",
+    "asked"
+   ],
+   "answer": 2,
+   "why": "목적격보어가 동사원형 cry이므로 지각동사 heard가 알맞다. 나머지 동사들은 to cry를 써야 한다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Look! I can see some birds ____ over the lake.",
+   "choices": [
+    "flying",
+    "flies",
+    "to fly",
+    "flew",
+    "to flying"
+   ],
+   "answer": 1,
+   "why": "지금 날고 있는 모습이 진행 중이므로 현재분사 flying이 알맞다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? We heard the school bell ____ at nine.",
+   "choices": [
+    "rings",
+    "to ring",
+    "rang",
+    "ring",
+    "to ringing"
+   ],
+   "answer": 4,
+   "why": "지각동사 hear의 목적격보어이므로 동사원형 ring이 알맞다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? I saw smoke ____ from the chimney.",
+   "choices": [
+    "rises",
+    "to rise",
+    "rising",
+    "rose",
+    "to rising"
+   ],
+   "answer": 3,
+   "why": "연기가 올라가고 있는 중이므로 현재분사 rising이 알맞다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장 중 어법에 맞는 것은?",
+   "choices": [
+    "I heard my sister to play the violin.",
+    "I heard my sister plays the violin.",
+    "I heard my sister playing the violin.",
+    "I heard my sister played the violin.",
+    "I heard my sister to playing the violin."
+   ],
+   "answer": 3,
+   "why": "hear+목적어+현재분사 형태인 playing이 옳다. 지각동사의 목적격보어로 to부정사나 시제 표시 형태는 쓸 수 없다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? 우리는 그 남자가 택시를 타는 것을 보았다.",
+   "choices": [
+    "We saw the man to take a taxi.",
+    "We saw the man take a taxi.",
+    "We saw the man takes a taxi.",
+    "We saw the man took a taxi.",
+    "We saw the man to taking a taxi."
+   ],
+   "answer": 2,
+   "why": "see+목적어+동사원형이므로 take가 알맞다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은? A: Why are you smiling? B: I just heard a bird ____ outside my window.",
+   "choices": [
+    "sings",
+    "to sing",
+    "sang",
+    "singing",
+    "to singing"
+   ],
+   "answer": 4,
+   "why": "창밖에서 새가 지금 노래하고 있는 중이므로 현재분사 singing이 알맞다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 바르게 짝지어진 것은? I felt the floor ____ . / I asked him ____ the window.",
+   "choices": [
+    "to move – to close",
+    "move – close",
+    "moving – close",
+    "to move – closing",
+    "move – to close"
+   ],
+   "answer": 5,
+   "why": "지각동사 feel 뒤에는 동사원형 move를, ask 뒤에는 to부정사 to close를 쓴다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 동사원형으로 바꿔 빈칸에 쓰시오. I heard Mina ____ (sing) a song.",
+   "answer": "sing",
+   "why": "지각동사 hear의 목적격보어 자리이므로 동사원형 sing을 쓴다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재분사(-ing)로 바꿔 빈칸에 쓰시오. I saw the boys ____ (swim) in the river.",
+   "answer": "swimming",
+   "why": "진행 중인 동작을 강조할 때는 지각동사의 목적격보어로 현재분사 swimming을 쓴다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. I saw him <u>to cross</u> the street.",
+   "answer": "cross",
+   "alt": [
+    "crossing"
+   ],
+   "why": "지각동사 see의 목적격보어로 to부정사는 쓸 수 없고 동사원형 cross나 현재분사 crossing을 쓴다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. She heard the baby <u>cries</u> in the room.",
+   "answer": "cry",
+   "alt": [
+    "crying"
+   ],
+   "why": "목적격보어 자리에는 3인칭 단수형을 쓸 수 없고 동사원형 cry나 현재분사 crying을 쓴다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 지각동사를 과거형 한 단어로 쓰시오. (소리를 들었다는 뜻) I ____ someone calling my name.",
+   "answer": "heard",
+   "why": "소리를 듣는 것은 hear이고, 과거 시제이므로 heard를 쓴다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장을 한 문장으로 만들 때 빈칸에 알맞은 말을 쓰시오. I saw Tom. + He was washing his car. → I saw Tom ____ his car.",
+   "answer": "washing",
+   "why": "진행 중이던 동작을 나타내므로 지각동사 see의 목적격보어로 현재분사 washing을 쓴다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 동사원형으로 바꿔 빈칸에 쓰시오. We felt the ground ____ (shake).",
+   "answer": "shake",
+   "why": "feel+목적어+동사원형 형태이므로 shake를 쓴다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. They watched the dancers <u>to move</u> on the stage.",
+   "answer": "move",
+   "alt": [
+    "moving"
+   ],
+   "why": "지각동사 watch의 목적격보어로 to부정사는 쓸 수 없다. move 또는 moving이 알맞다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재분사(-ing)로 바꿔 빈칸에 쓰시오. Look! I can see a plane ____ (fly) in the sky.",
+   "answer": "flying",
+   "why": "지금 날고 있는 중이므로 현재분사 flying을 쓴다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 지각동사를 과거형 한 단어로 쓰시오. (몸으로 느꼈다는 뜻) I ____ a bug crawling on my arm.",
+   "answer": "felt",
+   "why": "몸으로 느끼는 것은 feel이고 과거형은 felt이다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 동사원형으로 바꿔 빈칸에 쓰시오. Did you hear the bell ____ (ring)?",
+   "answer": "ring",
+   "why": "지각동사 hear의 목적격보어이므로 동사원형 ring을 쓴다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. I felt my face <u>turned</u> red.",
+   "answer": "turn",
+   "alt": [
+    "turning"
+   ],
+   "why": "feel의 목적격보어 자리에는 과거형을 쓸 수 없고 동사원형 turn이나 현재분사 turning을 쓴다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재분사(-ing)로 바꿔 빈칸에 쓰시오. I heard the rain ____ (fall) on the window.",
+   "answer": "falling",
+   "why": "비가 내리고 있는 동작이 진행 중이므로 현재분사 falling을 쓴다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장을 한 문장으로 만들 때 빈칸에 알맞은 말을 쓰시오. (동사원형으로 쓸 것) I saw Emma. + She got on the bus. → I saw Emma ____ on the bus.",
+   "answer": "get",
+   "why": "지각동사 see의 목적격보어로 동사원형 get을 쓴다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 동사원형으로 바꿔 빈칸에 쓰시오. We watched the sun ____ (set) behind the hill.",
+   "answer": "set",
+   "why": "watch도 지각동사이므로 목적격보어로 동사원형 set을 쓴다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. I noticed a woman <u>to stand</u> at the door.",
+   "answer": "standing",
+   "alt": [
+    "stand"
+   ],
+   "why": "notice의 목적격보어로 to부정사는 쓸 수 없고, 서 있는 상태가 진행 중이므로 standing이 알맞다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 지각동사를 과거형 한 단어로 쓰시오. (눈으로 보았다는 뜻) I ____ two boys running down the hill.",
+   "answer": "saw",
+   "why": "눈으로 보는 것은 see이고 과거형은 saw이다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재분사(-ing)로 바꿔 빈칸에 쓰시오. She heard her friends ____ (talk) about her.",
+   "answer": "talking",
+   "why": "진행 중인 동작을 나타내므로 현재분사 talking을 쓴다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. We heard the wind <u>to blow</u> all night.",
+   "answer": "blow",
+   "alt": [
+    "blowing"
+   ],
+   "why": "hear의 목적격보어로 to부정사를 쓸 수 없으므로 blow 또는 blowing으로 고친다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 동사원형으로 바꿔 빈칸에 쓰시오. I listened to my dad ____ (read) the story.",
+   "answer": "read",
+   "why": "listen to도 지각동사처럼 쓰여 목적격보어로 동사원형 read를 쓴다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? As I walked past the classroom, I heard Mr. Lee ____ a story to the students.",
+   "choices": [
+    "telling",
+    "tells",
+    "to tell",
+    "told",
+    "to telling"
+   ],
+   "answer": 1,
+   "why": "지나가는 순간 진행 중이던 동작이므로 hear의 목적격보어로 현재분사 telling을 쓴다. to부정사나 시제를 나타내는 형태는 쓸 수 없다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? While I was waiting at the station, I saw a little girl ____ her mother's hand.",
+   "choices": [
+    "holds",
+    "hold",
+    "to hold",
+    "held",
+    "to holding"
+   ],
+   "answer": 2,
+   "why": "see+목적어+동사원형 형태이므로 hold가 알맞다. 지각동사의 목적격보어로 to hold나 held는 쓸 수 없다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? As soon as the train started, I felt the floor ____ under my feet.",
+   "choices": [
+    "moves",
+    "move",
+    "to move",
+    "moved",
+    "to moving"
+   ],
+   "answer": 2,
+   "why": "feel의 목적격보어 자리이므로 동사원형 move를 쓴다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? We sat on the beach and watched the waves ____ against the rocks.",
+   "choices": [
+    "hits",
+    "hitting",
+    "to hit",
+    "to hitting",
+    "was hitting"
+   ],
+   "answer": 2,
+   "why": "파도가 계속 부딪치고 있는 모습이므로 현재분사 hitting이 알맞다. 목적격보어 자리에 동사의 시제형(was hitting)은 올 수 없다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? When I entered the kitchen, I noticed my brother ____ something in the pot.",
+   "choices": [
+    "stirs",
+    "to stir",
+    "stirred",
+    "stirring",
+    "to stirring"
+   ],
+   "answer": 4,
+   "why": "부엌에 들어간 순간 진행 중이던 동작이므로 현재분사 stirring이 알맞다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? I heard my name ____ when the winners were announced.",
+   "choices": [
+    "call",
+    "called",
+    "calling",
+    "to call",
+    "calls"
+   ],
+   "answer": 2,
+   "why": "이름은 불리는 대상이므로 목적어와 목적격보어가 수동 관계이다. 따라서 과거분사 called를 쓴다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The loud noise made everyone ____ up from their seats.",
+   "choices": [
+    "to jump",
+    "jump",
+    "jumping",
+    "jumps",
+    "to jumping"
+   ],
+   "answer": 2,
+   "why": "사역동사 make의 목적격보어는 동사원형이므로 jump가 알맞다. 지각동사와 달리 현재분사는 쓰지 않는다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 바르게 짝지어진 것은? My teacher made me ____ the poem aloud. / I heard Mina ____ the same poem yesterday.",
+   "choices": [
+    "to read – to read",
+    "read – to read",
+    "reading – read",
+    "to read – read",
+    "read – read"
+   ],
+   "answer": 5,
+   "why": "사역동사 make와 지각동사 hear 모두 목적격보어로 동사원형을 쓰므로 read – read가 알맞다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 바르게 짝지어진 것은? We saw the firefighters ____ into the building. / They asked us ____ back.",
+   "choices": [
+    "run – to step",
+    "to run – to step",
+    "run – step",
+    "running – step",
+    "to run – stepping"
+   ],
+   "answer": 1,
+   "why": "지각동사 see 뒤에는 동사원형 run을, ask 뒤에는 to부정사 to step을 쓴다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 바르게 짝지어진 것은? I heard the kettle ____ in the kitchen. / My mom let me ____ tea for the guests.",
+   "choices": [
+    "to whistle – to make",
+    "whistle – to make",
+    "whistling – to make",
+    "to whistle – make",
+    "whistle – make"
+   ],
+   "answer": 5,
+   "why": "지각동사 hear와 사역동사 let 모두 목적격보어로 동사원형을 쓴다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법에 맞는 문장을 고르시오.",
+   "choices": [
+    "The children watched the magician to pull a rabbit out of a hat.",
+    "The children watched the magician pulls a rabbit out of a hat.",
+    "The children watched the magician pulled a rabbit out of a hat.",
+    "The children watched the magician to pulling a rabbit out of a hat.",
+    "The children watched the magician pull a rabbit out of a hat."
+   ],
+   "answer": 5,
+   "why": "지각동사 watch의 목적격보어는 동사원형이나 현재분사이므로 pull이 옳다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 바른 문장은?",
+   "choices": [
+    "I could feel the wind to touch my cheeks.",
+    "I could feel the wind touches my cheeks.",
+    "I could feel the wind to touching my cheeks.",
+    "I could feel the wind touched my cheeks.",
+    "I could feel the wind touching my cheeks."
+   ],
+   "answer": 5,
+   "why": "feel+목적어+현재분사 형태인 touching이 옳다. 나머지는 to부정사나 시제형을 써서 틀렸다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장 중 어법에 맞지 않는 것은?",
+   "choices": [
+    "I saw the leaves falling from the trees.",
+    "She heard her brother playing the guitar.",
+    "He watched his sister to ride a bike.",
+    "We felt the room get warmer.",
+    "They noticed a stranger walking toward them."
+   ],
+   "answer": 3,
+   "why": "watch의 목적격보어로 to ride를 쓸 수 없다. ride 또는 riding으로 고쳐야 한다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 어색한 문장은?",
+   "choices": [
+    "My parents heard me practice the violin every evening.",
+    "I saw Jinsu waving at me from the window.",
+    "The coach made us to run around the field.",
+    "We watched the plane take off.",
+    "She felt someone pull her sleeve."
+   ],
+   "answer": 3,
+   "why": "사역동사 make의 목적격보어도 동사원형이므로 to run이 아니라 run을 써야 한다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 바르지 않은 것은?",
+   "choices": [
+    "I heard my name called at the airport.",
+    "We saw the door open slowly.",
+    "He felt his phone vibrating in his pocket.",
+    "I noticed her smiling at me.",
+    "They watched the boys to build a sandcastle."
+   ],
+   "answer": 5,
+   "why": "지각동사 watch 뒤에는 to build를 쓸 수 없고 build 또는 building을 써야 한다. ①은 이름이 불리는 수동 관계라서 과거분사 called가 맞다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? While we <u>were</u> having lunch, we <u>heard</u> someone <u>to knock</u> <u>on</u> the <u>window</u>.",
+   "choices": [
+    "were",
+    "heard",
+    "on",
+    "to knock",
+    "window"
+   ],
+   "answer": 4,
+   "why": "hear의 목적격보어 자리이므로 to knock이 아니라 knock 또는 knocking을 써야 한다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? In the playground, I <u>saw</u> the children <u>played</u> hide-and-seek <u>for</u> <u>almost</u> an <u>hour</u>.",
+   "choices": [
+    "saw",
+    "for",
+    "almost",
+    "played",
+    "hour"
+   ],
+   "answer": 4,
+   "why": "지각동사 see의 목적격보어로 과거형 played는 쓸 수 없고 play 또는 playing을 써야 한다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? My mother <u>watched</u> me <u>to eat</u> the soup <u>with</u> a <u>worried</u> <u>look</u>.",
+   "choices": [
+    "watched",
+    "with",
+    "worried",
+    "look",
+    "to eat"
+   ],
+   "answer": 5,
+   "why": "watch의 목적격보어로 to부정사는 쓸 수 없으므로 eat 또는 eating으로 고쳐야 한다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? The neighbors <u>heard</u> the alarm <u>rings</u> <u>for</u> <u>ten</u> <u>minutes</u>.",
+   "choices": [
+    "rings",
+    "heard",
+    "for",
+    "ten",
+    "minutes"
+   ],
+   "answer": 1,
+   "why": "목적격보어 자리에는 3인칭 단수형을 쓸 수 없으므로 ring 또는 ringing으로 고쳐야 한다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? Everyone <u>saw</u> the runner <u>to fall</u> <u>down</u> <u>near</u> the finish <u>line</u>.",
+   "choices": [
+    "saw",
+    "down",
+    "near",
+    "to fall",
+    "line"
+   ],
+   "answer": 4,
+   "why": "see의 목적격보어로 to fall은 쓸 수 없고 fall 또는 falling을 써야 한다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? 나는 누군가가 계단을 뛰어 올라오고 있는 소리를 들었다.",
+   "choices": [
+    "I heard someone to run up the stairs.",
+    "I heard someone runs up the stairs.",
+    "I heard someone ran up the stairs.",
+    "I heard someone running up the stairs.",
+    "I heard someone to running up the stairs."
+   ],
+   "answer": 4,
+   "why": "'뛰어 올라오고 있는'이라는 진행의 뜻이므로 hear의 목적격보어로 현재분사 running을 쓴다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? 그녀는 남동생이 창문을 깨뜨리는 것을 보았다.",
+   "choices": [
+    "She saw her brother to break the window.",
+    "She saw her brother break the window.",
+    "She saw her brother breaks the window.",
+    "She saw her brother broke the window.",
+    "She saw her brother to breaking the window."
+   ],
+   "answer": 2,
+   "why": "see+목적어+동사원형 형태이므로 break가 알맞다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? 우리는 땅이 흔들리고 있는 것을 느낄 수 있었다.",
+   "choices": [
+    "We could feel the ground shaking.",
+    "We could feel the ground to shake.",
+    "We could feel the ground shook.",
+    "We could feel the ground shakes.",
+    "We could feel the ground to shaking."
+   ],
+   "answer": 1,
+   "why": "'흔들리고 있는'이라는 진행의 뜻이므로 feel의 목적격보어로 현재분사 shaking을 쓴다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? 선생님은 우리가 교실을 청소하게 하셨다.",
+   "choices": [
+    "The teacher made us to clean the classroom.",
+    "The teacher made us cleaning the classroom.",
+    "The teacher made us clean the classroom.",
+    "The teacher made us cleaned the classroom.",
+    "The teacher made us cleans the classroom."
+   ],
+   "answer": 3,
+   "why": "사역동사 make의 목적격보어는 동사원형이므로 clean이 알맞다. 지각동사와 달리 현재분사는 쓰지 않는다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은? A: You look tired. B: I couldn't sleep. I heard my neighbors ____ until midnight.",
+   "choices": [
+    "talks",
+    "to talk",
+    "talked",
+    "to talking",
+    "talking"
+   ],
+   "answer": 5,
+   "why": "밤새 계속되던 진행 중인 동작이므로 현재분사 talking이 알맞다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은? A: How did you find the lost dog? B: I heard it ____ behind the wall.",
+   "choices": [
+    "barks",
+    "to bark",
+    "bark",
+    "barked",
+    "to barking"
+   ],
+   "answer": 3,
+   "why": "hear의 목적격보어이므로 동사원형 bark가 알맞다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은? A: Did you enjoy the concert? B: Yes! I watched the drummer ____ for two hours.",
+   "choices": [
+    "plays",
+    "to play",
+    "play",
+    "played",
+    "to playing"
+   ],
+   "answer": 3,
+   "why": "watch의 목적격보어로 동사원형 play를 쓴다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은? A: What happened at the corner? B: I saw a car ____ into the wall.",
+   "choices": [
+    "crashes",
+    "to crash",
+    "crashed",
+    "to crashing",
+    "crash"
+   ],
+   "answer": 5,
+   "why": "see의 목적격보어이므로 동사원형 crash가 알맞다. saw가 과거라고 해서 crashed를 쓰지 않는다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 빈칸에 공통으로 들어갈 말로 알맞은 것은? I saw her ____ out of the room in a hurry. / We heard the dogs ____ into the yard.",
+   "choices": [
+    "runs",
+    "run",
+    "to run",
+    "ran",
+    "to running"
+   ],
+   "answer": 2,
+   "why": "두 문장 모두 지각동사의 목적격보어 자리이므로 동사원형 run이 공통으로 알맞다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 빈칸에 공통으로 들어갈 말로 알맞은 것은? (눈으로 보다) I ____ smoke rising from the roof. / I ____ a bird building a nest in our tree.",
+   "choices": [
+    "heard",
+    "felt",
+    "listened",
+    "saw",
+    "smelled"
+   ],
+   "answer": 4,
+   "why": "두 문장 모두 눈으로 본 상황이므로 saw가 알맞다. listened는 뒤에 to가 필요하고 나머지는 의미가 맞지 않는다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 빈칸에 공통으로 들어갈 말로 알맞은 것은? The teacher heard the students ____ loudly in the hall. / I saw two boys ____ in the corner of the room.",
+   "choices": [
+    "laughs",
+    "to laugh",
+    "laughed",
+    "laughing",
+    "to laughing"
+   ],
+   "answer": 4,
+   "why": "두 문장 모두 지각동사의 목적격보어로 진행 중인 동작을 나타내므로 현재분사 laughing이 알맞다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ⓐ We heard the choir sing beautifully. ⓑ We heard the choir to sing beautifully. ⓒ We heard the choir singing beautifully. ⓓ We heard the choir sang beautifully. ⓔ We heard the choir sings beautifully.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "지각동사의 목적격보어로 쓸 수 있는 것은 동사원형(ⓐ)과 현재분사(ⓒ)뿐이므로 옳은 문장은 2개이다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ⓐ She made her son wash the dishes. ⓑ She saw her son to wash the dishes. ⓒ She watched her son washing the dishes. ⓓ She let her son to use her phone.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ⓐ 사역동사 make+동사원형과 ⓒ 지각동사 watch+현재분사는 옳다. ⓑ는 to wash, ⓓ는 to use가 잘못되었으므로 옳은 문장은 2개이다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 문장의 개수는? ⓐ I felt someone touch my shoulder. ⓑ I felt someone to touch my shoulder. ⓒ I felt someone touching my shoulder. ⓓ I felt someone touched my shoulder.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ⓑ의 to touch와 ⓓ의 touched는 목적격보어로 쓸 수 없으므로 틀린 문장은 2개이다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 동사의 쓰임이 나머지 넷과 다른 것은?",
+   "choices": [
+    "I saw him <u>enter</u> the room.",
+    "I heard her <u>shout</u> at me.",
+    "We watched them <u>climb</u> the hill.",
+    "She made me <u>wait</u> for an hour.",
+    "I felt the bus <u>stop</u> suddenly."
+   ],
+   "answer": 4,
+   "why": "①②③⑤는 지각동사의 목적격보어로 쓰인 동사원형이고, ④는 사역동사 make의 목적격보어이다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 수 <u>없는</u> 것은? I ____ the children playing in the snow.",
+   "choices": [
+    "saw",
+    "watched",
+    "heard",
+    "made",
+    "noticed"
+   ],
+   "answer": 4,
+   "why": "사역동사 make는 목적격보어로 현재분사를 쓰지 않고 동사원형을 쓰므로 made는 들어갈 수 없다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Everyone in the hall heard the singer's voice ____ louder and louder.",
+   "choices": [
+    "grows",
+    "to grow",
+    "grew",
+    "to growing",
+    "growing"
+   ],
+   "answer": 5,
+   "why": "목소리가 점점 커지고 있는 진행의 뜻이므로 현재분사 growing이 알맞다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? We could hear music ____ from the room next door.",
+   "choices": [
+    "comes",
+    "to come",
+    "came",
+    "to coming",
+    "coming"
+   ],
+   "answer": 5,
+   "why": "옆방에서 음악이 흘러나오고 있는 중이므로 현재분사 coming이 알맞다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? (내가 ~하는 것을 보았다) My father ____ me carry the heavy box into the house.",
+   "choices": [
+    "saw",
+    "wanted",
+    "told",
+    "asked",
+    "allowed"
+   ],
+   "answer": 1,
+   "why": "목적격보어로 동사원형 carry가 왔으므로 지각동사 saw만 가능하다. want, tell, ask, allow는 to carry를 써야 한다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? At the festival I heard the song ____ in Spanish for the first time.",
+   "choices": [
+    "sing",
+    "singing",
+    "to sing",
+    "sings",
+    "sung"
+   ],
+   "answer": 5,
+   "why": "노래는 불리는 대상이므로 목적어와 목적격보어가 수동 관계이다. 따라서 과거분사 sung을 쓴다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 알맞은 문장은?",
+   "choices": [
+    "The audience saw the actor to bow.",
+    "The audience saw the actor bows.",
+    "The audience saw the actor to bowing.",
+    "The audience saw the actor bowing.",
+    "The audience saw the actor bowed."
+   ],
+   "answer": 4,
+   "why": "see+목적어+현재분사 형태인 bowing이 옳다. 나머지는 to부정사나 시제형이라 목적격보어가 될 수 없다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법에 맞지 않는 문장을 고르시오.",
+   "choices": [
+    "I heard the teacher explaining the rule again.",
+    "She saw her friends waiting at the bus stop.",
+    "We felt the temperature drop at night.",
+    "He watched the snow to fall all afternoon.",
+    "They heard the birds singing at dawn."
+   ],
+   "answer": 4,
+   "why": "watch의 목적격보어로 to fall은 쓸 수 없고 fall 또는 falling으로 써야 한다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? During the storm, we <u>heard</u> the windows <u>to shake</u> <u>and</u> the trees <u>bend</u> in the <u>wind</u>.",
+   "choices": [
+    "heard",
+    "and",
+    "to shake",
+    "bend",
+    "wind"
+   ],
+   "answer": 3,
+   "why": "heard의 목적격보어 두 개가 and로 연결되어 있으므로 뒤의 bend처럼 앞도 동사원형 shake를 써야 한다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 바르게 짝지어진 것은? I saw the boy ____ the ball, and then I heard the window ____ .",
+   "choices": [
+    "to kick – to break",
+    "kick – to break",
+    "kick – break",
+    "kicking – to break",
+    "to kick – break"
+   ],
+   "answer": 3,
+   "why": "두 빈칸 모두 지각동사의 목적격보어 자리이므로 동사원형 kick – break가 알맞다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 바르게 짝지어진 것은? The nurse had me ____ up my sleeve. / Then I felt the needle ____ my arm.",
+   "choices": [
+    "to roll – to touch",
+    "roll – touch",
+    "roll – to touch",
+    "rolling – touch",
+    "to roll – touch"
+   ],
+   "answer": 2,
+   "why": "사역동사 have와 지각동사 feel 모두 목적격보어로 동사원형을 쓰므로 roll – touch가 알맞다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은?",
+   "choices": [
+    "We listened to the guide explaining the painting.",
+    "We listened to the guide to explain the painting.",
+    "We listened to the guide explains the painting.",
+    "We listened to the guide to explaining the painting.",
+    "We listened to the guide explained the painting."
+   ],
+   "answer": 1,
+   "why": "listen to도 지각동사처럼 쓰여 목적격보어로 동사원형이나 현재분사를 쓰므로 explaining이 옳다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. As I passed the gym, I heard the students <u>to cheer</u> loudly.",
+   "answer": "cheering",
+   "alt": [
+    "cheer"
+   ],
+   "why": "지각동사 hear의 목적격보어로 to부정사는 쓸 수 없다. 진행 중인 동작이므로 cheering(또는 cheer)이 알맞다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 진행의 뜻을 강조하는 -ing형으로 바꿔 쓰시오. I saw Daniel ____ (wait) for the bus in the rain.",
+   "answer": "waiting",
+   "why": "진행 중인 동작을 강조할 때 지각동사의 목적격보어로 현재분사 waiting을 쓴다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 한 문장으로 만들 때 빈칸에 알맞은 말을 동사원형으로 쓰시오. I heard the door. + It closed with a bang. → I heard the door ____ with a bang.",
+   "answer": "close",
+   "why": "지각동사 hear의 목적격보어 자리이므로 동사원형 close를 쓴다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. I heard my name ____ (call) over the speaker in the station.",
+   "answer": "called",
+   "why": "이름은 불리는 대상이므로 목적어와 목적격보어가 수동 관계이다. 따라서 과거분사 called를 쓴다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. The coach made the players <u>to stretch</u> before the game.",
+   "answer": "stretch",
+   "why": "사역동사 make의 목적격보어는 동사원형이므로 stretch로 고친다. 지각동사와 달리 현재분사는 쓸 수 없다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 쓰시오. (나는 그가 무대 위에서 춤추고 있는 것을 보았다.) I saw him ____ on the stage.",
+   "answer": "dancing",
+   "alt": [
+    "dance"
+   ],
+   "why": "'춤추고 있는'이라는 진행의 뜻이므로 현재분사 dancing을 목적격보어로 쓴다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 동사원형으로 바꿔 쓰시오. We watched the workers ____ (paint) the wall yesterday.",
+   "answer": "paint",
+   "why": "지각동사 watch의 목적격보어이므로 동사원형 paint를 쓴다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 지각동사를 이용해 한 문장으로 바꿔 쓰시오. (완성된 문장으로 쓸 것) I saw it. + The boy ran away.",
+   "answer": "I saw the boy run away.",
+   "alt": [
+    "I saw the boy running away."
+   ],
+   "why": "see+목적어+동사원형 구조로 합친다. 진행을 강조하면 I saw the boy running away.도 가능하다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. I felt the ship <u>rocks</u> on the big waves.",
+   "answer": "rock",
+   "alt": [
+    "rocking"
+   ],
+   "why": "목적격보어 자리에는 3인칭 단수형을 쓸 수 없으므로 rock 또는 rocking으로 고친다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 진행의 뜻을 강조하는 -ing형으로 바꿔 쓰시오. She noticed a cat ____ (sit) on the fence.",
+   "answer": "sitting",
+   "why": "앉아 있는 상태가 계속되고 있으므로 현재분사 sitting을 쓴다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 동사원형으로 바꿔 쓰시오. The nurse had me ____ (open) my mouth wide.",
+   "answer": "open",
+   "why": "사역동사 have의 목적격보어는 동사원형이므로 open을 쓴다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 지각동사를 과거형 한 단어로 쓰시오. (귀로 듣다) Everyone in the building ____ the alarm ringing.",
+   "answer": "heard",
+   "why": "소리를 듣는 것은 hear이고 과거형은 heard이다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. We saw the boys <u>to carry</u> the heavy boxes upstairs.",
+   "answer": "carry",
+   "alt": [
+    "carrying"
+   ],
+   "why": "see의 목적격보어로 to부정사는 쓸 수 없으므로 carry 또는 carrying으로 고친다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 진행의 뜻을 강조하는 문장으로 바꿀 때 빈칸에 알맞은 말을 쓰시오. I saw Mina cross the street. → I saw Mina ____ the street.",
+   "answer": "crossing",
+   "why": "동작이 진행 중임을 강조할 때는 목적격보어로 현재분사 crossing을 쓴다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. In the dark I felt my shoulder ____ (touch) by someone.",
+   "answer": "touched",
+   "why": "by someone이 있으므로 어깨는 만져지는 대상, 즉 수동 관계이다. 따라서 과거분사 touched를 쓴다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 동사원형으로 바꿔 쓰시오. I heard the baby ____ (laugh) for the first time yesterday.",
+   "answer": "laugh",
+   "why": "지각동사 hear의 목적격보어이므로 동사원형 laugh를 쓴다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. Last night I heard someone <u>played</u> the drums next door.",
+   "answer": "playing",
+   "alt": [
+    "play"
+   ],
+   "why": "목적격보어 자리에 과거형은 올 수 없다. 진행 중인 동작이므로 playing(또는 play)이 알맞다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 부분을 바르게 고쳐 문장 전체를 다시 쓰시오. We watched the sun to set behind the mountain.",
+   "answer": "We watched the sun set behind the mountain.",
+   "alt": [
+    "We watched the sun setting behind the mountain."
+   ],
+   "why": "지각동사 watch의 목적격보어로 to부정사를 쓸 수 없으므로 set 또는 setting으로 고친다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 진행의 뜻을 강조하는 -ing형으로 바꿔 쓰시오. As we walked in the woods, we heard a stream ____ (run) nearby.",
+   "answer": "running",
+   "why": "시냇물이 흐르고 있는 중이므로 현재분사 running을 쓴다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 지각동사를 과거형 한 단어로 쓰시오. (몸으로 느끼다) He ____ the floor shaking during the earthquake.",
+   "answer": "felt",
+   "why": "몸으로 느끼는 것은 feel이고 과거형은 felt이다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The thief was seen ____ out of the back door around midnight.",
+   "choices": [
+    "run",
+    "to running",
+    "runs",
+    "ran",
+    "running"
+   ],
+   "answer": 5,
+   "why": "지각동사의 수동태에서는 목적격보어로 to부정사나 현재분사를 쓴다. 동사원형 run은 쓸 수 없고 선택지 중에서는 running만 가능하다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? He was heard ____ the same song again and again.",
+   "choices": [
+    "to sing",
+    "sing",
+    "sings",
+    "sang",
+    "to singing"
+   ],
+   "answer": 1,
+   "why": "능동문의 목적격보어였던 동사원형은 수동태에서 to부정사로 바뀌므로 to sing이 알맞다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 수동태로 바르게 바꾼 것은? Many people saw the boy climb over the fence.",
+   "choices": [
+    "The boy was seen climb over the fence by many people.",
+    "The boy was seen climbed over the fence by many people.",
+    "The boy saw to climb over the fence by many people.",
+    "The boy was seen to climb over the fence by many people.",
+    "The boy was seeing to climb over the fence by many people."
+   ],
+   "answer": 4,
+   "why": "지각동사의 수동태에서는 목적격보어인 동사원형이 to부정사로 바뀌므로 was seen to climb이 알맞다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것끼리 바르게 짝지어진 것은? ㄱ. I saw her enter the building. ㄴ. I saw her to enter the building. ㄷ. She was seen to enter the building. ㄹ. She was seen enter the building. ㅁ. I saw her entering the building.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ, ㅁ",
+    "ㄴ, ㄹ",
+    "ㄱ, ㄹ, ㅁ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "능동문에서는 동사원형(ㄱ)과 현재분사(ㅁ)가, 수동태에서는 to부정사(ㄷ)가 쓰인다. ㄴ은 능동문에 to부정사를, ㄹ은 수동태에 동사원형을 써서 틀렸다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? She felt her hand ____ by someone in the crowded subway.",
+   "choices": [
+    "grab",
+    "grabbed",
+    "grabbing",
+    "to grab",
+    "grabs"
+   ],
+   "answer": 2,
+   "why": "by someone이 있으므로 손은 잡히는 대상, 즉 수동 관계이다. 따라서 과거분사 grabbed를 쓴다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? We saw the old fence ____ down by the storm last night.",
+   "choices": [
+    "knock",
+    "knocking",
+    "to knock",
+    "knocked",
+    "knocks"
+   ],
+   "answer": 4,
+   "why": "울타리는 폭풍에 의해 쓰러뜨려진 대상이고 by the storm이 있으므로 수동 관계이다. 따라서 과거분사 knocked를 쓴다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은? Last night I <u>was</u> alone at home. Suddenly I <u>heard</u> someone <u>to walk</u> upstairs. I <u>felt</u> my heart <u>beating</u> fast.",
+   "choices": [
+    "was",
+    "heard",
+    "to walk",
+    "felt",
+    "beating"
+   ],
+   "answer": 3,
+   "why": "지각동사 hear의 목적격보어로 to부정사는 쓸 수 없으므로 walk 또는 walking으로 고쳐야 한다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은? The man <u>was seen</u> <u>enter</u> the bank at nine, and he <u>was heard</u> <u>to shout</u> at the guard <u>before</u> he ran away.",
+   "choices": [
+    "enter",
+    "was seen",
+    "was heard",
+    "to shout",
+    "before"
+   ],
+   "answer": 1,
+   "why": "지각동사의 수동태에서는 목적격보어를 to부정사로 써야 하므로 enter가 아니라 to enter로 고쳐야 한다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ⓐ I saw the girl dance on the stage. ⓑ The girl was seen dance on the stage. ⓒ I heard him call my name. ⓓ He was heard to call my name. ⓔ I felt the wind blowing through the window.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "ⓑ만 수동태인데 동사원형을 써서 틀렸고(to dance나 dancing이 맞다) 나머지 네 문장은 모두 옳다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 문장의 개수는? ⓐ We watched the boat to move slowly. ⓑ We watched the boat moving slowly. ⓒ I felt the boat rock on the waves. ⓓ I noticed the boat to move away.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "지각동사의 목적격보어로 to부정사를 쓴 ⓐ와 ⓓ가 틀렸으므로 틀린 문장은 2개이다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? 그는 자신의 이름이 불리는 것을 듣고 뒤를 돌아보았다.",
+   "choices": [
+    "He heard his name call and looked back.",
+    "He heard his name calling and looked back.",
+    "He heard his name to call and looked back.",
+    "He heard his name called and looked back.",
+    "He heard to call his name and looked back."
+   ],
+   "answer": 4,
+   "why": "이름은 불리는 대상이므로 목적어와 목적격보어가 수동 관계이다. 따라서 과거분사 called를 쓴다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? 그녀가 그 방에서 나오는 것이 목격되었다.",
+   "choices": [
+    "She was seen to come out of the room.",
+    "She was seen come out of the room.",
+    "She saw to come out of the room.",
+    "She was seen came out of the room.",
+    "She was seeing to come out of the room."
+   ],
+   "answer": 1,
+   "why": "지각동사의 수동태이므로 목적격보어를 to부정사로 바꾸어 was seen to come으로 쓴다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 바르게 짝지어진 것은? We saw the man ____ the wall. / The man was seen ____ the wall.",
+   "choices": [
+    "to paint – paint",
+    "paint – paint",
+    "painting – paint",
+    "paint – to paint",
+    "to paint – to paint"
+   ],
+   "answer": 4,
+   "why": "능동문에서는 동사원형 paint를, 수동태에서는 to부정사 to paint를 쓴다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 바르게 짝지어진 것은? In the dark I felt someone ____ my shoulder. / At the same moment I felt my shoulder ____ .",
+   "choices": [
+    "touch – touched",
+    "to touch – touching",
+    "touch – touching",
+    "touching – touch",
+    "to touch – touched"
+   ],
+   "answer": 1,
+   "why": "앞 문장은 someone이 만지는 능동 관계이므로 동사원형 touch를, 뒤 문장은 어깨가 만져지는 수동 관계이므로 과거분사 touched를 쓴다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 고르시오.",
+   "choices": [
+    "The boy was seen steal the apple.",
+    "The boy was seen steals the apple.",
+    "The boy was seen stealing the apple.",
+    "The boy was seen to stealing the apple.",
+    "The boy saw to steal the apple."
+   ],
+   "answer": 3,
+   "why": "지각동사의 수동태에서 목적격보어는 to부정사나 현재분사로 쓰므로 stealing이 옳다. 동사원형 steal은 쓸 수 없다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은?",
+   "choices": [
+    "I saw the boys chased by a big dog.",
+    "She heard her name whispered behind her.",
+    "We felt the ground shaking under our feet.",
+    "They watched the old tree cut down by the workers.",
+    "He heard the door to lock from the outside."
+   ],
+   "answer": 5,
+   "why": "지각동사 hear의 목적격보어로 to부정사를 쓸 수 없다. ①②④는 목적어와 보어가 수동 관계라서 과거분사를 쓴 옳은 문장이다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분을 어법에 맞게 고친 것은? The children were seen <u>play</u> in the yard.",
+   "choices": [
+    "played",
+    "plays",
+    "to playing",
+    "have played",
+    "to play"
+   ],
+   "answer": 5,
+   "why": "지각동사의 수동태에서는 목적격보어인 동사원형이 to부정사로 바뀌므로 to play가 알맞다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 -ing의 쓰임이 나머지 넷과 다른 것은?",
+   "choices": [
+    "He was <u>running</u> along the river with his dog.",
+    "I saw a boy <u>running</u> toward me.",
+    "She heard someone <u>knocking</u> at the door.",
+    "We watched the girls <u>dancing</u> on the stage.",
+    "I noticed my dog <u>digging</u> in the garden."
+   ],
+   "answer": 1,
+   "why": "②③④⑤는 지각동사의 목적격보어로 쓰인 현재분사이고, ①은 과거진행형(be동사+-ing)을 만드는 -ing이다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 틀린 것끼리 바르게 짝지어진 것은? ㄱ. I saw her cross the road. ㄴ. I saw her to cross the road. ㄷ. She was seen crossing the road. ㄹ. She was seen cross the road. ㅁ. I saw her crossing the road.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ",
+    "ㄹ, ㅁ"
+   ],
+   "answer": 3,
+   "why": "ㄴ은 능동문의 목적격보어로 to부정사를 썼고, ㄹ은 수동태에서 동사원형을 써서 틀렸다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은? A: How do you know he already left? B: I saw him ____ the building with his suitcase.",
+   "choices": [
+    "leave",
+    "leaves",
+    "to leave",
+    "left",
+    "to leaving"
+   ],
+   "answer": 1,
+   "why": "지각동사 see의 목적격보어이므로 동사원형 leave가 알맞다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? In the dark hallway I felt something soft ____ against my leg.",
+   "choices": [
+    "brushing",
+    "brushes",
+    "to brush",
+    "brushed",
+    "to brushing"
+   ],
+   "answer": 1,
+   "why": "다리에 무언가가 스치고 있는 진행의 뜻이므로 현재분사 brushing이 알맞다. 뒤에 by가 없으므로 수동의 brushed는 쓸 수 없다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? When the phone rang, I could hear my sister ____ in the shower.",
+   "choices": [
+    "sings",
+    "to sing",
+    "sang",
+    "singing",
+    "to singing"
+   ],
+   "answer": 4,
+   "why": "전화가 울린 그 순간 진행 중이던 동작이므로 현재분사 singing이 알맞다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The two students were seen ____ the classroom during the test.",
+   "choices": [
+    "leave",
+    "left",
+    "leaves",
+    "to leave",
+    "to leaving"
+   ],
+   "answer": 4,
+   "why": "지각동사의 수동태이므로 목적격보어를 to부정사 to leave로 쓴다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 바르게 짝지어진 것은? My mom had me ____ the dishes while she watched my brother ____ his homework.",
+   "choices": [
+    "wash – do",
+    "to wash – to do",
+    "wash – to do",
+    "washing – do",
+    "to wash – do"
+   ],
+   "answer": 1,
+   "why": "사역동사 have와 지각동사 watch 모두 목적격보어로 동사원형을 쓰므로 wash – do가 알맞다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은? When the concert <u>began</u>, we saw the singer <u>walk</u> onto the stage. Soon we heard the crowd <u>to shout</u> her name, and I felt my heart <u>beat</u> <u>faster</u>.",
+   "choices": [
+    "began",
+    "to shout",
+    "walk",
+    "beat",
+    "faster"
+   ],
+   "answer": 2,
+   "why": "hear의 목적격보어 자리이므로 to shout가 아니라 shout 또는 shouting을 써야 한다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ⓐ The teacher let us leave early. ⓑ The teacher made us to clean the room. ⓒ We heard the bell ring. ⓓ We saw the bus leaving. ⓔ I felt someone to push me.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ⓐ ⓒ ⓓ가 옳다. ⓑ는 사역동사 make 뒤에, ⓔ는 지각동사 feel 뒤에 to부정사를 써서 틀렸다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 동사원형의 쓰임이 나머지 넷과 다른 것은?",
+   "choices": [
+    "I heard the wind <u>shake</u> the window.",
+    "We saw the train <u>arrive</u> at the station.",
+    "She felt the rain <u>touch</u> her face.",
+    "They watched the man <u>climb</u> the ladder.",
+    "My dad let me <u>use</u> his new camera."
+   ],
+   "answer": 5,
+   "why": "①②③④는 지각동사의 목적격보어로 쓰인 동사원형이고, ⑤는 사역동사 let의 목적격보어이다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 수 <u>없는</u> 것은? I ____ him walking along the beach yesterday.",
+   "choices": [
+    "saw",
+    "watched",
+    "let",
+    "noticed",
+    "heard"
+   ],
+   "answer": 3,
+   "why": "사역동사 let은 목적격보어로 현재분사를 쓸 수 없고 동사원형만 쓴다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은? A: Why are the police at the school? B: A stranger ____ climbing over the fence last night.",
+   "choices": [
+    "saw",
+    "was seeing",
+    "has seen",
+    "saw to",
+    "was seen"
+   ],
+   "answer": 5,
+   "why": "낯선 사람이 목격된 것이므로 수동태 was seen이 알맞고, 뒤에 현재분사 climbing이 목적격보어로 남아 있다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것은? People heard the man shout at the driver. = The man ____ at the driver.",
+   "choices": [
+    "was heard shout",
+    "heard to shout",
+    "was heard to shout",
+    "was heard shouted",
+    "was hearing to shout"
+   ],
+   "answer": 3,
+   "why": "지각동사의 수동태에서는 동사원형 목적격보어가 to부정사로 바뀌므로 was heard to shout가 알맞다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? We heard the piano ____ by a little girl in the next room.",
+   "choices": [
+    "play",
+    "playing",
+    "to play",
+    "plays",
+    "played"
+   ],
+   "answer": 5,
+   "why": "by a little girl이 있으므로 피아노는 연주되는 대상, 즉 수동 관계이다. 따라서 과거분사 played를 쓴다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "The girl was heard sing a song loudly.",
+    "She was heard to say something strange.",
+    "I felt my phone vibrated in my pocket.",
+    "We saw the children to cross the street.",
+    "They watched him to fix the bike."
+   ],
+   "answer": 2,
+   "why": "지각동사의 수동태에서 목적격보어는 to부정사이므로 was heard to say가 옳다. ①은 to sing, ③은 vibrating, ④는 cross(또는 crossing), ⑤는 fix(또는 fixing)로 고쳐야 한다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것끼리 바르게 짝지어진 것은? ㄱ. I heard my name called. ㄴ. I heard my name call. ㄷ. I saw the boy carried the box. ㄹ. I saw the box carried by the boy.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄹ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 3,
+   "why": "이름과 상자는 각각 불리고 옮겨지는 대상이므로 과거분사를 쓴 ㄱ, ㄹ이 옳다. ㄴ은 이름이 스스로 부를 수 없어 틀리고, ㄷ은 목적격보어에 과거형을 써서 틀렸다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Standing at the window, she watched the snow ____ on the empty street.",
+   "choices": [
+    "falls",
+    "to fall",
+    "falling",
+    "fell",
+    "to falling"
+   ],
+   "answer": 3,
+   "why": "창가에 서서 바라보는 동안 진행 중인 동작이므로 현재분사 falling이 알맞다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은? I <u>was walking</u> home when I <u>heard</u> a strange sound. I turned around and saw a small cat <u>to follow</u> me. I <u>felt</u> its tail <u>touching</u> my leg.",
+   "choices": [
+    "was walking",
+    "heard",
+    "felt",
+    "to follow",
+    "touching"
+   ],
+   "answer": 4,
+   "why": "see의 목적격보어로 to부정사는 쓸 수 없으므로 following 또는 follow로 고쳐야 한다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 문장의 개수는? ⓐ He was heard to leave the house. ⓑ He was heard leaving the house. ⓒ He was heard leave the house. ⓓ We heard him leave the house.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 2,
+   "why": "수동태에서는 동사원형을 쓸 수 없으므로 ⓒ만 틀렸다. 나머지는 to부정사·현재분사·능동문의 동사원형으로 모두 옳다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The passengers felt the plane ____ suddenly during the storm.",
+   "choices": [
+    "drop",
+    "drops",
+    "to drop",
+    "dropped",
+    "to dropping"
+   ],
+   "answer": 1,
+   "why": "feel의 목적격보어이므로 동사원형 drop이 알맞다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? She saw her bike ____ away by a stranger this morning.",
+   "choices": [
+    "take",
+    "taking",
+    "to take",
+    "took",
+    "taken"
+   ],
+   "answer": 5,
+   "why": "자전거는 가져가지는 대상이므로 수동 관계이다. 따라서 과거분사 taken을 쓴다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 틀린 것은?",
+   "choices": [
+    "We saw the flag waving in the wind.",
+    "They felt the building to move during the earthquake.",
+    "I heard the news announced on the radio.",
+    "He was seen to run out of the store.",
+    "She watched her son ride a bike for the first time."
+   ],
+   "answer": 2,
+   "why": "feel의 목적격보어로 to move는 쓸 수 없고 move 또는 moving을 써야 한다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? 나는 누군가가 내 자전거를 고치고 있는 것을 보았다.",
+   "choices": [
+    "I saw someone fixes my bike.",
+    "I saw someone to fix my bike.",
+    "I saw my bike fixing by someone.",
+    "I saw someone fixing my bike.",
+    "I saw someone fixed my bike."
+   ],
+   "answer": 4,
+   "why": "'고치고 있는' 진행의 뜻이므로 현재분사 fixing을 목적격보어로 쓴다. ①의 3인칭 단수형, ②의 to부정사, ⑤의 과거형은 목적격보어로 쓸 수 없고, ③은 자전거가 스스로 고치는 뜻이 되어 틀리다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은? On the first day of camp, we <u>heard</u> our names <u>called</u> one by one. Then the teacher <u>made</u> us <u>to carry</u> our bags <u>to</u> the tents.",
+   "choices": [
+    "to carry",
+    "heard",
+    "called",
+    "made",
+    "to"
+   ],
+   "answer": 1,
+   "why": "사역동사 make의 목적격보어는 동사원형이므로 to carry가 아니라 carry를 써야 한다. 이름은 불리는 대상이므로 called는 옳다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것끼리 바르게 짝지어진 것은? ㄱ. I felt someone watching me. ㄴ. I felt someone watches me. ㄷ. I was watched by someone. ㄹ. I felt someone to watch me.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 feel+목적어+현재분사, ㄷ은 일반 수동태로 옳다. ㄴ의 3인칭 단수형과 ㄹ의 to부정사는 목적격보어로 쓸 수 없다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은? A: Did anyone notice the accident? B: Yes. Some students heard the glass ____ and ran outside.",
+   "choices": [
+    "breaks",
+    "to break",
+    "broke",
+    "to breaking",
+    "break"
+   ],
+   "answer": 5,
+   "why": "hear의 목적격보어이므로 동사원형 break가 알맞다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "두 빈칸에 공통으로 들어갈 말로 알맞은 것은? He was seen ____ enter the empty house. / She was heard ____ cry in her room.",
+   "choices": [
+    "for",
+    "to",
+    "of",
+    "with",
+    "at"
+   ],
+   "answer": 2,
+   "why": "지각동사의 수동태에서는 목적격보어인 동사원형 앞에 to를 붙여 to부정사로 만든다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분을 to부정사로 고쳐야 하는 문장은?",
+   "choices": [
+    "I saw him <u>enter</u> the shop.",
+    "He was seen <u>enter</u> the shop.",
+    "We heard her <u>sing</u> a song.",
+    "They watched me <u>draw</u> a picture.",
+    "She felt the wind <u>blow</u> softly."
+   ],
+   "answer": 2,
+   "why": "②는 수동태이므로 목적격보어를 to enter로 바꿔야 한다. 나머지는 능동문이라 동사원형을 그대로 쓴다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ⓐ I saw the window broken by the ball. ⓑ I saw the ball break the window. ⓒ I saw the window break by the ball. ⓓ The window was seen to break.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 4,
+   "why": "ⓐ는 창문이 깨지는 수동 관계, ⓑ는 공이 깨뜨리는 능동 관계, ⓓ는 수동태의 to부정사로 모두 옳다. ⓒ는 by가 있어 수동 관계이므로 broken을 써야 한다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 수동태로 바꿔 쓰시오. (by them은 생략할 것) They saw the boy climb the wall.",
+   "answer": "The boy was seen to climb the wall.",
+   "why": "지각동사의 수동태에서는 목적격보어인 동사원형이 to부정사로 바뀐다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 수동태로 바꿔 쓰시오. (by us는 생략할 것) We heard her sing an old song.",
+   "answer": "She was heard to sing an old song.",
+   "why": "목적어 her가 주어 She가 되고, 목적격보어 sing은 to sing으로 바뀐다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 People을 주어로 하는 능동태 문장으로 바꿔 쓰시오. The man was seen to enter the store.",
+   "answer": "People saw the man enter the store.",
+   "alt": [
+    "People saw the man entering the store."
+   ],
+   "why": "수동태의 to부정사는 능동태로 바뀔 때 다시 동사원형이 된다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. I saw the letter ____ (write) in red ink.",
+   "answer": "written",
+   "why": "편지는 쓰이는 대상이므로 목적어와 목적격보어가 수동 관계이다. 따라서 과거분사 written을 쓴다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. The girl was heard ____ (shout) for help.",
+   "answer": "to shout",
+   "alt": [
+    "shouting"
+   ],
+   "why": "지각동사의 수동태이므로 목적격보어를 to부정사 to shout로 쓴다. 진행을 강조하면 shouting도 가능하다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. The children were seen <u>play</u> in the yard.",
+   "answer": "to play",
+   "alt": [
+    "playing"
+   ],
+   "why": "수동태에서는 목적격보어로 동사원형을 쓸 수 없으므로 to play(또는 playing)로 고친다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 부분을 고쳐 문장 전체를 다시 쓰시오. He was heard leave the house at dawn.",
+   "answer": "He was heard to leave the house at dawn.",
+   "alt": [
+    "He was heard leaving the house at dawn."
+   ],
+   "why": "지각동사의 수동태에서 목적격보어는 동사원형이 아니라 to부정사로 쓴다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 한 단어로 쓰시오. (나는 내 이름이 불리는 것을 들었다.) I heard my name ____ .",
+   "answer": "called",
+   "why": "이름은 불리는 대상이므로 수동 관계이다. 따라서 목적격보어로 과거분사 called를 쓴다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. I felt my bag ____ (pull) from behind by someone.",
+   "answer": "pulled",
+   "why": "by someone이 있으므로 가방은 당겨지는 대상이다. 수동 관계이므로 과거분사 pulled를 쓴다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 진행 중인 동작을 강조하는 문장으로 바꿔 문장 전체를 다시 쓰시오. I saw the dog run into the yard.",
+   "answer": "I saw the dog running into the yard.",
+   "why": "진행 중인 동작을 강조할 때는 목적격보어를 현재분사로 바꾼다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. We felt the whole house <u>to shake</u> for a few seconds.",
+   "answer": "shake",
+   "alt": [
+    "shaking"
+   ],
+   "why": "지각동사 feel의 목적격보어로 to부정사는 쓸 수 없으므로 shake 또는 shaking으로 고친다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장을 한 문장으로 만들 때 빈칸에 알맞은 말을 쓰시오. I watched them. + They were building a snowman. → I watched them ____ a snowman.",
+   "answer": "building",
+   "why": "진행 중이던 동작이므로 목적격보어로 현재분사 building을 쓴다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. She heard the door ____ (lock) from the outside by her brother.",
+   "answer": "locked",
+   "why": "문은 잠기는 대상이고 by her brother가 있으므로 수동 관계이다. 따라서 과거분사 locked를 쓴다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 수동태로 바꿔 쓰시오. (by everyone은 생략할 것) Everyone saw the two cars crash.",
+   "answer": "The two cars were seen to crash.",
+   "alt": [
+    "The two cars were seen crashing."
+   ],
+   "why": "목적어 the two cars가 주어가 되고 목적격보어 crash는 to crash로 바뀐다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. I saw the boy <u>carried</u> the box into the room.",
+   "answer": "carry",
+   "alt": [
+    "carrying"
+   ],
+   "why": "소년이 상자를 옮기는 능동 관계이므로 동사원형 carry나 현재분사 carrying을 써야 한다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 괄호 안의 동사를 이용해 빈칸을 완성하시오. (그가 벽을 넘어가는 것이 목격되었다.) He ____ over the wall. (see, climb)",
+   "answer": "was seen to climb",
+   "alt": [
+    "was seen climbing"
+   ],
+   "why": "지각동사의 수동태이므로 was seen 뒤에 목적격보어를 to부정사로 쓴다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. In the museum we saw many old coins ____ (display) in glass cases.",
+   "answer": "displayed",
+   "why": "동전은 전시되는 대상이므로 수동 관계이다. 따라서 과거분사 displayed를 쓴다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 부분을 고쳐 문장 전체를 다시 쓰시오. The teacher made us to write our names on the paper.",
+   "answer": "The teacher made us write our names on the paper.",
+   "why": "사역동사 make의 목적격보어는 동사원형이므로 to write를 write로 고친다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 진행의 뜻을 강조하는 -ing형으로 바꿔 쓰시오. I heard the students ____ (argue) in the hallway during the break.",
+   "answer": "arguing",
+   "why": "쉬는 시간 내내 진행 중이던 동작이므로 현재분사 arguing을 쓴다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 수동태로 바꿔 쓰시오. (by the neighbors를 문장 끝에 쓸 것) The neighbors heard the man shout late at night.",
+   "answer": "The man was heard to shout late at night by the neighbors.",
+   "why": "지각동사의 수동태에서 목적격보어 shout는 to shout로 바뀐다.",
+   "no": 200
+  }
+ ]
+}

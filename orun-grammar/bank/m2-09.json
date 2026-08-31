@@ -1,0 +1,2619 @@
+{
+ "id": "m2-09",
+ "grade": "중2",
+ "name": "의문사+to부정사",
+ "points": [
+  "what/how/when/where+to-v",
+  "=의문사+S+should+V",
+  "know/decide/learn의 목적어"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nTell me ____ to go. (어디로 갈지)",
+   "choices": [
+    "what",
+    "when",
+    "where",
+    "why",
+    "how"
+   ],
+   "answer": 3,
+   "why": "'어디로 ~할지'는 where+to부정사. why는 to부정사와 함께 쓰지 않는다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nI know ____ to use this app. (어떻게 사용하는지)",
+   "choices": [
+    "who",
+    "when",
+    "where",
+    "how",
+    "why"
+   ],
+   "answer": 4,
+   "why": "'~하는 방법'은 how+to부정사. 나머지는 우리말 뜻과 맞지 않는다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nShe didn't decide ____ to buy. (무엇을 살지)",
+   "choices": [
+    "when",
+    "how",
+    "where",
+    "what",
+    "why"
+   ],
+   "answer": 4,
+   "why": "buy의 목적어가 빠져 있으므로 목적어 역할을 하는 what이 알맞다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nWe must decide ____ to meet. (언제 만날지)",
+   "choices": [
+    "what",
+    "when",
+    "which",
+    "how",
+    "why"
+   ],
+   "answer": 2,
+   "why": "'언제 ~할지'는 when+to부정사. meet은 목적어 없이 쓸 수 있으므로 what은 뜻이 맞지 않는다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nPlease show me ____ to open this box. (어떻게 여는지)",
+   "choices": [
+    "how",
+    "when",
+    "what",
+    "why",
+    "where"
+   ],
+   "answer": 1,
+   "why": "방법을 물으므로 how+to부정사가 알맞다. open의 목적어(this box)가 이미 있어 what은 쓸 수 없다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nI'm not sure ____ to sit. (어디에 앉을지)",
+   "choices": [
+    "how",
+    "what",
+    "when",
+    "why",
+    "where"
+   ],
+   "answer": 5,
+   "why": "장소를 나타내므로 where+to부정사. sit은 목적어를 받지 않아 what은 불가하다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nHe asked me ____ to call. (누구에게 전화할지)",
+   "choices": [
+    "when",
+    "what",
+    "who",
+    "where",
+    "how"
+   ],
+   "answer": 3,
+   "why": "'누구를/누구에게 ~할지'는 who(m)+to부정사가 알맞다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nDo you know ____ to fix the bike? (어떻게 고치는지)",
+   "choices": [
+    "what",
+    "how",
+    "when",
+    "where",
+    "who"
+   ],
+   "answer": 2,
+   "why": "방법을 뜻하므로 how. fix의 목적어(the bike)가 있으므로 what은 쓸 수 없다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nLet's decide ____ to eat for lunch. (무엇을 먹을지)",
+   "choices": [
+    "how",
+    "when",
+    "where",
+    "why",
+    "what"
+   ],
+   "answer": 5,
+   "why": "eat의 목적어가 필요하므로 what+to부정사가 알맞다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nI forgot ____ to put my key. (어디에 두어야 할지)",
+   "choices": [
+    "what",
+    "how",
+    "when",
+    "where",
+    "why"
+   ],
+   "answer": 4,
+   "why": "put은 장소가 필요하므로 where+to부정사. 목적어 my key가 이미 있어 what은 불가하다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nSam learned ____ to swim last summer. (어떻게 수영하는지)",
+   "choices": [
+    "what",
+    "when",
+    "where",
+    "how",
+    "why"
+   ],
+   "answer": 4,
+   "why": "'~하는 법을 배우다'는 learn how to-V.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nI can't decide ____ to wear today. (무엇을 입을지)",
+   "choices": [
+    "what",
+    "who",
+    "when",
+    "how",
+    "why"
+   ],
+   "answer": 1,
+   "why": "wear의 목적어 자리가 비어 있으므로 what+to부정사가 알맞다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nI don't know how ____ this word.",
+   "choices": [
+    "say",
+    "to saying",
+    "saying",
+    "to say",
+    "said"
+   ],
+   "answer": 4,
+   "why": "의문사 뒤에는 <to+동사원형>이 온다. how to say가 맞다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nShe learned where ____ the tickets.",
+   "choices": [
+    "buy",
+    "to buy",
+    "buying",
+    "bought",
+    "to bought"
+   ],
+   "answer": 2,
+   "why": "where+to부정사이므로 to buy. to 뒤에는 반드시 동사원형이 온다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nWe decided when ____ home.",
+   "choices": [
+    "leaving",
+    "to leave",
+    "leave",
+    "left",
+    "to leaving"
+   ],
+   "answer": 2,
+   "why": "when+to부정사 형태이므로 to leave가 맞다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nTell me what ____ next.",
+   "choices": [
+    "do",
+    "doing",
+    "did",
+    "to do",
+    "to doing"
+   ],
+   "answer": 4,
+   "why": "what+to부정사 형태이므로 to do가 알맞다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nHe knows how ____ a bike.",
+   "choices": [
+    "ride",
+    "to riding",
+    "riding",
+    "rode",
+    "to ride"
+   ],
+   "answer": 5,
+   "why": "how to ride가 '타는 법'을 뜻한다. to 뒤에는 동사원형.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nI can't decide which one ____.",
+   "choices": [
+    "take",
+    "took",
+    "taking",
+    "to take",
+    "takes"
+   ],
+   "answer": 4,
+   "why": "which (one)+to부정사이므로 to take.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nDo you know where ____ the bus?",
+   "choices": [
+    "catch",
+    "catching",
+    "caught",
+    "to catch",
+    "to catching"
+   ],
+   "answer": 4,
+   "why": "where+to부정사 형태이므로 to catch가 맞다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThey didn't know what ____ about it.",
+   "choices": [
+    "to saying",
+    "say",
+    "to say",
+    "saying",
+    "said"
+   ],
+   "answer": 3,
+   "why": "what+to부정사이므로 to say. to 뒤는 항상 동사원형이다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nI don't know ____ the machine. (어떻게 쓰는지)",
+   "choices": [
+    "how to use",
+    "how use",
+    "how using",
+    "to use how",
+    "how used"
+   ],
+   "answer": 1,
+   "why": "<의문사+to+동사원형>이 하나의 덩어리로 목적어가 된다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nAsk the teacher ____ your homework. (언제 낼지)",
+   "choices": [
+    "when hand in",
+    "when handed in",
+    "when handing in",
+    "to hand in when",
+    "when to hand in"
+   ],
+   "answer": 5,
+   "why": "when+to부정사 형태가 맞다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nHe told me ____ my bag. (어디에 둘지)",
+   "choices": [
+    "where put",
+    "where putting",
+    "where to putting",
+    "to put where",
+    "where to put"
+   ],
+   "answer": 5,
+   "why": "where+to부정사이며 to 뒤에는 동사원형이 온다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nI can't decide ____ for her birthday. (무엇을 살지)",
+   "choices": [
+    "what buy",
+    "what to buy",
+    "to buy what",
+    "what buying",
+    "what to buying"
+   ],
+   "answer": 2,
+   "why": "what+to+동사원형 형태인 what to buy가 알맞다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nDo you know ____ the door? (어떻게 여는지)",
+   "choices": [
+    "how open",
+    "how opening",
+    "how to open",
+    "how to opening",
+    "opening how"
+   ],
+   "answer": 3,
+   "why": "how to open이 '여는 방법'을 뜻한다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nWe didn't know ____ at the museum. (언제 만날지)",
+   "choices": [
+    "when to meet",
+    "when meet",
+    "when meeting",
+    "where to meet",
+    "how to meet"
+   ],
+   "answer": 1,
+   "why": "우리말이 '언제'이므로 when to meet. 형태도 <의문사+to+동사원형>이어야 한다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nCan you tell me ____ to the station? (어떻게 가는지)",
+   "choices": [
+    "how get",
+    "how to getting",
+    "what to get",
+    "how getting",
+    "how to get"
+   ],
+   "answer": 5,
+   "why": "길을 묻는 표현은 how to get to ~이다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nI don't know ____ first. (누구에게 물어볼지)",
+   "choices": [
+    "who ask",
+    "whom asking",
+    "who asked",
+    "to ask who",
+    "who to ask"
+   ],
+   "answer": 5,
+   "why": "who(m)+to부정사 형태인 who to ask가 알맞다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nShe is deciding ____ this weekend. (어디에 갈지)",
+   "choices": [
+    "where go",
+    "where to go",
+    "to go where",
+    "where going",
+    "where to going"
+   ],
+   "answer": 2,
+   "why": "where to go가 '어디에 갈지'를 뜻한다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nPlease tell me ____ this word. (어떻게 쓰는지)",
+   "choices": [
+    "how spell",
+    "how spelling",
+    "how to spelling",
+    "what to spell",
+    "how to spell"
+   ],
+   "answer": 5,
+   "why": "철자를 묻는 것이므로 how to spell. this word가 목적어이므로 what은 쓸 수 없다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "I know how make bread.",
+    "I know how making bread.",
+    "I know how to make bread.",
+    "I know making bread how.",
+    "I know how to making bread."
+   ],
+   "answer": 3,
+   "why": "<의문사+to+동사원형>이 원칙이므로 how to make가 맞다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 고르시오.",
+   "choices": [
+    "Tell me what to do.",
+    "Tell me what do.",
+    "Tell me what to doing.",
+    "Tell me to what do.",
+    "Tell me what doing."
+   ],
+   "answer": 1,
+   "why": "what+to+동사원형이므로 what to do가 옳다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은?",
+   "choices": [
+    "She knows where to go.",
+    "He learned how to skate.",
+    "I don't know why to cry.",
+    "We decided when to start.",
+    "They asked what to bring."
+   ],
+   "answer": 3,
+   "why": "why는 to부정사와 함께 쓰지 않는다. why I should cry처럼 써야 한다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장을 고르시오.",
+   "choices": [
+    "I know how to swim.",
+    "Show me where to sit.",
+    "She knows how she to cook.",
+    "He decided when to leave.",
+    "Tell me what to say."
+   ],
+   "answer": 3,
+   "why": "의문사+to부정사에는 주어를 쓰지 않는다. how to cook 또는 how she should cook이 맞다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 바른 문장은?",
+   "choices": [
+    "Do you know where buy it?",
+    "Do you know where to buying it?",
+    "Do you know where buying it?",
+    "Do you know to where buy it?",
+    "Do you know where to buy it?"
+   ],
+   "answer": 5,
+   "why": "where 뒤에는 <to+동사원형>이 와야 한다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 문장은?",
+   "choices": [
+    "I can't decide what to eat.",
+    "We know how to get there.",
+    "She told me when to call.",
+    "They learned how to they ski.",
+    "He forgot where to park."
+   ],
+   "answer": 4,
+   "why": "의문사+to부정사 사이에 주어(they)를 넣을 수 없다. how to ski가 맞다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞는 문장은?",
+   "choices": [
+    "My mom taught me how to bake cookies.",
+    "My mom taught me how bake cookies.",
+    "My mom taught me how baking cookies.",
+    "My mom taught me to how bake cookies.",
+    "My mom taught me how to baking cookies."
+   ],
+   "answer": 1,
+   "why": "how to bake가 '굽는 법'을 뜻하는 바른 형태이다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 바르지 않은 문장은?",
+   "choices": [
+    "Please tell me which to choose.",
+    "We didn't decide why to go.",
+    "He asked me where to wait.",
+    "She knows how to fix it.",
+    "I don't know what to wear."
+   ],
+   "answer": 2,
+   "why": "why는 to부정사와 결합하지 않는다. why we should go로 써야 한다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 빈칸에 알맞은 것은?\nI know how to ride a bike. = I know ____ a bike.",
+   "choices": [
+    "how I riding",
+    "how should I ride",
+    "how I should to ride",
+    "how I should ride",
+    "how to I ride"
+   ],
+   "answer": 4,
+   "why": "의문사+to부정사는 <의문사+주어+should+동사원형>으로 바꿔 쓴다. 의문문 어순(should I)은 쓰지 않는다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 빈칸에 알맞은 것은?\nTell me where to put it. = Tell me ____ it.",
+   "choices": [
+    "where I should put",
+    "where should I put",
+    "where I should to put",
+    "where putting I should",
+    "where to I put"
+   ],
+   "answer": 1,
+   "why": "where to put = where I should put. 뒤에는 <주어+should+동사원형> 어순이다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 빈칸에 알맞은 것은?\nShe doesn't know what to say. = She doesn't know ____.",
+   "choices": [
+    "what should she say",
+    "what to she say",
+    "what she should to say",
+    "what she should say",
+    "what she saying"
+   ],
+   "answer": 4,
+   "why": "what to say = what she should say. should 뒤에는 동사원형을 쓴다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 빈칸에 알맞은 것은?\nWe decided when to leave. = We decided ____.",
+   "choices": [
+    "when we should leave",
+    "when should we leave",
+    "when we should to leave",
+    "when to we leave",
+    "when we leaving"
+   ],
+   "answer": 1,
+   "why": "의문사 뒤에는 <주어+should+동사원형>이 온다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 빈칸에 알맞은 것은?\nHe learned how to use it. = He learned ____ it.",
+   "choices": [
+    "how should he use",
+    "how he uses should",
+    "how he should use",
+    "how he should to use",
+    "how to he use"
+   ],
+   "answer": 3,
+   "why": "how to use = how he should use.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n나는 무엇을 해야 할지 모르겠다.",
+   "choices": [
+    "I don't know what do.",
+    "I don't know what to do.",
+    "I don't know to do what.",
+    "I don't know what doing.",
+    "I don't know how to do."
+   ],
+   "answer": 2,
+   "why": "'무엇을 ~할지'는 what to do. 'I don't know how to do.'는 '어떻게 해야 할지'라는 뜻인 데다 do의 목적어도 없어 틀렸다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그 상자를 어떻게 여는지 나에게 보여 줘.",
+   "choices": [
+    "Show me how to open the box.",
+    "Show me what to open the box.",
+    "Show me how open the box.",
+    "Show me how opening the box.",
+    "Show me how to opening the box."
+   ],
+   "answer": 1,
+   "why": "'어떻게 ~하는지'는 how to+동사원형이다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n우리는 어디에서 만날지 정했다.",
+   "choices": [
+    "We decided where meet.",
+    "We decided where to meet.",
+    "We decided when to meet.",
+    "We decided where meeting.",
+    "We decided to where meet."
+   ],
+   "answer": 2,
+   "why": "'어디에서 ~할지'는 where to meet. when to meet은 '언제 만날지'라는 뜻이라 우리말과 다르다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그는 언제 시작해야 할지 물었다.",
+   "choices": [
+    "He asked when starting.",
+    "He asked when start.",
+    "He asked what to start.",
+    "He asked when to start.",
+    "He asked when to starting."
+   ],
+   "answer": 4,
+   "why": "'언제 ~할지'는 when to+동사원형이다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n나는 어느 것을 살지 결정할 수 없다.",
+   "choices": [
+    "I can't decide which to buy.",
+    "I can't decide which buy.",
+    "I can't decide what to buy it.",
+    "I can't decide which buying.",
+    "I can't decide which to buying."
+   ],
+   "answer": 1,
+   "why": "'어느 것을 ~할지'는 which to+동사원형이다. what to buy it은 buy의 목적어 it이 겹쳐 틀렸다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말에 맞게 빈칸에 알맞은 한 단어를 쓰시오.\nI don't know ____ to go. (나는 어디로 가야 할지 모르겠다.)",
+   "answer": "where",
+   "alt": [
+    "Where"
+   ],
+   "why": "장소를 뜻하므로 where+to부정사를 쓴다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말에 맞게 빈칸에 알맞은 한 단어를 쓰시오.\nTell me ____ to do first. (무엇을 먼저 해야 할지 말해 줘.)",
+   "answer": "what",
+   "alt": [
+    "What"
+   ],
+   "why": "do의 목적어 자리가 비어 있으므로 what을 쓴다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말에 맞게 빈칸에 알맞은 한 단어를 쓰시오.\nShe learned ____ to ski. (그녀는 스키 타는 법을 배웠다.)",
+   "answer": "how",
+   "alt": [
+    "How"
+   ],
+   "why": "'~하는 법'은 how+to부정사이다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말에 맞게 빈칸에 알맞은 한 단어를 쓰시오.\nWe decided ____ to start. (우리는 언제 시작할지 정했다.)",
+   "answer": "when",
+   "alt": [
+    "When"
+   ],
+   "why": "시간을 뜻하므로 when+to부정사를 쓴다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말에 맞게 빈칸에 알맞은 한 단어를 쓰시오.\nI can't decide ____ one to take. (나는 어느 것을 가져갈지 정할 수 없다.)",
+   "answer": "which",
+   "alt": [
+    "Which"
+   ],
+   "why": "'어느 것'은 which이며 뒤의 one을 꾸민다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nI know how ____ (make) a kite.",
+   "answer": "to make",
+   "why": "의문사 뒤에는 <to+동사원형>을 쓴다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nTell me where ____ (sit).",
+   "answer": "to sit",
+   "why": "where+to부정사 형태로 쓴다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nHe asked me what ____ (bring).",
+   "answer": "to bring",
+   "why": "what+to+동사원형 형태이다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nShe showed me how ____ (use) it.",
+   "answer": "to use",
+   "why": "how+to+동사원형으로 방법을 나타낸다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nWe didn't know when ____ (stop).",
+   "answer": "to stop",
+   "why": "when+to+동사원형 형태이다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nI don't know how <u>open</u> the can.",
+   "answer": "to open",
+   "why": "의문사 뒤 동사는 반드시 to부정사로 쓴다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nPlease tell me where <u>going</u>.",
+   "answer": "to go",
+   "why": "where 뒤에는 동명사가 아니라 <to+동사원형>이 온다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nShe learned how <u>to riding</u> a horse.",
+   "answer": "to ride",
+   "why": "to 뒤에는 동사원형을 쓴다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nHe decided what <u>buy</u> for his mom.",
+   "answer": "to buy",
+   "why": "what 뒤에는 <to+동사원형>이 와야 한다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nDo you know when <u>to leaving</u>?",
+   "answer": "to leave",
+   "why": "to 뒤에는 동사원형만 올 수 있다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 한 단어를 쓰시오.\nI know what to say. = I know what I ____ say.",
+   "answer": "should",
+   "why": "의문사+to부정사는 <의문사+주어+should+동사원형>으로 바꿔 쓴다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 한 단어를 쓰시오.\nTell me where to sit. = Tell me where I ____ sit.",
+   "answer": "should",
+   "why": "where to sit = where I should sit.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 한 단어를 쓰시오.\nShe doesn't know how she should start. = She doesn't know how ____ start.",
+   "answer": "to",
+   "why": "<의문사+주어+should+동사원형>은 <의문사+to+동사원형>으로 줄여 쓴다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말에 맞게 빈칸에 알맞은 세 단어를 쓰시오.\nShe asked ____. (그녀는 어디에 앉을지 물었다.)",
+   "answer": "where to sit",
+   "why": "'어디에 앉을지'는 where to sit이다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말에 맞게 빈칸에 알맞은 세 단어를 쓰시오.\nHe didn't know ____. (그는 무엇을 말해야 할지 몰랐다.)",
+   "answer": "what to say",
+   "why": "'무엇을 말할지'는 what to say이다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nOur teacher explained ____ to write a good summary. (어떻게 쓰는지)",
+   "choices": [
+    "how",
+    "what",
+    "when",
+    "where",
+    "why"
+   ],
+   "answer": 1,
+   "why": "방법을 나타내므로 how+to부정사. a good summary가 목적어이므로 what은 쓸 수 없다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThe tourists asked ____ to buy subway tickets. (어디에서 사는지)",
+   "choices": [
+    "what",
+    "when",
+    "where",
+    "which",
+    "why"
+   ],
+   "answer": 3,
+   "why": "장소를 물으므로 where+to부정사가 알맞다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nI haven't decided ____ to invite to my birthday party. (누구를 초대할지)",
+   "choices": [
+    "whom",
+    "when",
+    "where",
+    "what",
+    "how"
+   ],
+   "answer": 1,
+   "why": "invite의 목적어가 사람이므로 whom(who)+to부정사를 쓴다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nRead the manual first, and you'll learn ____ to set the timer. (어떻게 맞추는지)",
+   "choices": [
+    "how",
+    "what",
+    "when",
+    "where",
+    "why"
+   ],
+   "answer": 1,
+   "why": "'~하는 법'은 how to+동사원형이다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nSam couldn't decide ____ to say to his angry friend. (무슨 말을 할지)",
+   "choices": [
+    "when",
+    "how",
+    "what",
+    "where",
+    "who"
+   ],
+   "answer": 3,
+   "why": "say의 목적어 자리가 비어 있으므로 what+to부정사가 알맞다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThe sign shows ____ to line up for the ride. (어디에 줄을 서야 하는지)",
+   "choices": [
+    "where",
+    "how",
+    "what",
+    "when",
+    "why"
+   ],
+   "answer": 1,
+   "why": "장소를 뜻하므로 where+to부정사를 쓴다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nBefore the trip, we discussed ____ to pack in our bags. (무엇을 챙길지)",
+   "choices": [
+    "how",
+    "when",
+    "what",
+    "where",
+    "why"
+   ],
+   "answer": 3,
+   "why": "pack의 목적어가 필요하므로 what+to부정사가 알맞다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nMy grandfather taught me ____ to grow tomatoes. (어떻게 기르는지)",
+   "choices": [
+    "how",
+    "which",
+    "what",
+    "when",
+    "where"
+   ],
+   "answer": 1,
+   "why": "teach+목적어+how to-V는 '~에게 …하는 법을 가르치다'라는 뜻이다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThe doctor told her ____ to take the pills. (언제 먹어야 하는지)",
+   "choices": [
+    "when",
+    "how",
+    "what",
+    "who",
+    "why"
+   ],
+   "answer": 1,
+   "why": "시간을 나타내므로 when+to부정사가 알맞다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nNobody knew ____ to turn off the alarm. (어떻게 끄는지)",
+   "choices": [
+    "what",
+    "how",
+    "when",
+    "where",
+    "why"
+   ],
+   "answer": 2,
+   "why": "방법을 뜻하므로 how. the alarm이 목적어이므로 what은 불가하다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThe app teaches children ____ money wisely. (어떻게 쓰는지)",
+   "choices": [
+    "how spend",
+    "how to spending",
+    "how spending",
+    "how to spend",
+    "what to spend"
+   ],
+   "answer": 4,
+   "why": "<how+to+동사원형> 형태가 맞다. money가 목적어이므로 what to spend는 쓸 수 없다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nWe are still discussing ____ the school festival. (언제 열지)",
+   "choices": [
+    "when hold",
+    "when holding",
+    "when to holding",
+    "when to hold",
+    "when we to hold"
+   ],
+   "answer": 4,
+   "why": "when+to+동사원형 형태이며 주어는 넣지 않는다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nCan you show me ____ this photo to my friend? (어떻게 보내는지)",
+   "choices": [
+    "how send",
+    "how to send",
+    "how sending",
+    "how to sending",
+    "how do I send"
+   ],
+   "answer": 2,
+   "why": "how to send가 맞다. how do I send는 show me 뒤에 의문문 어순이 와서 틀렸다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThe little boy didn't know ____ his lost dog. (어디에서 찾을지)",
+   "choices": [
+    "where look for",
+    "where to looking for",
+    "where looking for",
+    "to look for where",
+    "where to look for"
+   ],
+   "answer": 5,
+   "why": "where+to+동사원형 형태인 where to look for가 알맞다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nOur club must decide ____ for the charity event. (무엇을 준비할지)",
+   "choices": [
+    "what to prepare",
+    "what preparing",
+    "what prepare",
+    "to prepare what",
+    "what to preparing"
+   ],
+   "answer": 1,
+   "why": "what+to+동사원형 형태가 목적어 역할을 한다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nShe always knows ____ in a difficult situation. (어떻게 행동할지)",
+   "choices": [
+    "how act",
+    "how to acting",
+    "how acting",
+    "what to act",
+    "how to act"
+   ],
+   "answer": 5,
+   "why": "how to act가 '어떻게 행동할지'를 뜻한다. act는 목적어를 받지 않으므로 what은 불가하다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nHe is thinking about ____ after graduation. (무엇을 할지)",
+   "choices": [
+    "what do",
+    "what to do",
+    "what doing",
+    "to do what",
+    "what to doing"
+   ],
+   "answer": 2,
+   "why": "전치사 about의 목적어로 <what+to부정사> 덩어리가 왔다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThe guide explained ____ the boat. (어떻게 타는지)",
+   "choices": [
+    "how get on",
+    "how getting on",
+    "how to get on",
+    "how to getting on",
+    "what to get on"
+   ],
+   "answer": 3,
+   "why": "how to get on이 '타는 방법'을 뜻한다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 알맞은 문장은?",
+   "choices": [
+    "Ask him what should to do.",
+    "Ask him what do he should.",
+    "Ask him what he should do.",
+    "Ask him what should he do.",
+    "Ask him what to doing."
+   ],
+   "answer": 3,
+   "why": "의문사가 이끄는 명사절은 <의문사+주어+동사> 어순이다. what to do로 줄여 쓸 수도 있다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳지 않은 문장은?",
+   "choices": [
+    "He explained why to be late.",
+    "She wondered where to hide the gift.",
+    "They decided when to announce the news.",
+    "I'll show you how to save the file.",
+    "We learned how to write a report."
+   ],
+   "answer": 1,
+   "why": "why는 to부정사와 함께 쓰지 않는다. why he was late처럼 절로 써야 한다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 올바른 문장은?",
+   "choices": [
+    "The map tells us which way to going.",
+    "The map tells us which way going.",
+    "The map tells us which way go.",
+    "The map tells us which to way go.",
+    "The map tells us which way to go."
+   ],
+   "answer": 5,
+   "why": "which+명사+to부정사 형태로 쓴다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 틀린 것은?",
+   "choices": [
+    "My sister taught me how to tie a tie.",
+    "Please tell me who to contact.",
+    "I forgot where to return the book.",
+    "We must decide what to name the puppy.",
+    "He didn't know how he to solve it."
+   ],
+   "answer": 5,
+   "why": "의문사와 to부정사 사이에 주어를 넣을 수 없다. how to solve 또는 how he should solve가 맞다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "Nobody knew what say at the meeting.",
+    "Nobody knew what to say at the meeting.",
+    "Nobody knew what saying at the meeting.",
+    "Nobody knew to say what at the meeting.",
+    "Nobody knew what to saying at the meeting."
+   ],
+   "answer": 2,
+   "why": "what+to+동사원형 형태만 옳다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 잘못된 문장은?",
+   "choices": [
+    "I'm not sure when to send the email.",
+    "She showed us how to fold the paper.",
+    "Do you know how to they use it?",
+    "Tell me what to bring to the picnic.",
+    "Let me know where to meet you."
+   ],
+   "answer": 3,
+   "why": "how to 뒤에는 주어 없이 동사원형이 온다. how they use it이라고 해야 한다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳게 쓰인 문장은?",
+   "choices": [
+    "I don't know how to I fix it.",
+    "I don't know how should I fix it.",
+    "I don't know how to fixing it.",
+    "I don't know how I should to fix it.",
+    "I don't know how I should fix it."
+   ],
+   "answer": 5,
+   "why": "명사절은 <의문사+주어+should+동사원형> 어순이다. 의문문 어순(should I)은 쓰지 않는다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 오류가 있는 문장은?",
+   "choices": [
+    "The email explains how to join the club.",
+    "They discussed where should they go.",
+    "He asked me whom to invite.",
+    "She learned how to make kimchi.",
+    "We're deciding which movie to watch."
+   ],
+   "answer": 2,
+   "why": "목적어 자리의 의문사절은 <의문사+주어+동사> 어순이므로 where they should go가 맞다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 오류가 없는 문장은?",
+   "choices": [
+    "Do you know how to getting to the museum?",
+    "Do you know how get to the museum?",
+    "Do you know how getting to the museum?",
+    "Do you know how to get to the museum?",
+    "Do you know to how get to the museum?"
+   ],
+   "answer": 4,
+   "why": "how to+동사원형이 바른 형태이다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞지 않는 문장은?",
+   "choices": [
+    "I can't decide which one to choose.",
+    "She wondered what to wear to the wedding.",
+    "My friend asked me why to join the club.",
+    "The article shows how to save water.",
+    "Our teacher told us when to hand in the report."
+   ],
+   "answer": 3,
+   "why": "why는 to부정사와 결합하지 못한다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 빈칸에 알맞은 것은?\nPlease tell me how to use this copy machine.\n= Please tell me how ____ this copy machine.",
+   "choices": [
+    "using I should",
+    "should I use",
+    "to use I",
+    "I should to use",
+    "I should use"
+   ],
+   "answer": 5,
+   "why": "how to use = how I should use. 평서문 어순으로 쓴다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 빈칸에 알맞은 것은?\nShe hasn't decided what to major in.\n= She hasn't decided what ____ major in.",
+   "choices": [
+    "she should",
+    "should she",
+    "to she",
+    "she should to",
+    "she is should"
+   ],
+   "answer": 1,
+   "why": "<의문사+주어+should+동사원형> 어순이 되어야 한다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 빈칸에 알맞은 것은?\nI don't know where I should park my car.\n= I don't know ____ my car.",
+   "choices": [
+    "where park",
+    "where to park",
+    "where parking",
+    "to park where",
+    "where to parking"
+   ],
+   "answer": 2,
+   "why": "<의문사+주어+should+동사원형>은 <의문사+to+동사원형>으로 줄여 쓴다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 빈칸에 알맞은 것은?\nWe asked when we should call him.\n= We asked ____ him.",
+   "choices": [
+    "when call",
+    "when to calling",
+    "when calling",
+    "when to call",
+    "to call when"
+   ],
+   "answer": 4,
+   "why": "when we should call = when to call.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 빈칸에 알맞은 것은?\nHe is learning how he should manage his time.\n= He is learning ____ his time.",
+   "choices": [
+    "how manage",
+    "to manage how",
+    "how managing",
+    "how to managing",
+    "how to manage"
+   ],
+   "answer": 5,
+   "why": "how he should manage = how to manage.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 빈칸에 알맞은 것은?\nTell me which bus I should take.\n= Tell me which bus ____.",
+   "choices": [
+    "to take",
+    "take",
+    "taking",
+    "to taking",
+    "should take"
+   ],
+   "answer": 1,
+   "why": "which+명사 뒤에는 <to+동사원형>을 쓴다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: I bought a new camera, but it's too difficult.\nB: Don't worry. I'll show you ____ it. (어떻게 쓰는지)",
+   "choices": [
+    "how use",
+    "how to use",
+    "how using",
+    "what to use",
+    "how to using"
+   ],
+   "answer": 2,
+   "why": "how to use가 '쓰는 법'을 뜻하는 바른 형태이다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: I want to join the marathon.\nB: Great! Do you know ____ online? (어떻게 신청하는지)",
+   "choices": [
+    "how apply",
+    "when to apply",
+    "how applying",
+    "how to apply",
+    "how to applying"
+   ],
+   "answer": 4,
+   "why": "우리말이 '어떻게'이므로 how to apply. when to apply는 '언제 신청할지'라는 뜻이다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: The exam is next week.\nB: I know, but I'm not sure ____ first. (무엇을 먼저 공부할지)",
+   "choices": [
+    "what to study",
+    "what study",
+    "what studying",
+    "when to study",
+    "what to studying"
+   ],
+   "answer": 1,
+   "why": "study의 목적어 자리가 비어 있으므로 what to study가 맞다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: This machine is broken again.\nB: Let's ask Mr. Kim ____ it. (어떻게 고치는지)",
+   "choices": [
+    "how to fix",
+    "how fixing",
+    "how fix",
+    "what to fix",
+    "how to fixing"
+   ],
+   "answer": 1,
+   "why": "how to fix가 방법을 나타내는 바른 형태이다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: My computer keeps freezing.\nB: Ask Jina. She knows ____ that problem. (어떻게 해결하는지)",
+   "choices": [
+    "how to solve",
+    "how solve",
+    "how solving",
+    "how to solving",
+    "what to solve"
+   ],
+   "answer": 1,
+   "why": "how to solve가 알맞다. that problem이 목적어이므로 what은 쓸 수 없다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: The party starts at six.\nB: OK. But I still don't know ____ a present. (어디에서 살지)",
+   "choices": [
+    "where buy",
+    "where to buy",
+    "where buying",
+    "when to buy",
+    "where to buying"
+   ],
+   "answer": 2,
+   "why": "우리말이 '어디에서'이므로 where to buy가 알맞다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n• I don't know ____ to say to him.\n• Please tell me ____ to bring for the trip.",
+   "choices": [
+    "how",
+    "why",
+    "when",
+    "where",
+    "what"
+   ],
+   "answer": 5,
+   "why": "두 문장 모두 동사(say, bring)의 목적어가 빠져 있으므로 what이 공통으로 알맞다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n• I don't know ____ to hang this picture. (어디에)\n• The sign tells visitors ____ to line up. (어디에)",
+   "choices": [
+    "what",
+    "where",
+    "when",
+    "how",
+    "why"
+   ],
+   "answer": 2,
+   "why": "둘 다 장소를 나타내므로 where가 알맞다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n• Do you know ____ to get to the airport?\n• She taught me ____ to play the guitar.",
+   "choices": [
+    "how",
+    "what",
+    "where",
+    "which",
+    "why"
+   ],
+   "answer": 1,
+   "why": "두 문장 모두 '~하는 방법'을 뜻하므로 how가 공통으로 들어간다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nⓐ I don't know what to do.\nⓑ She learned how ride a bike.\nⓒ Tell me where to put the box.\nⓓ He asked me when to start.\nⓔ We decided why to go there.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ⓐⓒⓓ가 옳다. ⓑ는 how to ride, ⓔ는 why를 to부정사와 함께 쓸 수 없어 틀렸다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nⓐ Do you know how to using this app?\nⓑ I'm not sure which one to choose.\nⓒ Please show me where signing.\nⓓ They didn't decide what buy.\nⓔ My dad taught me how to drive.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ⓑⓔ만 옳다. ⓐ to using, ⓒ where signing, ⓓ what buy 모두 <to+동사원형>이 아니어서 틀렸다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nⓐ I wonder what to say first.\nⓑ Tell me how I should answer.\nⓒ She knows where to buy it cheaply.\nⓓ He explained how to fix the bike.\nⓔ We asked when should we leave.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "ⓔ만 틀렸다. 목적어 자리의 의문사절은 when we should leave 어순이어야 한다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 두 단어를 쓰시오.\nI don't know where I should get off. = I don't know ____ get off.",
+   "answer": "where to",
+   "why": "<의문사+주어+should+동사원형>은 <의문사+to+동사원형>으로 줄여 쓴다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 두 단어를 쓰시오.\nShe hasn't decided what she should major in. = She hasn't decided ____ major in.",
+   "answer": "what to",
+   "why": "what she should major in = what to major in.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 두 단어를 쓰시오.\nTell me how I should turn on the heater. = Tell me ____ turn on the heater.",
+   "answer": "how to",
+   "why": "how I should = how to.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 두 단어를 쓰시오.\nWe discussed when we should leave for the airport. = We discussed ____ leave for the airport.",
+   "answer": "when to",
+   "why": "when we should leave = when to leave.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 두 단어를 쓰시오. (I와 should를 이용할 것)\nPlease show me how to use this printer. = Please show me how ____ use this printer.",
+   "answer": "I should",
+   "why": "의문사+to부정사는 <의문사+주어+should+동사원형>으로 풀어 쓴다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 두 단어를 쓰시오. (he와 should를 이용할 것)\nHe forgot where to keep the spare key. = He forgot where ____ keep the spare key.",
+   "answer": "he should",
+   "why": "where to keep = where he should keep.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nOur coach explained how <u>warm up</u> before the game.",
+   "answer": "to warm up",
+   "why": "의문사 뒤에는 <to+동사원형>이 와야 한다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe librarian told us where <u>returning</u> the books.",
+   "answer": "to return",
+   "why": "where 뒤에는 동명사가 아니라 to부정사를 쓴다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nI can't decide which shirt <u>buy</u> for my brother.",
+   "answer": "to buy",
+   "why": "which+명사 뒤에는 <to+동사원형>이 온다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nDo you know what <u>should you</u> do in an emergency?",
+   "answer": "you should",
+   "why": "목적어 자리의 의문사절은 <의문사+주어+동사> 어순이다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nHe didn't know how <u>to answering</u> the question.",
+   "answer": "to answer",
+   "why": "to 뒤에는 반드시 동사원형을 쓴다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 세 단어를 쓰시오.\nCan you tell me ____ to the post office? (우체국에 어떻게 가는지)",
+   "answer": "how to get",
+   "why": "길을 묻는 표현은 how to get to ~이며, how to go도 쓸 수 있다.",
+   "alt": [
+    "how to go"
+   ],
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 세 단어를 쓰시오.\nThe recipe shows ____ the sauce. (소스를 어떻게 만드는지)",
+   "answer": "how to make",
+   "why": "how+to+동사원형으로 방법을 나타낸다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 세 단어를 쓰시오. (bring을 이용할 것)\nWe haven't decided ____ for the school trip. (무엇을 가져갈지)",
+   "answer": "what to bring",
+   "why": "bring의 목적어가 빠져 있으므로 what to bring이 알맞다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 세 단어를 쓰시오. (start를 이용할 것)\nI'm not sure ____ the meeting. (언제 시작할지)",
+   "answer": "when to start",
+   "why": "시간을 나타내므로 when+to부정사를 쓴다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 세 단어를 쓰시오. (hang을 이용할 것)\nPlease tell me ____ my coat. (어디에 걸어야 할지)",
+   "answer": "where to hang",
+   "why": "장소를 나타내므로 where+to부정사를 쓴다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하여 빈칸을 완성하시오.\n(make / how / to) She taught me ____ paper flowers.",
+   "answer": "how to make",
+   "why": "<의문사+to+동사원형> 순서로 배열한다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하여 빈칸을 완성하시오.\n(wear / to / what) I couldn't decide ____ to the concert.",
+   "answer": "what to wear",
+   "why": "what+to+동사원형 순서가 되어야 한다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하여 빈칸을 완성하시오.\n(get / to / where) Do you know ____ the tickets?",
+   "answer": "where to get",
+   "why": "where+to+동사원형 순서로 쓴다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nMy parents showed me how <u>to opening</u> a bank account.",
+   "answer": "to open",
+   "why": "to 뒤에는 동사원형만 올 수 있다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nWhen Mina <u>moved</u> to a new town, she didn't know <u>where to find</u> a good dentist, so she <u>asked</u> her neighbor <u>how to choose</u> one and <u>which bus taking</u> to get there.",
+   "choices": [
+    "moved",
+    "where to find",
+    "asked",
+    "how to choose",
+    "which bus taking"
+   ],
+   "answer": 5,
+   "why": "which+명사 뒤에도 <to+동사원형>을 써야 하므로 which bus to take가 맞다. 나머지는 모두 바른 형태이다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nOur science teacher <u>showed</u> us <u>how to record</u> the data, but he didn't tell us <u>when to stop</u> the experiment or <u>what should do</u> with the leftover chemicals, so we <u>were</u> confused.",
+   "choices": [
+    "showed",
+    "how to record",
+    "when to stop",
+    "what should do",
+    "were"
+   ],
+   "answer": 4,
+   "why": "의문사절에는 주어가 필요하므로 what we should do 또는 what to do로 써야 한다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nBefore the trip, we <u>discussed</u> <u>where staying</u>, <u>how much money to bring</u>, and <u>who to ask</u> for help, but nobody <u>knew</u> the answers.",
+   "choices": [
+    "discussed",
+    "where staying",
+    "how much money to bring",
+    "who to ask",
+    "knew"
+   ],
+   "answer": 2,
+   "why": "의문사 뒤에는 동명사가 아니라 to부정사가 온다. where to stay가 맞다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nThe manual <u>explains</u> <u>how to install</u> the program, but it never says <u>why to restart</u> the computer or <u>where to save</u> the file, so I <u>called</u> the service center.",
+   "choices": [
+    "explains",
+    "how to install",
+    "why to restart",
+    "where to save",
+    "called"
+   ],
+   "answer": 3,
+   "why": "why는 to부정사와 함께 쓰지 않는다. why I should restart처럼 절로 써야 한다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nMy brother <u>learned</u> <u>how baking</u> bread last year, and now he <u>teaches</u> me <u>what ingredients to use</u> and <u>how long to bake</u> the dough.",
+   "choices": [
+    "learned",
+    "how baking",
+    "teaches",
+    "what ingredients to use",
+    "how long to bake"
+   ],
+   "answer": 2,
+   "why": "learn how to bake처럼 <의문사+to+동사원형>을 써야 한다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nThe coach didn't explain <u>how should we warm up</u>, <u>when to drink</u> water, or <u>which shoes to wear</u>, so the new players <u>didn't know</u> <u>what to do</u> before the game.",
+   "choices": [
+    "how should we warm up",
+    "when to drink",
+    "which shoes to wear",
+    "didn't know",
+    "what to do"
+   ],
+   "answer": 1,
+   "why": "목적어 자리의 의문사절은 <의문사+주어+동사> 어순이므로 how we should warm up 또는 how to warm up이 맞다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nBecause Jenny <u>had</u> never been abroad, she asked her cousin <u>how to exchange</u> money, <u>where buying</u> a SIM card, and <u>whom to ask</u> for directions, and her cousin <u>helped</u> her a lot.",
+   "choices": [
+    "had",
+    "how to exchange",
+    "where buying",
+    "whom to ask",
+    "helped"
+   ],
+   "answer": 3,
+   "why": "and로 연결된 세 구가 모두 <의문사+to부정사>여야 하므로 where to buy가 맞다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nThe website tells travelers <u>what to pack</u>, <u>how to book</u> a hostel, and <u>when to arrive</u> at the airport, but it doesn't explain <u>how to they get</u> a refund or <u>where to complain</u>.",
+   "choices": [
+    "what to pack",
+    "how to book",
+    "when to arrive",
+    "how to they get",
+    "where to complain"
+   ],
+   "answer": 4,
+   "why": "의문사와 to부정사 사이에 주어를 넣을 수 없다. how to get 또는 how they can get이 맞다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)의 괄호 안에서 어법상 알맞은 말을 바르게 짝지은 것은?\n(A) Nobody told me (how to use / how using) the new copy machine.\n(B) We are deciding (what to name / what name) our new puppy.\n(C) She asked me (where should I sit / where I should sit).",
+   "choices": [
+    "how using - what name - where should I sit",
+    "how to use - what name - where should I sit",
+    "how using - what to name - where I should sit",
+    "how to use - what to name - where should I sit",
+    "how to use - what to name - where I should sit"
+   ],
+   "answer": 5,
+   "why": "(A)(B)는 <의문사+to+동사원형>, (C)는 목적어 자리의 의문사절이므로 <의문사+주어+동사> 어순이다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)의 괄호 안에서 어법상 알맞은 말을 바르게 짝지은 것은?\n(A) The guide explained (where to get off / where getting off) the bus.\n(B) I can't decide (which one to buy / which one buying).\n(C) Please tell me (when to call / when calling) you tomorrow.",
+   "choices": [
+    "where getting off - which one to buy - when to call",
+    "where to get off - which one buying - when calling",
+    "where getting off - which one buying - when to call",
+    "where to get off - which one to buy - when to call",
+    "where to get off - which one to buy - when calling"
+   ],
+   "answer": 4,
+   "why": "세 곳 모두 의문사 뒤에 동명사가 아닌 <to+동사원형>을 써야 한다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)의 괄호 안에서 어법상 알맞은 말을 바르게 짝지은 것은?\n(A) My uncle taught me (how to sail / how sail) a boat.\n(B) They didn't know (what to do / what do) after the accident.\n(C) I wonder (whom to invite / whom inviting) to the party.",
+   "choices": [
+    "how sail - what to do - whom to invite",
+    "how to sail - what to do - whom to invite",
+    "how to sail - what do - whom inviting",
+    "how sail - what do - whom to invite",
+    "how to sail - what to do - whom inviting"
+   ],
+   "answer": 2,
+   "why": "의문사 뒤에는 반드시 <to+동사원형>이 온다. 동사원형만 쓰거나 동명사를 쓰면 틀린다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)의 괄호 안에서 어법상 알맞은 말을 바르게 짝지은 것은?\n(A) The email says (when to submit / when submitting) the form.\n(B) He is learning (how to control / how he to control) his anger.\n(C) We haven't decided (where to hold / where hold) the meeting.",
+   "choices": [
+    "when submitting - how to control - where to hold",
+    "when to submit - how he to control - where hold",
+    "when to submit - how to control - where to hold",
+    "when submitting - how he to control - where hold",
+    "when to submit - how to control - where hold"
+   ],
+   "answer": 3,
+   "why": "(B)처럼 의문사와 to부정사 사이에 주어를 넣을 수 없다. 세 곳 모두 <의문사+to+동사원형>이다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)의 괄호 안에서 어법상 알맞은 말을 바르게 짝지은 것은?\n(A) Can you show me (how to change / how change) the battery?\n(B) I forgot (what to say / what saying) to her.\n(C) The sign tells us (where to line up / where lining up).",
+   "choices": [
+    "how change - what to say - where to line up",
+    "how to change - what to say - where to line up",
+    "how change - what saying - where to line up",
+    "how to change - what to say - where lining up",
+    "how to change - what saying - where lining up"
+   ],
+   "answer": 2,
+   "why": "세 곳 모두 <의문사+to+동사원형>이 바른 형태이다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)의 괄호 안에서 어법상 알맞은 말을 바르게 짝지은 것은?\n(A) She didn't know (how to answer / how answering) the question.\n(B) Tell me (which movie to watch / which movie watching) tonight.\n(C) I can't decide (when start / when to start) my project.",
+   "choices": [
+    "how to answer - which movie watching - when start",
+    "how answering - which movie to watch - when to start",
+    "how to answer - which movie to watch - when to start",
+    "how answering - which movie watching - when start",
+    "how to answer - which movie to watch - when start"
+   ],
+   "answer": 3,
+   "why": "의문사(+명사) 뒤에는 <to+동사원형>이 온다. 동사원형만 쓰거나 -ing를 쓰면 안 된다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)의 괄호 안에서 어법상 알맞은 말을 바르게 짝지은 것은?\n(A) The doctor explained (how to take / how taking) the medicine.\n(B) Do you know (where to park / where park) the car?\n(C) He asked his teacher (what should he read / what he should read) first.",
+   "choices": [
+    "how taking - where to park - what he should read",
+    "how to take - where to park - what he should read",
+    "how to take - where park - what should he read",
+    "how taking - where park - what he should read",
+    "how to take - where to park - what should he read"
+   ],
+   "answer": 2,
+   "why": "(C)는 목적어 자리의 의문사절이므로 의문문 어순이 아닌 <의문사+주어+동사>로 쓴다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)의 괄호 안에서 어법상 알맞은 말을 바르게 짝지은 것은?\n(A) Nobody knows (how to stop / how stopping) the leak.\n(B) We discussed (who to send / who sending) to the contest.\n(C) I'm not sure (what to write / what write) in the card.",
+   "choices": [
+    "how stopping - who to send - what to write",
+    "how to stop - who sending - what write",
+    "how stopping - who sending - what write",
+    "how to stop - who to send - what write",
+    "how to stop - who to send - what to write"
+   ],
+   "answer": 5,
+   "why": "세 곳 모두 <의문사+to+동사원형> 형태여야 한다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 정확하게 쓰인 문장은?",
+   "choices": [
+    "Please tell me how to I get to the gallery.",
+    "Please tell me how should I get to the gallery.",
+    "Please tell me how getting to the gallery.",
+    "Please tell me how I should get to the gallery.",
+    "Please tell me how I should to get to the gallery."
+   ],
+   "answer": 4,
+   "why": "목적어 자리의 의문사절은 <의문사+주어+should+동사원형>이다. how to get이라고 쓸 수도 있다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 맞지 않게 쓰인 문장은?",
+   "choices": [
+    "The manager decided whom to hire.",
+    "She showed me which button to press.",
+    "I don't know how long to boil the eggs.",
+    "They discussed where to build the library.",
+    "He explained why to leave early."
+   ],
+   "answer": 5,
+   "why": "why만은 to부정사와 결합하지 않는다. why he had to leave early처럼 써야 한다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "I asked my sister what to wearing.",
+    "I asked my sister what she should wear.",
+    "I asked my sister what should she wear.",
+    "I asked my sister what to she wear.",
+    "I asked my sister what wear."
+   ],
+   "answer": 2,
+   "why": "의문사절은 <의문사+주어+should+동사원형> 어순이며, what to wear로 줄여 쓸 수도 있다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 틀린 것은?",
+   "choices": [
+    "Nobody taught him how to behave politely.",
+    "The app tells you where to charge your phone.",
+    "We're deciding what time to meet.",
+    "Tell me which of these to choose.",
+    "She wondered when should she apologize."
+   ],
+   "answer": 5,
+   "why": "wondered의 목적어인 의문사절은 when she should apologize 어순이어야 한다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음에서 어법상 옳은 문장을 고르시오.",
+   "choices": [
+    "We couldn't decide who to going with.",
+    "We couldn't decide who we should to go with.",
+    "We couldn't decide who going with.",
+    "We couldn't decide to who go with.",
+    "We couldn't decide who to go with."
+   ],
+   "answer": 5,
+   "why": "who+to+동사원형 형태가 옳다. should 뒤에도 동사원형만 온다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음에서 어법상 틀린 문장을 고르시오.",
+   "choices": [
+    "My father showed me how to change a tire.",
+    "Please tell me when to water these plants.",
+    "The website explains where to report a problem.",
+    "I'm not sure what saying to my new classmates.",
+    "Do you know how to turn off this alarm?"
+   ],
+   "answer": 4,
+   "why": "의문사 뒤에는 동명사를 쓸 수 없다. what to say가 맞다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 맞게 쓰인 문장은?",
+   "choices": [
+    "She hasn't decided which university she should to apply to.",
+    "She hasn't decided which university applying to.",
+    "She hasn't decided which university to applying to.",
+    "She hasn't decided which university to apply to.",
+    "She hasn't decided which university apply to."
+   ],
+   "answer": 4,
+   "why": "which+명사+to+동사원형 형태가 바르다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 잘못 쓰인 문장은?",
+   "choices": [
+    "I learned how to save money from my grandmother.",
+    "He told me what to do in case of fire.",
+    "We asked the guard where leaving our bags.",
+    "The note says when to feed the cat.",
+    "Nobody knows how to fix it."
+   ],
+   "answer": 3,
+   "why": "where 뒤에는 <to+동사원형>이 와야 하므로 where to leave가 맞다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 빈칸에 알맞은 것은?\nAlthough she read the manual twice, she still didn't know how to reset the router.\n= Although she read the manual twice, she still didn't know ____ the router.",
+   "choices": [
+    "how resetting",
+    "how should she reset",
+    "how she should to reset",
+    "how she should reset",
+    "that she should reset"
+   ],
+   "answer": 4,
+   "why": "의문사+to부정사는 <의문사+주어+should+동사원형>으로 바꾼다. 의문문 어순은 쓰지 않는다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 두 문장의 의미가 서로 다른 것은?",
+   "choices": [
+    "She asked when to leave. = She asked when she should leave.",
+    "I know how to use it. = I know how I should use it.",
+    "He forgot which to choose. = He forgot which one he chose.",
+    "Tell me what to bring. = Tell me what I should bring.",
+    "We decided where to eat. = We decided where we should eat."
+   ],
+   "answer": 3,
+   "why": "'He forgot which one he chose.'는 '그가 무엇을 골랐는지'라는 과거 사실이므로 '어느 것을 골라야 할지'와 뜻이 다르다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 빈칸에 알맞은 것은?\nMy cousin taught me how I should ride a skateboard.\n= My cousin taught me ____ a skateboard.",
+   "choices": [
+    "how ride",
+    "to ride how",
+    "how riding",
+    "how to ride",
+    "how to riding"
+   ],
+   "answer": 4,
+   "why": "how I should ride = how to ride.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 바꿔 쓴 것으로 알맞은 것은?\nWe are still discussing which team we should support.",
+   "choices": [
+    "We are still discussing which team support.",
+    "We are still discussing which to team support.",
+    "We are still discussing which team supporting.",
+    "We are still discussing which team should support.",
+    "We are still discussing which team to support."
+   ],
+   "answer": 5,
+   "why": "<의문사+명사+주어+should+동사원형>은 <의문사+명사+to+동사원형>으로 줄인다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분을 바르게 바꿔 쓴 것은?\nI can't remember <u>where I should return</u> this book.",
+   "choices": [
+    "where returning",
+    "where return",
+    "where to returning",
+    "to where return",
+    "where to return"
+   ],
+   "answer": 5,
+   "why": "where I should return = where to return.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 빈칸에 알맞은 것은?\nHe didn't tell us when to turn in the report.\n= He didn't tell us when ____ turn in the report.",
+   "choices": [
+    "we will to",
+    "should we",
+    "we should to",
+    "to we",
+    "we should"
+   ],
+   "answer": 5,
+   "why": "when to-V는 <when+주어+should+동사원형>으로 풀어 쓴다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nⓐ I forgot how to open the safe.\nⓑ She asked me what to doing next.\nⓒ They decided where to plant the tree.\nⓓ Tell me which coat to wear.\nⓔ Nobody knew how they should to react.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ⓐⓒⓓ가 옳다. ⓑ는 to doing, ⓔ는 should to react가 틀렸다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nⓐ We discussed when to announce the result.\nⓑ He explained why to cancel the trip.\nⓒ I'm not sure whom trusting.\nⓓ Do you know where to charging my phone?\nⓔ The map shows how to reach the summit.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ⓐⓔ만 옳다. ⓑ why+to부정사, ⓒ 동명사, ⓓ to charging이 모두 틀렸다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nⓐ Please show me how to attach the file.\nⓑ She hasn't decided what to study in college.\nⓒ My brother taught me how to fold a shirt.\nⓓ The sign explains where to throw the trash.\nⓔ I wonder when should I start.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "ⓔ만 틀렸다. wonder의 목적어절은 when I should start 어순이어야 한다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?\nⓐ I don't know what to say.\nⓑ He asked where to going.\nⓒ Tell me how use it.\nⓓ We decided when to meet.\nⓔ She knows which to pick.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ⓑ(to going)와 ⓒ(how use)가 틀렸다. 나머지는 모두 바른 형태이다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?\nⓐ Do you know how to they solve it?\nⓑ I can't decide what movie to watch.\nⓒ The nurse showed us where washing our hands.\nⓓ He explained how to save the file.\nⓔ They wondered why to come.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ⓐ(주어 삽입), ⓒ(동명사), ⓔ(why+to부정사)가 틀렸다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nⓐ Tell me who to call in an emergency.\nⓑ I learned how to make a website.\nⓒ She didn't know what to bring.\nⓓ We asked when we should return.\nⓔ He forgot where to put his glasses.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 5,
+   "why": "다섯 문장 모두 <의문사+to부정사> 또는 <의문사+주어+should+동사원형>을 바르게 쓴 문장이다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n나는 그에게 무슨 말을 해야 할지 몰라서 그냥 웃었다.",
+   "choices": [
+    "I didn't know what should say to him, so I just smiled.",
+    "I didn't know what saying to him, so I just smiled.",
+    "I didn't know what to say to him, so I just smiled.",
+    "I didn't know what to saying to him, so I just smiled.",
+    "I didn't know how to say to him, so I just smiled."
+   ],
+   "answer": 3,
+   "why": "'무슨 말을 할지'는 what to say. how to say to him은 say의 목적어가 없어 어색하다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그녀는 어느 대학에 지원할지 아직 정하지 못했다.",
+   "choices": [
+    "She hasn't decided which university applying to yet.",
+    "She hasn't decided what university apply to yet.",
+    "She hasn't decided which university to apply to yet.",
+    "She hasn't decided which university she should to apply to yet.",
+    "She hasn't decided to which university apply yet."
+   ],
+   "answer": 3,
+   "why": "which+명사+to+동사원형 형태가 맞다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n선생님은 우리에게 보고서를 언제 제출해야 하는지 알려 주셨다.",
+   "choices": [
+    "Our teacher told us when we should submit the report.",
+    "Our teacher told us when submitting the report.",
+    "Our teacher told us when submit the report.",
+    "Our teacher told us when should we submit the report.",
+    "Our teacher told us to when submit the report."
+   ],
+   "answer": 1,
+   "why": "<when+주어+should+동사원형> 어순이 옳다. when to submit으로도 쓸 수 있다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그는 나에게 그 기계를 어떻게 작동시키는지 설명해 주었다.",
+   "choices": [
+    "He explained to me what to operate the machine.",
+    "He explained to me how operating the machine.",
+    "He explained to me how operate the machine.",
+    "He explained to me how to operate the machine.",
+    "He explained to me how to operating the machine."
+   ],
+   "answer": 4,
+   "why": "how to+동사원형이 바른 형태이다. what to operate는 the machine이 이미 목적어이므로 쓸 수 없다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n우리는 그 오래된 피아노를 어디에 두어야 할지 논의했다.",
+   "choices": [
+    "We discussed where put the old piano.",
+    "We discussed where putting the old piano.",
+    "We discussed where to put the old piano.",
+    "We discussed what to put the old piano.",
+    "We discussed where to putting the old piano."
+   ],
+   "answer": 3,
+   "why": "장소를 나타내므로 where to put. 목적어가 이미 있으므로 what은 불가하다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말로 알맞게 짝지은 것은?\nWhen I arrived in Busan, I didn't know (A)____ or (B)____. [(A) 어디에서 묵을지 (B) 무엇을 먹을지]",
+   "choices": [
+    "where staying - what to eat",
+    "where to stay - what to eat",
+    "where to stay - what eating",
+    "where to staying - what to eat",
+    "where stay - what eat"
+   ],
+   "answer": 2,
+   "why": "둘 다 <의문사+to+동사원형> 형태여야 한다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말로 알맞게 짝지은 것은?\nThe recipe tells you (A)____ the oven and (B)____ the cake. [(A) 언제 예열할지 (B) 얼마나 오래 구울지]",
+   "choices": [
+    "when preheat - how long bake",
+    "when preheating - how long baking",
+    "when to preheat - how long to bake",
+    "when to preheating - how long to baking",
+    "when should preheat - how long should bake"
+   ],
+   "answer": 3,
+   "why": "how long처럼 두 단어로 된 의문사구 뒤에도 <to+동사원형>을 쓴다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말로 알맞게 짝지은 것은?\nOur club is discussing (A)____ the fundraising event and (B)____ for help. [(A) 언제 열지 (B) 누구에게 요청할지]",
+   "choices": [
+    "when hold - who ask",
+    "when to hold - whom asking",
+    "when holding - whom asking",
+    "when to holding - whom to ask",
+    "when to hold - whom to ask"
+   ],
+   "answer": 5,
+   "why": "두 자리 모두 <의문사+to+동사원형>이어야 한다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말로 알맞게 짝지은 것은?\nThe teacher explained (A)____ the experiment safely, but she forgot to say (B)____ the used bottles. [(A) 어떻게 할지 (B) 어디에 버릴지]",
+   "choices": [
+    "how to do - where to throw away",
+    "how to do - where throw away",
+    "how do - where to throw away",
+    "how doing - where throwing away",
+    "how to doing - where to throwing away"
+   ],
+   "answer": 1,
+   "why": "두 곳 모두 <의문사+to+동사원형> 형태가 되어야 한다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말로 알맞게 짝지은 것은?\nBefore the interview, Minsu couldn't decide (A)____ or (B)____. [(A) 무엇을 입을지 (B) 언제 도착해야 할지]",
+   "choices": [
+    "what to wear - when to arrive",
+    "what wearing - when arriving",
+    "what to wearing - when to arriving",
+    "what wear - when arrive",
+    "what to wear - when arriving"
+   ],
+   "answer": 1,
+   "why": "두 구 모두 <의문사+to+동사원형>으로 써야 한다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 <의문사+to부정사>를 사용하여 다시 쓰시오. (완전한 문장으로 쓸 것)\nI couldn't decide which team I should join.",
+   "answer": "I couldn't decide which team to join.",
+   "why": "which team I should join = which team to join.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 <의문사+to부정사>를 사용하여 다시 쓰시오. (완전한 문장으로 쓸 것)\nThe librarian showed us where we should return the books.",
+   "answer": "The librarian showed us where to return the books.",
+   "why": "where we should return = where to return.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 <의문사+to부정사>를 사용하여 다시 쓰시오. (완전한 문장으로 쓸 것)\nMy father taught me how I should change a flat tire.",
+   "answer": "My father taught me how to change a flat tire.",
+   "why": "how I should change = how to change.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 <의문사+to부정사>를 사용하여 다시 쓰시오. (완전한 문장으로 쓸 것)\nNobody told me when I should turn off the machine.",
+   "answer": "Nobody told me when to turn off the machine.",
+   "why": "when I should turn off = when to turn off.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 <의문사+주어+should+동사원형>을 사용하여 다시 쓰시오. (완전한 문장으로 쓸 것)\nI don't know where to get off.",
+   "answer": "I don't know where I should get off.",
+   "why": "where to get off = where I should get off.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 <의문사+주어+should+동사원형>을 사용하여 다시 쓰시오. (완전한 문장으로 쓸 것)\nShe hasn't decided what to say at the ceremony.",
+   "answer": "She hasn't decided what she should say at the ceremony.",
+   "why": "what to say = what she should say.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 <의문사+주어+should+동사원형>을 사용하여 다시 쓰시오. (완전한 문장으로 쓸 것)\nWe are discussing when to release the album.",
+   "answer": "We are discussing when we should release the album.",
+   "why": "when to release = when we should release.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nAfter the accident, the driver didn't know <u>whom calling</u> first.",
+   "answer": "whom to call",
+   "alt": [
+    "who to call"
+   ],
+   "why": "의문사 뒤에는 동명사가 아니라 <to+동사원형>을 쓴다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nThe instructions explain <u>how connecting</u> the printer to a laptop.",
+   "answer": "how to connect",
+   "why": "how+to+동사원형이 바른 형태이다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nOur teacher asked us <u>which topic writing</u> about.",
+   "answer": "which topic to write",
+   "why": "which+명사 뒤에도 <to+동사원형>을 쓴다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nI can't remember <u>where to putting</u> my passport.",
+   "answer": "where to put",
+   "why": "to 뒤에는 반드시 동사원형이 온다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nHe wondered <u>what should he do</u> with the extra tickets.",
+   "answer": "what he should do",
+   "alt": [
+    "what to do"
+   ],
+   "why": "목적어 자리의 의문사절은 <의문사+주어+동사> 어순이며, what to do로 줄여 쓸 수도 있다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 세 단어를 쓰시오. (when, break를 이용할 것)\nShe didn't know ____ the news. (그녀는 그 소식을 언제 알려야 할지 몰랐다.)",
+   "answer": "when to break",
+   "why": "break the news는 '소식을 알리다'라는 뜻이며 when+to부정사를 쓴다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 세 단어를 쓰시오. (where, submit을 이용할 것)\nPlease tell me ____ this form. (이 서류를 어디에 제출해야 할지 알려 주세요.)",
+   "answer": "where to submit",
+   "why": "장소를 나타내므로 where+to부정사를 쓴다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 세 단어를 쓰시오. (how, manage를 이용할 것)\nThe workshop teaches teenagers ____ their money. (그 워크숍은 십 대에게 돈을 어떻게 관리하는지 가르친다.)",
+   "answer": "how to manage",
+   "why": "'~하는 법'은 how+to부정사이다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 세 단어를 쓰시오. (whom, bring을 이용할 것)\nWe haven't decided ____ to the concert. (우리는 누구를 콘서트에 데려갈지 정하지 못했다.)",
+   "answer": "whom to bring",
+   "alt": [
+    "who to bring"
+   ],
+   "why": "사람을 목적어로 하므로 whom(who)+to부정사를 쓴다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하여 빈칸을 완성하시오.\n(long / how / boil / to) I asked my mom ____ the eggs.",
+   "answer": "how long to boil",
+   "why": "how long은 하나의 의문사구로 묶여 뒤에 <to+동사원형>이 온다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하여 빈칸을 완성하시오.\n(one / to / which / choose) Standing in front of the shelf, I couldn't decide ____.",
+   "answer": "which one to choose",
+   "why": "which one이 하나의 덩어리이고 그 뒤에 <to+동사원형>이 온다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하여 빈칸을 완성하시오.\n(to / where / hang) The staff showed us ____ our coats.",
+   "answer": "where to hang",
+   "why": "where+to+동사원형 순서로 배열한다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 세 단어를 쓰시오.\nHe explained how we should set up the tent. = He explained ____ the tent.",
+   "answer": "how to set up",
+   "why": "how we should set up = how to set up.",
+   "no": 200
+  }
+ ]
+}

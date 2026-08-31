@@ -1327,6 +1327,1346 @@
    ],
    "why": "hope는 to부정사를 목적어로 취하므로 I hope to become a famous chef.로 쓴다.",
    "no": 100
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nI plan ____ my room this Saturday.",
+   "choices": [
+    "paint",
+    "paints",
+    "painting",
+    "painted",
+    "to paint"
+   ],
+   "answer": 5,
+   "why": "plan은 to부정사를 목적어로 취하는 동사이므로 to paint가 알맞다. paint·paints·painted는 동사 형태라 plan 뒤에 바로 올 수 없고, painting(동명사)도 plan의 목적어로 쓰지 않는다.",
+   "no": 101
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nSujin learned ____ the guitar last year.",
+   "choices": [
+    "play",
+    "to play",
+    "plays",
+    "to playing",
+    "played"
+   ],
+   "answer": 2,
+   "why": "learn은 to부정사를 목적어로 취하므로 to play가 알맞다. play·plays·played는 동사가 두 개 겹치게 되어 안 되고, to playing은 <to+동사원형>이라는 to부정사 형태에 어긋난다.",
+   "no": 102
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nWe went to the aquarium ____ the dolphins. (돌고래를 보기 위해)",
+   "choices": [
+    "see",
+    "sees",
+    "seeing",
+    "saw",
+    "to see"
+   ],
+   "answer": 5,
+   "why": "'~하기 위해'라는 목적은 부사적 용법의 to부정사로 나타내므로 to see가 알맞다. see·sees·saw는 동사가 두 개 겹치고, seeing은 목적의 뜻을 나타낼 수 없다.",
+   "no": 103
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nI was excited ____ the amusement park with my cousins.",
+   "choices": [
+    "to visit",
+    "visit",
+    "visiting",
+    "visited",
+    "to visiting"
+   ],
+   "answer": 1,
+   "why": "감정을 나타내는 형용사(excited) 뒤에서 그 감정의 원인은 to부정사로 쓰므로 to visit이 알맞다. visit·visited는 동사가 겹치고, visiting과 to visiting은 <to+동사원형> 형태가 아니다.",
+   "no": 104
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n____ kimchi with my grandmother is really fun.",
+   "choices": [
+    "To make",
+    "Make",
+    "Makes",
+    "Made",
+    "To making"
+   ],
+   "answer": 1,
+   "why": "문장의 주어 자리이므로 명사처럼 쓰이는 to부정사 To make가 알맞다. Make·Makes·Made는 동사여서 주어가 될 수 없고, To making은 to 뒤에 동사원형이 와야 한다는 규칙을 어긴다.",
+   "no": 105
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nMy hobby is ____ pictures of flowers. (꽃 사진을 찍는 것)",
+   "choices": [
+    "to take",
+    "take",
+    "takes",
+    "to taking",
+    "took"
+   ],
+   "answer": 1,
+   "why": "be동사 뒤 보어 자리에서 '~하는 것'을 뜻하므로 명사적 용법의 to take가 알맞다. take·takes·took는 동사여서 보어가 될 수 없고, to taking은 to 뒤에 동사원형이 와야 한다.",
+   "no": 106
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 들어갈 말은?\n· They hope ____ join our club.\n· She called her friend ____ say sorry.",
+   "choices": [
+    "to",
+    "for",
+    "of",
+    "so",
+    "and"
+   ],
+   "answer": 1,
+   "why": "첫 문장은 hope의 목적어인 to부정사(to join), 둘째 문장은 '~하기 위해'라는 목적의 to부정사(to say)이므로 공통으로 to가 들어간다. for·of는 전치사라서 뒤에 동사원형이 올 수 없고, so·and는 접속사여서 두 문장 모두에 맞지 않는다.",
+   "no": 107
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 알맞은 문장은?",
+   "choices": [
+    "I need finish my homework.",
+    "I need to finish my homework.",
+    "I need to finishing my homework.",
+    "I need to finished my homework.",
+    "I need finishes my homework."
+   ],
+   "answer": 2,
+   "why": "need는 to부정사를 목적어로 취하므로 need to finish가 옳다. ①⑤는 need 뒤에 동사가 그대로 와서 동사가 겹치고, ③④는 to 뒤에 동사원형이 아닌 finishing·finished가 왔다.",
+   "no": 108
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 문장은?",
+   "choices": [
+    "She wants to feed the cat.",
+    "We hope to camp by the lake.",
+    "To wash the dishes is my job at home.",
+    "He went to the bank to sent money.",
+    "I was glad to get your postcard."
+   ],
+   "answer": 4,
+   "why": "④는 목적을 나타내는 to부정사이므로 to sent가 아니라 to send로 써야 한다. ①②는 want·hope의 목적어로 쓰인 to부정사, ③은 주어로 쓰인 to부정사, ⑤는 감정의 원인을 나타내는 to부정사로 모두 옳다.",
+   "no": 109
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 알맞지 않은 것은?",
+   "choices": [
+    "She decided <u>to walk</u> to school.",
+    "They plan <u>to build</u> a snowman.",
+    "I hope <u>to swimming</u> in the pool.",
+    "We need <u>to buy</u> some milk.",
+    "He wants <u>to be</u> a firefighter."
+   ],
+   "answer": 3,
+   "why": "to부정사는 <to+동사원형>이므로 ③의 to swimming은 to swim으로 고쳐야 한다. 나머지는 모두 decide·plan·need·want의 목적어로 쓰인 <to+동사원형> 형태로 옳다.",
+   "no": 110
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말을 영어로 옳게 옮긴 것은?\n그녀는 수의사가 되기를 희망한다.",
+   "choices": [
+    "She hopes be a vet.",
+    "She hopes being a vet.",
+    "She hopes to be a vet.",
+    "She hopes to being a vet.",
+    "She hopes to is a vet."
+   ],
+   "answer": 3,
+   "why": "hope는 to부정사를 목적어로 취하므로 hopes to be가 옳다. ①은 to가 빠졌고, ②는 동명사, ④⑤는 to 뒤에 동사원형이 아닌 being·is가 왔다.",
+   "no": 111
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\nA: Why did you go to the drugstore?\nB: ____ some medicine for my sister.",
+   "choices": [
+    "To buy",
+    "Buy",
+    "Buying",
+    "Bought",
+    "For buy"
+   ],
+   "answer": 1,
+   "why": "Why로 물었으므로 '~하기 위해서'라는 목적을 나타내는 To buy로 답해야 한다. Buy·Bought는 이유를 나타내지 못하는 동사 형태이고, Buying도 목적의 뜻이 없으며, For buy는 전치사 뒤에 동사원형이 온 잘못된 형태이다.",
+   "no": 112
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nMina goes to the science club every Friday ____ robots. (로봇을 만들기 위해)",
+   "choices": [
+    "to build",
+    "build",
+    "builds",
+    "building",
+    "built"
+   ],
+   "answer": 1,
+   "why": "'~하기 위해'라는 목적은 부사적 용법의 to부정사로 나타내므로 to build가 알맞다. build·builds·built는 동사가 겹쳐서 안 되고, building은 목적의 뜻을 나타내지 못한다.",
+   "no": 113
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nHis job is ____ letters to every house. (집집마다 편지를 배달하는 것)",
+   "choices": [
+    "to deliver",
+    "deliver",
+    "delivers",
+    "delivered",
+    "to delivering"
+   ],
+   "answer": 1,
+   "why": "be동사 뒤 보어 자리에서 '~하는 것'을 뜻하므로 to deliver가 알맞다. deliver·delivers·delivered는 동사라서 보어가 될 수 없고, to delivering은 to 뒤에 동사원형이 와야 한다는 규칙에 어긋난다.",
+   "no": 114
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nI'm sorry ____ you so late at night. (이렇게 늦은 밤에 전화해서 미안해)",
+   "choices": [
+    "to call",
+    "call",
+    "calling",
+    "called",
+    "to calling"
+   ],
+   "answer": 1,
+   "why": "sorry 같은 감정 형용사 뒤에서 그 감정의 원인은 to부정사로 나타내므로 to call이 알맞다. call·called는 동사가 겹치고, calling·to calling은 to부정사 형태가 아니다.",
+   "no": 115
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nHe borrowed Mom's laptop ____ his report. (보고서를 인쇄하기 위해)",
+   "choices": [
+    "print",
+    "prints",
+    "printing",
+    "printed",
+    "to print"
+   ],
+   "answer": 5,
+   "why": "노트북을 빌린 목적을 나타내므로 부사적 용법의 to print가 알맞다. print·prints·printed는 동사가 겹치고, printing은 '~하기 위해'라는 목적의 뜻을 나타낼 수 없다.",
+   "no": 116
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n____ the stairs is good exercise.",
+   "choices": [
+    "To climb",
+    "Climb",
+    "Climbs",
+    "Climbed",
+    "To climbing"
+   ],
+   "answer": 1,
+   "why": "주어 자리이므로 명사처럼 쓰이는 To climb이 알맞고, 단수 취급하여 is와 어울린다. Climb·Climbs·Climbed는 동사여서 주어가 될 수 없고, To climbing은 to 뒤에 동사원형이 와야 한다.",
+   "no": 117
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nOur class decided ____ the park next Sunday.",
+   "choices": [
+    "to clean",
+    "clean",
+    "cleans",
+    "cleaning",
+    "cleaned"
+   ],
+   "answer": 1,
+   "why": "decide는 to부정사를 목적어로 취하므로 to clean이 알맞다. clean·cleans·cleaned는 동사가 겹치고, cleaning(동명사)은 decide의 목적어로 쓰지 않는다.",
+   "no": 118
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\nA: What do you want to do this vacation?\nB: I want ____ swimming every day.",
+   "choices": [
+    "go",
+    "goes",
+    "going",
+    "went",
+    "to go"
+   ],
+   "answer": 5,
+   "why": "want는 to부정사를 목적어로 취하므로 to go가 알맞다. go·goes·went는 want 뒤에 동사가 겹치게 되고, want going처럼 동명사를 목적어로 쓰지도 않는다.",
+   "no": 119
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nShe was surprised ____ her old teacher at the bus stop.",
+   "choices": [
+    "meet",
+    "meets",
+    "meeting",
+    "met",
+    "to meet"
+   ],
+   "answer": 5,
+   "why": "surprised 뒤에서 놀란 원인을 나타내므로 감정의 원인을 뜻하는 to meet이 알맞다. meet·meets·met은 동사가 겹치고, meeting은 감정의 원인을 나타내는 형태가 아니다.",
+   "no": 120
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞게 쓰인 문장은?",
+   "choices": [
+    "They went to the beach collect shells.",
+    "They went to the beach to collect shells.",
+    "They went to the beach to collecting shells.",
+    "They went to the beach for collect shells.",
+    "They went to the beach collected shells."
+   ],
+   "answer": 2,
+   "why": "'조개를 줍기 위해'라는 목적은 <to+동사원형>으로 나타내므로 to collect가 옳다. ①⑤는 한 문장에 동사가 두 개 겹치고, ③은 to 뒤에 동사원형이 아닌 collecting이 왔으며, ④는 전치사 for 뒤에 동사원형을 쓸 수 없다.",
+   "no": 121
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\n· I want to join the choir.\n· He hopes to sees you again.\n· To skate on the ice is fun.\n· She went out to walks her dog.\n· My plan is to save 10,000 won every week.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "want의 목적어(to join), 주어로 쓰인 To skate, 보어로 쓰인 to save까지 세 문장이 옳다. to sees와 to walks는 to 뒤에 동사원형이 와야 하므로 각각 to see, to walk로 고쳐야 한다.",
+   "no": 122
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\nA: Why are you wearing a helmet?\nB: ____ my head. (머리를 보호하기 위해)",
+   "choices": [
+    "Protect",
+    "Protecting",
+    "To protect",
+    "Protected",
+    "For protect"
+   ],
+   "answer": 3,
+   "why": "Why에 대한 답으로 목적을 나타내야 하므로 To protect가 알맞다. Protect·Protected는 목적의 뜻이 없고, Protecting도 '~하기 위해'로 쓰이지 않으며, For protect는 전치사 뒤에 동사원형이 온 잘못된 형태이다.",
+   "no": 123
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말을 영어로 옳게 옮긴 것은?\n그는 새 자전거를 받아서 기뻤다.",
+   "choices": [
+    "He was glad get a new bike.",
+    "He was glad to get a new bike.",
+    "He glad to get a new bike.",
+    "He was glad to getting a new bike.",
+    "He was glad getting a new bike."
+   ],
+   "answer": 2,
+   "why": "기쁜 감정의 원인을 나타내야 하므로 glad 뒤에 to get을 쓴다. ①은 to가 없어 동사가 겹치고, ③은 be동사가 빠졌으며, ④는 to 뒤에 동사원형이 아니고, ⑤는 감정의 원인을 -ing로 쓸 수 없다.",
+   "no": 124
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\nHe plans (fix) ____ his bike this weekend.",
+   "answer": "to fix",
+   "alt": [],
+   "why": "plan은 to부정사를 목적어로 취하는 동사이므로 to fix로 쓴다. 원형 fix나 fixing을 쓰면 plan의 목적어 자리에 맞지 않는다.",
+   "no": 125
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\nI opened the box (check) ____ the gift inside.",
+   "answer": "to check",
+   "alt": [],
+   "why": "상자를 연 목적을 나타내므로 부사적 용법의 to check로 쓴다. 원형 check를 쓰면 한 문장에 동사가 두 개 겹치게 된다.",
+   "no": 126
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nShe wants <u>going</u> to the amusement park.",
+   "answer": "to go",
+   "alt": [],
+   "why": "want는 동명사가 아니라 to부정사를 목적어로 취하므로 going을 to go로 고쳐야 한다.",
+   "no": 127
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\nWe were lucky (find) ____ a seat on the bus.",
+   "answer": "to find",
+   "alt": [],
+   "why": "lucky 뒤에서 운이 좋았던 원인을 나타내므로 감정의 원인을 뜻하는 to find로 쓴다. 원형 find나 finding은 이 자리에 올 수 없다.",
+   "no": 128
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 to부정사로 바꿔 쓰시오.\n(keep) ____ a pet takes time and love.",
+   "answer": "To keep",
+   "alt": [
+    "to keep"
+   ],
+   "why": "문장의 주어 자리이므로 명사처럼 쓰이는 To keep으로 쓴다. 문장 첫머리이므로 대문자로 시작하고, 동사 Keep을 그대로 두면 주어가 없는 문장이 된다.",
+   "no": 129
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 단어를 이용하여 빈칸을 채우시오. (두 단어)\nHis goal is ____ ____ the school band. (join)",
+   "answer": "to join",
+   "alt": [],
+   "why": "be동사 뒤 보어 자리에서 '~하는 것'을 뜻하므로 to join으로 쓴다. 두 단어를 쓰라고 했으므로 joining은 답이 될 수 없다.",
+   "no": 130
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nI go to the park every evening <u>for walk</u> my dog.",
+   "answer": "to walk",
+   "alt": [],
+   "why": "'~하기 위해'라는 목적은 <to+동사원형>으로 나타내므로 for walk를 to walk로 고쳐야 한다. 전치사 for 뒤에는 동사원형을 쓸 수 없다.",
+   "no": 131
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 어법상 알맞은 것을 골라 쓰시오.\nShe went to the store (buy / to buy / buying) some batteries.",
+   "answer": "to buy",
+   "alt": [],
+   "why": "가게에 간 목적을 나타내므로 to buy가 알맞다. buy를 쓰면 동사가 두 개 겹치고, buying은 목적의 뜻을 나타내지 못한다.",
+   "no": 132
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\nDad went to the market (get) ____ some fresh fish.",
+   "answer": "to get",
+   "alt": [],
+   "why": "시장에 간 목적을 나타내므로 부사적 용법의 to get으로 쓴다. 원형 get을 쓰면 went와 동사가 겹친다.",
+   "no": 133
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 공통으로 들어갈 한 단어를 쓰시오.\n· I hope ____ see you soon.\n· She turned off the TV ____ do her homework.",
+   "answer": "to",
+   "alt": [],
+   "why": "첫 문장은 hope의 목적어인 to부정사(to see), 둘째 문장은 목적을 나타내는 to부정사(to do)이므로 공통으로 to가 들어간다.",
+   "no": 134
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 to부정사의 쓰임이 나머지 넷과 다른 하나는?",
+   "choices": [
+    "She went to the park <u>to jog</u> before breakfast.",
+    "I called the store <u>to ask</u> about the price.",
+    "He saved money <u>to buy</u> a drone.",
+    "My plan is <u>to write</u> a short story.",
+    "They came early <u>to get</u> good seats."
+   ],
+   "answer": 4,
+   "why": "④는 be동사의 보어로 쓰여 '~하는 것'을 뜻하는 명사적 용법이다. ①②③⑤는 모두 '~하기 위해'라는 목적을 나타내는 부사적 용법이므로 성격이 다르다.",
+   "no": 135
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 to부정사와 용법이 같은 것은?\n보기: <u>To ride</u> a scooter on this street is dangerous.",
+   "choices": [
+    "He exercises every day <u>to lose</u> weight.",
+    "<u>To finish</u> the puzzle took two hours.",
+    "She was upset <u>to miss</u> the last bus.",
+    "We hurried <u>to catch</u> the train.",
+    "They stayed up late <u>to watch</u> the soccer game."
+   ],
+   "answer": 2,
+   "why": "보기의 To ride는 문장의 주어로 쓰인 명사적 용법이고, ②의 To finish도 took의 주어로 쓰인 명사적 용법이다. ①④⑤는 목적, ③은 감정의 원인을 나타내는 부사적 용법이다.",
+   "no": 136
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nJiho waters the plants every morning ____ them healthy. (건강하게 유지하기 위해)",
+   "choices": [
+    "keep",
+    "keeps",
+    "keeping",
+    "kept",
+    "to keep"
+   ],
+   "answer": 5,
+   "why": "물을 주는 목적을 나타내므로 부사적 용법의 to keep이 알맞다. keep·keeps·kept는 waters와 동사가 겹치고, keeping은 목적의 뜻을 나타내지 못한다.",
+   "no": 137
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 바른 문장은?",
+   "choices": [
+    "To collect stamps are my father's hobby.",
+    "She promised to calls me tonight.",
+    "I went to the station to meet my aunt.",
+    "He was shocked to seeing the broken window.",
+    "They need washing the car today."
+   ],
+   "answer": 3,
+   "why": "③은 역에 간 목적을 <to+동사원형>으로 바르게 나타냈다. ①은 주어인 to부정사를 단수 취급해 is로 써야 하고, ②④는 to 뒤에 동사원형이 와야 하며, ⑤는 need의 목적어로 to wash를 써야 한다.",
+   "no": 138
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 바르지 않은 문장은?",
+   "choices": [
+    "My wish is to travel to Africa someday.",
+    "She uses her phone to check the weather.",
+    "To share food with friends is nice.",
+    "He decided joining the art club.",
+    "We were happy to work with you."
+   ],
+   "answer": 4,
+   "why": "decide는 to부정사를 목적어로 취하므로 ④는 joining을 to join으로 고쳐야 한다. ①은 보어, ③은 주어로 쓰인 명사적 용법, ②는 목적, ⑤는 감정의 원인을 나타내는 부사적 용법으로 모두 옳다.",
+   "no": 139
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 옳게 옮긴 것은?\n우리는 별을 보기 위해 캠핑을 갔다.",
+   "choices": [
+    "We went camping see the stars.",
+    "We went camping for see the stars.",
+    "We went camping to seeing the stars.",
+    "We went camping to see the stars.",
+    "We went camping saw the stars."
+   ],
+   "answer": 4,
+   "why": "목적은 <to+동사원형>으로 나타내므로 to see가 옳다. ①⑤는 동사가 두 개 겹치고, ②는 전치사 for 뒤에 동사원형을 쓸 수 없으며, ③은 to 뒤에 동사원형이 아닌 seeing이 왔다.",
+   "no": 140
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\nA: Why are you learning Japanese?\nB: I'm learning it ____ Japanese comic books without a translation.",
+   "choices": [
+    "read",
+    "reads",
+    "reading",
+    "to reading",
+    "to read"
+   ],
+   "answer": 5,
+   "why": "일본어를 배우는 목적을 나타내야 하므로 to read가 알맞다. read·reads는 동사가 겹치고, reading은 목적의 뜻이 없으며, to reading은 to부정사 형태가 아니다.",
+   "no": 141
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 들어갈 말은?\n· Mina decided ____ her old comic books.\n· She held a yard sale ____ them at a low price.",
+   "choices": [
+    "sell",
+    "sells",
+    "selling",
+    "sold",
+    "to sell"
+   ],
+   "answer": 5,
+   "why": "첫 문장은 decide의 목적어인 명사적 용법, 둘째 문장은 '팔기 위해'라는 목적의 부사적 용법이므로 둘 다 to sell이 들어간다. 나머지는 to부정사 형태가 아니어서 두 자리 모두에 쓸 수 없다.",
+   "no": 142
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분이 잘못 쓰인 것은?",
+   "choices": [
+    "We took a taxi <u>to arrive</u> on time.",
+    "His dream is <u>to become</u> a game designer.",
+    "I was sorry <u>to hearing</u> about your accident.",
+    "<u>To ask</u> good questions is important.",
+    "She wants <u>to adopt</u> a puppy from a shelter."
+   ],
+   "answer": 3,
+   "why": "to부정사는 <to+동사원형>이므로 ③의 to hearing은 to hear로 고쳐야 한다. ①은 목적, ②는 보어, ④는 주어, ⑤는 목적어로 쓰인 to부정사로 형태가 모두 옳다.",
+   "no": 143
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 문장을 한 문장으로 만들 때 빈칸에 알맞은 말은?\nHe borrowed a ladder. He wanted to fix the roof.\n= He borrowed a ladder ____ the roof.",
+   "choices": [
+    "fix",
+    "fixing",
+    "fixed",
+    "to fixing",
+    "to fix"
+   ],
+   "answer": 5,
+   "why": "'~하고 싶어서 …했다'는 목적의 to부정사로 합치므로 to fix가 알맞다. fix·fixed는 동사가 겹치고, fixing과 to fixing은 목적을 나타내는 올바른 형태가 아니다.",
+   "no": 144
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 옳게 옮긴 것은?\n그녀는 명단에서 자기 이름을 발견하고 놀랐다.",
+   "choices": [
+    "She was surprised find her name on the list.",
+    "She was surprised to found her name on the list.",
+    "She was surprised to find her name on the list.",
+    "She was surprised finding her name on the list.",
+    "She surprised to find her name on the list."
+   ],
+   "answer": 3,
+   "why": "감정의 원인은 <to+동사원형>으로 나타내므로 to find가 옳다. ①은 to가 빠졌고, ②는 to 뒤에 과거형이 왔으며, ④는 -ing형을 쓸 수 없고, ⑤는 be동사가 빠졌다.",
+   "no": 145
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 to부정사의 용법이 나머지 넷과 다른 것을 고르면?",
+   "choices": [
+    "I hope <u>to join</u> the science camp.",
+    "<u>To eat</u> too much sugar is bad for your teeth.",
+    "We were sorry <u>to leave</u> so early.",
+    "His goal is <u>to save</u> 100,000 won.",
+    "She decided <u>to sit</u> in the front row."
+   ],
+   "answer": 3,
+   "why": "③은 미안한 감정의 원인을 나타내는 부사적 용법이다. ①⑤는 목적어, ②는 주어, ④는 보어로 쓰인 명사적 용법이므로 ③만 성격이 다르다.",
+   "no": 146
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\nJulie joined a cooking class ____ how to make pasta.",
+   "choices": [
+    "learn",
+    "learns",
+    "learning",
+    "learned",
+    "to learn"
+   ],
+   "answer": 5,
+   "why": "요리 수업에 들어간 목적을 나타내므로 to learn이 알맞다. learn·learns·learned는 joined와 동사가 겹치고, learning은 목적의 뜻을 나타내지 못한다.",
+   "no": 147
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳게 쓰인 것은?",
+   "choices": [
+    "To gets a good seat, we arrived early.",
+    "She hopes to becoming a news reporter.",
+    "I was angry to losing my wallet.",
+    "My job is to answer the phone at the front desk.",
+    "We planned watching a movie together."
+   ],
+   "answer": 4,
+   "why": "④는 be동사의 보어로 쓰인 to부정사로 옳다. ①②③은 to 뒤에 동사원형이 와야 하므로 To get, to become, to lose로 고쳐야 하고, ⑤는 plan의 목적어로 to watch를 써야 한다.",
+   "no": 148
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\nA: What are you going to do at the school festival?\nB: I hope ____ the dance contest.",
+   "choices": [
+    "enter",
+    "enters",
+    "entering",
+    "to enter",
+    "to entering"
+   ],
+   "answer": 4,
+   "why": "hope는 to부정사를 목적어로 취하므로 to enter가 알맞다. enter·enters는 동사가 겹치고, entering은 hope의 목적어로 쓰지 않으며, to entering은 to부정사 형태가 아니다.",
+   "no": 149
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 to부정사가 감정의 원인을 나타내는 것을 고르면?",
+   "choices": [
+    "She practices hard <u>to win</u> the match.",
+    "We were disappointed <u>to see</u> the closed sign.",
+    "My hope is <u>to meet</u> my favorite writer.",
+    "<u>To wake</u> up early is hard in winter.",
+    "He wants <u>to try</u> Indian food."
+   ],
+   "answer": 2,
+   "why": "②는 disappointed라는 감정의 원인을 나타내는 부사적 용법이다. ①은 목적, ③은 보어, ④는 주어, ⑤는 목적어로 쓰였으므로 감정의 원인이 아니다.",
+   "no": 150
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말과 같도록 괄호 안의 말을 바르게 배열한 것은?\n나의 목표는 매일 30분씩 걷는 것이다. (my goal / is / to / walk / 30 minutes / every day)",
+   "choices": [
+    "My goal is to walk 30 minutes every day.",
+    "My goal to is walk 30 minutes every day.",
+    "My goal is walk to 30 minutes every day.",
+    "My goal is to 30 minutes walk every day.",
+    "My is goal to walk 30 minutes every day."
+   ],
+   "answer": 1,
+   "why": "보어 자리에 <to+동사원형>이 오고 그 뒤에 목적어와 부사구가 이어지므로 ①이 옳다. ②⑤는 be동사의 자리가 잘못되었고, ③은 to와 동사원형이 떨어졌으며, ④는 to 뒤에 동사원형이 바로 오지 않았다.",
+   "no": 151
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은?\n____ your hands often keeps you healthy.",
+   "choices": [
+    "Wash",
+    "Washes",
+    "Washed",
+    "To wash",
+    "To washing"
+   ],
+   "answer": 4,
+   "why": "주어 자리이므로 명사처럼 쓰이는 To wash가 알맞고, 단수 취급하여 keeps와 어울린다. Wash·Washes·Washed는 동사여서 주어가 될 수 없고, To washing은 to 뒤에 동사원형이 와야 한다.",
+   "no": 152
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳지 않은 것은?",
+   "choices": [
+    "Dad drove slowly to avoid an accident.",
+    "To listen to others carefully is a great skill.",
+    "We were glad to become classmates again.",
+    "She hopes to visits her cousin in Canada.",
+    "Their plan is to paint the old fence."
+   ],
+   "answer": 4,
+   "why": "to부정사는 <to+동사원형>이므로 ④의 to visits는 to visit으로 고쳐야 한다. ①은 목적, ③은 감정의 원인, ②는 주어, ⑤는 보어로 쓰인 to부정사로 모두 옳다.",
+   "no": 153
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\n· He hopes to becomes a vet.\n· To take a walk after dinner is good for you.\n· She turned on the light to read the map.\n· We were happy to helping the old man.\n· I need to change my shoes.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "주어로 쓰인 To take, 목적을 나타내는 to read, need의 목적어인 to change까지 세 문장이 옳다. to becomes와 to helping은 to 뒤에 동사원형이 와야 하므로 to become, to help로 고쳐야 한다.",
+   "no": 154
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 옳게 옮긴 것은?\n그녀는 친구를 놀라게 해 주려고 케이크를 만들었다.",
+   "choices": [
+    "She made a cake surprise her friend.",
+    "She made a cake to surprised her friend.",
+    "She made a cake for surprise her friend.",
+    "She made a cake to surprise her friend.",
+    "She made a cake surprising her friend."
+   ],
+   "answer": 4,
+   "why": "케이크를 만든 목적이므로 <to+동사원형>인 to surprise가 옳다. ①은 동사가 겹치고, ②는 to 뒤에 과거형이 왔으며, ③은 전치사 for 뒤에 동사원형을 쓸 수 없고, ⑤는 -ing형으로 목적을 나타낼 수 없다.",
+   "no": 155
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\nA: You look tired today.\nB: Yes. I stayed up late ____ my science project.",
+   "choices": [
+    "finish",
+    "finishes",
+    "finishing",
+    "finished",
+    "to finish"
+   ],
+   "answer": 5,
+   "why": "늦게까지 깨어 있었던 목적을 나타내므로 to finish가 알맞다. finish·finishes·finished는 stayed와 동사가 겹치고, finishing은 목적의 뜻을 나타내지 못한다.",
+   "no": 156
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 to가 들어갈 수 있는 것은?",
+   "choices": [
+    "I can ____ swim very well.",
+    "She will ____ call you later.",
+    "He wants ____ ride a horse.",
+    "They must ____ leave now.",
+    "We should ____ hurry up."
+   ],
+   "answer": 3,
+   "why": "want는 to부정사를 목적어로 취하므로 ③에는 to가 들어간다. ①②④⑤의 can·will·must·should는 조동사여서 바로 뒤에 동사원형만 올 수 있고 to를 쓸 수 없다.",
+   "no": 157
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장을 한 문장으로 만들 때 빈칸에 알맞은 말을 쓰시오. (두 단어)\nHe climbed the tree. He wanted to save the kitten.\n= He climbed the tree ____ ____ the kitten.",
+   "answer": "to save",
+   "alt": [],
+   "why": "나무에 올라간 목적을 나타내므로 목적의 부사적 용법인 to save로 합친다. 동사원형 save만 쓰면 한 문장에 동사가 두 개 겹친다.",
+   "no": 158
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\nGrandma was pleased (get) ____ a hand-written card.",
+   "answer": "to get",
+   "alt": [],
+   "why": "pleased라는 감정의 원인을 나타내므로 to get으로 쓴다. 원형 get이나 getting은 감정의 원인을 나타내는 자리에 올 수 없다.",
+   "no": 159
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 to부정사를 이용해 어법에 맞게 고쳐 쓰시오.\n<u>Ride</u> a bike without a helmet is dangerous.",
+   "answer": "To ride",
+   "alt": [
+    "to ride"
+   ],
+   "why": "동사원형 Ride는 주어가 될 수 없으므로 명사적 용법의 To ride로 고쳐야 한다. 문장 첫머리이므로 대문자로 쓴다.",
+   "no": 160
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 괄호 안의 말을 바르게 배열하여 문장을 쓰시오.\n그는 소방관이 되기를 원한다. (a firefighter / wants / he / be / to)",
+   "answer": "He wants to be a firefighter.",
+   "alt": [
+    "He wants to be a firefighter"
+   ],
+   "why": "want는 to부정사를 목적어로 취하므로 <주어+wants+to+동사원형+보어>의 순서로 쓴다. be를 wants 바로 뒤에 두면 동사가 겹쳐 틀린다.",
+   "no": 161
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안에서 어법상 알맞은 것을 골라 쓰시오.\nI hope (see / to see / seeing) your new painting soon.",
+   "answer": "to see",
+   "alt": [],
+   "why": "hope는 to부정사를 목적어로 취하므로 to see가 알맞다. see를 쓰면 동사가 두 개가 되고, hope는 동명사 seeing을 목적어로 쓰지 않는다.",
+   "no": 162
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\nHe put on a mask (avoid) ____ the fine dust.",
+   "answer": "to avoid",
+   "alt": [],
+   "why": "마스크를 쓴 목적을 나타내므로 부사적 용법의 to avoid로 쓴다. 원형 avoid를 쓰면 put과 동사가 겹친다.",
+   "no": 163
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 괄호 안의 단어를 이용하여 6단어로 영작하시오.\n그녀는 그 동아리에 가입하기로 결심했다. (decide, join)",
+   "answer": "She decided to join the club.",
+   "alt": [
+    "She decided to join the club"
+   ],
+   "why": "decide는 to부정사를 목적어로 취하므로 decided to join으로 쓴다. 과거의 일이므로 decide는 decided로, join은 to 뒤이므로 동사원형 그대로 쓴다.",
+   "no": 164
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 to부정사로 바꿔 쓰시오.\nMy goal is (swim) ____ 50 meters without stopping.",
+   "answer": "to swim",
+   "alt": [],
+   "why": "be동사 뒤 보어 자리에서 '~하는 것'을 뜻하므로 명사적 용법의 to swim으로 쓴다. 원형 swim은 보어가 될 수 없다.",
+   "no": 165
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nWe were lucky <u>catching</u> the last bus home.",
+   "answer": "to catch",
+   "alt": [],
+   "why": "lucky 뒤에서 운이 좋았던 원인을 나타내야 하므로 catching을 to catch로 고쳐야 한다. 감정의 원인은 -ing형이 아니라 to부정사로 쓴다.",
+   "no": 166
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장을 한 문장으로 만들 때 빈칸에 알맞은 말을 쓰시오. (두 단어)\nShe turned on the fan. She wanted to cool the room.\n= She turned on the fan ____ ____ the room.",
+   "answer": "to cool",
+   "alt": [],
+   "why": "선풍기를 켠 목적을 나타내므로 목적의 부사적 용법인 to cool로 합친다. 동사원형 cool만 쓰면 turned와 동사가 겹친다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. To takes pictures of birds is his favorite hobby.\nㄴ. He left the house early to catch the 7 o'clock bus.\nㄷ. She was upset to find a scratch on her new bike.",
+   "choices": [
+    "ㄱ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄴ은 목적, ㄷ은 감정의 원인을 나타내는 <to+동사원형>으로 옳다. ㄱ은 to 뒤에 동사원형이 와야 하므로 To take로 고쳐야 하며, 주어로 쓰인 to부정사는 단수 취급하므로 is와 어울린다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 틀린 것을 모두 고른 것은?\nㄱ. My sister promised to helps me with my math homework.\nㄴ. They opened a window to let the smoke out.\nㄷ. We were happy hearing that you passed the test.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄱ은 to 뒤에 동사원형을 써야 하므로 to help로, ㄷ은 감정의 원인을 to부정사로 나타내야 하므로 to hear로 고쳐야 한다. ㄴ은 창문을 연 목적을 to부정사로 바르게 나타냈다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 to부정사와 쓰임(용법)이 같은 것을 모두 고른 것은?\n보기: I was disappointed <u>to see</u> the rain outside.\nㄱ. He practiced every night <u>to stand</u> on the stage.\nㄴ. We were surprised <u>to learn</u> the truth.\nㄷ. She was proud <u>to wear</u> the school uniform.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "보기는 실망한 감정의 원인을 나타내는 부사적 용법이고, ㄴ·ㄷ도 각각 surprised·proud라는 감정의 원인을 나타낸다. ㄱ은 '무대에 서기 위해'라는 목적을 나타내므로 쓰임이 다르다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞는 문장을 고르면?",
+   "choices": [
+    "To arrives on time is important in our class.",
+    "The little boy stood on his toes to reach the shelf.",
+    "She was excited meeting the author in person.",
+    "My uncle hopes moving to the countryside.",
+    "They gathered wood for build a campfire."
+   ],
+   "answer": 2,
+   "why": "②는 발끝으로 선 목적을 <to+동사원형>으로 바르게 나타냈다. ①은 To arrive, ③은 to meet, ④는 to move로 고쳐야 하고, ⑤는 전치사 for 뒤에 동사원형을 쓸 수 없으므로 to build로 써야 한다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 어법상 바르지 못한 것은?",
+   "choices": [
+    "The players stretched <u>to warm</u> up their muscles.",
+    "I was glad <u>to share</u> my snack with you.",
+    "Her plan is <u>to opens</u> a small flower shop.",
+    "<u>To sing</u> in front of a crowd takes courage.",
+    "We hurried <u>to finish</u> the report before noon."
+   ],
+   "answer": 3,
+   "why": "to부정사는 <to+동사원형>이므로 ③의 to opens는 to open으로 고쳐야 한다. ①⑤는 목적, ②는 감정의 원인, ④는 주어로 쓰인 to부정사로 형태가 모두 옳다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 옳게 옮긴 것은?\n그녀는 아픈 동물들을 돕기 위해 수의사가 되기로 결심했다.",
+   "choices": [
+    "She decided become a vet to help sick animals.",
+    "She decided to become a vet to help sick animals.",
+    "She decided to becoming a vet for help sick animals.",
+    "She decided becoming a vet to helping sick animals.",
+    "She decided to become a vet help sick animals."
+   ],
+   "answer": 2,
+   "why": "decide의 목적어로 to become을, 목적을 나타내는 말로 to help를 써야 하므로 ②가 옳다. ①은 첫 번째 to가 빠졌고, ③④는 to 뒤에 -ing형이 왔거나 for 뒤에 동사원형이 왔으며, ⑤는 목적을 나타내는 to가 빠져 동사가 겹친다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (A)~(C)에 알맞은 말이 바르게 짝지어진 것은?\n· Junsu wants (A)____ his own comic book someday.\n· (B)____ interesting characters is the hardest part for him.\n· He reads many stories (C)____ new ideas.",
+   "choices": [
+    "draw – Create – getting",
+    "to draw – To create – to get",
+    "to draw – To creating – get",
+    "drawing – To create – to get",
+    "to draw – To create – getting"
+   ],
+   "answer": 2,
+   "why": "(A)는 want의 목적어, (B)는 문장의 주어, (C)는 '얻기 위해'라는 목적이므로 모두 <to+동사원형>이 필요하다. 따라서 to draw – To create – to get인 ②가 옳고, 동사원형이나 -ing형은 각 자리에 쓸 수 없다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 to부정사가 부사적 용법(목적)으로 쓰인 것을 모두 고른 것은?\nㄱ. I was glad <u>to hand</u> in my project on time.\nㄴ. My duty is <u>to feed</u> the class rabbit.\nㄷ. He borrowed a camera <u>to record</u> the school play.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄷ만 '녹화하기 위해'라는 목적을 나타내는 부사적 용법이다. ㄱ은 glad라는 감정의 원인을 나타내는 부사적 용법이고, ㄴ은 be동사의 보어로 쓰인 명사적 용법이다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 잘못 쓰인 문장은?",
+   "choices": [
+    "To grow your own vegetables saves money.",
+    "The museum lowered its price to attract more visitors.",
+    "I was lucky to have such a kind teacher.",
+    "We stayed at the beach to watching the sunset.",
+    "His only wish is to see his family again."
+   ],
+   "answer": 4,
+   "why": "목적을 나타내는 to부정사는 <to+동사원형>이므로 ④의 to watching은 to watch로 고쳐야 한다. ①은 주어, ⑤는 보어로 쓰인 명사적 용법, ②는 목적, ③은 감정의 원인을 나타내어 모두 옳다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "두 문장을 한 문장으로 바꿀 때 빈칸에 알맞은 것은?\nHe put on his headphones. He wanted to block the noise.\n= He put on his headphones ____.",
+   "choices": [
+    "block the noise",
+    "to blocking the noise",
+    "for block the noise",
+    "to block the noise",
+    "blocked the noise"
+   ],
+   "answer": 4,
+   "why": "'~하기 위해'라는 목적이므로 to block the noise가 알맞다. ①⑤는 동사가 두 개 겹치고, ②는 to 뒤에 동사원형이 와야 하며, ③은 전치사 for 뒤에 동사원형을 쓸 수 없다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\nA: Why do you carry a small notebook everywhere?\nB: ____ down my ideas before I forget them.",
+   "choices": [
+    "Write",
+    "To write",
+    "Writing",
+    "Written",
+    "For write"
+   ],
+   "answer": 2,
+   "why": "Why에 대한 답으로 목적을 나타내야 하므로 To write가 알맞다. Write·Written은 목적의 뜻이 없고, Writing도 이유를 나타내지 못하며, For write는 전치사 뒤에 동사원형이 온 잘못된 형태이다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 to부정사가 명사적 용법으로 쓰인 것을 모두 고른 것은?\nㄱ. <u>To become</u> a good listener takes practice.\nㄴ. Our goal is <u>to reduce</u> plastic waste.\nㄷ. She wore a mask <u>to protect</u> herself from dust.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 주어, ㄴ은 보어로 쓰여 둘 다 명사적 용법이다. ㄷ은 마스크를 쓴 목적을 나타내는 부사적 용법이므로 명사적 용법이 아니다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 to의 성격이 나머지 넷과 다른 것은?",
+   "choices": [
+    "I stopped <u>to</u> tie my shoelaces.",
+    "She hopes <u>to</u> travel by ship.",
+    "He gave his ticket <u>to</u> his little brother.",
+    "<u>To</u> save water is everyone's job.",
+    "We went out <u>to</u> take a walk."
+   ],
+   "answer": 3,
+   "why": "③의 to는 뒤에 명사(his little brother)가 오는 전치사이다. 나머지는 모두 뒤에 동사원형이 이어지는 to부정사의 to로, ①⑤는 목적, ②는 목적어, ④는 주어로 쓰였다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 문장의 개수는?\n· To fix old toys is his special talent.\n· She wrote a note to remind herself of the meeting.\n· I was amazed to see the huge waterfall.\n· He wishes to travels around Asia.\n· Their job is to guide tourists in the palace.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "주어로 쓰인 To fix, 목적을 나타내는 to remind, 감정의 원인인 to see, 보어로 쓰인 to guide까지 네 문장이 옳다. to travels만 to 뒤에 동사원형이 와야 하므로 to travel로 고쳐야 한다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 옮길 때 필요 없는 단어는?\n나는 그 미술관을 방문하기 위해 일찍 출발했다.\n(I / left / early / to / for / visit / the art museum)",
+   "choices": [
+    "left",
+    "early",
+    "to",
+    "for",
+    "visit"
+   ],
+   "answer": 4,
+   "why": "목적은 <to+동사원형>으로 나타내어 I left early to visit the art museum.이 되므로 전치사 for는 필요 없다. for 뒤에는 동사원형을 쓸 수 없어 for visit 같은 형태는 성립하지 않는다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은?\nA: I heard you joined the school newspaper club. Why?\nB: I joined it ____ my writing better.",
+   "choices": [
+    "make",
+    "to make",
+    "making",
+    "made",
+    "to making"
+   ],
+   "answer": 2,
+   "why": "동아리에 가입한 목적을 나타내므로 to make가 알맞다. make·made는 joined와 동사가 겹치고, making은 목적의 뜻이 없으며, to making은 to부정사 형태가 아니다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 to부정사의 용법이 나머지와 다른 것을 고르면?",
+   "choices": [
+    "He went online <u>to buy</u> a movie ticket.",
+    "She opened the fridge <u>to grab</u> a snack.",
+    "They lined up early <u>to enter</u> the concert hall.",
+    "My wish is <u>to visit</u> my old school someday.",
+    "I put on my scarf <u>to stay</u> warm."
+   ],
+   "answer": 4,
+   "why": "④는 be동사의 보어로 쓰여 '~하는 것'을 뜻하는 명사적 용법이다. ①②③⑤는 모두 '~하기 위해'라는 목적을 나타내는 부사적 용법이므로 ④만 쓰임이 다르다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. My aunt promised baking a cake for my birthday.\nㄴ. To water the plants every day is her morning routine.\nㄷ. He knocked on the door to ask for directions.\nㄹ. We were sorry to hurting your feelings.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄹ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ",
+    "ㄴ, ㄷ, ㄹ"
+   ],
+   "answer": 3,
+   "why": "ㄴ은 주어로 쓰인 명사적 용법, ㄷ은 목적을 나타내는 부사적 용법으로 옳다. ㄱ은 promise가 to부정사를 목적어로 취하므로 to bake로, ㄹ은 to 뒤에 동사원형이 와야 하므로 to hurt로 고쳐야 한다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· Our class decided ____ a tree on Arbor Day.\n· He dug a hole ____ the small apple tree.",
+   "choices": [
+    "plant",
+    "plants",
+    "planting",
+    "to plant",
+    "planted"
+   ],
+   "answer": 4,
+   "why": "첫 문장은 decide의 목적어인 명사적 용법, 둘째 문장은 '심기 위해'라는 목적의 부사적 용법이므로 둘 다 to plant가 들어간다. 나머지는 to부정사 형태가 아니어서 두 자리 모두에 쓸 수 없다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 to부정사가 문장의 목적어로 쓰인 것은?",
+   "choices": [
+    "<u>To make</u> a paper airplane is easy.",
+    "She promised <u>to return</u> my umbrella tomorrow.",
+    "His hope is <u>to play</u> in the final game.",
+    "They ran to the shelter <u>to escape</u> the rain.",
+    "I was glad <u>to sit</u> next to my best friend."
+   ],
+   "answer": 2,
+   "why": "②는 promised의 목적어로 쓰인 명사적 용법이다. ①은 주어, ③은 보어로 쓰인 명사적 용법이고, ④는 목적, ⑤는 감정의 원인을 나타내는 부사적 용법이다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 대화가 자연스럽지 않은 것은?",
+   "choices": [
+    "A: Why did you turn off your phone? B: To save the battery.",
+    "A: What does your sister want to be? B: She wants to be a news reporter.",
+    "A: Why is he wearing thick gloves? B: To carry the hot pot.",
+    "A: What is your goal this year? B: My goal is to speak English without fear.",
+    "A: Why did he open the umbrella? B: He was excited to open the umbrella."
+   ],
+   "answer": 5,
+   "why": "⑤는 우산을 편 이유를 물었는데 목적이 아닌 감정만 되풀이해 답이 되지 않으므로 어색하다. ①③은 목적의 to부정사로, ②④는 각각 want의 목적어와 보어로 쓰인 to부정사로 질문에 알맞게 답하고 있다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 옳게 옮긴 것은?\n나는 그 대회에서 1등을 해서 자랑스러웠다.",
+   "choices": [
+    "I proud to win first place in the contest.",
+    "I was proud to win first place in the contest.",
+    "I was proud win first place in the contest.",
+    "I was proud to won first place in the contest.",
+    "I was proud winning first place in the contest."
+   ],
+   "answer": 2,
+   "why": "감정의 원인은 <to+동사원형>으로 나타내므로 was proud to win이 옳다. ①은 be동사가 빠졌고, ③은 to가 빠졌으며, ④는 to 뒤에 과거형이, ⑤는 -ing형이 와서 틀렸다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분의 우리말 해석이 알맞지 않은 것은?",
+   "choices": [
+    "She stayed up late <u>to finish</u> the puzzle. – 끝내기 위해",
+    "My plan is <u>to travel</u> by train. – 여행하는 것",
+    "<u>To help</u> your neighbors is a good habit. – 돕는 것은",
+    "He promised <u>to call</u> me back. – 전화하기 위해",
+    "I was upset <u>to lose</u> my umbrella. – 잃어버려서"
+   ],
+   "answer": 4,
+   "why": "④의 to call은 promised의 목적어이므로 '전화하겠다고(전화하는 것을)'로 풀어야 하며 '전화하기 위해'라는 목적이 아니다. ①은 목적, ⑤는 감정의 원인, ②③은 각각 보어와 주어로 쓰인 명사적 용법으로 해석이 옳다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장을 to부정사를 이용하여 한 문장으로 쓰시오.\nHe stood on a chair. He wanted to change the light bulb.",
+   "answer": "He stood on a chair to change the light bulb.",
+   "alt": [
+    "He stood on a chair to change the light bulb"
+   ],
+   "why": "두 번째 문장이 첫 번째 행동의 목적이므로 목적을 나타내는 부사적 용법 to change로 이어 쓴다. 동사원형 change만 쓰면 한 문장에 동사가 두 개 겹친다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 괄호 안의 말을 이용하여 7단어로 영작하시오. (to부정사를 주어로 쓸 것)\n새로운 언어를 배우는 것은 시간이 걸린다. (learn, a new language, take time)",
+   "answer": "To learn a new language takes time.",
+   "alt": [
+    "To learn a new language takes time"
+   ],
+   "why": "'~하는 것은'이라는 주어는 명사적 용법의 To learn으로 쓰고, 주어로 쓰인 to부정사는 단수 취급하므로 동사를 takes로 쓴다. To/learn/a/new/language/takes/time의 7단어가 된다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n<u>To crossing</u> the street at a red light is dangerous.",
+   "answer": "To cross",
+   "alt": [
+    "to cross"
+   ],
+   "why": "to부정사는 <to+동사원형>이므로 To crossing을 To cross로 고쳐야 한다. 문장의 주어 자리이므로 명사적 용법의 to부정사를 그대로 살려 쓴다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\nThe volunteers gathered at the river (pick) ____ up the trash.",
+   "answer": "to pick",
+   "alt": [],
+   "why": "강가에 모인 목적을 나타내므로 부사적 용법의 to pick으로 쓴다. 원형 pick을 쓰면 gathered와 동사가 겹친다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장을 to부정사를 이용하여 한 문장으로 쓰시오.\nI opened the map. I wanted to find the shortest way.",
+   "answer": "I opened the map to find the shortest way.",
+   "alt": [
+    "I opened the map to find the shortest way"
+   ],
+   "why": "지도를 편 목적을 나타내야 하므로 목적의 부사적 용법 to find로 연결한다. 동사원형 find를 그대로 쓰면 동사가 두 개 겹친다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 괄호 안의 말을 이용하여 빈칸을 채우시오. (5단어)\n그녀의 소원은 에펠탑을 방문하는 것이다.\nHer wish is ____ ____ ____ ____ ____. (visit, the Eiffel Tower)",
+   "answer": "to visit the Eiffel Tower",
+   "alt": [],
+   "why": "be동사 뒤 보어 자리에서 '~하는 것'을 뜻하므로 명사적 용법의 to visit을 쓴다. to/visit/the/Eiffel/Tower의 다섯 단어이며, visiting 같은 형태는 답이 될 수 없다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nI was thankful <u>having</u> such good friends.",
+   "answer": "to have",
+   "alt": [],
+   "why": "thankful이라는 감정의 원인을 나타내야 하므로 having을 to have로 고쳐야 한다. 감정의 원인은 -ing형이 아니라 to부정사로 쓴다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 to부정사로 바꿔 쓰시오.\n(waste) ____ food is not a good habit.",
+   "answer": "To waste",
+   "alt": [
+    "to waste"
+   ],
+   "why": "문장의 주어 자리이므로 명사처럼 쓰이는 To waste로 바꿔 쓴다. 문장 첫머리이므로 대문자로 시작하며, 동사원형 Waste는 주어가 될 수 없다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 괄호 안의 단어를 이용하여 빈칸을 채우시오. (두 단어)\n그녀는 얼굴을 가리기 위해 모자를 썼다.\nShe wore a hat ____ ____ her face. (cover)",
+   "answer": "to cover",
+   "alt": [],
+   "why": "모자를 쓴 목적을 나타내므로 목적의 부사적 용법인 to cover를 쓴다. 두 단어를 쓰라고 했고, 동사원형 cover만 쓰면 wore와 동사가 두 개 겹친다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 괄호 안의 단어를 이용하여 7단어로 영작하시오.\n나는 언젠가 책을 한 권 쓰기를 희망한다. (hope, write, a book, someday)",
+   "answer": "I hope to write a book someday.",
+   "alt": [
+    "I hope to write a book someday"
+   ],
+   "why": "hope는 to부정사를 목적어로 취하므로 hope to write로 쓴다. I/hope/to/write/a/book/someday의 7단어가 되며, writing을 쓰면 hope의 목적어가 될 수 없다.",
+   "no": 200
   }
  ]
 }

@@ -1320,6 +1320,1314 @@
    "answer": "talking",
    "why": "avoid는 동명사를 목적어로 취하므로 talking으로 고친다.",
    "no": 100
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 알맞은 말은?\n\nWe went ____ in the mountains last weekend.",
+   "choices": [
+    "hike",
+    "hikes",
+    "to hiking",
+    "hiking",
+    "hiked"
+   ],
+   "answer": 4,
+   "why": "<go+동명사>는 '~하러 가다'라는 뜻이므로 went hiking이 알맞다. went 뒤에 동사원형 hike나 3인칭 단수형 hikes, 과거형 hiked는 올 수 없고, to hiking은 쓰지 않는 형태이다.",
+   "no": 101
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 알맞은 말은?\n\nMy mom is busy ____ dinner for us.",
+   "choices": [
+    "cooking",
+    "cook",
+    "cooks",
+    "to cooking",
+    "cooked"
+   ],
+   "answer": 1,
+   "why": "<be busy+동명사>는 '~하느라 바쁘다'라는 뜻이므로 cooking이 알맞다. busy 뒤에는 동사원형·단수형·과거형이 올 수 없고, to cooking 형태도 쓰지 않는다.",
+   "no": 102
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 알맞은 말은?\n\nWhat about ____ a walk in the park?",
+   "choices": [
+    "take",
+    "taking",
+    "takes",
+    "to take",
+    "took"
+   ],
+   "answer": 2,
+   "why": "about은 전치사이고 전치사 뒤에는 동명사가 오므로 taking이 알맞다. 전치사 뒤에 동사원형·단수형·to부정사·과거형은 올 수 없다.",
+   "no": 103
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 알맞은 말은?\n\nI spend an hour ____ my dog every day.",
+   "choices": [
+    "walk",
+    "to walk",
+    "walks",
+    "walked",
+    "walking"
+   ],
+   "answer": 5,
+   "why": "<spend+시간+동명사>는 '~하면서 시간을 보내다'라는 뜻이므로 walking이 알맞다. 이 자리에는 동사원형·to부정사·단수형·과거형이 올 수 없다.",
+   "no": 104
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 알맞은 말은?\n\n____ a bike along the river is exciting.",
+   "choices": [
+    "Ride",
+    "Rides",
+    "Riding",
+    "To riding",
+    "Rode"
+   ],
+   "answer": 3,
+   "why": "주어 자리에는 명사 역할을 하는 동명사가 와야 하므로 Riding이 알맞다. 동사원형 Ride·단수형 Rides·과거형 Rode는 주어가 될 수 없고, To riding은 잘못된 형태이다.",
+   "no": 105
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 알맞은 말은?\n\nHer favorite activity is ____ webtoons.",
+   "choices": [
+    "draw",
+    "drawing",
+    "draws",
+    "to drawing",
+    "drew"
+   ],
+   "answer": 2,
+   "why": "be동사 뒤 보어 자리에는 명사 역할을 하는 동명사가 올 수 있으므로 drawing이 알맞다. 동사원형·단수형·과거형은 보어가 될 수 없고 to drawing은 잘못된 형태이다.",
+   "no": 106
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 알맞은 말은?\n\nThe children enjoyed ____ in the snow.",
+   "choices": [
+    "playing",
+    "play",
+    "plays",
+    "to playing",
+    "played"
+   ],
+   "answer": 1,
+   "why": "enjoy는 동명사를 목적어로 취하므로 playing이 알맞다. 동사원형·단수형·과거형은 목적어가 될 수 없고 to playing도 쓰지 않는다.",
+   "no": 107
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 알맞은 말은?\n\nHe finished ____ his lunch in ten minutes.",
+   "choices": [
+    "eat",
+    "eats",
+    "to eating",
+    "ate",
+    "eating"
+   ],
+   "answer": 5,
+   "why": "finish는 동명사를 목적어로 취하므로 eating이 알맞다. 동사원형·단수형·과거형은 목적어 자리에 올 수 없고 to eating도 쓰지 않는다.",
+   "no": 108
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 알맞은 말은?\n\nDo you mind ____ your bag next to the door?",
+   "choices": [
+    "put",
+    "puts",
+    "putting",
+    "to put",
+    "to putting"
+   ],
+   "answer": 3,
+   "why": "mind는 동명사를 목적어로 취하므로 putting이 알맞다. mind 뒤에는 동사원형·단수형·to부정사가 올 수 없고 to putting은 잘못된 형태이다.",
+   "no": 109
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 알맞은 말은?\n\nThe baby kept ____ all night.",
+   "choices": [
+    "cry",
+    "cries",
+    "to cry",
+    "crying",
+    "cried"
+   ],
+   "answer": 4,
+   "why": "<keep+동명사>는 '계속 ~하다'라는 뜻이므로 crying이 알맞다. keep 뒤에는 to부정사나 동사원형이 올 수 없다.",
+   "no": 110
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 알맞은 말은?\n\nShe gave up ____ the guitar last year.",
+   "choices": [
+    "play",
+    "playing",
+    "plays",
+    "to play",
+    "played"
+   ],
+   "answer": 2,
+   "why": "give up은 동명사를 목적어로 취하므로 playing이 알맞다. up은 전치사처럼 쓰여 뒤에 to부정사나 동사원형이 올 수 없다.",
+   "no": 111
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 알맞은 말은?\n\nHe is good at ____ paper airplanes.",
+   "choices": [
+    "make",
+    "makes",
+    "to make",
+    "made",
+    "making"
+   ],
+   "answer": 5,
+   "why": "at은 전치사이므로 뒤에 동명사 making이 와야 한다. 전치사 뒤에는 동사원형·to부정사·과거형이 올 수 없다.",
+   "no": 112
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 알맞은 말은?\n\nThank you for ____ my dog while I was away.",
+   "choices": [
+    "feed",
+    "feeds",
+    "feeding",
+    "to feed",
+    "fed"
+   ],
+   "answer": 3,
+   "why": "for는 전치사이므로 뒤에 동명사 feeding이 와야 한다. 전치사 뒤에 동사원형·to부정사·과거형은 올 수 없다.",
+   "no": 113
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 동사와 -ing형이 바르게 짝지어진 것은?",
+   "choices": [
+    "ride – rideing",
+    "dance – danceing",
+    "run – runing",
+    "put – putting",
+    "lie – lieing"
+   ],
+   "answer": 4,
+   "why": "put처럼 <단모음+단자음>으로 끝나는 동사는 자음을 한 번 더 쓰고 -ing를 붙여 putting이 된다. ride·dance는 e를 빼고 riding·dancing, run은 자음을 겹쳐 running, lie는 ie를 y로 바꿔 lying이 된다.",
+   "no": 114
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 동사와 -ing형이 <u>잘못</u> 짝지어진 것은?",
+   "choices": [
+    "drive – driving",
+    "swim – swimming",
+    "study – studying",
+    "get – getting",
+    "make – makeing"
+   ],
+   "answer": 5,
+   "why": "make는 e로 끝나므로 e를 빼고 -ing를 붙여 making으로 써야 한다. drive→driving, swim→swimming, study→studying, get→getting은 모두 올바른 형태이다.",
+   "no": 115
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 알맞은 말은?\n\nShe finished ____ her bag. / He is good at ____ boxes quickly.",
+   "choices": [
+    "pack",
+    "packs",
+    "packing",
+    "to pack",
+    "packed"
+   ],
+   "answer": 3,
+   "why": "finish는 동명사를 목적어로 취하고 전치사 at 뒤에도 동명사가 오므로 두 빈칸에 공통으로 packing이 알맞다. 동사원형·단수형·to부정사·과거형은 두 자리 모두에 올 수 없다.",
+   "no": 116
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\n\nA: Why is your brother in the kitchen?\nB: He is busy ____ the dishes.",
+   "choices": [
+    "washes",
+    "wash",
+    "to wash",
+    "washed",
+    "washing"
+   ],
+   "answer": 5,
+   "why": "<be busy+동명사>는 '~하느라 바쁘다'라는 뜻이므로 washing이 알맞다. busy 뒤에는 동사원형·단수형·to부정사·과거형이 올 수 없다.",
+   "no": 117
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 고르시오.",
+   "choices": [
+    "Mina enjoys ride her bike.",
+    "Mina enjoys riding her bike.",
+    "Mina enjoys to ride her bike.",
+    "Mina enjoys rides her bike.",
+    "Mina enjoy riding her bike."
+   ],
+   "answer": 2,
+   "why": "enjoy는 동명사를 목적어로 취하므로 enjoys riding이 옳다. 동사원형·to부정사·단수형은 목적어가 될 수 없고, 마지막 문장은 주어가 3인칭 단수인데 enjoy로 써서 틀렸다.",
+   "no": 118
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 문장을 고르시오.",
+   "choices": [
+    "Skating on the ice is fun.",
+    "They finished building the sandcastle.",
+    "I gave up to learn the violin.",
+    "Thank you for waiting for me.",
+    "He is good at solving puzzles."
+   ],
+   "answer": 3,
+   "why": "give up은 동명사를 목적어로 취하므로 to learn을 learning으로 고쳐야 한다. 나머지는 동명사 주어, finish+동명사, 전치사 for·at+동명사로 모두 옳다.",
+   "no": 119
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분의 쓰임이 어법상 <u>어색한</u> 것은?",
+   "choices": [
+    "I enjoy <u>fishing</u> with my grandpa.",
+    "She finished <u>packing</u> her lunch box.",
+    "We kept <u>running</u> to the finish line.",
+    "He is good at <u>fix</u> bikes.",
+    "Thank you for <u>calling</u> me back."
+   ],
+   "answer": 4,
+   "why": "at은 전치사이므로 뒤에 동명사 fixing이 와야 한다. 나머지는 enjoy·finish·keep의 목적어 자리와 전치사 for 뒤에 동명사가 바르게 쓰였다.",
+   "no": 120
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 알맞은 말은?\n\n____ to school by bus takes twenty minutes.",
+   "choices": [
+    "Go",
+    "Goes",
+    "To going",
+    "Going",
+    "Went"
+   ],
+   "answer": 4,
+   "why": "주어 자리에는 명사 역할을 하는 동명사가 와야 하므로 Going이 알맞다. 동사원형·단수형·과거형은 주어가 될 수 없고 To going은 잘못된 형태이다.",
+   "no": 121
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 알맞은 말은?\n\nTurn off the light before ____ the room.",
+   "choices": [
+    "leave",
+    "leaves",
+    "to leave",
+    "leaving",
+    "left"
+   ],
+   "answer": 4,
+   "why": "before가 전치사로 쓰이면 뒤에 동명사가 오므로 leaving이 알맞다. 전치사 뒤에 동사원형·단수형·to부정사·과거형은 올 수 없다.",
+   "no": 122
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 알맞은 말은?\n\nAfter ____ the movie, we talked about it for an hour.",
+   "choices": [
+    "watching",
+    "watch",
+    "watches",
+    "to watch",
+    "watched"
+   ],
+   "answer": 1,
+   "why": "After가 전치사로 쓰였으므로 뒤에 동명사 watching이 와야 한다. 전치사 뒤에는 동사원형·단수형·to부정사·과거형이 올 수 없다.",
+   "no": 123
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\n\nA: Would you mind ____ me the salt?\nB: Sure. Here it is.",
+   "choices": [
+    "passing",
+    "pass",
+    "passes",
+    "to pass",
+    "passed"
+   ],
+   "answer": 1,
+   "why": "mind는 동명사를 목적어로 취하므로 passing이 알맞다. mind 뒤에는 동사원형·단수형·to부정사·과거형이 올 수 없다.",
+   "no": 124
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\n\nWe went (camp) near the lake last Saturday.",
+   "answer": "camping",
+   "why": "<go+동명사>는 '~하러 가다'라는 뜻이므로 camping으로 쓴다.",
+   "no": 125
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\n\nMy father is busy (fix) the old car.",
+   "answer": "fixing",
+   "why": "<be busy+동명사>는 '~하느라 바쁘다'라는 뜻이므로 fixing으로 쓴다.",
+   "no": 126
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\n\nHow about (visit) the science museum this weekend?",
+   "answer": "visiting",
+   "why": "about은 전치사이므로 뒤에 동명사 visiting을 쓴다.",
+   "no": 127
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\n\nShe spends her free time (play) the flute.",
+   "answer": "playing",
+   "why": "<spend+시간+동명사>는 '~하면서 시간을 보내다'라는 뜻이므로 playing으로 쓴다.",
+   "no": 128
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\n\nThank you for (wait) for me at the bus stop.",
+   "answer": "waiting",
+   "why": "for는 전치사이므로 뒤에 동명사 waiting을 쓴다.",
+   "no": 129
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\n\n(swim) in the sea is my favorite summer activity.",
+   "answer": "Swimming",
+   "alt": [
+    "swimming"
+   ],
+   "why": "주어 자리에는 명사 역할을 하는 동명사가 와야 하므로 Swimming으로 쓴다.",
+   "no": 130
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\n\nThey practiced (sing) together for the concert.",
+   "answer": "singing",
+   "why": "practice는 동명사를 목적어로 취하므로 singing으로 쓴다.",
+   "no": 131
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\n\nHe gave up (learn) the drums after two months.",
+   "answer": "learning",
+   "why": "give up은 동명사를 목적어로 취하므로 learning으로 쓴다.",
+   "no": 132
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 동사의 -ing형을 쓰시오.\n\nbegin",
+   "answer": "beginning",
+   "why": "begin은 <단모음+단자음>으로 끝나고 마지막 음절에 강세가 있으므로 n을 한 번 더 쓰고 -ing를 붙인다.",
+   "no": 133
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\n\nAfter (finish) breakfast, he brushed his teeth.",
+   "answer": "finishing",
+   "why": "After가 전치사로 쓰였으므로 뒤에 동명사 finishing을 쓴다.",
+   "no": 134
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 알맞은 말은?\n\nI feel like ____ a cold drink after the game.",
+   "choices": [
+    "have",
+    "has",
+    "having",
+    "to have",
+    "had"
+   ],
+   "answer": 3,
+   "why": "<feel like+동명사>는 '~하고 싶다'라는 뜻의 관용 표현이므로 having이 알맞다. like가 전치사로 쓰인 것이어서 뒤에 동사원형·to부정사·과거형은 올 수 없다.",
+   "no": 135
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 알맞은 말은?\n\nHe quit ____ computer games after ten o'clock.",
+   "choices": [
+    "play",
+    "playing",
+    "plays",
+    "to play",
+    "played"
+   ],
+   "answer": 2,
+   "why": "quit은 '~하기를 그만두다'라는 뜻으로 동명사를 목적어로 취하므로 playing이 알맞다. to부정사나 동사원형은 목적어가 될 수 없다.",
+   "no": 136
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 순서대로 바르게 짝지어진 것은?\n\nWe planned ____ a picnic, and we enjoyed ____ sandwiches together.",
+   "choices": [
+    "to have – eating",
+    "having – to eat",
+    "to have – to eat",
+    "having – eating",
+    "have – eat"
+   ],
+   "answer": 1,
+   "why": "plan은 to부정사를, enjoy는 동명사를 목적어로 취하므로 to have – eating이 알맞다. plan 뒤의 having이나 enjoy 뒤의 to eat은 모두 틀린 형태이다.",
+   "no": 137
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 to see를 쓸 수 <u>없는</u> 것은?",
+   "choices": [
+    "I hope ____ you again soon.",
+    "He gave up ____ the singer at the airport.",
+    "She wants ____ the new movie.",
+    "They decided ____ a doctor.",
+    "We planned ____ the museum."
+   ],
+   "answer": 2,
+   "why": "give up은 동명사를 목적어로 취하므로 seeing을 써야 한다. hope·want·decide·plan은 모두 to부정사를 목적어로 취하므로 to see를 쓸 수 있다.",
+   "no": 138
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 알맞은 말은?\n\nShe is looking forward to ____ her grandparents this Chuseok.",
+   "choices": [
+    "meet",
+    "meets",
+    "to meet",
+    "meeting",
+    "met"
+   ],
+   "answer": 4,
+   "why": "look forward to의 to는 전치사이므로 뒤에 동명사 meeting이 온다. to부정사로 착각해 to meet을 쓰지 않도록 주의해야 한다.",
+   "no": 139
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 알맞은 말은?\n\nInstead of ____ the bus, we walked home together.",
+   "choices": [
+    "take",
+    "takes",
+    "to take",
+    "took",
+    "taking"
+   ],
+   "answer": 5,
+   "why": "instead of의 of는 전치사이므로 뒤에 동명사 taking이 와야 한다. 전치사 뒤에는 동사원형·to부정사·과거형이 올 수 없다.",
+   "no": 140
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 알맞은 말은?\n\nTom is proud of ____ first prize in the drawing contest.",
+   "choices": [
+    "win",
+    "wins",
+    "winning",
+    "to win",
+    "won"
+   ],
+   "answer": 3,
+   "why": "of는 전치사이므로 뒤에 동명사 winning이 와야 한다. 전치사 뒤에 동사원형·to부정사·과거형은 올 수 없다.",
+   "no": 141
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 알맞은 말은?\n\nRiding a horse ____ harder than it looks.",
+   "choices": [
+    "are",
+    "is",
+    "be",
+    "were",
+    "being"
+   ],
+   "answer": 2,
+   "why": "동명사 주어는 단수 취급하므로 현재시제 단수 동사 is가 알맞다. 주어가 복수처럼 보여도 are·were는 쓸 수 없고, be·being은 동사 자리에 단독으로 올 수 없다.",
+   "no": 142
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 옮긴 것으로 옳은 것은?\n\n내 남동생은 사진 찍는 것에 관심이 있다.",
+   "choices": [
+    "My brother is interested in take pictures.",
+    "My brother is interested in taking pictures.",
+    "My brother is interested to take pictures.",
+    "My brother is interested in to take pictures.",
+    "My brother is interesting in taking pictures."
+   ],
+   "answer": 2,
+   "why": "be interested in의 in은 전치사이므로 뒤에 동명사 taking이 와야 한다. 전치사 뒤의 동사원형·to부정사는 틀리고, interesting은 '흥미로운'이라는 뜻이어서 사람의 관심을 나타낼 수 없다.",
+   "no": 143
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 옮긴 것으로 옳은 것은?\n\n일찍 자는 것은 건강에 좋다.",
+   "choices": [
+    "Go to bed early is good for your health.",
+    "Going to bed early are good for your health.",
+    "Going to bed early is good for your health.",
+    "To going to bed early is good for your health.",
+    "Going to bed early good for your health."
+   ],
+   "answer": 3,
+   "why": "동명사구 주어 Going to bed early는 단수 취급하므로 is가 와야 한다. 동사원형은 주어가 될 수 없고, To going은 잘못된 형태이며, 동사가 없는 문장도 성립하지 않는다.",
+   "no": 144
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 말은?\n\nA: How was the field trip?\nB: Great! We had fun ____ pictures of old buildings.",
+   "choices": [
+    "takes",
+    "taking",
+    "take",
+    "to take",
+    "took"
+   ],
+   "answer": 2,
+   "why": "<have fun+동명사>는 '~하며 즐거운 시간을 보내다'라는 뜻이므로 taking이 알맞다. 이 자리에 동사원형·단수형·to부정사·과거형은 올 수 없다.",
+   "no": 145
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말이 순서대로 바르게 짝지어진 것은?\n\nA: What do you want to be in the future?\nB: I hope ____ a movie director. I enjoy ____ short films.",
+   "choices": [
+    "to become – making",
+    "becoming – making",
+    "to become – to make",
+    "becoming – to make",
+    "become – make"
+   ],
+   "answer": 1,
+   "why": "hope는 to부정사를, enjoy는 동명사를 목적어로 취하므로 to become – making이 알맞다. hope 뒤의 becoming이나 enjoy 뒤의 to make는 모두 틀린 형태이다.",
+   "no": 146
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 문장의 의미가 같도록 빈칸에 알맞은 말은?\n\nMy plan is to save money for a new bike. = My plan is ____ money for a new bike.",
+   "choices": [
+    "saves",
+    "save",
+    "to saving",
+    "saving",
+    "saved"
+   ],
+   "answer": 4,
+   "why": "보어 자리의 to부정사는 같은 뜻의 동명사로 바꿔 쓸 수 있으므로 saving이 알맞다. 동사원형·단수형·과거형은 보어가 될 수 없고 to saving은 잘못된 형태이다.",
+   "no": 147
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 동사의 형태가 <u>알맞지 않은</u> 것은?",
+   "choices": [
+    "He is afraid of <u>flying</u> in an airplane.",
+    "We decided <u>to join</u> the science club.",
+    "She practiced <u>throwing</u> the ball.",
+    "I don't mind <u>washing</u> the dishes.",
+    "They hope <u>meeting</u> the actor."
+   ],
+   "answer": 5,
+   "why": "hope는 to부정사를 목적어로 취하므로 meeting을 to meet으로 고쳐야 한다. 전치사 of 뒤의 동명사, decide+to부정사, practice·mind+동명사는 모두 옳다.",
+   "no": 148
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법에 맞는 문장을 고르시오.",
+   "choices": [
+    "I'm interested in learn Chinese.",
+    "She enjoys to ride roller coasters.",
+    "Brushing your teeth are important.",
+    "He kept asking me the same thing.",
+    "They finished to build the tree house."
+   ],
+   "answer": 4,
+   "why": "keep은 동명사를 목적어로 취하므로 kept asking이 옳다. in learn은 전치사 뒤에 동사원형이 와서 틀리고, enjoy·finish 뒤에는 동명사가 와야 하며, 동명사 주어는 단수 취급하므로 are가 아니라 is를 써야 한다.",
+   "no": 149
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>어색한</u> 문장은?",
+   "choices": [
+    "We are looking forward to seeing you.",
+    "She wants going to the concert.",
+    "He is not good at remembering names.",
+    "How about joining our study group?",
+    "Taking a nap helps me feel better."
+   ],
+   "answer": 2,
+   "why": "want는 to부정사를 목적어로 취하므로 going을 to go로 고쳐야 한다. look forward to·at·about은 모두 전치사여서 뒤에 동명사가 오고, 동명사 주어는 단수 취급하여 helps가 옳다.",
+   "no": 150
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 알맞은 말은?\n\nThe sign in the park says, 'No ____ on the grass.'",
+   "choices": [
+    "walk",
+    "walks",
+    "to walk",
+    "walked",
+    "walking"
+   ],
+   "answer": 5,
+   "why": "<No+동명사>는 '~하지 마시오'라는 뜻의 금지 표현이므로 walking이 알맞다. 동사원형·단수형·to부정사·과거형은 이 표현에 쓰지 않는다.",
+   "no": 151
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 순서대로 바르게 짝지어진 것은?\n\nMy sister avoided ____ to me, but later she decided ____ sorry.",
+   "choices": [
+    "talking – to say",
+    "to talk – saying",
+    "talking – saying",
+    "to talk – to say",
+    "talk – say"
+   ],
+   "answer": 1,
+   "why": "avoid는 동명사를, decide는 to부정사를 목적어로 취하므로 talking – to say가 알맞다. avoid 뒤의 to talk이나 decide 뒤의 saying은 모두 틀린 형태이다.",
+   "no": 152
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\n\nㄱ. He is afraid of make mistakes.\nㄴ. Swimming every morning keeps me healthy.\nㄷ. They want to visit the aquarium.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄴ은 동명사 주어를 단수 취급해 keeps를 썼고, ㄷ은 want+to부정사로 옳다. ㄱ은 전치사 of 뒤에 동사원형이 와서 틀리므로 making으로 고쳐야 한다.",
+   "no": 153
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 알맞은 말은?\n\nHe is afraid of ____ high mountains. / We gave up ____ to the top.",
+   "choices": [
+    "climb",
+    "climbs",
+    "climbing",
+    "to climb",
+    "climbed"
+   ],
+   "answer": 3,
+   "why": "전치사 of 뒤와 give up의 목적어 자리에는 모두 동명사가 오므로 climbing이 공통으로 알맞다. 동사원형·단수형·to부정사·과거형은 두 자리 모두에 올 수 없다.",
+   "no": 154
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 알맞은 말은?\n\nOne of my hobbies is ____ model airplanes.",
+   "choices": [
+    "builds",
+    "build",
+    "to building",
+    "built",
+    "building"
+   ],
+   "answer": 5,
+   "why": "be동사 뒤 보어 자리에는 명사 역할을 하는 동명사가 오므로 building이 알맞다. 동사원형·단수형·과거형은 보어가 될 수 없고 to building은 잘못된 형태이다.",
+   "no": 155
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 단어들을 바르게 배열하여 문장을 만들 때, 네 번째에 오는 단어는?\n\n(fun / is / puzzles / solving / really)",
+   "choices": [
+    "solving",
+    "puzzles",
+    "is",
+    "really",
+    "fun"
+   ],
+   "answer": 4,
+   "why": "동명사 주어를 앞세워 Solving puzzles is really fun.으로 배열하므로 네 번째 단어는 really이다. 동명사 주어는 단수 취급하여 is가 세 번째에 온다.",
+   "no": 156
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 동명사의 철자가 <u>잘못된</u> 것은?",
+   "choices": [
+    "He is good at <u>swimming</u>.",
+    "She enjoys <u>writeing</u> letters.",
+    "They kept <u>running</u> in the rain.",
+    "I finished <u>tying</u> my shoes.",
+    "We gave up <u>planning</u> the trip."
+   ],
+   "answer": 2,
+   "why": "write는 e로 끝나므로 e를 빼고 -ing를 붙여 writing으로 써야 한다. swim·run·plan은 자음을 겹쳐 swimming·running·planning, tie는 ie를 y로 바꿔 tying이 되므로 모두 옳다.",
+   "no": 157
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nHe is interested in <u>build</u> model ships.",
+   "answer": "building",
+   "why": "in은 전치사이므로 뒤에 동명사 building이 와야 한다.",
+   "no": 158
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\n\nI'm looking forward to (see) the fireworks tonight.",
+   "answer": "seeing",
+   "why": "look forward to의 to는 전치사이므로 뒤에 동명사 seeing을 쓴다.",
+   "no": 159
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\n\nShe feels like (take) a short walk in the park.",
+   "answer": "taking",
+   "why": "<feel like+동명사>는 '~하고 싶다'라는 뜻이므로 taking으로 쓴다.",
+   "no": 160
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\n\nThey planned (climb) the mountain next Sunday.",
+   "answer": "to climb",
+   "why": "plan은 to부정사를 목적어로 취하므로 to climb으로 쓴다.",
+   "no": 161
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nWe decided <u>going</u> camping this weekend.",
+   "answer": "to go",
+   "why": "decide는 to부정사를 목적어로 취하므로 going을 to go로 고쳐야 한다.",
+   "no": 162
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장의 의미가 같도록 빈칸에 알맞은 말을 한 단어로 쓰시오.\n\nTo keep a plant alive is not easy. = ____ a plant alive is not easy.",
+   "answer": "Keeping",
+   "alt": [
+    "keeping"
+   ],
+   "why": "주어로 쓰인 to부정사는 같은 뜻의 동명사로 바꿔 쓸 수 있으므로 Keeping이 알맞다.",
+   "no": 163
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\n\nInstead of (walk), we took a taxi to the station.",
+   "answer": "walking",
+   "why": "instead of의 of는 전치사이므로 뒤에 동명사 walking을 쓴다.",
+   "no": 164
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nWashing your hands often <u>help</u> you stay healthy.",
+   "answer": "helps",
+   "why": "동명사 주어는 단수 취급하므로 현재시제 동사에 -s를 붙여 helps로 써야 한다.",
+   "no": 165
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\n\nHow about (order) some pizza tonight?",
+   "answer": "ordering",
+   "why": "about은 전치사이므로 뒤에 동명사 ordering을 쓴다.",
+   "no": 166
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\n\nHe is busy (prepare) for the school festival.",
+   "answer": "preparing",
+   "why": "<be busy+동명사>는 '~하느라 바쁘다'라는 뜻이므로 preparing으로 쓴다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분의 쓰임이 나머지 넷과 <u>다른</u> 것은?",
+   "choices": [
+    "<u>Swimming</u> is good exercise.",
+    "My hobby is <u>swimming</u> in the sea.",
+    "He enjoys <u>swimming</u> every weekend.",
+    "The boy is <u>swimming</u> across the pool.",
+    "She is good at <u>swimming</u> fast."
+   ],
+   "answer": 4,
+   "why": "4번의 swimming은 be동사와 함께 진행형을 만드는 현재분사이다. 나머지는 각각 주어·보어·목적어·전치사의 목적어 자리에 쓰인 명사 역할의 동명사이다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분이 동명사가 <u>아닌</u> 것은?",
+   "choices": [
+    "<u>Reading</u> in a dark room hurts your eyes.",
+    "I finished <u>reading</u> the article.",
+    "His job is <u>reading</u> the news on TV.",
+    "Thank you for <u>reading</u> my letter.",
+    "They are <u>reading</u> the same book."
+   ],
+   "answer": 5,
+   "why": "5번의 reading은 <be동사+-ing>의 진행형을 이루는 현재분사이다. 나머지는 주어·목적어·보어·전치사의 목적어로 쓰인 동명사이다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 문장의 개수는?\n\n(a) He suggested going to the beach.\n(b) They avoided to answer my question.\n(c) Winning is not everything.\n(d) I'm looking forward to meet you.\n(e) Would you mind waiting outside?",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "(b)는 avoid가 동명사를 취하므로 answering, (d)는 look forward to의 to가 전치사이므로 meeting으로 고쳐야 한다. (a) suggest+동명사, (c) 동명사 주어, (e) mind+동명사는 모두 옳으므로 틀린 문장은 2개이다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 ⓐ~ⓔ 중 어법상 옳은 것끼리 바르게 짝지은 것은?\n\nMy sister loves music. She practices ⓐ<u>singing</u> every day and never gives up ⓑ<u>to try</u> new songs. Last night she finished ⓒ<u>record</u> her first song. She hopes ⓓ<u>to become</u> a singer, and I enjoy ⓔ<u>listening</u> to her.",
+   "choices": [
+    "ⓐ, ⓑ, ⓒ",
+    "ⓑ, ⓒ, ⓓ",
+    "ⓐ, ⓓ, ⓔ",
+    "ⓐ, ⓒ, ⓔ",
+    "ⓑ, ⓓ, ⓔ"
+   ],
+   "answer": 3,
+   "why": "ⓐ는 practice+동명사, ⓓ는 hope+to부정사, ⓔ는 enjoy+동명사로 옳다. ⓑ는 give up이 동명사를 취하므로 trying, ⓒ는 finish가 동명사를 취하므로 recording으로 고쳐야 한다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 옮긴 것으로 옳은 것은?\n\n매일 운동하는 것은 너를 튼튼하게 만든다.",
+   "choices": [
+    "Exercise every day makes you strong.",
+    "Exercising every day makes you strong.",
+    "Exercising every day make you strong.",
+    "To exercising every day makes you strong.",
+    "Exercising every day making you strong."
+   ],
+   "answer": 2,
+   "why": "동명사구 주어는 단수 취급하므로 Exercising ~ makes가 옳다. 동사원형은 주어가 될 수 없고, To exercising은 잘못된 형태이며, making만으로는 문장의 동사가 될 수 없다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 옮긴 것으로 옳은 것은?\n\n그녀는 무대 위에서 춤추는 것을 두려워하지 않는다.",
+   "choices": [
+    "She is not afraid of dancing on the stage.",
+    "She is not afraid of dance on the stage.",
+    "She is not afraid of to dance on the stage.",
+    "She is not afraid dancing on the stage.",
+    "She does not afraid of dancing on the stage."
+   ],
+   "answer": 1,
+   "why": "be afraid of의 of는 전치사이므로 뒤에 동명사 dancing이 온다. 전치사 뒤의 동사원형·to부정사는 틀리고, of를 빠뜨리거나 be동사 문장에 does not을 쓴 것도 틀렸다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\n\nㄱ. Instead of taking a bus, he rode his bike.\nㄴ. My grandfather gave up to smoke ten years ago.\nㄷ. Riding a bike without a helmet is dangerous.\nㄹ. She is looking forward to visit Paris.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄱ, ㄷ"
+   ],
+   "answer": 5,
+   "why": "ㄱ은 전치사 of 뒤의 동명사, ㄷ은 동명사 주어를 단수 취급한 is로 옳다. ㄴ은 give up 뒤에 smoking, ㄹ은 look forward to 뒤에 visiting을 써야 한다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 <u>틀린</u> 것을 모두 고른 것은?\n\nㄱ. Playing board games with friends are fun.\nㄴ. He kept complaining about the food.\nㄷ. We enjoyed to walk along the beach.\nㄹ. Thank you for lending me your camera.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "ㄱ은 동명사 주어를 단수 취급해 are를 is로, ㄷ은 enjoy가 동명사를 취하므로 to walk를 walking으로 고쳐야 한다. ㄴ은 keep+동명사, ㄹ은 전치사 for+동명사로 옳다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "괄호 안의 동사가 들어갈 형태로 바르게 짝지어진 것은?\n\nAfter (a)(finish) her homework, she practiced (b)(play) the flute and hoped (c)(join) the school band.",
+   "choices": [
+    "finishing – playing – to join",
+    "to finish – to play – joining",
+    "finishing – to play – joining",
+    "finish – play – join",
+    "finishing – playing – joining"
+   ],
+   "answer": 1,
+   "why": "After는 전치사이므로 finishing, practice는 동명사를 취하므로 playing, hope는 to부정사를 취하므로 to join이 알맞다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 세 문장의 빈칸에 공통으로 알맞은 말은?\n\nShe is good at ____ problems. / He gave up ____ the last puzzle. / They spent two hours ____ the mystery.",
+   "choices": [
+    "solve",
+    "solves",
+    "to solve",
+    "solved",
+    "solving"
+   ],
+   "answer": 5,
+   "why": "전치사 at 뒤, give up의 목적어 자리, <spend+시간+동명사> 자리에는 모두 동명사가 오므로 solving이 공통으로 알맞다. 세 자리 모두 동사원형·to부정사·과거형은 올 수 없다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸 (a), (b)에 들어갈 말이 바르게 짝지어진 것은?\n\nI'm looking forward (a)____ you again, and I want (b)____ you my new song.",
+   "choices": [
+    "to seeing – to play",
+    "to see – to play",
+    "to seeing – playing",
+    "seeing – to play",
+    "to see – playing"
+   ],
+   "answer": 1,
+   "why": "look forward to의 to는 전치사이므로 to seeing이 되고, want는 to부정사를 목적어로 취하므로 to play가 온다. 같은 to라도 앞의 것은 전치사, 뒤의 것은 to부정사의 to임에 주의한다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 말이 동명사로 쓰인 문장의 개수는?\n\n(a) <u>Cooking</u> is my father's hobby.\n(b) The girl <u>cooking</u> pasta is my sister.\n(c) He is <u>cooking</u> in the kitchen now.\n(d) She loves <u>cooking</u> Italian food.\n(e) Thank you for <u>cooking</u> for us.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "(a)는 주어, (d)는 목적어, (e)는 전치사의 목적어로 쓰인 동명사여서 3개이다. (b)는 앞의 명사 The girl을 꾸미는 현재분사, (c)는 진행형을 만드는 현재분사이다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸 (a), (b)에 들어갈 말이 바르게 짝지어진 것은?\n\nA: You look worried.\nB: I keep (a)____ my password. So I've decided (b)____ it down in my notebook.",
+   "choices": [
+    "forgetting – to write",
+    "to forget – writing",
+    "forgetting – writing",
+    "to forget – to write",
+    "forget – write"
+   ],
+   "answer": 1,
+   "why": "keep은 동명사를, decide는 to부정사를 목적어로 취하므로 forgetting – to write가 알맞다. keep 뒤의 to forget이나 decide 뒤의 writing은 모두 틀렸다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸 (a), (b)에 들어갈 말이 바르게 짝지어진 것은?\n\nA: Why don't we go (a)____ this Saturday?\nB: Sorry, I'm busy (b)____ for the math test.",
+   "choices": [
+    "to skate – studying",
+    "skating – to study",
+    "to skate – to study",
+    "skate – study",
+    "skating – studying"
+   ],
+   "answer": 5,
+   "why": "<go+동명사>는 '~하러 가다', <be busy+동명사>는 '~하느라 바쁘다'라는 뜻이므로 skating – studying이 알맞다. 두 자리 모두 to부정사나 동사원형은 올 수 없다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분을 바르게 고친 것은?\n\nMy brother is good at <u>remember</u> people's faces.",
+   "choices": [
+    "remembers",
+    "remembered",
+    "to remember",
+    "remembering",
+    "to remembering"
+   ],
+   "answer": 4,
+   "why": "at은 전치사이므로 뒤에는 동명사 remembering이 와야 한다. 단수형·과거형·to부정사는 전치사의 목적어가 될 수 없고 to remembering은 잘못된 형태이다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 바르게 쓰인 문장은?",
+   "choices": [
+    "Watching too many videos are bad for your eyes.",
+    "She practiced to speak English with her friend.",
+    "We are thinking about join the drama club.",
+    "Being kind to others makes you happy.",
+    "He is tired of to wait for the bus."
+   ],
+   "answer": 4,
+   "why": "동명사 주어 Being kind to others를 단수 취급해 makes를 쓴 4번이 옳다. 1번은 are를 is로, 2번은 to speak를 speaking으로, 3번은 전치사 about 뒤를 joining으로, 5번은 to wait을 waiting으로 고쳐야 한다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법에 <u>맞지 않는</u> 문장은?",
+   "choices": [
+    "Sleeping eight hours a day keeps you healthy.",
+    "He is tired of doing the same thing every day.",
+    "They spent the whole day cleaning the house.",
+    "She avoided to look at me during the meeting.",
+    "We finished decorating the classroom for the party."
+   ],
+   "answer": 4,
+   "why": "avoid는 동명사를 목적어로 취하므로 to look을 looking으로 고쳐야 한다. 나머지는 동명사 주어, 전치사 of+동명사, <spend+시간+동명사>, finish+동명사로 모두 옳다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 <u>어색한</u> 부분을 찾아 바르게 고친 것은?\n\nEating vegetables every day help your body grow strong.",
+   "choices": [
+    "Eating → Eat",
+    "Eating → To eating",
+    "help → helps",
+    "help → to help",
+    "grow → growing"
+   ],
+   "answer": 3,
+   "why": "동명사구 주어는 단수 취급하므로 help를 helps로 고쳐야 한다. 주어 자리의 Eating은 옳고, 동사원형이나 To eating으로 바꾸면 오히려 틀린 문장이 된다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 들어갈 형태가 나머지 넷과 <u>다른</u> 것은?",
+   "choices": [
+    "He finished ____ (write) the report.",
+    "She is good at ____ (write) poems.",
+    "They decided ____ (write) a letter to the mayor.",
+    "I enjoy ____ (write) in my diary.",
+    "Do you mind ____ (write) your name here?"
+   ],
+   "answer": 3,
+   "why": "decide는 to부정사를 목적어로 취하므로 to write가 들어간다. finish·enjoy·mind의 목적어 자리와 전치사 at 뒤에는 모두 동명사 writing이 온다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 옮긴 것으로 옳은 것은?\n\n그는 한마디도 하지 않고 방을 나갔다.",
+   "choices": [
+    "He left the room without say a word.",
+    "He left the room without to say a word.",
+    "He left the room not saying a word.",
+    "He left the room without said a word.",
+    "He left the room without saying a word."
+   ],
+   "answer": 5,
+   "why": "without은 전치사이므로 뒤에 동명사 saying이 와야 한다. 동사원형·to부정사·과거형은 전치사의 목적어가 될 수 없고, without을 빼고 not saying으로 쓰면 '~하지 않고'라는 뜻을 나타내지 못한다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\n\nㄱ. Taking a deep breath helps you calm down.\nㄴ. I'm sorry for not telling you the truth.\nㄷ. He is looking forward to the trip.\nㄹ. She enjoys to solve math problems.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄱ, ㄴ, ㄷ",
+    "ㄱ, ㄷ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "ㄱ은 동명사 주어를 단수 취급했고, ㄴ은 동명사를 부정할 때 앞에 not을 붙인 형태이며, ㄷ은 전치사 to 뒤에 명사구 the trip이 와서 모두 옳다. ㄹ은 enjoy가 동명사를 취하므로 solving으로 고쳐야 한다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 동명사를 사용하여 바꿔 쓴 것으로 옳은 것은?\n\nIt is fun to make videos with friends.",
+   "choices": [
+    "Make videos with friends is fun.",
+    "Making videos with friends is fun.",
+    "Making videos with friends are fun.",
+    "To making videos with friends is fun.",
+    "Making videos with friends it is fun."
+   ],
+   "answer": 2,
+   "why": "가주어 It이 가리키는 to부정사구를 동명사구 주어로 바꾸면 Making videos with friends가 되고, 동명사 주어는 단수 취급하므로 is를 쓴다. 동사원형 주어, are, To making, 가주어 it을 남긴 형태는 모두 틀렸다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화에서 어법상 <u>틀린</u> 곳을 바르게 고친 것은?\n\nA: What do you usually do in your free time?\nB: I enjoy to read fantasy novels.",
+   "choices": [
+    "enjoy → enjoyed",
+    "to read → reading",
+    "to read → read",
+    "enjoy → am enjoying",
+    "novels → novel"
+   ],
+   "answer": 2,
+   "why": "enjoy는 동명사를 목적어로 취하므로 to read를 reading으로 고쳐야 한다. 시제나 수를 바꾸는 것으로는 잘못된 목적어 형태가 바로잡히지 않는다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장의 의미가 같도록 빈칸에 알맞은 말을 한 단어로 쓰시오.\n\nIt is important to save water. = ____ water is important.",
+   "answer": "Saving",
+   "alt": [
+    "saving"
+   ],
+   "why": "가주어 It이 가리키는 to부정사구를 동명사구 주어로 바꾸면 Saving water가 된다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 단어들을 바르게 배열하여 문장을 완성하시오.\n\n(is / talking / rude / with your mouth full)",
+   "answer": "Talking with your mouth full is rude.",
+   "alt": [
+    "Talking with your mouth full is rude"
+   ],
+   "why": "동명사구 Talking with your mouth full을 주어로 놓고 단수 동사 is를 쓴다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nI'm looking forward to <u>meet</u> you at the airport.",
+   "answer": "meeting",
+   "why": "look forward to의 to는 전치사이므로 뒤에 동명사 meeting이 와야 한다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nHe left the house without <u>lock</u> the door.",
+   "answer": "locking",
+   "why": "without은 전치사이므로 뒤에 동명사 locking이 와야 한다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 give up과 look을 사용하여 7단어의 영어 문장을 쓰시오. (과거시제)\n\n그들은 그 개를 찾는 것을 포기했다.",
+   "answer": "They gave up looking for the dog.",
+   "alt": [
+    "They gave up looking for the dog"
+   ],
+   "why": "give up은 동명사를 목적어로 취하므로 gave up looking for ~로 쓴다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\n\nHe is tired of (do) the same exercise every day.",
+   "answer": "doing",
+   "why": "be tired of의 of는 전치사이므로 뒤에 동명사 doing을 쓴다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\n\nWe spent two hours (wait) for the train.",
+   "answer": "waiting",
+   "why": "<spend+시간+동명사>는 '~하면서 시간을 보내다'라는 뜻이므로 waiting으로 쓴다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nShe suggested <u>to take</u> a different road.",
+   "answer": "taking",
+   "why": "suggest는 동명사를 목적어로 취하므로 to take를 taking으로 고쳐야 한다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 단어들을 바르게 배열하여 B의 말을 완성하시오.\n\nA: Why are you so late?\nB: (missing / for / sorry / the bus / I'm)",
+   "answer": "I'm sorry for missing the bus.",
+   "alt": [
+    "I'm sorry for missing the bus"
+   ],
+   "why": "for는 전치사이므로 뒤에 동명사 missing이 와야 하며, I'm sorry for ~의 순서로 배열한다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\n\nHe promised (call) me as soon as he arrived.",
+   "answer": "to call",
+   "why": "promise는 to부정사를 목적어로 취하므로 to call로 쓴다.",
+   "no": 200
   }
  ]
 }
