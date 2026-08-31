@@ -1,0 +1,2686 @@
+{
+ "id": "hs-06",
+ "grade": "고등",
+ "name": "조동사+have p.p.",
+ "points": [
+  "must/may/can't have p.p.",
+  "should have p.p.",
+  "뜻 구별(추측·후회)"
+ ],
+ "questions": [
+  {
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The ground is all wet. It ____ last night.",
+   "choices": [
+    "must rain",
+    "must have rained",
+    "must have rain",
+    "must raining",
+    "must had rained"
+   ],
+   "answer": 2,
+   "why": "과거 일에 대한 강한 추측은 「must have p.p.」이므로 must have rained가 맞다. must rain은 현재 추측이고, must had rained·must have rain·must raining은 형태 자체가 틀렸다.",
+   "level": "하",
+   "type": "mc",
+   "no": 1
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? Kevin is smiling brightly. He ____ good news this morning.",
+   "choices": [
+    "may have got",
+    "may have get",
+    "may getting",
+    "may had got",
+    "may get"
+   ],
+   "answer": 1,
+   "why": "this morning(과거)에 있었던 일에 대한 약한 추측이므로 「may have p.p.」인 may have got이 맞다. may get은 미래·현재 추측이고 나머지는 형태 오류다.",
+   "level": "하",
+   "type": "mc",
+   "no": 2
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? I'm really sorry. I ____ you sooner.",
+   "choices": [
+    "should call",
+    "should have called",
+    "should calling",
+    "should have call",
+    "should had called"
+   ],
+   "answer": 2,
+   "why": "하지 않은 과거 일에 대한 후회는 「should have p.p.」이므로 should have called이다. should call은 지금 해야 한다는 뜻이고 나머지는 형태 오류다.",
+   "level": "하",
+   "type": "mc",
+   "no": 3
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? Amy was in Busan yesterday, so she ____ the accident in Seoul.",
+   "choices": [
+    "can't have saw",
+    "can't had seen",
+    "can't seeing",
+    "can't see",
+    "can't have seen"
+   ],
+   "answer": 5,
+   "why": "과거에 대한 강한 부정 추측은 「can't have p.p.」이므로 can't have seen이다. have 뒤에는 과거분사 seen을 써야 하므로 can't have saw는 틀렸다.",
+   "level": "하",
+   "type": "mc",
+   "no": 4
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? You ____ so rude to the new student yesterday.",
+   "choices": [
+    "shouldn't be",
+    "shouldn't being",
+    "shouldn't have be",
+    "shouldn't have been",
+    "shouldn't had been"
+   ],
+   "answer": 4,
+   "why": "이미 한 과거 행동에 대한 유감은 「shouldn't have p.p.」이므로 shouldn't have been이다. yesterday가 있으므로 현재를 뜻하는 shouldn't be는 쓸 수 없다.",
+   "level": "하",
+   "type": "mc",
+   "no": 5
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? The window is broken. Someone ____ it with a ball.",
+   "choices": [
+    "must have broke",
+    "must break",
+    "must have broken",
+    "must had broken",
+    "must breaking"
+   ],
+   "answer": 3,
+   "why": "깨진 결과를 보고 과거를 확신하는 추측이므로 must have broken이다. break의 과거분사는 broken이므로 must have broke는 틀렸다.",
+   "level": "하",
+   "type": "mc",
+   "no": 6
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? Daniel arrived an hour late. He ____ the train.",
+   "choices": [
+    "might have missed",
+    "might have miss",
+    "might missing",
+    "might had missed",
+    "might miss"
+   ],
+   "answer": 1,
+   "why": "과거 일에 대한 약한 추측이므로 「might have p.p.」인 might have missed가 맞다. might miss는 앞으로 놓칠지도 모른다는 뜻이다.",
+   "level": "하",
+   "type": "mc",
+   "no": 7
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? I failed the math test. I ____ much harder.",
+   "choices": [
+    "should had studied",
+    "should have study",
+    "should study",
+    "should studying",
+    "should have studied"
+   ],
+   "answer": 5,
+   "why": "이미 시험이 끝난 뒤의 후회이므로 should have studied가 맞다. should study는 앞으로 공부해야 한다는 뜻이라 문맥에 맞지 않는다.",
+   "level": "하",
+   "type": "mc",
+   "no": 8
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? Nick ate three sandwiches. He ____ really hungry at that time.",
+   "choices": [
+    "must be",
+    "must had been",
+    "must have been",
+    "must being",
+    "must have be"
+   ],
+   "answer": 3,
+   "why": "at that time이 가리키는 과거 상태에 대한 확신이므로 must have been이다. must be는 현재의 추측이다.",
+   "level": "하",
+   "type": "mc",
+   "no": 9
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? Sophie didn't come. She ____ sick last night.",
+   "choices": [
+    "may be",
+    "may have been",
+    "may had been",
+    "may have be",
+    "may being"
+   ],
+   "answer": 2,
+   "why": "last night이라는 과거 시점의 추측이므로 「may have p.p.」인 may have been이 알맞다. may be는 현재의 추측이다.",
+   "level": "하",
+   "type": "mc",
+   "no": 10
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? We got lost in the woods. We ____ a map with us.",
+   "choices": [
+    "should have bring",
+    "should have brought",
+    "should bring",
+    "should bringing",
+    "should had brought"
+   ],
+   "answer": 2,
+   "why": "가져오지 않은 과거에 대한 후회이므로 should have brought이다. bring의 과거분사는 brought이다.",
+   "level": "하",
+   "type": "mc",
+   "no": 11
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? Mr. Park's car is not in the parking lot. He ____ home already.",
+   "choices": [
+    "must have went",
+    "must go",
+    "must have gone",
+    "must going",
+    "must had gone"
+   ],
+   "answer": 3,
+   "why": "이미 가 버렸다는 과거 추측이므로 must have gone이다. go의 과거분사는 gone이므로 must have went는 틀렸다.",
+   "level": "하",
+   "type": "mc",
+   "no": 12
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? Lily speaks Spanish perfectly. She ____ in Spain as a child.",
+   "choices": [
+    "must living",
+    "must had lived",
+    "must live",
+    "must have lived",
+    "must have live"
+   ],
+   "answer": 4,
+   "why": "어린 시절(과거)에 대한 확신 있는 추측이므로 must have lived가 맞다. must live는 현재 사는 것에 대한 추측이다.",
+   "level": "하",
+   "type": "mc",
+   "no": 13
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? The milk went bad. You ____ it in the sun.",
+   "choices": [
+    "shouldn't leaving",
+    "shouldn't leave",
+    "shouldn't have leave",
+    "shouldn't have left",
+    "shouldn't had left"
+   ],
+   "answer": 4,
+   "why": "이미 해 버린 일에 대한 유감이므로 shouldn't have left이다. leave의 과거분사는 left이다.",
+   "level": "하",
+   "type": "mc",
+   "no": 14
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? All the doors were locked, so the thief ____ in through the window.",
+   "choices": [
+    "must come",
+    "must coming",
+    "must have came",
+    "must had come",
+    "must have come"
+   ],
+   "answer": 5,
+   "why": "과거 사건에 대한 확신이므로 must have come이다. come의 과거분사는 come이므로 must have came은 틀렸다.",
+   "level": "하",
+   "type": "mc",
+   "no": 15
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? Jenny never replied. She ____ my message.",
+   "choices": [
+    "might not have seen",
+    "might not have saw",
+    "might not had seen",
+    "might not see",
+    "might not seeing"
+   ],
+   "answer": 1,
+   "why": "보지 못했을 수도 있다는 과거 추측이므로 might not have seen이다. have 뒤에는 과거분사 seen이 온다.",
+   "level": "하",
+   "type": "mc",
+   "no": 16
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? This bag isn't Mike's. He ____ it here yesterday.",
+   "choices": [
+    "can't leaving",
+    "can't leave",
+    "can't have leave",
+    "can't have left",
+    "can't had left"
+   ],
+   "answer": 4,
+   "why": "yesterday의 일을 강하게 부정 추측하므로 can't have left이다. can't leave는 '두고 갈 수 없다'는 현재의 뜻이다.",
+   "level": "하",
+   "type": "mc",
+   "no": 17
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? I ____ my key at home. Now I can't open the door.",
+   "choices": [
+    "must have left",
+    "must have leave",
+    "must leave",
+    "must had left",
+    "must leaving"
+   ],
+   "answer": 1,
+   "why": "문을 못 여는 지금의 상황으로 보아 과거에 두고 왔다고 확신하는 것이므로 must have left이다.",
+   "level": "하",
+   "type": "mc",
+   "no": 18
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? Our team lost the final game. We ____ more.",
+   "choices": [
+    "should practicing",
+    "should have practiced",
+    "should have practice",
+    "should practice",
+    "should had practiced"
+   ],
+   "answer": 2,
+   "why": "경기가 끝난 뒤의 후회이므로 should have practiced이다. should practice는 앞으로의 의무를 뜻한다.",
+   "level": "하",
+   "type": "mc",
+   "no": 19
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? Someone ate my cake yesterday. It ____ my little brother.",
+   "choices": [
+    "may had been",
+    "may be",
+    "may being",
+    "may have been",
+    "may have be"
+   ],
+   "answer": 4,
+   "why": "yesterday에 일어난 일에 대한 추측이므로 may have been이다. may be는 현재의 추측이라 시점이 맞지 않는다.",
+   "level": "하",
+   "type": "mc",
+   "no": 20
+  },
+  {
+   "stem": "밑줄 친 부분의 뜻으로 알맞은 것은? You <u>should have locked</u> the door.",
+   "choices": [
+    "문을 잠글 필요가 없었다",
+    "문을 잠갔음에 틀림없다",
+    "문을 잠갔어야 했는데 (잠그지 않았다)",
+    "문을 잠갔을 리 없다",
+    "문을 잠갔을지도 모른다"
+   ],
+   "answer": 3,
+   "why": "「should have p.p.」는 하지 않은 일에 대한 후회·유감을 나타낸다. 추측을 뜻하는 must/may/can't have p.p.와 구별해야 한다.",
+   "level": "하",
+   "type": "mc",
+   "no": 21
+  },
+  {
+   "stem": "밑줄 친 부분의 뜻으로 알맞은 것은? He <u>must have forgotten</u> my birthday.",
+   "choices": [
+    "내 생일을 잊었어야 했다",
+    "내 생일을 잊지 말았어야 했다",
+    "내 생일을 잊었을 리 없다",
+    "내 생일을 잊었음에 틀림없다",
+    "내 생일을 잊었을지도 모른다"
+   ],
+   "answer": 4,
+   "why": "「must have p.p.」는 과거 일에 대한 강한 확신(~했음에 틀림없다)을 뜻한다. 약한 추측은 may have p.p.이다.",
+   "level": "하",
+   "type": "mc",
+   "no": 22
+  },
+  {
+   "stem": "밑줄 친 부분의 뜻으로 알맞은 것은? She <u>can't have said</u> such a thing.",
+   "choices": [
+    "그런 말을 했음에 틀림없다",
+    "그런 말을 했을 리 없다",
+    "그런 말을 할 수 있었다",
+    "그런 말을 했을지도 모른다",
+    "그런 말을 하지 말았어야 했다"
+   ],
+   "answer": 2,
+   "why": "「can't have p.p.」는 과거에 대한 강한 부정 추측(~했을 리 없다)이다. must have p.p.의 반대 표현이다.",
+   "level": "하",
+   "type": "mc",
+   "no": 23
+  },
+  {
+   "stem": "밑줄 친 부분의 뜻으로 알맞은 것은? They <u>may have left</u> already.",
+   "choices": [
+    "이미 떠났을지도 모른다",
+    "이미 떠나도 된다",
+    "이미 떠났을 리 없다",
+    "이미 떠났어야 했다",
+    "이미 떠났음에 틀림없다"
+   ],
+   "answer": 1,
+   "why": "「may have p.p.」는 과거 일에 대한 약한 추측(~했을지도 모른다)이다. 확신은 must have p.p.로 나타낸다.",
+   "level": "하",
+   "type": "mc",
+   "no": 24
+  },
+  {
+   "stem": "밑줄 친 부분의 뜻으로 알맞은 것은? I <u>shouldn't have eaten</u> so much cheese.",
+   "choices": [
+    "그렇게 많이 먹었어야 했는데",
+    "그렇게 많이 먹었음에 틀림없다",
+    "그렇게 많이 먹지 말았어야 했는데 (먹었다)",
+    "그렇게 많이 먹을 필요가 없다",
+    "그렇게 많이 먹었을 리 없다"
+   ],
+   "answer": 3,
+   "why": "「shouldn't have p.p.」는 이미 한 일에 대한 후회를 뜻한다. 하지 않은 일에 대한 후회는 should have p.p.이다.",
+   "level": "하",
+   "type": "mc",
+   "no": 25
+  },
+  {
+   "stem": "밑줄 친 부분의 뜻으로 알맞은 것은? Somebody <u>might have taken</u> my umbrella.",
+   "choices": [
+    "누군가 내 우산을 가져갔을 리 없다",
+    "누군가 내 우산을 가져갔음에 틀림없다",
+    "누군가 내 우산을 가져갔어야 했다",
+    "누군가 내 우산을 가져갔을지도 모른다",
+    "누군가 내 우산을 가져가지 말았어야 했다"
+   ],
+   "answer": 4,
+   "why": "might have p.p.는 may have p.p.와 같이 과거에 대한 약한 추측을 나타내며, might가 더 조심스러운 느낌이다.",
+   "level": "하",
+   "type": "mc",
+   "no": 26
+  },
+  {
+   "stem": "밑줄 친 부분의 뜻으로 알맞은 것은? We <u>ought to have started</u> earlier.",
+   "choices": [
+    "더 일찍 출발했음에 틀림없다",
+    "더 일찍 출발했을 리 없다",
+    "더 일찍 출발할 필요가 없었다",
+    "더 일찍 출발했을지도 모른다",
+    "더 일찍 출발했어야 했는데"
+   ],
+   "answer": 5,
+   "why": "「ought to have p.p.」는 should have p.p.와 같은 뜻으로 하지 않은 일에 대한 후회를 나타낸다.",
+   "level": "하",
+   "type": "mc",
+   "no": 27
+  },
+  {
+   "stem": "밑줄 친 부분의 뜻으로 알맞은 것은? Jinho <u>can't have finished</u> the report in one hour.",
+   "choices": [
+    "한 시간 만에 보고서를 끝냈을 리 없다",
+    "한 시간 만에 보고서를 끝낼 수 없다",
+    "한 시간 만에 보고서를 끝냈어야 했다",
+    "한 시간 만에 보고서를 끝냈음에 틀림없다",
+    "한 시간 만에 보고서를 끝냈을지도 모른다"
+   ],
+   "answer": 1,
+   "why": "can't have p.p.는 과거에 대한 강한 부정 추측이다. 능력 부정인 can't finish(현재 끝낼 수 없다)와 구별한다.",
+   "level": "하",
+   "type": "mc",
+   "no": 28
+  },
+  {
+   "stem": "다음 중 어법상 바른 문장은?",
+   "choices": [
+    "He must have going home early.",
+    "He must had gone home early.",
+    "He must have went home early.",
+    "He must has gone home early.",
+    "He must have gone home early."
+   ],
+   "answer": 5,
+   "why": "「조동사+have+과거분사」 형태를 지켜야 하므로 must have gone이 옳다. went는 과거형, had·has·going은 형태가 맞지 않는다.",
+   "level": "하",
+   "type": "mc",
+   "no": 29
+  },
+  {
+   "stem": "다음 중 어법상 옳은 문장을 고르시오.",
+   "choices": [
+    "She should called me first.",
+    "She should has called me first.",
+    "She should have call me first.",
+    "She should have called me first.",
+    "She should have calling me first."
+   ],
+   "answer": 4,
+   "why": "should 뒤에는 have+과거분사가 와야 하므로 should have called가 옳다. 조동사 뒤에는 동사원형 have만 올 수 있다.",
+   "level": "하",
+   "type": "mc",
+   "no": 30
+  },
+  {
+   "stem": "다음 중 어법상 알맞은 것은?",
+   "choices": [
+    "They can't finished the work.",
+    "They can't have finished the work.",
+    "They can't have finish the work.",
+    "They can't have finishing the work.",
+    "They can't had finished the work."
+   ],
+   "answer": 2,
+   "why": "have 뒤에는 과거분사가 오므로 can't have finished가 옳다. 조동사 뒤에 had나 과거형은 올 수 없다.",
+   "level": "하",
+   "type": "mc",
+   "no": 31
+  },
+  {
+   "stem": "다음 중 어법상 옳은 것은?",
+   "choices": [
+    "You may saw him at the mall.",
+    "You may had seen him at the mall.",
+    "You may have seeing him at the mall.",
+    "You may have saw him at the mall.",
+    "You may have seen him at the mall."
+   ],
+   "answer": 5,
+   "why": "see의 과거분사는 seen이므로 may have seen이 옳다. saw는 과거형이라 have 뒤에 올 수 없다.",
+   "level": "하",
+   "type": "mc",
+   "no": 32
+  },
+  {
+   "stem": "다음 중 어법상 어색한 것은?",
+   "choices": [
+    "I should have wrote a thank-you card.",
+    "They can't have arrived yet.",
+    "He must have been very tired.",
+    "She may have lost her wallet.",
+    "We should have waited a little longer."
+   ],
+   "answer": 1,
+   "why": "write의 과거분사는 written이므로 should have written이 되어야 한다. 나머지는 모두 「조동사+have p.p.」 형태가 바르다.",
+   "level": "하",
+   "type": "mc",
+   "no": 33
+  },
+  {
+   "stem": "다음 중 어법상 <u>틀린</u> 문장은?",
+   "choices": [
+    "We ought to have called first.",
+    "She can't have forgotten the date.",
+    "He must have took my pen by mistake.",
+    "You shouldn't have shouted at her.",
+    "I might have left it at school."
+   ],
+   "answer": 3,
+   "why": "take의 과거분사는 taken이므로 must have taken이 되어야 한다. took은 과거형이라 have 뒤에 쓸 수 없다.",
+   "level": "하",
+   "type": "mc",
+   "no": 34
+  },
+  {
+   "stem": "다음 중 어법상 바르지 <u>않은</u> 것은?",
+   "choices": [
+    "He couldn't have done it alone.",
+    "They should have came earlier.",
+    "She may have been at the library.",
+    "You might have hurt yourself.",
+    "The kids must have eaten all the cookies."
+   ],
+   "answer": 2,
+   "why": "come의 과거분사는 come이므로 should have come이 되어야 한다. came은 과거형이다.",
+   "level": "하",
+   "type": "mc",
+   "no": 35
+  },
+  {
+   "stem": "다음 중 어법상 <u>틀린</u> 것은?",
+   "choices": [
+    "He must have drove to work this morning.",
+    "You can't have been serious about that.",
+    "We may have met somewhere before.",
+    "I shouldn't have said such a thing.",
+    "She should have brought her umbrella."
+   ],
+   "answer": 1,
+   "why": "drive의 과거분사는 driven이므로 must have driven이 되어야 한다. drove는 과거형이다.",
+   "level": "하",
+   "type": "mc",
+   "no": 36
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? Ben got a very low score. He ____ the wrong chapter. (공부했음에 틀림없다)",
+   "choices": [
+    "must have studied",
+    "should have studied",
+    "may have studied",
+    "shouldn't have studied",
+    "can't have studied"
+   ],
+   "answer": 1,
+   "why": "'~했음에 틀림없다'는 must have p.p.이다. should have p.p.는 후회, can't have p.p.는 부정 추측, may have p.p.는 약한 추측이다.",
+   "level": "하",
+   "type": "mc",
+   "no": 37
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? Sorry I'm late. I ____ up earlier. (일어났어야 했는데)",
+   "choices": [
+    "can't have got",
+    "might have got",
+    "must have got",
+    "may have got",
+    "should have got"
+   ],
+   "answer": 5,
+   "why": "하지 않은 일에 대한 후회이므로 should have got이 알맞다. 나머지는 모두 추측을 나타내는 표현이다.",
+   "level": "하",
+   "type": "mc",
+   "no": 38
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? Mina is allergic to peanuts. She ____ that cookie. (먹었을 리 없다)",
+   "choices": [
+    "shouldn't have eaten",
+    "can't have eaten",
+    "should have eaten",
+    "may have eaten",
+    "must have eaten"
+   ],
+   "answer": 2,
+   "why": "'~했을 리 없다'는 can't have p.p.이다. must have p.p.는 반대로 강한 긍정 추측이다.",
+   "level": "하",
+   "type": "mc",
+   "no": 39
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? The light in his room is off. He ____ to bed. (갔을지도 모른다)",
+   "choices": [
+    "can't have gone",
+    "shouldn't have gone",
+    "should have gone",
+    "must have gone",
+    "may have gone"
+   ],
+   "answer": 5,
+   "why": "'~했을지도 모른다'는 may[might] have p.p.이다. 확신을 뜻하는 must have p.p.와 구별한다.",
+   "level": "하",
+   "type": "mc",
+   "no": 40
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? Your face is all red. You ____ sunscreen. (발랐어야 했는데)",
+   "choices": [
+    "should have used",
+    "must have used",
+    "may have used",
+    "might have used",
+    "can't have used"
+   ],
+   "answer": 1,
+   "why": "하지 않은 행동에 대한 충고·후회이므로 should have used가 알맞다.",
+   "level": "하",
+   "type": "mc",
+   "no": 41
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? My stomach hurts now. I ____ so much ice cream. (먹지 말았어야 했는데)",
+   "choices": [
+    "shouldn't have eaten",
+    "can't have eaten",
+    "should have eaten",
+    "may have eaten",
+    "must have eaten"
+   ],
+   "answer": 1,
+   "why": "이미 한 일에 대한 후회이므로 shouldn't have p.p.를 쓴다. should have eaten은 '먹었어야 했는데'라는 반대 뜻이다.",
+   "level": "하",
+   "type": "mc",
+   "no": 42
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? His boots are covered with mud. He ____ in the rain. (걸었음에 틀림없다)",
+   "choices": [
+    "must have walked",
+    "should have walked",
+    "may have walked",
+    "can't have walked",
+    "shouldn't have walked"
+   ],
+   "answer": 1,
+   "why": "분명한 증거를 보고 내리는 강한 추측이므로 must have p.p.를 쓴다.",
+   "level": "하",
+   "type": "mc",
+   "no": 43
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? Nobody answered the doorbell. They ____ out. (나갔을지도 모른다)",
+   "choices": [
+    "should have gone",
+    "needn't have gone",
+    "must have gone",
+    "can't have gone",
+    "might have gone"
+   ],
+   "answer": 5,
+   "why": "확신이 아닌 약한 추측이므로 might have gone이 알맞다. must have gone은 '나갔음에 틀림없다'이다.",
+   "level": "하",
+   "type": "mc",
+   "no": 44
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? Everyone finished the quiz in five minutes. It ____ difficult. (어려웠을 리 없다)",
+   "choices": [
+    "must have been",
+    "can't have been",
+    "may have been",
+    "should have been",
+    "might have been"
+   ],
+   "answer": 2,
+   "why": "'~였을 리 없다'는 can't have p.p.이다. 모두가 5분 만에 끝냈다는 근거가 부정 추측을 뒷받침한다.",
+   "level": "하",
+   "type": "mc",
+   "no": 45
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? I forgot her phone number again. I ____ it down. (적어 두었어야 했는데)",
+   "choices": [
+    "may have written",
+    "can't have written",
+    "should have written",
+    "must have written",
+    "might have written"
+   ],
+   "answer": 3,
+   "why": "적어 두지 않은 것에 대한 후회이므로 should have written이다. write의 과거분사는 written이다.",
+   "level": "하",
+   "type": "mc",
+   "no": 46
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? My bike is gone from the rack. Someone ____ it. (가져갔음에 틀림없다)",
+   "choices": [
+    "should have taken",
+    "can't have taken",
+    "must have taken",
+    "shouldn't have taken",
+    "may have taken"
+   ],
+   "answer": 3,
+   "why": "없어진 것을 확인하고 내리는 강한 추측이므로 must have taken이다.",
+   "level": "하",
+   "type": "mc",
+   "no": 47
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? He apologized right away. He ____ sorry. (미안했음에 틀림없다)",
+   "choices": [
+    "can't have felt",
+    "may have felt",
+    "should have felt",
+    "must have felt",
+    "shouldn't have felt"
+   ],
+   "answer": 4,
+   "why": "즉시 사과했다는 근거로 과거 감정을 확신하므로 must have felt가 알맞다.",
+   "level": "하",
+   "type": "mc",
+   "no": 48
+  },
+  {
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. (두 단어) The streets are wet. It must ____ (rain) last night.",
+   "answer": "have rained",
+   "alt": [],
+   "why": "과거에 대한 강한 추측이므로 「must have p.p.」로 쓴다. must 뒤에는 동사원형 have가 오고 그 뒤에 과거분사 rained가 온다.",
+   "level": "하",
+   "type": "short",
+   "no": 49
+  },
+  {
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. (두 단어) She looks pale. She may ____ (see) something scary.",
+   "answer": "have seen",
+   "alt": [],
+   "why": "과거 일에 대한 약한 추측이므로 may have p.p.로 쓴다. see의 과거분사는 seen이다.",
+   "level": "하",
+   "type": "short",
+   "no": 50
+  },
+  {
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. (두 단어) He was at home all evening. He can't ____ (be) at the concert last night.",
+   "answer": "have been",
+   "alt": [],
+   "why": "'~였을 리 없다'는 can't have p.p.이다. be의 과거분사는 been이다.",
+   "level": "하",
+   "type": "short",
+   "no": 51
+  },
+  {
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. (두 단어) It was freezing. We should ____ (bring) our gloves.",
+   "answer": "have brought",
+   "alt": [],
+   "why": "하지 않은 일에 대한 후회이므로 should have p.p.로 쓴다. bring의 과거분사는 brought이다.",
+   "level": "하",
+   "type": "short",
+   "no": 52
+  },
+  {
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. (두 단어) That was mean. You shouldn't ____ (say) that to her.",
+   "answer": "have said",
+   "alt": [],
+   "why": "이미 한 일에 대한 유감이므로 shouldn't have p.p.로 쓴다. say의 과거분사는 said이다.",
+   "level": "하",
+   "type": "short",
+   "no": 53
+  },
+  {
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. (두 단어) Nobody sent me a card. They must ____ (forget) my birthday.",
+   "answer": "have forgotten",
+   "alt": [
+    "have forgot"
+   ],
+   "why": "강한 과거 추측이므로 must have p.p.이다. forget의 과거분사는 forgotten(미국식 forgot도 인정)이다.",
+   "level": "하",
+   "type": "short",
+   "no": 54
+  },
+  {
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. (두 단어) I can't find my wallet. I might ____ (lose) it on the bus.",
+   "answer": "have lost",
+   "alt": [],
+   "why": "과거 일에 대한 조심스러운 추측이므로 might have p.p.이다. lose의 과거분사는 lost이다.",
+   "level": "하",
+   "type": "short",
+   "no": 55
+  },
+  {
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. (두 단어) The cake is half gone. My brother must ____ (eat) some.",
+   "answer": "have eaten",
+   "alt": [],
+   "why": "남은 결과로 과거를 확신하는 추측이므로 must have p.p.이다. eat의 과거분사는 eaten이다.",
+   "level": "하",
+   "type": "short",
+   "no": 56
+  },
+  {
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. He must have <u>went</u> home before six.",
+   "answer": "gone",
+   "alt": [],
+   "why": "have 뒤에는 과거분사가 와야 하므로 went를 gone으로 고친다.",
+   "level": "하",
+   "type": "short",
+   "no": 57
+  },
+  {
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. You should have <u>call</u> me right away.",
+   "answer": "called",
+   "alt": [],
+   "why": "「should have p.p.」이므로 동사원형 call을 과거분사 called로 고친다.",
+   "level": "하",
+   "type": "short",
+   "no": 58
+  },
+  {
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. She can't have <u>saw</u> the message yet.",
+   "answer": "seen",
+   "alt": [],
+   "why": "have 뒤에는 과거형 saw가 아니라 과거분사 seen이 와야 한다.",
+   "level": "하",
+   "type": "short",
+   "no": 59
+  },
+  {
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. They must <u>had</u> eaten dinner already.",
+   "answer": "have",
+   "alt": [],
+   "why": "조동사 뒤에는 동사원형이 오므로 had를 have로 고쳐 must have eaten으로 만든다.",
+   "level": "하",
+   "type": "short",
+   "no": 60
+  },
+  {
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. Someone may have <u>took</u> my seat.",
+   "answer": "taken",
+   "alt": [],
+   "why": "take의 과거분사는 taken이므로 took을 taken으로 고친다.",
+   "level": "하",
+   "type": "short",
+   "no": 61
+  },
+  {
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. I shouldn't have <u>telling</u> him the secret.",
+   "answer": "told",
+   "alt": [],
+   "why": "have 뒤에는 현재분사가 아니라 과거분사가 오므로 telling을 told로 고친다.",
+   "level": "하",
+   "type": "short",
+   "no": 62
+  },
+  {
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. We ought to have <u>leave</u> a little earlier.",
+   "answer": "left",
+   "alt": [],
+   "why": "「ought to have p.p.」이므로 동사원형 leave를 과거분사 left로 고친다.",
+   "level": "하",
+   "type": "short",
+   "no": 63
+  },
+  {
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. He must have <u>drove</u> to the airport last night.",
+   "answer": "driven",
+   "alt": [],
+   "why": "drive의 과거분사는 driven이므로 drove를 driven으로 고친다.",
+   "level": "하",
+   "type": "short",
+   "no": 64
+  },
+  {
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. 그가 그 돈을 훔쳤을 리 없다. → He can't ____ stolen the money.",
+   "answer": "have",
+   "alt": [],
+   "why": "'~했을 리 없다'는 can't have p.p.이므로 빈칸에는 have가 들어간다.",
+   "level": "하",
+   "type": "short",
+   "no": 65
+  },
+  {
+   "stem": "우리말과 같도록 빈칸에 알맞은 두 단어를 쓰시오. 너는 그에게 사과했어야 했다. → You ____ ____ apologized to him.",
+   "answer": "should have",
+   "alt": [],
+   "why": "하지 않은 일에 대한 후회는 should have p.p.로 나타낸다.",
+   "level": "하",
+   "type": "short",
+   "no": 66
+  },
+  {
+   "stem": "우리말과 같도록 빈칸에 알맞은 두 단어를 쓰시오. 그녀가 그 소식을 들었음에 틀림없다. → She ____ ____ heard the news.",
+   "answer": "must have",
+   "alt": [],
+   "why": "'~했음에 틀림없다'는 must have p.p.이다.",
+   "level": "하",
+   "type": "short",
+   "no": 67
+  },
+  {
+   "stem": "우리말과 같도록 빈칸에 알맞은 두 단어를 쓰시오. 그들은 이미 떠났을지도 모른다. → They ____ ____ already left.",
+   "answer": "may have",
+   "alt": [
+    "might have"
+   ],
+   "why": "'~했을지도 모른다'는 may[might] have p.p.로 나타낸다.",
+   "level": "하",
+   "type": "short",
+   "no": 68
+  },
+  {
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Judging from the empty plates on the table, the guests ____ the dishes he cooked.",
+   "choices": [
+    "must have enjoyed",
+    "must enjoying",
+    "must had enjoyed",
+    "must enjoyed",
+    "must have enjoy"
+   ],
+   "answer": 1,
+   "why": "빈 접시라는 근거로 과거를 확신하므로 「must have p.p.」인 must have enjoyed가 맞다. 조동사 뒤에는 동사원형 have, 그 뒤에는 과거분사가 온다.",
+   "level": "중",
+   "type": "mc",
+   "no": 69
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? The diary was written in 1890, so the person who kept it ____ long ago.",
+   "choices": [
+    "must have died",
+    "must had died",
+    "must dying",
+    "must have die",
+    "must died"
+   ],
+   "answer": 1,
+   "why": "1890년이라는 연대가 근거이므로 과거에 대한 확신인 must have died가 알맞다. 나머지는 형태가 틀렸다.",
+   "level": "중",
+   "type": "mc",
+   "no": 70
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? The door was locked from the inside, so the police think he ____ through the back window.",
+   "choices": [
+    "must had escaped",
+    "must escaped",
+    "must have escaped",
+    "must escaping",
+    "must have escape"
+   ],
+   "answer": 3,
+   "why": "잠긴 문이라는 증거로 과거 행동을 확신하는 것이므로 must have escaped가 맞다. have 뒤에는 과거분사가 온다.",
+   "level": "중",
+   "type": "mc",
+   "no": 71
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? Emma never mentioned the schedule change, so she ____ about it.",
+   "choices": [
+    "may not have known",
+    "may not knowing",
+    "may not had known",
+    "may not have know",
+    "may not knew"
+   ],
+   "answer": 1,
+   "why": "'몰랐을지도 모른다'는 「may not have p.p.」이다. 조동사 다음에 동사원형 have, 그 뒤 과거분사 known이 온다.",
+   "level": "중",
+   "type": "mc",
+   "no": 72
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? Considering how fast he answered, he ____ the same question before.",
+   "choices": [
+    "must had seen",
+    "must have seen",
+    "must have saw",
+    "must seeing",
+    "must saw"
+   ],
+   "answer": 2,
+   "why": "즉시 답했다는 근거로 과거 경험을 확신하므로 must have seen이 맞다. saw는 과거형이라 have 뒤에 올 수 없다.",
+   "level": "중",
+   "type": "mc",
+   "no": 73
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? Looking back, I realize I ____ more attention to his warning.",
+   "choices": [
+    "should paying",
+    "should had paid",
+    "should paid",
+    "should have pay",
+    "should have paid"
+   ],
+   "answer": 5,
+   "why": "지난 일을 돌아보며 하는 후회이므로 「should have p.p.」인 should have paid가 알맞다.",
+   "level": "중",
+   "type": "mc",
+   "no": 74
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? The museum is closed every Monday, so they ____ it last Monday.",
+   "choices": [
+    "can't have visit",
+    "can't had visited",
+    "can't have visited",
+    "can't visited",
+    "can't visiting"
+   ],
+   "answer": 3,
+   "why": "월요일 휴관이라는 사실이 근거이므로 과거에 대한 강한 부정 추측 can't have visited가 맞다.",
+   "level": "중",
+   "type": "mc",
+   "no": 75
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? There is no way she ____ the whole novel in a single night.",
+   "choices": [
+    "could have read",
+    "could have reads",
+    "could had read",
+    "could reading",
+    "could read"
+   ],
+   "answer": 1,
+   "why": "'~했을 리가 없다'에 해당하는 과거 추측이므로 「could have p.p.」를 쓴다. could read는 현재나 과거의 능력을 뜻한다.",
+   "level": "중",
+   "type": "mc",
+   "no": 76
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? You look exhausted. You ____ up all night finishing the project.",
+   "choices": [
+    "must have stayed",
+    "must have stay",
+    "must had stayed",
+    "must stayed",
+    "must staying"
+   ],
+   "answer": 1,
+   "why": "지친 모습을 근거로 지난밤을 추측하므로 must have stayed가 알맞다.",
+   "level": "중",
+   "type": "mc",
+   "no": 77
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? The tickets turned out to be free, so we ____ for them at all.",
+   "choices": [
+    "needn't have pay",
+    "needn't paid",
+    "needn't paying",
+    "needn't have paid",
+    "needn't had paid"
+   ],
+   "answer": 4,
+   "why": "「needn't have p.p.」는 '~할 필요가 없었는데 (했다)'라는 뜻으로 여기 문맥에 맞는다. 조동사 뒤에는 have+과거분사가 온다.",
+   "level": "중",
+   "type": "mc",
+   "no": 78
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? The fire alarm suddenly went off, though there was no fire. Someone ____ the button by mistake. (눌렀음에 틀림없다)",
+   "choices": [
+    "must have pressed",
+    "can't have pressed",
+    "may have pressed",
+    "needn't have pressed",
+    "should have pressed"
+   ],
+   "answer": 1,
+   "why": "'~했음에 틀림없다'는 must have p.p.이다. may have p.p.는 약한 추측, should have p.p.는 후회를 뜻한다.",
+   "level": "중",
+   "type": "mc",
+   "no": 79
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? Chris never touches seafood, so he ____ the shrimp salad. (먹었을 리 없다)",
+   "choices": [
+    "may have eaten",
+    "must have eaten",
+    "should have eaten",
+    "can't have eaten",
+    "needn't have eaten"
+   ],
+   "answer": 4,
+   "why": "'~했을 리 없다'는 can't[couldn't] have p.p.이다. must have p.p.는 정반대의 강한 긍정 추측이다.",
+   "level": "중",
+   "type": "mc",
+   "no": 80
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? My report was full of typos. I ____ it more carefully. (검토했어야 했는데)",
+   "choices": [
+    "needn't have checked",
+    "can't have checked",
+    "must have checked",
+    "may have checked",
+    "should have checked"
+   ],
+   "answer": 5,
+   "why": "하지 않은 일에 대한 후회이므로 should have p.p.를 쓴다. must have checked는 '검토했음에 틀림없다'는 추측이다.",
+   "level": "중",
+   "type": "mc",
+   "no": 81
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? I feel guilty now. I ____ to his email so rudely. (답장하지 말았어야 했는데)",
+   "choices": [
+    "should have replied",
+    "can't have replied",
+    "must have replied",
+    "shouldn't have replied",
+    "may have replied"
+   ],
+   "answer": 4,
+   "why": "이미 한 행동에 대한 후회는 shouldn't have p.p.이다. should have replied는 '답장했어야 했는데'라는 반대 뜻이다.",
+   "level": "중",
+   "type": "mc",
+   "no": 82
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? Ms. Han wasn't at her desk at noon. She ____ out for lunch. (나갔을지도 모른다)",
+   "choices": [
+    "can't have stepped",
+    "must have stepped",
+    "may have stepped",
+    "needn't have stepped",
+    "should have stepped"
+   ],
+   "answer": 3,
+   "why": "확신이 없는 과거 추측이므로 may[might] have p.p.를 쓴다.",
+   "level": "중",
+   "type": "mc",
+   "no": 83
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? The lock was not damaged at all, so the thief ____ a key. (가지고 있었음에 틀림없다)",
+   "choices": [
+    "should have had",
+    "can't have had",
+    "must have had",
+    "may have had",
+    "needn't have had"
+   ],
+   "answer": 3,
+   "why": "자물쇠가 멀쩡했다는 근거로 확신하는 추측이므로 must have had가 알맞다.",
+   "level": "중",
+   "type": "mc",
+   "no": 84
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? We carried our raincoats all day, but it never rained. We ____ them. (가져올 필요가 없었는데)",
+   "choices": [
+    "needn't have brought",
+    "can't have brought",
+    "must have brought",
+    "may have brought",
+    "shouldn't have brought"
+   ],
+   "answer": 1,
+   "why": "「needn't have p.p.」는 이미 한 일이 불필요했음을 나타낸다. shouldn't have p.p.는 하지 말았어야 할 잘못을 뜻해 어감이 다르다.",
+   "level": "중",
+   "type": "mc",
+   "no": 85
+  },
+  {
+   "stem": "빈칸에 알맞은 것은? He could hardly walk that week, so he ____ the marathon. (완주했을 리 없다)",
+   "choices": [
+    "must have finished",
+    "couldn't have finished",
+    "needn't have finished",
+    "should have finished",
+    "may have finished"
+   ],
+   "answer": 2,
+   "why": "'~했을 리 없다'는 couldn't[can't] have p.p.이다. 걷기도 힘들었다는 근거가 강한 부정 추측을 뒷받침한다.",
+   "level": "중",
+   "type": "mc",
+   "no": 86
+  },
+  {
+   "stem": "두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것은? It is certain that Mike missed the last train. = Mike ____ the last train.",
+   "choices": [
+    "must have missed",
+    "can't have missed",
+    "may have missed",
+    "should have missed",
+    "needn't have missed"
+   ],
+   "answer": 1,
+   "why": "It is certain that+과거절은 강한 확신이므로 must have p.p.로 바꾼다.",
+   "level": "중",
+   "type": "mc",
+   "no": 87
+  },
+  {
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 것을 고르시오. I regret that I didn't take your advice. = I ____ your advice.",
+   "choices": [
+    "should have taken",
+    "needn't have taken",
+    "may have taken",
+    "can't have taken",
+    "must have taken"
+   ],
+   "answer": 1,
+   "why": "하지 않은 일에 대한 후회(I regret that I didn't ~)는 should have p.p.로 바꾼다.",
+   "level": "중",
+   "type": "mc",
+   "no": 88
+  },
+  {
+   "stem": "두 문장의 뜻이 같도록 할 때 알맞은 것은? It is impossible that she knew the truth. = She ____ the truth.",
+   "choices": [
+    "needn't have known",
+    "can't have known",
+    "should have known",
+    "must have known",
+    "may have known"
+   ],
+   "answer": 2,
+   "why": "It is impossible that+과거절은 강한 부정 추측이므로 can't[couldn't] have p.p.로 바꾼다.",
+   "level": "중",
+   "type": "mc",
+   "no": 89
+  },
+  {
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 것은? Perhaps they got on the wrong bus. = They ____ on the wrong bus.",
+   "choices": [
+    "can't have got",
+    "may have got",
+    "must have got",
+    "needn't have got",
+    "should have got"
+   ],
+   "answer": 2,
+   "why": "Perhaps는 불확실한 추측이므로 may[might] have p.p.로 바꾼다.",
+   "level": "중",
+   "type": "mc",
+   "no": 90
+  },
+  {
+   "stem": "두 문장의 뜻이 같도록 알맞은 것을 고르시오. I'm sorry that I lost my temper. = I ____ my temper.",
+   "choices": [
+    "needn't have lost",
+    "must have lost",
+    "can't have lost",
+    "shouldn't have lost",
+    "should have lost"
+   ],
+   "answer": 4,
+   "why": "이미 한 행동을 후회하므로 shouldn't have p.p.로 바꾼다.",
+   "level": "중",
+   "type": "mc",
+   "no": 91
+  },
+  {
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 것은? It was not necessary for us to hurry, but we did. = We ____.",
+   "choices": [
+    "may have hurried",
+    "can't have hurried",
+    "must have hurried",
+    "shouldn't have hurried",
+    "needn't have hurried"
+   ],
+   "answer": 5,
+   "why": "불필요했는데 실제로 한 일은 needn't have p.p.로 나타낸다.",
+   "level": "중",
+   "type": "mc",
+   "no": 92
+  },
+  {
+   "stem": "두 문장의 뜻이 같도록 할 때 알맞은 것은? I am sure that he didn't tell anybody about it. = He ____ anybody about it.",
+   "choices": [
+    "needn't have told",
+    "may have told",
+    "should have told",
+    "can't have told",
+    "must have told"
+   ],
+   "answer": 4,
+   "why": "과거 사실을 강하게 부정하는 확신이므로 can't have p.p.를 쓴다.",
+   "level": "중",
+   "type": "mc",
+   "no": 93
+  },
+  {
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 것은? It is possible that the package was delivered to the wrong address. = The package ____ to the wrong address.",
+   "choices": [
+    "may have delivered",
+    "may have been delivered",
+    "should have been delivered",
+    "can't have been delivered",
+    "must have been delivered"
+   ],
+   "answer": 2,
+   "why": "가능성을 나타내므로 may have p.p.를 쓰고, 소포는 배달되는 대상이므로 수동형 have been delivered가 되어야 한다.",
+   "level": "중",
+   "type": "mc",
+   "no": 94
+  },
+  {
+   "stem": "대화의 빈칸에 알맞은 것은? A: I ran into Sujin at the library yesterday. B: You ____ her. She flew to Canada last Friday.",
+   "choices": [
+    "must have met",
+    "should have met",
+    "may have met",
+    "needn't have met",
+    "can't have met"
+   ],
+   "answer": 5,
+   "why": "지난 금요일에 캐나다로 떠났으므로 어제 만났을 리 없다. 강한 부정 추측 can't have p.p.가 알맞다.",
+   "level": "중",
+   "type": "mc",
+   "no": 95
+  },
+  {
+   "stem": "대화의 빈칸에 알맞은 것은? A: Why didn't you pick up my call? B: Sorry. I ____ my phone on silent mode. (해 두었음에 틀림없어)",
+   "choices": [
+    "should have left",
+    "may not have left",
+    "needn't have left",
+    "must have left",
+    "can't have left"
+   ],
+   "answer": 4,
+   "why": "전화를 못 받은 이유를 확신 있게 추측하는 것이므로 must have p.p.를 쓴다.",
+   "level": "중",
+   "type": "mc",
+   "no": 96
+  },
+  {
+   "stem": "대화의 빈칸에 알맞은 것은? A: I got a C on my essay. B: You ____ it before you handed it in. (검토했어야 했는데)",
+   "choices": [
+    "can't have proofread",
+    "should have proofread",
+    "must have proofread",
+    "needn't have proofread",
+    "may have proofread"
+   ],
+   "answer": 2,
+   "why": "하지 않은 일에 대한 충고 섞인 유감이므로 should have p.p.를 쓴다.",
+   "level": "중",
+   "type": "mc",
+   "no": 97
+  },
+  {
+   "stem": "대화의 빈칸에 알맞은 것은? A: The classroom lights were on all night. B: The last student ____ to switch them off. (잊었음에 틀림없어)",
+   "choices": [
+    "should have forgotten",
+    "must have forgotten",
+    "may have forgotten",
+    "can't have forgotten",
+    "needn't have forgotten"
+   ],
+   "answer": 2,
+   "why": "불이 켜져 있었다는 증거로 확신하므로 must have p.p.가 알맞다.",
+   "level": "중",
+   "type": "mc",
+   "no": 98
+  },
+  {
+   "stem": "대화의 빈칸에 알맞은 것은? A: Did Peter really build the whole set by himself? B: He ____ it alone. It was far too big for one person.",
+   "choices": [
+    "may have done",
+    "can't have done",
+    "should have done",
+    "needn't have done",
+    "must have done"
+   ],
+   "answer": 2,
+   "why": "혼자 하기엔 너무 컸다는 근거가 있으므로 '혼자 했을 리 없다'는 can't have p.p.가 알맞다.",
+   "level": "중",
+   "type": "mc",
+   "no": 99
+  },
+  {
+   "stem": "대화의 빈칸에 알맞은 것은? A: I'm sorry I yelled at you yesterday. B: It's okay, but you ____ so angry about a small mistake. (그렇게 화내지 말았어야 했어)",
+   "choices": [
+    "can't have got",
+    "should have got",
+    "shouldn't have got",
+    "needn't have got",
+    "must have got"
+   ],
+   "answer": 3,
+   "why": "이미 한 행동에 대한 유감이므로 shouldn't have p.p.를 쓴다.",
+   "level": "중",
+   "type": "mc",
+   "no": 100
+  },
+  {
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그는 그 편지를 이미 읽었음에 틀림없다.",
+   "choices": [
+    "He must be already read the letter.",
+    "He must have already readed the letter.",
+    "He must already read the letter.",
+    "He must had already read the letter.",
+    "He must have already read the letter."
+   ],
+   "answer": 5,
+   "why": "'~했음에 틀림없다'는 must have p.p.이고, read의 과거분사는 read이다. 나머지는 형태가 틀렸다.",
+   "level": "중",
+   "type": "mc",
+   "no": 101
+  },
+  {
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 너는 우산을 가져왔어야 했다.",
+   "choices": [
+    "You should have bring an umbrella.",
+    "You should brought an umbrella.",
+    "You must have brought an umbrella.",
+    "You should had brought an umbrella.",
+    "You should have brought an umbrella."
+   ],
+   "answer": 5,
+   "why": "'~했어야 했다'는 should have p.p.이다. must have brought는 '가져왔음에 틀림없다'라는 추측이라 뜻이 다르다.",
+   "level": "중",
+   "type": "mc",
+   "no": 102
+  },
+  {
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그녀가 그 시험에 떨어졌을 리가 없다.",
+   "choices": [
+    "She can't fail the exam.",
+    "She must not have failed the exam.",
+    "She can't have failed the exam.",
+    "She can't have fail the exam.",
+    "She shouldn't have failed the exam."
+   ],
+   "answer": 3,
+   "why": "'~했을 리 없다'는 can't have p.p.이다. shouldn't have failed는 '떨어지지 말았어야 했다'라는 후회의 뜻이다.",
+   "level": "중",
+   "type": "mc",
+   "no": 103
+  },
+  {
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그들은 어제 나를 보지 못했을지도 모른다.",
+   "choices": [
+    "They can't have seen me yesterday.",
+    "They may not have seen me yesterday.",
+    "They must not see me yesterday.",
+    "They may not have saw me yesterday.",
+    "They may not see me yesterday."
+   ],
+   "answer": 2,
+   "why": "'~하지 않았을지도 모른다'는 may not have p.p.이다. can't have seen은 '봤을 리 없다'로 확신의 정도가 다르다.",
+   "level": "중",
+   "type": "mc",
+   "no": 104
+  },
+  {
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 나는 그렇게 많은 돈을 쓰지 말았어야 했다.",
+   "choices": [
+    "I shouldn't have spend so much money.",
+    "I needn't have spent so much money.",
+    "I shouldn't spend so much money.",
+    "I shouldn't have spent so much money.",
+    "I can't have spent so much money."
+   ],
+   "answer": 4,
+   "why": "이미 한 일에 대한 후회는 shouldn't have p.p.이다. needn't have spent는 '쓸 필요가 없었는데'로 뜻이 다르다.",
+   "level": "중",
+   "type": "mc",
+   "no": 105
+  },
+  {
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? The lights ①<u>were</u> still on when I ②<u>arrived</u>, so somebody ③<u>must have forget</u> ④<u>to turn</u> them ⑤<u>off</u>.",
+   "choices": [
+    "were",
+    "arrived",
+    "must have forget",
+    "to turn",
+    "off"
+   ],
+   "answer": 3,
+   "why": "must have 뒤에는 과거분사가 와야 하므로 must have forgotten이 되어야 한다.",
+   "level": "중",
+   "type": "mc",
+   "no": 106
+  },
+  {
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? Since the concert ①<u>was</u> sold out in minutes, you ②<u>can't</u> ③<u>had bought</u> a ticket ④<u>at</u> the door ⑤<u>last night</u>.",
+   "choices": [
+    "was",
+    "can't",
+    "had bought",
+    "at",
+    "last night"
+   ],
+   "answer": 3,
+   "why": "조동사 can't 뒤에는 동사원형 have가 와야 하므로 can't have bought로 고쳐야 한다.",
+   "level": "중",
+   "type": "mc",
+   "no": 107
+  },
+  {
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? I ①<u>should</u> ②<u>have listened</u> to my coach, but I ③<u>ignored</u> his advice and ④<u>ended</u> up ⑤<u>to lose</u> the match.",
+   "choices": [
+    "should",
+    "have listened",
+    "ignored",
+    "ended",
+    "to lose"
+   ],
+   "answer": 5,
+   "why": "end up 뒤에는 동명사가 오므로 losing이 되어야 한다. should have listened는 어법상 바르다.",
+   "level": "중",
+   "type": "mc",
+   "no": 108
+  },
+  {
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? The two letters ①<u>may</u> ②<u>have written</u> by the same person, though nobody ③<u>has</u> ④<u>been able</u> to prove it ⑤<u>yet</u>.",
+   "choices": [
+    "may",
+    "have written",
+    "has",
+    "been able",
+    "yet"
+   ],
+   "answer": 2,
+   "why": "편지는 쓰이는 대상이므로 수동형 have been written이 되어야 한다. 「may have p.p.」의 수동은 may have been p.p.이다.",
+   "level": "중",
+   "type": "mc",
+   "no": 109
+  },
+  {
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? Nobody ①<u>answered</u> the phone, so they ②<u>might</u> ③<u>have gone</u> out, or they ④<u>may</u> ⑤<u>have sleeping</u>.",
+   "choices": [
+    "answered",
+    "might",
+    "have gone",
+    "may",
+    "have sleeping"
+   ],
+   "answer": 5,
+   "why": "have 뒤에는 과거분사가 오므로 have been sleeping 또는 have slept가 되어야 한다.",
+   "level": "중",
+   "type": "mc",
+   "no": 110
+  },
+  {
+   "stem": "다음 빈칸에 공통으로 들어갈 말은? · She ____ have been ill; she looked perfectly fine at lunch. · It ____ have been Daniel that you saw. He moved to Canada last year.",
+   "choices": [
+    "can't",
+    "must",
+    "may",
+    "should",
+    "need"
+   ],
+   "answer": 1,
+   "why": "두 문장 모두 사실과 어긋나는 과거 추측을 부정하므로 can't have p.p.가 알맞다.",
+   "level": "중",
+   "type": "mc",
+   "no": 111
+  },
+  {
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은? · There ____ have been an accident; the road is completely blocked. · He plays the violin so well that he ____ have practiced for years.",
+   "choices": [
+    "can't",
+    "must",
+    "should",
+    "may not",
+    "need"
+   ],
+   "answer": 2,
+   "why": "두 문장 모두 눈앞의 근거로 과거를 강하게 확신하므로 must have p.p.가 알맞다.",
+   "level": "중",
+   "type": "mc",
+   "no": 112
+  },
+  {
+   "stem": "다음 빈칸에 공통으로 들어갈 말은? · I ____ have listened to my doctor's advice. · You ____ have warned me about the deadline earlier.",
+   "choices": [
+    "should",
+    "can't",
+    "need",
+    "must",
+    "may"
+   ],
+   "answer": 1,
+   "why": "둘 다 하지 않은 일에 대한 후회·아쉬움이므로 should have p.p.가 알맞다.",
+   "level": "중",
+   "type": "mc",
+   "no": 113
+  },
+  {
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은? · The guests ____ have arrived by now, but I'm not certain. · The strange noise ____ have come from the empty room next door.",
+   "choices": [
+    "should",
+    "need",
+    "can't",
+    "must",
+    "may"
+   ],
+   "answer": 5,
+   "why": "둘 다 확신이 없는 추측이므로 may have p.p.가 알맞다. must have p.p.는 확신, can't have p.p.는 부정 확신이다.",
+   "level": "중",
+   "type": "mc",
+   "no": 114
+  },
+  {
+   "stem": "두 문장의 뜻이 같도록 빈칸에 세 단어를 쓰시오. I regret that I didn't back up my files. → I ____ ____ ____ up my files.",
+   "answer": "should have backed",
+   "alt": [],
+   "why": "하지 않은 일에 대한 후회이므로 should have p.p.를 쓴다. back up의 과거분사는 backed up이다.",
+   "level": "중",
+   "type": "short",
+   "no": 115
+  },
+  {
+   "stem": "두 문장의 뜻이 같도록 빈칸에 세 단어를 쓰시오. I'm sure that Daniel took the wrong subway line. → Daniel ____ ____ ____ the wrong subway line.",
+   "answer": "must have taken",
+   "alt": [],
+   "why": "과거 사실에 대한 강한 확신이므로 must have p.p.를 쓴다. take의 과거분사는 taken이다.",
+   "level": "중",
+   "type": "short",
+   "no": 116
+  },
+  {
+   "stem": "두 문장의 뜻이 같도록 빈칸에 세 단어를 쓰시오. It is impossible that Mina cheated on the test. → Mina ____ ____ ____ on the test.",
+   "answer": "can't have cheated",
+   "alt": [
+    "cannot have cheated",
+    "couldn't have cheated"
+   ],
+   "why": "'~했을 리 없다'는 can't[couldn't] have p.p.로 나타낸다.",
+   "level": "중",
+   "type": "short",
+   "no": 117
+  },
+  {
+   "stem": "두 문장의 뜻이 같도록 빈칸에 세 단어를 쓰시오. Perhaps the letter got lost in the mail. → The letter ____ ____ ____ lost in the mail.",
+   "answer": "may have got",
+   "alt": [
+    "might have got",
+    "may have gotten",
+    "might have gotten"
+   ],
+   "why": "Perhaps는 불확실한 추측이므로 may[might] have p.p.로 바꾼다.",
+   "level": "중",
+   "type": "short",
+   "no": 118
+  },
+  {
+   "stem": "두 문장의 뜻이 같도록 빈칸에 세 단어를 쓰시오. I'm sorry that I told him your secret. → I ____ ____ ____ him your secret.",
+   "answer": "shouldn't have told",
+   "alt": [],
+   "why": "이미 한 일에 대한 후회이므로 shouldn't have p.p.를 쓴다.",
+   "level": "중",
+   "type": "short",
+   "no": 119
+  },
+  {
+   "stem": "두 문장의 뜻이 같도록 빈칸에 세 단어를 쓰시오. It was not necessary for me to bring my laptop, but I brought it. → I ____ ____ ____ my laptop.",
+   "answer": "needn't have brought",
+   "alt": [],
+   "why": "실제로 했지만 불필요했던 일은 needn't have p.p.로 나타낸다.",
+   "level": "중",
+   "type": "short",
+   "no": 120
+  },
+  {
+   "stem": "괄호 안의 말을 이용하여 빈칸을 완성하시오. (세 단어) 그는 그 소식을 이미 들었음에 틀림없다. → He ____ the news already. (must, hear)",
+   "answer": "must have heard",
+   "alt": [],
+   "why": "'~했음에 틀림없다'는 must have p.p.이고 hear의 과거분사는 heard이다.",
+   "level": "중",
+   "type": "short",
+   "no": 121
+  },
+  {
+   "stem": "괄호 안의 말을 이용하여 빈칸을 완성하시오. (네 단어) 그녀는 어제 나를 못 알아봤을지도 모른다. → She ____ me yesterday. (may, not, recognize)",
+   "answer": "may not have recognized",
+   "alt": [
+    "may not have recognised"
+   ],
+   "why": "'~하지 않았을지도 모른다'는 may not have p.p.이다.",
+   "level": "중",
+   "type": "short",
+   "no": 122
+  },
+  {
+   "stem": "괄호 안의 말을 이용하여 빈칸을 완성하시오. (세 단어) 우리는 그 식당을 더 일찍 예약했어야 했다. → We ____ the restaurant earlier. (should, book)",
+   "answer": "should have booked",
+   "alt": [],
+   "why": "하지 않은 일에 대한 후회는 should have p.p.로 쓴다.",
+   "level": "중",
+   "type": "short",
+   "no": 123
+  },
+  {
+   "stem": "괄호 안의 말을 이용하여 빈칸을 완성하시오. (세 단어) 그들이 그렇게 빨리 도착했을 리 없다. → They ____ so quickly. (can't, arrive)",
+   "answer": "can't have arrived",
+   "alt": [
+    "cannot have arrived"
+   ],
+   "why": "'~했을 리 없다'는 can't have p.p.이다.",
+   "level": "중",
+   "type": "short",
+   "no": 124
+  },
+  {
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. Considering the mud on his shoes, he must have <u>walk</u> through the park.",
+   "answer": "walked",
+   "alt": [],
+   "why": "must have 뒤에는 과거분사가 오므로 walk를 walked로 고친다.",
+   "level": "중",
+   "type": "short",
+   "no": 125
+  },
+  {
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. The window was open all night, so a stray cat may have <u>came</u> in.",
+   "answer": "come",
+   "alt": [],
+   "why": "come의 과거분사는 come이므로 과거형 came을 come으로 고친다.",
+   "level": "중",
+   "type": "short",
+   "no": 126
+  },
+  {
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. You ought to <u>had</u> told me about the schedule change.",
+   "answer": "have",
+   "alt": [],
+   "why": "「ought to have p.p.」 형태이므로 had를 have로 고친다.",
+   "level": "중",
+   "type": "short",
+   "no": 127
+  },
+  {
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. That text can't have been <u>send</u> by Amy; she lost her phone last week.",
+   "answer": "sent",
+   "alt": [],
+   "why": "조동사+have p.p.의 수동은 have been p.p.이므로 send를 과거분사 sent로 고친다.",
+   "level": "중",
+   "type": "short",
+   "no": 128
+  },
+  {
+   "stem": "우리말과 같도록 빈칸에 두 단어를 쓰시오. 그 사고는 부주의 때문에 일어났을지도 모른다. → The accident ____ ____ been caused by carelessness.",
+   "answer": "may have",
+   "alt": [
+    "might have",
+    "could have"
+   ],
+   "why": "과거 일에 대한 추측이므로 may[might] have p.p.를 쓰며, 여기서는 수동형 have been caused와 결합한다.",
+   "level": "중",
+   "type": "short",
+   "no": 129
+  },
+  {
+   "stem": "두 문장의 뜻이 같도록 빈칸에 세 단어를 쓰시오. I'm certain that they missed the last flight. → They ____ ____ ____ the last flight.",
+   "answer": "must have missed",
+   "alt": [],
+   "why": "확신을 나타내는 과거 추측이므로 must have p.p.를 쓴다.",
+   "level": "중",
+   "type": "short",
+   "no": 130
+  },
+  {
+   "stem": "두 문장의 뜻이 같도록 빈칸에 세 단어를 쓰시오. It was a mistake that we ignored the warning sign. → We ____ ____ ____ the warning sign.",
+   "answer": "shouldn't have ignored",
+   "alt": [],
+   "why": "이미 저지른 잘못을 후회하므로 shouldn't have p.p.를 쓴다.",
+   "level": "중",
+   "type": "short",
+   "no": 131
+  },
+  {
+   "stem": "괄호 안의 말을 이용해 빈칸에 세 단어를 쓰시오. The kitchen floor is covered with water. The pipe ____ ____ ____. (must, burst)",
+   "answer": "must have burst",
+   "alt": [],
+   "why": "눈앞의 증거로 과거를 확신하므로 must have p.p.를 쓴다. burst는 과거분사도 burst이다.",
+   "level": "중",
+   "type": "short",
+   "no": 132
+  },
+  {
+   "stem": "괄호 안의 말을 이용해 빈칸에 세 단어를 쓰시오. 그는 그 회의에 참석할 필요가 없었는데 참석했다. → He ____ ____ ____ the meeting. (attend)",
+   "answer": "needn't have attended",
+   "alt": [],
+   "why": "실제로 했지만 할 필요가 없었던 일은 needn't have p.p.로 나타낸다.",
+   "level": "중",
+   "type": "short",
+   "no": 133
+  },
+  {
+   "stem": "우리말과 같도록 빈칸에 세 단어를 쓰시오. 누군가 창문을 열어 둔 채로 두었음에 틀림없다. → Someone ____ ____ ____ the window open.",
+   "answer": "must have left",
+   "alt": [],
+   "why": "'~했음에 틀림없다'는 must have p.p.이고 leave의 과거분사는 left이다.",
+   "level": "중",
+   "type": "short",
+   "no": 134
+  },
+  {
+   "stem": "어법상 옳은 것끼리 짝지은 것은? ㄱ. He must have been waiting for hours when we finally arrived. ㄴ. She can't have knew about the sudden change. ㄷ. They needn't have hurried to the station. ㄹ. You ought to have telling me the truth.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 must have been -ing(과거진행 추측), ㄷ은 needn't have p.p.로 모두 바르다. ㄴ은 knew를 known으로, ㄹ은 telling을 told로 고쳐야 한다.",
+   "level": "상",
+   "type": "mc",
+   "no": 135
+  },
+  {
+   "stem": "어법상 옳은 것끼리 바르게 짝지은 것은? ㄱ. The bridge must have been build in the 1930s. ㄴ. Nobody could have foreseen such a result. ㄷ. I should have listened to my parents. ㄹ. He may have forgetting his password again.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 3,
+   "why": "ㄴ의 could have p.p.와 ㄷ의 should have p.p.는 형태가 바르다. ㄱ은 수동이므로 have been built, ㄹ은 have forgotten이 되어야 한다.",
+   "level": "상",
+   "type": "mc",
+   "no": 136
+  },
+  {
+   "stem": "어법상 옳은 것끼리 짝지은 것을 고르시오. ㄱ. She must have been knowing the answer all along. ㄴ. The letter might have been delivered to the wrong house. ㄷ. They should had booked the hotel earlier. ㄹ. We can't have missed the exit; there was no sign.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "ㄴ은 might have been p.p.(수동), ㄹ은 can't have p.p.로 바르다. ㄱ의 know는 진행형으로 쓰지 않고, ㄷ은 should have booked가 되어야 한다.",
+   "level": "상",
+   "type": "mc",
+   "no": 137
+  },
+  {
+   "stem": "우리말 해석이 바른 것끼리 짝지은 것은? ㄱ. You needn't have paid for the tour. (투어 비용을 낼 필요가 없었는데 냈다) ㄴ. He can't have been at the office. (사무실에 있었어야 했다) ㄷ. She may have been misled. (그녀는 속았을지도 모른다) ㄹ. I must have locked the door. (문을 잠갔어야 했는데)",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄴ은 '사무실에 있었을 리 없다', ㄹ은 '문을 잠갔음에 틀림없다'로 해석해야 한다. ㄱ과 ㄷ의 해석은 바르다.",
+   "level": "상",
+   "type": "mc",
+   "no": 138
+  },
+  {
+   "stem": "빈칸에 들어갈 말이 바르게 짝지어진 것은? · The road is closed, so there (A) have been a serious accident. · Ann is a vegetarian, so she (B) have ordered the beef stew.",
+   "choices": [
+    "(A) can't ... (B) must",
+    "(A) must ... (B) can't",
+    "(A) must ... (B) should",
+    "(A) should ... (B) may",
+    "(A) may not ... (B) can't"
+   ],
+   "answer": 2,
+   "why": "도로가 막혔다는 증거는 강한 긍정 추측 must have p.p.를, 채식주의자라는 사실은 강한 부정 추측 can't have p.p.를 이끈다.",
+   "level": "상",
+   "type": "mc",
+   "no": 139
+  },
+  {
+   "stem": "빈칸 (A), (B)에 들어갈 말로 알맞은 것은? · I regret it now; I (A) have accepted their offer. · Everything went fine, so we (B) have worried so much.",
+   "choices": [
+    "(A) can't ... (B) needn't",
+    "(A) should ... (B) must",
+    "(A) must ... (B) shouldn't",
+    "(A) should ... (B) needn't",
+    "(A) may ... (B) can't"
+   ],
+   "answer": 4,
+   "why": "(A)는 받아들이지 않은 일에 대한 후회이므로 should have p.p., (B)는 실제로 했지만 불필요했던 걱정이므로 needn't have p.p.이다.",
+   "level": "상",
+   "type": "mc",
+   "no": 140
+  },
+  {
+   "stem": "어법상 옳은 것끼리 짝지은 것은? ㄱ. He could of finished the work sooner. ㄴ. He could have finished the work sooner. ㄷ. The keys must have fallen out of my pocket. ㄹ. The keys must fell out of my pocket.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 3,
+   "why": "could of는 could have의 잘못된 표기이므로 ㄱ은 틀리고, ㄹ은 must have fallen이 되어야 한다. ㄴ과 ㄷ이 바르다.",
+   "level": "상",
+   "type": "mc",
+   "no": 141
+  },
+  {
+   "stem": "우리말과 영어 표현이 바르게 짝지어진 것끼리 고른 것은? ㄱ. ~했음에 틀림없다 - must have p.p. ㄴ. ~할 필요가 없었는데 했다 - needn't have p.p. ㄷ. ~했을 리 없다 - mustn't have p.p. ㄹ. ~하지 말았어야 했다 - shouldn't be p.p.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 1,
+   "why": "'~했을 리 없다'는 can't[couldn't] have p.p.이고, '~하지 말았어야 했다'는 shouldn't have p.p.이므로 ㄷ, ㄹ은 틀렸다.",
+   "level": "상",
+   "type": "mc",
+   "no": 142
+  },
+  {
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ㄱ. He must have left his umbrella on the bus. ㄴ. She can't have saw the notice on the door. ㄷ. We should have been more careful with the data. ㄹ. They may have been informed already. ㅁ. You ought to had called first.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ, ㄷ, ㄹ 세 문장이 바르다. ㄴ은 saw를 seen으로, ㅁ은 had를 have로 고쳐야 한다.",
+   "level": "상",
+   "type": "mc",
+   "no": 143
+  },
+  {
+   "stem": "다음 중 어법상 옳은 문장의 개수를 고르시오. ㄱ. I needn't have bought so much food. ㄴ. The tunnel must have been build a century ago. ㄷ. He might not have received your message. ㄹ. She shouldn't have telling him the news. ㅁ. Nobody could have knew the truth then.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ㄱ과 ㄷ만 바르다. ㄴ은 have been built, ㄹ은 have told, ㅁ은 have known이 되어야 한다.",
+   "level": "상",
+   "type": "mc",
+   "no": 144
+  },
+  {
+   "stem": "다음 중 어법상 <u>틀린</u> 문장의 개수는? ㄱ. The window can't have broke during the storm. ㄴ. They must have been arguing for hours. ㄷ. You should have wrote it down. ㄹ. We may have met at the conference. ㅁ. He needn't have came so early.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 have broken, ㄷ은 have written, ㅁ은 have come으로 고쳐야 하므로 틀린 것은 세 개다.",
+   "level": "상",
+   "type": "mc",
+   "no": 145
+  },
+  {
+   "stem": "우리말 해석이 옳은 문장의 개수는? ㄱ. She must have missed the bus. (버스를 놓쳤음에 틀림없다) ㄴ. I should have called you. (너에게 전화했어야 했는데) ㄷ. They can't have gone home. (집에 갔을지도 모른다) ㄹ. We needn't have waited. (기다릴 필요가 없었는데 기다렸다) ㅁ. He may not have noticed. (그가 알아차렸을 리 없다)",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄷ은 '집에 갔을 리 없다', ㅁ은 '알아차리지 못했을지도 모른다'가 옳은 해석이다. 나머지 세 개는 바르다.",
+   "level": "상",
+   "type": "mc",
+   "no": 146
+  },
+  {
+   "stem": "다음 중 빈칸에 have를 넣어야 하는 문장의 개수는? ㄱ. He must ____ been asleep when I called. ㄴ. She should ____ told us the truth. ㄷ. They can ____ swim very well. ㄹ. We may ____ misunderstood the question. ㅁ. You could ____ hurt yourself yesterday.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "ㄱ, ㄴ, ㄹ, ㅁ은 모두 「조동사+have p.p.」 구조이므로 have가 필요하다. ㄷ은 현재의 능력을 나타내는 can+동사원형이다.",
+   "level": "상",
+   "type": "mc",
+   "no": 147
+  },
+  {
+   "stem": "다음 중 어법상 옳은 문장의 개수를 고르시오. ㄱ. The parcel may have been sent to the old address. ㄴ. He must have been driving too fast. ㄷ. I ought to have apologized sooner. ㄹ. She can't have understood the joke. ㅁ. We should have been informed of the delay.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 5,
+   "why": "다섯 문장 모두 「조동사+have p.p.」(수동·진행 포함) 형태와 의미가 바르다.",
+   "level": "상",
+   "type": "mc",
+   "no": 148
+  },
+  {
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? The research team ①<u>must have overlooked</u> a key variable, for the results they ②<u>published</u> last year ③<u>have</u> never been ④<u>replicated</u> by any of the scientists who ⑤<u>has tried</u>.",
+   "choices": [
+    "must have overlooked",
+    "published",
+    "have",
+    "replicated",
+    "has tried"
+   ],
+   "answer": 5,
+   "why": "관계절의 선행사가 복수 the scientists이므로 has tried를 have tried로 고쳐야 한다. must have overlooked는 바른 형태다.",
+   "level": "상",
+   "type": "mc",
+   "no": 149
+  },
+  {
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? Although the witness ①<u>insisted</u> that he ②<u>had seen</u> the suspect, the man ③<u>can't have been</u> at the scene, because his flight ④<u>didn't land</u> until an hour after the crime ⑤<u>had committed</u>.",
+   "choices": [
+    "insisted",
+    "had seen",
+    "can't have been",
+    "didn't land",
+    "had committed"
+   ],
+   "answer": 5,
+   "why": "범죄는 저질러지는 대상이므로 had been committed가 되어야 한다. can't have been은 강한 부정 추측으로 바르다.",
+   "level": "상",
+   "type": "mc",
+   "no": 150
+  },
+  {
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? The manuscript ①<u>discovered</u> in the attic ②<u>may have written</u> by a student of the artist, though experts still ③<u>disagree</u> about ④<u>whether</u> the signature ⑤<u>is</u> genuine.",
+   "choices": [
+    "discovered",
+    "may have written",
+    "disagree",
+    "whether",
+    "is"
+   ],
+   "answer": 2,
+   "why": "원고는 쓰이는 대상이므로 may have been written(수동)이 되어야 한다.",
+   "level": "상",
+   "type": "mc",
+   "no": 151
+  },
+  {
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? Looking at the muddy footprints, the detective concluded that the intruder ①<u>must</u> ②<u>have entered</u> through the garden door, which ③<u>had left</u> unlocked the night before by someone ④<u>familiar</u> ⑤<u>with</u> the house.",
+   "choices": [
+    "must",
+    "have entered",
+    "had left",
+    "familiar",
+    "with"
+   ],
+   "answer": 3,
+   "why": "문은 누군가에 의해 잠기지 않은 채 '남겨진' 것이므로 had been left가 되어야 한다.",
+   "level": "상",
+   "type": "mc",
+   "no": 152
+  },
+  {
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? I ①<u>needn't have worried</u> about the interview at all, since the manager ②<u>asked</u> me only two questions and ③<u>seemed</u> ④<u>satisfying</u> with ⑤<u>everything</u> I said.",
+   "choices": [
+    "needn't have worried",
+    "asked",
+    "seemed",
+    "satisfying",
+    "everything"
+   ],
+   "answer": 4,
+   "why": "면접관이 만족을 느낀 것이므로 satisfied가 되어야 한다. needn't have worried는 '걱정할 필요가 없었는데 했다'는 뜻으로 바르다.",
+   "level": "상",
+   "type": "mc",
+   "no": 153
+  },
+  {
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? She ①<u>ought to</u> ②<u>have inform</u> us of the change in advance, but nobody in the office ③<u>seems</u> to know ④<u>what</u> actually ⑤<u>happened</u> that morning.",
+   "choices": [
+    "ought to",
+    "have inform",
+    "seems",
+    "what",
+    "happened"
+   ],
+   "answer": 2,
+   "why": "「ought to have p.p.」이므로 have informed가 되어야 한다.",
+   "level": "상",
+   "type": "mc",
+   "no": 154
+  },
+  {
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? The company ①<u>should have</u> ②<u>recalled</u> the product months ago; by now thousands of customers ③<u>may</u> ④<u>had used</u> a device ⑤<u>that</u> was already known to be unsafe.",
+   "choices": [
+    "should have",
+    "recalled",
+    "may",
+    "had used",
+    "that"
+   ],
+   "answer": 4,
+   "why": "조동사 may 뒤에는 have가 와야 하므로 may have used가 되어야 한다.",
+   "level": "상",
+   "type": "mc",
+   "no": 155
+  },
+  {
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? Nobody ①<u>could have predicted</u> how quickly the tiny startup ②<u>would grow</u>, nor ③<u>anyone imagined</u> that its founder ④<u>would become</u> one of the ⑤<u>most influential</u> figures in the industry.",
+   "choices": [
+    "could have predicted",
+    "would grow",
+    "anyone imagined",
+    "would become",
+    "most influential"
+   ],
+   "answer": 3,
+   "why": "부정어 nor로 시작하는 절은 도치되어야 하므로 did anyone imagine이 되어야 한다.",
+   "level": "상",
+   "type": "mc",
+   "no": 156
+  },
+  {
+   "stem": "다음 중 밑줄 친 부분의 뜻풀이가 <u>잘못된</u> 것은?",
+   "choices": [
+    "We needn't have worried. (걱정할 필요가 없었는데 걱정했다)",
+    "She may not have received it. (그것을 받지 않았을지도 모른다)",
+    "You can't have been serious. (진심이었을 리 없다)",
+    "I should have gone. (내가 갔음에 틀림없다)",
+    "He must have been sleeping. (자고 있었음에 틀림없다)"
+   ],
+   "answer": 4,
+   "why": "should have gone은 '갔어야 했는데 가지 않았다'는 후회를 뜻한다. '갔음에 틀림없다'는 must have gone이다.",
+   "level": "상",
+   "type": "mc",
+   "no": 157
+  },
+  {
+   "stem": "다음 우리말에 해당하는 문장으로 알맞은 것은? 우리는 표를 미리 살 필요가 없었는데 (미리 사 두었다).",
+   "choices": [
+    "We mustn't have bought the tickets in advance.",
+    "We needn't have bought the tickets in advance.",
+    "We shouldn't have bought the tickets in advance.",
+    "We couldn't have bought the tickets in advance.",
+    "We didn't need to buy the tickets in advance."
+   ],
+   "answer": 2,
+   "why": "needn't have p.p.는 '실제로 했지만 불필요했다'는 뜻이다. didn't need to는 보통 불필요해서 하지 않았음을 뜻한다.",
+   "level": "상",
+   "type": "mc",
+   "no": 158
+  },
+  {
+   "stem": "다음 중 과거 일에 대한 후회를 나타내는 문장은?",
+   "choices": [
+    "I ought to have apologized right away.",
+    "She may have forgotten her password.",
+    "They can't have finished the work so soon.",
+    "It might have been just a coincidence.",
+    "He must have taken the wrong turn."
+   ],
+   "answer": 1,
+   "why": "ought to have p.p.는 should have p.p.와 같은 뜻으로 후회를 나타낸다. 나머지는 모두 과거에 대한 추측이다.",
+   "level": "상",
+   "type": "mc",
+   "no": 159
+  },
+  {
+   "stem": "다음 중 과거 일에 대한 강한 부정 추측을 나타내는 문장은?",
+   "choices": [
+    "She needn't have written this letter herself.",
+    "She may not have written this letter herself.",
+    "She couldn't have written this letter herself.",
+    "She shouldn't have written this letter herself.",
+    "She didn't have to write this letter herself."
+   ],
+   "answer": 3,
+   "why": "couldn't[can't] have p.p.가 '~했을 리 없다'는 강한 부정 추측이다. may not have p.p.는 약한 추측, shouldn't have p.p.는 후회이다.",
+   "level": "상",
+   "type": "mc",
+   "no": 160
+  },
+  {
+   "stem": "밑줄 친 부분의 쓰임이 나머지 넷과 <u>다른</u> 것은?",
+   "choices": [
+    "She knows every detail; she <u>must have read</u> the report.",
+    "They look sunburned; they <u>must have been</u> at the beach.",
+    "The streets are wet, so it <u>must have rained</u>.",
+    "His car is gone, so he <u>must have left</u>.",
+    "You <u>should have read</u> the instructions first."
+   ],
+   "answer": 5,
+   "why": "네 문장은 근거에 따른 과거 추측이지만, should have read는 하지 않은 일에 대한 후회를 나타낸다.",
+   "level": "상",
+   "type": "mc",
+   "no": 161
+  },
+  {
+   "stem": "밑줄 친 부분의 뜻으로 알맞은 것은? With a little more practice, you <u>could have won</u> the first prize.",
+   "choices": [
+    "1등을 탔음에 틀림없다",
+    "1등을 탈 수도 있었는데 (타지 못했다)",
+    "1등을 타지 말았어야 했다",
+    "1등을 탈 필요가 없었다",
+    "1등을 탔을 리 없다"
+   ],
+   "answer": 2,
+   "why": "could have p.p.는 실현되지 않은 과거의 가능성(~할 수도 있었는데)을 나타낸다.",
+   "level": "상",
+   "type": "mc",
+   "no": 162
+  },
+  {
+   "stem": "밑줄 친 부분의 뜻으로 알맞은 것은? If she had left ten minutes earlier, she <u>would have caught</u> the last train.",
+   "choices": [
+    "막차를 탈 필요가 없었다",
+    "막차를 탔을 리 없다",
+    "막차를 탔을 텐데 (타지 못했다)",
+    "막차를 탔음에 틀림없다",
+    "막차를 탔어야 했다"
+   ],
+   "answer": 3,
+   "why": "「If+과거완료, 주어+would have p.p.」는 과거 사실의 반대를 가정하므로 실제로는 타지 못했다는 뜻이다.",
+   "level": "상",
+   "type": "mc",
+   "no": 163
+  },
+  {
+   "stem": "다음 두 문장의 의미 차이를 바르게 설명한 것은? (A) He didn't need to wait for us. (B) He needn't have waited for us.",
+   "choices": [
+    "(A)는 기다렸다는 뜻이고, (B)는 기다리지 않았다는 뜻이다.",
+    "(A)는 기다릴 필요가 없어서 기다리지 않았다는 뜻이고, (B)는 실제로 기다렸지만 그럴 필요가 없었다는 뜻이다.",
+    "(A)와 (B)는 뜻이 완전히 같다.",
+    "(A)는 후회를, (B)는 추측을 나타낸다.",
+    "(A)는 미래의 일을, (B)는 현재의 일을 나타낸다."
+   ],
+   "answer": 2,
+   "why": "didn't need to는 필요가 없었다는 사실만 말하고 보통 실행하지 않았음을 함축하며, needn't have p.p.는 이미 한 행동이 불필요했음을 나타낸다.",
+   "level": "상",
+   "type": "mc",
+   "no": 164
+  },
+  {
+   "stem": "빈칸에 들어갈 말로 가장 알맞은 것은? The floor was still wet when we came in, so someone ____ the room just a few minutes earlier.",
+   "choices": [
+    "must have been cleaning",
+    "must had cleaned",
+    "must have clean",
+    "must cleaning",
+    "must be cleaning"
+   ],
+   "answer": 1,
+   "why": "몇 분 전까지 진행되던 동작을 추측하므로 「must have been -ing」가 알맞다. 나머지는 시제나 형태가 맞지 않는다.",
+   "level": "상",
+   "type": "mc",
+   "no": 165
+  },
+  {
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Judging from the tool marks on the stone, the temple ____ entirely by hand more than a thousand years ago.",
+   "choices": [
+    "must had been built",
+    "must have built",
+    "must have been built",
+    "must be built",
+    "must have building"
+   ],
+   "answer": 3,
+   "why": "사원은 지어지는 대상이므로 수동형이 필요하며, 과거에 대한 확신이므로 must have been built가 알맞다.",
+   "level": "상",
+   "type": "mc",
+   "no": 166
+  },
+  {
+   "stem": "다음 중 어법상 옳은 문장으로 알맞은 것은?",
+   "choices": [
+    "The email must had been sent to the wrong address.",
+    "The email must have being sent to the wrong address.",
+    "The email must be sent to the wrong address yesterday.",
+    "The email must have been sent to the wrong address.",
+    "The email must have sent to the wrong address."
+   ],
+   "answer": 4,
+   "why": "이메일은 보내지는 대상이므로 must have been sent가 옳다. 조동사 뒤에는 have, 그 뒤에는 been p.p.가 온다.",
+   "level": "상",
+   "type": "mc",
+   "no": 167
+  },
+  {
+   "stem": "다음 중 어법상 옳지 <u>않은</u> 문장은?",
+   "choices": [
+    "We should have been told about the change.",
+    "She needn't have to pay the fee.",
+    "They may have been waiting outside for an hour.",
+    "I might have left my badge at the front desk.",
+    "He can't have been the one who called."
+   ],
+   "answer": 2,
+   "why": "needn't 뒤에는 바로 have p.p.가 오므로 She needn't have paid the fee가 되어야 한다. needn't have to는 어법에 맞지 않는다.",
+   "level": "상",
+   "type": "mc",
+   "no": 168
+  },
+  {
+   "stem": "다음 중 어법상 올바르게 쓰인 문장은?",
+   "choices": [
+    "Nobody could have imagining such an outcome.",
+    "Nobody could had imagined such an outcome.",
+    "Nobody could of imagined such an outcome.",
+    "Nobody could have imagine such an outcome.",
+    "Nobody could have imagined such an outcome."
+   ],
+   "answer": 5,
+   "why": "「could have p.p.」 형태가 바른 것은 could have imagined뿐이다. could of는 could have의 잘못된 표기이다.",
+   "level": "상",
+   "type": "mc",
+   "no": 169
+  },
+  {
+   "stem": "다음 중 어법상 어색한 문장을 고르시오.",
+   "choices": [
+    "He should have knew better than to argue.",
+    "The documents may have been destroyed in the fire.",
+    "The children can't have gone far on foot.",
+    "She must have been studying all night.",
+    "You ought not to have signed the contract."
+   ],
+   "answer": 1,
+   "why": "know의 과거분사는 known이므로 should have known이 되어야 한다.",
+   "level": "상",
+   "type": "mc",
+   "no": 170
+  },
+  {
+   "stem": "다음 중 어법과 의미가 모두 자연스러운 문장은?",
+   "choices": [
+    "Since the door was unlocked, the thief must have used a key.",
+    "Since the door was locked, the thief must have use a key.",
+    "Since the door was locked, the thief must use a key.",
+    "Since the door was locked, the thief must had used a key.",
+    "Since the door was locked, the thief must have used a key."
+   ],
+   "answer": 5,
+   "why": "문이 잠겨 있었다는 사실이 열쇠를 썼다는 추측의 근거가 되며, 형태도 must have used로 바르다. 문이 열려 있었다면 열쇠를 썼다는 추측의 근거가 되지 못한다.",
+   "level": "상",
+   "type": "mc",
+   "no": 171
+  },
+  {
+   "stem": "다음 중 밑줄 친 부분을 바르게 고친 것은? The victims of the accident <u>should have been treat</u> much sooner.",
+   "choices": [
+    "should have treated",
+    "should have been treated",
+    "should had been treated",
+    "should be treated",
+    "should have being treated"
+   ],
+   "answer": 2,
+   "why": "피해자들은 치료를 받는 대상이므로 「should have been p.p.」인 should have been treated가 옳다.",
+   "level": "상",
+   "type": "mc",
+   "no": 172
+  },
+  {
+   "stem": "다음 중 수동태 표현이 어법상 옳은 것은?",
+   "choices": [
+    "They must have been telling about it in advance by the manager.",
+    "They must have told about it in advance by us.",
+    "They must had been told about it in advance.",
+    "They must be told about it in advance last week.",
+    "They must have been told about it in advance."
+   ],
+   "answer": 5,
+   "why": "'미리 들었음에 틀림없다'는 수동 must have been told로 나타낸다. 나머지는 태나 시제, 형태가 맞지 않는다.",
+   "level": "상",
+   "type": "mc",
+   "no": 173
+  },
+  {
+   "stem": "다음 중 어법상 <u>틀린</u> 부분이 없는 문장은?",
+   "choices": [
+    "I shouldn't had said anything about the surprise party.",
+    "I shouldn't have said anything about the surprise party.",
+    "I shouldn't have say anything about the surprise party.",
+    "I shouldn't said anything about the surprise party.",
+    "I shouldn't have saying anything about the surprise party."
+   ],
+   "answer": 2,
+   "why": "「shouldn't have p.p.」 형태가 바른 것은 shouldn't have said뿐이다.",
+   "level": "상",
+   "type": "mc",
+   "no": 174
+  },
+  {
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그녀가 그때 그 사실을 알고 있었을 리 없다.",
+   "choices": [
+    "She shouldn't have known the fact at that time.",
+    "She can't know the fact at that time.",
+    "She can't have been knowing the fact at that time.",
+    "She can't have known the fact at that time.",
+    "She must not have known the fact at that time."
+   ],
+   "answer": 4,
+   "why": "'~했을 리 없다'는 can't have p.p.이며 know는 진행형으로 쓰지 않는다. shouldn't have known은 후회의 뜻이다.",
+   "level": "상",
+   "type": "mc",
+   "no": 175
+  },
+  {
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그 보고서는 그의 비서에 의해 작성되었을지도 모른다.",
+   "choices": [
+    "The report may be written by his secretary yesterday.",
+    "The report may have being written by his secretary.",
+    "The report might wrote by his secretary.",
+    "The report may have written by his secretary.",
+    "The report may have been written by his secretary."
+   ],
+   "answer": 5,
+   "why": "보고서는 작성되는 대상이므로 수동형이 필요하고, 과거 추측이므로 may have been written이 알맞다.",
+   "level": "상",
+   "type": "mc",
+   "no": 176
+  },
+  {
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그 아이들은 온종일 밖에서 놀고 있었음에 틀림없다.",
+   "choices": [
+    "The children must have playing outside all day.",
+    "The children must be playing outside all day yesterday.",
+    "The children must have been playing outside all day.",
+    "The children must have played outside all day long ago.",
+    "The children must had been playing outside all day."
+   ],
+   "answer": 3,
+   "why": "과거에 진행 중이던 일에 대한 확신은 「must have been -ing」로 나타낸다.",
+   "level": "상",
+   "type": "mc",
+   "no": 177
+  },
+  {
+   "stem": "두 문장의 뜻이 같지 <u>않은</u> 것은?",
+   "choices": [
+    "She can't have seen us. = It is impossible that she saw us.",
+    "They must have arrived. = I'm sure they arrived.",
+    "We may have misunderstood. = Perhaps we misunderstood.",
+    "He needn't have rushed. = He didn't rush at all.",
+    "I ought to have warned you. = I should have warned you."
+   ],
+   "answer": 4,
+   "why": "needn't have rushed는 실제로 서둘렀지만 그럴 필요가 없었다는 뜻이므로 '전혀 서두르지 않았다'와 같지 않다.",
+   "level": "상",
+   "type": "mc",
+   "no": 178
+  },
+  {
+   "stem": "다음 문장을 바꿔 쓴 것으로 알맞은 것은? It is certain that the guard didn't notice the open window.",
+   "choices": [
+    "The guard must have noticed the open window.",
+    "The guard can't have noticed the open window.",
+    "The guard needn't have noticed the open window.",
+    "The guard shouldn't have noticed the open window.",
+    "The guard may not have noticed the open window."
+   ],
+   "answer": 2,
+   "why": "과거의 부정 사실을 확신하는 것이므로 can't have p.p.로 바꾼다. may not have p.p.는 확신이 약해 뜻이 다르다.",
+   "level": "상",
+   "type": "mc",
+   "no": 179
+  },
+  {
+   "stem": "다음 문장을 바꿔 쓴 것으로 알맞은 것은? It was unnecessary for them to reprint the whole booklet, but they did.",
+   "choices": [
+    "They couldn't have reprinted the whole booklet.",
+    "They didn't need to reprint the whole booklet.",
+    "They must not have reprinted the whole booklet.",
+    "They shouldn't have reprinted the whole booklet.",
+    "They needn't have reprinted the whole booklet."
+   ],
+   "answer": 5,
+   "why": "실제로 했지만 불필요했던 일이므로 needn't have p.p.를 쓴다. didn't need to는 하지 않았음을 함축한다.",
+   "level": "상",
+   "type": "mc",
+   "no": 180
+  },
+  {
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (두 단어) The ancient bowl must have <u>make</u> more than two thousand years ago.",
+   "answer": "been made",
+   "alt": [],
+   "why": "그릇은 만들어지는 대상이므로 「must have been p.p.」의 수동형이 되어야 한다.",
+   "level": "상",
+   "type": "short",
+   "no": 181
+  },
+  {
+   "stem": "다음 문장에서 어법상 <u>틀린</u> 한 단어를 바르게 고쳐 쓰시오. She ought to had warned us about the coming storm.",
+   "answer": "have",
+   "alt": [],
+   "why": "「ought to have p.p.」 구조이므로 had를 have로 고쳐야 한다.",
+   "level": "상",
+   "type": "short",
+   "no": 182
+  },
+  {
+   "stem": "괄호 안의 말을 알맞게 배열하여 빈칸을 완성하시오. 그 소포는 어제 잘못된 주소로 배달되었을지도 모른다. → The parcel ____ to the wrong address yesterday. (been / may / delivered / have)",
+   "answer": "may have been delivered",
+   "alt": [],
+   "why": "과거에 대한 추측 may have p.p.에 수동태 be p.p.가 결합하면 may have been p.p.가 된다.",
+   "level": "상",
+   "type": "short",
+   "no": 183
+  },
+  {
+   "stem": "괄호 안의 말을 알맞게 배열하여 빈칸을 완성하시오. 그는 몇 시간 동안 우리를 기다리고 있었음에 틀림없다. → He ____ for us for hours. (been / must / waiting / have)",
+   "answer": "must have been waiting",
+   "alt": [],
+   "why": "과거에 진행 중이던 일에 대한 확신은 must have been -ing로 나타낸다.",
+   "level": "상",
+   "type": "short",
+   "no": 184
+  },
+  {
+   "stem": "두 문장의 뜻이 같도록 빈칸에 네 단어를 쓰시오. It is impossible that this letter was written by a child. → This letter ____ ____ ____ ____ by a child.",
+   "answer": "can't have been written",
+   "alt": [
+    "cannot have been written",
+    "couldn't have been written"
+   ],
+   "why": "강한 부정 추측 can't have p.p.와 수동태가 결합하여 can't have been p.p.가 된다.",
+   "level": "상",
+   "type": "short",
+   "no": 185
+  },
+  {
+   "stem": "두 문장의 뜻이 같도록 빈칸에 네 단어를 쓰시오. It is possible that the machine was damaged during shipping. → The machine ____ ____ ____ ____ during shipping.",
+   "answer": "may have been damaged",
+   "alt": [
+    "might have been damaged",
+    "could have been damaged"
+   ],
+   "why": "가능성을 나타내는 may have p.p.에 수동태가 결합해 may have been damaged가 된다.",
+   "level": "상",
+   "type": "short",
+   "no": 186
+  },
+  {
+   "stem": "두 문장의 뜻이 같도록 빈칸에 네 단어를 쓰시오. I'm sure she wasn't told about the schedule change. → She ____ ____ ____ ____ about the schedule change.",
+   "answer": "can't have been told",
+   "alt": [
+    "cannot have been told",
+    "couldn't have been told"
+   ],
+   "why": "과거 사실을 강하게 부정 추측하므로 can't have been p.p.를 쓴다.",
+   "level": "상",
+   "type": "short",
+   "no": 187
+  },
+  {
+   "stem": "두 문장의 뜻이 같도록 빈칸에 세 단어를 쓰시오. It was not necessary for the students to copy the whole text, but they did. → The students ____ ____ ____ the whole text.",
+   "answer": "needn't have copied",
+   "alt": [],
+   "why": "실제로 했으나 불필요했던 일은 needn't have p.p.로 나타낸다.",
+   "level": "상",
+   "type": "short",
+   "no": 188
+  },
+  {
+   "stem": "두 문장의 뜻이 같도록 빈칸에 세 단어를 쓰시오. I didn't take my doctor's advice, and I regret it now. → I ____ ____ ____ my doctor's advice.",
+   "answer": "should have taken",
+   "alt": [],
+   "why": "하지 않은 일에 대한 후회이므로 should[ought to] have p.p.를 쓴다.",
+   "level": "상",
+   "type": "short",
+   "no": 189
+  },
+  {
+   "stem": "괄호 안의 말을 이용하여 빈칸에 네 단어를 쓰시오. The stadium was completely empty, so the match ____ before we arrived. (must, cancel)",
+   "answer": "must have been cancelled",
+   "alt": [
+    "must have been canceled"
+   ],
+   "why": "경기는 취소되는 대상이므로 수동형이 필요하며, 과거에 대한 확신이므로 must have been cancelled가 된다.",
+   "level": "상",
+   "type": "short",
+   "no": 190
+  },
+  {
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. Judging from his deep tan, he must have been <u>swim</u> at the beach all week.",
+   "answer": "swimming",
+   "alt": [],
+   "why": "must have been 뒤에 현재분사가 오면 과거에 진행되던 일에 대한 추측을 나타내므로 swimming이 되어야 한다.",
+   "level": "상",
+   "type": "short",
+   "no": 191
+  },
+  {
+   "stem": "다음 문장에서 어법상 <u>틀린</u> 한 단어를 바르게 고쳐 쓰시오. They could of avoided the accident if they had slowed down.",
+   "answer": "have",
+   "alt": [],
+   "why": "could of는 could have를 잘못 표기한 것이므로 of를 have로 고쳐야 한다.",
+   "level": "상",
+   "type": "short",
+   "no": 192
+  },
+  {
+   "stem": "우리말과 같도록 빈칸에 세 단어를 쓰시오. 그 실수는 서두름 때문에 일어났을지도 모른다. → The mistake ____ ____ ____ caused by haste.",
+   "answer": "may have been",
+   "alt": [
+    "might have been",
+    "could have been"
+   ],
+   "why": "과거에 대한 추측 may have p.p.와 수동태가 결합해 may have been caused가 된다.",
+   "level": "상",
+   "type": "short",
+   "no": 193
+  },
+  {
+   "stem": "우리말과 같도록 빈칸에 세 단어를 쓰시오. 너는 그 이메일을 그렇게 급히 보내지 말았어야 했다. → You ____ ____ ____ the email in such a hurry.",
+   "answer": "shouldn't have sent",
+   "alt": [],
+   "why": "이미 한 행동에 대한 후회이므로 shouldn't have p.p.를 쓴다.",
+   "level": "상",
+   "type": "short",
+   "no": 194
+  },
+  {
+   "stem": "우리말과 같도록 빈칸에 네 단어를 쓰시오. 그들은 그 변경에 대해 미리 들었음에 틀림없다. → They ____ ____ ____ ____ about the change in advance.",
+   "answer": "must have been told",
+   "alt": [],
+   "why": "'듣게 되었다'는 수동 관계이므로 must have p.p.의 수동형 must have been told를 쓴다.",
+   "level": "상",
+   "type": "short",
+   "no": 195
+  },
+  {
+   "stem": "두 문장의 뜻이 같도록 빈칸에 세 단어를 쓰시오. I regret that I didn't apply for the scholarship. → I ____ ____ ____ for the scholarship.",
+   "answer": "should have applied",
+   "alt": [],
+   "why": "지원하지 않은 것에 대한 후회이므로 should have p.p.를 쓴다.",
+   "level": "상",
+   "type": "short",
+   "no": 196
+  },
+  {
+   "stem": "괄호 안의 말을 이용하여 빈칸에 세 단어를 쓰시오. The window was broken from the outside, so the ball ____ from the street. (must, come)",
+   "answer": "must have come",
+   "alt": [],
+   "why": "밖에서 깨졌다는 증거로 과거를 확신하는 추측이므로 must have come을 쓴다.",
+   "level": "상",
+   "type": "short",
+   "no": 197
+  },
+  {
+   "stem": "괄호 안의 동사를 이용하여 빈칸에 세 단어를 쓰시오. 아무도 그 결과를 예측할 수 없었을 것이다. → Nobody ____ ____ ____ the result. (predict)",
+   "answer": "could have predicted",
+   "alt": [],
+   "why": "과거에 대해 '~할 수 없었을 것이다'는 could have p.p.를 부정 주어 Nobody와 함께 써서 나타낸다.",
+   "level": "상",
+   "type": "short",
+   "no": 198
+  },
+  {
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (두 단어) All the documents may have <u>destroyed</u> in the fire last night.",
+   "answer": "been destroyed",
+   "alt": [],
+   "why": "서류는 파괴되는 대상이므로 may have been destroyed의 수동형이 되어야 한다.",
+   "level": "상",
+   "type": "short",
+   "no": 199
+  },
+  {
+   "stem": "needn't를 이용하여 두 문장의 뜻이 같도록 빈칸에 세 단어를 쓰시오. It was not necessary for you to apologize to him, but you did. → You ____ ____ ____ to him.",
+   "answer": "needn't have apologized",
+   "alt": [
+    "needn't have apologised"
+   ],
+   "why": "이미 한 행동이 불필요했음을 나타내므로 needn't have p.p.를 쓴다.",
+   "level": "상",
+   "type": "short",
+   "no": 200
+  }
+ ]
+}

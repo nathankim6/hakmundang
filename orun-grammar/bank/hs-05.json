@@ -1,0 +1,2646 @@
+{
+ "id": "hs-05",
+ "grade": "고등",
+ "name": "with 분사구문",
+ "points": [
+  "with+명사+v-ing/p.p.",
+  "부대상황",
+  "명사와 분사의 능동·수동 관계"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Mina listened to the music with her eyes ____.",
+   "choices": [
+    "closed",
+    "to close",
+    "closes",
+    "close",
+    "closing"
+   ],
+   "answer": 1,
+   "why": "<with+명사+분사>에서 eyes는 '감기는' 대상이므로 수동을 나타내는 과거분사 closed를 쓴다. closing은 눈이 무언가를 감는다는 능동의 뜻이 되어 어색하다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? He answered me with his arms ____.",
+   "choices": [
+    "folding",
+    "folded",
+    "to fold",
+    "folds",
+    "fold"
+   ],
+   "answer": 2,
+   "why": "팔은 '포개어지는' 대상이므로 수동의 과거분사 folded를 쓴다. with 뒤에는 동사원형·to부정사가 올 수 없다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The baby fell asleep with the TV ____ on.",
+   "choices": [
+    "turn",
+    "turning",
+    "turned",
+    "to turn",
+    "turns"
+   ],
+   "answer": 3,
+   "why": "TV는 누군가에 의해 '켜진' 것이므로 수동의 과거분사 turned를 써서 with the TV turned on(TV가 켜진 채로)으로 쓴다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Don't talk with your mouth ____. (입에 음식이 가득한 채로)",
+   "choices": [
+    "fills",
+    "filling",
+    "to fill",
+    "full",
+    "fully"
+   ],
+   "answer": 4,
+   "why": "<with+명사+형용사>도 부대상황을 나타낸다. mouth의 상태를 설명하는 형용사 full이 알맞고, 부사 fully는 명사의 상태를 설명하지 못한다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? She was standing there with tears ____ down her cheeks.",
+   "choices": [
+    "ran",
+    "to run",
+    "runs",
+    "run",
+    "running"
+   ],
+   "answer": 5,
+   "why": "눈물이 스스로 '흘러내리는' 능동 관계이므로 현재분사 running을 쓴다. ran은 과거형이라 분사 자리에 올 수 없다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? He sat on the bench with his legs ____.",
+   "choices": [
+    "crossed",
+    "to cross",
+    "crosses",
+    "cross",
+    "crossing"
+   ],
+   "answer": 1,
+   "why": "다리는 '포개어지는' 대상이므로 과거분사 crossed를 쓴다. with his legs crossed는 '다리를 꼰 채로'라는 뜻의 굳어진 표현이다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The man walked into the room with a dog ____ him.",
+   "choices": [
+    "follow",
+    "following",
+    "followed",
+    "to follow",
+    "follows"
+   ],
+   "answer": 2,
+   "why": "개가 그를 '따라오는' 능동 관계이고 뒤에 목적어 him이 있으므로 현재분사 following이 알맞다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? I can't sleep with the light ____. (불이 켜진 채로)",
+   "choices": [
+    "of",
+    "to",
+    "on",
+    "at",
+    "in"
+   ],
+   "answer": 3,
+   "why": "<with+명사+부사>도 부대상황을 나타낸다. '켜진 채로'는 부사 on을 써서 with the light on으로 표현한다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? She left the house with the door ____.",
+   "choices": [
+    "locks",
+    "lock",
+    "locking",
+    "locked",
+    "to lock"
+   ],
+   "answer": 4,
+   "why": "문은 '잠기는' 대상이므로 수동의 과거분사 locked를 쓴다. locking은 문이 무언가를 잠근다는 뜻이 되어 맞지 않는다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Tom stood at the door with his hat ____ in his hand.",
+   "choices": [
+    "to hold",
+    "holds",
+    "hold",
+    "holding",
+    "held"
+   ],
+   "answer": 5,
+   "why": "모자는 손에 '들려 있는' 대상이므로 수동의 과거분사 held를 쓴다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? We danced with the music ____ loudly.",
+   "choices": [
+    "playing",
+    "played",
+    "to play",
+    "plays",
+    "play"
+   ],
+   "answer": 1,
+   "why": "음악이 '흘러나오고 있는' 능동·진행의 뜻이므로 현재분사 playing을 쓴다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? He fell asleep with the window ____ open.",
+   "choices": [
+    "leaving",
+    "left",
+    "to leave",
+    "leaves",
+    "leave"
+   ],
+   "answer": 2,
+   "why": "창문은 누군가에 의해 '열린 채로 남겨진' 것이므로 과거분사 left를 써서 with the window left open으로 쓴다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The children came in with their shoes ____. (신발이 젖은 채로)",
+   "choices": [
+    "to wet",
+    "wets",
+    "wet",
+    "wetly",
+    "wetting"
+   ],
+   "answer": 3,
+   "why": "명사 shoes의 상태를 설명하는 형용사 wet이 알맞다. 부사 wetly는 명사의 상태를 나타낼 수 없다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? He was sitting with a cat ____ on his lap.",
+   "choices": [
+    "to sleep",
+    "sleeps",
+    "sleep",
+    "sleeping",
+    "slept"
+   ],
+   "answer": 4,
+   "why": "고양이가 스스로 '자고 있는' 능동 관계이므로 현재분사 sleeping을 쓴다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? She spoke to us with her voice ____.",
+   "choices": [
+    "shaken",
+    "to shake",
+    "shakes",
+    "shake",
+    "shaking"
+   ],
+   "answer": 5,
+   "why": "목소리가 스스로 '떨리는' 것이므로 현재분사 shaking을 쓴다. shaken은 누가 목소리를 흔든다는 수동의 뜻이 되어 어색하다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The old man sat by the fire with his eyes ____ on the flames.",
+   "choices": [
+    "fixed",
+    "to fix",
+    "fixes",
+    "fix",
+    "fixing"
+   ],
+   "answer": 1,
+   "why": "눈은 불꽃에 '고정된' 대상이므로 과거분사 fixed를 쓴다. with one's eyes fixed on ~은 '~에 시선을 고정한 채로'라는 뜻이다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? I studied with the door ____ so that no one could come in.",
+   "choices": [
+    "closing",
+    "closed",
+    "to close",
+    "closes",
+    "close"
+   ],
+   "answer": 2,
+   "why": "문은 '닫히는' 대상이므로 과거분사 closed를 쓴다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? We waited outside with the rain ____ hard.",
+   "choices": [
+    "falls",
+    "fall",
+    "falling",
+    "fallen",
+    "to fall"
+   ],
+   "answer": 3,
+   "why": "비가 스스로 '내리고 있는' 능동 관계이므로 현재분사 falling을 쓴다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? He came home with his shirt ____ in mud.",
+   "choices": [
+    "covers",
+    "cover",
+    "covering",
+    "covered",
+    "to cover"
+   ],
+   "answer": 4,
+   "why": "셔츠가 진흙으로 '덮인' 수동 관계이므로 과거분사 covered를 쓰고 뒤에 in[with]이 온다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The dog lay on the floor with its tail ____.",
+   "choices": [
+    "wagged",
+    "to wag",
+    "wags",
+    "wag",
+    "wagging"
+   ],
+   "answer": 5,
+   "why": "꼬리가 스스로 '흔들리는' 능동 관계이므로 현재분사 wagging을 쓴다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? He was watching the game with his hands ____ over his mouth.",
+   "choices": [
+    "pressed",
+    "to press",
+    "presses",
+    "press",
+    "pressing"
+   ],
+   "answer": 1,
+   "why": "손은 입 위에 '눌린' 상태이므로 과거분사 pressed가 알맞다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? My father was watching TV with his glasses ____ off.",
+   "choices": [
+    "taking",
+    "taken",
+    "to take",
+    "takes",
+    "take"
+   ],
+   "answer": 2,
+   "why": "안경은 '벗겨진' 대상이므로 수동의 과거분사 taken을 써서 with his glasses taken off로 쓴다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The teacher came in with a pile of books ____ in her arms.",
+   "choices": [
+    "carry",
+    "carrying",
+    "carried",
+    "to carry",
+    "carries"
+   ],
+   "answer": 3,
+   "why": "책은 '들려 옮겨지는' 대상이므로 과거분사 carried를 쓴다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? We walked home with the sun ____ behind the hills.",
+   "choices": [
+    "to set",
+    "sets",
+    "set",
+    "setting",
+    "sat"
+   ],
+   "answer": 4,
+   "why": "해가 스스로 '지고 있는' 능동 관계이므로 현재분사 setting을 쓴다. sat은 sit의 과거형이라 관계없다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은?",
+   "choices": [
+    "She listened with her eyes closing.",
+    "The baby slept with the radio play.",
+    "He waited with his hands in his pockets.",
+    "I studied with the TV turning on.",
+    "They left with the door opening."
+   ],
+   "answer": 3,
+   "why": "<with+명사+전치사구>도 부대상황을 나타내므로 ③이 옳다. 나머지는 명사와 분사가 수동 관계이므로 closed, played, turned on, opened(left open) 등이 되어야 한다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 알맞은 것은?",
+   "choices": [
+    "He ran with his dog followed him.",
+    "She sang with her eyes close.",
+    "The cat sat with its eyes shining.",
+    "I can't study with music plays.",
+    "He stood with his back turning to me."
+   ],
+   "answer": 3,
+   "why": "눈이 스스로 '빛나는' 능동 관계이므로 ③ shining이 옳다. ①④는 with 뒤에 정동사를 쓸 수 없고, ②는 closed, ⑤는 turned가 되어야 한다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "The boy came in with snow covered his coat.",
+    "The boy came in with snow covering his coat.",
+    "The boy came in with snow cover his coat.",
+    "The boy came in with snow to cover his coat.",
+    "The boy came in with snow covers his coat."
+   ],
+   "answer": 2,
+   "why": "snow가 his coat를 '덮고 있는' 능동 관계이고 뒤에 목적어가 있으므로 현재분사 covering이 옳다. with 뒤에는 동사원형이나 정동사를 쓸 수 없다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞는 문장은?",
+   "choices": [
+    "She waited with her heart beat fast.",
+    "He drove with the windows rolling down.",
+    "We sat with candles lit on the table.",
+    "I woke up with my alarm rang.",
+    "They left the room with the fan turning on."
+   ],
+   "answer": 3,
+   "why": "초는 '불이 켜진' 대상이므로 ③ lit(light-lit-lit)이 옳다. ①④는 정동사를 썼고, ②는 rolled down, ⑤는 turned on이 되어야 한다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "I studied with my brother watched TV.",
+    "I studied with my brother watching TV.",
+    "I studied with my brother watches TV.",
+    "I studied with my brother watch TV.",
+    "I studied with my brother is watching TV."
+   ],
+   "answer": 2,
+   "why": "형이 TV를 '보고 있는' 능동 관계이므로 현재분사 watching이 옳다. with 뒤에는 <명사+분사>가 오며 정동사는 올 수 없다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 with 분사구문이 바르게 쓰인 것은?",
+   "choices": [
+    "She stood with her back against the wall.",
+    "She stood with her back leaned the wall.",
+    "She stood with her back leaning the wall.",
+    "She stood with her back is against the wall.",
+    "She stood with her back to lean the wall."
+   ],
+   "answer": 1,
+   "why": "<with+명사+전치사구> 형태인 ①이 옳다. lean은 자동사로 뒤에 against가 필요하고, ④처럼 정동사를 쓸 수도 없다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은?",
+   "choices": [
+    "He sat with his eyes closed.",
+    "She waited with her arms folded.",
+    "I slept with the window open.",
+    "They left with the engine run.",
+    "We talked with the music playing."
+   ],
+   "answer": 4,
+   "why": "엔진이 스스로 '돌아가고 있는' 능동 관계이므로 run이 아니라 running을 써야 한다. 나머지는 모두 알맞은 형태이다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 것은?",
+   "choices": [
+    "The boy ran with his dog barking.",
+    "She read a book with her feet crossing.",
+    "He listened with his head down.",
+    "I can't sleep with the light on.",
+    "We waited with the door locked."
+   ],
+   "answer": 2,
+   "why": "발은 '포개어지는' 대상이므로 crossing이 아니라 crossed여야 한다. ③④는 <with+명사+부사>, ⑤는 수동의 과거분사로 모두 옳다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은?",
+   "choices": [
+    "Mom watched TV with her glasses on.",
+    "He came in with his hair wet.",
+    "She spoke with tears running down her face.",
+    "They stood with their hands raised.",
+    "I studied with the radio turning on."
+   ],
+   "answer": 5,
+   "why": "라디오는 누군가가 '켠' 것이므로 turning on이 아니라 turned on이어야 한다. 나머지는 부사·형용사·현재분사·과거분사가 모두 알맞게 쓰였다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳지 않은 것은?",
+   "choices": [
+    "The cat slept with its legs stretched out.",
+    "He walked with a stick in his hand.",
+    "She sang with her eyes closing.",
+    "We ate dinner with candles burning.",
+    "He answered with his voice shaking."
+   ],
+   "answer": 3,
+   "why": "눈은 '감기는' 대상이므로 closing이 아니라 closed여야 한다. ④⑤는 초와 목소리가 스스로 타고 떨리는 능동 관계라서 현재분사가 옳다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 틀린 것은?",
+   "choices": [
+    "With the sun shining, we went out.",
+    "With his homework finished, he went to bed.",
+    "With the door lock, she felt safe.",
+    "With many people watching, he felt nervous.",
+    "With the wind blowing hard, we stayed inside."
+   ],
+   "answer": 3,
+   "why": "with 뒤에는 <명사+분사>가 와야 하므로 동사원형 lock이 아니라 과거분사 locked를 써야 한다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 with 분사구문이 잘못 쓰인 것은?",
+   "choices": [
+    "He waited with his fingers crossed.",
+    "She left with her phone ringing.",
+    "I sat with my notebook open in front of me.",
+    "They walked with their heads bowing.",
+    "He drove with the window down."
+   ],
+   "answer": 4,
+   "why": "고개는 '숙여지는' 대상이므로 bowing이 아니라 bowed여야 한다. ①은 과거분사, ②는 현재분사, ③은 형용사, ⑤는 부사로 모두 옳다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그는 팔짱을 낀 채 서 있었다.",
+   "choices": [
+    "He stood with his arms folding.",
+    "He stood with his arms folded.",
+    "He stood with his arms fold.",
+    "He stood with folding his arms.",
+    "He stood with his arms are folded."
+   ],
+   "answer": 2,
+   "why": "'팔짱을 낀 채'는 팔이 포개어진 수동 상태이므로 with his arms folded로 쓴다. with 뒤에 명사 없이 분사만 쓰거나 정동사를 쓸 수 없다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그녀는 눈을 감은 채 노래를 불렀다.",
+   "choices": [
+    "She sang with her eyes closing.",
+    "She sang with closing her eyes.",
+    "She sang with her eyes closed.",
+    "She sang with her eyes close.",
+    "She sang with her eyes were closed."
+   ],
+   "answer": 3,
+   "why": "눈은 감기는 대상이므로 과거분사 closed를 써서 with her eyes closed로 표현한다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 나는 개가 나를 따라오는 가운데 공원을 걸었다.",
+   "choices": [
+    "I walked in the park with my dog followed me.",
+    "I walked in the park with my dog following me.",
+    "I walked in the park with my dog follows me.",
+    "I walked in the park with my dog to follow me.",
+    "I walked in the park with following my dog me."
+   ],
+   "answer": 2,
+   "why": "개가 나를 따라오는 능동 관계이고 목적어 me가 있으므로 현재분사 following을 쓴다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그는 신발을 신은 채로 침대에 누웠다.",
+   "choices": [
+    "He lay on the bed with his shoes on.",
+    "He lay on the bed with his shoes wearing.",
+    "He lay on the bed with wearing his shoes.",
+    "He lay on the bed with his shoes wear.",
+    "He lay on the bed with his shoes are on."
+   ],
+   "answer": 1,
+   "why": "'신발을 신은 채로'는 <with+명사+부사>인 with his shoes on으로 쓴다. shoes가 무엇을 입는 것이 아니므로 wearing은 쓸 수 없다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? Jenny ①<u>was sitting</u> on the sofa ②<u>with</u> her legs ③<u>crossing</u> and her ④<u>eyes</u> ⑤<u>closed</u>.",
+   "choices": [
+    "was sitting",
+    "with",
+    "crossing",
+    "eyes",
+    "closed"
+   ],
+   "answer": 3,
+   "why": "다리는 포개어지는 대상이므로 crossing이 아니라 crossed여야 한다. ⑤ closed는 같은 이유로 알맞게 쓰였다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? She ①<u>entered</u> the room ②<u>with</u> her hair ③<u>wet</u> and her shoes ④<u>covering</u> ⑤<u>in</u> mud.",
+   "choices": [
+    "entered",
+    "with",
+    "wet",
+    "covering",
+    "in"
+   ],
+   "answer": 4,
+   "why": "신발은 진흙으로 덮인 대상이므로 covering이 아니라 covered여야 한다. ③은 명사의 상태를 설명하는 형용사로 옳다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? ①<u>With</u> the lights ②<u>turned</u> off, we ③<u>watched</u> the movie ④<u>with</u> popcorn ⑤<u>sit</u> on the table.",
+   "choices": [
+    "With",
+    "turned",
+    "watched",
+    "with",
+    "sit"
+   ],
+   "answer": 5,
+   "why": "팝콘이 탁자 위에 '놓여 있는' 상태를 나타내려면 동사원형 sit이 아니라 현재분사 sitting을 써야 한다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? My brother ①<u>studies</u> ②<u>with</u> the radio ③<u>play</u> and the window ④<u>left</u> ⑤<u>open</u>.",
+   "choices": [
+    "studies",
+    "with",
+    "play",
+    "left",
+    "open"
+   ],
+   "answer": 3,
+   "why": "라디오가 스스로 흘러나오는 능동 관계이므로 동사원형 play가 아니라 현재분사 playing이어야 한다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은? He was lying on the sofa with his eyes (A)____ and his feet (B)____ on the table.",
+   "choices": [
+    "closing – resting",
+    "closed – resting",
+    "closed – rested",
+    "closing – rested",
+    "close – resting"
+   ],
+   "answer": 2,
+   "why": "눈은 감기는 대상이라 과거분사 closed, 발은 스스로 얹혀 있는 능동 관계라 현재분사 resting이 알맞다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은? I couldn't concentrate with the phone (A)____ and my sister (B)____ next to me.",
+   "choices": [
+    "rung – singing",
+    "ringing – sung",
+    "ringing – singing",
+    "ring – sing",
+    "ringing – to sing"
+   ],
+   "answer": 3,
+   "why": "전화가 스스로 울리고 동생이 스스로 노래하는 능동 관계이므로 둘 다 현재분사를 쓴다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은? The girl sat on the grass with her legs (A)____ and her eyes (B)____ on the sky.",
+   "choices": [
+    "crossing – fixing",
+    "crossed – fixing",
+    "crossing – fixed",
+    "crossed – fixed",
+    "cross – fixed"
+   ],
+   "answer": 4,
+   "why": "다리는 포개어지고 눈은 고정되는 대상이므로 둘 다 수동을 나타내는 과거분사를 쓴다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은? We started the trip with the sun (A)____ and the birds (B)____.",
+   "choices": [
+    "risen – singing",
+    "rising – singing",
+    "rising – sung",
+    "rise – sing",
+    "rising – to sing"
+   ],
+   "answer": 2,
+   "why": "해가 떠오르고 새가 노래하는 것은 모두 능동 관계이므로 현재분사를 쓴다. rise는 자동사라서 수동형을 만들 수 없다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 어법상 알맞은 것을 골라 쓰시오. Kevin was waiting with his arms (folding / folded).",
+   "answer": "folded",
+   "why": "팔은 포개어지는 대상이므로 수동을 나타내는 과거분사 folded를 쓴다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 어법상 알맞은 것을 골라 쓰시오. My sister fell asleep with the TV (turning / turned) on.",
+   "answer": "turned",
+   "why": "TV는 누군가에 의해 켜진 것이므로 과거분사 turned를 쓴다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 어법상 알맞은 것을 골라 쓰시오. The children played with their dog (running / run) beside them.",
+   "answer": "running",
+   "why": "개가 스스로 달리는 능동 관계이므로 현재분사 running을 쓴다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 어법상 알맞은 것을 골라 쓰시오. She listened to me with her eyes (shining / shone).",
+   "answer": "shining",
+   "why": "눈이 스스로 빛나는 능동 관계이므로 현재분사 shining을 쓴다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 어법상 알맞은 것을 골라 쓰시오. I can't work with so many people (watching / watched) me.",
+   "answer": "watching",
+   "why": "사람들이 나를 지켜보는 능동 관계이고 목적어 me가 있으므로 현재분사 watching을 쓴다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 어법상 알맞은 것을 골라 쓰시오. He came back with his clothes (covering / covered) with dust.",
+   "answer": "covered",
+   "why": "옷이 먼지로 덮인 수동 관계이므로 과거분사 covered를 쓴다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 어법상 알맞은 것을 골라 쓰시오. They sat by the lake with the wind (blowing / blown) gently.",
+   "answer": "blowing",
+   "why": "바람이 스스로 부는 능동 관계이므로 현재분사 blowing을 쓴다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 어법상 알맞은 것을 골라 쓰시오. Don't drive with the door (opening / open).",
+   "answer": "open",
+   "why": "문이 열려 있는 '상태'를 나타내는 형용사 open이 알맞다. opening은 문이 스스로 열리는 동작이 되어 어색하다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. Amy was reading a book with her legs <u>crossing</u>.",
+   "answer": "crossed",
+   "why": "다리는 포개어지는 대상이므로 수동의 과거분사 crossed로 고친다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. She waited outside with the engine <u>run</u>.",
+   "answer": "running",
+   "why": "엔진이 스스로 돌아가는 능동 관계이므로 현재분사 running으로 고친다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. I fell asleep with the light <u>turning</u> on.",
+   "answer": "turned",
+   "why": "불은 누군가가 켠 것이므로 수동의 과거분사 turned로 고친다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. The boy came home with his shirt <u>tearing</u>.",
+   "answer": "torn",
+   "why": "셔츠는 찢긴 대상이므로 tear의 과거분사 torn으로 고친다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. We sang with our hands <u>holding</u> together.",
+   "answer": "held",
+   "why": "손은 맞잡히는 대상이므로 수동의 과거분사 held로 고친다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. She was sitting with a baby <u>slept</u> in her arms.",
+   "answer": "sleeping",
+   "why": "아기가 스스로 자는 능동 관계이므로 현재분사 sleeping으로 고친다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸을 채우시오. The dog was lying on the floor with its eyes ____. (close)",
+   "answer": "closed",
+   "why": "눈은 감기는 대상이므로 과거분사 closed를 쓴다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸을 채우시오. We walked home with the rain ____ on our faces. (fall)",
+   "answer": "falling",
+   "why": "비가 스스로 내리는 능동 관계이므로 현재분사 falling을 쓴다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸을 채우시오. He entered the hall with everyone ____ at him. (look)",
+   "answer": "looking",
+   "why": "모든 사람이 그를 쳐다보는 능동 관계이므로 현재분사 looking을 쓴다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸을 채우시오. She left the room with the door ____. (lock)",
+   "answer": "locked",
+   "why": "문은 잠기는 대상이므로 과거분사 locked를 쓴다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸을 채우시오. I studied with my cat ____ on my lap. (sit)",
+   "answer": "sitting",
+   "why": "고양이가 스스로 앉아 있는 능동 관계이므로 현재분사 sitting을 쓴다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸을 채우시오. The old woman sat there with her hands ____ on her knees. (fold)",
+   "answer": "folded",
+   "why": "손은 포개어지는 대상이므로 과거분사 folded를 쓴다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The hikers reached the summit with the morning mist still ____ in the valley below.",
+   "choices": [
+    "hung",
+    "to hang",
+    "hangs",
+    "hang",
+    "hanging"
+   ],
+   "answer": 5,
+   "why": "안개가 스스로 '깔려 있는' 능동 관계이므로 현재분사 hanging을 쓴다. hung은 누가 안개를 걸어 놓았다는 수동의 뜻이 되어 맞지 않는다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? With the deadline ____, the whole team stayed at the office until midnight.",
+   "choices": [
+    "approaching",
+    "approached",
+    "to approach",
+    "approaches",
+    "approach"
+   ],
+   "answer": 1,
+   "why": "마감이 스스로 '다가오는' 능동 관계이므로 현재분사 approaching을 쓴다. approach는 자동사처럼 쓰여 수동형이 어울리지 않는다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? She gave her speech with her hands ____ tightly behind her back.",
+   "choices": [
+    "clasping",
+    "clasped",
+    "to clasp",
+    "clasps",
+    "clasp"
+   ],
+   "answer": 2,
+   "why": "손은 '맞잡히는' 대상이므로 수동의 과거분사 clasped를 쓴다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The concert began with the audience ____ in complete silence.",
+   "choices": [
+    "waits",
+    "wait",
+    "waiting",
+    "waited",
+    "to wait"
+   ],
+   "answer": 3,
+   "why": "관객이 스스로 기다리는 능동 관계이므로 현재분사 waiting을 쓴다. wait는 자동사라 수동형을 만들 수 없다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? He drove home with the radio ____ off because he needed to think.",
+   "choices": [
+    "turns",
+    "turn",
+    "turning",
+    "turned",
+    "to turn"
+   ],
+   "answer": 4,
+   "why": "라디오는 누군가가 '끈' 것이므로 과거분사 turned를 써서 turned off로 쓴다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? With all the tickets ____ out within an hour, the fans were disappointed.",
+   "choices": [
+    "to sell",
+    "sells",
+    "sell",
+    "selling",
+    "sold"
+   ],
+   "answer": 5,
+   "why": "표는 '팔리는' 대상이므로 과거분사 sold를 써서 sold out(매진된)으로 표현한다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The old house stood on the hill with its windows ____ and its roof falling apart.",
+   "choices": [
+    "broken",
+    "to break",
+    "breaks",
+    "break",
+    "breaking"
+   ],
+   "answer": 1,
+   "why": "창문은 '깨진' 대상이므로 과거분사 broken을 쓴다. 뒤의 falling은 지붕이 스스로 무너지는 능동 관계라서 현재분사이다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? With her heart ____ fast, Emma opened the envelope.",
+   "choices": [
+    "beat",
+    "beating",
+    "beaten",
+    "to beat",
+    "beats"
+   ],
+   "answer": 2,
+   "why": "심장이 스스로 뛰는 능동 관계이므로 현재분사 beating을 쓴다. beaten은 '두들겨 맞은'이라는 뜻이 되어 맞지 않는다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The chef worked quickly with several pots ____ on the stove.",
+   "choices": [
+    "boils",
+    "boil",
+    "boiling",
+    "boiled",
+    "to boil"
+   ],
+   "answer": 3,
+   "why": "냄비가 '끓고 있는' 상태를 나타내는 능동 관계이므로 현재분사 boiling을 쓴다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? He listened to the complaint with his eyes ____ on the floor.",
+   "choices": [
+    "fixes",
+    "fix",
+    "fixing",
+    "fixed",
+    "to fix"
+   ],
+   "answer": 4,
+   "why": "시선은 바닥에 '고정되는' 대상이므로 과거분사 fixed를 쓴다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? With the last question ____, she handed in her exam paper.",
+   "choices": [
+    "to answer",
+    "answers",
+    "answer",
+    "answering",
+    "answered"
+   ],
+   "answer": 5,
+   "why": "문제는 '답해지는' 대상이므로 과거분사 answered를 쓴다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The players walked onto the field with thousands of fans ____ their names.",
+   "choices": [
+    "shouting",
+    "shouted",
+    "to shout",
+    "shouts",
+    "shout"
+   ],
+   "answer": 1,
+   "why": "팬들이 이름을 외치는 능동 관계이고 뒤에 목적어 their names가 있으므로 현재분사 shouting을 쓴다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? With the bridge ____ by the flood, the villagers had no way to reach the town.",
+   "choices": [
+    "destroying",
+    "destroyed",
+    "to destroy",
+    "destroys",
+    "destroy"
+   ],
+   "answer": 2,
+   "why": "다리가 홍수에 '파괴된' 수동 관계이고 뒤에 by가 이어지므로 과거분사 destroyed를 쓴다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? She sat by the window with a blanket ____ over her shoulders.",
+   "choices": [
+    "wrap",
+    "wrapping",
+    "wrapped",
+    "to wrap",
+    "wraps"
+   ],
+   "answer": 3,
+   "why": "담요는 '둘러지는' 대상이므로 과거분사 wrapped를 쓴다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The tourists took photos with the castle ____ in the background.",
+   "choices": [
+    "to rise",
+    "rises",
+    "rise",
+    "rising",
+    "risen"
+   ],
+   "answer": 4,
+   "why": "성이 배경에서 '솟아 있는' 능동 관계이므로 현재분사 rising을 쓴다. rise는 자동사이므로 risen을 with 구문의 분사로 쓰지 않는다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? With so much work ____ to be done, we could not take a break.",
+   "choices": [
+    "remained",
+    "to remain",
+    "remains",
+    "remain",
+    "remaining"
+   ],
+   "answer": 5,
+   "why": "일이 '남아 있는' 능동 관계이므로 현재분사 remaining을 쓴다. remain은 자동사라 수동형을 만들 수 없다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? The professor ①<u>entered</u> the lecture hall ②<u>with</u> a thick file ③<u>tucking</u> under his arm and his glasses ④<u>sliding</u> ⑤<u>down</u> his nose.",
+   "choices": [
+    "entered",
+    "with",
+    "tucking",
+    "sliding",
+    "down"
+   ],
+   "answer": 3,
+   "why": "서류철은 겨드랑이에 '끼워진' 대상이므로 tucking이 아니라 tucked여야 한다. ④는 안경이 스스로 흘러내리는 능동 관계라 현재분사가 옳다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? ①<u>With</u> the storm ②<u>dragged</u> on, the captain ordered the crew ③<u>to secure</u> everything, ④<u>with</u> the ropes ⑤<u>tied</u> to the mast.",
+   "choices": [
+    "With",
+    "dragged",
+    "to secure",
+    "with",
+    "tied"
+   ],
+   "answer": 2,
+   "why": "폭풍이 스스로 오래 이어지는 능동 관계이므로 dragged가 아니라 dragging이어야 한다. ⑤는 밧줄이 묶이는 수동 관계라 과거분사가 옳다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? Sarah ①<u>was standing</u> at the bus stop ②<u>with</u> her umbrella ③<u>broken</u> and rain ④<u>ran</u> ⑤<u>down</u> her coat.",
+   "choices": [
+    "was standing",
+    "with",
+    "broken",
+    "ran",
+    "down"
+   ],
+   "answer": 4,
+   "why": "with 뒤의 두 번째 <명사+분사>에서도 분사를 써야 하므로 과거형 ran이 아니라 현재분사 running이어야 한다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? ①<u>With</u> the lights ②<u>dimmed</u> and the curtains ③<u>drawing</u>, the theater ④<u>fell</u> silent ⑤<u>before</u> the play began.",
+   "choices": [
+    "With",
+    "dimmed",
+    "drawing",
+    "fell",
+    "before"
+   ],
+   "answer": 3,
+   "why": "커튼은 '쳐지는' 대상이므로 drawing이 아니라 drawn이어야 한다. ②도 같은 이유로 과거분사가 옳게 쓰였다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? He ①<u>finished</u> the marathon ②<u>with</u> his legs ③<u>shaking</u> and his shirt ④<u>soaking</u> with ⑤<u>sweat</u>.",
+   "choices": [
+    "finished",
+    "with",
+    "shaking",
+    "soaking",
+    "sweat"
+   ],
+   "answer": 4,
+   "why": "셔츠는 땀에 '흠뻑 젖은' 대상이므로 soaking이 아니라 soaked여야 한다. ③은 다리가 스스로 떨리는 능동 관계라 현재분사가 옳다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? The kitchen ①<u>was</u> a mess, ②<u>with</u> dishes ③<u>piled</u> in the sink and water ④<u>drip</u> ⑤<u>from</u> the tap.",
+   "choices": [
+    "was",
+    "with",
+    "piled",
+    "drip",
+    "from"
+   ],
+   "answer": 4,
+   "why": "물이 스스로 떨어지는 능동 관계이므로 동사원형 drip이 아니라 현재분사 dripping이어야 한다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? ①<u>With</u> the museum ②<u>closing</u> for repairs, we ③<u>spent</u> the afternoon in the park ④<u>with</u> our cameras ⑤<u>hanging</u> around our necks.",
+   "choices": [
+    "With",
+    "closing",
+    "spent",
+    "with",
+    "hanging"
+   ],
+   "answer": 2,
+   "why": "박물관은 보수를 위해 '폐쇄된' 대상이므로 closing이 아니라 closed여야 한다. ⑤는 카메라가 목에 걸려 있는 상태를 나타내는 현재분사로 자연스럽다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? She ①<u>walked</u> into the interview room ②<u>with</u> her résumé ③<u>printed</u> neatly and her hands ④<u>trembled</u> ⑤<u>slightly</u>.",
+   "choices": [
+    "walked",
+    "with",
+    "printed",
+    "trembled",
+    "slightly"
+   ],
+   "answer": 4,
+   "why": "손이 스스로 떨리는 능동 관계이므로 과거형 trembled가 아니라 현재분사 trembling이어야 한다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 바른 문장은?",
+   "choices": [
+    "With the door locking, we could not get in.",
+    "With the door locked, we could not get in.",
+    "With the door lock, we could not get in.",
+    "With the door to lock, we could not get in.",
+    "With locking the door, we could not get in."
+   ],
+   "answer": 2,
+   "why": "문은 잠기는 대상이므로 수동의 과거분사 locked를 쓴다. with 뒤에는 반드시 <명사+분사>가 오며 동사원형이나 to부정사는 올 수 없다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 오류가 있는 것은?",
+   "choices": [
+    "He came in with his coat covered in snow.",
+    "He came in with snow melting on his shoulders.",
+    "He came in with his cheeks red from the cold.",
+    "He came in with his boots leaving marks on the floor.",
+    "He came in with his hat taking off."
+   ],
+   "answer": 5,
+   "why": "모자는 '벗겨지는' 대상이므로 taking off가 아니라 taken off여야 한다. ③은 형용사, ④는 목적어를 가진 현재분사로 모두 옳다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 오류가 없는 것은?",
+   "choices": [
+    "With the exam finish, the students relaxed.",
+    "With her homework doing, she watched a movie.",
+    "With the guests arriving soon, we cleaned the house.",
+    "With the food prepare, we sat down.",
+    "With the table setting, dinner began."
+   ],
+   "answer": 3,
+   "why": "손님이 곧 도착하는 능동 관계이므로 ③ arriving이 옳다. ①④는 with 뒤에 동사원형을 쓸 수 없고, ②⑤는 각각 done, set처럼 수동의 과거분사를 써야 한다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 틀린 것은?",
+   "choices": [
+    "The dog waited by the door with its leash in its mouth.",
+    "The dog waited by the door with its tail wagging.",
+    "The dog waited by the door with its ears raised.",
+    "The dog waited by the door with its eyes fixed on me.",
+    "The dog waited by the door with its owner called it."
+   ],
+   "answer": 5,
+   "why": "with 뒤에는 정동사를 쓸 수 없으므로 called가 아니라 calling이어야 한다. ①은 전치사구, ②는 현재분사, ③④는 과거분사로 모두 옳다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "She spoke with her voice trembled.",
+    "She spoke with tears filled her eyes.",
+    "She spoke with her head turn away.",
+    "She spoke with her hands resting on the table.",
+    "She spoke with everyone listened carefully."
+   ],
+   "answer": 4,
+   "why": "손이 탁자 위에 얹혀 있는 능동 관계이므로 ④ resting이 옳다. ①은 trembling, ②는 filling, ⑤는 listening이어야 하고 ③은 동사원형을 쓸 수 없다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 바르지 않은 것은?",
+   "choices": [
+    "With the rain pouring down, the match was called off.",
+    "With the roads blocked, help arrived late.",
+    "With the sun setting behind the mountains, we set up the tent.",
+    "With the money stolen, he reported it to the police.",
+    "With the engine broke down, the bus stopped."
+   ],
+   "answer": 5,
+   "why": "엔진은 '고장 난' 대상이므로 과거형 broke가 아니라 과거분사 broken을 써야 한다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 부대상황을 나타내는 with가 바르게 쓰인 것은?",
+   "choices": [
+    "He listened with his arms crossing over his chest.",
+    "He listened with his chin resting on his hand.",
+    "He listened with his eyes close tightly.",
+    "He listened with his notebook opening on the desk.",
+    "He listened with his phone turning off."
+   ],
+   "answer": 2,
+   "why": "턱이 손 위에 놓여 있는 능동 관계이므로 ② resting이 옳다. ①은 crossed, ③은 closed, ④는 open[opened], ⑤는 turned off여야 한다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 명사와 분사의 관계가 어법에 맞지 않는 것은?",
+   "choices": [
+    "With winter coming, the days grew shorter.",
+    "With his eyes glued to the screen, he didn't hear me.",
+    "With the letter written in French, I couldn't understand it.",
+    "With the crowd cheering, the runner sped up.",
+    "With the fence painting green, the yard looked new."
+   ],
+   "answer": 5,
+   "why": "울타리는 '칠해지는' 대상이므로 painting이 아니라 painted여야 한다. 나머지는 능동·수동 관계에 맞는 분사가 쓰였다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그는 다리를 꼰 채로 소파에 앉아 있었다.",
+   "choices": [
+    "He was sitting on the sofa with his legs crossing.",
+    "He was sitting on the sofa with his legs crossed.",
+    "He was sitting on the sofa with crossing his legs.",
+    "He was sitting on the sofa with his legs are crossed.",
+    "He was sitting on the sofa with his legs cross."
+   ],
+   "answer": 2,
+   "why": "다리는 포개어지는 대상이므로 과거분사 crossed를 쓴다. with 뒤에 정동사나 동사원형은 올 수 없다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 많은 사람들이 지켜보는 가운데 그녀는 무대에 올랐다.",
+   "choices": [
+    "With many people watched, she went up on the stage.",
+    "With many people watching, she went up on the stage.",
+    "With watching many people, she went up on the stage.",
+    "With many people watch, she went up on the stage.",
+    "With many people to watch, she went up on the stage."
+   ],
+   "answer": 2,
+   "why": "사람들이 지켜보는 능동 관계이므로 현재분사 watching을 쓴다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 숙제를 끝낸 채로 그는 마음 편히 잠자리에 들었다.",
+   "choices": [
+    "With his homework finishing, he went to bed with an easy mind.",
+    "With his homework finish, he went to bed with an easy mind.",
+    "With his homework finished, he went to bed with an easy mind.",
+    "With finishing his homework, he went to bed with an easy mind.",
+    "With his homework was finished, he went to bed with an easy mind."
+   ],
+   "answer": 3,
+   "why": "숙제는 '끝내어지는' 대상이므로 과거분사 finished를 쓴다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그 도시는 거리가 눈으로 덮인 채 조용했다.",
+   "choices": [
+    "The city was quiet with its streets covering with snow.",
+    "The city was quiet with its streets covered with snow.",
+    "The city was quiet with its streets cover with snow.",
+    "The city was quiet with covering its streets with snow.",
+    "The city was quiet with its streets are covered with snow."
+   ],
+   "answer": 2,
+   "why": "거리가 눈에 덮인 수동 관계이므로 과거분사 covered를 쓰고 be covered with의 with를 그대로 이어 쓴다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그는 창문을 열어 둔 채로 방을 나갔다.",
+   "choices": [
+    "He left the room with the window opening.",
+    "He left the room with opening the window.",
+    "He left the room with the window open.",
+    "He left the room with the window opens.",
+    "He left the room with the window to open."
+   ],
+   "answer": 3,
+   "why": "창문이 열려 있는 '상태'를 나타내므로 형용사 open을 쓴다. opening은 창문이 스스로 열리는 동작이 되어 어색하다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 엔진이 켜진 채로 차가 주차되어 있었다.",
+   "choices": [
+    "The car was parked with the engine ran.",
+    "The car was parked with the engine to run.",
+    "The car was parked with running the engine.",
+    "The car was parked with the engine running.",
+    "The car was parked with the engine runs."
+   ],
+   "answer": 4,
+   "why": "엔진이 스스로 돌아가고 있는 능동 관계이므로 현재분사 running을 쓴다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은? The soldier stood at attention with his back (A)____ straight and his eyes (B)____ forward.",
+   "choices": [
+    "holding – fixing",
+    "held – fixing",
+    "holding – fixed",
+    "held – fixed",
+    "hold – fixed"
+   ],
+   "answer": 4,
+   "why": "등은 곧게 '세워지는' 대상이고 시선도 앞에 '고정되는' 대상이므로 둘 다 과거분사를 쓴다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은? With the TV (A)____ off and the children (B)____ quietly, she could finally read.",
+   "choices": [
+    "switching – playing",
+    "switched – playing",
+    "switched – played",
+    "switching – played",
+    "switch – playing"
+   ],
+   "answer": 2,
+   "why": "TV는 누군가가 끈 것이라 과거분사 switched, 아이들은 스스로 노는 것이라 현재분사 playing을 쓴다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은? He was walking along the beach with the waves (A)____ at his feet and his shoes (B)____ in his hand.",
+   "choices": [
+    "breaking – held",
+    "broken – held",
+    "breaking – holding",
+    "broken – holding",
+    "break – held"
+   ],
+   "answer": 1,
+   "why": "파도는 스스로 부서지는 능동 관계라 현재분사, 신발은 손에 들려 있는 수동 관계라 과거분사를 쓴다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은? The kitchen was busy, with pots (A)____ on the stove and vegetables (B)____ on the board.",
+   "choices": [
+    "steaming – chopping",
+    "steamed – chopped",
+    "steaming – chopped",
+    "steamed – chopping",
+    "steam – chopped"
+   ],
+   "answer": 3,
+   "why": "냄비는 스스로 김을 내는 능동 관계라 현재분사, 채소는 썰린 대상이라 과거분사를 쓴다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 알맞은 것은?  • She was listening to me ____ her arms folded.  • I wrote the letter ____ a pen my father gave me.",
+   "choices": [
+    "with",
+    "in",
+    "by",
+    "on",
+    "for"
+   ],
+   "answer": 1,
+   "why": "첫 문장은 <with+명사+분사>의 부대상황, 둘째 문장은 도구를 나타내는 with로 둘 다 with가 들어간다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 알맞은 것은?  • He sat there ____ his eyes closed.  • The room was filled ____ the smell of fresh coffee.",
+   "choices": [
+    "at",
+    "by",
+    "with",
+    "of",
+    "to"
+   ],
+   "answer": 3,
+   "why": "첫 문장은 부대상황의 with, 둘째 문장은 be filled with(~로 가득 차다)의 with이다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?  A: Why can't you concentrate?  B: I can't study with my little brother ____ around the room.",
+   "choices": [
+    "run",
+    "running",
+    "ran",
+    "to run",
+    "runs"
+   ],
+   "answer": 2,
+   "why": "동생이 스스로 뛰어다니는 능동 관계이므로 현재분사 running을 쓴다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?  A: You look tired today.  B: I fell asleep on the sofa with the TV ____ all night.",
+   "choices": [
+    "leave on",
+    "leaving on",
+    "left on",
+    "to leave on",
+    "leaves on"
+   ],
+   "answer": 3,
+   "why": "TV는 누군가에 의해 '켜진 채로 놓인' 것이므로 수동의 과거분사 left를 써서 left on으로 표현한다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 〈with＋명사＋분사〉로 바꿔 문장 전체를 다시 쓰시오. She listened to the song, <u>and her eyes were closed</u>.",
+   "answer": "She listened to the song with her eyes closed.",
+   "alt": [
+    "She listened to the song with her eyes closed"
+   ],
+   "why": "눈은 감기는 대상이므로 was closed를 과거분사 closed로 바꿔 with her eyes closed로 쓴다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 〈with＋명사＋분사〉로 바꿔 문장 전체를 다시 쓰시오. He was standing by the door, <u>and his arms were folded</u>.",
+   "answer": "He was standing by the door with his arms folded.",
+   "alt": [
+    "He was standing by the door with his arms folded"
+   ],
+   "why": "팔은 포개어지는 대상이므로 수동의 과거분사 folded를 써서 부대상황을 나타낸다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 〈with＋명사＋분사〉로 바꿔 문장 전체를 다시 쓰시오. We walked along the river, <u>and the wind was blowing softly</u>.",
+   "answer": "We walked along the river with the wind blowing softly.",
+   "alt": [
+    "We walked along the river with the wind blowing softly"
+   ],
+   "why": "바람이 스스로 부는 능동 관계이므로 현재분사 blowing을 쓴다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 〈with＋명사＋분사〉로 바꿔 문장 전체를 다시 쓰시오. The boy came home, <u>and his knees were bleeding</u>.",
+   "answer": "The boy came home with his knees bleeding.",
+   "alt": [
+    "The boy came home with his knees bleeding"
+   ],
+   "why": "무릎이 스스로 피를 흘리는 능동·진행의 뜻이므로 현재분사 bleeding을 쓴다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 〈with＋명사＋분사〉로 바꿔 문장 전체를 다시 쓰시오. She left the office, <u>and the computer was still turned on</u>.",
+   "answer": "She left the office with the computer still turned on.",
+   "alt": [
+    "She left the office with the computer still turned on"
+   ],
+   "why": "컴퓨터는 누군가가 켠 것이므로 과거분사 turned on을 그대로 쓰고 부사 still은 분사 앞에 둔다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 With으로 시작하는 문장으로 바꿔 쓰시오. As the sun was setting, we started to walk back.",
+   "answer": "With the sun setting, we started to walk back.",
+   "alt": [
+    "With the sun setting, we started to walk back"
+   ],
+   "why": "해가 스스로 지는 능동 관계이므로 접속사절을 <With+명사+현재분사>로 바꾼다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 With으로 시작하는 문장으로 바꿔 쓰시오. Because the door was locked, nobody could enter.",
+   "answer": "With the door locked, nobody could enter.",
+   "alt": [
+    "With the door locked, nobody could enter"
+   ],
+   "why": "문은 잠기는 대상이므로 수동태 절을 <With+명사+과거분사>로 바꾼다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 With으로 시작하는 문장으로 바꿔 쓰시오. As the guests were arriving, the host became busy.",
+   "answer": "With the guests arriving, the host became busy.",
+   "alt": [
+    "With the guests arriving, the host became busy"
+   ],
+   "why": "손님이 스스로 도착하는 능동 관계이므로 현재분사 arriving을 쓴다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸을 채우시오. The climbers went up slowly with heavy packs ____ on their backs. (strap)",
+   "answer": "strapped",
+   "why": "배낭은 등에 '묶여 매어진' 대상이므로 과거분사 strapped를 쓴다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸을 채우시오. With the final score ____, the players hugged each other. (announce)",
+   "answer": "announced",
+   "why": "점수는 '발표되는' 대상이므로 과거분사 announced를 쓴다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸을 채우시오. He gave the presentation with his notes ____ in front of him. (place)",
+   "answer": "placed",
+   "why": "메모는 '놓이는' 대상이므로 과거분사 placed를 쓴다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸을 채우시오. With the traffic light ____ red, all the cars stopped. (turn)",
+   "answer": "turning",
+   "why": "신호등이 스스로 빨간색으로 '바뀌는' 능동 관계이므로 현재분사 turning을 쓴다. 여기서 turn은 '~로 변하다'라는 자동사이다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸을 채우시오. She stood on the stage with the spotlight ____ on her face. (shine)",
+   "answer": "shining",
+   "why": "조명이 스스로 비추는 능동 관계이므로 현재분사 shining을 쓴다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸을 채우시오. With the letters ____ in alphabetical order, the file was easy to search. (arrange)",
+   "answer": "arranged",
+   "why": "편지는 '정리되는' 대상이므로 과거분사 arranged를 쓴다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. The professor spoke with his eyes <u>fixing</u> on the back of the room.",
+   "answer": "fixed",
+   "why": "시선은 고정되는 대상이므로 수동의 과거분사 fixed로 고친다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. With the road <u>blocking</u> by fallen trees, the rescue team took a longer route.",
+   "answer": "blocked",
+   "why": "도로가 나무에 막힌 수동 관계이고 뒤에 by가 이어지므로 과거분사 blocked로 고친다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. She entered the hall with her heart <u>beat</u> fast.",
+   "answer": "beating",
+   "why": "심장이 스스로 뛰는 능동 관계이므로 현재분사 beating으로 고친다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. With the contract <u>signing</u>, both companies celebrated the deal.",
+   "answer": "signed",
+   "why": "계약서는 '서명되는' 대상이므로 과거분사 signed로 고친다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. He was lying on the grass with his hat <u>covered</u> his face.",
+   "answer": "covering",
+   "why": "모자가 얼굴을 덮고 있는 능동 관계이고 뒤에 목적어 his face가 있으므로 현재분사 covering으로 고친다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. With all the lights <u>turning</u> off, the house looked empty.",
+   "answer": "turned",
+   "why": "불은 누군가가 끈 것이므로 수동의 과거분사 turned로 고친다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 〈보기〉에서 어법상 옳은 것을 모두 고른 것은?  ㄱ. With the lecture hall packed, the speaker had to raise her voice.  ㄴ. With the audience applauded loudly, the pianist bowed twice.  ㄷ. She left the theater with her coat draped over one arm.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 강당이 가득 채워진 수동, ㄷ은 코트가 걸쳐진 수동이라 과거분사가 옳다. ㄴ은 청중이 스스로 박수치는 능동이므로 applauding이어야 한다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 〈보기〉에서 어법상 옳은 것을 모두 고른 것은?  ㄱ. With his passport stolen, the traveler went straight to the embassy.  ㄴ. He waited in line with his ticket held tightly in his hand.  ㄷ. The plane took off with its engines roared.",
+   "choices": [
+    "ㄱ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 2,
+   "why": "여권과 표는 모두 수동 관계라 과거분사가 옳다. ㄷ은 엔진이 스스로 굉음을 내는 능동이므로 roaring이어야 한다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 〈보기〉에서 어법상 옳은 것을 모두 고른 것은?  ㄱ. With the data analyzing, the team could finally draw a conclusion.  ㄴ. With the deadline extended, everyone breathed a sigh of relief.  ㄷ. The scientist worked all night with the results still pending.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄱ은 자료가 분석되는 수동 관계이므로 analyzed여야 한다. ㄴ은 과거분사, ㄷ은 상태를 나타내는 형용사 pending으로 모두 옳다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 〈보기〉에서 어법상 옳은 것을 모두 고른 것은?  ㄱ. She sat in the corner with a cup of tea cooling beside her.  ㄴ. He answered the question with his hands shaken.  ㄷ. With the fire burning in the fireplace, the cabin felt warm.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 2,
+   "why": "차가 식고 불이 타는 것은 모두 능동이라 현재분사가 옳다. ㄴ은 손이 스스로 떨리는 능동이므로 shaking이어야 한다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 〈보기〉에서 어법상 옳은 것을 모두 고른 것은?  ㄱ. Tom drove off with the tank full and a map spread on the seat.  ㄴ. Tom drove off with the windows rolled down and the radio blasting.  ㄷ. Tom drove off with his friends waved goodbye.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 형용사 full과 과거분사 spread, ㄴ은 과거분사와 현재분사가 각각 능동·수동 관계에 맞게 쓰였다. ㄷ은 정동사 waved를 쓸 수 없으므로 waving이어야 한다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 〈보기〉에서 어법상 옳은 것을 모두 고른 것은?  ㄱ. With night falling fast, the search party gave up.  ㄴ. With the trail marked clearly, we had no trouble finding our way.  ㄷ. With our supplies running low, we decided to turn back.",
+   "choices": [
+    "ㄱ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 5,
+   "why": "밤이 내리고 물자가 줄어드는 것은 능동이라 현재분사, 오솔길은 표시되는 대상이라 과거분사로 셋 다 옳다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 〈보기〉에서 어법상 옳은 것을 모두 고른 것은?  ㄱ. The old library stood empty, with dust covered every shelf.  ㄴ. The old library stood empty, with its windows boarded up.  ㄷ. The old library stood empty, with weeds growing through the steps.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄱ은 먼지가 선반을 덮는 능동 관계이고 목적어도 있으므로 covering이어야 한다. ㄴ은 수동의 과거분사, ㄷ은 능동의 현재분사로 옳다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 〈보기〉에서 어법상 옳은 것을 모두 고른 것은?  ㄱ. She apologized with her head bowed.  ㄴ. She apologized with her cheeks burned with shame.  ㄷ. She apologized with everyone in the room staring at her.",
+   "choices": [
+    "ㄱ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "고개는 숙여지는 수동이라 bowed, 사람들이 쳐다보는 것은 능동이라 staring이 옳다. ㄴ은 뺨이 스스로 달아오르는 능동이므로 burning이어야 한다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ⓐ With the curtains drawn, the room was completely dark.  ⓑ With the baby sleeping, we spoke in whispers.  ⓒ With his arms folding, he refused to answer.  ⓓ With the tickets sold out, we watched the game at home.  ⓔ With the machine broke, the factory stopped.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ⓐⓑⓓ가 옳다. ⓒ는 팔이 포개어지는 수동이라 folded, ⓔ는 과거형이 아니라 과거분사 broken이어야 한다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ⓐ He stood in the rain with his hair dripping wet.  ⓑ He stood in the rain with his umbrella broken.  ⓒ He stood in the rain with water running off his coat.  ⓓ He stood in the rain with his phone protecting in his pocket.  ⓔ He stood in the rain with his eyes fixed on the door.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "ⓓ만 틀렸다. 휴대전화는 보호받는 대상이므로 protecting이 아니라 protected여야 한다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ⓐ With the table set, we sat down for dinner.  ⓑ With the candles lighting, the room felt cozy.  ⓒ With the music playing softly, we talked for hours.  ⓓ With the dishes washing, she finally sat down.  ⓔ With everything preparing, the host welcomed the guests.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ⓐⓒ만 옳다. ⓑ는 lit, ⓓ는 washed, ⓔ는 prepared처럼 모두 수동의 과거분사를 써야 한다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ⓐ The truck came down the road with its headlights flashing.  ⓑ The truck came down the road with mud splashed on its sides.  ⓒ The truck came down the road with its horn honking loudly.  ⓓ The truck came down the road with a load of logs tied down.  ⓔ The truck came down the road with the driver waving at us.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 5,
+   "why": "다섯 문장 모두 명사와 분사의 관계가 능동이면 현재분사, 수동이면 과거분사로 정확히 쓰였다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ⓐ With the report finishing, he emailed it to his boss.  ⓑ With his glasses fogged up, he could hardly see.  ⓒ With the alarm rang, everyone rushed out.  ⓓ With the door lock, she could not get out.  ⓔ With the letters sending yesterday, we expect replies soon.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 1,
+   "why": "ⓑ만 옳다. ⓐ는 finished, ⓒ는 ringing, ⓓ는 locked, ⓔ는 sent로 고쳐야 한다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ⓐ She walked in with her coat buttoned to the chin.  ⓑ She walked in with snow melt in her hair.  ⓒ She walked in with her boots leave wet marks.  ⓓ She walked in with a scarf wrapped around her neck.  ⓔ She walked in with her hands froze.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ⓐⓓ만 옳다. ⓑ는 with 뒤에 동사원형을 쓸 수 없어 melting, ⓒ는 leaving, ⓔ는 과거분사 frozen이어야 한다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ⓐ With the harvest over, the farmers rested.  ⓑ With the barn painted red, the farm looked cheerful.  ⓒ With the cows grazing in the field, the scene looked peaceful.  ⓓ With the fence mending yesterday, no animals escaped.  ⓔ With the tractor parked in the shed, the yard was empty.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "ⓓ만 틀렸다. 울타리는 고쳐지는 대상이므로 mending이 아니라 mended여야 한다. ⓐ의 over는 상태를 나타내는 부사로 쓰였다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ⓐ He hung up with the question still unanswered.  ⓑ He hung up with his mind racing.  ⓒ He hung up with the receiver slam down.  ⓓ He hung up with his heart sank.  ⓔ He hung up with tears welling in his eyes.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ⓐⓑⓔ가 옳다. ⓒ는 수화기가 내려쳐지는 수동 관계이므로 slammed, ⓓ는 정동사가 아니라 현재분사 sinking이어야 한다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? Standing at the edge of the platform, the traveler ①<u>checked</u> his watch ②<u>with</u> his suitcase ③<u>resting</u> beside him and his ticket ④<u>tucking</u> ⑤<u>into</u> his coat pocket.",
+   "choices": [
+    "checked",
+    "with",
+    "resting",
+    "tucking",
+    "into"
+   ],
+   "answer": 4,
+   "why": "표는 주머니에 '끼워 넣어진' 대상이므로 tucking이 아니라 tucked여야 한다. ③은 여행 가방이 놓여 있는 능동 관계라 현재분사가 옳다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? ①<u>With</u> the negotiations ②<u>dragged</u> on for weeks, both sides ③<u>grew</u> impatient, ④<u>with</u> neither party ⑤<u>willing</u> to compromise.",
+   "choices": [
+    "With",
+    "dragged",
+    "grew",
+    "with",
+    "willing"
+   ],
+   "answer": 2,
+   "why": "협상이 스스로 오래 이어지는 능동 관계이므로 dragging이어야 한다. ⑤는 <with+명사+형용사> 형태로 옳다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? The volunteers ①<u>worked</u> through the night, ②<u>with</u> flashlights ③<u>tied</u> to their helmets and ④<u>the rain</u> ⑤<u>fallen</u> steadily.",
+   "choices": [
+    "worked",
+    "with",
+    "tied",
+    "the rain",
+    "fallen"
+   ],
+   "answer": 5,
+   "why": "비가 스스로 내리는 능동 관계이므로 fallen이 아니라 falling이어야 한다. fall은 자동사라 과거분사를 분사구문에 쓸 수 없다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? ①<u>With</u> the deadline ②<u>approaching</u> and half the report ③<u>write</u>, the intern ④<u>stayed</u> late, ⑤<u>with</u> coffee cups piling up on his desk.",
+   "choices": [
+    "With",
+    "approaching",
+    "write",
+    "stayed",
+    "with"
+   ],
+   "answer": 3,
+   "why": "보고서는 '쓰이는' 대상이므로 동사원형 write가 아니라 과거분사 written이어야 한다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? The old fisherman ①<u>sat</u> on the dock ②<u>with</u> his line ③<u>cast</u> into the water and his hat ④<u>pulling</u> low ⑤<u>over</u> his eyes.",
+   "choices": [
+    "sat",
+    "with",
+    "cast",
+    "pulling",
+    "over"
+   ],
+   "answer": 4,
+   "why": "모자는 눈 위로 '당겨 내려진' 대상이므로 pulling이 아니라 pulled여야 한다. ③ cast는 cast-cast-cast의 과거분사로 옳다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? ①<u>With</u> the power ②<u>cut</u> off by the storm, the hospital ③<u>ran</u> on generators ④<u>with</u> nurses ⑤<u>carried</u> flashlights from room to room.",
+   "choices": [
+    "With",
+    "cut",
+    "ran",
+    "with",
+    "carried"
+   ],
+   "answer": 5,
+   "why": "간호사들이 손전등을 들고 다니는 능동 관계이고 뒤에 목적어가 있으므로 carrying이어야 한다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? She ①<u>delivered</u> the closing argument ②<u>with</u> her notes ③<u>lying</u> untouched on the table and every juror's eyes ④<u>fix</u> ⑤<u>on</u> her.",
+   "choices": [
+    "delivered",
+    "with",
+    "lying",
+    "fix",
+    "on"
+   ],
+   "answer": 4,
+   "why": "시선은 고정되는 대상이므로 동사원형 fix가 아니라 과거분사 fixed여야 한다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? The chef ①<u>moved</u> quickly around the kitchen ②<u>with</u> three pans ③<u>sizzled</u> on the stove and a stack of orders ④<u>pinned</u> ⑤<u>above</u> him.",
+   "choices": [
+    "moved",
+    "with",
+    "sizzled",
+    "pinned",
+    "above"
+   ],
+   "answer": 3,
+   "why": "팬이 스스로 지글거리는 능동 관계이므로 sizzled가 아니라 sizzling이어야 한다. ④는 주문서가 핀으로 꽂힌 수동이라 옳다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? ①<u>With</u> the temperature ②<u>drop</u> below zero, the marathon organizers ③<u>handed</u> out blankets ④<u>with</u> volunteers ⑤<u>standing</u> at every corner.",
+   "choices": [
+    "With",
+    "drop",
+    "handed",
+    "with",
+    "standing"
+   ],
+   "answer": 2,
+   "why": "기온이 스스로 떨어지는 능동 관계이므로 동사원형 drop이 아니라 현재분사 dropping이어야 한다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? The detective ①<u>examined</u> the room ②<u>with</u> the window ③<u>breaking</u> from the outside and muddy footprints ④<u>leading</u> ⑤<u>toward</u> the door.",
+   "choices": [
+    "examined",
+    "with",
+    "breaking",
+    "leading",
+    "toward"
+   ],
+   "answer": 3,
+   "why": "창문은 밖에서 '깨진' 대상이므로 breaking이 아니라 broken이어야 한다. ④는 발자국이 문 쪽으로 이어지는 능동이라 옳다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? ①<u>With</u> the cameras ②<u>rolling</u>, the two leaders ③<u>shook</u> hands ④<u>with</u> reporters ⑤<u>shouted</u> questions from the back of the room.",
+   "choices": [
+    "With",
+    "rolling",
+    "shook",
+    "with",
+    "shouted"
+   ],
+   "answer": 5,
+   "why": "기자들이 질문을 외치는 능동 관계이고 목적어 questions가 있으므로 정동사 shouted가 아니라 shouting이어야 한다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? ①<u>With</u> her flight ②<u>delaying</u> by six hours, Mira ③<u>spent</u> the evening in the lounge, ④<u>with</u> her laptop ⑤<u>open</u> on her knees.",
+   "choices": [
+    "With",
+    "delaying",
+    "spent",
+    "with",
+    "open"
+   ],
+   "answer": 2,
+   "why": "항공편은 '지연되는' 대상이고 뒤에 by가 이어지므로 delaying이 아니라 delayed여야 한다. ⑤는 상태를 나타내는 형용사 open으로 옳다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)에서 어법상 알맞은 것끼리 짝지은 것은? The old sailor sat on the deck with his pipe (A)[smoking / smoked], his cap (B)[pulling / pulled] down, and the sea (C)[stretching / stretched] endlessly before him.",
+   "choices": [
+    "smoking – pulling – stretching",
+    "smoking – pulled – stretching",
+    "smoked – pulled – stretched",
+    "smoking – pulled – stretched",
+    "smoked – pulling – stretching"
+   ],
+   "answer": 2,
+   "why": "파이프는 스스로 연기를 내고 바다는 스스로 펼쳐지므로 현재분사, 모자는 눌러 씌워진 대상이므로 과거분사를 쓴다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)에서 어법상 알맞은 것끼리 짝지은 것은? The café was quiet, with the chairs (A)[stacking / stacked] on the tables, the floor (B)[mopping / mopped], and only one lamp (C)[burning / burned] in the corner.",
+   "choices": [
+    "stacked – mopped – burning",
+    "stacking – mopped – burning",
+    "stacked – mopping – burned",
+    "stacking – mopping – burning",
+    "stacked – mopped – burned"
+   ],
+   "answer": 1,
+   "why": "의자와 바닥은 각각 쌓이고 닦이는 대상이라 과거분사, 램프는 스스로 타고 있으므로 현재분사를 쓴다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)에서 어법상 알맞은 것끼리 짝지은 것은? With his ankle (A)[twisting / twisted] and his water bottle (B)[emptying / empty], the hiker limped down the trail with darkness (C)[falling / fallen] fast.",
+   "choices": [
+    "twisted – empty – fallen",
+    "twisting – empty – falling",
+    "twisted – empty – falling",
+    "twisted – emptying – falling",
+    "twisting – emptying – fallen"
+   ],
+   "answer": 3,
+   "why": "발목은 삔 대상이라 과거분사, 물통의 상태는 형용사 empty, 어둠은 스스로 내리므로 현재분사를 쓴다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)에서 어법상 알맞은 것끼리 짝지은 것은? The lecture ended with the students (A)[confusing / confused], the professor (B)[gathering / gathered] his papers, and the projector still (C)[running / run].",
+   "choices": [
+    "confusing – gathering – running",
+    "confused – gathered – running",
+    "confused – gathering – run",
+    "confused – gathering – running",
+    "confusing – gathered – run"
+   ],
+   "answer": 4,
+   "why": "학생들은 혼란을 '느끼는' 쪽이라 confused, 교수는 서류를 모으는 능동이라 gathering, 프로젝터는 스스로 돌아가므로 running이다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)에서 어법상 알맞은 것끼리 짝지은 것은? With the tent (A)[pitching / pitched] near the stream, we cooked dinner with the fire (B)[crackling / crackled] and our boots (C)[drying / dried] by the flames.",
+   "choices": [
+    "pitching – crackling – dried",
+    "pitched – crackled – drying",
+    "pitched – crackling – dried",
+    "pitching – crackled – dried",
+    "pitched – crackling – drying"
+   ],
+   "answer": 5,
+   "why": "텐트는 쳐지는 대상이라 과거분사, 불이 타닥거리고 부츠가 마르는 것은 능동·진행이라 현재분사를 쓴다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)에서 어법상 알맞은 것끼리 짝지은 것은? She addressed the crowd with her voice (A)[amplifying / amplified] by the speakers, her hands (B)[trembling / trembled] slightly, and every camera (C)[flashing / flashed] at her.",
+   "choices": [
+    "amplifying – trembling – flashing",
+    "amplified – trembled – flashing",
+    "amplified – trembling – flashing",
+    "amplified – trembling – flashed",
+    "amplifying – trembled – flashed"
+   ],
+   "answer": 3,
+   "why": "목소리는 스피커에 의해 증폭되는 수동이라 과거분사, 손이 떨리고 카메라가 번쩍이는 것은 능동이라 현재분사를 쓴다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)에서 어법상 알맞은 것끼리 짝지은 것은? With the report (A)[proofreading / proofread] twice and the slides (B)[uploading / uploaded], he went into the meeting with his heart (C)[pounding / pounded].",
+   "choices": [
+    "proofreading – uploaded – pounding",
+    "proofread – uploaded – pounding",
+    "proofread – uploading – pounded",
+    "proofreading – uploading – pounding",
+    "proofread – uploaded – pounded"
+   ],
+   "answer": 2,
+   "why": "보고서와 슬라이드는 각각 교정되고 업로드되는 대상이라 과거분사, 심장은 스스로 뛰므로 현재분사를 쓴다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)에서 어법상 알맞은 것끼리 짝지은 것은? The village woke with roosters (A)[crowing / crowed], smoke (B)[rising / risen] from the chimneys, and the market stalls already (C)[setting / set] up.",
+   "choices": [
+    "crowing – rising – setting",
+    "crowed – rising – set",
+    "crowing – risen – set",
+    "crowing – rising – set",
+    "crowed – risen – setting"
+   ],
+   "answer": 4,
+   "why": "수탉이 울고 연기가 피어오르는 것은 능동이라 현재분사, 가판대는 세워지는 대상이라 과거분사 set을 쓴다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 모든 창문이 판자로 막힌 채, 그 집은 버려진 것처럼 보였다.",
+   "choices": [
+    "With all the windows boarding up, the house looked abandoned.",
+    "With all the windows boarded up, the house looked abandoned.",
+    "With boarding all the windows up, the house looked abandoned.",
+    "With all the windows board up, the house looked abandoned.",
+    "With all the windows were boarded up, the house looked abandoned."
+   ],
+   "answer": 2,
+   "why": "창문은 판자로 '막히는' 대상이므로 과거분사 boarded를 쓴다. with 뒤에는 정동사나 동사원형이 올 수 없다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그녀는 두 아이가 팔에 매달린 채 계단을 올라갔다.",
+   "choices": [
+    "She climbed the stairs with two children clung to her arms.",
+    "She climbed the stairs with two children cling to her arms.",
+    "She climbed the stairs with clinging two children to her arms.",
+    "She climbed the stairs with two children clinging to her arms.",
+    "She climbed the stairs with two children to cling to her arms."
+   ],
+   "answer": 4,
+   "why": "아이들이 스스로 매달리는 능동 관계이므로 현재분사 clinging을 쓴다. cling은 자동사라 과거분사 clung을 부대상황에 쓸 수 없다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그 소식이 발표된 가운데, 주가는 곧바로 급락했다.",
+   "choices": [
+    "With the news announcing, stock prices plunged at once.",
+    "With announcing the news, stock prices plunged at once.",
+    "With the news announced, stock prices plunged at once.",
+    "With the news announce, stock prices plunged at once.",
+    "With the news was announced, stock prices plunged at once."
+   ],
+   "answer": 3,
+   "why": "소식은 '발표되는' 대상이므로 수동의 과거분사 announced를 쓴다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 청중이 숨을 죽인 가운데, 마술사는 상자를 열었다.",
+   "choices": [
+    "With the audience held its breath, the magician opened the box.",
+    "With the audience holding its breath, the magician opened the box.",
+    "With holding the audience its breath, the magician opened the box.",
+    "With the audience hold its breath, the magician opened the box.",
+    "With the audience to hold its breath, the magician opened the box."
+   ],
+   "answer": 2,
+   "why": "청중이 스스로 숨을 죽이는 능동 관계이고 목적어 its breath가 있으므로 현재분사 holding을 쓴다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 짐이 트럭에 실린 채로, 우리는 새집으로 출발했다.",
+   "choices": [
+    "With our luggage loading onto the truck, we set off for the new house.",
+    "With loading our luggage onto the truck, we set off for the new house.",
+    "With our luggage load onto the truck, we set off for the new house.",
+    "With our luggage loaded onto the truck, we set off for the new house.",
+    "With our luggage to load onto the truck, we set off for the new house."
+   ],
+   "answer": 4,
+   "why": "짐은 '실리는' 대상이므로 수동의 과거분사 loaded를 쓴다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그 배우는 팬들이 자신의 이름을 외치는 가운데 무대를 떠났다.",
+   "choices": [
+    "The actor left the stage with his fans shouted his name.",
+    "The actor left the stage with his fans shout his name.",
+    "The actor left the stage with shouting his fans his name.",
+    "The actor left the stage with his fans to shout his name.",
+    "The actor left the stage with his fans shouting his name."
+   ],
+   "answer": 5,
+   "why": "팬들이 이름을 외치는 능동 관계이고 목적어가 있으므로 현재분사 shouting을 쓴다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 명사와 분사의 관계가 어법에 맞는 것은?",
+   "choices": [
+    "The runner crossed the line with his arms raising in triumph.",
+    "The runner crossed the line with sweat pouring down his face.",
+    "The runner crossed the line with the crowd cheered wildly.",
+    "The runner crossed the line with his shoes untying.",
+    "The runner crossed the line with his coach shouted his name."
+   ],
+   "answer": 2,
+   "why": "땀이 스스로 흘러내리는 능동 관계이므로 ② pouring이 옳다. ①은 raised, ③은 cheering, ④는 untied, ⑤는 shouting이어야 한다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳게 쓰인 문장은?",
+   "choices": [
+    "With the wound bandaging, he returned to the game.",
+    "With his hands tying behind his back, the magician escaped.",
+    "With the tide going out, the boats settled on the sand.",
+    "With the alarm setting for six, she went to sleep.",
+    "With the papers scattering all over the floor, the office looked chaotic."
+   ],
+   "answer": 3,
+   "why": "조수가 스스로 빠져나가는 능동 관계이므로 ③ going이 옳다. ①은 bandaged, ②는 tied, ④는 set, ⑤는 scattered여야 한다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 맞는 것은?",
+   "choices": [
+    "The children waited with their noses pressed against the glass.",
+    "The children waited with their hands wave excitedly.",
+    "The children waited with their coats zipping up.",
+    "The children waited with their teacher counted them.",
+    "The children waited with their bags to pack."
+   ],
+   "answer": 1,
+   "why": "코가 유리에 눌린 수동 관계이므로 ① pressed가 옳다. ②는 waving, ③은 zipped up, ④는 counting, ⑤는 packed여야 한다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 정확한 문장은?",
+   "choices": [
+    "With the machines hummed, the factory ran all night.",
+    "With the order placing, we waited for delivery.",
+    "With the shelves stocking with goods, the store opened.",
+    "With the sign written in three languages, every visitor understood it.",
+    "With the entrance blocking by trucks, no one could get in."
+   ],
+   "answer": 4,
+   "why": "표지판은 세 언어로 '쓰인' 대상이므로 ④ written이 옳다. ①은 humming, ②는 placed, ③은 stocked, ⑤는 blocked여야 한다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 〈with＋명사＋분사〉로 바꿔 문장 전체를 다시 쓰시오. <u>Since her passport had been stolen</u>, she could not board the plane.",
+   "answer": "With her passport stolen, she could not board the plane.",
+   "alt": [
+    "With her passport stolen, she could not board the plane"
+   ],
+   "why": "여권은 도난당한 대상이므로 수동태 절을 <With+명사+과거분사>로 줄인다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 〈with＋명사＋분사〉로 바꿔 문장 전체를 다시 쓰시오. <u>As the leaves were falling all around us</u>, we walked through the park.",
+   "answer": "With the leaves falling all around us, we walked through the park.",
+   "alt": [
+    "With the leaves falling all around us, we walked through the park"
+   ],
+   "why": "잎이 스스로 떨어지는 능동 관계이므로 현재분사 falling을 쓴다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 〈with＋명사＋분사〉로 바꿔 문장 전체를 다시 쓰시오. <u>Because the bridge was closed for repairs</u>, drivers had to take a detour.",
+   "answer": "With the bridge closed for repairs, drivers had to take a detour.",
+   "alt": [
+    "With the bridge closed for repairs, drivers had to take a detour"
+   ],
+   "why": "다리는 폐쇄되는 대상이므로 과거분사 closed를 써서 부대상황을 나타낸다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 〈with＋명사＋분사〉로 바꿔 문장 전체를 다시 쓰시오. <u>As the audience was watching in silence</u>, the dancer began to move.",
+   "answer": "With the audience watching in silence, the dancer began to move.",
+   "alt": [
+    "With the audience watching in silence, the dancer began to move"
+   ],
+   "why": "관객이 지켜보는 능동 관계이므로 현재분사 watching을 쓴다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 〈with＋명사＋분사〉로 바꿔 문장 전체를 다시 쓰시오. He walked out of the room, <u>and his eyes were filled with tears</u>.",
+   "answer": "He walked out of the room with his eyes filled with tears.",
+   "alt": [
+    "He walked out of the room with his eyes filled with tears"
+   ],
+   "why": "눈이 눈물로 가득 찬 수동 관계이므로 과거분사 filled를 쓰고 be filled with의 with를 그대로 둔다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 〈with＋명사＋분사〉로 바꿔 문장 전체를 다시 쓰시오. The professor lectured for an hour, <u>and his notes lay unopened on the desk</u>.",
+   "answer": "The professor lectured for an hour with his notes lying unopened on the desk.",
+   "alt": [
+    "The professor lectured for an hour with his notes lying unopened on the desk"
+   ],
+   "why": "메모가 스스로 놓여 있는 능동 관계이므로 lay를 현재분사 lying으로 바꾼다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 With으로 시작하는 문장으로 바꿔 쓰시오. As night was coming on, the temperature dropped sharply.",
+   "answer": "With night coming on, the temperature dropped sharply.",
+   "alt": [
+    "With night coming on, the temperature dropped sharply"
+   ],
+   "why": "밤이 다가오는 능동 관계이므로 현재분사 coming을 쓴다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 With으로 시작하는 문장으로 바꿔 쓰시오. Because all the seats had been taken, we stood at the back.",
+   "answer": "With all the seats taken, we stood at the back.",
+   "alt": [
+    "With all the seats taken, we stood at the back"
+   ],
+   "why": "좌석은 차지되는 대상이므로 과거분사 taken을 쓴다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞게 배열·변형하여 빈칸을 채우시오. (필요시 어형을 바꿀 것)  그는 팔짱을 낀 채 문 옆에 서 있었다.  → He stood by the door ____. (his / with / fold / arms)",
+   "answer": "with his arms folded",
+   "why": "팔은 포개어지는 대상이므로 fold를 과거분사 folded로 바꿔 <with+명사+과거분사> 순으로 배열한다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞게 배열·변형하여 빈칸을 채우시오. (필요시 어형을 바꿀 것)  그 아이는 눈물이 뺨을 타고 흘러내리는 채로 나를 바라보았다.  → The child looked at me ____ his cheeks. (down / with / tears / run)",
+   "answer": "with tears running down",
+   "why": "눈물이 스스로 흘러내리는 능동 관계이므로 run을 현재분사 running으로 바꾼다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞게 배열·변형하여 빈칸을 채우시오. (필요시 어형을 바꿀 것)  모든 조명이 꺼진 채로 그 극장은 텅 비어 보였다.  → ____, the theater looked empty. (all the lights / with / turn off)",
+   "answer": "With all the lights turned off",
+   "alt": [
+    "with all the lights turned off"
+   ],
+   "why": "조명은 누군가가 끈 것이므로 turn off를 과거분사 turned off로 바꾼다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞게 배열·변형하여 빈칸을 채우시오. (필요시 어형을 바꿀 것)  그녀는 다리를 꼬고 앉은 채 우리를 기다렸다.  → She waited for us, sitting ____. (cross / her / with / legs)",
+   "answer": "with her legs crossed",
+   "why": "다리는 포개어지는 대상이므로 cross를 과거분사 crossed로 바꾼다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞게 배열하여 빈칸을 채우시오.  창문이 활짝 열린 채로 우리는 신선한 공기를 즐겼다.  → ____, we enjoyed the fresh air. (wide open / with / the windows)",
+   "answer": "With the windows wide open",
+   "alt": [
+    "with the windows wide open"
+   ],
+   "why": "열려 있는 상태를 나타내므로 형용사 open을 쓰고 그 앞에 정도를 나타내는 wide를 둔다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞게 배열·변형하여 빈칸을 채우시오. (필요시 어형을 바꿀 것)  그 개는 꼬리를 흔들며 나에게 달려왔다.  → The dog ran to me ____. (its / with / tail / wag)",
+   "answer": "with its tail wagging",
+   "why": "꼬리가 스스로 흔들리는 능동 관계이므로 wag를 현재분사 wagging으로 바꾼다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. With the evidence <u>presenting</u> in court, the defense had little to say.",
+   "answer": "presented",
+   "why": "증거는 법정에 '제시되는' 대상이므로 수동의 과거분사 presented로 고친다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. The general watched the battlefield with his troops <u>advanced</u> steadily toward the river.",
+   "answer": "advancing",
+   "why": "부대가 스스로 전진하는 능동 관계이므로 현재분사 advancing으로 고친다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. With her savings <u>ran</u> out, she had to look for a part-time job.",
+   "answer": "running",
+   "why": "저축이 스스로 바닥나는 능동 관계이므로 현재분사 running으로 고친다. run out은 자동사로 쓰였다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. The old man sat on the porch with a newspaper <u>folding</u> on his lap and a cup of tea beside him.",
+   "answer": "folded",
+   "why": "신문은 접히는 대상이므로 수동의 과거분사 folded로 고친다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. With the seeds <u>planting</u> in early spring, the farmer expected a good harvest.",
+   "answer": "planted",
+   "why": "씨앗은 심어지는 대상이므로 수동의 과거분사 planted로 고친다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. She listened to the argument with her lips <u>pressing</u> tightly together.",
+   "answer": "pressed",
+   "why": "입술은 서로 눌리는 대상이므로 수동의 과거분사 pressed로 고친다.",
+   "no": 200
+  }
+ ]
+}

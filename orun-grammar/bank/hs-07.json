@@ -1,0 +1,2631 @@
+{
+ "id": "hs-07",
+ "grade": "고등",
+ "name": "완료시제 심화",
+ "points": [
+  "미래완료 will have p.p.",
+  "현재완료진행",
+  "현재완료 수동태"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? By next spring, Mr. Park ____ at this school for twenty years.",
+   "choices": [
+    "will have taught",
+    "will taught",
+    "will have teaching",
+    "has been taught",
+    "will be taught"
+   ],
+   "answer": 1,
+   "why": "미래의 한 시점(next spring)까지 이어지는 일은 미래완료 <will have p.p.>로 쓴다. will taught·will have teaching은 형태가 틀렸고, has been taught·will be taught는 수동태여서 '가르쳐 왔다'는 능동의 뜻이 되지 못한다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The movie ____ by the time we arrive at the theater.",
+   "choices": [
+    "was starting",
+    "will have started",
+    "will have start",
+    "has been starting",
+    "will started"
+   ],
+   "answer": 2,
+   "why": "by the time가 이끄는 미래의 시점보다 먼저 끝나는 일이므로 미래완료 will have started가 알맞다. have 뒤에는 반드시 과거분사가 와야 하므로 will have start는 틀린 형태이다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Julie ____ all her homework by nine o'clock tonight.",
+   "choices": [
+    "will have been finished",
+    "will finishing",
+    "will have finished",
+    "will has finished",
+    "has finished"
+   ],
+   "answer": 3,
+   "why": "오늘 밤 아홉 시라는 미래 시점까지 완료될 일이므로 will have finished를 쓴다. 뒤에 목적어 all her homework가 있으므로 수동태 will have been finished는 쓸 수 없다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? By the end of this month, I ____ the novel three times.",
+   "choices": [
+    "have been read",
+    "will have been read",
+    "will be read",
+    "will have read",
+    "will reading"
+   ],
+   "answer": 4,
+   "why": "이달 말까지 '세 번 읽은 것이 될' 것이므로 미래완료 will have read가 알맞다. 읽는 주체가 I이므로 수동태 형태들은 모두 뜻이 맞지 않는다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? If nothing changes, the population ____ by 2040.",
+   "choices": [
+    "will have double",
+    "has been doubled",
+    "will have doubling",
+    "will been doubled",
+    "will have doubled"
+   ],
+   "answer": 5,
+   "why": "2040년이라는 미래 시점까지의 변화 결과이므로 미래완료 will have doubled를 쓴다. double은 여기서 '두 배가 되다'라는 자동사이므로 수동태로 쓰지 않는다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? By the time you wake up, the sun ____.",
+   "choices": [
+    "will have risen",
+    "will have rose",
+    "has risen",
+    "will have been risen",
+    "will rising"
+   ],
+   "answer": 1,
+   "why": "네가 일어나는 미래 시점보다 앞서 끝나는 일이므로 미래완료 will have risen이다. rise의 과거분사는 risen이며, 자동사라서 수동태로 쓸 수 없다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "괄호 안에서 어법상 알맞은 것은? By the time the guests ( ), we will have set the table.",
+   "choices": [
+    "arrived",
+    "arrive",
+    "will arrive",
+    "will have arrived",
+    "arriving"
+   ],
+   "answer": 2,
+   "why": "시간을 나타내는 부사절(by the time ~)에서는 미래의 일이라도 현재시제로 나타낸다. 미래완료는 주절(will have set)에만 쓴다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "괄호 안에서 어법상 알맞은 것은? By the time this class ( ), we will have learned fifty new words.",
+   "choices": [
+    "ending",
+    "ended",
+    "ends",
+    "will end",
+    "will have ended"
+   ],
+   "answer": 3,
+   "why": "by the time이 이끄는 시간 부사절에서는 미래를 현재시제로 표현하므로 ends가 알맞다. 주절에만 미래완료 will have learned를 쓴다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? It ____ since last night, so the roads are wet now.",
+   "choices": [
+    "is raining",
+    "rained",
+    "has raining",
+    "has been raining",
+    "has been rained"
+   ],
+   "answer": 4,
+   "why": "지난밤부터 지금까지 계속되는 일이므로 현재완료진행 <has been v-ing>를 쓴다. since가 이끄는 기간 표현은 현재시제 is raining과 함께 쓸 수 없다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Nora ____ the piano for two hours, and she is still playing.",
+   "choices": [
+    "has been practiced",
+    "is practicing",
+    "practiced",
+    "has practicing",
+    "has been practicing"
+   ],
+   "answer": 5,
+   "why": "두 시간 전부터 지금까지 계속되고 있으므로 현재완료진행 has been practicing이 알맞다. 연습하는 주체가 Nora이므로 수동태 has been practiced는 뜻이 맞지 않는다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? We ____ for the bus for twenty minutes, and it hasn't come yet.",
+   "choices": [
+    "have been waiting",
+    "have been waited",
+    "are waiting",
+    "waited",
+    "has been waiting"
+   ],
+   "answer": 1,
+   "why": "20분 전부터 지금까지 이어지는 동작이므로 현재완료진행을 쓰고, 주어가 We이므로 have been waiting이다. wait는 자동사라 수동태로 쓸 수 없다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? My brother ____ video games since three o'clock.",
+   "choices": [
+    "have been playing",
+    "has been playing",
+    "has been played",
+    "is playing",
+    "plays"
+   ],
+   "answer": 2,
+   "why": "세 시부터 지금까지 계속되는 동작이므로 현재완료진행이며, 주어가 3인칭 단수이므로 has been playing이다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은? A: How long ____ Korean? B: For about five years, and I'm still learning.",
+   "choices": [
+    "have you been studied",
+    "you have studied",
+    "have you been studying",
+    "are you studying",
+    "do you study"
+   ],
+   "answer": 3,
+   "why": "'얼마나 오래 ~해 오고 있는가'를 묻고 지금도 계속되므로 현재완료진행 의문문 <have+주어+been v-ing>를 쓴다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The old temple ____ many times over the years.",
+   "choices": [
+    "has been repairing",
+    "is repairing",
+    "have been repaired",
+    "has been repaired",
+    "has repaired"
+   ],
+   "answer": 4,
+   "why": "절은 수리되는 대상이므로 현재완료 수동태 <has been p.p.>를 쓴다. has repaired는 절이 무언가를 수리했다는 능동의 뜻이 되어 어색하다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? All the invitations ____ already.",
+   "choices": [
+    "have sent",
+    "has been sent",
+    "are sending",
+    "have been sending",
+    "have been sent"
+   ],
+   "answer": 5,
+   "why": "초대장은 보내지는 대상이고 주어가 복수이므로 현재완료 수동태 have been sent를 쓴다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? My bicycle ____, so I have to walk to school these days.",
+   "choices": [
+    "has been stolen",
+    "has stolen",
+    "has been stealing",
+    "is stealing",
+    "have been stolen"
+   ],
+   "answer": 1,
+   "why": "자전거는 도난당하는 대상이므로 현재완료 수동태 has been stolen이 알맞다. steal의 과거분사는 stolen이다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The report ____ by the manager, so we can send it now.",
+   "choices": [
+    "have been checked",
+    "has been checked",
+    "has checked",
+    "has been checking",
+    "is checking"
+   ],
+   "answer": 2,
+   "why": "보고서는 점검을 받는 대상이고 행위자가 by the manager로 제시되어 있으므로 현재완료 수동태 has been checked를 쓴다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Two new hospitals ____ in our city since 2020.",
+   "choices": [
+    "are building",
+    "have been building",
+    "have been built",
+    "have built",
+    "has been built"
+   ],
+   "answer": 3,
+   "why": "병원은 지어지는 대상이고 주어가 복수이므로 현재완료 수동태 have been built이다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "By tomorrow, she will have been finished the project.",
+    "By tomorrow, she will have finish the project.",
+    "By tomorrow, she will finished the project.",
+    "By tomorrow, she will have finished the project.",
+    "By tomorrow, she has finished the project."
+   ],
+   "answer": 4,
+   "why": "미래완료는 <will have p.p.>이므로 will have finished가 옳다. will have finish, will finished는 형태가 틀렸고, 뒤에 목적어가 있으므로 수동태 will have been finished도 쓸 수 없다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "어법상 올바른 문장을 고르시오.",
+   "choices": [
+    "He is working here since May.",
+    "He has been worked here since May.",
+    "He has working here since May.",
+    "He has been work here since May.",
+    "He has been working here since May."
+   ],
+   "answer": 5,
+   "why": "현재완료진행은 <has been v-ing>이므로 has been working이 옳다. has been worked는 수동태라 '일해 왔다'는 뜻이 되지 않는다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞는 문장은?",
+   "choices": [
+    "The window has been broken by the storm.",
+    "The window have been broken by the storm.",
+    "The window has broken by the storm.",
+    "The window has been broke by the storm.",
+    "The window is been broken by the storm."
+   ],
+   "answer": 1,
+   "why": "창문은 깨지는 대상이므로 현재완료 수동태 <has been p.p.>를 쓴다. break의 과거분사는 broken이고 주어가 단수이므로 has been broken이 옳다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은?",
+   "choices": [
+    "By Friday, he will have finished the report.",
+    "She has been knowing him for ten years.",
+    "They have been talking on the phone for an hour.",
+    "I have been reading this book since Monday.",
+    "The floor has been cleaned already."
+   ],
+   "answer": 2,
+   "why": "know는 상태를 나타내는 동사라 진행형으로 쓰지 않으므로 has known으로 고쳐야 한다. 나머지는 각각 현재완료진행·현재완료 수동태·미래완료로 바르게 쓰였다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? We ①<u>have</u> ②<u>been</u> ③<u>wait</u> here ④<u>for</u> two ⑤<u>hours</u>.",
+   "choices": [
+    "have",
+    "been",
+    "wait",
+    "for",
+    "hours"
+   ],
+   "answer": 3,
+   "why": "현재완료진행은 <have been v-ing>이므로 wait를 waiting으로 고쳐야 한다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? The letters ①<u>has</u> ②<u>been</u> ③<u>sent</u> ④<u>to</u> ⑤<u>everyone</u>.",
+   "choices": [
+    "has",
+    "been",
+    "sent",
+    "to",
+    "everyone"
+   ],
+   "answer": 1,
+   "why": "주어 The letters가 복수이므로 has를 have로 고쳐야 한다. 나머지 have been sent는 현재완료 수동태로 알맞다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? By next year, my sister ①<u>will</u> ②<u>has</u> ③<u>graduated</u> ④<u>from</u> ⑤<u>college</u>.",
+   "choices": [
+    "will",
+    "has",
+    "graduated",
+    "from",
+    "college"
+   ],
+   "answer": 2,
+   "why": "조동사 will 뒤에는 동사원형이 와야 하므로 has를 have로 고쳐 미래완료 will have graduated로 만든다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? 이 컴퓨터는 지난주부터 수리되어 왔다.",
+   "choices": [
+    "This computer had been repaired since last week.",
+    "This computer has repaired since last week.",
+    "This computer has been repaired since last week.",
+    "This computer is repaired since last week.",
+    "This computer has been repairing since last week."
+   ],
+   "answer": 3,
+   "why": "컴퓨터는 수리되는 대상이므로 현재완료 수동태 has been repaired가 알맞다. has repaired는 능동이라 뜻이 반대이다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? 내일이면 그들은 그 다리를 다 지었을 것이다.",
+   "choices": [
+    "By tomorrow, they will have build the bridge.",
+    "By tomorrow, they will be built the bridge.",
+    "By tomorrow, they will build the bridge.",
+    "By tomorrow, they will have built the bridge.",
+    "By tomorrow, they have built the bridge."
+   ],
+   "answer": 4,
+   "why": "내일이라는 미래 시점까지 완료될 일이므로 미래완료 will have built를 쓴다. will build는 단순 미래라 '다 지었을 것이다'라는 완료의 뜻을 담지 못한다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? 나는 아침부터 이 문제를 풀고 있는 중이다.",
+   "choices": [
+    "I have been solved this problem since this morning.",
+    "I had solved this problem since this morning.",
+    "I solve this problem since this morning.",
+    "I am solving this problem since this morning.",
+    "I have been solving this problem since this morning."
+   ],
+   "answer": 5,
+   "why": "아침부터 지금까지 계속되는 동작이므로 현재완료진행 have been solving을 쓴다. since가 있으므로 현재시제나 현재진행형은 쓸 수 없다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The children ____ in the garden all afternoon, and they don't want to come in.",
+   "choices": [
+    "have been playing",
+    "have being playing",
+    "are playing",
+    "has been playing",
+    "have been played"
+   ],
+   "answer": 1,
+   "why": "오후 내내 지금까지 이어지는 동작이므로 현재완료진행 have been playing을 쓴다. 주어가 복수이므로 has는 쓸 수 없다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Our team ____ hard for the final match since January.",
+   "choices": [
+    "has training",
+    "has been training",
+    "has been trained",
+    "is training",
+    "have been training"
+   ],
+   "answer": 2,
+   "why": "1월부터 지금까지 계속 훈련해 오고 있으므로 현재완료진행이며, 주어 Our team은 단수 취급하므로 has been training이다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The road ____ since the accident happened last week.",
+   "choices": [
+    "is closing",
+    "have been closed",
+    "has been closed",
+    "has closed",
+    "has been closing"
+   ],
+   "answer": 3,
+   "why": "도로는 폐쇄되는 대상이므로 현재완료 수동태 has been closed를 쓴다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? By the time she turns thirty, Amy ____ in five different countries.",
+   "choices": [
+    "has lived",
+    "will have been lived",
+    "will living",
+    "will have lived",
+    "will live"
+   ],
+   "answer": 4,
+   "why": "서른이 되는 미래 시점까지의 경험을 나타내므로 미래완료 will have lived이다. live는 자동사이므로 수동태로 쓸 수 없다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Look at the kitchen! Someone ____ cookies.",
+   "choices": [
+    "has been baked",
+    "is baked",
+    "have been baking",
+    "has baking",
+    "has been baking"
+   ],
+   "answer": 5,
+   "why": "지금 눈앞의 흔적으로 보아 조금 전까지 계속된 동작이므로 현재완료진행 has been baking을 쓴다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? This song ____ more than a million times online.",
+   "choices": [
+    "has been downloaded",
+    "has downloaded",
+    "has been downloading",
+    "is downloading",
+    "have been downloaded"
+   ],
+   "answer": 1,
+   "why": "노래는 내려받아지는 대상이므로 현재완료 수동태 has been downloaded가 알맞다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? By the end of the semester, we ____ ten English books.",
+   "choices": [
+    "will be read",
+    "will have read",
+    "will have readed",
+    "will reading",
+    "have been read"
+   ],
+   "answer": 2,
+   "why": "학기 말이라는 미래 시점까지의 완료를 나타내므로 미래완료 will have read이다. read의 과거분사는 read이며 readed는 없는 형태이다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? My father ____ the same car since 2010.",
+   "choices": [
+    "has been owned",
+    "have owned",
+    "has owned",
+    "has been owning",
+    "is owning"
+   ],
+   "answer": 3,
+   "why": "own은 소유를 나타내는 상태동사라 진행형으로 쓰지 않으므로 현재완료 has owned를 쓴다. has been owned는 '소유되어 왔다'는 수동이라 뜻이 맞지 않는다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "(A), (B)에 들어갈 말로 알맞게 짝지어진 것은? · The kids ____(A) in the pool for an hour, and they are still in the water. · The pool ____(B) by the staff already.",
+   "choices": [
+    "(A) have been swum – (B) has been cleaned",
+    "(A) has been swimming – (B) has been cleaned",
+    "(A) have been swimming – (B) have been cleaned",
+    "(A) have been swimming – (B) has been cleaned",
+    "(A) have been swimming – (B) has cleaned"
+   ],
+   "answer": 4,
+   "why": "(A)는 지금까지 이어지는 동작이므로 현재완료진행 have been swimming, (B)는 수영장이 청소되는 대상이므로 현재완료 수동태 has been cleaned이다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "(A), (B)에 들어갈 말로 알맞게 짝지어진 것은? · By 2030, the company ____(A) fifty stores across the country. · The plan ____(B) since March.",
+   "choices": [
+    "(A) will have opened – (B) has discussed",
+    "(A) will opened – (B) has been discussed",
+    "(A) will have open – (B) has been discussed",
+    "(A) will have opened – (B) has been discussing",
+    "(A) will have opened – (B) has been discussed"
+   ],
+   "answer": 5,
+   "why": "(A)는 2030년까지 완료될 일이므로 미래완료 will have opened, (B)는 계획이 논의되는 대상이므로 현재완료 수동태 has been discussed이다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "두 문장의 빈칸에 공통으로 들어갈 말은? · The bridge has ____ repaired twice. · They have ____ waiting for us since noon.",
+   "choices": [
+    "been",
+    "being",
+    "be",
+    "was",
+    "were"
+   ],
+   "answer": 1,
+   "why": "현재완료 수동태는 <have[has] been p.p.>, 현재완료진행은 <have[has] been v-ing>로 둘 다 have[has] 뒤에 been이 온다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "두 문장의 빈칸에 공통으로 들어갈 말은? · By next month, he will ____ saved enough money. · All the doors ____ been locked, so we can't get in now.",
+   "choices": [
+    "are",
+    "have",
+    "has",
+    "been",
+    "being"
+   ],
+   "answer": 2,
+   "why": "첫 문장은 조동사 will 뒤이므로 원형 have가 오고(미래완료 will have p.p.), 둘째 문장은 주어가 복수 All the doors이므로 have been locked이다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은? A: Are you still reading that book? B: Yes. I ____ it since Monday.",
+   "choices": [
+    "have been read",
+    "has been reading",
+    "have been reading",
+    "am reading",
+    "read"
+   ],
+   "answer": 3,
+   "why": "월요일부터 지금까지 계속 읽고 있으므로 현재완료진행 have been reading을 쓴다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은? A: The floor looks great! B: Right. It ____ this morning.",
+   "choices": [
+    "is waxing",
+    "have been waxed",
+    "has been waxing",
+    "has been waxed",
+    "has waxed"
+   ],
+   "answer": 4,
+   "why": "바닥은 왁스칠을 받는 대상이므로 현재완료 수동태 has been waxed가 알맞다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은? A: Will you be here at seven? B: No, I ____ home by then.",
+   "choices": [
+    "will have went",
+    "have gone",
+    "will going",
+    "will have been gone",
+    "will have gone"
+   ],
+   "answer": 5,
+   "why": "일곱 시라는 미래 시점 전에 완료될 일이므로 미래완료 will have gone이다. go의 과거분사는 gone이다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은? A: Why are your hands so dirty? B: I ____ my bike.",
+   "choices": [
+    "have been fixing",
+    "have been fixed",
+    "am fixed",
+    "has been fixing",
+    "have fixing"
+   ],
+   "answer": 1,
+   "why": "방금 전까지 계속해 온 동작의 결과가 지금 드러나 있으므로 현재완료진행 have been fixing을 쓴다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ⓐ The homework has been done. ⓑ She has been sleep for two hours. ⓒ By June, we will have moved. ⓓ The car has been washing by my dad. ⓔ They have been talking since noon.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ⓐⓒⓔ가 옳다. ⓑ는 has been sleeping, ⓓ는 has been washed로 고쳐야 한다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ⓐ It has been snowing since morning. ⓑ The letters have been wrote. ⓒ He will have arrive by six. ⓓ My phone has been fixed. ⓔ We have been knowing her for years.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ⓐⓓ가 옳다. ⓑ는 have been written, ⓒ는 will have arrived, ⓔ는 상태동사 know를 써서 have known으로 고쳐야 한다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The scientists ____ the data since last week, and they are not done yet.",
+   "choices": [
+    "have analyzing",
+    "have been analyzing",
+    "have been analyzed",
+    "are analyzed",
+    "has been analyzing"
+   ],
+   "answer": 2,
+   "why": "지난주부터 지금까지 계속되는 동작이므로 현재완료진행 have been analyzing을 쓴다. 분석하는 주체가 과학자들이므로 수동태는 맞지 않는다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? By the time the movie ends, we ____ here for three hours.",
+   "choices": [
+    "will sitting",
+    "will have sitting",
+    "will have been sitting",
+    "will be sat",
+    "have been sitting"
+   ],
+   "answer": 3,
+   "why": "미래의 한 시점까지 계속 이어지는 동작이므로 미래완료진행 <will have been v-ing>를 쓴다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오. By next Friday, I ____ (finish) all my exams.",
+   "answer": "will have finished",
+   "why": "다음 주 금요일이라는 미래 시점까지 완료될 일이므로 미래완료 <will have p.p.>를 쓴다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재완료진행형으로 바꿔 쓰시오. It ____ (rain) for three hours, and it is still raining now.",
+   "answer": "has been raining",
+   "why": "세 시간 전부터 지금까지 계속되는 일이므로 현재완료진행 <has been v-ing>를 쓴다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오. The floor ____ (clean) twice since this morning.",
+   "answer": "has been cleaned",
+   "why": "since가 있어 현재까지 이어지는 일을 나타내고 바닥은 청소되는 대상이므로 현재완료 수동태 <has been p.p.>를 쓴다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오. Two new bridges ____ (build) in this city since 2020.",
+   "answer": "have been built",
+   "why": "다리는 지어지는 대상이고 주어가 복수이므로 현재완료 수동태 have been built를 쓴다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 어법상 알맞은 것을 골라 쓰시오. We (have been waiting / have been waited) here since noon.",
+   "answer": "have been waiting",
+   "why": "wait는 자동사라 수동태로 쓸 수 없고, 정오부터 지금까지 이어지는 동작이므로 현재완료진행 have been waiting이다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 어법상 알맞은 것을 골라 쓰시오. The song (has downloaded / has been downloaded) a million times.",
+   "answer": "has been downloaded",
+   "why": "노래는 내려받아지는 대상이므로 현재완료 수동태 has been downloaded를 쓴다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 어법상 알맞은 것을 골라 쓰시오. By tomorrow, she (will have finished / will have finish) the whole series.",
+   "answer": "will have finished",
+   "why": "미래완료는 <will have p.p.>이므로 have 뒤에는 과거분사 finished가 와야 한다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. He <u>has been work</u> at the bakery since March.",
+   "answer": "has been working",
+   "why": "현재완료진행은 <has been v-ing>이므로 work를 working으로 고친다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. The tickets <u>have been sell</u> out already.",
+   "answer": "have been sold",
+   "why": "현재완료 수동태는 <have been p.p.>이므로 sell의 과거분사 sold를 써야 한다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. By next week, they <u>will have arrive</u> in Paris.",
+   "answer": "will have arrived",
+   "why": "미래완료는 <will have p.p.>이므로 arrive를 arrived로 고친다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. She <u>has been knowing</u> my sister for ten years.",
+   "answer": "has known",
+   "why": "know는 상태동사라 진행형으로 쓰지 않으므로 현재완료 has known으로 고친다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. My laptop <u>has repaired</u> twice this year.",
+   "answer": "has been repaired",
+   "why": "노트북은 수리되는 대상이므로 현재완료 수동태 has been repaired로 고쳐야 한다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 수동태로 바꿔 쓰시오. (by구는 쓰지 말 것) Someone has cleaned the windows.",
+   "answer": "The windows have been cleaned.",
+   "why": "현재완료의 수동태는 <have[has] been p.p.>이며, 주어가 복수 The windows이므로 have been cleaned로 쓴다.",
+   "alt": [
+    "The windows have been cleaned"
+   ],
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 수동태로 바꿔 쓰시오. (by구는 쓰지 말 것) They have painted the fence.",
+   "answer": "The fence has been painted.",
+   "why": "목적어 the fence를 주어로 올리고 현재완료 수동태 has been painted를 쓴다. 막연한 행위자 they는 생략한다.",
+   "alt": [
+    "The fence has been painted"
+   ],
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 수동태로 바꿔 쓰시오. (by구는 쓰지 말 것) The company has hired three new designers.",
+   "answer": "Three new designers have been hired.",
+   "why": "목적어를 주어로 바꾸면 복수이므로 have been hired가 된다.",
+   "alt": [
+    "Three new designers have been hired"
+   ],
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오. By 2030, the town ____ (change) completely.",
+   "answer": "will have changed",
+   "why": "2030년이라는 미래 시점까지의 변화 결과이므로 미래완료 will have changed를 쓴다. change는 여기서 '변하다'라는 자동사이다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. The road has ____ closed since the storm.",
+   "answer": "been",
+   "why": "현재완료 수동태는 <has been p.p.>이므로 has와 closed 사이에 been이 필요하다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. We have ____ studying for two hours.",
+   "answer": "been",
+   "why": "현재완료진행은 <have been v-ing>이므로 have와 studying 사이에 been을 쓴다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. By six o'clock, the guests will ____ left.",
+   "answer": "have",
+   "why": "미래완료는 <will have p.p.>이므로 조동사 will 뒤에 원형 have가 온다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오. By the time you ____ (get) home, I will have cooked dinner.",
+   "answer": "get",
+   "why": "시간을 나타내는 부사절에서는 미래의 일이라도 현재시제로 쓰므로 get이 알맞다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The committee ____ the proposal for weeks, but it still has not reached a conclusion.",
+   "choices": [
+    "have been reviewing",
+    "has reviewing",
+    "has been reviewing",
+    "has been reviewed",
+    "is reviewing"
+   ],
+   "answer": 3,
+   "why": "몇 주 전부터 지금까지 계속되는 동작이므로 현재완료진행을 쓰고, committee는 단수 취급하므로 has been reviewing이다. 뒤에 목적어 the proposal이 있으므로 수동태는 불가능하다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? By the time the new library opens next fall, the old building ____.",
+   "choices": [
+    "will have been demolished",
+    "will have demolished",
+    "has been demolished",
+    "will be demolishing",
+    "will have been demolishing"
+   ],
+   "answer": 1,
+   "why": "건물은 철거되는 대상이고 새 도서관이 문을 여는 미래 시점까지 완료될 일이므로 미래완료 수동태 <will have been p.p.>를 쓴다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Since the new subway line opened, the number of visitors ____ steadily.",
+   "choices": [
+    "has been risen",
+    "is risen",
+    "have been rising",
+    "has rising",
+    "has been rising"
+   ],
+   "answer": 5,
+   "why": "rise는 자동사라 수동태로 쓸 수 없고, 개통 이후 지금까지 계속되는 변화이므로 현재완료진행 has been rising이 알맞다. the number of ~는 단수 취급한다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? More than three thousand trees ____ along the river since the project began.",
+   "choices": [
+    "have been planted",
+    "have planted",
+    "has been planted",
+    "have been planting",
+    "are planting"
+   ],
+   "answer": 1,
+   "why": "나무는 심어지는 대상이고 주어가 복수이므로 현재완료 수동태 have been planted를 쓴다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? If the current trend continues, sea levels ____ by nearly a meter by the end of the century.",
+   "choices": [
+    "will rising",
+    "will have risen",
+    "will have raised",
+    "have risen",
+    "will have been risen"
+   ],
+   "answer": 2,
+   "why": "세기말이라는 미래 시점까지의 변화이므로 미래완료 will have risen이다. rise는 자동사이므로 수동태가 불가능하고, raise는 목적어가 필요한 타동사이다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? Researchers ①<u>have been studying</u> the effect of sleep on memory ②<u>for</u> more than a decade, and their findings ③<u>has been published</u> ④<u>in</u> several major journals ⑤<u>since</u> 2015.",
+   "choices": [
+    "have been studying",
+    "for",
+    "has been published",
+    "in",
+    "since"
+   ],
+   "answer": 3,
+   "why": "주어 their findings가 복수이므로 have been published로 고쳐야 한다. 나머지는 기간을 나타내는 for, 시작점을 나타내는 since와 함께 바르게 쓰였다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? By the time the ship ①<u>reaches</u> the port tomorrow, the crew ②<u>will have worked</u> for thirty hours ③<u>without</u> a break, and the cargo ④<u>will have been check</u> ⑤<u>twice</u>.",
+   "choices": [
+    "reaches",
+    "will have worked",
+    "without",
+    "will have been check",
+    "twice"
+   ],
+   "answer": 4,
+   "why": "미래완료 수동태는 <will have been p.p.>이므로 check를 checked로 고쳐야 한다. 시간 부사절의 reaches는 미래 대신 현재시제를 쓴 것으로 옳다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? The museum ①<u>has been closed</u> ②<u>since</u> March, but the staff ③<u>have been preparing</u> a new exhibition ④<u>that</u> ⑤<u>will have opened</u> next month.",
+   "choices": [
+    "has been closed",
+    "since",
+    "have been preparing",
+    "that",
+    "will have opened"
+   ],
+   "answer": 5,
+   "why": "next month는 완료의 기준이 되는 시점이 아니라 단순히 미래의 때를 나타내므로 will open으로 고쳐야 한다. 미래완료는 by next month처럼 '~까지'라는 기준 시점이 있을 때 쓴다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Ever since he moved to Busan, Daniel ____ online classes every evening.",
+   "choices": [
+    "had been taking",
+    "has taking",
+    "has been taking",
+    "has been taken",
+    "is taking"
+   ],
+   "answer": 3,
+   "why": "과거의 한 시점 이후 지금까지 반복·계속되는 일이므로 현재완료진행 has been taking을 쓴다. 뒤에 목적어가 있어 수동태는 불가능하다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "괄호 안에서 어법상 알맞은 것은? By the time the rescue team ( ), the hikers will have spent two nights in the cold.",
+   "choices": [
+    "will have arrived",
+    "arriving",
+    "arrived",
+    "arrives",
+    "will arrive"
+   ],
+   "answer": 4,
+   "why": "by the time이 이끄는 시간 부사절에서는 미래의 일을 현재시제로 나타내므로 arrives가 옳다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 고르시오.",
+   "choices": [
+    "The road have been repaired twice this year.",
+    "The road is been repaired twice this year.",
+    "The road has repaired twice this year.",
+    "The road has been repairing twice this year.",
+    "The road has been repaired twice this year."
+   ],
+   "answer": 5,
+   "why": "도로는 수리되는 대상이므로 현재완료 수동태 <has been p.p.>가 옳다. has repaired는 능동이라 뜻이 반대이고, has been repairing은 '수리해 오고 있다'는 능동 진행이다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 바른 것은?",
+   "choices": [
+    "She has belonged to the club since 2019.",
+    "She is belonging to the club since 2019.",
+    "She has been belonged to the club since 2019.",
+    "She had been belonging to the club since 2019.",
+    "She has been belonging to the club since 2019."
+   ],
+   "answer": 1,
+   "why": "belong은 상태를 나타내는 동사라 진행형과 수동태로 쓰지 않으므로 현재완료 has belonged가 옳다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 어색한 문장을 고르시오.",
+   "choices": [
+    "By Friday, the team will have finished the survey.",
+    "The results have been analyze by two experts.",
+    "We have been living here for six years.",
+    "The report has been sent to all members.",
+    "They have been discussing the issue since noon."
+   ],
+   "answer": 2,
+   "why": "현재완료 수동태는 <have been p.p.>이므로 analyze를 analyzed로 고쳐야 한다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳지 않은 것은?",
+   "choices": [
+    "By next June, I will have been in this club for three years.",
+    "The wall has been painted white.",
+    "The letters has been delivered already.",
+    "We have been waiting since eight o'clock.",
+    "By the time she calls, I will have left."
+   ],
+   "answer": 3,
+   "why": "주어 The letters가 복수이므로 have been delivered로 고쳐야 한다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? 이 소설은 이미 12개 언어로 번역되었다.",
+   "choices": [
+    "This novel is already been translated into twelve languages.",
+    "This novel have already been translated into twelve languages.",
+    "This novel has already translated into twelve languages.",
+    "This novel has already been translated into twelve languages.",
+    "This novel has already been translating into twelve languages."
+   ],
+   "answer": 4,
+   "why": "소설은 번역되는 대상이므로 현재완료 수동태 has been translated를 쓰고, already는 has와 been 사이에 온다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? 내년 이맘때면 그는 그 회사에서 10년 동안 일해 온 것이 될 것이다.",
+   "choices": [
+    "By this time next year, he has worked at the company for ten years.",
+    "By this time next year, he will have been worked at the company for ten years.",
+    "By this time next year, he will be working at the company for ten years.",
+    "By this time next year, he will work at the company for ten years.",
+    "By this time next year, he will have worked at the company for ten years."
+   ],
+   "answer": 5,
+   "why": "미래의 한 시점까지 이어지는 기간을 나타내므로 미래완료 will have worked를 쓴다. work는 자동사로 쓰였으므로 수동태는 불가능하다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? 그들은 세 시간째 그 문제를 논의하고 있는 중이다.",
+   "choices": [
+    "They have been discussing the problem for three hours.",
+    "They have been discussed the problem for three hours.",
+    "They had been discussing the problem for three hours.",
+    "They discuss the problem for three hours.",
+    "They are discussing the problem for three hours."
+   ],
+   "answer": 1,
+   "why": "과거에 시작해 지금까지 계속되는 동작이므로 현재완료진행 have been discussing이 알맞다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은? A: Has the roof been fixed yet? B: Not yet. The workers ____ on it since Monday.",
+   "choices": [
+    "have working",
+    "have been working",
+    "have been worked",
+    "are worked",
+    "has been working"
+   ],
+   "answer": 2,
+   "why": "월요일부터 지금까지 계속되는 동작이므로 현재완료진행이고, 주어가 복수이므로 have been working이다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은? A: Do you think we'll be late? B: Don't worry. By the time we get there, only the opening speech ____.",
+   "choices": [
+    "will ending",
+    "would end",
+    "will have ended",
+    "will have been ended",
+    "has ended"
+   ],
+   "answer": 3,
+   "why": "우리가 도착하는 미래 시점 이전에 끝나 있을 일이므로 미래완료 will have ended이다. end는 여기서 자동사이므로 수동태로 쓰지 않는다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 문장의 빈칸에 공통으로 들어갈 말은? · The samples ____ been sent to the lab this morning. · Scientists ____ been searching for a cure for decades, and the work still continues today.",
+   "choices": [
+    "been",
+    "being",
+    "were",
+    "have",
+    "has"
+   ],
+   "answer": 4,
+   "why": "두 문장 모두 주어가 복수이므로 현재완료 수동태 have been sent, 현재완료진행 have been searching의 have가 공통으로 들어간다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 문장의 빈칸에 공통으로 들어갈 말은? · By next week, the report will ____ been revised twice. · All the doors ____ been locked, so nobody can enter now.",
+   "choices": [
+    "has",
+    "been",
+    "being",
+    "are",
+    "have"
+   ],
+   "answer": 5,
+   "why": "첫 문장은 조동사 will 뒤라 원형 have가 오고, 둘째 문장은 주어가 복수이므로 have been locked이다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ⓐ The letters have been delivering since morning. ⓑ By the time you read this, I will have left the country. ⓒ He has been repairing bicycles for twenty years. ⓓ The theory has been prove by many experiments. ⓔ She has been owning that shop since 2015.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ⓑⓒ가 옳다. ⓐ는 have been delivered, ⓓ는 has been proved[proven], ⓔ는 상태동사 own을 써서 has owned로 고쳐야 한다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ⓐ Our school has been rebuilt twice. ⓑ They will have been finished the work by noon. ⓒ It has been snowing all day. ⓓ The children have been taken care of by their aunt. ⓔ By tomorrow, the letter will have arrive.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ⓐⓒⓓ가 옳다. ⓑ는 목적어가 있으므로 will have finished, ⓔ는 will have arrived로 고쳐야 한다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "(A), (B)에 들어갈 말로 알맞게 짝지어진 것은? · The old theater ____(A) and will reopen in May. · Volunteers ____(B) donations since last month.",
+   "choices": [
+    "(A) has been renovated – (B) have been collecting",
+    "(A) has been renovated – (B) have been collected",
+    "(A) has been renovating – (B) have been collected",
+    "(A) has renovated – (B) have been collecting",
+    "(A) has been renovating – (B) have been collecting"
+   ],
+   "answer": 1,
+   "why": "(A)의 극장은 개조되는 대상이므로 현재완료 수동태, (B)는 자원봉사자들이 모으는 주체이고 지금도 계속되므로 현재완료진행이다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "(A), (B)에 들어갈 말로 알맞게 짝지어진 것은? · By the time the semester ____(A), we ____(B) all twelve units.",
+   "choices": [
+    "(A) ended – (B) will have covered",
+    "(A) ends – (B) will have covered",
+    "(A) ends – (B) will have been covered",
+    "(A) will end – (B) will have covered",
+    "(A) will end – (B) will have been covered"
+   ],
+   "answer": 2,
+   "why": "시간 부사절에서는 미래를 현재시제로 쓰므로 ends, 주절은 그 시점까지의 완료를 나타내는 미래완료이며 뒤에 목적어가 있으므로 능동 will have covered이다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The number of students taking the course ____ steadily since the new teacher arrived.",
+   "choices": [
+    "is increasing",
+    "has increasing",
+    "has been increasing",
+    "have been increasing",
+    "has been increased"
+   ],
+   "answer": 3,
+   "why": "<the number of+복수명사>는 단수 취급하고, 새 선생님이 온 이후 지금까지 계속되는 변화이므로 has been increasing이다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Nothing ____ about the missing files so far.",
+   "choices": [
+    "have been said",
+    "has been saying",
+    "is said",
+    "has been said",
+    "has said"
+   ],
+   "answer": 4,
+   "why": "Nothing은 단수 취급하고 말은 '해지는' 대상이므로 현재완료 수동태 has been said를 쓴다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Her latest album ____ over five million copies since its release.",
+   "choices": [
+    "has been sold",
+    "has been selling",
+    "have sold",
+    "is sold",
+    "has sold"
+   ],
+   "answer": 5,
+   "why": "뒤에 목적어 over five million copies가 있으므로 수동태는 쓸 수 없다. sell이 '(얼마어치를) 팔다'라는 뜻으로 쓰인 능동 현재완료 has sold가 옳다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Workers ____ the tunnel since 2015, and they are still not finished.",
+   "choices": [
+    "have been digging",
+    "have been dug",
+    "has been digging",
+    "are dug",
+    "have digging"
+   ],
+   "answer": 1,
+   "why": "2015년부터 지금까지 계속되는 동작이고 뒤에 목적어가 있으므로 현재완료진행 have been digging이다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? By the time the results ____ announced, most of the candidates will have gone home.",
+   "choices": [
+    "being",
+    "are",
+    "will be",
+    "have been",
+    "will have been"
+   ],
+   "answer": 2,
+   "why": "시간 부사절에서는 미래의 일이라도 현재시제로 나타내므로 수동태 현재시제 are announced가 옳다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? Since the factory opened, the town ①<u>has changed</u> a lot; new roads ②<u>have been built</u>, and hundreds of jobs ③<u>have created</u> ④<u>for</u> local ⑤<u>residents</u>.",
+   "choices": [
+    "has changed",
+    "have been built",
+    "have created",
+    "for",
+    "residents"
+   ],
+   "answer": 3,
+   "why": "일자리는 만들어지는 대상이므로 have been created로 고쳐야 한다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? My grandfather ①<u>has been collecting</u> stamps ②<u>since</u> he ③<u>was</u> a boy, and his collection ④<u>has been growed</u> ⑤<u>every</u> year.",
+   "choices": [
+    "has been collecting",
+    "since",
+    "was",
+    "has been growed",
+    "every"
+   ],
+   "answer": 4,
+   "why": "grow는 자동사로 '자라다'라는 뜻이고 과거분사는 grown이므로 has grown으로 고쳐야 한다. since가 이끄는 절에는 과거시제를 쓴다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? The results of the survey ①<u>have been analyzed</u>, and by next Monday the final report ②<u>will have been</u> ③<u>submit</u> ④<u>to</u> the ⑤<u>committee</u>.",
+   "choices": [
+    "have been analyzed",
+    "will have been",
+    "submit",
+    "to",
+    "committee"
+   ],
+   "answer": 3,
+   "why": "미래완료 수동태는 <will have been p.p.>이므로 submit을 submitted로 고쳐야 한다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 정확한 문장은?",
+   "choices": [
+    "The problem has been solving for hours.",
+    "The problem has solved by the team.",
+    "The team has been solving the problem for hours.",
+    "The team has been solved the problem for hours.",
+    "The problem has being solved for hours."
+   ],
+   "answer": 3,
+   "why": "문제를 푸는 주체가 the team이므로 능동의 현재완료진행 has been solving이 옳다. 나머지는 능동·수동 관계나 형태가 어긋난다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 틀린 것을 고르시오.",
+   "choices": [
+    "Prices have been rising since January.",
+    "The email has been forwarded to everyone.",
+    "By next spring, the trees will have grown taller.",
+    "The machine has been repairing by a technician.",
+    "We have been sitting here for half an hour."
+   ],
+   "answer": 4,
+   "why": "기계는 수리되는 대상이고 by a technician이라는 행위자가 있으므로 has been repaired로 고쳐야 한다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은? A: You look exhausted. B: I ____ boxes all morning.",
+   "choices": [
+    "have been carried",
+    "am carried",
+    "has been carrying",
+    "have carrying",
+    "have been carrying"
+   ],
+   "answer": 5,
+   "why": "아침 내내 지금까지 이어진 동작이므로 현재완료진행 have been carrying이 알맞다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은? A: When will the road be ready? B: Don't worry. By the time the festival starts, it ____.",
+   "choices": [
+    "will have been repaved",
+    "will have repaved",
+    "has been repaved",
+    "will repave",
+    "will have been repaving"
+   ],
+   "answer": 1,
+   "why": "도로는 포장되는 대상이고 축제가 시작되는 시점까지 완료될 일이므로 미래완료 수동태 will have been repaved이다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? A new safety system ____ in every classroom since the fire drill last year.",
+   "choices": [
+    "is installing",
+    "has been installed",
+    "has installed",
+    "has been installing",
+    "have been installed"
+   ],
+   "answer": 2,
+   "why": "장치는 설치되는 대상이고 주어가 단수이므로 현재완료 수동태 has been installed이다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? We ____ each other since we were in middle school.",
+   "choices": [
+    "have been known",
+    "has known",
+    "have known",
+    "have been knowing",
+    "are knowing"
+   ],
+   "answer": 3,
+   "why": "know는 상태동사라 진행형으로 쓰지 않으므로 현재완료 have known이 알맞다. have been known은 '알려져 있다'는 수동이라 뜻이 다르다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? By the end of next month, the artist ____ in three different cities.",
+   "choices": [
+    "has performed",
+    "will performing",
+    "will have performing",
+    "will have performed",
+    "will have been performed"
+   ],
+   "answer": 4,
+   "why": "다음 달 말이라는 미래 시점까지의 경험을 나타내므로 미래완료 will have performed이다. 공연하는 주체가 예술가이므로 수동태는 맞지 않는다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? 그 다리는 지난 태풍 이후로 폐쇄되어 있다.",
+   "choices": [
+    "The bridge has been closing since the last typhoon.",
+    "The bridge is been closed since the last typhoon.",
+    "The bridge had been closed since the last typhoon.",
+    "The bridge has closed since the last typhoon.",
+    "The bridge has been closed since the last typhoon."
+   ],
+   "answer": 5,
+   "why": "다리는 폐쇄되는 대상이고 그 상태가 지금까지 이어지므로 현재완료 수동태 has been closed가 알맞다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? 그 회의가 끝날 때쯤이면 우리는 두 시간 동안 이야기하고 있는 것이 될 것이다.",
+   "choices": [
+    "By the time the meeting ends, we will have been talking for two hours.",
+    "By the time the meeting ends, we have been talking for two hours.",
+    "By the time the meeting ends, we will have been talked for two hours.",
+    "By the time the meeting ends, we will talk for two hours.",
+    "By the time the meeting will end, we will have been talking for two hours."
+   ],
+   "answer": 1,
+   "why": "시간 부사절은 현재시제 ends, 주절은 미래의 한 시점까지 계속될 동작이므로 미래완료진행 will have been talking을 쓴다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "두 문장의 빈칸에 공통으로 들어갈 말은? · The wall ____ been covered with ivy for years, and it still looks green. · She ____ been jogging every morning since April.",
+   "choices": [
+    "is",
+    "has",
+    "have",
+    "been",
+    "being"
+   ],
+   "answer": 2,
+   "why": "두 문장 모두 주어가 3인칭 단수이므로 현재완료 수동태 has been covered, 현재완료진행 has been jogging의 has가 공통으로 쓰인다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ⓐ Since 2018, the park has been visited by millions of tourists. ⓑ The documents has been copied already. ⓒ By this weekend, they will have painted the whole house. ⓓ He has been studying Chinese since he was ten. ⓔ The road will have been finish by December.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ⓐⓒⓓ가 옳다. ⓑ는 주어가 복수이므로 have been copied, ⓔ는 will have been finished로 고쳐야 한다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? Over the past ten years, the company ①<u>has been expanding</u> rapidly, and more than twenty branches ②<u>have been opened</u> overseas; by 2030 it ③<u>will have become</u> one of the largest firms in Asia, ④<u>although</u> its profits ⑤<u>has fallen</u> recently.",
+   "choices": [
+    "has been expanding",
+    "have been opened",
+    "will have become",
+    "although",
+    "has fallen"
+   ],
+   "answer": 5,
+   "why": "주어 its profits가 복수이므로 have fallen으로 고쳐야 한다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Not a single word ____ since the interview began an hour ago.",
+   "choices": [
+    "has been speaking",
+    "is spoken",
+    "has been spoken",
+    "has spoken",
+    "have been spoken"
+   ],
+   "answer": 3,
+   "why": "Not a single word는 단수 취급하고 말은 '말해지는' 대상이므로 현재완료 수동태 has been spoken을 쓴다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 미래완료진행형으로 바꿔 쓰시오. By the time the delivery arrives, we ____ (wait) for over an hour.",
+   "answer": "will have been waiting",
+   "why": "미래의 한 시점까지 계속 이어지는 동작은 미래완료진행 <will have been v-ing>로 나타낸다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오. The bridge ____ (repair) three times since it was built.",
+   "answer": "has been repaired",
+   "why": "다리는 수리되는 대상이므로 현재완료 수동태 has been repaired를 쓴다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재완료진행형으로 바꿔 쓰시오. Scientists ____ (search) for a cure for decades, and the work is still going on.",
+   "answer": "have been searching",
+   "why": "수십 년 전부터 지금까지 계속되는 동작이므로 현재완료진행 have been searching이다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오. By next Christmas, my parents ____ (be) married for twenty-five years.",
+   "answer": "will have been",
+   "why": "미래의 시점까지 이어지는 상태이므로 미래완료 will have been을 쓴다. be의 과거분사는 been이다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오. All the documents ____ (translate) into English already.",
+   "answer": "have been translated",
+   "why": "서류는 번역되는 대상이고 주어가 복수이므로 현재완료 수동태 have been translated이다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. The results <u>has been announce</u> on the school website.",
+   "answer": "have been announced",
+   "why": "주어 The results가 복수이므로 have를 쓰고, 수동태이므로 announce를 과거분사 announced로 고친다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. They <u>have been discuss</u> the plan since this morning.",
+   "answer": "have been discussing",
+   "why": "현재완료진행은 <have been v-ing>이므로 discuss를 discussing으로 고친다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. By 2035, the city <u>will have build</u> three new subway lines.",
+   "answer": "will have built",
+   "why": "미래완료는 <will have p.p.>이므로 build의 과거분사 built를 써야 한다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. The old painting <u>has been belonging</u> to our family for a century.",
+   "answer": "has belonged",
+   "why": "belong은 상태동사라 진행형으로 쓰지 않으므로 현재완료 has belonged로 고친다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. By the time the guests <u>will arrive</u>, the cake will have been baked.",
+   "answer": "arrive",
+   "why": "시간을 나타내는 부사절에서는 미래의 일이라도 현재시제로 쓰므로 arrive가 옳다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 수동태로 바꿔 쓰시오. (행위자를 나타내는 by구를 포함할 것) The city has planted hundreds of trees along the river.",
+   "answer": "Hundreds of trees have been planted along the river by the city.",
+   "why": "현재완료의 수동태는 <have[has] been p.p.>이며 주어가 복수 Hundreds of trees이므로 have been planted이다.",
+   "alt": [
+    "Hundreds of trees have been planted along the river by the city"
+   ],
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 수동태로 바꿔 쓰시오. (행위자를 나타내는 by구를 포함할 것) The committee has rejected all the proposals.",
+   "answer": "All the proposals have been rejected by the committee.",
+   "why": "목적어를 주어로 올리면 복수이므로 have been rejected가 되고, 행위자는 by the committee로 나타낸다.",
+   "alt": [
+    "All the proposals have been rejected by the committee"
+   ],
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 수동태로 바꿔 쓰시오. (행위자를 나타내는 by구를 포함할 것) A famous architect has designed this concert hall.",
+   "answer": "This concert hall has been designed by a famous architect.",
+   "why": "목적어가 단수이므로 현재완료 수동태 has been designed를 쓰고 행위자를 by구로 밝힌다.",
+   "alt": [
+    "This concert hall has been designed by a famous architect"
+   ],
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오. If the rain does not stop, the river ____ (overflow) by tomorrow morning.",
+   "answer": "will have overflowed",
+   "why": "내일 아침이라는 미래 시점까지 완료될 일이므로 미래완료 will have overflowed를 쓴다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. The results have ____ published, so everyone knows them now.",
+   "answer": "been",
+   "why": "현재완료 수동태는 <have been p.p.>이므로 have와 published 사이에 been이 필요하다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. By next July, my brother will ____ been in the army for two years.",
+   "answer": "have",
+   "why": "미래완료는 <will have p.p.>이므로 will 뒤에 원형 have가 온다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 한 단어를 쓰시오. (그 소식은 아직 발표되지 않았다.) The news has not ____ announced yet.",
+   "answer": "been",
+   "why": "현재완료 수동태의 부정은 <has not been p.p.>이므로 not 뒤에 been을 쓴다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안에서 어법상 알맞은 것을 골라 쓰시오. The number of applicants (has been rising / have been rising) since the scholarship was introduced.",
+   "answer": "has been rising",
+   "why": "<the number of+복수명사>는 '~의 수'라는 뜻으로 단수 취급하므로 has been rising이 옳다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안에서 어법상 알맞은 것을 골라 쓰시오. Her novel (has sold / has been sold) more than a million copies worldwide.",
+   "answer": "has sold",
+   "why": "뒤에 목적어 more than a million copies가 있으므로 수동태를 쓸 수 없고 능동 has sold가 옳다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안에서 어법상 알맞은 것을 골라 쓰시오. By the time the concert (starts / will start), the hall will have been filled with fans.",
+   "answer": "starts",
+   "why": "시간 부사절에서는 미래의 일을 현재시제로 나타내므로 starts가 옳다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은? ㄱ. By the time the committee reviews the draft, the author will have revised it twice. ㄴ. The manuscript has been sat on his desk for weeks. ㄷ. Little attention has been paid to the issue since then.",
+   "choices": [
+    "ㄱ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 시간 부사절의 현재시제와 미래완료가 옳게 짝지어졌고, ㄷ은 Little attention이 단수 취급되는 현재완료 수동태이다. ㄴ의 sit은 자동사라 수동태로 쓸 수 없으므로 has been sitting이 되어야 한다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은? ㄱ. Since the 1990s, the glacier has been shrinking at an alarming rate. ㄴ. By the end of the century, much of the ice will have disappeared. ㄷ. Numerous warnings have issued by climate scientists.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 현재까지 계속되는 변화를 나타내는 현재완료진행, ㄴ은 미래 시점까지의 완료를 나타내는 미래완료로 옳다. ㄷ은 경고가 '발표되는' 대상이므로 have been issued여야 한다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은? ㄱ. He has been possessing remarkable patience since childhood. ㄴ. Not until recently has the treatment been approved for children. ㄷ. By the time you finish reading this page, thousands of messages will have been sent worldwide.",
+   "choices": [
+    "ㄱ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄴ은 부정어구가 문두에 와 <has+주어+p.p.>로 도치된 현재완료 수동태이고, ㄷ은 미래완료 수동태로 옳다. ㄱ의 possess는 상태동사라 진행형으로 쓰지 않으므로 has possessed여야 한다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? For the past three decades, oceanographers ①<u>have been tracking</u> the movement of plastic debris across the Pacific. Millions of tons ②<u>have been dumped</u> into the sea since the 1950s, and much of it ③<u>has broken down</u> into tiny particles. If current rates continue, the amount of plastic ④<u>will have been tripled</u> by 2050, and marine species ⑤<u>will have suffered</u> irreversible damage.",
+   "choices": [
+    "have been tracking",
+    "have been dumped",
+    "has broken down",
+    "will have been tripled",
+    "will have suffered"
+   ],
+   "answer": 4,
+   "why": "여기서 triple은 '세 배가 되다'라는 자동사이므로 수동태로 쓸 수 없고 will have tripled가 되어야 한다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? The vaccine ①<u>has been tested</u> on more than ten thousand volunteers, and no serious side effects ②<u>have been reported</u> so far. Researchers ③<u>have been monitoring</u> the participants since last spring, and by the end of this year they ④<u>will have collected</u> data for eighteen months. Approval ⑤<u>has expected</u> in early January.",
+   "choices": [
+    "has been tested",
+    "have been reported",
+    "have been monitoring",
+    "will have collected",
+    "has expected"
+   ],
+   "answer": 5,
+   "why": "승인은 '기대되는' 대상이므로 is expected 또는 has been expected로 고쳐야 한다. 나머지는 현재완료 수동태·현재완료진행·미래완료가 알맞게 쓰였다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? Ever since the factory ①<u>has closed</u>, the town's population ②<u>has been declining</u>. Nearly half of the shops on Main Street ③<u>have been shut down</u>, and by next summer the last bank branch ④<u>will have moved</u> to a neighboring city. Local leaders ⑤<u>have been searching</u> for investors for years.",
+   "choices": [
+    "has closed",
+    "has been declining",
+    "have been shut down",
+    "will have moved",
+    "have been searching"
+   ],
+   "answer": 1,
+   "why": "(ever) since가 이끄는 부사절에는 기준이 되는 과거 시점을 나타내는 과거시제를 쓰므로 closed로 고쳐야 한다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? Although the theory ①<u>has been challenged</u> repeatedly, it ②<u>has been remaining</u> the standard explanation for over fifty years. Dozens of experiments ③<u>have failed</u> to disprove it, and by the time a better model ④<u>appears</u>, generations of students ⑤<u>will have learned</u> it as fact.",
+   "choices": [
+    "has been challenged",
+    "has been remaining",
+    "have failed",
+    "appears",
+    "will have learned"
+   ],
+   "answer": 2,
+   "why": "remain은 상태를 나타내는 동사라 진행형으로 쓰지 않으므로 has remained로 고쳐야 한다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? The old lighthouse ①<u>has stood</u> on the cliff since 1873. It ②<u>has been struck</u> by lightning at least four times, and its lamp ③<u>has been replacing</u> twice. Volunteers ④<u>have been raising</u> money for repairs since March, and by autumn the restoration ⑤<u>will have been completed</u>.",
+   "choices": [
+    "has stood",
+    "has been struck",
+    "has been replacing",
+    "have been raising",
+    "will have been completed"
+   ],
+   "answer": 3,
+   "why": "램프는 교체되는 대상이므로 현재완료 수동태 has been replaced로 고쳐야 한다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법이 옳은 문장을 고르시오.",
+   "choices": [
+    "Rarely has such a discovery made in recent years.",
+    "Rarely have such a discovery been made in recent years.",
+    "Rarely has such a discovery been make in recent years.",
+    "Rarely has such a discovery being made in recent years.",
+    "Rarely has such a discovery been made in recent years."
+   ],
+   "answer": 5,
+   "why": "부정어 Rarely가 문두에 오면 <has+주어+p.p.>로 도치되고, 발견은 '이루어지는' 대상이므로 현재완료 수동태 has been made가 옳다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 알맞은 문장은?",
+   "choices": [
+    "It has been three years since he left the company.",
+    "It has been three years since he has been leaving the company.",
+    "It was three years since he leaves the company.",
+    "It has been three years since he had left the company.",
+    "It is three years since he has left the company."
+   ],
+   "answer": 1,
+   "why": "<It has been+기간+since+주어+과거동사> 구문이다. since절에는 기준이 되는 과거 시점을 나타내는 과거시제를 쓴다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 바르지 않은 것은?",
+   "choices": [
+    "Scientists have been arguing about the cause for decades.",
+    "The samples have been storing in a cold room since Monday.",
+    "By next week, the results will have been verified by an outside lab.",
+    "The tunnel will have been completed by the time the Olympics begin.",
+    "Hardly any progress has been made since the last meeting."
+   ],
+   "answer": 2,
+   "why": "표본은 보관되는 대상이므로 have been stored로 고쳐야 한다. 나머지는 미래완료 수동태·현재완료 수동태·현재완료진행이 알맞게 쓰였다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞지 않는 문장은?",
+   "choices": [
+    "Prices have been falling steadily since March.",
+    "The documents have been kept in a safe since the trial ended.",
+    "She has been resembling her mother more and more.",
+    "By the time the sun sets, we will have hiked twenty kilometers.",
+    "Two of the paintings have been restored by experts."
+   ],
+   "answer": 3,
+   "why": "resemble은 상태동사라 진행형·수동태로 쓰지 않으므로 She has come to resemble ~ 또는 She resembles ~로 고쳐야 한다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ⓐ Not one of the proposals has been accepted so far. ⓑ The number of complaints have been rising since June. ⓒ By the time the film ends, the audience will have sat for three hours. ⓓ The theory has been existing for over a century. ⓔ Much of the evidence has been destroyed.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ⓐⓒⓔ가 옳다. ⓑ는 the number of ~가 단수 취급이므로 has been rising, ⓓ는 exist가 상태동사이므로 has existed로 고쳐야 한다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ⓐ The bridge has been under repair since the flood. ⓑ By next month, he will have been teaching for thirty years. ⓒ All the equipment have been checked twice. ⓓ Little has been done to solve the problem. ⓔ The letter will have been sent by tomorrow.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "ⓐⓑⓓⓔ가 옳다. ⓒ의 equipment는 셀 수 없는 명사로 단수 취급하므로 has been checked로 고쳐야 한다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? 그 조약이 서명된 이래로 두 나라 사이에 어떤 충돌도 보고되지 않았다.",
+   "choices": [
+    "Since the treaty signed, no conflict have been reported between the two countries.",
+    "Since the treaty was signed, no conflict had been reported between the two countries.",
+    "Since the treaty was signed, no conflict has reported between the two countries.",
+    "Since the treaty was signed, no conflict has been reported between the two countries.",
+    "Since the treaty has been signed, no conflict has been reporting between the two countries."
+   ],
+   "answer": 4,
+   "why": "since절은 과거시제, 주절은 지금까지의 결과를 나타내는 현재완료를 쓰며 충돌은 보고되는 대상이므로 수동태 has been reported이다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? 이 프로젝트가 끝날 때쯤이면 우리 팀은 6개월 동안 그 자료를 분석해 온 것이 될 것이다.",
+   "choices": [
+    "By the time this project ends, our team will have been analyzed the data for six months.",
+    "By the time this project ended, our team has been analyzing the data for six months.",
+    "By the time this project ends, our team will analyze the data for six months.",
+    "By the time this project will end, our team will have been analyzing the data for six months.",
+    "By the time this project ends, our team will have been analyzing the data for six months."
+   ],
+   "answer": 5,
+   "why": "시간 부사절은 현재시제, 주절은 미래의 시점까지 계속될 동작이므로 미래완료진행 will have been analyzing을 쓴다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Only recently ____ the manuscript been identified as genuine, and scholars are now studying it closely.",
+   "choices": [
+    "has",
+    "have",
+    "is",
+    "was",
+    "did"
+   ],
+   "answer": 1,
+   "why": "Only recently라는 부정어구가 문두에 와서 도치되었고, 주어 the manuscript가 단수이며 현재완료 수동태이므로 has been identified가 된다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Never before ____ so many people been vaccinated in such a short period, and the campaign is still going on.",
+   "choices": [
+    "was",
+    "have",
+    "has",
+    "is",
+    "are"
+   ],
+   "answer": 2,
+   "why": "Never before가 문두에 와 도치된 현재완료 수동태이며, 주어 so many people이 복수이므로 have been vaccinated이다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? It is the first time that the award ____ to a student from our school.",
+   "choices": [
+    "had been given",
+    "is giving",
+    "has been given",
+    "has given",
+    "was giving"
+   ],
+   "answer": 3,
+   "why": "<It is the first time that ~> 뒤에는 현재완료를 쓰고, 상은 '주어지는' 대상이므로 수동태 has been given이 알맞다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? By the time the investigation is complete, more than a hundred witnesses ____.",
+   "choices": [
+    "have been interviewed",
+    "will be interviewing",
+    "will have been interviewing",
+    "will have been interviewed",
+    "will have interviewed"
+   ],
+   "answer": 4,
+   "why": "목격자는 면담을 받는 대상이고 조사가 끝나는 미래 시점까지 완료될 일이므로 미래완료 수동태 will have been interviewed이다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "두 문장의 빈칸에 공통으로 들어갈 말은? · Not until this year ____ the full text been published. · The government ____ been criticized for its slow response, and the pressure continues today.",
+   "choices": [
+    "have",
+    "been",
+    "being",
+    "was",
+    "has"
+   ],
+   "answer": 5,
+   "why": "첫 문장은 부정어구 도치 뒤의 단수 주어, 둘째 문장도 단수 주어 The government이므로 현재완료 수동태의 has가 공통으로 들어간다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? Since the app ①<u>was launched</u> in 2019, it ②<u>has been downloaded</u> more than fifty million times. Its developers ③<u>have been adding</u> new features every month, and by the end of this year the number of users ④<u>will have been doubled</u>. Yet complaints about privacy ⑤<u>have been ignored</u>.",
+   "choices": [
+    "was launched",
+    "has been downloaded",
+    "have been adding",
+    "will have been doubled",
+    "have been ignored"
+   ],
+   "answer": 4,
+   "why": "여기서 double은 '두 배가 되다'라는 자동사이므로 수동태로 쓸 수 없고 will have doubled가 되어야 한다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? Archaeologists ①<u>have been excavated</u> the site since 2011, and thousands of artifacts ②<u>have been recovered</u>. Because the desert climate ③<u>has preserved</u> the objects so well, by the time the museum opens next year visitors ④<u>will be able to</u> see tools that ⑤<u>have been buried</u> for four thousand years.",
+   "choices": [
+    "have been excavated",
+    "have been recovered",
+    "has preserved",
+    "will be able to",
+    "have been buried"
+   ],
+   "answer": 1,
+   "why": "발굴하는 주체가 고고학자들이고 뒤에 목적어 the site가 있으므로 능동의 현재완료진행 have been excavating으로 고쳐야 한다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? The company ①<u>has been struggling</u> financially since 2020. Hundreds of employees ②<u>have been laid off</u>, and three factories ③<u>have closed</u>. If the trend continues, the firm ④<u>will have lost</u> half its market share by 2027, a decline that ⑤<u>has been begun</u> long before the pandemic.",
+   "choices": [
+    "has been struggling",
+    "have been laid off",
+    "have closed",
+    "will have lost",
+    "has been begun"
+   ],
+   "answer": 5,
+   "why": "long before the pandemic이라는 과거 이전 시점이 있으므로 현재완료가 아니라 과거완료 had begun이 되어야 하며, begin은 여기서 자동사이므로 수동태도 쓸 수 없다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은? ㄱ. The data has been analyzed by three independent teams. ㄴ. By next year, she will have been running the company for a decade. ㄷ. Since he has arrived, everything has gone smoothly.",
+   "choices": [
+    "ㄱ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 현재완료 수동태, ㄴ은 미래완료진행으로 옳다. ㄷ의 since절에는 과거시제를 쓰므로 Since he arrived가 되어야 한다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은? ㄱ. Several attempts have been made to contact the crew. ㄴ. The temperature has been risen by two degrees since 1900. ㄷ. When the train arrives, we will have been standing here for an hour.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 현재완료 수동태, ㄷ은 시간 부사절의 현재시제와 미래완료진행이 짝지어져 옳다. ㄴ의 rise는 자동사이므로 has risen이어야 한다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은? ㄱ. It has been raining on and off since we got here. ㄴ. All of the windows has been shut. ㄷ. By the time the doctor comes, the patient will have waited for two hours.",
+   "choices": [
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄱ은 현재완료진행, ㄷ은 미래완료로 옳다. ㄴ은 <all of+복수명사>가 복수 취급이므로 have been shut이어야 한다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 문제가 없는 문장은?",
+   "choices": [
+    "The bridge was destroyed in 1943.",
+    "The bridge has destroyed in 1943.",
+    "The bridge has been destroying in 1943.",
+    "The bridge is destroyed in 1943.",
+    "The bridge has been destroyed in 1943."
+   ],
+   "answer": 1,
+   "why": "in 1943처럼 명백한 과거 시점을 나타내는 어구는 현재완료와 함께 쓸 수 없으므로 과거시제 수동태 was destroyed가 옳다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳게 쓰인 문장을 고르시오.",
+   "choices": [
+    "Two hours have passed since the meeting has started.",
+    "Two hours have passed since the meeting started.",
+    "Two hours have passed since the meeting starts.",
+    "Two hours have been passed since the meeting started.",
+    "Two hours are passing since the meeting started."
+   ],
+   "answer": 2,
+   "why": "since절에는 기준이 되는 과거 시점을 나타내는 과거시제 started를 쓰고, 주절의 pass는 자동사이므로 수동태가 아닌 현재완료 have passed를 쓴다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The manuscript, which ____ in a monastery for six centuries, was finally digitized last year.",
+   "choices": [
+    "was keeping",
+    "has been keeping",
+    "had been kept",
+    "has been kept",
+    "has kept"
+   ],
+   "answer": 3,
+   "why": "주절이 과거(was digitized)이고 그보다 앞선 기간을 나타내므로 과거완료 수동태 had been kept가 알맞다. 현재완료는 과거 시점 표현과 함께 쓸 수 없다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? For the last six months, the two companies ____ over the patent, and no settlement is in sight.",
+   "choices": [
+    "are fighting",
+    "has been fighting",
+    "had been fighting",
+    "have been fighting",
+    "have been fought"
+   ],
+   "answer": 4,
+   "why": "지난 여섯 달 동안 지금까지 계속되는 다툼이므로 현재완료진행이고, 주어가 복수이므로 have been fighting이다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? This is the third time that the alarm ____ off today.",
+   "choices": [
+    "has been gone",
+    "went",
+    "has been going",
+    "goes",
+    "has gone"
+   ],
+   "answer": 5,
+   "why": "<This is the+서수+time that ~> 뒤에는 현재완료를 쓴다. go off는 자동사구이므로 수동태나 진행형으로 쓰지 않는다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? By the time the new regulations take effect, most factories ____ their equipment.",
+   "choices": [
+    "will have upgraded",
+    "will upgrade",
+    "have upgraded",
+    "will have been upgraded",
+    "will be upgrading"
+   ],
+   "answer": 1,
+   "why": "규정이 시행되는 미래 시점까지 완료될 일이므로 미래완료이고, 뒤에 목적어 their equipment가 있으므로 능동 will have upgraded이다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Considerable progress ____ since the two sides resumed talks last month.",
+   "choices": [
+    "is made",
+    "has been made",
+    "has made",
+    "have been made",
+    "has been making"
+   ],
+   "answer": 2,
+   "why": "progress는 셀 수 없는 명사로 단수 취급하고, 진전은 '이루어지는' 것이므로 현재완료 수동태 has been made가 알맞다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? 그 실험은 여러 차례 반복되어 왔지만, 같은 결과가 결코 나온 적이 없다.",
+   "choices": [
+    "The experiment have been repeated several times, but the same result has never been obtained.",
+    "The experiment has repeated several times, but the same result has never obtained.",
+    "The experiment has been repeated several times, but the same result has never been obtained.",
+    "The experiment has been repeating several times, but the same result has never been obtaining.",
+    "The experiment was repeated several times, but the same result has never been obtain."
+   ],
+   "answer": 3,
+   "why": "실험과 결과 모두 '~되는' 대상이므로 현재완료 수동태를 쓰고, 주어가 단수이므로 has been repeated / has never been obtained가 된다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은? 이 문제에 관해 지금까지 거의 아무것도 밝혀지지 않았다.",
+   "choices": [
+    "Almost nothing has been revealing about this issue so far.",
+    "Almost nothing is been revealed about this issue so far.",
+    "Almost nothing has revealed about this issue so far.",
+    "Almost nothing has been revealed about this issue so far.",
+    "Almost nothing have been revealed about this issue so far."
+   ],
+   "answer": 4,
+   "why": "nothing은 단수 취급하고 '밝혀지다'는 수동이므로 현재완료 수동태 has been revealed가 알맞다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은? A: Has the committee reached a decision? B: Not yet. They ____ behind closed doors since nine this morning.",
+   "choices": [
+    "have been met",
+    "are met",
+    "has been meeting",
+    "have meeting",
+    "have been meeting"
+   ],
+   "answer": 5,
+   "why": "아침 아홉 시부터 지금까지 계속되는 동작이므로 현재완료진행이고, meet은 여기서 '회의하다'라는 자동사이므로 수동태로 쓸 수 없다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은? A: Will the renovation be done before the school year starts? B: Definitely. By then, every classroom ____.",
+   "choices": [
+    "will have been repainted",
+    "will have repainted",
+    "has been repainted",
+    "will be repainting",
+    "will have been repainting"
+   ],
+   "answer": 1,
+   "why": "교실은 칠해지는 대상이고 by then이라는 미래 기준 시점이 있으므로 미래완료 수동태 will have been repainted가 알맞다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ⓐ Never has the team performed so poorly. ⓑ The luggage have been searched at the gate. ⓒ By the end of the tour, the band will have played in forty cities. ⓓ He has been owing me money since last spring. ⓔ Since 2010, the desert has been expanding southward.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ⓐⓒⓔ가 옳다. ⓑ의 luggage는 셀 수 없는 명사이므로 has been searched, ⓓ의 owe는 상태동사이므로 has owed로 고쳐야 한다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? Over the past century, average life expectancy ①<u>has risen</u> by more than thirty years. Diseases that once killed millions ②<u>have eliminated</u> in many regions, and clean water ③<u>has been made</u> available to billions. Still, health experts ④<u>have been warning</u> that unless action is taken, the gains ⑤<u>will have been lost</u> within a generation.",
+   "choices": [
+    "has risen",
+    "have eliminated",
+    "has been made",
+    "have been warning",
+    "will have been lost"
+   ],
+   "answer": 2,
+   "why": "질병은 '박멸되는' 대상이므로 현재완료 수동태 have been eliminated로 고쳐야 한다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? Since the reform ①<u>took</u> effect, more than two thousand cases ②<u>have been reviewed</u>, and about a third of them ③<u>have been overturned</u>. Judges ④<u>has been complaining</u> that the workload is unmanageable, and by the end of the year the backlog ⑤<u>will have grown</u> even larger.",
+   "choices": [
+    "took",
+    "have been reviewed",
+    "have been overturned",
+    "has been complaining",
+    "will have grown"
+   ],
+   "answer": 4,
+   "why": "주어 Judges가 복수이므로 have been complaining으로 고쳐야 한다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 틀린 것은? The painting ①<u>has hung</u> in the same gallery since 1962. It ②<u>has been examined</u> by dozens of experts, several of whom ③<u>have questioned</u> its authenticity. By the time the new analysis is published, the debate ④<u>will have lasted</u> more than sixty years, and yet no conclusion ⑤<u>have been reached</u>.",
+   "choices": [
+    "has hung",
+    "has been examined",
+    "have questioned",
+    "will have lasted",
+    "have been reached"
+   ],
+   "answer": 5,
+   "why": "주어 no conclusion이 단수이므로 has been reached로 고쳐야 한다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 잘못 쓰인 문장은?",
+   "choices": [
+    "By next Tuesday, the jury will have heard all the testimony.",
+    "The suspect has been questioning for six hours.",
+    "Not a single complaint has been filed since the change.",
+    "Since last winter, the shelter has been taking in stray cats.",
+    "A record number of applications has been received this year."
+   ],
+   "answer": 2,
+   "why": "용의자는 심문을 받는 대상이므로 has been questioned로 고쳐야 한다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 고쳐야 할 문장을 고르시오.",
+   "choices": [
+    "The road has been blocked ever since the landslide.",
+    "For the past decade, she has been leading the research team.",
+    "By this time tomorrow, the votes will have counted.",
+    "Considerable damage has been done to the crops.",
+    "It has been ages since we last met."
+   ],
+   "answer": 3,
+   "why": "표는 '세어지는' 대상이므로 미래완료 수동태 will have been counted로 고쳐야 한다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? The satellite ____ images back to Earth continuously since it entered orbit in 2021.",
+   "choices": [
+    "is sent",
+    "have been sending",
+    "has sending",
+    "has been sending",
+    "has been sent"
+   ],
+   "answer": 4,
+   "why": "위성이 보내는 주체이고 뒤에 목적어 images가 있으며 지금까지 계속되므로 현재완료진행 has been sending이다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? Although the drug ____ for over a decade, its long-term effects are still unknown.",
+   "choices": [
+    "has studied",
+    "has been studying",
+    "is studying",
+    "have been studied",
+    "has been studied"
+   ],
+   "answer": 5,
+   "why": "약은 연구되는 대상이고 10년 넘게 지금까지 이어진 일이므로 현재완료 수동태 has been studied가 알맞다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오. By the time the audit is finished, the accountants ____ (examine) every transaction from the past five years.",
+   "answer": "will have examined",
+   "why": "감사가 끝나는 미래 시점까지 완료될 일이고 뒤에 목적어가 있으므로 미래완료 능동 will have examined를 쓴다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오. Since the ban took effect, the amount of plastic waste ____ (fall) by nearly a third.",
+   "answer": "has fallen",
+   "why": "fall은 자동사라 수동태로 쓸 수 없고, the amount of ~는 단수 취급하므로 현재완료 has fallen이다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오. The ancient scrolls ____ (store) in this vault since they were discovered in 1947.",
+   "answer": "have been stored",
+   "why": "두루마리는 보관되는 대상이고 주어가 복수이므로 현재완료 수동태 have been stored를 쓴다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오. For the past two years, the two governments ____ (negotiate) a new trade deal, and talks are still going on.",
+   "answer": "have been negotiating",
+   "why": "지금까지 계속되는 동작이고 뒤에 목적어가 있으므로 현재완료진행 have been negotiating이다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 어법에 맞는 형태로 바꿔 쓰시오. By the time the season opens, every seat in the stadium ____ (replace).",
+   "answer": "will have been replaced",
+   "why": "좌석은 교체되는 대상이고 미래 시점까지 완료될 일이므로 미래완료 수동태 will have been replaced를 쓴다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. Little attention <u>have been paid</u> to the warnings so far.",
+   "answer": "has been paid",
+   "why": "Little attention은 셀 수 없는 명사구로 단수 취급하므로 has been paid로 고친다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. The theory <u>has been existed</u> since the eighteenth century.",
+   "answer": "has existed",
+   "why": "exist는 자동사이자 상태동사이므로 수동태·진행형으로 쓸 수 없고 현재완료 has existed로 고친다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. By the time the report is released, the scandal <u>will have forgotten</u> by most people.",
+   "answer": "will have been forgotten",
+   "why": "추문은 잊히는 대상이고 by most people이라는 행위자가 있으므로 미래완료 수동태 will have been forgotten으로 고친다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. It is the first time that such a discovery <u>was made</u> in this region.",
+   "answer": "has been made",
+   "why": "<It is the first time that ~> 뒤에는 현재완료를 쓰므로 has been made로 고친다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. Two decades have passed since the treaty <u>has been signed</u>.",
+   "answer": "was signed",
+   "why": "since가 이끄는 절에는 기준이 되는 과거 시점을 나타내는 과거시제를 쓰므로 was signed로 고친다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. Judges <u>has been complaining</u> about the workload for months.",
+   "answer": "have been complaining",
+   "why": "주어 Judges가 복수이므로 have been complaining으로 고친다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 수동태로 바꿔 쓰시오. (행위자를 나타내는 by구를 포함할 것) The government has introduced strict new safety rules.",
+   "answer": "Strict new safety rules have been introduced by the government.",
+   "why": "목적어를 주어로 올리면 복수이므로 현재완료 수동태 have been introduced가 되고, 행위자는 by구로 밝힌다.",
+   "alt": [
+    "Strict new safety rules have been introduced by the government"
+   ],
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 수동태로 바꿔 쓰시오. (행위자를 나타내는 by구를 포함할 것) Critics have praised her latest documentary.",
+   "answer": "Her latest documentary has been praised by critics.",
+   "why": "목적어가 단수이므로 has been praised가 되고 행위자는 by critics로 나타낸다.",
+   "alt": [
+    "Her latest documentary has been praised by critics"
+   ],
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 수동태로 바꿔 쓰시오. (행위자를 나타내는 by구를 포함하고, By next spring으로 시작할 것) By next spring, the council will have approved the budget.",
+   "answer": "By next spring, the budget will have been approved by the council.",
+   "why": "미래완료의 수동태는 <will have been p.p.>이므로 will have been approved로 쓴다.",
+   "alt": [
+    "By next spring, the budget will have been approved by the council"
+   ],
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하여 문장을 완성하시오. (been / the / has / never / question / answered)",
+   "answer": "The question has never been answered.",
+   "why": "현재완료 수동태 <has been p.p.> 사이에 부정 부사 never가 들어가 has never been answered가 된다.",
+   "alt": [
+    "The question has never been answered"
+   ],
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하여 문장을 완성하시오. (have / for / they / been / hours / arguing / three)",
+   "answer": "They have been arguing for three hours.",
+   "why": "현재완료진행은 <have been v-ing>이고 기간은 <for+기간>으로 나타낸다.",
+   "alt": [
+    "They have been arguing for three hours"
+   ],
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하여 문장을 완성하시오. By then, ____. (the / will / left / train / have)",
+   "answer": "the train will have left",
+   "why": "미래완료는 <will have p.p.>이므로 the train will have left가 된다.",
+   "alt": [
+    "the train will have left."
+   ],
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하여 문장을 완성하시오. The results ____ yet. (been / have / announced / not)",
+   "answer": "have not been announced",
+   "why": "현재완료 수동태의 부정은 <have not been p.p.>이므로 have not been announced가 된다.",
+   "alt": [
+    "have not been announced."
+   ],
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. Never before ____ so much information been available to the public.",
+   "answer": "has",
+   "why": "부정어구 Never before가 문두에 와서 도치되었고, 주어 so much information이 단수 취급되므로 has been available이 된다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. By the end of this year, the tunnel will ____ been completed.",
+   "answer": "have",
+   "why": "미래완료 수동태는 <will have been p.p.>이므로 will 뒤에 원형 have가 온다.",
+   "no": 200
+  }
+ ]
+}

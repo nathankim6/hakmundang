@@ -1,0 +1,2709 @@
+{
+ "id": "hs-11",
+ "grade": "고등",
+ "name": "It ~ that 강조구문",
+ "points": [
+  "강조 대상별 형태",
+  "의문사+is it that",
+  "that 대신 who/which"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It ____ Daniel that left the classroom door open last night.",
+   "choices": [
+    "is",
+    "was",
+    "are",
+    "were",
+    "be"
+   ],
+   "answer": 2,
+   "why": "that절의 시제가 과거(last night)이므로 It was로 맞춘다. 강조구문의 It은 항상 단수 취급이라 are/were는 쓸 수 없다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It ____ my sister who is playing the piano in the living room now.",
+   "choices": [
+    "was",
+    "were",
+    "is",
+    "are",
+    "be"
+   ],
+   "answer": 3,
+   "why": "지금 일어나는 일(now)이므로 현재시제 is가 알맞다. It ~ that[who] 구문의 It은 단수이므로 are/were는 불가.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It was the twins who ____ the dance contest last year.",
+   "choices": [
+    "win",
+    "wins",
+    "won",
+    "winning",
+    "have won"
+   ],
+   "answer": 3,
+   "why": "강조된 주어 the twins가 who절의 주어이고 last year라는 과거 시점이 있으므로 won이 알맞다. have won은 과거 시점 부사와 함께 쓸 수 없다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It is my cousins who ____ living in Vancouver these days.",
+   "choices": [
+    "is",
+    "am",
+    "are",
+    "was",
+    "be"
+   ],
+   "answer": 3,
+   "why": "who절의 동사는 강조된 말인 my cousins(복수)에 수를 맞추므로 are가 알맞다. It is에 이끌려 is를 쓰지 않도록 주의한다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It is Mr. Kim who ____ our science club every Friday.",
+   "choices": [
+    "lead",
+    "leads",
+    "leading",
+    "are leading",
+    "have led"
+   ],
+   "answer": 2,
+   "why": "강조된 주어가 3인칭 단수 Mr. Kim이고 현재의 반복적 일이므로 leads가 맞다. are leading, have led는 수가 맞지 않는다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It ____ in 1953 that the Korean War ended.",
+   "choices": [
+    "is",
+    "was",
+    "were",
+    "are",
+    "has been"
+   ],
+   "answer": 2,
+   "why": "과거의 사실을 말하고 that절이 과거(ended)이므로 It was가 알맞다. 강조구문의 It은 복수형 were를 쓰지 않는다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It ____ his honesty that everyone in our class admires.",
+   "choices": [
+    "are",
+    "were",
+    "is",
+    "being",
+    "be"
+   ],
+   "answer": 3,
+   "why": "현재의 사실이고 강조되는 말이 단수 his honesty이므로 is가 알맞다. 강조구문의 It은 언제나 단수이다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It ____ you who are responsible for this mistake.",
+   "choices": [
+    "are",
+    "is",
+    "were",
+    "be",
+    "being"
+   ],
+   "answer": 2,
+   "why": "It ~ that 강조구문의 It은 늘 단수이므로 It is가 맞고, 뒤의 who절 동사만 강조된 you에 맞춰 are를 쓴다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It was Dr. Park ____ discovered the new kind of frog.",
+   "choices": [
+    "which",
+    "who",
+    "what",
+    "whose",
+    "where"
+   ],
+   "answer": 2,
+   "why": "강조되는 말이 사람(Dr. Park)이고 뒤에 주어가 빠져 있으므로 who를 쓴다. which는 사물, what은 강조구문에 쓰지 않는다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It is this old watch ____ my grandfather gave me.",
+   "choices": [
+    "who",
+    "whom",
+    "which",
+    "what",
+    "whose"
+   ],
+   "answer": 3,
+   "why": "강조되는 말이 사물(this old watch)이고 gave의 목적어가 빠져 있으므로 which(=that)를 쓴다. 사람이 아니므로 who/whom은 불가.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It was Nora ____ the teacher praised in front of the whole class.",
+   "choices": [
+    "which",
+    "what",
+    "whose",
+    "where",
+    "whom"
+   ],
+   "answer": 5,
+   "why": "강조되는 말이 사람이고 praised의 목적어 자리가 비어 있으므로 목적격 whom이 알맞다. which/what/whose는 쓸 수 없다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It was the noise from the street ____ woke the baby up.",
+   "choices": [
+    "who",
+    "whom",
+    "which",
+    "what",
+    "whose"
+   ],
+   "answer": 3,
+   "why": "강조되는 말이 사물이고 woke의 주어가 빠져 있으므로 which(=that)가 알맞다. 사물에는 who/whom을 쓰지 않는다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It was at the airport ____ I lost my passport.",
+   "choices": [
+    "who",
+    "whom",
+    "which",
+    "that",
+    "what"
+   ],
+   "answer": 4,
+   "why": "부사구(at the airport)를 강조할 때는 that만 쓸 수 있다. 뒤가 완전한 문장이므로 which/whom은 불가.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It is the students in the back row ____ keep talking during class.",
+   "choices": [
+    "which",
+    "who",
+    "whom",
+    "what",
+    "whose"
+   ],
+   "answer": 2,
+   "why": "강조되는 말이 사람(the students)이고 keep의 주어가 빠져 있으므로 주격 who가 알맞다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It was a short letter from Jinho ____ made her smile again.",
+   "choices": [
+    "who",
+    "whom",
+    "that",
+    "what",
+    "whose"
+   ],
+   "answer": 3,
+   "why": "사물을 강조하고 made의 주어가 비어 있으므로 that(=which)이 알맞다. what은 It ~ that 강조구문에 쓰지 않는다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It was my old bike ____ the thief took last weekend.",
+   "choices": [
+    "who",
+    "whom",
+    "what",
+    "that",
+    "whose"
+   ],
+   "answer": 4,
+   "why": "사물을 강조하고 took의 목적어가 비어 있으므로 that(=which)이 알맞다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It is the color of the evening sky ____ changes so quickly.",
+   "choices": [
+    "who",
+    "whom",
+    "that",
+    "what",
+    "whose"
+   ],
+   "answer": 3,
+   "why": "사물(the color)을 강조하고 changes의 주어가 비어 있으므로 that(=which)이 알맞다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It was Ms. Choi ____ helped us finish the group project.",
+   "choices": [
+    "which",
+    "what",
+    "whose",
+    "who",
+    "whom"
+   ],
+   "answer": 4,
+   "why": "사람을 강조하고 helped의 주어가 비어 있으므로 주격 who가 알맞다. 목적격 whom은 쓸 수 없다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장에서 강조되고 있는 말로 알맞은 것은?  It was a puppy that Sora got for her birthday.",
+   "choices": [
+    "It",
+    "a puppy",
+    "Sora",
+    "her birthday",
+    "got"
+   ],
+   "answer": 2,
+   "why": "It was와 that 사이에 놓인 a puppy가 강조된 말이다. 나머지는 that절 안에 그대로 남아 있는 말이다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장에서 강조되고 있는 말로 알맞은 것은?  It was on Monday that the club meeting was held.",
+   "choices": [
+    "It",
+    "on Monday",
+    "the club meeting",
+    "was held",
+    "that"
+   ],
+   "answer": 2,
+   "why": "It was와 that 사이의 부사구 on Monday가 강조된 말이다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장에서 강조되고 있는 말로 알맞은 것은?  It is Junho who always arrives at school first.",
+   "choices": [
+    "It",
+    "Junho",
+    "always",
+    "arrives first",
+    "who"
+   ],
+   "answer": 2,
+   "why": "It is와 who 사이의 Junho가 강조된 말이며, 사람이므로 that 대신 who를 썼다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분을 강조한 문장으로 알맞은 것은?  Kate met <u>Peter</u> at the mall.",
+   "choices": [
+    "It was Kate that met Peter at the mall.",
+    "It was Peter that Kate met at the mall.",
+    "It was at the mall that Kate met Peter.",
+    "It was Peter who met Kate at the mall.",
+    "It was met that Kate Peter at the mall."
+   ],
+   "answer": 2,
+   "why": "목적어 Peter를 It was와 that 사이에 놓고 나머지를 그대로 쓴다. ④는 Peter가 만난 사람이 되어 뜻이 달라지고, 동사는 강조구문으로 쓸 수 없다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분을 강조한 문장으로 알맞은 것은?  My brother broke the vase <u>yesterday</u>.",
+   "choices": [
+    "It was my brother that broke the vase yesterday.",
+    "It was the vase that my brother broke yesterday.",
+    "It was yesterday that my brother broke the vase.",
+    "It is yesterday that my brother broke the vase.",
+    "It was yesterday that my brother broke the vase yesterday."
+   ],
+   "answer": 3,
+   "why": "부사 yesterday를 강조하므로 It was yesterday that ~ 형태이며, 강조한 말은 that절에서 빼야 한다. ④는 과거 사실인데 is를 써서 틀렸다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장에서 강조된 부분으로 알맞은 것은?  It was in the school library that Mina studied all afternoon.",
+   "choices": [
+    "Mina",
+    "in the school library",
+    "studied",
+    "all afternoon",
+    "that"
+   ],
+   "answer": 2,
+   "why": "It was와 that 사이에 있는 장소 부사구 in the school library가 강조된 말이다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: ____ is it that you lost your wallet?   B: In the subway station.",
+   "choices": [
+    "Where",
+    "What",
+    "Who",
+    "Whom",
+    "Why"
+   ],
+   "answer": 1,
+   "why": "대답이 장소(In the subway station)이므로 의문사는 Where이며, 의문사 강조는 <의문사+is it that ~?> 어순으로 쓴다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Who ____ that sent you these beautiful flowers?",
+   "choices": [
+    "it is",
+    "does it",
+    "it does",
+    "is it",
+    "is that"
+   ],
+   "answer": 4,
+   "why": "의문사를 강조할 때는 <의문사+is it that ...?> 어순이므로 Who is it that ~?가 맞다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "When ____ that the second movie starts?",
+   "choices": [
+    "is it",
+    "it is",
+    "does it",
+    "it does",
+    "was it"
+   ],
+   "answer": 1,
+   "why": "의문사 강조 의문문은 <의문사+is it that ...?> 어순이며, that절이 현재시제(starts)이므로 is it이 알맞다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: ____ was it that you met at the bus stop?   B: I met Sujin there.",
+   "choices": [
+    "Who",
+    "What",
+    "Where",
+    "When",
+    "Why"
+   ],
+   "answer": 1,
+   "why": "대답이 사람(Sujin)이므로 의문사는 Who이다. 나머지 의문사는 대답과 맞지 않는다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어순이 어법상 알맞은 것은?",
+   "choices": [
+    "What it is that you want?",
+    "What is it that you want?",
+    "Is what it that you want?",
+    "What that is it you want?",
+    "It is what that you want?"
+   ],
+   "answer": 2,
+   "why": "의문사 강조는 의문사를 맨 앞에 두고 <의문사+is it that ...?>로 쓴다. 나머지는 어순이 뒤바뀐 형태이다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 알맞은 것은?",
+   "choices": [
+    "It was Sumi who help me yesterday.",
+    "It were Sumi who helped me yesterday.",
+    "It was Sumi who helped me yesterday.",
+    "It was Sumi what helped me yesterday.",
+    "It was Sumi which helped me yesterday."
+   ],
+   "answer": 3,
+   "why": "It was + 사람 + who + 과거동사가 맞다. ①은 시제, ②는 were, ④는 what, ⑤는 사람에 which를 써서 틀렸다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 것은?",
+   "choices": [
+    "It was in Paris that they got married.",
+    "It is her voice that I remember best.",
+    "It was the letter which changed his life.",
+    "It was my friends who was late for the concert.",
+    "It was last night that the storm hit our town."
+   ],
+   "answer": 4,
+   "why": "강조된 말 my friends가 복수이므로 who절 동사는 were여야 한다. 나머지는 모두 올바른 강조구문이다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "It is you who is my best friend.",
+    "It is you who are my best friend.",
+    "It are you who are my best friend.",
+    "It is you whom are my best friend.",
+    "It is you which are my best friend."
+   ],
+   "answer": 2,
+   "why": "It은 언제나 단수이므로 It is, who절 동사는 강조된 you에 맞춰 are를 쓴다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 <u>어색한</u> 것은?",
+   "choices": [
+    "It was Mr. Lee that fixed our roof.",
+    "It is math that I find most difficult.",
+    "It was on Sunday that we went hiking.",
+    "It was Emma whom won the science prize.",
+    "It is this song that always cheers me up."
+   ],
+   "answer": 4,
+   "why": "won의 주어가 빠진 자리이므로 목적격 whom이 아니라 주격 who(또는 that)를 써야 한다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 올바른 문장은?",
+   "choices": [
+    "It was the rain what ruined our picnic.",
+    "It was the rain which ruined our picnic.",
+    "It was the rain who ruined our picnic.",
+    "It were the rain that ruined our picnic.",
+    "It was the rain whom ruined our picnic."
+   ],
+   "answer": 2,
+   "why": "사물을 강조하므로 which(=that)를 쓴다. what은 강조구문에 쓰지 않고, 사물에 who/whom은 불가하며 It were도 틀리다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳지 <u>않은</u> 것은?",
+   "choices": [
+    "It was in 2015 that she moved to Seoul.",
+    "It is my grandmother who bakes the best bread.",
+    "It was a new phone that Mark bought for his mom.",
+    "It is honesty that matters most in friendship.",
+    "It was because of your help which we won the game."
+   ],
+   "answer": 5,
+   "why": "이유를 나타내는 부사구를 강조할 때는 that만 쓸 수 있고, 뒤 문장도 완전하므로 which는 불가하다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  내 지갑을 찾아 준 사람은 바로 그 소년이었다.",
+   "choices": [
+    "It was the boy that found my wallet.",
+    "It was the boy what found my wallet.",
+    "It was the boy which found my wallet.",
+    "It is the boy that found my wallet.",
+    "There was the boy that found my wallet."
+   ],
+   "answer": 1,
+   "why": "사람을 강조하는 It was ~ that[who] 구문이다. ④는 과거의 일인데 is를 썼고, ⑤는 It 대신 There를 써서 강조구문이 되지 않는다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  우리가 그를 처음 만난 것은 바로 그 카페에서였다.",
+   "choices": [
+    "It was at the cafe what we first met him.",
+    "It was the cafe that we first met him at the cafe.",
+    "It is at the cafe that we first met him.",
+    "It was at the cafe which we first met him.",
+    "It was at the cafe that we first met him."
+   ],
+   "answer": 5,
+   "why": "장소 부사구를 강조할 때는 that을 쓴다. ④의 which는 쓸 수 없고, ②는 강조한 말이 문장에 두 번 남아 있다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그녀가 원하는 것은 바로 너의 도움이다.",
+   "choices": [
+    "It is your help that she wants.",
+    "It is your help what she wants.",
+    "It is your help who she wants.",
+    "It was your help that she wants.",
+    "It is your help whom she wants."
+   ],
+   "answer": 1,
+   "why": "사물(your help)을 강조하므로 that(=which)을 쓰고, 현재의 일이므로 It is로 시제를 맞춘다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그 창문을 깨뜨린 사람은 바로 내 남동생이었다.",
+   "choices": [
+    "It was my brother who break the window.",
+    "It was my brother which broke the window.",
+    "It were my brother who broke the window.",
+    "It was my brother who broke the window.",
+    "It was my brother whom broke the window."
+   ],
+   "answer": 4,
+   "why": "사람 주어를 강조하므로 who를 쓰고 시제는 과거로 맞춘다. ⑤의 whom은 주어 자리에 쓸 수 없다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  내가 그 편지를 받은 것은 바로 어제였다.",
+   "choices": [
+    "It is yesterday that I got the letter.",
+    "It was yesterday that I got the letter.",
+    "It was yesterday what I got the letter.",
+    "It was yesterday who I got the letter.",
+    "It was yesterday that I get the letter."
+   ],
+   "answer": 2,
+   "why": "과거의 시점을 강조하므로 It was ~ that을 쓰고 that절 동사도 과거형 got이어야 한다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: ____   B: It was Mina that called you while you were out.",
+   "choices": [
+    "What was it that called me?",
+    "Where was it that called me?",
+    "When was it that called me?",
+    "Why was it that called me?",
+    "Who was it that called me?"
+   ],
+   "answer": 5,
+   "why": "대답이 사람(Mina)을 강조하고 있으므로 사람을 묻는 Who was it that ~?이 알맞다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: Where is it that you bought this hat?   B: ____",
+   "choices": [
+    "It was Mina that bought it.",
+    "It was at the flea market that I bought it.",
+    "It was yesterday that I bought it.",
+    "It is a hat that I bought.",
+    "It was because it was cheap that I bought it."
+   ],
+   "answer": 2,
+   "why": "Where로 장소를 물었으므로 장소를 강조한 대답이 알맞다. 나머지는 사람·때·이유를 강조한 대답이다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: What is it that you are worried about?   B: ____",
+   "choices": [
+    "It is the math test that worries me.",
+    "It was John who worried about me.",
+    "It is at school that I worry a lot.",
+    "It is because I am tired that I worry.",
+    "It was last week that I worried."
+   ],
+   "answer": 1,
+   "why": "What으로 대상을 물었으므로 걱정거리(the math test)를 강조한 대답이 알맞다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: When was it that you moved to this town?   B: ____",
+   "choices": [
+    "It was my father that moved here.",
+    "It is this town that I like best.",
+    "It was by bus that I moved here.",
+    "It was because of my job that I moved.",
+    "It was three years ago that I moved here."
+   ],
+   "answer": 5,
+   "why": "When으로 시점을 물었으므로 때를 강조한 대답 three years ago가 알맞다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?  It (A)____ my parents (B)____ paid for the whole trip.",
+   "choices": [
+    "was – who",
+    "were – who",
+    "was – whom",
+    "are – which",
+    "were – that"
+   ],
+   "answer": 1,
+   "why": "It ~ that 강조구문의 It은 강조되는 말이 복수여도 늘 단수이므로 was, 강조된 말이 사람 주어이므로 who를 쓴다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?  It (A)____ this silver ring (B)____ my mother treasures most.",
+   "choices": [
+    "is – who",
+    "are – which",
+    "was – whom",
+    "is – what",
+    "is – which"
+   ],
+   "answer": 5,
+   "why": "현재의 일이므로 It is, 강조된 말이 사물이므로 which(=that)를 쓴다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?  It was (A)____ the park (B)____ we found the lost puppy.",
+   "choices": [
+    "in – that",
+    "in – which",
+    "at – who",
+    "of – what",
+    "on – whom"
+   ],
+   "answer": 1,
+   "why": "장소를 나타내는 in the park를 강조하고, 부사구 강조에는 that만 쓸 수 있다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?  (A)____ is it (B)____ you want to talk to? — My homeroom teacher.",
+   "choices": [
+    "What – that",
+    "Who – what",
+    "Whom – which",
+    "Who – that",
+    "What – who"
+   ],
+   "answer": 4,
+   "why": "대답이 사람이므로 Who, 의문사 강조는 <의문사+is it that ...?>이므로 that을 쓴다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 말을 한 단어로 쓰시오. (관계사)\nIt was Mr. Yoon ____ taught me how to swim.",
+   "answer": "who",
+   "alt": [
+    "that"
+   ],
+   "why": "사람을 강조하고 taught의 주어가 비어 있으므로 주격 who(또는 that)를 쓴다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\nIt (be) ____ Judy that borrowed my umbrella yesterday.",
+   "answer": "was",
+   "alt": [],
+   "why": "that절이 과거(borrowed, yesterday)이므로 It was로 시제를 맞춘다. 강조구문의 It은 늘 단수이다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오.\nIt is my sisters who (be) ____ in charge of the music today.",
+   "answer": "are",
+   "alt": [],
+   "why": "who절의 동사는 강조된 말 my sisters(복수)에 수를 맞추므로 are를 쓴다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 강조하는 It ~ that 강조구문으로 문장을 다시 쓰시오.\n<u>Sam</u> found the lost cat behind the garage.",
+   "answer": "It was Sam that found the lost cat behind the garage.",
+   "alt": [
+    "It was Sam who found the lost cat behind the garage."
+   ],
+   "why": "주어 Sam을 It was와 that 사이에 두고 나머지는 그대로 쓴다. 사람이므로 that 대신 who도 가능하다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 강조하는 It ~ that 강조구문으로 문장을 다시 쓰시오.\nMina lost <u>her phone</u> on the school bus.",
+   "answer": "It was her phone that Mina lost on the school bus.",
+   "alt": [
+    "It was her phone which Mina lost on the school bus."
+   ],
+   "why": "목적어 her phone을 강조하면 that절에서는 목적어 자리가 비게 된다. 사물이므로 which도 쓸 수 있다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 강조하는 It ~ that 강조구문으로 문장을 다시 쓰시오.\nWe met the new coach <u>at the station</u>.",
+   "answer": "It was at the station that we met the new coach.",
+   "alt": [],
+   "why": "부사구를 강조할 때는 that만 쓸 수 있고, 강조한 부사구는 that절에서 빼야 한다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nIt was Kate <u>which</u> broke the glass cup.",
+   "answer": "who",
+   "alt": [
+    "that"
+   ],
+   "why": "강조되는 말이 사람이므로 which가 아니라 who(또는 that)를 써야 한다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nIt is Tom who <u>play</u> the guitar in our band.",
+   "answer": "plays",
+   "alt": [],
+   "why": "who절의 동사는 강조된 3인칭 단수 Tom에 맞춰 plays로 써야 한다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 의문사를 한 단어로 쓰시오.\n____ is it that you are looking for in this box?",
+   "answer": "What",
+   "alt": [
+    "what"
+   ],
+   "why": "찾는 대상을 묻고 있으므로 What이며, 의문사 강조는 <의문사+is it that ...?> 어순이다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 의문사를 한 단어로 쓰시오.\nA: ____ was it that you saw at the park?   B: I saw Jiho.",
+   "answer": "Who",
+   "alt": [
+    "who",
+    "Whom",
+    "whom"
+   ],
+   "why": "대답이 사람(Jiho)이므로 Who(목적격 Whom)가 알맞다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 말을 한 단어로 쓰시오.\nIt was in 2020 ____ my aunt got married in Jeju.",
+   "answer": "that",
+   "alt": [],
+   "why": "때를 나타내는 부사구를 강조하므로 that을 쓴다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 말을 한 단어로 쓰시오. (who는 쓰지 말 것)\nIt was his warm smile ____ I remember best.",
+   "answer": "that",
+   "alt": [
+    "which"
+   ],
+   "why": "강조되는 말이 사물이므로 that 또는 which를 쓴다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 강조하는 It ~ that 강조구문으로 문장을 다시 쓰시오.\nEmma bought <u>a red dress</u> at the mall yesterday.",
+   "answer": "It was a red dress that Emma bought at the mall yesterday.",
+   "alt": [
+    "It was a red dress which Emma bought at the mall yesterday."
+   ],
+   "why": "목적어를 강조하므로 It was a red dress that ~이 되고 that절에는 목적어가 남지 않는다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 강조하는 It ~ that 강조구문으로 문장을 다시 쓰시오.\nMy father built <u>this wooden table</u> last winter.",
+   "answer": "It was this wooden table that my father built last winter.",
+   "alt": [
+    "It was this wooden table which my father built last winter."
+   ],
+   "why": "사물 목적어를 강조하므로 that(또는 which)을 쓰고 시제는 과거 그대로 둔다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 강조하는 It ~ that 강조구문으로 문장을 다시 쓰시오.\n<u>The heavy rain</u> caused the traffic accident.",
+   "answer": "It was the heavy rain that caused the traffic accident.",
+   "alt": [
+    "It was the heavy rain which caused the traffic accident."
+   ],
+   "why": "주어를 강조하면 that절의 주어 자리가 비게 된다. 사물이므로 which도 가능하다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 강조하는 It ~ that 강조구문으로 문장을 다시 쓰시오.\nI need <u>your advice</u> right now.",
+   "answer": "It is your advice that I need right now.",
+   "alt": [
+    "It is your advice which I need right now."
+   ],
+   "why": "현재시제 문장이므로 It is로 시작하고, 사물 목적어를 강조하므로 that(which)을 쓴다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nIt <u>were</u> the children that made all the noise.",
+   "answer": "was",
+   "alt": [],
+   "why": "It ~ that 강조구문의 It은 강조되는 말이 복수여도 언제나 단수 취급하므로 was를 쓴다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nIt is you who <u>am</u> going to lead the team.",
+   "answer": "are",
+   "alt": [],
+   "why": "who절의 동사는 강조된 you에 맞춰 are로 쓴다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 말을 한 단어로 쓰시오.\nIt was because of the snow ____ our school closed early.",
+   "answer": "that",
+   "alt": [],
+   "why": "이유를 나타내는 부사구를 강조하므로 that만 쓸 수 있다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 말을 한 단어로 쓰시오. (which는 쓰지 말 것)\nIt was my aunt ____ sent me this birthday gift.",
+   "answer": "who",
+   "alt": [
+    "that"
+   ],
+   "why": "사람을 강조하고 주어 자리가 비어 있으므로 who(또는 that)를 쓴다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 <u>It</u>의 쓰임이 나머지 넷과 <u>다른</u> 것은?",
+   "choices": [
+    "It was Kevin that broke the school swimming record.",
+    "It was in Rome that they spent their honeymoon.",
+    "It is clear that he lied about the accident.",
+    "It is your support that keeps me going.",
+    "It was last Friday that the letter finally arrived."
+   ],
+   "answer": 3,
+   "why": "③은 that절이 완전하고 It이 그 절을 대신하는 가주어이다. 나머지는 It is/was와 that을 빼도 문장이 성립하는 강조구문이다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 It ~ that이 강조구문으로 쓰인 것은?",
+   "choices": [
+    "It is important that everyone follows the safety rules.",
+    "It was surprising that no one noticed the change.",
+    "It is true that plants grow faster in warm weather.",
+    "It was the truth that she really wanted to hear.",
+    "It seems certain that the flight will be delayed."
+   ],
+   "answer": 4,
+   "why": "④는 hear의 목적어가 빠져 있어 that절이 불완전하므로 목적어를 강조한 강조구문이다. 나머지는 완전한 that절을 받는 가주어 구문이다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장의 It ~ that과 쓰임이 같은 것은?\nIt was the letter that changed everything for him.",
+   "choices": [
+    "It is certain that he will pass the exam.",
+    "It was Mina that suggested the whole idea.",
+    "It is a pity that we can't travel together.",
+    "It was obvious that something had gone wrong.",
+    "It is said that the stone bridge is very old."
+   ],
+   "answer": 2,
+   "why": "제시문은 주어 the letter를 강조한 강조구문이며, ②도 주어 Mina를 강조한 같은 구문이다. 나머지는 모두 가주어 It이다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장의 It과 쓰임이 같은 것은?\nIt is possible that the meeting will be postponed.",
+   "choices": [
+    "It was John that fixed the broken copier.",
+    "It is his patience that I admire most.",
+    "It was strange that nobody answered the phone.",
+    "It is on Sundays that the flower market opens.",
+    "It was a small key that opened the old box."
+   ],
+   "answer": 3,
+   "why": "제시문은 that절을 대신하는 가주어 It이고, ③도 that절이 완전한 가주어 구문이다. 나머지는 강조구문이다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 It ~ that이 강조구문인 것은?",
+   "choices": [
+    "It is natural that children ask many questions.",
+    "It was reported that the storm had passed the island.",
+    "It is my sister that lent me this winter coat.",
+    "It is doubtful that they will arrive on time.",
+    "It was lucky that we found a taxi so quickly."
+   ],
+   "answer": 3,
+   "why": "③은 lent의 주어가 비어 있어 강조구문이며, It is와 that을 빼면 My sister lent me this winter coat.가 된다. 나머지는 가주어 구문이다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 It ~ that이 강조구문이 <u>아닌</u> 것은?",
+   "choices": [
+    "It was the mayor that opened the new library.",
+    "It is this photo that I want to enlarge.",
+    "It was in Busan that the film festival was held.",
+    "It is unfortunate that the concert was canceled.",
+    "It was her voice that I recognized at once."
+   ],
+   "answer": 4,
+   "why": "④는 that절이 완전하고 It이 가주어이다. 나머지는 강조된 말을 빼면 that절이 불완전하거나 부사구를 강조한 강조구문이다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "It was the old librarian ____ recommended this novel to me last week.",
+   "choices": [
+    "which",
+    "who",
+    "what",
+    "whose",
+    "where"
+   ],
+   "answer": 2,
+   "why": "강조된 말이 사람이고 recommended의 주어가 비어 있으므로 주격 who를 쓴다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "It is not the price but the quality ____ makes this brand so popular.",
+   "choices": [
+    "who",
+    "whom",
+    "that",
+    "what",
+    "whose"
+   ],
+   "answer": 3,
+   "why": "강조된 말이 사물(the quality)이므로 that(=which)을 쓴다. what은 강조구문에 쓸 수 없다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "It was on the day of the final exam ____ he finally understood the formula.",
+   "choices": [
+    "which",
+    "what",
+    "who",
+    "that",
+    "whom"
+   ],
+   "answer": 4,
+   "why": "때를 나타내는 부사구를 강조하고 뒤 문장이 완전하므로 that만 가능하다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "It was the new coach ____ the players trusted most during the season.",
+   "choices": [
+    "whom",
+    "which",
+    "what",
+    "whose",
+    "where"
+   ],
+   "answer": 1,
+   "why": "사람을 강조하고 trusted의 목적어가 비어 있으므로 목적격 whom이 알맞다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "It is because he practiced every single day ____ he plays so well now.",
+   "choices": [
+    "which",
+    "what",
+    "that",
+    "who",
+    "whose"
+   ],
+   "answer": 3,
+   "why": "이유를 나타내는 부사절을 강조하는 자리이므로 that을 쓴다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "It was a small worn notebook ____ she carried everywhere she went.",
+   "choices": [
+    "who",
+    "whom",
+    "that",
+    "what",
+    "whose"
+   ],
+   "answer": 3,
+   "why": "사물을 강조하고 carried의 목적어가 비어 있으므로 that(=which)이 알맞다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "It is the way she listens to others ____ makes her a good leader.",
+   "choices": [
+    "who",
+    "what",
+    "whose",
+    "that",
+    "whom"
+   ],
+   "answer": 4,
+   "why": "강조된 말이 사물(the way ~)이고 makes의 주어가 비어 있으므로 that을 쓴다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "It was my uncle in Daegu ____ house we stayed at last summer.",
+   "choices": [
+    "who",
+    "whom",
+    "which",
+    "whose",
+    "that"
+   ],
+   "answer": 4,
+   "why": "뒤에 house라는 명사가 이어지고 '그의 집'이라는 소유 관계이므로 소유격 whose가 알맞다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 바르지 <u>않은</u> 문장은?",
+   "choices": [
+    "It was the students who were praised for their teamwork.",
+    "It is my parents who support me the most.",
+    "It was in the school library that I found the missing book.",
+    "It is you who is always late for morning practice.",
+    "It was because of the thick fog that the flight was delayed."
+   ],
+   "answer": 4,
+   "why": "who절의 동사는 강조된 you에 맞춰 are여야 한다. 나머지는 수·시제·관계사가 모두 올바르다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "It was Jane and her sister that was chosen as leaders.",
+    "It was Jane and her sister who were chosen as leaders.",
+    "It were Jane and her sister who were chosen as leaders.",
+    "It was Jane and her sister which were chosen as leaders.",
+    "It was Jane and her sister what were chosen as leaders."
+   ],
+   "answer": 2,
+   "why": "It은 언제나 단수이므로 It was, 관계사절 동사는 복수 주어에 맞춰 were, 사람이므로 who를 쓴다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 <u>틀린</u> 것은?",
+   "choices": [
+    "It was to his old teacher that he owed his success.",
+    "It is the message which matters, not the messenger.",
+    "It was the second question that confused most students.",
+    "It was Sujin whom won the speech contest.",
+    "It is in spring that this park looks the most beautiful."
+   ],
+   "answer": 4,
+   "why": "won의 주어 자리가 비어 있으므로 목적격 whom이 아니라 who(또는 that)를 써야 한다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법이 바른 문장은?",
+   "choices": [
+    "It is he who need my help right now.",
+    "It is he whom needs my help right now.",
+    "It is he who needs my help right now.",
+    "It is he which need my help right now.",
+    "It are he who needs my help right now."
+   ],
+   "answer": 3,
+   "why": "It은 단수 is, 사람 주어 강조이므로 who, who절 동사는 he에 맞춰 needs를 쓴다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 오류가 <u>있는</u> 문장은?",
+   "choices": [
+    "It was not until midnight that the last guests left.",
+    "It is only when you fail that you truly learn.",
+    "It was here that the peace treaty was signed.",
+    "It was the sudden noise what woke everyone up.",
+    "It is your attitude that will decide the final result."
+   ],
+   "answer": 4,
+   "why": "강조구문에서는 what을 쓸 수 없으며, 사물을 강조했으므로 that(또는 which)이어야 한다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 정확한 문장은?",
+   "choices": [
+    "It was in 2018 which the old factory closed down.",
+    "It was in 2018 that the old factory closed down.",
+    "It was 2018 when that the old factory closed down.",
+    "It were in 2018 that the old factory closed down.",
+    "It was in 2018 what the old factory closed down."
+   ],
+   "answer": 2,
+   "why": "부사구 in 2018을 강조하므로 that을 쓰고, It은 단수 was로 쓴다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nIt ①<u>was</u> not the coach ②<u>but</u> the players ③<u>who</u> ④<u>was blamed</u> ⑤<u>for</u> the sudden defeat.",
+   "choices": [
+    "was",
+    "but",
+    "who",
+    "was blamed",
+    "for"
+   ],
+   "answer": 4,
+   "why": "not A but B 구조에서 강조된 말은 B(the players)이므로 관계사절 동사는 복수형 were여야 한다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\n①<u>It is</u> the way you speak to people ②<u>that</u> ③<u>determine</u> how much they ④<u>trust</u> ⑤<u>you</u>.",
+   "choices": [
+    "It is",
+    "that",
+    "determine",
+    "trust",
+    "you"
+   ],
+   "answer": 3,
+   "why": "강조된 주어가 단수 the way ~ 이므로 that절의 동사는 determines여야 한다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nIt was ①<u>in</u> the summer of 2009 ②<u>which</u> our family ③<u>moved</u> to a small town ④<u>near</u> the sea and ⑤<u>started</u> a new life.",
+   "choices": [
+    "in",
+    "which",
+    "moved",
+    "near",
+    "started"
+   ],
+   "answer": 2,
+   "why": "부사구를 강조하는 강조구문이므로 which가 아니라 that을 써야 한다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\n①<u>What</u> is it ②<u>that</u> makes some people ③<u>remembering</u> faces so ④<u>easily</u> while others ⑤<u>forget</u> them?",
+   "choices": [
+    "What",
+    "that",
+    "remembering",
+    "easily",
+    "forget"
+   ],
+   "answer": 3,
+   "why": "사역동사 make의 목적격보어 자리이므로 원형부정사 remember를 써야 한다. 의문사 강조 어순 What is it that ~?은 올바르다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nIt ①<u>was</u> my grandmother ②<u>that</u> ③<u>teach</u> me ④<u>how to</u> make kimchi ⑤<u>when</u> I was ten.",
+   "choices": [
+    "was",
+    "that",
+    "teach",
+    "how to",
+    "when"
+   ],
+   "answer": 3,
+   "why": "It was와 when I was ten이 모두 과거이므로 that절의 동사도 과거형 taught여야 한다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nIt ①<u>is</u> honesty, ②<u>not</u> talent, ③<u>what</u> ④<u>matters</u> most ⑤<u>in</u> a long friendship.",
+   "choices": [
+    "is",
+    "not",
+    "what",
+    "matters",
+    "in"
+   ],
+   "answer": 3,
+   "why": "It ~ that 강조구문에는 what을 쓸 수 없고 that(또는 which)을 써야 한다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그 소식을 나에게 알려 준 사람은 바로 네 여동생이었다.",
+   "choices": [
+    "It was your sister who told me the news.",
+    "It was your sister whom told me the news.",
+    "It was your sister which told me the news.",
+    "It were your sister who told me the news.",
+    "It was your sister who did told me the news."
+   ],
+   "answer": 1,
+   "why": "사람 주어를 강조하므로 who를 쓰고, It은 단수 was로 쓴다. 주어 자리이므로 whom은 불가하다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n내가 그 실수를 알아차린 것은 바로 회의가 끝난 뒤였다.",
+   "choices": [
+    "It was after the meeting ended which I noticed the mistake.",
+    "It was after the meeting ended what I noticed the mistake.",
+    "It is after the meeting ended that I noticed the mistake.",
+    "It was after the meeting ended when that I noticed the mistake.",
+    "It was after the meeting ended that I noticed the mistake."
+   ],
+   "answer": 5,
+   "why": "부사절을 강조하므로 that을 쓰고, 과거의 일이므로 It was로 시제를 맞춘다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n우리에게 정말로 필요한 것은 바로 시간이지 돈이 아니다.",
+   "choices": [
+    "It is time, not money, that we really need.",
+    "It is time, not money, what we really need.",
+    "It is time, not money, who we really need.",
+    "It was time, not money, that we really need.",
+    "It is time, not money, which we really needs."
+   ],
+   "answer": 1,
+   "why": "사물을 강조하므로 that(=which)을 쓰고, 현재의 사실이므로 It is로 쓴다. ⑤는 we needs로 수가 틀렸다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그가 그 비밀을 털어놓은 상대는 바로 그의 형이었다.",
+   "choices": [
+    "It was his brother who told him the secret.",
+    "It was his brother whom told the secret to him.",
+    "It was his brother that told him the secret.",
+    "It was his brother which he told the secret to.",
+    "It was his brother that he told the secret to."
+   ],
+   "answer": 5,
+   "why": "'그가 형에게 말했다'라는 뜻이므로 to의 목적어가 빠진 ⑤가 맞다. ①③은 형이 말한 것이 되어 뜻이 반대이다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그 사고가 일어난 곳은 바로 이 좁은 골목이었다.",
+   "choices": [
+    "It was this narrow alley that the accident happened.",
+    "It was in this narrow alley that the accident happened.",
+    "It was in this narrow alley which the accident happened.",
+    "It is in this narrow alley that the accident happened.",
+    "It was in this narrow alley what the accident happened."
+   ],
+   "answer": 2,
+   "why": "장소를 강조할 때는 전치사를 포함한 부사구를 그대로 앞에 내고 that을 쓴다. ①은 전치사가 빠져 뒤 문장과 연결되지 않는다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분을 강조한 문장으로 알맞은 것은?\n<u>My neighbor</u> reported the fire to the police.",
+   "choices": [
+    "It was the fire that my neighbor reported to the police.",
+    "It was to the police that my neighbor reported the fire.",
+    "It was my neighbor whom reported the fire to the police.",
+    "It was my neighbor that reported the fire to the police.",
+    "It was my neighbor what reported the fire to the police."
+   ],
+   "answer": 4,
+   "why": "주어를 강조하므로 It was my neighbor that[who] ~ 형태가 된다. ①②는 다른 부분을 강조한 문장이다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분을 강조한 문장으로 알맞은 것은?\nThe concert was canceled <u>because of the typhoon</u>.",
+   "choices": [
+    "It was the concert that was canceled because of the typhoon.",
+    "It was because of the typhoon which the concert was canceled.",
+    "It is because of the typhoon that the concert was canceled.",
+    "It was because of the typhoon what the concert was canceled.",
+    "It was because of the typhoon that the concert was canceled."
+   ],
+   "answer": 5,
+   "why": "이유를 나타내는 부사구를 강조하므로 that을 쓰고 시제는 과거로 맞춘다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분을 강조한 문장으로 알맞은 것은?\nSomin gave <u>Junho</u> the concert ticket.",
+   "choices": [
+    "It was Junho that Somin gave the concert ticket to.",
+    "It was the concert ticket that Somin gave Junho.",
+    "It was Somin that gave Junho the concert ticket.",
+    "It was Junho who gave Somin the concert ticket.",
+    "It was Junho what Somin gave the concert ticket."
+   ],
+   "answer": 1,
+   "why": "간접목적어를 강조하면 남은 문장에서는 전치사 to가 필요하다. ④는 준 사람과 받은 사람이 뒤바뀌었다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분을 강조한 문장으로 알맞은 것은?\nThey discovered the ancient tomb <u>in 1971</u>.",
+   "choices": [
+    "It was in 1971 that they discovered the ancient tomb.",
+    "It was the ancient tomb that they discovered in 1971.",
+    "It was in 1971 which they discovered the ancient tomb.",
+    "It is in 1971 that they discovered the ancient tomb.",
+    "It was 1971 that they discovered the ancient tomb in."
+   ],
+   "answer": 1,
+   "why": "때를 나타내는 부사구를 강조하므로 that을 쓰고, 과거의 일이므로 It was로 쓴다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분을 강조한 문장으로 알맞은 것은?\n<u>Her calm voice</u> made everyone feel safe.",
+   "choices": [
+    "It was everyone that her calm voice made feel safe.",
+    "It was her calm voice who made everyone feel safe.",
+    "It were her calm voice that made everyone feel safe.",
+    "It was her calm voice that it made everyone feel safe.",
+    "It was her calm voice that made everyone feel safe."
+   ],
+   "answer": 5,
+   "why": "사물 주어를 강조하므로 that을 쓴다. ②는 사물에 who를 썼고, ④는 that절에 주어 it이 남아 있어 틀렸다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "It is not the teachers but the principal who ____ the final decision every year.",
+   "choices": [
+    "make",
+    "makes",
+    "are making",
+    "have made",
+    "were making"
+   ],
+   "answer": 2,
+   "why": "not A but B에서는 B(the principal)에 수를 맞추므로 단수 makes가 알맞다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "It was not I but my brother who ____ your bike last night.",
+   "choices": [
+    "ride",
+    "rides",
+    "rode",
+    "riding",
+    "have ridden"
+   ],
+   "answer": 3,
+   "why": "강조된 말은 my brother이고 last night이라는 과거 시점이 있으므로 rode가 알맞다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "It ____ Amy and Ben who are washing the dishes in the kitchen right now.",
+   "choices": [
+    "are",
+    "were",
+    "is",
+    "be",
+    "being"
+   ],
+   "answer": 3,
+   "why": "강조구문의 It은 강조되는 말이 복수여도 단수이므로 is를 쓴다. 뒤의 who절만 복수 are로 맞춘다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "It is I who ____ to blame for the delay of the whole project.",
+   "choices": [
+    "is",
+    "am",
+    "are",
+    "was",
+    "be"
+   ],
+   "answer": 2,
+   "why": "who절의 동사는 강조된 I에 맞춰 am을 쓴다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A: ____ is it that people keep repeating the same mistakes?   B: Because they forget the pain.",
+   "choices": [
+    "Why",
+    "What",
+    "Who",
+    "Where",
+    "When"
+   ],
+   "answer": 1,
+   "why": "대답이 이유(Because ~)이므로 Why가 알맞고, 의문사 강조는 <의문사+is it that ...?> 어순이다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장 가운데 어법상 알맞은 것은?",
+   "choices": [
+    "How it is that you knew my name?",
+    "How was it what you knew my name?",
+    "How is that it you knew my name?",
+    "How is it that did you know my name?",
+    "How is it that you knew my name?"
+   ],
+   "answer": 5,
+   "why": "의문사 강조는 <의문사+is it that+주어+동사 ...?> 어순이며 that절 안에서는 다시 도치하지 않는다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A: ____ is it that the new science museum opens?   B: Next Monday.",
+   "choices": [
+    "When",
+    "Where",
+    "Who",
+    "What",
+    "Why"
+   ],
+   "answer": 1,
+   "why": "대답이 때(Next Monday)이므로 When이 알맞다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "It was not until he lost his wallet ____ he realized how careless he had been.",
+   "choices": [
+    "when",
+    "that",
+    "which",
+    "what",
+    "then"
+   ],
+   "answer": 2,
+   "why": "It is[was] not until ~ that ... 구문이므로 that을 쓴다. 이때 when은 쓸 수 없다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그가 집에 돌아오고 나서야 비로소 우리는 안심했다.",
+   "choices": [
+    "It was not until he came home when we felt relieved.",
+    "It was until he came home that we felt relieved.",
+    "It was not until he came home which we felt relieved.",
+    "It was not until he came home that we felt relieved.",
+    "It is not until he came home that we felt relieved."
+   ],
+   "answer": 4,
+   "why": "'~하고 나서야 비로소'는 It was not until ~ that ...으로 쓴다. not이 빠지거나 that 대신 when/which를 쓰면 안 된다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 알맞은 것은?\nWe didn't notice the mistake until the report was printed.",
+   "choices": [
+    "It was not until the report was printed that we noticed the mistake.",
+    "It was until the report was printed that we noticed the mistake.",
+    "It was not until the report was printed when we noticed the mistake.",
+    "It was not the report printed until that we noticed the mistake.",
+    "It is not until the report was printed that we noticed the mistake."
+   ],
+   "answer": 1,
+   "why": "not ~ until을 강조구문으로 바꾸면 It was not until ~ that ...이 되고, that절에는 not을 쓰지 않는다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 강조하는 It ~ that 강조구문으로 문장을 다시 쓰시오.\nThe manager announced the change <u>at the end of the meeting</u>.",
+   "answer": "It was at the end of the meeting that the manager announced the change.",
+   "alt": [],
+   "why": "때를 나타내는 부사구를 강조하므로 that을 쓰고, 강조한 부사구는 that절에서 뺀다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 강조하는 It ~ that 강조구문으로 문장을 다시 쓰시오.\n<u>A stray cat</u> knocked over the flowerpot last night.",
+   "answer": "It was a stray cat that knocked over the flowerpot last night.",
+   "alt": [
+    "It was a stray cat which knocked over the flowerpot last night."
+   ],
+   "why": "주어를 강조하므로 that절의 주어 자리가 비게 되며, 사물이므로 which도 가능하다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 It ~ that 강조구문으로 바꿔 쓰시오.\nShe didn't realize the danger until she read the report.",
+   "answer": "It was not until she read the report that she realized the danger.",
+   "alt": [],
+   "why": "not ~ until을 강조하면 It was not until ~ that ...이 되고, that절에는 not을 쓰지 않는다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 It ~ that 강조구문으로 바꿔 쓰시오.\nI didn't understand his advice until I became a teacher myself.",
+   "answer": "It was not until I became a teacher myself that I understood his advice.",
+   "alt": [],
+   "why": "until 이하를 It was not until ~ that ... 형태로 강조하고, that절의 동사는 긍정 과거형으로 쓴다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nIt was the heavy traffic <u>what</u> made us late for the ceremony.",
+   "answer": "that",
+   "alt": [
+    "which"
+   ],
+   "why": "강조구문에는 what을 쓸 수 없고, 사물을 강조했으므로 that 또는 which를 쓴다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nIt is my parents who <u>is</u> paying for my tuition this year.",
+   "answer": "are",
+   "alt": [],
+   "why": "who절의 동사는 강조된 my parents(복수)에 수를 맞춰 are로 쓴다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nIt was not the boys but Mira who <u>were</u> chosen as the class leader.",
+   "answer": "was",
+   "alt": [],
+   "why": "not A but B에서는 B(Mira)가 강조된 말이므로 관계사절 동사는 단수 was여야 한다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 말을 한 단어로 쓰시오.\nIt was because of one small mistake ____ the whole system stopped working.",
+   "answer": "that",
+   "alt": [],
+   "why": "이유를 나타내는 부사구를 강조하는 자리이므로 that만 쓸 수 있다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 말을 한 단어로 쓰시오.\nIt is not until you lose your health ____ you know its true value.",
+   "answer": "that",
+   "alt": [],
+   "why": "It is not until ~ that ... 구문이므로 빈칸에는 that이 들어간다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 의문사를 강조하는 문장으로 바꿔 쓰시오.\nWhat do you want to say to me?",
+   "answer": "What is it that you want to say to me?",
+   "alt": [],
+   "why": "의문사 강조는 <의문사+is it that+주어+동사 ...?> 어순이며 that절 안에서는 도치하지 않는다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 의문사를 강조하는 문장으로 바꿔 쓰시오.\nWho did she meet at the airport?",
+   "answer": "Who was it that she met at the airport?",
+   "alt": [
+    "Whom was it that she met at the airport?"
+   ],
+   "why": "과거시제이므로 was it을 쓰고, that절 안은 she met의 평서문 어순으로 쓴다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 강조하는 It ~ that 강조구문으로 문장을 다시 쓰시오.\nTom sent Julia a long email <u>yesterday morning</u>.",
+   "answer": "It was yesterday morning that Tom sent Julia a long email.",
+   "alt": [],
+   "why": "때를 나타내는 부사구를 강조하므로 that을 쓰고 나머지 어순은 그대로 둔다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 강조하는 It ~ that 강조구문으로 문장을 다시 쓰시오.\nThe committee finally accepted <u>his second proposal</u>.",
+   "answer": "It was his second proposal that the committee finally accepted.",
+   "alt": [
+    "It was his second proposal which the committee finally accepted."
+   ],
+   "why": "목적어를 강조하면 that절에는 목적어가 남지 않으며, 사물이므로 which도 가능하다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 말을 한 단어로 쓰시오.\nIt was the woman in the blue coat ____ everyone was waiting for.",
+   "answer": "that",
+   "alt": [
+    "whom",
+    "who"
+   ],
+   "why": "사람을 강조하고 전치사 for의 목적어가 비어 있으므로 that(또는 whom)을 쓴다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nIt was in this very room <u>which</u> the peace treaty was signed.",
+   "answer": "that",
+   "alt": [],
+   "why": "부사구를 강조하는 강조구문이고 뒤 문장이 완전하므로 which가 아니라 that을 써야 한다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 쓰시오. (두 단어)\n내 마음을 바꾼 것은 바로 그녀의 편지였다.\n→ It was ____ that changed my mind.",
+   "answer": "her letter",
+   "alt": [],
+   "why": "강조되는 말은 주어인 '그녀의 편지'이므로 It was와 that 사이에 her letter를 넣는다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 한 단어로 쓰시오.\n우리가 그 진실을 알게 된 것은 바로 어제였다.\n→ It was ____ that we learned the truth.",
+   "answer": "yesterday",
+   "alt": [],
+   "why": "때를 나타내는 부사 yesterday를 It was와 that 사이에 두어 강조한다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 강조하는 It ~ that 강조구문으로 문장을 다시 쓰시오.\n<u>The lack of sleep</u> caused his poor performance.",
+   "answer": "It was the lack of sleep that caused his poor performance.",
+   "alt": [
+    "It was the lack of sleep which caused his poor performance."
+   ],
+   "why": "사물 주어를 강조하므로 that(또는 which)을 쓰고 나머지는 그대로 둔다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nIt is you who <u>needs</u> a long break, not me.",
+   "answer": "need",
+   "alt": [],
+   "why": "who절의 동사는 강조된 you에 맞춰 need로 쓴다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 의문사를 한 단어로 쓰시오.\nA: ____ was it that made you change your mind?   B: A phone call from my sister.",
+   "answer": "What",
+   "alt": [
+    "what"
+   ],
+   "why": "대답이 사물(A phone call)이므로 What이며, 의문사 강조는 <의문사+was it that ...?> 어순이다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nIt ①<u>was</u> the sudden change in temperature ②<u>that</u> ③<u>were</u> responsible for the crack ④<u>in</u> the glass ⑤<u>surface</u>.",
+   "choices": [
+    "was",
+    "that",
+    "were",
+    "in",
+    "surface"
+   ],
+   "answer": 3,
+   "why": "that절의 동사는 강조된 단수 명사구 the sudden change에 수를 맞춰야 하므로 were가 아니라 was여야 한다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\n①<u>It is</u> only when we compare ourselves with others ②<u>which</u> we ③<u>begin</u> to feel ④<u>either</u> proud ⑤<u>or</u> miserable.",
+   "choices": [
+    "It is",
+    "which",
+    "begin",
+    "either",
+    "or"
+   ],
+   "answer": 2,
+   "why": "부사절 only when ~을 강조하는 강조구문이므로 which가 아니라 that을 써야 한다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nIt was ①<u>not</u> the storm ②<u>but</u> the poor design of the roof ③<u>that</u> ④<u>were</u> to blame for the ⑤<u>damage</u>.",
+   "choices": [
+    "not",
+    "but",
+    "that",
+    "were",
+    "damage"
+   ],
+   "answer": 4,
+   "why": "not A but B에서 강조된 말은 단수인 the poor design이므로 that절의 동사는 was여야 한다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nIt ①<u>was</u> in the small fishing village ②<u>that</u> the writer ③<u>spent</u> the winter ④<u>working</u> on the novel ⑤<u>what</u> made him famous.",
+   "choices": [
+    "was",
+    "that",
+    "spent",
+    "working",
+    "what"
+   ],
+   "answer": 5,
+   "why": "the novel을 수식하는 관계대명사 자리이므로 what이 아니라 that[which]을 써야 한다. ②는 부사구를 강조하는 that으로 옳다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nIt ①<u>were</u> the volunteers ②<u>who</u> ③<u>stayed</u> until midnight ④<u>to</u> clean up the beach ⑤<u>after</u> the festival.",
+   "choices": [
+    "were",
+    "who",
+    "stayed",
+    "to",
+    "after"
+   ],
+   "answer": 1,
+   "why": "강조구문의 It은 강조되는 말이 복수여도 언제나 단수이므로 It was로 써야 한다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nIt ①<u>is</u> the constant noise from the construction site ②<u>that</u> ③<u>make</u> it hard ④<u>for</u> residents ⑤<u>to sleep</u> at night.",
+   "choices": [
+    "is",
+    "that",
+    "make",
+    "for",
+    "to sleep"
+   ],
+   "answer": 3,
+   "why": "강조된 주어가 단수 the constant noise이므로 that절의 동사는 makes여야 한다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\n①<u>Why</u> is it ②<u>what</u> so many students ③<u>find</u> it difficult ④<u>to concentrate</u> ⑤<u>during</u> long lectures?",
+   "choices": [
+    "Why",
+    "what",
+    "find",
+    "to concentrate",
+    "during"
+   ],
+   "answer": 2,
+   "why": "의문사를 강조하는 <의문사+is it that ...?> 구문이므로 what이 아니라 that을 써야 한다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 <u>틀린</u> 것은?\nIt ①<u>was</u> a short note from his teacher ②<u>that</u> ③<u>changed</u> the boy's life, and it ④<u>were</u> that moment ⑤<u>that he decided</u> to study harder.",
+   "choices": [
+    "was",
+    "that",
+    "changed",
+    "were",
+    "that he decided"
+   ],
+   "answer": 4,
+   "why": "두 번째 강조구문의 It도 단수이므로 it was that moment that ~으로 써야 한다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 <보기>에서 어법상 옳은 것을 모두 고른 것은?\nㄱ. It was the professor's casual remark that changed the direction of her research.\nㄴ. It is not the money but the freedom what most people are after.\nㄷ. It was not until the third attempt that he passed the driving test.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄴ은 강조구문에 쓸 수 없는 what을 썼으므로 틀리다. ㄱ은 주어 강조, ㄷ은 not until 강조로 모두 옳다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 <보기>에서 어법상 옳은 것을 모두 고른 것은?\nㄱ. It is you and I who are responsible for the final result.\nㄴ. It was the twins whom broke the window during the game.\nㄷ. It is his careless attitude that annoys his coworkers most.",
+   "choices": [
+    "ㄱ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄷ"
+   ],
+   "answer": 5,
+   "why": "ㄴ은 broke의 주어 자리이므로 whom이 아니라 who여야 한다. ㄱ은 you and I에 맞춘 are, ㄷ은 단수 주어에 맞춘 annoys로 옳다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 <보기>에서 어법상 <u>틀린</u> 것을 모두 고른 것은?\nㄱ. It was the letter which arrived that morning that changed his plan.\nㄴ. It were the villagers who first noticed the smoke.\nㄷ. What is it that make her so confident in front of others?",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄴ은 It was로, ㄷ은 단수 주어 it에 맞춰 makes로 고쳐야 한다. ㄱ은 관계사절의 which와 강조구문의 that이 각각 제 역할을 하므로 옳다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 <보기>에서 어법상 옳은 것을 모두 고른 것은?\nㄱ. It was in 1989 that the wall finally came down.\nㄴ. It is not until we lose something that we appreciate its value.\nㄷ. It was to his mother that he wrote his very first letter.",
+   "choices": [
+    "ㄱ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 5,
+   "why": "세 문장 모두 부사구·부사절을 강조한 올바른 It ~ that 강조구문이다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 <보기>에서 밑줄 친 It이 강조구문의 It인 것을 모두 고른 것은?\nㄱ. <u>It</u> is certain that the two companies will merge soon.\nㄴ. <u>It</u> was her quick judgment that saved the injured hiker.\nㄷ. <u>It</u> was on a rainy Tuesday that they first met.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄱ은 that절이 완전한 가주어 구문이고, ㄴ·ㄷ은 It is/was와 that을 빼도 문장이 성립하는 강조구문이다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분을 강조한 것으로 옳은 것을 <보기>에서 모두 고른 것은?\nThey found the missing key <u>under the sofa</u>.\nㄱ. It was under the sofa that they found the missing key.\nㄴ. It was under the sofa which they found the missing key.\nㄷ. It was the missing key that they found under the sofa.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 1,
+   "why": "ㄴ은 부사구 강조에 which를 써서 틀리고, ㄷ은 목적어를 강조한 문장이므로 지시에 맞지 않는다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\n(a) It was Mr. Han who was elected chairman of the club.\n(b) It is the atmosphere of the cafe what I like.\n(c) It was because of you that we finished on time.\n(d) It was the guests who complained about the noise.\n(e) It is I who am responsible for this error.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "(b)만 what을 써서 틀렸고 나머지 네 문장은 관계사·수·시제가 모두 올바르다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 문장의 개수는?\n(a) It was a stranger whom offered to help us with the luggage.\n(b) It is not until midnight that the shop finally closes.\n(c) What is it that you are trying to hide from me?\n(d) It was in the small village that he spent his childhood.\n(e) It is my classmates who is preparing the poster.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "(a)는 주어 자리이므로 who, (e)는 복수 주어에 맞춰 are여야 한다. 나머지 세 문장은 옳다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 It ~ that이 강조구문으로 쓰인 문장의 개수는?\n(a) It is obvious that she has been practicing hard.\n(b) It was the pianist that the audience applauded for.\n(c) It is the second chapter that confuses most readers.\n(d) It was reported that a new species had been found.\n(e) It was with great care that he handled the old book.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "(b)(c)(e)는 강조된 말을 빼면 완전한 문장이 되는 강조구문이고, (a)(d)는 완전한 that절을 받는 가주어 구문이다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\n(a) It was not I but she who was praised by the coach.\n(b) It is his patience which I admire the most.\n(c) It was the day before the exam what I lost my notes.\n(d) Who was it that told you about the schedule change?\n(e) It was the students what organized the whole event.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "(c)는 강조구문에 쓸 수 없는 what을 썼고, (e)는 what 대신 that[who]을 써야 한다. (a)(b)(d)는 옳다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 문장의 개수는?\n(a) It is you who have to decide, not me.\n(b) It was in front of the library that we agreed to meet.\n(c) It was his silence that hurt her more than his words.\n(d) It is not until you try it yourself that you understand.\n(e) It were not the players but the coach who was fined.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 1,
+   "why": "(e)만 It were로 써서 틀렸고, 강조구문의 It은 항상 단수이므로 It was여야 한다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 It ~ that의 쓰임이 나머지 넷과 <u>다른</u> 것은?",
+   "choices": [
+    "It was his stubbornness that cost him the promotion.",
+    "It was a matter of luck that no one was hurt.",
+    "It was the third witness that finally told the truth.",
+    "It is only through practice that real skill is gained.",
+    "It was the map on the wall that caught my attention."
+   ],
+   "answer": 2,
+   "why": "②는 that절이 완전하고 It이 그 절을 대신하는 가주어이다. 나머지는 모두 강조구문이다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 It ~ that이 강조구문으로 쓰인 문장은?",
+   "choices": [
+    "It is doubtful that the plan will work as intended.",
+    "It is essential that every member attend the meeting.",
+    "It was the meeting that every member attended.",
+    "It was clear that the evidence had been altered.",
+    "It is possible that the two events are connected."
+   ],
+   "answer": 3,
+   "why": "③은 attended의 목적어가 비어 있어 목적어를 강조한 강조구문이다. 나머지는 완전한 that절을 받는 가주어 구문이다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 that을 which로 바꿔 쓸 수 <u>없는</u> 것은?",
+   "choices": [
+    "It was the diary <u>that</u> revealed the whole story.",
+    "It is the old bridge <u>that</u> tourists photograph most.",
+    "It was under the desk <u>that</u> the lost ring had rolled.",
+    "It was the report <u>that</u> finally convinced the committee.",
+    "It is this app <u>that</u> saves me the most time every day."
+   ],
+   "answer": 3,
+   "why": "③은 부사구를 강조한 것이어서 뒤 문장이 완전하므로 관계대명사 which로 바꿀 수 없다. 나머지는 사물을 강조해 which가 가능하다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 that을 who로 바꿔 쓸 수 있는 것은?",
+   "choices": [
+    "It was the strong wind <u>that</u> blew the door open.",
+    "It was on Sunday <u>that</u> they left for Jeju.",
+    "It is the results <u>that</u> matter most in the end.",
+    "It is the manager <u>that</u> decides the weekly schedule.",
+    "It was because of the rain <u>that</u> we stayed inside."
+   ],
+   "answer": 4,
+   "why": "④만 강조되는 말이 사람(the manager)이므로 who로 바꿀 수 있다. 나머지는 사물이나 부사구를 강조하고 있다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 It is[was]와 that을 없애고 강조된 말을 제자리로 되돌리면 완전한 문장이 되는 것은?",
+   "choices": [
+    "It is unlikely that he will change his mind now.",
+    "It was her old diary that the detective examined.",
+    "It was a relief that the test had been postponed.",
+    "It is natural that people fear what they don't know.",
+    "It was fortunate that we booked the tickets early."
+   ],
+   "answer": 2,
+   "why": "②만 The detective examined her old diary.라는 완전한 문장이 되므로 강조구문이다. 나머지는 가주어 구문이라 그렇게 되돌릴 수 없다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 It ~ that 강조구문으로 강조할 수 <u>없는</u> 것은?\nThe old man told the children a strange story in the park last night.",
+   "choices": [
+    "The old man",
+    "the children",
+    "a strange story",
+    "told",
+    "in the park"
+   ],
+   "answer": 4,
+   "why": "It ~ that 강조구문은 명사(구)와 부사(구·절)만 강조할 수 있고 동사는 강조할 수 없다. 동사를 강조하려면 do/does/did를 쓴다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그가 자신의 잘못을 인정한 것은 바로 모두가 떠난 뒤였다.",
+   "choices": [
+    "It was after everyone had left when he admitted his fault.",
+    "It was not until everyone left when he admitted his fault.",
+    "It is after everyone had left that he admitted his fault.",
+    "It was after everyone had left which he admitted his fault.",
+    "It was after everyone had left that he admitted his fault."
+   ],
+   "answer": 5,
+   "why": "부사절을 강조하므로 that을 쓰고 과거의 일이므로 It was로 쓴다. when/which는 강조구문에 쓸 수 없다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n우리가 그 계획의 문제점을 깨달은 것은 바로 그 회의에서였다.",
+   "choices": [
+    "It was the meeting that we realized the problem with the plan.",
+    "It was at the meeting which we realized the problem with the plan.",
+    "It was at the meeting that we realized the problem with the plan.",
+    "It was at the meeting what we realized the problem with the plan.",
+    "It was at the meeting where that we realized the problem with the plan."
+   ],
+   "answer": 3,
+   "why": "장소를 나타내려면 전치사를 포함한 at the meeting을 강조하고 that을 쓴다. ①은 전치사가 빠져 뒤 문장과 연결되지 않는다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그 실험을 성공으로 이끈 것은 바로 그녀의 끈기였다.",
+   "choices": [
+    "It was her persistence who led the experiment to success.",
+    "It was her persistence that it led the experiment to success.",
+    "It were her persistence that led the experiment to success.",
+    "It was her persistence that led the experiment to success.",
+    "It was her persistence what led the experiment to success."
+   ],
+   "answer": 4,
+   "why": "사물 주어를 강조하므로 that을 쓰고, It은 단수 was이며 that절에 주어를 다시 쓰지 않는다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n내가 도움을 청한 사람은 바로 그 낯선 사람이었다.",
+   "choices": [
+    "It was the stranger that I asked for help.",
+    "It was the stranger who asked me for help.",
+    "It was the stranger whom asked for my help.",
+    "It was the stranger which I asked for help.",
+    "It was the stranger what I asked for help."
+   ],
+   "answer": 1,
+   "why": "'내가 그에게 부탁했다'는 뜻이므로 asked의 목적어가 빠진 ①이 맞다. ②는 낯선 사람이 부탁한 것이 되어 뜻이 반대이다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그 사실이 밝혀지고 나서야 비로소 사람들은 그를 믿기 시작했다.",
+   "choices": [
+    "It was until the fact was revealed that people began to trust him.",
+    "It was not until the fact was revealed that people began to trust him.",
+    "It was not until the fact was revealed when people began to trust him.",
+    "Not until the fact was revealed that people began to trust him.",
+    "It was not until the fact was revealed that people didn't begin to trust him."
+   ],
+   "answer": 2,
+   "why": "'~하고 나서야 비로소'는 It was not until ~ that ...이며, that절은 긍정문으로 쓴다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 <보기> 중 어법상 <u>틀린</u> 문장은?",
+   "choices": [
+    "It was the article in yesterday's paper that started the whole debate.",
+    "It is only after a long silence that he finally spoke.",
+    "It was those two boys who were seen near the back gate.",
+    "It is the quality of the questions what determines the answers.",
+    "It was to her closest friend that she confessed everything."
+   ],
+   "answer": 4,
+   "why": "강조구문에는 what을 쓸 수 없으므로 that[which]으로 고쳐야 한다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 <보기> 중 어법상 옳은 문장은?",
+   "choices": [
+    "It was the manager, not the workers, who were blamed for the loss.",
+    "It was the manager, not the workers, who was blamed for the loss.",
+    "It were the manager, not the workers, who was blamed for the loss.",
+    "It was the manager, not the workers, whom was blamed for the loss.",
+    "It was the manager, not the workers, which was blamed for the loss."
+   ],
+   "answer": 2,
+   "why": "강조된 말은 삽입어구를 제외한 the manager(단수)이므로 who was가 맞다. 주어 자리이므로 whom은 불가하다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>잘못된</u> 것은?",
+   "choices": [
+    "Where was it that you first heard the rumor?",
+    "How is it that nobody noticed the missing file?",
+    "Why is it that the same problem keeps coming back?",
+    "What it was that made you so angry that day?",
+    "Who was it that suggested changing the schedule?"
+   ],
+   "answer": 4,
+   "why": "의문사 강조 의문문은 <의문사+was it that ...?> 어순이어야 하는데 ④는 it was로 어순이 뒤바뀌었다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 맞는 문장은?",
+   "choices": [
+    "It is not the words but the tone that matter most.",
+    "It is not the words but the tone which matter most.",
+    "It is not the words but the tone that matters most.",
+    "It are not the words but the tone that matters most.",
+    "It is not the words but the tone what matters most."
+   ],
+   "answer": 3,
+   "why": "not A but B에서 강조된 말은 단수 the tone이므로 that matters가 맞다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장 가운데 어법상 옳지 <u>않은</u> 것은?",
+   "choices": [
+    "It was in the attic that the old photographs were found.",
+    "It was the old photographs that were found in the attic.",
+    "It was found in the attic that the old photographs.",
+    "It was last spring that the attic was finally cleaned out.",
+    "It was her grandfather who had stored them there."
+   ],
+   "answer": 3,
+   "why": "③은 강조하려는 말이 that 뒤에 남아 있어 어순이 무너진 문장이다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 오류가 없는 문장은?",
+   "choices": [
+    "It was he whom I believed had stolen the money.",
+    "It was him whom I believed had stolen the money.",
+    "It was he which I believed had stolen the money.",
+    "It was he what I believed had stolen the money.",
+    "It was he who I believed had stolen the money."
+   ],
+   "answer": 5,
+   "why": "I believed는 삽입절이고 뒤의 had stolen의 주어 자리가 비어 있으므로 주격 who를 써야 한다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "It was not until she moved abroad ____ she truly understood her mother's worries.",
+   "choices": [
+    "when",
+    "that",
+    "which",
+    "then",
+    "what"
+   ],
+   "answer": 2,
+   "why": "It was not until ~ that ... 구문이므로 that을 쓴다. when이나 which는 쓸 수 없다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 It ~ that 강조구문으로 바꾼 것으로 알맞은 것은?\nNot until the lights went out did the audience stop talking.",
+   "choices": [
+    "It was not until the lights went out when the audience stopped talking.",
+    "It was not until the lights went out that the audience didn't stop talking.",
+    "It was until the lights went out that the audience stopped talking.",
+    "It was not until did the lights go out that the audience stopped talking.",
+    "It was not until the lights went out that the audience stopped talking."
+   ],
+   "answer": 5,
+   "why": "도치된 Not until 구문을 강조구문으로 바꾸면 It was not until ~ that ...이 되고, 도치는 풀어 평서문 어순으로 쓴다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n• It was in the old workshop ____ the broken violin was repaired.\n• It is not until you leave home ____ you learn to value it.",
+   "choices": [
+    "when",
+    "where",
+    "that",
+    "which",
+    "what"
+   ],
+   "answer": 3,
+   "why": "첫 문장은 부사구 강조, 둘째 문장은 not until 강조이므로 두 빈칸 모두 that이 들어간다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "It is only when the tide goes out ____ you discover who has been swimming without a suit.",
+   "choices": [
+    "when",
+    "that",
+    "which",
+    "then",
+    "what"
+   ],
+   "answer": 2,
+   "why": "only when이 이끄는 부사절을 강조하는 It is ~ that 구문이므로 that이 알맞다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 that의 쓰임이 나머지 넷과 <u>다른</u> 것은?",
+   "choices": [
+    "It was his warning <u>that</u> saved us from the accident.",
+    "It is patience <u>that</u> this job demands above all.",
+    "It was in Jeju <u>that</u> the two of them got engaged.",
+    "It is unlikely <u>that</u> the rumor about him is true.",
+    "It was the recipe <u>that</u> my aunt gave me last year."
+   ],
+   "answer": 4,
+   "why": "④의 that은 가주어 It이 받는 명사절을 이끄는 접속사이고, 나머지는 모두 강조구문의 that이다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nIt (A)[is / are] the small details (B)[that / what] (C)[make / makes] a design memorable.",
+   "choices": [
+    "are – that – make",
+    "is – what – makes",
+    "is – that – make",
+    "is – that – makes",
+    "are – what – makes"
+   ],
+   "answer": 3,
+   "why": "강조구문의 It은 단수 is, 강조구문에는 that을 쓰며, that절의 동사는 복수인 the small details에 맞춰 make로 쓴다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nIt (A)[was / were] not the manager but the interns (B)[who / which] (C)[was / were] praised for the idea.",
+   "choices": [
+    "were – who – were",
+    "was – which – were",
+    "was – who – was",
+    "was – who – were",
+    "were – which – was"
+   ],
+   "answer": 4,
+   "why": "It은 언제나 단수 was, 사람이므로 who, 강조된 말은 not A but B의 B인 the interns(복수)이므로 were를 쓴다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\n(A)[What / That] is it (B)[that / which] (C)[make / makes] this novel so popular among teenagers?",
+   "choices": [
+    "That – which – makes",
+    "What – that – makes",
+    "What – which – make",
+    "What – that – make",
+    "That – that – makes"
+   ],
+   "answer": 2,
+   "why": "의문사 강조는 <의문사+is it that ...?>이며, that절의 주어가 단수 it에 해당하므로 makes를 쓴다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nIt was (A)[in / on] the summer of 1969 (B)[that / when] humans first walked on the moon, and it was Armstrong (C)[who / which] stepped out first.",
+   "choices": [
+    "on – that – who",
+    "in – when – who",
+    "in – that – which",
+    "in – that – who",
+    "on – when – which"
+   ],
+   "answer": 4,
+   "why": "연도·계절 앞에는 in을 쓰고, 부사구 강조에는 that을, 사람 강조에는 who를 쓴다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "(A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?\nIt is not until one (A)[lose / loses] one's freedom (B)[that / when] one (C)[realize / realizes] its true worth.",
+   "choices": [
+    "lose – that – realizes",
+    "loses – when – realizes",
+    "loses – that – realize",
+    "lose – when – realize",
+    "loses – that – realizes"
+   ],
+   "answer": 5,
+   "why": "주어 one은 3인칭 단수이므로 loses·realizes를 쓰고, not until 강조구문이므로 that을 쓴다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 It ~ that 강조구문으로 바꿔 쓰시오.\nNot until the alarm rang did the students stop writing.",
+   "answer": "It was not until the alarm rang that the students stopped writing.",
+   "alt": [],
+   "why": "도치된 Not until 구문을 강조구문으로 바꾸면 It was not until ~ that ...이 되고, 도치를 풀어 평서문 어순으로 쓴다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 It ~ that 강조구문으로 바꿔 쓰시오.\nHe didn't tell the truth until the police showed him the video.",
+   "answer": "It was not until the police showed him the video that he told the truth.",
+   "alt": [],
+   "why": "not ~ until을 강조하면 It was not until ~ that ...이 되며 that절은 긍정문으로 쓴다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 강조하는 It ~ that 강조구문으로 문장을 다시 쓰시오.\nThe detective suspected <u>the gardener</u> from the very beginning.",
+   "answer": "It was the gardener that the detective suspected from the very beginning.",
+   "alt": [
+    "It was the gardener who the detective suspected from the very beginning.",
+    "It was the gardener whom the detective suspected from the very beginning."
+   ],
+   "why": "사람 목적어를 강조하므로 that(또는 who/whom)을 쓰고 that절에는 목적어가 남지 않는다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 강조하는 It ~ that 강조구문으로 문장을 다시 쓰시오.\nThe peace treaty was signed <u>in this very room</u> in 1953.",
+   "answer": "It was in this very room that the peace treaty was signed in 1953.",
+   "alt": [],
+   "why": "장소 부사구를 강조할 때는 전치사까지 함께 앞으로 내고 that을 쓴다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 강조하는 It ~ that 강조구문으로 문장을 다시 쓰시오.\n<u>The volunteers</u> were preparing the meals for the evacuees.",
+   "answer": "It was the volunteers who were preparing the meals for the evacuees.",
+   "alt": [
+    "It was the volunteers that were preparing the meals for the evacuees."
+   ],
+   "why": "It은 언제나 단수 was이지만 관계사절의 동사는 강조된 복수 주어에 맞춰 were로 쓴다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nIt is the students in the front row who <u>keeps</u> asking difficult questions.",
+   "answer": "keep",
+   "alt": [],
+   "why": "who절의 동사는 강조된 the students(복수)에 수를 맞춰 keep으로 쓴다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nIt was not the players but the coach who <u>were</u> criticized by the press.",
+   "answer": "was",
+   "alt": [],
+   "why": "not A but B에서 강조된 말은 단수 the coach이므로 관계사절 동사는 was여야 한다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nIt is you who <u>is</u> to blame for the delay, not your team.",
+   "answer": "are",
+   "alt": [],
+   "why": "who절의 동사는 강조된 you에 맞춰 are로 쓴다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nIt was in the university library <u>which</u> I first met my wife.",
+   "answer": "that",
+   "alt": [],
+   "why": "부사구를 강조하고 뒤 문장이 완전하므로 관계대명사 which가 아니라 that을 써야 한다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nIt is his dry sense of humor <u>what</u> makes him popular at work.",
+   "answer": "that",
+   "alt": [
+    "which"
+   ],
+   "why": "강조구문에는 what을 쓸 수 없고, 사물을 강조했으므로 that 또는 which를 쓴다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 의문사를 강조하는 문장으로 바꿔 쓰시오.\nWhy do people believe such groundless rumors?",
+   "answer": "Why is it that people believe such groundless rumors?",
+   "alt": [],
+   "why": "의문사 강조는 <의문사+is it that+주어+동사 ...?>이며 do는 쓰지 않는다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 의문사를 강조하는 문장으로 바꿔 쓰시오.\nHow did she find out the truth so quickly?",
+   "answer": "How was it that she found out the truth so quickly?",
+   "alt": [],
+   "why": "과거시제이므로 was it을 쓰고, that절 안은 she found out의 평서문 어순으로 쓴다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 주어진 조건에 맞게 영작하시오. (It was로 시작, that 사용, 8단어)\n그를 구한 것은 바로 그녀의 빠른 판단이었다.",
+   "answer": "It was her quick judgment that saved him.",
+   "alt": [
+    "It was her quick judgement that saved him."
+   ],
+   "why": "주어 her quick judgment를 It was와 that 사이에 넣어 강조한다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 전치사를 한 단어로 쓰시오.\n내가 그 진실을 알게 된 것은 바로 그의 침묵을 통해서였다.\n→ It was ____ his silence that I learned the truth.",
+   "answer": "through",
+   "alt": [],
+   "why": "'~을 통해서'라는 뜻의 전치사구 through his silence 전체를 강조한 문장이다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말을 한 단어로 쓰시오.\n• It was his kindness ____ I will never forget.\n• It is not until you fail ____ you really learn.",
+   "answer": "that",
+   "alt": [],
+   "why": "첫 문장은 목적어 강조, 둘째 문장은 not until 강조로 두 빈칸 모두 that이 들어간다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 강조하는 It ~ that 강조구문으로 문장을 다시 쓰시오.\nThe flight was delayed <u>because of a technical problem</u>.",
+   "answer": "It was because of a technical problem that the flight was delayed.",
+   "alt": [],
+   "why": "이유를 나타내는 부사구를 강조하므로 that을 쓰고, 강조한 부사구는 that절에서 뺀다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 It ~ that 강조구문으로 바꿔 쓰시오.\nWe didn't find out the truth until many years later.",
+   "answer": "It was not until many years later that we found out the truth.",
+   "alt": [],
+   "why": "not ~ until의 until 이하를 강조하여 It was not until ~ that ...으로 쓴다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.\nIt was the twins <u>whom</u> won the doubles match yesterday.",
+   "answer": "who",
+   "alt": [
+    "that"
+   ],
+   "why": "won의 주어 자리가 비어 있으므로 목적격 whom이 아니라 주격 who(또는 that)를 써야 한다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 한 단어로 쓰시오.\n우리가 그 결정을 후회한 것은 바로 그때였다.\n→ ____ was then that we regretted the decision.",
+   "answer": "It",
+   "alt": [
+    "it"
+   ],
+   "why": "강조구문은 It is[was] ~ that ...의 형태이므로 빈칸에는 형식상의 주어 It이 들어간다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 강조하는 It ~ that 강조구문으로 문장을 다시 쓰시오. (전치사 to를 사용할 것)\nThe teacher gave <u>Minsu</u> one more chance.",
+   "answer": "It was Minsu that the teacher gave one more chance to.",
+   "alt": [
+    "It was Minsu who the teacher gave one more chance to.",
+    "It was Minsu whom the teacher gave one more chance to."
+   ],
+   "why": "간접목적어를 강조하면 남은 문장에서 to가 필요하므로 gave one more chance to로 쓴다.",
+   "no": 200
+  }
+ ]
+}

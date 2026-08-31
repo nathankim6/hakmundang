@@ -1,0 +1,2595 @@
+{
+ "id": "hs-09",
+ "grade": "고등",
+ "name": "without 가정법·if 생략 도치",
+ "points": [
+  "without/but for = if it were not for",
+  "Had S p.p. 도치",
+  "Were S to-v"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ air, humans could not live for even five minutes. (공기가 없다면 인간은 5분도 살 수 없을 것이다.)",
+   "choices": [
+    "With",
+    "Within",
+    "Beside",
+    "During",
+    "Without"
+   ],
+   "answer": 5,
+   "why": "'~이 없다면'은 Without이며 If it were not for와 같은 뜻이다. With는 '~이 있으면'이라 우리말과 뜻이 반대다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nWithout the moon, the night sky ____ much darker now. (달이 없다면 밤하늘은 지금보다 훨씬 어두울 텐데.)",
+   "choices": [
+    "is",
+    "was",
+    "would have been",
+    "will be",
+    "would be"
+   ],
+   "answer": 5,
+   "why": "Without＋명사가 현재 사실의 반대를 나타내면 주절은 <would＋동사원형>이다. would have been은 과거 사실의 반대라 now와 맞지 않는다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nWithout your quick call, I ____ the meeting last Monday. (네가 재빨리 전화해 주지 않았다면 나는 지난 월요일 회의를 놓쳤을 것이다.)",
+   "choices": [
+    "miss",
+    "missed",
+    "would miss",
+    "would have missed",
+    "will miss"
+   ],
+   "answer": 4,
+   "why": "last Monday라는 과거 시점이므로 과거 사실의 반대인 <would have p.p.>를 쓴다. would miss는 현재 사실의 반대다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nBut for the map, we ____ lost in the forest yesterday. (지도가 없었다면 우리는 어제 숲에서 길을 잃었을 것이다.)",
+   "choices": [
+    "are",
+    "were",
+    "would be",
+    "would have been",
+    "had been"
+   ],
+   "answer": 4,
+   "why": "But for는 Without과 같은 뜻이고, yesterday이므로 <would have p.p.> 형태인 would have been이 맞다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ it not for this old bike, I could not go to school. (이 낡은 자전거가 없다면 나는 학교에 갈 수 없을 것이다.)",
+   "choices": [
+    "Was",
+    "Had",
+    "Is",
+    "Have",
+    "Were"
+   ],
+   "answer": 5,
+   "why": "If it were not for에서 If를 생략하면 were가 앞으로 나와 Were it not for가 된다. 가정법에서 be동사는 주어와 상관없이 were를 쓴다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ it not been for the nurse, he would have been in danger. (그 간호사가 없었다면 그는 위험했을 것이다.)",
+   "choices": [
+    "Were",
+    "Was",
+    "Has",
+    "Did",
+    "Had"
+   ],
+   "answer": 5,
+   "why": "If it had not been for에서 If를 생략한 도치형은 Had it not been for이다. 뒤에 been이 있으므로 Had가 필요하다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nIf it ____ not for her smile, our classroom would feel cold. (그녀의 미소가 없다면 우리 교실은 차갑게 느껴질 텐데.)",
+   "choices": [
+    "is",
+    "were",
+    "had been",
+    "has been",
+    "will be"
+   ],
+   "answer": 2,
+   "why": "주절이 would feel이므로 현재 사실의 반대인 가정법 과거이고, be동사는 were를 쓴다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nIf it had not been for the coach, our team ____ the final game. (그 코치가 없었다면 우리 팀은 결승전에서 이기지 못했을 것이다.)",
+   "choices": [
+    "does not win",
+    "did not win",
+    "would not win",
+    "would not have won",
+    "will not win"
+   ],
+   "answer": 4,
+   "why": "If it had not been for는 과거 사실의 반대이므로 주절은 <would have p.p.>인 would not have won이다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nBut for this heavy rain, our picnic ____ perfect right now. (이 폭우만 없다면 우리 소풍은 지금 완벽할 텐데.)",
+   "choices": [
+    "is",
+    "would be",
+    "would have been",
+    "was",
+    "will be"
+   ],
+   "answer": 2,
+   "why": "right now가 있으므로 현재 사실의 반대인 <would＋동사원형>을 쓴다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nWithout her, our school band ____ nothing. (그녀가 없다면 우리 학교 밴드는 아무것도 아닐 텐데.)",
+   "choices": [
+    "is",
+    "were",
+    "would have been",
+    "will be",
+    "would be"
+   ],
+   "answer": 5,
+   "why": "Without＋명사가 현재 상황의 반대를 가정하므로 주절은 <would＋동사원형>이다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nWere it not for the strong wind, the kite ____ so high now. (강한 바람이 없다면 그 연은 지금 저렇게 높이 날지 못할 텐데.)",
+   "choices": [
+    "does not fly",
+    "did not fly",
+    "would not have flown",
+    "will not fly",
+    "would not fly"
+   ],
+   "answer": 5,
+   "why": "Were it not for는 현재 사실의 반대이므로 주절은 <would＋동사원형>이다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nHad it not been for the seat belt, the driver ____ badly hurt. (안전벨트가 없었다면 그 운전자는 심하게 다쳤을 것이다.)",
+   "choices": [
+    "is",
+    "was",
+    "would be",
+    "would have been",
+    "had been"
+   ],
+   "answer": 4,
+   "why": "Had it not been for는 과거 사실의 반대이므로 주절은 <would have p.p.>를 쓴다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ I rich, I would buy a small island. (내가 부자라면 작은 섬을 살 텐데.)",
+   "choices": [
+    "Was",
+    "Am",
+    "Had",
+    "Were",
+    "Do"
+   ],
+   "answer": 4,
+   "why": "If I were rich에서 If를 생략하면 were가 주어 앞으로 나와 Were I rich가 된다. 가정법 과거에서는 was를 쓰지 않는다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ I known your address, I would have sent you a card.",
+   "choices": [
+    "Were",
+    "Had",
+    "Was",
+    "Have",
+    "Did"
+   ],
+   "answer": 2,
+   "why": "If I had known에서 If를 생략한 도치형은 Had I known이다. 뒤에 known(p.p.)이 오므로 Had가 맞다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ you need any help, please call this number.",
+   "choices": [
+    "Would",
+    "Were",
+    "Did",
+    "Do",
+    "Should"
+   ],
+   "answer": 5,
+   "why": "If you should need에서 If를 생략하면 Should you need가 된다. 뒤에 동사원형 need가 오므로 Should가 알맞다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nIf I were you, I would say sorry first. ＝ ____ I you, I would say sorry first.",
+   "choices": [
+    "Was",
+    "Were",
+    "Had",
+    "Am",
+    "Do"
+   ],
+   "answer": 2,
+   "why": "If를 생략하면 were가 주어 I 앞으로 나온다. 가정법의 be동사는 언제나 were이다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nHad he studied harder, he ____ the exam. (그가 더 열심히 공부했다면 시험에 합격했을 것이다.)",
+   "choices": [
+    "passes",
+    "passed",
+    "would pass",
+    "would have passed",
+    "will pass"
+   ],
+   "answer": 4,
+   "why": "Had he studied는 If he had studied의 도치형이므로 주절은 <would have p.p.>이다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nWere I a bird, I ____ to you right now.",
+   "choices": [
+    "fly",
+    "flew",
+    "would have flown",
+    "would fly",
+    "will fly"
+   ],
+   "answer": 4,
+   "why": "Were I a bird는 현재 사실의 반대를 가정하므로 주절은 <would＋동사원형>이다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ it rain tomorrow, we will move the party indoors.",
+   "choices": [
+    "Were",
+    "Had",
+    "Would",
+    "Did",
+    "Should"
+   ],
+   "answer": 5,
+   "why": "미래의 가능성이 낮은 일은 If it should rain으로 쓰고, If를 생략하면 Should it rain이 된다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nWere I to live my life again, I ____ the same job.",
+   "choices": [
+    "choose",
+    "chose",
+    "would have chosen",
+    "would choose",
+    "have chosen"
+   ],
+   "answer": 4,
+   "why": "<Were＋주어＋to부정사>는 미래의 일을 가정하는 형태로, 주절에는 <would＋동사원형>을 쓴다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ I to meet a ghost, I would scream. (내가 유령을 만난다면 나는 소리를 지를 것이다.)",
+   "choices": [
+    "Was",
+    "Had",
+    "Should",
+    "Do",
+    "Were"
+   ],
+   "answer": 5,
+   "why": "빈칸 뒤가 <I to meet>이므로 <Were＋주어＋to-v> 구문이다. Should는 뒤에 동사원형이 와야 하므로 to meet과 쓸 수 없다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은?",
+   "choices": [
+    "Was it not for the sun, nothing could grow.",
+    "Were it not for the sun, nothing could grow.",
+    "Were it not been for the sun, nothing could grow.",
+    "Had it not for the sun, nothing could grow.",
+    "If it not were for the sun, nothing could grow."
+   ],
+   "answer": 2,
+   "why": "If it were not for의 도치형은 Were it not for이다. was는 쓰지 않고, were 뒤에 been을 덧붙이지도 않는다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "Had not it been for her, I would have failed.",
+    "Had it not been for her, I would have failed.",
+    "Hadn't it been for her, I would have failed.",
+    "Had it were not for her, I would have failed.",
+    "Have it not been for her, I would have failed."
+   ],
+   "answer": 2,
+   "why": "도치된 가정법에서 not은 주어 뒤에 오고 축약형(Hadn't)은 쓸 수 없으므로 Had it not been for가 옳다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 알맞은 것은?",
+   "choices": [
+    "Were I were you, I would apologize.",
+    "Was I you, I would apologize.",
+    "Were I you, I will apologize.",
+    "If I were you, I would apologize.",
+    "If I was you, I would apologized."
+   ],
+   "answer": 4,
+   "why": "가정법 과거는 <If＋주어＋were ~, 주어＋would＋동사원형>이다. 도치하면 Were I you가 되며 were를 두 번 쓰지 않는다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은?",
+   "choices": [
+    "Without your help, I could not finish this now.",
+    "But for his advice, I would have quit.",
+    "Were it not for her, the team would lose.",
+    "Had it not been for the rain, we would have played.",
+    "Did it not for the snow, we would go out."
+   ],
+   "answer": 5,
+   "why": "'~이 없다면'의 도치형은 Were it not for이며 Did를 쓰는 형태는 없다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳지 않은 것은?",
+   "choices": [
+    "Should you have any questions, ask me.",
+    "Were I to start over, I would study art.",
+    "Had I know the truth, I would have told you.",
+    "Without air, we could not breathe.",
+    "But for the fog, the plane would have landed safely."
+   ],
+   "answer": 3,
+   "why": "Had＋주어 뒤에는 과거분사가 와야 하므로 know가 아니라 known이 되어야 한다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\n① <u>Were</u> it ② <u>not</u> for my dog, my house ③ <u>would</u> ④ <u>been</u> very quiet. I ⑤ <u>love</u> him a lot.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 4,
+   "why": "주절이 <would＋동사원형>이어야 하므로 been이 아니라 be가 되어야 한다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\n① <u>Had</u> it not ② <u>be</u> for the map, we ③ <u>would</u> have ④ <u>lost</u> our way in the woods ⑤ <u>last</u> night.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 2,
+   "why": "Had 뒤에는 과거분사가 와야 하므로 be가 아니라 been이 되어야 한다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\n① <u>Without</u> your call, I ② <u>would</u> ③ <u>have</u> ④ <u>sleep</u> until noon ⑤ <u>this</u> morning.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 4,
+   "why": "과거 사실의 반대는 <would have p.p.>이므로 sleep이 아니라 slept가 되어야 한다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\n① <u>Should</u> you ② <u>needed</u> any help, ③ <u>call</u> the front desk ④ <u>at</u> any time ⑤ <u>during</u> your stay.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 2,
+   "why": "Should＋주어 뒤에는 동사원형이 오므로 needed가 아니라 need가 되어야 한다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말로 알맞게 짝지어진 것은?\n· ____(A) it not for maps, travelers would get lost easily.\n· ____(B) it not been for maps, the old sailors would have been lost at sea.",
+   "choices": [
+    "(A) Was - (B) Had",
+    "(A) Were - (B) Have",
+    "(A) Had - (B) Were",
+    "(A) Were - (B) Was",
+    "(A) Were - (B) Had"
+   ],
+   "answer": 5,
+   "why": "현재 사실의 반대는 Were it not for, 과거 사실의 반대는 Had it not been for이다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말로 알맞게 짝지어진 것은?\n· ____(A) your umbrella, I would have got wet in the rain. (네 우산이 없었다면 ~)\n· Were it not ____(B) your umbrella, I would be wet now.",
+   "choices": [
+    "(A) With - (B) for",
+    "(A) Without - (B) for",
+    "(A) Unless - (B) to",
+    "(A) Without - (B) to",
+    "(A) But - (B) of"
+   ],
+   "answer": 2,
+   "why": "'~이 없었다면'은 Without이고, 도치 구문은 Were it not for로 for와 짝을 이룬다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말로 알맞게 짝지어진 것은?\n· ____(A) I you, I would take the earlier train.\n· ____(B) I known it, I would have told you at once.",
+   "choices": [
+    "(A) Was - (B) Had",
+    "(A) Were - (B) Have",
+    "(A) Had - (B) Were",
+    "(A) Were - (B) Had",
+    "(A) Am - (B) Had"
+   ],
+   "answer": 4,
+   "why": "If I were you의 도치는 Were I you, If I had known의 도치는 Had I known이다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말로 알맞게 짝지어진 것은?\n· Should you ____(A) late, please text me.\n· Were you ____(B) start now, you could finish by six.",
+   "choices": [
+    "(A) to be - (B) to",
+    "(A) being - (B) to",
+    "(A) be - (B) for",
+    "(A) are - (B) to",
+    "(A) be - (B) to"
+   ],
+   "answer": 5,
+   "why": "Should 뒤에는 동사원형 be가 오고, <Were＋주어＋to부정사>이므로 to start가 된다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그의 도움이 없었다면 나는 그 문제를 풀지 못했을 것이다.",
+   "choices": [
+    "Without his help, I could not solve the problem.",
+    "Without his help, I could not have solved the problem.",
+    "Without his help, I cannot solve the problem.",
+    "With his help, I could not have solved the problem.",
+    "Without his help, I would not solving the problem."
+   ],
+   "answer": 2,
+   "why": "과거 사실의 반대이므로 주절은 <조동사 과거형＋have p.p.>인 could not have solved가 되어야 한다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n물이 없다면 지구의 어떤 것도 살 수 없을 것이다.",
+   "choices": [
+    "Was it not for water, nothing on Earth could live.",
+    "Were it not for water, nothing on Earth could live.",
+    "Had it not been for water, nothing on Earth could live.",
+    "Were it not for water, nothing on Earth could have lived.",
+    "If it were not water, nothing on Earth could live."
+   ],
+   "answer": 2,
+   "why": "현재 사실의 반대이므로 Were it not for＋주절 <could＋동사원형>이다. ③은 과거, ④는 과거의 결과를 나타내어 뜻이 다르다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n네 조언이 없었다면 나는 큰 실수를 했을 것이다.",
+   "choices": [
+    "But for your advice, I would make a big mistake.",
+    "But for your advice, I would have made a big mistake.",
+    "But your advice, I would have made a big mistake.",
+    "For your advice, I would have made a big mistake.",
+    "But for your advice, I have made a big mistake."
+   ],
+   "answer": 2,
+   "why": "But for는 Without과 같은 뜻이며, 과거 사실의 반대이므로 <would have p.p.>를 쓴다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n내가 새라면 너에게 날아갈 텐데.",
+   "choices": [
+    "Was I a bird, I would fly to you.",
+    "Were I a bird, I will fly to you.",
+    "Had I a bird, I would fly to you.",
+    "Were I a bird, I would fly to you.",
+    "Were I to a bird, I would fly to you."
+   ],
+   "answer": 4,
+   "why": "If I were a bird의 도치형은 Were I a bird이고 주절은 <would＋동사원형>이다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· ____ it not for you, I would be all alone.\n· ____ I you, I would try again.",
+   "choices": [
+    "Was",
+    "Had",
+    "Should",
+    "If",
+    "Were"
+   ],
+   "answer": 5,
+   "why": "둘 다 가정법 과거의 도치 구문이므로 were가 앞으로 나온 Were가 공통으로 들어간다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· ____ it not been for the alarm, I would have overslept.\n· ____ she left home earlier, she would have caught the bus.",
+   "choices": [
+    "Were",
+    "Had",
+    "Was",
+    "Should",
+    "Have"
+   ],
+   "answer": 2,
+   "why": "둘 다 과거 사실의 반대인 가정법 과거완료의 도치형이므로 Had가 들어간다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· ____ you need more time, just tell me.\n· ____ anyone call while I am out, please take a message.",
+   "choices": [
+    "Should",
+    "Were",
+    "Had",
+    "Would",
+    "Do"
+   ],
+   "answer": 1,
+   "why": "혹시 일어날지 모르는 일을 가정하는 If ~ should의 도치형이므로 Should가 알맞다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: I feel so tired today.\nB: ____ it not for that late movie, you would feel fine now.",
+   "choices": [
+    "Were",
+    "Was",
+    "Had",
+    "Should",
+    "Do"
+   ],
+   "answer": 1,
+   "why": "지금 사실의 반대를 가정하므로 Were it not for가 알맞다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Thanks for waking me up this morning.\nB: ____ it not been for my call, you would have been late again.",
+   "choices": [
+    "Were",
+    "Had",
+    "Was",
+    "Have",
+    "Did"
+   ],
+   "answer": 2,
+   "why": "been이 뒤에 오고 주절이 would have been이므로 과거 사실의 반대인 Had it not been for가 맞다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: What would you do with a million dollars?\nB: ____ I to get that much money, I would travel the world.",
+   "choices": [
+    "Were",
+    "Was",
+    "Had",
+    "Am",
+    "Do"
+   ],
+   "answer": 1,
+   "why": "<Were＋주어＋to부정사>는 미래의 일을 가정하는 도치 구문이다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Do I have to bring an umbrella?\nB: ____ it rain in the afternoon, you will need one.",
+   "choices": [
+    "Should",
+    "Were",
+    "Had",
+    "Would",
+    "Was"
+   ],
+   "answer": 1,
+   "why": "If it should rain의 도치형이므로 Should it rain이 알맞다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nⓐ Were it not for the sun, we could not live.\nⓑ Was it not for the sun, we could not live.\nⓒ Had it not been for the sun, life would not have started.\nⓓ Had not it been for the sun, life would not have started.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ⓐ, ⓒ가 옳다. ⓑ는 was를 쓸 수 없고, ⓓ는 not이 주어 it 뒤에 와야 한다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nⓐ Were I you, I would take a rest.\nⓑ Was I you, I would take a rest.\nⓒ Had I known, I would have helped you.\nⓓ Should you need me, call anytime.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 4,
+   "why": "ⓐ, ⓒ, ⓓ가 옳고 ⓑ만 틀리다. 가정법의 be동사는 was가 아니라 were이다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nⓐ Without your smile, my day would be dark.\nⓑ Without your smile, my day will be dark.\nⓒ But for the storm, we would have arrived early.\nⓓ But for the storm, we would arrived early.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ⓐ, ⓒ가 옳다. ⓑ는 가정법에 will을 쓸 수 없고, ⓓ는 would 뒤에 동사원형 또는 have p.p.가 와야 한다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오.\n____ it not for the sun, no plants could grow.",
+   "answer": "Were",
+   "why": "If it were not for에서 If를 생략하면 were가 앞으로 나온다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오.\n____ it not been for your help, I would have failed the test.",
+   "answer": "Had",
+   "why": "If it had not been for의 If를 생략한 도치형은 Had it not been for이다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nWithout your advice, I (make) a big mistake last week.",
+   "answer": "would have made",
+   "why": "last week이므로 과거 사실의 반대인 <would have p.p.>를 쓴다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오. (두 단어)\nWithout air, we (be) unable to live. (공기가 없다면 우리는 살 수 없을 것이다.)",
+   "answer": "would be",
+   "why": "현재 사실의 반대이므로 <would＋동사원형>인 would be를 쓴다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n<u>Was</u> it not for music, my life would be boring.",
+   "answer": "Were",
+   "why": "가정법에서는 주어와 상관없이 were를 쓰므로 Were it not for가 되어야 한다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nHad it not <u>be</u> for the doctor, he would have died.",
+   "answer": "been",
+   "why": "Had 뒤에는 과거분사가 와야 하므로 been이 맞다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 If를 생략한 도치 문장으로 바꿔 쓰시오.\nIf it were not for water, nothing could live.",
+   "answer": "Were it not for water, nothing could live.",
+   "why": "If를 생략하면 were가 주어 it 앞으로 나온다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 If를 생략한 도치 문장으로 바꿔 쓰시오.\nIf it had not been for the map, we would have been lost.",
+   "answer": "Had it not been for the map, we would have been lost.",
+   "why": "If를 생략하면 had가 주어 it 앞으로 나오고 not은 그대로 주어 뒤에 남는다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 If를 생략한 도치 문장으로 바꿔 쓰시오.\nIf I were you, I would say sorry.",
+   "answer": "Were I you, I would say sorry.",
+   "why": "If를 생략하면 <Were＋주어> 어순이 된다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 If를 생략한 도치 문장으로 바꿔 쓰시오.\nIf I had known the truth, I would have told you.",
+   "answer": "Had I known the truth, I would have told you.",
+   "why": "If를 생략하면 had가 주어 앞으로 나온다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 If를 생략한 도치 문장으로 바꿔 쓰시오.\nIf you should need help, call me.",
+   "answer": "Should you need help, call me.",
+   "why": "If ~ should의 If를 생략하면 Should가 주어 앞으로 나온다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 빈칸에 알맞은 네 단어를 쓰시오.\nWithout your help, I could not finish this work.\n＝ ____ for your help, I could not finish this work.",
+   "answer": "If it were not",
+   "alt": [
+    "Were it not"
+   ],
+   "why": "Without＝If it were not for＝Were it not for이다. 현재 사실의 반대이므로 were를 쓴다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 빈칸에 알맞은 네 단어를 쓰시오.\nWithout the coach, we would have lost the game.\n＝ ____ for the coach, we would have lost the game.",
+   "answer": "Had it not been",
+   "why": "과거 사실의 반대이므로 If it had not been for의 도치형인 Had it not been for를 쓴다. 네 단어이므로 Had it not been이 답이다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말에 맞게 빈칸에 알맞은 한 단어를 쓰시오.\n그가 없다면 우리 팀은 약할 것이다.\n____ him, our team would be weak.",
+   "answer": "Without",
+   "why": "'~이 없다면'은 전치사 Without으로 나타낸다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n<u>Had</u> it not for the rain, we would go out now.",
+   "answer": "Were",
+   "why": "주절이 would go이므로 현재 사실의 반대이고, been이 없으므로 Were it not for가 되어야 한다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오.\n____ I to start my life over, I would learn the piano.",
+   "answer": "Were",
+   "why": "<Were＋주어＋to부정사>는 미래의 일을 가정하는 도치 구문이다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nHad he (leave) earlier, he would have caught the train.",
+   "answer": "left",
+   "why": "Had＋주어 뒤에는 과거분사가 오므로 left가 맞다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nShould you (see) Mina today, tell her to call me.",
+   "answer": "see",
+   "why": "Should＋주어 뒤에는 동사원형이 온다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 If를 생략한 도치 문장이 되도록 빈칸에 알맞은 한 단어를 쓰시오.\nIf it should rain, the game will be canceled.\n＝ ____ it rain, the game will be canceled.",
+   "answer": "Should",
+   "why": "If ~ should의 도치형은 Should＋주어＋동사원형이다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (두 단어)\nBut for the traffic jam, we would <u>arrive</u> on time this morning.",
+   "answer": "have arrived",
+   "why": "this morning은 이미 지난 시간이므로 과거 사실의 반대인 <would have p.p.>를 써야 한다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nWithout the invention of the printing press, knowledge ____ far more slowly through sixteenth-century Europe.",
+   "choices": [
+    "spread",
+    "would spread",
+    "would have spread",
+    "will spread",
+    "had spread"
+   ],
+   "answer": 3,
+   "why": "16세기라는 과거 사실의 반대를 가정하므로 <would have p.p.>를 쓴다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nBut for the volunteers who showed up last weekend, the shelter ____ forced to close.",
+   "choices": [
+    "is",
+    "was",
+    "would be",
+    "would have been",
+    "will be"
+   ],
+   "answer": 4,
+   "why": "last weekend의 일이므로 과거 사실의 반대인 <would have p.p.>가 필요하다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nWere it not for the coral reefs, thousands of marine species ____ nowhere to live today.",
+   "choices": [
+    "have",
+    "had",
+    "would have",
+    "would have had",
+    "will have"
+   ],
+   "answer": 3,
+   "why": "Were it not for는 현재 사실의 반대이고 today가 있으므로 <would＋동사원형>이다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nHad it not been for the fire drill last month, the students ____ where to go when the alarm rang.",
+   "choices": [
+    "do not know",
+    "would not know",
+    "would not have known",
+    "did not know",
+    "will not know"
+   ],
+   "answer": 3,
+   "why": "Had it not been for는 과거 사실의 반대이므로 주절은 <would have p.p.>이다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ it not for the subway, commuting in this city would be a nightmare.",
+   "choices": [
+    "Were",
+    "Was",
+    "Had",
+    "Should",
+    "Have"
+   ],
+   "answer": 1,
+   "why": "주절이 would be이므로 현재 사실의 반대이고, 도치형은 Were it not for이다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ it not been for the sudden storm, the climbers would have reached the summit.",
+   "choices": [
+    "Were",
+    "Was",
+    "Had",
+    "Have",
+    "Should"
+   ],
+   "answer": 3,
+   "why": "been과 would have reached가 있으므로 과거 사실의 반대인 Had it not been for가 맞다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ the government to raise taxes next year, small businesses would suffer badly.",
+   "choices": [
+    "Were",
+    "Was",
+    "Had",
+    "Should be",
+    "Being"
+   ],
+   "answer": 1,
+   "why": "<Were＋주어＋to부정사>는 미래의 일을 가정하는 도치 구문이다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ the committee reject the proposal, we will present a revised version next month.",
+   "choices": [
+    "Should",
+    "Were",
+    "Had",
+    "Would",
+    "Did"
+   ],
+   "answer": 1,
+   "why": "가능성이 낮은 미래를 가정하는 If ~ should의 도치형이며, 뒤에 동사원형 reject가 온다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nWere I to describe my grandmother in one word, it ____ 'generous.'",
+   "choices": [
+    "is",
+    "was",
+    "would be",
+    "would have been",
+    "will be"
+   ],
+   "answer": 3,
+   "why": "Were＋주어＋to-v의 주절에는 <would＋동사원형>을 쓴다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nHad the doctor arrived ten minutes later, the patient ____ the night.",
+   "choices": [
+    "may not survive",
+    "might not survive",
+    "might not have survived",
+    "will not survive",
+    "did not survive"
+   ],
+   "answer": 3,
+   "why": "가정법 과거완료의 주절이므로 <조동사 과거형＋have p.p.>인 might not have survived가 맞다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nWithout smartphones, we ____ so dependent on instant answers today.",
+   "choices": [
+    "are not",
+    "were not",
+    "would not be",
+    "would not have been",
+    "will not be"
+   ],
+   "answer": 3,
+   "why": "today가 있으므로 현재 사실의 반대이고 주절은 <would＋동사원형>이다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nBut for a lucky guess on the final question, Daniel ____ the quiz contest last night.",
+   "choices": [
+    "loses",
+    "lost",
+    "would lose",
+    "would have lost",
+    "will lose"
+   ],
+   "answer": 4,
+   "why": "last night이라는 과거 시점이므로 <would have p.p.>를 쓴다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nIf it ____ not for the strict deadline, the team would take another month to finish.",
+   "choices": [
+    "is",
+    "were",
+    "had been",
+    "has been",
+    "was being"
+   ],
+   "answer": 2,
+   "why": "주절이 would take이므로 가정법 과거이고, be동사는 were를 쓴다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nWithout the volunteers' effort, the town festival ____ canceled last year.",
+   "choices": [
+    "is",
+    "was",
+    "would be",
+    "would have been",
+    "has been"
+   ],
+   "answer": 4,
+   "why": "last year의 사실과 반대되는 가정이므로 <would have p.p.>인 would have been이 맞다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 바른 것은?",
+   "choices": [
+    "Were it not been for the scholarship, she could not attend college.",
+    "Had it not for the scholarship, she could not have attended college.",
+    "Were it not for the scholarship, she could not attend college.",
+    "Was it not for the scholarship, she could not attend college.",
+    "If it were not the scholarship, she could not attend college."
+   ],
+   "answer": 3,
+   "why": "Were it not for 뒤에 been을 쓰지 않으며, Had 뒤에는 been이 있어야 하고, for를 빠뜨려서도 안 된다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳게 쓰인 문장은?",
+   "choices": [
+    "Was I not warned, I would have walked into the trap.",
+    "Had I not been warned, I would have walked into the trap.",
+    "Have I not been warned, I would have walked into the trap.",
+    "If I had not warned, I would have walked into the trap.",
+    "Had not I been warned, I would have walked into the trap."
+   ],
+   "answer": 2,
+   "why": "가정법 과거완료의 도치형은 <Had＋주어＋(not)＋p.p.>이고 not은 주어 뒤에 온다. Was나 Have로 도치할 수 없고, warn은 수동태 been warned가 되어야 한다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 것은?",
+   "choices": [
+    "Should any problem arise, contact the manager immediately.",
+    "Were the earth to stop spinning, life would end instantly.",
+    "Had the letter arrived on time, everything would have been different.",
+    "Were it not for insects, many plants could not reproduce.",
+    "Without the guide, we would have been climb the wrong path."
+   ],
+   "answer": 5,
+   "why": "would have been 뒤에 동사원형 climb을 쓸 수 없다. would have climbed가 되어야 한다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 바르지 않은 것은?",
+   "choices": [
+    "But for the lifeguard, the swimmer might have drowned.",
+    "Without the lifeguard, the swimmer might drown.",
+    "Were it not for the lifeguard, the swimmer might drown.",
+    "Had it not been for the lifeguard, the swimmer might have drowned.",
+    "Should it not been for the lifeguard, the swimmer might have drowned."
+   ],
+   "answer": 5,
+   "why": "'~이 없었다면'의 도치형은 Had it not been for이며 Should를 쓰는 형태는 없다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 옳은 문장을 고르시오.",
+   "choices": [
+    "Were the sun to rise in the west, I would still love you.",
+    "Was the sun to rise in the west, I would still love you.",
+    "Were the sun rise in the west, I would still love you.",
+    "Should the sun to rise in the west, I would still love you.",
+    "Had the sun to rise in the west, I would still love you."
+   ],
+   "answer": 1,
+   "why": "미래의 강한 가정은 <Were＋주어＋to부정사>로 쓴다. was를 쓰거나 to를 빠뜨리면 안 된다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법이 옳은 것은?",
+   "choices": [
+    "Without the rain, the crops would have died last summer.",
+    "Without the rain, the crops would died last summer.",
+    "Without the rain, the crops will have died last summer.",
+    "Without of the rain, the crops would have died last summer.",
+    "Without the rain, the crops would have die last summer."
+   ],
+   "answer": 1,
+   "why": "Without은 전치사이므로 of를 붙이지 않고, 과거 사실의 반대는 <would have p.p.>이다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 틀린 문장을 고르시오.",
+   "choices": [
+    "Were she to apply now, she would still have a chance.",
+    "Should you change your mind, let me know.",
+    "Had they listened to the forecast, they would have stayed home.",
+    "Were it not for the tunnel, the trip would take five hours.",
+    "Had it not been for the tunnel, the trip would take five hours yesterday."
+   ],
+   "answer": 5,
+   "why": "yesterday가 있으므로 주절도 would have taken이 되어야 한다. would take는 현재의 결과를 나타낸다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 정확한 문장은?",
+   "choices": [
+    "But for the moon's gravity, the tides would not exist.",
+    "But for the moon's gravity, the tides will not exist.",
+    "But the moon's gravity, the tides would not exist.",
+    "But for the moon's gravity, the tides would not existed.",
+    "But for the moon's gravity, the tides do not exist."
+   ],
+   "answer": 1,
+   "why": "But for는 '~이 없다면'이라는 뜻의 전치사구이며, 주절은 <would＋동사원형>이다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nFarmers here depend on the river. ① <u>Were</u> it ② <u>not</u> for the seasonal floods, the soil ③ <u>would</u> lose its richness, and the harvest ④ <u>would have been</u> much smaller ⑤ <u>every</u> year.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 4,
+   "why": "Were it not for는 현재 사실의 반대이므로 주절도 would be가 되어야 한다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\n① <u>Had</u> the engineers not ② <u>checked</u> the bridge last month, the accident ③ <u>would</u> ④ <u>happen</u> yesterday, and hundreds ⑤ <u>would have been</u> hurt.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 4,
+   "why": "과거 사실의 반대이므로 would have happened가 되어야 한다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\n① <u>Should</u> you ② <u>to receive</u> a suspicious e-mail, do not click any link. ③ <u>Were</u> it not for such warnings, many users ④ <u>would</u> ⑤ <u>lose</u> their personal data.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 2,
+   "why": "Should＋주어 뒤에는 동사원형이 오므로 receive가 맞다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\nThe library was saved by donors. ① <u>Had</u> it not ② <u>been</u> for their gifts, the building ③ <u>would</u> ④ <u>have</u> ⑤ <u>close</u> in 2019.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 5,
+   "why": "would have 뒤에는 과거분사가 와야 하므로 closed가 되어야 한다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\n① <u>Without</u> the invention of vaccines, millions of children ② <u>would have died</u> in the last century, and medicine ③ <u>would look</u> completely different ④ <u>today</u>. ⑤ <u>Was</u> it not for scientists, we would still fear these diseases.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 5,
+   "why": "가정법에서는 was를 쓸 수 없으므로 Were it not for가 되어야 한다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\n① <u>Were</u> the company ② <u>to move</u> its factory abroad, thousands of workers ③ <u>will</u> lose their jobs, and the town's economy ④ <u>would</u> ⑤ <u>collapse</u>.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "<Were＋주어＋to-v>의 주절에는 will이 아니라 would를 쓴다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말로 알맞게 짝지어진 것은?\n· ____(A) it not for the ozone layer, harmful rays would reach the surface.\n· ____(B) it not been for the 1987 treaty, the hole would have grown much larger.",
+   "choices": [
+    "(A) Were - (B) Had",
+    "(A) Was - (B) Had",
+    "(A) Were - (B) Have",
+    "(A) Had - (B) Were",
+    "(A) Should - (B) Had"
+   ],
+   "answer": 1,
+   "why": "현재의 가정은 Were it not for, 과거의 가정은 Had it not been for이다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말로 알맞게 짝지어진 것은?\n· Without the translator, last week's meeting ____(A) impossible.\n· Without the translator, this meeting ____(B) impossible right now.",
+   "choices": [
+    "(A) would have been - (B) would be",
+    "(A) would be - (B) would have been",
+    "(A) would have been - (B) would have been",
+    "(A) would be - (B) would be",
+    "(A) was - (B) is"
+   ],
+   "answer": 1,
+   "why": "지난주의 일은 <would have p.p.>, 지금의 일은 <would＋동사원형>으로 나타낸다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말로 알맞게 짝지어진 것은?\n· ____(A) you have any complaints, please fill out this form.\n· ____(B) I to sit on the committee, I would ask for more data.",
+   "choices": [
+    "(A) Should - (B) Were",
+    "(A) Were - (B) Should",
+    "(A) Had - (B) Were",
+    "(A) Should - (B) Was",
+    "(A) Would - (B) Were"
+   ],
+   "answer": 1,
+   "why": "동사원형 have 앞에는 Should, to부정사와 함께 쓰는 도치는 Were＋주어＋to-v이다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말로 알맞게 짝지어진 것은?\nHad it not ____(A) for the storm, the ship ____(B) the harbor safely.",
+   "choices": [
+    "(A) been - (B) would have reached",
+    "(A) be - (B) would have reached",
+    "(A) been - (B) would reach",
+    "(A) being - (B) would have reached",
+    "(A) been - (B) will reach"
+   ],
+   "answer": 1,
+   "why": "Had it not been for에 <would have p.p.> 주절이 짝을 이룬다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그 지도가 없었다면 우리는 그 유적을 결코 찾지 못했을 것이다.",
+   "choices": [
+    "But for the map, we would never find the ruins.",
+    "But for the map, we would never have found the ruins.",
+    "But the map, we would never have found the ruins.",
+    "Without of the map, we would never have found the ruins.",
+    "But for the map, we will never have found the ruins."
+   ],
+   "answer": 2,
+   "why": "과거 사실의 반대이므로 But for＋<would have p.p.>가 되어야 한다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n만약 태양이 내일 사라진다면 지구는 곧 얼어붙을 것이다.",
+   "choices": [
+    "Were the sun to disappear tomorrow, the earth would soon freeze.",
+    "Was the sun to disappear tomorrow, the earth would soon freeze.",
+    "Were the sun disappear tomorrow, the earth would soon freeze.",
+    "Had the sun to disappear tomorrow, the earth would soon freeze.",
+    "Were the sun to disappear tomorrow, the earth will soon freeze."
+   ],
+   "answer": 1,
+   "why": "실현 가능성이 희박한 미래는 <Were＋주어＋to-v ~, 주어＋would＋동사원형>으로 쓴다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n네가 그때 나를 깨워 주지 않았더라면 나는 비행기를 놓쳤을 것이다.",
+   "choices": [
+    "Had you not woken me up then, I would have missed the flight.",
+    "Had not you woken me up then, I would have missed the flight.",
+    "Have you not woken me up then, I would have missed the flight.",
+    "Had you not wake me up then, I would have missed the flight.",
+    "Were you not woken me up then, I would have missed the flight."
+   ],
+   "answer": 1,
+   "why": "가정법 과거완료의 도치에서 not은 주어 뒤에 오고 Had 뒤에는 과거분사가 온다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n전기가 없다면 현대 도시는 몇 시간 만에 멈출 것이다.",
+   "choices": [
+    "Were it not for electricity, modern cities would stop within hours.",
+    "Was it not for electricity, modern cities would stop within hours.",
+    "Were it not electricity, modern cities would stop within hours.",
+    "Were not it for electricity, modern cities would stop within hours.",
+    "Were it not for electricity, modern cities will stop within hours."
+   ],
+   "answer": 1,
+   "why": "Were it not for＋명사 뒤에 <would＋동사원형>이 온다. for를 빠뜨리거나 not의 자리를 바꾸면 안 된다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· ____ it not for the guide, the hikers would be lost.\n· ____ I to guess, I would say she is a teacher.",
+   "choices": [
+    "Were",
+    "Was",
+    "Had",
+    "Should",
+    "If"
+   ],
+   "answer": 1,
+   "why": "앞은 Were it not for, 뒤는 Were＋주어＋to-v로 둘 다 Were가 필요하다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· ____ it not been for the antibiotics, the infection would have spread.\n· ____ the pilot noticed the warning light, the crash would have been avoided.",
+   "choices": [
+    "Were",
+    "Had",
+    "Was",
+    "Should",
+    "Have"
+   ],
+   "answer": 2,
+   "why": "둘 다 가정법 과거완료의 도치형이므로 Had가 공통으로 들어간다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· ____ the price rise again, many customers will leave.\n· ____ you require assistance, our staff are available all day.",
+   "choices": [
+    "Should",
+    "Were",
+    "Had",
+    "Would",
+    "Might"
+   ],
+   "answer": 1,
+   "why": "혹시 일어날 수도 있는 일을 가정하는 If ~ should의 도치형이다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: How did you find that hidden café?\nB: ____ it not been for Jaeho's tip, I would never have discovered it.",
+   "choices": [
+    "Were",
+    "Had",
+    "Was",
+    "Should",
+    "Have"
+   ],
+   "answer": 2,
+   "why": "would never have discovered와 짝을 이루는 과거의 가정이므로 Had it not been for가 맞다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: Why are you still using that old laptop?\nB: ____ it not for this laptop, I could not finish my design work.",
+   "choices": [
+    "Were",
+    "Was",
+    "Had",
+    "Should",
+    "Did"
+   ],
+   "answer": 1,
+   "why": "지금의 사실과 반대되는 가정이므로 Were it not for가 알맞다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\nA: What if the festival is canceled?\nB: ____ that happen, we would get a full refund.",
+   "choices": [
+    "Should",
+    "Were",
+    "Had",
+    "Would",
+    "Did"
+   ],
+   "answer": 1,
+   "why": "동사원형 happen 앞이므로 If that should happen의 도치형인 Should that happen이 된다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nⓐ Were it not for the rain, the reservoir would be empty.\nⓑ Had it not been for the rain, the reservoir would have been empty.\nⓒ Was it not for the rain, the reservoir would be empty.\nⓓ Had not it been for the rain, the reservoir would have been empty.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ⓐ, ⓑ가 옳다. ⓒ는 was를 쓸 수 없고 ⓓ는 not이 주어 뒤에 와야 한다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nⓐ Should you arrive early, wait in the lobby.\nⓑ Were I to win the prize, I would donate it.\nⓒ Were I to won the prize, I would donate it.\nⓓ Should you to arrive early, wait in the lobby.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ⓐ, ⓑ가 옳다. to 뒤에는 동사원형이 오고 Should 뒤에는 to를 쓰지 않는다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nⓐ Without the referee, the match would have ended in a fight.\nⓑ But for the referee, the match would have ended in a fight.\nⓒ If it had not been for the referee, the match would have ended in a fight.\nⓓ Had it not been for the referee, the match would have ended in a fight.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "0개"
+   ],
+   "answer": 4,
+   "why": "네 문장 모두 '그 심판이 없었다면'을 나타내는 같은 뜻의 옳은 표현이다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?\nⓐ Were it not for your patience, this project would fail.\nⓑ Had it not been for your patience, this project would have failed.\nⓒ Were it not been for your patience, this project would fail.\nⓓ Had it not for your patience, this project would have failed.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ⓒ는 Were 뒤에 been을 쓸 수 없고, ⓓ는 Had 뒤에 been이 빠져 틀렸다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 If를 생략한 도치 문장으로 바꿔 쓰시오.\nIf it were not for the internet, working from home would be impossible.",
+   "answer": "Were it not for the internet, working from home would be impossible.",
+   "why": "If를 생략하면 were가 주어 it 앞으로 나온다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 If를 생략한 도치 문장으로 바꿔 쓰시오.\nIf it had not been for the volunteers, the beach would still be covered with trash.",
+   "answer": "Had it not been for the volunteers, the beach would still be covered with trash.",
+   "why": "If를 생략하면 had가 앞으로 나오고 not은 주어 뒤에 남는다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 If를 생략한 도치 문장으로 바꿔 쓰시오.\nIf the team should lose tomorrow, the coach will resign.",
+   "answer": "Should the team lose tomorrow, the coach will resign.",
+   "why": "If ~ should의 If를 생략하면 <Should＋주어＋동사원형>이 된다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 If를 생략한 도치 문장으로 바꿔 쓰시오.\nIf I were to move abroad, I would choose New Zealand.",
+   "answer": "Were I to move abroad, I would choose New Zealand.",
+   "why": "<If＋주어＋were to-v>의 도치형은 <Were＋주어＋to-v>이다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 빈칸에 알맞은 네 단어를 쓰시오.\nWithout the streetlights, this alley would be pitch dark.\n＝ ____ the streetlights, this alley would be pitch dark.",
+   "answer": "Were it not for",
+   "why": "Without＝Were it not for이며, 현재 사실의 반대이므로 were를 쓴다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 빈칸에 알맞은 네 단어를 쓰시오.\nBut for the sudden power cut, the surgery would have finished on schedule.\n＝ ____ for the sudden power cut, the surgery would have finished on schedule.",
+   "answer": "Had it not been",
+   "why": "과거 사실의 반대이므로 Had it not been for를 쓴다. for는 이미 주어져 있으므로 네 단어는 Had it not been이다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nHad the rescue team (arrive) an hour earlier, more people would have been saved.",
+   "answer": "arrived",
+   "why": "도치된 가정법 과거완료이므로 Had 뒤에는 과거분사 arrived가 온다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nWere the population to (double) in ten years, the city would face a water crisis.",
+   "answer": "double",
+   "why": "<Were＋주어＋to부정사>이므로 to 뒤에는 동사원형이 온다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오. (세 단어)\nWithout the antibiotics, the soldier (die) of the wound in 1943.",
+   "answer": "would have died",
+   "why": "1943년이라는 과거 사실의 반대이므로 <would have p.p.>를 쓴다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오. (두 단어)\nWithout regular exercise, my grandfather (be) far less energetic today.",
+   "answer": "would be",
+   "why": "today가 있으므로 현재 사실의 반대이고 <would＋동사원형>을 쓴다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n<u>Was</u> it not for the tourists, this small town would have almost no income.",
+   "answer": "Were",
+   "why": "가정법에서는 was 대신 were를 쓰므로 Were it not for가 되어야 한다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (세 단어)\nHad it not been for the coast guard, dozens of passengers <u>would drown</u> that night.",
+   "answer": "would have drowned",
+   "why": "과거 사실의 반대이므로 주절은 <would have p.p.>가 되어야 한다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nShould the company <u>to expand</u> next year, it will hire more engineers.",
+   "answer": "expand",
+   "why": "Should＋주어 뒤에는 동사원형이 온다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n<u>Were</u> I known the answer, I would have raised my hand.",
+   "answer": "Had",
+   "why": "known(과거분사)과 would have raised가 있으므로 가정법 과거완료의 도치형 Had I known이 되어야 한다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오.\n____ it not been for the interpreter, the two leaders could not have understood each other.",
+   "answer": "Had",
+   "why": "been과 could not have understood가 있으므로 Had it not been for가 맞다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오.\n____ the earth to lose its atmosphere, all life would vanish instantly.",
+   "answer": "Were",
+   "why": "<Were＋주어＋to부정사>는 미래의 일을 가정하는 도치 구문이다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오.\n____ you happen to see Mr. Han, please give him this envelope.",
+   "answer": "Should",
+   "why": "혹시 ~한다면의 뜻으로 If you should happen의 If를 생략한 도치형이다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말에 맞게 빈칸에 알맞은 두 단어를 쓰시오.\n그 소방관들이 없었다면 그 건물은 완전히 무너졌을 것이다.\n____ the firefighters, the building would have collapsed completely.",
+   "answer": "But for",
+   "why": "'~이 없었다면'을 두 단어로 나타내면 But for이다. Without은 한 단어이므로 조건에 맞지 않는다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 Without으로 시작하는 한 문장으로 바꿔 쓰시오.\nIf it were not for her sense of humor, the long trip would be dull.",
+   "answer": "Without her sense of humor, the long trip would be dull.",
+   "why": "If it were not for＝Without이다. 주절은 그대로 둔다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 Without으로 시작하는 한 문장으로 바꿔 쓰시오.\nHad it not been for the sudden fog, the plane would have landed on time.",
+   "answer": "Without the sudden fog, the plane would have landed on time.",
+   "why": "Had it not been for＝Without이며 주절의 시제는 그대로 유지한다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\nModern agriculture depends on a thin layer of topsoil. ① <u>Were</u> it not for the microorganisms living there, crops ② <u>would</u> struggle to absorb nutrients, and yields ③ <u>would have fallen</u> sharply within a single season. ④ <u>Had</u> farmers not learned to rotate their crops centuries ago, famine ⑤ <u>would have been</u> far more common.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "Were it not for는 현재 사실의 반대이므로 이어지는 주절도 would fall이어야 한다. ⑤는 Had ~ not learned와 짝을 이루므로 옳다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\nThe expedition owed its survival to one decision. ① <u>Had</u> the captain not ② <u>ordered</u> the crew to store extra fuel, the ship ③ <u>would have been</u> trapped in the ice, and no one ④ <u>would</u> ⑤ <u>survived</u> the winter.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 5,
+   "why": "가정법 과거완료의 주절이므로 would have survived가 되어야 한다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\n① <u>Should</u> the ceasefire collapse, aid workers ② <u>will</u> be evacuated within hours. ③ <u>Was</u> it not for their presence, thousands of families ④ <u>would</u> go hungry, and the crisis ⑤ <u>would deepen</u> in a matter of days.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "가정법에서는 was를 쓰지 않으므로 Were it not for가 되어야 한다. ①②는 Should 도치와 미래 주절로 옳다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\n① <u>Were</u> it not for the alphabet, literacy ② <u>would have spread</u> far more slowly today, and education ③ <u>would</u> remain ④ <u>a</u> privilege of the few. ⑤ <u>Without</u> printing, books would still be rare.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 2,
+   "why": "today가 있고 조건절이 Were it not for이므로 would spread가 되어야 한다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\nAntibiotics changed medicine forever. ① <u>Had</u> Fleming not ② <u>noticed</u> the strange mold in 1928, the discovery ③ <u>might have been</u> delayed for decades, and countless patients ④ <u>would die</u> of simple infections in the following decades. ⑤ <u>Were</u> it not for such accidents, science would advance far more slowly.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 4,
+   "why": "1928년의 일을 가정하고 in the following decades라는 과거의 기간이 이어지므로 would have died가 되어야 한다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\n① <u>Should</u> you ② <u>be</u> offered the position, take a day to think it over. ③ <u>Were</u> I ④ <u>be</u> in your place, I would negotiate the salary first. ⑤ <u>Had</u> I accepted my own first offer, I would have regretted it.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 4,
+   "why": "Were I in your place에는 be가 필요 없다. be를 넣으려면 Were I to be in your place가 되어야 한다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\nThe city's recycling program is fragile. ① <u>But for</u> the volunteers who sort the waste each weekend, the plant ② <u>could not</u> operate at all. ③ <u>Had</u> the council ④ <u>cut</u> the budget last spring, the program ⑤ <u>would collapse</u> long before now.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 5,
+   "why": "last spring의 일을 가정하고 뒤에 long before now가 이어지므로 would have collapsed가 되어야 한다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\n① <u>Were</u> the government ② <u>to abolish</u> the tax next year, consumer spending ③ <u>would</u> rise sharply. ④ <u>Had</u> such a measure ⑤ <u>been taking</u> ten years ago, the recession might have been much shorter.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 5,
+   "why": "조치가 '취해지는' 것이므로 수동태 been taken이 되어야 한다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\n① <u>Without</u> the coral reefs, coastal villages ② <u>would</u> face far stronger waves. ③ <u>Hadn't</u> the reefs been protected in the 1990s, the damage ④ <u>would have been</u> irreversible, and local tourism ⑤ <u>would have vanished</u>.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "If가 생략된 도치 구문에서는 축약 부정형을 쓸 수 없으므로 Had the reefs not been protected가 되어야 한다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\nRescue came at the last minute. ① <u>Had</u> it not ② <u>been</u> for a passing fishing boat, the survivors ③ <u>would</u> ④ <u>have drifted</u> for days, and some of them ⑤ <u>will</u> not have made it home.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 5,
+   "why": "가정법 과거완료의 주절이므로 will이 아니라 would를 써야 한다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\n① <u>Were</u> it not for the annual monsoon, the delta ② <u>would</u> turn into desert, and millions ③ <u>would lose</u> their farmland. ④ <u>Should</u> the rains ⑤ <u>failed</u> next year, the government would declare a state of emergency.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 5,
+   "why": "Should＋주어 뒤에는 동사원형이 오므로 fail이 되어야 한다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 밑줄 친 부분 중 어법상 틀린 것은?\n① <u>Had</u> the treaty ② <u>signed</u> in 1919 been fairer, the second war ③ <u>might not break</u> out at all. ④ <u>Were</u> historians ⑤ <u>to rewrite</u> the story today, they would still point to that document.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "Had ~ been fairer는 과거 사실의 반대이므로 주절은 might not have broken out이 되어야 한다. ②는 the treaty를 수식하는 과거분사로 옳다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. Were it not for the night nurses, the ward could not function.\nㄴ. Had it not been for the storm, the ferry would left on schedule.\nㄷ. Should any passenger feel unwell, the crew will offer assistance.",
+   "choices": [
+    "ㄱ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄴ은 would 뒤에 동사원형이나 have p.p.가 와야 하므로 would have left가 되어야 한다. ㄱ과 ㄷ은 각각 Were 도치와 Should 도치로 옳다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. Was it not for the subsidy, the small farm would go bankrupt.\nㄴ. Were the CEO to resign tomorrow, the share price would plunge.\nㄷ. Had I been told earlier, I would have prepared a better speech.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 Were it not for가 되어야 한다. ㄴ은 Were＋주어＋to-v, ㄷ은 가정법 과거완료 도치로 옳다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. But for your reminder, I would have missed the deadline.\nㄴ. Without your reminder, I would miss the deadline last Friday.\nㄷ. If it had not been for your reminder, I would have missed the deadline.",
+   "choices": [
+    "ㄱ, ㄷ",
+    "ㄱ",
+    "ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 1,
+   "why": "ㄴ은 last Friday가 있으므로 would have missed가 되어야 한다. ㄱ과 ㄷ은 같은 뜻의 옳은 표현이다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. Should the alarm sound, leave the building immediately.\nㄴ. Should the alarm sounds, leave the building immediately.\nㄷ. Were the alarm to sound, everyone would leave at once.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "Should 뒤에는 동사원형이 오므로 ㄴ의 sounds는 틀리다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. Was it not for the vaccine, the outbreak would still be spreading.\nㄴ. Had it not been for the vaccine, the outbreak would still be spreading.\nㄷ. Without the vaccine, far more people would have died last winter.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 Were it not for가 되어야 한다. ㄴ은 과거의 원인과 현재의 결과를 잇는 혼합가정법, ㄷ은 가정법 과거완료로 옳다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. Were I you, I would not sign that contract.\nㄴ. If I were you, I would not sign that contract.\nㄷ. Without your signature, the whole deal would fall apart.",
+   "choices": [
+    "ㄱ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 5,
+   "why": "ㄱ과 ㄴ은 도치 여부만 다른 같은 문장이고, ㄷ도 Without＋<would＋동사원형>으로 옳다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. Had the negotiators not compromised, the strike would have lasted for months.\nㄴ. Hadn't the negotiators compromised, the strike would have lasted for months.\nㄷ. If the negotiators had not compromised, the strike would have lasted for months.",
+   "choices": [
+    "ㄱ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "도치 구문에서는 축약 부정형을 쓸 수 없으므로 ㄴ이 틀리다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. Were it not for gravity, the atmosphere would drift into space.\nㄴ. Were it not for gravity, the atmosphere drifts into space.\nㄷ. Were it not been for gravity, the atmosphere would drift into space.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 1,
+   "why": "ㄴ은 주절에 would가 필요하고, ㄷ은 Were 뒤에 been을 쓸 수 없다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. Had it not for the guide's warning, we would have taken the wrong trail.\nㄴ. But for the guide's warning, we would have taken the wrong trail.\nㄷ. Without of the guide's warning, we would have taken the wrong trail.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 Had it not been for가 되어야 하고, ㄷ의 Without은 전치사이므로 of를 붙일 수 없다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. Should you to need a refund, keep the receipt.\nㄴ. Were I to knowing the answer, I would tell you.\nㄷ. Should you need a refund, keep the receipt.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "Should 뒤에는 to 없이 동사원형이 오고, to 뒤에도 동사원형이 와야 하므로 ㄱ, ㄴ은 틀리다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. Were it not for the tunnel, the journey would take twice as long.\nㄴ. Had it not been for the tunnel, the journey would have taken twice as long.\nㄷ. Was it not for the tunnel, the journey would take twice as long.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄷ만 틀리다. 가정법에서는 주어가 it이어도 were를 쓴다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 모두 고른 것은?\nㄱ. Should it rain during the ceremony, the tents will be set up.\nㄴ. Were the ceremony to be canceled, all tickets would be refunded.\nㄷ. Had the ceremony been canceled, all tickets would have been refunded.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 5,
+   "why": "세 문장 모두 Should·Were to·Had 도치를 바르게 쓴 문장이다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 자연스러운 것은?",
+   "choices": [
+    "Were it not been for the interpreter, the summit would have collapsed.",
+    "Had it not for the interpreter, the summit would have collapsed.",
+    "Had it not been for the interpreter, the summit would have collapsed.",
+    "Was it not for the interpreter, the summit would have collapsed.",
+    "Had it not been the interpreter, the summit would have collapsed."
+   ],
+   "answer": 3,
+   "why": "과거 사실의 반대는 Had it not been for이며, been이나 for를 빠뜨리면 안 된다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "Were the committee to approving the plan, construction would begin in March.",
+    "Were the committee to approve the plan, construction would begin in March.",
+    "Was the committee to approve the plan, construction would begin in March.",
+    "Should the committee to approve the plan, construction would begin in March.",
+    "Had the committee to approve the plan, construction would begin in March."
+   ],
+   "answer": 2,
+   "why": "<Were＋주어＋to＋동사원형>이 미래를 가정하는 도치 구문이다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 틀린 것은?",
+   "choices": [
+    "Had the lighthouse not been rebuilt, the coast would be far more dangerous today.",
+    "Were it not for the lighthouse, sailors would rely on the stars alone.",
+    "But for the lighthouse, the ship would have struck the rocks.",
+    "Without the lighthouse, the ship would struck the rocks.",
+    "Should a storm approach, the keeper will sound the horn."
+   ],
+   "answer": 4,
+   "why": "would 뒤에는 동사원형이나 have p.p.가 와야 하므로 would have struck이 되어야 한다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 잘못 쓰인 것은?",
+   "choices": [
+    "Were I to be born again, I would still become a teacher.",
+    "Should anyone ask for me, say that I am in a meeting.",
+    "Had she not hesitated at the start, she would have won the race.",
+    "Were it not for his temper, he would be an ideal leader.",
+    "Had it not been for his temper, he would be an ideal leader last year."
+   ],
+   "answer": 5,
+   "why": "last year라는 과거 시점의 결과는 would have been으로 나타내야 한다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "Without the guide had helped us, we would have been lost.",
+    "But for the guide helped us, we would have been lost.",
+    "If it had not been for the guide, we would have been lost.",
+    "Had it not been the guide, we would have been lost.",
+    "Were it not for the guide, we would have been lost in the cave yesterday."
+   ],
+   "answer": 3,
+   "why": "Without과 But for는 전치사(구)라서 뒤에 절이 올 수 없고, Had it not been 뒤에는 for가 필요하다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 고르시오.",
+   "choices": [
+    "Should you happened to meet her, give her my regards.",
+    "Should you happen to meet her, give her my regards.",
+    "Should you to happen to meet her, give her my regards.",
+    "Would you happen to meet her, give her my regards.",
+    "Were you happen to meet her, give her my regards."
+   ],
+   "answer": 2,
+   "why": "Should＋주어＋동사원형 형태가 옳으며, 조건절 도치에 Would는 쓰지 않는다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 나머지 넷과 의미가 다른 것은?",
+   "choices": [
+    "Without your encouragement, I would have quit long ago.",
+    "But for your encouragement, I would have quit long ago.",
+    "If it had not been for your encouragement, I would have quit long ago.",
+    "Had it not been for your encouragement, I would have quit long ago.",
+    "With your encouragement, I would have quit long ago."
+   ],
+   "answer": 5,
+   "why": "①~④는 모두 '네 격려가 없었다면'이라는 뜻이지만 ⑤의 With는 '~이 있었다면'이라는 반대의 뜻이다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 틀린 것은?",
+   "choices": [
+    "Had the flight not been delayed, we would be in Lisbon by now.",
+    "Were it not for the delay, we would be in Lisbon by now.",
+    "Without the delay, we would be in Lisbon by now.",
+    "But for the delay, we would be in Lisbon by now.",
+    "Had it not been the delay, we would be in Lisbon by now."
+   ],
+   "answer": 5,
+   "why": "Had it not been 뒤에는 반드시 for가 있어야 한다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ the polar ice to melt completely, coastal cities around the world would disappear beneath the sea.",
+   "choices": [
+    "Were",
+    "Was",
+    "Had",
+    "Should be",
+    "If"
+   ],
+   "answer": 1,
+   "why": "빈칸 뒤가 <주어＋to부정사>이므로 미래를 가정하는 Were＋주어＋to-v 구문이다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nHad the archaeologists not dug beneath the parking lot in 2012, the king's remains ____ undiscovered for many more years.",
+   "choices": [
+    "remain",
+    "remained",
+    "would remain",
+    "would have remained",
+    "will remain"
+   ],
+   "answer": 4,
+   "why": "2012년의 일을 가정한 가정법 과거완료이므로 주절은 <would have p.p.>이다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ it not been for a chance meeting at a conference, the two scientists would never have started their famous collaboration.",
+   "choices": [
+    "Were",
+    "Was",
+    "Had",
+    "Have",
+    "Should"
+   ],
+   "answer": 3,
+   "why": "been과 would never have started가 있으므로 Had it not been for가 맞다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nThe bridge is safe now, but ____ the engineers ignored the early cracks, the structure would have failed within a decade.",
+   "choices": [
+    "were",
+    "had",
+    "have",
+    "should",
+    "did"
+   ],
+   "answer": 2,
+   "why": "If the engineers had ignored의 If를 생략한 도치형이므로 had가 주어 앞에 온다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ any of the passengers require special assistance, our cabin crew will be happy to help at any time during the flight.",
+   "choices": [
+    "Should",
+    "Were",
+    "Had",
+    "Would",
+    "Might"
+   ],
+   "answer": 1,
+   "why": "동사원형 require 앞이므로 If ~ should의 도치형인 Should가 알맞다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\nWithout the discovery of penicillin, the twentieth century ____ a very different medical history.",
+   "choices": [
+    "has",
+    "had",
+    "would have",
+    "would have had",
+    "will have"
+   ],
+   "answer": 4,
+   "why": "20세기라는 과거 사실의 반대이므로 <would have p.p.>인 would have had가 맞다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그 지진이 밤에 일어났더라면 사상자는 훨씬 더 많았을 것이다.",
+   "choices": [
+    "Had the earthquake occurred at night, the casualties would be far higher.",
+    "Had the earthquake occurred at night, the casualties would have been far higher.",
+    "Had the earthquake occur at night, the casualties would have been far higher.",
+    "Were the earthquake occurred at night, the casualties would have been far higher.",
+    "Had not the earthquake occurred at night, the casualties would have been far higher."
+   ],
+   "answer": 2,
+   "why": "가정법 과거완료의 도치이므로 Had＋주어＋p.p. ~, 주어＋would have p.p. 형태가 맞다. ⑤는 not이 들어가 뜻이 반대가 된다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n언어가 없었다면 인간의 문명은 결코 발달하지 못했을 것이다.",
+   "choices": [
+    "Had it not been for language, human civilization could never have developed.",
+    "Were it not for language, human civilization could never have developed.",
+    "Had it not for language, human civilization could never have developed.",
+    "Was it not for language, human civilization could never have developed.",
+    "Had it not been language, human civilization could never have developed."
+   ],
+   "answer": 1,
+   "why": "과거 사실의 반대이므로 Had it not been for를 쓴다. ②는 현재의 가정이어서 시제가 맞지 않는다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n만일 그 회사가 내년에 문을 닫는다면 수백 명이 일자리를 잃을 것이다.",
+   "choices": [
+    "Were the company to close down next year, hundreds would lose their jobs.",
+    "Was the company to close down next year, hundreds would lose their jobs.",
+    "Were the company to closing down next year, hundreds would lose their jobs.",
+    "Should the company to close down next year, hundreds would lose their jobs.",
+    "Had the company to close down next year, hundreds would lose their jobs."
+   ],
+   "answer": 1,
+   "why": "미래의 일을 가정하는 <Were＋주어＋to＋동사원형> 구문이다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n네가 그때 나에게 진실을 말해 주었더라면 나는 지금 이렇게 혼란스럽지 않을 텐데.",
+   "choices": [
+    "Had you told me the truth then, I would not be so confused now.",
+    "Had you told me the truth then, I would not have been so confused now.",
+    "Were you told me the truth then, I would not be so confused now.",
+    "Had you telling me the truth then, I would not be so confused now.",
+    "Should you tell me the truth then, I would not be so confused now."
+   ],
+   "answer": 1,
+   "why": "then의 과거 조건과 now의 현재 결과를 잇는 혼합가정법이므로 <Had＋주어＋p.p. ~, 주어＋would＋동사원형>이다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nⓐ Were it not for the archives, historians could not verify these claims.\nⓑ Had it not been for the archives, this letter would have vanished.\nⓒ Was it not for the archives, the story would be forgotten.\nⓓ Had not it been for the archives, the story would have been forgotten.\nⓔ But for the archives, we would know almost nothing about the era.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ⓐ, ⓑ, ⓔ가 옳다. ⓒ는 was를 쓸 수 없고 ⓓ는 not이 주어 뒤에 와야 한다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?\nⓐ Should you require further information, please contact our office.\nⓑ Should you required further information, please contact our office.\nⓒ Were you to require further information, our office would help you.\nⓓ Were you require further information, our office would help you.\nⓔ Had you required further information, our office would have helped you.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ⓑ는 Should 뒤에 동사원형, ⓓ는 Were 뒤에 to가 필요하므로 틀린 것은 두 개다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nⓐ Without the monsoon rains, this region would be a desert.\nⓑ Without the monsoon rains, this region will be a desert.\nⓒ But for the monsoon rains, the harvest would have failed last year.\nⓓ But for the monsoon rains, the harvest would fail last year.\nⓔ If it were not the monsoon rains, this region would be a desert.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ⓐ와 ⓒ만 옳다. ⓑ는 will 불가, ⓓ는 last year와 시제 불일치, ⓔ는 for가 빠졌다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nⓐ Had the vaccine arrived a week earlier, dozens of lives would have been saved.\nⓑ Were the vaccine to arrive tomorrow, the outbreak would be contained.\nⓒ Should the vaccine arrive tomorrow, the outbreak will be contained.\nⓓ If the vaccine had arrived a week earlier, dozens of lives would have been saved.\nⓔ Were the vaccine arrive tomorrow, the outbreak would be contained.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "ⓔ만 틀리다. Were 뒤에는 to arrive가 와야 한다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 접속사 If를 생략한 도치 구문으로 바꿔 쓰시오.\nIf it had not been for the librarian's advice, I would never have found this manuscript.",
+   "answer": "Had it not been for the librarian's advice, I would never have found this manuscript.",
+   "why": "If를 생략하면 had가 주어 it 앞으로 나오고 not은 주어 뒤에 남는다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 접속사 If를 생략한 도치 구문으로 바꿔 쓰시오.\nIf the deadline were to be moved up, the whole team would have to work overtime.",
+   "answer": "Were the deadline to be moved up, the whole team would have to work overtime.",
+   "why": "<If＋주어＋were to-v>의 도치형은 <Were＋주어＋to-v>이다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 접속사 If를 생략한 도치 구문으로 바꿔 쓰시오.\nIf you should change your mind about the offer, please let us know by Friday.",
+   "answer": "Should you change your mind about the offer, please let us know by Friday.",
+   "why": "If ~ should의 도치형은 <Should＋주어＋동사원형>이다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 Without으로 시작하는 한 문장으로 바꿔 쓰시오.\nHad it not been for the emergency generator, the hospital would have lost power.",
+   "answer": "Without the emergency generator, the hospital would have lost power.",
+   "why": "Had it not been for＝Without이며 주절은 그대로 둔다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 But for로 시작하는 한 문장으로 바꿔 쓰시오.\nWere it not for the coastal wetlands, the city would flood every spring.",
+   "answer": "But for the coastal wetlands, the city would flood every spring.",
+   "why": "Were it not for＝But for＝Without으로 모두 '~이 없다면'의 뜻이다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n<u>Was</u> it not for the tireless work of the translators, the treaty would still be unsigned.",
+   "answer": "Were",
+   "why": "가정법 조건절의 be동사는 주어에 상관없이 were이므로 Were it not for가 되어야 한다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (세 단어)\n<u>Hadn't the pilot</u> reacted so quickly, the plane would have crashed into the hillside.",
+   "answer": "Had the pilot not",
+   "why": "If 생략 도치에서는 축약 부정형을 쓸 수 없고 not은 주어 뒤에 놓는다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n<u>Were</u> the committee approved the budget last month, construction would already be under way.",
+   "answer": "Had",
+   "why": "approved(과거분사)와 last month가 있으므로 과거 사실의 반대인 Had＋주어＋p.p. 도치가 되어야 한다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nHad the archaeologist not (dig) deeper that afternoon, the tomb would still lie hidden.",
+   "answer": "dug",
+   "why": "도치된 가정법 과거완료이므로 Had ~ not 뒤에는 과거분사 dug가 온다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.\nWere the river to (rise) another meter, the entire valley would be evacuated.",
+   "answer": "rise",
+   "why": "<Were＋주어＋to부정사> 구문이므로 to 뒤에는 동사원형이 온다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오. (세 단어)\nWithout the sudden change in wind direction, the wildfire (reach) the village last August.",
+   "answer": "would have reached",
+   "why": "last August의 사실과 반대되는 가정이므로 <would have p.p.>를 쓴다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오. (두 단어)\nHad the treaty been signed a year earlier, thousands of soldiers (be) alive today.",
+   "answer": "would be",
+   "why": "과거의 조건과 today의 현재 결과를 잇는 혼합가정법이므로 주절은 <would＋동사원형>이다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 빈칸에 알맞은 네 단어를 쓰시오.\nBut for the sponsors, the city marathon would have been canceled.\n＝ ____ for the sponsors, the city marathon would have been canceled.",
+   "answer": "Had it not been",
+   "why": "But for＝Had it not been for이며, for가 이미 있으므로 네 단어는 Had it not been이다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 빈칸에 알맞은 세 단어를 쓰시오.\nWithout her constant encouragement, I would not be standing here today.\n＝ ____ for her constant encouragement, I would not be standing here today.",
+   "answer": "Were it not",
+   "why": "현재 사실의 반대이므로 Were it not for를 쓴다. for가 이미 있으므로 세 단어는 Were it not이다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말에 맞게 빈칸에 알맞은 세 단어를 쓰시오.\n그 소문이 사실이라면 그 회사는 곧 문을 닫을 것이다.\n____ true, the company would close down soon.",
+   "answer": "Were the rumor",
+   "why": "If the rumor were true의 If를 생략하면 were가 주어 앞으로 나온다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 접속사 If를 생략한 도치 구문으로 바꿔 쓰시오.\nIf the ship should sink, the crew would use the lifeboats.",
+   "answer": "Should the ship sink, the crew would use the lifeboats.",
+   "why": "If ~ should의 도치형은 <Should＋주어＋동사원형>이다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 If it were not for로 시작하는 한 문장으로 바꿔 쓰시오.\nWithout the volunteers, the animal shelter could not stay open.",
+   "answer": "If it were not for the volunteers, the animal shelter could not stay open.",
+   "why": "Without＝If it were not for이며, 현재 사실의 반대이므로 were를 쓴다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 접속사 If를 넣은 문장으로 바꿔 쓰시오.\nHad the storm not changed course, the coastal towns would have suffered enormous damage.",
+   "answer": "If the storm had not changed course, the coastal towns would have suffered enormous damage.",
+   "why": "도치를 풀면 If＋주어＋had not p.p. 어순으로 돌아간다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 Were로 시작하는 한 문장으로 바꿔 쓰시오.\nIf I were to choose one book for a desert island, I would take a dictionary.",
+   "answer": "Were I to choose one book for a desert island, I would take a dictionary.",
+   "why": "If를 생략하면 were가 주어 I 앞으로 나온다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nShould the negotiations <u>failed</u>, both sides would return to court.",
+   "answer": "fail",
+   "why": "Should＋주어 뒤에는 동사원형이 온다.",
+   "no": 200
+  }
+ ]
+}
