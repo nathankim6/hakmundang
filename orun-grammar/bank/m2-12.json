@@ -1,0 +1,2688 @@
+{
+ "id": "m2-12",
+ "grade": "중2",
+ "name": "목적격 관계대명사",
+ "points": [
+  "who(m)/which/that",
+  "목적격 관대 생략",
+  "전치사+관계대명사"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThis is the book ____ I read last night.",
+   "choices": [
+    "who",
+    "whose",
+    "which",
+    "what",
+    "where"
+   ],
+   "answer": 3,
+   "why": "선행사가 사물(the book)이고 read의 목적어가 빠졌으므로 목적격 관계대명사 which. who는 사람, whose는 소유격, what은 선행사를 쓰지 않는다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThe boy ____ we met at the park is my cousin.",
+   "choices": [
+    "which",
+    "whose",
+    "what",
+    "whom",
+    "where"
+   ],
+   "answer": 4,
+   "why": "선행사가 사람(the boy)이고 met의 목적어 자리이므로 목적격 whom. which는 사물에만 쓴다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nI like the song ____ Mina sang for us.",
+   "choices": [
+    "who",
+    "whom",
+    "which",
+    "whose",
+    "when"
+   ],
+   "answer": 3,
+   "why": "선행사가 사물(the song), sang의 목적어가 없으므로 which. whom은 사람 선행사에만 쓴다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThe girl ____ I helped smiled at me.",
+   "choices": [
+    "which",
+    "what",
+    "whose",
+    "where",
+    "whom"
+   ],
+   "answer": 5,
+   "why": "사람 선행사 the girl이 helped의 목적어이므로 목적격 whom.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThese are the shoes ____ my mom bought for me.",
+   "choices": [
+    "who",
+    "whom",
+    "whose",
+    "which",
+    "when"
+   ],
+   "answer": 4,
+   "why": "사물 선행사 the shoes가 bought의 목적어이므로 which.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThe man ____ you saw in the shop is my uncle.",
+   "choices": [
+    "which",
+    "what",
+    "whom",
+    "whose",
+    "where"
+   ],
+   "answer": 3,
+   "why": "사람 선행사 the man이 saw의 목적어이므로 whom. whose 뒤에는 명사가 와야 한다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThe movie ____ we watched last Friday was funny.",
+   "choices": [
+    "who",
+    "whom",
+    "whose",
+    "which",
+    "why"
+   ],
+   "answer": 4,
+   "why": "사물 선행사 the movie가 watched의 목적어이므로 which.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThe people ____ I invited did not come.",
+   "choices": [
+    "which",
+    "what",
+    "whose",
+    "when",
+    "whom"
+   ],
+   "answer": 5,
+   "why": "사람 선행사 the people이 invited의 목적어이므로 whom.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThat is the cake ____ my sister made this morning.",
+   "choices": [
+    "who",
+    "whom",
+    "which",
+    "whose",
+    "where"
+   ],
+   "answer": 3,
+   "why": "사물 선행사 the cake가 made의 목적어이므로 which.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThe teacher ____ all the students like is Mr. Han.",
+   "choices": [
+    "which",
+    "whose",
+    "what",
+    "whom",
+    "where"
+   ],
+   "answer": 4,
+   "why": "사람 선행사 the teacher가 like의 목적어이므로 whom.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nI lost the pen ____ my friend gave me.",
+   "choices": [
+    "who",
+    "whom",
+    "whose",
+    "which",
+    "why"
+   ],
+   "answer": 4,
+   "why": "사물 선행사 the pen이 gave의 직접목적어 자리이므로 which.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThe baby ____ Sujin is holding is very cute.",
+   "choices": [
+    "which",
+    "what",
+    "whose",
+    "whom",
+    "where"
+   ],
+   "answer": 4,
+   "why": "사람 선행사 the baby가 is holding의 목적어이므로 whom.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nShow me the pictures ____ you took in Busan.",
+   "choices": [
+    "who",
+    "whom",
+    "whose",
+    "which",
+    "when"
+   ],
+   "answer": 4,
+   "why": "사물 선행사 the pictures가 took의 목적어이므로 which.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThe singer ____ my brother loves is very tall.",
+   "choices": [
+    "which",
+    "what",
+    "whose",
+    "where",
+    "whom"
+   ],
+   "answer": 5,
+   "why": "사람 선행사 the singer가 loves의 목적어이므로 whom.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (사물 선행사)",
+   "choices": [
+    "The book which I read it was fun.",
+    "The girl which I met is kind.",
+    "This is the bag which I want.",
+    "I know the boy whose I like.",
+    "The song what she sang is nice."
+   ],
+   "answer": 3,
+   "why": "③ 사물 선행사 the bag + 목적격 which로 바르다. ①은 which가 이미 목적어이므로 it이 남으면 안 되고, ②는 사람에 which를 썼으며, ④ whose 뒤에는 명사가 필요하고, ⑤ what은 선행사와 함께 쓸 수 없다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (사람 선행사)",
+   "choices": [
+    "He is the man whom I trust.",
+    "She is the woman which I called.",
+    "The cap whom I bought is blue.",
+    "The story what he told is sad.",
+    "The dog which I saw it was big."
+   ],
+   "answer": 1,
+   "why": "① 사람 선행사 the man + 목적격 whom으로 바르다. ②는 사람에 which, ③은 사물에 whom을 썼고, ④ what은 선행사와 함께 못 쓰며, ⑤는 목적어 it이 중복되었다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 것은? (목적어 중복)",
+   "choices": [
+    "This is the movie that I like most.",
+    "The man who I met was kind.",
+    "The pen which I used is old.",
+    "The boy whom she likes him is Tom.",
+    "The soup that my dad made was hot."
+   ],
+   "answer": 4,
+   "why": "④ whom이 이미 likes의 목적어이므로 him을 또 쓸 수 없다(him 삭제). 나머지는 모두 목적격 관계대명사가 바르게 쓰였다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 것은? (관계대명사의 선택)",
+   "choices": [
+    "I have a friend whom I can trust.",
+    "The apples which we picked were sweet.",
+    "She is the singer which I like.",
+    "That's the hat that he wants.",
+    "The letter that I wrote is long."
+   ],
+   "answer": 3,
+   "why": "③ 선행사 the singer는 사람이므로 which가 아니라 who(m)/that을 써야 한다. 나머지는 선행사와 관계대명사가 알맞게 짝을 이룬다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (음식·사물 소재)",
+   "choices": [
+    "The car who my dad drives is old.",
+    "The girl whom I saw her was crying.",
+    "The food which I ate was spicy.",
+    "This is the ball what I found.",
+    "The man which she loves is a chef."
+   ],
+   "answer": 3,
+   "why": "③ 사물 선행사 the food + 목적격 which로 바르다. ①은 사물에 who, ②는 목적어 her 중복, ④는 what, ⑤는 사람에 which를 써서 틀렸다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 것은? (여행·선물 소재)",
+   "choices": [
+    "The city that we visited was beautiful.",
+    "The gift which she sent me arrived today.",
+    "The boy who I helped is my neighbor.",
+    "The book which I borrowed it is thick.",
+    "The song that we sang was easy."
+   ],
+   "answer": 4,
+   "why": "④ which가 borrowed의 목적어이므로 it을 함께 쓸 수 없다. 나머지 문장은 모두 목적격 관계대명사가 바르게 쓰였다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (전치사가 뒤에 남은 문장)",
+   "choices": [
+    "The people whom I work with are nice.",
+    "The bag who I carried was heavy.",
+    "The movie whom we saw was boring.",
+    "This is the pen which I need it.",
+    "The man what I called is my boss."
+   ],
+   "answer": 1,
+   "why": "① with의 목적어가 빠진 자리에 사람 선행사를 받는 whom을 썼으므로 옳다. ②③은 선행사와 관계대명사가 맞지 않고, ④는 it 중복, ⑤는 what을 잘못 썼다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 것은? (what의 오용)",
+   "choices": [
+    "I ate the pizza that Mom ordered.",
+    "The friend who I miss lives in Jeju.",
+    "The chair which I sat on is broken.",
+    "The picture what I drew is on the wall.",
+    "The shoes that she wears are new."
+   ],
+   "answer": 4,
+   "why": "④ 선행사 the picture가 있으므로 what을 쓸 수 없고 which/that을 써야 한다. 나머지는 모두 옳다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (집·물건 소재)",
+   "choices": [
+    "The house which they built is big.",
+    "The teacher which we love is kind.",
+    "The cake whom I made was sweet.",
+    "The boy who I saw him ran away.",
+    "The pen that I lost it was blue."
+   ],
+   "answer": 1,
+   "why": "① 사물 선행사 the house + 목적격 which가 바르다. ②는 사람에 which, ③은 사물에 whom, ④⑤는 목적어(him, it)가 중복되어 틀렸다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 것은? (주어 중복)",
+   "choices": [
+    "The doll that my aunt gave me is old.",
+    "The girl whom you called is my sister.",
+    "The camera which I want is expensive.",
+    "The man that I met yesterday he was tall.",
+    "The story which she wrote is famous."
+   ],
+   "answer": 4,
+   "why": "④ 관계대명사절이 끝난 뒤 주어 he가 다시 나와 문장이 두 개가 되어 버렸다(he 삭제). 나머지는 모두 옳다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 <u>틀린</u> 부분은?\n\nThe girl <u>which</u> <u>I</u> <u>met</u> <u>yesterday</u> <u>was</u> very kind.",
+   "choices": [
+    "which",
+    "I",
+    "met",
+    "yesterday",
+    "was"
+   ],
+   "answer": 1,
+   "why": "선행사 the girl은 사람이므로 which가 아니라 who(m)/that을 써야 한다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 <u>틀린</u> 부분은?\n\nThe book <u>that</u> <u>I</u> <u>bought</u> <u>it</u> <u>is</u> interesting.",
+   "choices": [
+    "that",
+    "I",
+    "bought",
+    "it",
+    "is"
+   ],
+   "answer": 4,
+   "why": "that이 이미 bought의 목적어이므로 it을 또 쓸 수 없다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 <u>틀린</u> 부분은?\n\nThis is <u>the</u> song <u>what</u> <u>my</u> sister <u>likes</u> <u>best</u>.",
+   "choices": [
+    "the",
+    "what",
+    "my",
+    "likes",
+    "best"
+   ],
+   "answer": 2,
+   "why": "선행사 the song이 있으므로 what은 쓸 수 없고 which/that을 써야 한다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 <u>틀린</u> 부분은?\n\nThe man <u>whom</u> <u>I</u> <u>saw</u> <u>him</u> <u>ran</u> away.",
+   "choices": [
+    "whom",
+    "I",
+    "saw",
+    "him",
+    "ran"
+   ],
+   "answer": 4,
+   "why": "whom이 saw의 목적어이므로 him이 남으면 안 된다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 <u>틀린</u> 부분은?\n\nThe chair <u>who</u> <u>you</u> <u>are</u> <u>sitting</u> <u>on</u> is mine.",
+   "choices": [
+    "who",
+    "you",
+    "are",
+    "sitting",
+    "on"
+   ],
+   "answer": 1,
+   "why": "선행사 the chair는 사물이므로 who가 아니라 which/that을 써야 한다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 <u>틀린</u> 부분은?\n\nI like <u>the</u> shoes <u>whose</u> <u>my</u> <u>mom</u> <u>bought</u>.",
+   "choices": [
+    "the",
+    "whose",
+    "my",
+    "mom",
+    "bought"
+   ],
+   "answer": 2,
+   "why": "bought의 목적어가 빠진 자리이므로 소유격 whose가 아니라 목적격 which/that을 써야 한다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것은?\n\n• The man ____ I called is my uncle.\n• The bag ____ she bought is red.",
+   "choices": [
+    "whom – which",
+    "which – whom",
+    "whose – which",
+    "whom – what",
+    "what – which"
+   ],
+   "answer": 1,
+   "why": "첫 문장은 사람 선행사의 목적격이므로 whom, 둘째 문장은 사물 선행사의 목적격이므로 which이다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것은?\n\n• The song ____ we heard was sad.\n• The girl ____ he likes moved away.",
+   "choices": [
+    "whom – which",
+    "which – whom",
+    "which – what",
+    "whose – whom",
+    "what – whom"
+   ],
+   "answer": 2,
+   "why": "the song(사물)은 which, the girl(사람)은 whom을 쓴다. what은 선행사와 함께 쓸 수 없다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것은?\n\n• I know the boy ____ you met.\n• I lost the key ____ you gave me.",
+   "choices": [
+    "which – whom",
+    "what – which",
+    "whom – which",
+    "whom – whose",
+    "which – what"
+   ],
+   "answer": 3,
+   "why": "the boy(사람)의 목적격은 whom, the key(사물)의 목적격은 which이다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것은?\n\n• The food ____ they cooked was great.\n• The doctor ____ we visited was kind.",
+   "choices": [
+    "who – which",
+    "which – whom",
+    "whose – whom",
+    "what – who",
+    "which – what"
+   ],
+   "answer": 2,
+   "why": "the food(사물)은 which, the doctor(사람)은 whom. 두 자리 모두 동사의 목적어가 빠져 있다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n\n• The car ____ he drives is new.\n• I ate the bread ____ Mom baked.",
+   "choices": [
+    "who",
+    "whom",
+    "which",
+    "whose",
+    "what"
+   ],
+   "answer": 3,
+   "why": "두 선행사(the car, the bread)가 모두 사물이고 동사의 목적어 자리가 비었으므로 which.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n\n• The boy ____ we helped is happy.\n• She is the writer ____ I respect.",
+   "choices": [
+    "which",
+    "whom",
+    "whose",
+    "what",
+    "where"
+   ],
+   "answer": 2,
+   "why": "두 선행사가 모두 사람이고 목적어 자리가 비었으므로 whom.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n\n• This is the ring ____ I lost.\n• Look at the bird ____ Jim is drawing.",
+   "choices": [
+    "who",
+    "whom",
+    "whose",
+    "what",
+    "which"
+   ],
+   "answer": 5,
+   "why": "the ring, the bird는 사람이 아니므로 목적격 which를 쓴다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n\n• The friend ____ I called did not answer.\n• The player ____ everyone loves is here.",
+   "choices": [
+    "which",
+    "what",
+    "whom",
+    "whose",
+    "when"
+   ],
+   "answer": 3,
+   "why": "사람 선행사의 목적격이므로 whom이 공통으로 들어간다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n\n이것은 내가 어제 산 모자이다.",
+   "choices": [
+    "This is the cap which I bought yesterday.",
+    "This is the cap who I bought yesterday.",
+    "This is the cap what I bought yesterday.",
+    "This is the cap which I bought it yesterday.",
+    "This is the cap whose I bought yesterday."
+   ],
+   "answer": 1,
+   "why": "사물 선행사 the cap + 목적격 which. ②는 사람에 쓰는 who, ③은 선행사와 함께 못 쓰는 what, ④는 목적어 it 중복, ⑤는 소유격이라 틀리다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n\n그는 내가 좋아하는 가수이다.",
+   "choices": [
+    "He is the singer which I like.",
+    "He is the singer whom I like.",
+    "He is the singer what I like.",
+    "He is the singer whom I like him.",
+    "He is the singer whose I like."
+   ],
+   "answer": 2,
+   "why": "사람 선행사 the singer + 목적격 whom. ①은 사람에 which, ③은 what, ④는 him 중복, ⑤는 소유격이라 틀리다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n\n네가 만든 수프는 맛있었다.",
+   "choices": [
+    "The soup who you made was delicious.",
+    "The soup what you made was delicious.",
+    "The soup that you made it was delicious.",
+    "The soup that you made was delicious.",
+    "The soup whose you made was delicious."
+   ],
+   "answer": 4,
+   "why": "사물 선행사 the soup의 목적격으로 that(=which)을 쓴다. ③은 it이 중복되어 틀리다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n\n내가 만난 그 소녀는 캐나다에서 왔다.",
+   "choices": [
+    "The girl which I met is from Canada.",
+    "The girl whose I met is from Canada.",
+    "The girl who I met is from Canada.",
+    "The girl what I met is from Canada.",
+    "The girl who I met her is from Canada."
+   ],
+   "answer": 3,
+   "why": "사람 선행사의 목적격으로 who(=whom)를 쓴다. ⑤는 met의 목적어 her가 중복되어 틀리다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분을 생략할 수 있는 것은? (주격과 목적격 구별)",
+   "choices": [
+    "The boy <u>who</u> broke the window ran away.",
+    "I like the cake <u>which</u> my mom made.",
+    "The girl <u>whose</u> hair is long is Mia.",
+    "The bus <u>which</u> goes to the zoo is here.",
+    "I have a friend <u>who</u> lives in Daegu."
+   ],
+   "answer": 2,
+   "why": "②의 which는 made의 목적어(목적격)이므로 생략할 수 있다. ①④⑤는 주격, ③은 소유격이라 생략할 수 없다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분을 생략할 수 <u>없는</u> 것은? (주격 찾기)",
+   "choices": [
+    "This is the pen <u>that</u> I use every day.",
+    "The man <u>whom</u> we met was kind.",
+    "The dog <u>that</u> sleeps on the sofa is mine.",
+    "The movie <u>which</u> I saw was long.",
+    "The book <u>that</u> she wrote is famous."
+   ],
+   "answer": 3,
+   "why": "③의 that은 sleeps의 주어(주격)이므로 생략할 수 없다. 나머지는 모두 목적격이라 생략이 가능하다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장에서 생략된 말로 알맞은 것은?\n\nThe sandwich I ate for lunch was really good.",
+   "choices": [
+    "who",
+    "whose",
+    "what",
+    "which",
+    "where"
+   ],
+   "answer": 4,
+   "why": "The sandwich 뒤에 ate의 목적어가 빠져 있으므로 목적격 관계대명사 which가 생략된 것이다. 선행사가 사물이라 who는 쓸 수 없다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\n\nⓐ The book which I read was easy.\nⓑ The girl which I saw is my friend.\nⓒ He is the man whom I trust.\nⓓ The pen that I lost it is red.\nⓔ The song what we sang was fun.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "옳은 것은 ⓐ, ⓒ 두 개다. ⓑ는 사람에 which, ⓓ는 목적어 it 중복, ⓔ는 선행사가 있는데 what을 써서 틀렸다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분의 쓰임이 나머지 넷과 <u>다른</u> 것은? (who/whom)",
+   "choices": [
+    "The boy <u>who</u> I met is kind.",
+    "The girl <u>whom</u> we saw is tall.",
+    "The man <u>who</u> lives next door is nice.",
+    "The friend <u>whom</u> I called is busy.",
+    "The singer <u>who</u> everyone likes is here."
+   ],
+   "answer": 3,
+   "why": "③만 lives의 주어인 주격이고, 나머지는 모두 동사의 목적어가 빠진 목적격이다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분의 쓰임이 나머지 넷과 <u>다른</u> 것은? (which)",
+   "choices": [
+    "The cake <u>which</u> she baked was sweet.",
+    "The bike <u>which</u> is in the yard is mine.",
+    "The hat <u>which</u> I bought is blue.",
+    "The story <u>which</u> he told was funny.",
+    "The apples <u>which</u> we ate were fresh."
+   ],
+   "answer": 2,
+   "why": "②만 is의 주어인 주격 which이고, 나머지는 동사의 목적어가 빠진 목적격 which이다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 관계대명사를 쓰시오.\n\nThis is the watch ____ my dad gave me.",
+   "answer": "which",
+   "alt": [
+    "that"
+   ],
+   "why": "선행사 the watch는 사물이고 gave의 목적어가 빠졌으므로 목적격 which(=that)를 쓴다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 관계대명사를 쓰시오.\n\nThe man ____ I met at the bus stop is a pilot.",
+   "answer": "whom",
+   "alt": [
+    "who",
+    "that"
+   ],
+   "why": "사람 선행사 the man이 met의 목적어이므로 목적격 whom(=who/that)을 쓴다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 관계대명사를 쓰시오.\n\nI still keep the letters ____ she wrote to me.",
+   "answer": "which",
+   "alt": [
+    "that"
+   ],
+   "why": "the letters는 사물이고 wrote의 목적어 자리이므로 which(=that).",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 관계대명사를 쓰시오.\n\nThe girl ____ Tom likes is in my class.",
+   "answer": "whom",
+   "alt": [
+    "who",
+    "that"
+   ],
+   "why": "사람 선행사가 likes의 목적어이므로 목적격 whom(=who/that).",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 관계대명사를 쓰시오.\n\nWhere is the box ____ I put on the table?",
+   "answer": "which",
+   "alt": [
+    "that"
+   ],
+   "why": "사물 선행사 the box가 put의 목적어이므로 which(=that).",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장의 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nThe book <u>what</u> I borrowed is on the desk.",
+   "answer": "which",
+   "alt": [
+    "that"
+   ],
+   "why": "선행사 the book이 있으므로 what은 쓸 수 없고 목적격 which(=that)로 고친다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장의 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nThe boy <u>which</u> we helped said thanks.",
+   "answer": "whom",
+   "alt": [
+    "who",
+    "that"
+   ],
+   "why": "선행사가 사람이므로 which를 목적격 whom(=who/that)으로 고친다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장의 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nThis is the song <u>who</u> I love most.",
+   "answer": "which",
+   "alt": [
+    "that"
+   ],
+   "why": "선행사 the song은 사물이므로 who를 which(=that)로 고친다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장의 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nThe girl <u>whose</u> I saw at the park is my cousin.",
+   "answer": "whom",
+   "alt": [
+    "who",
+    "that"
+   ],
+   "why": "saw의 목적어가 빠진 자리이므로 소유격 whose가 아니라 목적격 whom(=who/that)을 쓴다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 <u>필요 없는</u> 한 단어를 찾아 쓰시오.\n\nThe pen which I lost it was a gift.",
+   "answer": "it",
+   "alt": [],
+   "why": "which가 이미 lost의 목적어이므로 it은 필요 없다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 <u>필요 없는</u> 한 단어를 찾아 쓰시오.\n\nThe man whom I called him is my coach.",
+   "answer": "him",
+   "alt": [],
+   "why": "whom이 called의 목적어이므로 him은 쓸 수 없다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 <u>필요 없는</u> 한 단어를 찾아 쓰시오.\n\nThe cookies that she made them were sweet.",
+   "answer": "them",
+   "alt": [],
+   "why": "that이 made의 목적어이므로 them이 남으면 안 된다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장을 관계대명사 which를 써서 한 문장으로 쓰시오.\n\nI like the cap. My uncle bought it for me.",
+   "answer": "I like the cap which my uncle bought for me.",
+   "alt": [],
+   "why": "the cap을 가리키는 it을 which로 바꾸어 선행사 뒤에 붙인다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장을 관계대명사 whom을 써서 한 문장으로 쓰시오.\n\nThis is the boy. I met him yesterday.",
+   "answer": "This is the boy whom I met yesterday.",
+   "alt": [],
+   "why": "him을 목적격 whom으로 바꾸어 the boy 뒤에 연결한다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장을 관계대명사 which를 써서 한 문장으로 쓰시오.\n\nThe soup was salty. Mom made it.",
+   "answer": "The soup which Mom made was salty.",
+   "alt": [],
+   "why": "it을 which로 바꾸어 선행사 The soup 바로 뒤에 관계대명사절을 넣는다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장을 관계대명사 whom을 써서 한 문장으로 쓰시오.\n\nThe girl is my sister. You saw her.",
+   "answer": "The girl whom you saw is my sister.",
+   "alt": [],
+   "why": "her를 whom으로 바꾸어 The girl 바로 뒤에 붙인다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 생략할 수 있는 한 단어를 찾아 쓰시오.\n\nThe movie which we watched was long.",
+   "answer": "which",
+   "alt": [],
+   "why": "which는 watched의 목적어(목적격)이므로 생략할 수 있다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 생략된 관계대명사를 쓰시오. (선행사는 사물)\n\nThe bag I bought yesterday is very light.",
+   "answer": "which",
+   "alt": [
+    "that"
+   ],
+   "why": "The bag 뒤에 bought의 목적어가 없으므로 목적격 which(=that)가 생략되었다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 생략할 수 있는 한 단어를 찾아 쓰시오.\n\nHe is the singer whom my sister loves.",
+   "answer": "whom",
+   "alt": [],
+   "why": "whom이 loves의 목적어이므로 생략할 수 있다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 관계대명사를 생략한 문장으로 바꿔 쓰시오.\n\nThis is the picture which I drew.",
+   "answer": "This is the picture I drew.",
+   "alt": [],
+   "why": "목적격 which는 생략할 수 있으므로 which만 빼고 그대로 쓴다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThe friend with ____ I traveled last summer now lives in Canada.",
+   "choices": [
+    "who",
+    "that",
+    "whom",
+    "which",
+    "what"
+   ],
+   "answer": 3,
+   "why": "전치사 바로 뒤에는 who나 that을 쓸 수 없고, 사람 선행사이므로 whom을 쓴다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThat is the topic about ____ we talked for an hour.",
+   "choices": [
+    "who",
+    "whom",
+    "that",
+    "which",
+    "what"
+   ],
+   "answer": 4,
+   "why": "전치사 about의 목적어 자리이고 선행사가 사물(the topic)이므로 which. 전치사 뒤에는 that을 쓸 수 없다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThe teacher ____ we sent the card to retired last month.",
+   "choices": [
+    "which",
+    "what",
+    "whose",
+    "whom",
+    "where"
+   ],
+   "answer": 4,
+   "why": "문장 끝 to의 목적어가 빠져 있고 선행사가 사람이므로 목적격 whom.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nI finally found the key ____ I was looking for.",
+   "choices": [
+    "who",
+    "whom",
+    "whose",
+    "which",
+    "what"
+   ],
+   "answer": 4,
+   "why": "look for의 목적어가 빠진 자리이고 선행사가 사물이므로 which.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThe house in ____ my grandparents lived is now a museum.",
+   "choices": [
+    "that",
+    "which",
+    "what",
+    "whom",
+    "who"
+   ],
+   "answer": 2,
+   "why": "「전치사 + 관계대명사」 자리이므로 사물을 받는 which. in that은 쓸 수 없다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nShe is the classmate to ____ I lent my umbrella.",
+   "choices": [
+    "who",
+    "which",
+    "that",
+    "what",
+    "whom"
+   ],
+   "answer": 5,
+   "why": "전치사 to 뒤이므로 who·that은 불가하고, 사람이므로 whom.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThe subject ____ I am most interested in is history.",
+   "choices": [
+    "who",
+    "whom",
+    "whose",
+    "which",
+    "what"
+   ],
+   "answer": 4,
+   "why": "in의 목적어가 빠졌고 선행사가 사물이므로 which.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThe children ____ the volunteers taught last year sent letters.",
+   "choices": [
+    "which",
+    "what",
+    "whose",
+    "whom",
+    "when"
+   ],
+   "answer": 4,
+   "why": "taught의 목적어가 빠진 자리, 선행사가 사람이므로 whom.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nDo you remember the restaurant ____ we ate at during our trip?",
+   "choices": [
+    "who",
+    "whom",
+    "whose",
+    "which",
+    "what"
+   ],
+   "answer": 4,
+   "why": "at의 목적어가 빠졌고 선행사가 장소를 나타내는 사물이므로 which.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThe company for ____ my mother works is quite small.",
+   "choices": [
+    "that",
+    "who",
+    "which",
+    "what",
+    "whose"
+   ],
+   "answer": 3,
+   "why": "전치사 for 뒤에는 that·who를 쓸 수 없고 선행사가 사물이므로 which.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThe person ____ I depend on the most is my older brother.",
+   "choices": [
+    "which",
+    "what",
+    "whose",
+    "whom",
+    "where"
+   ],
+   "answer": 4,
+   "why": "depend on의 목적어가 빠졌고 선행사가 사람이므로 whom.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n\nThis is the museum ____ our class visited on the field trip.",
+   "choices": [
+    "who",
+    "whom",
+    "whose",
+    "which",
+    "what"
+   ],
+   "answer": 4,
+   "why": "visited의 목적어가 빠졌고 선행사가 사물이므로 which.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?\n\n• The novel (A)____ I read last week was published in 1930.\n• The man (B)____ I sat next to on the bus was very kind.",
+   "choices": [
+    "which – whom",
+    "whom – which",
+    "what – whom",
+    "which – what",
+    "whose – whom"
+   ],
+   "answer": 1,
+   "why": "(A)는 사물 선행사의 목적격이므로 which, (B)는 next to의 목적어가 빠진 사람 선행사이므로 whom이다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?\n\n• The girl to (A)____ I gave my ticket is my neighbor.\n• The village in (B)____ he grew up is near the sea.",
+   "choices": [
+    "who – that",
+    "whom – which",
+    "that – which",
+    "whom – what",
+    "which – whom"
+   ],
+   "answer": 2,
+   "why": "둘 다 「전치사 + 관계대명사」 자리다. 사람은 whom, 사물은 which를 쓰며 전치사 뒤에 that·who는 올 수 없다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?\n\n• I still have the bike (A)____ my father repaired for me.\n• The doctor (B)____ we visited yesterday spoke very slowly.",
+   "choices": [
+    "whom – which",
+    "which – whom",
+    "what – who",
+    "whose – whom",
+    "which – what"
+   ],
+   "answer": 2,
+   "why": "the bike(사물)은 which, the doctor(사람)은 whom. 둘 다 동사의 목적어가 빠진 자리다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?\n\n• The song (A)____ we listened to was in French.\n• The friends with (B)____ I play soccer live nearby.",
+   "choices": [
+    "which – that",
+    "what – whom",
+    "which – whom",
+    "whom – which",
+    "that – who"
+   ],
+   "answer": 3,
+   "why": "(A)는 to의 목적어가 빠진 사물 선행사이므로 which, (B)는 전치사 with 바로 뒤이므로 사람을 받는 whom이다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (관계대명사절의 완성도)",
+   "choices": [
+    "The place which we stayed at it was clean.",
+    "The man with that I spoke was a reporter.",
+    "The report which I finished last night is on your desk.",
+    "The students whom study hard will pass.",
+    "The camera what I borrowed is broken."
+   ],
+   "answer": 3,
+   "why": "③ finished의 목적어가 빠진 자리에 which를 써서 옳다. ①은 it 중복, ②는 전치사 뒤 that, ④는 주어 자리에 whom, ⑤는 선행사가 있는데 what을 써서 틀렸다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 것은? (전치사 뒤의 that)",
+   "choices": [
+    "The song that she sang at the festival moved everyone.",
+    "The building in which we had lunch is very old.",
+    "The woman who I introduced to you is my aunt.",
+    "The problem about that we argued was solved.",
+    "The letters which he wrote are kept in a box."
+   ],
+   "answer": 4,
+   "why": "④ 전치사 바로 뒤에는 that을 쓸 수 없으므로 about which로 고쳐야 한다. 나머지는 모두 옳다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (전치사의 위치)",
+   "choices": [
+    "This is the chair on that I always sit.",
+    "This is the chair which I always sit on.",
+    "This is the chair which I always sit.",
+    "This is the chair on which I always sit on.",
+    "This is the chair what I always sit on."
+   ],
+   "answer": 2,
+   "why": "sit on의 on이 문장 끝에 남고 목적격 which를 쓴 ②가 옳다. ③은 on이 빠졌고 ④는 on이 두 번 쓰였다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 것은? (호텔 소재)",
+   "choices": [
+    "The hotel at which we stayed was cheap.",
+    "The hotel which we stayed at was cheap.",
+    "The hotel that we stayed at was cheap.",
+    "The hotel we stayed at was cheap.",
+    "The hotel at that we stayed was cheap."
+   ],
+   "answer": 5,
+   "why": "⑤ 전치사 at 뒤에는 that을 쓸 수 없다. ①②③④는 전치사의 위치를 바꾸거나 목적격을 생략한 형태로 모두 옳다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (with + 관계대명사)",
+   "choices": [
+    "The girl whose I danced with is Korean.",
+    "The girl with who I danced is Korean.",
+    "The girl with whom I danced is Korean.",
+    "The girl with whom I danced with is Korean.",
+    "The girl which I danced with is Korean."
+   ],
+   "answer": 3,
+   "why": "③ 전치사 with 뒤에 사람을 받는 whom을 써서 옳다. ②의 who는 전치사 뒤에 올 수 없고, ④는 with가 중복, ⑤는 사람에 which를 썼다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 것은? (관계대명사절 안의 목적어)",
+   "choices": [
+    "The bag in which I keep my books is heavy.",
+    "The teacher to whom I talked was helpful.",
+    "The movie which we saw it was boring.",
+    "The city that my parents visited is famous.",
+    "The pen with which she signed the paper is gold."
+   ],
+   "answer": 3,
+   "why": "③ which가 saw의 목적어이므로 it을 또 쓸 수 없다. 나머지는 모두 어법에 맞다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (사람 + 전치사)",
+   "choices": [
+    "The people whom I work with them are friendly.",
+    "The people with whom I work are friendly.",
+    "The people with who I work are friendly.",
+    "The people whose I work with are friendly.",
+    "The people what I work with are friendly."
+   ],
+   "answer": 2,
+   "why": "② 전치사 with + 목적격 whom이 바르다. ①은 them 중복, ③은 전치사 뒤 who, ④는 소유격, ⑤는 what을 잘못 썼다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 것은? (about의 목적어)",
+   "choices": [
+    "The class which I enjoy most is science.",
+    "The topic on which he wrote his essay was climate change.",
+    "The friend I traveled with is a photographer.",
+    "The song to which we danced was slow.",
+    "The book which I told you about it is here."
+   ],
+   "answer": 5,
+   "why": "⑤ which가 about의 목적어이므로 it이 남을 수 없다. 나머지는 모두 옳다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 <u>틀린</u> 부분은?\n\nThe woman <u>with</u> <u>who</u> I <u>shared</u> my lunch <u>thanked</u> <u>me</u>.",
+   "choices": [
+    "with",
+    "who",
+    "shared",
+    "thanked",
+    "me"
+   ],
+   "answer": 2,
+   "why": "전치사 with 바로 뒤에는 who를 쓸 수 없고 whom을 써야 한다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 <u>틀린</u> 부분은?\n\nThe house <u>which</u> my uncle <u>built</u> <u>it</u> <u>last</u> year <u>is</u> for sale.",
+   "choices": [
+    "which",
+    "built",
+    "it",
+    "last",
+    "is"
+   ],
+   "answer": 3,
+   "why": "which가 built의 목적어이므로 it을 또 쓸 수 없다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 <u>틀린</u> 부분은?\n\nThe topic <u>about</u> <u>that</u> we <u>talked</u> yesterday <u>was</u> very <u>interesting</u>.",
+   "choices": [
+    "about",
+    "that",
+    "talked",
+    "was",
+    "interesting"
+   ],
+   "answer": 2,
+   "why": "전치사 뒤에는 that을 쓸 수 없으므로 about which로 고쳐야 한다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 <u>틀린</u> 부분은?\n\nThe friends <u>whom</u> I <u>invited</u> <u>to</u> the party <u>they</u> <u>arrived</u> late.",
+   "choices": [
+    "whom",
+    "invited",
+    "to",
+    "they",
+    "arrived"
+   ],
+   "answer": 4,
+   "why": "관계대명사절이 끝난 뒤 주어 they가 다시 나와 문장이 겹쳤다. they를 빼야 한다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n\n• The bench on ____ we sat was wet.\n• The report ____ he submitted was excellent.",
+   "choices": [
+    "that",
+    "who",
+    "whom",
+    "which",
+    "what"
+   ],
+   "answer": 4,
+   "why": "첫 문장은 전치사 뒤라 that을 쓸 수 없고, 두 문장 모두 사물 선행사의 목적격이므로 which가 공통으로 들어간다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n\n• The man to ____ I spoke was the manager.\n• The artist ____ everyone admires lives here.",
+   "choices": [
+    "which",
+    "what",
+    "whom",
+    "whose",
+    "that"
+   ],
+   "answer": 3,
+   "why": "둘 다 사람 선행사의 목적격 자리이고, 첫 문장은 전치사 to 뒤라 that·who가 올 수 없으므로 whom이다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분의 쓰임이 나머지 넷과 <u>다른</u> 것은? (주격/목적격)",
+   "choices": [
+    "The bus <u>which</u> I take every morning is always crowded.",
+    "The chair <u>which</u> stands by the window is broken.",
+    "The email <u>which</u> she sent me was very long.",
+    "The photo <u>which</u> he posted got many likes.",
+    "The pizza <u>which</u> we ordered arrived cold."
+   ],
+   "answer": 2,
+   "why": "②만 stands의 주어인 주격이고 나머지는 모두 동사의 목적어가 빠진 목적격이다. 주격은 생략할 수 없다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분을 생략할 수 <u>없는</u> 것은? (전치사 뒤 관계대명사)",
+   "choices": [
+    "The man <u>whom</u> we met is a writer.",
+    "The village in <u>which</u> she was born is small.",
+    "The story <u>that</u> he told us was true.",
+    "The shoes <u>which</u> I wore were new.",
+    "The girl <u>who</u> I called did not answer."
+   ],
+   "answer": 2,
+   "why": "②는 전치사 in 바로 뒤에 온 관계대명사라서 생략할 수 없다. 나머지는 모두 목적격이라 생략이 가능하다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n\n내가 어제 이야기했던 그 남자는 우리 삼촌이다.",
+   "choices": [
+    "The man whom I talked yesterday is my uncle.",
+    "The man who I talked to yesterday is my uncle.",
+    "The man with that I talked yesterday is my uncle.",
+    "The man whom I talked to him yesterday is my uncle.",
+    "The man what I talked to yesterday is my uncle."
+   ],
+   "answer": 2,
+   "why": "talk to의 to가 반드시 있어야 한다. ①은 to가 빠졌고, ③은 전치사 뒤 that, ④는 him 중복, ⑤는 what을 잘못 썼다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n\n이것은 내가 지난주에 빌린 소설이다.",
+   "choices": [
+    "This is the novel which I borrowed last week.",
+    "This is the novel who I borrowed last week.",
+    "This is the novel which I borrowed it last week.",
+    "This is the novel what I borrowed last week.",
+    "This is the novel whose I borrowed last week."
+   ],
+   "answer": 1,
+   "why": "사물 선행사 the novel + 목적격 which. ③은 it 중복, ④는 선행사와 함께 못 쓰는 what이다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n\n그녀가 함께 일하는 사람들은 매우 친절하다.",
+   "choices": [
+    "The people whom she works are very kind.",
+    "The people with who she works are very kind.",
+    "The people with whom she works are very kind.",
+    "The people with that she works are very kind.",
+    "The people which she works with them are very kind."
+   ],
+   "answer": 3,
+   "why": "work with의 with가 필요하며, 전치사 뒤에는 whom만 올 수 있다. ①은 with가 없고 ⑤는 them이 중복되었다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n\n우리가 머물렀던 그 호텔은 바다 근처에 있었다.",
+   "choices": [
+    "The hotel in that we stayed was near the sea.",
+    "The hotel which we stayed was near the sea.",
+    "The hotel in which we stayed was near the sea.",
+    "The hotel what we stayed in was near the sea.",
+    "The hotel whom we stayed in was near the sea."
+   ],
+   "answer": 3,
+   "why": "stay in의 in이 필요하고 전치사 뒤에는 which를 쓴다. ②는 in이 빠졌고 ①은 in that이 불가능하다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\n\nA: Which cap do you want?\nB: I want the cap ____ my brother is wearing.",
+   "choices": [
+    "who",
+    "whom",
+    "whose",
+    "which",
+    "what"
+   ],
+   "answer": 4,
+   "why": "선행사 the cap이 사물이고 is wearing의 목적어가 빠져 있으므로 목적격 which.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\n\nA: Who is Mr. Park?\nB: He is the coach ____ our team respects the most.",
+   "choices": [
+    "which",
+    "what",
+    "whom",
+    "whose",
+    "where"
+   ],
+   "answer": 3,
+   "why": "선행사 the coach가 사람이고 respects의 목적어 자리이므로 whom.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바르게 바꾼 것은?\n\nI lost the umbrella. My aunt gave it to me.",
+   "choices": [
+    "I lost the umbrella which my aunt gave it to me.",
+    "I lost the umbrella which my aunt gave to me.",
+    "I lost the umbrella who my aunt gave to me.",
+    "I lost the umbrella what my aunt gave to me.",
+    "I lost the umbrella whose my aunt gave to me."
+   ],
+   "answer": 2,
+   "why": "it을 which로 바꾸어 앞으로 보내는 것이므로 뒤에 it을 남기면 안 된다(①). 사물 선행사이므로 who·what·whose도 쓸 수 없다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 같은 것은?\n\nThe girl whom I helped yesterday sent me a letter.",
+   "choices": [
+    "The girl who helped me yesterday sent me a letter.",
+    "The girl I helped yesterday sent me a letter.",
+    "The girl whose I helped yesterday sent me a letter.",
+    "The girl helped me yesterday sent me a letter.",
+    "The girl which I helped yesterday sent me a letter."
+   ],
+   "answer": 2,
+   "why": "목적격 whom은 생략할 수 있으므로 ②가 같은 뜻이다. ①은 '나를 도와준 소녀'로 뜻이 반대이고 ⑤는 사람에 which를 썼다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\n\nⓐ The film which we watched was in Spanish.\nⓑ The man to who I spoke was polite.\nⓒ The desk on which I study is old.\nⓓ The bag that I carried it was heavy.\nⓔ The friend I met at camp writes to me.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "옳은 것은 ⓐ, ⓒ, ⓔ 세 개다. ⓑ는 전치사 뒤에 who를 썼고, ⓓ는 목적어 it이 중복되었다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 문장의 개수는?\n\nⓐ The song what she likes is old.\nⓑ The store in which we shop is closed.\nⓒ The teacher whom I asked was busy.\nⓓ The car which my dad washed it shines.\nⓔ The people with whom I live are noisy.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "틀린 것은 ⓐ(선행사가 있는데 what)와 ⓓ(목적어 it 중복) 두 개다. ⓑⓒⓔ는 모두 옳다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 관계대명사를 생략할 수 있는 문장의 개수는?\n\nⓐ The book which I read was long.\nⓑ The boy who lives upstairs is loud.\nⓒ The man whom she married is a chef.\nⓓ The room in which we slept was cold.\nⓔ The letter that he sent arrived today.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "목적격인 ⓐ, ⓒ, ⓔ 세 개는 생략할 수 있다. ⓑ는 주격, ⓓ는 전치사 바로 뒤라서 생략할 수 없다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 that의 쓰임이 나머지 넷과 <u>다른</u> 것은?",
+   "choices": [
+    "The cake <u>that</u> she baked was delicious.",
+    "I know <u>that</u> he is honest.",
+    "The letter <u>that</u> I received was short.",
+    "This is the shirt <u>that</u> I want.",
+    "The city <u>that</u> we visited was clean."
+   ],
+   "answer": 2,
+   "why": "②의 that은 목적어절을 이끄는 접속사이고, 나머지는 모두 목적격 관계대명사(뒤에 목적어가 빠져 있음)이다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 수 <u>없는</u> 것은?\n\nThe man ____ I met at the airport was a pilot.",
+   "choices": [
+    "who",
+    "whom",
+    "that",
+    "× (생략)",
+    "which"
+   ],
+   "answer": 5,
+   "why": "선행사가 사람이므로 which는 쓸 수 없다. 목적격 자리이므로 who/whom/that은 모두 가능하고 생략도 된다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장에서 어색한 부분을 바르게 고친 것은?\n\nThe topic which we talked about it was interesting.",
+   "choices": [
+    "which를 what으로 바꾼다",
+    "it을 삭제한다",
+    "which를 whose로 바꾼다",
+    "about을 삭제한다",
+    "was를 were로 바꾼다"
+   ],
+   "answer": 2,
+   "why": "which가 이미 about의 목적어이므로 it을 지워야 한다. about은 talk about의 일부라서 반드시 필요하다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오.\n\nThe friend to ____ I sent the photos replied right away.",
+   "answer": "whom",
+   "alt": [],
+   "why": "전치사 to 바로 뒤이고 선행사가 사람이므로 whom만 가능하다(who·that 불가).",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오.\n\nThe library in ____ we studied closes at nine.",
+   "answer": "which",
+   "alt": [],
+   "why": "전치사 in 뒤에 오는 사물 선행사의 관계대명사는 which이다(in that 불가).",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오.\n\nThe teacher with ____ I practiced the speech is very kind.",
+   "answer": "whom",
+   "alt": [],
+   "why": "전치사 with 뒤 + 사람 선행사이므로 whom.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 관계대명사를 쓰시오.\n\nThe magazine ____ I read on the train was about space.",
+   "answer": "which",
+   "alt": [
+    "that"
+   ],
+   "why": "read의 목적어가 빠진 자리이고 선행사가 사물이므로 which(=that).",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 관계대명사를 쓰시오.\n\nThe players ____ our coach chose will play tomorrow.",
+   "answer": "whom",
+   "alt": [
+    "who",
+    "that"
+   ],
+   "why": "chose의 목적어가 빠졌고 선행사가 사람이므로 목적격 whom(=who/that).",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장의 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nThe hotel <u>at that</u> we stayed had a nice view.",
+   "answer": "at which",
+   "alt": [],
+   "why": "전치사 바로 뒤에는 that을 쓸 수 없으므로 at which로 고친다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장의 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nThe man <u>with who</u> I shared the tent snores loudly.",
+   "answer": "with whom",
+   "alt": [],
+   "why": "전치사 뒤에는 주격 who가 올 수 없고 목적격 whom을 써야 한다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장의 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nThe story <u>what</u> he told us was hard to believe.",
+   "answer": "which",
+   "alt": [
+    "that"
+   ],
+   "why": "선행사 the story가 있으므로 what 대신 목적격 which(=that)를 쓴다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 <u>필요 없는</u> 한 단어를 찾아 쓰시오.\n\nThe email which I sent it yesterday came back.",
+   "answer": "it",
+   "alt": [],
+   "why": "which가 sent의 목적어이므로 it은 필요 없다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장의 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nThe song <u>about that</u> we argued is on the radio now.",
+   "answer": "about which",
+   "alt": [],
+   "why": "전치사 about 뒤에는 that을 쓸 수 없으므로 about which로 고친다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 관계대명사 whom을 써서 한 문장으로 쓰시오.\n\nThe woman is a nurse. I met her at the hospital.",
+   "answer": "The woman whom I met at the hospital is a nurse.",
+   "alt": [],
+   "why": "her를 whom으로 바꾸어 선행사 The woman 바로 뒤에 관계대명사절을 넣는다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 관계대명사 which를 써서 한 문장으로 쓰시오.\n\nThis is the app. I use it every day.",
+   "answer": "This is the app which I use every day.",
+   "alt": [],
+   "why": "it을 목적격 which로 바꾸어 the app 뒤에 연결한다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 「전치사 + 관계대명사」를 써서 한 문장으로 쓰시오.\n\nThat is the house. My grandmother lived in it for 40 years.",
+   "answer": "That is the house in which my grandmother lived for 40 years.",
+   "alt": [],
+   "why": "in it의 it을 which로 바꾸고 전치사 in을 which 앞으로 옮긴다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 「전치사 + 관계대명사」를 써서 한 문장으로 쓰시오.\n\nShe is the friend. I went to the concert with her.",
+   "answer": "She is the friend with whom I went to the concert.",
+   "alt": [],
+   "why": "with her의 her를 whom으로 바꾸고 with를 whom 앞에 붙인다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 관계대명사를 생략한 문장으로 다시 쓰시오.\n\nThe bike which I bought last month is already broken.",
+   "answer": "The bike I bought last month is already broken.",
+   "alt": [],
+   "why": "목적격 which는 생략할 수 있다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 전치사를 관계대명사 앞으로 옮겨 다시 쓰시오.\n\nThe office which he works in is on the tenth floor.",
+   "answer": "The office in which he works is on the tenth floor.",
+   "alt": [],
+   "why": "문장 끝의 in을 which 앞으로 옮기면 in which가 된다. 이때 that은 쓸 수 없다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 전치사를 관계대명사 앞으로 옮겨 다시 쓰시오.\n\nThe person whom I was waiting for never came.",
+   "answer": "The person for whom I was waiting never came.",
+   "alt": [],
+   "why": "끝에 있던 for를 whom 앞으로 옮긴다. 이때 whom은 생략할 수 없다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 생략된 관계대명사를 쓰시오. (선행사는 사람, 목적격)\n\nThe writer my sister admires won a big prize.",
+   "answer": "whom",
+   "alt": [
+    "who",
+    "that"
+   ],
+   "why": "The writer 뒤에 admires의 목적어가 없으므로 목적격 whom(=who/that)이 생략되었다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같은 뜻이 되도록 빈칸에 알맞은 말을 두 단어로 쓰시오.\n\n내가 앉아 있던 그 의자는 다리가 하나 부러져 있었다.\n→ The chair ____ ____ I was sitting had a broken leg.",
+   "answer": "on which",
+   "alt": [],
+   "why": "sit on the chair이므로 전치사 on + 사물을 받는 which를 쓴다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 주어진 말을 바르게 배열하여 빈칸을 완성하시오.\n\n내가 존경하는 그 과학자는 서울에 산다.\n(admire / the scientist / I / whom)\n→ ____ lives in Seoul.",
+   "answer": "The scientist whom I admire",
+   "alt": [],
+   "why": "선행사 The scientist 뒤에 목적격 whom + 주어 I + 동사 admire 순으로 쓴다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?\n\nⓐ The novel which I read during the holidays was written by a Korean writer.\nⓑ The man to who she gave the keys is the new guard.\nⓒ The days that we spent in Jeju were the happiest of my life.\nⓓ The topic about which they argued was quite serious.",
+   "choices": [
+    "ⓐ, ⓑ",
+    "ⓐ, ⓒ",
+    "ⓑ, ⓓ",
+    "ⓐ, ⓒ, ⓓ",
+    "ⓑ, ⓒ, ⓓ"
+   ],
+   "answer": 4,
+   "why": "ⓑ만 틀렸다. 전치사 to 바로 뒤에는 주격 who를 쓸 수 없고 whom을 써야 한다. ⓐⓒⓓ는 모두 목적격 관계대명사가 바르게 쓰였다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?\n\nⓐ The bag in which I kept my passport is missing.\nⓑ The bag which I kept my passport in is missing.\nⓒ The bag in that I kept my passport is missing.\nⓓ The bag I kept my passport in is missing.",
+   "choices": [
+    "ⓐ, ⓑ",
+    "ⓐ, ⓒ",
+    "ⓑ, ⓒ, ⓓ",
+    "ⓐ, ⓑ, ⓓ",
+    "ⓐ, ⓑ, ⓒ, ⓓ"
+   ],
+   "answer": 4,
+   "why": "전치사를 앞에 두는 형(ⓐ), 뒤에 두는 형(ⓑ), 목적격을 생략한 형(ⓓ)은 모두 옳다. ⓒ는 전치사 뒤에 that을 쓸 수 없어 틀렸다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?\n\nⓐ The person whom I met at the camp lives in Busan.\nⓑ The letter which he had waited for finally arrived.\nⓒ The friends with whom I grew up still call me.\nⓓ The movie what everyone talks about is not that good.",
+   "choices": [
+    "ⓐ, ⓑ",
+    "ⓑ, ⓒ",
+    "ⓐ, ⓒ, ⓓ",
+    "ⓐ, ⓑ, ⓒ",
+    "ⓑ, ⓒ, ⓓ"
+   ],
+   "answer": 4,
+   "why": "ⓓ만 틀렸다. 선행사 The movie가 있으므로 what이 아니라 which/that을 써야 한다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?\n\nⓐ The pen with which the letter was signed is in the museum.\nⓑ The pen which the letter was signed with is in the museum.\nⓒ The pen the letter was signed with is in the museum.\nⓓ The pen with which the letter was signed with is in the museum.",
+   "choices": [
+    "ⓐ, ⓑ",
+    "ⓐ, ⓑ, ⓒ",
+    "ⓑ, ⓒ, ⓓ",
+    "ⓐ, ⓒ",
+    "ⓐ, ⓑ, ⓒ, ⓓ"
+   ],
+   "answer": 2,
+   "why": "ⓓ는 with가 앞뒤로 두 번 쓰여 틀렸다. 전치사는 관계대명사 앞이나 절 끝 중 한 곳에만 쓴다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 관계대명사를 생략할 수 있는 것을 모두 고른 것은?\n\nⓐ The girl <u>who</u> won the race is my sister.\nⓑ The girl <u>whom</u> the coach praised is my sister.\nⓒ The house in <u>which</u> he was born is gone.\nⓓ The house <u>which</u> he was born in is gone.",
+   "choices": [
+    "ⓐ, ⓑ",
+    "ⓑ, ⓒ",
+    "ⓑ, ⓓ",
+    "ⓐ, ⓓ",
+    "ⓒ, ⓓ"
+   ],
+   "answer": 3,
+   "why": "목적격이면서 전치사 바로 뒤가 아닌 ⓑ, ⓓ만 생략할 수 있다. ⓐ는 주격, ⓒ는 전치사 바로 뒤라 생략할 수 없다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 관계대명사를 생략할 수 있는 것을 모두 고른 것은?\n\nⓐ The song <u>which</u> was played at the wedding made me cry.\nⓑ The song <u>which</u> the band played made me cry.\nⓒ The teacher to <u>whom</u> I owe everything retired.\nⓓ The teacher <u>whom</u> I owe everything to retired.",
+   "choices": [
+    "ⓐ, ⓒ",
+    "ⓑ, ⓓ",
+    "ⓐ, ⓑ",
+    "ⓒ, ⓓ",
+    "ⓑ, ⓒ"
+   ],
+   "answer": 2,
+   "why": "ⓑ와 ⓓ는 목적격이고 전치사가 절 끝에 있으므로 생략할 수 있다. ⓐ는 주격, ⓒ는 전치사 바로 뒤라 불가능하다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 것을 모두 고른 것은?\n\nⓐ The concert which we had been waiting for was canceled.\nⓑ The man who I borrowed the money from paid me back.\nⓒ The reason for that he left is unclear.\nⓓ The money which he lent me it was returned.",
+   "choices": [
+    "ⓐ, ⓑ",
+    "ⓒ, ⓓ",
+    "ⓑ, ⓒ",
+    "ⓐ, ⓓ",
+    "ⓑ, ⓓ"
+   ],
+   "answer": 2,
+   "why": "ⓒ는 전치사 뒤에 that을 쓸 수 없고, ⓓ는 which가 이미 lent의 목적어라 it이 남을 수 없다. ⓐⓑ는 옳다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 것을 모두 고른 것은?\n\nⓐ The student whom we chose has a great voice.\nⓑ The chair which he was sitting on broke suddenly.\nⓒ The chair on which he was sitting on broke suddenly.\nⓓ The chair what he was sitting on broke suddenly.",
+   "choices": [
+    "ⓐ, ⓑ",
+    "ⓐ, ⓒ",
+    "ⓒ, ⓓ",
+    "ⓑ, ⓓ",
+    "ⓐ, ⓓ"
+   ],
+   "answer": 3,
+   "why": "ⓒ는 on이 두 번, ⓓ는 선행사가 있는데 what을 써서 틀렸다. ⓐⓑ는 목적격 관계대명사가 바르게 쓰였다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 <u>틀린</u> 부분은?\n\nThe exchange student <u>whom</u> our club invited last spring <u>has</u> sent us a video <u>in</u> <u>that</u> he thanks <u>everyone</u>.",
+   "choices": [
+    "whom",
+    "has",
+    "in",
+    "that",
+    "everyone"
+   ],
+   "answer": 4,
+   "why": "전치사 in 바로 뒤에는 that을 쓸 수 없으므로 in which로 고쳐야 한다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 <u>틀린</u> 부분은?\n\nThe old camera <u>which</u> my grandfather <u>gave</u> me <u>it</u> still <u>works</u> <u>perfectly</u>.",
+   "choices": [
+    "which",
+    "gave",
+    "it",
+    "works",
+    "perfectly"
+   ],
+   "answer": 3,
+   "why": "which가 gave의 직접목적어이므로 it을 또 쓸 수 없다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 <u>틀린</u> 부분은?\n\nThe scientist <u>to</u> <u>who</u> the prize <u>was</u> given <u>never</u> stopped <u>studying</u>.",
+   "choices": [
+    "to",
+    "who",
+    "was",
+    "never",
+    "studying"
+   ],
+   "answer": 2,
+   "why": "전치사 to 뒤에는 목적격 whom을 써야 한다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 <u>틀린</u> 부분은?\n\nThe friends <u>whom</u> I <u>played</u> soccer <u>with</u> <u>them</u> moved <u>away</u>.",
+   "choices": [
+    "whom",
+    "played",
+    "with",
+    "them",
+    "away"
+   ],
+   "answer": 4,
+   "why": "whom이 with의 목적어이므로 them이 남으면 안 된다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 <u>틀린</u> 부분은?\n\nThe team <u>whose</u> our school <u>played</u> against <u>last</u> week <u>won</u> the <u>championship</u>.",
+   "choices": [
+    "whose",
+    "played",
+    "last",
+    "won",
+    "championship"
+   ],
+   "answer": 1,
+   "why": "against의 목적어가 빠진 자리이므로 소유격 whose가 아니라 목적격 which/that을 써야 한다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 <u>틀린</u> 부분은?\n\nThe hotel <u>at which</u> we <u>stayed</u> <u>at</u> <u>was</u> close to the <u>beach</u>.",
+   "choices": [
+    "at which",
+    "stayed",
+    "at",
+    "was",
+    "beach"
+   ],
+   "answer": 3,
+   "why": "전치사 at을 which 앞에 이미 썼으므로 절 끝의 at은 지워야 한다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 <u>틀린</u> 부분은?\n\nThe teacher <u>which</u> everyone <u>in</u> our school <u>respects</u> <u>is</u> <u>retiring</u> this year.",
+   "choices": [
+    "which",
+    "in",
+    "respects",
+    "is",
+    "retiring"
+   ],
+   "answer": 1,
+   "why": "선행사 The teacher는 사람이므로 which가 아니라 who(m)/that을 써야 한다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 <u>틀린</u> 부분은?\n\nThe song <u>to</u> <u>which</u> they <u>danced</u> <u>it</u> at the party <u>became</u> a hit.",
+   "choices": [
+    "to",
+    "which",
+    "danced",
+    "it",
+    "became"
+   ],
+   "answer": 4,
+   "why": "which가 to의 목적어이므로 danced 뒤에 it을 쓸 수 없다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n\n그가 나에게 보낸 소포는 아직 도착하지 않았다.",
+   "choices": [
+    "The package which he sent me has not arrived yet.",
+    "The package what he sent me has not arrived yet.",
+    "The package whom he sent me has not arrived yet.",
+    "The package which he sent it to me has not arrived yet.",
+    "The package he sent to me it has not arrived yet."
+   ],
+   "answer": 1,
+   "why": "사물 선행사 + 목적격 which가 바르다. ④⑤는 목적어 it이 중복되었고 ②는 선행사와 함께 쓸 수 없는 what이다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n\n우리가 도움을 요청했던 그 이웃은 지금 해외에 있다.",
+   "choices": [
+    "The neighbor what we asked for help is now abroad.",
+    "The neighbor who we asked him for help is now abroad.",
+    "The neighbor which we asked for help is now abroad.",
+    "The neighbor whom we asked for help is now abroad.",
+    "The neighbor for whom we asked help is now abroad."
+   ],
+   "answer": 4,
+   "why": "ask A for help의 A 자리가 빠졌으므로 사람 선행사를 받는 whom이 알맞다. ②는 him 중복, ③은 사람에 which를 썼다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n\n그녀가 자란 그 마을은 지금 도시가 되었다.",
+   "choices": [
+    "The town which she grew up has become a city.",
+    "The town in which she grew up has become a city.",
+    "The town in that she grew up has become a city.",
+    "The town what she grew up in has become a city.",
+    "The town whom she grew up in has become a city."
+   ],
+   "answer": 2,
+   "why": "grow up in의 in이 반드시 필요하다. ①은 in이 빠졌고 ③은 전치사 뒤 that, ⑤는 사물에 whom을 써서 틀렸다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n\n내가 함께 자전거를 타는 친구들은 모두 같은 반이다.",
+   "choices": [
+    "The friends with whom I ride bikes are all in the same class.",
+    "The friends with who I ride bikes are all in the same class.",
+    "The friends with that I ride bikes are all in the same class.",
+    "The friends whom I ride bikes are all in the same class.",
+    "The friends which I ride bikes with them are all in the same class."
+   ],
+   "answer": 1,
+   "why": "전치사 with + whom이 바르다. ④는 with가 빠졌고 ⑤는 them이 중복되었다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바르게 옮긴 것은?\n\nI still remember the advice. My homeroom teacher gave it to me in 2020.",
+   "choices": [
+    "I still remember the advice what my homeroom teacher gave to me in 2020.",
+    "I still remember the advice whose my homeroom teacher gave to me in 2020.",
+    "I still remember the advice which my homeroom teacher gave it to me in 2020.",
+    "I still remember the advice which my homeroom teacher gave to me in 2020.",
+    "I still remember the advice whom my homeroom teacher gave to me in 2020."
+   ],
+   "answer": 4,
+   "why": "it을 which로 바꾸어 앞으로 보냈으므로 뒤에 it을 남기면 안 된다(③). 선행사가 사물이라 whom도 쓸 수 없다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 <조건>에 맞게 바꾼 것으로 알맞은 것은?\n\nThe box was empty. He was carrying the box.\n<조건> 관계대명사를 생략할 것",
+   "choices": [
+    "The box which he was carrying was empty.",
+    "The box he was carrying was empty.",
+    "The box he was carrying it was empty.",
+    "The box was empty he was carrying.",
+    "The box carrying he was was empty."
+   ],
+   "answer": 2,
+   "why": "목적격 관계대명사를 생략하면 「선행사 + 주어 + 동사」가 바로 이어진다. ①은 생략하지 않았고 ③은 it이 남아 있다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (편지 소재)",
+   "choices": [
+    "The volunteers whom the city thanked they worked all night.",
+    "The letters which my grandfather kept for fifty years are in this box.",
+    "The letters what my grandfather kept for fifty years are in this box.",
+    "The letters which my grandfather kept them for fifty years are in this box.",
+    "The letters whose my grandfather kept for fifty years are in this box."
+   ],
+   "answer": 2,
+   "why": "② kept의 목적어가 빠진 자리에 which를 써서 옳다. ①은 주어 they 중복, ④는 them 중복, ③⑤는 관계대명사를 잘못 골랐다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 것은? (모둠 과제 소재)",
+   "choices": [
+    "The project on which our group worked won first prize.",
+    "The project which our group worked on won first prize.",
+    "The project our group worked on won first prize.",
+    "The project that our group worked on won first prize.",
+    "The project on that our group worked won first prize."
+   ],
+   "answer": 5,
+   "why": "⑤ 전치사 on 뒤에는 that이 올 수 없다. 나머지는 전치사의 위치를 바꾸거나 목적격을 생략한 형태로 모두 옳다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (동물 선행사)",
+   "choices": [
+    "The dog which the boy was looking after it ran away.",
+    "The dog which the boy was looking after ran away.",
+    "The dog whose the boy was looking after ran away.",
+    "The dog what the boy was looking after ran away.",
+    "The dog which the boy was looking after him ran away."
+   ],
+   "answer": 2,
+   "why": "동물 선행사에는 which/that을 쓰고, look after의 목적어는 이미 which이므로 it·him을 또 쓸 수 없다. ③은 소유격 whose 뒤에 명사가 없어 틀렸다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 것은? (사진 소재)",
+   "choices": [
+    "The photo which she took at the beach won a contest.",
+    "The photo she took at the beach won a contest.",
+    "The photo which she took it at the beach won a contest.",
+    "The photo that she took at the beach won a contest.",
+    "The photo about which she talked won a contest."
+   ],
+   "answer": 3,
+   "why": "③ which가 took의 목적어이므로 it이 남을 수 없다. 나머지는 모두 어법에 맞다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (도구를 나타내는 with)",
+   "choices": [
+    "This is the app with that I edit my videos.",
+    "This is the app which I edit my videos.",
+    "This is the app with which I edit my videos.",
+    "This is the app what I edit my videos with.",
+    "This is the app with which I edit my videos with."
+   ],
+   "answer": 3,
+   "why": "edit videos with the app이므로 with가 필요하다. ②는 with가 빠졌고 ①은 전치사 뒤 that, ⑤는 with 중복이다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 것은? (불평·사과 소재)",
+   "choices": [
+    "The manager whom we complained to apologized.",
+    "The manager to whom we complained apologized.",
+    "The manager who we complained to apologized.",
+    "The manager to who we complained apologized.",
+    "The manager we complained to apologized."
+   ],
+   "answer": 4,
+   "why": "④ 전치사 to 바로 뒤에는 who를 쓸 수 없다. ③처럼 to가 절 끝에 남아 있을 때에는 who도 쓸 수 있다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)에 들어갈 말이 바르게 짝지어진 것은?\n\n• The coach (A)____ we trusted left the team.\n• The gym in (B)____ we practice is being repaired.\n• The trophy (C)____ our team won is on the shelf.",
+   "choices": [
+    "whom – which – which",
+    "which – whom – which",
+    "whom – that – which",
+    "whom – which – what",
+    "who – which – whose"
+   ],
+   "answer": 1,
+   "why": "(A)는 사람 목적격 whom, (B)는 전치사 뒤라 which만 가능, (C)는 사물 목적격 which이다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)에 들어갈 말이 바르게 짝지어진 것은?\n\n• The reporter to (A)____ I gave the photo works for a magazine.\n• The bridge (B)____ we crossed was built in 1980.\n• The tools with (C)____ he fixed the bike were old.",
+   "choices": [
+    "whom – which – which",
+    "who – which – that",
+    "whom – what – which",
+    "which – which – whom",
+    "whom – which – that"
+   ],
+   "answer": 1,
+   "why": "(A)와 (C)는 전치사 바로 뒤이므로 각각 whom, which만 가능하고, (B)는 crossed의 목적어가 빠진 사물 선행사이므로 which이다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n\n• The stage on ____ she performed was huge.\n• The questions ____ the students asked were difficult.\n• The bus ____ I missed was the last one.",
+   "choices": [
+    "that",
+    "who",
+    "whom",
+    "which",
+    "what"
+   ],
+   "answer": 4,
+   "why": "세 자리 모두 사물 선행사의 목적격이며, 첫 문장은 전치사 뒤라 that을 쓸 수 없으므로 which가 공통이다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n\n• The elderly man to ____ we gave our seats smiled at us.\n• The girl ____ everyone in the class chose became the leader.",
+   "choices": [
+    "who",
+    "that",
+    "whom",
+    "which",
+    "what"
+   ],
+   "answer": 3,
+   "why": "두 선행사가 모두 사람이고 목적격 자리이며, 첫 문장은 전치사 to 뒤라 who·that이 올 수 없으므로 whom이다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분의 성격이 나머지 넷과 <u>다른</u> 것은? (소포 소재)",
+   "choices": [
+    "The parcel <u>which</u> the driver left at the door was wet.",
+    "The parcel <u>which</u> arrived this morning was wet.",
+    "The parcel <u>which</u> I opened first was empty.",
+    "The parcel <u>which</u> she sent from Japan was heavy.",
+    "The parcel <u>which</u> we have been waiting for came late."
+   ],
+   "answer": 2,
+   "why": "②만 arrived의 주어인 주격이고 나머지는 모두 목적어(전치사의 목적어 포함)가 빠진 목적격이다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 생략된 관계대명사가 들어갈 위치로 알맞은 것은?\n\nThe restaurant ① my family ② visited ③ last Sunday ④ was ⑤ full.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 1,
+   "why": "선행사 The restaurant 바로 뒤, 즉 관계대명사절의 주어 my family 앞에 목적격 which(=that)가 생략되어 있다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\n\nA: Did you find your earphones?\nB: Yes. The ones ____ I left in the classroom were still there.",
+   "choices": [
+    "who",
+    "whom",
+    "which",
+    "what",
+    "whose"
+   ],
+   "answer": 3,
+   "why": "The ones(= the earphones)는 사물이고 left의 목적어가 빠졌으므로 which.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\n\nA: Who is the woman in this photo?\nB: She is the guide ____ we followed during the tour.",
+   "choices": [
+    "which",
+    "what",
+    "whose",
+    "whom",
+    "when"
+   ],
+   "answer": 4,
+   "why": "선행사 the guide가 사람이고 followed의 목적어 자리이므로 whom.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\n\nA: Why are you so upset?\nB: The file ____ I had worked on for a week disappeared.",
+   "choices": [
+    "who",
+    "whom",
+    "whose",
+    "what",
+    "which"
+   ],
+   "answer": 5,
+   "why": "work on의 목적어가 빠진 자리이고 선행사가 사물이므로 which.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?\n\nA: Is this the pen you were looking for?\nB: Yes, that's the pen with ____ I wrote my first poem.",
+   "choices": [
+    "that",
+    "who",
+    "which",
+    "what",
+    "whose"
+   ],
+   "answer": 3,
+   "why": "전치사 with 바로 뒤이고 선행사가 사물이므로 which. 전치사 뒤에는 that을 쓸 수 없다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\n\nⓐ The song which we sang together is still popular.\nⓑ The person to who I owe a lot is my aunt.\nⓒ The chair I sat on was covered with dust.\nⓓ The topic which the class discussed about was serious.\nⓔ The friend whom I trust most lives far away.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "옳은 것은 ⓐ, ⓒ, ⓔ 세 개다. ⓑ는 전치사 뒤에 who를 썼고, ⓓ의 discuss는 타동사라 about이 필요 없다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 문장의 개수는?\n\nⓐ The car which he drives it is a hybrid.\nⓑ The people with whom I shared the room were noisy.\nⓒ The book about which we talked is sold out.\nⓓ The teacher who taught us math moved away.\nⓔ The movie what I watched last night was scary.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "틀린 것은 ⓐ(목적어 it 중복)와 ⓔ(선행사가 있는데 what) 두 개다. ⓑⓒ는 전치사+관계대명사, ⓓ는 주격으로 모두 옳다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 할 때 빈칸에 알맞은 것은?\n\nThe man was my old coach. I shook hands with him.\n= The man ____ I shook hands was my old coach.",
+   "choices": [
+    "with who",
+    "that",
+    "with whom",
+    "which",
+    "whom with"
+   ],
+   "answer": 3,
+   "why": "with him의 him을 whom으로 바꾸고 with를 그 앞에 두어야 하므로 with whom이다. 전치사 뒤에는 who·that을 쓸 수 없다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 <u>어색한</u> 부분을 바르게 고친 것은?\n\nThe classmates who I sit next to them are twins.",
+   "choices": [
+    "who를 whom으로 바꾼다",
+    "them을 삭제한다",
+    "next to를 삭제한다",
+    "who를 which로 바꾼다",
+    "are를 is로 바꾼다"
+   ],
+   "answer": 2,
+   "why": "who가 이미 next to의 목적어이므로 them을 지워야 한다. 전치사가 절 끝에 남아 있을 때에는 who도 쓸 수 있다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 전치사를 관계대명사 앞으로 옮긴 것으로 알맞은 것은?\n\nThe ladder which he climbed up was rusty.",
+   "choices": [
+    "The ladder up which he climbed was rusty.",
+    "The ladder up that he climbed was rusty.",
+    "The ladder which up he climbed was rusty.",
+    "The ladder up who he climbed was rusty.",
+    "The ladder he climbed up which was rusty."
+   ],
+   "answer": 1,
+   "why": "전치사는 관계대명사 바로 앞으로 옮겨 up which가 된다. 이때 that·who는 쓸 수 없다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분을 생략할 수 <u>있는</u> 것은? (조언 소재)",
+   "choices": [
+    "The girl <u>who</u> is standing there is my cousin.",
+    "The pen <u>with which</u> I signed it is gone.",
+    "The team <u>which</u> won the match celebrated.",
+    "The advice <u>which</u> my father gave me changed my life.",
+    "The house <u>whose</u> roof is red is ours."
+   ],
+   "answer": 4,
+   "why": "④의 which는 gave의 목적어라서 생략할 수 있다. ①③은 주격, ②는 전치사 바로 뒤, ⑤는 소유격이라 생략할 수 없다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 수 <u>없는</u> 것은?\n\nThe volunteers ____ the school praised worked every weekend.",
+   "choices": [
+    "who",
+    "whom",
+    "that",
+    "× (생략)",
+    "which"
+   ],
+   "answer": 5,
+   "why": "선행사 The volunteers는 사람이므로 which를 쓸 수 없다. 목적격 자리라서 who/whom/that과 생략은 모두 가능하다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분을 생략한 문장으로 알맞은 것은?\n\nThe seat <u>on which</u> I usually sit was taken.",
+   "choices": [
+    "The seat I usually sit was taken.",
+    "The seat I usually sit on was taken.",
+    "The seat on I usually sit was taken.",
+    "The seat which I usually sit was taken.",
+    "The seat on that I usually sit was taken."
+   ],
+   "answer": 2,
+   "why": "관계대명사를 생략하려면 먼저 전치사 on을 절 끝으로 보내야 한다. 전치사가 관계대명사 앞에 있으면 생략할 수 없다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 한 단어를 찾아 바르게 고쳐 쓰시오.\n\nThe judges to who the letters were sent replied quickly.",
+   "answer": "whom",
+   "alt": [],
+   "why": "전치사 to 바로 뒤에는 주격 who를 쓸 수 없으므로 whom으로 고친다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 <u>필요 없는</u> 한 단어를 찾아 쓰시오.\n\nThe suitcase which I packed it last night is still in the hall.",
+   "answer": "it",
+   "alt": [],
+   "why": "which가 이미 packed의 목적어이므로 it은 쓸 수 없다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장의 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n\nThe stage <u>on that</u> the band performed was very small.",
+   "answer": "on which",
+   "alt": [],
+   "why": "전치사 바로 뒤에는 that을 쓸 수 없으므로 on which로 고친다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장을 「전치사 + 관계대명사」를 사용하여 한 문장으로 쓰시오.\n\nThat is the desk. My grandfather carved his name on it.",
+   "answer": "That is the desk on which my grandfather carved his name.",
+   "alt": [],
+   "why": "on it의 it을 which로 바꾸고 on을 which 앞으로 옮긴다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장을 「전치사 + 관계대명사」를 사용하여 한 문장으로 쓰시오.\n\nThe woman is a famous pianist. I sat beside her at the concert.",
+   "answer": "The woman beside whom I sat at the concert is a famous pianist.",
+   "alt": [],
+   "why": "beside her의 her를 whom으로 바꾸고 beside를 whom 앞에 둔 뒤 선행사 The woman 바로 뒤에 넣는다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 관계대명사를 생략한 형태로 다시 쓰시오.\n\nThe documents which the lawyer asked for arrived this morning.",
+   "answer": "The documents the lawyer asked for arrived this morning.",
+   "alt": [],
+   "why": "전치사 for가 절 끝에 있으므로 목적격 which를 생략할 수 있다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장의 전치사를 관계대명사 앞으로 옮겨 다시 쓰시오.\n\nThe island which we sailed to was very small.",
+   "answer": "The island to which we sailed was very small.",
+   "alt": [],
+   "why": "절 끝의 to를 which 앞으로 옮기면 to which가 된다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 주어진 말을 바르게 배열하여 빈칸을 완성하시오.\n\n내가 의지하는 그 친구는 항상 나를 웃게 한다.\n(I / the friend / on / rely / whom)\n→ ____ always makes me laugh.",
+   "answer": "The friend on whom I rely",
+   "alt": [],
+   "why": "rely on의 on을 whom 앞에 두어 「선행사 + 전치사 + whom + 주어 + 동사」 순으로 배열한다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 주어진 말을 바르게 배열하여 빈칸을 완성하시오. (단, 전치사는 문장 끝에 둘 것)\n\n그들이 이야기하고 있던 그 영화는 이미 끝났다.\n(they / talking / the movie / about / were / which)\n→ ____ has already ended.",
+   "answer": "The movie which they were talking about",
+   "alt": [],
+   "why": "전치사를 뒤에 두는 형태이므로 「선행사 + which + 주어 + 동사 + 전치사」 순으로 쓴다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에 생략된 관계대명사를 넣어 문장 전체를 다시 쓰시오. (사물은 which로 쓸 것)\n\nThe song my brother wrote became a hit.",
+   "answer": "The song which my brother wrote became a hit.",
+   "alt": [],
+   "why": "The song 뒤에 wrote의 목적어가 없으므로 목적격 which가 생략되어 있다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에 생략된 관계대명사를 넣어 문장 전체를 다시 쓰시오. (사람은 whom으로 쓸 것)\n\nThe coach our team hired last year is very strict.",
+   "answer": "The coach whom our team hired last year is very strict.",
+   "alt": [],
+   "why": "hired의 목적어가 빠져 있으므로 사람 선행사를 받는 목적격 whom을 넣는다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 말을 두 단어로 쓰시오.\n\nThe group ____ ____ she donated her prize money helps sick children.",
+   "answer": "to which",
+   "alt": [],
+   "why": "donate money to the group이므로 전치사 to + 사물을 받는 which를 쓴다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 말을 두 단어로 쓰시오.\n\nThe topic ____ ____ the article was written is climate change.",
+   "answer": "about which",
+   "alt": [],
+   "why": "write about the topic이므로 전치사 about + which를 쓴다. 전치사 뒤에 that은 올 수 없다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 어법에 맞게 고쳐 문장 전체를 다시 쓰시오.\n\nThe man with who I shared my umbrella thanked me twice.",
+   "answer": "The man with whom I shared my umbrella thanked me twice.",
+   "alt": [],
+   "why": "전치사 with 뒤에는 목적격 whom만 올 수 있다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 한 단어를 찾아 바르게 고쳐 쓰시오.\n\nThe prize what he won last year changed his life.",
+   "answer": "which",
+   "alt": [
+    "that"
+   ],
+   "why": "선행사 The prize가 있으므로 what을 목적격 which(=that)로 고친다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장의 전치사를 관계대명사 앞에 두는 형태로 바꿔 쓰시오.\n\nThe person whom I was speaking to is the principal.",
+   "answer": "The person to whom I was speaking is the principal.",
+   "alt": [],
+   "why": "절 끝의 to를 whom 앞으로 옮긴다. 이때 whom은 생략할 수 없다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장을 관계대명사 whom을 써서 한 문장으로 쓰시오.\n\nThe artist is only nineteen. Millions of fans admire her.",
+   "answer": "The artist whom millions of fans admire is only nineteen.",
+   "alt": [],
+   "why": "her를 whom으로 바꾸어 선행사 The artist 바로 뒤에 관계대명사절을 넣는다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장을 관계대명사 which를 써서 한 문장으로 쓰시오.\n\nThe plan is still a secret. The students made it last week.",
+   "answer": "The plan which the students made last week is still a secret.",
+   "alt": [],
+   "why": "it을 which로 바꾸어 The plan 바로 뒤에 붙이고 나머지는 그대로 쓴다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 생략할 수 있는 관계대명사를 쓰시오. (생략할 수 없으면 '없음'이라고 쓸 것)\n\nThe hall in which the concert was held holds 2,000 people.",
+   "answer": "없음",
+   "alt": [],
+   "why": "관계대명사가 전치사 in 바로 뒤에 있으므로 생략할 수 없다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 두 단어로 쓰시오.\n\n내가 함께 공부하는 그 학생들은 모두 나보다 나이가 많다.\n→ The students ____ ____ I study are all older than I am.",
+   "answer": "with whom",
+   "alt": [],
+   "why": "study with the students이므로 전치사 with + 사람을 받는 whom을 쓴다.",
+   "no": 200
+  }
+ ]
+}

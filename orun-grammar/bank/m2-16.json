@@ -1,0 +1,2624 @@
+{
+ "id": "m2-16",
+ "grade": "중2",
+ "name": "원급 비교·비교급 강조",
+ "points": [
+  "as+원급+as",
+  "not as ~ as",
+  "much/even/far/a lot 강조"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Jinho is as ____ as his father.",
+   "choices": [
+    "the tallest",
+    "taller",
+    "tall",
+    "tallest",
+    "more tall"
+   ],
+   "answer": 3,
+   "why": "as ~ as 사이에는 반드시 원급(tall)이 온다. taller·tallest·more tall은 비교급·최상급이라 as ~ as 안에 쓸 수 없다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "This box is as ____ as that one.",
+   "choices": [
+    "heavier",
+    "heaviest",
+    "more heavy",
+    "heavily",
+    "heavy"
+   ],
+   "answer": 5,
+   "why": "as ~ as 사이에는 원급 heavy. be동사의 보어 자리이므로 부사 heavily도 쓸 수 없고, heavier는 비교급이라 안 된다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My cat runs as ____ as your dog.",
+   "choices": [
+    "fastest",
+    "more fast",
+    "fastly",
+    "fast",
+    "faster"
+   ],
+   "answer": 4,
+   "why": "동사 runs를 꾸미는 부사 원급 fast가 알맞다. fast는 형용사·부사 형태가 같고 fastly라는 단어는 없다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Mina is not as ____ as her sister.",
+   "choices": [
+    "older",
+    "oldest",
+    "old",
+    "more old",
+    "olds"
+   ],
+   "answer": 3,
+   "why": "not as ~ as도 사이에 원급을 쓴다. older·oldest는 비교급·최상급이라 as ~ as와 함께 쓸 수 없다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Today is as ____ as yesterday.",
+   "choices": [
+    "warmer",
+    "warmest",
+    "more warm",
+    "warmly",
+    "warm"
+   ],
+   "answer": 5,
+   "why": "as ~ as 사이에는 원급 warm. be동사 뒤 보어 자리라 부사 warmly는 올 수 없다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Your bike is as ____ as mine.",
+   "choices": [
+    "newest",
+    "more new",
+    "newly",
+    "newer",
+    "new"
+   ],
+   "answer": 5,
+   "why": "as ~ as 사이에는 원급 new를 쓴다. newer는 비교급, newly는 '새로'라는 뜻의 부사라 보어 자리에 올 수 없다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "This soup is as ____ as my mom's.",
+   "choices": [
+    "deliciouser",
+    "more delicious",
+    "delicious",
+    "most delicious",
+    "deliciously"
+   ],
+   "answer": 3,
+   "why": "as ~ as 사이에는 원급이므로 delicious. 3음절 이상 형용사라도 as ~ as 안에서는 more를 붙이지 않는다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He studies as ____ as his brother.",
+   "choices": [
+    "harder",
+    "hardly",
+    "hard",
+    "hardest",
+    "more hard"
+   ],
+   "answer": 3,
+   "why": "동사 studies를 꾸미는 부사 원급 hard(열심히)가 알맞다. hardly는 '거의 ~않다'라는 뜻이라 의미가 반대가 된다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Sumin is not as ____ as Jaemin.",
+   "choices": [
+    "quieter",
+    "quietest",
+    "more quiet",
+    "quiet",
+    "quietly"
+   ],
+   "answer": 4,
+   "why": "not as ~ as 사이에도 원급 quiet를 쓴다. be동사의 보어이므로 부사 quietly는 올 수 없다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The blue cup is ____ the black one.",
+   "choices": [
+    "so small as",
+    "as small than",
+    "small as as",
+    "as small as",
+    "as smaller as"
+   ],
+   "answer": 4,
+   "why": "'~만큼 …한'은 as+원급+as. 뒤에 than을 쓰거나 원급 대신 비교급을 쓰면 안 되고, so ~ as는 부정문에서만 쓴다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Emma dances as ____ as her teacher.",
+   "choices": [
+    "better",
+    "best",
+    "more well",
+    "good",
+    "well"
+   ],
+   "answer": 5,
+   "why": "동사 dances를 꾸미므로 부사 well이 필요하다. good은 형용사, better·best는 비교급·최상급이라 as ~ as 안에 쓸 수 없다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "This street is not as ____ as that one.",
+   "choices": [
+    "busily",
+    "busier",
+    "busy",
+    "busiest",
+    "more busy"
+   ],
+   "answer": 3,
+   "why": "not as ~ as 사이에는 원급 busy. busier는 비교급, busily는 부사라 be동사의 보어 자리에 올 수 없다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "This game is ____ more fun than that one.",
+   "choices": [
+    "many",
+    "too",
+    "most",
+    "very",
+    "much"
+   ],
+   "answer": 5,
+   "why": "비교급(more fun)을 강조할 때는 much, even, far, a lot을 쓴다. very는 원급만 강조하므로 비교급 앞에 쓸 수 없다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My bag is ____ heavier than yours.",
+   "choices": [
+    "very",
+    "so",
+    "much",
+    "many",
+    "most"
+   ],
+   "answer": 3,
+   "why": "비교급 heavier를 강조하는 말은 much다. very·so는 원급을 강조하고 many는 셀 수 있는 명사를 꾸민다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It is ____ colder today than it was yesterday.",
+   "choices": [
+    "many",
+    "most",
+    "more",
+    "very",
+    "far"
+   ],
+   "answer": 5,
+   "why": "far는 비교급 colder를 강조해 '훨씬'이라는 뜻을 만든다. very는 원급 전용이고 more colder는 비교급 중복이라 틀린다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The second question was ____ easier than the first one.",
+   "choices": [
+    "very",
+    "many",
+    "most",
+    "too",
+    "a lot"
+   ],
+   "answer": 5,
+   "why": "a lot은 비교급 easier를 강조해 '훨씬'의 뜻이 된다. very·too는 원급을 강조하는 말이다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Your new phone is ____ better than your old one.",
+   "choices": [
+    "very",
+    "many",
+    "much",
+    "more",
+    "most"
+   ],
+   "answer": 3,
+   "why": "better는 good의 비교급이므로 much로 강조한다. very better, more better는 모두 쓸 수 없는 표현이다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "This road is ____ wider than the old one.",
+   "choices": [
+    "many",
+    "most",
+    "so",
+    "even",
+    "very"
+   ],
+   "answer": 4,
+   "why": "even은 비교급 wider를 강조해 '훨씬, 더욱'의 뜻을 나타낸다. very와 so는 원급만 꾸민다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Ben ran ____ faster than me in the race.",
+   "choices": [
+    "so",
+    "very",
+    "far",
+    "many",
+    "most"
+   ],
+   "answer": 3,
+   "why": "부사의 비교급 faster도 much, far, even, a lot으로 강조한다. very·so는 원급을 꾸미는 말이다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My sister is ____ taller than me now.",
+   "choices": [
+    "most",
+    "very",
+    "a lot",
+    "many",
+    "too"
+   ],
+   "answer": 3,
+   "why": "a lot은 비교급 taller를 강조한다. very taller, too taller처럼 원급 강조어를 비교급 앞에 쓰면 틀린다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My room is ____ yours.",
+   "choices": [
+    "as bigger as",
+    "as big than",
+    "so big as",
+    "as biggest as",
+    "as big as"
+   ],
+   "answer": 5,
+   "why": "'~만큼 큰'은 as big as. as ~ as 사이에는 원급을 쓰고 뒤에는 than이 아니라 as를 쓴다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She sings ____ her sister.",
+   "choices": [
+    "as better as",
+    "so well as",
+    "as well than",
+    "as good as",
+    "as well as"
+   ],
+   "answer": 5,
+   "why": "동사 sings를 꾸미는 부사가 필요하므로 as well as. good은 형용사라 동사를 꾸밀 수 없다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "This pillow is ____ soft ____ a cloud.",
+   "choices": [
+    "as – than",
+    "very – as",
+    "much – as",
+    "as – as",
+    "so – as"
+   ],
+   "answer": 4,
+   "why": "긍정문에서 '~만큼 …한'은 as+원급+as로 쓴다. so ~ as는 부정문에서만 쓰고, 뒤에 than은 올 수 없다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Tom is ____ his cousin.",
+   "choices": [
+    "not as stronger as",
+    "not so strong than",
+    "as not strong as",
+    "not as strongest as",
+    "not as strong as"
+   ],
+   "answer": 5,
+   "why": "'~만큼 …하지 않다'는 not as+원급+as. not이 as 앞에 오고 사이에는 원급 strong을 쓴다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The red shoes are ____ the white ones.",
+   "choices": [
+    "as expensive than",
+    "so expensive as",
+    "as most expensive as",
+    "as expensive as",
+    "as expensiver as"
+   ],
+   "answer": 4,
+   "why": "as+원급+as 형태가 정답. expensive는 more를 붙여 비교급을 만들지만 as ~ as 안에서는 원급 그대로 쓴다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I got up ____ my brother this morning.",
+   "choices": [
+    "as earlier as",
+    "as early than",
+    "so early as",
+    "as earliest as",
+    "as early as"
+   ],
+   "answer": 5,
+   "why": "동사 got up을 꾸미는 부사 원급 early를 as ~ as 사이에 넣는다. 비교급 earlier나 than은 쓸 수 없다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 문장은?",
+   "choices": [
+    "I am as tall as Mike.",
+    "She is as kind as her mom.",
+    "This ring is as expensive as that one.",
+    "My car is as faster as yours.",
+    "He runs as fast as I do."
+   ],
+   "answer": 4,
+   "why": "④는 as ~ as 사이에 비교급 faster를 썼으므로 as fast as로 고쳐야 한다. 나머지는 모두 원급이 바르게 쓰였다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "He is as older as me.",
+    "This book is as thick as that one.",
+    "She is not as taller as you.",
+    "My bike is as more new as yours.",
+    "They are as busier as us."
+   ],
+   "answer": 2,
+   "why": "as ~ as 사이에는 원급만 온다. ②만 원급 thick을 썼고 나머지는 older, taller, more new, busier로 비교급을 썼으므로 틀렸다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>어색한</u> 문장은?",
+   "choices": [
+    "This box is much bigger than that one.",
+    "Your dog is far cuter than mine.",
+    "I am very taller than my sister.",
+    "She is a lot busier than me.",
+    "Today is even hotter than yesterday."
+   ],
+   "answer": 3,
+   "why": "비교급은 much, far, a lot, even으로 강조한다. ③의 very는 원급만 강조하므로 much taller처럼 고쳐야 한다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 알맞은 문장은?",
+   "choices": [
+    "My hair is very longer than hers.",
+    "He is many stronger than me.",
+    "This class is much more difficult than that one.",
+    "She is very more kind than him.",
+    "It is too colder than yesterday."
+   ],
+   "answer": 3,
+   "why": "비교급 more difficult를 much가 바르게 강조한 ③이 정답. very, many, too는 비교급을 강조하지 못한다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 <u>틀린</u> 것은?",
+   "choices": [
+    "Water is as important as air.",
+    "Sujin is not as old as me.",
+    "My phone is as small as a card.",
+    "This song is as popular than that song.",
+    "They work as hard as we do."
+   ],
+   "answer": 4,
+   "why": "as+원급 뒤에는 than이 아니라 as가 온다. ④는 as popular as that song으로 고쳐야 한다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 바른 것은?",
+   "choices": [
+    "She swims as better as me.",
+    "I can jump as high as you.",
+    "He is as more tall as his dad.",
+    "This is as heavier as that.",
+    "We are as young than them."
+   ],
+   "answer": 2,
+   "why": "②는 부사 원급 high가 as ~ as 사이에 바르게 쓰였다. 나머지는 비교급(better, more tall, heavier)이나 than을 잘못 썼다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장에서 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? — Sujin <u>can</u> <u>swim</u> <u>as</u> <u>faster</u> as <u>Mina</u>.",
+   "choices": [
+    "can",
+    "swim",
+    "as",
+    "faster",
+    "Mina"
+   ],
+   "answer": 4,
+   "why": "as ~ as 사이에는 원급이 와야 하므로 faster를 fast로 고쳐야 한다. 나머지 부분은 모두 알맞다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장에서 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? — My <u>brother</u> <u>is</u> <u>very</u> <u>stronger</u> <u>than</u> me.",
+   "choices": [
+    "brother",
+    "is",
+    "very",
+    "stronger",
+    "than"
+   ],
+   "answer": 3,
+   "why": "비교급 stronger를 강조하려면 much·far·a lot·even을 써야 한다. very는 원급만 강조하므로 ③이 틀렸다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장에서 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? — Her <u>hair</u> <u>is</u> as <u>long</u> <u>than</u> <u>mine</u>.",
+   "choices": [
+    "hair",
+    "is",
+    "long",
+    "than",
+    "mine"
+   ],
+   "answer": 4,
+   "why": "as+원급 뒤에는 than이 아니라 as를 쓴다. as long as mine이 바른 표현이다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장에서 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? — <u>This</u> <u>question</u> is <u>many</u> <u>easier</u> <u>than</u> the last one.",
+   "choices": [
+    "This",
+    "question",
+    "many",
+    "easier",
+    "than"
+   ],
+   "answer": 3,
+   "why": "many는 셀 수 있는 명사를 꾸미는 말이라 비교급을 강조할 수 없다. much easier처럼 고쳐야 한다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 이 상자는 저 상자만큼 무겁다.",
+   "choices": [
+    "This box is so heavy as that box.",
+    "This box is as heavy than that box.",
+    "This box is heavy as as that box.",
+    "This box is as heavy as that box.",
+    "This box is as heavier as that box."
+   ],
+   "answer": 4,
+   "why": "'~만큼 …한'은 as+원급+as. 긍정문에서 so ~ as는 쓰지 않고, 뒤에 than도 올 수 없다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 내 방은 네 방만큼 깨끗하지 않다.",
+   "choices": [
+    "My room is not as cleaner as yours.",
+    "My room is as not clean as yours.",
+    "My room is not as clean than yours.",
+    "My room is not clean as as yours.",
+    "My room is not as clean as yours."
+   ],
+   "answer": 5,
+   "why": "'~만큼 …하지 않다'는 not as+원급+as. not은 as 앞에 오고 사이에는 원급 clean을 쓴다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 그의 차는 내 차보다 훨씬 더 빠르다.",
+   "choices": [
+    "His car is many faster than mine.",
+    "His car is much fast than mine.",
+    "His car is more faster than mine.",
+    "His car is very faster than mine.",
+    "His car is much faster than mine."
+   ],
+   "answer": 5,
+   "why": "'훨씬'은 비교급을 강조하는 much. very·many는 비교급을 강조할 수 없고 more faster는 비교급 중복이다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 그녀는 나만큼 일찍 일어난다.",
+   "choices": [
+    "She gets up so early as me.",
+    "She gets up as early than me.",
+    "She gets up early as as me.",
+    "She gets up as early as me.",
+    "She gets up as earlier as me."
+   ],
+   "answer": 4,
+   "why": "부사 원급 early를 as ~ as 사이에 넣는다. 비교급 earlier나 than은 쓸 수 없고, 긍정문에 so ~ as도 쓰지 않는다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: Who is taller, you or Mike?  B: We are the same. I am ____ Mike.",
+   "choices": [
+    "as taller as",
+    "so tall as",
+    "as tall than",
+    "taller as",
+    "as tall as"
+   ],
+   "answer": 5,
+   "why": "키가 같다고 했으므로 as tall as. as ~ as 사이에는 원급을 쓰고 뒤에는 as가 온다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: Is this book difficult?  B: No. It is ____ easier than the last one.",
+   "choices": [
+    "very",
+    "much",
+    "many",
+    "too",
+    "most"
+   ],
+   "answer": 2,
+   "why": "비교급 easier를 강조하는 말은 much다. very, too는 원급만 강조한다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: How fast can you run?  B: I can run ____ my brother.",
+   "choices": [
+    "as fast than",
+    "so fast as",
+    "fast as as",
+    "as fast as",
+    "as faster as"
+   ],
+   "answer": 4,
+   "why": "동사 run을 꾸미는 부사 원급 fast를 as ~ as 사이에 쓴다. 긍정문이므로 so ~ as는 쓰지 않는다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: Is your bag heavy?  B: Not really. It is not ____ your bag.",
+   "choices": [
+    "as heavier as",
+    "so heavy than",
+    "as heavy than",
+    "heavy as as",
+    "as heavy as"
+   ],
+   "answer": 5,
+   "why": "not as+원급+as 형태가 알맞다. 비교급 heavier를 쓰거나 뒤에 than을 쓰면 틀린다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은?  • My hair is ____ long as yours.  • He can jump ____ high as a cat.",
+   "choices": [
+    "so",
+    "very",
+    "as",
+    "too",
+    "much"
+   ],
+   "answer": 3,
+   "why": "두 문장 모두 as+원급+as 구문이므로 빈칸에는 as가 들어간다. so ~ as는 부정문에서만 쓰인다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은?  • This bag is ____ bigger than that one.  • Your idea is ____ better than mine.",
+   "choices": [
+    "very",
+    "much",
+    "many",
+    "as",
+    "too"
+   ],
+   "answer": 2,
+   "why": "두 문장 모두 비교급(bigger, better)이 나오므로 비교급 강조어 much가 알맞다. very·too는 원급만 강조한다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ㄱ. She is as tall as me.  ㄴ. This bag is as heavier as that one.  ㄷ. He runs as fast as a horse.  ㄹ. My room is as clean as yours.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 4,
+   "why": "ㄱ·ㄷ·ㄹ은 as ~ as 사이에 원급이 바르게 쓰였다. ㄴ만 비교급 heavier를 써서 틀렸으므로 옳은 문장은 3개다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ㄱ. This test is much easier than that one.  ㄴ. My dog is very bigger than your dog.  ㄷ. Today is far colder than yesterday.  ㄹ. She is many taller than me.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "비교급은 much, far 등으로 강조하므로 ㄱ·ㄷ이 옳다. ㄴ의 very와 ㄹ의 many는 비교급을 강조할 수 없어 틀렸다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안에서 알맞은 말을 골라 쓰시오.  My sister is as (tall / taller) as me.",
+   "answer": "tall",
+   "why": "as ~ as 사이에는 원급이 오므로 tall이 알맞다. 비교급 taller는 as ~ as와 함께 쓸 수 없다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안에서 알맞은 말을 골라 쓰시오.  This bag is as (heavy / heavier) as that one.",
+   "answer": "heavy",
+   "why": "as+원급+as 구문이므로 원급 heavy를 쓴다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안에서 알맞은 말을 골라 쓰시오.  He runs as (fast / faster) as a rabbit.",
+   "answer": "fast",
+   "why": "as ~ as 사이에는 원급이 온다. 동사 runs를 꾸미는 부사 원급 fast가 알맞다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안에서 알맞은 말을 골라 쓰시오.  She sings as (good / well) as a singer.",
+   "answer": "well",
+   "why": "동사 sings를 꾸미는 말이 필요하므로 부사 well을 쓴다. good은 형용사라 동사를 꾸밀 수 없다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안에서 알맞은 말을 골라 쓰시오.  My phone is much (new / newer) than yours.",
+   "answer": "newer",
+   "why": "than이 있으므로 비교급 newer가 필요하고, much는 그 비교급을 강조하는 말이다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안에서 알맞은 말을 골라 쓰시오.  This box is (very / much) heavier than that one.",
+   "answer": "much",
+   "why": "비교급 heavier를 강조하는 말은 much다. very는 원급만 강조한다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸에 쓰시오. (한 단어)  Mina is as ____ as Suji. (kind)",
+   "answer": "kind",
+   "why": "as ~ as 사이에는 원급을 그대로 쓰므로 kind가 답이다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸에 쓰시오. (한 단어)  He can jump as ____ as his brother. (high)",
+   "answer": "high",
+   "why": "as ~ as 사이에는 원급이 오고, 동사 jump를 꾸미는 부사 high를 그대로 쓴다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸에 쓰시오. (두 단어)  This book is much ____ than that one. (interesting)",
+   "answer": "more interesting",
+   "why": "than이 있으므로 비교급이 필요하다. interesting은 앞에 more를 붙여 비교급을 만들고, much가 그것을 강조한다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸에 쓰시오. (한 단어)  My dad is a lot ____ than my mom. (busy)",
+   "answer": "busier",
+   "why": "than 앞이므로 비교급 busier가 알맞고, a lot은 비교급을 강조하는 말이다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸에 쓰시오. (한 단어)  This song is as ____ as that one. (popular)",
+   "answer": "popular",
+   "why": "as ~ as 사이에는 원급을 쓰므로 popular를 그대로 쓴다. more popular는 쓸 수 없다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸에 쓰시오. (한 단어)  Your room is far ____ than mine. (clean)",
+   "answer": "cleaner",
+   "why": "far는 비교급을 강조하는 말이므로 뒤에 비교급 cleaner가 와야 한다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (한 단어)  My bag is as <u>bigger</u> as yours.",
+   "answer": "big",
+   "why": "as ~ as 사이에는 원급이 오므로 bigger를 big으로 고친다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (한 단어)  She is <u>very</u> taller than me.",
+   "answer": "much",
+   "why": "비교급 taller를 강조하는 말은 much, far, a lot, even이다. very는 원급만 강조하므로 쓸 수 없다.",
+   "alt": [
+    "far",
+    "a lot",
+    "even"
+   ],
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (한 단어)  This room is as clean <u>than</u> that room.",
+   "answer": "as",
+   "why": "as+원급 뒤에는 than이 아니라 as가 온다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (한 단어)  He works as <u>hardly</u> as his father.",
+   "answer": "hard",
+   "why": "hardly는 '거의 ~않다'라는 뜻이다. '열심히'라는 뜻의 부사는 hard이므로 as hard as로 고친다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "두 문장을 한 문장으로 바꿔 쓸 때 빈칸에 알맞은 말을 쓰시오. (세 단어)  Tom is 15 years old. Jane is 15 years old.  → Tom is ____ Jane. (old를 이용할 것)",
+   "answer": "as old as",
+   "why": "나이가 같으므로 '~만큼 나이가 든'이라는 뜻의 as old as를 쓴다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "두 문장을 한 문장으로 바꿔 쓸 때 빈칸에 알맞은 말을 쓰시오. (세 단어)  My pencil is 10 cm long. Your pencil is 10 cm long.  → My pencil is ____ your pencil. (long을 이용할 것)",
+   "answer": "as long as",
+   "why": "길이가 같으므로 as+원급+as 구문인 as long as를 쓴다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 한 단어를 쓰시오.  그는 나만큼 빠르다.  → He is ____ fast as I am.",
+   "answer": "as",
+   "why": "'~만큼 …한'은 as+원급+as이므로 빈칸에는 as가 들어간다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 같은 뜻이 되도록 바꿔 쓸 때 빈칸에 알맞은 한 단어를 쓰시오.  Ann is not as tall as Bill.  → Bill is ____ than Ann.",
+   "answer": "taller",
+   "why": "Ann이 Bill만큼 크지 않다는 것은 Bill이 더 크다는 뜻이므로 비교급 taller를 쓴다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Our school library has as ____ books as the city library.",
+   "choices": [
+    "more",
+    "most",
+    "lots",
+    "many",
+    "much"
+   ],
+   "answer": 4,
+   "why": "books는 셀 수 있는 명사의 복수형이므로 as many books as를 쓴다. much는 셀 수 없는 명사에만 쓴다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "I don't have as ____ time as you do.",
+   "choices": [
+    "many",
+    "much",
+    "more",
+    "most",
+    "plenty"
+   ],
+   "answer": 2,
+   "why": "time은 셀 수 없는 명사이므로 as much time as로 쓴다. many는 셀 수 있는 명사에만 쓴다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말과 같도록 빈칸에 알맞은 것은? — 이 탑은 저 건물의 두 배 높이다.  This tower is ____ tall as that building.",
+   "choices": [
+    "twice as",
+    "two as",
+    "as twice",
+    "twice more",
+    "double as"
+   ],
+   "answer": 1,
+   "why": "배수 표현은 '배수사+as+원급+as' 순서이므로 twice as tall as가 알맞다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Please send me the file as soon as ____.",
+   "choices": [
+    "possible",
+    "possibly",
+    "you possible",
+    "can",
+    "able"
+   ],
+   "answer": 1,
+   "why": "'가능한 한 빨리'는 as soon as possible로 굳어진 표현이다. possibly나 can은 이 자리에 올 수 없다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "He climbed the hill as fast as he ____.",
+   "choices": [
+    "can",
+    "could",
+    "will",
+    "has",
+    "is"
+   ],
+   "answer": 2,
+   "why": "주절의 동사 climbed가 과거이므로 as fast as he could로 시제를 맞춰야 한다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The traffic this morning was ____ than usual.",
+   "choices": [
+    "very worse",
+    "much worse",
+    "many worse",
+    "more worse",
+    "most bad"
+   ],
+   "answer": 2,
+   "why": "bad의 비교급 worse를 much가 강조한다. very는 원급 강조어이고 more worse는 비교급을 두 번 쓴 잘못된 형태다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Her second novel is ____ more popular than her first one.",
+   "choices": [
+    "very",
+    "far",
+    "many",
+    "most",
+    "so"
+   ],
+   "answer": 2,
+   "why": "far는 비교급 more popular를 강조해 '훨씬'의 뜻을 만든다. very·so는 원급만 강조한다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A: Is it cold outside?  B: Yes, it's ____ cold this morning.",
+   "choices": [
+    "much",
+    "far",
+    "even",
+    "very",
+    "a lot"
+   ],
+   "answer": 4,
+   "why": "빈칸 뒤가 비교급이 아니라 원급 cold이므로 원급을 강조하는 very가 알맞다. much·far·even·a lot은 비교급을 강조한다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Sujin speaks English as ____ as a native speaker.",
+   "choices": [
+    "fluent",
+    "fluently",
+    "more fluently",
+    "most fluently",
+    "fluenter"
+   ],
+   "answer": 2,
+   "why": "동사 speaks를 꾸미므로 부사 fluently가 필요하고, as ~ as 사이이므로 원급 그대로 쓴다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The final exam was not ____ difficult as I had expected.",
+   "choices": [
+    "as",
+    "more",
+    "than",
+    "very",
+    "much"
+   ],
+   "answer": 1,
+   "why": "not as+원급+as 구문이므로 빈칸에는 as가 온다. 뒤에 as가 있으므로 more나 than은 쓸 수 없다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "My grandmother walks ____ slowly than she did last year.",
+   "choices": [
+    "very more",
+    "much more",
+    "much most",
+    "many more",
+    "more much"
+   ],
+   "answer": 2,
+   "why": "부사 slowly의 비교급은 more slowly이고, 이를 강조하는 말은 much다. very는 비교급을 강조하지 못한다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "This jacket costs ____ as much as that one, so I can't buy it.",
+   "choices": [
+    "twice",
+    "two",
+    "double",
+    "second",
+    "twofold"
+   ],
+   "answer": 1,
+   "why": "'두 배'를 나타내는 배수사는 twice이며 twice as much as 순서로 쓴다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Nothing in the world is as ____ as your health.",
+   "choices": [
+    "important",
+    "more important",
+    "most important",
+    "importantly",
+    "importanter"
+   ],
+   "answer": 1,
+   "why": "as ~ as 사이에는 원급이 오므로 important. 'Nothing is as+원급+as A'는 A가 가장 ~하다는 뜻이다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The new bridge is ____ longer than the old one.",
+   "choices": [
+    "very",
+    "a lot",
+    "many",
+    "most",
+    "so"
+   ],
+   "answer": 2,
+   "why": "a lot은 비교급 longer를 강조한다. very·so는 원급을, many는 명사를 꾸민다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 같도록 빈칸에 알맞은 것은?  Mike is not as old as Sarah. = Sarah is ____ Mike.",
+   "choices": [
+    "older than",
+    "as old as",
+    "oldest than",
+    "more old than",
+    "not older than"
+   ],
+   "answer": 1,
+   "why": "'A가 B만큼 나이 들지 않았다'는 'B가 A보다 나이가 많다'와 같으므로 older than이 알맞다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 같도록 빈칸에 알맞은 것은?  This bag is not as expensive as that one. = That one is ____ this bag.",
+   "choices": [
+    "more expensive than",
+    "as expensive as",
+    "less expensive than",
+    "most expensive than",
+    "not expensive than"
+   ],
+   "answer": 1,
+   "why": "not as ~ as는 뒤에 오는 대상이 더 ~하다는 뜻이므로 more expensive than으로 바꿔 쓴다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 같도록 빈칸에 알맞은 것은?  Tom runs faster than Jenny. = Jenny does not run ____ Tom.",
+   "choices": [
+    "as fast as",
+    "as faster as",
+    "so faster than",
+    "as fastly as",
+    "faster than"
+   ],
+   "answer": 1,
+   "why": "비교급 문장은 not as+원급+as로 바꿔 쓸 수 있다. 사이에는 원급 fast를 쓴다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 같도록 빈칸에 알맞은 것은?  Her room is bigger than mine. = My room is ____ hers.",
+   "choices": [
+    "not as big as",
+    "not as bigger as",
+    "as big as",
+    "not so bigger than",
+    "bigger than"
+   ],
+   "answer": 1,
+   "why": "그녀의 방이 더 크다는 것은 내 방이 그만큼 크지 않다는 뜻이므로 not as big as가 알맞다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 같도록 빈칸에 알맞은 것은?  He answered as politely as possible. = He answered as politely as ____.",
+   "choices": [
+    "he could",
+    "he can",
+    "possibly",
+    "he is",
+    "politely"
+   ],
+   "answer": 1,
+   "why": "as ~ as possible은 as ~ as+주어+can으로 바꿔 쓰며, 주절이 과거이므로 he could가 된다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 같도록 빈칸에 알맞은 것은?  I have three books. You have three books, too. = I have ____ you.",
+   "choices": [
+    "as many books as",
+    "as much books as",
+    "as many books than",
+    "so many books as",
+    "as more books as"
+   ],
+   "answer": 1,
+   "why": "books는 셀 수 있는 명사이므로 as many books as. 사이에 명사가 오면 as many/much+명사+as 순서로 쓴다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 같도록 빈칸에 알맞은 것은?  Winter in Seoul is colder than winter in Busan. = Winter in Busan is not ____ winter in Seoul.",
+   "choices": [
+    "as cold as",
+    "as colder as",
+    "so colder than",
+    "as coldly as",
+    "colder than"
+   ],
+   "answer": 1,
+   "why": "비교급 문장을 not as+원급+as로 바꾼 것이다. cold는 원급 그대로 쓴다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 같도록 빈칸에 알맞은 것은?  This box weighs 5 kg. That box weighs 5 kg, too. = This box is ____ that box.",
+   "choices": [
+    "as heavy as",
+    "heavier than",
+    "not as heavy as",
+    "as heavier as",
+    "so heavy as"
+   ],
+   "answer": 1,
+   "why": "무게가 같으므로 as+원급+as인 as heavy as가 알맞다. 긍정문에서는 so ~ as를 쓰지 않는다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞게 쓰인 문장은?",
+   "choices": [
+    "She has as many friend as I do.",
+    "He is much more taller than me.",
+    "This road is far safer than that one.",
+    "I am very older than my brother.",
+    "They work as harder as we do."
+   ],
+   "answer": 3,
+   "why": "③은 비교급 safer를 far가 바르게 강조했다. ①은 friends, ②는 much taller, ④는 much older, ⑤는 as hard as로 고쳐야 한다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞지 <u>않는</u> 문장은?",
+   "choices": [
+    "The movie was much more exciting than the book.",
+    "I can't run as fast as you.",
+    "She has as much homework as I do.",
+    "This building is twice as taller as that one.",
+    "He is far better at math than me."
+   ],
+   "answer": 4,
+   "why": "배수 표현도 as ~ as 사이에는 원급이 오므로 ④는 twice as tall as로 고쳐야 한다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳게 쓰인 것은?",
+   "choices": [
+    "My phone is as expensive than yours.",
+    "The test was very harder than I thought.",
+    "Jane sings as beautiful as a bird.",
+    "We have as much water as we need.",
+    "He is a lot more stronger than me."
+   ],
+   "answer": 4,
+   "why": "water는 셀 수 없는 명사라 as much water as가 맞다. ①은 as, ②는 much, ③은 beautifully, ⑤는 more를 빼야 한다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>잘못</u> 쓰인 것은?",
+   "choices": [
+    "Please answer as quickly as possible.",
+    "The room was as cold as a refrigerator.",
+    "My score is even higher than hers.",
+    "He didn't work as hardly as his boss.",
+    "She has as many pens as her sister."
+   ],
+   "answer": 4,
+   "why": "'열심히'라는 뜻의 부사는 hard다. hardly는 '거의 ~않다'라는 뜻이므로 ④는 as hard as로 고쳐야 한다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "This coffee is as hotter as fire.",
+    "I don't have as many money as you.",
+    "The train is far more faster than the bus.",
+    "Her hair is as long as her sister's.",
+    "He speaks as slow as a turtle."
+   ],
+   "answer": 4,
+   "why": "④는 as+원급+as가 바르게 쓰였다. ①은 hot, ②는 much money, ③은 far faster, ⑤는 as slowly as로 고쳐야 한다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 <u>어색한</u> 것은?",
+   "choices": [
+    "Math is not as easy as English.",
+    "Our team played much better than theirs.",
+    "This chair is as comfortable as that sofa.",
+    "Tom is as tall as his father is.",
+    "The box was very heavier than it looked."
+   ],
+   "answer": 5,
+   "why": "비교급 heavier는 much·far·a lot·even으로 강조해야 한다. very는 원급만 강조하므로 ⑤가 틀렸다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 자연스러운 문장은?",
+   "choices": [
+    "He can jump as highly as a kangaroo.",
+    "Your bag looks as heavy as mine.",
+    "The weather is much more cold today.",
+    "She earns as much money than her sister.",
+    "They are twice as older as us."
+   ],
+   "answer": 2,
+   "why": "look은 보어로 형용사를 쓰므로 ②가 옳다. ①은 as high as, ③은 much colder, ④는 as, ⑤는 twice as old as로 고쳐야 한다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 <u>잘못</u> 쓰인 문장은?",
+   "choices": [
+    "I got up as early as my mother did.",
+    "The problem was far more serious than we thought.",
+    "She has as many books as her brother has.",
+    "This road is as wide as that road.",
+    "He is a lot more taller than his cousin."
+   ],
+   "answer": 5,
+   "why": "taller가 이미 비교급이므로 more를 함께 쓸 수 없다. ⑤는 a lot taller than으로 고쳐야 한다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장에서 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? — The <u>new</u> library is <u>very</u> <u>bigger</u> <u>than</u> the old <u>one</u>.",
+   "choices": [
+    "new",
+    "very",
+    "bigger",
+    "than",
+    "one"
+   ],
+   "answer": 2,
+   "why": "비교급 bigger를 강조하려면 much·far·a lot·even을 써야 한다. very는 원급만 강조한다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장에서 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? — She <u>can</u> <u>speak</u> Chinese <u>as</u> <u>fluent</u> as her <u>mother</u>.",
+   "choices": [
+    "can",
+    "speak",
+    "as",
+    "fluent",
+    "mother"
+   ],
+   "answer": 4,
+   "why": "동사 speak를 꾸며야 하므로 부사 fluently가 되어야 한다. as ~ as 사이라도 품사는 그대로 지켜야 한다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장에서 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? — I <u>don't</u> have <u>as</u> <u>many</u> <u>time</u> as <u>you</u>.",
+   "choices": [
+    "don't",
+    "as",
+    "many",
+    "time",
+    "you"
+   ],
+   "answer": 3,
+   "why": "time은 셀 수 없는 명사이므로 many가 아니라 much를 써야 한다. as much time as가 옳다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장에서 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? — <u>This</u> house is <u>twice</u> as <u>larger</u> as <u>that</u> <u>one</u>.",
+   "choices": [
+    "This",
+    "twice",
+    "larger",
+    "that",
+    "one"
+   ],
+   "answer": 3,
+   "why": "배수사 뒤에도 as ~ as 사이에는 원급이 온다. twice as large as가 옳다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장에서 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? — <u>He</u> <u>finished</u> the report as <u>quick</u> as he <u>could</u> <u>last</u> night.",
+   "choices": [
+    "He",
+    "finished",
+    "quick",
+    "could",
+    "last"
+   ],
+   "answer": 3,
+   "why": "동사 finished를 꾸미므로 부사 quickly가 되어야 한다. 과거 시제에 맞춘 could는 알맞다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 그녀는 그녀의 언니만큼 많은 신발을 가지고 있다.",
+   "choices": [
+    "She has as many shoes as her sister.",
+    "She has as much shoes as her sister.",
+    "She has as many shoes than her sister.",
+    "She has so many shoes as her sister.",
+    "She has as more shoes as her sister."
+   ],
+   "answer": 1,
+   "why": "shoes는 셀 수 있는 명사의 복수형이므로 as many shoes as. 긍정문에 so ~ as는 쓰지 않는다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 이 산은 저 산보다 훨씬 더 높다.",
+   "choices": [
+    "This mountain is very higher than that one.",
+    "This mountain is much higher than that one.",
+    "This mountain is many higher than that one.",
+    "This mountain is much more higher than that one.",
+    "This mountain is more higher than that one."
+   ],
+   "answer": 2,
+   "why": "'훨씬'은 much로 비교급 higher를 강조한다. more higher처럼 비교급을 두 번 만들면 안 된다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 나는 가능한 한 빨리 집에 왔다.",
+   "choices": [
+    "I came home as soon as possible.",
+    "I came home as soon as possibly.",
+    "I came home so soon as possible.",
+    "I came home as sooner as possible.",
+    "I came home as soon as I can."
+   ],
+   "answer": 1,
+   "why": "'가능한 한 ~하게'는 as+원급+as possible. ⑤는 주절이 과거이므로 I could로 써야 맞다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 그의 방은 내 방만큼 깨끗하지 않다.",
+   "choices": [
+    "His room is not as clean as mine.",
+    "His room is not as cleaner as mine.",
+    "His room is as not clean as mine.",
+    "His room is not as clean as me.",
+    "His room is not so cleaner than mine."
+   ],
+   "answer": 1,
+   "why": "not as+원급+as 구문이며 비교 대상이 '내 방'이므로 mine을 쓴다. ④의 me는 사람과 방을 비교해 어색하다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A: How was the concert?  B: Amazing! The singer's voice was ____ better than on the CD.",
+   "choices": [
+    "very",
+    "much",
+    "many",
+    "too",
+    "most"
+   ],
+   "answer": 2,
+   "why": "better는 good의 비교급이므로 much로 강조한다. very·too는 원급만 강조한다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A: Do you and your sister read a lot?  B: Yes. I read ____ books ____ she does.",
+   "choices": [
+    "as many – as",
+    "as much – as",
+    "as many – than",
+    "so many – as",
+    "as more – as"
+   ],
+   "answer": 1,
+   "why": "books가 셀 수 있는 명사이므로 as many books as. 긍정문이라 so ~ as는 쓰지 않는다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A: Can you come to the library at seven?  B: Sure. I'll get there as ____ as I can.",
+   "choices": [
+    "early",
+    "earlier",
+    "earliest",
+    "more early",
+    "earlily"
+   ],
+   "answer": 1,
+   "why": "as ~ as 사이에는 원급이 오므로 부사 원급 early를 쓴다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은?  • This suitcase is ____ heavier than that one.  • Our new car is ____ more comfortable than the old one.",
+   "choices": [
+    "very",
+    "much",
+    "many",
+    "so",
+    "too"
+   ],
+   "answer": 2,
+   "why": "두 문장 모두 비교급(heavier, more comfortable)이므로 비교급 강조어 much가 알맞다. very·so·too는 원급만 강조한다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말은?  • He is ____ tall as his father.  • I ran ____ fast as I could.",
+   "choices": [
+    "so",
+    "very",
+    "as",
+    "too",
+    "more"
+   ],
+   "answer": 3,
+   "why": "두 문장 모두 as+원급+as 구문이므로 빈칸에는 as가 들어간다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ㄱ. I have as many pencils as you.  ㄴ. He is very smarter than me.  ㄷ. She sings as beautifully as a bird.  ㄹ. This bag is twice as heavy as that one.  ㅁ. We don't have as much time as they do.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "ㄱ·ㄷ·ㄹ·ㅁ은 모두 알맞다. ㄴ만 비교급 smarter를 very로 강조해 틀렸으므로 옳은 문장은 4개다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 문장의 개수는?  ㄱ. The test was far easier than I thought.  ㄴ. My hair is as longer as yours.  ㄷ. He works as hardly as his father.  ㄹ. This room is much colder than that one.  ㅁ. She has as many friends as I do.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ㄴ은 as long as, ㄷ은 as hard as로 고쳐야 하므로 틀린 문장은 2개다. ㄱ·ㄹ·ㅁ은 모두 옳다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 괄호 안에서 알맞은 말을 골라 쓰시오.  I don't have as (many / much) homework as you.",
+   "answer": "much",
+   "why": "homework는 셀 수 없는 명사이므로 as much homework as로 쓴다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 괄호 안에서 알맞은 말을 골라 쓰시오.  She has as (many / much) friends as her brother.",
+   "answer": "many",
+   "why": "friends는 셀 수 있는 명사의 복수형이므로 as many friends as로 쓴다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 괄호 안에서 알맞은 말을 골라 쓰시오.  This tower is twice as (tall / taller) as that building.",
+   "answer": "tall",
+   "why": "배수사가 붙어도 as ~ as 사이에는 원급이 온다. twice as tall as가 옳다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 괄호 안에서 알맞은 말을 골라 쓰시오.  He speaks as (slow / slowly) as my grandfather.",
+   "answer": "slowly",
+   "why": "동사 speaks를 꾸미므로 부사 slowly를 써야 한다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 괄호 안에서 알맞은 말을 골라 쓰시오.  The book was (very / much) more interesting than the movie.",
+   "answer": "much",
+   "why": "비교급 more interesting을 강조하는 말은 much다. very는 원급만 강조한다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 괄호 안에서 알맞은 말을 골라 쓰시오.  Your voice sounds as (sweet / sweetly) as a song.",
+   "answer": "sweet",
+   "why": "sound는 보어로 형용사를 취하는 동사이므로 원급 형용사 sweet를 쓴다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸에 쓰시오. (한 단어)  Please finish the report as ____ as possible. (quick)",
+   "answer": "quickly",
+   "why": "동사 finish를 꾸미므로 부사 quickly가 되어야 하고, as ~ as 사이이므로 원급으로 쓴다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸에 쓰시오. (한 단어)  My score is much ____ than last time. (good)",
+   "answer": "better",
+   "why": "than이 있으므로 good의 비교급 better를 쓰고, much가 그것을 강조한다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸에 쓰시오. (한 단어)  This alley is as ____ as that path. (narrow)",
+   "answer": "narrow",
+   "why": "as ~ as 사이에는 원급이 오므로 narrow를 그대로 쓴다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸에 쓰시오. (한 단어)  The second box is far ____ than the first one. (heavy)",
+   "answer": "heavier",
+   "why": "far는 비교급 강조어이므로 뒤에는 비교급 heavier가 와야 한다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸에 쓰시오. (두 단어)  He drove even ____ than usual this morning. (carefully)",
+   "answer": "more carefully",
+   "why": "even은 비교급을 강조하는 말이고, 부사 carefully의 비교급은 more carefully다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (한 단어)  She is as <u>smarter</u> as her sister.",
+   "answer": "smart",
+   "why": "as ~ as 사이에는 원급이 오므로 smarter를 smart로 고친다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (한 단어)  I have as <u>much</u> books as you.",
+   "answer": "many",
+   "why": "books는 셀 수 있는 명사의 복수형이므로 much를 many로 고쳐야 한다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (한 단어)  The winter here is <u>very</u> colder than in Seoul.",
+   "answer": "much",
+   "why": "비교급 colder는 much, far, a lot, even으로 강조한다. very는 원급만 강조한다.",
+   "alt": [
+    "far",
+    "a lot",
+    "even"
+   ],
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (한 단어)  He ran to the station as <u>quick</u> as he could.",
+   "answer": "quickly",
+   "why": "동사 ran을 꾸미므로 부사 quickly로 고쳐야 한다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (한 단어)  This building is three times as <u>higher</u> as my house.",
+   "answer": "high",
+   "why": "배수 표현에서도 as ~ as 사이에는 원급이 오므로 higher를 high로 고친다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장과 의미가 같도록 빈칸에 알맞은 말을 쓰시오. (두 단어)  Daniel is not as heavy as Chris.  → Chris is ____ Daniel.",
+   "answer": "heavier than",
+   "why": "not as ~ as는 뒤의 대상이 더 ~하다는 뜻이므로 비교급 heavier than으로 바꿔 쓴다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장과 의미가 같도록 빈칸에 알맞은 말을 쓰시오. (세 단어)  My bike is newer than yours.  → Your bike is not ____ mine.",
+   "answer": "as new as",
+   "why": "비교급 문장은 not as+원급+as로 바꿔 쓸 수 있다. 부정문이므로 so new as도 가능하다.",
+   "alt": [
+    "so new as"
+   ],
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장과 의미가 같도록 빈칸에 알맞은 말을 쓰시오. (두 단어)  He finished the work as fast as possible.  → He finished the work as fast as ____.",
+   "answer": "he could",
+   "why": "as ~ as possible은 as ~ as+주어+can으로 바꿔 쓰며, 주절이 과거이므로 he could가 된다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장과 의미가 같도록 빈칸에 알맞은 말을 쓰시오. (세 단어)  Sujin is 160 cm tall, and Mina is 160 cm tall.  → Sujin is ____ Mina.",
+   "answer": "as tall as",
+   "why": "키가 같으므로 as+원급+as인 as tall as를 쓴다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 <보기> 중 어법상 옳은 것을 모두 고른 것은?  ㄱ. She has as much patience as her mother does.  ㄴ. The new model is very lighter than the old one.  ㄷ. He can't run as fast as he used to.  ㄹ. This lake is three times as deeper as that pond.  ㅁ. Our team played far better than yours did.",
+   "choices": [
+    "ㄱ, ㄴ, ㄷ",
+    "ㄱ, ㄷ, ㅁ",
+    "ㄴ, ㄹ, ㅁ",
+    "ㄱ, ㄹ",
+    "ㄷ, ㄹ, ㅁ"
+   ],
+   "answer": 2,
+   "why": "ㄴ은 비교급 lighter를 very로 강조해 틀렸고(much lighter), ㄹ은 배수 표현에서도 원급이 와야 하므로 three times as deep as로 고쳐야 한다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 <보기> 중 어법상 <u>틀린</u> 것을 모두 고른 것은?  ㄱ. I don't have as many information as you do.  ㄴ. The problem was much more complex than we had thought.  ㄷ. He works as hardly as anyone in this office.  ㄹ. Nothing is as precious as time.  ㅁ. She is a lot taller than she was last year.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㅁ",
+    "ㄱ, ㄷ, ㅁ"
+   ],
+   "answer": 2,
+   "why": "information은 셀 수 없는 명사라 as much information as로, ㄷ의 hardly는 '거의 ~않다'라는 뜻이라 as hard as로 고쳐야 한다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 <보기> 중 어법상 옳은 것을 모두 고른 것은?  ㄱ. This movie is not as boring as I expected.  ㄴ. My brother eats twice as much as I do.  ㄷ. The wind today is even stronger than yesterday's.  ㄹ. Her handwriting is as neat than her teacher's.  ㅁ. Tom is very more careful than his partner.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ, ㄹ",
+    "ㄱ, ㄴ, ㄷ",
+    "ㄱ, ㄷ, ㅁ",
+    "ㄷ, ㄹ, ㅁ"
+   ],
+   "answer": 3,
+   "why": "ㄹ은 as ~ as 뒤에 than을 써서 틀렸고, ㅁ은 비교급 more careful을 very로 강조해 틀렸다. 나머지 셋은 모두 옳다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 <보기> 중 어법상 <u>틀린</u> 것을 모두 고른 것은?  ㄱ. Please speak as clear as you can.  ㄴ. The Nile is four times as long as this river.  ㄷ. Living in the city is much more expensive than living in the country.  ㄹ. She didn't sleep as long as she wanted.  ㅁ. His new song is far popular than his old one.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㅁ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㄷ, ㅁ"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 동사 speak를 꾸미는 부사 clearly가 필요하고, ㅁ은 far 뒤에 비교급이 와야 하므로 far more popular로 고쳐야 한다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 <보기> 중 어법상 옳은 것을 모두 고른 것은?  ㄱ. No other student in my class is as diligent as Jimin.  ㄴ. This year's festival was a lot more successful than last year's.  ㄷ. The bag I bought is as expensive as you.  ㄹ. She speaks Japanese as good as English.  ㅁ. The road became even narrower after the curve.",
+   "choices": [
+    "ㄱ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄱ, ㄴ, ㅁ",
+    "ㄷ, ㄹ, ㅁ",
+    "ㄱ, ㄹ, ㅁ"
+   ],
+   "answer": 3,
+   "why": "ㄷ은 가방과 사람을 비교해 어색하므로 as yours가 되어야 하고, ㄹ은 동사 speaks를 꾸미는 부사 well이 필요하다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 <보기> 중 어법상 <u>틀린</u> 것을 모두 고른 것은?  ㄱ. My score was not so high as hers.  ㄴ. The second half was much more exciting than the first.  ㄷ. He carried as many boxes as his father did.  ㄹ. This machine works twice as faster as the old one.  ㅁ. The line moved very more slowly than usual.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄹ, ㅁ",
+    "ㄱ, ㄹ",
+    "ㄷ, ㅁ"
+   ],
+   "answer": 3,
+   "why": "ㄹ은 as ~ as 사이에 원급 fast가 와야 하고, ㅁ은 비교급 more slowly를 very로 강조해 틀렸다. ㄱ의 not so ~ as는 부정문에서 쓸 수 있다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 <보기> 중 어법상 옳은 것을 모두 고른 것은?  ㄱ. The test was as difficult as the one we took last month.  ㄴ. I want to finish this project as early as possible.  ㄷ. Their house is three times as bigger as ours.  ㄹ. He looked much more tired than he had the day before.  ㅁ. She didn't answer as polite as her sister.",
+   "choices": [
+    "ㄱ, ㄴ, ㄹ",
+    "ㄱ, ㄷ, ㅁ",
+    "ㄴ, ㄷ, ㄹ",
+    "ㄷ, ㄹ, ㅁ",
+    "ㄱ, ㄴ, ㅁ"
+   ],
+   "answer": 1,
+   "why": "ㄷ은 three times as big as로, ㅁ은 동사를 꾸미는 부사 politely로 고쳐야 한다. ㄱ·ㄴ·ㄹ은 모두 옳다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 <보기> 중 어법상 <u>틀린</u> 것을 모두 고른 것은?  ㄱ. Few things are as useful as a good dictionary.  ㄴ. This coat costs as much money than that one.  ㄷ. The weather got a lot worse in the afternoon.  ㄹ. I don't spend as much time on games as my cousin.  ㅁ. Her voice sounded even sweeter on the stage.  ㅂ. The exam was many harder than we expected.",
+   "choices": [
+    "ㄱ, ㄷ",
+    "ㄴ, ㅂ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㅁ",
+    "ㄴ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄴ은 as much money as로 고쳐야 하고, ㅂ의 many는 비교급을 강조할 수 없으므로 much harder가 되어야 한다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 두 문장의 뜻이 서로 <u>다른</u> 것은?",
+   "choices": [
+    "Jane is not as old as Kate. = Kate is older than Jane.",
+    "I have as many coins as you. = I have the same number of coins as you.",
+    "He is much older than me. = I am much younger than him.",
+    "This box is twice as heavy as that one. = That one is twice as heavy as this box.",
+    "Run as fast as possible. = Run as fast as you can."
+   ],
+   "answer": 4,
+   "why": "④는 무거운 쪽이 서로 바뀌었다. 이 상자가 저 상자의 두 배라면 저 상자는 이 상자의 절반 무게다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 두 문장의 의미가 서로 <u>다른</u> 것은?",
+   "choices": [
+    "Nothing is as important as health. = Health is the most important thing.",
+    "She didn't come as early as Tom. = Tom came earlier than she did.",
+    "My room is not so big as yours. = Your room is bigger than mine.",
+    "The test was far easier than I expected. = The test was much easier than I expected.",
+    "He speaks English as well as his sister. = He speaks English better than his sister."
+   ],
+   "answer": 5,
+   "why": "as well as는 실력이 '같다'는 뜻이고 better than은 '더 낫다'는 뜻이므로 ⑤만 의미가 다르다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 두 문장의 뜻이 같은 것은?",
+   "choices": [
+    "I am not as tall as him. = I am taller than him.",
+    "She has as much money as I do. = She has more money than I do.",
+    "This road is not as safe as that one. = That one is safer than this road.",
+    "He runs as fast as a deer. = He runs faster than a deer.",
+    "Today is much hotter than yesterday. = Today is as hot as yesterday."
+   ],
+   "answer": 3,
+   "why": "not as ~ as는 뒤의 대상이 더 ~하다는 뜻이므로 ③만 같은 의미다. 나머지는 우열 관계가 뒤바뀌었다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 짝지어진 두 문장의 의미가 서로 같은 것은?",
+   "choices": [
+    "Minji swims as well as Sora. = Minji swims better than Sora.",
+    "This bag isn't as light as that one. = This bag is heavier than that one.",
+    "Our team scored as many goals as theirs. = Our team scored more goals than theirs.",
+    "The movie was not so long as the book. = The movie was longer than the book.",
+    "He earns twice as much as she does. = She earns twice as much as he does."
+   ],
+   "answer": 2,
+   "why": "'A가 B만큼 가볍지 않다'는 'A가 B보다 무겁다'와 같다. 나머지는 모두 비교 관계가 어긋난다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 짝지어진 두 문장의 뜻이 <u>다른</u> 것은?",
+   "choices": [
+    "Call me as soon as you can. = Call me as soon as possible.",
+    "No river in Korea is as long as the Han River. = The Han River is the longest river in Korea.",
+    "She is not so careful as her brother. = Her brother is more careful than she is.",
+    "The new phone is a lot lighter than the old one. = The old one is a lot heavier than the new one.",
+    "I studied as hard as Jinsu. = I studied harder than Jinsu."
+   ],
+   "answer": 5,
+   "why": "as hard as는 노력의 정도가 같다는 뜻이므로 harder than과 같지 않다. 나머지는 모두 바르게 바꿔 쓴 것이다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 옮길 때 알맞지 <u>않은</u> 것은? — 이 다리는 저 다리만큼 길지 않다.",
+   "choices": [
+    "This bridge is not as long as that one.",
+    "This bridge is not so long as that one.",
+    "That bridge is longer than this one.",
+    "This bridge is shorter than that one.",
+    "That bridge is not as long as this one."
+   ],
+   "answer": 5,
+   "why": "⑤는 길고 짧은 대상이 뒤바뀌었다. 나머지는 모두 '이 다리가 더 짧다'는 같은 뜻을 나타낸다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 바르게 쓰인 문장은?",
+   "choices": [
+    "The audience was much more larger than we had expected.",
+    "He didn't finish the race as quick as his teammate.",
+    "This region gets three times as many visitors as ours does.",
+    "Her new album sold as much copies as her first one.",
+    "The mountain air felt very fresher than the city air."
+   ],
+   "answer": 3,
+   "why": "visitors는 셀 수 있는 명사이므로 as many visitors as가 맞다. ①은 much larger, ②는 quickly, ④는 as many copies as, ⑤는 much fresher로 고쳐야 한다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳지 <u>않은</u> 문장은?",
+   "choices": [
+    "Few subjects are as interesting to me as history.",
+    "He speaks far more confidently than he did last year.",
+    "The traffic was not nearly as bad as it usually is.",
+    "This laptop is twice as expensive than that tablet.",
+    "She kept the room as tidy as she could."
+   ],
+   "answer": 4,
+   "why": "as ~ as 구문의 뒤에는 than이 아니라 as가 온다. twice as expensive as가 옳다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞는 문장은?",
+   "choices": [
+    "My cousin is a lot more smarter than he looks.",
+    "The soup tasted as salty as the sea.",
+    "They arrived as early than the other guests.",
+    "This road is very wider than the one behind the school.",
+    "I don't need as many sugar as the recipe says."
+   ],
+   "answer": 2,
+   "why": "taste는 보어로 형용사를 취하므로 as salty as가 옳다. ①은 more를 빼고, ③은 as early as, ④는 much wider, ⑤는 as much sugar as로 고쳐야 한다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 바르지 <u>않은</u> 문장은?",
+   "choices": [
+    "The second speech was even more moving than the first.",
+    "He can hold his breath as long as a diver can.",
+    "Our class collected as much paper as the other classes did.",
+    "The lecture was far more useful than I had thought.",
+    "She was very more nervous than her classmates."
+   ],
+   "answer": 5,
+   "why": "비교급 more nervous는 much, far, a lot, even으로 강조해야 한다. very는 원급만 강조한다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 오류가 없는 문장은?",
+   "choices": [
+    "Nothing makes me as happier as a long walk.",
+    "The bridge is half as long than the tunnel.",
+    "He behaved as polite as his older brother.",
+    "This winter has been much snowier than last winter.",
+    "We have as few chance as they do."
+   ],
+   "answer": 4,
+   "why": "④는 비교급 snowier를 much가 바르게 강조했다. ①은 as happy as, ②는 as long as, ③은 politely, ⑤는 as few chances as로 고쳐야 한다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 오류가 있는 문장은?",
+   "choices": [
+    "The report took twice as long as I had planned.",
+    "Your suggestion sounds much more practical than mine.",
+    "He didn't play as badly as the coach had feared.",
+    "The second box was as heavier as the first one.",
+    "Nobody in the club sings as beautifully as Sena."
+   ],
+   "answer": 4,
+   "why": "as ~ as 사이에는 원급이 오므로 as heavy as로 고쳐야 한다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 표현이 어법상 옳은 것은?",
+   "choices": [
+    "The city is growing very faster than before.",
+    "I have as much homeworks as my sister.",
+    "The final round was a lot more difficult than the first round.",
+    "He is as tall as me is.",
+    "She works as more hard as anyone here."
+   ],
+   "answer": 3,
+   "why": "③은 비교급 more difficult를 a lot이 바르게 강조했다. ①은 much faster, ②는 homework, ④는 as tall as I am, ⑤는 as hard as로 고쳐야 한다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장 중 어법에 맞지 <u>않는</u> 것은?",
+   "choices": [
+    "The new stadium holds three times as many people as the old one.",
+    "This question is not as simple as it looks.",
+    "He answered as honestly as he could.",
+    "The wind was even colder near the river.",
+    "My phone battery lasts many longer than yours."
+   ],
+   "answer": 5,
+   "why": "many는 명사를 꾸미는 말이라 비교급을 강조할 수 없다. much longer 또는 far longer로 고쳐야 한다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? — Although the second test <u>was</u> <u>far</u> <u>difficult</u> than the first one, <u>most</u> students <u>finished</u> it in time.",
+   "choices": [
+    "was",
+    "far",
+    "difficult",
+    "most",
+    "finished"
+   ],
+   "answer": 3,
+   "why": "than이 있으므로 비교급이 필요하다. far는 비교급을 강조하는 말이므로 far more difficult가 되어야 한다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? — The teacher explained the rule as <u>simple</u> as <u>possible</u>, <u>so</u> <u>everyone</u> <u>understood</u> it.",
+   "choices": [
+    "simple",
+    "possible",
+    "so",
+    "everyone",
+    "understood"
+   ],
+   "answer": 1,
+   "why": "동사 explained를 꾸미므로 부사 simply가 되어야 한다. as ~ as possible의 형태 자체는 알맞다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? — My grandfather, who <u>is</u> eighty, walks <u>as</u> <u>fast</u> as I <u>do</u>, and he still looks <u>much</u> healthy.",
+   "choices": [
+    "is",
+    "as",
+    "fast",
+    "do",
+    "much"
+   ],
+   "answer": 5,
+   "why": "healthy는 원급이므로 much로 강조할 수 없다. very healthy 또는 much healthier가 되어야 한다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? — Because the box was <u>three</u> times as <u>heavier</u> as mine, I <u>couldn't</u> <u>lift</u> it <u>alone</u>.",
+   "choices": [
+    "three",
+    "heavier",
+    "couldn't",
+    "lift",
+    "alone"
+   ],
+   "answer": 2,
+   "why": "배수 표현에서도 as ~ as 사이에는 원급이 온다. three times as heavy as가 옳다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? — This summer has been <u>even</u> <u>hotter</u> than last summer, but it <u>isn't</u> as <u>humid</u> <u>than</u> the summer of 2018.",
+   "choices": [
+    "even",
+    "hotter",
+    "isn't",
+    "humid",
+    "than"
+   ],
+   "answer": 5,
+   "why": "as+원급 뒤에는 as가 와야 하므로 as humid as로 고쳐야 한다. even hotter는 바른 비교급 강조다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 밑줄 친 부분 중 어법상 <u>틀린</u> 것은? — She read as <u>many</u> <u>books</u> as her brother <u>did</u>, but she remembered the stories <u>very</u> <u>better</u> than he did.",
+   "choices": [
+    "many",
+    "books",
+    "did",
+    "very",
+    "better"
+   ],
+   "answer": 4,
+   "why": "비교급 better는 much, far, a lot으로 강조해야 한다. very는 원급만 강조하므로 ④가 틀렸다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 그는 그의 형만큼 많은 시간을 컴퓨터에 쓰지 않는다.",
+   "choices": [
+    "He doesn't spend as much time on the computer as his brother does.",
+    "He doesn't spend as many time on the computer as his brother does.",
+    "He doesn't spend as much time on the computer than his brother does.",
+    "He doesn't spend so much time on the computer as his brother is.",
+    "He doesn't spend as more time on the computer as his brother does."
+   ],
+   "answer": 1,
+   "why": "time은 셀 수 없는 명사이므로 as much time as를 쓰고, 뒤에는 than이 아니라 as가 온다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 이 강은 저 강의 세 배만큼 길다.",
+   "choices": [
+    "This river is three times as longer as that one.",
+    "This river is as three times long as that one.",
+    "This river is three times as long as that one.",
+    "This river is three times longer as that one.",
+    "This river is as long three times as that one."
+   ],
+   "answer": 3,
+   "why": "배수 표현은 '배수사+as+원급+as' 순서이므로 three times as long as가 옳다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 가능한 한 조용히 문을 닫아 주세요.",
+   "choices": [
+    "Please close the door as quiet as possible.",
+    "Please close the door as quietly as possible.",
+    "Please close the door so quietly as possible.",
+    "Please close the door as quietly as you could.",
+    "Please close the door as more quietly as possible."
+   ],
+   "answer": 2,
+   "why": "동사 close를 꾸미므로 부사 quietly를 쓴다. 명령문은 현재를 가리키므로 ④의 could도 알맞지 않다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 세상에 건강만큼 소중한 것은 없다.",
+   "choices": [
+    "Nothing in the world is as precious as health.",
+    "Nothing in the world is as more precious as health.",
+    "Nothing in the world is so precious than health.",
+    "Nothing in the world is as precious than health.",
+    "Nothing in the world is precious as as health."
+   ],
+   "answer": 1,
+   "why": "'Nothing is as+원급+as A'는 A가 가장 ~하다는 뜻이다. 사이에는 원급, 뒤에는 as를 쓴다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 오늘 시험은 지난번 시험보다 훨씬 더 어려웠다.",
+   "choices": [
+    "Today's test was very more difficult than the last one.",
+    "Today's test was much difficult than the last one.",
+    "Today's test was a lot more difficult than the last one.",
+    "Today's test was many more difficult than the last one.",
+    "Today's test was more difficult much than the last one."
+   ],
+   "answer": 3,
+   "why": "'훨씬'은 a lot·much·far·even으로 나타내며 비교급 more difficult 바로 앞에 놓는다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The population of this city is ____ that of the neighboring town.",
+   "choices": [
+    "twice as large as",
+    "twice as larger as",
+    "as twice large as",
+    "twice large as",
+    "as large twice as"
+   ],
+   "answer": 1,
+   "why": "배수 표현은 '배수사+as+원급+as' 순서다. 인구의 많고 적음은 large/small로 나타낸다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "He didn't do ____ well on the final exam ____ he had hoped.",
+   "choices": [
+    "as – as",
+    "so – than",
+    "as – than",
+    "very – as",
+    "much – as"
+   ],
+   "answer": 1,
+   "why": "not as+원급+as 구문이므로 앞뒤에 모두 as를 쓴다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Her explanation was ____ clearer than the one in the textbook.",
+   "choices": [
+    "very",
+    "so",
+    "far",
+    "many",
+    "too"
+   ],
+   "answer": 3,
+   "why": "far는 비교급 clearer를 강조한다. very·so·too는 원급을, many는 명사를 꾸민다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "I try to visit my grandparents ____ often as I can.",
+   "choices": [
+    "so",
+    "as",
+    "very",
+    "more",
+    "much"
+   ],
+   "answer": 2,
+   "why": "as+원급+as+주어+can 구문이므로 빈칸에는 as가 온다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The interview lasted ____ than we had planned, so we missed the train.",
+   "choices": [
+    "much longer",
+    "very longer",
+    "much long",
+    "many longer",
+    "more long"
+   ],
+   "answer": 1,
+   "why": "than 앞에는 비교급 longer가 오고, 이를 강조하는 말은 much다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "This year the company hired ____ new workers ____ it did last year.",
+   "choices": [
+    "as many – as",
+    "as much – as",
+    "as many – than",
+    "so many – than",
+    "as more – as"
+   ],
+   "answer": 1,
+   "why": "workers는 셀 수 있는 명사이므로 as many workers as로 쓰고, 뒤에는 as가 온다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "A: Was the second concert good?  B: It was ____ more impressive than the first one.",
+   "choices": [
+    "very",
+    "even",
+    "many",
+    "too",
+    "so"
+   ],
+   "answer": 2,
+   "why": "even은 비교급 more impressive를 강조해 '훨씬, 더욱'의 뜻을 만든다. very·too·so는 원급만 강조한다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 상황을 바르게 나타낸 문장은? — This bridge is 200 m long, and that bridge is 400 m long.",
+   "choices": [
+    "That bridge is twice as long as this bridge.",
+    "This bridge is twice as long as that bridge.",
+    "That bridge is as long as this bridge.",
+    "This bridge is twice as longer as that bridge.",
+    "That bridge is not as long as this bridge."
+   ],
+   "answer": 1,
+   "why": "400 m는 200 m의 두 배이므로 저 다리가 이 다리의 두 배 길이다. as ~ as 사이에는 원급을 쓴다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 상황을 바르게 나타낸 문장은? — Mina got 85 points, and Sora got 85 points, too.",
+   "choices": [
+    "Mina got a higher score than Sora.",
+    "Sora didn't get as high a score as Mina.",
+    "Mina's score is as high as Sora's.",
+    "Sora's score is much higher than Mina's.",
+    "Mina's score is not so high as Sora's."
+   ],
+   "answer": 3,
+   "why": "두 사람의 점수가 같으므로 as+원급+as로 나타낸다. 나머지는 모두 한쪽이 더 높다는 뜻이다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 바꿔 쓴 것으로 알맞은 것은?  Kevin can't swim as far as his sister.",
+   "choices": [
+    "Kevin's sister can swim farther than he can.",
+    "Kevin can swim farther than his sister.",
+    "Kevin's sister can't swim as far as Kevin.",
+    "Kevin and his sister swim the same distance.",
+    "Kevin's sister swims as far as Kevin does."
+   ],
+   "answer": 1,
+   "why": "not as ~ as는 뒤의 대상이 더 ~하다는 뜻이므로 누나가 더 멀리 헤엄칠 수 있다는 의미다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 바꿔 쓴 것으로 알맞은 것은?  My old bike was much heavier than this new one.",
+   "choices": [
+    "This new bike is not as light as my old one.",
+    "My old bike was as heavy as this new one.",
+    "This new bike is much lighter than my old one.",
+    "This new bike is a lot heavier than my old one.",
+    "My old bike was not so heavy as this new one."
+   ],
+   "answer": 3,
+   "why": "예전 자전거가 훨씬 무거웠다면 새 자전거가 훨씬 가볍다는 뜻이다. 나머지는 무게 관계가 반대다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ㄱ. The show was even funnier than I had expected.  ㄴ. She doesn't read as many novels as her sister.  ㄷ. This tower is four times as higher as that one.  ㄹ. He explained the plan as clear as possible.  ㅁ. Nothing is as valuable as time.  ㅂ. My new laptop is very faster than my old one.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ·ㄴ·ㅁ이 옳다. ㄷ은 as high as, ㄹ은 as clearly as, ㅂ은 much faster로 고쳐야 하므로 옳은 문장은 3개다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 <u>틀린</u> 문장의 개수는?  ㄱ. I have as much free time as you do.  ㄴ. The road was a lot more slippery than usual.  ㄷ. She sang as sweet as a bird.  ㄹ. This box is twice as heavy as that one.  ㅁ. He is many stronger than his brother.  ㅂ. They didn't work so hard as we did.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ㄷ은 부사 sweetly가, ㅁ은 비교급 강조어 much가 필요하므로 틀린 문장은 2개다. ㅂ의 not so ~ as는 부정문에서 쓸 수 있다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 모두 알맞게 배열하여 빈칸을 완성하시오. (as / as / twice / big)  This room is ____ that one.",
+   "answer": "twice as big as",
+   "why": "배수 표현은 '배수사+as+원급+as' 순서이므로 twice as big as가 된다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 모두 알맞게 배열하여 빈칸을 완성하시오. (as / many / as / mistakes)  I made ____ you did.",
+   "answer": "as many mistakes as",
+   "why": "as many+셀 수 있는 명사+as 순서로 쓴다. 명사는 as many와 as 사이에 놓는다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 모두 알맞게 배열하여 빈칸을 완성하시오. (could / as / as / he / quietly)  He left the room ____.",
+   "answer": "as quietly as he could",
+   "why": "'가능한 한 조용히'는 as+부사 원급+as+주어+could. 과거 시제이므로 could를 쓴다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 모두 알맞게 배열하여 빈칸을 완성하시오. (as / possible / as / soon)  Please reply to my email ____.",
+   "answer": "as soon as possible",
+   "why": "'가능한 한 빨리'는 as soon as possible로 굳어진 표현이다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 모두 알맞게 배열하여 빈칸을 완성하시오. (than / far / more / interesting)  The second episode was ____ the first one.",
+   "answer": "far more interesting than",
+   "why": "비교급 more interesting을 강조하는 far는 비교급 바로 앞에 오고, 비교 대상 앞에는 than을 쓴다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장과 의미가 같도록 빈칸에 알맞은 말을 쓰시오. (세 단어)  This chair is not as comfortable as that one.  → That one is ____ this chair.",
+   "answer": "more comfortable than",
+   "why": "not as ~ as는 뒤의 대상이 더 ~하다는 뜻이므로 비교급 more comfortable than으로 바꾼다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장과 의미가 같도록 빈칸에 알맞은 말을 쓰시오. (세 단어)  Kate studies harder than Amy.  → Amy doesn't study ____ Kate.",
+   "answer": "as hard as",
+   "why": "비교급 문장은 not as+원급+as로 바꿔 쓸 수 있다. 동사를 꾸미므로 부사 hard를 쓴다.",
+   "alt": [
+    "so hard as"
+   ],
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 상황과 의미가 같도록 빈칸에 알맞은 말을 쓰시오. (네 단어)  The blue car costs $20,000, and the red car costs $40,000.  → The red car is ____ the blue car.",
+   "answer": "twice as expensive as",
+   "why": "값이 두 배이므로 '배수사+as+원급+as' 형태인 twice as expensive as를 쓴다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장과 의미가 같도록 빈칸에 알맞은 말을 쓰시오. (네 단어)  My brother eats 300 g of rice a day, and I eat 300 g of rice a day.  → I eat ____ my brother does.",
+   "answer": "as much rice as",
+   "why": "rice는 셀 수 없는 명사이므로 as much+명사+as 순서로 쓴다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고쳐 문장 전체를 다시 쓰시오.  The new library is very bigger than the old one.",
+   "answer": "The new library is much bigger than the old one.",
+   "why": "비교급 bigger는 much, far, a lot, even으로 강조한다. very는 원급만 강조하므로 쓸 수 없다.",
+   "alt": [
+    "The new library is far bigger than the old one.",
+    "The new library is a lot bigger than the old one.",
+    "The new library is even bigger than the old one."
+   ],
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고쳐 문장 전체를 다시 쓰시오.  She can run as faster as her teammates.",
+   "answer": "She can run as fast as her teammates.",
+   "why": "as ~ as 사이에는 원급이 오므로 faster를 fast로 고쳐야 한다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (한 단어)  He didn't answer the question as <u>polite</u> as his friend did.",
+   "answer": "politely",
+   "why": "동사 answer를 꾸미므로 부사 politely가 되어야 한다. as ~ as 사이라도 품사는 그대로 지킨다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (한 단어)  I don't have as <u>many</u> water as you.",
+   "answer": "much",
+   "why": "water는 셀 수 없는 명사이므로 as much water as로 써야 한다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. (한 단어)  The second half was <u>very</u> more exciting than the first.",
+   "answer": "much",
+   "why": "비교급 more exciting은 much, far, a lot, even으로 강조한다. very는 원급 전용 강조어다.",
+   "alt": [
+    "far",
+    "a lot",
+    "even"
+   ],
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 쓰시오. (네 단어, much를 이용할 것)  그 소식은 우리가 생각했던 것보다 훨씬 더 충격적이었다.  → The news was ____ we had thought.",
+   "answer": "much more shocking than",
+   "why": "shocking의 비교급은 more shocking이고, '훨씬'을 뜻하는 much가 그 앞에 온다. 비교 대상 앞에는 than을 쓴다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 쓰시오. (네 단어)  나는 그녀만큼 많은 나라를 방문하지는 못했다.  → I haven't visited ____ she has.",
+   "answer": "as many countries as",
+   "why": "countries는 셀 수 있는 명사이므로 as many+명사+as 순서로 쓴다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 쓰시오. (네 단어)  이 문제는 보이는 것만큼 쉽지 않다.  → This problem is ____ it looks.",
+   "answer": "not as easy as",
+   "why": "'~만큼 …하지 않다'는 not as+원급+as이며, 부정문에서는 not so ~ as도 쓸 수 있다.",
+   "alt": [
+    "not so easy as"
+   ],
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장과 의미가 같도록 빈칸에 알맞은 말을 쓰시오. (세 단어)  Nothing is as important as safety.  → Safety is ____ thing.",
+   "answer": "the most important",
+   "why": "'Nothing is as+원급+as A'는 A가 가장 ~하다는 뜻이므로 최상급 the most important로 바꿔 쓴다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장과 의미가 같도록 빈칸에 알맞은 한 단어를 쓰시오.  He arrived as early as he could.  → He arrived as early as ____.",
+   "answer": "possible",
+   "why": "as ~ as+주어+can[could]는 as ~ as possible로 바꿔 쓸 수 있다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 상황과 의미가 같도록 빈칸에 알맞은 말을 쓰시오. (세 단어)  Our team lost the game because the other team played much better.  → Our team didn't play ____ the other team.",
+   "answer": "as well as",
+   "why": "동사 play를 꾸미는 부사 well을 써서 not as well as로 나타낸다. good은 형용사라 쓸 수 없다.",
+   "alt": [
+    "so well as"
+   ],
+   "no": 200
+  }
+ ]
+}

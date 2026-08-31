@@ -1,0 +1,2752 @@
+{
+ "id": "m2-13",
+ "grade": "중2",
+ "name": "접속사 if·although·while",
+ "points": [
+  "조건·양보·대조",
+  "조건 부사절은 현재시제",
+  "접속사 뒤 S+V"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "____ you are hungry, you can eat this bread. (만약 배가 고프다면)",
+   "choices": [
+    "Although",
+    "So",
+    "While",
+    "Because",
+    "If"
+   ],
+   "answer": 5,
+   "why": "만약 ~라면(조건)은 if로 나타낸다. Although는 비록 ~이지만, While은 ~하는 동안·반면에, Because는 ~때문에라서 우리말 뜻과 맞지 않는다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "____ it was very cold, Mina wore no coat. (비록 매우 추웠지만)",
+   "choices": [
+    "If",
+    "While",
+    "Because",
+    "Although",
+    "When"
+   ],
+   "answer": 4,
+   "why": "비록 ~이지만(양보)은 although로 쓴다. Because를 쓰면 추워서 코트를 안 입었다는 뜻이 되어 어색하다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My sister likes cats, ____ I like dogs. (반면에)",
+   "choices": [
+    "or",
+    "if",
+    "because",
+    "so",
+    "while"
+   ],
+   "answer": 5,
+   "why": "두 가지를 견주어 ~인 반면에라고 할 때는 while을 쓴다. if는 조건, because는 이유라서 뜻이 통하지 않는다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "____ you don't hurry, you will miss the bus. (만약 서두르지 않으면)",
+   "choices": [
+    "Although",
+    "While",
+    "That",
+    "Because",
+    "If"
+   ],
+   "answer": 5,
+   "why": "조건을 나타내는 만약 ~하지 않으면은 if ~ not으로 쓴다. Although를 쓰면 뜻이 반대가 된다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Kevin played soccer ____ his leg hurt. (비록 다리가 아팠지만)",
+   "choices": [
+    "if",
+    "while",
+    "because",
+    "when",
+    "although"
+   ],
+   "answer": 5,
+   "why": "비록 ~이지만은 although이다. because를 쓰면 다리가 아파서 축구를 했다는 이상한 뜻이 된다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I read a book ____ my mom was cooking. (엄마가 요리하시는 동안)",
+   "choices": [
+    "if",
+    "while",
+    "although",
+    "because",
+    "so"
+   ],
+   "answer": 2,
+   "why": "~하는 동안이라는 시간의 뜻은 while로 나타낸다. if는 조건, although는 양보의 뜻이다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "____ the movie was boring, we watched it to the end. (비록 지루했지만)",
+   "choices": [
+    "Although",
+    "If",
+    "While",
+    "Since",
+    "So"
+   ],
+   "answer": 1,
+   "why": "앞뒤 내용이 반대이므로 양보의 although가 알맞다. Since는 ~때문에라는 뜻이라 우리말과 맞지 않는다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "____ you press this button, the light comes on. (만약 이 버튼을 누르면)",
+   "choices": [
+    "Although",
+    "While",
+    "Though",
+    "If",
+    "But"
+   ],
+   "answer": 4,
+   "why": "조건을 나타내므로 if가 알맞다. But은 접속사이지만 문장 맨 앞에서 절을 이끌어 조건을 나타내지 못한다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Tom is tall, ____ his brother is short. (반면에)",
+   "choices": [
+    "if",
+    "because",
+    "while",
+    "so",
+    "that"
+   ],
+   "answer": 3,
+   "why": "키가 큰 것과 작은 것을 대조하고 있으므로 ~인 반면에의 while이 알맞다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "____ she was tired, she finished her homework. (비록 피곤했지만)",
+   "choices": [
+    "If",
+    "While",
+    "Because",
+    "When",
+    "Though"
+   ],
+   "answer": 5,
+   "why": "though는 although와 같은 뜻으로 비록 ~이지만을 나타낸다. Because는 이유라서 뜻이 반대가 된다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Call me ____ you need help. (만약 도움이 필요하면)",
+   "choices": [
+    "although",
+    "though",
+    "while",
+    "if",
+    "but"
+   ],
+   "answer": 4,
+   "why": "조건의 만약 ~하면은 if이다. although·though는 비록 ~이지만이라 명령문의 조건으로 어울리지 않는다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "____ I was waiting for the bus, I met Jinho. (버스를 기다리는 동안)",
+   "choices": [
+    "While",
+    "If",
+    "Although",
+    "Because",
+    "So"
+   ],
+   "answer": 1,
+   "why": "~하는 동안은 while이다. 뒤에 <주어+동사>가 오므로 전치사가 아닌 접속사를 써야 한다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "If it ____ tomorrow, we will stay home.",
+   "choices": [
+    "will rain",
+    "rained",
+    "rains",
+    "would rain",
+    "raining"
+   ],
+   "answer": 3,
+   "why": "조건을 나타내는 if절에서는 미래의 일도 현재시제로 쓴다. 주어가 it이므로 rains가 알맞다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "If you ____ late, please call me.",
+   "choices": [
+    "are",
+    "will be",
+    "were",
+    "be",
+    "being"
+   ],
+   "answer": 1,
+   "why": "조건의 if절은 미래를 현재시제로 나타내므로 will be가 아니라 are를 쓴다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "We will go on a picnic if the weather ____ nice.",
+   "choices": [
+    "will be",
+    "being",
+    "was",
+    "be",
+    "is"
+   ],
+   "answer": 5,
+   "why": "주절은 미래(will go)이지만 조건의 if절은 현재시제로 쓴다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "If she ____ the bus, she will be here soon.",
+   "choices": [
+    "will take",
+    "took",
+    "take",
+    "takes",
+    "taking"
+   ],
+   "answer": 4,
+   "why": "조건절은 현재시제로 쓰고 주어가 3인칭 단수 she이므로 takes가 알맞다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I will help you if you ____ me.",
+   "choices": [
+    "will ask",
+    "asked",
+    "asking",
+    "to ask",
+    "ask"
+   ],
+   "answer": 5,
+   "why": "조건의 if절에서는 미래의 일도 현재시제로 쓰므로 ask가 알맞다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "If he ____ fast, he will win the race.",
+   "choices": [
+    "runs",
+    "will run",
+    "ran",
+    "run",
+    "running"
+   ],
+   "answer": 1,
+   "why": "if절은 현재시제로 쓰고 주어가 he이므로 runs가 알맞다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Wait here if I ____ back late.",
+   "choices": [
+    "will come",
+    "came",
+    "come",
+    "coming",
+    "to come"
+   ],
+   "answer": 3,
+   "why": "조건의 if절이므로 미래의 일이라도 현재시제 come을 쓴다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "If they ____ the game, they will be very happy.",
+   "choices": [
+    "will win",
+    "win",
+    "won",
+    "winning",
+    "to win"
+   ],
+   "answer": 2,
+   "why": "조건절은 현재시제로 쓰므로 win이 알맞다. 주절에만 will을 쓴다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 고르시오. (1)",
+   "choices": [
+    "If it will be cold, I will wear a coat.",
+    "Although he was tired, but he kept walking.",
+    "While the baby sleeping, we were quiet.",
+    "Although the heavy rain, the game went on.",
+    "If you are free, come to my house."
+   ],
+   "answer": 5,
+   "why": "조건의 if절은 현재시제로 쓰므로 ⑤가 옳다. ①은 will be→is, ②는 although와 but을 함께 쓸 수 없고, ③은 sleeping 앞에 was가 빠졌으며, ④는 접속사 뒤에 명사구만 왔다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것을 고르시오. (1)",
+   "choices": [
+    "If you are late, the teacher will be angry.",
+    "Although she was busy, she helped me.",
+    "While I was cooking, my phone rang.",
+    "If the bus will come late, we will walk.",
+    "Although the box was heavy, he lifted it."
+   ],
+   "answer": 4,
+   "why": "조건의 if절에서는 미래의 일도 현재시제로 쓰므로 will come을 comes로 고쳐야 한다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 고르시오. (2)",
+   "choices": [
+    "If you will need help, call me.",
+    "Although of the cold, we went out.",
+    "While my parents were out, I cleaned the house.",
+    "If it is rain tomorrow, we stay home.",
+    "Although he is young, but he is strong."
+   ],
+   "answer": 3,
+   "why": "③은 while 뒤에 <주어+동사>가 바르게 왔다. ①은 will need→need, ②는 although 뒤에 절이 필요하고, ④는 it rains로 써야 하며, ⑤는 but을 빼야 한다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것을 고르시오. (2)",
+   "choices": [
+    "If you eat too much, you will feel sick.",
+    "Although the test was hard, I did my best.",
+    "While Amy likes summer, her sister likes winter.",
+    "If I will see him, I will tell him the news.",
+    "Although it was late, the store was open."
+   ],
+   "answer": 4,
+   "why": "조건의 if절은 현재시제로 쓰므로 will see를 see로 고쳐야 한다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 고르시오. (3)",
+   "choices": [
+    "Although he tried hard, he failed the test.",
+    "If it will snow, we will go skiing.",
+    "While the concert, we were quiet.",
+    "Although she was sick, but she went to work.",
+    "If you will be ready, we will go."
+   ],
+   "answer": 1,
+   "why": "①은 although 뒤에 <주어+동사>가 바르게 왔다. ②·⑤는 if절을 현재시제로, ③은 while 뒤에 절을, ④는 but을 빼야 한다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것을 고르시오. (3)",
+   "choices": [
+    "While I was young, I lived in Busan.",
+    "If you don't wear a coat, you will catch a cold.",
+    "Although the food was cheap, it was delicious.",
+    "While Tom drinks coffee, his wife drinks tea.",
+    "Although he was late, but he said nothing."
+   ],
+   "answer": 5,
+   "why": "우리말의 비록 ~이지만 그러나에 이끌려 but을 함께 쓰면 안 된다. although가 이미 두 절을 이어 준다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 고르시오. (4)",
+   "choices": [
+    "If she will call me, I will answer.",
+    "Although the hot weather, we played soccer.",
+    "While my brother was sleeping, I did the dishes.",
+    "Although I am tired, but I will finish this.",
+    "If you will be hungry, eat this sandwich."
+   ],
+   "answer": 3,
+   "why": "③은 while 뒤에 <주어+동사>가 오고 시제도 알맞다. ①·⑤는 if절을 현재시제로, ②는 절로, ④는 but을 빼야 한다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것을 고르시오. (4)",
+   "choices": [
+    "If the shop is open, I will buy some milk.",
+    "Although his room is small, he likes it.",
+    "While Kate was in Paris, she visited a museum.",
+    "Although the noise, I could not sleep.",
+    "If you are kind to others, they will be kind to you."
+   ],
+   "answer": 4,
+   "why": "although는 접속사이므로 뒤에 <주어+동사>가 와야 한다. the noise 같은 명사구만 올 수 없다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오. — 만약 네가 열심히 공부하면, 너는 시험에 통과할 것이다.",
+   "choices": [
+    "If you will study hard, you will pass the test.",
+    "If you study hard, you will pass the test.",
+    "Although you study hard, you will pass the test.",
+    "If you study hard, you pass the test will.",
+    "If you studied hard, you will pass the test."
+   ],
+   "answer": 2,
+   "why": "조건의 if절은 현재시제, 주절은 will로 미래를 나타낸다. ③은 뜻이 달라지고 ⑤는 과거시제라 어색하다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오. — 비록 그는 어리지만, 그는 매우 똑똑하다.",
+   "choices": [
+    "Although he is young, but he is very smart.",
+    "If he is young, he is very smart.",
+    "Although he is young, he is very smart.",
+    "Although young he is, he is very smart.",
+    "Although he young is, he is very smart."
+   ],
+   "answer": 3,
+   "why": "although 뒤에는 <주어+동사>의 어순으로 쓰고, but을 함께 쓰지 않는다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오. — 내가 숙제를 하는 동안, 남동생은 게임을 했다.",
+   "choices": [
+    "While I was doing my homework, my brother played a game.",
+    "During I was doing my homework, my brother played a game.",
+    "While my homework, my brother played a game.",
+    "If I was doing my homework, my brother played a game.",
+    "While I was doing my homework, but my brother played a game."
+   ],
+   "answer": 1,
+   "why": "~하는 동안은 접속사 while이고 뒤에 절이 온다. During은 전치사라 뒤에 절이 올 수 없다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오. — 나는 축구를 좋아하는 반면, 내 친구는 야구를 좋아한다.",
+   "choices": [
+    "If I like soccer, my friend likes baseball.",
+    "While I like soccer, my friend likes baseball.",
+    "While I like soccer, but my friend likes baseball.",
+    "While like soccer I, my friend likes baseball.",
+    "During I like soccer, my friend likes baseball."
+   ],
+   "answer": 2,
+   "why": "대조의 ~인 반면에는 while이며, 접속사 뒤에는 <주어+동사>가 온다. but을 덧붙이지 않는다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오. — 만약 내일 비가 오면, 우리는 집에 있을 것이다.",
+   "choices": [
+    "If it will rain tomorrow, we will stay home.",
+    "If it rains tomorrow, we will stay home.",
+    "If it rain tomorrow, we will stay home.",
+    "If it is raining tomorrow, we stay home.",
+    "Although it rains tomorrow, we will stay home."
+   ],
+   "answer": 2,
+   "why": "조건의 if절은 미래의 일도 현재시제로 쓰고, 주어가 it이므로 rains가 알맞다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오. — 비록 그 가방은 비쌌지만, 그녀는 그것을 샀다.",
+   "choices": [
+    "While the bag expensive, she bought it.",
+    "If the bag was expensive, she bought it.",
+    "Although the expensive bag, she bought it.",
+    "Although the bag was expensive, but she bought it.",
+    "Although the bag was expensive, she bought it."
+   ],
+   "answer": 5,
+   "why": "양보의 although 뒤에 <주어+동사>를 쓰고 but을 함께 쓰지 않는다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것을 고르시오. (1) ____ you are ready, we will leave. (만약) (2) ____ it was cold, he wore shorts. (비록)",
+   "choices": [
+    "If – Although",
+    "Although – If",
+    "While – If",
+    "If – While",
+    "Although – While"
+   ],
+   "answer": 1,
+   "why": "(1)은 조건이므로 If, (2)는 앞뒤가 반대되는 내용이므로 Although가 알맞다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것을 고르시오. (1) ____ I was walking home, I saw a rainbow. (동안) (2) ____ you don't study, you will fail. (만약)",
+   "choices": [
+    "If – While",
+    "While – If",
+    "Although – If",
+    "While – Although",
+    "If – Although"
+   ],
+   "answer": 2,
+   "why": "(1)은 시간의 ~하는 동안이므로 While, (2)는 조건이므로 If가 알맞다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것을 고르시오. (1) If it ____ tomorrow, school will be closed. (2) Although he ____ tired, he smiled.",
+   "choices": [
+    "snows – was",
+    "will snow – was",
+    "snows – were",
+    "will snow – is",
+    "snow – was"
+   ],
+   "answer": 1,
+   "why": "조건의 if절은 현재시제 snows, although절의 주어 he에는 was가 알맞다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것을 고르시오. (1) ____ my sister likes math, I like art. (반면에) (2) ____ the movie was long, I enjoyed it. (비록)",
+   "choices": [
+    "While – Although",
+    "Although – While",
+    "If – Although",
+    "While – If",
+    "Although – If"
+   ],
+   "answer": 1,
+   "why": "(1)은 대조이므로 While, (2)는 양보이므로 Although가 알맞다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것을 고르시오. (1) I will call you if I ____ time. (2) ____ she is only ten, she cooks well.",
+   "choices": [
+    "have – Although",
+    "will have – Although",
+    "have – If",
+    "will have – If",
+    "having – While"
+   ],
+   "answer": 1,
+   "why": "조건의 if절은 현재시제 have를 쓰고, 열 살인데도 요리를 잘한다는 양보의 뜻이므로 Although가 알맞다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것을 고르시오. (1) ____ we were at the beach, it started to rain. (동안) (2) ____ you press the red button, the door opens. (만약)",
+   "choices": [
+    "If – While",
+    "If – Although",
+    "Although – If",
+    "While – Although",
+    "While – If"
+   ],
+   "answer": 5,
+   "why": "(1)은 ~하는 동안이므로 While, (2)는 조건이므로 If가 알맞다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장에서 밑줄 친 부분 중 어법상 틀린 것을 고르시오. — <u>If</u> it <u>will be</u> hot <u>tomorrow</u>, we <u>will go</u> to the <u>pool</u>.",
+   "choices": [
+    "If",
+    "pool",
+    "tomorrow",
+    "will go",
+    "will be"
+   ],
+   "answer": 5,
+   "why": "조건의 if절은 미래의 일도 현재시제로 쓰므로 will be를 is로 고쳐야 한다. 주절의 will go는 옳다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장에서 밑줄 친 부분 중 어법상 틀린 것을 고르시오. — <u>Although</u> he <u>was</u> sick, <u>but</u> he <u>came</u> to <u>school</u>.",
+   "choices": [
+    "Although",
+    "was",
+    "came",
+    "but",
+    "school"
+   ],
+   "answer": 4,
+   "why": "although가 이미 두 절을 연결하므로 but을 함께 쓸 수 없다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장에서 밑줄 친 부분 중 어법상 틀린 것을 고르시오. — <u>During</u> I <u>was</u> in London, I <u>visited</u> <u>many</u> <u>museums</u>.",
+   "choices": [
+    "During",
+    "was",
+    "visited",
+    "many",
+    "museums"
+   ],
+   "answer": 1,
+   "why": "뒤에 <주어+동사>가 오므로 전치사 During이 아니라 접속사 While을 써야 한다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장에서 밑줄 친 부분 중 어법상 틀린 것을 고르시오. — <u>If</u> you <u>will need</u> help, <u>please</u> <u>tell</u> <u>me</u>.",
+   "choices": [
+    "If",
+    "tell",
+    "please",
+    "will need",
+    "me"
+   ],
+   "answer": 4,
+   "why": "조건의 if절에서는 현재시제를 쓰므로 will need를 need로 고쳐야 한다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것을 고르시오. — If you don't hurry, you will miss the train. = ____ you hurry, you will miss the train.",
+   "choices": [
+    "If",
+    "Although",
+    "Unless",
+    "While",
+    "Because"
+   ],
+   "answer": 3,
+   "why": "unless는 if ~ not과 같은 뜻이므로 뒤에 부정어를 다시 쓰지 않는다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것을 고르시오. — Although she was tired, she kept working. = ____ she was tired, she kept working.",
+   "choices": [
+    "If",
+    "Even though",
+    "Unless",
+    "Because",
+    "So"
+   ],
+   "answer": 2,
+   "why": "even though는 although와 같은 양보의 뜻이다. Because를 쓰면 이유가 되어 뜻이 달라진다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것을 고르시오. — Unless you wear a helmet, you can't ride the bike. = If you ____ wear a helmet, you can't ride the bike.",
+   "choices": [
+    "don't",
+    "do",
+    "will not",
+    "aren't",
+    "not"
+   ],
+   "answer": 1,
+   "why": "unless는 if ~ not과 같으므로 일반동사 wear 앞에 don't를 쓴다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것을 고르시오. — Though it was raining, they played soccer. = ____ it was raining, they played soccer.",
+   "choices": [
+    "If",
+    "Unless",
+    "So",
+    "Because",
+    "Although"
+   ],
+   "answer": 5,
+   "why": "though와 although는 같은 뜻의 양보 접속사이다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 접속사를 한 단어로 쓰시오. (만약 ~라면) — ____ you are sick, stay in bed.",
+   "answer": "If",
+   "alt": [
+    "if"
+   ],
+   "why": "조건의 만약 ~라면은 접속사 if로 나타내며, 문장 맨 앞이므로 첫 글자를 대문자로 쓴다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 접속사를 쓰시오. (비록 ~이지만) — ____ it was late, Dad was still working.",
+   "answer": "Although",
+   "alt": [
+    "although",
+    "Though",
+    "though",
+    "Even though",
+    "even though"
+   ],
+   "why": "앞뒤 내용이 반대이므로 양보의 although(=though, even though)를 쓴다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 접속사를 한 단어로 쓰시오. (~하는 동안) — ____ we were eating lunch, the bell rang.",
+   "answer": "While",
+   "alt": [
+    "while"
+   ],
+   "why": "~하는 동안이라는 시간의 뜻은 접속사 while로 나타낸다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 접속사를 한 단어로 쓰시오. (반면에) — Ted is quiet, ____ his brother is noisy.",
+   "answer": "while",
+   "alt": [
+    "While"
+   ],
+   "why": "두 사람을 견주는 대조의 ~인 반면에는 while로 쓴다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. — If it (rain) ____ tomorrow, the picnic will be canceled.",
+   "answer": "rains",
+   "alt": [],
+   "why": "조건의 if절에서는 미래의 일도 현재시제로 쓰고, 주어가 it이므로 rains가 된다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. — If you (be) ____ hungry, there is some pizza in the kitchen.",
+   "answer": "are",
+   "alt": [],
+   "why": "조건의 if절은 현재시제로 쓰고 주어가 you이므로 are가 알맞다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. — I will wait here if you (want) ____ me to.",
+   "answer": "want",
+   "alt": [],
+   "why": "주절은 미래이지만 조건의 if절은 현재시제로 쓴다. 주어가 you이므로 want이다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. — If the store (close) ____ at nine, we should hurry.",
+   "answer": "closes",
+   "alt": [],
+   "why": "조건절은 현재시제로 쓰며 주어가 3인칭 단수 the store이므로 closes가 된다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. — We will go camping if the weather (be) ____ good this weekend.",
+   "answer": "is",
+   "alt": [],
+   "why": "조건의 if절에서는 미래를 현재시제로 나타내므로 will be가 아니라 is를 쓴다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. — If Mina (finish) ____ her homework early, she will watch a movie.",
+   "answer": "finishes",
+   "alt": [],
+   "why": "조건절은 현재시제이고 주어가 Mina이므로 finishes가 알맞다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 두 단어 이내로 고쳐 쓰시오. — If it <u>will snow</u> tonight, the roads will be dangerous.",
+   "answer": "snows",
+   "alt": [],
+   "why": "조건의 if절에서는 미래의 일도 현재시제로 쓰므로 will snow를 snows로 고친다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. — <u>During</u> I was in Jeju, I ate a lot of oranges.",
+   "answer": "While",
+   "alt": [
+    "while"
+   ],
+   "why": "뒤에 <주어+동사>가 오므로 전치사 During 대신 접속사 While을 써야 한다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 불필요한 한 단어를 찾아 쓰시오. — Although the room was dark, but I found my phone.",
+   "answer": "but",
+   "alt": [
+    "But"
+   ],
+   "why": "although가 이미 두 절을 이어 주므로 but을 함께 쓸 수 없다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. — If you <u>will come</u> early, we will have more time.",
+   "answer": "come",
+   "alt": [],
+   "why": "조건의 if절은 현재시제로 쓰므로 will come을 come으로 고친다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 unless로 시작하는 문장으로 바꿔 쓰시오. — If you don't water the plant, it will die. →",
+   "answer": "Unless you water the plant, it will die.",
+   "alt": [
+    "Unless you water the plant, it will die"
+   ],
+   "why": "unless는 if ~ not과 같은 뜻이므로 부정어 don't를 없애고 동사를 그대로 쓴다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 if를 사용한 문장으로 바꿔 쓰시오. — Unless you leave now, you will be late. →",
+   "answer": "If you don't leave now, you will be late.",
+   "alt": [
+    "If you do not leave now, you will be late.",
+    "If you don't leave now, you will be late",
+    "If you do not leave now, you will be late"
+   ],
+   "why": "unless = if ~ not이므로 leave 앞에 don't를 넣는다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장을 Although로 시작하는 한 문장으로 바꿔 쓰시오. — He was very busy. + He answered my call. →",
+   "answer": "Although he was very busy, he answered my call.",
+   "alt": [
+    "Although he was very busy, he answered my call"
+   ],
+   "why": "양보의 although 뒤에 <주어+동사>를 쓰고, 두 절 사이에 but을 넣지 않는다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장을 While로 시작하는 한 문장으로 바꿔 쓰시오. — I was taking a shower. + Someone knocked on the door. →",
+   "answer": "While I was taking a shower, someone knocked on the door.",
+   "alt": [
+    "While I was taking a shower, someone knocked on the door"
+   ],
+   "why": "~하는 동안은 while로 나타내며 접속사 뒤에는 <주어+동사>가 온다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장을 If로 시작하는 한 문장으로 바꿔 쓰시오. — You are tired. + You can rest here. →",
+   "answer": "If you are tired, you can rest here.",
+   "alt": [
+    "If you are tired, you can rest here"
+   ],
+   "why": "조건의 if절을 앞에 두고 콤마로 주절과 이어 준다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장의 Although를 Though로 바꿔 문장 전체를 다시 쓰시오. — Although the soup was hot, I ate it quickly. →",
+   "answer": "Though the soup was hot, I ate it quickly.",
+   "alt": [
+    "Though the soup was hot, I ate it quickly"
+   ],
+   "why": "though는 although와 같은 뜻의 양보 접속사이므로 나머지는 그대로 쓴다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "____ the restaurant was crowded, we didn't have to wait long. (비록 ~이지만)",
+   "choices": [
+    "If",
+    "While",
+    "Since",
+    "Because",
+    "Although"
+   ],
+   "answer": 5,
+   "why": "붐볐지만 오래 기다리지 않았다는 반대 내용이므로 양보의 Although가 알맞다. Because나 Since를 쓰면 이유가 되어 뜻이 통하지 않는다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "____ you leave your bike here, someone may take it. (만약 ~하면)",
+   "choices": [
+    "Although",
+    "If",
+    "While",
+    "Though",
+    "After"
+   ],
+   "answer": 2,
+   "why": "자전거를 두면 누가 가져갈 수도 있다는 조건이므로 If가 알맞다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "____ my father drinks black coffee, my mother prefers green tea. (반면에)",
+   "choices": [
+    "If",
+    "When",
+    "Because",
+    "Unless",
+    "While"
+   ],
+   "answer": 5,
+   "why": "두 사람의 취향을 대조하고 있으므로 ~인 반면에의 While이 알맞다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Jenny kept smiling ____ she lost the match. (비록 ~했지만)",
+   "choices": [
+    "if",
+    "because",
+    "so",
+    "although",
+    "unless"
+   ],
+   "answer": 4,
+   "why": "경기에 졌지만 계속 웃었다는 반대 내용이므로 양보의 although가 알맞다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "____ the students were taking the test, the teacher walked around the classroom. (~하는 동안)",
+   "choices": [
+    "If",
+    "Although",
+    "Because",
+    "Unless",
+    "While"
+   ],
+   "answer": 5,
+   "why": "두 가지 일이 같은 시간에 일어나고 있으므로 시간의 While이 알맞다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "You will not get better ____ you take this medicine. (만약 ~하지 않으면)",
+   "choices": [
+    "if",
+    "although",
+    "while",
+    "unless",
+    "because"
+   ],
+   "answer": 4,
+   "why": "unless는 if ~ not과 같은 뜻으로 만약 ~하지 않으면을 나타낸다. if를 쓰면 뜻이 반대가 된다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "____ the price is high, the quality of this jacket is poor. (비록 ~이지만)",
+   "choices": [
+    "While",
+    "If",
+    "Because",
+    "Although",
+    "Unless"
+   ],
+   "answer": 4,
+   "why": "가격은 비싸지만 품질은 나쁘다는 반대 내용이므로 Although가 알맞다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "I will send you a message ____ I arrive at the airport. (만약 도착하면)",
+   "choices": [
+    "although",
+    "if",
+    "while",
+    "unless",
+    "though"
+   ],
+   "answer": 2,
+   "why": "조건을 나타내므로 if가 알맞다. unless를 쓰면 도착하지 않으면이라는 반대 뜻이 된다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "____ Ben spent an hour on the problem, he could not solve it. (비록 ~했지만)",
+   "choices": [
+    "If",
+    "Unless",
+    "So",
+    "Because",
+    "Although"
+   ],
+   "answer": 5,
+   "why": "한 시간을 썼는데도 못 풀었다는 반대 내용이므로 양보의 Although가 알맞다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "____ my grandmother was cutting the vegetables, I washed the rice. (~하는 동안)",
+   "choices": [
+    "If",
+    "Because",
+    "Although",
+    "Unless",
+    "While"
+   ],
+   "answer": 5,
+   "why": "두 동작이 동시에 일어나므로 시간의 While이 알맞다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 while의 의미가 나머지 넷과 다른 것을 고르시오.",
+   "choices": [
+    "<u>While</u> I was cleaning my room, I found an old photo.",
+    "The phone rang <u>while</u> we were having dinner.",
+    "<u>While</u> my brother enjoys action movies, I prefer comedies.",
+    "She listened to music <u>while</u> she was jogging.",
+    "<u>While</u> Dad was washing the dishes, Mom read a book."
+   ],
+   "answer": 3,
+   "why": "③은 형과 나의 취향을 견주는 대조(~인 반면에)이고, 나머지는 모두 ~하는 동안이라는 시간의 뜻이다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 While의 의미가 나머지 넷과 다른 것을 고르시오.",
+   "choices": [
+    "<u>While</u> Seoul is crowded, my hometown is quiet.",
+    "<u>While</u> some people love winter, others hate it.",
+    "<u>While</u> I was watching the movie, I fell asleep.",
+    "<u>While</u> the first plan was cheap, the second one was fast.",
+    "<u>While</u> my sister is talkative, I am shy."
+   ],
+   "answer": 3,
+   "why": "③만 ~하는 동안이라는 시간의 뜻이고, 나머지는 모두 두 대상을 견주는 대조의 뜻이다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 들어갈 말이 나머지 넷과 다른 것을 고르시오.",
+   "choices": [
+    "____ you need a pen, I can lend you one.",
+    "____ it rains this evening, the game will be canceled.",
+    "____ the box looked heavy, it was quite light.",
+    "____ you touch this wire, you will get a shock.",
+    "____ she calls me tonight, I will tell her the truth."
+   ],
+   "answer": 3,
+   "why": "③은 무거워 보였는데도 가벼웠다는 반대 내용이므로 Although가 알맞고, 나머지는 모두 조건의 If가 들어간다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 공통으로 들어갈 말로 알맞은 것을 고르시오. — ____ he is only six, he can read well. / ____ the shoes were dirty, they still looked new.",
+   "choices": [
+    "If",
+    "Although",
+    "Because",
+    "Unless",
+    "During"
+   ],
+   "answer": 2,
+   "why": "두 문장 모두 앞뒤 내용이 반대되는 양보의 뜻이므로 Although가 공통으로 들어간다. During은 전치사라서 뒤에 절이 올 수 없다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "If the train ____ on time, we will get to Busan before lunch.",
+   "choices": [
+    "will leave",
+    "leaves",
+    "left",
+    "is leave",
+    "would leave"
+   ],
+   "answer": 2,
+   "why": "조건의 if절에서는 미래의 일도 현재시제로 쓰므로 leaves가 알맞다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "I will look after your cat while you ____ away next week.",
+   "choices": [
+    "will be",
+    "are",
+    "were",
+    "be",
+    "will have been"
+   ],
+   "answer": 2,
+   "why": "while이 이끄는 시간의 부사절에서도 미래의 일을 현재시제로 나타낸다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Unless the weather ____ better, the school trip will be put off.",
+   "choices": [
+    "will get",
+    "gets",
+    "got",
+    "getting",
+    "will be got"
+   ],
+   "answer": 2,
+   "why": "unless가 이끄는 조건절도 미래의 일을 현재시제로 쓰며, 주어가 3인칭 단수이므로 gets가 알맞다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Although the museum ____ free last Sunday, only a few people visited it.",
+   "choices": [
+    "is",
+    "will be",
+    "be",
+    "was",
+    "were"
+   ],
+   "answer": 4,
+   "why": "last Sunday라는 과거를 나타내는 말이 있으므로 was가 알맞다. although절은 조건절이 아니므로 시제를 그대로 쓴다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "If you ____ your password, you can reset it on this page.",
+   "choices": [
+    "will forget",
+    "will have forgotten",
+    "forgot",
+    "are forget",
+    "forget"
+   ],
+   "answer": 5,
+   "why": "조건의 if절은 현재시제로 쓰므로 forget이 알맞다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "I will wait outside while the doctor ____ my brother tomorrow morning.",
+   "choices": [
+    "will examine",
+    "examines",
+    "examined",
+    "examining",
+    "will be examined"
+   ],
+   "answer": 2,
+   "why": "시간을 나타내는 while절에서는 미래의 일도 현재시제로 쓰므로 examines가 알맞다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것을 고르시오. — If you don't turn off the light, the baby will not sleep. = ____ the light, the baby will not sleep.",
+   "choices": [
+    "Unless you turn off",
+    "Unless you don't turn off",
+    "If you turn off",
+    "Although you turn off",
+    "While you turn off"
+   ],
+   "answer": 1,
+   "why": "unless 자체가 부정의 뜻을 담고 있으므로 뒤에 don't를 다시 쓰지 않는다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것을 고르시오. — Unless you save the file, your work will be lost. = ____ the file, your work will be lost.",
+   "choices": [
+    "If you save",
+    "Unless you don't save",
+    "Although you save",
+    "While you save",
+    "If you don't save"
+   ],
+   "answer": 5,
+   "why": "unless = if ~ not이므로 save 앞에 don't를 넣어야 같은 뜻이 된다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분과 바꿔 쓸 수 있는 것을 고르시오. — <u>Unless</u> you hurry, you will be late for class.",
+   "choices": [
+    "If you don't hurry",
+    "If you hurry",
+    "Although you hurry",
+    "While you hurry",
+    "Because you hurry"
+   ],
+   "answer": 1,
+   "why": "unless는 if ~ not과 같은 뜻이다. 나머지는 조건이 반대이거나 뜻이 달라진다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분과 바꿔 쓸 수 있는 것을 고르시오. — <u>Although</u> the road was wet, the bus did not slow down.",
+   "choices": [
+    "If",
+    "Unless",
+    "Even though",
+    "Because",
+    "So that"
+   ],
+   "answer": 3,
+   "why": "even though는 although와 같은 양보의 접속사이다. Because를 쓰면 이유가 되어 뜻이 달라진다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 고르시오. (5)",
+   "choices": [
+    "If the museum will open at ten, we will meet at nine.",
+    "Although her long speech, everyone listened carefully.",
+    "While Mike was fixing the bike, his sister held the light.",
+    "Unless you don't leave now, you will miss the flight.",
+    "Although the coffee was bitter, but he drank it all."
+   ],
+   "answer": 3,
+   "why": "③은 while 뒤에 <주어+동사>가 오고 시제도 알맞다. ①은 opens로, ②는 절로, ④는 부정 중복을 없애고, ⑤는 but을 빼야 한다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것을 고르시오. (5)",
+   "choices": [
+    "If you press this key, the screen turns off.",
+    "Although the shirt was cheap, it looked nice.",
+    "While my cousin lives in Daegu, I live in Incheon.",
+    "Unless it stops raining, we will stay inside.",
+    "If the show will start late, we will have time for dinner."
+   ],
+   "answer": 5,
+   "why": "조건의 if절에서는 미래의 일도 현재시제로 쓰므로 will start를 starts로 고쳐야 한다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 고르시오. (6)",
+   "choices": [
+    "While the loud noise, I could not focus on my work.",
+    "If you will finish early, please help Kevin.",
+    "Although he practiced every day, he did not make the team.",
+    "Unless you are not careful, you will break the glass.",
+    "Although the news was surprising, but nobody said a word."
+   ],
+   "answer": 3,
+   "why": "③은 although 뒤에 <주어+동사>가 오고 앞뒤 내용도 반대이다. ①은 접속사 뒤에 절이 필요하고, ②는 finish로, ④는 부정 중복을, ⑤는 but을 없애야 한다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것을 고르시오. (6)",
+   "choices": [
+    "While Sujin was drawing, her brother was singing.",
+    "Although the test was easy, some students failed it.",
+    "If the bus comes late, we will take a taxi.",
+    "Unless you don't wear a mask, you can't enter the hospital.",
+    "While Japan is famous for sushi, Italy is famous for pasta."
+   ],
+   "answer": 4,
+   "why": "unless에 이미 부정의 뜻이 있으므로 don't를 함께 쓸 수 없다. Unless you wear a mask로 고쳐야 한다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 고르시오. (7)",
+   "choices": [
+    "I will call you if I will get home safely.",
+    "Although of his poor health, he finished the race.",
+    "While I like quiet places, my friend likes busy streets.",
+    "Unless you will study, you will not pass.",
+    "Although the door was open, but nobody went in."
+   ],
+   "answer": 3,
+   "why": "③은 두 사람의 취향을 견주는 대조의 while이 바르게 쓰였다. ①·④는 조건절을 현재시제로, ②는 뒤에 절을, ⑤는 but을 빼야 한다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것을 고르시오. (7)",
+   "choices": [
+    "If you leave now, you will catch the last train.",
+    "Although she is my sister, we look very different.",
+    "While I was cooking dinner, the lights went out.",
+    "If it will be windy tomorrow, we will not fly the kite.",
+    "Unless you ask him, he will not tell you anything."
+   ],
+   "answer": 4,
+   "why": "조건의 if절은 미래를 현재시제로 나타내므로 will be를 is로 고쳐야 한다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 고르시오. (8)",
+   "choices": [
+    "Unless the rain stops, the concert will be held indoors.",
+    "If he will apologize, I will forgive him.",
+    "Although the strong wind, the trees did not fall.",
+    "During the movie was playing, we ate popcorn.",
+    "Although Emma was late, but she got a good seat."
+   ],
+   "answer": 1,
+   "why": "①은 unless가 이끄는 조건절이 현재시제로 바르게 쓰였다. ②는 apologizes로, ③은 뒤에 절을 두고, ④는 During을 접속사 While로 고쳐야 하며, ⑤는 but을 빼야 한다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것을 고르시오. (8)",
+   "choices": [
+    "While Tom was in the library, he read three books.",
+    "Although my bag was heavy, I carried it home.",
+    "If the door is locked, use this key.",
+    "While the movie was long, but it was exciting.",
+    "Unless you hurry, you will miss the beginning."
+   ],
+   "answer": 4,
+   "why": "while이 이미 두 절을 이어 주므로 but을 함께 쓸 수 없다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오. — 만약 네가 그 버튼을 누르지 않으면, 문은 열리지 않을 것이다.",
+   "choices": [
+    "Unless you don't press the button, the door will not open.",
+    "If you press the button, the door will not open.",
+    "Unless you press the button, the door will not open.",
+    "Although you press the button, the door will not open.",
+    "Unless you will press the button, the door will not open."
+   ],
+   "answer": 3,
+   "why": "unless는 if ~ not의 뜻이므로 부정어를 다시 쓰지 않고, 조건절이므로 현재시제로 쓴다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오. — 비록 그 문제는 어려웠지만, 그녀는 혼자 힘으로 그것을 풀었다.",
+   "choices": [
+    "Although the problem was difficult, but she solved it by herself.",
+    "Although the difficult problem, she solved it by herself.",
+    "If the problem was difficult, she solved it by herself.",
+    "Although the problem was difficult, she solved it by herself.",
+    "While the problem difficult was, she solved it by herself."
+   ],
+   "answer": 4,
+   "why": "although 뒤에 <주어+동사>를 쓰고 but을 함께 쓰지 않는다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오. — 내가 설거지를 하는 동안, 아빠는 거실을 청소하셨다.",
+   "choices": [
+    "During I was doing the dishes, Dad cleaned the living room.",
+    "If I was doing the dishes, Dad cleaned the living room.",
+    "While the dishes, Dad cleaned the living room.",
+    "While I was doing the dishes, Dad cleaned the living room.",
+    "While was I doing the dishes, Dad cleaned the living room."
+   ],
+   "answer": 4,
+   "why": "뒤에 <주어+동사>가 오므로 전치사 During이 아니라 접속사 While을 쓰고 어순도 그대로 둔다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오. — 만약 내일 눈이 많이 오면, 학교는 문을 닫을 것이다.",
+   "choices": [
+    "If it will snow a lot tomorrow, the school will close.",
+    "If it snows a lot tomorrow, the school will close.",
+    "If it snow a lot tomorrow, the school will close.",
+    "Unless it snows a lot tomorrow, the school will close.",
+    "Although it snows a lot tomorrow, the school will close."
+   ],
+   "answer": 2,
+   "why": "조건의 if절은 미래를 현재시제로 나타내며 주어가 it이므로 snows가 알맞다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오. — 우리 언니는 아침형인 반면, 나는 밤에 더 잘 집중한다.",
+   "choices": [
+    "While my sister is a morning person, I focus better at night.",
+    "During my sister is a morning person, I focus better at night.",
+    "While my sister a morning person, I focus better at night.",
+    "If my sister is a morning person, I focus better at night.",
+    "While my sister is a morning person, but I focus better at night."
+   ],
+   "answer": 1,
+   "why": "대조를 나타내는 while 뒤에 <주어+동사>를 쓰고 but을 덧붙이지 않는다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것을 고르시오. — (1) ____ you feel sick, you should see a doctor. (만약) (2) ____ the soup was salty, everyone finished it. (비록)",
+   "choices": [
+    "If – Although",
+    "Although – If",
+    "While – Although",
+    "If – While",
+    "Unless – Although"
+   ],
+   "answer": 1,
+   "why": "(1)은 조건, (2)는 짜다는데도 다 먹었다는 양보의 뜻이다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것을 고르시오. — (1) ____ Paul was living in Canada, he learned French. (2) ____ the ticket was expensive, the concert was worth it.",
+   "choices": [
+    "While – Although",
+    "If – Although",
+    "Although – While",
+    "While – If",
+    "Unless – Although"
+   ],
+   "answer": 1,
+   "why": "(1)은 캐나다에 사는 동안이라는 시간의 While, (2)는 비쌌지만 값어치를 했다는 양보의 Although가 알맞다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것을 고르시오. — (1) If the store ____ open, I will buy some bread. (2) While Anna ____ the piano, her dog was sleeping.",
+   "choices": [
+    "is – was playing",
+    "will be – was playing",
+    "is – plays",
+    "will be – played",
+    "was – is playing"
+   ],
+   "answer": 1,
+   "why": "(1)은 조건절이므로 현재시제 is, (2)는 과거의 동시 상황이므로 was playing이 알맞다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것을 고르시오. — (1) ____ you take the subway, you will not be late. (만약) (2) ____ my room is small, my brother's room is big. (반면에)",
+   "choices": [
+    "If – While",
+    "While – If",
+    "Unless – While",
+    "If – Unless",
+    "Although – While"
+   ],
+   "answer": 1,
+   "why": "(1)은 조건의 If, (2)는 두 방을 견주는 대조의 While이 알맞다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것을 고르시오. — (1) ____ you water it often, this plant will die. (물을 자주 주지 않으면) (2) ____ the shop was closed, the lights were on. (비록)",
+   "choices": [
+    "Unless – Although",
+    "If – Although",
+    "Unless – If",
+    "If – While",
+    "Although – Unless"
+   ],
+   "answer": 1,
+   "why": "(1)은 물을 자주 주지 않으면 죽는다는 뜻이므로 Unless, (2)는 닫혔는데도 불이 켜져 있었다는 양보의 Although가 알맞다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장에서 밑줄 친 부분 중 어법상 틀린 것을 고르시오. — <u>Although</u> the <u>homework</u> <u>was</u> hard, <u>but</u> Mina <u>finished</u> it before dinner.",
+   "choices": [
+    "Although",
+    "homework",
+    "was",
+    "but",
+    "finished"
+   ],
+   "answer": 4,
+   "why": "although가 두 절을 이미 연결하므로 but을 함께 쓸 수 없다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장에서 밑줄 친 부분 중 어법상 틀린 것을 고르시오. — <u>Unless</u> you <u>don't bring</u> your ticket, you <u>will not</u> <u>be able</u> to <u>enter</u> the hall.",
+   "choices": [
+    "Unless",
+    "be able",
+    "will not",
+    "don't bring",
+    "enter"
+   ],
+   "answer": 4,
+   "why": "unless에 이미 부정의 뜻이 있으므로 don't bring을 bring으로 고쳐야 한다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장에서 밑줄 친 부분 중 어법상 틀린 것을 고르시오. — <u>While</u> my <u>parents</u> <u>will be</u> in Jeju next week, I <u>will stay</u> at my <u>aunt's</u> house.",
+   "choices": [
+    "While",
+    "parents",
+    "will be",
+    "will stay",
+    "aunt's"
+   ],
+   "answer": 3,
+   "why": "시간을 나타내는 while절에서는 미래의 일도 현재시제로 쓰므로 will be를 are로 고쳐야 한다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장에서 밑줄 친 부분 중 어법상 틀린 것을 고르시오. — <u>During</u> the <u>teacher</u> <u>was</u> explaining the rule, the students <u>took</u> <u>notes</u>.",
+   "choices": [
+    "During",
+    "teacher",
+    "was",
+    "took",
+    "notes"
+   ],
+   "answer": 1,
+   "why": "뒤에 <주어+동사>가 이어지므로 전치사 During이 아니라 접속사 While을 써야 한다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 접속사를 한 단어로 쓰시오. (~인 반면에) — ____ my brother spends all his money, I save half of it.",
+   "answer": "While",
+   "alt": [
+    "while"
+   ],
+   "why": "두 사람의 행동을 견주는 대조이므로 While을 쓴다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 접속사를 한 단어로 쓰시오. (만약 ~하지 않으면, 부정어 없이) — ____ you write your name on the paper, the teacher will not accept it.",
+   "answer": "Unless",
+   "alt": [
+    "unless"
+   ],
+   "why": "unless는 if ~ not과 같은 뜻이어서 뒤에 부정어를 쓰지 않고도 만약 ~하지 않으면을 나타낸다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 접속사를 한 단어로 쓰시오. — ____ the room was very cold, nobody complained. / ____ he ran fast, he could not catch the thief.",
+   "answer": "Although",
+   "alt": [
+    "although",
+    "Though",
+    "though"
+   ],
+   "why": "두 문장 모두 앞뒤 내용이 반대되는 양보의 뜻이므로 Although(=Though)가 공통으로 들어간다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. — If the museum (be) ____ closed tomorrow, we will go to the park instead.",
+   "answer": "is",
+   "alt": [],
+   "why": "조건의 if절에서는 미래의 일도 현재시제로 쓰므로 is가 알맞다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. — I will water your plants while you (be) ____ on vacation next month.",
+   "answer": "are",
+   "alt": [],
+   "why": "시간을 나타내는 while절에서도 미래의 일을 현재시제로 쓴다. 주어가 you이므로 are이다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. — Unless the noise (stop) ____ soon, I will call the manager.",
+   "answer": "stops",
+   "alt": [],
+   "why": "unless가 이끄는 조건절도 현재시제로 쓰고, 주어가 3인칭 단수이므로 stops가 된다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. — Although the concert (start) ____ an hour late yesterday, the fans waited quietly.",
+   "answer": "started",
+   "alt": [],
+   "why": "yesterday가 있으므로 과거시제 started를 쓴다. although절은 조건절이 아니어서 시제를 그대로 쓴다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. — If Daniel (miss) ____ the last bus tonight, he will walk home.",
+   "answer": "misses",
+   "alt": [],
+   "why": "조건의 if절은 현재시제로 쓰고 주어가 Daniel이므로 misses가 알맞다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. — Unless you <u>don't put</u> on sunscreen, your skin will burn.",
+   "answer": "put",
+   "alt": [],
+   "why": "unless에 이미 부정의 뜻이 있으므로 don't를 빼고 put만 쓴다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. — <u>During</u> the actors were practicing, the director watched them closely.",
+   "answer": "While",
+   "alt": [
+    "while"
+   ],
+   "why": "뒤에 <주어+동사>가 오므로 전치사 During 대신 접속사 While을 써야 한다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 두 단어 이내로 고쳐 쓰시오. — If the weather <u>will be</u> clear this Saturday, we will climb the mountain.",
+   "answer": "is",
+   "alt": [],
+   "why": "조건의 if절에서는 미래를 현재시제로 나타내므로 will be를 is로 고친다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 불필요한 한 단어를 찾아 쓰시오. — While the story was sad, but the ending made me smile.",
+   "answer": "but",
+   "alt": [
+    "But"
+   ],
+   "why": "while이 이미 두 절을 이어 주므로 but을 함께 쓸 수 없다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 Unless로 시작하는 문장으로 바꿔 쓰시오. — If you don't wear a helmet, you can't ride this scooter. →",
+   "answer": "Unless you wear a helmet, you can't ride this scooter.",
+   "alt": [
+    "Unless you wear a helmet, you can't ride this scooter",
+    "Unless you wear a helmet, you cannot ride this scooter."
+   ],
+   "why": "unless = if ~ not이므로 don't를 없애고 동사 wear를 그대로 쓴다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 If로 시작하는 문장으로 바꿔 쓰시오. — Unless you finish your report today, you will work all weekend. →",
+   "answer": "If you don't finish your report today, you will work all weekend.",
+   "alt": [
+    "If you do not finish your report today, you will work all weekend.",
+    "If you don't finish your report today, you will work all weekend"
+   ],
+   "why": "unless는 if ~ not과 같으므로 finish 앞에 don't를 넣는다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장의 Although를 Even though로 바꿔 문장 전체를 다시 쓰시오. — Although the shop opened at six, no customers came in. →",
+   "answer": "Even though the shop opened at six, no customers came in.",
+   "alt": [
+    "Even though the shop opened at six, no customers came in"
+   ],
+   "why": "even though는 although와 같은 양보의 접속사이므로 나머지 부분은 그대로 쓴다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 Although로 시작하는 한 문장으로 바꿔 쓰시오. — The road was covered with snow. + The bus arrived on time. →",
+   "answer": "Although the road was covered with snow, the bus arrived on time.",
+   "alt": [
+    "Although the road was covered with snow, the bus arrived on time"
+   ],
+   "why": "앞뒤 내용이 반대이므로 양보의 although로 연결하고 but은 쓰지 않는다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 While로 시작하는 한 문장으로 바꿔 쓰시오. (대조의 뜻으로) — My hometown is quiet. + This city is noisy. →",
+   "answer": "While my hometown is quiet, this city is noisy.",
+   "alt": [
+    "While my hometown is quiet, this city is noisy"
+   ],
+   "why": "두 곳을 견주는 대조이므로 While ~, ~의 형태로 쓴다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 If로 시작하는 한 문장으로 바꿔 쓰시오. (시제에 주의할 것) — You will press this key. + The file will be saved. →",
+   "answer": "If you press this key, the file will be saved.",
+   "alt": [
+    "If you press this key, the file will be saved"
+   ],
+   "why": "조건의 if절에서는 미래의 일도 현재시제로 쓰므로 will press를 press로 바꾼다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 대화의 빈칸에 알맞은 접속사를 한 단어로 쓰시오. — A: Why didn't you buy that jacket? B: ____ it was on sale, I didn't have enough money.",
+   "answer": "Although",
+   "alt": [
+    "although",
+    "Though",
+    "though"
+   ],
+   "why": "할인 중이었는데도 돈이 모자랐다는 반대 내용이므로 양보의 Although가 알맞다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 대화의 빈칸에 알맞은 접속사를 한 단어로 쓰시오. — A: Do I have to bring my own cup? B: Yes. ____ you bring one, you will have to buy a paper cup.",
+   "answer": "Unless",
+   "alt": [
+    "unless"
+   ],
+   "why": "컵을 가져오지 않으면 종이컵을 사야 한다는 뜻이므로 if ~ not과 같은 Unless가 알맞다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 짝지어진 것을 고르시오. ㄱ. If it will be sunny this weekend, we will go to the beach. ㄴ. Although the movie was three hours long, nobody left the theater. ㄷ. Despite he was tired, he kept working until midnight. ㄹ. While some students prefer online classes, others prefer face-to-face ones. ㅁ. Unless you don't hurry, you will miss the last train.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ",
+    "ㄹ, ㅁ"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 조건절을 현재시제 is로, ㄷ은 despite 뒤에 명사(구)를 써야 하므로 Although he was tired로, ㅁ은 unless 뒤의 부정어를 없애야 한다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것끼리 짝지어진 것을 고르시오. ㄱ. If you will call me tomorrow, I will explain everything. ㄴ. In spite of the heavy traffic, we arrived on time. ㄷ. Although his long explanation, I still didn't understand the rule. ㄹ. While my sister was studying abroad, she learned two languages. ㅁ. Unless you practice every day, you will not improve.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ",
+    "ㄹ, ㅁ"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 조건의 if절이므로 call로 고쳐야 하고, ㄷ은 접속사 although 뒤에 <주어+동사>가 와야 한다. ㄴ의 in spite of는 전치사구여서 명사 앞에 바르게 쓰였다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 짝지어진 것을 고르시오. ㄱ. Even though she apologized twice, he was still angry. ㄴ. If the flight is delayed again, we will take the next one. ㄷ. Despite of the rain, the parade continued down the street. ㄹ. While I was at the library, my phone was in silent mode. ㅁ. Although he is rich, but he lives in a small house.",
+   "choices": [
+    "ㄱ, ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄹ",
+    "ㄱ, ㄷ, ㅁ",
+    "ㄴ, ㄷ, ㄹ",
+    "ㄴ, ㄹ, ㅁ"
+   ],
+   "answer": 2,
+   "why": "ㄷ은 despite 뒤에 of를 쓰지 않으므로 Despite the rain 또는 In spite of the rain이어야 하고, ㅁ은 although와 but을 함께 쓸 수 없다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 While이 들어갈 수 있는 것끼리 짝지어진 것을 고르시오. ㄱ. ____ the twins look alike, their personalities are quite different. ㄴ. ____ we were hiking, a light rain began to fall. ㄷ. ____ you press the power button, the machine will restart. ㄹ. ____ the strong wind, the flight was canceled. ㅁ. ____ you don't answer, I will assume you agree.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㅁ"
+   ],
+   "answer": 1,
+   "why": "ㄱ은 대조, ㄴ은 시간의 뜻으로 While이 알맞다. ㄷ·ㅁ은 조건이므로 If, ㄹ은 뒤에 명사구만 있어 전치사 Because of 등이 필요하다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것끼리 짝지어진 것을 고르시오. ㄱ. I will wait here while you are finishing your call. ㄴ. Although he had studied all night, but he failed the exam. ㄷ. If the museum opens at nine, we should leave home by eight. ㄹ. Unless the doctor will say no, I will go swimming tomorrow. ㅁ. Even though the seats were uncomfortable, the show was worth it.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ",
+    "ㄹ, ㅁ"
+   ],
+   "answer": 3,
+   "why": "ㄴ은 although와 but을 함께 쓸 수 없고, ㄹ은 조건의 unless절이므로 will say를 says로 고쳐야 한다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 짝지어진 것을 고르시오. ㄱ. While the two cities are close, their weather is very different. ㄴ. If you will need any help, please raise your hand. ㄷ. Despite the noise outside, the baby slept peacefully. ㄹ. Although of her age, she runs five kilometers every morning. ㅁ. Unless it snows, the road will stay open.",
+   "choices": [
+    "ㄱ, ㄴ, ㄷ",
+    "ㄱ, ㄷ, ㅁ",
+    "ㄱ, ㄹ, ㅁ",
+    "ㄴ, ㄷ, ㄹ",
+    "ㄷ, ㄹ, ㅁ"
+   ],
+   "answer": 2,
+   "why": "ㄴ은 조건절이므로 need로, ㄹ은 although 뒤에 절이 와야 하므로 Despite her age 또는 Although she is old로 고쳐야 한다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분이 어법상 옳은 것끼리 짝지어진 것을 고르시오. ㄱ. If the package <u>arrives</u> before noon, I will sign for it. ㄴ. While the guests <u>will wait</u> in the hall, we will set the table. ㄷ. Although the recipe <u>looked</u> simple, it took me two hours. ㄹ. Unless the alarm <u>will ring</u>, I never wake up early. ㅁ. If you <u>will be</u> free tonight, let's watch a movie together.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ",
+    "ㄹ, ㅁ"
+   ],
+   "answer": 2,
+   "why": "조건·시간의 부사절에서는 미래를 현재시제로 쓰므로 ㄴ은 wait, ㄹ은 rings, ㅁ은 are로 고쳐야 한다. ㄷ의 although절은 부사절이지만 미래가 아니라 과거의 사실이라 looked가 맞다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 우리말과 뜻이 같은 것끼리 짝지어진 것을 고르시오. ㄱ. 비가 오지 않으면 우리는 캠핑을 갈 것이다. → Unless it rains, we will go camping. ㄴ. 비록 그는 사과했지만 나는 여전히 화가 났다. → Although he apologized, but I was still angry. ㄷ. 내 형은 야채를 좋아하는 반면 나는 고기를 더 좋아한다. → While my brother likes vegetables, I prefer meat. ㄹ. 설사 네가 늦더라도 우리는 너를 기다릴 것이다. → Even though you are late, we will wait for you. ㅁ. 그가 말하는 동안 아무도 움직이지 않았다. → During he was speaking, nobody moved.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ",
+    "ㄹ, ㅁ"
+   ],
+   "answer": 2,
+   "why": "ㄴ은 but을 빼야 하고, ㄹ의 설사 ~하더라도는 Even if로 써야 하며, ㅁ은 뒤에 절이 오므로 While로 고쳐야 한다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수를 고르시오. ㄱ. If the store closes early, we will order online. ㄴ. Although the test was difficult, but most students passed. ㄷ. While Korea uses chopsticks, many countries use forks. ㄹ. Unless you don't reply, I will call you again. ㅁ. Despite the cold weather, the children played outside.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "옳은 것은 ㄱ·ㄷ·ㅁ 세 개이다. ㄴ은 but을 빼야 하고, ㄹ은 unless에 부정어를 겹쳐 쓸 수 없다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수를 고르시오. ㄱ. If it will be cloudy tomorrow, the picnic will be moved indoors. ㄴ. While my father was driving, my mother read the map. ㄷ. Although the letter arrived late, it made her happy. ㄹ. In spite of he was sick, he attended the meeting. ㅁ. Unless you save your work, the file will disappear.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "틀린 것은 ㄱ(will be→is)과 ㄹ(in spite of 뒤에는 명사구, 절이면 Although)로 두 개이다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수를 고르시오. ㄱ. Even if you leave now, you will not arrive before six. ㄴ. Although his voice was quiet, everyone heard him clearly. ㄷ. While the essay, I checked my spelling twice. ㄹ. If the road is icy tomorrow, drive slowly. ㅁ. Unless the rain will stop, the match will be postponed.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "옳은 것은 ㄱ·ㄴ·ㄹ 세 개이다. ㄷ은 while 뒤에 절이 필요하고, ㅁ은 조건절이므로 stops로 고쳐야 한다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수를 고르시오. ㄱ. Despite of his busy schedule, he called his parents every night. ㄴ. If you press and hold this key, the menu appears. ㄷ. Although she practiced for months, but she was still nervous. ㄹ. While I like classical music, my roommate loves hip-hop. ㅁ. Unless you will bring your ID, you cannot enter the building.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "틀린 것은 ㄱ(Despite of→Despite), ㄷ(but 삭제), ㅁ(will bring→bring)으로 세 개이다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분이 어법상 옳은 문장의 개수를 고르시오. ㄱ. I will text you as soon as the concert <u>ends</u>. ㄴ. If the weather <u>will improve</u>, we will hike to the top. ㄷ. While the soup <u>is cooking</u>, please set the table. ㄹ. Although the ticket <u>was</u> expensive, the seat was terrible. ㅁ. Unless he <u>will apologize</u>, I will not speak to him.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "조건·시간의 부사절은 미래를 현재시제로 쓰므로 ㄱ·ㄷ·ㄹ 세 개가 옳다. ㄴ은 improves, ㅁ은 apologizes로 고쳐야 한다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 우리말 뜻에 맞게 바르게 쓴 문장의 개수를 고르시오. ㄱ. 만약 네가 지금 떠나지 않으면 너는 회의를 놓칠 것이다. → Unless you leave now, you will miss the meeting. ㄴ. 비록 그 방은 작았지만 매우 아늑했다. → Although the room was small, it was very cozy. ㄷ. 내가 요리하는 동안 그는 식탁을 차렸다. → During I cooked, he set the table. ㄹ. 나는 커피를 마시는 반면 그녀는 차를 마신다. → While I drink coffee, but she drinks tea. ㅁ. 만약 내일 눈이 오면 우리는 집에 머물 것이다. → If it will snow tomorrow, we will stay home.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "바르게 쓴 것은 ㄱ·ㄴ 두 개이다. ㄷ은 While I was cooking, ㄹ은 but 삭제, ㅁ은 If it snows로 고쳐야 한다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 고르시오. (9)",
+   "choices": [
+    "If the manager will approve the plan, we will begin next week.",
+    "Although the strong criticism, the director kept the ending.",
+    "While the two brothers look alike, they behave very differently.",
+    "Unless you don't sign this form, we cannot process your order.",
+    "Despite of the traffic jam, they reached the stadium in time."
+   ],
+   "answer": 3,
+   "why": "③은 대조의 while 뒤에 <주어+동사>가 바르게 왔다. ①은 approves로, ②는 Despite the strong criticism으로, ④는 don't 삭제, ⑤는 Despite로 고쳐야 한다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것을 고르시오. (9)",
+   "choices": [
+    "Even though the guide spoke slowly, I missed some details.",
+    "If the elevator is out of order, use the stairs on the left.",
+    "While the northern part is dry, the southern part gets heavy rain.",
+    "Although his answer was short, but it was exactly right.",
+    "Unless the store raises its prices, it will lose money."
+   ],
+   "answer": 4,
+   "why": "although가 이미 두 절을 연결하므로 but을 함께 쓸 수 없다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 고르시오. (10)",
+   "choices": [
+    "In spite of he practiced hard, he lost in the first round.",
+    "If you will visit Busan next month, tell me in advance.",
+    "While the report was long, its conclusion was clear.",
+    "Although of the loud music, the neighbors said nothing.",
+    "Unless you won't wear boots, your feet will get wet."
+   ],
+   "answer": 3,
+   "why": "③은 while이 대조의 뜻으로 절을 바르게 이끈다. ①은 In spite of 뒤에 명사구가 와야 하고, ②는 visit, ④는 Despite, ⑤는 won't를 없애야 한다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것을 고르시오. (10)",
+   "choices": [
+    "If the printer runs out of ink, replace the cartridge.",
+    "While we were discussing the budget, the power went out.",
+    "Although the box looked heavy, it weighed almost nothing.",
+    "Despite the warning signs, some hikers went up the mountain.",
+    "Unless the bus will arrive soon, we will be late for the ceremony."
+   ],
+   "answer": 5,
+   "why": "unless가 이끄는 조건절에서는 미래의 일도 현재시제로 쓰므로 will arrive를 arrives로 고쳐야 한다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 고르시오. (11)",
+   "choices": [
+    "Although he was warned twice, but he made the same mistake.",
+    "If the batteries will die, the clock will stop.",
+    "Unless you don't check the map, you will get lost.",
+    "While the first half was boring, the second half was thrilling.",
+    "Despite of her fear of heights, she climbed to the top."
+   ],
+   "answer": 4,
+   "why": "④는 전반과 후반을 견주는 대조의 while이 알맞게 쓰였다. 나머지는 but 중복, 조건절 시제, 부정 중복, despite of의 오류가 있다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것을 고르시오. (11)",
+   "choices": [
+    "Even if it rains tomorrow, the festival will go on as planned.",
+    "While my grandparents were talking, I quietly left the room.",
+    "In spite of the cold, the market was full of shoppers.",
+    "Although the road was under repair, the buses ran on time.",
+    "If you will keep the receipt, you can get a refund."
+   ],
+   "answer": 5,
+   "why": "조건의 if절에서는 미래를 현재시제로 나타내므로 will keep을 keep으로 고쳐야 한다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 고르시오. (12)",
+   "choices": [
+    "While the heavy snow, the airport closed for two days.",
+    "If the water will boil, add the noodles right away.",
+    "Although the app is free, it shows many advertisements.",
+    "Unless you aren't ready, we will start without you.",
+    "Despite he had little money, he traveled across the country."
+   ],
+   "answer": 3,
+   "why": "③은 although 뒤에 <주어+동사>가 오고 앞뒤 내용이 반대이다. ①·⑤는 접속사와 전치사를 혼동했고, ②는 boils, ④는 aren't를 are로 고쳐야 한다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것을 고르시오. (12)",
+   "choices": [
+    "If the temperature drops below zero, the pipes may freeze.",
+    "Although the interview lasted an hour, it felt like ten minutes.",
+    "While the theory sounds simple, it is hard to apply.",
+    "Despite the long flight, she looked fresh at the airport.",
+    "Unless you will finish the form, we cannot open your account."
+   ],
+   "answer": 5,
+   "why": "조건을 나타내는 unless절은 현재시제로 쓰므로 will finish를 finish로 고쳐야 한다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "____ the terrible weather, the rescue team searched all night. (~에도 불구하고)",
+   "choices": [
+    "Although",
+    "Even though",
+    "Despite",
+    "While",
+    "Unless"
+   ],
+   "answer": 3,
+   "why": "뒤에 명사구 the terrible weather만 있으므로 전치사 Despite를 쓴다. Although·Even though·While은 접속사라서 <주어+동사>가 필요하다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "____ the weather was terrible, the rescue team searched all night. (비록 ~이지만)",
+   "choices": [
+    "Despite",
+    "In spite of",
+    "Instead of",
+    "Because of",
+    "Although"
+   ],
+   "answer": 5,
+   "why": "뒤에 <주어+동사>가 이어지므로 접속사 Although가 알맞다. Despite와 In spite of는 전치사(구)라서 명사 앞에만 쓴다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것을 고르시오. — Although the lecture was long, the students stayed until the end. = ____, the students stayed until the end.",
+   "choices": [
+    "Despite the lecture was long",
+    "In spite of the long lecture",
+    "Although of the long lecture",
+    "Despite of the long lecture",
+    "While the long lecture"
+   ],
+   "answer": 2,
+   "why": "in spite of는 전치사구이므로 뒤에 명사구 the long lecture가 온다. despite에는 of를 붙이지 않고, although 뒤에는 절이 와야 한다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것을 고르시오. — (1) ____ his young age, he manages the whole team. (2) ____ he is young, he manages the whole team.",
+   "choices": [
+    "Despite – Although",
+    "Although – Despite",
+    "Despite – Despite",
+    "Although – Although",
+    "In spite – Although"
+   ],
+   "answer": 1,
+   "why": "(1)은 명사구 앞이므로 전치사 Despite, (2)는 <주어+동사> 앞이므로 접속사 Although가 알맞다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분이 어법상 옳지 않은 것을 고르시오. — <u>Despite</u> the heavy rain, the volunteers kept working, <u>and</u> <u>although</u> they were soaked, <u>but</u> nobody <u>complained</u>.",
+   "choices": [
+    "Despite",
+    "and",
+    "although",
+    "but",
+    "complained"
+   ],
+   "answer": 4,
+   "why": "although가 이미 절을 연결하므로 but을 함께 쓸 수 없다. 앞의 Despite는 명사구 앞에 바르게 쓰였다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "____ you invite him, he probably won't come to the party. (설사 네가 그를 초대하더라도)",
+   "choices": [
+    "Even if",
+    "Even though",
+    "Because",
+    "Unless",
+    "While"
+   ],
+   "answer": 1,
+   "why": "아직 일어나지 않은 일을 가정하며 설사 ~하더라도라고 할 때는 even if를 쓴다. even though는 실제 있었던 사실을 인정할 때 쓴다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "____ he invited me twice, I didn't go to his party. (비록 그가 나를 두 번 초대했지만)",
+   "choices": [
+    "Even if",
+    "If",
+    "Unless",
+    "Even though",
+    "So"
+   ],
+   "answer": 4,
+   "why": "실제로 두 번 초대한 사실을 인정하는 양보이므로 even though가 알맞다. even if는 아직 일어나지 않은 일을 가정할 때 쓴다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것을 고르시오. — (1) ____ the ticket is expensive, I will buy it. (설사 비싸더라도) (2) ____ the ticket was expensive, I bought it. (실제로 비쌌지만)",
+   "choices": [
+    "Even though – Even though",
+    "Even though – Even if",
+    "Even if – Even if",
+    "Even if – Even though",
+    "If – Even if"
+   ],
+   "answer": 4,
+   "why": "(1)은 아직 확인되지 않은 일을 가정하므로 Even if, (2)는 이미 일어난 사실을 인정하므로 Even though가 알맞다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분의 쓰임이 나머지 넷과 다른 것을 고르시오. — even if / even though의 구분",
+   "choices": [
+    "<u>Even though</u> the machine was old, it still worked well.",
+    "<u>Even though</u> we had a map, we lost our way.",
+    "<u>Even if</u> you run now, you will not catch the bus.",
+    "<u>Even though</u> she studied French, she could not order food.",
+    "<u>Even though</u> the seats were cheap, the view was perfect."
+   ],
+   "answer": 3,
+   "why": "③만 아직 일어나지 않은 일을 가정하는 even if이고, 나머지는 모두 실제로 있었던 사실을 인정하는 even though이다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 if의 쓰임이 나머지 넷과 다른 것을 고르시오.",
+   "choices": [
+    "<u>If</u> you finish early, you can leave the room.",
+    "I wonder <u>if</u> he will accept our invitation.",
+    "<u>If</u> the sky is clear tonight, we will see the stars.",
+    "We will cancel the trip <u>if</u> the storm comes.",
+    "<u>If</u> you need more time, just tell me."
+   ],
+   "answer": 2,
+   "why": "②의 if는 ~인지 아닌지라는 뜻의 명사절을 이끌고, 나머지는 모두 만약 ~하면이라는 조건의 부사절을 이끈다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Nobody knows if the concert ____ next month, but if it ____ , tickets will sell out fast.",
+   "choices": [
+    "will happen – will happen",
+    "happens – happens",
+    "will happen – happened",
+    "happens – will happen",
+    "will happen – happens"
+   ],
+   "answer": 5,
+   "why": "앞의 if는 ~인지라는 명사절을 이끌므로 미래를 will로 나타내고, 뒤의 if는 조건의 부사절이므로 현재시제로 쓴다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Please ask the driver if the bus ____ at the museum, and if it ____ , we will get off there.",
+   "choices": [
+    "stops – will stop",
+    "will stop – stops",
+    "will stop – will stop",
+    "stops – stops",
+    "stopped – stops"
+   ],
+   "answer": 2,
+   "why": "첫 번째 if는 ~인지를 묻는 명사절이라 will stop이 가능하고, 두 번째 if는 조건의 부사절이라 현재시제 stops를 쓴다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분의 우리말 뜻이 알맞지 않은 것을 고르시오.",
+   "choices": [
+    "<u>While</u> the hotel was cheap, the service was excellent. (반면에)",
+    "I stayed up <u>while</u> my sister was studying. (~하는 동안)",
+    "<u>Unless</u> you turn left, you will miss the entrance. (~하지 않으면)",
+    "<u>If</u> you ask me, I will help you. (비록 ~이지만)",
+    "<u>Although</u> the game was canceled, the fans stayed. (비록 ~이지만)"
+   ],
+   "answer": 4,
+   "why": "④의 if는 만약 ~하면이라는 조건의 뜻이다. 비록 ~이지만은 although·though의 뜻이다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것을 고르시오. — If you don't turn in the form by Friday, you will lose your seat. = You will lose your seat ____ the form by Friday.",
+   "choices": [
+    "unless you turn in",
+    "unless you don't turn in",
+    "if you turn in",
+    "although you turn in",
+    "while you turn in"
+   ],
+   "answer": 1,
+   "why": "unless는 if ~ not과 같으므로 뒤에 부정어를 다시 쓰지 않는다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것을 고르시오. — He kept smiling. He had lost everything. = ____ , he kept smiling.",
+   "choices": [
+    "Although he had lost everything",
+    "Despite he had lost everything",
+    "Although of losing everything",
+    "If he had lost everything",
+    "Because he had lost everything"
+   ],
+   "answer": 1,
+   "why": "뒤에 <주어+동사>가 오므로 접속사 Although가 알맞다. Despite는 명사구 앞에만 쓰고, Because를 쓰면 뜻이 달라진다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것을 고르시오. — In spite of the noise, the students concentrated on the exam. = ____ , the students concentrated on the exam.",
+   "choices": [
+    "Although the noise",
+    "Although it was noisy",
+    "Despite it was noisy",
+    "While the noise",
+    "If it was noisy"
+   ],
+   "answer": 2,
+   "why": "although는 접속사이므로 뒤에 <주어+동사>인 it was noisy가 와야 한다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것을 고르시오. — My brother enjoys team sports, but I prefer running alone. = ____ my brother enjoys team sports, I prefer running alone.",
+   "choices": [
+    "If",
+    "Unless",
+    "Even if",
+    "Because",
+    "While"
+   ],
+   "answer": 5,
+   "why": "두 사람의 취향을 견주는 대조이므로 ~인 반면에의 While이 알맞다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것을 고르시오. — The wind was strong, but the tent did not move. = ____ , the tent did not move.",
+   "choices": [
+    "Despite the wind was strong",
+    "Although the strong wind",
+    "If the wind was strong",
+    "Even though the wind was strong",
+    "While the strong wind"
+   ],
+   "answer": 4,
+   "why": "even though는 접속사이므로 <주어+동사>를 이끌 수 있다. Despite 뒤에는 명사구, although 뒤에는 절이 와야 한다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오. — 그 시험이 아무리 어렵더라도, 나는 최선을 다할 것이다. (설사 ~하더라도)",
+   "choices": [
+    "Even though the test is difficult, I will do my best.",
+    "Even if the test will be difficult, I will do my best.",
+    "Unless the test is difficult, I will do my best.",
+    "Despite the test is difficult, I will do my best.",
+    "Even if the test is difficult, I will do my best."
+   ],
+   "answer": 5,
+   "why": "아직 확인되지 않은 일을 가정하므로 even if를 쓰고, 조건의 부사절이므로 현재시제로 쓴다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오. — 그의 도움에도 불구하고, 나는 그 문제를 풀 수 없었다.",
+   "choices": [
+    "Although his help, I could not solve the problem.",
+    "Despite of his help, I could not solve the problem.",
+    "Despite his help, I could not solve the problem.",
+    "Even though his help, I could not solve the problem.",
+    "While his help, I could not solve the problem."
+   ],
+   "answer": 3,
+   "why": "뒤에 명사구 his help가 오므로 전치사 Despite를 쓰며 of를 붙이지 않는다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오. — 네가 나에게 미리 알려 주지 않으면, 나는 표를 예매하지 않을 것이다.",
+   "choices": [
+    "Unless you don't tell me in advance, I will not book the tickets.",
+    "Unless you will tell me in advance, I will not book the tickets.",
+    "If you tell me in advance, I will not book the tickets.",
+    "Unless you tell me in advance, I will not book the tickets.",
+    "Although you tell me in advance, I will not book the tickets."
+   ],
+   "answer": 4,
+   "why": "unless는 if ~ not의 뜻이므로 부정어를 겹쳐 쓰지 않고, 조건절이므로 현재시제로 쓴다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오. — 우리가 공항으로 차를 타고 가는 동안 눈이 계속 내리고 있었다.",
+   "choices": [
+    "During we were driving to the airport, it kept snowing.",
+    "While we were driving to the airport, it kept snowing.",
+    "While we were driving to the airport, but it kept snowing.",
+    "If we were driving to the airport, it kept snowing.",
+    "While driving we were to the airport, it kept snowing."
+   ],
+   "answer": 2,
+   "why": "뒤에 <주어+동사>가 오므로 접속사 While을 쓰고, 어순을 바꾸거나 but을 덧붙이지 않는다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오. — 그가 올지 안 올지 모르겠지만, 만약 그가 온다면 나는 그에게 그것을 줄 것이다.",
+   "choices": [
+    "I don't know if he comes, but if he will come, I will give it to him.",
+    "I don't know if he will come, but if he comes, I will give it to him.",
+    "I don't know if he will come, but if he will come, I will give it to him.",
+    "I don't know if he comes, but if he comes, I will give it to him.",
+    "I don't know that he will come, but if he comes, I will give it to him."
+   ],
+   "answer": 2,
+   "why": "앞의 if는 ~인지라는 명사절이라 will come이 가능하고, 뒤의 if는 조건의 부사절이라 현재시제 comes를 쓴다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오. — 서울은 겨울이 긴 반면, 제주는 겨울이 짧다.",
+   "choices": [
+    "While Seoul has a long winter, Jeju has a short one.",
+    "During Seoul has a long winter, Jeju has a short one.",
+    "While Seoul has a long winter, but Jeju has a short one.",
+    "If Seoul has a long winter, Jeju has a short one.",
+    "Although of a long winter in Seoul, Jeju has a short one."
+   ],
+   "answer": 1,
+   "why": "두 지역을 견주는 대조의 while을 쓰고, but을 함께 쓰지 않는다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 Despite로 시작하는 문장으로 바꿔 쓰시오. (the loud noise를 사용할 것) — Although the noise was loud, I fell asleep quickly. →",
+   "answer": "Despite the loud noise, I fell asleep quickly.",
+   "alt": [
+    "Despite the loud noise, I fell asleep quickly"
+   ],
+   "why": "despite는 전치사이므로 뒤에 <주어+동사>가 아니라 명사구 the loud noise가 온다. of를 붙이지 않는다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 In spite of로 시작하는 문장으로 바꿔 쓰시오. (the high price를 사용할 것) — Although the price was high, the tickets sold out in an hour. →",
+   "answer": "In spite of the high price, the tickets sold out in an hour.",
+   "alt": [
+    "In spite of the high price, the tickets sold out in an hour"
+   ],
+   "why": "in spite of는 전치사구이므로 뒤에 명사구를 쓴다. 절을 그대로 두면 틀린 문장이 된다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 Although로 시작하는 문장으로 바꿔 쓰시오. (the room was small을 사용할 것) — Despite the small room, we enjoyed the party. →",
+   "answer": "Although the room was small, we enjoyed the party.",
+   "alt": [
+    "Although the room was small, we enjoyed the party"
+   ],
+   "why": "although는 접속사이므로 뒤에 <주어+동사>의 절이 와야 한다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 Unless로 시작하는 문장으로 바꿔 쓰시오. — If you don't back up your files, you may lose all your photos. →",
+   "answer": "Unless you back up your files, you may lose all your photos.",
+   "alt": [
+    "Unless you back up your files, you may lose all your photos"
+   ],
+   "why": "unless에 이미 부정의 뜻이 있으므로 don't를 없애고 동사를 그대로 쓴다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 If로 시작하는 문장으로 바꿔 쓰시오. — Unless the committee approves the plan, the project will stop. →",
+   "answer": "If the committee doesn't approve the plan, the project will stop.",
+   "alt": [
+    "If the committee does not approve the plan, the project will stop.",
+    "If the committee doesn't approve the plan, the project will stop",
+    "If the committee does not approve the plan, the project will stop"
+   ],
+   "why": "unless = if ~ not이므로 주어가 3인칭 단수일 때 doesn't approve로 쓴다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 말을 두 단어로 쓰시오. (설사 ~하더라도, 아직 일어나지 않은 일을 가정) — ____ the shop closes early tomorrow, I will find another one.",
+   "answer": "Even if",
+   "alt": [
+    "even if"
+   ],
+   "why": "아직 확인되지 않은 일을 가정할 때는 even if를 쓴다. even though는 이미 일어난 사실에 쓴다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 말을 두 단어로 쓰시오. (비록 ~이지만, 실제로 있었던 사실) — ____ the shop closed early yesterday, I found another one.",
+   "answer": "Even though",
+   "alt": [
+    "even though"
+   ],
+   "why": "어제 실제로 일찍 문을 닫은 사실을 인정하는 양보이므로 even though를 쓴다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. (미래를 나타낼 것) — I am not sure if she (come) ____ to the meeting tomorrow.",
+   "answer": "will come",
+   "alt": [],
+   "why": "이 if는 ~인지 아닌지라는 뜻의 명사절을 이끌므로 미래는 will로 그대로 나타낸다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. — If she (come) ____ to the meeting tomorrow, I will introduce her to you.",
+   "answer": "comes",
+   "alt": [],
+   "why": "이 if는 조건의 부사절을 이끌므로 미래의 일도 현재시제로 쓴다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. — I will read a magazine while I (wait) ____ for my turn tomorrow.",
+   "answer": "wait",
+   "alt": [],
+   "why": "시간을 나타내는 while절에서도 미래의 일은 현재시제로 쓴다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. — <u>Despite of</u> the bad reviews, the restaurant was full every night.",
+   "answer": "Despite",
+   "alt": [
+    "despite"
+   ],
+   "why": "despite는 그 자체가 전치사이므로 of를 붙이지 않는다. In spite of로 바꾸어도 된다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. — <u>In spite of</u> he had a high fever, he took the final exam.",
+   "answer": "Although",
+   "alt": [
+    "although",
+    "Though",
+    "though"
+   ],
+   "why": "뒤에 <주어+동사>가 오므로 전치사구 In spite of가 아니라 접속사 Although를 써야 한다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. — Unless you <u>don't have</u> a student ID, you cannot borrow these books.",
+   "answer": "have",
+   "alt": [],
+   "why": "unless에 이미 부정의 뜻이 담겨 있으므로 don't를 겹쳐 쓸 수 없다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 불필요한 한 단어를 찾아 쓰시오. — Even though the directions were clear, but half of the class got lost.",
+   "answer": "but",
+   "alt": [
+    "But"
+   ],
+   "why": "even though가 이미 두 절을 이어 주므로 but을 함께 쓸 수 없다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장을 While로 시작하는 한 문장으로 바꿔 쓰시오. (대조의 뜻으로) — Online shopping saves time. + Traditional markets offer a lively atmosphere. →",
+   "answer": "While online shopping saves time, traditional markets offer a lively atmosphere.",
+   "alt": [
+    "While online shopping saves time, traditional markets offer a lively atmosphere"
+   ],
+   "why": "두 대상을 견주는 대조이므로 While ~, ~의 형태로 쓴다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장을 Although로 시작하는 한 문장으로 바꿔 쓰시오. — The team had lost its best player. + It won the final match. →",
+   "answer": "Although the team had lost its best player, it won the final match.",
+   "alt": [
+    "Although the team had lost its best player, it won the final match"
+   ],
+   "why": "앞뒤 내용이 반대이므로 양보의 although로 연결하고 but은 덧붙이지 않는다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장을 If로 시작하는 한 문장으로 바꿔 쓰시오. (시제에 주의할 것) — The delivery will arrive before noon. + I will leave the box at the front desk. →",
+   "answer": "If the delivery arrives before noon, I will leave the box at the front desk.",
+   "alt": [
+    "If the delivery arrives before noon, I will leave the box at the front desk"
+   ],
+   "why": "조건의 if절에서는 미래를 현재시제로 나타내므로 will arrive를 arrives로 바꾼다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장을 Even if로 시작하는 한 문장으로 바꿔 쓰시오. (시제에 주의할 것) — The price will go up next year. + Many people will still buy this phone. →",
+   "answer": "Even if the price goes up next year, many people will still buy this phone.",
+   "alt": [
+    "Even if the price goes up next year, many people will still buy this phone"
+   ],
+   "why": "설사 ~하더라도의 even if절도 부사절이므로 미래를 현재시제로 쓴다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 대화의 빈칸에 알맞은 접속사를 한 단어로 쓰시오. — A: Did you get a seat at the concert? B: ____ I arrived two hours early, all the front seats were already taken.",
+   "answer": "Although",
+   "alt": [
+    "although",
+    "Though",
+    "though"
+   ],
+   "why": "두 시간 일찍 갔는데도 앞자리가 없었다는 반대 내용이므로 양보의 Although가 알맞다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 대화의 빈칸에 알맞은 접속사를 한 단어로 쓰시오. (반면에) — A: Do you and your twin like the same subjects? B: Not really. ____ he loves science, I am much better at history.",
+   "answer": "While",
+   "alt": [
+    "while"
+   ],
+   "why": "두 사람의 관심을 견주는 대조이므로 ~인 반면에의 While이 알맞다.",
+   "no": 200
+  }
+ ]
+}

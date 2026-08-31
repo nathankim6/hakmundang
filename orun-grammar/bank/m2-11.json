@@ -1,0 +1,2690 @@
+{
+ "id": "m2-11",
+ "grade": "중2",
+ "name": "주격 관계대명사",
+ "points": [
+  "who/which/that",
+  "선행사와 동사 수일치",
+  "두 문장 연결"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  I have a friend ____ lives in Canada.",
+   "choices": [
+    "which",
+    "what",
+    "whose",
+    "who",
+    "whom"
+   ],
+   "answer": 4,
+   "why": "선행사 a friend가 사람이고 관계대명사절에서 주어 역할을 하므로 주격 관계대명사 who를 쓴다. whom은 목적격, whose는 소유격이라 안 된다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The woman ____ teaches us music is Ms. Han.",
+   "choices": [
+    "which",
+    "who",
+    "whose",
+    "what",
+    "whom"
+   ],
+   "answer": 2,
+   "why": "선행사 The woman이 사람이고 teaches의 주어가 빠져 있으므로 주격 who를 쓴다. which는 사물·동물에 쓴다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  Do you know the boy ____ is wearing a red cap?",
+   "choices": [
+    "who",
+    "which",
+    "what",
+    "whom",
+    "whose"
+   ],
+   "answer": 1,
+   "why": "사람 선행사 the boy 뒤에서 is의 주어 자리가 비었으므로 주격 who가 알맞다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  My father is a doctor ____ works at a big hospital.",
+   "choices": [
+    "which",
+    "what",
+    "whose",
+    "whom",
+    "who"
+   ],
+   "answer": 5,
+   "why": "선행사 a doctor는 사람이고 works의 주어가 없으므로 주격 who를 쓴다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  I met a girl ____ speaks three languages.",
+   "choices": [
+    "who",
+    "which",
+    "what",
+    "whose",
+    "whom"
+   ],
+   "answer": 1,
+   "why": "사람 선행사 a girl 뒤에 speaks의 주어가 빠져 있으므로 주격 who가 알맞다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The students ____ came late sat in the back.",
+   "choices": [
+    "which",
+    "what",
+    "whom",
+    "whose",
+    "who"
+   ],
+   "answer": 5,
+   "why": "선행사 The students가 사람이고 came의 주어 자리이므로 주격 who를 쓴다. 선행사가 복수여도 who의 형태는 변하지 않는다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  He is the singer ____ wrote this song.",
+   "choices": [
+    "which",
+    "whose",
+    "what",
+    "who",
+    "whom"
+   ],
+   "answer": 4,
+   "why": "사람 선행사 the singer 뒤 wrote의 주어 자리이므로 주격 who가 알맞다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The man ____ helped me was very kind.",
+   "choices": [
+    "which",
+    "what",
+    "whom",
+    "who",
+    "whose"
+   ],
+   "answer": 4,
+   "why": "사람 선행사 The man 뒤 helped의 주어가 없으므로 주격 who를 쓴다. whom은 목적어 자리에 쓰는 목적격이다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  She has a cat ____ has blue eyes.",
+   "choices": [
+    "who",
+    "whom",
+    "which",
+    "what",
+    "whose"
+   ],
+   "answer": 3,
+   "why": "선행사 a cat이 동물이고 has의 주어 자리이므로 주격 관계대명사 which를 쓴다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  I bought a bag ____ was very cheap.",
+   "choices": [
+    "who",
+    "whom",
+    "what",
+    "whose",
+    "which"
+   ],
+   "answer": 5,
+   "why": "사물 선행사 a bag 뒤 was의 주어 자리이므로 주격 which가 알맞다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  This is the bus ____ goes to the zoo.",
+   "choices": [
+    "which",
+    "whom",
+    "who",
+    "what",
+    "whose"
+   ],
+   "answer": 1,
+   "why": "사물 선행사 the bus 뒤 goes의 주어가 빠져 있으므로 주격 which를 쓴다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  I like books ____ have happy endings.",
+   "choices": [
+    "who",
+    "whom",
+    "whose",
+    "which",
+    "what"
+   ],
+   "answer": 4,
+   "why": "사물 선행사 books 뒤 have의 주어 자리이므로 주격 which가 알맞다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The dog ____ is barking is mine.",
+   "choices": [
+    "who",
+    "whom",
+    "what",
+    "whose",
+    "which"
+   ],
+   "answer": 5,
+   "why": "동물 선행사 The dog 뒤 is의 주어 자리이므로 주격 which를 쓴다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  He lives in a house ____ has a red roof.",
+   "choices": [
+    "who",
+    "what",
+    "whose",
+    "whom",
+    "which"
+   ],
+   "answer": 5,
+   "why": "사물 선행사 a house 뒤 has의 주어가 없으므로 주격 which가 알맞다. whose 뒤에는 명사가 바로 온다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  I want a phone ____ takes good pictures.",
+   "choices": [
+    "who",
+    "whom",
+    "whose",
+    "what",
+    "which"
+   ],
+   "answer": 5,
+   "why": "사물 선행사 a phone 뒤 takes의 주어 자리이므로 주격 which를 쓴다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The bird ____ sang this morning was beautiful.",
+   "choices": [
+    "who",
+    "whom",
+    "what",
+    "whose",
+    "which"
+   ],
+   "answer": 5,
+   "why": "동물 선행사 The bird 뒤 sang의 주어가 빠져 있으므로 주격 which가 알맞다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  I know a boy who ____ good at math.",
+   "choices": [
+    "are",
+    "be",
+    "being",
+    "is",
+    "were"
+   ],
+   "answer": 4,
+   "why": "주격 관계대명사 뒤의 동사는 선행사에 수를 맞춘다. 선행사 a boy가 단수 현재이므로 is가 알맞다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  I have two friends who ____ from Japan.",
+   "choices": [
+    "is",
+    "am",
+    "was",
+    "be",
+    "are"
+   ],
+   "answer": 5,
+   "why": "선행사 two friends가 복수이므로 관계대명사절의 동사도 복수형 are를 쓴다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The girl who ____ next to me is Mina.",
+   "choices": [
+    "sit",
+    "sits",
+    "sitting",
+    "is sit",
+    "to sit"
+   ],
+   "answer": 2,
+   "why": "선행사 The girl이 3인칭 단수이므로 현재시제 동사에 -s를 붙여 sits로 쓴다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The children who ____ soccer every day are strong.",
+   "choices": [
+    "plays",
+    "play",
+    "playing",
+    "is play",
+    "to play"
+   ],
+   "answer": 2,
+   "why": "선행사 The children이 복수이므로 동사원형 play를 쓴다. plays는 단수 주어에 쓴다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  I like the song which ____ playing now.",
+   "choices": [
+    "are",
+    "is",
+    "be",
+    "being",
+    "were"
+   ],
+   "answer": 2,
+   "why": "선행사 the song이 단수이고 now가 있으므로 현재진행의 is가 알맞다. were는 과거라 now와 어울리지 않는다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  He has a brother who ____ in Seoul.",
+   "choices": [
+    "live",
+    "lives",
+    "living",
+    "are live",
+    "to live"
+   ],
+   "answer": 2,
+   "why": "선행사 a brother가 3인칭 단수 현재이므로 lives를 쓴다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  Look at the birds which ____ on the roof.",
+   "choices": [
+    "is",
+    "was",
+    "are",
+    "be",
+    "am"
+   ],
+   "answer": 3,
+   "why": "선행사 the birds가 복수이고 지금 보고 있는 상황이므로 are가 알맞다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  This is a machine which ____ ice cream.",
+   "choices": [
+    "make",
+    "makes",
+    "making",
+    "are make",
+    "to make"
+   ],
+   "answer": 2,
+   "why": "선행사 a machine이 단수이므로 현재시제 makes를 쓴다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The people who ____ in this town are friendly.",
+   "choices": [
+    "live",
+    "living",
+    "lives",
+    "is live",
+    "to live"
+   ],
+   "answer": 1,
+   "why": "people은 복수 명사이므로 관계대명사절의 동사도 복수형 live를 쓴다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  I have a watch which ____ 100 years old.",
+   "choices": [
+    "are",
+    "were",
+    "be",
+    "is",
+    "being"
+   ],
+   "answer": 4,
+   "why": "선행사 a watch가 단수이고 현재의 상태를 말하므로 is가 알맞다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 who가 들어갈 수 있는 것은?",
+   "choices": [
+    "I have a car ____ is very old.",
+    "The nurse ____ helped me was kind.",
+    "The pen ____ is on the desk is mine.",
+    "I like the cake ____ tastes sweet.",
+    "This is the book ____ made me cry."
+   ],
+   "answer": 2,
+   "why": "who는 사람 선행사에만 쓴다. ②의 선행사 The nurse만 사람이고 나머지는 모두 사물이므로 which를 써야 한다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 which가 들어갈 수 있는 것은?",
+   "choices": [
+    "The boy ____ is running is Tom.",
+    "I know a lady ____ has a big dog.",
+    "The shop ____ sells flowers is closed.",
+    "The player ____ scored the goal is famous.",
+    "My aunt ____ lives in Daegu called me."
+   ],
+   "answer": 3,
+   "why": "which는 사물·동물 선행사에 쓴다. ③의 The shop만 사물이고 나머지 선행사는 모두 사람이므로 who를 써야 한다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?  ⓐ I have a dog ____ has short legs.  ⓑ The bag ____ is on the chair is new.",
+   "choices": [
+    "who",
+    "whose",
+    "whom",
+    "what",
+    "which"
+   ],
+   "answer": 5,
+   "why": "ⓐ의 선행사는 동물, ⓑ의 선행사는 사물이고 둘 다 주어 자리이므로 주격 which가 공통으로 들어간다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?  ⓐ The girl ____ won first prize is my sister.  ⓑ I met a man ____ knows my father.",
+   "choices": [
+    "which",
+    "what",
+    "who",
+    "whose",
+    "whom"
+   ],
+   "answer": 3,
+   "why": "두 문장 모두 사람 선행사이고 관계대명사절의 주어 자리가 비어 있으므로 주격 who가 공통으로 들어간다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은?",
+   "choices": [
+    "I have a friend which lives in Busan.",
+    "The book who is on the desk is mine.",
+    "She likes dogs which has long ears.",
+    "The man who lives next door is a chef.",
+    "I know a girl whom sings very well."
+   ],
+   "answer": 4,
+   "why": "④는 사람 선행사에 주격 who를 바르게 썼다. ①②는 선행사와 관계대명사가 맞지 않고, ③은 dogs가 복수라 have, ⑤는 주어 자리이므로 who를 써야 한다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 알맞은 문장은?",
+   "choices": [
+    "I saw a cat which have green eyes.",
+    "The boys who plays baseball are loud.",
+    "This is a bag which is made in Italy.",
+    "He has a sister who live in Japan.",
+    "I like the movie who won the prize."
+   ],
+   "answer": 3,
+   "why": "③은 사물 선행사에 which를 쓰고 단수 동사 is로 수를 맞췄다. ①은 has, ②는 play, ④는 lives, ⑤는 which가 되어야 한다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 것은?",
+   "choices": [
+    "I have a friend who lives in Seoul.",
+    "The bus which goes downtown is late.",
+    "She has a brother who is a pilot.",
+    "I like the story which is about a hero.",
+    "The girl which is dancing is my cousin."
+   ],
+   "answer": 5,
+   "why": "⑤의 선행사 The girl은 사람이므로 which가 아니라 who를 써야 한다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은?",
+   "choices": [
+    "The dog which is sleeping is cute.",
+    "I know a boy who play the drums.",
+    "The women who are talking are teachers.",
+    "He bought a bike which was on sale.",
+    "Do you know the man who called me?"
+   ],
+   "answer": 2,
+   "why": "②는 선행사 a boy가 단수이므로 play가 아니라 plays를 써야 한다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 어색한 것은?",
+   "choices": [
+    "Tom has a friend who is from Canada.",
+    "The apples which are on the table are fresh.",
+    "I met a doctor who works in this town.",
+    "The chair which are broken is old.",
+    "She loves songs which make her happy."
+   ],
+   "answer": 4,
+   "why": "④는 선행사 The chair가 단수이므로 are가 아니라 is를 써야 한다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장 중 어법에 맞는 것은?",
+   "choices": [
+    "I have a cat who has white fur.",
+    "The man which is singing is my dad.",
+    "The books which is new are here.",
+    "I know a girl who plays the violin.",
+    "The boy who are tall is Jinsu."
+   ],
+   "answer": 4,
+   "why": "④는 사람 선행사에 who를 쓰고 단수 동사 plays로 수를 맞췄다. ①은 which, ②는 who, ③은 are, ⑤는 is가 되어야 한다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분이 어법상 틀린 것은?",
+   "choices": [
+    "I have a friend <u>who</u> is honest.",
+    "The cake <u>which</u> is on the table is mine.",
+    "The man <u>which</u> won the game is happy.",
+    "Dogs <u>which</u> bark a lot are noisy.",
+    "The girl <u>who</u> called you is Sumi."
+   ],
+   "answer": 3,
+   "why": "③의 선행사 The man은 사람이므로 which가 아니라 who를 써야 한다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞지 않는 것은?",
+   "choices": [
+    "I ate a sandwich which was very big.",
+    "The students who are in the library are quiet.",
+    "She has a friend who help her a lot.",
+    "This is the key which opens the door.",
+    "The man who is wearing glasses is my teacher."
+   ],
+   "answer": 3,
+   "why": "③은 선행사 a friend가 단수이므로 help가 아니라 helps를 써야 한다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  나는 아주 빨리 달리는 개를 한 마리 키운다.",
+   "choices": [
+    "I have a dog which runs very fast.",
+    "I have a dog which run very fast.",
+    "I have a dog who runs very fast.",
+    "I have a dog whose runs very fast.",
+    "I have a dog what runs very fast."
+   ],
+   "answer": 1,
+   "why": "선행사 a dog은 동물이므로 which를 쓰고, 단수이므로 동사는 runs가 된다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  저기 서 있는 소녀는 내 여동생이다.",
+   "choices": [
+    "The girl which is standing there is my sister.",
+    "The girl who is standing there is my sister.",
+    "The girl who are standing there is my sister.",
+    "The girl whose is standing there is my sister.",
+    "The girl what is standing there is my sister."
+   ],
+   "answer": 2,
+   "why": "사람 선행사 The girl에는 who를 쓰고, 단수이므로 관계대명사절의 동사는 is이다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  우리는 프랑스어를 가르치는 선생님이 필요하다.",
+   "choices": [
+    "We need a teacher which teaches French.",
+    "We need a teacher who teach French.",
+    "We need a teacher what teaches French.",
+    "We need a teacher whom teaches French.",
+    "We need a teacher who teaches French."
+   ],
+   "answer": 5,
+   "why": "사람 선행사 a teacher에는 주격 who를 쓰고, 단수이므로 teaches로 수를 맞춘다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것은?  ⓐ I have a friend ____ lives in Jeju.  ⓑ The train ____ goes to Busan is fast.",
+   "choices": [
+    "who – which",
+    "which – who",
+    "who – who",
+    "which – which",
+    "whose – which"
+   ],
+   "answer": 1,
+   "why": "ⓐ는 사람 선행사라 who, ⓑ는 사물 선행사라 which를 쓴다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것은?  ⓐ The boy who ____ over there is my brother.  ⓑ The books which ____ on the shelf are mine.",
+   "choices": [
+    "stand – is",
+    "stands – are",
+    "stand – are",
+    "stands – is",
+    "standing – are"
+   ],
+   "answer": 2,
+   "why": "ⓐ의 선행사 The boy는 단수라 stands, ⓑ의 선행사 The books는 복수라 are를 쓴다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 들어갈 말이 나머지 넷과 다른 것은?",
+   "choices": [
+    "I know a man ____ has a nice car.",
+    "The girl ____ is crying is lost.",
+    "The cup ____ is on the table is dirty.",
+    "The doctor ____ helped us is kind.",
+    "The player ____ scored is my friend."
+   ],
+   "answer": 3,
+   "why": "③만 선행사가 사물(The cup)이라 which가 들어가고, 나머지는 모두 사람 선행사라 who가 들어간다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?  A: Which bag is yours?  B: The bag ____ has a yellow ribbon is mine.",
+   "choices": [
+    "who",
+    "whom",
+    "whose",
+    "what",
+    "which"
+   ],
+   "answer": 5,
+   "why": "선행사 The bag이 사물이고 has의 주어 자리이므로 주격 which가 알맞다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?  A: Do you know the boy over there?  B: Yes. He is the boy ____ won the singing contest.",
+   "choices": [
+    "which",
+    "what",
+    "whose",
+    "who",
+    "whom"
+   ],
+   "answer": 4,
+   "why": "선행사 the boy가 사람이고 won의 주어 자리이므로 주격 who를 쓴다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 틀린 부분은?  <u>The</u> girl <u>which</u> <u>is</u> playing the piano <u>is</u> my sister, Yuna.",
+   "choices": [
+    "The",
+    "which",
+    "is playing의 is",
+    "is my sister의 is",
+    "my sister"
+   ],
+   "answer": 2,
+   "why": "선행사 The girl은 사람이므로 which가 아니라 who를 써야 한다. 나머지는 모두 알맞다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 틀린 부분은?  I <u>have</u> a <u>friend</u> <u>who</u> <u>live</u> in <u>Canada</u>.",
+   "choices": [
+    "have",
+    "friend",
+    "who",
+    "live",
+    "Canada"
+   ],
+   "answer": 4,
+   "why": "주격 관계대명사 뒤의 동사는 선행사 a friend(단수)에 맞춰야 하므로 live가 아니라 lives를 써야 한다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 관계대명사를 쓰시오. (who 또는 which 중에서 고를 것)  I have a friend ____ lives in Ulsan.",
+   "answer": "who",
+   "alt": [],
+   "why": "선행사 a friend가 사람이고 lives의 주어 자리이므로 주격 who를 쓴다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 관계대명사를 쓰시오. (who 또는 which 중에서 고를 것)  The car ____ is parked outside is my dad's.",
+   "answer": "which",
+   "alt": [],
+   "why": "선행사 The car가 사물이고 is의 주어 자리이므로 주격 which를 쓴다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 관계대명사를 쓰시오. (who 또는 which 중에서 고를 것)  Do you know the woman ____ is singing on the stage?",
+   "answer": "who",
+   "alt": [],
+   "why": "선행사 the woman이 사람이므로 주격 관계대명사 who가 알맞다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 관계대명사를 쓰시오. (who 또는 which 중에서 고를 것)  I like the shoes ____ are on sale.",
+   "answer": "which",
+   "alt": [],
+   "why": "선행사 the shoes가 사물이므로 주격 which를 쓴다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 관계대명사를 쓰시오. (who 또는 which 중에서 고를 것)  The man ____ made this table is a carpenter.",
+   "answer": "who",
+   "alt": [],
+   "why": "선행사 The man이 사람이고 made의 주어가 없으므로 주격 who를 쓴다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 관계대명사를 쓰시오. (who 또는 which 중에서 고를 것)  A dog ____ has short legs ran to me.",
+   "answer": "which",
+   "alt": [],
+   "why": "선행사 A dog은 동물이므로 주격 which를 쓴다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 한 단어로 쓰시오.  I know a boy who (play) the guitar very well.",
+   "answer": "plays",
+   "alt": [],
+   "why": "선행사 a boy가 3인칭 단수이므로 관계대명사절의 동사에 -s를 붙여 plays로 쓴다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 한 단어로 쓰시오.  The girls who (be) in my class are very kind.",
+   "answer": "are",
+   "alt": [],
+   "why": "선행사 The girls가 복수이므로 be동사는 are가 된다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 한 단어로 쓰시오.  This is a robot which (clean) the floor.",
+   "answer": "cleans",
+   "alt": [],
+   "why": "선행사 a robot이 단수이므로 현재시제 동사는 cleans이다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 한 단어로 쓰시오.  The students who (study) hard get good grades.",
+   "answer": "study",
+   "alt": [],
+   "why": "선행사 The students가 복수이므로 동사원형 study를 그대로 쓴다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 한 단어로 쓰시오.  I have a cousin who (live) in Gwangju.",
+   "answer": "lives",
+   "alt": [],
+   "why": "선행사 a cousin이 3인칭 단수이므로 lives가 알맞다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.  The book <u>who</u> is on the desk is mine.",
+   "answer": "which",
+   "alt": [
+    "that"
+   ],
+   "why": "선행사 The book이 사물이므로 who가 아니라 which(또는 that)를 써야 한다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.  I know a girl <u>which</u> plays soccer every Sunday.",
+   "answer": "who",
+   "alt": [
+    "that"
+   ],
+   "why": "선행사 a girl이 사람이므로 which가 아니라 who(또는 that)를 써야 한다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.  The boys who <u>is</u> running in the park are fast.",
+   "answer": "are",
+   "alt": [],
+   "why": "주격 관계대명사 뒤의 동사는 선행사에 수를 맞춘다. The boys가 복수이므로 are를 쓴다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.  She has a cat which <u>have</u> long hair.",
+   "answer": "has",
+   "alt": [],
+   "why": "선행사 a cat이 단수이므로 have가 아니라 has를 써야 한다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "관계대명사 who를 사용하여 두 문장을 한 문장으로 쓰시오.  I have a friend. + He lives in Toronto.",
+   "answer": "I have a friend who lives in Toronto.",
+   "alt": [
+    "I have a friend who lives in Toronto"
+   ],
+   "why": "뒤 문장의 주어 He를 주격 관계대명사 who로 바꿔 선행사 a friend 뒤에 연결한다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "관계대명사 who를 사용하여 두 문장을 한 문장으로 쓰시오.  I know the girl. + She won the prize.",
+   "answer": "I know the girl who won the prize.",
+   "alt": [
+    "I know the girl who won the prize"
+   ],
+   "why": "She가 주어 자리이므로 주격 who로 바꾸어 the girl 뒤에 연결한다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "관계대명사 which를 사용하여 두 문장을 한 문장으로 쓰시오.  This is the bus. + It goes to the airport.",
+   "answer": "This is the bus which goes to the airport.",
+   "alt": [
+    "This is the bus which goes to the airport"
+   ],
+   "why": "It이 주어이고 선행사 the bus가 사물이므로 주격 which로 연결한다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "관계대명사 which를 사용하여 두 문장을 한 문장으로 쓰시오.  I have a bike. + It is very old.",
+   "answer": "I have a bike which is very old.",
+   "alt": [
+    "I have a bike which is very old"
+   ],
+   "why": "It을 주격 관계대명사 which로 바꾸어 선행사 a bike 뒤에 붙인다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "관계대명사 who를 사용하여 두 문장을 한 문장으로 쓰시오.  Look at the boy. + He is dancing on the stage.",
+   "answer": "Look at the boy who is dancing on the stage.",
+   "alt": [
+    "Look at the boy who is dancing on the stage"
+   ],
+   "why": "He를 주격 who로 바꾸어 사람 선행사 the boy 뒤에 연결한다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The volunteers ____ cleaned the beach last weekend received a thank-you letter.",
+   "choices": [
+    "who",
+    "whom",
+    "whose",
+    "what",
+    "where"
+   ],
+   "answer": 1,
+   "why": "선행사 The volunteers가 사람이고 cleaned의 주어 자리이므로 주격 who를 쓴다. whom은 목적격이라 주어 자리에 올 수 없다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  I read an article ____ explains why bees are disappearing.",
+   "choices": [
+    "who",
+    "whom",
+    "what",
+    "which",
+    "whose"
+   ],
+   "answer": 4,
+   "why": "선행사 an article이 사물이고 explains의 주어가 비어 있으므로 주격 which가 알맞다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The app ____ helps students learn new words became popular.",
+   "choices": [
+    "who",
+    "whom",
+    "whose",
+    "what",
+    "which"
+   ],
+   "answer": 5,
+   "why": "사물 선행사 The app 뒤 helps의 주어 자리이므로 주격 which를 쓴다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The teacher ____ organized the school festival looked tired.",
+   "choices": [
+    "which",
+    "what",
+    "who",
+    "whose",
+    "whom"
+   ],
+   "answer": 3,
+   "why": "사람 선행사 The teacher 뒤 organized의 주어가 없으므로 주격 who가 알맞다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  Suji bought a jacket ____ keeps her warm in winter.",
+   "choices": [
+    "who",
+    "whom",
+    "whose",
+    "which",
+    "what"
+   ],
+   "answer": 4,
+   "why": "사물 선행사 a jacket 뒤 keeps의 주어 자리이므로 주격 which를 쓴다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The company ____ makes these shoes uses recycled plastic.",
+   "choices": [
+    "who",
+    "whom",
+    "what",
+    "which",
+    "whose"
+   ],
+   "answer": 4,
+   "why": "선행사 The company는 사물(단체)이고 makes의 주어 자리이므로 which가 알맞다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  A friend ____ tells you the truth is a real friend.",
+   "choices": [
+    "who",
+    "what",
+    "which",
+    "whose",
+    "whom"
+   ],
+   "answer": 1,
+   "why": "사람 선행사 A friend 뒤 tells의 주어가 비어 있으므로 주격 who를 쓴다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The train ____ leaves at seven is always crowded.",
+   "choices": [
+    "who",
+    "whom",
+    "whose",
+    "what",
+    "which"
+   ],
+   "answer": 5,
+   "why": "사물 선행사 The train 뒤 leaves의 주어 자리이므로 주격 which가 알맞다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  People ____ exercise every day usually sleep better.",
+   "choices": [
+    "which",
+    "what",
+    "whose",
+    "whom",
+    "who"
+   ],
+   "answer": 5,
+   "why": "People은 사람 선행사이고 exercise의 주어 자리이므로 주격 who를 쓴다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The photos ____ were taken in Jeju are on the wall.",
+   "choices": [
+    "who",
+    "whom",
+    "whose",
+    "which",
+    "what"
+   ],
+   "answer": 4,
+   "why": "사물 선행사 The photos 뒤 were taken의 주어 자리이므로 주격 which가 알맞다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The boy and the girl who ____ waiting outside are twins.",
+   "choices": [
+    "is",
+    "was",
+    "are",
+    "be",
+    "am"
+   ],
+   "answer": 3,
+   "why": "선행사가 The boy and the girl로 복수이므로 관계대명사절의 동사도 are가 된다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  Everything ____ happens has a reason.",
+   "choices": [
+    "who",
+    "which",
+    "what",
+    "that",
+    "whose"
+   ],
+   "answer": 4,
+   "why": "-thing으로 끝나는 Everything이 선행사일 때는 관계대명사 that을 쓴다. what은 선행사를 포함하므로 뒤에 올 수 없다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The homework which ____ due tomorrow is quite difficult.",
+   "choices": [
+    "are",
+    "is",
+    "were",
+    "be",
+    "being"
+   ],
+   "answer": 2,
+   "why": "선행사 The homework가 단수이고 tomorrow가 있으므로 현재시제 단수형 is가 알맞다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  Students who ____ interested in science can join this club.",
+   "choices": [
+    "are",
+    "was",
+    "is",
+    "be",
+    "being"
+   ],
+   "answer": 1,
+   "why": "선행사 Students가 복수이므로 관계대명사절의 be동사는 are이다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The machine which ____ these heavy boxes broke down yesterday.",
+   "choices": [
+    "move",
+    "moves",
+    "moving",
+    "are moving",
+    "to move"
+   ],
+   "answer": 2,
+   "why": "선행사 The machine이 단수이므로 현재시제 moves가 알맞다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  I have some cousins who ____ in Vancouver.",
+   "choices": [
+    "lives",
+    "live",
+    "living",
+    "is living",
+    "to live"
+   ],
+   "answer": 2,
+   "why": "선행사 some cousins가 복수이므로 동사원형 live를 쓴다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The book which ____ on the top shelf is about space.",
+   "choices": [
+    "are",
+    "is",
+    "were",
+    "be",
+    "being"
+   ],
+   "answer": 2,
+   "why": "선행사 The book이 단수이므로 is를 쓴다. 주절의 동사 is와도 시제가 맞는다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The children who ____ the museum last week enjoyed it a lot.",
+   "choices": [
+    "visit",
+    "visits",
+    "to visit",
+    "visiting",
+    "visited"
+   ],
+   "answer": 5,
+   "why": "last week이라는 과거 시간 표현이 있으므로 과거형 visited를 쓴다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 바른 문장은?",
+   "choices": [
+    "The man who work at the bank is my neighbor.",
+    "I want a laptop who is light and fast.",
+    "The girls which are on the stage are dancers.",
+    "We visited a village which has only ten houses.",
+    "He is the only student whom got a perfect score."
+   ],
+   "answer": 4,
+   "why": "④는 사물 선행사에 which를 쓰고 단수 동사 has로 수를 맞췄다. ①은 works, ②는 which, ③은 who, ⑤는 주어 자리이므로 that[who]이 되어야 한다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "Movies which makes me cry are not my favorite.",
+    "The scientist who discovered the cure won a prize.",
+    "I know a cafe which have great coffee.",
+    "The boys who is playing outside are noisy.",
+    "She has a friend which studies in Japan."
+   ],
+   "answer": 2,
+   "why": "②는 사람 선행사에 who를 쓰고 과거형 discovered로 바르게 썼다. ①은 make, ③은 has, ④는 are, ⑤는 who가 되어야 한다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 잘못된 문장은?",
+   "choices": [
+    "The bridge which connects the two towns is new.",
+    "Do you know anyone who can fix a bike?",
+    "The letters which arrived this morning are for you.",
+    "I like people who is kind to animals.",
+    "The store that sells sports shoes closed last month."
+   ],
+   "answer": 4,
+   "why": "④의 선행사 people은 복수이므로 is가 아니라 are를 써야 한다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 어색한 것은?",
+   "choices": [
+    "He told a story which was really funny.",
+    "The dog which barked all night belongs to Mr. Kim.",
+    "The woman which lives upstairs plays the piano.",
+    "Students who join the club must come on Fridays.",
+    "I found a website that teaches Spanish for free."
+   ],
+   "answer": 3,
+   "why": "③의 선행사 The woman은 사람이므로 which가 아니라 who[that]를 써야 한다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳지 않은 것은?",
+   "choices": [
+    "There are many people who wants to help us.",
+    "The song which won the contest is on the radio now.",
+    "I have an uncle who runs a small bakery.",
+    "The bus that stops here goes to the airport.",
+    "The rain that fell last night flooded the road."
+   ],
+   "answer": 1,
+   "why": "①의 선행사 many people은 복수이므로 wants가 아니라 want를 써야 한다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 틀린 부분은?  The woman <u>who</u> <u>live</u> next door <u>has</u> two dogs <u>that</u> <u>bark</u> loudly.",
+   "choices": [
+    "who",
+    "live",
+    "has",
+    "that",
+    "bark"
+   ],
+   "answer": 2,
+   "why": "주격 관계대명사 뒤 동사는 선행사 The woman(단수)에 맞춰 lives가 되어야 한다. two dogs 뒤의 bark는 복수라서 맞다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 틀린 부분은?  <u>People</u> <u>who</u> <u>eats</u> too much sugar <u>often</u> <u>feel</u> tired.",
+   "choices": [
+    "People",
+    "who",
+    "eats",
+    "often",
+    "feel"
+   ],
+   "answer": 3,
+   "why": "선행사 People이 복수이므로 관계대명사절의 동사는 eats가 아니라 eat이어야 한다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 틀린 부분은?  The movie <u>which</u> <u>won</u> the prize <u>are</u> <u>about</u> a girl <u>who</u> travels in time.",
+   "choices": [
+    "are",
+    "won",
+    "which",
+    "about",
+    "who"
+   ],
+   "answer": 1,
+   "why": "주어가 The movie로 단수이므로 문장의 동사는 are가 아니라 is여야 한다. 관계대명사 which와 who는 바르게 쓰였다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바르게 옮긴 것은?  I met a girl. + She comes from Spain.",
+   "choices": [
+    "I met a girl who come from Spain.",
+    "I met a girl which comes from Spain.",
+    "I met a girl who she comes from Spain.",
+    "I met a girl whose comes from Spain.",
+    "I met a girl who comes from Spain."
+   ],
+   "answer": 5,
+   "why": "She를 주격 who로 바꾸고, 선행사가 단수이므로 comes를 쓴다. 관계대명사가 주어를 대신하므로 she를 다시 쓰면 안 된다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바르게 옮긴 것은?  The house is very old. + It stands on the hill.",
+   "choices": [
+    "The house who stands on the hill is very old.",
+    "The house which stands on the hill is very old.",
+    "The house which stand on the hill is very old.",
+    "The house which it stands on the hill is very old.",
+    "The house whose stands on the hill is very old."
+   ],
+   "answer": 2,
+   "why": "It을 주격 which로 바꿔 선행사 The house 뒤에 넣고, 단수이므로 stands를 쓴다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바르게 옮긴 것은?  I have a friend. + He can play the drums.",
+   "choices": [
+    "I have a friend who can plays the drums.",
+    "I have a friend which can play the drums.",
+    "I have a friend who can play the drums.",
+    "I have a friend who he can play the drums.",
+    "I have a friend whom can play the drums."
+   ],
+   "answer": 3,
+   "why": "조동사 can 뒤에는 동사원형을 쓰므로 who can play가 맞다. 관계대명사 뒤에 he를 또 쓰면 안 된다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바르게 옮긴 것은?  The students are my classmates. + They are cleaning the classroom.",
+   "choices": [
+    "The students who are cleaning the classroom are my classmates.",
+    "The students which are cleaning the classroom are my classmates.",
+    "The students who is cleaning the classroom are my classmates.",
+    "The students who are cleaning the classroom is my classmates.",
+    "The students whom are cleaning the classroom are my classmates."
+   ],
+   "answer": 1,
+   "why": "사람 복수 선행사이므로 who + are를 쓰고, 주절의 동사도 복수형 are가 되어야 한다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바르게 옮긴 것은?  I want to read the book. + It won the prize last year.",
+   "choices": [
+    "I want to read the book which win the prize last year.",
+    "I want to read the book who won the prize last year.",
+    "I want to read the book what won the prize last year.",
+    "I want to read the book which it won the prize last year.",
+    "I want to read the book which won the prize last year."
+   ],
+   "answer": 5,
+   "why": "사물 선행사에 which를 쓰고 last year에 맞춰 과거형 won을 쓴다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바르게 옮긴 것은?  We talked to the police officer. + He found my wallet.",
+   "choices": [
+    "We talked to the police officer who found my wallet.",
+    "We talked to the police officer which found my wallet.",
+    "We talked to the police officer who founds my wallet.",
+    "We talked to the police officer whose found my wallet.",
+    "We talked to the police officer who he found my wallet."
+   ],
+   "answer": 1,
+   "why": "사람 선행사에 주격 who를 쓰고 과거형 found를 그대로 쓴다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  나는 매일 아침 운동하는 삼촌이 한 분 있다.",
+   "choices": [
+    "I have an uncle which exercises every morning.",
+    "I have an uncle who exercise every morning.",
+    "I have an uncle who exercises every morning.",
+    "I have an uncle whose exercises every morning.",
+    "I have an uncle who is exercise every morning."
+   ],
+   "answer": 3,
+   "why": "사람 선행사 an uncle에는 who를 쓰고 단수이므로 exercises로 수를 맞춘다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  무대 위에서 노래하고 있는 그 소년들은 내 친구들이다.",
+   "choices": [
+    "The boys who is singing on the stage are my friends.",
+    "The boys who are singing on the stage are my friends.",
+    "The boys which are singing on the stage are my friends.",
+    "The boys who are singing on the stage is my friends.",
+    "The boys whom are singing on the stage are my friends."
+   ],
+   "answer": 2,
+   "why": "선행사 The boys가 사람 복수이므로 who are singing이 되고 주절의 동사도 are이다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그것은 사람들을 미소 짓게 만드는 이야기이다.",
+   "choices": [
+    "It is a story which makes people smile.",
+    "It is a story which make people smile.",
+    "It is a story who makes people smile.",
+    "It is a story what makes people smile.",
+    "It is a story whose makes people smile."
+   ],
+   "answer": 1,
+   "why": "사물 선행사 a story에는 which를 쓰고 단수이므로 makes가 된다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  부산으로 가는 그 기차는 10시에 떠난다.",
+   "choices": [
+    "The train who goes to Busan leaves at ten.",
+    "The train which go to Busan leaves at ten.",
+    "The train what goes to Busan leaves at ten.",
+    "The train which goes to Busan leave at ten.",
+    "The train which goes to Busan leaves at ten."
+   ],
+   "answer": 5,
+   "why": "사물 선행사 The train에 which를 쓰고, 관계대명사절과 주절 모두 단수 동사 goes, leaves를 쓴다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 who의 쓰임이 나머지 넷과 다른 것은?",
+   "choices": [
+    "I don't know <u>who</u> broke the window.",
+    "The boy <u>who</u> lives upstairs is friendly.",
+    "A person <u>who</u> never gives up will succeed.",
+    "The chef <u>who</u> made this soup is famous.",
+    "I like teachers <u>who</u> tell funny stories."
+   ],
+   "answer": 1,
+   "why": "①의 who는 '누가'라는 뜻의 의문사로 선행사가 없다. 나머지는 모두 앞의 사람 명사를 수식하는 주격 관계대명사이다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 that의 쓰임이 나머지 넷과 다른 것은?",
+   "choices": [
+    "I know <u>that</u> she is honest.",
+    "The bus <u>that</u> goes downtown is late.",
+    "People <u>that</u> live here are very kind.",
+    "The cat <u>that</u> sleeps on my bed is fat.",
+    "I bought a pen <u>that</u> writes smoothly."
+   ],
+   "answer": 1,
+   "why": "①의 that은 명사절을 이끄는 접속사이고, 나머지는 모두 선행사를 수식하는 주격 관계대명사이다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 which의 쓰임이 나머지 넷과 다른 것은?",
+   "choices": [
+    "<u>Which</u> color do you like better?",
+    "The tree <u>which</u> stands in our yard is 50 years old.",
+    "I found a box <u>which</u> was full of old photos.",
+    "The road <u>which</u> leads to the beach is closed.",
+    "She wore a dress <u>which</u> looked expensive."
+   ],
+   "answer": 1,
+   "why": "①의 Which는 '어느'라는 뜻의 의문사이고, 나머지는 모두 사물 선행사를 받는 주격 관계대명사이다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것은?  ⓐ I have a cousin ____ works at a zoo.  ⓑ The zoo ____ opened last year is huge.",
+   "choices": [
+    "who – which",
+    "which – who",
+    "who – who",
+    "whose – which",
+    "which – which"
+   ],
+   "answer": 1,
+   "why": "ⓐ는 사람 선행사 a cousin이므로 who, ⓑ는 사물 선행사 The zoo이므로 which를 쓴다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것은?  ⓐ The dogs which ____ in the yard are friendly.  ⓑ The man who ____ the shop is my neighbor.",
+   "choices": [
+    "play – own",
+    "plays – owns",
+    "play – owns",
+    "plays – own",
+    "playing – owns"
+   ],
+   "answer": 3,
+   "why": "ⓐ는 선행사 The dogs가 복수라 play, ⓑ는 선행사 The man이 단수라 owns를 쓴다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?  ⓐ The girl ____ sits in front of me is from Canada.  ⓑ The book ____ won the prize is a novel.",
+   "choices": [
+    "who",
+    "which",
+    "whose",
+    "that",
+    "what"
+   ],
+   "answer": 4,
+   "why": "that은 사람과 사물 선행사에 모두 쓸 수 있으므로 두 빈칸에 공통으로 들어간다. who는 ⓐ에만, which는 ⓑ에만 쓸 수 있다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?  A: Which one is your bag?  B: The one ____ has two side pockets is mine.",
+   "choices": [
+    "who",
+    "whom",
+    "whose",
+    "what",
+    "that"
+   ],
+   "answer": 5,
+   "why": "선행사 The one이 사물이고 주어 자리이므로 that을 쓸 수 있다. who와 whom은 사람에게, whose 뒤에는 명사가 온다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?  A: Why do you like this cafe?  B: Because it is a place ____ makes me feel calm.",
+   "choices": [
+    "who",
+    "whom",
+    "whose",
+    "what",
+    "which"
+   ],
+   "answer": 5,
+   "why": "선행사 a place가 사물이고 makes의 주어 자리이므로 주격 which가 알맞다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ⓐ I have a friend who live in Daegu.  ⓑ The bag which is on the sofa is mine.  ⓒ People who eats late gain weight.  ⓓ The bus that goes to school is late.  ⓔ I like songs which makes me happy.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "옳은 것은 ⓑ, ⓓ 두 개이다. ⓐ는 lives, ⓒ는 eat, ⓔ는 make로 고쳐야 선행사와 수가 맞는다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?  ⓐ The man which fixed my bike is kind.  ⓑ Students who study hard do well.  ⓒ The cat which have blue eyes is mine.  ⓓ The trees which grow here are very tall.  ⓔ I know a boy who can speaks Chinese.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "틀린 것은 ⓐ(which→who), ⓒ(have→has), ⓔ(speaks→speak) 세 개이다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 관계대명사를 쓰시오. (who 또는 which 중에서 고를 것)  The nurse ____ took care of my grandfather was very kind.",
+   "answer": "who",
+   "alt": [],
+   "why": "사람 선행사 The nurse 뒤에 took의 주어가 비어 있으므로 주격 who를 쓴다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 관계대명사를 쓰시오. (who 또는 which 중에서 고를 것)  The bakery ____ opens at six sells fresh bread.",
+   "answer": "which",
+   "alt": [],
+   "why": "사물 선행사 The bakery 뒤 opens의 주어 자리이므로 주격 which를 쓴다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 관계대명사를 쓰시오. (who 또는 which 중에서 고를 것)  I have a classmate ____ collects old coins.",
+   "answer": "who",
+   "alt": [],
+   "why": "사람 선행사 a classmate 뒤 collects의 주어 자리이므로 who가 알맞다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 관계대명사를 쓰시오. (who 또는 which 중에서 고를 것)  The plane ____ leaves for Tokyo is delayed by an hour.",
+   "answer": "which",
+   "alt": [],
+   "why": "사물 선행사 The plane 뒤 leaves의 주어 자리이므로 which가 알맞다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 관계대명사를 쓰시오. (who 또는 which 중에서 고를 것)  Anyone ____ wants to join the drama club can come on Friday.",
+   "answer": "who",
+   "alt": [],
+   "why": "Anyone은 사람을 가리키는 선행사이므로 주격 who를 쓴다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 빈칸에 공통으로 들어갈 관계대명사를 한 단어로 쓰시오.  ⓐ The girl ____ won the race is my sister.  ⓑ The car ____ is parked here is new.",
+   "answer": "that",
+   "alt": [],
+   "why": "that은 사람과 사물 선행사에 모두 쓸 수 있어 두 문장에 공통으로 들어간다. who는 ⓐ에만, which는 ⓑ에만 가능하다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 한 단어로 쓰시오.  The students who (be) late must write a note.",
+   "answer": "are",
+   "alt": [],
+   "why": "선행사 The students가 복수이므로 be동사는 are가 된다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 한 단어로 쓰시오.  I know a man who (own) three restaurants.",
+   "answer": "owns",
+   "alt": [],
+   "why": "선행사 a man이 3인칭 단수이므로 owns를 쓴다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 한 단어로 쓰시오.  The pictures which (be) on the wall are very old.",
+   "answer": "are",
+   "alt": [],
+   "why": "선행사 The pictures가 복수이므로 관계대명사절의 be동사도 are이다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 한 단어로 쓰시오.  The boy who (win) the contest yesterday is my cousin.",
+   "answer": "won",
+   "alt": [],
+   "why": "yesterday가 있으므로 관계대명사절의 동사는 과거형 won이다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 한 단어로 쓰시오.  People who (recycle) paper help the earth.",
+   "answer": "recycle",
+   "alt": [],
+   "why": "선행사 People이 복수이므로 동사원형 recycle을 그대로 쓴다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 한 단어로 쓰시오.  A friend who (help) you in trouble is a true friend.",
+   "answer": "helps",
+   "alt": [],
+   "why": "선행사 A friend가 단수이므로 helps로 수를 맞춘다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.  I have a sister <u>which</u> studies design in Canada.",
+   "answer": "who",
+   "alt": [
+    "that"
+   ],
+   "why": "선행사 a sister가 사람이므로 which가 아니라 who[that]를 써야 한다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.  The rules that <u>protects</u> children are very important.",
+   "answer": "protect",
+   "alt": [],
+   "why": "선행사 The rules가 복수이므로 관계대명사절의 동사도 복수형 protect가 되어야 한다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.  The woman who <u>are</u> standing at the door is my aunt.",
+   "answer": "is",
+   "alt": [],
+   "why": "선행사 The woman이 단수이므로 are가 아니라 is를 써야 한다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.  Everything <u>which</u> happens in this room is recorded.",
+   "answer": "that",
+   "alt": [],
+   "why": "-thing으로 끝나는 Everything이 선행사일 때는 관계대명사 that을 쓴다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "관계대명사 who를 사용하여 두 문장을 한 문장으로 쓰시오.  I thanked the man. + He carried my suitcase.",
+   "answer": "I thanked the man who carried my suitcase.",
+   "alt": [
+    "I thanked the man who carried my suitcase"
+   ],
+   "why": "He가 주어 자리이므로 주격 who로 바꾸어 사람 선행사 the man 뒤에 연결한다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "관계대명사 which를 사용하여 두 문장을 한 문장으로 쓰시오.  This is the app. + It translates fifty languages.",
+   "answer": "This is the app which translates fifty languages.",
+   "alt": [
+    "This is the app which translates fifty languages"
+   ],
+   "why": "It을 주격 which로 바꾸어 사물 선행사 the app 뒤에 붙인다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "관계대명사 who를 사용하여 두 문장을 한 문장으로 쓰시오.  The girl is my cousin. + She is wearing a blue hat.",
+   "answer": "The girl who is wearing a blue hat is my cousin.",
+   "alt": [
+    "The girl who is wearing a blue hat is my cousin"
+   ],
+   "why": "She를 who로 바꾸어 선행사 The girl 바로 뒤에 넣고, 주절의 동사 is my cousin은 그대로 둔다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "관계대명사 which를 사용하여 두 문장을 한 문장으로 쓰시오.  The building is a library. + It stands next to the park.",
+   "answer": "The building which stands next to the park is a library.",
+   "alt": [
+    "The building which stands next to the park is a library"
+   ],
+   "why": "It을 which로 바꾸어 선행사 The building 뒤에 넣으면 관계대명사절이 주어를 수식하는 형태가 된다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The only student ____ finished the test early was Minji.",
+   "choices": [
+    "which",
+    "what",
+    "whose",
+    "whom",
+    "that"
+   ],
+   "answer": 5,
+   "why": "선행사에 the only가 붙으면 관계대명사 that을 쓴다. which는 사람에 쓸 수 없고 whom은 목적격이라 주어 자리에 올 수 없다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  Look at the boy and his dog ____ are running along the river.",
+   "choices": [
+    "who",
+    "which",
+    "what",
+    "whose",
+    "that"
+   ],
+   "answer": 5,
+   "why": "선행사가 '사람 + 동물'일 때는 who나 which를 쓸 수 없고 that을 쓴다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  Everything ____ makes you nervous before a speech is quite normal.",
+   "choices": [
+    "who",
+    "which",
+    "what",
+    "whose",
+    "that"
+   ],
+   "answer": 5,
+   "why": "-thing으로 끝나는 Everything이 선행사이면 that을 쓴다. what은 선행사를 포함하는 관계대명사라 앞에 선행사가 오면 안 된다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  This is the most exciting game ____ has ever been played in this stadium.",
+   "choices": [
+    "who",
+    "which",
+    "what",
+    "whose",
+    "that"
+   ],
+   "answer": 5,
+   "why": "선행사에 최상급(the most exciting)이 붙으면 관계대명사 that을 쓴다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  My aunt, ____ lives in Jeonju, sent me a box of apples.",
+   "choices": [
+    "that",
+    "which",
+    "what",
+    "whose",
+    "who"
+   ],
+   "answer": 5,
+   "why": "콤마가 있는 계속적 용법에서는 that을 쓸 수 없고, 선행사가 사람이므로 who를 쓴다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The typhoon, ____ hit the island last night, destroyed many houses.",
+   "choices": [
+    "who",
+    "that",
+    "what",
+    "whose",
+    "which"
+   ],
+   "answer": 5,
+   "why": "콤마가 있는 계속적 용법이므로 that은 쓸 수 없고, 사물 선행사이므로 which를 쓴다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The books which ____ on that shelf belong to the school library.",
+   "choices": [
+    "are",
+    "was",
+    "is",
+    "be",
+    "has"
+   ],
+   "answer": 1,
+   "why": "관계대명사절의 동사는 선행사 The books(복수)에 맞춰 are를 쓴다. 주절의 동사 belong도 복수형인 점을 참고할 수 있다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The man who ____ the tickets for us yesterday is waiting outside.",
+   "choices": [
+    "buy",
+    "buys",
+    "to buy",
+    "buying",
+    "bought"
+   ],
+   "answer": 5,
+   "why": "yesterday가 있으므로 관계대명사절의 동사는 과거형 bought이다. 주절은 현재이므로 is waiting을 그대로 쓴다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  There ____ several people who want to speak to you.",
+   "choices": [
+    "is",
+    "was",
+    "are",
+    "be",
+    "being"
+   ],
+   "answer": 3,
+   "why": "There 뒤의 동사는 뒤에 오는 명사 several people에 맞춰 are를 쓴다. 관계대명사절의 want도 복수형이다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The girls who joined the dance club ____ practicing every Friday.",
+   "choices": [
+    "is",
+    "are",
+    "was",
+    "be",
+    "being"
+   ],
+   "answer": 2,
+   "why": "주어는 The girls이고 who joined the dance club은 수식어이므로 문장의 동사는 복수형 are가 된다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The company which makes these bags ____ founded in 1985.",
+   "choices": [
+    "was",
+    "are",
+    "were",
+    "is",
+    "be"
+   ],
+   "answer": 1,
+   "why": "주어 The company가 단수이고 1985라는 과거를 나타내므로 was founded가 알맞다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 정확한 문장은?",
+   "choices": [
+    "I have a friend who her mother is a pilot.",
+    "The boy and his dog who are in the yard look happy.",
+    "Everything which he touches turns to gold.",
+    "The scientist who won the Nobel Prize is from Korea.",
+    "My father, that works at a bank, comes home late."
+   ],
+   "answer": 4,
+   "why": "④만 사람 선행사에 주격 who를 바르게 썼다. ①은 whose, ②는 that, ③은 that, ⑤는 계속적 용법이라 who를 써야 한다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 자연스러운 문장은?",
+   "choices": [
+    "There is a boy who want to see you.",
+    "The animals which lives in the desert save water.",
+    "The only thing that matters is your effort.",
+    "My uncle, that is a chef, opened a restaurant.",
+    "People which work at night often feel tired."
+   ],
+   "answer": 3,
+   "why": "③은 the only가 붙은 선행사에 that을 바르게 썼다. ①은 wants, ②는 live, ④는 who, ⑤는 who로 고쳐야 한다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 바르지 않은 문장은?",
+   "choices": [
+    "The girl who is playing the violin is my sister.",
+    "I know a boy that speaks four languages.",
+    "The keys which were on the desk are missing.",
+    "The man and the horse who crossed the river were tired.",
+    "Anything that helps the environment is welcome."
+   ],
+   "answer": 4,
+   "why": "④는 선행사가 '사람 + 동물'이므로 who가 아니라 that을 써야 한다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 고쳐야 할 문장은?",
+   "choices": [
+    "Seoul, which is the capital of Korea, has many tall buildings.",
+    "The paintings which hang in this room were made by students.",
+    "Everyone who was invited came to the party.",
+    "The bridge which connect the two islands opened last year.",
+    "It is the best movie that I have ever seen."
+   ],
+   "answer": 4,
+   "why": "④는 선행사 The bridge가 단수이므로 connect가 아니라 connects를 써야 한다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 틀린 부분은?  The scientists <u>who</u> <u>studies</u> climate change <u>say</u> <u>that</u> the sea level <u>is</u> rising.",
+   "choices": [
+    "who",
+    "studies",
+    "say",
+    "that",
+    "is"
+   ],
+   "answer": 2,
+   "why": "선행사 The scientists가 복수이므로 관계대명사절의 동사는 study가 되어야 한다. 주절의 동사 say도 복수형으로 맞게 쓰였다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 틀린 부분은?  <u>The</u> woman <u>that</u> <u>lives</u> across the street <u>have</u> a son <u>who</u> plays the cello.",
+   "choices": [
+    "The",
+    "that",
+    "lives",
+    "have",
+    "who"
+   ],
+   "answer": 4,
+   "why": "문장의 주어는 The woman(단수)이므로 have가 아니라 has를 써야 한다. that lives는 선행사가 단수라 알맞다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 틀린 부분은?  <u>Anything</u> <u>which</u> <u>is</u> written in this notebook <u>must</u> <u>stay</u> secret.",
+   "choices": [
+    "Anything",
+    "which",
+    "is",
+    "must",
+    "stay"
+   ],
+   "answer": 2,
+   "why": "-thing으로 끝나는 Anything이 선행사이므로 which가 아니라 that을 써야 한다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?  ㄱ. The girl who sits next to me is from Vietnam.  ㄴ. The dogs which barks at night belong to Mr. Lee.  ㄷ. Everything that shines is not gold.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄴ은 선행사 The dogs가 복수이므로 barks를 bark로 고쳐야 한다. ㄱ과 ㄷ은 선행사와 관계대명사, 동사의 수가 모두 알맞다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?  ㄱ. My brother, that studies law, lives in Daegu.  ㄴ. There are many students who need extra help.  ㄷ. The bus which stops here go downtown.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄷ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 계속적 용법이라 that 대신 who를 써야 하고, ㄷ은 주어 The bus가 단수이므로 goes가 되어야 한다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?  ㄱ. I like people who are honest about their mistakes.  ㄴ. The cake which was on the table has disappeared.  ㄷ. The boy and his cat who are sleeping look cute.",
+   "choices": [
+    "ㄱ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 2,
+   "why": "ㄷ은 선행사가 '사람 + 동물'이므로 who가 아니라 that을 써야 한다. ㄱ, ㄴ은 어법상 옳다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ⓐ The runner who finished first is only sixteen.  ⓑ Books which is written in easy English help beginners.  ⓒ The only person that knew the truth stayed silent.  ⓓ My phone, that is three years old, still works well.  ⓔ There is a cafe which sells homemade cookies.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "옳은 것은 ⓐ, ⓒ, ⓔ 세 개이다. ⓑ는 is를 are로, ⓓ는 계속적 용법이므로 that을 which로 고쳐야 한다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?  ⓐ Everything which happened that night was strange.  ⓑ The students who are in the gym are practicing.  ⓒ The man which called you left a message.  ⓓ The tallest boy that plays for our team is Junho.  ⓔ The pictures which hangs in the hall are famous.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "틀린 것은 ⓐ(which→that), ⓒ(which→who), ⓔ(hangs→hang) 세 개이다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바르게 옮긴 것은?  The woman is a famous writer. + She gave a talk at our school.",
+   "choices": [
+    "The woman who gave a talk at our school is a famous writer.",
+    "The woman which gave a talk at our school is a famous writer.",
+    "The woman who she gave a talk at our school is a famous writer.",
+    "The woman who gave a talk at our school are a famous writer.",
+    "The woman whom gave a talk at our school is a famous writer."
+   ],
+   "answer": 1,
+   "why": "She를 주격 who로 바꿔 선행사 뒤에 넣는다. 관계대명사가 주어를 대신하므로 she를 또 쓰면 안 되고, 주절의 동사는 단수 is이다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바르게 옮긴 것은?  I still remember the day. + It changed my life.",
+   "choices": [
+    "I still remember the day who changed my life.",
+    "I still remember the day which changed my life.",
+    "I still remember the day which it changed my life.",
+    "I still remember the day what changed my life.",
+    "I still remember the day which change my life."
+   ],
+   "answer": 2,
+   "why": "It을 사물 선행사를 받는 주격 which로 바꾸고 과거형 changed를 그대로 쓴다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바르게 옮긴 것은?  The boy and his dog looked happy. + They were in the park.",
+   "choices": [
+    "The boy and his dog who were in the park looked happy.",
+    "The boy and his dog which were in the park looked happy.",
+    "The boy and his dog whose were in the park looked happy.",
+    "The boy and his dog that was in the park looked happy.",
+    "The boy and his dog that were in the park looked happy."
+   ],
+   "answer": 5,
+   "why": "선행사가 '사람 + 동물'이므로 that을 쓰고, 선행사가 복수이므로 동사는 were가 된다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바르게 옮긴 것은?  I visited Busan. + It is the second largest city in Korea.",
+   "choices": [
+    "I visited Busan, that is the second largest city in Korea.",
+    "I visited Busan which is the second largest city in Korea.",
+    "I visited Busan, which is the second largest city in Korea.",
+    "I visited Busan, what is the second largest city in Korea.",
+    "I visited Busan, who is the second largest city in Korea."
+   ],
+   "answer": 3,
+   "why": "Busan처럼 이미 정해진 고유명사를 보충 설명할 때는 콤마를 쓴 계속적 용법으로 쓰며, 이때 that은 쓸 수 없다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바르게 옮긴 것은?  My grandfather still goes fishing every week. + He is 90 years old.",
+   "choices": [
+    "My grandfather, that is 90 years old, still goes fishing every week.",
+    "My grandfather, who is 90 years old, still goes fishing every week.",
+    "My grandfather, which is 90 years old, still goes fishing every week.",
+    "My grandfather, who are 90 years old, still goes fishing every week.",
+    "My grandfather, whose is 90 years old, still goes fishing every week."
+   ],
+   "answer": 2,
+   "why": "콤마로 보충 설명하는 계속적 용법에서는 that을 쓸 수 없고, 사람 선행사이므로 who + 단수 동사 is를 쓴다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  우리 반에서 중국어를 할 수 있는 유일한 학생은 지호이다.",
+   "choices": [
+    "The only student who can speaks Chinese in our class is Jiho.",
+    "The only student that can speak Chinese in our class is Jiho.",
+    "The only student which can speak Chinese in our class is Jiho.",
+    "The only student that can speak Chinese in our class are Jiho.",
+    "The only student what can speak Chinese in our class is Jiho."
+   ],
+   "answer": 2,
+   "why": "the only가 붙은 선행사에는 that을 쓰고, 조동사 can 뒤에는 동사원형을 쓴다. 주어가 단수이므로 is가 맞다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  이 도시에 사는 사람들 대부분은 자전거를 타고 출근한다.",
+   "choices": [
+    "Most of the people who live in this city ride bikes to work.",
+    "Most of the people which live in this city ride bikes to work.",
+    "Most of the people who lives in this city ride bikes to work.",
+    "Most of the people who live in this city rides bikes to work.",
+    "Most of the people whom live in this city ride bikes to work."
+   ],
+   "answer": 1,
+   "why": "선행사 the people이 복수이므로 who live가 되고, 주어 Most of the people도 복수이므로 ride를 쓴다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  지난주에 문을 연 그 서점은 밤 11시까지 문을 연다.",
+   "choices": [
+    "The bookstore who opened last week stays open until 11 p.m.",
+    "The bookstore which opened last week stay open until 11 p.m.",
+    "The bookstore what opened last week stays open until 11 p.m.",
+    "The bookstore which open last week stays open until 11 p.m.",
+    "The bookstore which opened last week stays open until 11 p.m."
+   ],
+   "answer": 5,
+   "why": "사물 선행사에 which를 쓰고 last week에 맞춰 과거형 opened, 주절은 단수 주어에 맞춰 stays를 쓴다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?  ⓐ He is the tallest player ____ has ever joined our team.  ⓑ Look at the girl and her puppy ____ are crossing the street.",
+   "choices": [
+    "who",
+    "which",
+    "what",
+    "whose",
+    "that"
+   ],
+   "answer": 5,
+   "why": "ⓐ는 최상급 선행사, ⓑ는 '사람 + 동물' 선행사이므로 둘 다 that만 쓸 수 있다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은?  ⓐ Jeju, ____ is famous for its beaches, attracts many tourists.  ⓑ I lost the umbrella ____ my mom bought for me.",
+   "choices": [
+    "who",
+    "that",
+    "what",
+    "whose",
+    "which"
+   ],
+   "answer": 5,
+   "why": "ⓐ는 콤마가 있는 계속적 용법이라 that을 쓸 수 없고, ⓑ는 사물 선행사의 목적격 자리이므로 둘 다 which가 들어간다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것은?  ⓐ The people who ____ in that village grow tea.  ⓑ The tea which ____ there is very famous.",
+   "choices": [
+    "live – is grown",
+    "lives – is grown",
+    "live – are grown",
+    "lives – grows",
+    "living – is grown"
+   ],
+   "answer": 1,
+   "why": "ⓐ의 선행사 The people은 복수라 live, ⓑ의 선행사 The tea는 단수이고 재배되는 대상이므로 수동태 is grown이 알맞다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것은?  ⓐ My sister, ____ is a nurse, works at night.  ⓑ The hospital ____ she works at is near my house.",
+   "choices": [
+    "who – which",
+    "that – which",
+    "which – who",
+    "who – whose",
+    "whom – which"
+   ],
+   "answer": 1,
+   "why": "ⓐ는 계속적 용법의 사람 선행사이므로 who, ⓑ는 사물 선행사의 목적격이므로 which를 쓴다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 that의 역할이 나머지 넷과 다른 것은?",
+   "choices": [
+    "The email <u>that</u> arrived this morning was from my teacher.",
+    "I think <u>that</u> he is telling the truth.",
+    "The only book <u>that</u> helps me is this dictionary.",
+    "Everything <u>that</u> she says makes sense.",
+    "People <u>that</u> exercise regularly live longer."
+   ],
+   "answer": 2,
+   "why": "②의 that은 목적어 역할을 하는 명사절을 이끄는 접속사이고, 나머지는 모두 선행사를 수식하는 관계대명사이다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 which의 격이 나머지 넷과 다른 것은?",
+   "choices": [
+    "The plan <u>which</u> the team suggested was accepted.",
+    "The song <u>which</u> won first prize is very popular.",
+    "The store <u>which</u> sells vintage clothes is on the corner.",
+    "The dog <u>which</u> lives next door barks a lot.",
+    "The lamp <u>which</u> stands by the window is broken."
+   ],
+   "answer": 1,
+   "why": "①은 suggested의 목적어가 빠진 목적격 관계대명사이고, 나머지는 모두 뒤에 동사가 바로 오는 주격 관계대명사이다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 관계대명사를 생략할 수 있는 것은?",
+   "choices": [
+    "The man who lives here is a poet.",
+    "The book which is on the desk is mine.",
+    "The girl who I met yesterday is from Nepal.",
+    "The dog which barks at night is loud.",
+    "The bus which goes downtown is late."
+   ],
+   "answer": 3,
+   "why": "목적격 관계대명사는 생략할 수 있다. ③만 met의 목적어 자리이고 나머지는 모두 주격이라 생략할 수 없다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 관계대명사를 that으로 바꿔 쓸 수 없는 것은?",
+   "choices": [
+    "The boy <u>who</u> won the race is my cousin.",
+    "The car <u>which</u> is parked outside is new.",
+    "Mr. Kim, <u>who</u> teaches us science, is very funny.",
+    "People <u>who</u> love music often play instruments.",
+    "The house <u>which</u> stands on the hill is empty."
+   ],
+   "answer": 3,
+   "why": "③은 콤마가 있는 계속적 용법이므로 that으로 바꿀 수 없다. 나머지는 모두 that으로 바꿔 쓸 수 있다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것은?  The woman ____ is talking to my mom is the doctor ____ treated me last year.",
+   "choices": [
+    "who – who",
+    "who – which",
+    "which – who",
+    "that – which",
+    "who – whom"
+   ],
+   "answer": 1,
+   "why": "두 빈칸 모두 사람 선행사(The woman, the doctor)의 주어 자리이므로 who가 들어간다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말이 바르게 짝지어진 것은?  A: What kind of movies do you like?  B: I like movies ____ ____ me think about life.",
+   "choices": [
+    "who make",
+    "which makes",
+    "which make",
+    "that makes",
+    "what make"
+   ],
+   "answer": 3,
+   "why": "사물 선행사 movies가 복수이므로 which와 복수 동사 make가 알맞다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말이 바르게 짝지어진 것은?  A: Why are you so late?  B: The bus ____ ____ supposed to come at eight didn't show up.",
+   "choices": [
+    "who was",
+    "which were",
+    "that were",
+    "which was",
+    "what was"
+   ],
+   "answer": 4,
+   "why": "사물 선행사 The bus가 단수이고 과거의 일이므로 which was가 알맞다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 오류가 있는 것은?",
+   "choices": [
+    "The girl who won the speech contest is in my class.",
+    "The trees which were planted last spring are growing fast.",
+    "The boy and his bike that were left outside got wet.",
+    "Nothing which he said made any sense.",
+    "My cousin, who lives in Canada, called me yesterday."
+   ],
+   "answer": 4,
+   "why": "④는 선행사가 Nothing이므로 which가 아니라 that을 써야 한다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 맞게 쓰인 문장은?",
+   "choices": [
+    "The students who has finished the exam may leave.",
+    "There is nothing which can stop him now.",
+    "The lady, that helped us, works at this bank.",
+    "The letters which were sent last week arrived today.",
+    "Most of the food which are on the table is homemade."
+   ],
+   "answer": 4,
+   "why": "④는 복수 선행사에 which were를 바르게 썼다. ①은 have, ②는 that, ③은 who, ⑤는 is로 고쳐야 한다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ⓐ Anyone who breaks the rule will be punished.  ⓑ The books which are on the top shelf are rare.  ⓒ The man and the dog which are walking together are neighbors.  ⓓ Paris, which is the capital of France, is beautiful.  ⓔ Everything that glitters is not gold.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "ⓒ만 틀렸다. 선행사가 '사람 + 동물'이므로 which가 아니라 that을 써야 한다. 나머지 네 문장은 모두 옳다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳지 않은 것을 모두 고른 것은?  ㄱ. The song which was played at the ceremony moved everyone.  ㄴ. He is the first student that arrive at school every day.  ㄷ. My laptop, that I bought last year, is already slow.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄴ은 선행사가 단수이므로 arrives, ㄷ은 계속적 용법이라 that 대신 which를 써야 한다. ㄱ은 옳다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "관계대명사와 콤마(,)를 사용하여 두 문장을 한 문장으로 쓰시오.  I called Mina. + She is my best friend.",
+   "answer": "I called Mina, who is my best friend.",
+   "alt": [
+    "I called Mina, who is my best friend"
+   ],
+   "why": "Mina는 이미 누구인지 정해진 고유명사이므로 콤마를 쓴 계속적 용법으로 보충 설명하며, 사람이므로 who를 쓴다. 이 자리에는 that을 쓸 수 없다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "관계대명사와 콤마(,)를 사용하여 두 문장을 한 문장으로 쓰시오.  I often visit Hangang Park. + It is near my house.",
+   "answer": "I often visit Hangang Park, which is near my house.",
+   "alt": [
+    "I often visit Hangang Park, which is near my house"
+   ],
+   "why": "고유명사 뒤에 콤마를 쓴 계속적 용법으로 보충 설명하며, 사물이므로 which를 쓴다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.  The boy and his dog <u>who</u> are playing in the garden look happy.",
+   "answer": "that",
+   "alt": [],
+   "why": "선행사가 '사람 + 동물'일 때는 who나 which를 쓸 수 없고 관계대명사 that을 쓴다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.  Everything <u>which</u> happens to us teaches us something.",
+   "answer": "that",
+   "alt": [],
+   "why": "-thing으로 끝나는 말이 선행사이면 관계대명사 that을 쓴다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.  My mother, <u>that</u> works at a hospital, is always busy.",
+   "answer": "who",
+   "alt": [],
+   "why": "콤마가 있는 계속적 용법에서는 that을 쓸 수 없고, 사람 선행사이므로 who를 쓴다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.  The only student <u>which</u> passed the final test is Sora.",
+   "answer": "that",
+   "alt": [],
+   "why": "선행사에 the only가 붙으면 that을 쓴다. 또한 which는 사람 선행사에 쓸 수 없다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 한 단어로 쓰시오.  The players who (join) the team last month are already stars.",
+   "answer": "joined",
+   "alt": [],
+   "why": "last month라는 과거 표현이 있으므로 관계대명사절의 동사는 과거형 joined이다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 한 단어로 쓰시오.  One thing that (make) me happy is listening to music.",
+   "answer": "makes",
+   "alt": [],
+   "why": "선행사가 One thing으로 단수이므로 관계대명사절의 동사는 makes가 된다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 한 단어로 쓰시오.  The photos which (be) taken by my father last year won a prize.",
+   "answer": "were",
+   "alt": [],
+   "why": "선행사 The photos가 복수이고 last year이므로 수동태의 be동사는 과거 복수형 were가 된다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 현재시제의 알맞은 형태로 바꿔 한 단어로 쓰시오.  There are many people who (want) to protect the forest.",
+   "answer": "want",
+   "alt": [],
+   "why": "선행사 many people이 복수이므로 관계대명사절의 동사는 want이다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 관계대명사를 한 단어로 쓰시오.  Look at the girl and her horse ____ are running on the beach.",
+   "answer": "that",
+   "alt": [],
+   "why": "선행사가 '사람 + 동물'이므로 관계대명사 that을 쓴다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 관계대명사를 한 단어로 쓰시오.  Nothing ____ happens in this town surprises me anymore.",
+   "answer": "that",
+   "alt": [],
+   "why": "-thing으로 끝나는 Nothing이 선행사이므로 that을 쓴다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 관계대명사를 한 단어로 쓰시오.  Seoul, ____ is the capital of Korea, is very crowded in the morning.",
+   "answer": "which",
+   "alt": [],
+   "why": "고유명사를 콤마로 보충 설명하는 계속적 용법이고 사물이므로 which를 쓴다. that은 계속적 용법에 쓸 수 없다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "관계대명사 who를 사용하여 두 문장을 한 문장으로 쓰시오.  The woman is my aunt. + She is standing at the gate.",
+   "answer": "The woman who is standing at the gate is my aunt.",
+   "alt": [
+    "The woman who is standing at the gate is my aunt"
+   ],
+   "why": "She를 who로 바꾸어 선행사 The woman 바로 뒤에 넣으면 관계대명사절이 주어를 수식한다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "관계대명사 which를 사용하여 두 문장을 한 문장으로 쓰시오.  The novel became a movie. + It sold a million copies.",
+   "answer": "The novel which sold a million copies became a movie.",
+   "alt": [
+    "The novel which sold a million copies became a movie"
+   ],
+   "why": "It을 which로 바꾸어 선행사 The novel 뒤에 넣고, 주절의 동사 became은 그대로 둔다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "관계대명사 that을 사용하여 두 문장을 한 문장으로 쓰시오.  He is the only friend. + He understands me.",
+   "answer": "He is the only friend that understands me.",
+   "alt": [
+    "He is the only friend that understands me"
+   ],
+   "why": "선행사에 the only가 붙으면 that을 쓰고, 선행사가 단수이므로 동사는 understands가 된다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "관계대명사 who를 사용하여 두 문장을 한 문장으로 쓰시오.  I have two brothers. + They study in Australia.",
+   "answer": "I have two brothers who study in Australia.",
+   "alt": [
+    "I have two brothers who study in Australia"
+   ],
+   "why": "They를 who로 바꾸고, 선행사 two brothers가 복수이므로 동사는 study를 쓴다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "관계대명사 which를 사용하여 두 문장을 한 문장으로 쓰시오.  The restaurant closed last month. + It served Thai food.",
+   "answer": "The restaurant which served Thai food closed last month.",
+   "alt": [
+    "The restaurant which served Thai food closed last month"
+   ],
+   "why": "It을 which로 바꾸어 선행사 The restaurant 뒤에 넣으면 관계대명사절이 주어를 수식하는 형태가 된다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.  The cookies which <u>was</u> baked this morning are already gone.",
+   "answer": "were",
+   "alt": [],
+   "why": "선행사 The cookies가 복수이고 과거의 일이므로 was가 아니라 were를 써야 한다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.  People who <u>lives</u> near the airport often complain about the noise.",
+   "answer": "live",
+   "alt": [],
+   "why": "선행사 People이 복수이므로 관계대명사절의 동사는 lives가 아니라 live이다.",
+   "no": 200
+  }
+ ]
+}

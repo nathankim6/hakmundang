@@ -1,0 +1,2640 @@
+{
+ "id": "m2-17",
+ "grade": "중2",
+ "name": "the 비교급, the 비교급·배수 표현",
+ "points": [
+  "~할수록 더 …하다",
+  "비교급 and 비교급",
+  "배수사+as ~ as"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  The more you practice, ____ you play.",
+   "choices": [
+    "the better",
+    "the good",
+    "the best",
+    "better",
+    "the more good"
+   ],
+   "answer": 1,
+   "why": "「the+비교급, the+비교급」 구문이므로 뒤 절도 the를 붙인 비교급이 와야 한다. good의 비교급은 better이고, the best는 최상급, better는 the가 빠져 안 된다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  ____ you leave, the sooner you get home.",
+   "choices": [
+    "Early",
+    "The early",
+    "The earlier",
+    "Earlier",
+    "The earliest"
+   ],
+   "answer": 3,
+   "why": "앞 절도 「the+비교급」이어야 하므로 The earlier가 맞다. the가 없는 Earlier, 원급 The early, 최상급 The earliest는 모두 안 된다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  The higher we climbed, the ____ the air became.",
+   "choices": [
+    "cold",
+    "coldest",
+    "more cold",
+    "as cold",
+    "colder"
+   ],
+   "answer": 5,
+   "why": "the 뒤에는 비교급이 와야 한다. cold는 1음절이므로 colder로 쓰고 more cold는 쓰지 않는다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  Look at the sky. It is getting ____ . (점점 더 어두워지는)",
+   "choices": [
+    "dark and dark",
+    "darker and darker",
+    "the darker and darker",
+    "more and more dark",
+    "dark and darker"
+   ],
+   "answer": 2,
+   "why": "「비교급 and 비교급」은 점점 더 ~한이라는 뜻으로, 두 자리 모두 비교급을 쓴다. dark는 1음절이므로 more and more dark가 아니라 darker and darker이다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  My English is getting ____ these days. (점점 더 좋아지는)",
+   "choices": [
+    "good and good",
+    "best and best",
+    "more and more good",
+    "better and better",
+    "the better and better"
+   ],
+   "answer": 4,
+   "why": "good의 비교급 better를 두 번 겹쳐 better and better로 쓴다. 원급이나 최상급을 겹쳐 쓰거나 the를 붙이지 않는다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  The city is becoming ____ crowded. (점점 더)",
+   "choices": [
+    "more and more",
+    "much and much",
+    "many and many",
+    "the more and more",
+    "crowded and crowded"
+   ],
+   "answer": 1,
+   "why": "crowded처럼 more를 붙여 비교급을 만드는 말은 「more and more+원급」으로 쓴다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  This box is twice ____ heavy as that one.",
+   "choices": [
+    "so",
+    "than",
+    "as",
+    "more",
+    "very"
+   ],
+   "answer": 3,
+   "why": "배수 표현은 「배수사+as+원급+as」이므로 twice as heavy as가 된다. than이나 so는 쓸 수 없다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  My room is three times ____ as yours.",
+   "choices": [
+    "big",
+    "bigger",
+    "biggest",
+    "as bigger",
+    "as big"
+   ],
+   "answer": 5,
+   "why": "「배수사+as+원급+as」 구조이므로 as big as가 되어야 한다. as 사이에는 비교급 bigger를 쓰지 않는다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  Tom has twice as many books ____ I do.",
+   "choices": [
+    "than",
+    "as",
+    "with",
+    "of",
+    "so"
+   ],
+   "answer": 2,
+   "why": "as ~ as 구문의 뒤쪽 as가 필요하다. as와 짝을 이루는 것은 than이 아니라 as이다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  Your watch is half as ____ as mine.",
+   "choices": [
+    "more expensive",
+    "expensiver",
+    "most expensive",
+    "expensive",
+    "expensively"
+   ],
+   "answer": 4,
+   "why": "as와 as 사이에는 원급 형용사가 온다. 비교급 more expensive나 최상급은 쓸 수 없고, 보어 자리이므로 부사 expensively도 안 된다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  The more we talked, the ____ we became. (더 친한)",
+   "choices": [
+    "closer",
+    "close",
+    "closest",
+    "more close",
+    "the closer"
+   ],
+   "answer": 1,
+   "why": "이미 the가 앞에 있으므로 비교급 closer만 넣는다. close는 more를 붙이지 않고 closer로 쓴다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  ____ it snows, the happier the children are.",
+   "choices": [
+    "Much",
+    "The much",
+    "The more",
+    "More",
+    "The most"
+   ],
+   "answer": 3,
+   "why": "눈이 많이 올수록이라는 뜻이므로 much의 비교급 more에 the를 붙인 The more가 맞다. The much나 The most는 쓰지 않는다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  In winter the days get ____ . (점점 더 짧은)",
+   "choices": [
+    "short and short",
+    "shorter and short",
+    "the shorter and shorter",
+    "more and more short",
+    "shorter and shorter"
+   ],
+   "answer": 5,
+   "why": "점점 더 ~한은 「비교급 and 비교급」이므로 두 자리 모두 shorter를 쓴다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  This bridge is four times ____ than that old one.",
+   "choices": [
+    "long",
+    "longer",
+    "as long",
+    "longest",
+    "the longer"
+   ],
+   "answer": 2,
+   "why": "뒤에 than이 있으므로 비교급 longer가 와야 한다. 배수사는 「배수사+비교급+than」 형태로도 쓸 수 있다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 고르시오.",
+   "choices": [
+    "The more you sleep, the good you feel.",
+    "The more you sleep, better you feel.",
+    "More you sleep, the better you feel.",
+    "The more you sleep, the better you feel.",
+    "The more you sleep, the best you feel."
+   ],
+   "answer": 4,
+   "why": "두 절 모두 「the+비교급」이어야 한다. the good은 원급, better는 the 누락, More는 the 누락, the best는 최상급이라 모두 틀렸다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장을 고르시오.",
+   "choices": [
+    "The line is getting long and long.",
+    "The weather is getting warmer and warmer.",
+    "The story became more and more exciting.",
+    "His voice grew louder and louder.",
+    "The test is getting harder and harder."
+   ],
+   "answer": 1,
+   "why": "점점 더 ~한은 「비교급 and 비교급」이므로 long and long이 아니라 longer and longer로 써야 한다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 고르시오. (배수 표현)",
+   "choices": [
+    "This rope is twice as longer as that one.",
+    "This rope is twice long as that one.",
+    "This rope is twice as long as that one.",
+    "This rope is twice as long than that one.",
+    "This rope is as twice long as that one."
+   ],
+   "answer": 3,
+   "why": "배수 표현은 「배수사+as+원급+as」이다. as 사이에 비교급을 쓰거나, 뒤에 than을 쓰거나, 배수사를 as 뒤로 보내면 안 된다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장을 고르시오. (the 비교급, the 비교급)",
+   "choices": [
+    "The older he got, the quieter he became.",
+    "The harder you try, the luckier you get.",
+    "The more you give, the more you receive.",
+    "The sooner we start, the better.",
+    "The faster you run, the tired you get."
+   ],
+   "answer": 5,
+   "why": "the 뒤에는 비교급이 와야 하므로 the tired가 아니라 the more tired가 되어야 한다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 알맞은 문장을 고르시오.",
+   "choices": [
+    "My sister eats twice as many as I do.",
+    "My sister eats twice as much as I do.",
+    "My sister eats twice much as I do.",
+    "My sister eats as twice much as I do.",
+    "My sister eats twice as more as I do."
+   ],
+   "answer": 2,
+   "why": "먹는 양은 셀 수 없으므로 much를 쓰고, 배수사는 as 앞에 온다. as ~ as 사이에는 원급만 온다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장을 고르시오. (비교급 and 비교급)",
+   "choices": [
+    "The prices are getting higher and higher.",
+    "It is getting more and more difficult.",
+    "The baby is growing bigger and bigger.",
+    "She is becoming famous and famous.",
+    "My headache is getting worse and worse."
+   ],
+   "answer": 4,
+   "why": "famous는 more를 붙여 비교급을 만드는 말이므로 more and more famous로 써야 한다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.  <u>The more</u> books you <u>read</u>, <u>more</u> ideas you <u>will get</u>, and the <u>wiser</u> you become.",
+   "choices": [
+    "The more",
+    "read",
+    "more",
+    "will get",
+    "wiser"
+   ],
+   "answer": 3,
+   "why": "뒤 절도 「the+비교급」이어야 하므로 more가 아니라 the more로 써야 한다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.  It <u>is getting</u> <u>hot and hot</u> <u>in</u> this <u>small</u> <u>room</u>.",
+   "choices": [
+    "is getting",
+    "hot and hot",
+    "in",
+    "small",
+    "room"
+   ],
+   "answer": 2,
+   "why": "점점 더 더워진다는 뜻이므로 hot and hot이 아니라 hotter and hotter로 써야 한다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.  This <u>tower</u> <u>is</u> <u>three times</u> <u>as taller as</u> that <u>building</u>.",
+   "choices": [
+    "tower",
+    "is",
+    "three times",
+    "as taller as",
+    "building"
+   ],
+   "answer": 4,
+   "why": "「배수사+as+원급+as」이므로 as taller as가 아니라 as tall as가 되어야 한다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.  The <u>fastest</u> he <u>ran</u>, the <u>more tired</u> he <u>felt</u> <u>yesterday</u>.",
+   "choices": [
+    "fastest",
+    "ran",
+    "more tired",
+    "felt",
+    "yesterday"
+   ],
+   "answer": 1,
+   "why": "「the+비교급, the+비교급」 구문이므로 최상급 fastest가 아니라 비교급 faster를 써야 한다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.  <u>The weather</u> <u>is</u> becoming <u>cold and colder</u> <u>every</u> <u>day</u>.",
+   "choices": [
+    "The weather",
+    "is",
+    "cold and colder",
+    "every",
+    "day"
+   ],
+   "answer": 3,
+   "why": "「비교급 and 비교급」이므로 두 자리 모두 비교급을 써서 colder and colder가 되어야 한다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.  My phone <u>was</u> <u>half as expensive</u> <u>than</u> <u>hers</u>, <u>so</u> I bought it.",
+   "choices": [
+    "was",
+    "half as expensive",
+    "than",
+    "hers",
+    "so"
+   ],
+   "answer": 3,
+   "why": "as ~ as 구문이므로 than이 아니라 as를 써서 half as expensive as가 되어야 한다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오.  — 많이 잘수록 너는 더 건강해진다.",
+   "choices": [
+    "The more you sleep, the healthier you are.",
+    "The more you sleep, the healthy you are.",
+    "More you sleep, the healthier you are.",
+    "The much you sleep, the healthier you are.",
+    "The more you sleep, healthier you are."
+   ],
+   "answer": 1,
+   "why": "두 절 모두 「the+비교급」이 필요하다. the healthy는 원급, The much는 비교급이 아니며, the가 빠진 것도 틀렸다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오.  — 날씨가 점점 더 따뜻해지고 있다.",
+   "choices": [
+    "The weather is getting warm and warm.",
+    "The weather is getting more warm and warm.",
+    "The weather is getting warmer and warmer.",
+    "The weather is getting the warmer and warmer.",
+    "The weather is getting warmest and warmest."
+   ],
+   "answer": 3,
+   "why": "warm은 1음절이므로 warmer and warmer로 쓴다. more를 붙이거나 the를 붙이거나 최상급을 쓰면 틀린다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오.  — 이 상자는 저것의 두 배만큼 무겁다.",
+   "choices": [
+    "This box is twice as heavier as that one.",
+    "This box is as twice heavy as that one.",
+    "This box is twice heavy as that one.",
+    "This box is twice as heavy than that one.",
+    "This box is twice as heavy as that one."
+   ],
+   "answer": 5,
+   "why": "「배수사+as+원급+as」 어순을 지켜야 한다. 배수사는 첫 번째 as 앞에 오고, as 사이에는 원급이 온다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오.  — 그 영화는 점점 더 흥미진진해졌다.",
+   "choices": [
+    "The movie became exciting and exciting.",
+    "The movie became more and more exciting.",
+    "The movie became more exciting and exciting.",
+    "The movie became the more and more exciting.",
+    "The movie became most and most exciting."
+   ],
+   "answer": 2,
+   "why": "exciting은 more형 비교급이므로 「more and more+원급」으로 쓴다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오.  — 우리가 빨리 시작할수록 더 좋다.",
+   "choices": [
+    "Sooner we start, the better.",
+    "The sooner we start, the best.",
+    "The soon we start, the better.",
+    "The sooner we start, the better.",
+    "The sooner we start, better."
+   ],
+   "answer": 4,
+   "why": "두 절 모두 the가 붙은 비교급이어야 한다. 뒤 절은 주어와 동사를 생략하고 the better만 남길 수 있다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오.  — 나는 내 형보다 두 배 많은 신발을 갖고 있다.",
+   "choices": [
+    "I have twice as many shoes as my brother.",
+    "I have twice as much shoes as my brother.",
+    "I have twice as many shoes than my brother.",
+    "I have as twice many shoes as my brother.",
+    "I have twice many shoes as my brother."
+   ],
+   "answer": 1,
+   "why": "shoes는 셀 수 있는 명사이므로 many를 쓰고, 「배수사+as+many+명사+as」 어순을 지킨다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것을 고르시오.  운동을 많이 할수록 너는 더 건강해진다. → The (A)____ you exercise, the (B)____ you become.",
+   "choices": [
+    "more – the healthier",
+    "much – healthy",
+    "more – healthier",
+    "more – healthy",
+    "most – healthiest"
+   ],
+   "answer": 3,
+   "why": "the가 이미 나와 있으므로 빈칸에는 비교급만 넣는다. much의 비교급 more, healthy의 비교급 healthier가 알맞다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것을 고르시오.  This building is twice (A)____ tall (B)____ that tower.",
+   "choices": [
+    "so – as",
+    "as – than",
+    "more – than",
+    "as – so",
+    "as – as"
+   ],
+   "answer": 5,
+   "why": "배수 표현은 「배수사+as+원급+as」이므로 두 자리 모두 as가 들어간다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것을 고르시오.  상자가 무거울수록 옮기기 더 힘들다. → The (A)____ the box is, the (B)____ it is to carry.",
+   "choices": [
+    "heavy – hard",
+    "heavier – harder",
+    "heavier – hardest",
+    "more heavy – harder",
+    "heaviest – hardest"
+   ],
+   "answer": 2,
+   "why": "두 자리 모두 비교급이 필요하다. heavy와 hard는 -er를 붙여 heavier, harder로 쓴다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것을 고르시오.  Sujin runs (A)____ as fast as I do, and she is getting (B)____ every month.",
+   "choices": [
+    "twice – fast and fast",
+    "two time – faster and faster",
+    "twice – more and more fast",
+    "twice – faster and faster",
+    "two – faster and faster"
+   ],
+   "answer": 4,
+   "why": "두 배는 twice로 쓰고, 점점 더 빨라진다는 「비교급 and 비교급」이므로 faster and faster가 알맞다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것을 고르시오.  · The ____ you wait, the more tired you get.  · Sam waited ____ than me.",
+   "choices": [
+    "longer",
+    "long",
+    "longest",
+    "more long",
+    "the longer"
+   ],
+   "answer": 1,
+   "why": "첫 문장은 the 뒤 비교급 자리, 둘째 문장은 than 앞 비교급 자리이므로 둘 다 longer가 들어간다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 한 단어로 알맞은 것을 고르시오.  · This classroom is twice ____ big as that one.  · Cathy sings ____ well as her sister.",
+   "choices": [
+    "so",
+    "than",
+    "as",
+    "that",
+    "more"
+   ],
+   "answer": 3,
+   "why": "둘 다 as ~ as 원급 비교 구문이므로 앞의 as가 공통으로 들어간다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것을 고르시오.  A: Should I call her now or later?  B: ____ , the better.",
+   "choices": [
+    "Sooner",
+    "The soonest",
+    "The soon",
+    "More soon",
+    "The sooner"
+   ],
+   "answer": 5,
+   "why": "빠르면 빠를수록 좋다는 뜻의 「The 비교급, the 비교급」 관용 표현이므로 The sooner, the better가 알맞다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것을 고르시오.  A: How is your cold?  B: It is getting ____ . I need to see a doctor.",
+   "choices": [
+    "bad and bad",
+    "worse and worse",
+    "worst and worst",
+    "more and more bad",
+    "the worse and worse"
+   ],
+   "answer": 2,
+   "why": "bad의 비교급은 worse이므로 점점 더 나빠진다는 worse and worse로 쓴다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ⓐ The more, the better.  ⓑ It is getting cold and cold.  ⓒ She is twice as old as my sister.  ⓓ The harder you work, the more you earn.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 4,
+   "why": "ⓐ, ⓒ, ⓓ 세 문장이 옳다. ⓑ는 cold and cold가 아니라 colder and colder로 써야 한다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?  ⓐ The colder it is, the more I eat.  ⓑ My dog is three times as bigger as yours.  ⓒ The sky is getting darker and darker.  ⓓ More you read, the more you know.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ⓑ는 as 사이에 원급 big을 써야 하고, ⓓ는 앞 절에 the가 빠졌으므로 틀린 문장은 두 개다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 할 때 빈칸에 알맞은 것을 고르시오.  My town is three times as large as yours. = My town is three times ____ yours.",
+   "choices": [
+    "large than",
+    "as large than",
+    "the largest of",
+    "larger than",
+    "more large than"
+   ],
+   "answer": 4,
+   "why": "「배수사+as+원급+as」는 「배수사+비교급+than」으로 바꿔 쓸 수 있으므로 three times larger than이 된다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 할 때 빈칸에 알맞은 것을 고르시오.  If you read more, you will learn more. = ____ you read, the more you learn.",
+   "choices": [
+    "The more",
+    "More",
+    "The most",
+    "Much",
+    "The much"
+   ],
+   "answer": 1,
+   "why": "「if 비교급 ~」 문장은 「the 비교급, the 비교급」으로 바꿀 수 있고, 앞 절에도 반드시 the를 붙인다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  Your hands are getting ____ . Put on your gloves.",
+   "choices": [
+    "cold and cold",
+    "the colder and colder",
+    "colder and colder",
+    "more and more cold",
+    "coldest and coldest"
+   ],
+   "answer": 3,
+   "why": "점점 더 차가워진다는 뜻이므로 「비교급 and 비교급」인 colder and colder를 쓴다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  The ____ the room is, the better I sleep.",
+   "choices": [
+    "quiet",
+    "quietest",
+    "more quiet",
+    "the quieter",
+    "quieter"
+   ],
+   "answer": 5,
+   "why": "the 뒤에는 비교급이 오므로 quieter가 알맞다. 앞에 이미 the가 있으므로 the quieter는 the가 겹친다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  Jane has ____ as many pens as Mike. (마이크의 절반)",
+   "choices": [
+    "a half",
+    "half",
+    "halves",
+    "the half",
+    "half of"
+   ],
+   "answer": 2,
+   "why": "절반을 나타내는 배수 표현은 half를 as 앞에 그대로 써서 half as many ~ as로 나타낸다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  ____ questions you ask, the more answers you find.",
+   "choices": [
+    "The many",
+    "More",
+    "The most",
+    "The more",
+    "The much"
+   ],
+   "answer": 4,
+   "why": "questions는 셀 수 있는 명사지만 비교급은 more 하나뿐이며, 앞 절에도 the를 붙여 The more로 쓴다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸을 채우시오.  The higher you go, the ____ the air gets. (thin)",
+   "answer": "thinner",
+   "why": "「the+비교급, the+비교급」 구문이므로 thin의 비교급 thinner를 쓴다. n을 한 번 더 쓰는 철자에 주의한다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 쓰시오.  겨울이 오면서 날씨가 점점 더 추워지고 있다. → It is getting ____ .",
+   "answer": "colder and colder",
+   "why": "점점 더 ~한은 「비교급 and 비교급」이므로 colder and colder로 쓴다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오. (한 단어)  The more you smile, the happy you feel.",
+   "answer": "happier",
+   "alt": [
+    "the happier"
+   ],
+   "why": "the 뒤에는 비교급이 와야 하므로 happy를 happier로 고친다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 쓰시오. (2단어)  이 가방은 저것의 두 배만큼 비싸다. → This bag is ____ expensive as that one.",
+   "answer": "twice as",
+   "why": "배수 표현은 「배수사+as+원급+as」이므로 twice as expensive as가 된다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸에 쓰시오.  The ____ we start, the more we can finish today. (early)",
+   "answer": "earlier",
+   "why": "the 뒤에는 비교급이 오므로 early의 비교급 earlier를 쓴다. y를 i로 바꾸고 -er를 붙인다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 이용해 빈칸을 채우시오.  My score is getting ____ . (good, 점점 더)",
+   "answer": "better and better",
+   "why": "good의 비교급은 better이므로 「비교급 and 비교급」은 better and better가 된다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 「the 비교급, the 비교급」 문장으로 바꿔 쓸 때 빈칸을 채우시오.  If you practice more, you will get better. → ____ you practice, the better you will get.",
+   "answer": "The more",
+   "alt": [
+    "the more"
+   ],
+   "why": "앞 절에도 the를 붙여야 하므로 The more가 알맞다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 공통으로 들어갈 한 단어를 쓰시오.  · My bag is twice ____ heavy as yours.  · She sings ____ well as her sister.",
+   "answer": "as",
+   "why": "둘 다 as ~ as 원급 비교이므로 앞의 as가 공통으로 들어간다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  This rope is three times <u>as longer as</u> that one.",
+   "answer": "as long as",
+   "why": "as와 as 사이에는 원급이 오므로 longer를 long으로 고친다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 쓰시오.  줄이 점점 더 길어지고 있다. → The line is getting ____ .",
+   "answer": "longer and longer",
+   "why": "점점 더 ~한은 「비교급 and 비교급」이므로 longer and longer로 쓴다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.  The ____ you run, the sooner you will arrive. (fast)",
+   "answer": "faster",
+   "why": "the 뒤에는 비교급이 오므로 fast의 비교급 faster를 쓴다. fast는 more를 붙이지 않는다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 쓰시오.  The ____ the movie is, the more people watch it. (funny)",
+   "answer": "funnier",
+   "why": "funny는 y를 i로 바꾸고 -er를 붙여 funnier가 된다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  The days are getting <u>short and short</u>.",
+   "answer": "shorter and shorter",
+   "why": "「비교급 and 비교급」이므로 두 자리 모두 비교급 shorter를 쓴다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸을 채우시오. (한 단어)  나는 그녀의 절반만큼의 돈을 갖고 있다. → I have ____ as much money as she does.",
+   "answer": "half",
+   "why": "절반을 나타내는 배수 표현 half는 첫 번째 as 앞에 온다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 한 단어를 찾아 바르게 고쳐 쓰시오.  The most books you read, the more words you learn.",
+   "answer": "more",
+   "alt": [
+    "the more"
+   ],
+   "why": "「the+비교급」 구문이므로 최상급 most를 비교급 more로 고친다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.  A: How was the concert?  B: It got ____ and better!",
+   "answer": "better",
+   "why": "「비교급 and 비교급」이므로 good의 비교급 better를 두 번 겹쳐 쓴다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 한 단어를 쓰시오.  적게 먹을수록 너는 더 가벼워진다. → The ____ you eat, the lighter you get.",
+   "answer": "less",
+   "why": "little의 비교급 less를 써서 적게 먹을수록의 뜻을 나타낸다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 뜻이 되도록 빈칸을 채우시오. (2단어)  Our class is ____ large as yours. (두 배)",
+   "answer": "twice as",
+   "why": "「배수사+as+원급+as」이므로 twice as large as가 된다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  The weather is becoming <u>more and more warm</u>.",
+   "answer": "warmer and warmer",
+   "why": "warm은 1음절이라 -er를 붙여 비교급을 만들므로 more를 쓰지 않고 warmer and warmer로 쓴다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장의 뜻이 같도록 빈칸을 채우시오. (2단어)  This tree is three times as tall as that one. = This tree is three times ____ that one.",
+   "answer": "taller than",
+   "why": "「배수사+as+원급+as」는 「배수사+비교급+than」으로 바꿔 쓸 수 있다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  The more carefully you listen, the ____ you will understand the story.",
+   "choices": [
+    "better",
+    "good",
+    "best",
+    "well",
+    "more well"
+   ],
+   "answer": 1,
+   "why": "동사 understand를 꾸미는 부사 well의 비교급 better가 알맞다. the 뒤에는 비교급이 와야 하므로 원급 well은 안 된다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  The ____ traffic there is, the longer it takes to get downtown.",
+   "choices": [
+    "many",
+    "most",
+    "more",
+    "much more",
+    "fewer"
+   ],
+   "answer": 3,
+   "why": "traffic은 셀 수 없는 명사이고 the 뒤에는 비교급이 오므로 more가 알맞다. many와 fewer는 셀 수 있는 명사에 쓴다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  The ____ the weather gets, the more ice cream the shop sells.",
+   "choices": [
+    "hot",
+    "hottest",
+    "more hot",
+    "as hot",
+    "hotter"
+   ],
+   "answer": 5,
+   "why": "the 뒤 비교급 자리이므로 hot의 비교급 hotter가 알맞다. t를 겹쳐 쓰는 철자에 주의한다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  Kevin's new laptop cost three times ____ as his old one.",
+   "choices": [
+    "as many",
+    "as much",
+    "much",
+    "more much",
+    "as more"
+   ],
+   "answer": 2,
+   "why": "값은 셀 수 없는 개념이므로 much를 쓰고, 「배수사+as+원급+as」 구조에 맞춰 as much as가 된다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  The more slowly he spoke, the ____ it was for us to follow him.",
+   "choices": [
+    "easy",
+    "easiest",
+    "more easy",
+    "easier",
+    "the easier"
+   ],
+   "answer": 4,
+   "why": "the 뒤에는 비교급이 오고, easy는 y를 i로 바꿔 easier가 된다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  As the concert went on, the crowd became ____ .",
+   "choices": [
+    "more and more excited",
+    "excited and excited",
+    "more excited and excited",
+    "the more and more excited",
+    "most and most excited"
+   ],
+   "answer": 1,
+   "why": "excited는 more형 비교급이므로 「more and more+원급」으로 점점 더 ~한을 나타낸다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  The ____ plastic we use, the cleaner the ocean will be.",
+   "choices": [
+    "little",
+    "fewer",
+    "less",
+    "least",
+    "fewest"
+   ],
+   "answer": 3,
+   "why": "plastic은 셀 수 없는 명사이므로 little의 비교급 less를 쓴다. fewer는 셀 수 있는 명사에 쓴다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  Our school library has four times ____ books as the town library.",
+   "choices": [
+    "as much",
+    "many",
+    "more many",
+    "as more",
+    "as many"
+   ],
+   "answer": 5,
+   "why": "books는 셀 수 있는 명사이므로 many를 쓰고, 「배수사+as+many+명사+as」 형태가 된다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  The ____ the team practiced, the more confident the players felt.",
+   "choices": [
+    "hard",
+    "harder",
+    "hardly",
+    "hardest",
+    "more hard"
+   ],
+   "answer": 2,
+   "why": "열심히라는 뜻의 hard의 비교급 harder가 알맞다. hardly는 거의 ~않다라는 뜻이라 의미가 맞지 않는다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  The number of visitors to the museum is growing ____ every year.",
+   "choices": [
+    "large and large",
+    "the larger and larger",
+    "more and more large",
+    "larger and larger",
+    "largest and largest"
+   ],
+   "answer": 4,
+   "why": "점점 더 커진다는 뜻이므로 「비교급 and 비교급」인 larger and larger가 알맞다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  This new smartphone weighs half ____ much as the old model.",
+   "choices": [
+    "as",
+    "so",
+    "than",
+    "more",
+    "that"
+   ],
+   "answer": 1,
+   "why": "「배수사+as+원급+as」 구문이므로 half as much as가 된다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  The ____ friends you make, the happier your school life becomes.",
+   "choices": [
+    "most",
+    "much",
+    "more",
+    "many more",
+    "the more"
+   ],
+   "answer": 3,
+   "why": "the 뒤에는 비교급이 오므로 many의 비교급 more를 쓴다. 앞에 이미 the가 있으므로 the more는 the가 겹친다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  The longer the rainy season lasts, the ____ people miss the sun.",
+   "choices": [
+    "much",
+    "most",
+    "many",
+    "more much",
+    "more"
+   ],
+   "answer": 5,
+   "why": "동사 miss를 꾸미는 much의 비교급 more가 알맞다. the 뒤에는 원급이나 최상급을 쓰지 않는다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  The new flagpole is about five times ____ high as the old one.",
+   "choices": [
+    "so",
+    "as",
+    "than",
+    "more",
+    "very"
+   ],
+   "answer": 2,
+   "why": "배수 표현은 「배수사+as+원급+as」이므로 five times as high as가 된다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  The ____ he thought about the puzzle, the more confused he got.",
+   "choices": [
+    "long",
+    "longest",
+    "more long",
+    "longer",
+    "as long"
+   ],
+   "answer": 4,
+   "why": "오래 생각할수록이라는 뜻이므로 long의 비교급 longer가 the 뒤에 온다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  Air pollution in this city is becoming ____ serious.",
+   "choices": [
+    "more and more",
+    "much and much",
+    "serious and serious",
+    "the more and more",
+    "most and most"
+   ],
+   "answer": 1,
+   "why": "serious는 more를 붙여 비교급을 만드는 말이므로 「more and more+원급」으로 쓴다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  The earlier you book the ticket, the ____ you pay. (돈을 덜 낸다)",
+   "choices": [
+    "little",
+    "fewer",
+    "less",
+    "least",
+    "the less"
+   ],
+   "answer": 3,
+   "why": "덜 낸다는 뜻이므로 little의 비교급 less가 알맞다. 앞에 the가 있으므로 the less는 the가 겹친다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  Sean's backpack is twice as heavy ____ Mina's.",
+   "choices": [
+    "than",
+    "so",
+    "that",
+    "of",
+    "as"
+   ],
+   "answer": 5,
+   "why": "as ~ as 구문의 뒤쪽 as가 필요하다. 비교급이 아니므로 than은 쓸 수 없다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  As she got closer to the top, the wind blew ____ .",
+   "choices": [
+    "hard and hard",
+    "harder and harder",
+    "the harder and harder",
+    "more and more hard",
+    "hardest and hardest"
+   ],
+   "answer": 2,
+   "why": "점점 더 세게 분다는 뜻이므로 「비교급 and 비교급」인 harder and harder를 쓴다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것을 고르시오.  The ____ the recipe is, the more mistakes people make.",
+   "choices": [
+    "difficult",
+    "difficulter",
+    "most difficult",
+    "more difficult",
+    "the more difficult"
+   ],
+   "answer": 4,
+   "why": "difficult는 3음절이므로 more difficult로 비교급을 만든다. -er를 붙이지 않는다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 고르시오. (the 비교급, the 비교급)",
+   "choices": [
+    "The more vegetables you eat, the healthier you will be.",
+    "The more vegetables you eat, the healthy you will be.",
+    "The most vegetables you eat, the healthier you will be.",
+    "More vegetables you eat, the healthier you will be.",
+    "The more vegetables you eat, healthier you will be."
+   ],
+   "answer": 1,
+   "why": "두 절 모두 「the+비교급」이어야 한다. 원급 the healthy, 최상급 The most, the 누락은 모두 틀렸다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장을 고르시오. (배수 표현)",
+   "choices": [
+    "This river is twice as deep as that one.",
+    "My uncle earns three times as much as I do.",
+    "This lake is about thirty times as larger as that pond.",
+    "Her house is half as big as mine.",
+    "The new stadium is five times as large as the old one."
+   ],
+   "answer": 3,
+   "why": "as와 as 사이에는 원급이 오므로 as larger as가 아니라 as large as로 써야 한다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 알맞은 문장을 고르시오. (비교급 and 비교급)",
+   "choices": [
+    "The problem is getting serious and serious.",
+    "The problem is getting more serious and serious.",
+    "The problem is getting the more and more serious.",
+    "The problem is getting most and most serious.",
+    "The problem is getting more and more serious."
+   ],
+   "answer": 5,
+   "why": "serious는 more형이므로 「more and more+원급」으로 쓴다. 원급을 겹치거나 the를 붙이면 틀린다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 옳은 것을 고르시오.",
+   "choices": [
+    "The busier the street is, the careful you should be.",
+    "The busier the street is, the more careful you should be.",
+    "The busy the street is, the more careful you should be.",
+    "The busier the street is, the most careful you should be.",
+    "Busier the street is, the more careful you should be."
+   ],
+   "answer": 2,
+   "why": "careful은 more를 붙여 비교급을 만들고, 두 절 모두 「the+비교급」이어야 한다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 올바른 문장을 고르시오.",
+   "choices": [
+    "We had twice as many rain as last year.",
+    "We had twice as much rain than last year.",
+    "We had as twice much rain as last year.",
+    "We had twice as much rain as last year.",
+    "We had twice much rain as last year."
+   ],
+   "answer": 4,
+   "why": "rain은 셀 수 없는 명사이므로 much를 쓰고, 배수사 twice는 첫 번째 as 앞에 온다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳지 않은 문장을 고르시오.",
+   "choices": [
+    "The days are getting warm and warm.",
+    "The child grew taller and taller.",
+    "Her Korean is getting better and better.",
+    "The music became louder and louder.",
+    "The road became narrower and narrower."
+   ],
+   "answer": 1,
+   "why": "「비교급 and 비교급」이므로 warm and warm이 아니라 warmer and warmer로 써야 한다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.  <u>The more</u> time you <u>spend</u> outside, <u>the strong</u> your body <u>becomes</u>, <u>doctors</u> say.",
+   "choices": [
+    "The more",
+    "spend",
+    "the strong",
+    "becomes",
+    "doctors"
+   ],
+   "answer": 3,
+   "why": "the 뒤에는 비교급이 와야 하므로 the strong이 아니라 the stronger로 써야 한다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.  As the deadline came closer, Mina <u>became</u> <u>nervous and nervous</u> <u>about</u> <u>her</u> <u>speech</u>.",
+   "choices": [
+    "became",
+    "nervous and nervous",
+    "about",
+    "her",
+    "speech"
+   ],
+   "answer": 2,
+   "why": "점점 더 긴장했다는 뜻이므로 more and more nervous로 써야 한다. nervous는 more형 비교급이다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.  The new gym is <u>three times</u> <u>as wide</u> <u>than</u> the old one, <u>so</u> more students can <u>use</u> it.",
+   "choices": [
+    "three times",
+    "as wide",
+    "than",
+    "so",
+    "use"
+   ],
+   "answer": 3,
+   "why": "as ~ as 구문이므로 than이 아니라 as를 써서 three times as wide as가 되어야 한다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.  <u>The most</u> you save now, <u>the more</u> you <u>will have</u> <u>later</u>, my father <u>said</u>.",
+   "choices": [
+    "The most",
+    "the more",
+    "will have",
+    "later",
+    "said"
+   ],
+   "answer": 1,
+   "why": "「the+비교급, the+비교급」 구문이므로 최상급 The most가 아니라 비교급 The more를 써야 한다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.  Our team scored <u>twice</u> <u>as many</u> points <u>as</u> theirs, and the fans cheered <u>loud and loud</u> <u>after</u> the game.",
+   "choices": [
+    "twice",
+    "as many",
+    "as",
+    "loud and loud",
+    "after"
+   ],
+   "answer": 4,
+   "why": "점점 더 크게 환호했다는 뜻이므로 louder and louder로 써야 한다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.  <u>The longer</u> you <u>stay</u> in the sun, <u>the badly</u> your skin <u>gets</u> <u>burned</u>.",
+   "choices": [
+    "The longer",
+    "stay",
+    "the badly",
+    "gets",
+    "burned"
+   ],
+   "answer": 3,
+   "why": "the 뒤에는 비교급이 와야 하므로 badly의 비교급 worse를 써서 the worse가 되어야 한다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오.  — 우리가 더 많이 나눌수록, 세상은 더 따뜻해진다.",
+   "choices": [
+    "The more we share, the warm the world becomes.",
+    "More we share, the warmer the world becomes.",
+    "The more we share, the warmer the world becomes.",
+    "The most we share, the warmer the world becomes.",
+    "The more we share, warmer the world becomes."
+   ],
+   "answer": 3,
+   "why": "두 절 모두 「the+비교급」이어야 한다. 원급 the warm, 최상급 The most, the 누락은 모두 틀렸다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오.  — 그 나라의 인구는 점점 더 빠르게 늘고 있다.",
+   "choices": [
+    "The country's population is growing fast and fast.",
+    "The country's population is growing more and more fast.",
+    "The country's population is growing the faster and faster.",
+    "The country's population is growing fastest and fastest.",
+    "The country's population is growing faster and faster."
+   ],
+   "answer": 5,
+   "why": "fast는 -er를 붙여 비교급을 만들므로 faster and faster로 쓴다. more를 붙이거나 the를 붙이지 않는다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오.  — 이 강은 저 강의 세 배만큼 길다.",
+   "choices": [
+    "This river is three times as longer as that one.",
+    "This river is three times as long as that one.",
+    "This river is three times long as that one.",
+    "This river is as three times long as that one.",
+    "This river is three times as long than that one."
+   ],
+   "answer": 2,
+   "why": "「배수사+as+원급+as」 어순을 지켜야 한다. as 사이에 비교급을 쓰거나 than으로 받으면 틀린다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오.  — 네가 더 열심히 연습할수록, 실수를 더 적게 한다.",
+   "choices": [
+    "The harder you practice, the less mistakes you make.",
+    "The harder you practice, the few mistakes you make.",
+    "Harder you practice, the fewer mistakes you make.",
+    "The harder you practice, the fewer mistakes you make.",
+    "The hardest you practice, the fewer mistakes you make."
+   ],
+   "answer": 4,
+   "why": "mistakes는 셀 수 있는 명사이므로 few의 비교급 fewer를 쓴다. less는 셀 수 없는 명사에 쓴다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오.  — 그의 방은 내 방의 절반 크기다.",
+   "choices": [
+    "His room is half as large as mine.",
+    "His room is half as larger as mine.",
+    "His room is half as large than mine.",
+    "His room is as half large as mine.",
+    "His room is half large as mine."
+   ],
+   "answer": 1,
+   "why": "「배수사+as+원급+as」이므로 half as large as가 된다. half는 첫 번째 as 앞에 온다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오.  — 시간이 더 많이 지날수록 나는 그녀가 더 그리웠다.",
+   "choices": [
+    "The more time passed, the much I missed her.",
+    "The most time passed, the more I missed her.",
+    "The more time passed, the more I missed her.",
+    "More time passed, the more I missed her.",
+    "The more time passed, more I missed her."
+   ],
+   "answer": 3,
+   "why": "두 절 모두 「the+비교급」이어야 한다. the much는 비교급이 아니고 the가 빠진 것도 틀렸다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것을 고르시오.  수업이 재미있을수록 학생들은 더 집중한다. → The (A)____ the class is, the (B)____ students pay attention.",
+   "choices": [
+    "interesting – more",
+    "more interesting – most",
+    "most interesting – more",
+    "more interesting – much",
+    "more interesting – more"
+   ],
+   "answer": 5,
+   "why": "interesting은 more형 비교급이고, 뒤 절도 비교급 more가 필요하다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것을 고르시오.  The Sahara is (A)____ times as large as Korea, and it is getting (B)____ every year.",
+   "choices": [
+    "many – large and large",
+    "many – larger and larger",
+    "much – larger and larger",
+    "many – more and more large",
+    "much – large and large"
+   ],
+   "answer": 2,
+   "why": "times는 셀 수 있는 명사이므로 many times로 쓰고, 점점 더 커진다는 「비교급 and 비교급」 larger and larger가 알맞다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것을 고르시오.  · The ____ you know about a country, the more you want to visit it.  · Ted spent ____ money than he planned.",
+   "choices": [
+    "much",
+    "many",
+    "most",
+    "more",
+    "the more"
+   ],
+   "answer": 4,
+   "why": "첫 문장은 the 뒤 비교급 자리, 둘째 문장은 than 앞 비교급 자리이므로 둘 다 more가 들어간다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것을 고르시오.  A: Why do you get up at six every morning?  B: ____ I get up, the more time I have for myself.",
+   "choices": [
+    "The earlier",
+    "Earlier",
+    "The early",
+    "The earliest",
+    "More early"
+   ],
+   "answer": 1,
+   "why": "「the+비교급, the+비교급」 구문이므로 앞 절에도 the를 붙인 The earlier가 알맞다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수를 고르시오.  ⓐ The more you know, the more you doubt.  ⓑ The sea is getting warm and warm.  ⓒ This tunnel is twice as long as that one.  ⓓ The higher the mountain is, the thinner the air is.  ⓔ He earns three times as many as I do.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ⓐ, ⓒ, ⓓ 세 문장이 옳다. ⓑ는 warmer and warmer, ⓔ는 돈이므로 as much as로 고쳐야 한다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수를 고르시오.  ⓐ The more slowly you eat, the less you eat.  ⓑ My bag is half as heavy than yours.  ⓒ The city grew bigger and bigger.  ⓓ The busier she is, the happier she feels.  ⓔ The most you practice, the better you play.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ⓑ는 than을 as로, ⓔ는 The most를 The more로 고쳐야 하므로 틀린 문장은 두 개다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 할 때 빈칸에 알맞은 것을 고르시오.  As you get older, you become wiser. = ____ you get, the wiser you become.",
+   "choices": [
+    "Older",
+    "The old",
+    "The older",
+    "The oldest",
+    "More old"
+   ],
+   "answer": 3,
+   "why": "「as+주어+동사」의 비례 표현은 「the 비교급, the 비교급」으로 바꿔 쓸 수 있고, 앞 절에도 the를 붙인다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 할 때 빈칸에 알맞은 것을 고르시오.  Our new house is four times as big as our old one. = Our new house is four times ____ our old one.",
+   "choices": [
+    "big than",
+    "as bigger than",
+    "the biggest of",
+    "more big than",
+    "bigger than"
+   ],
+   "answer": 5,
+   "why": "「배수사+as+원급+as」는 「배수사+비교급+than」으로 바꿔 쓸 수 있다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 빈칸을 쓰시오.  The ____ the subway is, the more uncomfortable the ride becomes. (crowded)",
+   "answer": "more crowded",
+   "why": "crowded는 more를 붙여 비교급을 만드는 말이므로 the more crowded가 된다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.  As the exam came closer, she felt nervous and nervous.",
+   "answer": "more and more nervous",
+   "why": "점점 더 ~한은 「비교급 and 비교급」이고 nervous는 more형이므로 more and more nervous로 고친다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 쓰시오. (3단어)  이 다리는 저 다리의 세 배만큼 길다. → This bridge is ____ long as that one.",
+   "answer": "three times as",
+   "why": "배수 표현은 「배수사+as+원급+as」이므로 three times as long as가 된다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.  The more we learn about the ocean, the ____ we want to protect it. (많이)",
+   "answer": "more",
+   "why": "the 뒤에는 비교급이 오므로 much의 비교급 more를 쓴다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 「the 비교급, the 비교급」 구문으로 바꿔 쓸 때 빈칸을 채우시오.  If you speak more slowly, people will understand you better. → ____ you speak, the better people will understand you.",
+   "answer": "The more slowly",
+   "alt": [
+    "the more slowly"
+   ],
+   "why": "부사 slowly의 비교급은 more slowly이고, 앞 절에도 the를 붙여야 한다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Our new library has twice <u>as much books</u> as the old one.",
+   "answer": "as many books",
+   "why": "books는 셀 수 있는 명사이므로 much가 아니라 many를 쓴다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 이용해 빈칸을 완성하시오.  The prices of fruit are getting ____ . (high, 점점 더)",
+   "answer": "higher and higher",
+   "why": "high는 -er를 붙여 비교급을 만들므로 higher and higher가 된다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 공통으로 들어갈 한 단어를 쓰시오.  · Mars is about half ____ big as the earth.  · Nothing is ____ important as health.",
+   "answer": "as",
+   "why": "둘 다 as ~ as 원급 비교 구문이므로 앞의 as가 공통으로 들어간다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 한 단어를 쓰시오.  플라스틱을 적게 쓸수록 바다는 더 깨끗해진다. → The ____ plastic we use, the cleaner the sea becomes.",
+   "answer": "less",
+   "why": "plastic은 셀 수 없는 명사이므로 little의 비교급 less를 쓴다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.  The ____ the road is, the more dangerous it is at night. (narrow)",
+   "answer": "narrower",
+   "why": "narrow는 -er를 붙여 비교급 narrower를 만든다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 한 단어를 찾아 바르게 고쳐 쓰시오.  The most you save now, the more you will have later.",
+   "answer": "more",
+   "alt": [
+    "the more"
+   ],
+   "why": "「the+비교급, the+비교급」 구문이므로 최상급 most를 비교급 more로 고친다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸을 채우시오. (2단어)  그 회사는 작년의 두 배만큼 많은 자동차를 팔았다. → The company sold ____ many cars as last year.",
+   "answer": "twice as",
+   "why": "「배수사+as+many+명사+as」 구조이므로 twice as many cars as가 된다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  The longer you wait, <u>the worst</u> the traffic gets.",
+   "answer": "the worse",
+   "alt": [
+    "worse"
+   ],
+   "why": "the 뒤에는 최상급이 아니라 비교급이 와야 하므로 bad의 비교급 worse를 쓴다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 말을 써서 두 문장의 뜻이 같도록 하시오. (2단어)  This tower is five times as tall as that tree. = This tower is five times ____ that tree.",
+   "answer": "taller than",
+   "why": "「배수사+as+원급+as」는 「배수사+비교급+than」으로 바꿔 쓸 수 있다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 쓰시오.  세상은 점점 더 빠르게 변하고 있다. → The world is changing ____ .",
+   "answer": "faster and faster",
+   "why": "fast는 -er를 붙여 비교급을 만들므로 faster and faster로 쓴다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 이용해 빈칸을 완성하시오. (비교급 and 비교급)  The story became ____ as I kept reading. (interesting)",
+   "answer": "more and more interesting",
+   "why": "interesting은 more형 비교급이므로 「more and more+원급」으로 쓴다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 대화의 빈칸에 알맞은 말을 쓰시오. (가까이 앉을수록)  A: Why do you always sit in the front?  B: ____ I sit, the better I can hear the teacher.",
+   "answer": "The closer",
+   "alt": [
+    "the closer"
+   ],
+   "why": "close의 비교급 closer에 the를 붙여 앞 절을 만든다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  The new hall is three times <u>as wider as</u> the old one.",
+   "answer": "as wide as",
+   "why": "as와 as 사이에는 원급이 오므로 비교급 wider를 원급 wide로 고친다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. (더 많은)  The harder the question is, the ____ time students need to solve it.",
+   "answer": "more",
+   "why": "time은 셀 수 없는 명사이고 the 뒤는 비교급 자리이므로 more가 알맞다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말 뜻에 맞게 빈칸을 완성하시오. (그가 더 많이 연습할수록, 그는 더 잘 연주했다.)  ____ he practiced, the better he played.",
+   "answer": "The more",
+   "alt": [
+    "the more"
+   ],
+   "why": "much의 비교급 more에 the를 붙여 앞 절을 만든다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.  The more people move into the city, the ____ green space there is for everyone.",
+   "choices": [
+    "less",
+    "fewer",
+    "little",
+    "least",
+    "the less"
+   ],
+   "answer": 1,
+   "why": "green space는 셀 수 없는 명사이므로 little의 비교급 less를 쓴다. fewer는 셀 수 있는 명사에만 쓴다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.  The fewer trees a city has, the ____ its summers become.",
+   "choices": [
+    "hot",
+    "hottest",
+    "hotter",
+    "more hot",
+    "the hotter"
+   ],
+   "answer": 3,
+   "why": "the 뒤는 비교급 자리이므로 hotter가 알맞다. 앞에 the가 있으므로 the hotter는 the가 겹친다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.  Scientists found that the deeper the ocean is, the ____ living things can be found there.",
+   "choices": [
+    "less",
+    "little",
+    "few",
+    "the fewer",
+    "fewer"
+   ],
+   "answer": 5,
+   "why": "living things는 셀 수 있는 명사이므로 few의 비교급 fewer를 쓴다. less는 셀 수 없는 명사에 쓴다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.  It is said that a blue whale's heart can be twice ____ as a small car.",
+   "choices": [
+    "heavier",
+    "as heavy",
+    "as heavier",
+    "so heavy",
+    "more heavy"
+   ],
+   "answer": 2,
+   "why": "「배수사+as+원급+as」 구문이므로 twice as heavy as가 된다. as 사이에는 비교급을 쓰지 않는다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.  ____ the room is set, the more energy the air conditioner uses.",
+   "choices": [
+    "Colder",
+    "The cold",
+    "The coldest",
+    "The colder",
+    "The more cold"
+   ],
+   "answer": 4,
+   "why": "「the+비교급, the+비교급」이므로 앞 절에도 the를 붙인 The colder가 알맞다. cold는 more를 붙이지 않는다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.  As the world becomes ____ connected, a small problem in one country quickly affects others.",
+   "choices": [
+    "more and more",
+    "much and much",
+    "connected and connected",
+    "the more and more",
+    "most and most"
+   ],
+   "answer": 1,
+   "why": "connected는 more형 비교급이므로 「more and more+원급」으로 점점 더 ~한을 나타낸다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.  The population of the island is only a third ____ large as it was fifty years ago.",
+   "choices": [
+    "so",
+    "than",
+    "as",
+    "more",
+    "that"
+   ],
+   "answer": 3,
+   "why": "분수도 배수 표현처럼 「분수+as+원급+as」로 쓰므로 a third as large as가 된다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.  The earlier the tickets go on sale, the ____ they have to wait in line. (덜 기다린다)",
+   "choices": [
+    "fewer",
+    "little",
+    "few",
+    "the less",
+    "less"
+   ],
+   "answer": 5,
+   "why": "동사 wait를 꾸미는 부사 자리이므로 little의 비교급 less가 알맞다. fewer는 명사를 꾸민다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.  The wind grew ____ , and the small boat could hardly move forward.",
+   "choices": [
+    "strong and strong",
+    "stronger and stronger",
+    "the stronger and stronger",
+    "more and more strong",
+    "strongest and strongest"
+   ],
+   "answer": 2,
+   "why": "점점 더 강해진다는 뜻이므로 「비교급 and 비교급」인 stronger and stronger를 쓴다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.  Seoul's new bridge is three times ____ the old one, so twice as many cars can cross it.",
+   "choices": [
+    "as longer as",
+    "long than",
+    "the longer than",
+    "longer than",
+    "more long than"
+   ],
+   "answer": 4,
+   "why": "「배수사+비교급+than」 형태이므로 three times longer than이 알맞다. as ~ as를 쓸 때는 원급을 넣어야 한다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 바르게 짝지은 것을 고르시오.  ㄱ. The more you sleep, the less tired you feel.  ㄴ. The city is getting noisy and noisy.  ㄷ. This lake is four times as deep as that pond.  ㄹ. The most he practiced, the better he became.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄴ은 noisier and noisier, ㄹ은 The more로 고쳐야 하므로 옳은 것은 ㄱ과 ㄷ이다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것끼리 바르게 짝지은 것을 고르시오.  ㄱ. The harder the test is, the lower the average score is.  ㄴ. Her voice became weak and weak.  ㄷ. My phone is half as expensive than yours.  ㄹ. The more time we spend together, the closer we become.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 3,
+   "why": "ㄴ은 weaker and weaker로, ㄷ은 than을 as로 고쳐야 한다. ㄱ과 ㄹ은 옳은 문장이다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것을 고르시오.  ㄱ. The sooner you apologize, the better it is for both of you.  ㄴ. Their farm is about thirty times as large as our garden.  ㄷ. The train is getting crowded and crowded every morning.  ㄹ. The higher the price is, the fewer people buy the product.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄱ, ㄴ, ㄹ",
+    "ㄴ, ㄷ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "ㄷ만 틀렸다. crowded는 more형이므로 more and more crowded로 써야 한다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것을 모두 고른 것을 고르시오.  ㄱ. The deeper we dived, the darker the water became.  ㄴ. This building is twice as higher as that one.  ㄷ. My little brother eats half as much as I do.  ㄹ. The days grow long and long as spring comes.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㄹ"
+   ],
+   "answer": 3,
+   "why": "ㄴ은 as high as로, ㄹ은 longer and longer로 고쳐야 한다. ㄱ과 ㄷ은 옳다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 우리말을 바르게 옮긴 것끼리 짝지은 것을 고르시오.  ㄱ. 날이 갈수록 더워진다. → It gets hotter and hotter day by day.  ㄴ. 그는 나보다 두 배 많은 책을 읽는다. → He reads twice as many books as I do.  ㄷ. 일찍 일어날수록 더 여유롭다. → Earlier you get up, the more relaxed you are.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄷ은 앞 절에 the가 빠졌으므로 The earlier로 고쳐야 한다. ㄱ과 ㄴ은 옳다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 옳은 것의 개수를 고르시오.  ㄱ. The more expensive the hotel is, the better the service is.  ㄴ. The sky grew dark and darker.  ㄷ. This box holds three times as many apples as that basket.  ㄹ. The less you worry, the happier you are.  ㅁ. Our team practiced twice as long than theirs.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ, ㄷ, ㄹ이 옳다. ㄴ은 darker and darker, ㅁ은 as long as로 고쳐야 한다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분을 바르게 고친 것끼리 짝지은 것을 고르시오.  ㄱ. The line is getting <u>long and long</u>. → longer and longer  ㄴ. She is <u>twice as older as</u> her cousin. → twice as old as  ㄷ. <u>The most</u> you give, the more you get. → The much",
+   "choices": [
+    "ㄱ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 2,
+   "why": "ㄷ은 The much가 아니라 The more로 고쳐야 하므로 바르게 고친 것은 ㄱ과 ㄴ이다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장끼리 바르게 짝지은 것을 고르시오.  ㄱ. The heavier the bag is, the slower he walks.  ㄴ. Traffic is getting bad and bad in this area.  ㄷ. Our new car uses half as much gas as the old one.  ㄹ. The colder it got, the more warm clothes we wore.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄴ, ㄷ, ㄹ",
+    "ㄱ, ㄴ, ㄹ"
+   ],
+   "answer": 3,
+   "why": "ㄴ만 틀렸다. bad의 비교급은 worse이므로 worse and worse로 써야 한다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.  Scientists say that <u>the warmer</u> the ocean <u>becomes</u>, <u>the fast</u> the ice at the poles <u>melts</u>, <u>which</u> raises the sea level.",
+   "choices": [
+    "the warmer",
+    "becomes",
+    "the fast",
+    "melts",
+    "which"
+   ],
+   "answer": 3,
+   "why": "the 뒤에는 비교급이 와야 하므로 the fast가 아니라 the faster로 써야 한다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.  The desert covers an area <u>that is</u> <u>almost twice</u> <u>as larger as</u> India, and it is <u>still</u> <u>growing</u>.",
+   "choices": [
+    "that is",
+    "almost twice",
+    "as larger as",
+    "still",
+    "growing"
+   ],
+   "answer": 3,
+   "why": "「배수사+as+원급+as」이므로 as larger as가 아니라 as large as로 써야 한다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.  <u>The more</u> languages you can speak, <u>the many</u> chances you <u>will have</u> <u>to work</u> <u>abroad</u>.",
+   "choices": [
+    "The more",
+    "the many",
+    "will have",
+    "to work",
+    "abroad"
+   ],
+   "answer": 2,
+   "why": "the 뒤에는 비교급이 와야 하므로 the many가 아니라 the more로 써야 한다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.  As the robot learned <u>from</u> its mistakes, its answers <u>became</u> <u>accurate and accurate</u>, <u>and</u> people trusted it <u>more</u>.",
+   "choices": [
+    "from",
+    "became",
+    "accurate and accurate",
+    "and",
+    "more"
+   ],
+   "answer": 3,
+   "why": "accurate는 more형 비교급이므로 more and more accurate로 써야 한다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.  <u>The higher</u> you climb, <u>the thinner</u> the air <u>gets</u>, <u>so</u> climbers breathe <u>hard and hard</u> near the top.",
+   "choices": [
+    "The higher",
+    "the thinner",
+    "gets",
+    "so",
+    "hard and hard"
+   ],
+   "answer": 5,
+   "why": "점점 더 힘겹게 숨 쉰다는 뜻이므로 harder and harder로 써야 한다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.  Our school recycles <u>three times</u> <u>as much</u> paper <u>as</u> it <u>did</u> five years ago, and the amount <u>keeps grow</u>.",
+   "choices": [
+    "three times",
+    "as much",
+    "as",
+    "did",
+    "keeps grow"
+   ],
+   "answer": 5,
+   "why": "keep 뒤에는 동명사가 오므로 keeps growing으로 써야 한다. 앞의 배수 표현 three times as much ~ as는 옳다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.  <u>The longest</u> the meeting <u>lasted</u>, <u>the more</u> tired everyone <u>looked</u>, <u>though</u> nobody complained.",
+   "choices": [
+    "The longest",
+    "lasted",
+    "the more",
+    "looked",
+    "though"
+   ],
+   "answer": 1,
+   "why": "「the+비교급, the+비교급」 구문이므로 최상급 The longest가 아니라 The longer로 써야 한다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오.  A honeybee can carry pollen <u>that weighs</u> <u>almost half</u> <u>as much than</u> its <u>own body</u>, and it flies <u>faster and faster</u> when it is chased.",
+   "choices": [
+    "that weighs",
+    "almost half",
+    "as much than",
+    "own body",
+    "faster and faster"
+   ],
+   "answer": 3,
+   "why": "as ~ as 구문이므로 than이 아니라 as를 써서 half as much as가 되어야 한다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오.  — 우리가 낭비하는 물이 적을수록, 미래 세대가 쓸 물이 더 많아진다.",
+   "choices": [
+    "The less water we waste, the more water future generations will have.",
+    "The fewer water we waste, the more water future generations will have.",
+    "The less water we waste, the much water future generations will have.",
+    "Less water we waste, the more water future generations will have.",
+    "The least water we waste, the more water future generations will have."
+   ],
+   "answer": 1,
+   "why": "water는 셀 수 없는 명사이므로 less를 쓰고, 두 절 모두 「the+비교급」이어야 한다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오.  — 그 도시의 공기는 해가 갈수록 점점 더 나빠지고 있다.",
+   "choices": [
+    "The air in the city is getting bad and bad every year.",
+    "The air in the city is getting more and more bad every year.",
+    "The air in the city is getting worse and worse every year.",
+    "The air in the city is getting worst and worst every year.",
+    "The air in the city is getting the worse and worse every year."
+   ],
+   "answer": 3,
+   "why": "bad의 비교급은 worse이므로 worse and worse로 쓴다. more를 붙이거나 최상급을 쓰지 않는다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오.  — 새 도서관은 옛 도서관의 세 배만큼 많은 좌석을 갖고 있다.",
+   "choices": [
+    "The new library has three times as much seats as the old one.",
+    "The new library has three times as many seats than the old one.",
+    "The new library has as three times many seats as the old one.",
+    "The new library has three times many seats as the old one.",
+    "The new library has three times as many seats as the old one."
+   ],
+   "answer": 5,
+   "why": "seats는 셀 수 있는 명사이므로 many를 쓰고, 배수사는 첫 번째 as 앞에 온다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오.  — 우리가 그 문제를 오래 미룰수록, 해결하기가 더 어려워진다.",
+   "choices": [
+    "The longer we put off the problem, the hard it becomes to solve.",
+    "The longer we put off the problem, the harder it becomes to solve.",
+    "Longer we put off the problem, the harder it becomes to solve.",
+    "The longest we put off the problem, the harder it becomes to solve.",
+    "The longer we put off the problem, harder it becomes to solve."
+   ],
+   "answer": 2,
+   "why": "두 절 모두 「the+비교급」이어야 한다. 원급 the hard, 최상급 The longest, the 누락은 모두 틀렸다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것을 고르시오.  As the train went faster, the noise became louder. = ____ the train went, the louder the noise became.",
+   "choices": [
+    "Faster",
+    "The fast",
+    "The fastest",
+    "The faster",
+    "More fast"
+   ],
+   "answer": 4,
+   "why": "「as+주어+동사」의 비례 표현은 「the 비교급, the 비교급」으로 바꿔 쓰며 앞 절에도 the를 붙인다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것을 고르시오.  Our new office is twice as wide as the old one. = The old office is ____ as the new one.",
+   "choices": [
+    "half as wide",
+    "twice as wide",
+    "half as wider",
+    "as half wide",
+    "half wide"
+   ],
+   "answer": 1,
+   "why": "새 사무실이 두 배 넓으므로 옛 사무실은 절반 넓이다. 「half+as+원급+as」로 쓴다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것을 고르시오.  If you exercise more often, you will catch colds less often. = The more often you exercise, ____ you will catch colds.",
+   "choices": [
+    "the fewer often",
+    "less often",
+    "the less often",
+    "the least often",
+    "the little often"
+   ],
+   "answer": 3,
+   "why": "뒤 절도 「the+비교급」이어야 하므로 the less often이 알맞다. often은 부사이므로 fewer를 쓸 수 없다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것을 고르시오.  — 기다리면 기다릴수록, 표는 더 비싸진다.",
+   "choices": [
+    "The longer you wait, the expensive the ticket becomes.",
+    "The longer you wait, the most expensive the ticket becomes.",
+    "Longer you wait, the more expensive the ticket becomes.",
+    "The longer you wait, more expensive the ticket becomes.",
+    "The longer you wait, the more expensive the ticket becomes."
+   ],
+   "answer": 5,
+   "why": "expensive는 more형 비교급이고, 두 절 모두 the를 붙인 비교급이어야 한다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 고르시오. (부사의 비교급)",
+   "choices": [
+    "The more slowly the teacher spoke, the much the students understood.",
+    "The more slowly the teacher spoke, the more the students understood.",
+    "The most slowly the teacher spoke, the more the students understood.",
+    "More slowly the teacher spoke, the more the students understood.",
+    "The more slow the teacher spoke, the more the students understood."
+   ],
+   "answer": 2,
+   "why": "동사 spoke를 꾸미려면 부사 slowly의 비교급 more slowly가 필요하고, 뒤 절도 the more여야 한다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장을 고르시오. (배수·비교 표현)",
+   "choices": [
+    "The new tower is five times as tall as the church.",
+    "The new tower is five times taller than the church.",
+    "The church is a fifth as tall as the new tower.",
+    "The new tower is five times as taller as the church.",
+    "The new tower is much taller than the church."
+   ],
+   "answer": 4,
+   "why": "as와 as 사이에는 원급이 오므로 as taller as가 아니라 as tall as로 써야 한다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳지 않은 문장을 고르시오. (비교급 and 비교급)",
+   "choices": [
+    "The gap between the two teams became wide and wider.",
+    "The gap between the two teams became wider and wider.",
+    "The days are becoming longer and longer.",
+    "The task is getting more and more complicated.",
+    "His condition grew worse and worse."
+   ],
+   "answer": 1,
+   "why": "「비교급 and 비교급」이므로 앞자리도 비교급이어야 한다. wide and wider가 아니라 wider and wider로 써야 한다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수를 고르시오.  ⓐ The more we hurried, the later we arrived.  ⓑ This tank holds twice as much water as that one.  ⓒ The music got loud and loud until we left.  ⓓ The younger the child is, the faster he learns a language.  ⓔ Her new bike cost three times as many as mine.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ⓐ, ⓑ, ⓓ가 옳다. ⓒ는 louder and louder로, ⓔ는 값이므로 as much as로 고쳐야 한다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수를 고르시오.  ⓐ The less sugar you eat, the healthier your teeth are.  ⓑ The temperature is rising high and high.  ⓒ My score is three times as good as his.  ⓓ The busier the airport is, the longest the lines are.  ⓔ We used half as much electricity as last summer.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ⓑ는 higher and higher로, ⓓ는 the longer로 고쳐야 하므로 틀린 문장은 두 개다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 고르시오. (수 일치와 비교 표현)",
+   "choices": [
+    "The less members a club has, the more work each member does.",
+    "The fewer members a club has, the much work each member does.",
+    "The fewer members a club has, the more work each member does.",
+    "The fewest members a club has, the more work each member does.",
+    "Fewer members a club has, the more work each member does."
+   ],
+   "answer": 3,
+   "why": "members는 셀 수 있는 명사이므로 fewer를 쓰고, 뒤 절도 「the+비교급」인 the more여야 한다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것을 고르시오.  The (A)____ you look at the painting, the (B)____ details you notice.",
+   "choices": [
+    "long – more",
+    "longer – much",
+    "longest – more",
+    "longer – most",
+    "longer – more"
+   ],
+   "answer": 5,
+   "why": "두 자리 모두 비교급이 필요하다. long의 비교급 longer, many의 비교급 more가 알맞다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것을 고르시오.  The new reservoir is about (A)____ as large as the old one, and its water is getting (B)____ every summer.",
+   "choices": [
+    "twice – warm and warm",
+    "twice – warmer and warmer",
+    "two times as – warmer and warmer",
+    "twice as – warm and warmer",
+    "twice – more and more warm"
+   ],
+   "answer": 2,
+   "why": "배수사 twice는 as 앞에 바로 오고, 점점 더 따뜻해진다는 warmer and warmer로 쓴다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것을 고르시오.  · The ____ you exercise, the weaker your muscles become.  · Ted has ____ free time than he used to.",
+   "choices": [
+    "fewer",
+    "little",
+    "least",
+    "less",
+    "the less"
+   ],
+   "answer": 4,
+   "why": "첫 문장은 덜 운동한다는 뜻의 비교급, 둘째 문장은 셀 수 없는 명사 time을 꾸미는 비교급이므로 둘 다 less이다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 가장 알맞은 것을 고르시오.  A: Why did you order two pizzas?  B: Because my brother eats ____ as I do, and he is still hungry.",
+   "choices": [
+    "twice as much",
+    "twice as many",
+    "as twice much",
+    "twice much",
+    "twice as more"
+   ],
+   "answer": 1,
+   "why": "먹는 양은 셀 수 없으므로 much를 쓰고 배수사는 as 앞에 온다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분을 「the+비교급」 구문으로 바꿔 쓸 때 알맞은 것을 고르시오.  <u>As we grow older</u>, the faster time seems to fly.",
+   "choices": [
+    "Older we grow",
+    "The oldest we grow",
+    "The older we grow",
+    "The more old we grow",
+    "We grow the older"
+   ],
+   "answer": 3,
+   "why": "「as+주어+비교급」은 「the+비교급+주어+동사」로 바꿔 쓸 수 있고, 앞 절에도 the를 붙인다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 두 문장의 뜻이 서로 다른 것을 고르시오.",
+   "choices": [
+    "The harder you push it, the faster it moves. = If you push it harder, it moves faster.",
+    "Africa is three times as large as Europe. = Europe is a third as large as Africa.",
+    "The road is getting narrower and narrower. = The road keeps getting narrower.",
+    "The more he ate, the fatter he got. = As he ate more, he got fatter.",
+    "This box is twice as heavy as that one. = That box is twice as heavy as this one."
+   ],
+   "answer": 5,
+   "why": "이 상자가 저 상자의 두 배 무겁다면 저 상자는 이 상자의 절반 무게이므로 두 문장의 뜻이 반대가 된다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 「the 비교급, the 비교급」 구문으로 바꿔 쓸 때 빈칸을 채우시오.  As we waste less food, the environment gets cleaner. → ____ food we waste, the cleaner the environment gets.",
+   "answer": "The less",
+   "alt": [
+    "the less"
+   ],
+   "why": "food는 셀 수 없는 명사이므로 less를 쓰고, 앞 절에도 the를 붙인다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Her suitcase is almost twice <u>as heavier as</u> mine.",
+   "answer": "as heavy as",
+   "why": "「배수사+as+원급+as」이므로 as 사이에는 비교급이 아니라 원급 heavy가 와야 한다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 괄호 안의 말을 이용해 빈칸을 완성하시오.  경기가 계속되면서 관중은 점점 더 흥분했다. → As the game went on, the crowd became ____ . (excited)",
+   "answer": "more and more excited",
+   "why": "excited는 more형 비교급이므로 「more and more+원급」으로 쓴다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 한 단어를 찾아 바르게 고쳐 쓰시오.  The more books he read, the many questions he asked.",
+   "answer": "more",
+   "alt": [
+    "the more"
+   ],
+   "why": "the 뒤에는 비교급이 와야 하므로 many를 more로 고친다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 쓰시오. (3단어)  이 호수는 저 호수의 네 배만큼 깊다. → This lake is ____ deep as that one.",
+   "answer": "four times as",
+   "why": "「배수사+as+원급+as」이므로 four times as deep as가 된다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸을 채우시오.  If you start earlier, you will finish sooner. = ____ you start, the sooner you will finish.",
+   "answer": "The earlier",
+   "alt": [
+    "the earlier"
+   ],
+   "why": "early의 비교급 earlier에 the를 붙여 앞 절을 만든다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 한 단어를 찾아 바르게 고쳐 쓰시오.  The fewer sleep you get, the harder it is to concentrate.",
+   "answer": "less",
+   "alt": [
+    "the less"
+   ],
+   "why": "sleep은 셀 수 없는 명사이므로 fewer가 아니라 less를 써야 한다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.  The ____ the instructions are, the fewer mistakes people make. (clear)",
+   "answer": "clearer",
+   "why": "clear는 -er를 붙여 비교급 clearer를 만든다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 쓰시오.  물가가 점점 더 빠르게 오르고 있다. → Prices are rising ____ .",
+   "answer": "faster and faster",
+   "why": "「비교급 and 비교급」으로 점점 더 빠르게를 나타내며 fast의 비교급은 faster이다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸을 채우시오. (2단어)  Our house is twice as big as theirs. = Their house is ____ big as ours.",
+   "answer": "half as",
+   "why": "우리 집이 두 배 크다면 그들의 집은 절반 크기이므로 half as big as로 쓴다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오.  The longer the speech was, the sleepiest the audience looked.",
+   "answer": "the sleepier",
+   "alt": [
+    "sleepier"
+   ],
+   "why": "the 뒤에는 최상급이 아니라 비교급이 와야 하므로 sleepier로 고친다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸을 완성하시오.  더 많이 나눌수록 우리는 더 부유해진다. → ____ we share, the richer we become.",
+   "answer": "The more",
+   "alt": [
+    "the more"
+   ],
+   "why": "much의 비교급 more에 the를 붙여 앞 절을 만든다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  Our team used <u>twice as many time</u> as the other team.",
+   "answer": "twice as much time",
+   "why": "time은 셀 수 없는 명사이므로 many가 아니라 much를 쓴다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 이용하여 빈칸을 완성하시오.  The ____ the traffic is, the more air pollution the city has. (heavy)",
+   "answer": "heavier",
+   "why": "heavy는 y를 i로 바꾸고 -er를 붙여 heavier가 된다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 말을 쓰시오. (2단어)  This tower is three times as high as that building. = This tower is three times ____ that building.",
+   "answer": "higher than",
+   "why": "「배수사+as+원급+as」는 「배수사+비교급+than」으로 바꿔 쓸 수 있다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 쓰시오. (비교급 and 비교급)  그 상황은 점점 더 심각해지고 있다. → The situation is becoming ____ .",
+   "answer": "more and more serious",
+   "why": "serious는 more형 비교급이므로 「more and more+원급」으로 쓴다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 대화의 빈칸에 알맞은 말을 쓰시오. (많으면 많을수록)  A: How much water should I drink?  B: ____ , the better.",
+   "answer": "The more",
+   "alt": [
+    "the more"
+   ],
+   "why": "「The 비교급, the 비교급」 관용 표현으로 The more, the better라고 쓴다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 한 단어를 찾아 바르게 고쳐 쓰시오.  The fastest you type, the sooner you can finish the report.",
+   "answer": "faster",
+   "alt": [
+    "the faster"
+   ],
+   "why": "「the+비교급, the+비교급」 구문이므로 최상급 fastest를 비교급 faster로 고친다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 말을 쓰시오. (3단어)  그는 내가 쓰는 돈의 절반만큼 쓴다. → He spends ____ money as I do.",
+   "answer": "half as much",
+   "why": "money는 셀 수 없는 명사이므로 much를 쓰고, half는 첫 번째 as 앞에 온다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 「the 비교급, the 비교급」 구문으로 바꿔 문장 전체를 쓰시오.  As the room becomes darker, the movie looks better.",
+   "answer": "The darker the room becomes, the better the movie looks.",
+   "why": "「as+주어+동사」의 비례 표현은 두 절 모두 「the+비교급」을 앞에 두고 주어와 동사를 그대로 이어 쓴다.",
+   "no": 200
+  }
+ ]
+}

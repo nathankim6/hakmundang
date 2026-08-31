@@ -1,0 +1,2626 @@
+{
+ "id": "m2-14",
+ "grade": "중2",
+ "name": "so ~ that 구문",
+ "points": [
+  "so+형/부+that SV",
+  "너무 ~해서 …하다",
+  "too ~ to와 전환"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The movie was ____ boring that I fell asleep.",
+   "choices": [
+    "very",
+    "too",
+    "such",
+    "much",
+    "so"
+   ],
+   "answer": 5,
+   "why": "'너무 ~해서 …하다'는 so+형용사+that S+V이다. very/too/much는 that절과 함께 쓰지 못하고, such는 뒤에 명사가 와야 한다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It was ____ a cold day that the lake froze.",
+   "choices": [
+    "so",
+    "very",
+    "too",
+    "such",
+    "quite"
+   ],
+   "answer": 4,
+   "why": "뒤에 'a+형용사+명사(a cold day)'가 오므로 such를 쓴다. so는 형용사·부사만 바로 꾸민다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He ran ____ fast that nobody could catch him.",
+   "choices": [
+    "so",
+    "such",
+    "too",
+    "more",
+    "very"
+   ],
+   "answer": 1,
+   "why": "fast는 부사이므로 so+부사+that을 쓴다. such는 명사구 앞에만 쓴다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The tea was so hot ____ I couldn't drink it.",
+   "choices": [
+    "what",
+    "which",
+    "than",
+    "that",
+    "then"
+   ],
+   "answer": 4,
+   "why": "so ~ that 구문의 짝은 that이다. so 뒤에 what/which는 쓰지 않는다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She is so kind that everyone ____ her.",
+   "choices": [
+    "like",
+    "liking",
+    "to like",
+    "likes",
+    "is like"
+   ],
+   "answer": 4,
+   "why": "that절도 완전한 문장이므로 주어 everyone(단수 취급)에 맞춰 likes를 쓴다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The bag was so heavy that I ____ carry it.",
+   "choices": [
+    "can",
+    "can't",
+    "couldn't",
+    "don't",
+    "doesn't"
+   ],
+   "answer": 3,
+   "why": "주절이 과거(was)이므로 that절도 과거로 맞춰 couldn't를 쓴다. can't는 현재라 시제가 어긋난다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I was so sleepy ____ I went to bed at eight.",
+   "choices": [
+    "that",
+    "and",
+    "but",
+    "so",
+    "if"
+   ],
+   "answer": 1,
+   "why": "so+형용사 뒤의 결과절은 that이 이끈다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He is ____ young to watch this movie. (그는 이 영화를 보기에 너무 어리다.)",
+   "choices": [
+    "so",
+    "such",
+    "very",
+    "too",
+    "enough"
+   ],
+   "answer": 4,
+   "why": "'너무 ~해서 …할 수 없다'는 too+형용사+to부정사이다. so/such는 뒤에 that절이 와야 한다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The test was so easy that I ____ finish it in ten minutes.",
+   "choices": [
+    "can",
+    "could",
+    "must",
+    "may",
+    "will"
+   ],
+   "answer": 2,
+   "why": "주절이 과거(was)이므로 that절도 과거 could가 알맞다. 나머지는 시제나 뜻이 맞지 않는다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "This soup is too salty ____ eat.",
+   "choices": [
+    "that",
+    "for",
+    "so",
+    "than",
+    "to"
+   ],
+   "answer": 5,
+   "why": "too+형용사 뒤에는 to부정사를 쓴다(too ~ to). too ~ that은 쓰지 않는다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The show was ____ funny that we laughed all night.",
+   "choices": [
+    "such",
+    "so",
+    "too",
+    "very",
+    "many"
+   ],
+   "answer": 2,
+   "why": "형용사 funny를 꾸미고 that절을 이끄는 것은 so이다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It was such ____ interesting movie that I watched it twice.",
+   "choices": [
+    "an",
+    "a",
+    "the",
+    "so",
+    "one"
+   ],
+   "answer": 1,
+   "why": "such+a(n)+형용사+명사 어순이고, interesting은 모음 소리로 시작하므로 an을 쓴다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Mina sang ____ beautifully that everyone clapped.",
+   "choices": [
+    "such",
+    "too",
+    "so",
+    "very",
+    "much"
+   ],
+   "answer": 3,
+   "why": "부사 beautifully를 꾸며 that절을 이끄는 말은 so이다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The rope was strong ____ to hold the heavy box.",
+   "choices": [
+    "so",
+    "enough",
+    "too",
+    "such",
+    "very"
+   ],
+   "answer": 2,
+   "why": "'~할 만큼 충분히 …한'은 형용사+enough+to부정사 어순이다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He was so busy that he ____ lunch.",
+   "choices": [
+    "don't have",
+    "doesn't have",
+    "not have",
+    "didn't have",
+    "isn't have"
+   ],
+   "answer": 4,
+   "why": "주절이 과거(was)이므로 that절도 과거 didn't have로 쓴다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The stone was so big that we ____ move it.",
+   "choices": [
+    "can't",
+    "don't",
+    "couldn't",
+    "doesn't",
+    "aren't"
+   ],
+   "answer": 3,
+   "why": "과거 상황이므로 couldn't가 알맞다. can't는 현재 시제라 was와 맞지 않는다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은?",
+   "choices": [
+    "He ran so fast that I can't follow him yesterday.",
+    "It was so a nice day that we went out.",
+    "She is so kind that she help everyone.",
+    "I was such tired that I slept early.",
+    "The bag is too heavy for me to carry."
+   ],
+   "answer": 5,
+   "why": "⑤ too+형용사+for+목적격+to부정사가 바른 형태이다. ①은 yesterday와 can't의 시제 불일치, ②는 so a nice day(→such a nice day), ③은 she helps, ④는 such tired(→so tired)가 되어야 한다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은?",
+   "choices": [
+    "The tea is so hot that I can't drink it.",
+    "It was such a long movie that I got bored.",
+    "She was so tired that she can't stand up.",
+    "He is so smart that he can fix any computer.",
+    "The music was so loud that we couldn't talk."
+   ],
+   "answer": 3,
+   "why": "③은 주절이 과거(was)인데 that절이 현재 can't이므로 couldn't로 고쳐야 한다. 나머지는 모두 시제와 형태가 알맞다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It was ____ an exciting game that nobody left early.",
+   "choices": [
+    "so",
+    "very",
+    "such",
+    "too",
+    "much"
+   ],
+   "answer": 3,
+   "why": "'a(n)+형용사+명사' 앞에는 such를 쓴다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The wind was so strong ____ the old tree fell down.",
+   "choices": [
+    "that",
+    "what",
+    "which",
+    "than",
+    "so"
+   ],
+   "answer": 1,
+   "why": "so ~ that 구문이므로 결과절을 이끄는 that이 알맞다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My brother is too short ____ ride the roller coaster.",
+   "choices": [
+    "that",
+    "to",
+    "for",
+    "so",
+    "of"
+   ],
+   "answer": 2,
+   "why": "too+형용사 뒤에는 to부정사가 온다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  이 상자는 너무 무거워서 내가 들 수 없다.",
+   "choices": [
+    "The box is too heavy that I can lift.",
+    "The box is such heavy that I can't lift.",
+    "The box is too heavy for I to lift.",
+    "The box is so heavy that I can't lift it.",
+    "The box is so heavy for me to lift."
+   ],
+   "answer": 4,
+   "why": "so+형용사+that+S+can't+V 형태가 알맞다. ①③은 too의 쓰임과 목적격이 틀리고, ②는 such heavy, ⑤는 so ~ for ~ to가 잘못된 형태이다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The story was so sad that she ____ at the end.",
+   "choices": [
+    "cry",
+    "cries",
+    "cried",
+    "crying",
+    "to cry"
+   ],
+   "answer": 3,
+   "why": "주절이 과거(was)이므로 that절도 과거 cried로 쓴다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말은?  • He was ____ angry that he shouted at me.  • She walked ____ slowly that we were late.",
+   "choices": [
+    "such",
+    "too",
+    "so",
+    "very",
+    "much"
+   ],
+   "answer": 3,
+   "why": "두 문장 모두 형용사(angry)·부사(slowly)를 꾸미고 that절을 이끄는 so가 필요하다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The car was so old ____ it broke down every week.",
+   "choices": [
+    "what",
+    "and",
+    "if",
+    "than",
+    "that"
+   ],
+   "answer": 5,
+   "why": "so ~ that 구문에서 결과를 이끄는 접속사는 that이다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I'm so hungry ____ I can eat two burgers.",
+   "choices": [
+    "than",
+    "what",
+    "to",
+    "so",
+    "that"
+   ],
+   "answer": 5,
+   "why": "so+형용사 뒤의 결과절은 that이 이끈다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The room was ____ dark that I turned on the light.",
+   "choices": [
+    "such",
+    "such a",
+    "too",
+    "so",
+    "very"
+   ],
+   "answer": 4,
+   "why": "형용사 dark 하나만 꾸미므로 so가 알맞다. such/such a는 뒤에 명사가 있어야 한다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It was ____ a boring class that some students slept.",
+   "choices": [
+    "so",
+    "too",
+    "very",
+    "such",
+    "much"
+   ],
+   "answer": 4,
+   "why": "a boring class라는 명사구 앞이므로 such를 쓴다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She was so excited that she ____ sleep last night.",
+   "choices": [
+    "couldn't",
+    "can't",
+    "doesn't",
+    "isn't",
+    "wasn't"
+   ],
+   "answer": 1,
+   "why": "last night이라는 과거 표현이 있으므로 couldn't가 알맞다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The ice cream was so cold that my head ____.",
+   "choices": [
+    "hurt",
+    "hurts",
+    "hurting",
+    "to hurt",
+    "is hurt"
+   ],
+   "answer": 1,
+   "why": "주절이 과거(was)이므로 hurt의 과거형 hurt를 쓴다. hurts는 현재형이라 시제가 맞지 않는다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He speaks so fast ____ I can't understand him.",
+   "choices": [
+    "what",
+    "that",
+    "which",
+    "than",
+    "as"
+   ],
+   "answer": 2,
+   "why": "so+부사 뒤의 결과절을 이끄는 말은 that이다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The problem was too hard for me ____ solve.",
+   "choices": [
+    "that",
+    "so",
+    "for",
+    "to",
+    "of"
+   ],
+   "answer": 4,
+   "why": "too+형용사+for+목적격+to부정사 형태이다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 순서대로 바르게 짝지어진 것은?  • It was ____ a long trip that we got tired.  • The trip was ____ long that we got tired.",
+   "choices": [
+    "such – so",
+    "so – such",
+    "such – such",
+    "so – so",
+    "too – so"
+   ],
+   "answer": 1,
+   "why": "첫 문장은 'a long trip'이라는 명사구 앞이므로 such, 둘째 문장은 형용사 long만 꾸미므로 so를 쓴다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My grandmother is ____ old that she can't walk fast.",
+   "choices": [
+    "too",
+    "so",
+    "such",
+    "very",
+    "much"
+   ],
+   "answer": 2,
+   "why": "that절이 뒤따르므로 so를 쓴다. too는 to부정사와 짝을 이룬다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The water was too cold ____ swim in.",
+   "choices": [
+    "to",
+    "that",
+    "for",
+    "so",
+    "in"
+   ],
+   "answer": 1,
+   "why": "too+형용사 뒤에는 to부정사를 쓴다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It rained so hard that the game ____ canceled.",
+   "choices": [
+    "is",
+    "was",
+    "be",
+    "being",
+    "are"
+   ],
+   "answer": 2,
+   "why": "주절이 과거(rained)이므로 that절도 과거 수동태 was canceled로 쓴다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Tom was so nervous that he ____ his lines.",
+   "choices": [
+    "forget",
+    "forgets",
+    "forgot",
+    "forgetting",
+    "to forget"
+   ],
+   "answer": 3,
+   "why": "주절이 과거(was)이므로 that절도 과거 forgot이 알맞다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그녀는 너무 피곤해서 저녁을 먹을 수 없었다.",
+   "choices": [
+    "She was so tired that she couldn't eat dinner.",
+    "She was too tired that she can't eat dinner.",
+    "She was such tired that she couldn't eat dinner.",
+    "She was too tired for eat dinner.",
+    "She was so tired to eat dinner."
+   ],
+   "answer": 1,
+   "why": "so+형용사+that+S+couldn't+V가 알맞다. too는 that절과 함께 쓰지 않고, such 뒤에는 명사가 와야 한다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The box is so light that a child ____ lift it.",
+   "choices": [
+    "could",
+    "can",
+    "must",
+    "should",
+    "may"
+   ],
+   "answer": 2,
+   "why": "주절이 현재(is)이므로 that절도 현재 can이 알맞다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It was so noisy in the room that I ____ hear you.",
+   "choices": [
+    "can't",
+    "don't",
+    "couldn't",
+    "didn't can",
+    "wasn't"
+   ],
+   "answer": 3,
+   "why": "과거 시제(was)에 맞춰 couldn't를 쓴다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분이 어법상 옳은 것은?",
+   "choices": [
+    "The bread was <u>such</u> hard that I couldn't cut it.",
+    "It was <u>so</u> a funny story that we all laughed.",
+    "She ran <u>such</u> fast that she won the race.",
+    "I was <u>too</u> sleepy that I went to bed.",
+    "He is <u>too</u> weak to lift the chair."
+   ],
+   "answer": 5,
+   "why": "⑤ too+형용사+to부정사가 바르다. ①③은 형용사·부사 앞이므로 so, ②는 명사구 앞이므로 such, ④는 that절이 있으므로 so가 되어야 한다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말은?  • It was ____ a hot day that we stayed inside.  • He is ____ a good singer that everyone likes him.",
+   "choices": [
+    "so",
+    "such",
+    "too",
+    "very",
+    "much"
+   ],
+   "answer": 2,
+   "why": "두 문장 모두 'a+형용사+명사' 앞이므로 such를 쓴다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He was so scared that he ____ move.",
+   "choices": [
+    "couldn't",
+    "can't",
+    "doesn't",
+    "didn't can",
+    "wasn't"
+   ],
+   "answer": 1,
+   "why": "주절이 과거(was)이므로 couldn't가 알맞다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 할 때 빈칸에 알맞은 것은?  The coffee is too hot to drink. = The coffee is ____ hot that I can't drink it.",
+   "choices": [
+    "too",
+    "such",
+    "very",
+    "so",
+    "enough"
+   ],
+   "answer": 4,
+   "why": "too ~ to는 so ~ that S can't ~로 바꿔 쓴다. 빈칸 뒤에 that절이 있으므로 so가 알맞다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The shoes were so expensive that he ____ buy them.",
+   "choices": [
+    "can't",
+    "couldn't",
+    "don't",
+    "doesn't",
+    "isn't"
+   ],
+   "answer": 2,
+   "why": "주절이 과거(were)이므로 couldn't를 쓴다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It was ____ a long line that we decided to leave.",
+   "choices": [
+    "so",
+    "too",
+    "very",
+    "such",
+    "much"
+   ],
+   "answer": 4,
+   "why": "'a long line'이라는 명사구 앞이므로 such를 쓴다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The teacher spoke ____ slowly that everyone understood.",
+   "choices": [
+    "such",
+    "too",
+    "very",
+    "more",
+    "so"
+   ],
+   "answer": 5,
+   "why": "부사 slowly를 꾸미고 that절을 이끄는 말은 so이다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "I was too busy that I couldn't call you.",
+    "The bag was so heavy for me to carry.",
+    "It was such an easy question that everyone knew it.",
+    "He is so young that he can't goes to school.",
+    "She is such tired that she can't work."
+   ],
+   "answer": 3,
+   "why": "③ such+an+형용사+명사+that 구문이 바르다. ①은 too ~ that, ②는 so ~ for ~ to, ④는 can't goes, ⑤는 such tired가 잘못되었다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 말을 쓰시오.  The soup was so hot ____ I couldn't eat it.",
+   "answer": "that",
+   "why": "so+형용사 뒤의 결과절을 이끄는 접속사는 that이다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 so나 such 중 알맞은 말을 쓰시오.  It was ____ a windy day that we stayed home.",
+   "answer": "such",
+   "why": "'a+형용사+명사' 앞에는 such를 쓴다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 so나 such 중 알맞은 말을 쓰시오.  He is ____ tired that he can't study.",
+   "answer": "so",
+   "why": "형용사 tired만 꾸미므로 so를 쓴다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  The box was so heavy that I <u>can't</u> lift it.",
+   "answer": "couldn't",
+   "alt": [
+    "could not"
+   ],
+   "why": "주절이 과거(was)이므로 that절도 과거 couldn't로 써야 한다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 so ~ that 구문으로 바꿔 쓰시오. (주어는 I, 조동사는 can't을 쓸 것)  The book is too difficult to read.",
+   "answer": "The book is so difficult that I can't read it.",
+   "alt": [
+    "The book is so difficult that I cannot read it."
+   ],
+   "why": "too ~ to는 so+형용사+that+S+can't+V로 바꾼다. 이때 목적어 it을 반드시 써 준다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.  He was so happy that he ____ (jump) with joy.",
+   "answer": "jumped",
+   "why": "주절이 과거(was)이므로 that절도 과거형 jumped를 쓴다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.  She is so busy that she ____ (not / have) time to rest.",
+   "answer": "doesn't have",
+   "alt": [
+    "does not have"
+   ],
+   "why": "주절이 현재(is)이고 주어가 3인칭 단수이므로 doesn't have를 쓴다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  It was <u>so</u> a long movie that I fell asleep.",
+   "answer": "such",
+   "why": "'a long movie'라는 명사구 앞이므로 so가 아니라 such를 쓴다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  I was <u>too</u> tired that I went home early.",
+   "answer": "so",
+   "why": "뒤에 that절이 있으므로 too가 아니라 so를 써야 한다. too는 to부정사와 짝을 이룬다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오.  The rope wasn't strong ____ to hold the box.",
+   "answer": "enough",
+   "why": "'~할 만큼 충분히'는 형용사+enough+to부정사로 나타낸다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 한 단어를 쓰시오.  그 상자는 너무 커서 문을 통과할 수 없었다.  The box was ____ big that it couldn't go through the door.",
+   "answer": "so",
+   "why": "that절이 뒤따르므로 so+형용사+that 구문을 쓴다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 빈칸에 알맞은 말을 쓰시오.  He is too short to reach the shelf. = He is so short that he ____ reach the shelf.",
+   "answer": "can't",
+   "alt": [
+    "cannot",
+    "can not"
+   ],
+   "why": "too ~ to는 so ~ that S can't ~로 바꾼다. 현재 시제이므로 can't이다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 빈칸에 알맞은 한 단어를 쓰시오.  The tea was so hot that I couldn't drink it. = The tea was too hot ____ drink.",
+   "answer": "to",
+   "why": "so ~ that S couldn't ~는 too+형용사+to부정사로 바꾼다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.  The girl was so scared that she ____ (can, not, move).",
+   "answer": "couldn't move",
+   "alt": [
+    "could not move"
+   ],
+   "why": "주절이 과거이므로 can not이 아니라 couldn't move로 쓴다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오.  It was such ____ easy test that everyone passed.",
+   "answer": "an",
+   "why": "such+a(n)+형용사+명사 어순이고 easy는 모음 소리로 시작하므로 an을 쓴다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.  Ben ran so ____ (quick) that he won the race.",
+   "answer": "quickly",
+   "why": "동사 ran을 꾸미므로 형용사가 아니라 부사 quickly를 쓴다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.  She spoke so ____ (soft) that I couldn't hear her.",
+   "answer": "softly",
+   "why": "동사 spoke를 꾸미므로 부사 softly가 알맞다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  The movie was so boring <u>what</u> I left early.",
+   "answer": "that",
+   "why": "so ~ that 구문의 결과절은 what이 아니라 that이 이끈다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 too ~ to 구문으로 바꿔 쓰시오. (for me를 포함할 것)  The bag is so heavy that I can't carry it.",
+   "answer": "The bag is too heavy for me to carry.",
+   "why": "so ~ that S can't ~를 too ~ to로 바꿀 때 to부정사의 목적어 it은 쓰지 않는다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오.  He was so kind ____ everyone liked him.",
+   "answer": "that",
+   "why": "so+형용사 뒤의 결과절은 that이 이끈다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The concert was ____ wonderful that the audience stood up and cheered.",
+   "choices": [
+    "such",
+    "too",
+    "very",
+    "so",
+    "more"
+   ],
+   "answer": 4,
+   "why": "형용사 wonderful을 꾸미고 that절을 이끄는 것은 so이다. such는 명사구 앞에 쓴다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "It was ____ a difficult question that only two students answered it.",
+   "choices": [
+    "so",
+    "too",
+    "very",
+    "such",
+    "much"
+   ],
+   "answer": 4,
+   "why": "'a difficult question'이라는 명사구 앞이므로 such를 쓴다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The news was so shocking that nobody ____ a word for a while.",
+   "choices": [
+    "say",
+    "says",
+    "saying",
+    "to say",
+    "said"
+   ],
+   "answer": 5,
+   "why": "주절이 과거(was)이므로 that절도 과거 said로 쓴다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것은?  The soup was too hot for me to eat. = The soup was so hot ____ I couldn't eat it.",
+   "choices": [
+    "that",
+    "so",
+    "and",
+    "which",
+    "when"
+   ],
+   "answer": 1,
+   "why": "too ~ to는 so ~ that S couldn't ~로 바꿔 쓰며, 결과절은 that이 이끈다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것은?  He was so weak that he couldn't open the door. = He was ____ weak to open the door.",
+   "choices": [
+    "so",
+    "too",
+    "such",
+    "very",
+    "enough"
+   ],
+   "answer": 2,
+   "why": "so ~ that S couldn't ~는 too+형용사+to부정사로 바꾼다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The ice was thick enough for us ____ on.",
+   "choices": [
+    "skating",
+    "to skate",
+    "skate",
+    "to skating",
+    "for skate"
+   ],
+   "answer": 2,
+   "why": "enough+for+목적격+to부정사 형태이므로 to skate가 알맞다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The hall was so crowded that we ____ find our seats.",
+   "choices": [
+    "couldn't",
+    "can't",
+    "don't",
+    "didn't could",
+    "weren't"
+   ],
+   "answer": 1,
+   "why": "주절이 과거(was)이므로 couldn't가 알맞다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 순서대로 바르게 짝지어진 것은?  • The rain was ____ heavy that the match was canceled.  • It was ____ heavy storm that the match was canceled.",
+   "choices": [
+    "such – so a",
+    "so – such a",
+    "so – such",
+    "such a – so",
+    "too – such a"
+   ],
+   "answer": 2,
+   "why": "첫 문장은 형용사 heavy만 꾸미므로 so, 둘째 문장은 'heavy storm'이 셀 수 있는 단수 명사구이므로 such a를 쓴다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은?  A: Why didn't you finish the book?  B: It was ____ boring that I stopped after ten pages.",
+   "choices": [
+    "such",
+    "too",
+    "very",
+    "so",
+    "enough"
+   ],
+   "answer": 4,
+   "why": "형용사 boring을 꾸미고 that절이 뒤따르므로 so를 쓴다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The teacher explained the rule so clearly ____ everyone understood it.",
+   "choices": [
+    "what",
+    "which",
+    "that",
+    "than",
+    "as"
+   ],
+   "answer": 3,
+   "why": "so+부사 뒤의 결과절은 that이 이끈다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 올바른 문장은?",
+   "choices": [
+    "It was so a windy day that the tent flew away.",
+    "The pie was so delicious that we finished it in five minutes.",
+    "He was too excited that he couldn't sit still.",
+    "The suitcase was so heavy for her to lift.",
+    "She is such honest that everyone believes her."
+   ],
+   "answer": 2,
+   "why": "② so+형용사+that+S+V가 바르다. ①은 such a windy day, ③은 so excited that, ④는 too heavy for her to lift, ⑤는 so honest가 되어야 한다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 것은?",
+   "choices": [
+    "It was such a boring speech that I almost fell asleep.",
+    "The coffee was too hot that I couldn't drink it.",
+    "The box was light enough for a child to carry.",
+    "The road was so icy that cars couldn't stop.",
+    "She spoke so quietly that we could hardly hear her."
+   ],
+   "answer": 2,
+   "why": "②는 too와 that절을 함께 쓴 것이 잘못이다. so hot that I couldn't drink it 또는 too hot for me to drink로 고쳐야 한다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Ann is such ____ honest girl that we all trust her.",
+   "choices": [
+    "a",
+    "the",
+    "so",
+    "one",
+    "an"
+   ],
+   "answer": 5,
+   "why": "such+a(n)+형용사+명사 어순이며 honest는 [ɑ] 모음 소리로 시작하므로 an을 쓴다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The bus was so full that we ____ to wait for the next one.",
+   "choices": [
+    "have",
+    "has",
+    "having",
+    "had",
+    "to have"
+   ],
+   "answer": 4,
+   "why": "주절이 과거(was)이므로 that절도 과거 had to로 쓴다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "This chair is light enough ____ a child to move.",
+   "choices": [
+    "to",
+    "that",
+    "of",
+    "for",
+    "with"
+   ],
+   "answer": 4,
+   "why": "to부정사의 의미상 주어는 for+목적격으로 나타낸다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그는 너무 늦게 일어나서 첫 기차를 놓쳤다.",
+   "choices": [
+    "He got up too late that he missed the first train.",
+    "He got up such late that he missed the first train.",
+    "He got up so late to miss the first train.",
+    "He got up so lately that he missed the first train.",
+    "He got up so late that he missed the first train."
+   ],
+   "answer": 5,
+   "why": "so+부사(late)+that+S+V가 알맞다. too는 that절과 쓰지 않고, lately는 '최근에'라는 뜻이다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The suitcase was so heavy that ____.",
+   "choices": [
+    "I couldn't lift",
+    "I can't lift it",
+    "for me to lift it",
+    "to lift it",
+    "I couldn't lift it"
+   ],
+   "answer": 5,
+   "why": "that절은 완전한 문장이어야 하므로 목적어 it이 필요하고, 주절이 과거이므로 couldn't를 쓴다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말은?  • The runner was ____ fast that no one could beat him.  • I was ____ tired that I fell asleep on the sofa.",
+   "choices": [
+    "such",
+    "too",
+    "so",
+    "very",
+    "quite"
+   ],
+   "answer": 3,
+   "why": "두 문장 모두 형용사를 꾸미고 that절을 이끄는 so가 필요하다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The concert tickets were so expensive that only a few people ____ them.",
+   "choices": [
+    "buy",
+    "buys",
+    "bought",
+    "buying",
+    "to buy"
+   ],
+   "answer": 3,
+   "why": "주절이 과거(were)이므로 that절도 과거 bought로 쓴다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "It was such a long speech ____ some people left the room.",
+   "choices": [
+    "what",
+    "that",
+    "and so",
+    "which",
+    "because"
+   ],
+   "answer": 2,
+   "why": "such ~ that 구문의 결과절을 이끄는 접속사는 that이다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "She was too shy ____ in front of the class.",
+   "choices": [
+    "speaking",
+    "speak",
+    "to speaking",
+    "for speak",
+    "to speak"
+   ],
+   "answer": 5,
+   "why": "too+형용사 뒤에는 to부정사를 쓴다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 들어갈 말이 바르게 짝지어진 것은?  He was so angry that he couldn't say anything. = He was ____ angry ____ say anything.",
+   "choices": [
+    "so – to",
+    "such – to",
+    "very – to",
+    "too – that",
+    "too – to"
+   ],
+   "answer": 5,
+   "why": "so ~ that S couldn't ~는 too+형용사+to부정사로 바꾼다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The room was so dark that I couldn't see anything. = The room was too dark for me ____.",
+   "choices": [
+    "to see nothing",
+    "seeing anything",
+    "to see anything",
+    "to see it",
+    "see anything"
+   ],
+   "answer": 3,
+   "why": "too ~ to 구문에서는 부정어를 다시 쓰지 않으므로 to see anything이 알맞다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The ice was ____ for the children to skate on. (아이들이 스케이트를 탈 만큼 충분히 두꺼웠다)",
+   "choices": [
+    "enough thick",
+    "thick enough",
+    "so thick",
+    "such thick",
+    "too thick"
+   ],
+   "answer": 2,
+   "why": "enough는 형용사 뒤에 놓여 '형용사+enough+for+목적격+to부정사' 어순을 이룬다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ㄱ. The bag was so heavy that I couldn't carry it.  ㄴ. It was such a nice day that we went out.  ㄷ. He is too young that he can't drive.  ㄹ. The water is too cold to swim in.  ㅁ. She is such kind that everyone likes her.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ, ㄴ, ㄹ이 옳다. ㄷ은 too ~ that을 쓴 것이 잘못이고(so young that), ㅁ은 형용사 앞이므로 so kind가 되어야 한다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Jenny was so kind ____ she helped the lost child find his mother.",
+   "choices": [
+    "what",
+    "which",
+    "so",
+    "that",
+    "than"
+   ],
+   "answer": 4,
+   "why": "so+형용사 뒤의 결과절은 that이 이끈다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The problem was so difficult that even the teacher ____ solve it.",
+   "choices": [
+    "can't",
+    "can",
+    "cannot",
+    "isn't",
+    "couldn't"
+   ],
+   "answer": 5,
+   "why": "주절이 과거(was)이므로 couldn't가 알맞다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Mr. Kim drives so carefully ____ he has never had an accident.",
+   "choices": [
+    "what",
+    "which",
+    "than",
+    "if",
+    "that"
+   ],
+   "answer": 5,
+   "why": "so+부사 뒤의 결과절은 that이 이끈다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The child was ____ that he couldn't reach the top shelf.",
+   "choices": [
+    "too short",
+    "such short",
+    "short enough",
+    "so a short",
+    "so short"
+   ],
+   "answer": 5,
+   "why": "뒤에 that절이 있으므로 so+형용사가 알맞다. too는 to부정사와 짝을 이룬다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은?  A: Did you enjoy the play?  B: Not really. It was ____ long that I got bored.",
+   "choices": [
+    "such",
+    "too",
+    "enough",
+    "very",
+    "so"
+   ],
+   "answer": 5,
+   "why": "형용사 long을 꾸미고 that절을 이끄는 말은 so이다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 that의 쓰임이 나머지와 다른 하나는?",
+   "choices": [
+    "The box was so big <u>that</u> I couldn't carry it.",
+    "I know <u>that</u> he is honest.",
+    "She was so happy <u>that</u> she cried.",
+    "It was such a cold night <u>that</u> we stayed inside.",
+    "He ran so fast <u>that</u> he won the race."
+   ],
+   "answer": 2,
+   "why": "②의 that은 know의 목적어가 되는 명사절을 이끈다. 나머지는 모두 so[such] ~ that 구문에서 결과를 나타내는 that이다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The soup was so spicy that my eyes ____ watering.",
+   "choices": [
+    "started",
+    "start",
+    "starts",
+    "starting",
+    "to start"
+   ],
+   "answer": 1,
+   "why": "주절이 과거(was)이므로 that절도 과거 started로 쓴다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "They were such kind neighbors that we ____ them a party last summer.",
+   "choices": [
+    "throw",
+    "throws",
+    "throwing",
+    "threw",
+    "to throw"
+   ],
+   "answer": 4,
+   "why": "last summer라는 과거 표현이 있으므로 threw가 알맞다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Ted was so nervous ____ his hands were shaking.",
+   "choices": [
+    "what",
+    "which",
+    "than",
+    "that",
+    "and so"
+   ],
+   "answer": 4,
+   "why": "so+형용사 뒤의 결과절은 that이 이끈다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "He is old ____ to drive a car now. (그는 이제 차를 운전할 만큼 충분히 나이가 들었다)",
+   "choices": [
+    "enough",
+    "so",
+    "too",
+    "such",
+    "very"
+   ],
+   "answer": 1,
+   "why": "'~할 만큼 충분히 …한'은 형용사+enough+to부정사이다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그 책은 너무 어려워서 내가 이해할 수 없다.",
+   "choices": [
+    "The book is too difficult for me to understand.",
+    "The book is too difficult for me to understand it.",
+    "The book is so difficult for me to understand.",
+    "The book is too difficult that I can't understand.",
+    "The book is such difficult that I can't understand it."
+   ],
+   "answer": 1,
+   "why": "too+형용사+for+목적격+to부정사가 알맞다. 이때 to부정사의 목적어 it은 쓰지 않는다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The baby was ____ that everyone in the room smiled.",
+   "choices": [
+    "such cute",
+    "too cute",
+    "cute enough",
+    "so cute",
+    "so a cute"
+   ],
+   "answer": 4,
+   "why": "that절이 뒤따르므로 so+형용사가 알맞다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "It rained ____ heavily that the streets were flooded.",
+   "choices": [
+    "such",
+    "so",
+    "too",
+    "very much",
+    "enough"
+   ],
+   "answer": 2,
+   "why": "부사 heavily를 꾸미고 that절을 이끄는 말은 so이다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 순서대로 바르게 짝지어진 것은?  • He was ____ excited that he couldn't sleep.  • It was ____ exciting news that he couldn't sleep.",
+   "choices": [
+    "such – so",
+    "so – so",
+    "such – such",
+    "so – such",
+    "too – such"
+   ],
+   "answer": 4,
+   "why": "형용사만 꾸밀 때는 so, 명사구(exciting news) 앞에서는 such를 쓴다. news는 셀 수 없으므로 a를 붙이지 않는다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바르게 바꾼 것은?  The question was very easy. Everyone could answer it.",
+   "choices": [
+    "The question was too easy that everyone could answer it.",
+    "The question was such easy that everyone could answer it.",
+    "The question was so easy for everyone to answer it.",
+    "The question was enough easy that everyone could answer it.",
+    "The question was so easy that everyone could answer it."
+   ],
+   "answer": 5,
+   "why": "원인과 결과를 한 문장으로 이을 때는 so+형용사+that+S+V를 쓴다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "He studied so hard that he ____ pass the exam.",
+   "choices": [
+    "can",
+    "must",
+    "could",
+    "might",
+    "should"
+   ],
+   "answer": 3,
+   "why": "주절이 과거(studied)이므로 that절도 과거 could가 알맞다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "This box is small enough ____ in my bag.",
+   "choices": [
+    "to fit",
+    "fitting",
+    "fit",
+    "to fitting",
+    "for fit"
+   ],
+   "answer": 1,
+   "why": "형용사+enough 뒤에는 to부정사가 온다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은?  A: Why are you still awake?  B: The coffee was ____ strong that I can't fall asleep.",
+   "choices": [
+    "such",
+    "too",
+    "enough",
+    "very",
+    "so"
+   ],
+   "answer": 5,
+   "why": "형용사 strong을 꾸미고 that절을 이끄는 말은 so이다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The path was so narrow that only one person ____ walk on it at a time.",
+   "choices": [
+    "can",
+    "could",
+    "must",
+    "may",
+    "will"
+   ],
+   "answer": 2,
+   "why": "주절이 과거(was)이므로 that절도 과거 could로 맞춘다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "It was such a scary movie ____ I covered my eyes.",
+   "choices": [
+    "that",
+    "what",
+    "which",
+    "than",
+    "because"
+   ],
+   "answer": 1,
+   "why": "such ~ that 구문의 결과절은 that이 이끈다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 잘못된 문장은?",
+   "choices": [
+    "The bread was so hard that I couldn't cut it.",
+    "It was such a sunny day that we went to the beach.",
+    "The chair was too old for us to sit on it.",
+    "She spoke so fast that I couldn't catch her words.",
+    "He is strong enough to lift the box."
+   ],
+   "answer": 3,
+   "why": "③은 too ~ to 구문에서 목적어 it을 다시 쓴 것이 잘못이다. sit on의 목적어는 주어 The chair이므로 it을 없애야 한다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 too ~ to 구문으로 바꿔 쓰시오. (for me를 포함할 것)  The soup was so hot that I couldn't eat it.",
+   "answer": "The soup was too hot for me to eat.",
+   "why": "so ~ that S couldn't ~를 too ~ to로 바꿀 때 to부정사의 목적어 it은 쓰지 않는다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 so ~ that 구문으로 바꿔 쓰시오. (조동사 can't을 쓸 것)  He is too busy to help us.",
+   "answer": "He is so busy that he can't help us.",
+   "alt": [
+    "He is so busy that he cannot help us."
+   ],
+   "why": "too ~ to는 so+형용사+that+S+can't+V로 바꾼다. 현재 시제이므로 can't이다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 두 단어를 쓰시오.  The boy is so strong that he can carry the box. = The boy is ____ ____ to carry the box.",
+   "answer": "strong enough",
+   "why": "so ~ that S can ~은 형용사+enough+to부정사로 바꾼다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 세 단어를 쓰시오.  It was such a boring lecture that I fell asleep. = It was ____ ____ ____ lecture that I fell asleep.",
+   "answer": "so boring a",
+   "why": "such+a+형용사+명사는 so+형용사+a+명사 어순으로 바꿔 쓸 수 있다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  She was so tired yesterday that she <u>can't</u> finish her homework.",
+   "answer": "couldn't",
+   "alt": [
+    "could not"
+   ],
+   "why": "yesterday가 있어 과거 시제이므로 couldn't로 고쳐야 한다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.  The girl danced so ____ (beautiful) that everyone watched her.",
+   "answer": "beautifully",
+   "why": "동사 danced를 꾸미므로 부사 beautifully가 알맞다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 빈칸에 so나 such 중 알맞은 말을 쓰시오.  It was ____ heavy snow that the school closed early.",
+   "answer": "such",
+   "why": "명사구(heavy snow) 앞이므로 such를 쓴다. snow는 셀 수 없으므로 a를 붙이지 않는다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.  The bag was <u>too</u> heavy that I couldn't lift it.",
+   "answer": "so",
+   "why": "that절과 함께 쓰이는 것은 too가 아니라 so이다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 세 단어를 쓰시오.  The tea is so hot that I can't drink it. = The tea is too hot ____ ____ ____ drink.",
+   "answer": "for me to",
+   "why": "too ~ to 구문에서 행위자는 for+목적격으로 나타낸다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 두 단어를 쓰시오.  그것은 너무 재미있는 이야기여서 나는 그것을 세 번 읽었다.  It was ____ ____ interesting story that I read it three times.",
+   "answer": "such an",
+   "why": "such+an+형용사+명사 어순이며 interesting은 모음 소리로 시작하므로 an을 쓴다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하여 빈칸을 채우시오.  The movie was ____ ____ ____ I left early. (that / boring / so)",
+   "answer": "so boring that",
+   "why": "so+형용사+that의 어순으로 쓴다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 too ~ to 구문으로 바꿔 쓰시오. (for us를 포함할 것)  The window is so dirty that we can't see through it.",
+   "answer": "The window is too dirty for us to see through.",
+   "why": "so ~ that S can't ~는 too+형용사+for+목적격+to부정사로 바꾸며 목적어 it은 쓰지 않는다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.  He was so sick that he ____ (stay) home all day.",
+   "answer": "stayed",
+   "why": "주절이 과거(was)이므로 that절도 과거 stayed로 쓴다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 두 단어를 쓰시오.  It was so cold a morning that the pond froze. = It was ____ ____ cold morning that the pond froze.",
+   "answer": "such a",
+   "why": "so+형용사+a+명사는 such+a+형용사+명사로 바꿔 쓸 수 있다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  The child is <u>so</u> young to go to school alone.",
+   "answer": "too",
+   "why": "뒤에 to부정사가 오고 '너무 ~해서 …할 수 없다'는 뜻이므로 too를 쓴다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오.  She is old ____ to travel by herself. (그녀는 혼자 여행할 만큼 충분히 나이가 들었다)",
+   "answer": "enough",
+   "why": "형용사+enough+to부정사 어순이다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.  Tom shouted so ____ (loud) that everyone turned around.",
+   "answer": "loudly",
+   "why": "동사 shouted를 꾸미므로 부사 loudly가 알맞다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 too ~ to 구문으로 바꿔 쓰시오. (for me를 포함할 것)  The problem is so hard that I can't solve it.",
+   "answer": "The problem is too hard for me to solve.",
+   "why": "too ~ to로 바꿀 때 to부정사의 목적어 it은 쓰지 않는다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 빈칸에 so나 such 중 알맞은 말을 쓰시오.  The concert was ____ amazing that we bought tickets for the next one.",
+   "answer": "so",
+   "why": "형용사 amazing만 꾸미므로 so를 쓴다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 빈칸에 so나 such 중 알맞은 말을 쓰시오.  It was ____ a windy night that the power went out.",
+   "answer": "such",
+   "why": "'a windy night'라는 명사구 앞이므로 such를 쓴다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 짝지은 것은?  ㄱ. It was such a hot day that we stayed indoors.  ㄴ. He was too tired that he went to bed early.  ㄷ. There were so many cars that the road was blocked.  ㄹ. The tea is too hot for me to drink it.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄴ은 too를 that절과 함께 쓴 것이 잘못(so tired that)이고, ㄹ은 to부정사의 목적어 it을 지워야 한다. ㄱ은 such+a+형용사+명사, ㄷ은 so many+복수명사+that으로 모두 옳다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 too ~ to 구문으로 바르게 바꾼 것은?  The chair is so old that we can't sit on it.",
+   "choices": [
+    "The chair is too old for us to sit on.",
+    "The chair is too old for us to sit on it.",
+    "The chair is too old for we to sit on.",
+    "The chair is too old to sit on it.",
+    "The chair is too old that we can't sit on."
+   ],
+   "answer": 1,
+   "why": "의미상 주어는 for+목적격으로 쓰고, to부정사의 목적어가 주어와 같으므로 it을 쓰지 않는다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분이 어법상 틀린 것은?",
+   "choices": [
+    "The soup was <u>so</u> salty that I couldn't finish it.",
+    "It was <u>such</u> an exciting match that nobody left early.",
+    "The rope was <u>strong enough</u> to hold my weight.",
+    "She was <u>too</u> young that she couldn't join the club.",
+    "There were <u>so many</u> mistakes in my essay that I had to rewrite it."
+   ],
+   "answer": 4,
+   "why": "④는 too와 that절을 함께 쓸 수 없다. so young that she couldn't join 또는 too young to join으로 고쳐야 한다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "There were ____ many visitors that the museum had to close early.",
+   "choices": [
+    "so",
+    "such",
+    "too",
+    "very",
+    "much"
+   ],
+   "answer": 1,
+   "why": "'so many+복수명사+that'의 형태로 쓴다. such를 쓰려면 such many가 아니라 so many여야 한다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "They were ____ kind people that we felt at home right away.",
+   "choices": [
+    "so",
+    "such",
+    "too",
+    "very",
+    "so a"
+   ],
+   "answer": 2,
+   "why": "복수 명사구(kind people) 앞이므로 such를 쓰며, 복수이므로 a를 붙이지 않는다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "It was ____ heavy a box that no one could move it alone.",
+   "choices": [
+    "such",
+    "too",
+    "very",
+    "so",
+    "enough"
+   ],
+   "answer": 4,
+   "why": "'so+형용사+a(n)+명사+that'의 어순이다. such를 쓰려면 such a heavy box가 되어야 한다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ㄱ. There were so many people that we couldn't move.  ㄴ. It was such nice weather that we went hiking.  ㄷ. He was so tired to walk any more.  ㄹ. The bag is too heavy for me to carry it.  ㅁ. It was so cold a night that the lake froze.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ, ㄴ, ㅁ이 옳다. ㄷ은 too tired to walk로, ㄹ은 목적어 it을 지워야 한다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 두 문장의 뜻이 서로 같지 않은 것은?",
+   "choices": [
+    "The bag is too heavy for me to carry. = The bag is so heavy that I can't carry it.",
+    "He is rich enough to buy the car. = He is so rich that he can buy the car.",
+    "She is too tired to walk. = She is so tired that she can walk.",
+    "It was such a long book that I couldn't finish it. = The book was so long that I couldn't finish it.",
+    "The ice was thick enough for us to skate on. = The ice was so thick that we could skate on it."
+   ],
+   "answer": 3,
+   "why": "③의 too ~ to는 '너무 ~해서 …할 수 없다'는 뜻이므로 so tired that she can't walk가 되어야 뜻이 같다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The road was so icy last night that the bus ____ climb the hill.",
+   "choices": [
+    "can't",
+    "cannot",
+    "isn't able to",
+    "doesn't",
+    "couldn't"
+   ],
+   "answer": 5,
+   "why": "last night이라는 과거 표현이 있으므로 that절도 과거 couldn't로 쓴다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "We had so ____ time before the train left that we had to run to the platform.",
+   "choices": [
+    "few",
+    "many",
+    "much",
+    "a few",
+    "little"
+   ],
+   "answer": 5,
+   "why": "time은 셀 수 없는 명사이고 '시간이 거의 없어서 뛰어야 했다'는 뜻이므로 so little이 알맞다. few는 셀 수 있는 명사에 쓴다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "I have so ____ homework tonight that I can't go out with you.",
+   "choices": [
+    "many",
+    "few",
+    "a few",
+    "much",
+    "little"
+   ],
+   "answer": 4,
+   "why": "homework는 셀 수 없는 명사이고 '숙제가 많아서'라는 뜻이므로 so much가 알맞다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "There were so ____ chairs in the classroom that some students had to stand.",
+   "choices": [
+    "little",
+    "much",
+    "many",
+    "few",
+    "a lot of"
+   ],
+   "answer": 4,
+   "why": "'의자가 너무 적어서 서 있어야 했다'는 뜻이므로 셀 수 있는 명사에 쓰는 so few가 알맞다. so many는 뜻이 반대가 된다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그는 너무 조심스럽게 운전해서 사고를 낸 적이 한 번도 없다.",
+   "choices": [
+    "He drives so careful that he has never had an accident.",
+    "He drives so carefully that he has never had an accident.",
+    "He drives such carefully that he has never had an accident.",
+    "He drives too carefully that he has never had an accident.",
+    "He drives so carefully that he never has an accident before."
+   ],
+   "answer": 2,
+   "why": "동사 drives를 꾸미므로 부사 carefully를 쓰고, so+부사+that+S+V 형태가 된다. ④는 too를 that절과 함께 쓴 것이 잘못이다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은?  A: Why didn't you buy that jacket?  B: ____",
+   "choices": [
+    "It was so expensive that I couldn't afford it.",
+    "It was so expensive that I could afford it.",
+    "It was too expensive for me to buy it.",
+    "It was such expensive that I didn't buy it.",
+    "It was too expensive that I couldn't afford it."
+   ],
+   "answer": 1,
+   "why": "과거 상황이므로 so expensive that I couldn't afford it이 알맞다. ③은 목적어 it이 남았고, ④는 such expensive, ⑤는 too ~ that이 잘못이다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The teacher explained the rule ____ that nobody asked a question.",
+   "choices": [
+    "so clear",
+    "such clearly",
+    "so clearly",
+    "too clearly",
+    "such clear"
+   ],
+   "answer": 3,
+   "why": "동사 explained를 꾸미므로 부사가 필요하고, that절을 이끄는 so와 함께 so clearly가 알맞다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어순이 바른 것은?",
+   "choices": [
+    "It was so a beautiful song that I cried.",
+    "It was such beautiful a song that I cried.",
+    "It was a so beautiful song that I cried.",
+    "It was such beautiful song that I cried.",
+    "It was so beautiful a song that I cried."
+   ],
+   "answer": 5,
+   "why": "so를 쓸 때는 'so+형용사+a(n)+명사' 어순이다. such를 쓰면 such a beautiful song이 된다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 들어갈 말이 바르게 짝지어진 것은?  The water is clean enough for us to drink. = The water is ____ clean ____ we can drink it.",
+   "choices": [
+    "too – that",
+    "such – that",
+    "so – to",
+    "enough – that",
+    "so – that"
+   ],
+   "answer": 5,
+   "why": "형용사+enough+to부정사는 so+형용사+that+S+can+V로 바꿔 쓴다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것은?  The box was so heavy that nobody could lift it. = The box was ____.",
+   "choices": [
+    "too heavy for nobody to lift",
+    "too heavy for anybody to lift it",
+    "too heavy for anybody to lift",
+    "so heavy for anybody to lift",
+    "heavy enough for anybody to lift"
+   ],
+   "answer": 3,
+   "why": "too ~ to에는 이미 부정의 뜻이 있으므로 nobody 대신 anybody를 쓰고, 목적어 it은 쓰지 않는다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말은?  • It was ____ a strange story that nobody believed it.  • He is ____ a fast runner that no one can beat him.",
+   "choices": [
+    "so",
+    "too",
+    "such",
+    "very",
+    "quite"
+   ],
+   "answer": 3,
+   "why": "두 문장 모두 'a+형용사+명사' 앞이므로 such를 쓴다. so를 쓰려면 so strange a story처럼 어순이 달라져야 한다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The concert hall was so crowded ____ we had to stand at the back for two hours.",
+   "choices": [
+    "what",
+    "which",
+    "where",
+    "when",
+    "that"
+   ],
+   "answer": 5,
+   "why": "so+형용사 뒤의 결과절을 이끄는 접속사는 that이다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 틀린 부분은?  It ①<u>was</u> ②<u>such</u> ③<u>a</u> difficult problem ④<u>what</u> nobody ⑤<u>could</u> solve it.",
+   "choices": [
+    "was",
+    "such",
+    "a",
+    "what",
+    "could"
+   ],
+   "answer": 4,
+   "why": "such ~ that 구문이므로 what이 아니라 that이 결과절을 이끌어야 한다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 틀린 부분은?  The runner ①<u>was</u> ②<u>so</u> ③<u>exhausted</u> ④<u>that</u> he ⑤<u>can't</u> finish the race.",
+   "choices": [
+    "was",
+    "so",
+    "exhausted",
+    "that",
+    "can't"
+   ],
+   "answer": 5,
+   "why": "주절이 과거(was)이므로 that절도 과거 couldn't가 되어야 한다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장과 뜻이 같은 것은?  He was so kind that he helped the old man cross the street.",
+   "choices": [
+    "He was too kind to help the old man cross the street.",
+    "He was kind enough to help the old man cross the street.",
+    "He was enough kind to help the old man cross the street.",
+    "He was such kind to help the old man cross the street.",
+    "He was so kind to helping the old man cross the street."
+   ],
+   "answer": 2,
+   "why": "so ~ that S 긍정문은 형용사+enough+to부정사로 바꾼다. enough는 형용사 뒤에 놓인다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 that의 쓰임이 나머지 넷과 다른 것은?",
+   "choices": [
+    "This is the umbrella <u>that</u> I lost last week.",
+    "The wind was so strong <u>that</u> the tent blew away.",
+    "It was such a sad film <u>that</u> we all cried.",
+    "The bag was so light <u>that</u> a child could carry it.",
+    "She spoke so softly <u>that</u> nobody heard her."
+   ],
+   "answer": 1,
+   "why": "①의 that은 the umbrella를 꾸미는 관계대명사이고, 나머지는 모두 so[such] ~ that 구문에서 결과를 나타내는 접속사이다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "It was so foggy this morning that the plane ____ take off on time.",
+   "choices": [
+    "can't",
+    "cannot",
+    "couldn't",
+    "won't",
+    "doesn't"
+   ],
+   "answer": 3,
+   "why": "this morning은 이미 지난 시점이고 주절이 과거(was)이므로 couldn't가 알맞다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그 경기는 너무 흥미진진해서 나는 눈을 뗄 수 없었다.",
+   "choices": [
+    "The game was too exciting that I couldn't take my eyes off it.",
+    "The game was such exciting that I couldn't take my eyes off it.",
+    "The game was so exciting that I couldn't take my eyes off it.",
+    "The game was so excited that I couldn't take my eyes off it.",
+    "The game was so exciting that I could take my eyes off it."
+   ],
+   "answer": 3,
+   "why": "사물을 설명하므로 exciting을 쓰고 so+형용사+that+S+couldn't+V 형태가 알맞다. ①은 too ~ that, ②는 such+형용사가 잘못이다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 짝지은 것은?  ㄱ. There was so much dust that I started coughing.  ㄴ. It was so nice a day that we walked home.  ㄷ. She had so few friends that she felt lonely.  ㄹ. The soup was such hot that I burned my tongue.",
+   "choices": [
+    "ㄱ, ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄹ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄴ, ㄷ, ㄹ",
+    "ㄱ, ㄴ, ㄷ, ㄹ"
+   ],
+   "answer": 1,
+   "why": "ㄹ만 틀렸다. 형용사 hot 앞에는 such가 아니라 so를 써야 한다. ㄱ은 so much+불가산명사, ㄴ은 so+형용사+a+명사, ㄷ은 so few+복수명사로 모두 옳다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "There was so ____ noise outside the classroom that I couldn't hear the announcement.",
+   "choices": [
+    "much",
+    "many",
+    "few",
+    "a few",
+    "little"
+   ],
+   "answer": 1,
+   "why": "noise는 셀 수 없는 명사이고 '소음이 심해서'라는 뜻이므로 so much가 알맞다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "He had so ____ friends in the new town that he was always alone.",
+   "choices": [
+    "few",
+    "many",
+    "much",
+    "a few",
+    "little"
+   ],
+   "answer": 1,
+   "why": "friends는 셀 수 있는 복수명사이고 '친구가 거의 없어서'라는 뜻이므로 so few가 알맞다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 순서대로 바르게 짝지어진 것은?  • The film was ____ moving that many people cried.  • It was ____ moving film that many people cried.  • The actors were ____ good that we clapped for five minutes.",
+   "choices": [
+    "such – so – such",
+    "so – such a – so",
+    "so – so a – such",
+    "such a – so – so",
+    "so – such – so"
+   ],
+   "answer": 2,
+   "why": "형용사만 꾸밀 때는 so, 'a+형용사+명사' 앞에는 such a를 쓴다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?  ㄱ. The tea was too hot that I couldn't drink it.  ㄴ. It was such an old house that nobody wanted to buy it.  ㄷ. She is so smart a student that everyone respects her.  ㄹ. The story was so boring for me to finish.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ㄱ(too ~ that)과 ㄹ(so ~ for ~ to)이 틀렸다. ㄱ은 so hot that, ㄹ은 too boring for me to finish로 고쳐야 한다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "She was so busy last week that she ____ time to call me back.",
+   "choices": [
+    "doesn't have",
+    "hasn't",
+    "didn't have",
+    "don't have",
+    "hadn't have"
+   ],
+   "answer": 3,
+   "why": "last week이므로 과거 시제 didn't have가 알맞다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 고르면?",
+   "choices": [
+    "It was such a nice weather that we ate outside.",
+    "It was so nice weather that we ate outside.",
+    "It was such nice a weather that we ate outside.",
+    "It was so a nice weather that we ate outside.",
+    "It was such nice weather that we ate outside."
+   ],
+   "answer": 5,
+   "why": "weather는 셀 수 없는 명사이므로 a를 붙이지 않고 such nice weather로 쓴다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The lecture was so boring ____ half of the students fell asleep before it ended.",
+   "choices": [
+    "that",
+    "what",
+    "so",
+    "than",
+    "which"
+   ],
+   "answer": 1,
+   "why": "so+형용사 뒤의 결과절은 that이 이끈다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  이 커피는 너무 뜨거워서 마실 수 없다.",
+   "choices": [
+    "This coffee is too hot to drink it.",
+    "This coffee is so hot to drink.",
+    "This coffee is too hot to drink.",
+    "This coffee is too hot for drink.",
+    "This coffee is enough hot to drink."
+   ],
+   "answer": 3,
+   "why": "too+형용사+to부정사이며, to부정사의 목적어가 주어와 같으므로 it을 쓰지 않는다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것은?  He ran so fast that I couldn't keep up with him. = He ran too fast ____.",
+   "choices": [
+    "for me to keep up with him",
+    "for me to keep up with",
+    "for I to keep up with",
+    "to keep up with him",
+    "that I couldn't keep up"
+   ],
+   "answer": 2,
+   "why": "의미상 주어는 for me로 쓰고, with의 목적어가 주어(He)와 같으므로 him을 다시 쓰지 않는다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "Yesterday the wind blew ____ that the shop sign fell down.",
+   "choices": [
+    "so strong",
+    "such strongly",
+    "too strongly",
+    "such strong",
+    "so strongly"
+   ],
+   "answer": 5,
+   "why": "동사 blew를 꾸미므로 부사 strongly를 쓰고, that절을 이끄는 so와 함께 so strongly가 된다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것은?  The child is so short that he can't reach the button. = The child is ____ the button.",
+   "choices": [
+    "too short to reach it",
+    "short enough to reach",
+    "too short to reach",
+    "so short to reach",
+    "too short for reaching"
+   ],
+   "answer": 3,
+   "why": "so ~ that S can't ~는 too+형용사+to부정사로 바꾼다. 목적어 the button이 이미 있으므로 it은 쓰지 않는다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은?  A: Did you climb to the top of the hill?  B: No. ____",
+   "choices": [
+    "The path was so steep that we could climb it.",
+    "The path was too steep for us to climb it.",
+    "The path was steep enough for us to climb.",
+    "The path was such steep that we couldn't climb it.",
+    "The path was too steep for us to climb."
+   ],
+   "answer": 5,
+   "why": "올라가지 못했다는 뜻이므로 too ~ to 구문이 알맞고, to부정사의 목적어 it은 쓰지 않는다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말과 같도록 빈칸에 알맞은 것은?  그는 첫 기차를 타기 위해 일찍 일어났다.  He got up early ____ he could catch the first train.",
+   "choices": [
+    "so that",
+    "so",
+    "such that",
+    "that so",
+    "too"
+   ],
+   "answer": 1,
+   "why": "'~하기 위해'라는 목적을 나타낼 때는 so that+S+can[could]+V를 쓴다. 결과를 나타내는 so ~ that과 구별해야 한다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "The question was so tricky that even our teacher ____ it wrong at first.",
+   "choices": [
+    "got",
+    "get",
+    "gets",
+    "getting",
+    "to get"
+   ],
+   "answer": 1,
+   "why": "주절이 과거(was)이므로 that절도 과거 got이 알맞다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 짝지은 것은?  ㄱ. The music was so loud that we couldn't talk.  ㄴ. It was such a windy day that the boat couldn't leave.  ㄷ. The tea is too sweet for me to drinking.  ㄹ. He was so a strong man that he lifted the log alone.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 1,
+   "why": "ㄷ은 to drink로, ㄹ은 such a strong man 또는 so strong a man으로 고쳐야 한다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 틀린 부분은?  There ①<u>were</u> ②<u>so</u> ③<u>much</u> mistakes ④<u>that</u> the teacher ⑤<u>asked</u> me to write my essay again.",
+   "choices": [
+    "were",
+    "so",
+    "much",
+    "that",
+    "asked"
+   ],
+   "answer": 3,
+   "why": "mistakes는 셀 수 있는 복수명사이므로 much가 아니라 many를 써야 한다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분을 바르게 고친 것은?  The soup was so cold <u>for us to eat</u>. (수프가 너무 차가워서 우리는 먹을 수 없었다)",
+   "choices": [
+    "that we couldn't eat",
+    "to eat it",
+    "for us to eat it",
+    "that we couldn't eat it",
+    "that we could eat it"
+   ],
+   "answer": 4,
+   "why": "so는 that절과 짝을 이루며, that절은 완전한 문장이어야 하므로 목적어 it이 필요하다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "It was ____ an unusual painting that visitors stood in front of it for a long time.",
+   "choices": [
+    "so",
+    "such",
+    "too",
+    "very",
+    "much"
+   ],
+   "answer": 2,
+   "why": "'an+형용사+명사' 앞이므로 such를 쓴다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 바른 것은?",
+   "choices": [
+    "The bag was so heavy that she can't carry it home.",
+    "There was so many snow that the roads closed.",
+    "He is too weak that he can't open the jar.",
+    "She sang so beautifully that the audience stood up.",
+    "It was such quiet that I heard my own breathing."
+   ],
+   "answer": 4,
+   "why": "④ so+부사+that+S+V가 바르다. ①은 시제, ②는 so much snow, ③은 so weak that, ⑤는 so quiet이 되어야 한다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 too ~ to 구문으로 바꿔 쓰시오. (for us를 포함할 것)  The story was so long that we couldn't finish it in one class.",
+   "answer": "The story was too long for us to finish in one class.",
+   "why": "so ~ that S couldn't ~는 too+형용사+for+목적격+to부정사로 바꾸고, 목적어 it은 쓰지 않는다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 so ~ that 구문으로 바꿔 쓰시오. (주어는 we, 조동사는 can을 쓸 것)  The ice is thick enough for us to walk on.",
+   "answer": "The ice is so thick that we can walk on it.",
+   "why": "형용사+enough+to부정사는 so+형용사+that+S+can+V로 바꾸며, on의 목적어 it을 살려 써야 한다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 세 단어를 쓰시오.  It was such a difficult question that nobody could answer it. = It was ____ ____ ____ question that nobody could answer it.",
+   "answer": "so difficult a",
+   "why": "such+a+형용사+명사는 so+형용사+a+명사 어순으로 바꿔 쓸 수 있다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  There were so <u>much</u> cars on the road that we were an hour late.",
+   "answer": "many",
+   "why": "cars는 셀 수 있는 복수명사이므로 so many를 쓴다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  He had so <u>few</u> time that he skipped lunch.",
+   "answer": "little",
+   "why": "time은 셀 수 없는 명사이므로 few가 아니라 little을 쓴다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.  The girl spoke so ____ (confident) that everyone listened to her.",
+   "answer": "confidently",
+   "why": "동사 spoke를 꾸미므로 부사 confidently가 알맞다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 so ~ that 구문으로 바꿔 쓰시오. (주어는 I, 조동사는 couldn't을 쓸 것)  The box was too big for me to put in my bag.",
+   "answer": "The box was so big that I couldn't put it in my bag.",
+   "alt": [
+    "The box was so big that I could not put it in my bag."
+   ],
+   "why": "too ~ to를 so ~ that으로 바꿀 때는 생략되었던 목적어 it을 다시 써야 한다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.  It was <u>such</u> cold a morning that the windows froze.",
+   "answer": "so",
+   "why": "'형용사+a+명사' 어순 앞에는 such가 아니라 so를 쓴다(so cold a morning).",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 enough를 사용하여 바꿔 쓰시오.  He was so strong that he could move the piano alone.",
+   "answer": "He was strong enough to move the piano alone.",
+   "why": "so ~ that S could ~는 형용사+enough+to부정사로 바꾼다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 바르게 배열하여 빈칸을 채우시오.  There were ____ ____ ____ ____ we couldn't find a seat. (that / so / people / many)",
+   "answer": "so many people that",
+   "why": "셀 수 있는 복수명사 앞에는 so many를 쓰고, 결과절은 that이 이끈다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 so ~ that 구문으로 바꿔 쓰시오. (주어는 she, 조동사는 couldn't을 쓸 것)  The tea was too hot for her to drink.",
+   "answer": "The tea was so hot that she couldn't drink it.",
+   "alt": [
+    "The tea was so hot that she could not drink it."
+   ],
+   "why": "too ~ to를 so ~ that으로 바꿀 때 목적어 it을 살려 써야 한다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 빈칸에 so나 such 중 알맞은 말을 쓰시오.  It was ____ bad weather that all the flights were canceled.",
+   "answer": "such",
+   "why": "명사구(bad weather) 앞이므로 such를 쓰며, weather는 셀 수 없으므로 a를 붙이지 않는다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 두 단어를 쓰시오.  There was ____ ____ noise in the hall that I couldn't hear the announcement.",
+   "answer": "so much",
+   "why": "noise는 셀 수 없는 명사이므로 so much를 쓴다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  He was so sleepy that he <u>can't</u> keep his eyes open during the class yesterday.",
+   "answer": "couldn't",
+   "alt": [
+    "could not"
+   ],
+   "why": "yesterday가 있어 과거 시제이므로 couldn't로 고쳐야 한다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 한 단어를 쓰시오.  그것은 너무 놀라운 소식이어서 우리는 아무 말도 할 수 없었다.  It was ____ surprising news that we couldn't say anything.",
+   "answer": "such",
+   "why": "명사구(surprising news) 앞이므로 such를 쓰며, news는 셀 수 없으므로 a를 붙이지 않는다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장의 뜻이 같도록 빈칸에 알맞은 세 단어를 쓰시오.  The rope isn't long enough to reach the ground. = The rope is ____ ____ ____ reach the ground.",
+   "answer": "too short to",
+   "why": "'충분히 길지 않다'는 '너무 짧아서 ~할 수 없다'와 같으므로 too short to로 바꿔 쓴다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 so ~ that 구문으로 바꿔 쓰시오. (주어는 we, 조동사는 couldn't을 쓸 것)  The road was too narrow to drive on.",
+   "answer": "The road was so narrow that we couldn't drive on it.",
+   "alt": [
+    "The road was so narrow that we could not drive on it."
+   ],
+   "why": "too ~ to를 so ~ that으로 바꿀 때 on의 목적어 it을 살려 써야 한다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오.  They were <u>so</u> kind neighbors that we still miss them.",
+   "answer": "such",
+   "why": "복수 명사구(kind neighbors) 앞이므로 so가 아니라 such를 쓴다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.  The audience laughed so ____ (loud) that the actor stopped for a moment.",
+   "answer": "loudly",
+   "why": "동사 laughed를 꾸미므로 부사 loudly가 알맞다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 too ~ to 구문으로 바꿔 쓰시오. (for me를 포함할 것)  The suitcase was so heavy that I couldn't lift it alone.",
+   "answer": "The suitcase was too heavy for me to lift alone.",
+   "why": "so ~ that S couldn't ~를 too ~ to로 바꿀 때 to부정사의 목적어 it은 쓰지 않는다.",
+   "no": 200
+  }
+ ]
+}

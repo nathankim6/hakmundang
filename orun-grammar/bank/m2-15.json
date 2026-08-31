@@ -1,0 +1,2744 @@
+{
+ "id": "m2-15",
+ "grade": "중2",
+ "name": "간접의문문",
+ "points": [
+  "의문사+주어+동사 어순",
+  "if/whether 간접의문문",
+  "do you think 삽입"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — Tell me where ____.",
+   "choices": [
+    "does the bus stop",
+    "is the bus stop",
+    "the bus stop is",
+    "the bus stop does be",
+    "is the bus stop be"
+   ],
+   "answer": 3,
+   "why": "간접의문문은 <의문사+주어+동사> 어순이므로 where the bus stop is가 맞다. ②는 의문문 어순, ①④⑤는 do/be동사를 잘못 넣은 형태다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — I wonder what ____.",
+   "choices": [
+    "does she want",
+    "she want",
+    "she wants",
+    "wants she",
+    "she does wants"
+   ],
+   "answer": 3,
+   "why": "의문사 what 뒤에 <주어+동사>가 와야 하고 주어 she에 맞춰 wants로 쓴다. ①④는 의문문 어순, ②은 3인칭 단수 -s가 빠졌다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — Do you know when ____?",
+   "choices": [
+    "does the movie starts",
+    "does the movie start",
+    "the movie start",
+    "starts the movie",
+    "the movie starts"
+   ],
+   "answer": 5,
+   "why": "간접의문문 안에서는 do/does를 쓰지 않고 <주어+동사>로 쓴다. the movie가 3인칭 단수이므로 starts가 맞다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — Please tell me who ____.",
+   "choices": [
+    "is that man",
+    "that man does",
+    "does that man",
+    "that man is",
+    "is that man be"
+   ],
+   "answer": 4,
+   "why": "who가 보어일 때도 뒤에는 <주어+동사> 어순이 온다. 따라서 who that man is가 맞다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — I do not remember where ____.",
+   "choices": [
+    "I put my keys",
+    "did I put my keys",
+    "I did put my keys",
+    "put I my keys",
+    "I putted my keys"
+   ],
+   "answer": 1,
+   "why": "간접의문문에서 did는 사라지고 동사를 과거형으로 쓴다. put은 과거형도 put이므로 I put my keys가 맞다(putted는 없는 형태).",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — She asked me how old ____.",
+   "choices": [
+    "was I",
+    "am I",
+    "did I be",
+    "I did was",
+    "I was"
+   ],
+   "answer": 5,
+   "why": "<how old+주어+동사> 어순이므로 how old I was가 맞다. ①②는 의문문 어순이고, 주절이 과거이므로 시제도 과거가 자연스럽다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — Can you tell me why ____?",
+   "choices": [
+    "is he angry",
+    "does he angry",
+    "he is angry",
+    "he does angry",
+    "angry he is"
+   ],
+   "answer": 3,
+   "why": "why 뒤에 <주어+동사>가 와야 하므로 he is angry가 맞다. angry는 형용사라 does와 함께 쓸 수 없다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — I want to know how ____.",
+   "choices": [
+    "do you make it",
+    "you do make it",
+    "you makes it",
+    "make you it",
+    "you make it"
+   ],
+   "answer": 5,
+   "why": "간접의문문에서는 do를 빼고 <주어+동사>로 쓴다. 주어가 you이므로 make(원형)가 맞다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — Nobody knows where ____.",
+   "choices": [
+    "the cat hides",
+    "does the cat hide",
+    "the cat hide",
+    "hides the cat",
+    "the cat does hide"
+   ],
+   "answer": 1,
+   "why": "의문사 where 뒤에 <주어+동사>가 오고, the cat이 3인칭 단수이므로 hides가 맞다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — Do you remember what ____?",
+   "choices": [
+    "I said",
+    "did I say",
+    "I did say",
+    "said I",
+    "I says"
+   ],
+   "answer": 1,
+   "why": "간접의문문에서 did는 없어지고 동사를 과거형 said로 쓴다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — I am not sure when ____.",
+   "choices": [
+    "does the store close",
+    "the store do close",
+    "the store close",
+    "closes the store",
+    "the store closes"
+   ],
+   "answer": 5,
+   "why": "<의문사+주어+동사> 어순이고 the store는 3인칭 단수이므로 closes가 맞다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — He did not tell me which bus ____.",
+   "choices": [
+    "I should take",
+    "should I take",
+    "I take should",
+    "do I take",
+    "take I"
+   ],
+   "answer": 1,
+   "why": "<의문사(구)+주어+조동사+동사> 어순이므로 which bus I should take가 맞다. ②④는 의문문 어순이다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — Let me know how much ____.",
+   "choices": [
+    "does it cost",
+    "it does cost",
+    "it cost",
+    "costs it",
+    "it costs"
+   ],
+   "answer": 5,
+   "why": "간접의문문이므로 does를 빼고 it costs로 쓴다. 주어 it이 3인칭 단수라 cost가 아니라 costs다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — I wonder who ____ the window yesterday.",
+   "choices": [
+    "does broke",
+    "did broke",
+    "broke",
+    "break",
+    "was break"
+   ],
+   "answer": 3,
+   "why": "의문사 who가 주어인 간접의문문은 어순을 바꾸지 않고 <who+동사>로 쓴다. yesterday가 있으므로 과거형 broke가 맞다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — I do not know ____ she likes pizza or not.",
+   "choices": [
+    "what",
+    "who",
+    "which",
+    "whether",
+    "how"
+   ],
+   "answer": 4,
+   "why": "의문사가 없는 의문문을 넣을 때는 whether(또는 if)를 쓴다. 특히 or not과 함께 쓰는 whether가 알맞다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — Do you know ____ the concert begins? It starts at seven.",
+   "choices": [
+    "when",
+    "what",
+    "who",
+    "why",
+    "whose"
+   ],
+   "answer": 1,
+   "why": "대답이 시각(at seven)이므로 시간을 묻는 when이 알맞다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — Tell me ____ this bag is. It is Mina's.",
+   "choices": [
+    "who",
+    "which",
+    "whose",
+    "what",
+    "where"
+   ],
+   "answer": 3,
+   "why": "대답이 소유자(Mina's)이므로 소유를 묻는 whose가 알맞다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — I asked her ____ she was late. (그녀가 왜 늦었는지)",
+   "choices": [
+    "why",
+    "who",
+    "which",
+    "whether",
+    "what"
+   ],
+   "answer": 1,
+   "why": "이유를 묻는 우리말이므로 why가 알맞다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — I wonder ____ he can swim. (그가 수영할 수 있는지)",
+   "choices": [
+    "what",
+    "if",
+    "who",
+    "when",
+    "that"
+   ],
+   "answer": 2,
+   "why": "의문사가 없는 Can he swim?을 넣을 때는 if(=whether)를 쓴다. that은 사실을 전달할 때 쓰므로 뜻이 달라진다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — Can you tell me ____ the library is? It is next to the bank.",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "who",
+    "how"
+   ],
+   "answer": 2,
+   "why": "대답이 장소(next to the bank)이므로 where가 알맞다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — I do not know ____ he wants for his birthday. (그가 무엇을 원하는지)",
+   "choices": [
+    "when",
+    "what",
+    "where",
+    "who",
+    "whose"
+   ],
+   "answer": 2,
+   "why": "원하는 물건, 즉 사물을 묻고 있으므로 what이 알맞다. wants의 목적어 자리가 비어 있는 점에도 주목하자.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — She asked me ____ or not I liked the movie.",
+   "choices": [
+    "if",
+    "whether",
+    "that",
+    "what",
+    "why"
+   ],
+   "answer": 2,
+   "why": "or not이 바로 뒤에 올 수 있는 것은 whether뿐이다. if or not은 쓸 수 없다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은?",
+   "choices": [
+    "I do not know where does he live.",
+    "Do you know what is his name?",
+    "She asked me what do I want.",
+    "I wonder who is she.",
+    "Tell me when the class starts."
+   ],
+   "answer": 5,
+   "why": "⑤만 <의문사+주어+동사> 어순이다. ①③는 do/does가 남아 있고 ②④는 의문문 어순(is his name, is she)이라 틀렸다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은?",
+   "choices": [
+    "I know where she lives.",
+    "Do you know when he will come?",
+    "I wonder how old is your brother.",
+    "Tell me why you are sad.",
+    "She asked me if I was busy."
+   ],
+   "answer": 3,
+   "why": "③는 how old your brother is로 고쳐야 한다. 간접의문문에서는 주어와 동사를 도치하지 않는다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 고르시오.",
+   "choices": [
+    "Do you know how much does it cost?",
+    "I am not sure if he is at home.",
+    "Tell me what did you eat.",
+    "I wonder where is the station.",
+    "She asked me who am I."
+   ],
+   "answer": 2,
+   "why": "②는 <if+주어+동사> 어순으로 바르다. ①③은 do/does가 남아 있고 ④⑤는 도치된 의문문 어순이다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 것은?",
+   "choices": [
+    "I do not remember what her name is.",
+    "Can you tell me where the bus stop is?",
+    "I wonder whether she will come.",
+    "Do you know what time is it?",
+    "He asked me what I did last night."
+   ],
+   "answer": 4,
+   "why": "④는 what time it is로 고쳐야 한다. 간접의문문에서는 it is의 어순을 유지한다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 바른 것은?",
+   "choices": [
+    "I asked him where does he live.",
+    "I asked him where did he live.",
+    "I asked him where he live.",
+    "I asked him where he lived.",
+    "I asked him where lived he."
+   ],
+   "answer": 4,
+   "why": "④만 <의문사+주어+동사>이고 주절 시제(asked)에 맞춰 lived로 썼다. ③은 3인칭 단수 -s(또는 과거형)가 없어 틀렸다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장을 고르시오.",
+   "choices": [
+    "I do not know that he is from.",
+    "I wonder who made this cake.",
+    "Tell me which one you want.",
+    "Do you know if she is a doctor?",
+    "She asked me how I felt."
+   ],
+   "answer": 1,
+   "why": "①는 from의 목적어가 빠져 있으므로 where he is from이 되어야 한다. that은 의문사가 아니라서 빈자리를 채울 수 없다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은? — I <u>do not</u> <u>know</u> <u>where</u> <u>does she live</u> <u>now</u>.",
+   "choices": [
+    "do not",
+    "know",
+    "where",
+    "does she live",
+    "now"
+   ],
+   "answer": 4,
+   "why": "간접의문문에서는 does를 빼고 she lives로 써야 하므로 ④가 틀렸다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은? — Can you <u>tell me</u> <u>what</u> <u>is his name</u> <u>and</u> <u>where he is from</u>?",
+   "choices": [
+    "tell me",
+    "what",
+    "is his name",
+    "and",
+    "where he is from"
+   ],
+   "answer": 3,
+   "why": "what 뒤에도 <주어+동사> 어순이 와야 하므로 his name is로 고쳐야 한다. ⑤는 이미 바른 어순이다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은? — I <u>wonder</u> <u>if</u> <u>will she</u> <u>come</u> <u>to the party</u>.",
+   "choices": [
+    "wonder",
+    "if",
+    "will she",
+    "come",
+    "to the party"
+   ],
+   "answer": 3,
+   "why": "if 뒤에는 <주어+조동사>인 she will이 와야 한다. 의문문처럼 도치하면 안 된다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은? — She <u>asked me</u> <u>what</u> <u>did I</u> <u>want</u> <u>for lunch</u>.",
+   "choices": [
+    "asked me",
+    "what",
+    "did I",
+    "want",
+    "for lunch"
+   ],
+   "answer": 3,
+   "why": "did I want를 I wanted로 고쳐야 한다. 간접의문문에서 did는 사라지고 동사를 과거형으로 쓴다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 나는 그가 어디에 사는지 모른다.",
+   "choices": [
+    "I do not know where does he live.",
+    "I do not know where he live.",
+    "I do not know where he lives.",
+    "I do not know where lives he.",
+    "I do not know does he live where."
+   ],
+   "answer": 3,
+   "why": "<의문사+주어+동사>이고 he가 3인칭 단수이므로 lives가 맞다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 그 영화가 언제 시작하는지 아니?",
+   "choices": [
+    "Do you know when the movie starts?",
+    "Do you know when does the movie start?",
+    "Do you know when starts the movie?",
+    "Do you know when the movie start?",
+    "Do you know does the movie start when?"
+   ],
+   "answer": 1,
+   "why": "간접의문문이므로 does를 빼고 the movie starts로 쓴다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 나는 그녀가 바쁜지 궁금하다.",
+   "choices": [
+    "I wonder is she busy.",
+    "I wonder that she is busy.",
+    "I wonder if is she busy.",
+    "I wonder whether is she busy.",
+    "I wonder if she is busy."
+   ],
+   "answer": 5,
+   "why": "의문사가 없으므로 if(=whether)를 쓰고 뒤에 <주어+동사>를 둔다. ③④는 도치되어 틀렸다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 그가 왜 화가 났는지 말해 줘.",
+   "choices": [
+    "Tell me why is he angry.",
+    "Tell me why does he angry.",
+    "Tell me why he is angry.",
+    "Tell me why he angry is.",
+    "Tell me does he why angry."
+   ],
+   "answer": 3,
+   "why": "why 뒤에 <주어+동사>인 he is가 와야 한다. angry는 형용사라 does와 함께 쓸 수 없다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은? — A: Do you know ____? B: Yes. His name is Tom.",
+   "choices": [
+    "what is his name",
+    "his name what is",
+    "who his name",
+    "what does his name",
+    "what his name is"
+   ],
+   "answer": 5,
+   "why": "간접의문문이므로 <what+주어+동사>인 what his name is가 맞다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은? — A: Can you tell me ____? B: It is on the second floor.",
+   "choices": [
+    "where is the restroom",
+    "where the restroom is",
+    "where does the restroom",
+    "the restroom is where",
+    "where is the restroom be"
+   ],
+   "answer": 2,
+   "why": "장소를 묻고 있고 간접의문문이므로 where the restroom is가 맞다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은? — A: I wonder ____. B: I think she will be here at six.",
+   "choices": [
+    "when she will come",
+    "when does she come",
+    "when will she come",
+    "when she will comes",
+    "when come she"
+   ],
+   "answer": 1,
+   "why": "<when+주어+조동사+동사원형> 어순이므로 when she will come이 맞다. ④는 will 뒤에 원형이 와야 하므로 틀렸다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은? — A: Do you know ____? B: No, I have never met him.",
+   "choices": [
+    "who is that boy",
+    "who is that boy be",
+    "that boy who is",
+    "who does that boy be",
+    "who that boy is"
+   ],
+   "answer": 5,
+   "why": "who가 보어이므로 뒤에 <주어+동사>인 that boy is가 온다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말은? • I do not know ____ he is late. • Tell me ____ you did not call me.",
+   "choices": [
+    "what",
+    "why",
+    "when",
+    "how",
+    "who"
+   ],
+   "answer": 2,
+   "why": "두 문장 모두 이유를 묻고 있으므로 why가 공통으로 들어간다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말은? • Do you know ____ she lives? • I wonder ____ my glasses are.",
+   "choices": [
+    "what",
+    "when",
+    "where",
+    "why",
+    "who"
+   ],
+   "answer": 3,
+   "why": "두 문장 모두 장소를 묻고 있으므로 where가 알맞다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말은? • I asked him ____ he liked baseball or not. • Tell me ____ you are ready.",
+   "choices": [
+    "that",
+    "why",
+    "what",
+    "which",
+    "if"
+   ],
+   "answer": 5,
+   "why": "둘 다 의문사가 없는 의문문이므로 if(~인지)를 쓴다. that은 의문의 뜻이 없어 알맞지 않다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말은? • I do not know ____ this book is. • Do you know ____ bag this is?",
+   "choices": [
+    "who",
+    "whose",
+    "which",
+    "what",
+    "where"
+   ],
+   "answer": 2,
+   "why": "둘 다 소유자를 묻고 있으므로 whose가 알맞다. 첫 문장은 whose+주어+동사, 둘째는 whose+명사+주어+동사다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것은? • I do not know what ____. • Do you know when ____?",
+   "choices": [
+    "he wants – does the train leave",
+    "does he want – does the train leave",
+    "he want – the train leave",
+    "he wants – the train leaves",
+    "does he want – the train leaves"
+   ],
+   "answer": 4,
+   "why": "두 빈칸 모두 간접의문문이므로 do/does 없이 <주어+동사>로 쓰고, 3인칭 단수 -s를 붙인다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것은? • Tell me why ____. • I wonder if ____.",
+   "choices": [
+    "is she crying – is he coming",
+    "she crying is – he coming is",
+    "she is crying – is he coming",
+    "is she crying – he is coming",
+    "she is crying – he is coming"
+   ],
+   "answer": 5,
+   "why": "why와 if 뒤 모두 <주어+동사> 어순이어야 하므로 she is crying, he is coming이 맞다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것은? • I asked her ____ she was from. • I asked her ____ she was tired.",
+   "choices": [
+    "where – if",
+    "when – what",
+    "where – what",
+    "why – if",
+    "who – whether"
+   ],
+   "answer": 1,
+   "why": "from의 목적어 자리가 비었으므로 첫 칸은 where, 둘째는 의문사가 필요 없으므로 if가 알맞다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것은? • Do you know ____ made this cake? • Do you know ____ he made this cake?",
+   "choices": [
+    "whom – how",
+    "who – why",
+    "what – who",
+    "who – who",
+    "why – who"
+   ],
+   "answer": 2,
+   "why": "첫 문장은 주어 자리가 비었으므로 who, 둘째 문장은 주어와 목적어가 다 있으므로 이유를 묻는 why가 알맞다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 의문사 한 단어를 쓰시오. — I do not know ____ she lives. (그녀가 어디에 사는지)",
+   "answer": "where",
+   "alt": [],
+   "why": "장소를 묻고 있으므로 where를 쓰고 뒤에는 <주어+동사> 어순을 지킨다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 의문사 한 단어를 쓰시오. — Do you know ____ the class starts? (수업이 언제 시작하는지)",
+   "answer": "when",
+   "alt": [],
+   "why": "시간을 묻고 있으므로 when이 알맞다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 의문사 한 단어를 쓰시오. — Tell me ____ you are sad. (네가 왜 슬픈지)",
+   "answer": "why",
+   "alt": [],
+   "why": "이유를 묻고 있으므로 why가 알맞다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 의문사 한 단어를 쓰시오. — I wonder ____ pen this is. (이것이 누구의 펜인지)",
+   "answer": "whose",
+   "alt": [],
+   "why": "뒤에 명사 pen이 오고 소유자를 묻고 있으므로 whose가 알맞다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 의문사 한 단어를 쓰시오. — I do not know ____ he wants to eat. (그가 무엇을 먹고 싶어 하는지)",
+   "answer": "what",
+   "alt": [],
+   "why": "eat의 목적어가 비어 있고 사물을 묻고 있으므로 what이 알맞다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오. (i로 시작하는 두 글자) — I wonder ____ she is at home.",
+   "answer": "if",
+   "alt": [],
+   "why": "의문사가 없는 의문문 Is she at home?을 넣을 때는 if(~인지)를 쓴다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장을 한 문장으로 만들 때 빈칸에 알맞은 말을 쓰시오. • I do not know. • Where does he live? → I do not know ____.",
+   "answer": "where he lives",
+   "alt": [
+    "where he lives."
+   ],
+   "why": "간접의문문이므로 does를 빼고 <where+주어+동사>로 쓴다. he가 3인칭 단수라 lives가 된다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장을 한 문장으로 만들 때 빈칸에 알맞은 말을 쓰시오. • Do you know? • When did the movie start? → Do you know ____?",
+   "answer": "when the movie started",
+   "alt": [
+    "when the movie started?"
+   ],
+   "why": "did는 사라지고 동사를 과거형 started로 바꾼다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장을 한 문장으로 만들 때 빈칸에 알맞은 말을 쓰시오. • Tell me. • What is your name? → Tell me ____.",
+   "answer": "what your name is",
+   "alt": [
+    "what your name is."
+   ],
+   "why": "what 뒤에도 <주어+동사> 어순이므로 your name is가 된다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장을 한 문장으로 만들 때 빈칸에 알맞은 말을 쓰시오. • I wonder. • Is she a nurse? → I wonder ____. (if로 시작할 것)",
+   "answer": "if she is a nurse",
+   "alt": [
+    "if she is a nurse."
+   ],
+   "why": "의문사가 없으므로 if를 쓰고 뒤에 <주어+동사>를 둔다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장을 한 문장으로 만들 때 빈칸에 알맞은 말을 쓰시오. • Can you tell me? • How old is he? → Can you tell me ____?",
+   "answer": "how old he is",
+   "alt": [
+    "how old he is?"
+   ],
+   "why": "<how old+주어+동사> 어순이므로 how old he is가 된다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장을 한 문장으로 만들 때 빈칸에 알맞은 말을 쓰시오. • I do not remember. • Where did I park the car? → I do not remember ____.",
+   "answer": "where I parked the car",
+   "alt": [
+    "where I parked the car."
+   ],
+   "why": "did가 사라지고 park를 과거형 parked로 쓴다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. — I do not know <u>where does she live</u>.",
+   "answer": "where she lives",
+   "alt": [],
+   "why": "간접의문문에서는 does를 빼고 <주어+동사>로 쓰며 3인칭 단수 -s를 붙인다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. — Do you know <u>what is his job</u>?",
+   "answer": "what his job is",
+   "alt": [],
+   "why": "what 뒤에 <주어+동사> 어순이 와야 하므로 his job is로 고친다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. — Tell me <u>when will he come</u>.",
+   "answer": "when he will come",
+   "alt": [],
+   "why": "간접의문문은 도치하지 않으므로 <when+주어+조동사+동사원형>으로 쓴다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. — I wonder <u>if is she happy</u>.",
+   "answer": "if she is happy",
+   "alt": [
+    "whether she is happy"
+   ],
+   "why": "if 뒤에는 <주어+동사>인 she is가 와야 한다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. — She asked me <u>what did I want</u>.",
+   "answer": "what I wanted",
+   "alt": [],
+   "why": "did는 사라지고 want를 과거형 wanted로 쓴다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. — I do not know <u>who is that girl</u>.",
+   "answer": "who that girl is",
+   "alt": [],
+   "why": "who가 보어이므로 뒤에 <주어+동사>인 that girl is가 온다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 간접의문문이 들어간 문장으로 바꿔 쓰시오. — Where is the bank? (Do you know로 시작할 것)",
+   "answer": "Do you know where the bank is?",
+   "alt": [
+    "Do you know where the bank is"
+   ],
+   "why": "간접의문문 자리에서는 is the bank를 the bank is로 바꾼다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 간접의문문이 들어간 문장으로 바꿔 쓰시오. — What time does the store open? (I am not sure로 시작할 것)",
+   "answer": "I am not sure what time the store opens.",
+   "alt": [
+    "I am not sure what time the store opens",
+    "I'm not sure what time the store opens.",
+    "I'm not sure what time the store opens"
+   ],
+   "why": "does를 빼고 the store opens로 쓴다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — ____ he wants for his birthday? (너는 그가 생일에 무엇을 원한다고 생각하니?)",
+   "choices": [
+    "Do you think what",
+    "What do you think",
+    "Do you know what",
+    "What do you know",
+    "Think you what"
+   ],
+   "answer": 2,
+   "why": "think가 쓰이면 대답이 Yes/No가 아니므로 의문사를 문장 맨 앞으로 보낸다. Do you think what ~?은 쓸 수 없다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — ____ the meeting will end? (너는 회의가 언제 끝날 것 같니?)",
+   "choices": [
+    "Do you guess when",
+    "Guess do you when",
+    "Do you guess if",
+    "When do you guess",
+    "When you do guess"
+   ],
+   "answer": 4,
+   "why": "guess 역시 의문사를 앞으로 보내는 동사이므로 When do you guess ~? 형태가 된다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — Do you know ____? (그가 언제 도착했는지)",
+   "choices": [
+    "when did he arrive",
+    "when he arrived",
+    "when he arrives",
+    "when has he arrived",
+    "when arrived he"
+   ],
+   "answer": 2,
+   "why": "know는 의문사를 앞으로 보내지 않고, 간접의문문에서 did는 사라져 동사가 과거형 arrived가 된다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — I asked Sumi ____ she had ever been to Jeju.",
+   "choices": [
+    "that",
+    "what",
+    "which",
+    "whether",
+    "who"
+   ],
+   "answer": 4,
+   "why": "의문사가 없는 의문문을 넣는 자리이므로 whether(~인지)가 알맞다. that은 의문의 뜻을 나타내지 못한다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — Nobody knows ____ the accident happened. (왜 그 사고가 일어났는지)",
+   "choices": [
+    "how",
+    "why",
+    "who",
+    "what",
+    "which"
+   ],
+   "answer": 2,
+   "why": "이유를 묻는 우리말이므로 why가 알맞다. how는 방법이라 뜻이 달라진다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — ____ do you think broke the window?",
+   "choices": [
+    "Do you think who",
+    "Who",
+    "What",
+    "Whom",
+    "Whose"
+   ],
+   "answer": 2,
+   "why": "think가 있으므로 의문사를 앞으로 보내고, 뒤에 주어가 없으므로 주격 Who를 쓴다. Whom은 목적격이라 주어 자리에 올 수 없다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — She wondered ____ the letter was for her.",
+   "choices": [
+    "that",
+    "how",
+    "what",
+    "who",
+    "if"
+   ],
+   "answer": 5,
+   "why": "그 편지가 자기에게 온 것인지 궁금해한 것이므로 if(~인지)가 알맞다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — Can you tell me ____? (그 박물관이 몇 시에 문을 여는지)",
+   "choices": [
+    "what time does the museum open",
+    "what time opens the museum",
+    "what time the museum open",
+    "what time the museum opens",
+    "does the museum open what time"
+   ],
+   "answer": 4,
+   "why": "간접의문문이므로 does를 빼고 the museum opens로 쓴다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — I do not understand ____ so many people like that show.",
+   "choices": [
+    "which",
+    "who",
+    "whose",
+    "why",
+    "what"
+   ],
+   "answer": 4,
+   "why": "주어(so many people)와 목적어(that show)가 모두 있으므로 이유를 나타내는 why가 알맞다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — He asked me ____ I could help him with his homework.",
+   "choices": [
+    "that",
+    "what",
+    "why",
+    "who",
+    "if"
+   ],
+   "answer": 5,
+   "why": "도와줄 수 있는지 물은 것이므로 if(~인지)가 알맞다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — Do you know ____? (그 소년이 누구인지)",
+   "choices": [
+    "who is the boy",
+    "who is the boy be",
+    "who does the boy",
+    "the boy who is",
+    "who the boy is"
+   ],
+   "answer": 5,
+   "why": "who가 보어일 때 간접의문문은 <who+주어+동사> 어순이 된다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — ____ the concert will be held? (그 콘서트가 어디에서 열릴 것 같니?)",
+   "choices": [
+    "Where you suppose",
+    "Do you suppose where",
+    "Where do you suppose",
+    "Do you suppose",
+    "Where does you suppose"
+   ],
+   "answer": 3,
+   "why": "suppose는 의문사를 문두로 보내는 동사이므로 Where do you suppose ~? 형태가 맞다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — I wonder ____. (그가 왜 그렇게 일찍 떠났는지)",
+   "choices": [
+    "why did he leave so early",
+    "why he did leave so early",
+    "why he leaves so early",
+    "why he left so early",
+    "why left he so early"
+   ],
+   "answer": 4,
+   "why": "did가 사라지고 동사를 과거형 left로 쓴다. ③은 과거의 일인데 현재형이라 맞지 않다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — The police asked us ____ we had seen the man.",
+   "choices": [
+    "that",
+    "if",
+    "what",
+    "who",
+    "which"
+   ],
+   "answer": 2,
+   "why": "그 남자를 본 적이 있는지 물은 것이므로 if가 알맞다. seen의 목적어 the man이 있으므로 what은 들어갈 수 없다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — Please tell me ____ this word means.",
+   "choices": [
+    "what",
+    "that",
+    "which",
+    "how",
+    "why"
+   ],
+   "answer": 1,
+   "why": "means의 목적어가 비어 있으므로 what이 알맞다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — I cannot remember ____ I put the tickets.",
+   "choices": [
+    "that",
+    "where",
+    "which",
+    "who",
+    "what"
+   ],
+   "answer": 2,
+   "why": "put은 <놓아둔 장소>를 나타내는 말이 필요하므로 where가 알맞다. 나머지는 뒤 문장의 빈자리를 채우지 못한다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 고르시오.",
+   "choices": [
+    "Do you know where does she work?",
+    "Do you think what he wants?",
+    "I wonder that he is honest.",
+    "She asked me what am I doing.",
+    "Tell me how you solved the problem."
+   ],
+   "answer": 5,
+   "why": "⑤만 <의문사+주어+동사> 어순이다. ②는 What do you think he wants?로 써야 하고 ③의 wonder는 that절이 아니라 if/의문사절을 목적어로 쓴다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 문장을 고르시오.",
+   "choices": [
+    "I asked him if he was free.",
+    "Do you know why is she crying?",
+    "Who do you think will win the game?",
+    "Can you tell me where the post office is?",
+    "I do not know what she bought yesterday."
+   ],
+   "answer": 2,
+   "why": "②은 why she is crying으로 고쳐야 한다. 간접의문문에서는 주어와 동사를 도치하지 않는다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 정확한 문장은?",
+   "choices": [
+    "Do you believe what is he doing now?",
+    "What do you believe he is doing now?",
+    "What you believe he is doing now?",
+    "What do you believe is he doing now?",
+    "Do you believe what does he do now?"
+   ],
+   "answer": 2,
+   "why": "believe는 의문사를 문두로 보내고 뒤는 <주어+동사> 어순을 지킨다. ①④⑤는 도치되었거나 does가 남아 있다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞지 않는 문장은?",
+   "choices": [
+    "I am not sure whether he will come.",
+    "She asked me where I had been.",
+    "I wonder when will the rain stop.",
+    "Do you know who that woman is?",
+    "Tell me which color you like better."
+   ],
+   "answer": 3,
+   "why": "③는 when the rain will stop으로 고쳐야 한다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞는 문장은?",
+   "choices": [
+    "Nobody knows when the war ended.",
+    "I asked her that she needed help.",
+    "Do you know how much does this cost?",
+    "Who do you know will come?",
+    "I wonder if or not she is coming."
+   ],
+   "answer": 1,
+   "why": "①만 바르다. ③은 does가 남아 있고 ②는 ask 뒤에 if가 와야 하며 ④는 know이므로 Do you know who will come?이 맞고 ⑤는 if or not을 쓸 수 없다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어색한 문장을 고르시오.",
+   "choices": [
+    "Can you tell me what happened?",
+    "How do you think we can fix it?",
+    "I do not know whether to go or not.",
+    "She asked me did I like the food.",
+    "I wonder who left this note."
+   ],
+   "answer": 4,
+   "why": "④는 asked me if I liked the food로 고쳐야 한다. 간접의문문 자리에 의문문 어순을 그대로 쓸 수 없다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은? — Do you <u>know</u> <u>what</u> <u>does he do</u> <u>for</u> <u>a living</u>?",
+   "choices": [
+    "know",
+    "what",
+    "does he do",
+    "for",
+    "a living"
+   ],
+   "answer": 3,
+   "why": "간접의문문이므로 does를 빼고 he does로 써야 한다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은? — I <u>asked</u> her <u>whether</u> <u>could she</u> <u>lend</u> me <u>her umbrella</u>.",
+   "choices": [
+    "asked",
+    "whether",
+    "could she",
+    "lend",
+    "her umbrella"
+   ],
+   "answer": 3,
+   "why": "whether 뒤에는 <주어+조동사>인 she could가 와야 한다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은? — She <u>wanted</u> to know <u>how long</u> <u>did it take</u> <u>to get</u> <u>there</u>.",
+   "choices": [
+    "wanted",
+    "how long",
+    "did it take",
+    "to get",
+    "there"
+   ],
+   "answer": 3,
+   "why": "did가 사라지고 it took가 되어야 한다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은? — Nobody <u>knows</u> <u>when</u> <u>will the bus</u> <u>come</u>, so we <u>are waiting</u> here.",
+   "choices": [
+    "knows",
+    "when",
+    "will the bus",
+    "come",
+    "are waiting"
+   ],
+   "answer": 3,
+   "why": "when 뒤에는 the bus will 순서로 써야 한다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은? — He <u>asked</u> me <u>what</u> <u>I want</u> <u>to eat</u> <u>last night</u>.",
+   "choices": [
+    "asked",
+    "what",
+    "I want",
+    "to eat",
+    "last night"
+   ],
+   "answer": 3,
+   "why": "last night이라는 과거 표현과 주절의 asked에 맞춰 I wanted로 써야 한다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 너는 그녀가 어디에 갔다고 생각하니?",
+   "choices": [
+    "Do you think where she went?",
+    "Where you think she went?",
+    "Where do you think did she go?",
+    "Do you think where did she go?",
+    "Where do you think she went?"
+   ],
+   "answer": 5,
+   "why": "think가 있으므로 의문사를 문두로 보내고 뒤는 <주어+동사>로 쓴다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 나는 그가 시험에 합격했는지 궁금하다.",
+   "choices": [
+    "I wonder that he passed the exam.",
+    "I wonder did he pass the exam.",
+    "I wonder whether did he pass.",
+    "I wonder if did he pass the exam.",
+    "I wonder if he passed the exam."
+   ],
+   "answer": 5,
+   "why": "의문사가 없으므로 if를 쓰고 did 없이 과거형 passed를 쓴다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 이 기계가 어떻게 작동하는지 아세요?",
+   "choices": [
+    "Do you know how does this machine work?",
+    "Do you know how this machine works?",
+    "Do you know how work this machine?",
+    "How do you know this machine works?",
+    "Do you know this machine how works?"
+   ],
+   "answer": 2,
+   "why": "know는 의문사를 앞으로 보내지 않으며 does를 빼고 works로 쓴다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 그녀는 나에게 내가 어제 무엇을 했는지 물었다.",
+   "choices": [
+    "She asked me what I did yesterday.",
+    "She asked me what I do yesterday.",
+    "She asked me what did I do yesterday.",
+    "She asked me what do I did yesterday.",
+    "She asked me did I what yesterday."
+   ],
+   "answer": 1,
+   "why": "did가 사라지고 동사를 과거형 did(do의 과거)로 쓴 ①이 맞다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 누가 그 문을 열었다고 생각하니?",
+   "choices": [
+    "Who do you think opened the door?",
+    "Do you think who opened the door?",
+    "Who do you think did open the door?",
+    "Whom do you think opened the door?",
+    "Who you think opened the door?"
+   ],
+   "answer": 1,
+   "why": "think가 있으므로 Who를 문두로 보내며, 주어 자리이므로 주격 Who를 쓴다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은? — A: Excuse me. Do you know ____? B: Sure, it leaves at 3:30.",
+   "choices": [
+    "when the train leaves",
+    "when does the train leave",
+    "when leaves the train",
+    "the train when leaves",
+    "when does the train leaves"
+   ],
+   "answer": 1,
+   "why": "간접의문문이므로 does를 빼고 the train leaves로 쓴다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은? — A: ____ B: I think he is in the library.",
+   "choices": [
+    "Do you think where he is?",
+    "Do you think where is he?",
+    "Where do you think is he?",
+    "Where do you think he is?",
+    "Where you think he is?"
+   ],
+   "answer": 4,
+   "why": "대답이 장소이고 think가 쓰였으므로 의문사를 문두로 보낸 ④가 맞다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은? — A: Can you tell me ____? B: Yes, she is my cousin.",
+   "choices": [
+    "who is that girl",
+    "who that girl is",
+    "that girl is who",
+    "who does that girl",
+    "who is that girl be"
+   ],
+   "answer": 2,
+   "why": "who 뒤에 <주어+동사>가 와야 하므로 who that girl is가 맞다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은? — A: Do you know ____ he did not come to school? B: He caught a cold.",
+   "choices": [
+    "what",
+    "when",
+    "who",
+    "why",
+    "how"
+   ],
+   "answer": 4,
+   "why": "대답이 결석한 이유이므로 why가 알맞다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말은? • I do not know ____ he told the truth or not. • Ask him ____ he is coming to the party.",
+   "choices": [
+    "that",
+    "which",
+    "what",
+    "why",
+    "if"
+   ],
+   "answer": 5,
+   "why": "첫 문장은 or not과 함께 쓰였고 둘째 문장도 의문사가 필요 없는 자리이므로 if(~인지)가 공통으로 들어간다. why는 첫 문장에 쓸 수 없다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말은? • ____ do you think she is from? • ____ did you put my phone?",
+   "choices": [
+    "What",
+    "When",
+    "Where",
+    "Why",
+    "How"
+   ],
+   "answer": 3,
+   "why": "둘 다 장소를 묻고 있으므로 Where가 알맞다. 첫 문장은 think 때문에 의문사가 문두로 나온 형태다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말은? • Do you know ____ this bike belongs to? • Tell me ____ you were talking to on the phone.",
+   "choices": [
+    "who",
+    "whose",
+    "which",
+    "what",
+    "where"
+   ],
+   "answer": 1,
+   "why": "두 문장 모두 전치사(to)의 목적어가 되는 사람을 묻고 있으므로 who가 알맞다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말은? • Tell me ____ old your sister is. • I wonder ____ she got here so fast.",
+   "choices": [
+    "what",
+    "which",
+    "why",
+    "when",
+    "how"
+   ],
+   "answer": 5,
+   "why": "첫 칸은 how old, 둘째 칸은 방법을 묻는 how이므로 공통으로 how가 들어간다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것은? • Do you know what time ____? • I wonder why ____.",
+   "choices": [
+    "does the bank open – was he absent",
+    "the bank opens – he was absent",
+    "the bank open – he was absent",
+    "does the bank open – he was absent",
+    "the bank opens – was he absent"
+   ],
+   "answer": 2,
+   "why": "두 빈칸 모두 간접의문문이므로 does를 빼고 <주어+동사> 어순으로 쓴다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것은? • I asked him ____ he was angry. • I asked him ____ he could come.",
+   "choices": [
+    "why – if",
+    "what – that",
+    "why – that",
+    "when – what",
+    "how – which"
+   ],
+   "answer": 1,
+   "why": "첫 문장은 이유를 물으므로 why, 둘째는 올 수 있는지를 물으므로 if가 알맞다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것은? • Do you know ____ made this poster? • ____ do you think made this poster?",
+   "choices": [
+    "who – What",
+    "who – Do you think who",
+    "whom – Who",
+    "who – Who",
+    "what – Who"
+   ],
+   "answer": 4,
+   "why": "둘 다 주어를 묻는 who가 필요하고, think가 있는 둘째 문장은 Who를 문두에 둔다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 바르게 짝지어진 것은? • I am not sure ____ she will like this gift. • Please tell me ____ she likes best.",
+   "choices": [
+    "whether – what",
+    "what – whether",
+    "that – what",
+    "whether – that",
+    "which – whether"
+   ],
+   "answer": 1,
+   "why": "첫 칸은 의문사가 필요 없으므로 whether, 둘째 칸은 likes의 목적어가 비었으므로 what이 알맞다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바르게 옮긴 것은? — I do not know it. + What is his name?",
+   "choices": [
+    "I do not know what is his name.",
+    "I do not know that his name is.",
+    "I do not know his name what is.",
+    "I do not know what his name is.",
+    "I do not know what does his name."
+   ],
+   "answer": 4,
+   "why": "간접의문문이 되면 is his name이 his name is로 바뀐다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바르게 옮긴 것은? — I want to know. + Is he a teacher?",
+   "choices": [
+    "I want to know that he is a teacher.",
+    "I want to know is he a teacher.",
+    "I want to know he is a teacher or not.",
+    "I want to know whether is he a teacher.",
+    "I want to know if he is a teacher."
+   ],
+   "answer": 5,
+   "why": "의문사가 없으므로 if를 쓰고 뒤는 <주어+동사> 어순으로 둔다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 한 문장으로 만들 때 빈칸에 알맞은 말을 쓰시오. • Do you know? • Where did she go last night? → Do you know ____?",
+   "answer": "where she went last night",
+   "alt": [
+    "where she went last night?"
+   ],
+   "why": "간접의문문이므로 did가 사라지고 동사를 과거형 went로 쓴다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 한 문장으로 만들 때 빈칸에 알맞은 말을 쓰시오. • I wonder. • Why is the sky blue? → I wonder ____.",
+   "answer": "why the sky is blue",
+   "alt": [
+    "why the sky is blue."
+   ],
+   "why": "why 뒤에 <주어+동사>인 the sky is 어순으로 쓴다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 한 문장으로 만들 때 빈칸에 알맞은 말을 쓰시오. • Can you tell me? • How can I get to the airport? → Can you tell me ____?",
+   "answer": "how I can get to the airport",
+   "alt": [
+    "how I can get to the airport?"
+   ],
+   "why": "조동사 can이 주어 뒤로 가서 <how+주어+조동사+동사원형>이 된다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 한 문장으로 쓰시오. • Do you think? • What does he want? → ____",
+   "answer": "What do you think he wants?",
+   "alt": [
+    "What do you think he wants"
+   ],
+   "why": "think가 있으면 의문사를 문두로 보내고, 뒤는 does 없이 he wants로 쓴다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 한 문장으로 쓰시오. • Do you guess? • When will the movie start? → ____",
+   "answer": "When do you guess the movie will start?",
+   "alt": [
+    "When do you guess the movie will start"
+   ],
+   "why": "guess도 의문사를 문두로 보내는 동사이며 뒤는 <주어+조동사+동사원형> 어순이다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. — She asked me <u>where did I live</u>.",
+   "answer": "where I lived",
+   "alt": [],
+   "why": "did가 사라지고 주절의 과거 시제에 맞춰 lived로 쓴다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. — I wonder <u>whether or not is she coming</u>.",
+   "answer": "whether or not she is coming",
+   "alt": [],
+   "why": "whether or not 뒤에도 <주어+동사> 어순을 지켜야 한다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. — Nobody knows <u>when did the fire start</u>.",
+   "answer": "when the fire started",
+   "alt": [],
+   "why": "간접의문문에서 did는 사라지고 동사를 과거형 started로 쓴다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. — Yesterday he asked me <u>if I am hungry</u>.",
+   "answer": "if I was hungry",
+   "alt": [
+    "whether I was hungry"
+   ],
+   "why": "주절이 과거(asked)이고 Yesterday가 있으므로 종속절도 과거형 was로 맞춘다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 어법에 맞게 고쳐 쓰시오. — Do you think who will win the match?",
+   "answer": "Who do you think will win the match?",
+   "alt": [
+    "Who do you think will win the match"
+   ],
+   "why": "think가 있는 문장은 대답이 Yes/No가 아니므로 의문사 Who를 문장 맨 앞으로 보낸다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오. — I am not sure ____ or not he will agree.",
+   "answer": "whether",
+   "alt": [],
+   "why": "or not이 바로 뒤에 오는 자리에는 if를 쓸 수 없고 whether만 쓸 수 있다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오. — ____ do you think she is? (너는 그녀가 누구라고 생각하니?)",
+   "answer": "Who",
+   "alt": [
+    "who"
+   ],
+   "why": "think가 있으므로 의문사 Who를 문두에 두고 뒤에 do you think she is를 이어 쓴다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오. — Do you know ____ this letter is from? (누구에게서 온 편지인지)",
+   "answer": "who",
+   "alt": [
+    "whom"
+   ],
+   "why": "전치사 from의 목적어가 되는 사람을 묻고 있으므로 who(격식체로는 whom)를 쓴다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오. (단, if는 쓰지 말 것) — I asked her ____ she had ever seen a lion.",
+   "answer": "whether",
+   "alt": [],
+   "why": "의문사가 없는 의문문을 넣는 자리이므로 if 또는 whether가 오는데, 조건에 따라 whether를 쓴다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 간접의문문을 사용해 한 문장으로 쓰시오. — Where does he work? + I do not know",
+   "answer": "I do not know where he works.",
+   "alt": [
+    "I do not know where he works",
+    "I don't know where he works.",
+    "I don't know where he works"
+   ],
+   "why": "does를 빼고 <where+주어+동사>로 쓰며 3인칭 단수 -s를 붙인다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 간접의문문을 사용해 한 문장으로 쓰시오. — Did she call you? + Tell me",
+   "answer": "Tell me if she called you.",
+   "alt": [
+    "Tell me if she called you",
+    "Tell me whether she called you.",
+    "Tell me whether she called you"
+   ],
+   "why": "의문사가 없으므로 if(whether)를 쓰고 did를 없앤 뒤 과거형 called로 쓴다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 간접의문문을 사용해 한 문장으로 쓰시오. — What time is it? + Do you know",
+   "answer": "Do you know what time it is?",
+   "alt": [
+    "Do you know what time it is"
+   ],
+   "why": "간접의문문이 되면 is it이 it is로 바뀐다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 간접의문문을 사용해 한 문장으로 쓰시오. — Who broke the vase? + Do you think",
+   "answer": "Who do you think broke the vase?",
+   "alt": [
+    "Who do you think broke the vase"
+   ],
+   "why": "think가 있으므로 의문사 Who를 문두로 보내고 나머지는 그대로 이어 쓴다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 간접의문문을 사용해 한 문장으로 쓰시오. — How old is your brother? + Can you tell me",
+   "answer": "Can you tell me how old your brother is?",
+   "alt": [
+    "Can you tell me how old your brother is"
+   ],
+   "why": "<how old+주어+동사> 어순으로 바꾼다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 간접의문문을 사용해 한 문장으로 쓰시오. — Is this seat taken? + I wonder",
+   "answer": "I wonder if this seat is taken.",
+   "alt": [
+    "I wonder if this seat is taken",
+    "I wonder whether this seat is taken.",
+    "I wonder whether this seat is taken"
+   ],
+   "why": "의문사가 없으므로 if(whether)를 쓰고 뒤에 <주어+동사>를 둔다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 바르게 짝지은 것은? ㄱ. Do you know who the man in the blue jacket is? ㄴ. Where do you believe she hid the money? ㄷ. I wonder that the store is still open. ㄹ. Could you tell me when does the next train leave?",
+   "choices": [
+    "ㄷ, ㄹ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄱ, ㄴ"
+   ],
+   "answer": 5,
+   "why": "ㄷ은 wonder 뒤에 if/whether가 와야 하고, ㄹ은 when the next train leaves로 고쳐야 한다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 바르게 짝지은 것은? ㄱ. She asked me whether I had finished my report. ㄴ. Do you think what the answer is? ㄷ. I cannot decide whether to accept the offer. ㄹ. Nobody knows how did he escape.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㄹ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄷ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "ㄴ은 What do you think the answer is?로, ㄹ은 how he escaped로 고쳐야 한다. ㄷ의 whether to부정사는 바른 형태다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 바르게 짝지은 것은? ㄱ. I am not sure if or not the news is true. ㄴ. It depends on whether she agrees. ㄷ. Who do you suppose will be the next leader? ㄹ. Tell me what time does the show start.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "ㄱ은 if or not을 쓸 수 없어 whether or not이어야 하고, ㄹ은 what time the show starts로 고쳐야 한다. 전치사 뒤에는 if가 아니라 whether를 쓴다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 바르게 짝지은 것은? ㄱ. I wonder whom she is waiting for. ㄴ. Do you know that why he left early? ㄷ. Can you tell me where the exit is? ㄹ. What do you know he wants?",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄹ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㄷ"
+   ],
+   "answer": 5,
+   "why": "ㄴ은 that을 빼야 하고, ㄹ은 know가 쓰였으므로 Do you know what he wants?가 되어야 한다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 바르게 짝지은 것은? ㄱ. Do you have any idea when the meeting will start? ㄴ. I asked him where had he been. ㄷ. How do you think we should solve this? ㄹ. She wondered if or not to call him.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㄷ"
+   ],
+   "answer": 5,
+   "why": "ㄴ은 where he had been으로 고쳐야 하고, ㄹ은 whether to call him이 되어야 한다. if는 or not이나 to부정사와 바로 이어 쓸 수 없다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 바르게 짝지은 것은? ㄱ. Let me know if you need any help. ㄴ. I am curious about whether he will join us. ㄷ. Do you remember what did we talk about? ㄹ. Whom do you believe is telling the truth?",
+   "choices": [
+    "ㄴ, ㄷ",
+    "ㄱ, ㄹ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ"
+   ],
+   "answer": 4,
+   "why": "ㄷ은 what we talked about이어야 하고, ㄹ은 is telling의 주어 자리이므로 Who가 맞다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 바르게 짝지은 것은? ㄱ. Nobody knew what the strange noise was. ㄴ. She asked me did I want more soup. ㄷ. I wonder how long does it take by bus. ㄹ. Where do you imagine they went for the holidays?",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄹ",
+    "ㄴ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "ㄴ은 asked me if I wanted, ㄷ은 how long it takes로 고쳐야 한다. imagine은 의문사를 문두로 보내는 동사다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 바르게 짝지은 것은? ㄱ. Can you tell me whether the museum opens on Mondays? ㄴ. I do not know what should I do next. ㄷ. He asked me if I could pick him up at seven. ㄹ. When do you know the train arrives?",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ",
+    "ㄴ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄴ은 what I should do로 고쳐야 하고, ㄹ은 know가 쓰였으므로 Do you know when the train arrives?가 되어야 한다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ⓐ Do you know where he put the keys? ⓑ I wonder if is he coming. ⓒ She asked me what my name was. ⓓ Tell me why did you lie. ⓔ Who do you think she is?",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "옳은 것은 ⓐ, ⓒ, ⓔ 세 개다. ⓑ는 if he is coming, ⓓ는 why you lied로 고쳐야 한다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ⓐ I am not sure whether or not I can go. ⓑ Do you think what time it is? ⓒ Nobody knows how the fire started. ⓓ He asked me that I was okay. ⓔ Can you tell me how far is the station?",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "옳은 것은 ⓐ, ⓒ 두 개다. ⓑ는 What do you think ~?, ⓓ는 asked me if I was okay, ⓔ는 how far the station is로 고쳐야 한다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는? ⓐ Do you know when does the class end? ⓑ I wonder who wrote this poem. ⓒ She asked me where was I going. ⓓ Do you suppose what he meant? ⓔ I do not know that he is honest or not.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "틀린 것은 ⓐ, ⓒ, ⓓ, ⓔ 네 개다. ⓑ는 의문사가 주어인 바른 문장이다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ⓐ Could you tell me which bus goes downtown? ⓑ I asked him whether he had finished. ⓒ Do you know who that man is? ⓓ I wonder where she bought that bag. ⓔ How do you believe he escaped?",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 5,
+   "why": "다섯 문장 모두 <의문사/if+주어+동사> 규칙과 believe 삽입 규칙을 지키고 있어 모두 옳다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ⓐ I do not know what does she like. ⓑ Tell me if or not he called. ⓒ I wonder whom did they invite. ⓓ Where do you think did he go? ⓔ She asked me how much it cost.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 1,
+   "why": "옳은 것은 ⓔ 하나뿐이다. ⓐ는 what she likes, ⓑ는 whether or not, ⓒ는 whom they invited, ⓓ는 he went로 고쳐야 한다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는? ⓐ Do you have any idea what he is doing? ⓑ I am curious about what he is doing now. ⓒ Nobody knows when will the rain stop. ⓓ Do you guess who broke the window? ⓔ I asked her that where she lived.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "옳은 것은 ⓐ, ⓑ 두 개다. ⓒ는 when the rain will stop, ⓓ는 Who do you guess broke ~?, ⓔ는 that을 빼야 한다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 올바른 것을 고르시오.",
+   "choices": [
+    "She asked me whether I had met him before.",
+    "Do you know when will the guests arrive?",
+    "I do not know what should I say to her.",
+    "Do you think where he is hiding?",
+    "Tell me that why you were late."
+   ],
+   "answer": 1,
+   "why": "①만 <whether+주어+동사> 어순을 지켰다. ④는 think가 있으므로 Where do you think ~?로 써야 한다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳지 않은 것은?",
+   "choices": [
+    "Can you tell me if this train goes to Busan?",
+    "I wonder how she managed to finish it so fast.",
+    "What do you think the movie was about?",
+    "Nobody knows why did the company close.",
+    "I asked him where he had put my bag."
+   ],
+   "answer": 4,
+   "why": "④는 why the company closed로 고쳐야 한다. 나머지는 모두 바른 간접의문문이다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 문장의 어순이 바른 것은?",
+   "choices": [
+    "The teacher asked us what were we doing.",
+    "I am not sure if or not he agrees.",
+    "Do you believe what is he saying?",
+    "I wonder that she will come.",
+    "How much do you think this bag costs?"
+   ],
+   "answer": 5,
+   "why": "⑤는 think가 있어 의문사구 How much가 문두로 나가고 뒤는 <주어+동사>인 바른 문장이다. ②는 whether or not, ④는 wonder if로 고쳐야 한다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 잘못된 것은?",
+   "choices": [
+    "It does not matter whether you win or lose.",
+    "I do not care about whether he likes it.",
+    "Please tell me who is he.",
+    "Do you know whose umbrella this is?",
+    "She wondered if she should call the police."
+   ],
+   "answer": 3,
+   "why": "③는 who he is로 고쳐야 한다. 간접의문문에서는 주어와 동사를 도치하지 않는다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 자연스러운 것은?",
+   "choices": [
+    "Do you know how long does the show last?",
+    "I wonder where did they go last summer.",
+    "I asked her that she was tired.",
+    "Who do you think the winner will be?",
+    "I am not sure what time is it now."
+   ],
+   "answer": 4,
+   "why": "④는 think 때문에 Who가 문두로 나가고 뒤는 the winner will be의 바른 어순이다. ③은 asked her if she was tired가 되어야 한다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 오류가 있는 것은?",
+   "choices": [
+    "Where do you suppose she left her phone?",
+    "I have no idea what he is talking about.",
+    "She asked me if I would help her.",
+    "I wonder whether he told the truth or not.",
+    "Do you know that what happened last night?"
+   ],
+   "answer": 5,
+   "why": "⑤는 의문사 앞에 that을 쓸 수 없으므로 Do you know what happened last night?이 맞다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳게 쓰인 것은?",
+   "choices": [
+    "Ask him when will the package arrive.",
+    "Ask him when the package will arrive.",
+    "Ask him when does the package arrive.",
+    "Ask him that when the package arrives.",
+    "Ask him when arrives the package."
+   ],
+   "answer": 2,
+   "why": "②만 <when+주어+조동사+동사원형> 어순이다. 나머지는 도치되었거나 does, that이 잘못 쓰였다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 쓰임이 어색한 것은?",
+   "choices": [
+    "I would like to know that whether he is coming.",
+    "Do you know who this book belongs to?",
+    "Could you tell me how I can get to the museum?",
+    "What do you imagine the ending will be?",
+    "I wonder what made him so angry."
+   ],
+   "answer": 1,
+   "why": "①는 의문사나 whether 앞에 that을 쓸 수 없으므로 I would like to know whether he is coming.으로 고쳐야 한다. ⑤~④는 모두 바른 간접의문문이다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은? — Could you tell me <u>how long</u> <u>it takes</u> to get there <u>and</u> <u>how much does it cost</u> <u>by taxi</u>?",
+   "choices": [
+    "how long",
+    "it takes",
+    "and",
+    "how much does it cost",
+    "by taxi"
+   ],
+   "answer": 4,
+   "why": "두 번째 간접의문문에서도 does를 빼고 how much it costs로 써야 한다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은? — The reporter <u>asked</u> the singer <u>whether</u> <u>had she written</u> the song <u>herself</u>, but she <u>refused</u> to answer.",
+   "choices": [
+    "asked",
+    "whether",
+    "had she written",
+    "herself",
+    "refused"
+   ],
+   "answer": 3,
+   "why": "whether 뒤에는 <주어+동사>인 she had written이 와야 한다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은? — <u>Nobody</u> could explain <u>why</u> <u>the machine</u> <u>stopped</u> working <u>or how did it happen</u>.",
+   "choices": [
+    "Nobody",
+    "why",
+    "the machine",
+    "stopped",
+    "or how did it happen"
+   ],
+   "answer": 5,
+   "why": "뒤에 이어지는 간접의문문도 how it happened로 써야 한다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은? — I <u>have no idea</u> <u>what</u> <u>my sister want</u> <u>for</u> her <u>birthday</u>.",
+   "choices": [
+    "have no idea",
+    "what",
+    "my sister want",
+    "for",
+    "birthday"
+   ],
+   "answer": 3,
+   "why": "my sister는 3인칭 단수이므로 wants로 써야 한다. 간접의문문 안에서도 수 일치를 지킨다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은? — He <u>asked</u> me <u>where</u> <u>I lived</u> and <u>what did I do</u> <u>for a living</u>.",
+   "choices": [
+    "asked",
+    "where",
+    "I lived",
+    "what did I do",
+    "for a living"
+   ],
+   "answer": 4,
+   "why": "앞의 where I lived처럼 뒤에도 what I did로 써야 한다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은? — <u>I wonder</u> <u>how</u> <u>she can</u> <u>speaks</u> <u>three languages</u> so well.",
+   "choices": [
+    "I wonder",
+    "how",
+    "she can",
+    "speaks",
+    "three languages"
+   ],
+   "answer": 4,
+   "why": "조동사 can 뒤에는 동사원형 speak가 와야 한다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 너는 그가 그 열쇠를 어디에 숨겼다고 생각하니?",
+   "choices": [
+    "Do you think where he hid the key?",
+    "Where do you think did he hide the key?",
+    "Where do you think he hid the key?",
+    "Where you think he hid the key?",
+    "Do you think where did he hide the key?"
+   ],
+   "answer": 3,
+   "why": "think가 있으므로 Where를 문두로 보내고 뒤는 <주어+동사>인 he hid로 쓴다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 나는 그녀가 그 소식을 들었는지 아닌지 모르겠다.",
+   "choices": [
+    "I do not know if or not she heard the news.",
+    "I do not know that she heard the news or not.",
+    "I do not know whether she heard the news or not.",
+    "I do not know whether did she hear the news.",
+    "I do not know she heard the news whether."
+   ],
+   "answer": 3,
+   "why": "whether ~ or not 구조가 바르게 쓰인 ③이 맞다. if or not은 쓸 수 없다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 그 회의가 몇 시에 끝날지 저에게 말해 줄 수 있나요?",
+   "choices": [
+    "Can you tell me what time the meeting will end?",
+    "Can you tell me what time will the meeting end?",
+    "Can you tell me the meeting will end what time?",
+    "Can you tell me what time does the meeting end?",
+    "Can you tell me that what time the meeting will end?"
+   ],
+   "answer": 1,
+   "why": "<what time+주어+조동사+동사원형> 어순이 맞다. ④는 미래를 나타내지 못하고 does도 쓸 수 없다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 누가 이 창문을 깼는지 아무도 모른다.",
+   "choices": [
+    "Nobody knows who broke this window.",
+    "Nobody knows who does broke this window.",
+    "Nobody knows who did this window break.",
+    "Nobody knows whom broke this window.",
+    "Nobody knows that who broke this window."
+   ],
+   "answer": 1,
+   "why": "의문사 who가 주어이므로 어순을 바꾸지 않고 <who+과거동사>로 쓴다. 주어 자리이므로 whom은 쓸 수 없다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 그는 나에게 내가 전에 그를 만난 적이 있는지 물었다.",
+   "choices": [
+    "He asked me if had I met him before.",
+    "He asked me whether I had met him before.",
+    "He asked me that I had met him before.",
+    "He asked me did I meet him before.",
+    "He asked me whether had I met him before."
+   ],
+   "answer": 2,
+   "why": "의문사가 없으므로 whether(if)를 쓰고 도치하지 않는다. ③의 that은 의문의 뜻을 나타내지 못한다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? — 나는 그 문제를 어떻게 풀어야 할지 몰랐다.",
+   "choices": [
+    "I did not know how should I solve the problem.",
+    "I did not know how solve the problem.",
+    "I did not know how to solve the problem.",
+    "I did not know how did I solve the problem.",
+    "I did not know that how to solve the problem."
+   ],
+   "answer": 3,
+   "why": "<의문사+to부정사>는 간접의문문을 줄인 형태로 how to solve가 맞다. ①은 how I should solve로 써야 한다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — ____ do you think caused the traffic jam? (무엇이 교통 체증을 일으켰다고 생각하니?)",
+   "choices": [
+    "What",
+    "Do you think what",
+    "How",
+    "Which do you think",
+    "What do you think what"
+   ],
+   "answer": 1,
+   "why": "think가 있으므로 의문사를 문두로 보내며, caused의 주어 자리이므로 What이 알맞다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — It all depends on ____ she is willing to help us.",
+   "choices": [
+    "if",
+    "that",
+    "what",
+    "whether",
+    "which"
+   ],
+   "answer": 4,
+   "why": "전치사 on 뒤에는 if를 쓸 수 없고 whether를 쓴다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — I could not decide ____ to buy the red one or the blue one.",
+   "choices": [
+    "if",
+    "whether",
+    "what",
+    "that",
+    "which"
+   ],
+   "answer": 2,
+   "why": "to부정사 앞에는 if가 아니라 whether를 쓴다. whether to+동사원형은 <~할지 말지>의 뜻이다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은? — ____ do you suppose the treasure is hidden? (그 보물이 어디에 숨겨져 있다고 생각하니?)",
+   "choices": [
+    "Where",
+    "Do you suppose where",
+    "What",
+    "Where do you suppose where",
+    "How"
+   ],
+   "answer": 1,
+   "why": "suppose는 의문사를 문두로 보내는 동사이고, 장소를 묻고 있으므로 Where가 알맞다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은? — A: ____ B: About two hours, I guess.",
+   "choices": [
+    "Do you think how long the trip will take?",
+    "How long do you think will the trip take?",
+    "How long do you think the trip will take?",
+    "How long you think the trip takes?",
+    "Do you think how long will the trip take?"
+   ],
+   "answer": 3,
+   "why": "대답이 소요 시간이고 think가 쓰였으므로 How long을 문두로 보낸 ③가 맞다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은? — A: Do you know ____? B: Sorry, I have no idea. I just moved here.",
+   "choices": [
+    "where is the nearest hospital",
+    "where is the nearest hospital located at",
+    "the nearest hospital is where",
+    "where does the nearest hospital",
+    "where the nearest hospital is"
+   ],
+   "answer": 5,
+   "why": "간접의문문이므로 <where+주어+동사> 어순인 ⑤가 맞다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은? — A: I cannot decide ____. B: Take the train. It is cheaper.",
+   "choices": [
+    "whether to take the train or the bus",
+    "if to take the train or the bus",
+    "that I take the train or the bus",
+    "whether taking the train or the bus",
+    "what to take the train or the bus"
+   ],
+   "answer": 1,
+   "why": "whether to+동사원형이 바른 형태이며 if는 to부정사와 함께 쓸 수 없다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은? — A: ____ B: I am not sure, but I think she is a designer.",
+   "choices": [
+    "Do you know what she does?",
+    "Do you know what does she do?",
+    "What do you know she does?",
+    "Do you know she does what?",
+    "What does you know she does?"
+   ],
+   "answer": 1,
+   "why": "know는 의문사를 문두로 보내지 않고, 간접의문문에서 does를 빼고 she does로 쓴다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바르게 옮긴 것은? — Do you know? + Who is she talking to?",
+   "choices": [
+    "Do you know who is she talking to?",
+    "Do you know she is talking to who?",
+    "Who do you know she is talking to?",
+    "Do you know who she is talking to?",
+    "Do you know whom is she talking to?"
+   ],
+   "answer": 4,
+   "why": "know는 의문사를 앞으로 보내지 않으며, is she를 she is로 바꾼다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바르게 옮긴 것은? — Do you guess? + Why did she quit?",
+   "choices": [
+    "Do you guess why she quit?",
+    "Why do you guess she quit?",
+    "Why do you guess did she quit?",
+    "Do you guess why did she quit?",
+    "Why you guess she quit?"
+   ],
+   "answer": 2,
+   "why": "guess는 의문사를 문두로 보내는 동사이므로 Why do you guess ~? 형태가 된다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 가장 가까운 것은? — I do not know whether he is at home.",
+   "choices": [
+    "I do not know if he is at home.",
+    "I do not know that he is at home.",
+    "I do not know he is at home or not that.",
+    "I do not know is he at home.",
+    "I do not know what he is at home."
+   ],
+   "answer": 1,
+   "why": "whether는 이 자리에서 if로 바꿔 쓸 수 있다. that은 사실을 전달하는 접속사라 뜻이 달라진다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바꿔 쓴 것으로 알맞은 것은? — Tell me. + Should I turn left or right?",
+   "choices": [
+    "Tell me if to turn left or right.",
+    "Tell me whether I should turn left or right.",
+    "Tell me whether should I turn left or right.",
+    "Tell me that I should turn left or right.",
+    "Tell me what I should turn left or right."
+   ],
+   "answer": 2,
+   "why": "의문사가 없는 의문문이므로 whether를 쓰고 <주어+조동사> 어순으로 둔다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장을 한 문장으로 쓰시오. • Do you think? • Where did she buy that coat? → ____",
+   "answer": "Where do you think she bought that coat?",
+   "alt": [
+    "Where do you think she bought that coat"
+   ],
+   "why": "think가 있으므로 Where를 문두로 보내고, did를 없앤 뒤 과거형 bought로 쓴다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장을 한 문장으로 쓰시오. • Do you believe? • Who will be elected? → ____",
+   "answer": "Who do you believe will be elected?",
+   "alt": [
+    "Who do you believe will be elected"
+   ],
+   "why": "believe도 의문사를 문두로 보내는 동사이며, Who가 주어이므로 뒤 어순은 그대로 둔다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장을 한 문장으로 만들 때 빈칸에 알맞은 말을 쓰시오. • I have no idea. • How did he fix the computer? → I have no idea ____.",
+   "answer": "how he fixed the computer",
+   "alt": [
+    "how he fixed the computer."
+   ],
+   "why": "간접의문문이므로 did가 사라지고 동사를 과거형 fixed로 쓴다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장을 한 문장으로 만들 때 빈칸에 알맞은 말을 쓰시오. (과거완료를 쓸 것) • The police asked us. • Did you see anything strange? → The police asked us ____.",
+   "answer": "if we had seen anything strange",
+   "alt": [
+    "whether we had seen anything strange",
+    "if we had seen anything strange.",
+    "whether we had seen anything strange."
+   ],
+   "why": "의문사가 없으므로 if(whether)를 쓰고, 주절보다 앞선 일이므로 had seen으로 쓴다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. — I am not sure <u>if or not</u> the rumor is true.",
+   "answer": "whether or not",
+   "alt": [],
+   "why": "or not이 바로 뒤에 오는 자리에는 if를 쓸 수 없고 whether만 쓸 수 있다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. — It depends on <u>if</u> the weather is good.",
+   "answer": "whether",
+   "alt": [],
+   "why": "전치사(on) 뒤에는 if를 쓸 수 없고 whether를 쓴다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 어법에 맞게 고쳐 쓰시오. — Do you suppose what the answer is?",
+   "answer": "What do you suppose the answer is?",
+   "alt": [
+    "What do you suppose the answer is"
+   ],
+   "why": "suppose는 Yes/No로 답할 수 없는 동사이므로 의문사 What을 문장 맨 앞으로 보낸다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 한 단어를 찾아 바르게 고쳐 쓰시오. — I could not decide if to accept the offer.",
+   "answer": "whether",
+   "alt": [],
+   "why": "to부정사 앞에는 if를 쓸 수 없고 whether to+동사원형으로 써야 한다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 어법에 맞게 고쳐 쓰시오. — She asked me where was I going.",
+   "answer": "She asked me where I was going.",
+   "alt": [
+    "She asked me where I was going"
+   ],
+   "why": "간접의문문에서는 도치하지 않으므로 where I was going으로 쓴다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 어법에 맞게 고쳐 쓰시오. — Nobody knows when will the results come out.",
+   "answer": "Nobody knows when the results will come out.",
+   "alt": [
+    "Nobody knows when the results will come out"
+   ],
+   "why": "when 뒤에는 <주어+조동사+동사원형> 어순이 와야 한다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오. — Please tell me ____ or not you are coming.",
+   "answer": "whether",
+   "alt": [],
+   "why": "or not이 바로 뒤에 오므로 whether만 쓸 수 있다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오. (단, if는 쓸 수 없음) — I am curious about ____ she will accept the job.",
+   "answer": "whether",
+   "alt": [],
+   "why": "전치사 about 뒤에는 if를 쓸 수 없으므로 whether를 쓴다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오. — ____ do you think is the best player on the team?",
+   "answer": "Who",
+   "alt": [
+    "who"
+   ],
+   "why": "think가 있어 의문사를 문두로 보내고, is의 주어 자리이므로 주격 Who를 쓴다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 한 단어를 쓰시오. — ____ much do you think this painting is worth?",
+   "answer": "How",
+   "alt": [
+    "how"
+   ],
+   "why": "정도를 묻는 How much가 한 덩어리로 문두에 나온 형태다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 간접의문문이 들어간 문장으로 바꿔 쓰시오. — What does this word mean? (I do not know로 시작할 것)",
+   "answer": "I do not know what this word means.",
+   "alt": [
+    "I do not know what this word means",
+    "I don't know what this word means.",
+    "I don't know what this word means"
+   ],
+   "why": "does를 빼고 <what+주어+동사>로 쓰며 3인칭 단수 -s를 붙인다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 간접의문문이 들어간 문장으로 바꿔 쓰시오. — Where has he gone? (Do you have any idea로 시작할 것)",
+   "answer": "Do you have any idea where he has gone?",
+   "alt": [
+    "Do you have any idea where he has gone"
+   ],
+   "why": "has he를 he has로 바꾸어 <의문사+주어+동사> 어순으로 만든다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 간접의문문이 들어간 문장으로 바꿔 쓰시오. — Is it going to rain tomorrow? (I wonder로 시작하고 whether를 쓸 것)",
+   "answer": "I wonder whether it is going to rain tomorrow.",
+   "alt": [
+    "I wonder whether it is going to rain tomorrow",
+    "I wonder whether it's going to rain tomorrow.",
+    "I wonder whether it's going to rain tomorrow"
+   ],
+   "why": "의문사가 없으므로 whether를 쓰고 is it을 it is로 바꾼다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 간접의문문이 들어간 문장으로 바꿔 쓰시오. — How old is the building? (Can you tell me로 시작할 것)",
+   "answer": "Can you tell me how old the building is?",
+   "alt": [
+    "Can you tell me how old the building is"
+   ],
+   "why": "<how old+주어+동사> 어순으로 바꾼다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에 Do you think를 넣어 한 문장으로 쓰시오. — When will the new store open?",
+   "answer": "When do you think the new store will open?",
+   "alt": [
+    "When do you think the new store will open"
+   ],
+   "why": "think가 들어가면 의문사를 문두로 보내고 뒤는 <주어+조동사+동사원형>으로 쓴다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 간접의문문이 들어간 문장으로 바꿔 쓰시오. — Why was she so upset? (Nobody knows로 시작할 것)",
+   "answer": "Nobody knows why she was so upset.",
+   "alt": [
+    "Nobody knows why she was so upset"
+   ],
+   "why": "was she를 she was로 바꾸어 <의문사+주어+동사> 어순으로 만든다.",
+   "no": 200
+  }
+ ]
+}
