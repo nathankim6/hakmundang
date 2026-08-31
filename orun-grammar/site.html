@@ -1079,27 +1079,55 @@ nav.seg button.on::before{background:var(--gold);box-shadow:0 0 9px 2px rgba(240
 @media (max-width:640px){.hs{min-width:calc(50% - 6px);padding:13px 12px 12px}.hs b{font-size:20px}}
 @media (max-width:760px){.hero{margin:0 -16px 20px;padding:30px 16px 26px}.hero h1{font-size:25px}
   .hstat>div{padding:0 14px}}
-.hgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(272px,1fr));gap:14px;padding-bottom:10px}
-.htile{position:relative;text-align:left;font-family:inherit;cursor:pointer;padding:22px 22px 58px;border-radius:22px;
-  background:linear-gradient(180deg,#fff,#fbfdff);border:1px solid rgba(16,32,64,.07);
-  box-shadow:0 1px 2px rgba(16,32,64,.04),0 10px 26px rgba(16,32,64,.07);
-  transition:.34s var(--spring);overflow:hidden}
-.htile::before{content:'';position:absolute;inset:0;opacity:0;transition:.34s;
-  background:radial-gradient(360px 160px at 12% 0%,rgba(31,95,224,.1),transparent 72%)}
-.htile:hover{transform:translateY(-5px);border-color:rgba(31,95,224,.26);
-  box-shadow:0 3px 7px rgba(16,32,64,.05),0 26px 52px rgba(16,32,64,.15)}
+.hgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(276px,1fr));gap:16px;padding-bottom:10px}
+.htile{position:relative;display:flex;flex-direction:column;text-align:left;font-family:inherit;cursor:pointer;
+  padding:22px 22px 18px;border-radius:26px;overflow:hidden;isolation:isolate;
+  background:linear-gradient(165deg,rgba(255,255,255,.96),rgba(247,250,255,.78));
+  border:1px solid rgba(255,255,255,.96);
+  backdrop-filter:blur(22px) saturate(180%);-webkit-backdrop-filter:blur(22px) saturate(180%);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,1),inset 0 -1px 0 rgba(16,32,64,.04),
+             0 1px 2px rgba(16,32,64,.04),0 14px 34px rgba(16,32,64,.09);
+  transition:.36s var(--spring)}
+.htile::before{content:'';position:absolute;inset:0;z-index:-1;opacity:.55;transition:.36s;
+  background:radial-gradient(420px 200px at 14% -12%,rgba(31,95,224,.14),transparent 68%)}
+.htile.t-bank::before{background:radial-gradient(420px 200px at 14% -12%,rgba(124,92,245,.14),transparent 68%)}
+.htile.t-books::before{background:radial-gradient(420px 200px at 14% -12%,rgba(240,168,27,.15),transparent 68%)}
+.htile.t-rec::before{background:radial-gradient(420px 200px at 14% -12%,rgba(14,163,111,.13),transparent 68%)}
+.htile::after{content:'';position:absolute;left:22px;right:22px;top:0;height:2px;z-index:-1;border-radius:0 0 3px 3px;
+  background:linear-gradient(90deg,var(--acc),rgba(31,95,224,0));opacity:.85;transition:.36s}
+.htile.t-bank::after{background:linear-gradient(90deg,#7c5cf5,rgba(124,92,245,0))}
+.htile.t-books::after{background:linear-gradient(90deg,var(--gold),rgba(240,168,27,0))}
+.htile.t-rec::after{background:linear-gradient(90deg,var(--green),rgba(14,163,111,0))}
+.htile:hover{transform:translateY(-6px);border-color:rgba(255,255,255,1);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,1),0 3px 7px rgba(16,32,64,.05),0 30px 60px rgba(16,32,64,.17)}
 .htile:hover::before{opacity:1}
-.htile .hi{position:relative;width:46px;height:46px;border-radius:15px;display:grid;place-items:center;
-  background:linear-gradient(150deg,#2f7dff,#1546b8);box-shadow:0 8px 20px rgba(31,95,224,.32);margin-bottom:14px}
-.htile .hi svg{width:22px;height:22px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.htile .he{position:relative;display:block;font-family:var(--mono);font-size:9px;font-weight:700;
-  letter-spacing:.26em;color:var(--acc);margin-bottom:4px}
-.htile b{position:relative;display:block;font-size:17px;font-weight:800;letter-spacing:-.03em;margin-bottom:6px}
-.htile .hd{position:relative;display:block;font-size:12px;color:var(--sub);line-height:1.6;padding-right:6px}
-.htile .hgo{position:absolute;right:20px;bottom:18px;width:32px;height:32px;border-radius:50%;
-  display:grid;place-items:center;background:#f2f5fa;color:var(--sub2);font-weight:800;transition:.32s var(--spring)}
-.htile:hover .hgo{background:linear-gradient(160deg,#243149,var(--ink));color:#fff;
-  box-shadow:0 6px 16px rgba(14,23,38,.3);transform:translateX(3px)}
+.htile:active{transform:translateY(-2px) scale(.995)}
+.htile .hi{position:relative;width:50px;height:50px;border-radius:17px;display:grid;place-items:center;
+  margin-bottom:15px;background:linear-gradient(155deg,#4b8bff,#1546b8);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 10px 22px rgba(31,95,224,.34);
+  transition:.36s var(--spring)}
+.htile.t-bank .hi{background:linear-gradient(155deg,#9b7cff,#5b32d6);box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 10px 22px rgba(107,70,214,.34)}
+.htile.t-books .hi{background:linear-gradient(155deg,#ffc95c,#e09405);box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 10px 22px rgba(224,148,5,.34)}
+.htile.t-rec .hi{background:linear-gradient(155deg,#4fd6a8,#0b8a5e);box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 10px 22px rgba(11,138,94,.32)}
+.htile:hover .hi{transform:translateY(-2px) scale(1.05) rotate(-3deg)}
+.htile .hi svg{width:24px;height:24px;fill:none;stroke:#fff;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.htile .he{display:block;font-family:var(--mono);font-size:9px;font-weight:700;
+  letter-spacing:.26em;color:var(--acc);margin-bottom:5px}
+.htile.t-bank .he{color:#6b46d6}.htile.t-books .he{color:#a8760a}.htile.t-rec .he{color:#0b7a56}
+.htile b{display:block;font-size:17.5px;font-weight:800;letter-spacing:-.035em;margin-bottom:7px;color:var(--ink)}
+.htile .hd{display:block;font-size:12px;color:var(--sub);line-height:1.65;flex:1;min-height:38px}
+.htile .hact{display:block;margin-top:16px;padding-top:14px;border-top:1px solid rgba(16,32,64,.07)}
+.htile .hbtn{display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 18px;border-radius:999px;
+  font-size:13px;font-weight:700;letter-spacing:-.015em;color:#fff;
+  background:linear-gradient(160deg,#2b3a52,var(--ink));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 6px 16px rgba(14,23,38,.26);
+  transition:.34s var(--spring)}
+.htile .hbtn i{font-style:normal;font-size:13px;transition:.34s var(--spring);opacity:.75}
+.htile:hover .hbtn{box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 10px 24px rgba(14,23,38,.34)}
+.htile:hover .hbtn i{transform:translateX(3px);opacity:1}
+.htile.t-books .hbtn{background:linear-gradient(160deg,#fbbf3c,#e09405);color:#3a2600;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.45),0 6px 16px rgba(224,148,5,.3)}
+.htile.t-books:hover .hbtn{box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 10px 24px rgba(224,148,5,.38)}
 
 /* ── 사이트 푸터 ── */
 footer.site{margin-top:40px;border-top:1px solid rgba(31,95,224,.14);
@@ -1670,13 +1698,30 @@ function goHome(){
   S.bkB=null; S.bkC=null; S.bkI=null;
   try{location.hash='';}catch(e){}
   render(); window.scrollTo({top:0,behavior:'smooth'});}
+/* 옳은영어 전용 아이콘 — 등대·펼친 책·레이어를 모티프로 직접 그린 24×24 스트로크 세트 */
 const PICO={
-  wizard:'<path d="M4 4h10l6 6v10a2 2 0 0 1-2 2H4z"/><path d="M14 4v6h6"/><path d="M8 14h8M8 18h5"/>',
-  bank:'<circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/>',
-  books:'<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H19v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M8.5 8h6"/>',
-  take:'<path d="M12 3 3 7l9 4 9-4z"/><path d="M7 10v5c0 1.7 2.2 3 5 3s5-1.3 5-3v-5"/>',
-  rec:'<path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="m7 14 3.5-4 3 3L20 7"/>',
-  home:'<path d="m3 10 9-7 9 7v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 21v-7h6v7"/>'};
+  /* 메인 — 등대(브랜드 마크의 단순화) */
+  home:'<path d="M10.2 20.5h3.6"/><path d="m10.6 20.5.6-9.6h1.6l.6 9.6"/>'+
+       '<path d="M9.6 10.9h4.8"/><path d="M12 4.6a1.7 1.7 0 0 1 1.7 1.7v2.3h-3.4V6.3A1.7 1.7 0 0 1 12 4.6z"/>'+
+       '<path d="M6.9 5.6 8.4 6.5M17.1 5.6 15.6 6.5M12 2.2v1"/>',
+  /* 출제 마법사 — 시험지 + 스파크 */
+  wizard:'<path d="M5.4 3.4h7.7l5.5 5.5V20a.6.6 0 0 1-.6.6H6a.6.6 0 0 1-.6-.6z"/>'+
+         '<path d="M13.1 3.4v5.5h5.5"/><path d="M8.3 12.2h3.6"/>'+
+         '<path d="m13.2 12.6 1.05 2.4 2.4 1.05-2.4 1.05-1.05 2.4-1.05-2.4-2.4-1.05 2.4-1.05z"/>',
+  /* 문제은행 — 쌓인 문항 레이어 */
+  bank:'<path d="m12 3.6 8.2 4.1-8.2 4.1-8.2-4.1z"/>'+
+       '<path d="m3.8 12 8.2 4.1 8.2-4.1"/><path d="m3.8 16.3 8.2 4.1 8.2-4.1"/>',
+  /* 커리큘럼 — 펼친 책 + 빛줄기 */
+  books:'<path d="M2.9 6.9c3-1.7 6.1-1.7 9.1 0 3-1.7 6.1-1.7 9.1 0v12.3c-3-1.7-6.1-1.7-9.1 0'+
+        '-3-1.7-6.1-1.7-9.1 0z"/><path d="M12 6.9v12.3"/>'+
+        '<path d="M12 1.6v2.2M7.9 2.6l1 1.9M16.1 2.6l-1 1.9"/>',
+  /* 학생 응시 — 답안 체크 */
+  take:'<path d="M6.5 3.5h11a.5.5 0 0 1 .5.5v16a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5V4a.5.5 0 0 1 .5-.5z"/>'+
+       '<path d="m8.8 9.6 1.6 1.6 3.4-3.6"/><path d="M8.8 15.4h6.4"/>',
+  /* 기록·동기화 — 순환 화살표 + 성장 그래프 */
+  rec:'<path d="M3.9 20.4h16.2"/>'+
+      '<path d="M7.6 20.4v-6.2M12 20.4v-11M16.4 20.4v-4"/>'+
+      '<path d="m6.4 9.6 4-4 3 2.8 4.8-4.8"/>'};
 const HEAD={
   home:['ORUN ENGLISH','ORUN GRAMMAR','문제은행 · 시험지 출제 · 교재 커리큘럼 · 성적 리포트를 한곳에서.'],
   wizard:['WORKBOOK STUDIO','시험지 출제 마법사','학년·출판사·단원을 고르고 난이도와 유형 배분을 정하면 A4 시험지·정답지·Word 파일이 한 번에 만들어집니다.'],
@@ -1708,10 +1753,10 @@ function homeView(){
   const nB=Object.keys(BOOKS).reduce((s,k)=>s+BOOKS[k].length,0);
   const nS=['ele','mid'].reduce((s,t)=>s+((ORUN[t]||{books:[]}).books||[])
     .reduce((u,b)=>u+b.chapters.reduce((v,c)=>v+c.items.length,0),0),0);
-  const tile=(pg,eb,t,d,ic)=>'<button class="htile" onclick="nav(\''+pg+'\')">'+
+  const tile=(pg,eb,t,d,ic,go)=>'<button class="htile t-'+pg+'" onclick="nav(\''+pg+'\')">'+
     '<span class="hi"><svg viewBox="0 0 24 24">'+ic+'</svg></span>'+
     '<span class="he">'+eb+'</span><b>'+t+'</b><span class="hd">'+d+'</span>'+
-    '<span class="hgo">→</span></button>';
+    '<span class="hact"><span class="hbtn">'+go+'<i>→</i></span></span></button>';
   return '<div class="hero">'+
    (LOGO?'<img class="hlogo" src="'+LOGO+'" alt="ORUN ACADEMY">':'')+
    '<div class="heb">ORUN ENGLISH · GRAMMAR PLATFORM</div>'+
@@ -1727,10 +1772,10 @@ function homeView(){
        '<span class="hsi"><svg viewBox="0 0 24 24">'+x[4]+'</svg></span>'+
        '<b>'+x[0]+'</b><span>'+x[1]+'</span></button>').join('')+'</div></div>'+
    '<div class="hgrid">'+
-   tile('wizard','WORKBOOK STUDIO','시험지 출제 마법사','학년·출판사·단원을 골라 A4 시험지·정답지·Word를 한 번에.',PICO.wizard)+
-   tile('bank','QUESTION BANK','문제은행','항목별 200문항. 문항을 눌러 폴더에 담고 그대로 시험지로.',PICO.bank)+
-   tile('books','ORUN CURRICULUM','옳은영어 커리큘럼','옳은문법(초등)·ORUN METABOOK(중등) 전 시험지 열람·인쇄.',PICO.books)+
-   tile('rec','RECORDS · SYNC','응시 기록 · 동기화','응시 결과와 문항 편집본을 관리하고 서버와 맞춥니다.',PICO.rec)+
+   tile('wizard','WORKBOOK STUDIO','시험지 출제 마법사','학년·출판사·단원을 골라 A4 시험지·정답지·Word를 한 번에.',PICO.wizard,'출제하기')+
+   tile('bank','QUESTION BANK','문제은행','항목별 200문항. 문항을 눌러 폴더에 담고 그대로 시험지로.',PICO.bank,'문항 보기')+
+   tile('books','ORUN CURRICULUM','옳은영어 커리큘럼','옳은문법(초등)·ORUN METABOOK(중등) 전 시험지 열람·인쇄.',PICO.books,'교재 열기')+
+   tile('rec','RECORDS · SYNC','응시 기록 · 동기화','응시 결과와 문항 편집본을 관리하고 서버와 맞춥니다.',PICO.rec,'기록 보기')+
    '</div>';
 }
 
