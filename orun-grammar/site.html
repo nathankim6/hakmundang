@@ -6,7 +6,7 @@
 <title>옳은문법 ORUN GRAMMAR</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Noto+Sans+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --ink:#0b1220; --sub:#64748b; --sub2:#94a3b8;
@@ -241,6 +241,252 @@ td.ok{color:var(--green);font-weight:900;text-align:center}td.no{color:var(--red
   box-shadow:0 12px 34px rgba(15,27,45,.35);transition:.36s var(--spring)}
 #toast.on{opacity:1;transform:translate(-50%,0)}
 
+
+/* ═══════════════════════════════════════════════════════════
+   DATA GALAXY — 다크 코스믹 UI (화면 전용, 시험지 조판에는 미적용)
+   ═══════════════════════════════════════════════════════════ */
+:root{
+  --ink:#e9edfb; --sub:#8d95ae; --sub2:#5f6884;
+  --line:rgba(255,255,255,.10); --line2:rgba(255,255,255,.055);
+  --navy:#ff2d78; --pink:#ff2d78; --pink2:#ff7ab2;
+  --gold:#ffc95c; --gold2:#ffdc92;
+  --green:#2ad3a4; --greenBg:rgba(42,211,164,.14);
+  --red:#ff5d6c;  --redBg:rgba(255,93,108,.14);
+  --blue:#6f9bff; --blueBg:rgba(111,155,255,.14);
+  --pnl:rgba(255,255,255,.035); --pnl2:rgba(255,255,255,.055);
+  --glass:rgba(255,255,255,.045); --glassLine:rgba(255,255,255,.085);
+  --shadow:0 1px 0 rgba(255,255,255,.05) inset,0 14px 36px rgba(0,0,0,.48);
+  --shadow2:0 1px 0 rgba(255,255,255,.07) inset,0 26px 64px rgba(0,0,0,.6);
+  --mono:'Noto Sans Mono','Noto Sans',ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+body{background:#06060c;color:var(--ink)}
+::selection{background:rgba(255,45,120,.35)}
+#aura{display:none!important}
+#sky{position:fixed;inset:0;z-index:-3;display:block;width:100%;height:100%}
+#glow{position:fixed;inset:0;z-index:-2;pointer-events:none;background:
+  radial-gradient(780px 540px at 12% 6%,rgba(255,45,120,.17),transparent 62%),
+  radial-gradient(700px 500px at 90% 2%,rgba(111,155,255,.13),transparent 60%),
+  radial-gradient(1000px 660px at 50% 112%,rgba(255,45,120,.10),transparent 64%)}
+#grid{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.5;
+  background-image:linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);
+  background-size:64px 64px;
+  -webkit-mask-image:radial-gradient(ellipse 90% 70% at 50% 30%,#000 35%,transparent 100%);
+          mask-image:radial-gradient(ellipse 90% 70% at 50% 30%,#000 35%,transparent 100%)}
+
+/* ── 헤더 ── */
+header.top{background:rgba(8,8,15,.72);border-bottom:1px solid var(--line)}
+.hwrap{gap:14px}
+.mark{background:linear-gradient(150deg,#ff2d78,#b4155a);box-shadow:0 6px 22px rgba(255,45,120,.42)}
+.mark svg{stroke:#fff}
+.brand b{color:#fff}
+.brand em{color:var(--pink2);font-family:var(--mono);letter-spacing:.26em;font-size:9.5px;font-weight:500}
+nav.seg{margin:0 auto;background:rgba(255,255,255,.045);padding:4px;border-radius:999px;
+  border:1px solid var(--line);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+nav.seg button{border-radius:999px;padding:7px 16px;color:var(--sub);font-size:12.5px;
+  display:inline-flex;align-items:center;gap:7px;letter-spacing:-.005em}
+nav.seg button::before{content:'';width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.2);transition:.25s var(--spring)}
+nav.seg button:hover{color:#fff}
+nav.seg button:hover::before{background:var(--pink2)}
+nav.seg button.on{background:rgba(255,45,120,.16);color:#fff;
+  box-shadow:0 0 0 1px rgba(255,45,120,.42),0 8px 22px rgba(255,45,120,.22)}
+nav.seg button.on::before{background:var(--pink);box-shadow:0 0 9px 2px rgba(255,45,120,.75)}
+.pro{background:rgba(255,255,255,.05);border:1px solid var(--line);color:var(--sub);font-family:var(--mono)}
+.chip{flex:none;display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:10px;font-weight:600;
+  letter-spacing:.06em;color:var(--sub);background:rgba(255,255,255,.045);border:1px solid var(--line);
+  border-radius:999px;padding:6px 12px;cursor:pointer;transition:.22s var(--spring);white-space:nowrap}
+.chip:hover{border-color:rgba(255,45,120,.5);color:#fff}
+.chip i{width:6px;height:6px;border-radius:50%;background:var(--sub2);flex:none}
+.chip.ok i{background:var(--green);box-shadow:0 0 8px 1px rgba(42,211,164,.7)}
+.chip.busy i{background:var(--gold);animation:bl .8s linear infinite}
+.chip.err i{background:var(--red);box-shadow:0 0 8px 1px rgba(255,93,108,.7)}
+@keyframes bl{50%{opacity:.2}}
+@media (max-width:1080px){.chip .cx{display:none}}
+
+/* ── 페이지 머리글 ── */
+.phead{margin:2px 0 18px}
+.phead .eb{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.3em;color:var(--pink);
+  display:flex;align-items:center;gap:9px;margin-bottom:7px}
+.phead .eb::before{content:'';width:22px;height:1px;background:var(--pink);flex:none}
+.phead h1{margin:0;font-size:32px;font-weight:900;letter-spacing:-.035em;line-height:1.12;
+  background:linear-gradient(96deg,#fff 12%,#ffc3da 58%,#ff87b5 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.phead p{margin:7px 0 0;color:var(--sub);font-size:13px;max-width:760px}
+.lbl{font-family:var(--mono);font-size:9.5px;font-weight:700;letter-spacing:.26em;color:var(--sub2);text-transform:uppercase}
+
+/* ── 패널 ── */
+.card{background:var(--pnl);border:1px solid var(--line);box-shadow:var(--shadow)}
+.card.solid{background:rgba(12,12,20,.6);border:1px solid var(--line)}
+.ttl{color:var(--sub);font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase}
+.ttl svg{stroke:var(--pink)}
+.ttl .r{font-family:'Noto Sans KR',sans-serif;letter-spacing:normal;text-transform:none;font-size:11.5px;color:var(--sub2)}
+.grp{color:var(--pink);font-family:var(--mono);letter-spacing:.24em}
+
+/* ── 좌측 레일(학년·교재) ── */
+.row{background:rgba(255,255,255,.03);border:1px solid transparent;color:var(--ink);
+  counter-increment:rail;padding-left:11px}
+.row::before{content:counter(rail,decimal-leading-zero);font-family:var(--mono);font-size:9.5px;font-weight:700;
+  color:var(--sub2);flex:none;width:16px;letter-spacing:.02em}
+.row:hover{background:rgba(255,255,255,.06);border-color:var(--line)}
+.row .dot{background:rgba(255,255,255,.16)}
+.row.all{background:rgba(111,155,255,.09)}
+.row.on{background:linear-gradient(100deg,rgba(255,45,120,.22),rgba(255,45,120,.07));color:#fff;
+  border-color:rgba(255,45,120,.45);box-shadow:0 8px 26px rgba(255,45,120,.18)}
+.row.on::before{color:var(--pink2)}
+.row.on .dot{background:var(--pink);box-shadow:0 0 0 3px rgba(255,45,120,.22)}
+.side{counter-reset:rail}
+.side::-webkit-scrollbar-thumb{background:rgba(255,255,255,.13)}
+
+/* ── 탭·스텝·모드 ── */
+.gtabs,.mode,nav.seg{background:rgba(255,255,255,.045);border:1px solid var(--line)}
+.gtabs button,.mode button{color:var(--sub)}
+.gtabs button.on,.mode button.on{background:rgba(255,45,120,.16);color:#fff;
+  box-shadow:0 0 0 1px rgba(255,45,120,.4)}
+.step{background:rgba(255,255,255,.035);border:1px solid var(--line);color:var(--sub)}
+.step b{background:rgba(255,255,255,.12);color:var(--sub)}
+.step small{color:var(--sub2)}
+.step.on{background:linear-gradient(100deg,rgba(255,45,120,.24),rgba(255,45,120,.06));color:#fff;
+  border-color:rgba(255,45,120,.45);box-shadow:0 10px 30px rgba(255,45,120,.18)}
+.step.on b{background:var(--pink);color:#fff;box-shadow:0 0 12px rgba(255,45,120,.7)}
+.step.on small{color:rgba(255,255,255,.7)}
+.step.done{background:rgba(42,211,164,.1);border-color:rgba(42,211,164,.3);color:#7cf0cd}
+.step.done b{background:var(--green);color:#04231a}
+
+/* ── 트리 ── */
+.tree{background:rgba(0,0,0,.28);border-color:var(--line)}
+.tree::-webkit-scrollbar-thumb{background:rgba(255,255,255,.14);border-color:transparent}
+.les>.h{background:rgba(255,255,255,.045);color:var(--ink)}
+.les>.h:hover{background:rgba(255,255,255,.075)}
+.les>.h .lb{color:var(--sub2)}
+.it{color:var(--ink)}
+.it:hover{background:rgba(255,255,255,.055)}
+.it.sel{background:rgba(255,45,120,.12)}
+.chk{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.2)}
+.it.sel .chk,.les.allsel>.h .chk{background:var(--pink);border-color:var(--pink)}
+.it .gd{background:rgba(255,255,255,.08);color:var(--sub)}
+.it .qn{color:var(--sub2)}
+
+/* ── 폼 ── */
+.opt>label{color:var(--sub)}
+.pill{background:rgba(255,255,255,.045);border-color:var(--line);color:var(--sub)}
+.pill:hover{border-color:rgba(255,45,120,.45);color:#fff;background:rgba(255,45,120,.08)}
+.pill.on{background:var(--pink);border-color:var(--pink);color:#fff;box-shadow:0 6px 18px rgba(255,45,120,.3)}
+.num,.txt,.shorta,.edin{background:rgba(255,255,255,.05);border-color:var(--line);color:var(--ink)}
+.num:focus,.txt:focus,.shorta:focus{border-color:var(--pink);box-shadow:0 0 0 3px rgba(255,45,120,.16)}
+.lvchip{background:rgba(255,255,255,.045);border-color:var(--line)}
+.sw i{background:rgba(255,255,255,.14)}
+.hint{color:var(--sub2)}
+.warn{color:#ff8b96}
+
+/* ── 버튼 ── */
+.btn{background:linear-gradient(135deg,#ff2d78,#d3155f);box-shadow:0 8px 24px rgba(255,45,120,.32)}
+.btn:hover{box-shadow:0 12px 32px rgba(255,45,120,.44)}
+.btn.gold{background:linear-gradient(140deg,#ffc95c,#e8a51f);color:#3a2600;box-shadow:0 8px 24px rgba(232,165,31,.3)}
+.btn.ghost{background:rgba(255,255,255,.05);color:var(--ink);border:1px solid var(--line);box-shadow:none}
+.btn.ghost:hover{border-color:rgba(255,45,120,.5);background:rgba(255,45,120,.1);box-shadow:none;transform:translateY(-2px)}
+.keybtn{background:rgba(255,93,108,.08);border-color:rgba(255,93,108,.5);color:#ff8b96}
+.keybtn:hover{background:rgba(255,93,108,.16)}
+.keybtn.on{background:var(--red);color:#2a0207;border-color:var(--red)}
+
+/* ── 카드 그리드 ── */
+.cat{background:rgba(255,255,255,.035);border:1px solid var(--line);color:var(--ink)}
+.cat::before{background:linear-gradient(90deg,var(--pink),transparent)}
+.cat:hover{background:rgba(255,45,120,.07);border-color:rgba(255,45,120,.4);box-shadow:0 18px 44px rgba(0,0,0,.55)}
+.cat .no{color:rgba(255,255,255,.14);font-family:var(--mono)}
+.cat .pts{color:var(--sub)}
+.cat .meta i{background:rgba(255,255,255,.06);color:var(--sub);font-family:var(--mono);letter-spacing:.02em}
+.cat .meta i.g{background:rgba(255,201,92,.14);color:var(--gold2)}
+.cat .meta i.b{background:rgba(111,155,255,.16);color:#a8c2ff}
+
+/* ── 문항 ── */
+.crumb{color:var(--sub)}
+.crumb:hover{color:#fff}
+.q{background:rgba(255,255,255,.032);border:1px solid var(--line);position:relative}
+.q:hover{border-color:rgba(255,255,255,.18);box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.q .num{color:var(--pink);font-family:var(--mono)}
+.tag{background:rgba(255,255,255,.07);color:var(--sub)}
+.tag.lv하{background:rgba(42,211,164,.16);color:#7cf0cd}
+.tag.lv중{background:rgba(255,201,92,.16);color:var(--gold2)}
+.tag.lv상{background:rgba(255,93,108,.16);color:#ff9aa3}
+.q .ans{border-top:1px dashed var(--line)}
+.q .ans b{color:#ff8b96}
+.q .ans .why{color:var(--sub)}
+.q.edited{border-color:rgba(42,211,164,.45);background:rgba(42,211,164,.045)}
+.q.edited::after{content:'수정됨';position:absolute;top:-1px;right:-1px;background:var(--green);color:#04231a;
+  font-size:9.5px;font-weight:800;padding:2px 9px;border-radius:0 15px 0 11px;letter-spacing:.02em}
+.edb{border:1px solid var(--line);background:rgba(255,255,255,.05);color:var(--sub);border-radius:9px;
+  padding:4px 11px;font-size:11px;font-weight:700;cursor:pointer;transition:.2s var(--spring);flex:none;
+  font-family:var(--mono);letter-spacing:.06em}
+.edb:hover{border-color:rgba(255,45,120,.55);color:#fff;background:rgba(255,45,120,.13)}
+.edb.rv{border-color:rgba(255,93,108,.4);color:#ff9aa3}
+
+/* ── 응시 ── */
+.tq{background:rgba(255,255,255,.032);border:1px solid var(--line)}
+.tq .opts label{background:rgba(255,255,255,.03);border-color:var(--line);color:var(--ink)}
+.tq .opts label:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.2)}
+.tq .opts label.sel{border-color:var(--pink);background:rgba(255,45,120,.13);box-shadow:0 0 0 2px rgba(255,45,120,.14)}
+.tq .opts input{accent-color:var(--pink)}
+.sticky{background:rgba(10,10,17,.86);border:1px solid var(--line);box-shadow:var(--shadow2)}
+.prog{background:rgba(255,255,255,.09)}
+.prog i{background:linear-gradient(90deg,var(--pink),#ff9ec4)}
+
+/* ── 리포트 ── */
+.ring .bg{stroke:rgba(255,255,255,.09)}
+.ring .lab b{color:#fff}
+.bar .tr{background:rgba(255,255,255,.09)}
+.bar .fl{background:linear-gradient(90deg,var(--pink),#ff9ec4)}
+.bar.weak .fl{background:linear-gradient(90deg,#ff5d6c,#ffa0a8)}
+.bar .pc{color:var(--sub)}
+table.rep{background:rgba(255,255,255,.025);border-color:var(--line)}
+table.rep th{background:rgba(255,255,255,.05);color:var(--sub)}
+table.rep th,table.rep td{border-bottom-color:var(--line2)}
+td.ok{color:var(--green)}td.no{color:var(--red)}
+.advice{background:linear-gradient(120deg,rgba(255,201,92,.1),rgba(255,45,120,.07));
+  border:1px solid rgba(255,201,92,.26);color:var(--ink)}
+.codebox{background:rgba(0,0,0,.4);border-color:var(--line);color:#ffb8d3;font-family:var(--mono)}
+.stat>div{background:rgba(255,255,255,.035);border:1px solid var(--line);position:relative;overflow:hidden}
+.stat>div::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--pink);opacity:.55}
+.stat b{color:#fff}
+.stat span{color:var(--sub2);font-family:var(--mono);font-size:10px;letter-spacing:.14em}
+#toast{background:rgba(255,45,120,.95);box-shadow:0 14px 40px rgba(255,45,120,.4)}
+
+/* ── 범례 ── */
+.legend{display:grid;gap:7px;margin-top:4px}
+.legend div{display:flex;align-items:center;gap:9px;font-size:12px;color:var(--sub)}
+.legend i{width:9px;height:9px;border-radius:2px;flex:none}
+.legend b{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--ink);font-weight:700}
+
+/* ── 편집 모달 ── */
+#modal{position:fixed;inset:0;z-index:300;display:none;align-items:flex-start;justify-content:center;
+  background:rgba(3,3,7,.72);backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px);padding:32px 16px;overflow:auto}
+#modal.on{display:flex;animation:fadein .22s ease}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+.mbox{width:100%;max-width:760px;background:#0c0c15;border:1px solid rgba(255,255,255,.12);border-radius:22px;
+  box-shadow:0 40px 90px rgba(0,0,0,.7);padding:22px 24px 20px;animation:mup .3s var(--spring)}
+@keyframes mup{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:none}}
+.mbox h3{margin:0 0 3px;font-size:19px;font-weight:800;letter-spacing:-.02em}
+.mbox .msub{color:var(--sub2);font-size:11.5px;font-family:var(--mono);letter-spacing:.08em;margin-bottom:16px;word-break:break-all}
+.fld{margin-bottom:13px}
+.fld>label{display:block;font-family:var(--mono);font-size:9.5px;font-weight:700;letter-spacing:.2em;
+  color:var(--sub2);text-transform:uppercase;margin-bottom:6px}
+.edin{width:100%;border:1px solid var(--line);border-radius:11px;padding:10px 13px;font-size:13.5px;
+  background:rgba(255,255,255,.05);color:var(--ink);line-height:1.65;resize:vertical;font-family:inherit}
+.edin:focus{outline:0;border-color:var(--pink);box-shadow:0 0 0 3px rgba(255,45,120,.16)}
+select.edin{appearance:none;-webkit-appearance:none;cursor:pointer;
+  background-image:linear-gradient(45deg,transparent 50%,var(--sub) 50%),linear-gradient(135deg,var(--sub) 50%,transparent 50%);
+  background-position:calc(100% - 17px) 50%,calc(100% - 12px) 50%;background-size:5px 5px;background-repeat:no-repeat}
+select.edin option{background:#0c0c15;color:var(--ink)}
+.crow{display:flex;align-items:center;gap:9px;margin-bottom:6px}
+.pick{width:25px;height:25px;border-radius:50%;border:1.6px solid var(--line);background:rgba(255,255,255,.05);
+  color:var(--sub2);font-size:11px;font-weight:800;flex:none;cursor:pointer;display:grid;place-items:center;
+  transition:.2s var(--spring)}
+.pick:hover{border-color:var(--pink2);color:#fff}
+.pick.on{background:var(--pink);border-color:var(--pink);color:#fff;box-shadow:0 0 14px rgba(255,45,120,.6)}
+.mact{display:flex;gap:8px;align-items:center;margin-top:18px;padding-top:15px;border-top:1px solid var(--line);flex-wrap:wrap}
+.mact .sp{margin-left:auto}
+.pvwrap{background:#0a0a12;border:1px solid var(--line)}
+@media (max-width:860px){.phead h1{font-size:25px}nav.seg{margin-left:0;order:3;width:100%;justify-content:center;overflow:auto}}
+
 /* ══ 시험지 ══ */
 #paper{display:none}
 .sheet{background:#fff;width:210mm;min-height:297mm;margin:0 auto 16px;padding:14mm 13mm 15mm;position:relative;
@@ -308,6 +554,9 @@ td.ok{color:var(--green);font-weight:900;text-align:center}td.no{color:var(--red
 </style>
 </head>
 <body>
+<canvas id="sky"></canvas>
+<div id="glow"></div>
+<div id="grid"></div>
 <div id="aura"><i></i><i></i><i></i></div>
 <script id="bank-data" type="application/json">__BANK__</script>
 
@@ -317,11 +566,13 @@ td.ok{color:var(--green);font-weight:900;text-align:center}td.no{color:var(--red
     <div><b>옳은문법</b><em>ORUN GRAMMAR</em></div>
   </div>
   <nav class="seg" id="nav"></nav>
+  <span class="chip" id="syncChip" onclick="syncNow(false)"><i></i><span>수정 0</span></span>
   <span class="pro">PRO</span>
 </div></header>
 
 <main id="view"></main>
 <div id="paper"></div>
+<div id="modal"></div>
 <div id="toast"></div>
 
 <script>
@@ -353,6 +604,257 @@ function ripple(e){const b=e.currentTarget,r=b.getBoundingClientRect(),d=documen
   b.appendChild(d);setTimeout(()=>d.remove(),620);}
 function dl(blob,name){const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;
   document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},900);}
+/* ═══════════════════════════════════════════════════════════
+   문항 편집 · 로컬(localStorage) + 서버(Supabase) 동기 저장
+   key 형식  b|<카테고리id>|<번호>
+             c|<ele|mid>|<시험지id>|chk|<번호>
+             c|<ele|mid>|<시험지id>|rec|<섹션idx>|<행idx>
+   ═══════════════════════════════════════════════════════════ */
+const SB={url:'https://wxjazdqabryflvfztujk.supabase.co',
+  key:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind4amF6ZHFhYnJ5Zmx2Znp0dWprIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzU1NDkyOTAsImV4cCI6MjA1MTEyNTI5MH0._mBHMqttsrwB2f8U-8AsjmJXKaWoJsXPyrW76ugc80A',
+  table:'orun_question_edits'};
+const LSK='og.edits', LSE='og.editor';
+let EDITS={}, ORIGS={}, EDBUF=null;
+let SYNC={st:'idle',msg:'서버 확인 중'};
+const clone=o=>JSON.parse(JSON.stringify(o));
+const BF=['level','type','stem','choices','answer','alt','why'];
+const CQ=['groupHeader','stem','bank','bullets','choices'], CK=['answer','why'];
+const RF=['prompt','answer','why','lines'];
+
+function findItem(trk,id){
+  const T=ORUN[trk]; if(!T) return null;
+  for(const b of (T.books||[])) for(const c of (b.chapters||[])) for(const i of (c.items||[]))
+    if(i.id===id) return i;
+  return null;}
+/* 편집 단위의 실제 위치 */
+function edLoc(key){
+  const p=String(key).split('|');
+  if(p[0]==='b'){ const c=byId[p[1]]; if(!c) return null;
+    const q=(c.questions||[]).filter(x=>String(x.no)===p[2])[0];
+    return q?{kind:'b',obj:q,fields:BF}:null; }
+  if(p[0]==='c'){ const it=findItem(p[1],p[2]); if(!it) return null;
+    if(p[3]==='chk'){ if(!it.chk) return null;
+      const q=(it.chk.questions||[]).filter(x=>String(x.no)===p[4])[0]; if(!q) return null;
+      it.chk.answerKey=it.chk.answerKey||[];
+      let k=it.chk.answerKey.filter(x=>String(x.no)===p[4])[0];
+      if(!k){ k={no:q.no,answer:'',why:''}; it.chk.answerKey.push(k); }
+      return {kind:'chk',obj:q,fields:CQ,obj2:k,fields2:CK}; }
+    if(p[3]==='rec'){ if(!it.rec) return null;
+      const sec=(it.rec.sections||[])[+p[4]]; if(!sec) return null;
+      const r=(sec.rows||[])[+p[5]]; return r?{kind:'rec',obj:r,fields:RF}:null; } }
+  return null;}
+function edRead(key){ const t=edLoc(key); if(!t) return null;
+  const o={}; t.fields.forEach(f=>{ if(t.obj[f]!==undefined) o[f]=clone(t.obj[f]); });
+  if(t.obj2) t.fields2.forEach(f=>{ if(t.obj2[f]!==undefined) o[f]=clone(t.obj2[f]); });
+  return o;}
+function edWrite(key,o){ const t=edLoc(key); if(!t) return false;
+  t.fields.forEach(f=>{ if(o[f]!==undefined) t.obj[f]=clone(o[f]); else delete t.obj[f]; });
+  if(t.obj2) t.fields2.forEach(f=>{ t.obj2[f]=o[f]!==undefined?clone(o[f]):''; });
+  return true;}
+function edKind(key){ const p=String(key).split('|'); return p[0]==='b'?'b':p[3]; }
+
+/* 원본 스냅샷 위에 편집본을 다시 얹는다 — 편집은 언제든 되돌릴 수 있다 */
+function applyEdits(){
+  Object.keys(ORIGS).forEach(k=>{ if(!EDITS[k]) edWrite(k,ORIGS[k]); });
+  Object.keys(EDITS).forEach(k=>{
+    if(!ORIGS[k]){ const cur=edRead(k); if(!cur) return; ORIGS[k]=cur; }
+    edWrite(k,EDITS[k].payload); });}
+function loadLocal(){ try{ const d=JSON.parse(localStorage.getItem(LSK)||'{}');
+    if(d&&typeof d==='object') EDITS=d; }catch(e){ EDITS={}; } }
+function saveLocal(){ try{ localStorage.setItem(LSK,JSON.stringify(EDITS)); }
+  catch(e){ toast('로컬 저장 공간이 부족합니다'); } }
+const editorName=()=>localStorage.getItem(LSE)||'';
+const nDirty=()=>Object.keys(EDITS).filter(k=>EDITS[k].dirty).length;
+
+function putEdit(key,payload){
+  if(!ORIGS[key]){ const cur=edRead(key); if(cur) ORIGS[key]=cur; }
+  EDITS[key]={key:key,payload:payload,ts:Date.now(),editor:editorName(),dirty:true};
+  saveLocal(); applyEdits(); render(); syncNow(true);}
+function dropEdit(key){
+  if(!EDITS[key]) return;
+  delete EDITS[key];
+  if(ORIGS[key]) edWrite(key,ORIGS[key]);
+  saveLocal(); applyEdits(); render(); delRemote(key);}
+
+/* ── 서버 동기화 ── */
+function sbHead(extra){ const h={apikey:SB.key,Authorization:'Bearer '+SB.key}; return Object.assign(h,extra||{}); }
+function setSync(st,msg){ SYNC={st:st,msg:msg}; paintSync(); }
+function paintSync(){
+  const el=document.getElementById('syncChip'); if(!el) return;
+  const n=Object.keys(EDITS).length, d=nDirty();
+  el.className='chip '+(SYNC.st==='ok'?'ok':SYNC.st==='busy'?'busy':SYNC.st==='err'?'err':'');
+  el.innerHTML='<i></i><span>수정 '+n+(d?' · 미동기 '+d:'')+'</span><span class="cx"> · '+esc(SYNC.msg)+'</span>';
+  el.title='클릭하면 서버와 즉시 동기화합니다';}
+async function pushEdits(){
+  const ks=Object.keys(EDITS).filter(k=>EDITS[k].dirty);
+  if(!ks.length) return 0;
+  const rows=ks.map(k=>({key:k,payload:EDITS[k].payload,editor:EDITS[k].editor||'',
+    updated_at:new Date(EDITS[k].ts).toISOString()}));
+  const r=await fetch(SB.url+'/rest/v1/'+SB.table,{method:'POST',
+    headers:sbHead({'Content-Type':'application/json',Prefer:'resolution=merge-duplicates,return=minimal'}),
+    body:JSON.stringify(rows)});
+  if(!r.ok) throw new Error((await r.text()).slice(0,240));
+  ks.forEach(k=>{EDITS[k].dirty=false;}); saveLocal(); return ks.length;}
+async function pullEdits(){
+  const r=await fetch(SB.url+'/rest/v1/'+SB.table+'?select=key,payload,editor,updated_at',{headers:sbHead()});
+  if(!r.ok) throw new Error((await r.text()).slice(0,240));
+  const rows=await r.json(); let n=0;
+  rows.forEach(row=>{ if(!row||!row.key||!row.payload) return;
+    const ts=Date.parse(row.updated_at)||0, cur=EDITS[row.key];
+    if(cur&&cur.dirty) return;
+    if(!cur||ts>cur.ts){ EDITS[row.key]={key:row.key,payload:row.payload,ts:ts,editor:row.editor||'',dirty:false}; n++; } });
+  if(n) saveLocal(); return n;}
+async function delRemote(key){
+  try{ await fetch(SB.url+'/rest/v1/'+SB.table+'?key=eq.'+encodeURIComponent(key),
+    {method:'DELETE',headers:sbHead({Prefer:'return=minimal'})}); }catch(e){}}
+let SYNCING=false;
+async function syncNow(silent){
+  if(SYNCING) return; SYNCING=true;
+  setSync('busy','동기화 중');
+  try{
+    const up=await pushEdits(), dn=await pullEdits();
+    setSync('ok','서버 연결됨');
+    if(dn){ applyEdits(); render(); }
+    if(!silent) toast(up||dn?('서버 동기화 완료 — 올림 '+up+'건 · 받음 '+dn+'건'):'서버와 이미 같습니다');
+  }catch(e){
+    const m=String(e&&e.message||e);
+    const missing=/PGRST205|PGRST20[0-9]|does not exist|42P01|Not Found|"404"/i.test(m);
+    setSync('err',missing?'서버 테이블 없음':'서버 연결 실패');
+    if(!silent) toast(missing?'서버에 테이블이 없습니다 — 아래 안내대로 SQL을 한 번 실행하세요'
+                              :'서버 저장 실패 — 로컬에는 저장됐습니다');
+  }finally{ SYNCING=false; paintSync(); }}
+
+/* ── 편집기 ── */
+const eq=s=>String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+const lines=a=>(a||[]).join('\n');
+const toArr=v=>String(v||'').split('\n').map(s=>s.trim()).filter(Boolean);
+function modalOff(){ const m=document.getElementById('modal'); m.classList.remove('on'); m.innerHTML=''; EDBUF=null; }
+function openEd(key,label){
+  const cur=edRead(key);
+  if(!cur){ toast('문항을 찾을 수 없습니다'); return; }
+  if(!ORIGS[key]&&!EDITS[key]) ORIGS[key]=clone(cur);
+  EDBUF={key:key,kind:edKind(key)};
+  const k=EDBUF.kind, ed=!!EDITS[key];
+  let h='<div class="mbox" onclick="event.stopPropagation()">'+
+    '<h3>문항 편집</h3><div class="msub">'+eq(label||'')+'  ·  '+eq(key)+'</div>';
+  const F=(lab,inner)=>'<div class="fld"><label>'+lab+'</label>'+inner+'</div>';
+  const TA=(id,v,rows)=>'<textarea class="edin" id="'+id+'" rows="'+(rows||3)+'">'+eq(v)+'</textarea>';
+  const IN=(id,v)=>'<input class="edin" id="'+id+'" value="'+eq(v)+'">';
+  if(k==='b'){
+    h+='<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">'+
+      F('난이도','<select class="edin" id="e_level">'+['하','중','상'].map(x=>
+        '<option'+(cur.level===x?' selected':'')+'>'+x+'</option>').join('')+'</select>')+
+      F('유형','<select class="edin" id="e_type" onchange="edTypeSwap()">'+
+        [['mc','객관식'],['short','주관식']].map(x=>
+        '<option value="'+x[0]+'"'+(cur.type===x[0]?' selected':'')+'>'+x[1]+'</option>').join('')+'</select>')+
+      '</div>'+
+      F('문제 (빈칸 ____ · 밑줄 &lt;u&gt;&lt;/u&gt;)',TA('e_stem',cur.stem,4))+
+      '<div id="e_mc"'+(cur.type==='mc'?'':' hidden')+'>'+
+      F('선택지 5개 — 동그라미를 눌러 정답 지정',
+        [0,1,2,3,4].map(i=>'<div class="crow"><button type="button" class="pick'+
+          ((+cur.answer===i+1)?' on':'')+'" id="p'+i+'" onclick="edPick('+(i+1)+')">'+CIRC[i]+'</button>'+
+          '<input class="edin" id="e_c'+i+'" value="'+eq((cur.choices||[])[i]||'')+'"></div>').join('')+
+        '<input type="hidden" id="e_ans" value="'+(+cur.answer||1)+'">')+'</div>'+
+      '<div id="e_sh"'+(cur.type==='short'?'':' hidden')+'>'+
+      F('정답',IN('e_sans',cur.type==='short'?cur.answer:''))+
+      F('허용 답 (쉼표로 구분)',IN('e_alt',(cur.alt||[]).join(', ')))+'</div>'+
+      F('해설',TA('e_why',cur.why,3));
+  }else if(k==='chk'){
+    h+=F('묶음 발문 (없으면 비워 두세요)',IN('e_gh',cur.groupHeader||''))+
+      F('문제',TA('e_stem',cur.stem||'',4))+
+      F('&lt;보기&gt; 항목 — 한 줄에 하나',TA('e_bank',lines(cur.bank),2))+
+      F('불릿 문장 — 한 줄에 하나',TA('e_bul',lines(cur.bullets),3))+
+      F('선택지 — 한 줄에 하나 (없으면 비워 두세요)',TA('e_ch',lines(cur.choices),4))+
+      F('정답',TA('e_ans',cur.answer||'',2))+
+      F('해설',TA('e_why',cur.why||'',3));
+  }else{
+    h+=F('문제 / 지시문',TA('e_prompt',cur.prompt||'',3))+
+      F('정답',TA('e_ans',cur.answer||'',2))+
+      F('해설',TA('e_why',cur.why||'',3))+
+      F('답란 줄 수','<input class="edin" id="e_lines" type="number" min="1" max="10" value="'+(+cur.lines||1)+'" style="max-width:120px">');
+  }
+  h+='<div class="mact">'+
+    (ed?'<button class="edb rv" onclick="edRevert()">원본으로 되돌리기</button>':'')+
+    '<span class="sp"></span>'+
+    '<button class="btn ghost sm" onclick="modalOff()">취소</button>'+
+    '<button class="btn sm" onclick="edSave()">저장 (로컬 + 서버)</button></div></div>';
+  const m=document.getElementById('modal');
+  m.innerHTML=h; m.classList.add('on'); m.onclick=modalOff;
+  setTimeout(()=>{const f=m.querySelector('textarea,input');if(f)f.focus();},60);}
+function edTypeSwap(){ const t=document.getElementById('e_type').value;
+  document.getElementById('e_mc').hidden=(t!=='mc');
+  document.getElementById('e_sh').hidden=(t!=='short'); }
+function edPick(n){ document.getElementById('e_ans').value=n;
+  for(let i=0;i<5;i++) document.getElementById('p'+i).classList.toggle('on',i===n-1); }
+const gv=id=>{const e=document.getElementById(id);return e?e.value:'';};
+function edSave(){
+  if(!EDBUF) return; const k=EDBUF.kind, p={};
+  if(k==='b'){
+    p.level=gv('e_level'); p.type=gv('e_type'); p.stem=gv('e_stem').trim(); p.why=gv('e_why').trim();
+    if(!p.stem){ toast('문제를 입력하세요'); return; }
+    if(p.type==='mc'){
+      p.choices=[0,1,2,3,4].map(i=>gv('e_c'+i).trim());
+      if(p.choices.some(c=>!c)){ toast('선택지 5개를 모두 입력하세요'); return; }
+      p.answer=+gv('e_ans')||1;
+    }else{
+      p.answer=gv('e_sans').trim();
+      if(!p.answer){ toast('정답을 입력하세요'); return; }
+      const a=gv('e_alt').split(',').map(s=>s.trim()).filter(Boolean); if(a.length) p.alt=a;
+    }
+  }else if(k==='chk'){
+    const gh=gv('e_gh').trim(); if(gh) p.groupHeader=gh;
+    p.stem=gv('e_stem');
+    const bk=toArr(gv('e_bank')); if(bk.length) p.bank=bk;
+    const bu=toArr(gv('e_bul')); if(bu.length) p.bullets=bu;
+    const ch=toArr(gv('e_ch')); if(ch.length) p.choices=ch;
+    p.answer=gv('e_ans').trim(); p.why=gv('e_why').trim();
+  }else{
+    p.prompt=gv('e_prompt'); p.answer=gv('e_ans').trim(); p.why=gv('e_why').trim();
+    p.lines=Math.max(1,Math.min(10,+gv('e_lines')||1));
+  }
+  const key=EDBUF.key; modalOff(); putEdit(key,p);
+  toast('저장했습니다 — 로컬 반영 완료, 서버 동기화 중');}
+function edRevert(){ if(!EDBUF) return; const key=EDBUF.key; modalOff(); dropEdit(key); toast('원본으로 되돌렸습니다'); }
+function askEditor(){ const v=prompt('편집자 이름 (기록용)',editorName()); if(v!==null){ localStorage.setItem(LSE,v.trim()); toast('편집자를 저장했습니다'); } }
+function exportEdits(){ dl(new Blob([JSON.stringify(EDITS,null,1)],{type:'application/json'}),
+  '옳은문법_편집본_'+new Date().toISOString().slice(0,10)+'.json'); }
+function importEdits(){
+  const i=document.createElement('input'); i.type='file'; i.accept='.json';
+  i.onchange=()=>{ const f=i.files[0]; if(!f) return; const rd=new FileReader();
+    rd.onload=()=>{ try{ const d=JSON.parse(rd.result); let n=0;
+      Object.keys(d).forEach(k=>{ const e=d[k]; if(!e||!e.payload) return;
+        EDITS[k]={key:k,payload:e.payload,ts:e.ts||Date.now(),editor:e.editor||'',dirty:true}; n++; });
+      saveLocal(); applyEdits(); render(); toast(n+'건을 불러왔습니다'); syncNow(true);
+    }catch(err){ toast('JSON을 읽을 수 없습니다'); } };
+    rd.readAsText(f); };
+  i.click();}
+/* 편집 버튼 */
+function edBtn(key,label){
+  return '<button class="edb'+(EDITS[key]?' rv':'')+'" title="이 문항을 편집합니다" onclick="event.stopPropagation();openEd(\''+
+    key.replace(/'/g,"\\'")+'\',\''+String(label||'').replace(/'/g,"\\'")+'\')">'+(EDITS[key]?'수정됨 ✎':'편집')+'</button>';}
+
+/* ── 별 배경 ── */
+function sky(){
+  const c=document.getElementById('sky'); if(!c) return; const x=c.getContext('2d');
+  let W,H,st=[];
+  function seed(){ W=c.width=innerWidth*devicePixelRatio; H=c.height=innerHeight*devicePixelRatio;
+    const n=Math.min(300,Math.round(innerWidth*innerHeight/6400)); st=[];
+    for(let i=0;i<n;i++){ const r=Math.random();
+      st.push({x:Math.random()*W,y:Math.random()*H,r:(r*r*1.9+.35)*devicePixelRatio,
+        a:.18+Math.random()*.6,s:Math.random()*Math.PI*2,
+        v:(Math.random()*.09+.015)*devicePixelRatio,p:r>.88}); } }
+  seed(); addEventListener('resize',seed);
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches){ draw(0); return; }
+  function draw(t){
+    x.clearRect(0,0,W,H);
+    for(const s of st){ s.y-=s.v; if(s.y<-2) s.y=H+2;
+      const a=s.a*(.55+.45*Math.sin(t/900+s.s));
+      x.beginPath(); x.arc(s.x,s.y,s.r,0,6.284);
+      x.fillStyle=s.p?'rgba(255,120,175,'+a+')':'rgba(255,255,255,'+a+')';
+      if(s.p){ x.shadowBlur=9*devicePixelRatio; x.shadowColor='rgba(255,45,120,.85)'; } else x.shadowBlur=0;
+      x.fill(); }
+    x.shadowBlur=0; requestAnimationFrame(draw); }
+  requestAnimationFrame(draw);}
 
 /* ── 출제 계획 ── */
 function planMatrix(N,lvN,tyN){
@@ -396,17 +898,27 @@ const encCfg=c=>'OG2.'+btoa(unescape(encodeURIComponent(JSON.stringify(c))));
 function decCfg(x){try{if(!/^OG[12]\./.test(x))return null;return JSON.parse(decodeURIComponent(escape(atob(x.slice(4)))));}catch(e){return null;}}
 
 /* ── 내비 ── */
-const PAGES=[['wizard','시험지 출제 마법사'],['bank','문제은행'],['books','옳은영어 교재'],['take','학생 응시'],['rec','응시 기록']];
+const PAGES=[['wizard','시험지 출제 마법사'],['bank','문제은행'],['books','옳은영어 커리큘럼'],['take','학생 응시'],['rec','응시 기록']];
 function nav(p){S.page=p;if(p!=='take'){S.sheet=null;S.report=null;}render();window.scrollTo({top:0,behavior:'smooth'});}
 function setGrade(g){S.grade=g;S.book=null;S.cat=null;render();}
+const HEAD={
+  wizard:['EXAM BUILDER · STEP ENGINE','시험지 출제 마법사','학년·출판사·단원을 고르고 난이도와 유형 배분을 정하면 A4 시험지·정답지·Word 파일이 한 번에 만들어집니다.'],
+  bank:['QUESTION BANK · 2022 개정','문제은행','문법 항목별 200문항. 모든 문항은 이 화면에서 바로 편집·저장할 수 있습니다.'],
+  books:['ORUN CURRICULUM · POP QUIZ · GRAMMAR CHECK · REVIEW TEST','옳은영어 커리큘럼','옳은문법(초등)·ORUN METABOOK(중등) 교재의 모든 시험지를 원문 그대로 열람·편집·인쇄합니다.'],
+  take:['STUDENT MODE · LIVE','학생 응시','응시 코드를 입력하면 같은 시험지가 그대로 열리고, 제출 즉시 성적 리포트가 만들어집니다.'],
+  rec:['RECORDS · SYNC','응시 기록 · 편집 동기화','이 브라우저의 응시 기록과 문항 편집본을 관리합니다.']};
+function phead(){
+  const h=HEAD[S.page]; if(!h) return '';
+  return '<div class="phead"><div class="eb">'+esc(h[0])+'</div><h1>'+esc(h[1])+'</h1><p>'+esc(h[2])+'</p></div>';}
 function render(){
   document.getElementById('nav').innerHTML=PAGES.map(function(p){
     return '<button class="'+(S.page===p[0]?'on':'')+'" onclick="nav(\''+p[0]+'\')">'+p[1]+'</button>';}).join('');
   const v=document.getElementById('view');
-  v.innerHTML = S.page==='wizard'?wizard() : S.page==='bank'?(S.cat?catView():bankView()) :
+  v.innerHTML = phead() + (S.page==='wizard'?wizard() : S.page==='bank'?(S.cat?catView():bankView()) :
                 S.page==='books'?booksView() :
-                S.page==='take'?(S.report?reportView():(S.sheet?takeView():takeSetup())) : recView();
+                S.page==='take'?(S.report?reportView():(S.sheet?takeView():takeSetup())) : recView());
   v.classList.toggle('showkey',S.key||(S.page==='books'&&S.bkKey));
+  paintSync();
   Array.prototype.forEach.call(v.querySelectorAll('.btn'),b=>b.addEventListener('click',ripple));
   if(S.page==='take'&&S.report) setTimeout(drawReport,60);
   if(S.page==='wizard'&&S.step===2&&S.exam) setTimeout(()=>buildPaper(S.exam,false,'pv'),40);
@@ -756,13 +1268,15 @@ function catView(){
    qs.map(qHtml).join('');
 }
 function qHtml(q){
+  const key='b|'+S.cat+'|'+q.no;
   let body='<div class="stem">'+fmt(q.stem)+'</div>';
-  if(q.type==='mc') body+='<ol class="ch">'+q.choices.map((c,i)=>'<li>'+CIRC[i]+' '+fmt(c)+'</li>').join('')+'</ol>';
-  const a=q.type==='mc'?CIRC[q.answer-1]+' '+fmt(q.choices[q.answer-1])
+  if(q.type==='mc') body+='<ol class="ch">'+(q.choices||[]).map((c,i)=>'<li>'+CIRC[i]+' '+fmt(c)+'</li>').join('')+'</ol>';
+  const a=q.type==='mc'?CIRC[q.answer-1]+' '+fmt((q.choices||[])[q.answer-1]||'')
     :fmt(q.answer)+(q.alt&&q.alt.length?' <span class="hint">(허용: '+esc(q.alt.join(', '))+')</span>':'');
-  return '<div class="q"><div class="head"><span class="num">'+String(q.no).padStart(3,'0')+'</span>'+
+  return '<div class="q'+(EDITS[key]?' edited':'')+'"><div class="head"><span class="num">'+String(q.no).padStart(3,'0')+'</span>'+
    '<div style="flex:1;min-width:0">'+body+'</div>'+
-   '<span class="tags"><span class="tag lv'+q.level+'">'+q.level+'</span><span class="tag">'+(q.type==='mc'?'객관식':'주관식')+'</span></span></div>'+
+   '<span class="tags"><span class="tag lv'+q.level+'">'+q.level+'</span><span class="tag">'+(q.type==='mc'?'객관식':'주관식')+'</span>'+
+   edBtn(key,((byId[S.cat]||{}).name||'')+' #'+q.no)+'</span></div>'+
    '<div class="ans"><b>정답</b> '+a+'<div class="why">'+esc(q.why)+'</div></div></div>';
 }
 function catDocx(id){
@@ -922,12 +1436,34 @@ function printReport(){
 }
 
 /* ── 4. 응시 기록 ── */
+function syncPanel(){
+  const n=Object.keys(EDITS).length, d=nDirty();
+  const st=SYNC.st==='ok'?'<span class="okmsg">서버 연결됨 — 편집본이 로컬과 서버 양쪽에 저장됩니다.</span>'
+    :SYNC.st==='busy'?'<span class="hint">동기화 중…</span>'
+    :SYNC.st==='err'?'<span class="warn">'+esc(SYNC.msg)+' — 편집본은 이 브라우저에 안전하게 저장돼 있습니다.</span>'
+    :'<span class="hint">서버 상태 확인 전</span>';
+  const help=SYNC.st==='err'&&/테이블/.test(SYNC.msg)
+    ? '<div class="codebox" style="margin-top:10px">Supabase 대시보드 → SQL Editor 에서 '+
+      'supabase/migrations/20260831000000_orun_question_edits.sql 을 한 번만 실행하면 서버 저장이 켜집니다.</div>' : '';
+  return '<div class="card solid" style="margin-bottom:14px">'+
+   '<div class="ttl">편집 동기화<span class="r">'+n+'건 수정'+(d?' · 미동기 '+d+'건':'')+'</span></div>'+
+   '<p style="margin:0 0 10px">'+st+'</p>'+
+   '<div style="display:flex;gap:8px;flex-wrap:wrap">'+
+   '<button class="btn sm" onclick="syncNow(false)">지금 동기화</button>'+
+   '<button class="btn ghost sm" onclick="askEditor()">편집자 이름'+(editorName()?' · '+esc(editorName()):'')+'</button>'+
+   '<button class="btn ghost sm" onclick="exportEdits()">편집본 내보내기(JSON)</button>'+
+   '<button class="btn ghost sm" onclick="importEdits()">편집본 불러오기</button>'+
+   (n?'<button class="btn ghost sm" onclick="resetEdits()">모든 편집 되돌리기</button>':'')+
+   '</div>'+help+'</div>';}
+function resetEdits(){ if(!confirm('모든 편집을 원본으로 되돌릴까요? 서버 편집본도 삭제됩니다.')) return;
+  Object.keys(EDITS).forEach(k=>{ delRemote(k); if(ORIGS[k]) edWrite(k,ORIGS[k]); });
+  EDITS={}; saveLocal(); applyEdits(); render(); toast('모든 편집을 되돌렸습니다'); }
 function recView(){
   const r=JSON.parse(localStorage.getItem('og.records')||'[]');
-  if(!r.length) return '<div class="card solid"><div class="ttl">응시 기록</div>'+
+  if(!r.length) return syncPanel()+'<div class="card solid"><div class="ttl">응시 기록</div>'+
     '<p class="hint">이 브라우저에서 제출한 응시 기록이 여기에 쌓입니다.</p></div>';
   const avg=Math.round(r.reduce((s,x)=>s+x.score,0)/r.length);
-  return '<div class="stat"><div><b>'+r.length+'</b><span>총 응시</span></div>'+
+  return syncPanel()+'<div class="stat"><div><b>'+r.length+'</b><span>총 응시</span></div>'+
    '<div><b>'+avg+'</b><span>평균 점수</span></div>'+
    '<div><b>'+Math.max.apply(null,r.map(x=>x.score))+'</b><span>최고 점수</span></div>'+
    '<div><b>'+new Set(r.map(x=>x.name)).size+'</b><span>응시자</span></div></div>'+
@@ -942,7 +1478,7 @@ function recView(){
 function clearRec(){ if(confirm('기록을 모두 지울까요?')){localStorage.removeItem('og.records');render();} }
 function clearUsed(){ localStorage.removeItem('og.used'); toast('중복 출제 기록을 초기화했습니다'); }
 
-/* ══ 5. 옳은영어 교재 (POP QUIZ · GRAMMAR CHECK · REVIEW TEST) ══ */
+/* ══ 5. 옳은영어 커리큘럼 (POP QUIZ · GRAMMAR CHECK · REVIEW TEST) ══ */
 function oTrack(){return ORUN[S.bkT]||{books:[]};}
 function oBook(){return (oTrack().books||[]).filter(b=>b.id===S.bkB)[0];}
 function oItem(){const b=oBook();if(!b)return null;
@@ -976,7 +1512,7 @@ function booksView(){
 }
 function bookView(){
   const T=oTrack(), b=oBook(); if(!b) return '';
-  return '<div class="crumb" onclick="S.bkB=null;render()">← '+esc(T.vol)+' 교재 목록</div>'+
+  return '<div class="crumb" onclick="S.bkB=null;render()">← '+esc(T.vol)+' 커리큘럼 목록</div>'+
    '<div class="card solid" style="margin-bottom:14px"><div class="ttl" style="font-size:16px;color:var(--ink)">'+
    esc(b.short)+'<span class="r">'+esc(b.title||'')+'</span></div>'+
    '<div class="tree" style="max-height:none">'+b.chapters.map(c=>{
@@ -1017,33 +1553,36 @@ function chkHtml(it){
       'padding:8px 13px;margin:14px 0 8px;font-weight:700;font-size:13.5px">'+fmt(q.groupHeader)+'</div>';
     let body='';
     if(q.stem) body+='<div class="stem">'+fmt(q.stem)+'</div>';
-    if(q.bank&&q.bank.length) body+='<div style="display:flex;gap:10px;align-items:center;background:#f6f8fb;'+
+    if(q.bank&&q.bank.length) body+='<div style="display:flex;gap:10px;align-items:center;background:rgba(255,255,255,.05);'+
       'border:1px solid var(--line);border-radius:10px;padding:8px 13px;margin:8px 0;font-size:13.5px">'+
       '<b style="color:var(--sub);font-size:11.5px;flex:none">보기</b><span>'+q.bank.map(fmt).join('&nbsp; &nbsp;')+'</span></div>';
     if(q.bullets&&q.bullets.length) body+='<div style="margin:7px 0 0;padding-left:4px">'+
       q.bullets.map(x=>'<div style="margin:3px 0">· '+fmt(x)+'</div>').join('')+'</div>';
     if(q.choices&&q.choices.length) body+='<ol class="ch">'+q.choices.map((c,i)=>'<li>'+CIRC[i]+' '+fmt(c)+'</li>').join('')+'</ol>';
-    const k=key[q.no]||{};
-    return h+'<div class="q"><div class="head"><span class="num">'+String(q.no).padStart(2,'0')+'</span>'+
-      '<div style="flex:1;min-width:0">'+body+'</div></div>'+
+    const k=key[q.no]||{}, ek='c|'+S.bkT+'|'+it.id+'|chk|'+q.no;
+    return h+'<div class="q'+(EDITS[ek]?' edited':'')+'"><div class="head"><span class="num">'+String(q.no).padStart(2,'0')+'</span>'+
+      '<div style="flex:1;min-width:0">'+body+'</div>'+
+      '<span class="tags">'+edBtn(ek,it.t+' #'+q.no)+'</span></div>'+
       '<div class="ans"><b>정답</b> '+fmt(k.answer||'')+'<div class="why">'+esc(k.why||'')+'</div></div></div>';
   }).join('');
 }
 function recHtml(it){
-  return (it.rec.sections||[]).map(sec=>
+  return (it.rec.sections||[]).map((sec,si)=>
     '<div class="card solid" style="margin-bottom:12px">'+
     '<div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">'+
     '<span style="background:var(--navy);color:#fff;border-radius:9px;padding:5px 12px;font-weight:800;font-size:12.5px">'+
     esc(sec.label||sec.kind)+'</span>'+
     '<span style="color:var(--sub);font-size:13px">'+esc(sec.instruction||'')+'</span></div>'+
-    sec.rows.map((r,i)=>'<div class="q" style="margin-bottom:7px"><div class="head">'+
+    sec.rows.map((r,i)=>{const ek='c|'+S.bkT+'|'+it.id+'|rec|'+si+'|'+i;
+      return '<div class="q'+(EDITS[ek]?' edited':'')+'" style="margin-bottom:7px"><div class="head">'+
       '<span class="num">'+String(i+1).padStart(2,'0')+'</span>'+
       '<div style="flex:1;min-width:0"><div class="stem">'+fmt(r.prompt||'')+'</div>'+
-      '<div style="border-bottom:1px dashed var(--line);height:'+((r.lines||1)*20)+'px;margin-top:6px"></div></div></div>'+
-      '<div class="ans"><b>정답</b> '+fmt(r.answer||'')+'<div class="why">'+esc(r.why||'')+'</div></div></div>').join('')+
+      '<div style="border-bottom:1px dashed var(--line);height:'+((r.lines||1)*20)+'px;margin-top:6px"></div></div>'+
+      '<span class="tags">'+edBtn(ek,(sec.label||'')+' #'+(i+1))+'</span></div>'+
+      '<div class="ans"><b>정답</b> '+fmt(r.answer||'')+'<div class="why">'+esc(r.why||'')+'</div></div></div>';}).join('')+
     '</div>').join('');
 }
-/* 옳은영어 교재 시험지 인쇄 */
+/* 옳은영어 커리큘럼 시험지 인쇄 */
 function orunPaper(withKey){
   const T=oTrack(), b=oBook(), it=oItem(), isChk=S.bkTab==='chk';
   const kind=isChk?T.check:T.recall;
@@ -1124,7 +1663,10 @@ function docxOrun(){
   catch(e){ toast('Word 생성 실패: '+e.message); }
 }
 
+loadLocal(); applyEdits(); sky();
 setTotal(20); S.step=1; render();
+syncNow(true);
+addEventListener('keydown',e=>{ if(e.key==='Escape'&&document.getElementById('modal').classList.contains('on')) modalOff(); });
 </script>
 </body>
 </html>
