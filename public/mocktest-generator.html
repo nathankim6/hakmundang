@@ -319,7 +319,7 @@
   </div>
   <div class="lh-engine">
     <span class="dot blue"></span>
-    <span class="t">AI MODEL ENGINE · FABLE</span>
+    <span class="t">AI MODEL ENGINE · OPUS 5</span>
   </div>
 </div>
 
@@ -376,9 +376,9 @@
 
     <div class="row">
       <div>
-        <label for="scopeText">시험범위 메모 <span class="opt">(선택)</span></label>
-        <textarea id="scopeText" placeholder="예) 능률(김성곤) 3~5과, 2025년 6월 고2 모의고사 18~28번, 워크북 Unit 4
-또는 범위 지문 텍스트를 그대로 붙여넣어도 됩니다."></textarea>
+        <label for="scopeText">시험범위 첨부 <span class="opt">(텍스트, 구분없이 복붙)</span></label>
+        <textarea id="scopeText" placeholder="범위 안내·지문·단어를 구분 없이 그대로 붙여넣으세요.
+예) 능률(김성곤) 3~5과 / 2025년 6월 고2 모의고사 18~28번 / 지문 원문 전체"></textarea>
       </div>
       <div>
         <label for="extraReq">요청사항 <span class="opt">(선택)</span></label>
@@ -392,7 +392,7 @@
     <div class="engine-label">
       <span class="dot blue"></span>
       <span class="t">AI MODEL ENGINE</span>
-      <span class="m">FABLE</span>
+      <span class="m">OPUS 5</span>
       <span class="s">Anthropic API</span>
     </div>
     <input type="password" id="apiKey" placeholder="sk-ant-..." autocomplete="off" aria-label="Anthropic API 키">
@@ -462,7 +462,7 @@
   "use strict";
 
   const API_URL = "https://api.anthropic.com/v1/messages";
-  const MODEL = "claude-fable-5";
+  const MODEL = "claude-opus-5";
   const MAX_FILE_BYTES = 100 * 1024 * 1024;      // 개당 100MB
   const MAX_PDF_PAYLOAD = 30 * 1024 * 1024;      // API 요청 32MB 한도 대비 여유 (PDF base64 합계)
   const MAX_TEXT_CHARS = 2000000;                // 추출 텍스트 합계 가드 (약 1M 토큰 컨텍스트 대비)
@@ -922,7 +922,7 @@
     if (scopeItems.some(i => i.status === "loading"))
       return showError("analyzeError", "시험범위 파일에서 텍스트를 추출하는 중입니다. 잠시 후 다시 시도해 주세요.");
     if (!readyScopeItems().length && !$("scopeText").value.trim())
-      return showError("analyzeError", "시험범위 파일을 올리거나, 시험범위 설명을 입력해 주세요.");
+      return showError("analyzeError", "시험범위 파일을 올리거나, 시험범위 텍스트를 붙여넣어 주세요.");
     const guard = payloadGuard();
     if (guard) return showError("analyzeError", guard);
     localStorage.setItem("claude_api_key", apiKey);
