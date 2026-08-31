@@ -1,0 +1,2692 @@
+{
+ "id": "m3-06",
+ "grade": "중3",
+ "name": "주격 관대+be동사 생략·후치 수식 분사",
+ "points": [
+  "관대+be 생략",
+  "명사 뒤 현재분사·과거분사구",
+  "능동/수동 판별"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The boy ____ a blue cap is my brother.",
+   "choices": [
+    "wearing",
+    "wear",
+    "wears",
+    "worn",
+    "to wear"
+   ],
+   "answer": 1,
+   "why": "모자를 쓰고 있는 것은 능동이므로 현재분사 wearing이 명사 The boy를 뒤에서 꾸민다. who is wearing에서 who is가 생략된 형태다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The bread ____ by my mother is delicious.",
+   "choices": [
+    "baked",
+    "bake",
+    "bakes",
+    "baking",
+    "to bake"
+   ],
+   "answer": 1,
+   "why": "빵은 구워지는 대상(수동)이므로 과거분사 baked를 쓴다. which was baked에서 which was가 생략된 형태다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The girl ____ on the bench is reading a book.",
+   "choices": [
+    "sitting",
+    "sit",
+    "sits",
+    "sat",
+    "to sit"
+   ],
+   "answer": 1,
+   "why": "소녀가 앉아 있는 능동의 뜻이므로 현재분사 sitting이 The girl을 뒤에서 수식한다. 문장의 동사는 is reading이다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  I know the man ____ under the tree.",
+   "choices": [
+    "stand",
+    "stands",
+    "stood",
+    "to stand",
+    "standing"
+   ],
+   "answer": 5,
+   "why": "'서 있는 남자'는 능동이므로 현재분사 standing을 쓴다. 동사 stand나 stands를 쓰면 한 문장에 동사가 둘이 되어 틀린다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  This is a story ____ in French.",
+   "choices": [
+    "written",
+    "write",
+    "writes",
+    "wrote",
+    "writing"
+   ],
+   "answer": 1,
+   "why": "이야기는 쓰여진 대상(수동)이므로 과거분사 written이 알맞다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The dog ____ in the park is very cute.",
+   "choices": [
+    "run",
+    "runs",
+    "ran",
+    "to run",
+    "running"
+   ],
+   "answer": 5,
+   "why": "개가 스스로 달리는 능동의 뜻이므로 현재분사 running을 쓴다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  He has a bike ____ in Japan.",
+   "choices": [
+    "made",
+    "make",
+    "makes",
+    "making",
+    "to make"
+   ],
+   "answer": 1,
+   "why": "자전거는 만들어진 대상(수동)이므로 과거분사 made를 쓴다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The children ____ soccer are my students.",
+   "choices": [
+    "play",
+    "plays",
+    "played",
+    "to play",
+    "playing"
+   ],
+   "answer": 5,
+   "why": "아이들이 축구를 하는 능동의 뜻이고 뒤에 목적어 soccer가 있으므로 현재분사 playing이 알맞다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  I found a wallet ____ on the street.",
+   "choices": [
+    "dropped",
+    "drop",
+    "drops",
+    "dropping",
+    "to drop"
+   ],
+   "answer": 1,
+   "why": "지갑은 떨어뜨려진 것(수동)이므로 과거분사 dropped를 쓴다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The window ____ by the ball is very old.",
+   "choices": [
+    "break",
+    "breaks",
+    "broke",
+    "breaking",
+    "broken"
+   ],
+   "answer": 5,
+   "why": "창문은 깨진 대상(수동)이므로 과거분사 broken을 쓴다. which was broken에서 which was가 생략된 형태다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  Who is the woman ____ to your teacher?",
+   "choices": [
+    "talking",
+    "talk",
+    "talks",
+    "talked",
+    "to talk"
+   ],
+   "answer": 1,
+   "why": "여자가 이야기하는 능동의 뜻이므로 현재분사 talking이 the woman을 뒤에서 수식한다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The letter ____ to me was long.",
+   "choices": [
+    "send",
+    "sends",
+    "sent",
+    "sending",
+    "to send"
+   ],
+   "answer": 3,
+   "why": "편지는 보내진 대상(수동)이므로 과거분사 sent를 쓴다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The bird ____ over the lake looks beautiful.",
+   "choices": [
+    "fly",
+    "flies",
+    "flew",
+    "to fly",
+    "flying"
+   ],
+   "answer": 5,
+   "why": "새가 스스로 나는 능동의 뜻이므로 현재분사 flying을 쓴다. 문장의 동사는 looks이다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The bag ____ in the classroom is Mina's.",
+   "choices": [
+    "left",
+    "leave",
+    "leaves",
+    "leaving",
+    "to leave"
+   ],
+   "answer": 1,
+   "why": "가방은 두고 간 대상(수동)이므로 과거분사 left를 쓴다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  I like the song ____ by that singer.",
+   "choices": [
+    "sing",
+    "sings",
+    "sung",
+    "sang",
+    "singing"
+   ],
+   "answer": 3,
+   "why": "노래는 불려지는 대상(수동)이므로 과거분사 sung이 알맞다. sang은 과거형이라 명사를 수식할 수 없다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?  The man ____ the piano is my uncle.",
+   "choices": [
+    "play",
+    "plays",
+    "played",
+    "to play",
+    "playing"
+   ],
+   "answer": 5,
+   "why": "남자가 피아노를 치는 능동의 뜻이고 목적어 the piano가 있으므로 현재분사 playing을 쓴다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 할 때 빈칸에 알맞은 것은?  The girl who is dancing on the stage is my cousin. → The girl ____ on the stage is my cousin.",
+   "choices": [
+    "dancing",
+    "dance",
+    "dances",
+    "danced",
+    "to dance"
+   ],
+   "answer": 1,
+   "why": "주격 관계대명사 who와 be동사 is를 함께 생략하면 뒤의 현재분사 dancing만 남는다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 할 때 빈칸에 알맞은 것은?  The book which was written by Tom is popular. → The book ____ by Tom is popular.",
+   "choices": [
+    "write",
+    "writes",
+    "written",
+    "wrote",
+    "writing"
+   ],
+   "answer": 3,
+   "why": "which was를 생략하면 과거분사 written이 남아 명사를 뒤에서 수식한다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 할 때 빈칸에 알맞은 것은?  The boy who is waiting for the bus is Jinho. → The boy ____ for the bus is Jinho.",
+   "choices": [
+    "wait",
+    "waits",
+    "waited",
+    "to wait",
+    "waiting"
+   ],
+   "answer": 5,
+   "why": "who is를 생략하면 현재분사 waiting이 남는다. 동사 waits를 쓰면 문장에 동사가 두 개가 된다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 할 때 빈칸에 알맞은 것은?  The house which was built in 1900 is still there. → The house ____ in 1900 is still there.",
+   "choices": [
+    "built",
+    "build",
+    "builds",
+    "building",
+    "to build"
+   ],
+   "answer": 1,
+   "why": "which was를 생략하면 수동의 뜻을 가진 과거분사 built가 남는다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 할 때 빈칸에 알맞은 것은?  I met a girl who was carrying a big box. → I met a girl ____ a big box.",
+   "choices": [
+    "carry",
+    "carries",
+    "carrying",
+    "carried",
+    "to carry"
+   ],
+   "answer": 3,
+   "why": "who was를 생략하면 현재분사 carrying이 남아 a girl을 뒤에서 수식한다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 할 때 빈칸에 알맞은 것은?  The money which was found in the box was mine. → The money ____ in the box was mine.",
+   "choices": [
+    "find",
+    "finds",
+    "finding",
+    "to find",
+    "found"
+   ],
+   "answer": 5,
+   "why": "돈은 발견된 대상이므로 which was를 생략하면 과거분사 found가 남는다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 할 때 빈칸에 알맞은 것은?  The people who are living next door are kind. → The people ____ next door are kind.",
+   "choices": [
+    "living",
+    "live",
+    "lives",
+    "lived",
+    "to live"
+   ],
+   "answer": 1,
+   "why": "who are를 생략하면 현재분사 living이 남는다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 할 때 빈칸에 알맞은 것은?  The tree which was planted by my dad is tall now. → The tree ____ by my dad is tall now.",
+   "choices": [
+    "plant",
+    "planted",
+    "plants",
+    "planting",
+    "to plant"
+   ],
+   "answer": 2,
+   "why": "나무는 심어진 대상이므로 which was를 생략하면 과거분사 planted가 남는다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은?",
+   "choices": [
+    "The man sat on the sofa is my father.",
+    "I have a friend live in Canada.",
+    "The baby sleeping in the bed is cute.",
+    "The letter wrote in English is here.",
+    "The girl danced now is Sumi."
+   ],
+   "answer": 3,
+   "why": "명사를 뒤에서 꾸미며 능동의 뜻을 나타내므로 현재분사 sleeping이 옳다. 나머지는 동사의 과거형이나 원형을 그대로 써서 틀렸다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은?",
+   "choices": [
+    "The boy playing the violin is my brother.",
+    "The cup broken by Tom was expensive.",
+    "The man reading a book is my teacher.",
+    "The children swimming in the pool look happy.",
+    "The song singing by her is nice."
+   ],
+   "answer": 5,
+   "why": "노래는 불려지는 대상이므로 singing이 아니라 과거분사 sung을 써야 한다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "This is a picture taken by my sister.",
+    "This is a picture taking by my sister.",
+    "This is a picture take by my sister.",
+    "This is a picture takes by my sister.",
+    "This is a picture to take by my sister."
+   ],
+   "answer": 1,
+   "why": "사진은 찍힌 대상(수동)이므로 과거분사 taken을 쓴다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 틀린 것은?",
+   "choices": [
+    "The girl talking on the phone is Mina.",
+    "The boy wear glasses is my cousin.",
+    "The window opened by the wind is small.",
+    "The bag made in Italy is expensive.",
+    "The man waiting at the door is my uncle."
+   ],
+   "answer": 2,
+   "why": "명사를 뒤에서 수식하려면 분사를 써야 하므로 wear가 아니라 wearing이 되어야 한다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "The boy runs in the park is Tom.",
+    "The boy run in the park is Tom.",
+    "The boy running in the park is Tom.",
+    "The boy to run in the park is Tom.",
+    "The boy ran in the park is Tom."
+   ],
+   "answer": 3,
+   "why": "who is running에서 who is를 생략한 형태로, 현재분사 running이 the boy를 뒤에서 수식한다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 틀린 것은?",
+   "choices": [
+    "The food cooked by my mom is great.",
+    "The people invited to the party are here.",
+    "The people coming to the party are my friends.",
+    "The car parked in front of my house is new.",
+    "The food cooking by my mom is great."
+   ],
+   "answer": 5,
+   "why": "by my mom이 있어 음식이 요리되는 수동의 뜻이므로 cooking이 아니라 cooked를 써야 한다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "아래 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "The man standing there is my uncle.",
+    "The man is standing there is my uncle.",
+    "The man stand there is my uncle.",
+    "The man stands there is my uncle.",
+    "The man stood there is my uncle."
+   ],
+   "answer": 1,
+   "why": "who is standing에서 who is를 생략해 standing만 남긴 형태가 옳다. is standing을 그대로 두면 동사가 두 개가 된다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "아래 문장 중 어법상 틀린 것은?",
+   "choices": [
+    "This is the letter sent to me yesterday.",
+    "This is the water drinking by my dog.",
+    "This is the boy chosen by our class.",
+    "This is the room used by the club.",
+    "This is the girl helping the old man."
+   ],
+   "answer": 2,
+   "why": "물은 마셔지는 대상이므로 drinking이 아니라 과거분사 drunk를 써야 한다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  <u>The</u> girl <u>wearing</u> a white dress <u>is</u> the singer <u>love</u> by <u>everyone</u>.",
+   "choices": [
+    "The",
+    "wearing",
+    "is",
+    "love",
+    "everyone"
+   ],
+   "answer": 4,
+   "why": "가수는 사랑받는 대상이므로 love가 아니라 과거분사 loved를 써야 한다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  <u>Do</u> you know the man <u>stand</u> by the door? He <u>is</u> holding a box <u>filled</u> with <u>books</u>.",
+   "choices": [
+    "Do",
+    "stand",
+    "is",
+    "filled",
+    "books"
+   ],
+   "answer": 2,
+   "why": "명사 the man을 뒤에서 수식하려면 동사원형 stand가 아니라 현재분사 standing을 써야 한다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  <u>The</u> boy <u>sitting</u> next to me <u>ate</u> the cake <u>make</u> by <u>his</u> sister.",
+   "choices": [
+    "The",
+    "sitting",
+    "ate",
+    "make",
+    "his"
+   ],
+   "answer": 4,
+   "why": "케이크는 만들어진 대상이므로 make가 아니라 과거분사 made를 써야 한다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  I <u>have</u> a friend <u>calling</u> Jenny. She <u>lives</u> in a house <u>built</u> by her <u>father</u>.",
+   "choices": [
+    "have",
+    "calling",
+    "lives",
+    "built",
+    "father"
+   ],
+   "answer": 2,
+   "why": "친구는 Jenny라고 불리는 대상이므로 calling이 아니라 과거분사 called를 써야 한다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  기타를 치고 있는 소년은 내 사촌이다.",
+   "choices": [
+    "The boy play the guitar is my cousin.",
+    "The boy played the guitar is my cousin.",
+    "The boy playing the guitar is my cousin.",
+    "The boy plays the guitar is my cousin.",
+    "The boy is playing the guitar is my cousin."
+   ],
+   "answer": 3,
+   "why": "who is playing에서 who is를 생략한 현재분사구가 the boy를 뒤에서 수식한다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  삼촌이 만든 의자는 튼튼하다.",
+   "choices": [
+    "The chair making by my uncle is strong.",
+    "The chair make by my uncle is strong.",
+    "The chair makes by my uncle is strong.",
+    "The chair to make by my uncle is strong.",
+    "The chair made by my uncle is strong."
+   ],
+   "answer": 5,
+   "why": "의자는 만들어진 대상이므로 과거분사 made가 뒤에서 수식한다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  나는 프랑스어로 쓰인 편지 한 통을 받았다.",
+   "choices": [
+    "I got a letter written in French.",
+    "I got a letter writing in French.",
+    "I got a letter write in French.",
+    "I got a letter wrote in French.",
+    "I got a letter writes in French."
+   ],
+   "answer": 1,
+   "why": "편지는 쓰여진 대상이므로 과거분사 written을 쓴다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  저기서 축구를 하고 있는 아이들은 내 반 친구들이다.",
+   "choices": [
+    "The children play soccer over there are my classmates.",
+    "The children playing soccer over there are my classmates.",
+    "The children played soccer over there are my classmates.",
+    "The children to play soccer over there are my classmates.",
+    "The children are playing soccer over there are my classmates."
+   ],
+   "answer": 2,
+   "why": "현재분사구 playing soccer over there가 The children을 뒤에서 수식한다. 동사를 그대로 쓰면 동사가 두 개가 된다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말로 알맞은 것은?  • The man ____ a black coat is my dad.  • I like the girl ____ glasses.",
+   "choices": [
+    "wear",
+    "wears",
+    "wearing",
+    "wore",
+    "worn"
+   ],
+   "answer": 3,
+   "why": "두 문장 모두 '~을 착용하고 있는'이라는 능동의 뜻으로 명사를 뒤에서 수식하므로 현재분사 wearing이 공통으로 들어간다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말로 알맞은 것은?  • The bag ____ in Korea is popular.  • Cheese ____ from goat's milk tastes special.",
+   "choices": [
+    "make",
+    "makes",
+    "making",
+    "made",
+    "to make"
+   ],
+   "answer": 4,
+   "why": "두 문장 모두 '만들어진'이라는 수동의 뜻이므로 과거분사 made가 공통으로 들어간다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸 (A)와 (B)에 들어갈 말이 바르게 짝지어진 것은?  • The girl ____(A)____ a red skirt is Mina.  • The cap ____(B)____ by Tom is new.",
+   "choices": [
+    "(A) wearing - (B) buying",
+    "(A) worn - (B) bought",
+    "(A) worn - (B) buying",
+    "(A) wear - (B) buy",
+    "(A) wearing - (B) bought"
+   ],
+   "answer": 5,
+   "why": "(A)는 소녀가 치마를 입고 있는 능동이라 wearing, (B)는 모자가 사진 대상인 수동이라 bought이다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸 (A)와 (B)에 들어갈 말이 바르게 짝지어진 것은?  • The man ____(A)____ the door is a police officer.  • The door ____(B)____ by him was heavy.",
+   "choices": [
+    "(A) opening - (B) opened",
+    "(A) open - (B) open",
+    "(A) opened - (B) opening",
+    "(A) opening - (B) opening",
+    "(A) opened - (B) opened"
+   ],
+   "answer": 1,
+   "why": "(A)는 남자가 문을 여는 능동이라 opening, (B)는 문이 열리는 수동이라 opened이다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ⓐ The boy singing a song is Tom.  ⓑ The cake make by Ann was sweet.  ⓒ I have a book written in Chinese.  ⓓ The man sit there is my dad.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ⓐ와 ⓒ가 옳다. ⓑ는 made, ⓓ는 sitting이 되어야 하므로 옳은 문장은 2개이다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ⓐ The girl running fast is my friend.  ⓑ The pictures taken by him are nice.  ⓒ The letter writing by her is long.  ⓓ The dog sleeping on the sofa is mine.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 4,
+   "why": "ⓒ만 written으로 고쳐야 하므로 옳은 문장은 ⓐⓑⓓ 3개이다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?  ⓐ The window broke by Tom is small.  ⓑ The people waiting outside are cold.  ⓒ The song play now is nice.  ⓓ The bag made in China is cheap.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ⓐ는 broken, ⓒ는 played로 고쳐야 하므로 틀린 문장은 2개이다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ⓐ The boy standing there is Mike.  ⓑ The bread baked today is fresh.  ⓒ The girl reading a book is Sue.  ⓓ The toy bought by my mom is nice.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 5,
+   "why": "능동은 현재분사, 수동은 과거분사로 바르게 쓰여 네 문장 모두 옳다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 한 단어로 쓰시오.  The boy (play) with a ball is my brother.",
+   "answer": "playing",
+   "alt": [],
+   "why": "소년이 공을 가지고 노는 능동의 뜻이므로 현재분사 playing으로 쓴다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 한 단어로 쓰시오.  The vase (break) by the cat was old.",
+   "answer": "broken",
+   "alt": [],
+   "why": "꽃병은 깨진 대상(수동)이므로 과거분사 broken으로 쓴다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 한 단어로 쓰시오.  The girl (dance) on the stage is Mina.",
+   "answer": "dancing",
+   "alt": [],
+   "why": "소녀가 춤추는 능동의 뜻이므로 현재분사 dancing으로 쓴다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 한 단어로 쓰시오.  I have a watch (make) in Switzerland.",
+   "answer": "made",
+   "alt": [],
+   "why": "시계는 만들어진 대상이므로 과거분사 made로 쓴다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 한 단어로 쓰시오.  The man (wait) for a taxi looks tired.",
+   "answer": "waiting",
+   "alt": [],
+   "why": "남자가 기다리는 능동의 뜻이므로 현재분사 waiting으로 쓴다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 한 단어로 쓰시오.  The song (love) by many people is very old.",
+   "answer": "loved",
+   "alt": [],
+   "why": "노래는 사랑받는 대상이므로 과거분사 loved로 쓴다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 한 단어로 쓰시오.  Do you know the boy (stand) at the gate?",
+   "answer": "standing",
+   "alt": [],
+   "why": "소년이 서 있는 능동의 뜻이므로 현재분사 standing으로 쓴다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 한 단어로 쓰시오.  The letter (write) in Chinese is not mine.",
+   "answer": "written",
+   "alt": [],
+   "why": "편지는 쓰여진 대상이므로 과거분사 written으로 쓴다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 한 단어로 쓰시오.  The cat (sleep) on my bed is cute.",
+   "answer": "sleeping",
+   "alt": [],
+   "why": "고양이가 자고 있는 능동의 뜻이므로 현재분사 sleeping으로 쓴다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 한 단어로 쓰시오.  The bike (steal) last night was found today.",
+   "answer": "stolen",
+   "alt": [],
+   "why": "자전거는 도둑맞은 대상이므로 과거분사 stolen으로 쓴다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 생략할 수 있는 두 단어를 찾아 쓰시오.  The girl who is singing on the stage is my sister.",
+   "answer": "who is",
+   "alt": [],
+   "why": "주격 관계대명사 who와 바로 뒤의 be동사 is는 함께 생략할 수 있고, 남은 singing이 the girl을 수식한다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 생략할 수 있는 두 단어를 찾아 쓰시오.  The book which was read by my father is on the desk.",
+   "answer": "which was",
+   "alt": [],
+   "why": "주격 관계대명사 which와 be동사 was를 함께 생략하면 과거분사 read가 남는다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 관계대명사와 be동사를 생략하여 문장을 다시 쓰시오.  The man who is talking to Ms. Kim is my father.",
+   "answer": "The man talking to Ms. Kim is my father.",
+   "alt": [
+    "The man talking to Ms. Kim is my father"
+   ],
+   "why": "who is를 생략하면 현재분사구 talking to Ms. Kim이 The man을 뒤에서 수식한다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 관계대명사와 be동사를 생략하여 문장을 다시 쓰시오.  The box which was sent to me is very heavy.",
+   "answer": "The box sent to me is very heavy.",
+   "alt": [
+    "The box sent to me is very heavy"
+   ],
+   "why": "which was를 생략하면 과거분사구 sent to me가 The box를 뒤에서 수식한다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 관계대명사와 be동사를 생략하여 문장을 다시 쓰시오.  The children who are playing outside are noisy.",
+   "answer": "The children playing outside are noisy.",
+   "alt": [
+    "The children playing outside are noisy"
+   ],
+   "why": "who are를 생략하면 현재분사 playing이 남아 The children을 수식한다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장에서 관계대명사와 be동사를 생략하여 문장을 다시 쓰시오.  The tower which was built 100 years ago is famous.",
+   "answer": "The tower built 100 years ago is famous.",
+   "alt": [
+    "The tower built 100 years ago is famous"
+   ],
+   "why": "which was를 생략하면 과거분사 built가 남아 The tower를 수식한다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  The girl <u>wear</u> a yellow hat is Sujin.",
+   "answer": "wearing",
+   "alt": [],
+   "why": "명사를 뒤에서 수식하며 능동의 뜻이므로 현재분사 wearing으로 고친다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  The window <u>breaking</u> by the boy was fixed.",
+   "answer": "broken",
+   "alt": [],
+   "why": "창문은 깨진 대상(수동)이므로 과거분사 broken으로 고친다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  I like the cookies <u>make</u> by my aunt.",
+   "answer": "made",
+   "alt": [],
+   "why": "쿠키는 만들어진 대상이므로 과거분사 made로 고친다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  The man <u>sat</u> on the chair is my grandfather.",
+   "answer": "sitting",
+   "alt": [],
+   "why": "남자가 앉아 있는 능동의 뜻이므로 현재분사 sitting으로 고친다. 과거형 sat은 명사를 수식할 수 없다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?  The man ____ a heavy box up the stairs looked very tired.",
+   "choices": [
+    "carried",
+    "carrying",
+    "carries",
+    "carry",
+    "to carry"
+   ],
+   "answer": 2,
+   "why": "남자가 상자를 나르는 능동의 뜻이고 뒤에 목적어가 있으므로 현재분사 carrying이 알맞다. 과거형 carried를 쓰면 동사가 두 개가 된다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?  All the cookies ____ for the school festival were sold out.",
+   "choices": [
+    "baking",
+    "bake",
+    "baked",
+    "bakes",
+    "to bake"
+   ],
+   "answer": 3,
+   "why": "쿠키는 구워진 대상(수동)이므로 과거분사 baked가 알맞다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?  The child ____ by the whole village grew up to be a kind person.",
+   "choices": [
+    "raising",
+    "raise",
+    "raises",
+    "raised",
+    "to raise"
+   ],
+   "answer": 4,
+   "why": "아이는 길러진 대상이고 by가 뒤따르므로 과거분사 raised가 알맞다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?  The tourists ____ pictures in front of the palace were from Spain.",
+   "choices": [
+    "taken",
+    "take",
+    "takes",
+    "to take",
+    "taking"
+   ],
+   "answer": 5,
+   "why": "관광객들이 사진을 찍는 능동의 뜻이고 목적어 pictures가 있으므로 현재분사 taking이 알맞다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?  The novel ____ by a teenager became a best seller.",
+   "choices": [
+    "written",
+    "writing",
+    "wrote",
+    "write",
+    "writes"
+   ],
+   "answer": 1,
+   "why": "소설은 쓰여진 대상이므로 과거분사 written이 알맞다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?  The people ____ in the earthquake received help from the city.",
+   "choices": [
+    "injuring",
+    "injured",
+    "injure",
+    "injures",
+    "to injure"
+   ],
+   "answer": 2,
+   "why": "사람들은 다치게 된 대상(수동)이므로 과거분사 injured가 알맞다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?  Do you know the girl ____ the flute on the stage?",
+   "choices": [
+    "played",
+    "plays",
+    "playing",
+    "play",
+    "to play"
+   ],
+   "answer": 3,
+   "why": "소녀가 플루트를 연주하는 능동의 뜻이므로 현재분사 playing이 알맞다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?  The bridge ____ over the river last year connects the two towns.",
+   "choices": [
+    "build",
+    "building",
+    "builds",
+    "built",
+    "to build"
+   ],
+   "answer": 4,
+   "why": "다리는 지어진 대상이므로 과거분사 built가 알맞다. 문장의 동사는 connects이다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?  The language ____ in that country is quite different from ours.",
+   "choices": [
+    "speaking",
+    "speaks",
+    "spoke",
+    "speak",
+    "spoken"
+   ],
+   "answer": 5,
+   "why": "언어는 말해지는 대상이므로 과거분사 spoken이 알맞다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?  The team ____ the most points will win the trophy.",
+   "choices": [
+    "scoring",
+    "scored",
+    "scores",
+    "score",
+    "to score"
+   ],
+   "answer": 1,
+   "why": "팀이 점수를 얻는 능동의 뜻이고 목적어가 있으므로 현재분사 scoring이 알맞다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?  The chairs ____ in the hall were moved to the gym.",
+   "choices": [
+    "leaving",
+    "left",
+    "leave",
+    "leaves",
+    "to leave"
+   ],
+   "answer": 2,
+   "why": "의자는 남겨진 대상이므로 과거분사 left가 알맞다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?  The smoke ____ from the roof of that building was black.",
+   "choices": [
+    "risen",
+    "rise",
+    "rising",
+    "rises",
+    "rose"
+   ],
+   "answer": 3,
+   "why": "연기가 스스로 올라가는 능동의 뜻이므로 현재분사 rising이 알맞다. rise는 수동태로 쓰지 않아 risen은 명사를 수식할 수 없다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 할 때 빈칸에 알맞은 것은?  The man who is repairing the roof is my neighbor. → The man ____ the roof is my neighbor.",
+   "choices": [
+    "repaired",
+    "repairs",
+    "repair",
+    "repairing",
+    "to repair"
+   ],
+   "answer": 4,
+   "why": "주격 관계대명사 who와 be동사 is를 함께 생략하면 현재분사 repairing이 남는다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 할 때 빈칸에 알맞은 것은?  The novel which was recommended by my teacher was really moving. → The novel ____ by my teacher was really moving.",
+   "choices": [
+    "recommending",
+    "recommends",
+    "recommend",
+    "to recommend",
+    "recommended"
+   ],
+   "answer": 5,
+   "why": "which was를 생략하면 수동의 뜻을 나타내는 과거분사 recommended가 남는다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 할 때 빈칸에 알맞은 것은?  The boy who was chosen as the class president made a short speech. → The boy ____ as the class president made a short speech.",
+   "choices": [
+    "chosen",
+    "choosing",
+    "chose",
+    "choose",
+    "to choose"
+   ],
+   "answer": 1,
+   "why": "who was를 생략하면 과거분사 chosen이 남아 The boy를 뒤에서 수식한다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 할 때 빈칸에 알맞은 것은?  The students who are joining the camp should bring a sleeping bag. → The students ____ the camp should bring a sleeping bag.",
+   "choices": [
+    "joined",
+    "joining",
+    "join",
+    "joins",
+    "to join"
+   ],
+   "answer": 2,
+   "why": "who are를 생략하면 현재분사 joining이 남는다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 할 때 빈칸에 알맞은 것은?  The money which was collected at the concert was given to charity. → The money ____ at the concert was given to charity.",
+   "choices": [
+    "collecting",
+    "collects",
+    "collected",
+    "collect",
+    "to collect"
+   ],
+   "answer": 3,
+   "why": "which was를 생략하면 과거분사 collected가 남아 The money를 수식한다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 할 때 빈칸에 알맞은 것은?  The girl who is standing by the window is our new classmate. → The girl ____ by the window is our new classmate.",
+   "choices": [
+    "stood",
+    "stands",
+    "stand",
+    "standing",
+    "to stand"
+   ],
+   "answer": 4,
+   "why": "who is를 생략하면 현재분사 standing이 남는다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 할 때 빈칸에 알맞은 것은?  The animals which are kept in small cages often get sick. → The animals ____ in small cages often get sick.",
+   "choices": [
+    "keeping",
+    "keep",
+    "keeps",
+    "to keep",
+    "kept"
+   ],
+   "answer": 5,
+   "why": "which are를 생략하면 과거분사 kept가 남아 수동의 뜻을 나타낸다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 할 때 빈칸에 알맞은 것은?  The car which was parked in front of the store belongs to Mr. Han. → The car ____ in front of the store belongs to Mr. Han.",
+   "choices": [
+    "parked",
+    "parking",
+    "parks",
+    "park",
+    "to park"
+   ],
+   "answer": 1,
+   "why": "which was를 생략하면 과거분사 parked가 남는다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 [보기] 중 어법상 옳은 것은?",
+   "choices": [
+    "The girl talked with my brother is Suji.",
+    "The girl talking with my brother is Suji.",
+    "The girl talks with my brother is Suji.",
+    "The girl is talking with my brother is Suji.",
+    "The girl to talk with my brother is Suji."
+   ],
+   "answer": 2,
+   "why": "who is talking에서 who is를 생략한 형태가 옳다. 동사를 그대로 두면 한 문장에 동사가 두 개가 된다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 [보기] 중 어법상 틀린 것은?",
+   "choices": [
+    "The rice grown in this area is famous for its taste.",
+    "The visitors coming from abroad enjoyed the show.",
+    "The report finishing last night is on your desk.",
+    "The boy hiding behind the door was my little brother.",
+    "The bench painted green looks nice."
+   ],
+   "answer": 3,
+   "why": "보고서는 끝내진 대상이므로 finishing이 아니라 과거분사 finished를 써야 한다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "The speech giving by the principal was long.",
+    "The speech gave by the principal was long.",
+    "The speech give by the principal was long.",
+    "The speech given by the principal was long.",
+    "The speech gives by the principal was long."
+   ],
+   "answer": 4,
+   "why": "연설은 행해지는 대상이고 by가 뒤따르므로 과거분사 given이 옳다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은?",
+   "choices": [
+    "The woman sitting across from me smiled.",
+    "The letters delivered this morning are for you.",
+    "The dog barking at the stranger is ours.",
+    "The passengers waiting at gate 7 look worried.",
+    "The window cleaning by the workers looks bright."
+   ],
+   "answer": 5,
+   "why": "창문은 닦이는 대상이므로 cleaning이 아니라 과거분사 cleaned를 써야 한다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분을 생략할 수 <u>없는</u> 것은?",
+   "choices": [
+    "The girl <u>who</u> lives next door is very kind.",
+    "The boy <u>who is</u> playing the drums is my cousin.",
+    "The car <u>which was</u> washed yesterday is dirty again.",
+    "The pictures <u>which are</u> hanging on the wall are old.",
+    "The man <u>who is</u> wearing sunglasses is a famous actor."
+   ],
+   "answer": 1,
+   "why": "주격 관계대명사는 바로 뒤에 be동사가 있을 때만 함께 생략할 수 있다. lives는 일반동사이므로 who만 생략할 수 없다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 틀린 문장은?",
+   "choices": [
+    "There is a girl standing in the rain.",
+    "I saw a boy surrounding by his friends.",
+    "There were many books piled on the floor.",
+    "We found a puppy left alone in the box.",
+    "She has a bag filled with candies."
+   ],
+   "answer": 2,
+   "why": "소년은 둘러싸인 대상이므로 surrounding이 아니라 과거분사 surrounded를 써야 한다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 옳은 문장은?",
+   "choices": [
+    "Anyone want to join the club should call me.",
+    "Anyone wanted to join the club should call me.",
+    "Anyone wanting to join the club should call me.",
+    "Anyone wants to join the club should call me.",
+    "Anyone to wanting join the club should call me."
+   ],
+   "answer": 3,
+   "why": "who wants에 해당하는 능동의 뜻이므로 현재분사 wanting이 Anyone을 뒤에서 수식한다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 틀린 문장은?",
+   "choices": [
+    "The boy named Kevin is from Australia.",
+    "The students preparing for the contest stayed late.",
+    "The vegetables sold at this market are fresh.",
+    "The story telling by my grandmother was scary.",
+    "The song played at the ceremony moved us."
+   ],
+   "answer": 4,
+   "why": "이야기는 들려지는 대상이므로 telling이 아니라 과거분사 told를 써야 한다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 옳은 문장은?",
+   "choices": [
+    "The trees planting along the road are cherry trees.",
+    "The trees plant along the road are cherry trees.",
+    "The trees plants along the road are cherry trees.",
+    "The trees were planted along the road are cherry trees.",
+    "The trees planted along the road are cherry trees."
+   ],
+   "answer": 5,
+   "why": "나무는 심어진 대상이므로 과거분사 planted가 옳다. were planted를 그대로 쓰면 한 문장에 동사가 두 개가 되어 틀린다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "아래 문장 중 어법상 틀린 문장은?",
+   "choices": [
+    "The message leaving on my desk was from Mina.",
+    "Look at the leaves falling from the tree.",
+    "The leaves fallen on the ground are wet.",
+    "The boy laughing loudly is my brother.",
+    "The runners finishing the race got a medal."
+   ],
+   "answer": 1,
+   "why": "메시지는 남겨진 대상이므로 leaving이 아니라 과거분사 left를 써야 한다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  <u>The</u> man <u>standing</u> at the counter <u>is</u> holding a box <u>wrapping</u> in blue <u>paper</u>.",
+   "choices": [
+    "The",
+    "standing",
+    "is",
+    "wrapping",
+    "paper"
+   ],
+   "answer": 4,
+   "why": "상자는 포장된 대상이므로 wrapping이 아니라 과거분사 wrapped를 써야 한다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  <u>The</u> woman <u>talked</u> on the phone <u>is</u> the manager of the shop <u>located</u> near the <u>station</u>.",
+   "choices": [
+    "The",
+    "talked",
+    "is",
+    "located",
+    "station"
+   ],
+   "answer": 2,
+   "why": "여자가 통화하는 능동의 뜻이므로 talked가 아니라 현재분사 talking을 써야 한다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  <u>I</u> found my bike <u>parking</u> outside, but the tire <u>was</u> broken by someone <u>riding</u> it <u>yesterday</u>.",
+   "choices": [
+    "I",
+    "parking",
+    "was",
+    "riding",
+    "yesterday"
+   ],
+   "answer": 2,
+   "why": "자전거는 세워진 대상이므로 parking이 아니라 과거분사 parked를 써야 한다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  <u>The</u> students <u>invited</u> to the ceremony <u>sat</u> on the chairs <u>arranging</u> in a <u>circle</u>.",
+   "choices": [
+    "The",
+    "invited",
+    "sat",
+    "arranging",
+    "circle"
+   ],
+   "answer": 4,
+   "why": "의자는 배열된 대상이므로 arranging이 아니라 과거분사 arranged를 써야 한다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  <u>There</u> are many people <u>waited</u> for the concert to <u>start</u> in the hall <u>filled</u> with <u>music</u>.",
+   "choices": [
+    "There",
+    "waited",
+    "start",
+    "filled",
+    "music"
+   ],
+   "answer": 2,
+   "why": "사람들이 기다리는 능동의 뜻이므로 waited가 아니라 현재분사 waiting을 써야 한다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  우리 학교에서 찍은 사진들은 게시판에 있다.",
+   "choices": [
+    "The pictures taking at our school are on the board.",
+    "The pictures taken at our school are on the board.",
+    "The pictures took at our school are on the board.",
+    "The pictures take at our school are on the board.",
+    "The pictures are taken at our school are on the board."
+   ],
+   "answer": 2,
+   "why": "사진은 찍힌 대상이므로 과거분사 taken이 뒤에서 수식한다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  무대에서 노래하고 있는 저 소녀는 내 여동생이다.",
+   "choices": [
+    "That girl sings on the stage is my sister.",
+    "That girl sung on the stage is my sister.",
+    "That girl singing on the stage is my sister.",
+    "That girl is singing on the stage is my sister.",
+    "That girl sang on the stage is my sister."
+   ],
+   "answer": 3,
+   "why": "who is singing에서 who is를 생략한 현재분사구가 That girl을 뒤에서 수식한다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그 사고에서 다친 사람들은 병원으로 옮겨졌다.",
+   "choices": [
+    "The people hurting in the accident were taken to the hospital.",
+    "The people hurts in the accident were taken to the hospital.",
+    "The people to hurt in the accident were taken to the hospital.",
+    "The people hurt in the accident were taken to the hospital.",
+    "The people were hurt in the accident were taken to the hospital."
+   ],
+   "answer": 4,
+   "why": "사람들은 다친 대상이므로 과거분사 hurt가 뒤에서 수식한다. hurt는 과거분사도 형태가 같다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  이 도시에서 팔리는 대부분의 빵은 이 공장에서 만들어진다.",
+   "choices": [
+    "Most bread selling in this city is made in this factory.",
+    "Most bread sells in this city is made in this factory.",
+    "Most bread sell in this city is made in this factory.",
+    "Most bread to sell in this city is made in this factory.",
+    "Most bread sold in this city is made in this factory."
+   ],
+   "answer": 5,
+   "why": "빵은 팔리는 대상이므로 과거분사 sold가 알맞다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  문 옆에 서 있는 남자에게 물어보는 게 어때?",
+   "choices": [
+    "Why don't you ask the man standing by the door?",
+    "Why don't you ask the man stands by the door?",
+    "Why don't you ask the man stood by the door?",
+    "Why don't you ask the man stand by the door?",
+    "Why don't you ask the man is standing by the door?"
+   ],
+   "answer": 1,
+   "why": "who is standing에서 who is를 생략한 현재분사 standing이 the man을 뒤에서 수식한다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?  • The girl ____(A)____ a letter to her pen pal looks excited.  • The letter ____(B)____ in English took her two hours.",
+   "choices": [
+    "(A) writing - (B) writing",
+    "(A) writing - (B) written",
+    "(A) written - (B) written",
+    "(A) written - (B) writing",
+    "(A) wrote - (B) written"
+   ],
+   "answer": 2,
+   "why": "(A)는 소녀가 편지를 쓰는 능동이라 writing, (B)는 편지가 쓰이는 수동이라 written이다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말이 바르게 짝지어진 것은?  • Do you know the boy ____(A)____ the flag?  • The flag ____(B)____ by the boy is red and blue.",
+   "choices": [
+    "(A) holding - (B) holding",
+    "(A) held - (B) holding",
+    "(A) holding - (B) held",
+    "(A) hold - (B) held",
+    "(A) held - (B) held"
+   ],
+   "answer": 3,
+   "why": "(A)는 소년이 깃발을 든 능동이라 holding, (B)는 깃발이 들려 있는 수동이라 held이다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말로 알맞은 것은?  • The park ____ in 2010 is popular with families.  • The house ____ of wood keeps us warm.",
+   "choices": [
+    "building",
+    "builds",
+    "build",
+    "built",
+    "to build"
+   ],
+   "answer": 4,
+   "why": "두 문장 모두 '지어진'이라는 수동의 뜻이므로 과거분사 built가 공통으로 들어간다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ⓐ The letters sending to me were long.  ⓑ The girl waiting outside is my friend.  ⓒ The bag found in the park was empty.  ⓓ The man drove the bus is kind.  ⓔ The cake baked by Ann was sweet.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ⓑⓒⓔ가 옳다. ⓐ는 sent, ⓓ는 driving으로 고쳐야 하므로 옳은 문장은 3개이다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?  ⓐ The building damaged by the storm was closed.  ⓑ The people lived in this town are friendly.  ⓒ The boy carried a box smiled at me.  ⓓ The music playing in the café was jazz.  ⓔ The window broken last night was fixed.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ⓑ는 living, ⓒ는 carrying으로 고쳐야 하므로 틀린 문장은 2개이다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ⓐ The boy sitting on the bench is reading a comic book.  ⓑ The room cleaned by the students looks great.  ⓒ The girl wearing a blue uniform won the race.  ⓓ The story told by the old man was interesting.  ⓔ The dog chasing by the cat ran away.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "ⓔ만 chased로 고쳐야 하므로 옳은 문장은 4개이다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 한 단어로 쓰시오.  The woman (interview) on TV yesterday is a famous scientist.",
+   "answer": "interviewed",
+   "alt": [],
+   "why": "여자는 인터뷰를 당한 대상(수동)이므로 과거분사 interviewed로 쓴다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 한 단어로 쓰시오.  The boy (hold) a big umbrella walked toward us.",
+   "answer": "holding",
+   "alt": [],
+   "why": "소년이 우산을 들고 있는 능동의 뜻이고 목적어가 있으므로 현재분사 holding으로 쓴다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 한 단어로 쓰시오.  Most of the questions (ask) by the reporters were difficult.",
+   "answer": "asked",
+   "alt": [],
+   "why": "질문은 물어진 대상이고 by가 뒤따르므로 과거분사 asked로 쓴다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 한 단어로 쓰시오.  The people (wait) in line looked tired.",
+   "answer": "waiting",
+   "alt": [],
+   "why": "사람들이 기다리는 능동의 뜻이므로 현재분사 waiting으로 쓴다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 한 단어로 쓰시오.  The letter (write) in old Korean was hard to read.",
+   "answer": "written",
+   "alt": [],
+   "why": "편지는 쓰여진 대상이므로 과거분사 written으로 쓴다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 한 단어로 쓰시오.  A boy (name) Chris moved into our class.",
+   "answer": "named",
+   "alt": [],
+   "why": "소년은 Chris라고 이름 붙여진 대상이므로 과거분사 named로 쓴다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 한 단어로 쓰시오.  The girl (cross) the street is my neighbor.",
+   "answer": "crossing",
+   "alt": [],
+   "why": "소녀가 길을 건너는 능동의 뜻이므로 현재분사 crossing으로 쓴다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 한 단어로 쓰시오.  The tools (use) by the workers were very old.",
+   "answer": "used",
+   "alt": [],
+   "why": "도구는 사용되는 대상이므로 과거분사 used로 쓴다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 관계대명사와 be동사를 생략하여 문장을 다시 쓰시오.  The boy who is running along the river is my cousin.",
+   "answer": "The boy running along the river is my cousin.",
+   "alt": [
+    "The boy running along the river is my cousin"
+   ],
+   "why": "who is를 생략하면 현재분사구 running along the river가 The boy를 뒤에서 수식한다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 관계대명사와 be동사를 생략하여 문장을 다시 쓰시오.  The paintings which were made by the students are on the wall.",
+   "answer": "The paintings made by the students are on the wall.",
+   "alt": [
+    "The paintings made by the students are on the wall"
+   ],
+   "why": "which were를 생략하면 과거분사구 made by the students가 남는다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장에서 관계대명사와 be동사를 생략하여 문장을 다시 쓰시오.  The woman who is holding a baby is my aunt.",
+   "answer": "The woman holding a baby is my aunt.",
+   "alt": [
+    "The woman holding a baby is my aunt"
+   ],
+   "why": "who is를 생략하면 현재분사구 holding a baby가 The woman을 수식한다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 관계대명사절을 분사구로 바꿔 문장 전체를 다시 쓰시오.  The man <u>who lives next door</u> is a firefighter.",
+   "answer": "The man living next door is a firefighter.",
+   "alt": [
+    "The man living next door is a firefighter"
+   ],
+   "why": "일반동사 lives는 be동사가 없어 who만 생략할 수 없으므로 현재분사 living으로 바꾼다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 관계대명사절을 분사구로 바꿔 문장 전체를 다시 쓰시오.  The children <u>who study in this school</u> wear uniforms.",
+   "answer": "The children studying in this school wear uniforms.",
+   "alt": [
+    "The children studying in this school wear uniforms"
+   ],
+   "why": "who study를 현재분사 studying으로 바꾸면 명사를 뒤에서 수식하는 분사구가 된다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 관계대명사절을 분사구로 바꿔 문장 전체를 다시 쓰시오.  The bus <u>which goes to the airport</u> leaves at six.",
+   "answer": "The bus going to the airport leaves at six.",
+   "alt": [
+    "The bus going to the airport leaves at six"
+   ],
+   "why": "which goes를 현재분사 going으로 바꿔 The bus를 뒤에서 수식하게 한다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  The report <u>writing</u> by our group won the first prize.",
+   "answer": "written",
+   "alt": [],
+   "why": "보고서는 쓰여진 대상이므로 과거분사 written으로 고친다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  The people <u>invite</u> to the party arrived early.",
+   "answer": "invited",
+   "alt": [],
+   "why": "사람들은 초대받은 대상이므로 과거분사 invited로 고친다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  The girl <u>talked</u> with the teacher is our class president.",
+   "answer": "talking",
+   "alt": [],
+   "why": "소녀가 이야기하는 능동의 뜻이므로 현재분사 talking으로 고친다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  I still keep the letters <u>sending</u> by my old friend.",
+   "answer": "sent",
+   "alt": [],
+   "why": "편지는 보내진 대상이므로 과거분사 sent로 고친다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  The bench <u>painting</u> yesterday is still wet.",
+   "answer": "painted",
+   "alt": [],
+   "why": "벤치는 칠해진 대상이므로 과거분사 painted로 고친다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  There were many students <u>waited</u> for the bus.",
+   "answer": "waiting",
+   "alt": [],
+   "why": "학생들이 기다리는 능동의 뜻이므로 현재분사 waiting으로 고친다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?  The man (A)[standing / stood] by the gate is the owner of the shop (B)[opened / opening] last month, and the sign (C)[written / writing] in gold letters is his own work.",
+   "choices": [
+    "(A) standing - (B) opening - (C) writing",
+    "(A) stood - (B) opened - (C) written",
+    "(A) standing - (B) opened - (C) writing",
+    "(A) stood - (B) opening - (C) written",
+    "(A) standing - (B) opened - (C) written"
+   ],
+   "answer": 5,
+   "why": "(A) 남자가 서 있는 능동이므로 standing, (B) 가게는 문을 열게 된 대상이므로 opened, (C) 간판은 쓰여진 대상이므로 written이다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?  The students (A)[selected / selecting] for the program will meet the professor (B)[invited / inviting] from abroad, and the papers (C)[submitted / submitting] by them will be reviewed first.",
+   "choices": [
+    "(A) selected - (B) invited - (C) submitted",
+    "(A) selecting - (B) invited - (C) submitted",
+    "(A) selected - (B) inviting - (C) submitting",
+    "(A) selecting - (B) inviting - (C) submitted",
+    "(A) selected - (B) invited - (C) submitting"
+   ],
+   "answer": 1,
+   "why": "학생은 선발되고, 교수는 초청받고, 논문은 제출되는 대상이므로 세 자리 모두 수동을 나타내는 과거분사를 쓴다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?  Anyone (A)[wishing / wished] to join the trip must fill out the form (B)[attaching / attached] to this email before the deadline (C)[setting / set] by the office.",
+   "choices": [
+    "(A) wished - (B) attached - (C) set",
+    "(A) wishing - (B) attached - (C) set",
+    "(A) wishing - (B) attaching - (C) setting",
+    "(A) wishing - (B) attaching - (C) set",
+    "(A) wished - (B) attaching - (C) setting"
+   ],
+   "answer": 2,
+   "why": "(A) 사람이 원하는 능동이므로 wishing, (B) 양식은 첨부된 대상이므로 attached, (C) 마감일은 정해진 대상이므로 set이다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?  The novel (A)[based / basing] on a true story tells about a soldier (B)[leaving / left] alone on an island and a nurse (C)[taking / taken] care of him.",
+   "choices": [
+    "(A) basing - (B) left - (C) taking",
+    "(A) based - (B) leaving - (C) taken",
+    "(A) based - (B) left - (C) taking",
+    "(A) basing - (B) leaving - (C) taking",
+    "(A) based - (B) left - (C) taken"
+   ],
+   "answer": 3,
+   "why": "소설은 실화에 바탕을 둔 대상(based), 군인은 홀로 남겨진 대상(left), 간호사는 그를 돌보는 주체(taking)이다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)의 각 네모 안에서 어법에 맞는 표현으로 가장 적절한 것은?  The number of people (A)[visiting / visited] the museum (B)[built / building] last year has increased, and most of the works (C)[displaying / displayed] there are by local artists.",
+   "choices": [
+    "(A) visited - (B) built - (C) displayed",
+    "(A) visiting - (B) building - (C) displaying",
+    "(A) visiting - (B) built - (C) displaying",
+    "(A) visiting - (B) built - (C) displayed",
+    "(A) visited - (B) building - (C) displayed"
+   ],
+   "answer": 4,
+   "why": "사람들은 박물관을 방문하는 주체(visiting), 박물관은 지어진 대상(built), 작품은 전시되는 대상(displayed)이다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 [보기] 중 어법상 옳은 것끼리 바르게 짝지은 것은?  ㄱ. The girl chosen as the leader is only fifteen.  ㄴ. The men repairing the road wore yellow vests.  ㄷ. The book putting on the shelf is mine.  ㄹ. The soup cooking on the stove smells great.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄹ",
+    "ㄴ, ㄷ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "ㄷ은 책이 놓인 대상이므로 putting을 put으로 고쳐야 한다. 나머지는 능동·수동이 바르게 쓰였다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 [보기] 중 어법상 옳은 것끼리 바르게 짝지은 것은?  ㄱ. The passengers waiting for the delayed flight complained.  ㄴ. The messages sending to my phone were all ads.  ㄷ. The animals kept in the zoo look bored.  ㄹ. The tourists visiting the temple took many photos.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄹ"
+   ],
+   "answer": 3,
+   "why": "ㄴ은 메시지가 보내진 대상이므로 sending을 sent로 고쳐야 한다. 나머지 셋은 모두 옳다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 [보기] 중 어법상 틀린 것끼리 바르게 짝지은 것은?  ㄱ. The bread baking in the oven smells sweet.  ㄴ. The child rescuing from the river was fine.  ㄷ. The poem read by the students was written in 1920.  ㄹ. The car repairing by the mechanic is mine.  ㅁ. The house sold last month was very old.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㅁ",
+    "ㄱ, ㄹ",
+    "ㄴ, ㅁ"
+   ],
+   "answer": 2,
+   "why": "ㄴ은 rescued, ㄹ은 repaired가 되어야 한다. 둘 다 명사가 동작을 받는 수동 관계이다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 [보기] 중 어법상 틀린 것끼리 바르게 짝지은 것은?  ㄱ. There is a girl waiting for you at the door.  ㄴ. I saw a wallet lying on the floor.  ㄷ. The students taught by Mr. Kim passed the exam.  ㄹ. The window breaking by the storm was replaced.  ㅁ. The topic discussing at the meeting was important.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ",
+    "ㄹ, ㅁ",
+    "ㄱ, ㅁ"
+   ],
+   "answer": 4,
+   "why": "ㄹ은 broken, ㅁ은 discussed가 되어야 한다. 창문과 주제는 모두 동작을 받는 대상이다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분을 생략할 수 있는 문장끼리 바르게 짝지은 것은?  ㄱ. The boy <u>who is</u> wearing a helmet is my brother.  ㄴ. The man <u>who</u> teaches us math is very funny.  ㄷ. The song <u>which was</u> played at the party was old.  ㄹ. The girl <u>who</u> won the contest is only ten.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "주격 관계대명사는 바로 뒤에 be동사가 올 때만 함께 생략할 수 있다. ㄴ, ㄹ은 일반동사가 이어져 생략할 수 없다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "아래 문장 중 어법상 옳은 문장은?",
+   "choices": [
+    "The number of students taken the online course is growing.",
+    "The number of students take the online course is growing.",
+    "The number of students taking the online course are growing.",
+    "The number of students took the online course is growing.",
+    "The number of students taking the online course is growing."
+   ],
+   "answer": 5,
+   "why": "학생들이 강좌를 듣는 능동이므로 taking이 옳고, 주어는 The number이므로 단수 동사 is를 쓴다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 [보기] 중 어법상 틀린 문장은?",
+   "choices": [
+    "The rules following by everyone make the class better.",
+    "The road connecting the two villages was closed by the flood.",
+    "The medicine developed by the company saved many lives.",
+    "The girl seated next to me on the plane was a pilot.",
+    "The workers building the tower are from many countries."
+   ],
+   "answer": 1,
+   "why": "규칙은 지켜지는 대상이므로 following이 아니라 과거분사 followed를 써야 한다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 [보기] 중 어법상 옳은 문장은?",
+   "choices": [
+    "We visited a village surrounding by high mountains.",
+    "We visited a village surrounded by high mountains.",
+    "We visited a village surrounds by high mountains.",
+    "We visited a village was surrounded by high mountains.",
+    "We visited a village surround by high mountains."
+   ],
+   "answer": 2,
+   "why": "마을은 산에 둘러싸인 대상이므로 과거분사 surrounded가 옳다. ④는 한 문장에 동사가 두 개가 된다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞지 않는 것은?",
+   "choices": [
+    "Look at the boy and his dog running across the field.",
+    "The email attached to this message contains the schedule.",
+    "The chairs breaking during the concert were thrown away.",
+    "The scientist discovering the new planet will get a prize.",
+    "The students preparing for the play stayed after school."
+   ],
+   "answer": 3,
+   "why": "의자는 부서진 대상이므로 breaking이 아니라 과거분사 broken을 써야 한다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 분사를 이용해 바르게 바꿔 쓴 것은?  I have a friend who works at a hospital in Seoul.",
+   "choices": [
+    "I have a friend worked at a hospital in Seoul.",
+    "I have a friend work at a hospital in Seoul.",
+    "I have a friend works at a hospital in Seoul.",
+    "I have a friend working at a hospital in Seoul.",
+    "I have a friend is working at a hospital in Seoul."
+   ],
+   "answer": 4,
+   "why": "일반동사 works는 be동사가 없어 who만 생략할 수 없으므로 현재분사 working으로 바꿔야 한다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 분사를 이용해 바르게 바꿔 쓴 것은?  The letters which were kept in the old box were from my grandfather.",
+   "choices": [
+    "The letters keeping in the old box were from my grandfather.",
+    "The letters keep in the old box were from my grandfather.",
+    "The letters were kept in the old box were from my grandfather.",
+    "The letters to keep in the old box were from my grandfather.",
+    "The letters kept in the old box were from my grandfather."
+   ],
+   "answer": 5,
+   "why": "which were를 생략하면 과거분사 kept가 남아 The letters를 뒤에서 수식하고, 문장의 동사는 were이다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장 중 어법에 맞지 않는 것은?",
+   "choices": [
+    "The building designing by a famous architect opened last week.",
+    "The girl standing on the corner is selling flowers grown in her garden.",
+    "The man arrested by the police yesterday was released today.",
+    "The words spoken by the president gave people hope.",
+    "The kids playing in the yard didn't hear the bell."
+   ],
+   "answer": 1,
+   "why": "건물은 설계된 대상이므로 designing이 아니라 과거분사 designed를 써야 한다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 분사의 성격이 나머지 넷과 <u>다른</u> 것은?",
+   "choices": [
+    "The girl <u>waving</u> at us is my sister.",
+    "The train <u>arriving</u> at platform 2 goes to Daejeon.",
+    "The people <u>living</u> in that town are farmers.",
+    "The cake <u>decorated</u> with fruit looks delicious.",
+    "The man <u>carrying</u> a guitar is a street musician."
+   ],
+   "answer": 4,
+   "why": "④는 수동의 뜻을 나타내는 과거분사이고, 나머지는 모두 능동·진행의 뜻을 나타내는 현재분사이다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분의 쓰임이 [보기]와 같은 것은?  [보기] The boy <u>talking</u> to the teacher is my classmate.",
+   "choices": [
+    "<u>Talking</u> to your family every day is important.",
+    "The girl <u>reading</u> a comic book laughed out loud.",
+    "My hobby is <u>collecting</u> old coins.",
+    "She is <u>waiting</u> for the results.",
+    "He kept <u>asking</u> the same question."
+   ],
+   "answer": 2,
+   "why": "[보기]는 명사를 뒤에서 수식하는 현재분사이다. ②도 같은 쓰임이며 ①③⑤는 동명사, ④는 진행형이다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법에 맞지 않는 것은?",
+   "choices": [
+    "I know the woman whose son is playing the violin.",
+    "The people who is waiting outside are our guests.",
+    "The bicycle repaired by my father works well now.",
+    "The message left on my desk was from the principal.",
+    "The boy standing behind the door surprised everyone."
+   ],
+   "answer": 2,
+   "why": "선행사 The people이 복수이므로 who is가 아니라 who are를 써야 하며, 이때 who are를 생략해 waiting만 남길 수도 있다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  <u>The</u> woman <u>sitting</u> in the corner of the café <u>was</u> reading a novel <u>translating</u> into ten <u>languages</u>.",
+   "choices": [
+    "The",
+    "sitting",
+    "was",
+    "translating",
+    "languages"
+   ],
+   "answer": 4,
+   "why": "소설은 번역된 대상이므로 translating이 아니라 과거분사 translated를 써야 한다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  <u>Every</u> student <u>taking</u> part in the contest <u>have</u> to submit a report <u>written</u> in <u>English</u>.",
+   "choices": [
+    "Every",
+    "taking",
+    "have",
+    "written",
+    "English"
+   ],
+   "answer": 3,
+   "why": "주어가 Every student로 단수이므로 have가 아니라 has를 써야 한다. 분사 taking과 written의 쓰임은 옳다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  <u>A</u> boy <u>naming</u> Daniel gave me a box <u>filled</u> with letters <u>written</u> by his <u>grandmother</u>.",
+   "choices": [
+    "A",
+    "naming",
+    "filled",
+    "written",
+    "grandmother"
+   ],
+   "answer": 2,
+   "why": "소년은 Daniel이라고 불리는 대상이므로 naming이 아니라 과거분사 named를 써야 한다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  <u>Most</u> of the toys <u>donated</u> to the center <u>were</u> made by volunteers <u>work</u> at the shop <u>nearby</u>.",
+   "choices": [
+    "Most",
+    "donated",
+    "were",
+    "work",
+    "nearby"
+   ],
+   "answer": 4,
+   "why": "자원봉사자들이 일하는 능동의 뜻으로 명사를 수식해야 하므로 work를 현재분사 working으로 고쳐야 한다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  <u>The</u> team <u>led</u> by Coach Park <u>beat</u> the team <u>trained</u> in Spain, and everyone <u>cheer</u> loudly.",
+   "choices": [
+    "The",
+    "led",
+    "beat",
+    "trained",
+    "cheer"
+   ],
+   "answer": 5,
+   "why": "앞의 beat가 과거시제이므로 등위절의 동사도 과거형 cheered여야 한다. led와 trained는 수동의 과거분사로 옳다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  <u>People</u> <u>living</u> near the airport often complain about the noise <u>make</u> by the planes <u>flying</u> over their <u>houses</u>.",
+   "choices": [
+    "People",
+    "living",
+    "make",
+    "flying",
+    "houses"
+   ],
+   "answer": 3,
+   "why": "소음은 비행기에 의해 만들어지는 대상이므로 make를 과거분사 made로 고쳐야 한다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  <u>The</u> painting <u>stolen</u> from the museum <u>was</u> found in a house <u>locating</u> near the <u>river</u>.",
+   "choices": [
+    "The",
+    "stolen",
+    "was",
+    "locating",
+    "river"
+   ],
+   "answer": 4,
+   "why": "집은 위치해 있는 것을 나타내므로 locating이 아니라 be located의 과거분사 located를 써야 한다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  <u>Students</u> <u>who are</u> arriving late must sign the paper <u>placing</u> at the <u>entrance</u> <u>today</u>.",
+   "choices": [
+    "Students",
+    "who are",
+    "arriving",
+    "placing",
+    "today"
+   ],
+   "answer": 4,
+   "why": "종이는 놓인 대상이므로 placing이 아니라 과거분사 placed를 써야 한다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?  Scientists are studying the ice ____ faster and faster in the North Pole.",
+   "choices": [
+    "melted",
+    "melt",
+    "melting",
+    "melts",
+    "to melt"
+   ],
+   "answer": 3,
+   "why": "얼음이 점점 빠르게 녹고 있다는 능동·진행의 뜻이므로 현재분사 melting이 알맞다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?  The company will replace all the products ____ during delivery.",
+   "choices": [
+    "damaging",
+    "damages",
+    "damage",
+    "damaged",
+    "to damage"
+   ],
+   "answer": 4,
+   "why": "제품은 손상을 입은 대상이므로 과거분사 damaged가 알맞다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?  The man ____ next to me on the bus fell asleep on my shoulder.",
+   "choices": [
+    "sat",
+    "sits",
+    "sit",
+    "to sit",
+    "sitting"
+   ],
+   "answer": 5,
+   "why": "남자가 앉아 있는 능동의 뜻이므로 현재분사 sitting이 알맞다. 문장의 동사는 fell이다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?  Students ____ in the debate contest should arrive by 9 a.m.",
+   "choices": [
+    "participating",
+    "participated",
+    "participate",
+    "participates",
+    "to participate"
+   ],
+   "answer": 1,
+   "why": "학생들이 참가하는 능동의 뜻이므로 현재분사 participating이 알맞다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?  The bridge ____ the island to the mainland was destroyed by the typhoon.",
+   "choices": [
+    "connected",
+    "connecting",
+    "connects",
+    "connect",
+    "to connect"
+   ],
+   "answer": 2,
+   "why": "다리가 섬과 육지를 잇는 능동의 뜻이고 뒤에 목적어가 있으므로 현재분사 connecting이 알맞다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?  All the food ____ at the charity market was cooked by parents.",
+   "choices": [
+    "selling",
+    "sells",
+    "sold",
+    "sell",
+    "to sell"
+   ],
+   "answer": 3,
+   "why": "음식은 팔리는 대상이므로 과거분사 sold가 알맞다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?  The child ____ alone in the dark room started to cry.",
+   "choices": [
+    "leaving",
+    "leaves",
+    "leave",
+    "left",
+    "to leave"
+   ],
+   "answer": 4,
+   "why": "아이는 홀로 남겨진 대상이므로 과거분사 left가 알맞다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?  Any student ____ to take the special test must bring a pencil.",
+   "choices": [
+    "wanted",
+    "want",
+    "wants",
+    "to want",
+    "wanting"
+   ],
+   "answer": 5,
+   "why": "학생이 원하는 능동의 뜻이므로 현재분사 wanting이 알맞다. who wants를 분사로 바꾼 형태이다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ⓐ The girl chosen for the role is nervous.  ⓑ The tools using by the artist are simple.  ⓒ The path leading to the temple is steep.  ⓓ The house painting last week looks new.  ⓔ The letters mailed on Monday arrived today.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ⓑ는 used, ⓓ는 painted로 고쳐야 하므로 옳은 문장은 ⓐⓒⓔ 3개이다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?  ⓐ The man interviewed on the radio is a writer.  ⓑ The students joining the club must pay a fee.  ⓒ The windows cleaned by the workers shine brightly.  ⓓ The bags leaving on the bus were returned.  ⓔ The girl who standing there is my cousin.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ⓓ는 left, ⓔ는 who is standing 또는 standing으로 고쳐야 하므로 틀린 문장은 2개이다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분을 생략할 수 있는 문장의 개수는?  ⓐ The boy <u>who is</u> holding the flag is Minsu.  ⓑ The girl <u>who</u> sings in the choir is my sister.  ⓒ The cake <u>which was</u> made by Jane was sweet.  ⓓ The man <u>who</u> called me was a reporter.  ⓔ The chairs <u>which are</u> placed outside are wet.  ⓕ The dog <u>which is</u> barking outside is hungry.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "주격 관계대명사는 바로 뒤에 be동사가 있을 때만 함께 생략할 수 있으므로 ⓐⓒⓔⓕ 4개가 가능하다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ⓐ There were a lot of people gathered in the square.  ⓑ I found my name written on the list.  ⓒ The boy wearing glasses is taller than me.  ⓓ The soup cooking on the stove is almost ready.  ⓔ The car parked in the garage is new.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 5,
+   "why": "다섯 문장 모두 능동은 현재분사, 수동은 과거분사로 바르게 쓰였다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?  ⓐ The man standing over there is my uncle.  ⓑ The books arranged on the shelf are new.  ⓒ The girl invited to the party didn't come.  ⓓ The noise coming from upstairs woke me up.  ⓔ The window opening by the wind made a loud sound.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 1,
+   "why": "ⓔ만 틀렸다. 창문은 바람에 의해 열린 대상이므로 opening을 opened로 고쳐야 한다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  지난주에 도난당한 자전거가 공원에서 발견되었다.",
+   "choices": [
+    "The bike stolen last week was found in the park.",
+    "The bike stealing last week was found in the park.",
+    "The bike stole last week was found in the park.",
+    "The bike was stolen last week was found in the park.",
+    "The bike steals last week was found in the park."
+   ],
+   "answer": 1,
+   "why": "자전거는 도난당한 대상이므로 과거분사 stolen이 뒤에서 수식하고, 문장의 동사는 was found이다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그 회의에서 논의된 문제들은 매우 심각했다.",
+   "choices": [
+    "The problems discussing at the meeting were very serious.",
+    "The problems discussed at the meeting were very serious.",
+    "The problems discuss at the meeting were very serious.",
+    "The problems were discussed at the meeting were very serious.",
+    "The problems to discuss at the meeting were very serious."
+   ],
+   "answer": 2,
+   "why": "문제들은 논의된 대상이므로 과거분사 discussed를 쓴다. ④는 동사가 두 개가 되어 틀린다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  나무 아래에서 책을 읽고 있는 소녀가 내 여동생이다.",
+   "choices": [
+    "The girl read a book under the tree is my sister.",
+    "The girl reads a book under the tree is my sister.",
+    "The girl reading a book under the tree is my sister.",
+    "The girl is reading a book under the tree is my sister.",
+    "The girl to read a book under the tree is my sister."
+   ],
+   "answer": 3,
+   "why": "who is reading에서 who is를 생략한 현재분사구가 The girl을 뒤에서 수식한다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그들은 눈으로 덮인 산을 올랐다.",
+   "choices": [
+    "They climbed a mountain covering with snow.",
+    "They climbed a mountain covers with snow.",
+    "They climbed a mountain cover with snow.",
+    "They climbed a mountain covered with snow.",
+    "They climbed a mountain was covered with snow."
+   ],
+   "answer": 4,
+   "why": "산은 눈에 덮인 대상이므로 과거분사 covered를 쓴다. be covered with의 분사형이다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  우리 학교에서 영어를 가르치시는 선생님은 캐나다 출신이다.",
+   "choices": [
+    "The teacher teaches English at our school is from Canada.",
+    "The teacher taught English at our school is from Canada.",
+    "The teacher is teaching English at our school is from Canada.",
+    "The teacher to teach English at our school is from Canada.",
+    "The teacher teaching English at our school is from Canada."
+   ],
+   "answer": 5,
+   "why": "who teaches를 분사로 바꾼 현재분사구 teaching English at our school이 The teacher를 뒤에서 수식한다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장을 분사를 이용하여 한 문장으로 쓰시오.  The boy is my brother. He is playing badminton in the yard.",
+   "answer": "The boy playing badminton in the yard is my brother.",
+   "alt": [
+    "The boy playing badminton in the yard is my brother"
+   ],
+   "why": "who is playing에서 who is를 생략한 현재분사구가 The boy를 뒤에서 수식하도록 합친다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장을 분사를 이용하여 한 문장으로 쓰시오.  The novel became a world best seller. It was written by a Korean author.",
+   "answer": "The novel written by a Korean author became a world best seller.",
+   "alt": [
+    "The novel written by a Korean author became a world best seller"
+   ],
+   "why": "소설은 쓰여진 대상이므로 과거분사구 written by a Korean author가 The novel을 뒤에서 수식한다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장을 분사를 이용하여 한 문장으로 쓰시오.  The girl won the first prize. She is wearing a blue dress.",
+   "answer": "The girl wearing a blue dress won the first prize.",
+   "alt": [
+    "The girl wearing a blue dress won the first prize"
+   ],
+   "why": "who is wearing에서 who is를 생략하면 현재분사구가 The girl을 수식한다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 생략할 수 있는 부분을 찾아 쓰시오.  The girl who is wearing a red scarf is my cousin.",
+   "answer": "who is",
+   "alt": [],
+   "why": "주격 관계대명사 who와 바로 뒤의 be동사 is는 함께 생략할 수 있다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 관계대명사와 be동사를 생략하여 문장을 다시 쓰시오.  The man who is standing at the entrance is a security guard.",
+   "answer": "The man standing at the entrance is a security guard.",
+   "alt": [
+    "The man standing at the entrance is a security guard"
+   ],
+   "why": "who is를 생략하면 현재분사구 standing at the entrance가 The man을 수식한다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 관계대명사와 be동사를 생략하여 문장을 다시 쓰시오.  The scientists who are studying climate change met in Paris.",
+   "answer": "The scientists studying climate change met in Paris.",
+   "alt": [
+    "The scientists studying climate change met in Paris"
+   ],
+   "why": "who are를 생략하면 현재분사구가 The scientists를 뒤에서 수식하고 문장의 동사는 met이다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 관계대명사와 be동사를 생략하여 문장을 다시 쓰시오.  The letter which was delivered this morning is on the desk.",
+   "answer": "The letter delivered this morning is on the desk.",
+   "alt": [
+    "The letter delivered this morning is on the desk"
+   ],
+   "why": "which was를 생략하면 과거분사구 delivered this morning이 The letter를 수식한다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 관계대명사를 사용한 문장으로 바꿔 쓰시오. (who를 쓸 것)  The girl waving at us is my sister.",
+   "answer": "The girl who is waving at us is my sister.",
+   "alt": [
+    "The girl who is waving at us is my sister"
+   ],
+   "why": "명사를 뒤에서 수식하는 현재분사 앞에 생략된 who is를 되살리면 된다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 관계대명사를 사용한 문장으로 바꿔 쓰시오. (which를 쓸 것)  The pictures taken by my father are in this album.",
+   "answer": "The pictures which were taken by my father are in this album.",
+   "alt": [
+    "The pictures which were taken by my father are in this album"
+   ],
+   "why": "과거분사구 앞에 생략된 which were를 되살린다. 주절의 동사가 현재이지만 사진을 찍은 것은 과거의 일이므로 were를 쓴다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  The bags <u>leaving</u> in the classroom were taken to the office.",
+   "answer": "left",
+   "alt": [],
+   "why": "가방은 남겨진 대상이므로 과거분사 left로 고친다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  The tower <u>building</u> in 1889 is still the symbol of Paris.",
+   "answer": "built",
+   "alt": [],
+   "why": "탑은 지어진 대상이므로 과거분사 built로 고친다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  The people <u>waited</u> in the long line looked angry.",
+   "answer": "waiting",
+   "alt": [],
+   "why": "사람들이 기다리는 능동의 뜻이므로 현재분사 waiting으로 고친다. 문장의 동사는 looked이다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  I don't know the man <u>talked</u> to my mother in the hall.",
+   "answer": "talking",
+   "alt": [],
+   "why": "남자가 이야기하는 능동의 뜻이므로 현재분사 talking으로 고친다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  The rules <u>following</u> by all the members keep the club safe.",
+   "answer": "followed",
+   "alt": [],
+   "why": "규칙은 지켜지는 대상이므로 과거분사 followed로 고친다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오. (한 단어로 쓸 것)  The song singing by the children made everyone smile.",
+   "answer": "sung",
+   "alt": [],
+   "why": "노래는 불려지는 대상이므로 singing을 과거분사 sung으로 고쳐야 한다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고쳐 쓰시오. (한 단어로 쓸 것)  The book wrote in simple English is good for beginners.",
+   "answer": "written",
+   "alt": [],
+   "why": "책은 쓰여진 대상이므로 과거형 wrote를 과거분사 written으로 고쳐야 한다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같은 뜻이 되도록 괄호 안의 동사를 알맞은 형태로 바꿔 한 단어로 쓰시오.  프랑스에서 만들어진 그 시계는 매우 비싸다.  The watch (make) in France is very expensive.",
+   "answer": "made",
+   "alt": [],
+   "why": "시계는 만들어진 대상이므로 과거분사 made로 쓴다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같은 뜻이 되도록 괄호 안의 동사를 알맞은 형태로 바꿔 한 단어로 쓰시오.  그 지진으로 파괴된 마을은 다시 지어졌다.  The town (destroy) by the earthquake was rebuilt.",
+   "answer": "destroyed",
+   "alt": [],
+   "why": "마을은 파괴된 대상이므로 과거분사 destroyed로 쓴다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "[조건]에 맞게 우리말을 영작하시오. (분사구를 사용하고, 주어진 표현을 순서대로 활용할 것)  벤치에 앉아 있는 그 소년은 내 남동생이다. (the boy, sit, on the bench, my brother)",
+   "answer": "The boy sitting on the bench is my brother.",
+   "alt": [
+    "The boy sitting on the bench is my brother"
+   ],
+   "why": "who is sitting에서 who is를 생략한 현재분사구가 The boy를 뒤에서 수식한다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "[조건]에 맞게 우리말을 영작하시오. (분사구를 사용하고, 주어진 표현을 순서대로 활용할 것)  그의 아버지에 의해 지어진 그 집은 100년이 되었다. (the house, build, by his father, 100 years old)",
+   "answer": "The house built by his father is 100 years old.",
+   "alt": [
+    "The house built by his father is 100 years old"
+   ],
+   "why": "집은 지어진 대상이므로 과거분사구 built by his father가 The house를 뒤에서 수식한다.",
+   "no": 200
+  }
+ ]
+}

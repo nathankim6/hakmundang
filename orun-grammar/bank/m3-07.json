@@ -1,0 +1,2685 @@
+{
+ "id": "m3-07",
+ "grade": "중3",
+ "name": "관계부사",
+ "points": [
+  "when/where/why/how",
+  "전치사+관계대명사로 전환",
+  "the way how 불가·선행사 생략"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Sunday is the day ____ I visit my grandparents.",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "what"
+   ],
+   "answer": 1,
+   "why": "선행사 the day가 시간을 나타내고 뒤에 완전한 절이 오므로 관계부사 when을 쓴다. where는 장소, why는 이유 선행사에 쓴다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "This is the house ____ my uncle lives.",
+   "choices": [
+    "when",
+    "which",
+    "where",
+    "why",
+    "how"
+   ],
+   "answer": 3,
+   "why": "선행사 the house가 장소이고 뒤에 완전한 절(my uncle lives)이 오므로 관계부사 where를 쓴다. 관계대명사 which 뒤에는 빠진 자리가 있는 불완전한 절이 와야 한다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Tell me the reason ____ you were late.",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "what"
+   ],
+   "answer": 3,
+   "why": "선행사 the reason이 이유를 나타내므로 관계부사 why를 쓴다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I want to know ____ she made this cake. (그녀가 이 케이크를 만든 방법)",
+   "choices": [
+    "how",
+    "where",
+    "when",
+    "why",
+    "which"
+   ],
+   "answer": 1,
+   "why": "'~하는 방법'이라는 명사절은 관계부사 how가 이끈다. why를 쓰면 '만든 이유'가 되어 뜻이 달라진다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Spring is the season ____ many flowers bloom.",
+   "choices": [
+    "where",
+    "when",
+    "why",
+    "how",
+    "what"
+   ],
+   "answer": 2,
+   "why": "선행사 the season이 시간을 나타내므로 관계부사 when을 쓴다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "That is the shop ____ I bought my shoes.",
+   "choices": [
+    "when",
+    "why",
+    "how",
+    "where",
+    "what"
+   ],
+   "answer": 4,
+   "why": "선행사 the shop이 장소이고 뒤에 완전한 절이 오므로 관계부사 where를 쓴다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Nobody knows the reason ____ he left early.",
+   "choices": [
+    "how",
+    "when",
+    "where",
+    "why",
+    "what"
+   ],
+   "answer": 4,
+   "why": "선행사 the reason이 이유를 나타내므로 관계부사 why를 쓴다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "July is the month ____ we go to the beach.",
+   "choices": [
+    "which",
+    "when",
+    "where",
+    "why",
+    "how"
+   ],
+   "answer": 2,
+   "why": "선행사 the month가 시간을 나타내므로 when을 쓴다. 뒤 절이 완전하므로 which는 쓸 수 없다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I miss the school ____ I studied as a child.",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "what"
+   ],
+   "answer": 2,
+   "why": "선행사 the school이 장소이고 뒤에 완전한 절이 오므로 where를 쓴다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Do you remember the day ____ we met?",
+   "choices": [
+    "where",
+    "why",
+    "how",
+    "when",
+    "what"
+   ],
+   "answer": 4,
+   "why": "선행사 the day가 시간을 나타내므로 관계부사 when을 쓴다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "This is the room ____ my sister sleeps.",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "which"
+   ],
+   "answer": 2,
+   "why": "선행사 the room이 장소이고 뒤 절이 완전하므로 where를 쓴다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Please explain the reason ____ the class was canceled.",
+   "choices": [
+    "when",
+    "where",
+    "how",
+    "why",
+    "what"
+   ],
+   "answer": 4,
+   "why": "선행사 the reason이 이유를 나타내므로 why를 쓴다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Winter is the time ____ we drink hot chocolate.",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "what"
+   ],
+   "answer": 1,
+   "why": "선행사 the time이 시간을 나타내므로 관계부사 when을 쓴다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The library is a place ____ people read books.",
+   "choices": [
+    "when",
+    "which",
+    "where",
+    "why",
+    "how"
+   ],
+   "answer": 3,
+   "why": "선행사 a place가 장소이고 뒤에 완전한 절이 오므로 where를 쓴다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I don't know ____ he opened the door without a key. (그가 열쇠 없이 문을 연 방법)",
+   "choices": [
+    "when",
+    "why",
+    "how",
+    "where",
+    "which"
+   ],
+   "answer": 3,
+   "why": "'~하는 방법'을 뜻하는 명사절은 관계부사 how가 이끈다. why를 쓰면 '연 이유'가 되어 뜻이 달라진다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "2020 was the year ____ my brother was born.",
+   "choices": [
+    "where",
+    "how",
+    "when",
+    "why",
+    "what"
+   ],
+   "answer": 3,
+   "why": "선행사 the year가 시간을 나타내므로 when을 쓴다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "That is the bench ____ we ate our sandwiches.",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "what"
+   ],
+   "answer": 2,
+   "why": "선행사 the bench가 장소이고 뒤 절이 완전하므로 where를 쓴다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She told me the reason ____ she chose that job.",
+   "choices": [
+    "how",
+    "when",
+    "where",
+    "what",
+    "why"
+   ],
+   "answer": 5,
+   "why": "선행사 the reason이 이유를 나타내므로 why를 쓴다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Monday is the day ____ our music class starts.",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "which"
+   ],
+   "answer": 1,
+   "why": "선행사 the day가 시간을 나타내므로 when을 쓴다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "This is the village ____ my father grew up.",
+   "choices": [
+    "when",
+    "why",
+    "where",
+    "how",
+    "what"
+   ],
+   "answer": 3,
+   "why": "선행사 the village가 장소이고 뒤에 완전한 절이 오므로 where를 쓴다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I remember the moment ____ the show began.",
+   "choices": [
+    "where",
+    "when",
+    "why",
+    "how",
+    "what"
+   ],
+   "answer": 2,
+   "why": "선행사 the moment가 시간을 나타내므로 when을 쓴다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Give me one reason ____ I should trust you.",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "what"
+   ],
+   "answer": 3,
+   "why": "선행사 reason이 이유를 나타내므로 why를 쓴다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A kitchen is a place ____ we cook food.",
+   "choices": [
+    "when",
+    "how",
+    "where",
+    "why",
+    "what"
+   ],
+   "answer": 3,
+   "why": "선행사 a place가 장소이므로 where를 쓴다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Tell me ____ you fixed my bike. (네가 내 자전거를 고친 방법)",
+   "choices": [
+    "how",
+    "when",
+    "where",
+    "why",
+    "which"
+   ],
+   "answer": 1,
+   "why": "'~한 방법'을 뜻하는 명사절이므로 how를 쓴다. why를 쓰면 '고친 이유'가 되어 뜻이 달라진다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은?",
+   "choices": [
+    "This is the town where I was born.",
+    "This is the town when I was born.",
+    "This is the town why I was born.",
+    "This is the town how I was born.",
+    "This is the town what I was born."
+   ],
+   "answer": 1,
+   "why": "선행사 the town이 장소이므로 관계부사 where가 알맞다. 시간의 when, 이유의 why, 방법의 how는 선행사와 맞지 않는다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은?",
+   "choices": [
+    "I know the day when she arrives.",
+    "I know the place where she works.",
+    "I know the reason why she cried.",
+    "I know the way how she cooks.",
+    "I know how she cooks."
+   ],
+   "answer": 4,
+   "why": "선행사 the way와 관계부사 how는 함께 쓸 수 없다. the way 또는 how 중 하나만 쓴다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말로 알맞은 것은?  ㉠ This is the park ____ we play badminton.  ㉡ Busan is the city ____ my aunt lives.",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "what"
+   ],
+   "answer": 2,
+   "why": "㉠의 the park와 ㉡의 the city 모두 장소를 나타내는 선행사이고 뒤에 완전한 절이 오므로 where를 쓴다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말로 알맞은 것은?  ㉠ Friday is the day ____ we have a math test.  ㉡ Summer is the season ____ we swim in the sea.",
+   "choices": [
+    "where",
+    "when",
+    "why",
+    "how",
+    "which"
+   ],
+   "answer": 2,
+   "why": "the day와 the season은 모두 시간을 나타내는 선행사이므로 관계부사 when을 쓴다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말로 알맞은 것은?  ㉠ Tell me the reason ____ you are angry.  ㉡ That is the reason ____ he stayed home.",
+   "choices": [
+    "when",
+    "where",
+    "how",
+    "why",
+    "what"
+   ],
+   "answer": 4,
+   "why": "두 문장 모두 선행사가 the reason이므로 이유를 나타내는 관계부사 why를 쓴다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그것이 그녀가 울고 있는 이유이다.",
+   "choices": [
+    "That is the reason why she is crying.",
+    "That is the reason when she is crying.",
+    "That is the reason where she is crying.",
+    "That is the reason how she is crying.",
+    "That is the reason what she is crying."
+   ],
+   "answer": 1,
+   "why": "'이유'를 나타내는 선행사 the reason 뒤에는 관계부사 why를 쓴다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  이곳이 우리가 처음 만난 장소이다.",
+   "choices": [
+    "This is the place when we first met.",
+    "This is the place where we first met.",
+    "This is the place why we first met.",
+    "This is the place how we first met.",
+    "This is the place what we first met."
+   ],
+   "answer": 2,
+   "why": "'장소'를 나타내는 선행사 the place 뒤에는 관계부사 where를 쓴다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  나는 그가 그 상자를 옮긴 방법을 안다.",
+   "choices": [
+    "I know the way how he moved the box.",
+    "I know the way what he moved the box.",
+    "I know how he moved the box.",
+    "I know how the way he moved the box.",
+    "I know why he moved the box."
+   ],
+   "answer": 3,
+   "why": "the way와 how는 함께 쓸 수 없으므로 how만 쓴다. ⑤는 '옮긴 이유'가 되어 뜻이 다르다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은?  <u>I</u> <u>still remember</u> <u>the reason</u> <u>how</u> <u>he moved</u> to Jeju.",
+   "choices": [
+    "I",
+    "still remember",
+    "the reason",
+    "how",
+    "he moved"
+   ],
+   "answer": 4,
+   "why": "선행사가 the reason이므로 관계부사는 how가 아니라 why를 써야 한다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 틀린 것은?  <u>Here</u> <u>is</u> <u>the cafe</u> <u>when</u> <u>we often meet</u>.",
+   "choices": [
+    "Here",
+    "is",
+    "the cafe",
+    "when",
+    "we often meet"
+   ],
+   "answer": 4,
+   "why": "선행사 the cafe는 장소이므로 when이 아니라 where를 써야 한다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ㉠ This is the day when school ends.  ㉡ This is the place where we sat.  ㉢ This is the reason how he left.  ㉣ I know how she won.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "0개"
+   ],
+   "answer": 3,
+   "why": "㉠㉡㉣은 선행사와 관계부사가 알맞게 짝지어져 옳고, ㉢은 선행사가 the reason이므로 how를 why로 고쳐야 한다. 따라서 옳은 문장은 3개이다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 순서대로 바르게 짝지어진 것은?  ㉠ This is the town ____ I live.  ㉡ Ten is the age ____ I started piano.",
+   "choices": [
+    "where - when",
+    "when - where",
+    "why - how",
+    "where - why",
+    "how - when"
+   ],
+   "answer": 1,
+   "why": "㉠은 장소 선행사 the town이므로 where, ㉡은 시간을 나타내는 선행사 the age이므로 when을 쓴다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 순서대로 바르게 짝지어진 것은?  ㉠ Tell me the reason ____ you smiled.  ㉡ Show me ____ you drew this picture. (그린 방법)",
+   "choices": [
+    "when - how",
+    "why - how",
+    "why - when",
+    "how - why",
+    "where - how"
+   ],
+   "answer": 2,
+   "why": "㉠은 선행사가 the reason이므로 why, ㉡은 '그린 방법'이라는 뜻이므로 how를 쓴다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?  A: Why is the door open?  B: I don't know the reason ____ it is open.",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "what"
+   ],
+   "answer": 3,
+   "why": "선행사 the reason이 이유를 나타내므로 관계부사 why를 쓴다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?  A: Where did you buy that cap?  B: I'll show you the shop ____ I bought it.",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "which"
+   ],
+   "answer": 2,
+   "why": "선행사 the shop이 장소이고 뒤 절이 완전하므로 where를 쓴다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?  A: When did you take this photo?  B: It was the day ____ we climbed the mountain.",
+   "choices": [
+    "where",
+    "when",
+    "why",
+    "how",
+    "what"
+   ],
+   "answer": 2,
+   "why": "선행사 the day가 시간을 나타내므로 when을 쓴다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The park ____ we play is near my house. (= The park in which we play is near my house.)",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "what"
+   ],
+   "answer": 2,
+   "why": "in which는 장소를 나타내는 「전치사＋관계대명사」이므로 관계부사 where로 바꿔 쓸 수 있다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The day ____ she was born is May 5. (= The day on which she was born is May 5.)",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "which"
+   ],
+   "answer": 1,
+   "why": "on which는 시간을 나타내는 「전치사＋관계대명사」이므로 관계부사 when으로 바꿔 쓸 수 있다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The reason ____ he is famous is his voice. (= The reason for which he is famous is his voice.)",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "what"
+   ],
+   "answer": 3,
+   "why": "for which는 이유를 나타내는 「전치사＋관계대명사」이므로 관계부사 why로 바꿔 쓸 수 있다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "I know the way how he did it.",
+    "I know the way in which he did it.",
+    "I know the way how in he did it.",
+    "I know how the way he did it.",
+    "I know the way why he did it."
+   ],
+   "answer": 2,
+   "why": "the way와 how는 함께 쓸 수 없다. the way 뒤에는 in which를 쓰거나 the way만, 또는 how만 쓴다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은?",
+   "choices": [
+    "This is the office where my mom works.",
+    "This is the office in which my mom works.",
+    "This is the office where my mom works in.",
+    "This is the office which my mom works in.",
+    "This is the office that my mom works in."
+   ],
+   "answer": 3,
+   "why": "where는 이미 in which의 뜻이므로 문장 끝에 전치사 in을 또 쓸 수 없다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The hospital ____ my sister was born is very old.",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "what"
+   ],
+   "answer": 2,
+   "why": "선행사 The hospital이 장소이고 뒤에 완전한 절이 오므로 where를 쓴다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I'll never forget the day ____ I got my first bike.",
+   "choices": [
+    "where",
+    "why",
+    "when",
+    "how",
+    "which"
+   ],
+   "answer": 3,
+   "why": "선행사 the day가 시간을 나타내므로 when을 쓴다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "There are many reasons ____ people love music.",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "what"
+   ],
+   "answer": 3,
+   "why": "선행사 reasons가 이유를 나타내므로 관계부사 why를 쓴다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안에서 알맞은 말을 고르시오.  This is the town (where, when) I grew up.",
+   "answer": "where",
+   "alt": [],
+   "why": "선행사 the town이 장소를 나타내므로 관계부사 where를 쓴다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안에서 알맞은 말을 고르시오.  Friday is the day (where, when) I have piano lessons.",
+   "answer": "when",
+   "alt": [],
+   "why": "선행사 the day가 시간을 나타내므로 관계부사 when을 쓴다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안에서 알맞은 말을 고르시오.  Tell me the reason (why, how) you are so tired.",
+   "answer": "why",
+   "alt": [],
+   "why": "선행사 the reason이 이유를 나타내므로 관계부사 why를 쓴다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안에서 알맞은 말을 고르시오.  He showed me (the way how, how) he made it.",
+   "answer": "how",
+   "alt": [],
+   "why": "the way와 how는 함께 쓸 수 없으므로 how만 쓴다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안에서 알맞은 말을 고르시오.  This is the park (which, where) we ride bikes.",
+   "answer": "where",
+   "alt": [],
+   "why": "뒤에 완전한 절이 오고 선행사가 장소이므로 관계부사 where를 쓴다. 관계대명사 which 뒤에는 불완전한 절이 와야 한다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 관계부사를 한 단어로 쓰시오.  Winter is the season ____ it snows a lot.",
+   "answer": "when",
+   "alt": [],
+   "why": "선행사 the season이 시간을 나타내므로 when을 쓴다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 관계부사를 한 단어로 쓰시오.  The store ____ I bought this bag is closed today.",
+   "answer": "where",
+   "alt": [],
+   "why": "선행사 The store가 장소이고 뒤 절이 완전하므로 where를 쓴다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 관계부사를 한 단어로 쓰시오.  I know the reason ____ she looks sad.",
+   "answer": "why",
+   "alt": [],
+   "why": "선행사 the reason이 이유를 나타내므로 why를 쓴다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 관계부사를 한 단어로 쓰시오.  Do you remember ____ we solved that problem? (우리가 그 문제를 푼 방법)",
+   "answer": "how",
+   "alt": [],
+   "why": "'~한 방법'을 뜻하는 명사절을 이끄는 관계부사 how를 쓴다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 관계부사를 한 단어로 쓰시오.  August is the month ____ my family goes camping.",
+   "answer": "when",
+   "alt": [],
+   "why": "선행사 the month가 시간을 나타내므로 when을 쓴다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 한 단어로 고치시오.  This is the library <u>when</u> I study every day.",
+   "answer": "where",
+   "alt": [],
+   "why": "선행사 the library는 장소이므로 시간의 when이 아니라 where를 써야 한다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 한 단어로 고치시오.  I forgot the day <u>where</u> the concert starts.",
+   "answer": "when",
+   "alt": [],
+   "why": "선행사 the day는 시간이므로 장소의 where가 아니라 when을 써야 한다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 한 단어로 고치시오.  Nobody knows the reason <u>how</u> he was angry.",
+   "answer": "why",
+   "alt": [],
+   "why": "선행사 the reason은 이유를 나타내므로 how가 아니라 why를 써야 한다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 한 단어를 쓰시오.  그가 그 문을 연 방법을 우리에게 말해 줘.  → Tell us ____ he opened the door.",
+   "answer": "how",
+   "alt": [],
+   "why": "'~한 방법'이라는 명사절은 관계부사 how가 이끈다. the way how로는 쓸 수 없다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 빈칸에 한 단어를 쓰시오.  This is the house in which he lives. = This is the house ____ he lives.",
+   "answer": "where",
+   "alt": [],
+   "why": "장소를 나타내는 in which는 관계부사 where로 바꿔 쓸 수 있다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 빈칸에 한 단어를 쓰시오.  I remember the day on which we met. = I remember the day ____ we met.",
+   "answer": "when",
+   "alt": [],
+   "why": "시간을 나타내는 on which는 관계부사 when으로 바꿔 쓸 수 있다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 빈칸에 한 단어를 쓰시오.  That is the reason for which she cried. = That is the reason ____ she cried.",
+   "answer": "why",
+   "alt": [],
+   "why": "이유를 나타내는 for which는 관계부사 why로 바꿔 쓸 수 있다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고치시오.  Here is the tea shop <u>which</u> we drink tea every Sunday.",
+   "answer": "where",
+   "alt": [
+    "in which",
+    "at which"
+   ],
+   "why": "뒤에 완전한 절이 오고 선행사가 장소이므로 관계대명사 which가 아니라 관계부사 where(= in which)를 써야 한다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고치시오.  This is the school <u>where</u> my brother goes to.",
+   "answer": "which",
+   "alt": [
+    "that"
+   ],
+   "why": "문장 끝의 전치사 to 뒤에 목적어가 비어 있으므로 관계부사 where가 아니라 목적격 관계대명사 which[that]를 써야 한다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안에서 알맞은 말을 고르시오.  The office (where, which) she works is on the fifth floor.",
+   "answer": "where",
+   "alt": [],
+   "why": "뒤에 완전한 절 she works가 오고 선행사가 장소이므로 관계부사 where를 쓴다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The restaurant ____ we had dinner last night serves Italian food.",
+   "choices": [
+    "which",
+    "where",
+    "when",
+    "what",
+    "why"
+   ],
+   "answer": 2,
+   "why": "뒤에 완전한 절이 오고 선행사 The restaurant가 장소이므로 관계부사 where를 쓴다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "I still remember the summer ____ we traveled across Europe together.",
+   "choices": [
+    "where",
+    "when",
+    "why",
+    "how",
+    "which"
+   ],
+   "answer": 2,
+   "why": "선행사 the summer가 시간을 나타내고 뒤 절이 완전하므로 관계부사 when을 쓴다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "This is the machine ____ my father invented in the 1990s.",
+   "choices": [
+    "where",
+    "when",
+    "why",
+    "which",
+    "how"
+   ],
+   "answer": 4,
+   "why": "invented의 목적어 자리가 비어 있는 불완전한 절이므로 목적격 관계대명사 which를 쓴다. 관계부사 뒤에는 완전한 절이 온다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Do you know the reason ____ the flight was delayed?",
+   "choices": [
+    "when",
+    "where",
+    "why",
+    "how",
+    "what"
+   ],
+   "answer": 3,
+   "why": "선행사 the reason이 이유를 나타내므로 관계부사 why를 쓴다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The way ____ he explained the theory was very clear.",
+   "choices": [
+    "how",
+    "which",
+    "in which",
+    "where",
+    "what"
+   ],
+   "answer": 3,
+   "why": "the way와 how는 함께 쓸 수 없고, 뒤 절이 완전하므로 which도 쓸 수 없다. the way 뒤에는 in which(= that)를 쓴다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Tell me ____ you managed to finish the project in one week.",
+   "choices": [
+    "the way how",
+    "how",
+    "the way in how",
+    "which",
+    "what"
+   ],
+   "answer": 2,
+   "why": "'~한 방법'을 뜻하는 명사절은 how가 이끈다. the way how는 함께 쓸 수 없고 the way in how라는 표현도 없다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The town ____ I was born has changed a lot over the years.",
+   "choices": [
+    "which",
+    "when",
+    "where",
+    "what",
+    "why"
+   ],
+   "answer": 3,
+   "why": "뒤에 완전한 절 I was born이 오고 선행사가 장소이므로 where를 쓴다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "There was a time ____ people wrote letters instead of sending emails.",
+   "choices": [
+    "where",
+    "when",
+    "why",
+    "how",
+    "which"
+   ],
+   "answer": 2,
+   "why": "선행사 a time이 시간을 나타내므로 관계부사 when을 쓴다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "This is the hotel ____ which we stayed during our trip to Jeju.",
+   "choices": [
+    "on",
+    "at",
+    "for",
+    "with",
+    "by"
+   ],
+   "answer": 2,
+   "why": "stay at a hotel의 전치사 at을 관계대명사 앞으로 보낸 at which가 알맞다. at which는 관계부사 where로 바꿔 쓸 수 있다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "May 5 is the day ____ which children receive gifts in Korea.",
+   "choices": [
+    "in",
+    "at",
+    "on",
+    "for",
+    "to"
+   ],
+   "answer": 3,
+   "why": "특정한 날짜 앞에는 전치사 on을 쓰므로 on which가 알맞다. on which는 관계부사 when으로 바꿔 쓸 수 있다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "That's the reason ____ which he refused our offer.",
+   "choices": [
+    "in",
+    "on",
+    "at",
+    "for",
+    "by"
+   ],
+   "answer": 4,
+   "why": "이유를 나타내는 관계부사 why는 for which와 같으므로 for가 알맞다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The village ____ which my grandparents live is near the sea.",
+   "choices": [
+    "in",
+    "on",
+    "at",
+    "for",
+    "of"
+   ],
+   "answer": 1,
+   "why": "live in a village의 전치사 in을 관계대명사 앞으로 보낸 in which가 알맞고, 이는 관계부사 where와 같다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것을 고르시오.",
+   "choices": [
+    "The stadium where the final match was held was full.",
+    "The stadium in which the final match was held was full.",
+    "The stadium which the final match was held in was full.",
+    "The stadium that the final match was held in was full.",
+    "The stadium where the final match was held in was full."
+   ],
+   "answer": 5,
+   "why": "where는 in which의 뜻을 이미 담고 있으므로 절 끝에 전치사 in을 또 쓸 수 없다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 고르시오.",
+   "choices": [
+    "I don't know the way how she got my number.",
+    "I don't know the way she got my number.",
+    "I don't know how the way she got my number.",
+    "I don't know the way in how she got my number.",
+    "I don't know the way which she got my number."
+   ],
+   "answer": 2,
+   "why": "the way와 how는 함께 쓸 수 없고, the way 뒤의 절이 완전하므로 which도 쓸 수 없다. the way만 쓰거나 how만 쓴다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  <u>I visited</u> <u>the museum</u> <u>where</u> <u>my sister works in</u> <u>last weekend</u>.",
+   "choices": [
+    "I visited",
+    "the museum",
+    "where",
+    "my sister works in",
+    "last weekend"
+   ],
+   "answer": 4,
+   "why": "where가 이미 in which의 뜻이므로 works in의 in을 삭제해야 한다(또는 where를 which로 바꾼다).",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  <u>She explained</u> <u>the reason</u> <u>for why</u> <u>the experiment</u> <u>had failed</u>.",
+   "choices": [
+    "She explained",
+    "the reason",
+    "for why",
+    "the experiment",
+    "had failed"
+   ],
+   "answer": 3,
+   "why": "why 자체가 for which의 뜻이므로 앞에 for를 또 쓸 수 없다. why 또는 for which로 써야 한다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말로 알맞은 것은?  ㉠ 1988 was the year ____ the Olympic Games were held in Seoul.  ㉡ I'll never forget the moment ____ I first saw the ocean.",
+   "choices": [
+    "where",
+    "when",
+    "why",
+    "how",
+    "which"
+   ],
+   "answer": 2,
+   "why": "the year와 the moment 모두 시간을 나타내는 선행사이고 뒤에 완전한 절이 오므로 when을 쓴다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말로 알맞은 것은?  ㉠ Is this the building ____ your office is located?  ㉡ Africa is the continent ____ many wild animals live.",
+   "choices": [
+    "when",
+    "which",
+    "where",
+    "why",
+    "that"
+   ],
+   "answer": 3,
+   "why": "두 선행사 모두 장소이고 뒤 절이 완전하므로 관계부사 where를 쓴다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그것이 내가 그 회의에 참석할 수 없었던 이유이다.",
+   "choices": [
+    "That is the reason why I couldn't attend the meeting.",
+    "That is the reason when I couldn't attend the meeting.",
+    "That is the reason how I couldn't attend the meeting.",
+    "That is the reason which I couldn't attend the meeting.",
+    "That is the reason for why I couldn't attend the meeting."
+   ],
+   "answer": 1,
+   "why": "선행사 the reason 뒤에는 관계부사 why를 쓴다. ⑤의 for why는 for가 겹치므로 틀리고, ④는 뒤 절이 완전해 관계대명사를 쓸 수 없다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  나는 그녀가 그 문제를 해결한 방법에 놀랐다.",
+   "choices": [
+    "I was surprised at the way how she solved the problem.",
+    "I was surprised at how she solved the problem.",
+    "I was surprised at how the way she solved the problem.",
+    "I was surprised at the way which she solved the problem.",
+    "I was surprised at what she solved the problem."
+   ],
+   "answer": 2,
+   "why": "the way와 how는 함께 쓸 수 없으므로 how만 쓴다. ④는 뒤 절이 완전하므로 which를 쓸 수 없다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  이곳이 그 사고가 일어난 장소이다.",
+   "choices": [
+    "This is the place where the accident happened.",
+    "This is the place which the accident happened.",
+    "This is the place when the accident happened.",
+    "This is the place where the accident happened in.",
+    "This is the place what the accident happened."
+   ],
+   "answer": 1,
+   "why": "장소 선행사 뒤에 완전한 절이 오므로 where를 쓴다. ④는 where 뒤에 전치사 in을 또 쓴 것이라 틀리다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ㉠ Tuesday is the day when the club meets.  ㉡ This is the town which I spent my childhood.  ㉢ He told me the way how he passed the test.  ㉣ I know the reason why she moved to Busan.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "0개"
+   ],
+   "answer": 2,
+   "why": "㉠㉣이 옳다. ㉡은 뒤 절이 완전하므로 which를 where로, ㉢은 the way how를 the way 또는 how로 고쳐야 한다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말이 순서대로 바르게 짝지어진 것은?  ㉠ The day ____ which the letter arrived was rainy.  ㉡ The house ____ which she lived was very old.",
+   "choices": [
+    "in - on",
+    "on - in",
+    "at - for",
+    "for - on",
+    "on - at"
+   ],
+   "answer": 2,
+   "why": "㉠은 날짜·요일 앞의 on을 써서 on which(= when), ㉡은 live in의 in을 써서 in which(= where)가 된다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The office ____ he works is only ten minutes from his home.",
+   "choices": [
+    "which",
+    "that",
+    "where",
+    "when",
+    "what"
+   ],
+   "answer": 3,
+   "why": "뒤에 완전한 절 he works가 오고 선행사가 장소이므로 관계부사 where를 쓴다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "I can't understand the reason ____ she keeps changing her mind.",
+   "choices": [
+    "how",
+    "when",
+    "where",
+    "why",
+    "which"
+   ],
+   "answer": 4,
+   "why": "선행사 the reason이 이유를 나타내므로 관계부사 why를 쓴다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 수 <u>없는</u> 것은?  This is the place ____ we usually meet after school.",
+   "choices": [
+    "where",
+    "in which",
+    "at which",
+    "that",
+    "which"
+   ],
+   "answer": 5,
+   "why": "뒤 절 we usually meet after school이 완전하므로 전치사 없는 관계대명사 which는 쓸 수 없다. where, in[at] which, 관계부사를 대신하는 that은 모두 가능하다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?  A: I heard you visited Gyeongju.  B: Yes. It's the city ____ many old temples remain.",
+   "choices": [
+    "which",
+    "when",
+    "where",
+    "why",
+    "what"
+   ],
+   "answer": 3,
+   "why": "선행사 the city가 장소이고 뒤 절이 완전하므로 where를 쓴다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?  A: Do you know ____ he became so good at chess? (그가 체스를 잘하게 된 방법)  B: He practiced every single day.",
+   "choices": [
+    "the way how",
+    "how",
+    "which",
+    "what",
+    "where"
+   ],
+   "answer": 2,
+   "why": "'~하게 된 방법'을 뜻하는 명사절은 how가 이끈다. the way how는 함께 쓸 수 없다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The reason ____ many students are tired these days is the summer heat.",
+   "choices": [
+    "how",
+    "which",
+    "when",
+    "why",
+    "what"
+   ],
+   "answer": 4,
+   "why": "선행사 The reason 뒤에 완전한 절이 오므로 관계부사 why를 쓴다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Autumn is the season ____ the leaves turn red and yellow.",
+   "choices": [
+    "where",
+    "which",
+    "when",
+    "how",
+    "what"
+   ],
+   "answer": 3,
+   "why": "선행사 the season이 시간을 나타내므로 when을 쓴다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "This is the bridge ____ was built a hundred years ago.",
+   "choices": [
+    "where",
+    "when",
+    "which",
+    "why",
+    "how"
+   ],
+   "answer": 3,
+   "why": "뒤에 주어가 빠진 불완전한 절이 오므로 주격 관계대명사 which를 쓴다. 관계부사 뒤에는 완전한 절이 온다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "This is the bridge ____ we took the photo yesterday.",
+   "choices": [
+    "which",
+    "what",
+    "where",
+    "when",
+    "why"
+   ],
+   "answer": 3,
+   "why": "뒤에 완전한 절이 오고 선행사가 장소이므로 관계부사 where를 쓴다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 고르시오.",
+   "choices": [
+    "Do you know the reason for which he quit?",
+    "Do you know the reason for why he quit?",
+    "Do you know the reason which he quit?",
+    "Do you know the reason how he quit?",
+    "Do you know the reason where he quit?"
+   ],
+   "answer": 1,
+   "why": "why = for which이므로 for which는 옳지만 for why는 틀리다. 뒤 절이 완전하므로 which도 쓸 수 없다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장을 고르시오.",
+   "choices": [
+    "The park where we jog every morning is huge.",
+    "The park in which we jog every morning is huge.",
+    "The park which we jog in every morning is huge.",
+    "The park that we jog in every morning is huge.",
+    "The park which we jog every morning is huge."
+   ],
+   "answer": 5,
+   "why": "⑤는 뒤 절이 완전한데 관계대명사 which를 썼다. which를 쓰려면 jog in처럼 전치사가 있어야 한다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  <u>The way</u> <u>how</u> <u>he treats</u> <u>his students</u> <u>is impressive</u>.",
+   "choices": [
+    "The way",
+    "how",
+    "he treats",
+    "his students",
+    "is impressive"
+   ],
+   "answer": 2,
+   "why": "the way와 how는 함께 쓸 수 없으므로 how를 빼거나 in which로 고쳐야 한다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?  <u>This is</u> <u>the season</u> <u>where</u> <u>farmers</u> <u>harvest rice</u>.",
+   "choices": [
+    "This is",
+    "the season",
+    "where",
+    "farmers",
+    "harvest rice"
+   ],
+   "answer": 3,
+   "why": "선행사 the season은 시간을 나타내므로 where가 아니라 when을 써야 한다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말로 알맞은 것은?  ㉠ Please tell me the reason ____ you changed your mind.  ㉡ There are several reasons ____ people learn a second language.",
+   "choices": [
+    "when",
+    "where",
+    "how",
+    "why",
+    "which"
+   ],
+   "answer": 4,
+   "why": "두 선행사 모두 이유를 나타내는 reason(s)이므로 관계부사 why를 쓴다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The day ____ we finally reached the top was the happiest day of my life.",
+   "choices": [
+    "which",
+    "where",
+    "when",
+    "what",
+    "how"
+   ],
+   "answer": 3,
+   "why": "선행사 The day가 시간을 나타내고 뒤 절이 완전하므로 when을 쓴다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Health is the reason ____ many people start jogging.",
+   "choices": [
+    "when",
+    "why",
+    "where",
+    "how",
+    "which"
+   ],
+   "answer": 2,
+   "why": "선행사 the reason이 이유를 나타내므로 why를 쓴다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The city ____ which they moved last month is famous for its beaches. (그들이 지난달 이사 간 도시)",
+   "choices": [
+    "to",
+    "in",
+    "on",
+    "for",
+    "at"
+   ],
+   "answer": 1,
+   "why": "move to a city의 전치사 to를 관계대명사 앞으로 보낸 to which가 알맞다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Is there a shop around here ____ I can buy some batteries?",
+   "choices": [
+    "which",
+    "when",
+    "where",
+    "why",
+    "what"
+   ],
+   "answer": 3,
+   "why": "선행사 a shop이 장소이고 뒤 절이 완전하므로 where를 쓴다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그녀가 태어난 도시는 아름답다.",
+   "choices": [
+    "The city where she was born is beautiful.",
+    "The city which she was born is beautiful.",
+    "The city when she was born is beautiful.",
+    "The city where she was born in is beautiful.",
+    "The city what she was born is beautiful."
+   ],
+   "answer": 1,
+   "why": "장소 선행사 뒤에 완전한 절이 오므로 where를 쓴다. ④는 where 뒤에 in을 또 쓴 것이라 틀리다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  나는 그가 늦은 이유를 물었다.",
+   "choices": [
+    "I asked the reason why he was late.",
+    "I asked the reason how he was late.",
+    "I asked the reason for why he was late.",
+    "I asked the reason when he was late.",
+    "I asked the reason which he was late."
+   ],
+   "answer": 1,
+   "why": "이유의 선행사 the reason 뒤에는 why를 쓴다. for why는 for가 중복되어 틀리다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ㉠ The way how she sings is lovely.  ㉡ The way she sings is lovely.  ㉢ How she sings is lovely.  ㉣ The way in which she sings is lovely.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 4,
+   "why": "㉡㉢㉣이 옳다. ㉠만 the way와 how를 함께 써서 틀리다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것은?  I know the hospital in which she works. = I know the hospital ____ she works.",
+   "choices": [
+    "which",
+    "that",
+    "where",
+    "when",
+    "what"
+   ],
+   "answer": 3,
+   "why": "장소를 나타내는 in which는 관계부사 where와 같다. 전치사 없이 which나 that만 쓰면 works의 자리가 남아 틀리다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것은?  Tell me the reason for which you were absent. = Tell me the reason ____ you were absent.",
+   "choices": [
+    "how",
+    "when",
+    "why",
+    "where",
+    "which"
+   ],
+   "answer": 3,
+   "why": "for which는 이유를 나타내므로 관계부사 why와 같다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것을 고르시오.  The building (where, which) we visited yesterday is very famous.",
+   "answer": "which",
+   "alt": [],
+   "why": "visited의 목적어 자리가 비어 있는 불완전한 절이므로 목적격 관계대명사 which를 쓴다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것을 고르시오.  The building (where, which) my father works is very tall.",
+   "answer": "where",
+   "alt": [],
+   "why": "뒤에 완전한 절 my father works가 오고 선행사가 장소이므로 관계부사 where를 쓴다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 관계부사를 한 단어로 쓰시오.  The day ____ the new library opens is next Monday.",
+   "answer": "when",
+   "alt": [],
+   "why": "선행사 The day가 시간을 나타내고 뒤 절이 완전하므로 when을 쓴다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 빈칸에 한 단어를 쓰시오.  This is the town in which the writer spent his childhood. = This is the town ____ the writer spent his childhood.",
+   "answer": "where",
+   "alt": [],
+   "why": "장소를 나타내는 in which는 관계부사 where로 바꿔 쓸 수 있다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 빈칸에 한 단어를 쓰시오.  I remember the night on which we watched the meteor shower. = I remember the night ____ we watched the meteor shower.",
+   "answer": "when",
+   "alt": [],
+   "why": "시간을 나타내는 on which는 관계부사 when으로 바꿔 쓸 수 있다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 밑줄 친 관계부사를 「전치사＋관계대명사」 두 단어로 바꿔 쓰시오.  That is the reason <u>why</u> he apologized.",
+   "answer": "for which",
+   "alt": [],
+   "why": "이유를 나타내는 관계부사 why는 for which와 같다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 밑줄 친 관계부사를 「전치사＋관계대명사」 두 단어로 바꿔 쓰시오.  This is the room <u>where</u> the meeting will be held.",
+   "answer": "in which",
+   "alt": [],
+   "why": "장소를 나타내는 관계부사 where는 in which와 같다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 밑줄 친 관계부사를 「전치사＋관계대명사」 두 단어로 바꿔 쓰시오.  Sunday is the day <u>when</u> the market opens early.",
+   "answer": "on which",
+   "alt": [],
+   "why": "요일·날짜 앞에는 on을 쓰므로 the day when은 the day on which와 같다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 한 단어로 고치시오.  The stadium <u>where</u> we watched the game in was newly built.",
+   "answer": "which",
+   "alt": [
+    "that"
+   ],
+   "why": "절 끝에 전치사 in이 남아 있으므로 그 목적어가 되는 목적격 관계대명사 which[that]를 써야 한다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 한 단어로 고치시오.  She never told us the reason <u>for why</u> she left the team.",
+   "answer": "why",
+   "alt": [
+    "for which"
+   ],
+   "why": "why 자체가 for which의 뜻이므로 for를 겹쳐 쓸 수 없다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 한 단어로 고치시오.  Do you remember the cafe <u>when</u> we first talked about this plan?",
+   "answer": "where",
+   "alt": [
+    "in which",
+    "at which"
+   ],
+   "why": "선행사 the cafe는 장소이므로 시간의 when이 아니라 where를 써야 한다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 두 단어로 고치시오.  I finally understood the way <u>how</u> the machine worked.",
+   "answer": "in which",
+   "alt": [],
+   "why": "the way와 how는 함께 쓸 수 없다. the way를 살리려면 how를 in which로 고친다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 우리말과 같도록 주어진 단어를 모두 배열하시오.  (그가 그 소식을 들은 날)  [ the news / he / the day / when / heard ]",
+   "answer": "the day when he heard the news",
+   "alt": [],
+   "why": "시간을 나타내는 선행사 the day 뒤에 관계부사 when이 이끄는 절을 붙인다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 한 단어를 쓰시오.  이곳이 내가 일하는 사무실이다.  → This is the office ____ I work.",
+   "answer": "where",
+   "alt": [
+    "in which",
+    "at which"
+   ],
+   "why": "선행사 the office가 장소이고 뒤 절이 완전하므로 관계부사 where를 쓴다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 한 단어를 쓰시오.  그것이 그가 화가 난 이유이다.  → That is the reason ____ he got angry.",
+   "answer": "why",
+   "alt": [
+    "for which"
+   ],
+   "why": "이유를 나타내는 선행사 the reason 뒤에는 관계부사 why를 쓴다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 한 단어를 쓰시오.  나는 그녀가 그 상자를 연 방법을 모른다.  → I don't know ____ she opened the box.",
+   "answer": "how",
+   "alt": [],
+   "why": "'~한 방법'을 뜻하는 명사절은 관계부사 how가 이끈다. the way how로는 쓸 수 없다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 관계부사를 사용하여 한 문장으로 완성하시오.  This is the park. I met her there.  → This is the park ____ I met her.",
+   "answer": "where",
+   "alt": [],
+   "why": "부사 there가 장소를 나타내므로 관계부사 where로 두 문장을 잇는다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 관계부사를 사용하여 한 문장으로 완성하시오.  I remember the day. It snowed heavily then.  → I remember the day ____ it snowed heavily.",
+   "answer": "when",
+   "alt": [],
+   "why": "부사 then이 시간을 나타내므로 관계부사 when으로 두 문장을 잇는다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 관계부사를 사용하여 한 문장으로 완성하시오.  Tell me the reason. You were absent for that reason.  → Tell me the reason ____ you were absent.",
+   "answer": "why",
+   "alt": [],
+   "why": "for that reason이 이유를 나타내므로 관계부사 why(= for which)로 잇는다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것을 고르시오.  He explained (the way how, the way) the engine works.",
+   "answer": "the way",
+   "alt": [],
+   "why": "the way와 how는 함께 쓸 수 없으므로 the way만 쓴다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 짝지어진 것은?  ㄱ. The library where I borrowed this book closes at six.  ㄴ. The library which I borrowed this book closes at six.  ㄷ. The library from which I borrowed this book closes at six.  ㄹ. The library where I borrowed this book from closes at six.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ",
+    "ㄱ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 완전한 절 앞의 관계부사 where, ㄷ은 borrow from의 from을 앞으로 보낸 from which로 옳다. ㄴ은 뒤 절이 완전한데 관계대명사를 썼고, ㄹ은 where 뒤에 from을 또 썼다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?  ㄱ. I don't know the way how he escaped.  ㄴ. I don't know how he escaped.  ㄷ. I don't know the way he escaped.  ㄹ. I don't know the way in which he escaped.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄴ, ㄷ, ㄹ",
+    "ㄱ, ㄴ, ㄷ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "the way와 how는 함께 쓸 수 없으므로 ㄱ만 틀리다. how만, the way만, the way in which 모두 가능하다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장으로 알맞은 것은?",
+   "choices": [
+    "The moment where I opened the door, the cat ran out.",
+    "The reason why he gave us was not convincing.",
+    "The city in which the conference will be held is Vienna.",
+    "The way how the story ends surprised everyone.",
+    "The house where she was living in was sold last year."
+   ],
+   "answer": 3,
+   "why": "③은 hold a conference in a city의 in을 앞으로 보낸 in which로 옳다. ①은 when, ②는 gave의 목적어가 비어 있으므로 which, ④는 the way how 불가, ⑤는 where 뒤 in 중복이다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장으로 알맞은 것은?",
+   "choices": [
+    "This is the factory where my grandfather worked for thirty years.",
+    "This is the factory in which my grandfather worked for thirty years.",
+    "This is the factory which my grandfather worked in for thirty years.",
+    "This is the factory that my grandfather worked in for thirty years.",
+    "This is the factory in that my grandfather worked for thirty years."
+   ],
+   "answer": 5,
+   "why": "관계대명사 that은 전치사 바로 뒤에 올 수 없으므로 in that은 쓸 수 없다. that을 쓰려면 전치사를 절 끝에 두어야 한다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 옳지 <u>않은</u> 것은?  Last summer I went back to the small village <u>where</u> I grew up, and I found the old tree <u>under which</u> my friends and I used to play. I also visited the school <u>which</u> I learned to read, and I remembered the day <u>when</u> our teacher praised me. That is the reason <u>why</u> the village still feels like home.",
+   "choices": [
+    "where",
+    "under which",
+    "which",
+    "when",
+    "why"
+   ],
+   "answer": 3,
+   "why": "I learned to read는 완전한 절이므로 관계대명사 which를 쓸 수 없다. 장소 선행사 the school에 맞게 where(= at which)로 고쳐야 한다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 옳지 <u>않은</u> 것은?  My grandmother often told me about the year <u>when</u> the war ended. She described the small room <u>in which</u> her family hid, and the way <u>how</u> they shared a single bowl of rice. She never explained the reason <u>why</u> she kept those memories, but she wanted us to remember the day <u>on which</u> peace finally came.",
+   "choices": [
+    "when",
+    "in which",
+    "how",
+    "why",
+    "on which"
+   ],
+   "answer": 3,
+   "why": "the way와 how는 함께 쓸 수 없으므로 the way in which 또는 the way that으로 고쳐야 한다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 옳지 <u>않은</u> 것은?  The museum <u>where we visited</u> last weekend was built in 1910. It stands on the hill <u>from which you can see</u> the whole city. Inside, there is a small hall <u>where local artists show</u> their works, and a room <u>in which children can draw</u> freely. I still remember the moment <u>when I first walked in</u>.",
+   "choices": [
+    "where we visited",
+    "from which you can see",
+    "where local artists show",
+    "in which children can draw",
+    "when I first walked in"
+   ],
+   "answer": 1,
+   "why": "visit은 목적어가 필요한 타동사인데 목적어 자리가 비어 있으므로 where가 아니라 목적격 관계대명사 which[that]를 써야 한다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말로 알맞은 것은?  ㉠ There are cases ____ honesty is not the best policy.  ㉡ We have reached the point ____ we must make a decision.",
+   "choices": [
+    "where",
+    "when",
+    "why",
+    "which",
+    "how"
+   ],
+   "answer": 1,
+   "why": "cases와 the point처럼 추상적인 '지점·상황'을 나타내는 선행사에도 관계부사 where를 쓴다. 뒤 절이 완전하므로 which는 쓸 수 없다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 수 <u>없는</u> 것은?  This is the place ____ the ceremony was held.",
+   "choices": [
+    "where",
+    "in which",
+    "that",
+    "which",
+    "at which"
+   ],
+   "answer": 4,
+   "why": "the ceremony was held는 완전한 절이므로 전치사 없는 관계대명사 which는 쓸 수 없다. where, in[at] which, that은 모두 가능하다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  나는 그가 그렇게 짧은 시간에 그 일을 끝낸 방법이 궁금하다.",
+   "choices": [
+    "I wonder the way how he finished the work in such a short time.",
+    "I wonder how he finished the work in such a short time.",
+    "I wonder how the way he finished the work in such a short time.",
+    "I wonder the way which he finished the work in such a short time.",
+    "I wonder what he finished the work in such a short time."
+   ],
+   "answer": 2,
+   "why": "the way와 how는 함께 쓸 수 없으므로 how만 쓴다. ④는 뒤 절이 완전하여 which를 쓸 수 없다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그가 자란 도시는 강으로 유명하다.",
+   "choices": [
+    "The city where he grew up in is famous for its river.",
+    "The city which he grew up is famous for its river.",
+    "The city in which he grew up is famous for its river.",
+    "The city what he grew up is famous for its river.",
+    "The city when he grew up is famous for its river."
+   ],
+   "answer": 3,
+   "why": "grow up in의 in을 앞으로 보낸 in which(= where)가 옳다. ①은 where와 in이 겹치고, ②는 뒤 절이 완전한데 관계대명사를 썼다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  그것이 그녀가 그 제안을 거절한 이유였다.",
+   "choices": [
+    "That was the reason for why she turned down the offer.",
+    "That was the reason which she turned down the offer.",
+    "That was the reason how she turned down the offer.",
+    "That was the reason for which she turned down the offer.",
+    "That was the reason where she turned down the offer."
+   ],
+   "answer": 4,
+   "why": "이유의 관계부사 why는 for which와 같다. ①은 for가 겹쳐 틀리고 ②는 뒤 절이 완전해 관계대명사를 쓸 수 없다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ㉠ The hotel where we stayed at was near the beach.  ㉡ The hotel at which we stayed was near the beach.  ㉢ The hotel which we stayed at was near the beach.  ㉣ The hotel where we stayed was near the beach.  ㉤ The hotel that we stayed at was near the beach.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "㉡㉢㉣㉤이 옳다. ㉠은 where가 이미 at which의 뜻이므로 절 끝의 at이 겹쳐 틀리다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?  ㉠ Tell me the reason why you didn't call me.  ㉡ Tell me the reason for why you didn't call me.  ㉢ Tell me why you didn't call me.  ㉣ Tell me the reason how you didn't call me.  ㉤ Tell me the reason for which you didn't call me.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "㉡은 for why로 for가 겹쳤고 ㉣은 선행사 the reason에 how를 썼으므로 틀리다. 나머지는 모두 옳다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸 ㉠~㉢에 들어갈 말이 순서대로 바르게 짝지어진 것은?  ㉠ The day ____ which the results are announced is Friday.  ㉡ The lab ____ which the experiment was done is closed now.  ㉢ The reason ____ which he was praised is his honesty.",
+   "choices": [
+    "on - in - for",
+    "in - on - for",
+    "on - for - in",
+    "for - in - on",
+    "in - for - on"
+   ],
+   "answer": 1,
+   "why": "날짜·요일에는 on(= when), 장소에는 in(= where), 이유에는 for(= why)를 써서 「전치사＋관계대명사」를 만든다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 두 문장을 서로 바꿔 쓸 수 <u>없는</u> 것은?",
+   "choices": [
+    "This is the house where he lives. / This is the house in which he lives.",
+    "Tell me the reason why she cried. / Tell me the reason for which she cried.",
+    "I know the way he did it. / I know how he did it.",
+    "That is the year when the war began. / That is the year in which the war began.",
+    "The room where she studies is small. / The room which she studies is small."
+   ],
+   "answer": 5,
+   "why": "⑤의 두 번째 문장은 뒤 절이 완전한데 전치사 없는 which를 써서 어법상 틀리므로 바꿔 쓸 수 없다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?  A: Why do you always sit by the window?  B: Because that is the seat ____ I can see the whole playground.",
+   "choices": [
+    "which",
+    "when",
+    "why",
+    "where",
+    "what"
+   ],
+   "answer": 4,
+   "why": "뒤에 완전한 절이 오고 선행사 the seat가 장소를 나타내므로 관계부사 where(= from which)를 쓴다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?  A: Which building is the science lab?  B: It's the one ____ the tall trees are planted.",
+   "choices": [
+    "which",
+    "in front of which",
+    "in front of that",
+    "where of",
+    "what"
+   ],
+   "answer": 2,
+   "why": "'~ 앞에 나무가 심어져 있는'이라는 뜻이므로 「전치사구＋관계대명사」인 in front of which를 쓴다. that은 전치사 뒤에 올 수 없다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장으로만 묶인 것은?  ㄱ. The reason why he succeeded is his effort.  ㄴ. The reason that he succeeded is his effort.  ㄷ. The reason he succeeded is his effort.  ㄹ. The reason which he succeeded is his effort.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄴ, ㄷ",
+    "ㄴ, ㄷ, ㄹ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄱ, ㄴ, ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "관계부사 why는 that으로 바꾸거나 생략할 수 있다. ㄹ은 뒤 절이 완전한데 관계대명사 which를 써서 틀리다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장으로만 묶인 것은?  ㄱ. I visited the town where my mother grew up.  ㄴ. I visited the town which my mother grew up.  ㄷ. I visited the town in which my mother grew up.  ㄹ. I visited the town which my mother grew up in.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄴ, ㄷ, ㄹ",
+    "ㄱ, ㄴ, ㄹ"
+   ],
+   "answer": 3,
+   "why": "ㄴ만 전치사 없이 which를 써서 틀리다. 전치사 in은 관계대명사 앞이나 절 끝에 두어야 한다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 옳지 <u>않은</u> 것은?  Kenya is the country <u>where</u> my aunt has worked for ten years. She teaches at a school <u>in which</u> most students walk two hours to class. She once described the way <u>how</u> the children sing every morning. I hope to visit the place <u>that</u> she loves so much, and I want to see the day <u>when</u> her students graduate.",
+   "choices": [
+    "where",
+    "in which",
+    "how",
+    "that",
+    "when"
+   ],
+   "answer": 3,
+   "why": "the way와 how는 함께 쓸 수 없다. the way in which 또는 how 하나만 써야 한다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 옳지 <u>않은</u> 것은?  The old bookstore <u>where</u> I used to spend every Saturday closed last month. It was the place <u>in which</u> I discovered my favorite writers. I still remember the afternoon <u>when</u> the owner gave me a free book, and the reason <u>for why</u> he did so was simple. That is the shop <u>which</u> I miss the most.",
+   "choices": [
+    "where",
+    "in which",
+    "when",
+    "for why",
+    "which"
+   ],
+   "answer": 4,
+   "why": "why는 그 자체가 for which의 뜻이므로 앞에 for를 또 쓸 수 없다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 옳지 <u>않은</u> 것은?  Every summer my family goes to a small island <u>where there are no cars</u>. We stay in a house <u>which was built</u> by my grandfather. The beach <u>where we swim</u> is only five minutes away. I love the evening <u>when we sit outside</u> and count the stars. That is the reason <u>which I look forward to August</u>.",
+   "choices": [
+    "where there are no cars",
+    "which was built",
+    "where we swim",
+    "when we sit outside",
+    "which I look forward to August"
+   ],
+   "answer": 5,
+   "why": "I look forward to August는 완전한 절이므로 관계대명사 which를 쓸 수 없다. 선행사 the reason에 맞게 why로 고쳐야 한다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸 ㉠, ㉡에 들어갈 말로 알맞은 것은?  Success is not the only thing ㉠____ makes people happy, but happiness often begins at the moment ㉡____ we help others.",
+   "choices": [
+    "which - when",
+    "that - where",
+    "which - where",
+    "where - when",
+    "what - when"
+   ],
+   "answer": 1,
+   "why": "㉠은 makes의 주어 자리가 비어 있으므로 주격 관계대명사 which, ㉡은 시간 선행사 the moment 뒤에 완전한 절이 오므로 관계부사 when을 쓴다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸 ㉠, ㉡에 들어갈 말로 알맞은 것은?  ㉠ The reason ____ he gave us sounded strange.  ㉡ The reason ____ he was absent is still unknown.",
+   "choices": [
+    "why - why",
+    "which - why",
+    "why - which",
+    "which - which",
+    "that - how"
+   ],
+   "answer": 2,
+   "why": "㉠은 gave의 직접목적어 자리가 비어 있으므로 목적격 관계대명사 which, ㉡은 뒤 절이 완전하므로 관계부사 why를 쓴다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸 ㉠, ㉡에 들어갈 말로 알맞은 것은?  ㉠ This is the village ____ he described in his novel.  ㉡ This is the village ____ he wrote his first novel.",
+   "choices": [
+    "where - where",
+    "which - where",
+    "where - which",
+    "which - which",
+    "that - that"
+   ],
+   "answer": 2,
+   "why": "㉠은 described의 목적어가 비어 있으므로 which, ㉡은 뒤 절이 완전하므로 장소의 관계부사 where를 쓴다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것 하나를 고르시오.",
+   "choices": [
+    "Do you know the exact time when the train leaves?",
+    "Do you know the exact time the train leaves?",
+    "Do you know when the train leaves?",
+    "Do you know the exact time at which the train leaves?",
+    "Do you know the exact time which the train leaves?"
+   ],
+   "answer": 5,
+   "why": "the train leaves는 완전한 절이므로 전치사 없는 관계대명사 which는 쓸 수 없다. when, at which를 쓰거나 생략한다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳지 않은 문장 하나를 고르시오.",
+   "choices": [
+    "The way she looks at me makes me nervous.",
+    "How she looks at me makes me nervous.",
+    "The way in which she looks at me makes me nervous.",
+    "The way that she looks at me makes me nervous.",
+    "The way how she looks at me makes me nervous."
+   ],
+   "answer": 5,
+   "why": "the way와 how는 절대 함께 쓰지 않는다. the way, how, the way in which, the way that 네 가지만 가능하다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ㉠ I'd like to visit the country where the movie was filmed.  ㉡ I'd like to visit the country which the movie was filmed.  ㉢ I'd like to visit the country in which the movie was filmed.  ㉣ I'd like to visit the country which the movie was filmed in.  ㉤ I'd like to visit the country where the movie was filmed in.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "㉠㉢㉣이 옳다. ㉡은 전치사가 없어 틀리고, ㉤은 where와 in이 겹쳐 틀리다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 옮길 때 어법상 옳은 것은?  그들이 그 다리를 지은 방식은 매우 특이했다.",
+   "choices": [
+    "The way how they built the bridge was very unusual.",
+    "How the way they built the bridge was very unusual.",
+    "The way in which they built the bridge was very unusual.",
+    "The way which they built the bridge was very unusual.",
+    "The way what they built the bridge was very unusual."
+   ],
+   "answer": 3,
+   "why": "the way 뒤에는 how를 쓸 수 없고, 뒤 절이 완전하므로 which도 쓸 수 없다. in which가 알맞다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 <u>틀린</u> 곳을 바르게 고친 것은?  This is the theater where we watched the musical in.",
+   "choices": [
+    "where → which",
+    "where → when",
+    "watched → watching",
+    "theater → theaters",
+    "in → into"
+   ],
+   "answer": 1,
+   "why": "where는 이미 in which의 뜻이므로 절 끝의 in과 겹친다. where를 목적격 관계대명사 which로 고치면 in의 목적어가 채워져 어법에 맞다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 들어갈 말이 나머지 넷과 <u>다른</u> 것은?",
+   "choices": [
+    "Do you know the reason ____ she quit her job?",
+    "Please tell me the reason ____ you are so upset.",
+    "That is the reason ____ I called you last night.",
+    "This is the office ____ my sister works.",
+    "There are many reasons ____ people move abroad."
+   ],
+   "answer": 4,
+   "why": "④는 선행사가 장소인 the office이므로 where가 들어가고, 나머지는 모두 선행사가 reason(s)이므로 why가 들어간다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 들어갈 말이 나머지 넷과 <u>다른</u> 하나는?",
+   "choices": [
+    "March is the month ____ the new school year begins.",
+    "I remember the day ____ we planted this tree.",
+    "Nine o'clock is the time ____ the store opens.",
+    "The park ____ we planted this tree is now a parking lot.",
+    "Winter is the season ____ I feel most sleepy."
+   ],
+   "answer": 4,
+   "why": "④는 선행사 The park가 장소이므로 where가 들어가고, 나머지는 모두 시간 선행사이므로 when이 들어간다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 옳은 것은?",
+   "choices": [
+    "This is the school <u>where</u> my brother goes to.",
+    "That is the way <u>how</u> she solved it.",
+    "I know the reason <u>for why</u> he left.",
+    "Summer is the season <u>when</u> we eat watermelon.",
+    "The town <u>which</u> I was born is quiet."
+   ],
+   "answer": 4,
+   "why": "④는 시간 선행사에 when을 바르게 썼다. ①은 to가 남아 which, ②는 the way how 불가, ③은 for 중복, ⑤는 뒤 절이 완전하므로 where를 써야 한다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 옳지 <u>않은</u> 것은?  Last winter I joined a program <u>in which</u> students teach English to children. The center <u>where</u> we worked was in a small town. I still remember the morning <u>when</u> a boy called my name for the first time. That was the moment <u>which</u> I understood my teacher's love. Now I know the reason <u>why</u> she chose that job.",
+   "choices": [
+    "in which",
+    "where",
+    "when",
+    "which",
+    "why"
+   ],
+   "answer": 4,
+   "why": "I understood my teacher's love는 완전한 절이므로 관계대명사 which를 쓸 수 없다. 시간 선행사 the moment에 맞게 when으로 고쳐야 한다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 옳지 <u>않은</u> 것은?  Scientists study the ways <u>in which</u> animals communicate. They watch the places <u>where</u> whales gather, record the seasons <u>when</u> birds migrate, and explain the reasons <u>why</u> some species disappear. They also describe the way <u>how</u> bees tell one another about flowers.",
+   "choices": [
+    "in which",
+    "where",
+    "when",
+    "why",
+    "how"
+   ],
+   "answer": 5,
+   "why": "the way 뒤에는 how를 쓸 수 없다. 앞 문장의 the ways in which처럼 in which로 고쳐야 한다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말로 알맞은 것은?  ㉠ I don't like the way ____ he talks to his parents.  ㉡ The book ____ I bought yesterday was on sale.",
+   "choices": [
+    "how",
+    "which",
+    "that",
+    "where",
+    "what"
+   ],
+   "answer": 3,
+   "why": "㉠은 the way 뒤의 관계부사를 대신하는 that, ㉡은 bought의 목적어 자리를 채우는 목적격 관계대명사 that이다. which는 the way 뒤에 쓸 수 없다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 빈칸에 공통으로 들어갈 말로 알맞은 것은?  ㉠ The hospital ____ he was treated is famous for heart surgery.  ㉡ We finally reached the point ____ we had to make a choice.",
+   "choices": [
+    "which",
+    "when",
+    "where",
+    "why",
+    "that"
+   ],
+   "answer": 3,
+   "why": "두 빈칸 모두 뒤에 완전한 절이 오고 선행사가 장소 또는 '지점'을 나타내므로 where를 쓴다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸 ㉠, ㉡에 들어갈 말로 알맞은 것은?  The excuse ㉠____ he gave me was hard to believe, but I understood the reason ㉡____ he lied.",
+   "choices": [
+    "which - why",
+    "why - which",
+    "which - which",
+    "why - why",
+    "that - how"
+   ],
+   "answer": 1,
+   "why": "㉠은 gave의 목적어 자리가 비어 있으므로 목적격 관계대명사 which, ㉡은 뒤 절이 완전하고 선행사가 the reason이므로 why를 쓴다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것 하나를 고르시오.",
+   "choices": [
+    "Tell me the place where you're going to.",
+    "Tell me the place which you're going to.",
+    "Tell me the place when you're going.",
+    "Tell me the place what you're going to.",
+    "Tell me the place how you're going to."
+   ],
+   "answer": 2,
+   "why": "go to의 목적어 자리가 비어 있으므로 목적격 관계대명사 which를 쓴다. where를 쓰려면 to를 없애야 한다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?  ㉠ The way how he dances is amazing.  ㉡ The house which she lives is big.  ㉢ The day when we arrived was rainy.  ㉣ The reason for which he cried is unclear.  ㉤ The city where I visited was crowded.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "㉠은 the way how 불가, ㉡은 뒤 절이 완전한데 which 사용, ㉤은 visited의 목적어가 비어 있는데 where 사용으로 모두 틀리다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장과 바꿔 쓸 수 있는 것은?  This is the beach on which we watched the sunrise.",
+   "choices": [
+    "This is the beach where we watched the sunrise.",
+    "This is the beach when we watched the sunrise.",
+    "This is the beach which we watched the sunrise.",
+    "This is the beach where we watched the sunrise on.",
+    "This is the beach what we watched the sunrise."
+   ],
+   "answer": 1,
+   "why": "장소를 나타내는 「전치사＋관계대명사」 on which는 관계부사 where로 바꿔 쓸 수 있다. ④는 where와 on이 겹친다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장과 바꿔 쓸 수 <u>없는</u> 것은?  I remember the day when I first rode a bike.",
+   "choices": [
+    "I remember the day on which I first rode a bike.",
+    "I remember the day that I first rode a bike.",
+    "I remember the day I first rode a bike.",
+    "I remember when I first rode a bike.",
+    "I remember the day which I first rode a bike."
+   ],
+   "answer": 5,
+   "why": "관계부사 when은 on which, that으로 바꾸거나 생략할 수 있고 선행사를 생략할 수도 있다. 그러나 전치사 없는 which로는 바꿀 수 없다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 관계부사를 「전치사＋관계대명사」로 바르게 바꾼 것끼리 짝지은 것은?  ㄱ. the school <u>where</u> she teaches → at which  ㄴ. the day <u>when</u> we left → in which  ㄷ. the reason <u>why</u> he apologized → for which  ㄹ. the house <u>where</u> he was born → in which",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ, ㄹ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄱ, ㄴ, ㄷ, ㄹ"
+   ],
+   "answer": 4,
+   "why": "ㄴ만 틀리다. 날짜·요일을 나타내는 the day 뒤에는 in which가 아니라 on which를 쓴다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 빈칸 ㉠, ㉡에 들어갈 말로 알맞은 것은?  Venice is a city ㉠____ there are no cars. Visitors are always surprised at ㉡____ people move around: they travel by boat.",
+   "choices": [
+    "where - how",
+    "which - how",
+    "where - the way how",
+    "when - how",
+    "where - which"
+   ],
+   "answer": 1,
+   "why": "㉠은 장소 선행사 뒤 완전한 절이므로 where, ㉡은 '이동하는 방법'을 뜻하는 명사절이므로 how를 쓴다. the way how는 불가하다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 옳지 <u>않은</u> 것은?  I asked my teacher the reason <u>why the sky looks blue</u>. She explained the way <u>in which sunlight travels</u>, and showed me a picture <u>which made everything clear</u>. Then she told me about the day <u>when she first learned it</u>, and the school <u>which she studied physics</u>.",
+   "choices": [
+    "why the sky looks blue",
+    "in which sunlight travels",
+    "which made everything clear",
+    "when she first learned it",
+    "which she studied physics"
+   ],
+   "answer": 5,
+   "why": "she studied physics는 완전한 절이므로 관계대명사 which를 쓸 수 없다. 장소 선행사 the school에 맞게 where(= at which)로 고쳐야 한다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장의 관계부사를 「전치사＋관계대명사」로 바꿔 빈칸에 두 단어를 쓰시오.  This is the cafe where we first met.  → This is the cafe ____ we first met.",
+   "answer": "in which",
+   "alt": [
+    "at which"
+   ],
+   "why": "장소를 나타내는 관계부사 where는 in[at] which로 바꿔 쓸 수 있다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 관계부사를 사용한 문장으로 바꿀 때 빈칸에 한 단어를 쓰시오.  I remember the night on which the storm hit our town.  → I remember the night ____ the storm hit our town.",
+   "answer": "when",
+   "alt": [],
+   "why": "시간을 나타내는 on which는 관계부사 when과 같다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 한 단어로 고치시오.  The island <u>where</u> we visited last summer was very peaceful.",
+   "answer": "which",
+   "alt": [
+    "that"
+   ],
+   "why": "visited의 목적어 자리가 비어 있으므로 관계부사가 아니라 목적격 관계대명사 which[that]를 써야 한다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 두 단어로 고치시오.  Nobody could explain the way <u>how</u> the ancient people moved those huge stones.",
+   "answer": "in which",
+   "alt": [],
+   "why": "the way와 how는 함께 쓸 수 없으므로 the way를 살리려면 how를 in which로 고친다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고치시오.  The hall <u>in that</u> the ceremony was held is being repaired.",
+   "answer": "in which",
+   "alt": [
+    "where"
+   ],
+   "why": "관계대명사 that은 전치사 바로 뒤에 올 수 없다. in which 또는 관계부사 where로 고친다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 한 단어로 고치시오.  She still remembers the reason <u>for why</u> her family moved to Seoul.",
+   "answer": "why",
+   "alt": [
+    "for which"
+   ],
+   "why": "why는 그 자체가 for which의 뜻이므로 앞에 for를 또 쓸 수 없다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장을 관계부사를 사용하여 한 문장으로 완성하시오.  I'll never forget the day. I passed the entrance exam on that day.  → I'll never forget the day ____ I passed the entrance exam.",
+   "answer": "when",
+   "alt": [],
+   "why": "on that day가 시간을 나타내므로 관계부사 when(= on which)으로 잇는다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장을 「전치사＋관계대명사」를 사용하여 한 문장으로 완성하시오. (두 단어)  This is the laboratory. The vaccine was developed in it.  → This is the laboratory ____ the vaccine was developed.",
+   "answer": "in which",
+   "alt": [],
+   "why": "in it의 in을 관계대명사 앞으로 보내 in which로 쓴다. 관계부사 where와 같은 뜻이다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 우리말을 조건에 맞게 영작하시오. (관계부사 where 사용, 9단어)  이곳이 내 부모님이 결혼하신 교회이다.",
+   "answer": "This is the church where my parents got married.",
+   "alt": [
+    "This is the church where my parents were married."
+   ],
+   "why": "장소 선행사 the church 뒤에 관계부사 where가 이끄는 완전한 절을 붙인다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 우리말을 조건에 맞게 영작하시오. (관계부사 how 사용, 7단어)  나는 그녀가 그 문제를 푼 방법을 안다.",
+   "answer": "I know how she solved the problem.",
+   "alt": [],
+   "why": "'~한 방법'은 how가 이끄는 명사절로 쓴다. the way how는 함께 쓸 수 없다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 관계사를 한 단어로 쓰시오. (단, 선행사 the reason이 gave의 목적어임에 유의할 것)  The reason ____ he gave us was not convincing.",
+   "answer": "which",
+   "alt": [
+    "that"
+   ],
+   "why": "gave의 직접목적어 자리가 비어 있으므로 관계부사 why가 아니라 목적격 관계대명사 which[that]를 쓴다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 빈칸에 알맞은 관계부사를 한 단어로 쓰시오.  There are some cases ____ this rule does not apply.",
+   "answer": "where",
+   "alt": [
+    "in which"
+   ],
+   "why": "cases처럼 '상황·경우'를 나타내는 선행사 뒤에도 관계부사 where(= in which)를 쓴다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것을 고르시오.  The company (where, which) she works for is in Busan.",
+   "answer": "which",
+   "alt": [],
+   "why": "절 끝의 전치사 for에 목적어가 없으므로 목적격 관계대명사 which를 써야 한다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것을 고르시오.  The stage (where, which) the band performed was very small.",
+   "answer": "where",
+   "alt": [],
+   "why": "the band performed가 완전한 절이고 선행사가 장소이므로 관계부사 where를 쓴다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 괄호 안에서 어법상 알맞은 것을 고르시오.  He explained (the way how, the way in which) the system works.",
+   "answer": "the way in which",
+   "alt": [],
+   "why": "the way와 how는 함께 쓸 수 없고, the way 뒤에는 in which를 쓴다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 한 단어로 고치시오.  We visited the village <u>when</u> my grandmother spent her childhood.",
+   "answer": "where",
+   "alt": [
+    "in which"
+   ],
+   "why": "선행사 the village는 장소이므로 시간의 when이 아니라 where를 써야 한다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 the way를 쓰지 않고 같은 뜻이 되도록 빈칸에 한 단어를 쓰시오.  I like the way in which she smiles.  → I like ____ she smiles.",
+   "answer": "how",
+   "alt": [],
+   "why": "the way in which는 관계부사 how 하나로 바꿔 쓸 수 있다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 관계부사를 생략하고 문장 전체를 다시 쓰시오.  Tell me the reason why you were absent.",
+   "answer": "Tell me the reason you were absent.",
+   "alt": [],
+   "why": "the reason처럼 일반적인 선행사가 있을 때 관계부사 why는 생략할 수 있다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 관계부사를 사용하여 문장 전체를 다시 쓰시오.  This is the town in which the famous poet was born.",
+   "answer": "This is the town where the famous poet was born.",
+   "alt": [],
+   "why": "장소를 나타내는 in which는 관계부사 where로 바꿔 쓸 수 있다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 우리말을 조건에 맞게 영작하시오. (관계부사 when 사용, 10단어)  나는 우리가 함께 그 산에 올랐던 날을 기억한다.",
+   "answer": "I remember the day when we climbed the mountain together.",
+   "alt": [],
+   "why": "시간 선행사 the day 뒤에 관계부사 when이 이끄는 완전한 절을 붙인다.",
+   "no": 200
+  }
+ ]
+}

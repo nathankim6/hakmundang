@@ -1,0 +1,2666 @@
+{
+ "id": "m2-10",
+ "grade": "중2",
+ "name": "조동사 관용 표현",
+ "points": [
+  "used to·would",
+  "had better",
+  "would like to·need to"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She ____ live in Busan, but now she lives in Seoul.",
+   "choices": [
+    "uses to",
+    "is used to",
+    "used",
+    "use to",
+    "used to"
+   ],
+   "answer": 5,
+   "why": "과거의 상태·습관은 「used to+동사원형」. use to/uses to 같은 형태는 없고, is used to는 뒤에 -ing가 와야 한다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "You ____ better hurry, or you will miss the bus.",
+   "choices": [
+    "did",
+    "are",
+    "would",
+    "have",
+    "had"
+   ],
+   "answer": 5,
+   "why": "'~하는 게 좋겠다'는 「had better+동사원형」. have better, would better 같은 형태는 쓰지 않는다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I would like ____ a cup of tea.",
+   "choices": [
+    "had",
+    "to having",
+    "have",
+    "having",
+    "to have"
+   ],
+   "answer": 5,
+   "why": "would like 뒤에는 to부정사가 온다. would like having/have는 쓰지 않는다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "We need ____ some water for the trip.",
+   "choices": [
+    "buying",
+    "bought",
+    "to buying",
+    "buy",
+    "to buy"
+   ],
+   "answer": 5,
+   "why": "need가 일반동사로 쓰이면 뒤에 to부정사가 온다. need buying은 틀린 형태다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "When I was young, I ____ play in this park every day.",
+   "choices": [
+    "will",
+    "would to",
+    "am going to",
+    "would be",
+    "would"
+   ],
+   "answer": 5,
+   "why": "과거에 반복하던 동작은 「would+동사원형」으로 나타낸다. every day와 was가 과거임을 알려 준다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He had better ____ to bed early tonight.",
+   "choices": [
+    "goes",
+    "to go",
+    "going",
+    "go",
+    "went"
+   ],
+   "answer": 4,
+   "why": "had better 뒤에는 반드시 동사원형이 온다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "There ____ be a big tree here, but it is gone now.",
+   "choices": [
+    "is used to",
+    "had better",
+    "would like to",
+    "would",
+    "used to"
+   ],
+   "answer": 5,
+   "why": "'예전에 ~이 있었다'는 상태이므로 used to를 쓴다. would는 과거의 반복 동작에만 쓰고 상태에는 쓰지 않는다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "____ you like to join us for dinner?",
+   "choices": [
+    "Did",
+    "Have",
+    "Do",
+    "Are",
+    "Would"
+   ],
+   "answer": 5,
+   "why": "'~하시겠어요?'라고 정중히 권할 때는 Would you like to ~?를 쓴다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "You'd better ____ late again.",
+   "choices": [
+    "be not",
+    "don't be",
+    "not to be",
+    "to not be",
+    "not be"
+   ],
+   "answer": 5,
+   "why": "had better의 부정은 「had better not+동사원형」이다. not이 better 바로 뒤에 온다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I ____ finish this report before Friday.",
+   "choices": [
+    "needs to",
+    "needing to",
+    "to need",
+    "need",
+    "need to"
+   ],
+   "answer": 5,
+   "why": "'~해야 한다, ~할 필요가 있다'는 need to+동사원형. 주어가 I이므로 needs는 쓸 수 없다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My father ____ smoke, but he quit five years ago.",
+   "choices": [
+    "is used to",
+    "uses to",
+    "use to",
+    "used",
+    "used to"
+   ],
+   "answer": 5,
+   "why": "지금은 하지 않는 과거의 습관이므로 used to+동사원형을 쓴다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Sujin ____ like to become a pilot someday.",
+   "choices": [
+    "has",
+    "was",
+    "is",
+    "does",
+    "would"
+   ],
+   "answer": 5,
+   "why": "'~하고 싶다'는 would like to+동사원형이다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It is raining. You had better ____ an umbrella.",
+   "choices": [
+    "takes",
+    "to take",
+    "taking",
+    "took",
+    "take"
+   ],
+   "answer": 5,
+   "why": "had better 다음에는 동사원형만 올 수 있다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Do we ____ to bring our own towels?",
+   "choices": [
+    "needing",
+    "needed",
+    "to need",
+    "need",
+    "needs"
+   ],
+   "answer": 4,
+   "why": "조동사 Do가 앞에 있으므로 뒤에는 동사원형 need가 온다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I used to ____ afraid of dogs, but not anymore.",
+   "choices": [
+    "am",
+    "being",
+    "was",
+    "been",
+    "be"
+   ],
+   "answer": 5,
+   "why": "used to 뒤에는 동사원형이 오므로 be가 맞다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She ____ to walk to school every morning when she was ten.",
+   "choices": [
+    "using",
+    "would",
+    "use",
+    "used",
+    "uses"
+   ],
+   "answer": 4,
+   "why": "과거의 습관은 used to+동사원형. would는 뒤에 to가 올 수 없다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "We'd better ____ now. The movie starts in ten minutes.",
+   "choices": [
+    "left",
+    "leaves",
+    "leaving",
+    "to leave",
+    "leave"
+   ],
+   "answer": 5,
+   "why": "'d better는 had better의 줄임말이므로 뒤에 동사원형이 온다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Would you like ____ some juice?",
+   "choices": [
+    "drank",
+    "drinks",
+    "drink",
+    "to drink",
+    "drinking"
+   ],
+   "answer": 4,
+   "why": "would like 뒤에 동사가 오면 to부정사 형태여야 한다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My brother doesn't need ____ up early on Sundays.",
+   "choices": [
+    "getting",
+    "gets",
+    "got",
+    "get",
+    "to get"
+   ],
+   "answer": 5,
+   "why": "need의 부정도 「don't/doesn't need to+동사원형」 형태를 지킨다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "When she was a child, she would ____ stories to her sister.",
+   "choices": [
+    "tell",
+    "tells",
+    "telling",
+    "to tell",
+    "told"
+   ],
+   "answer": 1,
+   "why": "would는 조동사이므로 뒤에 동사원형이 온다. 과거의 반복된 행동을 나타낸다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Mina ____ better not eat too much candy.",
+   "choices": [
+    "would",
+    "has",
+    "have",
+    "had",
+    "did"
+   ],
+   "answer": 4,
+   "why": "'~하지 않는 게 좋겠다'는 had better not+동사원형이다. 주어가 3인칭이어도 had를 쓴다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Junho ____ to buy a new backpack because his is broken.",
+   "choices": [
+    "needing",
+    "are needing",
+    "need to",
+    "need",
+    "needs"
+   ],
+   "answer": 5,
+   "why": "주어가 3인칭 단수이고 현재 상황이므로 needs to가 알맞다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은?",
+   "choices": [
+    "I used to play the piano.",
+    "She would like to go home.",
+    "You had better to see a doctor.",
+    "We need to leave now.",
+    "He didn't use to like carrots."
+   ],
+   "answer": 3,
+   "why": "had better 뒤에는 to 없이 동사원형이 온다. → You had better see a doctor.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: I have a bad cold.  B: You'd better ____ some rest.",
+   "choices": [
+    "get",
+    "to get",
+    "getting",
+    "got",
+    "gets"
+   ],
+   "answer": 1,
+   "why": "'d better(=had better) 뒤에는 동사원형 get이 온다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?  나는 매운 음식을 먹고 싶다.",
+   "choices": [
+    "I would like eat spicy food.",
+    "I would like to eat spicy food.",
+    "I would like to eating spicy food.",
+    "I would to like eat spicy food.",
+    "I will like eat spicy food."
+   ],
+   "answer": 2,
+   "why": "'~하고 싶다'는 would like to+동사원형이므로 would like to eat이 맞다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말로 바르게 짝지어진 것은?  (A) He ____ to be shy.  (B) You had better ____ now.",
+   "choices": [
+    "use – starting",
+    "used – started",
+    "use – start",
+    "used – start",
+    "used – to start"
+   ],
+   "answer": 4,
+   "why": "(A)는 과거의 상태를 나타내는 used to, (B)는 had better 뒤이므로 동사원형 start가 알맞다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Ten years ago, this building ____ be a small library.",
+   "choices": [
+    "needs to",
+    "would like to",
+    "would",
+    "had better",
+    "used to"
+   ],
+   "answer": 5,
+   "why": "'예전에는 ~였다'는 과거의 상태이므로 used to be를 쓴다. would는 상태에 쓰지 않는다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I ____ like to ask you a question.",
+   "choices": [
+    "would",
+    "will",
+    "am",
+    "was",
+    "have"
+   ],
+   "answer": 1,
+   "why": "would like to는 '~하고 싶다'를 뜻하는 정중한 표현이다. will/am/was/have는 like 앞에 쓸 수 없다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "You had better not ____ your phone in class.",
+   "choices": [
+    "used",
+    "using",
+    "to use",
+    "use",
+    "uses"
+   ],
+   "answer": 4,
+   "why": "had better not 뒤에도 동사원형이 온다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Nari needs ____ her room this evening.",
+   "choices": [
+    "cleaning",
+    "cleaned",
+    "clean",
+    "cleans",
+    "to clean"
+   ],
+   "answer": 5,
+   "why": "need+to부정사 형태로 '~할 필요가 있다'를 나타낸다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "We used to ____ soccer after school.",
+   "choices": [
+    "to play",
+    "played",
+    "playing",
+    "play",
+    "plays"
+   ],
+   "answer": 4,
+   "why": "used to 뒤에는 동사원형 play가 온다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "____ better take the subway. The traffic is terrible.",
+   "choices": [
+    "You'd",
+    "You'll",
+    "You're",
+    "You've",
+    "You"
+   ],
+   "answer": 1,
+   "why": "You'd better는 You had better의 줄임말이다. You'll/You're 뒤에는 better를 이렇게 쓰지 않는다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "He would like ____ a doctor in the future.",
+   "choices": [
+    "been",
+    "is",
+    "be",
+    "being",
+    "to be"
+   ],
+   "answer": 5,
+   "why": "would like 뒤에는 to부정사가 오므로 to be가 알맞다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "The baby is sleeping. We'd better ____ quiet.",
+   "choices": [
+    "are",
+    "to be",
+    "being",
+    "be",
+    "been"
+   ],
+   "answer": 4,
+   "why": "had better 뒤에는 동사원형이 오므로 be quiet가 맞다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Did you ____ to live near the beach?",
+   "choices": [
+    "uses",
+    "be used",
+    "used",
+    "use",
+    "using"
+   ],
+   "answer": 4,
+   "why": "의문문에서 Did가 앞에 나오면 뒤에는 동사원형 use를 써서 Did you use to ~?가 된다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "You don't need ____ worry about the test.",
+   "choices": [
+    "to",
+    "for",
+    "of",
+    "with",
+    "at"
+   ],
+   "answer": 1,
+   "why": "need는 to부정사를 목적어로 취하므로 need to worry가 맞다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 알맞은 문장은?",
+   "choices": [
+    "She would likes to sing.",
+    "We had better going home.",
+    "I used to living in Daegu.",
+    "They need to practice more.",
+    "He use to be a runner."
+   ],
+   "answer": 4,
+   "why": "need to+동사원형이 바르게 쓰였다. would 뒤에는 like, had better와 used to 뒤에는 동사원형이 와야 하고, 과거의 습관은 used to이다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: Would you like to watch a movie?  B: ____",
+   "choices": [
+    "Yes, I'd love to.",
+    "Yes, I would like.",
+    "No, I don't like to be.",
+    "Yes, I will like.",
+    "No, I'm not."
+   ],
+   "answer": 1,
+   "why": "Would you like to ~?에는 Yes, I'd love to.처럼 답한다. would like는 뒤에 to부정사나 명사가 있어야 한다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "My grandmother ____ tell me funny stories every summer.",
+   "choices": [
+    "would",
+    "will",
+    "is",
+    "has",
+    "would to"
+   ],
+   "answer": 1,
+   "why": "과거에 반복된 행동은 would+동사원형으로 나타낸다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "It's already midnight. You'd better ____ home.",
+   "choices": [
+    "goes",
+    "went",
+    "going",
+    "to go",
+    "go"
+   ],
+   "answer": 5,
+   "why": "had better 다음에는 동사원형 go가 온다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "I need ____ new shoes for the field trip.",
+   "choices": [
+    "buys",
+    "buy",
+    "buying",
+    "to buy",
+    "bought"
+   ],
+   "answer": 4,
+   "why": "'~할 필요가 있다'는 need to+동사원형이다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "She ____ use to like coffee, but now she drinks it every day.",
+   "choices": [
+    "didn't",
+    "doesn't",
+    "wasn't",
+    "isn't",
+    "hasn't"
+   ],
+   "answer": 1,
+   "why": "used to의 부정은 didn't use to로, did가 나오면 use는 원형이 된다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "Would you like ____ or coffee?",
+   "choices": [
+    "tea",
+    "to tea",
+    "drink tea",
+    "teaing",
+    "to teaing"
+   ],
+   "answer": 1,
+   "why": "would like 뒤에는 명사도 올 수 있다. Would you like tea or coffee?는 자연스러운 권유 표현이다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "You had better ____ your homework first.",
+   "choices": [
+    "finished",
+    "finishing",
+    "to finish",
+    "finish",
+    "finishes"
+   ],
+   "answer": 4,
+   "why": "had better+동사원형이므로 finish가 맞다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "They used to ____ neighbors, but now they live far apart.",
+   "choices": [
+    "are",
+    "be",
+    "being",
+    "were",
+    "been"
+   ],
+   "answer": 2,
+   "why": "used to 뒤에는 동사원형이 오므로 be neighbors가 맞다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분이 어법상 틀린 것은?",
+   "choices": [
+    "I <u>used to</u> ride my bike to school.",
+    "You had better <u>call</u> her now.",
+    "She would like <u>to join</u> the club.",
+    "We need <u>to leave</u> early.",
+    "He would <u>likes</u> to go home."
+   ],
+   "answer": 5,
+   "why": "would는 조동사이므로 뒤에 동사원형 like가 와야 한다. → He would like to go home.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "A: Do I need to bring my textbook?  B: No, you ____.",
+   "choices": [
+    "need not to",
+    "don't need to",
+    "doesn't need to",
+    "not need to",
+    "don't need"
+   ],
+   "answer": 2,
+   "why": "need to의 부정은 don't need to이다. need not 뒤에는 to를 쓰지 않는다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말과 같은 뜻이 되도록 할 때 알맞은 것은?  너는 손을 씻는 게 좋겠다. → You ____ wash your hands.",
+   "choices": [
+    "had better",
+    "would like to",
+    "used to",
+    "need",
+    "would"
+   ],
+   "answer": 1,
+   "why": "'~하는 게 좋겠다'는 충고의 뜻이므로 had better가 알맞다. need는 뒤에 to가 있어야 한다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.  She used to (live) ____ in a small village.",
+   "answer": "live",
+   "alt": [],
+   "why": "used to 뒤에는 동사원형이 오므로 live를 그대로 쓴다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.  You had better <u>to rest</u> today.",
+   "answer": "rest",
+   "alt": [],
+   "why": "had better 뒤에는 to 없이 동사원형이 온다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.  I would ____ to drink some water.",
+   "answer": "like",
+   "alt": [],
+   "why": "'~하고 싶다'는 would like to+동사원형이다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.  You ____ better wear a coat. It is cold.",
+   "answer": "had",
+   "alt": [
+    "'d"
+   ],
+   "why": "'~하는 게 좋겠다'는 had better+동사원형이다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.  We need (finish) ____ our project today.",
+   "answer": "to finish",
+   "alt": [],
+   "why": "need는 to부정사를 목적어로 취한다.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.  He <u>use to</u> be a soccer player.",
+   "answer": "used to",
+   "alt": [],
+   "why": "과거의 상태를 나타낼 때는 used to를 쓴다. use to라는 형태는 없다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 두 단어를 쓰시오.  나는 피자를 먹고 싶다. → I would ____ ____ eat pizza.",
+   "answer": "like to",
+   "alt": [],
+   "why": "would like to+동사원형이 '~하고 싶다'는 뜻이다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.  You had better <u>not to go</u> out alone at night.",
+   "answer": "not go",
+   "alt": [],
+   "why": "had better의 부정은 had better not+동사원형이다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. (과거의 습관을 나타내는 조동사)  When I was six, I ____ cry a lot.",
+   "answer": "would",
+   "alt": [],
+   "why": "과거에 반복되던 행동은 would+동사원형으로 나타낸다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.  Minsu doesn't need (bring) ____ his lunch.",
+   "answer": "to bring",
+   "alt": [],
+   "why": "부정문에서도 need 뒤에는 to부정사가 온다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.  I used to <u>playing</u> the violin.",
+   "answer": "play",
+   "alt": [],
+   "why": "used to 뒤에는 동사원형이 온다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.  Would you ____ to sit here?",
+   "answer": "like",
+   "alt": [],
+   "why": "권유하는 표현은 Would you like to+동사원형이다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 부정문으로 바꿔 쓸 때 빈칸을 채우시오.  You had better touch the hot pan. → You ____ ____ ____ touch the hot pan.",
+   "answer": "had better not",
+   "alt": [],
+   "why": "had better의 부정은 not을 better 뒤에 붙여 had better not으로 쓴다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.  She would like (visit) ____ Jeju Island.",
+   "answer": "to visit",
+   "alt": [],
+   "why": "would like 뒤에는 to부정사가 온다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.  We need <u>study</u> for the exam.",
+   "answer": "to study",
+   "alt": [],
+   "why": "need가 일반동사로 쓰이면 목적어로 to부정사를 취한다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. (지금은 빵집이 없음)  There ____ to be a bakery on this street.",
+   "answer": "used",
+   "alt": [],
+   "why": "'예전에 ~이 있었다'는 There used to be ~로 나타낸다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 의문문으로 바꿔 쓸 때 빈칸을 채우시오.  You would like to order now. → ____ you like to order now?",
+   "answer": "Would",
+   "alt": [
+    "would"
+   ],
+   "why": "would가 조동사이므로 주어 앞으로 보내 의문문을 만든다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.  I'd better <u>leaving</u> now.",
+   "answer": "leave",
+   "alt": [],
+   "why": "'d better는 had better의 줄임말이므로 뒤에 동사원형이 온다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말에 맞게 빈칸에 알맞은 두 단어를 쓰시오.  그는 의사를 만날 필요가 있다. → He needs ____ ____ a doctor.",
+   "answer": "to see",
+   "alt": [],
+   "why": "need+to부정사로 '~할 필요가 있다'를 나타낸다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.  They used to (be) ____ good friends.",
+   "answer": "be",
+   "alt": [],
+   "why": "used to 뒤에는 동사원형이 오므로 be가 알맞다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "My uncle ____ live in Canada, but he moved back to Korea last year.",
+   "choices": [
+    "is used to",
+    "would like to",
+    "would",
+    "was used to",
+    "used to"
+   ],
+   "answer": 5,
+   "why": "과거의 상태를 나타내므로 used to+동사원형이 알맞다. would는 과거의 반복 동작에만 쓴다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "I am used to ____ up early because of my part-time job.",
+   "choices": [
+    "got",
+    "get",
+    "gets",
+    "getting",
+    "to get"
+   ],
+   "answer": 4,
+   "why": "be used to+동명사는 '~하는 데 익숙하다'는 뜻이다. used to+동사원형과 구별해야 한다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳지 않은 것은?",
+   "choices": [
+    "We used to go camping every summer.",
+    "She would visit her grandparents on weekends.",
+    "There would be a small pond in the garden.",
+    "You had better not stay up too late.",
+    "I need to talk to you about something."
+   ],
+   "answer": 3,
+   "why": "would는 과거의 반복 '동작'에만 쓰고 '있었다'와 같은 상태에는 쓰지 않는다. → There used to be a small pond.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "It's getting dark. We'd better ____ back before it rains.",
+   "choices": [
+    "heads",
+    "headed",
+    "heading",
+    "to head",
+    "head"
+   ],
+   "answer": 5,
+   "why": "'d better(=had better) 뒤에는 동사원형이 온다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말은?  • I would ____ to invite you to my birthday party.  • Would you ____ another slice of cake?",
+   "choices": [
+    "like",
+    "enjoy",
+    "hope",
+    "wish",
+    "think"
+   ],
+   "answer": 1,
+   "why": "would like는 뒤에 to부정사와 명사를 모두 취할 수 있어 두 문장 모두 자연스럽다. 나머지는 두 자리 중 한쪽에서 성립하지 않는다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말과 같도록 할 때 빈칸에 알맞은 것은?  너는 그렇게 많은 돈을 쓰지 않는 게 좋겠다.  → You ____ spend that much money.",
+   "choices": [
+    "not had better",
+    "had not better",
+    "don't had better",
+    "had better not",
+    "had better don't"
+   ],
+   "answer": 4,
+   "why": "had better의 부정은 not을 better 바로 뒤에 붙인 had better not이다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Ms. Park ____ to teach at our school, but she works at a hospital now.",
+   "choices": [
+    "uses",
+    "used",
+    "is used",
+    "would",
+    "was used"
+   ],
+   "answer": 2,
+   "why": "과거의 사실을 나타내는 used to+동사원형이다. is used to는 뒤에 동명사나 명사가 온다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A: Do I need to sign this form?  B: No, you ____. Your name is enough.",
+   "choices": [
+    "must not",
+    "don't need it",
+    "need to",
+    "don't need",
+    "needn't"
+   ],
+   "answer": 5,
+   "why": "need를 조동사로 쓰면 needn't(=don't need to)로 '~할 필요 없다'를 나타낸다. must not은 '금지'라 뜻이 다르다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "When we were kids, my brother and I ____ build sandcastles at the beach.",
+   "choices": [
+    "would",
+    "should",
+    "had better",
+    "would like to",
+    "are used to"
+   ],
+   "answer": 1,
+   "why": "과거에 반복해서 하던 일이므로 would+동사원형이 알맞다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분의 쓰임이 나머지 넷과 다른 것은?",
+   "choices": [
+    "I <u>used to</u> take the bus to school.",
+    "She <u>used to</u> have long hair.",
+    "He is <u>used to</u> living alone.",
+    "They <u>used to</u> argue a lot.",
+    "We <u>used to</u> visit that museum."
+   ],
+   "answer": 3,
+   "why": "③은 be used to+동명사로 '~에 익숙하다'는 뜻이고, 나머지는 used to+동사원형으로 과거의 습관·상태를 나타낸다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "You look tired. You'd better ____ a break.",
+   "choices": [
+    "takes",
+    "taking",
+    "to take",
+    "take",
+    "took"
+   ],
+   "answer": 4,
+   "why": "had better 뒤에는 반드시 동사원형이 온다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "I'd like ____ two tickets for the 7 o'clock show.",
+   "choices": [
+    "booked",
+    "to booking",
+    "book",
+    "booking",
+    "to book"
+   ],
+   "answer": 5,
+   "why": "I'd like는 I would like이므로 뒤에 to부정사가 온다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "My sister ____ used to spicy food, so she can eat kimchi jjigae easily.",
+   "choices": [
+    "is",
+    "did",
+    "was not",
+    "used",
+    "would"
+   ],
+   "answer": 1,
+   "why": "be used to+명사는 '~에 익숙하다'는 뜻이다. 뒤 절이 현재이므로 is가 알맞다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말로 알맞게 짝지어진 것은?  (A) He ____ to work at a bank ten years ago.  (B) Now he is ____ to working at night.",
+   "choices": [
+    "used – used",
+    "use – used",
+    "used – use",
+    "using – used",
+    "used – using"
+   ],
+   "answer": 1,
+   "why": "(A)는 과거의 사실 used to+동사원형, (B)는 be used to+동명사 '익숙하다'로 둘 다 used가 들어간다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A: I have a math test tomorrow.  B: Then you ____ play games all night.",
+   "choices": [
+    "had better",
+    "would like to",
+    "need to",
+    "had better not",
+    "used to"
+   ],
+   "answer": 4,
+   "why": "시험 전이므로 '게임을 하지 않는 게 좋겠다'는 충고가 자연스럽다. had better not+동사원형.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Everyone needs ____ a mask in the hospital.",
+   "choices": [
+    "worn",
+    "wear",
+    "wears",
+    "to wear",
+    "wearing"
+   ],
+   "answer": 4,
+   "why": "need는 to부정사를 목적어로 취한다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은?",
+   "choices": [
+    "I didn't used to like math.",
+    "She had better goes now.",
+    "We would like ordering pizza.",
+    "He needs to return the book today.",
+    "They are used to eat with chopsticks."
+   ],
+   "answer": 4,
+   "why": "need to+동사원형이 바르게 쓰였다. ①은 use to, ②는 go, ③은 to order, ⑤는 eating으로 고쳐야 한다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The weather is nice. Would you like ____ for a walk?",
+   "choices": [
+    "went",
+    "to going",
+    "go",
+    "going",
+    "to go"
+   ],
+   "answer": 5,
+   "why": "Would you like 뒤에 동사가 오면 to부정사로 쓴다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?  나는 예전에 매일 일기를 쓰곤 했다.",
+   "choices": [
+    "I used to writing a diary every day.",
+    "I was used to write a diary every day.",
+    "I used to write a diary every day.",
+    "I use to write a diary every day.",
+    "I am used to write a diary every day."
+   ],
+   "answer": 3,
+   "why": "과거의 습관은 used to+동사원형이다. be used to는 뒤에 동명사가 와야 하고 뜻도 '익숙하다'로 다르다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "I ____ like to say something before we finish.",
+   "choices": [
+    "would",
+    "will",
+    "am",
+    "was",
+    "have"
+   ],
+   "answer": 1,
+   "why": "would like to는 '~하고 싶다'는 뜻의 관용 표현이다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "You ____ better take notes during the lecture.",
+   "choices": [
+    "would",
+    "should",
+    "had",
+    "have",
+    "did"
+   ],
+   "answer": 3,
+   "why": "충고를 나타내는 표현은 had better+동사원형이다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "I ____ used to the hot weather here yet.",
+   "choices": [
+    "am not",
+    "don't",
+    "didn't",
+    "was not been",
+    "not am"
+   ],
+   "answer": 1,
+   "why": "be used to+명사는 '~에 익숙하다'. yet이 있으므로 현재시제 부정 am not이 알맞다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Sora doesn't need ____ about the deadline. She already finished.",
+   "choices": [
+    "worry",
+    "worries",
+    "to worry",
+    "worrying",
+    "worried"
+   ],
+   "answer": 3,
+   "why": "don't/doesn't need 뒤에도 to부정사가 온다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 옳은 문장의 개수는?  ㄱ. He used to lives here.  ㄴ. You had better hurry up.  ㄷ. I would like to have some soup.  ㄹ. We need bring our passports.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ㄴ, ㄷ 두 개가 옳다. ㄱ은 used to live, ㄹ은 need to bring으로 고쳐야 한다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "During the summer, my father ____ take us fishing at the lake.",
+   "choices": [
+    "would",
+    "will",
+    "would like",
+    "is used to",
+    "had better"
+   ],
+   "answer": 1,
+   "why": "과거에 반복된 행동이므로 would+동사원형이 알맞다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A: Would you like something to drink?  B: ____",
+   "choices": [
+    "Yes, please. Water would be great.",
+    "Yes, I like.",
+    "No, I wouldn't like.",
+    "Yes, I do.",
+    "No, I don't like to."
+   ],
+   "answer": 1,
+   "why": "Would you like ~?에 대한 자연스러운 대답은 Yes, please.이다. 나머지는 어법이나 대화 흐름에 맞지 않는다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "It ____ to take three hours to get there, but now the new road makes it faster.",
+   "choices": [
+    "uses",
+    "used",
+    "is used",
+    "would",
+    "was used"
+   ],
+   "answer": 2,
+   "why": "'예전에는 ~했다'는 used to+동사원형이다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "We had better ____ the police right away.",
+   "choices": [
+    "calling",
+    "to call",
+    "call",
+    "called",
+    "calls"
+   ],
+   "answer": 3,
+   "why": "had better 뒤에는 동사원형이 온다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장에서 밑줄 친 부분 중 어법상 틀린 것은?  Jinho <u>would like</u> <u>to join</u> the club, but he <u>need</u> <u>to get</u> his parents' <u>permission</u> first.",
+   "choices": [
+    "would like",
+    "to join",
+    "need",
+    "to get",
+    "permission"
+   ],
+   "answer": 3,
+   "why": "주어 he가 3인칭 단수이고 현재시제이므로 need가 아니라 needs가 되어야 한다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Long ago, people ____ to write letters by hand.",
+   "choices": [
+    "use",
+    "used",
+    "using",
+    "are used",
+    "would"
+   ],
+   "answer": 2,
+   "why": "과거의 습관을 나타내는 used to+동사원형이다. would 뒤에는 to를 쓰지 않는다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Would you like me ____ you with your bags?",
+   "choices": [
+    "help",
+    "to help",
+    "helping",
+    "helps",
+    "helped"
+   ],
+   "answer": 2,
+   "why": "would like+목적어+to부정사로 '~가 …해 주기를 바라다'를 나타낸다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말에 맞는 것은?  너는 지금 출발하는 게 좋겠다.",
+   "choices": [
+    "You had better started now.",
+    "You'd better start now.",
+    "You better to start now.",
+    "You had better starting now.",
+    "You would better start now."
+   ],
+   "answer": 2,
+   "why": "'d better는 had better의 줄임말이고 뒤에는 동사원형이 온다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "I am not used to ____ in front of many people.",
+   "choices": [
+    "speak",
+    "speaks",
+    "speaking",
+    "spoke",
+    "to speak"
+   ],
+   "answer": 3,
+   "why": "be used to 뒤에는 동명사가 와서 '~하는 데 익숙하다'는 뜻이 된다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "You need ____ your ticket at the gate.",
+   "choices": [
+    "show",
+    "to show",
+    "showing",
+    "shows",
+    "showed"
+   ],
+   "answer": 2,
+   "why": "need+to부정사 형태로 쓴다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A: This soup is too salty.  B: You'd better ____ some water to it.",
+   "choices": [
+    "add",
+    "adds",
+    "adding",
+    "to add",
+    "added"
+   ],
+   "answer": 1,
+   "why": "had better 뒤에는 동사원형 add가 온다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 것은?",
+   "choices": [
+    "I used to be scared of the dark.",
+    "She'd better not skip breakfast.",
+    "We would like to reserve a table.",
+    "They need to leaving early.",
+    "He didn't use to enjoy reading."
+   ],
+   "answer": 4,
+   "why": "need 뒤에는 to부정사가 오므로 need to leave가 되어야 한다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말과 같도록 빈칸에 알맞은 것은?  그는 예전에는 안경을 쓰지 않았다. → He ____ wear glasses.",
+   "choices": [
+    "didn't used to",
+    "used not",
+    "didn't use to",
+    "not used to",
+    "doesn't use to"
+   ],
+   "answer": 3,
+   "why": "used to의 부정은 didn't use to이다. did 뒤에는 동사원형 use가 온다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "The children ____ to playing outside after school.",
+   "choices": [
+    "use",
+    "used",
+    "are used",
+    "would",
+    "had better"
+   ],
+   "answer": 3,
+   "why": "뒤에 playing이라는 동명사가 있으므로 be used to(~에 익숙하다)가 알맞다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장의 빈칸에 들어갈 수 없는 것은?  You had better ____ to the doctor.",
+   "choices": [
+    "go",
+    "talk",
+    "not go",
+    "went",
+    "listen"
+   ],
+   "answer": 4,
+   "why": "had better 뒤에는 동사원형만 올 수 있으므로 과거형 went는 쓸 수 없다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Ten years ago, I ____ ride my bike to school every day, but now I take the subway.",
+   "choices": [
+    "would",
+    "should",
+    "am used to",
+    "would like to",
+    "had better"
+   ],
+   "answer": 1,
+   "why": "과거에 반복하던 행동이므로 would+동사원형이 알맞다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장이 같은 뜻이 되도록 할 때 빈칸에 알맞은 것은?  You don't have to hurry. = You ____ hurry.",
+   "choices": [
+    "don't need to",
+    "need to not",
+    "not need to",
+    "don't need",
+    "need don't"
+   ],
+   "answer": 1,
+   "why": "don't have to와 don't need to는 '~할 필요가 없다'로 뜻이 같다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "Would you like ____ a message?",
+   "choices": [
+    "leave",
+    "to leave",
+    "leaving",
+    "left",
+    "leaves"
+   ],
+   "answer": 2,
+   "why": "would like 뒤에 동사가 오면 to부정사로 쓴다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?  ㄱ. We used to living in Seoul.  ㄴ. You had better not be late.  ㄷ. She needs to sleeps more.  ㄹ. I would like to try this jacket on.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ㄴ, ㄹ 두 개가 옳다. ㄱ은 used to live, ㄷ은 needs to sleep으로 고쳐야 한다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "A: I've gained a lot of weight.  B: You ____ exercise more often.",
+   "choices": [
+    "had better to",
+    "would like",
+    "need to",
+    "used to",
+    "are used to"
+   ],
+   "answer": 3,
+   "why": "'~할 필요가 있다'는 need to+동사원형이다. had better to는 to가 불필요하고, would like 뒤에는 to부정사가 와야 한다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "My mom ____ me a bedtime story every night when I was little.",
+   "choices": [
+    "would read",
+    "would to read",
+    "used read",
+    "is used to read",
+    "had better read"
+   ],
+   "answer": 1,
+   "why": "과거의 반복된 행동이므로 would+동사원형인 would read가 알맞다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 바르게 옮긴 것은?  나는 오늘 밤 일찍 잘 필요가 없다.",
+   "choices": [
+    "I don't need sleep early tonight.",
+    "I need not to sleep early tonight.",
+    "I don't need to sleep early tonight.",
+    "I need don't sleep early tonight.",
+    "I am not need to sleep early tonight."
+   ],
+   "answer": 3,
+   "why": "'~할 필요가 없다'는 don't need to+동사원형이다. need not을 쓸 때는 to를 붙이지 않는다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.  I am used to (wake) ____ up early these days.",
+   "answer": "waking",
+   "alt": [],
+   "why": "be used to 뒤에는 동명사가 와서 '~하는 데 익숙하다'는 뜻이 된다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  There <u>would</u> be a small pond in this park, but they filled it in.",
+   "answer": "used to",
+   "alt": [],
+   "why": "'예전에 ~이 있었다'는 상태이므로 would가 아니라 used to를 써야 한다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장이 같은 뜻이 되도록 빈칸을 채우시오.  You don't have to answer right now. = You ____ ____ ____ answer right now.",
+   "answer": "don't need to",
+   "alt": [],
+   "why": "don't have to는 don't need to와 같이 '~할 필요가 없다'를 뜻한다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말에 맞게 빈칸에 알맞은 두 단어를 쓰시오.  너는 우산을 가져가는 게 좋겠다. → You ____ ____ take an umbrella.",
+   "answer": "had better",
+   "alt": [],
+   "why": "충고를 나타내는 had better+동사원형을 쓴다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.  We had better <u>leaving</u> before the traffic gets bad.",
+   "answer": "leave",
+   "alt": [],
+   "why": "had better 뒤에는 동사원형이 온다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 세 단어를 쓰시오.  그녀는 사촌을 방문하고 싶어 한다. → She ____ ____ ____ visit her cousin.",
+   "answer": "would like to",
+   "alt": [],
+   "why": "'~하고 싶다'는 would like to+동사원형이다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.  He didn't <u>used to</u> drink coffee.",
+   "answer": "use to",
+   "alt": [],
+   "why": "didn't 뒤에는 동사원형이 오므로 didn't use to가 맞다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 부정문으로 바꿔 문장 전체를 다시 쓰시오.  You had better open that box.",
+   "answer": "You had better not open that box.",
+   "alt": [
+    "You'd better not open that box."
+   ],
+   "why": "had better의 부정은 better 뒤에 not을 붙인다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.  Tourists need (buy) ____ a ticket before entering.",
+   "answer": "to buy",
+   "alt": [],
+   "why": "need는 to부정사를 목적어로 취한다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 공통으로 들어갈 한 단어를 쓰시오.  • I would ____ to sit by the window.  • Would you ____ another cup of tea?",
+   "answer": "like",
+   "alt": [],
+   "why": "would like는 뒤에 to부정사와 명사를 모두 취할 수 있다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.  My father is used to <u>drive</u> at night.",
+   "answer": "driving",
+   "alt": [],
+   "why": "be used to 뒤에는 동명사가 온다. used to+동사원형과 혼동하지 않아야 한다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말에 맞게 빈칸에 알맞은 두 단어를 쓰시오.  나는 어렸을 때 인형을 모으곤 했다. → I ____ ____ collect dolls when I was young.",
+   "answer": "used to",
+   "alt": [],
+   "why": "과거의 습관은 used to+동사원형으로 나타낸다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 의문문으로 바꿔 쓸 때 빈칸을 채우시오.  She would like to order the soup. → ____ she like to order the soup?",
+   "answer": "Would",
+   "alt": [
+    "would"
+   ],
+   "why": "조동사 would를 주어 앞으로 보내 의문문을 만든다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.  You need <u>bringing</u> your student ID.",
+   "answer": "to bring",
+   "alt": [],
+   "why": "need는 동명사가 아니라 to부정사를 목적어로 취한다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오.  He ____ better apologize to her right now.",
+   "answer": "had",
+   "alt": [
+    "'d"
+   ],
+   "why": "had better+동사원형으로 강한 충고를 나타낸다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.  When I lived in the countryside, I would (walk) ____ along the river every evening.",
+   "answer": "walk",
+   "alt": [],
+   "why": "would는 조동사이므로 뒤에 동사원형이 온다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "두 문장이 같은 뜻이 되도록 빈칸을 채우시오.  I want to check out now. = I ____ ____ ____ check out now.",
+   "answer": "would like to",
+   "alt": [],
+   "why": "would like to는 want to의 정중한 표현이다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.  We'd better <u>to call</u> a taxi.",
+   "answer": "call",
+   "alt": [],
+   "why": "had better 뒤에는 to 없이 동사원형이 온다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 세 단어를 쓰시오.  나는 대중교통을 이용하는 데 익숙하다. → I ____ ____ ____ using public transportation.",
+   "answer": "am used to",
+   "alt": [],
+   "why": "be used to+동명사는 '~하는 데 익숙하다'는 뜻이다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 used to를 사용하여 다시 쓸 때 빈칸을 채우시오.  There was a bookstore on this corner, but it is gone now. → There ____ ____ ____ a bookstore on this corner.",
+   "answer": "used to be",
+   "alt": [],
+   "why": "'예전에 ~이 있었다'는 There used to be ~로 나타낸다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것끼리 짝지어진 것은?  ㄱ. I didn't use to enjoy classical music, but now I love it.  ㄴ. She is used to work late, so she never complains.  ㄷ. There used to be a wooden bridge across this stream.  ㄹ. You had better to check the schedule again.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄴ은 be used to+동명사여야 하므로 working, ㄹ은 had better+동사원형이므로 check가 되어야 한다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분의 의미와 쓰임이 나머지 넷과 다른 것은?",
+   "choices": [
+    "This tool <u>is used to</u> open cans.",
+    "Solar panels <u>are used to</u> produce electricity.",
+    "This room <u>is used to</u> store old books.",
+    "She <u>is used to</u> waiting in long lines.",
+    "A thermometer <u>is used to</u> measure temperature."
+   ],
+   "answer": 4,
+   "why": "④는 be used to+동명사로 '~에 익숙하다'는 뜻이고, 나머지는 be used to+동사원형으로 '~하는 데 사용되다'라는 수동의 뜻이다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (A), (B)에 들어갈 말로 알맞게 짝지어진 것은?  Sujin (A)____ to be terrified of flying, but after ten business trips she is now (B)____ to taking planes.",
+   "choices": [
+    "used – used",
+    "used – using",
+    "use – used",
+    "was used – used",
+    "used – use"
+   ],
+   "answer": 1,
+   "why": "(A)는 과거의 상태를 나타내는 used to be, (B)는 be used to+동명사인 is used to taking이다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 가장 알맞은 것은?  A: My throat has been sore for a week.  B: A week? You ____ see a doctor instead of waiting any longer.",
+   "choices": [
+    "had better not",
+    "used to",
+    "would like to",
+    "had better",
+    "are used to"
+   ],
+   "answer": 4,
+   "why": "더 기다리지 말고 병원에 가라는 강한 충고이므로 had better+동사원형이 알맞다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것은?  It is not necessary for you to submit the form today.  = You ____ submit the form today.",
+   "choices": [
+    "had better not",
+    "don't need to",
+    "used not to",
+    "would not like to",
+    "need not to"
+   ],
+   "answer": 2,
+   "why": "'~할 필요가 없다'는 don't need to(=need not)이다. had better not은 '~하지 않는 게 좋겠다'로 뜻이 다르다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 문장의 개수는?  ㄱ. My grandmother would sit on the porch every evening.  ㄴ. There would be a tall oak tree in front of our house.  ㄷ. He had better takes the earlier train.  ㄹ. Visitors need to leave their bags at the front desk.  ㅁ. I'd like knowing more about the program.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ㄱ, ㄹ만 옳다. ㄴ은 used to be, ㄷ은 take, ㅁ은 to know로 고쳐야 한다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장을 모두 고른 것은?  ㄱ. We used to going to that café after class.  ㄴ. You'd better not tell anyone about this.  ㄷ. She doesn't need to explain herself.  ㄹ. Did you used to play the cello?",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄹ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 2,
+   "why": "ㄱ은 used to go, ㄹ은 Did you use to play로 고쳐야 한다. ㄴ, ㄷ은 어법상 옳다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?  그 다리는 예전에는 나무로 만들어져 있었다.",
+   "choices": [
+    "The bridge used to made of wood.",
+    "The bridge was used to be made of wood.",
+    "The bridge used to be made of wood.",
+    "The bridge is used to make of wood.",
+    "The bridge used to being made of wood."
+   ],
+   "answer": 3,
+   "why": "used to 뒤에 동사원형이 오고, 수동태이므로 be made of가 이어져 used to be made of가 된다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말은?  • You had ____ apologize before it is too late.  • I know her ____ than anyone else.",
+   "choices": [
+    "well",
+    "better",
+    "best",
+    "good",
+    "much"
+   ],
+   "answer": 2,
+   "why": "첫 문장은 충고의 had better, 둘째 문장은 well의 비교급 better이다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 옳지 않은 것은?  Before the subway opened, my father <u>would drive</u> me to school, and I <u>used to think</u> that the ride <u>would be</u> boring. Now I <u>am used to take</u> the subway, and I <u>don't need to wake</u> up so early.",
+   "choices": [
+    "would drive",
+    "used to think",
+    "would be",
+    "am used to take",
+    "don't need to wake"
+   ],
+   "answer": 4,
+   "why": "be used to가 '~에 익숙하다'는 뜻일 때는 뒤에 동명사가 온다. → am used to taking.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화를 자연스럽게 완성하는 것은?  A: I'd like to return this jacket.  B: ____  A: I have it right here.",
+   "choices": [
+    "Then you need to show me your receipt.",
+    "Then you had better not showing me your receipt.",
+    "Then you would like show your receipt.",
+    "Then you used to show your receipt.",
+    "Then you need showing your receipt."
+   ],
+   "answer": 1,
+   "why": "영수증을 보여 달라는 흐름이 자연스럽고, need to+동사원형이 어법에도 맞다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 바른 문장은?",
+   "choices": [
+    "He is used to be alone in the house.",
+    "They had better to leave immediately.",
+    "We didn't used to have a car.",
+    "I would like you to come with us.",
+    "She needs finishing the report today."
+   ],
+   "answer": 4,
+   "why": "would like+목적어+to부정사 구조가 바르게 쓰였다. ①은 being, ②는 leave, ③은 use to, ⑤는 to finish로 고쳐야 한다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 수 없는 것은?  I ____ to live in a small town.",
+   "choices": [
+    "used",
+    "would like",
+    "am not used",
+    "don't want",
+    "need"
+   ],
+   "answer": 3,
+   "why": "be used to는 뒤에 동명사나 명사가 와야 하므로 am not used to live는 쓸 수 없다. 나머지는 뒤에 동사원형이 이어져 자연스럽다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 바꿔 쓸 때 알맞은 것은?  It would be a good idea for you to save some money.",
+   "choices": [
+    "You used to save some money.",
+    "You had better save some money.",
+    "You are used to saving some money.",
+    "You need not save some money.",
+    "You would like saving some money."
+   ],
+   "answer": 2,
+   "why": "'~하는 게 좋겠다'는 충고이므로 had better+동사원형으로 바꿔 쓴다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 두 문장의 의미가 서로 다른 것은?",
+   "choices": [
+    "You don't need to worry. – You don't have to worry.",
+    "I'd like to help you. – I want to help you.",
+    "He used to smoke. – He doesn't smoke now, but he did before.",
+    "She is used to cooking. – She is accustomed to cooking.",
+    "You had better hurry. – You don't have to hurry."
+   ],
+   "answer": 5,
+   "why": "had better는 '~하는 게 좋겠다'는 충고이고 don't have to는 '~할 필요가 없다'로 뜻이 반대에 가깝다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 알맞은 것은?  Ten years ago there ____ a stationery store here, and children ____ buy candy on their way home.",
+   "choices": [
+    "would be – used to",
+    "used to be – would",
+    "was used to be – would",
+    "used to being – would to",
+    "would be – would"
+   ],
+   "answer": 2,
+   "why": "'있었다'는 상태이므로 used to be, '사 가곤 했다'는 반복 동작이므로 would buy가 알맞다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분을 바르게 고친 것은?  You had better <u>not to make</u> the same mistake twice.",
+   "choices": [
+    "not making",
+    "not make",
+    "don't make",
+    "to not make",
+    "not made"
+   ],
+   "answer": 2,
+   "why": "had better의 부정은 had better not+동사원형이다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말을 영어로 바르게 옮긴 것은?  나는 이렇게 매운 음식을 먹는 데 익숙하지 않다.",
+   "choices": [
+    "I am not used to eat such spicy food.",
+    "I didn't use to eat such spicy food.",
+    "I am not used to eating such spicy food.",
+    "I don't use to eating such spicy food.",
+    "I am not use to eating such spicy food."
+   ],
+   "answer": 3,
+   "why": "'~하는 데 익숙하다'는 be used to+동명사이다. ②는 '예전에 먹지 않았다'로 뜻이 다르다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 순서대로 바르게 짝지어진 것은?  ㄱ. Would you like ____ a seat?  ㄴ. He'd better ____ his passport.  ㄷ. I'm used to ____ alone.",
+   "choices": [
+    "to take – bring – eat",
+    "to take – bring – eating",
+    "taking – to bring – eating",
+    "to take – to bring – eating",
+    "taking – bring – eat"
+   ],
+   "answer": 2,
+   "why": "would like는 to부정사, had better는 동사원형, be used to는 동명사를 취한다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 문장의 개수는?  ㄱ. She would like to knowing the results.  ㄴ. We used to be classmates in middle school.  ㄷ. You had better not touching the wet paint.  ㄹ. Do I need to bring my own laptop?",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 to know, ㄷ은 not touch로 고쳐야 하므로 어색한 문장은 2개이다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 빈칸에 들어갈 말로 가장 알맞은 것은?  My cousin moved to Norway last year. At first he hated the long winter nights, but now he ____ them.",
+   "choices": [
+    "used to",
+    "is used to",
+    "would like to",
+    "had better",
+    "needs to"
+   ],
+   "answer": 2,
+   "why": "뒤에 명사 them이 오고 '이제는 익숙하다'는 뜻이므로 be used to+명사가 알맞다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 바르지 않은 것은?",
+   "choices": [
+    "The old mill is used to grind wheat.",
+    "I am used to the noise of the city.",
+    "She used to be afraid of hot weather.",
+    "We would like to being your neighbors.",
+    "He didn't use to speak English well."
+   ],
+   "answer": 4,
+   "why": "would like 뒤에는 to부정사가 오므로 to be가 되어야 한다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 (A), (B), (C)에 알맞은 말은?  When I was a child, my family (A)____ spend every summer at my grandparents' farm. There (B)____ to be a big barn behind the house. Now the farm is gone, and I (C)____ to visit it again.",
+   "choices": [
+    "would – used – would like",
+    "used – would – would like",
+    "would – would – used",
+    "would like – used – would",
+    "used to – use – like"
+   ],
+   "answer": 1,
+   "why": "(A)는 과거의 반복 동작 would, (B)는 There used to be, (C)는 '~하고 싶다'는 would like to이다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 틀린 부분을 바르게 고친 것은?  My sister needs practice the piano for two hours a day.",
+   "choices": [
+    "needs → need",
+    "practice → practicing",
+    "practice → to practice",
+    "needs → is needing",
+    "for → during"
+   ],
+   "answer": 3,
+   "why": "need가 일반동사로 쓰이면 목적어로 to부정사를 취한다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 들어갈 말로 알맞은 것은?  A: Do we need to make a reservation?  B: ____ The restaurant is usually empty on Mondays.",
+   "choices": [
+    "Yes, we had better.",
+    "No, I don't think we need to.",
+    "Yes, we used to.",
+    "No, we would like to.",
+    "Yes, we're used to."
+   ],
+   "answer": 2,
+   "why": "식당이 한산하다는 말이 이어지므로 예약할 필요가 없다는 대답이 자연스럽다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 would 중 쓰임이 나머지와 다른 것은?",
+   "choices": [
+    "Every winter we <u>would</u> go skating on the frozen pond.",
+    "My uncle <u>would</u> tell us ghost stories at night.",
+    "<u>Would</u> you like to leave a message?",
+    "She <u>would</u> practice the violin for hours after dinner.",
+    "On rainy days he <u>would</u> read comic books in the attic."
+   ],
+   "answer": 3,
+   "why": "③은 would like to라는 관용 표현의 일부이고, 나머지는 모두 과거의 반복된 습관을 나타내는 would이다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 들어갈 말이 나머지와 다른 것은?",
+   "choices": [
+    "I would ____ to go home now.",
+    "Would you ____ some coffee?",
+    "I'd ____ a window seat, please.",
+    "You had ____ hurry up.",
+    "How would you ____ your steak?"
+   ],
+   "answer": 4,
+   "why": "④에는 had better의 better가 들어가고, 나머지에는 모두 like가 들어간다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말과 같도록 배열할 때 세 번째로 오는 단어는?  (너는 그에게 그 소식을 말하지 않는 게 좋겠다.)  better / had / not / tell / you / him / the news",
+   "choices": [
+    "had",
+    "better",
+    "not",
+    "tell",
+    "you"
+   ],
+   "answer": 2,
+   "why": "바른 배열은 You had better not tell him the news.이므로 세 번째 단어는 better이다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 밑줄 친 부분 중 어법상 옳은 것은?  I <u>use to</u> be shy, so I <u>would liked</u> to avoid crowds, but my teacher said I <u>had better</u> join a club, and now I <u>am used to speak</u> in front of others and don't <u>need speaking</u> notes.",
+   "choices": [
+    "use to",
+    "would liked",
+    "had better",
+    "am used to speak",
+    "need speaking"
+   ],
+   "answer": 3,
+   "why": "had better+동사원형(join)이 바르게 쓰였다. 나머지는 used to, would like, am used to speaking, need to speak로 고쳐야 한다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?  A: Why did you take the stairs?  B: I ____ take the elevator, but it broke down last month, so now I always walk up.",
+   "choices": [
+    "had better",
+    "would like to",
+    "used to",
+    "am used to",
+    "need to"
+   ],
+   "answer": 3,
+   "why": "지금은 하지 않는 과거의 습관이므로 used to+동사원형이 알맞다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?  ㄱ. Would you like me to carry that box?  ㄴ. You'd better not to argue with him.  ㄷ. I'm not used to drive on the left side.  ㄹ. Passengers need to fasten their seat belts.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄹ",
+    "ㄴ, ㄷ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 3,
+   "why": "ㄴ은 not argue, ㄷ은 driving으로 고쳐야 한다. ㄱ, ㄹ은 옳다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 옮길 때 필요 없는 단어는?  (나는 예전에 아침을 거르곤 했다.)",
+   "choices": [
+    "used",
+    "to",
+    "skip",
+    "was",
+    "breakfast"
+   ],
+   "answer": 4,
+   "why": "I used to skip breakfast.가 되므로 was는 필요 없다. used to는 be동사와 함께 쓰지 않는다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 빈칸에 알맞은 것은?  The path is icy this morning. You ____ walk too fast on it.",
+   "choices": [
+    "had better",
+    "had better not",
+    "used to",
+    "would like to",
+    "need to"
+   ],
+   "answer": 2,
+   "why": "길이 얼어 있으므로 '빨리 걷지 않는 게 좋겠다'는 충고가 자연스럽다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글에서 어법상 틀린 곳을 바르게 고친 것은?  Kevin moved to Seoul three years ago. At first he wasn't used to <u>take</u> crowded buses, but now he doesn't even notice the crowd.",
+   "choices": [
+    "take → took",
+    "take → taking",
+    "take → to take",
+    "wasn't → didn't",
+    "notice → noticing"
+   ],
+   "answer": 2,
+   "why": "be used to가 '~에 익숙하다'는 뜻이므로 뒤에 동명사 taking이 와야 한다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?  Emma ____ meat, but she became a vegetarian five years ago.",
+   "choices": [
+    "used to eating",
+    "would eat",
+    "is used to eat",
+    "had better eat",
+    "would like to eat"
+   ],
+   "answer": 2,
+   "why": "과거에 반복하던 행동이므로 would+동사원형이 알맞다. used to는 뒤에 동사원형(eat)이, be used to는 동명사(eating)가 와야 하는 형태다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞는 문장은?",
+   "choices": [
+    "My eyes are used to the dark now.",
+    "My eyes are use to the dark now.",
+    "My eyes used to the dark now.",
+    "My eyes are used to be dark now.",
+    "My eyes had better the dark now."
+   ],
+   "answer": 1,
+   "why": "be used to+명사는 '~에 익숙하다'는 뜻이므로 are used to the dark가 맞다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분과 바꿔 쓸 수 있는 것은?  <u>You should not stay up</u> so late before an exam.",
+   "choices": [
+    "You had not better stay up",
+    "You had better not stay up",
+    "You don't had better stay up",
+    "You had better don't stay up",
+    "You'd better not to stay up"
+   ],
+   "answer": 2,
+   "why": "had better의 부정은 not을 better 뒤에 붙이고 동사원형이 이어진다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 잘못된 문장은?",
+   "choices": [
+    "He would like to visit the museum again.",
+    "We used to arguing about small things.",
+    "She had better not miss the deadline.",
+    "I need to fix my bike this weekend.",
+    "They are used to working in teams."
+   ],
+   "answer": 2,
+   "why": "used to 뒤에는 동사원형이 오므로 used to argue가 되어야 한다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말이 바르게 짝지어진 것은?  My brother (A)____ to hate vegetables, but these days he (B)____ to eat salad every morning.",
+   "choices": [
+    "used – needs",
+    "used – need",
+    "use – needs",
+    "used – is used",
+    "using – needs"
+   ],
+   "answer": 1,
+   "why": "(A)는 과거의 상태 used to hate, (B)는 3인칭 단수 현재이므로 needs to eat이다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 어법에 맞게 고친 것은?  Did you used to living near the sea?",
+   "choices": [
+    "Did you use to live near the sea?",
+    "Did you used to live near the sea?",
+    "Did you use to living near the sea?",
+    "Do you used to live near the sea?",
+    "Did you were used to live near the sea?"
+   ],
+   "answer": 1,
+   "why": "Did 뒤에는 동사원형 use, used to 뒤에도 동사원형 live가 온다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 대화의 밑줄 친 부분 중 어법상 틀린 것은?  A: I <u>would like</u> to book a room.  B: Sure. <u>Do you need</u> a double bed?  A: Yes, and I <u>had better</u> a quiet room.  B: Then you <u>need to</u> ask for the top floor.  A: I'm <u>used to sleeping</u> in noisy places, though.",
+   "choices": [
+    "would like",
+    "Do you need",
+    "had better",
+    "need to",
+    "used to sleeping"
+   ],
+   "answer": 3,
+   "why": "had better 뒤에는 동사원형이 와야 하는데 명사만 있다. 문맥상 would like a quiet room이 알맞다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 문장 전환이 옳지 않은 것은?",
+   "choices": [
+    "I want a glass of water. → I would like a glass of water.",
+    "You should take a rest. → You had better take a rest.",
+    "It is not necessary for him to come. → He doesn't need to come.",
+    "She jogged every morning in the past. → She used to jog every morning.",
+    "I am accustomed to the weather. → I used to the weather."
+   ],
+   "answer": 5,
+   "why": "'~에 익숙하다'는 be used to+명사이므로 I am used to the weather.가 되어야 한다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은?  Sam ____ his glasses now because his eyes got worse last year.",
+   "choices": [
+    "used to wear",
+    "didn't use to wear",
+    "needs to wear",
+    "had better not wear",
+    "is used to wear"
+   ],
+   "answer": 3,
+   "why": "now와 '눈이 나빠졌다'는 이유로 보아 현재 필요하다는 needs to wear가 알맞다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분이 어법상 옳은 것은?",
+   "choices": [
+    "We had better <u>to hurry</u>.",
+    "She used to <u>living</u> here.",
+    "I'd like <u>to speak</u> to the manager.",
+    "He is used to <u>run</u> long distances.",
+    "They need <u>bring</u> their own tools."
+   ],
+   "answer": 3,
+   "why": "would like 뒤에는 to부정사가 온다. 나머지는 hurry, live, running, to bring으로 고쳐야 한다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말과 같도록 할 때 빈칸에 들어갈 말로 알맞은 것은?  우리 삼촌은 예전에 밴드에서 드럼을 치셨다.  → My uncle ____ the drums in a band.",
+   "choices": [
+    "is used to play",
+    "used to play",
+    "would like to play",
+    "had better play",
+    "used to playing"
+   ],
+   "answer": 2,
+   "why": "과거의 사실·습관은 used to+동사원형으로 나타낸다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 글의 흐름상 빈칸에 알맞은 것은?  Mina has an important interview tomorrow morning. It starts at eight, and the office is an hour away. She ____ set several alarms tonight.",
+   "choices": [
+    "used to",
+    "is used to",
+    "had better",
+    "doesn't need to",
+    "would like"
+   ],
+   "answer": 3,
+   "why": "늦으면 안 되는 상황이므로 '알람을 여러 개 맞추는 게 좋겠다'는 had better가 알맞다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "어법상 틀린 부분을 고쳐 문장 전체를 다시 쓰시오.  Did you used to play the flute?",
+   "answer": "Did you use to play the flute?",
+   "alt": [],
+   "why": "Did가 있으므로 뒤에는 동사원형 use가 와야 한다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장이 같은 뜻이 되도록 빈칸을 채우시오.  It is not necessary for you to answer every question. = You ____ ____ ____ answer every question.",
+   "answer": "don't need to",
+   "alt": [],
+   "why": "'~할 필요가 없다'는 don't need to+동사원형으로 나타낸다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 괄호 안의 말을 바르게 배열하시오.  너는 그에게 진실을 말하지 않는 게 좋겠다.  (better / not / had / tell / you) him the truth.",
+   "answer": "You had better not tell",
+   "alt": [],
+   "why": "had better의 부정은 had better not이고 그 뒤에 동사원형이 온다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.  After six months in Vietnam, Jake is used to (ride) ____ a motorbike every day.",
+   "answer": "riding",
+   "alt": [],
+   "why": "be used to가 '~에 익숙하다'는 뜻일 때 뒤에는 동명사가 온다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 used to를 사용하여 다시 쓸 때 빈칸을 채우시오.  There was an old lighthouse on that cliff, but it was torn down. → There ____ ____ ____ an old lighthouse on that cliff.",
+   "answer": "used to be",
+   "alt": [],
+   "why": "과거의 상태는 would가 아니라 used to로 나타내며 There used to be ~ 형태를 쓴다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.  I'm not used to <u>speak</u> in front of a large audience.",
+   "answer": "speaking",
+   "alt": [],
+   "why": "be used to+동명사가 '~하는 데 익숙하다'는 뜻이다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 공통으로 들어갈 한 단어를 쓰시오.  • You had ____ start now if you want to finish today.  • My father cooks ____ than anyone in my family.",
+   "answer": "better",
+   "alt": [],
+   "why": "첫 문장은 충고의 had better, 둘째 문장은 well의 비교급 better이다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 두 단어를 쓰시오. (would 사용)  할머니는 주말마다 우리에게 팬케이크를 만들어 주시곤 했다.  → My grandmother ____ ____ us pancakes every weekend.",
+   "answer": "would make",
+   "alt": [],
+   "why": "과거에 반복되던 행동은 would+동사원형으로 나타낸다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 부정문으로 바꿀 때 빈칸을 채우시오.  He used to enjoy horror movies. → He ____ ____ ____ enjoy horror movies.",
+   "answer": "didn't use to",
+   "alt": [
+    "did not use to"
+   ],
+   "why": "used to의 부정은 didn't use to이며 did 뒤에는 동사원형 use를 쓴다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.  Passengers need <u>showing</u> their boarding passes at the gate.",
+   "answer": "to show",
+   "alt": [],
+   "why": "need는 to부정사를 목적어로 취한다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "두 문장이 같은 뜻이 되도록 빈칸을 채우시오.  You should not skip breakfast. = You ____ ____ ____ skip breakfast.",
+   "answer": "had better not",
+   "alt": [],
+   "why": "충고의 should not은 had better not으로 바꿔 쓸 수 있다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 세 단어를 쓰시오.  A: What can I do for you?  B: 이 셔츠를 교환하고 싶어요. → I ____ ____ ____ exchange this shirt.",
+   "answer": "would like to",
+   "alt": [],
+   "why": "'~하고 싶다'는 would like to+동사원형이다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.  You will soon <u>be used to make</u> smoothies at home.",
+   "answer": "be used to making",
+   "alt": [
+    "used to making"
+   ],
+   "why": "'~하는 데 익숙해지다'는 뜻이므로 be used to 뒤에 동명사가 와야 한다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 네 단어를 쓰시오.  나는 그런 추운 날씨에 익숙하지 않다.  → I ____ ____ ____ ____ such cold weather.",
+   "answer": "am not used to",
+   "alt": [],
+   "why": "be used to+명사가 '~에 익숙하다'는 뜻이므로 부정은 am not used to이다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 의문문으로 바꿔 문장 전체를 다시 쓰시오.  You used to take piano lessons.",
+   "answer": "Did you use to take piano lessons?",
+   "alt": [],
+   "why": "used to의 의문문은 Did+주어+use to+동사원형 ~?이다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 말을 알맞은 형태로 바꿔 쓰시오.  My parents had better (not, drive) ____ ____ in this heavy snow.",
+   "answer": "not drive",
+   "alt": [],
+   "why": "had better의 부정은 had better not+동사원형이다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.  Would you like me <u>helping</u> you with your suitcase?",
+   "answer": "to help",
+   "alt": [],
+   "why": "would like+목적어+to부정사 구조이므로 to help가 알맞다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 have to를 사용하여 같은 뜻으로 바꿔 쓸 때 빈칸을 채우시오.  You don't need to pay in cash. → You ____ ____ ____ pay in cash.",
+   "answer": "don't have to",
+   "alt": [],
+   "why": "don't need to와 don't have to는 '~할 필요가 없다'로 뜻이 같다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 두 단어를 쓰시오.  우리는 창문을 여는 게 좋겠다. → We ____ ____ open the window.",
+   "answer": "had better",
+   "alt": [],
+   "why": "충고를 나타내는 had better 뒤에는 동사원형이 온다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 바르게 고쳐 쓰시오.  When I was young, I <u>am used to</u> be afraid of thunder.",
+   "answer": "used to",
+   "alt": [],
+   "why": "과거의 상태이므로 used to+동사원형을 쓴다. be used to는 뒤에 동명사가 오고 뜻도 다르다.",
+   "no": 200
+  }
+ ]
+}

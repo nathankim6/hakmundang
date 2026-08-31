@@ -1,0 +1,2784 @@
+{
+ "id": "m3-09",
+ "grade": "중3",
+ "name": "분사구문",
+ "points": [
+  "접속사·주어 생략 후 v-ing",
+  "부정 not v-ing",
+  "뜻(시간·이유·동시동작)"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ TV, Jinho ate some popcorn. (TV를 보면서)",
+   "choices": [
+    "Watches",
+    "Watched",
+    "Watch",
+    "To watch",
+    "Watching"
+   ],
+   "answer": 5,
+   "why": "분사구문은 접속사와 주어를 지우고 동사를 v-ing로 바꾼다. While he watched TV = Watching TV. 동사원형·과거형·to부정사는 부사절 자리에 올 수 없다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ tired, Mina went to bed early. (피곤했기 때문에)",
+   "choices": [
+    "Be",
+    "Being",
+    "Been",
+    "Was",
+    "To be"
+   ],
+   "answer": 2,
+   "why": "be동사의 분사구문은 Being이다. Because she was tired = Being tired. Be/Been/Was는 문장 앞 분사구문 자리에 쓸 수 없다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ the door, Sam walked into the kitchen. (문을 연 뒤에)",
+   "choices": [
+    "Open",
+    "Opens",
+    "To open",
+    "Opened",
+    "Opening"
+   ],
+   "answer": 5,
+   "why": "After he opened the door에서 접속사와 주어를 지우고 opened를 opening으로 바꾼다. 과거형 Opened를 그대로 두면 분사구문이 되지 않는다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ what to say, I just smiled at her. (무슨 말을 해야 할지 몰라서)",
+   "choices": [
+    "Know not",
+    "Not know",
+    "Not to know",
+    "Not knowing",
+    "Knowing not"
+   ],
+   "answer": 4,
+   "why": "분사구문의 부정은 분사 바로 앞에 not을 붙여 not v-ing로 쓴다. knowing not, know not처럼 not을 뒤에 두면 안 된다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ in the park, we saw a small rabbit. (공원에서 걷다가)",
+   "choices": [
+    "To walk",
+    "Walked",
+    "Walks",
+    "Walk",
+    "Walking"
+   ],
+   "answer": 5,
+   "why": "While we walked in the park = Walking in the park. 접속사와 주어를 지운 뒤 남는 것은 v-ing이다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ her homework, Sujin went out to play. (숙제를 끝낸 후에)",
+   "choices": [
+    "To finish",
+    "Finished",
+    "Finish",
+    "Finishes",
+    "Finishing"
+   ],
+   "answer": 5,
+   "why": "After she finished her homework = Finishing her homework. 시간의 뜻이라도 형태는 v-ing이다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ a bad cold, Andy stayed in bed all day. (심한 감기에 걸려서)",
+   "choices": [
+    "Have",
+    "Having",
+    "Had",
+    "Has",
+    "To have"
+   ],
+   "answer": 2,
+   "why": "이유를 나타내는 Because he had a bad cold를 분사구문으로 바꾸면 Having a bad cold이다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ music, my brother cleaned his room. (음악을 들으면서)",
+   "choices": [
+    "Listen to",
+    "Listened to",
+    "Listens to",
+    "To listen to",
+    "Listening to"
+   ],
+   "answer": 5,
+   "why": "동시동작 While he listened to music = Listening to music. 동사원형이나 과거형은 쓸 수 없다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ any money, I could not buy the cap. (돈이 하나도 없어서)",
+   "choices": [
+    "Having not",
+    "No having",
+    "Not have",
+    "Not having",
+    "Not to have"
+   ],
+   "answer": 4,
+   "why": "부정은 not + v-ing 순서이므로 Not having이 맞다. Having not, No having은 어순이 틀렸다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ on the bench, Grandpa fed the pigeons. (벤치에 앉아서)",
+   "choices": [
+    "Sit",
+    "Sits",
+    "Sat",
+    "To sit",
+    "Sitting"
+   ],
+   "answer": 5,
+   "why": "동시동작을 나타내는 분사구문이므로 Sitting on the bench가 알맞다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ very hard, Kate passed the math test. (매우 열심히 공부해서)",
+   "choices": [
+    "To study",
+    "Studied",
+    "Study",
+    "Studies",
+    "Studying"
+   ],
+   "answer": 5,
+   "why": "Because she studied very hard = Studying very hard. 이유를 나타내는 분사구문도 v-ing 형태이다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ up at six, Tom felt fresh all morning. (여섯 시에 일어나서)",
+   "choices": [
+    "Wake",
+    "Waking",
+    "Woke",
+    "Woken",
+    "Wakes"
+   ],
+   "answer": 2,
+   "why": "After he woke up at six = Waking up at six. 과거형 Woke나 과거분사 Woken은 분사구문을 만들지 못한다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ the letter, Emma began to cry. (그 편지를 읽고 나서)",
+   "choices": [
+    "Read",
+    "Reads",
+    "Been reading",
+    "To read",
+    "Reading"
+   ],
+   "answer": 5,
+   "why": "After she read the letter = Reading the letter. read는 형태가 같아 보이지만 분사구문에서는 reading으로 써야 한다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ his hand, the boy said goodbye to us. (손을 흔들면서)",
+   "choices": [
+    "Wave",
+    "Waves",
+    "Waved",
+    "Waving",
+    "To wave"
+   ],
+   "answer": 4,
+   "why": "동시동작이므로 Waving his hand가 알맞다. 주절의 주어 the boy와 손을 흔든 사람이 같다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ sick, Julie did not come to school. (아팠기 때문에)",
+   "choices": [
+    "Feel",
+    "Feels",
+    "Felt",
+    "To feel",
+    "Feeling"
+   ],
+   "answer": 5,
+   "why": "Because she felt sick = Feeling sick. 주절이 과거라도 분사는 v-ing 형태 그대로이다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ afraid of dogs, my sister ran away. (개를 무서워해서)",
+   "choices": [
+    "To be",
+    "Be",
+    "Been",
+    "Is",
+    "Being"
+   ],
+   "answer": 5,
+   "why": "be동사 + 형용사는 Being + 형용사로 바꾼다. Because she was afraid of dogs = Being afraid of dogs.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ his bike fast, Chris hurt his knee. (자전거를 빨리 타다가)",
+   "choices": [
+    "Ride",
+    "Riding",
+    "Rode",
+    "Rides",
+    "To ride"
+   ],
+   "answer": 2,
+   "why": "While he rode his bike fast = Riding his bike fast. 시간을 나타내는 분사구문이다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ the corner, the girl found a flower shop. (모퉁이를 돌자)",
+   "choices": [
+    "Turn",
+    "Turns",
+    "To turn",
+    "Turned",
+    "Turning"
+   ],
+   "answer": 5,
+   "why": "When she turned the corner = Turning the corner. 접속사와 주어를 지우고 v-ing를 쓴다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ hungry, we cooked some noodles. (배가 고파서)",
+   "choices": [
+    "Feel not",
+    "Not feel",
+    "Not feeling",
+    "Feeling",
+    "To feel"
+   ],
+   "answer": 4,
+   "why": "배가 고팠다는 긍정의 내용이므로 Feeling hungry가 맞다. Not feeling hungry는 배가 고프지 않아서라는 반대 뜻이다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 알맞은 것은?\n____ my email address, he could not write to me. (내 이메일 주소를 몰라서)",
+   "choices": [
+    "Knowing not",
+    "Not know",
+    "No knowing",
+    "Not to know",
+    "Not knowing"
+   ],
+   "answer": 5,
+   "why": "분사구문의 부정은 not을 분사 앞에 두어 Not knowing으로 쓴다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바꿀 때 빈칸에 알맞은 것은?\nWhen she saw me, she waved at me. → ____ me, she waved at me.",
+   "choices": [
+    "See",
+    "Saw",
+    "Seen",
+    "Seeing",
+    "To see"
+   ],
+   "answer": 4,
+   "why": "접속사 When과 주어 she를 지우고 saw를 seeing으로 바꾼다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바꿀 때 빈칸에 알맞은 것은?\nAs he was very busy, he skipped lunch. → ____ very busy, he skipped lunch.",
+   "choices": [
+    "Be",
+    "Being",
+    "Been",
+    "Was",
+    "To be"
+   ],
+   "answer": 2,
+   "why": "was는 분사구문에서 Being이 된다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바꿀 때 빈칸에 알맞은 것은?\nAfter I washed my hands, I sat at the table. → ____ my hands, I sat at the table.",
+   "choices": [
+    "To wash",
+    "Washed",
+    "Wash",
+    "Washes",
+    "Washing"
+   ],
+   "answer": 5,
+   "why": "After I washed에서 접속사와 주어를 지우고 washed를 washing으로 바꾼다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바꿀 때 빈칸에 알맞은 것은?\nBecause I did not have a key, I waited outside. → ____ a key, I waited outside.",
+   "choices": [
+    "Not have",
+    "Not having",
+    "Having not",
+    "No having",
+    "Not to have"
+   ],
+   "answer": 2,
+   "why": "did not have는 not having이 된다. 부정어 not은 분사 앞에 온다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바꿀 때 빈칸에 알맞은 것은?\nWhile he was talking on the phone, he took notes. → ____ on the phone, he took notes.",
+   "choices": [
+    "Talk",
+    "Talked",
+    "To talk",
+    "Talks",
+    "Talking"
+   ],
+   "answer": 5,
+   "why": "was talking은 분사구문에서 talking으로 줄어든다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바꿀 때 빈칸에 알맞은 것은?\nBecause she felt lonely, Amy called her friend. → ____ lonely, Amy called her friend.",
+   "choices": [
+    "Feel",
+    "Felt",
+    "Feels",
+    "Feeling",
+    "To feel"
+   ],
+   "answer": 4,
+   "why": "이유의 부사절을 분사구문으로 바꾸면 Feeling lonely가 된다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바꿀 때 빈칸에 알맞은 것은?\nAs I was waiting for the bus, I met my teacher. → ____ for the bus, I met my teacher.",
+   "choices": [
+    "Wait",
+    "Waited",
+    "Waits",
+    "To wait",
+    "Waiting"
+   ],
+   "answer": 5,
+   "why": "was waiting은 waiting으로 줄어든다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바꿀 때 빈칸에 알맞은 것은?\nBecause he was not hungry, Peter ate nothing. → ____ hungry, Peter ate nothing.",
+   "choices": [
+    "Not being",
+    "Being not",
+    "Not be",
+    "No being",
+    "Not to be"
+   ],
+   "answer": 1,
+   "why": "was not은 not being이 된다. not은 반드시 being 앞에 온다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은?",
+   "choices": [
+    "Be tired, she went home early.",
+    "Being tired, she went home early.",
+    "Tired being, she went home early.",
+    "To being tired, she went home early.",
+    "Been tired, she went home early."
+   ],
+   "answer": 2,
+   "why": "be동사의 분사구문은 Being이다. 동사원형 Be, 과거분사 Been, 어순이 뒤바뀐 Tired being은 모두 틀리다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 알맞은 문장은?",
+   "choices": [
+    "Not knowing the way, we asked a police officer.",
+    "Knowing not the way, we asked a police officer.",
+    "Not know the way, we asked a police officer.",
+    "Not to know the way, we asked a police officer.",
+    "No knowing the way, we asked a police officer."
+   ],
+   "answer": 1,
+   "why": "분사구문의 부정은 not + v-ing이다. not을 분사 뒤에 두거나 no를 쓰면 틀리다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은?",
+   "choices": [
+    "Smiling brightly, she opened the gift.",
+    "Having a cold, he drank hot tea.",
+    "Watched a movie, they ate popcorn.",
+    "Walking home, I heard a strange sound.",
+    "Feeling nervous, Kevin took a deep breath."
+   ],
+   "answer": 3,
+   "why": "③은 주어 they가 영화를 본 것이므로 Watching a movie가 되어야 한다. 과거형 Watched로는 분사구문을 만들 수 없다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 문장은?",
+   "choices": [
+    "Not feeling well, Sora left school early.",
+    "Being late, Mark ran to the station.",
+    "Listening to the radio, Dad drove slowly.",
+    "Being not ready, we missed the bus.",
+    "Waiting for her, I read a magazine."
+   ],
+   "answer": 4,
+   "why": "④는 Not being ready가 되어야 한다. 부정어 not은 분사 앞에 온다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "Finish his lunch, he went out.",
+    "Finished his lunch, he went out.",
+    "Finishes his lunch, he went out.",
+    "Been finishing his lunch, he went out.",
+    "Finishing his lunch, he went out."
+   ],
+   "answer": 5,
+   "why": "After he finished his lunch를 분사구문으로 바꾸면 Finishing his lunch이다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 틀린 것은?",
+   "choices": [
+    "Sitting on the grass, we ate sandwiches.",
+    "Not having an umbrella, Jane got wet.",
+    "Hearing the bell, the students ran out.",
+    "Wear a mask, she entered the hospital.",
+    "Reading a comic book, he laughed a lot."
+   ],
+   "answer": 4,
+   "why": "④는 Wearing a mask가 되어야 한다. 분사구문의 자리에 동사원형을 쓸 수 없다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞는 문장은?",
+   "choices": [
+    "Not have money, I stayed home.",
+    "Having not money, I stayed home.",
+    "No having money, I stayed home.",
+    "Not to have money, I stayed home.",
+    "Not having money, I stayed home."
+   ],
+   "answer": 5,
+   "why": "부정 분사구문의 어순은 not + having이다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞지 않는 문장은?",
+   "choices": [
+    "Drinking coffee, they talked about the trip.",
+    "Opened the box, Amy found a doll.",
+    "Feeling tired, I took a short nap.",
+    "Playing the piano, she sang a song.",
+    "Not knowing his address, I could not visit him."
+   ],
+   "answer": 2,
+   "why": "②는 Amy가 상자를 연 것이므로 Opening the box여야 한다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분의 의미로 가장 알맞은 것은?\n<u>Feeling cold</u>, Amy closed the window.",
+   "choices": [
+    "추웠기 때문에",
+    "춥더라도",
+    "춥다면",
+    "추워질 때까지",
+    "춥지 않아서"
+   ],
+   "answer": 1,
+   "why": "창문을 닫은 이유를 나타내므로 Because she felt cold의 뜻이다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분의 의미로 가장 알맞은 것은?\n<u>Walking to school</u>, I met my old friend.",
+   "choices": [
+    "학교에 걸어가기 위해",
+    "학교에 걸어가다가",
+    "학교에 걸어가지 않아서",
+    "학교에 걸어간다면",
+    "학교에 걸어갔지만"
+   ],
+   "answer": 2,
+   "why": "While I walked to school의 뜻으로 때를 나타낸다. 목적의 뜻은 to부정사로 나타낸다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분의 의미로 가장 알맞은 것은?\n<u>Not having a ticket</u>, he could not enter the concert hall.",
+   "choices": [
+    "표를 사려고",
+    "표를 가지고",
+    "표가 있어서",
+    "표가 없어서",
+    "표가 없더라도"
+   ],
+   "answer": 4,
+   "why": "not v-ing는 부정의 이유를 나타낸다. 표가 없어서 들어갈 수 없었다는 뜻이다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분의 의미로 가장 알맞은 것은?\n<u>Smiling at me</u>, she handed me a small box.",
+   "choices": [
+    "나에게 미소를 짓기 위해",
+    "나에게 미소를 지었지만",
+    "나에게 미소를 지을 때까지",
+    "나에게 미소를 짓지 않고",
+    "나에게 미소를 지으면서"
+   ],
+   "answer": 5,
+   "why": "주절의 동작과 동시에 일어나는 일을 나타내는 동시동작의 분사구문이다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장을 접속사가 있는 문장으로 바꿀 때 알맞은 것은?\nBeing sick, Mike went to see a doctor.",
+   "choices": [
+    "When Mike is sick",
+    "Because Mike was sick",
+    "Though Mike was sick",
+    "If Mike is sick",
+    "After Mike was sick"
+   ],
+   "answer": 2,
+   "why": "병원에 간 이유를 나타내며 주절이 과거이므로 Because Mike was sick이 알맞다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장과 뜻이 같은 것은?\nTurning off the light, she left the room.",
+   "choices": [
+    "Though she turned off the light, she left the room.",
+    "If she turns off the light, she leaves the room.",
+    "Unless she turned off the light, she left the room.",
+    "Because she did not turn off the light, she left the room.",
+    "After she turned off the light, she left the room."
+   ],
+   "answer": 5,
+   "why": "불을 끈 다음 방을 나갔다는 시간의 뜻이다. 양보나 조건, 부정의 뜻은 없다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은?\nA: Why did you go to bed so early?\nB: ____ very tired, I could not watch the movie.",
+   "choices": [
+    "Feeling",
+    "Felt",
+    "Feel",
+    "To feel",
+    "Feels"
+   ],
+   "answer": 1,
+   "why": "Because I felt very tired를 분사구문으로 바꾼 Feeling이 알맞다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은?\nA: How did you hurt your arm?\nB: ____ down the stairs, I fell and hit the wall.",
+   "choices": [
+    "Run",
+    "Ran",
+    "To run",
+    "Runs",
+    "Running"
+   ],
+   "answer": 5,
+   "why": "While I ran down the stairs = Running down the stairs.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은?\nA: What did you do last Sunday?\nB: ____ at home all day, I watched three movies.",
+   "choices": [
+    "Stay",
+    "Stays",
+    "Stayed",
+    "Staying",
+    "To stay"
+   ],
+   "answer": 4,
+   "why": "동시동작을 나타내는 분사구문이므로 Staying이 알맞다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은?\nA: Why didn't you answer my call?\nB: ____ my phone with me, I missed it.",
+   "choices": [
+    "Not have",
+    "Having not",
+    "No having",
+    "Not to have",
+    "Not having"
+   ],
+   "answer": 5,
+   "why": "전화기가 없어서라는 부정의 이유이므로 Not having이 알맞다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\n<u>Feel</u> hungry, Mia <u>opened</u> the fridge and <u>took</u> out some <u>milk</u> and <u>bread</u>.",
+   "choices": [
+    "Feel",
+    "opened",
+    "took",
+    "milk",
+    "bread"
+   ],
+   "answer": 1,
+   "why": "문장 앞에서 이유를 나타내는 분사구문이므로 Feel이 아니라 Feeling이어야 한다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\n<u>Knowing</u> <u>not</u> the answer, Jenny <u>looked</u> <u>at</u> her <u>notebook</u>.",
+   "choices": [
+    "Knowing",
+    "not",
+    "looked",
+    "at",
+    "notebook"
+   ],
+   "answer": 2,
+   "why": "부정어 not은 분사 앞에 와야 하므로 Not knowing이 되어야 한다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안의 말을 분사구문에 맞는 형태로 바꿔 쓰시오.\n(Feel) tired after the game, Junho took a short nap.",
+   "answer": "Feeling",
+   "alt": [
+    "feeling"
+   ],
+   "why": "이유를 나타내는 분사구문이므로 동사를 v-ing로 바꿔 Feeling으로 쓴다.",
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안의 말을 분사구문에 맞는 형태로 바꿔 쓰시오.\n(Open) the window, Mom looked up at the night sky.",
+   "answer": "Opening",
+   "alt": [
+    "opening"
+   ],
+   "why": "After she opened the window를 분사구문으로 바꾸면 Opening이다.",
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안의 말을 분사구문에 맞는 형태로 바꿔 쓰시오.\n(Not, know) my name, the man asked me twice. (두 단어로 쓸 것)",
+   "answer": "Not knowing",
+   "alt": [
+    "not knowing"
+   ],
+   "why": "분사구문의 부정은 not을 분사 앞에 두어 not v-ing로 쓴다.",
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안의 말을 분사구문에 맞는 형태로 바꿔 쓰시오.\n(Sit) on the sofa, Dad watched the evening news.",
+   "answer": "Sitting",
+   "alt": [
+    "sitting"
+   ],
+   "why": "동시동작을 나타내는 분사구문이므로 Sitting으로 쓴다.",
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안의 말을 분사구문에 맞는 형태로 바꿔 쓰시오.\n(Run) to the bus stop, Kevin dropped his cap.",
+   "answer": "Running",
+   "alt": [
+    "running"
+   ],
+   "why": "While he ran to the bus stop = Running to the bus stop.",
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안의 말을 분사구문에 맞는 형태로 바꿔 쓰시오.\n(Not, feel) well, Emma stayed home all day. (두 단어로 쓸 것)",
+   "answer": "Not feeling",
+   "alt": [
+    "not feeling"
+   ],
+   "why": "부정어 not은 분사 앞에 오므로 Not feeling이다.",
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안의 말을 분사구문에 맞는 형태로 바꿔 쓰시오.\n(Wear) a red hat, the girl walked into the shop.",
+   "answer": "Wearing",
+   "alt": [
+    "wearing"
+   ],
+   "why": "동시동작의 분사구문이므로 Wearing으로 쓴다.",
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 괄호 안의 말을 분사구문에 맞는 형태로 바꿔 쓰시오.\n(Have) no money in his pocket, Ben walked home.",
+   "answer": "Having",
+   "alt": [
+    "having"
+   ],
+   "why": "이유를 나타내는 분사구문이므로 Having으로 쓴다.",
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n<u>Be</u> very hungry, the dog barked at the door.",
+   "answer": "Being",
+   "alt": [
+    "being"
+   ],
+   "why": "be동사의 분사구문은 Being이다. 동사원형 Be는 쓸 수 없다.",
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n<u>Watched</u> the soccer game, the fans shouted loudly.",
+   "answer": "Watching",
+   "alt": [
+    "watching"
+   ],
+   "why": "팬들이 경기를 본 것이므로 Watching이 되어야 한다.",
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n<u>Having not</u> a pen, I borrowed one from Sue.",
+   "answer": "Not having",
+   "alt": [
+    "not having"
+   ],
+   "why": "부정어 not은 분사 앞에 오므로 Not having으로 고친다.",
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n<u>To smile</u> at the baby, Grandma held her hand. (미소를 지으면서)",
+   "answer": "Smiling",
+   "alt": [
+    "smiling"
+   ],
+   "why": "동시동작은 분사구문 v-ing로 나타낸다. to부정사는 목적의 뜻이 되어 알맞지 않다.",
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n<u>Knowing not</u> the rules, the new student watched the others.",
+   "answer": "Not knowing",
+   "alt": [
+    "not knowing"
+   ],
+   "why": "not은 반드시 분사 앞에 와야 한다.",
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n<u>Take</u> off his shoes, Jason came into the room.",
+   "answer": "Taking",
+   "alt": [
+    "taking"
+   ],
+   "why": "After he took off his shoes를 분사구문으로 바꾸면 Taking off his shoes이다.",
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 분사구문으로 바꿀 때 빈칸에 알맞은 말을 쓰시오.\nWhen I heard the news, I called my mom. → ____ the news, I called my mom.",
+   "answer": "Hearing",
+   "alt": [
+    "hearing"
+   ],
+   "why": "접속사 When과 주어 I를 지우고 heard를 hearing으로 바꾼다.",
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 분사구문으로 바꿀 때 빈칸에 알맞은 말을 쓰시오.\nBecause she was sleepy, Ann drank a cup of coffee. → ____ sleepy, Ann drank a cup of coffee.",
+   "answer": "Being",
+   "alt": [
+    "being"
+   ],
+   "why": "was는 분사구문에서 Being이 된다.",
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 분사구문으로 바꿀 때 빈칸에 알맞은 말을 쓰시오.\nAfter he finished dinner, Bill washed the dishes. → ____ dinner, Bill washed the dishes.",
+   "answer": "Finishing",
+   "alt": [
+    "finishing"
+   ],
+   "why": "finished를 finishing으로 바꾸면 된다.",
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 분사구문으로 바꿀 때 빈칸에 알맞은 말을 쓰시오.\nBecause I did not have time, I took a taxi. → ____ time, I took a taxi. (두 단어로 쓸 것)",
+   "answer": "Not having",
+   "alt": [
+    "not having"
+   ],
+   "why": "did not have는 not having이 된다.",
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 분사구문을 접속사로 시작하는 부사절로 바꿀 때 빈칸에 알맞은 한 단어를 쓰시오.\nFeeling sick, he left the classroom. → ____ he felt sick, he left the classroom. (이유를 나타내는 접속사)",
+   "answer": "Because",
+   "alt": [
+    "because",
+    "As",
+    "as",
+    "Since",
+    "since"
+   ],
+   "why": "교실을 나간 이유를 나타내는 분사구문이므로 이유의 접속사 Because(As, Since)로 되살린다.",
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 분사구문으로 시작하는 한 문장으로 바꿔 쓰시오.\nWhen he saw a big snake, he screamed.",
+   "answer": "Seeing a big snake, he screamed.",
+   "alt": [
+    "Seeing a big snake, he screamed"
+   ],
+   "why": "접속사 When과 주어 he를 지우고 saw를 Seeing으로 바꾼 뒤 주절을 그대로 쓴다.",
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n____ down the crowded street, Hana heard someone calling her name. (붐비는 거리를 걸어가다가)",
+   "choices": [
+    "Walk",
+    "Walked",
+    "Walks",
+    "To walk",
+    "Walking"
+   ],
+   "answer": 5,
+   "why": "While she walked down the crowded street를 분사구문으로 바꾸면 Walking이다. 접속사와 주어를 지운 자리에는 v-ing만 올 수 있다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n____ that the library closed at six, we hurried to return the books. (도서관이 6시에 닫는 것을 알았기 때문에)",
+   "choices": [
+    "Know",
+    "Known",
+    "To know",
+    "Knowing",
+    "Knows"
+   ],
+   "answer": 4,
+   "why": "이유를 나타내는 Because we knew that ...을 분사구문으로 바꾼 Knowing이 알맞다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n____ how to use the new program, Mr. Han asked his son for help. (새 프로그램 사용법을 몰라서)",
+   "choices": [
+    "Knowing not",
+    "Not know",
+    "Not knowing",
+    "No knowing",
+    "Not to know"
+   ],
+   "answer": 3,
+   "why": "부정 분사구문은 not + v-ing 어순이므로 Not knowing이 알맞다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n____ in front of the mirror, Sora practiced her speech again and again. (거울 앞에 서서)",
+   "choices": [
+    "Stand",
+    "Stood",
+    "Stands",
+    "To stand",
+    "Standing"
+   ],
+   "answer": 5,
+   "why": "동시동작을 나타내므로 Standing in front of the mirror가 알맞다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n____ a heavy bag in each hand, the old man climbed the stairs slowly. (가방을 양손에 들고)",
+   "choices": [
+    "Carrying",
+    "Carried",
+    "Carry",
+    "Carries",
+    "To carry"
+   ],
+   "answer": 1,
+   "why": "주절의 동작과 함께 일어나는 상황이므로 Carrying이 알맞다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n____ enough sleep the night before, Jaemin could not focus in class. (전날 밤에 충분히 자지 못해서)",
+   "choices": [
+    "Getting not",
+    "Not get",
+    "Not getting",
+    "No getting",
+    "Not to get"
+   ],
+   "answer": 3,
+   "why": "부정어 not은 분사 앞에 두어야 하므로 Not getting이 알맞다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n____ the train at Seoul Station, Kevin found that his umbrella was gone. (서울역에서 기차에 탄 뒤)",
+   "choices": [
+    "Boarding",
+    "Boarded",
+    "Board",
+    "Boards",
+    "To board"
+   ],
+   "answer": 1,
+   "why": "After he boarded the train = Boarding the train. 시간의 뜻이지만 형태는 v-ing이다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n____ nervous about the interview, Julia arrived an hour early. (면접 때문에 긴장이 되어서)",
+   "choices": [
+    "Feel",
+    "Felt",
+    "Feeling",
+    "Feels",
+    "To feel"
+   ],
+   "answer": 3,
+   "why": "이유를 나타내는 분사구문이므로 Feeling nervous가 알맞다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n____ the whole box of chocolate, my little brother felt sick. (초콜릿 한 상자를 다 먹고 나서)",
+   "choices": [
+    "Eat",
+    "Ate",
+    "Eaten",
+    "Eating",
+    "To eat"
+   ],
+   "answer": 4,
+   "why": "After he ate the whole box를 분사구문으로 바꾸면 Eating이다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 알맞은 것은?\n____ any reply from him, Sujin sent another message. (그에게서 답장을 받지 못해서)",
+   "choices": [
+    "Not receiving",
+    "Receiving not",
+    "Not receive",
+    "No receiving",
+    "Not to receive"
+   ],
+   "answer": 1,
+   "why": "부정의 이유를 나타내므로 Not receiving이 알맞다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것은?\nAs she was waiting for her turn, Yuna read the notices on the wall.\n= ____ for her turn, Yuna read the notices on the wall.",
+   "choices": [
+    "Wait",
+    "Waited",
+    "Waiting",
+    "To wait",
+    "Waits"
+   ],
+   "answer": 3,
+   "why": "was waiting은 분사구문에서 waiting으로 줄어든다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것은?\nBecause he did not want to wake the baby, Mr. Lee spoke in a low voice.\n= ____ to wake the baby, Mr. Lee spoke in a low voice.",
+   "choices": [
+    "Not wanting",
+    "Wanting not",
+    "Not want",
+    "No wanting",
+    "Not to want"
+   ],
+   "answer": 1,
+   "why": "did not want는 not wanting이 된다. not은 분사 앞에 온다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것은?\nAfter the students cleaned the classroom, they went home.\n= ____ the classroom, the students went home.",
+   "choices": [
+    "Clean",
+    "Cleaned",
+    "Cleaning",
+    "To clean",
+    "Cleans"
+   ],
+   "answer": 3,
+   "why": "접속사와 주어를 지우고 cleaned를 cleaning으로 바꾼다. 주어 the students는 주절에 남긴다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것은?\nWhile he was jogging along the river, Minsu listened to a podcast.\n= ____ along the river, Minsu listened to a podcast.",
+   "choices": [
+    "Jog",
+    "Jogged",
+    "To jog",
+    "Jogging",
+    "Jogs"
+   ],
+   "answer": 4,
+   "why": "was jogging은 jogging으로 줄어든다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것은?\nBecause she did not have any experience, Alice made many mistakes at first.\n= ____ any experience, Alice made many mistakes at first.",
+   "choices": [
+    "Not have",
+    "Having not",
+    "Not having",
+    "No having",
+    "Not to have"
+   ],
+   "answer": 3,
+   "why": "부정 분사구문의 어순은 not having이다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 뜻이 같도록 할 때 빈칸에 알맞은 것은?\nWhen I opened the old album, I found a photo of my grandmother.\n= ____ the old album, I found a photo of my grandmother.",
+   "choices": [
+    "Open",
+    "Opened",
+    "Opens",
+    "Opening",
+    "To open"
+   ],
+   "answer": 4,
+   "why": "When I opened를 분사구문으로 바꾸면 Opening이다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장과 뜻이 가장 가까운 것은?\nLosing his wallet on the subway, Chris had to walk home.",
+   "choices": [
+    "Though he lost his wallet on the subway, Chris had to walk home.",
+    "Because he lost his wallet on the subway, Chris had to walk home.",
+    "If he loses his wallet on the subway, Chris has to walk home.",
+    "Before he lost his wallet on the subway, Chris had to walk home.",
+    "Unless he lost his wallet on the subway, Chris had to walk home."
+   ],
+   "answer": 2,
+   "why": "지갑을 잃어버려서 걸어가야 했다는 이유 관계가 자연스럽다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장과 뜻이 가장 가까운 것은?\nTurning off her computer, Ms. Park left the office.",
+   "choices": [
+    "After she turned off her computer, Ms. Park left the office.",
+    "Though she turned off her computer, Ms. Park left the office.",
+    "If she turns off her computer, Ms. Park leaves the office.",
+    "Because she did not turn off her computer, Ms. Park left the office.",
+    "Until she turned off her computer, Ms. Park left the office."
+   ],
+   "answer": 1,
+   "why": "컴퓨터를 끈 다음 사무실을 나섰다는 시간의 뜻이다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장과 뜻이 가장 가까운 것은?\nNot feeling well after lunch, Daniel decided to see a doctor.",
+   "choices": [
+    "Though he did not feel well after lunch, Daniel decided to see a doctor.",
+    "If he does not feel well after lunch, Daniel decides to see a doctor.",
+    "Because he did not feel well after lunch, Daniel decided to see a doctor.",
+    "When he felt well after lunch, Daniel decided to see a doctor.",
+    "Before he felt well after lunch, Daniel decided to see a doctor."
+   ],
+   "answer": 3,
+   "why": "몸이 좋지 않아서 병원에 가기로 했다는 이유의 뜻이다. not v-ing는 부정을 나타낸다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장과 뜻이 가장 가까운 것은?\nWaving to the crowd, the singer walked onto the stage.",
+   "choices": [
+    "Because she waved to the crowd, the singer walked onto the stage.",
+    "As she waved to the crowd, the singer walked onto the stage.",
+    "Though she waved to the crowd, the singer walked onto the stage.",
+    "After she had waved to the crowd, the singer walked off the stage.",
+    "If she waves to the crowd, the singer walks onto the stage."
+   ],
+   "answer": 2,
+   "why": "손을 흔들면서 무대에 올랐다는 동시동작이므로 As가 알맞다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장과 뜻이 가장 가까운 것은?\nHearing the fire alarm, everyone in the building ran outside.",
+   "choices": [
+    "Though they heard the fire alarm, everyone in the building ran outside.",
+    "When they heard the fire alarm, everyone in the building ran outside.",
+    "If they hear the fire alarm, everyone in the building runs outside.",
+    "Before they heard the fire alarm, everyone in the building ran outside.",
+    "Unless they heard the fire alarm, everyone in the building ran outside."
+   ],
+   "answer": 2,
+   "why": "화재 경보를 들었을 때 모두 뛰어나갔다는 시간 관계이다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 바른 것은?",
+   "choices": [
+    "Not being able to sleep, Mina turned on the light.",
+    "Being not able to sleep, Mina turned on the light.",
+    "Not be able to sleep, Mina turned on the light.",
+    "Not to be able to sleep, Mina turned on the light.",
+    "No being able to sleep, Mina turned on the light."
+   ],
+   "answer": 1,
+   "why": "부정어 not은 분사 being 앞에 온다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 자연스러운 문장은?",
+   "choices": [
+    "Take a deep breath, Suho started his speech.",
+    "Taken a deep breath, Suho started his speech.",
+    "Taking a deep breath, Suho started his speech.",
+    "To taking a deep breath, Suho started his speech.",
+    "Takes a deep breath, Suho started his speech."
+   ],
+   "answer": 3,
+   "why": "주어 Suho가 숨을 들이쉰 것이므로 능동의 v-ing인 Taking이 알맞다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳지 않은 것은?",
+   "choices": [
+    "Getting off the bus, Jimin waved to the driver.",
+    "Living near the sea, they often go fishing.",
+    "Not wanting to be late, she left home at seven.",
+    "Holding an umbrella, he ran across the street.",
+    "Being sit on the floor, the children sang together."
+   ],
+   "answer": 5,
+   "why": "⑤는 Sitting on the floor여야 한다. Being 뒤에 동사원형 sit을 쓸 수 없다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 잘못된 문장은?",
+   "choices": [
+    "Turning to the left, you will find the museum.",
+    "Not knowing what to do, Mike called his teacher.",
+    "Having a lot of homework, Sena could not go out.",
+    "Looked at the map, the tourists found the way.",
+    "Smiling gently, the nurse spoke to the child."
+   ],
+   "answer": 4,
+   "why": "④는 관광객들이 지도를 본 것이므로 Looking at the map이어야 한다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 옳은 것은?",
+   "choices": [
+    "Not have enough time, we skipped the last question.",
+    "Having not enough time, we skipped the last question.",
+    "Not having enough time, we skipped the last question.",
+    "No having enough time, we skipped the last question.",
+    "Not to have enough time, we skipped the last question."
+   ],
+   "answer": 3,
+   "why": "부정 분사구문은 not + having 순서로 쓴다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 다섯 문장 중 어법상 틀린 것은?",
+   "choices": [
+    "Working part-time, Junho saved money for his trip.",
+    "Being tired of the noise, she closed the door.",
+    "Feeling the wind on her face, Mia smiled.",
+    "Not finish his homework, Tom could not watch TV.",
+    "Standing on the hill, we saw the whole city."
+   ],
+   "answer": 4,
+   "why": "④는 Not finishing his homework여야 한다. 분사구문 자리에 동사원형을 쓸 수 없다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 옳은 문장으로 가장 알맞은 것은?",
+   "choices": [
+    "Waiting for the elevator, Sujin checked her messages.",
+    "Waited for the elevator, Sujin checked her messages.",
+    "Wait for the elevator, Sujin checked her messages.",
+    "To waiting for the elevator, Sujin checked her messages.",
+    "Waits for the elevator, Sujin checked her messages."
+   ],
+   "answer": 1,
+   "why": "동시동작의 분사구문은 v-ing로 시작한다. 과거형이나 동사원형은 분사구문을 만들 수 없다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 틀린 문장으로 알맞은 것은?",
+   "choices": [
+    "Hearing my voice, the puppy ran to me.",
+    "Reading the same book twice, Jane understood it better.",
+    "Waiting at the gate, my phone rang.",
+    "Wearing sunglasses, the actor entered the shop.",
+    "Having a fever, Yuna went to the nurse."
+   ],
+   "answer": 3,
+   "why": "③은 기다린 사람과 주절의 주어 my phone이 다르다. 분사구문은 주절의 주어와 동작의 주체가 같아야 한다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n버스를 기다리면서 나는 음악을 들었다.",
+   "choices": [
+    "Waiting for the bus, I listened to music.",
+    "Waited for the bus, I listened to music.",
+    "Wait for the bus, I listened to music.",
+    "To wait for the bus, I listened to music.",
+    "Waiting for the bus, music was listened by me."
+   ],
+   "answer": 1,
+   "why": "동시동작의 분사구문은 v-ing로 시작한다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그 소식을 몰랐기 때문에 우리는 아무 말도 하지 않았다.",
+   "choices": [
+    "Knowing not the news, we said nothing.",
+    "Not knowing the news, we said nothing.",
+    "Not know the news, we said nothing.",
+    "No knowing the news, we said nothing.",
+    "Not to know the news, we said nothing."
+   ],
+   "answer": 2,
+   "why": "부정 분사구문은 Not knowing이다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n숙제를 끝낸 뒤에 그녀는 친구에게 전화했다.",
+   "choices": [
+    "Finish her homework, she called her friend.",
+    "Finished her homework, she called her friend.",
+    "Finishing her homework, she called her friend.",
+    "To finish her homework, she called her friend.",
+    "Finishes her homework, she called her friend."
+   ],
+   "answer": 3,
+   "why": "After she finished her homework를 분사구문으로 바꾸면 Finishing이다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n열이 나서 그는 학교에 가지 않았다.",
+   "choices": [
+    "Have a fever, he did not go to school.",
+    "Had a fever, he did not go to school.",
+    "To have a fever, he did not go to school.",
+    "Having a fever, he did not go to school.",
+    "Being have a fever, he did not go to school."
+   ],
+   "answer": 4,
+   "why": "이유를 나타내는 분사구문 Having a fever가 알맞다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n그 답을 확신하지 못해서 나는 선생님께 다시 여쭤보았다.",
+   "choices": [
+    "Being not sure of the answer, I asked my teacher again.",
+    "Sure not being of the answer, I asked my teacher again.",
+    "Not be sure of the answer, I asked my teacher again.",
+    "No being sure of the answer, I asked my teacher again.",
+    "Not being sure of the answer, I asked my teacher again."
+   ],
+   "answer": 5,
+   "why": "not은 being 앞에 와야 하므로 Not being sure가 맞다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말로 알맞게 짝지어진 것은?\n(A) ____ the piano, Sumi hummed a song.\n(B) ____ his key, Tom could not open the door.",
+   "choices": [
+    "Playing - Not having",
+    "Played - Having not",
+    "Play - Not have",
+    "Playing - Having not",
+    "To play - Not having"
+   ],
+   "answer": 1,
+   "why": "(A)는 동시동작이므로 Playing, (B)는 부정 분사구문이므로 Not having이다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말로 알맞게 짝지어진 것은?\n(A) ____ tired after the trip, Dad went to bed early.\n(B) ____ the door, she stepped into the dark room.",
+   "choices": [
+    "Be - Open",
+    "Being - Opening",
+    "Been - Opened",
+    "Being - Opened",
+    "To be - Opening"
+   ],
+   "answer": 2,
+   "why": "(A) be동사는 Being, (B)는 문을 연 뒤이므로 Opening이다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말로 알맞게 짝지어진 것은?\n(A) ____ what to buy, Jina walked around the shop.\n(B) ____ a picture of the sunset, he smiled quietly.",
+   "choices": [
+    "Not knowing - Taking",
+    "Knowing not - Taken",
+    "Not know - Take",
+    "Not knowing - Taken",
+    "No knowing - Taking"
+   ],
+   "answer": 1,
+   "why": "(A)는 not + v-ing, (B)는 사진을 찍고 나서이므로 Taking이다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸 (A), (B)에 들어갈 말로 알맞게 짝지어진 것은?\n(A) ____ in the rain for an hour, we were all wet.\n(B) ____ enough money, they gave up the concert.",
+   "choices": [
+    "Walk - Not have",
+    "Walked - Having not",
+    "Walking - Not having",
+    "Walking - No having",
+    "To walk - Not having"
+   ],
+   "answer": 3,
+   "why": "(A)는 시간의 분사구문 Walking, (B)는 부정 분사구문 Not having이다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· ____ a good swimmer, Jimin crossed the pool easily.\n· ____ new to the town, Sarah often got lost.",
+   "choices": [
+    "Be",
+    "Being",
+    "Been",
+    "To be",
+    "Having"
+   ],
+   "answer": 2,
+   "why": "두 문장 모두 be동사의 분사구문이 필요하므로 Being이 공통으로 들어간다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· ____ no time for breakfast, Mike ran to the bus stop.\n· ____ a bad toothache, Sora went to the dentist.",
+   "choices": [
+    "Have",
+    "Having",
+    "Had",
+    "Has",
+    "To have"
+   ],
+   "answer": 2,
+   "why": "둘 다 이유를 나타내는 have의 분사구문이므로 Having이다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸에 공통으로 들어갈 말로 알맞은 것은?\n· ____ the password, I could not log in.\n· ____ anyone at the party, Tom felt shy.",
+   "choices": [
+    "Knowing not",
+    "Not knowing",
+    "Not to know",
+    "No knowing",
+    "Not know"
+   ],
+   "answer": 2,
+   "why": "두 문장 모두 몰라서라는 부정의 이유이므로 Not knowing이 알맞다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은?\nA: You look sleepy today.\nB: ____ up all night for the test, I got only two hours of sleep.",
+   "choices": [
+    "Stay",
+    "Stayed",
+    "Staying",
+    "To stay",
+    "Stays"
+   ],
+   "answer": 3,
+   "why": "밤을 새운 것이 잠을 못 잔 이유이므로 Staying up all night이 알맞다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 대화의 빈칸에 알맞은 것은?\nA: Why did you take a taxi this morning?\nB: ____ the first bus, I had no other choice.",
+   "choices": [
+    "Missing",
+    "Missed",
+    "Miss",
+    "To miss",
+    "Misses"
+   ],
+   "answer": 1,
+   "why": "첫차를 놓쳐서라는 이유의 분사구문이므로 Missing이 알맞다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분의 의미가 나머지 넷과 다른 것은?",
+   "choices": [
+    "<u>Feeling</u> hungry, she made a sandwich.",
+    "<u>Having</u> no umbrella, he got wet in the rain.",
+    "<u>Being</u> sick, Tom stayed in bed.",
+    "<u>Listening</u> to music, Jane did her homework.",
+    "<u>Wanting</u> to save money, they walked to school."
+   ],
+   "answer": 4,
+   "why": "④는 음악을 들으면서 숙제를 했다는 동시동작이고, 나머지는 모두 이유를 나타낸다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\n<u>Arrive</u> at the airport, Emma <u>checked</u> her bag <u>and</u> <u>looked</u> for the gate <u>number</u>.",
+   "choices": [
+    "Arrive",
+    "checked",
+    "and",
+    "looked",
+    "number"
+   ],
+   "answer": 1,
+   "why": "공항에 도착한 뒤라는 시간의 분사구문이므로 Arrive가 아니라 Arriving이어야 한다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\n<u>Having</u> <u>not</u> her student ID, Mina <u>could</u> not <u>borrow</u> the <u>book</u>.",
+   "choices": [
+    "Having",
+    "not",
+    "could",
+    "borrow",
+    "book"
+   ],
+   "answer": 2,
+   "why": "부정어 not은 분사 앞에 와야 하므로 Not having her student ID로 써야 한다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 분사구문을 사용한 한 문장으로 바꿔 쓰시오.\nBecause I was late for the meeting, I ran all the way to the office.",
+   "answer": "Being late for the meeting, I ran all the way to the office.",
+   "alt": [
+    "Being late for the meeting, I ran all the way to the office"
+   ],
+   "why": "이유의 부사절에서 접속사와 주어를 지우고 was를 Being으로 바꾼다.",
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 분사구문을 사용한 한 문장으로 바꿔 쓰시오.\nAs she walked along the beach, she found a beautiful shell.",
+   "answer": "Walking along the beach, she found a beautiful shell.",
+   "alt": [
+    "Walking along the beach, she found a beautiful shell"
+   ],
+   "why": "접속사 As와 주어 she를 지우고 walked를 Walking으로 바꾼다.",
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 분사구문을 사용한 한 문장으로 바꿔 쓰시오.\nBecause Tom did not know the way to the museum, he used his phone.",
+   "answer": "Not knowing the way to the museum, Tom used his phone.",
+   "alt": [
+    "Not knowing the way to the museum, Tom used his phone"
+   ],
+   "why": "부정 분사구문은 Not knowing으로 시작하고, 주어 Tom은 주절에 남긴다.",
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 분사구문을 사용한 한 문장으로 바꿔 쓰시오.\nAfter he washed his hands, Minho helped his mother in the kitchen.",
+   "answer": "Washing his hands, Minho helped his mother in the kitchen.",
+   "alt": [
+    "Washing his hands, Minho helped his mother in the kitchen"
+   ],
+   "why": "After와 주어 he를 지우고 washed를 Washing으로 바꾼다.",
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 분사구문을 사용한 한 문장으로 바꿔 쓰시오.\nWhile she was talking with her friends, Jiwon drank a cup of tea.",
+   "answer": "Talking with her friends, Jiwon drank a cup of tea.",
+   "alt": [
+    "Talking with her friends, Jiwon drank a cup of tea"
+   ],
+   "why": "was talking은 Talking으로 줄어들며 동시동작을 나타낸다.",
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 분사구문을 사용한 한 문장으로 바꿔 쓰시오.\nBecause they did not have a map, the hikers followed the river.",
+   "answer": "Not having a map, the hikers followed the river.",
+   "alt": [
+    "Not having a map, the hikers followed the river"
+   ],
+   "why": "did not have는 Not having이 된다. 부정어는 분사 앞에 온다.",
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 분사구문을 사용한 한 문장으로 바꿔 쓰시오.\nWhen he heard his name, Daniel stood up and walked to the front.",
+   "answer": "Hearing his name, Daniel stood up and walked to the front.",
+   "alt": [
+    "Hearing his name, Daniel stood up and walked to the front"
+   ],
+   "why": "접속사 When과 주어 he를 지우고 heard를 Hearing으로 바꾼다. 주절은 그대로 쓴다.",
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장의 뜻이 같도록 빈칸에 알맞은 말을 쓰시오.\nBecause he felt very nervous, Junsu could not eat anything.\n= ____ very nervous, Junsu could not eat anything.",
+   "answer": "Feeling",
+   "alt": [
+    "feeling"
+   ],
+   "why": "이유를 나타내는 felt를 Feeling으로 바꾼다.",
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장의 뜻이 같도록 빈칸에 알맞은 말을 쓰시오.\nAfter I turned off the light, I closed the door quietly.\n= ____ the light, I closed the door quietly.",
+   "answer": "Turning off",
+   "alt": [
+    "turning off"
+   ],
+   "why": "turned off는 Turning off가 된다.",
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장의 뜻이 같도록 빈칸에 알맞은 말을 쓰시오.\nBecause Amy did not want to make a noise, she took off her shoes.\n= ____ to make a noise, Amy took off her shoes. (세 단어로 쓸 것)",
+   "answer": "Not wanting",
+   "alt": [
+    "not wanting"
+   ],
+   "why": "did not want는 Not wanting이 된다.",
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장의 뜻이 같도록 빈칸에 알맞은 말을 쓰시오.\nWhile she was riding her bike, Nari listened to the radio.\n= ____ her bike, Nari listened to the radio.",
+   "answer": "Riding",
+   "alt": [
+    "riding"
+   ],
+   "why": "was riding은 Riding으로 줄어든다.",
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장의 뜻이 같도록 빈칸에 알맞은 말을 쓰시오.\nBecause I had a lot of work, I stayed late at the office.\n= ____ a lot of work, I stayed late at the office.",
+   "answer": "Having",
+   "alt": [
+    "having"
+   ],
+   "why": "이유를 나타내는 had를 Having으로 바꾼다.",
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 분사구문을 접속사가 있는 부사절로 바꿔 빈칸에 알맞은 말을 쓰시오.\nOpening the box, Sujin found an old letter. → ____ she opened the box, Sujin found an old letter. (시간을 나타내는 접속사 한 단어)",
+   "answer": "When",
+   "alt": [
+    "when",
+    "After",
+    "after",
+    "As",
+    "as"
+   ],
+   "why": "상자를 열었을 때 편지를 발견했다는 시간 관계이므로 When(After, As)이 알맞다.",
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 분사구문을 접속사가 있는 부사절로 바꿔 빈칸에 알맞은 세 단어를 쓰시오.\nNot feeling hungry, Bora skipped lunch. → Because she ____ hungry, Bora skipped lunch.",
+   "answer": "did not feel",
+   "alt": [
+    "didn't feel"
+   ],
+   "why": "Not feeling은 이유의 부정이고 주절이 과거이므로 did not feel로 되살린다.",
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n<u>Being not</u> interested in the movie, Kevin left the theater early.",
+   "answer": "Not being",
+   "alt": [
+    "not being"
+   ],
+   "why": "부정어 not은 being 앞에 온다.",
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n<u>Look</u> out the window, Grandma waved at the children.",
+   "answer": "Looking",
+   "alt": [
+    "looking"
+   ],
+   "why": "동시동작의 분사구문이므로 Looking out the window가 되어야 한다.",
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n<u>Finished</u> the race, the runners drank some water.",
+   "answer": "Finishing",
+   "alt": [
+    "finishing"
+   ],
+   "why": "선수들이 경주를 끝낸 것이므로 능동의 Finishing이 되어야 한다.",
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\nNot <u>have</u> her phone with her, Yuna could not call home.",
+   "answer": "having",
+   "alt": [
+    "Having"
+   ],
+   "why": "부정 분사구문은 Not having 형태이므로 have를 having으로 고친다.",
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 밑줄 친 부분을 어법에 맞게 고쳐 쓰시오.\n<u>To carry</u> a big box, the delivery man rang the bell. (큰 상자를 들고)",
+   "answer": "Carrying",
+   "alt": [
+    "carrying"
+   ],
+   "why": "동시 상황은 분사구문 v-ing로 나타낸다. to부정사는 목적의 뜻이 되어 알맞지 않다.",
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 Not으로 시작하는 분사구문 문장으로 바꿔 쓰시오.\nBecause she did not receive an answer, Mina called again.",
+   "answer": "Not receiving an answer, Mina called again.",
+   "alt": [
+    "Not receiving an answer, Mina called again"
+   ],
+   "why": "did not receive는 Not receiving이 되고 주어 Mina는 주절에 남는다.",
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nㄱ. Not knowing his home address, I sent the parcel to his office.\nㄴ. Being not satisfied with the result, she entered the contest again.\nㄷ. Turning off the alarm, Jinsu went back to sleep for ten more minutes.\nㄹ. Feel dizzy in the hot sun, he sat down on the nearest bench.\nㅁ. Waiting outside the front door, the dog barked at every passer-by.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ, ㄷ, ㅁ이 옳다. ㄴ은 not이 being 앞에 와야 하므로 Not being satisfied, ㄹ은 동사원형 Feel 대신 Feeling이어야 한다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nㄱ. Watching the sad movie with her sister, Mina cried a lot.\nㄴ. Not have any change in my pocket, I paid by card.\nㄷ. Been a doctor for twenty years, my aunt knows a lot about health.\nㄹ. Walking into the meeting room, the lights were already on.\nㅁ. Listening carefully to the guide, we learned many things about the palace.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ㄱ, ㅁ만 옳다. ㄴ은 Not having, ㄷ은 Being이어야 하며, ㄹ은 방에 들어간 주체와 주절의 주어 the lights가 달라 틀렸다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장의 개수는?\nㄱ. Standing in line for the concert, they talked about the game.\nㄴ. Not feeling safe alone at night, Sera locked the door twice.\nㄷ. Holding the baby in her arms, Mom could not answer the phone.\nㄹ. Knowing not the rule about the yellow card, the player argued with the referee.\nㅁ. Getting off the train, Mike looked around for a taxi.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 4,
+   "why": "ㄹ만 틀렸다. 분사구문의 부정은 not을 분사 앞에 두어 Not knowing으로 써야 한다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?\nㄱ. Feeling a little cold, Anna put on her light jacket.\nㄴ. Not having his glasses with him, Dad could not read the menu.\nㄷ. Sitting around the fire, the campers told ghost stories all night.\nㄹ. Being tired of waiting for a table, we left the restaurant.\nㅁ. Arrive early at the theater, Jenny got a seat in the front row.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 1,
+   "why": "ㅁ만 틀렸다. 분사구문 자리에는 동사원형을 쓸 수 없으므로 Arriving early가 되어야 한다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장의 개수는?\nㄱ. Not to know what to do next, Sam asked his coach for advice.\nㄴ. Smiling at the camera, the children waved their small flags.\nㄷ. Being not able to swim, Tom stayed on the beach with his sister.\nㄹ. Drank a glass of cold water, she felt much better.\nㅁ. Living in London for years, Emma speaks English very well.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ은 Not knowing, ㄷ은 Not being able, ㄹ은 Drinking으로 고쳐야 한다. ㄴ과 ㅁ은 옳다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)의 각 괄호 안에서 어법에 맞는 표현으로 가장 적절한 것은?\n(A) (Being / Been) tired after the long trip, Jinho fell asleep on the sofa.\n(B) (Not knowing / Knowing not) her phone number, I sent her an email instead.\n(C) (Walk / Walking) along the river, we saw a white heron.",
+   "choices": [
+    "Being - Not knowing - Walking",
+    "Been - Not knowing - Walking",
+    "Being - Knowing not - Walk",
+    "Been - Knowing not - Walking",
+    "Being - Not knowing - Walk"
+   ],
+   "answer": 1,
+   "why": "(A) be동사의 분사구문은 Being, (B) 부정어 not은 분사 앞, (C) 분사구문 자리에는 v-ing가 온다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)의 각 괄호 안에서 어법에 맞는 표현으로 가장 적절한 것은?\n(A) (Hearing / Heard) the good news, Mr. Kim called his wife at once.\n(B) (Not having / Having not) enough seats, the cafe turned away some guests.\n(C) (Being / Be) new to the city, Sora often used a map app.",
+   "choices": [
+    "Heard - Not having - Being",
+    "Hearing - Having not - Be",
+    "Hearing - Not having - Being",
+    "Heard - Having not - Be",
+    "Hearing - Not having - Be"
+   ],
+   "answer": 3,
+   "why": "(A)는 능동의 v-ing, (B)는 not + having, (C)는 Being이 맞다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)의 각 괄호 안에서 어법에 맞는 표현으로 가장 적절한 것은?\n(A) (Finish / Finishing) his last exam, Daniel packed for the trip.\n(B) (Feeling / Felt) sorry for the stray cat, Yuna bought some cat food.\n(C) (Not wanting / Wanting not) to hurt his feelings, I said nothing about it.",
+   "choices": [
+    "Finish - Feeling - Not wanting",
+    "Finishing - Felt - Wanting not",
+    "Finishing - Feeling - Wanting not",
+    "Finishing - Feeling - Not wanting",
+    "Finish - Felt - Not wanting"
+   ],
+   "answer": 4,
+   "why": "세 자리 모두 분사구문이므로 v-ing를 쓰고, 부정어 not은 분사 앞에 온다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)의 각 괄호 안에서 어법에 맞는 표현으로 가장 적절한 것은?\n(A) (Waiting / Waited) for the results, the students could not sit still.\n(B) (Being not / Not being) sure of the answer, Mina raised her hand and asked.\n(C) (Carry / Carrying) two heavy boxes, the man asked me to hold the door.",
+   "choices": [
+    "Waited - Not being - Carrying",
+    "Waiting - Being not - Carry",
+    "Waiting - Not being - Carrying",
+    "Waited - Being not - Carrying",
+    "Waiting - Not being - Carry"
+   ],
+   "answer": 3,
+   "why": "(A) 능동의 Waiting, (B) not은 being 앞, (C) 동시 상황을 나타내는 Carrying이 맞다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)의 각 괄호 안에서 어법에 맞는 표현으로 가장 적절한 것은?\n(A) (Losing / Lost) his ticket somewhere in the station, Chris bought a new one.\n(B) (Sitting / Sat) by the window, Grandma watched the snow fall.\n(C) (Not to receive / Not receiving) any answer, she knocked on the door again.",
+   "choices": [
+    "Lost - Sitting - Not receiving",
+    "Losing - Sat - Not to receive",
+    "Losing - Sitting - Not to receive",
+    "Lost - Sat - Not receiving",
+    "Losing - Sitting - Not receiving"
+   ],
+   "answer": 5,
+   "why": "세 자리 모두 분사구문이므로 v-ing 형태이며, 부정은 not v-ing로 쓴다. to부정사는 분사구문을 대신할 수 없다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 (A), (B), (C)의 각 괄호 안에서 어법에 맞는 표현으로 가장 적절한 것은?\n(A) (Take / Taking) a deep breath, the diver jumped into the cold water.\n(B) (Having / Had) a terrible headache, Junsu went home right after class.\n(C) (Not feeling / Feeling not) like talking, he just nodded at his friends.",
+   "choices": [
+    "Take - Having - Not feeling",
+    "Taking - Had - Feeling not",
+    "Taking - Having - Feeling not",
+    "Take - Had - Feeling not",
+    "Taking - Having - Not feeling"
+   ],
+   "answer": 5,
+   "why": "(A)와 (B)는 능동의 분사구문 v-ing, (C)는 not이 분사 앞에 오는 Not feeling이 맞다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\n<u>Not</u> <u>having</u> a raincoat with him, Junho <u>ran</u> into a shop and <u>wait</u> until the rain <u>stopped</u>.",
+   "choices": [
+    "Not",
+    "having",
+    "ran",
+    "wait",
+    "stopped"
+   ],
+   "answer": 4,
+   "why": "and로 이어진 동사 ran과 병렬이므로 과거형 waited가 되어야 한다. 앞의 부정 분사구문 Not having은 옳다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\n<u>Feel</u> a strange smell in the kitchen, Mom <u>opened</u> the window <u>and</u> <u>checked</u> the <u>gas</u> stove.",
+   "choices": [
+    "Feel",
+    "opened",
+    "and",
+    "checked",
+    "gas"
+   ],
+   "answer": 1,
+   "why": "이유를 나타내는 분사구문이므로 동사원형 Feel이 아니라 Feeling이어야 한다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\n<u>Walking</u> home from the library, Somin <u>saw</u> a small kitten <u>which</u> <u>sitting</u> under a parked <u>car</u>.",
+   "choices": [
+    "Walking",
+    "saw",
+    "which",
+    "sitting",
+    "car"
+   ],
+   "answer": 4,
+   "why": "관계대명사 which 뒤에는 동사가 와야 하므로 was sitting 또는 sat이 되어야 한다. 문장 앞의 분사구문 Walking은 옳다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\n<u>Being</u> <u>not</u> interested in sports, Kevin <u>spent</u> most of his weekend <u>reading</u> <u>novels</u>.",
+   "choices": [
+    "Being",
+    "not",
+    "spent",
+    "reading",
+    "novels"
+   ],
+   "answer": 2,
+   "why": "분사구문의 부정어 not은 분사 앞에 와야 하므로 Not being interested가 옳다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\n<u>Opened</u> the letter <u>from</u> her old friend, Jiyu <u>sat</u> down <u>on</u> the stairs and <u>read</u> it twice.",
+   "choices": [
+    "Opened",
+    "from",
+    "sat",
+    "on",
+    "read"
+   ],
+   "answer": 1,
+   "why": "편지를 연 주체가 Jiyu이므로 능동의 Opening이 되어야 한다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은?\n<u>Hoping</u> to catch the last bus, we <u>hurried</u> to the stop, but the bus <u>had</u> already <u>leaving</u> <u>without</u> us.",
+   "choices": [
+    "Hoping",
+    "hurried",
+    "had",
+    "leaving",
+    "without"
+   ],
+   "answer": 4,
+   "why": "had 뒤에는 과거분사가 와야 하므로 had already left가 되어야 한다. 분사구문 Hoping은 옳다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (분사구문의 형태에 유의할 것)",
+   "choices": [
+    "Not being able to find his seat, Mark asked one of the staff for help.",
+    "Being not able to find his seat, Mark asked one of the staff for help.",
+    "Not be able to find his seat, Mark asked one of the staff for help.",
+    "Not to be able to find his seat, Mark asked one of the staff for help.",
+    "No being able to find his seat, Mark asked one of the staff for help."
+   ],
+   "answer": 1,
+   "why": "부정어 not은 분사 being 앞에 온다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 알맞은 문장은? (분사구문의 형태에 유의할 것)",
+   "choices": [
+    "Arrived at the station, the train had already gone.",
+    "Arriving at the station, the train had already gone.",
+    "Arriving at the station, we found that the train had already gone.",
+    "Arrive at the station, we found that the train had already gone.",
+    "To arrive at the station, we found that the train had already gone."
+   ],
+   "answer": 3,
+   "why": "분사구문의 동작 주체는 주절의 주어와 같아야 한다. 역에 도착한 것은 we이므로 ③이 옳다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은? (분사구문의 형태에 유의할 것)",
+   "choices": [
+    "Spending most of his money on books, Sean had little left for food.",
+    "Not knowing anyone at the party, Ella stayed near the door.",
+    "Waving her hand, the girl on the boat called to her father.",
+    "Being not ready for the presentation, Minho asked for a few more minutes.",
+    "Working as a volunteer, Hana learned how to help others."
+   ],
+   "answer": 4,
+   "why": "④는 부정어 not이 분사 앞에 와야 하므로 Not being ready로 써야 한다. 나머지는 모두 옳은 분사구문이다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 어색한 문장은? (분사구문의 형태에 유의할 것)",
+   "choices": [
+    "Feeling the ground shake, the villagers ran out of their houses.",
+    "Not having enough time to explain, he simply drew a picture.",
+    "Being sit next to the window, Yuri could see the whole field.",
+    "Turning the key slowly, Dad opened the front door.",
+    "Speaking three languages, Nora often works as a guide."
+   ],
+   "answer": 3,
+   "why": "③은 Sitting next to the window로 써야 한다. Being 뒤에 동사원형은 올 수 없다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 옳은 것은? (분사구문의 형태에 유의할 것)",
+   "choices": [
+    "Not finish the project, the team had to work on Saturday.",
+    "Not finishing the project, the team had to work on Saturday.",
+    "Finishing not the project, the team had to work on Saturday.",
+    "Not to finish the project, the team had to work on Saturday.",
+    "No finishing the project, the team had to work on Saturday."
+   ],
+   "answer": 2,
+   "why": "부정 분사구문은 not + v-ing이다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 틀린 것은? (분사구문의 형태에 유의할 것)",
+   "choices": [
+    "Living far from school, Jaehun leaves home at seven every morning.",
+    "Reading the message twice, Somi still could not understand it.",
+    "Not wanting to wake her roommate, she used a small lamp.",
+    "Hearing a loud noise outside, the door was opened by Mr. Choi.",
+    "Holding the umbrella over my head, my brother walked beside me."
+   ],
+   "answer": 4,
+   "why": "④는 소리를 들은 주체가 the door가 되어 어색하다. 분사구문은 주절의 주어와 주체가 같아야 하므로 Mr. Choi opened the door로 써야 한다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞는 문장은? (분사구문의 형태에 유의할 것)",
+   "choices": [
+    "Be careful with the hot pan, Mina moved it with a towel.",
+    "Been careful with the hot pan, Mina moved it with a towel.",
+    "Being careful with the hot pan, Mina moved it with a towel.",
+    "To being careful with the hot pan, Mina moved it with a towel.",
+    "Careful being with the hot pan, Mina moved it with a towel."
+   ],
+   "answer": 3,
+   "why": "be동사의 분사구문은 Being이며 동사원형이나 과거분사는 쓸 수 없다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법에 맞지 않는 문장은? (분사구문의 형태에 유의할 것)",
+   "choices": [
+    "Wearing a thick coat, Suho did not feel the cold at all.",
+    "Not feeling well since Monday, Mina looked really tired in class.",
+    "Studying in the library, Tom heard someone whisper his name.",
+    "Not to have a smartphone, the old man asked me the time.",
+    "Standing on his toes, the boy tried to reach the top shelf."
+   ],
+   "answer": 4,
+   "why": "④는 Not having a smartphone이 되어야 한다. to부정사는 분사구문을 대신할 수 없다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 모두 고른 것은?\nㄱ. Not being interested in the topic, some students fell asleep during the talk.\nㄴ. Being not sure of the meeting time, Mr. Baek checked his calendar again.\nㄷ. Having no idea about the last question, Jimin just looked at the ceiling.",
+   "choices": [
+    "ㄱ",
+    "ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ"
+   ],
+   "answer": 3,
+   "why": "ㄱ과 ㄷ은 옳다. ㄴ은 부정어 not이 분사 앞에 와야 하므로 Not being sure가 되어야 한다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 바른 것은? (분사구문의 형태에 유의할 것)",
+   "choices": [
+    "Not knowing that the shop closed at eight, we arrived at eight thirty.",
+    "Knowing not that the shop closed at eight, we arrived at eight thirty.",
+    "Not know that the shop closed at eight, we arrived at eight thirty.",
+    "No knowing that the shop closed at eight, we arrived at eight thirty.",
+    "Not to know that the shop closed at eight, we arrived at eight thirty."
+   ],
+   "answer": 1,
+   "why": "부정 분사구문의 어순은 Not knowing이다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n무엇을 먼저 해야 할지 몰라서 그는 목록을 만들기 시작했다.",
+   "choices": [
+    "Knowing not what to do first, he began to make a list.",
+    "Not knowing what to do first, he began to make a list.",
+    "Not know what to do first, he began to make a list.",
+    "Not to know what to do first, he began to make a list.",
+    "No knowing what to do first, he began to make a list."
+   ],
+   "answer": 2,
+   "why": "부정 분사구문은 Not + v-ing 순서로 쓴다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n창가에 앉아서 그녀는 지나가는 사람들을 지켜보았다.",
+   "choices": [
+    "Sat by the window, she watched people passing by.",
+    "Sit by the window, she watched people passing by.",
+    "Sitting by the window, she watched people passing by.",
+    "To sit by the window, she watched people passing by.",
+    "Being sat by the window, she watched people passing by."
+   ],
+   "answer": 3,
+   "why": "동시동작은 v-ing로 나타내므로 Sitting by the window가 맞다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n버스를 놓쳐서 우리는 회의에 삼십 분 늦었다.",
+   "choices": [
+    "Missing the bus, we were thirty minutes late for the meeting.",
+    "Missed the bus, we were thirty minutes late for the meeting.",
+    "Miss the bus, we were thirty minutes late for the meeting.",
+    "To miss the bus, we were thirty minutes late for the meeting.",
+    "Being miss the bus, we were thirty minutes late for the meeting."
+   ],
+   "answer": 1,
+   "why": "이유를 나타내는 분사구문이므로 Missing the bus가 맞다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n손을 흔들면서 그 아이들은 버스를 향해 달려갔다.",
+   "choices": [
+    "Waving their hands, the children ran toward the bus.",
+    "Waved their hands, the children ran toward the bus.",
+    "Wave their hands, the children ran toward the bus.",
+    "To wave their hands, the children ran toward the bus.",
+    "Being waved their hands, the children ran toward the bus."
+   ],
+   "answer": 1,
+   "why": "동시동작을 나타내는 분사구문이므로 Waving their hands가 알맞다. 과거형이나 동사원형은 분사구문을 만들 수 없다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은?\n충분한 정보가 없어서 그 기자는 기사를 쓸 수 없었다.",
+   "choices": [
+    "Having not enough information, the reporter could not write the article.",
+    "Not having enough information, the reporter could not write the article.",
+    "Not have enough information, the reporter could not write the article.",
+    "No having enough information, the reporter could not write the article.",
+    "Not to have enough information, the reporter could not write the article."
+   ],
+   "answer": 2,
+   "why": "부정어 not은 분사 앞에 온다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장을 분사구문을 사용해 한 문장으로 바르게 바꾼 것은?\nBecause she was worried about her sick dog, Yuna called the animal hospital.",
+   "choices": [
+    "Worried being about her sick dog, Yuna called the animal hospital.",
+    "Being worried about her sick dog, Yuna called the animal hospital.",
+    "Be worried about her sick dog, Yuna called the animal hospital.",
+    "To be worried about her sick dog, Yuna called the animal hospital.",
+    "Been worried about her sick dog, Yuna called the animal hospital."
+   ],
+   "answer": 2,
+   "why": "was는 Being이 되고 접속사와 주어는 지운다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장을 분사구문을 사용해 한 문장으로 바르게 바꾼 것은?\nWhile he was cleaning his desk, Minsu found the photo he had lost.",
+   "choices": [
+    "Cleaned his desk, Minsu found the photo he had lost.",
+    "Clean his desk, Minsu found the photo he had lost.",
+    "Cleaning his desk, Minsu found the photo he had lost.",
+    "To clean his desk, Minsu found the photo he had lost.",
+    "Being cleaned his desk, Minsu found the photo he had lost."
+   ],
+   "answer": 3,
+   "why": "was cleaning은 Cleaning으로 줄어든다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장을 분사구문을 사용해 한 문장으로 바르게 바꾼 것은?\nBecause the children did not want to leave the zoo, they walked very slowly.",
+   "choices": [
+    "Not wanting to leave the zoo, the children walked very slowly.",
+    "Wanting not to leave the zoo, the children walked very slowly.",
+    "Not want to leave the zoo, the children walked very slowly.",
+    "Not to want to leave the zoo, the children walked very slowly.",
+    "No wanting to leave the zoo, the children walked very slowly."
+   ],
+   "answer": 1,
+   "why": "did not want은 Not wanting이 되고 주어 the children은 주절에 남는다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 분사구문의 의미로 가장 알맞은 것은?\n<u>Having lunch with her old friend</u>, Sujin talked about their school days for two hours.",
+   "choices": [
+    "점심을 먹기 위해",
+    "점심을 먹으면서",
+    "점심을 먹지 않아서",
+    "점심을 먹는다면",
+    "점심을 먹었지만"
+   ],
+   "answer": 2,
+   "why": "주절의 동작과 동시에 일어난 일이므로 동시동작을 나타낸다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 분사구문의 의미로 가장 알맞은 것은?\n<u>Not receiving any news from the team</u>, the fans became more and more worried.",
+   "choices": [
+    "소식을 받기 위해",
+    "소식을 받고 나서",
+    "소식을 전혀 받지 못해서",
+    "소식을 받는다면",
+    "소식을 받았는데도"
+   ],
+   "answer": 3,
+   "why": "not v-ing는 부정의 이유를 나타낸다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 분사구문의 의미로 가장 알맞은 것은?\n<u>Closing the notebook</u>, Mr. Yoon looked at the students and smiled.",
+   "choices": [
+    "공책을 덮은 뒤에",
+    "공책을 덮기 위해",
+    "공책을 덮지 않고",
+    "공책을 덮는다면",
+    "공책을 덮었지만"
+   ],
+   "answer": 1,
+   "why": "공책을 덮은 다음 학생들을 보았다는 시간의 뜻이다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 분사구문의 의미가 나머지 넷과 다른 것은?",
+   "choices": [
+    "<u>Being</u> very tired, Somi went to bed at nine.",
+    "<u>Having</u> no umbrella, Jack waited under the roof.",
+    "<u>Not knowing</u> the password, I could not open the file.",
+    "<u>Humming</u> a cheerful song, Grandma made pancakes.",
+    "<u>Feeling</u> a little sick, Tom left the classroom."
+   ],
+   "answer": 4,
+   "why": "④는 노래를 흥얼거리면서 팬케이크를 만들었다는 동시동작이고, 나머지는 모두 이유를 나타낸다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 분사구문이 나타내는 뜻이 나머지 넷과 다른 것은?",
+   "choices": [
+    "<u>Opening</u> the door, she turned on the light.",
+    "<u>Hearing</u> the bell, the students left the classroom.",
+    "<u>Getting</u> off the bus, Mina put on her gloves.",
+    "<u>Having</u> a bad cold, Junho did not go to the party.",
+    "<u>Finishing</u> the last question, he handed in the paper."
+   ],
+   "answer": 4,
+   "why": "④만 이유를 나타내고 나머지는 모두 앞뒤 동작의 순서, 즉 때를 나타낸다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n____ that the road would be closed all weekend, the driver took a different route to the airport.",
+   "choices": [
+    "Know",
+    "Known",
+    "To know",
+    "Knowing",
+    "Knows"
+   ],
+   "answer": 4,
+   "why": "이유를 나타내는 분사구문이므로 Knowing이 알맞다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n____ any of the words on the sign, the tourists asked a student to translate it for them.",
+   "choices": [
+    "Not understanding",
+    "Understanding not",
+    "Not understand",
+    "Not to understand",
+    "No understanding"
+   ],
+   "answer": 1,
+   "why": "부정 분사구문 Not understanding이 알맞다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n____ the top of the mountain at last, the climbers took off their heavy backpacks and rested.",
+   "choices": [
+    "Reach",
+    "Reached",
+    "Reaching",
+    "To reach",
+    "Reaches"
+   ],
+   "answer": 3,
+   "why": "정상에 도착한 뒤라는 시간의 뜻이므로 Reaching이 알맞다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n____ in a small village near the sea, Mina knows the names of many fish.",
+   "choices": [
+    "Grew up",
+    "Grow up",
+    "To grow up",
+    "Grown up",
+    "Growing up"
+   ],
+   "answer": 5,
+   "why": "이유를 나타내는 분사구문이므로 Growing up이 알맞다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n____ ready for the school festival, the club members practiced every evening for a month.",
+   "choices": [
+    "Get",
+    "Got",
+    "Gets",
+    "Getting",
+    "To get"
+   ],
+   "answer": 4,
+   "why": "준비를 하면서 매일 연습했다는 뜻으로 분사구문 Getting이 알맞다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 적절한 것은?\n____ sure whether the shop was open, Dad called them before driving there.",
+   "choices": [
+    "Being not",
+    "Not being",
+    "Not be",
+    "No being",
+    "Not to be"
+   ],
+   "answer": 2,
+   "why": "확신하지 못했다는 부정의 이유이므로 Not being sure가 알맞다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 분사구문을 사용한 한 문장으로 바꿔 쓰시오.\nBecause she did not want to disturb her sister, Yuna studied in the living room.",
+   "answer": "Not wanting to disturb her sister, Yuna studied in the living room.",
+   "alt": [
+    "Not wanting to disturb her sister, Yuna studied in the living room"
+   ],
+   "why": "did not want은 Not wanting이 되고, 접속사와 부사절의 주어를 지운 뒤 주어 Yuna는 주절에 남긴다.",
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 분사구문을 사용한 한 문장으로 바꿔 쓰시오.\nWhen he was walking through the old market, Jinho ran into his homeroom teacher.",
+   "answer": "Walking through the old market, Jinho ran into his homeroom teacher.",
+   "alt": [
+    "Walking through the old market, Jinho ran into his homeroom teacher"
+   ],
+   "why": "was walking은 Walking으로 줄어들고 접속사 When과 주어 he는 지운다.",
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 분사구문을 사용한 한 문장으로 바꿔 쓰시오.\nBecause I was not sure about the last answer, I checked the dictionary again.",
+   "answer": "Not being sure about the last answer, I checked the dictionary again.",
+   "alt": [
+    "Not being sure about the last answer, I checked the dictionary again"
+   ],
+   "why": "was not은 Not being이 된다. 부정어 not은 반드시 분사 앞에 온다.",
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 분사구문을 사용한 한 문장으로 바꿔 쓰시오.\nAfter he read the same page three times, Woojin finally understood the question.",
+   "answer": "Reading the same page three times, Woojin finally understood the question.",
+   "alt": [
+    "Reading the same page three times, Woojin finally understood the question"
+   ],
+   "why": "접속사 After와 주어 he를 지우고 read를 Reading으로 바꾼 뒤 주절의 주어 Woojin은 그대로 둔다.",
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 분사구문을 사용한 한 문장으로 바꿔 쓰시오.\nBecause he had a part-time job on weekends, Seho could not join the club trip.",
+   "answer": "Having a part-time job on weekends, Seho could not join the club trip.",
+   "alt": [
+    "Having a part-time job on weekends, Seho could not join the club trip"
+   ],
+   "why": "이유를 나타내는 had를 Having으로 바꾸고 주어 Seho는 주절에 남긴다.",
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 분사구문을 사용한 한 문장으로 바꿔 쓰시오.\nAs she looked at the old photo on the wall, Grandma began to talk about her school days.",
+   "answer": "Looking at the old photo on the wall, Grandma began to talk about her school days.",
+   "alt": [
+    "Looking at the old photo on the wall, Grandma began to talk about her school days"
+   ],
+   "why": "접속사 As와 주어 she를 지우고 looked를 Looking으로 바꾼다.",
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 부분을 바르게 고쳐 문장 전체를 다시 쓰시오.\nBeing not able to find her ticket, Suji looked in every pocket of her coat.",
+   "answer": "Not being able to find her ticket, Suji looked in every pocket of her coat.",
+   "alt": [
+    "Not being able to find her ticket, Suji looked in every pocket of her coat"
+   ],
+   "why": "분사구문의 부정은 not + being 순서이므로 Not being able로 고친다.",
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 부분을 바르게 고쳐 문장 전체를 다시 쓰시오.\nLooked at the map on his phone, Mr. Jung turned left at the second corner.",
+   "answer": "Looking at the map on his phone, Mr. Jung turned left at the second corner.",
+   "alt": [
+    "Looking at the map on his phone, Mr. Jung turned left at the second corner"
+   ],
+   "why": "지도를 본 주체가 Mr. Jung이므로 능동의 Looking으로 고친다.",
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 부분을 바르게 고쳐 문장 전체를 다시 쓰시오.\nNot have any coins for the vending machine, we borrowed some from a friend.",
+   "answer": "Not having any coins for the vending machine, we borrowed some from a friend.",
+   "alt": [
+    "Not having any coins for the vending machine, we borrowed some from a friend"
+   ],
+   "why": "분사구문 자리에 동사원형은 올 수 없으므로 Not having으로 고친다.",
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 부분을 바르게 고쳐 문장 전체를 다시 쓰시오.\nKnowing not the way to the new library, Sumin asked a shop owner for help.",
+   "answer": "Not knowing the way to the new library, Sumin asked a shop owner for help.",
+   "alt": [
+    "Not knowing the way to the new library, Sumin asked a shop owner for help"
+   ],
+   "why": "부정어 not은 분사 앞에 와야 하므로 Not knowing으로 고친다.",
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 부분을 바르게 고쳐 문장 전체를 다시 쓰시오.\nTo wait for the rain to stop, we stayed in the museum shop for an hour. (비가 그치기를 기다리면서)",
+   "answer": "Waiting for the rain to stop, we stayed in the museum shop for an hour.",
+   "alt": [
+    "Waiting for the rain to stop, we stayed in the museum shop for an hour"
+   ],
+   "why": "동시 상황은 분사구문 v-ing로 나타낸다. to부정사는 목적의 뜻이 되어 우리말과 맞지 않는다.",
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 분사구문을 접속사가 있는 부사절로 바꿀 때 빈칸에 알맞은 세 단어를 쓰시오.\nNot knowing anyone in her new class, Mina sat quietly at the back.\n= Because she ____ anyone in her new class, Mina sat quietly at the back.",
+   "answer": "did not know",
+   "alt": [
+    "didn't know"
+   ],
+   "why": "Not knowing은 이유의 부정이며 주절이 과거이므로 did not know로 되살린다.",
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 분사구문을 접속사가 있는 부사절로 바꿀 때 빈칸에 알맞은 한 단어를 쓰시오.\nBeing too nervous to speak, Junho only nodded at the reporter.\n= Because he ____ too nervous to speak, Junho only nodded at the reporter.",
+   "answer": "was",
+   "alt": [
+    "Was"
+   ],
+   "why": "Being은 be동사의 분사구문이고 주절이 과거이므로 was가 알맞다.",
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 분사구문이 나타내는 뜻에 맞도록 빈칸에 알맞은 접속사 한 단어를 쓰시오.\nTurning off all the lights, Mr. Han locked the office door.\n= ____ he turned off all the lights, Mr. Han locked the office door. (시간의 뜻)",
+   "answer": "After",
+   "alt": [
+    "after",
+    "When",
+    "when",
+    "As",
+    "as"
+   ],
+   "why": "불을 모두 끈 다음 문을 잠갔다는 시간의 뜻이므로 After(When, As)가 알맞다.",
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 우리말과 같은 뜻이 되도록 괄호 안의 말을 알맞게 배열하시오. (필요하면 형태를 바꿀 것)\n막차를 놓쳐서 우리는 택시를 타야 했다.\n(the last train / miss / we / had to / take a taxi)",
+   "answer": "Missing the last train, we had to take a taxi.",
+   "alt": [
+    "Missing the last train, we had to take a taxi"
+   ],
+   "why": "이유를 나타내는 분사구문 Missing the last train을 앞에 쓰고 주절을 이어 쓴다.",
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 우리말과 같은 뜻이 되도록 괄호 안의 말을 알맞게 배열하시오. (필요하면 형태를 바꿀 것)\n그의 이메일 주소를 몰라서 나는 그에게 편지를 보냈다.\n(not / know / his email address / I / sent him a letter)",
+   "answer": "Not knowing his email address, I sent him a letter.",
+   "alt": [
+    "Not knowing his email address, I sent him a letter"
+   ],
+   "why": "부정 분사구문은 Not + v-ing 순서로 쓴다.",
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 우리말과 같은 뜻이 되도록 괄호 안의 말을 알맞게 배열하시오. (필요하면 형태를 바꿀 것)\n바닥이 흔들리는 것을 느끼고 학생들은 교실 밖으로 뛰어나갔다.\n(feel / the floor shake / the students / ran out of the classroom)",
+   "answer": "Feeling the floor shake, the students ran out of the classroom.",
+   "alt": [
+    "Feeling the floor shake, the students ran out of the classroom"
+   ],
+   "why": "이유와 때를 함께 나타내는 분사구문이므로 Feeling으로 시작한다.",
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 우리말과 같은 뜻이 되도록 괄호 안의 말을 알맞게 배열하시오. (필요하면 형태를 바꿀 것)\n창가에 앉아서 그녀는 커피를 마시며 비를 바라보았다.\n(sit / by the window / she / drank coffee and watched the rain)",
+   "answer": "Sitting by the window, she drank coffee and watched the rain.",
+   "alt": [
+    "Sitting by the window, she drank coffee and watched the rain"
+   ],
+   "why": "동시동작을 나타내는 분사구문이므로 Sitting by the window로 시작한다.",
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 Not으로 시작하는 분사구문 문장으로 바꿔 쓰시오.\nBecause the team did not receive any support, they had to buy their own uniforms.",
+   "answer": "Not receiving any support, the team had to buy their own uniforms.",
+   "alt": [
+    "Not receiving any support, the team had to buy their own uniforms"
+   ],
+   "why": "did not receive는 Not receiving이 되고, 주절의 주어는 the team으로 밝혀 쓴다.",
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 Being으로 시작하는 분사구문 문장으로 바꿔 쓰시오.\nBecause Hana was the youngest member of the band, she carried the lightest bag.",
+   "answer": "Being the youngest member of the band, Hana carried the lightest bag.",
+   "alt": [
+    "Being the youngest member of the band, Hana carried the lightest bag"
+   ],
+   "why": "was는 Being이 되며, 주절에는 대명사 she 대신 주어 Hana를 밝혀 쓴다.",
+   "no": 200
+  }
+ ]
+}

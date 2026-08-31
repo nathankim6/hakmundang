@@ -1,0 +1,2790 @@
+{
+ "id": "m3-03",
+ "grade": "중3",
+ "name": "관계대명사 what",
+ "points": [
+  "선행사 포함(= the thing which)",
+  "명사절 주어·목적어·보어",
+  "that과 구별"
+ ],
+ "questions": [
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 말로 알맞은 것은? ____ I want now is a cold drink.",
+   "choices": [
+    "That",
+    "Which",
+    "Whose",
+    "Who",
+    "What"
+   ],
+   "answer": 5,
+   "why": "앞에 선행사가 없고 want의 목적어 자리가 비어 있으므로 '~하는 것'을 뜻하는 what을 쓴다. That 뒤에는 완전한 절이 와야 한다.",
+   "no": 1
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것을 고르시오. This is ____ I bought at the market.",
+   "choices": [
+    "what",
+    "that",
+    "who",
+    "whose",
+    "where"
+   ],
+   "answer": 1,
+   "why": "선행사가 없고 bought의 목적어가 비어 있으므로 선행사를 포함한 what을 쓴다. that은 앞에 선행사가 있어야 관계대명사로 쓸 수 있다.",
+   "no": 2
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은? Tell me ____ you saw in the park.",
+   "choices": [
+    "what",
+    "that",
+    "who",
+    "whose",
+    "when"
+   ],
+   "answer": 1,
+   "why": "saw의 목적어가 빠진 명사절이 필요하고 선행사가 없으므로 what이 알맞다.",
+   "no": 3
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? ____ he said surprised everyone.",
+   "choices": [
+    "That",
+    "Which",
+    "Who",
+    "What",
+    "Whose"
+   ],
+   "answer": 4,
+   "why": "said의 목적어가 비어 있는 명사절이 주어 자리에 왔으므로 선행사를 포함한 What을 쓴다.",
+   "no": 4
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말을 고르시오. Pizza is ____ I usually eat on Fridays.",
+   "choices": [
+    "that",
+    "which",
+    "what",
+    "who",
+    "where"
+   ],
+   "answer": 3,
+   "why": "be동사의 보어 자리에 선행사 없이 오는 명사절이므로 what이 알맞다.",
+   "no": 5
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 들어갈 알맞은 말은? I can't understand ____ you are drawing.",
+   "choices": [
+    "that",
+    "who",
+    "whose",
+    "what",
+    "where"
+   ],
+   "answer": 4,
+   "why": "drawing의 목적어가 비어 있고 선행사가 없으므로 what을 쓴다.",
+   "no": 6
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? ____ made me happy was her letter.",
+   "choices": [
+    "That",
+    "Who",
+    "Which",
+    "What",
+    "Whose"
+   ],
+   "answer": 4,
+   "why": "made의 주어 자리가 비어 있는 명사절이 문장의 주어이므로 선행사를 포함한 What을 쓴다.",
+   "no": 7
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은? She showed me ____ she made in art class.",
+   "choices": [
+    "what",
+    "that",
+    "who",
+    "when",
+    "why"
+   ],
+   "answer": 1,
+   "why": "made의 목적어가 빠져 있고 선행사가 없으므로 what이 알맞다.",
+   "no": 8
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것을 고르시오. ____ we need most is clean water.",
+   "choices": [
+    "Which",
+    "That",
+    "Who",
+    "Whose",
+    "What"
+   ],
+   "answer": 5,
+   "why": "need의 목적어가 없는 명사절이 주어이므로 What을 쓴다. That 뒤에는 빠진 것 없는 완전한 절이 와야 한다.",
+   "no": 9
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은? Do you remember ____ I gave you last night?",
+   "choices": [
+    "that",
+    "what",
+    "who",
+    "whose",
+    "where"
+   ],
+   "answer": 2,
+   "why": "gave의 직접목적어 자리가 비어 있고 선행사가 없으므로 what을 쓴다. that을 쓰면 뒤에 완전한 절이 와야 한다.",
+   "no": 10
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? This bag is ____ I was looking for.",
+   "choices": [
+    "what",
+    "that",
+    "who",
+    "whose",
+    "when"
+   ],
+   "answer": 1,
+   "why": "for의 목적어가 비어 있고 선행사가 없으므로 보어 역할을 하는 what절을 만든다.",
+   "no": 11
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것을 고르시오. ____ she found in the drawer was an old coin.",
+   "choices": [
+    "Who",
+    "That",
+    "What",
+    "Whose",
+    "Where"
+   ],
+   "answer": 3,
+   "why": "found의 목적어가 빠진 명사절이 주어 자리에 왔으므로 선행사를 포함한 What을 쓴다.",
+   "no": 12
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은? I will do ____ you want.",
+   "choices": [
+    "that",
+    "which",
+    "what",
+    "who",
+    "whose"
+   ],
+   "answer": 3,
+   "why": "do의 목적어가 되는 명사절이 필요하고 선행사가 없으므로 what을 쓴다.",
+   "no": 13
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? ____ I like about Mina is her honesty.",
+   "choices": [
+    "That",
+    "Which",
+    "Who",
+    "What",
+    "Whose"
+   ],
+   "answer": 4,
+   "why": "like의 목적어가 빠진 명사절이 주어이므로 선행사를 포함한 What이 알맞다.",
+   "no": 14
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말을 고르시오. Please give me ____ is in your hand.",
+   "choices": [
+    "that",
+    "who",
+    "what",
+    "whose",
+    "where"
+   ],
+   "answer": 3,
+   "why": "is의 주어 자리가 비어 있고 선행사가 없으므로 what을 쓴다. what은 '~하는 것'이라는 뜻으로 give의 목적어가 된다.",
+   "no": 15
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? ____ happened yesterday was really strange.",
+   "choices": [
+    "That",
+    "What",
+    "Which",
+    "Who",
+    "Where"
+   ],
+   "answer": 2,
+   "why": "happened의 주어가 비어 있는 명사절이 문장의 주어이므로 What을 쓴다.",
+   "no": 16
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? I lost the watch ____ my dad gave me.",
+   "choices": [
+    "what",
+    "which",
+    "who",
+    "whose",
+    "where"
+   ],
+   "answer": 2,
+   "why": "선행사 the watch가 이미 있으므로 선행사를 포함하는 what은 쓸 수 없고 목적격 관계대명사 which[that]를 쓴다.",
+   "no": 17
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말을 고르시오. Show me the picture ____ you drew.",
+   "choices": [
+    "who",
+    "what",
+    "why",
+    "whose",
+    "that"
+   ],
+   "answer": 5,
+   "why": "선행사 the picture가 있으므로 what은 불가능하며 목적격 관계대명사 that[which]을 쓴다.",
+   "no": 18
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? The thing ____ she needs is a good friend.",
+   "choices": [
+    "what",
+    "who",
+    "which",
+    "whose",
+    "where"
+   ],
+   "answer": 3,
+   "why": "선행사 the thing이 있으므로 what을 쓸 수 없다. what은 the thing which를 한 단어로 줄인 말이다.",
+   "no": 19
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? These are the shoes ____ I wear every day.",
+   "choices": [
+    "what",
+    "who",
+    "whose",
+    "which",
+    "when"
+   ],
+   "answer": 4,
+   "why": "선행사 the shoes가 있고 wear의 목적어가 비어 있으므로 목적격 which[that]를 쓴다.",
+   "no": 20
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은? This is ____ my grandmother cooked for us.",
+   "choices": [
+    "that",
+    "which",
+    "what",
+    "who",
+    "where"
+   ],
+   "answer": 3,
+   "why": "선행사가 없고 cooked의 목적어가 비어 있으므로 what을 쓴다.",
+   "no": 21
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것을 고르시오. I ate everything ____ was on the plate.",
+   "choices": [
+    "what",
+    "who",
+    "where",
+    "whose",
+    "that"
+   ],
+   "answer": 5,
+   "why": "everything이라는 선행사가 있으므로 what은 쓸 수 없고 주격 관계대명사 that을 쓴다.",
+   "no": 22
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? He didn't believe ____ I said.",
+   "choices": [
+    "that",
+    "which",
+    "what",
+    "who",
+    "whose"
+   ],
+   "answer": 3,
+   "why": "said의 목적어가 비어 있고 선행사가 없으므로 what이 알맞다. that을 쓰면 뒤에 완전한 절이 와야 한다.",
+   "no": 23
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? Is this the book ____ you talked about?",
+   "choices": [
+    "what",
+    "who",
+    "whose",
+    "when",
+    "which"
+   ],
+   "answer": 5,
+   "why": "선행사 the book이 있고 about의 목적어가 비어 있으므로 which[that]를 쓴다. what은 선행사와 함께 쓰지 않는다.",
+   "no": 24
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 내가 원하는 것은 새 자전거이다.",
+   "choices": [
+    "That I want is a new bike.",
+    "What I want is a new bike.",
+    "Which I want is a new bike.",
+    "The thing what I want is a new bike.",
+    "What do I want is a new bike."
+   ],
+   "answer": 2,
+   "why": "'내가 원하는 것'은 선행사를 포함한 what절로 쓴다. the thing what은 선행사가 겹쳐 틀리고, 의문문 어순도 쓸 수 없다.",
+   "no": 25
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 이것이 내가 어제 산 것이다.",
+   "choices": [
+    "This is that I bought yesterday.",
+    "This is which I bought yesterday.",
+    "This is the thing what I bought yesterday.",
+    "This is what did I buy yesterday.",
+    "This is what I bought yesterday."
+   ],
+   "answer": 5,
+   "why": "선행사 없이 보어 역할을 하는 명사절이므로 what을 쓴다. that·which는 선행사가 있어야 하고, what절 안은 평서문 어순이다.",
+   "no": 26
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말과 같은 뜻이 되도록 할 때 알맞은 것은? 그가 말한 것은 사실이었다.",
+   "choices": [
+    "What he said was true.",
+    "That he said was true.",
+    "Which he said was true.",
+    "What did he say was true.",
+    "What he said were true."
+   ],
+   "answer": 1,
+   "why": "선행사를 포함한 What절이 주어이며, what절 주어는 단수 취급하므로 was가 온다.",
+   "no": 27
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 나는 네가 필요한 것을 안다.",
+   "choices": [
+    "I know that you need.",
+    "I know the thing what you need.",
+    "I know what do you need.",
+    "I know what you need.",
+    "I know what you need it."
+   ],
+   "answer": 4,
+   "why": "need의 목적어가 되는 명사절이 필요하므로 what을 쓴다. what 자체가 목적어이므로 뒤에 it을 또 쓰지 않는다.",
+   "no": 28
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "우리말에 맞는 영어 문장은? 그녀가 만든 것은 맛있어 보였다.",
+   "choices": [
+    "That she made looked delicious.",
+    "What she made look delicious.",
+    "What did she make looked delicious.",
+    "The thing what she made looked delicious.",
+    "What she made looked delicious."
+   ],
+   "answer": 5,
+   "why": "What절이 주어이고 단수 취급하므로 동사는 looked가 맞다. the thing what은 선행사가 중복되어 틀리다.",
+   "no": 29
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 이것이 내가 찾고 있던 것이다.",
+   "choices": [
+    "This is that I was looking for.",
+    "This is which I was looking for.",
+    "This is the thing what I was looking for.",
+    "This is what I was looking for.",
+    "This is what I was looking for it."
+   ],
+   "answer": 4,
+   "why": "for의 목적어가 비어 있고 선행사가 없으므로 what을 쓴다. what이 곧 목적어이므로 it을 덧붙이지 않는다.",
+   "no": 30
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은?",
+   "choices": [
+    "The thing what he wants is money.",
+    "What he wants is money.",
+    "What does he want is money.",
+    "That he wants is money.",
+    "Which he wants is money."
+   ],
+   "answer": 2,
+   "why": "what은 선행사를 포함하므로 the thing과 함께 쓸 수 없고, wants의 목적어가 비어 있어 that·which는 쓸 수 없다.",
+   "no": 31
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것은?",
+   "choices": [
+    "I like what you cooked.",
+    "What she bought was a hat.",
+    "This is what I mean.",
+    "Tell me the thing what you saw.",
+    "Do what you can."
+   ],
+   "answer": 4,
+   "why": "what은 the thing which의 뜻이므로 선행사 the thing과 함께 쓸 수 없다. the thing which[that]로 고쳐야 한다.",
+   "no": 32
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장은?",
+   "choices": [
+    "This is what I need it.",
+    "What I need are a pen.",
+    "What do I need is a pen.",
+    "That I need is a pen.",
+    "What I need is a pen."
+   ],
+   "answer": 5,
+   "why": "what절이 주어이면 단수 취급하여 is를 쓰고, what이 need의 목적어이므로 it을 또 쓰지 않는다.",
+   "no": 33
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 문장은?",
+   "choices": [
+    "What he showed me was a photo.",
+    "I remember what you said.",
+    "She ate what was on the table.",
+    "This is the book what I read.",
+    "What is important is your health."
+   ],
+   "answer": 4,
+   "why": "선행사 the book이 있으므로 what이 아니라 which[that]를 써야 한다.",
+   "no": 34
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분이 어법상 옳지 않은 것은?",
+   "choices": [
+    "I believe <u>what</u> she says.",
+    "<u>What</u> I need is your help.",
+    "The thing <u>what</u> I saw was a fox.",
+    "Show me <u>what</u> you drew.",
+    "This is <u>what</u> makes me smile."
+   ],
+   "answer": 3,
+   "why": "선행사 the thing 뒤에는 which[that]를 써야 한다. what은 선행사를 이미 포함하고 있다.",
+   "no": 35
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "어법상 옳은 것을 고르시오.",
+   "choices": [
+    "Everything what he said was true.",
+    "All what I want is water.",
+    "Which I want is water.",
+    "That I want is water.",
+    "What I want is water."
+   ],
+   "answer": 5,
+   "why": "everything·all 뒤에는 that을 쓰고, 선행사가 없을 때만 what을 쓴다. want의 목적어가 비어 있으므로 that·which는 불가능하다.",
+   "no": 36
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 어법상 바르지 않은 것은?",
+   "choices": [
+    "What she wants is a puppy.",
+    "I forgot what I promised.",
+    "This is what I can do.",
+    "Anything what you say is fine.",
+    "What she made smells good."
+   ],
+   "answer": 4,
+   "why": "anything이라는 선행사가 있으므로 what이 아니라 that을 써야 한다.",
+   "no": 37
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 What[what]의 쓰임이 나머지 넷과 다른 것은?",
+   "choices": [
+    "This is <u>what</u> I want.",
+    "<u>What</u> is your name?",
+    "I know <u>what</u> you did.",
+    "<u>What</u> he said was funny.",
+    "Show me <u>what</u> you have."
+   ],
+   "answer": 2,
+   "why": "②는 '무엇'이라는 뜻의 의문사이고, 나머지는 '~하는 것'을 뜻하는 선행사 포함 관계대명사이다.",
+   "no": 38
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장과 뜻이 같은 것은? I ate the thing which she cooked.",
+   "choices": [
+    "I ate that she cooked.",
+    "I ate what she cooked.",
+    "I ate the thing what she cooked.",
+    "I ate what did she cook.",
+    "I ate what she cooked it."
+   ],
+   "answer": 2,
+   "why": "the thing which는 what 한 단어로 바꿔 쓸 수 있다.",
+   "no": 39
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "밑줄 친 부분과 바꿔 쓸 수 있는 것은? <u>What</u> he needs is a long rest.",
+   "choices": [
+    "The thing which",
+    "That",
+    "Which",
+    "The thing what",
+    "Who"
+   ],
+   "answer": 1,
+   "why": "what = the thing which[that]이므로 The thing which로 풀어 쓸 수 있다.",
+   "no": 40
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 문장의 what과 바꿔 쓸 수 있는 말은? Give me what you have in your pocket.",
+   "choices": [
+    "that",
+    "the thing that",
+    "which",
+    "the thing what",
+    "whose"
+   ],
+   "answer": 2,
+   "why": "what은 선행사를 포함하므로 the thing that[which]으로 풀어 쓸 수 있다.",
+   "no": 41
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바르게 바꾼 것은? This is the thing. + I wanted it.",
+   "choices": [
+    "This is that I wanted.",
+    "This is what I wanted.",
+    "This is what I wanted it.",
+    "This is the thing what I wanted.",
+    "This is which I wanted."
+   ],
+   "answer": 2,
+   "why": "the thing과 it을 합쳐 what 한 단어로 쓴다. what이 wanted의 목적어이므로 it은 없앤다.",
+   "no": 42
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은? (1) ____ I want is a warm coat. (2) I couldn't hear ____ she said.",
+   "choices": [
+    "that",
+    "which",
+    "whose",
+    "who",
+    "what"
+   ],
+   "answer": 5,
+   "why": "두 문장 모두 선행사가 없고 목적어 자리가 비어 있으므로 what이 알맞다.",
+   "no": 43
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 들어갈 말은? (1) ____ he wrote was a short letter. (2) Buy ____ you like.",
+   "choices": [
+    "what",
+    "that",
+    "which",
+    "who",
+    "where"
+   ],
+   "answer": 1,
+   "why": "둘 다 선행사 없이 명사절을 이끄는 자리이므로 what을 쓴다.",
+   "no": 44
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? A: Is this your cap? B: Yes. It's ____ my aunt gave me.",
+   "choices": [
+    "that",
+    "what",
+    "which",
+    "who",
+    "whose"
+   ],
+   "answer": 2,
+   "why": "gave의 목적어가 비어 있고 선행사가 없으므로 보어 역할을 하는 what절을 쓴다.",
+   "no": 45
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 말은? A: What are you doing? B: I'm looking for ____ I lost yesterday.",
+   "choices": [
+    "that",
+    "which",
+    "where",
+    "who",
+    "what"
+   ],
+   "answer": 5,
+   "why": "for의 목적어가 되는 명사절이 필요하고 선행사가 없으므로 what을 쓴다.",
+   "no": 46
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말을 고르시오. A: Why are you smiling? B: ____ you said made me happy.",
+   "choices": [
+    "That",
+    "Which",
+    "Who",
+    "What",
+    "Whose"
+   ],
+   "answer": 4,
+   "why": "said의 목적어가 빠진 명사절이 주어 자리에 왔으므로 What을 쓴다.",
+   "no": 47
+  },
+  {
+   "level": "하",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은? A: Can I help you? B: Yes. I need ____ is in that box.",
+   "choices": [
+    "what",
+    "that",
+    "who",
+    "whose",
+    "where"
+   ],
+   "answer": 1,
+   "why": "is의 주어 자리가 비어 있고 선행사가 없으므로 what을 쓴다.",
+   "no": 48
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 관계대명사 한 단어를 쓰시오. ____ I need is a pencil.",
+   "answer": "What",
+   "why": "선행사 없이 need의 목적어가 빠진 명사절이 주어이므로 What을 쓴다.",
+   "alt": [
+    "what"
+   ],
+   "no": 49
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. This is ____ I made in cooking class.",
+   "answer": "what",
+   "why": "선행사가 없고 made의 목적어가 비어 있으므로 what을 쓴다.",
+   "alt": [
+    "What"
+   ],
+   "no": 50
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 관계대명사를 쓰시오. Tell me ____ you want for your birthday.",
+   "answer": "what",
+   "why": "want의 목적어가 빠진 명사절이 필요하고 선행사가 없으므로 what을 쓴다.",
+   "alt": [
+    "What"
+   ],
+   "no": 51
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 한 단어로 바꿔 쓰시오. This is <u>the thing that</u> I bought.",
+   "answer": "what",
+   "why": "the thing that는 선행사를 포함한 관계대명사 what 한 단어로 바꿔 쓸 수 있다.",
+   "alt": [
+    "What"
+   ],
+   "no": 52
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. <u>That</u> he wants is a new phone.",
+   "answer": "What",
+   "why": "wants의 목적어가 비어 있으므로 접속사 That이 아니라 선행사를 포함한 What을 써야 한다.",
+   "alt": [
+    "what"
+   ],
+   "no": 53
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. I don't understand ____ you mean.",
+   "answer": "what",
+   "why": "mean의 목적어가 없는 명사절이므로 선행사를 포함한 what을 쓴다.",
+   "alt": [
+    "What"
+   ],
+   "no": 54
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. She showed me <u>which</u> she bought.",
+   "answer": "what",
+   "why": "선행사가 없으므로 which는 쓸 수 없고 선행사를 포함한 what으로 고친다.",
+   "alt": [
+    "What"
+   ],
+   "no": 55
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 두 문장을 what을 이용해 한 문장으로 쓰시오. That is the thing. + He drew it.",
+   "answer": "That is what he drew.",
+   "why": "the thing과 it을 합쳐 what으로 쓰고, what이 drew의 목적어이므로 it은 쓰지 않는다.",
+   "alt": [
+    "That is what he drew"
+   ],
+   "no": 56
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 한 단어를 쓰시오. (내가 본 것은 무지개였다.) ____ I saw was a rainbow.",
+   "answer": "What",
+   "why": "'내가 본 것'은 선행사를 포함한 What절로 나타내며 문장의 주어가 된다.",
+   "alt": [
+    "what"
+   ],
+   "no": 57
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 what과 which 중 알맞은 것을 골라 쓰시오. I lost the key ____ opens this door.",
+   "answer": "which",
+   "why": "선행사 the key가 있으므로 what은 쓸 수 없고 주격 관계대명사 which를 쓴다.",
+   "alt": [
+    "Which"
+   ],
+   "no": 58
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 what과 that 중 알맞은 것을 골라 쓰시오. I didn't hear ____ she said.",
+   "answer": "what",
+   "why": "said의 목적어가 비어 있고 선행사가 없으므로 what을 쓴다.",
+   "alt": [
+    "What"
+   ],
+   "no": 59
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. Just do ____ you can.",
+   "answer": "what",
+   "why": "do의 목적어가 되는 명사절이 필요하고 선행사가 없으므로 what을 쓴다.",
+   "alt": [
+    "What"
+   ],
+   "no": 60
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 것을 골라 쓰시오. This is (that / what) I like most.",
+   "answer": "what",
+   "why": "선행사가 없고 like의 목적어가 비어 있으므로 what이 알맞다.",
+   "alt": [
+    "What"
+   ],
+   "no": 61
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. Everything <u>what</u> he said was true.",
+   "answer": "that",
+   "why": "everything이라는 선행사가 있으므로 what은 쓸 수 없고 that[which]으로 고친다.",
+   "alt": [
+    "which",
+    "That",
+    "Which"
+   ],
+   "no": 62
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "다음 문장을 what을 이용해 다시 쓰시오. The thing which she needs is time.",
+   "answer": "What she needs is time.",
+   "why": "the thing which를 what 한 단어로 줄여 쓴다.",
+   "alt": [
+    "What she needs is time"
+   ],
+   "no": 63
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 것을 골라 쓰시오. I know the boy (who / what) is singing.",
+   "answer": "who",
+   "why": "선행사 the boy가 사람이므로 주격 관계대명사 who를 쓴다. what은 선행사와 함께 쓸 수 없다.",
+   "alt": [
+    "Who"
+   ],
+   "no": 64
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. ____ makes me happy is music.",
+   "answer": "What",
+   "why": "makes의 주어 자리가 비어 있는 명사절이 문장의 주어이므로 What을 쓴다.",
+   "alt": [
+    "what"
+   ],
+   "no": 65
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. What I need (be) ____ your help.",
+   "answer": "is",
+   "why": "what절이 주어일 때는 단수 취급하므로 is를 쓴다.",
+   "alt": [
+    "Is"
+   ],
+   "no": 66
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 세 단어로 고쳐 쓰시오. Tell me <u>the thing what</u> you saw.",
+   "answer": "the thing that",
+   "why": "선행사 the thing이 있으므로 what 대신 that[which]을 써야 한다.",
+   "alt": [
+    "the thing which",
+    "The thing that",
+    "The thing which"
+   ],
+   "no": 67
+  },
+  {
+   "level": "하",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. Chocolate is ____ I want right now.",
+   "answer": "what",
+   "why": "보어 자리에 오는 명사절이고 선행사가 없으므로 what을 쓴다.",
+   "alt": [
+    "What"
+   ],
+   "no": 68
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? ____ surprised me most was his kind smile.",
+   "choices": [
+    "That",
+    "Which",
+    "Whose",
+    "Who",
+    "What"
+   ],
+   "answer": 5,
+   "why": "surprised의 주어 자리가 비어 있는 명사절이 문장의 주어이므로 선행사를 포함한 What을 쓴다.",
+   "no": 69
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것을 고르시오. The problem is ____ we don't have enough time.",
+   "choices": [
+    "what",
+    "that",
+    "which",
+    "who",
+    "whose"
+   ],
+   "answer": 2,
+   "why": "뒤에 빠진 성분이 없는 완전한 절이 오므로 접속사 that을 쓴다. what 뒤에는 주어나 목적어가 빠진 불완전한 절이 온다.",
+   "no": 70
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은? I'm not sure about ____ she really wants.",
+   "choices": [
+    "that",
+    "what",
+    "which",
+    "who",
+    "whose"
+   ],
+   "answer": 2,
+   "why": "전치사 about의 목적어가 되는 명사절이고 wants의 목적어가 비어 있으므로 what을 쓴다.",
+   "no": 71
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? Please write down ____ the teacher explains in class.",
+   "choices": [
+    "that",
+    "which",
+    "where",
+    "who",
+    "what"
+   ],
+   "answer": 5,
+   "why": "explains의 목적어가 비어 있고 선행사가 없으므로 what이 알맞다.",
+   "no": 72
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말을 고르시오. ____ he is looking for is his passport.",
+   "choices": [
+    "That",
+    "Which",
+    "Who",
+    "What",
+    "Whose"
+   ],
+   "answer": 4,
+   "why": "for의 목적어가 빠진 명사절이 주어 자리에 왔으므로 What을 쓴다.",
+   "no": 73
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? The doctor told me ____ I should eat more vegetables.",
+   "choices": [
+    "what",
+    "which",
+    "that",
+    "who",
+    "whose"
+   ],
+   "answer": 3,
+   "why": "뒤 절이 완전하므로 접속사 that을 쓴다. what을 쓰면 뒤 절에 빠진 성분이 있어야 한다.",
+   "no": 74
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것을 고르시오. This app shows ____ people are talking about these days.",
+   "choices": [
+    "that",
+    "what",
+    "which",
+    "who",
+    "where"
+   ],
+   "answer": 2,
+   "why": "about의 목적어가 비어 있고 선행사가 없으므로 what이 알맞다.",
+   "no": 75
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은? The novel ____ I read last night was really scary.",
+   "choices": [
+    "that",
+    "what",
+    "who",
+    "whose",
+    "where"
+   ],
+   "answer": 1,
+   "why": "선행사 The novel이 있으므로 what은 쓸 수 없고 목적격 관계대명사 that[which]을 쓴다.",
+   "no": 76
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? ____ she is wearing today looks very expensive.",
+   "choices": [
+    "That",
+    "What",
+    "Which",
+    "Who",
+    "Whose"
+   ],
+   "answer": 2,
+   "why": "wearing의 목적어가 빠진 명사절이 주어이므로 선행사를 포함한 What을 쓴다.",
+   "no": 77
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말을 고르시오. It is true ____ he moved to Busan last month.",
+   "choices": [
+    "what",
+    "that",
+    "which",
+    "who",
+    "where"
+   ],
+   "answer": 2,
+   "why": "뒤 절이 완전하고 It이 가주어이므로 진주어 절을 이끄는 접속사 that을 쓴다.",
+   "no": 78
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? Do you agree with ____ I just suggested?",
+   "choices": [
+    "that",
+    "which",
+    "whose",
+    "who",
+    "what"
+   ],
+   "answer": 5,
+   "why": "전치사 with의 목적어가 되는 명사절이며 suggested의 목적어가 비어 있으므로 what을 쓴다.",
+   "no": 79
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것을 고르시오. Everything ____ he owns is in that old bag.",
+   "choices": [
+    "what",
+    "that",
+    "who",
+    "whose",
+    "where"
+   ],
+   "answer": 2,
+   "why": "선행사가 Everything이므로 what은 쓸 수 없고 관계대명사 that을 쓴다.",
+   "no": 80
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은? ____ makes this city special is its old stone bridge.",
+   "choices": [
+    "That",
+    "Which",
+    "Where",
+    "Who",
+    "What"
+   ],
+   "answer": 5,
+   "why": "makes의 주어 자리가 비어 있는 명사절이 문장의 주어이므로 What을 쓴다.",
+   "no": 81
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? I will never forget ____ you did for me.",
+   "choices": [
+    "that",
+    "which",
+    "who",
+    "what",
+    "whose"
+   ],
+   "answer": 4,
+   "why": "did의 목적어가 비어 있고 선행사가 없으므로 what을 쓴다.",
+   "no": 82
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 잘못된 문장은?",
+   "choices": [
+    "What I like about summer is the long days.",
+    "He always keeps what he promises.",
+    "The thing what she wants is a quiet room.",
+    "What you need is a little rest.",
+    "I don't remember what I said to her."
+   ],
+   "answer": 3,
+   "why": "what은 선행사 the thing을 이미 포함하므로 함께 쓸 수 없다. the thing which[that]로 고쳐야 한다.",
+   "no": 83
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 올바른 문장을 고르시오.",
+   "choices": [
+    "That she showed us was an old photo.",
+    "What she showed us was an old photo.",
+    "What did she show us was an old photo.",
+    "The thing what she showed us was an old photo.",
+    "Which she showed us was an old photo."
+   ],
+   "answer": 2,
+   "why": "showed의 목적어가 빠진 명사절이 주어이므로 What이 필요하다. that·which는 선행사가 있어야 하고 what절은 평서문 어순이다.",
+   "no": 84
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분이 어법상 틀린 것은?",
+   "choices": [
+    "I'm proud of <u>what</u> my sister achieved.",
+    "The house <u>which</u> we visited was very old.",
+    "<u>What</u> he told us was hard to believe.",
+    "Anything <u>what</u> you order here is delicious.",
+    "She always finishes <u>what</u> she starts."
+   ],
+   "answer": 4,
+   "why": "anything이라는 선행사가 앞에 있으므로 what이 아니라 that을 써야 한다.",
+   "no": 85
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 what의 쓰임이 나머지 넷과 다른 것은?",
+   "choices": [
+    "<u>What</u> time does the movie start?",
+    "I can't believe <u>what</u> I'm seeing.",
+    "<u>What</u> worries me is his health.",
+    "This is exactly <u>what</u> I needed.",
+    "He wrote down <u>what</u> the guide said."
+   ],
+   "answer": 1,
+   "why": "①의 What은 뒤의 명사 time을 꾸미는 의문형용사이고, 나머지는 '~하는 것'을 뜻하는 관계대명사이다.",
+   "no": 86
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 that의 쓰임이 나머지 넷과 다른 하나는?",
+   "choices": [
+    "I know <u>that</u> he is honest.",
+    "The bike <u>that</u> he rides is new.",
+    "This is the song <u>that</u> I love.",
+    "She lost the ring <u>that</u> her mom gave her.",
+    "I met a boy <u>that</u> speaks three languages."
+   ],
+   "answer": 1,
+   "why": "①은 완전한 절을 이끄는 접속사 that이고, 나머지는 선행사를 받는 관계대명사 that이다.",
+   "no": 87
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 옳은 문장을 고르시오.",
+   "choices": [
+    "All what I want is a quiet weekend.",
+    "All that I want is a quiet weekend.",
+    "All what I want are a quiet weekend.",
+    "What all I want is a quiet weekend.",
+    "All I want what is a quiet weekend."
+   ],
+   "answer": 2,
+   "why": "all 뒤에는 관계대명사 that을 쓴다. what은 선행사를 포함하므로 all과 함께 쓸 수 없다.",
+   "no": 88
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 알맞지 않은 것은?",
+   "choices": [
+    "What is surprising is his age.",
+    "I understood what the man meant.",
+    "She bought what she needed for the trip.",
+    "This is the reason what he left early.",
+    "What we saw at the zoo was a baby panda."
+   ],
+   "answer": 4,
+   "why": "선행사 the reason이 있고 뒤 절도 완전하므로 what이 아니라 관계부사 why를 써야 한다.",
+   "no": 89
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 what을 the thing which로 바꿔 쓸 수 없는 것은?",
+   "choices": [
+    "<u>What</u> he lost was his wallet.",
+    "I'll show you <u>what</u> I found.",
+    "He didn't say <u>what</u> he thought.",
+    "This is <u>what</u> she wanted.",
+    "<u>What</u> is your favorite season?"
+   ],
+   "answer": 5,
+   "why": "⑤의 What은 '무엇'이라는 뜻의 의문사이므로 the thing which로 바꿀 수 없다.",
+   "no": 90
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 그가 나에게 준 것은 낡은 지도였다.",
+   "choices": [
+    "That he gave me was an old map.",
+    "The thing what he gave me was an old map.",
+    "What he gave me were an old map.",
+    "What he gave me was an old map.",
+    "What did he give me was an old map."
+   ],
+   "answer": 4,
+   "why": "선행사를 포함한 What절이 주어이며 단수 취급하므로 was를 쓴다.",
+   "no": 91
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말과 같은 뜻이 되도록 바르게 옮긴 것은? 나는 네가 어제 말한 것에 동의한다.",
+   "choices": [
+    "I agree with what you said yesterday.",
+    "I agree with that you said yesterday.",
+    "I agree with what did you say yesterday.",
+    "I agree with the thing what you said yesterday.",
+    "I agree what you said yesterday with."
+   ],
+   "answer": 1,
+   "why": "전치사 with의 목적어로 what절을 쓴다. that절은 전치사의 목적어로 쓰지 않고, the thing what은 선행사가 겹친다.",
+   "no": 92
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 우리에게 필요한 것은 더 많은 시간이다.",
+   "choices": [
+    "That we need is more time.",
+    "Which we need is more time.",
+    "What we need are more time.",
+    "What we need is more time.",
+    "The thing what we need is more time."
+   ],
+   "answer": 4,
+   "why": "What절 주어는 단수 취급하므로 is가 알맞다.",
+   "no": 93
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "우리말에 맞게 영작한 것으로 알맞은 것은? 그녀가 만든 것은 모두를 놀라게 했다.",
+   "choices": [
+    "That she made surprised everyone.",
+    "What did she make surprised everyone.",
+    "What she made surprised everyone.",
+    "The thing what she made surprised everyone.",
+    "What she made it surprised everyone."
+   ],
+   "answer": 3,
+   "why": "made의 목적어가 빠진 What절이 주어이고, what이 목적어이므로 it을 또 쓰지 않는다.",
+   "no": 94
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 문장과 의미가 같은 것은? Show me the things that you bought.",
+   "choices": [
+    "Show me that you bought.",
+    "Show me the thing what you bought.",
+    "Show me which you bought.",
+    "Show me what did you buy.",
+    "Show me what you bought."
+   ],
+   "answer": 5,
+   "why": "the things that는 선행사를 포함한 what으로 바꿔 쓸 수 있다.",
+   "no": 95
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "밑줄 친 부분과 바꿔 쓸 수 있는 것은? I still remember <u>the things which</u> he taught me.",
+   "choices": [
+    "what",
+    "that",
+    "which",
+    "the thing what",
+    "whose"
+   ],
+   "answer": 1,
+   "why": "the things which는 선행사를 포함한 관계대명사 what으로 바꿔 쓸 수 있다.",
+   "no": 96
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 두 문장을 한 문장으로 바르게 바꾼 것은? He didn't tell me the thing. + He saw it in the room.",
+   "choices": [
+    "He didn't tell me that he saw in the room.",
+    "He didn't tell me what he saw in the room.",
+    "He didn't tell me what did he see in the room.",
+    "He didn't tell me the thing what he saw in the room.",
+    "He didn't tell me which he saw in the room."
+   ],
+   "answer": 2,
+   "why": "the thing과 it을 합쳐 what으로 쓰며, what이 saw의 목적어가 된다.",
+   "no": 97
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 네가 읽고 있는 것은 나의 일기장이다.",
+   "choices": [
+    "That you are reading is my diary.",
+    "What are you reading is my diary.",
+    "The thing what you are reading is my diary.",
+    "What you are reading is my diary.",
+    "Which you are reading is my diary."
+   ],
+   "answer": 4,
+   "why": "reading의 목적어가 빠진 명사절이 주어이므로 What을 쓰고, 절 안은 평서문 어순이다.",
+   "no": 98
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은? (1) ____ he really wants is a long vacation. (2) Don't worry about ____ other people think.",
+   "choices": [
+    "that",
+    "which",
+    "what",
+    "who",
+    "whose"
+   ],
+   "answer": 3,
+   "why": "(1)은 wants의 목적어가, (2)는 think의 목적어가 빠진 명사절이므로 둘 다 what이 알맞다.",
+   "no": 99
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 공통으로 들어갈 말로 알맞은 것은? (1) The book ____ I borrowed is on your desk. (2) I think ____ he is right.",
+   "choices": [
+    "what",
+    "that",
+    "which",
+    "who",
+    "where"
+   ],
+   "answer": 2,
+   "why": "(1)은 선행사 The book을 받는 관계대명사 that, (2)는 완전한 절을 이끄는 접속사 that이다. what은 둘 다 불가능하다.",
+   "no": 100
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 빈칸 ⓐ, ⓑ에 들어갈 말이 바르게 짝지어진 것은? ⓐ ____ I want is a bike. ⓑ This is the bike ____ I want.",
+   "choices": [
+    "What – which",
+    "That – which",
+    "What – what",
+    "Which – what",
+    "That – what"
+   ],
+   "answer": 1,
+   "why": "ⓐ는 선행사가 없으므로 What, ⓑ는 선행사 the bike가 있으므로 which를 쓴다.",
+   "no": 101
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸 ⓐ, ⓑ에 알맞은 말이 바르게 연결된 것은? ⓐ I believe ____ you told me. ⓑ I believe ____ you are honest.",
+   "choices": [
+    "what – that",
+    "that – what",
+    "what – what",
+    "that – that",
+    "which – that"
+   ],
+   "answer": 1,
+   "why": "ⓐ는 told의 목적어가 빠져 있어 what, ⓑ는 뒤 절이 완전하므로 접속사 that을 쓴다.",
+   "no": 102
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 옳은 문장의 개수는? ㄱ. What I bought was a used bike. ㄴ. The thing what he said was strange. ㄷ. She gave me what I needed. ㄹ. All what I know is his name.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ㄱ·ㄷ만 옳다. ㄴ은 the thing which[that], ㄹ은 All that로 고쳐야 한다.",
+   "no": 103
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "어법상 옳은 문장의 개수로 알맞은 것은? ㄱ. This is what I mean. ㄴ. Everything what glitters is not gold. ㄷ. What he needs is a good rest. ㄹ. I like what you are wearing.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 4,
+   "why": "ㄱ·ㄷ·ㄹ이 옳다. ㄴ은 선행사 Everything이 있으므로 what을 that으로 고쳐야 한다.",
+   "no": 104
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은? A: You look upset. B: ____ he said at the meeting hurt me.",
+   "choices": [
+    "That",
+    "Which",
+    "Who",
+    "What",
+    "Whose"
+   ],
+   "answer": 4,
+   "why": "said의 목적어가 빠진 명사절이 주어이므로 What을 쓴다.",
+   "no": 105
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 알맞은 것은? A: Did you buy the jacket? B: No. ____ I bought was a pair of gloves.",
+   "choices": [
+    "That",
+    "What",
+    "Which",
+    "Who",
+    "Where"
+   ],
+   "answer": 2,
+   "why": "bought의 목적어가 빠진 명사절이 주어이므로 What이 알맞다.",
+   "no": 106
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 말은? A: How was the movie? B: The ending was not ____ I expected.",
+   "choices": [
+    "that",
+    "what",
+    "which",
+    "who",
+    "where"
+   ],
+   "answer": 2,
+   "why": "expected의 목적어가 비어 있고 선행사가 없으므로 보어 역할을 하는 what절을 쓴다.",
+   "no": 107
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것을 고르시오. A: Can I borrow this? B: Sure. Take ____ you need.",
+   "choices": [
+    "that",
+    "which",
+    "what",
+    "who",
+    "whose"
+   ],
+   "answer": 3,
+   "why": "Take의 목적어가 되는 명사절이고 need의 목적어가 비어 있으므로 what을 쓴다.",
+   "no": 108
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? A: Why didn't you eat the soup? B: It wasn't ____ I ordered.",
+   "choices": [
+    "that",
+    "which",
+    "what",
+    "whose",
+    "where"
+   ],
+   "answer": 3,
+   "why": "ordered의 목적어가 빠진 명사절이 보어이므로 what이 알맞다.",
+   "no": 109
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 what을 쓸 수 없는 것은?",
+   "choices": [
+    "____ he wants is a new job.",
+    "This is ____ I was talking about.",
+    "____ she cooked smelled great.",
+    "Tell me ____ you heard.",
+    "I don't like the color ____ you chose."
+   ],
+   "answer": 5,
+   "why": "⑤는 선행사 the color가 있으므로 what을 쓸 수 없고 which[that]를 써야 한다.",
+   "no": 110
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 that을 쓸 수 없는 것은?",
+   "choices": [
+    "The bag ____ I bought is heavy.",
+    "____ I bought was a heavy bag.",
+    "I think ____ he is right.",
+    "This is the boy ____ helped me.",
+    "She said ____ she was tired."
+   ],
+   "answer": 2,
+   "why": "②는 선행사가 없고 bought의 목적어가 빠져 있으므로 that이 아니라 What을 써야 한다.",
+   "no": 111
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 부분은? What he want is a new bike.",
+   "choices": [
+    "What",
+    "he",
+    "want",
+    "is",
+    "a new bike"
+   ],
+   "answer": 3,
+   "why": "What절 안의 주어 he가 3인칭 단수이므로 want가 아니라 wants가 되어야 한다.",
+   "no": 112
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 부분을 고르시오. The thing what she needs is a warm coat.",
+   "choices": [
+    "The thing",
+    "what",
+    "she needs",
+    "is",
+    "a warm coat"
+   ],
+   "answer": 2,
+   "why": "선행사 The thing이 있으므로 what을 which[that]로 고쳐야 한다.",
+   "no": 113
+  },
+  {
+   "level": "중",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? <u>What</u> <u>I</u> <u>need</u> <u>are</u> <u>a long vacation</u>.",
+   "choices": [
+    "What",
+    "I",
+    "need",
+    "are",
+    "a long vacation"
+   ],
+   "answer": 4,
+   "why": "what절이 주어일 때는 단수 취급하므로 are가 아니라 is를 써야 한다.",
+   "no": 114
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. ____ he wants most is a chance to travel.",
+   "answer": "What",
+   "why": "wants의 목적어가 빠진 명사절이 주어이므로 선행사를 포함한 What을 쓴다.",
+   "alt": [
+    "what"
+   ],
+   "no": 115
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 what과 that 중 알맞은 것을 골라 쓰시오. I'm sure ____ she will pass the test.",
+   "answer": "that",
+   "why": "뒤 절에 빠진 성분이 없는 완전한 절이므로 접속사 that을 쓴다.",
+   "alt": [
+    "That"
+   ],
+   "no": 116
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 what과 that 중 알맞은 것을 쓰시오. She always finishes ____ she begins.",
+   "answer": "what",
+   "why": "begins의 목적어가 비어 있고 선행사가 없으므로 what을 쓴다.",
+   "alt": [
+    "What"
+   ],
+   "no": 117
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. <u>The thing what</u> I want is your honest opinion.",
+   "answer": "What",
+   "why": "the thing what은 선행사가 겹치므로 what 한 단어로 고친다.",
+   "alt": [
+    "what"
+   ],
+   "no": 118
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. I still remember <u>what</u> he gave me a ring on my birthday.",
+   "answer": "that",
+   "why": "뒤 절(he gave me a ring)이 완전하므로 what이 아니라 접속사 that을 써야 한다.",
+   "alt": [
+    "That"
+   ],
+   "no": 119
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 문장을 what을 이용해 다시 쓰시오. He showed me the thing which he drew.",
+   "answer": "He showed me what he drew.",
+   "why": "the thing which를 what 한 단어로 줄여 쓴다.",
+   "alt": [
+    "He showed me what he drew"
+   ],
+   "no": 120
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "다음 두 문장을 what을 사용해 한 문장으로 만드시오. I can't forget the thing. + She said it to me.",
+   "answer": "I can't forget what she said to me.",
+   "why": "the thing과 it을 합쳐 what으로 쓰며, what이 said의 목적어가 된다.",
+   "alt": [
+    "I can't forget what she said to me"
+   ],
+   "no": 121
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 한 단어를 쓰시오. (그에게 필요한 것은 휴식이다.) ____ he needs is some rest.",
+   "answer": "What",
+   "why": "'~하는 것'을 뜻하는 선행사 포함 관계대명사 What이 이끄는 명사절이 주어이다.",
+   "alt": [
+    "what"
+   ],
+   "no": 122
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. What she wants (be) ____ a quiet room.",
+   "answer": "is",
+   "why": "what절 주어는 단수 취급하므로 is를 쓴다.",
+   "alt": [
+    "Is"
+   ],
+   "no": 123
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 세 단어로 바꿔 쓰시오. I liked <u>what</u> he wrote.",
+   "answer": "the thing that",
+   "why": "what은 선행사를 포함하므로 the thing that[which]으로 풀어 쓸 수 있다.",
+   "alt": [
+    "the thing which",
+    "the things that",
+    "the things which"
+   ],
+   "no": 124
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 관계대명사 한 단어를 쓰시오. Don't believe everything ____ you read on the Internet.",
+   "answer": "that",
+   "why": "선행사 everything이 있으므로 what은 쓸 수 없고 that[which]을 쓴다.",
+   "alt": [
+    "which",
+    "That",
+    "Which"
+   ],
+   "no": 125
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 관계대명사를 쓰시오. The thing ____ surprised me was his answer.",
+   "answer": "that",
+   "why": "선행사 The thing이 있으므로 주격 관계대명사 that[which]을 쓴다. what은 선행사를 포함하므로 불가능하다.",
+   "alt": [
+    "which",
+    "That",
+    "Which"
+   ],
+   "no": 126
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. All <u>what</u> I need is a map.",
+   "answer": "that",
+   "why": "all 뒤에는 관계대명사 that을 쓴다. what은 선행사를 이미 포함하므로 all과 함께 쓸 수 없다.",
+   "alt": [
+    "which",
+    "That",
+    "Which"
+   ],
+   "no": 127
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말에 맞게 what으로 시작하는 문장으로 바꿔 쓰시오. I need a new backpack. (내가 필요한 것은 새 배낭이다.)",
+   "answer": "What I need is a new backpack.",
+   "why": "목적어를 what절로 만들어 주어로 올리고, what절 주어는 단수 취급하여 is를 쓴다.",
+   "alt": [
+    "What I need is a new backpack"
+   ],
+   "no": 128
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "우리말에 맞게 what으로 시작하는 문장으로 바꿔 쓰시오. He wants a bigger room. (그가 원하는 것은 더 큰 방이다.)",
+   "answer": "What he wants is a bigger room.",
+   "why": "wants의 목적어를 what절로 바꿔 주어로 쓰고 동사는 단수 is를 쓴다.",
+   "alt": [
+    "What he wants is a bigger room"
+   ],
+   "no": 129
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. Please tell me ____ happened after I left.",
+   "answer": "what",
+   "why": "happened의 주어 자리가 비어 있는 명사절이므로 선행사를 포함한 what을 쓴다.",
+   "alt": [
+    "What"
+   ],
+   "no": 130
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. I was shocked by ____ I saw at the airport.",
+   "answer": "what",
+   "why": "전치사 by의 목적어가 되는 명사절이고 saw의 목적어가 비어 있으므로 what을 쓴다.",
+   "alt": [
+    "What"
+   ],
+   "no": 131
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 고쳐 쓰시오. <u>Which</u> he told us yesterday was not true.",
+   "answer": "What",
+   "why": "선행사가 없으므로 which는 쓸 수 없고 선행사를 포함한 What으로 고친다.",
+   "alt": [
+    "what"
+   ],
+   "no": 132
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 것을 골라 쓰시오. This is the letter (what / which) she wrote to me.",
+   "answer": "which",
+   "why": "선행사 the letter가 있으므로 목적격 관계대명사 which를 쓴다.",
+   "alt": [
+    "Which"
+   ],
+   "no": 133
+  },
+  {
+   "level": "중",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 것을 골라 쓰시오. Nobody knows (what / that) she is thinking about.",
+   "answer": "what",
+   "why": "about의 목적어가 비어 있는 불완전한 절이므로 what을 쓴다.",
+   "alt": [
+    "What"
+   ],
+   "no": 134
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 적절한 문장은?",
+   "choices": [
+    "The scientist explained us what causes the disease.",
+    "What the scientist explained was hard to follow.",
+    "The thing what the scientist explained was hard to follow.",
+    "What did the scientist explain was hard to follow.",
+    "What the scientist explained were hard to follow."
+   ],
+   "answer": 2,
+   "why": "explained의 목적어가 빠진 What절이 주어이고 단수 취급하므로 was가 맞다. ①은 explained 뒤에 to me[us]가 필요하고, ③은 선행사가 겹친다.",
+   "no": 135
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 ㄱ~ㄹ 중 어법상 옳은 것끼리 짝지은 것은? ㄱ. What I want to know is why she left. ㄴ. He is not what he was ten years ago. ㄷ. All what he owns is in that box. ㄹ. This is the very thing what I needed.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄴ, ㄷ",
+    "ㄴ, ㄹ",
+    "ㄷ, ㄹ"
+   ],
+   "answer": 1,
+   "why": "ㄷ은 All that, ㄹ은 the very thing that로 고쳐야 한다. what은 선행사를 포함하므로 앞에 선행사를 둘 수 없다.",
+   "no": 136
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "밑줄 친 부분 중 어법상 잘못된 것을 고르시오.",
+   "choices": [
+    "<u>What</u> impressed me most was the silence of the forest.",
+    "He always says <u>what</u> he thinks, even when it hurts.",
+    "I have some doubts about <u>what</u> the report says.",
+    "She is no longer <u>what</u> she used to be.",
+    "This is the only thing <u>what</u> I can offer you."
+   ],
+   "answer": 5,
+   "why": "선행사 the only thing이 있으므로 what이 아니라 that을 써야 한다.",
+   "no": 137
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 두 문장의 빈칸 ⓐ, ⓑ에 들어갈 말이 바르게 짝지어진 것은? ⓐ It is surprising ____ he finished the work alone. ⓑ ____ surprised us was his speed.",
+   "choices": [
+    "that – What",
+    "what – That",
+    "that – That",
+    "what – What",
+    "which – What"
+   ],
+   "answer": 1,
+   "why": "ⓐ는 뒤 절이 완전하므로 진주어를 이끄는 that, ⓑ는 주어가 빠진 불완전한 절이므로 What을 쓴다.",
+   "no": 138
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 문장의 개수는? ㄱ. Please repeat what you just said. ㄴ. What I am today is thanks to my parents. ㄷ. I disagree with the thing what you suggested. ㄹ. Everything what happened was my fault. ㅁ. He is not what he seems to be.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 3,
+   "why": "ㄱ·ㄴ·ㅁ이 옳다. ㄷ은 the thing which[that], ㄹ은 Everything that로 고쳐야 한다.",
+   "no": 139
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 가장 알맞게 옮긴 것은? 그는 10년 전의 그가 아니다.",
+   "choices": [
+    "He is not that he was ten years ago.",
+    "He is not the thing what he was ten years ago.",
+    "He is not which he was ten years ago.",
+    "He is not what he was ten years ago.",
+    "He is not what was he ten years ago."
+   ],
+   "answer": 4,
+   "why": "'과거의 그(인격·상태)'는 what he was로 나타낸다. what절 안은 평서문 어순이어야 한다.",
+   "no": 140
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말과 같은 뜻이 되도록 바르게 옮긴 것은? 소위 인공지능이라고 불리는 것이 우리의 삶을 바꾸고 있다.",
+   "choices": [
+    "What is called artificial intelligence is changing our lives.",
+    "That is called artificial intelligence is changing our lives.",
+    "What is called artificial intelligence are changing our lives.",
+    "Which is called artificial intelligence is changing our lives.",
+    "The thing what is called artificial intelligence is changing our lives."
+   ],
+   "answer": 1,
+   "why": "'소위 ~라고 불리는 것'은 what is called로 쓰며, 주어인 what절은 단수 취급하여 is가 온다.",
+   "no": 141
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸에 알맞은 것은? Reading is to the mind ____ food is to the body. (독서와 정신의 관계는 음식과 신체의 관계와 같다.)",
+   "choices": [
+    "that",
+    "which",
+    "what",
+    "how",
+    "where"
+   ],
+   "answer": 3,
+   "why": "'A is to B what C is to D(A와 B의 관계는 C와 D의 관계와 같다)' 구문으로 what을 쓴다.",
+   "no": 142
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장 중 어법상 오류가 있는 것은?",
+   "choices": [
+    "I couldn't understand what the guide was explaining.",
+    "What he is worried about is the final exam.",
+    "The town is no longer what it was before the war.",
+    "What I'd like to say it is that you deserve this prize.",
+    "She spends most of her money on what she doesn't need."
+   ],
+   "answer": 4,
+   "why": "what 자체가 say의 목적어이므로 it을 또 쓸 수 없다. it을 빼야 옳은 문장이 된다.",
+   "no": 143
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법에 어긋난 문장을 고르시오.",
+   "choices": [
+    "What is important is not how long you live but how you live.",
+    "He gave me exactly what I had asked for.",
+    "This machine does what three workers can do.",
+    "I'm grateful for what you have done for our family.",
+    "The house what stands on the hill belongs to my uncle."
+   ],
+   "answer": 5,
+   "why": "선행사 The house가 있으므로 what이 아니라 주격 관계대명사 that[which]을 써야 한다.",
+   "no": 144
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 성격이 다른 하나는?",
+   "choices": [
+    "<u>What</u> he needs is confidence.",
+    "I'll take <u>what</u> you don't want.",
+    "He wrote down <u>what</u> the doctor said.",
+    "Success is <u>what</u> everyone dreams of.",
+    "<u>What</u> kind of music do you like?"
+   ],
+   "answer": 5,
+   "why": "⑤는 명사 kind를 꾸미는 의문형용사이고, 나머지는 선행사를 포함한 관계대명사이다.",
+   "no": 145
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말로 알맞은 것은? (1) He was late, and ____ is worse, he forgot his report. (2) I judge people by ____ they do, not by what they say.",
+   "choices": [
+    "that",
+    "which",
+    "who",
+    "how",
+    "what"
+   ],
+   "answer": 5,
+   "why": "(1)은 '설상가상으로'를 뜻하는 what is worse, (2)는 by의 목적어가 되는 명사절이므로 둘 다 what이다.",
+   "no": 146
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것은? (that과 what의 구별)",
+   "choices": [
+    "What surprised me were that he refused the offer.",
+    "What surprised me was that he refused the offer.",
+    "That surprised me was what he refused the offer.",
+    "What surprised me was what he refused the offer.",
+    "The thing what surprised me was that he refused the offer."
+   ],
+   "answer": 2,
+   "why": "주어인 What절은 단수 취급하여 was를 쓰고, 보어 자리에는 완전한 절을 이끄는 접속사 that이 온다.",
+   "no": 147
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 바르게 영작한 것은? 내가 말하고자 하는 것은 우리에게 더 많은 연습이 필요하다는 것이다.",
+   "choices": [
+    "What I want to say is that we need more practice.",
+    "That I want to say is what we need more practice.",
+    "What I want to say is what we need more practice.",
+    "That I want to say is that we need more practice.",
+    "What I want to say it is that we need more practice."
+   ],
+   "answer": 1,
+   "why": "주어는 목적어가 빠진 What절, 보어는 완전한 절을 이끄는 that절이다.",
+   "no": 148
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음에서 밑줄 친 that의 성격이 다른 하나는?",
+   "choices": [
+    "It is clear <u>that</u> she has changed her mind.",
+    "The letter <u>that</u> arrived this morning is from Ann.",
+    "He is the only person <u>that</u> can fix this.",
+    "I sold the guitar <u>that</u> my uncle gave me.",
+    "This is the best film <u>that</u> I have ever seen."
+   ],
+   "answer": 1,
+   "why": "①은 완전한 절을 이끄는 접속사 that이고, 나머지는 선행사를 받는 관계대명사 that이다.",
+   "no": 149
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 문장의 개수는? ㄱ. What you see is not always what you get. ㄴ. I'm interested in that you are doing now. ㄷ. What he told me were a big lie. ㄹ. Show me what is left in the box.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 3,
+   "why": "ㄱ·ㄹ만 옳다. ㄴ은 doing의 목적어가 빠져 있으므로 what, ㄷ은 what절 주어에 맞춰 was로 고쳐야 한다.",
+   "no": 150
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 ㄱ~ㄷ의 빈칸에 들어갈 말이 바르게 짝지어진 것은? ㄱ. ____ I'm afraid of is failing again. ㄴ. I don't doubt ____ he is telling the truth. ㄷ. The bag ____ I left on the bus was found.",
+   "choices": [
+    "What – that – that",
+    "What – what – that",
+    "That – that – what",
+    "What – that – what",
+    "That – what – which"
+   ],
+   "answer": 1,
+   "why": "ㄱ은 of의 목적어가 빠져 What, ㄴ은 완전한 절이므로 접속사 that, ㄷ은 선행사 The bag이 있으므로 that[which]이다.",
+   "no": 151
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 오류가 있는 문장을 고르시오.",
+   "choices": [
+    "You should focus on what you can control.",
+    "What we call success is different for everyone.",
+    "He is proud of what his daughter has become.",
+    "I remembered what she had said to me the day before.",
+    "There is nothing what I can do about it now."
+   ],
+   "answer": 5,
+   "why": "선행사 nothing이 있으므로 what이 아니라 that을 써야 한다.",
+   "no": 152
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? <u>What</u> he <u>has done</u> for the town <u>are</u> <u>something</u> we <u>should remember</u>.",
+   "choices": [
+    "What",
+    "has done",
+    "are",
+    "something",
+    "should remember"
+   ],
+   "answer": 3,
+   "why": "주어인 What절은 단수 취급하고 보어도 something이므로 are를 is로 고쳐야 한다.",
+   "no": 153
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 어색한 부분은? The problem is what nobody wants to take responsibility.",
+   "choices": [
+    "The problem",
+    "is",
+    "what",
+    "nobody wants",
+    "to take responsibility"
+   ],
+   "answer": 3,
+   "why": "뒤에 빠진 성분이 없는 완전한 절이 오므로 what이 아니라 접속사 that을 써야 한다.",
+   "no": 154
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 공통으로 들어갈 말은? (1) ____ he wrote in his diary was never published. (2) I can't accept ____ you are offering.",
+   "choices": [
+    "that",
+    "which",
+    "what",
+    "who",
+    "whose"
+   ],
+   "answer": 3,
+   "why": "(1)은 wrote의, (2)는 offering의 목적어가 빠진 명사절이므로 둘 다 what이다.",
+   "no": 155
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 바르게 옮긴 것은? 우리가 배운 것은 결코 쓸모없지 않다.",
+   "choices": [
+    "That we have learned is never useless.",
+    "What have we learned is never useless.",
+    "What we have learned are never useless.",
+    "The thing what we have learned is never useless.",
+    "What we have learned is never useless."
+   ],
+   "answer": 5,
+   "why": "learned의 목적어가 빠진 What절이 주어이며 단수 취급하므로 is를 쓴다.",
+   "no": 156
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 what을 the thing which로 바꿔 쓰기에 가장 어색한 것은?",
+   "choices": [
+    "<u>What</u> he said made no sense.",
+    "I'll believe <u>what</u> I see.",
+    "Give him <u>what</u> he deserves.",
+    "<u>What</u> she bought was a used car.",
+    "He is not <u>what</u> he was."
+   ],
+   "answer": 5,
+   "why": "⑤의 what은 사물이 아니라 '사람의 인격·상태'를 나타내므로 the thing which로 바꾸면 어색하다.",
+   "no": 157
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 것을 고르시오.",
+   "choices": [
+    "This is not what I paid for.",
+    "This is not the what I paid for.",
+    "This is not what I paid for it.",
+    "This is not that I paid for.",
+    "This is not the thing what I paid for."
+   ],
+   "answer": 1,
+   "why": "for의 목적어가 빠진 what절이 보어이며, what이 곧 목적어이므로 it을 덧붙이지 않는다.",
+   "no": 158
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 옳지 않은 것은? Many people believe <u>that money brings</u> happiness, but <u>what really matters</u> <u>are</u> <u>the time we spend</u> with <u>those</u> around us.",
+   "choices": [
+    "that money brings",
+    "what really matters",
+    "are",
+    "the time we spend",
+    "those"
+   ],
+   "answer": 3,
+   "why": "주어가 what절이고 보어도 단수 the time이므로 are를 is로 고쳐야 한다.",
+   "no": 159
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 부분 중 어법상 틀린 것은? The book <u>which I borrowed</u> explains <u>what ancient people ate</u>, <u>what they wore</u>, and the reason <u>what they moved</u> so often, and I found <u>that</u> fascinating.",
+   "choices": [
+    "which I borrowed",
+    "what ancient people ate",
+    "what they wore",
+    "what they moved",
+    "that"
+   ],
+   "answer": 4,
+   "why": "선행사 the reason이 있고 뒤 절이 완전하므로 what이 아니라 why를 써야 한다.",
+   "no": 160
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 ㄱ~ㄹ 중 어법상 옳은 것을 모두 고른 것은? ㄱ. What matters is not the price but the quality. ㄴ. Tell me what you know about the accident. ㄷ. The reason what she cried is unknown. ㄹ. What is called global warming affects us all.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄱ, ㄷ",
+    "ㄱ, ㄴ, ㄹ",
+    "ㄴ, ㄷ, ㄹ",
+    "ㄱ, ㄷ, ㄹ"
+   ],
+   "answer": 3,
+   "why": "ㄷ만 틀렸다. 선행사 The reason 뒤에는 why를 써야 한다.",
+   "no": 161
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 빈칸에 들어갈 말이 나머지 넷과 다른 것은?",
+   "choices": [
+    "____ I need is a little more time.",
+    "This is ____ they call fast fashion.",
+    "I don't like the way ____ he talks.",
+    "____ made her famous was her voice.",
+    "Show me ____ you have in your bag."
+   ],
+   "answer": 3,
+   "why": "③은 선행사 the way가 있고 뒤 절이 완전하므로 that이 들어가고, 나머지는 모두 what이 들어간다.",
+   "no": 162
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 들어갈 말로 가장 알맞은 것은? A: Why do you trust him? B: Because ____ he says and ____ he does are always the same.",
+   "choices": [
+    "that – that",
+    "which – what",
+    "what – that",
+    "what – what",
+    "that – what"
+   ],
+   "answer": 4,
+   "why": "says와 does의 목적어가 각각 빠져 있으므로 두 빈칸 모두 what이다.",
+   "no": 163
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "우리말과 같은 뜻이 되도록 옮긴 것으로 알맞은 것은? 내가 가장 좋아하는 것은 그가 그림을 그리는 방식이다.",
+   "choices": [
+    "What I like most is the way he draws.",
+    "That I like most is the way he draws.",
+    "What I like most is the way how he draws.",
+    "What do I like most is the way he draws.",
+    "The thing what I like most is the way he draws."
+   ],
+   "answer": 1,
+   "why": "주어는 what절로 쓰고, the way와 how는 함께 쓰지 않으므로 the way he draws가 옳다.",
+   "no": 164
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 옳은 문장을 고르시오.",
+   "choices": [
+    "Please explain me what happened last night.",
+    "Please explain to me what happened it last night.",
+    "Please explain to me that happened last night.",
+    "Please explain to me what happened last night.",
+    "Please explain to me the thing what happened last night."
+   ],
+   "answer": 4,
+   "why": "explain은 explain to+사람 형태를 쓰며, happened의 주어가 빠져 있으므로 what절이 목적어가 된다.",
+   "no": 165
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 옳은 문장의 개수를 고르시오. ㄱ. What he is interested in is Korean history. ㄴ. She showed me what she had bought in Paris. ㄷ. I know the reason what he quit his job. ㄹ. What we should do first is to make a plan.",
+   "choices": [
+    "0개",
+    "1개",
+    "2개",
+    "3개",
+    "4개"
+   ],
+   "answer": 4,
+   "why": "ㄱ·ㄴ·ㄹ이 옳다. ㄷ은 선행사 the reason 뒤이므로 what을 why로 고쳐야 한다.",
+   "no": 166
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "빈칸 ⓐ~ⓒ에 알맞은 말이 바르게 짝지어진 것은? ⓐ Money is not ____ makes people happy. ⓑ I'm sure ____ you'll do well. ⓒ Do you remember the day ____ we first met?",
+   "choices": [
+    "what – that – when",
+    "what – what – when",
+    "that – that – when",
+    "what – that – which",
+    "that – what – when"
+   ],
+   "answer": 1,
+   "why": "ⓐ는 주어가 빠져 what, ⓑ는 완전한 절이므로 that, ⓒ는 시간 선행사 뒤이므로 관계부사 when이다.",
+   "no": 167
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 어법상 틀린 것을 고르시오.",
+   "choices": [
+    "What is called the Silk Road connected East and West.",
+    "I couldn't say what I really felt at that moment.",
+    "She wrote about what she saw during the war.",
+    "What made the trip special was the people we met.",
+    "He lost everything what he had saved for years."
+   ],
+   "answer": 5,
+   "why": "선행사 everything이 있으므로 what이 아니라 that을 써야 한다.",
+   "no": 168
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 어법상 틀린 부분은? What I want to tell you are that honesty always pays.",
+   "choices": [
+    "What I want",
+    "to tell you",
+    "are",
+    "that honesty",
+    "always pays"
+   ],
+   "answer": 3,
+   "why": "주어가 what절이므로 단수 취급하여 are를 is로 고쳐야 한다.",
+   "no": 169
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장을 바르게 바꿔 쓴 것은? He didn't get the thing that he wanted.",
+   "choices": [
+    "He didn't get what he wanted.",
+    "He didn't get that he wanted.",
+    "He didn't get what did he want.",
+    "He didn't get the what he wanted.",
+    "He didn't get which he wanted."
+   ],
+   "answer": 1,
+   "why": "the thing that는 선행사를 포함한 what 한 단어로 바꿔 쓸 수 있다.",
+   "no": 170
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장에서 what이 들어갈 위치로 알맞은 것은? ( ① ) This ( ② ) is ( ③ ) I ( ④ ) really ( ⑤ ) wanted.",
+   "choices": [
+    "①",
+    "②",
+    "③",
+    "④",
+    "⑤"
+   ],
+   "answer": 3,
+   "why": "is 뒤에 보어로 쓰이는 명사절이 와야 하므로 This is what I really wanted.가 된다.",
+   "no": 171
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 중 밑줄 친 부분이 어법상 올바른 것은?",
+   "choices": [
+    "I don't agree with <u>the thing what</u> he insists.",
+    "<u>All what</u> I know is her first name.",
+    "<u>Which</u> he wants is a new laptop.",
+    "The song <u>what</u> she sang moved us.",
+    "<u>What</u> I need most is your trust."
+   ],
+   "answer": 5,
+   "why": "⑤만 선행사 없이 what이 명사절을 이끈다. 나머지는 선행사가 있거나 선행사가 없어 what을 써야 하는 자리이다.",
+   "no": 172
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 우리말을 영어로 옮길 때 어법상 알맞은 것은? 그녀가 되고 싶어 하는 것은 수의사이다.",
+   "choices": [
+    "That she wants to be is a vet.",
+    "What does she want to be is a vet.",
+    "The thing what she wants to be is a vet.",
+    "What she wants to be is a vet.",
+    "What she wants to be are a vet."
+   ],
+   "answer": 4,
+   "why": "be의 보어가 빠진 What절이 주어이고 단수 취급하므로 is를 쓴다.",
+   "no": 173
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 빈칸에 들어갈 말로 가장 알맞은 것은? Don't judge people by ____ they have; judge them by ____ they are.",
+   "choices": [
+    "that – that",
+    "what – what",
+    "which – what",
+    "what – who",
+    "that – what"
+   ],
+   "answer": 2,
+   "why": "have의 목적어와 be의 보어가 각각 빠져 있으므로 두 빈칸 모두 what이다. what they are는 '그들의 인격'을 뜻한다.",
+   "no": 174
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 바른 문장은?",
+   "choices": [
+    "The city is not what it used to be.",
+    "The city is not that it used to be.",
+    "The city is not what it used to being.",
+    "The city is not the thing what it used to be.",
+    "The city is not which it used to be."
+   ],
+   "answer": 1,
+   "why": "'예전의 그 도시'는 what it used to be로 쓴다. used to 뒤에는 동사원형이 온다.",
+   "no": 175
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "어법상 틀린 문장의 개수는? ㄱ. I trust what he promised. ㄴ. The thing what worries me is money. ㄷ. What he said was that he was sorry. ㄹ. Everything what I own is here. ㅁ. She is not what she seems.",
+   "choices": [
+    "1개",
+    "2개",
+    "3개",
+    "4개",
+    "5개"
+   ],
+   "answer": 2,
+   "why": "ㄴ·ㄹ이 틀렸다. 선행사 The thing, Everything 뒤에는 that[which]을 써야 한다.",
+   "no": 176
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "대화의 빈칸에 알맞은 것은? A: I heard you quit the club. B: Yes. It wasn't ____ I had expected it to be.",
+   "choices": [
+    "that",
+    "which",
+    "where",
+    "how",
+    "what"
+   ],
+   "answer": 5,
+   "why": "expected ~ to be의 보어가 빠진 명사절이므로 what을 쓴다.",
+   "no": 177
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 밑줄 친 What[what]의 쓰임이 나머지와 다른 것은?",
+   "choices": [
+    "<u>What</u> do you think about the plan?",
+    "<u>What</u> he needs now is silence.",
+    "I'll do <u>what</u> I can to help you.",
+    "That is <u>what</u> makes him special.",
+    "She told us <u>what</u> she had seen."
+   ],
+   "answer": 1,
+   "why": "①은 '무엇'을 묻는 의문사이고 나머지는 '~하는 것'을 뜻하는 관계대명사이다.",
+   "no": 178
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 ㄱ~ㄹ 중 어법상 옳은 것을 모두 고른 것은? ㄱ. What is important is to keep trying. ㄴ. This is what I have been looking for. ㄷ. He asked me what was wrong with the machine. ㄹ. I don't like what you did it.",
+   "choices": [
+    "ㄱ, ㄴ",
+    "ㄴ, ㄷ",
+    "ㄱ, ㄴ, ㄷ",
+    "ㄱ, ㄷ, ㄹ",
+    "ㄴ, ㄷ, ㄹ"
+   ],
+   "answer": 3,
+   "why": "ㄹ은 what이 did의 목적어이므로 it을 빼야 한다. ㄱ·ㄴ·ㄷ은 모두 옳다.",
+   "no": 179
+  },
+  {
+   "level": "상",
+   "type": "mc",
+   "stem": "다음 문장의 틀린 부분을 바르게 고쳐 쓴 것은? The thing what he wants is a second chance.",
+   "choices": [
+    "What he wants is a second chance.",
+    "The thing he wants what is a second chance.",
+    "That he wants is a second chance.",
+    "The thing which he wants are a second chance.",
+    "What he wants are a second chance."
+   ],
+   "answer": 1,
+   "why": "선행사가 겹치므로 the thing what을 what 한 단어로 고치고, 주어인 what절은 단수 취급하여 is를 쓴다.",
+   "no": 180
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 한 단어로 바꿔 쓰시오. <u>The thing that</u> matters most is your attitude.",
+   "answer": "What",
+   "why": "the thing that는 선행사를 포함한 관계대명사 What으로 줄여 쓸 수 있다.",
+   "alt": [
+    "what"
+   ],
+   "no": 181
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. He is not ____ he was ten years ago.",
+   "answer": "what",
+   "why": "'과거의 그(인격·상태)'는 what he was로 나타낸다. 선행사가 없으므로 what을 쓴다.",
+   "alt": [
+    "What"
+   ],
+   "no": 182
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. ____ is called fake news spreads faster than the truth.",
+   "answer": "What",
+   "why": "'소위 ~라고 불리는 것'은 what is called로 쓰며 문장의 주어가 된다.",
+   "alt": [
+    "what"
+   ],
+   "no": 183
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장을 what을 이용해 한 문장으로 바꿔 쓰시오. I can't forget the things. + She did them for me.",
+   "answer": "I can't forget what she did for me.",
+   "why": "the things와 them을 합쳐 what으로 쓰고, what이 did의 목적어가 된다.",
+   "alt": [
+    "I can't forget what she did for me"
+   ],
+   "no": 184
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. The teacher told us <u>what</u> the earth goes around the sun.",
+   "answer": "that",
+   "why": "뒤 절이 완전하므로 what이 아니라 완전한 절을 이끄는 접속사 that을 써야 한다.",
+   "alt": [
+    "That"
+   ],
+   "no": 185
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안의 동사를 알맞은 형태로 바꿔 쓰시오. What surprised us most yesterday (be) ____ his calm voice.",
+   "answer": "was",
+   "why": "what절 주어는 단수 취급하고 yesterday가 있으므로 과거형 was를 쓴다.",
+   "alt": [
+    "Was"
+   ],
+   "no": 186
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말과 같도록 빈칸에 알맞은 한 단어를 쓰시오. (내가 말하려는 것은 우리에게 계획이 필요하다는 것이다.) What I want to say is ____ we need a plan.",
+   "answer": "that",
+   "why": "보어 자리에 완전한 절이 오므로 접속사 that을 쓴다. 주어 자리에는 what절이 왔다.",
+   "alt": [
+    "That"
+   ],
+   "no": 187
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말에 맞게 what으로 시작하는 문장으로 바꿔 쓰시오. I am worried about his health. (내가 걱정하는 것은 그의 건강이다.)",
+   "answer": "What I am worried about is his health.",
+   "why": "전치사 about의 목적어를 what절로 만들어 주어로 올리고, what절 주어는 단수 취급하여 is를 쓴다.",
+   "alt": [
+    "What I am worried about is his health"
+   ],
+   "no": 188
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장을 what을 이용해 다시 쓰시오. He gave me the thing which I needed most.",
+   "answer": "He gave me what I needed most.",
+   "why": "the thing which를 what 한 단어로 줄여 쓴다.",
+   "alt": [
+    "He gave me what I needed most"
+   ],
+   "no": 189
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. Everything <u>what</u> he told the police was a lie.",
+   "answer": "that",
+   "why": "선행사 Everything이 있으므로 what은 쓸 수 없고 that[which]으로 고친다.",
+   "alt": [
+    "which",
+    "That",
+    "Which"
+   ],
+   "no": 190
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. Don't judge a person by ____ he or she has.",
+   "answer": "what",
+   "why": "전치사 by의 목적어가 되는 명사절이고 has의 목적어가 비어 있으므로 what을 쓴다.",
+   "alt": [
+    "What"
+   ],
+   "no": 191
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 것을 골라 쓰시오. It is clear (what / that) she is hiding something.",
+   "answer": "that",
+   "why": "뒤 절이 완전하므로 진주어 절을 이끄는 접속사 that을 쓴다.",
+   "alt": [
+    "That"
+   ],
+   "no": 192
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "괄호 안에서 알맞은 것을 골라 쓰시오. I don't remember (what / that) I promised him.",
+   "answer": "what",
+   "why": "promised의 직접목적어가 비어 있는 불완전한 절이므로 what을 쓴다.",
+   "alt": [
+    "What"
+   ],
+   "no": 193
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 한 단어를 찾아 바르게 고쳐 쓰시오. (고친 말만 쓸 것) What I need are a quiet place to study.",
+   "answer": "is",
+   "why": "주어인 what절은 단수 취급하므로 are를 is로 고쳐야 한다.",
+   "alt": [
+    "Is"
+   ],
+   "no": 194
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 문장에서 어법상 틀린 한 단어를 찾아 바르게 고쳐 쓰시오. (고친 말만 쓸 것) All what I want is a second chance.",
+   "answer": "that",
+   "why": "all 뒤에는 관계대명사 that을 쓴다. what은 선행사를 포함하므로 all과 함께 쓸 수 없다.",
+   "alt": [
+    "which",
+    "That",
+    "Which"
+   ],
+   "no": 195
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 세 단어로 바꿔 쓰시오. I finally found <u>what</u> I had been looking for.",
+   "answer": "the thing that",
+   "why": "what은 the thing that[which]으로 풀어 쓸 수 있다.",
+   "alt": [
+    "the thing which",
+    "the things that",
+    "the things which"
+   ],
+   "no": 196
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "다음 두 문장을 what을 이용해 한 문장으로 바꿔 쓰시오. This is the thing. + The doctor warned us about it.",
+   "answer": "This is what the doctor warned us about.",
+   "why": "the thing과 it을 합쳐 what으로 쓰며, what이 전치사 about의 목적어가 된다.",
+   "alt": [
+    "This is what the doctor warned us about"
+   ],
+   "no": 197
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "우리말에 맞게 what으로 시작하는 문장으로 바꿔 쓰시오. His silence made me angry. (나를 화나게 한 것은 그의 침묵이었다.)",
+   "answer": "What made me angry was his silence.",
+   "why": "made의 주어를 what절로 바꿔 주어로 쓰고, what절 주어는 단수 취급하여 was를 쓴다.",
+   "alt": [
+    "What made me angry was his silence"
+   ],
+   "no": 198
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "빈칸에 알맞은 한 단어를 쓰시오. He is a great player, and ____ is more, he is a good leader.",
+   "answer": "what",
+   "why": "'게다가'라는 뜻의 관용 표현 what is more에는 관계대명사 what을 쓴다.",
+   "alt": [
+    "What"
+   ],
+   "no": 199
+  },
+  {
+   "level": "상",
+   "type": "short",
+   "stem": "밑줄 친 부분을 어법에 맞게 한 단어로 고쳐 쓰시오. I don't agree with <u>which</u> the report says.",
+   "answer": "what",
+   "why": "선행사가 없고 says의 목적어가 비어 있으므로 which를 what으로 고쳐야 한다.",
+   "alt": [
+    "What"
+   ],
+   "no": 200
+  }
+ ]
+}
