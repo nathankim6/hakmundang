@@ -4,9 +4,12 @@ import "@/styles/orun.css";
 import { SchoolPicker } from "@/components/schools/SchoolPicker";
 import { AnalysisReport } from "@/components/schools/AnalysisReport";
 import { GradeCalculator } from "@/components/schools/GradeCalculator";
+import { ObservationEditor } from "@/components/schools/ObservationEditor";
+import { BackupPanel } from "@/components/schools/BackupPanel";
 import { getRecords } from "@/lib/schools/data";
+import { useObservations } from "@/lib/schools/store";
 
-type Tab = "pick" | "report" | "calc";
+type Tab = "pick" | "report" | "calc" | "edit";
 
 const STORAGE_KEY = "orun.schools.selected";
 
@@ -30,7 +33,9 @@ const Schools = () => {
     }
   };
 
-  const records = useMemo(() => getRecords(selected), [selected]);
+  // 관측 입력이 바뀌면 분석지도 같이 갱신된다
+  const observations = useObservations();
+  const records = useMemo(() => getRecords(selected), [selected, observations]);
 
   return (
     <div
@@ -54,6 +59,13 @@ const Schools = () => {
           ) : (
             <Empty onBack={() => setTab("pick")} />
           ))}
+
+        {tab === "edit" && (
+          <section style={{ paddingTop: 8 }}>
+            <ObservationEditor />
+            <BackupPanel />
+          </section>
+        )}
 
         {tab === "calc" && (
           <section style={{ paddingTop: 8 }}>
@@ -96,6 +108,7 @@ function Header({
     { id: "pick", label: "학교 고르기" },
     { id: "report", label: "분석지", needsSelection: true },
     { id: "calc", label: "1등급 계산기" },
+    { id: "edit", label: "관측 입력" },
   ];
 
   return (

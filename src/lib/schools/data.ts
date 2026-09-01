@@ -1,6 +1,6 @@
 import raw from "@/data/schools.json";
-import { OBSERVATIONS } from "@/data/observations";
 import { ACADEMY_RESULTS } from "@/data/results";
+import { getObservation, getObservations } from "@/lib/schools/store";
 import type { SchoolFact, SchoolGroup, SchoolRecord } from "@/types/school";
 
 const FACTS = raw as unknown as SchoolFact[];
@@ -39,7 +39,7 @@ export function getRecord(code: string): SchoolRecord | undefined {
   if (!fact) return undefined;
   return {
     fact,
-    observation: OBSERVATIONS[code],
+    observation: getObservation(code),
     results: ACADEMY_RESULTS.filter((r) => r.schoolCode === code),
   };
 }
@@ -52,7 +52,7 @@ export function getRecords(codes: string[]): SchoolRecord[] {
 
 /** 관측 자료가 있는 학교 — 분석지에서 상세 페이지를 만들 수 있는 학교 */
 export function hasObservation(code: string): boolean {
-  return Boolean(OBSERVATIONS[code]);
+  return Boolean(getObservations()[code]);
 }
 
 export function observedCount(codes: string[]): number {

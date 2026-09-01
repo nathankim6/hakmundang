@@ -67,15 +67,31 @@ export function genderSplit(f: SchoolFact): { male: number; female: number } | n
   return { male: Math.round((m / t) * 100), female: Math.round((w / t) * 100) };
 }
 
-/** 진로 구성비(%) — 고등학교 기준 */
+/**
+ * 진로 구성비(%).
+ *
+ * 진로현황 필드는 학교급마다 의미가 다르다. 섞어 쓰면 안 된다.
+ *   고등학교 — path1 전문대 · path2 4년제 · path3 국외진학
+ *   중학교   — path1 일반고 · path2 특성화고 · path3 특수목적고
+ */
+export const PATH_LABELS = {
+  고: { path1: "전문대", path2: "4년제", path3: "국외" },
+  중: { path1: "일반고", path2: "특성화고", path3: "특목고" },
+} as const;
+
+export function pathLabels(level: SchoolFact["level"]) {
+  return PATH_LABELS[level] ?? PATH_LABELS.고;
+}
+
 export function pathMix(f: SchoolFact) {
   if (!f.grad) return null;
-  const pct = (v: number | null) => (v == null ? null : (v / f.grad!) * 100);
+  const pct = (v: number | null) => (v == null ? null : (v / f.grad) * 100);
   return {
-    uni4: pct(f.path2),
-    college: pct(f.path1),
-    abroad: pct(f.path3),
+    path1: pct(f.path1),
+    path2: pct(f.path2),
+    path3: pct(f.path3),
     other: pct(f.other),
+    labels: pathLabels(f.level),
   };
 }
 

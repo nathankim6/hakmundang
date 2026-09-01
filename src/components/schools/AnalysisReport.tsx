@@ -6,6 +6,7 @@ import {
   dropoutRate,
   genderSplit,
   gradeSeats,
+  pathLabels,
   pathMix,
   seatsForGrade1,
 } from "@/lib/schools/metrics";
@@ -221,7 +222,13 @@ function CoverPage({ records }: { records: SchoolRecord[] }) {
 /* ── 01 한눈에 비교 ───────────────────── */
 
 function CompareSection({ records }: { records: SchoolRecord[] }) {
-  const hasHigh = records.some((r) => r.fact.level === "고");
+  // 진로 필드는 학교급마다 의미가 다르다(고: 4년제 / 중: 특성화고).
+  // 한 표에 섞으면 다른 뜻의 숫자가 같은 칸에 들어가므로 학교급별로 나눈다.
+  const byLevel = [
+    { level: "고" as const, list: records.filter((r) => r.fact.level === "고") },
+    { level: "중" as const, list: records.filter((r) => r.fact.level === "중") },
+  ].filter((g) => g.list.length > 0);
+
   return (
     <section style={{ marginBottom: 60 }}>
       <SectionHead
@@ -230,59 +237,82 @@ function CompareSection({ records }: { records: SchoolRecord[] }) {
         ko="한눈에 비교"
         lede="학부모님이 가장 먼저 묻는 것들입니다. 전부 공시자료 그대로이며, 저희가 가공하지 않았습니다."
       />
-      <div style={{ overflowX: "auto" }}>
-        <table className="orun-table" style={{ minWidth: 720 }}>
-          <thead>
-            <tr>
-              <th>학교</th>
-              <th className="num">1학년</th>
-              <th className="num">학급</th>
-              <th className="num">학급당</th>
-              <th className="num">1등급 자리</th>
-              {hasHigh && <th className="num">고1 이탈</th>}
-              {hasHigh && <th className="num">4년제</th>}
-            </tr>
-          </thead>
-          <tbody>
-            {records.map(({ fact }) => {
-              const seats = fact.g1Total ? seatsForGrade1(fact.g1Total) : null;
-              const drop = dropoutRate(fact);
-              const mix = pathMix(fact);
-              return (
-                <tr key={fact.code}>
-                  <td style={{ color: "var(--ink)", fontWeight: 500, whiteSpace: "nowrap" }}>
-                    {fact.name.replace(/(고등학교|중학교)$/, "")}
-                    <span style={{ color: "var(--muted)", fontWeight: 400, fontSize: 12 }}>
-                      {" "}
-                      {fact.coed}
-                    </span>
-                  </td>
-                  <td className="num">{fact.g1Total ?? "—"}</td>
-                  <td className="num">{fact.g1Classes ?? "—"}</td>
-                  <td className="num">{fact.g1PerClass?.toFixed(1) ?? "—"}</td>
-                  <td className="num" style={{ color: "var(--ink)", fontWeight: 700 }}>
-                    {seats ?? "—"}
-                  </td>
-                  {hasHigh && (
-                    <td className="num">{drop != null ? `${drop.toFixed(1)}%` : "—"}</td>
-                  )}
-                  {hasHigh && (
-                    <td className="num">
-                      {mix?.uni4 != null ? `${mix.uni4.toFixed(0)}%` : "—"}
-                    </td>
-                  )}
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-      </div>
+
+      {byLevel.map(({ level, list }) => {
+        const labels = pathLabels(level);
+        return (
+          <div key={level} style={{ marginBottom: byLevel.length > 1 ? 30 : 0 }}>
+            {byLevel.length > 1 && (
+              <div
+                style={{
+                  fontFamily: "'IBM Plex Mono', monospace",
+                  fontSize: 10,
+                  letterSpacing: ".18em",
+                  textTransform: "uppercase",
+                  color: "var(--muted)",
+                  marginBottom: 8,
+                }}
+              >
+                {level === "고" ? "High school" : "Middle school"} · {level}등학교
+              </div>
+            )}
+            <div style={{ overflowX: "auto" }}>
+              <table className="orun-table" style={{ minWidth: 720 }}>
+                <thead>
+                  <tr>
+                    <th>학교</th>
+                    <th className="num">1학년</th>
+                    <th className="num">학급</th>
+                    <th className="num">학급당</th>
+                    <th className="num">1등급 자리</th>
+                    <th className="num">{level}1 이탈</th>
+                    <th className="num">{labels.path2}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {list.map(({ fact }) => {
+                    const seats = fact.g1Total ? seatsForGrade1(fact.g1Total) : null;
+                    const drop = dropoutRate(fact);
+                    const mix = pathMix(fact);
+                    return (
+                      <tr key={fact.code}>
+                        <td
+                          style={{ color: "var(--ink)", fontWeight: 500, whiteSpace: "nowrap" }}
+                        >
+                          {fact.name.replace(/(고등학교|중학교)$/, "")}
+                          <span
+                            style={{ color: "var(--muted)", fontWeight: 400, fontSize: 12 }}
+                          >
+                            {" "}
+                            {fact.coed}
+                          </span>
+                        </td>
+                        <td className="num">{fact.g1Total ?? "—"}</td>
+                        <td className="num">{fact.g1Classes ?? "—"}</td>
+                        <td className="num">{fact.g1PerClass?.toFixed(1) ?? "—"}</td>
+                        <td className="num" style={{ color: "var(--ink)", fontWeight: 700 }}>
+                          {seats ?? "—"}
+                        </td>
+                        <td className="num">{drop != null ? `${drop.toFixed(1)}%` : "—"}</td>
+                        <td className="num">
+                          {mix?.path2 != null ? `${mix.path2.toFixed(0)}%` : "—"}
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        );
+      })}
 
       <Callout tone="paper" label="이 표를 읽는 법">
         <p style={{ margin: 0 }}>
           <strong>1등급 자리</strong>는 1학년 인원의 10%입니다(2025학년도 고1부터 5등급제).{" "}
-          <strong>고1 이탈</strong>은 1학년 중 전출한 학생 비율로, 학교 적응을 보여주는 신호입니다.{" "}
-          <strong>4년제</strong>는 직전 졸업생 기준이라 지금 1학년과는 3년의 시차가 있습니다.
+          <strong>이탈</strong>은 1학년 중 전출한 학생 비율로, 학교 적응을 보여주는 신호입니다.
+          맨 오른쪽 진학 수치는 <strong>직전 졸업생 기준</strong>이라 지금 1학년과는 3년의 시차가
+          있습니다. 졸업생이 아직 없는 신설교는 &ldquo;—&rdquo;로 표시됩니다.
         </p>
       </Callout>
 
