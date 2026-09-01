@@ -1,13 +1,19 @@
 import { useRef, useState } from "react";
-import { downloadObservations, importObservations, useObservations } from "@/lib/schools/store";
+import {
+  downloadObservations,
+  editedCount,
+  importObservations,
+  useObservations,
+} from "@/lib/schools/store";
 
 /**
  * 관측 입력은 이 브라우저에만 저장된다.
  * 다른 기기로 옮기거나 백업하려면 파일로 내보낸다.
  */
 export function BackupPanel() {
-  const observations = useObservations();
-  const count = Object.keys(observations).length;
+  // 내보내는 파일에는 사용자 입력만 들어간다. 시드를 세면 빈 백업을 "7개교"로 안내하게 된다.
+  useObservations();
+  const count = editedCount();
   const fileRef = useRef<HTMLInputElement>(null);
   const [msg, setMsg] = useState<{ tone: "ok" | "err"; text: string } | null>(null);
 
@@ -44,9 +50,10 @@ export function BackupPanel() {
         Backup · 이 브라우저에만 저장됩니다
       </div>
       <p style={{ margin: "0 0 14px", fontSize: 13.5, maxWidth: "62ch" }}>
-        입력하신 <strong style={{ color: "var(--ink)" }}>{count}개교</strong>는 지금 이 브라우저에
+        직접 입력하신 <strong style={{ color: "var(--ink)" }}>{count}개교</strong>가 이 브라우저에
         저장되어 있습니다. 다른 컴퓨터에서 쓰시거나 백업하시려면 파일로 내보내 주세요. 브라우저
-        데이터를 지우면 함께 사라집니다.
+        데이터를 지우면 함께 사라집니다. 프로그램에 기본으로 들어 있는 학교는 내보내기에 포함되지
+        않습니다.
       </p>
 
       <div style={{ display: "flex", gap: 9, flexWrap: "wrap", alignItems: "center" }}>

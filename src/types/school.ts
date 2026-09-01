@@ -56,22 +56,38 @@ export interface SchoolFact {
   g1MovedOut: number | null;
   g1MoveBase: number | null;
 
-  /** 졸업생 진로 — 고등학교는 대학 진학, 중학교는 고교 유형 */
-  grad: number | null;
-  path1: number | null; // 고: 전문대 / 중: 일반고
-  path2: number | null; // 고: 4년제 / 중: 특성화고
-  path3: number | null; // 고: 국외진학 / 중: 특목고
-  employed: number | null;
-  other: number | null;
-  advanceRate: number | null;
-  /** 전년도 값 — 이상치 검사용 */
-  path2Prev: number | null;
-  path1Prev: number | null;
+  /** 주당 수업시수 */
+  weeklyHours: number | null;
 
-  /** 교육운영 특색사업 */
-  subjectClassroom: string | null; // 교과교실제
-  autonomousSchool: string | null; // 자율학교
-  leveledClass: string | null; // 수준별 수업
+  /**
+   * 졸업생 진로 — 공시 원본 슬롯을 그대로 보존한다.
+   * 슬롯의 의미가 학교급마다 다르므로 해석은 metrics.ts 한 곳에서만 한다.
+   *   고등학교 p3 전문대 · p4 4년제 · p6 국외 · p7 취업 · p8 기타
+   *   중학교   p3 일반고 · p4 특성화고 · p5~p8 특수목적고 세부 · p9 자율고 …
+   */
+  grad: number | null;
+  gradPrev: number | null;
+  p3: number | null; p3Prev: number | null;
+  p4: number | null; p4Prev: number | null;
+  p5: number | null; p5Prev: number | null;
+  p6: number | null; p6Prev: number | null;
+  p7: number | null; p7Prev: number | null;
+  p8: number | null; p8Prev: number | null;
+  p9: number | null; p9Prev: number | null;
+  p10: number | null; p10Prev: number | null;
+  p11: number | null; p11Prev: number | null;
+  p12: number | null; p12Prev: number | null;
+  p13: number | null; p13Prev: number | null;
+  p14: number | null; p14Prev: number | null;
+
+  /** 교육운영 특색사업 — 공시에서 ○/× 로 온다 */
+  subjectClassroom: boolean | null; // 교과교실제
+  autonomousSchool: boolean | null; // 자율학교
+  leveledClass: boolean | null; // 수준별 이동수업
+
+  /** 방과후학교 */
+  afterSchoolPrograms: number | null;
+  afterSchoolStudents: number | null;
 
   /** 공시 기준 */
   disclosureYear: string;
@@ -105,7 +121,19 @@ export interface SchoolObservation {
     comment?: string;
   };
   examScope: { term: string; scope: string }[];
+  /** 고등학교 전용 — 중학교는 석차등급이 없다 */
   cutoff: { basis: string; grade1: string; grade2: string };
+  /** 중학교 전용 — 성취도 A 비율과 시험 운영 */
+  middle?: {
+    /** 영어 성취도 A 비율(%) — 공시에 없어 학원이 관측한 값 */
+    aRatio: string;
+    /** 지필 : 수행 비율 */
+    ratio: string;
+    /** 자유학기·자유학년으로 지필평가가 없는 학기 */
+    freeSemester: string;
+    /** 교과서 출판사 */
+    textbook: string;
+  };
   features: string[];
   signatures: SignatureQuestion[];
   /** 판단층(VIEW) — 사실이 아니라 학원의 견해 */

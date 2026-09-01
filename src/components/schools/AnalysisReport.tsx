@@ -1,14 +1,15 @@
 import { useMemo } from "react";
 import type { SchoolRecord } from "@/types/school";
-import { RESULT_BASIS_LABEL, RESULT_BASIS_SHORT } from "@/data/results";
+import { RESULT_BASIS_LABEL } from "@/data/results";
 import {
   detectAnomalies,
   dropoutRate,
   genderSplit,
   gradeSeats,
-  pathLabels,
-  pathMix,
+  headlinePath,
+  pathBreakdown,
   seatsForGrade1,
+  specialHighDetail,
 } from "@/lib/schools/metrics";
 
 interface Props {
@@ -20,16 +21,24 @@ const YEAR = "2027학년도";
 
 export function AnalysisReport({ records, onBack }: Props) {
   const highs = records.filter((r) => r.fact.level === "고");
+  const mids = records.filter((r) => r.fact.level === "중");
   const detailed = records.filter((r) => r.observation);
+  let no = 0;
+  const next = () => String(++no).padStart(2, "0");
 
   return (
     <div className="orun" style={{ background: "transparent" }}>
       <Toolbar count={records.length} onBack={onBack} />
 
-      <CoverPage records={records} />
-      <CompareSection records={records} />
-      {highs.length > 0 && <SeatsSection records={highs} />}
-      <ResultsSection records={records} />
+      <CoverPage records={records} highs={highs.length} mids={mids.length} />
+      <CompareSection records={records} no={next()} />
+
+      {/* 고등학교는 등급이 핵심, 중학교는 어느 고교로 가는가가 핵심 */}
+      {highs.length > 0 && <SeatsSection records={highs} no={next()} />}
+      {mids.length > 0 && <NextSchoolSection records={mids} no={next()} />}
+      {mids.length > 0 && <MiddleEnglishSection records={mids} no={next()} />}
+
+      <ResultsSection records={records} no={next()} />
 
       {detailed.map((r) => (
         <SchoolDetail key={r.fact.code} record={r} />
@@ -130,8 +139,21 @@ function SectionHead({
 
 /* ── 표지 ─────────────────────────────── */
 
-function CoverPage({ records }: { records: SchoolRecord[] }) {
+function CoverPage({
+  records,
+  highs,
+  mids,
+}: {
+  records: SchoolRecord[];
+  highs: number;
+  mids: number;
+}) {
   const names = records.map((r) => r.fact.name.replace(/(고등학교|중학교)$/, ""));
+  const onlyMid = mids > 0 && highs === 0;
+  const title = onlyMid ? ["중학교 3년이", "고교 선택을 만듭니다"] : ["고교 선택이", "입시의 시작입니다"];
+  const lede = onlyMid
+    ? "2027학년도 예비중1을 위한 학교별 분석. 이 중학교를 나온 학생들이 어느 고등학교로 갔는지부터 봅니다."
+    : `${YEAR} 예비고1을 위한 학교별 내신 분석. 공시자료가 말해 주는 것과, 옳은영어가 직접 본 것을 나누어 담았습니다.`;
   return (
     <section
       className="orun-page"
@@ -169,13 +191,12 @@ function CoverPage({ records }: { records: SchoolRecord[] }) {
           textWrap: "balance",
         }}
       >
-        고교 선택이
+        {title[0]}
         <br />
-        입시의 시작입니다
+        {title[1]}
       </h1>
       <p style={{ color: "#B5B5B5", fontSize: 15.5, maxWidth: "52ch", margin: 0 }}>
-        {YEAR} 예비고1을 위한 학교별 내신 분석. 공시자료가 말해 주는 것과, 옳은영어가 직접 본 것을
-        나누어 담았습니다.
+        {lede}
       </p>
 
       <div style={{ height: 1, background: "#3A3A3A", margin: "36px 0 22px" }} />
@@ -221,7 +242,7 @@ function CoverPage({ records }: { records: SchoolRecord[] }) {
 
 /* ── 01 한눈에 비교 ───────────────────── */
 
-function CompareSection({ records }: { records: SchoolRecord[] }) {
+function CompareSection({ records, no }: { records: SchoolRecord[]; no: string }) {
   // 진로 필드는 학교급마다 의미가 다르다(고: 4년제 / 중: 특성화고).
   // 한 표에 섞으면 다른 뜻의 숫자가 같은 칸에 들어가므로 학교급별로 나눈다.
   const byLevel = [
@@ -232,14 +253,14 @@ function CompareSection({ records }: { records: SchoolRecord[] }) {
   return (
     <section style={{ marginBottom: 60 }}>
       <SectionHead
-        no="01"
+        no={no}
         en="At a glance"
         ko="한눈에 비교"
         lede="학부모님이 가장 먼저 묻는 것들입니다. 전부 공시자료 그대로이며, 저희가 가공하지 않았습니다."
       />
 
       {byLevel.map(({ level, list }) => {
-        const labels = pathLabels(level);
+        const headLabel = level === "고" ? "4년제" : "특목·자율고";
         return (
           <div key={level} style={{ marginBottom: byLevel.length > 1 ? 30 : 0 }}>
             {byLevel.length > 1 && (
@@ -264,16 +285,17 @@ function CompareSection({ records }: { records: SchoolRecord[] }) {
                     <th className="num">1학년</th>
                     <th className="num">학급</th>
                     <th className="num">학급당</th>
-                    <th className="num">1등급 자리</th>
-                    <th className="num">{level}1 이탈</th>
-                    <th className="num">{labels.path2}</th>
+                    {level === "고" && <th className="num">1등급 자리</th>}
+                    <th className="num">{level}1 전출</th>
+                    <th className="num">{headLabel}</th>
                   </tr>
                 </thead>
                 <tbody>
                   {list.map(({ fact }) => {
                     const seats = fact.g1Total ? seatsForGrade1(fact.g1Total) : null;
                     const drop = dropoutRate(fact);
-                    const mix = pathMix(fact);
+                    const head = headlinePath(fact);
+                    const flagged = detectAnomalies(fact).length > 0;
                     return (
                       <tr key={fact.code}>
                         <td
@@ -290,12 +312,19 @@ function CompareSection({ records }: { records: SchoolRecord[] }) {
                         <td className="num">{fact.g1Total ?? "—"}</td>
                         <td className="num">{fact.g1Classes ?? "—"}</td>
                         <td className="num">{fact.g1PerClass?.toFixed(1) ?? "—"}</td>
-                        <td className="num" style={{ color: "var(--ink)", fontWeight: 700 }}>
-                          {seats ?? "—"}
-                        </td>
+                        {level === "고" && (
+                          <td className="num" style={{ color: "var(--ink)", fontWeight: 700 }}>
+                            {seats ?? "—"}
+                          </td>
+                        )}
                         <td className="num">{drop != null ? `${drop.toFixed(1)}%` : "—"}</td>
-                        <td className="num">
-                          {mix?.path2 != null ? `${mix.path2.toFixed(0)}%` : "—"}
+                        <td className="num" style={flagged ? { color: "var(--brick)" } : undefined}>
+                          {head.value != null ? `${head.value.toFixed(0)}%` : "—"}
+                          {flagged && (
+                            <span title="공시값 확인 필요" style={{ marginLeft: 4 }}>
+                              *
+                            </span>
+                          )}
                         </td>
                       </tr>
                     );
@@ -309,8 +338,8 @@ function CompareSection({ records }: { records: SchoolRecord[] }) {
 
       <Callout tone="paper" label="이 표를 읽는 법">
         <p style={{ margin: 0 }}>
-          <strong>1등급 자리</strong>는 1학년 인원의 10%입니다(2025학년도 고1부터 5등급제).{" "}
-          <strong>이탈</strong>은 1학년 중 전출한 학생 비율로, 학교 적응을 보여주는 신호입니다.
+          <strong>1등급 자리</strong>는 1학년 인원의 상위 10%이며 소수점은 버립니다. 고등학교에만 있습니다. 중학교는 석차등급 없이 성취도
+          A~E만 나옵니다. <strong>전출</strong>은 1학년 중 다른 학교로 옮긴 학생 비율입니다.
           맨 오른쪽 진학 수치는 <strong>직전 졸업생 기준</strong>이라 지금 1학년과는 3년의 시차가
           있습니다. 졸업생이 아직 없는 신설교는 &ldquo;—&rdquo;로 표시됩니다.
         </p>
@@ -333,8 +362,9 @@ function AnomalyNotice({ records }: { records: SchoolRecord[] }) {
   return (
     <Callout tone="warn" label="공시값 확인 필요">
       <p style={{ margin: "0 0 8px" }}>
-        아래 항목은 전년 대비 변동이 커서 학교 입력 오류일 가능성이 있습니다. 발표 자료에 그대로
-        쓰기 전에 학교알리미 원문을 확인해 주세요.
+        표에 <strong style={{ color: "var(--brick)" }}>*</strong> 가 붙은 학교입니다. 전년 대비
+        변동이 커서 학교 입력 오류일 가능성이 있으니, 발표 자료에 그대로 쓰기 전에 학교알리미
+        원문을 확인해 주세요.
       </p>
       {found.map((f) => (
         <p key={f.name} style={{ margin: "6px 0 0", fontSize: 13.5 }}>
@@ -347,12 +377,12 @@ function AnomalyNotice({ records }: { records: SchoolRecord[] }) {
 
 /* ── 02 1등급 자리 ────────────────────── */
 
-function SeatsSection({ records }: { records: SchoolRecord[] }) {
+function SeatsSection({ records, no }: { records: SchoolRecord[]; no: string }) {
   const sample = records.find((r) => r.fact.g1Total);
   return (
     <section style={{ marginBottom: 60 }}>
       <SectionHead
-        no="02"
+        no={no}
         en="Grade seats"
         ko="1등급은 몇 자리입니까"
         lede="5등급제에서 1등급은 상위 10%입니다. 학교가 크면 자리도 많지만, 경쟁하는 학생도 많습니다."
@@ -397,11 +427,12 @@ function SeatsSection({ records }: { records: SchoolRecord[] }) {
         <Callout tone="blue" label="꼭 아셔야 할 것">
           <p style={{ margin: "0 0 10px" }}>
             <strong>이 숫자는 공통과목에서만 맞습니다.</strong> 석차등급은 학년 정원이 아니라{" "}
-            <strong>과목별 수강자 수</strong>를 기준으로 매겨집니다. 2·3학년 선택과목에서 수강자가
-            30명이면 1등급은 3명, 15명이면 2명입니다.
+            <strong>과목별 수강자 수</strong>를 기준으로 매겨집니다. 수강자가 30명이면 1등급은
+            3명, 15명이면 1명입니다.
           </p>
           <p style={{ margin: 0 }}>
-            수강자가 13명 이하면 1등급은 1명뿐이고, 더 적으면 석차등급이 아예 산출되지 않습니다.
+            상위 10% 이내여야 1등급이므로 <strong>소수점은 버립니다</strong> — 167명이면 16자리,
+            170명이면 17자리입니다. 수강자가 10명 미만이면 1등급 자리가 아예 없습니다.
             고교학점제에서는 <strong>어떤 과목을 고르느냐가 등급을 바꿉니다.</strong>
           </p>
         </Callout>
@@ -440,66 +471,282 @@ function DotGrid({ total, filled }: { total: number; filled: number }) {
   );
 }
 
-/* ── 03 옳은영어 실적 ─────────────────── */
+/* ── 중학교 전용 · 어느 고등학교로 가나 ── */
 
-function ResultsSection({ records }: { records: SchoolRecord[] }) {
-  const all = records.flatMap((r) => r.results ?? []);
-  if (!all.length) return null;
+function NextSchoolSection({ records, no }: { records: SchoolRecord[]; no: string }) {
+  const withPaths = records.filter((r) => r.fact.grad);
+  if (!withPaths.length) return null;
 
   return (
     <section style={{ marginBottom: 60 }}>
       <SectionHead
-        no="03"
-        en="Our results"
-        ko="옳은영어가 만든 결과"
-        lede="2026년 1학기 기말고사 기준입니다. 아래 두 지표는 기준이 다르므로 나누어 표기했습니다."
+        no={no}
+        en="Where they go next"
+        ko="이 중학교는 어디로 보냈습니까"
+        lede="중학교 선택에서 가장 중요한 숫자입니다. 중학교 성적은 대입에 들어가지 않지만, 어느 고등학교로 가느냐는 3년을 바꿉니다."
       />
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fill,minmax(210px,1fr))",
-          gap: 1,
-          background: "var(--hair)",
-          border: "1px solid var(--hair)",
-        }}
-      >
-        {all.map((r) => (
+      {withPaths.map(({ fact }) => {
+        const slices = pathBreakdown(fact);
+        const special = specialHighDetail(fact);
+        if (!slices) return null;
+        return (
           <div
-            key={r.schoolCode + r.label}
-            style={{ background: "var(--ground)", padding: "20px 20px 18px" }}
+            key={fact.code}
+            style={{ padding: "18px 0", borderBottom: "1px solid var(--hair)" }}
           >
             <div
               style={{
-                fontFamily: "'IBM Plex Mono', monospace",
-                fontSize: 9.5,
-                letterSpacing: ".14em",
-                textTransform: "uppercase",
-                color: "var(--yellow)",
-                marginBottom: 10,
+                display: "flex",
+                alignItems: "baseline",
+                justifyContent: "space-between",
+                gap: 12,
+                flexWrap: "wrap",
+                marginBottom: 12,
               }}
             >
-              {RESULT_BASIS_SHORT[r.basis]}
-            </div>
-            <div style={{ fontSize: 14, fontWeight: 700, color: "var(--ink)" }}>{r.label}</div>
-            <div style={{ display: "flex", alignItems: "baseline", gap: 4, marginTop: 8 }}>
-              <span style={{ fontSize: 13, color: "var(--muted)" }}>1등급</span>
-              <span
-                className="orun-stat"
-                style={{ fontSize: 32, fontWeight: 700, color: "var(--ink)" }}
-              >
-                {r.percent}
+              <span style={{ fontSize: 15.5, fontWeight: 700, color: "var(--ink)" }}>
+                {fact.name.replace(/중학교$/, "")}
               </span>
-              <span style={{ fontSize: 15, color: "var(--ink)", fontWeight: 700 }}>%</span>
+              <span style={{ fontSize: 12.5, color: "var(--muted)" }}>
+                졸업생 {fact.grad}명 · {fact.pathYear}년 공시
+              </span>
             </div>
-            <div style={{ fontSize: 11.5, color: "var(--muted)", marginTop: 10, lineHeight: 1.5 }}>
-              {RESULT_BASIS_LABEL[r.basis]}
+
+            {/* 100% 가로 막대 */}
+            <div style={{ display: "flex", height: 26, background: "var(--hair)" }}>
+              {slices.map((sl, i) => (
+                <div
+                  key={sl.key}
+                  title={`${sl.label} ${sl.count}명 (${sl.percent.toFixed(1)}%)`}
+                  style={{
+                    width: `${sl.percent}%`,
+                    background:
+                      sl.key === "general"
+                        ? "var(--ink)"
+                        : sl.key === "autonomous"
+                          ? "var(--blue)"
+                          : sl.key === "special"
+                            ? "var(--yellow-hi)"
+                            : sl.key === "vocational"
+                              ? "var(--muted)"
+                              : "var(--hair)",
+                  }}
+                />
+              ))}
             </div>
+
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "6px 20px", marginTop: 10 }}>
+              {slices
+                .filter((sl) => sl.count > 0)
+                .map((sl) => (
+                  <div key={sl.key} style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                    <span
+                      style={{
+                        width: 8,
+                        height: 8,
+                        background:
+                          sl.key === "general"
+                            ? "var(--ink)"
+                            : sl.key === "autonomous"
+                              ? "var(--blue)"
+                              : sl.key === "special"
+                                ? "var(--yellow-hi)"
+                                : "var(--muted)",
+                      }}
+                    />
+                    <span style={{ fontSize: 12.5 }}>
+                      {sl.label}{" "}
+                      <strong className="orun-stat" style={{ color: "var(--ink)" }}>
+                        {sl.count}
+                      </strong>
+                      <span style={{ color: "var(--muted)" }}> ({sl.percent.toFixed(1)}%)</span>
+                    </span>
+                  </div>
+                ))}
+            </div>
+
+            {special && (
+              <div style={{ marginTop: 10, fontSize: 12.5, color: "var(--muted)" }}>
+                특목고 {special.total}명 안에 —{" "}
+                {special.items.map((it) => `${it.label} ${it.count}명`).join(" · ")}
+              </div>
+            )}
           </div>
-        ))}
+        );
+      })}
+
+      <Callout tone="blue" label="이 숫자를 읽는 법">
+        <p style={{ margin: "0 0 10px" }}>
+          <strong>서울 중학교는 거주지 학교군 안에서 추첨 배정</strong>입니다. 그래서 이 표는
+          &ldquo;좋은 중학교&rdquo;를 고르는 순위표가 아니라, <strong>우리 동네 학생들이 실제로
+          어느 고등학교로 흘러가는지</strong>를 보여주는 지도입니다.
+        </p>
+        <p style={{ margin: 0 }}>
+          특목고·자율고 비율이 높다고 그 중학교가 더 좋은 것은 아닙니다. 학군, 사교육 밀도, 학교의
+          진학 지도 방향이 함께 작용합니다. 다만 <strong>외고·국제고를 생각한다면 중2부터
+          준비</strong>해야 하고, 그 준비는 영어에서 시작합니다.
+        </p>
+      </Callout>
+    </section>
+  );
+}
+
+/* ── 중학교 전용 · 영어 수업 환경 ─────── */
+
+function MiddleEnglishSection({ records, no }: { records: SchoolRecord[]; no: string }) {
+  const leveled = records.filter((r) => r.fact.leveledClass);
+  return (
+    <section style={{ marginBottom: 60 }}>
+      <SectionHead
+        no={no}
+        en="English at school"
+        ko="학교가 영어를 어떻게 가르치나"
+        lede="중학교는 등급이 없어 성취도 A~E만 남습니다. 그래서 '몇 등급이냐'가 아니라 '어떻게 배우느냐'가 남는 정보입니다."
+      />
+
+      <div style={{ overflowX: "auto" }}>
+        <table className="orun-table" style={{ minWidth: 640 }}>
+          <thead>
+            <tr>
+              <th>학교</th>
+              <th className="num">학급당</th>
+              <th className="num">주당 총시수</th>
+              <th>수준별 이동수업</th>
+              <th>교과교실제</th>
+              <th className="num">방과후 참여</th>
+            </tr>
+          </thead>
+          <tbody>
+            {records.map(({ fact }) => (
+              <tr key={fact.code}>
+                <td style={{ color: "var(--ink)", fontWeight: 500, whiteSpace: "nowrap" }}>
+                  {fact.name.replace(/중학교$/, "")}
+                </td>
+                <td className="num">{fact.g1PerClass?.toFixed(1) ?? "—"}</td>
+                <td className="num">{fact.weeklyHours ?? "—"}</td>
+                <td>
+                  {fact.leveledClass == null ? (
+                    "—"
+                  ) : fact.leveledClass ? (
+                    <strong style={{ color: "var(--blue)" }}>운영</strong>
+                  ) : (
+                    <span style={{ color: "var(--muted)" }}>미운영</span>
+                  )}
+                </td>
+                <td>
+                  {fact.subjectClassroom == null
+                    ? "—"
+                    : fact.subjectClassroom
+                      ? "운영"
+                      : <span style={{ color: "var(--muted)" }}>미운영</span>}
+                </td>
+                <td className="num">
+                  {fact.afterSchoolStudents != null && fact.studentsTotal
+                    ? `${Math.round((fact.afterSchoolStudents / fact.studentsTotal) * 100)}%`
+                    : "—"}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
 
-      <p style={{ fontSize: 12.5, color: "var(--muted)", marginTop: 14 }}>
+      <Callout tone="paper" label="수준별 이동수업이 무엇입니까">
+        <p style={{ margin: 0 }}>
+          영어·수학을 실력에 따라 반을 나눠 가르치는 방식입니다.{" "}
+          {leveled.length > 0 ? (
+            <>
+              고르신 학교 중 <strong>{leveled.map((r) => r.fact.name.replace(/중학교$/, "")).join(" · ")}</strong>
+              가 운영합니다. 상위반에 들어가려면 <strong>1학년 첫 시험</strong>이 중요합니다 —
+              한 번 갈린 반은 잘 바뀌지 않습니다.
+            </>
+          ) : (
+            "고르신 학교 중에는 운영하는 곳이 없습니다. 전체 학생이 같은 진도로 배웁니다."
+          )}
+        </p>
+      </Callout>
+    </section>
+  );
+}
+
+/* ── 03 옳은영어 실적 ─────────────────── */
+
+function ResultsSection({ records, no }: { records: SchoolRecord[]; no: string }) {
+  const all = records.flatMap((r) => r.results ?? []);
+  if (!all.length) return null;
+
+  // 분모가 다른 두 지표를 한 줄에 섞으면 서로 비교하게 된다. 기준별로 나눈다.
+  const groups = (["enrolled", "schoolTop"] as const)
+    .map((basis) => ({ basis, list: all.filter((r) => r.basis === basis) }))
+    .filter((g) => g.list.length > 0);
+
+  return (
+    <section style={{ marginBottom: 60 }}>
+      <SectionHead
+        no={no}
+        en="Our results"
+        ko="옳은영어가 만든 결과"
+        lede="2026년 1학기 기말고사 기준입니다. 아래 두 지표는 분모가 서로 다르므로 나누어 실었습니다. 서로 비교하는 숫자가 아닙니다."
+      />
+
+      {groups.map(({ basis, list }) => (
+        <div key={basis} style={{ marginBottom: 26 }}>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "baseline",
+              gap: 10,
+              flexWrap: "wrap",
+              borderBottom: "1.5px solid var(--ink)",
+              paddingBottom: 7,
+              marginBottom: 12,
+            }}
+          >
+            <span style={{ fontSize: 15.5, fontWeight: 700, color: "var(--ink)" }}>
+              {RESULT_BASIS_LABEL[basis]}
+            </span>
+            <span style={{ fontSize: 12.5, color: "var(--muted)" }}>
+              {basis === "enrolled"
+                ? "분모 = 옳은영어 재원생 수"
+                : "분모 = 그 학교 전체 1등급 인원"}
+            </span>
+          </div>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fill,minmax(200px,1fr))",
+              gap: 1,
+              background: "var(--hair)",
+              border: "1px solid var(--hair)",
+            }}
+          >
+            {list.map((r) => (
+              <div
+                key={r.schoolCode + r.label}
+                style={{ background: "var(--ground)", padding: "18px 20px 16px" }}
+              >
+                <div style={{ fontSize: 14, fontWeight: 700, color: "var(--ink)" }}>
+                  {r.label}
+                </div>
+                <div style={{ display: "flex", alignItems: "baseline", gap: 4, marginTop: 8 }}>
+                  <span style={{ fontSize: 13, color: "var(--muted)" }}>1등급</span>
+                  <span
+                    className="orun-stat"
+                    style={{ fontSize: 32, fontWeight: 700, color: "var(--ink)" }}
+                  >
+                    {r.percent}
+                  </span>
+                  <span style={{ fontSize: 15, color: "var(--ink)", fontWeight: 700 }}>%</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+
+      <p style={{ fontSize: 12.5, color: "var(--muted)" }}>
         {all[0].term} · 옳은영어 재원생 자체 집계
       </p>
     </section>
@@ -512,7 +759,8 @@ function SchoolDetail({ record }: { record: SchoolRecord }) {
   const { fact, observation: o } = record;
   if (!o) return null;
   const g = genderSplit(fact);
-  const seats = fact.g1Total ? seatsForGrade1(fact.g1Total) : null;
+  const isHigh = fact.level === "고";
+  const seats = isHigh && fact.g1Total ? seatsForGrade1(fact.g1Total) : null;
 
   return (
     <section className="orun-page" style={{ marginBottom: 64 }}>
@@ -558,7 +806,7 @@ function SchoolDetail({ record }: { record: SchoolRecord }) {
         <Stat label="1학년" value={fact.g1Total} unit="명" />
         <Stat label="1학년 학급" value={fact.g1Classes} unit="반" />
         <Stat label="학급당" value={fact.g1PerClass?.toFixed(1)} unit="명" />
-        <Stat label="1등급 자리" value={seats} unit="명" accent />
+        {isHigh && <Stat label="1등급 자리" value={seats} unit="명" accent />}
         {g && <Stat label="남 · 여" value={`${g.male} : ${g.female}`} unit="" />}
       </div>
 

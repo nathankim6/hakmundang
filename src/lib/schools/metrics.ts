@@ -1,16 +1,29 @@
 import type { SchoolFact } from "@/types/school";
 
 /**
- * 2025학년도 고1부터 적용되는 5등급제 비율.
- * 1등급 10% · 2등급 누적 34% · 3등급 66% · 4등급 90% · 5등급 100%
+ * 2025학년도 고1부터 적용되는 5등급제 누적 비율(%).
+ * 1등급 10 · 2등급 34 · 3등급 66 · 4등급 90 · 5등급 100
  */
 export const GRADE_BANDS = [
-  { grade: 1, cumulative: 0.1, band: 0.1 },
-  { grade: 2, cumulative: 0.34, band: 0.24 },
-  { grade: 3, cumulative: 0.66, band: 0.32 },
-  { grade: 4, cumulative: 0.9, band: 0.24 },
-  { grade: 5, cumulative: 1.0, band: 0.1 },
+  { grade: 1, cumulative: 10 },
+  { grade: 2, cumulative: 34 },
+  { grade: 3, cumulative: 66 },
+  { grade: 4, cumulative: 90 },
+  { grade: 5, cumulative: 100 },
 ] as const;
+
+/**
+ * 누적 인원 = floor(N × 누적비율 / 100).
+ *
+ * 석차등급은 학생의 석차백분율이 그 등급의 누적 비율 "이하"일 때 부여된다.
+ * k등이 1등급이려면 k/N ≤ 0.1 이므로 1등급 인원은 floor(0.1N)이고 반올림이 아니다.
+ * 예: 수강자 167명이면 16명이다. 17등은 17/167 = 10.18%로 2등급이다.
+ *
+ * 정수 연산으로 계산해 부동소수점 오차를 없앤다.
+ */
+function cumulativeSeats(enrolled: number, cumulativePercent: number): number {
+  return Math.floor((enrolled * cumulativePercent) / 100);
+}
 
 /**
  * 1등급 자리 수.
@@ -21,40 +34,49 @@ export const GRADE_BANDS = [
  */
 export function seatsForGrade1(enrolled: number): number {
   if (!enrolled || enrolled <= 0) return 0;
-  return Math.round(enrolled * 0.1);
+  return cumulativeSeats(enrolled, 10);
 }
 
-/** 등급별 누적 인원 */
+/** 등급별 인원과 누적 — seatsForGrade1과 같은 산식을 쓴다 */
 export function gradeSeats(enrolled: number) {
   if (!enrolled || enrolled <= 0) return [];
   let prev = 0;
   return GRADE_BANDS.map((b) => {
-    const cum = Math.round(enrolled * b.cumulative);
+    const cum = cumulativeSeats(enrolled, b.cumulative);
     const seats = cum - prev;
     prev = cum;
-    return { grade: b.grade, seats, cumulative: cum, percent: b.band * 100 };
+    return { grade: b.grade, seats, cumulative: cum, percent: b.cumulative };
   });
 }
 
 /**
  * 소인수 과목 경고.
- * 수강자가 적으면 반올림 한 명 차이로 자리가 갈리고,
- * 아주 적으면 석차등급 자체가 산출되지 않는다.
+ *
+ * floor 기준이므로 수강자가 10명 미만이면 1등급 자리가 아예 0이고,
+ * 10의 배수 직전(끝자리 9)에서는 한 명만 더 들어와도 자리가 하나 늘어난다.
  */
 export function smallClassWarning(enrolled: number): string | null {
   if (!enrolled || enrolled <= 0) return null;
-  if (enrolled <= 13) return "수강자가 13명 이하면 1등급은 1명뿐입니다.";
-  const exact = enrolled * 0.1;
-  const frac = Math.abs(exact - Math.round(exact));
-  if (frac > 0.4) {
-    return `수강자 ${enrolled}명은 반올림 경계입니다. 한 명만 늘거나 줄어도 1등급 자리가 바뀝니다.`;
+  const seats = seatsForGrade1(enrolled);
+  if (seats === 0) {
+    return `수강자가 ${enrolled}명이면 상위 10%에 드는 자리가 없습니다. 소인수 과목은 석차등급이 산출되지 않을 수 있습니다.`;
+  }
+  if (seats === 1) {
+    return `수강자 ${enrolled}명이면 1등급은 단 1명입니다.`;
+  }
+  if (enrolled % 10 === 9) {
+    return `수강자 ${enrolled}명은 경계입니다. 한 명만 더 들어오면 1등급 자리가 ${seats + 1}명으로 늘어납니다.`;
+  }
+  if (enrolled % 10 === 0) {
+    return `수강자 ${enrolled}명은 경계입니다. 한 명만 빠져도 1등급 자리가 ${seats - 1}명으로 줄어듭니다.`;
   }
   return null;
 }
 
 /** 고1 이탈률(%) — 순수 공시값의 나눗셈 */
 export function dropoutRate(f: SchoolFact): number | null {
-  if (!f.g1MovedOut || !f.g1MoveBase) return null;
+  // 전출 0명은 "자료 없음"이 아니라 0%다. falsy 검사를 쓰면 안 된다.
+  if (f.g1MovedOut == null || !f.g1MoveBase) return null;
   return (f.g1MovedOut / f.g1MoveBase) * 100;
 }
 
@@ -68,30 +90,86 @@ export function genderSplit(f: SchoolFact): { male: number; female: number } | n
 }
 
 /**
- * 진로 구성비(%).
+ * 졸업생 진로 — 학교급별 해석.
  *
- * 진로현황 필드는 학교급마다 의미가 다르다. 섞어 쓰면 안 된다.
- *   고등학교 — path1 전문대 · path2 4년제 · path3 국외진학
- *   중학교   — path1 일반고 · path2 특성화고 · path3 특수목적고
+ * 공시 원본은 슬롯(p3~p14)으로 오고 슬롯의 뜻이 학교급마다 다르다.
+ * 해석은 여기 한 곳에서만 한다. 매핑이 틀리면 이 함수만 고치면 된다.
+ *
+ * 근거
+ *  - 고등학교: 서울 283개교에서 진학자계 = p3+p4+p5+p6 항등식이 전건 일치.
+ *    공시 정의는 전문대학 / 대학교 / 국외진학.
+ *  - 중학교: 공시 정의는 일반고 / 특성화고 / 특수목적고(과학·외국어·국제·예술·체육·마이스터)
+ *    / 자율고 / 기타 / 취업자 / 대안교육기관 / 무직및미상.
+ *    동작·송파 45개교 집계에서 p3 76.0% p4 8.1% p9 9.6% 로 각각 일반고·특성화고·자율고와 맞고,
+ *    서울체육중학교가 p7에 졸업 51명 중 40명이라 p7이 예술·체육고임이 확인된다.
  */
-export const PATH_LABELS = {
-  고: { path1: "전문대", path2: "4년제", path3: "국외" },
-  중: { path1: "일반고", path2: "특성화고", path3: "특목고" },
-} as const;
-
-export function pathLabels(level: SchoolFact["level"]) {
-  return PATH_LABELS[level] ?? PATH_LABELS.고;
+export interface PathSlice {
+  key: string;
+  label: string;
+  count: number;
+  percent: number;
+  /** 설명회에서 강조할 항목 */
+  emphasis?: boolean;
 }
 
-export function pathMix(f: SchoolFact) {
+export function pathBreakdown(f: SchoolFact): PathSlice[] | null {
   if (!f.grad) return null;
-  const pct = (v: number | null) => (v == null ? null : (v / f.grad) * 100);
+  const pct = (v: number | null) => ((v ?? 0) / f.grad) * 100;
+  const slice = (key: string, label: string, v: number | null, emphasis?: boolean): PathSlice => ({
+    key,
+    label,
+    count: v ?? 0,
+    percent: pct(v),
+    emphasis,
+  });
+
+  if (f.level === "고") {
+    return [
+      slice("uni4", "4년제", f.p4, true),
+      slice("college", "전문대", f.p3),
+      slice("abroad", "국외", f.p6),
+      slice("employed", "취업", f.p7),
+      slice("other", "기타", f.p8),
+    ].filter((s) => s.count > 0 || s.emphasis);
+  }
+
+  const special = (f.p5 ?? 0) + (f.p6 ?? 0) + (f.p7 ?? 0) + (f.p8 ?? 0);
+  const named = [
+    slice("general", "일반고", f.p3, true),
+    slice("autonomous", "자율고", f.p9, true),
+    slice("special", "특목고", special, true),
+    slice("vocational", "특성화고", f.p4),
+  ];
+  // 남는 인원(기타·취업·대안교육·미상)은 하나로 묶는다. 합이 100%가 되어야 한다.
+  const rest = f.grad - named.reduce((a, b) => a + b.count, 0);
+  const out = [...named];
+  if (rest > 0) out.push(slice("rest", "그 외", rest));
+  return out.filter((s) => s.count > 0 || s.emphasis);
+}
+
+/** 중학교 전용 — 특목고 세부 */
+export function specialHighDetail(f: SchoolFact) {
+  if (f.level !== "중" || !f.grad) return null;
+  const items = [
+    { key: "science", label: "과학고", count: f.p5 ?? 0 },
+    { key: "foreign", label: "외고·국제고", count: f.p6 ?? 0 },
+    { key: "arts", label: "예술·체육고", count: f.p7 ?? 0 },
+    { key: "meister", label: "마이스터고", count: f.p8 ?? 0 },
+  ];
+  const total = items.reduce((a, b) => a + b.count, 0);
+  if (!total) return null;
+  return { items: items.filter((i) => i.count > 0), total, percent: (total / f.grad) * 100 };
+}
+
+/** 비교표에 쓸 대표 진로 지표 — 학교급별로 다르다 */
+export function headlinePath(f: SchoolFact): { label: string; value: number | null } {
+  if (f.level === "고") {
+    return { label: "4년제", value: f.grad ? ((f.p4 ?? 0) / f.grad) * 100 : null };
+  }
+  const special = (f.p5 ?? 0) + (f.p6 ?? 0) + (f.p7 ?? 0) + (f.p8 ?? 0);
   return {
-    path1: pct(f.path1),
-    path2: pct(f.path2),
-    path3: pct(f.path3),
-    other: pct(f.other),
-    labels: pathLabels(f.level),
+    label: "특목·자율고",
+    value: f.grad ? ((special + (f.p9 ?? 0)) / f.grad) * 100 : null,
   };
 }
 
@@ -113,12 +191,21 @@ export interface Anomaly {
 export function detectAnomalies(f: SchoolFact): Anomaly[] {
   const out: Anomaly[] = [];
 
-  if (f.path2 != null && f.path2Prev != null && f.path2Prev > 0) {
-    const change = (f.path2 - f.path2Prev) / f.path2Prev;
-    if (Math.abs(change) > 0.5) {
+  const headline =
+    f.level === "고"
+      ? { name: "4년제 진학", now: f.p4, prev: f.p4Prev }
+      : { name: "일반고 진학", now: f.p3, prev: f.p3Prev };
+  // 상대변화만 보면 분모가 작은 학교가 무더기로 걸린다(2→9 = +350%).
+  // 절대 인원 변화가 학년 규모에 견줘 의미 있을 때만 경고한다.
+  if (headline.now != null && headline.prev != null && headline.prev > 0) {
+    const change = (headline.now - headline.prev) / headline.prev;
+    const absChange = Math.abs(headline.now - headline.prev);
+    const scale = f.grad ?? f.gradPrev ?? 0;
+    const meaningful = absChange >= 20 || (scale > 0 && absChange / scale >= 0.15);
+    if (Math.abs(change) > 0.5 && meaningful) {
       out.push({
-        field: f.level === "고" ? "4년제 진학" : "일반고 진학",
-        message: `전년 대비 ${change > 0 ? "+" : ""}${Math.round(change * 100)}% (${f.path2Prev} → ${f.path2}). 공시 원문 확인이 필요합니다.`,
+        field: headline.name,
+        message: `전년 대비 ${change > 0 ? "+" : ""}${Math.round(change * 100)}% (${headline.prev} → ${headline.now}명). 공시 원문 확인이 필요합니다.`,
       });
     }
   }
@@ -126,12 +213,12 @@ export function detectAnomalies(f: SchoolFact): Anomaly[] {
   // 전문대와 4년제가 뒤바뀐 것으로 의심되는 경우
   if (
     f.level === "고" &&
-    f.path1 != null &&
-    f.path2 != null &&
-    f.path1Prev != null &&
-    f.path2Prev != null &&
-    f.path2Prev > f.path1Prev &&
-    f.path1 > f.path2
+    f.p3 != null &&
+    f.p4 != null &&
+    f.p3Prev != null &&
+    f.p4Prev != null &&
+    f.p4Prev > f.p3Prev &&
+    f.p3 > f.p4
   ) {
     out.push({
       field: "진로 구성",

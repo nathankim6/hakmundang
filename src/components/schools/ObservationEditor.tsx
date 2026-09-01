@@ -8,7 +8,10 @@ import type {
 import { schoolTypes } from "@/lib/question-types/school";
 import {
   completeness,
+  didLastWriteFail,
+  editedCount,
   emptyObservation,
+  ensureEditable,
   getObservation,
   isEdited,
   pruneObservation,
@@ -19,6 +22,10 @@ import {
 import { allSchools } from "@/lib/schools/data";
 
 const LEVELS: DifficultyLevel[] = ["기초", "보통", "상", "최상"];
+
+function middleOf(o: SchoolObservation) {
+  return o.middle ?? { aRatio: "", ratio: "", freeSemester: "", textbook: "" };
+}
 const SUBJECTS = ["국어", "영어", "수학", "사회", "과학"] as const;
 
 export function ObservationEditor() {
@@ -82,7 +89,7 @@ function SchoolSelect({
   onChange: (c: string) => void;
   observations: Record<string, SchoolObservation>;
 }) {
-  const filled = schools.filter((s) => observations[s.code]);
+  const filled = editedCount();
   return (
     <div style={{ marginBottom: 30 }}>
       <select
@@ -110,7 +117,7 @@ function SchoolSelect({
         })}
       </select>
       <p style={{ fontSize: 12.5, color: "var(--muted)", marginTop: 8 }}>
-        전체 {schools.length}개교 중 <strong style={{ color: "var(--ink)" }}>{filled.length}개교</strong>{" "}
+        전체 {schools.length}개교 중 직접 입력 <strong style={{ color: "var(--ink)" }}>{filled}개교</strong>{" "}
         입력됨
       </p>
     </div>
@@ -121,25 +128,56 @@ function SchoolSelect({
 
 function EditorForm({ school }: { school: SchoolFact }) {
   const stored = getObservation(school.code);
-  const [draft, setDraft] = useState<SchoolObservation>(
-    () => stored ?? emptyObservation(school.name),
+  const isMiddle = school.level === "중";
+  const [draft, setDraft] = useState<SchoolObservation>(() =>
+    ensureEditable(stored ?? emptyObservation(school.name, school.level)),
   );
-  const [saved, setSaved] = useState<"idle" | "saved">("idle");
+  const [saved, setSaved] = useState<"idle" | "saved" | "failed">("idle");
   const timer = useRef<number>();
 
-  // 자동 저장 — 입력이 멈추면 저장한다
+  /**
+   * 사용자가 실제로 고친 뒤에만 저장한다.
+   * 가드가 없으면 드롭다운에서 학교를 고르기만 해도 빈 관측이 저장되어,
+   * 관측한 적 없는 학교에 "옳은영어 관측: 전 과목 보통"이 인쇄된다.
+   */
+  const dirty = useRef(false);
+  const latest = useRef(draft);
+  latest.current = draft;
+
+  const flush = () => {
+    if (!dirty.current) return;
+    saveObservation(school.code, pruneObservation(latest.current));
+    dirty.current = false;
+  };
+
   useEffect(() => {
+    if (!dirty.current) return;
     window.clearTimeout(timer.current);
     timer.current = window.setTimeout(() => {
-      saveObservation(school.code, pruneObservation(draft));
-      setSaved("saved");
-      window.setTimeout(() => setSaved("idle"), 1600);
+      saveObservation(school.code, pruneObservation(latest.current));
+      dirty.current = false;
+      setSaved(didLastWriteFail() ? "failed" : "saved");
+      if (!didLastWriteFail()) window.setTimeout(() => setSaved("idle"), 1600);
     }, 700);
     return () => window.clearTimeout(timer.current);
   }, [draft, school.code]);
 
-  const set = (patch: Partial<SchoolObservation>) =>
+  // 학교를 바꾸거나 화면을 떠날 때 디바운스 중인 입력을 흘려보낸다
+  useEffect(() => {
+    const onHide = () => flush();
+    window.addEventListener("pagehide", onHide);
+    return () => {
+      window.removeEventListener("pagehide", onHide);
+      window.clearTimeout(timer.current);
+      flush();
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [school.code]);
+
+  const set = (patch: Partial<SchoolObservation>) => {
+    dirty.current = true;
     setDraft((d) => ({ ...d, ...patch }));
+  };
 
   const pct = Math.round(completeness(draft) * 100);
 
@@ -166,13 +204,25 @@ function EditorForm({ school }: { school: SchoolFact }) {
             {saved === "saved" && (
               <span style={{ color: "var(--blue)", marginLeft: 8 }}>저장됨</span>
             )}
+            {saved === "failed" && (
+              <span style={{ color: "var(--brick)", marginLeft: 8, fontWeight: 700 }}>
+                저장 실패 — 브라우저 저장공간을 확인하세요
+              </span>
+            )}
           </span>
           {isEdited(school.code) && (
             <button
               onClick={() => {
                 if (!confirm(`${school.name}의 입력 내용을 지웁니다. 계속할까요?`)) return;
+                window.clearTimeout(timer.current);
+                dirty.current = false;
                 resetObservation(school.code);
-                setDraft(getObservation(school.code) ?? emptyObservation(school.name));
+                setDraft(
+                  ensureEditable(
+                    getObservation(school.code) ??
+                      emptyObservation(school.name, school.level),
+                  ),
+                );
               }}
               style={{
                 border: "1px solid var(--hair)",
@@ -228,7 +278,7 @@ function EditorForm({ school }: { school: SchoolFact }) {
           value={draft.character}
           onChange={(v) => set({ character: v })}
           rows={4}
-          placeholder="이 학교를 한 문단으로 설명한다면? (설명회 첫 장에 그대로 실립니다)"
+          placeholder={isMiddle ? "이 중학교를 한 문단으로 설명한다면? (분위기, 진학 성향, 영어 수업 특징)" : "이 학교를 한 문단으로 설명한다면? (설명회 첫 장에 그대로 실립니다)"}
         />
       </Block>
 
@@ -269,7 +319,7 @@ function EditorForm({ school }: { school: SchoolFact }) {
           value={draft.difficulty.comment ?? ""}
           onChange={(v) => set({ difficulty: { ...draft.difficulty, comment: v } })}
           rows={3}
-          placeholder="난이도에 대한 설명 (성취도 분포에서 읽어낸 것)"
+          placeholder={isMiddle ? "성취도 분포에서 읽어낸 것 (중학교는 등급이 없습니다)" : "난이도에 대한 설명 (성취도 분포에서 읽어낸 것)"}
         />
       </Block>
 
@@ -284,7 +334,7 @@ function EditorForm({ school }: { school: SchoolFact }) {
               <Input
                 value={item.term}
                 onChange={(v) => update({ ...item, term: v })}
-                placeholder="1학기 중간"
+                placeholder={isMiddle ? "3학년 1학기 중간" : "1학기 중간"}
               />
               <Input
                 value={item.scope}
@@ -296,6 +346,57 @@ function EditorForm({ school }: { school: SchoolFact }) {
         />
       </Block>
 
+      {isMiddle ? (
+        <Block
+          en="Achievement & format"
+          ko="성취도와 시험 운영"
+          hint="중학교는 석차등급이 없습니다. 성취도 A 비율과 시험 운영 방식이 그 자리를 대신합니다."
+          tone="obs"
+        >
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit,minmax(170px,1fr))",
+              gap: 12,
+            }}
+          >
+            <Field label="영어 성취도 A 비율">
+              <Input
+                value={draft.middle?.aRatio ?? ""}
+                onChange={(v) =>
+                  set({ middle: { ...middleOf(draft), aRatio: v } })
+                }
+                placeholder="예: 32%"
+              />
+            </Field>
+            <Field label="지필 : 수행">
+              <Input
+                value={draft.middle?.ratio ?? ""}
+                onChange={(v) => set({ middle: { ...middleOf(draft), ratio: v } })}
+                placeholder="예: 60 : 40"
+              />
+            </Field>
+            <Field label="지필평가 없는 학기">
+              <Input
+                value={draft.middle?.freeSemester ?? ""}
+                onChange={(v) =>
+                  set({ middle: { ...middleOf(draft), freeSemester: v } })
+                }
+                placeholder="예: 1학년 전체 (자유학년)"
+              />
+            </Field>
+            <Field label="교과서">
+              <Input
+                value={draft.middle?.textbook ?? ""}
+                onChange={(v) =>
+                  set({ middle: { ...middleOf(draft), textbook: v } })
+                }
+                placeholder="예: 동아 윤정미"
+              />
+            </Field>
+          </div>
+        </Block>
+      ) : (
       <Block
         en="Grade cut-off"
         ko="영어 등급 커트라인"
@@ -326,6 +427,7 @@ function EditorForm({ school }: { school: SchoolFact }) {
           </Field>
         </div>
       </Block>
+      )}
 
       <Block en="Exam characteristics" ko="시험의 특징" tone="obs">
         <Repeatable
@@ -410,7 +512,7 @@ function EditorForm({ school }: { school: SchoolFact }) {
           addLabel="유형 더 넣기"
           numbered
           render={(item, update) => (
-            <Input value={item} onChange={update} placeholder="어떤 학생에게 맞는 학교인가" />
+            <Input value={item} onChange={update} placeholder={isMiddle ? "어떤 학생에게 맞는 중학교인가" : "어떤 학생에게 맞는 학교인가"} />
           )}
         />
       </Block>
