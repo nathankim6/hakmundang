@@ -6,13 +6,25 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Index from "./pages/Index";
 import Admin from "./pages/Admin";
+import Schools from "./pages/Schools";
 import { AccessCodeCheck } from "./components/AccessCodeCheck";
 
 const SESSION_TIMEOUT = 2 * 60 * 60 * 1000; // 2 hours in milliseconds
 
 const App = () => {
   const [queryClient] = useState(() => new QueryClient());
-  const [hasAccess, setHasAccess] = useState(false);
+  // 세션을 동기적으로 읽는다. false로 시작하면 첫 렌더에서 /login으로 튕겨
+  // 주소로 바로 들어온 경로(/schools 등)를 잃어버린다.
+  const [hasAccess, setHasAccess] = useState(() => {
+    try {
+      const lastLoginTime = localStorage.getItem("lastLoginTime");
+      const hasStoredAccess = localStorage.getItem("hasAccess");
+      if (!lastLoginTime || !hasStoredAccess) return false;
+      return Date.now() - parseInt(lastLoginTime) < SESSION_TIMEOUT;
+    } catch {
+      return false;
+    }
+  });
 
   useEffect(() => {
     // Check session status on window focus
@@ -68,6 +80,10 @@ const App = () => {
                   <AccessCodeCheck onAccessGranted={() => setHasAccess(true)} />
                 )
               }
+            />
+            <Route
+              path="/schools"
+              element={hasAccess ? <Schools /> : <Navigate to="/login" />}
             />
             <Route path="/admin" element={<Admin />} />
           </Routes>

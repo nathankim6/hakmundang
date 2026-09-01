@@ -1,0 +1,141 @@
+/**
+ * 옳은영어 v2 에디토리얼 디자인 토큰
+ *
+ * 원칙
+ *  - 옐로우는 점·숫자 액센트로만. 옐로우 면·색 띠 금지.
+ *  - 박스 대신 헤어라인. 표는 세로선 없음.
+ *  - 영문 아이브로우 + 넓은 자간.
+ */
+
+.orun {
+  --ink: #1c1c1c;
+  --body: #3a3a3a;
+  --muted: #8a8a8a;
+  --hair: #e4e2dd;
+  --paper: #f7f6f2;
+  --ground: #ffffff;
+  --yellow: #d9b300;
+  --yellow-hi: #ffd400;
+  --blue: #1a7fbf;
+  --blue-soft: #eaf4fa;
+  --brick: #a8432f;
+  --brick-soft: #fbefec;
+  --shade: #f1efe9;
+
+  color: var(--body);
+  background: var(--ground);
+  font-family: "Noto Sans KR", system-ui, -apple-system, "Malgun Gothic", sans-serif;
+  line-height: 1.7;
+}
+
+/* ── 아이브로우 ─────────────────────────── */
+.orun-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 10.5px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
+}
+.orun-eyebrow::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background: var(--yellow-hi);
+  flex: none;
+}
+
+/* ── 헤어라인 ───────────────────────────── */
+.orun-hair {
+  border: 0;
+  border-top: 1px solid var(--hair);
+}
+.orun-rule {
+  border: 0;
+  border-top: 1.5px solid var(--ink);
+}
+
+/* ── 표 ─────────────────────────────────── */
+.orun-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 13px;
+}
+.orun-table th {
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  font-weight: 500;
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: left;
+  padding: 0 14px 7px 0;
+  border-bottom: 1.5px solid var(--ink);
+  white-space: nowrap;
+}
+.orun-table td {
+  padding: 9px 14px 9px 0;
+  border-bottom: 1px solid var(--hair);
+  vertical-align: top;
+}
+.orun-table .num {
+  text-align: right;
+  padding-right: 18px;
+  font-variant-numeric: tabular-nums;
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+.orun-table th.num {
+  text-align: right;
+  padding-right: 18px;
+}
+
+/* ── 난이도 칩 ──────────────────────────── */
+.orun-diff {
+  display: inline-block;
+  min-width: 40px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 8px;
+  letter-spacing: 0.02em;
+}
+.orun-diff[data-level="기초"] {
+  color: var(--muted);
+  background: var(--shade);
+}
+.orun-diff[data-level="보통"] {
+  color: var(--body);
+  background: var(--shade);
+}
+.orun-diff[data-level="상"] {
+  color: var(--blue);
+  background: var(--blue-soft);
+}
+.orun-diff[data-level="최상"] {
+  color: var(--brick);
+  background: var(--brick-soft);
+}
+
+/* ── 숫자 강조 ──────────────────────────── */
+.orun-stat {
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+/* ── 인쇄 ───────────────────────────────── */
+@media print {
+  .orun-no-print {
+    display: none !important;
+  }
+  .orun-page {
+    break-after: page;
+  }
+  .orun {
+    --ground: #ffffff;
+  }
+}
