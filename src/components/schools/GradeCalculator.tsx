@@ -24,17 +24,17 @@ export function GradeCalculator({ defaultCommon }: { defaultCommon?: number }) {
         }}
       >
         <Pane
-          eyebrow="Common subject"
+          eyebrow="Common · 다 같이 듣는 과목"
           title="공통과목"
-          hint="1학년 공통과목은 학년 전체가 수강합니다. 분모는 학년 정원입니다."
+          hint="1학년 공통과목은 학년 전체가 듣습니다. 분모가 학년 정원이에요."
           placeholder="학년 정원"
           value={common}
           onChange={setCommon}
         />
         <Pane
-          eyebrow="Elective subject"
+          eyebrow="Elective · 골라 듣는 과목"
           title="선택과목"
-          hint="2·3학년 선택과목은 그 과목을 고른 학생만 경쟁합니다. 분모는 수강자 수입니다."
+          hint="2·3학년 선택과목은 그 과목을 고른 학생끼리만 겨룹니다. 분모가 수강자 수예요."
           placeholder="예상 수강자 수"
           value={elective}
           onChange={setElective}
@@ -44,6 +44,7 @@ export function GradeCalculator({ defaultCommon }: { defaultCommon?: number }) {
 
       <p style={{ fontSize: 12.5, color: "var(--muted)", marginTop: 14 }}>
         2025학년도 고1부터 5등급제입니다. 1등급 10% · 2등급 누적 34% · 3등급 66% · 4등급 90%.
+        상위 10% 이내여야 하므로 소수점은 버립니다.
       </p>
     </div>
   );

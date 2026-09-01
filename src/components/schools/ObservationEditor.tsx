@@ -40,7 +40,7 @@ export function ObservationEditor() {
   return (
     <div className="orun" style={{ background: "transparent" }}>
       <div className="orun-eyebrow" style={{ marginBottom: 12 }}>
-        Observation · 옳은영어가 직접 본 것
+        What we saw · 공시에 없는 것
       </div>
       <h2
         style={{
@@ -51,11 +51,11 @@ export function ObservationEditor() {
           letterSpacing: "-.015em",
         }}
       >
-        학교 관측 입력
+        우리가 본 것을 적어 둡니다
       </h2>
       <p style={{ color: "var(--muted)", fontSize: 15, maxWidth: "64ch", margin: "0 0 24px" }}>
-        공시자료에 없는 내용입니다. 한 번 넣어두면 내년 설명회에서 그대로 다시 씁니다. 학교가
-        쌓일수록 준비 시간이 줄어듭니다.
+        공시 자료에 없는 내용입니다. 한 번 넣어두면 내년 설명회에서 그대로 다시 씁니다. 학교가
+        쌓일수록 준비가 짧아집니다.
       </p>
 
       <SchoolSelect
@@ -69,7 +69,7 @@ export function ObservationEditor() {
         <EditorForm key={school.code} school={school} />
       ) : (
         <p style={{ color: "var(--muted)", fontSize: 14, padding: "34px 0" }}>
-          입력할 학교를 위에서 골라 주세요.
+          적어 둘 학교를 위에서 골라 주세요.
         </p>
       )}
     </div>
@@ -117,8 +117,7 @@ function SchoolSelect({
         })}
       </select>
       <p style={{ fontSize: 12.5, color: "var(--muted)", marginTop: 8 }}>
-        전체 {schools.length}개교 중 직접 입력 <strong style={{ color: "var(--ink)" }}>{filled}개교</strong>{" "}
-        입력됨
+        전체 {schools.length}곳 중 직접 적은 곳 <strong style={{ color: "var(--ink)" }}>{filled}곳</strong>
       </p>
     </div>
   );
@@ -200,20 +199,20 @@ function EditorForm({ school }: { school: SchoolFact }) {
         </h3>
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
           <span style={{ fontSize: 12.5, color: "var(--muted)" }}>
-            {pct}% 입력
+            {pct}% 채움
             {saved === "saved" && (
               <span style={{ color: "var(--blue)", marginLeft: 8 }}>저장됨</span>
             )}
             {saved === "failed" && (
               <span style={{ color: "var(--brick)", marginLeft: 8, fontWeight: 700 }}>
-                저장 실패 — 브라우저 저장공간을 확인하세요
+                저장 실패 — 브라우저 저장공간을 확인해 주세요
               </span>
             )}
           </span>
           {isEdited(school.code) && (
             <button
               onClick={() => {
-                if (!confirm(`${school.name}의 입력 내용을 지웁니다. 계속할까요?`)) return;
+                if (!confirm(`${school.name}에 적어 둔 걸 지웁니다. 계속할까요?`)) return;
                 window.clearTimeout(timer.current);
                 dirty.current = false;
                 resetObservation(school.code);
@@ -233,7 +232,7 @@ function EditorForm({ school }: { school: SchoolFact }) {
                 cursor: "pointer",
               }}
             >
-              입력 지우기
+              기록 지우기
             </button>
           )}
         </div>
@@ -252,8 +251,8 @@ function EditorForm({ school }: { school: SchoolFact }) {
       {/* 공시층 — 읽기 전용 */}
       <Block
         en="From disclosure"
-        ko="공시자료"
-        hint="학교알리미에서 자동으로 채워집니다. 수정할 수 없습니다."
+        ko="공시 자료"
+        hint="학교알리미에서 알아서 채워집니다. 손댈 수 없어요."
         tone="fact"
       >
         <div
@@ -273,7 +272,7 @@ function EditorForm({ school }: { school: SchoolFact }) {
         </div>
       </Block>
 
-      <Block en="School character" ko="학교 특징" tone="obs">
+      <Block en="The school" ko="이런 학교입니다" tone="obs">
         <Textarea
           value={draft.character}
           onChange={(v) => set({ character: v })}
@@ -282,7 +281,7 @@ function EditorForm({ school }: { school: SchoolFact }) {
         />
       </Block>
 
-      <Block en="Subject difficulty" ko="과목별 난이도" tone="obs">
+      <Block en="What's hard" ko="어느 과목이 센가" tone="obs">
         <div style={{ display: "flex", flexWrap: "wrap", gap: "14px 28px", marginBottom: 14 }}>
           {SUBJECTS.map((s) => (
             <div key={s} style={{ display: "flex", alignItems: "center", gap: 9 }}>
@@ -323,12 +322,12 @@ function EditorForm({ school }: { school: SchoolFact }) {
         />
       </Block>
 
-      <Block en="English exam scope" ko="영어 시험범위" tone="obs">
+      <Block en="What's on the test" ko="영어 시험, 어디서 나오나" tone="obs">
         <Repeatable
           items={draft.examScope}
           onChange={(v) => set({ examScope: v })}
           make={(): { term: string; scope: string } => ({ term: "", scope: "" })}
-          addLabel="시험 한 회 더 넣기"
+          addLabel="시험 하나 더"
           render={(item, update) => (
             <div style={{ display: "grid", gridTemplateColumns: "132px 1fr", gap: 10 }}>
               <Input
@@ -348,9 +347,9 @@ function EditorForm({ school }: { school: SchoolFact }) {
 
       {isMiddle ? (
         <Block
-          en="Achievement & format"
-          ko="성취도와 시험 운영"
-          hint="중학교는 석차등급이 없습니다. 성취도 A 비율과 시험 운영 방식이 그 자리를 대신합니다."
+          en="On the report"
+          ko="성적표에 뭐가 남나"
+          hint="중학교는 석차등급이 없습니다. 성적표엔 성취도 A~E만 남아요."
           tone="obs"
         >
           <div
@@ -398,9 +397,9 @@ function EditorForm({ school }: { school: SchoolFact }) {
         </Block>
       ) : (
       <Block
-        en="Grade cut-off"
-        ko="영어 등급 커트라인"
-        hint="근거를 반드시 함께 적습니다. 추정치를 학교 공식 발표처럼 보이게 하면 안 됩니다."
+        en="The cut line"
+        ko="몇 점부터 1등급인가"
+        hint="근거를 꼭 같이 적습니다. 추정치가 학교 발표처럼 보이면 안 됩니다."
         tone="obs"
       >
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(150px,1fr))", gap: 12 }}>
@@ -429,12 +428,12 @@ function EditorForm({ school }: { school: SchoolFact }) {
       </Block>
       )}
 
-      <Block en="Exam characteristics" ko="시험의 특징" tone="obs">
+      <Block en="How they test" ko="이 시험의 성격" tone="obs">
         <Repeatable
           items={draft.features}
           onChange={(v) => set({ features: v })}
           make={() => ""}
-          addLabel="특징 한 줄 더 넣기"
+          addLabel="한 줄 더"
           numbered
           render={(item, update) => (
             <Textarea
@@ -448,29 +447,29 @@ function EditorForm({ school }: { school: SchoolFact }) {
       </Block>
 
       <Block
-        en="Signature questions"
-        ko="시그니처 문항"
-        hint="문항 유형을 연결하면 설명회에서 실제 문항을 즉석에서 생성할 수 있습니다."
+        en="Signature"
+        ko="이 학교만 내는 문제"
+        hint="문항 유형을 걸어두면 설명회에서 그 자리에서 문제를 뽑을 수 있습니다."
         tone="obs"
       >
         <Repeatable
           items={draft.signatures}
           onChange={(v) => set({ signatures: v })}
           make={(): SignatureQuestion => ({ title: "", note: "" })}
-          addLabel="시그니처 문항 더 넣기"
+          addLabel="문항 하나 더"
           numbered
           render={(item, update) => (
             <div style={{ display: "grid", gap: 8 }}>
               <Input
                 value={item.title}
                 onChange={(v) => update({ ...item, title: v })}
-                placeholder="문항 발문 또는 유형 이름"
+                placeholder="문제 발문이나 유형 이름"
               />
               <Textarea
                 value={item.note}
                 onChange={(v) => update({ ...item, note: v })}
                 rows={2}
-                placeholder="왜 이 문항이 등급을 가르는지"
+                placeholder="왜 이 문제가 등급을 가르는지"
               />
               <select
                 value={item.generatorTypeId ?? ""}
@@ -487,7 +486,7 @@ function EditorForm({ school }: { school: SchoolFact }) {
                   maxWidth: 340,
                 }}
               >
-                <option value="">문항 생성기 연결 안 함</option>
+                <option value="">문항 유형 안 걸기</option>
                 {schoolTypes.map((t) => (
                   <option key={t.id} value={t.id}>
                     {t.name}
@@ -500,16 +499,16 @@ function EditorForm({ school }: { school: SchoolFact }) {
       </Block>
 
       <Block
-        en="Who fits here"
-        ko="맞는 학생 유형"
-        hint="이 항목은 사실이 아니라 옳은영어의 견해로 표기됩니다."
+        en="Who fits"
+        ko="이런 학생이 잘 맞습니다"
+        hint="이건 사실이 아니라 우리 생각으로 표기됩니다."
         tone="view"
       >
         <Repeatable
           items={draft.fit}
           onChange={(v) => set({ fit: v })}
           make={() => ""}
-          addLabel="유형 더 넣기"
+          addLabel="하나 더"
           numbered
           render={(item, update) => (
             <Input value={item} onChange={update} placeholder={isMiddle ? "어떤 학생에게 맞는 중학교인가" : "어떤 학생에게 맞는 학교인가"} />
@@ -537,10 +536,10 @@ function Block({
 }) {
   const tag =
     tone === "fact"
-      ? { text: "공시자료 · 읽기 전용", color: "var(--blue)" }
+      ? { text: "공시 · 못 고침", color: "var(--blue)" }
       : tone === "obs"
-        ? { text: "옳은영어 관측", color: "var(--yellow)" }
-        : { text: "옳은영어 견해", color: "var(--muted)" };
+        ? { text: "우리가 본 것", color: "var(--yellow)" }
+        : { text: "우리 생각", color: "var(--muted)" };
   return (
     <section style={{ marginBottom: 30 }}>
       <div

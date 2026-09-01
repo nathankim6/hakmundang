@@ -59,16 +59,16 @@ export function smallClassWarning(enrolled: number): string | null {
   if (!enrolled || enrolled <= 0) return null;
   const seats = seatsForGrade1(enrolled);
   if (seats === 0) {
-    return `수강자가 ${enrolled}명이면 상위 10%에 드는 자리가 없습니다. 소인수 과목은 석차등급이 산출되지 않을 수 있습니다.`;
+    return `수강자 ${enrolled}명이면 상위 10%에 드는 자리가 없습니다. 소인수 과목은 등급이 안 나올 수 있어요.`;
   }
   if (seats === 1) {
-    return `수강자 ${enrolled}명이면 1등급은 단 1명입니다.`;
+    return `수강자 ${enrolled}명이면 1등급은 딱 1명입니다.`;
   }
   if (enrolled % 10 === 9) {
-    return `수강자 ${enrolled}명은 경계입니다. 한 명만 더 들어오면 1등급 자리가 ${seats + 1}명으로 늘어납니다.`;
+    return `수강자 ${enrolled}명은 경계예요. 한 명만 더 들어오면 ${seats + 1}자리가 됩니다.`;
   }
   if (enrolled % 10 === 0) {
-    return `수강자 ${enrolled}명은 경계입니다. 한 명만 빠져도 1등급 자리가 ${seats - 1}명으로 줄어듭니다.`;
+    return `수강자 ${enrolled}명은 경계예요. 한 명만 빠져도 ${seats - 1}자리가 됩니다.`;
   }
   return null;
 }

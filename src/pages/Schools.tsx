@@ -70,7 +70,7 @@ const Schools = () => {
         {tab === "calc" && (
           <section style={{ paddingTop: 8 }}>
             <div className="orun-eyebrow" style={{ marginBottom: 12 }}>
-              Grade seats · 라이브 시연용
+              How many seats · 라이브로 보여주는 화면
             </div>
             <h2
               style={{
@@ -81,11 +81,11 @@ const Schools = () => {
                 letterSpacing: "-.015em",
               }}
             >
-              1등급은 몇 자리입니까
+              1등급, 몇 자리나 있을까
             </h2>
             <p style={{ color: "var(--muted)", fontSize: 15, maxWidth: "62ch", margin: "0 0 26px" }}>
-              설명회에서 학부모님 앞에 직접 숫자를 넣어 보여주는 화면입니다. 공통과목과 선택과목의
-              분모가 다르다는 것을 눈으로 보여주는 것이 목적입니다.
+              설명회 중에 학부모님 앞에서 직접 숫자를 넣어 보여주는 화면입니다. 공통과목과 선택과목의
+              분모가 다르다는 걸 눈으로 보여주는 게 목적입니다.
             </p>
             <GradeCalculator />
           </section>
@@ -105,10 +105,10 @@ function Header({
   disabled: boolean;
 }) {
   const tabs: { id: Tab; label: string; needsSelection?: boolean }[] = [
-    { id: "pick", label: "학교 고르기" },
-    { id: "report", label: "분석지", needsSelection: true },
-    { id: "calc", label: "1등급 계산기" },
-    { id: "edit", label: "관측 입력" },
+    { id: "pick", label: "학교 담기" },
+    { id: "report", label: "뜯어보기", needsSelection: true },
+    { id: "calc", label: "1등급 자리" },
+    { id: "edit", label: "우리가 본 것" },
   ];
 
   return (
@@ -159,8 +159,8 @@ function Header({
         고교 선택이 입시의 시작입니다
       </h1>
       <p style={{ color: "var(--muted)", fontSize: 15, maxWidth: "60ch", margin: "0 0 26px" }}>
-        분석할 학교를 고르면 설명회용 분석지가 만들어집니다. 공시자료는 자동으로 채워지고, 옳은영어가
-        직접 본 내용이 그 위에 얹힙니다.
+        담은 학교로 분석지가 만들어집니다. 공시 자료는 알아서 채워지고, 우리가 직접 본 것이 그 위에
+        얹힙니다.
       </p>
 
       <nav
@@ -203,7 +203,7 @@ function Empty({ onBack }: { onBack: () => void }) {
   return (
     <div style={{ padding: "60px 0", textAlign: "center" }}>
       <p style={{ color: "var(--muted)", fontSize: 15, marginBottom: 18 }}>
-        아직 고른 학교가 없습니다.
+        아직 담은 학교가 없습니다.
       </p>
       <button
         onClick={onBack}
@@ -217,7 +217,7 @@ function Empty({ onBack }: { onBack: () => void }) {
           cursor: "pointer",
         }}
       >
-        학교 고르러 가기
+        학교 담으러 가기
       </button>
     </div>
   );

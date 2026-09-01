@@ -21,7 +21,7 @@ export function BackupPanel() {
     const text = await file.text();
     const result = importObservations(text);
     if (result.status === "ok") {
-      setMsg({ tone: "ok", text: `${result.count}개교를 불러왔습니다.` });
+      setMsg({ tone: "ok", text: `${result.count}곳을 불러왔습니다.` });
     } else {
       setMsg({ tone: "err", text: result.reason });
     }
@@ -47,13 +47,13 @@ export function BackupPanel() {
           marginBottom: 8,
         }}
       >
-        Backup · 이 브라우저에만 저장됩니다
+        Backup · 이 브라우저에만 남습니다
       </div>
       <p style={{ margin: "0 0 14px", fontSize: 13.5, maxWidth: "62ch" }}>
-        직접 입력하신 <strong style={{ color: "var(--ink)" }}>{count}개교</strong>가 이 브라우저에
-        저장되어 있습니다. 다른 컴퓨터에서 쓰시거나 백업하시려면 파일로 내보내 주세요. 브라우저
-        데이터를 지우면 함께 사라집니다. 프로그램에 기본으로 들어 있는 학교는 내보내기에 포함되지
-        않습니다.
+        직접 적으신 <strong style={{ color: "var(--ink)" }}>{count}곳</strong>이 이 브라우저에
+        남아 있습니다. 다른 컴퓨터에서 쓰시거나 백업하시려면 파일로 내보내 주세요. 브라우저
+        데이터를 지우면 같이 사라집니다. 프로그램에 기본으로 들어 있는 학교는 내보내기에 안
+        들어갑니다.
       </p>
 
       <div style={{ display: "flex", gap: 9, flexWrap: "wrap", alignItems: "center" }}>

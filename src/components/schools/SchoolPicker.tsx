@@ -50,7 +50,7 @@ export function SchoolPicker({ selected, onChange, onBuild }: Props) {
       {/* 카테고리 */}
       <div style={{ marginBottom: 30 }}>
         <div className="orun-eyebrow" style={{ marginBottom: 14 }}>
-          Category · 분석 범위
+          Pick your schools · 오늘 다룰 학교
         </div>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
           {groups.map(({ group, count }) => {
@@ -104,7 +104,7 @@ export function SchoolPicker({ selected, onChange, onBuild }: Props) {
         <input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="학교명 검색"
+          placeholder="학교 찾기"
           style={{
             flex: "1 1 200px",
             padding: "8px 12px",
@@ -130,7 +130,7 @@ export function SchoolPicker({ selected, onChange, onBuild }: Props) {
             checked={observedOnly}
             onChange={(e) => setObservedOnly(e.target.checked)}
           />
-          분석 자료 있는 학교만
+          우리가 본 학교만
         </label>
         <button
           onClick={toggleAllVisible}
@@ -143,7 +143,7 @@ export function SchoolPicker({ selected, onChange, onBuild }: Props) {
             cursor: "pointer",
           }}
         >
-          {allVisibleSelected ? "전체 해제" : "보이는 학교 전체 선택"}
+          {allVisibleSelected ? "담은 것 다 빼기" : "보이는 학교 다 담기"}
         </button>
       </div>
 
@@ -151,7 +151,7 @@ export function SchoolPicker({ selected, onChange, onBuild }: Props) {
       <div style={{ margin: "4px 0 28px" }}>
         {visible.length === 0 && (
           <p style={{ color: "var(--muted)", fontSize: 14, padding: "22px 0" }}>
-            선택한 범위에 해당하는 학교가 없습니다. 위에서 카테고리를 하나 이상 골라 주세요.
+            이 범위엔 학교가 없습니다. 위에서 범위를 하나 더 켜 보세요.
           </p>
         )}
         {visible.map((s) => (
@@ -180,10 +180,10 @@ export function SchoolPicker({ selected, onChange, onBuild }: Props) {
         }}
       >
         <div style={{ fontSize: 13.5 }}>
-          <strong style={{ color: "var(--ink)" }}>{selected.length}개교</strong> 선택
+          <strong style={{ color: "var(--ink)" }}>오늘 다룰 학교 {selected.length}곳</strong>
           {selected.length > 0 && (
             <span style={{ color: "var(--muted)" }}>
-              {" · "}상세 분석 {observedSelected}개교 · 요약만 {selected.length - observedSelected}개교
+              {" · "}자세히 {observedSelected}곳 · 요약 {selected.length - observedSelected}곳
             </span>
           )}
         </div>
@@ -201,7 +201,7 @@ export function SchoolPicker({ selected, onChange, onBuild }: Props) {
             letterSpacing: "-.01em",
           }}
         >
-          분석지 만들기 →
+          이대로 만들기 →
         </button>
       </div>
     </div>
@@ -248,7 +248,7 @@ function SchoolRow({
                 padding: "1px 6px",
               }}
             >
-              옳은영어 분석
+              우리 기록
             </span>
           )}
         </div>

@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import type { SchoolRecord } from "@/types/school";
 import { RESULT_BASIS_LABEL } from "@/data/results";
 import {
@@ -28,7 +28,7 @@ export function AnalysisReport({ records, onBack }: Props) {
 
   return (
     <div className="orun" style={{ background: "transparent" }}>
-      <Toolbar count={records.length} onBack={onBack} />
+      <Toolbar records={records} onBack={onBack} />
 
       <CoverPage records={records} highs={highs.length} mids={mids.length} />
       <CompareSection records={records} no={next()} />
@@ -51,7 +51,22 @@ export function AnalysisReport({ records, onBack }: Props) {
 
 /* ───────────────────────────────────────── */
 
-function Toolbar({ count, onBack }: { count: number; onBack: () => void }) {
+function Toolbar({ records, onBack }: { records: SchoolRecord[]; onBack: () => void }) {
+  const [state, setState] = useState<"idle" | "working" | "failed">("idle");
+
+  // pptxgenjs는 무거워서 첫 화면 번들에 넣지 않는다. 누를 때만 불러온다.
+  const makeDeck = async () => {
+    setState("working");
+    try {
+      const { buildDeck } = await import("@/lib/schools/deck");
+      await buildDeck(records, YEAR);
+      setState("idle");
+    } catch (e) {
+      console.error(e);
+      setState("failed");
+    }
+  };
+
   return (
     <div
       className="orun-no-print"
@@ -77,10 +92,28 @@ function Toolbar({ count, onBack }: { count: number; onBack: () => void }) {
           cursor: "pointer",
         }}
       >
-        ← 학교 다시 고르기
+        ← 학교 다시 담기
       </button>
       <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
-        <span style={{ fontSize: 13, color: "var(--muted)" }}>{count}개교 분석지</span>
+        <span style={{ fontSize: 13, color: "var(--muted)" }}>
+          {state === "failed" ? "PPT를 못 만들었어요. 다시 눌러 주세요." : `${records.length}곳 분석지`}
+        </span>
+        <button
+          onClick={makeDeck}
+          disabled={state === "working"}
+          style={{
+            padding: "9px 20px",
+            border: "1px solid var(--ink)",
+            background: "transparent",
+            color: "var(--ink)",
+            fontSize: 13.5,
+            fontWeight: 700,
+            cursor: state === "working" ? "wait" : "pointer",
+            opacity: state === "working" ? 0.55 : 1,
+          }}
+        >
+          {state === "working" ? "만드는 중…" : "PPT로 뽑기"}
+        </button>
         <button
           onClick={() => window.print()}
           style={{
@@ -93,7 +126,7 @@ function Toolbar({ count, onBack }: { count: number; onBack: () => void }) {
             cursor: "pointer",
           }}
         >
-          인쇄 · PDF 저장
+          인쇄 · PDF
         </button>
       </div>
     </div>
@@ -254,9 +287,9 @@ function CompareSection({ records, no }: { records: SchoolRecord[]; no: string }
     <section style={{ marginBottom: 60 }}>
       <SectionHead
         no={no}
-        en="At a glance"
-        ko="한눈에 비교"
-        lede="학부모님이 가장 먼저 묻는 것들입니다. 전부 공시자료 그대로이며, 저희가 가공하지 않았습니다."
+        en="Side by side"
+        ko="나란히 놓고 보기"
+        lede="학부모님이 제일 먼저 묻는 것들입니다. 전부 공시 자료 그대로이고, 저희가 손대지 않았습니다."
       />
 
       {byLevel.map(({ level, list }) => {
@@ -336,7 +369,7 @@ function CompareSection({ records, no }: { records: SchoolRecord[]; no: string }
         );
       })}
 
-      <Callout tone="paper" label="이 표를 읽는 법">
+      <Callout tone="paper" label="이 표 읽는 법">
         <p style={{ margin: 0 }}>
           <strong>1등급 자리</strong>는 1학년 인원의 상위 10%이며 소수점은 버립니다. 고등학교에만 있습니다. 중학교는 석차등급 없이 성취도
           A~E만 나옵니다. <strong>전출</strong>은 1학년 중 다른 학교로 옮긴 학생 비율입니다.
@@ -383,9 +416,9 @@ function SeatsSection({ records, no }: { records: SchoolRecord[]; no: string }) 
     <section style={{ marginBottom: 60 }}>
       <SectionHead
         no={no}
-        en="Grade seats"
-        ko="1등급은 몇 자리입니까"
-        lede="5등급제에서 1등급은 상위 10%입니다. 학교가 크면 자리도 많지만, 경쟁하는 학생도 많습니다."
+        en="How many seats"
+        ko="1등급, 몇 자리나 있을까"
+        lede="5등급제에서 1등급은 상위 10%입니다. 학교가 크면 자리도 많지만 겨루는 사람도 많습니다."
       />
 
       <div
@@ -427,7 +460,7 @@ function SeatsSection({ records, no }: { records: SchoolRecord[]; no: string }) 
         <Callout tone="blue" label="꼭 아셔야 할 것">
           <p style={{ margin: "0 0 10px" }}>
             <strong>이 숫자는 공통과목에서만 맞습니다.</strong> 석차등급은 학년 정원이 아니라{" "}
-            <strong>과목별 수강자 수</strong>를 기준으로 매겨집니다. 수강자가 30명이면 1등급은
+            <strong>그 과목을 고른 사람 수</strong>로 매겨집니다. 수강자가 30명이면 1등급은
             3명, 15명이면 1명입니다.
           </p>
           <p style={{ margin: 0 }}>
@@ -481,9 +514,9 @@ function NextSchoolSection({ records, no }: { records: SchoolRecord[]; no: strin
     <section style={{ marginBottom: 60 }}>
       <SectionHead
         no={no}
-        en="Where they go next"
-        ko="이 중학교는 어디로 보냈습니까"
-        lede="중학교 선택에서 가장 중요한 숫자입니다. 중학교 성적은 대입에 들어가지 않지만, 어느 고등학교로 가느냐는 3년을 바꿉니다."
+        en="Where they went"
+        ko="이 학교 선배들은 어디로 갔나"
+        lede="중학교 선택에서 제일 중요한 숫자입니다. 중학교 성적은 대입에 안 들어가지만, 어느 고등학교로 가느냐는 3년을 바꿉니다."
       />
 
       {withPaths.map(({ fact }) => {
@@ -568,7 +601,7 @@ function NextSchoolSection({ records, no }: { records: SchoolRecord[]; no: strin
 
             {special && (
               <div style={{ marginTop: 10, fontSize: 12.5, color: "var(--muted)" }}>
-                특목고 {special.total}명 안에 —{" "}
+                특목고 안을 열어보면 —{" "}
                 {special.items.map((it) => `${it.label} ${it.count}명`).join(" · ")}
               </div>
             )}
@@ -576,16 +609,15 @@ function NextSchoolSection({ records, no }: { records: SchoolRecord[]; no: strin
         );
       })}
 
-      <Callout tone="blue" label="이 숫자를 읽는 법">
+      <Callout tone="blue" label="이 숫자 읽는 법">
         <p style={{ margin: "0 0 10px" }}>
-          <strong>서울 중학교는 거주지 학교군 안에서 추첨 배정</strong>입니다. 그래서 이 표는
-          &ldquo;좋은 중학교&rdquo;를 고르는 순위표가 아니라, <strong>우리 동네 학생들이 실제로
-          어느 고등학교로 흘러가는지</strong>를 보여주는 지도입니다.
+          <strong>서울 중학교는 사는 곳 학교군 안에서 추첨</strong>입니다. 그래서 이건
+          &ldquo;좋은 중학교&rdquo; 순위표가 아니라, <strong>우리 동네 아이들이 실제로 어디로
+          흘러가는지</strong> 보여주는 지도입니다.
         </p>
         <p style={{ margin: 0 }}>
-          특목고·자율고 비율이 높다고 그 중학교가 더 좋은 것은 아닙니다. 학군, 사교육 밀도, 학교의
-          진학 지도 방향이 함께 작용합니다. 다만 <strong>외고·국제고를 생각한다면 중2부터
-          준비</strong>해야 하고, 그 준비는 영어에서 시작합니다.
+          특목고 비율이 높다고 그 중학교가 더 좋은 건 아닙니다. 다만 <strong>외고·국제고를
+          생각한다면 중2부터</strong>고, 그 출발은 영어입니다.
         </p>
       </Callout>
     </section>
@@ -600,8 +632,8 @@ function MiddleEnglishSection({ records, no }: { records: SchoolRecord[]; no: st
     <section style={{ marginBottom: 60 }}>
       <SectionHead
         no={no}
-        en="English at school"
-        ko="학교가 영어를 어떻게 가르치나"
+        en="English class"
+        ko="영어 수업, 이렇게 굴러갑니다"
         lede="중학교는 등급이 없어 성취도 A~E만 남습니다. 그래서 '몇 등급이냐'가 아니라 '어떻게 배우느냐'가 남는 정보입니다."
       />
 
@@ -652,17 +684,17 @@ function MiddleEnglishSection({ records, no }: { records: SchoolRecord[]; no: st
         </table>
       </div>
 
-      <Callout tone="paper" label="수준별 이동수업이 무엇입니까">
+      <Callout tone="paper" label="수준별 이동수업이 뭔가요">
         <p style={{ margin: 0 }}>
           영어·수학을 실력에 따라 반을 나눠 가르치는 방식입니다.{" "}
           {leveled.length > 0 ? (
             <>
-              고르신 학교 중 <strong>{leveled.map((r) => r.fact.name.replace(/중학교$/, "")).join(" · ")}</strong>
+              담으신 학교 중 <strong>{leveled.map((r) => r.fact.name.replace(/중학교$/, "")).join(" · ")}</strong>
               가 운영합니다. 상위반에 들어가려면 <strong>1학년 첫 시험</strong>이 중요합니다 —
-              한 번 갈린 반은 잘 바뀌지 않습니다.
+              한 번 갈린 반은 잘 안 바뀝니다.
             </>
           ) : (
-            "고르신 학교 중에는 운영하는 곳이 없습니다. 전체 학생이 같은 진도로 배웁니다."
+            "담으신 학교 중엔 운영하는 곳이 없습니다. 전체가 같은 진도로 배웁니다."
           )}
         </p>
       </Callout>
@@ -685,9 +717,9 @@ function ResultsSection({ records, no }: { records: SchoolRecord[]; no: string }
     <section style={{ marginBottom: 60 }}>
       <SectionHead
         no={no}
-        en="Our results"
-        ko="옳은영어가 만든 결과"
-        lede="2026년 1학기 기말고사 기준입니다. 아래 두 지표는 분모가 서로 다르므로 나누어 실었습니다. 서로 비교하는 숫자가 아닙니다."
+        en="We did this"
+        ko="우리가 만든 결과"
+        lede="2026년 1학기 기말고사 기준입니다. 아래 두 지표는 분모가 서로 달라 나눠 실었습니다. 서로 비교하는 숫자가 아닙니다."
       />
 
       {groups.map(({ basis, list }) => (
@@ -810,11 +842,11 @@ function SchoolDetail({ record }: { record: SchoolRecord }) {
         {g && <Stat label="남 · 여" value={`${g.male} : ${g.female}`} unit="" />}
       </div>
 
-      <FieldBlock en="School character" ko="학교 특징" source="obs">
+      <FieldBlock en="The school" ko="이런 학교입니다" source="obs">
         <p style={{ margin: 0 }}>{o.character}</p>
       </FieldBlock>
 
-      <FieldBlock en="Subject difficulty" ko="과목별 난이도" source="obs">
+      <FieldBlock en="What's hard" ko="어느 과목이 센가" source="obs">
         <div style={{ display: "flex", flexWrap: "wrap", gap: "10px 26px", marginBottom: 12 }}>
           {(["국어", "영어", "수학", "사회", "과학"] as const).map((s) => (
             <div key={s} style={{ display: "flex", alignItems: "center", gap: 8 }}>
@@ -830,7 +862,11 @@ function SchoolDetail({ record }: { record: SchoolRecord }) {
         )}
       </FieldBlock>
 
-      <FieldBlock en="English exam scope" ko="영어 시험범위" source="obs">
+      <FieldBlock
+        en="What's on the test"
+        ko={isHigh ? "영어 시험, 어디서 나오나" : "영어 시험, 어디서 나오나 · 중3 기준"}
+        source="obs"
+      >
         {o.examScope.map((e) => (
           <div
             key={e.term}
@@ -849,34 +885,62 @@ function SchoolDetail({ record }: { record: SchoolRecord }) {
         ))}
       </FieldBlock>
 
-      <FieldBlock en="Grade cut-off" ko="영어 등급 커트라인" source="obs">
-        <div style={{ display: "flex", gap: 40, flexWrap: "wrap", alignItems: "flex-end" }}>
-          {[
-            { g: 1, v: o.cutoff.grade1 },
-            { g: 2, v: o.cutoff.grade2 },
-          ].map(({ g: gr, v }) => (
-            <div key={gr}>
-              <div style={{ fontSize: 12, color: "var(--muted)", marginBottom: 4 }}>
-                {gr}등급 커트라인
-              </div>
-              <div style={{ display: "flex", alignItems: "baseline", gap: 4 }}>
-                <span
-                  className="orun-stat"
-                  style={{ fontSize: 27, fontWeight: 700, color: "var(--ink)" }}
-                >
-                  {v}
-                </span>
-                <span style={{ fontSize: 13, color: "var(--muted)" }}>점</span>
-              </div>
-            </div>
-          ))}
-        </div>
-        <p style={{ margin: "12px 0 0", fontSize: 12, color: "var(--muted)" }}>
-          {o.cutoff.basis} · 옳은영어 재원생 성적표 기반 추정치이며 학교 공식 발표가 아닙니다
-        </p>
-      </FieldBlock>
+      {!isHigh && o.middle && (
+        <FieldBlock en="On the report" ko="성적표에 뭐가 남나" source="obs">
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit,minmax(130px,1fr))",
+              gap: 1,
+              background: "var(--hair)",
+              border: "1px solid var(--hair)",
+            }}
+          >
+            <Stat label="영어 성취도 A" value={o.middle.aRatio || null} unit="" accent />
+            <Stat label="지필 : 수행" value={o.middle.ratio || null} unit="" />
+            <Stat label="교과서" value={o.middle.textbook || null} unit="" />
+          </div>
+          {o.middle.freeSemester && (
+            <p style={{ margin: "12px 0 0", fontSize: 13.5 }}>
+              <strong>지필평가 없는 학기</strong> — {o.middle.freeSemester}
+            </p>
+          )}
+          <p style={{ margin: "10px 0 0", fontSize: 12, color: "var(--muted)" }}>
+            우리 학생들 성적표로 잡은 값이고 학교가 발표한 숫자가 아닙니다
+          </p>
+        </FieldBlock>
+      )}
 
-      <FieldBlock en="Exam characteristics" ko="시험의 특징" source="obs">
+      {isHigh && (
+        <FieldBlock en="The cut line" ko="몇 점부터 1등급인가" source="obs">
+          <div style={{ display: "flex", gap: 40, flexWrap: "wrap", alignItems: "flex-end" }}>
+            {[
+              { g: 1, v: o.cutoff.grade1 },
+              { g: 2, v: o.cutoff.grade2 },
+            ].map(({ g: gr, v }) => (
+              <div key={gr}>
+                <div style={{ fontSize: 12, color: "var(--muted)", marginBottom: 4 }}>
+                  {gr}등급 커트라인
+                </div>
+                <div style={{ display: "flex", alignItems: "baseline", gap: 4 }}>
+                  <span
+                    className="orun-stat"
+                    style={{ fontSize: 27, fontWeight: 700, color: "var(--ink)" }}
+                  >
+                    {v}
+                  </span>
+                  <span style={{ fontSize: 13, color: "var(--muted)" }}>점</span>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p style={{ margin: "12px 0 0", fontSize: 12, color: "var(--muted)" }}>
+            {o.cutoff.basis} · 우리 학생들 성적표로 잡은 값이고 학교가 발표한 숫자가 아닙니다
+          </p>
+        </FieldBlock>
+      )}
+
+      <FieldBlock en="How they test" ko="이 시험의 성격" source="obs">
         {o.features.map((f, i) => (
           <div
             key={i}
@@ -904,7 +968,7 @@ function SchoolDetail({ record }: { record: SchoolRecord }) {
         ))}
       </FieldBlock>
 
-      <FieldBlock en="Signature questions" ko="이 학교의 시그니처 문항" source="obs">
+      <FieldBlock en="Signature" ko="이 학교만 내는 문제" source="obs">
         {o.signatures.map((s, i) => (
           <div
             key={i}
@@ -940,7 +1004,7 @@ function SchoolDetail({ record }: { record: SchoolRecord }) {
                     padding: "1px 6px",
                   }}
                 >
-                  문항 생성 가능
+                  바로 뽑기
                 </span>
               )}
             </div>
@@ -949,7 +1013,7 @@ function SchoolDetail({ record }: { record: SchoolRecord }) {
         ))}
       </FieldBlock>
 
-      <FieldBlock en="Who fits here" ko={`${fact.name.replace(/고등학교$/, "고")}에 맞는 학생`} source="view">
+      <FieldBlock en="Who fits" ko="이런 학생이 잘 맞습니다" source="view">
         {o.fit.map((f, i) => (
           <div
             key={i}
@@ -1021,10 +1085,10 @@ function FieldBlock({
 }) {
   const tag =
     source === "fact"
-      ? { text: "공시자료", color: "var(--blue)" }
+      ? { text: "공시 자료", color: "var(--blue)" }
       : source === "obs"
-        ? { text: "옳은영어 관측", color: "var(--yellow)" }
-        : { text: "옳은영어 견해", color: "var(--muted)" };
+        ? { text: "우리가 본 것", color: "var(--yellow)" }
+        : { text: "우리 생각", color: "var(--muted)" };
 
   return (
     <div style={{ marginBottom: 26 }}>
