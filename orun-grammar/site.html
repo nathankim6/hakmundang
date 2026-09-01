@@ -1540,6 +1540,134 @@ footer.site{background:#fff;border-top:1px solid var(--line);margin-top:0}
 .seltray .sh .c.z{background:#dfe1e8;color:var(--sub2);box-shadow:none}
 .selwrap{min-height:34px;align-content:flex-start}
 
+
+/* ═══ 좌 → 우 단계 탐색 ═══ */
+.mcols{display:grid;grid-template-columns:180px 210px 250px 1fr;gap:0;
+  border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;height:440px}
+@media (max-width:1100px){.mcols{grid-template-columns:1fr 1fr;height:auto}
+  .mcol{max-height:300px}}
+.mcol{display:flex;flex-direction:column;min-width:0;border-left:1px solid var(--line2)}
+.mcol:first-child{border-left:0;background:#fcfcfd}
+.mch{flex:none;display:flex;align-items:baseline;gap:7px;padding:10px 12px 9px;
+  border-bottom:1px solid var(--line2);background:#fafafb}
+.mch b{font-size:11.5px;font-weight:750;color:var(--ink)}
+.mch em{font-style:normal;font-family:var(--mono);font-size:8.5px;font-weight:700;
+  letter-spacing:.14em;color:var(--sub2)}
+.mch .mcb{margin-left:auto;font-family:var(--mono);font-size:10px;font-weight:700;color:var(--acc);
+  background:var(--accSoft);border-radius:999px;padding:2px 8px}
+.mcb-list{flex:1;overflow:auto;padding:6px;scroll-behavior:auto}
+.mcb-list::-webkit-scrollbar{width:9px}
+.mcb-list::-webkit-scrollbar-thumb{background:#dadce4;border-radius:9px;border:3px solid #fff}
+.csep{font-size:9.5px;font-weight:700;letter-spacing:.1em;color:var(--sub2);padding:9px 8px 4px}
+.cempty{padding:22px 14px;font-size:11.5px;color:var(--sub2);line-height:1.7;text-align:center}
+.ci{display:flex;align-items:center;gap:9px;width:100%;text-align:left;font-family:inherit;cursor:pointer;
+  padding:9px 9px;border:1px solid transparent;border-radius:9px;background:none;margin-bottom:1px;
+  transition:background-color .14s,color .14s,border-color .14s}
+.ci:hover{background:#f4f5f8}
+.ci.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.ci.on .cnum,.ci.on .cav{color:rgba(255,255,255,.55)}
+.ci.on .cl2 i{color:rgba(255,255,255,.55)}
+.ci.sel{background:var(--accSoft);border-color:#dcdcf6;color:#1e2140}
+.ci .cl1{flex:1;min-width:0;font-size:12.8px;font-weight:650;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ci .cl2{flex:1;min-width:0}
+.ci .cl2 b{display:block;font-size:12.8px;font-weight:650;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ci .cl2 i{display:block;font-style:normal;font-size:10.5px;color:var(--sub2);margin-top:1px;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ci .cnum{flex:none;font-family:var(--mono);font-size:10px;font-weight:700;color:var(--sub2)}
+.ci .cnt{flex:none;font-family:var(--mono);font-size:9.5px;font-weight:800;color:#fff;
+  background:var(--acc);border-radius:999px;padding:2px 7px}
+.ci.on .cnt{background:rgba(255,255,255,.24)}
+.ci .cav{flex:none;color:#c6c9d2;font-size:13px;line-height:1}
+.cchk{flex:none;width:18px;height:18px;border-radius:5.5px;border:1.6px solid #c8cbd4;background:#fff;
+  display:grid;place-items:center;transition:.16s}
+.cchk svg{width:10px;height:10px;fill:none;stroke:#fff;stroke-width:3.2;opacity:0}
+.cchk.on{background:var(--acc);border-color:var(--acc)}
+.cchk.on svg{opacity:1}
+.ci:hover .cchk{border-color:var(--acc)}
+.ci.on .cchk{border-color:rgba(255,255,255,.5)}
+.pickitem .cnum{color:var(--acc);font-weight:800}
+
+/* ═══ 메인화면 ═══ */
+.stage{position:relative;overflow:hidden;margin:0 -30px;padding:70px 30px 0;
+  border-bottom:1px solid var(--line);--mx:50%;--my:30%}
+.stage .aur{position:absolute;inset:-20% -10%;pointer-events:none;filter:blur(80px);opacity:.85}
+.stage .aur i{position:absolute;display:block;border-radius:50%;
+  animation:drift 26s cubic-bezier(.4,0,.2,1) infinite alternate}
+.stage .aur i:nth-child(1){width:520px;height:520px;left:4%;top:-14%;background:rgba(84,87,214,.20)}
+.stage .aur i:nth-child(2){width:440px;height:440px;right:6%;top:-6%;background:rgba(124,124,232,.18);animation-duration:31s}
+.stage .aur i:nth-child(3){width:480px;height:480px;left:44%;bottom:-24%;background:rgba(56,189,248,.14);animation-duration:37s}
+@keyframes drift{to{transform:translate3d(70px,46px,0) scale(1.16)}}
+.stage .spot{position:absolute;inset:0;pointer-events:none;transition:background .2s;
+  background:radial-gradient(420px 320px at var(--mx) var(--my),rgba(84,87,214,.10),transparent 70%)}
+@media (prefers-reduced-motion:reduce){.stage .aur i{animation:none}}
+.stin{position:relative;max-width:1000px;margin:0 auto;text-align:center}
+.slogo{width:46px;height:auto;display:block;margin:0 auto 18px;padding:8px;background:#fff;
+  border:1px solid var(--line);border-radius:14px;box-shadow:0 6px 18px rgba(13,15,20,.08);
+  animation:rise .7s var(--spring) both}
+.sbadge{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:9.5px;font-weight:700;
+  letter-spacing:.24em;color:var(--acc);background:rgba(84,87,214,.08);border:1px solid rgba(84,87,214,.2);
+  border-radius:999px;padding:6px 14px;margin-bottom:20px;animation:rise .7s .06s var(--spring) both}
+.sbadge i{width:5px;height:5px;border-radius:50%;background:var(--acc);
+  box-shadow:0 0 0 0 rgba(84,87,214,.5);animation:pulse 2.4s ease-out infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 8px rgba(84,87,214,0)}100%{box-shadow:0 0 0 0 rgba(84,87,214,0)}}
+.stitle{margin:0;font-size:clamp(44px,7vw,92px);font-weight:850;letter-spacing:-.055em;line-height:.98;
+  animation:rise .8s .1s var(--spring) both}
+.stitle span{color:var(--ink)}
+.stitle em{font-style:normal;position:relative;
+  background:linear-gradient(96deg,#5457d6,#8b6df0 42%,#38bdf8);
+  -webkit-background-clip:text;background-clip:text;color:transparent;background-size:220% 100%;
+  animation:sweep 7s ease-in-out infinite}
+@keyframes sweep{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.ssub{margin:20px auto 0;max-width:640px;font-size:13.5px;line-height:1.85;color:var(--sub);
+  animation:rise .8s .18s var(--spring) both}
+.metrics{display:flex;justify-content:center;flex-wrap:wrap;margin:34px 0 0;
+  animation:rise .8s .26s var(--spring) both}
+.metrics .mt{padding:0 30px;border-left:1px solid var(--line)}
+.metrics .mt:first-child{border-left:0}
+.metrics .mt b{display:block;font-size:30px;font-weight:800;letter-spacing:-.05em;
+  font-variant-numeric:tabular-nums;color:var(--ink);line-height:1.1}
+.metrics .mt span{font-size:11px;font-weight:600;color:var(--sub2)}
+@media (max-width:640px){.metrics .mt{padding:0 15px}.metrics .mt b{font-size:22px}}
+.mq{position:relative;margin-top:46px;padding:16px 0 22px;overflow:hidden;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);
+          mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.mqin{display:flex;gap:14px;width:max-content;animation:slide 56s linear infinite}
+.mq:hover .mqin{animation-play-state:paused}
+.mqin img{width:66px;height:auto;border-radius:2px 5px 5px 2px;display:block;
+  box-shadow:0 4px 12px rgba(13,15,20,.16),0 0 0 1px rgba(13,15,20,.06);
+  opacity:.72;transition:.3s var(--spring)}
+.mqin img:hover{opacity:1;transform:translateY(-4px) scale(1.06)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* 큰 메뉴 행 */
+.brows{margin:0 -30px;border-bottom:1px solid var(--line)}
+.brow{position:relative;display:flex;align-items:center;gap:20px;width:100%;padding:26px 30px;
+  border:0;border-bottom:1px solid var(--line);background:none;font-family:inherit;text-align:left;
+  cursor:pointer;overflow:hidden;color:var(--ink);transition:color .3s var(--spring)}
+.brow:last-child{border-bottom:0}
+.brow::before{content:'';position:absolute;inset:0;background:var(--ink);
+  transform:scaleY(0);transform-origin:bottom;transition:transform .38s cubic-bezier(.65,0,.35,1)}
+.brow:hover::before{transform:scaleY(1)}
+.brow>*{position:relative;z-index:1}
+.brow:hover{color:#fff}
+.bno{flex:none;font-family:var(--mono);font-size:11px;font-weight:800;color:var(--sub2);
+  letter-spacing:.06em;transition:color .3s}
+.brow:hover .bno{color:rgba(255,255,255,.5)}
+.bmid{flex:1;min-width:0}
+.bmid b{display:block;font-size:clamp(20px,2.4vw,30px);font-weight:800;letter-spacing:-.04em;line-height:1.2}
+.bmid i{display:block;font-style:normal;font-size:12.5px;color:var(--sub);margin-top:6px;transition:color .3s}
+.brow:hover .bmid i{color:rgba(255,255,255,.62)}
+.ben{flex:none;font-family:var(--mono);font-size:9.5px;font-weight:700;letter-spacing:.22em;
+  color:var(--sub2);transition:color .3s}
+.brow:hover .ben{color:rgba(255,255,255,.45)}
+.barr{flex:none;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;
+  border:1px solid var(--line);transition:.38s var(--spring)}
+.barr svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.brow:hover .barr{border-color:rgba(255,255,255,.28);background:rgba(255,255,255,.1);transform:translateX(6px)}
+@media (max-width:760px){.stage{margin:0 -16px;padding:44px 16px 0}.brows{margin:0 -16px}
+  .brow{padding:20px 16px;gap:13px}.ben{display:none}}
+
 /* ══ 시험지 ══ */
 #paper{display:none}
 .sheet{background:#fff;width:210mm;height:297mm;overflow:hidden;margin:0 auto 16px;padding:14mm 13mm 15mm;position:relative;
@@ -1692,7 +1820,7 @@ const CIRC=['①','②','③','④','⑤'];
 const S={page:'home',grade:'전체',book:null,step:1,mode:'book',
   cat:null,lv:'전체',ty:'전체',key:false,sel:new Set(),open:new Set([1]),
   total:20,lvN:{상:5,중:8,하:7},tyN:{mc:15,short:5},noDup:false,title:'',
-  order:'shuffle',spos:'back',src:{},
+  order:'shuffle',spos:'back',src:{},lesson:null,peek:null,
   exam:null,sheet:null,answers:{},report:null,
   bkT:'ele',bkB:null,bkC:null,bkI:null,bkTab:'chk',bkKey:false,
   pick:new Set(),folder:null,fnew:false};
@@ -2129,6 +2257,7 @@ function render(){
   if(S.page==='take'&&S.report) setTimeout(drawReport,60);
   if(S.page==='wizard'&&S.step===2&&S.exam) setTimeout(()=>buildPaper(S.exam,false,'pv',1),40);
   restoreScroll(_s);
+  if(S.page==='home') setTimeout(homeFx,20);
   setTimeout(fitSheets,30);
 }
 
@@ -2138,43 +2267,48 @@ function homeView(){
   const nB=Object.keys(BOOKS).reduce((s,k)=>s+BOOKS[k].length,0);
   const nS=['ele','mid'].reduce((s,t)=>s+((ORUN[t]||{books:[]}).books||[])
     .reduce((u,b)=>u+b.chapters.reduce((v,c)=>v+c.items.length,0),0),0);
-  const tile=(pg,eb,t,d,ic,go)=>'<button class="htile t-'+pg+'" onclick="nav(\''+pg+'\')">'+
-    '<span class="hi"><svg viewBox="0 0 24 24">'+ic+'</svg></span>'+
-    '<span class="he">'+eb+'</span><b>'+t+'</b><span class="hd">'+d+'</span>'+
-    '<span class="hact"><span class="hbtn">'+go+'<i>→</i></span></span></button>';
-  return '<div class="hero">'+
-   (LOGO?'<img class="hlogo" src="'+LOGO+'" alt="ORUN ACADEMY">':'')+
-   '<div class="heb">ORUN ENGLISH · GRAMMAR PLATFORM</div>'+
-   '<h1>ORUN GRAMMAR</h1>'+
-   '<p>옳은영어 문법 플랫폼 — 2022 개정 교육과정 문법 항목별 문제은행과 교재 커리큘럼을 하나로.<br>'+
-   '원하는 범위·난이도·유형을 골라 A4 시험지와 정답해설지를 즉시 만듭니다.</p>'+
-   '<div class="hstat">'+
-   [[CATS.length,'문법 항목','bank','a','<circle cx="12" cy="12" r="8"/><path d="M12 8v8M8 12h8"/>'],
-    [nQ.toLocaleString(),'문제은행 문항','bank','b','<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H19v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M8.5 8h6"/>'],
-    [nB,'연계 교과서','wizard','c','<path d="M5 4h6v16H5zM13 4h6v16h-6z"/>'],
-    [nS,'교재 시험지','books','d','<path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 13h6M9 17h4"/>']]
-     .map(x=>'<button class="hs '+x[3]+'" onclick="nav(\''+x[2]+'\')">'+
-       '<span class="hsi"><svg viewBox="0 0 24 24">'+x[4]+'</svg></span>'+
-       '<b>'+x[0]+'</b><span>'+x[1]+'</span></button>').join('')+'</div></div>'+
-   '<div class="hgrid">'+
-   tile('wizard','WORKBOOK STUDIO','시험지 출제 마법사','학년·출판사·단원을 골라 A4 시험지·정답지·Word를 한 번에.',PICO.wizard,'출제하기')+
-   tile('bank','QUESTION BANK','문제은행','항목별 200문항. 문항을 눌러 폴더에 담고 그대로 시험지로.',PICO.bank,'문항 보기')+
-   tile('books','ORUN CURRICULUM','옳은영어 커리큘럼','옳은문법(초등)·ORUN METABOOK(중등) 전 시험지 열람·인쇄.',PICO.books,'교재 열기')+
-   '</div>';
+  const met=(v,l)=>'<div class="mt"><b data-to="'+v+'">0</b><span>'+l+'</span></div>';
+  const row=(pg,no,en,ko,d)=>'<button class="brow" onclick="nav(\''+pg+'\')">'+
+    '<span class="bno">'+no+'</span>'+
+    '<span class="bmid"><b>'+ko+'</b><i>'+d+'</i></span>'+
+    '<span class="ben">'+en+'</span>'+
+    '<span class="barr"><svg viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></svg></span></button>';
+  const covs=Object.keys(COVERS);
+  const strip=covs.concat(covs).map(k=>'<img src="'+COVERS[k]+'" alt="">').join('');
+  return '<section class="stage" id="stage">'+
+   '<div class="aur"><i></i><i></i><i></i></div>'+
+   '<div class="spot"></div>'+
+   '<div class="stin">'+
+     (LOGO?'<img class="slogo" src="'+LOGO+'" alt="ORUN ACADEMY">':'')+
+     '<div class="sbadge"><i></i>ORUN ENGLISH · GRAMMAR PLATFORM</div>'+
+     '<h1 class="stitle"><span>ORUN</span> <em>GRAMMAR</em></h1>'+
+     '<p class="ssub">2022 개정 교육과정 문법 항목별 문제은행과 옳은영어 교재 커리큘럼.<br>'+
+     '범위·난이도·유형을 고르면 A4 시험지와 정답해설지가 즉시 만들어집니다.</p>'+
+     '<div class="metrics">'+
+       met(CATS.length,'문법 항목')+met(nQ,'문제은행 문항')+
+       met(nB,'연계 교과서')+met(nS,'교재 시험지')+
+     '</div>'+
+   '</div>'+
+   '<div class="mq"><div class="mqin">'+strip+'</div></div>'+
+   '</section>'+
+   '<nav class="brows">'+
+   row('wizard','01','WORKBOOK STUDIO','시험지 출제 마법사','학년·출판사·단원을 골라 A4 시험지·정답지·Word를 한 번에')+
+   row('bank','02','QUESTION BANK','문제은행','항목별 200문항을 눌러 폴더에 담고 그대로 시험지로')+
+   row('books','03','ORUN CURRICULUM','옳은영어 커리큘럼','옳은문법(초등)·ORUN METABOOK(중등) 전 시험지 열람·인쇄')+
+   '</nav>';
 }
-
-/* 시험지형 목록을 컨테이너 폭에 맞춰 확대·축소 */
-function fitSheets(){
-  Array.prototype.forEach.call(document.querySelectorAll('.paperlist'),function(w){
-    const cw=w.clientWidth-28; if(cw<200) return;
-    const sc=Math.max(.4,Math.min(2.2,cw/794));
-    Array.prototype.forEach.call(w.querySelectorAll('.sheet'),function(sh){
-      sh.style.transformOrigin='top left';
-      sh.style.transform='scale('+sc+')';
-      sh.style.marginLeft='0';sh.style.marginRight='0';
-      sh.style.marginBottom=(18+1122*(sc-1))+'px';});
-    w.style.overflow='hidden';});}
-addEventListener('resize',function(){clearTimeout(fitSheets._t);fitSheets._t=setTimeout(fitSheets,180);});
+/* 카운트업 + 마우스 스포트라이트 */
+function homeFx(){
+  const st=document.getElementById('stage'); if(!st) return;
+  st.onmousemove=function(e){const r=st.getBoundingClientRect();
+    st.style.setProperty('--mx',(e.clientX-r.left)+'px');
+    st.style.setProperty('--my',(e.clientY-r.top)+'px');};
+  Array.prototype.forEach.call(st.querySelectorAll('.mt b'),function(el){
+    const to=+el.getAttribute('data-to')||0, t0=performance.now(), D=1100;
+    (function step(t){const k=Math.min(1,(t-t0)/D), e=1-Math.pow(1-k,3);
+      el.textContent=Math.round(to*e).toLocaleString();
+      if(k<1) requestAnimationFrame(step);})(t0);});
+}
 
 /* ── 1. 마법사 ── */
 function sidebar(){
@@ -2198,12 +2332,90 @@ function sidebar(){
 }
 function pickBook(g,p){S.grade=g;S.book=p;S.mode='book';S.open=new Set([1]);render();}
 const srcCount=k=>Object.keys(S.src).filter(i=>S.sel.has(i)&&S.src[i]===k).length;
+/* 시험지형 목록을 컨테이너 폭에 맞춰 확대·축소 */
+function fitSheets(){
+  Array.prototype.forEach.call(document.querySelectorAll('.paperlist'),function(w){
+    const cw=w.clientWidth-28; if(cw<200) return;
+    const sc=Math.max(.4,Math.min(2.2,cw/794));
+    Array.prototype.forEach.call(w.querySelectorAll('.sheet'),function(sh){
+      sh.style.transformOrigin='top left';
+      sh.style.transform='scale('+sc+')';
+      sh.style.marginLeft='0';sh.style.marginRight='0';
+      sh.style.marginBottom=(18+1122*(sc-1))+'px';});
+    w.style.overflow='hidden';});}
+addEventListener('resize',function(){clearTimeout(fitSheets._t);fitSheets._t=setTimeout(fitSheets,180);});
+
+/* ── 좌 → 우 단계 탐색 (학년 → 범위 → 단원 → 문법 항목) ── */
+function colGrade(){
+  const rows=['전체'].concat(GRADES.filter(g=>g!=='전체')).map(function(g){
+    const on=S.grade===g, k=(g==='전체')?S.sel.size:srcCount('g:'+g);
+    return '<button class="ci'+(on?' on':'')+'" onclick="cGrade(\''+g+'\')">'+
+      '<span class="cl1">'+(g==='전체'?'전체 학년':g)+'</span>'+
+      (k?'<span class="cnt on">'+k+'</span>':'')+
+      '<span class="cnum">'+gcats(g).length+'</span>'+
+      '<span class="cav">›</span></button>';});
+  return col('학년','GRADE',rows.join(''));}
+function colScope(){
+  const bks=(BOOKS[S.grade]||[]);
+  let h='<button class="ci'+((S.mode==='cat')?' on':'')+'" onclick="cScope(null)">'+
+    '<span class="cl1">문법 카테고리 전체</span>'+
+    '<span class="cnum">'+gcats(S.grade).length+'</span><span class="cav">›</span></button>'+
+    (bks.length?'<div class="csep">교과서</div>':'');
+  h+=bks.map(function(b){
+    const on=S.mode==='book'&&S.book===b.pub, k=srcCount('b:'+S.grade+'|'+b.pub);
+    return '<button class="ci'+(on?' on':'')+'" onclick="cScope(\''+b.pub.replace(/'/g,"\\'")+'\')">'+
+      '<span class="cl1">'+esc(b.pub)+'</span>'+
+      (k?'<span class="cnt on">'+k+'</span>':'')+
+      '<span class="cnum">'+b.lessons.length+'과</span><span class="cav">›</span></button>';}).join('');
+  return col('범위','SCOPE',h);}
+function colUnit(){
+  if(S.mode!=='book'||!S.book) return col('단원','UNIT','<div class="cempty">왼쪽에서 교과서를 고르면<br>단원이 나타납니다.</div>');
+  const bk=(BOOKS[S.grade]||[]).filter(b=>b.pub===S.book)[0];
+  if(!bk) return col('단원','UNIT','<div class="cempty">단원 정보가 없습니다.</div>');
+  return col('단원','UNIT',bk.lessons.map(function(L){
+    const on=S.lesson===L.no, k=L.ids.filter(i=>S.sel.has(i)).length;
+    const all=L.ids.length>0&&L.ids.every(i=>S.sel.has(i));
+    return '<button class="ci'+(on?' on':'')+'" onclick="cUnit('+L.no+')">'+
+      '<span class="cchk'+(all?' on':'')+'" onclick="event.stopPropagation();selLesson('+L.no+','+(all?0:1)+')">'+
+      '<svg viewBox="0 0 14 14"><path d="M2 7.5 5.5 11 12 3.5"/></svg></span>'+
+      '<span class="cl2"><b>Lesson '+L.no+'</b><i>'+esc(L.labels.join(' · '))+'</i></span>'+
+      (k?'<span class="cnt on">'+k+'</span>':'')+
+      '<span class="cnum">'+L.ids.length+'</span><span class="cav">›</span></button>';}).join(''));}
+function colItem(){
+  let ids=[];
+  if(S.mode==='book'&&S.book){
+    if(!S.lesson) return col('문법 항목','GRAMMAR','<div class="cempty">단원을 고르면<br>문법 항목이 나타납니다.</div>');
+    const bk=(BOOKS[S.grade]||[]).filter(b=>b.pub===S.book)[0];
+    const L=bk&&bk.lessons.filter(l=>l.no===S.lesson)[0];
+    ids=(L&&L.ids)||[];
+  } else ids=gcats(S.grade).map(c=>c.id);
+  if(!ids.length) return col('문법 항목','GRAMMAR','<div class="cempty">문제은행에 수록된 항목이 없습니다.</div>');
+  return col('문법 항목','GRAMMAR',ids.map(function(id){
+    const c=byId[id]; if(!c) return '';
+    const on=S.sel.has(id);
+    return '<button class="ci pickitem'+(on?' sel':'')+'" onclick="tsel(\''+id+'\')">'+
+      '<span class="cchk'+(on?' on':'')+'"><svg viewBox="0 0 14 14"><path d="M2 7.5 5.5 11 12 3.5"/></svg></span>'+
+      '<span class="cl2"><b>'+esc(c.name)+'</b><i>'+esc(c.points.slice(0,2).join(' · '))+'</i></span>'+
+      '<span class="cnum">'+c.questions.length+'</span></button>';}).join(''),
+    ids.filter(i=>S.sel.has(i)).length+' / '+ids.length);}
+function col(t,en,body,badge){
+  return '<div class="mcol"><div class="mch"><b>'+t+'</b><em>'+en+'</em>'+
+    (badge?'<span class="mcb">'+badge+'</span>':'')+'</div>'+
+    '<div class="mcb-list">'+body+'</div></div>';}
+function cGrade(g){S.grade=g;S.book=null;S.lesson=null;S.mode='cat';render();}
+function cScope(p){ if(p===null){S.mode='cat';S.book=null;S.lesson=null;}
+  else {S.mode='book';S.book=p;S.lesson=null;
+    const bk=(BOOKS[S.grade]||[]).filter(b=>b.pub===p)[0];
+    if(bk&&bk.lessons.length) S.lesson=bk.lessons[0].no;}
+  render();}
+function cUnit(no){S.lesson=no;render();}
+
 function wizard(){
-  return '<div class="layout">'+sidebar()+'<div>'+
+  return '<div>'+
    '<div class="steps">'+
    '<div class="step '+(S.step===1?'on':'done')+'"><b>'+(S.step>1?'✓':'1')+'</b>문항 검색<small>단원 · 난이도 선택</small></div>'+
    '<div class="step '+(S.step===2?'on':'')+'"><b>2</b>시험지 만들기<small>인쇄 · Word · 배포</small></div></div>'+
-   (S.step===1?step1():step2())+'</div></div>';
+   (S.step===1?step1():step2())+'</div>';
 }
 function step1(){
   const ids=Array.from(S.sel), stat=poolStat(ids), N=S.total;
@@ -2218,10 +2430,8 @@ function step1(){
   else msg='<span class="okmsg">✓ 선택 범위 '+stat.all.toLocaleString()+'문항 중 '+N+'문항을 출제합니다.</span>';
   return '<div class="card solid" style="margin-bottom:16px">'+
    '<div class="ttl"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Step 1. 문항 검색'+
-   '<span class="r">'+(S.book?esc(S.grade+' · '+S.book):(S.grade==='전체'?'전체 문법 항목':esc(S.grade)+' 전체 문법'))+'</span></div>'+
-   (S.book?'<div class="mode">'+
-     '<button class="'+(S.mode==='book'?'on':'')+'" onclick="S.mode=\'book\';render()">교과서 단원별</button>'+
-     '<button class="'+(S.mode==='cat'?'on':'')+'" onclick="S.mode=\'cat\';render()">문법 카테고리별</button></div>':'')+
+   '<span class="r">'+esc(S.grade)+(S.book?' › '+esc(S.book):' › 문법 카테고리')+
+   (S.lesson?' › Lesson '+S.lesson:'')+'</span></div>'+
    '<div class="selbar">'+
      '<span class="c'+(S.sel.size?'':' z')+'">'+S.sel.size+'</span><b>개 선택됨</b>'+
      '<span class="hint">보유 '+stat.all.toLocaleString()+'문항 · 학년·교재를 바꿔도 그대로 쌓입니다</span>'+
@@ -2230,7 +2440,7 @@ function step1(){
      '<button class="lnk" onclick="selAll(0)">이 범위 해제</button>'+
      (S.sel.size?'<button class="lnk d" onclick="clearSel()">모두 지우기</button>':'')+
    '</div>'+
-   ((S.book&&S.mode==='book')?treeBook():treeCat())+
+   '<div class="mcols">'+colGrade()+colScope()+colUnit()+colItem()+'</div>'+
    selTray()+'</div>'+
    '<div class="card solid"><div class="ttl"><svg viewBox="0 0 24 24"><path d="M4 6h16M7 12h10M10 18h4"/></svg>출제 옵션</div>'+
    '<div class="opt">'+
