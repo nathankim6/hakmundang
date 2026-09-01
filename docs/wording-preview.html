@@ -1,0 +1,554 @@
+<title>학교 담기</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ink:#1C1C1C; --body:#3A3A3A; --muted:#8A8A8A; --hair:#E4E2DD;
+  --paper:#F7F6F2; --ground:#FFFFFF; --yellow:#D9B300; --yellow-hi:#FFD400;
+  --blue:#1A7FBF; --blue-soft:#EAF4FA; --brick:#A8432F; --brick-soft:#FBEFEC;
+  --shade:#F1EFE9;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ink:#EFECE4; --body:#D2CEC4; --muted:#918D84; --hair:#33322E;
+    --paper:#1D1D1B; --ground:#141412; --yellow:#E4C232; --yellow-hi:#FFD400;
+    --blue:#63B2E0; --blue-soft:#16262E; --brick:#D8775F; --brick-soft:#2A1C18;
+    --shade:#232320;
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#EFECE4; --body:#D2CEC4; --muted:#918D84; --hair:#33322E;
+  --paper:#1D1D1B; --ground:#141412; --yellow:#E4C232; --yellow-hi:#FFD400;
+  --blue:#63B2E0; --blue-soft:#16262E; --brick:#D8775F; --brick-soft:#2A1C18;
+  --shade:#232320;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--body);
+  font-family:'Noto Sans KR',system-ui,-apple-system,'Malgun Gothic',sans-serif;
+  font-size:15px;line-height:1.72;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1020px;margin:0 auto;padding:0 26px 110px}
+.mono,code,th,.eyebrow{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace}
+
+/* ── 머리 ─────────────────────────────── */
+.mast{padding:56px 0 26px}
+.brandline{display:flex;align-items:center;gap:10px;margin-bottom:28px}
+.dot{width:8px;height:8px;background:var(--yellow-hi);flex:none}
+.brandline span{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.22em;
+  color:var(--muted);text-transform:uppercase}
+h1{font-size:36px;line-height:1.24;font-weight:700;color:var(--ink);margin:0 0 12px;
+  letter-spacing:-.025em;text-wrap:balance}
+.sub{font-size:15.5px;color:var(--muted);max-width:60ch;margin:0}
+
+/* ── 탭 ───────────────────────────────── */
+nav{display:flex;border-bottom:1.5px solid var(--ink);margin-top:28px;overflow-x:auto}
+nav button{padding:10px 20px;border:0;border-bottom:2px solid transparent;margin-bottom:-1.5px;
+  background:none;color:var(--muted);font-size:14px;cursor:pointer;white-space:nowrap;
+  font-family:inherit}
+nav button[aria-selected="true"]{color:var(--ink);font-weight:700;border-bottom-color:var(--ink)}
+nav button:hover{color:var(--ink)}
+
+/* ── 섹션 ─────────────────────────────── */
+section[role="tabpanel"]{padding-top:34px}
+.eyebrow{display:flex;align-items:center;gap:9px;font-size:10.5px;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.eyebrow::before{content:"";width:7px;height:7px;background:var(--yellow-hi);flex:none}
+h2{font-size:25px;font-weight:700;color:var(--ink);margin:0 0 8px;letter-spacing:-.015em;
+  line-height:1.35;text-wrap:balance}
+.lede{font-size:15px;color:var(--muted);margin:0 0 22px;max-width:62ch}
+h3{font-size:17px;font-weight:700;color:var(--ink);margin:34px 0 10px}
+p{max-width:70ch}
+strong{color:var(--ink);font-weight:700}
+
+/* ── 표 ───────────────────────────────── */
+.scroll{overflow-x:auto;margin:18px 0}
+table{border-collapse:collapse;width:100%;font-size:13px;min-width:560px}
+th{font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:10.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--muted);text-align:left;padding:0 14px 7px 0;
+  border-bottom:1.5px solid var(--ink);white-space:nowrap}
+td{padding:9px 14px 9px 0;border-bottom:1px solid var(--hair);vertical-align:top}
+tbody tr:hover{background:var(--paper)}
+.n{text-align:right;padding-right:18px;font-variant-numeric:tabular-nums;
+  font-family:'IBM Plex Mono',monospace}
+th.n{text-align:right;padding-right:18px}
+.k{color:var(--ink);font-weight:500;white-space:nowrap}
+
+/* ── 담기 목록 ────────────────────────── */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.chipbtn{display:flex;align-items:center;gap:9px;padding:9px 15px;border:1px solid var(--hair);
+  background:none;color:var(--body);font-size:13.5px;cursor:pointer;font-family:inherit}
+.chipbtn[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff;font-weight:700}
+.chipbtn b{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);font-weight:500}
+.chipbtn[aria-pressed="true"] b{color:var(--yellow-hi)}
+.toolbar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding-bottom:12px;
+  border-bottom:1.5px solid var(--ink)}
+.toolbar input[type=text]{flex:1 1 190px;padding:8px 12px;border:1px solid var(--hair);
+  background:var(--ground);color:var(--ink);font-size:14px;font-family:inherit}
+.row{display:grid;grid-template-columns:26px 1fr auto;gap:12px;align-items:center;
+  padding:11px 0;border-bottom:1px solid var(--hair);cursor:pointer}
+.row .nm{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.row .nm b{color:var(--ink);font-size:14.5px}
+.badge{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--yellow);border:1px solid currentColor;padding:1px 6px}
+.row .meta{font-size:12.5px;color:var(--muted);margin-top:2px}
+.row .cnt{font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--muted);text-align:right}
+.footbar{position:sticky;bottom:0;background:var(--ground);border-top:1.5px solid var(--ink);
+  padding:15px 0;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+.cta{padding:12px 26px;border:0;background:var(--ink);color:#fff;font-size:14px;font-weight:700;
+  cursor:pointer;font-family:inherit}
+
+/* ── 카드 ─────────────────────────────── */
+.grid{display:grid;gap:1px;background:var(--hair);border:1px solid var(--hair)}
+.g4{grid-template-columns:repeat(auto-fill,minmax(190px,1fr))}
+.g5{grid-template-columns:repeat(auto-fit,minmax(130px,1fr))}
+.cell{background:var(--ground);padding:17px 18px 15px}
+.cell .lb{font-size:11.5px;color:var(--muted);margin-bottom:5px}
+.cell .vl{font-family:'IBM Plex Mono',monospace;font-variant-numeric:tabular-nums;
+  font-size:22px;font-weight:700;color:var(--ink)}
+.big{font-size:34px}
+.dots{display:flex;flex-wrap:wrap;gap:2.5px;margin-top:13px}
+.dots i{width:5px;height:5px;border-radius:50%;background:var(--hair)}
+.dots i.on{background:var(--ink)}
+
+/* ── 진로 막대 ────────────────────────── */
+.bar{display:flex;height:26px;background:var(--hair)}
+.bar div{height:100%}
+.legend{display:flex;flex-wrap:wrap;gap:6px 20px;margin-top:10px;font-size:12.5px}
+.legend span.sw{width:8px;height:8px;display:inline-block;margin-right:6px}
+
+/* ── 콜아웃 ───────────────────────────── */
+.note{background:var(--paper);border-left:2px solid var(--yellow-hi);padding:18px 22px;
+  margin:22px 0;font-size:13.5px}
+.note.blue{background:var(--blue-soft);border-left-color:var(--blue)}
+.note .lb{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+.note.blue .lb{color:var(--blue)}
+.note p{margin:0;max-width:66ch}.note p+p{margin-top:9px}
+
+/* ── 블록 헤더 ────────────────────────── */
+.blk{margin-bottom:26px}
+.blkhead{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  border-bottom:1.5px solid var(--ink);padding-bottom:7px;margin-bottom:12px}
+.blkhead .l{display:flex;align-items:baseline;gap:11px;flex-wrap:wrap}
+.blkhead .en{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--muted)}
+.blkhead .ko{font-size:16px;font-weight:700;color:var(--ink)}
+.tag{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.1em;
+  border:1px solid currentColor;padding:1px 6px;white-space:nowrap}
+.t-fact{color:var(--blue)}.t-obs{color:var(--yellow)}.t-view{color:var(--muted)}
+
+.diff{display:inline-block;min-width:38px;text-align:center;font-size:12px;font-weight:700;
+  padding:2px 8px}
+.d-보통{color:var(--body);background:var(--shade)}
+.d-상{color:var(--blue);background:var(--blue-soft)}
+.d-최상{color:var(--brick);background:var(--brick-soft)}
+.d-기초{color:var(--muted);background:var(--shade)}
+
+/* ── 변경표 ───────────────────────────── */
+.chg{border-collapse:collapse;width:100%;font-size:13.5px;min-width:520px}
+.chg th{padding-bottom:7px}
+.chg td{padding:8px 16px 8px 0;border-bottom:1px solid var(--hair)}
+.chg .before{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--hair)}
+.chg .after{color:var(--ink);font-weight:700}
+.chg .why{color:var(--muted);font-size:12.5px}
+
+footer{margin-top:60px;padding-top:18px;border-top:1.5px solid var(--ink);display:flex;
+  justify-content:space-between;gap:14px;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;
+  font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+@media(max-width:640px){h1{font-size:27px}h2{font-size:20px}.wrap{padding:0 17px 70px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+[hidden]{display:none!important}
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="brandline"><span class="dot"></span><span>ORUN ENGLISH · 학교 분석지</span></div>
+  <h1>고교 선택이 입시의 시작입니다</h1>
+  <p class="sub">담은 학교로 분석지가 만들어집니다. 공시 자료는 알아서 채워지고, 우리가 직접 본 것이 그 위에 얹힙니다.</p>
+
+  <nav role="tablist" aria-label="화면">
+    <button role="tab" aria-selected="true" data-tab="pick">학교 담기</button>
+    <button role="tab" aria-selected="false" data-tab="report">뜯어보기</button>
+    <button role="tab" aria-selected="false" data-tab="seats">1등급 자리</button>
+    <button role="tab" aria-selected="false" data-tab="obs">우리가 본 것</button>
+    <button role="tab" aria-selected="false" data-tab="diff">바뀐 말</button>
+  </nav>
+</header>
+
+<!-- ═══════════ 학교 담기 ═══════════ -->
+<section role="tabpanel" data-panel="pick">
+  <div class="eyebrow">Pick your schools · 오늘 다룰 학교</div>
+  <h2>어느 학교를 담을까요</h2>
+  <p class="lede">범위를 고르고, 오늘 설명회에서 다룰 학교만 담으면 됩니다. 담은 순서가 그대로 분석지 순서가 됩니다.</p>
+
+  <div class="filters">
+    <button class="chipbtn" aria-pressed="true">동작구 고등학교 <b>8</b></button>
+    <button class="chipbtn" aria-pressed="true">관악구 고등학교 <b>2</b></button>
+    <button class="chipbtn" aria-pressed="false">송파구 고등학교 <b>21</b></button>
+    <button class="chipbtn" aria-pressed="false">동작구 중학교 <b>16</b></button>
+    <button class="chipbtn" aria-pressed="false">송파구 중학교 <b>29</b></button>
+    <button class="chipbtn" aria-pressed="false">서울 외고·국제고 <b>7</b></button>
+    <button class="chipbtn" aria-pressed="false">전국단위 자사고 <b>10</b></button>
+  </div>
+
+  <div class="toolbar">
+    <input type="text" placeholder="학교 찾기">
+    <label style="display:flex;align-items:center;gap:7px;font-size:13px;cursor:pointer">
+      <input type="checkbox"> 우리가 본 학교만
+    </label>
+    <button class="chipbtn">보이는 학교 다 담기</button>
+  </div>
+
+  <div id="pickList"></div>
+
+  <div class="footbar">
+    <div style="font-size:13.5px">
+      <strong id="pickCount">오늘 다룰 학교 7곳</strong>
+      <span style="color:var(--muted)"> · 자세히 7곳 · 요약 0곳</span>
+    </div>
+    <button class="cta">이대로 만들기 →</button>
+  </div>
+</section>
+
+<!-- ═══════════ 뜯어보기 ═══════════ -->
+<section role="tabpanel" data-panel="report" hidden>
+  <div class="eyebrow">Side by side · 나란히</div>
+  <h2>나란히 놓고 보기</h2>
+  <p class="lede">학부모님이 제일 먼저 묻는 것들입니다. 전부 공시 자료 그대로이고, 저희가 손대지 않았습니다.</p>
+
+  <div class="scroll">
+    <table>
+      <thead><tr>
+        <th>학교</th><th class="n">1학년</th><th class="n">반</th><th class="n">반당</th>
+        <th class="n">1등급 자리</th><th class="n">고1 전출</th><th class="n">4년제</th>
+      </tr></thead>
+      <tbody id="cmpBody"></tbody>
+    </table>
+  </div>
+
+  <div class="note">
+    <div class="lb">이 표 읽는 법</div>
+    <p><strong>1등급 자리</strong>는 1학년 인원의 상위 10%이고 소수점은 버립니다 — 167명이면 16자리입니다.
+    <strong>고1 전출</strong>은 1학년 중 다른 학교로 옮긴 학생 비율, 곧 학교에 붙어 있느냐는 신호입니다.
+    맨 오른쪽은 <strong>작년 졸업생</strong> 기준이라 지금 1학년과는 3년 차이가 납니다.</p>
+  </div>
+
+  <h3 style="margin-top:44px">학교 하나를 열면 이렇게 생겼습니다</h3>
+  <div style="border-top:1.5px solid var(--ink);padding-top:18px;margin-top:14px">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:18px">
+      <div style="font-size:26px;font-weight:700;color:var(--ink);letter-spacing:-.02em">숭의여자고등학교</div>
+      <div style="font-size:12.5px;color:var(--muted)">서울특별시 동작구 · 사립 · 일반고등학교 · 녀</div>
+    </div>
+
+    <div class="grid g5" style="margin-bottom:22px">
+      <div class="cell"><div class="lb">1학년</div><div class="vl">223<span style="font-size:12px;color:var(--muted)">명</span></div></div>
+      <div class="cell"><div class="lb">1학년 반</div><div class="vl">9<span style="font-size:12px;color:var(--muted)">반</span></div></div>
+      <div class="cell"><div class="lb">반당</div><div class="vl">24.8<span style="font-size:12px;color:var(--muted)">명</span></div></div>
+      <div class="cell"><div class="lb">1등급 자리</div><div class="vl">22<span style="font-size:12px;color:var(--muted)">명</span></div></div>
+      <div class="cell"><div class="lb">남 · 여</div><div class="vl">0 : 100</div></div>
+    </div>
+
+    <div class="blk">
+      <div class="blkhead"><div class="l"><span class="en">The school</span><span class="ko">이런 학교입니다</span></div><span class="tag t-obs">우리가 본 것</span></div>
+      <p style="margin:0;font-size:14px">숭의여고는 "어법과 어휘에 진심"인 학교입니다. 매 학년 다른 단어교재를 선정하여 다의어와 영영풀이, 영작에서 심도 깊은 이해를 요구하며, 시험범위의 모든 문장에 대한 문법·맥락 검증을 요구합니다.</p>
+    </div>
+
+    <div class="blk">
+      <div class="blkhead"><div class="l"><span class="en">What's hard</span><span class="ko">어느 과목이 센가</span></div><span class="tag t-obs">우리가 본 것</span></div>
+      <div style="display:flex;flex-wrap:wrap;gap:10px 26px;margin-bottom:12px">
+        <span>국어 <b class="diff d-상">상</b></span>
+        <span>영어 <b class="diff d-최상">최상</b></span>
+        <span>수학 <b class="diff d-최상">최상</b></span>
+        <span>사회 <b class="diff d-보통">보통</b></span>
+        <span>과학 <b class="diff d-상">상</b></span>
+      </div>
+      <p style="margin:0;font-size:13.5px">상위권 내신 경쟁이 치열하며, 특히 영어는 서술형 문항의 부분점수 반영이 높아져서 어휘·어법 객관식 문제에 더 꼼꼼하게 접근해야 합니다.</p>
+    </div>
+
+    <div class="blk">
+      <div class="blkhead"><div class="l"><span class="en">The cut line</span><span class="ko">몇 점부터 1등급인가</span></div><span class="tag t-obs">우리가 본 것</span></div>
+      <div style="display:flex;gap:40px;flex-wrap:wrap">
+        <div><div style="font-size:12px;color:var(--muted);margin-bottom:4px">1등급 컷</div>
+          <div class="vl" style="font-size:27px">86<span style="font-size:13px;color:var(--muted)">점</span></div></div>
+        <div><div style="font-size:12px;color:var(--muted);margin-bottom:4px">2등급 컷</div>
+          <div class="vl" style="font-size:27px">64~71<span style="font-size:13px;color:var(--muted)">점</span></div></div>
+      </div>
+      <p style="margin:11px 0 0;font-size:12px;color:var(--muted)">영어 / 원점수 기준 · 우리 학생들 성적표로 잡은 값이고 학교가 발표한 숫자가 아닙니다</p>
+    </div>
+
+    <div class="blk">
+      <div class="blkhead"><div class="l"><span class="en">Signature</span><span class="ko">이 학교만 내는 문제</span></div><span class="tag t-obs">우리가 본 것</span></div>
+      <div style="padding:13px 0;border-bottom:1px solid var(--hair)">
+        <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap">
+          <span class="mono" style="font-size:10px;letter-spacing:.14em;color:var(--yellow)">Q01</span>
+          <b style="font-size:14.5px;color:var(--ink)">단어 쓰임이 적절하지 않은 것은 모두 몇 개인가?</b>
+          <span class="tag" style="color:var(--blue)">바로 뽑기</span>
+        </div>
+        <p style="margin:6px 0 0;font-size:13.5px">문장 맥락에 맞는 단어 사용 여부를 묻는 문제입니다. 특히 개수 고르기에서 '없음' 선택은 심리적 압박감을 부여합니다.</p>
+      </div>
+    </div>
+
+    <div class="blk">
+      <div class="blkhead"><div class="l"><span class="en">Who fits</span><span class="ko">이런 학생이 잘 맞습니다</span></div><span class="tag t-view">우리 생각</span></div>
+      <div id="fitList"></div>
+    </div>
+  </div>
+
+  <h3 style="margin-top:46px">중학교를 담으면 아예 다른 장이 붙습니다</h3>
+  <div class="eyebrow" style="margin-top:18px">Where they went · 선배들의 행선지</div>
+  <h2 style="font-size:22px">이 학교 선배들은 어디로 갔나</h2>
+  <p class="lede">중학교 선택에서 제일 중요한 숫자입니다. 중학교 성적은 대입에 안 들어가지만, 어느 고등학교로 가느냐는 3년을 바꿉니다.</p>
+  <div id="midList"></div>
+
+  <div class="note blue">
+    <div class="lb">이 숫자 읽는 법</div>
+    <p>서울 중학교는 <strong>사는 곳 학교군 안에서 추첨</strong>입니다. 그래서 이건 "좋은 중학교" 순위표가 아니라, <strong>우리 동네 아이들이 실제로 어디로 흘러가는지</strong> 보여주는 지도입니다.</p>
+    <p>특목고 비율이 높다고 그 중학교가 더 좋은 건 아닙니다. 다만 <strong>외고·국제고를 생각한다면 중2부터</strong>고, 그 출발은 영어입니다.</p>
+  </div>
+</section>
+
+<!-- ═══════════ 1등급 자리 ═══════════ -->
+<section role="tabpanel" data-panel="seats" hidden>
+  <div class="eyebrow">How many seats · 라이브로 보여주는 화면</div>
+  <h2>1등급, 몇 자리나 있을까</h2>
+  <p class="lede">설명회 중에 학부모님 앞에서 직접 숫자를 넣어 보여주는 화면입니다. 공통과목과 선택과목의 분모가 다르다는 걸 눈으로 보여주는 게 목적입니다.</p>
+
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
+    <div class="cell" style="padding:22px">
+      <div class="eyebrow" style="margin-bottom:9px">Common · 다 같이 듣는 과목</div>
+      <div style="font-size:17px;font-weight:700;color:var(--ink);margin-bottom:4px">공통과목</div>
+      <p style="font-size:12.5px;color:var(--muted);margin:0 0 13px">1학년 공통과목은 학년 전체가 듣습니다. 분모가 학년 정원이에요.</p>
+      <input type="number" id="nCommon" value="226" style="width:100%;padding:10px 12px;border:1px solid var(--hair);background:var(--ground);color:var(--ink);font-size:15px;font-family:'IBM Plex Mono',monospace">
+      <div style="display:flex;align-items:baseline;gap:7px;margin-top:17px">
+        <span style="font-size:13px;color:var(--muted)">1등급</span>
+        <span class="vl big" id="seatCommon">22</span>
+        <span style="font-size:14px;font-weight:700;color:var(--ink)">명</span>
+      </div>
+      <div id="warnCommon"></div>
+    </div>
+    <div class="cell" style="padding:22px">
+      <div class="eyebrow" style="margin-bottom:9px">Elective · 골라 듣는 과목</div>
+      <div style="font-size:17px;font-weight:700;color:var(--ink);margin-bottom:4px">선택과목</div>
+      <p style="font-size:12.5px;color:var(--muted);margin:0 0 13px">2·3학년 선택과목은 그 과목을 고른 학생끼리만 겨룹니다. 분모가 수강자 수예요.</p>
+      <input type="number" id="nElect" value="15" style="width:100%;padding:10px 12px;border:1px solid var(--blue);background:var(--ground);color:var(--ink);font-size:15px;font-family:'IBM Plex Mono',monospace">
+      <div style="display:flex;align-items:baseline;gap:7px;margin-top:17px">
+        <span style="font-size:13px;color:var(--muted)">1등급</span>
+        <span class="vl big" id="seatElect">1</span>
+        <span style="font-size:14px;font-weight:700;color:var(--ink)">명</span>
+      </div>
+      <div id="warnElect"></div>
+    </div>
+  </div>
+  <p style="font-size:12.5px;color:var(--muted);margin-top:14px">2025학년도 고1부터 5등급제입니다. 1등급 10% · 2등급 누적 34% · 3등급 66% · 4등급 90%. 상위 10% <em>이내</em>여야 하므로 소수점은 버립니다.</p>
+</section>
+
+<!-- ═══════════ 우리가 본 것 ═══════════ -->
+<section role="tabpanel" data-panel="obs" hidden>
+  <div class="eyebrow">What we saw · 공시에 없는 것</div>
+  <h2>우리가 본 것을 적어 둡니다</h2>
+  <p class="lede">공시 자료에 없는 내용입니다. 한 번 넣어두면 내년 설명회에서 그대로 다시 씁니다. 학교가 쌓일수록 준비가 짧아집니다.</p>
+
+  <div class="blk">
+    <div class="blkhead"><div class="l"><span class="en">From disclosure</span><span class="ko">공시 자료</span></div><span class="tag t-fact">공시 · 못 고침</span></div>
+    <p style="font-size:12.5px;color:var(--muted);margin:0 0 12px">학교알리미에서 알아서 채워집니다. 손댈 수 없어요.</p>
+    <div class="grid g5">
+      <div class="cell" style="background:var(--paper)"><div class="lb">1학년</div><div class="vl" style="font-size:19px;color:var(--body)">223<span style="font-size:11.5px;color:var(--muted)">명</span></div></div>
+      <div class="cell" style="background:var(--paper)"><div class="lb">반</div><div class="vl" style="font-size:19px;color:var(--body)">9<span style="font-size:11.5px;color:var(--muted)">반</span></div></div>
+      <div class="cell" style="background:var(--paper)"><div class="lb">반당</div><div class="vl" style="font-size:19px;color:var(--body)">24.8<span style="font-size:11.5px;color:var(--muted)">명</span></div></div>
+      <div class="cell" style="background:var(--paper)"><div class="lb">남</div><div class="vl" style="font-size:19px;color:var(--body)">0<span style="font-size:11.5px;color:var(--muted)">명</span></div></div>
+      <div class="cell" style="background:var(--paper)"><div class="lb">여</div><div class="vl" style="font-size:19px;color:var(--body)">223<span style="font-size:11.5px;color:var(--muted)">명</span></div></div>
+    </div>
+  </div>
+
+  <div class="blk">
+    <div class="blkhead"><div class="l"><span class="en">The school</span><span class="ko">이런 학교입니다</span></div><span class="tag t-obs">우리가 본 것</span></div>
+    <textarea rows="3" style="width:100%;padding:9px 11px;border:1px solid var(--hair);background:var(--ground);color:var(--ink);font-size:14px;font-family:inherit;resize:vertical" placeholder="이 학교를 한 문단으로 말한다면? (설명회 첫 장에 그대로 올라갑니다)"></textarea>
+  </div>
+
+  <div class="blk">
+    <div class="blkhead"><div class="l"><span class="en">What's on the test</span><span class="ko">영어 시험, 어디서 나오나</span></div><span class="tag t-obs">우리가 본 것</span></div>
+    <div style="display:grid;grid-template-columns:132px 1fr;gap:10px;padding:9px 0;border-bottom:1px solid var(--hair)">
+      <input type="text" value="1학기 중간" style="padding:9px 11px;border:1px solid var(--hair);background:var(--ground);color:var(--ink);font-size:14px;font-family:inherit">
+      <input type="text" placeholder="교과서 Lesson 1~2 / 부교재 Unit 1-4 (총 30지문)" style="padding:9px 11px;border:1px solid var(--hair);background:var(--ground);color:var(--ink);font-size:14px;font-family:inherit">
+    </div>
+    <button class="chipbtn" style="width:100%;margin-top:12px;border-style:dashed;justify-content:center;color:var(--muted)">+ 시험 하나 더</button>
+  </div>
+
+  <div class="blk">
+    <div class="blkhead"><div class="l"><span class="en">Who fits</span><span class="ko">이런 학생이 잘 맞습니다</span></div><span class="tag t-view">우리 생각</span></div>
+    <div style="display:grid;grid-template-columns:26px 1fr auto;gap:10px;padding:9px 0;border-bottom:1px solid var(--hair);align-items:start">
+      <span class="mono" style="font-size:11px;color:var(--yellow);padding-top:10px">01</span>
+      <input type="text" placeholder="어떤 학생에게 잘 맞는 학교인가" style="padding:9px 11px;border:1px solid var(--hair);background:var(--ground);color:var(--ink);font-size:14px;font-family:inherit">
+      <span style="display:flex;gap:3px;padding-top:6px">
+        <span class="chipbtn" style="width:26px;height:26px;padding:0;justify-content:center">↑</span>
+        <span class="chipbtn" style="width:26px;height:26px;padding:0;justify-content:center">↓</span>
+        <span class="chipbtn" style="width:26px;height:26px;padding:0;justify-content:center;color:var(--brick)">×</span>
+      </span>
+    </div>
+    <button class="chipbtn" style="width:100%;margin-top:12px;border-style:dashed;justify-content:center;color:var(--muted)">+ 하나 더</button>
+  </div>
+</section>
+
+<!-- ═══════════ 바뀐 말 ═══════════ -->
+<section role="tabpanel" data-panel="diff" hidden>
+  <div class="eyebrow">Before / after</div>
+  <h2>어떤 말을 바꿨나</h2>
+  <p class="lede">첨부해 주신 화면의 말투를 기준으로 삼았습니다 — 짧고, 동사로 끝나고, 읽으면 바로 그림이 그려지는 말.</p>
+  <div class="scroll"><table class="chg" id="diffTable"><thead><tr><th>전</th><th>후</th><th>이유</th></tr></thead><tbody></tbody></table></div>
+</section>
+
+<footer>
+  <span>ORUN ENGLISH · 옳은영어</span>
+  <span>공시 · 학교알리미 2026년 · 진로 2025년 · 2026.09.01 조회</span>
+</footer>
+
+</div>
+
+<script>
+const HIGH = [
+  {n:"당곡",   g1:226, cls:8,  per:28.3, out:1.3, uni:41, obs:1},
+  {n:"영등포", g1:142, cls:6,  per:23.7, out:1.3, uni:46, obs:1},
+  {n:"수도여자",g1:244, cls:9,  per:27.1, out:3.3, uni:39, obs:1},
+  {n:"흑석",   g1:205, cls:8,  per:25.6, out:null,uni:null,obs:1},
+  {n:"성남",   g1:317, cls:11, per:28.8, out:4.5, uni:43, obs:1},
+  {n:"숭의여자",g1:223, cls:9,  per:24.8, out:2.3, uni:48, obs:1},
+  {n:"구암",   g1:167, cls:6,  per:27.8, out:1.8, uni:46, obs:1}
+];
+const PICK = [
+  {n:"경문고등학교", meta:"서울특별시 동작구 · 사립 · 일반고등학교 · 남", g1:211, obs:0},
+  {n:"구암고등학교", meta:"서울특별시 관악구 · 공립 · 일반고등학교 · 남녀공학", g1:167, obs:1},
+  {n:"당곡고등학교", meta:"서울특별시 관악구 · 공립 · 일반고등학교 · 남녀공학", g1:226, obs:1},
+  {n:"동작고등학교", meta:"서울특별시 동작구 · 공립 · 일반고등학교 · 남녀공학", g1:230, obs:0},
+  {n:"성남고등학교", meta:"서울특별시 동작구 · 사립 · 일반고등학교 · 남", g1:317, obs:1},
+  {n:"숭의여자고등학교", meta:"서울특별시 동작구 · 사립 · 일반고등학교 · 녀", g1:223, obs:1}
+];
+const MID = [
+  {n:"강현", grad:121, s:[["일반고",100,"ink"],["자율고",1,"blue"],["특목고",3,"yellow"],["특성화고",17,"muted"]], sub:"과학고 1명 · 예술·체육고 2명"},
+  {n:"숭의여자", grad:151, s:[["일반고",108,"ink"],["자율고",11,"blue"],["특목고",13,"yellow"],["특성화고",19,"muted"]], sub:"과학고 1명 · 외고·국제고 7명 · 예술·체육고 5명"},
+  {n:"강남", grad:95, s:[["일반고",68,"ink"],["자율고",5,"blue"],["특목고",2,"yellow"],["특성화고",20,"muted"]], sub:"예술·체육고 1명 · 마이스터고 1명"}
+];
+const FIT = [
+  "고3 모의고사 기준 2등급이 꾸준히 나오는 학생은 상위권 가능성이 높습니다",
+  "단어의 겉모습에 현혹되지 않고 뜻을 정확히 따지는 학생",
+  "암기와 되새김을 루틴으로 유지할 수 있는 학생",
+  "문법 원칙 검증하기와 한글에서 영작하기를 즐기는, '영어를 좋아하는' 학생"
+];
+const DIFF = [
+  ["학교 고르기","학교 담기","레퍼런스의 담기/담김 그대로"],
+  ["분석지","뜯어보기","무엇을 하는지가 동사로 보입니다"],
+  ["1등급 계산기","1등급 자리","'계산기'보다 '자리'가 체감됩니다"],
+  ["관측 입력","우리가 본 것","'관측'은 학원 내부 용어입니다"],
+  ["N개교 선택","오늘 다룰 학교 N곳","레퍼런스 표현"],
+  ["학교명 검색","학교 찾기",""],
+  ["분석 자료 있는 학교만","우리가 본 학교만",""],
+  ["보이는 학교 전체 선택","보이는 학교 다 담기",""],
+  ["분석지 만들기","이대로 만들기",""],
+  ["한눈에 비교","나란히 놓고 보기",""],
+  ["1등급은 몇 자리입니까","1등급, 몇 자리나 있을까","질문형이 덜 딱딱합니다"],
+  ["이 중학교는 어디로 보냈습니까","이 학교 선배들은 어디로 갔나","학생이 자기 얘기로 읽습니다"],
+  ["학교가 영어를 어떻게 가르치나","영어 수업, 이렇게 굴러갑니다",""],
+  ["옳은영어가 만든 결과","우리가 만든 결과",""],
+  ["학교 특징","이런 학교입니다",""],
+  ["과목별 난이도","어느 과목이 센가","레퍼런스의 '가장 센 카드'"],
+  ["영어 시험범위","영어 시험, 어디서 나오나",""],
+  ["영어 등급 커트라인","몇 점부터 1등급인가",""],
+  ["성취도와 시험 운영","성적표에 뭐가 남나","중학교용"],
+  ["시험의 특징","이 시험의 성격",""],
+  ["이 학교의 시그니처 문항","이 학교만 내는 문제",""],
+  ["맞는 학생 유형","이런 학생이 잘 맞습니다",""],
+  ["옳은영어 관측","우리가 본 것",""],
+  ["옳은영어 견해","우리 생각",""],
+  ["공시자료 · 읽기 전용","공시 · 못 고침",""],
+  ["문항 생성 가능","바로 뽑기",""],
+  ["학교 다시 고르기","학교 다시 담기",""],
+  ["입력 지우기","기록 지우기",""],
+  ["시험 한 회 더 넣기","시험 하나 더",""],
+  ["특징 한 줄 더 넣기","한 줄 더",""],
+  ["고1 이탈","고1 전출","'이탈'은 학교를 깎는 말로 읽힙니다"]
+];
+const COLOR = {ink:"var(--ink)",blue:"var(--blue)",yellow:"var(--yellow-hi)",muted:"var(--muted)",hair:"var(--hair)"};
+const esc = (s)=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+// 담기 목록
+document.getElementById("pickList").innerHTML = PICK.map((s,i)=>`
+  <label class="row">
+    <input type="checkbox" ${i!==0&&i!==3?"checked":""}>
+    <span>
+      <span class="nm"><b>${esc(s.n)}</b>${s.obs?'<span class="badge">우리 기록</span>':""}</span>
+      <span class="meta">${esc(s.meta)}</span>
+    </span>
+    <span class="cnt">1학년 ${s.g1}명</span>
+  </label>`).join("");
+
+// 비교표
+document.getElementById("cmpBody").innerHTML = HIGH.map(s=>`
+  <tr>
+    <td class="k">${esc(s.n)}</td>
+    <td class="n">${s.g1}</td><td class="n">${s.cls}</td><td class="n">${s.per.toFixed(1)}</td>
+    <td class="n" style="color:var(--ink);font-weight:700">${Math.floor(s.g1/10)}</td>
+    <td class="n">${s.out==null?"—":s.out.toFixed(1)+"%"}</td>
+    <td class="n">${s.uni==null?"—":s.uni+"%"}</td>
+  </tr>`).join("");
+
+// 맞는 학생
+document.getElementById("fitList").innerHTML = FIT.map(t=>`
+  <div style="display:grid;grid-template-columns:22px 1fr;gap:10px;padding:8px 0;font-size:13.5px">
+    <span style="width:6px;height:6px;background:var(--yellow-hi);margin-top:8px"></span><span>${esc(t)}</span>
+  </div>`).join("");
+
+// 중학교 진로
+document.getElementById("midList").innerHTML = MID.map(m=>{
+  const shown = m.s.reduce((a,b)=>a+b[1],0);
+  const rest = m.grad - shown;
+  const all = rest>0 ? m.s.concat([["그 외",rest,"hair"]]) : m.s;
+  const bar = all.map(([l,c,k])=>`<div style="width:${(c/m.grad*100).toFixed(2)}%;background:${COLOR[k]}" title="${esc(l)} ${c}명"></div>`).join("");
+  const leg = all.filter(x=>x[1]>0).map(([l,c,k])=>
+    `<span><span class="sw" style="background:${COLOR[k]}"></span>${esc(l)} <strong>${c}</strong><span style="color:var(--muted)"> (${(c/m.grad*100).toFixed(1)}%)</span></span>`).join("");
+  return `<div style="padding:18px 0;border-bottom:1px solid var(--hair)">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:11px">
+      <b style="font-size:15.5px;color:var(--ink)">${esc(m.n)}</b>
+      <span style="font-size:12.5px;color:var(--muted)">졸업생 ${m.grad}명 · 2025년 공시</span>
+    </div>
+    <div class="bar">${bar}</div>
+    <div class="legend">${leg}</div>
+    <div style="margin-top:9px;font-size:12.5px;color:var(--muted)">특목고 안을 열어보면 — ${esc(m.sub)}</div>
+  </div>`;
+}).join("");
+
+// 변경표
+document.querySelector("#diffTable tbody").innerHTML = DIFF.map(([b,a,w])=>
+  `<tr><td class="before">${esc(b)}</td><td class="after">${esc(a)}</td><td class="why">${esc(w)}</td></tr>`).join("");
+
+// 1등급 자리 계산
+function seats(n){ return n>0 ? Math.floor(n*10/100) : 0; }
+function warn(n){
+  if(!n||n<=0) return "";
+  const s = seats(n);
+  let msg = null;
+  if(s===0) msg = `수강자 ${n}명이면 상위 10%에 드는 자리가 없습니다. 소인수 과목은 등급이 안 나올 수 있어요.`;
+  else if(s===1) msg = `수강자 ${n}명이면 1등급은 딱 1명입니다.`;
+  else if(n%10===9) msg = `수강자 ${n}명은 경계예요. 한 명만 더 들어오면 ${s+1}자리가 됩니다.`;
+  else if(n%10===0) msg = `수강자 ${n}명은 경계예요. 한 명만 빠져도 ${s-1}자리가 됩니다.`;
+  return msg ? `<div style="background:var(--brick-soft);border-left:2px solid var(--brick);padding:9px 12px;font-size:12.5px;color:var(--brick);margin-top:10px">${esc(msg)}</div>` : "";
+}
+function sync(inputId, outId, warnId){
+  const n = Number(document.getElementById(inputId).value) || 0;
+  document.getElementById(outId).textContent = n ? seats(n) : "—";
+  document.getElementById(warnId).innerHTML = warn(n);
+}
+["nCommon","nElect"].forEach((id,i)=>{
+  const out = i===0?"seatCommon":"seatElect", w = i===0?"warnCommon":"warnElect";
+  document.getElementById(id).addEventListener("input", ()=>sync(id,out,w));
+  sync(id,out,w);
+});
+
+// 탭
+const tabs = [...document.querySelectorAll('nav button')];
+tabs.forEach(b=>b.addEventListener("click",()=>{
+  tabs.forEach(x=>x.setAttribute("aria-selected", String(x===b)));
+  document.querySelectorAll('[data-panel]').forEach(p=>{
+    p.hidden = p.dataset.panel !== b.dataset.tab;
+  });
+  window.scrollTo({top:0,behavior:"instant"});
+}));
+</script>

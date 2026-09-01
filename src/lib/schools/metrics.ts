@@ -98,10 +98,12 @@ export function genderSplit(f: SchoolFact): { male: number; female: number } | n
  * 근거
  *  - 고등학교: 서울 283개교에서 진학자계 = p3+p4+p5+p6 항등식이 전건 일치.
  *    공시 정의는 전문대학 / 대학교 / 국외진학.
- *  - 중학교: 공시 정의는 일반고 / 특성화고 / 특수목적고(과학·외국어·국제·예술·체육·마이스터)
- *    / 자율고 / 기타 / 취업자 / 대안교육기관 / 무직및미상.
- *    동작·송파 45개교 집계에서 p3 76.0% p4 8.1% p9 9.6% 로 각각 일반고·특성화고·자율고와 맞고,
- *    서울체육중학교가 p7에 졸업 51명 중 40명이라 p7이 예술·체육고임이 확인된다.
+ *  - 중학교: 시도교육청 「초·중등학교 정보공시 시스템 매뉴얼」 부록의 입력표로 12개 열이 확정된다.
+ *    p3 일반고 · p4 특성화고 · p5 과학고 · p6 외국어고·국제고 · p7 예술고·체육고 ·
+ *    p8 마이스터고 · p9 자율형사립고 · p10 자율형공립고 · p11 기타(영재학교·각종학교 등) ·
+ *    p12 취업자 · p13 대안교육기관진학 · p14 무직자및미상.
+ *    소계는 응답에 없고 12개가 서로 배타적이다(전국 3,475건 중 99.7%에서 p3~p14 합 = 졸업자).
+ *    서울체육중이 p7에 51명 중 40명, 예원학교·선화예술중도 p7에 몰리는 것이 예술·체육고 합산 열임을 뒷받침한다.
  */
 export interface PathSlice {
   key: string;
@@ -134,9 +136,10 @@ export function pathBreakdown(f: SchoolFact): PathSlice[] | null {
   }
 
   const special = (f.p5 ?? 0) + (f.p6 ?? 0) + (f.p7 ?? 0) + (f.p8 ?? 0);
+  const autonomous = (f.p9 ?? 0) + (f.p10 ?? 0); // 자사고 + 자공고
   const named = [
     slice("general", "일반고", f.p3, true),
-    slice("autonomous", "자율고", f.p9, true),
+    slice("autonomous", "자율고", autonomous, true),
     slice("special", "특목고", special, true),
     slice("vocational", "특성화고", f.p4),
   ];
@@ -167,9 +170,10 @@ export function headlinePath(f: SchoolFact): { label: string; value: number | nu
     return { label: "4년제", value: f.grad ? ((f.p4 ?? 0) / f.grad) * 100 : null };
   }
   const special = (f.p5 ?? 0) + (f.p6 ?? 0) + (f.p7 ?? 0) + (f.p8 ?? 0);
+  const autonomous = (f.p9 ?? 0) + (f.p10 ?? 0);
   return {
     label: "특목·자율고",
-    value: f.grad ? ((special + (f.p9 ?? 0)) / f.grad) * 100 : null,
+    value: f.grad ? ((special + autonomous) / f.grad) * 100 : null,
   };
 }
 
