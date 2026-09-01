@@ -1,0 +1,548 @@
+<title>옳은 편성실</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ink:#1C1C1C; --body:#3A3A3A; --muted:#8A8A8A; --hair:#E4E2DD;
+  --paper:#F7F6F2; --ground:#FFFFFF; --yellow:#D9B300; --yellow-hi:#FFD400;
+  --blue:#1A7FBF; --blue-soft:#EAF4FA; --brick:#A8432F; --brick-soft:#FBEFEC;
+  --shade:#F1EFE9;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ink:#EFECE4; --body:#D2CEC4; --muted:#918D84; --hair:#33322E;
+    --paper:#1D1D1B; --ground:#141412; --yellow:#E4C232; --yellow-hi:#FFD400;
+    --blue:#63B2E0; --blue-soft:#16262E; --brick:#D8775F; --brick-soft:#2A1C18;
+    --shade:#232320;
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#EFECE4; --body:#D2CEC4; --muted:#918D84; --hair:#33322E;
+  --paper:#1D1D1B; --ground:#141412; --yellow:#E4C232; --yellow-hi:#FFD400;
+  --blue:#63B2E0; --blue-soft:#16262E; --brick:#D8775F; --brick-soft:#2A1C18;
+  --shade:#232320;
+}
+*{box-sizing:border-box}
+body{
+  background:var(--ground); color:var(--body);
+  font-family:'Noto Sans KR',system-ui,-apple-system,'Malgun Gothic',sans-serif;
+  font-size:15px; line-height:1.72; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1000px;margin:0 auto;padding:0 28px 120px}
+mono,.mono,code,th,.eyebrow,.chip,.num{font-family:'IBM Plex Mono',ui-monospace,'SFMono-Regular',Menlo,monospace}
+
+/* ── masthead ───────────────────────────── */
+.mast{padding:64px 0 30px;border-bottom:1.5px solid var(--ink)}
+.brandline{display:flex;align-items:center;gap:10px;margin-bottom:34px}
+.dot{width:8px;height:8px;background:var(--yellow-hi);flex:none}
+.brandline span{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.22em;color:var(--muted);text-transform:uppercase}
+h1{font-size:40px;line-height:1.24;font-weight:700;color:var(--ink);margin:0 0 14px;letter-spacing:-.02em;text-wrap:balance}
+.sub{font-size:16px;color:var(--muted);max-width:62ch;margin:0}
+.meta{display:flex;flex-wrap:wrap;gap:0 40px;margin-top:32px;font-size:12.5px}
+.meta div{display:flex;gap:9px}
+.meta b{font-family:'IBM Plex Mono',monospace;font-weight:500;color:var(--muted);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.meta i{font-style:normal;color:var(--ink)}
+
+/* ── sections ───────────────────────────── */
+section{padding-top:62px}
+.eyebrow{display:flex;align-items:center;gap:9px;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-bottom:16px}
+.eyebrow::before{content:"";width:7px;height:7px;background:var(--yellow-hi);flex:none}
+h2{font-size:26px;font-weight:700;color:var(--ink);margin:0 0 8px;letter-spacing:-.015em;line-height:1.35;text-wrap:balance}
+h2 .num{font-size:15px;color:var(--yellow);margin-right:12px;letter-spacing:.06em;font-weight:500}
+h3{font-size:17px;font-weight:700;color:var(--ink);margin:38px 0 10px;line-height:1.45}
+h4{font-size:14px;font-weight:700;color:var(--blue);margin:26px 0 6px}
+.lede{font-size:16px;color:var(--muted);margin:0 0 6px;max-width:64ch}
+p{max-width:70ch;margin:14px 0}
+hr{border:0;border-top:1px solid var(--hair);margin:44px 0 0}
+strong{color:var(--ink);font-weight:700}
+a{color:var(--blue)}
+code{background:var(--shade);padding:1.5px 5px;font-size:12.5px;color:var(--ink);border-radius:2px;word-break:break-all}
+
+/* ── chips ──────────────────────────────── */
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;border:1px solid currentColor;white-space:nowrap;line-height:1.7}
+.c-live{color:var(--blue)} .c-doc{color:var(--muted)} .c-no{color:var(--brick)} .c-own{color:var(--yellow)}
+.chiprow{display:flex;flex-wrap:wrap;gap:7px;margin:16px 0 4px}
+
+/* ── tables ─────────────────────────────── */
+.scroll{overflow-x:auto;margin:22px 0 6px;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:13px;min-width:520px}
+th{font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+   color:var(--muted);text-align:left;padding:0 14px 7px 0;border-bottom:1.5px solid var(--ink);white-space:nowrap}
+td{padding:9px 14px 9px 0;border-bottom:1px solid var(--hair);vertical-align:top}
+tbody tr:hover{background:var(--paper)}
+.n{text-align:right;font-variant-numeric:tabular-nums;font-family:'IBM Plex Mono',monospace;padding-right:18px}
+th.n{text-align:right;padding-right:18px}
+td.k{color:var(--ink);font-weight:500;white-space:nowrap}
+.at{font-family:'IBM Plex Mono',monospace;color:var(--yellow);font-weight:500}
+
+/* ── callouts ───────────────────────────── */
+.note{background:var(--paper);padding:20px 24px;margin:26px 0;border-left:2px solid var(--yellow-hi)}
+.note.blue{background:var(--blue-soft);border-left-color:var(--blue)}
+.note.warn{background:var(--brick-soft);border-left-color:var(--brick)}
+.note .lbl{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:7px}
+.note.blue .lbl{color:var(--blue)} .note.warn .lbl{color:var(--brick)}
+.note p{margin:0;max-width:66ch} .note p+p{margin-top:10px}
+
+/* ── lists ──────────────────────────────── */
+ul,ol{max-width:70ch;padding-left:0;list-style:none;margin:14px 0}
+ul li{position:relative;padding-left:18px;margin:7px 0}
+ul li::before{content:"";position:absolute;left:0;top:.72em;width:5px;height:5px;background:var(--hair)}
+ol{counter-reset:o}
+ol li{position:relative;padding-left:26px;margin:9px 0;counter-increment:o}
+ol li::before{content:counter(o,decimal-leading-zero);position:absolute;left:0;top:0;
+  font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--yellow);font-weight:500}
+
+/* ── layer stack ────────────────────────── */
+.stack{margin:26px 0;border-top:1px solid var(--hair)}
+.layer{display:grid;grid-template-columns:104px 1fr;gap:22px;padding:18px 0;border-bottom:1px solid var(--hair);align-items:start}
+.layer .tag{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase}
+.layer .tag em{display:block;font-style:normal;font-size:19px;letter-spacing:-.01em;margin-bottom:3px;color:var(--ink)}
+.l1 .tag{color:var(--muted)} .l2 .tag{color:var(--yellow)} .l3 .tag{color:var(--blue)}
+.layer h5{margin:0 0 5px;font-size:15px;color:var(--ink);font-weight:700}
+.layer p{margin:0;font-size:13.5px}
+
+/* ── formula ────────────────────────────── */
+.fx{background:var(--paper);padding:14px 18px;margin:12px 0;font-family:'IBM Plex Mono',monospace;
+    font-size:12.5px;color:var(--ink);overflow-x:auto;white-space:pre;line-height:1.85}
+
+/* ── two column ─────────────────────────── */
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0 44px;margin:22px 0}
+.two>div{border-top:1px solid var(--hair);padding-top:16px}
+.two h5{margin:0 0 6px;font-size:14.5px;color:var(--ink)}
+.two p{margin:0;font-size:13.5px;max-width:none}
+
+/* ── timeline ───────────────────────────── */
+.tl{margin:26px 0;border-top:1px solid var(--hair)}
+.tl-row{display:grid;grid-template-columns:92px 1fr;gap:22px;padding:16px 0;border-bottom:1px solid var(--hair)}
+.tl-row .when{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--yellow);letter-spacing:.06em;padding-top:2px}
+.tl-row h5{margin:0 0 4px;font-size:14.5px;color:var(--ink);font-weight:700}
+.tl-row p{margin:0;font-size:13.5px;max-width:62ch}
+
+footer{margin-top:76px;padding-top:22px;border-top:1.5px solid var(--ink);display:flex;justify-content:space-between;
+  flex-wrap:wrap;gap:14px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--muted)}
+@media(max-width:640px){
+  h1{font-size:29px} h2{font-size:21px} .wrap{padding:0 18px 80px}
+  .layer,.tl-row{grid-template-columns:1fr;gap:8px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+</style>
+
+<div class="wrap">
+
+<header class="mast">
+  <div class="brandline"><span class="dot"></span><span>ORUN ENGLISH · Product Specification</span></div>
+  <h1>옳은 편성실</h1>
+  <p class="sub">공시데이터를 바닥에 깔고 그 위에 학원이 직접 관측한 것을 쌓아, 학부모 설명회 자료가 스스로 조립되게 만드는 프로그램. 이 문서는 그 설계다.</p>
+  <div class="meta">
+    <div><b>대상</b><i>2027학년도 예비고1 · 예비중1 학부모</i></div>
+    <div><b>학군</b><i>동작 · 송파 · 서울 외고국제고 · 전국단위 자사고</i></div>
+    <div><b>기준일</b><i>2026.09.01</i></div>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════ -->
+<section>
+  <div class="eyebrow">Summary</div>
+  <h2><span class="num">01</span>결론부터</h2>
+  <p class="lede">참고하신 화면은 <strong>공시데이터를 예쁘게 조회해 주는 도구</strong>입니다. 그건 이미 무료로 여러 개 있고, 결정적으로 그 화면의 간판 숫자 두 개(영어 성취도 A비율, 4년제 진학률)는 공공 API로 받을 수 없습니다. 똑같이 만들면 남들과 같은 바닥에서 싸우게 됩니다.</p>
+
+  <p>제안하는 방향은 조회 도구가 아니라 <strong>편성 도구</strong>입니다. 설명회는 학교를 나열하는 자리가 아니라 <strong>시간 위에서 벌어지는 사건</strong>이고, 원장님이 실제로 쓰는 시간의 90%는 "무슨 데이터를 볼까"가 아니라 "이걸 어떤 순서로 어떻게 말할까"에 들어갑니다. 그래서 이 프로그램의 1급 객체는 학교가 아니라 <strong>근거 카드</strong>이고, 카드를 발표 시간축에 얹으면 슬라이드·배포 PDF·구어체 대본·예상 질문 반박카드가 같은 데이터에서 한꺼번에 빌드됩니다.</p>
+
+  <p>그리고 그 카드 더미에는 <strong>공시에 없는 층</strong>이 섞여 있습니다. 옳은영어는 이미 숭의여고·성남고·영등포고·당곡고의 내신 시그니처 문항 유형을 코드로 갖고 있습니다(<code>src/lib/question-types/school.ts</code>). 학교별 서술형 비중, 교과서, 지필 난이도, 우리 학생의 성적 이동 — 이건 어떤 API에도 없고, 3년 쌓이면 아무도 복제하지 못합니다. 공시는 바닥재일 뿐이고 <strong>차별화는 전부 그 위층에서 납니다.</strong></p>
+
+  <div class="note">
+    <span class="lbl">이 설계의 세 가지 규칙</span>
+    <p><strong>하나.</strong> 순위를 만들 수 없는 구조로 짓는다. 별점·등수·신호등·추천 배지는 데이터 모델에서부터 없앤다. 특정 학교를 깎아내리는 순간 법적 문제이자 평판 문제가 된다.</p>
+    <p><strong>둘.</strong> 사실과 해석을 물리적으로 분리한다. 공시 원문은 원문대로, 학원 견해는 견해로, 다른 필드·다른 배경·다른 라벨.</p>
+    <p><strong>셋.</strong> 못 하는 건 안 한다. 확률을 계산할 수 없는 구간은 빈칸으로 두고 왜 빈칸인지를 쓴다. 지어낸 숫자 하나가 설명회 전체의 신뢰를 날린다.</p>
+  </div>
+</section>
+
+<hr>
+
+<!-- ══════════════════════════════════════ -->
+<section>
+  <div class="eyebrow">Scope · 실측 완료</div>
+  <h2><span class="num">02</span>분석 대상</h2>
+  <p class="lede">지정하신 네 그룹을 실제로 수집했습니다. 아래 숫자는 추정이 아니라 2026-09-01에 API가 반환한 값입니다.</p>
+
+  <div class="scroll">
+  <table>
+    <thead><tr><th>그룹</th><th class="n">학교 수</th><th>구성</th><th>수집 방법</th></tr></thead>
+    <tbody>
+      <tr><td class="k">동작구 고등학교</td><td class="n">8</td><td>일반고 7 · 특성화고 1(서울공업고)</td><td><code>sggCode=11590</code></td></tr>
+      <tr><td class="k">동작구 중학교</td><td class="n">16</td><td>공립 12 · 사립 4</td><td><code>schulKndCode=03</code></td></tr>
+      <tr><td class="k">송파구 고등학교</td><td class="n">21</td><td>일반고 17 · 자율고 1(보인) · 특성화 2 · 특목 1(서울체고)</td><td><code>sggCode=11710</code></td></tr>
+      <tr><td class="k">송파구 중학교</td><td class="n">29</td><td>동작구의 약 2배 규모</td><td>시도 전량 후 자치구 필터</td></tr>
+      <tr><td class="k">서울 외고 · 국제고</td><td class="n">7</td><td>외고 6(대원·대일·명덕·서울·이화여자·한영) · 국제고 1(서울국제고)</td><td>학교명 + 특목고 필터</td></tr>
+      <tr><td class="k">전국단위 자사고</td><td class="n">10</td><td>하나 · 외대부고 · 민사고 · 상산 · 북일 · 김천 · 포항제철 · 광양제철 · 현대청운 · 인천하늘</td><td>전국 2,676교에서 필터</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p style="font-size:13.5px;color:var(--muted)">합계 <strong>91개교</strong>. 전국 고등학교 2,676건을 시도별로 전부 받아 두었으므로, 나중에 관악구나 영등포구를 붙이는 데는 코드 한 줄이면 됩니다.</p>
+
+  <h3>수집한 값이 실제로 이렇게 붙습니다 — 동작구 일반고 7교</h3>
+  <div class="scroll">
+  <table>
+    <thead><tr>
+      <th>학교</th><th class="n">1학년<br>학급</th><th class="n">재학생</th><th class="n">학급당</th>
+      <th class="n">고1 전출</th><th class="n">이탈률</th><th class="n">졸업자</th><th class="n">4년제</th><th class="n">기타</th>
+    </tr></thead>
+    <tbody>
+      <tr><td class="k">경문고</td><td class="n">8</td><td class="n">635</td><td class="n">26.5</td><td class="n">2</td><td class="n">1.0%</td><td class="n">197</td><td class="n">101</td><td class="n">69</td></tr>
+      <tr><td class="k">동작고</td><td class="n">9</td><td class="n">719</td><td class="n">24.0</td><td class="n">9</td><td class="n">3.8%</td><td class="n">219</td><td class="n">78</td><td class="n">87</td></tr>
+      <tr><td class="k">성남고</td><td class="n">11</td><td class="n">921</td><td class="n">27.1</td><td class="n">14</td><td class="n">4.5%</td><td class="n">315</td><td class="n">137</td><td class="n">154</td></tr>
+      <tr><td class="k">수도여고</td><td class="n">9</td><td class="n">749</td><td class="n">24.2</td><td class="n">8</td><td class="n">3.3%</td><td class="n">262</td><td class="n">102</td><td class="n">104</td></tr>
+      <tr><td class="k">숭의여고</td><td class="n">9</td><td class="n">651</td><td class="n">24.1</td><td class="n">5</td><td class="n">2.3%</td><td class="n">227</td><td class="n">108</td><td class="n">82</td></tr>
+      <tr><td class="k">영등포고</td><td class="n">6</td><td class="n">458</td><td class="n">20.8</td><td class="n">2</td><td class="n">1.3%</td><td class="n">167</td><td class="n">77</td><td class="n">39</td></tr>
+      <tr><td class="k">흑석고</td><td class="n">8</td><td class="n">210</td><td class="n">23.3</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:13px;color:var(--muted)">규모 2026년 공시 · 진로 2025년 공시(2026년분은 12/1 공개). 흑석고는 신설교라 졸업생이 아직 없습니다 — 이런 학교를 <em>"데이터 없음"</em>이 아니라 <em>"2024년 개교, 첫 졸업생 2027년 2월"</em>로 설명하는 것까지가 제품의 일입니다.</p>
+</section>
+
+<hr>
+
+<!-- ══════════════════════════════════════ -->
+<section>
+  <div class="eyebrow">Data · 검증 결과</div>
+  <h2><span class="num">03</span>어디서 무엇을 받는가</h2>
+  <p class="lede">전부 직접 호출해서 확인했습니다. 문서에 적힌 것과 실제가 다른 지점이 여러 군데 있었습니다.</p>
+
+  <div class="chiprow">
+    <span class="chip c-live">실측 확인</span><span class="chip c-doc">문서 확인</span>
+    <span class="chip c-no">확보 불가</span><span class="chip c-own">학원 자산</span>
+  </div>
+
+  <h3>3.1 학교알리미 공시 API <span class="chip c-live">실측 확인</span></h3>
+  <div class="fx">GET https://www.schoolinfo.go.kr/openApi.do
+    ?apiKey={키}  &amp;apiType={NN}  &amp;schulKndCode=04
+    &amp;sidoCode=11  &amp;sggCode=11590  &amp;pbanYr=2026</div>
+  <ul>
+    <li><code>schulKndCode</code> — 02 초 · <strong>03 중</strong> · <strong>04 고</strong> · 05 특수 · 06 그외 · 07 각종</li>
+    <li><code>sggCode</code> — <strong>동작구 11590 · 송파구 11710</strong> (전체 코드표: <code>/download/sido_sggCode.xlsx</code>)</li>
+    <li><code>pbanYr</code> — 대부분의 항목에서 필수. <strong>2024·2025·2026 세 해만</strong> 조회됩니다(특례법 시행령상 3년 롤링 삭제)</li>
+    <li>호출 제한 없음 · 연 1회 적재 · JSON · 라이선스 <strong>공공누리 제1유형(출처표시, 영리·가공 허용)</strong></li>
+    <li>학교코드는 <code>S</code> + 9자리 (예: 숭의여고 <code>S010000482</code>). <strong>NEIS 코드와 직접 조인되지 않습니다</strong></li>
+  </ul>
+
+  <div class="note blue">
+    <span class="lbl">키 없이도 오늘 바로 됩니다</span>
+    <p><code>apiKey=sample</code>이 실제로 동작합니다. 다만 <strong>응답이 20행에서 잘립니다</strong> — 동작구 고교(8개)는 다 나오지만 송파구(21개)는 잘립니다. 개발·검증용으로는 충분하고, 운영은 발급키가 필요합니다.</p>
+  </div>
+
+  <h4>제공되는 35종과 그중 실제로 쓸 것</h4>
+  <div class="scroll">
+  <table>
+    <thead><tr><th class="n">apiType</th><th>항목</th><th>이 프로그램에서의 쓸모</th></tr></thead>
+    <tbody>
+      <tr><td class="n at">0</td><td class="k">학교기본정보</td><td><strong>위도·경도 포함</strong> — 지오코딩 없이 통학거리 계산 가능. 설립·유형·남녀공학</td></tr>
+      <tr><td class="n at">62</td><td class="k">학교 현황</td><td>학년별 학급수, 재학생 수, 학급당 학생수</td></tr>
+      <tr><td class="n at">09</td><td class="k">학년별·학급별 학생수</td><td>1학년 학급수/학생수, 수업교원 1인당 학생수</td></tr>
+      <tr><td class="n at">24</td><td class="k">표시과목별 교원 현황</td><td><strong>과목별 교원수</strong> — 그 학교 영어 교사가 몇 명인지. 영어학원에 가장 중요한 항목</td></tr>
+      <tr><td class="n at">10</td><td class="k">전·출입 및 학업중단</td><td><strong>고1 전출 학생수</strong> — 위 표의 이탈률이 여기서 나옵니다</td></tr>
+      <tr><td class="n at">08</td><td class="k">수업일수 및 수업시수</td><td>주당 수업시수, 수업교원수</td></tr>
+      <tr><td class="n at">67</td><td class="k">교육운영 특색사업</td><td><strong>교과교실제 · 자율학교 · 수준별 수업</strong> 운영 여부</td></tr>
+      <tr><td class="n at">59</td><td class="k">방과후학교</td><td>교과 프로그램 수, 수강 학생 수, 수익자부담금액</td></tr>
+      <tr><td class="n at">51</td><td class="k">입학생 현황</td><td>고1 입학생 구성(당해 졸업자·검정고시·기타)</td></tr>
+      <tr><td class="n at">63</td><td class="k">성별 학생수</td><td>학년별 남녀 — 남고·여고·공학 비교</td></tr>
+      <tr><td class="n at">56 · 58 · 55 · 61</td><td class="k">동아리 · 도서관 · 장학금 · 상담</td><td>학교 색깔. 배포 PDF 하단 보조 정보</td></tr>
+      <tr><td class="n at">04</td><td class="k">자유학기제</td><td><strong>중학교 전용</strong> — 중학교 설명회에서 사용</td></tr>
+      <tr><td class="n at">22 · 64 · 68</td><td class="k">교원 현황 3종</td><td>기간제 비율 등. 해석이 예민해 기본 비표시</td></tr>
+      <tr><td class="n at">16·17·18·20·21·34·35·38·42·43·44·73·90·27·28·30·94</td><td class="k">시설 · 급식 · 보건 · 재정 등 17종</td><td>설명회 활용도 낮음. 수집만 하고 화면에는 안 올림</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:13px;color:var(--muted)">명세 파일 <code>OpenAPI_Output.xlsx</code>에는 35종이지만 <strong>API 제공목록 페이지에는 34종</strong>입니다 — 환경위생관리(42)가 목록에서 빠져 있고 실제 호출도 실패합니다. 이런 불일치가 곳곳에 있어 수집기는 항목별 성공/실패를 기록하도록 설계합니다.</p>
+
+  <h3>3.2 진학률 — 공식 API에 없지만 받을 수 있습니다 <span class="chip c-live">실측 확인</span></h3>
+  <p>학부모가 가장 궁금해하는 <strong>졸업생의 진로 현황</strong>은 공식 OpenAPI 35종에 없습니다. 그런데 학교알리미 '공개용 데이터' 화면이 내부적으로 쓰는 경로로는 <strong>시도 단위 전량이 한 번에</strong> 나옵니다.</p>
+  <div class="fx">POST https://www.schoolinfo.go.kr/openData.do
+  APIKEY=schoolinfo2020 &amp; APITYPE=52 &amp; SCHULKNDCODE=04
+  &amp; PBANYR=2025 &amp; LCTNSCCODE=01        ← 서울
+
+  → 서울 고교 283건. TOTAL2 졸업자 · TOTAL3 전문대 · TOTAL4 4년제
+    TOTAL6 국외진학 · TOTAL7 취업 · TOTAL8 기타 · TOT_SUM_RATE 진학률</div>
+  <ul>
+    <li><code>DEPTHNO</code> 파라미터를 <strong>넣으면 실패</strong>합니다. 빼야 동작합니다.</li>
+    <li>2026년분은 <strong>2026-12-01 공개</strong> 예정 — 11월 설명회는 2025년 공시로 준비해야 합니다.</li>
+    <li>같은 경로로 <code>APITYPE=0·62·10</code>도 시도 전량(서울 고교 319~324건)이 나와 20행 제한을 우회합니다.</li>
+    <li>단, 이건 <strong>문서화되지 않은 내부 경로</strong>입니다. 예고 없이 막힐 수 있으니 정식 <code>apiKey</code> 수집을 1순위로 두고 이 경로는 보조로만 씁니다.</li>
+  </ul>
+
+  <h3>3.3 NEIS 교육정보 개방포털 <span class="chip c-live">실측 확인</span></h3>
+  <p>학교알리미와 겹치지 않습니다. API 12종이고, 이 프로그램에 결정적인 건 <strong>시간표</strong>입니다.</p>
+  <div class="fx">GET https://open.neis.go.kr/hub/hisTimetable
+    ?KEY={키} &amp;Type=json &amp;ATPT_OFCDC_SC_CODE=B10
+    &amp;SD_SCHUL_CODE=7010204 &amp;AY=2026 &amp;SEM=1 &amp;ALL_TI_YMD=20260511
+
+  → ITRT_CNTNT = "공통영어1"  ← 그 학교가 실제로 개설한 과목명</div>
+  <ul>
+    <li><strong>인증키 없으면 5행 고정</strong>이고 <code>pIndex</code>가 무시됩니다. 페이징되는 줄 착각하기 쉽습니다.</li>
+    <li>갱신 <strong>매주</strong> (학교알리미는 연 1회) · 이용 허락 범위 제한 없음 · <code>pSize</code> 상한 1,000</li>
+    <li>과목명에 <strong>분반 접미가 붙습니다</strong> — 영등포고 3학년 <code>심화 영어ⅠF</code>, <code>영어 독해와 작문D</code>. 정규화 필수.</li>
+    <li>시간표가 비어 있는 학교·학년이 산발적으로 있습니다(숭의여고 1학년). 결손을 "미개설"로 오독하면 안 됩니다.</li>
+  </ul>
+
+  <h3>3.4 공공데이터포털 표준데이터 <span class="chip c-doc">문서 확인</span></h3>
+  <ul>
+    <li><strong>전국고등학교 학교군 표준데이터</strong> — 평준화지역 학교군 도면. "우리 집은 어느 학교군인가"를 지도로 보여줄 근거</li>
+    <li><strong>전국 학구도 연계정보</strong> — 중학교 배정 설명회의 핵심</li>
+    <li><strong>전국 초중등학교 위치 표준데이터</strong> — 좌표 보조(학교알리미 <code>apiType=0</code>에 이미 있어 우선순위 낮음)</li>
+  </ul>
+
+  <h3>3.5 못 받는 것, 그래서 학원 자산이 되는 것</h3>
+  <div class="note warn">
+    <span class="lbl">교과별 학업성취 사항 — 확보 불가</span>
+    <p>영어 성취도 A~E 비율은 공시항목(코드 15)으로 <strong>존재하지만</strong>, 공식 API에도 공개용 데이터에도 없고, 내부 경로로도 <em>"해당 연도에 공시되지 않은 항목"</em>으로 거부됩니다. EDSS(에듀데이터서비스)는 <strong>학술연구 목적 + 정보공개심의회 심의</strong>라 학원은 사실상 통과가 어렵습니다.</p>
+    <p><strong>이건 손해가 아니라 해자입니다.</strong> 남들도 못 받습니다. 학교알리미 웹에서 학교별로 열람해 원장님이 연 2회(4월·9월 공시 직후) 채워 넣으면, 그 순간부터 이 숫자는 <strong>공시 인용이 아니라 옳은영어의 관측 자산</strong>이 됩니다. 화면에는 공시 원문 링크와 기준학기를 함께 답니다.</p>
+  </div>
+  <p>같은 이유로 못 받는 것들: 학교교육과정 편성·운영(05), 교과별 교수·학습 및 평가계획(14) — <strong>서술형 비중의 원본 근거</strong>, 교과 진도 운영계획(83), 입학전형 요강(57), 고등학교 Profile(81).</p>
+  <p>그리고 애초에 존재하지 않는 것: <strong>"○○고 서울대 몇 명"</strong>은 공식 공공데이터가 아닙니다. 대학알리미조차 신입생 출신고를 <em>유형</em>(일반고/특목고/자사고) 단위로만 공개합니다. 시중에 도는 고교별 실적표는 민간 집계물이라 상업 설명회에 인용하면 저작권·정확성 양쪽이 걸립니다. <strong>쓰지 않습니다.</strong></p>
+</section>
+
+<hr>
+
+<!-- ══════════════════════════════════════ -->
+<section>
+  <div class="eyebrow">Context</div>
+  <h2><span class="num">04</span>2027 예비고1이 실제로 겪는 제도</h2>
+  <p class="lede">설명회에서 틀리면 가장 치명적인 부분입니다. 자주 잘못 말해지는 것부터 정리합니다.</p>
+
+  <div class="two">
+    <div><h5>고교학점제는 이미 시행 중입니다</h5><p>2025학년도 고1부터 전국 전면 적용. "2027년부터 바뀝니다"는 틀린 말입니다. 졸업 요건 192학점(교과 174 + 창체 18).</p></div>
+    <div><h5>이수 기준은 2026년에 완화됐습니다</h5><p>2026-01-15 국가교육위원회 의결로, 선택과목은 <strong>출석률 2/3만</strong> 채우면 이수 인정. 공통과목만 성취율 40%를 함께 봅니다. 2027 입학생은 처음부터 완화된 기준으로 3년을 보냅니다.</p></div>
+    <div><h5>내신은 5등급, 1등급은 10%</h5><p>1등급 10% · 2등급 누적 34% · 3등급 66% · 4등급 90% · 5등급 100%. 절대평가 성취도(A~E)와 상대평가 석차등급이 <strong>함께</strong> 기재됩니다.</p></div>
+    <div><h5>진로선택과목에도 등급이 나옵니다</h5><p>2015 개정 때와 다릅니다. 등급이 안 나오는 건 사회·과학 융합선택 9과목, 체육·예술, 과학탐구실험, 교양뿐입니다.</p></div>
+  </div>
+
+  <div class="note warn">
+    <span class="lbl">가장 많이 틀리는 계산</span>
+    <p>"1학년 84명이니까 1등급은 8명"은 <strong>공통과목에서만 맞습니다.</strong> 석차등급은 <strong>과목별 수강자 수</strong> 기준이라, 2·3학년 선택과목에서 수강자가 30명이면 1등급은 3명이고 15명이면 반올림해서 2명입니다. 수강자 13명 이하면 1등급이 1명, <strong>수강자 수가 적으면 석차등급 자체가 안 나옵니다.</strong></p>
+    <p>그래서 계산기 입력칸을 <strong>두 개로 물리적으로 쪼갭니다</strong> — [공통과목: 학년 정원] / [선택과목: 예상 수강자 수]. 한 칸짜리 계산기는 학부모를 반드시 오해시킵니다.</p>
+  </div>
+
+  <h3>서울 고입 — 특목자사 지원의 진짜 대가</h3>
+  <p>서울 후기 일반고는 <strong>선복수지원 후추첨</strong> 3단계입니다.</p>
+  <ol>
+    <li><strong>1단계</strong> — 서울 전역 단일학교군에서 2개교 지원. 학교 정원의 20%(중부학교군은 60%)를 전산추첨 배정</li>
+    <li><strong>2단계</strong> — 거주지 교육지원청 단위 11개 학교군 중 하나에서 2개교 지원. 정원의 40%</li>
+    <li><strong>3단계</strong> — 미배정자를 인접 2개 학교군을 묶은 19개 통합학교군 범위에서 통학편의·수용여건을 고려해 강제 배정</li>
+  </ol>
+  <p>학생이 지망으로 통제할 수 있는 몫은 <strong>정원의 최대 60%</strong>이고, 나머지 40%는 본인 의사와 무관하게 채워집니다. 그리고 <strong>자사고·외고·국제고에 지원하면 1단계를 쓸 수 없습니다.</strong> 특목자사 원서 한 장의 대가가 "서울 전역 선택권 2장의 포기"라는 걸 대부분의 학부모가 모릅니다. <strong>이게 설명회에서 제일 값진 한 장입니다.</strong></p>
+  <p>경기도는 반대로 1지망에 외고·국제고·자사고를 쓰고 2지망부터 일반고를 씁니다. 같은 "동시지원 가능"이 지역마다 전혀 다른 손해를 뜻하므로, 지역 코드에 따라 이 화면은 다르게 렌더링되어야 합니다.</p>
+
+  <div class="note">
+    <span class="lbl">배정 확률은 계산하지 않습니다</span>
+    <p>단계별 지원자 수가 공개되지 않으므로 1·2단계 배정 확률은 <strong>원리적으로 계산 불가능</strong>합니다. 그럴듯한 감쇠함수를 넣어 숫자를 뽑는 건 창작입니다. 대신 <strong>통합학교군 안의 학교 전체 명단과 각각의 통학시간</strong>을 한 표로 펼칩니다 — "확률"이 아니라 "이 학교들 중 어디든 갈 수 있다"는 사실을 보여주는 게 정직하고 더 유용합니다.</p>
+  </div>
+</section>
+
+<hr>
+
+<!-- ══════════════════════════════════════ -->
+<section>
+  <div class="eyebrow">Architecture</div>
+  <h2><span class="num">05</span>3층 구조</h2>
+  <p class="lede">이 분리가 이 제품의 뼈대입니다. 스키마·API·컴포넌트·출력물까지 끝까지 분리합니다. 법적 방어선이자 동시에 세일즈 포인트입니다 — 학부모 눈앞에서 "무료 앱도 아는 회색 층" 위에 "옳은영어만 아는 층"이 얹히는 게 보입니다.</p>
+
+  <div class="stack">
+    <div class="layer l1">
+      <div class="tag"><em>FACT</em>공시</div>
+      <div><h5>공시 원문 그대로</h5><p>학교알리미·NEIS에서 받은 값을 손대지 않고 저장. 출처·공시 기준일·조회일이 항상 따라다닙니다. 이 층은 누구나 가질 수 있습니다.</p></div>
+    </div>
+    <div class="layer l2">
+      <div class="tag"><em>OBS</em>관측</div>
+      <div><h5>옳은영어가 직접 본 것</h5><p>학교별 영어 서술형 비중, 교과서·부교재, 지필 난이도, 시험 범위, 우리 학생의 성적 이동. 증거 등급을 붙입니다 — 구술 &lt; 학생 답안지 &lt; 시험지 실물 &lt; 학교 공식문서.</p></div>
+    </div>
+    <div class="layer l3">
+      <div class="tag"><em>VIEW</em>해석</div>
+      <div><h5>원장님의 판단</h5><p>"그래서 어떻게 되나", "대책", "이 학교를 쓴다면 / 다른 학교라면". 사실이 아니라 <strong>의견</strong>으로 명시 표기됩니다. 형법상 사실적시와 의견표명의 경계를 UI 구조로 확보합니다.</p></div>
+    </div>
+  </div>
+
+  <p>세 층은 화면에서도 배경색과 라벨이 다르고, 배포 PDF에서도 <strong>공시 출처가 붙는 문단과 학원 견해 문단이 시각적으로 갈립니다.</strong> 참고 이미지의 <em>"공감영어학원이 본 것 — 공시 자료에 없는 정보"</em> 박스가 바로 이 2·3층인데, 그건 박스 하나로 처리했습니다. 우리는 데이터 모델부터 나눕니다.</p>
+</section>
+
+<hr>
+
+<!-- ══════════════════════════════════════ -->
+<section>
+  <div class="eyebrow">Metrics</div>
+  <h2><span class="num">06</span>독자 지표</h2>
+  <p class="lede">계산 가능하고 검증 가능한 것만 넣습니다. 후보 중 상당수를 의도적으로 버렸습니다.</p>
+
+  <h4>채택 — 전부 공시값만으로 재현 가능</h4>
+
+  <h3>1등급 자리 계산기</h3>
+  <div class="fx">공통과목  1등급 인원 = round(학년 정원 × 0.10)
+선택과목  1등급 인원 = round(과목 수강자 수 × 0.10)
+          수강자 ≤ 13 → 1등급 1명 · 소인수 과목은 석차등급 미산출</div>
+  <p>입력칸이 두 개인 게 핵심입니다. 성남고 1학년 정원 298명이면 공통과목 1등급은 30명이지만, 3학년 선택과목 수강자 24명이면 2명입니다. <strong>같은 학교 안에서 자리가 15배 차이 납니다.</strong></p>
+
+  <h3>영어 교사 1인당 학생수</h3>
+  <div class="fx">= 재학생 수 (apiType 62 · COL_FGR_SUM)
+  ÷ 영어 교원수 (apiType 24 · 과목명='영어' 행의 SUM_CNT)</div>
+  <p>영어학원이 물어야 할 질문에 정확히 대응합니다. 남들은 "학급당 학생수"만 보여줍니다.</p>
+
+  <h3>고1 이탈률</h3>
+  <div class="fx">= 고등부1학년 전출학생수 (COL_412)
+  ÷ 고등부1학년 전체학생수 (STDNT_SUM_41) × 100</div>
+  <p>위 표에서 동작구는 1.0%~4.5%로 갈립니다. <strong>순수 공시값의 나눗셈이라 반박 불가</strong>하고, 어떤 무료 앱도 이 숫자를 보여주지 않습니다.</p>
+
+  <h3>영어 교육과정 프로파일</h3>
+  <div class="fx">NEIS hisTimetable → ITRT_CNTNT 수집 (1년치)
+  → 분반 접미 정규화 ("심화 영어ⅠF" → "심화 영어Ⅰ")
+  → 학년별 영어 과목 목록 + 주당 코마 수</div>
+  <p>"이 학교 3학년은 <em>영어 독해와 작문</em>과 <em>심화 영어</em>를 엽니다. 저 학교는 안 엽니다." — 고교학점제 설명회에서 아무도 안 보여주는 카드입니다.</p>
+
+  <h3>통학 시간</h3>
+  <p><code>apiType=0</code>의 <code>LTTUD</code>/<code>LGTUD</code>로 집·학원 ↔ 학교 거리를 바로 계산합니다. 지오코딩 API가 필요 없습니다. 정렬 기본값을 <strong>통학거리순</strong>으로 고정해 "성적순 나열"이 구조적으로 불가능하게 만듭니다.</p>
+
+  <h3>근거 신선도</h3>
+  <p>모든 카드에 <strong>공시 기준일 기준 경과</strong>를 표시합니다. 진로현황은 항상 전년도 졸업생 기준이고, 4월 공시 성취도는 <em>전 학년도</em> 성적입니다. 이걸 표시하지 않으면 원장님도 1년을 오독합니다.</p>
+
+  <div class="note warn">
+    <span class="lbl">버린 지표 — 왜 버렸는지가 중요합니다</span>
+    <p><strong>학원 진단평가와 학교 내신의 격차 지수.</strong> 백분위와 원점수는 척도가 달라 빼면 단위 없는 숫자가 나옵니다. 척도를 맞출 방법이 없어 폐기.</p>
+    <p><strong>중학교 학생 능력 추정 회귀.</strong> "그 중학교 학생들의 실제 실력 평균"이라는 정답 레이블이 이 나라 어디에도 없습니다. 학습이 불가능한 모델입니다.</p>
+    <p><strong>배정 확률 계산.</strong> 단계별 지원자 수가 비공개라 원리적으로 불가.</p>
+    <p><strong>과목 수강자 수 추정.</strong> 코마수÷학점×학급당 학생수로 추정할 수 있어 보이지만 입력 세 개가 전부 불확실합니다. 계산기는 <strong>학부모가 직접 입력</strong>하게 두고, 우리는 추정하지 않습니다.</p>
+  </div>
+</section>
+
+<hr>
+
+<!-- ══════════════════════════════════════ -->
+<section>
+  <div class="eyebrow">Screens</div>
+  <h2><span class="num">07</span>화면</h2>
+  <p class="lede">참고 이미지의 4단계 위저드(학교 고르기 → 해설 입력 → 카피 고르기 → 발표)를 따라가지 않습니다. 그 구조는 <strong>한 번 쓰고 버리는</strong> 구조입니다. 우리는 자산이 쌓이는 구조로 갑니다.</p>
+
+  <div class="stack">
+    <div class="layer l1"><div class="tag"><em>A</em>원장</div>
+      <div><h5>학교 원장(ledger) — 상시 화면</h5><p>91개교가 카드가 아니라 <strong>장부</strong>로 쌓입니다. 학교 하나를 열면 공시층·관측층·해석층이 세로로 붙고, 빈 칸에는 <em>"아직 관측 없음"</em>이 표시됩니다. 설명회 시즌이 아니어도 여기에 계속 기록합니다. 시험 끝날 때마다 한 줄씩.</p></div></div>
+    <div class="layer l2"><div class="tag"><em>B</em>편성</div>
+      <div><h5>편성 데스크 — 설명회를 조립하는 곳</h5><p>왼쪽에 근거 카드 서랍(공시·관측·해석), 오른쪽에 <strong>발표 시간축</strong>. 카드를 시간축에 끌어다 놓으면 예상 소요시간이 실시간으로 합산됩니다. 카드를 하나 옮기면 슬라이드 순서와 대본이 같이 따라옵니다.</p></div></div>
+    <div class="layer l3"><div class="tag"><em>C</em>계산기</div>
+      <div><h5>1등급 자리 계산기 — 라이브 시연용</h5><p>설명회 중 학부모 앞에서 직접 조작합니다. 두 칸 입력, 반올림 경계 경고, 소인수 미산출 표시. 이 화면 하나가 "우리 학원은 제도를 정확히 안다"를 증명합니다.</p></div></div>
+    <div class="layer l1"><div class="tag"><em>D</em>배정</div>
+      <div><h5>통합학교군 펼치기</h5><p>주소를 넣으면 <strong>배정될 수 있는 학교 전체 명단</strong>과 통학시간이 한 표로. 확률은 없습니다. "여기 중 어디든 갈 수 있습니다"가 메시지입니다.</p></div></div>
+    <div class="layer l2"><div class="tag"><em>E</em>문항</div>
+      <div><h5>기출 유형 즉석 생성 <span class="chip c-own">기존 자산</span></h5><p>학교 카드에서 버튼 하나로 <strong>그 학교 시그니처 문항</strong>을 생성합니다. 이미 코드에 있는 숭의여고 지칭추론, 성남고 어휘, 영등포고 외부지문, 당곡고 영영사전을 그대로 씁니다. 설명회에서 학부모 앞에 실물 문항이 뜨는 순간, 이건 조회 서비스가 아니게 됩니다.</p></div></div>
+    <div class="layer l3"><div class="tag"><em>F</em>발표</div>
+      <div><h5>발표 모드 · 배포 PDF</h5><p>발표자 화면에 <strong>읽을 문장</strong>이 깔립니다. 대본을 따로 안 씁니다. 배포 PDF는 ORUN 문서 템플릿(레터헤드·헤어라인 표·옐로우 점)으로 나갑니다.</p></div></div>
+  </div>
+
+  <div class="note blue">
+    <span class="lbl">설명회 흐름은 강제하되 비워두지 않습니다</span>
+    <p>참고 이미지의 <em>어그로 → 후킹 → 안심 → 대책 → 대안</em> 구성은 실제로 타당합니다. 불안만 남기고 끝내면 학부모는 자리를 뜹니다. 그래서 <strong>불안을 세우는 막 뒤에는 반드시 내려 주는 막이 붙도록</strong> 편성 데스크가 검사합니다 — 안심·대책 카드가 없으면 발표 자료 빌드를 막고 경고합니다. 겁주기 도구가 되지 않게 하는 안전장치를 제품 안에 넣습니다.</p>
+  </div>
+</section>
+
+<hr>
+
+<!-- ══════════════════════════════════════ -->
+<section>
+  <div class="eyebrow">Safety</div>
+  <h2><span class="num">08</span>안전장치</h2>
+
+  <h3>공시 데이터에는 실제로 오류가 섞여 있습니다</h3>
+  <div class="note warn">
+    <span class="lbl">실제로 발견한 사례</span>
+    <p>송파구 <strong>잠실여자고등학교</strong>의 2025년 공시는 전문대 진학 38.2%, 4년제 14.7%입니다. 그런데 <strong>2024년은 전문대 14.0%, 4년제 42.6%</strong>였습니다. 학교가 두 칸을 뒤바꿔 입력한 것으로 보입니다. 서울에서 4년제 비율 최저 5개교에 방송통신고들과 함께 이 학교만 일반고로 끼어 있는 것도 이를 뒷받침합니다.</p>
+    <p>이 숫자를 그대로 슬라이드에 띄웠으면 <strong>특정 학교를 근거 없이 깎아내리는 자료</strong>가 됩니다. 그래서 수집기에 <strong>전년 대비 급변 감지</strong>를 넣고, 임계를 넘으면 카드에 <em>"공시값 이상 — 원문 확인 필요"</em>를 붙여 발표 자료 반입을 차단합니다.</p>
+  </div>
+
+  <h3>법적 경계</h3>
+  <ul>
+    <li><strong>라이선스는 문제없습니다.</strong> 학교알리미는 공공누리 제1유형, NEIS는 출처표시 조건 자유이용. 영리 목적 이용과 2차 가공이 명시적으로 허용됩니다. 단 <strong>모든 화면·출력물에 출처와 공시 기준일을 답니다.</strong></li>
+    <li><strong>진짜 위험은 표현입니다.</strong> 사실이어도 형법 제307조 제1항(사실적시 명예훼손)이 성립할 수 있습니다. 제310조 면책은 "공공의 이익"이 인정될 때만입니다. → 공시값 그대로 인용 + 해석은 별도 층 + 순위 표현 금지.</li>
+    <li><strong>학교알리미는 허위·과장광고 신고센터를 상시 운영합니다.</strong> 특례법 제10조의2에 따라 "공시된 정보와 다르게 알리는 행위"가 신고 대상입니다. 가공 과정에서 실제 공시값과 다른 인상을 주면 행정 리스크가 생깁니다.</li>
+    <li><strong>개인정보.</strong> 상담용으로 학생 성적을 입력받는다면 별도 동의·보관기간·파기 절차가 필요합니다. 1차 버전은 <strong>학생 데이터를 서버에 저장하지 않고</strong> 브라우저 안에서만 계산합니다.</li>
+  </ul>
+
+  <h3>순위를 만들 수 없는 구조</h3>
+  <ul>
+    <li>데이터 모델에 rank·score·grade·recommendation 필드를 만들지 않습니다</li>
+    <li>정렬 기본값은 <strong>통학거리순</strong>. 성적성 지표 정렬은 아예 제공하지 않습니다</li>
+    <li>차트 컴포넌트가 <strong>출처·공시기준일·조회일 3종 캡션을 필수 인자로</strong> 받습니다. 없으면 렌더링이 실패합니다 — 컴플라이언스를 문서가 아니라 타입으로 강제합니다</li>
+  </ul>
+</section>
+
+<hr>
+
+<!-- ══════════════════════════════════════ -->
+<section>
+  <div class="eyebrow">Build</div>
+  <h2><span class="num">09</span>기존 앱에 어떻게 붙이나</h2>
+  <p class="lede">새 프로젝트를 만들지 않습니다. 지금 저장소에 모듈로 붙입니다.</p>
+
+  <div class="two">
+    <div><h5>그대로 재사용</h5><p>접근코드 인증 · Supabase · react-query · shadcn/ui · recharts(차트) · docx·jspdf·html2canvas(출력물) · Anthropic SDK(대본 생성). 필요한 라이브러리가 <strong>이미 전부 설치돼 있습니다.</strong></p></div>
+    <div><h5>새로 만드는 것</h5><p><code>/schools</code> 라우트 · Supabase 신규 스키마 8개 테이블 · 수집 Edge Function · ORUN v2 디자인 토큰(현재 앱의 보라색 <code>luxury-*</code> 테마와 브랜드가 어긋나 있어 신규 모듈은 잉크·종이·옐로우 체계로 갑니다).</p></div>
+  </div>
+
+  <h3>키를 프론트엔드에 두면 안 됩니다</h3>
+  <div class="note warn">
+    <span class="lbl">지금 저장소의 실제 문제</span>
+    <p><code>.env</code> 파일이 <strong>git에 추적되고 있고 <code>.gitignore</code>에 빠져 있습니다.</strong> 여기에 API 키를 넣으면 다음 커밋에 GitHub로 올라갑니다. 키는 <code>.env.local</code>에 넣으십시오 — <code>*.local</code> 규칙에 걸려 제외되는 걸 확인했습니다.</p>
+    <p>운영 구조는 <strong>Supabase Edge Function이 키를 쥐고 프록시</strong>합니다. Vite의 <code>VITE_</code> 변수는 빌드 결과물에 그대로 박혀 누구나 볼 수 있습니다.</p>
+  </div>
+
+  <h3>수집 파이프라인</h3>
+  <div class="fx">Edge Function (cron)
+  ├ 학교알리미 openApi.do    · apiType 12종 × 91교   · 연 1회 + 공시 직후
+  ├ 학교알리미 openData.do   · 진로현황(52)          · 12월 공개 직후
+  ├ NEIS hisTimetable        · 학기당 1회 표본 수집   · 과목 프로파일
+  └ 원본 JSON을 해시와 함께 raw 테이블에 적재 (스냅샷 아카이브)
+       ↓  파싱·정규화·이상치 검사
+    school_fact  →  school_observation  →  briefing_card</div>
+  <p>원본을 그대로 남기는 이유가 있습니다. 학교알리미는 <strong>최근 3년치만 남기고 삭제</strong>합니다(특례법 시행령). 공시 직후 스냅샷을 떠 두면 구현비는 거의 0인데, <strong>3년 뒤엔 아무도 못 가진 시계열</strong>이 됩니다. 이게 가장 값싸고 가장 강력한 해자입니다.</p>
+</section>
+
+<hr>
+
+<!-- ══════════════════════════════════════ -->
+<section>
+  <div class="eyebrow">Roadmap · 11월 8일 역산</div>
+  <h2><span class="num">10</span>일정</h2>
+
+  <div class="tl">
+    <div class="tl-row"><div class="when">9월 1~2주</div><div><h5>데이터 레이어</h5><p>인증키 발급 · 수집 Edge Function · 91개교 적재 · Supabase 스키마. 지금 이미 <code>apiKey=sample</code>로 동작구 8교가 붙는 걸 확인했으므로 리스크가 낮습니다.</p></div></div>
+    <div class="tl-row"><div class="when">9월 3~4주</div><div><h5>학교 원장 화면</h5><p>공시층 렌더링 · 3종 캡션 강제 렌더러 · 이상치 감지. 이 시점에 원장님이 관측층을 채우기 시작할 수 있습니다.</p></div></div>
+    <div class="tl-row"><div class="when">10월 1~2주</div><div><h5>편성 데스크 + 계산기</h5><p>근거 카드 · 시간축 · 1등급 자리 계산기 · 통합학교군 펼치기. 설명회 자료를 실제로 조립해 보는 첫 리허설.</p></div></div>
+    <div class="tl-row"><div class="when">10월 3~4주</div><div><h5>출력물</h5><p>ORUN 템플릿 슬라이드 빌드 · 배포 PDF · 발표 모드 · 기존 문항 생성기 연결.</p></div></div>
+    <div class="tl-row"><div class="when">11월 1주</div><div><h5>리허설과 잠금</h5><p>실제 발표 리허설 · 데이터 재검증 · 오탈자. 이 주에는 기능을 추가하지 않습니다.</p></div></div>
+    <div class="tl-row"><div class="when">11월 8일</div><div><h5>설명회</h5><p>끝이 아니라 관측층의 첫 입력일입니다. 참석 학부모의 질문이 그대로 다음 카드가 됩니다.</p></div></div>
+  </div>
+
+  <div class="note">
+    <span class="lbl">1차 범위를 이렇게 줄입니다</span>
+    <p>11월 8일에 반드시 있어야 하는 건 <strong>동작구 고등학교 7교 + 1등급 자리 계산기 + 통합학교군 펼치기 + 배포 PDF</strong>입니다. 송파구·외고국제고·전국자사고는 데이터만 적재해 두고 화면은 12월 이후에 붙여도 설명회는 돌아갑니다. 중학교 설명회는 별도 시즌입니다.</p>
+  </div>
+</section>
+
+<hr>
+
+<!-- ══════════════════════════════════════ -->
+<section>
+  <div class="eyebrow">Decisions</div>
+  <h2><span class="num">11</span>원장님 결정이 필요한 것</h2>
+  <ol>
+    <li><strong>인증키 발급.</strong> 학교알리미(구글·카카오 로그인)와 NEIS(구글·네이버·다음) 두 곳. 각 5분. <code>sample</code> 키로도 개발은 되지만 송파구 21교가 20행에서 잘립니다.</li>
+    <li><strong>성취도 데이터를 채우실 범위.</strong> 동작구 7교만 먼저 할지, 91교 전체를 할지. 학교 하나당 학교알리미에서 영어 성취도 표를 옮겨 적는 데 5분 정도 걸립니다. <strong>7교면 35분, 91교면 하루 작업</strong>입니다.</li>
+    <li><strong>설명회에서 특목자사를 어느 강도로 다룰지.</strong> "1단계 포기"의 손실을 보여주는 건 강력하지만, 청중에 특목고 준비생 학부모가 섞여 있으면 톤을 조정해야 합니다.</li>
+    <li><strong>관측층 입력을 누가 하는지.</strong> 원장님 단독인지 강사분들도 쓰는지에 따라 권한 모델이 달라집니다.</li>
+  </ol>
+</section>
+
+<footer>
+  <span>ORUN ENGLISH · 옳은영어</span>
+  <span>출처 · 학교알리미 · 나이스 교육정보 개방포털 · 2026.09.01 조회</span>
+</footer>
+
+</div>
