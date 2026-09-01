@@ -633,7 +633,7 @@ main{padding:20px 22px 90px}
 .step small{font-size:11px;font-weight:500;letter-spacing:0}
 
 /* ── 트리 ── */
-.tree{padding:6px;border-radius:14px;max-height:376px;position:relative;
+.tree{padding:6px;border-radius:14px;height:420px;max-height:none;position:relative;
   -webkit-mask-image:linear-gradient(#000 calc(100% - 26px),transparent);
           mask-image:linear-gradient(#000 calc(100% - 26px),transparent)}
 .les.op>.h{background:var(--accSoft);color:var(--acc)}
@@ -1483,6 +1483,63 @@ footer.site{background:#fff;border-top:1px solid var(--line);margin-top:0}
 .swq .pq ol{font-size:11.5px}
 .swq .pq .pans{display:none}
 
+
+/* ═══ 선택 UI — 흔들림 제거 · 직관적 클릭 ═══ */
+/* 움직이는 전이 제거: 선택 중에는 어떤 것도 자리를 바꾸지 않는다 */
+.it,.les>.h,.row,.selchip{transition:background-color .14s ease,color .14s ease,
+  border-color .14s ease,box-shadow .14s ease!important;transform:none!important}
+.it::before{transition:opacity .14s ease!important;transform:none!important}
+.it.sel .chk,.les.allsel>.h .chk,.it.sel .chk svg,.les.allsel>.h .chk svg{animation:none!important}
+.seltray,.pickbar,.les>.b{animation:none!important}
+
+/* 트리 — 큰 클릭 영역, 또렷한 체크 상태 */
+.tree{height:420px;overflow:auto;scroll-behavior:auto;padding:8px;background:#fff}
+.tree::-webkit-scrollbar{width:10px}
+.tree::-webkit-scrollbar-thumb{background:#d8dae2;border-radius:10px;border:3px solid #fff}
+.les{margin-bottom:5px;border:1px solid var(--line2);border-radius:11px;overflow:hidden}
+.les>.h{padding:11px 12px;font-size:13px;gap:10px;background:#fafbfc;border-bottom:1px solid transparent}
+.les.op>.h{border-bottom-color:var(--line2)}
+.les>.b{padding:5px 6px 7px;background:#fff}
+.it{padding:10px 11px;font-size:13.2px;gap:11px;border-radius:9px;border:1px solid transparent;
+  margin-bottom:2px;cursor:pointer;user-select:none}
+.it:hover{background:#f4f5f8}
+.it.sel{background:var(--accSoft);border-color:#dcdcf6;box-shadow:none;color:#1e2140;font-weight:650}
+.it::before{width:3px;left:-1px;top:8px;bottom:8px;border-radius:0 3px 3px 0}
+.chk{width:19px;height:19px;border-radius:6px;border:1.6px solid #c8cbd4}
+.it:hover .chk{border-color:var(--acc)}
+.chk svg{width:11px;height:11px;stroke-width:3.2}
+.it .qn,.les>.h>span:last-child{font-size:11px;color:var(--sub2)}
+.it.sel .qn{color:var(--acc);font-weight:800}
+
+/* 선택 요약을 트리 바로 위 고정 바로 — 아래가 밀리지 않는다 */
+.selbar{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:0 0 10px;padding:9px 12px;
+  border:1px solid var(--line);border-radius:11px;background:#fbfbfd;min-height:44px}
+.selbar .c{font-family:var(--mono);font-size:11px;font-weight:800;color:#fff;background:var(--acc);
+  border-radius:999px;padding:3px 10px}
+.selbar .c.z{background:#dfe1e8;color:var(--sub2)}
+.selbar b{font-size:12.5px;font-weight:700}
+.selbar .sp{margin-left:auto}
+.selbar .lnk{font-size:11.5px;font-weight:700;color:var(--sub2);cursor:pointer;background:none;border:0;
+  font-family:inherit;padding:4px 8px;border-radius:7px}
+.selbar .lnk:hover{background:#eef0f4;color:var(--ink)}
+.selbar .lnk.d:hover{background:var(--redBg);color:var(--red)}
+
+/* 선택 항목 서랍 — 높이 고정, 접기 가능 */
+.seltray{margin-top:10px;border:1px solid var(--line);border-radius:11px;background:#fbfbfd;padding:10px 11px}
+.seltray .sh{margin-bottom:8px}
+.selwrap{max-height:96px;overflow:auto;gap:5px}
+.selwrap::-webkit-scrollbar{width:8px}
+.selwrap::-webkit-scrollbar-thumb{background:#d8dae2;border-radius:8px}
+.selchip{height:27px;font-size:11.5px;padding:0 4px 0 8px;gap:6px}
+.selchip button{width:17px;height:17px;font-size:10px}
+.selchip button:hover{transform:none!important}
+
+
+.seltray{min-height:104px}
+.seltray.empty{background:#fcfcfd;border-style:dashed}
+.seltray .sh .c.z{background:#dfe1e8;color:var(--sub2);box-shadow:none}
+.selwrap{min-height:34px;align-content:flex-start}
+
 /* ══ 시험지 ══ */
 #paper{display:none}
 .sheet{background:#fff;width:210mm;height:297mm;overflow:hidden;margin:0 auto 16px;padding:14mm 13mm 15mm;position:relative;
@@ -2004,7 +2061,7 @@ function decCfg(x){try{if(!/^OG[12]\./.test(x))return null;return JSON.parse(dec
 const PAGES=[['home','메인화면'],['wizard','시험지 출제 마법사'],['bank','문제은행'],['books','옳은영어 커리큘럼']];
 function nav(p){S.page=p;if(p!=='take'){S.sheet=null;S.report=null;}
   try{location.hash=(p==='take'?'take':'');}catch(e){}
-  render();window.scrollTo({top:0,behavior:'smooth'});}
+  window.scrollTo(0,0);render();}
 function setGrade(g){S.grade=g;S.book=null;S.cat=null;render();}
 function goHome(){
   S.page='home'; S.step=1; S.cat=null; S.sheet=null; S.report=null;
@@ -2046,7 +2103,20 @@ function phead(){
   const h=HEAD[S.page]; if(!h) return '';
   return '<div class="phead"><div class="pico"><svg viewBox="0 0 24 24">'+(PICO[S.page]||'')+'</svg></div>'+
     '<div class="ptx"><div class="eb">'+esc(h[0])+'</div><h1>'+esc(h[1])+'</h1><p>'+esc(h[2])+'</p></div></div>';}
+/* 다시 그려도 화면이 튀지 않도록 스크롤 위치를 붙잡아 둔다 */
+const KEEP=['.tree','.side','.selwrap','.swlist','.fgrid'];
+function snapScroll(){
+  const o={win:window.scrollY};
+  KEEP.forEach(function(sel){const e=document.querySelector(sel); if(e) o[sel]=e.scrollTop;});
+  return o;}
+function restoreScroll(o){
+  KEEP.forEach(function(sel){const e=document.querySelector(sel);
+    if(e&&o[sel]!=null) e.scrollTop=o[sel];});
+  if(o.win!=null&&Math.abs(window.scrollY-o.win)>1) window.scrollTo(0,o.win);
+  if(o.win!=null) requestAnimationFrame(function(){
+    if(Math.abs(window.scrollY-o.win)>1) window.scrollTo(0,o.win);});}
 function render(){
+  const _s=snapScroll();
   document.getElementById('nav').innerHTML=PAGES.map(function(p){
     return '<button class="'+(S.page===p[0]?'on':'')+'" onclick="nav(\''+p[0]+'\')">'+p[1]+'</button>';}).join('');
   const v=document.getElementById('view');
@@ -2058,6 +2128,7 @@ function render(){
   Array.prototype.forEach.call(v.querySelectorAll('.btn'),b=>b.addEventListener('click',ripple));
   if(S.page==='take'&&S.report) setTimeout(drawReport,60);
   if(S.page==='wizard'&&S.step===2&&S.exam) setTimeout(()=>buildPaper(S.exam,false,'pv',1),40);
+  restoreScroll(_s);
   setTimeout(fitSheets,30);
 }
 
@@ -2151,11 +2222,15 @@ function step1(){
    (S.book?'<div class="mode">'+
      '<button class="'+(S.mode==='book'?'on':'')+'" onclick="S.mode=\'book\';render()">교과서 단원별</button>'+
      '<button class="'+(S.mode==='cat'?'on':'')+'" onclick="S.mode=\'cat\';render()">문법 카테고리별</button></div>':'')+
+   '<div class="selbar">'+
+     '<span class="c'+(S.sel.size?'':' z')+'">'+S.sel.size+'</span><b>개 선택됨</b>'+
+     '<span class="hint">보유 '+stat.all.toLocaleString()+'문항 · 학년·교재를 바꿔도 그대로 쌓입니다</span>'+
+     '<span class="sp"></span>'+
+     '<button class="lnk" onclick="selAll(1)">이 범위 전체</button>'+
+     '<button class="lnk" onclick="selAll(0)">이 범위 해제</button>'+
+     (S.sel.size?'<button class="lnk d" onclick="clearSel()">모두 지우기</button>':'')+
+   '</div>'+
    ((S.book&&S.mode==='book')?treeBook():treeCat())+
-   '<div style="display:flex;gap:8px;margin-top:11px;align-items:center;flex-wrap:wrap">'+
-   '<button class="btn ghost sm" onclick="selAll(1)">이 범위 전체 선택</button>'+
-   '<button class="btn ghost sm" onclick="selAll(0)">이 범위 해제</button>'+
-   '<span class="hint" style="margin-left:auto">선택한 항목은 학년·교재를 바꿔도 그대로 쌓입니다 · 보유 '+stat.all.toLocaleString()+'문항</span></div>'+
    selTray()+'</div>'+
    '<div class="card solid"><div class="ttl"><svg viewBox="0 0 24 24"><path d="M4 6h16M7 12h10M10 18h4"/></svg>출제 옵션</div>'+
    '<div class="opt">'+
@@ -2229,12 +2304,15 @@ function itRow(id){const c=byId[id];if(!c)return '';
 /* 카테고리를 옮겨 다니며 고른 항목을 한곳에 모아 보여 준다 */
 function selTray(){
   const ids=Array.from(S.sel).filter(i=>byId[i]);
-  if(!ids.length) return '';
+  if(!ids.length) return '<div class="seltray empty">'+
+    '<div class="sh"><b>선택한 문법 항목</b><span class="c z">0</span></div>'+
+    '<div class="selwrap"><span class="hint">위 목록에서 항목을 눌러 담으세요. '+
+    '학년·교재를 옮겨 다녀도 선택은 그대로 쌓입니다.</span></div></div>';
   const ord={'중1':0,'중2':1,'중3':2,'고등':3};
   ids.sort((a,b)=>(ord[byId[a].grade]-ord[byId[b].grade])||byId[a].name.localeCompare(byId[b].name,'ko'));
   return '<div class="seltray"><div class="sh"><b>선택한 문법 항목</b>'+
     '<span class="c">'+ids.length+'</span>'+
-    '<span class="x" onclick="clearSel()">모두 지우기</span></div>'+
+    '<span class="x" onclick="clearSel()">비우기</span></div>'+
     '<div class="selwrap">'+ids.map(function(i,k){const c=byId[i];
       return '<span class="selchip" style="animation-delay:'+Math.min(k*14,260)+'ms">'+
         '<em>'+esc(c.grade)+'</em>'+esc(c.name)+'<i>'+c.questions.length+'</i>'+
@@ -2264,8 +2342,8 @@ function makeExam(){
     total:S.total,noDup:S.noDup,order:S.order,spos:S.spos,seed:Date.now()%2147483647};
   const qs=pickQuestions(cfg);
   if(qs.length<cfg.total) toast('조건에 맞는 문항이 부족합니다 ('+qs.length+'/'+cfg.total+')');
-  S.exam={cfg:cfg,qs:qs};S.step=2;
-  render();window.scrollTo({top:0,behavior:'smooth'});
+  S.exam={cfg:cfg,qs:qs};S.step=2;window.scrollTo(0,0);
+  render();
 }
 function step2(){
   const cfg=S.exam.cfg, qs=S.exam.qs;
@@ -2707,8 +2785,8 @@ function bankView(){
      '<span class="mp">주 '+(c.questions.length-mc)+'</span>'+
      '<span class="go">→</span></div></div>';}).join('')+'</div>';
 }
-function openCat(id){S.cat=id;S.folder=null;S.lv='전체';S.ty='전체';render();window.scrollTo({top:0,behavior:'smooth'});}
-function openFolder(id){S.folder=id;S.cat=null;render();window.scrollTo({top:0,behavior:'smooth'});}
+function openCat(id){S.cat=id;S.folder=null;S.lv='전체';S.ty='전체';window.scrollTo(0,0);render();}
+function openFolder(id){S.folder=id;S.cat=null;window.scrollTo(0,0);render();}
 function folderRail(){
   return '<div class="card solid" style="margin-bottom:14px">'+
    '<div class="ttl"><svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2.5h8a2 2 0 0 1 2 2V17a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>'+
@@ -3118,8 +3196,8 @@ function oItem(){const b=oBook();if(!b)return null;
   for(const c of b.chapters) for(const i of c.items) if(i.id===S.bkI) return i;
   return null;}
 function setBkT(t){S.bkT=t;S.bkB=null;S.bkC=null;S.bkI=null;render();}
-function openBook(id){S.bkB=id;S.bkC=null;S.bkI=null;render();window.scrollTo({top:0,behavior:'smooth'});}
-function openSheet(id,tab){S.bkI=id;S.bkTab=tab||'chk';render();window.scrollTo({top:0,behavior:'smooth'});}
+function openBook(id){S.bkB=id;S.bkC=null;S.bkI=null;window.scrollTo(0,0);render();}
+function openSheet(id,tab){S.bkI=id;S.bkTab=tab||'chk';window.scrollTo(0,0);render();}
 
 const TRKI={ele:'<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H19v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M8.5 8h6"/>',
   mid:'<path d="M5 4h4v16H5zM11 4h4v16h-4z"/><path d="M17.2 5l3.4 14.6-3.9.9L13.3 5.9z"/>'};
