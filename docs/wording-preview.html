@@ -181,130 +181,29 @@ footer{margin-top:60px;padding-top:18px;border-top:1.5px solid var(--ink);displa
   <h2>어느 학교를 담을까요</h2>
   <p class="lede">범위를 고르고, 오늘 설명회에서 다룰 학교만 담으면 됩니다. 담은 순서가 그대로 분석지 순서가 됩니다.</p>
 
-  <div class="filters">
-    <button class="chipbtn" aria-pressed="true">동작구 고등학교 <b>8</b></button>
-    <button class="chipbtn" aria-pressed="true">관악구 고등학교 <b>2</b></button>
-    <button class="chipbtn" aria-pressed="false">송파구 고등학교 <b>21</b></button>
-    <button class="chipbtn" aria-pressed="false">동작구 중학교 <b>16</b></button>
-    <button class="chipbtn" aria-pressed="false">송파구 중학교 <b>29</b></button>
-    <button class="chipbtn" aria-pressed="false">서울 외고·국제고 <b>7</b></button>
-    <button class="chipbtn" aria-pressed="false">전국단위 자사고 <b>10</b></button>
-  </div>
+  <div class="filters" id="chips"></div>
 
   <div class="toolbar">
-    <input type="text" placeholder="학교 찾기">
+    <input type="text" id="q" placeholder="학교 찾기">
     <label style="display:flex;align-items:center;gap:7px;font-size:13px;cursor:pointer">
-      <input type="checkbox"> 우리가 본 학교만
+      <input type="checkbox" id="obsOnly"> 우리가 본 학교만
     </label>
-    <button class="chipbtn">보이는 학교 다 담기</button>
+    <button class="chipbtn" id="selAll">보이는 학교 다 담기</button>
   </div>
 
   <div id="pickList"></div>
 
   <div class="footbar">
     <div style="font-size:13.5px">
-      <strong id="pickCount">오늘 다룰 학교 7곳</strong>
-      <span style="color:var(--muted)"> · 자세히 7곳 · 요약 0곳</span>
+      <strong id="pickCount">오늘 다룰 학교 0곳</strong><span id="pickSub" style="color:var(--muted)"></span>
     </div>
-    <button class="cta">이대로 만들기 →</button>
+    <button class="cta" id="cta">이대로 만들기 →</button>
   </div>
 </section>
 
 <!-- ═══════════ 뜯어보기 ═══════════ -->
 <section role="tabpanel" data-panel="report" hidden>
-  <div class="eyebrow">Side by side · 나란히</div>
-  <h2>나란히 놓고 보기</h2>
-  <p class="lede">학부모님이 제일 먼저 묻는 것들입니다. 전부 공시 자료 그대로이고, 저희가 손대지 않았습니다.</p>
-
-  <div class="scroll">
-    <table>
-      <thead><tr>
-        <th>학교</th><th class="n">1학년</th><th class="n">반</th><th class="n">반당</th>
-        <th class="n">1등급 자리</th><th class="n">고1 전출</th><th class="n">4년제</th>
-      </tr></thead>
-      <tbody id="cmpBody"></tbody>
-    </table>
-  </div>
-
-  <div class="note">
-    <div class="lb">이 표 읽는 법</div>
-    <p><strong>1등급 자리</strong>는 1학년 인원의 상위 10%이고 소수점은 버립니다 — 167명이면 16자리입니다.
-    <strong>고1 전출</strong>은 1학년 중 다른 학교로 옮긴 학생 비율, 곧 학교에 붙어 있느냐는 신호입니다.
-    맨 오른쪽은 <strong>작년 졸업생</strong> 기준이라 지금 1학년과는 3년 차이가 납니다.</p>
-  </div>
-
-  <h3 style="margin-top:44px">학교 하나를 열면 이렇게 생겼습니다</h3>
-  <div style="border-top:1.5px solid var(--ink);padding-top:18px;margin-top:14px">
-    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:18px">
-      <div style="font-size:26px;font-weight:700;color:var(--ink);letter-spacing:-.02em">숭의여자고등학교</div>
-      <div style="font-size:12.5px;color:var(--muted)">서울특별시 동작구 · 사립 · 일반고등학교 · 녀</div>
-    </div>
-
-    <div class="grid g5" style="margin-bottom:22px">
-      <div class="cell"><div class="lb">1학년</div><div class="vl">223<span style="font-size:12px;color:var(--muted)">명</span></div></div>
-      <div class="cell"><div class="lb">1학년 반</div><div class="vl">9<span style="font-size:12px;color:var(--muted)">반</span></div></div>
-      <div class="cell"><div class="lb">반당</div><div class="vl">24.8<span style="font-size:12px;color:var(--muted)">명</span></div></div>
-      <div class="cell"><div class="lb">1등급 자리</div><div class="vl">22<span style="font-size:12px;color:var(--muted)">명</span></div></div>
-      <div class="cell"><div class="lb">남 · 여</div><div class="vl">0 : 100</div></div>
-    </div>
-
-    <div class="blk">
-      <div class="blkhead"><div class="l"><span class="en">The school</span><span class="ko">이런 학교입니다</span></div><span class="tag t-obs">우리가 본 것</span></div>
-      <p style="margin:0;font-size:14px">숭의여고는 "어법과 어휘에 진심"인 학교입니다. 매 학년 다른 단어교재를 선정하여 다의어와 영영풀이, 영작에서 심도 깊은 이해를 요구하며, 시험범위의 모든 문장에 대한 문법·맥락 검증을 요구합니다.</p>
-    </div>
-
-    <div class="blk">
-      <div class="blkhead"><div class="l"><span class="en">What's hard</span><span class="ko">어느 과목이 센가</span></div><span class="tag t-obs">우리가 본 것</span></div>
-      <div style="display:flex;flex-wrap:wrap;gap:10px 26px;margin-bottom:12px">
-        <span>국어 <b class="diff d-상">상</b></span>
-        <span>영어 <b class="diff d-최상">최상</b></span>
-        <span>수학 <b class="diff d-최상">최상</b></span>
-        <span>사회 <b class="diff d-보통">보통</b></span>
-        <span>과학 <b class="diff d-상">상</b></span>
-      </div>
-      <p style="margin:0;font-size:13.5px">상위권 내신 경쟁이 치열하며, 특히 영어는 서술형 문항의 부분점수 반영이 높아져서 어휘·어법 객관식 문제에 더 꼼꼼하게 접근해야 합니다.</p>
-    </div>
-
-    <div class="blk">
-      <div class="blkhead"><div class="l"><span class="en">The cut line</span><span class="ko">몇 점부터 1등급인가</span></div><span class="tag t-obs">우리가 본 것</span></div>
-      <div style="display:flex;gap:40px;flex-wrap:wrap">
-        <div><div style="font-size:12px;color:var(--muted);margin-bottom:4px">1등급 컷</div>
-          <div class="vl" style="font-size:27px">86<span style="font-size:13px;color:var(--muted)">점</span></div></div>
-        <div><div style="font-size:12px;color:var(--muted);margin-bottom:4px">2등급 컷</div>
-          <div class="vl" style="font-size:27px">64~71<span style="font-size:13px;color:var(--muted)">점</span></div></div>
-      </div>
-      <p style="margin:11px 0 0;font-size:12px;color:var(--muted)">영어 / 원점수 기준 · 우리 학생들 성적표로 잡은 값이고 학교가 발표한 숫자가 아닙니다</p>
-    </div>
-
-    <div class="blk">
-      <div class="blkhead"><div class="l"><span class="en">Signature</span><span class="ko">이 학교만 내는 문제</span></div><span class="tag t-obs">우리가 본 것</span></div>
-      <div style="padding:13px 0;border-bottom:1px solid var(--hair)">
-        <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap">
-          <span class="mono" style="font-size:10px;letter-spacing:.14em;color:var(--yellow)">Q01</span>
-          <b style="font-size:14.5px;color:var(--ink)">단어 쓰임이 적절하지 않은 것은 모두 몇 개인가?</b>
-          <span class="tag" style="color:var(--blue)">바로 뽑기</span>
-        </div>
-        <p style="margin:6px 0 0;font-size:13.5px">문장 맥락에 맞는 단어 사용 여부를 묻는 문제입니다. 특히 개수 고르기에서 '없음' 선택은 심리적 압박감을 부여합니다.</p>
-      </div>
-    </div>
-
-    <div class="blk">
-      <div class="blkhead"><div class="l"><span class="en">Who fits</span><span class="ko">이런 학생이 잘 맞습니다</span></div><span class="tag t-view">우리 생각</span></div>
-      <div id="fitList"></div>
-    </div>
-  </div>
-
-  <h3 style="margin-top:46px">중학교를 담으면 아예 다른 장이 붙습니다</h3>
-  <div class="eyebrow" style="margin-top:18px">Where they went · 선배들의 행선지</div>
-  <h2 style="font-size:22px">이 학교 선배들은 어디로 갔나</h2>
-  <p class="lede">중학교 선택에서 제일 중요한 숫자입니다. 중학교 성적은 대입에 안 들어가지만, 어느 고등학교로 가느냐는 3년을 바꿉니다.</p>
-  <div id="midList"></div>
-
-  <div class="note blue">
-    <div class="lb">이 숫자 읽는 법</div>
-    <p>서울 중학교는 <strong>사는 곳 학교군 안에서 추첨</strong>입니다. 그래서 이건 "좋은 중학교" 순위표가 아니라, <strong>우리 동네 아이들이 실제로 어디로 흘러가는지</strong> 보여주는 지도입니다.</p>
-    <p>특목고 비율이 높다고 그 중학교가 더 좋은 건 아닙니다. 다만 <strong>외고·국제고를 생각한다면 중2부터</strong>고, 그 출발은 영어입니다.</p>
-  </div>
+  <div id="reportBody"></div>
 </section>
 
 <!-- ═══════════ 1등급 자리 ═══════════ -->
@@ -405,34 +304,283 @@ footer{margin-top:60px;padding-top:18px;border-top:1.5px solid var(--ink);displa
 </div>
 
 <script>
-const HIGH = [
-  {n:"당곡",   g1:226, cls:8,  per:28.3, out:1.3, uni:41, obs:1},
-  {n:"영등포", g1:142, cls:6,  per:23.7, out:1.3, uni:46, obs:1},
-  {n:"수도여자",g1:244, cls:9,  per:27.1, out:3.3, uni:39, obs:1},
-  {n:"흑석",   g1:205, cls:8,  per:25.6, out:null,uni:null,obs:1},
-  {n:"성남",   g1:317, cls:11, per:28.8, out:4.5, uni:43, obs:1},
-  {n:"숭의여자",g1:223, cls:9,  per:24.8, out:2.3, uni:48, obs:1},
-  {n:"구암",   g1:167, cls:6,  per:27.8, out:1.8, uni:46, obs:1}
-];
-const PICK = [
-  {n:"경문고등학교", meta:"서울특별시 동작구 · 사립 · 일반고등학교 · 남", g1:211, obs:0},
-  {n:"구암고등학교", meta:"서울특별시 관악구 · 공립 · 일반고등학교 · 남녀공학", g1:167, obs:1},
-  {n:"당곡고등학교", meta:"서울특별시 관악구 · 공립 · 일반고등학교 · 남녀공학", g1:226, obs:1},
-  {n:"동작고등학교", meta:"서울특별시 동작구 · 공립 · 일반고등학교 · 남녀공학", g1:230, obs:0},
-  {n:"성남고등학교", meta:"서울특별시 동작구 · 사립 · 일반고등학교 · 남", g1:317, obs:1},
-  {n:"숭의여자고등학교", meta:"서울특별시 동작구 · 사립 · 일반고등학교 · 녀", g1:223, obs:1}
-];
-const MID = [
-  {n:"강현", grad:121, s:[["일반고",100,"ink"],["자율고",1,"blue"],["특목고",3,"yellow"],["특성화고",17,"muted"]], sub:"과학고 1명 · 예술·체육고 2명"},
-  {n:"숭의여자", grad:151, s:[["일반고",108,"ink"],["자율고",11,"blue"],["특목고",13,"yellow"],["특성화고",19,"muted"]], sub:"과학고 1명 · 외고·국제고 7명 · 예술·체육고 5명"},
-  {n:"강남", grad:95, s:[["일반고",68,"ink"],["자율고",5,"blue"],["특목고",2,"yellow"],["특성화고",20,"muted"]], sub:"예술·체육고 1명 · 마이스터고 1명"}
-];
-const FIT = [
-  "고3 모의고사 기준 2등급이 꾸준히 나오는 학생은 상위권 가능성이 높습니다",
-  "단어의 겉모습에 현혹되지 않고 뜻을 정확히 따지는 학생",
-  "암기와 되새김을 루틴으로 유지할 수 있는 학생",
-  "문법 원칙 검증하기와 한글에서 영작하기를 즐기는, '영어를 좋아하는' 학생"
-];
+const SCHOOLS = [{"c":"S010005528","n":"구암고등학교","g":"관악구_고","lv":"고","m":"서울특별시 관악구 · 공립 · 일반고등학교 · 남녀공학","g1":167.0,"cl":6.0,"pc":27.8,"out_":3.0,"base":170.0,"grad":190.0,"gen":37.0,"voc":87.0,"sp":66.0,"au":null,"uni":87.0,"sci":0.0,"fl":0.0,"art":0.0,"mei":66.0,"lvl":false,"sc":true,"asp":45.0,"tot":509.0,"wh":672.0,"obs":1},{"c":"S010000406","n":"당곡고등학교","g":"관악구_고","lv":"고","m":"서울특별시 관악구 · 공립 · 일반고등학교 · 남녀공학","g1":226.0,"cl":8.0,"pc":28.3,"out_":3.0,"base":225.0,"grad":247.0,"gen":70.0,"voc":102.0,"sp":75.0,"au":null,"uni":102.0,"sci":0.0,"fl":0.0,"art":0.0,"mei":75.0,"lvl":false,"sc":true,"asp":85.0,"tot":702.0,"wh":829.0,"obs":1},{"c":"S010000378","n":"경문고등학교","g":"동작구_고","lv":"고","m":"서울특별시 동작구 · 사립 · 일반고등학교 · 남","g1":211.0,"cl":8.0,"pc":26.4,"out_":2.0,"base":206.0,"grad":197.0,"gen":27.0,"voc":101.0,"sp":69.0,"au":null,"uni":101.0,"sci":0.0,"fl":0.0,"art":0.0,"mei":69.0,"lvl":false,"sc":true,"asp":42.0,"tot":635.0,"wh":793.0,"obs":0},{"c":"S010000427","n":"동작고등학교","g":"동작구_고","lv":"고","m":"서울특별시 동작구 · 공립 · 일반고등학교 · 남녀공학","g1":230.0,"cl":9.0,"pc":25.6,"out_":9.0,"base":236.0,"grad":219.0,"gen":49.0,"voc":78.0,"sp":92.0,"au":null,"uni":78.0,"sci":0.0,"fl":0.0,"art":5.0,"mei":87.0,"lvl":false,"sc":false,"asp":78.0,"tot":719.0,"wh":909.0,"obs":0},{"c":"S010000588","n":"서울공업고등학교","g":"동작구_고","lv":"고","m":"서울특별시 동작구 · 공립 · 특성화고등학교 · 남녀공학","g1":276.0,"cl":14.0,"pc":19.7,"out_":10.0,"base":267.0,"grad":null,"gen":null,"voc":null,"sp":null,"au":null,"uni":null,"sci":null,"fl":null,"art":null,"mei":null,"lvl":false,"sc":false,"asp":414.0,"tot":781.0,"wh":1831.0,"obs":0},{"c":"S010000468","n":"성남고등학교","g":"동작구_고","lv":"고","m":"서울특별시 동작구 · 사립 · 일반고등학교 · 남","g1":317.0,"cl":11.0,"pc":28.8,"out_":14.0,"base":311.0,"grad":315.0,"gen":24.0,"voc":137.0,"sp":154.0,"au":null,"uni":137.0,"sci":0.0,"fl":0.0,"art":0.0,"mei":154.0,"lvl":false,"sc":false,"asp":174.0,"tot":921.0,"wh":1086.0,"obs":1},{"c":"S010000477","n":"수도여자고등학교","g":"동작구_고","lv":"고","m":"서울특별시 동작구 · 공립 · 일반고등학교 · 녀","g1":244.0,"cl":9.0,"pc":27.1,"out_":8.0,"base":244.0,"grad":262.0,"gen":56.0,"voc":102.0,"sp":104.0,"au":null,"uni":102.0,"sci":0.0,"fl":0.0,"art":0.0,"mei":104.0,"lvl":false,"sc":false,"asp":38.0,"tot":749.0,"wh":950.0,"obs":1},{"c":"S010000482","n":"숭의여자고등학교","g":"동작구_고","lv":"고","m":"서울특별시 동작구 · 사립 · 일반고등학교 · 녀","g1":223.0,"cl":9.0,"pc":24.8,"out_":5.0,"base":218.0,"grad":227.0,"gen":37.0,"voc":108.0,"sp":82.0,"au":null,"uni":108.0,"sci":0.0,"fl":0.0,"art":0.0,"mei":82.0,"lvl":false,"sc":true,"asp":18.0,"tot":651.0,"wh":897.0,"obs":1},{"c":"S010000497","n":"영등포고등학교","g":"동작구_고","lv":"고","m":"서울특별시 동작구 · 공립 · 일반고등학교 · 남","g1":142.0,"cl":6.0,"pc":23.7,"out_":2.0,"base":154.0,"grad":167.0,"gen":35.0,"voc":77.0,"sp":55.0,"au":null,"uni":77.0,"sci":0.0,"fl":0.0,"art":16.0,"mei":39.0,"lvl":false,"sc":false,"asp":0.0,"tot":458.0,"wh":671.0,"obs":1},{"c":"S010006621","n":"흑석고등학교","g":"동작구_고","lv":"고","m":"서울특별시 동작구 · 공립 · 일반고등학교 · 남녀공학","g1":205.0,"cl":8.0,"pc":25.6,"out_":0.0,"base":0.0,"grad":null,"gen":null,"voc":null,"sp":null,"au":null,"uni":null,"sci":null,"fl":null,"art":null,"mei":null,"lvl":false,"sc":false,"asp":null,"tot":210.0,"wh":261.0,"obs":1},{"c":"S010001545","n":"강남중학교","g":"동작구_중","lv":"중","m":"서울특별시 동작구 · 공립 · 남녀공학","g1":82.0,"cl":4.0,"pc":20.5,"out_":5.0,"base":85.0,"grad":95.0,"gen":68.0,"voc":20.0,"sp":2.0,"au":5.0,"uni":null,"sci":0.0,"fl":0.0,"art":1.0,"mei":1.0,"lvl":false,"sc":false,"asp":8.0,"tot":257.0,"wh":378.0,"obs":0},{"c":"S010001546","n":"강현중학교","g":"동작구_중","lv":"중","m":"서울특별시 동작구 · 공립 · 남녀공학","g1":85.0,"cl":4.0,"pc":21.3,"out_":5.0,"base":108.0,"grad":121.0,"gen":100.0,"voc":17.0,"sp":3.0,"au":1.0,"uni":null,"sci":1.0,"fl":0.0,"art":2.0,"mei":0.0,"lvl":true,"sc":true,"asp":36.0,"tot":293.0,"wh":439.0,"obs":0},{"c":"S010001549","n":"국사봉중학교","g":"동작구_중","lv":"중","m":"서울특별시 동작구 · 공립 · 남녀공학","g1":103.0,"cl":5.0,"pc":20.6,"out_":4.0,"base":129.0,"grad":115.0,"gen":88.0,"voc":20.0,"sp":4.0,"au":2.0,"uni":null,"sci":0.0,"fl":2.0,"art":2.0,"mei":0.0,"lvl":false,"sc":false,"asp":33.0,"tot":328.0,"wh":468.0,"obs":0},{"c":"S010001553","n":"남성중학교","g":"동작구_중","lv":"중","m":"서울특별시 동작구 · 공립 · 남녀공학","g1":81.0,"cl":4.0,"pc":20.3,"out_":3.0,"base":97.0,"grad":76.0,"gen":62.0,"voc":11.0,"sp":3.0,"au":null,"uni":null,"sci":0.0,"fl":0.0,"art":1.0,"mei":2.0,"lvl":false,"sc":false,"asp":40.0,"tot":286.0,"wh":419.0,"obs":0},{"c":"S010001555","n":"대방중학교","g":"동작구_중","lv":"중","m":"서울특별시 동작구 · 공립 · 남녀공학","g1":179.0,"cl":8.0,"pc":22.4,"out_":3.0,"base":180.0,"grad":226.0,"gen":191.0,"voc":19.0,"sp":11.0,"au":5.0,"uni":null,"sci":1.0,"fl":2.0,"art":8.0,"mei":0.0,"lvl":false,"sc":false,"asp":62.0,"tot":581.0,"wh":749.0,"obs":0},{"c":"S010001556","n":"동양중학교","g":"동작구_중","lv":"중","m":"서울특별시 동작구 · 사립 · 남","g1":109.0,"cl":5.0,"pc":21.8,"out_":0.0,"base":124.0,"grad":105.0,"gen":82.0,"voc":8.0,"sp":4.0,"au":11.0,"uni":null,"sci":3.0,"fl":0.0,"art":1.0,"mei":0.0,"lvl":false,"sc":false,"asp":76.0,"tot":341.0,"wh":479.0,"obs":0},{"c":"S010001557","n":"동작중학교","g":"동작구_중","lv":"중","m":"서울특별시 동작구 · 공립 · 남녀공학","g1":134.0,"cl":5.0,"pc":26.8,"out_":10.0,"base":116.0,"grad":104.0,"gen":79.0,"voc":9.0,"sp":12.0,"au":4.0,"uni":null,"sci":2.0,"fl":1.0,"art":7.0,"mei":2.0,"lvl":false,"sc":true,"asp":92.0,"tot":380.0,"wh":466.0,"obs":0},{"c":"S010001558","n":"문창중학교","g":"동작구_중","lv":"중","m":"서울특별시 동작구 · 공립 · 남녀공학","g1":100.0,"cl":5.0,"pc":20.0,"out_":5.0,"base":130.0,"grad":110.0,"gen":82.0,"voc":20.0,"sp":5.0,"au":2.0,"uni":null,"sci":0.0,"fl":1.0,"art":0.0,"mei":4.0,"lvl":false,"sc":false,"asp":71.0,"tot":346.0,"wh":520.0,"obs":0},{"c":"S010001562","n":"사당중학교","g":"동작구_중","lv":"중","m":"서울특별시 동작구 · 공립 · 남녀공학","g1":119.0,"cl":5.0,"pc":23.8,"out_":11.0,"base":146.0,"grad":170.0,"gen":145.0,"voc":14.0,"sp":6.0,"au":4.0,"uni":null,"sci":0.0,"fl":0.0,"art":5.0,"mei":1.0,"lvl":false,"sc":false,"asp":45.0,"tot":427.0,"wh":547.0,"obs":0},{"c":"S010001563","n":"상도중학교","g":"동작구_중","lv":"중","m":"서울특별시 동작구 · 공립 · 남녀공학","g1":119.0,"cl":5.0,"pc":23.8,"out_":4.0,"base":123.0,"grad":137.0,"gen":112.0,"voc":16.0,"sp":2.0,"au":5.0,"uni":null,"sci":1.0,"fl":1.0,"art":0.0,"mei":0.0,"lvl":false,"sc":false,"asp":116.0,"tot":385.0,"wh":453.0,"obs":0},{"c":"S010001564","n":"상현중학교","g":"동작구_중","lv":"중","m":"서울특별시 동작구 · 공립 · 남녀공학","g1":146.0,"cl":6.0,"pc":24.3,"out_":4.0,"base":155.0,"grad":161.0,"gen":114.0,"voc":19.0,"sp":11.0,"au":15.0,"uni":null,"sci":3.0,"fl":4.0,"art":4.0,"mei":0.0,"lvl":false,"sc":false,"asp":61.0,"tot":450.0,"wh":589.0,"obs":0},{"c":"S010001566","n":"성남중학교","g":"동작구_중","lv":"중","m":"서울특별시 동작구 · 사립 · 남","g1":124.0,"cl":6.0,"pc":20.7,"out_":4.0,"base":166.0,"grad":178.0,"gen":156.0,"voc":15.0,"sp":3.0,"au":4.0,"uni":null,"sci":0.0,"fl":0.0,"art":2.0,"mei":1.0,"lvl":false,"sc":false,"asp":62.0,"tot":445.0,"wh":590.0,"obs":0},{"c":"S010002352","n":"숭의여자중학교","g":"동작구_중","lv":"중","m":"서울특별시 동작구 · 사립 · 녀","g1":115.0,"cl":5.0,"pc":23.0,"out_":4.0,"base":144.0,"grad":151.0,"gen":108.0,"voc":19.0,"sp":13.0,"au":11.0,"uni":null,"sci":1.0,"fl":7.0,"art":5.0,"mei":0.0,"lvl":true,"sc":false,"asp":26.0,"tot":405.0,"wh":514.0,"obs":0},{"c":"S010001571","n":"영등포중학교","g":"동작구_중","lv":"중","m":"서울특별시 동작구 · 공립 · 남녀공학","g1":51.0,"cl":3.0,"pc":17.0,"out_":1.0,"base":69.0,"grad":70.0,"gen":60.0,"voc":9.0,"sp":null,"au":null,"uni":null,"sci":0.0,"fl":0.0,"art":0.0,"mei":0.0,"lvl":true,"sc":false,"asp":136.0,"tot":205.0,"wh":368.0,"obs":0},{"c":"S010001573","n":"장승중학교","g":"동작구_중","lv":"중","m":"서울특별시 동작구 · 공립 · 남녀공학","g1":213.0,"cl":8.0,"pc":26.6,"out_":3.0,"base":222.0,"grad":183.0,"gen":153.0,"voc":10.0,"sp":10.0,"au":9.0,"uni":null,"sci":2.0,"fl":3.0,"art":5.0,"mei":0.0,"lvl":false,"sc":false,"asp":101.0,"tot":629.0,"wh":763.0,"obs":0},{"c":"S010001575","n":"중앙대학교사범대학부속중학교","g":"동작구_중","lv":"중","m":"서울특별시 동작구 · 사립 · 남녀공학","g1":239.0,"cl":9.0,"pc":26.6,"out_":13.0,"base":230.0,"grad":196.0,"gen":141.0,"voc":19.0,"sp":10.0,"au":26.0,"uni":null,"sci":1.0,"fl":5.0,"art":3.0,"mei":1.0,"lvl":false,"sc":false,"asp":172.0,"tot":677.0,"wh":902.0,"obs":0},{"c":"S010000571","n":"대원외국어고등학교","g":"서울_외고국제고","lv":"고","m":"서울특별시 광진구 · 사립 · 특수목적고등학교 · 남녀공학","g1":261.0,"cl":10.0,"pc":26.1,"out_":2.0,"base":260.0,"grad":255.0,"gen":2.0,"voc":171.0,"sp":82.0,"au":null,"uni":171.0,"sci":0.0,"fl":5.0,"art":12.0,"mei":65.0,"lvl":false,"sc":false,"asp":673.0,"tot":771.0,"wh":804.0,"obs":0},{"c":"S010000572","n":"대일외국어고등학교","g":"서울_외고국제고","lv":"고","m":"서울특별시 성북구 · 사립 · 특수목적고등학교 · 남녀공학","g1":257.0,"cl":10.0,"pc":25.7,"out_":4.0,"base":252.0,"grad":236.0,"gen":0.0,"voc":140.0,"sp":96.0,"au":null,"uni":140.0,"sci":0.0,"fl":2.0,"art":0.0,"mei":94.0,"lvl":false,"sc":false,"asp":499.0,"tot":738.0,"wh":895.0,"obs":0},{"c":"S010000573","n":"명덕외국어고등학교","g":"서울_외고국제고","lv":"고","m":"서울특별시 강서구 · 사립 · 특수목적고등학교 · 남녀공학","g1":256.0,"cl":10.0,"pc":25.6,"out_":8.0,"base":255.0,"grad":219.0,"gen":0.0,"voc":147.0,"sp":72.0,"au":null,"uni":147.0,"sci":0.0,"fl":3.0,"art":0.0,"mei":69.0,"lvl":false,"sc":false,"asp":124.0,"tot":749.0,"wh":964.0,"obs":0},{"c":"S010005494","n":"서울국제고등학교","g":"서울_외고국제고","lv":"고","m":"서울특별시 종로구 · 공립 · 특수목적고등학교 · 남녀공학","g1":130.0,"cl":6.0,"pc":21.7,"out_":3.0,"base":140.0,"grad":137.0,"gen":3.0,"voc":76.0,"sp":58.0,"au":null,"uni":76.0,"sci":0.0,"fl":15.0,"art":0.0,"mei":43.0,"lvl":false,"sc":true,"asp":112.0,"tot":405.0,"wh":573.0,"obs":0},{"c":"S010000574","n":"서울외국어고등학교","g":"서울_외고국제고","lv":"고","m":"서울특별시 도봉구 · 사립 · 특수목적고등학교 · 남녀공학","g1":243.0,"cl":10.0,"pc":24.3,"out_":10.0,"base":242.0,"grad":184.0,"gen":9.0,"voc":99.0,"sp":76.0,"au":null,"uni":99.0,"sci":0.0,"fl":6.0,"art":0.0,"mei":70.0,"lvl":false,"sc":false,"asp":167.0,"tot":683.0,"wh":933.0,"obs":0},{"c":"S010000575","n":"이화여자외국어고등학교","g":"서울_외고국제고","lv":"고","m":"서울특별시 중구 · 사립 · 특수목적고등학교 · 녀","g1":149.0,"cl":6.0,"pc":24.8,"out_":2.0,"base":142.0,"grad":123.0,"gen":0.0,"voc":80.0,"sp":43.0,"au":null,"uni":80.0,"sci":0.0,"fl":9.0,"art":0.0,"mei":34.0,"lvl":true,"sc":false,"asp":127.0,"tot":417.0,"wh":644.0,"obs":0},{"c":"S010000576","n":"한영외국어고등학교","g":"서울_외고국제고","lv":"고","m":"서울특별시 강동구 · 사립 · 특수목적고등학교 · 남녀공학","g1":241.0,"cl":10.0,"pc":24.1,"out_":4.0,"base":246.0,"grad":219.0,"gen":0.0,"voc":145.0,"sp":74.0,"au":null,"uni":145.0,"sci":0.0,"fl":5.0,"art":0.0,"mei":69.0,"lvl":false,"sc":false,"asp":250.0,"tot":702.0,"wh":957.0,"obs":0},{"c":"S010000370","n":"가락고등학교","g":"송파구_고","lv":"고","m":"서울특별시 송파구 · 공립 · 일반고등학교 · 남녀공학","g1":258.0,"cl":9.0,"pc":28.7,"out_":9.0,"base":241.0,"grad":237.0,"gen":58.0,"voc":98.0,"sp":81.0,"au":null,"uni":98.0,"sci":0.0,"fl":2.0,"art":45.0,"mei":34.0,"lvl":false,"sc":false,"asp":63.0,"tot":726.0,"wh":843.0,"obs":0},{"c":"S010000636","n":"덕수고등학교","g":"송파구_고","lv":"고","m":"서울특별시 송파구 · 공립 · 일반고등학교 · 남녀공학","g1":317.0,"cl":11.0,"pc":28.8,"out_":14.0,"base":303.0,"grad":268.0,"gen":57.0,"voc":136.0,"sp":75.0,"au":null,"uni":136.0,"sci":0.0,"fl":0.0,"art":0.0,"mei":75.0,"lvl":false,"sc":false,"asp":53.0,"tot":904.0,"wh":1096.0,"obs":0},{"c":"S010006558","n":"덕수고등학교(일반고)","g":"송파구_고","lv":"고","m":"서울특별시 송파구 · 공립 · 일반고등학교 · 남녀공학","g1":null,"cl":null,"pc":null,"out_":null,"base":null,"grad":null,"gen":null,"voc":null,"sp":null,"au":null,"uni":null,"sci":null,"fl":null,"art":null,"mei":null,"lvl":null,"sc":null,"asp":null,"tot":null,"wh":null,"obs":0},{"c":"S010005498","n":"문정고등학교","g":"송파구_고","lv":"고","m":"서울특별시 송파구 · 공립 · 일반고등학교 · 남녀공학","g1":261.0,"cl":9.0,"pc":29.0,"out_":12.0,"base":249.0,"grad":212.0,"gen":54.0,"voc":94.0,"sp":64.0,"au":null,"uni":94.0,"sci":0.0,"fl":1.0,"art":8.0,"mei":55.0,"lvl":false,"sc":true,"asp":23.0,"tot":768.0,"wh":939.0,"obs":0},{"c":"S010005524","n":"문현고등학교","g":"송파구_고","lv":"고","m":"서울특별시 송파구 · 공립 · 일반고등학교 · 남녀공학","g1":202.0,"cl":7.0,"pc":28.9,"out_":8.0,"base":192.0,"grad":184.0,"gen":37.0,"voc":86.0,"sp":61.0,"au":null,"uni":86.0,"sci":0.0,"fl":0.0,"art":0.0,"mei":61.0,"lvl":false,"sc":true,"asp":0.0,"tot":574.0,"wh":701.0,"obs":0},{"c":"S010005182","n":"방산고등학교","g":"송파구_고","lv":"고","m":"서울특별시 송파구 · 공립 · 일반고등학교 · 남녀공학","g1":288.0,"cl":10.0,"pc":28.8,"out_":10.0,"base":278.0,"grad":245.0,"gen":48.0,"voc":117.0,"sp":80.0,"au":null,"uni":117.0,"sci":0.0,"fl":0.0,"art":0.0,"mei":80.0,"lvl":false,"sc":false,"asp":12.0,"tot":821.0,"wh":1044.0,"obs":0},{"c":"S010000441","n":"배명고등학교","g":"송파구_고","lv":"고","m":"서울특별시 송파구 · 사립 · 일반고등학교 · 남","g1":256.0,"cl":9.0,"pc":28.4,"out_":14.0,"base":236.0,"grad":251.0,"gen":41.0,"voc":128.0,"sp":82.0,"au":null,"uni":128.0,"sci":0.0,"fl":3.0,"art":0.0,"mei":79.0,"lvl":false,"sc":true,"asp":83.0,"tot":714.0,"wh":992.0,"obs":0},{"c":"S010000446","n":"보성고등학교","g":"송파구_고","lv":"고","m":"서울특별시 송파구 · 사립 · 일반고등학교 · 남","g1":327.0,"cl":11.0,"pc":29.7,"out_":14.0,"base":302.0,"grad":221.0,"gen":16.0,"voc":110.0,"sp":95.0,"au":null,"uni":110.0,"sci":0.0,"fl":0.0,"art":0.0,"mei":95.0,"lvl":false,"sc":false,"asp":128.0,"tot":917.0,"wh":1020.0,"obs":0},{"c":"S010000640","n":"보인고등학교","g":"송파구_고","lv":"고","m":"서울특별시 송파구 · 사립 · 자율고등학교 · 남","g1":412.0,"cl":12.0,"pc":34.3,"out_":12.0,"base":414.0,"grad":364.0,"gen":4.0,"voc":216.0,"sp":144.0,"au":null,"uni":216.0,"sci":0.0,"fl":0.0,"art":5.0,"mei":139.0,"lvl":false,"sc":false,"asp":95.0,"tot":1162.0,"wh":1237.0,"obs":0},{"c":"S010000593","n":"서울인공지능고등학교","g":"송파구_고","lv":"고","m":"서울특별시 송파구 · 공립 · 특성화고등학교 · 남녀공학","g1":111.0,"cl":7.0,"pc":15.9,"out_":4.0,"base":92.0,"grad":null,"gen":null,"voc":null,"sp":null,"au":null,"uni":null,"sci":null,"fl":null,"art":null,"mei":null,"lvl":false,"sc":true,"asp":169.0,"tot":297.0,"wh":916.0,"obs":0},{"c":"S010000461","n":"서울체육고등학교","g":"송파구_고","lv":"고","m":"서울특별시 송파구 · 공립 · 특수목적고등학교 · 남녀공학","g1":115.0,"cl":4.0,"pc":28.8,"out_":14.0,"base":120.0,"grad":104.0,"gen":13.0,"voc":67.0,"sp":24.0,"au":null,"uni":67.0,"sci":0.0,"fl":0.0,"art":18.0,"mei":6.0,"lvl":false,"sc":false,"asp":0.0,"tot":331.0,"wh":1102.0,"obs":0},{"c":"S010000496","n":"영동일고등학교","g":"송파구_고","lv":"고","m":"서울특별시 송파구 · 사립 · 일반고등학교 · 남녀공학","g1":327.0,"cl":11.0,"pc":29.7,"out_":5.0,"base":298.0,"grad":284.0,"gen":38.0,"voc":120.0,"sp":126.0,"au":null,"uni":120.0,"sci":0.0,"fl":0.0,"art":0.0,"mei":126.0,"lvl":false,"sc":false,"asp":0.0,"tot":921.0,"wh":980.0,"obs":0},{"c":"S010000504","n":"영파여자고등학교","g":"송파구_고","lv":"고","m":"서울특별시 송파구 · 사립 · 일반고등학교 · 녀","g1":321.0,"cl":11.0,"pc":29.2,"out_":5.0,"base":271.0,"grad":247.0,"gen":52.0,"voc":112.0,"sp":83.0,"au":null,"uni":112.0,"sci":0.0,"fl":1.0,"art":0.0,"mei":82.0,"lvl":false,"sc":true,"asp":0.0,"tot":836.0,"wh":987.0,"obs":0},{"c":"S010000507","n":"오금고등학교","g":"송파구_고","lv":"고","m":"서울특별시 송파구 · 공립 · 일반고등학교 · 남녀공학","g1":295.0,"cl":10.0,"pc":29.5,"out_":7.0,"base":274.0,"grad":268.0,"gen":56.0,"voc":120.0,"sp":92.0,"au":null,"uni":120.0,"sci":0.0,"fl":1.0,"art":0.0,"mei":91.0,"lvl":false,"sc":false,"asp":60.0,"tot":842.0,"wh":979.0,"obs":0},{"c":"S010000612","n":"일신여자상업고등학교","g":"송파구_고","lv":"고","m":"서울특별시 송파구 · 사립 · 특성화고등학교 · 녀","g1":159.0,"cl":8.0,"pc":19.9,"out_":0.0,"base":152.0,"grad":null,"gen":null,"voc":null,"sp":null,"au":null,"uni":null,"sci":null,"fl":null,"art":null,"mei":null,"lvl":false,"sc":false,"asp":129.0,"tot":433.0,"wh":758.0,"obs":0},{"c":"S010000522","n":"잠신고등학교","g":"송파구_고","lv":"고","m":"서울특별시 송파구 · 공립 · 일반고등학교 · 남녀공학","g1":230.0,"cl":9.0,"pc":25.6,"out_":20.0,"base":237.0,"grad":222.0,"gen":14.0,"voc":103.0,"sp":105.0,"au":null,"uni":103.0,"sci":0.0,"fl":0.0,"art":7.0,"mei":98.0,"lvl":false,"sc":false,"asp":9.0,"tot":682.0,"wh":935.0,"obs":0},{"c":"S010000523","n":"잠실고등학교","g":"송파구_고","lv":"고","m":"서울특별시 송파구 · 공립 · 일반고등학교 · 남","g1":205.0,"cl":7.0,"pc":29.3,"out_":7.0,"base":156.0,"grad":176.0,"gen":27.0,"voc":80.0,"sp":69.0,"au":null,"uni":80.0,"sci":0.0,"fl":0.0,"art":1.0,"mei":68.0,"lvl":false,"sc":false,"asp":12.0,"tot":538.0,"wh":661.0,"obs":0},{"c":"S010000524","n":"잠실여자고등학교","g":"송파구_고","lv":"고","m":"서울특별시 송파구 · 사립 · 일반고등학교 · 녀","g1":336.0,"cl":12.0,"pc":28.0,"out_":4.0,"base":316.0,"grad":259.0,"gen":99.0,"voc":38.0,"sp":122.0,"au":null,"uni":38.0,"sci":0.0,"fl":0.0,"art":0.0,"mei":122.0,"lvl":false,"sc":false,"asp":28.0,"tot":976.0,"wh":1198.0,"obs":0},{"c":"S010005566","n":"잠일고등학교","g":"송파구_고","lv":"고","m":"서울특별시 송파구 · 공립 · 일반고등학교 · 남녀공학","g1":164.0,"cl":6.0,"pc":27.3,"out_":17.0,"base":147.0,"grad":129.0,"gen":9.0,"voc":52.0,"sp":68.0,"au":null,"uni":52.0,"sci":0.0,"fl":1.0,"art":0.0,"mei":67.0,"lvl":false,"sc":false,"asp":0.0,"tot":432.0,"wh":671.0,"obs":0},{"c":"S010000528","n":"정신여자고등학교","g":"송파구_고","lv":"고","m":"서울특별시 송파구 · 사립 · 일반고등학교 · 녀","g1":284.0,"cl":10.0,"pc":28.4,"out_":3.0,"base":267.0,"grad":274.0,"gen":37.0,"voc":103.0,"sp":134.0,"au":null,"uni":103.0,"sci":0.0,"fl":2.0,"art":0.0,"mei":132.0,"lvl":false,"sc":false,"asp":28.0,"tot":837.0,"wh":1051.0,"obs":0},{"c":"S010000539","n":"창덕여자고등학교","g":"송파구_고","lv":"고","m":"서울특별시 송파구 · 공립 · 일반고등학교 · 녀","g1":198.0,"cl":7.0,"pc":28.3,"out_":5.0,"base":197.0,"grad":137.0,"gen":24.0,"voc":71.0,"sp":42.0,"au":null,"uni":71.0,"sci":0.0,"fl":0.0,"art":0.0,"mei":42.0,"lvl":false,"sc":false,"asp":0.0,"tot":529.0,"wh":705.0,"obs":0},{"c":"S010000856","n":"가락중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 공립 · 남녀공학","g1":163.0,"cl":6.0,"pc":27.2,"out_":2.0,"base":155.0,"grad":162.0,"gen":125.0,"voc":4.0,"sp":5.0,"au":21.0,"uni":null,"sci":1.0,"fl":3.0,"art":0.0,"mei":1.0,"lvl":false,"sc":false,"asp":90.0,"tot":479.0,"wh":559.0,"obs":0},{"c":"S010000857","n":"가원중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 공립 · 남녀공학","g1":140.0,"cl":5.0,"pc":28.0,"out_":3.0,"base":153.0,"grad":155.0,"gen":116.0,"voc":9.0,"sp":4.0,"au":24.0,"uni":null,"sci":0.0,"fl":4.0,"art":0.0,"mei":0.0,"lvl":false,"sc":false,"asp":57.0,"tot":441.0,"wh":530.0,"obs":0},{"c":"S010000859","n":"거원중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 공립 · 남녀공학","g1":123.0,"cl":5.0,"pc":24.6,"out_":4.0,"base":135.0,"grad":118.0,"gen":97.0,"voc":12.0,"sp":3.0,"au":4.0,"uni":null,"sci":0.0,"fl":3.0,"art":0.0,"mei":0.0,"lvl":false,"sc":false,"asp":35.0,"tot":407.0,"wh":556.0,"obs":0},{"c":"S010000865","n":"문정중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 공립 · 남녀공학","g1":147.0,"cl":6.0,"pc":24.5,"out_":1.0,"base":147.0,"grad":136.0,"gen":109.0,"voc":12.0,"sp":3.0,"au":12.0,"uni":null,"sci":0.0,"fl":1.0,"art":0.0,"mei":2.0,"lvl":false,"sc":false,"asp":51.0,"tot":452.0,"wh":588.0,"obs":0},{"c":"S010005520","n":"문현중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 공립 · 남녀공학","g1":153.0,"cl":6.0,"pc":25.5,"out_":3.0,"base":162.0,"grad":164.0,"gen":120.0,"voc":14.0,"sp":12.0,"au":16.0,"uni":null,"sci":1.0,"fl":3.0,"art":6.0,"mei":2.0,"lvl":false,"sc":false,"asp":101.0,"tot":508.0,"wh":664.0,"obs":0},{"c":"S010000866","n":"방산중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 공립 · 남녀공학","g1":136.0,"cl":5.0,"pc":27.2,"out_":1.0,"base":122.0,"grad":160.0,"gen":139.0,"voc":8.0,"sp":null,"au":9.0,"uni":null,"sci":0.0,"fl":0.0,"art":0.0,"mei":0.0,"lvl":false,"sc":false,"asp":0.0,"tot":435.0,"wh":516.0,"obs":0},{"c":"S010000867","n":"방이중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 공립 · 남녀공학","g1":101.0,"cl":5.0,"pc":20.2,"out_":4.0,"base":113.0,"grad":113.0,"gen":86.0,"voc":13.0,"sp":5.0,"au":8.0,"uni":null,"sci":0.0,"fl":0.0,"art":4.0,"mei":1.0,"lvl":false,"sc":false,"asp":57.0,"tot":400.0,"wh":525.0,"obs":0},{"c":"S010000868","n":"배명중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 사립 · 남","g1":109.0,"cl":6.0,"pc":18.2,"out_":6.0,"base":137.0,"grad":143.0,"gen":120.0,"voc":8.0,"sp":1.0,"au":10.0,"uni":null,"sci":0.0,"fl":0.0,"art":0.0,"mei":1.0,"lvl":false,"sc":false,"asp":95.0,"tot":412.0,"wh":661.0,"obs":0},{"c":"S010000870","n":"보성중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 사립 · 남","g1":94.0,"cl":5.0,"pc":18.8,"out_":4.0,"base":126.0,"grad":116.0,"gen":73.0,"voc":2.0,"sp":6.0,"au":33.0,"uni":null,"sci":3.0,"fl":3.0,"art":0.0,"mei":0.0,"lvl":false,"sc":false,"asp":7.0,"tot":360.0,"wh":501.0,"obs":0},{"c":"S010000871","n":"보인중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 사립 · 남","g1":131.0,"cl":7.0,"pc":18.7,"out_":9.0,"base":182.0,"grad":154.0,"gen":99.0,"voc":22.0,"sp":2.0,"au":29.0,"uni":null,"sci":0.0,"fl":0.0,"art":0.0,"mei":2.0,"lvl":true,"sc":false,"asp":165.0,"tot":491.0,"wh":656.0,"obs":0},{"c":"S010004058","n":"서울체육중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 공립 · 남녀공학","g1":58.0,"cl":2.0,"pc":29.0,"out_":14.0,"base":58.0,"grad":51.0,"gen":10.0,"voc":1.0,"sp":40.0,"au":null,"uni":null,"sci":0.0,"fl":0.0,"art":40.0,"mei":0.0,"lvl":true,"sc":false,"asp":171.0,"tot":171.0,"wh":209.0,"obs":0},{"c":"S010000873","n":"석촌중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 공립 · 남녀공학","g1":75.0,"cl":3.0,"pc":25.0,"out_":4.0,"base":115.0,"grad":95.0,"gen":72.0,"voc":6.0,"sp":6.0,"au":9.0,"uni":null,"sci":0.0,"fl":3.0,"art":1.0,"mei":2.0,"lvl":true,"sc":false,"asp":12.0,"tot":309.0,"wh":425.0,"obs":0},{"c":"S010000876","n":"세륜중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 공립 · 남녀공학","g1":95.0,"cl":4.0,"pc":23.8,"out_":3.0,"base":99.0,"grad":104.0,"gen":77.0,"voc":12.0,"sp":8.0,"au":6.0,"uni":null,"sci":1.0,"fl":4.0,"art":0.0,"mei":3.0,"lvl":true,"sc":false,"asp":0.0,"tot":320.0,"wh":363.0,"obs":0},{"c":"S010006041","n":"송례중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 공립 · 남녀공학","g1":369.0,"cl":14.0,"pc":26.4,"out_":17.0,"base":403.0,"grad":434.0,"gen":314.0,"voc":25.0,"sp":31.0,"au":64.0,"uni":null,"sci":3.0,"fl":13.0,"art":9.0,"mei":6.0,"lvl":false,"sc":false,"asp":132.0,"tot":1140.0,"wh":1510.0,"obs":0},{"c":"S010000877","n":"송파중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 공립 · 남녀공학","g1":239.0,"cl":10.0,"pc":23.9,"out_":18.0,"base":299.0,"grad":279.0,"gen":210.0,"voc":10.0,"sp":14.0,"au":43.0,"uni":null,"sci":4.0,"fl":7.0,"art":2.0,"mei":1.0,"lvl":false,"sc":false,"asp":124.0,"tot":804.0,"wh":1019.0,"obs":0},{"c":"S010000880","n":"신천중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 공립 · 남녀공학","g1":386.0,"cl":12.0,"pc":32.2,"out_":14.0,"base":414.0,"grad":343.0,"gen":266.0,"voc":9.0,"sp":20.0,"au":46.0,"uni":null,"sci":5.0,"fl":7.0,"art":6.0,"mei":2.0,"lvl":false,"sc":false,"asp":79.0,"tot":1118.0,"wh":1157.0,"obs":0},{"c":"S010000881","n":"아주중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 공립 · 남녀공학","g1":123.0,"cl":5.0,"pc":24.6,"out_":8.0,"base":138.0,"grad":156.0,"gen":132.0,"voc":9.0,"sp":3.0,"au":12.0,"uni":null,"sci":0.0,"fl":1.0,"art":1.0,"mei":1.0,"lvl":false,"sc":false,"asp":29.0,"tot":457.0,"wh":569.0,"obs":0},{"c":"S010000882","n":"영파여자중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 사립 · 녀","g1":94.0,"cl":5.0,"pc":18.8,"out_":4.0,"base":86.0,"grad":110.0,"gen":85.0,"voc":18.0,"sp":2.0,"au":3.0,"uni":null,"sci":0.0,"fl":1.0,"art":0.0,"mei":1.0,"lvl":false,"sc":false,"asp":12.0,"tot":257.0,"wh":465.0,"obs":0},{"c":"S010000883","n":"오금중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 공립 · 남녀공학","g1":103.0,"cl":4.0,"pc":25.8,"out_":4.0,"base":128.0,"grad":111.0,"gen":88.0,"voc":19.0,"sp":3.0,"au":1.0,"uni":null,"sci":0.0,"fl":1.0,"art":0.0,"mei":2.0,"lvl":null,"sc":null,"asp":16.0,"tot":337.0,"wh":391.0,"obs":0},{"c":"S010000884","n":"오륜중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 공립 · 남녀공학","g1":155.0,"cl":6.0,"pc":25.8,"out_":1.0,"base":170.0,"grad":175.0,"gen":128.0,"voc":5.0,"sp":19.0,"au":22.0,"uni":null,"sci":1.0,"fl":15.0,"art":2.0,"mei":1.0,"lvl":false,"sc":false,"asp":69.0,"tot":494.0,"wh":597.0,"obs":0},{"c":"S010000885","n":"오주중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 공립 · 남녀공학","g1":106.0,"cl":5.0,"pc":21.2,"out_":5.0,"base":139.0,"grad":130.0,"gen":86.0,"voc":35.0,"sp":5.0,"au":4.0,"uni":null,"sci":0.0,"fl":1.0,"art":1.0,"mei":3.0,"lvl":false,"sc":false,"asp":0.0,"tot":410.0,"wh":608.0,"obs":0},{"c":"S010005593","n":"위례솔중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 공립 · 남녀공학","g1":236.0,"cl":9.0,"pc":26.2,"out_":4.0,"base":302.0,"grad":203.0,"gen":152.0,"voc":17.0,"sp":14.0,"au":18.0,"uni":null,"sci":0.0,"fl":7.0,"art":3.0,"mei":4.0,"lvl":false,"sc":false,"asp":98.0,"tot":837.0,"wh":1046.0,"obs":0},{"c":"S010000887","n":"잠신중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 공립 · 남녀공학","g1":380.0,"cl":12.0,"pc":31.7,"out_":16.0,"base":413.0,"grad":327.0,"gen":236.0,"voc":8.0,"sp":14.0,"au":61.0,"uni":null,"sci":1.0,"fl":6.0,"art":6.0,"mei":1.0,"lvl":false,"sc":false,"asp":154.0,"tot":1118.0,"wh":1210.0,"obs":0},{"c":"S010000886","n":"잠실여자중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 사립 · 녀","g1":203.0,"cl":8.0,"pc":25.4,"out_":5.0,"base":143.0,"grad":137.0,"gen":112.0,"voc":17.0,"sp":5.0,"au":1.0,"uni":null,"sci":0.0,"fl":4.0,"art":1.0,"mei":0.0,"lvl":false,"sc":false,"asp":21.0,"tot":482.0,"wh":680.0,"obs":0},{"c":"S010000888","n":"잠실중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 공립 · 남녀공학","g1":393.0,"cl":13.0,"pc":30.2,"out_":6.0,"base":442.0,"grad":337.0,"gen":223.0,"voc":6.0,"sp":17.0,"au":86.0,"uni":null,"sci":4.0,"fl":9.0,"art":3.0,"mei":1.0,"lvl":false,"sc":false,"asp":90.0,"tot":1210.0,"wh":1201.0,"obs":0},{"c":"S010000889","n":"정신여자중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 사립 · 녀","g1":295.0,"cl":12.0,"pc":24.6,"out_":8.0,"base":346.0,"grad":318.0,"gen":264.0,"voc":17.0,"sp":27.0,"au":10.0,"uni":null,"sci":4.0,"fl":13.0,"art":10.0,"mei":0.0,"lvl":true,"sc":false,"asp":101.0,"tot":1001.0,"wh":1111.0,"obs":0},{"c":"S010000892","n":"풍납중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 공립 · 남녀공학","g1":97.0,"cl":4.0,"pc":24.3,"out_":2.0,"base":107.0,"grad":111.0,"gen":89.0,"voc":9.0,"sp":5.0,"au":7.0,"uni":null,"sci":0.0,"fl":1.0,"art":3.0,"mei":1.0,"lvl":false,"sc":false,"asp":0.0,"tot":316.0,"wh":432.0,"obs":0},{"c":"S010000893","n":"풍성중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 공립 · 남녀공학","g1":120.0,"cl":5.0,"pc":24.0,"out_":2.0,"base":95.0,"grad":111.0,"gen":82.0,"voc":14.0,"sp":1.0,"au":11.0,"uni":null,"sci":1.0,"fl":0.0,"art":0.0,"mei":0.0,"lvl":false,"sc":false,"asp":41.0,"tot":313.0,"wh":421.0,"obs":0},{"c":"S010006434","n":"해누리중학교","g":"송파구_중","lv":"중","m":"서울특별시 송파구 · 공립 · 남녀공학","g1":236.0,"cl":8.0,"pc":29.5,"out_":10.0,"base":355.0,"grad":195.0,"gen":133.0,"voc":10.0,"sp":21.0,"au":29.0,"uni":null,"sci":4.0,"fl":9.0,"art":6.0,"mei":2.0,"lvl":false,"sc":false,"asp":81.0,"tot":846.0,"wh":931.0,"obs":0},{"c":"S140000177","n":"광양제철고등학교","g":"전국단위_자사고","lv":"고","m":"전남광주통합특별시 광양시 · 사립 · 자율고등학교 · 남녀공학","g1":225.0,"cl":8.0,"pc":28.1,"out_":8.0,"base":229.0,"grad":189.0,"gen":10.0,"voc":128.0,"sp":51.0,"au":null,"uni":128.0,"sci":0.0,"fl":0.0,"art":0.0,"mei":51.0,"lvl":false,"sc":false,"asp":578.0,"tot":645.0,"wh":825.0,"obs":0},{"c":"S150000777","n":"김천고등학교","g":"전국단위_자사고","lv":"고","m":"경상북도 김천시 · 사립 · 자율고등학교 · 남","g1":246.0,"cl":8.0,"pc":30.8,"out_":10.0,"base":255.0,"grad":213.0,"gen":0.0,"voc":135.0,"sp":78.0,"au":null,"uni":135.0,"sci":0.0,"fl":5.0,"art":0.0,"mei":73.0,"lvl":false,"sc":false,"asp":712.0,"tot":716.0,"wh":898.0,"obs":0},{"c":"S100000414","n":"민족사관고등학교","g":"전국단위_자사고","lv":"고","m":"강원특별자치도 횡성군 · 사립 · 자율고등학교 · 남녀공학","g1":160.0,"cl":10.0,"pc":16.0,"out_":1.0,"base":158.0,"grad":143.0,"gen":0.0,"voc":55.0,"sp":88.0,"au":null,"uni":55.0,"sci":0.0,"fl":43.0,"art":0.0,"mei":45.0,"lvl":false,"sc":true,"asp":142.0,"tot":457.0,"wh":1070.0,"obs":0},{"c":"S120000241","n":"북일고등학교","g":"전국단위_자사고","lv":"고","m":"충청남도 천안시 동남구 · 사립 · 자율고등학교 · 남","g1":346.0,"cl":12.0,"pc":28.8,"out_":17.0,"base":375.0,"grad":288.0,"gen":8.0,"voc":149.0,"sp":131.0,"au":null,"uni":149.0,"sci":0.0,"fl":0.0,"art":2.0,"mei":129.0,"lvl":false,"sc":false,"asp":950.0,"tot":1008.0,"wh":1313.0,"obs":0},{"c":"S130000355","n":"상산고등학교","g":"전국단위_자사고","lv":"고","m":"전북특별자치도 전주시 완산구 · 사립 · 자율고등학교 · 남녀공학","g1":345.0,"cl":12.0,"pc":28.8,"out_":4.0,"base":334.0,"grad":330.0,"gen":0.0,"voc":181.0,"sp":149.0,"au":null,"uni":181.0,"sci":0.0,"fl":0.0,"art":0.0,"mei":149.0,"lvl":false,"sc":false,"asp":211.0,"tot":1004.0,"wh":1314.0,"obs":0},{"c":"S090005170","n":"용인한국외국어대학교부설고등학교","g":"전국단위_자사고","lv":"고","m":"경기도 용인시 처인구 · 사립 · 자율고등학교 · 남녀공학","g1":375.0,"cl":10.0,"pc":37.5,"out_":1.0,"base":368.0,"grad":365.0,"gen":0.0,"voc":221.0,"sp":144.0,"au":null,"uni":221.0,"sci":0.0,"fl":42.0,"art":0.0,"mei":102.0,"lvl":false,"sc":false,"asp":327.0,"tot":1106.0,"wh":1099.0,"obs":0},{"c":"S040002162","n":"인천하늘고등학교","g":"전국단위_자사고","lv":"고","m":"인천광역시 영종구 · 사립 · 자율고등학교 · 남녀공학","g1":227.0,"cl":8.0,"pc":28.4,"out_":6.0,"base":230.0,"grad":216.0,"gen":0.0,"voc":182.0,"sp":34.0,"au":null,"uni":182.0,"sci":0.0,"fl":0.0,"art":0.0,"mei":34.0,"lvl":false,"sc":false,"asp":564.0,"tot":666.0,"wh":817.0,"obs":0},{"c":"S150000992","n":"포항제철고등학교","g":"전국단위_자사고","lv":"고","m":"경상북도 포항시 남구 · 사립 · 자율고등학교 · 남녀공학","g1":302.0,"cl":10.0,"pc":30.2,"out_":12.0,"base":300.0,"grad":292.0,"gen":5.0,"voc":190.0,"sp":97.0,"au":null,"uni":190.0,"sci":0.0,"fl":0.0,"art":0.0,"mei":97.0,"lvl":false,"sc":false,"asp":1840.0,"tot":876.0,"wh":1023.0,"obs":0},{"c":"S010005616","n":"하나고등학교","g":"전국단위_자사고","lv":"고","m":"서울특별시 은평구 · 사립 · 자율고등학교 · 남녀공학","g1":208.0,"cl":8.0,"pc":26.0,"out_":1.0,"base":207.0,"grad":193.0,"gen":0.0,"voc":147.0,"sp":46.0,"au":null,"uni":147.0,"sci":0.0,"fl":0.0,"art":0.0,"mei":46.0,"lvl":false,"sc":false,"asp":0.0,"tot":621.0,"wh":884.0,"obs":0},{"c":"S070000124","n":"현대청운고등학교","g":"전국단위_자사고","lv":"고","m":"울산광역시 동구 · 사립 · 자율고등학교 · 남녀공학","g1":183.0,"cl":6.0,"pc":30.5,"out_":12.0,"base":182.0,"grad":174.0,"gen":0.0,"voc":92.0,"sp":82.0,"au":null,"uni":92.0,"sci":0.0,"fl":0.0,"art":0.0,"mei":82.0,"lvl":false,"sc":false,"asp":492.0,"tot":526.0,"wh":633.0,"obs":0}];
+const OBS = {
+  "S010000482": {
+    ch: '숭의여고는 "어법과 어휘에 진심"인 학교입니다. 매 학년 다른 단어교재를 선정하여 다의어와 영영풀이, 영작에서 심도 깊은 이해를 요구하며, 시험범위의 모든 문장에 대한 문법·맥락 검증을 요구합니다.',
+    df: {국어:"상",영어:"최상",수학:"최상",사회:"보통",과학:"상"},
+    dc: "상위권 내신 경쟁이 치열하며, 특히 영어는 서술형 문항의 부분점수 반영이 높아져서 어휘·어법 객관식 문제에 더 꼼꼼하게 접근해야 합니다.",
+    c1: "86", c2: "64~71",
+    sg: [["단어 쓰임이 적절하지 않은 것은 모두 몇 개인가?","문장 맥락에 맞는 단어 사용 여부를 묻는 문제입니다. 특히 개수 고르기에서 '없음' 선택은 심리적 압박감을 부여합니다.",1],
+         ["어법상 틀리거나 단어가 누락된 부분을 세 개 찾아 바르게 고쳐 쓰시오","지문 내 모든 문장의 문법성 검증을 짧은 시간 안에 할 수 있어야 합니다.",1],
+         ["다음 글의 밑줄 친 부분을 주어진 조건에 맞게 영작하시오","시험 범위 지문과 문법 내용을 암기에 가깝게 반복 연습해야 합니다.",1]],
+    ft: ["고3 모의고사 기준 2등급이 꾸준히 나오는 학생은 상위권 가능성이 높습니다",
+         "단어의 겉모습에 현혹되지 않고 뜻을 정확히 따지는 학생",
+         "암기와 되새김을 루틴으로 유지할 수 있는 학생",
+         "문법 원칙 검증하기와 한글에서 영작하기를 즐기는, '영어를 좋아하는' 학생"]
+  }
+};
+const GROUPS = ["동작구_고","관악구_고","송파구_고","동작구_중","송파구_중","서울_외고국제고","전국단위_자사고"];
+const GLABEL = {동작구_고:"동작구 고등학교",관악구_고:"관악구 고등학교",송파구_고:"송파구 고등학교",
+  동작구_중:"동작구 중학교",송파구_중:"송파구 중학교",서울_외고국제고:"서울 외고·국제고",전국단위_자사고:"전국단위 자사고"};
+const COLOR = {ink:"var(--ink)",blue:"var(--blue)",yellow:"var(--yellow-hi)",muted:"var(--muted)",hair:"var(--hair)"};
+const esc = (s)=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const seats = (n)=> n>0 ? Math.floor(n*10/100) : 0;
+const short = (n)=> n.replace(/(고등학교|중학교)$/,"");
+
+let active = new Set(["동작구_고","관악구_고"]);
+let picked = new Set(["S010000406","S010000497","S010000477","S010006621","S010000468","S010000482","S010005528"]);
+let query = "";
+let obsOnly = false;
+
+/* ── 학교 담기 ─────────────────────────── */
+function visible(){
+  return SCHOOLS
+    .filter(s=>active.has(s.g))
+    .filter(s=>!obsOnly || s.obs)
+    .filter(s=>!query || s.n.includes(query) || (s.m||"").includes(query))
+    .sort((a,b)=>a.n.localeCompare(b.n,"ko"));
+}
+function renderChips(){
+  const counts = {};
+  SCHOOLS.forEach(s=>counts[s.g]=(counts[s.g]||0)+1);
+  document.getElementById("chips").innerHTML = GROUPS.map(g=>
+    `<button class="chipbtn" aria-pressed="${active.has(g)}" data-g="${g}">${esc(GLABEL[g])} <b>${counts[g]||0}</b></button>`).join("");
+}
+function renderList(){
+  const v = visible();
+  document.getElementById("pickList").innerHTML = v.length ? v.map(s=>`
+    <label class="row" data-c="${s.c}">
+      <input type="checkbox" ${picked.has(s.c)?"checked":""}>
+      <span>
+        <span class="nm"><b>${esc(short(s.n))}</b>${s.obs?'<span class="badge">우리 기록</span>':""}</span>
+        <span class="meta">${esc(s.m||"")}</span>
+      </span>
+      <span class="cnt">${s.g1?("1학년 "+s.g1+"명"):"—"}</span>
+    </label>`).join("")
+    : `<p style="color:var(--muted);font-size:14px;padding:22px 0">이 범위엔 학교가 없습니다. 위에서 범위를 하나 더 켜 보세요.</p>`;
+  const allOn = v.length>0 && v.every(s=>picked.has(s.c));
+  document.getElementById("selAll").textContent = allOn ? "담은 것 다 빼기" : "보이는 학교 다 담기";
+  renderCount();
+}
+function renderCount(){
+  const list = [...picked].map(c=>SCHOOLS.find(s=>s.c===c)).filter(Boolean);
+  const deep = list.filter(s=>s.obs).length;
+  document.getElementById("pickCount").textContent = `오늘 다룰 학교 ${list.length}곳`;
+  document.getElementById("pickSub").textContent = list.length
+    ? ` · 자세히 ${deep}곳 · 요약 ${list.length-deep}곳` : "";
+  document.getElementById("cta").disabled = list.length===0;
+}
+
+/* ── 뜯어보기 ──────────────────────────── */
+function chosen(){ return SCHOOLS.filter(s=>picked.has(s.c)); }
+
+function renderReport(){
+  const list = chosen();
+  const highs = list.filter(s=>s.lv==="고");
+  const mids  = list.filter(s=>s.lv==="중");
+  const el = document.getElementById("reportBody");
+  if(!list.length){ el.innerHTML = `<p style="color:var(--muted);padding:30px 0">담은 학교가 없습니다. <b>학교 담기</b>에서 골라 주세요.</p>`; return; }
+
+  let html = "";
+  let no = 0; const next = ()=> String(++no).padStart(2,"0");
+
+  // 표지
+  html += `<section style="background:var(--ink);color:#fff;padding:44px 38px 40px;margin-bottom:44px">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:32px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--yellow-hi)">
+      <span style="width:7px;height:7px;background:var(--yellow-hi)"></span>ORUN ENGLISH · 학교 분석지</div>
+    <div style="font-size:36px;line-height:1.25;font-weight:700;letter-spacing:-.025em;margin-bottom:14px">
+      ${mids.length&&!highs.length ? "중학교 3년이<br>고교 선택을 만듭니다" : "고교 선택이<br>입시의 시작입니다"}</div>
+    <p style="color:#B5B5B5;font-size:15px;max-width:52ch;margin:0">
+      ${mids.length&&!highs.length
+        ? "2027학년도 예비중1을 위한 학교별 분석. 이 학교 선배들이 어디로 갔는지부터 봅니다."
+        : "2027학년도 예비고1을 위한 학교별 내신 분석. 공시가 말해 주는 것과, 우리가 직접 본 것을 나눠 담았습니다."}</p>
+    <div style="height:1px;background:#3A3A3A;margin:30px 0 20px"></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:9px 22px">
+      ${list.map((s,i)=>`<div style="display:flex;gap:9px;align-items:baseline">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--yellow-hi)">${String(i+1).padStart(2,"0")}</span>
+        <span style="font-size:14px;font-weight:500">${esc(short(s.n))}</span></div>`).join("")}
+    </div></section>`;
+
+  // 나란히 놓고 보기
+  const byLevel = [["고",highs],["중",mids]].filter(x=>x[1].length);
+  html += `<div class="eyebrow">${next()} Side by side</div><h2>나란히 놓고 보기</h2>
+    <p class="lede">학부모님이 제일 먼저 묻는 것들입니다. 전부 공시 자료 그대로이고, 저희가 손대지 않았습니다.</p>`;
+  byLevel.forEach(([lv,arr])=>{
+    const head = lv==="고" ? "4년제" : "특목·자율고";
+    html += `${byLevel.length>1?`<div class="eyebrow" style="margin:18px 0 8px">${lv==="고"?"High school":"Middle school"} · ${lv}등학교</div>`:""}
+      <div class="scroll"><table><thead><tr>
+        <th>학교</th><th class="n">1학년</th><th class="n">반</th><th class="n">반당</th>
+        ${lv==="고"?'<th class="n">1등급 자리</th>':""}
+        <th class="n">${lv}1 전출</th><th class="n">${head}</th></tr></thead><tbody>
+      ${arr.map(s=>{
+        const drop = (s.out_!=null && s.base) ? (s.out_/s.base*100).toFixed(1)+"%" : "—";
+        const hv = lv==="고"
+          ? (s.grad ? Math.round((s.uni||0)/s.grad*100)+"%" : "—")
+          : (s.grad ? Math.round(((s.sp||0)+(s.au||0))/s.grad*100)+"%" : "—");
+        return `<tr><td class="k">${esc(short(s.n))}</td>
+          <td class="n">${s.g1??"—"}</td><td class="n">${s.cl??"—"}</td><td class="n">${s.pc?s.pc.toFixed(1):"—"}</td>
+          ${lv==="고"?`<td class="n" style="color:var(--ink);font-weight:700">${s.g1?seats(s.g1):"—"}</td>`:""}
+          <td class="n">${drop}</td><td class="n">${hv}</td></tr>`;
+      }).join("")}
+      </tbody></table></div>`;
+  });
+  html += `<div class="note"><div class="lb">이 표 읽는 법</div>
+    <p><strong>1등급 자리</strong>는 1학년 인원의 상위 10%이고 소수점은 버립니다 — 167명이면 16자리입니다.
+    <strong>전출</strong>은 1학년 중 다른 학교로 옮긴 학생 비율, 곧 학교에 붙어 있느냐는 신호입니다.
+    맨 오른쪽은 <strong>작년 졸업생</strong> 기준이라 지금 1학년과는 3년 차이가 납니다.</p></div>`;
+
+  // 1등급 자리
+  if(highs.length){
+    html += `<div class="eyebrow" style="margin-top:44px">${next()} How many seats</div>
+      <h2>1등급, 몇 자리나 있을까</h2>
+      <p class="lede">5등급제에서 1등급은 상위 10%입니다. 학교가 크면 자리도 많지만 겨루는 사람도 많습니다.</p>
+      <div class="grid g4">${highs.map(s=>{
+        const n=s.g1||0, k=seats(n), shown=Math.min(n,110), sc=n/(shown||1);
+        return `<div class="cell">
+          <div style="font-size:13.5px;font-weight:700;color:var(--ink)">${esc(short(s.n))}</div>
+          <div style="font-size:12px;color:var(--muted);margin-bottom:11px">1학년 ${n||"—"}명</div>
+          <div style="display:flex;align-items:baseline;gap:5px"><span class="vl big">${k||"—"}</span>
+            <span style="font-size:13px;color:var(--muted)">자리</span></div>
+          <div class="dots">${Array.from({length:shown},(_,i)=>`<i class="${i<Math.round(k/sc)?"on":""}"></i>`).join("")}</div>
+        </div>`;}).join("")}</div>
+      <div class="note blue"><div class="lb">꼭 아셔야 할 것</div>
+        <p><strong>이 숫자는 공통과목에서만 맞습니다.</strong> 석차등급은 학년 정원이 아니라 <strong>그 과목을 고른 사람 수</strong>로 매겨집니다. 수강자가 30명이면 1등급은 3명, 15명이면 1명입니다.</p>
+        <p>상위 10% <em>이내</em>여야 하니 소수점은 버립니다 — 167명이면 16자리, 170명이면 17자리입니다. 수강자가 10명 미만이면 1등급 자리가 아예 없습니다.</p></div>`;
+  }
+
+  // 중학교 — 선배들 행선지
+  if(mids.length){
+    const withPath = mids.filter(s=>s.grad);
+    if(withPath.length){
+      html += `<div class="eyebrow" style="margin-top:44px">${next()} Where they went</div>
+        <h2>이 학교 선배들은 어디로 갔나</h2>
+        <p class="lede">중학교 선택에서 제일 중요한 숫자입니다. 중학교 성적은 대입에 안 들어가지만, 어느 고등학교로 가느냐는 3년을 바꿉니다.</p>`;
+      withPath.forEach(s=>{
+        const parts = [["일반고",s.gen||0,"ink"],["자율고",s.au||0,"blue"],["특목고",s.sp||0,"yellow"],["특성화고",s.voc||0,"muted"]];
+        const rest = s.grad - parts.reduce((a,b)=>a+b[1],0);
+        const all = rest>0 ? parts.concat([["그 외",rest,"hair"]]) : parts;
+        const sub = [["과학고",s.sci],["외고·국제고",s.fl],["예술·체육고",s.art],["마이스터고",s.mei]].filter(x=>x[1]);
+        html += `<div style="padding:17px 0;border-bottom:1px solid var(--hair)">
+          <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:10px">
+            <b style="font-size:15.5px;color:var(--ink)">${esc(short(s.n))}</b>
+            <span style="font-size:12.5px;color:var(--muted)">졸업생 ${s.grad}명 · 2025년 공시</span></div>
+          <div class="bar">${all.map(([l,c,k])=>`<div style="width:${(c/s.grad*100).toFixed(2)}%;background:${COLOR[k]}" title="${esc(l)} ${c}명"></div>`).join("")}</div>
+          <div class="legend">${all.filter(x=>x[1]>0).map(([l,c,k])=>
+            `<span><span class="sw" style="background:${COLOR[k]}"></span>${esc(l)} <strong>${c}</strong><span style="color:var(--muted)"> (${(c/s.grad*100).toFixed(1)}%)</span></span>`).join("")}</div>
+          ${sub.length?`<div style="margin-top:9px;font-size:12.5px;color:var(--muted)">특목고 안을 열어보면 — ${sub.map(x=>x[0]+" "+x[1]+"명").join(" · ")}</div>`:""}
+        </div>`;
+      });
+      html += `<div class="note blue"><div class="lb">이 숫자 읽는 법</div>
+        <p>서울 중학교는 <strong>사는 곳 학교군 안에서 추첨</strong>입니다. 그래서 이건 "좋은 중학교" 순위표가 아니라, <strong>우리 동네 아이들이 실제로 어디로 흘러가는지</strong> 보여주는 지도입니다.</p>
+        <p>특목고 비율이 높다고 그 중학교가 더 좋은 건 아닙니다. 다만 <strong>외고·국제고를 생각한다면 중2부터</strong>고, 그 출발은 영어입니다.</p></div>`;
+    }
+    // 영어 수업
+    html += `<div class="eyebrow" style="margin-top:44px">${next()} English class</div>
+      <h2>영어 수업, 이렇게 굴러갑니다</h2>
+      <p class="lede">중학교는 등급이 없어 성적표엔 성취도 A~E만 남습니다. 그래서 '몇 등급이냐'가 아니라 '어떻게 배우느냐'가 남는 정보입니다.</p>
+      <div class="scroll"><table><thead><tr><th>학교</th><th class="n">반당</th><th>수준별 이동수업</th><th>교과교실제</th><th class="n">방과후 참여</th></tr></thead><tbody>
+      ${mids.map(s=>`<tr><td class="k">${esc(short(s.n))}</td>
+        <td class="n">${s.pc?s.pc.toFixed(1):"—"}</td>
+        <td>${s.lvl==null?"—":(s.lvl?'<strong style="color:var(--blue)">운영</strong>':'<span style="color:var(--muted)">미운영</span>')}</td>
+        <td>${s.sc==null?"—":(s.sc?"운영":'<span style="color:var(--muted)">미운영</span>')}</td>
+        <td class="n">${(s.asp!=null&&s.tot)?Math.round(s.asp/s.tot*100)+"%":"—"}</td></tr>`).join("")}
+      </tbody></table></div>`;
+    const lv = mids.filter(s=>s.lvl);
+    html += `<div class="note"><div class="lb">수준별 이동수업이 뭔가요</div>
+      <p>영어·수학을 실력에 따라 반을 나눠 가르치는 방식입니다. ${lv.length
+        ? `담으신 학교 중 <strong>${lv.map(s=>short(s.n)).join(" · ")}</strong>가 운영합니다. 상위반에 들어가려면 <strong>1학년 첫 시험</strong>이 중요합니다 — 한 번 갈린 반은 잘 안 바뀝니다.`
+        : "담으신 학교 중엔 운영하는 곳이 없습니다. 전체가 같은 진도로 배웁니다."}</p></div>`;
+  }
+
+  // 학교 하나 자세히 (관측이 있는 첫 학교)
+  const deep = list.find(s=>OBS[s.c]);
+  if(deep){
+    const o = OBS[deep.c];
+    html += `<div style="border-top:1.5px solid var(--ink);padding-top:18px;margin-top:52px">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:18px">
+        <div style="font-size:26px;font-weight:700;color:var(--ink);letter-spacing:-.02em">${esc(deep.n)}</div>
+        <div style="font-size:12.5px;color:var(--muted)">${esc(deep.m||"")}</div></div>
+      <div class="grid g5" style="margin-bottom:22px">
+        <div class="cell"><div class="lb">1학년</div><div class="vl">${deep.g1}<span style="font-size:12px;color:var(--muted)">명</span></div></div>
+        <div class="cell"><div class="lb">1학년 반</div><div class="vl">${deep.cl}<span style="font-size:12px;color:var(--muted)">반</span></div></div>
+        <div class="cell"><div class="lb">반당</div><div class="vl">${deep.pc.toFixed(1)}<span style="font-size:12px;color:var(--muted)">명</span></div></div>
+        <div class="cell"><div class="lb">1등급 자리</div><div class="vl">${seats(deep.g1)}<span style="font-size:12px;color:var(--muted)">명</span></div></div>
+      </div>
+      <div class="blk"><div class="blkhead"><div class="l"><span class="en">The school</span><span class="ko">이런 학교입니다</span></div><span class="tag t-obs">우리가 본 것</span></div>
+        <p style="margin:0;font-size:14px">${esc(o.ch)}</p></div>
+      <div class="blk"><div class="blkhead"><div class="l"><span class="en">What's hard</span><span class="ko">어느 과목이 센가</span></div><span class="tag t-obs">우리가 본 것</span></div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px 26px;margin-bottom:12px">
+          ${Object.entries(o.df).map(([k,v])=>`<span>${k} <b class="diff d-${v}">${v}</b></span>`).join("")}</div>
+        <p style="margin:0;font-size:13.5px">${esc(o.dc)}</p></div>
+      <div class="blk"><div class="blkhead"><div class="l"><span class="en">The cut line</span><span class="ko">몇 점부터 1등급인가</span></div><span class="tag t-obs">우리가 본 것</span></div>
+        <div style="display:flex;gap:40px;flex-wrap:wrap">
+          <div><div style="font-size:12px;color:var(--muted);margin-bottom:4px">1등급 컷</div><div class="vl" style="font-size:27px">${esc(o.c1)}<span style="font-size:13px;color:var(--muted)">점</span></div></div>
+          <div><div style="font-size:12px;color:var(--muted);margin-bottom:4px">2등급 컷</div><div class="vl" style="font-size:27px">${esc(o.c2)}<span style="font-size:13px;color:var(--muted)">점</span></div></div></div>
+        <p style="margin:11px 0 0;font-size:12px;color:var(--muted)">영어 / 원점수 기준 · 우리 학생들 성적표로 잡은 값이고 학교가 발표한 숫자가 아닙니다</p></div>
+      <div class="blk"><div class="blkhead"><div class="l"><span class="en">Signature</span><span class="ko">이 학교만 내는 문제</span></div><span class="tag t-obs">우리가 본 것</span></div>
+        ${o.sg.map((q,i)=>`<div style="padding:13px 0;border-bottom:1px solid var(--hair)">
+          <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap">
+            <span class="mono" style="font-size:10px;letter-spacing:.14em;color:var(--yellow)">Q0${i+1}</span>
+            <b style="font-size:14.5px;color:var(--ink)">${esc(q[0])}</b>
+            ${q[2]?'<span class="tag" style="color:var(--blue)">바로 뽑기</span>':""}</div>
+          <p style="margin:6px 0 0;font-size:13.5px">${esc(q[1])}</p></div>`).join("")}</div>
+      <div class="blk"><div class="blkhead"><div class="l"><span class="en">Who fits</span><span class="ko">이런 학생이 잘 맞습니다</span></div><span class="tag t-view">우리 생각</span></div>
+        ${o.ft.map(t=>`<div style="display:grid;grid-template-columns:22px 1fr;gap:10px;padding:8px 0;font-size:13.5px">
+          <span style="width:6px;height:6px;background:var(--yellow-hi);margin-top:8px"></span><span>${esc(t)}</span></div>`).join("")}</div>
+    </div>`;
+    const rest = list.filter(s=>!OBS[s.c]).length;
+    if(rest) html += `<p style="font-size:13px;color:var(--muted);margin-top:18px">나머지 ${rest}곳은 아직 <b>우리가 본 것</b>이 비어 있어 공시 요약만 실립니다. 채워 넣으면 위와 같은 장이 생깁니다.</p>`;
+  }
+  el.innerHTML = html;
+}
+
+/* ── 이벤트 ────────────────────────────── */
+document.getElementById("chips").addEventListener("click", e=>{
+  const b = e.target.closest("button[data-g]"); if(!b) return;
+  const g = b.dataset.g;
+  active.has(g) ? active.delete(g) : active.add(g);
+  renderChips(); renderList();
+});
+document.getElementById("pickList").addEventListener("change", e=>{
+  const row = e.target.closest(".row"); if(!row) return;
+  const c = row.dataset.c;
+  e.target.checked ? picked.add(c) : picked.delete(c);
+  renderCount();
+  document.getElementById("selAll").textContent =
+    (visible().length>0 && visible().every(s=>picked.has(s.c))) ? "담은 것 다 빼기" : "보이는 학교 다 담기";
+});
+document.getElementById("q").addEventListener("input", e=>{ query = e.target.value.trim(); renderList(); });
+document.getElementById("obsOnly").addEventListener("change", e=>{ obsOnly = e.target.checked; renderList(); });
+document.getElementById("selAll").addEventListener("click", ()=>{
+  const v = visible(), allOn = v.length>0 && v.every(s=>picked.has(s.c));
+  v.forEach(s=> allOn ? picked.delete(s.c) : picked.add(s.c));
+  renderList();
+});
+document.getElementById("cta").addEventListener("click", ()=>{ renderReport(); go("report"); });
+
+/* ── 1등급 자리 ────────────────────────── */
+function warn(n){
+  if(!n||n<=0) return "";
+  const s = seats(n); let msg = null;
+  if(s===0) msg = `수강자 ${n}명이면 상위 10%에 드는 자리가 없습니다. 소인수 과목은 등급이 안 나올 수 있어요.`;
+  else if(s===1) msg = `수강자 ${n}명이면 1등급은 딱 1명입니다.`;
+  else if(n%10===9) msg = `수강자 ${n}명은 경계예요. 한 명만 더 들어오면 ${s+1}자리가 됩니다.`;
+  else if(n%10===0) msg = `수강자 ${n}명은 경계예요. 한 명만 빠져도 ${s-1}자리가 됩니다.`;
+  return msg ? `<div style="background:var(--brick-soft);border-left:2px solid var(--brick);padding:9px 12px;font-size:12.5px;color:var(--brick);margin-top:10px">${esc(msg)}</div>` : "";
+}
+function sync(inputId,outId,warnId){
+  const n = Number(document.getElementById(inputId).value)||0;
+  document.getElementById(outId).textContent = n ? seats(n) : "—";
+  document.getElementById(warnId).innerHTML = warn(n);
+}
+["nCommon","nElect"].forEach((id,i)=>{
+  const out = i===0?"seatCommon":"seatElect", w = i===0?"warnCommon":"warnElect";
+  document.getElementById(id).addEventListener("input", ()=>sync(id,out,w));
+  sync(id,out,w);
+});
+
+/* ── 변경표 ────────────────────────────── */
 const DIFF = [
   ["학교 고르기","학교 담기","레퍼런스의 담기/담김 그대로"],
   ["분석지","뜯어보기","무엇을 하는지가 동사로 보입니다"],
@@ -466,89 +614,20 @@ const DIFF = [
   ["특징 한 줄 더 넣기","한 줄 더",""],
   ["고1 이탈","고1 전출","'이탈'은 학교를 깎는 말로 읽힙니다"]
 ];
-const COLOR = {ink:"var(--ink)",blue:"var(--blue)",yellow:"var(--yellow-hi)",muted:"var(--muted)",hair:"var(--hair)"};
-const esc = (s)=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-
-// 담기 목록
-document.getElementById("pickList").innerHTML = PICK.map((s,i)=>`
-  <label class="row">
-    <input type="checkbox" ${i!==0&&i!==3?"checked":""}>
-    <span>
-      <span class="nm"><b>${esc(s.n)}</b>${s.obs?'<span class="badge">우리 기록</span>':""}</span>
-      <span class="meta">${esc(s.meta)}</span>
-    </span>
-    <span class="cnt">1학년 ${s.g1}명</span>
-  </label>`).join("");
-
-// 비교표
-document.getElementById("cmpBody").innerHTML = HIGH.map(s=>`
-  <tr>
-    <td class="k">${esc(s.n)}</td>
-    <td class="n">${s.g1}</td><td class="n">${s.cls}</td><td class="n">${s.per.toFixed(1)}</td>
-    <td class="n" style="color:var(--ink);font-weight:700">${Math.floor(s.g1/10)}</td>
-    <td class="n">${s.out==null?"—":s.out.toFixed(1)+"%"}</td>
-    <td class="n">${s.uni==null?"—":s.uni+"%"}</td>
-  </tr>`).join("");
-
-// 맞는 학생
-document.getElementById("fitList").innerHTML = FIT.map(t=>`
-  <div style="display:grid;grid-template-columns:22px 1fr;gap:10px;padding:8px 0;font-size:13.5px">
-    <span style="width:6px;height:6px;background:var(--yellow-hi);margin-top:8px"></span><span>${esc(t)}</span>
-  </div>`).join("");
-
-// 중학교 진로
-document.getElementById("midList").innerHTML = MID.map(m=>{
-  const shown = m.s.reduce((a,b)=>a+b[1],0);
-  const rest = m.grad - shown;
-  const all = rest>0 ? m.s.concat([["그 외",rest,"hair"]]) : m.s;
-  const bar = all.map(([l,c,k])=>`<div style="width:${(c/m.grad*100).toFixed(2)}%;background:${COLOR[k]}" title="${esc(l)} ${c}명"></div>`).join("");
-  const leg = all.filter(x=>x[1]>0).map(([l,c,k])=>
-    `<span><span class="sw" style="background:${COLOR[k]}"></span>${esc(l)} <strong>${c}</strong><span style="color:var(--muted)"> (${(c/m.grad*100).toFixed(1)}%)</span></span>`).join("");
-  return `<div style="padding:18px 0;border-bottom:1px solid var(--hair)">
-    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:11px">
-      <b style="font-size:15.5px;color:var(--ink)">${esc(m.n)}</b>
-      <span style="font-size:12.5px;color:var(--muted)">졸업생 ${m.grad}명 · 2025년 공시</span>
-    </div>
-    <div class="bar">${bar}</div>
-    <div class="legend">${leg}</div>
-    <div style="margin-top:9px;font-size:12.5px;color:var(--muted)">특목고 안을 열어보면 — ${esc(m.sub)}</div>
-  </div>`;
-}).join("");
-
-// 변경표
 document.querySelector("#diffTable tbody").innerHTML = DIFF.map(([b,a,w])=>
   `<tr><td class="before">${esc(b)}</td><td class="after">${esc(a)}</td><td class="why">${esc(w)}</td></tr>`).join("");
 
-// 1등급 자리 계산
-function seats(n){ return n>0 ? Math.floor(n*10/100) : 0; }
-function warn(n){
-  if(!n||n<=0) return "";
-  const s = seats(n);
-  let msg = null;
-  if(s===0) msg = `수강자 ${n}명이면 상위 10%에 드는 자리가 없습니다. 소인수 과목은 등급이 안 나올 수 있어요.`;
-  else if(s===1) msg = `수강자 ${n}명이면 1등급은 딱 1명입니다.`;
-  else if(n%10===9) msg = `수강자 ${n}명은 경계예요. 한 명만 더 들어오면 ${s+1}자리가 됩니다.`;
-  else if(n%10===0) msg = `수강자 ${n}명은 경계예요. 한 명만 빠져도 ${s-1}자리가 됩니다.`;
-  return msg ? `<div style="background:var(--brick-soft);border-left:2px solid var(--brick);padding:9px 12px;font-size:12.5px;color:var(--brick);margin-top:10px">${esc(msg)}</div>` : "";
-}
-function sync(inputId, outId, warnId){
-  const n = Number(document.getElementById(inputId).value) || 0;
-  document.getElementById(outId).textContent = n ? seats(n) : "—";
-  document.getElementById(warnId).innerHTML = warn(n);
-}
-["nCommon","nElect"].forEach((id,i)=>{
-  const out = i===0?"seatCommon":"seatElect", w = i===0?"warnCommon":"warnElect";
-  document.getElementById(id).addEventListener("input", ()=>sync(id,out,w));
-  sync(id,out,w);
-});
-
-// 탭
+/* ── 탭 ────────────────────────────────── */
 const tabs = [...document.querySelectorAll('nav button')];
-tabs.forEach(b=>b.addEventListener("click",()=>{
-  tabs.forEach(x=>x.setAttribute("aria-selected", String(x===b)));
-  document.querySelectorAll('[data-panel]').forEach(p=>{
-    p.hidden = p.dataset.panel !== b.dataset.tab;
-  });
+function go(name){
+  tabs.forEach(x=>x.setAttribute("aria-selected", String(x.dataset.tab===name)));
+  document.querySelectorAll('[data-panel]').forEach(p=>{ p.hidden = p.dataset.panel !== name; });
   window.scrollTo({top:0,behavior:"instant"});
+}
+tabs.forEach(b=>b.addEventListener("click", ()=>{
+  if(b.dataset.tab==="report") renderReport();
+  go(b.dataset.tab);
 }));
+
+renderChips(); renderList();
 </script>
