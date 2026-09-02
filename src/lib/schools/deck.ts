@@ -1253,7 +1253,9 @@ function newsSlide(pptx: PptxGenJS, r: SchoolRecord, n: SchoolNews, page: number
   const bottom = H - 1.1;
   // 글 길이에 맞춰 행 높이를 잡는다. 한 줄에 한글 약 60자(10.5pt, 8.8in).
   const clip = (t: string, max: number) => (t.length > max ? t.slice(0, max - 1) + "…" : t);
-  for (const it of n.items.slice(0, 6)) {
+  const order = ["news", "curriculum", "english", "program", "freeSemester", "results", "admission", "life"];
+  const items = [...n.items].sort((a, b) => order.indexOf(a.kind) - order.indexOf(b.kind));
+  for (const it of items.slice(0, 6)) {
     const summary = clip(it.summary, 210);
     const lines = 1 + Math.ceil(summary.length / 58);
     const rowH = 0.06 + lines * 0.2;
