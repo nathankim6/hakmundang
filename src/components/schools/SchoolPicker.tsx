@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { GROUP_LABEL, type SchoolFact, type SchoolGroup } from "@/types/school";
-import { groupsWithCounts, hasObservation, schoolsInGroups } from "@/lib/schools/data";
+import { groupsWithCounts, hasObservation, hasSourced, schoolsInGroups } from "@/lib/schools/data";
 
 interface Props {
   selected: string[];
@@ -16,7 +16,7 @@ export function SchoolPicker({ selected, onChange, onBuild }: Props) {
 
   const visible = useMemo(() => {
     let list = schoolsInGroups(active);
-    if (observedOnly) list = list.filter((s) => hasObservation(s.code));
+    if (observedOnly) list = list.filter((s) => hasObservation(s.code) || hasSourced(s.code));
     if (query.trim()) {
       const q = query.trim();
       list = list.filter((s) => s.name.includes(q) || (s.district ?? "").includes(q));
@@ -25,7 +25,7 @@ export function SchoolPicker({ selected, onChange, onBuild }: Props) {
   }, [active, query, observedOnly]);
 
   const selectedSet = new Set(selected);
-  const observedSelected = selected.filter(hasObservation).length;
+  const observedSelected = selected.filter((c) => hasObservation(c) || hasSourced(c)).length;
 
   const toggleGroup = (g: SchoolGroup) =>
     setActive((prev) => (prev.includes(g) ? prev.filter((x) => x !== g) : [...prev, g]));
@@ -218,6 +218,7 @@ function SchoolRow({
   onToggle: () => void;
 }) {
   const observed = hasObservation(school.code);
+  const sourced = hasSourced(school.code);
   return (
     <label
       style={{
@@ -249,6 +250,21 @@ function SchoolRow({
               }}
             >
               우리 기록
+            </span>
+          )}
+          {sourced && (
+            <span
+              style={{
+                fontFamily: "'IBM Plex Mono', monospace",
+                fontSize: 9.5,
+                letterSpacing: ".12em",
+                textTransform: "uppercase",
+                color: "var(--ink)",
+                border: "1px solid currentColor",
+                padding: "1px 6px",
+              }}
+            >
+              2026 분석
             </span>
           )}
         </div>

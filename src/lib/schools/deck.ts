@@ -7,6 +7,12 @@ import {
 import type { SchoolRecord } from "@/types/school";
 import { RESULT_BASIS_LABEL } from "@/data/results";
 import {
+  ORUN_MESSAGES,
+  ORUN_RESULTS,
+  type ExamReport,
+  type SourcedSchool,
+} from "@/data/sourced";
+import {
   dropoutRate,
   headlinePath,
   pathBreakdown,
@@ -992,6 +998,265 @@ function schoolSlides(pptx: PptxGenJS, record: SchoolRecord, startPage: number):
   return page;
 }
 
+
+/* ── 출처층(SOURCED) 슬라이드 ─────────── */
+
+const srcLine = (e: { source: { url: string; date: string } }) =>
+  `출처 · ${e.source.url.includes("youtube") ? "유튜브 LIVE" : "옳은영어 블로그"} · ${e.source.date.replace(/-/g, ".")}`;
+
+/** 숫자의 이면 — 설명회 오프닝 */
+function numbersSlide(pptx: PptxGenJS, page: number) {
+  const s = pptx.addSlide();
+  eyebrow(s, "read the numbers");
+  title(
+    s,
+    "'1등급 몇 명'보다 먼저 보셔야 할 것",
+    "숫자는 정확해 보이지만, 어떤 분모 위에 올려놓았는지에 따라 뜻이 달라집니다",
+  );
+  let y = 2.45;
+  ORUN_MESSAGES.slice(0, 4).forEach((m, i) => {
+    s.addText(String(i + 1).padStart(2, "0"), {
+      x: M, y, w: 0.5, h: 0.3, fontFace: FONT, fontSize: 12, bold: true, color: YELLOW_S,
+      isTextBox: true, margin: 0,
+    });
+    s.addText(m.text, {
+      x: M + 0.6, y, w: W - M * 2 - 0.6, h: 0.72, fontFace: FONT, fontSize: 12.5, color: BODY,
+      lineSpacing: 19, isTextBox: true, margin: 0, valign: "top",
+    });
+    y += 0.9;
+    hair(s, y - 0.12);
+  });
+  s.addText(srcLine(ORUN_MESSAGES[0]), {
+    x: M, y: H - 1.0, w: W - M * 2, h: 0.25, fontFace: FONT, fontSize: 8.5, color: GREY, isTextBox: true, margin: 0,
+  });
+  footer(s, page);
+  s.addNotes(
+    "[템플릿 사용법] 오프닝. 우리 학원 자랑보다 '숫자 읽는 법'을 먼저 준다.\n\n[발표 스크립트] 100명 중 10명이 1등급인 학원과, 다섯 명 중 한 명이 1등급인 학원. 어느 쪽이 교육력이 높을까요.",
+  );
+}
+
+/** 2026 1학기 옳은영어 결과 — 다크 + 포스터 */
+function orunResultsSlide(pptx: PptxGenJS, page: number, poster?: string) {
+  const s = pptx.addSlide();
+  s.background = { color: INK };
+  s.addShape("rect", { x: M, y: 0.5, w: 0.12, h: 0.12, fill: { color: YELLOW } });
+  s.addText("WE DID THIS · 2026 1학기", {
+    x: M + 0.24, y: 0.46, w: 8, h: 0.22, fontFace: FONT, fontSize: 10, bold: true, color: YELLOW, charSpacing: 3, isTextBox: true, margin: 0,
+  });
+  s.addText("2026년 1학기, 옳은영어가 낸 결과", {
+    x: M, y: 0.95, w: 8, h: 0.7, fontFace: FONT, fontSize: 30, bold: true, color: "FFFFFF", isTextBox: true, margin: 0,
+  });
+  const cw = 3.5;
+  ORUN_RESULTS.forEach((r, i) => {
+    const x = M + (i % 2) * cw;
+    const y = 2.1 + Math.floor(i / 2) * 1.85;
+    s.addText(r.label, { x, y, w: cw - 0.3, h: 0.3, fontFace: FONT, fontSize: 11.5, color: DARK_SUB, isTextBox: true, margin: 0 });
+    s.addText(r.value, { x, y: y + 0.32, w: cw - 0.3, h: 0.75, fontFace: FONT, fontSize: 36, bold: true, color: YELLOW, isTextBox: true, margin: 0 });
+    s.addText(`${r.basis} · ${r.term}`, { x, y: y + 1.08, w: cw - 0.3, h: 0.45, fontFace: FONT, fontSize: 9.5, color: GREY, lineSpacing: 14, isTextBox: true, margin: 0 });
+    if (i % 2 === 1) s.addShape("line", { x: M + cw - 0.15, y, w: 0, h: 1.5, line: { color: HAIR_DARK, width: 0.75 } });
+  });
+  if (poster) {
+    s.addImage({ data: poster, x: W - M - 3.7, y: 0.85, w: 3.7, h: 5.25 });
+    s.addText("옳은영어 블로그 2026.05.15 게시 포스터", {
+      x: W - M - 3.7, y: 6.15, w: 3.7, h: 0.25, fontFace: FONT, fontSize: 8, color: GREY, isTextBox: true, margin: 0,
+    });
+  }
+  s.addText("학교 1등급 중 비율과 재원생 중 비율은 분모가 다릅니다 · 옳은영어 블로그 성적우수자 발표 기준", {
+    x: M, y: H - 1.0, w: 7.5, h: 0.25, fontFace: FONT, fontSize: 8.5, color: GREY, isTextBox: true, margin: 0,
+  });
+  footer(s, page, true);
+  s.addNotes("[발표 스크립트] 전 과목 1등급 4명, 전교 1등 2명. 포스터에 있는 그대로입니다.");
+}
+
+/** 2026 1학기 시험 한눈에 — 표 */
+function exam2026TableSlides(pptx: PptxGenJS, records: SchoolRecord[], level: "고" | "중", page: number): number {
+  const list = records.filter((r) => r.fact.level === level && r.sourced?.exams.length);
+  if (!list.length) return page;
+  const grade = level === "고" ? 1 : list.some((r) => r.sourced!.exams.some((e) => e.grade === 3)) ? 3 : 2;
+  const chunks = balancedChunks(list, 5);
+  chunks.forEach((chunk, ci) => {
+    const s = pptx.addSlide();
+    eyebrow(s, "the 2026 tests");
+    title(
+      s,
+      chunks.length > 1 ? `2026년 1학기, 시험은 이렇게 나왔다 (${ci + 1}/${chunks.length})` : "2026년 1학기, 시험은 이렇게 나왔다",
+      `${level}${grade} 기준 · 옳은영어 강사진이 실제 시험지를 놓고 쓴 상세 분석`,
+    );
+    const head = ["학교", "중간고사", "기말고사", ...(level === "고" ? ["1등급 컷"] : []), "한 줄로"];
+    const border = (color: string, pt: number) =>
+      [{ type: "none" }, { type: "none" }, { type: "solid", color, pt }, { type: "none" }] as PptxGenJS.TableCellProps["border"];
+    const rows: PptxGenJS.TableRow[] = [
+      head.map((h) => ({
+        text: h,
+        options: { fontFace: FONT, fontSize: 9.5, color: GREY, bold: false, border: border(INK, 1.25), valign: "bottom" as PptxGenJS.VAlign },
+      })),
+    ];
+    chunk.forEach((r) => {
+      const sc = r.sourced!;
+      const m = sc.exams.find((e) => e.term.endsWith("중간") && e.grade === grade);
+      const f = sc.exams.find((e) => e.term.endsWith("기말") && e.grade === grade);
+      const cut = f?.cut?.grade1 ?? m?.cut?.grade1 ?? "—";
+      const cell = (e?: ExamReport) => (e ? `${e.format}\n${e.difficulty}` : "—");
+      const cells = [`■ ${short(r.fact.name)}`, cell(m), cell(f), ...(level === "고" ? [cut] : []), sc.oneLiner ?? "—"];
+      rows.push(
+        cells.map((c, i) => ({
+          text: c,
+          options: {
+            fontFace: FONT,
+            fontSize: i === 0 ? 11 : 9,
+            color: i === 0 ? INK : BODY,
+            bold: i === 0 || (level === "고" && i === 3),
+            border: border(HAIR, 0.75),
+            valign: "top" as PptxGenJS.VAlign,
+          },
+        })),
+      );
+    });
+    const colW = level === "고" ? [1.5, 3.4, 3.4, 1.0, 2.63] : [1.6, 3.6, 3.6, 3.13];
+    s.addTable(rows, { x: M, y: 2.35, w: W - M * 2, colW, valign: "top" });
+    s.addText("컷은 학교 발표값이 아니라 우리 학생 성적표와 강사 추정 · 출처는 학교 페이지에", {
+      x: M, y: H - 1.0, w: W - M * 2, h: 0.25, fontFace: FONT, fontSize: 8.5, color: GREY, isTextBox: true, margin: 0,
+    });
+    footer(s, page++);
+    s.addNotes("[발표 스크립트] 같은 동네인데 시험의 성격이 이렇게 다릅니다. 객관식 100%인 학교와 서답형 35점인 학교가 나란히 있습니다.");
+  });
+  return page;
+}
+
+/** 학교별 — 2026 시험 카드(중간·기말) */
+function examTrendSlide(pptx: PptxGenJS, r: SchoolRecord, grade: number, exams: ExamReport[], page: number) {
+  const s = pptx.addSlide();
+  const f = r.fact;
+  eyebrow(s, "how 2026 went");
+  title(s, `${short(f.name)} ${f.level}${grade} · 2026년 1학기 시험`, r.sourced?.oneLiner);
+  const cardW = exams.length > 1 ? (W - M * 2 - 0.2) / 2 : W - M * 2;
+  exams.forEach((e, i) => {
+    const x = M + i * (cardW + 0.2);
+    const top = 2.35;
+    const cardH = 4.45;
+    s.addShape("rect", { x, y: top, w: cardW, h: cardH, fill: { color: PAPER } });
+    let y = top + 0.18;
+    const isMid = e.term.endsWith("중간");
+    s.addText(e.term.toUpperCase(), {
+      x: x + 0.22, y, w: 2.5, h: 0.22, fontFace: FONT, fontSize: 9.5, bold: true, color: isMid ? BLUE : YELLOW_S, charSpacing: 2, isTextBox: true, margin: 0,
+    });
+    s.addText(e.format, {
+      x: x + 2.6, y, w: cardW - 2.8, h: 0.22, align: "right", fontFace: FONT, fontSize: 9.5, color: GREY, isTextBox: true, margin: 0,
+    });
+    y += 0.34;
+    if (e.cut?.grade1) {
+      // "80점대 후반~90점대 초반 예상" 같은 긴 컷은 큰 숫자로 못 쓴다.
+      const big = e.cut.grade1.length <= 8;
+      s.addText(
+        [
+          { text: "1등급 컷  ", options: { fontSize: 10, color: GREY } },
+          { text: e.cut.grade1, options: { fontSize: big ? 20 : 12.5, bold: true, color: INK } },
+          ...(e.cut.grade2 ? [{ text: `    2등급 ${e.cut.grade2}`, options: { fontSize: 10, color: GREY } }] : []),
+          ...(e.cut.avg ? [{ text: `    평균 ${e.cut.avg}`, options: { fontSize: 10, color: GREY } }] : []),
+        ],
+        { x: x + 0.22, y, w: cardW - 0.44, h: 0.4, fontFace: FONT, isTextBox: true, margin: 0, valign: "bottom" },
+      );
+      y += 0.48;
+    }
+    if (e.scope) {
+      s.addText(`범위 · ${e.scope}`, {
+        x: x + 0.22, y, w: cardW - 0.44, h: 0.3, fontFace: FONT, fontSize: 9.5, color: BODY, isTextBox: true, margin: 0,
+      });
+      y += 0.32;
+    }
+    s.addText(e.difficulty, {
+      x: x + 0.22, y, w: cardW - 0.44, h: 0.5, fontFace: FONT, fontSize: 11, bold: true, color: INK, lineSpacing: 15, isTextBox: true, margin: 0, valign: "top",
+    });
+    y += 0.56;
+    hair(s, y, x + 0.22, cardW - 0.44);
+    y += 0.08;
+    const maxK = e.scope && e.cut?.grade1 ? 3 : 4;
+    e.killers.slice(0, maxK).forEach((k) => {
+      s.addShape("rect", { x: x + 0.22, y: y + 0.07, w: 0.08, h: 0.08, fill: { color: YELLOW } });
+      s.addText(k, {
+        x: x + 0.38, y, w: cardW - 0.6, h: 0.4, fontFace: FONT, fontSize: 9.5, color: BODY, lineSpacing: 13, isTextBox: true, margin: 0, valign: "top",
+      });
+      y += 0.42;
+    });
+    hair(s, y, x + 0.22, cardW - 0.44);
+    y += 0.1;
+    s.addText(`“${e.verdict}”${e.teacher ? ` — ${e.teacher} T` : ""}`, {
+      x: x + 0.22, y, w: cardW - 0.44, h: 0.6, fontFace: FONT, fontSize: 9.5, italic: true, color: BODY, lineSpacing: 13, isTextBox: true, margin: 0, valign: "top",
+    });
+    s.addText(srcLine(e), {
+      x: x + 0.22, y: top + cardH - 0.3, w: cardW - 0.44, h: 0.22, fontFace: FONT, fontSize: 7.5, color: GREY, isTextBox: true, margin: 0,
+    });
+  });
+  footer(s, page);
+  s.addNotes(`[발표 스크립트] ${short(f.name)} ${grade}학년 2026년 1학기입니다. ${exams.map((e) => `${e.term}: ${e.difficulty}`).join(" / ")}`);
+}
+
+/** 학교별 — 설명회에서 한 말 + 이 학교 실적 */
+function insightsSlide(pptx: PptxGenJS, r: SchoolRecord, sc: SourcedSchool, page: number) {
+  const s = pptx.addSlide();
+  eyebrow(s, "said on stage");
+  title(s, `${short(r.fact.name)}, 설명회에서 한 말`);
+  let y = 2.3;
+  const maxI = sc.results.length ? 4 : 5;
+  sc.insights.slice(0, maxI).forEach((it, i) => {
+    s.addText(String(i + 1).padStart(2, "0"), { x: M, y, w: 0.45, h: 0.3, fontFace: FONT, fontSize: 11, bold: true, color: YELLOW_S, isTextBox: true, margin: 0 });
+    s.addText(it.text, { x: M + 0.55, y, w: W - M * 2 - 3.2, h: 0.62, fontFace: FONT, fontSize: 11.5, color: BODY, lineSpacing: 16, isTextBox: true, margin: 0, valign: "top" });
+    s.addText(srcLine(it), { x: W - M - 2.5, y: y + 0.02, w: 2.5, h: 0.25, align: "right", fontFace: FONT, fontSize: 7.5, color: GREY, isTextBox: true, margin: 0 });
+    y += 0.7;
+    hair(s, y - 0.1);
+  });
+  if (sc.results.length) {
+    y = Math.max(y + 0.05, 4.9);
+    const list = sc.results.slice(0, 4);
+    const cw = (W - M * 2) / list.length;
+    list.forEach((res, i) => {
+      const x = M + cw * i;
+      if (i > 0) s.addShape("line", { x, y: y + 0.05, w: 0, h: 0.95, line: { color: HAIR, width: 0.75 } });
+      s.addText(res.label, { x: x + 0.15, y, w: cw - 0.3, h: 0.26, fontFace: FONT, fontSize: 9.5, color: GREY, isTextBox: true, margin: 0 });
+      s.addText(res.value, { x: x + 0.15, y: y + 0.26, w: cw - 0.3, h: 0.45, fontFace: FONT, fontSize: 22, bold: true, color: INK, isTextBox: true, margin: 0 });
+      s.addText(`${res.basis} · ${res.term}`, { x: x + 0.15, y: y + 0.72, w: cw - 0.3, h: 0.32, fontFace: FONT, fontSize: 8, color: GREY, lineSpacing: 11, isTextBox: true, margin: 0 });
+    });
+  }
+  footer(s, page);
+  s.addNotes(`[발표 스크립트] ${sc.insights[0]?.text ?? ""}`);
+}
+
+/** 학교별 — 선배 TMI */
+function tmiSlide(pptx: PptxGenJS, r: SchoolRecord, sc: SourcedSchool, page: number) {
+  const s = pptx.addSlide();
+  eyebrow(s, "from the seniors");
+  title(s, `${short(r.fact.name)} 선배들이 후배에게`, "옳은영어 재원생 선배들이 직접 써 준 답 · 유튜브 LIVE 2025.11.16");
+  const items = sc.tmi.slice(0, 10);
+  const perCol = Math.ceil(items.length / 2);
+  const colW = (W - M * 2 - 0.4) / 2;
+  items.forEach((t, i) => {
+    const col = Math.floor(i / perCol);
+    const row = i % perCol;
+    const x = M + col * (colW + 0.4);
+    const y = 2.4 + row * 0.62;
+    s.addText(String(i + 1).padStart(2, "0"), { x, y, w: 0.4, h: 0.3, fontFace: FONT, fontSize: 10.5, bold: true, color: YELLOW_S, isTextBox: true, margin: 0 });
+    s.addText(t, { x: x + 0.45, y, w: colW - 0.45, h: 0.5, fontFace: FONT, fontSize: 11.5, color: BODY, lineSpacing: 15, isTextBox: true, margin: 0, valign: "top" });
+    hair(s, y + 0.52, x, colW);
+  });
+  footer(s, page);
+  s.addNotes("[발표 스크립트] 어른들이 못 알려주는 것들입니다. 급식, 계단, 매점.");
+}
+
+/** 출처층 슬라이드 묶음 — 관측이 없는 학교도 만든다 */
+function sourcedSlides(pptx: PptxGenJS, r: SchoolRecord, startPage: number): number {
+  const sc = r.sourced;
+  if (!sc) return startPage;
+  let page = startPage;
+  const grades = [...new Set(sc.exams.map((e) => e.grade))].sort();
+  grades.forEach((g) => {
+    const exams = sc.exams.filter((e) => e.grade === g);
+    if (exams.length) examTrendSlide(pptx, r, g, exams, page++);
+  });
+  if (sc.insights.length || sc.results.length) insightsSlide(pptx, r, sc, page++);
+  if (sc.tmi.length) tmiSlide(pptx, r, sc, page++);
+  return page;
+}
+
 function resultsSlide(pptx: PptxGenJS, records: SchoolRecord[], page: number) {
   const all = records.flatMap((r) => r.results ?? []);
   if (!all.length) return page;
@@ -1152,7 +1417,12 @@ function closingSlide(pptx: PptxGenJS) {
 
 /* ── 진입점 ────────────────────────────── */
 
-export async function buildDeck(records: SchoolRecord[], year = "2027학년도") {
+export interface DeckAssets {
+  /** 실적 포스터 data URL — 브라우저에서는 /orun/*.jpg 를 fetch 해 넣는다 */
+  posters?: string[];
+}
+
+export async function buildDeck(records: SchoolRecord[], year = "2027학년도", assets: DeckAssets = {}) {
   const pptx = new PptxGenJS();
   pptx.layout = "LAYOUT_WIDE";
   pptx.author = "옳은영어 ORUN ENGLISH";
@@ -1160,7 +1430,7 @@ export async function buildDeck(records: SchoolRecord[], year = "2027학년도")
 
   const highs = records.filter((r) => r.fact.level === "고");
   const mids = records.filter((r) => r.fact.level === "중");
-  const detailed = records.filter((r) => r.observation);
+  const detailed = records.filter((r) => r.observation || r.sourced);
 
   coverSlide(pptx, records, year);
   let page = 2;
@@ -1173,12 +1443,34 @@ export async function buildDeck(records: SchoolRecord[], year = "2027학년도")
   sectionSlide(
     pptx,
     nextNo(),
+    "숫자의 이면",
+    "'1등급 몇 명'보다 먼저, 그 숫자가 어떤 분모 위에 있는지부터 봅니다.",
+  );
+  page++;
+  numbersSlide(pptx, page++);
+  orunResultsSlide(pptx, page++, assets.posters?.[0]);
+
+  sectionSlide(
+    pptx,
+    nextNo(),
     "숫자부터 봅니다",
     "학교알리미 공시를 그대로 옮긴 표입니다. 저희 해석은 아직 들어가지 않았습니다.",
   );
   page++;
   if (highs.length) page = compareSlides(pptx, highs, "고", page);
   if (mids.length) page = compareSlides(pptx, mids, "중", page);
+
+  if (records.some((r) => r.sourced?.exams.length)) {
+    sectionSlide(
+      pptx,
+      nextNo(),
+      "2026년 시험은 이렇게 나왔다",
+      "옳은영어 강사진이 실제 시험지를 놓고 쓴 학교별 상세 분석. 중간과 기말이 어떻게 달랐는지까지.",
+    );
+    page++;
+    page = exam2026TableSlides(pptx, records, "고", page);
+    page = exam2026TableSlides(pptx, records, "중", page);
+  }
 
   if (highs.length) {
     sectionSlide(
@@ -1213,6 +1505,7 @@ export async function buildDeck(records: SchoolRecord[], year = "2027학년도")
     page++;
     detailed.forEach((r) => {
       page = schoolSlides(pptx, r, page);
+      page = sourcedSlides(pptx, r, page);
     });
   }
 

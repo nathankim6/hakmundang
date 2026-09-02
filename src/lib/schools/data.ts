@@ -1,5 +1,6 @@
 import raw from "@/data/schools.json";
 import { ACADEMY_RESULTS } from "@/data/results";
+import { getSourced, SOURCED } from "@/data/sourced";
 import { getObservation, getObservations } from "@/lib/schools/store";
 import type { SchoolFact, SchoolGroup, SchoolRecord } from "@/types/school";
 
@@ -41,7 +42,13 @@ export function getRecord(code: string): SchoolRecord | undefined {
     fact,
     observation: getObservation(code),
     results: ACADEMY_RESULTS.filter((r) => r.schoolCode === code),
+    sourced: getSourced(code),
   };
+}
+
+/** 출처 자료(2026 시험 분석·실적)가 있는 학교 */
+export function hasSourced(code: string): boolean {
+  return Boolean(SOURCED[code]);
 }
 
 export function getRecords(codes: string[]): SchoolRecord[] {

@@ -158,4 +158,9 @@ export interface SchoolRecord {
   fact: SchoolFact;
   observation?: SchoolObservation;
   results?: AcademyResult[];
+  /**
+   * 출처층(SOURCED) — 블로그·설명회 등 공개된 자료를 출처와 함께 옮긴 것.
+   * 정의는 src/data/sourced.ts. 모든 항목에 url·날짜가 붙는다.
+   */
+  sourced?: import("@/data/sourced").SourcedSchool;
 }

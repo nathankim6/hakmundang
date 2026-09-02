@@ -1,5 +1,13 @@
 import { useMemo, useState } from "react";
 import type { SchoolRecord } from "@/types/school";
+import {
+  Exam2026Table,
+  ExamTrend2026,
+  LiveInsights,
+  OrunSection,
+  SeniorTmi,
+  SourcedResults,
+} from "@/components/schools/Sourced";
 import { RESULT_BASIS_LABEL } from "@/data/results";
 import {
   detectAnomalies,
@@ -22,7 +30,8 @@ const YEAR = "2027학년도";
 export function AnalysisReport({ records, onBack }: Props) {
   const highs = records.filter((r) => r.fact.level === "고");
   const mids = records.filter((r) => r.fact.level === "중");
-  const detailed = records.filter((r) => r.observation);
+  // 상세 페이지는 우리가 본 것(관측)이나 출처 자료(2026 분석) 중 하나만 있어도 만든다.
+  const detailed = records.filter((r) => r.observation || r.sourced);
   let no = 0;
   const next = () => String(++no).padStart(2, "0");
 
@@ -31,7 +40,9 @@ export function AnalysisReport({ records, onBack }: Props) {
       <Toolbar records={records} onBack={onBack} />
 
       <CoverPage records={records} highs={highs.length} mids={mids.length} />
+      <OrunSection no={next()} head={SectionHead} />
       <CompareSection records={records} no={next()} />
+      <Exam2026Table records={records} no={next()} head={SectionHead} />
 
       {/* 고등학교는 등급이 핵심, 중학교는 어느 고교로 가는가가 핵심 */}
       {highs.length > 0 && <SeatsSection records={highs} no={next()} />}
@@ -59,7 +70,24 @@ function Toolbar({ records, onBack }: { records: SchoolRecord[]; onBack: () => v
     setState("working");
     try {
       const { buildDeck } = await import("@/lib/schools/deck");
-      await buildDeck(records, YEAR);
+      // 실적 포스터는 public/orun 에 있다. 못 읽어도 덱은 만든다.
+      const toDataUrl = async (path: string) => {
+        try {
+          const blob = await (await fetch(path)).blob();
+          return await new Promise<string>((res, rej) => {
+            const fr = new FileReader();
+            fr.onload = () => res(String(fr.result));
+            fr.onerror = rej;
+            fr.readAsDataURL(blob);
+          });
+        } catch {
+          return undefined;
+        }
+      };
+      const posters = (await Promise.all(["/orun/2026-1-mid-results.jpg"].map(toDataUrl))).filter(
+        (p): p is string => Boolean(p),
+      );
+      await buildDeck(records, YEAR, { posters });
       setState("idle");
     } catch (e) {
       console.error(e);
@@ -788,8 +816,8 @@ function ResultsSection({ records, no }: { records: SchoolRecord[]; no: string }
 /* ── 학교별 상세 ──────────────────────── */
 
 function SchoolDetail({ record }: { record: SchoolRecord }) {
-  const { fact, observation: o } = record;
-  if (!o) return null;
+  const { fact, observation: o, sourced } = record;
+  if (!o && !sourced) return null;
   const g = genderSplit(fact);
   const isHigh = fact.level === "고";
   const seats = isHigh && fact.g1Total ? seatsForGrade1(fact.g1Total) : null;
@@ -842,6 +870,10 @@ function SchoolDetail({ record }: { record: SchoolRecord }) {
         {g && <Stat label="남 · 여" value={`${g.male} : ${g.female}`} unit="" />}
       </div>
 
+      {sourced && <ExamTrend2026 s={sourced} level={fact.level} />}
+
+      {o && (
+        <>
       <FieldBlock en="The school" ko="이런 학교입니다" source="obs">
         <p style={{ margin: 0 }}>{o.character}</p>
       </FieldBlock>
@@ -1037,6 +1069,12 @@ function SchoolDetail({ record }: { record: SchoolRecord }) {
           </div>
         ))}
       </FieldBlock>
+        </>
+      )}
+
+      {sourced && <SourcedResults s={sourced} />}
+      {sourced && <LiveInsights s={sourced} />}
+      {sourced && <SeniorTmi s={sourced} />}
     </section>
   );
 }
@@ -1196,7 +1234,7 @@ function SourceFooter() {
       }}
     >
       <span>옳은영어 ORUN ENGLISH</span>
-      <span>출처 · 학교알리미 2026년 공시 · 진로현황 2025년 공시 · 2026.09.01 조회</span>
+      <span>출처 · 학교알리미 2026년 공시 · 진로현황 2025년 공시 · 옳은영어 블로그 2026년 1학기 분석 · 유튜브 LIVE 2025.11.16</span>
     </footer>
   );
 }
