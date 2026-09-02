@@ -1249,24 +1249,32 @@ function newsSlide(pptx: PptxGenJS, r: SchoolRecord, n: SchoolNews, page: number
   eyebrow(s, "from outside");
   title(s, `${short(r.fact.name)}, 밖에서 본 것`, n.oneLiner);
   let y = 2.35;
-  n.items.slice(0, 6).forEach((it) => {
+  const textW = W - M * 2 - 1.4 - 2.4;
+  const bottom = H - 1.1;
+  // 글 길이에 맞춰 행 높이를 잡는다. 한 줄에 한글 약 60자(10.5pt, 8.8in).
+  const clip = (t: string, max: number) => (t.length > max ? t.slice(0, max - 1) + "…" : t);
+  for (const it of n.items.slice(0, 6)) {
+    const summary = clip(it.summary, 210);
+    const lines = 1 + Math.ceil(summary.length / 58);
+    const rowH = 0.06 + lines * 0.2;
+    if (y + rowH > bottom) break;
     s.addText(NEWS_KIND_LABEL[it.kind].toUpperCase(), {
       x: M, y: y + 0.03, w: 1.3, h: 0.22, fontFace: FONT, fontSize: 8.5, bold: true,
       color: it.kind === "results" ? YELLOW_S : it.kind === "curriculum" ? BLUE : GREY, charSpacing: 1.5, isTextBox: true, margin: 0,
     });
     s.addText(
       [
-        { text: it.title, options: { bold: true, color: INK, fontSize: 11.5, breakLine: true } },
-        { text: it.summary, options: { color: BODY, fontSize: 10.5 } },
+        { text: clip(it.title, 70), options: { bold: true, color: INK, fontSize: 11.5, breakLine: true } },
+        { text: summary, options: { color: BODY, fontSize: 10.5 } },
       ],
-      { x: M + 1.4, y, w: W - M * 2 - 1.4 - 2.2, h: 0.62, fontFace: FONT, lineSpacing: 14, isTextBox: true, margin: 0, valign: "top" },
+      { x: M + 1.4, y, w: textW, h: rowH, fontFace: FONT, lineSpacing: 14, isTextBox: true, margin: 0, valign: "top" },
     );
-    s.addText(`${it.source.publisher}${it.date ? " · " + it.date.replace(/-/g, ".") : ""}`, {
-      x: W - M - 2.1, y: y + 0.03, w: 2.1, h: 0.22, align: "right", fontFace: FONT, fontSize: 7.5, color: GREY, isTextBox: true, margin: 0,
+    s.addText(`${clip(it.source.publisher, 28)}${it.date ? " · " + it.date.replace(/-/g, ".") : ""}`, {
+      x: W - M - 2.3, y: y + 0.03, w: 2.3, h: 0.4, align: "right", fontFace: FONT, fontSize: 7.5, color: GREY, lineSpacing: 10, isTextBox: true, margin: 0, valign: "top",
     });
-    y += 0.72;
-    hair(s, y - 0.1);
-  });
+    y += rowH + 0.14;
+    hair(s, y - 0.08);
+  }
   s.addText(`조사일 ${n.fetchedAt} · 학교 홈페이지·언론·학교알리미 공시 문서에서 옮김`, {
     x: M, y: H - 1.0, w: W - M * 2, h: 0.25, fontFace: FONT, fontSize: 8.5, color: GREY, isTextBox: true, margin: 0,
   });
@@ -1529,11 +1537,14 @@ export async function buildDeck(records: SchoolRecord[], year = "2027학년도",
   }
 
   if (detailed.length) {
+    const seen = detailed.filter((r) => r.observation || r.sourced?.exams.length).length;
     sectionSlide(
       pptx,
       nextNo(),
       "학교 하나씩 뜯어봅니다",
-      `저희가 직접 시험지를 본 ${detailed.length}곳입니다. 공시로는 안 나오는 부분입니다.`,
+      seen
+        ? `저희가 직접 시험지를 본 ${seen}곳을 포함해 ${detailed.length}곳입니다. 공시로는 안 나오는 부분입니다.`
+        : `${detailed.length}곳을 학교 밖 공개 자료로 봅니다. 홈페이지·언론·공시 문서에서 옮겼습니다.`,
     );
     page++;
     detailed.forEach((r) => {
