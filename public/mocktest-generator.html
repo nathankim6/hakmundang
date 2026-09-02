@@ -267,50 +267,113 @@
     display: flex; align-items: center; gap: 8px;
   }
 
-  /* ---------- 진행 상태 (분석 · 출제) ---------- */
+  /* ---------- 진행 상태 · 관제실 패널 ---------- */
   .prog {
-    display: none; margin-top: 16px;
-    background: var(--white); border: 1px solid var(--line); border-radius: 10px;
-    padding: 20px 22px 18px;
+    display: none; margin-top: 18px; position: relative; overflow: hidden;
+    background: var(--ink); color: var(--white); border-radius: 14px; padding: 22px 26px 20px;
+    box-shadow: 0 18px 48px rgba(28,28,28,.22);
   }
-  .prog.show { display: block; }
-  .prog-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
-  .prog-stage { font-size: 14.5px; font-weight: 800; color: var(--ink); letter-spacing: -0.2px; }
-  .prog-pct { font-size: 14px; font-weight: 800; color: var(--ink); font-variant-numeric: tabular-nums; }
-  .prog-track {
-    height: 5px; background: var(--line-soft); border-radius: 99px; margin: 12px 0 9px; overflow: hidden;
+  .prog.show { display: block; animation: rise .4s cubic-bezier(.22,.61,.36,1); }
+  .prog::before {                                  /* 은은한 종이결 하이라이트 */
+    content: ""; position: absolute; inset: -40% -10% auto auto; width: 60%; height: 140%;
+    background: radial-gradient(closest-side, rgba(255,212,0,.10), transparent 70%); pointer-events: none;
   }
+  .prog-top { display: flex; align-items: center; gap: 22px; position: relative; }
+  .beacon { position: relative; width: 78px; height: 78px; flex: none; border-radius: 50%; overflow: hidden; background: #262626; }
+  .beacon .beam {
+    position: absolute; inset: -60%; border-radius: 50%;
+    background: conic-gradient(from 0deg, transparent 0deg 286deg, rgba(255,212,0,.06) 300deg, rgba(255,212,0,.55) 338deg, rgba(255,212,0,.9) 350deg, transparent 360deg);
+    animation: sweep 2.6s linear infinite;
+  }
+  @keyframes sweep { to { transform: rotate(360deg); } }
+  .beacon svg.mark { position: absolute; inset: 15px; width: 48px; height: 48px; }
+  .beacon svg.ring { position: absolute; inset: 0; width: 78px; height: 78px; transform: rotate(-90deg); }
+  .beacon .ring-bg { fill: none; stroke: #3a3a3a; stroke-width: 3; }
+  .beacon .ring-fg { fill: none; stroke: var(--yellow); stroke-width: 3; stroke-linecap: round; transition: stroke-dashoffset .35s ease; }
+  .prog.done .beacon .beam { animation: none; opacity: 0; }
+  .prog-mid { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 5px; }
+  .prog-eyebrow { font-size: 10.5px; font-weight: 700; letter-spacing: 2.5px; color: var(--gray-soft); display: flex; align-items: center; gap: 8px; }
+  .prog-stage { font-size: 20px; font-weight: 900; color: var(--white); letter-spacing: -0.4px; line-height: 1.2; }
+  .prog-detail { font-size: 13.5px; color: #d9d9d9; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .prog-right { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; flex: none; }
+  .prog-pct { font-size: 46px; font-weight: 900; color: var(--yellow); line-height: 1; letter-spacing: -1.5px; font-variant-numeric: tabular-nums; }
+  .prog-pct small { font-size: 18px; font-weight: 700; letter-spacing: 0; margin-left: 2px; }
+  .prog-time { font-size: 12px; color: var(--gray-soft); font-variant-numeric: tabular-nums; display: flex; gap: 10px; }
+  .prog-time .prog-elapsed { color: #d9d9d9; }
+  .prog-cancel {
+    position: absolute; top: 0; right: 0; font-family: inherit; font-size: 11.5px; font-weight: 700;
+    color: var(--gray-soft); background: transparent; border: 1px solid #4a4a4a; border-radius: 7px; padding: 5px 11px; cursor: pointer;
+  }
+  .prog-cancel:hover { color: var(--white); border-color: var(--white); }
+  .prog-right { padding-right: 0; margin-top: 26px; }
+  .prog-track { height: 4px; background: #3a3a3a; border-radius: 99px; margin: 18px 0 16px; overflow: hidden; }
   .prog-fill {
-    height: 100%; width: 0%; border-radius: 99px; background: var(--ink);
-    transition: width .35s cubic-bezier(.22,.61,.36,1); position: relative;
+    height: 100%; width: 0%; border-radius: 99px; background: var(--yellow); position: relative;
+    transition: width .45s cubic-bezier(.22,.61,.36,1);
   }
   .prog-fill::after {
-    content: ""; position: absolute; inset: 0; border-radius: 99px;
-    background: linear-gradient(90deg, transparent 0%, rgba(255,212,0,.55) 50%, transparent 100%);
-    animation: sheen 1.6s ease-in-out infinite;
+    content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, transparent, rgba(255,255,255,.55), transparent);
+    animation: sheen 1.5s ease-in-out infinite;
   }
   @keyframes sheen { 0% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }
   .prog.done .prog-fill::after { display: none; }
-  .prog-meta {
-    display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
-    font-size: 12.5px; color: var(--gray);
-  }
-  .prog-detail { font-variant-numeric: tabular-nums; }
-  .prog-eta { color: var(--gray-soft); white-space: nowrap; font-variant-numeric: tabular-nums; }
-  .prog-steps {
-    list-style: none; display: flex; flex-wrap: wrap; gap: 6px 18px;
-    margin: 15px 0 0; padding: 13px 0 0; border-top: 1px solid var(--line);
-  }
-  .prog-steps li { display: flex; align-items: center; gap: 7px; font-size: 12px; color: var(--gray-soft); }
-  .prog-dot {
-    width: 7px; height: 7px; flex: none; background: var(--line);
-    transition: background .25s, transform .25s;
-  }
-  .prog-steps li.done { color: var(--gray); }
+  /* 여정 트랙 */
+  .prog-steps { list-style: none; margin: 0; padding: 0; display: flex; align-items: flex-start; }
+  .prog-steps li { flex: 1; position: relative; display: flex; flex-direction: column; align-items: center; gap: 8px; font-size: 11.5px; color: #7a7a7a; text-align: center; }
+  .prog-steps li::before { content: ""; position: absolute; top: 5px; left: -50%; width: 100%; height: 2px; background: #3a3a3a; }
+  .prog-steps li:first-child::before { display: none; }
+  .prog-steps li.done::before { background: var(--yellow); }
+  .prog-steps li.now::before { background: linear-gradient(90deg, var(--yellow), #3a3a3a); }
+  .prog-dot { width: 12px; height: 12px; border-radius: 50%; background: #3a3a3a; position: relative; z-index: 1; transition: background .25s, box-shadow .25s; }
+  .prog-steps li.done { color: #d9d9d9; }
   .prog-steps li.done .prog-dot { background: var(--yellow); }
-  .prog-steps li.now { color: var(--ink); font-weight: 800; }
-  .prog-steps li.now .prog-dot { background: var(--ink); animation: pulse 1.1s ease-in-out infinite; }
-  @keyframes pulse { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.45); opacity: .55; } }
+  .prog-steps li.now { color: var(--white); font-weight: 800; }
+  .prog-steps li.now .prog-dot { background: var(--white); box-shadow: 0 0 0 4px rgba(255,212,0,.35); animation: halo 1.2s ease-in-out infinite; }
+  @keyframes halo { 0%, 100% { box-shadow: 0 0 0 4px rgba(255,212,0,.35); } 50% { box-shadow: 0 0 0 9px rgba(255,212,0,.10); } }
+  /* 실시간 로그 */
+  .prog-log {
+    list-style: none; margin: 16px 0 0; padding: 12px 0 0; border-top: 1px solid #3a3a3a;
+    display: flex; flex-direction: column; gap: 5px;
+    font-size: 12px; color: #bdbdbd; font-variant-numeric: tabular-nums;
+  }
+  .prog-log li { display: flex; gap: 10px; animation: login .3s ease-out; }
+  .prog-log li .t { color: var(--yellow-ink); flex: none; font-weight: 700; }
+  .prog-log li:last-child { color: var(--white); }
+  @keyframes login { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  /* 완료 상태: 컴팩트 요약 */
+  .prog.done .prog-track, .prog.done .prog-steps, .prog.done .prog-log, .prog.done .prog-cancel { display: none; }
+  .prog.done { padding: 16px 22px; }
+  .prog.done .beacon { width: 44px; height: 44px; }
+  .prog.done .beacon svg.mark { inset: 8px; width: 28px; height: 28px; }
+  .prog.done .beacon svg.ring { width: 44px; height: 44px; }
+  .prog.done .prog-stage { font-size: 15px; }
+  .prog.done .prog-pct { font-size: 22px; }
+  .prog.done .prog-right { margin-top: 0; }
+  /* 상단 미니바 (패널이 화면 밖일 때) */
+  .prog-mini {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 40; background: var(--ink); color: var(--white);
+    display: none; align-items: center; gap: 14px; padding: 10px 20px; box-shadow: 0 8px 24px rgba(28,28,28,.25);
+    font-size: 13px;
+  }
+  .prog-mini.show { display: flex; animation: drop .25s ease-out; }
+  @keyframes drop { from { transform: translateY(-100%); } to { transform: none; } }
+  .prog-mini .mdot { width: 9px; height: 9px; border-radius: 50%; background: var(--yellow); animation: halo 1.2s ease-in-out infinite; flex: none; }
+  .prog-mini .mstage { font-weight: 800; white-space: nowrap; }
+  .prog-mini .mdetail { color: #bdbdbd; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; }
+  .prog-mini .mpct { font-weight: 900; color: var(--yellow); font-variant-numeric: tabular-nums; }
+  .prog-mini .mbar { position: absolute; left: 0; bottom: 0; height: 2px; background: var(--yellow); width: 0; transition: width .45s ease; }
+  /* 상단 진행 레일 채움 */
+  .step-rule { position: relative; overflow: hidden; }
+  .step-rule i { position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: var(--yellow); transition: width .5s ease; }
+  /* 결과 순차 등장 */
+  table.plan tbody tr { animation: rise .45s both; animation-delay: calc(var(--i, 0) * 45ms); }
+  .exam-output .question, .exam-output .exam-header, .exam-output h2, .exam-output .answer-key { animation: rise .5s both; animation-delay: calc(var(--i, 0) * 60ms); }
+  @media (max-width: 720px) {
+    .prog-top { flex-wrap: wrap; }
+    .prog-right { width: 100%; align-items: flex-start; margin-top: 4px; flex-direction: row; align-items: baseline; gap: 12px; }
+    .prog-pct { font-size: 34px; }
+    .prog-steps li { font-size: 10.5px; }
+  }
 
   /* ---------- 업로드 개수 표시 ---------- */
   .count-chip {
@@ -394,15 +457,6 @@
   .toast.err { background: #8f2b22; }
   .toast .dot { background: var(--yellow); }
 
-  /* ---------- 진행 패널 보조 ---------- */
-  .prog-head { align-items: center; }
-  .prog-right { display: flex; align-items: center; gap: 12px; }
-  .prog-cancel {
-    font-family: inherit; font-size: 12px; font-weight: 700; color: var(--gray); background: none;
-    border: 1px solid var(--line); border-radius: 7px; padding: 4px 10px; cursor: pointer;
-  }
-  .prog-cancel:hover { color: var(--danger); border-color: var(--danger); }
-  .prog-elapsed { font-size: 12px; color: var(--gray-soft); font-variant-numeric: tabular-nums; }
 
   /* ---------- 표 · 난이도 ---------- */
   table.plan tbody tr:hover td { background: var(--paper); }
@@ -1030,29 +1084,71 @@
     if (m >= 1) return "약 " + m + "분 " + (r >= 10 ? Math.round(r / 10) * 10 + "초 " : "") + "남음";
     return "약 " + Math.max(15, Math.round(sec / 10) * 10) + "초 남음";
   }
-  function createProgress(rootId, stepNames) {
+  const LOGO_MARK = '<svg class="mark" viewBox="0 0 120 120" fill="none" aria-hidden="true">' +
+    '<g stroke="#ffd400" stroke-width="7" stroke-linecap="round"><line x1="22" y1="34" x2="35" y2="38"/><line x1="98" y1="34" x2="85" y2="38"/><line x1="30" y1="17" x2="40" y2="25"/><line x1="90" y1="17" x2="80" y2="25"/></g>' +
+    '<circle cx="60" cy="11" r="4" fill="#fff" stroke="#fff" stroke-width="4"/>' +
+    '<path d="M46 25 a14 12 0 0 1 28 0 z" fill="#1a7fbf" stroke="#fff" stroke-width="5" stroke-linejoin="round"/>' +
+    '<path d="M40 25 h40 l4 9 h-48 z" fill="#1a7fbf" stroke="#fff" stroke-width="5" stroke-linejoin="round"/>' +
+    '<path d="M38 45 h44 l7 11 h-58 z" fill="#1a7fbf" stroke="#fff" stroke-width="5" stroke-linejoin="round"/>' +
+    '<path d="M48 34 h24 v11 h-24 z" fill="#ffd400" stroke="#fff" stroke-width="5" stroke-linejoin="round"/>' +
+    '<path d="M46 56 h28 l7 40 h-42 z" fill="#ffd400" stroke="#fff" stroke-width="5" stroke-linejoin="round"/>' +
+    '<rect x="54" y="64" width="12" height="18" rx="2.5" fill="#1c1c1c" stroke="#fff" stroke-width="4.5"/>' +
+    '<path d="M12 83 q24 -11 48 3 q24 -14 48 -3 v25 q-24 -9 -48 3 q-24 -12 -48 -3 z" fill="#1c1c1c" stroke="#fff" stroke-width="5.5" stroke-linejoin="round"/>' +
+    '<path d="M60 86 v25" stroke="#fff" stroke-width="4.5"/></svg>';
+
+  // 상단 미니바 (하나를 공유)
+  const mini = (() => {
+    const el = document.createElement("div");
+    el.className = "prog-mini";
+    el.innerHTML = '<span class="mdot"></span><span class="mstage"></span><span class="mdetail"></span><span class="mpct"></span><span class="mbar"></span>';
+    document.body.appendChild(el);
+    return el;
+  })();
+
+  function createProgress(rootId, stepNames, opts) {
     const root = $(rootId);
+    const eyebrowText = (opts && opts.eyebrow) || "PROCESSING";
     const mk = (tag, cls) => { const e = document.createElement(tag); if (cls) e.className = cls; return e; };
     root.innerHTML = "";
-    const head = mk("div", "prog-head");
-    const stage = mk("span", "prog-stage");
+
+    const top = mk("div", "prog-top");
+    const beacon = mk("div", "beacon");
+    beacon.innerHTML = '<div class="beam"></div>' + LOGO_MARK +
+      '<svg class="ring" viewBox="0 0 78 78"><circle class="ring-bg" cx="39" cy="39" r="36"/><circle class="ring-fg" cx="39" cy="39" r="36"/></svg>';
+    const ringFg = beacon.querySelector(".ring-fg");
+    const RING = 2 * Math.PI * 36;
+    ringFg.style.strokeDasharray = RING;
+    ringFg.style.strokeDashoffset = RING;
+
+    const mid = mk("div", "prog-mid");
+    const eyebrow = mk("div", "prog-eyebrow");
+    const eyeDot = mk("span", "dot");
+    const eyeText = document.createTextNode(eyebrowText);
+    eyebrow.append(eyeDot, eyeText);
+    const stage = mk("div", "prog-stage");
+    const detail = mk("div", "prog-detail");
+    detail.setAttribute("aria-live", "polite");
+    mid.append(eyebrow, stage, detail);
+
     const right = mk("div", "prog-right");
+    const pct = mk("div", "prog-pct");
+    const time = mk("div", "prog-time");
     const elapsedEl = mk("span", "prog-elapsed");
-    const pct = mk("span", "prog-pct");
+    const eta = mk("span", "prog-eta");
+    time.append(elapsedEl, eta);
+    right.append(pct, time);
+
     const cancel = mk("button", "prog-cancel");
     cancel.type = "button";
     cancel.textContent = "중단";
     cancel.addEventListener("click", () => { if (running) running.abort(); });
-    right.append(elapsedEl, pct, cancel);
-    head.append(stage, right);
+
+    top.append(beacon, mid, right, cancel);
+
     const track = mk("div", "prog-track");
     const fill = mk("div", "prog-fill");
     track.appendChild(fill);
-    const meta = mk("div", "prog-meta");
-    const detail = mk("span", "prog-detail");
-    detail.setAttribute("aria-live", "polite");
-    const eta = mk("span", "prog-eta");
-    meta.append(detail, eta);
+
     const list = mk("ul", "prog-steps");
     const lis = stepNames.map(name => {
       const li = mk("li");
@@ -1062,20 +1158,55 @@
       list.appendChild(li);
       return li;
     });
-    root.append(head, track, meta, list);
+    const log = mk("ul", "prog-log");
+    root.append(top, track, list, log);
 
     // 단계별 상한 — 신호가 없어도 이 값까지 서서히 진행
     const CAPS = [8, 22, 68, 94, 99];
-    let timer = null, t0 = 0, cur = 0, target = 0, step = 0, shownEta = 0;
+    let timer = null, t0 = 0, cur = 0, target = 0, step = 0, shownEta = 0, lastDetail = "", visible = true;
+    const io = ("IntersectionObserver" in window)
+      ? new IntersectionObserver(en => { visible = en[0].isIntersecting; syncMini(); }, { threshold: 0.15 })
+      : null;
+    if (io) io.observe(root);
 
+    function fmtClock(sec) { return Math.floor(sec / 60) + ":" + String(Math.floor(sec % 60)).padStart(2, "0"); }
+    function syncMini() {
+      const on = !!timer && !visible;
+      mini.classList.toggle("show", on);
+      if (on) {
+        mini.querySelector(".mstage").textContent = stepNames[step] || "";
+        mini.querySelector(".mdetail").textContent = detail.textContent;
+        mini.querySelector(".mpct").textContent = Math.round(cur) + "%";
+        mini.querySelector(".mbar").style.width = cur.toFixed(1) + "%";
+      }
+    }
+    function addLog(text) {
+      if (!text || text === lastDetail) return;
+      lastDetail = text;
+      const li = document.createElement("li");
+      const t = document.createElement("span");
+      t.className = "t";
+      t.textContent = fmtClock((Date.now() - t0) / 1000);
+      const m = document.createElement("span");
+      m.textContent = text;
+      li.append(t, m);
+      log.appendChild(li);
+      while (log.children.length > 5) log.removeChild(log.firstChild);
+    }
     function paint() {
       fill.style.width = cur.toFixed(1) + "%";
-      pct.textContent = Math.round(cur) + "%";
+      pct.innerHTML = "";
+      pct.append(document.createTextNode(String(Math.round(cur))));
+      const sm = document.createElement("small"); sm.textContent = "%";
+      pct.appendChild(sm);
+      ringFg.style.strokeDashoffset = RING * (1 - cur / 100);
       stage.textContent = stepNames[step] || "";
       lis.forEach((li, i) => {
         li.classList.toggle("done", i < step);
         li.classList.toggle("now", i === step);
       });
+      setRail(rootId === "analyzeProgress" ? 1 : 2, cur);
+      syncMini();
     }
     function tick() {
       const cap = CAPS[step] ?? 99;
@@ -1083,7 +1214,7 @@
       else if (cur < cap) cur = Math.min(cap, cur + 0.06);   // 신호 없을 때의 완만한 진행
       if (cur > 99.4) cur = 99.4;
       const elapsed = (Date.now() - t0) / 1000;
-      elapsedEl.textContent = Math.floor(elapsed / 60) + ":" + String(Math.floor(elapsed % 60)).padStart(2, "0");
+      elapsedEl.textContent = fmtClock(elapsed) + " 경과";
       // 초반 추정치는 신뢰할 수 없으므로 최소 8초 이상 흐른 뒤에만 표시
       if (elapsed >= 8 && cur >= 5) {
         const est = Math.max(cur < 60 ? 20 : 5, elapsed * (100 - cur) / cur);
@@ -1098,41 +1229,62 @@
       start(firstDetail) {
         root.classList.add("show");
         root.classList.remove("done");
-        cancel.style.display = "";
+        log.innerHTML = ""; lastDetail = "";
         t0 = Date.now(); cur = 0; target = 3; step = 0; shownEta = 0;
+        eyeText.textContent = eyebrowText;
         detail.textContent = firstDetail || "";
+        addLog(firstDetail);
         paint();
         clearInterval(timer);
         timer = setInterval(tick, 220);
+        syncMini();
       },
       set(pctTarget, stepIdx, detailText) {
         const before = step;
         if (stepIdx != null && stepIdx > step) step = stepIdx;
         if (pctTarget > target) target = Math.min(99, pctTarget);
-        if (detailText != null) detail.textContent = detailText;
+        if (detailText != null) { detail.textContent = detailText; addLog(detailText); }
         if (step !== before) paint();   // 단계 라벨은 즉시 반영
       },
       finish(msg) {
         clearInterval(timer); timer = null;
         cur = 100; target = 100; step = stepNames.length - 1;
-        root.classList.add("done");
-        cancel.style.display = "none";
         paint();
+        root.classList.add("done");
+        eyeText.textContent = "COMPLETE";
         stage.textContent = msg || "완료";
-        detail.textContent = "";
+        detail.textContent = "총 " + fmtClock((Date.now() - t0) / 1000) + " 소요";
         eta.textContent = "";
-        setTimeout(() => root.classList.remove("show"), 900);
+        elapsedEl.textContent = "";
+        setRail(rootId === "analyzeProgress" ? 1 : 2, 100);
+        mini.classList.remove("show");
       },
       stop() {
         clearInterval(timer); timer = null;
         root.classList.remove("show");
+        setRail(rootId === "analyzeProgress" ? 1 : 2, 0);
+        mini.classList.remove("show");
       },
     };
   }
+  // 상단 진행 레일: 1구간(01→02)=분석, 2구간(02→03)=출제
+  function setRail(seg, pctVal) {
+    const rules = document.querySelectorAll("#steps .step-rule");
+    const r = rules[seg - 1];
+    if (!r) return;
+    let f = r.querySelector("i");
+    if (!f) { f = document.createElement("i"); r.appendChild(f); }
+    f.style.width = Math.max(0, Math.min(100, pctVal)) + "%";
+  }
+  // 결과 순차 등장 (행·문항에 --i 부여)
+  function stagger(container, selector) {
+    let i = 0;
+    container.querySelectorAll(selector).forEach(el => { el.style.setProperty("--i", String(i++)); });
+  }
   const analyzeProg = createProgress("analyzeProgress",
-    ["자료 전송", "시험지 판독", "문항 분석", "범위 매칭", "결과 정리"]);
+    ["자료 전송", "시험지 판독", "문항 분석", "범위 매칭", "결과 정리"], { eyebrow: "ANALYZING · LIVE" });
   const genProg = createProgress("genProgress",
-    ["출제 계획 확인", "지문 배치", "문항 출제", "정답 · 해설", "시험지 완성"]);
+    ["출제 계획 확인", "지문 배치", "문항 출제", "정답 · 해설", "시험지 완성"], { eyebrow: "GENERATING · LIVE" });
 
   function friendlyError(status, body) {
     if (status === 401) return "API 키가 올바르지 않습니다. 키를 다시 확인해 주세요.";
@@ -1508,6 +1660,7 @@
         }
         tr.appendChild(td);
       });
+      tr.style.setProperty("--i", String(i));
       tbody.appendChild(tr);
     });
     tbl.appendChild(tbody);
@@ -1518,6 +1671,9 @@
     document.querySelectorAll("#steps .step").forEach(el => {
       el.classList.toggle("on", Number(el.dataset.step) <= n);
     });
+    if (n >= 2) setRail(1, 100);
+    if (n >= 3) setRail(2, 100);
+    if (n <= 1) { setRail(1, 0); setRail(2, 0); }
   }
 
   function planFromTable() {
@@ -1614,6 +1770,7 @@ ${planJson}
       genProg.finish("출제 완료");
       const html = sanitize(stripFences(raw));
       $("examOutput").innerHTML = html;
+      stagger($("examOutput"), ".exam-header, .question, h2, .answer-key");
       renderUsage();
       saveSession({ output: html, usage: totalUsage });
       $("step3").scrollIntoView({ behavior: "smooth" });
