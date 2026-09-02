@@ -897,7 +897,7 @@
   async function extractPlainText(file) {
     const buf = await readAsBuffer(file);
     let text = new TextDecoder("utf-8", { fatal: false }).decode(buf);
-    const bad = (text.match(/�/g) || []).length;
+    const bad = (text.match(/\uFFFD/g) || []).length;
     if (bad > text.length / 100) {                 // 깨짐 많으면 EUC-KR 재시도
       try { text = new TextDecoder("euc-kr").decode(buf); } catch (_) {}
     }
