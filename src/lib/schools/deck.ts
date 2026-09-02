@@ -6,6 +6,7 @@ import {
 } from "@/assets/orunLogo";
 import type { SchoolRecord } from "@/types/school";
 import { RESULT_BASIS_LABEL } from "@/data/results";
+import { NEWS_KIND_LABEL, type SchoolNews } from "@/data/news";
 import {
   ORUN_MESSAGES,
   ORUN_RESULTS,
@@ -1242,11 +1243,43 @@ function tmiSlide(pptx: PptxGenJS, r: SchoolRecord, sc: SourcedSchool, page: num
   s.addNotes("[발표 스크립트] 어른들이 못 알려주는 것들입니다. 급식, 계단, 매점.");
 }
 
+/** 학교별 — 학교 소식(밖에서 본 것) */
+function newsSlide(pptx: PptxGenJS, r: SchoolRecord, n: SchoolNews, page: number) {
+  const s = pptx.addSlide();
+  eyebrow(s, "from outside");
+  title(s, `${short(r.fact.name)}, 밖에서 본 것`, n.oneLiner);
+  let y = 2.35;
+  n.items.slice(0, 6).forEach((it) => {
+    s.addText(NEWS_KIND_LABEL[it.kind].toUpperCase(), {
+      x: M, y: y + 0.03, w: 1.3, h: 0.22, fontFace: FONT, fontSize: 8.5, bold: true,
+      color: it.kind === "results" ? YELLOW_S : it.kind === "curriculum" ? BLUE : GREY, charSpacing: 1.5, isTextBox: true, margin: 0,
+    });
+    s.addText(
+      [
+        { text: it.title, options: { bold: true, color: INK, fontSize: 11.5, breakLine: true } },
+        { text: it.summary, options: { color: BODY, fontSize: 10.5 } },
+      ],
+      { x: M + 1.4, y, w: W - M * 2 - 1.4 - 2.2, h: 0.62, fontFace: FONT, lineSpacing: 14, isTextBox: true, margin: 0, valign: "top" },
+    );
+    s.addText(`${it.source.publisher}${it.date ? " · " + it.date.replace(/-/g, ".") : ""}`, {
+      x: W - M - 2.1, y: y + 0.03, w: 2.1, h: 0.22, align: "right", fontFace: FONT, fontSize: 7.5, color: GREY, isTextBox: true, margin: 0,
+    });
+    y += 0.72;
+    hair(s, y - 0.1);
+  });
+  s.addText(`조사일 ${n.fetchedAt} · 학교 홈페이지·언론·학교알리미 공시 문서에서 옮김`, {
+    x: M, y: H - 1.0, w: W - M * 2, h: 0.25, fontFace: FONT, fontSize: 8.5, color: GREY, isTextBox: true, margin: 0,
+  });
+  footer(s, page);
+  s.addNotes(`[발표 스크립트] 학교 밖에서 확인되는 것들입니다. ${n.items[0]?.title ?? ""}`);
+}
+
 /** 출처층 슬라이드 묶음 — 관측이 없는 학교도 만든다 */
 function sourcedSlides(pptx: PptxGenJS, r: SchoolRecord, startPage: number): number {
   const sc = r.sourced;
   if (!sc) return startPage;
   let page = startPage;
+  if (sc.news?.items.length) newsSlide(pptx, r, sc.news, page++);
   const grades = [...new Set(sc.exams.map((e) => e.grade))].sort();
   grades.forEach((g) => {
     const exams = sc.exams.filter((e) => e.grade === g);

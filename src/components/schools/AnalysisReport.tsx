@@ -5,6 +5,7 @@ import {
   ExamTrend2026,
   LiveInsights,
   OrunSection,
+  SchoolNewsBlock,
   SeniorTmi,
   SourcedResults,
 } from "@/components/schools/Sourced";
@@ -870,6 +871,7 @@ function SchoolDetail({ record }: { record: SchoolRecord }) {
         {g && <Stat label="남 · 여" value={`${g.male} : ${g.female}`} unit="" />}
       </div>
 
+      {sourced?.news && <SchoolNewsBlock n={sourced.news} />}
       {sourced && <ExamTrend2026 s={sourced} level={fact.level} />}
 
       {o && (

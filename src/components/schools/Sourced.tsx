@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import type { SchoolRecord } from "@/types/school";
+import { NEWS_KIND_LABEL, type SchoolNews } from "@/data/news";
 import {
   ORUN_MESSAGES,
   ORUN_RESULTS,
@@ -578,5 +579,74 @@ export function OrunSection({
         포스터의 이름은 원문대로 가려져 있습니다 · 옳은영어 블로그에 공개된 자료를 그대로 옮겼습니다
       </p>
     </section>
+  );
+}
+
+/* ── 학교 소식 — 밖에서 본 것 ─────────── */
+
+export function SchoolNewsBlock({ n }: { n: SchoolNews }) {
+  if (!n.items.length) return null;
+  const order = ["news", "curriculum", "english", "program", "freeSemester", "results", "admission", "life"] as const;
+  const items = [...n.items].sort((a, b) => order.indexOf(a.kind) - order.indexOf(b.kind));
+  return (
+    <SourcedBlock en="From outside" ko="학교 소식 — 밖에서 본 것" tag="학교·언론 공개 자료">
+      {n.oneLiner && (
+        <p style={{ margin: "0 0 12px", fontSize: 14.5, color: "var(--ink)", fontWeight: 500, lineHeight: 1.5 }}>{n.oneLiner}</p>
+      )}
+      {items.map((it, i) => (
+        <div
+          key={i}
+          style={{
+            display: "grid",
+            gridTemplateColumns: "88px 1fr",
+            gap: 14,
+            padding: "11px 0",
+            borderBottom: "1px solid var(--hair)",
+            alignItems: "start",
+          }}
+        >
+          <span
+            style={{
+              fontFamily: MONO,
+              fontSize: 9.5,
+              letterSpacing: ".14em",
+              textTransform: "uppercase",
+              color: it.kind === "results" ? "var(--yellow)" : it.kind === "curriculum" ? "var(--blue)" : "var(--muted)",
+              paddingTop: 4,
+            }}
+          >
+            {NEWS_KIND_LABEL[it.kind]}
+          </span>
+          <div>
+            <div style={{ fontSize: 14, fontWeight: 700, color: "var(--ink)" }}>{it.title}</div>
+            <div style={{ fontSize: 13, color: "var(--body)", lineHeight: 1.55, marginTop: 3 }}>{it.summary}</div>
+            <a
+              href={it.source.url}
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 6,
+                marginTop: 6,
+                fontFamily: MONO,
+                fontSize: 9.5,
+                letterSpacing: ".12em",
+                textTransform: "uppercase",
+                color: "var(--muted)",
+                textDecoration: "none",
+              }}
+            >
+              <span style={{ width: 5, height: 5, background: it.confidence === "high" ? "var(--yellow-hi)" : "var(--hair)" }} />
+              {it.source.publisher}
+              {it.date ? ` · ${it.date.replace(/-/g, ".")}` : ""}
+            </a>
+          </div>
+        </div>
+      ))}
+      <p style={{ margin: "10px 0 0", fontSize: 12, color: "var(--muted)" }}>
+        {n.homepage ? `학교 홈페이지 ${n.homepage} · ` : ""}조사일 {n.fetchedAt} · 노란 점은 1차 출처, 회색 점은 2차 출처
+      </p>
+    </SourcedBlock>
   );
 }
