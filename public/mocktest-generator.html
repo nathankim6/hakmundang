@@ -327,6 +327,100 @@
   #step2, #step3 { display: none; }
   #step2.show, #step3.show { display: block; }
 
+  /* ---------- 상호작용 · 접근성 ---------- */
+  .btn:hover:not(:disabled) { opacity: 1; transform: translateY(-1px); box-shadow: 0 6px 16px rgba(28,28,28,.16); }
+  .btn.ghost:hover:not(:disabled) { box-shadow: 0 4px 12px rgba(28,28,28,.08); }
+  .btn.link:hover:not(:disabled) { transform: none; box-shadow: none; }
+  .btn:focus-visible, .drop:focus-visible, input:focus-visible, textarea:focus-visible, [contenteditable]:focus-visible {
+    outline: 2px solid var(--ink); outline-offset: 2px;
+  }
+  input:focus, textarea:focus { box-shadow: 0 0 0 3px rgba(255,212,0,.28); }
+  .drop:hover svg { transform: translateY(-2px); }
+  .drop svg { transition: transform .18s; }
+  .drop.over { border-style: solid; border-color: var(--ink); background: #fffdf3; }
+  body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .55; }
+  @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  .reveal { animation: rise .38s cubic-bezier(.22,.61,.36,1); }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+
+  /* ---------- API 키 ---------- */
+  .key-wrap { display: flex; align-items: center; gap: 8px; flex: 1; max-width: 420px; }
+  .key-wrap input { flex: 1; max-width: none; padding-right: 12px; }
+  .key-eye {
+    border: 1px solid var(--line); background: var(--white); border-radius: 8px; width: 40px; height: 42px;
+    display: inline-flex; align-items: center; justify-content: center; cursor: pointer; color: var(--gray); flex: none;
+  }
+  .key-eye:hover { border-color: var(--ink); color: var(--ink); }
+  .key-eye svg { width: 18px; height: 18px; }
+  .key-state { font-size: 11.5px; color: var(--gray-soft); white-space: nowrap; min-width: 52px; text-align: right; }
+  .key-state.ok { color: var(--yellow-ink); font-weight: 700; }
+  .key-hint { font-size: 11.5px; color: var(--gray-soft); margin: 8px 0 0; display: flex; align-items: flex-start; gap: 6px; line-height: 1.5; }
+  .key-hint svg { flex: none; margin-top: 3px; }
+  .key-hint a { color: var(--blue); font-weight: 700; text-decoration: none; white-space: nowrap; }
+  .key-hint a:hover { text-decoration: underline; }
+  .engine-row { flex-direction: column; align-items: stretch; gap: 12px; }
+  .engine-top { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+
+  /* ---------- 배너 · 알림 ---------- */
+  .banner {
+    display: none; align-items: center; gap: 14px; flex-wrap: wrap;
+    background: var(--ink); color: var(--white); border-radius: 10px; padding: 14px 18px; margin-bottom: 22px;
+  }
+  .banner.show { display: flex; }
+  .banner .b-text { flex: 1; font-size: 13.5px; min-width: 200px; }
+  .banner .b-text b { color: var(--yellow); font-weight: 800; }
+  .banner .b-sub { display: block; font-size: 11.5px; color: var(--gray-soft); margin-top: 2px; }
+  .banner button {
+    font-family: inherit; font-size: 13px; font-weight: 800; cursor: pointer; border-radius: 8px; padding: 9px 14px;
+    border: 1px solid rgba(255,255,255,.28); background: transparent; color: var(--white);
+  }
+  .banner button.primary { background: var(--yellow); color: var(--ink); border-color: var(--yellow); }
+  .banner button:hover { opacity: .85; }
+  .notice {
+    display: none; align-items: center; gap: 9px; font-size: 13px; color: var(--body);
+    background: #fffaea; border: 1px solid #ecdca6; border-radius: 8px; padding: 10px 14px; margin-top: 14px;
+  }
+  .notice.show { display: flex; }
+  .toast-wrap { position: fixed; left: 50%; bottom: 28px; transform: translateX(-50%); z-index: 50; display: flex; flex-direction: column; gap: 8px; align-items: center; pointer-events: none; }
+  .toast {
+    background: var(--ink); color: var(--white); font-size: 13.5px; font-weight: 700;
+    padding: 12px 18px; border-radius: 10px; box-shadow: 0 10px 30px rgba(28,28,28,.22);
+    display: flex; align-items: center; gap: 9px; animation: rise .25s ease-out; max-width: min(92vw, 520px);
+  }
+  .toast.err { background: #8f2b22; }
+  .toast .dot { background: var(--yellow); }
+
+  /* ---------- 진행 패널 보조 ---------- */
+  .prog-head { align-items: center; }
+  .prog-right { display: flex; align-items: center; gap: 12px; }
+  .prog-cancel {
+    font-family: inherit; font-size: 12px; font-weight: 700; color: var(--gray); background: none;
+    border: 1px solid var(--line); border-radius: 7px; padding: 4px 10px; cursor: pointer;
+  }
+  .prog-cancel:hover { color: var(--danger); border-color: var(--danger); }
+  .prog-elapsed { font-size: 12px; color: var(--gray-soft); font-variant-numeric: tabular-nums; }
+
+  /* ---------- 표 · 난이도 ---------- */
+  table.plan tbody tr:hover td { background: var(--paper); }
+  table.plan td.diff-lo { color: var(--gray); }
+  table.plan td.diff-mid { color: var(--blue); font-weight: 700; }
+  table.plan td.diff-hi { color: var(--ink); font-weight: 800; }
+  table.plan td[contenteditable]:hover { background: #fff8dc; }
+  .cost { font-size: 12px; color: var(--gray); margin: 4px 0 0; }
+  .cost b { color: var(--ink); }
+
+  @media (max-width: 720px) {
+    .steps { gap: 10px; }
+    .steps .nm { font-size: 12.5px; }
+    .step-rule { min-width: 10px; }
+    .key-wrap { max-width: none; }
+    .btn.block { padding: 14px 16px; }
+    .statbox { padding: 20px; gap: 18px; }
+    .sb-div { display: none; }
+  }
+
   /* ---------- 바닥글 ---------- */
   .doc-footer {
     border-top: 1px solid var(--line); margin-top: 34px; padding: 16px 40px;
@@ -383,6 +477,13 @@
 </div>
 
 <div class="wrap">
+
+  <!-- 이전 작업 복구 배너 -->
+  <div class="banner" id="restoreBanner" role="status">
+    <span class="b-text" id="restoreText"></span>
+    <button type="button" class="primary" id="restoreBtn">이어서 보기</button>
+    <button type="button" id="discardBtn">지우기</button>
+  </div>
 
   <!-- 문서 제목 -->
   <div class="doc-title">
@@ -449,20 +550,32 @@
 
   <!-- 엔진 -->
   <div class="engine-row">
-    <div class="engine-label">
-      <span class="dot blue"></span>
-      <span class="t">AI MODEL ENGINE</span>
-      <span class="m">OPUS 5</span>
-      <span class="s">Anthropic API</span>
+    <div class="engine-top">
+      <div class="engine-label">
+        <span class="dot blue"></span>
+        <span class="t">AI MODEL ENGINE</span>
+        <span class="m">OPUS 5</span>
+        <span class="s">Anthropic API</span>
+      </div>
+      <div class="key-wrap">
+        <input type="password" id="apiKey" placeholder="API 키 (sk-ant-…)" autocomplete="off" spellcheck="false" aria-label="Anthropic API 키">
+        <button type="button" class="key-eye" id="keyEye" aria-label="키 보기/숨기기" title="키 보기/숨기기">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>
+        </button>
+        <span class="key-state" id="keyState"></span>
+      </div>
     </div>
-    <input type="password" id="apiKey" placeholder="sk-ant-..." autocomplete="off" aria-label="Anthropic API 키">
+    <p class="key-hint">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      키는 이 브라우저에만 저장되며 Anthropic 외부로 전송되지 않습니다 · <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener">키 발급받기</a>
+    </p>
   </div>
 
   <div style="margin-bottom:18px">
-    <button class="btn block" id="analyzeBtn">시험지 정밀 분석 시작</button>
+    <button type="button" class="btn block" id="analyzeBtn">시험지 정밀 분석 시작</button>
     <p class="cta-note">시험지 전체를 문항 단위로 분석합니다 · 수 분 정도 걸릴 수 있습니다</p>
     <div class="prog" id="analyzeProgress"></div>
-    <div class="error-box" id="analyzeError"></div>
+    <div class="error-box" id="analyzeError" role="alert"></div>
   </div>
 
   <!-- STEP 2 : 분석 결과 / 매칭 계획 -->
@@ -482,12 +595,14 @@
       <p class="edit-note"><span class="dot"></span>점선이 있는 칸은 클릭해서 직접 수정할 수 있습니다 — 수정한 내용 그대로 출제에 반영됩니다</p>
     </div>
 
+    <div class="notice" id="staleNotice"><span class="dot"></span>자료가 변경되었습니다 — <b>다시 분석</b>하면 새 자료가 반영됩니다</div>
     <div class="btnbar">
-      <button class="btn" id="generateBtn">이 계획으로 시험지 만들기</button>
-      <button class="btn ghost" id="reAnalyzeBtn">다시 분석</button>
+      <button type="button" class="btn" id="generateBtn">이 계획으로 시험지 만들기</button>
+      <button type="button" class="btn ghost" id="reAnalyzeBtn">다시 분석</button>
+      <button type="button" class="btn link" id="editInputsBtn">자료 수정</button>
     </div>
     <div class="prog" id="genProgress"></div>
-    <div class="error-box" id="genError"></div>
+    <div class="error-box" id="genError" role="alert"></div>
   </section>
 
   <!-- STEP 3 : 생성 결과 -->
@@ -501,12 +616,14 @@
     <div id="printArea"><div class="exam-output" id="examOutput"></div></div>
     <p class="spec-note"><span class="dot"></span>2단 편집 · 함초롬바탕 8pt · 여백 7mm — PDF · 한글 · 워드 동일 규격</p>
     <p class="usage" id="usageInfo"></p>
+    <p class="cost" id="costInfo"></p>
 
     <div class="btnbar">
-      <button class="btn" id="pdfBtn">PDF로 저장</button>
-      <button class="btn ghost" id="hwpxBtn">한글(HWPX) 다운로드</button>
-      <button class="btn ghost" id="docxBtn">워드(DOCX) 다운로드</button>
-      <button class="btn link" id="copyBtn">본문 복사</button>
+      <button type="button" class="btn" id="pdfBtn">PDF로 저장</button>
+      <button type="button" class="btn ghost" id="hwpxBtn">한글(HWPX) 다운로드</button>
+      <button type="button" class="btn ghost" id="docxBtn">워드(DOCX) 다운로드</button>
+      <button type="button" class="btn link" id="copyBtn">본문 복사</button>
+      <button type="button" class="btn link" id="resetBtn" style="margin-left:auto;color:var(--gray)">처음부터 새로 만들기</button>
     </div>
   </section>
 
@@ -516,6 +633,7 @@
   <span class="en">ORUN ENGLISH</span>
   <span class="note">생성된 문항은 반드시 검수 후 사용하세요</span>
 </div>
+<div class="toast-wrap" id="toastWrap" aria-live="polite"></div>
 
 <script>
 (function () {
@@ -536,14 +654,77 @@
   let analysis = null;
   let lastUsage = null;
   let seq = 0;
+  let totalUsage = { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 };  // 세션 누적
+  let running = null;      // 진행 중인 요청의 AbortController
+  let resultsStale = false;
 
-  // ---------- API 키 ----------
+  // Opus 5 요금 (USD / 1M tokens) — 참고용 비용 추정에 사용
+  const PRICE = { input: 5, output: 25, cacheRead: 0.5, cacheWrite: 6.25 };
+
+  // ---------- 토스트 ----------
+  function toast(msg, kind) {
+    const wrap = $("toastWrap");
+    const el = document.createElement("div");
+    el.className = "toast" + (kind === "err" ? " err" : "");
+    const d = document.createElement("span");
+    d.className = "dot";
+    el.append(d, document.createTextNode(msg));
+    wrap.appendChild(el);
+    setTimeout(() => { el.style.transition = "opacity .25s"; el.style.opacity = "0"; }, 2600);
+    setTimeout(() => el.remove(), 2950);
+  }
+
+  // ---------- API 키 (표시 토글 · 자동 저장) ----------
+  const keyInput = $("apiKey");
   const savedKey = localStorage.getItem("claude_api_key");
-  if (savedKey) $("apiKey").value = savedKey;
-  $("apiKey").addEventListener("change", () => {
-    const v = $("apiKey").value.trim();
-    if (v) localStorage.setItem("claude_api_key", v);
+  if (savedKey) { keyInput.value = savedKey; $("keyState").textContent = "저장됨"; $("keyState").classList.add("ok"); }
+  let keyTimer = null;
+  keyInput.addEventListener("input", () => {
+    const v = keyInput.value.trim();
+    clearTimeout(keyTimer);
+    $("keyState").classList.remove("ok");
+    if (!v) { localStorage.removeItem("claude_api_key"); $("keyState").textContent = ""; return; }
+    $("keyState").textContent = "입력 중";
+    keyTimer = setTimeout(() => {
+      localStorage.setItem("claude_api_key", v);
+      $("keyState").textContent = v.startsWith("sk-ant-") ? "저장됨" : "형식 확인";
+      $("keyState").classList.toggle("ok", v.startsWith("sk-ant-"));
+    }, 600);
   });
+  $("keyEye").addEventListener("click", () => {
+    keyInput.type = keyInput.type === "password" ? "text" : "password";
+    keyInput.focus();
+  });
+
+  // ---------- 입력 초안 · 작업 결과 보존 (새로고침 대비) ----------
+  const DRAFT_KEY = "orun_mock_draft", SESSION_KEY = "orun_mock_session";
+  try {
+    const draft = JSON.parse(localStorage.getItem(DRAFT_KEY) || "{}");
+    if (draft.scopeText) $("scopeText").value = draft.scopeText;
+    if (draft.extraReq) $("extraReq").value = draft.extraReq;
+  } catch (_) {}
+  function saveDraft() {
+    try {
+      localStorage.setItem(DRAFT_KEY, JSON.stringify({
+        scopeText: $("scopeText").value, extraReq: $("extraReq").value,
+      }));
+    } catch (_) {}
+  }
+  ["scopeText", "extraReq"].forEach(id => $(id).addEventListener("input", () => { saveDraft(); markStale(); }));
+
+  function saveSession(patch) {
+    try {
+      const cur = JSON.parse(localStorage.getItem(SESSION_KEY) || "{}");
+      localStorage.setItem(SESSION_KEY, JSON.stringify({ ...cur, ...patch, savedAt: Date.now() }));
+    } catch (_) { /* 용량 초과 등은 무시 */ }
+  }
+  function clearSession() { try { localStorage.removeItem(SESSION_KEY); } catch (_) {} }
+
+  function markStale() {
+    if (!analysis || running) return;
+    resultsStale = true;
+    $("staleNotice").classList.add("show");
+  }
 
   // ---------- 파일 유틸 ----------
   function fmtSize(n) {
@@ -757,7 +938,7 @@
     li.querySelector(".meta").textContent = fmtSize(examPdf.size);
     const rm = document.createElement("button");
     rm.textContent = "✕"; rm.title = "삭제";
-    rm.onclick = () => { examPdf = null; renderExamList(); };
+    rm.onclick = () => { examPdf = null; renderExamList(); markStale(); };
     li.appendChild(rm);
     $("examList").appendChild(li);
   }
@@ -778,7 +959,7 @@
       } else meta.textContent = fmtSize(item.size);
       const rm = document.createElement("button");
       rm.textContent = "✕"; rm.title = "삭제";
-      rm.onclick = () => { scopeItems = scopeItems.filter(x => x.id !== item.id); renderScopeList(); };
+      rm.onclick = () => { scopeItems = scopeItems.filter(x => x.id !== item.id); renderScopeList(); markStale(); };
       li.appendChild(rm);
       $("scopeList").appendChild(li);
     });
@@ -803,6 +984,7 @@
     catch (e) { showError("analyzeError", e.message); return; }
     clearError("analyzeError");
     renderExamList();
+    markStale();
   });
 
   bindDrop($("scopeDrop"), $("scopeFiles"), (files) => {
@@ -824,13 +1006,19 @@
       scopeItems.push(item);
       renderScopeList();
       try { await processScopeFile(f, item); item.status = "ready"; }
-      catch (e) { item.status = "error"; item.note = e.message; }
+      catch (e) { item.status = "error"; item.note = e.message; toast(f.name + " — " + e.message, "err"); }
       renderScopeList();
+      markStale();
     });
   });
 
   // ---------- 공통 UI ----------
-  function showError(id, msg) { const el = $(id); el.textContent = msg; el.classList.add("show"); }
+  function showError(id, msg) {
+    const el = $(id);
+    el.textContent = msg;
+    el.classList.add("show");
+    el.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
   function clearError(id) { $(id).classList.remove("show"); }
   // ---------- 진행 표시 (단계 · 프로그레스바 · 예상 시간) ----------
   function fmtLeft(sec) {
@@ -846,13 +1034,21 @@
     root.innerHTML = "";
     const head = mk("div", "prog-head");
     const stage = mk("span", "prog-stage");
+    const right = mk("div", "prog-right");
+    const elapsedEl = mk("span", "prog-elapsed");
     const pct = mk("span", "prog-pct");
-    head.append(stage, pct);
+    const cancel = mk("button", "prog-cancel");
+    cancel.type = "button";
+    cancel.textContent = "중단";
+    cancel.addEventListener("click", () => { if (running) running.abort(); });
+    right.append(elapsedEl, pct, cancel);
+    head.append(stage, right);
     const track = mk("div", "prog-track");
     const fill = mk("div", "prog-fill");
     track.appendChild(fill);
     const meta = mk("div", "prog-meta");
     const detail = mk("span", "prog-detail");
+    detail.setAttribute("aria-live", "polite");
     const eta = mk("span", "prog-eta");
     meta.append(detail, eta);
     const list = mk("ul", "prog-steps");
@@ -885,6 +1081,7 @@
       else if (cur < cap) cur = Math.min(cap, cur + 0.06);   // 신호 없을 때의 완만한 진행
       if (cur > 99.4) cur = 99.4;
       const elapsed = (Date.now() - t0) / 1000;
+      elapsedEl.textContent = Math.floor(elapsed / 60) + ":" + String(Math.floor(elapsed % 60)).padStart(2, "0");
       // 초반 추정치는 신뢰할 수 없으므로 최소 8초 이상 흐른 뒤에만 표시
       if (elapsed >= 8 && cur >= 5) {
         const est = Math.max(cur < 60 ? 20 : 5, elapsed * (100 - cur) / cur);
@@ -899,6 +1096,7 @@
       start(firstDetail) {
         root.classList.add("show");
         root.classList.remove("done");
+        cancel.style.display = "";
         t0 = Date.now(); cur = 0; target = 3; step = 0; shownEta = 0;
         detail.textContent = firstDetail || "";
         paint();
@@ -916,6 +1114,7 @@
         clearInterval(timer); timer = null;
         cur = 100; target = 100; step = stepNames.length - 1;
         root.classList.add("done");
+        cancel.style.display = "none";
         paint();
         stage.textContent = msg || "완료";
         detail.textContent = "";
@@ -994,9 +1193,12 @@
     "범위 자료가 부족한 문항은 그 사실을 명시하고 가장 근접한 대안을 제시합니다.";
 
   // ---------- 스트리밍 호출 ----------
-  async function streamMessages(userContent, { onText, onUsage }) {
+  async function streamMessages(userContent, { onText, onUsage, signal }) {
     const apiKey = $("apiKey").value.trim();
-    const resp = await fetch(API_URL, {
+    let resp;
+    try {
+      resp = await fetch(API_URL, {
+      signal,
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -1014,7 +1216,11 @@
         system: SYSTEM_PROMPT,
         messages: [{ role: "user", content: userContent }],
       }),
-    });
+      });
+    } catch (e) {
+      if (e && e.name === "AbortError") throw new Error("__aborted__");
+      throw new Error("네트워크 연결에 실패했습니다. 인터넷 연결을 확인해 주세요. (기관 방화벽이 api.anthropic.com을 막고 있을 수도 있습니다)");
+    }
 
     if (!resp.ok) {
       const body = await resp.text().catch(() => "");
@@ -1027,7 +1233,10 @@
     const usage = { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 };
 
     while (true) {
-      const { done, value } = await reader.read();
+      let chunk;
+      try { chunk = await reader.read(); }
+      catch (e) { if (e && e.name === "AbortError") throw new Error("__aborted__"); throw e; }
+      const { done, value } = chunk;
       if (done) break;
       buf += decoder.decode(value, { stream: true });
       const lines = buf.split("\n");
@@ -1104,7 +1313,14 @@
     if (guard) return showError("analyzeError", guard);
     localStorage.setItem("claude_api_key", apiKey);
 
-    $("analyzeBtn").disabled = true;
+    const failed = scopeItems.filter(i => i.status === "error").length;
+    if (failed) toast("추출에 실패한 파일 " + failed + "개는 분석에서 제외됩니다", "err");
+
+    setBusy(true);
+    $("step3").classList.remove("show");
+    $("staleNotice").classList.remove("show");
+    resultsStale = false;
+    running = new AbortController();
     analyzeProg.start("시험지 " + (examPdf ? 1 : 0) + "개 · 범위 자료 " + readyScopeItems().length + "개 전송 중");
 
     const content = buildDocBlocks();
@@ -1118,21 +1334,41 @@
     try {
       const raw = await streamMessages(content, {
         onText: (_, full) => reportAnalyzeProgress(full),
-        onUsage: (u) => { lastUsage = u; },
+        onUsage: (u) => { lastUsage = u; addUsage(u); },
+        signal: running.signal,
       });
       analysis = parseJson(raw);
       analyzeProg.finish("분석 완료");
       renderPlan(analysis);
       setStep(2);
-      $("step2").classList.add("show");
+      reveal("step2");
       $("step2").scrollIntoView({ behavior: "smooth" });
+      saveSession({ analysis, output: null, usage: totalUsage, title: (analysis.exam_info || {}).title || "" });
+      toast("분석이 끝났습니다 — 매칭 계획을 확인해 주세요");
     } catch (e) {
       analyzeProg.stop();
-      showError("analyzeError", e.message);
+      if (e.message === "__aborted__") toast("분석을 중단했습니다");
+      else showError("analyzeError", e.message);
     } finally {
-      $("analyzeBtn").disabled = false;
+      running = null;
+      setBusy(false);
     }
   }
+
+  function setBusy(on) {
+    document.body.classList.toggle("busy", on);
+    ["analyzeBtn", "generateBtn", "reAnalyzeBtn"].forEach(id => { $(id).disabled = on; });
+  }
+  function reveal(id) {
+    const el = $(id);
+    el.classList.add("show");
+    el.classList.remove("reveal");
+    void el.offsetWidth;
+    el.classList.add("reveal");
+  }
+  window.addEventListener("beforeunload", (e) => {
+    if (running) { e.preventDefault(); e.returnValue = ""; }
+  });
 
   // 스트리밍 중인 분석 JSON을 읽어 단계 · 진행률 · 상세 내용을 갱신
   function reportAnalyzeProgress(full) {
@@ -1248,15 +1484,26 @@
       tdNum.append(dot, document.createTextNode(m.number));
       tr.appendChild(tdNum);
 
-      [[m.type || q.type || "", true],
-       [(q.format || "") + (q.points != null ? " · " + q.points + "점" : ""), false],
-       [q.difficulty || "", false],
-       [m.selected_passage || "", true],
-       [m.direction || "", true],
-      ].forEach(([val, editable]) => {
+      const diff = String(q.difficulty || "").trim();
+      [[m.type || q.type || "", true, ""],
+       [(q.format || "") + (q.points != null ? " · " + q.points + "점" : ""), false, ""],
+       [diff, false, diff === "상" ? "diff-hi" : diff === "중" ? "diff-mid" : diff ? "diff-lo" : ""],
+       [m.selected_passage || "", true, ""],
+       [m.direction || "", true, ""],
+      ].forEach(([val, editable, cls]) => {
         const td = document.createElement("td");
         td.textContent = val;
-        if (editable) td.setAttribute("contenteditable", "true");
+        if (cls) td.className = cls;
+        if (editable) {
+          td.setAttribute("contenteditable", "true");
+          td.setAttribute("spellcheck", "false");
+          td.title = "클릭해서 수정";
+          td.addEventListener("keydown", ev => { if (ev.key === "Enter") { ev.preventDefault(); td.blur(); } });
+          td.addEventListener("paste", ev => {
+            ev.preventDefault();
+            document.execCommand("insertText", false, (ev.clipboardData || window.clipboardData).getData("text").replace(/\s+/g, " "));
+          });
+        }
         tr.appendChild(td);
       });
       tbody.appendChild(tr);
@@ -1322,10 +1569,15 @@ ${planJson}
   async function generate() {
     clearError("genError");
     if (!analysis) return;
-    $("generateBtn").disabled = true;
+    if (!$("apiKey").value.trim()) return showError("genError", "API 키를 입력해 주세요.");
+    if (!examPdf)
+      return showError("genError", "시험지 PDF가 없습니다. 새로고침으로 파일이 사라졌다면 1단계에서 시험지와 범위 자료를 다시 올린 뒤 진행해 주세요.");
+    if (resultsStale && !confirm("자료가 변경된 뒤 다시 분석하지 않았습니다. 이전 분석 계획으로 그대로 출제할까요?")) return;
+    setBusy(true);
+    running = new AbortController();
     genProg.start("확정된 출제 계획 " + (planFromTable().length || 0) + "문항 확인 중");
     setStep(3);
-    $("step3").classList.add("show");
+    reveal("step3");
     $("examOutput").innerHTML = "";
     $("usageInfo").textContent = "";
 
@@ -1353,24 +1605,46 @@ ${planJson}
             $("examOutput").innerHTML = sanitize(stripFences(full));
           }, 400);
         },
-        onUsage: (u) => { lastUsage = u; },
+        onUsage: (u) => { lastUsage = u; addUsage(u); },
+        signal: running.signal,
       });
       if (renderTimer) clearTimeout(renderTimer);
       genProg.finish("출제 완료");
-      $("examOutput").innerHTML = sanitize(stripFences(raw));
-      if (lastUsage) {
-        const cache = lastUsage.cacheRead ? " (캐시 재사용 " + lastUsage.cacheRead.toLocaleString() + ")" : "";
-        $("usageInfo").textContent =
-          "토큰 사용량 — 입력 " + (lastUsage.input + lastUsage.cacheRead + lastUsage.cacheWrite).toLocaleString() +
-          cache + " · 출력 " + lastUsage.output.toLocaleString();
-      }
+      const html = sanitize(stripFences(raw));
+      $("examOutput").innerHTML = html;
+      renderUsage();
+      saveSession({ output: html, usage: totalUsage });
       $("step3").scrollIntoView({ behavior: "smooth" });
+      toast("시험지가 완성되었습니다 — 검수 후 저장하세요");
     } catch (e) {
+      if (renderTimer) clearTimeout(renderTimer);
       genProg.stop();
-      showError("genError", e.message);
+      if (e.message === "__aborted__") { toast("출제를 중단했습니다"); $("step3").classList.remove("show"); }
+      else showError("genError", e.message);
     } finally {
-      $("generateBtn").disabled = false;
+      running = null;
+      setBusy(false);
     }
+  }
+
+  function addUsage(u) {
+    totalUsage.input += u.input; totalUsage.output += u.output;
+    totalUsage.cacheRead += u.cacheRead; totalUsage.cacheWrite += u.cacheWrite;
+  }
+  function renderUsage() {
+    const t = totalUsage;
+    const inAll = t.input + t.cacheRead + t.cacheWrite;
+    if (!inAll && !t.output) { $("usageInfo").textContent = ""; $("costInfo").textContent = ""; return; }
+    $("usageInfo").textContent = "이번 작업 토큰 — 입력 " + inAll.toLocaleString() +
+      (t.cacheRead ? " (캐시 재사용 " + t.cacheRead.toLocaleString() + ")" : "") +
+      " · 출력 " + t.output.toLocaleString();
+    const usd = (t.input * PRICE.input + t.output * PRICE.output +
+                 t.cacheRead * PRICE.cacheRead + t.cacheWrite * PRICE.cacheWrite) / 1e6;
+    $("costInfo").innerHTML = "";
+    $("costInfo").append("예상 비용 약 ");
+    const b = document.createElement("b");
+    b.textContent = "$" + usd.toFixed(2);
+    $("costInfo").append(b, document.createTextNode(" (Opus 5 정가 기준 · 참고용)"));
   }
 
   // 스트리밍 중인 시험지 HTML을 읽어 출제 진행 상황을 갱신
@@ -1627,15 +1901,71 @@ ${planJson}
 
   // ---------- 결과 액션 ----------
   $("pdfBtn").addEventListener("click", exportPdf);
-  $("hwpxBtn").addEventListener("click", () => { exportHwpx().catch(e => alert("HWPX 저장 실패: " + e.message)); });
-  $("docxBtn").addEventListener("click", () => { exportDocx().catch(e => alert("DOCX 저장 실패: " + e.message)); });
-  $("copyBtn").addEventListener("click", async () => {
-    try {
-      await navigator.clipboard.writeText($("examOutput").innerText);
-      $("copyBtn").textContent = "✓ 복사됨";
-      setTimeout(() => { $("copyBtn").textContent = "본문 복사"; }, 1500);
-    } catch (_) { alert("복사에 실패했습니다."); }
+  $("hwpxBtn").addEventListener("click", () => {
+    exportHwpx().then(() => toast("한글(HWPX) 파일을 내려받았습니다")).catch(e => toast("HWPX 저장 실패: " + e.message, "err"));
   });
+  $("docxBtn").addEventListener("click", () => {
+    exportDocx().then(() => toast("워드(DOCX) 파일을 내려받았습니다")).catch(e => toast("DOCX 저장 실패: " + e.message, "err"));
+  });
+  $("copyBtn").addEventListener("click", async () => {
+    try { await navigator.clipboard.writeText($("examOutput").innerText); toast("본문을 복사했습니다"); }
+    catch (_) { toast("복사에 실패했습니다 — 브라우저 권한을 확인해 주세요", "err"); }
+  });
+  $("editInputsBtn").addEventListener("click", () => {
+    $("step1").scrollIntoView({ behavior: "smooth" });
+  });
+  $("resetBtn").addEventListener("click", () => {
+    if (!confirm("올린 자료와 분석·출제 결과를 모두 지우고 처음부터 시작할까요?")) return;
+    examPdf = null; scopeItems = []; analysis = null; resultsStale = false;
+    totalUsage = { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 };
+    renderExamList(); renderScopeList();
+    $("scopeText").value = ""; $("extraReq").value = ""; saveDraft();
+    $("examOutput").innerHTML = ""; $("usageInfo").textContent = ""; $("costInfo").textContent = "";
+    $("planTable").innerHTML = ""; $("examMeta").innerHTML = "";
+    ["step2", "step3"].forEach(id => $(id).classList.remove("show"));
+    ["analyzeError", "genError"].forEach(clearError);
+    $("staleNotice").classList.remove("show");
+    clearSession();
+    setStep(1);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    toast("처음부터 다시 시작합니다");
+  });
+
+  // ---------- 이전 작업 복구 ----------
+  (function offerRestore() {
+    let sess = null;
+    try { sess = JSON.parse(localStorage.getItem(SESSION_KEY) || "null"); } catch (_) {}
+    if (!sess || !sess.analysis) return;
+    const when = new Date(sess.savedAt || Date.now());
+    const hh = String(when.getHours()).padStart(2, "0"), mm = String(when.getMinutes()).padStart(2, "0");
+    const t = $("restoreText");
+    t.innerHTML = "";
+    const b = document.createElement("b");
+    b.textContent = sess.title || "이전 작업";
+    t.append(b, document.createTextNode((sess.output ? " — 완성된 시험지" : " — 분석 결과") + "가 남아 있습니다 (" +
+      (when.getMonth() + 1) + "/" + when.getDate() + " " + hh + ":" + mm + " 저장)"));
+    const sub = document.createElement("span");
+    sub.className = "b-sub";
+    sub.textContent = "결과 확인과 문서 저장은 바로 가능하며, 다시 분석·출제하려면 파일을 다시 올려야 합니다";
+    t.appendChild(sub);
+    $("restoreBanner").classList.add("show");
+    $("discardBtn").addEventListener("click", () => { clearSession(); $("restoreBanner").classList.remove("show"); });
+    $("restoreBtn").addEventListener("click", () => {
+      analysis = sess.analysis;
+      if (sess.usage) totalUsage = sess.usage;
+      renderPlan(analysis);
+      setStep(sess.output ? 3 : 2);
+      reveal("step2");
+      if (sess.output) {
+        $("examOutput").innerHTML = sanitize(sess.output);
+        renderUsage();
+        reveal("step3");
+      }
+      $("restoreBanner").classList.remove("show");
+      $(sess.output ? "step3" : "step2").scrollIntoView({ behavior: "smooth" });
+      toast("이전 작업을 불러왔습니다");
+    });
+  })();
 
   $("analyzeBtn").addEventListener("click", analyze);
   $("reAnalyzeBtn").addEventListener("click", analyze);
