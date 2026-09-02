@@ -25,7 +25,7 @@ const U_SX2=655;             /* 윗줄 두 Galaxy의 가로 간격          */
 const U_UP=-560, U_DOWN=430; /* 윗줄은 올리고 아랫줄은 내린다       */
 /* 이름판이 앉는 높이. 원반의 위쪽 테두리는 중심에서 253 남짓 올라오므로
    그보다 넉넉히 위여야 글자가 별밭에 묻히지 않는다. */
-const NP_Y=-430;
+const NP_Y=-390;
 function uPlace(sx,wy){
   const sp=Math.sin(U_PITCH), cp=Math.cos(U_PITCH);
   /* 화면 깊이 z2 = wy·sin(pitch) + wz·cos(pitch) 가 U_DEPTH 로 일정하도록 wz 를 푼다 */
@@ -52,11 +52,11 @@ const GALAXIES=[
   { id:'grammar', name:'GRAMMAR', kr:'문법 Galaxy', tagline:'중등 문법 커리큘럼',
     dataId:'nexus-data-grammar', fullDepth:2,
     pos:uPlace(0,U_DOWN),      orient:{rx:0.26,rz:0},
-    accent:[41,168,255],  silver:{base:[152,176,208],hot:[240,248,255]} },
+    accent:[56,140,255],  silver:{base:[152,176,208],hot:[240,248,255]} },
   { id:'syntax', name:'SYNTAX', kr:'구문 Galaxy', tagline:'ORUN WEEKLY · 매주 한 회',
     dataId:'nexus-data-syntax', fullDepth:3, spin0:-180,   /* 한 권짜리 — 표지를 등대 앞자리에 세운다 */
     pos:uPlace(-U_SX2,U_UP),   orient:{rx:0.18,rz:0.11},
-    accent:[255,196,84],  silver:{base:[214,190,146],hot:[255,244,214]} },
+    accent:[255,178,72],  silver:{base:[214,190,146],hot:[255,244,214]} },
   { id:'usage', name:'USAGE', kr:'어법 Galaxy', tagline:'ORUN USAGE · 어디를 보는가',
     dataId:'nexus-data-usage', fullDepth:3, spin0:-180,   /* 한 권짜리 — 표지를 등대 앞자리에 세운다 */
     pos:uPlace(U_SX2,U_UP),    orient:{rx:0.18,rz:-0.11},
@@ -64,7 +64,7 @@ const GALAXIES=[
   { id:'reading', name:'READING', kr:'독해 Galaxy', tagline:'ORUN Reading · 한 지문을 아홉 번',
     dataId:'nexus-data-reading', fullDepth:3,
     pos:uPlace(U_SX,U_DOWN),   orient:{rx:0.22,rz:-0.16},
-    accent:[255,138,80],  silver:{base:[216,172,142],hot:[255,238,222]} },
+    accent:[255,95,138],  silver:{base:[216,172,142],hot:[255,238,222]} },
 ];
 
 /* ── 활성 Galaxy의 상태는 이 전역들로 풀려 들어온다(bindGalaxy) ──
@@ -78,6 +78,7 @@ let ACTIVE=null, CURG=null;
    그 Galaxy 자리로 미끄러져, 활성 Galaxy는 언제나 원점에 온다 — 원점을 가정하고
    짜인 기존 배치·프레이밍 코드가 그대로 성립하는 이유다. */
 let universeMode=true, uAmt=1;
+let TRANS=null;                        /* Galaxy 진입/우주 귀환의 720ms 타임라인 — 등대·이름판·노드가 한 덩어리로 출발한다 */
 const WC={x:0,y:0,z:0}, WCT={x:0,y:0,z:0};
 const GOFF={x:0,y:0,z:0};              /* 지금 그리는 Galaxy의 세계 오프셋 */
 let GOR={rx:0,rz:0}, GORA=0;           /* 그 Galaxy의 원반 기울기와 강도   */
@@ -146,24 +147,28 @@ function buildGalaxyState(gal){
   S.FULL_DEPTH=gal.fullDepth||2;
   /* Galaxy마다 제 먼지 벨트를 갖는다 — 같은 배열을 셋이 나눠 쓰면 세 Galaxy가
      같은 무늬로 반짝여 복제품처럼 보인다. */
+  /* 2가닥 나선 — 코어가 가장 밝고, 30% 는 나선 밖에 흩어진 헤일로 먼지 */
   S.GDUST=[];
-  for(let i=0;i<300;i++){
-    const a=Math.random()*Math.PI*2;
-    const r=205*0.55+Math.pow(Math.random(),0.62)*(596*1.12-205*0.55);
+  for(let i=0;i<620;i++){
+    const arm=i%2, u=Math.random();
+    const r=205*.55+Math.pow(Math.random(),.50)*(596*1.12-205*.55), tR=r/667;
+    const a=(u<.3)? Math.random()*Math.PI*2 : arm*Math.PI+tR*2.4+(Math.random()-.5)*.9;
     S.GDUST.push({a:a,r:r,y:(Math.random()-.5)*90*(1-r/(596*1.2)),
-                  b:Math.pow(Math.random(),1.7),s:(Math.random()*.10+.02)*(Math.random()<.5?-1:1)});
+                  b:Math.pow(Math.random(),1.7)*(.55+.45*Math.exp(-tR*2.2)),
+                  s:(0.02+0.10*(1-Math.min(1,tR)))*(Math.random()*.6+.7)});   /* 안쪽이 빠른 차등 회전 — 나선이 풀리지 않는다 */
   }
-  /* 등대 회로선 팔레트 — Galaxy의 전류색으로 물든다 */
-  const AC=gal.accent;
+  /* 팔레트는 한 곳에서 파생 — Galaxy 색 4톤(core/mid/pale/deep)이 등대·먼지·노드·강·라벨을 물들인다 */
+  const AC=gal.accent, WH=[255,255,255], VD=[4,11,23];
   const mxc=(a,b,t)=>[Math.round(a[0]+(b[0]-a[0])*t),Math.round(a[1]+(b[1]-a[1])*t),Math.round(a[2]+(b[2]-a[2])*t)];
-  const pale=mxc(AC,[255,255,255],.55), lite=mxc(AC,[255,255,255],.75);
+  gal.pal={ core:AC, mid:mxc(AC,WH,.35), pale:mxc(AC,WH,.62), deep:mxc(AC,VD,.62) };
   gal.tw={
-    ribF:RGBA(pale,.62), ribB:RGBA(AC,.16),
-    ringF:RGBA(pale,.72), ringB:RGBA(AC,.20), ringBrand:RGBA(mxc(AC,[255,255,255],.42),.95),
-    pad:RGBA(lite,.9),
-    bookFill:RGBA(mxc(AC,[30,120,190],.5),.10), bookLine:RGBA(pale,.60), bookRule:RGBA(AC,.34),
+    ribS:RGBA(mxc(AC,WH,.72),.92), ribF:RGBA(gal.pal.pale,.55), ribB:RGBA(AC,.10),
+    ringF:RGBA(gal.pal.pale,.66), ringB:RGBA(AC,.14), ringBrand:RGBA(mxc(AC,WH,.42),.95),
+    pad:RGBA(gal.pal.pale,.85), course:RGBA(AC,.18), skin:AC,
+    bookFill:RGBA(gal.pal.deep,.28), bookLine:RGBA(gal.pal.pale,.55), bookRule:RGBA(AC,.30),
   };
-  gal.dustCol=mxc(AC,[255,255,255],.80);
+  gal.dustCol=gal.pal.mid;
+  gal.hovAmt=0; gal.towerHov=0; gal.towerHovT=0;
   gal.S=S; gal.oAmt=1;
   return S;
 }
@@ -474,6 +479,9 @@ function allNodes(n,fn){ fn(n); n.children.forEach(c=>allNodes(c,fn)); }
    ============================================================ */
 let W=0,H=0,DPR=1;
 const cv=document.getElementById('map');
+const STAGE_EL=document.getElementById('stage');
+const HINT_EL=document.querySelector('.hint');
+STAGE_EL.addEventListener('pointermove',()=>{ cam.idle=0; },{passive:true});
 let ctx=cv.getContext('2d');
 const LIFT=[0,38,94,158];
 const FOV=1500;
@@ -518,45 +526,93 @@ function resize(){
 /* ---- baked backdrop: nebula and stars, nothing else -------------------
    The grid and the circuit traces are gone; a lattice drawn over a star
    field fights it. Baked on resize so the per-frame cost is one blit.  */
-let BG=null;
+let BG=null, BG2=null;
 function buildBackdrop(){
   if(W<2||H<2) return;
   BG=document.createElement('canvas');
   BG.width=Math.round(W*DPR); BG.height=Math.round(H*DPR);
   const g=BG.getContext('2d'); g.setTransform(DPR,0,0,DPR,0,0);
-  /* One soft pool of light behind the tower. No stars, no lattice, no
-     traces — the covers and the lighthouse are the subject; anything else
-     back here just competes with them. */
+  /* 등대 뒤의 빛 웅덩이 한 겹 — 중앙 4겹 중 2겹을 덜어 냈다 */
   const g0=g.createRadialGradient(W*.5,H*.46,0,W*.5,H*.46,Math.max(W,H)*.62);
-  g0.addColorStop(0,'rgba(28,74,124,.42)');
-  g0.addColorStop(.45,'rgba(14,42,76,.22)');
+  g0.addColorStop(0,'rgba(28,74,124,.28)');
+  g0.addColorStop(.45,'rgba(14,42,76,.14)');
   g0.addColorStop(1,'rgba(6,16,32,0)');
   g.fillStyle=g0; g.fillRect(0,0,W,H);
   const g1=g.createLinearGradient(0,H*.55,0,H);
   g1.addColorStop(0,'rgba(2,7,16,0)');
   g1.addColorStop(1,'rgba(1,4,11,.55)');
   g.fillStyle=g1; g.fillRect(0,H*.55,W,H*.45);
-  /* 심우주 — 세 Galaxy가 한 하늘에 떠 있으니, 바탕도 하늘이어야 한다.
-     아주 옅은 별밭과 세 Galaxy 전류색의 성운 기운 한 겹씩. 구울 때만 그린다. */
-  for(let i=0;i<190;i++){
+  /* 은하수 띠 — 22° 기운 옅은 한 겹 */
+  g.save(); g.translate(W*.5,H*.5); g.rotate(22*Math.PI/180);
+  const mw=g.createLinearGradient(0,-W*.14,0,W*.14);
+  mw.addColorStop(0,'rgba(120,150,200,0)'); mw.addColorStop(.5,'rgba(120,150,200,.05)'); mw.addColorStop(1,'rgba(120,150,200,0)');
+  g.fillStyle=mw; g.fillRect(-W*1.2,-W*.14,W*2.4,W*.28);
+  g.restore();
+  /* 별 3층 — 먼 것은 많고 흐리게, 가까운 것은 적고 또렷하게, 밝은 별 몇에는 헤일로 */
+  for(let i=0;i<900;i++){
     const x=Math.random()*W, y=Math.random()*H, r=Math.random();
-    g.fillStyle='rgba(208,228,250,'+(0.04+r*0.20).toFixed(3)+')';
-    const s2=r<.86?1:1.6;
-    g.fillRect(x,y,s2,s2);
+    g.fillStyle='rgba(208,228,250,'+(0.05+r*0.11).toFixed(3)+')';
+    const s2=.6+r*.4; g.fillRect(x,y,s2,s2);
   }
-  /* 성운 기운은 Galaxy 의 전류색에서 뽑는다 — 셋으로 굳혀 두었더니 Galaxy 가
-     늘어도 하늘은 그대로였다. 화면을 가로질러 고르게 흩는다. */
-  GALAXIES.map((g,i)=>[ (i+0.5)/GALAXIES.length, i%2?0.26:0.74, g.accent ]).forEach(v=>{
-    const c=v[2];
-    const gg=g.createRadialGradient(W*v[0],H*v[1],0,W*v[0],H*v[1],Math.max(W,H)*.30);
-    gg.addColorStop(0,'rgba('+c[0]+','+c[1]+','+c[2]+',.05)');
-    gg.addColorStop(1,'rgba('+c[0]+','+c[1]+','+c[2]+',0)');
+  for(let i=0;i<110;i++){
+    const x=Math.random()*W, y=Math.random()*H, warm=Math.random()<.3;
+    g.fillStyle=(warm?'rgba(255,236,200,':'rgba(208,228,250,')+(0.25+Math.random()*0.20).toFixed(3)+')';
+    g.beginPath(); g.arc(x,y,.7,0,Math.PI*2); g.fill();
+  }
+  for(let i=0;i<12;i++){
+    const x=Math.random()*W, y=Math.random()*H;
+    const hg=g.createRadialGradient(x,y,0,x,y,7);
+    hg.addColorStop(0,'rgba(220,236,255,.10)'); hg.addColorStop(1,'rgba(220,236,255,0)');
+    g.fillStyle=hg; g.beginPath(); g.arc(x,y,7,0,Math.PI*2); g.fill();
+    g.fillStyle='rgba(230,240,255,.60)'; g.beginPath(); g.arc(x,y,1.1,0,Math.PI*2); g.fill();
+  }
+  /* 다섯 성운 — 우주 피라미드의 제자리에 Galaxy 색으로. 둘째 로브는 30° 방향으로 어긋난 보랏빛 */
+  const NEB={vocab:[.22,.70],grammar:[.50,.72],syntax:[.36,.34],usage:[.64,.34],reading:[.78,.70]};
+  const R0=.42*Math.max(W,H);
+  GALAXIES.forEach(gal=>{
+    const c=gal.accent, p=NEB[gal.id]||[.5,.5], cx=W*p[0], cy=H*p[1];
+    const gg=g.createRadialGradient(cx,cy,0,cx,cy,R0);
+    gg.addColorStop(0,RGBA(c,.13)); gg.addColorStop(1,RGBA(c,0));
     g.fillStyle=gg; g.fillRect(0,0,W,H);
+    const c2=mxc3(c,[190,70,130],.35);
+    const ox=cx+Math.cos(Math.PI/6)*R0*.18, oy=cy-Math.sin(Math.PI/6)*R0*.18;
+    const g2=g.createRadialGradient(ox,oy,0,ox,oy,R0*.8);
+    g2.addColorStop(0,RGBA(c2,.06)); g2.addColorStop(1,RGBA(c2,0));
+    g.fillStyle=g2; g.fillRect(0,0,W,H);
   });
+  /* 황도 헤어라인 — 부드러운 빛뿐인 화면의 유일한 단단한 선. 24등분 눈금 */
+  g.save(); g.translate(W*.5,H*.52); g.rotate(-11*Math.PI/180);
+  const rx=W*.72, ry=H*.20;
+  g.strokeStyle='rgba(245,197,24,.055)'; g.lineWidth=.6;
+  g.beginPath(); g.ellipse(0,0,rx,ry,0,0,Math.PI*2); g.stroke();
+  for(let i=0;i<24;i++){
+    const a=i/24*Math.PI*2, big=(i%6===0);
+    const x=Math.cos(a)*rx, y=Math.sin(a)*ry;
+    const nl=Math.hypot(Math.cos(a)/rx,Math.sin(a)/ry)||1, nx=(Math.cos(a)/rx)/nl, ny=(Math.sin(a)/ry)/nl, L=big?7:4;
+    g.strokeStyle='rgba(245,197,24,'+(big?.11:.08)+')'; g.lineWidth=big?.8:.6;
+    g.beginPath(); g.moveTo(x-nx*L/2,y-ny*L/2); g.lineTo(x+nx*L/2,y+ny*L/2); g.stroke();
+  }
+  g.restore();
+  /* 시차층 — 카메라를 따라 뒤에서 느리게 미끄러지는 별 160개. 가로로 타일되므로 가장자리 2px 는 비운다 */
+  const H2=Math.round(H*1.12);
+  BG2=document.createElement('canvas');
+  BG2.width=Math.round(W*DPR); BG2.height=Math.round(H2*DPR);
+  const b=BG2.getContext('2d'); b.setTransform(DPR,0,0,DPR,0,0);
+  for(let i=0;i<160;i++){
+    const x=2+Math.random()*(W-4), y=2+Math.random()*(H2-4), r=1+Math.random()*.6;
+    b.fillStyle='rgba(214,230,250,'+(0.18+Math.random()*0.22).toFixed(3)+')';
+    b.beginPath(); b.arc(x,y,r/2,0,Math.PI*2); b.fill();
+  }
 }
 function drawBackdrop(){
   if(!BG) buildBackdrop();
   if(BG) ctx.drawImage(BG,0,0,W,H);
+  if(BG2){
+    const H2=BG2.height/DPR;
+    let dx=-cam.px*.06+cam.yaw*80, dy=-H*.06-cam.py*.06;
+    dx=((dx%W)+W)%W;
+    ctx.drawImage(BG2,dx-W,dy,W,H2); ctx.drawImage(BG2,dx,dy,W,H2);
+  }
 }
 
 /* ---- static layers ---------------------------------------------------
@@ -622,12 +678,15 @@ function bloom(){
   const every=QUALITY===2?2:4;
   if((bloomTick++ % every)===0){
     SCx.clearRect(0,0,w,h);
+    /* 색은 남기고 밝기만 덜어 낸다 — 번짐이 아니라 발광. 1/4 버퍼에만 건다 */
+    try{ SCx.filter = QUALITY===2 ? 'saturate(1.6) brightness(.9)' : 'none'; }catch(e){}
     SCx.drawImage(cv,0,0,w,h);
+    try{ SCx.filter='none'; }catch(e){}
   }
   ctx.save();
   ctx.globalCompositeOperation='lighter';
-  ctx.globalAlpha=.40; ctx.drawImage(SC,0,0,W,H);
-  ctx.globalAlpha=.24; ctx.drawImage(SC,-W*.045,-H*.045,W*1.09,H*1.09);
+  ctx.globalAlpha=.26; ctx.drawImage(SC,0,0,W,H);
+  ctx.globalAlpha=.12; ctx.drawImage(SC,-W*.045,-H*.045,W*1.09,H*1.09);
   ctx.restore();
 }
 
@@ -722,7 +781,7 @@ function labelReach(z){
   let best=0;
   live.forEach(n=>{
     if(n.kind==='core'||n.kind==='book') return;
-    const cap = n.kind==='item'?22:20;
+    const cap = LABEL_CAP[n.kind]||24;
     let t=n.label||'';
     if(t.length>cap) t=t.slice(0,cap-1)+'…';
     const key=n.kind+'|'+zk+'|'+t;
@@ -730,7 +789,7 @@ function labelReach(z){
     if(w==null) w=REACH_CACHE[key]=mw(t, labelFont(n, 1, z));
     if(w>best) best=w;
   });
-  return best ? 13 + 10 + best + 8 : 0;
+  return best ? 8 + 14 + best + 6 : 0;   /* 노드 반지름 + 리더선(2+8+4) + 글자 + 여유 */
 }
 
 function frameAt(z){
@@ -870,13 +929,14 @@ for(let i=0;i<170;i++){
 const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
 let T=0, hover=null, ready=false;
 
-const YEL=[255,209,0];
+const YEL=[245,197,24];                  /* = --gold. 골드는 값 하나 */
+const GOLD_TXT=[248,217,105];            /* on-path 활자 전용 — YEL 의 파생(mix 35% white) */
 function nodeStyle(n){
   const on=isOnPath(n), g=gradeOf(n);
   if(n.kind==='core') return {rad:32,rgb:[79,216,255],glow:34,w:2};
-  if(n.kind==='book') return {rad:on?10.5:8,rgb:on?YEL:g.base,glow:on?18:10,w:on?1.9:1.3};
-  if(n.kind==='chap') return {rad:on?12:9.5,rgb:on?YEL:g.base,glow:on?19:9,w:on?1.9:1.25};
-  return {rad:8,rgb:g.hot,glow:11,w:1.3};
+  if(n.kind==='book') return {rad:on?10.5:7,rgb:on?YEL:g.base,glow:on?18:10,w:on?1.9:1.3};
+  if(n.kind==='chap') return {rad:on?10.5:8,rgb:on?YEL:g.base,glow:on?19:9,w:on?1.9:1.25};
+  return {rad:5.5,rgb:g.hot,glow:11,w:1.3};
 }
 function hexA(h,a){
   const m=h.replace('#','');
@@ -897,27 +957,44 @@ function draw(ts){
   /* T 는 화면의 모든 흐름이 참조하는 시계다. 프레임 수를 세면 느린 기계에서
      강물도 리본도 같이 느려진다. 60fps 환산으로 올려 기존 튜닝은 그대로 두되
      기계와 무관하게 같은 속도로 흐르게 한다. */
-  if(motionOn){ T+=dt*60; cam.idle++; }
-  cam.yaw   += (cam.tyaw  -cam.yaw  )*.08;
-  cam.pitch += (cam.tpitch-cam.pitch)*.10;
-  cam.zoom  += (cam.tzoom -cam.zoom )*.09;
-  cam.px    += (cam.tpx   -cam.px   )*.09;
-  cam.py    += (cam.tpy   -cam.py   )*.09;
+  if(motionOn) T+=dt*60;
+  cam.idle++;
+  if(cam.idle===1||(cam.idle&15)===0) STAGE_EL.classList.toggle('idle',cam.idle>360);   /* 깨어나면 곧바로 100% */
+  if(cam.idle===1||(cam.idle%30)===0){ if(HINT_EL) HINT_EL.classList.toggle('calm',cam.idle>480); }
+  /* 감쇠는 dt 보정 — 60Hz 기준 튜닝값 그대로, 120Hz 에서 두 배로 급해지지 않는다.
+     시정수는 셋뿐: 카메라 .085 · 세계 .07 · 노드 .12 (+hover .25, 판/등대 .2) */
+  const K=c=>1-Math.pow(1-c,dt*60);
+  const KC=K(.085), KW=K(.07), KN=K(.12), KH=K(.25), KP=K(.2);
+  cam.yaw   += (cam.tyaw  -cam.yaw  )*KC;
+  cam.pitch += (cam.tpitch-cam.pitch)*KC;
+  cam.zoom  += (cam.tzoom -cam.zoom )*KC;
+  cam.px    += (cam.tpx   -cam.px   )*KC;
+  cam.py    += (cam.tpy   -cam.py   )*KC;
 
   /* 세계의 중심이 목표 Galaxy로 미끄러진다 — 카메라가 나는 게 아니라
      우주가 흐른다. 활성 Galaxy는 언제나 원점에 도착한다. */
-  WC.x+=(WCT.x-WC.x)*.075; WC.y+=(WCT.y-WC.y)*.075; WC.z+=(WCT.z-WC.z)*.075;
-  uAmt+=((universeMode?1:0)-uAmt)*.06;
+  if(TRANS){
+    const p=Math.min(1,(now-TRANS.t0)/TRANS.dur), e=p<.5?4*p*p*p:1-Math.pow(-2*p+2,3)/2;
+    uAmt=TRANS.u0+(TRANS.u1-TRANS.u0)*e;
+    WC.x=TRANS.w0.x+(TRANS.w1.x-TRANS.w0.x)*e; WC.y=TRANS.w0.y+(TRANS.w1.y-TRANS.w0.y)*e; WC.z=TRANS.w0.z+(TRANS.w1.z-TRANS.w0.z)*e;
+    if(p>=1) TRANS=null;
+  } else {
+    WC.x+=(WCT.x-WC.x)*KW; WC.y+=(WCT.y-WC.y)*KW; WC.z+=(WCT.z-WC.z)*KW;
+    uAmt+=((universeMode?1:0)-uAmt)*KW;
+  }
 
   /* Galaxy마다 제 궤도 시뮬레이션을 돈다 — 배경 Galaxy도 계속 살아 돈다 */
   GALAXIES.forEach(g=>{
     const inFocus=(g===ACTIVE&&!universeMode);
-    g.oAmt=(g.oAmt==null?1:g.oAmt)+((inFocus?0:1)-g.oAmt)*.055;
+    g.oAmt=(g.oAmt==null?1:g.oAmt)+((inFocus?0:1)-g.oAmt)*KW;
+    g.hovAmt=(g.hovAmt||0)+((plateHover===g?1:0)-(g.hovAmt||0))*KP;
+    g.towerHov=(g.towerHov||0)+((g.towerHovT||0)-(g.towerHov||0))*KP;
     withGalaxy(g,()=>{
-      galaxyAmt+=((expandAll?1:0)-galaxyAmt)*.055;
+      galaxyAmt+=((expandAll?1:0)-galaxyAmt)*KW;
       orbit(dt);
       allNodes(ROOT,n=>{
-        n.x+=(n.tx-n.x)*.13; n.y+=(n.ty-n.y)*.13; n.vis+=(n.tvis-n.vis)*.13;
+        n.x+=(n.tx-n.x)*KN; n.y+=(n.ty-n.y)*KN; n.vis+=(n.tvis-n.vis)*KN;
+        n.hov=(n.hov||0)+((hover===n?1:0)-(n.hov||0))*KH;
       });
     });
   });
@@ -954,7 +1031,7 @@ function draw(ts){
       drawPlane();
       drawGround();
       drawGalaxy();
-      if(!back) drawLinks();                       /* 배경 Galaxy는 별빛만 남긴다 */
+      if(!back&&!universeMode) drawLinks();        /* 배경 Galaxy는 별빛만, 우주에서는 강물 1,379가닥을 쉰다 */
       drawLighthouse();
       labelQ.length=0;
       drawNodes();
@@ -962,7 +1039,7 @@ function draw(ts){
          단원 이름은 어차피 읽히지 않고, Galaxy를 고르는 화면의 이름은
          등대 위 이름판 하나면 된다. (노드가 적은 독해 Galaxy만 가시성
          문턱을 넘어 저 혼자 이름표를 달고 있었다.) */
-      g._labels = (back||universeMode) ? [] : labelQ.slice();
+      g._labels = (back||universeMode) ? [] : pickLabels(labelQ);
       labelQ.length=0;
       GDIM=1;
     });
@@ -977,7 +1054,7 @@ function draw(ts){
     const L=LAYER['tower:'+o.g.id];
     if(!L||!L.c) return;
     ctx.save(); ctx.globalCompositeOperation='lighter';
-    ctx.globalAlpha=.3*(o.g===ACTIVE||universeMode?1:0.34);
+    ctx.globalAlpha=.2*(o.g===ACTIVE||universeMode?1:0.34);
     ctx.drawImage(L.c,0,0,W,H); ctx.restore();
   });
   /* 이름표는 Galaxy마다 제 문맥(색·중심)으로 그린다 — 블룸 뒤라 글자가 번지지 않는다 */
@@ -1011,10 +1088,23 @@ function drawPlane(){
   drawPlaneLive();
 }
 function drawPlaneStatic(){
+  const AC=ACCENT||[41,168,255];
   ctx.save();
   RADII.slice(1).forEach((r,i)=>{
-    poly(ring(r,96),'rgba(120,205,255,'+(0.042-i*0.010)+')',1,true);
+    const last=(i===RADII.length-2);
+    if(last) ctx.setLineDash([2,7]);
+    poly(ring(r,96),RGBA(AC,[.07,.05,.035][i]||.035),1,true);
+    ctx.setLineDash([]);
   });
+  /* 컴퍼스 틱 — 바깥 링 위 30° 마다, 0/90/180/270° 는 길게. cached 층이라 프레임 비용 0 */
+  const Rt=RADII[RADII.length-1], c=pt(0,0,0);
+  for(let i=0;i<12;i++){
+    const a=i/12*Math.PI*2, big=(i%3===0), L=big?6:3;
+    const p0=pt(Math.cos(a)*Rt,0,Math.sin(a)*Rt);
+    const dx=p0[0]-c[0], dy=p0[1]-c[1], dl=Math.hypot(dx,dy)||1;
+    ctx.strokeStyle=RGBA(AC,big?.30:.18); ctx.lineWidth=1;
+    ctx.beginPath(); ctx.moveTo(p0[0],p0[1]); ctx.lineTo(p0[0]+dx/dl*L,p0[1]+dy/dl*L); ctx.stroke();
+  }
   ctx.restore();
 }
 function drawPlaneLive(){
@@ -1147,8 +1237,8 @@ function drawLinks_river(){
     const g = gradeOf(n);
     const k = mid[2]*cam.zoom;
     river_bed(p,
-      hot ? RGBA(YEL, .13*a) : RGBA(g.base, (on?.09:.06)*a),
-      Math.max(.5, (hot?1.15:.8)*k));
+      hot ? RGBA(YEL, .13*a) : RGBA(g.base, (on?.09:(dense?.06:.12))*a),
+      Math.max(.5, (hot?1.15:(dense?.8:1.1))*k));
   });
 
   /* 2단 — 흐르는 빛. 먼 것부터 쌓아 올린다. */
@@ -1896,38 +1986,45 @@ function drawGalaxy(){
   if(galaxyAmt<=.01) return;
   const A=galaxyAmt*GDIM;
   const AC=ACCENT||[41,168,255];
-  const mixw=t=>[Math.round(206+(AC[0]-206)*t),Math.round(226+(AC[1]-226)*t),Math.round(255+(AC[2]-255)*t)];
+  const P=(CURG&&CURG.pal)||{mid:AC,pale:AC,deep:AC};
   ctx.save(); ctx.globalCompositeOperation='lighter';
-  /* the halo the arms sit in — Galaxy의 전류색으로 살짝 물든다 */
+  /* the halo the arms sit in — Galaxy 색 4톤으로 물든 성운 */
   const c=pt(0,-40,0), k=c[2]*cam.zoom, sq=Math.max(.18,Math.cos(cam.pitch));
-  const R=RADII[3]*1.25*k;
+  const R=RADII[3]*1.35*k;
   const hg=ctx.createRadialGradient(c[0],c[1],0,c[0],c[1],R);
-  hg.addColorStop(0,RGBA(mixw(.22),0.11*A));
-  hg.addColorStop(.30,RGBA(mixw(.38),0.055*A));
-  hg.addColorStop(.68,RGBA(mixw(.5),0.022*A));
-  hg.addColorStop(1,'rgba(70,100,160,0)');
+  hg.addColorStop(0,RGBA(P.mid,(universeMode?.32:.24)*A));
+  hg.addColorStop(.30,RGBA(AC,.11*A));
+  hg.addColorStop(.68,RGBA(P.deep,.05*A));
+  hg.addColorStop(1,RGBA(P.deep,0));
   ctx.fillStyle=hg;
   ctx.beginPath(); ctx.ellipse(c[0],c[1],R,R*sq,0,0,Math.PI*2); ctx.fill();
-  /* dust in the plane of the lattice */
+  /* dust in the plane of the lattice — 성긴 Galaxy 는 조금 더 진하게, 거버너가 내려가면 수를 줄인다 */
   const RIM2=RADII[RADII.length-1]||600;
   const dc=(CURG&&CURG.dustCol)||[228,240,255];
-  GDUST.forEach(d=>{
+  const sparse=(live.length<60?1.6:1)*(universeMode?2.6:1);   /* 우주에서는 먼지가 원반 자체다 */
+  const szf=universeMode?1.0:.35, szm=universeMode?1.5:1;
+  const N=QUALITY<2?Math.min(420,GDUST.length):GDUST.length;
+  for(let i=0;i<N;i++){
+    const d=GDUST[i];
     if(motionOn) d.a+=d.s*0.00035;
     const rr=d.r*(1+0.17*galaxyAmt), zx=Math.sin(d.a)*rr, tR=Math.min(1.35,rr/RIM2);
     const yy=(Math.sin(d.a*1.0+0.55)*54*Math.pow(tR,1.7)
               + d.y*(1+2.2*Math.exp(-tR*tR*2.4)))*galaxyAmt;
     const q=pt(Math.cos(d.a)*rr,yy,zx);
-    const kk=q[2]*cam.zoom, sz=Math.max(.35,(0.5+d.b*1.35)*kk);
-    ctx.fillStyle=RGBA(dc,(0.10+d.b*0.62)*fog(q[3])*A);
-    ctx.beginPath(); ctx.arc(q[0],q[1],sz,0,Math.PI*2); ctx.fill();
-  });
+    const kk=q[2]*cam.zoom, sz=Math.max(szf,(0.4+d.b*1.0)*kk*szm);
+    const al=Math.min(.9,(0.06+d.b*0.50)*(universeMode?Math.max(.85,fog(q[3])):fog(q[3]))*A*sparse);
+    ctx.fillStyle=RGBA(dc,al);
+    if(sz<1.2){ ctx.fillRect(q[0],q[1],sz,sz); }
+    else { ctx.beginPath(); ctx.arc(q[0],q[1],sz,0,Math.PI*2); ctx.fill(); }
+  }
   ctx.restore();
 }
 function drawLinks(){
   const f=LINKFX.find(x=>x.id===linkFx)||LINKFX[0];
   if(galaxyAmt>.5){
-    const orig=gradeOf;
-    gradeOf=function(n){ const g=orig(n); return {base:SILVER.base,hot:SILVER.hot,rank:g.rank,of:g.of,label:g.label,chip:g.chip}; };
+    const orig=gradeOf, P=(CURG&&CURG.pal)||{pale:SILVER.base};
+    const base=P.pale, hot=mxc3(P.pale,[255,255,255],.5);
+    gradeOf=function(n){ const g=orig(n); return {base:base,hot:hot,rank:g.rank,of:g.of,label:g.label,chip:g.chip}; };
     try{ f.fn(); } finally { gradeOf=orig; }
   } else f.fn();
 }
@@ -1945,6 +2042,7 @@ function setLinkFx(id){
 const GDEF={base:[110,140,200],hot:[190,210,240],rank:0,of:1,label:''};
 function CSS(c){ return 'rgb('+c[0]+','+c[1]+','+c[2]+')'; }
 function RGBA(c,a){ return 'rgba('+c[0]+','+c[1]+','+c[2]+','+a+')'; }
+function mxc3(a,b,t){ return [Math.round(a[0]+(b[0]-a[0])*t),Math.round(a[1]+(b[1]-a[1])*t),Math.round(a[2]+(b[2]-a[2])*t)]; }
 function gradeOf(n){ return GRADE[n&&n.bk] || GDEF; }
 
 const LH_N=26;                             /* radial facets around the lathe */
@@ -1989,15 +2087,18 @@ function drawLighthouse(){
     if(GDIM<1){ ctx.save(); ctx.globalAlpha=GDIM; cached('tower:'+CURG.id,drawTowerSolid); ctx.restore(); }
     else cached('tower:'+CURG.id,drawTowerSolid);
     drawLamp();
+    drawBeams();
   }
   finally{ towerUpright=false; }
 }
 function drawTowerSolid(){
   /* Circuit line-art: the tower is described by its own contour rather than
      shaded mass — profile rings crossed by vertical ribs, with a pad at every
-     intersection. Back-facing spans stay dim so the form reads as glass. */
+     intersection. The two silhouette ribs are heavier; the bands between the
+     front ribs carry a faint Galaxy-coloured skin so the glass has volume. */
   drawBookWire();
-  const RIBS=18;
+  const uni = universeMode || pt(0,0,0)[2]*cam.zoom < .5;   /* 우주 배율 — 선을 반으로 */
+  const RIBS=uni?9:18;
   const prof=[];
   LH_BANDS.forEach(b=>{
     if(!prof.length||prof[prof.length-1][1]!==b.h0||prof[prof.length-1][0]!==b.r0) prof.push([b.r0,b.h0]);
@@ -2005,28 +2106,56 @@ function drawTowerSolid(){
   });
   const camA=-Math.PI/2-cam.yaw;
   const front=a=>Math.cos(a-camA)>0;          /* facing the viewer */
+  const TW=(CURG&&CURG.tw)||{};
+  const AC=TW.skin||ACCENT||[41,168,255];
+  const LD=lightDir();
 
   ctx.save();
   ctx.lineCap='round'; ctx.lineJoin='round';
 
-  /* ribs */
+  /* band skin — 앞면 리브 사이 사변형을 Galaxy 색으로 아주 옅게 */
+  if(!uni){
+    LH_BANDS.forEach(b=>{
+      if(b.m==='dark') return;
+      for(let i=0;i<RIBS;i++){
+        const a0=i/RIBS*Math.PI*2, a1=(i+1)/RIBS*Math.PI*2;
+        if(!front(a0)||!front(a1)) continue;
+        const am=(a0+a1)/2, lam=Math.max(0,Math.cos(am)*LD[0]+Math.sin(am)*LD[2]);
+        const q=[pt(Math.cos(a0)*b.r0,-b.h0,Math.sin(a0)*b.r0),pt(Math.cos(a1)*b.r0,-b.h0,Math.sin(a1)*b.r0),
+                 pt(Math.cos(a1)*b.r1,-b.h1,Math.sin(a1)*b.r1),pt(Math.cos(a0)*b.r1,-b.h1,Math.sin(a0)*b.r1)];
+        ctx.fillStyle=RGBA(AC, b.m==='blue' ? .09+.06*lam : .05+.07*lam);
+        ctx.beginPath(); q.forEach((v,k)=>k?ctx.lineTo(v[0],v[1]):ctx.moveTo(v[0],v[1])); ctx.closePath(); ctx.fill();
+      }
+    });
+    drawCourses();
+  }
+
+  /* ribs — 실루엣 두 가닥만 굵게, 나머지 앞면은 가늘게, 뒷면은 유리 너머 */
+  const sil=[-1,-1], sd=[1e9,1e9];
   for(let i=0;i<RIBS;i++){
     const ang=i/RIBS*Math.PI*2;
-    const f=front(ang);
+    [camA+Math.PI/2,camA-Math.PI/2].forEach((t,j)=>{
+      const d=Math.abs((((ang-t)%(Math.PI*2))+Math.PI*3)%(Math.PI*2)-Math.PI);
+      if(d<sd[j]){ sd[j]=d; sil[j]=i; }
+    });
+  }
+  for(let i=0;i<RIBS;i++){
+    const ang=i/RIBS*Math.PI*2;
+    const f=front(ang), sl=(i===sil[0]||i===sil[1]);
     const pts=prof.map(rh=>pt(Math.cos(ang)*rh[0],-rh[1],Math.sin(ang)*rh[0]));
     ctx.beginPath(); pts.forEach((q,k)=>k?ctx.lineTo(q[0],q[1]):ctx.moveTo(q[0],q[1]));
-    const TW=(CURG&&CURG.tw)||{};
-    ctx.strokeStyle = f? (TW.ribF||'rgba(150,228,255,.62)') : (TW.ribB||'rgba(41,168,255,.16)');
-    ctx.lineWidth   = f? 1.1 : .8;
+    ctx.strokeStyle = sl ? (TW.ribS||'rgba(220,236,255,.92)') : f ? (TW.ribF||'rgba(150,228,255,.55)') : (TW.ribB||'rgba(41,168,255,.10)');
+    ctx.lineWidth   = sl ? 1.9 : f ? 1.0 : .6;
     ctx.stroke();
   }
 
   /* rings, split into the arc that faces us and the arc that does not */
+  const RING_H=uni?{6:1,152:1,168:1,200:1,222:1,239:1}:null;
   prof.forEach((rh,pi)=>{
+    if(RING_H&&!RING_H[rh[1]]) return;
     const brand = LH_BANDS.some(b=>(b.m==='blue')&&(b.h0===rh[1]||b.h1===rh[1]));
-    const TW2=(CURG&&CURG.tw)||{};
-    [[true,brand?(TW2.ringBrand||'rgba(120,226,255,.95)'):(TW2.ringF||'rgba(150,228,255,.72)'),1.5],
-     [false,(TW2.ringB||'rgba(41,168,255,.20)'),.9]].forEach(([wantFront,col,lw])=>{
+    [[true,brand?(TW.ringBrand||'rgba(120,226,255,.95)'):(TW.ringF||'rgba(150,228,255,.66)'),1.5],
+     [false,(TW.ringB||'rgba(41,168,255,.14)'),.9]].forEach(([wantFront,col,lw])=>{
       ctx.strokeStyle=col; ctx.lineWidth=lw;
       let run=false;
       for(let i=0;i<=64;i++){
@@ -2038,26 +2167,26 @@ function drawTowerSolid(){
       if(run) ctx.stroke();
     });
     /* pads where a rib meets a ring — the circuit-board tell */
-    if(pi%2===0){
+    if(pi%2===0&&!uni){
       ctx.save(); ctx.globalCompositeOperation='lighter';
       for(let i=0;i<RIBS;i+=2){
         const ang=i/RIBS*Math.PI*2; if(!front(ang)) continue;
         const q=pt(Math.cos(ang)*rh[0],-rh[1],Math.sin(ang)*rh[0]);
         const r=Math.max(.9,1.9*q[2]*cam.zoom);
-        ctx.fillStyle=((CURG&&CURG.tw)||{}).pad||'rgba(190,240,255,.9)';
+        ctx.fillStyle=TW.pad||'rgba(190,240,255,.9)';
         ctx.beginPath(); ctx.arc(q[0],q[1],r,0,Math.PI*2); ctx.fill();
       }
       ctx.restore();
     }
   });
 
-  /* the shaft still carries the logo's window, now as an outline */
+  /* the shaft window — 어느 Galaxy 색 등대에도 창만은 골드 */
   const wa=-Math.PI/2-cam.yaw, h0=74,h1=104,r=27.6,w=0.10;
   const q=[pt(Math.cos(wa-w)*r,-h0,Math.sin(wa-w)*r),pt(Math.cos(wa+w)*r,-h0,Math.sin(wa+w)*r),
            pt(Math.cos(wa+w)*r,-h1,Math.sin(wa+w)*r),pt(Math.cos(wa-w)*r,-h1,Math.sin(wa-w)*r)];
   ctx.beginPath(); q.forEach((v,i)=>i?ctx.lineTo(v[0],v[1]):ctx.moveTo(v[0],v[1])); ctx.closePath();
-  ctx.fillStyle='rgba(255,226,120,.20)'; ctx.fill();
-  ctx.strokeStyle='rgba(255,226,120,.85)'; ctx.lineWidth=1.3; ctx.stroke();
+  ctx.fillStyle='rgba(245,197,24,.28)'; ctx.fill();
+  ctx.strokeStyle='rgba(255,236,160,.9)'; ctx.lineWidth=1.2; ctx.stroke();
 
   ctx.restore();
 }
@@ -2086,26 +2215,42 @@ function drawBookWire(){
   ctx.restore();
 }
 
-/* contact shadow + the pool of light the lamp throws on the floor */
+/* contact shadow + the pool of light the lamp throws on the floor.
+   두 겹 — 바깥은 Galaxy 색 바닥 빛, 안쪽은 램프의 골드 낙광. 브랜드 골드가
+   어느 화면에서나 등대 발치에 있다. */
 function drawGround(){
   const c=pt(0,0,0), k=c[2]*cam.zoom, sq=Math.cos(cam.pitch);
   const AC=ACCENT||[41,168,255];
-  const lite=[Math.round(AC[0]+(255-AC[0])*.25),Math.round(AC[1]+(255-AC[1])*.25),Math.round(AC[2]+(255-AC[2])*.25)];
+  const P=(CURG&&CURG.pal)||{mid:AC,deep:AC};
   ctx.save();
   ctx.globalCompositeOperation='lighter';
   let g=ctx.createRadialGradient(c[0],c[1],0,c[0],c[1],300*k);
-  g.addColorStop(0,RGBA(lite,.16*GDIM));
-  g.addColorStop(.42,RGBA(AC,.05*GDIM));
-  g.addColorStop(1,RGBA(AC,0));
+  g.addColorStop(0,RGBA(P.mid,.12*GDIM));
+  g.addColorStop(.42,RGBA(AC,.04*GDIM));
+  g.addColorStop(1,RGBA(P.deep,0));
   ctx.fillStyle=g;
   ctx.beginPath(); ctx.ellipse(c[0],c[1],300*k,300*k*sq,0,0,Math.PI*2); ctx.fill();
+  g=ctx.createRadialGradient(c[0],c[1],0,c[0],c[1],70*k);
+  g.addColorStop(0,'rgba(255,214,120,'+(.11*GDIM)+')');
+  g.addColorStop(.5,'rgba(255,196,60,'+(.03*GDIM)+')');
+  g.addColorStop(1,'rgba(255,196,60,0)');
+  ctx.fillStyle=g;
+  ctx.beginPath(); ctx.ellipse(c[0],c[1],70*k,70*k*sq,0,0,Math.PI*2); ctx.fill();
+  /* 광주 — 램프에서 발치로 내려오는 빛기둥 */
+  towerUpright=true;
+  const lp=pt(0,-LANTERN,0), fp=pt(0,0,0);
+  towerUpright=false;
+  const lg=ctx.createLinearGradient(lp[0],lp[1],fp[0],fp[1]);
+  lg.addColorStop(0,'rgba(255,230,160,'+(.06*GDIM)+')'); lg.addColorStop(1,'rgba(255,230,160,0)');
+  ctx.strokeStyle=lg; ctx.lineWidth=Math.max(1,12*k); ctx.lineCap='round';
+  ctx.beginPath(); ctx.moveTo(lp[0],lp[1]); ctx.lineTo(fp[0],fp[1]); ctx.stroke();
   ctx.restore();
 }
 
 /* faint masonry courses — a smooth cone reads as plastic */
 function drawCourses(){
   const b=LH_BANDS[1];
-  ctx.save(); ctx.strokeStyle='rgba(120,88,10,.20)'; ctx.lineWidth=1;
+  ctx.save(); ctx.strokeStyle=((CURG&&CURG.tw)||{}).course||'rgba(120,150,200,.18)'; ctx.lineWidth=1;
   for(let c=1;c<9;c++){
     const t=c/9, h=b.h0+(b.h1-b.h0)*t, r=b.r0+(b.r1-b.r0)*t;
     const zc=pt(0,-h,0)[3];
@@ -2120,112 +2265,64 @@ function drawCourses(){
   ctx.restore();
 }
 
-/* the shaft window — kept facing the camera as the lattice spins */
-function drawWindow(){
-  const a=-Math.PI/2-cam.yaw, h0=74, h1=104, r=27.6, w=0.10;
-  const q=[
-    pt(Math.cos(a-w)*r,-h0,Math.sin(a-w)*r),
-    pt(Math.cos(a+w)*r,-h0,Math.sin(a+w)*r),
-    pt(Math.cos(a+w)*r,-h1,Math.sin(a+w)*r),
-    pt(Math.cos(a-w)*r,-h1,Math.sin(a-w)*r),
-  ];
-  ctx.save();
-  ctx.beginPath(); q.forEach((v,i)=>i?ctx.lineTo(v[0],v[1]):ctx.moveTo(v[0],v[1])); ctx.closePath();
-  const wg=ctx.createLinearGradient(q[0][0],q[0][1],q[3][0],q[3][1]);
-  wg.addColorStop(0,'rgba(255,236,168,.96)');
-  wg.addColorStop(1,'rgba(255,206,96,.92)');
-  ctx.fillStyle=wg; ctx.fill();
-  ctx.strokeStyle='rgba(26,26,24,.95)'; ctx.lineWidth=2; ctx.stroke();
-  ctx.restore();
-}
-
-/* the lamp: bloom + the logo's fixed rays */
+/* the lamp — 화면의 유일한 난색 광원. 램프 + 대기 산란 두 겹, 커서가 얹히면 커진다 */
 function drawLamp(){
-  /* The lantern only needs to read as lit. The starburst, the anamorphic
-     streak and the wide amber wash were all glare, and glare is what made
-     the top of the screen yellow. */
-  const c=pt(0,-LANTERN,0), k=c[2]*cam.zoom, R=26*k;
+  const c=pt(0,-LANTERN,0), k=c[2]*cam.zoom, uni=universeMode||k<.5;
+  const hv=(CURG&&CURG.towerHov)||0;
+  const R=(uni?40:32)*k*(1+.4*hv);
   ctx.save(); ctx.globalCompositeOperation='lighter';
+  /* 배경으로 물러난 Galaxy는 램프도 같이 물러나야 한다 */
+  const lm=(.58+Math.sin(T*.05)*.04)*GDIM*(1+.3*hv);
   const g=ctx.createRadialGradient(c[0],c[1],0,c[0],c[1],R);
-  /* 배경으로 물러난 Galaxy는 램프도 같이 물러나야 한다 — 탑만 흐리게 하고
-     램프는 그대로 두었더니, 먼 Galaxy의 등불만 또렷이 떠 있었다. */
-  const lm=(!motionOn?.30:.26+Math.sin(T*0.05)*0.03)*GDIM;
-  g.addColorStop(0,'rgba(226,246,255,'+lm+')');
-  g.addColorStop(.4,'rgba(140,214,255,'+(.10*GDIM)+')');
-  g.addColorStop(1,'rgba(120,200,255,0)');
+  g.addColorStop(0,'rgba(255,244,204,'+lm.toFixed(3)+')');
+  g.addColorStop(.4,'rgba(255,214,110,'+(.16*GDIM).toFixed(3)+')');
+  g.addColorStop(1,'rgba(245,197,24,0)');
   ctx.fillStyle=g; ctx.beginPath(); ctx.arc(c[0],c[1],R,0,Math.PI*2); ctx.fill();
+  const g2=ctx.createRadialGradient(c[0],c[1],0,c[0],c[1],90*k);
+  g2.addColorStop(0,'rgba(245,197,24,'+(.06*GDIM).toFixed(3)+')'); g2.addColorStop(1,'rgba(245,197,24,0)');
+  ctx.fillStyle=g2; ctx.beginPath(); ctx.arc(c[0],c[1],90*k,0,Math.PI*2); ctx.fill();
   ctx.restore();
+  /* 등대 위에 커서 — 기단 아래 'CORE ↺' */
+  if(hv>.02){
+    const f=pt(0,26,0);
+    ctx.save(); ctx.font="600 10px 'Orbitron','Noto Sans',sans-serif"; ctx.textAlign='center'; ctx.textBaseline='top';
+    ctx.globalAlpha=hv*GDIM; ctx.fillStyle=RGBA(GOLD_TXT,1); ctx.fillText('CORE ↺',f[0],f[1]+14); ctx.restore();
+  }
 }
 
-/* the open book the tower stands in */
-function drawBook(){
-  /* Spine points away from the viewer so the pages always splay left and
-     right on screen — an icon has to stay legible as the lattice turns.
-     Thickness is what makes a book read as a book, so the page block and
-     the cover below it are drawn as separate surfaces.                  */
-  const camA=-Math.PI/2-cam.yaw;
-  const sx=Math.cos(camA), sz=Math.sin(camA);
-  const px=Math.cos(camA+Math.PI/2), pz=Math.sin(camA+Math.PI/2);
-  const D=30, WMAX=78, WIN=34, STR=4, THK=9;   /* WIN clears the tower base */
-  const P=(d,w,side,y)=>pt(sx*d+px*side*w, y, sz*d+pz*side*w);
-  ctx.save();
-  [-1,1].forEach(side=>{
-    /* cover: the same footprint dropped by the block thickness */
-    const c=[P(-D,WIN,side,3+THK),P(D,WIN,side,3+THK),P(D*1.4,WMAX,side,-15+THK),P(-D*1.4,WMAX,side,-15+THK)];
-    ctx.beginPath(); c.forEach((v,i)=>i?ctx.lineTo(v[0],v[1]):ctx.moveTo(v[0],v[1])); ctx.closePath();
-    ctx.fillStyle='rgb(24,26,30)'; ctx.fill();
-    ctx.strokeStyle='rgb(24,26,30)'; ctx.lineWidth=1; ctx.stroke();
-
-    /* outer edge of the page block, catching the lamp */
-    const e=[P(-D*1.4,WMAX,side,-15),P(D*1.4,WMAX,side,-15),P(D*1.4,WMAX,side,-15+THK),P(-D*1.4,WMAX,side,-15+THK)];
-    ctx.beginPath(); e.forEach((v,i)=>i?ctx.lineTo(v[0],v[1]):ctx.moveTo(v[0],v[1])); ctx.closePath();
-    ctx.fillStyle='rgb(214,198,168)'; ctx.fill();
-    ctx.strokeStyle='rgb(214,198,168)'; ctx.lineWidth=1; ctx.stroke();
-
-    /* the page surface, curving up toward the fore-edge */
-    for(let k=0;k<STR;k++){
-      const w0=WIN+(WMAX-WIN)*(k/STR), w1=WIN+(WMAX-WIN)*((k+1)/STR);
-      const y0=3-18*Math.pow(k/STR,1.5), y1=3-18*Math.pow((k+1)/STR,1.5);
-      const d0=D*(1+0.13*k), d1=D*(1+0.13*(k+1));
-      const q=[P(-d0,w0,side,y0),P(d0,w0,side,y0),P(d1,w1,side,y1),P(-d1,w1,side,y1)];
-      const t=k/STR;
-      ctx.beginPath(); q.forEach((v,i)=>i?ctx.lineTo(v[0],v[1]):ctx.moveTo(v[0],v[1])); ctx.closePath();
-      const sh=0.70+0.30*t;                       /* the crease sits in shadow */
-      ctx.fillStyle='rgb('+(238*sh|0)+','+(230*sh|0)+','+(210*sh|0)+')';
-      ctx.fill(); ctx.strokeStyle=ctx.fillStyle; ctx.lineWidth=1; ctx.stroke();
-    }
-    /* a couple of ruled lines so it reads as a page, not a ramp */
-    ctx.strokeStyle='rgba(120,124,130,.34)'; ctx.lineWidth=1;
-    [0.42,0.62,0.82].forEach(f=>{
-      const y=3-18*Math.pow(f,1.5), d=D*(1+0.13*f*STR);
-      const p0=P(-d*0.8,WIN+(WMAX-WIN)*f,side,y), p1=P(d*0.8,WIN+(WMAX-WIN)*f,side,y);
-      ctx.beginPath(); ctx.moveTo(p0[0],p0[1]); ctx.lineTo(p1[0],p1[1]); ctx.stroke();
-    });
-  });
-  ctx.restore();
-}
-
-/* two opposed beams sweeping the lattice */
+/* two opposed volumetric beams — 3겹 웨지(반각 .05/.08/.11 rad · α .10/.06/.04) 위에
+   전개된 활성 Galaxy 에서만 광선 24가닥. 이 상한을 넘기지 말 것 — 조금만 세면 게임 타이틀이 된다.
+   정지(모션 정지)여도 빔은 서 있다. */
 function drawBeams(){
-  if(!motionOn) return;
-  const a0=T*0.0068;
-  ctx.save(); ctx.globalCompositeOperation='lighter'; ctx.lineCap='round';
+  if(GDIM<1||QUALITY===0) return;
+  const a0 = motionOn ? T*0.0052 : 0.6;
+  const reach=380+Math.sin(T*.01)*50, p0=pt(0,-LANTERN,0);
+  const rays = !universeMode && galaxyAmt>.5 && QUALITY===2;
+  const wedge=[[.05,.10],[.08,.06],[.11,.04]];
+  ctx.save(); ctx.globalCompositeOperation='lighter';
   for(let b=0;b<2;b++){
     const base=a0+b*Math.PI;
-    for(let i=0;i<30;i++){
-      const off=(i/29-0.5)*0.21;
-      const fade=Math.max(0,1-Math.abs(off)/0.105);
-      if(fade<=0.02) continue;
-      const a=base+off;
-      const reach=520+Math.sin(i*2.7+T*0.01)*70;
-      const p0=pt(Math.cos(a)*24,-LANTERN,Math.sin(a)*24);
-      const p1=pt(Math.cos(a)*reach,-LANTERN*0.66,Math.sin(a)*reach);
-      const g=ctx.createLinearGradient(p0[0],p0[1],p1[0],p1[1]);
-      g.addColorStop(0,'rgba(255,230,150,'+(0.19*fade*fade)+')');
-      g.addColorStop(.45,'rgba(255,206,72,'+(0.07*fade)+')');
-      g.addColorStop(1,'rgba(255,196,40,0)');
-      ctx.strokeStyle=g; ctx.lineWidth=1+fade*2.6;
-      ctx.beginPath(); ctx.moveTo(p0[0],p0[1]); ctx.lineTo(p1[0],p1[1]); ctx.stroke();
+    wedge.forEach(([ha,al])=>{
+      const p1=pt(Math.cos(base-ha)*reach,-LANTERN*.66,Math.sin(base-ha)*reach);
+      const p2=pt(Math.cos(base+ha)*reach,-LANTERN*.66,Math.sin(base+ha)*reach);
+      const rad=Math.max(1,Math.hypot(p1[0]-p0[0],p1[1]-p0[1]),Math.hypot(p2[0]-p0[0],p2[1]-p0[1]));
+      const g=ctx.createRadialGradient(p0[0],p0[1],0,p0[0],p0[1],rad);
+      const a=al*GDIM*(universeMode?.6:1);
+      g.addColorStop(0,'rgba(255,244,204,'+a.toFixed(3)+')');
+      g.addColorStop(.5,'rgba(245,197,24,'+(a*.35).toFixed(3)+')');
+      g.addColorStop(1,'rgba(245,197,24,0)');
+      ctx.fillStyle=g; ctx.beginPath(); ctx.moveTo(p0[0],p0[1]); ctx.lineTo(p1[0],p1[1]); ctx.lineTo(p2[0],p2[1]); ctx.closePath(); ctx.fill();
+    });
+    if(rays) for(let i=0;i<24;i++){
+      const off=(i/23-.5)*.21, fade=Math.max(0,1-Math.abs(off)/.105); if(fade<=.02) continue;
+      const a=base+off, r2=reach+Math.sin(i*2.7+T*.01)*40;
+      const q0=pt(Math.cos(a)*24,-LANTERN,Math.sin(a)*24), q1=pt(Math.cos(a)*r2,-LANTERN*.66,Math.sin(a)*r2);
+      const g=ctx.createLinearGradient(q0[0],q0[1],q1[0],q1[1]);
+      g.addColorStop(0,'rgba(255,244,204,'+(.10*fade*fade).toFixed(3)+')');
+      g.addColorStop(.45,'rgba(245,197,24,'+(.045*fade).toFixed(3)+')');
+      g.addColorStop(1,'rgba(245,197,24,0)');
+      ctx.strokeStyle=g; ctx.lineWidth=1+fade*1.6; ctx.lineCap='round';
+      ctx.beginPath(); ctx.moveTo(q0[0],q0[1]); ctx.lineTo(q1[0],q1[1]); ctx.stroke();
     }
   }
   ctx.restore();
@@ -2254,53 +2351,63 @@ function npAnchor(g){
 function drawNameplates(){
   /* 파고든 화면에서는 지금 보는 Galaxy의 이름판만 남긴다. 배경 Galaxy의 이름판은
      제 Galaxy가 화면 밖이나 왼쪽 패널 뒤에 있어도 그려져서, 커다란 활자가
-     '…AR' '…AB' 같은 조각으로 잘려 보였다. 다른 Galaxy로 가는 문은 머리띠의
-     UNIVERSE·GRAMMAR·READING·VOCAB 가 이미 맡고 있다. */
+     '…AR' '…AB' 같은 조각으로 잘려 보였다. 다른 Galaxy로 가는 문은 머리띠가 맡는다. */
   const shown=GALAXIES.filter(g=>universeMode||g===ACTIVE);
   GALAXIES.forEach(g=>{ if(shown.indexOf(g)<0) g.plateRect=null; });
   const list=shown.map(g=>({g:g,q:npAnchor(g)})).sort((a,b)=>b.q[3]-a.q[3]);
   list.forEach(o=>{
     const g=o.g, x=o.q[0], y=o.q[1], k=o.q[2], z=o.q[3];
-    const zz=k*cam.zoom, AC=g.accent;
+    const zz=k*cam.zoom, AC=g.accent, hv=g.hovAmt||0;
     const active=(g===ACTIVE&&!universeMode);
-    const hov=(plateHover===g);
-    const px=Math.max(12.5,Math.min(34,(universeMode?60:46)*zz));
-    const a=(active?0.98: universeMode?0.94:0.55)*(hov?1.06:0.94)*fog(z);
+    const px=universeMode?Math.max(14,Math.min(28,60*zz)):Math.max(14,Math.min(30,46*zz));
+    const a=(active?0.98: universeMode?0.94:0.40)*(.94+.06*hv)*fog(z);
     if(a<=0.03) { g.plateRect=null; return; }
-    const pale=[Math.round(AC[0]+(255-AC[0])*.68),Math.round(AC[1]+(255-AC[1])*.68),Math.round(AC[2]+(255-AC[2])*.68)];
+    const fillC=mxc3(AC,[255,255,255],.55);       /* 색 글자 — 흰 덧칠 없음 */
     ctx.save();
     ctx.textAlign='center'; ctx.textBaseline='alphabetic';
-    const f='700 '+px.toFixed(1)+"px 'Orbitron','Noto Sans KR',sans-serif";
-    ctx.font=f;
-    try{ ctx.letterSpacing=(px*0.20).toFixed(1)+'px'; }catch(e){}
+    ctx.font='600 '+px.toFixed(1)+"px 'Orbitron','Noto Sans',sans-serif";
+    try{ ctx.letterSpacing=(px*0.14).toFixed(1)+'px'; }catch(e){}
     const t=g.name;
     const w=ctx.measureText(t).width;
-    /* 이름은 두 번 — Galaxy색 후광 한 번, 흰 심 한 번 */
     ctx.globalAlpha=Math.min(1,a);
-    ctx.shadowColor=RGBA(AC,.9); ctx.shadowBlur=Math.max(9,px*0.85);
-    ctx.fillStyle=RGBA(pale,.96);
+    ctx.shadowColor=RGBA(AC,.55); ctx.shadowBlur=Math.min(px*.6,14);
+    ctx.fillStyle=RGBA(fillC,.98);
     ctx.fillText(t,x,y);
     ctx.shadowBlur=0;
-    ctx.fillStyle='rgba(255,255,255,.90)';
     ctx.fillText(t,x,y);
-    /* 이름 아래 가는 규칙선 하나와 한글 꼬리표 */
-    const ry=y+px*0.42;
-    ctx.strokeStyle=RGBA(AC,.55); ctx.lineWidth=Math.max(.7,px*0.045);
-    ctx.beginPath(); ctx.moveTo(x-w/2,ry); ctx.lineTo(x+w/2,ry); ctx.stroke();
-    try{ ctx.letterSpacing='1px'; }catch(e){}
-    ctx.font='500 '+Math.max(8,px*0.33).toFixed(1)+"px 'Noto Sans KR','Noto Sans',sans-serif";
-    ctx.fillStyle='rgba(202,226,242,.88)';
-    ctx.fillText(g.kr+' · '+g.tagline, x, ry+px*0.52);
-    /* 등대 꼭대기로 내려가는 실 한 가닥 — 이름과 탑을 잇는다 */
-    const tipK=GOFF, kx=GOFF.x,ky=GOFF.y,kz=GOFF.z;
+    /* 규칙선 — 중앙 w*.6, hover 에 조금 길어진다 */
+    const ry=y+px*0.42, rw=w*.6+18*hv;
+    ctx.strokeStyle=RGBA(AC,.8); ctx.lineWidth=1;
+    ctx.beginPath(); ctx.moveTo(x-rw/2,ry); ctx.lineTo(x+rw/2,ry); ctx.stroke();
+    /* 꼬리표 — 한글은 Noto, 트래킹 0, 10.5px 이상. 우주에서는 kr 만,
+       tagline 은 hover 나 활성 Galaxy 에서 둘째 줄. hover 꼬리표는 골드(문 = 골드) */
+    try{ ctx.letterSpacing='0px'; }catch(e){}
+    const tp=Math.max(10.5,px*.36);
+    ctx.font='500 '+tp.toFixed(1)+"px 'Noto Sans KR','Noto Sans',sans-serif";
+    ctx.fillStyle= hv>.5 ? RGBA(GOLD_TXT,1) : 'rgba(214,232,246,.94)';
+    const ty=ry+tp*1.15;
+    ctx.fillText(g.kr, x, ty);
+    const t2=active?1:hv;
+    let bottom=ty;
+    if(t2>.02){
+      ctx.globalAlpha=Math.min(1,a)*t2;
+      ctx.fillStyle='rgba(214,232,246,.94)';
+      ctx.fillText(g.tagline, x, ty+tp*1.35);
+      bottom=ty+tp*1.35;
+      ctx.globalAlpha=Math.min(1,a);
+    }
+    /* 등대 꼭대기로 내려가는 실 한 가닥 — 이름판 .28 → 탑 0 */
+    const kx=GOFF.x,ky=GOFF.y,kz=GOFF.z;
     setGOFF(g);
     towerUpright=true; const tip=pt(0,-252,0); towerUpright=false;
     GOFF.x=kx; GOFF.y=ky; GOFF.z=kz;
-    ctx.strokeStyle=RGBA(AC,.30); ctx.lineWidth=.8;
-    ctx.beginPath(); ctx.moveTo(x,ry+px*0.72); ctx.lineTo(tip[0],tip[1]); ctx.stroke();
+    const lg=ctx.createLinearGradient(x,bottom+6,tip[0],tip[1]);
+    lg.addColorStop(0,RGBA(AC,.28)); lg.addColorStop(1,RGBA(AC,0));
+    ctx.strokeStyle=lg; ctx.lineWidth=.7;
+    ctx.beginPath(); ctx.moveTo(x,bottom+6); ctx.lineTo(tip[0],tip[1]); ctx.stroke();
     ctx.restore();
     try{ ctx.letterSpacing='0px'; }catch(e){}
-    g.plateRect={x:x-w/2-20, y:y-px-14, w:w+40, h:px+px*0.95+30};
+    g.plateRect={x:x-w/2-20, y:y-px-14, w:w+40, h:(bottom-y)+px+30};
   });
 }
 function drawNodes(){
@@ -2308,49 +2415,57 @@ function drawNodes(){
   const list=live.filter(n=>n.kind!=='core'&&n.vis>=.02)
                  .map(n=>({n:n,s:toScreen(n)}))
                  .sort((a,b)=>b.s[3]-a.s[3]);          /* far first */
+  const P=(CURG&&CURG.pal)||{pale:[220,236,255],deep:[20,40,70]};
+  const WH=[255,255,255], gx=galaxyAmt, tgt=P.pale;
+  const mixS=(c)=>[
+    Math.round(c[0]+(tgt[0]-c[0])*gx*.40),
+    Math.round(c[1]+(tgt[1]-c[1])*gx*.40),
+    Math.round(c[2]+(tgt[2]-c[2])*gx*.40)];
   list.forEach(o=>{
     const n=o.n, [x,y,k,z]=o.s, st=nodeStyle(n);
-    const f=fog(z), dm=(n.dim==null?1:n.dim);
-    const R=st.rad*k*cam.zoom*(hover===n?1.3:1);
-    const A=n.vis*dm*f*GDIM;
     /* a textbook draws as its cover — a disc under it only collided with
        the neighbouring covers and hid the class name */
     if(n.kind==='book') return;
+    /* 우주에서는 chap 별만 — 원반은 먼지와 헤일로가 만든다 */
+    if(universeMode&&n.kind==='item') return;
+    const f=fog(z), dm=(n.dim==null?1:n.dim), hv=n.hov||0;
+    const R=st.rad*Math.pow(k,1.35)*cam.zoom*(1+.4*hv);
+    const A=n.vis*dm*f*GDIM;
 
-    /* A node is a star, not a bead: a white core inside its own colour,
-       a soft halo, and a diffraction cross. Nothing is outlined — rings and
-       bezels are what made these look like buttons. */
+    /* A node is a star, not a bead: a pale core inside its own colour,
+       a soft halo, and (for the ones that matter) a diffraction cross.
+       Galaxy 색이 남는다 — 전체 전개에서도 은회색으로 바래지 않는다. */
     const on2=isOnPath(n), gg=gradeOf(n);
-    const gx=galaxyAmt, mixS=(c)=>[
-      Math.round(c[0]+(SILVER.hot[0]-c[0])*gx*.72),
-      Math.round(c[1]+(SILVER.hot[1]-c[1])*gx*.72),
-      Math.round(c[2]+(SILVER.hot[2]-c[2])*gx*.72)];
-    const col = on2 ? YEL : mixS(gg.hot);
+    let col = on2 ? YEL : mixS(gg.hot);
+    if(!on2) col=mxc3(col,P.deep,(1-f)*.7);        /* 깊이 색이동 — 먼 별은 어두운 Galaxy 색으로 */
 
     /* how brightly this one burns */
-    let mag = 1;
-    if(n.kind==='item') mag = (n.payload&&DATA.worksheets[n.payload.id]) ? 1 : .42;
-    else if(!n.children.length) mag = .6;
-    if(on2) mag = 1.35;
-    if(hover===n) mag *= 1.3;
-    /* a slow, per-node twinkle so a field of them is never static */
-    if(motionOn) mag *= 0.90+0.10*Math.sin(T*0.021+n.uid*1.7);
+    let mag=1;
+    if(n.kind==='item') mag=(n.payload&&DATA.worksheets[n.payload.id]) ? .45+hash01(n.uid*.37)*.40 : .30;
+    else if(n.kind==='chap') mag=n.children.length?.85:.6;
+    if(on2) mag=1.35;
+    if(universeMode&&n.kind==='chap') mag*=.7;
+    mag*=1+.45*hv;
+    /* a slow, per-node twinkle so a field of them is never static — hover 는 흔들리지 않는다 */
+    if(motionOn) mag*=(0.92+0.08*Math.sin(T*0.021+n.uid*1.7))*(1-hv)+hv;
 
     const S=R*(on2?1.25:1), aa=A*Math.min(1,mag);
     ctx.save();
     ctx.globalCompositeOperation='lighter';
 
     /* halo */
-    const h1=ctx.createRadialGradient(x,y,0,x,y,S*3.0);
-    h1.addColorStop(0,RGBA(col,.30*mag));
-    h1.addColorStop(.32,RGBA(col,.10*mag));
+    const HR=S*(z<0?3.6:2.6);
+    const h1=ctx.createRadialGradient(x,y,0,x,y,HR);
+    h1.addColorStop(0,RGBA(col,.18*mag));
+    h1.addColorStop(.32,RGBA(col,.06*mag));
     h1.addColorStop(1,RGBA(col,0));
     ctx.globalAlpha=aa; ctx.fillStyle=h1;
-    ctx.beginPath(); ctx.arc(x,y,S*3.0,0,Math.PI*2); ctx.fill();
+    ctx.beginPath(); ctx.arc(x,y,HR,0,Math.PI*2); ctx.fill();
 
-    /* the burning body */
+    /* the burning body — 순백은 고른 것과 hover 뿐 */
+    const white=on2||hv>.5;
     const h2=ctx.createRadialGradient(x,y,0,x,y,S*1.05);
-    h2.addColorStop(0,'rgba(255,255,255,'+(0.98*Math.min(1,mag))+')');
+    h2.addColorStop(0, white ? 'rgba(255,255,255,'+(0.98*Math.min(1,mag))+')' : RGBA(mxc3(col,WH,.38),.72*Math.min(1,mag)));
     h2.addColorStop(.28,RGBA(col,.92*Math.min(1,mag)));
     h2.addColorStop(.62,RGBA(col,.34*mag));
     h2.addColorStop(1,RGBA(col,0));
@@ -2358,16 +2473,17 @@ function drawNodes(){
     ctx.beginPath(); ctx.arc(x,y,S*1.05,0,Math.PI*2); ctx.fill();
 
     /* diffraction cross — what makes a point of light read as a star */
-    if(mag>.5){
-      const L=S*(on2?4.6:3.4)*Math.min(1.4,mag), lw=Math.max(.6,S*.11);
+    if(!universeMode && ((n.kind!=='item'&&mag>.7)||on2||hv>.3)){
+      const L=S*(on2?4.6:2.8)*Math.min(1.4,mag), lw=Math.max(.6,S*.11);
       const arms=on2?[0,Math.PI/2,Math.PI/4,-Math.PI/4]:[0,Math.PI/2];
+      const cc=RGBA(mxc3(col,WH,.7),.34);
       ctx.lineCap='round';
       arms.forEach((an,i)=>{
         const l=i<2?L:L*.52;
         const dx=Math.cos(an)*l, dy=Math.sin(an)*l;
         const lg=ctx.createLinearGradient(x-dx,y-dy,x+dx,y+dy);
         lg.addColorStop(0,RGBA(col,0));
-        lg.addColorStop(.5,'rgba(255,255,255,'+(0.42*Math.min(1,mag))+')');
+        lg.addColorStop(.5,cc);
         lg.addColorStop(1,RGBA(col,0));
         ctx.strokeStyle=lg; ctx.lineWidth=i<2?lw:lw*.62;
         ctx.beginPath(); ctx.moveTo(x-dx,y-dy); ctx.lineTo(x+dx,y+dy); ctx.stroke();
@@ -2413,16 +2529,16 @@ function fitText(g,t,max,weight,start,floor){
 }
 function finishPlate(g,cv2,b,A){
   g.restore();
-  g.globalAlpha=.5; g.fillStyle=RGBA(A,.07);
+  g.globalAlpha=.25; g.fillStyle=RGBA(A,.05);
   for(let y=0;y<PH;y+=3) g.fillRect(0,y,PW,1);
   g.globalAlpha=1;
   let sh=g.createLinearGradient(0,PH,PW,0);
   sh.addColorStop(0,'rgba(255,255,255,0)');
-  sh.addColorStop(.46,'rgba(255,255,255,.28)');
+  sh.addColorStop(.46,'rgba(255,255,255,.14)');
   sh.addColorStop(.54,'rgba(255,255,255,0)');
   g.fillStyle=sh; g.fillRect(0,0,PW,PH);
-  rrect(g,.75,.75,PW-1.5,PH-1.5,7);
-  g.strokeStyle=RGBA(A,.75); g.lineWidth=1.5; g.stroke();
+  rrect(g,.5,.5,PW-1,PH-1,7);
+  g.strokeStyle='rgba(255,255,255,.22)'; g.lineWidth=1; g.stroke();
   PLATE[b.id]=cv2;
   return cv2;
 }
@@ -2439,17 +2555,8 @@ function coverPlate(b){
   if(photo){
     g.save(); rrect(g,0,0,PW,PH,7); g.clip();
     g.drawImage(photo,0,0,PW,PH);
-    /* the same holographic pass the drawn plates get, but lighter — the
-       cover has to stay readable as a cover */
-    g.globalAlpha=.34; g.fillStyle=RGBA(A,.09);
-    for(let y=0;y<PH;y+=3) g.fillRect(0,y,PW,1);
-    g.globalAlpha=1;
-    let ph=g.createLinearGradient(0,PH,PW,0);
-    ph.addColorStop(0,'rgba(255,255,255,0)');
-    ph.addColorStop(.47,'rgba(255,255,255,.08)');
-    ph.addColorStop(.55,'rgba(255,255,255,0)');
-    g.fillStyle=ph; g.fillRect(0,0,PW,PH);
-    /* the scene is dark; an unshaded cover floats. A corner falloff and a
+    /* 사진 표지에는 스캔라인도 시인도 없다 — 표지는 표지로 읽혀야 한다.
+       the scene is dark; an unshaded cover floats. A corner falloff and a
        deep top edge give it a light source and sit it in the frame. */
     let vg=g.createRadialGradient(PW*.42,PH*.36,PH*.18,PW*.5,PH*.5,PH*.78);
     vg.addColorStop(0,'rgba(4,14,26,0)');
@@ -2459,8 +2566,8 @@ function coverPlate(b){
     tg.addColorStop(0,'rgba(4,14,26,.22)'); tg.addColorStop(1,'rgba(4,14,26,0)');
     g.fillStyle=tg; g.fillRect(0,0,PW,PH*.3);
     g.restore();
-    rrect(g,.75,.75,PW-1.5,PH-1.5,7);
-    g.strokeStyle=RGBA(A,.8); g.lineWidth=1.5; g.stroke();
+    rrect(g,.5,.5,PW-1,PH-1,7);
+    g.strokeStyle='rgba(255,255,255,.22)'; g.lineWidth=1; g.stroke();
     PLATE[b.id]=cv2;
     return cv2;
   }
@@ -2889,21 +2996,21 @@ function coverPlate(b){
   g.fillStyle='rgba(70,102,132,.9)';
   g.fillText(b.publisher||'',mx,PH-22);
 
-  /* holographic pass — thin scanlines and a diagonal sheen */
-  g.globalAlpha=.5;
-  g.fillStyle=RGBA(A,.07);
+  /* holographic pass — thin scanlines and a diagonal sheen, both halved */
+  g.globalAlpha=.25;
+  g.fillStyle=RGBA(A,.05);
   for(let y=0;y<PH;y+=3) g.fillRect(0,y,PW,1);
   g.globalAlpha=1;
   let sh=g.createLinearGradient(0,PH,PW,0);
   sh.addColorStop(0,'rgba(255,255,255,0)');
-  sh.addColorStop(.46,'rgba(255,255,255,.34)');
+  sh.addColorStop(.46,'rgba(255,255,255,.16)');
   sh.addColorStop(.54,'rgba(255,255,255,0)');
   g.fillStyle=sh; g.fillRect(0,0,PW,PH);
   g.restore();
 
   /* edge */
-  rrect(g,.75,.75,PW-1.5,PH-1.5,7);
-  g.strokeStyle=RGBA(A,.75); g.lineWidth=1.5; g.stroke();
+  rrect(g,.5,.5,PW-1,PH-1,7);
+  g.strokeStyle='rgba(255,255,255,.22)'; g.lineWidth=1; g.stroke();
   PLATE[b.id]=cv2;
   return cv2;
 }
@@ -2928,7 +3035,7 @@ function drawCovers(){
        재야 실제로 겹치는지 알 수 있다. */
     const sel0=isOnPath(o.n), zz0=o.s[2]*cam.zoom;
     const hN=Math.min(sel0?188:126,(sel0?112:75)*zz0);
-    o.cy=Math.max(hN/2+10,Math.min(H-hN/2-10,o.s[1]));
+    o.cy=Math.max(hN/2+10,Math.min(H-hN/2-10,o.s[1]))-6*(o.n.hov||0);   /* hover 리프트도 재는 자리에 같이 */
   });
   list.forEach((o,i)=>{
     let d=1e9;
@@ -2951,13 +3058,13 @@ function drawCovers(){
     const zz0=o.s[2]*cam.zoom;
     uniW=Math.min(uniW, Math.min(126*PW/PH, 75*zz0*PW/PH), o.cap);
   });
-  uniW=Math.max(34,uniW);
+  uniW=Math.max(live.length<60?64:34,uniW);       /* 성긴 Galaxy 의 한두 권은 넉넉히 */
   /* 최소 크기 34px 를 지키느라 더는 깎지 못하는 자리가 있다 — 고리 뒤쪽에서
      두 권이 화면상 거의 같은 점에 오는 때다. 그러면 폭을 줄이는 대신 뒤엣것을
      흐려 보낸다: 포개진 표지 두 장은 지도가 아니고, 알아볼 수 없이 작은 표지도
      지도가 아니다. 회전하다 스쳐 지나는 순간이라 깜빡 꺼지지 않게 서서히
      사라진다 — 별과 이름표는 그대로 남으니 권이 지도에서 없어지지는 않는다. */
-  const wOf=o=>uniW*(isOnPath(o.n)?1.5:hover===o.n?1.14:1);
+  const wOf=o=>uniW*(isOnPath(o.n)?1.5:1+.22*(o.n.hov||0));   /* 재는 자리와 그리는 자리에 같은 식 */
   const front=list.slice().reverse();     /* 앞에 있는 표지부터 자리를 잡는다 */
   front.forEach((o,i)=>{
     const w=wOf(o), h=w*PH/PW;
@@ -2974,22 +3081,22 @@ function drawCovers(){
     }
     o.fade=f;
   });
+  const AC=ACCENT||[41,168,255];
+  towerUpright=true; const lampP=pt(0,-LANTERN,0); towerUpright=false;
   list.forEach(o=>{
     const n=o.n, [x,y,k,z]=o.s;
     const zz=k*cam.zoom;
     if(zz<.3) return;
-    const st=nodeStyle(n), R=st.rad*k*cam.zoom;
     const gr=GRADE[n.payload.id]||GDEF;
-    const sel=isOnPath(n);
+    const sel=isOnPath(n), hov=n.hov||0;
     /* the chosen book steps forward: larger, at full strength, while the
        rest fall back — otherwise ten covers all shout at once */
     const A=n.vis*(n.dim==null?1:n.dim)*fog(z)*crowd
             *Math.min(1,(zz-.3)/.22)*(o.fade==null?1:o.fade)
-            *(sel?1 : hover===n?.95 : anySel?.5 : .9);
+            *(sel?1 : anySel?.5 : .9+.1*hov);
     if(A<=.02) return;
     /* 고른 크기를 쓰되, 고른 것과 커서가 얹힌 것만 앞으로 한 걸음 나온다 */
-    let w=uniW*(sel?1.5:hover===n?1.14:1);
-    let h=w*PH/PW;
+    const w=wOf(o), h=w*PH/PW;
     /* 간격을 잴 때 쓴 바로 그 세로 위치를 그대로 쓴다 — 재는 자리와 그리는
        자리가 어긋나면 그 차이만큼 표지가 다시 겹친다. */
     const cy=o.cy;
@@ -2997,25 +3104,44 @@ function drawCovers(){
     ctx.save();
     ctx.globalAlpha=A;
 
-    /* halo, so the plate sits in the light rather than on top of it */
-    const hg=ctx.createRadialGradient(x,cy,0,x,cy,w*(sel?1.35:1.15));
-    hg.addColorStop(0,sel?RGBA(YEL,.34):RGBA(gr.base,hover===n?.3:.16));
-    hg.addColorStop(1,sel?RGBA(YEL,0):RGBA(gr.base,0));
-    ctx.fillStyle=hg; ctx.beginPath(); ctx.arc(x,cy,w*(sel?1.35:1.15),0,Math.PI*2); ctx.fill();
+    /* 어두운 빈터 — 별과 강물이 표지 가장자리를 뚫고 나오지 않는다 */
+    const cg=ctx.createRadialGradient(x,cy,0,x,cy,w*1.25);
+    cg.addColorStop(0,'rgba(4,11,23,.62)'); cg.addColorStop(1,'rgba(4,11,23,0)');
+    ctx.fillStyle=cg; ctx.beginPath(); ctx.arc(x,cy,w*1.25,0,Math.PI*2); ctx.fill();
+    /* halo — Galaxy 색, 고른 것은 골드 */
+    const hr=w*(sel?1.5:1.6);
+    const hg=ctx.createRadialGradient(x,cy,0,x,cy,hr);
+    hg.addColorStop(0,sel?RGBA(YEL,.30):RGBA(AC,.10+.06*hov));
+    hg.addColorStop(1,sel?RGBA(YEL,0):RGBA(AC,0));
+    ctx.fillStyle=hg; ctx.beginPath(); ctx.arc(x,cy,hr,0,Math.PI*2); ctx.fill();
 
-    /* contact shadow */
-    ctx.globalAlpha=A*.4; ctx.fillStyle='rgba(0,8,18,.85)';
-    ctx.beginPath(); ctx.ellipse(x,cy+h/2+3,w*.42,h*.045,0,0,Math.PI*2); ctx.fill();
-
-    ctx.globalAlpha=A;
-    ctx.shadowColor=sel?RGBA(YEL,.6):RGBA(gr.base,.45);
-    ctx.shadowBlur=sel?26:(hover===n?18:8);
+    /* the plate, with a real drop shadow — 등대 불빛 아래 놓인 판.
+       먼 것은 옅게 바래고, 다른 책을 고른 동안 나머지는 한 걸음 물러난다 */
+    ctx.shadowColor=sel?RGBA(YEL,.6):'rgba(0,8,18,.6)';
+    ctx.shadowBlur=sel?26:14+10*hov;
+    ctx.shadowOffsetY=sel?0:6;
+    try{ ctx.filter=(anySel&&!sel)?'saturate(.5) brightness(.8)':'saturate('+(.6+.4*fog(z)).toFixed(2)+')'; }catch(e){}
     n.plate={x:x-w/2,y:cy-h/2,w:w,h:h};      /* the cover is a click target */
     ctx.drawImage(plate,x-w/2,cy-h/2,w,h);
-    ctx.shadowBlur=0;
-    /* class / band strip along the foot of the cover */
-    if(n.sub){
+    try{ ctx.filter='none'; }catch(e){}
+    ctx.shadowBlur=0; ctx.shadowOffsetY=0; ctx.shadowColor='rgba(0,0,0,0)';
+
+    /* 윗변 하이라이트 + 램프를 향한 변의 골드 림 — 표지가 등대 빛에 앉는다 */
+    const x0=x-w/2, y0=cy-h/2;
+    ctx.lineWidth=1;
+    ctx.strokeStyle='rgba(255,255,255,.18)';
+    ctx.beginPath(); ctx.moveTo(x0+3,y0+.5); ctx.lineTo(x0+w-3,y0+.5); ctx.stroke();
+    const ldx=lampP[0]-x, ldy=lampP[1]-cy;
+    ctx.strokeStyle='rgba(255,214,120,'+(.28*fog(z)).toFixed(3)+')';
+    ctx.beginPath();
+    if(Math.abs(ldx)>Math.abs(ldy)*1.2){ const ex=ldx>0?x0+w-.5:x0+.5; ctx.moveTo(ex,y0+4); ctx.lineTo(ex,y0+h-4); }
+    else { const ey=ldy>0?y0+h-.5:y0+.5; ctx.moveTo(x0+4,ey); ctx.lineTo(x0+w-4,ey); }
+    ctx.stroke();
+
+    /* class / band strip along the foot of the cover — 읽힐 크기일 때만 */
+    if(n.sub && w>=80){
       const bh2=Math.max(10,h*.125), by=cy+h/2-bh2;
+      const sub=w<112?String(n.sub).split(' · ')[0]:n.sub;
       ctx.save();
       ctx.fillStyle='rgba(5,14,26,.80)';
       ctx.fillRect(x-w/2,by,w,bh2);
@@ -3023,15 +3149,13 @@ function drawCovers(){
       ctx.fillRect(x-w/2,by,w,1.1);
       let fs=bh2*.62;
       ctx.textAlign='center'; ctx.textBaseline='middle';
-      for(;fs>4;fs-=.5){
-        ctx.font='600 '+fs.toFixed(1)+'px "Noto Sans Mono",monospace';
-        if(ctx.measureText(n.sub).width<=w-10) break;
+      for(;fs>9;fs-=.5){
+        ctx.font='600 '+fs.toFixed(1)+'px "Noto Sans","Noto Sans KR",sans-serif';
+        if(ctx.measureText(sub).width<=w-10) break;
       }
-      const sgd=ctx.createLinearGradient(x,by,x,by+bh2);
-      sgd.addColorStop(0,'rgba(248,252,255,.99)');
-      sgd.addColorStop(1,'rgba(176,196,220,.95)');
-      ctx.fillStyle=sgd;
-      ctx.fillText(n.sub,x,by+bh2/2+.5);
+      ctx.font='600 '+Math.max(9,fs).toFixed(1)+'px "Noto Sans","Noto Sans KR",sans-serif';
+      ctx.fillStyle='rgba(240,247,255,.97)';
+      ctx.fillText(sub,x,by+bh2/2+.5);
       ctx.restore();
     }
     if(sel){                                  /* a gold frame marks the choice */
@@ -3039,77 +3163,153 @@ function drawCovers(){
       rrect(ctx,x-w/2-3,cy-h/2-3,w+6,h+6,9); ctx.stroke();
       ctx.strokeStyle=RGBA(YEL,.28); ctx.lineWidth=1;
       rrect(ctx,x-w/2-7,cy-h/2-7,w+14,h+14,12); ctx.stroke();
+    } else if(hov>.02){
+      /* hover — 골드 헤어라인과 제목 태그가 lerp 로 떠오른다 */
+      ctx.globalAlpha=A*hov;
+      ctx.strokeStyle='rgba(245,197,24,.7)'; ctx.lineWidth=1;
+      rrect(ctx,x-w/2-2,cy-h/2-2,w+4,h+4,8); ctx.stroke();
+      const bk=n.payload, tag=(bk.short||bk.title)+(bk.band?' · '+bk.band:'');
+      ctx.font="500 11px 'Noto Sans KR','Noto Sans',sans-serif"; ctx.textAlign='center'; ctx.textBaseline='middle';
+      const tw=ctx.measureText(tag).width+16, ty=cy+h/2+8+hov*4;
+      ctx.fillStyle='rgba(6,16,27,.92)'; rrect(ctx,x-tw/2,ty,tw,20,3); ctx.fill();
+      ctx.fillStyle='rgba(245,197,24,.9)'; ctx.fillRect(x-tw/2+4,ty+19,tw-8,1);
+      ctx.fillStyle='#fff'; ctx.fillText(tag,x,ty+10);
     }
     ctx.restore();
   });
 }
 
-/* Orbitron carries the Latin and the numerals; Hangul falls through to Noto
-   in the same stack, so 'CH 8.' is technical and 관계사 stays readable. */
-const NODEF="'Orbitron','Noto Sans KR',sans-serif";
+/* Labels are Noto, horizontal, on a short leader — never rotated. The code
+   run ('CH 8', 'WEEK 12') is set a touch heavier and tracked; the title runs
+   plain. A 3px knockout stroke keeps them legible over the brightest lattice. */
+const NODEF="'Noto Sans','Noto Sans KR',system-ui,sans-serif";
 function labelFont(n,k,zoom){
   /* zoom 을 넘기면 그 배율에서의 크기를 답한다 — fit() 이 아직 정하지 않은
      배율로 이름표 폭을 미리 재야 하기 때문이다. */
-  const z=Math.max(.72,Math.min(1.32,k*(zoom==null?cam.zoom:zoom)));
-  if(n.kind==='book') return '600 '+(11*z).toFixed(1)+'px '+NODEF;
-  if(n.kind==='chap') return '500 '+(9.6*z).toFixed(1)+'px '+NODEF;
-  return '500 '+(9.2*z).toFixed(1)+'px '+NODEF;
+  const z=Math.max(.85,Math.min(1.32,k*(zoom==null?cam.zoom:zoom)));
+  if(n.kind==='book') return '600 '+(12*z).toFixed(1)+'px '+NODEF;
+  if(n.kind==='chap') return '500 '+(11*z).toFixed(1)+'px '+NODEF;
+  return '500 '+(10*z).toFixed(1)+'px '+NODEF;
 }
-function drawLabel(n,x,y,R,st,A,k){
-  const zz=k*cam.zoom;
-  if(n.kind==='item'&&zz<(live.length>60?.72:.5)&&hover!==n) return;
-  if(n.kind==='chap'&&live.length>60&&zz<.46&&hover!==n&&!isOnPath(n)) return;
-  if(n.kind==='chap'&&zz<.4) return;
+const CODE_RE=/^((?:CH|PART|PHASE|BLOCK|WEEK|ROUND|DAY|UNIT)\s*[\d–-]+)\.?\s*(.*)$/i;   /* chWord 는 PART/PHASE/BLOCK 도 온다 */
+const LABEL_CAP={item:24,chap:22,book:24};
+const LABEL_MAX={item:18,chap:24,book:64};
+let labelMouse=[0,0];
+function labelText(n){
+  let t=n.label||'';
+  const cap=LABEL_CAP[n.kind]||24;
+  if(t.length>cap) t=t.slice(0,cap-1)+'…';
+  return t;
+}
+/* 라벨이 차지하는 화면 사각 — 폭은 값싼 추정(한글 1em · 로마자 .56em) */
+function labelBox(a){
+  const [n,x,y,R,st,A,k]=a;
+  const c=pt(0,0,0), dx=x-c[0], dy=y-c[1], dl=Math.hypot(dx,dy)||1;
+  const left=dx<0, ux=dx/dl, uy=dy/dl;
+  const lx=x+ux*(R+10)+(left?-4:4), ly=y+uy*(R+10);
+  const z=Math.max(.85,Math.min(1.32,k*cam.zoom));
+  const fs=(n.kind==='book'?12:n.kind==='chap'?11:10)*z;
+  const t=labelText(n); let w=0;
+  for(let i=0;i<t.length;i++) w+=(t.charCodeAt(i)>0x2E80?1:.56)*fs;
+  return {x0:left?lx-w:lx, x1:left?lx:lx+w, y0:ly-8, y1:ly+8, left:left, lx:lx, ly:ly, ux:ux, uy:uy};
+}
+/* 수량 상한 + 충돌 회피 — on-path·hover 는 무조건, 나머지는 chap 우선 → 커서/초점
+   거리 오름차순으로 item ≤18 · chap ≤24. 겹치는 사각(패딩 2px)은 건너뛴다.
+   전체 전개에서 같은 글자의 chap 라벨은 한 번만(보카 'DAY 01–05' ×10). */
+/* 이 라벨을 지금 배율에서 낼 수 있는가 — drawLabel 과 pickLabels 가 같은 판단을 쓴다 */
+function labelGate(n,k){
+  const zz=k*cam.zoom, hv=n.hov||0, on=isOnPath(n);
+  if(on||hv>=.5) return true;
+  const dense=live.length>60;
+  if(n.kind==='item'&&zz<(dense?.95:.5)) return false;
+  if(n.kind==='chap'&&dense&&zz<.50) return false;
+  if(n.kind==='chap'&&zz<.4) return false;
   /* 이웃과 겹칠 만큼 촘촘하면 아예 내지 않는다. 교재가 원을 똑같이 나눠 갖는
      이상, 챕터가 많은 교재(옳은보카 Ultimate 29파트)는 좁은 몫에 몰릴 수밖에
      없다 — 뭉개진 글자 덩어리는 아무것도 알려 주지 않으므로, 자리가 날 만큼
      확대했을 때 비로소 내준다. 커서를 얹거나 고른 것은 언제나 보인다. */
-  if(expandAll && n.arcW && hover!==n && !isOnPath(n)){
-    if(n.r*(n.arcW*Math.PI/180)*zz < 30) return;
+  if(expandAll && n.arcW && n.r*(n.arcW*Math.PI/180)*zz < 18) return false;
+  if(n.kind==='book' && zz>=.3) return false;         /* 표지가 제목을 이미 달고 있다 */
+  return true;
+}
+function pickLabels(q){
+  const must=[], rest=[];
+  q.forEach(a=>{ const n=a[0]; if(!labelGate(n,a[6])) return; if(isOnPath(n)||(n.hov||0)>.5) must.push(a); else rest.push(a); });
+  /* 기준점: 커서 → 초점 노드 → 화면 가운데(앞쪽 노드가 가깝다) */
+  let cx=W/2, cy=H/2;
+  if(hover){ const hs=toScreen(hover); cx=hs[0]; cy=hs[1]; }
+  else if(focus.length>1){ const fs=toScreen(focus[focus.length-1]); cx=fs[0]; cy=fs[1]; }
+  else if(labelMouse[0]>0&&labelMouse[1]>0){ cx=labelMouse[0]; cy=labelMouse[1]; }
+  rest.sort((a,b)=>{
+    const ka=a[0].kind==='chap'?0:1, kb=b[0].kind==='chap'?0:1;
+    if(ka!==kb) return ka-kb;
+    return Math.hypot(a[1]-cx,a[2]-cy)-Math.hypot(b[1]-cx,b[2]-cy);
+  });
+  const placed=[], out=[], cnt={item:0,chap:0,book:0}, seen={};
+  const fits=b=>{
+    for(const p of placed){
+      if(b.x0<p.x1+2&&b.x1>p.x0-2&&b.y0<p.y1+2&&b.y1>p.y0-2) return false;
+    }
+    return true;
+  };
+  must.forEach(a=>{ placed.push(labelBox(a)); out.push(a); });
+  for(const a of rest){
+    const n=a[0];
+    if(n.kind==='book') continue;                       /* 표지가 제목을 이미 달고 있다 */
+    if(expandAll&&n.kind==='chap'){ if(seen[n.label]) continue; }
+    if(cnt[n.kind]>=LABEL_MAX[n.kind]) continue;
+    const b=labelBox(a);
+    if(!fits(b)) continue;
+    placed.push(b); out.push(a); cnt[n.kind]++;
+    if(n.kind==='chap') seen[n.label]=1;
   }
-  const c=pt(0,0,0);
-  const dx=x-c[0], dy=y-c[1], dl=Math.hypot(dx,dy)||1;
-  const left=dx<0, off=R+10;
-  const lx=x+dx/dl*off, ly=y+dy/dl*off;
-  const on=isOnPath(n);
-  /* the cover plate already carries the title — don't set it twice */
-  const plated = n.kind==='book' && zz>=.3;
+  return out;
+}
+function drawLabel(n,x,y,R,st,A,k){
+  const zz=k*cam.zoom, hv=n.hov||0, on=isOnPath(n);
+  if(!labelGate(n,k)) return;
+  const b=labelBox([n,x,y,R,st,A,k]);
+  const P=(CURG&&CURG.pal)||{pale:[220,236,255]};
+  const AC=ACCENT||[41,168,255];
+  const t=labelText(n);
+  let code=null, title=t;
+  if(n.kind!=='book'){ const m=CODE_RE.exec(t); if(m&&m[2]){ code=m[1]; title=m[2]; } }
+  const zc=Math.max(.85,Math.min(1.32,zz));
+  const codeFont='600 '+(10*zc).toFixed(1)+'px '+NODEF, titleFont=labelFont(n,k);
   ctx.save();
-  ctx.globalAlpha=A*(hover===n?1:.94);
-  ctx.font=labelFont(n,k);
-  ctx.textAlign=left?'right':'left'; ctx.textBaseline='middle';
-  ctx.fillStyle= on?'#ffe566' : hover===n?CSS(gradeOf(n).hot) : 'rgba(188,216,238,.94)';
-  let t=n.label;
-  const cap=n.kind==='item'?22:n.kind==='chap'?20:24;
-  if(t.length>cap) t=t.slice(0,cap-1)+'…';
-  /* no shadowBlur on type — it is what made the labels look smeared */
-  if(live.length>60 && n.kind!=='book'){
-    /* radial labels: adjacent ones diverge instead of stacking */
-    const ang=Math.atan2(dy,dx);
-    ctx.translate(lx,ly);
-    if(left){ ctx.rotate(ang+Math.PI); ctx.textAlign='right'; }
-    else     { ctx.rotate(ang);        ctx.textAlign='left';  }
-    ctx.fillText(t,0,0);
-  } else if(!plated){
-    ctx.fillText(t,lx,ly);
+  ctx.globalAlpha=A*(.94+.06*hv);
+  /* 리더선 — 노드 가장자리에서 방사 방향 8px, 끝에 2px 세로 틱 */
+  const l0x=x+b.ux*(R+2), l0y=y+b.uy*(R+2), l1x=x+b.ux*(R+10), l1y=y+b.uy*(R+10);
+  ctx.lineWidth=1; ctx.strokeStyle=on?RGBA(YEL,.55):RGBA(P.pale,.35);
+  ctx.beginPath(); ctx.moveTo(l0x,l0y); ctx.lineTo(l1x,l1y); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(l1x,l1y-2); ctx.lineTo(l1x,l1y+2); ctx.stroke();
+  /* 실제 폭 */
+  let cw=0;
+  if(code){ ctx.font=codeFont; try{ ctx.letterSpacing='.04em'; }catch(e){} cw=ctx.measureText(code).width+4; try{ ctx.letterSpacing='0px'; }catch(e){} }
+  ctx.font=titleFont; const tw=ctx.measureText(title).width;
+  const total=cw+tw, ly=b.ly;
+  let px=b.left?b.lx-total:b.lx;
+  /* hover 필렛 */
+  if(hv>.02){
+    ctx.fillStyle='rgba(4,11,23,'+(.6*hv).toFixed(3)+')';
+    rrect(ctx,px-6,ly-9,total+12,18,3); ctx.fill();
   }
-  ctx.shadowBlur=0;
-  if(false){
-    /* the band code names the class that uses this book — silver so it
-       reads as a plate on the map rather than another dim label */
-    const fs=(11*Math.max(.85,Math.min(1.25,zz))).toFixed(1);
-    ctx.font='600 '+fs+'px "Noto Sans Mono",monospace';
-    /* hung straight below the node: the cover occupies the space above, and
-       a radial offset walks the class name into the neighbour's cover */
-    const by=y+R+15;
-    const sg=ctx.createLinearGradient(x,by-7,x,by+7);
-    sg.addColorStop(0,'rgba(246,250,255,.98)');
-    sg.addColorStop(.5,'rgba(198,214,232,.95)');
-    sg.addColorStop(1,'rgba(150,172,198,.92)');
-    ctx.fillStyle=sg; ctx.textAlign='center'; ctx.textBaseline='middle';
-    ctx.fillText(n.sub,x,by);
-    ctx.shadowBlur=0;
+  ctx.textAlign='left'; ctx.textBaseline='middle';
+  ctx.lineJoin='round'; ctx.lineWidth=3; ctx.strokeStyle='rgba(4,11,23,.72)';   /* 녹아웃 — shadowBlur 는 여전히 금지 */
+  const idle=mxc3(AC,[255,255,255],.78);
+  if(code){
+    ctx.font=codeFont;
+    try{ ctx.letterSpacing='.04em'; }catch(e){}
+    ctx.strokeText(code,px,ly);
+    ctx.fillStyle= on ? RGBA(GOLD_TXT,1) : RGBA(mxc3(AC,[255,255,255],.6+.4*hv),.9);
+    ctx.fillText(code,px,ly);
+    try{ ctx.letterSpacing='0px'; }catch(e){}
+    px+=cw;
   }
+  ctx.font=titleFont;
+  ctx.strokeText(title,px,ly);
+  ctx.fillStyle= on ? RGBA(GOLD_TXT,1) : RGBA(mxc3(idle,[255,255,255],hv),.88+.12*hv);
+  ctx.fillText(title,px,ly);
   ctx.restore();
 }
 
@@ -3132,7 +3332,7 @@ function hit(mx,my){
   live.forEach(n=>{
     if(n.vis<.4||n.kind==='core') return;
     const [x,y,k]=toScreen(n);
-    const R=nodeStyle(n).rad*k*cam.zoom+10;
+    const R=nodeStyle(n).rad*k*cam.zoom+12;     /* 별이 작아진 만큼 표적은 넓게 */
     const d=Math.hypot(mx-x,my-y);
     if(d<R&&d<bd){best=n;bd=d;}
   });
@@ -3166,6 +3366,12 @@ function galaxyAt(mx,my){
   GOFF.x=kx; GOFF.y=ky; GOFF.z=kz;
   return best;
 }
+/* 등대는 코어로 돌아가는 문 — 커서가 그 위에 있는지 (파고든 화면에서만) */
+function towerAt(mx,my){
+  if(universeMode) return false;
+  towerUpright=true; const lp=pt(0,-LANTERN/2,0); towerUpright=false;
+  return Math.hypot(mx-lp[0],my-lp[1])<92*lp[2]*cam.zoom;
+}
 let drag=null;
 cv.addEventListener('pointerdown',e=>{
   cv.setPointerCapture(e.pointerId);
@@ -3189,13 +3395,17 @@ cv.addEventListener('pointermove',e=>{
     return;
   }
   const mx=e.clientX-r.left, my=e.clientY-r.top;
+  labelMouse=[mx,my];
   const gp=plateAt(mx,my);
   if(gp!==plateHover){ plateHover=gp; }
   const h=(universeMode||gp)?null:hit(mx,my);
   if(h!==hover){ hover=h; }
   const ug=universeMode&&!gp ? galaxyAt(mx,my) : null;
-  cv.style.cursor=(h||gp||ug)?'pointer':'grab';
+  const tw=!h&&!gp&&!ug&&towerAt(mx,my);
+  if(ACTIVE) ACTIVE.towerHovT=tw?1:0;
+  cv.style.cursor=(h||gp||ug||tw)?'pointer':'grab';
 });
+cv.addEventListener('pointerleave',()=>{ if(ACTIVE) ACTIVE.towerHovT=0; labelMouse=[0,0]; });
 cv.addEventListener('pointerup',e=>{
   cv.classList.remove('drag');
   const moved=drag&&drag.moved>5; drag=null;
@@ -3211,8 +3421,7 @@ cv.addEventListener('pointerup',e=>{
   }
   const n=hit(mx,my);
   if(n){ activate(n); return; }
-  const lp=pt(0,-LANTERN/2,0);                 /* the tower is the way home */
-  if(Math.hypot(mx-lp[0],my-lp[1]) < 92*lp[2]*cam.zoom) activate(ROOT);
+  if(towerAt(mx,my)) activate(ROOT);           /* the tower is the way home */
 });
 cv.addEventListener('pointercancel',()=>{drag=null;cv.classList.remove('drag')});
 cv.addEventListener('wheel',e=>{
@@ -3262,6 +3471,7 @@ function enterGalaxy(g){
   bindGalaxy(g);
   universeMode=false;
   WCT.x=g.pos.x; WCT.y=g.pos.y; WCT.z=g.pos.z;
+  TRANS={t0:performance.now(),dur:720,u0:uAmt,u1:0,w0:{x:WC.x,y:WC.y,z:WC.z},w1:{x:WCT.x,y:WCT.y,z:WCT.z}};
   expandAll=true; focus=[ROOT];
   pitchUser=false; yawUser=false; autoFrame=true; framePend=true;
   hover=null; plateHover=null;
@@ -3275,6 +3485,7 @@ function toUniverse(){
   expandAll=true; focus=[ROOT]; layout();
   universeMode=true;
   WCT.x=0; WCT.y=0; WCT.z=0;
+  TRANS={t0:performance.now(),dur:720,u0:uAmt,u1:1,w0:{x:WC.x,y:WC.y,z:WC.z},w1:{x:0,y:0,z:0}};
   pitchUser=false; yawUser=false; autoFrame=true; framePend=true;
   hover=null;
   relayoutAll();
@@ -3290,23 +3501,28 @@ const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;',
 
 function renderCrumb(){
   const el=document.getElementById('crumb');
+  const hn=document.querySelector('.hint');
+  const hint=h=>{ if(hn) hn.innerHTML='<div>'+h+'</div>'; };
   if(universeMode){
-    el.innerHTML='<span class="crumb tail">UNIVERSE · '+GALAXIES.length+' GALAXIES · '
-      +U_BOOKS+'권 · '+U_UNITS+' NODES</span>';
+    el.innerHTML='<span class="crumb tail" aria-current="page">UNIVERSE · '+GALAXIES.length+' GALAXIES · '+U_BOOKS+'권</span>';
     document.getElementById('rd-path').textContent='UNIVERSE // '+GALAXIES.map(g=>g.name).join(' · ');
+    hint('<b>Galaxy·이름판 클릭</b> 진입 · <b>드래그</b> 회전 · <b>휠</b> 확대 · <b>Shift+드래그</b> 이동');
     return;
   }
-  const uni='<button class="crumb" data-uni="1">UNIVERSE</button><span class="crumb-sep">/</span>';
-  const parts=focus.map((n,i)=>{
-    const label = n.kind==='core'?ACTIVE.name:n.label;
-    const tail = i===focus.length-1?' tail':'';
-    return '<button class="crumb'+tail+'" data-i="'+i+'">'+esc(label)+'</button>';
-  });
-  el.innerHTML=uni+parts.join('<span class="crumb-sep">/</span>');
+  const uni='<button class="crumb" data-uni="1">UNIVERSE</button><span class="crumb-sep">·</span>';
   if(expandAll){
-    const shown=DATA.books.filter(b=>!gradeFilter||(b.grades||[]).indexOf(gradeFilter)>=0);
-    el.innerHTML=uni+'<span class="crumb tail">'+esc(ACTIVE.name)+' 전체 전개 · '+shown.length+'권 / '
-      +shown.reduce((s,b)=>s+b.chapters.length,0)+' CHAPTER</span>';
+    el.innerHTML=uni+'<span class="crumb tail" aria-current="page">'+esc(ACTIVE.name)+' 전체 전개</span>';
+    hint('<b>표지 클릭</b> 교재 · <b>등대 클릭</b> 코어 · <b>Shift+드래그</b> 이동 · <b>ESC</b> 우주로');
+  } else {
+    /* 마지막 조각은 늘 현재 위치(무동작 버튼이 아니라 표시), 조상만 버튼 */
+    const parts=focus.map((n,i)=>{
+      const label = n.kind==='core'?ACTIVE.name:n.label;
+      return i===focus.length-1
+        ? '<span class="crumb tail" aria-current="page">'+esc(label)+'</span>'
+        : '<button class="crumb" data-i="'+i+'">'+esc(label)+'</button>';
+    });
+    el.innerHTML=uni+parts.join('<span class="crumb-sep">·</span>');
+    hint('<b>노드 클릭</b> 단원 · <b>ESC</b> 한 단계 위 · <b>Shift+ESC</b> 우주로 · 왼쪽 아래 <b>시험지 발행</b>');
   }
   el.querySelectorAll('.crumb[data-i]').forEach(b=>b.onclick=()=>{
     focus=focus.slice(0,+b.dataset.i+1); sync();
@@ -3318,50 +3534,35 @@ function renderCrumb(){
 }
 
 function renderUniverseRails(){
+  document.getElementById('rail-pub').hidden=true;
   const L=document.getElementById('sec-chain');
   const R=document.getElementById('sec-grade');
   const J=document.getElementById('sec-jump');
   L.innerHTML=GALAXIES.map(g=>{
-    const S=g.S, m=S.DATA.meta||{};
-    const AC='rgb('+g.accent[0]+','+g.accent[1]+','+g.accent[2]+')';
-    return '<div class="slab gcard" data-enter="'+g.id+'">'
-      +'<h3 style="color:'+AC+'"><span class="gdot" style="background:'+AC+'"></span>'+esc(g.name)+'</h3>'
-      +'<p class="gkr">'+esc(g.kr)+' — '+esc(g.tagline)+'</p>'
-      +'<dl class="kv" style="margin-top:9px">'
-      +'<dt>교재</dt><dd class="num">'+S.DATA.books.length+'권</dd>'
-      +'<dt>'+esc(S.TR.unit||'UNIT')+'</dt><dd class="num">'+S.totalItems+'</dd>'
-      +'<dt>시험지</dt><dd class="num">'+S.totalSheets+' / '+S.totalItems+'</dd>'
-      +'</dl>'
-      +'<button class="act gold" style="width:100%;margin-top:10px" data-enter-btn="'+g.id+'">'+esc(g.name)+' Galaxy 진입</button>'
-      +'</div>';
+    const S=g.S, ac=g.accent.join(',');
+    return '<div class="slab gcard" data-enter="'+g.id+'" tabindex="0" role="button" aria-label="'+esc(g.name)+' Galaxy 진입"'
+      +' style="--ac:rgb('+ac+');--ac-rgb:'+ac+'">'
+      +'<h3><span class="gdot"></span>'+esc(g.name)+'</h3>'
+      +'<p class="gkr">'+esc(g.kr)+' · '+esc(g.tagline)+'</p>'
+      +'<dl class="kv"><dt>교재</dt><dd>'+S.DATA.books.length+'권</dd>'
+      +'<dt>'+esc(S.TR.unit||'UNIT')+'</dt><dd>'+S.totalItems+'</dd>'
+      +'<dt>시험지</dt><dd>'+S.totalSheets+'</dd></dl>'
+      +'<span class="go">Galaxy 진입 →</span></div>';
   }).join('');
-  L.querySelectorAll('[data-enter-btn]').forEach(b=>b.onclick=()=>{
-    const g=GALAXIES.find(x=>x.id===b.dataset.enterBtn);
-    if(g) enterGalaxy(g);
+  L.querySelectorAll('[data-enter]').forEach(b=>{
+    const go=()=>{ const g=GALAXIES.find(x=>x.id===b.dataset.enter); if(g) enterGalaxy(g); };
+    b.onclick=go;
+    b.onkeydown=e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); go(); } };
   });
-  R.innerHTML='<div class="slab"><h3>ORUN UNIVERSE</h3>'
-    +'<p>'+GALAXIES.length+'개 Galaxy가 한 하늘에 떠 있습니다. 각 Galaxy의 중심에는 '
-    +'옳은영어의 등대가 서고, 등대 머리 위의 이름을 클릭하면 그 Galaxy로 들어갑니다.</p>'
-    +'<dl class="kv" style="margin-top:10px">'
+  R.innerHTML='<div class="slab card"><h3 class="en">ORUN UNIVERSE</h3>'
+    +'<p>'+GALAXIES.length+'개 Galaxy가 한 하늘에 떠 있습니다. 등대 머리 위의 이름이나 원반을 누르면 그 Galaxy로 들어갑니다.</p>'
+    +'<dl class="kv gap two">'
     +'<dt>Galaxy</dt><dd class="num">'+GALAXIES.length+'</dd>'
     +'<dt>교재</dt><dd class="num">'+U_BOOKS+'권</dd>'
     +'<dt>단원 노드</dt><dd class="num">'+U_UNITS+'</dd>'
     +'<dt>시험지</dt><dd class="num">'+U_SHEETS+'</dd>'
-    +'</dl></div>'
-    +'<div class="slab"><h3>항법</h3>'
-    +'<p style="font-size:12px;color:var(--text-dim)">Galaxy 클릭 · 이름판 클릭 → 진입<br>'
-    +'ESC 또는 [우주로] → 이 화면으로 복귀<br>드래그 회전 · 휠 확대</p></div>';
-  J.innerHTML=GALAXIES.map(g=>{
-    const AC='rgb('+g.accent[0]+','+g.accent[1]+','+g.accent[2]+')';
-    return '<div class="chlist"><button data-enter-btn2="'+g.id+'">'
-      +'<span class="no" style="color:'+AC+'">◈</span>'
-      +'<span class="nm">'+esc(g.name)+' · '+esc(g.kr)+'</span>'
-      +'<span class="cnt">'+g.S.DATA.books.length+'권</span></button></div>';
-  }).join('');
-  J.querySelectorAll('[data-enter-btn2]').forEach(b=>b.onclick=()=>{
-    const g=GALAXIES.find(x=>x.id===b.dataset.enterBtn2);
-    if(g) enterGalaxy(g);
-  });
+    +'</dl></div>';
+  J.innerHTML='';
 }
 
 function pubName(it){
@@ -3373,102 +3574,108 @@ function renderRails(){
   const tail=focus[focus.length-1];
   const L=document.getElementById('sec-chain');
   const R=document.getElementById('sec-grade');
-
-  /* ── LEFT: 큰개념 → 맵핑 → 세부설명 (+ 페이지·학습목표) ── */
-  const tiers=[
-    {t:'교재 / Textbook',      n:focus[1]},
-    {t:'큰개념 / Chapter',     n:focus[2]},
-    {t:'세부설명 / Unit Node', n:focus[3]},
-  ];
-  let html='<div class="chain">';
-  tiers.forEach(x=>{
-    const on = x.n && x.n===tail;
-    html+='<div class="link'+(on?' on':'')+'"><span class="tier">'+esc(x.t)+'</span>'
-        + '<span class="val">'+(x.n?esc(x.n.label):'<span style="color:var(--text-faint)">—</span>')+'</span></div>';
-  });
-  html+='</div>';
-
+  const P=document.getElementById('rail-pub');
   const chapN=focus[2], bookN=focus[1], itemN=focus[3];
-  if(bookN){
+
+  /* ── LEFT: 큰개념 → 맵핑 → 세부설명 (+ 교재 정보·학습목표) ── */
+  let html='';
+  if(!bookN){
+    /* Galaxy 전개 — 레일 맨 위의 큰 활자 하나가 '어디에 있는지' 를 말한다 */
+    html='<div class="chain"><div class="link on"><span class="tier">Galaxy</span>'
+      +'<span class="val gal">'+esc(ACTIVE.name)+'</span>'
+      +'<span class="sub">'+esc(ACTIVE.kr)+' · '+esc(ACTIVE.tagline)+'</span>'
+      +'<span class="sub num">'+DATA.books.length+'권 · '+totalItems+' '+esc(UW)+' · 시험지 '+totalSheets+'</span></div></div>';
+  } else {
+    const tiers=[
+      {kr:'교재',    en:'Textbook',  n:focus[1]},
+      {kr:'큰개념',  en:'Chapter',   n:focus[2]},
+      {kr:'세부설명',en:'Unit Node', n:focus[3]},
+    ];
+    html='<div class="chain">';
+    tiers.forEach(x=>{
+      const on = x.n && x.n===tail;
+      html+='<div class="link'+(on?' on':'')+'"><span class="tier"><span class="kr">'+x.kr+'</span><span class="en">'+x.en+'</span></span>'
+          + (x.n?'<span class="val">'+esc(x.n.label)+'</span>':'<span class="val none">—</span>')+'</div>';
+    });
+    html+='</div>';
     const b=bookN.payload;
-    html+='<div class="slab"><h3>교재 정보</h3><dl class="kv">'
-      +'<dt>정식명</dt><dd>'+esc(b.title)+'</dd>'
+    html+='<details class="slab" open><summary>교재 정보</summary><dl class="kv">'
+      +(bookN.label===b.title?'':'<dt>정식명</dt><dd>'+esc(b.title)+'</dd>')
       +(b.publisher?'<dt>출판</dt><dd>'+esc(b.publisher)+'</dd>':'')
       +'<dt>적용반</dt><dd>'+esc(b.band||'—')+'</dd>'
       +'<dt>단원수</dt><dd class="num">'+b.chapters.length+'</dd>'
       +'</dl>'
-      +(b.confidence&&b.confidence!=='high'?'<div style="margin-top:9px"><span class="prov">목차 잠정안</span></div>':'')
-      +(b.basis?'<p style="margin-top:8px;font-size:11.5px;color:var(--text-dim)">'+esc(b.basis)+'</p>':'')
-      +'</div>';
-
-    /* 발행 버튼은 교재 정보 바로 아래 — 단원을 고르기 전에도 자리를 지켜서
-       어디를 눌러야 시험지가 나오는지 헤매지 않게 한다. */
-    const it=itemN&&itemN.payload, has=it&&!!DATA.worksheets[it.id];
-    html+='<div class="slab pub"><h3>시험지 발행</h3>';
-    if(has){
-      html+='<p class="pub-unit">'+esc(pubName(it))+'</p>'
-          + '<button class="act gold" style="width:100%" data-open="'+esc(it.id)+'">'+TR.recall+' · '+TR.check+' 발행</button>'
-          + '<p class="pub-hint">Word · PDF · 인쇄</p>';
-    } else if(it){
-      html+='<p class="pub-unit">'+esc(pubName(it))+'</p>'
-          + '<button class="act gold" style="width:100%" disabled>시험지 없음</button>'
-          + '<p class="pub-hint">이 단원은 아직 시험지가 연결되지 않았습니다.</p>';
-    } else {
-      html+='<button class="act gold" style="width:100%" disabled>단원을 선택하십시오</button>'
-          + '<p class="pub-hint">지도에서 최종 노드를 클릭하거나, 아래 DIRECT ACCESS에서 단원을 고르십시오.</p>';
+      +(b.confidence&&b.confidence!=='high'?'<div class="chips"><span class="prov">목차 잠정안</span></div>':'')
+      +(b.basis?'<p class="dim sub">'+esc(b.basis)+'</p>':'')
+      +'</details>';
+    if(chapN){
+      const c=chapN.payload;
+      html+='<details class="slab" open><summary>학습목표</summary><p>'
+        +(c.objective? esc(c.objective)
+          : '<span style="color:var(--text-faint)">교재 이론 분석 대기 중입니다. 단원명과 페이지는 실제 교재 목차에서 확정된 값입니다.</span>')+'</p>'
+        +'<dl class="kv gap">'
+        +'<dt>단원</dt><dd class="num">'+esc((TR.chWord||'CHAPTER')+' '+c.no)+'</dd>'
+        +'<dt>교재 페이지</dt><dd class="num">p.'+esc(String(c.page||'—'))+'</dd>'
+        +'<dt>세부항목</dt><dd class="num">'+c.items.length+' '+esc(UW)+'</dd>'
+        +'</dl>'
+        +(c.bigIdea?'<p class="idea">'+esc(c.bigIdea)+'</p>':'')
+        +(c.pending?'<div class="chips"><span class="prov">생성 대기</span></div>':'')
+        +'</details>';
     }
-    html+='</div>';
+    if(itemN){
+      const it=itemN.payload;
+      html+='<details class="slab" open><summary>세부설명</summary><p>'
+        +(it.summary? esc(it.summary)
+          : '<span style="color:var(--text-faint)">교재 이론에서 추출 대기 중</span>')+'</p>'
+        +'<dl class="kv gap"><dt>'+esc(UW)+'</dt><dd class="num">'+esc(String(it.unitNo||'—'))+'</dd>'
+        +'<dt>교재 페이지</dt><dd class="num">p.'+esc(String(it.page||'—'))+'</dd></dl></details>';
+      if(it.keyPoints&&it.keyPoints.length){
+        html+='<div class="slab"><h3>암기 포인트</h3><ul class="pts">'
+          + it.keyPoints.map(k=>'<li>'+esc(k)+'</li>').join('')+'</ul></div>';
+      }
+    }
+  }
+  L.innerHTML=html;
 
+  /* ── 발행 카드: 레일 바닥 sticky — 어느 초점 상태에서도, 스크롤과 무관하게 보인다 ── */
+  if(bookN){
+    const b=bookN.payload;
+    const it=itemN&&itemN.payload, has=it&&!!DATA.worksheets[it.id];
+    let ph='<div class="slab pub"><h3>시험지 발행</h3>';
+    if(has){
+      ph+='<p class="pub-unit">'+esc(pubName(it))+'</p>'
+        + '<button class="act gold" data-open="'+esc(it.id)+'">시험지 발행</button>'
+        + '<p class="pub-hint">'+esc(TR.recall+' + '+TR.check)+' · Word · PDF · 인쇄</p>';
+    } else if(it){
+      ph+='<p class="pub-unit">'+esc(pubName(it))+'</p>'
+        + '<button class="act gold" disabled>시험지 없음</button>'
+        + '<p class="pub-hint">이 단원은 아직 시험지가 연결되지 않았습니다</p>';
+    } else {
+      ph+='<button class="act gold" disabled>단원을 고르면 발행할 수 있습니다</button>'
+        + '<p class="pub-hint">지도의 마지막 별을 누르거나 DIRECT ACCESS 에서 단원을 고르세요</p>';
+    }
+    ph+='</div>';
     /* 낱장 발행 바로 아래에 한 권 발행 — 오늘 쓸 종이와 학기 내내 쓸 책.
        지금은 화면에서만 감춰 두었다(MB_UI). 조판·Word·인쇄 경로는 그대로
        살아 있으므로 MB_UI 를 true 로 되돌리면 카드가 곧바로 돌아온다. */
     if(MB_UI){
       const mbN=mbUnits(b).length;
-      html+='<div class="slab mb"><h3>ORUN GRAMMAR 발행</h3>';
+      ph+='<div class="slab mb"><h3>ORUN GRAMMAR 발행</h3>';
       if(mbN){
-        html+='<p class="pub-unit">'+esc(b.short||b.title)+' 전권</p>'
-            + '<p class="mb-spec">UNIT '+mbN+' · 시험지 '+(mbN*2)+'장 · 해설 권말</p>'
-            + '<button class="act gold" style="width:100%" data-mb="'+esc(b.id)+'">한 권으로 묶기</button>'
-            + '<p class="pub-hint">유닛마다 '+TR.recall+' + '+TR.check+' 가 한 세트로 이어지고, 정답과 해설은 전부 맨 뒤에 모입니다.</p>';
+        ph+='<p class="pub-unit">'+esc(b.short||b.title)+' 전권</p>'
+          + '<p class="mb-spec">UNIT '+mbN+' · 시험지 '+(mbN*2)+'장 · 해설 권말</p>'
+          + '<button class="act gold" data-mb="'+esc(b.id)+'">한 권으로 묶기</button>'
+          + '<p class="pub-hint">유닛마다 '+esc(TR.recall)+' + '+esc(TR.check)+' 가 한 세트로 이어지고, 정답과 해설은 전부 맨 뒤에 모입니다.</p>';
       } else {
-        html+='<button class="act gold" style="width:100%" disabled>시험지 없음</button>'
-            + '<p class="pub-hint">이 교재는 아직 문항이 생성되지 않았습니다.</p>';
+        ph+='<button class="act gold" disabled>시험지 없음</button>'
+          + '<p class="pub-hint">이 교재는 아직 문항이 생성되지 않았습니다.</p>';
       }
-      html+='</div>';
+      ph+='</div>';
     }
-  }
-  if(chapN){
-    const c=chapN.payload;
-    html+='<div class="slab"><h3>학습목표</h3><p>'
-      +(c.objective? esc(c.objective)
-        : '<span style="color:var(--text-faint)">교재 이론 분석 대기 중입니다. 단원명과 페이지는 실제 교재 목차에서 확정된 값입니다.</span>')+'</p>'
-      +'<dl class="kv" style="margin-top:10px">'
-      +'<dt>단원</dt><dd class="num">'+esc((TR.chWord||'CHAPTER')+' '+c.no)+'</dd>'
-      +'<dt>교재 페이지</dt><dd class="num">p.'+esc(String(c.page||'—'))+'</dd>'
-      +'<dt>세부항목</dt><dd class="num">'+c.items.length+' UNITS</dd>'
-      +'</dl>'
-      +(c.bigIdea?'<p style="margin-top:10px;padding-top:9px;border-top:1px solid var(--edge);font-size:12px;color:var(--holo-soft)">'+esc(c.bigIdea)+'</p>':'')
-      +(c.pending?'<div style="margin-top:9px"><span class="prov">생성 대기</span></div>':'')
-      +'</div>';
-  }
-  if(itemN){
-    const it=itemN.payload;
-    html+='<div class="slab"><h3>세부설명</h3><p>'
-      +(it.summary? esc(it.summary)
-        : '<span style="color:var(--text-faint)">교재 이론에서 추출 대기 중</span>')+'</p>'
-      +'<dl class="kv" style="margin-top:10px"><dt>UNIT</dt><dd class="num">'+esc(String(it.unitNo||'—'))+'</dd>'
-      +'<dt>교재 페이지</dt><dd class="num">p.'+esc(String(it.page||'—'))+'</dd></dl></div>';
-    if(it.keyPoints&&it.keyPoints.length){
-      html+='<div class="slab"><h3>암기 포인트</h3><ul class="pts">'
-        + it.keyPoints.map(k=>'<li>'+esc(k)+'</li>').join('')+'</ul></div>';
-    }
-  }
-  if(!focus[1]){
-    html='<div class="void-note">코어에서 교재를<br>선택하십시오</div>';
-  }
-  L.innerHTML=html;
-  L.querySelectorAll('[data-open]').forEach(b=>b.onclick=()=>openSheet(ITEM[b.dataset.open]));
-  L.querySelectorAll('[data-mb]').forEach(b=>b.onclick=()=>openVolume(b.dataset.mb));
+    P.innerHTML=ph; P.hidden=false;
+    P.querySelectorAll('[data-open]').forEach(x=>x.onclick=()=>openSheet(ITEM[x.dataset.open]));
+    P.querySelectorAll('[data-mb]').forEach(x=>x.onclick=()=>openVolume(x.dataset.mb));
+  } else { P.hidden=true; P.innerHTML=''; }
 
   /* ── RIGHT: 학년별 차등개념 ── */
   let rh='';
@@ -3480,12 +3687,12 @@ function renderRails(){
         const meta=TOPICMETA[sid];
         const rows=TOPIC[sid];
         const maxN=Math.max.apply(null,rows.map(r=>r.chap.items.length));
-        rh+='<div class="slab" style="border-color:rgba(255,209,0,.3)"><h3>추적 주제</h3>'
-          +'<p style="color:var(--gold-soft);font-weight:500">'+esc(meta.label)+'</p>'
-          +'<p style="margin-top:6px;font-size:11.5px;color:var(--text-dim)">'
+        rh+='<div class="slab strand"><h3>추적 주제</h3>'
+          +'<p style="color:#fff;font-weight:600">'+esc(meta.label)+'</p>'
+          +'<p class="dim sub">'
           + (rows.length>1
               ? '이 주제는 '+rows.length+'개 교재에 걸쳐 심화됩니다. 아래는 학년별 차등 구성입니다.'
-              : '이 주제는 해당 교재에서만 단독으로 다룹니다.')
+              : '이 주제는 이 교재에서만 다룹니다')
           +'</p></div>';
         rows.forEach(r=>{
           const on = r.book.id===anchorChap.bookId && r.chap.no===anchorChap.no;
@@ -3495,13 +3702,12 @@ function renderRails(){
             +'<div class="bk">'+esc(r.book.short||r.book.title)+' · CH '+r.chap.no+' '+esc(r.chap.title)+'</div>'
             +'<div class="tp">'+esc(r.chap.objective||r.chap.title)+'</div>'
             +'<div class="depth"><i style="width:'+pct+'%"></i></div>'
-            +'<div style="margin-top:4px;font-family:var(--f-mono);font-size:9px;color:var(--text-faint);letter-spacing:.1em">'
-            + r.chap.items.length+' UNITS · 교재 p.'+esc(String(r.chap.page||'—'))+'</div>'
+            +'<div class="rmeta">'+r.chap.items.length+' '+esc(UW)+' · 교재 p.'+esc(String(r.chap.page||'—'))+'</div>'
             +'</div>';
         });
       });
     } else {
-      rh='<div class="void-note">이 주제는 선택한 교재에만<br>단독으로 등장합니다</div>';
+      rh='<div class="void-note">이 주제는 이 교재에서만 다룹니다</div>';
     }
   } else {
     const bn=focus[1];
@@ -3509,26 +3715,25 @@ function renderRails(){
       const b=bn.payload;
       const nodes=b.chapters.reduce((s,c)=>s+c.items.length,0);
       rh+='<div class="slab"><h3>'+esc(b.short||b.title)+'</h3><p>'+esc(b.desc||'')+'</p>'
-        +'<dl class="kv" style="margin-top:10px">'
+        +'<dl class="kv gap">'
         +'<dt>적용반</dt><dd>'+esc(b.band||'—')+'</dd>'
-        +'<dt>구성</dt><dd class="num">'+b.chapters.length+' CH · '+nodes+' UNITS</dd></dl></div>';
-      rh+='<div class="slab"><h3>교재를 가로지르는 주제</h3><p style="font-size:11.5px;color:var(--text-dim)">'
-        +'단원을 선택하면 같은 주제가 다른 학년 교재에서 어떻게 심화되는지 나란히 비교됩니다.</p></div>';
+        +'<dt>구성</dt><dd class="num">'+b.chapters.length+' CH · '+nodes+' '+esc(UW)+'</dd></dl></div>';
+      rh+='<div class="slab"><h3>교재를 가로지르는 주제</h3><p class="dim">'
+        +'단원을 고르면 같은 주제가 학년별로 어떻게 깊어지는지 나란히 보입니다</p></div>';
       DATA.topics.filter(t=>t.chapters.length>1&&t.chapters.some(c=>c[0]===b.id)).forEach(t=>{
         rh+='<div class="rung" data-jump="'+t.chapters.filter(c=>c[0]===b.id)[0].join('/')+'">'
           +'<div class="lv">'+esc(t.label)+'</div>'
-          +'<div class="tp" style="font-size:11.5px;color:var(--text-dim)">'
+          +'<div class="tp dim">'
           + t.chapters.map(c=>(BOOK[c[0]]?BOOK[c[0]].short:c[0])+' CH'+c[1]).join('  →  ')+'</div></div>';
       });
     } else {
-      rh='<div class="void-note">교재를 선택하면<br>차등 커리큘럼이 표시됩니다</div>';
+      rh='<div class="void-note">교재를 고르면 차등 커리큘럼이 여기에 보입니다</div>';
     }
   }
   R.innerHTML=rh;
   renderJump();
   /* jump the lattice to the same strand in another textbook */
   R.querySelectorAll('[data-jump]').forEach(el=>{
-    el.style.cursor='pointer';
     el.title='이 교재의 해당 단원으로 이동';
     el.onclick=()=>{
       const [bid,no]=el.dataset.jump.split('/');
@@ -3543,7 +3748,7 @@ function renderRails(){
 function renderJump(){
   const el=document.getElementById('sec-jump');
   const shown=DATA.books.filter(b=>!gradeFilter||(b.grades||[]).indexOf(gradeFilter)>=0);
-  if(!shown.length){ el.innerHTML='<div class="void-note">이 학년에 배정된<br>교재가 없습니다</div>'; return; }
+  if(!shown.length){ el.innerHTML='<div class="void-note">이 학년에 배정된 교재가 없습니다</div>'; return; }
 
   if(focus[1]&&focus[1].payload) jumpBook=focus[1].payload.id;
   if(!shown.some(b=>b.id===jumpBook)) jumpBook=shown[0].id;
@@ -3570,7 +3775,7 @@ function renderJump(){
                 return '<button data-u="'+esc(i.id)+'"'
                   +(has?' class="has'+(on?' on':'')+'"':' disabled')
                   +' aria-current="'+on+'"'
-                  +' title="'+(has?'선택 · 좌측 버튼으로 시험지 발행':'시험지 미생성')+'">'
+                  +' title="'+(has?'선택 · 아래 [시험지 발행] 버튼으로 발행':'시험지 미생성')+'">'
                   +'<i></i><span>'+unitWord+' '+esc(String(i.unitNo||''))+'. '+esc(i.title)+'</span></button>';
               }).join('')+'</div>'
             : '');
@@ -5384,22 +5589,41 @@ function baekjiDocx(b,showKey){
 let cur=null, curTab='b', showKey=false;
 const modal=document.getElementById('modal');
 
+let lastFocus=null, closeT=0;
+function modalOpen(){
+  /* 뒤의 앱은 inert — Tab 이 모달 밖으로 새지 않는다. 닫힐 때 포커스는 열었던 버튼으로 돌아간다 */
+  clearTimeout(closeT);
+  lastFocus=document.activeElement;
+  document.getElementById('app').inert=true;
+  modal.classList.remove('closing');
+  modal.classList.add('open');
+}
 function openSheet(item){
   if(!item) return;
   const ws=DATA.worksheets[item.id];
   if(!ws){ toast('이 노드는 아직 시험지가 연결되지 않았습니다.',true); return; }
   cur={item,ws};
   modal.classList.remove('vol');
-  document.getElementById('btn-print').textContent='인쇄';
-  document.getElementById('sheet-eyebrow').textContent =
-    (BOOK[item.bookId]?BOOK[item.bookId].short||BOOK[item.bookId].title:'')
-    + ' · ' + (TR.chWord||'CHAPTER') + ' ' + item.chapNo;
+  modal.classList.toggle('key',showKey);
+  document.getElementById('btn-print').textContent=showKey?'인쇄 (정답 포함)':'인쇄';
+  const b0=BOOK[item.bookId];
+  document.getElementById('sheet-eyebrow').innerHTML =
+    '<span class="en">'+esc(b0?b0.short||b0.title:'')+'</span> · '+esc((TR.chWord||'CHAPTER')+' '+item.chapNo);
   document.getElementById('sheet-title').textContent = item.title;
-  modal.classList.add('open');
+  modalOpen();
   setTab(curTab);
   document.getElementById('btn-close').focus();
 }
-function closeSheet(){ modal.classList.remove('open'); modal.classList.remove('vol'); cur=null; }
+function closeSheet(){
+  if(!modal.classList.contains('open')||modal.classList.contains('closing')) return;
+  modal.classList.add('closing');
+  closeT=setTimeout(()=>{
+    modal.classList.remove('open','vol','closing'); cur=null;
+    document.getElementById('app').inert=false;
+    if(lastFocus&&lastFocus.isConnected&&lastFocus.focus) lastFocus.focus();
+    lastFocus=null;
+  },200);
+}
 
 /* 한 권을 통째로 조판한다. 240쪽이 넘는 판이라 한 번에 도는 대신
    유닛 몇 개마다 화면에 진행을 넘기고 이어 돈다. */
@@ -5407,7 +5631,8 @@ async function openVolume(bookId){
   const b=BOOK[bookId];
   if(!b) return;
   cur=null;
-  modal.classList.add('open'); modal.classList.add('vol');
+  modal.classList.remove('key');
+  modalOpen(); modal.classList.add('vol');
   document.getElementById('sheet-eyebrow').textContent=MB_NAME;
   document.getElementById('sheet-title').textContent=(b.short||b.title)+' 전권';
   document.getElementById('pages').innerHTML='';
@@ -5442,6 +5667,7 @@ function setTab(t){
   curTab=t;
   document.getElementById('tab-b').setAttribute('aria-selected',t==='b');
   document.getElementById('tab-p').setAttribute('aria-selected',t==='p');
+  document.getElementById('preview').scrollTop=0;
   paint();
 }
 function paint(){
@@ -5461,11 +5687,13 @@ function paint(){
   const ops=curOps();
   const pg=document.getElementById('pages');
   pg.style.setProperty('--pz',Math.min(1.18,avail/(A4W*PSC)).toFixed(4));
+  pg.style.opacity=.35;
   pg.innerHTML=opsToHTML(ops,PSC);
+  requestAnimationFrame(()=>{ pg.style.opacity=1; });
   const n=ops.pages.length;
-  document.getElementById('sheet-note').textContent =
-    (curTab==='b'?TR.recall:TR.check)+' · A4 '+n+'쪽'+(showKey?' · 정답 포함':'')
-    + ' · ' + (cur.ws.source||'');
+  document.getElementById('sheet-note').innerHTML =
+    esc((curTab==='b'?TR.recall:TR.check)+' · A4 '+n+'쪽')+(showKey?' · <b>정답 포함</b>':'')
+    + ' · ' + esc(cur.ws.source||'');
 }
 document.getElementById('tab-b').textContent=TR.recall;
 document.getElementById('tab-p').textContent=TR.check;
@@ -5481,9 +5709,15 @@ function typing(el){
   return !!el && (el.tagName==='INPUT'||el.tagName==='SELECT'||el.tagName==='TEXTAREA'||el.isContentEditable);
 }
 let shiftDown=false;
+/* ESC = 한 단계 위, Shift+ESC = 우주로. Backspace 도 같다(입력 요소 안에서는 제외) */
+function stepUp(shift){
+  if(shift||focus.length<=1||expandAll){ toUniverse(); return; }
+  focus=focus.slice(0,-1); if(!focus.length) focus=[ROOT]; sync();
+}
 addEventListener('keydown',e=>{
   if(e.key==='Escape'&&modal.classList.contains('open')){ closeSheet(); return; }
-  if(e.key==='Escape'&&!universeMode){ toUniverse(); return; }
+  if(e.key==='Escape'&&!universeMode){ stepUp(e.shiftKey); return; }
+  if(e.key==='Backspace'&&!universeMode&&!typing(e.target)&&!modal.classList.contains('open')){ e.preventDefault(); stepUp(e.shiftKey); return; }
   if(modal.classList.contains('open')||typing(e.target)) return;
   if(e.ctrlKey||e.metaKey||e.altKey) return;
   shiftDown=e.shiftKey;
@@ -5514,7 +5748,8 @@ function keyNav(){
 }
 document.getElementById('btn-key').onclick=function(){
   showKey=!showKey; this.setAttribute('aria-pressed',showKey);
-  this.textContent = showKey?'정답 숨기기':'정답 보기';
+  modal.classList.toggle('key',showKey);
+  document.getElementById('btn-print').textContent=showKey?'인쇄 (정답 포함)':'인쇄';
   paint();
 };
 document.getElementById('btn-print').onclick=()=>window.print();
@@ -5574,7 +5809,14 @@ async function save(filename,data){
     toast('저장하지 못했습니다: '+(err&&err.message||c||'알 수 없는 오류'),true);
   }
 }
-document.getElementById('btn-docx').onclick=async()=>{
+/* 저장은 한 번에 하나 — 버튼에 스피너를 달고, 도는 동안 두 번째 클릭은 버린다 */
+async function busy(btn,fn){
+  if(!btn||btn.getAttribute('aria-busy')==='true') return;
+  btn.setAttribute('aria-busy','true'); btn.disabled=true;
+  await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));
+  try{ await fn(); } finally { btn.disabled=false; btn.removeAttribute('aria-busy'); }
+}
+document.getElementById('btn-docx').onclick=function(){ busy(this,async()=>{
   if(!cur) return;
   if(cur.vol){
     toast('Word 문서 작성 중…');
@@ -5588,16 +5830,20 @@ document.getElementById('btn-docx').onclick=async()=>{
     ? baekjiDocx(Object.assign({},cur.ws.baekji,{__source:src,__page:cur.item.page}),showKey)
     : popquizDocx(Object.assign({},cur.ws.popquiz,{__source:src,__page:cur.item.page}),showKey);
   await save(fname('docx'), data.buffer.slice(0));
-};
-document.getElementById('btn-pdf').onclick=async()=>{
+}); };
+document.getElementById('btn-pdf').onclick=function(){ busy(this,async()=>{
   if(!cur) return;
   toast('PDF 렌더링 중…');
   await new Promise(r=>setTimeout(r,20));
   const ops=curOps();
-  const cvs=ops.pages.map(p=>opsToCanvas(p,2.6));
+  const cvs=[];
+  for(const p of ops.pages){
+    cvs.push(opsToCanvas(p,2.6));
+    if(ops.pages.length>=3) await new Promise(r=>requestAnimationFrame(r));   /* 긴 판은 장마다 숨을 쉰다 */
+  }
   const pdf=buildPDF(cvs);
   await save(fname('pdf'), pdf.buffer.slice(0));
-};
+}); };
 
 function toast(msg,bad){
   const t=document.getElementById('toast');
@@ -5614,8 +5860,8 @@ function buildGalPick(){
   if(!el) return;
   el.innerHTML='<button data-g="">UNIVERSE</button>'
     +GALAXIES.map(g=>'<button data-g="'+g.id+'" title="'+esc(g.kr)+'">'+esc(g.name)+'</button>').join('');
-  el.querySelectorAll('button').forEach(b=>b.onclick=()=>{
-    b.blur();
+  el.querySelectorAll('button').forEach(b=>b.onclick=e=>{
+    if(e&&e.detail>0) b.blur();
     if(!b.dataset.g){ toUniverse(); return; }
     const g=GALAXIES.find(x=>x.id===b.dataset.g);
     if(g) enterGalaxy(g);
@@ -5636,13 +5882,7 @@ function syncGalaxyChrome(){
   const gf=document.getElementById('grade-filter');
   if(gf) gf.style.display = universeMode ? 'none' : 'flex';
   const lg=document.getElementById('legend');
-  if(lg) lg.style.visibility = universeMode ? 'hidden' : 'visible';
-  ['btn-all','btn-home'].forEach(id=>{
-    const b=document.getElementById(id);
-    if(b) b.disabled=universeMode;
-  });
-  const bu=document.getElementById('btn-uni');
-  if(bu) bu.disabled=universeMode;
+  if(lg) lg.classList.toggle('off',universeMode);
   buildLegend(); buildGradeFilter(); refreshCounts(); syncAllBtn(); syncGalPick();
 }
 
@@ -5676,8 +5916,8 @@ function refreshCounts(){
     const ch=GALAXIES.reduce((t,g)=>t+g.S.DATA.books.reduce((u,b)=>u+b.chapters.length,0),0);
     const done=GALAXIES.reduce((t,g)=>t+g.S.DATA.books.reduce((u,b)=>u+b.chapters.filter(c=>!c.pending).length,0),0);
     document.getElementById('rd-nodes').textContent=String(U_UNITS);
-    document.getElementById('rd-sheets').textContent=U_SHEETS+' / '+U_UNITS;
-    document.getElementById('rd-ch').textContent=done+' / '+ch;
+    document.getElementById('rd-sheets').innerHTML=U_SHEETS+'<i>/'+U_UNITS+'</i>';
+    document.getElementById('rd-ch').innerHTML=done+'<i>/'+ch+'</i>';
     return;
   }
   const bs=DATA.books.filter(b=>!gradeFilter||(b.grades||[]).indexOf(gradeFilter)>=0);
@@ -5686,14 +5926,16 @@ function refreshCounts(){
   const sh=bs.reduce((s,b)=>s+b.chapters.reduce((t,c)=>
         t+c.items.filter(i=>DATA.worksheets[i.id]).length,0),0);
   document.getElementById('rd-nodes').textContent=String(un);
-  document.getElementById('rd-sheets').textContent=sh+' / '+un;
-  document.getElementById('rd-ch').textContent=
-    bs.reduce((s,b)=>s+b.chapters.filter(c=>!c.pending).length,0)+' / '+ch;
+  document.getElementById('rd-sheets').innerHTML=sh+'<i>/'+un+'</i>';
+  document.getElementById('rd-ch').innerHTML=
+    bs.reduce((s,b)=>s+b.chapters.filter(c=>!c.pending).length,0)+'<i>/'+ch+'</i>';
 }
 function syncAllBtn(){
   const b=document.getElementById('btn-all');
   b.setAttribute('aria-pressed',expandAll);
-  b.textContent=expandAll?'전개 해제':'전체 전개';
+  /* 모드 클래스는 여기 한 곳에서 — expandAll 이 바뀌는 모든 경로가 이 함수를 지난다 */
+  document.body.classList.toggle('uni',universeMode);
+  document.body.classList.toggle('gal',!universeMode&&expandAll);
 }
 document.getElementById('btn-all').onclick=()=>{
   if(universeMode) return;
@@ -5709,14 +5951,9 @@ document.getElementById('btn-home').onclick=()=>{ if(universeMode) return; expan
 document.getElementById('btn-spin').onclick=function(){
   motionOn=!motionOn;
   this.setAttribute('aria-pressed',motionOn);
-  this.textContent = motionOn?'모션 정지':'모션 시작';
   try{ localStorage.setItem('orun.spin',motionOn?'1':'0'); }catch(e){}
 };
-(function(){
-  const b=document.getElementById('btn-spin');
-  b.setAttribute('aria-pressed',motionOn);
-  b.textContent = motionOn?'모션 정지':'모션 시작';
-})();
+document.getElementById('btn-spin').setAttribute('aria-pressed',motionOn);
 document.getElementById('btn-fit').onclick=()=>{
   pitchUser=false; yawUser=false; modePose(); autoFrame=true; framePend=true; refit();
 };
@@ -5737,24 +5974,25 @@ document.getElementById('btn-solo').onclick=function(){
    16. BOOT
    ============================================================ */
 const BOOTLINES=[
-  'ORUN NEXUS UNIVERSE',
-  'MOUNTING 3 GALAXIES // GRAMMAR · READING · VOCAB',
-  'RESOLVING '+U_BOOKS+' TEXTBOOK CORES · '+U_UNITS+' CURRICULUM NODES',
+  'RESOLVING '+U_BOOKS+' TEXTBOOK CORES · '+U_UNITS+' NODES',
   'SHEET ENGINE // DOCX · PDF READY',
   'UNIVERSE ONLINE',
 ];
 async function boot(){
-  const el=document.getElementById('bootin');
-  if(RM){ document.getElementById('boot').classList.add('gone'); return; }
+  const bt=document.getElementById('boot'), bl=document.getElementById('bl-load');
+  const bar=document.querySelector('#bl-bar i');
+  if(bar) bar.style.setProperty('--p','100%');
+  const done=()=>{ bt.classList.add('gone'); setTimeout(()=>bt.remove(),500); };
+  if(RM){ if(bl) bl.textContent=BOOTLINES[BOOTLINES.length-1]; setTimeout(done,200); return; }
   for(let i=0;i<BOOTLINES.length;i++){
-    const d=document.createElement('div');
-    d.className='bl'; d.style.animationDelay='0s';
-    d.textContent=BOOTLINES[i];
-    el.appendChild(d);
-    await new Promise(r=>setTimeout(r,i===BOOTLINES.length-1?520:255));
+    if(bl){
+      bl.textContent=BOOTLINES[i];
+      bl.style.animation='none'; void bl.offsetWidth;      /* 줄마다 다시 떠오른다 */
+      bl.style.opacity=''; bl.style.animation='';
+    }
+    await new Promise(r=>setTimeout(r,i===BOOTLINES.length-1?240:140));
   }
-  document.getElementById('boot').classList.add('gone');
-  setTimeout(()=>document.getElementById('boot').remove(),900);
+  done();
 }
 
 (async function start(){
@@ -5770,5 +6008,6 @@ async function boot(){
   cam.yaw=cam.tyaw; cam.pitch=cam.tpitch;
   refit(); renderRails(); renderCrumb();
   requestAnimationFrame(draw);
+  requestAnimationFrame(()=>cv.classList.add('live'));
   boot();
 })();

@@ -33,6 +33,10 @@ def main():
         # < 이스케이프는 동일한 값이므로 안전하게 눌러 둔다.
         raw = raw.replace("</", "<\\/")
         blobs.append('<script type="application/json" id="nexus-data-%s">%s</script>' % (gid, raw))
+        # 11MB 를 파싱하는 동안 빈 화면이 아니라 진행선이 보이도록, 블롭 사이마다
+        # 부트 화면의 진행선을 한 칸씩 채운다.
+        blobs.append('<script>document.getElementById("bl-bar").firstElementChild.style.setProperty("--p","%d%%")</script>'
+                     % (20 * len([b for b in blobs if 'nexus-data-' in b])))
 
     out = (head.rstrip() + "\n\n"
            + body.rstrip() + "\n\n"
