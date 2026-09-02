@@ -1197,7 +1197,7 @@ function buildBackdrop(){
 function drawBackdrop(){
   if(!BG) buildBackdrop();
   if(BG) ctx.drawImage(BG,0,0,W,H);
-  if(BG2){
+  if(BG2&&QUALITY>0){
     const H2=BG2.height/DPR;
     let dx=-cam.px*.06+cam.yaw*80, dy=-H*.06-cam.py*.06;
     dx=((dx%W)+W)%W;
@@ -1247,8 +1247,8 @@ function cached(name,render){
 let QUALITY=2, ftAvg=16, ftLast=0;
 function governor(now){
   if(ftLast){
-    const dt=now-ftLast;
-    if(dt<250) ftAvg=ftAvg*0.90+dt*0.10;
+    const dt=Math.min(250,now-ftLast);          /* 아주 느린 프레임도 거버너가 본다 */
+    ftAvg=ftAvg*0.90+dt*0.10;
   }
   ftLast=now;
   if(ftAvg>27 && QUALITY>0){ QUALITY--; ftAvg=16; }
@@ -1541,7 +1541,7 @@ function draw(ts){
   /* 첫 프레임과, 탭이 백그라운드였다 돌아온 뒤의 큰 간격은 잘라낸다 —
      그대로 쓰면 판이 한 번에 훌쩍 돈다. */
   let dt=(now-lastTs)/1000; lastTs=now;
-  if(!(dt>0) || dt>0.25) dt=1/60;
+  if(!(dt>0)) dt=1/60; else if(dt>0.25) dt=0.25;
   governor(now);
   keyNav();
   /* T 는 화면의 모든 흐름이 참조하는 시계다. 프레임 수를 세면 느린 기계에서
@@ -3043,14 +3043,17 @@ function drawNodes(){
     ctx.save();
     ctx.globalCompositeOperation='lighter';
 
-    /* halo */
-    const HR=S*(z<0?3.6:2.6);
-    const h1=ctx.createRadialGradient(x,y,0,x,y,HR);
-    h1.addColorStop(0,RGBA(col,.18*mag));
-    h1.addColorStop(.32,RGBA(col,.06*mag));
-    h1.addColorStop(1,RGBA(col,0));
-    ctx.globalAlpha=aa; ctx.fillStyle=h1;
-    ctx.beginPath(); ctx.arc(x,y,HR,0,Math.PI*2); ctx.fill();
+    /* halo — 화면에서 2px 도 안 되는 별은 몸체 하나로 충분하다(그라디언트 절반 절약) */
+    ctx.globalAlpha=aa;
+    if(S>=1.4||on2||hv>.02){
+      const HR=S*(z<0?3.6:2.6);
+      const h1=ctx.createRadialGradient(x,y,0,x,y,HR);
+      h1.addColorStop(0,RGBA(col,.18*mag));
+      h1.addColorStop(.32,RGBA(col,.06*mag));
+      h1.addColorStop(1,RGBA(col,0));
+      ctx.fillStyle=h1;
+      ctx.beginPath(); ctx.arc(x,y,HR,0,Math.PI*2); ctx.fill();
+    }
 
     /* the burning body — 순백은 고른 것과 hover 뿐 */
     const white=on2||hv>.5;
@@ -3708,13 +3711,19 @@ function drawCovers(){
     /* the plate, with a real drop shadow — 등대 불빛 아래 놓인 판.
        먼 것은 옅게 바래고, 다른 책을 고른 동안 나머지는 한 걸음 물러난다 */
     ctx.shadowColor=sel?RGBA(YEL,.6):'rgba(0,8,18,.6)';
-    ctx.shadowBlur=sel?26:14+10*hov;
+    ctx.shadowBlur=QUALITY>0?(sel?26:14+10*hov):0;
     ctx.shadowOffsetY=sel?0:6;
-    try{ ctx.filter=(anySel&&!sel)?'saturate(.5) brightness(.8)':'saturate('+(.6+.4*fog(z)).toFixed(2)+')'; }catch(e){}
     n.plate={x:x-w/2,y:cy-h/2,w:w,h:h};      /* the cover is a click target */
     ctx.drawImage(plate,x-w/2,cy-h/2,w,h);
-    try{ ctx.filter='none'; }catch(e){}
     ctx.shadowBlur=0; ctx.shadowOffsetY=0; ctx.shadowColor='rgba(0,0,0,0)';
+    /* 원근 탈채도와 '다른 책을 고른 동안 물러남' 은 filter 가 아니라 틴트 한 겹으로 —
+       ctx.filter 는 GPU 없는 기계에서 프레임을 여섯 배 늦춘다 */
+    const tint=(anySel&&!sel)?.42:(1-fog(z))*.55;
+    if(tint>.01){
+      ctx.save(); rrect(ctx,x-w/2,cy-h/2,w,h,Math.max(2,w*.05)); ctx.clip();
+      ctx.fillStyle='rgba(8,18,34,'+tint.toFixed(3)+')'; ctx.fillRect(x-w/2,cy-h/2,w,h);
+      ctx.restore();
+    }
 
     /* 윗변 하이라이트 + 램프를 향한 변의 골드 림 — 표지가 등대 빛에 앉는다 */
     const x0=x-w/2, y0=cy-h/2;
