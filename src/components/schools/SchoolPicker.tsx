@@ -130,7 +130,7 @@ export function SchoolPicker({ selected, onChange, onBuild }: Props) {
             checked={observedOnly}
             onChange={(e) => setObservedOnly(e.target.checked)}
           />
-          우리가 본 학교만
+          자료 있는 학교만
         </label>
         <button
           onClick={toggleAllVisible}
