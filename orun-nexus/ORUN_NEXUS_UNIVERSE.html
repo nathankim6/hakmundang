@@ -321,6 +321,8 @@ ul.pts li::before{content:'';position:absolute;left:2px;top:11px;width:5px;heigh
 #stage::after{content:'';position:absolute;inset:0;pointer-events:none;z-index:3;
   background:radial-gradient(ellipse 130% 100% at 50% 48%,transparent 52%,rgba(4,11,23,.5) 100%),
              linear-gradient(180deg,rgba(92,188,255,.05),transparent 18%)}
+#gl{position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none;opacity:0;transition:opacity .6s var(--ease-out)}
+#gl.live{opacity:1}
 #map{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:grab;touch-action:none;opacity:0;transition:opacity .6s var(--ease-out)}
 #map.live{opacity:1}
 #map.drag{cursor:grabbing}
@@ -519,6 +521,7 @@ body.uni #tg-nav,body.uni #tg-filter{display:none}
       <div class="rail-ft" id="rail-pub" hidden></div>
     </aside>
     <div id="stage">
+      <canvas id="gl" aria-hidden="true"></canvas>
       <canvas id="map"></canvas>
       <div class="stage-crumb" id="crumb"></div>
       <div class="stage-tools">
@@ -1069,6 +1072,7 @@ function allNodes(n,fn){ fn(n); n.children.forEach(c=>allNodes(c,fn)); }
    ============================================================ */
 let W=0,H=0,DPR=1;
 const cv=document.getElementById('map');
+const glcv=document.getElementById('gl');
 const STAGE_EL=document.getElementById('stage');
 const HINT_EL=document.querySelector('.hint');
 STAGE_EL.addEventListener('pointermove',()=>{ cam.idle=0; },{passive:true});
@@ -1112,6 +1116,117 @@ function resize(){
   W=r.width; H=r.height;
   cv.width=Math.max(1,Math.round(W*DPR));
   cv.height=Math.max(1,Math.round(H*DPR));
+  if(glcv){ glcv.width=cv.width; glcv.height=cv.height; }
+  if(GL) GL.gl.viewport(0,0,glcv.width,glcv.height);
+}
+
+/* ── WebGL 바닥층 ────────────────────────────────────────────
+   별밭 배경과 다섯 은하 원반은 2D 캔버스 밑의 WebGL 캔버스가 그린다.
+   원반은 원근이 큰 평면(파고든 화면에서 앞가장자리 1.9× · 뒷가장자리 .7×)이라
+   2D 의 affine 띠로는 이음매가 남는다. 텍스처 사각형 하나를 w 로 보간하면
+   정확하고 이음매가 없으며, 프레임 비용은 quad 여덟 개다.
+   WebGL 이 없거나 컨텍스트를 잃으면 2D 띠 매핑으로 돌아간다. */
+let GL=null;
+function initGL(){
+  if(!glcv) return;
+  let gl=null;
+  try{ gl=glcv.getContext('webgl',{alpha:true,premultipliedAlpha:true,antialias:false,depth:false,stencil:false,preserveDrawingBuffer:false}); }catch(e){ gl=null; }
+  if(!gl) return;
+  const VS='attribute vec4 a_pos;attribute vec2 a_uv;varying vec2 v_uv;void main(){v_uv=a_uv;gl_Position=a_pos;}';
+  const FS='precision mediump float;varying vec2 v_uv;uniform sampler2D u_tex;uniform float u_alpha;void main(){gl_FragColor=texture2D(u_tex,v_uv)*u_alpha;}';
+  const sh=(t,src)=>{ const o=gl.createShader(t); gl.shaderSource(o,src); gl.compileShader(o); if(!gl.getShaderParameter(o,gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(o)); return o; };
+  let prog;
+  try{
+    prog=gl.createProgram(); gl.attachShader(prog,sh(gl.VERTEX_SHADER,VS)); gl.attachShader(prog,sh(gl.FRAGMENT_SHADER,FS)); gl.linkProgram(prog);
+    if(!gl.getProgramParameter(prog,gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(prog));
+  }catch(e){ return; }
+  gl.useProgram(prog);
+  const buf=gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER,buf);
+  const aPos=gl.getAttribLocation(prog,'a_pos'), aUv=gl.getAttribLocation(prog,'a_uv');
+  gl.enableVertexAttribArray(aPos); gl.enableVertexAttribArray(aUv);
+  gl.vertexAttribPointer(aPos,4,gl.FLOAT,false,24,0);
+  gl.vertexAttribPointer(aUv,2,gl.FLOAT,false,24,16);
+  gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL,true);
+  gl.enable(gl.BLEND);
+  GL={gl,prog,buf,uAlpha:gl.getUniformLocation(prog,'u_alpha'),uTex:gl.getUniformLocation(prog,'u_tex'),verts:new Float32Array(24)};
+  gl.uniform1i(GL.uTex,0);
+  glcv.addEventListener('webglcontextlost',e=>{ e.preventDefault(); GL=null; glcv.style.display='none'; },false);
+  gl.viewport(0,0,glcv.width,glcv.height);
+}
+/* 캔버스 → 텍스처. 같은 캔버스는 한 번만 올리고, 다시 구우면(ver) 다시 올린다 */
+function glTexture(src,mip){
+  const gl=GL.gl;
+  if(src.__gltex && src.__glver===(src.__ver||0)) return src.__gltex;
+  const t=src.__gltex||gl.createTexture();
+  gl.bindTexture(gl.TEXTURE_2D,t);
+  gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,src);
+  gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);
+  gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);
+  gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);
+  if(mip){ gl.generateMipmap(gl.TEXTURE_2D); gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR_MIPMAP_LINEAR); }
+  else gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);
+  src.__gltex=t; src.__glver=(src.__ver||0);
+  return t;
+}
+/* 화면 사각형(픽셀 좌표, w=1) */
+function glQuadRect(tex,x0,y0,x1,y1,alpha,additive){
+  const v=GL.verts, gl=GL.gl;
+  const X0=x0/W*2-1, X1=x1/W*2-1, Y0=1-y0/H*2, Y1=1-y1/H*2;
+  v.set([X0,Y0,0,1, 0,0,  X1,Y0,0,1, 1,0,  X0,Y1,0,1, 0,1,  X1,Y1,0,1, 1,1]);
+  glDrawQuad(tex,alpha,additive);
+}
+function glDrawQuad(tex,alpha,additive){
+  const gl=GL.gl;
+  gl.blendFunc(gl.ONE, additive?gl.ONE:gl.ONE_MINUS_SRC_ALPHA);
+  gl.bindTexture(gl.TEXTURE_2D,tex);
+  gl.uniform1f(GL.uAlpha,alpha);
+  gl.bufferData(gl.ARRAY_BUFFER,GL.verts,gl.DYNAMIC_DRAW);
+  gl.drawArrays(gl.TRIANGLE_STRIP,0,4);
+}
+/* 한 Galaxy 의 원반 — 네 모서리를 엔진의 투영으로 찍고 w=1/k 로 원근 보간 */
+let texBuiltThisFrame=false;
+function galaxyTex(g){
+  if(g.tex) return g.tex;
+  if(texBuiltThisFrame) return null;              /* 프레임당 하나 — 다음 프레임에 다음 은하 */
+  texBuiltThisFrame=true;
+  return (g.tex=buildGalaxyTexture(g));
+}
+function glGalaxyQuad(g,alpha){
+  const tex=galaxyTex(g);
+  if(!tex) return;
+  const R=GAL_R*(1+0.17*galaxyAmt), rot=spin*Math.PI/180, cr=Math.cos(rot), sr=Math.sin(rot);
+  const v=GL.verts; let o=0;
+  [[-1,-1],[1,-1],[-1,1],[1,1]].forEach(([u,w2])=>{
+    const x=u*R, z=w2*R, wx=x*cr-z*sr, wz=x*sr+z*cr;
+    const p=project(wx,0,wz);
+    const ww=Math.max(160,FOV+p.z)/FOV;                      /* = 1/k, project() 의 클램프와 같게 */
+    const X=((W/2)+p.sx*cam.zoom+cam.px)/W*2-1, Y=1-((H/2)+p.sy*cam.zoom+cam.py)/H*2;
+    v[o++]=X*ww; v[o++]=Y*ww; v[o++]=0; v[o++]=ww; v[o++]=(u+1)/2; v[o++]=(w2+1)/2;
+  });
+  glDrawQuad(glTexture(tex,true),alpha,true);
+}
+/* 프레임의 바닥: 배경 → 시차 별밭 → 다섯 원반 */
+function glFrame(){
+  const gl=GL.gl;
+  gl.clearColor(0,0,0,0); gl.clear(gl.COLOR_BUFFER_BIT);
+  if(!BG) buildBackdrop();
+  if(BG) glQuadRect(glTexture(BG,false),0,0,W,H,1,false);
+  if(BG2&&QUALITY>0){
+    const H2=BG2.height/DPR;
+    let dx=-cam.px*.06+cam.yaw*80, dy=-H*.06-cam.py*.06;
+    dx=((dx%W)+W)%W;
+    const t=glTexture(BG2,false);
+    glQuadRect(t,dx-W,dy,dx,dy+H2,1,false);
+    glQuadRect(t,dx,dy,dx+W,dy+H2,1,false);
+  }
+  GALAXIES.forEach(g=>{
+    const inFocus=(g===ACTIVE&&!universeMode), back=(!inFocus&&!universeMode);
+    withGalaxy(g,()=>{
+      const A=(0.18+0.5*galaxyAmt+0.22*uAmt)*(back?0.2:1);
+      if(A>.01) glGalaxyQuad(g,A);
+    });
+  });
+  bindGalaxy(ACTIVE);
 }
 /* ---- baked backdrop: nebula and stars, nothing else -------------------
    The grid and the circuit traces are gone; a lattice drawn over a star
@@ -1119,7 +1234,8 @@ function resize(){
 let BG=null, BG2=null;
 function buildBackdrop(){
   if(W<2||H<2) return;
-  BG=document.createElement('canvas');
+  if(GL){ [BG,BG2].forEach(c=>{ if(c&&c.__gltex) GL.gl.deleteTexture(c.__gltex); }); }
+  BG=document.createElement('canvas'); BG.__ver=(BG.__ver||0)+1;
   BG.width=Math.round(W*DPR); BG.height=Math.round(H*DPR);
   const g=BG.getContext('2d'); g.setTransform(DPR,0,0,DPR,0,0);
   /* 등대 뒤의 빛 웅덩이 한 겹 — 중앙 4겹 중 2겹을 덜어 냈다 */
@@ -1143,6 +1259,20 @@ function buildBackdrop(){
     const x=Math.random()*W, y=Math.random()*H, r=Math.random();
     g.fillStyle='rgba(208,228,250,'+(0.05+r*0.11).toFixed(3)+')';
     const s2=.6+r*.4; g.fillRect(x,y,s2,s2);
+  }
+  for(let i=0;i<1800;i++){
+    const x=Math.random()*W, y=Math.random()*H, r=Math.random();
+    g.fillStyle='rgba(200,222,248,'+(0.03+r*0.07).toFixed(3)+')';
+    const s2=.4+r*.5; g.fillRect(x,y,s2,s2);
+  }
+  /* 먼 은하 몇 — 기울어진 타원 얼룩 */
+  for(let i=0;i<8;i++){
+    const x=Math.random()*W, y=Math.random()*H, rx=5+Math.random()*9, ry=rx*(.3+Math.random()*.45), rt=Math.random()*Math.PI;
+    g.save(); g.translate(x,y); g.rotate(rt);
+    const dg=g.createRadialGradient(0,0,0,0,0,rx);
+    dg.addColorStop(0,'rgba(255,240,220,.16)'); dg.addColorStop(.35,'rgba(220,225,245,.07)'); dg.addColorStop(1,'rgba(200,215,245,0)');
+    g.fillStyle=dg; g.beginPath(); g.ellipse(0,0,rx,ry,0,0,Math.PI*2); g.fill();
+    g.restore();
   }
   for(let i=0;i<110;i++){
     const x=Math.random()*W, y=Math.random()*H, warm=Math.random()<.3;
@@ -1270,6 +1400,7 @@ function bloom(){
     SCx.clearRect(0,0,w,h);
     /* 색은 남기고 밝기만 덜어 낸다 — 번짐이 아니라 발광. 1/4 버퍼에만 건다 */
     try{ SCx.filter = QUALITY===2 ? 'saturate(1.6) brightness(.9)' : 'none'; }catch(e){}
+    if(GL) SCx.drawImage(glcv,0,0,w,h);
     SCx.drawImage(cv,0,0,w,h);
     try{ SCx.filter='none'; }catch(e){}
   }
@@ -1593,7 +1724,8 @@ function draw(ts){
   ctx.setTransform(DPR,0,0,DPR,0,0);
   ctx.clearRect(0,0,W,H);
 
-  drawBackdrop();
+  texBuiltThisFrame=false;
+  if(GL) glFrame(); else drawBackdrop();
 
   /* Galaxy는 1~2초에 걸쳐 열리고, 열리면서 판이 커진다. 세계가 미끄러지는
      동안에도 따라가며 다시 잡고, 멈추면 손을 뗀다. */
@@ -1683,7 +1815,7 @@ function drawPlaneStatic(){
   RADII.slice(1).forEach((r,i)=>{
     const last=(i===RADII.length-2);
     if(last) ctx.setLineDash([2,7]);
-    poly(ring(r,96),RGBA(AC,[.07,.05,.035][i]||.035),1,true);
+    poly(ring(r,96),RGBA(AC,[.045,.035,.025][i]||.025),1,true);
     ctx.setLineDash([]);
   });
   /* 컴퍼스 틱 — 바깥 링 위 30° 마다, 0/90/180/270° 는 길게. cached 층이라 프레임 비용 0 */
@@ -1692,7 +1824,7 @@ function drawPlaneStatic(){
     const a=i/12*Math.PI*2, big=(i%3===0), L=big?6:3;
     const p0=pt(Math.cos(a)*Rt,0,Math.sin(a)*Rt);
     const dx=p0[0]-c[0], dy=p0[1]-c[1], dl=Math.hypot(dx,dy)||1;
-    ctx.strokeStyle=RGBA(AC,big?.30:.18); ctx.lineWidth=1;
+    ctx.strokeStyle=RGBA(AC,big?.20:.12); ctx.lineWidth=1;
     ctx.beginPath(); ctx.moveTo(p0[0],p0[1]); ctx.lineTo(p0[0]+dx/dl*L,p0[1]+dy/dl*L); ctx.stroke();
   }
   ctx.restore();
@@ -2572,41 +2704,183 @@ try{ const v=localStorage.getItem('orun.linkfx'); if(v&&LINKFX.some(f=>f.id===v)
    once. Grade colour stops being useful there — nothing is being compared —
    so the whole lattice goes silver and reads as one galaxy. */
 /* SILVER·galaxyAmt·GDUST 는 Galaxy 상태 — buildGalaxyState 가 만든다 */
+/* ── 실사 은하 ────────────────────────────────────────────────
+   원반은 점 무리가 아니라 사진이다. Galaxy 마다 한 번 굽는 1024² 텍스처:
+   지수 원반 + 로그 나선 팔(그랜드 / 막대 / 플로큘런트 / 고리 / 세 팔) +
+   팔 안쪽의 먼지 띠(빛을 지우는 destination-out) + 별 9천 + HII 영역 +
+   따뜻한 벌지·코어. 시드가 고정이라 열 때마다 같은 은하다.
+   원반 평면에는 깊이 방향 띠 36개로 나눠 얹는다 — 띠마다 affine 이라
+   원근이 맞고, 프레임 비용은 drawImage 36번뿐이다. */
+const GAL_R=596*1.25, TEX=1024, TEXR=470;
+const GAL_TYPES={
+  vocab:  {arms:2,pitch:.27,bar:0,  bulge:.10,dust:1.0,hii:1.0,scatter:.10,ring:0,  spread:1.0},
+  grammar:{arms:2,pitch:.23,bar:.24,bulge:.13,dust:1.1,hii:.8, scatter:.12,ring:0,  spread:1.0},
+  syntax: {arms:5,pitch:.42,bar:0,  bulge:.08,dust:.7, hii:1.3,scatter:.24,ring:0,  spread:.92},
+  usage:  {arms:2,pitch:.20,bar:0,  bulge:.07,dust:.6, hii:.9, scatter:.09,ring:.52,spread:1.0},
+  reading:{arms:3,pitch:.31,bar:0,  bulge:.11,dust:.9, hii:1.1,scatter:.14,ring:0,  spread:1.0},
+};
+function seededRng(seed){
+  let a=seed>>>0;
+  return function(){ a=(a+0x6D2B79F5)|0; let t=a; t=Math.imul(t^(t>>>15),t|1); t^=t+Math.imul(t^(t>>>7),t|61); return ((t^(t>>>14))>>>0)/4294967296; };
+}
+const SPR={};
+function sprite(col,size){
+  const key=col.join(',')+'|'+size;
+  if(SPR[key]) return SPR[key];
+  const c=document.createElement('canvas'); c.width=c.height=size;
+  const g=c.getContext('2d');
+  const gr=g.createRadialGradient(size/2,size/2,0,size/2,size/2,size/2);
+  gr.addColorStop(0,RGBA(col,1)); gr.addColorStop(.3,RGBA(col,.55)); gr.addColorStop(1,RGBA(col,0));
+  g.fillStyle=gr; g.fillRect(0,0,size,size);
+  return SPR[key]=c;
+}
+function buildGalaxyTexture(gal){
+  const P=GAL_TYPES[gal.id]||GAL_TYPES.vocab;
+  const rnd=seededRng(gal.id.split('').reduce((a,ch)=>(a*31+ch.charCodeAt(0))|0,7));
+  const gauss=()=>{ let u=0,v=0; while(!u)u=rnd(); while(!v)v=rnd(); return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v); };
+  const AC=gal.accent, WH=[255,255,255];
+  const warm=[255,238,205], warm2=[255,222,168];
+  const armC=mxc3(mxc3(AC,[196,220,255],.45),WH,.15);      /* 팔 — 액센트를 띤 청백 */
+  const armC2=mxc3(AC,WH,.35);
+  const hiiC=[255,128,176], obC=[170,205,255], dustTint=[70,42,28];
+  const cv2=document.createElement('canvas'); cv2.width=cv2.height=TEX;
+  const g=cv2.getContext('2d');
+  const C=TEX/2, b=Math.tan(P.pitch), r0=TEXR*0.06;
+  const armAngle=(r,m)=>Math.log(Math.max(r,r0)/r0)/b + m*2*Math.PI/P.arms;
+  const place=(r,m,scat)=>{ const th=armAngle(r,m)+gauss()*scat; return [C+Math.cos(th)*r, C+Math.sin(th)*r]; };
+  const rDisc=()=>{ let r; do{ r=-Math.log(1-rnd())*TEXR*0.33*P.spread; }while(r>TEXR*0.98); return r; };
+  const rRing=()=>Math.min(TEXR*.95,Math.max(0,TEXR*P.ring+gauss()*TEXR*.10));
+  const rArm=()=>P.ring?rRing():rDisc();
+
+  /* 1. 지수 원반의 바탕 빛 */
+  let gr=g.createRadialGradient(C,C,0,C,C,TEXR);
+  gr.addColorStop(0,RGBA(warm,.42)); gr.addColorStop(.18,RGBA(mxc3(warm2,AC,.25),.22));
+  gr.addColorStop(.5,RGBA(mxc3(AC,[120,150,210],.4),.09)); gr.addColorStop(1,RGBA(AC,0));
+  g.fillStyle=gr; g.fillRect(0,0,TEX,TEX);
+  /* 2. 팔의 퍼진 빛 */
+  g.globalCompositeOperation='lighter';
+  for(let i=0;i<6400;i++){
+    const r=rArm(), m=i%P.arms, t=r/TEXR;
+    const wide=i%3===0;                                   /* 셋에 하나는 팔 사이로 번진다 */
+    const [x,y]=place(r,m,P.scatter*(wide?3.4:2.0));
+    const col=t<.25?mxc3(warm2,armC,t*4):armC;
+    const sz=(wide?26:14)+rnd()*30, a=(wide?.018:.032+rnd()*.045)*(1-t*.5);
+    g.globalAlpha=a; g.drawImage(sprite(col,32),x-sz/2,y-sz/2,sz,sz);
+  }
+  /* 팔 사이의 늙은 별 원반 — 지수 분포, 아주 옅게 */
+  for(let i=0;i<2600;i++){
+    const r=rDisc(), th=rnd()*Math.PI*2, t=r/TEXR;
+    const x=C+Math.cos(th)*r, y=C+Math.sin(th)*r;
+    const sz=rnd()<.9?1+rnd():2+rnd(), a=(.10+rnd()*.25)*(1-t*.4);
+    g.globalAlpha=a; g.fillStyle=RGBA(t<.3?warm2:armC2,1); g.fillRect(x-sz/2,y-sz/2,sz,sz);
+  }
+  /* 고리 은하의 안쪽 원반 — 고리만 있으면 만화가 된다 */
+  if(P.ring){
+    for(let i=0;i<1400;i++){
+      const r=rDisc()*.55, th=rnd()*Math.PI*2, sz=12+rnd()*24, a=.02+rnd()*.03;
+      g.globalAlpha=a; g.drawImage(sprite(armC2,32),C+Math.cos(th)*r-sz/2,C+Math.sin(th)*r-sz/2,sz,sz);
+    }
+  }
+  /* 막대 */
+  if(P.bar){
+    for(let i=0;i<1800;i++){
+      const u=(rnd()*2-1)*P.bar*TEXR, v=gauss()*TEXR*.045*(1-Math.abs(u)/(P.bar*TEXR)*.5);
+      const sz=6+rnd()*14, a=.06+rnd()*.08;
+      g.globalAlpha=a; g.drawImage(sprite(warm2,32),C+u-sz/2,C+v-sz/2,sz,sz);
+    }
+  }
+  /* 3. 먼지 띠 — 팔 안쪽 가장자리에서 빛을 지운다, 살짝 갈색으로 붉어진다 */
+  const nd=Math.round(1400*P.dust);
+  for(let i=0;i<nd;i++){
+    const r=P.ring?rRing():TEXR*0.12+rnd()*TEXR*.7, m=i%P.arms;
+    const th=armAngle(r,m)-0.10-rnd()*.08+gauss()*.04;
+    const x=C+Math.cos(th)*r, y=C+Math.sin(th)*r;
+    const sz=10+rnd()*22;
+    g.globalCompositeOperation='destination-out'; g.globalAlpha=.22+rnd()*.28;
+    g.drawImage(sprite(WH,32),x-sz/2,y-sz/2,sz,sz);
+    g.globalCompositeOperation='lighter'; g.globalAlpha=.05;
+    g.drawImage(sprite(dustTint,32),x-sz/2,y-sz/2,sz,sz);
+  }
+  /* 4. 별 9천 — 벌지는 따뜻하고 둥글게, 팔은 청백으로 촘촘하게 */
+  g.globalCompositeOperation='lighter';
+  for(let i=0;i<9000;i++){
+    let x,y,col;
+    if(i<2600){
+      const r=Math.abs(gauss())*TEXR*P.bulge*1.7, th=rnd()*Math.PI*2;
+      x=C+Math.cos(th)*r; y=C+Math.sin(th)*r*.85; col=warm;
+    } else {
+      const r=rArm(), m=i%P.arms;
+      [x,y]=place(r,m,P.scatter*1.1);
+      col= rnd()<.25? warm2 : (rnd()<.5?armC:armC2);
+    }
+    const sz=rnd()<.85?1+rnd()*1.2:2+rnd()*1.6, a=.25+rnd()*.6;
+    g.globalAlpha=a; g.fillStyle=RGBA(col,1); g.fillRect(x-sz/2,y-sz/2,sz,sz);
+  }
+  /* 5. HII 영역(분홍)과 OB 성협(푸른) — 팔의 앞자락 */
+  const nh=Math.round(130*P.hii);
+  for(let i=0;i<nh;i++){
+    const r=P.ring?rRing():TEXR*.15+rnd()*TEXR*.7, m=i%P.arms;
+    const [x,y]=place(r,m,P.scatter*.6);
+    const sz=8+rnd()*14;
+    g.globalAlpha=.22+rnd()*.28; g.drawImage(sprite(hiiC,32),x-sz/2,y-sz/2,sz,sz);
+    if(rnd()<.6){ const s2=5+rnd()*9; g.globalAlpha=.3; g.drawImage(sprite(obC,32),x+gauss()*6-s2/2,y+gauss()*6-s2/2,s2,s2); }
+  }
+  /* 6. 코어 */
+  g.globalAlpha=1;
+  gr=g.createRadialGradient(C,C,0,C,C,TEXR*.14);
+  gr.addColorStop(0,'rgba(255,250,238,.80)'); gr.addColorStop(.25,RGBA(warm,.5)); gr.addColorStop(.6,RGBA(warm2,.16)); gr.addColorStop(1,RGBA(warm2,0));
+  g.fillStyle=gr; g.fillRect(0,0,TEX,TEX);
+  /* 7. 헤일로 + 가장자리 페이드 */
+  g.globalCompositeOperation='source-over';
+  gr=g.createRadialGradient(C,C,TEXR*.6,C,C,TEXR*1.08);
+  gr.addColorStop(0,RGBA(AC,.05)); gr.addColorStop(1,RGBA(AC,0));
+  g.fillStyle=gr; g.fillRect(0,0,TEX,TEX);
+  g.globalCompositeOperation='destination-in';
+  gr=g.createRadialGradient(C,C,TEXR*.78,C,C,TEXR*1.08);
+  gr.addColorStop(0,'rgba(0,0,0,1)'); gr.addColorStop(1,'rgba(0,0,0,0)');
+  g.fillStyle=gr; g.fillRect(0,0,TEX,TEX);
+  g.globalCompositeOperation='source-over';
+  return cv2;
+}
+/* 텍스처를 원반 평면에 띠로 얹는다. 회전은 노드 고리와 같은 spin 을 쓴다 —
+   별(노드)이 팔 위에 앉은 채 원반이 통째로 돈다. */
+function drawGalaxyTex(){
+  const tex=galaxyTex(CURG);
+  if(!tex) return;
+  const A=(0.18+0.5*galaxyAmt+0.22*uAmt)*GDIM;
+  if(A<=.01) return;
+  const R=GAL_R*(1+0.17*galaxyAmt);
+  const rot=spin*Math.PI/180, cr=Math.cos(rot), sr=Math.sin(rot);
+  const wp=(x,z)=>pt(x*cr-z*sr,0,x*sr+z*cr);
+  const N=QUALITY===2?32:16, rows=TEX/N;             /* 정수 행 — 반올림 띠가 생기지 않는다 */
+  ctx.save(); ctx.globalCompositeOperation='lighter'; ctx.globalAlpha=A;
+  for(let i=0;i<N;i++){
+    const w0=-R+i*2*R/N, w1=w0+2*R/N;
+    const Pa=wp(-R,w0), Pb=wp(R,w0), Pc=wp(-R,w1);
+    const ax=(Pb[0]-Pa[0])/(2*R), ay=(Pb[1]-Pa[1])/(2*R);
+    const bx=(Pc[0]-Pa[0])/(w1-w0), by=(Pc[1]-Pa[1])/(w1-w0);
+    ctx.setTransform(DPR*ax,DPR*ay,DPR*bx,DPR*by,DPR*Pa[0],DPR*Pa[1]);
+    ctx.drawImage(tex,0,i*rows,TEX,rows,0,0,2*R,(w1-w0));
+  }
+  ctx.setTransform(DPR,0,0,DPR,0,0);
+  ctx.restore();
+}
 function drawGalaxy(){
+  if(!GL) drawGalaxyTex();                       /* WebGL 이 없을 때만 2D 띠 매핑 */
   if(galaxyAmt<=.01) return;
   const A=galaxyAmt*GDIM;
   const AC=ACCENT||[41,168,255];
   const P=(CURG&&CURG.pal)||{mid:AC,pale:AC,deep:AC};
   ctx.save(); ctx.globalCompositeOperation='lighter';
-  /* the halo the arms sit in — Galaxy 색 4톤으로 물든 성운 */
+  /* 바깥 헤일로 한 겹 — 블룸의 씨앗 */
   const c=pt(0,-40,0), k=c[2]*cam.zoom, sq=Math.max(.18,Math.cos(cam.pitch));
   const R=RADII[3]*1.35*k;
   const hg=ctx.createRadialGradient(c[0],c[1],0,c[0],c[1],R);
-  hg.addColorStop(0,RGBA(P.mid,(universeMode?.32:.24)*A));
-  hg.addColorStop(.30,RGBA(AC,.11*A));
-  hg.addColorStop(.68,RGBA(P.deep,.05*A));
+  hg.addColorStop(0,RGBA(P.mid,.10*A));
+  hg.addColorStop(.4,RGBA(AC,.05*A));
   hg.addColorStop(1,RGBA(P.deep,0));
   ctx.fillStyle=hg;
   ctx.beginPath(); ctx.ellipse(c[0],c[1],R,R*sq,0,0,Math.PI*2); ctx.fill();
-  /* dust in the plane of the lattice — 성긴 Galaxy 는 조금 더 진하게, 거버너가 내려가면 수를 줄인다 */
-  const RIM2=RADII[RADII.length-1]||600;
-  const dc=(CURG&&CURG.dustCol)||[228,240,255];
-  const sparse=(live.length<60?1.6:1)*(universeMode?2.6:1);   /* 우주에서는 먼지가 원반 자체다 */
-  const szf=universeMode?1.0:.35, szm=universeMode?1.5:1;
-  const N=QUALITY<2?Math.min(420,GDUST.length):GDUST.length;
-  for(let i=0;i<N;i++){
-    const d=GDUST[i];
-    if(motionOn) d.a+=d.s*0.00035;
-    const rr=d.r*(1+0.17*galaxyAmt), zx=Math.sin(d.a)*rr, tR=Math.min(1.35,rr/RIM2);
-    const yy=(Math.sin(d.a*1.0+0.55)*54*Math.pow(tR,1.7)
-              + d.y*(1+2.2*Math.exp(-tR*tR*2.4)))*galaxyAmt;
-    const q=pt(Math.cos(d.a)*rr,yy,zx);
-    const kk=q[2]*cam.zoom, sz=Math.max(szf,(0.4+d.b*1.0)*kk*szm);
-    const al=Math.min(.9,(0.06+d.b*0.50)*(universeMode?Math.max(.85,fog(q[3])):fog(q[3]))*A*sparse);
-    ctx.fillStyle=RGBA(dc,al);
-    if(sz<1.2){ ctx.fillRect(q[0],q[1],sz,sz); }
-    else { ctx.beginPath(); ctx.arc(q[0],q[1],sz,0,Math.PI*2); ctx.fill(); }
-  }
   ctx.restore();
 }
 function drawLinks(){
@@ -6606,8 +6880,9 @@ async function boot(){
   modePose();
   cam.yaw=cam.tyaw; cam.pitch=cam.tpitch;
   refit(); renderRails(); renderCrumb();
+  initGL();
   requestAnimationFrame(draw);
-  requestAnimationFrame(()=>cv.classList.add('live'));
+  requestAnimationFrame(()=>{ cv.classList.add('live'); if(glcv) glcv.classList.add('live'); });
   boot();
 })();
 </script>
