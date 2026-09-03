@@ -2120,6 +2120,52 @@ footer.site{background:var(--panel);border-top:1px solid var(--line);margin-top:
 .ci .cnt.on{color:var(--acc);font-weight:700;margin-right:-5px}
 .ci .cnt.on::after{content:'/';margin-left:5px;color:var(--line4);font-weight:400}
 
+
+/* ═══ 학교별 기출 유형 ═══ */
+.sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.scard{position:relative;display:flex;gap:14px;align-items:flex-start;background:var(--panel,#fff);border:1px solid var(--line);border-radius:8px;padding:16px 18px;cursor:pointer;transition:border-color .18s,background .18s}
+.scard:hover{border-color:var(--line4,#b9b7b1);background:var(--hov,#fbfaf8)}
+.slg{flex:none;width:64px;height:64px;border-radius:8px;background:#fff;border:1px solid var(--line2,#efeee9);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.slg img{max-width:52px;max-height:52px;object-fit:contain}
+.slg i{font-style:normal;font-weight:700;font-size:17px;letter-spacing:-.02em;color:var(--sub2);word-break:keep-all;text-align:center;line-height:1.15}
+.slg.big i{font-size:22px}
+.slg.big{width:84px;height:84px}.slg.big img{max-width:70px;max-height:70px}
+.scard .sbd{flex:1;min-width:0}
+.scard .sbd b{display:block;font-size:15px;font-weight:700;color:var(--ink);word-break:keep-all;padding-right:30px}
+.scard .sbd i{display:block;font-style:normal;font-size:12px;color:var(--sub2);margin-top:3px}
+.scard .sgr{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.scard .sgr span{font-size:11.5px;font-weight:600;padding:3px 8px;border:1px solid var(--line);border-radius:6px;color:var(--ink)}
+.scard .sgr em{font-style:normal;font-family:var(--mono);font-weight:600;color:var(--acc);margin-left:3px}
+.scard .stp{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px}
+.scard .stp span{font-size:11px;color:var(--sub2);background:var(--line2,#efeee9);border-radius:4px;padding:2px 7px;word-break:keep-all}
+.scard .no{position:absolute;top:14px;right:16px;font-family:var(--mono);font-size:11px;color:var(--sub2)}
+.scard .go{position:absolute;right:16px;bottom:14px;color:var(--sub2);font-size:13px}
+.shead{display:flex;gap:18px;align-items:center;margin-bottom:14px}
+.shead .sinfo{flex:1;min-width:0}
+.shead .eb{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;color:var(--sub2);font-weight:600;text-transform:uppercase}
+.shead h2{margin:4px 0 4px;font-size:22px;font-weight:700;letter-spacing:-.01em;color:var(--ink)}
+.shead p{margin:0 0 10px;font-size:12.5px;color:var(--sub2);word-break:keep-all}
+.gtabs.sg{max-width:420px;margin-bottom:0}
+.gtabs.sg em{font-style:normal;font-family:var(--mono);font-weight:600;color:var(--acc);margin-left:2px}
+.sanal{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:12px;margin-bottom:14px}
+@media(max-width:1100px){.sanal{grid-template-columns:1fr}}
+.wbars{display:flex;flex-direction:column;gap:3px}
+.wb{display:grid;grid-template-columns:150px 1fr 28px;align-items:center;gap:10px;border:1px solid transparent;background:none;padding:4px 8px;border-radius:6px;cursor:pointer;text-align:left;font:inherit;color:var(--ink)}
+.wb:hover{background:var(--hov,#f5f4f0)}
+.wb.on{border-color:var(--accLine,#b9cfe8);background:var(--accSoft,#eaf1fa)}
+.wb .wl{font-size:12.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wb .wt{height:8px;background:var(--line2,#efeee9);border-radius:4px;overflow:hidden}
+.wb .wt i{display:block;height:100%;background:var(--acc);border-radius:4px}
+.wb em{font-style:normal;font-family:var(--mono);font-size:11.5px;text-align:right;color:var(--sub2)}
+.flist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.flist li{display:flex;justify-content:space-between;gap:10px;font-size:12.5px;line-height:1.45;padding:6px 0;border-bottom:1px solid var(--line2,#efeee9);word-break:keep-all}
+.flist li:last-child{border-bottom:0}
+.flist em{font-style:normal;font-family:var(--mono);color:var(--sub2);flex:none}
+.snote{margin:10px 0 0;font-size:12px;color:var(--sub2);line-height:1.55;word-break:keep-all}
+/* 시험지 머리 — 학교 로고 (신규 클래스, 기존 .sheet 규칙 무변경) */
+.exh .exslg{flex:none;align-self:center;margin-left:10px;padding-left:10px;border-left:1px solid #e6ebf2;display:flex;align-items:center}
+.exh .exslg img{height:34px;width:auto;max-width:60px;object-fit:contain;display:block}
+
 /* ══ 시험지 ══ */
 #paper{display:none}
 .sheet{background:#fff;width:210mm;height:297mm;overflow:hidden;margin:0 auto 16px;padding:14mm 13mm 15mm;position:relative;
@@ -2266,6 +2312,9 @@ const CATS=DATA.cats, BOOKS=DATA.books||{}, ORUN=DATA.orun||{ele:{books:[]},mid:
 const COVERS=DATA.covers||{};
 const LOGO=(DATA.logo&&DATA.logo.mark)||'';
 const byId={}; CATS.forEach(c=>byId[c.id]=c);
+/* 학교별 기출 유형 세트 — 문제은행과 같은 문항 구조. byId 에 등록해 폴더·편집·Word 가 그대로 동작한다 */
+const SCHOOLS=DATA.schools||[];
+SCHOOLS.forEach(sc=>(sc.sets||[]).forEach(st=>{st.school=sc.id;st.name=sc.name.replace('학교','')+' '+st.grade+' 기출 유형';st.points=st.points||[];byId[st.id]=st;}));
 const GRADES=['전체','중1','중2','중3','고등'], LVS=['상','중','하'];
 const CIRC=['①','②','③','④','⑤'];
 
@@ -2638,8 +2687,8 @@ const encCfg=c=>'OG2.'+btoa(unescape(encodeURIComponent(JSON.stringify(c))));
 function decCfg(x){try{if(!/^OG[12]\./.test(x))return null;return JSON.parse(decodeURIComponent(escape(atob(x.slice(4)))));}catch(e){return null;}}
 
 /* ── 내비 ── */
-const PAGES=[['home','메인화면'],['wizard','시험지 출제 마법사'],['bank','문제은행'],['books','옳은영어 커리큘럼']];
-function nav(p){S.page=p;if(p!=='take'){S.sheet=null;S.report=null;}
+const PAGES=[['home','메인화면'],['wizard','시험지 출제 마법사'],['bank','문제은행'],['schools','학교별 기출 유형'],['books','옳은영어 커리큘럼']];
+function nav(p){S.page=p;if(p!=='take'){S.sheet=null;S.report=null;} if(p!=='schools') S.school=null;
   try{location.hash=(p==='take'?'take':'');}catch(e){}
   window.scrollTo(0,0);render();}
 function setGrade(g){S.grade=g;S.book=null;S.cat=null;render();}
@@ -2654,6 +2703,8 @@ const PICO={
   home:'<path d="M10.2 20.5h3.6"/><path d="m10.6 20.5.6-9.6h1.6l.6 9.6"/>'+
        '<path d="M9.6 10.9h4.8"/><path d="M12 4.6a1.7 1.7 0 0 1 1.7 1.7v2.3h-3.4V6.3A1.7 1.7 0 0 1 12 4.6z"/>'+
        '<path d="M6.9 5.6 8.4 6.5M17.1 5.6 15.6 6.5M12 2.2v1"/>',
+  /* 학교별 기출 — 교사(校舍)와 깃발 */
+  schools:'<path d="M3.5 20.5h17"/><path d="M5 20.5V10.2l7-4.2 7 4.2v10.3"/><path d="M9.4 20.5v-5.2h5.2v5.2"/><path d="M12 6V2.8h3.6L12 4.6"/><path d="M8.2 12.6h1.6M14.2 12.6h1.6"/>',
   /* 출제 마법사 — 시험지 + 스파크 */
   wizard:'<path d="M5.4 3.4h7.7l5.5 5.5V20a.6.6 0 0 1-.6.6H6a.6.6 0 0 1-.6-.6z"/>'+
          '<path d="M13.1 3.4v5.5h5.5"/><path d="M8.3 12.2h3.6"/>'+
@@ -2676,6 +2727,7 @@ const HEAD={
   home:['ORUN ENGLISH','ORUN GRAMMAR','문제은행 · 시험지 출제 · 교재 커리큘럼 · 성적 리포트를 한곳에서.'],
   wizard:['WORKBOOK STUDIO','시험지 출제 마법사','학년·출판사·단원을 고르고 난이도와 유형 배분을 정하면 A4 시험지·정답지·Word 파일이 한 번에 만들어집니다.'],
   bank:['QUESTION BANK','문제은행','2022 개정 교육과정 문법 항목별 200문항. 모든 문항은 이 화면에서 바로 편집·저장할 수 있습니다.'],
+  schools:['SCHOOL EXAM TYPES','학교별 기출 유형','동작·영등포 중학교 내신 기출을 분석해, 각 학교가 실제로 내는 문법 유형 그대로 만든 객관식 100·주관식 100 문항.'],
   books:['ORUN CURRICULUM','옳은영어 커리큘럼','옳은문법(초등)·ORUN METABOOK(중등) 교재의 모든 시험지를 원문 그대로 열람·편집·인쇄합니다.'],
   take:['STUDENT MODE','학생 응시','응시 코드를 입력하면 같은 시험지가 그대로 열리고, 제출 즉시 성적 리포트가 만들어집니다.'],
   rec:['RECORDS · SYNC','응시 기록 · 편집 동기화','이 브라우저의 응시 기록과 문항 편집본을 관리합니다.']};
@@ -2701,6 +2753,7 @@ function render(){
     return '<button class="'+(S.page===p[0]?'on':'')+'" onclick="nav(\''+p[0]+'\')">'+p[1]+'</button>';}).join('');
   const v=document.getElementById('view');
   v.innerHTML = (S.page==='home'?'':phead()) + (S.page==='home'?homeView():S.page==='wizard'?wizard() : S.page==='bank'?(S.folder?folderView():S.cat?catView():bankView()) :
+                S.page==='schools'?(S.school?schoolView():schoolsView()) :
                 S.page==='books'?booksView() :
                 S.page==='take'?(S.report?reportView():(S.sheet?takeView():takeSetup())) : recView());
   v.classList.toggle('showkey',S.key||(S.page==='books'&&S.bkKey));
@@ -2746,7 +2799,8 @@ function homeView(){
    '<nav class="brows">'+
    row('wizard','01','WORKBOOK STUDIO','시험지 출제 마법사','학년·출판사·단원을 골라 A4 시험지·정답지·Word를 한 번에')+
    row('bank','02','QUESTION BANK','문제은행','항목별 200문항을 눌러 폴더에 담고 그대로 시험지로')+
-   row('books','03','ORUN CURRICULUM','옳은영어 커리큘럼','옳은문법(초등)·ORUN METABOOK(중등) 전 시험지 열람·인쇄')+
+   row('schools','03','SCHOOL EXAM TYPES','학교별 기출 유형','동작·영등포 중학교 기출을 분석해 학교 유형 그대로 만든 객·주 200문항')+
+   row('books','04','ORUN CURRICULUM','옳은영어 커리큘럼','옳은문법(초등)·ORUN METABOOK(중등) 전 시험지 열람·인쇄')+
    '</nav>';
 }
 /* 카운트업 + 마우스 스포트라이트 */
@@ -3646,10 +3700,88 @@ function paperList(qs,head,opt){
     '<div class="exf"><b>ORUN GRAMMAR</b>&nbsp;· '+esc(opt.foot||'옳은영어 문법 플랫폼')+
     '<span class="pg">'+(pi+1)+' / '+tot+'</span></div></div>').join('');
 }
-function listHead(t0,t1,rgt){
+function listHead(t0,t1,rgt,logo){
   return '<div class="exh">'+exLogo()+'<div class="lft"><div class="bar"></div><div>'+
     '<div class="t0">'+esc(t0)+'</div><div class="t1">'+esc(t1)+'</div></div></div>'+
-    '<div class="rgt"><b>옳은영어</b>'+esc(rgt||'')+'</div></div><div style="height:9px"></div>';
+    '<div class="rgt"><b>옳은영어</b>'+esc(rgt||'')+'</div>'+
+    (logo?'<div class="exslg"><img src="'+logo+'" alt=""></div>':'')+'</div><div style="height:9px"></div>';
+}
+
+
+/* ══ 학교별 기출 유형 ══ */
+function schoolsView(){
+  const tot=SCHOOLS.reduce((s,sc)=>s+(sc.sets||[]).reduce((u,st)=>u+st.questions.length,0),0);
+  const nSet=SCHOOLS.reduce((s,sc)=>s+(sc.sets||[]).length,0);
+  const nEx=SCHOOLS.reduce((s,sc)=>s+(sc.sets||[]).reduce((u,st)=>u+(st.exams||[]).length,0),0);
+  return folderRail()+pickBar()+
+   '<div class="stat">'+
+   '<div><b>'+SCHOOLS.length+'</b><span>분석 학교</span></div>'+
+   '<div><b>'+nEx+'</b><span>분석 기출 시험지</span></div>'+
+   '<div><b>'+nSet+'</b><span>학교×학년 세트</span></div>'+
+   '<div><b>'+tot.toLocaleString()+'</b><span>생성 문항 (객·주)</span></div></div>'+
+   '<div class="sgrid">'+SCHOOLS.map((sc,i)=>{
+     const sets=sc.sets||[]; const nq=sets.reduce((u,st)=>u+st.questions.length,0);
+     const cats={}; sets.forEach(st=>Object.keys(st.cats||{}).forEach(k=>{cats[k]=(cats[k]||0)+st.cats[k];}));
+     const top=Object.keys(cats).sort((a,b)=>cats[b]-cats[a]).slice(0,3).map(k=>byId[k]?byId[k].name:k);
+     return '<div class="scard" style="animation-delay:'+(i*20)+'ms" onclick="openSchool(\''+sc.id+'\')">'+
+      '<div class="slg">'+(sc.logo?'<img src="'+sc.logo+'" alt="">':'<i>'+esc(sc.name.replace('학교','').slice(0,2))+'</i>')+'</div>'+
+      '<div class="sbd"><b>'+esc(sc.name)+'</b><i>'+esc(sc.region||'')+' · 기출 '+sets.reduce((u,st)=>u+(st.exams||[]).length,0)+'개 분석</i>'+
+      '<div class="sgr">'+sets.map(st=>'<span>'+esc(st.grade)+' <em>'+st.questions.length+'</em></span>').join('')+'</div>'+
+      '<div class="stp">'+top.map(t=>'<span>'+esc(t)+'</span>').join('')+'</div></div>'+
+      '<span class="no">'+String(i+1).padStart(2,'0')+'</span><span class="go">→</span></div>';}).join('')+'</div>';
+}
+function openSchool(id){ const sc=SCHOOLS.filter(s=>s.id===id)[0]; if(!sc) return;
+  S.school=id; S.sgrade=(sc.sets[0]||{}).grade; S.scat='전체'; S.lv='전체'; S.ty='전체'; S.folder=null; window.scrollTo(0,0); render(); }
+function schoolSet(){ const sc=SCHOOLS.filter(s=>s.id===S.school)[0]; if(!sc) return null;
+  return sc.sets.filter(st=>st.grade===S.sgrade)[0]||sc.sets[0]; }
+function schoolView(){
+  const sc=SCHOOLS.filter(s=>s.id===S.school)[0]; if(!sc) return '';
+  const st=schoolSet(); if(!st) return '';
+  let qs=st.questions;
+  if(S.scat!=='전체') qs=qs.filter(q=>q.cat===S.scat);
+  if(S.lv!=='전체') qs=qs.filter(q=>q.level===S.lv);
+  if(S.ty!=='전체') qs=qs.filter(q=>q.type===(S.ty==='객관식'?'mc':'short'));
+  const full=qs.map(q=>Object.assign({cat:st.name,catId:st.id,grade:st.grade},q));
+  const keys=JSON.stringify(full.map(q=>q.catId+'#'+q.no)).replace(/'/g,'&#39;').replace(/"/g,'&quot;');
+  const catIds=Object.keys(st.cats||{}).sort((a,b)=>st.cats[b]-st.cats[a]);
+  const wmax=Math.max.apply(null,catIds.map(k=>st.cats[k]).concat([1]));
+  const head=listHead('ORUN GRAMMAR · '+sc.name+' '+st.grade+' 기출 유형',
+    sc.name.replace('학교','')+' '+st.grade+' 문법 '+(S.ty==='전체'?'객관식·주관식':S.ty),
+    qs.length+'문항 · '+(S.scat==='전체'?'전 항목':(byId[S.scat]||{}).name||S.scat),sc.logo);
+  const fmtList=(arr,cls)=>(arr||[]).slice(0,6).map(f=>'<li><span>'+esc(f.format)+'</span><em>'+f.n+'</em></li>').join('');
+  return '<div class="crumb" onclick="S.school=null;render()">← 학교별 기출 유형</div>'+
+   '<div class="card solid shead">'+
+    '<div class="slg big">'+(sc.logo?'<img src="'+sc.logo+'" alt="">':'<i>'+esc(sc.name.replace('학교','').slice(0,2))+'</i>')+'</div>'+
+    '<div class="sinfo"><div class="eb">'+esc(sc.region||'')+' · SCHOOL EXAM TYPES</div><h2>'+esc(sc.name)+'</h2>'+
+    '<p>'+esc((st.exams||[]).map(e=>e.title).join(' · ')||'')+'</p>'+
+    '<div class="gtabs sg">'+sc.sets.map(x=>'<button class="'+(x.grade===S.sgrade?'on':'')+'" onclick="S.sgrade=\''+x.grade+'\';S.scat=\'전체\';render()">'+esc(x.grade)+' <em>'+x.questions.length+'</em></button>').join('')+'</div>'+
+    '</div></div>'+
+   '<div class="sanal">'+
+    '<div class="card solid"><div class="ttl">출제 문법 항목 <span class="r">기출 빈도 기준</span></div>'+
+     '<div class="wbars">'+catIds.map(k=>'<button class="wb'+(S.scat===k?' on':'')+'" onclick="S.scat=S.scat===\''+k+'\'?\'전체\':\''+k+'\';render()">'+
+       '<span class="wl">'+esc(byId[k]?byId[k].name:k)+'</span><span class="wt"><i style="width:'+Math.round(st.cats[k]/wmax*100)+'%"></i></span><em>'+st.cats[k]+'</em></button>').join('')+'</div></div>'+
+    '<div class="card solid"><div class="ttl">객관식 출제 형식</div><ul class="flist">'+fmtList(st.mc_formats)+'</ul></div>'+
+    '<div class="card solid"><div class="ttl">서답형 출제 형식</div><ul class="flist">'+fmtList(st.short_formats)+'</ul>'+
+     (st.style&&st.style.notes?'<p class="snote">'+esc(st.style.notes)+'</p>':'')+'</div>'+
+   '</div>'+
+   '<div class="card solid" style="margin-bottom:14px">'+
+   '<div class="tools">'+['전체'].concat(LVS).map(l=>'<button class="pill '+(S.lv===l?'on':'')+'" onclick="S.lv=\''+l+'\';render()">'+l+'</button>').join('')+
+   '<span style="width:8px"></span>'+['전체','객관식','주관식'].map(t=>'<button class="pill '+(S.ty===t?'on':'')+'" onclick="S.ty=\''+t+'\';render()">'+t+'</button>').join('')+
+   (S.scat!=='전체'?'<span class="selchip" style="margin-left:8px"><em>'+esc(st.grade)+'</em>'+esc((byId[S.scat]||{}).name||S.scat)+'<button onclick="S.scat=\'전체\';render()">×</button></span>':'')+
+   '<span style="margin-left:auto;display:flex;gap:7px;align-items:center">'+
+   '<span class="hint">'+qs.length+'문항</span>'+
+   '<button class="btn ghost sm" onclick="pickAll('+keys+')">화면 전체 담기</button>'+
+   '<button class="btn ghost sm" onclick="schoolPrint()">인쇄</button>'+
+   '<button class="btn ghost sm" onclick="catDocx(\''+st.id+'\')">Word 저장</button>'+
+   '<button class="keybtn '+(S.key?'on':'')+'" onclick="S.key=!S.key;render()">'+(S.key?'정답 숨기기':'정답 보기')+'</button></span></div></div>'+
+   pickBar()+
+   '<div class="pvwrap paperlist">'+paperList(full,head,{pick:1,foot:sc.name+' '+st.grade+' 기출 유형'})+'</div>';
+}
+function schoolPrint(){
+  const src=document.querySelector('#view .paperlist'); if(!src) return;
+  const p=document.getElementById('paper'); p.innerHTML=src.innerHTML;
+  Array.prototype.forEach.call(p.querySelectorAll('.sheet'),s=>{s.style.transform='';s.style.margin='';});
+  setTimeout(()=>window.print(),120);
 }
 
 /* ── 3. 학생 응시 ── */
