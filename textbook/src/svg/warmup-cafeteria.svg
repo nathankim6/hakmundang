@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340">
+  <rect width="800" height="340" rx="14" fill="#f6efe2"/>
+  <path d="M0 205h800v121a14 14 0 0 1-14 14H14A14 14 0 0 1 0 326z" fill="#e6dcc7"/>
+  <path d="M0 205h800" stroke="#d6c9ad" stroke-width="3"/>
+  <rect x="42" y="36" width="140" height="92" rx="10" fill="#cfe6f7" stroke="#fff" stroke-width="6"/>
+  <path d="M112 36v92M42 82h140" stroke="#fff" stroke-width="5"/>
+  <circle cx="150" cy="62" r="12" fill="#ffd24d"/>
+  <rect x="268" y="30" width="334" height="88" rx="12" fill="#1b9c85"/>
+  <text x="435" y="66" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="900" font-size="24" fill="#fff">NO PLASTIC TRAYS</text>
+  <text x="435" y="94" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="700" font-size="13.5" fill="#d9f5ec">Reusable trays from today · lunch price +300 won</text>
+  <rect x="700" y="150" width="46" height="55" rx="8" fill="#b58a5e"/>
+  <path d="M723 150c-30-20-40-60-10-70 10 25 12 45 10 70zM723 150c30-25 45-55 15-72-10 20-15 50-15 72z" fill="#5fb37f"/>
+  <rect x="612" y="140" width="66" height="70" rx="8" fill="#3468d6"/>
+  <rect x="606" y="132" width="78" height="14" rx="6" fill="#1f47a3"/>
+  <path d="M645 158l10 17h-20zM630 192l-6-18 18 2zM660 192l6-18-18 2z" fill="#fff" opacity=".9"/>
+  <rect x="200" y="150" width="380" height="58" rx="10" fill="#d9b48a"/>
+  <rect x="190" y="142" width="400" height="14" rx="7" fill="#b58a5e"/>
+  <g>
+    <rect x="230" y="120" width="86" height="24" rx="6" fill="#8fb8de"/><circle cx="252" cy="132" r="7" fill="#f4a261"/><circle cx="275" cy="132" r="7" fill="#7fc97f"/><circle cx="298" cy="132" r="7" fill="#fff"/>
+    <rect x="340" y="120" width="86" height="24" rx="6" fill="#8fb8de"/><circle cx="362" cy="132" r="7" fill="#f4a261"/><circle cx="385" cy="132" r="7" fill="#7fc97f"/><circle cx="408" cy="132" r="7" fill="#fff"/>
+    <rect x="450" y="120" width="86" height="24" rx="6" fill="#8fb8de"/><circle cx="472" cy="132" r="7" fill="#f4a261"/><circle cx="495" cy="132" r="7" fill="#7fc97f"/><circle cx="518" cy="132" r="7" fill="#fff"/>
+  </g>
+  <!-- Mina -->
+  <g transform="translate(120 0)">
+    <path d="M-38 326v-66a38 38 0 0 1 76 0v66z" fill="#f28c6b"/>
+    <rect x="-9" y="236" width="18" height="16" fill="#f6d3b3"/>
+    <circle cy="215" r="30" fill="#f6d3b3"/>
+    <path d="M-30 214a30 30 0 0 1 60 0c-8-8-16-12-30-12s-22 4-30 12z" fill="#3a2a22"/>
+    <circle cx="30" cy="230" r="9" fill="#3a2a22"/>
+    <circle cx="-10" cy="220" r="2.6" fill="#1f2a37"/><circle cx="10" cy="220" r="2.6" fill="#1f2a37"/>
+    <path d="M-7 232q7 6 14 0" fill="none" stroke="#1f2a37" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="34" cy="170" r="14" fill="#fff" stroke="#1f2a37" stroke-width="2"/><text x="34" y="176" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="900" font-size="17" fill="#1f2a37">?</text>
+    <rect x="-30" y="292" width="60" height="22" rx="11" fill="#1f2a37"/><text y="308" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="800" font-size="13" fill="#fff">Mina</text>
+  </g>
+  <!-- Jun -->
+  <g transform="translate(300 0)">
+    <path d="M-38 326v-66a38 38 0 0 1 76 0v66z" fill="#e9c46a"/>
+    <rect x="-9" y="236" width="18" height="16" fill="#d9a179"/>
+    <circle cy="215" r="30" fill="#d9a179"/>
+    <path d="M-30 210a30 30 0 0 1 60 0v-2c-10-4-14-6-30-6s-20 2-30 6z" fill="#2b2b2b"/>
+    <circle cx="-10" cy="220" r="2.6" fill="#1f2a37"/><circle cx="10" cy="220" r="2.6" fill="#1f2a37"/>
+    <path d="M-7 232q7 6 14 0" fill="none" stroke="#1f2a37" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="34" cy="170" r="14" fill="#fff" stroke="#1f2a37" stroke-width="2"/><text x="34" y="176" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="900" font-size="17" fill="#1f2a37">?</text>
+    <rect x="-30" y="292" width="60" height="22" rx="11" fill="#1f2a37"/><text y="308" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="800" font-size="13" fill="#fff">Jun</text>
+  </g>
+  <!-- Sora -->
+  <g transform="translate(490 0)">
+    <path d="M-38 326v-66a38 38 0 0 1 76 0v66z" fill="#8ab17d"/>
+    <rect x="-9" y="236" width="18" height="16" fill="#f2c9a5"/>
+    <path d="M-32 215v40h64v-40z" fill="#5a3b2e"/>
+    <circle cy="215" r="30" fill="#f2c9a5"/>
+    <path d="M-30 214a30 30 0 0 1 60 0c-6-10-14-14-30-14s-24 4-30 14z" fill="#5a3b2e"/>
+    <circle cx="-10" cy="220" r="2.6" fill="#1f2a37"/><circle cx="10" cy="220" r="2.6" fill="#1f2a37"/>
+    <path d="M-7 232q7 6 14 0" fill="none" stroke="#1f2a37" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="34" cy="170" r="14" fill="#fff" stroke="#1f2a37" stroke-width="2"/><text x="34" y="176" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="900" font-size="17" fill="#1f2a37">?</text>
+    <rect x="-30" y="292" width="60" height="22" rx="11" fill="#1f2a37"/><text y="308" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="800" font-size="13" fill="#fff">Sora</text>
+  </g>
+  <!-- Taeo -->
+  <g transform="translate(680 0)">
+    <path d="M-38 326v-66a38 38 0 0 1 76 0v66z" fill="#6fa8dc"/>
+    <rect x="-9" y="236" width="18" height="16" fill="#c98d5f"/>
+    <circle cy="215" r="30" fill="#c98d5f"/>
+    <path d="M-30 208a30 30 0 0 1 60 0v4c-10-6-16-8-30-8s-20 2-30 8z" fill="#1f1f1f"/>
+    <circle cx="-10" cy="220" r="2.6" fill="#1f2a37"/><circle cx="10" cy="220" r="2.6" fill="#1f2a37"/>
+    <path d="M-7 232q7 6 14 0" fill="none" stroke="#1f2a37" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="34" cy="170" r="14" fill="#fff" stroke="#1f2a37" stroke-width="2"/><text x="34" y="176" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="900" font-size="17" fill="#1f2a37">?</text>
+    <rect x="-30" y="292" width="60" height="22" rx="11" fill="#1f2a37"/><text y="308" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="800" font-size="13" fill="#fff">Taeo</text>
+  </g>
+</svg>

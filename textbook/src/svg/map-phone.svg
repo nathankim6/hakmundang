@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470">
+  <defs>
+    <marker id="arrT" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" fill="#1b9c85"/></marker>
+    <marker id="arrA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" fill="#e8842b"/></marker>
+    <marker id="arrI" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5 0 10z" fill="#2e2a5a"/></marker>
+  </defs>
+  <rect width="900" height="470" rx="14" fill="#eef5fa"/>
+  <g fill="#d7e0e8" stroke="#d7e0e8" stroke-width="8" stroke-linejoin="round">
+    <path d="M50 51L200 38 300 77 312 110 262 141 250 166 212 187 187 179 162 153 137 115 100 82z"/>
+    <path d="M337 77L400 51 375 18 300 26 312 56z"/>
+    <path d="M237 204L255 210 300 217 362 243 350 281 325 307 305 332 280 371 270 345 262 281 250 243z"/>
+    <path d="M425 120L450 102 475 89 512 51 550 56 537 115 520 128 487 128 437 138z"/>
+    <path d="M407 192L425 141 475 135 530 151 557 199 577 202 550 243 537 294 512 317 487 294 480 243 470 217 430 217z"/>
+    <path d="M550 56L625 38 700 31 800 46 900 56 875 77 800 102 775 115 755 153 725 179 712 210 700 192 675 174 650 210 630 179 617 166 592 166 562 153 537 135 525 115 570 102z"/>
+    <ellipse cx="800" cy="135" rx="9" ry="26" transform="rotate(20 800 135)"/>
+    <path d="M700 225L760 232 790 245 760 255 710 245z"/>
+    <path d="M737 286L775 261 812 268 832 299 825 327 800 327 775 312 737 317 732 297z"/>
+  </g>
+  <!-- flows: mining -> China -->
+  <g fill="none" stroke="#1b9c85" stroke-width="3.5" stroke-dasharray="1 0" marker-end="url(#arrT)" opacity=".95">
+    <path d="M285 296Q520 430 735 172"/>
+    <path d="M515 236Q620 262 732 166"/>
+    <path d="M748 296Q792 236 748 172"/>
+  </g>
+  <!-- flows: China -> assembly partners -->
+  <g fill="none" stroke="#2e2a5a" stroke-width="3" marker-end="url(#arrI)">
+    <path d="M742 162Q732 176 722 182"/>
+    <path d="M736 160Q690 150 656 172"/>
+  </g>
+  <!-- flows: products -> markets -->
+  <g fill="none" stroke="#e8842b" stroke-width="3.5" marker-end="url(#arrA)">
+    <path d="M760 146Q830 120 898 122"/>
+    <path d="M2 122Q80 118 146 130"/>
+    <path d="M735 148Q600 80 482 108"/>
+  </g>
+  <!-- nodes -->
+  <g font-family="Nunito, 'Noto Sans KR', sans-serif" font-weight="800" font-size="13" paint-order="stroke" stroke="#eef5fa" stroke-width="5" stroke-linejoin="round">
+    <circle cx="507" cy="238" r="9" fill="#1b9c85" stroke="#fff" stroke-width="3"/><text x="520" y="256" fill="#0f6f5e">DR Congo · cobalt mine</text>
+    <circle cx="750" cy="302" r="9" fill="#1b9c85" stroke="#fff" stroke-width="3"/><text x="700" y="350" fill="#0f6f5e">Australia · lithium mine</text>
+    <circle cx="277" cy="291" r="9" fill="#1b9c85" stroke="#fff" stroke-width="3"/><text x="160" y="318" fill="#0f6f5e">Chile · lithium mine</text>
+    <circle cx="744" cy="158" r="10" fill="#2e2a5a" stroke="#fff" stroke-width="3"/><text x="600" y="218" fill="#2e2a5a">China · refining &amp; assembly</text>
+    <circle cx="715" cy="189" r="7" fill="#2e2a5a" stroke="#fff" stroke-width="2.5"/><text x="724" y="204" fill="#2e2a5a" font-size="11">Vietnam · assembly</text>
+    <circle cx="645" cy="176" r="7" fill="#2e2a5a" stroke="#fff" stroke-width="2.5"/><text x="560" y="168" fill="#2e2a5a" font-size="11">India · assembly</text>
+    <circle cx="770" cy="132" r="8" fill="#e8842b" stroke="#fff" stroke-width="3"/><text x="760" y="116" text-anchor="end" fill="#b85f13">Korea · design &amp; sales</text>
+    <circle cx="150" cy="135" r="9" fill="#e8842b" stroke="#fff" stroke-width="3"/><text x="60" y="118" fill="#b85f13">USA · design &amp; sales</text>
+    <circle cx="470" cy="108" r="8" fill="#e8842b" stroke="#fff" stroke-width="3"/><text x="380" y="88" fill="#b85f13">Europe · sales</text>
+  </g>
+  <!-- legend -->
+  <g font-family="Nunito, sans-serif" font-size="12" font-weight="700" fill="#3f4a5a">
+    <rect x="18" y="384" width="250" height="70" rx="8" fill="#fff" opacity=".92"/>
+    <circle cx="36" cy="402" r="6" fill="#1b9c85"/><text x="48" y="406">Raw materials are mined here</text>
+    <circle cx="36" cy="422" r="6" fill="#2e2a5a"/><text x="48" y="426">Metals refined, phones assembled</text>
+    <circle cx="36" cy="442" r="6" fill="#e8842b"/><text x="48" y="446">Designed, sold, and used</text>
+  </g>
+</svg>

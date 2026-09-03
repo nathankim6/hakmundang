@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 250">
+  <rect width="320" height="250" rx="14" fill="#2e2a5a"/>
+  <g fill="#fff" opacity=".6"><circle cx="30" cy="30" r="2"/><circle cx="280" cy="24" r="2.4"/><circle cx="60" cy="210" r="1.6"/><circle cx="300" cy="120" r="1.8"/><circle cx="160" cy="18" r="1.5"/><circle cx="200" cy="60" r="1.4"/></g>
+  <path d="M262 60a26 26 0 1 1-30-40 20 20 0 0 0 30 40z" fill="#ffd24d"/>
+  <circle cx="100" cy="125" r="62" fill="#fff"/>
+  <circle cx="100" cy="125" r="54" fill="none" stroke="#e6eefb" stroke-width="3"/>
+  <path d="M100 78v8M100 164v8M53 125h8M139 125h8" stroke="#2e2a5a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M100 125V84" stroke="#2e2a5a" stroke-width="6" stroke-linecap="round"/>
+  <path d="M100 125V98" stroke="#c43e8e" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="100" cy="125" r="5" fill="#2e2a5a"/>
+  <text x="100" y="218" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="900" font-size="15" fill="#fff">00:00 – 06:00</text>
+  <g transform="translate(230 160)">
+    <rect x="-58" y="-30" width="116" height="60" rx="26" fill="#c43e8e"/>
+    <rect x="-40" y="-10" width="6" height="20" fill="#fff"/><rect x="-47" y="-3" width="20" height="6" fill="#fff"/>
+    <circle cx="30" cy="-8" r="5" fill="#ffd24d"/><circle cx="42" cy="2" r="5" fill="#fff"/><circle cx="18" cy="2" r="5" fill="#fff"/><circle cx="30" cy="12" r="5" fill="#fff"/>
+    <g transform="translate(0 -52)">
+      <path d="M-10 0v-8a10 10 0 0 1 20 0v8" fill="none" stroke="#ffd24d" stroke-width="5"/>
+      <rect x="-14" y="0" width="28" height="20" rx="4" fill="#ffd24d"/>
+    </g>
+  </g>
+</svg>

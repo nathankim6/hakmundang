@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 212">
+  <defs><marker id="fa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5 0 10z" fill="#c43e8e"/></marker></defs>
+  <rect width="820" height="212" rx="14" fill="#fbf4f8"/>
+  <g stroke="#c43e8e" stroke-width="4" fill="none" marker-end="url(#fa)" stroke-linecap="round">
+    <path d="M142 82h46"/><path d="M312 82h46"/><path d="M482 82h46"/><path d="M652 82h46"/>
+  </g>
+  <!-- 1 cotton farm -->
+  <rect x="30" y="112" width="100" height="18" rx="6" fill="#b7d7a8"/>
+  <g stroke="#5fb37f" stroke-width="3" stroke-linecap="round"><path d="M55 112V62M80 112V52M105 112V62M68 112V84M92 112V84"/></g>
+  <g fill="#fff" stroke="#d9d9d9" stroke-width="2"><circle cx="55" cy="58" r="9"/><circle cx="80" cy="48" r="9"/><circle cx="105" cy="58" r="9"/><circle cx="68" cy="80" r="8"/><circle cx="92" cy="80" r="8"/></g>
+  <!-- 2 factory -->
+  <rect x="205" y="72" width="90" height="50" fill="#8f9bb3"/>
+  <path d="M205 72l22-22v22l22-22v22l22-22v22l24-22v22z" fill="#6b7a8f"/>
+  <rect x="215" y="40" width="12" height="32" fill="#6b7a8f"/>
+  <g fill="#cfd6e0"><circle cx="221" cy="32" r="6"/><circle cx="230" cy="22" r="7"/><circle cx="242" cy="14" r="8"/></g>
+  <g fill="#f5e6c8"><rect x="214" y="84" width="14" height="12"/><rect x="238" y="84" width="14" height="12"/><rect x="262" y="84" width="14" height="12"/><rect x="238" y="104" width="14" height="18"/></g>
+  <!-- 3 store -->
+  <rect x="375" y="72" width="90" height="50" fill="#f5e6c8"/>
+  <g><rect x="369" y="66" width="102" height="14" fill="#c43e8e"/><rect x="386" y="66" width="17" height="14" fill="#fff"/><rect x="420" y="66" width="17" height="14" fill="#fff"/><rect x="454" y="66" width="17" height="14" fill="#fff"/></g>
+  <rect x="405" y="96" width="30" height="26" fill="#9cc7e8"/>
+  <path d="M388 100v-8a6 6 0 0 1 12 0v4l-16 10h32z" fill="none" stroke="#8d2a66" stroke-width="2.5" stroke-linejoin="round"/>
+  <rect x="446" y="100" width="14" height="18" rx="2" fill="#ffd24d"/>
+  <!-- 4 t-shirt -->
+  <path d="M552 62l20-18h14a14 14 0 0 0 28 0h14l20 18-12 14-10-6v52h-52V70l-10 6z" fill="#f28c6b"/>
+  <g transform="translate(622 52) rotate(20)"><rect x="-18" y="-10" width="36" height="20" rx="3" fill="#ffd24d"/><text text-anchor="middle" dy=".35em" font-family="Nunito, sans-serif" font-weight="900" font-size="10" fill="#1f2a37">₩4,900</text></g>
+  <!-- 5 desert dump -->
+  <circle cx="790" cy="40" r="14" fill="#ffd24d"/>
+  <path d="M700 126q60-34 120 0v6H700z" fill="#e9d8a6"/>
+  <g><ellipse cx="745" cy="108" rx="34" ry="12" fill="#6fa8dc"/><ellipse cx="760" cy="96" rx="26" ry="11" fill="#f28c6b"/><ellipse cx="732" cy="94" rx="22" ry="10" fill="#8ab17d"/><ellipse cx="750" cy="82" rx="20" ry="10" fill="#e9c46a"/><ellipse cx="768" cy="70" rx="14" ry="8" fill="#c9a0dc"/><ellipse cx="740" cy="70" rx="12" ry="7" fill="#fff"/></g>
+  <g font-family="Nunito, sans-serif" text-anchor="middle">
+    <g font-weight="900" font-size="13" fill="#1f2a37">
+      <text x="80" y="160">1 · Cotton farm</text><text x="250" y="160">2 · Sewing factory</text><text x="420" y="160">3 · Store &amp; online shop</text><text x="590" y="160">4 · Worn a few times</text><text x="750" y="160">5 · Landfill / desert</text>
+    </g>
+    <g font-weight="700" font-size="11" fill="#6b7280">
+      <text x="80" y="178">water · land · pesticides</text><text x="250" y="178">long hours · low wages</text><text x="420" y="178">new styles every week</text><text x="590" y="178">then thrown away</text><text x="760" y="178">mountains of clothes</text>
+    </g>
+  </g>
+</svg>
