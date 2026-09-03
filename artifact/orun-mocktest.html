@@ -540,6 +540,13 @@
   }
   .callcount { font-size: 12px; color: var(--gray-soft); margin: 10px 0 0; }
 
+  .offline-note {
+    margin: 12px 0 0; padding: 14px 16px; border: 1px solid var(--line);
+    border-left: 3px solid var(--yellow); background: #fff; border-radius: 4px;
+    font-size: 13px; line-height: 1.7; color: var(--body); text-align: left;
+  }
+  .offline-note strong { display: block; font-size: 14px; color: var(--ink); margin-bottom: 4px; }
+
 </style>
 
 <!-- 레터헤드 -->
@@ -1630,8 +1637,18 @@
   }
   (function checkRuntime() {
     if (samplingAvailable()) return;
-    $("analyzeBtn").disabled = true;
-    $("analyzeBtn").title = "claude.ai 아티팩트 안에서만 AI 실행이 가능합니다";
+    const btn = $("analyzeBtn");
+    btn.disabled = true;
+    btn.title = "claude.ai 아티팩트 안에서만 AI 실행이 가능합니다";
+    const note = document.querySelector(".cta-note");
+    if (note) {
+      note.className = "offline-note";
+      note.innerHTML =
+        '<strong>claude.ai 아티팩트로 열어야 실행됩니다</strong>' +
+        '지금은 파일을 그대로 연 상태라 AI 분석을 시작할 수 없습니다. ' +
+        'Claude 대화창에서 이 아티팩트를 열면 내 구독 사용량으로 바로 실행됩니다. ' +
+        '별도의 API 키는 필요하지 않습니다.';
+    }
   })();
 
   // ---------- Claude 호출 래퍼 ----------
