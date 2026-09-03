@@ -58,6 +58,33 @@
 
   .wrap { max-width: 1000px; margin: 0 auto; padding: 40px 24px 72px; }
 
+  /* ---------- 드래프팅 페이퍼 배경 ---------- */
+  body::before {
+    content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none; opacity: .55;
+    background-image: linear-gradient(var(--line-soft) 1px, transparent 1px), linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
+    background-size: 28px 28px;
+    -webkit-mask-image: linear-gradient(#000 0, rgba(0,0,0,.6) 40vh, transparent 78vh);
+    mask-image: linear-gradient(#000 0, rgba(0,0,0,.6) 40vh, transparent 78vh);
+  }
+
+  /* ---------- 히어로 ---------- */
+  .hero { display: grid; grid-template-columns: 1.45fr 1fr; gap: 28px; align-items: stretch; margin-bottom: 28px; }
+  .hero-main { display: flex; flex-direction: column; gap: 10px; justify-content: center; }
+  .hero-main h1 { margin: 0; font-size: 34px; font-weight: 900; color: var(--ink); letter-spacing: -0.9px; line-height: 1.18; text-wrap: balance; }
+  .hero-main p { margin: 0; font-size: 14.5px; color: var(--gray); max-width: 46ch; }
+  .hero-feats { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 10px 0 0; padding: 0; }
+  .hero-feats li { display: flex; align-items: center; gap: 8px; font-size: 12.5px; font-weight: 700; color: var(--body); }
+  .spec {
+    background: var(--ink); color: var(--white); border-radius: 12px; padding: 20px 22px;
+    display: flex; flex-direction: column; justify-content: center; gap: 10px; position: relative; overflow: hidden;
+    box-shadow: 0 14px 36px rgba(28,28,28,.16);
+  }
+  .spec::before { content: ""; position: absolute; right: -30%; top: -60%; width: 70%; height: 160%; background: radial-gradient(closest-side, rgba(255,212,0,.13), transparent 70%); pointer-events: none; }
+  .spec-row { display: flex; gap: 14px; align-items: baseline; border-bottom: 1px solid #3a3a3a; padding-bottom: 9px; position: relative; }
+  .spec-row:last-child { border-bottom: 0; padding-bottom: 0; }
+  .spec .k { font-size: 10.5px; font-weight: 700; letter-spacing: 2px; color: var(--gray-soft); width: 62px; flex: none; }
+  .spec .v { font-size: 13px; font-weight: 600; color: var(--white); font-variant-numeric: tabular-nums; }
+
   /* ---------- 문서 제목 ---------- */
   .doc-title { display: flex; flex-direction: column; gap: 10px; margin-bottom: 22px; }
   .eyebrow { display: flex; align-items: center; gap: 8px; }
@@ -69,14 +96,19 @@
 
   /* ---------- 진행 단계 ---------- */
   .steps {
-    display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
-    border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
-    padding: 13px 2px; margin-bottom: 26px;
+    display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+    padding: 4px 0; margin-bottom: 26px;
   }
-  .step { display: flex; align-items: center; gap: 8px; }
-  .step .no { font-size: 12px; font-weight: 800; letter-spacing: 1px; color: #c9c6bf; }
+  .step { display: flex; align-items: center; gap: 9px; }
+  .step .dot { display: none; }
+  .step .no {
+    width: 26px; height: 26px; border-radius: 7px; border: 1px solid var(--line); background: var(--white);
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 10.5px; font-weight: 900; letter-spacing: .3px; color: var(--gray-soft);
+    transition: background .25s, color .25s, border-color .25s;
+  }
   .step .nm { font-size: 13.5px; font-weight: 500; color: var(--gray); }
-  .step.on .no { color: var(--yellow-ink); }
+  .step.on .no { background: var(--ink); color: var(--yellow); border-color: var(--ink); }
   .step.on .nm { font-weight: 800; color: var(--ink); }
   .step-rule { flex: 1; min-width: 24px; height: 1px; background: var(--line); }
 
@@ -109,15 +141,24 @@
   .field { margin-top: 20px; }
   .rule { height: 1px; background: var(--line); margin: 24px 0; }
 
-  /* ---------- 드롭존 ---------- */
-  .drop {
-    border: 1px dashed #d5d2ca; border-radius: 8px; padding: 22px;
-    text-align: center; cursor: pointer; transition: all .15s; background: var(--paper);
-    font-size: 12px; color: var(--gray);
+  /* ---------- 업로드 존 ---------- */
+  .uzone-head { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; }
+  .uzone-head label { margin: 0 0 1px; }
+  .uno {
+    width: 26px; height: 26px; border-radius: 7px; background: var(--ink); color: var(--yellow);
+    font-size: 10.5px; font-weight: 900; letter-spacing: .3px; display: inline-flex; align-items: center; justify-content: center; flex: none; margin-top: 1px;
   }
-  .drop:hover, .drop.over { border-color: var(--ink); background: var(--white); }
-  .drop .big { font-size: 13.5px; font-weight: 700; color: var(--ink); display: block; margin: 6px 0 3px; }
-  .drop svg { width: 22px; height: 22px; stroke: var(--ink); }
+  .usub { font-size: 12px; color: var(--gray); display: block; }
+  .drop {
+    min-height: 152px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
+    border: 1px solid var(--line); outline: 1px dashed #d5d2ca; outline-offset: -7px; border-radius: 10px; padding: 22px;
+    text-align: center; cursor: pointer; transition: all .18s; color: var(--gray);
+    background: radial-gradient(120% 90% at 50% 0%, var(--white) 0%, var(--paper) 75%);
+  }
+  .drop:hover, .drop.over { border-color: var(--ink); outline-color: var(--ink); background: var(--white); }
+  .drop .big { font-size: 14px; font-weight: 800; color: var(--ink); display: block; margin: 8px 0 2px; letter-spacing: -0.2px; }
+  .drop .small { font-size: 12px; color: var(--gray); }
+  .drop .ico { width: 36px; height: 36px; color: var(--ink); }
   .filelist { list-style: none; margin: 2px 0 0; padding: 0; }
   .filelist li {
     display: flex; align-items: center; gap: 10px; font-size: 13.5px;
@@ -400,9 +441,9 @@
     outline: 2px solid var(--ink); outline-offset: 2px;
   }
   input:focus, textarea:focus { box-shadow: 0 0 0 3px rgba(255,212,0,.28); }
-  .drop:hover svg { transform: translateY(-2px); }
-  .drop svg { transition: transform .18s; }
-  .drop.over { border-style: solid; border-color: var(--ink); background: #fffdf3; }
+  .drop:hover .ico { transform: translateY(-3px); }
+  .drop .ico { transition: transform .2s; }
+  .drop.over { background: #fffdf3; }
   body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .55; }
   @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
   .reveal { animation: rise .38s cubic-bezier(.22,.61,.36,1); }
@@ -467,6 +508,7 @@
   .cost { font-size: 12px; color: var(--gray); margin: 4px 0 0; }
   .cost b { color: var(--ink); }
 
+  @media (max-width: 760px) { .hero { grid-template-columns: 1fr; } .hero-main h1 { font-size: 28px; } }
   @media (max-width: 720px) {
     .steps { gap: 10px; }
     .steps .nm { font-size: 12.5px; }
@@ -541,11 +583,24 @@
     <button type="button" id="discardBtn">지우기</button>
   </div>
 
-  <!-- 문서 제목 -->
-  <div class="doc-title">
-    <div class="eyebrow"><span class="dot"></span><span class="t">MOCK TEST BUILDER</span></div>
-    <h1>동형 모의고사 만들기</h1>
-    <p>시험지와 시험범위를 올리면 문항 단위 분석으로 같은 구조의 시험지를 만들어 드립니다</p>
+  <!-- 히어로 -->
+  <div class="hero">
+    <div class="hero-main">
+      <div class="eyebrow"><span class="dot"></span><span class="t">MOCK TEST BUILDER</span></div>
+      <h1>동형 모의고사 만들기</h1>
+      <p>시험지와 시험범위를 올리면 문항 단위로 분석해 같은 구조의 시험지를 만들어 드립니다</p>
+      <ul class="hero-feats">
+        <li><span class="dot"></span>문항 단위 정밀 분석</li>
+        <li><span class="dot blue"></span>범위 내 지문 자동 매칭</li>
+        <li><span class="dot"></span>원본과 같은 구조로 출제</li>
+      </ul>
+    </div>
+    <aside class="spec" aria-label="출력 규격">
+      <div class="spec-row"><span class="k">출력 규격</span><span class="v">2단 편집 · 함초롬바탕 8pt · 여백 7mm</span></div>
+      <div class="spec-row"><span class="k">저장 형식</span><span class="v" id="specFormats">PDF · 한글(HWPX) · 워드(DOCX)</span></div>
+      <div class="spec-row"><span class="k">지원 자료</span><span class="v">PDF · Excel · Word · HWP · 최대 15개</span></div>
+      <div class="spec-row" id="specEngineRow"><span class="k">엔진</span><span class="v">Claude Opus 5</span></div>
+    </aside>
   </div>
 
   <!-- 진행 단계 -->
@@ -562,26 +617,32 @@
     <h2><span class="dot"></span><span class="sec-no">01</span> 자료 업로드</h2>
 
     <div class="row">
-      <div>
-        <label>시험지 PDF <span class="req">필수</span></label>
-        <div class="drop" id="examDrop">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 16V4"/><path d="M6 10l6-6 6 6"/><path d="M4 20h16"/>
+      <div class="uzone">
+        <div class="uzone-head"><span class="uno">01</span><div><label>시험지 PDF <span class="req">필수</span></label><span class="usub">분석의 기준이 되는 실제 기출 시험지 1개</span></div></div>
+        <div class="drop" id="examDrop" tabindex="0" role="button" aria-label="시험지 PDF 올리기">
+          <svg class="ico" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <path d="M11 5h13l7 7v23H11z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M24 5v7h7" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M16 20h12M16 25h12M16 30h8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            <rect x="27" y="27" width="7" height="7" fill="#ffd400"/>
           </svg>
           <span class="big">시험지 PDF 올리기</span>
-          분석의 기준이 되는 실제 기출 시험지 1개 · 최대 100MB
+          <span class="small">클릭하거나 끌어다 놓기 · 최대 100MB</span>
         </div>
         <input type="file" id="examFile" accept="application/pdf" hidden>
         <ul class="filelist" id="examList"></ul>
       </div>
-      <div>
-        <label>시험범위 자료 <span class="opt">· PDF · Excel · Word · HWP</span><span class="count-chip" id="scopeCount">0 / 15</span></label>
-        <div class="drop" id="scopeDrop">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 16V4"/><path d="M6 10l6-6 6 6"/><path d="M4 20h16"/>
+      <div class="uzone">
+        <div class="uzone-head"><span class="uno">02</span><div><label>시험범위 자료<span class="count-chip" id="scopeCount">0 / 15</span></label><span class="usub">교과서 · 부교재 · 모의고사 — PDF · Excel · Word · HWP</span></div></div>
+        <div class="drop" id="scopeDrop" tabindex="0" role="button" aria-label="시험범위 파일 올리기">
+          <svg class="ico" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <path d="M11 5h13l7 7v23H11z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M24 5v7h7" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M16 20h12M16 25h12M16 30h8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            <rect x="27" y="27" width="7" height="7" fill="#ffd400"/>
           </svg>
           <span class="big">시험범위 파일 올리기</span>
-          교과서 · 부교재 · 모의고사 등 · 최대 15개 · 개당 100MB
+          <span class="small">여러 개 가능 · 최대 15개 · 개당 100MB</span>
         </div>
         <input type="file" id="scopeFiles" accept=".pdf,.xlsx,.xls,.csv,.docx,.doc,.hwp,.hwpx,.txt" multiple hidden>
         <ul class="filelist" id="scopeList"></ul>
