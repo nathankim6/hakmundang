@@ -56,6 +56,7 @@ HTML/CSS를 헤드리스 Chromium으로 인쇄해 PDF를 만든다 (docx 아님)
 | `flow.js` | ORUN FLOW — 먼저 보기 토큰(역할 태그)과 훈련 3문장 |
 | `extra.js` | 영문 플로차트 · Check Up 오답 이유/근거 · Knowledge Bank |
 | `art.js` | 원본 SVG — 레슨 아이콘 5종 + 본문 삽화 5종 |
+| `orun_mark_s.png` | 머리글 우측 옳은영어 로고 (120px로 줄여 CSS 배경으로 1회만 임베드) |
 | `pics.js` | 픽토그램 24종 + 레슨별 플로차트 스트립 매핑 + Knowledge Bank 코너 삽화 5종 |
 | `syn.js` | 레슨별 핵심 구문 2개 — 구문명 · 본문 인용(`«»`가 밑줄부) · 설명 · 해석 |
 | `syndrill.js` | 구문 훈련 3문장 — `u`(구문 1 / 구문 2 / 구문 1 + 2) · `en` · `k` |

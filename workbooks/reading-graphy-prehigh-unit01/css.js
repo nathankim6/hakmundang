@@ -12,9 +12,16 @@ body{font-family:'Noto Sans KR',sans-serif;color:var(--ink);background:#fff;font
  page-break-after:always;background:var(--paper);overflow:hidden;display:flex;flex-direction:column}
 .page:last-child{page-break-after:auto}
 /* ── 러닝 헤더/푸터 ── */
-.rh{display:flex;justify-content:space-between;align-items:baseline;font-size:7.2pt;letter-spacing:.14em;
- font-weight:700;color:var(--faint);text-transform:uppercase;padding-bottom:5px;border-bottom:1px solid var(--hair);margin-bottom:9mm}
-.rh .r{color:var(--ac,var(--blue))}
+.rh{display:flex;align-items:center;gap:12px;padding-bottom:5px;
+ border-bottom:1px solid var(--hair);margin-bottom:8mm}
+.rh .bk{font-size:8.4pt;font-weight:700;color:var(--ink);letter-spacing:-.01em}
+.rh .bk b{font-weight:800;color:var(--ac,var(--blue))}
+.rh .mid{margin-left:auto;font-size:7.2pt;letter-spacing:.14em;font-weight:700;
+ color:var(--ac,var(--blue));text-transform:uppercase}
+.rh .lg{display:flex;align-items:center;gap:5px;padding-left:11px;border-left:1px solid var(--hair)}
+.rh .lg .mk{display:block;width:18px;height:15px;background-size:contain;
+ background-repeat:no-repeat;background-position:center}
+.rh .lg em{font-style:normal;font-size:8pt;font-weight:800;color:var(--ink)}
 .rf{position:absolute;left:15mm;right:15mm;bottom:7mm;display:flex;justify-content:space-between;
  align-items:center;font-size:7.5pt;color:var(--faint);border-top:1px solid var(--hair);padding-top:4px}
 .rf b{color:var(--ac,var(--blue));font-size:9.5pt}

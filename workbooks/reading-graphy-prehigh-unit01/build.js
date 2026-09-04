@@ -15,11 +15,12 @@ const esc=s=>String(s).replace(/&(?![a-z#])/g,"&amp;");
 const ROLE={"s":"S","s2":"S′","v":"V","v2":"V′","m":"M"};
 const tok=(x,r)=>`<span class="tk ${r||""}"><em>${(r==="v"||r==="v2")?"△":"&nbsp;"}</em><b>${esc(x)}</b><i>${ROLE[r]||"&nbsp;"}</i></span>`;
 
+const LOGO="data:image/png;base64,"+fs.readFileSync(__dirname+"/orun_mark_s.png").toString("base64");
 const P=[]; // pages
 let pn=0;
 
 const vars=t=>`--ac:${t.accent};--tint:${t.tint};--deep:${t.deep}`;
-const head=(t,right)=>`<div class="rh"><span>READING GRAPHY · PRE-HIGH · UNIT 1</span><span class="r">${right}</span></div>`;
+const head=(t,right)=>`<div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b></span><span class="mid">${right}</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>`;
 const tab=(t)=>t&&t.no?`<div class="tab">LESSON ${t.no}</div>`:"";
 const foot=(t,label)=>`<div class="rf"><span>${label}</span><b>${++pn}</b><span>옳은영어 ORUN ENGLISH</span></div>`;
 
@@ -54,7 +55,7 @@ T.forEach(t=>{
  P.push(`<div class="page" style="${V}">
   ${head(t,`Lesson ${t.no} · Words & ORUN FLOW`)}
   <div class="sect">
-   <div class="task"><div class="no">1</div><h3>영영풀이 매칭<span class="sub">영어 정의를 읽고 알맞은 낱말의 기호를 쓰시오.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">1</div><h3>영영풀이 매칭<span class="sub">영어 정의를 읽고 알맞은 낱말의 기호를 써 보세요.</span></h3><div class="line"></div></div>
    <div class="match">
     <div class="mcol"><h5>Word</h5>
      ${t.defs.map((d,i)=>`<div class="mrow"><div class="lab">${AL[i]}</div><div class="w">${d[0]}</div></div>`).join("")}
@@ -65,16 +66,16 @@ T.forEach(t=>{
    </div>
   </div>
   <div class="sect">
-   <div class="task"><div class="no">2</div><h3>구문분석<span class="sub">지문에 쓰인 핵심 구문 두 개를 익히고, 같은 눈으로 세 문장을 해석한다.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">2</div><h3>구문분석<span class="sub">지문에 쓰인 핵심 구문 두 개를 익히고, 같은 눈으로 세 문장을 해석해요.</span></h3><div class="line"></div></div>
    ${t.syn.map(x=>`<div class="syn">
      <div class="hd"><div class="n">문장 ${x.n}</div><b>${x.name}</b></div>
      <div class="bd">
       <div class="q">${esc(x.q).replace(/«([^»]*)»/g,(m,p)=>`<u>${p}</u>`)}</div>
       <div class="d">${x.d}</div>
-      <div class="k">이 문장을 우리말로 옮기시오.</div>
+      <div class="k">이 문장을 우리말로 옮겨 보세요.</div>
       <div class="aline"></div>
      </div></div>`).join("")}
-   <div class="mini" style="margin:4.5mm 0 3px">위 두 구문이 쓰인 문장이다. 어떤 구문인지 확인하고 한 줄로 해석하시오.</div>
+   <div class="mini" style="margin:4.5mm 0 3px">위 두 구문이 쓰인 문장이에요. 어떤 구문인지 확인하고 한 줄로 해석해 보세요.</div>
    ${t.synd.map((d,i)=>`<div class="sline">
      <div class="t"><div class="n">${i+1}</div><p>${esc(d.en)}</p><div class="use">${d.u}</div></div>
      <div class="aline"></div></div>`).join("")}
@@ -85,7 +86,7 @@ T.forEach(t=>{
  /* 면 C — READ RIGHT */
  P.push(`<div class="page" style="${V}">
   ${head(t,`Lesson ${t.no} · READ RIGHT`)}
-  <div class="task"><div class="no">2</div><h3>READ RIGHT<span class="sub">지문의 모든 문장을 ORUN FLOW 로 분석하고 한 줄로 해석한다.</span></h3><div class="line"></div></div>
+  <div class="task"><div class="no">2</div><h3>READ RIGHT<span class="sub">지문의 모든 문장을 ORUN FLOW 로 분석하고 한 줄로 해석해요.</span></h3><div class="line"></div></div>
   <div class="oflow"><b>ORUN FLOW</b>1 주어 밑줄+S &nbsp;→&nbsp; 2 본동사 △+V &nbsp;→&nbsp; 3 접속사 [네모]
    &nbsp;→&nbsp; 4 종속절 S′·V′ &nbsp;→&nbsp; 5 수식어(구) 밑줄+M</div>
   <div class="otip"><b>분석 Tip</b> &nbsp;<b>조동사+동사</b> · <b>have(has, had)+p.p</b> ·
@@ -119,13 +120,13 @@ T.forEach(t=>{
    <div class="bogi"><b>보기</b>${t.flowBogi}</div>
   </div>
   <div class="sect">
-   <div class="task"><div class="no">4</div><h3>패러프레이즈<span class="sub">원문의 표현을 다른 말로 바꾼 문장이다. 보기에서 골라 빈칸을 채우시오.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">4</div><h3>패러프레이즈<span class="sub">원문의 표현을 다른 말로 바꾼 문장이에요. 보기에서 골라 빈칸을 채워 보세요.</span></h3><div class="line"></div></div>
    <table class="para"><tr><th>원문 표현</th><th>같은 뜻으로 바꾸어 쓰기</th></tr>
     ${t.para.map(p=>{const m=p[0].match(/^([①-⑳])\s([\s\S]*)$/);
       return `<tr><td class="src"><span>${m[1]}</span>${esc(m[2])}</td><td class="dst">${esc(p[1]).replace("______","<u></u>")}</td></tr>`;}).join("")}
    </table>
    <div class="bogi"><b>보기</b>${t.paraBogi}</div>
-   <div class="mini" style="margin:5.5mm 0 3px">위 플로차트의 ① ~ ④ 를 이어, 이 글을 <b>영어 한 문장</b>으로 요약하시오.</div>
+   <div class="mini" style="margin:5.5mm 0 3px">위 플로차트의 ① ~ ④ 를 이어, 이 글을 <b>영어 한 문장</b>으로 요약해 보세요.</div>
    <div class="aline"></div>
   </div>
   ${tab(t)}${foot(t,L)}
@@ -135,14 +136,14 @@ T.forEach(t=>{
  P.push(`<div class="page" style="${V}">
   ${head(t,`Lesson ${t.no} · Check Up`)}
   <div class="sect">
-   <div class="task"><div class="no">5</div><h3>Check Up<span class="sub">고르고 끝내지 말고, 왜 아닌지까지 쓴다.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">5</div><h3>Check Up<span class="sub">고르고 끝내지 말고, 왜 아닌지까지 써요.</span></h3><div class="line"></div></div>
    <div class="q"><div class="stem"><div class="n">1</div><div>${t.check[0].q}
-     <span style="font-weight:400;color:var(--sub)">정답에 ○, 나머지는 제목이 될 수 없는 이유를 한 줄로 쓰시오.</span></div></div>
+     <span style="font-weight:400;color:var(--sub)">정답에 ○, 나머지는 제목이 될 수 없는 이유를 한 줄로 써 보세요.</span></div></div>
     <table class="cu"><tr><th>선지</th><th>○ 또는 오답인 이유</th></tr>
      ${t.check[0].ch.map((c,i)=>`<tr><td class="op"><b>${CIR[i]}</b>${esc(c)}</td><td class="rs"></td></tr>`).join("")}
     </table></div>
    <div class="q"><div class="stem"><div class="n">2</div><div>${t.check[1].q}
-     <span style="font-weight:400;color:var(--sub)">일치하면 근거 문장 번호를, 어긋나면 그 이유를 쓰시오.</span></div></div>
+     <span style="font-weight:400;color:var(--sub)">일치하면 근거 문장 번호를, 어긋나면 그 이유를 써 보세요.</span></div></div>
     <table class="cu"><tr><th>선지</th><th>근거 문장 번호 · 어긋나는 이유</th></tr>
      ${t.check[1].ch.map((c,i)=>`<tr><td class="op"><b>${CIR[i]}</b>${esc(c)}</td><td class="rs"></td></tr>`).join("")}
     </table></div>
@@ -210,7 +211,7 @@ T.forEach((t,ti)=>{
 });
 
 const html=`<!doctype html><html lang="ko"><head><meta charset="utf-8">
-<title>READING GRAPHY · PRE-HIGH · Unit 1</title><style>${CSS}</style></head>
+<title>READING GRAPHY · PRE-HIGH · Unit 1</title><style>${CSS}\n.rh .lg .mk{background-image:url(${LOGO})}</style></head>
 <body>${P.join("\n")}</body></html>`;
 fs.writeFileSync("book.html",html);
 console.log("pages:",P.length,"bytes:",html.length);
