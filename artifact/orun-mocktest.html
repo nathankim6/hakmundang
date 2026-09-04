@@ -548,6 +548,18 @@
   }
   .offline-note strong { display: block; font-size: 14px; color: var(--ink); margin-bottom: 4px; }
 
+  .paste-alt { margin-top: 10px; }
+  .paste-toggle {
+    background: none; border: 0; padding: 0; cursor: pointer; font: inherit;
+    font-size: 12px; color: var(--gray-soft); text-decoration: underline;
+    text-underline-offset: 3px; text-decoration-color: var(--line);
+  }
+  .paste-toggle:hover { color: var(--ink); text-decoration-color: var(--yellow-ink); }
+  .paste-alt .paste-body { display: none; }
+  .paste-alt.open .paste-body { display: block; margin-top: 8px; }
+  .paste-alt textarea { width: 100%; min-height: 118px; }
+  .paste-hint { display: block; margin-top: 6px; font-size: 12px; color: var(--gray-soft); }
+
 </style>
 
 <!-- 레터헤드 -->
@@ -618,7 +630,7 @@
 
     <div class="row">
       <div class="uzone">
-        <div class="uzone-head"><span class="uno">01</span><div><label>시험지 PDF <span class="req">필수</span></label><span class="usub">분석의 기준이 되는 실제 기출 시험지 1개</span></div></div>
+        <div class="uzone-head"><span class="uno">01</span><div><label>시험지 <span class="req">필수</span></label><span class="usub">PDF · 한글 · 워드 — 실제 기출 시험지 1개</span></div></div>
         <div class="drop" id="examDrop" tabindex="0" role="button" aria-label="시험지 PDF 올리기">
           <svg class="ico" viewBox="0 0 40 40" fill="none" aria-hidden="true">
             <path d="M11 5h13l7 7v23H11z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
@@ -626,11 +638,18 @@
             <path d="M16 20h12M16 25h12M16 30h8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
             <rect x="27" y="27" width="7" height="7" fill="#ffd400"/>
           </svg>
-          <span class="big">시험지 PDF 올리기</span>
-          <span class="small">텍스트 PDF · 스캔본 불가 · 최대 100MB</span>
+          <span class="big">시험지 올리기</span>
+          <span class="small">PDF · 한글 · 워드 · 최대 100MB</span>
         </div>
-        <input type="file" id="examFile" accept="application/pdf" hidden>
+        <input type="file" id="examFile" accept=".pdf,.hwp,.hwpx,.docx,.doc,.txt" hidden>
         <ul class="filelist" id="examList"></ul>
+        <div class="paste-alt" id="examPasteWrap">
+          <button type="button" class="paste-toggle" id="examPasteToggle">스캔본이라 글자가 안 읽힐다면 — 시험지 본문 직접 붙여넣기</button>
+          <div class="paste-body">
+            <textarea id="examPaste" placeholder="시험지 본문을 문항 번호까지 그대로 붙여넣으세요.&#10;한글·아크로뱅에서 전체 선택(Ctrl+A) 후 복사하면 됩니다."></textarea>
+            <span class="paste-hint" id="examPasteHint"></span>
+          </div>
+        </div>
       </div>
       <div class="uzone">
         <div class="uzone-head"><span class="uno">02</span><div><label>시험범위 자료<span class="count-chip" id="scopeCount">0 / 15</span></label><span class="usub">교과서 · 부교재 · 모의고사 — PDF · Excel · Word · HWP</span></div></div>
@@ -739,13 +758,42 @@
   const $ = (id) => document.getElementById(id);
 
   // ---------- 상태 ----------
-  let examPdf = null;   // {name, size, text, status}
+  let examPdf = null;   // {name, size, ext, text, note, status} — 붙여넣기만 쓸 때는 null
   let scopeItems = [];  // {id, name, size, ext, kind:'text', status, text?, note?}
   let analysis = null;
   let seq = 0;
   let running = null;      // {abort()} — 진행 패널의 '중단'이 호출
   let resultsStale = false;
   function readyScopeItems() { return scopeItems.filter(i => i.status === "ready"); }
+
+  // ---------- 시험지 본문 직접 붙여넣기 ----------
+  // 스캔본이거나 글꼴 정보가 없는 PDF는 어떤 방법으로도 글자를 못 읽는다.
+  // 그때 막히지 않도록 본문을 그대로 받는 길을 함께 둔다.
+  function examPasteText() {
+    const el = $("examPaste");
+    return el ? el.value.trim() : "";
+  }
+  function examText() {
+    if (examPdf && examPdf.status === "ready") return examPdf.text;
+    return examPasteText();
+  }
+  function revealExamPaste() {
+    const wrap = $("examPasteWrap");
+    if (!wrap) return;
+    wrap.classList.add("open");
+    const el = $("examPaste");
+    if (el) el.focus();
+  }
+  function bindExamPaste() {
+    const wrap = $("examPasteWrap"), el = $("examPaste"), hint = $("examPasteHint");
+    if (!wrap || !el) return;
+    $("examPasteToggle").addEventListener("click", () => wrap.classList.toggle("open"));
+    el.addEventListener("input", () => {
+      const n = el.value.replace(/\s/g, "").length;
+      hint.textContent = n ? n.toLocaleString() + "자 — 문항 번호와 지문을 그대로 두면 분석이 정확해집니다" : "";
+      markStale();
+    });
+  }
 
   // ---------- PDF 텍스트 추출 (pdf.js) ----------
   // 아티팩트 샌드박스는 실행 중 CDN 재요청과 blob 워커를 막는다. pdf.worker.min.js를
@@ -798,7 +846,33 @@
       if (line) lines.push(line);
       out += "[p." + p + "]\n" + lines.join("\n") + "\n\n";
     }
-    return tidy(out);
+    return { text: tidy(out), pages: doc.numPages };
+  }
+
+  // 확장자별 텍스트 추출. {text, note} 반환 — 시험지·시험범위가 함께 쓴다.
+  async function extractFileText(file, ext) {
+    if (ext === "pdf") {
+      const r = await extractPdfText(await readAsBuffer(file));
+      return { text: r.text, note: "", pdf: r };
+    }
+    if (ext === "docx") return { text: await extractDocx(await readAsBuffer(file)), note: "" };
+    if (ext === "doc") return { text: extractDocLegacy(await readAsBuffer(file)), note: "구버전 .doc — 추출 품질 제한" };
+    if (ext === "xlsx" || ext === "xls") return { text: extractSheet(await readAsBuffer(file), ext), note: "" };
+    if (ext === "hwp") return { text: extractHwp(await readAsBuffer(file)), note: "" };
+    if (ext === "hwpx") return { text: await extractHwpx(await readAsBuffer(file)), note: "" };
+    if (ext === "csv" || ext === "txt") return { text: await extractPlainText(file), note: "" };
+    throw new Error("지원하지 않는 형식입니다: ." + ext);
+  }
+
+  // 글자가 거의 없는 PDF는 스캔본이거나 글꼴 정보가 빠진 파일이다. 어느 쪽이든
+  // 숫자로 상황을 알려주고 대신 쓸 수 있는 길을 함께 안내한다.
+  function emptyPdfMessage(pdf, what) {
+    const pages = pdf && pdf.pages ? pdf.pages : 0;
+    const got = pdf && pdf.text ? pdf.text.replace(/\s/g, "").length : 0;
+    return what + "에서 글자를 찾지 못했습니다" +
+      (pages ? " (" + pages + "쪽에서 " + got + "자)" : "") +
+      ". 종이를 스캔·촬영한 PDF이거나, 글꼴 정보 없이 저장된 PDF입니다. " +
+      "한글(HWP·HWPX)이나 워드(DOCX) 원본으로 올리시거나, 본문을 복사해 붙여넣어 주세요.";
   }
 
   // ---------- 토스트 ----------
@@ -1031,18 +1105,10 @@
   async function processScopeFile(file, item) {
     const ext = item.ext;
     item.kind = "text";
-    if (ext === "pdf") {
-      item.text = await extractPdfText(await readAsBuffer(file));
-      if (item.text.length < 200) throw new Error("텍스트를 찾지 못했습니다 — 스캔본(이미지) PDF는 지원하지 않습니다. 텍스트 PDF나 HWP·DOCX로 올려주세요.");
-      return;
-    }
-    if (ext === "docx") item.text = await extractDocx(await readAsBuffer(file));
-    else if (ext === "doc") { item.text = extractDocLegacy(await readAsBuffer(file)); item.note = "구버전 .doc — 추출 품질 제한"; }
-    else if (ext === "xlsx" || ext === "xls") item.text = extractSheet(await readAsBuffer(file), ext);
-    else if (ext === "hwp") item.text = extractHwp(await readAsBuffer(file));
-    else if (ext === "hwpx") item.text = await extractHwpx(await readAsBuffer(file));
-    else if (ext === "csv" || ext === "txt") item.text = await extractPlainText(file);
-    else throw new Error("지원하지 않는 형식입니다: ." + ext);
+    const r = await extractFileText(file, ext);
+    if (ext === "pdf" && r.text.length < 200) throw new Error(emptyPdfMessage(r.pdf, "이 PDF"));
+    item.text = r.text;
+    if (r.note) item.note = r.note;
     if (!item.text) throw new Error("텍스트를 추출하지 못했습니다.");
   }
 
@@ -1051,11 +1117,13 @@
     $("examList").innerHTML = "";
     if (!examPdf) return;
     const li = document.createElement("li");
-    li.innerHTML = `<span class="fbadge pdf">PDF</span><span class="fname"></span><span class="meta"></span>`;
+    const [eb, ec] = badgeOf(examPdf.ext || "pdf");
+    li.innerHTML = `<span class="fbadge ${ec}">${eb}</span><span class="fname"></span><span class="meta"></span>`;
     li.querySelector(".fname").textContent = examPdf.name;
     li.querySelector(".meta").textContent = examPdf.status === "loading"
       ? fmtSize(examPdf.size) + " · 텍스트 추출 중…"
-      : fmtSize(examPdf.size) + " · 텍스트 " + examPdf.text.length.toLocaleString() + "자";
+      : fmtSize(examPdf.size) + " · 텍스트 " + examPdf.text.length.toLocaleString() + "자"
+        + (examPdf.note ? " · " + examPdf.note : "");
     const rm = document.createElement("button");
     rm.textContent = "✕"; rm.title = "삭제";
     rm.onclick = () => { examPdf = null; renderExamList(); markStale(); };
@@ -1097,16 +1165,20 @@
   }
 
   bindDrop($("examDrop"), $("examFile"), async (files) => {
-    const f = files.find(x => extOf(x.name) === "pdf");
-    if (!f) { showError("analyzeError", "시험지는 PDF 파일만 올릴 수 있습니다."); return; }
-    if (f.size > MAX_FILE_BYTES) { showError("analyzeError", "시험지 PDF가 100MB를 넘습니다."); return; }
-    examPdf = { name: f.name, size: f.size, text: "", status: "loading" };
+    const EXAM_EXTS = ["pdf", "hwp", "hwpx", "docx", "doc", "txt"];
+    const f = files.find(x => EXAM_EXTS.includes(extOf(x.name)));
+    if (!f) { showError("analyzeError", "시험지는 PDF · 한글(HWP·HWPX) · 워드(DOCX) · 텍스트 파일로 올릴 수 있습니다."); return; }
+    if (f.size > MAX_FILE_BYTES) { showError("analyzeError", "시험지 파일이 100MB를 넘습니다."); return; }
+    const ext = extOf(f.name);
+    examPdf = { name: f.name, size: f.size, ext, text: "", status: "loading" };
     renderExamList();
     try {
-      const text = await extractPdfText(await readAsBuffer(f));
-      if (text.length < 300) throw new Error("시험지에서 텍스트를 찾지 못했습니다 — 스캔본(이미지) PDF는 지원하지 않습니다. 텍스트가 포함된 PDF를 올려주세요.");
-      examPdf = { name: f.name, size: f.size, text, status: "ready" };
-    } catch (e) { examPdf = null; renderExamList(); showError("analyzeError", e.message); return; }
+      const r = await extractFileText(f, ext);
+      if (ext === "pdf" && r.text.length < 300) throw new Error(emptyPdfMessage(r.pdf, "시험지"));
+      if (r.text.replace(/\s/g, "").length < 120)
+        throw new Error("시험지에서 읽어낼 글자가 너무 적습니다. 한글·워드 원본으로 올리시거나 본문을 붙여넣어 주세요.");
+      examPdf = { name: f.name, size: f.size, ext, text: r.text, note: r.note, status: "ready" };
+    } catch (e) { examPdf = null; renderExamList(); showError("analyzeError", e.message); revealExamPaste(); return; }
     clearError("analyzeError");
     renderExamList();
     markStale();
@@ -1850,7 +1922,18 @@
   async function analyze() {
     clearError("analyzeError");
     if (!samplingAvailable()) return showError("analyzeError", "이 화면은 claude.ai 아티팩트 안에서만 AI를 실행할 수 있습니다.");
-    if (!examPdf || examPdf.status !== "ready") return showError("analyzeError", "시험지 PDF를 업로드해 주세요.");
+    if (examPdf && examPdf.status === "loading")
+      return showError("analyzeError", "시험지에서 텍스트를 추출하는 중입니다. 잠시 후 다시 시도해 주세요.");
+    const examBody = examText();
+    if (!examBody) {
+      showError("analyzeError", "시험지를 올리거나, 시험지 본문을 붙여넣어 주세요.");
+      return;
+    }
+    if (examBody.replace(/\s/g, "").length < 120) {
+      showError("analyzeError", "시험지 본문이 너무 짧습니다. 문항이 모두 포함되도록 붙여넣어 주세요.");
+      revealExamPaste();
+      return;
+    }
     if (scopeItems.some(i => i.status === "loading"))
       return showError("analyzeError", "시험범위 파일에서 텍스트를 추출하는 중입니다. 잠시 후 다시 시도해 주세요.");
     const scopeText = $("scopeText").value.trim();
@@ -1869,7 +1952,7 @@
     const extra = $("extraReq").value.trim();
 
     // 자료 → 청크
-    const examChunks = chunkText(examPdf.text, BUDGET - 3500);
+    const examChunks = chunkText(examBody, BUDGET - 3500);
     const sources = readyScopeItems().map(i => ({ name: i.name, text: i.text }));
     if (scopeText) sources.push({ name: "직접 붙여넣은 시험범위", text: scopeText });
     const scopeChunks = [];
@@ -1927,7 +2010,7 @@
 
       analyzeProg.set(98, 4, "결과 정리 중");
       analysis = { exam_info: info, questions, matching_plan: plan };
-      pipe = { examText: examPdf.text, catalog, passages };
+      pipe = { examText: examBody, catalog, passages };
       analyzeProg.finish("분석 완료");
       renderPlan(analysis);
       setStep(2);
@@ -2172,6 +2255,7 @@
     });
   })();
 
+  bindExamPaste();
   $("analyzeBtn").addEventListener("click", analyze);
   $("reAnalyzeBtn").addEventListener("click", analyze);
   $("generateBtn").addEventListener("click", generate);
