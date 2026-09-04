@@ -13,7 +13,7 @@ const CIR="①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳".split("
 const AL="abcdef".split("");
 const esc=s=>String(s).replace(/&(?![a-z#])/g,"&amp;");
 const ROLE={"s":"S","s2":"S′","v":"V","v2":"V′","m":"M"};
-const TRI=`<svg viewBox="0 0 14 12" fill="none"><path d="M7 1.4 12.6 10.6H1.4z" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round"/></svg>`;
+const TRI=`<svg viewBox="0 0 14 12" fill="none"><path d="M7 1.4 12.6 10.6H1.4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>`;
 const tok=(x,r)=>`<span class="tk ${r||""}"><em>${(r==="v"||r==="v2")?TRI:""}</em><b>${esc(x)}</b><i>${ROLE[r]||"&nbsp;"}</i></span>`;
 
 const LOGO="data:image/png;base64,"+fs.readFileSync(__dirname+"/orun_mark_s.png").toString("base64");

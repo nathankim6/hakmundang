@@ -208,9 +208,9 @@ table.flow td.body u{padding:0 16px}
 .mk{font-family:'Noto Serif CJK KR',serif;font-size:10.4pt;line-height:1.35}
 .tk{display:inline-block;position:relative;text-align:center;vertical-align:top;
  padding-top:0;padding-bottom:15px;margin:0 3px}
-.tk em{position:absolute;top:1px;left:50%;transform:translateX(-50%);
+.tk em{position:absolute;top:0;left:50%;transform:translateX(-50%);
  color:var(--deep);pointer-events:none;line-height:0}
-.tk em svg{width:14px;height:12px;display:block}
+.tk em svg{width:18px;height:15px;display:block}
 .tk b{display:block;line-height:1.24}
 .tk i{position:absolute;bottom:0;left:50%;transform:translateX(-50%);font-style:normal;
  font-size:7.6pt;font-weight:800;line-height:1;white-space:nowrap}
