@@ -186,7 +186,7 @@ table.para td.dst u{text-decoration:none;border-bottom:1.6px solid var(--ac);pad
 .akey table{width:100%;border-collapse:collapse;font-size:8.6pt}
 .akey td{padding:9px 13px;border-bottom:1px solid #EEECE8;vertical-align:top;line-height:1.62}
 .akey tr:last-child td{border-bottom:0}
-.akey td.k{width:74px;font-weight:800;color:var(--ac);font-size:7.8pt;letter-spacing:.04em}
+.akey td.k{width:80px;font-weight:800;color:var(--ac);font-size:7.8pt;letter-spacing:.04em;white-space:nowrap}
 .trans{background:var(--cool);border-radius:10px;padding:14px 16px;font-size:9.1pt;line-height:1.82;text-align:justify}
 .trans sup{font-size:6.4pt;font-weight:800;color:var(--gold);margin-right:1px}
 h2.sechd{font-size:15pt;font-weight:800;margin-bottom:1.5mm}
@@ -232,10 +232,10 @@ table.flow td.body u{padding:0 16px}
 .drill .go{font-size:7.3pt;font-weight:800;color:var(--gold);letter-spacing:.03em}
 .drill p{font-family:'Noto Serif CJK KR',serif;font-size:11.1pt;line-height:2.95;margin-bottom:6px}
 /* ═══ Check Up 오답 이유 ═══ */
-table.cu{width:100%;border-collapse:separate;border-spacing:0 4px;font-size:9.2pt;margin-bottom:2mm}
+table.cu{width:100%;border-collapse:separate;border-spacing:0 3px;font-size:9.2pt;margin-bottom:1.4mm}
 table.cu th{font-size:7.3pt;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);
  text-align:left;padding:0 10px 4px;font-weight:800}
-table.cu td{padding:8px 11px;vertical-align:middle;line-height:1.4}
+table.cu td{padding:4.5px 11px;vertical-align:middle;line-height:1.4}
 table.cu td.op{width:53%;background:var(--cool);border-radius:8px 0 0 8px}
 table.cu td.op b{color:var(--ac);font-weight:700;margin-right:5px}
 table.cu td.rs{background:var(--cream);border-left:3px solid var(--yel);border-radius:0 8px 8px 0}
@@ -337,4 +337,14 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
 .sline .t .n{min-width:14px}
 .sline .use{flex:0 0 auto;font-size:7.2pt;font-weight:800;color:var(--deep);background:var(--tint);
  border-radius:999px;padding:3px 9px;white-space:nowrap}
+
+/* ── 오답 유형 객관식 ── */
+.tkey{display:flex;flex-wrap:wrap;gap:0 11px;margin:-2px 0 4px 28px;font-size:7.4pt;color:var(--sub);line-height:1.5}
+.tkey span b{color:var(--ac);font-weight:800;margin-right:4px}
+.pick{display:flex;flex-wrap:nowrap;gap:5px;align-items:center}
+.pick span{font-size:7.7pt;font-weight:600;color:var(--sub);background:#fff;
+ border:1px solid var(--hair);border-radius:10px;padding:1.5px 8px;white-space:nowrap;letter-spacing:.02em}
+table.cu td.rs{display:flex;align-items:center;gap:8px}
+table.cu td.rs i.ev{flex:1 1 auto;min-width:30px;border-bottom:1px solid var(--hair);height:11px}
+table.cu th span.ev{float:right;margin-right:6px}
 `;

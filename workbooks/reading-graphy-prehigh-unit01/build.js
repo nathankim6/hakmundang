@@ -9,6 +9,7 @@ const FL=require("./flow.js");
 const EX=require("./extra.js");
 T.forEach(t=>{t.fl=FL[t.no]; const e=EX[t.no]; t.flow=e.flow; t.flowBogi=e.flowBogi;
   t.why=e.why; t.src=e.src; t.kb=e.kb; t.syn=SYN[t.no]; t.synd=SYND[t.no];
+  t.wtype=e.wtype; t.stype=e.stype;
   t.para.sort((a,b)=>a[0].codePointAt(0)-b[0].codePointAt(0));});
 const CIR="①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳".split("");
 const AL="abcdef".split("");
@@ -21,6 +22,12 @@ const LOGO="data:image/png;base64,"+fs.readFileSync(__dirname+"/orun_mark_s.png"
 const P=[]; // pages
 let pn=0;
 
+const WTAG=["정답","무관","반대","지엽","배경"];
+const STAG=["일치","반대","과장","혼동","시점"];
+const WKEY=[["정답","글 전체를 요약한 제목"],["무관","글에 나오지 않는 이야기"],["반대","글과 정반대로 말함"],["지엽","일부 소재만 붙잡음"],["배경","도입일 뿐, 결론이 아님"]];
+const SKEY=[["일치","지문과 같은 내용"],["반대","정반대로 뒤집음"],["과장","지문보다 넓게 말함"],["혼동","말한 사람·대상을 바꿈"],["시점","때나 순서를 바꿈"]];
+const pick=tags=>`<div class="pick">${tags.map(x=>`<span>${x}</span>`).join("")}</div>`;
+const legend=arr=>`<div class="tkey">${arr.map(([a,b])=>`<span><b>${a}</b>${b}</span>`).join("")}</div>`;
 const th=(no,kr,en,sub)=>`<div class="task"><div class="no">${no}</div><h3>${kr}</h3><span class="en">${en}</span><span class="sub">${sub}</span><div class="line"></div></div>`;
 const vars=t=>`--ac:${t.accent};--tint:${t.tint};--deep:${t.deep}`;
 const head=(t,right)=>`<div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b></span><span class="mid">${right}</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>`;
@@ -139,14 +146,16 @@ T.forEach(t=>{
   <div class="sect">
    ${th("5","Check Up","Show What You Know","고르고 끝내지 말고, 왜 아닌지까지 써요.")}
    <div class="q"><div class="stem"><div class="n">1</div><div>${t.check[0].q}
-     <span style="font-weight:400;color:var(--sub)">정답에 ○, 나머지는 제목이 될 수 없는 이유를 한 줄로 써 보세요.</span></div></div>
-    <table class="cu"><tr><th>선지</th><th>○ 또는 오답인 이유</th></tr>
-     ${t.check[0].ch.map((c,i)=>`<tr><td class="op"><b>${CIR[i]}</b>${esc(c)}</td><td class="rs"></td></tr>`).join("")}
+     <span style="font-weight:400;color:var(--sub)">선지마다 알맞은 유형 하나에 ○ 하세요.</span></div></div>
+    ${legend(WKEY)}
+    <table class="cu"><tr><th>선지</th><th>유형 고르기</th></tr>
+     ${t.check[0].ch.map((c,i)=>`<tr><td class="op"><b>${CIR[i]}</b>${esc(c)}</td><td class="rs">${pick(WTAG)}</td></tr>`).join("")}
     </table></div>
    <div class="q"><div class="stem"><div class="n">2</div><div>${t.check[1].q}
-     <span style="font-weight:400;color:var(--sub)">일치하면 근거 문장 번호를, 어긋나면 그 이유를 써 보세요.</span></div></div>
-    <table class="cu"><tr><th>선지</th><th>근거 문장 번호 · 어긋나는 이유</th></tr>
-     ${t.check[1].ch.map((c,i)=>`<tr><td class="op"><b>${CIR[i]}</b>${esc(c)}</td><td class="rs"></td></tr>`).join("")}
+     <span style="font-weight:400;color:var(--sub)">유형 하나에 ○ 하고, 근거 문장 번호를 적어 보세요.</span></div></div>
+    ${legend(SKEY)}
+    <table class="cu"><tr><th>선지</th><th>유형 고르기<span class="ev">근거</span></th></tr>
+     ${t.check[1].ch.map((c,i)=>`<tr><td class="op"><b>${CIR[i]}</b>${esc(c)}</td><td class="rs">${pick(STAG)}<i class="ev"></i></td></tr>`).join("")}
     </table></div>
    <div class="q" style="margin-bottom:0"><div class="stem"><div class="n">3</div><div>${t.check[2].q}</div></div>
     <div class="aline" style="margin-left:28px"></div></div>
@@ -190,9 +199,9 @@ T.forEach((t,ti)=>{
     <tr><td class="k">TASK 3</td><td>${t.flow.filter(r=>r[2]).map((r,i)=>`${CIR[i]} ${r[2]}`).join(" &nbsp; ")}</td></tr>
     <tr><td class="k">TASK 4</td><td>${t.para.map((p,i)=>`(${i+1}) ${p[2]}`).join(" &nbsp; ")}</td></tr>
     <tr><td class="k">TASK 5-1</td><td><b style="color:${t.accent}">정답 ${CIR[t.check[0].ans-1]}</b><br>
-      ${t.why.map((w,i)=>`${CIR[i]} ${w[0]}`).join(" &nbsp;/&nbsp; ")}</td></tr>
+      ${t.why.map((w,i)=>`${CIR[i]} <b style="color:${t.accent}">${t.wtype[i]}</b> ${w[0]==="정답"?"글 전체를 아우르는 제목이다":w[0]}`).join("<br>")}</td></tr>
     <tr><td class="k">TASK 5-2</td><td><b style="color:${t.accent}">정답 ${CIR[t.check[1].ans-1]}</b><br>
-      ${t.src.map((w,i)=>`${CIR[i]} ${w[0]}`).join(" &nbsp;/&nbsp; ")}</td></tr>
+      ${t.src.map((w,i)=>`${CIR[i]} <b style="color:${t.accent}">${t.stype[i]}</b> ${w[0]}`).join(` <span style="color:#C9CDD2">·</span> `)}</td></tr>
     <tr><td class="k">TASK 5-3</td><td>${t.check[2].ans}</td></tr>
    </table>
   </div>
@@ -202,7 +211,7 @@ T.forEach((t,ti)=>{
    <div class="box"><div class="n">유닛 마무리 체크</div><h4>스스로 점검하기</h4>
     <p>□ 다섯 지문을 소리 내어 끝까지 읽었다<br>□ WORD BANK 30개를 영영풀이로 설명할 수 있다<br>
        □ ORUN FLOW 5단계를 보지 않고 표시할 수 있다<br>□ 각 지문의 흐름을 표 없이 말로 설명할 수 있다<br>
-       □ Check Up의 오답 이유를 모두 적었다</p></div>
+       □ Check Up의 오답 유형을 모두 골랐다</p></div>
    <div class="box" style="border-color:#13345C"><div class="n">NEXT UNIT</div><h4>Unit 2 · Seeing Numbers</h4>
     <p>같은 여섯 걸음으로 진행합니다. Unit 1이 ‘표현과 실재’를 다루었다면, Unit 2는 자료와 해석 사이의 거리를 읽습니다.
        지문 5편 · 180–210 words.</p></div>
