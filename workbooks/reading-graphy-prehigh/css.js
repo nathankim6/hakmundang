@@ -339,7 +339,10 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
  border-radius:999px;padding:3px 9px;white-space:nowrap}
 
 /* ── 오답 유형 객관식 ── */
-.tkey{display:flex;flex-wrap:wrap;gap:0 11px;margin:-2px 0 4px 28px;font-size:7.4pt;color:var(--sub);line-height:1.5}
+.tkey{display:flex;flex-wrap:nowrap;align-items:baseline;gap:0 10px;margin:1px 0 5px 28px;
+ font-size:7.4pt;color:var(--sub);line-height:1.5;white-space:nowrap}
+.tkey i{font-style:normal;font-weight:800;color:var(--ac);background:var(--tint);
+ border-radius:9px;padding:1.5px 8px;margin-right:2px;letter-spacing:.01em}
 .tkey span b{color:var(--ac);font-weight:800;margin-right:4px}
 .pick{display:flex;flex-wrap:nowrap;gap:5px;align-items:center}
 .pick span{font-size:7.7pt;font-weight:600;color:var(--sub);background:#fff;

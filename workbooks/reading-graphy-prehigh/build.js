@@ -27,10 +27,10 @@ const evNo = x => (String(x).match(/^[①-⑳]+/) || [""])[0];
 
 const WTAG=["정답","무관","반대","지엽","배경"];
 const STAG=["일치","반대","과장","혼동","시점"];
-const WKEY=[["정답","글 전체를 요약한 제목"],["무관","글에 나오지 않는 이야기"],["반대","글과 정반대로 말함"],["지엽","일부 소재만 붙잡음"],["배경","도입일 뿐, 결론이 아님"]];
-const SKEY=[["일치","지문과 같은 내용"],["반대","정반대로 뒤집음"],["과장","지문보다 넓게 말함"],["혼동","말한 사람·대상을 바꿈"],["시점","때나 순서를 바꿈"]];
+const WKEY=[["정답","전체를 요약"],["무관","글에 없음"],["반대","정반대로 말함"],["지엽","일부 소재만"],["배경","도입일 뿐"]];
+const SKEY=[["일치","지문과 같음"],["반대","뒤집음"],["과장","넓게 말함"],["혼동","대상을 바꿈"],["시점","순서를 바꿈"]];
 const pick=(tags,ok)=>`<div class="pick">${tags.map(x=>`<span${TE&&x===ok?' class="ok"':""}>${x}</span>`).join("")}</div>`;
-const legend=arr=>`<div class="tkey">${arr.map(([a,b])=>`<span><b>${a}</b>${b}</span>`).join("")}</div>`;
+const legend=(arr,how)=>`<div class="tkey"><i>${how}</i>${arr.map(([a,b])=>`<span><b>${a}</b>${b}</span>`).join("")}</div>`;
 const th=(no,kr,en,sub)=>`<div class="task"><div class="no">${no}</div><h3>${kr}</h3><span class="en">${en}</span><span class="sub">${sub}</span><div class="line"></div></div>`;
 const vars=t=>`--ac:${t.accent};--tint:${t.tint};--deep:${t.deep}`;
 const head=(t,right)=>`<div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b>${TE?`<i class="te">교사용</i>`:""}</span><span class="mid">${right}</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>`;
@@ -150,15 +150,13 @@ T.forEach(t=>{
   ${head(t,`Lesson ${t.no} · Check Up`)}
   <div class="sect">
    ${th("6","Check Up","Show What You Know","고르고 끝내지 말고, 왜 아닌지까지 써요.")}
-   <div class="q"><div class="stem"><div class="n">1</div><div>${t.check[0].q}
-     <span style="font-weight:400;color:var(--sub)">선지마다 알맞은 유형 하나에 ○ 하세요.</span></div></div>
-    ${legend(WKEY)}
+   <div class="q"><div class="stem"><div class="n">1</div><div>${t.check[0].q}</div></div>
+    ${legend(WKEY,"선지마다 유형 하나에 ○")}
     <table class="cu"><tr><th>선지</th><th>유형 고르기</th></tr>
      ${t.check[0].ch.map((c,i)=>`<tr><td class="op"><b>${CIR[i]}</b>${esc(c)}</td><td class="rs">${pick(WTAG,t.wtype[i])}</td></tr>`).join("")}
     </table></div>
-   <div class="q"><div class="stem"><div class="n">2</div><div>${t.check[1].q}
-     <span style="font-weight:400;color:var(--sub)">유형 하나에 ○ 하고, 근거 문장 번호를 적어 보세요.</span></div></div>
-    ${legend(SKEY)}
+   <div class="q"><div class="stem"><div class="n">2</div><div>${t.check[1].q}</div></div>
+    ${legend(SKEY,"유형에 ○ · 근거 번호 쓰기")}
     <table class="cu"><tr><th>선지</th><th>유형 고르기<span class="ev">근거</span></th></tr>
      ${t.check[1].ch.map((c,i)=>`<tr><td class="op"><b>${CIR[i]}</b>${esc(c)}</td><td class="rs">${pick(STAG,t.stype[i])}<i class="ev">${A(evNo(t.src[i][0]))}</i></td></tr>`).join("")}
     </table></div>
