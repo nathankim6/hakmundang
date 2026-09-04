@@ -96,7 +96,7 @@ T.forEach(t=>{
  /* 면 C — READ RIGHT */
  P.push(`<div class="page" style="${V}">
   ${head(t,`Lesson ${t.no} · READ RIGHT`)}
-  ${th("2","READ RIGHT","Line by Line","지문의 모든 문장을 ORUN FLOW 로 분석해요.")}
+  ${th("3","READ RIGHT","Line by Line","지문의 모든 문장을 ORUN FLOW 로 분석해요.")}
   <div class="oflow"><b>ORUN FLOW</b>1 주어 밑줄+S &nbsp;→&nbsp; 2 본동사 △+V &nbsp;→&nbsp; 3 접속사 [네모]
    &nbsp;→&nbsp; 4 종속절 S′·V′ &nbsp;→&nbsp; 5 수식어(구) 밑줄+M</div>
   <div class="otip"><b>분석 Tip</b> &nbsp;<b>조동사+동사</b> · <b>have(has, had)+p.p</b> ·
@@ -118,7 +118,7 @@ T.forEach(t=>{
  P.push(`<div class="page" style="${V}">
   ${head(t,`Lesson ${t.no} · Flow & Paraphrase`)}
   <div class="sect">
-   ${th("3","플로차트 완성","Flow Chart","Fill in the blanks with the words in the box.")}
+   ${th("4","플로차트 완성","Flow Chart","Fill in the blanks with the words in the box.")}
    <div class="strip">${t.flow.map((r,i)=>
      `${i?`<div class="ar">›</div>`:""}<div class="st"><div class="ci">
        <svg viewBox="0 0 48 48" fill="none">${PIC[STRIP[t.no][i]](t.accent,t.tint)}</svg></div>
@@ -130,7 +130,7 @@ T.forEach(t=>{
    <div class="bogi"><b>보기</b>${t.flowBogi}</div>
   </div>
   <div class="sect">
-   ${th("4","패러프레이즈","Paraphrase","원문을 다른 말로 바꾼 문장이에요. 보기에서 골라 빈칸을 채워 보세요.")}
+   ${th("5","패러프레이즈","Paraphrase","원문을 다른 말로 바꾼 문장이에요. 보기에서 골라 빈칸을 채워 보세요.")}
    <table class="para"><tr><th>원문 표현</th><th>같은 뜻으로 바꾸어 쓰기</th></tr>
     ${t.para.map(p=>{const m=p[0].match(/^([①-⑳])\s([\s\S]*)$/);
       return `<tr><td class="src"><span>${m[1]}</span>${esc(m[2])}</td><td class="dst">${esc(p[1]).replace("______","<u></u>")}</td></tr>`;}).join("")}
@@ -144,7 +144,7 @@ T.forEach(t=>{
  P.push(`<div class="page" style="${V}">
   ${head(t,`Lesson ${t.no} · Check Up`)}
   <div class="sect">
-   ${th("5","Check Up","Show What You Know","고르고 끝내지 말고, 왜 아닌지까지 써요.")}
+   ${th("6","Check Up","Show What You Know","고르고 끝내지 말고, 왜 아닌지까지 써요.")}
    <div class="q"><div class="stem"><div class="n">1</div><div>${t.check[0].q}
      <span style="font-weight:400;color:var(--sub)">선지마다 알맞은 유형 하나에 ○ 하세요.</span></div></div>
     ${legend(WKEY)}
@@ -192,17 +192,17 @@ T.forEach((t,ti)=>{
     <tr><td class="k">TASK 2<br><span style="font-weight:400;color:#98A0A8">구문분석</span></td><td>
       ${t.syn.map((x,i)=>`<b style="color:${t.accent}">구문 ${i+1} · ${x.n} ${x.name}</b><br>${x.k}`).join("<br>")}
       <br>${t.synd.map((d,i)=>`<b style="color:${t.accent}">훈련 ${i+1}</b> <span style="color:#98A0A8">(${d.u})</span> ${d.k}`).join("<br>")}</td></tr>
-    <tr><td class="k">TASK 2<br><span style="font-weight:400;color:#98A0A8">READ RIGHT</span></td><td>
+    <tr><td class="k">TASK 3<br><span style="font-weight:400;color:#98A0A8">READ RIGHT</span></td><td>
       <b style="color:${t.accent}">먼저 보기 ${t.fl.model.n}</b> ${t.fl.model.ko}<br>
       ${t.fl.drill.map(d=>`<b style="color:${t.accent}">${d.n}</b> ${esc(d.ans)}`).join("<br>")}<br>
       <span style="color:#98A0A8">그 밖의 문장 해석은 아래 전문 해석 참조</span></td></tr>
-    <tr><td class="k">TASK 3</td><td>${t.flow.filter(r=>r[2]).map((r,i)=>`${CIR[i]} ${r[2]}`).join(" &nbsp; ")}</td></tr>
-    <tr><td class="k">TASK 4</td><td>${t.para.map((p,i)=>`(${i+1}) ${p[2]}`).join(" &nbsp; ")}</td></tr>
-    <tr><td class="k">TASK 5-1</td><td><b style="color:${t.accent}">정답 ${CIR[t.check[0].ans-1]}</b><br>
+    <tr><td class="k">TASK 4</td><td>${t.flow.filter(r=>r[2]).map((r,i)=>`${CIR[i]} ${r[2]}`).join(" &nbsp; ")}</td></tr>
+    <tr><td class="k">TASK 5</td><td>${t.para.map((p,i)=>`(${i+1}) ${p[2]}`).join(" &nbsp; ")}</td></tr>
+    <tr><td class="k">TASK 6-1</td><td><b style="color:${t.accent}">정답 ${CIR[t.check[0].ans-1]}</b><br>
       ${t.why.map((w,i)=>`${CIR[i]} <b style="color:${t.accent}">${t.wtype[i]}</b> ${w[0]==="정답"?"글 전체를 아우르는 제목이다":w[0]}`).join("<br>")}</td></tr>
-    <tr><td class="k">TASK 5-2</td><td><b style="color:${t.accent}">정답 ${CIR[t.check[1].ans-1]}</b><br>
+    <tr><td class="k">TASK 6-2</td><td><b style="color:${t.accent}">정답 ${CIR[t.check[1].ans-1]}</b><br>
       ${t.src.map((w,i)=>`${CIR[i]} <b style="color:${t.accent}">${t.stype[i]}</b> ${w[0]}`).join(` <span style="color:#C9CDD2">·</span> `)}</td></tr>
-    <tr><td class="k">TASK 5-3</td><td>${t.check[2].ans}</td></tr>
+    <tr><td class="k">TASK 6-3</td><td>${t.check[2].ans}</td></tr>
    </table>
   </div>
   <div class="trans">${t.kor.map((k,i)=>`<sup>${CIR[i]}</sup>${k}`).join(" ")}</div>
