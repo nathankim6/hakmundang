@@ -1,16 +1,11 @@
 const fs=require("fs");
 const CSS=require("./css.js");
-const {icons,scenes}=require("./art.js");
-const {S:PIC,STRIP,VIG}=require("./pics.js");
-const SYN=require("./syn.js");
-const SYND=require("./syndrill.js");
-const T=require("./content1.js").concat(require("./content2.js"));
-const FL=require("./flow.js");
-const EX=require("./extra.js");
-T.forEach(t=>{t.fl=FL[t.no]; const e=EX[t.no]; t.flow=e.flow; t.flowBogi=e.flowBogi;
-  t.why=e.why; t.src=e.src; t.kb=e.kb; t.syn=SYN[t.no]; t.synd=SYND[t.no];
-  t.wtype=e.wtype; t.stype=e.stype;
-  t.para.sort((a,b)=>a[0].codePointAt(0)-b[0].codePointAt(0));});
+const {S:PIC}=require("./pics.js");
+const UN = (process.argv.find(a=>/^--unit=/.test(a))||"--unit=1").split("=")[1].padStart(2,"0");
+const U  = require(`./units/u${UN}.js`);
+const {icons,scenes,STRIP,VIG} = require(`./art/u${UN}.js`);
+const T  = U.lessons;
+T.forEach(t=>t.para.sort((a,b)=>a[0].codePointAt(0)-b[0].codePointAt(0)));
 const CIR="①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳".split("");
 const AL="abcdef".split("");
 const esc=s=>String(s).replace(/&(?![a-z#])/g,"&amp;");
@@ -22,23 +17,31 @@ const LOGO="data:image/png;base64,"+fs.readFileSync(__dirname+"/orun_mark_s.png"
 const P=[]; // pages
 let pn=0;
 
+/* ── 교사용(정답 오버프린트) ──
+   node build.js --teacher  →  book_t.html : 모든 빈칸을 붉은 글씨로 채운다 */
+const TE = process.argv.includes("--teacher");
+const A  = x => TE ? `<span class="ans">${x}</span>` : "";
+const Aline = x => TE ? `<div class="aline filled"><span class="ans">${x}</span></div>`
+                      : `<div class="aline"></div>`;
+const evNo = x => (String(x).match(/^[①-⑳]+/) || [""])[0];
+
 const WTAG=["정답","무관","반대","지엽","배경"];
 const STAG=["일치","반대","과장","혼동","시점"];
 const WKEY=[["정답","글 전체를 요약한 제목"],["무관","글에 나오지 않는 이야기"],["반대","글과 정반대로 말함"],["지엽","일부 소재만 붙잡음"],["배경","도입일 뿐, 결론이 아님"]];
 const SKEY=[["일치","지문과 같은 내용"],["반대","정반대로 뒤집음"],["과장","지문보다 넓게 말함"],["혼동","말한 사람·대상을 바꿈"],["시점","때나 순서를 바꿈"]];
-const pick=tags=>`<div class="pick">${tags.map(x=>`<span>${x}</span>`).join("")}</div>`;
+const pick=(tags,ok)=>`<div class="pick">${tags.map(x=>`<span${TE&&x===ok?' class="ok"':""}>${x}</span>`).join("")}</div>`;
 const legend=arr=>`<div class="tkey">${arr.map(([a,b])=>`<span><b>${a}</b>${b}</span>`).join("")}</div>`;
 const th=(no,kr,en,sub)=>`<div class="task"><div class="no">${no}</div><h3>${kr}</h3><span class="en">${en}</span><span class="sub">${sub}</span><div class="line"></div></div>`;
 const vars=t=>`--ac:${t.accent};--tint:${t.tint};--deep:${t.deep}`;
-const head=(t,right)=>`<div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b></span><span class="mid">${right}</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>`;
+const head=(t,right)=>`<div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b>${TE?`<i class="te">교사용</i>`:""}</span><span class="mid">${right}</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>`;
 const tab=(t)=>t&&t.no?`<div class="tab">LESSON ${t.no}</div>`:"";
 const foot=(t,label)=>`<div class="rf"><span>${label}</span><b>${++pn}</b><span>옳은영어 ORUN ENGLISH</span></div>`;
 
 /* ═══ 유닛 4면 ═══ */
 T.forEach(t=>{
- const V=vars(t), L=`Unit 1 · Lesson ${t.no}`;
+ const V=vars(t), L=`Unit ${U.no} · Lesson ${t.no}`, PG=`page${TE?" te":""}`;
  /* 면 A — READING */
- P.push(`<div class="page" style="${V}">
+ P.push(`<div class="${PG}" style="${V}">
   ${head(t,`Lesson ${t.no} · ${t.en}`)}
   <div class="lh">
    <div class="ic">${icons[t.key](t.accent)}</div>
@@ -62,7 +65,7 @@ T.forEach(t=>{
  </div>`);
 
  /* 면 B — WORD MATCH + ORUN FLOW 먼저 보기 */
- P.push(`<div class="page" style="${V}">
+ P.push(`<div class="${PG}" style="${V}">
   ${head(t,`Lesson ${t.no} · Words & ORUN FLOW`)}
   <div class="sect">
    ${th("1","영영풀이 매칭","Word Match","영어 정의를 읽고 알맞은 낱말의 기호를 써 보세요.")}
@@ -71,7 +74,7 @@ T.forEach(t=>{
      ${t.defs.map((d,i)=>`<div class="mrow"><div class="lab">${AL[i]}</div><div class="w">${d[0]}</div></div>`).join("")}
     </div>
     <div class="mcol"><h5>Definition</h5>
-     ${t.defOrder.map((oi,i)=>`<div class="mrow"><div class="lab">${i+1}</div><div class="d">${t.defs[oi][1]}</div><div class="blank"></div></div>`).join("")}
+     ${t.defOrder.map((oi,i)=>`<div class="mrow"><div class="lab">${i+1}</div><div class="d">${t.defs[oi][1]}</div><div class="blank">${A(AL[oi])}</div></div>`).join("")}
     </div>
    </div>
   </div>
@@ -83,18 +86,18 @@ T.forEach(t=>{
       <div class="q">${esc(x.q).replace(/«([^»]*)»/g,(m,p)=>`<u>${p}</u>`)}</div>
       <div class="d">${x.d}</div>
       <div class="k">이 문장을 우리말로 옮겨 보세요.</div>
-      <div class="aline"></div>
+      ${Aline(x.k)}
      </div></div>`).join("")}
    <div class="mini" style="margin:4.5mm 0 3px">위 두 구문이 쓰인 문장이에요. 어떤 구문인지 확인하고 한 줄로 해석해 보세요.</div>
    ${t.synd.map((d,i)=>`<div class="sline">
      <div class="t"><div class="n">${i+1}</div><p>${esc(d.en)}</p><div class="use">${d.u}</div></div>
-     <div class="aline"></div></div>`).join("")}
+     ${Aline(d.k)}</div>`).join("")}
   </div>
   ${tab(t)}${foot(t,L)}
  </div>`);
 
  /* 면 C — READ RIGHT */
- P.push(`<div class="page" style="${V}">
+ P.push(`<div class="${PG}" style="${V}">
   ${head(t,`Lesson ${t.no} · READ RIGHT`)}
   ${th("3","READ RIGHT","Line by Line","지문의 모든 문장을 ORUN FLOW 로 분석해요.")}
   <div class="oflow"><b>ORUN FLOW</b>1 주어 밑줄+S &nbsp;→&nbsp; 2 본동사 △+V &nbsp;→&nbsp; 3 접속사 [네모]
@@ -108,14 +111,16 @@ T.forEach(t=>{
    <div class="ko"><b>뼈대 해석</b>${t.fl.model.ko}</div>
   </div>
   <div class="rrh" style="margin-top:4.5mm">한 문장씩 분석하기<span>문장 위에 직접 기호를 표시하고, 아래 한 줄에 우리말로 옮겨 보세요.</span></div>
-  ${t.sent.map((s,i)=>`<div class="rrq">
+  ${t.sent.map((s,i)=>{const dr=t.fl.drill.find(d=>d.n===CIR[i]);
+    return `<div class="rrq">
     <div class="t"><div class="n">${String(i+1).padStart(2,"0")}</div><p>${esc(s)}</p></div>
-    <div class="aline"></div></div>`).join("")}
+    ${TE&&dr?`<div class="mkans"><span class="ans">${esc(dr.ans)}</span></div>`:""}
+    ${Aline(t.kor[i])}</div>`;}).join("")}
   ${tab(t)}${foot(t,L)}
  </div>`);
 
  /* 면 D — FLOW CHART + PARAPHRASE */
- P.push(`<div class="page" style="${V}">
+ P.push(`<div class="${PG}" style="${V}">
   ${head(t,`Lesson ${t.no} · Flow & Paraphrase`)}
   <div class="sect">
    ${th("4","플로차트 완성","Flow Chart","Fill in the blanks with the words in the box.")}
@@ -124,7 +129,7 @@ T.forEach(t=>{
        <svg viewBox="0 0 48 48" fill="none">${PIC[STRIP[t.no][i]](t.accent,t.tint)}</svg></div>
        <b>${r[0]}</b></div>`).join("")}</div>
    <table class="flow"><tr><th style="width:26%">Stage</th><th>What the writer does</th></tr>
-    ${t.flow.map(r=>{const body=r[2]?r[1].replace(/\(\s*[①-⑳]\s*\)/,m=>`<u>${m}</u>`):r[1];
+    ${t.flow.map(r=>{const body=r[2]?r[1].replace(/\(\s*[①-⑳]\s*\)/,m=>`<u>${m}</u>${A(r[2])}`):r[1];
       return `<tr class="${r[2]?"":"given"}"><td class="step">${r[0]}</td><td class="body">${body}</td></tr>`;}).join("")}
    </table>
    <div class="bogi"><b>보기</b>${t.flowBogi}</div>
@@ -133,7 +138,7 @@ T.forEach(t=>{
    ${th("5","패러프레이즈","Paraphrase","원문을 다른 말로 바꾼 문장이에요. 보기에서 골라 빈칸을 채워 보세요.")}
    <table class="para"><tr><th>원문 표현</th><th>같은 뜻으로 바꾸어 쓰기</th></tr>
     ${t.para.map(p=>{const m=p[0].match(/^([①-⑳])\s([\s\S]*)$/);
-      return `<tr><td class="src"><span>${m[1]}</span>${esc(m[2])}</td><td class="dst">${esc(p[1]).replace("______","<u></u>")}</td></tr>`;}).join("")}
+      return `<tr><td class="src"><span>${m[1]}</span>${esc(m[2])}</td><td class="dst">${esc(p[1]).replace("______",`<u>${A(p[2])}</u>`)}</td></tr>`;}).join("")}
    </table>
    <div class="bogi"><b>보기</b>${t.paraBogi}</div>
   </div>
@@ -141,7 +146,7 @@ T.forEach(t=>{
  </div>`);
 
  /* 면 E — CHECK UP + KNOWLEDGE BANK */
- P.push(`<div class="page" style="${V}">
+ P.push(`<div class="${PG}" style="${V}">
   ${head(t,`Lesson ${t.no} · Check Up`)}
   <div class="sect">
    ${th("6","Check Up","Show What You Know","고르고 끝내지 말고, 왜 아닌지까지 써요.")}
@@ -149,16 +154,17 @@ T.forEach(t=>{
      <span style="font-weight:400;color:var(--sub)">선지마다 알맞은 유형 하나에 ○ 하세요.</span></div></div>
     ${legend(WKEY)}
     <table class="cu"><tr><th>선지</th><th>유형 고르기</th></tr>
-     ${t.check[0].ch.map((c,i)=>`<tr><td class="op"><b>${CIR[i]}</b>${esc(c)}</td><td class="rs">${pick(WTAG)}</td></tr>`).join("")}
+     ${t.check[0].ch.map((c,i)=>`<tr><td class="op"><b>${CIR[i]}</b>${esc(c)}</td><td class="rs">${pick(WTAG,t.wtype[i])}</td></tr>`).join("")}
     </table></div>
    <div class="q"><div class="stem"><div class="n">2</div><div>${t.check[1].q}
      <span style="font-weight:400;color:var(--sub)">유형 하나에 ○ 하고, 근거 문장 번호를 적어 보세요.</span></div></div>
     ${legend(SKEY)}
     <table class="cu"><tr><th>선지</th><th>유형 고르기<span class="ev">근거</span></th></tr>
-     ${t.check[1].ch.map((c,i)=>`<tr><td class="op"><b>${CIR[i]}</b>${esc(c)}</td><td class="rs">${pick(STAG)}<i class="ev"></i></td></tr>`).join("")}
+     ${t.check[1].ch.map((c,i)=>`<tr><td class="op"><b>${CIR[i]}</b>${esc(c)}</td><td class="rs">${pick(STAG,t.stype[i])}<i class="ev">${A(evNo(t.src[i][0]))}</i></td></tr>`).join("")}
     </table></div>
    <div class="q" style="margin-bottom:0"><div class="stem"><div class="n">3</div><div>${t.check[2].q}</div></div>
-    <div class="aline" style="margin-left:28px"></div></div>
+    ${TE?`<div class="aline filled" style="margin-left:28px"><span class="ans">${t.check[2].ans}</span></div>`
+        :`<div class="aline" style="margin-left:28px"></div>`}</div>
   </div>
   <div class="kb">
    <div class="hd"><b>${t.kb.title}</b><em>${t.kb.lead}</em><span class="tag">KNOWLEDGE BANK</span></div>
@@ -181,9 +187,9 @@ T.forEach(t=>{
 /* ═══ ANSWERS ═══ */
 const AC={accent:"#13345C",tint:"#E8EDF3",deep:"#0E2542"};
 T.forEach((t,ti)=>{
- P.push(`<div class="page${ti===4?" tight":""}" style="${vars(AC)}">
+ P.push(`<div class="page${ti===4?" tight":""}${TE?" te":""}" style="${vars(AC)}">
   ${head(AC,"Answers & Full Translation")}
-  ${ti===0?`<h2 class="sechd">정답과 해설</h2><p>Lesson 01–05 &nbsp;|&nbsp; 지문 전문 해석 포함</p>`:""}
+  ${ti===0?`<h2 class="sechd">정답과 해설</h2><p>Unit ${U.no} &nbsp;|&nbsp; Lesson ${T[0].no}–${T[T.length-1].no} &nbsp;|&nbsp; 지문 전문 해석 포함</p>`:""}
   <div class="akey" style="--ac:${t.accent}">
    <div class="hd">Lesson ${t.no} &nbsp;${esc(t.en)}<em>${t.ko}</em></div>
    <table>
@@ -212,16 +218,21 @@ T.forEach((t,ti)=>{
     <p>□ 다섯 지문을 소리 내어 끝까지 읽었다<br>□ WORD BANK 30개를 영영풀이로 설명할 수 있다<br>
        □ ORUN FLOW 5단계를 보지 않고 표시할 수 있다<br>□ 각 지문의 흐름을 표 없이 말로 설명할 수 있다<br>
        □ Check Up의 오답 유형을 모두 골랐다</p></div>
-   <div class="box" style="border-color:#13345C"><div class="n">NEXT UNIT</div><h4>Unit 2 · Seeing Numbers</h4>
-    <p>같은 여섯 걸음으로 진행합니다. Unit 1이 ‘표현과 실재’를 다루었다면, Unit 2는 자료와 해석 사이의 거리를 읽습니다.
-       지문 5편 · 180–210 words.</p></div>
+   ${U.next?`<div class="box" style="border-color:#13345C"><div class="n">NEXT UNIT</div>
+    <h4>Unit ${U.no+1} · ${U.next.en}</h4>
+    <p>같은 여섯 걸음으로 진행합니다. Unit ${U.no}이 ‘${U.tagline.split(" — ")[0]}’를 다루었다면,
+       Unit ${U.no+1}는 ${U.next.ko}. 지문 5편 · ${U.next.words}.</p></div>`
+    :`<div class="box" style="border-color:#13345C"><div class="n">THE END</div><h4>12 유닛 완주</h4>
+    <p>열두 분야 예순 편을 모두 읽었습니다. 이제 같은 여섯 걸음으로 어떤 비문학 지문이든 스스로 읽어 낼 수 있습니다.</p></div>`}
   </div>`:""}
   ${foot(AC,"Answers")}
  </div>`);
 });
 
 const html=`<!doctype html><html lang="ko"><head><meta charset="utf-8">
-<title>READING GRAPHY · PRE-HIGH · Unit 1</title><style>${CSS}\n.rh .lg .mk{background-image:url(${LOGO})}</style></head>
+<title>READING GRAPHY · PRE-HIGH · Unit ${U.no} · ${U.field}</title><style>${CSS}\n.rh .lg .mk{background-image:url(${LOGO})}</style></head>
 <body>${P.join("\n")}</body></html>`;
-fs.writeFileSync("book.html",html);
+const OUT = process.env.OUTDIR || ".";
+fs.mkdirSync(OUT,{recursive:true});
+fs.writeFileSync(`${OUT}/u${UN}${TE?"_t":""}.html`,html);
 console.log("pages:",P.length,"bytes:",html.length);

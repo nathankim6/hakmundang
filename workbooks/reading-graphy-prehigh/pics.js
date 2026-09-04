@@ -25,50 +25,26 @@ const S = {
  openbook:(c,l)=>`<path d="M24 14c-5-4-11-4-17-2v24c6-2 12-2 17 2 5-4 11-4 17-2V12c-6-2-12-2-17 2z" fill="${l}" stroke="${c}" stroke-width="2.4" stroke-linejoin="round"/><path d="M24 14v24" stroke="${c}" stroke-width="2.4"/>`,
  chat:(c,l)=>`<rect x="4" y="9" width="26" height="18" rx="5" fill="${c}"/><path d="M11 27v6l7-6z" fill="${c}"/><rect x="20" y="21" width="24" height="17" rx="5" fill="${l}" stroke="${c}" stroke-width="2.2"/><path d="M37 38v5l-6-5z" fill="${l}" stroke="${c}" stroke-width="2.2" stroke-linejoin="round"/>`,
  loop:(c,l)=>`<path d="M14 18a8 8 0 1 0 0 12c5 0 6-12 12-12a8 8 0 1 1 0 12c-6 0-7-12-12-12z" fill="none" stroke="${c}" stroke-width="3.2" stroke-linecap="round"/><circle cx="34" cy="24" r="3" fill="${l}"/>`,
+ gear:(c,l)=>`<circle cx="24" cy="24" r="16" fill="${l}"/><path d="M24 6l2.6 4.6 5.2-1.4 1 5.3 5.3 1-1.4 5.2L41 24l-4.3 2.3 1.4 5.2-5.3 1-1 5.3-5.2-1.4L24 42l-2.6-4.6-5.2 1.4-1-5.3-5.3-1 1.4-5.2L7 24l4.3-2.3-1.4-5.2 5.3-1 1-5.3 5.2 1.4z" fill="${c}"/><circle cx="24" cy="24" r="6" fill="${l}"/>`,
+ brain:(c,l)=>`<path d="M22 9c-6 0-9 4-9 7-4 1-5 4-5 7 0 3 2 5 4 6-1 4 2 8 6 8h4V9z" fill="${l}" stroke="${c}" stroke-width="2.4" stroke-linejoin="round"/><path d="M26 9c6 0 9 4 9 7 4 1 5 4 5 7 0 3-2 5-4 6 1 4-2 8-6 8h-4V9z" fill="${c}"/><path d="M22 16c-3 0-4 2-4 4M22 27c-3 0-5 2-5 5" stroke="${c}" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M24 37v5" stroke="${c}" stroke-width="2.6" stroke-linecap="round"/>`,
+ moonface:(c,l)=>`<circle cx="24" cy="24" r="17" fill="${l}"/><circle cx="24" cy="24" r="17" stroke="${c}" stroke-width="2.6" fill="none"/><path d="M31 11a15 15 0 0 0 0 26 17 17 0 1 1 0-26z" fill="${c}" opacity=".25"/><circle cx="18" cy="19" r="3.2" fill="${c}" opacity=".7"/><circle cx="28" cy="29" r="4.2" fill="${c}" opacity=".55"/><circle cx="17" cy="31" r="2.2" fill="${c}" opacity=".6"/>`,
+ nova:(c,l)=>`<circle cx="24" cy="24" r="8" fill="${c}"/><circle cx="24" cy="24" r="13" fill="${l}" opacity=".8"/><circle cx="24" cy="24" r="7" fill="${c}"/><path d="M24 2v9M24 37v9M2 24h9M37 24h9M9 9l6 6M33 33l6 6M39 9l-6 6M15 33l-6 6" stroke="${c}" stroke-width="2.8" stroke-linecap="round"/>`,
+ scope:(c,l)=>`<path d="M8 33l24-16 6 9-24 16z" fill="${l}" stroke="${c}" stroke-width="2.4" stroke-linejoin="round"/><path d="M32 17l7-5 5 8-7 4z" fill="${c}"/><path d="M14 39l-4 6M22 40l3 5" stroke="${c}" stroke-width="2.8" stroke-linecap="round"/>`,
+ balance:(c,l)=>`<path d="M24 7v30M12 41h24" stroke="${c}" stroke-width="3" stroke-linecap="round"/><path d="M8 15h32" stroke="${c}" stroke-width="3" stroke-linecap="round"/><path d="M2 27a6 6 0 0 0 12 0z" fill="${l}" stroke="${c}" stroke-width="2.2" stroke-linejoin="round"/><path d="M34 27a6 6 0 0 0 12 0z" fill="${c}"/><path d="M8 15l-2 12M40 15l2 12" stroke="${c}" stroke-width="1.8"/>`,
+ zipper:(c,l)=>`<path d="M18 4v22M30 4v22" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/><path d="M18 7h-4M18 13h-4M18 19h-4M30 7h4M30 13h4M30 19h4" stroke="${c}" stroke-width="2.6" stroke-linecap="round" opacity=".55"/><rect x="17" y="25" width="14" height="10" rx="3" fill="${c}"/><path d="M24 35v9" stroke="${c}" stroke-width="3" stroke-linecap="round"/><circle cx="24" cy="44" r="3" fill="${l}" stroke="${c}" stroke-width="2.2"/>`,
+ warn:(c,l)=>`<path d="M24 7l19 32H5z" fill="${l}" stroke="${c}" stroke-width="2.6" stroke-linejoin="round"/><path d="M24 19v10" stroke="${c}" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="34" r="2.2" fill="${c}"/>`,
+ sprout:(c,l)=>`<path d="M24 42V22" stroke="${c}" stroke-width="3.2" stroke-linecap="round"/><path d="M24 24c-9 0-13-5-13-12 8 0 13 4 13 12z" fill="${c}"/><path d="M24 28c8 0 12-4 12-10-7 0-12 3-12 10z" fill="${l}" stroke="${c}" stroke-width="2.2" stroke-linejoin="round"/><path d="M14 42h20" stroke="${c}" stroke-width="3" stroke-linecap="round"/>`,
+ cable:(c,l)=>`<path d="M6 30c6 0 6-12 12-12s6 12 12 12" stroke="${c}" stroke-width="3.4" fill="none" stroke-linecap="round"/><rect x="30" y="24" width="6" height="12" rx="2" fill="${c}"/><rect x="38" y="26" width="5" height="8" rx="2" fill="${l}" stroke="${c}" stroke-width="2.2"/><path d="M36 28h3M36 32h3" stroke="${c}" stroke-width="2"/>`,
+ spark:(c,l)=>`<circle cx="24" cy="24" r="5" fill="${c}"/><ellipse cx="24" cy="24" rx="19" ry="8" stroke="${c}" stroke-width="2.4" fill="none"/><ellipse cx="24" cy="24" rx="19" ry="8" stroke="${c}" stroke-width="2.4" fill="none" transform="rotate(60 24 24)"/><ellipse cx="24" cy="24" rx="19" ry="8" stroke="${l}" stroke-width="2.4" fill="none" transform="rotate(120 24 24)"/>`,
+ nope:(c,l)=>`<circle cx="24" cy="24" r="17" fill="${l}" stroke="${c}" stroke-width="2.8"/><path d="M15 15l18 18" stroke="${c}" stroke-width="3.6" stroke-linecap="round"/>`,
+ ask:(c,l)=>`<circle cx="24" cy="24" r="17" fill="${l}" stroke="${c}" stroke-width="2.8"/><path d="M18 19c0-4 3-6 6-6s6 2 6 6c0 4-6 4-6 8" stroke="${c}" stroke-width="3.2" fill="none" stroke-linecap="round"/><circle cx="24" cy="34" r="2.4" fill="${c}"/>`,
+ shield:(c,l)=>`<path d="M24 5l16 6v12c0 10-7 16-16 20-9-4-16-10-16-20V11z" fill="${l}" stroke="${c}" stroke-width="2.5" stroke-linejoin="round"/><path d="M17 23l5 5 10-10" stroke="${c}" stroke-width="3.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`,
+ tag:(c,l)=>`<path d="M5 20l15-13h20a3 3 0 0 1 3 3v20a3 3 0 0 1-3 3H20z" fill="${l}" stroke="${c}" stroke-width="2.4" stroke-linejoin="round"/><circle cx="33" cy="17" r="3.4" fill="${c}"/><path d="M24 30h13" stroke="${c}" stroke-width="2.6" stroke-linecap="round"/>`,
+ alone:(c,l)=>`<circle cx="24" cy="16" r="7" fill="${c}"/><path d="M11 41c0-8 6-13 13-13s13 5 13 13z" fill="${l}" stroke="${c}" stroke-width="2.4" stroke-linejoin="round"/><path d="M4 8l6 6M44 8l-6 6M4 30h5M39 30h5" stroke="${c}" stroke-width="2.4" stroke-linecap="round" opacity=".5"/>`,
+ pair:(c,l)=>`<circle cx="16" cy="16" r="6.5" fill="${c}"/><circle cx="33" cy="16" r="6.5" fill="${l}" stroke="${c}" stroke-width="2.2"/><path d="M5 40c0-7 5-11 11-11s11 4 11 11z" fill="${c}" opacity=".85"/><path d="M22 40c0-7 5-11 11-11s11 4 11 11z" fill="${l}" stroke="${c}" stroke-width="2.2" stroke-linejoin="round"/>`,
+ ruler:(c,l)=>`<rect x="4" y="17" width="40" height="14" rx="3" fill="${l}" stroke="${c}" stroke-width="2.4"/><path d="M12 17v6M20 17v9M28 17v6M36 17v9" stroke="${c}" stroke-width="2.4" stroke-linecap="round"/>`
 };
 /* 레슨별 플로차트 5단계 픽토그램 */
-const STRIP = {
- "01":["globe","swap","hourglass","palette","handshake"],
- "02":["eye","letters","frame","camera","pipe"],
- "03":["heartbeat","hourglass","quote","wrench","takeoff"],
- "04":["wand","fire","dome","wilt","sunrise"],
- "05":["books","map","openbook","chat","loop"],
-};
+
 /* Knowledge Bank 코너 삽화 — viewBox 240×140 */
-const VIG = {
-"01":(c,l,d)=>`<circle cx="72" cy="70" r="42" fill="${l}"/><circle cx="72" cy="70" r="42" stroke="${c}" stroke-width="4.3" fill="none"/>
- <path d="M34 54h76M30 70h84M34 86h76" stroke="${c}" stroke-width="3.5" opacity=".55"/>
- <path d="M48 44c18 14 32 34 40 56M96 44C80 60 68 82 62 100" stroke="${d}" stroke-width="3.8" opacity=".8" fill="none"/>
- <circle cx="60" cy="62" r="5" fill="${d}" opacity=".5"/><circle cx="88" cy="84" r="7" fill="${d}" opacity=".4"/>
- <g transform="translate(150,44) rotate(24)"><rect width="72" height="15" rx="7.5" fill="${c}"/><rect x="62" y="-4" width="16" height="23" rx="5" fill="${d}"/></g>
- <path d="M158 92l10 26M186 84l-6 34" stroke="${c}" stroke-width="4.3" stroke-linecap="round"/><path d="M150 122h48" stroke="${c}" stroke-width="4.9" stroke-linecap="round"/>`,
-"02":(c,l,d)=>`<rect x="18" y="30" width="96" height="76" rx="7" fill="${l}" stroke="${c}" stroke-width="4.3"/>
- <path d="M46 30l7-11h24l7 11" fill="none" stroke="${c}" stroke-width="4.3" stroke-linejoin="round"/>
- <circle cx="66" cy="68" r="24" fill="${c}"/><circle cx="66" cy="68" r="11" fill="${l}"/><circle cx="97" cy="43" r="4" fill="${d}"/>
- <rect x="134" y="26" width="88" height="66" rx="4" fill="#FFFDF8" stroke="${d}" stroke-width="7.2"/>
- <path d="M150 74c10-18 20-20 28-9 5 5 9 4 11-3" stroke="${c}" stroke-width="4.3" fill="none" stroke-linecap="round"/>
- <circle cx="158" cy="48" r="6" fill="${c}"/><path d="M140 104h76" stroke="${d}" stroke-width="4.3" stroke-linecap="round" stroke-dasharray="5 6" opacity=".6"/>`,
-"03":(c,l,d)=>`<rect x="16" y="34" width="120" height="72" rx="10" fill="${l}" stroke="${c}" stroke-width="4.3"/>
- <circle cx="52" cy="66" r="17" fill="#FFFDF8" stroke="${c}" stroke-width="3.8"/><path d="M52 54v12l8 5" stroke="${c}" stroke-width="4.1" stroke-linecap="round" fill="none"/>
- <circle cx="100" cy="66" r="17" fill="#FFFDF8" stroke="${c}" stroke-width="3.8"/><path d="M92 66h16M100 58v16" stroke="${d}" stroke-width="4.1" stroke-linecap="round"/>
- <rect x="34" y="90" width="84" height="8" rx="4" fill="${c}" opacity=".35"/>
- <g transform="translate(196,42) rotate(-16)"><path d="M0 0 44 14 20 20 14 38z" fill="${c}"/><path d="M0 0 20 20 14 38z" fill="${d}" opacity=".6"/></g>
- <path d="M148 92c22 6 40 0 56-16" stroke="${c}" stroke-width="3.8" stroke-dasharray="5 7" fill="none"/>
- <g fill="${d}">${[0,1,2].map(i=>`<g transform="translate(${160+i*24},112)"><path d="M0 -8 7 -4 7 4 0 8 -7 4 -7 -4z"/><circle r="3" fill="${l}"/></g>`).join("")}</g>`,
-"04":(c,l,d)=>`<g transform="translate(66,74)"><circle r="40" fill="none" stroke="${c}" stroke-width="4.9"/>
- ${[0,1,2,3,4,5,6,7].map(i=>`<path d="M0 0 L${(40*Math.cos(i*Math.PI/4)).toFixed(1)} ${(40*Math.sin(i*Math.PI/4)).toFixed(1)}" stroke="${c}" stroke-width="3.5"/>`).join("")}
- <circle r="7" fill="${c}"/></g>
- <path d="M66 114v14M50 128h32" stroke="${c}" stroke-width="4.9" stroke-linecap="round"/>
- <path d="M132 104a34 34 0 0 1 68 0z" fill="#FFFFFF" opacity=".7"/><path d="M132 104a34 34 0 0 1 68 0" stroke="${c}" stroke-width="4.3" fill="none"/>
- <path d="M124 104h84" stroke="${d}" stroke-width="4.9" stroke-linecap="round"/>
- <g fill="${c}"><rect x="150" y="66" width="12" height="38" rx="2"/><rect x="170" y="66" width="12" height="38" rx="2"/><rect x="162" y="78" width="8" height="26" opacity=".7"/>
- <path d="M150 66h12l-6-11zM170 66h12l-6-11z"/></g>
- <path d="M112 44l2.6 7.4 7.4 2.6-7.4 2.6L112 64l-2.6-7.4-7.4-2.6 7.4-2.6z" fill="${d}"/>`,
-"05":(c,l,d)=>`<g transform="translate(120,86)">${[0,1,2,3,4,5].map(i=>{const a=i*Math.PI/3-Math.PI/2;const x=(66*Math.cos(a)).toFixed(1),y=(30*Math.sin(a)).toFixed(1);
- return `<g transform="translate(${x},${y})"><rect x="-11" y="-8" width="22" height="16" rx="4" fill="${i%2?l:c}" stroke="${c}" stroke-width="2.9"/><rect x="-8" y="8" width="16" height="10" rx="3" fill="${c}" opacity=".45"/></g>`}).join("")}</g>
- <ellipse cx="120" cy="86" rx="40" ry="18" fill="${l}" stroke="${c}" stroke-width="3.8"/>
- <path d="M96 86c8-6 16-6 24-2 8-4 16-4 24 2-8 5-16 5-24 1-8 4-16 4-24-1z" fill="#FFFDF8" stroke="${c}" stroke-width="3.2" stroke-linejoin="round"/>
- <g><rect x="24" y="14" width="72" height="30" rx="9" fill="${c}"/><path d="M40 44v10l11-10z" fill="${c}"/><path d="M36 26h48M36 35h30" stroke="#fff" stroke-width="4.9" stroke-linecap="round"/></g>
- <g><rect x="146" y="18" width="66" height="27" rx="9" fill="${d}" opacity=".5"/><path d="M196 45v9l-10-9z" fill="${d}" opacity=".5"/><path d="M158 29h42M158 37h24" stroke="#fff" stroke-width="4.6" stroke-linecap="round"/></g>`,
-};
-module.exports={S,STRIP,VIG};
+module.exports = { S };

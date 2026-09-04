@@ -2,7 +2,8 @@
 """HTML 원본과 PDF 추출 텍스트를 대조해 잘려 나간 내용을 찾는다."""
 import re, sys, html, pymupdf
 
-src = open("book.html", encoding="utf-8").read()
+BASE = sys.argv[1] if len(sys.argv) > 1 else "book"
+src = open(BASE + ".html", encoding="utf-8").read()
 src = re.sub(r"<style[\s\S]*?</style>", "", src)
 src = re.sub(r"<svg[\s\S]*?</svg>", " ", src)
 
@@ -13,7 +14,7 @@ def plain(h):
     h = html.unescape(h)
     return re.sub(r"\s+", " ", h).strip()
 
-doc = pymupdf.open("book.pdf")
+doc = pymupdf.open(BASE + ".pdf")
 assert len(parts) == doc.page_count, f"page mismatch {len(parts)} vs {doc.page_count}"
 
 bad = 0
