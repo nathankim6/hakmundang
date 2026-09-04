@@ -172,22 +172,22 @@ table.para td.dst u{text-decoration:none;border-bottom:1.6px solid var(--ac);pad
 .cover .foot{margin-top:6mm;font-size:8pt;opacity:.62;display:flex;justify-content:space-between;border-top:1px solid rgba(255,255,255,.2);padding-top:4mm}
 /* ── 구성 안내 ── */
 .how{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm;margin-bottom:5mm}
-.how .box{border:1.5px solid var(--hair);border-radius:12px;padding:11px 13px}
-.how .box .n{font-size:8pt;font-weight:800;color:var(--blue);letter-spacing:.14em;margin-bottom:6px}
+.how .box{border:1.5px solid var(--hair);border-radius:12px;padding:9px 13px}
+.how .box .n{font-size:8pt;font-weight:800;color:var(--blue);letter-spacing:.14em;margin-bottom:4px}
 .how .box h4{font-size:10.2pt;font-weight:800;margin-bottom:4px}
-.how .box p{font-size:8.1pt;color:var(--sub);line-height:1.46}
+.how .box p{font-size:8.1pt;color:var(--sub);line-height:1.42}
 .lane{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-bottom:5mm}
 .lane div{border-radius:10px;padding:8px 8px;font-size:7.6pt;line-height:1.38;color:#fff}
 .lane b{display:block;font-size:8.8pt;margin-bottom:3px;font-weight:800}
 /* ── 해설 ── */
-.akey{border:1.5px solid var(--hair);border-radius:12px;overflow:hidden;margin-bottom:5mm}
-.akey .hd{background:var(--ac);color:#fff;padding:7px 13px;font-size:9.6pt;font-weight:800;display:flex;gap:9px;align-items:baseline}
+.akey{border:1.5px solid var(--hair);border-radius:12px;overflow:hidden;margin-bottom:4mm}
+.akey .hd{background:var(--ac);color:#fff;padding:5.5px 13px;font-size:9.6pt;font-weight:800;display:flex;gap:9px;align-items:baseline}
 .akey .hd em{font-style:normal;font-size:8pt;opacity:.82;font-weight:400}
 .akey table{width:100%;border-collapse:collapse;font-size:8.6pt}
-.akey td{padding:9px 13px;border-bottom:1px solid #EEECE8;vertical-align:top;line-height:1.62}
+.akey td{padding:7px 13px;border-bottom:1px solid #EEECE8;vertical-align:top;line-height:1.6}
 .akey tr:last-child td{border-bottom:0}
 .akey td.k{width:80px;font-weight:800;color:var(--ac);font-size:7.8pt;letter-spacing:.04em;white-space:nowrap}
-.trans{background:var(--cool);border-radius:10px;padding:14px 16px;font-size:9.1pt;line-height:1.82;text-align:justify}
+.trans{background:var(--cool);border-radius:10px;padding:13px 16px;font-size:9.1pt;line-height:1.74;text-align:justify}
 .trans sup{font-size:6.4pt;font-weight:800;color:var(--gold);margin-right:1px}
 h2.sechd{font-size:15pt;font-weight:800;margin-bottom:1.5mm}
 h2.sechd + p{font-size:8.6pt;color:var(--sub);margin-bottom:3.5mm}
@@ -347,4 +347,14 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
 table.cu td.rs{display:flex;align-items:center;gap:8px}
 table.cu td.rs i.ev{flex:1 1 auto;min-width:30px;border-bottom:1px solid var(--hair);height:11px}
 table.cu th span.ev{float:right;margin-right:6px}
+
+/* 마지막 해설 면(마무리 박스까지 얹히는 면)만 여백을 좁힌다 */
+.page.tight .akey{margin-bottom:3.5mm}
+.page.tight .akey .hd{padding:5px 13px}
+.page.tight .akey td{padding:4.6px 13px;line-height:1.54}
+.page.tight .trans{padding:11px 16px;line-height:1.62}
+.page.tight .how .box{padding:8px 13px}
+.page.tight .how .box h4{font-size:9.8pt;margin-bottom:3px}
+.page.tight .how .box .n{margin-bottom:3px}
+.page.tight .how .box p{line-height:1.38}
 `;

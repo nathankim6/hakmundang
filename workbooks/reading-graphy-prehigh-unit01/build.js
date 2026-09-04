@@ -181,7 +181,7 @@ T.forEach(t=>{
 /* ═══ ANSWERS ═══ */
 const AC={accent:"#13345C",tint:"#E8EDF3",deep:"#0E2542"};
 T.forEach((t,ti)=>{
- P.push(`<div class="page" style="${vars(AC)}">
+ P.push(`<div class="page${ti===4?" tight":""}" style="${vars(AC)}">
   ${head(AC,"Answers & Full Translation")}
   ${ti===0?`<h2 class="sechd">정답과 해설</h2><p>Lesson 01–05 &nbsp;|&nbsp; 지문 전문 해석 포함</p>`:""}
   <div class="akey" style="--ac:${t.accent}">
@@ -207,7 +207,7 @@ T.forEach((t,ti)=>{
   </div>
   <div class="trans">${t.kor.map((k,i)=>`<sup>${CIR[i]}</sup>${k}`).join(" ")}</div>
   ${ti===4?`
-  <div class="how" style="grid-template-columns:1fr 1fr;margin-top:5mm">
+  <div class="how" style="grid-template-columns:1fr 1fr;margin-top:3mm">
    <div class="box"><div class="n">유닛 마무리 체크</div><h4>스스로 점검하기</h4>
     <p>□ 다섯 지문을 소리 내어 끝까지 읽었다<br>□ WORD BANK 30개를 영영풀이로 설명할 수 있다<br>
        □ ORUN FLOW 5단계를 보지 않고 표시할 수 있다<br>□ 각 지문의 흐름을 표 없이 말로 설명할 수 있다<br>

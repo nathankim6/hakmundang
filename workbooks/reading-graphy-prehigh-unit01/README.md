@@ -66,6 +66,7 @@ HTML/CSS를 헤드리스 Chromium으로 인쇄해 PDF를 만든다 (docx 아님)
 | `css.js` | 디자인 시스템 — A4 판형, 색 토큰, 컴포넌트 |
 | `build.js` | 25면 HTML 생성기 |
 | `output/` | 생성된 `.pdf` / `.html` |
+| `clip.py` | 잘림 검사 (HTML ↔ PDF 텍스트 대조) |
 
 ## 빌드
 
@@ -74,8 +75,17 @@ apt-get install -y fonts-noto-cjk        # Noto Serif CJK KR (지문 본문용)
 node build.js                            # → book.html
 /opt/pw-browsers/chromium-1194/chrome-linux/chrome --headless --disable-gpu --no-sandbox \
   --no-pdf-header-footer --print-to-pdf=book.pdf --virtual-time-budget=8000 "file://$PWD/book.html"
-python3 fill.py book.pdf                 # 면별 채움률 (현재 30면 84–100%, 넘침 없음)
+python3 fill.py book.pdf                 # 면별 채움률 (현재 30면 83–100%)
+python3 clip.py                          # 잘림 검사 — 반드시 "잘린 면 없음" 이어야 한다
 ```
+
+`.page` 는 `overflow:hidden` 이라 넘친 내용이 조용히 사라진다. `clip.py` 가
+`book.html` 의 면별 텍스트와 `book.pdf` 에서 추출한 텍스트를 대조해 누락된 토큰을
+집어내므로, 내용을 추가한 뒤에는 채움률만 보지 말고 **반드시 이 검사를 통과시킨다.**
+(채움률 100% 는 그 자체로 넘침이 아니다 — 판정은 `clip.py` 가 한다.)
+
+해설 면은 마지막 면만 `유닛 마무리 체크` / `NEXT UNIT` 박스를 더 얹으므로,
+그 면에만 `.page.tight` 로 여백을 좁힌다. 나머지 해설 면은 넓은 간격을 유지한다.
 
 ## 새 유닛 만들기
 
