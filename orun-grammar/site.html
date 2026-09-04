@@ -2166,6 +2166,12 @@ footer.site{background:var(--panel);border-top:1px solid var(--line);margin-top:
 .exh .exslg{flex:none;align-self:center;margin-left:10px;padding-left:10px;border-left:1px solid #e6ebf2;display:flex;align-items:center}
 .exh .exslg img{height:34px;width:auto;max-width:60px;object-fit:contain;display:block}
 
+/* 문제은행 출처 전환 */
+.gtabs.bsrc{margin-bottom:8px}
+.gtabs.bsrc em{font-style:normal;font-family:var(--mono);font-size:11px;font-weight:600;color:var(--sub2);margin-left:3px}
+.gtabs.bsrc button.on em{color:var(--acc)}
+.cat .gi.lg{padding:0;background:#fff;border:1px solid var(--line2,#efeee9);width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;overflow:hidden}
+.cat .gi.lg img{max-width:26px;max-height:26px;object-fit:contain}
 /* ══ 시험지 ══ */
 #paper{display:none}
 .sheet{background:#fff;width:210mm;height:297mm;overflow:hidden;margin:0 auto 16px;padding:14mm 13mm 15mm;position:relative;
@@ -2315,10 +2321,23 @@ const byId={}; CATS.forEach(c=>byId[c.id]=c);
 /* 학교별 기출 유형 세트 — 문제은행과 같은 문항 구조. byId 에 등록해 폴더·편집·Word 가 그대로 동작한다 */
 const SCHOOLS=DATA.schools||[];
 SCHOOLS.forEach(sc=>(sc.sets||[]).forEach(st=>{st.school=sc.id;st.name=sc.name.replace('학교','')+' '+st.grade+' 기출 유형';st.points=st.points||[];byId[st.id]=st;}));
+/* 교과서 시그니처 문항 — 학년×문법항목마다 객관식 100 + 주관식 50 */
+const SIG=DATA.sig||[];
+SIG.forEach(g=>{g.points=g.points||[];byId[g.id]=g;});
+/* 커리큘럼(옳은영어 교재) 문항 수 — 대시보드 합산용 */
+function curCount(){let n=0;['ele','mid'].forEach(t=>((ORUN[t]||{books:[]}).books||[]).forEach(b=>
+  b.chapters.forEach(c=>c.items.forEach(it=>['chk','rec'].forEach(k=>{const d=it[k];if(!d)return;
+    if(d.questions) n+=d.questions.length;
+    else (d.sections||[]).forEach(sec=>{n+=(sec.rows||sec.questions||[]).length;});})))));
+  return n;}
+const schCount=()=>SCHOOLS.reduce((s,sc)=>s+(sc.sets||[]).reduce((u,st)=>u+st.questions.length,0),0);
+const sigCount=()=>SIG.reduce((s,g)=>s+g.questions.length,0);
+const bankCount=()=>CATS.reduce((s,c)=>s+c.questions.length,0);
+const allCount=()=>bankCount()+schCount()+sigCount()+curCount();
 const GRADES=['전체','중1','중2','중3','고등'], LVS=['상','중','하'];
 const CIRC=['①','②','③','④','⑤'];
 
-const S={page:'home',grade:'전체',book:null,step:1,mode:'book',
+const S={page:'home',grade:'전체',bsrc:'cat',book:null,step:1,mode:'book',
   cat:null,lv:'전체',ty:'전체',key:false,sel:new Set(),open:new Set([1]),
   total:20,lvN:{상:5,중:8,하:7},tyN:{mc:15,short:5},noDup:false,title:'',
   order:'shuffle',spos:'back',src:{},lesson:null,peek:null,
@@ -2726,7 +2745,7 @@ const PICO={
 const HEAD={
   home:['ORUN ENGLISH','ORUN GRAMMAR','문제은행 · 시험지 출제 · 교재 커리큘럼 · 성적 리포트를 한곳에서.'],
   wizard:['WORKBOOK STUDIO','시험지 출제 마법사','학년·출판사·단원을 고르고 난이도와 유형 배분을 정하면 A4 시험지·정답지·Word 파일이 한 번에 만들어집니다.'],
-  bank:['QUESTION BANK','문제은행','2022 개정 교육과정 문법 항목별 200문항. 모든 문항은 이 화면에서 바로 편집·저장할 수 있습니다.'],
+  bank:['QUESTION BANK','문제은행','문법 항목·교과서 시그니처·학교별 기출을 한곳에서 고릅니다. 모든 문항은 이 화면에서 바로 편집·저장할 수 있습니다.'],
   schools:['SCHOOL EXAM TYPES','학교별 기출 유형','동작·영등포 중학교 내신 기출을 분석해, 각 학교가 실제로 내는 문법 유형 그대로 만든 객관식 100·주관식 100 문항.'],
   books:['ORUN CURRICULUM','옳은영어 커리큘럼','옳은문법(초등)·ORUN METABOOK(중등) 교재의 모든 시험지를 원문 그대로 열람·편집·인쇄합니다.'],
   take:['STUDENT MODE','학생 응시','응시 코드를 입력하면 같은 시험지가 그대로 열리고, 제출 즉시 성적 리포트가 만들어집니다.'],
@@ -2773,6 +2792,7 @@ function homeView(){
   const nS=['ele','mid'].reduce((s,t)=>s+((ORUN[t]||{books:[]}).books||[])
     .reduce((u,b)=>u+b.chapters.reduce((v,c)=>v+c.items.length,0),0),0);
   const met=(v,l)=>'<div class="mt"><b data-to="'+v+'">0</b><span>'+l+'</span></div>';
+  const nAll=allCount(), nSch=schCount(), nSig=sigCount(), nCur=curCount();
   const row=(pg,no,en,ko,d)=>'<button class="brow" onclick="nav(\''+pg+'\')">'+
     '<span class="bno">'+no+'</span>'+
     '<span class="bmid"><b>'+ko+'</b><i>'+d+'</i></span>'+
@@ -2790,15 +2810,15 @@ function homeView(){
      '<p class="ssub">2022 개정 교육과정 문법 항목별 문제은행과 옳은영어 교재 커리큘럼.<br>'+
      '범위·난이도·유형을 고르면 A4 시험지와 정답해설지가 즉시 만들어집니다.</p>'+
      '<div class="metrics">'+
-       met(CATS.length,'문법 항목')+met(nQ,'문제은행 문항')+
-       met(nB,'연계 교과서')+met(nS,'교재 시험지')+
+       met(nAll,'전체 보유 문항')+met(nQ+nSig,'문제은행 문항')+
+       met(nSch,'학교별 기출 문항')+met(nCur,'커리큘럼 문항')+
      '</div>'+
    '</div>'+
    '<div class="mq"><div class="mqin">'+strip+'</div></div>'+
    '</section>'+
    '<nav class="brows">'+
    row('wizard','01','WORKBOOK STUDIO','시험지 출제 마법사','학년·출판사·단원을 골라 A4 시험지·정답지·Word를 한 번에')+
-   row('bank','02','QUESTION BANK','문제은행','항목별 200문항을 눌러 폴더에 담고 그대로 시험지로')+
+   row('bank','02','QUESTION BANK','문제은행','문법 항목·교과서 시그니처·학교별 기출을 한곳에서 골라 담기')+
    row('schools','03','SCHOOL EXAM TYPES','학교별 기출 유형','동작·영등포 중학교 기출을 분석해 학교 유형 그대로 만든 객·주 200문항')+
    row('books','04','ORUN CURRICULUM','옳은영어 커리큘럼','옳은문법(초등)·ORUN METABOOK(중등) 전 시험지 열람·인쇄')+
    '</nav>';
@@ -3478,21 +3498,36 @@ function doDocx(withKey){
 }
 
 /* ── 2. 문제은행 ── */
+const BSRC=[['cat','문법 항목'],['sig','교과서 시그니처'],['sch','학교별 기출']];
+function setBsrc(v){S.bsrc=v;S.cat=null;S.folder=null;render();}
+function bankItems(){
+  const g=S.grade, f=x=>(!g||g==='전체')?true:x.grade===g;
+  if(S.bsrc==='sig') return SIG.filter(f);
+  if(S.bsrc==='sch') return SCHOOLS.reduce((a,sc)=>a.concat((sc.sets||[]).filter(f)
+      .map(st=>Object.assign({logo:sc.logo,school:sc.name},st))),[]);
+  return gcats(g);
+}
 function bankView(){
-  const cats=gcats(S.grade), n=cats.reduce((s,c)=>s+c.questions.length,0);
-  return folderRail()+pickBar()+'<div class="gtabs" style="max-width:500px">'+GRADES.map(g=>
+  const cats=bankItems(), n=cats.reduce((s,c)=>s+c.questions.length,0);
+  const srcN={cat:bankCount(),sig:sigCount(),sch:schCount()};
+  return folderRail()+pickBar()+
+   '<div class="gtabs bsrc" style="max-width:560px">'+BSRC.map(x=>
+      '<button class="'+(S.bsrc===x[0]?'on':'')+'" onclick="setBsrc(\''+x[0]+'\')">'+x[1]+
+      ' <em>'+srcN[x[0]].toLocaleString()+'</em></button>').join('')+'</div>'+
+   '<div class="gtabs" style="max-width:500px">'+GRADES.map(g=>
       '<button class="'+(g===S.grade?'on':'')+'" onclick="setGrade(\''+g+'\')">'+g+'</button>').join('')+'</div>'+
    '<div class="stat">'+
-   '<div><b>'+CATS.length+'</b><span>전체 문법 항목</span></div>'+
-   '<div><b>'+CATS.reduce((s,c)=>s+c.questions.length,0).toLocaleString()+'</b><span>전체 문항</span></div>'+
-   '<div><b>'+cats.length+'</b><span>'+(S.grade==='전체'?'표시 중인':S.grade)+' 항목</span></div>'+
-   '<div><b>'+n.toLocaleString()+'</b><span>'+(S.grade==='전체'?'표시 중인':S.grade)+' 문항</span></div>'+
-   '<div><b>'+(S.grade==='전체'?Object.keys(BOOKS).reduce((s,k)=>s+BOOKS[k].length,0):(BOOKS[S.grade]||[]).length)+
-   '</b><span>연계 교과서</span></div></div>'+
+   '<div><b>'+allCount().toLocaleString()+'</b><span>전체 보유 문항</span></div>'+
+   '<div><b>'+bankCount().toLocaleString()+'</b><span>문법 항목</span></div>'+
+   '<div><b>'+sigCount().toLocaleString()+'</b><span>교과서 시그니처</span></div>'+
+   '<div><b>'+schCount().toLocaleString()+'</b><span>학교별 기출</span></div>'+
+   '<div><b>'+cats.length+'</b><span>'+(S.grade==='전체'?'표시 중인':S.grade)+' 세트</span></div>'+
+   '<div><b>'+n.toLocaleString()+'</b><span>'+(S.grade==='전체'?'표시 중인':S.grade)+' 문항</span></div></div>'+
    '<div class="grid">'+cats.map((c,i)=>{
      const mc=c.questions.filter(q=>q.type==='mc').length;
-     return '<div class="cat g'+c.grade+'" style="animation-delay:'+(i*20)+'ms" onclick="openCat(\''+c.id+'\')">'+
-     '<div class="chd"><span class="gi">'+esc(c.grade)+'</span>'+
+     const go=S.bsrc==='sch'?('openSchoolSet(\''+c.id+'\')'):('openCat(\''+c.id+'\')');
+     return '<div class="cat g'+c.grade+'" style="animation-delay:'+(i*20)+'ms" onclick="'+go+'">'+
+     '<div class="chd">'+(c.logo?'<span class="gi lg"><img src="'+c.logo+'" alt=""></span>':'<span class="gi">'+esc(c.grade)+'</span>')+
      '<div class="cbd"><b>'+esc(c.name)+'</b>'+
      '<div class="pts">'+esc(c.points.slice(0,2).join(' · '))+'</div></div>'+
      '<span class="no">'+String(i+1).padStart(2,'0')+'</span></div>'+
@@ -3502,6 +3537,9 @@ function bankView(){
      '<span class="go">→</span></div></div>';}).join('')+'</div>';
 }
 function openCat(id){S.cat=id;S.folder=null;S.lv='전체';S.ty='전체';window.scrollTo(0,0);render();}
+function openSchoolSet(setId){ const sc=SCHOOLS.filter(x=>(x.sets||[]).some(t=>t.id===setId))[0]; if(!sc) return;
+  const st=sc.sets.filter(t=>t.id===setId)[0];
+  nav('schools'); S.school=sc.id; S.sgrade=st.grade; S.scat='전체'; S.lv='전체'; S.ty='전체'; render(); }
 function openFolder(id){S.folder=id;S.cat=null;window.scrollTo(0,0);render();}
 function folderRail(){
   return '<div class="card solid" style="margin-bottom:14px">'+

@@ -14,7 +14,8 @@ orun=json.load(open(H+'/bank/orun.json',encoding='utf-8'))
 covers=json.load(open(H+'/bank/covers.json',encoding='utf-8'))
 logo=json.load(open(H+'/bank/logo.json',encoding='utf-8'))
 schools=json.load(open(H+'/bank/schools.json',encoding='utf-8')) if os.path.exists(H+'/bank/schools.json') else []
-blob=json.dumps({'cats':cats,'books':books,'orun':orun,'covers':covers,'logo':logo,'schools':schools},ensure_ascii=False,separators=(',',':')).replace('</','<\\/')
+sig=json.load(open(H+'/bank/signature.json',encoding='utf-8')) if os.path.exists(H+'/bank/signature.json') else []
+blob=json.dumps({'cats':cats,'books':books,'orun':orun,'covers':covers,'logo':logo,'schools':schools,'sig':sig},ensure_ascii=False,separators=(',',':')).replace('</','<\\/')
 s=open(H+'/site.html',encoding='utf-8').read()
 assert '__BANK__' in s
 out=s.replace('__BANK__',blob,1)
@@ -22,5 +23,5 @@ open(H+'/옳은문법.html','w',encoding='utf-8').write(out)
 import collections
 print('교재 항목',len(cats),'· 문제',sum(len(c['questions']) for c in cats),
       '·',dict(collections.Counter(c['grade'] for c in cats)),
-      '· 학교 세트',sum(len(x['sets']) for x in schools),'· 학교 문항',sum(len(st['questions']) for x in schools for st in x['sets']),
+      '· 시그니처',sum(len(g['questions']) for g in sig),'· 학교 세트',sum(len(x['sets']) for x in schools),'· 학교 문항',sum(len(st['questions']) for x in schools for st in x['sets']),
       '· %.2f MB'%(len(out.encode())/1048576))
