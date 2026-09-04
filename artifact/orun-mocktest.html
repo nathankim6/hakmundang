@@ -617,6 +617,7 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
     padding: 12px 16px; margin: 10px 0; background: none; font-size: 13.5px;
   }
   .exam-output ol, .exam-output ul { list-style: none; padding-left: 6px; margin: 6px 0; }
+  .exam-output .choices-inline { margin: 7px 0 0; padding-left: 6px; letter-spacing: .02em; }
   .exam-output table { border-collapse: collapse; width: 100%; }
   .exam-output table td, .exam-output table th { border: 1px solid var(--paper-edge); padding: 6px 10px; }
   .exam-output .question, .exam-output .q { margin-bottom: 26px; }
@@ -1744,6 +1745,12 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
     void el.offsetWidth;
     el.classList.add("reveal");
   }
+  function sanitizeAndFold(html) {
+    const box = document.createElement("div");
+    box.innerHTML = sanitize(html);
+    foldSymbolChoices(box);
+    return box.innerHTML;
+  }
   function sanitize(html) {
     const doc = new DOMParser().parseFromString("<div>" + html + "</div>", "text/html");
     doc.querySelectorAll("script, iframe, object, embed, link, meta, style").forEach(n => n.remove());
@@ -2503,7 +2510,7 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
         genProg.set(10 + 80 * b / batches.length, b === 0 ? 1 : 2,
           "문항 출제 " + (b + 1) + "/" + batches.length + " 묶음 · " + nums[0] + "~" + nums[nums.length - 1] + "번");
         const html = await ask(promptGen(analysis.exam_info || {}, batches[b], styleSample, extra), "complex");
-        const doc = new DOMParser().parseFromString("<div>" + sanitize(stripFences(html)) + "</div>", "text/html");
+        const doc = new DOMParser().parseFromString("<div>" + sanitizeAndFold(stripFences(html)) + "</div>", "text/html");
         doc.querySelectorAll(".question").forEach(q => qParts.push(q.outerHTML));
         doc.querySelectorAll(".answer-key").forEach(a => aParts.push(a.innerHTML));
         // 진행 중 미리보기
@@ -2528,6 +2535,21 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
       setBusy(false);
     }
   }
+  // <ol>의 항목이 모두 기호뿐이면(①②③④⑤ 같은) 한 줄짜리 <p>로 접는다.
+  function foldSymbolChoices(root) {
+    root.querySelectorAll("ol, ul").forEach(list => {
+      const items = [...list.children].filter(c => c.tagName === "LI");
+      if (items.length < 3) return;
+      const texts = items.map(li => li.textContent.replace(/\s+/g, " ").trim());
+      if (!texts.every(t => t.length <= 4 && /^[①-⑳(A-E)\d.\s]+$/.test(t))) return;
+      const p = document.createElement("p");
+      p.className = "choices-inline";
+      p.textContent = texts.join("   ");
+      list.replaceWith(p);
+    });
+    return root;
+  }
+
   function assembleExam(qParts, aParts, partial) {
     const info = (analysis && analysis.exam_info) || {};
     const title = (info.title || "동형 모의고사").replace(/동형 모의고사$/, "").trim();
