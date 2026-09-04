@@ -186,9 +186,9 @@ table.flow td.body u{padding:0 16px}
 .model .cap span{color:var(--faint);letter-spacing:.04em}
 .mk{font-family:'Noto Serif CJK KR',serif;font-size:10.4pt;line-height:1.35}
 .tk{display:inline-block;position:relative;text-align:center;vertical-align:top;
- padding-top:9px;padding-bottom:15px;margin:0 3px}
-.tk em{position:absolute;top:0;left:50%;transform:translateX(-50%);font-style:normal;
- font-size:9pt;line-height:1;color:var(--deep);font-weight:800;pointer-events:none}
+ padding-top:0;padding-bottom:15px;margin:0 3px}
+.tk em{position:absolute;top:1px;left:50%;transform:translateX(-50%);font-style:normal;
+ font-size:10.5pt;line-height:1;color:var(--deep);font-weight:800;pointer-events:none}
 .tk b{display:block;line-height:1.24}
 .tk i{position:absolute;bottom:0;left:50%;transform:translateX(-50%);font-style:normal;
  font-size:7.6pt;font-weight:800;line-height:1;white-space:nowrap}
