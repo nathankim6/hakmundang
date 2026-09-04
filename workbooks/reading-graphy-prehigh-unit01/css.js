@@ -140,7 +140,7 @@ table.para th{font-size:7.4pt;letter-spacing:.14em;text-transform:uppercase;colo
 table.para td{padding:18px 12px 18px 0;border-bottom:1px dotted var(--hair);vertical-align:top;line-height:1.45}
 table.para td.src{width:47%;font-family:'Noto Serif CJK KR',serif}
 table.para td.src span{font-size:7.6pt;font-weight:800;color:var(--ac);font-family:'Noto Sans KR';margin-right:5px}
-table.para td.dst u{text-decoration:none;border-bottom:1.6px solid var(--ac);padding:0 24px}
+table.para td.dst u{text-decoration:none;border-bottom:1.6px solid var(--ac);padding:0 21px;margin:0 3px}
 /* ── Check Up ── */
 .q{margin-bottom:6.5mm}
 .q .stem{display:flex;gap:9px;font-size:9.9pt;font-weight:700;line-height:1.45;margin-bottom:8px}

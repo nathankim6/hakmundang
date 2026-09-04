@@ -8,7 +8,8 @@ const T=require("./content1.js").concat(require("./content2.js"));
 const FL=require("./flow.js");
 const EX=require("./extra.js");
 T.forEach(t=>{t.fl=FL[t.no]; const e=EX[t.no]; t.flow=e.flow; t.flowBogi=e.flowBogi;
-  t.why=e.why; t.src=e.src; t.kb=e.kb; t.syn=SYN[t.no]; t.synd=SYND[t.no];});
+  t.why=e.why; t.src=e.src; t.kb=e.kb; t.syn=SYN[t.no]; t.synd=SYND[t.no];
+  t.para.sort((a,b)=>a[0].codePointAt(0)-b[0].codePointAt(0));});
 const CIR="①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳".split("");
 const AL="abcdef".split("");
 const esc=s=>String(s).replace(/&(?![a-z#])/g,"&amp;");
@@ -128,8 +129,6 @@ T.forEach(t=>{
       return `<tr><td class="src"><span>${m[1]}</span>${esc(m[2])}</td><td class="dst">${esc(p[1]).replace("______","<u></u>")}</td></tr>`;}).join("")}
    </table>
    <div class="bogi"><b>보기</b>${t.paraBogi}</div>
-   <div class="mini" style="margin:5.5mm 0 3px">위 플로차트의 ① ~ ④ 를 이어, 이 글을 <b>영어 한 문장</b>으로 요약해 보세요.</div>
-   <div class="aline"></div>
   </div>
   ${tab(t)}${foot(t,L)}
  </div>`);
