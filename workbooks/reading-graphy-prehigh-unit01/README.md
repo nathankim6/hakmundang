@@ -11,7 +11,8 @@ HTML/CSS를 헤드리스 Chromium으로 인쇄해 PDF를 만든다 (docx 아님)
 | | TASK | 하는 일 |
 |---|---|---|
 | 1 | 영영풀이 매칭 | 우리말 뜻 암기 대신 영어 정의를 읽고 낱말과 잇는다 |
-| 2 | **ORUN FLOW** | 다 표시된 **먼저 보기** → 훈련 3문장 직접 표시 → 뼈대 한 줄 해석 → 주어·본동사만 모으기 |
+| 2 | **구문분석** SENTENCE STRUCTURE | ORUN FLOW 바 + 분석 Tip + **먼저 보기**(다 표시된 문장) + 주요 문장 3개 직접 표시 |
+| ＋ | **READ RIGHT** | 다음 면에서 지문의 **모든 문장**을 ORUN FLOW 로 분석하고 한 줄 해석 (지시어 밑줄 표시) |
 | 3 | 플로차트 완성 | 글 전체 흐름을 **영문** 표 한 장으로 복원 (빈칸 4개 + 보기) → 영어 한 문장 요약 |
 | 4 | 패러프레이즈 | 원문 표현을 다른 말로 바꾼 문장의 빈칸을 채운다 |
 | 5 | Check Up | 고르고 끝내지 않는다 — 선지마다 **오답인 이유**와 **근거 문장 번호**를 쓴다 |
@@ -26,7 +27,7 @@ HTML/CSS를 헤드리스 Chromium으로 인쇄해 PDF를 만든다 (docx 아님)
   주어 초록 밑줄 · 본동사 네이비 △ · 접속사 골드 네모 · 종속절 S′·V′ · 수식어 회색 밑줄 + 빨강 M.
 - 훈련 문장은 슬래시 없이 원문 그대로, 행간을 넓게 인쇄해 학생이 문장 위에 직접 표시한다.
 
-면 배치: **레슨당 5면** — READING / WORD·FLOW 먼저 보기 / FLOW 훈련 / CHART·PARAPHRASE / CHECK·KB.
+면 배치: **레슨당 5면** — READING / WORD·구문분석 / READ RIGHT / CHART·PARAPHRASE / CHECK·KB.
 전체 32면 = 표지 1 + 구성 1 + 레슨 25 + ANSWERS 5.
 
 **답란은 모두 한 줄**(`.aline`)이다. 판서로 함께 채우는 수업을 전제로 한다.
@@ -49,6 +50,7 @@ HTML/CSS를 헤드리스 Chromium으로 인쇄해 PDF를 만든다 (docx 아님)
 | `flow.js` | ORUN FLOW — 먼저 보기 토큰(역할 태그)과 훈련 3문장 |
 | `extra.js` | 영문 플로차트 · Check Up 오답 이유/근거 · Knowledge Bank |
 | `art.js` | 원본 SVG — 레슨 아이콘 5종 + 본문 삽화 5종 |
+| `pics.js` | 픽토그램 24종 + 레슨별 플로차트 스트립 매핑 + Knowledge Bank 코너 삽화 5종 |
 | `css.js` | 디자인 시스템 — A4 판형, 색 토큰, 컴포넌트 |
 | `build.js` | 25면 HTML 생성기 |
 | `output/` | 생성된 `.pdf` / `.html` |
@@ -60,7 +62,7 @@ apt-get install -y fonts-noto-cjk        # Noto Serif CJK KR (지문 본문용)
 node build.js                            # → book.html
 /opt/pw-browsers/chromium-1194/chrome-linux/chrome --headless --disable-gpu --no-sandbox \
   --no-pdf-header-footer --print-to-pdf=book.pdf --virtual-time-budget=8000 "file://$PWD/book.html"
-python3 fill.py book.pdf                 # 면별 채움률 (현재 32면 73–100%)
+python3 fill.py book.pdf                 # 면별 채움률 (현재 32면 73–100%, 넘침 없음)
 ```
 
 ## 새 유닛 만들기

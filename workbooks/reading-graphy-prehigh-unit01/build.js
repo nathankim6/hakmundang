@@ -1,6 +1,7 @@
 const fs=require("fs");
 const CSS=require("./css.js");
 const {icons,scenes}=require("./art.js");
+const {S:PIC,STRIP,VIG}=require("./pics.js");
 const T=require("./content1.js").concat(require("./content2.js"));
 const FL=require("./flow.js");
 const EX=require("./extra.js");
@@ -8,6 +9,14 @@ T.forEach(t=>{t.fl=FL[t.no]; const e=EX[t.no]; t.flow=e.flow; t.flowBogi=e.flowB
   t.why=e.why; t.src=e.src; t.kb=e.kb;});
 const CIR="①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳".split("");
 const AL="abcdef".split("");
+const DX={
+ "01":{3:["it"],8:["it"],11:["this"],13:["the rest"]},
+ "02":{4:["They"],8:["it"],9:["it"],12:["it"]},
+ "03":{2:["it"],10:["it"],13:["That destination"]},
+ "04":{2:["her"],3:["She"],8:["It"],12:["she"]},
+ "05":{2:["them"],4:["them"],7:["them"],13:["it"]}};
+const dxMark=(s,ws)=>{ if(!ws) return esc(s);
+  let o=esc(s); ws.forEach(w=>{ o=o.replace(new RegExp("\\b"+w+"\\b"),`<u>${w}</u>`); }); return o; };
 const ROLE={"s": "S 주어", "s2": "S′ 주어", "v": "V 본동사", "v2": "V′ 동사", "c": "접속사", "m": "M 수식어"};
 const tok=(x,r)=>`<span class="tk ${r||""}"><em>${r==="v"||r==="v2"?"△":"&nbsp;"}</em><b>${esc(x)}</b><i>${r?ROLE[r]:"&nbsp;"}</i></span>`;
 const esc=s=>String(s).replace(/&(?![a-z#])/g,"&amp;");
@@ -16,10 +25,11 @@ let pn=0;
 
 const vars=t=>`--ac:${t.accent};--tint:${t.tint};--deep:${t.deep}`;
 const head=(t,right)=>`<div class="rh"><span>READING GRAPHY · PRE-HIGH · UNIT 1</span><span class="r">${right}</span></div>`;
+const tab=(t)=>t&&t.no?`<div class="tab">LESSON ${t.no}</div>`:"";
 const foot=(t,label)=>`<div class="rf"><span>${label}</span><b>${++pn}</b><span>옳은영어 ORUN ENGLISH</span></div>`;
 
 /* ═══ 1. 표지 ═══ */
-P.push(`<div class="page cover">
+P.push(`<div class="page cover"><div class="ornament"><svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="#fff" stroke-width="1.1" fill="none"/><circle cx="24" cy="24" r="14" stroke="#fff" stroke-width="1.1" fill="none"/><circle cx="24" cy="24" r="8" stroke="#fff" stroke-width="1.1" fill="none"/><path d="M4 24h40M24 4v40M10 10l28 28M38 10L10 38" stroke="#fff" stroke-width=".8"/></svg></div>
  <div class="top">ORUN ENGLISH · READING GRAPHY</div>
  <div>
   <h1>Five Ways<em>of Reading</em></h1>
@@ -98,17 +108,11 @@ T.forEach(t=>{
      ${t.bank.map(b=>`<tr><td class="w">${b[0]}</td><td class="n">${b[1]}</td><td class="k">${b[2]}</td></tr>`).join("")}
     </table></div>
     <div class="tip"><span class="bulb"></span>${t.tip}</div>
-    <div class="card stat"><h4>Read It</h4>
-     <div class="row"><b>문장</b><span>${t.sent.length}개</span></div>
-     <div class="row"><b>낱말</b><span>${t.sent.join(" ").split(/\s+/).length} words</span></div>
-     <div class="row"><b>목표 시간</b><span>3분 이내</span></div>
-     <div class="reps"><i>1회독 □</i><i>2회독 □</i><i>3회독 □</i></div>
-    </div>
    </div>
   </div>
   <figure><div class="art">${scenes[t.key](t.accent,t.tint,t.deep)}</div>
    <figcaption><b>${t.fig.split("  ")[0]}</b> &nbsp;${t.fig.split("  ").slice(1).join(" ")}</figcaption></figure>
-  ${foot(t,L)}
+  ${tab(t)}${foot(t,L)}
  </div>`);
 
  /* 면 B — WORD MATCH + ORUN FLOW 먼저 보기 */
@@ -126,43 +130,36 @@ T.forEach(t=>{
    </div>
   </div>
   <div class="sect">
-   <div class="task"><div class="no">2</div><h3>ORUN FLOW<span class="sub">주어와 본동사를 먼저 찾으면 나머지가 보인다. 먼저 보기부터 읽으시오.</span></h3><div class="line"></div></div>
-   <div class="fbar">
-    ${[["1","주어 밑줄 + S"],["2","본동사 △ + V"],["3","접속사 [네모]"],["4","종속절 S′ · V′"],["5","수식어(구) 밑줄 + M"]]
-      .map(x=>`<div><b>STEP ${x[0]}</b>${x[1]}</div>`).join("")}
-   </div>
+   <div class="task ss"><div class="ico">≡</div>
+    <h3>구문분석<span class="en">SENTENCE STRUCTURE</span></h3><div class="line"></div></div>
+   <div class="oflow"><b>ORUN FLOW</b>1 주어 밑줄+S &nbsp;→&nbsp; 2 본동사 △+V &nbsp;→&nbsp; 3 접속사 [네모]
+    &nbsp;→&nbsp; 4 종속절 S′·V′ &nbsp;→&nbsp; 5 수식어(구) 밑줄+M</div>
+   <div class="otip"><b>분석 Tip</b> &nbsp;<b>조동사+동사</b> · <b>have(has, had)+p.p</b> ·
+    <b>be+p.p</b>(수동태) · <b>be+~ing</b>(진행형) &nbsp;→&nbsp; <b>한 덩어리의 동사로 표시!</b> △</div>
    <div class="model">
-    <div class="cap"><span style="color:var(--gold)">먼저 보기 · 다 표시된 문장</span><span>문장 ${t.fl.model.n}</span></div>
+    <div class="cap"><span style="color:var(--gold)">먼저 보기</span>
+     <span>ORUN FLOW 를 쓰기 전에, 다 표시된 문장 ${t.fl.model.n} 을 먼저 구경하세요. 라벨은 단어 <b>바로 밑</b>에!</span></div>
     <div class="mk">${t.fl.model.toks.map(x=>tok(x[0],x[1])).join("")}</div>
     <div class="ko"><b>뼈대 해석</b>${t.fl.model.ko}</div>
    </div>
-   <div class="ftip"><b>분석 Tip</b> &nbsp;조동사+동사 · have(has, had)+p.p · be+p.p(수동태) · be+~ing(진행형) →
-    <b>한 덩어리의 동사</b>로 묶어 △ 를 올린다. 접속사를 네모로 묶으면 그 뒤가 종속절(S′·V′)이다.</div>
-   <div class="mini" style="margin:5mm 0 3px">먼저 보기 문장에서 각 자리에 해당하는 말을 찾아 옮겨 적으시오.</div>
-   <table class="slot"><tr>
-    ${[["S","주어"],["△V","본동사"],["접속사",""],["S′","종속절 주어"],["△V′","종속절 동사"],["M","수식어"]]
-      .map(x=>`<th><b>${x[0]}</b>${x[1]?" "+x[1]:""}</th>`).join("")}
-   </tr><tr>${[0,1,2,3,4,5].map(()=>`<td></td>`).join("")}</tr></table>
+   <div style="height:4mm"></div>
+   ${t.fl.drill.map(d=>`<div class="sline">
+     <div class="t"><div class="n">문장 ${d.n}</div><p>${esc(d.en)}</p><div class="go">→ 문장에 직접 표시!</div></div>
+     <div class="aline"></div></div>`).join("")}
   </div>
-  ${foot(t,L)}
+  ${tab(t)}${foot(t,L)}
  </div>`);
 
- /* 면 C — ORUN FLOW 훈련 */
+ /* 면 C — READ RIGHT (지문 전 문장) */
  P.push(`<div class="page" style="${V}">
-  ${head(t,`Lesson ${t.no} · ORUN FLOW`)}
-  <div class="sect">
-   <div class="task"><div class="no">2</div><h3>ORUN FLOW 훈련<span class="sub">앞의 먼저 보기와 같은 방법으로 세 문장에 직접 표시하시오.</span></h3><div class="line"></div></div>
-   ${t.fl.drill.map(d=>`<div class="drill">
-     <div class="h"><div class="n">문장 ${d.n}</div><div class="go">→ 문장 위에 직접 표시!</div></div>
-     <p>${esc(d.en)}</p>
-     <div class="mini">뼈대만 남겨 한 줄로 해석하시오.</div>
-     <div class="aline" style="margin-bottom:8px"></div></div>`).join("")}
-   <div class="mini" style="margin:5.5mm 0 4px">세 문장의 <b>주어</b>와 <b>본동사</b>만 모아 다시 쓰시오. 글의 뼈대가 한눈에 보인다.</div>
-   <table class="slot bone"><tr><th style="width:16%">문장</th><th style="width:42%"><b>S</b> 주어</th><th><b>△V</b> 본동사</th></tr>
-    ${t.fl.drill.map(d=>`<tr><td class="lab">${d.n}</td><td></td><td></td></tr>`).join("")}
-   </table>
-  </div>
-  ${foot(t,L)}
+  ${head(t,`Lesson ${t.no} · READ RIGHT`)}
+  <div class="rr"><b>READ RIGHT</b>
+   <span>지문의 모든 문장을 ORUN FLOW 로 분석하기 · 주어 밑줄+S · 본동사 △+V · 접속사 [네모] · 종속절 S′·V′ · 수식어 밑줄+M</span></div>
+  <div class="rrh">한 문장씩 분석하기<span>문장 위에 직접 기호를 표시하고, 아래 한 줄에 우리말로 옮겨 보세요. 밑줄 친 지시어는 무엇을 가리키는지 생각하며!</span></div>
+  ${t.sent.map((s,i)=>`<div class="rrq">
+    <div class="t"><div class="n">${String(i+1).padStart(2,"0")}</div><p>${dxMark(s,(DX[t.no]||{})[i+1])}</p></div>
+    <div class="aline"></div></div>`).join("")}
+  ${tab(t)}${foot(t,L)}
  </div>`);
 
  /* 면 D — FLOW CHART + PARAPHRASE */
@@ -170,6 +167,10 @@ T.forEach(t=>{
   ${head(t,`Lesson ${t.no} · Flow & Paraphrase`)}
   <div class="sect">
    <div class="task"><div class="no">3</div><h3>플로차트 완성<span class="sub">Fill in the blanks with the words in the box.</span></h3><div class="line"></div></div>
+   <div class="strip">${t.flow.map((r,i)=>
+     `${i?`<div class="ar">›</div>`:""}<div class="st"><div class="ci">
+       <svg viewBox="0 0 48 48" fill="none">${PIC[STRIP[t.no][i]](t.accent,t.tint)}</svg></div>
+       <b>${r[0]}</b></div>`).join("")}</div>
    <table class="flow"><tr><th style="width:26%">Stage</th><th>What the writer does</th></tr>
     ${t.flow.map(r=>{const body=r[2]?r[1].replace(/\(\s*[①-⑳]\s*\)/,m=>`<u>${m}</u>`):r[1];
       return `<tr class="${r[2]?"":"given"}"><td class="step">${r[0]}</td><td class="body">${body}</td></tr>`;}).join("")}
@@ -186,7 +187,7 @@ T.forEach(t=>{
    <div class="mini" style="margin:5.5mm 0 3px">위 플로차트의 ① ~ ④ 를 이어, 이 글을 <b>영어 한 문장</b>으로 요약하시오.</div>
    <div class="aline"></div>
   </div>
-  ${foot(t,L)}
+  ${tab(t)}${foot(t,L)}
  </div>`);
 
  /* 면 E — CHECK UP + KNOWLEDGE BANK */
@@ -210,12 +211,18 @@ T.forEach(t=>{
   <div class="kb">
    <div class="hd"><b>${t.kb.title}</b><em>${t.kb.lead}</em><span class="tag">KNOWLEDGE BANK</span></div>
    <div class="bd">
-    ${t.kb.items.map((it,i)=>`<div class="it"><div class="num">${i+1}</div>
-      <div><h5>${it[0]}</h5><p>${it[1]}</p></div></div>`).join("")}
+    <div class="row">
+     <div class="txt">
+      ${t.kb.items.map((it,i)=>`<div class="it"><div class="num">${i+1}</div>
+        <div><h5>${it[0]}</h5><p>${it[1]}</p></div></div>`).join("")}
+     </div>
+     <div class="vig"><svg viewBox="0 0 240 140" fill="none">${VIG[t.no](t.accent,t.tint,t.deep)}</svg>
+      <div class="cap">${t.kb.title}</div></div>
+    </div>
     <div class="ask"><span>생각해 볼 것</span>${t.kb.ask}</div>
    </div>
   </div>
-  ${foot(t,L)}
+  ${tab(t)}${foot(t,L)}
  </div>`);
 });
 

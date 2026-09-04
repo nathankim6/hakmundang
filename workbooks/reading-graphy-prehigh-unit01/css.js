@@ -69,12 +69,12 @@ figcaption b{color:var(--ac);font-weight:800}
 .task h3{font-size:12.4pt;font-weight:800;letter-spacing:-.01em}
 .task .sub{font-size:8.3pt;color:var(--sub);font-weight:400;margin-left:2px}
 .task .line{flex:1;height:1.5px;background:var(--hair);margin-left:4px}
-.sect{margin-bottom:6.8mm}
+.sect{margin-bottom:5.5mm}
 .sect:last-child{margin-bottom:0}
 /* ── 영영풀이 매칭 ── */
 .match{display:grid;grid-template-columns:1fr 1.55fr;gap:6mm}
 .mcol h5{font-size:7.3pt;font-weight:800;letter-spacing:.15em;color:var(--faint);text-transform:uppercase;margin-bottom:6px}
-.mrow{display:flex;align-items:center;gap:9px;padding:11.5px 0;border-bottom:1px dotted var(--hair)}
+.mrow{display:flex;align-items:center;gap:9px;padding:5.5px 0;border-bottom:1px dotted var(--hair)}
 .mrow .lab{flex:0 0 20px;height:20px;border-radius:6px;background:var(--tint);color:var(--deep);
  font-size:8pt;font-weight:800;display:flex;align-items:center;justify-content:center}
 .mrow .w{font-weight:800;font-size:9.6pt;flex:1}
@@ -180,7 +180,7 @@ table.flow td.body u{padding:0 16px}
 .fbar div{flex:1;background:var(--navy);color:#fff;padding:9px 10px;font-size:8.1pt;line-height:1.4}
 .fbar div+div{border-left:1px solid rgba(255,255,255,.2)}
 .fbar b{display:block;font-size:7pt;letter-spacing:.12em;color:var(--yel);margin-bottom:4px;font-weight:800}
-.model{border:1.8px solid var(--gold);background:var(--cream);border-radius:11px;padding:13px 16px 6px}
+.model{border:1.8px solid var(--gold);background:var(--cream);border-radius:11px;padding:11px 16px 5px}
 .model .cap{font-size:7.4pt;font-weight:800;letter-spacing:.16em;color:var(--gold);margin-bottom:11px;
  display:flex;justify-content:space-between}
 .model .cap span{color:var(--faint);letter-spacing:.04em}
@@ -216,19 +216,19 @@ table.cu td.op b{color:var(--ac);font-weight:700;margin-right:5px}
 table.cu td.rs{background:var(--cream);border-left:3px solid var(--yel);border-radius:0 8px 8px 0}
 /* ═══ Knowledge Bank ═══ */
 .kb{border:1.8px solid var(--ac);border-radius:12px;overflow:hidden}
-.kb .hd{background:var(--ac);color:#fff;padding:9px 15px;display:flex;gap:11px;align-items:baseline}
+.kb .hd{background:var(--ac);color:#fff;padding:8px 15px;display:flex;gap:11px;align-items:baseline}
 .kb .hd b{font-size:11.2pt;font-weight:800}
 .kb .hd em{font-style:normal;font-size:8.2pt;opacity:.86}
 .kb .hd .tag{margin-left:auto;font-size:7pt;letter-spacing:.16em;font-weight:800;color:var(--yel)}
-.kb .bd{padding:12px 15px 13px;background:var(--tint)}
-.kb .it{display:flex;gap:11px;margin-bottom:9px}
+.kb .bd{background:var(--tint)}
+.kb .it{display:flex;gap:10px;margin-bottom:7px}
 .kb .it:last-of-type{margin-bottom:0}
 .kb .it .num{flex:0 0 19px;height:19px;border-radius:50%;background:var(--ac);color:#fff;
  font-size:7.6pt;font-weight:800;display:flex;align-items:center;justify-content:center;margin-top:1px}
 .kb .it h5{font-size:9.4pt;font-weight:800;color:var(--deep);margin-bottom:3px}
-.kb .it p{font-size:8.3pt;line-height:1.6}
-.kb .ask{background:#fff;border-radius:8px;padding:9px 13px;font-size:8.6pt;font-weight:700;
- color:var(--deep);margin-top:10px;display:flex;gap:8px}
+.kb .it p{font-size:8.2pt;line-height:1.55}
+.kb .ask{background:#fff;border-radius:8px;padding:8px 13px;font-size:8.5pt;font-weight:700;
+ color:var(--deep);margin-top:9px;display:flex;gap:8px}
 .kb .ask span{color:var(--ac)}
 
 table.slot{width:100%;border-collapse:separate;border-spacing:4px 0}
@@ -239,4 +239,58 @@ table.slot td{height:11mm;background:var(--cream);border:1.3px solid #EEDCA4;bor
 table.slot.bone td{height:9.5mm}
 table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shadow:none;border-radius:7px;
  text-align:center;font-weight:800;color:var(--deep);font-size:9pt;vertical-align:middle}
+
+/* ═══ 구문분석 (리딩그라피 지면) ═══ */
+.task.ss .ico{flex:0 0 auto;width:36px;height:30px;background:#2B2A28;color:#fff;border-radius:4px;
+ display:flex;align-items:center;justify-content:center;font-size:12pt;border-bottom:3.5px solid var(--yel)}
+.task.ss h3 .en{font-size:7.2pt;letter-spacing:.22em;color:var(--faint);font-weight:800;margin-left:10px}
+.oflow{background:#0F4C6B;color:#fff;border-bottom:3.5px solid var(--yel);border-radius:4px 4px 0 0;
+ padding:9px 12px;text-align:center;font-size:8.7pt;font-weight:700;letter-spacing:.01em}
+.oflow b{color:var(--yel);letter-spacing:.14em;margin-right:16px;font-weight:800}
+.otip{background:#F1F2F4;padding:7px 12px;text-align:center;font-size:8.3pt;color:var(--sub);
+ border-radius:0 0 4px 4px;margin-bottom:4.5mm}
+.otip b{color:#0F4C6B;font-weight:800}
+.sline{margin-bottom:3mm}
+.sline .t{display:flex;align-items:baseline;gap:10px}
+.sline .t .n{font-size:8.6pt;font-weight:800;color:#0F4C6B;white-space:nowrap}
+.sline .t p{flex:1;font-family:'Noto Serif CJK KR',serif;font-size:11pt;line-height:2.15}
+.sline .t .go{font-size:7.4pt;color:var(--faint);font-weight:700;white-space:nowrap}
+/* ═══ READ RIGHT ═══ */
+.rr{background:#0F4C6B;color:#fff;border-left:7px solid var(--yel);border-radius:4px;
+ padding:9px 17px;margin-bottom:4mm}
+.rr b{font-size:15pt;font-weight:800;letter-spacing:.03em;display:block}
+.rr span{font-size:8.2pt;opacity:.85;display:block;margin-top:4px}
+.rrh{font-size:10.6pt;font-weight:800;color:#0F4C6B;margin-bottom:3mm}
+.rrh span{font-size:8.2pt;font-weight:400;color:var(--sub);margin-left:8px}
+.rrq{margin-bottom:1.5mm}
+.rrq .t{display:flex;gap:9px;align-items:baseline;margin-bottom:3px}
+.rrq .t .n{font-size:7.8pt;font-weight:800;color:#2E86AB;min-width:15px}
+.rrq .t p{flex:1;font-size:9.6pt;line-height:1.42}
+.rrq .t u{font-weight:800;color:#0F4C6B;text-decoration-thickness:1.6px}
+.rrq .aline{height:6.3mm}
+
+/* ═══ 플로차트 픽토그램 스트립 ═══ */
+.strip{display:flex;align-items:stretch;gap:0;margin-bottom:4.5mm}
+.strip .st{flex:1;text-align:center;padding:0 4px}
+.strip .st .ci{width:52px;height:52px;margin:0 auto 6px;border-radius:50%;background:var(--tint);
+ display:flex;align-items:center;justify-content:center}
+.strip .st .ci svg{width:31px;height:31px}
+.strip .st b{display:block;font-size:7.4pt;font-weight:800;color:var(--deep);line-height:1.3}
+.strip .ar{flex:0 0 20px;display:flex;align-items:flex-start;justify-content:center;padding-top:20px;
+ font-size:13pt;color:var(--ac);opacity:.5;font-weight:800}
+/* ═══ Knowledge Bank 코너 삽화 ═══ */
+.kb .bd{padding:11px 14px 12px}
+.kb .row{display:flex;gap:13px;align-items:center}
+.kb .bd .txt{flex:1;min-width:0}
+.kb .vig{flex:0 0 43mm;background:#fff;border-radius:10px;padding:9px 8px 6px}
+.kb .vig svg{width:100%;display:block}
+.kb .vig .cap{font-size:7pt;font-weight:800;letter-spacing:.13em;color:var(--ac);text-align:center;margin-top:5px}
+/* ═══ 책 색인 탭 ═══ */
+.tab{position:absolute;right:0;top:44mm;width:9mm;padding:7mm 0;background:var(--ac);
+ border-radius:5px 0 0 5px;color:#fff;text-align:center;writing-mode:vertical-rl;
+ font-size:7.4pt;font-weight:800;letter-spacing:.18em}
+/* ═══ 표지 보강 ═══ */
+.cover .hb .c svg{width:50px;height:50px}
+.cover .ornament{position:absolute;right:-40mm;top:-30mm;width:150mm;height:150mm;opacity:.07}
+.cover .ornament svg{width:100%;height:100%}
 `;
