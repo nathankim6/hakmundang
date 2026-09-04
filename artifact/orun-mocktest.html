@@ -98,6 +98,10 @@ button, input, textarea { font-family: inherit; }
 }
 .console .who .ko { font-size: 11px; color: var(--tx-dim); letter-spacing: .01em; }
 .console .gap { flex: 1; }
+.console .build {
+  font-family: var(--mono); font-size: 10px; letter-spacing: .06em;
+  color: var(--tx-faint); border: 1px solid var(--edge); padding: 3px 8px; border-radius: 2px;
+}
 .console .state {
   display: flex; align-items: center; gap: 8px;
   font-family: var(--mono); font-size: 11px; letter-spacing: .1em;
@@ -657,7 +661,7 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
     <span class="ko">동형 모의고사 생성기</span>
   </div>
   <span class="gap"></span>
-  <div class="state"><span class="lamp" id="consoleLamp"></span><span id="consoleState">대기</span></div>
+  <div class="state"><span class="build" id="buildTag">2026-09-04-032f513</span><span class="lamp" id="consoleLamp"></span><span id="consoleState">대기</span></div>
 </div>
 
 <div class="shell">
@@ -1973,6 +1977,8 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
     const c = window.claude;
     return [
       "ORUN 동형 모의고사 진단",
+      "build: 2026-09-04-032f513",
+      "url: " + location.href,
       "runtime: " + RUNTIME + (c ? "" : " (window.claude 없음)"),
       "claude.use: " + (c && typeof c.use === "function" ? "있음" : "없음"),
       "claude.sample: " + (c && typeof c.sample === "function" ? "있음" : "없음"),
