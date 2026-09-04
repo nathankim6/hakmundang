@@ -184,17 +184,19 @@ table.flow td.body u{padding:0 16px}
 .model .cap{font-size:7.4pt;font-weight:800;letter-spacing:.16em;color:var(--gold);margin-bottom:11px;
  display:flex;justify-content:space-between}
 .model .cap span{color:var(--faint);letter-spacing:.04em}
-.mk{font-family:'Noto Serif CJK KR',serif;font-size:11.3pt;line-height:1.3}
-.tk{display:inline-flex;flex-direction:column;align-items:center;vertical-align:top;margin:0 3px 19px}
-.tk em{font-style:normal;font-size:8.5pt;line-height:1;height:11px;color:var(--navy);font-weight:800}
-.tk i{font-style:normal;font-size:6.6pt;font-weight:800;line-height:1;height:12px;margin-top:4px;white-space:nowrap}
+.mk{font-family:'Noto Serif CJK KR',serif;font-size:11.3pt;line-height:1.45}
+.tk{display:inline-block;text-align:center;vertical-align:top;margin:0 3px 4px}
+.tk em{display:block;font-style:normal;font-size:9.5pt;line-height:1;height:11px;
+ color:var(--navy);font-weight:800}
+.tk b{display:block;line-height:1.22}
+.tk i{display:block;font-style:normal;font-size:7.6pt;font-weight:800;line-height:1;
+ height:11px;margin-top:4px;white-space:nowrap}
 .tk.s b{border-bottom:2.4px solid #2E8B7F}
 .tk.s i,.tk.s2 i{color:#217A6E}
 .tk.s2 b{border-bottom:2.4px dashed #2E8B7F}
 .tk.v b,.tk.v2 b{color:var(--navy);font-weight:800}
 .tk.v i,.tk.v2 i{color:var(--navy)}
 .tk.c b{border:1.7px solid var(--gold);border-radius:5px;padding:0 6px;color:#8A5D10;font-weight:800}
-.tk.c i{color:#8A5D10}
 .tk.m b{border-bottom:2.2px solid #B9BEC4}
 .tk.m i{color:#C0392B}
 .model .ko{border-top:1px dashed #E0D8BE;margin-top:2px;padding-top:8px;font-size:8.6pt;color:var(--sub)}

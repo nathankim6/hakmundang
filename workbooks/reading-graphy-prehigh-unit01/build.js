@@ -9,6 +9,7 @@ T.forEach(t=>{t.fl=FL[t.no]; const e=EX[t.no]; t.flow=e.flow; t.flowBogi=e.flowB
   t.why=e.why; t.src=e.src; t.kb=e.kb;});
 const CIR="①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳".split("");
 const AL="abcdef".split("");
+const esc=s=>String(s).replace(/&(?![a-z#])/g,"&amp;");
 const DX={
  "01":{3:["it"],8:["it"],11:["this"],13:["the rest"]},
  "02":{4:["They"],8:["it"],9:["it"],12:["it"]},
@@ -17,9 +18,9 @@ const DX={
  "05":{2:["them"],4:["them"],7:["them"],13:["it"]}};
 const dxMark=(s,ws)=>{ if(!ws) return esc(s);
   let o=esc(s); ws.forEach(w=>{ o=o.replace(new RegExp("\\b"+w+"\\b"),`<u>${w}</u>`); }); return o; };
-const ROLE={"s": "S 주어", "s2": "S′ 주어", "v": "V 본동사", "v2": "V′ 동사", "c": "접속사", "m": "M 수식어"};
-const tok=(x,r)=>`<span class="tk ${r||""}"><em>${r==="v"||r==="v2"?"△":"&nbsp;"}</em><b>${esc(x)}</b><i>${r?ROLE[r]:"&nbsp;"}</i></span>`;
-const esc=s=>String(s).replace(/&(?![a-z#])/g,"&amp;");
+const ROLE={"s":"S","s2":"S′","v":"V","v2":"V′","m":"M"};
+const tok=(x,r)=>`<span class="tk ${r||""}"><em>${(r==="v"||r==="v2")?"△":"&nbsp;"}</em><b>${esc(x)}</b><i>${ROLE[r]||"&nbsp;"}</i></span>`;
+
 const P=[]; // pages
 let pn=0;
 
