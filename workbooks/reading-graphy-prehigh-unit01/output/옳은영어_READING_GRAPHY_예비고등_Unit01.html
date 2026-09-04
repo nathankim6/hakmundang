@@ -13,29 +13,38 @@ body{font-family:'Noto Sans KR',sans-serif;color:var(--ink);background:#fff;font
  page-break-after:always;background:var(--paper);overflow:hidden;display:flex;flex-direction:column}
 .page:last-child{page-break-after:auto}
 /* ── 러닝 헤더/푸터 ── */
-.rh{display:flex;align-items:center;gap:12px;padding-bottom:5px;
- border-bottom:1px solid var(--hair);margin-bottom:8mm}
-.rh .bk{font-size:8.4pt;font-weight:700;color:var(--ink);letter-spacing:-.01em}
+.rh{display:flex;align-items:center;gap:11px;padding-bottom:6px;position:relative;margin-bottom:8mm}
+.rh::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;
+ background:linear-gradient(90deg,var(--ac,var(--blue)) 0 46mm,var(--hair) 46mm 100%)}
+.rh .bk{display:flex;align-items:center;gap:7px;font-size:8.6pt;font-weight:700;
+ color:var(--ink);letter-spacing:-.012em}
+.rh .bk::before{content:"";width:3px;height:13px;border-radius:2px;background:var(--ac,var(--blue))}
 .rh .bk b{font-weight:800;color:var(--ac,var(--blue))}
-.rh .mid{margin-left:auto;font-size:7.2pt;letter-spacing:.14em;font-weight:700;
- color:var(--ac,var(--blue));text-transform:uppercase}
-.rh .lg{display:flex;align-items:center;gap:5px;padding-left:11px;border-left:1px solid var(--hair)}
-.rh .lg .mk{display:block;width:18px;height:15px;background-size:contain;
+.rh .mid{margin-left:auto;font-size:6.9pt;letter-spacing:.16em;font-weight:700;
+ color:var(--faint);text-transform:uppercase}
+.rh .lg{display:flex;align-items:center;gap:6px;padding-left:12px;
+ border-left:1px solid var(--hair);margin-left:2px}
+.rh .lg .mk{display:block;width:19px;height:16px;background-size:contain;
  background-repeat:no-repeat;background-position:center}
-.rh .lg em{font-style:normal;font-size:8pt;font-weight:800;color:var(--ink)}
+.rh .lg em{font-style:normal;font-size:8.2pt;font-weight:800;color:var(--ink);letter-spacing:-.02em}
 .rf{position:absolute;left:15mm;right:15mm;bottom:7mm;display:flex;justify-content:space-between;
  align-items:center;font-size:7.5pt;color:var(--faint);border-top:1px solid var(--hair);padding-top:4px}
 .rf b{color:var(--ac,var(--blue));font-size:9.5pt}
 /* ── 레슨 헤더 ── */
-.lh{display:flex;gap:14px;align-items:flex-start;margin-bottom:7mm}
-.lh .ic{width:62px;height:62px;flex:0 0 62px;border-radius:50%;background:var(--tint);display:flex;align-items:center;justify-content:center}
-.lh .ic svg{width:38px;height:38px}
-.eyebrow{font-size:7.4pt;font-weight:800;letter-spacing:.2em;color:var(--ac);text-transform:uppercase;margin-bottom:2px}
-.lh h1{font-size:20.5pt;font-weight:800;letter-spacing:-.015em;line-height:1.15;margin-bottom:3px}
-.lh .kor{font-size:9.6pt;font-weight:700;color:var(--sub);margin-bottom:4px}
-.lh .goal{font-size:8.6pt;color:var(--sub)}
-.lh .goal b{color:var(--ac);font-weight:800}
-.rule{height:2.5px;background:var(--ac);border-radius:2px;margin-bottom:6mm}
+.lh{display:flex;gap:16px;align-items:center;margin-bottom:5.5mm}
+.lh .ic{width:58px;height:58px;flex:0 0 58px;border-radius:50%;background:var(--tint);
+ display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 5px var(--paper),0 0 0 6.2px var(--tint)}
+.lh .ic svg{width:34px;height:34px}
+.eyebrow{display:flex;align-items:center;gap:7px;font-size:7.2pt;font-weight:800;
+ letter-spacing:.22em;color:var(--ac);text-transform:uppercase;margin-bottom:4px}
+.eyebrow::before{content:"";width:13px;height:2px;background:var(--ac);border-radius:1px}
+.lh h1{font-size:21.5pt;font-weight:800;letter-spacing:-.025em;line-height:1.1;margin-bottom:4px}
+.lh .kor{font-size:9.4pt;font-weight:700;color:var(--sub);margin-bottom:7px;letter-spacing:-.01em}
+.lh .goal{display:inline-flex;align-items:baseline;gap:8px;font-size:8.5pt;color:var(--sub);
+ background:var(--tint);border-radius:999px;padding:4px 13px 5px}
+.lh .goal b{color:var(--deep);font-weight:800;font-size:7pt;letter-spacing:.16em}
+.rule{height:3px;border-radius:2px;margin-bottom:6mm;
+ background:linear-gradient(90deg,var(--ac) 0 34%,var(--tint) 34% 100%)}
 /* ── 읽기 2단 ── */
 .read{display:grid;grid-template-columns:1.6fr 1fr;gap:7mm;margin-bottom:6mm}
 .psg{font-family:'Noto Serif CJK KR',serif;font-size:10.3pt;line-height:1.78;text-align:justify;hyphens:auto}
@@ -71,12 +80,17 @@ figure .art svg{height:100%;width:100%}
 figcaption{font-size:7.9pt;color:var(--sub);margin-top:6px}
 figcaption b{color:var(--ac);font-weight:800}
 /* ── 과제 헤더 ── */
-.task{display:flex;align-items:center;gap:9px;margin:0 0 4.5mm}
-.task .no{flex:0 0 auto;min-width:26px;height:23px;border-radius:7px;background:var(--ac);color:#fff;
- font-size:9pt;font-weight:800;display:flex;align-items:center;justify-content:center;padding:0 7px}
-.task h3{font-size:12.4pt;font-weight:800;letter-spacing:-.01em}
-.task .sub{font-size:8.3pt;color:var(--sub);font-weight:400;margin-left:2px}
-.task .line{flex:1;height:1.5px;background:var(--hair);margin-left:4px}
+.task{display:flex;align-items:center;gap:10px;margin:0 0 4.5mm}
+.task .no{flex:0 0 auto;width:25px;height:25px;border-radius:8px;background:var(--ac);color:#fff;
+ font-size:9.6pt;font-weight:800;display:flex;align-items:center;justify-content:center;
+ box-shadow:0 1.5px 0 rgba(0,0,0,.10)}
+.task h3{font-size:12.6pt;font-weight:800;letter-spacing:-.028em;white-space:nowrap}
+.task .en{font-size:6.8pt;font-weight:800;letter-spacing:.2em;color:var(--faint);
+ text-transform:uppercase;margin-left:8px;white-space:nowrap}
+.task .sub{font-size:8.2pt;color:var(--sub);font-weight:400;margin-left:10px;
+ padding-left:10px;border-left:1px solid var(--hair)}
+.task .line{flex:1;height:2px;border-radius:1px;margin-left:6px;
+ background:linear-gradient(90deg,var(--tint) 0 22%,var(--hair) 22% 100%)}
 .sect{margin-bottom:5.5mm}
 .sect:last-child{margin-bottom:0}
 /* ── 영영풀이 매칭 ── */
@@ -339,7 +353,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
   </div>
   <div class="rule"></div>
   <div class="read">
-   <div class="psg"><span class="dc">L<i>①</i></span>iterature carries feelings that people everywhere can share. <sup>②</sup>Yet there is no single language that everyone in the world reads or speaks. <sup>③</sup>Each country writes its literature in its own tongue, so no reader can reach all of it. <sup>④</sup>Translation seems to solve the problem. <sup>⑤</sup>But how faithful is a translation to the original? <sup>⑥</sup>A work is born at a moment of strong feeling, when the words flow under the writer's hand. <sup>⑦</sup>That moment never comes back. <sup>⑧</sup>If the writer cannot repeat it, a translator in another country certainly cannot reproduce it. <sup>⑨</sup>Literature also has a local colour. <sup>⑩</sup>A word may sound bright and alive to people who grew up with it, and mean almost nothing to everyone else. <sup>⑪</sup>A careful translator knows this and chooses the safest words instead. <sup>⑫</sup>The result reads smoothly, but something has quietly been given up. <sup>⑬</sup>Moods, images, and even thoughts are tied to words; once the words change, the rest changes as well. <sup>⑭</sup>A translation, then, is not a copy of a book. <sup>⑮</sup>It is a concession.</div>
+   <div class="psg"><span class="dc">L</span>iterature carries feelings that people everywhere can share. Yet there is no single language that everyone in the world reads or speaks. Each country writes its literature in its own tongue, so no reader can reach all of it. Translation seems to solve the problem. But how faithful is a translation to the original? A work is born at a moment of strong feeling, when the words flow under the writer's hand. That moment never comes back. If the writer cannot repeat it, a translator in another country certainly cannot reproduce it. Literature also has a local colour. A word may sound bright and alive to people who grew up with it, and mean almost nothing to everyone else. A careful translator knows this and chooses the safest words instead. The result reads smoothly, but something has quietly been given up. Moods, images, and even thoughts are tied to words; once the words change, the rest changes as well. A translation, then, is not a copy of a book. It is a concession.</div>
    <div class="side">
     <div class="card bank"><h4>Word Bank</h4><table class="bank">
      <tr><td class="w">tongue</td><td class="n">③</td><td class="k">(한 민족이 쓰는) 언어</td></tr><tr><td class="w">faithful</td><td class="n">⑤</td><td class="k">충실한</td></tr><tr><td class="w">flow</td><td class="n">⑥</td><td class="k">흘러가다</td></tr><tr><td class="w">reproduce</td><td class="n">⑧</td><td class="k">재현하다</td></tr><tr><td class="w">local</td><td class="n">⑨</td><td class="k">그 지역의</td></tr><tr><td class="w">concession</td><td class="n">⑮</td><td class="k">양보</td></tr>
@@ -370,7 +384,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
 <div class="page" style="--ac:#5B57A6;--tint:#EEEDF8;--deep:#3C3878">
   <div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b></span><span class="mid">Lesson 01 · Words & ORUN FLOW</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>
   <div class="sect">
-   <div class="task"><div class="no">1</div><h3>영영풀이 매칭<span class="sub">영어 정의를 읽고 알맞은 낱말의 기호를 써 보세요.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">1</div><h3>영영풀이 매칭</h3><span class="en">Word Match</span><span class="sub">영어 정의를 읽고 알맞은 낱말의 기호를 써 보세요.</span><div class="line"></div></div>
    <div class="match">
     <div class="mcol"><h5>Word</h5>
      <div class="mrow"><div class="lab">a</div><div class="w">tongue</div></div><div class="mrow"><div class="lab">b</div><div class="w">faithful</div></div><div class="mrow"><div class="lab">c</div><div class="w">flow</div></div><div class="mrow"><div class="lab">d</div><div class="w">reproduce</div></div><div class="mrow"><div class="lab">e</div><div class="w">local</div></div><div class="mrow"><div class="lab">f</div><div class="w">concession</div></div>
@@ -381,7 +395,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
    </div>
   </div>
   <div class="sect">
-   <div class="task"><div class="no">2</div><h3>구문분석<span class="sub">지문에 쓰인 핵심 구문 두 개를 익히고, 같은 눈으로 세 문장을 해석해요.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">2</div><h3>구문분석</h3><span class="en">Sentence Structure</span><span class="sub">핵심 구문 두 개를 익히고, 같은 눈으로 세 문장을 해석해요.</span><div class="line"></div></div>
    <div class="syn">
      <div class="hd"><div class="n">문장 ⑩</div><b>감각동사 + 형용사</b></div>
      <div class="bd">
@@ -410,7 +424,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
  </div>
 <div class="page" style="--ac:#5B57A6;--tint:#EEEDF8;--deep:#3C3878">
   <div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b></span><span class="mid">Lesson 01 · READ RIGHT</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>
-  <div class="task"><div class="no">2</div><h3>READ RIGHT<span class="sub">지문의 모든 문장을 ORUN FLOW 로 분석하고 한 줄로 해석해요.</span></h3><div class="line"></div></div>
+  <div class="task"><div class="no">2</div><h3>READ RIGHT</h3><span class="en">Line by Line</span><span class="sub">지문의 모든 문장을 ORUN FLOW 로 분석하고 한 줄로 해석해요.</span><div class="line"></div></div>
   <div class="oflow"><b>ORUN FLOW</b>1 주어 밑줄+S &nbsp;→&nbsp; 2 본동사 △+V &nbsp;→&nbsp; 3 접속사 [네모]
    &nbsp;→&nbsp; 4 종속절 S′·V′ &nbsp;→&nbsp; 5 수식어(구) 밑줄+M</div>
   <div class="otip"><b>분석 Tip</b> &nbsp;<b>조동사+동사</b> · <b>have(has, had)+p.p</b> ·
@@ -458,7 +472,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
 <div class="page" style="--ac:#5B57A6;--tint:#EEEDF8;--deep:#3C3878">
   <div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b></span><span class="mid">Lesson 01 · Flow & Paraphrase</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>
   <div class="sect">
-   <div class="task"><div class="no">3</div><h3>플로차트 완성<span class="sub">Fill in the blanks with the words in the box.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">3</div><h3>플로차트 완성</h3><span class="en">Flow Chart</span><span class="sub">Fill in the blanks with the words in the box.</span><div class="line"></div></div>
    <div class="strip"><div class="st"><div class="ci">
        <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="17" fill="#EEEDF8"/><circle cx="24" cy="24" r="17" stroke="#5B57A6" stroke-width="2.6" fill="none"/><ellipse cx="24" cy="24" rx="7.5" ry="17" stroke="#5B57A6" stroke-width="2.2" fill="none"/><path d="M7 24h34M10 15h28M10 33h28" stroke="#5B57A6" stroke-width="2.2"/></svg></div>
        <b>Problem</b></div><div class="ar">›</div><div class="st"><div class="ci">
@@ -476,7 +490,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
    <div class="bogi"><b>보기</b>translation · moment · nothing · concession · copy · grammar</div>
   </div>
   <div class="sect">
-   <div class="task"><div class="no">4</div><h3>패러프레이즈<span class="sub">원문의 표현을 다른 말로 바꾼 문장이에요. 보기에서 골라 빈칸을 채워 보세요.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">4</div><h3>패러프레이즈</h3><span class="en">Paraphrase</span><span class="sub">원문을 다른 말로 바꾼 문장이에요. 보기에서 골라 빈칸을 채워 보세요.</span><div class="line"></div></div>
    <table class="para"><tr><th>원문 표현</th><th>같은 뜻으로 바꾸어 쓰기</th></tr>
     <tr><td class="src"><span>⑤</span>how faithful is a translation to the original?</td><td class="dst">Does the new version stay <u></u> to the first one?</td></tr><tr><td class="src"><span>⑫</span>something has quietly been given up</td><td class="dst">The translator has <u></u> something without saying so.</td></tr><tr><td class="src"><span>⑮</span>It is a concession.</td><td class="dst">A translation always <u></u> something in return for being readable.</td></tr>
    </table>
@@ -489,7 +503,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
 <div class="page" style="--ac:#5B57A6;--tint:#EEEDF8;--deep:#3C3878">
   <div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b></span><span class="mid">Lesson 01 · Check Up</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>
   <div class="sect">
-   <div class="task"><div class="no">5</div><h3>Check Up<span class="sub">고르고 끝내지 말고, 왜 아닌지까지 써요.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">5</div><h3>Check Up</h3><span class="en">Show What You Know</span><span class="sub">고르고 끝내지 말고, 왜 아닌지까지 써요.</span><div class="line"></div></div>
    <div class="q"><div class="stem"><div class="n">1</div><div>이 글의 제목으로 가장 알맞은 것은?
      <span style="font-weight:400;color:var(--sub)">정답에 ○, 나머지는 제목이 될 수 없는 이유를 한 줄로 써 보세요.</span></div></div>
     <table class="cu"><tr><th>선지</th><th>○ 또는 오답인 이유</th></tr>
@@ -539,7 +553,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
   </div>
   <div class="rule"></div>
   <div class="read">
-   <div class="psg"><span class="dc">P<i>①</i></span>eople often say that seeing is believing. <sup>②</sup>A photograph, we feel, cannot lie the way words can. <sup>③</sup>Words are clearly made by people. <sup>④</sup>They are invented sounds, written with invented letters, and joined by a grammar that a culture has agreed on. <sup>⑤</sup>Everyone who speaks English understands the word “food,” even though each person pictures a different dish. <sup>⑥</sup>Looser words such as “cool” change their meaning again and again. <sup>⑦</sup>An image feels different. <sup>⑧</sup>When we see a thing, nothing seems to stand between us and it. <sup>⑨</sup>The picture appears to arrive directly, so we treat it as reality itself. <sup>⑩</sup>But an image is made too. <sup>⑪</sup>Someone chose the angle, the light, and the moment. <sup>⑫</sup>Whether it is painted, photographed, or built on a screen, it is still a version of the thing, not the thing. <sup>⑬</sup>The Belgian painter René Magritte turned this into a joke. <sup>⑭</sup>He painted a pipe and wrote underneath, “This is not a pipe.” <sup>⑮</sup>He was right: it is a picture of a pipe.</div>
+   <div class="psg"><span class="dc">P</span>eople often say that seeing is believing. A photograph, we feel, cannot lie the way words can. Words are clearly made by people. They are invented sounds, written with invented letters, and joined by a grammar that a culture has agreed on. Everyone who speaks English understands the word “food,” even though each person pictures a different dish. Looser words such as “cool” change their meaning again and again. An image feels different. When we see a thing, nothing seems to stand between us and it. The picture appears to arrive directly, so we treat it as reality itself. But an image is made too. Someone chose the angle, the light, and the moment. Whether it is painted, photographed, or built on a screen, it is still a version of the thing, not the thing. The Belgian painter René Magritte turned this into a joke. He painted a pipe and wrote underneath, “This is not a pipe.” He was right: it is a picture of a pipe.</div>
    <div class="side">
     <div class="card bank"><h4>Word Bank</h4><table class="bank">
      <tr><td class="w">invented</td><td class="n">④</td><td class="k">(사람이) 만들어 낸</td></tr><tr><td class="w">agree on</td><td class="n">④</td><td class="k">합의하다</td></tr><tr><td class="w">picture</td><td class="n">⑤</td><td class="k">머릿속에 그리다</td></tr><tr><td class="w">stand between</td><td class="n">⑧</td><td class="k">사이를 가로막다</td></tr><tr><td class="w">version</td><td class="n">⑫</td><td class="k">(여러 형태 중) 한 판본</td></tr><tr><td class="w">underneath</td><td class="n">⑭</td><td class="k">그 아래에</td></tr>
@@ -570,7 +584,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
 <div class="page" style="--ac:#E07A3E;--tint:#FDEEE3;--deep:#A8501E">
   <div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b></span><span class="mid">Lesson 02 · Words & ORUN FLOW</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>
   <div class="sect">
-   <div class="task"><div class="no">1</div><h3>영영풀이 매칭<span class="sub">영어 정의를 읽고 알맞은 낱말의 기호를 써 보세요.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">1</div><h3>영영풀이 매칭</h3><span class="en">Word Match</span><span class="sub">영어 정의를 읽고 알맞은 낱말의 기호를 써 보세요.</span><div class="line"></div></div>
    <div class="match">
     <div class="mcol"><h5>Word</h5>
      <div class="mrow"><div class="lab">a</div><div class="w">invented</div></div><div class="mrow"><div class="lab">b</div><div class="w">agree on</div></div><div class="mrow"><div class="lab">c</div><div class="w">picture</div></div><div class="mrow"><div class="lab">d</div><div class="w">stand between</div></div><div class="mrow"><div class="lab">e</div><div class="w">version</div></div><div class="mrow"><div class="lab">f</div><div class="w">underneath</div></div>
@@ -581,7 +595,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
    </div>
   </div>
   <div class="sect">
-   <div class="task"><div class="no">2</div><h3>구문분석<span class="sub">지문에 쓰인 핵심 구문 두 개를 익히고, 같은 눈으로 세 문장을 해석해요.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">2</div><h3>구문분석</h3><span class="en">Sentence Structure</span><span class="sub">핵심 구문 두 개를 익히고, 같은 눈으로 세 문장을 해석해요.</span><div class="line"></div></div>
    <div class="syn">
      <div class="hd"><div class="n">문장 ①</div><b>동명사 주어 · 보어</b></div>
      <div class="bd">
@@ -610,7 +624,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
  </div>
 <div class="page" style="--ac:#E07A3E;--tint:#FDEEE3;--deep:#A8501E">
   <div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b></span><span class="mid">Lesson 02 · READ RIGHT</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>
-  <div class="task"><div class="no">2</div><h3>READ RIGHT<span class="sub">지문의 모든 문장을 ORUN FLOW 로 분석하고 한 줄로 해석해요.</span></h3><div class="line"></div></div>
+  <div class="task"><div class="no">2</div><h3>READ RIGHT</h3><span class="en">Line by Line</span><span class="sub">지문의 모든 문장을 ORUN FLOW 로 분석하고 한 줄로 해석해요.</span><div class="line"></div></div>
   <div class="oflow"><b>ORUN FLOW</b>1 주어 밑줄+S &nbsp;→&nbsp; 2 본동사 △+V &nbsp;→&nbsp; 3 접속사 [네모]
    &nbsp;→&nbsp; 4 종속절 S′·V′ &nbsp;→&nbsp; 5 수식어(구) 밑줄+M</div>
   <div class="otip"><b>분석 Tip</b> &nbsp;<b>조동사+동사</b> · <b>have(has, had)+p.p</b> ·
@@ -658,7 +672,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
 <div class="page" style="--ac:#E07A3E;--tint:#FDEEE3;--deep:#A8501E">
   <div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b></span><span class="mid">Lesson 02 · Flow & Paraphrase</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>
   <div class="sect">
-   <div class="task"><div class="no">3</div><h3>플로차트 완성<span class="sub">Fill in the blanks with the words in the box.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">3</div><h3>플로차트 완성</h3><span class="en">Flow Chart</span><span class="sub">Fill in the blanks with the words in the box.</span><div class="line"></div></div>
    <div class="strip"><div class="st"><div class="ci">
        <svg viewBox="0 0 48 48" fill="none"><path d="M4 24s7-12 20-12 20 12 20 12-7 12-20 12S4 24 4 24z" fill="#FDEEE3" stroke="#E07A3E" stroke-width="2.6" stroke-linejoin="round"/><circle cx="24" cy="24" r="6" fill="#E07A3E"/></svg></div>
        <b>Common belief</b></div><div class="ar">›</div><div class="st"><div class="ci">
@@ -676,7 +690,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
    <div class="bogi"><b>보기</b>made · directly · chose · thing · lie · grammar</div>
   </div>
   <div class="sect">
-   <div class="task"><div class="no">4</div><h3>패러프레이즈<span class="sub">원문의 표현을 다른 말로 바꾼 문장이에요. 보기에서 골라 빈칸을 채워 보세요.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">4</div><h3>패러프레이즈</h3><span class="en">Paraphrase</span><span class="sub">원문을 다른 말로 바꾼 문장이에요. 보기에서 골라 빈칸을 채워 보세요.</span><div class="line"></div></div>
    <table class="para"><tr><th>원문 표현</th><th>같은 뜻으로 바꾸어 쓰기</th></tr>
     <tr><td class="src"><span>⑧</span>nothing seems to stand between us and it</td><td class="dst">The image feels <u></u> — as if nothing were in the way.</td></tr><tr><td class="src"><span>⑫</span>it is still a version of the thing, not the thing</td><td class="dst">A picture only <u></u> an object; it never becomes one.</td></tr><tr><td class="src"><span>⑭</span>“This is not a pipe.”</td><td class="dst">The painting is a <u></u> of a pipe, not a pipe.</td></tr>
    </table>
@@ -689,7 +703,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
 <div class="page" style="--ac:#E07A3E;--tint:#FDEEE3;--deep:#A8501E">
   <div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b></span><span class="mid">Lesson 02 · Check Up</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>
   <div class="sect">
-   <div class="task"><div class="no">5</div><h3>Check Up<span class="sub">고르고 끝내지 말고, 왜 아닌지까지 써요.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">5</div><h3>Check Up</h3><span class="en">Show What You Know</span><span class="sub">고르고 끝내지 말고, 왜 아닌지까지 써요.</span><div class="line"></div></div>
    <div class="q"><div class="stem"><div class="n">1</div><div>이 글의 제목으로 가장 알맞은 것은?
      <span style="font-weight:400;color:var(--sub)">정답에 ○, 나머지는 제목이 될 수 없는 이유를 한 줄로 써 보세요.</span></div></div>
     <table class="cu"><tr><th>선지</th><th>○ 또는 오답인 이유</th></tr>
@@ -739,7 +753,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
   </div>
   <div class="rule"></div>
   <div class="read">
-   <div class="psg"><span class="dc">C<i>①</i></span>oncert pianists spend far more of their lives practising than performing. <sup>②</sup>Playing the piano is not only remembering notes; it is physical work that needs reflex and endurance. <sup>③</sup>You may never forget how to ride a bicycle, but if your legs are out of shape you will not finish a race. <sup>④</sup>So the question is not whether to practise, but how to make the long hours offstage serve the short hours onstage. <sup>⑤</sup>My teacher used to say, “In practice a perfectionist, in performance a realist.” <sup>⑥</sup>At home, prepare endlessly. <sup>⑦</sup>On stage, accept what is in front of you. <sup>⑧</sup>Do not wish that the piano were better tuned, or the hall fuller, or that you had not missed that one passage. <sup>⑨</sup>Being a realist sounds dull when the job is to bring a great work to life. <sup>⑩</sup>I would put it another way: in practice an engineer, in performance a pilot. <sup>⑪</sup>The bolts of an aircraft matter enormously, but once you sit in the cockpit your eyes look ahead, not down. <sup>⑫</sup>We practise so that we are free to fly wherever the music asks. <sup>⑬</sup>That destination is made of imagination, not of correct notes alone. <sup>⑭</sup>Yet without the bolts in place, we never leave the ground.</div>
+   <div class="psg"><span class="dc">C</span>oncert pianists spend far more of their lives practising than performing. Playing the piano is not only remembering notes; it is physical work that needs reflex and endurance. You may never forget how to ride a bicycle, but if your legs are out of shape you will not finish a race. So the question is not whether to practise, but how to make the long hours offstage serve the short hours onstage. My teacher used to say, “In practice a perfectionist, in performance a realist.” At home, prepare endlessly. On stage, accept what is in front of you. Do not wish that the piano were better tuned, or the hall fuller, or that you had not missed that one passage. Being a realist sounds dull when the job is to bring a great work to life. I would put it another way: in practice an engineer, in performance a pilot. The bolts of an aircraft matter enormously, but once you sit in the cockpit your eyes look ahead, not down. We practise so that we are free to fly wherever the music asks. That destination is made of imagination, not of correct notes alone. Yet without the bolts in place, we never leave the ground.</div>
    <div class="side">
     <div class="card bank"><h4>Word Bank</h4><table class="bank">
      <tr><td class="w">endurance</td><td class="n">②</td><td class="k">지구력</td></tr><tr><td class="w">out of shape</td><td class="n">③</td><td class="k">몸이 예전 같지 않은</td></tr><tr><td class="w">offstage</td><td class="n">④</td><td class="k">무대 밖의</td></tr><tr><td class="w">tuned</td><td class="n">⑧</td><td class="k">조율된</td></tr><tr><td class="w">dull</td><td class="n">⑨</td><td class="k">따분한</td></tr><tr><td class="w">destination</td><td class="n">⑬</td><td class="k">목적지</td></tr>
@@ -771,7 +785,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
 <div class="page" style="--ac:#2E8B7F;--tint:#E3F1EE;--deep:#1E6157">
   <div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b></span><span class="mid">Lesson 03 · Words & ORUN FLOW</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>
   <div class="sect">
-   <div class="task"><div class="no">1</div><h3>영영풀이 매칭<span class="sub">영어 정의를 읽고 알맞은 낱말의 기호를 써 보세요.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">1</div><h3>영영풀이 매칭</h3><span class="en">Word Match</span><span class="sub">영어 정의를 읽고 알맞은 낱말의 기호를 써 보세요.</span><div class="line"></div></div>
    <div class="match">
     <div class="mcol"><h5>Word</h5>
      <div class="mrow"><div class="lab">a</div><div class="w">endurance</div></div><div class="mrow"><div class="lab">b</div><div class="w">out of shape</div></div><div class="mrow"><div class="lab">c</div><div class="w">offstage</div></div><div class="mrow"><div class="lab">d</div><div class="w">tuned</div></div><div class="mrow"><div class="lab">e</div><div class="w">dull</div></div><div class="mrow"><div class="lab">f</div><div class="w">destination</div></div>
@@ -782,7 +796,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
    </div>
   </div>
   <div class="sect">
-   <div class="task"><div class="no">2</div><h3>구문분석<span class="sub">지문에 쓰인 핵심 구문 두 개를 익히고, 같은 눈으로 세 문장을 해석해요.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">2</div><h3>구문분석</h3><span class="en">Sentence Structure</span><span class="sub">핵심 구문 두 개를 익히고, 같은 눈으로 세 문장을 해석해요.</span><div class="line"></div></div>
    <div class="syn">
      <div class="hd"><div class="n">문장 ④</div><b>사역동사 make + 목적어 + 동사원형</b></div>
      <div class="bd">
@@ -811,7 +825,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
  </div>
 <div class="page" style="--ac:#2E8B7F;--tint:#E3F1EE;--deep:#1E6157">
   <div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b></span><span class="mid">Lesson 03 · READ RIGHT</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>
-  <div class="task"><div class="no">2</div><h3>READ RIGHT<span class="sub">지문의 모든 문장을 ORUN FLOW 로 분석하고 한 줄로 해석해요.</span></h3><div class="line"></div></div>
+  <div class="task"><div class="no">2</div><h3>READ RIGHT</h3><span class="en">Line by Line</span><span class="sub">지문의 모든 문장을 ORUN FLOW 로 분석하고 한 줄로 해석해요.</span><div class="line"></div></div>
   <div class="oflow"><b>ORUN FLOW</b>1 주어 밑줄+S &nbsp;→&nbsp; 2 본동사 △+V &nbsp;→&nbsp; 3 접속사 [네모]
    &nbsp;→&nbsp; 4 종속절 S′·V′ &nbsp;→&nbsp; 5 수식어(구) 밑줄+M</div>
   <div class="otip"><b>분석 Tip</b> &nbsp;<b>조동사+동사</b> · <b>have(has, had)+p.p</b> ·
@@ -857,7 +871,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
 <div class="page" style="--ac:#2E8B7F;--tint:#E3F1EE;--deep:#1E6157">
   <div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b></span><span class="mid">Lesson 03 · Flow & Paraphrase</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>
   <div class="sect">
-   <div class="task"><div class="no">3</div><h3>플로차트 완성<span class="sub">Fill in the blanks with the words in the box.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">3</div><h3>플로차트 완성</h3><span class="en">Flow Chart</span><span class="sub">Fill in the blanks with the words in the box.</span><div class="line"></div></div>
    <div class="strip"><div class="st"><div class="ci">
        <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="17" fill="#E3F1EE"/><path d="M8 25h7l3-8 5 16 4-10 3 4h10" stroke="#2E8B7F" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
        <b>Fact</b></div><div class="ar">›</div><div class="st"><div class="ci">
@@ -875,7 +889,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
    <div class="bogi"><b>보기</b>endurance · short · realist · pilot · perfectionist · long</div>
   </div>
   <div class="sect">
-   <div class="task"><div class="no">4</div><h3>패러프레이즈<span class="sub">원문의 표현을 다른 말로 바꾼 문장이에요. 보기에서 골라 빈칸을 채워 보세요.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">4</div><h3>패러프레이즈</h3><span class="en">Paraphrase</span><span class="sub">원문을 다른 말로 바꾼 문장이에요. 보기에서 골라 빈칸을 채워 보세요.</span><div class="line"></div></div>
    <table class="para"><tr><th>원문 표현</th><th>같은 뜻으로 바꾸어 쓰기</th></tr>
     <tr><td class="src"><span>④</span>how to make the long hours offstage serve the short hours onstage</td><td class="dst">Practice should <u></u> the performance, not replace it.</td></tr><tr><td class="src"><span>⑨</span>Being a realist sounds dull</td><td class="dst">Accepting things as they are can seem <u></u>.</td></tr><tr><td class="src"><span>⑭</span>without the bolts in place, we never leave the ground</td><td class="dst">Without solid <u></u>, no free performance is possible.</td></tr>
    </table>
@@ -888,7 +902,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
 <div class="page" style="--ac:#2E8B7F;--tint:#E3F1EE;--deep:#1E6157">
   <div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b></span><span class="mid">Lesson 03 · Check Up</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>
   <div class="sect">
-   <div class="task"><div class="no">5</div><h3>Check Up<span class="sub">고르고 끝내지 말고, 왜 아닌지까지 써요.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">5</div><h3>Check Up</h3><span class="en">Show What You Know</span><span class="sub">고르고 끝내지 말고, 왜 아닌지까지 써요.</span><div class="line"></div></div>
    <div class="q"><div class="stem"><div class="n">1</div><div>이 글의 제목으로 가장 알맞은 것은?
      <span style="font-weight:400;color:var(--sub)">정답에 ○, 나머지는 제목이 될 수 없는 이유를 한 줄로 써 보세요.</span></div></div>
     <table class="cu"><tr><th>선지</th><th>○ 또는 오답인 이유</th></tr>
@@ -939,7 +953,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
   </div>
   <div class="rule"></div>
   <div class="read">
-   <div class="psg"><span class="dc">I<i>①</i></span>n the film Sleeping Beauty, a king and queen finally have a daughter, Aurora. <sup>②</sup>They plan a great celebration and welcome everyone who loves her — everyone except Maleficent. <sup>③</sup>She comes anyway and curses the child: on her sixteenth birthday Aurora will prick her finger on a spinning wheel and die. <sup>④</sup>A good fairy softens the curse into sleep, which love can undo. <sup>⑤</sup>The frightened parents burn every spinning wheel in the kingdom and hide their daughter deep in a forest. <sup>⑥</sup>Notice what the story is really describing. <sup>⑦</sup>The two rulers are building a world around Aurora with nothing dangerous in it. <sup>⑧</sup>It looks like protection, but it is not. <sup>⑨</sup>Sixteen years without risk leave her innocent, untested, and weak. <sup>⑩</sup>When she is finally brought back to the castle, she has no way to face what is waiting there. <sup>⑪</sup>A door opens, a spinning wheel appears, and she falls asleep. <sup>⑫</sup>Only after the curse is broken does she begin to grow. <sup>⑬</sup>At the end she is no longer a girl kept safe by others. <sup>⑭</sup>She is someone ready to take charge of her own life.</div>
+   <div class="psg"><span class="dc">I</span>n the film Sleeping Beauty, a king and queen finally have a daughter, Aurora. They plan a great celebration and welcome everyone who loves her — everyone except Maleficent. She comes anyway and curses the child: on her sixteenth birthday Aurora will prick her finger on a spinning wheel and die. A good fairy softens the curse into sleep, which love can undo. The frightened parents burn every spinning wheel in the kingdom and hide their daughter deep in a forest. Notice what the story is really describing. The two rulers are building a world around Aurora with nothing dangerous in it. It looks like protection, but it is not. Sixteen years without risk leave her innocent, untested, and weak. When she is finally brought back to the castle, she has no way to face what is waiting there. A door opens, a spinning wheel appears, and she falls asleep. Only after the curse is broken does she begin to grow. At the end she is no longer a girl kept safe by others. She is someone ready to take charge of her own life.</div>
    <div class="side">
     <div class="card bank"><h4>Word Bank</h4><table class="bank">
      <tr><td class="w">curse</td><td class="n">③</td><td class="k">저주를 내리다</td></tr><tr><td class="w">undo</td><td class="n">④</td><td class="k">(효력을) 되돌리다</td></tr><tr><td class="w">frightened</td><td class="n">⑤</td><td class="k">겁에 질린</td></tr><tr><td class="w">untested</td><td class="n">⑨</td><td class="k">시험받아 본 적 없는</td></tr><tr><td class="w">face</td><td class="n">⑩</td><td class="k">감당하다, 맞서다</td></tr><tr><td class="w">take charge of</td><td class="n">⑭</td><td class="k">~을 책임지다</td></tr>
@@ -975,7 +989,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
 <div class="page" style="--ac:#C2557A;--tint:#FAE9EF;--deep:#8E3454">
   <div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b></span><span class="mid">Lesson 04 · Words & ORUN FLOW</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>
   <div class="sect">
-   <div class="task"><div class="no">1</div><h3>영영풀이 매칭<span class="sub">영어 정의를 읽고 알맞은 낱말의 기호를 써 보세요.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">1</div><h3>영영풀이 매칭</h3><span class="en">Word Match</span><span class="sub">영어 정의를 읽고 알맞은 낱말의 기호를 써 보세요.</span><div class="line"></div></div>
    <div class="match">
     <div class="mcol"><h5>Word</h5>
      <div class="mrow"><div class="lab">a</div><div class="w">curse</div></div><div class="mrow"><div class="lab">b</div><div class="w">undo</div></div><div class="mrow"><div class="lab">c</div><div class="w">frightened</div></div><div class="mrow"><div class="lab">d</div><div class="w">untested</div></div><div class="mrow"><div class="lab">e</div><div class="w">face</div></div><div class="mrow"><div class="lab">f</div><div class="w">take charge of</div></div>
@@ -986,7 +1000,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
    </div>
   </div>
   <div class="sect">
-   <div class="task"><div class="no">2</div><h3>구문분석<span class="sub">지문에 쓰인 핵심 구문 두 개를 익히고, 같은 눈으로 세 문장을 해석해요.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">2</div><h3>구문분석</h3><span class="en">Sentence Structure</span><span class="sub">핵심 구문 두 개를 익히고, 같은 눈으로 세 문장을 해석해요.</span><div class="line"></div></div>
    <div class="syn">
      <div class="hd"><div class="n">문장 ⑨</div><b>leave + 목적어 + 형용사 (5형식)</b></div>
      <div class="bd">
@@ -1015,7 +1029,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
  </div>
 <div class="page" style="--ac:#C2557A;--tint:#FAE9EF;--deep:#8E3454">
   <div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b></span><span class="mid">Lesson 04 · READ RIGHT</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>
-  <div class="task"><div class="no">2</div><h3>READ RIGHT<span class="sub">지문의 모든 문장을 ORUN FLOW 로 분석하고 한 줄로 해석해요.</span></h3><div class="line"></div></div>
+  <div class="task"><div class="no">2</div><h3>READ RIGHT</h3><span class="en">Line by Line</span><span class="sub">지문의 모든 문장을 ORUN FLOW 로 분석하고 한 줄로 해석해요.</span><div class="line"></div></div>
   <div class="oflow"><b>ORUN FLOW</b>1 주어 밑줄+S &nbsp;→&nbsp; 2 본동사 △+V &nbsp;→&nbsp; 3 접속사 [네모]
    &nbsp;→&nbsp; 4 종속절 S′·V′ &nbsp;→&nbsp; 5 수식어(구) 밑줄+M</div>
   <div class="otip"><b>분석 Tip</b> &nbsp;<b>조동사+동사</b> · <b>have(has, had)+p.p</b> ·
@@ -1061,7 +1075,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
 <div class="page" style="--ac:#C2557A;--tint:#FAE9EF;--deep:#8E3454">
   <div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b></span><span class="mid">Lesson 04 · Flow & Paraphrase</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>
   <div class="sect">
-   <div class="task"><div class="no">3</div><h3>플로차트 완성<span class="sub">Fill in the blanks with the words in the box.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">3</div><h3>플로차트 완성</h3><span class="en">Flow Chart</span><span class="sub">Fill in the blanks with the words in the box.</span><div class="line"></div></div>
    <div class="strip"><div class="st"><div class="ci">
        <svg viewBox="0 0 48 48" fill="none"><path d="M10 38L34 14" stroke="#C2557A" stroke-width="4" stroke-linecap="round"/><path d="M34 6l1.8 5.2L41 13l-5.2 1.8L34 20l-1.8-5.2L27 13l5.2-1.8z" fill="#C2557A"/><circle cx="14" cy="12" r="2.6" fill="#FAE9EF" stroke="#C2557A" stroke-width="1.8"/><circle cx="40" cy="32" r="2.2" fill="#FAE9EF" stroke="#C2557A" stroke-width="1.8"/></svg></div>
        <b>Beginning</b></div><div class="ar">›</div><div class="st"><div class="ci">
@@ -1079,7 +1093,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
    <div class="bogi"><b>보기</b>curse · hide · it is not · weak · celebration · strong</div>
   </div>
   <div class="sect">
-   <div class="task"><div class="no">4</div><h3>패러프레이즈<span class="sub">원문의 표현을 다른 말로 바꾼 문장이에요. 보기에서 골라 빈칸을 채워 보세요.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">4</div><h3>패러프레이즈</h3><span class="en">Paraphrase</span><span class="sub">원문을 다른 말로 바꾼 문장이에요. 보기에서 골라 빈칸을 채워 보세요.</span><div class="line"></div></div>
    <table class="para"><tr><th>원문 표현</th><th>같은 뜻으로 바꾸어 쓰기</th></tr>
     <tr><td class="src"><span>⑧</span>It looks like protection, but it is not.</td><td class="dst">Removing every danger only <u></u> to keep her safe.</td></tr><tr><td class="src"><span>⑨</span>leave her innocent, untested, and weak</td><td class="dst">She grows up without ever being <u></u>.</td></tr><tr><td class="src"><span>⑭</span>someone ready to take charge of her own life</td><td class="dst">She can now <u></u> her own decisions.</td></tr>
    </table>
@@ -1092,7 +1106,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
 <div class="page" style="--ac:#C2557A;--tint:#FAE9EF;--deep:#8E3454">
   <div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b></span><span class="mid">Lesson 04 · Check Up</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>
   <div class="sect">
-   <div class="task"><div class="no">5</div><h3>Check Up<span class="sub">고르고 끝내지 말고, 왜 아닌지까지 써요.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">5</div><h3>Check Up</h3><span class="en">Show What You Know</span><span class="sub">고르고 끝내지 말고, 왜 아닌지까지 써요.</span><div class="line"></div></div>
    <div class="q"><div class="stem"><div class="n">1</div><div>이 글의 제목으로 가장 알맞은 것은?
      <span style="font-weight:400;color:var(--sub)">정답에 ○, 나머지는 제목이 될 수 없는 이유를 한 줄로 써 보세요.</span></div></div>
     <table class="cu"><tr><th>선지</th><th>○ 또는 오답인 이유</th></tr>
@@ -1146,7 +1160,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
   </div>
   <div class="rule"></div>
   <div class="read">
-   <div class="psg"><span class="dc">E<i>①</i></span>very field of study builds its own words and its own methods, and literature is no exception. <sup>②</sup>Knowing a few of them changes what you get from a book. <sup>③</sup>Literature also has a context and a history. <sup>④</sup>Learning a little about them can change how much pleasure and insight you take from a story. <sup>⑤</sup>Reading widely helps too. <sup>⑥</sup>When you read different kinds of writing, from different times and places, you often come to love books you would never have chosen alone. <sup>⑦</sup>You may even enjoy books you would have misunderstood if you had read them by yourself. <sup>⑧</sup>But the most important step comes after the reading. <sup>⑨</sup>Writing about a work, and talking about it with a teacher and with other students, forces you to look more closely and to consider views that are not your own. <sup>⑩</sup>A clear understanding of what a story is doing does not arrive like lightning from a blue sky. <sup>⑪</sup>It grows out of a process. <sup>⑫</sup>You try to put into words why the book affected you, and then you answer what others say about it. <sup>⑬</sup>Literature itself is one long conversation, and you join it fully only when you start talking.</div>
+   <div class="psg"><span class="dc">E</span>very field of study builds its own words and its own methods, and literature is no exception. Knowing a few of them changes what you get from a book. Literature also has a context and a history. Learning a little about them can change how much pleasure and insight you take from a story. Reading widely helps too. When you read different kinds of writing, from different times and places, you often come to love books you would never have chosen alone. You may even enjoy books you would have misunderstood if you had read them by yourself. But the most important step comes after the reading. Writing about a work, and talking about it with a teacher and with other students, forces you to look more closely and to consider views that are not your own. A clear understanding of what a story is doing does not arrive like lightning from a blue sky. It grows out of a process. You try to put into words why the book affected you, and then you answer what others say about it. Literature itself is one long conversation, and you join it fully only when you start talking.</div>
    <div class="side">
     <div class="card bank"><h4>Word Bank</h4><table class="bank">
      <tr><td class="w">field</td><td class="n">①</td><td class="k">(학문) 분야</td></tr><tr><td class="w">exception</td><td class="n">①</td><td class="k">예외</td></tr><tr><td class="w">insight</td><td class="n">④</td><td class="k">통찰</td></tr><tr><td class="w">consider</td><td class="n">⑨</td><td class="k">고려하다</td></tr><tr><td class="w">process</td><td class="n">⑪</td><td class="k">과정</td></tr><tr><td class="w">affect</td><td class="n">⑫</td><td class="k">영향을 미치다</td></tr>
@@ -1178,7 +1192,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
 <div class="page" style="--ac:#2F7CB8;--tint:#E4EFF8;--deep:#1D5686">
   <div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b></span><span class="mid">Lesson 05 · Words & ORUN FLOW</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>
   <div class="sect">
-   <div class="task"><div class="no">1</div><h3>영영풀이 매칭<span class="sub">영어 정의를 읽고 알맞은 낱말의 기호를 써 보세요.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">1</div><h3>영영풀이 매칭</h3><span class="en">Word Match</span><span class="sub">영어 정의를 읽고 알맞은 낱말의 기호를 써 보세요.</span><div class="line"></div></div>
    <div class="match">
     <div class="mcol"><h5>Word</h5>
      <div class="mrow"><div class="lab">a</div><div class="w">field</div></div><div class="mrow"><div class="lab">b</div><div class="w">exception</div></div><div class="mrow"><div class="lab">c</div><div class="w">insight</div></div><div class="mrow"><div class="lab">d</div><div class="w">consider</div></div><div class="mrow"><div class="lab">e</div><div class="w">process</div></div><div class="mrow"><div class="lab">f</div><div class="w">affect</div></div>
@@ -1189,7 +1203,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
    </div>
   </div>
   <div class="sect">
-   <div class="task"><div class="no">2</div><h3>구문분석<span class="sub">지문에 쓰인 핵심 구문 두 개를 익히고, 같은 눈으로 세 문장을 해석해요.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">2</div><h3>구문분석</h3><span class="en">Sentence Structure</span><span class="sub">핵심 구문 두 개를 익히고, 같은 눈으로 세 문장을 해석해요.</span><div class="line"></div></div>
    <div class="syn">
      <div class="hd"><div class="n">문장 ⑦</div><b>가정법 과거완료  if + had p.p. / would have p.p.</b></div>
      <div class="bd">
@@ -1218,7 +1232,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
  </div>
 <div class="page" style="--ac:#2F7CB8;--tint:#E4EFF8;--deep:#1D5686">
   <div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b></span><span class="mid">Lesson 05 · READ RIGHT</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>
-  <div class="task"><div class="no">2</div><h3>READ RIGHT<span class="sub">지문의 모든 문장을 ORUN FLOW 로 분석하고 한 줄로 해석해요.</span></h3><div class="line"></div></div>
+  <div class="task"><div class="no">2</div><h3>READ RIGHT</h3><span class="en">Line by Line</span><span class="sub">지문의 모든 문장을 ORUN FLOW 로 분석하고 한 줄로 해석해요.</span><div class="line"></div></div>
   <div class="oflow"><b>ORUN FLOW</b>1 주어 밑줄+S &nbsp;→&nbsp; 2 본동사 △+V &nbsp;→&nbsp; 3 접속사 [네모]
    &nbsp;→&nbsp; 4 종속절 S′·V′ &nbsp;→&nbsp; 5 수식어(구) 밑줄+M</div>
   <div class="otip"><b>분석 Tip</b> &nbsp;<b>조동사+동사</b> · <b>have(has, had)+p.p</b> ·
@@ -1262,7 +1276,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
 <div class="page" style="--ac:#2F7CB8;--tint:#E4EFF8;--deep:#1D5686">
   <div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b></span><span class="mid">Lesson 05 · Flow & Paraphrase</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>
   <div class="sect">
-   <div class="task"><div class="no">3</div><h3>플로차트 완성<span class="sub">Fill in the blanks with the words in the box.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">3</div><h3>플로차트 완성</h3><span class="en">Flow Chart</span><span class="sub">Fill in the blanks with the words in the box.</span><div class="line"></div></div>
    <div class="strip"><div class="st"><div class="ci">
        <svg viewBox="0 0 48 48" fill="none"><rect x="7" y="10" width="10" height="30" rx="2" fill="#2F7CB8"/><rect x="19" y="15" width="10" height="25" rx="2" fill="#E4EFF8" stroke="#2F7CB8" stroke-width="2.2"/><rect x="31" y="7" width="10" height="33" rx="2" fill="#2F7CB8" opacity=".55"/><path d="M9 18h6M21 22h6" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></div>
        <b>Opening</b></div><div class="ar">›</div><div class="st"><div class="ci">
@@ -1280,7 +1294,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
    <div class="bogi"><b>보기</b>context · chosen · talk · conversation · lightning · method</div>
   </div>
   <div class="sect">
-   <div class="task"><div class="no">4</div><h3>패러프레이즈<span class="sub">원문의 표현을 다른 말로 바꾼 문장이에요. 보기에서 골라 빈칸을 채워 보세요.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">4</div><h3>패러프레이즈</h3><span class="en">Paraphrase</span><span class="sub">원문을 다른 말로 바꾼 문장이에요. 보기에서 골라 빈칸을 채워 보세요.</span><div class="line"></div></div>
    <table class="para"><tr><th>원문 표현</th><th>같은 뜻으로 바꾸어 쓰기</th></tr>
     <tr><td class="src"><span>⑩</span>does not arrive like lightning from a blue sky</td><td class="dst">Understanding is never <u></u>; it takes time.</td></tr><tr><td class="src"><span>⑨</span>forces you to look more closely</td><td class="dst">Writing and talking make you read more <u></u>.</td></tr><tr><td class="src"><span>⑬</span>you join it fully only when you start talking</td><td class="dst">You become a full <u></u> in the conversation by speaking.</td></tr>
    </table>
@@ -1293,7 +1307,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
 <div class="page" style="--ac:#2F7CB8;--tint:#E4EFF8;--deep:#1D5686">
   <div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b></span><span class="mid">Lesson 05 · Check Up</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>
   <div class="sect">
-   <div class="task"><div class="no">5</div><h3>Check Up<span class="sub">고르고 끝내지 말고, 왜 아닌지까지 써요.</span></h3><div class="line"></div></div>
+   <div class="task"><div class="no">5</div><h3>Check Up</h3><span class="en">Show What You Know</span><span class="sub">고르고 끝내지 말고, 왜 아닌지까지 써요.</span><div class="line"></div></div>
    <div class="q"><div class="stem"><div class="n">1</div><div>이 글의 제목으로 가장 알맞은 것은?
      <span style="font-weight:400;color:var(--sub)">정답에 ○, 나머지는 제목이 될 수 없는 이유를 한 줄로 써 보세요.</span></div></div>
     <table class="cu"><tr><th>선지</th><th>○ 또는 오답인 이유</th></tr>

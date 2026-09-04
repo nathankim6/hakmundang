@@ -12,29 +12,38 @@ body{font-family:'Noto Sans KR',sans-serif;color:var(--ink);background:#fff;font
  page-break-after:always;background:var(--paper);overflow:hidden;display:flex;flex-direction:column}
 .page:last-child{page-break-after:auto}
 /* ── 러닝 헤더/푸터 ── */
-.rh{display:flex;align-items:center;gap:12px;padding-bottom:5px;
- border-bottom:1px solid var(--hair);margin-bottom:8mm}
-.rh .bk{font-size:8.4pt;font-weight:700;color:var(--ink);letter-spacing:-.01em}
+.rh{display:flex;align-items:center;gap:11px;padding-bottom:6px;position:relative;margin-bottom:8mm}
+.rh::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;
+ background:linear-gradient(90deg,var(--ac,var(--blue)) 0 46mm,var(--hair) 46mm 100%)}
+.rh .bk{display:flex;align-items:center;gap:7px;font-size:8.6pt;font-weight:700;
+ color:var(--ink);letter-spacing:-.012em}
+.rh .bk::before{content:"";width:3px;height:13px;border-radius:2px;background:var(--ac,var(--blue))}
 .rh .bk b{font-weight:800;color:var(--ac,var(--blue))}
-.rh .mid{margin-left:auto;font-size:7.2pt;letter-spacing:.14em;font-weight:700;
- color:var(--ac,var(--blue));text-transform:uppercase}
-.rh .lg{display:flex;align-items:center;gap:5px;padding-left:11px;border-left:1px solid var(--hair)}
-.rh .lg .mk{display:block;width:18px;height:15px;background-size:contain;
+.rh .mid{margin-left:auto;font-size:6.9pt;letter-spacing:.16em;font-weight:700;
+ color:var(--faint);text-transform:uppercase}
+.rh .lg{display:flex;align-items:center;gap:6px;padding-left:12px;
+ border-left:1px solid var(--hair);margin-left:2px}
+.rh .lg .mk{display:block;width:19px;height:16px;background-size:contain;
  background-repeat:no-repeat;background-position:center}
-.rh .lg em{font-style:normal;font-size:8pt;font-weight:800;color:var(--ink)}
+.rh .lg em{font-style:normal;font-size:8.2pt;font-weight:800;color:var(--ink);letter-spacing:-.02em}
 .rf{position:absolute;left:15mm;right:15mm;bottom:7mm;display:flex;justify-content:space-between;
  align-items:center;font-size:7.5pt;color:var(--faint);border-top:1px solid var(--hair);padding-top:4px}
 .rf b{color:var(--ac,var(--blue));font-size:9.5pt}
 /* ── 레슨 헤더 ── */
-.lh{display:flex;gap:14px;align-items:flex-start;margin-bottom:7mm}
-.lh .ic{width:62px;height:62px;flex:0 0 62px;border-radius:50%;background:var(--tint);display:flex;align-items:center;justify-content:center}
-.lh .ic svg{width:38px;height:38px}
-.eyebrow{font-size:7.4pt;font-weight:800;letter-spacing:.2em;color:var(--ac);text-transform:uppercase;margin-bottom:2px}
-.lh h1{font-size:20.5pt;font-weight:800;letter-spacing:-.015em;line-height:1.15;margin-bottom:3px}
-.lh .kor{font-size:9.6pt;font-weight:700;color:var(--sub);margin-bottom:4px}
-.lh .goal{font-size:8.6pt;color:var(--sub)}
-.lh .goal b{color:var(--ac);font-weight:800}
-.rule{height:2.5px;background:var(--ac);border-radius:2px;margin-bottom:6mm}
+.lh{display:flex;gap:16px;align-items:center;margin-bottom:5.5mm}
+.lh .ic{width:58px;height:58px;flex:0 0 58px;border-radius:50%;background:var(--tint);
+ display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 5px var(--paper),0 0 0 6.2px var(--tint)}
+.lh .ic svg{width:34px;height:34px}
+.eyebrow{display:flex;align-items:center;gap:7px;font-size:7.2pt;font-weight:800;
+ letter-spacing:.22em;color:var(--ac);text-transform:uppercase;margin-bottom:4px}
+.eyebrow::before{content:"";width:13px;height:2px;background:var(--ac);border-radius:1px}
+.lh h1{font-size:21.5pt;font-weight:800;letter-spacing:-.025em;line-height:1.1;margin-bottom:4px}
+.lh .kor{font-size:9.4pt;font-weight:700;color:var(--sub);margin-bottom:7px;letter-spacing:-.01em}
+.lh .goal{display:inline-flex;align-items:baseline;gap:8px;font-size:8.5pt;color:var(--sub);
+ background:var(--tint);border-radius:999px;padding:4px 13px 5px}
+.lh .goal b{color:var(--deep);font-weight:800;font-size:7pt;letter-spacing:.16em}
+.rule{height:3px;border-radius:2px;margin-bottom:6mm;
+ background:linear-gradient(90deg,var(--ac) 0 34%,var(--tint) 34% 100%)}
 /* ── 읽기 2단 ── */
 .read{display:grid;grid-template-columns:1.6fr 1fr;gap:7mm;margin-bottom:6mm}
 .psg{font-family:'Noto Serif CJK KR',serif;font-size:10.3pt;line-height:1.78;text-align:justify;hyphens:auto}
@@ -70,12 +79,17 @@ figure .art svg{height:100%;width:100%}
 figcaption{font-size:7.9pt;color:var(--sub);margin-top:6px}
 figcaption b{color:var(--ac);font-weight:800}
 /* ── 과제 헤더 ── */
-.task{display:flex;align-items:center;gap:9px;margin:0 0 4.5mm}
-.task .no{flex:0 0 auto;min-width:26px;height:23px;border-radius:7px;background:var(--ac);color:#fff;
- font-size:9pt;font-weight:800;display:flex;align-items:center;justify-content:center;padding:0 7px}
-.task h3{font-size:12.4pt;font-weight:800;letter-spacing:-.01em}
-.task .sub{font-size:8.3pt;color:var(--sub);font-weight:400;margin-left:2px}
-.task .line{flex:1;height:1.5px;background:var(--hair);margin-left:4px}
+.task{display:flex;align-items:center;gap:10px;margin:0 0 4.5mm}
+.task .no{flex:0 0 auto;width:25px;height:25px;border-radius:8px;background:var(--ac);color:#fff;
+ font-size:9.6pt;font-weight:800;display:flex;align-items:center;justify-content:center;
+ box-shadow:0 1.5px 0 rgba(0,0,0,.10)}
+.task h3{font-size:12.6pt;font-weight:800;letter-spacing:-.028em;white-space:nowrap}
+.task .en{font-size:6.8pt;font-weight:800;letter-spacing:.2em;color:var(--faint);
+ text-transform:uppercase;margin-left:8px;white-space:nowrap}
+.task .sub{font-size:8.2pt;color:var(--sub);font-weight:400;margin-left:10px;
+ padding-left:10px;border-left:1px solid var(--hair)}
+.task .line{flex:1;height:2px;border-radius:1px;margin-left:6px;
+ background:linear-gradient(90deg,var(--tint) 0 22%,var(--hair) 22% 100%)}
 .sect{margin-bottom:5.5mm}
 .sect:last-child{margin-bottom:0}
 /* ── 영영풀이 매칭 ── */
