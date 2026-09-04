@@ -12,7 +12,7 @@ HTML/CSS를 헤드리스 Chromium으로 인쇄해 PDF를 만든다 (docx 아님)
 |---|---|---|
 | 1 | 영영풀이 매칭 | 우리말 뜻 암기 대신 영어 정의를 읽고 낱말과 잇는다 |
 | 2 | **구문분석** | 지문에 쓰인 **핵심 구문 2개** 카드(구문명·인용·설명·해석) + 훈련 3문장 해석 |
-| 2 | **READ RIGHT** | ORUN FLOW 바 + 분석 Tip + **먼저 보기**(다 표시된 문장) + 지문의 **모든 문장** 분석·해석 |
+| 2 | **READ RIGHT** | ORUN FLOW 바 + 분석 Tip + **먼저 보기**(다 표시된 문장) + 지문의 **모든 문장** 분석·해석 (지시어 표시 없음) |
 | 3 | 플로차트 완성 | 글 전체 흐름을 **영문** 표 한 장으로 복원 (빈칸 4개 + 보기) → 영어 한 문장 요약 |
 | 4 | 패러프레이즈 | 원문 표현을 다른 말로 바꾼 문장의 빈칸을 채운다 |
 | 5 | Check Up | 고르고 끝내지 않는다 — 선지마다 **오답인 이유**와 **근거 문장 번호**를 쓴다 |
@@ -33,7 +33,7 @@ HTML/CSS를 헤드리스 Chromium으로 인쇄해 PDF를 만든다 (docx 아님)
 - 훈련 문장은 슬래시 없이 원문 그대로, 행간을 넓게 인쇄해 학생이 문장 위에 직접 표시한다.
 
 면 배치: **레슨당 5면** — READING / WORD·구문분석 / READ RIGHT / CHART·PARAPHRASE / CHECK·KB.
-전체 32면 = 표지 1 + 구성 1 + 레슨 25 + ANSWERS 5.
+전체 30면 = 레슨 25 + ANSWERS 5. (표지·구성 안내 면은 두지 않는다.)
 
 **답란은 모두 한 줄**(`.aline`)이다. 판서로 함께 채우는 수업을 전제로 한다.
 
@@ -68,7 +68,7 @@ apt-get install -y fonts-noto-cjk        # Noto Serif CJK KR (지문 본문용)
 node build.js                            # → book.html
 /opt/pw-browsers/chromium-1194/chrome-linux/chrome --headless --disable-gpu --no-sandbox \
   --no-pdf-header-footer --print-to-pdf=book.pdf --virtual-time-budget=8000 "file://$PWD/book.html"
-python3 fill.py book.pdf                 # 면별 채움률 (현재 32면 73–100%, 넘침 없음)
+python3 fill.py book.pdf                 # 면별 채움률 (현재 30면 84–100%, 넘침 없음)
 ```
 
 ## 새 유닛 만들기
