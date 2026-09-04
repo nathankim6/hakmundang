@@ -3,11 +3,12 @@ const CSS=require("./css.js");
 const {icons,scenes}=require("./art.js");
 const {S:PIC,STRIP,VIG}=require("./pics.js");
 const SYN=require("./syn.js");
+const SYND=require("./syndrill.js");
 const T=require("./content1.js").concat(require("./content2.js"));
 const FL=require("./flow.js");
 const EX=require("./extra.js");
 T.forEach(t=>{t.fl=FL[t.no]; const e=EX[t.no]; t.flow=e.flow; t.flowBogi=e.flowBogi;
-  t.why=e.why; t.src=e.src; t.kb=e.kb; t.syn=SYN[t.no];});
+  t.why=e.why; t.src=e.src; t.kb=e.kb; t.syn=SYN[t.no]; t.synd=SYND[t.no];});
 const CIR="①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳".split("");
 const AL="abcdef".split("");
 const esc=s=>String(s).replace(/&(?![a-z#])/g,"&amp;");
@@ -73,9 +74,9 @@ T.forEach(t=>{
       <div class="k">이 문장을 우리말로 옮기시오.</div>
       <div class="aline"></div>
      </div></div>`).join("")}
-   <div class="mini" style="margin:5mm 0 3px">위 두 구문을 떠올리며, 다음 세 문장을 한 줄로 해석하시오.</div>
-   ${t.fl.drill.map(d=>`<div class="sline">
-     <div class="t"><div class="n">문장 ${d.n}</div><p>${esc(d.en)}</p></div>
+   <div class="mini" style="margin:4.5mm 0 3px">위 두 구문이 쓰인 문장이다. 어떤 구문인지 확인하고 한 줄로 해석하시오.</div>
+   ${t.synd.map((d,i)=>`<div class="sline">
+     <div class="t"><div class="n">${i+1}</div><p>${esc(d.en)}</p><div class="use">${d.u}</div></div>
      <div class="aline"></div></div>`).join("")}
   </div>
   ${tab(t)}${foot(t,L)}
@@ -178,10 +179,11 @@ T.forEach((t,ti)=>{
     <tr><td class="k">TASK 1</td><td>${t.defOrder.map((oi,i)=>`${i+1}–${AL[oi]}`).join(" &nbsp; ")}
        &nbsp;<span style="color:#98A0A8">(${t.defs.map((d,i)=>`${AL[i]} ${d[0]}`).join(" · ")})</span></td></tr>
     <tr><td class="k">TASK 2<br><span style="font-weight:400;color:#98A0A8">구문분석</span></td><td>
-      ${t.syn.map(x=>`<b style="color:${t.accent}">${x.n} ${x.name}</b><br>${x.k}`).join("<br>")}</td></tr>
+      ${t.syn.map((x,i)=>`<b style="color:${t.accent}">구문 ${i+1} · ${x.n} ${x.name}</b><br>${x.k}`).join("<br>")}
+      <br>${t.synd.map((d,i)=>`<b style="color:${t.accent}">훈련 ${i+1}</b> <span style="color:#98A0A8">(${d.u})</span> ${d.k}`).join("<br>")}</td></tr>
     <tr><td class="k">TASK 2<br><span style="font-weight:400;color:#98A0A8">READ RIGHT</span></td><td>
       <b style="color:${t.accent}">먼저 보기 ${t.fl.model.n}</b> ${t.fl.model.ko}<br>
-      ${t.fl.drill.map(d=>`<b style="color:${t.accent}">${d.n}</b> ${esc(d.ans)}<br><span style="color:#5D646C">→ ${d.ko}</span>`).join("<br>")}<br>
+      ${t.fl.drill.map(d=>`<b style="color:${t.accent}">${d.n}</b> ${esc(d.ans)}`).join("<br>")}<br>
       <span style="color:#98A0A8">그 밖의 문장 해석은 아래 전문 해석 참조</span></td></tr>
     <tr><td class="k">TASK 3</td><td>${t.flow.filter(r=>r[2]).map((r,i)=>`${CIR[i]} ${r[2]}`).join(" &nbsp; ")}</td></tr>
     <tr><td class="k">TASK 4</td><td>${t.para.map((p,i)=>`(${i+1}) ${p[2]}`).join(" &nbsp; ")}</td></tr>

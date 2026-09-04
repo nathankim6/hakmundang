@@ -311,4 +311,8 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
 
 .syn .aline{height:7.6mm}
 .sline .aline{height:7.7mm}
+
+.sline .t .n{min-width:14px}
+.sline .use{flex:0 0 auto;font-size:7.2pt;font-weight:800;color:var(--deep);background:var(--tint);
+ border-radius:999px;padding:3px 9px;white-space:nowrap}
 `;
