@@ -87,7 +87,7 @@ T.forEach(t=>{
  /* 면 C — READ RIGHT */
  P.push(`<div class="page" style="${V}">
   ${head(t,`Lesson ${t.no} · READ RIGHT`)}
-  ${th("2","READ RIGHT","Line by Line","지문의 모든 문장을 ORUN FLOW 로 분석하고 한 줄로 해석해요.")}
+  ${th("2","READ RIGHT","Line by Line","지문의 모든 문장을 ORUN FLOW 로 분석해요.")}
   <div class="oflow"><b>ORUN FLOW</b>1 주어 밑줄+S &nbsp;→&nbsp; 2 본동사 △+V &nbsp;→&nbsp; 3 접속사 [네모]
    &nbsp;→&nbsp; 4 종속절 S′·V′ &nbsp;→&nbsp; 5 수식어(구) 밑줄+M</div>
   <div class="otip"><b>분석 Tip</b> &nbsp;<b>조동사+동사</b> · <b>have(has, had)+p.p</b> ·
