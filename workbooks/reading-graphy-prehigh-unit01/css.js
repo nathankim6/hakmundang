@@ -208,14 +208,15 @@ table.flow td.body u{padding:0 16px}
 .mk{font-family:'Noto Serif CJK KR',serif;font-size:10.4pt;line-height:1.35}
 .tk{display:inline-block;position:relative;text-align:center;vertical-align:top;
  padding-top:0;padding-bottom:15px;margin:0 3px}
-.tk em{position:absolute;top:1px;left:50%;transform:translateX(-50%);font-style:normal;
- font-size:10.5pt;line-height:1;color:var(--deep);font-weight:800;pointer-events:none}
+.tk em{position:absolute;top:1px;left:50%;transform:translateX(-50%);
+ color:var(--deep);pointer-events:none;line-height:0}
+.tk em svg{width:14px;height:12px;display:block}
 .tk b{display:block;line-height:1.24}
 .tk i{position:absolute;bottom:0;left:50%;transform:translateX(-50%);font-style:normal;
  font-size:7.6pt;font-weight:800;line-height:1;white-space:nowrap}
 .tk.s b{border-bottom:2.4px solid #2E8B7F}
 .tk.s i,.tk.s2 i{color:#217A6E}
-.tk.s2 b{border-bottom:2.4px dashed #2E8B7F}
+.tk.s2 b{border-bottom:2.4px solid #2E8B7F}
 .tk.v b,.tk.v2 b{color:var(--deep);font-weight:800}
 .tk.v i,.tk.v2 i{color:var(--deep)}
 .tk.c b{border:1.7px solid var(--gold);border-radius:5px;padding:0 6px;color:#8A5D10;font-weight:800}
