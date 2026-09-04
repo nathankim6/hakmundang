@@ -2,11 +2,12 @@ const fs=require("fs");
 const CSS=require("./css.js");
 const {icons,scenes}=require("./art.js");
 const {S:PIC,STRIP,VIG}=require("./pics.js");
+const SYN=require("./syn.js");
 const T=require("./content1.js").concat(require("./content2.js"));
 const FL=require("./flow.js");
 const EX=require("./extra.js");
 T.forEach(t=>{t.fl=FL[t.no]; const e=EX[t.no]; t.flow=e.flow; t.flowBogi=e.flowBogi;
-  t.why=e.why; t.src=e.src; t.kb=e.kb;});
+  t.why=e.why; t.src=e.src; t.kb=e.kb; t.syn=SYN[t.no];});
 const CIR="①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳".split("");
 const AL="abcdef".split("");
 const esc=s=>String(s).replace(/&(?![a-z#])/g,"&amp;");
@@ -131,32 +132,38 @@ T.forEach(t=>{
    </div>
   </div>
   <div class="sect">
-   <div class="task ss"><div class="ico">≡</div>
-    <h3>구문분석<span class="en">SENTENCE STRUCTURE</span></h3><div class="line"></div></div>
-   <div class="oflow"><b>ORUN FLOW</b>1 주어 밑줄+S &nbsp;→&nbsp; 2 본동사 △+V &nbsp;→&nbsp; 3 접속사 [네모]
-    &nbsp;→&nbsp; 4 종속절 S′·V′ &nbsp;→&nbsp; 5 수식어(구) 밑줄+M</div>
-   <div class="otip"><b>분석 Tip</b> &nbsp;<b>조동사+동사</b> · <b>have(has, had)+p.p</b> ·
-    <b>be+p.p</b>(수동태) · <b>be+~ing</b>(진행형) &nbsp;→&nbsp; <b>한 덩어리의 동사로 표시!</b> △</div>
-   <div class="model">
-    <div class="cap"><span style="color:var(--gold)">먼저 보기</span>
-     <span>ORUN FLOW 를 쓰기 전에, 다 표시된 문장 ${t.fl.model.n} 을 먼저 구경하세요. 라벨은 단어 <b>바로 밑</b>에!</span></div>
-    <div class="mk">${t.fl.model.toks.map(x=>tok(x[0],x[1])).join("")}</div>
-    <div class="ko"><b>뼈대 해석</b>${t.fl.model.ko}</div>
-   </div>
-   <div style="height:4mm"></div>
+   <div class="task"><div class="no">2</div><h3>구문분석<span class="sub">지문에 쓰인 핵심 구문 두 개를 익히고, 같은 눈으로 세 문장을 해석한다.</span></h3><div class="line"></div></div>
+   ${t.syn.map(x=>`<div class="syn">
+     <div class="hd"><div class="n">문장 ${x.n}</div><b>${x.name}</b></div>
+     <div class="bd">
+      <div class="q">${esc(x.q).replace(/«([^»]*)»/g,(m,p)=>`<u>${p}</u>`)}</div>
+      <div class="d">${x.d}</div>
+      <div class="k">이 문장을 우리말로 옮기시오.</div>
+      <div class="aline"></div>
+     </div></div>`).join("")}
+   <div class="mini" style="margin:5mm 0 3px">위 두 구문을 떠올리며, 다음 세 문장을 한 줄로 해석하시오.</div>
    ${t.fl.drill.map(d=>`<div class="sline">
-     <div class="t"><div class="n">문장 ${d.n}</div><p>${esc(d.en)}</p><div class="go">→ 문장에 직접 표시!</div></div>
+     <div class="t"><div class="n">문장 ${d.n}</div><p>${esc(d.en)}</p></div>
      <div class="aline"></div></div>`).join("")}
   </div>
   ${tab(t)}${foot(t,L)}
  </div>`);
 
- /* 면 C — READ RIGHT (지문 전 문장) */
+ /* 면 C — READ RIGHT */
  P.push(`<div class="page" style="${V}">
   ${head(t,`Lesson ${t.no} · READ RIGHT`)}
-  <div class="rr"><b>READ RIGHT</b>
-   <span>지문의 모든 문장을 ORUN FLOW 로 분석하기 · 주어 밑줄+S · 본동사 △+V · 접속사 [네모] · 종속절 S′·V′ · 수식어 밑줄+M</span></div>
-  <div class="rrh">한 문장씩 분석하기<span>문장 위에 직접 기호를 표시하고, 아래 한 줄에 우리말로 옮겨 보세요. 밑줄 친 지시어는 무엇을 가리키는지 생각하며!</span></div>
+  <div class="task"><div class="no">2</div><h3>READ RIGHT<span class="sub">지문의 모든 문장을 ORUN FLOW 로 분석하고 한 줄로 해석한다.</span></h3><div class="line"></div></div>
+  <div class="oflow"><b>ORUN FLOW</b>1 주어 밑줄+S &nbsp;→&nbsp; 2 본동사 △+V &nbsp;→&nbsp; 3 접속사 [네모]
+   &nbsp;→&nbsp; 4 종속절 S′·V′ &nbsp;→&nbsp; 5 수식어(구) 밑줄+M</div>
+  <div class="otip"><b>분석 Tip</b> &nbsp;<b>조동사+동사</b> · <b>have(has, had)+p.p</b> ·
+   <b>be+p.p</b>(수동태) · <b>be+~ing</b>(진행형) &nbsp;→&nbsp; <b>한 덩어리의 동사로 표시!</b> △</div>
+  <div class="model">
+   <div class="cap"><span style="color:var(--gold)">먼저 보기</span>
+    <span>다 표시된 문장 ${t.fl.model.n} 을 먼저 구경하세요. 기호는 단어 바로 위·아래에!</span></div>
+   <div class="mk">${t.fl.model.toks.map(x=>tok(x[0],x[1])).join("")}</div>
+   <div class="ko"><b>뼈대 해석</b>${t.fl.model.ko}</div>
+  </div>
+  <div class="rrh" style="margin-top:4.5mm">한 문장씩 분석하기<span>문장 위에 직접 기호를 표시하고, 아래 한 줄에 우리말로 옮겨 보세요.</span></div>
   ${t.sent.map((s,i)=>`<div class="rrq">
     <div class="t"><div class="n">${String(i+1).padStart(2,"0")}</div><p>${dxMark(s,(DX[t.no]||{})[i+1])}</p></div>
     <div class="aline"></div></div>`).join("")}
@@ -238,9 +245,12 @@ T.forEach((t,ti)=>{
    <table>
     <tr><td class="k">TASK 1</td><td>${t.defOrder.map((oi,i)=>`${i+1}–${AL[oi]}`).join(" &nbsp; ")}
        &nbsp;<span style="color:#98A0A8">(${t.defs.map((d,i)=>`${AL[i]} ${d[0]}`).join(" · ")})</span></td></tr>
-    <tr><td class="k">TASK 2<br><span style="font-weight:400;color:#98A0A8">ORUN FLOW</span></td><td>
+    <tr><td class="k">TASK 2<br><span style="font-weight:400;color:#98A0A8">구문분석</span></td><td>
+      ${t.syn.map(x=>`<b style="color:${t.accent}">${x.n} ${x.name}</b><br>${x.k}`).join("<br>")}</td></tr>
+    <tr><td class="k">TASK 2<br><span style="font-weight:400;color:#98A0A8">READ RIGHT</span></td><td>
       <b style="color:${t.accent}">먼저 보기 ${t.fl.model.n}</b> ${t.fl.model.ko}<br>
-      ${t.fl.drill.map(d=>`<b style="color:${t.accent}">${d.n}</b> ${esc(d.ans)}<br><span style="color:#5D646C">→ ${d.ko}</span>`).join("<br>")}</td></tr>
+      ${t.fl.drill.map(d=>`<b style="color:${t.accent}">${d.n}</b> ${esc(d.ans)}<br><span style="color:#5D646C">→ ${d.ko}</span>`).join("<br>")}<br>
+      <span style="color:#98A0A8">그 밖의 문장 해석은 아래 전문 해석 참조</span></td></tr>
     <tr><td class="k">TASK 3</td><td>${t.flow.filter(r=>r[2]).map((r,i)=>`${CIR[i]} ${r[2]}`).join(" &nbsp; ")}</td></tr>
     <tr><td class="k">TASK 4</td><td>${t.para.map((p,i)=>`(${i+1}) ${p[2]}`).join(" &nbsp; ")}</td></tr>
     <tr><td class="k">TASK 5-1</td><td><b style="color:${t.accent}">정답 ${CIR[t.check[0].ans-1]}</b><br>

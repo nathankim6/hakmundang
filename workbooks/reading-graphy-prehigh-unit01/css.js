@@ -74,7 +74,7 @@ figcaption b{color:var(--ac);font-weight:800}
 /* ── 영영풀이 매칭 ── */
 .match{display:grid;grid-template-columns:1fr 1.55fr;gap:6mm}
 .mcol h5{font-size:7.3pt;font-weight:800;letter-spacing:.15em;color:var(--faint);text-transform:uppercase;margin-bottom:6px}
-.mrow{display:flex;align-items:center;gap:9px;padding:5.5px 0;border-bottom:1px dotted var(--hair)}
+.mrow{display:flex;align-items:center;gap:9px;padding:2.5px 0;border-bottom:1px dotted var(--hair)}
 .mrow .lab{flex:0 0 20px;height:20px;border-radius:6px;background:var(--tint);color:var(--deep);
  font-size:8pt;font-weight:800;display:flex;align-items:center;justify-content:center}
 .mrow .w{font-weight:800;font-size:9.6pt;flex:1}
@@ -180,22 +180,23 @@ table.flow td.body u{padding:0 16px}
 .fbar div{flex:1;background:var(--navy);color:#fff;padding:9px 10px;font-size:8.1pt;line-height:1.4}
 .fbar div+div{border-left:1px solid rgba(255,255,255,.2)}
 .fbar b{display:block;font-size:7pt;letter-spacing:.12em;color:var(--yel);margin-bottom:4px;font-weight:800}
-.model{border:1.8px solid var(--gold);background:var(--cream);border-radius:11px;padding:11px 16px 5px}
+.model{border:1.8px solid var(--gold);background:var(--cream);border-radius:11px;padding:9px 14px 4px}
 .model .cap{font-size:7.4pt;font-weight:800;letter-spacing:.16em;color:var(--gold);margin-bottom:11px;
  display:flex;justify-content:space-between}
 .model .cap span{color:var(--faint);letter-spacing:.04em}
-.mk{font-family:'Noto Serif CJK KR',serif;font-size:11.3pt;line-height:1.45}
-.tk{display:inline-block;text-align:center;vertical-align:top;margin:0 3px 4px}
-.tk em{display:block;font-style:normal;font-size:9.5pt;line-height:1;height:11px;
- color:var(--navy);font-weight:800}
-.tk b{display:block;line-height:1.22}
-.tk i{display:block;font-style:normal;font-size:7.6pt;font-weight:800;line-height:1;
- height:11px;margin-top:4px;white-space:nowrap}
+.mk{font-family:'Noto Serif CJK KR',serif;font-size:10.4pt;line-height:1.35}
+.tk{display:inline-block;position:relative;text-align:center;vertical-align:top;
+ padding-top:9px;padding-bottom:15px;margin:0 3px}
+.tk em{position:absolute;top:0;left:50%;transform:translateX(-50%);font-style:normal;
+ font-size:9pt;line-height:1;color:var(--deep);font-weight:800;pointer-events:none}
+.tk b{display:block;line-height:1.24}
+.tk i{position:absolute;bottom:0;left:50%;transform:translateX(-50%);font-style:normal;
+ font-size:7.6pt;font-weight:800;line-height:1;white-space:nowrap}
 .tk.s b{border-bottom:2.4px solid #2E8B7F}
 .tk.s i,.tk.s2 i{color:#217A6E}
 .tk.s2 b{border-bottom:2.4px dashed #2E8B7F}
-.tk.v b,.tk.v2 b{color:var(--navy);font-weight:800}
-.tk.v i,.tk.v2 i{color:var(--navy)}
+.tk.v b,.tk.v2 b{color:var(--deep);font-weight:800}
+.tk.v i,.tk.v2 i{color:var(--deep)}
 .tk.c b{border:1.7px solid var(--gold);border-radius:5px;padding:0 6px;color:#8A5D10;font-weight:800}
 .tk.m b{border-bottom:2.2px solid #B9BEC4}
 .tk.m i{color:#C0392B}
@@ -246,30 +247,30 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
 .task.ss .ico{flex:0 0 auto;width:36px;height:30px;background:#2B2A28;color:#fff;border-radius:4px;
  display:flex;align-items:center;justify-content:center;font-size:12pt;border-bottom:3.5px solid var(--yel)}
 .task.ss h3 .en{font-size:7.2pt;letter-spacing:.22em;color:var(--faint);font-weight:800;margin-left:10px}
-.oflow{background:#0F4C6B;color:#fff;border-bottom:3.5px solid var(--yel);border-radius:4px 4px 0 0;
- padding:9px 12px;text-align:center;font-size:8.7pt;font-weight:700;letter-spacing:.01em}
+.oflow{background:var(--ac);color:#fff;border-bottom:3px solid var(--yel);border-radius:4px 4px 0 0;
+ padding:7px 12px;text-align:center;font-size:8.4pt;font-weight:700;letter-spacing:.01em}
 .oflow b{color:var(--yel);letter-spacing:.14em;margin-right:16px;font-weight:800}
-.otip{background:#F1F2F4;padding:7px 12px;text-align:center;font-size:8.3pt;color:var(--sub);
- border-radius:0 0 4px 4px;margin-bottom:4.5mm}
-.otip b{color:#0F4C6B;font-weight:800}
-.sline{margin-bottom:3mm}
+.otip{background:var(--tint);padding:6px 12px;text-align:center;font-size:8pt;color:var(--sub);
+ border-radius:0 0 4px 4px;margin-bottom:3.5mm}
+.otip b{color:var(--deep);font-weight:800}
+.sline{margin-bottom:1.9mm}
 .sline .t{display:flex;align-items:baseline;gap:10px}
-.sline .t .n{font-size:8.6pt;font-weight:800;color:#0F4C6B;white-space:nowrap}
+.sline .t .n{font-size:8.6pt;font-weight:800;color:var(--ac);white-space:nowrap}
 .sline .t p{flex:1;font-family:'Noto Serif CJK KR',serif;font-size:11pt;line-height:2.15}
 .sline .t .go{font-size:7.4pt;color:var(--faint);font-weight:700;white-space:nowrap}
 /* ═══ READ RIGHT ═══ */
-.rr{background:#0F4C6B;color:#fff;border-left:7px solid var(--yel);border-radius:4px;
+.rr{background:var(--ac);color:#fff;border-left:7px solid var(--yel);border-radius:4px;
  padding:9px 17px;margin-bottom:4mm}
 .rr b{font-size:15pt;font-weight:800;letter-spacing:.03em;display:block}
 .rr span{font-size:8.2pt;opacity:.85;display:block;margin-top:4px}
-.rrh{font-size:10.6pt;font-weight:800;color:#0F4C6B;margin-bottom:3mm}
+.rrh{font-size:10.6pt;font-weight:800;color:var(--deep);margin-bottom:3mm}
 .rrh span{font-size:8.2pt;font-weight:400;color:var(--sub);margin-left:8px}
-.rrq{margin-bottom:1.5mm}
-.rrq .t{display:flex;gap:9px;align-items:baseline;margin-bottom:3px}
-.rrq .t .n{font-size:7.8pt;font-weight:800;color:#2E86AB;min-width:15px}
-.rrq .t p{flex:1;font-size:9.6pt;line-height:1.42}
-.rrq .t u{font-weight:800;color:#0F4C6B;text-decoration-thickness:1.6px}
-.rrq .aline{height:6.3mm}
+.rrq{margin-bottom:0.9mm}
+.rrq .t{display:flex;gap:9px;align-items:baseline;margin-bottom:2px}
+.rrq .t .n{font-size:7.8pt;font-weight:800;color:var(--ac);min-width:15px}
+.rrq .t p{flex:1;font-size:9.2pt;line-height:1.38}
+.rrq .t u{font-weight:800;color:var(--deep);text-decoration-thickness:1.6px}
+.rrq .aline{height:5.6mm}
 
 /* ═══ 플로차트 픽토그램 스트립 ═══ */
 .strip{display:flex;align-items:stretch;gap:0;margin-bottom:4.5mm}
@@ -295,4 +296,19 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
 .cover .hb .c svg{width:50px;height:50px}
 .cover .ornament{position:absolute;right:-40mm;top:-30mm;width:150mm;height:150mm;opacity:.07}
 .cover .ornament svg{width:100%;height:100%}
+
+.syn{border:1.5px solid var(--hair);border-radius:11px;overflow:hidden;margin-bottom:2.6mm}
+.syn .hd{background:var(--tint);padding:7px 13px;display:flex;gap:10px;align-items:baseline}
+.syn .hd .n{font-size:7.6pt;font-weight:800;color:#fff;background:var(--ac);border-radius:5px;padding:2px 7px}
+.syn .hd b{font-size:10pt;font-weight:800;color:var(--deep)}
+.syn .bd{padding:9px 14px 9px}
+.syn .q{font-family:'Noto Serif CJK KR',serif;font-size:10.2pt;line-height:1.5;margin-bottom:6px}
+.syn .q u{text-decoration:none;border-bottom:2.2px solid var(--ac);font-weight:700;color:var(--deep);padding-bottom:1px}
+.syn .d{font-size:8.2pt;color:var(--sub);line-height:1.5;background:#FBFBFA;border-left:3px solid var(--ac);
+ border-radius:0 6px 6px 0;padding:6px 11px}
+.syn .d b{color:var(--deep);font-weight:800}
+.syn .k{font-size:7.4pt;font-weight:800;color:var(--faint);letter-spacing:.04em;margin:6px 0 2px}
+
+.syn .aline{height:7.6mm}
+.sline .aline{height:7.7mm}
 `;
