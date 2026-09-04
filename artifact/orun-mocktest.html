@@ -6,6 +6,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js"></script>
 <style>
   /* ORUN ENGLISH — v2 editorial system */
   :root {
@@ -747,10 +748,38 @@
   function readyScopeItems() { return scopeItems.filter(i => i.status === "ready"); }
 
   // ---------- PDF 텍스트 추출 (pdf.js) ----------
+  // 아티팩트 샌드박스는 실행 중 CDN 재요청과 blob 워커를 막는다. pdf.worker.min.js를
+  // 미리 <script>로 읽어 두면 pdf.js가 그 핸들러를 메인 스레드에서 그대로 쓰므로
+  // 워커를 새로 만들 필요가 없다. 준비되지 않았을 때만 workerSrc로 되돌아간다.
+  function pdfWorkerReady() {
+    try { return !!(globalThis.pdfjsWorker && globalThis.pdfjsWorker.WorkerMessageHandler); }
+    catch (e) { return false; }
+  }
+  function withTimeout(promise, ms, msg) {
+    let timer;
+    const guard = new Promise((_, reject) => { timer = setTimeout(() => reject(new Error(msg)), ms); });
+    return Promise.race([promise, guard]).finally(() => clearTimeout(timer));
+  }
   async function extractPdfText(buf) {
-    if (typeof pdfjsLib === "undefined") throw new Error("PDF 처리 라이브러리를 불러오지 못했습니다. 인터넷 연결을 확인해 주세요.");
-    pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
-    const doc = await pdfjsLib.getDocument({ data: new Uint8Array(buf) }).promise;
+    if (typeof pdfjsLib === "undefined") throw new Error("PDF 처리 라이브러리를 불러오지 못했습니다. 페이지를 새로 고친 뒤 다시 시도해 주세요.");
+    if (!pdfWorkerReady()) {
+      pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+    }
+    let doc;
+    try {
+      doc = await withTimeout(
+        pdfjsLib.getDocument({ data: new Uint8Array(buf) }).promise, 90000,
+        "PDF를 여는 데 시간이 너무 오래 걸립니다. 페이지를 새로 고친 뒤 다시 올려주세요."
+      );
+    } catch (e) {
+      const raw = (e && e.message) || "";
+      if (/fake worker|Cannot load script|Worker was destroyed/i.test(raw)) {
+        throw new Error("PDF 처리 모듈을 불러오지 못했습니다. 페이지를 새로 고친 뒤 다시 올려주세요.");
+      }
+      if (/password/i.test(raw)) throw new Error("암호가 걸린 PDF입니다. 암호를 푼 파일로 올려주세요.");
+      if (/Invalid PDF|structure/i.test(raw)) throw new Error("PDF 파일이 손상되었거나 형식이 올바르지 않습니다.");
+      throw e;
+    }
     let out = "";
     for (let p = 1; p <= doc.numPages; p++) {
       const page = await doc.getPage(p);
