@@ -1,4 +1,7 @@
-/* Unit 7 삽화 — 레슨 아이콘 · 배너 장면 · Knowledge Bank 비네트 */
+/* Unit 07 삽화 — 만화 + 인포그래픽
+   장면 viewBox 640×280 · 비네트 240×150 · 아이콘 64×64 */
+const K = require("../kit.js");
+const { person, bubble, thought, panel, arrow, step, callout, stat, tag, label, ground, bar, prop } = K;
 
 const icons = {
  coach:(c)=>`<svg viewBox="0 0 64 64" fill="none">
@@ -35,47 +38,64 @@ const icons = {
 };
 
 const scenes = {
- coach:(c,t,d)=>`<svg viewBox="0 0 640 230" fill="none">
-  <g><text x="160" y="30" font-size="12" font-weight="800" fill="${d}" text-anchor="middle">TELLING</text>
-   <circle cx="88" cy="86" r="22" fill="${c}"/>
-   <g><rect x="118" y="48" width="64" height="16" rx="7" fill="${c}" opacity=".85"/></g><g><rect x="118" y="72" width="86" height="16" rx="7" fill="${c}" opacity=".7"/></g><g><rect x="118" y="96" width="52" height="16" rx="7" fill="${c}" opacity=".55"/></g><g><rect x="118" y="120" width="72" height="16" rx="7" fill="${c}" opacity=".4"/></g>
-   <circle cx="232" cy="98" r="18" fill="${c}" opacity=".4"/>
-   <path d="M206 172c0-16 12-26 26-26s26 10 26 26z" fill="${c}" opacity=".28"/>
-   <text x="160" y="204" font-size="11" fill="${d}" opacity=".72" text-anchor="middle">the judgement stays outside</text></g>
-  <path d="M320 40v150" stroke="${c}" stroke-width="2.4" stroke-dasharray="7 7" opacity=".45"/>
-  <g><text x="480" y="30" font-size="12" font-weight="800" fill="${d}" text-anchor="middle">WAITING</text>
-   <circle cx="408" cy="86" r="22" fill="${c}" opacity=".35"/>
-   <circle cx="552" cy="98" r="18" fill="${c}"/>
-   <path d="M526 172c0-16 12-26 26-26s26 10 26 26z" fill="${c}" opacity=".8"/>
-   <circle cx="552" cy="60" r="16" fill="none" stroke="${c}" stroke-width="3" stroke-dasharray="5 5"/>
-   <path d="M548 56c0-3 2-5 4-5s4 2 4 5-4 3-4 6" stroke="${c}" stroke-width="2.6" fill="none" stroke-linecap="round"/>
-   <text x="480" y="204" font-size="11" fill="${d}" opacity=".72" text-anchor="middle">the judgement grows inside</text></g></svg>`,
- esports:(c,t,d)=>`<svg viewBox="0 0 640 230" fill="none">
-  <rect x="238" y="60" width="164" height="96" rx="12" fill="${c}"/>
-  <text x="320" y="104" font-size="13" font-weight="800" fill="#fff" text-anchor="middle">ONE MATCH</text>
-  <text x="320" y="126" font-size="11" fill="#fff" opacity=".8" text-anchor="middle">two teams, one stage</text>
-  <rect x="48" y="44" width="30" height="20" rx="4" fill="${c}" opacity=".8"/><rect x="94" y="44" width="30" height="20" rx="4" fill="${c}" opacity=".65"/><rect x="140" y="44" width="30" height="20" rx="4" fill="${c}" opacity=".5"/><rect x="186" y="44" width="30" height="20" rx="4" fill="${c}" opacity=".38"/><rect x="48" y="86" width="30" height="20" rx="4" fill="${c}" opacity=".7"/><rect x="94" y="86" width="30" height="20" rx="4" fill="${c}" opacity=".55"/><rect x="140" y="86" width="30" height="20" rx="4" fill="${c}" opacity=".42"/><rect x="186" y="86" width="30" height="20" rx="4" fill="${c}" opacity=".3"/><rect x="48" y="128" width="30" height="20" rx="4" fill="${c}" opacity=".55"/><rect x="94" y="128" width="30" height="20" rx="4" fill="${c}" opacity=".42"/><rect x="140" y="128" width="30" height="20" rx="4" fill="${c}" opacity=".32"/><rect x="186" y="128" width="30" height="20" rx="4" fill="${c}" opacity=".22"/><rect x="426" y="44" width="30" height="20" rx="4" fill="${c}" opacity=".8"/><rect x="472" y="44" width="30" height="20" rx="4" fill="${c}" opacity=".65"/><rect x="518" y="44" width="30" height="20" rx="4" fill="${c}" opacity=".5"/><rect x="564" y="44" width="30" height="20" rx="4" fill="${c}" opacity=".38"/><rect x="426" y="86" width="30" height="20" rx="4" fill="${c}" opacity=".7"/><rect x="472" y="86" width="30" height="20" rx="4" fill="${c}" opacity=".55"/><rect x="518" y="86" width="30" height="20" rx="4" fill="${c}" opacity=".42"/><rect x="564" y="86" width="30" height="20" rx="4" fill="${c}" opacity=".3"/><rect x="426" y="128" width="30" height="20" rx="4" fill="${c}" opacity=".55"/><rect x="472" y="128" width="30" height="20" rx="4" fill="${c}" opacity=".42"/><rect x="518" y="128" width="30" height="20" rx="4" fill="${c}" opacity=".32"/><rect x="564" y="128" width="30" height="20" rx="4" fill="${c}" opacity=".22"/>
-  <text x="320" y="212" font-size="12" font-weight="700" fill="${c}" text-anchor="middle">the ring of watchers, with the room removed</text></svg>`,
- synth:(c,t,d)=>`<svg viewBox="0 0 640 230" fill="none">
-  <rect x="46" y="46" width="548" height="130" rx="12" fill="${t}" stroke="${c}" stroke-width="3"/>
-  <path d="M320 46v130" stroke="${c}" stroke-width="3" stroke-dasharray="9 8"/>
-  <text x="182" y="34" font-size="12" font-weight="800" fill="${d}" text-anchor="middle">FILMED</text>
-  <text x="458" y="34" font-size="12" font-weight="800" fill="${d}" text-anchor="middle">FILLED IN</text>
-  <g><circle cx="96" cy="88" r="10" fill="${c}"/><path d="M76 142c0-13 9-21 20-21s20 8 20 21z" fill="${c}"/></g><g><circle cx="138" cy="88" r="10" fill="${c}"/><path d="M118 142c0-13 9-21 20-21s20 8 20 21z" fill="${c}"/></g><g><circle cx="180" cy="88" r="10" fill="${c}"/><path d="M160 142c0-13 9-21 20-21s20 8 20 21z" fill="${c}"/></g><g><circle cx="222" cy="88" r="10" fill="${c}"/><path d="M202 142c0-13 9-21 20-21s20 8 20 21z" fill="${c}"/></g><g><circle cx="264" cy="88" r="10" fill="${c}"/><path d="M244 142c0-13 9-21 20-21s20 8 20 21z" fill="${c}"/></g>
-  <g opacity=".42"><circle cx="356" cy="88" r="10" fill="none" stroke="${c}" stroke-width="2.6" stroke-dasharray="4 4"/><path d="M336 142c0-13 9-21 20-21s20 8 20 21z" fill="none" stroke="${c}" stroke-width="2.6" stroke-dasharray="4 4"/></g><g opacity=".42"><circle cx="394" cy="88" r="10" fill="none" stroke="${c}" stroke-width="2.6" stroke-dasharray="4 4"/><path d="M374 142c0-13 9-21 20-21s20 8 20 21z" fill="none" stroke="${c}" stroke-width="2.6" stroke-dasharray="4 4"/></g><g opacity=".42"><circle cx="432" cy="88" r="10" fill="none" stroke="${c}" stroke-width="2.6" stroke-dasharray="4 4"/><path d="M412 142c0-13 9-21 20-21s20 8 20 21z" fill="none" stroke="${c}" stroke-width="2.6" stroke-dasharray="4 4"/></g><g opacity=".42"><circle cx="470" cy="88" r="10" fill="none" stroke="${c}" stroke-width="2.6" stroke-dasharray="4 4"/><path d="M450 142c0-13 9-21 20-21s20 8 20 21z" fill="none" stroke="${c}" stroke-width="2.6" stroke-dasharray="4 4"/></g><g opacity=".42"><circle cx="508" cy="88" r="10" fill="none" stroke="${c}" stroke-width="2.6" stroke-dasharray="4 4"/><path d="M488 142c0-13 9-21 20-21s20 8 20 21z" fill="none" stroke="${c}" stroke-width="2.6" stroke-dasharray="4 4"/></g><g opacity=".42"><circle cx="546" cy="88" r="10" fill="none" stroke="${c}" stroke-width="2.6" stroke-dasharray="4 4"/><path d="M526 142c0-13 9-21 20-21s20 8 20 21z" fill="none" stroke="${c}" stroke-width="2.6" stroke-dasharray="4 4"/></g>
-  <text x="320" y="206" font-size="12" font-weight="700" fill="${c}" text-anchor="middle">the decision moved from the set to a later room</text></svg>`,
- longtail:(c,t,d)=>`<svg viewBox="0 0 640 230" fill="none">
-  <path d="M56 182V38M56 182h526" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/>
-  <rect x="56" y="44" width="16" height="134" rx="3" fill="${c}" opacity="1"/><rect x="78" y="92" width="16" height="86" rx="3" fill="${c}" opacity=".8"/><rect x="100" y="120" width="16" height="58" rx="3" fill="${c}" opacity=".68"/><rect x="122" y="136" width="16" height="42" rx="3" fill="${c}" opacity=".58"/><rect x="144" y="146" width="16" height="32" rx="3" fill="${c}" opacity=".5"/><rect x="166" y="152" width="16" height="26" rx="3" fill="${c}" opacity=".45"/><rect x="188" y="156" width="16" height="22" rx="3" fill="${c}" opacity=".4"/><rect x="210" y="159" width="16" height="19" rx="3" fill="${c}" opacity=".36"/><rect x="232" y="161" width="16" height="17" rx="3" fill="${c}" opacity=".33"/><rect x="254" y="163" width="16" height="15" rx="3" fill="${c}" opacity=".3"/><rect x="276" y="164" width="16" height="14" rx="3" fill="${c}" opacity=".28"/><rect x="298" y="165" width="16" height="13" rx="3" fill="${c}" opacity=".26"/><rect x="320" y="166" width="16" height="12" rx="3" fill="${c}" opacity=".25"/><rect x="342" y="167" width="16" height="11" rx="3" fill="${c}" opacity=".24"/><rect x="364" y="168" width="16" height="10" rx="3" fill="${c}" opacity=".23"/><rect x="386" y="168" width="16" height="10" rx="3" fill="${c}" opacity=".22"/><rect x="408" y="169" width="16" height="9" rx="3" fill="${c}" opacity=".21"/><rect x="430" y="169" width="16" height="9" rx="3" fill="${c}" opacity=".2"/><rect x="452" y="170" width="16" height="8" rx="3" fill="${c}" opacity=".2"/><rect x="474" y="170" width="16" height="8" rx="3" fill="${c}" opacity=".19"/><rect x="496" y="170" width="16" height="8" rx="3" fill="${c}" opacity=".19"/><rect x="518" y="171" width="16" height="7" rx="3" fill="${c}" opacity=".18"/><rect x="540" y="171" width="16" height="7" rx="3" fill="${c}" opacity=".18"/><rect x="562" y="171" width="16" height="7" rx="3" fill="${c}" opacity=".17"/>
-  <path d="M96 44h150" stroke="${c}" stroke-width="2.6" stroke-dasharray="6 5" opacity=".5"/>
-  <text x="150" y="34" font-size="11.5" font-weight="800" fill="${d}">the head kept most of the listening</text>
-  <text x="430" y="214" font-size="11.5" font-weight="800" fill="${d}" text-anchor="middle">the tail is longer than anyone imagined</text></svg>`,
- boxoffice:(c,t,d)=>`<svg viewBox="0 0 640 230" fill="none">
-  <path d="M56 178h528" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/>
-  <path d="M56 118h528" stroke="${c}" stroke-width="2.4" stroke-dasharray="7 6" opacity=".55"/>
-  <text x="588" y="112" font-size="10.5" font-weight="800" fill="${d}" text-anchor="end" opacity=".7">break even</text>
-  <rect x="68" y="118" width="30" height="24" rx="3" fill="${c}" opacity=".3"/><rect x="112" y="118" width="30" height="30" rx="3" fill="${c}" opacity=".3"/><rect x="156" y="118" width="30" height="18" rx="3" fill="${c}" opacity=".3"/><rect x="200" y="118" width="30" height="34" rx="3" fill="${c}" opacity=".3"/><rect x="244" y="50" width="30" height="128" rx="3" fill="${c}" opacity="1"/><rect x="288" y="118" width="30" height="22" rx="3" fill="${c}" opacity=".3"/><rect x="332" y="118" width="30" height="28" rx="3" fill="${c}" opacity=".3"/><rect x="376" y="118" width="30" height="16" rx="3" fill="${c}" opacity=".3"/><rect x="420" y="86" width="30" height="92" rx="3" fill="${c}" opacity=".85"/><rect x="464" y="118" width="30" height="26" rx="3" fill="${c}" opacity=".3"/><rect x="508" y="118" width="30" height="20" rx="3" fill="${c}" opacity=".3"/><rect x="552" y="118" width="30" height="32" rx="3" fill="${c}" opacity=".3"/>
-  <text x="320" y="212" font-size="12" font-weight="700" fill="${c}" text-anchor="middle">a few pay for all the rest</text></svg>`,
+ /* 31 — 말하는 코치와 기다리는 코치 */
+ coach:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
+  ${panel({x:20,y:20,w:274,h:196,c:d,fill:"#fff",n:1,label:"계속 알려 주는 코치"})}
+  ${person({x:84,y:204,s:.88,c,pose:"point",hair:"cap",face:"oh",brow:"down"})}
+  ${person({x:236,y:204,s:.88,c,pose:"down",hair:"short",face:"flat",flip:1})}
+  ${[[136,44],[136,68],[136,92]].map(([x,y],i)=>`<rect x="${x}" y="${y}" width="${[120,96,132][i]}" height="18" rx="7" fill="${c}" opacity="${[.85,.65,.5][i]}"/>`).join("")}
+  ${label({x:157,y:238,text:"판단이 바깥에 머문다",c:d,size:11,op:.75})}
+  ${panel({x:346,y:20,w:274,h:196,c:d,fill:"#fff",n:2,label:"기다리는 코치"})}
+  ${person({x:410,y:204,s:.88,c,pose:"down",hair:"cap",face:"smile"})}
+  ${person({x:562,y:204,s:.88,c,pose:"think",hair:"short",face:"oh",brow:"up",flip:1})}
+  ${thought({x:452,y:44,w:150,h:44,lines:["방금 뭐가 달랐지?"],c:d,size:11,side:"r"})}
+  ${label({x:483,y:238,text:"판단이 안에서 자란다",c:d,size:11,op:.75})}
+  ${label({x:320,y:270,text:"무엇을 말할지만이 아니라 언제 말할지를 고른다",c,size:12.5})}</svg>`,
+ /* 32 — 경기장 하나, 화면 수백만 */
+ esports:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
+  ${panel({x:236,y:74,w:168,h:104,c:d,fill:"#fff",label:"한 경기"})}
+  ${person({x:278,y:162,s:.6,c,pose:"hold",hair:"short",face:"flat"})}
+  ${person({x:362,y:162,s:.6,c,pose:"hold",hair:"bob",face:"flat",flip:1})}
+  ${[[24,30],[24,88],[24,146],[104,30],[104,88],[104,146],[452,30],[452,88],[452,146],[532,30],[532,88],[532,146]].map(([x,y],i)=>`<g><rect x="${x}" y="${y}" width="64" height="42" rx="6" fill="#fff" stroke="${d}" stroke-width="2.2"/><rect x="${x+5}" y="${y+5}" width="54" height="32" rx="3" fill="${c}" opacity="${.75-(i%3)*.16}"/></g>`).join("")}
+  ${arrow({x1:200,y1:126,x2:228,y2:126,c:d,w:3.6,dash:"6 5"})}
+  ${arrow({x1:440,y1:126,x2:412,y2:126,c:d,w:3.6,dash:"6 5"})}
+  ${label({x:320,y:212,text:"방 없이도 커진 구경꾼의 원",c:d,size:11.5})}
+  ${label({x:320,y:258,text:"더 쓸모 있는 질문 — 그 게임을 누가 소유하는가",c:d,size:11.5})}
+  ${label({x:320,y:276,text:"축구 리그는 발명자의 허락이 필요 없다",c,size:12})}</svg>`,
+ /* 33 — 찍힌 것과 채워 넣은 것 */
+ synth:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
+  <rect x="24" y="30" width="592" height="176" rx="14" fill="#fff" stroke="${d}" stroke-width="3.2"/>
+  <path d="M320 30v176" stroke="${d}" stroke-width="3.2" stroke-dasharray="10 8"/>
+  ${label({x:172,y:22,text:"실제로 찍은 사람",c:d,size:12})}
+  ${label({x:468,y:22,text:"채워 넣은 사람",c:d,size:12})}
+  ${[86,150,214,278].map((x,i)=>person({x,y:190,s:.62,c,pose:"down",hair:["short","bob","curly","cap"][i],face:"smile"})).join("")}
+  <g opacity=".34">${[364,420,476,532,588].map((x,i)=>person({x,y:190,s:.62,c:"#9aa0a6",pose:"down",hair:["short","long","curly","short","bob"][i],face:"flat"})).join("")}</g>
+  ${ground({x1:44,x2:600,y:192,c:d,w:3})}
+  ${bubble({x:394,y:44,w:196,h:40,lines:["동의를 받았는가?"],c:d,tail:"bl",size:12})}
+  ${label({x:320,y:238,text:"결정이 현장에서 나중의 방으로 옮겨 갔다",c:d,size:11.5})}
+  ${label({x:320,y:268,text:"자기 작업을 감추는 도구일수록 규칙이 더 중요해진다",c,size:12})}</svg>`,
+ /* 34 — 긴 꼬리와 좁은 문 */
+ longtail:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
+  <path d="M62 212V44M62 212h530" stroke="${d}" stroke-width="3.4" stroke-linecap="round"/>
+  ${Array.from({length:22},(_,i)=>{const h=[150,96,64,46,36,29,25,22,20,18,16,15,14,13,12,12,11,11,10,10,9,9][i];
+   return bar({x:74+i*24,base:212,h,w:18,c,op:(1-i*0.035).toFixed(2)})}).join("")}
+  ${person({x:96,y:44,s:.34,c,pose:"up",hair:"short",face:"glad"})}
+  ${callout({x:74,y:70,tx:180,ty:56,text:"머리가 재생의 대부분을 가져간다",c:d,anchor:"start"})}
+  ${label({x:420,y:246,text:"꼬리는 누구 상상보다 길다",c:d,size:11.5})}
+  ${bubble({x:400,y:96,w:210,h:44,lines:["올리기는 쉽고, 발견되기는 어렵다"],c:d,tail:"none",size:11.5})}
+  ${label({x:320,y:274,text:"접근과 기회는 서로 다른 것이었다",c,size:12.5})}</svg>`,
+ /* 35 — 소수가 나머지를 먹여 살린다 */
+ boxoffice:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
+  ${ground({x1:56,x2:600,y:216,c:d,w:3.4})}
+  <path d="M56 140h544" stroke="${d}" stroke-width="2.6" stroke-dasharray="8 7" opacity=".6"/>
+  ${label({x:596,y:132,text:"손익분기",c:d,size:10.5,anchor:"end",op:.75})}
+  ${[[92,24],[136,32],[180,18],[224,34],[268,150],[312,26],[356,30],[400,20],[444,110],[488,28],[532,22],[576,34]].map(([x,h],i)=>{
+   const big=h>100; return bar({x,base:big?216:216,h:big?h+62:h,w:32,c,op:big?1:.3})}).join("")}
+  ${[268,444].map(x=>`<path d="M${x-16} 140h32" stroke="${d}" stroke-width="2" opacity=".4"/>`).join("")}
+  ${person({x:268,y:216-214,s:.3,c,pose:"up",hair:"short",face:"glad"})}
+  ${label({x:320,y:248,text:"몇 편이 나머지 모두를 감당한다",c:d,size:11.5})}
+  ${bubble({x:64,y:24,w:180,h:40,lines:["아무도 모른다"],c:d,tail:"none",size:12})}
+  ${label({x:320,y:274,text:"반복은 상상력의 실패라기보다 구조에 대한 반응이다",c,size:12})}</svg>`,
 };
 
 const STRIP = {
@@ -87,25 +107,32 @@ const STRIP = {
 };
 
 const VIG = {
- "31":(c,t,d)=>`<circle cx="52" cy="60" r="24" fill="${c}"/>
-  <path d="M22 122c0-18 13-30 30-30s30 12 30 30z" fill="${c}" opacity=".3"/>
-  <circle cx="170" cy="56" r="20" fill="none" stroke="${c}" stroke-width="4" stroke-dasharray="6 6"/>
-  <path d="M164 50c0-4 3-7 6-7s6 3 6 7-6 4-6 8" stroke="${c}" stroke-width="3.4" fill="none" stroke-linecap="round"/>
-  <circle cx="171" cy="72" r="3" fill="${c}"/>
-  <path d="M96 84h44" stroke="${c}" stroke-width="4" stroke-dasharray="5 6" stroke-linecap="round"/>
-  <text x="170" y="120" font-size="11" font-weight="700" fill="${d}" text-anchor="middle" opacity=".7">room to notice</text>`,
- "32":(c,t,d)=>`<rect x="76" y="34" width="88" height="56" rx="9" fill="${c}"/>
-  <text x="120" y="68" font-size="12" font-weight="800" fill="#fff" text-anchor="middle">stage</text>
-  VIG<rect x="48" y="44" width="30" height="20" rx="4" fill="${c}" opacity=".8"/><rect x="94" y="44" width="30" height="20" rx="4" fill="${c}" opacity=".65"/><rect x="140" y="44" width="30" height="20" rx="4" fill="${c}" opacity=".5"/><rect x="186" y="44" width="30" height="20" rx="4" fill="${c}" opacity=".38"/><rect x="48" y="86" width="30" height="20" rx="4" fill="${c}" opacity=".7"/><rect x="94" y="86" width="30" height="20" rx="4" fill="${c}" opacity=".55"/><rect x="140" y="86" width="30" height="20" rx="4" fill="${c}" opacity=".42"/><rect x="186" y="86" width="30" height="20" rx="4" fill="${c}" opacity=".3"/><rect x="48" y="128" width="30" height="20" rx="4" fill="${c}" opacity=".55"/><rect x="94" y="128" width="30" height="20" rx="4" fill="${c}" opacity=".42"/><rect x="140" y="128" width="30" height="20" rx="4" fill="${c}" opacity=".32"/><rect x="186" y="128" width="30" height="20" rx="4" fill="${c}" opacity=".22"/><rect x="426" y="44" width="30" height="20" rx="4" fill="${c}" opacity=".8"/><rect x="472" y="44" width="30" height="20" rx="4" fill="${c}" opacity=".65"/><rect x="518" y="44" width="30" height="20" rx="4" fill="${c}" opacity=".5"/><rect x="564" y="44" width="30" height="20" rx="4" fill="${c}" opacity=".38"/><rect x="426" y="86" width="30" height="20" rx="4" fill="${c}" opacity=".7"/><rect x="472" y="86" width="30" height="20" rx="4" fill="${c}" opacity=".55"/><rect x="518" y="86" width="30" height="20" rx="4" fill="${c}" opacity=".42"/><rect x="564" y="86" width="30" height="20" rx="4" fill="${c}" opacity=".3"/><rect x="426" y="128" width="30" height="20" rx="4" fill="${c}" opacity=".55"/><rect x="472" y="128" width="30" height="20" rx="4" fill="${c}" opacity=".42"/><rect x="518" y="128" width="30" height="20" rx="4" fill="${c}" opacity=".32"/><rect x="564" y="128" width="30" height="20" rx="4" fill="${c}" opacity=".22"/>`,
- "33":(c,t,d)=>`<rect x="12" y="26" width="100" height="88" rx="9" fill="${t}" stroke="${c}" stroke-width="3.4"/>
-  <rect x="128" y="26" width="100" height="88" rx="9" fill="#fff" stroke="${c}" stroke-width="3.4" stroke-dasharray="7 6"/>
-  <g><circle cx="40" cy="60" r="8" fill="${c}"/><path d="M24 100c0-10 7-16 16-16s16 6 16 16z" fill="${c}"/></g><g><circle cx="72" cy="60" r="8" fill="${c}"/><path d="M56 100c0-10 7-16 16-16s16 6 16 16z" fill="${c}"/></g><g><circle cx="104" cy="60" r="8" fill="${c}"/><path d="M88 100c0-10 7-16 16-16s16 6 16 16z" fill="${c}"/></g>
-  <g opacity=".4"><circle cx="156" cy="60" r="8" fill="none" stroke="${c}" stroke-width="2.4" stroke-dasharray="3.5 3.5"/><path d="M140 100c0-10 7-16 16-16s16 6 16 16z" fill="none" stroke="${c}" stroke-width="2.4" stroke-dasharray="3.5 3.5"/></g><g opacity=".4"><circle cx="186" cy="60" r="8" fill="none" stroke="${c}" stroke-width="2.4" stroke-dasharray="3.5 3.5"/><path d="M170 100c0-10 7-16 16-16s16 6 16 16z" fill="none" stroke="${c}" stroke-width="2.4" stroke-dasharray="3.5 3.5"/></g><g opacity=".4"><circle cx="216" cy="60" r="8" fill="none" stroke="${c}" stroke-width="2.4" stroke-dasharray="3.5 3.5"/><path d="M200 100c0-10 7-16 16-16s16 6 16 16z" fill="none" stroke="${c}" stroke-width="2.4" stroke-dasharray="3.5 3.5"/></g>`,
- "34":(c,t,d)=>`<path d="M18 116V22M18 116h206" stroke="${c}" stroke-width="4" stroke-linecap="round"/>
-  <rect x="18" y="26" width="12" height="90" rx="2.5" fill="${c}" opacity="1"/><rect x="35" y="60" width="12" height="56" rx="2.5" fill="${c}" opacity=".78"/><rect x="52" y="80" width="12" height="36" rx="2.5" fill="${c}" opacity=".64"/><rect x="69" y="90" width="12" height="26" rx="2.5" fill="${c}" opacity=".54"/><rect x="86" y="96" width="12" height="20" rx="2.5" fill="${c}" opacity=".46"/><rect x="103" y="100" width="12" height="16" rx="2.5" fill="${c}" opacity=".4"/><rect x="120" y="102" width="12" height="14" rx="2.5" fill="${c}" opacity=".36"/><rect x="137" y="104" width="12" height="12" rx="2.5" fill="${c}" opacity=".32"/><rect x="154" y="105" width="12" height="11" rx="2.5" fill="${c}" opacity=".3"/><rect x="171" y="106" width="12" height="10" rx="2.5" fill="${c}" opacity=".28"/><rect x="188" y="107" width="12" height="9" rx="2.5" fill="${c}" opacity=".26"/><rect x="205" y="107" width="12" height="9" rx="2.5" fill="${c}" opacity=".25"/>`,
- "35":(c,t,d)=>`<path d="M14 116h212" stroke="${c}" stroke-width="4" stroke-linecap="round"/>
-  <path d="M14 76h212" stroke="${c}" stroke-width="2.6" stroke-dasharray="6 5" opacity=".5"/>
-  <rect x="22" y="76" width="18" height="18" rx="2.5" fill="${c}" opacity=".3"/><rect x="48" y="76" width="18" height="24" rx="2.5" fill="${c}" opacity=".3"/><rect x="74" y="76" width="18" height="14" rx="2.5" fill="${c}" opacity=".3"/><rect x="100" y="30" width="18" height="86" rx="2.5" fill="${c}" opacity="1"/><rect x="126" y="76" width="18" height="20" rx="2.5" fill="${c}" opacity=".3"/><rect x="152" y="76" width="18" height="16" rx="2.5" fill="${c}" opacity=".3"/><rect x="178" y="54" width="18" height="62" rx="2.5" fill="${c}" opacity=".8"/><rect x="204" y="76" width="18" height="22" rx="2.5" fill="${c}" opacity=".3"/>`,
+ "31":(c,t,d)=>`<svg viewBox="0 0 240 150" fill="none">
+  ${person({x:48,y:130,s:.58,c,pose:"down",hair:"cap",face:"smile"})}
+  ${person({x:192,y:130,s:.58,c,pose:"think",hair:"short",face:"oh",brow:"up",flip:1})}
+  ${thought({x:76,y:16,w:110,h:34,lines:["뭐가 달랐지?"],c:d,size:10.5,side:"r"})}
+  ${label({x:120,y:146,text:"침묵이 만드는 자리",c:d,size:10.5})}</svg>`,
+ "32":(c,t,d)=>`<svg viewBox="0 0 240 150" fill="none">
+  ${panel({x:82,y:44,w:76,h:52,c:d,fill:"#fff"})}
+  ${person({x:120,y:90,s:.36,c,pose:"down",hair:"short",face:"flat"})}
+  ${[[10,24],[10,66],[10,108],[186,24],[186,66],[186,108]].map(([x,y],i)=>`<rect x="${x}" y="${y}" width="44" height="28" rx="5" fill="${c}" opacity="${.75-(i%3)*.18}"/>`).join("")}
+  ${label({x:120,y:132,text:"규칙은 누가 바꾸나",c:d,size:10.5})}</svg>`,
+ "33":(c,t,d)=>`<svg viewBox="0 0 240 150" fill="none">
+  <path d="M120 16v112" stroke="${d}" stroke-width="3" stroke-dasharray="7 6"/>
+  ${[40,84].map((x,i)=>person({x,y:118,s:.5,c,pose:"down",hair:["short","bob"][i],face:"smile"})).join("")}
+  <g opacity=".34">${[154,198].map((x,i)=>person({x,y:118,s:.5,c:"#9aa0a6",pose:"down",hair:["curly","short"][i],face:"flat"})).join("")}</g>
+  ${ground({x1:16,x2:224,y:120,c:d,w:2.6})}
+  ${label({x:60,y:140,text:"찍힌 사람",c:d,size:10})}${label({x:178,y:140,text:"채워진 사람",c:d,size:10,op:.7})}</svg>`,
+ "34":(c,t,d)=>`<svg viewBox="0 0 240 150" fill="none">
+  <path d="M20 122V20M20 122h206" stroke="${d}" stroke-width="3.4" stroke-linecap="round"/>
+  ${Array.from({length:14},(_,i)=>{const h=[92,56,36,26,20,16,14,12,11,10,9,9,8,8][i];
+   return bar({x:32+i*14,base:122,h,w:11,c,op:(1-i*.05).toFixed(2)})}).join("")}
+  ${label({x:120,y:142,text:"긴 꼬리, 가파른 머리",c:d,size:10.5})}</svg>`,
+ "35":(c,t,d)=>`<svg viewBox="0 0 240 150" fill="none">
+  ${ground({x1:14,x2:226,y:118,c:d,w:3})}
+  <path d="M14 82h212" stroke="${d}" stroke-width="2.4" stroke-dasharray="6 5" opacity=".5"/>
+  ${[[30,16],[58,22],[86,12],[114,86],[142,18],[170,14],[198,62]].map(([x,h])=>bar({x,base:118,h,w:20,c,op:h>50?1:.3})).join("")}
+  ${label({x:120,y:140,text:"소수가 전부를 감당한다",c:d,size:10.5})}</svg>`,
 };
 
 module.exports = { icons, scenes, STRIP, VIG };

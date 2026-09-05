@@ -42,7 +42,10 @@ const S = {
  tag:(c,l)=>`<path d="M5 20l15-13h20a3 3 0 0 1 3 3v20a3 3 0 0 1-3 3H20z" fill="${l}" stroke="${c}" stroke-width="2.4" stroke-linejoin="round"/><circle cx="33" cy="17" r="3.4" fill="${c}"/><path d="M24 30h13" stroke="${c}" stroke-width="2.6" stroke-linecap="round"/>`,
  alone:(c,l)=>`<circle cx="24" cy="16" r="7" fill="${c}"/><path d="M11 41c0-8 6-13 13-13s13 5 13 13z" fill="${l}" stroke="${c}" stroke-width="2.4" stroke-linejoin="round"/><path d="M4 8l6 6M44 8l-6 6M4 30h5M39 30h5" stroke="${c}" stroke-width="2.4" stroke-linecap="round" opacity=".5"/>`,
  pair:(c,l)=>`<circle cx="16" cy="16" r="6.5" fill="${c}"/><circle cx="33" cy="16" r="6.5" fill="${l}" stroke="${c}" stroke-width="2.2"/><path d="M5 40c0-7 5-11 11-11s11 4 11 11z" fill="${c}" opacity=".85"/><path d="M22 40c0-7 5-11 11-11s11 4 11 11z" fill="${l}" stroke="${c}" stroke-width="2.2" stroke-linejoin="round"/>`,
- ruler:(c,l)=>`<rect x="4" y="17" width="40" height="14" rx="3" fill="${l}" stroke="${c}" stroke-width="2.4"/><path d="M12 17v6M20 17v9M28 17v6M36 17v9" stroke="${c}" stroke-width="2.4" stroke-linecap="round"/>`
+ ruler:(c,l)=>`<rect x="4" y="17" width="40" height="14" rx="3" fill="${l}" stroke="${c}" stroke-width="2.4"/><path d="M12 17v6M20 17v9M28 17v6M36 17v9" stroke="${c}" stroke-width="2.4" stroke-linecap="round"/>`,
+ coin:(c,l)=>`<circle cx="24" cy="24" r="17" fill="${l}" stroke="${c}" stroke-width="2.8"/><text x="24" y="31" font-size="20" font-weight="800" fill="${c}" text-anchor="middle">$</text>`,
+ gift:(c,l)=>`<rect x="6" y="18" width="36" height="24" rx="3" fill="${l}" stroke="${c}" stroke-width="2.6"/><path d="M6 26h36M24 18v24" stroke="${c}" stroke-width="2.8"/><path d="M24 18c-6-10-16-6-12 0zM24 18c6-10 16-6 12 0z" fill="${c}"/>`,
+ seed:(c,l)=>`<path d="M24 42V22" stroke="${c}" stroke-width="3.2" stroke-linecap="round"/><path d="M24 24c-9 0-13-5-13-12 8 0 13 4 13 12z" fill="${c}"/><path d="M24 28c8 0 12-4 12-10-7 0-12 3-12 10z" fill="${l}" stroke="${c}" stroke-width="2.2"/><path d="M14 42h20" stroke="${c}" stroke-width="3" stroke-linecap="round"/>`,
 };
 /* 레슨별 플로차트 5단계 픽토그램 */
 

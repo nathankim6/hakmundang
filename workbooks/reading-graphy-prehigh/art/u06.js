@@ -1,4 +1,7 @@
-/* Unit 6 삽화 — 레슨 아이콘 · 배너 장면 · Knowledge Bank 비네트 */
+/* Unit 06 삽화 — 만화 + 인포그래픽
+   장면 viewBox 640×280 · 비네트 240×150 · 아이콘 64×64 */
+const K = require("../kit.js");
+const { person, bubble, thought, panel, arrow, step, callout, stat, tag, label, ground, bar, prop } = K;
 
 const icons = {
  always:(c)=>`<svg viewBox="0 0 64 64" fill="none">
@@ -34,52 +37,74 @@ const icons = {
 };
 
 const scenes = {
- always:(c,t,d)=>`<svg viewBox="0 0 640 230" fill="none">
-  <text x="60" y="40" font-size="12" font-weight="800" fill="${d}">ONE MORNING</text>
-  <rect x="60" y="58" width="520" height="30" rx="8" fill="${c}" opacity=".16"/>
-  <g><path d="M118 52v42" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/><circle cx="118" cy="48" r="4" fill="${c}"/></g><g><path d="M166 52v42" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/><circle cx="166" cy="48" r="4" fill="${c}"/></g><g><path d="M204 52v42" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/><circle cx="204" cy="48" r="4" fill="${c}"/></g><g><path d="M272 52v42" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/><circle cx="272" cy="48" r="4" fill="${c}"/></g><g><path d="M318 52v42" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/><circle cx="318" cy="48" r="4" fill="${c}"/></g><g><path d="M352 52v42" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/><circle cx="352" cy="48" r="4" fill="${c}"/></g><g><path d="M430 52v42" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/><circle cx="430" cy="48" r="4" fill="${c}"/></g><g><path d="M466 52v42" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/><circle cx="466" cy="48" r="4" fill="${c}"/></g><g><path d="M528 52v42" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/><circle cx="528" cy="48" r="4" fill="${c}"/></g>
-  <text x="60" y="122" font-size="11" fill="${d}" opacity=".7">each mark is a ten-second message</text>
-  <rect x="60" y="146" width="520" height="30" rx="8" fill="${c}" opacity=".16"/>
-  <g><rect x="118" y="146" width="34" height="30" rx="8" fill="${c}" opacity=".45"/><path d="M118 140v42" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/></g><g><rect x="166" y="146" width="26" height="30" rx="8" fill="${c}" opacity=".45"/><path d="M166 140v42" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/></g><g><rect x="204" y="146" width="44" height="30" rx="8" fill="${c}" opacity=".45"/><path d="M204 140v42" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/></g><g><rect x="272" y="146" width="32" height="30" rx="8" fill="${c}" opacity=".45"/><path d="M272 140v42" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/></g><g><rect x="318" y="146" width="24" height="30" rx="8" fill="${c}" opacity=".45"/><path d="M318 140v42" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/></g><g><rect x="352" y="146" width="42" height="30" rx="8" fill="${c}" opacity=".45"/><path d="M352 140v42" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/></g><g><rect x="430" y="146" width="26" height="30" rx="8" fill="${c}" opacity=".45"/><path d="M430 140v42" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/></g><g><rect x="466" y="146" width="38" height="30" rx="8" fill="${c}" opacity=".45"/><path d="M466 140v42" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/></g><g><rect x="528" y="146" width="30" height="30" rx="8" fill="${c}" opacity=".45"/><path d="M528 140v42" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/></g>
-  <text x="60" y="210" font-size="11" fill="${d}" opacity=".7">the shaded tails are what stays behind</text>
-  <text x="580" y="40" font-size="12" font-weight="800" fill="${c}" text-anchor="end">attention residue</text></svg>`,
- virtual:(c,t,d)=>`<svg viewBox="0 0 640 230" fill="none">
-  <rect x="46" y="34" width="548" height="160" rx="16" fill="${t}" stroke="${c}" stroke-width="3.4" stroke-dasharray="12 9"/>
-  <text x="320" y="24" font-size="12" font-weight="800" fill="${d}" text-anchor="middle">A ROOM WHERE FAILURE COSTS NOTHING</text>
-  <g><rect x="76" y="62" width="120" height="86" rx="10" fill="#fff" stroke="${c}" stroke-width="3"/><path d="M96 118c14-22 26-24 36-6 6 11 14 9 20-2" stroke="${c}" stroke-width="3.4" fill="none" stroke-linecap="round"/><circle cx="106" cy="86" r="8" fill="${c}" opacity=".55"/><text x="136" y="176" font-size="11.5" font-weight="800" fill="${d}" text-anchor="middle">a rare operation</text></g><g><rect x="218" y="62" width="120" height="86" rx="10" fill="#fff" stroke="${c}" stroke-width="3"/><path d="M242 130V88h56v42z" stroke="${c}" stroke-width="3.2" fill="none" stroke-linejoin="round"/><path d="M242 88l28-18 28 18" stroke="${c}" stroke-width="3.2" fill="none" stroke-linejoin="round"/><text x="278" y="176" font-size="11.5" font-weight="800" fill="${d}" text-anchor="middle">a building not yet built</text></g><g><rect x="360" y="62" width="120" height="86" rx="10" fill="#fff" stroke="${c}" stroke-width="3"/><path d="M380 132h80" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/><path d="M396 132V96h20v36" stroke="${c}" stroke-width="3.2" fill="none"/><circle cx="406" cy="86" r="8" fill="${c}"/><text x="420" y="176" font-size="11.5" font-weight="800" fill="${d}" text-anchor="middle">a fear faced safely</text></g><g><rect x="446" y="62" width="120" height="86" rx="10" fill="#fff" stroke="${c}" stroke-width="3"/><path d="M466 128l16-28 14 20 12-14 14 22z" fill="${c}" opacity=".35"/><path d="M462 132h96" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/><path d="M478 92h30" stroke="${c}" stroke-width="3.2" stroke-linecap="round" opacity=".5"/><text x="506" y="176" font-size="11.5" font-weight="800" fill="${d}" text-anchor="middle">weather never seen</text></g>
-  </svg>`,
- wellbeing:(c,t,d)=>`<svg viewBox="0 0 640 230" fill="none">
-  <g><rect x="52" y="46" width="232" height="140" rx="12" fill="${t}" stroke="${c}" stroke-width="3.4"/>
-   <text x="168" y="74" font-size="13" font-weight="800" fill="${d}" text-anchor="middle">TWO HOURS</text>
-   <circle cx="120" cy="118" r="20" fill="${c}"/><circle cx="216" cy="118" r="20" fill="${c}"/>
-   <path d="M140 118h56" stroke="${c}" stroke-width="4" stroke-linecap="round"/>
-   <path d="M150 106l-8 12 8 12M186 106l8 12-8 12" stroke="${c}" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-   <text x="168" y="166" font-size="12" font-weight="800" fill="${d}" text-anchor="middle">talking with a friend</text></g>
-  <g><rect x="356" y="46" width="232" height="140" rx="12" fill="#fff" stroke="${c}" stroke-width="3.4" stroke-dasharray="8 7"/>
-   <text x="472" y="74" font-size="13" font-weight="800" fill="${d}" text-anchor="middle">TWO HOURS</text>
-   <rect x="392" y="96" width="160" height="14" rx="5" fill="${c}" opacity=".7"/><rect x="392" y="116" width="132" height="14" rx="5" fill="${c}" opacity=".45"/><rect x="392" y="136" width="160" height="14" rx="5" fill="${c}" opacity=".28"/>
-   <text x="472" y="166" font-size="12" font-weight="800" fill="${d}" text-anchor="middle">scrolling past strangers</text></g>
-  <text x="320" y="218" font-size="12" font-weight="700" fill="${c}" text-anchor="middle">the same number, a different hour</text></svg>`,
- aiwinter:(c,t,d)=>`<svg viewBox="0 0 640 230" fill="none">
-  <path d="M60 176V44M60 176h520" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/>
-  <path d="M76 150c40-70 96-84 132-30 26 40 8 82-18 96" stroke="${c}" stroke-width="4.6" fill="none" stroke-linecap="round"/>
-  <path d="M190 216" stroke="none"/>
-  <path d="M198 164c56-56 116-58 156-8 30 38 12 84-20 96" stroke="${c}" stroke-width="4.6" fill="none" stroke-linecap="round"/>
-  <path d="M340 168c60-46 128-40 176 8" stroke="${c}" stroke-width="4.6" fill="none" stroke-linecap="round"/>
-  <rect x="186" y="44" width="44" height="132" fill="${c}" opacity=".12"/><text x="208" y="38" font-size="11" font-weight="800" fill="${d}" text-anchor="middle" opacity=".7">AI winter</text><rect x="340" y="44" width="44" height="132" fill="${c}" opacity=".12"/><text x="362" y="38" font-size="11" font-weight="800" fill="${d}" text-anchor="middle" opacity=".7">AI winter</text>
-  <text x="150" y="34" font-size="11.5" font-weight="800" fill="${d}" text-anchor="middle">1956 · the name</text>
-  <text x="320" y="216" font-size="12" font-weight="700" fill="${c}" text-anchor="middle">promises, then winters, then a slower climb</text></svg>`,
- unsaid:(c,t,d)=>`<svg viewBox="0 0 640 230" fill="none">
-  <g><path d="M56 40h250a10 10 0 0 1 10 10v52a10 10 0 0 1-10 10H128l-24 20v-20H56a10 10 0 0 1-10-10V50a10 10 0 0 1 10-10z" fill="${c}"/>
-   <text x="180" y="82" font-size="15" font-weight="800" fill="#fff" text-anchor="middle">&#8220;The seats were comfortable.&#8221;</text></g>
-  <path d="M182 138v24" stroke="${c}" stroke-width="3" stroke-dasharray="5 6"/>
-  <path d="M175 156l7 8 7-8" stroke="${c}" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <g><rect x="60" y="168" width="244" height="38" rx="10" fill="#fff" stroke="${c}" stroke-width="3" stroke-dasharray="7 6"/>
-   <text x="182" y="193" font-size="13" font-weight="800" fill="${d}" text-anchor="middle">&#8220;The film was not good.&#8221;</text></g>
-  <g><rect x="356" y="52" width="236" height="128" rx="12" fill="${t}" stroke="${c}" stroke-width="3"/>
-   <text x="474" y="80" font-size="12" font-weight="800" fill="${d}" text-anchor="middle">THE SHARED RULES</text>
-   <g><circle cx="386" cy="104" r="5" fill="${c}"/><text x="400" y="109" font-size="12" font-weight="700" fill="${d}">say enough</text></g><g><circle cx="386" cy="128" r="5" fill="${c}"/><text x="400" y="133" font-size="12" font-weight="700" fill="${d}">say the true</text></g><g><circle cx="386" cy="152" r="5" fill="${c}"/><text x="400" y="157" font-size="12" font-weight="700" fill="${d}">stay relevant</text></g>
-  </g></svg>`,
+ /* 26 — 쪼개진 아침 */
+ always:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
+  ${person({x:88,y:214,s:.95,c,pose:"hold",hair:"short",face:"worry",brow:"down"})}
+  ${prop.screen(104,132,1.15,c)}
+  ${label({x:88,y:238,text:"일하는 사람",c:d,size:11})}
+  ${label({x:184,y:44,text:"어느 아침",c:d,size:12,anchor:"start"})}
+  <rect x="184" y="60" width="420" height="30" rx="9" fill="${c}" opacity=".16"/>
+  ${[224,268,304,364,408,442,506,548,586].map(x=>`<g><path d="M${x} 54v42" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/><circle cx="${x}" cy="50" r="4.5" fill="${c}"/></g>`).join("")}
+  ${label({x:184,y:114,text:"점 하나가 10초짜리 메시지",c:d,size:10.5,anchor:"start",op:.72})}
+  <rect x="184" y="140" width="420" height="30" rx="9" fill="${c}" opacity=".16"/>
+  ${[[224,34],[268,26],[304,44],[364,32],[408,24],[442,42],[506,26],[548,38],[586,30]].map(([x,w])=>`<rect x="${x}" y="140" width="${w}" height="30" rx="9" fill="${c}" opacity=".5"/><path d="M${x} 134v42" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/>`).join("")}
+  ${label({x:184,y:194,text:"꼬리가 남는 몫 — 주의 잔여물",c:d,size:10.5,anchor:"start",op:.72})}
+  ${label({x:320,y:264,text:"10초짜리 메시지가 10초를 쓰게 하는 것은 아니다",c,size:12.5})}</svg>`,
+ /* 27 — 실패해도 아무도 다치지 않는 방 */
+ virtual:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
+  <rect x="24" y="26" width="592" height="188" rx="16" fill="#fff" stroke="${d}" stroke-width="3.4" stroke-dasharray="13 10"/>
+  ${label({x:320,y:18,text:"실패해도 아무도 다치지 않는 방",c:d,size:12})}
+  ${[["드문 수술",96],["안 지어진 건물",232],["안전한 공포",368],["겪어 본 적 없는 날씨",504]].map(([txt,x],i)=>`
+   ${panel({x:x-58,y:52,w:116,h:96,c:d,fill:"#fff"})}
+   ${label({x,y:174,text:txt,c:d,size:11})}`).join("")}
+  <path d="M64 130c14-22 26-24 34-8 5 10 12 8 17-2l17 26z" fill="${c}" opacity=".4"/>
+  <circle cx="76" cy="80" r="9" fill="${c}"/>
+  <path d="M204 132V96h56v36z" stroke="${d}" stroke-width="3" fill="none" stroke-linejoin="round"/>
+  <path d="M204 96l28-18 28 18" stroke="${d}" stroke-width="3" fill="none" stroke-linejoin="round"/>
+  <path d="M340 132h56M356 132V98h24v34" stroke="${d}" stroke-width="3" fill="none"/>
+  <circle cx="368" cy="86" r="9" fill="${c}"/>
+  <path d="M472 128l18-30 16 22 13-15 15 23z" fill="${c}" opacity=".38"/>
+  <path d="M468 132h72M486 84h32" stroke="${d}" stroke-width="3" stroke-linecap="round" opacity=".6"/>
+  ${person({x:320,y:262,s:.6,c,pose:"hold",hair:"cap",face:"smile"})}
+  ${label({x:320,y:276,text:"달리 해 보기엔 대가가 너무 큰 일을 미리 겪는다",c,size:11.5})}</svg>`,
+ /* 28 — 같은 두 시간 */
+ wellbeing:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
+  ${panel({x:22,y:22,w:270,h:190,c:d,fill:"#fff",n:1,label:"친구와 이야기한 두 시간"})}
+  ${person({x:104,y:196,s:.86,c,pose:"open",hair:"bob",face:"glad",brow:"up"})}
+  ${person({x:212,y:196,s:.86,c,pose:"open",hair:"short",face:"glad",brow:"up",flip:1})}
+  ${bubble({x:98,y:48,w:120,h:34,lines:["ㅎㅎ"],c:d,tail:"bl",size:12})}
+  ${panel({x:348,y:22,w:270,h:190,c:d,fill:"#fff",n:2,label:"낯선 글을 넘긴 두 시간"})}
+  ${person({x:432,y:196,s:.86,c,pose:"hold",hair:"short",face:"flat"})}
+  ${prop.phone(448,118,1.1,c)}
+  ${[[510,60],[510,88],[510,116],[510,144]].map(([x,y],i)=>`<rect x="${x}" y="${y}" width="86" height="20" rx="6" fill="${c}" opacity="${[.7,.5,.35,.22][i]}"/>`).join("")}
+  ${prop.clock(320,84,1.3,c)}
+  ${label({x:320,y:122,text:"같은 2시간",c:d,size:11.5})}
+  ${label({x:320,y:246,text:"얼마나 오래가 아니라, 무엇 대신에",c:d,size:11.5})}
+  ${label({x:320,y:270,text:"맥락 없는 숫자는 거의 아무것도 설명하지 못한다",c,size:12.5})}</svg>`,
+ /* 29 — 쉬워 보인 일과 어려웠던 일 */
+ aiwinter:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
+  ${panel({x:22,y:24,w:270,h:186,c:d,fill:"#fff",n:1,label:"기계에게 쉬웠던 것"})}
+  ${label({x:157,y:82,text:"체스 · 논리 · 대수",c:d,size:13})}
+  <g transform="translate(157 140)">
+   <rect x="-46" y="-24" width="92" height="48" rx="4" fill="#fff" stroke="${d}" stroke-width="2.6"/>
+   ${[0,1,2,3].map(i=>[0,1].map(j=>`<rect x="${-46+i*23+(j%2)*0}" y="${-24+j*24}" width="23" height="24" fill="${(i+j)%2?c:"#fff"}" opacity=".55"/>`).join("")).join("")}</g>
+  ${panel({x:348,y:24,w:270,h:186,c:d,fill:"#fff",n:2,label:"기계에게 어려웠던 것"})}
+  ${label({x:483,y:82,text:"얼굴 알아보기 · 방 건너기",c:d,size:12})}
+  ${person({x:440,y:186,s:.72,c,pose:"point",hair:"short",face:"smile"})}
+  ${person({x:534,y:186,s:.72,c,pose:"down",hair:"bob",face:"smile",flip:1})}
+  ${arrow({x1:298,y1:118,x2:342,y2:118,c:d,w:5})}
+  ${label({x:320,y:244,text:"아이가 알아채지도 못하고 하는 일이 가장 어려웠다",c:d,size:11.5})}
+  ${label({x:320,y:270,text:"우리는 무엇이 어려운지 판단하는 데 서투르다",c,size:12.5})}</svg>`,
+ /* 30 — 말하지 않은 말 */
+ unsaid:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
+  ${person({x:92,y:250,s:.95,c,pose:"open",hair:"short",face:"flat"})}
+  ${bubble({x:140,y:36,w:250,h:46,lines:["“좌석이 편하더라.”"],c:d,fill:c,tail:"bl",size:14})}
+  ${arrow({x1:262,y1:112,x2:262,y2:150,c:d,w:3.4,dash:"6 6"})}
+  ${bubble({x:140,y:158,w:250,h:44,lines:["“영화는 별로였어.”"],c:d,fill:"#fff",tail:"none",size:13.5})}
+  ${label({x:265,y:224,text:"말하지 않은 쪽이 뜻을 나른다",c:d,size:11.5})}
+  ${panel({x:420,y:36,w:196,h:166,c:d,fill:"#fff",label:"함께 쓰는 규칙"})}
+  ${[["충분히 말하라",84],["참인 것을 말하라",118],["관련된 것을 말하라",152]].map(([txt,y])=>`<circle cx="446" cy="${y}" r="7" fill="${c}"/>${label({x:462,y:y+5,text:txt,c:d,size:12,anchor:"start"})}`).join("")}
+  ${label({x:320,y:272,text:"의미는 한 번도 문장 안에만 살았던 적이 없다",c,size:12.5})}</svg>`,
 };
 
 const STRIP = {
@@ -91,34 +116,38 @@ const STRIP = {
 };
 
 const VIG = {
- "26":(c,t,d)=>`<rect x="10" y="46" width="212" height="26" rx="8" fill="${c}" opacity=".16"/><g><rect x="44" y="46" width="20" height="26" rx="8" fill="${c}" opacity=".45"/><path d="M44 40v38" stroke="${c}" stroke-width="3.2" stroke-linecap="round"/><circle cx="44" cy="36" r="3.6" fill="${c}"/></g><g><rect x="78" y="46" width="16" height="26" rx="8" fill="${c}" opacity=".45"/><path d="M78 40v38" stroke="${c}" stroke-width="3.2" stroke-linecap="round"/><circle cx="78" cy="36" r="3.6" fill="${c}"/></g><g><rect x="112" y="46" width="26" height="26" rx="8" fill="${c}" opacity=".45"/><path d="M112 40v38" stroke="${c}" stroke-width="3.2" stroke-linecap="round"/><circle cx="112" cy="36" r="3.6" fill="${c}"/></g><g><rect x="158" y="46" width="18" height="26" rx="8" fill="${c}" opacity=".45"/><path d="M158 40v38" stroke="${c}" stroke-width="3.2" stroke-linecap="round"/><circle cx="158" cy="36" r="3.6" fill="${c}"/></g><g><rect x="190" y="46" width="22" height="26" rx="8" fill="${c}" opacity=".45"/><path d="M190 40v38" stroke="${c}" stroke-width="3.2" stroke-linecap="round"/><circle cx="190" cy="36" r="3.6" fill="${c}"/></g><text x="116" y="104" font-size="11" font-weight="700" fill="${d}" text-anchor="middle" opacity=".72">the tail is the cost</text>`,
- "27":(c,t,d)=>`<rect x="16" y="30" width="98" height="76" rx="10" fill="${t}" stroke="${c}" stroke-width="4"/>
-  <circle cx="46" cy="68" r="11" fill="${c}"/><circle cx="86" cy="68" r="11" fill="${c}"/>
-  <path d="M40 42c8-8 32-8 40 0" stroke="${c}" stroke-width="3.4" fill="none" stroke-linecap="round" opacity=".5"/>
-  <path d="M128 68h32" stroke="${c}" stroke-width="4" stroke-linecap="round"/>
-  <path d="M152 60l10 8-10 8" stroke="${c}" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <rect x="172" y="34" width="56" height="68" rx="9" fill="#fff" stroke="${c}" stroke-width="3.4" stroke-dasharray="6 6"/>
-  <path d="M186 92c8-22 18-26 28-8" stroke="${c}" stroke-width="3.4" fill="none" stroke-linecap="round"/>
-  <circle cx="200" cy="56" r="7" fill="${c}" opacity=".5"/>`,
- "28":(c,t,d)=>`<rect x="14" y="26" width="96" height="88" rx="10" fill="${t}" stroke="${c}" stroke-width="3.4"/>
-  <circle cx="44" cy="70" r="13" fill="${c}"/><circle cx="80" cy="70" r="13" fill="${c}"/>
-  <path d="M57 70h10" stroke="${c}" stroke-width="4" stroke-linecap="round"/>
-  <rect x="130" y="26" width="96" height="88" rx="10" fill="#fff" stroke="${c}" stroke-width="3.4" stroke-dasharray="7 6"/>
-  <rect x="148" y="44" width="60" height="12" rx="4" fill="${c}" opacity=".7"/><rect x="148" y="62" width="48" height="12" rx="4" fill="${c}" opacity=".45"/><rect x="148" y="80" width="60" height="12" rx="4" fill="${c}" opacity=".28"/><rect x="148" y="98" width="36" height="12" rx="4" fill="${c}" opacity=".18"/>`,
- "29":(c,t,d)=>`<path d="M14 112V22M14 112h212" stroke="${c}" stroke-width="4" stroke-linecap="round"/>
+ "26":(c,t,d)=>`<svg viewBox="0 0 240 150" fill="none">
+  <rect x="14" y="40" width="212" height="24" rx="7" fill="${c}" opacity=".16"/>
+  ${[[46,20],[86,16],[122,26],[168,18],[198,22]].map(([x,w])=>`<rect x="${x}" y="40" width="${w}" height="24" rx="7" fill="${c}" opacity=".5"/><path d="M${x} 34v36" stroke="${c}" stroke-width="3" stroke-linecap="round"/>`).join("")}
+  ${label({x:120,y:92,text:"꼬리가 남는 몫",c:d,size:11})}
+  ${person({x:120,y:146,s:.44,c,pose:"think",hair:"short",face:"worry",brow:"down"})}</svg>`,
+ "27":(c,t,d)=>`<svg viewBox="0 0 240 150" fill="none">
+  ${panel({x:14,y:22,w:96,h:80,c:d,fill:"#fff"})}
+  <path d="M30 88c12-20 24-22 32-8l20 22z" fill="${c}" opacity=".4"/>
+  <circle cx="42" cy="50" r="9" fill="${c}"/>
+  ${arrow({x1:124,y1:62,x2:152,y2:62,c:d,w:4})}
+  ${person({x:196,y:132,s:.62,c,pose:"hold",hair:"cap",face:"smile"})}
+  ${label({x:120,y:142,text:"안전하게 실패하는 방",c:d,size:10.5})}</svg>`,
+ "28":(c,t,d)=>`<svg viewBox="0 0 240 150" fill="none">
+  ${person({x:44,y:126,s:.6,c,pose:"open",hair:"bob",face:"glad"})}
+  ${person({x:104,y:126,s:.6,c,pose:"open",hair:"short",face:"glad",flip:1})}
+  <path d="M150 20v112" stroke="${d}" stroke-width="3" stroke-dasharray="7 6" opacity=".55"/>
+  ${person({x:196,y:126,s:.6,c,pose:"hold",hair:"short",face:"flat"})}
+  ${prop.phone(206,84,.75,c)}
+  ${label({x:120,y:146,text:"같은 2시간, 다른 일",c:d,size:10.5})}</svg>`,
+ "29":(c,t,d)=>`<svg viewBox="0 0 240 150" fill="none">
+  <path d="M14 112V22M14 112h212" stroke="${d}" stroke-width="3.4" stroke-linecap="round"/>
   <path d="M26 96c22-46 54-56 76-18 16 28 4 52-12 62" stroke="${c}" stroke-width="4.4" fill="none" stroke-linecap="round"/>
   <path d="M104 104c32-38 68-38 92-6" stroke="${c}" stroke-width="4.4" fill="none" stroke-linecap="round"/>
   <rect x="84" y="22" width="22" height="90" fill="${c}" opacity=".12"/>
   <rect x="186" y="22" width="22" height="90" fill="${c}" opacity=".12"/>
-  <text x="95" y="18" font-size="9.5" font-weight="800" fill="${d}" text-anchor="middle" opacity=".7">winter</text>
-  <text x="197" y="18" font-size="9.5" font-weight="800" fill="${d}" text-anchor="middle" opacity=".7">winter</text>`,
- "30":(c,t,d)=>`<path d="M16 30h150a9 9 0 0 1 9 9v34a9 9 0 0 1-9 9H68l-18 15V82H16a9 9 0 0 1-9-9V39a9 9 0 0 1 9-9z" fill="${c}"/>
-  <path d="M30 48h96M30 62h58" stroke="#fff" stroke-width="4.4" stroke-linecap="round" opacity=".9"/>
-  <path d="M96 104v14" stroke="${c}" stroke-width="3.4" stroke-dasharray="5 5"/>
-  <rect x="24" y="120" width="150" height="14" rx="6" fill="#fff" stroke="${c}" stroke-width="3" stroke-dasharray="6 5"/>
-  <circle cx="206" cy="56" r="5" fill="${c}" opacity=".6"/>
-  <circle cx="206" cy="76" r="5" fill="${c}" opacity=".4"/>
-  <circle cx="206" cy="96" r="5" fill="${c}" opacity=".25"/>`,
+  ${label({x:95,y:18,text:"겨울",c:d,size:9.5,op:.7})}${label({x:197,y:18,text:"겨울",c:d,size:9.5,op:.7})}
+  ${label({x:120,y:140,text:"약속과 겨울, 그리고 느린 오르막",c:d,size:10})}</svg>`,
+ "30":(c,t,d)=>`<svg viewBox="0 0 240 150" fill="none">
+  ${bubble({x:14,y:18,w:150,h:36,lines:["“좌석이 편하더라”"],c:d,fill:c,tail:"bl",size:11})}
+  ${arrow({x1:76,y1:76,x2:76,y2:96,c:d,w:3,dash:"5 5"})}
+  ${bubble({x:14,y:102,w:150,h:32,lines:["“별로였어”"],c:d,fill:"#fff",tail:"none",size:11})}
+  ${person({x:206,y:140,s:.56,c,pose:"think",hair:"bob",face:"smile"})}</svg>`,
 };
 
 module.exports = { icons, scenes, STRIP, VIG };

@@ -1,4 +1,7 @@
-/* Unit 3 삽화 — 레슨 아이콘 · 배너 장면 · Knowledge Bank 비네트 */
+/* Unit 03 삽화 — 만화 + 인포그래픽
+   장면 viewBox 640×280 · 비네트 240×150 · 아이콘 64×64 */
+const K = require("../kit.js");
+const { person, bubble, thought, panel, arrow, step, callout, stat, tag, label, ground, bar, prop } = K;
 
 const icons = {
  model:(c)=>`<svg viewBox="0 0 64 64" fill="none">
@@ -33,78 +36,70 @@ const icons = {
 
 const scenes = {
  /* 11 — 노선도와 실제 길 */
- model:(c,t,d)=>`<svg viewBox="0 0 640 230" fill="none">
-  <g><text x="150" y="34" font-size="12" font-weight="800" fill="${d}" text-anchor="middle">THE MAP</text>
-   <path d="M50 130h60l30-40h80" stroke="${c}" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-   <path d="M50 168h100l30-38h40" stroke="${c}" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".35"/>
-   <circle cx="50" cy="130" r="8" fill="#fff" stroke="${c}" stroke-width="4"/><circle cx="110" cy="130" r="8" fill="#fff" stroke="${c}" stroke-width="4"/><circle cx="140" cy="90" r="8" fill="#fff" stroke="${c}" stroke-width="4"/><circle cx="220" cy="90" r="8" fill="#fff" stroke="${c}" stroke-width="4"/><circle cx="150" cy="168" r="8" fill="#fff" stroke="${c}" stroke-width="4"/><circle cx="220" cy="130" r="8" fill="#fff" stroke="${c}" stroke-width="4"/>
-   <text x="150" y="200" font-size="11" fill="${d}" opacity=".7" text-anchor="middle">even spaces · straight lines</text></g>
-  <path d="M320 40v150" stroke="${c}" stroke-width="2.4" stroke-dasharray="7 7" opacity=".45"/>
-  <g><text x="482" y="34" font-size="12" font-weight="800" fill="${d}" text-anchor="middle">THE GROUND</text>
-   <path d="M382 160c30-8 22-44 58-48s44 24 78 16" stroke="${c}" stroke-width="6" fill="none" stroke-linecap="round"/>
-   <path d="M382 186c48-6 40-30 86-34s52 18 84 10" stroke="${c}" stroke-width="6" fill="none" stroke-linecap="round" opacity=".35"/>
-   <circle cx="382" cy="160" r="7" fill="#fff" stroke="${c}" stroke-width="3.6"/><circle cx="414" cy="152" r="7" fill="#fff" stroke="${c}" stroke-width="3.6"/><circle cx="440" cy="112" r="7" fill="#fff" stroke="${c}" stroke-width="3.6"/><circle cx="498" cy="116" r="7" fill="#fff" stroke="${c}" stroke-width="3.6"/><circle cx="548" cy="128" r="7" fill="#fff" stroke="${c}" stroke-width="3.6"/>
-   <path d="M400 70h30M448 62h44M508 74h26" stroke="${c}" stroke-width="3" stroke-linecap="round" opacity=".28"/>
-   <text x="482" y="212" font-size="11" fill="${d}" opacity=".7" text-anchor="middle">curves · uneven distances</text></g>
-  <rect x="238" y="96" width="164" height="38" rx="10" fill="${t}" stroke="${c}" stroke-width="2.6"/>
-  <text x="320" y="120" font-size="12.5" font-weight="800" fill="${d}" text-anchor="middle">what was left out</text></svg>`,
- /* 12 — 한 줄에서 갈라지는 뜻 */
- joke:(c,t,d)=>`<svg viewBox="0 0 640 230" fill="none">
-  <path d="M40 116h230" stroke="${c}" stroke-width="7" stroke-linecap="round"/>
-  <circle cx="270" cy="116" r="13" fill="${c}"/>
-  <text x="270" y="150" font-size="11" font-weight="800" fill="${d}" text-anchor="middle">the last word</text>
-  <path d="M283 110c60-38 130-42 190-42" stroke="${c}" stroke-width="6" fill="none" stroke-linecap="round" opacity=".3" stroke-dasharray="10 8"/>
-  <path d="M283 124c60 34 130 40 190 40" stroke="${c}" stroke-width="6" fill="none" stroke-linecap="round"/>
-  <g><rect x="478" y="50" width="122" height="38" rx="9" fill="#fff" stroke="${c}" stroke-width="2.6" stroke-dasharray="6 5" opacity=".65"/>
-   <text x="539" y="74" font-size="12" font-weight="700" fill="${d}" opacity=".6" text-anchor="middle">expected</text></g>
-  <g><rect x="478" y="144" width="122" height="40" rx="9" fill="${c}"/>
-   <text x="539" y="169" font-size="12.5" font-weight="800" fill="#fff" text-anchor="middle">what arrives</text></g>
-  <g transform="translate(96 44)"><circle cx="0" cy="0" r="26" fill="${t}" stroke="${c}" stroke-width="3"/>
-   <path d="M-10-6c0-3 2-4 4-4M4-6c0-3 2-4 4-4" stroke="${c}" stroke-width="3" stroke-linecap="round"/>
-   <path d="M-11 5c4 6 8 8 11 8s7-2 11-8" stroke="${c}" stroke-width="3.2" fill="none" stroke-linecap="round"/></g>
-  <text x="320" y="216" font-size="12" font-weight="700" fill="${c}" text-anchor="middle">the mind repairs the gap — that repair is the laugh</text></svg>`,
+ model:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
+  ${panel({x:20,y:22,w:272,h:184,c:d,fill:"#fff",n:1,label:"노선도 — 곧은 선"})}
+  <path d="M48 148h58l34-42h92" stroke="${c}" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M48 178h100l30-34h44" stroke="${c}" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".35"/>
+  ${[[48,148],[106,148],[140,106],[232,106],[148,178],[232,144]].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="8" fill="#fff" stroke="${d}" stroke-width="3.4"/>`).join("")}
+  ${panel({x:348,y:22,w:272,h:184,c:d,fill:"#fff",n:2,label:"실제 땅 — 굽은 길"})}
+  <path d="M376 172c34-10 24-48 64-52s48 26 86 18" stroke="${c}" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M376 192c52-8 44-32 92-36s56 20 90 12" stroke="${c}" stroke-width="8" fill="none" stroke-linecap="round" opacity=".35"/>
+  ${[[376,172],[412,162],[440,120],[500,124],[526,138]].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="7" fill="#fff" stroke="${d}" stroke-width="3"/>`).join("")}
+  ${person({x:320,y:262,s:.72,c,pose:"think",hair:"short",face:"smile"})}
+  ${tag({x:320,y:120,text:"버린 것",c})}
+  ${label({x:320,y:274,text:"지도는 도시가 아니다 — 무엇을 뺐는지 먼저 묻는다",c,size:12})}</svg>`,
+ /* 12 — 농담이 갈라지는 지점 */
+ joke:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
+  ${person({x:88,y:238,s:.95,c,pose:"open",hair:"short",face:"glad",brow:"up"})}
+  ${bubble({x:126,y:104,w:186,h:44,lines:["… 좌석이 편하더라."],c:d,tail:"bl",size:12.5})}
+  ${person({x:556,y:238,s:.95,c,pose:"open",hair:"bob",face:"glad",brow:"up",flip:1})}
+  <path d="M330 122c58-42 128-48 196-48" stroke="${d}" stroke-width="4" fill="none" stroke-dasharray="10 8" opacity=".4" stroke-linecap="round"/>
+  <path d="M330 134c58 40 128 46 196 46" stroke="${c}" stroke-width="5" fill="none" stroke-linecap="round"/>
+  ${bubble({x:404,y:52,w:150,h:38,lines:["기대한 뜻"],c:d,fill:"#fff",tail:"none",size:11.5})}
+  ${bubble({x:404,y:160,w:150,h:38,lines:["도착한 뜻"],c:d,fill:"#fff",tail:"none",size:11.5})}
+  <g opacity=".45">${[[420,64],[540,64]].map(([x,y])=>``).join("")}</g>
+  ${step({x:322,y:196,n:1,c,label:""})}
+  ${label({x:322,y:226,text:"머리가 재빨리 고친다",c:d,size:11})}
+  ${label({x:320,y:272,text:"그 수선이 곧 웃음이다",c,size:12.5})}</svg>`,
  /* 13 — 같은 점, 다른 축 */
- data:(c,t,d)=>`<svg viewBox="0 0 640 230" fill="none">
-  <g><path d="M56 178V44M56 178h214" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/>
-   <path d="M70 168l44-6 46-10 48-8 46-12" stroke="${c}" stroke-width="4.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-   <circle cx="70" cy="168" r="5" fill="${c}"/><circle cx="114" cy="162" r="5" fill="${c}"/><circle cx="160" cy="152" r="5" fill="${c}"/><circle cx="208" cy="144" r="5" fill="${c}"/><circle cx="254" cy="132" r="5" fill="${c}"/>
-   <text x="50" y="52" font-size="11" font-weight="800" fill="${d}" text-anchor="end">100</text>
-   <text x="50" y="182" font-size="11" font-weight="800" fill="${d}" text-anchor="end">0</text>
-   <text x="163" y="210" font-size="12" font-weight="800" fill="${d}" text-anchor="middle">axis from 0 — a gentle rise</text></g>
-  <g><path d="M386 178V44M386 178h214" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/>
-   <path d="M400 172l44-26 46-34 48-30 46-38" stroke="${c}" stroke-width="4.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-   <circle cx="400" cy="172" r="5" fill="${c}"/><circle cx="444" cy="146" r="5" fill="${c}"/><circle cx="490" cy="112" r="5" fill="${c}"/><circle cx="538" cy="82" r="5" fill="${c}"/><circle cx="584" cy="44" r="5" fill="${c}"/>
-   <text x="380" y="52" font-size="11" font-weight="800" fill="${d}" text-anchor="end">100</text>
-   <text x="380" y="182" font-size="11" font-weight="800" fill="${d}" text-anchor="end">90</text>
-   <text x="493" y="210" font-size="12" font-weight="800" fill="${d}" text-anchor="middle">axis from 90 — a steep climb</text></g>
-  <rect x="284" y="96" width="72" height="30" rx="8" fill="${t}" stroke="${c}" stroke-width="2.4"/>
-  <text x="320" y="116" font-size="12" font-weight="800" fill="${d}" text-anchor="middle">same data</text></svg>`,
+ data:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
+  ${panel({x:20,y:20,w:270,h:190,c:d,fill:"#fff",n:1,label:"0에서 시작한 축"})}
+  <path d="M62 186V44M62 186h206" stroke="${d}" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M78 176l40-6 42-9 44-8 42-11" stroke="${c}" stroke-width="4.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  ${[[78,176],[118,170],[160,161],[204,153],[246,142]].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="5" fill="${c}"/>`).join("")}
+  ${label({x:56,y:52,text:"100",c:d,size:10,anchor:"end"})}${label({x:56,y:190,text:"0",c:d,size:10,anchor:"end"})}
+  ${panel({x:350,y:20,w:270,h:190,c:d,fill:"#fff",n:2,label:"90에서 시작한 축"})}
+  <path d="M392 186V44M392 186h206" stroke="${d}" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M408 178l40-26 42-32 44-30 42-38" stroke="${c}" stroke-width="4.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  ${[[408,178],[448,152],[490,120],[534,90],[576,52]].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="5" fill="${c}"/>`).join("")}
+  ${label({x:386,y:52,text:"100",c:d,size:10,anchor:"end"})}${label({x:386,y:190,text:"90",c:d,size:10,anchor:"end"})}
+  ${tag({x:320,y:112,text:"같은 자료",c})}
+  ${person({x:320,y:258,s:.66,c,pose:"think",hair:"bun",face:"flat"})}
+  ${label({x:320,y:274,text:"숫자는 스스로 말하지 않는다",c,size:12.5})}</svg>`,
  /* 14 — 층을 지나는 신호 */
- neural:(c,t,d)=>`<svg viewBox="0 0 640 230" fill="none">
-  <circle cx="96" cy="60" r="12" fill="${c}" opacity=".9"/><circle cx="96" cy="110" r="12" fill="${c}" opacity=".9"/><circle cx="96" cy="160" r="12" fill="${c}" opacity=".9"/>
-  <circle cx="256" cy="44" r="12" fill="${c}" opacity=".55"/><circle cx="256" cy="94" r="12" fill="${c}" opacity=".55"/><circle cx="256" cy="144" r="12" fill="${c}" opacity=".55"/><circle cx="256" cy="194" r="12" fill="${c}" opacity=".55"/>
-  <circle cx="416" cy="60" r="12" fill="${c}" opacity=".55"/><circle cx="416" cy="110" r="12" fill="${c}" opacity=".55"/><circle cx="416" cy="160" r="12" fill="${c}" opacity=".55"/>
-  <circle cx="560" cy="110" r="16" fill="${c}"/>
-  <path d="M108 60 L244 44" stroke="${c}" stroke-width="1.9" opacity=".38"/><path d="M108 60 L244 94" stroke="${c}" stroke-width="1.9" opacity=".38"/><path d="M108 60 L244 144" stroke="${c}" stroke-width="1.9" opacity=".38"/><path d="M108 60 L244 194" stroke="${c}" stroke-width="1.9" opacity=".38"/><path d="M108 110 L244 44" stroke="${c}" stroke-width="1.9" opacity=".38"/><path d="M108 110 L244 94" stroke="${c}" stroke-width="1.9" opacity=".38"/><path d="M108 110 L244 144" stroke="${c}" stroke-width="1.9" opacity=".38"/><path d="M108 110 L244 194" stroke="${c}" stroke-width="1.9" opacity=".38"/><path d="M108 160 L244 44" stroke="${c}" stroke-width="1.9" opacity=".38"/><path d="M108 160 L244 94" stroke="${c}" stroke-width="1.9" opacity=".38"/><path d="M108 160 L244 144" stroke="${c}" stroke-width="1.9" opacity=".38"/><path d="M108 160 L244 194" stroke="${c}" stroke-width="1.9" opacity=".38"/>
-  <path d="M268 44 L404 60" stroke="${c}" stroke-width="1.9" opacity=".38"/><path d="M268 44 L404 110" stroke="${c}" stroke-width="1.9" opacity=".38"/><path d="M268 44 L404 160" stroke="${c}" stroke-width="1.9" opacity=".38"/><path d="M268 94 L404 60" stroke="${c}" stroke-width="1.9" opacity=".38"/><path d="M268 94 L404 110" stroke="${c}" stroke-width="1.9" opacity=".38"/><path d="M268 94 L404 160" stroke="${c}" stroke-width="1.9" opacity=".38"/><path d="M268 144 L404 60" stroke="${c}" stroke-width="1.9" opacity=".38"/><path d="M268 144 L404 110" stroke="${c}" stroke-width="1.9" opacity=".38"/><path d="M268 144 L404 160" stroke="${c}" stroke-width="1.9" opacity=".38"/><path d="M268 194 L404 60" stroke="${c}" stroke-width="1.9" opacity=".38"/><path d="M268 194 L404 110" stroke="${c}" stroke-width="1.9" opacity=".38"/><path d="M268 194 L404 160" stroke="${c}" stroke-width="1.9" opacity=".38"/>
-  <path d="M428 60 L544 110" stroke="${c}" stroke-width="2.2" opacity=".55"/><path d="M428 110 L544 110" stroke="${c}" stroke-width="2.2" opacity=".55"/><path d="M428 160 L544 110" stroke="${c}" stroke-width="2.2" opacity=".55"/>
-  <text x="96" y="206" font-size="11" font-weight="800" fill="${d}" text-anchor="middle">pixels</text>
-  <text x="256" y="222" font-size="11" font-weight="800" fill="${d}" text-anchor="middle">edges</text>
-  <text x="416" y="206" font-size="11" font-weight="800" fill="${d}" text-anchor="middle">ears · eyes</text>
-  <text x="560" y="206" font-size="11" font-weight="800" fill="${d}" text-anchor="middle">&#8220;cat&#8221;</text>
-  <text x="560" y="60" font-size="11" font-weight="700" fill="${d}" opacity=".65" text-anchor="middle">— but why?</text></svg>`,
+ neural:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
+  ${[[[100,72],[100,140],[100,208]],[[240,52],[240,116],[240,180],[240,240]],[[380,72],[380,140],[380,208]]].map((col,ci)=>col.map(([x,y])=>`<circle cx="${x}" cy="${y}" r="13" fill="${c}" opacity="${ci===1?.5:.9}"/>`).join("")).join("")}
+  ${[[100,72],[100,140],[100,208]].map(([x1,y1])=>[[240,52],[240,116],[240,180],[240,240]].map(([x2,y2])=>`<path d="M${x1+13} ${y1}L${x2-13} ${y2}" stroke="${c}" stroke-width="1.8" opacity=".3"/>`).join("")).join("")}
+  ${[[240,52],[240,116],[240,180],[240,240]].map(([x1,y1])=>[[380,72],[380,140],[380,208]].map(([x2,y2])=>`<path d="M${x1+13} ${y1}L${x2-13} ${y2}" stroke="${c}" stroke-width="1.8" opacity=".3"/>`).join("")).join("")}
+  ${[[380,72],[380,140],[380,208]].map(([x,y])=>`<path d="M${x+13} ${y}L487 140" stroke="${c}" stroke-width="2.2" opacity=".5"/>`).join("")}
+  <circle cx="500" cy="140" r="17" fill="${c}"/>
+  ${label({x:100,y:246,text:"화소",c:d,size:11})}
+  ${label({x:240,y:270,text:"가장자리",c:d,size:11})}
+  ${label({x:380,y:246,text:"귀 · 눈",c:d,size:11})}
+  ${bubble({x:520,y:52,w:104,h:40,lines:["고양이!"],c:d,tail:"bl",size:12.5})}
+  ${person({x:566,y:250,s:.66,c,pose:"think",hair:"short",face:"flat"})}
+  ${thought({x:452,y:186,w:150,h:32,lines:["왜 그렇게 답했지?"],c:d,size:10.5,side:"r"})}
+  ${label({x:250,y:24,text:"층을 지날수록 더 큰 무늬를 본다",c:d,size:11.5})}</svg>`,
  /* 15 — 한쪽으로만 넓어지는 방 */
- feed:(c,t,d)=>`<svg viewBox="0 0 640 230" fill="none">
-  <circle cx="320" cy="112" r="22" fill="${c}"/>
-  <text x="320" y="168" font-size="12" font-weight="800" fill="${d}" text-anchor="middle">you</text>
-  <rect x="374" y="34" width="86" height="26" rx="7" fill="${c}" opacity=".85"/><rect x="400" y="72" width="86" height="26" rx="7" fill="${c}" opacity=".7"/><rect x="410" y="112" width="86" height="26" rx="7" fill="${c}" opacity=".85"/><rect x="400" y="152" width="86" height="26" rx="7" fill="${c}" opacity=".7"/><rect x="374" y="190" width="86" height="26" rx="7" fill="${c}" opacity=".85"/>
-  <path d="M344 112 L374 47" stroke="${c}" stroke-width="2.6" opacity=".55"/><path d="M344 112 L400 85" stroke="${c}" stroke-width="2.6" opacity=".55"/><path d="M344 112 L410 125" stroke="${c}" stroke-width="2.6" opacity=".55"/><path d="M344 112 L400 165" stroke="${c}" stroke-width="2.6" opacity=".55"/><path d="M344 112 L374 203" stroke="${c}" stroke-width="2.6" opacity=".55"/>
-  <g opacity=".3"><rect x="180" y="72" width="86" height="26" rx="7" fill="none" stroke="${c}" stroke-width="2.6" stroke-dasharray="6 5"/>
-   <rect x="180" y="152" width="86" height="26" rx="7" fill="none" stroke="${c}" stroke-width="2.6" stroke-dasharray="6 5"/>
-   <path d="M296 112L266 85M296 112L266 165" stroke="${c}" stroke-width="2.4" stroke-dasharray="5 6"/></g>
-  <text x="223" y="126" font-size="11" font-weight="700" fill="${d}" opacity=".5" text-anchor="middle">rarely shown</text>
-  <text x="510" y="118" font-size="11" font-weight="800" fill="${d}" text-anchor="middle">more of the same</text>
-  <text x="320" y="220" font-size="12" font-weight="700" fill="${c}" text-anchor="middle">a feed is a selection, not a window</text></svg>`,
+ feed:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
+  ${person({x:300,y:248,s:1,c,pose:"hold",hair:"short",face:"smile"})}
+  ${prop.phone(316,160,1.1,c)}
+  ${[[386,40],[412,82],[424,126],[412,170],[386,212]].map(([x,y],i)=>`<g><rect x="${x}" y="${y}" width="118" height="30" rx="8" fill="${c}" opacity="${[.9,.75,.9,.75,.9][i]}"/><path d="M348 132L${x} ${y+15}" stroke="${c}" stroke-width="2.6" opacity=".45"/></g>`).join("")}
+  ${label({x:518,y:136,text:"비슷한 것이 더",c:d,size:11.5})}
+  <g opacity=".3">${[[142,74],[142,186]].map(([x,y])=>`<rect x="${x}" y="${y}" width="104" height="28" rx="8" fill="none" stroke="${d}" stroke-width="2.6" stroke-dasharray="6 5"/>`).join("")}
+   <path d="M256 132L246 88M256 132L246 200" stroke="${d}" stroke-width="2.4" stroke-dasharray="5 6"/></g>
+  ${label({x:194,y:146,text:"좀처럼 안 보임",c:d,size:11,op:.55})}
+  ${label({x:320,y:272,text:"피드는 창이 아니라 선별이다",c,size:12.5})}</svg>`,
 };
 
 const STRIP = {
@@ -116,39 +111,33 @@ const STRIP = {
 };
 
 const VIG = {
- "11":(c,t,d)=>`<path d="M20 100h44l24-32h58" stroke="${c}" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M20 126h74l22-28h30" stroke="${c}" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".32"/>
-  <circle cx="20" cy="100" r="7.5" fill="#fff" stroke="${c}" stroke-width="4"/>
-  <circle cx="64" cy="100" r="7.5" fill="#fff" stroke="${c}" stroke-width="4"/>
-  <circle cx="88" cy="68" r="7.5" fill="#fff" stroke="${c}" stroke-width="4"/>
-  <circle cx="146" cy="68" r="7.5" fill="#fff" stroke="${c}" stroke-width="4"/>
-  <rect x="126" y="14" width="98" height="34" rx="9" fill="${t}" stroke="${c}" stroke-width="3"/>
-  <text x="175" y="36" font-size="12" font-weight="800" fill="${d}" text-anchor="middle">1933</text>`,
- "12":(c,t,d)=>`<circle cx="60" cy="62" r="36" fill="${t}" stroke="${c}" stroke-width="4"/>
-  <path d="M46 52c0-4 3-6 5-6M68 52c0-4 3-6 5-6" stroke="${c}" stroke-width="4" stroke-linecap="round"/>
-  <path d="M44 72c5 8 11 11 16 11s11-3 16-11" stroke="${c}" stroke-width="4.4" fill="none" stroke-linecap="round"/>
-  <path d="M104 62h44" stroke="${c}" stroke-width="5" stroke-linecap="round"/>
-  <path d="M148 44c22 0 22 36 0 36" stroke="${c}" stroke-width="5" fill="none" stroke-linecap="round" opacity=".45"/>
-  <circle cx="190" cy="42" r="16" fill="${c}" opacity=".7"/><circle cx="206" cy="86" r="12" fill="${c}" opacity=".4"/>
-  <path d="M30 122h140" stroke="${d}" stroke-width="4" stroke-linecap="round" opacity=".25"/>`,
- "13":(c,t,d)=>`<path d="M24 118V22M24 118h190" stroke="${c}" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="48" cy="104" r="6" fill="${c}"/><circle cx="80" cy="92" r="6" fill="${c}"/><circle cx="112" cy="96" r="6" fill="${c}"/><circle cx="144" cy="68" r="6" fill="${c}"/><circle cx="176" cy="52" r="6" fill="${c}"/>
-  <path d="M42 108l128-52" stroke="${c}" stroke-width="3.6" stroke-dasharray="7 6" opacity=".55"/>
-  <path d="M42 96c40 18 90-30 132-46" stroke="${d}" stroke-width="3.6" fill="none" opacity=".45"/>
-  <text x="196" y="112" font-size="11" font-weight="800" fill="${d}" text-anchor="end" opacity=".7">same points</text>`,
- "14":(c,t,d)=>`<rect x="14" y="26" width="92" height="88" rx="10" fill="${t}" stroke="${c}" stroke-width="4"/>
-  <path d="M22 106c14-30 30-34 42-14 8 13 18 10 24-4l18 18z" fill="${c}" opacity=".55"/>
-  <circle cx="44" cy="52" r="9" fill="${c}"/>
-  <text x="60" y="130" font-size="11" font-weight="800" fill="${d}" text-anchor="middle">snow?</text>
-  <g><path d="M132 74h34" stroke="${c}" stroke-width="4" stroke-linecap="round"/>
-   <path d="M160 66l10 8-10 8" stroke="${c}" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
-  <rect x="180" y="52" width="52" height="44" rx="10" fill="${c}"/>
-  <text x="206" y="80" font-size="12" font-weight="800" fill="#fff" text-anchor="middle">wolf</text>`,
- "15":(c,t,d)=>`<circle cx="70" cy="70" r="18" fill="${c}"/>
-  <rect x="114" y="22" width="60" height="18" rx="5" fill="${c}" opacity=".85"/><rect x="134" y="50" width="60" height="18" rx="5" fill="${c}" opacity=".7"/><rect x="142" y="80" width="60" height="18" rx="5" fill="${c}" opacity=".85"/><rect x="126" y="110" width="60" height="18" rx="5" fill="${c}" opacity=".6"/>
-  <path d="M88 70 L114 31" stroke="${c}" stroke-width="2.6" opacity=".5"/><path d="M88 70 L134 59" stroke="${c}" stroke-width="2.6" opacity=".5"/><path d="M88 70 L142 89" stroke="${c}" stroke-width="2.6" opacity=".5"/><path d="M88 70 L126 119" stroke="${c}" stroke-width="2.6" opacity=".5"/>
-  <g opacity=".28"><rect x="6" y="34" width="46" height="16" rx="5" fill="none" stroke="${c}" stroke-width="2.6" stroke-dasharray="5 5"/>
-   <rect x="6" y="96" width="46" height="16" rx="5" fill="none" stroke="${c}" stroke-width="2.6" stroke-dasharray="5 5"/></g>`,
+ "11":(c,t,d)=>`<svg viewBox="0 0 240 150" fill="none">
+  <path d="M20 96h44l26-32h58" stroke="${c}" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  ${[[20,96],[64,96],[90,64],[148,64]].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="7" fill="#fff" stroke="${d}" stroke-width="3.2"/>`).join("")}
+  ${bubble({x:112,y:96,w:118,h:34,lines:["1933"],c:d,tail:"tl",size:12})}
+  ${label({x:120,y:26,text:"거리를 버린 지도",c:d,size:11})}</svg>`,
+ "12":(c,t,d)=>`<svg viewBox="0 0 240 150" fill="none">
+  ${person({x:52,y:142,s:.68,c,pose:"open",hair:"short",face:"glad",brow:"up"})}
+  ${person({x:190,y:142,s:.68,c,pose:"open",hair:"curly",face:"glad",brow:"up",flip:1})}
+  ${bubble({x:70,y:14,w:100,h:32,lines:["ㅋㅋㅋ"],c:d,tail:"bl",size:12})}
+  ${label({x:120,y:132,text:"함께 웃으면 같은 것을 안다는 뜻",c:d,size:10})}</svg>`,
+ "13":(c,t,d)=>`<svg viewBox="0 0 240 150" fill="none">
+  <path d="M24 118V22M24 118h198" stroke="${d}" stroke-width="3.4" stroke-linecap="round"/>
+  ${[[48,104],[80,92],[112,96],[144,68],[176,52]].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="6" fill="${c}"/>`).join("")}
+  <path d="M42 108l134-56" stroke="${c}" stroke-width="3.4" stroke-dasharray="7 6" opacity=".6"/>
+  <path d="M42 96c40 18 92-30 134-46" stroke="${d}" stroke-width="3.4" fill="none" opacity=".4"/>
+  ${label({x:200,y:112,text:"같은 점",c:d,size:10.5,anchor:"end",op:.7})}</svg>`,
+ "14":(c,t,d)=>`<svg viewBox="0 0 240 150" fill="none">
+  ${panel({x:12,y:22,w:96,h:76,c:d,fill:"#fff"})}
+  <path d="M22 90c16-26 30-28 40-10l20 20z" fill="${c}" opacity=".4"/>
+  <circle cx="40" cy="48" r="9" fill="${c}"/>
+  ${label({x:60,y:114,text:"눈밭?",c:d,size:11})}
+  ${arrow({x1:124,y1:60,x2:158,y2:60,c:d,w:4})}
+  ${bubble({x:164,y:42,w:66,h:36,lines:["늑대"],c:d,tail:"none",size:12,fill:c===d?"#fff":"#fff"})}</svg>`,
+ "15":(c,t,d)=>`<svg viewBox="0 0 240 150" fill="none">
+  ${person({x:64,y:142,s:.68,c,pose:"hold",hair:"short",face:"smile"})}
+  ${prop.phone(78,86,.9,c)}
+  ${[[118,22],[136,54],[142,86],[128,118]].map(([x,y])=>`<g><rect x="${x}" y="${y}" width="86" height="22" rx="6" fill="${c}" opacity=".8"/><path d="M100 84L${x} ${y+11}" stroke="${c}" stroke-width="2.2" opacity=".4"/></g>`).join("")}</svg>`,
 };
 
 module.exports = { icons, scenes, STRIP, VIG };

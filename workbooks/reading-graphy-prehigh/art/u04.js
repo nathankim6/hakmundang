@@ -1,4 +1,7 @@
-/* Unit 4 삽화 — 레슨 아이콘 · 배너 장면 · Knowledge Bank 비네트 */
+/* Unit 04 삽화 — 만화 + 인포그래픽
+   장면 viewBox 640×280 · 비네트 240×150 · 아이콘 64×64 */
+const K = require("../kit.js");
+const { person, bubble, thought, panel, arrow, step, callout, stat, tag, label, ground, bar, prop } = K;
 
 const icons = {
  clock:(c)=>`<svg viewBox="0 0 64 64" fill="none">
@@ -36,72 +39,80 @@ const icons = {
 };
 
 const scenes = {
- clock:(c,t,d)=>`<svg viewBox="0 0 640 230" fill="none">
-  <g><circle cx="130" cy="106" r="52" fill="${t}" stroke="${c}" stroke-width="4"/>
-   <path d="M130 74v34l22 12" stroke="${c}" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-   <text x="130" y="192" font-size="12.5" font-weight="800" fill="${d}" text-anchor="middle">THE WATCH</text>
-   <text x="130" y="210" font-size="11" fill="${d}" opacity=".7" text-anchor="middle">changed in one second</text></g>
-  <g><circle cx="510" cy="106" r="52" fill="#fff" stroke="${c}" stroke-width="4" stroke-dasharray="9 7"/>
-   <path d="M510 74v34l22 12" stroke="${c}" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/>
-   <text x="510" y="192" font-size="12.5" font-weight="800" fill="${d}" text-anchor="middle">THE BODY</text>
-   <text x="510" y="210" font-size="11" fill="${d}" opacity=".7" text-anchor="middle">about one hour a day</text></g>
-  <g><circle cx="214" cy="106" r="4" fill="${c}" opacity=".5"/><circle cx="246" cy="106" r="4" fill="${c}" opacity=".5"/><circle cx="278" cy="106" r="4" fill="${c}" opacity=".5"/><circle cx="310" cy="106" r="4" fill="${c}" opacity=".5"/><circle cx="342" cy="106" r="4" fill="${c}" opacity=".5"/><circle cx="374" cy="106" r="4" fill="${c}" opacity=".5"/><circle cx="406" cy="106" r="4" fill="${c}" opacity=".5"/><circle cx="438" cy="106" r="4" fill="${c}" opacity=".5"/></g>
-  <path d="M198 106h250" stroke="${c}" stroke-width="3" stroke-dasharray="10 9" stroke-linecap="round" opacity=".65"/>
-  <path d="M436 98l12 8-12 8" stroke="${c}" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <g><circle cx="322" cy="52" r="17" fill="${c}"/>
-   <path d="M322 22v8M292 52h8M352 52h8M300 30l6 6M344 30l-6 6" stroke="${c}" stroke-width="3" stroke-linecap="round"/>
-   <text x="322" y="86" font-size="11" font-weight="800" fill="${d}" text-anchor="middle">morning light</text></g></svg>`,
- surgery:(c,t,d)=>`<svg viewBox="0 0 640 230" fill="none">
-  <g><text x="150" y="34" font-size="12" font-weight="800" fill="${d}" text-anchor="middle">BEFORE — SPEED</text>
-   <rect x="52" y="96" width="196" height="16" rx="8" fill="${c}" opacity=".2"/>
-   <rect x="52" y="96" width="30" height="16" rx="8" fill="${c}"/>
-   <text x="150" y="140" font-size="11" fill="${d}" opacity=".72" text-anchor="middle">under a minute · screaming</text>
-   <path d="M62 62c8-10 16-10 24 0s16 10 24 0 16-10 24 0 16 10 24 0 16-10 24 0" stroke="${c}" stroke-width="3" fill="none" stroke-linecap="round" opacity=".5"/></g>
-  <path d="M320 44v150" stroke="${c}" stroke-width="2.4" stroke-dasharray="7 7" opacity=".4"/>
-  <g><text x="490" y="34" font-size="12" font-weight="800" fill="${d}" text-anchor="middle">AFTER — CARE</text>
-   <rect x="392" y="96" width="196" height="16" rx="8" fill="${c}" opacity=".2"/>
-   <rect x="392" y="96" width="164" height="16" rx="8" fill="${c}"/>
-   <text x="490" y="140" font-size="11" fill="${d}" opacity=".72" text-anchor="middle">as long as the work needs</text>
-   <path d="M400 62h176" stroke="${c}" stroke-width="3" stroke-linecap="round" opacity=".5"/></g>
-  <g><rect x="252" y="160" width="136" height="34" rx="9" fill="${t}" stroke="${c}" stroke-width="2.6"/>
-   <text x="320" y="182" font-size="12" font-weight="800" fill="${d}" text-anchor="middle">and a long training</text></g></svg>`,
- virus:(c,t,d)=>`<svg viewBox="0 0 640 230" fill="none">
-  <g><circle cx="112" cy="110" r="40" fill="${t}" stroke="${c}" stroke-width="4"/>
-   <path d="M112 110 L164 110" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/><circle cx="164" cy="110" r="5" fill="${c}"/><path d="M112 110 L148 146" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/><circle cx="148" cy="146" r="5" fill="${c}"/><path d="M112 110 L112 162" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/><circle cx="112" cy="162" r="5" fill="${c}"/><path d="M112 110 L76 146" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/><circle cx="76" cy="146" r="5" fill="${c}"/><path d="M112 110 L60 110" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/><circle cx="60" cy="110" r="5" fill="${c}"/><path d="M112 110 L76 74" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/><circle cx="76" cy="74" r="5" fill="${c}"/><path d="M112 110 L112 58" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/><circle cx="112" cy="58" r="5" fill="${c}"/><path d="M112 110 L148 74" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/><circle cx="148" cy="74" r="5" fill="${c}"/>
-   <path d="M96 106c8-8 16-2 16 6s8 12 16 4" stroke="${c}" stroke-width="3.4" fill="none" stroke-linecap="round"/>
-   <text x="112" y="196" font-size="12" font-weight="800" fill="${d}" text-anchor="middle">A SET OF INSTRUCTIONS</text></g>
-  <path d="M176 110h74" stroke="${c}" stroke-width="3.4" stroke-dasharray="9 7" stroke-linecap="round"/>
-  <path d="M238 102l12 8-12 8" stroke="${c}" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <g><ellipse cx="420" cy="110" rx="118" ry="76" fill="${t}" opacity=".55" stroke="${c}" stroke-width="4"/>
-   <circle cx="396" cy="98" r="26" fill="${c}" opacity=".3"/>
-   <circle cx="396" cy="98" r="26" stroke="${c}" stroke-width="3" fill="none"/>
-   <rect x="440" y="120" width="26" height="34" rx="6" fill="${c}" opacity=".55"/><rect x="474" y="110" width="26" height="34" rx="6" fill="${c}" opacity=".4"/><rect x="440" y="74" width="26" height="34" rx="6" fill="${c}" opacity=".3"/>
-   <text x="420" y="204" font-size="12" font-weight="800" fill="${d}" text-anchor="middle">THE CELL — BORROWED MACHINERY</text></g></svg>`,
- wall:(c,t,d)=>`<svg viewBox="0 0 640 230" fill="none">
-  <g><text x="146" y="30" font-size="12" font-weight="800" fill="${d}" text-anchor="middle">1854 · BROAD STREET</text>
-   <rect x="44" y="48" width="204" height="140" rx="8" fill="${t}" stroke="${c}" stroke-width="3"/>
-   <path d="M44 118h204M146 48v140" stroke="${c}" stroke-width="2.6" opacity=".35"/>
-   <circle cx="132" cy="104" r="4" fill="${c}" opacity=".75"/><circle cx="158" cy="112" r="4" fill="${c}" opacity=".75"/><circle cx="140" cy="132" r="4" fill="${c}" opacity=".75"/><circle cx="160" cy="96" r="4" fill="${c}" opacity=".75"/><circle cx="124" cy="124" r="4" fill="${c}" opacity=".75"/><circle cx="152" cy="134" r="4" fill="${c}" opacity=".75"/><circle cx="168" cy="124" r="4" fill="${c}" opacity=".75"/><circle cx="136" cy="90" r="4" fill="${c}" opacity=".75"/><circle cx="96" cy="74" r="3" fill="${c}" opacity=".75"/><circle cx="206" cy="150" r="3" fill="${c}" opacity=".75"/><circle cx="84" cy="160" r="3" fill="${c}" opacity=".75"/><circle cx="214" cy="80" r="3" fill="${c}" opacity=".75"/>
-   <g><rect x="138" y="106" width="16" height="26" rx="4" fill="${c}"/>
-    <path d="M146 106V96" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/>
-    <circle cx="146" cy="119" r="22" stroke="${c}" stroke-width="2.6" fill="none" stroke-dasharray="5 5"/></g>
-   <text x="146" y="208" font-size="11" fill="${d}" opacity=".72" text-anchor="middle">deaths gather at one pump</text></g>
-  <g><text x="470" y="30" font-size="12" font-weight="800" fill="${d}" text-anchor="middle">AFTER THE HANDLE CAME OFF</text>
-   <rect x="368" y="48" width="204" height="140" rx="8" fill="#fff" stroke="${c}" stroke-width="3" stroke-dasharray="8 7"/>
-   <path d="M368 118h204M470 48v140" stroke="${c}" stroke-width="2.6" opacity=".18"/>
-   <text x="470" y="126" font-size="15" font-weight="800" fill="${d}" opacity=".45" text-anchor="middle">nothing to see</text>
-   <text x="470" y="208" font-size="11" fill="${d}" opacity=".72" text-anchor="middle">success leaves no picture</text></g></svg>`,
- burnout:(c,t,d)=>`<svg viewBox="0 0 640 230" fill="none">
-  <path d="M66 176V44M66 176h520" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/>
-  <path d="M80 158l90-6 90 4 90 22 90 40 76 24" stroke="${c}" stroke-width="4.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M336 44v132" stroke="${c}" stroke-width="3" stroke-dasharray="7 6" opacity=".7"/>
-  <text x="336" y="38" font-size="11.5" font-weight="800" fill="${d}" text-anchor="middle">17 hours awake</text>
-  <text x="150" y="200" font-size="11" font-weight="700" fill="${d}" opacity=".72" text-anchor="middle">errors stay low</text>
-  <text x="470" y="200" font-size="11" font-weight="700" fill="${d}" opacity=".72" text-anchor="middle">errors climb</text>
-  <text x="44" y="52" font-size="11" font-weight="800" fill="${d}" text-anchor="end">many</text>
-  <text x="44" y="180" font-size="11" font-weight="800" fill="${d}" text-anchor="end">few</text>
-  <rect x="404" y="52" width="168" height="34" rx="9" fill="${t}" stroke="${c}" stroke-width="2.6"/>
-  <text x="488" y="74" font-size="12" font-weight="800" fill="${d}" text-anchor="middle">≈ mild drunkenness</text></svg>`,
+ /* 16 — 손목시계와 몸속 시계 */
+ clock:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
+  ${panel({x:20,y:20,w:266,h:200,c:d,fill:"#fff",n:1,label:"손목시계 — 1초면 끝"})}
+  ${person({x:96,y:210,s:.98,c,pose:"point",hair:"short",face:"glad",brow:"up"})}
+  ${prop.clock(206,110,2.1,c)}
+  ${panel({x:354,y:20,w:266,h:200,c:d,fill:"#fff",n:2,label:"몸속 시계 — 하루 한 시간"})}
+  ${person({x:430,y:210,s:.98,c,pose:"think",hair:"bob",face:"worry",brow:"down"})}
+  <g transform="translate(540 110)">
+   <circle r="34" fill="#fff" stroke="${d}" stroke-width="3.4" stroke-dasharray="9 7"/>
+   <path d="M0-22v24l16 8" stroke="${c}" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+   ${arrow({x1:26,y1:-26,x2:38,y2:-14,c:d,w:3})}</g>
+  ${arrow({x1:294,y1:118,x2:346,y2:118,c:d,w:5})}
+  ${prop.bulb(320,60,1.2,c)}
+  ${label({x:320,y:244,text:"아침 빛이 시계를 앞으로 당긴다",c:d,size:11.5})}
+  ${label({x:320,y:270,text:"신호를 한 방향으로 맞추는 것이 전부다",c,size:12.5})}</svg>`,
+ /* 17 — 빠른 손과 느린 손 */
+ surgery:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
+  ${panel({x:20,y:20,w:270,h:196,c:d,fill:"#fff",n:1,label:"마취 이전 — 속도"})}
+  ${person({x:96,y:206,s:.95,c,pose:"point",hair:"cap",face:"oh",brow:"down"})}
+  ${prop.clock(224,86,1.5,c)}
+  <rect x="150" y="150" width="120" height="14" rx="6" fill="${c}" opacity=".2"/>
+  <rect x="150" y="150" width="26" height="14" rx="6" fill="${c}"/>
+  ${label({x:210,y:182,text:"1분 안에",c:d,size:11,op:.75})}
+  ${panel({x:350,y:20,w:270,h:196,c:d,fill:"#fff",n:2,label:"마취 이후 — 정확함"})}
+  ${person({x:426,y:206,s:.95,c,pose:"hold",hair:"cap",face:"flat"})}
+  ${prop.paper(442,120,1.1,c)}
+  <rect x="480" y="150" width="120" height="14" rx="6" fill="${c}" opacity=".2"/>
+  <rect x="480" y="150" width="104" height="14" rx="6" fill="${c}"/>
+  ${label({x:540,y:182,text:"필요한 만큼",c:d,size:11,op:.75})}
+  ${arrow({x1:298,y1:116,x2:342,y2:116,c:d,w:5})}
+  ${label({x:320,y:246,text:"가장 큰 변화는 기술이 아니라 오래 가르치는 제도였다",c:d,size:11.5})}
+  ${label({x:320,y:270,text:"외과의는 타고나지 않고 천천히 만들어진다",c,size:12.5})}</svg>`,
+ /* 18 — 껍질과 설명서, 빌린 공장 */
+ virus:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
+  <g transform="translate(116 132)">
+   <circle r="44" fill="#fff" stroke="${d}" stroke-width="3.4"/>
+   ${Array.from({length:8},(_,i)=>{const a=i*Math.PI/4,x=Math.cos(a)*56,y=Math.sin(a)*56;return `<path d="M0 0L${x} ${y}" stroke="${d}" stroke-width="3.4" stroke-linecap="round"/><circle cx="${x}" cy="${y}" r="6" fill="${c}"/>`}).join("")}
+   <path d="M-16-2c10-10 20-2 20 8s10 12 18 4" stroke="${c}" stroke-width="4" fill="none" stroke-linecap="round"/></g>
+  ${label({x:116,y:216,text:"껍질에 싸인 설명서",c:d,size:11.5})}
+  ${arrow({x1:184,y1:132,x2:252,y2:132,c:d,w:5,dash:"10 8"})}
+  <g><ellipse cx="440" cy="134" rx="132" ry="84" fill="#fff" stroke="${d}" stroke-width="3.4"/>
+   <circle cx="404" cy="112" r="28" fill="${c}" opacity=".2" stroke="${d}" stroke-width="3"/>
+   ${[[478,150],[512,128],[478,92]].map(([x,y],i)=>`<rect x="${x}" y="${y}" width="28" height="36" rx="6" fill="${c}" opacity="${[.6,.45,.3][i]}"/>`).join("")}
+   ${label({x:440,y:236,text:"세포 — 빌려 쓰는 공장",c:d,size:11.5})}</g>
+  ${tag({x:218,y:100,text:"설계도만",c})}
+  ${label({x:320,y:270,text:"기계는 빌린 것이고, 바이러스의 것은 설계도뿐이다",c,size:12.5})}</svg>`,
+ /* 19 — 존 스노의 지도와 빈 지도 */
+ wall:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
+  ${panel({x:20,y:20,w:272,h:198,c:d,fill:"#fff",n:1,label:"1854 · 브로드가"})}
+  <path d="M20 120h272M156 20v198" stroke="${d}" stroke-width="2.4" opacity=".28"/>
+  ${[[142,108],[168,116],[150,136],[170,100],[134,128],[162,140],[178,128],[146,94],[106,78],[216,156],[94,164],[224,84]].map(([x,y],i)=>`<circle cx="${x}" cy="${y}" r="${i<8?4.5:3.5}" fill="${c}" opacity=".8"/>`).join("")}
+  <g><rect x="150" y="108" width="15" height="24" rx="4" fill="${d}"/>
+   <path d="M157 108V96" stroke="${d}" stroke-width="3.4" stroke-linecap="round"/>
+   <circle cx="157" cy="120" r="26" fill="none" stroke="${d}" stroke-width="2.6" stroke-dasharray="5 5"/></g>
+  ${person({x:60,y:200,s:.7,c,pose:"point",hair:"cap",face:"flat"})}
+  ${panel({x:348,y:20,w:272,h:198,c:d,fill:"#fff",label:"손잡이를 뗀 뒤"})}
+  <path d="M348 120h272M484 20v198" stroke="${d}" stroke-width="2.4" opacity=".14"/>
+  ${label({x:484,y:126,text:"아무 일도 없음",c:d,size:14,op:.4})}
+  ${arrow({x1:300,y1:118,x2:340,y2:118,c:d,w:5})}
+  ${label({x:320,y:246,text:"막아 낸 일은 그래프에 남지 않는다",c:d,size:11.5})}
+  ${label({x:320,y:270,text:"공중보건은 성공이 아무 일도 없는 것처럼 보이는 분야다",c,size:12})}</svg>`,
+ /* 20 — 17시간을 넘어가는 실수 곡선 */
+ burnout:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
+  <path d="M76 208V44M76 208h520" stroke="${d}" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M92 190l88-6 88 4 88 24 88 44 74 26" stroke="${c}" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M336 44v164" stroke="${d}" stroke-width="3" stroke-dasharray="7 6" opacity=".7"/>
+  ${label({x:336,y:36,text:"깨어 있은 지 17시간",c:d,size:11.5})}
+  ${label({x:60,y:52,text:"많음",c:d,size:10.5,anchor:"end"})}
+  ${label({x:60,y:212,text:"적음",c:d,size:10.5,anchor:"end"})}
+  ${label({x:36,y:130,text:"실수",c:d,size:11,anchor:"middle"})}
+  ${person({x:170,y:262,s:.62,c,pose:"down",hair:"short",face:"smile"})}
+  ${person({x:498,y:262,s:.62,c,pose:"think",hair:"short",face:"worry",brow:"down"})}
+  ${bubble({x:388,y:56,w:186,h:38,lines:["가벼운 취기 수준"],c:d,tail:"bl",size:11.5})}
+  ${label({x:320,y:276,text:"아무도 지치지 않는다는 전제 위에 세운 체계는 잘못 지어진 것이다",c,size:11.5})}</svg>`,
 };
 
 const STRIP = {
@@ -113,36 +124,40 @@ const STRIP = {
 };
 
 const VIG = {
- "16":(c,t,d)=>`<circle cx="66" cy="70" r="42" fill="${t}" stroke="${c}" stroke-width="4"/>
-  <path d="M66 44v28l18 10" stroke="${c}" stroke-width="4.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="180" cy="52" r="18" fill="${c}"/>
-  <path d="M180 20v9M150 52h9M201 52h9M158 30l6 6M202 30l-6 6" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/>
-  <path d="M124 70h30" stroke="${c}" stroke-width="4" stroke-dasharray="6 6" stroke-linecap="round"/>
-  <path d="M148 100c14 10 34 10 52 0" stroke="${d}" stroke-width="4" fill="none" stroke-linecap="round" opacity=".4"/>`,
- "17":(c,t,d)=>`<path d="M40 24c26 6 42 22 50 46L46 108l-12-6-4-14z" fill="${t}" stroke="${c}" stroke-width="4" stroke-linejoin="round"/>
-  <path d="M24 124l14-14" stroke="${c}" stroke-width="4.4" stroke-linecap="round"/>
-  <g><path d="M140 42c0-8 6-14 14-14h30c8 0 14 6 14 14v52c0 8-6 14-14 14h-30c-8 0-14-6-14-14z" fill="${c}" opacity=".2" stroke="${c}" stroke-width="3.4"/>
-   <path d="M152 42v-8M168 40v-10M184 42v-8" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/>
-   <text x="169" y="86" font-size="12" font-weight="800" fill="${d}" text-anchor="middle">1889</text></g>`,
- "18":(c,t,d)=>`<circle cx="62" cy="66" r="30" fill="${t}" stroke="${c}" stroke-width="4"/>
-  <path d="M62 30v-10M62 102v10M26 66H16M108 66h10M37 41l-7-7M87 91l7 7M87 41l7-7M37 91l-7 7" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/>
-  <path d="M52 62c7-7 14-2 14 5s7 10 14 4" stroke="${c}" stroke-width="3.4" fill="none" stroke-linecap="round"/>
-  <ellipse cx="176" cy="70" rx="56" ry="40" fill="${c}" opacity=".16" stroke="${c}" stroke-width="3.4"/>
-  <circle cx="162" cy="62" r="14" stroke="${c}" stroke-width="3" fill="none"/>
-  <circle cx="192" cy="82" r="7" fill="${c}" opacity=".5"/><circle cx="196" cy="56" r="5" fill="${c}" opacity=".4"/>`,
- "19":(c,t,d)=>`<rect x="14" y="18" width="102" height="102" rx="8" fill="${t}" stroke="${c}" stroke-width="4"/>
-  <path d="M14 70h102M64 18v102" stroke="${c}" stroke-width="2.6" opacity=".3"/>
-  VIG<circle cx="132" cy="104" r="4" fill="${c}" opacity=".75"/><circle cx="158" cy="112" r="4" fill="${c}" opacity=".75"/><circle cx="140" cy="132" r="4" fill="${c}" opacity=".75"/><circle cx="160" cy="96" r="4" fill="${c}" opacity=".75"/><circle cx="124" cy="124" r="4" fill="${c}" opacity=".75"/><circle cx="152" cy="134" r="4" fill="${c}" opacity=".75"/><circle cx="168" cy="124" r="4" fill="${c}" opacity=".75"/><circle cx="136" cy="90" r="4" fill="${c}" opacity=".75"/><circle cx="96" cy="74" r="3" fill="${c}" opacity=".75"/><circle cx="206" cy="150" r="3" fill="${c}" opacity=".75"/><circle cx="84" cy="160" r="3" fill="${c}" opacity=".75"/><circle cx="214" cy="80" r="3" fill="${c}" opacity=".75"/>
-  <rect x="58" y="60" width="13" height="22" rx="3.5" fill="${c}"/>
-  <path d="M64 60v-9" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/>
-  <path d="M140 70h34" stroke="${c}" stroke-width="4" stroke-linecap="round"/>
-  <path d="M166 62l10 8-10 8" stroke="${c}" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <rect x="186" y="46" width="44" height="48" rx="8" fill="#fff" stroke="${c}" stroke-width="3.4" stroke-dasharray="6 6"/>`,
- "20":(c,t,d)=>`<path d="M22 112V26M22 112h194" stroke="${c}" stroke-width="4" stroke-linecap="round"/>
-  <path d="M34 100l38-3 38 2 38 12 38 22" stroke="${c}" stroke-width="4.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M124 26v86" stroke="${c}" stroke-width="3.2" stroke-dasharray="6 5" opacity=".7"/>
-  <text x="124" y="20" font-size="10.5" font-weight="800" fill="${d}" text-anchor="middle">17 h</text>
-  <circle cx="200" cy="130" r="0" fill="none"/>`,
+ "16":(c,t,d)=>`<svg viewBox="0 0 240 150" fill="none">
+  ${prop.clock(54,64,2.1,c)}
+  <circle cx="176" cy="64" r="32" fill="#fff" stroke="${d}" stroke-width="3.2" stroke-dasharray="8 6"/>
+  <path d="M176 44v22l14 8" stroke="${c}" stroke-width="3.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  ${arrow({x1:98,y1:64,x2:134,y2:64,c:d,w:4,dash:"6 5"})}
+  ${label({x:54,y:120,text:"손목",c:d,size:11})}${label({x:176,y:120,text:"몸속",c:d,size:11})}</svg>`,
+ "17":(c,t,d)=>`<svg viewBox="0 0 240 150" fill="none">
+  ${person({x:56,y:142,s:.72,c,pose:"hold",hair:"cap",face:"flat"})}
+  ${prop.paper(70,72,1,c)}
+  <g transform="translate(172 66)">
+   <rect x="-26" y="-30" width="52" height="60" rx="8" fill="#fff" stroke="${d}" stroke-width="3"/>
+   <path d="M-14-30v-8M0-32v-10M14-30v-8" stroke="${d}" stroke-width="3" stroke-linecap="round"/>
+   ${label({x:0,y:14,text:"1889",c:d,size:12})}</g></svg>`,
+ "18":(c,t,d)=>`<svg viewBox="0 0 240 150" fill="none">
+  <g transform="translate(58 70)"><circle r="26" fill="#fff" stroke="${d}" stroke-width="3"/>
+   ${Array.from({length:8},(_,i)=>{const a=i*Math.PI/4,x=Math.cos(a)*34,y=Math.sin(a)*34;return `<path d="M0 0L${x} ${y}" stroke="${d}" stroke-width="2.8" stroke-linecap="round"/><circle cx="${x}" cy="${y}" r="4" fill="${c}"/>`}).join("")}</g>
+  <ellipse cx="170" cy="74" rx="58" ry="40" fill="#fff" stroke="${d}" stroke-width="3"/>
+  <circle cx="154" cy="64" r="14" fill="${c}" opacity=".25" stroke="${d}" stroke-width="2.6"/>
+  <rect x="184" y="80" width="18" height="22" rx="4" fill="${c}" opacity=".5"/>
+  ${label({x:120,y:138,text:"빌려 쓰는 공장",c:d,size:11})}</svg>`,
+ "19":(c,t,d)=>`<svg viewBox="0 0 240 150" fill="none">
+  ${panel({x:12,y:18,w:100,h:100,c:d,fill:"#fff"})}
+  ${[[56,58],[72,66],[60,84],[74,50],[46,74],[68,90],[80,74],[58,44]].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="4" fill="${c}" opacity=".8"/>`).join("")}
+  <rect x="56" y="58" width="12" height="20" rx="3" fill="${d}"/>
+  ${arrow({x1:126,y1:68,x2:154,y2:68,c:d,w:4})}
+  ${panel({x:166,y:18,w:62,h:100,c:d,fill:"#fff"})}
+  ${label({x:197,y:74,text:"—",c:d,size:16,op:.4})}
+  ${label({x:120,y:140,text:"성공은 그림을 남기지 않는다",c:d,size:10.5})}</svg>`,
+ "20":(c,t,d)=>`<svg viewBox="0 0 240 150" fill="none">
+  <path d="M26 116V22M26 116h198" stroke="${d}" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M38 104l38-3 38 2 38 12 38 26" stroke="${c}" stroke-width="4.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M124 22v94" stroke="${d}" stroke-width="3" stroke-dasharray="6 5" opacity=".7"/>
+  ${label({x:124,y:16,text:"17시간",c:d,size:10.5})}
+  ${label({x:120,y:140,text:"버티라는 말로는 풀리지 않는다",c:d,size:10.5})}</svg>`,
 };
 
 module.exports = { icons, scenes, STRIP, VIG };
