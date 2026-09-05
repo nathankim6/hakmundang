@@ -6,49 +6,15 @@ const ink = "#2E2C2A";                       // 윤곽선
 const esc = s => String(s).replace(/&(?![a-z#])/g, "&amp;")
                           .replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
-/* ── 사람 ──────────────────────────────────────────────
-   x,y = 발밑 중앙.  s = 키(기본 100 이 사람 하나 높이).            */
-const FACE = {
-  smile: `<path d="M-5 3q5 5 10 0" stroke="${ink}" stroke-width="2" fill="none" stroke-linecap="round"/>`,
-  flat:  `<path d="M-5 4h10" stroke="${ink}" stroke-width="2" stroke-linecap="round"/>`,
-  worry: `<path d="M-5 5q5-5 10 0" stroke="${ink}" stroke-width="2" fill="none" stroke-linecap="round"/>`,
-  oh:    `<ellipse cx="0" cy="4" rx="3" ry="4" fill="${ink}"/>`,
-  glad:  `<path d="M-6 2q6 7 12 0" stroke="${ink}" stroke-width="2.2" fill="none" stroke-linecap="round"/>`,
-};
-const ARMS = {
-  down:  `<path d="M-14 -33c-5 8-8 16-9 24M14 -33c5 8 8 16 9 24" stroke="CC" stroke-width="7" fill="none" stroke-linecap="round"/>`,
-  point: `<path d="M-14 -33c-5 8-8 16-9 24M13 -35c10 1 19-1 27-7" stroke="CC" stroke-width="7" fill="none" stroke-linecap="round"/>`,
-  up:    `<path d="M-14 -33c-8 3-14 11-16 20M14 -33c8 3 14 11 16 20" stroke="CC" stroke-width="7" fill="none" stroke-linecap="round"/>`,
-  think: `<path d="M-14 -33c-5 8-8 16-9 24M13 -33c7 6 11 3 12-6" stroke="CC" stroke-width="7" fill="none" stroke-linecap="round"/>`,
-  hold:  `<path d="M-13 -33c-3 8 2 13 8 15M13 -33c3 8-2 13-8 15" stroke="CC" stroke-width="7" fill="none" stroke-linecap="round"/>`,
-  open:  `<path d="M-14 -33c-9 2-16 8-19 16M14 -33c9 2 16 8 19 16" stroke="CC" stroke-width="7" fill="none" stroke-linecap="round"/>`,
-  wave:  `<path d="M-14 -33c-5 8-8 16-9 24M14 -34c8-3 13-10 14-19" stroke="CC" stroke-width="7" fill="none" stroke-linecap="round"/>`,
-};
-const HAIR = {
-  short: `<path d="M-17 -55c0-11 7-17 17-17s17 6 17 17c-6-6-11-8-17-8s-11 2-17 8z" fill="HH"/>`,
-  bun:   `<path d="M-17 -55c0-11 7-17 17-17s17 6 17 17c-6-6-11-8-17-8s-11 2-17 8z" fill="HH"/><circle cx="0" cy="-76" r="7" fill="HH"/>`,
-  long:  `<path d="M-17 -55c0-11 7-17 17-17s17 6 17 17v20c0 5-2 8-5 9 1-9 0-19-2-26-7 6-13 6-20 0-2 7-3 17-2 26-3-1-5-4-5-9z" fill="HH"/>`,
-  cap:   `<path d="M-18 -62h36a18 18 0 0 0-36 0z" fill="HH"/><path d="M-24 -62h26v5h-26z" fill="HH" opacity=".7"/>`,
-  curly: `<path d="M-17 -55c0-11 7-17 17-17s17 6 17 17c-4-4-7-3-9 0-3-4-7-4-9 0-2-4-6-4-9 0-2-3-5-4-7 0z" fill="HH"/>`,
-  none:  ``,
-};
-function person(o = {}) {
-  const { x = 0, y = 0, s = 1, c = "#888", face = "smile", arms = "down",
-          hair = "short", look = 0, skin = "#F6DCC8", hairc = "" } = o;
-  const f = (FACE[face] || FACE.smile);
-  const a = (ARMS[arms] || ARMS.down).replace(/CC/g, c);
-  const h = (HAIR[hair] || "").replace(/HH/g, hairc || ink);
-  return `<g transform="translate(${x} ${y}) scale(${s})">
-    ${a}
-    <path d="M-17 0c0-23 7-37 17-37s17 14 17 37z" fill="${c}"/>
-    <path d="M-4 -36h8v6h-8z" fill="${skin}"/>
-    <circle cx="0" cy="-51" r="17" fill="${skin}" stroke="${ink}" stroke-width="2.2"/>
-    ${h}
-    <g transform="translate(${look} -51)">
-      <circle cx="-6" cy="-3" r="2.5" fill="${ink}"/><circle cx="6" cy="-3" r="2.5" fill="${ink}"/>
-      ${f}
-    </g></g>`;
-}
+/* ── 사람: figure.js 의 작화를 그대로 쓴다 ──
+   키 150(≈4.3등신), 그림자·명암·손발 포함. hands()/headTop() 은 소품과
+   말풍선을 얼굴에 겹치지 않게 놓기 위한 좌표 도우미. */
+const { figure } = require("./figure.js");
+const person = figure;
+/* 손이 모이는 지점 (pose:"hold") */
+function hands(o = {}) { const { x = 0, y = 0, s = 1 } = o; return { x: x + 10 * s, y: y - 83 * s }; }
+/* 머리 꼭대기 */
+function headTop(o = {}) { const { x = 0, y = 0, s = 1 } = o; return { x, y: y - 154 * s }; }
 
 /* ── 말풍선 / 생각풍선 ── */
 function bubble(o = {}) {
@@ -143,22 +109,47 @@ function bar(o = {}) {
   return `<g><rect x="${x - w / 2}" y="${base - h}" width="${w}" height="${h}" rx="5" fill="${c}" opacity="${op}"/>
     ${cap ? `<text x="${x}" y="${base + 16}" font-size="10.5" font-weight="800" fill="${capc || c}" text-anchor="middle">${esc(cap)}</text>` : ""}</g>`;
 }
-/* 작은 소품들 */
+/* ── 소품: 옷 위에 놓여도 읽히도록 흰 바탕 + 윤곽선 ── */
+const OL = "#2B2926";
 const prop = {
-  book: (x, y, s, c) => `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-16-11h14v22h-14z" fill="${c}"/><path d="M2-11h14v22H2z" fill="${c}" opacity=".55"/><path d="M-16-11h32M0-11v22" stroke="#fff" stroke-width="1.6" opacity=".6"/></g>`,
-  screen: (x, y, s, c) => `<g transform="translate(${x} ${y}) scale(${s})"><rect x="-20" y="-14" width="40" height="28" rx="4" fill="${c}"/><path d="M-8 14h16M0 14v6" stroke="${c}" stroke-width="3.4" stroke-linecap="round"/></g>`,
-  phone: (x, y, s, c) => `<g transform="translate(${x} ${y}) scale(${s})"><rect x="-9" y="-16" width="18" height="32" rx="4" fill="${c}"/><path d="M-4-12h8" stroke="#fff" stroke-width="2" stroke-linecap="round"/></g>`,
-  clock: (x, y, s, c) => `<g transform="translate(${x} ${y}) scale(${s})"><circle r="15" fill="#fff" stroke="${c}" stroke-width="3.4"/><path d="M0-9v10l7 4" stroke="${c}" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>`,
-  coin: (x, y, s, c) => `<g transform="translate(${x} ${y}) scale(${s})"><circle r="13" fill="${c}"/><text y="5" font-size="16" font-weight="800" fill="#fff" text-anchor="middle">$</text></g>`,
-  bulb: (x, y, s, c) => `<g transform="translate(${x} ${y}) scale(${s})"><path d="M0-16c7 0 12 5 12 11 0 5-4 7-5 11h-14c-1-4-5-6-5-11 0-6 5-11 12-11z" fill="${c}"/><path d="M-6 10h12M-4 15h8" stroke="${c}" stroke-width="2.6" stroke-linecap="round"/></g>`,
-  leaf: (x, y, s, c) => `<g transform="translate(${x} ${y}) scale(${s})"><path d="M0 14C-12 6-12-8 0-16 12-8 12 6 0 14z" fill="${c}"/><path d="M0 14V-12" stroke="#fff" stroke-width="1.8" opacity=".7"/></g>`,
+  /* 펼친 책 — 손에 들린 모습 */
+  book: (x, y, s, c) => `<g transform="translate(${x} ${y}) scale(${s})">
+    <path d="M-22-13 q11-4 21 0 v22 q-10-4-21 0z" fill="#fff" stroke="${OL}" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M22-13 q-11-4-21 0 v22 q10-4 21 0z" fill="#fff" stroke="${OL}" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M-1-13 v22" stroke="${OL}" stroke-width="2"/>
+    <path d="M-17-7h11M-17-2h9M6-7h11M6-2h9" stroke="${c}" stroke-width="1.8" stroke-linecap="round" opacity=".65"/></g>`,
+  /* 닫힌 책 (세워 둔 것) */
+  bookc: (x, y, s, c) => `<g transform="translate(${x} ${y}) scale(${s})">
+    <rect x="-11" y="-16" width="22" height="32" rx="2.5" fill="${c}" stroke="${OL}" stroke-width="2"/>
+    <path d="M-6-16v32" stroke="#fff" stroke-width="2" opacity=".5"/></g>`,
+  screen: (x, y, s, c) => `<g transform="translate(${x} ${y}) scale(${s})">
+    <rect x="-22" y="-16" width="44" height="32" rx="4" fill="#fff" stroke="${OL}" stroke-width="2.2"/>
+    <rect x="-17" y="-11" width="34" height="22" rx="2" fill="${c}" opacity=".85"/>
+    <path d="M-8 16h16M0 16v6" stroke="${OL}" stroke-width="2.6" stroke-linecap="round"/></g>`,
+  phone: (x, y, s, c) => `<g transform="translate(${x} ${y}) scale(${s})">
+    <rect x="-10" y="-17" width="20" height="34" rx="4" fill="#fff" stroke="${OL}" stroke-width="2.2"/>
+    <rect x="-6" y="-12" width="12" height="22" rx="1.5" fill="${c}" opacity=".8"/></g>`,
+  clock: (x, y, s, c) => `<g transform="translate(${x} ${y}) scale(${s})">
+    <circle r="16" fill="#fff" stroke="${OL}" stroke-width="2.4"/>
+    <path d="M0-10v11l8 4" stroke="${c}" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle r="2" fill="${OL}"/></g>`,
+  coin: (x, y, s, c) => `<g transform="translate(${x} ${y}) scale(${s})">
+    <circle r="14" fill="${c}" stroke="${OL}" stroke-width="2.2"/>
+    <text y="6" font-size="17" font-weight="800" fill="#fff" text-anchor="middle">$</text></g>`,
+  bulb: (x, y, s, c) => `<g transform="translate(${x} ${y}) scale(${s})">
+    <path d="M0-18c8 0 14 6 14 13 0 5-4 8-5 11h-18c-1-3-5-6-5-11 0-7 6-13 14-13z" fill="#FFD86B" stroke="${OL}" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M-6 9h12M-4 14h8" stroke="${OL}" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M0-27v5M-16-20l3 4M16-20l-3 4" stroke="${c}" stroke-width="2.6" stroke-linecap="round"/></g>`,
+  leaf: (x, y, s, c) => `<g transform="translate(${x} ${y}) scale(${s})">
+    <path d="M0 15C-13 7-13-9 0-17 13-9 13 7 0 15z" fill="${c}" stroke="${OL}" stroke-width="2"/>
+    <path d="M0 15V-13" stroke="#fff" stroke-width="1.8" opacity=".8"/></g>`,
+  paper: (x, y, s, c) => `<g transform="translate(${x} ${y}) scale(${s})">
+    <rect x="-14" y="-18" width="28" height="36" rx="2.5" fill="#fff" stroke="${OL}" stroke-width="2"/>
+    <path d="M-8-10h16M-8-4h16M-8 2h11" stroke="${c}" stroke-width="2" stroke-linecap="round" opacity=".7"/></g>`,
+  cup: (x, y, s, c) => `<g transform="translate(${x} ${y}) scale(${s})">
+    <path d="M-11-12h22l-2 24q-1 5-9 5t-9-5z" fill="#fff" stroke="${OL}" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M11-6q7 1 7 7t-7 7" fill="none" stroke="${OL}" stroke-width="2.2"/>
+    <path d="M-8-8h16l-1 6h-14z" fill="${c}"/></g>`,
 };
-
-
-/* 손 위치 도우미 — arms:"hold" 일 때 두 손이 모이는 지점.
-   소품을 얼굴이 아니라 가슴 앞에 놓기 위해 쓴다. */
-function hands(o = {}) { const { x = 0, y = 0, s = 1 } = o; return { x, y: y - 18 * s }; }
-/* 머리 꼭대기 — 말풍선 꼬리를 겹치지 않게 놓기 위해 쓴다. */
-function headTop(o = {}) { const { x = 0, y = 0, s = 1 } = o; return { x, y: y - 68 * s }; }
 
 module.exports = { ink, hands, headTop, person, bubble, thought, panel, arrow, step, callout, stat, tag, label, ground, bar, prop };
