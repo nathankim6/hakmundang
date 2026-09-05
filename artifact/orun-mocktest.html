@@ -492,7 +492,8 @@ textarea:focus, input:focus { border-color: var(--signal); background: #fff; out
   gap: 1px; background: var(--hair-soft); border: 1px solid var(--glass-edge); border-radius: var(--r-lg); overflow: hidden;
   box-shadow: var(--sh-1);
 }
-.statbox > * { background: var(--glass-3); padding: 18px 20px; }
+.statbox > *, .statbox .sb-item { background: var(--glass-3); padding: 18px 20px; }
+.statbox .sb-nums { padding: 0; }
 .sb-head { display: flex; flex-direction: column; gap: 5px; }
 .sb-label { font-family: var(--mono); font-size: 9.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--tx-faint); }
 .sb-name { font-size: 15px; font-weight: 700; color: var(--ink); line-height: 1.4; }
@@ -641,6 +642,135 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
 }
 @media print { body::before, body::after { display: none !important; } }
 
+/* ══════════════════════════════════════════════════════
+   토스식 화면 흐름 — 한 화면에 한 가지, 큰 안내 문구, 하단 고정 버튼
+   ══════════════════════════════════════════════════════ */
+.screen {
+  display: none;
+  max-width: 720px; margin: 0 auto;
+  padding: 44px 24px 168px;
+}
+.screen.wide { max-width: 1040px; }
+.screen.on { display: block; animation: screenIn .42s cubic-bezier(.2, .8, .3, 1); }
+@keyframes screenIn { from { opacity: 0; transform: translateX(28px); } }
+
+.h-title {
+  font-size: clamp(24px, 3.6vw, 31px); font-weight: 800; line-height: 1.3;
+  letter-spacing: -.03em; margin-bottom: 8px; color: var(--ink);
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+}
+.h-title .chip { font-size: 11px; padding: 4px 11px; }
+.h-sub { font-size: 15px; color: var(--tx-dim); margin-bottom: 28px; line-height: 1.7; }
+.field { margin-top: 26px; }
+.foot-note { margin-top: 26px; font-size: 11.5px; color: var(--tx-faint); text-align: center; }
+
+/* 상단 바: 뒤로 + 가는 진행선 */
+.console .back {
+  width: 34px; height: 34px; flex: none; margin-left: -8px;
+  display: grid; place-items: center; border: 0; background: none; cursor: pointer;
+  color: var(--ink); border-radius: 50%;
+}
+.console .back:hover { background: var(--well); }
+.console .back svg { width: 20px; height: 20px; }
+.console .pline { flex: 1; display: flex; align-items: center; gap: 0; max-width: 360px; margin: 0 auto; }
+.console .pline .step { width: 8px; height: 8px; border-radius: 50%; background: #d1d1d6; flex: none; transition: background .3s, box-shadow .3s; }
+.console .pline .step.on { background: var(--beam); box-shadow: 0 0 0 3px var(--beam-soft); }
+.console .pline .step-rule { flex: 1; height: 2px; background: #e5e5ea; position: relative; overflow: hidden; border-radius: 1px; }
+.console .pline .step-rule i { position: absolute; inset: 0 auto 0 0; width: 0; background: var(--beam); transition: width .5s cubic-bezier(.2, .7, .3, 1); }
+.console .who { min-width: 150px; }
+@media (max-width: 720px) { .console .who { display: none; } .console .build { display: none; } }
+
+/* 하단 고정 버튼 바 */
+.cta-bar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 45;
+  padding: 12px 24px calc(16px + env(safe-area-inset-bottom));
+  background: rgba(245, 245, 247, .74);
+  backdrop-filter: blur(26px) saturate(170%); -webkit-backdrop-filter: blur(26px) saturate(170%);
+  border-top: 1px solid var(--hair-soft);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .9), 0 -10px 30px rgba(0, 0, 0, .04);
+}
+.cta-bar .in { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 10px; }
+.screen.wide .cta-bar .in { max-width: 1040px; }
+.cta-bar .btn.block { border-radius: 16px; padding: 17px; font-size: 16px; }
+.cta-bar .btn.block:disabled { background: #e5e5ea; color: #a1a1a6; box-shadow: none; opacity: 1; }
+.cta-bar .cta-note { margin: 0 0 2px; }
+.cta-bar .diag-line { margin: 0; }
+.cta-links { display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; }
+.cta-links button {
+  background: none; border: 0; cursor: pointer; font: inherit;
+  font-size: 13.5px; font-weight: 600; color: var(--tx-dim); padding: 6px 2px;
+  text-underline-offset: 4px;
+}
+.cta-links button:hover { color: var(--ink); text-decoration: underline; }
+.cta-links button:disabled { opacity: .4; cursor: not-allowed; }
+
+/* 오류는 화면과 무관하게 버튼 바 위에 뜬다 */
+.error-box, .error-box.show {
+  position: fixed; left: 50%; transform: translateX(-50%);
+  bottom: 118px; width: min(720px, calc(100% - 32px)); z-index: 46;
+  background: rgba(255, 246, 244, .96); backdrop-filter: blur(14px);
+  box-shadow: 0 12px 34px rgba(208, 69, 44, .18);
+}
+.error-box { display: none; }
+.error-box.show { display: block; animation: toastIn .28s cubic-bezier(.2, .8, .3, 1); }
+
+/* 출제 옵션: 행 목록 */
+.opts { display: block; margin-top: 0; }
+.opt-card {
+  display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap;
+  padding: 18px 20px; margin: 0; border-radius: 0; border: 0; border-bottom: 1px solid var(--hair-soft);
+  background: rgba(255, 255, 255, .55); box-shadow: none;
+}
+.opts .opt-card:first-child { border-radius: var(--r) var(--r) 0 0; }
+.opts .opt-card:last-child { border-bottom: 0; border-radius: 0 0 var(--r) var(--r); }
+.opts { border: 1px solid var(--glass-line); border-radius: var(--r); overflow: hidden; box-shadow: var(--sh-3), var(--in-hi); }
+.opt-card .k { margin: 0; font-family: var(--sans); font-size: 15px; font-weight: 700; letter-spacing: 0; text-transform: none; color: var(--ink); }
+.opt-card .seg { flex: 0 0 auto; min-width: 280px; }
+.opt-card input[type="number"] { flex-basis: 100%; max-width: 200px; margin: 0; }
+
+/* 매칭 계획: 표를 카드 행 목록으로 */
+.plan-panel { padding: 6px 22px 10px; }
+table.plan, table.plan tbody { display: block; width: 100%; }
+table.plan thead { display: none; }
+table.plan tr {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px;
+  padding: 18px 0; border-bottom: 1px solid var(--hair-soft);
+}
+table.plan tbody tr:last-child { border-bottom: 0; }
+table.plan tr:hover td { background: none; }
+table.plan td { display: block; padding: 0; border: 0; min-width: 0; }
+table.plan td:nth-child(1) { width: 40px; font-size: 18px; font-weight: 800; color: var(--ink); }
+table.plan td:nth-child(2) { font-size: 15px; font-weight: 700; color: var(--ink); }
+table.plan td:nth-child(3), table.plan td:nth-child(4) {
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: .04em;
+  background: var(--well); padding: 3px 9px; border-radius: var(--pill); color: var(--tx-dim);
+}
+table.plan td.diff-hi { background: rgba(208, 69, 44, .10); }
+table.plan td.diff-mid { background: var(--beam-soft); }
+table.plan td.diff-lo { background: rgba(46, 158, 91, .10); }
+table.plan td:nth-child(5) { flex-basis: 100%; padding-left: 50px; margin-top: 4px; }
+table.plan td:nth-child(6) { flex-basis: 100%; padding-left: 50px; font-size: 13px; color: var(--tx-dim); }
+table.plan select.psel { max-width: none; padding: 11px 40px 11px 14px; font-size: 13px; border-radius: 12px;
+  appearance: none; -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%236e6e73' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M9 5l7 7-7 7'/></svg>");
+  background-repeat: no-repeat; background-position: right 14px center;
+}
+table.plan [contenteditable] { border-bottom: 0; }
+table.plan [contenteditable]:hover { background: var(--well); border-radius: 6px; }
+table.plan tbody tr { animation: seqIn .35s cubic-bezier(.2, .8, .3, 1) backwards; animation-delay: calc(var(--i, 0) * 30ms); }
+
+/* 시작 화면: 브리핑은 한 단으로 흐른다 (옛 2단 격자 해제) */
+.brief { display: block; padding: 36px 0 6px; }
+.brief h1 { font-size: clamp(30px, 4.6vw, 44px); margin-bottom: 14px; }
+.brief .lede { max-width: 54ch; }
+.spec { margin-top: 26px; }
+
+@media (max-width: 720px) {
+  .screen { padding: 32px 18px 160px; }
+  .opt-card .seg { min-width: 0; flex: 1 1 100%; }
+  table.plan td:nth-child(5), table.plan td:nth-child(6) { padding-left: 0; }
+}
+
 /* ══════ 시험지 문서 (조명 아래 종이) ══════ */
 /* ---------- 생성 결과 (시험지) ---------- */
   .exam-output {
@@ -688,8 +818,11 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
 
 
 </style>
-<!-- 콘솔 레일 -->
+<!-- 상단 바: 뒤로 · 진행선 · 상태 -->
 <div class="console">
+  <button type="button" class="back" id="backBtn" aria-label="이전 화면" hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+  </button>
   <svg class="mark" viewBox="0 0 120 120" fill="none" aria-label="옳은영어">
     <g stroke="#ffd400" stroke-width="6" stroke-linecap="round">
       <line x1="22" y1="34" x2="35" y2="38"/><line x1="98" y1="34" x2="85" y2="38"/>
@@ -709,217 +842,224 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
     <span class="en">ORUN ENGLISH</span>
     <span class="ko">동형 모의고사 생성기</span>
   </div>
-  <span class="gap"></span>
-  <div class="state"><span class="build" id="buildTag">2026-09-05 14:09</span><span class="lamp" id="consoleLamp"></span><span id="consoleState">대기</span></div>
+  <div class="pline" id="steps" aria-hidden="true">
+    <span class="step on" data-step="1"></span><span class="step-rule"></span>
+    <span class="step" data-step="2"></span><span class="step-rule"></span>
+    <span class="step" data-step="3"></span>
+  </div>
+  <div class="state"><span class="build" id="buildTag">2026-09-05 21:51</span><span class="lamp" id="consoleLamp"></span><span id="consoleState">대기</span></div>
 </div>
 
-<div class="shell">
-
-  <!-- 이전 작업 복구 -->
+<!-- 화면 0 · 시작 -->
+<section class="screen on" data-s="home">
   <div class="banner" id="restoreBanner" role="status">
     <span class="b-text" id="restoreText"></span>
     <button type="button" class="primary" id="restoreBtn">이어서 보기</button>
     <button type="button" id="discardBtn">지우기</button>
   </div>
+
+  <div class="brief">
+    <div class="eyebrow"><i></i><span class="slug">Mock Test Builder</span></div>
+    <h1>기출 한 장이면<br><em>같은 결의 시험지</em>가 나와요</h1>
+    <p class="lede">실제 시험지를 문항 단위로 읽고, 시험범위 자료에서 가장 알맞은 지문을 골라 원본과 같은 구조로 새 시험지를 써요.</p>
+    <ul class="feats">
+      <li>문항 단위 정밀 분석</li>
+      <li>범위 내 지문 자동 매칭</li>
+      <li>스캔본도 읽어요</li>
+    </ul>
+  </div>
+
+  <div class="spec" aria-label="출력 규격">
+    <div class="row"><span class="k">Layout</span><span class="v">2단 · 함초롬바탕 8pt · 여백 7mm</span></div>
+    <div class="row"><span class="k">Export</span><span class="v" id="specFormats">워드(DOCX) · HTML(인쇄용)</span></div>
+    <div class="row"><span class="k">Input</span><span class="v">PDF · HWP · Word · Excel · 15개</span></div>
+  </div>
+
   <details class="history" id="history" hidden>
     <summary>최근 작업 <span class="chip" id="historyCount">0</span></summary>
     <ul id="historyList"></ul>
   </details>
 
-  <!-- 브리핑 -->
-  <div class="brief">
-    <div>
-      <div class="eyebrow"><i></i><span class="slug">Mock Test Builder</span></div>
-      <h1>기출 한 장이면<br><em>같은 결의 시험지가</em> 나옵니다</h1>
-      <p class="lede">실제 시험지를 문항 단위로 읽고, 시험범위 자료에서 가장 알맞은 지문을 골라 원본과 같은 구조로 새 시험지를 씁니다.</p>
-      <ul class="feats">
-        <li>문항 단위 정밀 분석</li>
-        <li>범위 내 지문 자동 매칭</li>
-        <li>스캔본도 읽어냄</li>
-      </ul>
+  <p class="foot-note">생성된 문항은 반드시 검수 후 사용하세요</p>
+
+  <div class="cta-bar"><div class="in">
+    <button type="button" class="btn block" id="startBtn">시작하기</button>
+  </div></div>
+</section>
+
+<!-- 화면 1 · 시험지 -->
+<section class="screen" data-s="exam">
+  <h1 class="h-title">시험지를 올려주세요</h1>
+  <p class="h-sub">PDF, 한글, 워드 다 괜찮아요. 스캔한 사진 PDF도 읽어요.</p>
+
+  <div class="drop" id="examDrop" tabindex="0" role="button" aria-label="시험지 올리기">
+    <svg class="ico" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+      <path d="M11 5h13l7 7v23H11z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M24 5v7h7" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M16 20h12M16 25h12M16 30h8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+      <rect x="27" y="27" width="7" height="7" fill="#ffd400"/>
+    </svg>
+    <span class="big">시험지 올리기</span>
+    <span class="small">PDF(스캔본 포함) · 한글 · 워드 · 최대 100MB</span>
+  </div>
+  <input type="file" id="examFile" accept=".pdf,.hwp,.hwpx,.docx,.doc,.txt" hidden>
+  <ul class="filelist" id="examList"></ul>
+  <div class="paste-alt" id="examPasteWrap">
+    <button type="button" class="paste-toggle" id="examPasteToggle">본문을 직접 붙여넣을게요 <span class="opt">(선택)</span></button>
+    <button type="button" class="paste-toggle" id="examOcrBtn" hidden>스캔본으로 다시 읽기</button>
+    <div class="paste-body">
+      <textarea id="examPaste" placeholder="시험지 본문을 문항 번호까지 그대로 붙여넣으세요.&#10;파일을 올렸다면 비워두셔도 돼요 — 여기에 넣으면 이 내용으로 분석해요."></textarea>
+      <span class="paste-hint" id="examPasteHint"></span>
     </div>
-    <aside class="spec" aria-label="출력 규격">
-      <div class="row"><span class="k">Layout</span><span class="v">2단 · 함초롬바탕 8pt · 여백 7mm</span></div>
-      <div class="row"><span class="k">Export</span><span class="v" id="specFormats">워드(DOCX) · HTML(인쇄용)</span></div>
-      <div class="row"><span class="k">Input</span><span class="v">PDF · HWP · Word · Excel · 15개</span></div>
-    </aside>
   </div>
 
-  <!-- 공정 -->
-  <div class="flow" id="steps">
-    <div class="st on" data-step="1"><span class="n">01</span><span class="nm">자료 투입</span></div>
-    <span class="rule step-rule"></span>
-    <div class="st" data-step="2"><span class="n">02</span><span class="nm">분석 · 매칭</span></div>
-    <span class="rule step-rule"></span>
-    <div class="st" data-step="3"><span class="n">03</span><span class="nm">시험지 완성</span></div>
+  <div class="cta-bar"><div class="in">
+    <button type="button" class="btn block" id="nextExam" disabled>다음</button>
+  </div></div>
+</section>
+
+<!-- 화면 2 · 시험범위 -->
+<section class="screen" data-s="scope">
+  <h1 class="h-title">시험범위 자료를 올려주세요 <span class="chip" id="scopeCount">0 / 15</span></h1>
+  <p class="h-sub">교과서, 부교재, 모의고사… 여러 개 올려도 돼요. 아래에 텍스트로 붙여넣어도 돼요.</p>
+
+  <div class="drop" id="scopeDrop" tabindex="0" role="button" aria-label="시험범위 파일 올리기">
+    <svg class="ico" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+      <path d="M11 5h13l7 7v23H11z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M24 5v7h7" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M16 20h12M16 25h12M16 30h8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+      <rect x="27" y="27" width="7" height="7" fill="#ffd400"/>
+    </svg>
+    <span class="big">시험범위 파일 올리기</span>
+    <span class="small">PDF · Excel · Word · HWP · 최대 15개 · 개당 100MB</span>
   </div>
+  <input type="file" id="scopeFiles" accept=".pdf,.xlsx,.xls,.csv,.docx,.doc,.hwp,.hwpx,.txt" multiple hidden>
+  <ul class="filelist" id="scopeList"></ul>
+  <p class="list-sum" id="scopeSum"></p>
 
-  <!-- 01 자료 투입 -->
-  <section class="panel" id="step1">
-    <h2><span class="n">01</span> 자료 투입</h2>
-
-    <div class="grid2">
-      <div>
-        <div class="slot-head">
-          <span class="n">A</span>
-          <div><label>시험지 <span class="req">필수</span></label><span class="sub">PDF · 한글 · 워드 — 스캔본도 읽습니다</span></div>
-        </div>
-        <div class="drop" id="examDrop" tabindex="0" role="button" aria-label="시험지 올리기">
-          <svg class="ico" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-            <path d="M11 5h13l7 7v23H11z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-            <path d="M24 5v7h7" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-            <path d="M16 20h12M16 25h12M16 30h8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-            <rect x="27" y="27" width="7" height="7" fill="#ffd400"/>
-          </svg>
-          <span class="big">시험지 올리기</span>
-          <span class="small">PDF(스캔본 포함) · 한글 · 워드 · 최대 100MB</span>
-        </div>
-        <input type="file" id="examFile" accept=".pdf,.hwp,.hwpx,.docx,.doc,.txt" hidden>
-        <ul class="filelist" id="examList"></ul>
-        <div class="paste-alt" id="examPasteWrap">
-          <button type="button" class="paste-toggle" id="examPasteToggle">시험지 본문 직접 붙여넣기 <span class="opt">(선택)</span></button>
-          <button type="button" class="paste-toggle" id="examOcrBtn" hidden>스캔본으로 다시 읽기</button>
-          <div class="paste-body">
-            <textarea id="examPaste" placeholder="시험지 본문을 문항 번호까지 그대로 붙여넣으세요.&#10;파일을 올렸다면 비워두셔도 됩니다 — 여기에 넣으면 이 내용으로 분석합니다."></textarea>
-            <span class="paste-hint" id="examPasteHint"></span>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <div class="slot-head">
-          <span class="n">B</span>
-          <div><label>시험범위 자료 <span class="chip" id="scopeCount">0 / 15</span></label><span class="sub">교과서 · 부교재 · 모의고사 — PDF · Excel · Word · HWP</span></div>
-        </div>
-        <div class="drop" id="scopeDrop" tabindex="0" role="button" aria-label="시험범위 파일 올리기">
-          <svg class="ico" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-            <path d="M11 5h13l7 7v23H11z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-            <path d="M24 5v7h7" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-            <path d="M16 20h12M16 25h12M16 30h8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-            <rect x="27" y="27" width="7" height="7" fill="#ffd400"/>
-          </svg>
-          <span class="big">시험범위 파일 올리기</span>
-          <span class="small">최대 15개 · 개당 100MB · 스캔본 PDF 가능</span>
-        </div>
-        <input type="file" id="scopeFiles" accept=".pdf,.xlsx,.xls,.csv,.docx,.doc,.hwp,.hwpx,.txt" multiple hidden>
-        <ul class="filelist" id="scopeList"></ul>
-        <p class="list-sum" id="scopeSum"></p>
-      </div>
-    </div>
-
-    <div class="hr"></div>
-
-    <div class="grid2">
-      <div>
-        <label for="scopeText">시험범위 첨부 <span class="opt">(텍스트, 구분없이 복붙)</span></label>
-        <textarea id="scopeText" placeholder="범위 안내·지문·단어를 구분 없이 그대로 붙여넣으세요.
+  <div class="field">
+    <label for="scopeText">텍스트로 붙여넣기 <span class="opt">(구분 없이 그대로)</span></label>
+    <textarea id="scopeText" placeholder="범위 안내·지문·단어를 구분 없이 그대로 붙여넣으세요.
 예) 능률(김성곤) 3~5과 / 2025년 6월 고2 모의고사 18~28번 / 지문 원문 전체"></textarea>
-      </div>
-      <div>
-        <label for="extraReq">요청사항 <span class="opt">(선택)</span></label>
-        <textarea id="extraReq" placeholder="예) 서술형은 조건영작으로, 난이도는 원본보다 약간 상향, 어법 문항 비중 유지"></textarea>
-      </div>
-    </div>
-
-    <div class="opts" id="opts">
-      <div class="opt-card">
-        <div class="k">문항 수</div>
-        <div class="seg" data-opt="count"><button type="button" class="on" data-v="same">원본과 동일</button><button type="button" data-v="n">직접 지정</button></div>
-        <input type="number" id="optCount" min="1" max="45" placeholder="예) 20" disabled>
-      </div>
-      <div class="opt-card">
-        <div class="k">난이도</div>
-        <div class="seg" data-opt="level"><button type="button" data-v="down">하향</button><button type="button" class="on" data-v="same">동일</button><button type="button" data-v="up">상향</button></div>
-      </div>
-      <div class="opt-card">
-        <div class="k">서술형</div>
-        <div class="seg" data-opt="subj"><button type="button" class="on" data-v="same">원본과 동일</button><button type="button" data-v="none">객관식만</button><button type="button" data-v="more">서술형 늘림</button></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="cta">
-    <button type="button" class="btn block" id="analyzeBtn">시험지 정밀 분석 시작</button>
-    <p class="cta-note">시험지 전체를 문항 단위로 분석합니다 · 내 Claude 사용량으로 실행되며 처음 한 번 허용 창이 뜹니다</p>
-    <p class="diag-line"><button type="button" id="diagBtn">진단 정보 복사</button></p>
-    <div class="seq" id="analyzeProgress"></div>
-    <div class="error-box" id="analyzeError" role="alert"></div>
   </div>
 
-  <!-- 02 분석 결과 -->
-  <section id="step2">
-    <div class="act-title">
-      <div class="eyebrow"><i></i><span class="slug">Analysis Report · 02</span></div>
-      <h1>분석이 끝났습니다</h1>
-      <p>문항별 매칭 계획을 확인하고, 필요하면 직접 고쳐서 출제에 반영하세요</p>
-    </div>
+  <div class="cta-bar"><div class="in">
+    <button type="button" class="btn block" id="nextScope" disabled>다음</button>
+  </div></div>
+</section>
 
-    <div id="examMeta"></div>
+<!-- 화면 3 · 출제 옵션 -->
+<section class="screen" data-s="options">
+  <h1 class="h-title">어떻게 출제할까요?</h1>
+  <p class="h-sub">원본 그대로가 기본이에요. 필요한 것만 바꾸세요.</p>
 
-    <div class="panel" style="margin-top:18px">
-      <div class="table-scroll">
-        <table class="plan" id="planTable"></table>
-      </div>
-      <p class="edit-note">점선이 있는 칸은 클릭해서 직접 수정할 수 있습니다 — 수정한 내용 그대로 출제에 반영됩니다</p>
+  <div class="opts" id="opts">
+    <div class="opt-card">
+      <div class="k">문항 수</div>
+      <div class="seg" data-opt="count"><button type="button" class="on" data-v="same">원본과 동일</button><button type="button" data-v="n">직접 지정</button></div>
+      <input type="number" id="optCount" min="1" max="45" placeholder="예) 20" disabled>
     </div>
+    <div class="opt-card">
+      <div class="k">난이도</div>
+      <div class="seg" data-opt="level"><button type="button" data-v="down">하향</button><button type="button" class="on" data-v="same">동일</button><button type="button" data-v="up">상향</button></div>
+    </div>
+    <div class="opt-card">
+      <div class="k">서술형</div>
+      <div class="seg" data-opt="subj"><button type="button" class="on" data-v="same">원본과 동일</button><button type="button" data-v="none">객관식만</button><button type="button" data-v="more">서술형 늘림</button></div>
+    </div>
+  </div>
 
-    <div class="notice" id="staleNotice">자료가 변경되었습니다 — <b>다시 분석</b>하면 새 자료가 반영됩니다</div>
-    <div class="btnbar">
-      <button type="button" class="btn" id="generateBtn">이 계획으로 시험지 만들기</button>
-      <button type="button" class="btn ghost" id="reAnalyzeBtn">다시 분석</button>
-      <button type="button" class="btn link" id="editInputsBtn">자료 수정</button>
-    </div>
-    <div class="seq" id="genProgress"></div>
-    <div class="error-box" id="genError" role="alert"></div>
-  </section>
+  <div class="field">
+    <label for="extraReq">요청사항 <span class="opt">(선택)</span></label>
+    <textarea id="extraReq" placeholder="예) 서술형은 조건영작으로, 난이도는 원본보다 약간 상향, 어법 문항 비중 유지"></textarea>
+  </div>
 
-  <!-- 03 완성 -->
-  <section id="step3">
-    <div class="act-title">
-      <div class="eyebrow"><i></i><span class="slug">Final Proof · 03</span></div>
-      <h1>시험지가 완성되었습니다</h1>
-      <p>미리보기로 검토하고, 원하는 형식으로 저장하세요</p>
-    </div>
+  <div class="cta-bar"><div class="in">
+    <p class="cta-note">시험지 전체를 문항 단위로 분석해요 · 내 Claude 사용량으로 실행되고 처음 한 번 허용 창이 떠요</p>
+    <button type="button" class="btn block" id="analyzeBtn">분석 시작</button>
+    <p class="diag-line"><button type="button" id="diagBtn">진단 정보 복사</button></p>
+  </div></div>
+</section>
 
-    <div class="desk">
-      <span class="slug">Editor's desk</span>
-      <button type="button" class="btn ghost" id="editToggle">직접 수정</button>
-      <span class="gap"></span>
-      <span class="slug">Export</span>
-      <div class="seg" id="exportMode" style="min-width:250px">
-        <button type="button" class="on" data-v="all">문제 + 정답</button>
-        <button type="button" data-v="q">문제지만</button>
-        <button type="button" data-v="a">정답지만</button>
-      </div>
-    </div>
-    <div class="redo-box" id="redoBox">
-      <span class="slug" id="redoLabel">1번 다시 출제</span>
-      <select id="redoPassage"></select>
-      <input type="text" id="redoNote" placeholder="원하는 방향 (선택) — 예) 빈칸을 앞 문장으로, 오답 더 매력적으로">
-      <button type="button" class="btn" id="redoGo">출제</button>
-      <button type="button" class="btn link" id="redoCancel">취소</button>
-    </div>
-    <div class="sheet-stage">
-      <div id="printArea"><div class="exam-output" id="examOutput"></div></div>
-    </div>
-    <p class="spec-note">2단 편집 · 함초롬바탕 8pt · 여백 7mm — 워드 · HTML(인쇄용) 동일 규격</p>
-    <p class="callcount" id="usageInfo"></p>
+<!-- 화면 4 · 분석 중 -->
+<section class="screen wide" data-s="analyzing">
+  <h1 class="h-title">시험지를 읽고 있어요</h1>
+  <p class="h-sub">문항 하나하나 뜯어보고, 범위에서 지문을 고르는 중이에요.</p>
+  <div class="seq" id="analyzeProgress"></div>
+  <div class="cta-bar"><div class="in">
+    <div class="cta-links"><button type="button" id="backFromAnalyze">이전으로</button></div>
+  </div></div>
+</section>
 
-    <div class="btnbar">
-      <button type="button" class="btn" id="docxBtn">워드(DOCX) 다운로드</button>
-      <button type="button" class="btn ghost" id="htmlBtn">HTML 저장 (인쇄·PDF용)</button>
-      <button type="button" class="btn ghost" id="pdfBtn">인쇄 / PDF</button>
-      <button type="button" class="btn link" id="copyBtn">본문 복사</button>
-      <button type="button" class="btn link" id="resetBtn" style="margin-left:auto">처음부터 새로 만들기</button>
+<!-- 화면 5 · 매칭 확인 -->
+<section class="screen wide" data-s="plan" id="step2">
+  <h1 class="h-title">이렇게 매칭했어요</h1>
+  <p class="h-sub">지문을 바꾸거나 방향을 고칠 수 있어요. 그대로 출제해도 돼요.</p>
+
+  <div id="examMeta"></div>
+
+  <div class="panel plan-panel">
+    <div class="table-scroll">
+      <table class="plan" id="planTable"></table>
     </div>
-  </section>
+    <p class="edit-note">점선이 있는 칸은 눌러서 바로 고칠 수 있어요 — 고친 내용 그대로 출제에 반영돼요</p>
+  </div>
+  <div class="notice" id="staleNotice">자료가 바뀌었어요 — <b>다시 분석</b>하면 새 자료가 반영돼요</div>
 
-</div>
+  <div class="cta-bar"><div class="in">
+    <button type="button" class="btn block" id="generateBtn">이 계획으로 출제</button>
+    <div class="cta-links">
+      <button type="button" id="reAnalyzeBtn">다시 분석</button>
+      <button type="button" id="editInputsBtn">자료 수정</button>
+    </div>
+  </div></div>
+</section>
 
-<div class="foot">
-  <span class="en">ORUN ENGLISH</span>
-  <span class="note">생성된 문항은 반드시 검수 후 사용하세요</span>
-</div>
+<!-- 화면 6 · 완성 -->
+<section class="screen wide" data-s="result" id="step3">
+  <h1 class="h-title">시험지가 완성됐어요</h1>
+  <p class="h-sub">문항 위에 마우스를 올리면 다시 출제하거나 지울 수 있어요.</p>
+
+  <div class="seq" id="genProgress"></div>
+
+  <div class="desk">
+    <span class="slug">Editor's desk</span>
+    <button type="button" class="btn ghost" id="editToggle">직접 수정</button>
+    <span class="gap"></span>
+    <span class="slug">Export</span>
+    <div class="seg" id="exportMode" style="min-width:250px">
+      <button type="button" class="on" data-v="all">문제 + 정답</button>
+      <button type="button" data-v="q">문제지만</button>
+      <button type="button" data-v="a">정답지만</button>
+    </div>
+  </div>
+  <div class="redo-box" id="redoBox">
+    <span class="slug" id="redoLabel">1번 다시 출제</span>
+    <select id="redoPassage"></select>
+    <input type="text" id="redoNote" placeholder="원하는 방향 (선택) — 예) 빈칸을 앞 문장으로, 오답 더 매력적으로">
+    <button type="button" class="btn" id="redoGo">출제</button>
+    <button type="button" class="btn link" id="redoCancel">취소</button>
+  </div>
+  <div class="sheet-stage">
+    <div id="printArea"><div class="exam-output" id="examOutput"></div></div>
+  </div>
+  <p class="spec-note">2단 편집 · 함초롬바탕 8pt · 여백 7mm — 워드 · HTML(인쇄용) 동일 규격</p>
+  <p class="callcount" id="usageInfo"></p>
+
+  <div class="cta-bar"><div class="in">
+    <button type="button" class="btn block" id="docxBtn">워드로 저장</button>
+    <div class="cta-links">
+      <button type="button" id="htmlBtn">HTML 저장</button>
+      <button type="button" id="pdfBtn">인쇄 / PDF</button>
+      <button type="button" id="copyBtn">본문 복사</button>
+      <button type="button" id="resetBtn">처음부터</button>
+    </div>
+  </div></div>
+</section>
+
+<!-- 화면과 무관하게 아래에 뜨는 오류 -->
+<div class="error-box" id="analyzeError" role="alert"></div>
+<div class="error-box" id="genError" role="alert"></div>
 <div class="toast-wrap" id="toastWrap" aria-live="polite"></div>
 
 <script>
@@ -1440,7 +1580,8 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
     const el = $(id);
     el.textContent = msg;
     el.classList.add("show");
-    el.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    clearTimeout(el._hide);
+    el._hide = setTimeout(() => el.classList.remove("show"), 9000);
   }
   function clearError(id) { $(id).classList.remove("show"); }
   // ---------- 진행 표시 (단계 · 프로그레스바 · 예상 시간) ----------
@@ -1850,6 +1991,33 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
       };
     });
   }
+  // ---------- 화면 라우터 (토스식: 한 화면에 한 가지) ----------
+  let screenStack = [];
+  function currentScreen() { const el = document.querySelector(".screen.on"); return el ? el.dataset.s : ""; }
+  function showScreen(name, opts) {
+    opts = opts || {};
+    const cur = currentScreen();
+    if (cur === name) return;
+    if (cur && !opts.replace) screenStack.push(cur);
+    if (opts.reset) screenStack = [];
+    document.querySelectorAll(".screen").forEach(sc => sc.classList.toggle("on", sc.dataset.s === name));
+    window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
+    $("backBtn").hidden = !screenStack.length || name === "analyzing" || !!running;
+    updateCta();
+  }
+  function goBack() {
+    if (running) return;
+    const prev = screenStack.pop();
+    if (prev) showScreen(prev, { replace: true });
+  }
+  function updateCta() {
+    const examLoading = !!(examPdf && examPdf.status === "loading");
+    $("nextExam").disabled = examLoading || !examText();
+    const scopeLoading = scopeItems.some(i => i.status === "loading");
+    $("nextScope").disabled = scopeLoading || !(readyScopeItems().length || $("scopeText").value.trim());
+  }
+  setInterval(updateCta, 400);
+
   function setStep(n) {
     document.querySelectorAll("#steps .step").forEach(el => {
       el.classList.toggle("on", Number(el.dataset.step) <= n);
@@ -1865,9 +2033,8 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
   function reveal(id) {
     const el = $(id);
     el.classList.add("show");
-    el.classList.remove("reveal");
-    void el.offsetWidth;
-    el.classList.add("reveal");
+    if (id === "step2") showScreen("plan");
+    if (id === "step3") showScreen("result");
   }
   function sanitizeAndFold(html) {
     const box = document.createElement("div");
@@ -2110,7 +2277,7 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
     const c = window.claude;
     return [
       "ORUN 동형 모의고사 진단",
-      "build: 2026-09-05 14:09",
+      "build: 2026-09-05 21:51",
       "url: " + location.href,
       "runtime: " + RUNTIME + (c ? "" : " (window.claude 없음)"),
       "claude.use: " + (c && typeof c.use === "function" ? "있음" : "없음"),
@@ -2507,6 +2674,7 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
     const pct = () => 4 + 92 * done / totalCalls;
 
     sessionId = String(Date.now());
+    showScreen("analyzing");
     analyzeProg.start("시험지 " + examChunks.length + "부분 · 범위 자료 " + scopeChunks.length + "부분 준비 (총 " + totalCalls + "회 호출 예정)");
     try {
       // (1) 시험지 분석
@@ -2567,13 +2735,13 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
       renderPlan(analysis);
       setStep(2);
       reveal("step2");
-      $("step2").scrollIntoView({ behavior: "smooth" });
       renderUsage();
       saveSession({ analysis, pipe, calls, output: null, title: info.title || "" });
       pushHistory();
       toast("분석이 끝났습니다 — 매칭 계획을 확인해 주세요 (Claude " + calls + "회 호출)");
     } catch (e) {
       analyzeProg.stop();
+      showScreen("options", { replace: true });
       if (e.message === "__aborted__") toast("분석을 중단했습니다");
       else showError("analyzeError", e.message);
     } finally {
@@ -2724,11 +2892,10 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
       renderUsage();
       saveSession({ output: cleanOutputHtml(), calls });
       pushHistory();
-      $("step3").scrollIntoView({ behavior: "smooth" });
       toast("시험지가 완성되었습니다 — 문항 위에 마우스를 올리면 다시 출제·삭제할 수 있습니다");
     } catch (e) {
       genProg.stop();
-      if (e.message === "__aborted__") { toast("출제를 중단했습니다"); $("step3").classList.remove("show"); }
+      if (e.message === "__aborted__") { toast("출제를 중단했습니다"); showScreen("plan", { replace: true }); }
       else showError("genError", e.message);
     } finally {
       running = null;
@@ -2993,7 +3160,7 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
     try { await navigator.clipboard.writeText(new DOMParser().parseFromString(outputHtml(), "text/html").body.innerText); toast("본문을 복사했습니다 — 한글·워드에 붙여넣을 수 있습니다"); }
     catch (_) { toast("복사에 실패했습니다 — 브라우저 권한을 확인해 주세요", "err"); }
   });
-  $("editInputsBtn").addEventListener("click", () => { $("step1").scrollIntoView({ behavior: "smooth" }); });
+  $("editInputsBtn").addEventListener("click", () => { showScreen("exam"); });
   $("resetBtn").addEventListener("click", () => {
     if (!confirm("올린 자료와 분석·출제 결과를 모두 지우고 처음부터 시작할까요?")) return;
     exitEditMode(); $("redoBox").classList.remove("show"); lastItems = [];
@@ -3008,7 +3175,7 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
     $("staleNotice").classList.remove("show");
     clearSession();
     setStep(1);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    showScreen("home", { replace: true, reset: true });
     toast("처음부터 다시 시작합니다");
   });
   window.addEventListener("beforeunload", (e) => { if (running) { e.preventDefault(); e.returnValue = ""; } });
@@ -3064,7 +3231,8 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
       $("step3").classList.remove("show");
     }
     $("restoreBanner").classList.remove("show");
-    $(sess.output ? "step3" : "step2").scrollIntoView({ behavior: "smooth" });
+    screenStack = ["home"];
+    $("backBtn").hidden = false;
   }
 
   // ---------- 이전 작업 복구 ----------
@@ -3091,6 +3259,14 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
 
   bindExamPaste();
   bindOptions();
+  $("startBtn").addEventListener("click", () => showScreen("exam"));
+  $("nextExam").addEventListener("click", () => { if (!$("nextExam").disabled) showScreen("scope"); });
+  $("nextScope").addEventListener("click", () => { if (!$("nextScope").disabled) showScreen("options"); });
+  $("backBtn").addEventListener("click", goBack);
+  $("backFromAnalyze").addEventListener("click", () => { if (running) running.abort(); else showScreen("options", { replace: true }); });
+  $("examPaste").addEventListener("input", updateCta);
+  $("scopeText").addEventListener("input", updateCta);
+  updateCta();
   renderHistory();
   $("editToggle").addEventListener("click", () => { if (!requireOutput()) return; editing ? exitEditMode() : enterEditMode(); });
   $("exportMode").querySelectorAll("button").forEach(btn => btn.addEventListener("click", () => {
