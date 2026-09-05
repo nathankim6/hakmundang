@@ -89,8 +89,8 @@ const scenes = {
   <g><circle cx="196" cy="55" r="20" fill="${c}" opacity=".18"/>
    ${callout({x:196,y:55,tx:196,ty:104,text:"1572년, 없던 별",c:d})}</g>
   ${label({x:56,y:172,text:"지상계 — 변한다",c:d,size:12,anchor:"start"})}
-  ${person({x:120,y:250,s:.85,c,pose:"up",hair:"cap",face:"oh",brow:"up"})}
-  ${person({x:520,y:250,s:.85,c,pose:"point",hair:"short",face:"glad",brow:"up",flip:1})}
+  ${person({x:120,y:244,s:.85,c,pose:"up",hair:"cap",face:"oh",brow:"up"})}
+  ${person({x:520,y:244,s:.85,c,pose:"point",hair:"short",face:"glad",brow:"up",flip:1})}
   <g transform="translate(470 216) rotate(-28)">
    <rect x="0" y="-7" width="56" height="14" rx="6" fill="#fff" stroke="${d}" stroke-width="2.4"/>
    <rect x="52" y="-10" width="16" height="20" rx="4" fill="${c}" stroke="${d}" stroke-width="2.4"/></g>

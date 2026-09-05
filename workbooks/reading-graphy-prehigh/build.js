@@ -56,7 +56,6 @@ if (BOOK) {
   return `<div class="ub">
    <div class="uh"><span class="f">Field ${uu.U.no}</span>
     <b>${esc(uu.U.field)}</b><em>${uu.U.ko}</em><span class="pg">${base+1}</span></div>
-   <div class="tag">${uu.U.tagline}</div>
    <table class="ul">${rows}
     <tr class="ans"><td class="n">A</td><td class="t">정답과 해설<em>지문 전문 해석 포함</em></td>
      <td class="p">${base+26}</td></tr></table></div>`;
@@ -72,7 +71,6 @@ if (BOOK) {
    <span>4 플로차트</span><span>5 패러프레이즈</span><span>6 Check Up</span>
   </div>
   <div class="toc2">${col}</div>
-  <div class="rf" style="border:0"><span></span><b></b><span>옳은영어 ORUN ENGLISH</span></div>
  </div>`);
 }
 

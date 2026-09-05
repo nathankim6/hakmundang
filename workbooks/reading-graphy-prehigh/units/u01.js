@@ -154,7 +154,7 @@ module.exports = {
    ],
    [
     "⑫ something has quietly been given up",
-    "The translator has ______ something without saying so.",
+    "The translator ______ something quietly.",
     "sacrificed"
    ],
    [
@@ -512,12 +512,12 @@ module.exports = {
   "para": [
    [
     "⑧ nothing seems to stand between us and it",
-    "The image feels ______ — as if nothing were in the way.",
+    "The image feels ______, as if unfiltered.",
     "direct"
    ],
    [
     "⑫ it is still a version of the thing, not the thing",
-    "A picture only ______ an object; it never becomes one.",
+    "A picture ______ an object; it is not one.",
     "represents"
    ],
    [
@@ -527,7 +527,7 @@ module.exports = {
    ],
    [
     "③ Words are clearly made by people.",
-    "Language is ______, not something found in nature.",
+    "Language is ______, not natural.",
     "artificial"
    ],
    [
@@ -869,7 +869,7 @@ module.exports = {
   "para": [
    [
     "④ make the long hours offstage serve the short hours",
-    "Practice should ______ the performance, not replace it.",
+    "Practice should ______ the real thing.",
     "support"
    ],
    [
@@ -879,7 +879,7 @@ module.exports = {
    ],
    [
     "⑭ without the bolts, we never leave the ground",
-    "Without solid ______, no free performance is possible.",
+    "Without solid ______, freedom is impossible.",
     "basics"
    ],
    [
@@ -1237,7 +1237,7 @@ module.exports = {
    ],
    [
     "⑤ The parents burn every spinning wheel they find.",
-    "Out of ______, the parents removed every possible risk.",
+    "Out of ______, the parents removed every risk.",
     "fear"
    ],
    [
@@ -1588,12 +1588,12 @@ module.exports = {
    ],
    [
     "⑥ you come to love books you would not have chosen",
-    "Reading together widens the ______ of books you enjoy.",
+    "Reading together widens the ______ of books.",
     "range"
    ],
    [
     "⑪ It grows out of a process.",
-    "Understanding is built ______, not given all at once.",
+    "Understanding is built ______, not given.",
     "gradually"
    ]
   ],

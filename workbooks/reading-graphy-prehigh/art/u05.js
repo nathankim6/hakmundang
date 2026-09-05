@@ -49,9 +49,9 @@ const scenes = {
  twoq:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
   ${panel({x:150,y:94,w:340,h:56,c:d,fill:"#fff",label:""})}
   ${label({x:320,y:130,text:"같은 사실",c:d,size:16})}
-  ${person({x:86,y:250,s:.9,c,pose:"point",hair:"short",face:"smile"})}
+  ${person({x:86,y:244,s:.9,c,pose:"point",hair:"short",face:"smile"})}
   ${bubble({x:14,y:16,w:196,h:52,lines:["이것은 어떻게","생겨났는가?"],c:d,tail:"bl",size:12})}
-  ${person({x:556,y:250,s:.9,c,pose:"point",hair:"bob",face:"smile",flip:1})}
+  ${person({x:556,y:244,s:.9,c,pose:"point",hair:"bob",face:"smile",flip:1})}
   ${bubble({x:432,y:16,w:196,h:52,lines:["우리는 어떻게","살아야 하는가?"],c:d,tail:"br",size:12})}
   ${arrow({x1:142,y1:122,x2:144,y2:122,c:d,w:1})}
   ${arrow({x1:120,y1:150,x2:186,y2:126,c:d,w:4,dash:"8 6"})}

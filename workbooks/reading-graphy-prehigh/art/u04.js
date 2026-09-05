@@ -103,15 +103,15 @@ const scenes = {
  /* 20 — 17시간을 넘어가는 실수 곡선 */
  burnout:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
   <path d="M76 208V44M76 208h520" stroke="${d}" stroke-width="3.4" stroke-linecap="round"/>
-  <path d="M92 190l88-6 88 4 88 24 88 44 74 26" stroke="${c}" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M92 190l88-4 88-6 88-18 88-32 74-38" stroke="${c}" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M336 44v164" stroke="${d}" stroke-width="3" stroke-dasharray="7 6" opacity=".7"/>
   ${label({x:336,y:36,text:"깨어 있은 지 17시간",c:d,size:11.5})}
   ${label({x:60,y:52,text:"많음",c:d,size:10.5,anchor:"end"})}
   ${label({x:60,y:212,text:"적음",c:d,size:10.5,anchor:"end"})}
   ${label({x:36,y:130,text:"실수",c:d,size:11,anchor:"middle"})}
-  ${person({x:170,y:262,s:.62,c,pose:"down",hair:"short",face:"smile"})}
-  ${person({x:498,y:262,s:.62,c,pose:"think",hair:"short",face:"worry",brow:"down"})}
-  ${bubble({x:388,y:56,w:186,h:38,lines:["가벼운 취기 수준"],c:d,tail:"bl",size:11.5})}
+  ${person({x:170,y:244,s:.62,c,pose:"down",hair:"short",face:"smile"})}
+  ${person({x:498,y:244,s:.62,c,pose:"think",hair:"short",face:"worry",brow:"down"})}
+  ${bubble({x:388,y:38,w:186,h:36,lines:["가벼운 취기 수준"],c:d,tail:"bl",size:11.5})}
   ${label({x:320,y:276,text:"아무도 지치지 않는다는 전제 위에 세운 체계는 잘못 지어진 것이다",c,size:11.5})}</svg>`,
 };
 

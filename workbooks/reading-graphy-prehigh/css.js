@@ -413,4 +413,26 @@ table.ul td.p{width:26px;text-align:right;font-size:8.2pt;font-weight:700;color:
 table.ul tr.ans td{border-bottom:0;padding-top:5px}
 table.ul tr.ans td.n{color:var(--ac)}
 table.ul tr.ans td.t{font-weight:700;color:var(--ac)}
+
+/* ── 합본 차례: 12유닛 60강을 한 면에 ── */
+.page.toc{padding:12mm 14mm 7mm}
+.page.toc .rh{margin-bottom:5mm}
+
+.page.toc .sechd{font-size:14pt}
+.tocsub{margin-bottom:2.3mm}
+.steps{margin-bottom:2.8mm;padding:4.5px 10px}
+.toc2{column-count:2;column-gap:8mm}
+.ub{margin-bottom:1.2mm}
+.uh{padding-bottom:2.5px;margin-bottom:1px;gap:5px}
+.uh b{font-size:8.7pt}
+.uh em{font-size:6.9pt}
+.uh .pg{font-size:8pt}
+.ub .tag{display:none}
+.uh .f{font-size:6.2pt;letter-spacing:.08em}
+table.ul{font-size:7.7pt}
+table.ul td{padding:1px 0}
+table.ul td.t{line-height:1.2}
+table.ul td.t em{font-size:6.8pt;margin-left:4px}
+table.ul td.p{font-size:7.5pt}
+table.ul tr.ans td{padding-top:1.4px}
 `;

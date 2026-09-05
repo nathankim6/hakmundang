@@ -65,7 +65,7 @@ const scenes = {
   <circle cx="368" cy="86" r="9" fill="${c}"/>
   <path d="M472 128l18-30 16 22 13-15 15 23z" fill="${c}" opacity=".38"/>
   <path d="M468 132h72M486 84h32" stroke="${d}" stroke-width="3" stroke-linecap="round" opacity=".6"/>
-  ${person({x:320,y:262,s:.6,c,pose:"hold",hair:"cap",face:"smile"})}
+  ${person({x:320,y:244,s:.6,c,pose:"hold",hair:"cap",face:"smile"})}
   ${label({x:320,y:276,text:"달리 해 보기엔 대가가 너무 큰 일을 미리 겪는다",c,size:11.5})}</svg>`,
  /* 28 — 같은 두 시간 */
  wellbeing:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
@@ -97,7 +97,7 @@ const scenes = {
   ${label({x:320,y:270,text:"우리는 무엇이 어려운지 판단하는 데 서투르다",c,size:12.5})}</svg>`,
  /* 30 — 말하지 않은 말 */
  unsaid:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
-  ${person({x:92,y:250,s:.95,c,pose:"open",hair:"short",face:"flat"})}
+  ${person({x:92,y:244,s:.95,c,pose:"open",hair:"short",face:"flat"})}
   ${bubble({x:140,y:36,w:250,h:46,lines:["“좌석이 편하더라.”"],c:d,fill:c,tail:"bl",size:14})}
   ${arrow({x1:262,y1:112,x2:262,y2:150,c:d,w:3.4,dash:"6 6"})}
   ${bubble({x:140,y:158,w:250,h:44,lines:["“영화는 별로였어.”"],c:d,fill:"#fff",tail:"none",size:13.5})}

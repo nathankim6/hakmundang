@@ -100,9 +100,9 @@ const scenes = {
    <g transform="translate(${x} ${y})"><rect x="-13" y="-9" width="26" height="18" rx="3" fill="#fff" stroke="${d}" stroke-width="2.2"/><path d="M-13-7l13 9 13-9" stroke="${d}" stroke-width="2" fill="none"/></g>`}).join("")}
   <circle cx="320" cy="140" r="26" fill="${c}"/>
   ${label({x:320,y:186,text:"보스턴 · 1772",c:d,size:11})}
-  ${person({x:96,y:250,s:.66,c,pose:"hold",hair:"cap",face:"flat"})}
+  ${person({x:96,y:244,s:.66,c,pose:"hold",hair:"cap",face:"flat"})}
   ${prop.paper(108,204,.9,c)}
-  ${person({x:552,y:250,s:.66,c,pose:"hold",hair:"short",face:"flat",flip:1})}
+  ${person({x:552,y:244,s:.66,c,pose:"hold",hair:"short",face:"flat",flip:1})}
   ${prop.paper(540,204,.9,c)}
   ${label({x:320,y:272,text:"통로 없는 분노는 그저 사그라진다",c,size:12.5})}</svg>`,
 };

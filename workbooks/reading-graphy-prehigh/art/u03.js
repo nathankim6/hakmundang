@@ -45,7 +45,7 @@ const scenes = {
   <path d="M376 172c34-10 24-48 64-52s48 26 86 18" stroke="${c}" stroke-width="8" fill="none" stroke-linecap="round"/>
   <path d="M376 192c52-8 44-32 92-36s56 20 90 12" stroke="${c}" stroke-width="8" fill="none" stroke-linecap="round" opacity=".35"/>
   ${[[376,172],[412,162],[440,120],[500,124],[526,138]].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="7" fill="#fff" stroke="${d}" stroke-width="3"/>`).join("")}
-  ${person({x:320,y:262,s:.72,c,pose:"think",hair:"short",face:"smile"})}
+  ${person({x:320,y:244,s:.66,c,pose:"think",hair:"short",face:"smile"})}
   ${tag({x:320,y:120,text:"버린 것",c})}
   ${label({x:320,y:274,text:"지도는 도시가 아니다 — 무엇을 뺐는지 먼저 묻는다",c,size:12})}</svg>`,
  /* 12 — 농담이 갈라지는 지점 */
@@ -74,7 +74,7 @@ const scenes = {
   ${[[408,178],[448,152],[490,120],[534,90],[576,52]].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="5" fill="${c}"/>`).join("")}
   ${label({x:386,y:52,text:"100",c:d,size:10,anchor:"end"})}${label({x:386,y:190,text:"90",c:d,size:10,anchor:"end"})}
   ${tag({x:320,y:112,text:"같은 자료",c})}
-  ${person({x:320,y:258,s:.66,c,pose:"think",hair:"bun",face:"flat"})}
+  ${person({x:320,y:244,s:.66,c,pose:"think",hair:"bun",face:"flat"})}
   ${label({x:320,y:274,text:"숫자는 스스로 말하지 않는다",c,size:12.5})}</svg>`,
  /* 14 — 층을 지나는 신호 */
  neural:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
@@ -87,8 +87,8 @@ const scenes = {
   ${label({x:240,y:270,text:"가장자리",c:d,size:11})}
   ${label({x:380,y:246,text:"귀 · 눈",c:d,size:11})}
   ${bubble({x:520,y:52,w:104,h:40,lines:["고양이!"],c:d,tail:"bl",size:12.5})}
-  ${person({x:566,y:250,s:.66,c,pose:"think",hair:"short",face:"flat"})}
-  ${thought({x:452,y:186,w:150,h:32,lines:["왜 그렇게 답했지?"],c:d,size:10.5,side:"r"})}
+  ${person({x:588,y:244,s:.66,c,pose:"think",hair:"short",face:"flat"})}
+  ${thought({x:400,y:182,w:150,h:32,lines:["왜 그렇게 답했지?"],c:d,size:10.5,side:"r"})}
   ${label({x:250,y:24,text:"층을 지날수록 더 큰 무늬를 본다",c:d,size:11.5})}</svg>`,
  /* 15 — 한쪽으로만 넓어지는 방 */
  feed:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">

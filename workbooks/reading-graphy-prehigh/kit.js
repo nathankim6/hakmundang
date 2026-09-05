@@ -91,7 +91,8 @@ function stat(o = {}) {
 }
 function tag(o = {}) {
   const { x, y, text, c = "#333", fill = "", size = 11.5, pad = 11 } = o;
-  const w = String(text).length * size * 0.62 + pad * 2;
+  const w = [...String(text)].reduce((a, ch) =>
+    a + (/[\u1100-\u11FF\u2E80-\u9FFF\uAC00-\uD7AF\uFF01-\uFF60]/.test(ch) ? size : size * 0.58), 0) + pad * 2;
   return `<g><rect x="${x - w / 2}" y="${y - size}" width="${w}" height="${size * 1.9}" rx="${size}" fill="${fill || c}" ${fill ? `stroke="${c}" stroke-width="2.2"` : ""}/>
     <text x="${x}" y="${y + size * 0.42}" font-size="${size}" font-weight="800" fill="${fill ? c : "#fff"}" text-anchor="middle">${esc(text)}</text></g>`;
 }

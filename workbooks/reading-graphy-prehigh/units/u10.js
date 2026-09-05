@@ -491,7 +491,7 @@ module.exports = {
  ],
  fl: {
   model: { n:"⑤",
-   toks: [["Longer visits","s"],["tend to produce","v"],["fuller baskets","o"],
+   toks: [["Longer visits","s"],["tend to produce","v"],["fuller baskets",null],
           ["which","s2"],["is","v2"],["the only measure that matters here","m"]],
    ko:"머무는 시간이 길수록 장바구니는 더 차고, 그것이 여기서 유일하게 중요한 척도다." },
   drill: [
@@ -627,7 +627,7 @@ module.exports = {
  fl: {
   model: { n:"⑩",
    toks: [["A luxury","s"],["that","c"],["everyone","s2"],["can afford","v2"],
-          ["stops","v"],["performing the job it was bought for","o"]],
+          ["stops","v"],["performing the job it was bought for",null]],
    ko:"누구나 살 수 있는 사치품은 그것이 사들여진 목적을 더는 수행하지 못한다." },
   drill: [
    { n:"③", en:"It fails for a small family of goods, and the failure is instructive.",

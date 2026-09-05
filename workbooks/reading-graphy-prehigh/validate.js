@@ -71,6 +71,8 @@ for (const nn of nos) {
       if (CIR.indexOf(m[1]) >= n) err(U.no, L, `para 번호 ${m[1]} 범위 밖`);
       if (p[0].replace(/^[①-⑳]\s/, "").length > 52) err(U.no, L, `para 원문이 52자 초과`);
       if (p[1].length > 56) err(U.no, L, `para 문장이 56자 초과`);
+      const filled = p[1].replace("______", p[2]);
+      if (filled.length > 52) err(U.no, L, `para 정답 채운 문장이 52자 초과 (${filled.length}자)`);
       if (!p[1].includes("______")) err(U.no, L, `para 문장에 빈칸이 없음`);
       if (!pb.includes(p[2])) err(U.no, L, `para 정답 "${p[2]}" 가 보기에 없음`);
     });
