@@ -79,7 +79,13 @@ python3 fill.py book.pdf                 # 면별 채움률 (현재 30면 83–1
 python3 clip.py                          # 잘림 검사 — 반드시 "잘린 면 없음" 이어야 한다
 python3 wrap.py book.pdf                 # 패러프레이즈 표가 한 줄에 들어가는지
 python3 legend.py book.pdf               # Check Up 유형 범례가 한 줄인지
+node validate.js                         # 유닛 데이터 규격 (빌드 전에 먼저 돌린다)
 ```
+
+`validate.js` 는 PDF 를 뽑기 전에 데이터만으로 잡을 수 있는 것을 잡는다.
+지문·해석 줄 수, 지문 길이(165–210 단어), 삽화·픽토그램 연결, defOrder 순열,
+drill 문장이 지문과 글자까지 같은지, 플로차트·패러프레이즈 정답이 보기 안에 있는지,
+wtype/stype 이 Check Up 정답 번호와 맞는지 등을 본다.
 
 ## 한 권으로 묶기
 

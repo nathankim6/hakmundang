@@ -1681,7 +1681,7 @@ module.exports = {
     },
     {
      "n": "⑨",
-     "en": "Writing about a work, and talking about it with other students, forces you to look more closely and to consider views that are not your own.",
+     "en": "Writing about a work, and talking about it with a teacher and with other students, forces you to look more closely and to consider views that are not your own.",
      "ans": "S Writing … and talking … · △V forces · O you · M to look more closely, to consider views that are not your own",
      "ko": "작품에 대해 쓰고 다른 학생들과 이야기하는 일은 더 가까이 보고 다른 관점을 고려하게 만든다."
     },
