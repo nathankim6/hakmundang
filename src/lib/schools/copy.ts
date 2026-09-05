@@ -366,3 +366,57 @@ export const CALC = {
   cols: { grade: "등급", seats: "인원", cum: "누적" },
   foot: "2025학년도 고1부터 5등급제예요. 1등급 10%, 2등급까지 34%, 3등급까지 66%, 4등급까지 90%. 상위 10% 안이어야 하니 소수점은 버립니다.",
 };
+
+/* ── 우리가 본 기록(입력 화면) ───────────── */
+
+export const EDITOR = {
+  pickSchool: "학교를 골라 주세요",
+  pickHint: "적어 둘 학교를 위에서 골라 주세요. 한 학교에 10분이면 충분해요.",
+  recorded: "직접 적은 학교",
+  progress: (total: number, filled: number) => `전체 ${total}곳 중 직접 적은 곳 ${filled}곳`,
+  pct: (p: number) => `${p}% 채움`,
+  saved: "저장됐어요",
+  saveFailed: "저장이 안 됐어요. 브라우저 저장공간을 확인해 주세요.",
+  reset: "기록 지우기",
+  resetConfirm: (name: string) => `${name}에 적어 둔 걸 지워요. 계속할까요?`,
+  fact: { en: "FROM DISCLOSURE", ko: "공시 자료", hint: "학교알리미에서 알아서 채워져요. 손댈 수 없습니다.", tag: "공시, 읽기만" },
+  character: {
+    phHigh: "이 학교를 한 문단으로 설명한다면? 설명회 첫 장에 그대로 실려요.",
+    phMid: "이 중학교를 한 문단으로 설명한다면? 분위기, 진학 성향, 영어 수업 특징.",
+  },
+  subjects: {
+    phHigh: "난이도에 대한 설명. 성취도 분포에서 읽어낸 것",
+    phMid: "성취도 분포에서 읽어낸 것. 중학교는 등급이 없어요.",
+  },
+  scope: { add: "시험 하나 더", termHigh: "1학기 중간", termMid: "3학년 1학기 중간", ph: "교과서 Lesson 1~2, 부교재 Unit 1~4 (총 30지문)" },
+  middle: {
+    hint: "중학교는 석차등급이 없어요. 성적표엔 성취도 A~E만 남습니다.",
+    aRatio: "영어 성취도 A 비율",
+    ratio: "지필 : 수행",
+    freeSemester: "지필평가 없는 학기",
+    textbook: "교과서",
+    ph: { aRatio: "예: 32%", ratio: "예: 60 : 40", freeSemester: "예: 1학년 전체 (자유학년)", textbook: "예: 동아 윤정미" },
+  },
+  cutoff: {
+    hint: "근거를 꼭 같이 적어요. 추정치가 학교 발표처럼 보이면 안 되니까요.",
+    g1: "1등급",
+    g2: "2등급",
+    basis: "기준",
+    ph: { g1: "87~91", g2: "63~71", basis: "영어, 원점수 기준" },
+  },
+  features: { add: "한 줄 더", ph: "시험지를 받아 본 사람만 아는 것" },
+  signature: { hint: "문항 유형을 걸어 두면 설명회 자리에서 바로 문제를 뽑을 수 있어요.", add: "문항 하나 더", title: "문제 발문이나 유형 이름", note: "왜 이 문제가 등급을 가르는지", noType: "문항 유형 안 걸기" },
+  fit: { hint: "이건 사실이 아니라 우리 생각으로 표시돼요.", add: "하나 더", phHigh: "어떤 학생에게 맞는 학교인가", phMid: "어떤 학생에게 맞는 중학교인가" },
+  rows: { up: "위로", down: "아래로", remove: "지우기" },
+  stats: { g1: "1학년", classes: "학급", perClass: "학급당", male: "남", female: "여" },
+};
+
+export const BACKUP = {
+  en: "BACKUP",
+  title: "이 브라우저에만 남아요",
+  text: (n: number) =>
+    `직접 적은 ${n}곳이 이 브라우저에 남아 있어요. 다른 컴퓨터에서 쓰거나 백업하려면 파일로 내보내 주세요. 브라우저 데이터를 지우면 같이 사라집니다. 프로그램에 기본으로 들어 있는 학교는 내보내기에 안 들어가요.`,
+  export: "파일로 내보내기",
+  import: "파일 불러오기",
+  imported: (n: number) => `${n}곳을 불러왔어요.`,
+};

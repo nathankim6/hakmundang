@@ -1,10 +1,7 @@
 import { useRef, useState } from "react";
-import {
-  downloadObservations,
-  editedCount,
-  importObservations,
-  useObservations,
-} from "@/lib/schools/store";
+import { downloadObservations, editedCount, importObservations, useObservations } from "@/lib/schools/store";
+import { BACKUP } from "@/lib/schools/copy";
+import { Icon } from "@/components/schools/Art";
 
 /**
  * 관측 입력은 이 브라우저에만 저장된다.
@@ -20,91 +17,40 @@ export function BackupPanel() {
   const onFile = async (file: File) => {
     const text = await file.text();
     const result = importObservations(text);
-    if (result.status === "ok") {
-      setMsg({ tone: "ok", text: `${result.count}곳을 불러왔습니다.` });
-    } else {
-      setMsg({ tone: "err", text: result.reason });
-    }
+    if (result.status === "ok") setMsg({ tone: "ok", text: BACKUP.imported(result.count) });
+    else setMsg({ tone: "err", text: result.reason });
     if (fileRef.current) fileRef.current.value = "";
   };
 
   return (
-    <div
-      style={{
-        background: "var(--paper)",
-        borderLeft: "2px solid var(--yellow-hi)",
-        padding: "18px 22px",
-        margin: "34px 0 0",
-      }}
-    >
-      <div
-        style={{
-          fontFamily: "'IBM Plex Mono', monospace",
-          fontSize: 9.5,
-          letterSpacing: ".2em",
-          textTransform: "uppercase",
-          color: "var(--muted)",
-          marginBottom: 8,
-        }}
-      >
-        Backup · 이 브라우저에만 남습니다
-      </div>
-      <p style={{ margin: "0 0 14px", fontSize: 13.5, maxWidth: "62ch" }}>
-        직접 적으신 <strong style={{ color: "var(--ink)" }}>{count}곳</strong>이 이 브라우저에
-        남아 있습니다. 다른 컴퓨터에서 쓰시거나 백업하시려면 파일로 내보내 주세요. 브라우저
-        데이터를 지우면 같이 사라집니다. 프로그램에 기본으로 들어 있는 학교는 내보내기에 안
-        들어갑니다.
-      </p>
+    <div className="orun-callout" style={{ margin: "34px 0 0" }}>
+      <Icon name="folder" size={19} style={{ color: "var(--ink)", marginTop: 1 }} />
+      <div>
+        <div className="orun-callout__label">{BACKUP.en}</div>
+        <div style={{ fontSize: 15, fontWeight: 700, color: "var(--ink)", marginBottom: 6 }}>{BACKUP.title}</div>
+        <p style={{ maxWidth: "62ch" }}>{BACKUP.text(count)}</p>
 
-      <div style={{ display: "flex", gap: 9, flexWrap: "wrap", alignItems: "center" }}>
-        <button
-          onClick={downloadObservations}
-          disabled={count === 0}
-          style={{
-            padding: "9px 16px",
-            border: "none",
-            background: count ? "var(--ink)" : "var(--hair)",
-            color: count ? "#fff" : "var(--muted)",
-            fontSize: 13,
-            fontWeight: 700,
-            cursor: count ? "pointer" : "not-allowed",
-          }}
-        >
-          파일로 내보내기
-        </button>
-        <button
-          onClick={() => fileRef.current?.click()}
-          style={{
-            padding: "9px 16px",
-            border: "1px solid var(--hair)",
-            background: "transparent",
-            color: "var(--body)",
-            fontSize: 13,
-            cursor: "pointer",
-          }}
-        >
-          파일 불러오기
-        </button>
-        <input
-          ref={fileRef}
-          type="file"
-          accept="application/json,.json"
-          onChange={(e) => {
-            const f = e.target.files?.[0];
-            if (f) void onFile(f);
-          }}
-          style={{ display: "none" }}
-        />
-        {msg && (
-          <span
-            style={{
-              fontSize: 12.5,
-              color: msg.tone === "ok" ? "var(--blue)" : "var(--brick)",
+        <div style={{ display: "flex", gap: 9, flexWrap: "wrap", alignItems: "center", marginTop: 14 }}>
+          <button className="orun-btn orun-btn--sm orun-btn--primary" onClick={downloadObservations} disabled={count === 0}>
+            <Icon name="download" size={14} />
+            {BACKUP.export}
+          </button>
+          <button className="orun-btn orun-btn--sm" onClick={() => fileRef.current?.click()}>
+            <Icon name="folder" size={14} />
+            {BACKUP.import}
+          </button>
+          <input
+            ref={fileRef}
+            type="file"
+            accept="application/json,.json"
+            onChange={(e) => {
+              const f = e.target.files?.[0];
+              if (f) void onFile(f);
             }}
-          >
-            {msg.text}
-          </span>
-        )}
+            style={{ display: "none" }}
+          />
+          {msg && <span style={{ fontSize: 12.5, color: msg.tone === "ok" ? "var(--blue)" : "var(--brick)" }}>{msg.text}</span>}
+        </div>
       </div>
     </div>
   );

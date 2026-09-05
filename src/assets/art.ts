@@ -90,6 +90,7 @@ const ICONS = {
   /* UI */
   arrowRight: (c) => `<path d="M5 12h14M13 6l6 6-6 6"/><circle cx="5" cy="12" r="1.2" fill="${c.accent}" stroke="none"/>`,
   arrowLeft: (c) => `<path d="M19 12H5M11 6l-6 6 6 6"/><circle cx="19" cy="12" r="1.2" fill="${c.accent}" stroke="none"/>`,
+  arrowDown: (c) => `<path d="M12 4v15M6 13l6 6 6-6"/><path d="M5 2.5h14" stroke="${c.accent}" stroke-width="2.2"/>`,
   arrowUp: (c) => `<path d="M12 20V5M6 11l6-6 6 6"/><path d="M5 21.5h14" stroke="${c.accent}" stroke-width="2.2"/>`,
   download: (c) => `<path d="M12 4v11M7 10l5 5 5-5"/><path d="M4 20h16" stroke="${c.accent}" stroke-width="2.2"/>`,
   print: (c) => `<path d="M7 8V4h10v4"/><path d="M5 8h14a2 2 0 0 1 2 2v6h-4v4H7v-4H3v-6a2 2 0 0 1 2-2zM7 16h10"/><circle cx="18" cy="12" r="1.1" fill="${c.accent}" stroke="none"/>`,
