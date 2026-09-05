@@ -362,29 +362,29 @@ table.cu th span.ev{float:right;margin-right:6px}
 .page.tight .how .box p{line-height:1.38}
 
 /* ── 교사용 정답 오버프린트 ── */
-.ans{color:#D42B2B;font-weight:700}
+.ans{color:#D42B2B;font-weight:600}
 .rh .bk i.te{font-style:normal;font-size:6.9pt;font-weight:800;letter-spacing:.1em;color:#fff;
  background:#D42B2B;border-radius:3px;padding:1.5px 5px;margin-left:7px;vertical-align:1.5px}
 .aline.filled{border-bottom:1px solid var(--hair);height:auto;min-height:0;
- padding:1px 2px 3px;font-size:8.9pt;line-height:1.45}
-.aline.filled .ans{font-weight:600}
-.rrq .mkans{margin:2px 0 1px;font-size:8.1pt;line-height:1.45;letter-spacing:-.1px}
+ padding:1px 2px 3px;font-size:8.1pt;line-height:1.42}
+.aline.filled .ans{font-weight:600;letter-spacing:-.15px}
+.rrq .mkans{margin:2px 0 1px;font-size:7.4pt;line-height:1.42;letter-spacing:-.12px}
 .rrq .mkans .ans{font-weight:600}
-.match .blank .ans{font-size:9.4pt}
-table.para td.dst u .ans{font-size:8.4pt}
-table.flow .body u+.ans{margin-left:3px;font-size:8.6pt}
+.match .blank .ans{font-size:8.7pt}
+table.para td.dst u .ans{font-size:7.8pt}
+table.flow .body u+.ans{margin-left:3px;font-size:8.0pt}
 .pick span.ok{border:1.6px solid #D42B2B;color:#D42B2B;font-weight:800;background:#FDF0F0}
-table.cu td.rs i.ev .ans{font-size:8.2pt}
+table.cu td.rs i.ev .ans{font-size:7.6pt}
 table.cu td.rs i.ev{display:flex;align-items:flex-end;justify-content:center;line-height:1.1}
 
 /* 교사용은 해석줄이 모든 문장에 붙으므로 READ RIGHT 면을 조인다 */
 .page.te .rrq{margin-bottom:0.2mm}
 .page.te .rrq .t{margin-bottom:0}
 .page.te .rrq .t p{font-size:8.9pt;line-height:1.32}
-.page.te .rrq .mkans{margin:0;font-size:7.7pt;line-height:1.34}
-.page.te .rrq .aline.filled{font-size:8.4pt;line-height:1.34;padding:0 2px 2px}
+.page.te .rrq .mkans{margin:0;font-size:7.0pt;line-height:1.32}
+.page.te .rrq .aline.filled{font-size:7.6pt;line-height:1.32;padding:0 2px 2px}
 .page.te .model{padding:7px 14px 3px}
 .page.te .model .cap{margin-bottom:8px}
 .page.te .rrh{margin-bottom:2mm}
-.page.te .syn .aline.filled,.page.te .sline .aline.filled{font-size:8.7pt}
+.page.te .syn .aline.filled,.page.te .sline .aline.filled{font-size:8.0pt}
 `;
