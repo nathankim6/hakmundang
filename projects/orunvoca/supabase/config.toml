@@ -1,0 +1,16 @@
+project_id = "jpanpwbdlhsxnyaldddm"
+
+[functions.generate-exam-questions]
+verify_jwt = false
+
+[functions.split-choices]
+verify_jwt = false
+
+[functions.regenerate-exam-questions]
+verify_jwt = false
+
+[functions.generate-word-image]
+verify_jwt = false
+
+[functions.batch-prepare-cardset]
+verify_jwt = false

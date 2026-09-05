@@ -25,7 +25,7 @@ Lovable에서 만든 프로젝트들을 코드 그대로 이 폴더 아래에 �
 | [glassmorphism-gem](./glassmorphism-gem/) | 2026-08-31 | 없음 | 미배포 | 옮김 | 파일 106개 |
 | [orunhomework](./orunhomework/) | 2026-08-30 | Lovable Cloud bbmin… | [orunhomework.lovable.app](https://orunhomework.lovable.app) | 옮김 | 파일 183개, 그림 11개 못 찾음 |
 | [schoolanalysis](./schoolanalysis/) | 2026-08-30 | Lovable Cloud xbcoi… | [schoolanalysis.lovable.app](https://schoolanalysis.lovable.app) | 옮김 | 파일 100개, 그림 1개 못 찾음 |
-| [orunvoca](./orunvoca/) | 2026-08-30 | 내 Supabase jpanp… | [orunvoca.lovable.app](https://orunvoca.lovable.app) | 아직 |  |
+| [orunvoca](./orunvoca/) | 2026-08-30 | 내 Supabase jpanp… | [orunvoca.lovable.app](https://orunvoca.lovable.app) | 옮김 | 파일 215개, 그림 34개 못 찾음 |
 | [orunsyntax](./orunsyntax/) | 2026-08-30 | Lovable Cloud mpzvt… | [orunsyntax.lovable.app](https://orunsyntax.lovable.app) | 옮김 | 파일 155개, 그림 14개 못 찾음 |
 | [wordbook-artist](./wordbook-artist/) | 2026-08-25 | Lovable Cloud xquvu… | [wordbook-artist.lovable.app](https://wordbook-artist.lovable.app) | 옮김 | 파일 152개, 그림 10개 못 찾음 |
 | [scan-score-quick](./scan-score-quick/) | 2026-08-04 | Lovable Cloud ekvom… | [scan-score-quick.lovable.app](https://scan-score-quick.lovable.app) | 아직 |  |
