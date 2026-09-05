@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Claude Code workflow worktrees (session-local)
+.claude/worktrees/
