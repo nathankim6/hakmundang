@@ -12,7 +12,8 @@ for pi in range(doc.page_count):
         if not h:
             print(f"p{pi+1:>2} {tag} 범례 못 찾음"); bad += 1; continue
         y0 = h[0].y0
-        band = pymupdf.Rect(0, y0 - 2, pg.rect.width, y0 + 13)
+        # 오른쪽 세로 LESSON 탭은 본문이 아니므로 제외한다
+        band = pymupdf.Rect(0, y0 - 2, RIGHT + 6, y0 + 13)
         ys, xr = set(), []
         for b in pg.get_text("dict", clip=band)["blocks"]:
             for ln in b.get("lines", []):

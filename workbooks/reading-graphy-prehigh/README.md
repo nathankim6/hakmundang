@@ -77,7 +77,20 @@ node build.js                            # → book.html
   --no-pdf-header-footer --print-to-pdf=book.pdf --virtual-time-budget=8000 "file://$PWD/book.html"
 python3 fill.py book.pdf                 # 면별 채움률 (현재 30면 83–100%)
 python3 clip.py                          # 잘림 검사 — 반드시 "잘린 면 없음" 이어야 한다
+python3 wrap.py book.pdf                 # 패러프레이즈 표가 한 줄에 들어가는지
+python3 legend.py book.pdf               # Check Up 유형 범례가 한 줄인지
 ```
+
+## 한 권으로 묶기
+
+```bash
+node build.js --unit=2                   # 유닛 하나만  → u02.html
+node build.js --units=1,2,3,4            # 합본        → book.html (차례 + 연속 쪽번호)
+node build.js --units=1,2,3,4 --teacher  # 합본 교사용  → book_t.html
+```
+
+`--units` 를 주면 맨 앞에 차례 면이 붙고, 쪽 번호가 유닛을 넘어 이어진다.
+차례의 쪽 번호는 유닛당 30면 고정을 전제로 계산한다(레슨 5×5면 + 해설 5면).
 
 `.page` 는 `overflow:hidden` 이라 넘친 내용이 조용히 사라진다. `clip.py` 가
 `book.html` 의 면별 텍스트와 `book.pdf` 에서 추출한 텍스트를 대조해 누락된 토큰을

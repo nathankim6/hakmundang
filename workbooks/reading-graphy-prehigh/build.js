@@ -1,11 +1,19 @@
 const fs=require("fs");
 const CSS=require("./css.js");
 const {S:PIC}=require("./pics.js");
-const UN = (process.argv.find(a=>/^--unit=/.test(a))||"--unit=1").split("=")[1].padStart(2,"0");
-const U  = require(`./units/u${UN}.js`);
-const {icons,scenes,STRIP,VIG} = require(`./art/u${UN}.js`);
-const T  = U.lessons;
-T.forEach(t=>t.para.sort((a,b)=>a[0].codePointAt(0)-b[0].codePointAt(0)));
+/* --unit=N 이면 그 유닛만, --units=1,2,3 이면 이어 붙여 한 권으로 만든다. */
+const argUnits = process.argv.find(a=>/^--units=/.test(a));
+const argUnit  = process.argv.find(a=>/^--unit=/.test(a));
+const NOS = argUnits ? argUnits.split("=")[1].split(",").map(x=>x.trim()).filter(Boolean)
+                     : [ (argUnit||"--unit=1").split("=")[1] ];
+const PAD = NOS.map(x=>String(x).padStart(2,"0"));
+const BOOK = PAD.length > 1;                       // 합본 여부
+const UNITS = PAD.map(nn=>({ U: require(`./units/u${nn}.js`), A: require(`./art/u${nn}.js`) }));
+const UN = PAD[0];
+let U, icons, scenes, STRIP, VIG, T;               // 유닛마다 갈아 끼운다
+const useUnit = ({U:u,A:a}) => { U=u; icons=a.icons; scenes=a.scenes; STRIP=a.STRIP; VIG=a.VIG;
+  T=u.lessons; T.forEach(t=>t.para.sort((x,y)=>x[0].codePointAt(0)-y[0].codePointAt(0))); };
+useUnit(UNITS[0]);
 const CIR="①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳".split("");
 const AL="abcdef".split("");
 const esc=s=>String(s).replace(/&(?![a-z#])/g,"&amp;");
@@ -36,6 +44,39 @@ const vars=t=>`--ac:${t.accent};--tint:${t.tint};--deep:${t.deep}`;
 const head=(t,right)=>`<div class="rh"><span class="bk">올림포스 고급영어독해 <b>비문학</b>${TE?`<i class="te">교사용</i>`:""}</span><span class="mid">${right}</span><span class="lg"><i class="mk"></i><em>옳은영어</em></span></div>`;
 const tab=(t)=>t&&t.no?`<div class="tab">LESSON ${t.no}</div>`:"";
 const foot=(t,label)=>`<div class="rf"><span>${label}</span><b>${++pn}</b><span>옳은영어 ORUN ENGLISH</span></div>`;
+
+/* ═══ 합본 차례 (쪽 번호 없는 앞장) ═══ */
+if (BOOK) {
+ const AC={accent:"#13345C",tint:"#E8EDF3",deep:"#0E2542"};
+ const col = UNITS.map((uu,ui)=>{
+  const base = ui*30;
+  const rows = uu.U.lessons.map((t,li)=>
+   `<tr><td class="n" style="color:${t.accent}">${t.no}</td><td class="t">${esc(t.en)}
+     <em>${t.ko}</em></td><td class="p">${base+li*5+1}</td></tr>`).join("");
+  return `<div class="ub">
+   <div class="uh"><span class="f">Field ${uu.U.no}</span>
+    <b>${esc(uu.U.field)}</b><em>${uu.U.ko}</em><span class="pg">${base+1}</span></div>
+   <div class="tag">${uu.U.tagline}</div>
+   <table class="ul">${rows}
+    <tr class="ans"><td class="n">A</td><td class="t">정답과 해설<em>지문 전문 해석 포함</em></td>
+     <td class="p">${base+26}</td></tr></table></div>`;
+ }).join("");
+ P.push(`<div class="page toc${TE?" te":""}" style="${vars(AC)}">
+  ${head(AC,"Contents")}
+  <h2 class="sechd">차례</h2>
+  <p class="tocsub">옳은영어 READING GRAPHY · 예비고등 &nbsp;|&nbsp;
+   ${UNITS.length}개 분야 · 지문 ${UNITS.reduce((a,u)=>a+u.U.lessons.length,0)}편 · ${UNITS.length*30}면${TE?" · 교사용":""}</p>
+  <div class="steps">
+   <b>여섯 걸음</b>
+   <span>1 영영풀이 매칭</span><span>2 구문분석</span><span>3 READ RIGHT</span>
+   <span>4 플로차트</span><span>5 패러프레이즈</span><span>6 Check Up</span>
+  </div>
+  <div class="toc2">${col}</div>
+  <div class="rf" style="border:0"><span></span><b></b><span>옳은영어 ORUN ENGLISH</span></div>
+ </div>`);
+}
+
+UNITS.forEach(UU=>{ useUnit(UU);
 
 /* ═══ 유닛 4면 ═══ */
 T.forEach(t=>{
@@ -227,10 +268,12 @@ T.forEach((t,ti)=>{
  </div>`);
 });
 
+}); /* ═══ 유닛 루프 끝 ═══ */
+
 const html=`<!doctype html><html lang="ko"><head><meta charset="utf-8">
-<title>READING GRAPHY · PRE-HIGH · Unit ${U.no} · ${U.field}</title><style>${CSS}\n.rh .lg .mk{background-image:url(${LOGO})}</style></head>
+<title>${BOOK?`READING GRAPHY · PRE-HIGH · 전 ${UNITS.length}유닛`:`READING GRAPHY · PRE-HIGH · Unit ${U.no} · ${U.field}`}</title><style>${CSS}\n.rh .lg .mk{background-image:url(${LOGO})}</style></head>
 <body>${P.join("\n")}</body></html>`;
 const OUT = process.env.OUTDIR || ".";
 fs.mkdirSync(OUT,{recursive:true});
-fs.writeFileSync(`${OUT}/u${UN}${TE?"_t":""}.html`,html);
+fs.writeFileSync(`${OUT}/${BOOK?"book":"u"+UN}${TE?"_t":""}.html`,html);
 console.log("pages:",P.length,"bytes:",html.length);

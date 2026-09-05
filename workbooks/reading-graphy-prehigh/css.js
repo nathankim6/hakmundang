@@ -387,4 +387,30 @@ table.cu td.rs i.ev{display:flex;align-items:flex-end;justify-content:center;lin
 .page.te .model .cap{margin-bottom:8px}
 .page.te .rrh{margin-bottom:2mm}
 .page.te .syn .aline.filled,.page.te .sline .aline.filled{font-size:8.0pt}
+
+/* ── 합본 차례 ── */
+.page.toc .sechd{margin-bottom:2px}
+.tocsub{font-size:8.6pt;color:var(--sub);margin-bottom:5mm}
+.steps{display:flex;flex-wrap:wrap;align-items:center;gap:0 7px;margin-bottom:6mm;
+ background:var(--cool);border-radius:9px;padding:8px 12px}
+.steps b{font-size:7.6pt;font-weight:800;letter-spacing:.14em;color:var(--ac);margin-right:5px}
+.steps span{font-size:8pt;color:var(--sub);font-weight:600}
+.steps span+span::before{content:"·";margin-right:7px;color:var(--faint)}
+.toc2{column-count:2;column-gap:9mm}
+.ub{break-inside:avoid;margin-bottom:5.5mm}
+.uh{display:flex;align-items:baseline;gap:6px;border-bottom:2px solid var(--ac);padding-bottom:4px}
+.uh .f{font-size:7pt;font-weight:800;letter-spacing:.12em;color:var(--faint);text-transform:uppercase}
+.uh b{font-size:10.4pt;font-weight:800;color:var(--deep)}
+.uh em{font-style:normal;font-size:8pt;color:var(--sub)}
+.uh .pg{margin-left:auto;font-size:9pt;font-weight:800;color:var(--ac)}
+.ub .tag{font-size:7.8pt;color:var(--faint);margin:4px 0 3px}
+table.ul{width:100%;border-collapse:collapse;font-size:8.6pt}
+table.ul td{padding:3.2px 0;border-bottom:1px dotted var(--hair);vertical-align:baseline}
+table.ul td.n{width:22px;font-size:7.4pt;font-weight:800;color:var(--faint)}
+table.ul td.t{line-height:1.34}
+table.ul td.t em{font-style:normal;font-size:7.6pt;color:var(--sub);margin-left:5px}
+table.ul td.p{width:26px;text-align:right;font-size:8.2pt;font-weight:700;color:var(--sub)}
+table.ul tr.ans td{border-bottom:0;padding-top:5px}
+table.ul tr.ans td.n{color:var(--ac)}
+table.ul tr.ans td.t{font-weight:700;color:var(--ac)}
 `;
