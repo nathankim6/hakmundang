@@ -580,12 +580,13 @@ void main(){
   float ca=cos(0.384), sa=sin(0.384); vec2 q=vec2(p.x*ca-p.y*sa,p.x*sa+p.y*ca);
   float band=exp(-q.y*q.y*9.0);
   float bn=fbm(q*vec2(1.6,5.5)+u_seed*0.7);
-  col+=vec3(0.30,0.36,0.52)*band*(0.05+0.11*bn);
+  col+=vec3(0.30,0.36,0.52)*band*(0.05+0.11*bn)*(0.6+0.4*fbm(q*vec2(6.0,18.0)+u_seed*2.1));
   col*=1.0-band*0.45*smoothstep(0.52,0.72,fbm(q*vec2(3.2,10.0)+5.0+u_seed));
   /* 다섯 성운 */
   col+=cloud(p,u_np0,u_ac0,0.0)+cloud(p,u_np1,u_ac1,1.0)+cloud(p,u_np2,u_ac2,2.0)+cloud(p,u_np3,u_ac3,3.0)+cloud(p,u_np4,u_ac4,4.0);
   /* 별 3층 */
-  col+=starLayer(px,9.0*u_dpr,0.16,0.55*u_dpr,0.42,u_seed);
+  col+=starLayer(px,9.0*u_dpr,0.22,0.55*u_dpr,0.40,u_seed);
+  col+=starLayer(px,5.0*u_dpr,0.10,0.45*u_dpr,0.22,u_seed+17.0);
   col+=starLayer(px,26.0*u_dpr,0.30,0.85*u_dpr,0.72,u_seed+3.0);
   col+=starLayer(px,70.0*u_dpr,0.30,1.30*u_dpr,1.00,u_seed+9.0);
   /* 회절 스파이크가 선 밝은 별 */
@@ -597,15 +598,18 @@ void main(){
     float w=hash21(vec2(fi,2.9));
     vec3 sc=w<0.3?vec3(1.0,0.82,0.62):(w<0.7?vec3(0.95,0.97,1.0):vec3(0.70,0.80,1.0));
     float core=exp(-dd/(2.0*sz*sz));
+    /* 색수차 — 빨강은 조금 넓게, 파랑은 조금 좁게 */
+    float coreR=exp(-dd/(2.0*sz*sz*1.21)), coreB=exp(-dd/(2.0*sz*sz*0.83));
     float halo=exp(-sqrt(dd)/(9.0*sz))*0.10;
     float spike=(exp(-abs(d.x)/(15.0*sz))*exp(-abs(d.y)*1.6/u_dpr)+exp(-abs(d.y)/(15.0*sz))*exp(-abs(d.x)*1.6/u_dpr))*0.26;
-    col+=sc*(core*1.1+halo+spike);
+    col+=sc*(vec3(coreR,core,coreB)*1.1+halo+spike);
   }
   /* 먼 은하 — 기울어진 타원 얼룩 */
-  for(int i=0;i<7;i++){
+  for(int i=0;i<24;i++){
     float fi=float(i)+20.0;
     vec2 gp=vec2(hash21(vec2(fi,1.1)+u_seed),hash21(vec2(fi,2.2)+u_seed))*u_res;
-    float rot=hash21(vec2(fi,3.3))*3.14159, ax=(8.0+14.0*hash21(vec2(fi,4.4)))*u_dpr, ay=ax*(0.28+0.5*hash21(vec2(fi,5.5)));
+    float big=i<7?1.0:0.38;                      /* 일곱은 가까운 은하, 나머지는 딥필드의 얼룩 */
+    float rot=hash21(vec2(fi,3.3))*3.14159, ax=(8.0+14.0*hash21(vec2(fi,4.4)))*u_dpr*big, ay=ax*(0.28+0.5*hash21(vec2(fi,5.5)));
     vec2 d=px-gp; vec2 e=vec2(d.x*cos(rot)-d.y*sin(rot),d.x*sin(rot)+d.y*cos(rot));
     float g=exp(-(e.x*e.x/(ax*ax)+e.y*e.y/(ay*ay))*1.6);
     col+=vec3(0.95,0.88,0.80)*g*0.16+vec3(0.8,0.85,1.0)*exp(-(e.x*e.x/(ax*ax)+e.y*e.y/(ay*ay))*0.4)*0.05;
@@ -614,7 +618,7 @@ void main(){
 }`;
 /* 은하 마감 — 나선을 따라 흐르는 실 같은 먼지 띠, 구름결, 발광, 코어 글레어 */
 const GLSL_FIN=`precision highp float;varying vec2 v_uv;
-uniform sampler2D u_tex;uniform float u_seed,u_pitch,u_dust,u_texr;`+GLSL_NOISE+`
+uniform sampler2D u_tex;uniform float u_seed,u_pitch,u_dust,u_texr,u_arms;uniform vec3 u_ac;`+GLSL_NOISE+`
 void main(){
   vec2 p=(v_uv-0.5)*2.0;
   float r=length(p)/u_texr, th=atan(p.y,p.x);
@@ -627,16 +631,32 @@ void main(){
          +texture2D(u_tex,v_uv+vec2(o,o)).rgb+texture2D(u_tex,v_uv-vec2(o,o)).rgb+texture2D(u_tex,v_uv+vec2(o,-o)).rgb+texture2D(u_tex,v_uv-vec2(o,-o)).rgb;
   vec3 col=base.rgb+g*0.045;
   /* 팔 위상 s 는 th=±π 에서 끊긴다 — 한 바퀴 건너 표본을 섞어 잇는다 */
-  vec2 k1=vec2(r*7.0,1.3), k2=vec2(r*19.0,3.5), k3=vec2(r*11.0,2.2);
-  float d1=mix(fbm(vec2(k1.x,s*k1.y)+u_seed),fbm(vec2(k1.x,(s+6.2831853)*k1.y)+u_seed),w);
-  float d2=mix(fbm(vec2(k2.x,s*k2.y)-u_seed*1.7),fbm(vec2(k2.x,(s+6.2831853)*k2.y)-u_seed*1.7),w);
-  float dust=smoothstep(0.50,0.72,d1*0.65+d2*0.35);
-  float lane=dust*u_dust*smoothstep(0.06,0.18,r)*(1.0-smoothstep(0.72,1.0,r));
-  float cl=0.72+0.56*mix(fbm(vec2(k3.x,s*k3.y)+u_seed*2.3),fbm(vec2(k3.x,(s+6.2831853)*k3.y)+u_seed*2.3),w);
-  col*=cl*(1.0-0.82*lane);
+  float TAU=6.2831853;
+  #define FB2(K,SEED) mix(fbm(vec2((K).x,s*(K).y)+(SEED)),fbm(vec2((K).x,(s+TAU)*(K).y)+(SEED)),w)
+  float d1=FB2(vec2(r*7.0,1.3),u_seed);
+  float d2=FB2(vec2(r*19.0,3.5),-u_seed*1.7);
+  float d3=FB2(vec2(r*40.0,8.0),u_seed*0.7);
+  float inner=smoothstep(0.05,0.16,r)*(1.0-smoothstep(0.72,1.0,r));
+  /* 먼지 — 굵은 띠는 날카롭게, 그 위에 가는 실 */
+  float lane=smoothstep(0.55,0.67,d1*0.6+d2*0.4)*u_dust*inner;
+  float fine=smoothstep(0.60,0.74,d3)*0.55*u_dust*inner*smoothstep(0.10,0.25,r);
+  lane=max(lane,fine);
+  /* 팔의 능선 — 밀도파의 앞자락에 별 탄생 매듭이 구슬처럼 이어진다 */
+  float ad=abs(fract(s*u_arms/TAU+0.5)-0.5);
+  float ridge=exp(-ad*ad*46.0)*smoothstep(0.08,0.22,r)*(1.0-smoothstep(0.62,0.98,r));
+  float kn=ridge*smoothstep(0.62,0.90,FB2(vec2(r*28.0,7.0),u_seed*4.0));
+  float cl=0.72+0.56*FB2(vec2(r*11.0,2.2),u_seed*2.3);
+  col*=cl*(1.0+0.28*ridge)*(1.0-0.84*lane);
+  col+=vec3(1.0,0.58,0.72)*kn*0.34+vec3(0.82,0.90,1.0)*kn*0.28;
+  /* 벌지(세르식)와 점 같은 핵, 바깥의 조석 흐름 */
+  float bulge=exp(-pow(r/0.18,0.7)*2.0);
+  float nuc=exp(-r*r*1400.0);
+  float st=FB2(vec2(r*3.0,0.6),u_seed*9.0);
+  float halo=exp(-r*2.2)*(0.03+0.06*smoothstep(0.55,0.85,st))*smoothstep(0.5,0.9,r);
+  col+=vec3(1.0,0.90,0.72)*bulge*0.26+vec3(1.0,0.97,0.90)*nuc*0.9+mix(u_ac,vec3(0.7,0.8,1.0),0.5)*halo;
   float glare=exp(-r*r*70.0);
-  col+=vec3(1.0,0.93,0.80)*glare*0.22;
-  float a=min(1.0,base.a*(1.0-0.5*lane)+glare*0.3);
+  col+=vec3(1.0,0.93,0.80)*glare*0.20;
+  float a=min(1.0,base.a*(1.0-0.5*lane)+glare*0.3+halo*3.0+kn*0.5);
   gl_FragColor=vec4(col,a);
 }`;
 function initGL(){
@@ -736,7 +756,8 @@ function glFinish(g,srcTex){
   return glBake(TEX,TEX,GL.fin,(gl,u)=>{
     gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D,srcTex); gl.uniform1i(u.u_tex,0);
     gl.uniform1f(u.u_seed,(g.id.length*2.13+g.accent[0]*.01)); gl.uniform1f(u.u_pitch,P.pitch);
-    gl.uniform1f(u.u_dust,P.dust); gl.uniform1f(u.u_texr,TEXR/(TEX/2));
+    gl.uniform1f(u.u_dust,P.dust); gl.uniform1f(u.u_texr,TEXR/(TEX/2)); gl.uniform1f(u.u_arms,P.arms);
+    gl.uniform3f(u.u_ac,g.accent[0]/255,g.accent[1]/255,g.accent[2]/255);
   },true);
 }
 /* 캔버스 → 텍스처. 같은 캔버스는 한 번만 올리고, 다시 구우면(ver) 다시 올린다 */
@@ -1264,8 +1285,9 @@ function hexA(h,a){
 /* far things wash out — cheap atmospheric depth */
 function fog(z){ return Math.max(.50,Math.min(1,1-(z/1250)*0.46)); }
 
-let lastTs=0;
+let lastTs=0, frameNo=0;
 function draw(ts){
+  frameNo++;
   const now=ts||performance.now();
   /* 첫 프레임과, 탭이 백그라운드였다 돌아온 뒤의 큰 간격은 잘라낸다 —
      그대로 쓰면 판이 한 번에 훌쩍 돈다. */
@@ -3582,9 +3604,9 @@ function drawCovers(){
     const sel=isOnPath(n), hov=n.hov||0;
     /* the chosen book steps forward: larger, at full strength, while the
        rest fall back — otherwise ten covers all shout at once */
-    const A=n.vis*(n.dim==null?1:n.dim)*fog(z)*crowd
-            *Math.min(1,(zz-.3)/.22)*(o.fade==null?1:o.fade)
-            *(sel?1 : anySel?.5 : .9+.1*hov);
+    /* 표지는 불투명하다 — 깊이·흐림·물러남은 알파가 아니라 어둡게 덮는 틴트로 */
+    const dm=(n.dim==null?1:n.dim);
+    const A=n.vis*Math.min(1,(zz-.3)/.22)*(o.fade==null?1:o.fade);
     if(A<=.02) return;
     /* 고른 크기를 쓰되, 고른 것과 커서가 얹힌 것만 앞으로 한 걸음 나온다 */
     const w=wOf(o), h=w*PH/PW;
@@ -3616,7 +3638,7 @@ function drawCovers(){
     ctx.shadowBlur=0; ctx.shadowOffsetY=0; ctx.shadowColor='rgba(0,0,0,0)';
     /* 원근 탈채도와 '다른 책을 고른 동안 물러남' 은 filter 가 아니라 틴트 한 겹으로 —
        ctx.filter 는 GPU 없는 기계에서 프레임을 여섯 배 늦춘다 */
-    const tint=(anySel&&!sel)?.42:(1-fog(z))*.55;
+    const tint=Math.min(.72,((anySel&&!sel)?.40:0)+(1-fog(z))*.45+(1-dm)*.5+(crowd<1?.06:0));
     if(tint>.01){
       ctx.save(); rrect(ctx,x-w/2,cy-h/2,w,h,Math.max(2,w*.05)); ctx.clip();
       ctx.fillStyle='rgba(8,18,34,'+tint.toFixed(3)+')'; ctx.fillRect(x-w/2,cy-h/2,w,h);
@@ -3808,14 +3830,23 @@ function drawLabel(n,x,y,R,st,A,k){
   ctx.fillStyle= on ? RGBA(GOLD_TXT,1) : RGBA(mxc3(idle,[255,255,255],hv),.88+.12*hv);
   ctx.fillText(title,px,ly);
   ctx.restore();
+  /* 글씨도 표적이다 — 실제 폭으로 잰 사각을 남겨 hit() 이 읽는다 */
+  n._lb={x0:(b.left?b.lx-total:b.lx)-4,x1:(b.left?b.lx:b.lx+total)+4,y0:ly-10,y1:ly+10,f:frameNo};
 }
 
 /* ============================================================
    8. INTERACTION — drag orbits the lattice, wheel dollies in
    ============================================================ */
 function hit(mx,my){
+  /* 이름표 글씨가 맨 위에 그려지므로 먼저 본다 — 이 프레임에 그려진 라벨만 */
+  const labs=(ACTIVE&&ACTIVE._labels)||[];
+  for(let i=labs.length-1;i>=0;i--){
+    const n=labs[i][0], lb=n._lb;
+    if(!lb||lb.f<frameNo-2||n.vis<.4) continue;
+    if(mx>=lb.x0&&mx<=lb.x1&&my>=lb.y0&&my<=lb.y1) return n;
+  }
   /* Covers are the biggest thing on screen and the obvious thing to aim at,
-     so they are hit-tested first — and nearest-centre wins where two overlap. */
+     so they are hit-tested next — and nearest-centre wins where two overlap. */
   let bp=null,bpd=1e9;
   live.forEach(n=>{
     const r=n.plate;

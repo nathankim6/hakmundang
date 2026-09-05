@@ -324,7 +324,7 @@ ul.pts li::before{content:'';position:absolute;left:2px;top:11px;width:5px;heigh
 #gl{position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none;opacity:0;transition:opacity .6s var(--ease-out)}
 #gl.live{opacity:1;filter:saturate(1.08) contrast(1.08)}
 /* 필름 그레인 — 잡음 타일이 overlay 로 겹치고 스텝으로 튄다 */
-#grain{position:absolute;inset:-200px;z-index:4;pointer-events:none;opacity:.07;mix-blend-mode:overlay;background-repeat:repeat;background-size:128px 128px}
+#grain{position:absolute;inset:-200px;z-index:4;pointer-events:none;opacity:.06;mix-blend-mode:overlay;background-repeat:repeat;background-size:128px 128px}
 @media(prefers-reduced-motion:no-preference){#grain{animation:grain .7s steps(6) infinite}}
 @keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-44px,32px)}40%{transform:translate(30px,-54px)}60%{transform:translate(-62px,-18px)}80%{transform:translate(52px,58px)}100%{transform:translate(0,0)}}
 @media print{#grain{display:none}}
