@@ -1,6 +1,7 @@
 import PptxGenJS from "pptxgenjs";
 import { ORUN_LOGO_WHITE } from "@/assets/orunLogo";
 import { ART_RATIO, DARK, LIGHT, artSvg, iconSvg, svgDataUrl, type ArtName, type IconName } from "@/assets/art";
+import { TOON_PPT, crestSvg } from "@/assets/toon";
 import type { SchoolRecord } from "@/types/school";
 import { RESULT_BASIS_LABEL } from "@/data/results";
 import { NEWS_KIND_LABEL, type SchoolNews } from "@/data/news";
@@ -105,9 +106,6 @@ function subhead(s: Slide, ic: IconName, text: string, y: number, x = M, w = 5) 
   s.addText(text, T({ x: x + 0.36, y, w, h: 0.3, fontSize: 13, bold: true, color: INK }));
 }
 
-const srcLine = (e: { source: { url: string; date: string } }) =>
-  `출처 · ${e.source.url.includes("youtube") ? "유튜브 LIVE" : "옳은영어 블로그"} · ${e.source.date.replace(/-/g, ".")}`;
-
 /* ── 표지·목차·섹션 ────────────────────── */
 
 function coverSlide(pptx: PptxGenJS, records: SchoolRecord[], year: string) {
@@ -139,8 +137,8 @@ function tocSlide(pptx: PptxGenJS, records: SchoolRecord[], page: number) {
   records.slice(0, 9).forEach((r, i) => {
     hair(s, y - 0.12, M, 7.6);
     s.addText(String(i + 1).padStart(2, "0"), T({ x: M, y, w: 0.5, h: 0.3, fontSize: 11, bold: true, color: YELLOW_S, charSpacing: 1 }));
-    icon(s, "school", M + 0.5, y + 0.02, 0.26);
-    s.addText(r.fact.name, T({ x: M + 0.88, y: y - 0.02, w: 3.4, h: 0.32, fontSize: 15, bold: true, color: INK }));
+    logo(s, r, M + 0.48, y - 0.04, 0.36);
+    s.addText(r.fact.name, T({ x: M + 0.95, y: y - 0.02, w: 3.4, h: 0.32, fontSize: 15, bold: true, color: INK }));
     const seats = r.fact.level === "고" && r.fact.g1Total ? seatsForGrade1(r.fact.g1Total) : null;
     s.addText(
       [r.fact.g1Total ? `1학년 ${r.fact.g1Total}명` : null, seats != null ? `1등급 ${seats}자리` : null].filter(Boolean).join(", "),
@@ -178,7 +176,6 @@ function numbersSlide(pptx: PptxGenJS, page: number) {
     hair(s, y - 0.12, M, textW);
   });
   art(s, "fraction", { x: W - M - 3.4, y: 2.5, w: 3.4 });
-  foot(s, srcLine(ORUN_MESSAGES[0]));
   footer(s, page);
   s.addNotes(DECK.numbers.note);
 }
@@ -201,7 +198,6 @@ function orunResultsSlide(pptx: PptxGenJS, page: number, poster?: string) {
   });
   if (poster) {
     s.addImage({ data: poster, x: W - M - 3.7, y: 0.85, w: 3.7, h: 5.25 });
-    s.addText(DECK.orunResults.posterCaption, T({ x: W - M - 3.7, y: 6.15, w: 3.7, h: 0.25, fontSize: 8, color: GREY }));
   } else {
     art(s, "podium", { x: W - M - 4.2, y: 1.9, w: 4.2, dark: true });
   }
@@ -361,6 +357,7 @@ function schoolSlides(pptx: PptxGenJS, record: SchoolRecord, startPage: number):
     const s = pptx.addSlide();
     eyebrow(s, C.en.the);
     title(s, f.name, [f.district, f.foundation, f.kind, f.coed].filter(Boolean).join(" · "));
+    logo(s, record, W - M - 1.15, 0.7, 1.15);
 
     const stats: [IconName, string, string][] = [
       ["family", "1학년", f.g1Total != null ? `${f.g1Total}명` : "—"],
@@ -477,7 +474,6 @@ function schoolSlides(pptx: PptxGenJS, record: SchoolRecord, startPage: number):
       y += 0.62;
       hair(s, y - 0.12);
     });
-    foot(s, C.fitNote);
     footer(s, page++);
     s.addNotes(C.noteFit);
   }
@@ -555,6 +551,7 @@ function achieveTableSlides(pptx: PptxGenJS, records: SchoolRecord[], level: "�
 /** 학교 한 장 — 과목별 3개년 막대(도형) + 이런 학생 */
 function achieveSchoolSlide(pptx: PptxGenJS, r: SchoolRecord, p: AchievementProfile, page: number) {
   const s = pptx.addSlide();
+  logo(s, r, W - M - 0.9, 0.55, 0.9);
   const C = DECK.achieve;
   const isHigh = r.fact.level === "고";
   const t = profileText(p, isHigh);
@@ -624,7 +621,6 @@ function achieveSchoolSlide(pptx: PptxGenJS, r: SchoolRecord, p: AchievementProf
     s.addText(f, T({ x: rx + 0.22, y: ry, w: rw - 0.22, h: 0.42, fontSize: 10.5, color: GREY, lineSpacing: 14, valign: "top" }));
     ry += 0.46;
   });
-  foot(s, C.fitNote);
   footer(s, page);
   s.addNotes(C.noteSchool(short(r.fact.name), t.summary));
 }
@@ -680,6 +676,7 @@ function exam2026TableSlides(pptx: PptxGenJS, records: SchoolRecord[], level: "�
 /** 학교별 — 올해 시험지 카드(중간·기말) */
 function examTrendSlide(pptx: PptxGenJS, r: SchoolRecord, grade: number, exams: ExamReport[], page: number) {
   const s = pptx.addSlide();
+  logo(s, r, W - M - 0.9, 0.55, 0.9);
   const f = r.fact;
   const C = DECK.examTrend;
   eyebrow(s, C.en);
@@ -728,7 +725,6 @@ function examTrendSlide(pptx: PptxGenJS, r: SchoolRecord, grade: number, exams: 
     y += 0.1;
     icon(s, "quote", x + 0.22, y + 0.02, 0.2);
     s.addText(`${e.verdict}${e.teacher ? ` (${e.teacher} T)` : ""}`, T({ x: x + 0.5, y, w: cardW - 0.72, h: 0.6, fontSize: 9.5, italic: true, color: BODY, lineSpacing: 13, valign: "top" }));
-    s.addText(srcLine(e), T({ x: x + 0.22, y: top + cardH - 0.3, w: cardW - 0.44, h: 0.22, fontSize: 7.5, color: GREY }));
   });
   footer(s, page);
   s.addNotes(C.note(short(f.name), grade, exams.map((e) => `${e.term}: ${e.difficulty}`).join(" / ")));
@@ -737,6 +733,7 @@ function examTrendSlide(pptx: PptxGenJS, r: SchoolRecord, grade: number, exams: 
 /** 학교별 — 강사진이 짚은 포인트 + 이 학교 실적 */
 function insightsSlide(pptx: PptxGenJS, r: SchoolRecord, sc: SourcedSchool, page: number) {
   const s = pptx.addSlide();
+  logo(s, r, W - M - 0.9, 0.55, 0.9);
   const C = DECK.insights;
   eyebrow(s, C.en);
   title(s, C.title(short(r.fact.name)));
@@ -744,8 +741,7 @@ function insightsSlide(pptx: PptxGenJS, r: SchoolRecord, sc: SourcedSchool, page
   const maxI = sc.results.length ? 4 : 5;
   sc.insights.slice(0, maxI).forEach((it, i) => {
     s.addText(String(i + 1).padStart(2, "0"), T({ x: M, y, w: 0.45, h: 0.3, fontSize: 11, bold: true, color: YELLOW_S }));
-    s.addText(it.text, T({ x: M + 0.55, y, w: W - M * 2 - 3.2, h: 0.62, fontSize: 11.5, color: BODY, lineSpacing: 16, valign: "top" }));
-    s.addText(srcLine(it), T({ x: W - M - 2.5, y: y + 0.02, w: 2.5, h: 0.25, align: "right", fontSize: 7.5, color: GREY }));
+    s.addText(it.text, T({ x: M + 0.55, y, w: W - M * 2 - 0.55, h: 0.62, fontSize: 11.5, color: BODY, lineSpacing: 16, valign: "top" }));
     y += 0.7;
     hair(s, y - 0.1);
   });
@@ -769,6 +765,7 @@ function insightsSlide(pptx: PptxGenJS, r: SchoolRecord, sc: SourcedSchool, page
 /** 학교별 — 선배들의 TMI */
 function tmiSlide(pptx: PptxGenJS, r: SchoolRecord, sc: SourcedSchool, page: number) {
   const s = pptx.addSlide();
+  logo(s, r, W - M - 0.9, 0.55, 0.9);
   const C = DECK.tmi;
   eyebrow(s, C.en);
   title(s, C.title(short(r.fact.name)), C.sub);
@@ -791,6 +788,7 @@ function tmiSlide(pptx: PptxGenJS, r: SchoolRecord, sc: SourcedSchool, page: num
 /** 학교별 — 학교 밖에서 확인한 것 */
 function newsSlide(pptx: PptxGenJS, r: SchoolRecord, n: SchoolNews, page: number) {
   const s = pptx.addSlide();
+  logo(s, r, W - M - 0.9, 0.55, 0.9);
   const C = DECK.news;
   const clip = (t: string, max: number) => (t.length > max ? t.slice(0, max - 1) + "…" : t);
   // 한 줄 요약이 길면 두 줄까지만 보이고, 첫 행을 그만큼 아래서 시작한다.
@@ -799,7 +797,7 @@ function newsSlide(pptx: PptxGenJS, r: SchoolRecord, n: SchoolNews, page: number
   title(s, C.title(short(r.fact.name)), sub);
   let y = sub && sub.length > 70 ? 2.6 : 2.35;
   const labelW = 1.55;
-  const textW = W - M * 2 - labelW - 2.4;
+  const textW = W - M * 2 - labelW;
   const bottom = H - 1.1;
   // 글 길이에 맞춰 행 높이를 잡는다. 한 줄에 한글 약 58자(10.5pt, 8.7in).
   const items = [...n.items].sort((a, b) => NEWS_KIND_ORDER.indexOf(a.kind) - NEWS_KIND_ORDER.indexOf(b.kind));
@@ -817,11 +815,9 @@ function newsSlide(pptx: PptxGenJS, r: SchoolRecord, n: SchoolNews, page: number
       ],
       T({ x: M + labelW, y, w: textW, h: rowH, lineSpacing: 14, valign: "top" }),
     );
-    s.addText(`${clip(it.source.publisher, 28)}${it.date ? " · " + it.date.replace(/-/g, ".") : ""}`, T({ x: W - M - 2.3, y: y + 0.03, w: 2.3, h: 0.4, align: "right", fontSize: 7.5, color: GREY, lineSpacing: 10, valign: "top" }));
     y += rowH + 0.14;
     hair(s, y - 0.08);
   }
-  foot(s, C.foot(n.fetchedAt));
   footer(s, page);
   s.addNotes(C.note(n.items[0]?.title ?? ""));
 }
@@ -886,7 +882,7 @@ function closingSlide(pptx: PptxGenJS) {
   eyebrow(s, C.en, 2.38, true);
   s.addText(C.title.join("\n"), T({ x: M, y: 2.8, w: 6.6, h: 1.7, fontSize: 48, bold: true, color: "FFFFFF", lineSpacing: 58 }));
   s.addText(C.brand, T({ x: M, y: 4.9, w: 6.6, h: 0.3, fontSize: 12, color: DARK_SUB }));
-  s.addText(C.sources, T({ x: M, y: H - 0.9, w: W - M * 2, h: 0.3, fontSize: 8.5, color: GREY }));
+  s.addText(C.tagline, T({ x: M, y: H - 0.9, w: W - M * 2, h: 0.3, fontSize: 9, color: DARK_SUB, charSpacing: 2 }));
   s.addNotes(C.note);
 }
 
@@ -895,9 +891,23 @@ function closingSlide(pptx: PptxGenJS) {
 export interface DeckAssets {
   /** 실적 포스터 data URL — 브라우저에서는 /orun/*.jpg 를 fetch 해 넣는다 */
   posters?: string[];
+  /** 학교 로고 data URL(코드별). 없으면 만화풍 문양을 그린다 */
+  logos?: Record<string, string>;
+}
+
+let LOGOS: Record<string, string> = {};
+function logoData(r: SchoolRecord): string {
+  return LOGOS[r.fact.code] ?? svgDataUrl(crestSvg(r.fact.name, { palette: TOON_PPT }));
+}
+/** 로고 배지: 흰 원 + 로고 */
+function logo(s: Slide, r: SchoolRecord, x: number, y: number, size: number) {
+  s.addShape("ellipse", { x, y, w: size, h: size, fill: { color: "FFFFFF" }, line: { color: HAIR, width: 0.75 } });
+  const pad = size * 0.14;
+  s.addImage({ data: logoData(r), x: x + pad, y: y + pad, w: size - pad * 2, h: size - pad * 2 });
 }
 
 export async function buildDeck(records: SchoolRecord[], year = "2027학년도", assets: DeckAssets = {}) {
+  LOGOS = assets.logos ?? {};
   const pptx = new PptxGenJS();
   pptx.layout = "LAYOUT_WIDE";
   pptx.author = DECK.author;

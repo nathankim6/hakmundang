@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import "@/styles/orun.css";
-import { Art, Icon } from "@/components/schools/Art";
+import { Character, Icon, Scene } from "@/components/schools/Art";
 import { SchoolPicker } from "@/components/schools/SchoolPicker";
 import { AnalysisReport } from "@/components/schools/AnalysisReport";
 import { GradeCalculator } from "@/components/schools/GradeCalculator";
@@ -109,14 +109,17 @@ const Schools = () => {
                 <div className="orun-eyebrow" style={{ marginBottom: 12 }}>
                   {APP.calc.en}
                 </div>
-                <h2 className="orun-display" style={{ fontSize: 32, marginBottom: 10 }}>
+                <h2 className="orun-display" style={{ fontSize: 34, marginBottom: 10 }}>
                   {APP.calc.title}
                 </h2>
                 <p className="orun-lede">{APP.calc.lede}</p>
               </div>
-              <Art name="fraction" className="orun-hero__art" style={{ maxWidth: 280 }} />
+              <Scene name="fraction" className="orun-hero__art" style={{ maxWidth: 300 }} />
             </div>
-            <GradeCalculator />
+            <div style={{ display: "grid", gridTemplateColumns: "minmax(0,1fr) auto", gap: 20, alignItems: "end" }}>
+              <GradeCalculator />
+              <Character name="teacher" height={150} className="orun-no-print" style={{ marginBottom: 20 }} />
+            </div>
           </section>
         )}
       </div>
@@ -207,25 +210,22 @@ function Hero() {
           </h1>
           <p className="orun-lede">{APP.lede}</p>
           <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginTop: 20 }}>
-            <span className="orun-chip orun-chip--ink orun-chip--dot">{APP.stats.fact(total)}</span>
-            <span className="orun-chip orun-chip--ink">{APP.stats.seen(seen)}</span>
-            <span className="orun-chip">{APP.stats.news(news)}</span>
+            <span className="orun-chip orun-chip--yellow">{APP.stats.fact(total)}</span>
+            <span className="orun-chip orun-chip--blue">{APP.stats.seen(seen)}</span>
+            <span className="orun-chip orun-chip--mint">{APP.stats.news(news)}</span>
           </div>
         </div>
-        <Art name="lighthouseTown" className="orun-hero__art" />
+        <Scene name="hero" className="orun-hero__art orun-bob" />
       </section>
 
       <div className="orun-steps orun-rise" data-delay="1">
         {APP.steps.map((s, i) => (
           <div key={s.title}>
-            <Icon name={s.icon} size={22} style={{ color: "var(--ink)", marginTop: 2 }} />
+            <span className={`orun-blob ${["", "orun-blob--sky", "orun-blob--mint"][i]}`}>
+              <Icon name={s.icon} size={18} style={{ color: "var(--on-pastel)" }} />
+            </span>
             <div>
-              <b>
-                <span className="orun-mono" style={{ color: "var(--yellow)", fontSize: 11, marginRight: 8 }}>
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                {s.title}
-              </b>
+              <b>{s.title}</b>
               <span>{s.text}</span>
             </div>
           </div>
@@ -238,7 +238,7 @@ function Hero() {
 function Empty({ onBack }: { onBack: () => void }) {
   return (
     <div className="orun-rise" style={{ padding: "70px 0", textAlign: "center" }}>
-      <Art name="zoom" width={220} style={{ margin: "0 auto 18px", color: "var(--muted)" }} />
+      <Scene name="empty" width={260} style={{ margin: "0 auto 18px" }} />
       <p className="orun-lede" style={{ margin: "0 auto 18px" }}>
         {APP.empty.text}
       </p>

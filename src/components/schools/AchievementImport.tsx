@@ -82,7 +82,6 @@ export function AchievementImport() {
           </span>
           <span style={{ fontSize: 16, fontWeight: 700, color: "var(--ink)" }}>{T.title}</span>
         </div>
-        <span className="orun-chip orun-chip--blue">공시 자료</span>
       </div>
       <p className="orun-small" style={{ margin: "0 0 14px", maxWidth: "70ch" }}>
         {T.lede}

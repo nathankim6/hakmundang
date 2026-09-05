@@ -19,7 +19,7 @@ export const APP = {
   brand: "ORUN ENGLISH",
   eyebrow: "옳은영어 학교 분석지",
   title: "우리 동네 학교, 시험지로 읽었습니다",
-  lede: "학교를 고르기 전에 그 학교 시험지를 먼저 봐야 해요. 공시 숫자 위에 옳은영어가 올해 직접 풀어본 시험을 얹어 한 권으로 묶었습니다.",
+  lede: "학교를 고르기 전에 그 학교 시험지를 먼저 봐야 해요. 동네 학교 숫자 위에 옳은영어가 올해 직접 풀어본 시험을 얹어 한 권으로 묶었습니다.",
   generatorLink: "문항 생성기로",
   tabs: {
     pick: "학교 고르기",
@@ -87,7 +87,7 @@ export const COVER = {
   high: {
     title: ["학교를 고른다는 건", "3년치 시험지를 고르는 일"],
     lede: (year: string) =>
-      `${year} 예비고1. 공시 숫자에, 옳은영어가 올해 직접 풀어본 시험지를 얹었어요. 어디까지가 사실이고 어디부터가 우리 생각인지 표시해 두었습니다.`,
+      `${year} 예비고1. 학교 숫자에, 옳은영어가 올해 직접 풀어본 시험지를 얹었어요. 학교마다 시험의 얼굴이 어떻게 다른지 한 권에 담았습니다.`,
   },
   mid: {
     title: ["중학교 3년이", "고등학교를 정합니다"],
@@ -106,7 +106,7 @@ export const SECTION = {
   compare: {
     en: "SIDE BY SIDE",
     ko: "한 표로 보는 학교 스펙",
-    lede: "학부모님이 제일 먼저 물어보는 것만 골랐어요. 학교알리미 공시 그대로이고 저희가 손대지 않았습니다.",
+    lede: "학부모님이 제일 먼저 물어보는 것만 골라 한 표에 나란히 놓았어요.",
     subHigh: "고등학교",
     subMid: "중학교",
     howTo: "이 표 읽는 법",
@@ -119,7 +119,7 @@ export const SECTION = {
   achieve: {
     en: "GRADES ON PAPER",
     ko: "국영수 성취도, 3년을 겹쳐 보면",
-    lede: "학교알리미가 공시한 과목별 성취도 분포예요. A(90점 이상) 인원과 1등급 자리를 맞대 보면 이 학교 1등급 컷이 90점 위인지 아래인지가 보입니다.",
+    lede: "과목별 성취도 분포예요. A(90점 이상) 인원과 1등급 자리를 맞대 보면 이 학교 1등급 컷이 90점 위인지 아래인지가 보입니다.",
     ledeMid: "중학교는 등급이 없어 성취도 A~E만 남아요. A 비율과 평균으로 시험의 성격을 읽습니다.",
     subHigh: (g: number, y: number) => `고${g}, ${y}학년도 기준`,
     subMid: (g: number, y: number) => `중${g}, ${y}학년도 기준`,
@@ -127,7 +127,7 @@ export const SECTION = {
     above: "90점 위",
     below: "90점 아래",
     aCount: (n: number) => `${n}명`,
-    legend: "A 인원이 1등급 자리보다 많으면 90점을 넘겨도 1등급이 아닐 수 있어요. 노란 선이 1등급 자리(5등급제 10%, 9등급제 4%)입니다.",
+    legend: "A 인원이 1등급 자리보다 많으면 90점을 넘겨도 1등급이 아닐 수 있어요. 막대 위 검은 선이 1등급 자리(5등급제 10%, 9등급제 4%)입니다.",
     dist: "성취도 분포",
     years: "학년도",
     trendUp: (a: number, b: number) => `3년 사이 A 비율이 ${a.toFixed(1)}%에서 ${b.toFixed(1)}%로 올랐어요. 상위권이 두꺼워지는 추세예요.`,
@@ -136,8 +136,6 @@ export const SECTION = {
     keySubject: (s: string, a: number) => `국영수 중 ${s} A 비율이 가장 낮아요(${a.toFixed(1)}%). 이 학교에선 ${s}가 등급을 가릅니다.`,
     fitTitle: "이런 학생이 가면 좋아요",
     cautionTitle: "이건 알고 가세요",
-    fitNote: "공시 숫자에서 읽어낸 옳은영어의 생각이에요. 학교가 발표한 해석이 아닙니다.",
-    source: (years: string) => `출처: 학교알리미 교과별 학업성취 사항, ${years} 공시`,
     empty: {
       title: "아직 성취도 자료가 없어요",
       text: "학교알리미는 이 항목을 API로 주지 않고, 화면은 자동수집을 막아 둬서 사람이 받아야 해요. 받은 엑셀을 '우리가 본 기록' 탭에서 불러오면 이 자리가 채워집니다.",
@@ -153,7 +151,7 @@ export const SECTION = {
   exam2026: {
     en: "THIS YEAR'S PAPER",
     ko: "올해 시험지, 이렇게 나왔다",
-    lede: "옳은영어 강사진이 시험지를 펴 놓고 쓴 학교별 리포트예요. 컷은 학교가 발표한 값이 아니라 우리 학생 성적표와 강사 추정으로 잡았습니다.",
+    lede: "옳은영어 강사진이 시험지를 펴 놓고 쓴 학교별 리포트예요. 중간과 기말이 어떻게 달랐는지까지 담았어요.",
     subHigh: "고1 기준",
     subMid: "중3 기준, 없으면 중2",
     foot: "학교별 상세는 아래 학교 페이지에 중간·기말 카드로 실었어요. 출처는 카드마다 붙어 있습니다.",
@@ -197,7 +195,7 @@ export const SECTION = {
   results: {
     en: "SCOREBOARD",
     ko: "옳은영어 성적표",
-    lede: "2026년 1학기 기말고사 기준이에요. 아래 두 지표는 분모가 달라 따로 실었고, 서로 비교하는 숫자가 아닙니다.",
+    lede: "2026년 1학기 기말고사 기준이에요. 아래 두 지표는 분모가 달라 따로 실었어요.",
     enrolledSub: "분모는 옳은영어 재원생 수",
     schoolTopSub: "분모는 그 학교 전체 1등급 인원",
     foot: "옳은영어 재원생 자체 집계",
@@ -207,9 +205,9 @@ export const SECTION = {
     ko: "학교 하나씩 들여다보기",
     ledeSeen: (seen: number, total: number) =>
       seen === total
-        ? `저희가 직접 시험지를 본 ${total}곳이에요. 공시로는 안 보이는 부분입니다.`
-        : `직접 시험지를 본 ${seen}곳을 포함해 ${total}곳이에요. 공시로는 안 보이는 부분입니다.`,
-    ledeNewsOnly: (total: number) => `${total}곳을 학교 밖 공개 자료로 봅니다. 홈페이지, 언론, 학교알리미 문서에서 옮겼어요.`,
+        ? `저희가 직접 시험지를 본 ${total}곳이에요. 학교마다 시험의 얼굴이 달라요.`
+        : `직접 시험지를 본 ${seen}곳을 포함해 ${total}곳이에요. 학교마다 시험의 얼굴이 달라요.`,
+    ledeNewsOnly: (total: number) => `${total}곳의 학교 소식과 분위기를 모아 봤어요.`,
   },
 };
 
@@ -219,24 +217,18 @@ export const BLOCK = {
   scope: { en: "ON THE TEST", ko: "시험 범위, 어디서 나왔나" },
   scopeMid: { en: "ON THE TEST", ko: "시험 범위, 어디서 나왔나 (중3 기준)" },
   cutoff: { en: "CUT LINE", ko: "1등급 커트라인" },
-  cutoffNote: (basis: string) => `${basis}. 우리 학생들 성적표로 잡은 값이고 학교가 발표한 숫자가 아니에요.`,
   middleReport: { en: "ON THE REPORT", ko: "성적표에 남는 것" },
-  middleReportNote: "우리 학생들 성적표로 잡은 값이고 학교가 발표한 숫자가 아니에요.",
   freeSemester: "지필평가 없는 학기",
   features: { en: "HOW THEY TEST", ko: "이 학교 시험의 습관" },
   signature: { en: "SIGNATURE", ko: "여기서만 나오는 문제" },
   signatureMake: "바로 뽑기",
   fit: { en: "WHO FITS", ko: "이런 학생에게 맞는 학교" },
-  fitNote: "이 판단은 옳은영어의 생각이고 공시된 사실이 아니에요.",
   exam2026: { en: "THIS YEAR", ko: "올해 시험지 리포트", tag: "2026 1학기" },
   examGrade: (level: string, g: number) => `${level}${g}`,
   results: { en: "PROOF", ko: "이 학교에서 낸 결과", tag: "2026 실적" },
   insights: { en: "FROM THE STAGE", ko: "강사진이 짚은 포인트", tag: "LIVE, 블로그" },
   tmi: { en: "TMI", ko: "선배들의 TMI", tag: "재원생 선배" },
-  tmiNote: "옳은영어 재원생 선배들이 직접 써 준 답을 설명회에서 소개한 것. 유튜브 LIVE 2025.11.16",
   news: { en: "FROM OUTSIDE", ko: "학교 밖에서 확인한 것", tag: "학교·언론 공개 자료" },
-  newsNote: (home: string | undefined, date: string) =>
-    `${home ? `학교 홈페이지 ${home}, ` : ""}조사일 ${date}. 노란 점은 1차 출처, 회색 점은 2차 출처예요.`,
   stats: { g1: "1학년", classes: "1학년 학급", perClass: "학급당", seats: "1등급 자리", coed: "남 : 여", aRatio: "영어 성취도 A", ratio: "지필 : 수행", textbook: "교과서" },
 };
 
@@ -249,18 +241,16 @@ export const TAG = {
 
 export const NUMBERS = {
   cards: "2026년 1학기, 숫자로",
-  posterNote: "포스터의 이름은 원문대로 가려져 있어요. 옳은영어 블로그에 공개된 자료를 그대로 옮겼습니다.",
   posterCaptions: [
     "2026 1학기 중간고사 결과. 흑석고1 학교 1등급의 35%, 수도여고1 재원생 30%, 영등포고1 40%, 숭의여고1 33%",
     "2026 1학기 기말고사 전 과목 1등급. 흑석고1 3명, 영등포고1 1명",
     "2026 1학기 기말고사 고등부 성적 우수자. 90점 이상 및 1등급",
   ],
-  posterSource: "포스터 원문",
 };
 
 export const FOOTER = {
   left: "옳은영어 ORUN ENGLISH",
-  sources: "출처: 학교알리미 2026년 공시, 진로현황 2025년 공시, 옳은영어 블로그 2026년 1학기 분석, 유튜브 LIVE 2025.11.16, 각 학교 홈페이지",
+  tagline: "정확한 분석, 옳은 방향",
 };
 
 /* ── 덱 전용 ─────────────────────────────── */
@@ -296,8 +286,7 @@ export const DECK = {
   orunResults: {
     en: "SCOREBOARD, 2026 1학기",
     title: "2026년 1학기, 옳은영어 성적표",
-    posterCaption: "옳은영어 블로그 2026.05.15 게시 포스터",
-    foot: "학교 1등급 중 비율과 재원생 중 비율은 분모가 달라요. 옳은영어 블로그 성적우수자 발표 기준",
+    foot: "학교 1등급 중 비율과 재원생 중 비율은 분모가 달라요",
     note: "[발표 스크립트] 전 과목 1등급 4명, 전교 1등 2명. 포스터에 있는 그대로예요.",
   },
   compare: {
@@ -330,8 +319,8 @@ export const DECK = {
     en: "GRADES ON PAPER",
     title: "국영수 성취도, 3년을 겹쳐 보면",
     part: (i: number, n: number) => `국영수 성취도, 3년을 겹쳐 보면 (${i}/${n})`,
-    sub: (g: number, y: number) => `고${g} ${y}학년도. 학교알리미 교과별 학업성취 사항 공시`,
-    subMid: (g: number, y: number) => `중${g} ${y}학년도. 학교알리미 교과별 학업성취 사항 공시`,
+    sub: (g: number, y: number) => `고${g} ${y}학년도 기준`,
+    subMid: (g: number, y: number) => `중${g} ${y}학년도 기준`,
     cols: ["학교", "수강자", "1등급 자리", "국어 A", "영어 A", "수학 A", "평균 국/영/수", "1등급 컷, 90점 기준"],
     above: "90점 위",
     below: "90점 아래",
@@ -343,7 +332,6 @@ export const DECK = {
     caution: "이건 알고 가세요",
     seatLine: "1등급 자리",
     noteSchool: (name: string, summary: string) => `[발표 스크립트] ${name}입니다. ${summary}`,
-    fitNote: "공시 숫자에서 읽어낸 옳은영어의 생각이에요. 학교가 발표한 해석이 아닙니다",
     sectionTitle: "국영수 성취도, 3년을 겹쳐 보면",
     sectionSummary: "학교알리미 공시 그대로예요. A 인원과 1등급 자리를 맞대 보면 컷이 어디 있는지 보입니다.",
   },
@@ -352,7 +340,7 @@ export const DECK = {
     title: "올해 시험지, 이렇게 나왔다",
     part: (i: number, n: number) => `올해 시험지, 이렇게 나왔다 (${i}/${n})`,
     sub: (level: string, g: number) => `${level}${g} 기준. 옳은영어 강사진이 시험지를 펴 놓고 쓴 리포트`,
-    foot: "컷은 학교 발표값이 아니라 우리 학생 성적표와 강사 추정. 출처는 학교 페이지에",
+    foot: "학교별 상세는 뒤 학교 페이지에 중간·기말 카드로",
     note: "[발표 스크립트] 같은 동네인데 시험 성격이 이렇게 달라요. 객관식 100%인 학교와 서답형 35점인 학교가 나란히 있습니다.",
   },
   examTrend: {
@@ -371,13 +359,12 @@ export const DECK = {
   tmi: {
     en: "TMI",
     title: (name: string) => `${name} 선배들의 TMI`,
-    sub: "옳은영어 재원생 선배들이 직접 써 준 답. 유튜브 LIVE 2025.11.16",
+    sub: "옳은영어 재원생 선배들이 직접 써 준 답이에요",
     note: "[발표 스크립트] 어른들이 못 알려주는 것들이에요. 급식, 계단, 매점.",
   },
   news: {
     en: "FROM OUTSIDE",
     title: (name: string) => `${name}, 학교 밖에서 확인한 것`,
-    foot: (date: string) => `조사일 ${date}. 학교 홈페이지, 언론, 학교알리미 공시 문서에서 옮겼어요`,
     note: (first: string) => `[발표 스크립트] 학교 밖에서 확인되는 것들이에요. ${first}`,
   },
   school: {
@@ -391,7 +378,6 @@ export const DECK = {
     features: "이 학교 시험의 습관",
     signature: "여기서만 나오는 문제",
     fit: (name: string) => `${name}, 이런 학생에게 맞는 학교`,
-    fitNote: "이 판단은 옳은영어의 생각이고 공시된 사실이 아니에요",
     noteCharacter: (name: string, c: string) => `[발표 스크립트] ${name}이에요. ${c}`,
     noteHard: (name: string, lv: string, c: string) => `[발표 스크립트] ${name}는 영어가 ${lv}이에요. ${c}`,
     noteHow: (name: string, f: string) => `[발표 스크립트] ${name} 시험의 습관이에요. ${f}`,
@@ -400,14 +386,14 @@ export const DECK = {
   results: {
     en: "SCOREBOARD",
     title: "옳은영어 성적표",
-    foot: (term: string) => `${term}, 옳은영어 재원생 자체 집계. 두 지표는 분모가 달라요`,
+    foot: (term: string) => `${term} 기준. 두 지표는 분모가 달라요`,
     note: "[발표 스크립트] 두 숫자는 기준이 달라요. 섞어서 비교하시면 안 됩니다.",
   },
   closing: {
     en: "THANK YOU",
     title: ["정확한 분석,", "옳은 방향"],
     brand: "옳은영어 ORUN ENGLISH",
-    sources: "출처: 학교알리미 2026년 공시, 졸업생 진로 2025년 공시, 나이스 교육정보 개방포털, 옳은영어 블로그, 각 학교 홈페이지",
+    tagline: "동작구에서 12년, 옳은영어",
     note: "[발표 스크립트] 개별 상담은 끝나고 바로 받을게요.",
   },
 };

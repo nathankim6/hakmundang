@@ -4,7 +4,7 @@ import { groupsWithCounts, hasAchievement, hasObservation, schoolsInGroups } fro
 import { SOURCED } from "@/data/sourced";
 import { getNews } from "@/data/news";
 import { PICKER } from "@/lib/schools/copy";
-import { Icon } from "@/components/schools/Art";
+import { Icon, Logo } from "@/components/schools/Art";
 
 interface Props {
   selected: string[];
@@ -73,7 +73,7 @@ export function SchoolPicker({ selected, onChange, onBuild }: Props) {
           <div className="orun-eyebrow" style={{ marginBottom: 10 }}>
             {PICKER.en}
           </div>
-          <h2 className="orun-h2">{PICKER.title}</h2>
+          <h2 className="orun-h2" style={{ fontSize: 30 }}>{PICKER.title}</h2>
           <p className="orun-lede" style={{ fontSize: 14, marginTop: 6 }}>
             {PICKER.hint}
           </p>
@@ -141,9 +141,7 @@ function SchoolCard({ school, checked, onToggle }: { school: SchoolFact; checked
   const meta = [school.district, school.foundation, school.coed].filter(Boolean).join(" · ");
   return (
     <button type="button" className="orun-pick" aria-pressed={checked} onClick={onToggle}>
-      <span className="orun-pick__box" aria-hidden="true">
-        <Icon name="check" size={13} stroke={2.6} />
-      </span>
+      <Logo code={school.code} name={school.name} />
       <span style={{ minWidth: 0 }}>
         <span className="orun-pick__name">{school.name}</span>
         <span className="orun-pick__meta" style={{ display: "block" }}>
@@ -151,11 +149,14 @@ function SchoolCard({ school, checked, onToggle }: { school: SchoolFact; checked
         </span>
         <span className="orun-pick__foot">
           {l.obs && <span className="orun-chip orun-chip--yellow">{PICKER.badgeObs}</span>}
-          {l.deep && <span className="orun-chip orun-chip--ink">{PICKER.badgeSourced}</span>}
+          {l.deep && <span className="orun-chip orun-chip--coral">{PICKER.badgeSourced}</span>}
           {l.ach && <span className="orun-chip orun-chip--blue">{PICKER.badgeAchieve}</span>}
-          {l.news && !l.deep && <span className="orun-chip">{PICKER.badgeNews}</span>}
+          {l.news && !l.deep && <span className="orun-chip orun-chip--mint">{PICKER.badgeNews}</span>}
           <span className="orun-pick__num">{school.g1Total ? PICKER.g1(school.g1Total) : "—"}</span>
         </span>
+      </span>
+      <span className="orun-pick__box" aria-hidden="true">
+        <Icon name="check" size={14} stroke={3} />
       </span>
     </button>
   );

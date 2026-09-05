@@ -15,7 +15,7 @@ import {
   useObservations,
 } from "@/lib/schools/store";
 import { allSchools } from "@/lib/schools/data";
-import { APP, BLOCK, EDITOR, TAG } from "@/lib/schools/copy";
+import { APP, BLOCK, EDITOR } from "@/lib/schools/copy";
 import type { IconName } from "@/assets/art";
 import { Icon } from "@/components/schools/Art";
 
@@ -369,18 +369,15 @@ function Block({
   ko,
   icon,
   hint,
-  tone,
   children,
 }: {
   en: string;
   ko: string;
   icon: IconName;
   hint?: string;
-  tone: "fact" | "obs" | "view";
+  tone?: "fact" | "obs" | "view";
   children: ReactNode;
 }) {
-  const cls = tone === "fact" ? "orun-chip--blue" : tone === "obs" ? "orun-chip--yellow" : "";
-  const tag = tone === "fact" ? EDITOR.fact.tag : TAG[tone];
   return (
     <section style={{ marginBottom: 30 }}>
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, borderBottom: "1.5px solid var(--ink)", paddingBottom: 8, marginBottom: 12 }}>
@@ -391,7 +388,6 @@ function Block({
           </span>
           <span style={{ fontSize: 16, fontWeight: 700, color: "var(--ink)" }}>{ko}</span>
         </div>
-        <span className={`orun-chip ${cls}`}>{tag}</span>
       </div>
       {hint && (
         <p className="orun-small" style={{ margin: "0 0 12px" }}>

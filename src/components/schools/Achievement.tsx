@@ -1,9 +1,8 @@
 import type { SchoolRecord } from "@/types/school";
-import type { SchoolAchievement } from "@/types/achievement";
-import { SECTION, TAG } from "@/lib/schools/copy";
+import { SECTION } from "@/lib/schools/copy";
 import { LETTERS, SUBJECTS3, fix, pct, profileOf, type AchievementProfile, type Subject3, type SubjectPoint } from "@/lib/schools/achievement";
 import { profileText, repPoint } from "@/lib/schools/achievementText";
-import { Art, Icon } from "@/components/schools/Art";
+import { Icon, Scene, Sticker } from "@/components/schools/Art";
 import type { Chapter, HeadFn } from "@/components/schools/Sourced";
 
 /**
@@ -12,7 +11,7 @@ import type { Chapter, HeadFn } from "@/components/schools/Sourced";
  */
 
 const short = (n: string) => n.replace(/(고등학교|중학교)$/, "");
-const SEG_COLOR = ["var(--ink)", "var(--muted)", "color-mix(in srgb, var(--muted) 40%, var(--hair))", "var(--hair)", "var(--shade)"];
+const SEG_COLOR = ["var(--t-yellow)", "var(--t-sky)", "var(--t-mint)", "var(--t-lav)", "var(--t-soft)"];
 
 export function AchievementSection({ records, chapter, head }: { records: SchoolRecord[]; chapter: Chapter; head: HeadFn }) {
   const C = SECTION.achieve;
@@ -21,7 +20,7 @@ export function AchievementSection({ records, chapter, head }: { records: School
     .filter((g) => g.list.length);
   return (
     <section style={{ marginBottom: 64 }}>
-      {head({ ...chapter, en: C.en, ko: C.ko, lede: groups.every((g) => g.level === "중") ? C.ledeMid : C.lede, art: "fraction" })}
+      {head({ ...chapter, en: C.en, ko: C.ko, lede: groups.every((g) => g.level === "중") ? C.ledeMid : C.lede, art: "achieve" })}
       {groups.map(({ level, list }) => (
         <LevelBlock key={level} level={level} list={list} />
       ))}
@@ -113,7 +112,7 @@ function LevelBlock({ level, list }: { level: "고" | "중"; list: SchoolRecord[
                           if (!pt) return null;
                           const above = pt.gap > 0;
                           return (
-                            <span key={s} className="orun-chip" style={{ color: above ? "var(--brick)" : "var(--blue)" }}>
+                            <span key={s} className={`orun-chip ${above ? "orun-chip--coral" : "orun-chip--blue"}`}>
                               {s} {above ? C.above : C.below}
                             </span>
                           );
@@ -135,7 +134,7 @@ function LevelBlock({ level, list }: { level: "고" | "중"; list: SchoolRecord[
 
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: 14, marginTop: 22 }}>
         {rows.map(({ r, p }) => (
-          <SchoolCard key={r.fact.code} record={r} profile={p} sa={r.achievement!} isHigh={isHigh} />
+          <SchoolCard key={r.fact.code} record={r} profile={p} isHigh={isHigh} />
         ))}
       </div>
 
@@ -148,10 +147,9 @@ function LevelBlock({ level, list }: { level: "고" | "중"; list: SchoolRecord[
   );
 }
 
-function SchoolCard({ record, profile: p, sa, isHigh }: { record: SchoolRecord; profile: AchievementProfile; sa: SchoolAchievement; isHigh: boolean }) {
+function SchoolCard({ record, profile: p, isHigh }: { record: SchoolRecord; profile: AchievementProfile; isHigh: boolean }) {
   const C = SECTION.achieve;
   const t = profileText(p, isHigh);
-  const years = [...new Set(sa.rows.map((r) => r.year))].sort();
   return (
     <div className="orun-card" style={{ display: "flex", flexDirection: "column", gap: 12 }}>
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 10, flexWrap: "wrap" }}>
@@ -159,7 +157,7 @@ function SchoolCard({ record, profile: p, sa, isHigh }: { record: SchoolRecord; 
           <Icon name="school" size={16} style={{ color: "var(--ink)" }} />
           <span style={{ fontSize: 15.5, fontWeight: 700, color: "var(--ink)" }}>{short(record.fact.name)}</span>
         </div>
-        <span className="orun-chip orun-chip--ink">{t.name}</span>
+        <span className="orun-chip orun-chip--yellow">{t.name}</span>
       </div>
 
       <div>
@@ -178,12 +176,6 @@ function SchoolCard({ record, profile: p, sa, isHigh }: { record: SchoolRecord; 
       <List title={C.fitTitle} icon="family" items={t.fit} />
       <List title={C.cautionTitle} icon="alert" items={t.caution} muted />
 
-      <div style={{ display: "flex", justifyContent: "space-between", gap: 8, alignItems: "center", flexWrap: "wrap", marginTop: "auto" }}>
-        <span className="orun-small" style={{ fontSize: 11.5 }}>
-          {C.source(years.join(", "))}
-        </span>
-        <span className="orun-chip">{TAG.view}</span>
-      </div>
     </div>
   );
 }
@@ -199,7 +191,7 @@ function List({ title, icon, items, muted }: { title: string; icon: "family" | "
       </div>
       {items.map((f, i) => (
         <div key={i} style={{ display: "grid", gridTemplateColumns: "12px 1fr", gap: 8, fontSize: 13, color: muted ? "var(--muted)" : "var(--body)", lineHeight: 1.5, padding: "3px 0" }}>
-          <span style={{ width: 5, height: 5, background: muted ? "var(--hair)" : "var(--yellow-hi)", marginTop: 7 }} />
+          <Sticker name={muted ? "bolt" : "check"} size={12} style={{ marginTop: 4 }} />
           <span>{f}</span>
         </div>
       ))}
@@ -225,14 +217,14 @@ export function SubjectBars({ subject, points, isHigh }: { subject: Subject3; po
           <span className="orun-mono" style={{ fontSize: 10.5, color: "var(--muted)" }}>
             {pt.schoolYear}
           </span>
-          <div style={{ position: "relative", height: 12, display: "flex", background: "var(--shade)" }} title={LETTERS.map((L) => `${L} ${pct(pt.dist[L])}`).join(", ")}>
+          <div style={{ position: "relative", height: 14, display: "flex", background: "var(--t-soft)", border: "1.5px solid var(--ink)", borderRadius: 7, overflow: "visible" }} title={LETTERS.map((L) => `${L} ${pct(pt.dist[L])}`).join(", ")}>
             {LETTERS.map((L, i) => (
-              <span key={L} style={{ width: `${pt.dist[L]}%`, background: SEG_COLOR[i], height: "100%" }} />
+              <span key={L} style={{ width: `${pt.dist[L]}%`, background: SEG_COLOR[i], height: "100%", borderRight: i < 4 ? "1.5px solid var(--ink)" : "none" }} />
             ))}
             {isHigh && pt.n > 0 && (
               <span
                 title={`1등급 자리 ${pt.seats}명`}
-                style={{ position: "absolute", left: `${(pt.seats / pt.n) * 100}%`, top: -3, width: 2, height: 18, background: "var(--yellow-hi)" }}
+                style={{ position: "absolute", left: `${(pt.seats / pt.n) * 100}%`, top: -4, width: 3, height: 20, background: "var(--ink)", borderRadius: 2 }}
               />
             )}
           </div>
@@ -265,7 +257,7 @@ function EmptyState() {
             ))}
           </ol>
         </div>
-        <Art name="examPaper" width={150} style={{ color: "var(--muted)" }} />
+        <Scene name="empty" width={200} />
       </div>
     </div>
   );
