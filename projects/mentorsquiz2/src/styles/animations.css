@@ -1,0 +1,161 @@
+
+
+@keyframes border-flow {
+  0%, 100% {
+    clip-path: inset(0 0 98% 0);
+  }
+  25% {
+    clip-path: inset(0 98% 0 0);
+  }
+  50% {
+    clip-path: inset(98% 0 0 0);
+  }
+  75% {
+    clip-path: inset(0 0 0 98%);
+  }
+}
+
+@keyframes text-shine {
+  0%, 100% {
+    background-size: 200% 200%;
+    background-position: left center;
+    opacity: 0.9;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+    opacity: 1;
+  }
+}
+
+@keyframes button-highlight {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes excel-pulse {
+  0%, 100% {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.animate-border-flow {
+  animation: border-flow 8s linear infinite;
+}
+
+.animate-text-shine {
+  animation: text-shine 3s ease infinite;
+}
+
+.animate-button-highlight {
+  animation: button-highlight 3s ease infinite;
+}
+
+.animate-excel-pulse {
+  animation: excel-pulse 2s ease-in-out infinite;
+}
+
+@keyframes subtle-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.animate-subtle-float {
+  animation: subtle-float 4s ease-in-out infinite;
+}
+
+@keyframes category-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-category-reveal {
+  animation: category-reveal 0.4s ease-out forwards;
+}
+
+/* Enhanced keyframe animations for loading progress */
+
+@keyframes gradient-x {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.3;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes shimmer-fast {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Utility classes for new animations */
+.animate-gradient-x {
+  background-size: 200% 200%;
+  animation: gradient-x 3s ease infinite;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-shimmer-fast {
+  animation: shimmer-fast 1.5s infinite linear;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 3s linear infinite;
+}
+

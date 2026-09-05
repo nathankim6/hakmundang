@@ -53,7 +53,7 @@ Lovable에서 만든 프로젝트들을 코드 그대로 이 폴더 아래에 �
 | [text-to-quiz-pdf](./text-to-quiz-pdf/) | 2025-09-18 | 없음 | [text-to-quiz-pdf.lovable.app](https://text-to-quiz-pdf.lovable.app) | 옮김 | 파일 76개 |
 | [voca-maker-buddy](./voca-maker-buddy/) | 2025-08-16 | 없음 | 미배포 | 옮김 | 파일 78개, 그림 1개 못 찾음 |
 | [orunsophia](./orunsophia/) | 2025-08-11 | 내 Supabase jpanp… | [orunsophia.lovable.app](https://orunsophia.lovable.app) | 옮김 | 파일 90개 |
-| [mentorsquiz2](./mentorsquiz2/) | 2025-08-08 | Lovable Cloud(추정) ecyau… | [mentorsquiz2.lovable.app](https://mentorsquiz2.lovable.app) | 아직 |  |
+| [mentorsquiz2](./mentorsquiz2/) | 2025-08-08 | Lovable Cloud(추정) ecyau… | [mentorsquiz2.lovable.app](https://mentorsquiz2.lovable.app) | 옮김 | 파일 212개 |
 | [mentorsreport](./mentorsreport/) | 2025-05-13 | 내 Supabase offvl… | [mentorsreport.lovable.app](https://mentorsreport.lovable.app) | 옮김 | 파일 113개 |
 | [orungrade](./orungrade/) | 2025-05-10 | 없음 | [orungrade.lovable.app](https://orungrade.lovable.app) | 옮김 | 파일 75개 |
 | [block-vocab-mastery-web](./block-vocab-mastery-web/) | 2025-04-28 | 없음 | [block-vocab-mastery-web.lovable.app](https://block-vocab-mastery-web.lovable.app) | 옮김 | 파일 73개 |
