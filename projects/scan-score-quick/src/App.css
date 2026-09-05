@@ -1,0 +1,123 @@
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Professional styling */
+.pro-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.pro-card {
+  @apply bg-white rounded-lg border border-slate-100 shadow-card overflow-hidden transition-all duration-300;
+}
+
+.pro-card:hover {
+  @apply shadow-lg transform -translate-y-1;
+}
+
+.pro-header {
+  @apply bg-gradient-to-r from-sky-50 to-indigo-50 border-b border-slate-200 py-6;
+}
+
+.pro-heading {
+  @apply text-3xl font-bold text-slate-800 tracking-tight;
+}
+
+.pro-subheading {
+  @apply text-slate-600 mt-2;
+}
+
+.pro-btn-primary {
+  @apply bg-gradient-to-r from-sky-500 to-indigo-600 text-white hover:from-sky-600 hover:to-indigo-700 transition-all;
+}
+
+.pro-btn-secondary {
+  @apply bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition-all;
+}
+
+.pro-btn-success {
+  @apply bg-gradient-to-r from-emerald-500 to-teal-600 text-white hover:from-emerald-600 hover:to-teal-700 transition-all;
+}
+
+.pro-input {
+  @apply border border-slate-200 rounded-md px-4 py-2 focus:ring-2 focus:ring-sky-500/50 focus:border-sky-500 outline-none;
+}
+
+.pro-label {
+  @apply text-sm font-medium text-slate-700 mb-1;
+}
+
+.pro-icon-bg {
+  @apply p-3 rounded-full bg-slate-100 text-slate-700;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.5s ease forwards;
+}
+
+/* Text glow effect */
+.text-glow {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 
+               0 0 20px rgba(255, 255, 255, 0.5),
+               0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+/* Stronger glow effect to match the image */
+.text-glow-strong {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1), 
+               0 0 15px rgba(255, 255, 255, 0.9),
+               0 0 20px rgba(255, 255, 255, 0.8),
+               0 0 25px rgba(255, 255, 255, 0.7),
+               0 0 30px rgba(255, 255, 255, 0.6);
+}
+
+/* Additional styles */
+.glass-card {
+  @apply bg-white/80 backdrop-blur-sm border border-white/50;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-sky-600 to-indigo-600;
+}
+
+.layout-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
