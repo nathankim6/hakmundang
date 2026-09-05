@@ -26,7 +26,7 @@ Lovable에서 만든 프로젝트들을 코드 그대로 이 폴더 아래에 �
 | [orunhomework](./orunhomework/) | 2026-08-30 | Lovable Cloud bbmin… | [orunhomework.lovable.app](https://orunhomework.lovable.app) | 옮김 | 파일 183개, 그림 11개 못 찾음 |
 | [schoolanalysis](./schoolanalysis/) | 2026-08-30 | Lovable Cloud xbcoi… | [schoolanalysis.lovable.app](https://schoolanalysis.lovable.app) | 옮김 | 파일 100개, 그림 1개 못 찾음 |
 | [orunvoca](./orunvoca/) | 2026-08-30 | 내 Supabase jpanp… | [orunvoca.lovable.app](https://orunvoca.lovable.app) | 아직 |  |
-| [orunsyntax](./orunsyntax/) | 2026-08-30 | Lovable Cloud mpzvt… | [orunsyntax.lovable.app](https://orunsyntax.lovable.app) | 아직 |  |
+| [orunsyntax](./orunsyntax/) | 2026-08-30 | Lovable Cloud mpzvt… | [orunsyntax.lovable.app](https://orunsyntax.lovable.app) | 옮김 | 파일 155개, 그림 14개 못 찾음 |
 | [wordbook-artist](./wordbook-artist/) | 2026-08-25 | Lovable Cloud xquvu… | [wordbook-artist.lovable.app](https://wordbook-artist.lovable.app) | 옮김 | 파일 152개, 그림 10개 못 찾음 |
 | [scan-score-quick](./scan-score-quick/) | 2026-08-04 | Lovable Cloud ekvom… | [scan-score-quick.lovable.app](https://scan-score-quick.lovable.app) | 아직 |  |
 | [mini-book-style](./mini-book-style/) | 2026-06-21 | 없음 | [mini-book-style.lovable.app](https://mini-book-style.lovable.app) | 옮김 | 파일 71개 |
@@ -34,7 +34,7 @@ Lovable에서 만든 프로젝트들을 코드 그대로 이 폴더 아래에 �
 | [school-data-lover](./school-data-lover/) | 2026-06-15 | 없음 | [school-data-lover.lovable.app](https://school-data-lover.lovable.app) | 옮김 | 파일 83개 |
 | [orunmiddle](./orunmiddle/) | 2026-06-15 | 없음 | [orunmiddle.lovable.app](https://orunmiddle.lovable.app) | 옮김 | 파일 69개 |
 | [weekend-clinic-buddy](./weekend-clinic-buddy/) | 2026-06-12 | 없음 | [weekend-clinic-buddy.lovable.app](https://weekend-clinic-buddy.lovable.app) | 옮김 | 파일 74개 |
-| [olpumta](./olpumta/) | 2026-06-09 | Lovable Cloud okjtq… | [olpumta.lovable.app](https://olpumta.lovable.app) | 아직 |  |
+| [olpumta](./olpumta/) | 2026-06-09 | Lovable Cloud okjtq… | [olpumta.lovable.app](https://olpumta.lovable.app) | 옮김 | 파일 108개, 그림 20개 못 찾음 |
 | [orunaistudio](./orunaistudio/) | 2026-05-16 | 없음 | [orunaistudio.lovable.app](https://orunaistudio.lovable.app) | 옮김 | 파일 80개, 그림 8개 못 찾음 |
 | [my-grades](./my-grades/) | 2026-05-15 | 없음 | [my-grades.lovable.app](https://my-grades.lovable.app) | 옮김 | 파일 79개, 그림 2개 못 찾음 |
 | [orunrecord](./orunrecord/) | 2026-05-01 | 없음 | [orunrecord.lovable.app](https://orunrecord.lovable.app) | 옮김 | 파일 86개, 그림 3개 못 찾음 |
@@ -43,7 +43,7 @@ Lovable에서 만든 프로젝트들을 코드 그대로 이 폴더 아래에 �
 | [oruncare](./oruncare/) | 2026-01-14 | 내 Supabase jpanp… | [oruncare.lovable.app](https://oruncare.lovable.app) | 아직 |  |
 | [meontorsomr](./meontorsomr/) | 2026-01-12 | 내 Supabase offvl… | [meontorsomr.lovable.app](https://meontorsomr.lovable.app) | 아직 |  |
 | [orun-grammar-buddy](./orun-grammar-buddy/) | 2026-01-09 | Lovable Cloud mppgy… | [orun-grammar-buddy.lovable.app](https://orun-grammar-buddy.lovable.app) | 아직 |  |
-| [curriculum-canvas-48](./curriculum-canvas-48/) | 2026-01-01 | 없음 | [curriculum-canvas-48.lovable.app](https://curriculum-canvas-48.lovable.app) | 아직 |  |
+| [curriculum-canvas-48](./curriculum-canvas-48/) | 2026-01-01 | 없음 | [curriculum-canvas-48.lovable.app](https://curriculum-canvas-48.lovable.app) | 옮김 | 파일 73개 |
 | [oruntestdb](./oruntestdb/) | 2025-12-24 | Lovable Cloud bpimt… | [oruntestdb.lovable.app](https://oruntestdb.lovable.app) | 아직 |  |
 | [orunmtestdb](./orunmtestdb/) | 2025-12-24 | Lovable Cloud uajez… | [orunmtestdb.lovable.app](https://orunmtestdb.lovable.app) | 아직 |  |
 | [orunsurvey](./orunsurvey/) | 2025-11-30 | Lovable Cloud mapaz… | [orunsurvey.lovable.app](https://orunsurvey.lovable.app) | 아직 |  |
