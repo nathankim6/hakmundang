@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# 스캔본 → 텍스트 작업 폴더
+scan-in/
+scan-out/
