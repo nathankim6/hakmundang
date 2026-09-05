@@ -25,18 +25,23 @@ npm run dev
 
 - `src/assets/school-logos/cau.jpg` (코드에서 사용)
 - `src/assets/school-logos/danggok-middle.png` (코드에서 사용)
-- `src/assets/school-logos/danggok.png`
 - `src/assets/school-logos/dongyang.png` (코드에서 사용)
 - `src/assets/school-logos/gangnam.webp`
 - `src/assets/school-logos/guam-middle.webp` (코드에서 사용)
-- `src/assets/school-logos/guam.png`
 - `src/assets/school-logos/guksabong.jpg` (코드에서 사용)
 - `src/assets/school-logos/jangseung.png` (코드에서 사용)
 - `src/assets/school-logos/sanghyeon.webp` (코드에서 사용)
-- `src/assets/school-logos/seongnam.png`
 - `src/assets/school-logos/singil.webp` (코드에서 사용)
-- `src/assets/school-logos/sudo.png`
 - `src/assets/school-logos/sungui-middle.webp` (코드에서 사용)
-- `src/assets/school-logos/sungui.png`
 - `src/assets/school-logos/youngdeungpo-middle.webp` (코드에서 사용)
-- `src/assets/school-logos/youngdeungpo.png`
+
+## 다른 프로젝트에서 채운 파일
+
+배포 사이트에서 찾지 못해, 파일 구성이 거의 같은(리믹스 관계) 다른 프로젝트의 같은 경로 파일을 복사해 넣었습니다. 원본과 다를 가능성이 있으니 화면에서 한 번 확인해 주세요.
+
+- `src/assets/school-logos/danggok.png` ← projects/oruntestdb/
+- `src/assets/school-logos/guam.png` ← projects/oruntestdb/
+- `src/assets/school-logos/seongnam.png` ← projects/oruntestdb/
+- `src/assets/school-logos/sudo.png` ← projects/oruntestdb/
+- `src/assets/school-logos/sungui.png` ← projects/oruntestdb/
+- `src/assets/school-logos/youngdeungpo.png` ← projects/oruntestdb/

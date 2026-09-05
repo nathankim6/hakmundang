@@ -33,4 +33,9 @@ npm run dev
 - `src/assets/icon-review.png`
 - `src/assets/icon-rt-task.png`
 - `src/assets/icon-writing.png`
-- `src/assets/orun-english-character.png`
+
+## 다른 프로젝트에서 채운 파일
+
+배포 사이트에서 찾지 못해, 파일 구성이 거의 같은(리믹스 관계) 다른 프로젝트의 같은 경로 파일을 복사해 넣었습니다. 원본과 다를 가능성이 있으니 화면에서 한 번 확인해 주세요.
+
+- `src/assets/orun-english-character.png` ← projects/pcube/
