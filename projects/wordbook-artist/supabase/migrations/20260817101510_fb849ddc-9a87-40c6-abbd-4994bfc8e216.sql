@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS public.day_reading_passages;

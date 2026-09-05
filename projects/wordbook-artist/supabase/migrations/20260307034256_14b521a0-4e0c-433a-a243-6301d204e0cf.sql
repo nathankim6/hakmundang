@@ -1,0 +1,1 @@
+ALTER TABLE public.words ADD COLUMN word_type text;

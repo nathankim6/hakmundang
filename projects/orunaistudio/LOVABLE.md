@@ -1,6 +1,6 @@
 # orunaistudio
 
-Lovable 프로젝트를 코드 그대로 옮겨 온 사본입니다. (가져온 날짜: 2026-09-05 05:21 UTC)
+Lovable 프로젝트를 코드 그대로 옮겨 온 사본입니다. (가져온 날짜: 2026-09-05 05:23 UTC)
 
 | 항목 | 값 |
 |---|---|
@@ -8,7 +8,7 @@ Lovable 프로젝트를 코드 그대로 옮겨 온 사본입니다. (가져온 
 | 배포 주소 | https://orunaistudio.lovable.app |
 | Lovable 마지막 수정 | 2026-05-16 |
 | 데이터베이스 | 없음 |
-| 파일 | 텍스트 79개 복사, 그림·미디어 11개 내려받음 |
+| 파일 | 텍스트 80개 복사, 그림·미디어 11개 내려받음 |
 
 ## 실행 방법
 
@@ -31,11 +31,3 @@ npm run dev
 - `src/assets/logos/perplexity-logo.png` (코드에서 사용)
 - `src/assets/quiz-maker-preview.png`
 - `src/assets/workbook-maker-preview.png`
-
-## 공통 템플릿에서 복원한 파일
-
-shadcn/ui 기본 컴포넌트 37개(src/components/ui/)는 Lovable 프로젝트들 사이에서 내용이 같아 공통 템플릿 사본을 넣었습니다. 이 프로젝트에서 따로 고친 적이 있다면 Lovable 편집기의 원본과 비교해 주세요.
-
-## 아직 읽어 오지 못한 텍스트 파일
-
-- `src/hooks/use-toast.ts`
