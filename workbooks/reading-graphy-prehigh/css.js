@@ -435,4 +435,23 @@ table.ul td.t{line-height:1.2}
 table.ul td.t em{font-size:6.8pt;margin-left:4px}
 table.ul td.p{font-size:7.5pt}
 table.ul tr.ans td{padding-top:1.4px}
+
+/* ── 교사용: READ RIGHT 문장 위에 직접 표기 ── */
+.page.te .rrq.marked{margin-bottom:0.6mm}
+.page.te .rrq.marked .t{align-items:flex-start;margin-bottom:0}
+.page.te .rrq.marked .t .n{padding-top:2px}
+.rrmk{font-size:8.7pt;line-height:1.28;flex:1}
+.rrmk .tk{padding-bottom:12px;margin:0 2.2px}
+.rrmk .tk em{top:-5px}
+.rrmk .tk b{line-height:1.22}
+.rrmk .tk i{font-size:6.4pt}
+.rrmk .tk em svg{width:14px;height:12px}
+.rrmk .tk.s b,.rrmk .tk.s2 b{border-bottom-width:2px}
+.rrmk .tk.m b{border-bottom-width:1.8px}
+.rrmk .tk.c b{border-width:1.4px;border-radius:4px;padding:0 4px}
+.page.te .rrq.marked .aline.filled{margin-top:-2px;padding:0 2px 1px;min-height:0;height:auto;line-height:1.28}
+/* ── 교사용: Check Up 정답 선지 번호 ── */
+td.op b.okc{color:#D42B2B;position:relative}
+td.op b.okc::after{content:"";position:absolute;left:50%;top:50%;width:1.55em;height:1.55em;transform:translate(-50%,-50%);
+ border:1.8px solid #D42B2B;border-radius:50%}
 `;

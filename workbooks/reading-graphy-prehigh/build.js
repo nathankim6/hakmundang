@@ -11,7 +11,9 @@ const BOOK = PAD.length > 1;                       // 합본 여부
 const UNITS = PAD.map(nn=>({ U: require(`./units/u${nn}.js`), A: require(`./art/u${nn}.js`) }));
 const UN = PAD[0];
 let U, icons, scenes, STRIP, VIG, T;               // 유닛마다 갈아 끼운다
+let RR={};
 const useUnit = ({U:u,A:a}) => { U=u; icons=a.icons; scenes=a.scenes; STRIP=a.STRIP; VIG=a.VIG;
+  try{RR=require(`./rr/u${String(u.no).padStart(2,"0")}.js`);}catch(e){RR={};}
   T=u.lessons; T.forEach(t=>t.para.sort((x,y)=>x[0].codePointAt(0)-y[0].codePointAt(0))); };
 useUnit(UNITS[0]);
 const CIR="①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳".split("");
@@ -150,10 +152,12 @@ T.forEach(t=>{
    <div class="ko"><b>뼈대 해석</b>${t.fl.model.ko}</div>
   </div>
   <div class="rrh" style="margin-top:4.5mm">한 문장씩 분석하기<span>문장 위에 직접 기호를 표시하고, 아래 한 줄에 우리말로 옮겨 보세요.</span></div>
-  ${t.sent.map((s,i)=>{const dr=t.fl.drill.find(d=>d.n===CIR[i]);
-    return `<div class="rrq">
-    <div class="t"><div class="n">${String(i+1).padStart(2,"0")}</div><p>${esc(s)}</p></div>
-    ${TE&&dr?`<div class="mkans"><span class="ans">${esc(dr.ans)}</span></div>`:""}
+  ${t.sent.map((s,i)=>{const dr=t.fl.drill.find(d=>d.n===CIR[i]); const rrt=TE&&RR[t.no]&&RR[t.no][i];
+    return `<div class="rrq${rrt?" marked":""}">
+    <div class="t"><div class="n">${String(i+1).padStart(2,"0")}</div>${rrt
+      ?`<div class="mk rrmk">${rrt.map(x=>tok(x[0],x[1])).join("")}</div>`
+      :`<p>${esc(s)}</p>`}</div>
+    ${TE&&dr&&!rrt?`<div class="mkans"><span class="ans">${esc(dr.ans)}</span></div>`:""}
     ${Aline(t.kor[i])}</div>`;}).join("")}
   ${tab(t)}${foot(t,L)}
  </div>`);
@@ -192,12 +196,12 @@ T.forEach(t=>{
    <div class="q"><div class="stem"><div class="n">1</div><div>${t.check[0].q}</div></div>
     ${legend(WKEY,"선지마다 유형 하나에 ○")}
     <table class="cu"><tr><th>선지</th><th>유형 고르기</th></tr>
-     ${t.check[0].ch.map((c,i)=>`<tr><td class="op"><b>${CIR[i]}</b>${esc(c)}</td><td class="rs">${pick(WTAG,t.wtype[i])}</td></tr>`).join("")}
+     ${t.check[0].ch.map((c,i)=>`<tr><td class="op"><b${TE&&i===t.check[0].ans-1?' class="okc"':""}>${CIR[i]}</b>${esc(c)}</td><td class="rs">${pick(WTAG,t.wtype[i])}</td></tr>`).join("")}
     </table></div>
    <div class="q"><div class="stem"><div class="n">2</div><div>${t.check[1].q}</div></div>
     ${legend(SKEY,"유형에 ○ · 근거 번호 쓰기")}
     <table class="cu"><tr><th>선지</th><th>유형 고르기<span class="ev">근거</span></th></tr>
-     ${t.check[1].ch.map((c,i)=>`<tr><td class="op"><b>${CIR[i]}</b>${esc(c)}</td><td class="rs">${pick(STAG,t.stype[i])}<i class="ev">${A(evNo(t.src[i][0]))}</i></td></tr>`).join("")}
+     ${t.check[1].ch.map((c,i)=>`<tr><td class="op"><b${TE&&i===t.check[1].ans-1?' class="okc"':""}>${CIR[i]}</b>${esc(c)}</td><td class="rs">${pick(STAG,t.stype[i])}<i class="ev">${A(evNo(t.src[i][0]))}</i></td></tr>`).join("")}
     </table></div>
    <div class="q" style="margin-bottom:0"><div class="stem"><div class="n">3</div><div>${t.check[2].q}</div></div>
     ${TE?`<div class="aline filled" style="margin-left:28px"><span class="ans">${t.check[2].ans}</span></div>`
