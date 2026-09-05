@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 7% 18%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 7% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 7% 18%;
+
+    --primary: 224 97% 63%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 7% 18%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 7% 40%;
+
+    --accent: 220 14% 96%;
+    --accent-foreground: 220 7% 18%;
+
+    --destructive: 0 78% 70%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 224 97% 63%;
+
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border font-sans;
+  }
+
+  body {
+    @apply bg-toss-background text-toss-text m-0 p-0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+    width: 100%;
+    overscroll-behavior-y: none;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-bold;
+  }
+  
+  /* Toss 스타일 컴포넌트 */
+  .toss-card {
+    @apply bg-white rounded-xl shadow-sm border border-toss-border/30 overflow-hidden transition-all;
+  }
+  
+  .toss-input {
+    @apply bg-white text-toss-text border border-toss-border focus:border-toss-blue focus:ring-1 focus:ring-toss-blue/20 rounded-lg p-3 outline-none;
+  }
+  
+  .toss-button-primary {
+    @apply bg-toss-blue hover:bg-toss-lightBlue text-white font-medium rounded-xl px-4 py-3 transition-all shadow-sm cursor-pointer;
+  }
+  
+  .toss-button-secondary {
+    @apply bg-toss-secondary hover:bg-toss-focus text-toss-gray font-medium rounded-xl px-4 py-3 transition-all cursor-pointer;
+  }
+  
+  .toss-section {
+    @apply bg-white p-6 rounded-xl shadow-sm border border-toss-border/20;
+  }
+
+  .toss-chat-section {
+    @apply bg-white relative;
+  }
+  
+  .toss-chat-container {
+    @apply rounded-xl overflow-hidden border border-toss-border/20 shadow-sm;
+  }
+  
+  .toss-divider {
+    @apply flex items-center my-4;
+  }
+
+  .toss-divider::before, .toss-divider::after {
+    content: '';
+    @apply flex-grow h-px bg-toss-border;
+  }
+
+  .toss-divider-content {
+    @apply mx-3 text-toss-textSecondary text-xs font-medium;
+  }
+  
+  .toss-badge {
+    @apply bg-toss-secondary text-toss-textSecondary text-xs px-2 py-1 rounded-full;
+  }
+
+  /* 모바일 상태 바 스타일 */
+  .status-bar {
+    @apply flex justify-between items-center px-4 py-2 bg-white;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  .status-bar-time {
+    @apply font-medium text-sm;
+  }
+
+  .status-bar-icons {
+    @apply flex items-center gap-1;
+  }
+
+  /* 애니메이션 */
+  @keyframes slide-up {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-down {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-left {
+    from {
+      transform: translateX(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-right {
+    from {
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+
+  @keyframes bounce-subtle {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-4px);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200%;
+    }
+    100% {
+      background-position: 200%;
+    }
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.5s ease-out forwards;
+  }
+
+  .animate-slide-down {
+    animation: slide-down 0.5s ease-out forwards;
+  }
+
+  .animate-slide-left {
+    animation: slide-left 0.5s ease-out forwards;
+  }
+
+  .animate-slide-right {
+    animation: slide-right 0.5s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.5s ease-out forwards;
+  }
+
+  .animate-pulse-subtle {
+    animation: pulse 2s infinite;
+  }
+
+  .animate-bounce-subtle {
+    animation: bounce-subtle 2s ease-in-out infinite;
+  }
+
+  .animate-shimmer {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+
+  .animation-delay-100 {
+    animation-delay: 0.1s;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .animation-delay-300 {
+    animation-delay: 0.3s;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 0.4s;
+  }
+
+  .animation-delay-500 {
+    animation-delay: 0.5s;
+  }
+
+  /* 스크롤바 커스텀 */
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-toss-border/50 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-toss-border;
+  }
+
+  /* Hide scrollbars for iframe content */
+  .iframe-container {
+    overflow: hidden;
+  }
+  
+  .iframe-container iframe {
+    overflow: hidden;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+  }
+  
+  .iframe-container iframe::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+    width: 0;
+    height: 0;
+  }
+
+  /* 모바일 앱 스타일 시뮬레이션 */
+  #root {
+    @apply max-w-lg mx-auto bg-white min-h-screen relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  }
+
+  /* 모바일 터치 영역 개선 */
+  .touch-target {
+    @apply min-h-[44px] min-w-[44px];
+  }
+
+  /* 모바일 버튼 관련 스타일 개선 */
+  button {
+    @apply cursor-pointer active:opacity-80;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* 모바일 hover 효과 개선 */
+  @media (hover: hover) {
+    .mobile-button-hover:hover {
+      @apply bg-opacity-90;
+    }
+  }
+
+  /* 모바일 터치 피드백 */
+  .touch-feedback {
+    @apply relative overflow-hidden;
+  }
+
+  .touch-feedback::after {
+    content: '';
+    @apply absolute inset-0 bg-current opacity-0 pointer-events-none;
+    transition: opacity 0.3s;
+  }
+
+  .touch-feedback:active::after {
+    @apply opacity-10;
+  }
+
+  /* 토스 카드 호버 효과 */
+  .toss-card-hover {
+    @apply transition-all duration-300;
+  }
+
+  .toss-card-hover:hover {
+    @apply transform -translate-y-1 shadow-md;
+  }
+
+  /* 토스 버튼 애니메이션 */
+  .toss-button-animated {
+    @apply relative overflow-hidden;
+  }
+
+  .toss-button-animated::after {
+    content: '';
+    @apply absolute inset-0 bg-white opacity-0;
+    transform: translateX(-100%);
+    transition: transform 0.6s ease-out, opacity 0.3s ease-out;
+  }
+
+  .toss-button-animated:active::after {
+    @apply opacity-20;
+    transform: translateX(0);
+  }
+
+  /* 스켈레톤 로딩 */
+  .skeleton {
+    @apply bg-toss-secondary animate-shimmer rounded;
+  }
+}

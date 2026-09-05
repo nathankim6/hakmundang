@@ -49,14 +49,14 @@ Lovable에서 만든 프로젝트들을 코드 그대로 이 폴더 아래에 �
 | [orunsurvey](./orunsurvey/) | 2025-11-30 | Lovable Cloud mapaz… | [orunsurvey.lovable.app](https://orunsurvey.lovable.app) | 옮김 | 파일 96개 |
 | [econ-viz-wiz](./econ-viz-wiz/) | 2025-11-27 | 없음 | [econ-viz-wiz.lovable.app](https://econ-viz-wiz.lovable.app) | 옮김 | 파일 80개 |
 | [oruncourse](./oruncourse/) | 2025-11-27 | 내 Supabase jpanp… | [oruncourse.lovable.app](https://oruncourse.lovable.app) | 옮김 | 파일 89개, 그림 1개 못 찾음 |
-| [project-signal-hub](./project-signal-hub/) | 2025-10-23 | 내 Supabase jpanp… | [project-signal-hub.lovable.app](https://project-signal-hub.lovable.app) | 아직 |  |
-| [text-to-quiz-pdf](./text-to-quiz-pdf/) | 2025-09-18 | 없음 | [text-to-quiz-pdf.lovable.app](https://text-to-quiz-pdf.lovable.app) | 아직 |  |
-| [voca-maker-buddy](./voca-maker-buddy/) | 2025-08-16 | 없음 | 미배포 | 아직 |  |
-| [orunsophia](./orunsophia/) | 2025-08-11 | 내 Supabase jpanp… | [orunsophia.lovable.app](https://orunsophia.lovable.app) | 아직 |  |
+| [project-signal-hub](./project-signal-hub/) | 2025-10-23 | 내 Supabase jpanp… | [project-signal-hub.lovable.app](https://project-signal-hub.lovable.app) | 옮김 | 파일 154개 |
+| [text-to-quiz-pdf](./text-to-quiz-pdf/) | 2025-09-18 | 없음 | [text-to-quiz-pdf.lovable.app](https://text-to-quiz-pdf.lovable.app) | 옮김 | 파일 76개 |
+| [voca-maker-buddy](./voca-maker-buddy/) | 2025-08-16 | 없음 | 미배포 | 옮김 | 파일 78개, 그림 1개 못 찾음 |
+| [orunsophia](./orunsophia/) | 2025-08-11 | 내 Supabase jpanp… | [orunsophia.lovable.app](https://orunsophia.lovable.app) | 옮김 | 파일 90개 |
 | [mentorsquiz2](./mentorsquiz2/) | 2025-08-08 | Lovable Cloud(추정) ecyau… | [mentorsquiz2.lovable.app](https://mentorsquiz2.lovable.app) | 아직 |  |
-| [mentorsreport](./mentorsreport/) | 2025-05-13 | 내 Supabase offvl… | [mentorsreport.lovable.app](https://mentorsreport.lovable.app) | 아직 |  |
-| [orungrade](./orungrade/) | 2025-05-10 | 없음 | [orungrade.lovable.app](https://orungrade.lovable.app) | 아직 |  |
-| [block-vocab-mastery-web](./block-vocab-mastery-web/) | 2025-04-28 | 없음 | [block-vocab-mastery-web.lovable.app](https://block-vocab-mastery-web.lovable.app) | 아직 |  |
+| [mentorsreport](./mentorsreport/) | 2025-05-13 | 내 Supabase offvl… | [mentorsreport.lovable.app](https://mentorsreport.lovable.app) | 옮김 | 파일 113개 |
+| [orungrade](./orungrade/) | 2025-05-10 | 없음 | [orungrade.lovable.app](https://orungrade.lovable.app) | 옮김 | 파일 75개 |
+| [block-vocab-mastery-web](./block-vocab-mastery-web/) | 2025-04-28 | 없음 | [block-vocab-mastery-web.lovable.app](https://block-vocab-mastery-web.lovable.app) | 옮김 | 파일 73개 |
 | [blankify-choice-tool-87](./blankify-choice-tool-87/) | 2025-03-23 | 없음 | 미배포 | 아직 |  |
 | [hakmundang](./hakmundang/) | 2025-03-17 | 내 Supabase wxjaz… | [hakmundang.lovable.app](https://hakmundang.lovable.app) | 아직 |  |
-| [vocabbook](./vocabbook/) | 2025-01-07 | 내 Supabase jpanp… | [vocabbook.lovable.app](https://vocabbook.lovable.app) | 아직 |  |
+| [vocabbook](./vocabbook/) | 2025-01-07 | 내 Supabase jpanp… | [vocabbook.lovable.app](https://vocabbook.lovable.app) | 옮김 | 파일 92개 |
