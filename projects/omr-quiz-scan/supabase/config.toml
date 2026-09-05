@@ -1,0 +1,16 @@
+project_id = "jpanpwbdlhsxnyaldddm"
+
+[functions.migrate-q31-answers]
+verify_jwt = false
+
+[functions.migrate-prep-answers]
+verify_jwt = false
+
+[functions.extract-answers-from-image]
+verify_jwt = false
+
+[functions.explain-writing-errors]
+verify_jwt = false
+
+[functions.verify-access-code]
+verify_jwt = false

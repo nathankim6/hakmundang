@@ -1,0 +1,1 @@
+DELETE FROM public.vocabulary_distractors WHERE question_id BETWEEN 96 AND 146;

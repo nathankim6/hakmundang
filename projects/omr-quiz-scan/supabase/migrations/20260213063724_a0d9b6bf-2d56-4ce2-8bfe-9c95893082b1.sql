@@ -1,0 +1,1 @@
+UPDATE tests SET is_ended = true WHERE title LIKE '%사대천왕%' AND is_ended = false;
