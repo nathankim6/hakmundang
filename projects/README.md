@@ -58,5 +58,5 @@ Lovable에서 만든 프로젝트들을 코드 그대로 이 폴더 아래에 �
 | [orungrade](./orungrade/) | 2025-05-10 | 없음 | [orungrade.lovable.app](https://orungrade.lovable.app) | 옮김 | 파일 75개 |
 | [block-vocab-mastery-web](./block-vocab-mastery-web/) | 2025-04-28 | 없음 | [block-vocab-mastery-web.lovable.app](https://block-vocab-mastery-web.lovable.app) | 옮김 | 파일 73개 |
 | [blankify-choice-tool-87](./blankify-choice-tool-87/) | 2025-03-23 | 없음 | 미배포 | 옮김 | 파일 172개, 그림 34개 못 찾음 |
-| [hakmundang](./hakmundang/) | 2025-03-17 | 내 Supabase wxjaz… | [hakmundang.lovable.app](https://hakmundang.lovable.app) | 아직 |  |
+| [hakmundang](./hakmundang/) | 2025-03-17 | 내 Supabase wxjaz… | [hakmundang.lovable.app](https://hakmundang.lovable.app) | 옮김 | 파일 194개 |
 | [vocabbook](./vocabbook/) | 2025-01-07 | 내 Supabase jpanp… | [vocabbook.lovable.app](https://vocabbook.lovable.app) | 옮김 | 파일 92개 |

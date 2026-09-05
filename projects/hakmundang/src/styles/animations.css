@@ -1,0 +1,35 @@
+@keyframes border-flow {
+  0%, 100% {
+    clip-path: inset(0 0 98% 0);
+  }
+  25% {
+    clip-path: inset(0 98% 0 0);
+  }
+  50% {
+    clip-path: inset(98% 0 0 0);
+  }
+  75% {
+    clip-path: inset(0 0 0 98%);
+  }
+}
+
+@keyframes text-shine {
+  0%, 100% {
+    background-size: 200% 200%;
+    background-position: left center;
+    opacity: 0.9;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+    opacity: 1;
+  }
+}
+
+.animate-border-flow {
+  animation: border-flow 8s linear infinite;
+}
+
+.animate-text-shine {
+  animation: text-shine 3s ease infinite;
+}
