@@ -515,7 +515,7 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
     <span class="step" data-step="2"></span><span class="step-rule"></span>
     <span class="step" data-step="3"></span>
   </div>
-  <div class="state"><span class="build" id="buildTag">2026-09-05 23:08</span><span class="lamp" id="consoleLamp"></span><span id="consoleState">대기</span></div>
+  <div class="state"><span class="build" id="buildTag">2026-09-05 23:31</span><span class="lamp" id="consoleLamp"></span><span id="consoleState">대기</span></div>
 </div>
 
 <!-- 화면 0 · 시작 -->
@@ -532,7 +532,7 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
   </div>
 
   <ul class="how">
-    <li><b>1</b><span>시험지를 문항 하나하나 읽어요. 스캔한 사진 PDF도 돼요.</span></li>
+    <li><b>1</b><span id="howRead">시험지를 문항 하나하나 읽어요. 스캔한 사진 PDF도 돼요.</span></li>
     <li><b>2</b><span>시험범위 자료에서 유형에 맞는 지문을 골라 매칭해요. 직접 바꿀 수 있어요.</span></li>
     <li><b>3</b><span>원본과 같은 구조로 새 시험지를 쓰고, 워드 파일로 저장해요.</span></li>
   </ul>
@@ -558,7 +558,7 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
 <!-- 화면 1 · 시험지 -->
 <section class="screen" data-s="exam">
   <h1 class="h-title">시험지를 올려주세요</h1>
-  <p class="h-sub">PDF, 한글, 워드 다 괜찮아요. 스캔한 사진 PDF도 읽어요.</p>
+  <p class="h-sub" id="examSub">PDF, 한글, 워드 다 괜찮아요. 스캔한 사진 PDF도 읽어요.</p>
 
   <div class="drop" id="examDrop" tabindex="0" role="button" aria-label="시험지 올리기">
     <svg class="ico" viewBox="0 0 40 40" fill="none" aria-hidden="true">
@@ -568,7 +568,7 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
       <rect x="27" y="27" width="7" height="7" fill="#ffd400"/>
     </svg>
     <span class="big">시험지 올리기</span>
-    <span class="small">PDF(스캔본 포함) · 한글 · 워드 · 최대 100MB</span>
+    <span class="small" id="examDropSmall">PDF(스캔본 포함) · 한글 · 워드 · 최대 100MB</span>
   </div>
   <input type="file" id="examFile" accept=".pdf,.hwp,.hwpx,.docx,.doc,.txt" hidden>
   <ul class="filelist" id="examList"></ul>
@@ -1911,6 +1911,7 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
           try {
             LIMITS = await SAMPLE.limits();
             if (LIMITS && LIMITS.images) imagesState = "yes";
+            else if (LIMITS) imagesState = "no";   // limits는 응답했는데 images 항목이 없으면 이 뷰어는 이미지 전송 불가
           } catch (e) { LIMITS = null; }
         }
         return SAMPLE;
@@ -1944,7 +1945,7 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
     const c = window.claude;
     return [
       "ORUN 동형 모의고사 진단",
-      "build: 2026-09-05 23:08",
+      "build: 2026-09-05 23:31",
       "url: " + location.href,
       "runtime: " + RUNTIME + (c ? "" : " (window.claude 없음)"),
       "claude.use: " + (c && typeof c.use === "function" ? "있음" : "없음"),
@@ -1963,6 +1964,21 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
   }
 
   // 지금 런타임이 무엇을 할 수 있는지 한 줄로 — 문제가 생겼을 때 원인을 바로 알 수 있게
+  // 이 뷰어가 스캔본(이미지)을 못 읽으면 관련 약속 문구를 정직하게 바꾼다
+  function applyScanCopy() {
+    const scan = ocrAvailable();   // "no"가 아니면 (yes·미확인) 낙관적으로 유지
+    const set = (id, on, off) => { const el = $(id); if (el) el.textContent = scan ? on : off; };
+    set("howRead",
+        "시험지를 문항 하나하나 읽어요. 스캔한 사진 PDF도 돼요.",
+        "시험지를 문항 하나하나 읽어요. (스캔한 사진 PDF는 본문을 붙여넣어 주세요)");
+    set("examSub",
+        "PDF, 한글, 워드 다 괜찮아요. 스캔한 사진 PDF도 읽어요.",
+        "PDF, 한글, 워드 파일을 올려주세요. 스캔한 사진 PDF는 글자를 못 읽으니 아래에 본문을 붙여넣어 주세요.");
+    set("examDropSmall",
+        "PDF(스캔본 포함) · 한글 · 워드 · 최대 100MB",
+        "PDF(텍스트) · 한글 · 워드 · 최대 100MB");
+  }
+
   function runtimeReport() {
     if (!window.claude) return "이 화면은 claude.ai 아티팩트 밖입니다";
     if (!SAMPLE) return "이 아티팩트에 Claude 사용이 허용되지 않았습니다";
@@ -1983,8 +1999,9 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
       if (note) {
         note.className = "cta-note";
         note.textContent = "시험지 전체를 문항 단위로 분석합니다 · 내 Claude 사용량으로 실행됩니다 · " + runtimeReport();
-      syncOcrBtn();
       }
+      syncOcrBtn();
+      applyScanCopy();
       return;
     }
     btn.disabled = true;
@@ -2007,7 +2024,7 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
       case "session_expired": return "Claude 로그인 세션이 만료되었습니다. 다시 로그인한 뒤 시도해 주세요.";
       case "rate_limited": return "Claude 사용량 한도에 도달했거나 요청이 너무 잦습니다. 잠시 후 '다시 시도'를 눌러 이어서 진행하세요.";
       case "prompt_too_large": return "한 번에 보내는 자료가 너무 큽니다. 범위 자료를 나눠 올려주세요.";
-      case "images_unavailable": return "이 화면에서는 이미지를 읽을 수 없어 스캔본을 처리하지 못했습니다. 한글·워드 원본으로 올리거나 본문을 붙여넣어 주세요.";
+      case "images_unavailable": return "이 화면에서는 스캔한 사진을 읽을 수 없어요. 한글·워드 원본으로 올리거나, 아래 ‘본문을 직접 붙여넣을게요’에 붙여넣어 주세요.";
       case "image_rejected": return "PDF 쪽 이미지를 Claude가 받지 못했습니다. 쪽수가 적은 파일로 나눠 올려주세요.";
       case "refused": return "Claude가 이 자료의 처리를 거절했습니다. 자료를 확인한 뒤 다시 시도해 주세요.";
       case "empty_completion": return "Claude가 빈 응답을 보냈습니다. 자료를 조금 줄여 다시 시도해 주세요.";
@@ -2041,7 +2058,7 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
       out = opts.json ? await SAMPLE.json(input, options) : (await SAMPLE(input, options)).text;
     } catch (e) {
       if (e && e.code === "cancelled") throw new Error("__aborted__");
-      if (e && e.code === "images_unavailable") imagesState = "no";
+      if (e && e.code === "images_unavailable") { imagesState = "no"; try { applyScanCopy(); syncOcrBtn(); } catch (_) {} }
       if (e && e.code === "invalid_json") throw new Error("응답을 해석하지 못했습니다. 다시 시도해 주세요.");
       throw new Error(friendlySampleError(e));
     }
@@ -2149,7 +2166,12 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
     if (!looksUnreadable(r.text)) return { text: r.text, note: "", ocr: false };
 
     await runtimeReady;                       // 런타임 준비를 기다린 뒤 판단
-    if (!ocrAvailable()) throw new Error(emptyPdfMessage(r, "이 PDF") + " [" + runtimeReport() + "]");
+    if (!ocrAvailable()) {
+      // 이미지 불가가 확정된 뷰어면 진단 문구 없이, 바로 할 수 있는 방법만 안내한다
+      if (imagesState === "no")
+        throw new Error("이 시험지는 스캔한 사진 PDF라 이 화면에서는 글자를 읽을 수 없어요. 한글·워드 원본으로 올리거나, 아래 ‘본문을 직접 붙여넣을게요’에 붙여넣어 주세요.");
+      throw new Error(emptyPdfMessage(r, "이 PDF") + " [" + runtimeReport() + "]");
+    }
     const o = await ocrPdf(buf, (from, to, total, phase) =>
       onStep && onStep(from, to, total, phase));
     return {
