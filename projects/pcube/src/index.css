@@ -1,0 +1,802 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 숙제검사 앱 디자인 시스템
+   교육적이면서 현대적인 한국어 인터페이스 */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    /* 기본 배경/전경 (쿨 화이트 · 애플 감성) */
+    --background: 220 24% 98%;
+    --foreground: 222 47% 11%;
+
+    /* 카드 */
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    /* 팝오버 */
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* 주요 색상 - 잉크 네이비 */
+    --primary: 222 47% 12%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 221 39% 26%;
+
+    /* 보조 색상 */
+    --secondary: 220 22% 96%;
+    --secondary-foreground: 222 40% 16%;
+
+    /* 음소거 색상 */
+    --muted: 220 20% 96%;
+    --muted-foreground: 220 12% 46%;
+
+    /* 액센트 - 에메랄드 */
+    --accent: 160 76% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    /* 성공 - 에메랄드 */
+    --success: 158 72% 38%;
+    --success-foreground: 0 0% 100%;
+
+    /* 경고 - 앰버 */
+    --warning: 38 92% 50%;
+    --warning-foreground: 222 47% 11%;
+
+    /* 오류/위험 */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* 테두리/입력 */
+    --border: 220 18% 91%;
+    --input: 220 18% 91%;
+    --ring: 222 47% 20%;
+
+    --radius: 1rem;
+
+    /* 프리미엄 그라데이션 */
+    --gradient-header: linear-gradient(135deg, hsl(222 47% 10%) 0%, hsl(221 42% 17%) 55%, hsl(222 47% 9%) 100%);
+    --gradient-card-blue: linear-gradient(135deg, hsl(221 44% 22%) 0%, hsl(222 47% 13%) 100%);
+    --gradient-card-emerald: linear-gradient(135deg, hsl(158 66% 38%) 0%, hsl(162 62% 26%) 100%);
+    --gradient-card-orange: linear-gradient(135deg, hsl(38 92% 56%) 0%, hsl(28 84% 48%) 100%);
+    --gradient-card-purple: linear-gradient(135deg, hsl(244 46% 46%) 0%, hsl(248 46% 30%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(220 24% 99%) 0%, hsl(220 22% 96%) 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.94) 0%, rgba(250,251,253,0.72) 100%);
+
+    /* 사이드바 */
+    --sidebar-background: 222 47% 11%;
+    --sidebar-foreground: 214 24% 92%;
+    --sidebar-primary: 160 76% 44%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 221 38% 18%;
+    --sidebar-accent-foreground: 214 26% 96%;
+    --sidebar-border: 221 32% 20%;
+    --sidebar-ring: 160 76% 44%;
+
+    /* 노래방 녹음 테마 */
+    --karaoke-bg: 222 47% 8%;
+    --karaoke-text: 214 24% 94%;
+    --karaoke-highlight: 160 76% 52%;
+    --karaoke-current: 158 84% 58%;
+    --karaoke-done: 221 24% 52%;
+    --karaoke-next: 220 12% 58%;
+
+    /* 그라데이션 */
+    --gradient-primary: linear-gradient(135deg, hsl(222 47% 13%), hsl(221 39% 26%));
+    --gradient-accent: linear-gradient(135deg, hsl(160 76% 40%), hsl(168 70% 34%));
+    --gradient-karaoke: linear-gradient(180deg, hsl(222 47% 8%), hsl(221 42% 14%));
+
+    /* 그림자 (애플 스타일: 넓고 부드러운 다층 섀도) */
+    --shadow-sm: 0 1px 2px hsl(222 40% 12% / 0.05), 0 1px 1px hsl(222 40% 12% / 0.03);
+    --shadow-md: 0 6px 16px -8px hsl(222 40% 12% / 0.10), 0 2px 6px -4px hsl(222 40% 12% / 0.06);
+    --shadow-lg: 0 18px 40px -18px hsl(222 40% 12% / 0.14), 0 6px 14px -10px hsl(222 40% 12% / 0.08);
+    --shadow-xl: 0 34px 70px -28px hsl(222 40% 12% / 0.20), 0 10px 20px -14px hsl(222 40% 12% / 0.10);
+    --shadow-glow: 0 0 22px hsl(221 39% 26% / 0.18);
+    --shadow-glow-blue: 0 10px 30px -12px hsl(221 44% 24% / 0.28);
+    --shadow-glow-emerald: 0 10px 30px -12px hsl(158 72% 38% / 0.28);
+    --shadow-glow-orange: 0 10px 30px -12px hsl(38 92% 50% / 0.28);
+
+
+  }
+
+
+  .dark {
+    --background: 345 42% 7%;
+    --foreground: 340 20% 96%;
+
+    --card: 345 40% 11%;
+    --card-foreground: 340 20% 96%;
+
+    --popover: 345 40% 11%;
+    --popover-foreground: 340 20% 96%;
+
+    --primary: 344 66% 52%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 344 70% 62%;
+
+    --secondary: 344 32% 18%;
+    --secondary-foreground: 340 20% 96%;
+
+    --muted: 344 28% 18%;
+    --muted-foreground: 340 12% 68%;
+
+    --accent: 36 78% 56%;
+    --accent-foreground: 345 40% 12%;
+
+    --success: 162 46% 40%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 32 88% 54%;
+    --warning-foreground: 345 40% 12%;
+
+    --destructive: 356 62% 44%;
+    --destructive-foreground: 340 20% 96%;
+
+    --border: 344 28% 20%;
+    --input: 344 28% 20%;
+    --ring: 344 66% 52%;
+
+    --sidebar-background: 345 46% 9%;
+    --sidebar-foreground: 340 18% 94%;
+    --sidebar-primary: 36 78% 58%;
+    --sidebar-primary-foreground: 345 46% 9%;
+    --sidebar-accent: 344 34% 16%;
+    --sidebar-accent-foreground: 340 18% 94%;
+    --sidebar-border: 344 30% 18%;
+    --sidebar-ring: 36 78% 58%;
+  }
+
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+     font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Pretendard', system-ui, sans-serif;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     text-rendering: optimizeLegibility;
+     letter-spacing: -0.011em;
+     scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  /* 애플 감성 타이포: 큰 제목은 조금 더 타이트하게 */
+  h1, h2, h3, h4 {
+    letter-spacing: -0.022em;
+    font-weight: 600;
+  }
+
+  /* 입력 요소: 반투명 글라스 마감 + 부드러운 포커스 링 */
+  input, textarea, select {
+    letter-spacing: -0.008em;
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.16);
+  }
+}
+
+
+@layer components {
+   /* 프리미엄 카드 스타일 */
+   .premium-card {
+     @apply bg-card rounded-2xl border border-border/50 shadow-sm;
+     backdrop-filter: blur(8px);
+   }
+
+   .premium-card-elevated {
+     @apply bg-card rounded-2xl border border-border/30 shadow-lg;
+     backdrop-filter: blur(12px);
+   }
+
+   /* 글래스모피즘 */
+   .glass {
+     @apply bg-white/80 backdrop-blur-xl border border-white/20;
+   }
+
+   .glass-dark {
+     @apply bg-black/40 backdrop-blur-xl border border-white/10;
+   }
+
+  /* 상태 배지 */
+  .status-complete {
+    @apply bg-success text-success-foreground;
+  }
+
+  .status-pending {
+    @apply bg-muted text-muted-foreground;
+  }
+
+  .status-overdue {
+    @apply bg-destructive text-destructive-foreground;
+  }
+
+  .status-warning {
+    @apply bg-warning text-warning-foreground;
+  }
+
+  /* 노래방 스타일 */
+  .karaoke-container {
+    @apply bg-karaoke-bg text-karaoke-text;
+  }
+
+  .karaoke-sentence-done {
+    @apply text-karaoke-done opacity-60;
+  }
+
+  .karaoke-sentence-current {
+    @apply text-karaoke-current font-bold text-2xl scale-105;
+  }
+
+  .karaoke-sentence-next {
+    @apply text-karaoke-next opacity-70;
+  }
+
+  /* 카드 호버 효과 */
+  .card-hover {
+    @apply transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  /* 글로우 효과 */
+  .glow-primary {
+    box-shadow: var(--shadow-glow);
+  }
+
+   .glow-blue {
+     box-shadow: var(--shadow-glow-blue);
+   }
+
+   .glow-emerald {
+     box-shadow: var(--shadow-glow-emerald);
+   }
+
+   .glow-orange {
+     box-shadow: var(--shadow-glow-orange);
+   }
+}
+
+/* 캘린더 주말 색상 스타일 (한국 로케일: 월~일 순서) */
+/* 일요일 (7번째 = last-child) - 빨간색 */
+.calendar-weekend-colors .rdp-head_cell:nth-child(7) {
+  color: hsl(0 80% 55%) !important;
+  font-weight: 700;
+}
+
+.calendar-weekend-colors .rdp-cell:nth-child(7) .rdp-day:not(.rdp-day_selected):not(.rdp-day_outside) {
+  color: hsl(0 80% 55%) !important;
+}
+
+/* 토요일 (6번째) - 파란색 */
+.calendar-weekend-colors .rdp-head_cell:nth-child(6) {
+  color: hsl(217 91% 55%) !important;
+  font-weight: 700;
+}
+
+.calendar-weekend-colors .rdp-cell:nth-child(6) .rdp-day:not(.rdp-day_selected):not(.rdp-day_outside) {
+  color: hsl(217 91% 55%) !important;
+}
+
+/* 선택된 날짜가 주말일 때도 흰색 텍스트 유지 */
+.calendar-weekend-colors .rdp-cell:nth-child(6) .rdp-day_selected,
+.calendar-weekend-colors .rdp-cell:nth-child(7) .rdp-day_selected {
+  color: white !important;
+}
+
+/* outside 날짜 주말 색상 (연하게) */
+.calendar-weekend-colors .rdp-cell:nth-child(7) .rdp-day_outside {
+  color: hsl(0 60% 75%) !important;
+}
+.calendar-weekend-colors .rdp-cell:nth-child(6) .rdp-day_outside {
+  color: hsl(217 60% 75%) !important;
+}
+
+/* 캘린더 컬러풀 테마 */
+.calendar-colorful .rdp-caption_label {
+  background: linear-gradient(135deg, hsl(240 80% 55%), hsl(200 80% 50%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+.calendar-colorful .rdp-nav_button {
+  background: linear-gradient(135deg, hsl(240 80% 96%), hsl(200 80% 96%));
+  border: 1px solid hsl(220 60% 90%);
+  box-shadow: 0 1px 3px hsl(220 60% 80% / 0.15);
+}
+
+.calendar-colorful .rdp-nav_button:hover {
+  background: linear-gradient(135deg, hsl(240 80% 92%), hsl(200 80% 92%));
+  border-color: hsl(220 60% 80%);
+}
+
+.calendar-colorful .rdp-head_cell {
+  font-size: 0.68rem;
+  color: hsl(220 20% 50%);
+}
+
+.calendar-colorful .rdp-day {
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.calendar-colorful .rdp-day:hover:not(.rdp-day_selected):not(.rdp-day_outside) {
+  background: linear-gradient(135deg, hsl(240 80% 96%), hsl(200 80% 96%));
+  transform: scale(1.08);
+  box-shadow: 0 2px 8px hsl(220 60% 80% / 0.2);
+}
+
+.calendar-colorful .rdp-day_selected {
+  background: linear-gradient(135deg, hsl(240 80% 55%), hsl(200 80% 50%)) !important;
+  color: white !important;
+  box-shadow: 0 3px 12px hsl(220 80% 50% / 0.35);
+  transform: scale(1.05);
+}
+
+.calendar-colorful .rdp-day_today:not(.rdp-day_selected) {
+  background: linear-gradient(135deg, hsl(240 80% 95%), hsl(200 80% 93%));
+  color: hsl(240 80% 50%);
+  ring: none;
+  box-shadow: inset 0 0 0 1.5px hsl(240 70% 65% / 0.4);
+}
+
+@layer utilities {
+  /* 스크롤바 스타일 */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--muted)) transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--muted-foreground) / 0.3);
+    border-radius: 9999px;
+  }
+
+  /* 애니메이션 */
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.3s ease-out;
+  }
+
+  .animate-pulse-glow {
+    animation: pulseGlow 2s ease-in-out infinite;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% {
+      box-shadow: 0 0 10px hsl(0 84% 60% / 0.4);
+    }
+    50% {
+      box-shadow: 0 0 20px hsl(0 84% 60% / 0.6);
+    }
+  }
+
+   /* 프리미엄 애니메이션 */
+   @keyframes shimmer {
+     0% {
+       background-position: -200% 0;
+     }
+     100% {
+       background-position: 200% 0;
+     }
+   }
+
+   @keyframes float {
+     0%, 100% {
+       transform: translateY(0);
+     }
+     50% {
+       transform: translateY(-4px);
+     }
+   }
+
+   .animate-shimmer {
+     background: linear-gradient(
+       90deg,
+       transparent 0%,
+       rgba(255, 255, 255, 0.1) 50%,
+       transparent 100%
+     );
+     background-size: 200% 100%;
+     animation: shimmer 2s infinite;
+   }
+
+   .animate-float {
+     animation: float 3s ease-in-out infinite;
+   }
+
+   @keyframes shake {
+     0%, 100% { transform: translateX(0); }
+     20% { transform: translateX(-4px); }
+     40% { transform: translateX(4px); }
+     60% { transform: translateX(-3px); }
+     80% { transform: translateX(3px); }
+   }
+
+   .animate-shake {
+     animation: shake 0.4s ease-in-out;
+   }
+}
+
+/* ===== 모바일 가독성 개선 (전 페이지 공통) ===== */
+@media (max-width: 767px) {
+  /* 1) 너무 작은 글자 최소 크기 보정 */
+  .text-\[8px\],
+  .text-\[9px\],
+  .text-\[10px\],
+  .text-\[11px\] {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+  }
+  .text-xs {
+    font-size: 13px !important;
+    line-height: 1.45 !important;
+  }
+  .text-sm {
+    font-size: 14.5px !important;
+    line-height: 1.5 !important;
+  }
+  .leading-none,
+  .leading-tight {
+    line-height: 1.35 !important;
+  }
+
+  /* 2) 표는 잘리지 않고 가로 스크롤 (모멘텀 스크롤 지원) */
+  .relative.w-full.overflow-auto,
+  .overflow-x-auto {
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+  }
+  table {
+    min-width: max-content;
+  }
+  table th,
+  table td {
+    white-space: nowrap;
+    padding-top: 0.6rem !important;
+    padding-bottom: 0.6rem !important;
+  }
+
+  /* 3) 터치 영역 확보 */
+  button,
+  [role="tab"],
+  a[role="button"] {
+    min-height: 36px;
+  }
+
+  /* 4) 다이얼로그 여백/스크롤 */
+  [role="dialog"] {
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+}
+
+/* ===== 토스 스타일 + 글라스모피즘 유틸 ===== */
+@layer utilities {
+  .glass-card {
+    background: linear-gradient(135deg, hsl(0 0% 100% / 0.72) 0%, hsl(0 0% 100% / 0.52) 100%);
+    backdrop-filter: blur(18px) saturate(160%);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+    border: 1px solid hsl(0 0% 100% / 0.6);
+    box-shadow: 0 10px 34px -14px hsl(222 40% 12% / 0.16), inset 0 1px 0 hsl(0 0% 100% / 0.75);
+  }
+  .glass-panel {
+    background: hsl(0 0% 100% / 0.55);
+    backdrop-filter: blur(24px) saturate(150%);
+    -webkit-backdrop-filter: blur(24px) saturate(150%);
+    border: 1px solid hsl(0 0% 100% / 0.5);
+    box-shadow: 0 22px 54px -22px hsl(222 40% 12% / 0.20);
+  }
+  .glass-soft {
+    background: hsl(220 24% 98% / 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid hsl(220 18% 91% / 0.85);
+  }
+  .toss-primary-btn {
+    background: var(--gradient-primary);
+    color: hsl(0 0% 100%);
+    box-shadow: 0 12px 26px -12px hsl(222 47% 14% / 0.5);
+    transition: transform .15s ease, filter .15s ease;
+  }
+  .toss-primary-btn:active { transform: scale(.98); filter: brightness(.94); }
+
+  /* ===== 리포트 스타일 서피스 (레퍼런스 디자인) ===== */
+  .ref-surface {
+    position: relative;
+    background: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 28% 99%) 100%);
+    border: 1px solid hsl(var(--border));
+    border-radius: 1.25rem;
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+  }
+  .ref-surface::before {
+    content: "";
+    position: absolute; inset: 0 0 auto 0; height: 3px;
+    background: var(--gradient-primary);
+  }
+  .ref-tint {
+    background: linear-gradient(180deg, hsl(220 30% 99%) 0%, hsl(160 40% 98%) 100%);
+    border: 1px solid hsl(220 22% 92%);
+    border-radius: 1rem;
+  }
+  .ref-eyebrow {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: hsl(var(--muted-foreground));
+  }
+  .ref-pill {
+    display: inline-flex; align-items: center; gap: .375rem;
+    padding: .3rem .7rem;
+    border-radius: 9999px;
+    font-size: 11px; font-weight: 600;
+    background: hsl(var(--primary) / 0.07);
+    border: 1px solid hsl(var(--primary) / 0.18);
+    color: hsl(var(--primary));
+  }
+  .ref-pill-accent {
+    background: hsl(var(--accent) / 0.12);
+    border-color: hsl(var(--accent) / 0.28);
+    color: hsl(28 78% 38%);
+  }
+  .ref-divider { height: 1px; background: linear-gradient(90deg, transparent, hsl(var(--border)), transparent); }
+}
+
+/* ===== 섹션 컬러 시스템 (로고 기반 하모니 팔레트) =====
+   각 섹션마다 --sec 토큰만 갈아끼우면 헤더/상단라인/칩 색이 함께 변합니다. */
+@layer utilities {
+  .sec-wine   { --sec: 222 44% 20%; --sec-d: 222 47% 11%; --sec-soft: 220 30% 98%; --sec-ink: 222 44% 18%; }
+  .sec-gold   { --sec: 38 88% 46%;  --sec-d: 28 78% 30%;  --sec-soft: 40 90% 97%;  --sec-ink: 28 78% 32%; }
+  .sec-plum   { --sec: 244 44% 44%; --sec-d: 248 46% 24%; --sec-soft: 244 60% 98%; --sec-ink: 244 44% 40%; }
+  .sec-teal   { --sec: 176 62% 32%; --sec-d: 180 58% 17%; --sec-soft: 174 60% 97%; --sec-ink: 176 60% 28%; }
+  .sec-copper { --sec: 200 78% 38%; --sec-d: 205 72% 22%; --sec-soft: 200 78% 97%; --sec-ink: 202 74% 32%; }
+  .sec-indigo { --sec: 158 68% 34%; --sec-d: 162 62% 19%; --sec-soft: 156 62% 97%; --sec-ink: 158 66% 30%; }
+
+  .sec-olive  { --sec: 96 32% 32%;  --sec-d: 100 36% 18%; --sec-soft: 96 38% 96%;  --sec-ink: 96 34% 28%; }
+
+  /* 섹션 헤더 (딥 그라데이션 + 골드 하이라이트 라인) */
+  .sec-header {
+    position: relative;
+    background:
+      radial-gradient(120% 160% at 100% 0%, hsl(var(--sec) / 0.55) 0%, transparent 60%),
+      linear-gradient(135deg, hsl(var(--sec-d)) 0%, hsl(var(--sec)) 58%, hsl(var(--sec-d)) 100%);
+    color: hsl(0 0% 100%);
+  }
+  .sec-header::after {
+    content: ""; position: absolute; inset: auto 0 0 0; height: 1px;
+    background: linear-gradient(90deg, transparent, hsl(var(--accent) / 0.75), transparent);
+  }
+
+  /* 상단 컬러 라인이 있는 리포트 카드 */
+  .sec-surface {
+    position: relative;
+    background: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(var(--sec-soft)) 100%);
+    border: 1px solid hsl(var(--sec) / 0.16);
+    border-radius: 1.25rem;
+    box-shadow: 0 10px 28px -18px hsl(var(--sec-d) / 0.45), 0 1px 2px hsl(var(--sec-d) / 0.06);
+    overflow: hidden;
+  }
+  .sec-surface::before {
+    content: ""; position: absolute; inset: 0 0 auto 0; height: 3px;
+    background: linear-gradient(90deg, hsl(var(--sec)) 0%, hsl(var(--accent)) 100%);
+  }
+
+  .sec-tint { background: hsl(var(--sec-soft)); border: 1px solid hsl(var(--sec) / 0.16); }
+  .sec-pill {
+    display: inline-flex; align-items: center; gap: .375rem;
+    padding: .25rem .625rem; border-radius: 9999px;
+    font-size: 11px; font-weight: 700; letter-spacing: -0.01em;
+    background: hsl(var(--sec) / 0.09);
+    border: 1px solid hsl(var(--sec) / 0.22);
+    color: hsl(var(--sec-ink));
+  }
+  .sec-ink { color: hsl(var(--sec-ink)); }
+  .sec-bar { background: linear-gradient(90deg, hsl(var(--sec)), hsl(var(--accent))); }
+}
+
+/* ===== Apple 글라스모피즘 (로그인 제외 전 페이지 공통) ===== */
+@layer utilities {
+  /* 앱 전체 앰비언트 배경: 로고 와인 + 브라스 골드 소프트 오브 */
+  .app-ambient::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background:
+      radial-gradient(46rem 30rem at 6% -8%, hsl(221 60% 60% / 0.07), transparent 70%),
+      radial-gradient(38rem 26rem at 98% 2%, hsl(160 70% 50% / 0.07), transparent 70%),
+      radial-gradient(44rem 28rem at 52% 110%, hsl(220 40% 60% / 0.06), transparent 72%),
+      linear-gradient(180deg, hsl(220 28% 99%) 0%, hsl(220 22% 96%) 100%);
+  }
+
+  /* Apple 스타일 표면: 얇은 하이라이트 헤어라인 + 깊은 소프트 섀도 */
+  .apple-glass {
+    background: linear-gradient(180deg, hsl(0 0% 100% / 0.78) 0%, hsl(0 0% 100% / 0.58) 100%);
+    backdrop-filter: blur(28px) saturate(180%);
+    -webkit-backdrop-filter: blur(28px) saturate(180%);
+    border: 1px solid hsl(0 0% 100% / 0.7);
+    box-shadow:
+      0 1px 0 hsl(0 0% 100% / 0.8) inset,
+      0 18px 44px -26px hsl(222 40% 12% / 0.22),
+      0 2px 8px -4px hsl(222 40% 12% / 0.07);
+  }
+  .apple-glass-bar {
+    background: hsl(0 0% 100% / 0.68);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border-bottom: 1px solid hsl(0 0% 100% / 0.6);
+    box-shadow: 0 8px 26px -22px hsl(222 40% 12% / 0.45);
+  }
+  .apple-glass-dark {
+    background: linear-gradient(180deg, hsl(222 47% 11% / 0.86) 0%, hsl(221 40% 17% / 0.76) 100%);
+    backdrop-filter: blur(26px) saturate(160%);
+    -webkit-backdrop-filter: blur(26px) saturate(160%);
+    border: 1px solid hsl(0 0% 100% / 0.14);
+    box-shadow: 0 24px 60px -30px hsl(222 50% 6% / 0.7);
+  }
+  .apple-hairline { box-shadow: 0 1px 0 hsl(0 0% 100% / 0.7) inset; }
+}
+
+/* 카드 · 다이얼로그 · 팝오버 전역 글래스 마감 */
+@layer components {
+  .app-ambient main [data-slot="card"],
+  .app-ambient main .apple-surface {
+    background: linear-gradient(180deg, hsl(0 0% 100% / 0.82) 0%, hsl(0 0% 100% / 0.62) 100%);
+    backdrop-filter: blur(22px) saturate(170%);
+    -webkit-backdrop-filter: blur(22px) saturate(170%);
+    border-color: hsl(0 0% 100% / 0.7);
+  }
+}
+
+/* ===== 애플 감성 마감: 입력 · 탭 · 스크롤바 · 전역 트랜지션 ===== */
+@layer components {
+  .app-ambient main input:not([type="checkbox"]):not([type="radio"]),
+  .app-ambient main textarea,
+  .app-ambient main [role="combobox"] {
+    background: hsl(0 0% 100% / 0.7);
+    backdrop-filter: blur(12px) saturate(150%);
+    -webkit-backdrop-filter: blur(12px) saturate(150%);
+    border-color: hsl(220 18% 91% / 0.9);
+    border-radius: 0.75rem;
+    transition: box-shadow .2s ease, border-color .2s ease, background .2s ease;
+  }
+  .app-ambient main input:focus-visible,
+  .app-ambient main textarea:focus-visible,
+  .app-ambient main [role="combobox"]:focus-visible {
+    background: hsl(0 0% 100% / 0.92);
+    border-color: hsl(var(--primary) / 0.35);
+    box-shadow: 0 0 0 3.5px hsl(var(--primary) / 0.12);
+    outline: none;
+  }
+
+  /* 탭: 애플 세그먼트 컨트롤 느낌 */
+  .app-ambient [role="tablist"] {
+    background: hsl(220 20% 94% / 0.8);
+    backdrop-filter: blur(14px) saturate(150%);
+    -webkit-backdrop-filter: blur(14px) saturate(150%);
+    border-radius: 0.875rem;
+    padding: 3px;
+  }
+  .app-ambient [role="tab"] {
+    border-radius: 0.7rem;
+    transition: all .22s cubic-bezier(.32,.72,0,1);
+  }
+  .app-ambient [role="tab"][data-state="active"] {
+    background: hsl(0 0% 100% / 0.96);
+    box-shadow: 0 1px 3px hsl(222 40% 12% / 0.10), 0 4px 12px -8px hsl(222 40% 12% / 0.18);
+  }
+}
+
+@layer utilities {
+  /* 애플 스프링 이징 */
+  .ease-apple { transition-timing-function: cubic-bezier(.32,.72,0,1); }
+
+  /* 얇고 부드러운 전역 스크롤바 */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(220 12% 60% / 0.3) transparent;
+  }
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(220 12% 55% / 0.26);
+    border-radius: 9999px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+  ::-webkit-scrollbar-thumb:hover { background: hsl(220 12% 45% / 0.4); background-clip: content-box; }
+
+  /* 카드 상승 효과 (애플 특유의 느린 스프링) */
+  .lift-hover {
+    transition: transform .35s cubic-bezier(.32,.72,0,1), box-shadow .35s cubic-bezier(.32,.72,0,1);
+  }
+  .lift-hover:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+}
+
+/* 좁은 화면에서 가로 스크롤 시 스크롤바 숨김 */
+@layer utilities {
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ============================================
+   텍스트 잘림(…) 및 어색한 줄바꿈 방지
+   - truncate / line-clamp 를 전면 해제하여 전체 문구가 보이도록
+   - 한글은 단어(어절) 단위로 줄바꿈 (keep-all)
+   ============================================ */
+@layer utilities {
+  .truncate,
+  .text-ellipsis,
+  [class*="line-clamp-"] {
+    overflow: visible !important;
+    text-overflow: clip !important;
+    white-space: normal !important;
+    -webkit-line-clamp: unset !important;
+    -webkit-box-orient: unset !important;
+    display: block;
+  }
+
+  html,
+  body {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  /* 버튼/배지/탭 라벨은 중간에서 끊기지 않도록 */
+  button,
+  .badge,
+  [role="tab"] {
+    word-break: keep-all;
+  }
+}

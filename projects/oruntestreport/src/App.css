@@ -1,0 +1,182 @@
+
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Text highlighting styles */
+.highlighted-text {
+  position: relative;
+  display: inline;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  padding: 1px 0;
+  transition: background-color 0.2s ease;
+}
+
+/* Animation for highlighting and removing highlights */
+@keyframes highlight-fade-in {
+  from { background-color: transparent; }
+  to { background-color: #ffff00; }
+}
+
+@keyframes highlight-fade-out {
+  from { background-color: #ffff00; }
+  to { background-color: transparent; }
+}
+
+.highlight-adding {
+  animation: highlight-fade-in 0.3s forwards;
+}
+
+.highlight-removing {
+  animation: highlight-fade-out 0.3s forwards;
+}
+
+/* Animation for gradient backgrounds */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes pulse-glow {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.97);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.03);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(0.97);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 4s infinite ease-in-out;
+}
+
+.animation-delay-150 {
+  animation-delay: 150ms;
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animation-delay-1000 {
+  animation-delay: 1s;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-3000 {
+  animation-delay: 3s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+.animate-gradient-slow {
+  background-size: 200% 200%;
+  animation: gradient-shift 15s ease infinite;
+}
+
+/* Report title and header styles */
+.report-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #374151;
+  text-align: center;
+}
+
+.report-section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #4B5563;
+}
+
+/* Make sure content sections are visible and properly styled */
+.report-content-section {
+  margin-bottom: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+/* Ensure evaluation sections have proper spacing and visibility */
+.evaluation-section {
+  margin-bottom: 1rem;
+}
+
+.evaluation-category {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+@media print {
+  .report-container {
+    width: 100%;
+    margin: 0;
+    padding: 2cm;
+    page-break-inside: avoid;
+  }
+  
+  .highlighted-text {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  
+  /* Ensure all content is visible in print mode */
+  .report-content-section {
+    page-break-inside: avoid;
+    background-color: white;
+  }
+}

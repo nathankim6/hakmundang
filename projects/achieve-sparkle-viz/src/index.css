@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-serif-display {
+  font-family: 'Noto Sans', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.022em;
+}
+.font-serif-ko {
+  font-family: 'Noto Sans KR', 'Noto Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+.font-serif-elegant {
+  font-family: 'Noto Sans', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-style: italic;
+}
+.bg-paper {
+  background-color: #fbfaf6;
+  background-image:
+    radial-gradient(circle at 20% 10%, rgba(176,141,79,0.05), transparent 45%),
+    radial-gradient(circle at 80% 90%, rgba(28,25,23,0.03), transparent 45%);
+}
+.gold-rule {
+  background: linear-gradient(90deg, transparent, rgba(176,141,79,0.6) 20%, rgba(176,141,79,0.6) 80%, transparent);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Base Colors - Professional Blue-Gray Palette */
+    --background: 220 15% 97%;
+    --foreground: 220 20% 10%;
+    
+    /* Card & Surface */
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+    
+    /* Primary - Professional Blue */
+    --primary: 217 91% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 217 91% 65%;
+    
+    /* Secondary - Elegant Teal */
+    --secondary: 160 60% 45%;
+    --secondary-foreground: 0 0% 100%;
+    
+    /* Accent - Premium Purple */
+    --accent: 270 60% 60%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Muted States */
+    --muted: 220 15% 95%;
+    --muted-foreground: 220 10% 45%;
+    
+    /* Destructive */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Borders & Input */
+    --border: 220 13% 88%;
+    --input: 220 13% 88%;
+    --ring: 217 91% 50%;
+    
+    /* Radius */
+    --radius: 0.875rem;
+    
+    /* Sidebar */
+    --sidebar-background: 220 15% 98%;
+    --sidebar-foreground: 220 20% 20%;
+    --sidebar-primary: 217 91% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 15% 94%;
+    --sidebar-accent-foreground: 220 20% 20%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217 91% 50%;
+    
+    /* Charts */
+    --chart-1: 217 91% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 270 60% 60%;
+    --chart-4: 30 80% 55%;
+    --chart-5: 340 75% 55%;
+    
+    /* Premium Design Tokens */
+    --gradient-card: linear-gradient(135deg, hsl(var(--card)) 0%, hsl(220 15% 98%) 100%);
+    --gradient-premium: linear-gradient(135deg, hsl(217 91% 50%) 0%, hsl(217 91% 65%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(217 91% 45%) 0%, hsl(160 60% 45%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(220 15% 98%) 0%, hsl(220 15% 99%) 100%);
+    
+    /* Shadows */
+    --shadow-premium: 0 20px 60px -15px hsl(217 91% 50% / 0.25), 0 8px 24px -8px hsl(217 91% 50% / 0.12);
+    --shadow-elegant: 0 10px 40px -10px hsl(220 20% 10% / 0.1);
+    --shadow-soft: 0 4px 16px -4px hsl(220 20% 10% / 0.08);
+    --shadow-glow: 0 0 40px hsl(217 91% 65% / 0.3);
+    
+    /* Borders */
+    --border-premium: hsl(217 91% 50% / 0.15);
+    --border-elegant: hsl(220 13% 88%);
+  }
+
+  .dark {
+    /* Base Colors - Professional Dark Theme */
+    --background: 220 20% 8%;
+    --foreground: 220 15% 95%;
+    
+    /* Card & Surface */
+    --card: 220 20% 12%;
+    --card-foreground: 220 15% 95%;
+    --popover: 220 20% 12%;
+    --popover-foreground: 220 15% 95%;
+    
+    /* Primary - Bright Blue */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 217 91% 75%;
+    
+    /* Secondary - Bright Teal */
+    --secondary: 160 60% 50%;
+    --secondary-foreground: 0 0% 100%;
+    
+    /* Accent - Bright Purple */
+    --accent: 270 60% 65%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Muted States */
+    --muted: 220 20% 18%;
+    --muted-foreground: 220 10% 60%;
+    
+    /* Destructive */
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Borders & Input */
+    --border: 220 20% 22%;
+    --input: 220 20% 22%;
+    --ring: 217 91% 60%;
+    
+    /* Sidebar */
+    --sidebar-background: 220 20% 10%;
+    --sidebar-foreground: 220 15% 90%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 20% 16%;
+    --sidebar-accent-foreground: 220 15% 90%;
+    --sidebar-border: 220 20% 18%;
+    --sidebar-ring: 217 91% 60%;
+    
+    /* Charts */
+    --chart-1: 217 91% 60%;
+    --chart-2: 160 60% 50%;
+    --chart-3: 270 60% 65%;
+    --chart-4: 30 80% 60%;
+    --chart-5: 340 75% 60%;
+    
+    /* Premium Design Tokens - Dark */
+    --gradient-card: linear-gradient(135deg, hsl(220 20% 12%) 0%, hsl(220 20% 16%) 100%);
+    --gradient-premium: linear-gradient(135deg, hsl(217 91% 55%) 0%, hsl(217 91% 70%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(217 91% 50%) 0%, hsl(160 60% 50%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(220 20% 10%) 0%, hsl(220 20% 12%) 100%);
+    
+    /* Shadows - Dark */
+    --shadow-premium: 0 20px 60px -15px hsl(217 91% 60% / 0.4), 0 8px 24px -8px hsl(217 91% 60% / 0.2);
+    --shadow-elegant: 0 10px 40px -10px hsl(0 0% 0% / 0.5);
+    --shadow-soft: 0 4px 16px -4px hsl(0 0% 0% / 0.3);
+    --shadow-glow: 0 0 40px hsl(217 91% 75% / 0.4);
+    
+    /* Borders - Dark */
+    --border-premium: hsl(217 91% 60% / 0.2);
+    --border-elegant: hsl(220 20% 22%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

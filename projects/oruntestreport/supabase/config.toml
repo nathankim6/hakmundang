@@ -1,0 +1,7 @@
+project_id = "jpanpwbdlhsxnyaldddm"
+
+[functions.gpt-enhance-text]
+verify_jwt = false
+
+[functions.analyze-exam-pdf]
+verify_jwt = false
