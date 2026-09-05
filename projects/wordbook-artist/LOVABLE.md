@@ -1,6 +1,6 @@
 # wordbook-artist
 
-Lovable 프로젝트를 코드 그대로 옮겨 온 사본입니다. (가져온 날짜: 2026-09-05 05:24 UTC)
+Lovable 프로젝트를 코드 그대로 옮겨 온 사본입니다. (가져온 날짜: 2026-09-05 05:45 UTC)
 
 | 항목 | 값 |
 |---|---|
@@ -33,7 +33,3 @@ npm run dev
 - `src/assets/orun-academy-logo-backcover.jpg`
 - `src/assets/orun-academy-logo-new.jpg` (코드에서 사용)
 - `src/assets/orun-academy-logo.jpg`
-
-## 공통 템플릿에서 복원한 파일
-
-shadcn/ui 기본 컴포넌트 37개(src/components/ui/)는 Lovable 프로젝트들 사이에서 내용이 같아 공통 템플릿 사본을 넣었습니다. 이 프로젝트에서 따로 고친 적이 있다면 Lovable 편집기의 원본과 비교해 주세요.
