@@ -1,0 +1,613 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 숙제검사 앱 디자인 시스템
+   교육적이면서 현대적인 한국어 인터페이스 */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&display=swap');
+
+
+@layer base {
+  :root {
+    /* Neo-glass Portal (Cloud White) */
+    --background: 210 20% 98%;
+    --foreground: 222 33% 12%;
+
+    /* 카드 */
+    --card: 0 0% 100%;
+    --card-foreground: 222 33% 12%;
+
+    /* 팝오버 */
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 33% 12%;
+
+    /* 주요 색상 - Apple Blue */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    /* 보조 색상 */
+    --secondary: 213 27% 95%;
+    --secondary-foreground: 222 33% 12%;
+
+    /* 음소거 색상 */
+    --muted: 213 24% 94%;
+    --muted-foreground: 215 20% 55%;
+
+    /* 액센트 */
+    --accent: 213 27% 95%;
+    --accent-foreground: 217 91% 45%;
+
+    /* 성공 */
+    --success: 160 84% 39%;
+    --success-foreground: 0 0% 100%;
+
+    /* 경고 */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    /* 오류/위험 */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* 테두리/입력 */
+    --border: 213 24% 91%;
+    --input: 213 24% 91%;
+    --ring: 217 91% 60%;
+
+    --radius: 1.25rem;
+
+     /* 프리미엄 그라데이션 */
+     --gradient-header: linear-gradient(135deg, hsl(0 0% 100% / 0.85) 0%, hsl(213 27% 97% / 0.7) 100%);
+     --gradient-card-blue: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(221 83% 53%) 100%);
+     --gradient-card-emerald: linear-gradient(135deg, hsl(160 84% 39%) 0%, hsl(158 64% 32%) 100%);
+     --gradient-card-orange: linear-gradient(135deg, hsl(25 95% 53%) 0%, hsl(21 90% 48%) 100%);
+     --gradient-card-purple: linear-gradient(135deg, hsl(262 83% 58%) 0%, hsl(258 77% 48%) 100%);
+     --gradient-subtle: linear-gradient(180deg, hsl(210 20% 98%) 0%, hsl(213 27% 96%) 100%);
+     --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.55) 100%);
+
+    /* 사이드바 - 라이트 글래스 */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 215 20% 45%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 213 27% 96%;
+    --sidebar-accent-foreground: 222 33% 12%;
+    --sidebar-border: 213 24% 92%;
+    --sidebar-ring: 217 91% 60%;
+
+    /* 노래방 녹음 테마 */
+    --karaoke-bg: 222 47% 8%;
+     --karaoke-text: 220 14% 94%;
+    --karaoke-highlight: 48 96% 53%;
+    --karaoke-current: 48 96% 60%;
+     --karaoke-done: 217 91% 60%;
+     --karaoke-next: 220 14% 60%;
+
+    /* 그라데이션 */
+     --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(221 83% 53%));
+    --gradient-accent: linear-gradient(135deg, hsl(25 95% 53%), hsl(38 92% 50%));
+    --gradient-karaoke: linear-gradient(180deg, hsl(222 47% 8%), hsl(222 47% 12%));
+
+    /* 그림자 - Apple soft depth */
+    --shadow-sm: 0 1px 2px 0 hsl(215 25% 27% / 0.04);
+    --shadow-md: 0 8px 20px -8px hsl(215 25% 27% / 0.10);
+    --shadow-lg: 0 20px 40px -16px hsl(215 25% 27% / 0.12);
+    --shadow-xl: 0 32px 64px -16px hsl(215 25% 27% / 0.10);
+    --shadow-glow: 0 12px 24px -6px hsl(217 91% 60% / 0.30);
+    --shadow-glow-blue: 0 12px 24px -6px hsl(217 91% 60% / 0.30);
+    --shadow-glow-emerald: 0 12px 24px -6px hsl(160 84% 39% / 0.28);
+    --shadow-glow-orange: 0 12px 24px -6px hsl(25 95% 53% / 0.28);
+  }
+
+
+  .dark {
+    --background: 222 47% 8%;
+    --foreground: 210 20% 98%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 20% 98%;
+
+     --primary: 217 91% 65%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 222 40% 18%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 222 40% 18%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 25 95% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 142 76% 40%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 0%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 222 40% 18%;
+    --input: 222 40% 18%;
+     --ring: 217 91% 60%;
+
+    --sidebar-background: 222 47% 6%;
+    --sidebar-foreground: 210 20% 94%;
+     --sidebar-primary: 217 91% 65%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 222 40% 12%;
+    --sidebar-accent-foreground: 210 20% 94%;
+    --sidebar-border: 222 40% 12%;
+     --sidebar-ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+     font-family: 'Noto Sans KR', 'Inter', system-ui, sans-serif;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     letter-spacing: -0.011em;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    letter-spacing: -0.022em;
+  }
+}
+
+@layer components {
+   /* 프리미엄 카드 스타일 - Neo-glass */
+   .premium-card {
+     @apply bg-white/70 rounded-3xl border border-white/80 backdrop-blur-2xl;
+     box-shadow: var(--shadow-md);
+   }
+
+   .premium-card-elevated {
+     @apply bg-white/75 rounded-[2rem] border border-white/80 backdrop-blur-3xl;
+     box-shadow: var(--shadow-xl);
+   }
+
+   /* 글래스모피즘 */
+   .glass {
+     @apply bg-white/60 backdrop-blur-3xl border border-white/80;
+     box-shadow: var(--shadow-lg);
+   }
+
+   .glass-dark {
+     @apply bg-black/40 backdrop-blur-xl border border-white/10;
+   }
+
+   /* Apple Liquid Glass 계열 유틸리티 */
+   .glass-panel {
+     background: linear-gradient(160deg, rgba(255,255,255,0.78) 0%, rgba(255,255,255,0.58) 100%);
+     -webkit-backdrop-filter: blur(28px) saturate(180%);
+     backdrop-filter: blur(28px) saturate(180%);
+     border: 1px solid rgba(255,255,255,0.75);
+     box-shadow: 0 24px 60px -28px hsl(215 25% 27% / 0.28), inset 0 1px 0 rgba(255,255,255,0.85);
+   }
+
+   .glass-tile {
+     background: rgba(255,255,255,0.62);
+     -webkit-backdrop-filter: blur(18px) saturate(160%);
+     backdrop-filter: blur(18px) saturate(160%);
+     border: 1px solid rgba(255,255,255,0.7);
+     box-shadow: 0 10px 26px -18px hsl(215 25% 27% / 0.35);
+   }
+
+   .glass-onyx {
+     background: linear-gradient(160deg, rgba(28,28,32,0.72) 0%, rgba(16,16,20,0.62) 100%);
+     -webkit-backdrop-filter: blur(28px) saturate(160%);
+     backdrop-filter: blur(28px) saturate(160%);
+     border: 1px solid rgba(255,255,255,0.10);
+     box-shadow: 0 30px 70px -32px rgba(0,0,0,0.7), inset 0 1px 0 rgba(255,255,255,0.12);
+   }
+
+   .glass-hairline {
+     position: relative;
+   }
+   .glass-hairline::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 12%;
+     right: 12%;
+     height: 1px;
+     background: linear-gradient(90deg, transparent, rgba(255,255,255,0.85), transparent);
+     pointer-events: none;
+   }
+
+   .glass-sheen {
+     position: relative;
+     overflow: hidden;
+   }
+   .glass-sheen::after {
+     content: "";
+     position: absolute;
+     inset: 0;
+     background: linear-gradient(120deg, transparent 35%, rgba(255,255,255,0.35) 50%, transparent 65%);
+     transform: translateX(-120%);
+     transition: transform 0.9s ease;
+     pointer-events: none;
+   }
+   .glass-sheen:hover::after {
+     transform: translateX(120%);
+   }
+
+
+   /* 앰비언트 배경 오브 */
+   .ambient-canvas::before {
+     content: "";
+     position: fixed;
+     top: -15%;
+     right: -5%;
+     width: 50vw;
+     height: 50vh;
+     background: hsl(var(--primary) / 0.06);
+     filter: blur(120px);
+     border-radius: 9999px;
+     pointer-events: none;
+     z-index: 0;
+   }
+
+   .ambient-canvas::after {
+     content: "";
+     position: fixed;
+     bottom: -10%;
+     left: -10%;
+     width: 40vw;
+     height: 40vh;
+     background: hsl(215 20% 65% / 0.12);
+     filter: blur(100px);
+     border-radius: 9999px;
+     pointer-events: none;
+     z-index: 0;
+   }
+
+
+  /* 상태 배지 */
+  .status-complete {
+    @apply bg-success text-success-foreground;
+  }
+
+  .status-pending {
+    @apply bg-muted text-muted-foreground;
+  }
+
+  .status-overdue {
+    @apply bg-destructive text-destructive-foreground;
+  }
+
+  .status-warning {
+    @apply bg-warning text-warning-foreground;
+  }
+
+  /* 노래방 스타일 */
+  .karaoke-container {
+    @apply bg-karaoke-bg text-karaoke-text;
+  }
+
+  .karaoke-sentence-done {
+    @apply text-karaoke-done opacity-60;
+  }
+
+  .karaoke-sentence-current {
+    @apply text-karaoke-current font-bold text-2xl scale-105;
+  }
+
+  .karaoke-sentence-next {
+    @apply text-karaoke-next opacity-70;
+  }
+
+  /* 카드 호버 효과 */
+  .card-hover {
+    @apply transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  /* 글로우 효과 */
+  .glow-primary {
+    box-shadow: var(--shadow-glow);
+  }
+
+   .glow-blue {
+     box-shadow: var(--shadow-glow-blue);
+   }
+
+   .glow-emerald {
+     box-shadow: var(--shadow-glow-emerald);
+   }
+
+   .glow-orange {
+     box-shadow: var(--shadow-glow-orange);
+   }
+}
+
+/* 캘린더 주말 색상 스타일 (한국 로케일: 월~일 순서) */
+/* 일요일 (7번째 = last-child) - 빨간색 */
+.calendar-weekend-colors .rdp-head_cell:nth-child(7) {
+  color: hsl(0 80% 55%) !important;
+  font-weight: 700;
+}
+
+.calendar-weekend-colors .rdp-cell:nth-child(7) .rdp-day:not(.rdp-day_selected):not(.rdp-day_outside) {
+  color: hsl(0 80% 55%) !important;
+}
+
+/* 토요일 (6번째) - 파란색 */
+.calendar-weekend-colors .rdp-head_cell:nth-child(6) {
+  color: hsl(217 91% 55%) !important;
+  font-weight: 700;
+}
+
+.calendar-weekend-colors .rdp-cell:nth-child(6) .rdp-day:not(.rdp-day_selected):not(.rdp-day_outside) {
+  color: hsl(217 91% 55%) !important;
+}
+
+/* 선택된 날짜가 주말일 때도 흰색 텍스트 유지 */
+.calendar-weekend-colors .rdp-cell:nth-child(6) .rdp-day_selected,
+.calendar-weekend-colors .rdp-cell:nth-child(7) .rdp-day_selected {
+  color: white !important;
+}
+
+/* outside 날짜 주말 색상 (연하게) */
+.calendar-weekend-colors .rdp-cell:nth-child(7) .rdp-day_outside {
+  color: hsl(0 60% 75%) !important;
+}
+.calendar-weekend-colors .rdp-cell:nth-child(6) .rdp-day_outside {
+  color: hsl(217 60% 75%) !important;
+}
+
+/* 캘린더 컬러풀 테마 */
+.calendar-colorful .rdp-caption_label {
+  background: linear-gradient(135deg, hsl(240 80% 55%), hsl(200 80% 50%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+.calendar-colorful .rdp-nav_button {
+  background: linear-gradient(135deg, hsl(240 80% 96%), hsl(200 80% 96%));
+  border: 1px solid hsl(220 60% 90%);
+  box-shadow: 0 1px 3px hsl(220 60% 80% / 0.15);
+}
+
+.calendar-colorful .rdp-nav_button:hover {
+  background: linear-gradient(135deg, hsl(240 80% 92%), hsl(200 80% 92%));
+  border-color: hsl(220 60% 80%);
+}
+
+.calendar-colorful .rdp-head_cell {
+  font-size: 0.68rem;
+  color: hsl(220 20% 50%);
+}
+
+.calendar-colorful .rdp-day {
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.calendar-colorful .rdp-day:hover:not(.rdp-day_selected):not(.rdp-day_outside) {
+  background: linear-gradient(135deg, hsl(240 80% 96%), hsl(200 80% 96%));
+  transform: scale(1.08);
+  box-shadow: 0 2px 8px hsl(220 60% 80% / 0.2);
+}
+
+.calendar-colorful .rdp-day_selected {
+  background: linear-gradient(135deg, hsl(240 80% 55%), hsl(200 80% 50%)) !important;
+  color: white !important;
+  box-shadow: 0 3px 12px hsl(220 80% 50% / 0.35);
+  transform: scale(1.05);
+}
+
+.calendar-colorful .rdp-day_today:not(.rdp-day_selected) {
+  background: linear-gradient(135deg, hsl(240 80% 95%), hsl(200 80% 93%));
+  color: hsl(240 80% 50%);
+  ring: none;
+  box-shadow: inset 0 0 0 1.5px hsl(240 70% 65% / 0.4);
+}
+
+@layer utilities {
+  /* 스크롤바 스타일 */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--muted)) transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--muted-foreground) / 0.3);
+    border-radius: 9999px;
+  }
+
+  /* 애니메이션 */
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.3s ease-out;
+  }
+
+  .animate-pulse-glow {
+    animation: pulseGlow 2s ease-in-out infinite;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% {
+      box-shadow: 0 0 10px hsl(0 84% 60% / 0.4);
+    }
+    50% {
+      box-shadow: 0 0 20px hsl(0 84% 60% / 0.6);
+    }
+  }
+
+   /* 프리미엄 애니메이션 */
+   @keyframes shimmer {
+     0% {
+       background-position: -200% 0;
+     }
+     100% {
+       background-position: 200% 0;
+     }
+   }
+
+   @keyframes float {
+     0%, 100% {
+       transform: translateY(0);
+     }
+     50% {
+       transform: translateY(-4px);
+     }
+   }
+
+   .animate-shimmer {
+     background: linear-gradient(
+       90deg,
+       transparent 0%,
+       rgba(255, 255, 255, 0.1) 50%,
+       transparent 100%
+     );
+     background-size: 200% 100%;
+     animation: shimmer 2s infinite;
+   }
+
+   .animate-float {
+     animation: float 3s ease-in-out infinite;
+   }
+
+   @keyframes shake {
+     0%, 100% { transform: translateX(0); }
+     20% { transform: translateX(-4px); }
+     40% { transform: translateX(4px); }
+     60% { transform: translateX(-3px); }
+     80% { transform: translateX(3px); }
+   }
+
+   .animate-shake {
+     animation: shake 0.4s ease-in-out;
+   }
+}
+
+/* ============================================
+   모바일 가독성 개선 (전 페이지 공통)
+   ============================================ */
+@media (max-width: 767px) {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+
+  /* 너무 작은 글자 최소 크기 보장 */
+  .text-\[9px\],
+  .text-\[10px\],
+  .text-\[11px\] {
+    font-size: 0.75rem !important;
+    line-height: 1.15rem !important;
+  }
+
+  .text-xs {
+    font-size: 0.8125rem !important;
+    line-height: 1.2rem !important;
+  }
+
+  .text-sm {
+    font-size: 0.9375rem !important;
+    line-height: 1.45rem !important;
+  }
+
+  /* 흐린 보조 텍스트 대비 강화 */
+  .text-muted-foreground {
+    color: hsl(215 20% 38%);
+  }
+  .dark .text-muted-foreground {
+    color: hsl(215 22% 72%);
+  }
+
+  /* 제목 가독성 */
+  h1 { font-size: 1.25rem; line-height: 1.75rem; }
+  h2 { font-size: 1.125rem; line-height: 1.6rem; }
+  h3 { font-size: 1rem; line-height: 1.5rem; }
+  h1, h2, h3, h4 { letter-spacing: -0.015em; }
+
+  /* 터치 영역 확보 */
+  button, [role="button"], a[href], [role="tab"], [role="menuitem"] {
+    touch-action: manipulation;
+  }
+  button:not(.h-6):not(.h-7):not(.h-8),
+  [role="tab"] {
+    min-height: 40px;
+  }
+
+  /* 입력값 확대 방지(16px 미만이면 iOS가 줌) */
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+
+  /* 배지·라벨 여백 */
+  [data-slot="badge"], .badge {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  /* 카드 내부 여백 축소로 본문 폭 확보 */
+  [class*="premium-card"] { border-radius: 1rem; }
+
+  /* 표: 가로 스크롤 허용 + 셀 여백 */
+  table { font-size: 0.8125rem; }
+  th, td { padding-top: 0.5rem !important; padding-bottom: 0.5rem !important; white-space: nowrap; }
+
+  /* 다이얼로그/시트 본문 가독성 */
+  [role="dialog"] { font-size: 0.9375rem; }
+
+  /* 전화번호 등 긴 숫자 줄바꿈 방지 */
+  .tabular-nums, .font-mono { font-variant-numeric: tabular-nums; }
+}

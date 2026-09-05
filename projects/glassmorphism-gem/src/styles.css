@@ -1,0 +1,571 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * ORUN GRAMMAR — Apple-style glassmorphism design system.
+ * All colors are oklch tokens. Never hardcode colors in components.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 6px);
+  --radius-md: calc(var(--radius) - 3px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 5px);
+  --radius-2xl: calc(var(--radius) + 10px);
+  --radius-3xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-subtle: var(--subtle);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-destructive-soft: var(--destructive-soft);
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --font-sans: "Noto Sans KR", "Noto Sans", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", sans-serif;
+  --ease-spring: cubic-bezier(0.34, 1.4, 0.5, 1);
+}
+
+:root {
+  --radius: 1.35rem;
+  --background: oklch(0.985 0.003 250);
+  --foreground: oklch(0.21 0.03 258);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.21 0.03 258);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.21 0.03 258);
+  --primary: oklch(0.264 0.037 260);
+  --primary-foreground: oklch(0.985 0.002 250);
+  --secondary: oklch(0.965 0.006 250);
+  --secondary-foreground: oklch(0.264 0.037 260);
+  --muted: oklch(0.962 0.007 250);
+  --muted-foreground: oklch(0.55 0.028 254);
+  --subtle: oklch(0.68 0.024 254);
+  --accent: oklch(0.955 0.01 250);
+  --accent-foreground: oklch(0.264 0.037 260);
+  --gold: oklch(0.815 0.152 79);
+  --gold-deep: oklch(0.665 0.135 74);
+  --success: oklch(0.7 0.137 165);
+  --success-soft: oklch(0.968 0.033 165);
+  --destructive: oklch(0.618 0.161 24);
+  --destructive-foreground: oklch(0.985 0.002 250);
+  --destructive-soft: oklch(0.963 0.023 24);
+  --info: oklch(0.58 0.196 262);
+  --info-soft: oklch(0.965 0.023 262);
+  --border: oklch(0.918 0.011 252);
+  --input: oklch(0.918 0.011 252);
+  --ring: oklch(0.264 0.037 260);
+
+  --glass: color-mix(in oklab, white 74%, transparent);
+  --glass-strong: color-mix(in oklab, white 88%, transparent);
+  --glass-line: color-mix(in oklab, white 86%, transparent);
+  --shadow-soft: 0 1px 1px oklch(0.21 0.03 258 / 0.03), 0 8px 26px oklch(0.21 0.03 258 / 0.055);
+  --shadow-lift: 0 2px 6px oklch(0.21 0.03 258 / 0.05), 0 26px 64px oklch(0.21 0.03 258 / 0.12);
+  --gradient-gold: linear-gradient(140deg, oklch(0.855 0.145 84), oklch(0.72 0.148 72));
+  --gradient-navy: linear-gradient(120deg, oklch(0.264 0.037 260), oklch(0.36 0.05 258));
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-size: 14.5px;
+    line-height: 1.62;
+    letter-spacing: -0.011em;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--gold) 45%, transparent);
+  }
+
+  ::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: color-mix(in oklab, var(--subtle) 40%, transparent);
+    border-radius: 9px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+}
+
+@utility glass {
+  background: var(--glass);
+  backdrop-filter: blur(36px) saturate(170%);
+  border: 1px solid var(--glass-line);
+  box-shadow: var(--shadow-soft), inset 0 1px 0 oklch(1 0 0 / 0.7);
+}
+
+@utility glass-strong {
+  background: var(--glass-strong);
+  backdrop-filter: blur(44px) saturate(180%);
+  border: 1px solid var(--glass-line);
+  box-shadow: var(--shadow-soft), inset 0 1px 0 oklch(1 0 0 / 0.85);
+}
+
+@utility lift {
+  transition: transform 0.28s var(--ease-spring), box-shadow 0.28s var(--ease-spring),
+    border-color 0.28s var(--ease-spring);
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lift);
+  }
+}
+
+@utility glass-elevated {
+  background: color-mix(in oklab, white 92%, transparent);
+  backdrop-filter: blur(48px) saturate(200%);
+  border: 1px solid var(--glass-line);
+  box-shadow: 0 2px 4px oklch(0.21 0.03 258 / 0.04), 0 18px 46px oklch(0.21 0.03 258 / 0.1),
+    inset 0 1px 0 oklch(1 0 0 / 0.9);
+}
+
+@utility glow-gold {
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--gold) 18%, transparent),
+    0 8px 28px color-mix(in oklab, var(--gold) 18%, transparent);
+}
+
+@utility glow-info {
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--info) 16%, transparent),
+    0 8px 28px color-mix(in oklab, var(--info) 14%, transparent);
+}
+
+@utility glow-success {
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--success) 16%, transparent),
+    0 8px 28px color-mix(in oklab, var(--success) 14%, transparent);
+}
+
+@utility glow-destructive {
+  box-shadow: 0 0 0 1px color-mix(in oklab, var(--destructive) 16%, transparent),
+    0 8px 28px color-mix(in oklab, var(--destructive) 14%, transparent);
+}
+
+@utility sheen {
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(105deg, transparent 30%, oklch(1 0 0 / 0.22), transparent 70%);
+    transform: translateX(-120%);
+    animation: sheen 3.6s ease-in-out infinite;
+    pointer-events: none;
+  }
+}
+
+@keyframes sheen {
+  0%,
+  55% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+@keyframes aura-float {
+  to {
+    transform: translate3d(60px, 50px, 0) scale(1.14);
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@utility rise {
+  animation: rise 0.5s var(--ease-spring) both;
+}
+
+/* ══════════ 인쇄용 시험지 (A4) ══════════ */
+#paper {
+  display: none;
+}
+.sheet {
+  background: #fff;
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto 16px;
+  padding: 14mm 13mm 15mm;
+  position: relative;
+  box-shadow: 0 10px 44px rgba(15, 27, 45, 0.16);
+  border-radius: 4px;
+  font-family: "Noto Sans KR", "Noto Sans", sans-serif;
+  color: #111;
+  line-height: 1.6;
+}
+.exh {
+  display: flex;
+  align-items: stretch;
+  border-bottom: 2.4px solid #0f1b2d;
+  padding-bottom: 8px;
+}
+.exh .lft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.exh .bar {
+  width: 4px;
+  border-radius: 2px;
+  background: linear-gradient(#f5b01b, #e39a06);
+}
+.exh .t1 {
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.25;
+}
+.exh .t0 {
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  color: #8a97a8;
+  margin-bottom: 1px;
+}
+.exh .rgt {
+  margin-left: auto;
+  text-align: right;
+  font-size: 9.5px;
+  color: #8a97a8;
+  line-height: 1.6;
+  align-self: flex-end;
+}
+.exh .rgt b {
+  display: block;
+  font-size: 11px;
+  color: #0f1b2d;
+  letter-spacing: 0.14em;
+  font-weight: 800;
+}
+.exi {
+  display: flex;
+  border: 1px solid #d8dfe9;
+  border-top: 0;
+  font-size: 10.5px;
+}
+.exi div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #eef2f7;
+  min-height: 30px;
+}
+.exi div:last-child {
+  border-right: 0;
+}
+.exi span {
+  background: #f6f8fb;
+  color: #5b6b7c;
+  font-weight: 700;
+  padding: 0 10px;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #eef2f7;
+}
+.exi i {
+  font-style: normal;
+  padding: 0 10px;
+  font-weight: 700;
+  color: #0f1b2d;
+}
+.exi .sc {
+  flex: 0.85;
+  background: #fbfcfe;
+}
+.exi .sc i {
+  color: #c98d0a;
+}
+.exn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 9.5px;
+  color: #8a97a8;
+  margin: 7px 1px 9px;
+}
+.exn b {
+  color: #0f1b2d;
+  font-weight: 800;
+}
+.exn .sp {
+  margin-left: auto;
+}
+.excols {
+  column-count: 2;
+  column-gap: 9mm;
+  column-rule: 1px solid #e6ebf2;
+}
+.pq {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin-bottom: 6.5mm;
+}
+.pq .ph {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 3px;
+}
+.pq .pn {
+  flex: none;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #0f1b2d;
+  color: #fff;
+  font-size: 9.5px;
+  font-weight: 800;
+  display: inline-grid;
+  place-items: center;
+  line-height: 1;
+}
+.pq .pt {
+  font-size: 8.5px;
+  font-weight: 800;
+  color: #b3bdc9;
+}
+.pq .plv {
+  font-size: 8px;
+  font-weight: 800;
+  border-radius: 3px;
+  padding: 1px 4px;
+}
+.plv.하 {
+  background: #ecfdf5;
+  color: #0b7a56;
+}
+.plv.중 {
+  background: #fff7e6;
+  color: #c98d0a;
+}
+.plv.상 {
+  background: #fdf0ef;
+  color: #b8332e;
+}
+.pq .pstem {
+  font-size: 10.8px;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  margin-bottom: 3px;
+}
+.pq ol {
+  list-style: none;
+  margin: 2px 0 0;
+  padding: 0;
+  font-size: 10.4px;
+  line-height: 1.62;
+}
+.pq ol.two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 8px;
+}
+.pq .line {
+  border-bottom: 0.8px solid #9aa6b4;
+  height: 16px;
+  margin-top: 6px;
+}
+.pq .line.d {
+  height: 32px;
+  border-bottom-style: dashed;
+}
+.exf {
+  position: absolute;
+  left: 13mm;
+  right: 13mm;
+  bottom: 8mm;
+  display: flex;
+  align-items: center;
+  font-size: 8.5px;
+  color: #a8b2bf;
+  border-top: 1px solid #eef2f7;
+  padding-top: 5px;
+}
+.exf b {
+  color: #0f1b2d;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+.exf .pg {
+  margin-left: auto;
+  font-weight: 700;
+}
+.keyh {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2.4px solid #0f1b2d;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+.keyh .bar {
+  width: 4px;
+  align-self: stretch;
+  border-radius: 2px;
+  background: linear-gradient(#e0524d, #f08b87);
+}
+.keyh .t1 {
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+.keyh .t0 {
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  color: #8a97a8;
+}
+.keyh .rgt {
+  margin-left: auto;
+  font-size: 9.5px;
+  color: #8a97a8;
+  text-align: right;
+}
+.keyh .rgt b {
+  display: block;
+  font-size: 11px;
+  color: #0f1b2d;
+  letter-spacing: 0.14em;
+}
+.ktab {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 9.8px;
+}
+.ktab th {
+  background: #f6f8fb;
+  color: #5b6b7c;
+  font-weight: 800;
+  font-size: 9px;
+  padding: 5px 7px;
+  border: 1px solid #e6ebf2;
+  text-align: left;
+}
+.ktab td {
+  border: 1px solid #eef2f7;
+  padding: 5px 7px;
+  vertical-align: top;
+  line-height: 1.55;
+}
+.ktab td.n {
+  text-align: center;
+  font-weight: 800;
+  color: #0f1b2d;
+  width: 24px;
+}
+.ktab td.a {
+  font-weight: 700;
+  color: #b8332e;
+}
+.ktab tr:nth-child(even) td {
+  background: #fcfdfe;
+}
+.omr {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 3px;
+  margin: 9px 0 12px;
+}
+.omr div {
+  border: 1px solid #e6ebf2;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 8.6px;
+  padding: 3px 0;
+  background: #fbfcfe;
+}
+.omr div b {
+  display: block;
+  color: #8a97a8;
+  font-size: 7.6px;
+  font-weight: 800;
+}
+.omr div i {
+  font-style: normal;
+  font-weight: 800;
+  color: #0f1b2d;
+  font-size: 10px;
+}
+u {
+  text-underline-offset: 3.5px;
+  text-decoration-thickness: 1.4px;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  body {
+    background: #fff;
+  }
+  body > *:not(#paper) {
+    display: none !important;
+  }
+  #paper {
+    display: block !important;
+  }
+  .sheet {
+    box-shadow: none;
+    margin: 0;
+    border-radius: 0;
+    break-after: page;
+    page-break-after: always;
+  }
+  .sheet:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::after,
+  *::before {
+    animation: none !important;
+  }
+}

@@ -1,0 +1,806 @@
+export interface Problem {
+  number: number;
+  korean: string;
+  hints?: string[];
+  wordCount?: number;
+  instructions?: string;
+  type: 'translation' | 'arrangement' | 'writing' | 'conditional';
+  answer?: string;
+}
+
+export interface Unit {
+  number: number;
+  title: string;
+  subtitle?: string;
+  problems: Problem[];
+}
+
+// Re-export from dedicated files
+export { arrangementUnits } from './arrangementProblems';
+export { conditionalUnits } from './conditionalProblems';
+
+// Legacy export for backward compatibility
+export const units: Unit[] = [
+  {
+    number: 1,
+    title: "주어가 명사구인 문장 쓰기",
+    subtitle: "동명사/to부정사 주어 활용",
+    problems: [
+      {
+        number: 1,
+        korean: "겨울에 수영하러 가는 것은 당신이 아주 건강해지는 기분이 들도록 만든다.",
+        type: 'translation',
+      },
+      {
+        number: 2,
+        korean: "지면으로부터 15,000피트 떨어진 하늘에서 떨어지는 것은 내 소원 목록에는 결코 있지 않았다.",
+        type: 'translation',
+      },
+      {
+        number: 3,
+        korean: "물건을 아주 쉽게 버릴 수 있다는 것은 우리가 가지고 있는 실제의 물건들에 대해 우리를 무감각하도록 만든다.",
+        type: 'translation',
+      },
+      {
+        number: 4,
+        korean: "바람과 태양(에너지)을 뒷받침할 수 있는 믿을 만한 에너지를 보유하는 것은 모든 것이 원활하게 작동하도록 하기 위해 필요할 것이다.",
+        type: 'translation',
+      },
+      {
+        number: 5,
+        korean: "당신의 문제에 있어 당신의 역할을 받아들이는 것은 해결책이 당신 안에 있다는 것을 당신이 이해한다는 것을 의미한다.",
+        type: 'translation',
+      },
+      {
+        number: 6,
+        korean: "그 아이스크림을 선택하는 것은 그 초콜릿 칩 쿠키를 먹을 수 없다는 것을 의미한다.",
+        type: 'translation',
+      },
+      {
+        number: 7,
+        korean: "당신의 아이가 영리한지 아닌지를 결정하는 것은 주의 깊은 관찰력을 필요로 한다.",
+        type: 'translation',
+      },
+      {
+        number: 8,
+        korean: "행동 패턴을 인지하는 데 전문가가 되는 것은 당신의 인생에서 스트레스를 줄이도록 당신을 도와줄 수 있다.",
+        type: 'translation',
+      },
+      {
+        number: 9,
+        korean: "학교 실험실에서 과학을 하는 것은 그것(과학)에 관하여 읽는 것보다 훨씬 더 흥미로울 수 있다.",
+        type: 'translation',
+      },
+      {
+        number: 10,
+        korean: "희귀한 유전적 질병을 가진 가족을 연구하는 것이 의사들로 하여금 세대에 걸친 질병의 유전적 원인을 추적하도록 가능케 해왔다.",
+        type: 'translation',
+      },
+      {
+        number: 11,
+        korean: "어떤 것을 크게 말하는 것은 단지 그것을 생각하는 것보다 더 강력한 기억을 만든다.",
+        hints: ["more powerful", "aloud", "create", "only think", "memory", "say", "a"],
+        wordCount: 12,
+        instructions: "동명사를 주어로 사용할 것, 필요시 어형 변화할 것",
+        type: 'arrangement',
+      },
+      {
+        number: 12,
+        korean: "최신 제품을 가진다는 것이 그것을 오랫동안 사용한다는 것보다 더 중요하다.",
+        hints: ["make", "getting", "is", "of", "durable use", "the latest thing", "it"],
+        wordCount: 13,
+        instructions: "비교급을 사용할 것, 필요시 어형 변화할 것",
+        type: 'arrangement',
+      },
+      {
+        number: 13,
+        korean: "직원들이 가끔씩 집에서 일하도록 허용하는 것은 더 좋은 아이디어와 결과들을 만들어 낼 것이다.",
+        hints: ["allow", "generate", "from home", "occasionally work", "results", "employees"],
+        wordCount: 13,
+        instructions: "동명사를 주어로 사용할 것",
+        type: 'arrangement',
+      },
+      {
+        number: 14,
+        korean: "아이들이 불쾌한 경험들을 겪지 않기를 원하는 것은 고귀한 목적이다.",
+        hints: ["want", "go through", "children", "a noble aim", "to spare", "unpleasant"],
+        wordCount: 14,
+        instructions: "to부정사를 주어로 사용할 것, 필요시 어형 변화할 것",
+        type: 'arrangement',
+      },
+      {
+        number: 15,
+        korean: "살아가는 방법을 알아내기 위해서 노인들의 의견을 듣는 것은 우리 사회에서 그다지 흔하지 않다.",
+        hints: ["in", "very common", "older people", "society", "to find out", "listen to"],
+        wordCount: 17,
+        instructions: "동명사를 주어로 사용할 것, 「의문사 + to-V」를 사용할 것",
+        type: 'arrangement',
+      },
+    ],
+  },
+  {
+    number: 2,
+    title: "주어가 명사절인 문장 쓰기",
+    subtitle: "what/that/whether 등 명사절 주어",
+    problems: [
+      {
+        number: 1,
+        korean: "그것을 차이나도록 만드는 것은 어린아이와 어른 사이의 상대적인 신장이다.",
+        type: 'translation',
+      },
+      {
+        number: 2,
+        korean: "여러분이 거기서 한 것은 정전기라고 불리는 전기의 한 형태를 만든 것이다.",
+        type: 'translation',
+      },
+      {
+        number: 3,
+        korean: "방울뱀 고기가 먹기에 혐오스러운 음식이라는 것은 정상적인 소화 과정의 극단적인 반전을 촉발했다.",
+        type: 'translation',
+      },
+      {
+        number: 4,
+        korean: "이런 부모들이 깨닫지 못하는 것은 그들이 그들의 자녀의 삶을 더 즐겁게 만들 수 없다는 것이다.",
+        type: 'translation',
+      },
+      {
+        number: 5,
+        korean: "안전에 지출된 그 돈이 현명한 결정으로 보일지 그렇게 보이지 않을지는 비교의 상황에 달려 있을 것이다.",
+        type: 'translation',
+      },
+      {
+        number: 6,
+        korean: "사람을 게으르게 만드는 것은 목표와 목적의 부족이다.",
+        type: 'translation',
+      },
+      {
+        number: 7,
+        korean: "여성이 노예인지 더 부유한 계층 출신인지가 많은 차이를 만들었다.",
+        type: 'translation',
+      },
+      {
+        number: 8,
+        korean: "당신이 당신의 교수들을 어떻게 부르는지는 대학 문화와 교수 자신의 선호도와 같은 많은 요소들에 달려 있다.",
+        type: 'translation',
+      },
+      {
+        number: 9,
+        korean: "더욱 놀라운 것은 당신이 실제 오렌지 안에서보다 하얀색 속껍질 안에서 더 많은 비타민 C를 찾을 수 있다는 것이다.",
+        type: 'translation',
+      },
+      {
+        number: 10,
+        korean: "그의 진짜 모습이 공교롭게도 잘생긴 왕자였다는 것은 그녀가 크게 보상을 받았다는 것을 상징적으로 보여 준다.",
+        type: 'translation',
+      },
+      {
+        number: 11,
+        korean: "우리가 어떻게 세상을 보는지는 우리가 그것(세상)으로부터 무엇을 원하는지에 달려 있다.",
+        hints: ["depend", "from", "how", "the world", "what"],
+        wordCount: 12,
+        instructions: "필요시 어형 변화할 것",
+        type: 'arrangement',
+      },
+      {
+        number: 12,
+        korean: "사람들이 얼마나 긍정적으로 잠재적 관계를 평가했는지가 그들이 얼마나 많은 공통점을 가졌는지보다 더 중요했다.",
+        hints: ["rate", "was", "in common", "positive", "people", "a potential relationship", "much", "how"],
+        wordCount: 17,
+        instructions: "단어 중복 사용 가능, 필요시 어형 변화할 것",
+        type: 'arrangement',
+      },
+      {
+        number: 13,
+        korean: "그가 그것을 사용했던 아니던 나에게는 중요하지 않다.",
+        hints: ["matter", "to", "whether"],
+        wordCount: 10,
+        type: 'arrangement',
+      },
+      {
+        number: 14,
+        korean: "내가 하기로 결심했던 일은 뉴욕에 계신 나의 할머니께 편지를 쓰는 것이었다.",
+        hints: ["to write", "was", "do", "in New York", "decided"],
+        wordCount: 16,
+        instructions: "관계대명사 what을 주어로 쓸 것",
+        type: 'arrangement',
+      },
+      {
+        number: 15,
+        korean: "나를 아프게 하는 것은 사건 그 자체가 아니라, 그나 그녀가 무비판적으로 택했던 반응이다.",
+        hints: ["the response", "the occurrence itself", "hurts", "is", "has uncritically adopted"],
+        wordCount: 17,
+        instructions: "관계대명사 what을 주어로 쓸 것, 「not A but B」를 사용할 것",
+        type: 'arrangement',
+      },
+    ],
+  },
+  {
+    number: 3,
+    title: "주어가 형용사구의 수식을 받는 문장 쓰기",
+    subtitle: "분사, 전치사구 수식",
+    problems: [
+      {
+        number: 1,
+        korean: "유럽을 통합하는 문제에 관한 현재의 의견 불일치는 유럽 분열의 전형이다.",
+        hints: ["are typical", "about the issue", "of Europe's disunity", "the current disagreements", "of unifying Europe"],
+        type: 'arrangement',
+      },
+      {
+        number: 2,
+        korean: "설문 조사에 포함된 시나리오들은 구조될 수 있었던 보행자와 탑승자의 수를 달리했다.",
+        hints: ["involved in the surveys", "and passenger lives", "varied in", "that could be saved", "the scenarios", "the number of pedestrian"],
+        type: 'arrangement',
+      },
+      {
+        number: 3,
+        korean: "그 믿음을 시험해 볼 방법은 당신이 받아들일 수 있다고 믿는 것의 범위 내에서 고수하는 것이다.",
+        hints: ["that belief", "to be acceptable", "the way", "is to stick", "what you believe", "to test", "within the range of"],
+        type: 'arrangement',
+      },
+      {
+        number: 4,
+        korean: "휴대 기기를 사용하는 운전자들은 4배 더 사고를 내고 자신이나 타인을 다치게 할 것 같다.",
+        hints: ["and injure themselves", "are four times", "have an accident", "drivers", "or others", "more likely to", "using mobile devices"],
+        type: 'arrangement',
+      },
+      {
+        number: 5,
+        korean: "르네상스의 가장 흥미 있는 그림들 중의 하나는 Albrecht Durer가 그린 잡초가 무성한 지대의 정교한 묘사이다.",
+        hints: ["of ground", "of a weedy patch", "of the Renaissance", "one", "of the most curious paintings", "is a careful depiction", "by Albrecht Durer"],
+        type: 'arrangement',
+      },
+      {
+        number: 6,
+        korean: "우편물로 편지를 받는 것에 대한 흥미로운 무언가가 있다.",
+        hints: ["the", "getting", "exciting", "is", "a letter", "something", "there", "about", "in", "mail"],
+        type: 'arrangement',
+      },
+      {
+        number: 7,
+        korean: "즐거움을 포기하고 시험을 위해 공부한다는 그의 결정이 올바른 것임이 증명되었다.",
+        hints: ["exam", "decision", "good", "a", "to", "his", "study", "turned out", "give", "the", "fun", "one", "having", "and", "for", "up"],
+        type: 'arrangement',
+      },
+      {
+        number: 8,
+        korean: "그 동물 센터의 직원들 중의 한 명은 무엇이 잘못되었는지를 알아냈다.",
+        hints: ["at", "workers", "has", "what", "the animal", "the", "one", "out", "wrong", "of", "center", "found", "was"],
+        type: 'arrangement',
+      },
+      {
+        number: 9,
+        korean: "어떻게 그 나무가 거꾸로 땅에 박히게 되었는지에 대한 설명을 제공하는 수많은 이야기들이 있다.",
+        hints: ["how", "explanations", "down", "stuffed in", "offering", "of", "stories", "are", "the tree", "be", "numerous", "there", "came", "to", "the", "ground"],
+        type: 'arrangement',
+      },
+      {
+        number: 10,
+        korean: "그렇게 하지 않는 것은 관련된 사람들에게 부정적인 결과를 가져올 수 있는 오해를 불러일으킬 것이다.",
+        hints: ["who", "failure", "lead", "consequences", "those", "to", "will", "negative", "that", "to", "may", "misunderstanding", "for", "do", "so", "are", "have", "involved"],
+        type: 'arrangement',
+      },
+      {
+        number: 11,
+        korean: "기억에서 보내진 그 정보는 우리가 가상의 청취를 하도록 허락할 것이다.",
+        hints: ["us", "from", "send", "have", "a fake listen"],
+        wordCount: 13,
+        instructions: "필요시 어형 변화할 것",
+        type: 'arrangement',
+      },
+      {
+        number: 12,
+        korean: "학생들에게 존중을 보여 주는 가장 중요한 방법은 그들을 문제 해결에 포함시키는 것이다.",
+        hints: ["respect", "involve", "show", "to students", "in problem-solving"],
+        wordCount: 15,
+        instructions: "to부정사를 2번 사용할 것",
+        type: 'arrangement',
+      },
+      {
+        number: 13,
+        korean: "패스트푸드 체인점의 경제적인 성공에 대한 한 가지 중요한 이유는 그들의 노동 비용이 낮다는 사실이었다.",
+        hints: ["low", "labor costs", "their", "the financial success", "been", "fast-food chains", "for", "the fact"],
+        wordCount: 20,
+        instructions: "동격의 that을 사용할 것, 현재완료 시제를 사용할 것",
+        type: 'arrangement',
+      },
+      {
+        number: 14,
+        korean: "관계에서 장기간의 행복을 보장하는 최고의 방법은 당신의 첫사랑에 집착하지 않는 것이다.",
+        hints: ["best way", "not", "make sure", "first love", "long-term", "in a relationship", "stick to"],
+        wordCount: 19,
+        instructions: "to부정사를 2번 사용할 것",
+        type: 'arrangement',
+      },
+      {
+        number: 15,
+        korean: "암스테르담에서 도쿄로 가는 최고의 방법은 지중해 노선이라고 알려진 것을 따라서 동쪽 방향으로 향하는 것이다.",
+        hints: ["head", "Tokyo", "in an easterly direction", "as", "is", "the Mediterranean route", "Amsterdam", "along", "know", "is", "what", "get"],
+        wordCount: 24,
+        instructions: "「from A to B」를 사용할 것, to부정사를 2번 사용할 것, 필요시 어형 변화할 것",
+        type: 'arrangement',
+      },
+    ],
+  },
+  {
+    number: 4,
+    title: "주어가 형용사절의 수식을 받는 문장 쓰기",
+    subtitle: "관계대명사/관계부사절 수식",
+    problems: [
+      {
+        number: 1,
+        korean: "부모가 시간이나 내용 제한을 설정한 아이들은 하루에 세 시간 덜 접속한다.",
+        type: 'translation',
+      },
+      {
+        number: 2,
+        korean: "위험을 기꺼이 감수하려는 사람은 문신 새기기를 좋아할 것이며 그리고 또한 오토바이를 탈 가능성이 더 높다.",
+        type: 'translation',
+      },
+      {
+        number: 3,
+        korean: "예술가의 개성보다는 전통의 준수에 우선권이 주어졌던 시기가 있었다.",
+        type: 'translation',
+      },
+      {
+        number: 4,
+        korean: "친한 친구들과 함께 서 있었던 참가자들은 그 언덕의 경사도에 대해 상당히 더 낮은 추정치를 주었다.",
+        type: 'translation',
+      },
+      {
+        number: 5,
+        korean: "폭풍우 동안에 우리가 종종 보는 번개는 전기를 띤 구름과 지면 사이의 전하의 큰 흐름에 의해서 야기된다.",
+        type: 'translation',
+      },
+      {
+        number: 6,
+        korean: "자신을 다른 사람들과 비교하는 사람은 두려움의 상태에서 산다.",
+        type: 'translation',
+      },
+      {
+        number: 7,
+        korean: "상어의 이익을 위해 사람들이 취할 수 있는 어떤 조치든 전체 생태계에 유익하다.",
+        type: 'translation',
+      },
+      {
+        number: 8,
+        korean: "사람들은 그들이 다른 사람들에게 있다고 설명한 어떤 특성을 가지고 있는 것으로 인식된다는 흥미로운 현상이 있다.",
+        type: 'translation',
+      },
+      {
+        number: 9,
+        korean: "한때 전통적인 보통 신문 크기로 출판되었던 신문들이 타블로이드판으로 전환하도록 강요받는다.",
+        type: 'translation',
+      },
+      {
+        number: 10,
+        korean: "개인의 선택이나 취향의 차이점들에 의해 만들어지는 행복의 불평등은 허용 가능하다.",
+        type: 'translation',
+      },
+      {
+        number: 11,
+        korean: "우리가 아는 위대한 사상가들 중 첫 번째 사람은 Miletus의 Thales였다.",
+        type: 'writing',
+      },
+      {
+        number: 12,
+        korean: "개인적인 고난을 경험해 온 많은 부모님들은 그들의 자녀들을 위해 더 나은 삶을 바란다.",
+        type: 'writing',
+      },
+      {
+        number: 13,
+        korean: "당신의 아이가 곤충들에 의해 물리는 것으로부터 보호하기 위해 당신이 할 수 있는 여러 가지 것들이 있다.",
+        type: 'writing',
+      },
+      {
+        number: 14,
+        korean: "자신들을 가치 있는 사람이라고 여기는 사람들은 그들의 건강에 대해 아는 것에 더 동의하는 경향이 있다.",
+        type: 'writing',
+      },
+      {
+        number: 15,
+        korean: "여러분이 인간관계에서 발전시킬 수 있는 가장 중요한 기술은 다른 사람들의 관점으로부터 사물들을 보는 능력이다.",
+        type: 'writing',
+      },
+    ],
+  },
+  {
+    number: 5,
+    title: "가주어 문장 쓰기",
+    subtitle: "It ~ that/to-V 구문",
+    problems: [
+      {
+        number: 1,
+        korean: "당신이 기꺼이 제 학생들에게 특별 강연을 해 주고 당신의 여행에 관한 이야기를 나누어 주는 것이 제 희망입니다.",
+        hints: ["a special lecture", "that you would be", "it is my hope", "about your travels", "to my class", "and share stories", "willing to give"],
+        type: 'arrangement',
+      },
+      {
+        number: 2,
+        korean: "함께 일함으로써 어떻게 문제가 축복으로 변할 수 있는지를 보는 것은 아주 멋졌다.",
+        hints: ["how a problem", "by working together", "it was so beautiful", "could be turned", "to see", "into a blessing"],
+        type: 'arrangement',
+      },
+      {
+        number: 3,
+        korean: "더 낮은 속도에서의 충돌이 사망 또는 중상을 덜 초래할 것 같다는 것은 분명하다.",
+        hints: ["is less likely", "that a collision", "to result in", "at a lower speed", "death or serious injury", "it is obvious"],
+        type: 'arrangement',
+      },
+      {
+        number: 4,
+        korean: "그러한 사소한 행동으로 당신이 누군가의 하루를 밝게 할 수 있다는 것을 아는 것은 유쾌한 느낌이다.",
+        hints: ["with such a small gesture", "brightening up", "someone's day", "knowing", "it is a lovely feeling", "that you could be"],
+        type: 'arrangement',
+      },
+      {
+        number: 5,
+        korean: "성인으로서 내 자신이 일 년 내내 전국으로 여행하는 것을 발견하게 되는 것은 아이러니하다.",
+        hints: ["from state to state", "that as an adult", "throughout the year", "I find myself traveling", "it is ironic"],
+        type: 'arrangement',
+      },
+      {
+        number: 6,
+        korean: "우리가 감정이 없는 삶을 상상하는 것은 거의 불가능하다.",
+        type: 'translation',
+      },
+      {
+        number: 7,
+        korean: "우리의 건강을 위해 우리가 먹는 음식의 양을 조절하는 것은 필수적이다.",
+        type: 'translation',
+      },
+      {
+        number: 8,
+        korean: "소음에 대한 지속적인 노출이 아이들의 학업 성취와 관계가 있다는 것은 놀랍지 않다.",
+        type: 'translation',
+      },
+      {
+        number: 9,
+        korean: "당신의 사회적 집단 속에 있지 않은 사람들과 사귀는 것은 흥미로울 수 있다.",
+        type: 'translation',
+      },
+      {
+        number: 10,
+        korean: "울음이 아기의 폐를 더 튼튼하게 해 주거나 혈액에 산소를 보낸다는 것을 아는 것은 도움이 될 수 있다.",
+        type: 'translation',
+      },
+      {
+        number: 11,
+        korean: "외부 사건이 당신을 언짢게 한다고 믿는 것은 당연하다.",
+        hints: ["external events", "natural", "upset"],
+        wordCount: 10,
+        instructions: "「가주어(it) ~ 진주어(to-V)」를 사용할 것, upset은 동사로 사용할 것",
+        type: 'arrangement',
+      },
+      {
+        number: 12,
+        korean: "개인의 사생활을 보호하는 데 추가적인 조치들을 취하는 것이 필수적이다.",
+        hints: ["take", "an individual's privacy", "protect", "further steps", "necessary", "in"],
+        wordCount: 12,
+        instructions: "「가주어(it) ~ 진주어(to-V)」를 사용할 것, 필요시 어형 변화할 것",
+        type: 'arrangement',
+      },
+      {
+        number: 13,
+        korean: "그런 긴장을 유발하는 상황들을 비난하는 대신에 당신의 머리카락을 염색하는 것이 현명할지도 모른다.",
+        hints: ["wise", "those stressful situations", "might", "dye", "blame", "instead of"],
+        wordCount: 14,
+        instructions: "「가주어(it) ~ 진주어(to-V)」를 사용할 것, 필요시 어형 변화할 것",
+        type: 'arrangement',
+      },
+      {
+        number: 14,
+        korean: "회사는 무엇이 그들의 직원들이 그들의 직업에 대하여 만족하도록 만드는지 아는 것이 중요하다.",
+        hints: ["makes", "satisfy", "what", "employees", "companies", "with their jobs", "important"],
+        wordCount: 15,
+        instructions: "「가주어(it) ~ 진주어(to-V)」를 사용할 것, 의미상의 주어를 사용할 것, 필요시 어형 변화할 것",
+        type: 'arrangement',
+      },
+      {
+        number: 15,
+        korean: "바른 자세로 앉는 것이 당신이 스스로에 대해서 어떻게 느끼는지를 향상시킬 수 있는 것으로 드러났다.",
+        hints: ["you", "improve", "turns out", "straight", "can", "sit up", "feel about"],
+        wordCount: 14,
+        instructions: "「가주어(it) ~ 진주어(that)」를 사용할 것, 필요시 어형 변화할 것",
+        type: 'arrangement',
+      },
+    ],
+  },
+  {
+    number: 6,
+    title: "다양한 시제의 문장 쓰기",
+    subtitle: "현재완료, 과거완료, 진행형 시제",
+    problems: [
+      {
+        number: 1,
+        korean: "Kenge는 지평선의 광경을 제공하지 않던 무성한 정글에서 그의 평생을 살았었다.",
+        hints: ["that offered", "Kenge had lived", "of the horizon", "in a dense jungle", "his entire life", "no views"],
+        type: 'arrangement',
+      },
+      {
+        number: 2,
+        korean: "광고 기획자들은 그들의 목표 대상의 주의를 끌기 위해 기발한 광고 문구를 끊임없이 찾아 사용하고 있다.",
+        hints: ["constantly searching", "and", "of their target", "ad creators are", "to win over", "the attention", "using catchy phrases"],
+        type: 'arrangement',
+      },
+      {
+        number: 3,
+        korean: "그 학교의 많은 학생들은 Lockwood 지역의 청년 실업 문제에 관한 프로젝트를 수행해 오고 있다.",
+        hints: ["a project", "in Lockwood", "many students", "have been working on", "about the youth unemployment problem", "at the school"],
+        type: 'arrangement',
+      },
+      {
+        number: 4,
+        korean: "그 미국 남자는 그 사건이 자신의 발견이 드러나도록 그를 도와주기 전에 수년 동안 고무로 실험해 왔었다.",
+        hints: ["for years", "before", "discover his finding", "the American man", "the accident helped him", "with rubber", "had experimented"],
+        type: 'arrangement',
+      },
+      {
+        number: 5,
+        korean: "휴대 전화는 모든 전자 제품 중 가장 짧은 수명을 가지고 있는 지위를 획득해 왔던 것 같다.",
+        hints: ["of all the electronic consumer products", "the shortest life cycle", "to have achieved", "of having", "cell phones seem", "the status"],
+        type: 'arrangement',
+      },
+      {
+        number: 6,
+        korean: "나는 당신이 이런 종류의 프로그램을 사용할 기회가 절대 없기를 바란다.",
+        type: 'translation',
+      },
+      {
+        number: 7,
+        korean: "다양한 장소에서 공부하는 것은 두뇌가 정보를 유지하도록 돕는 것으로 밝혀졌다.",
+        type: 'translation',
+      },
+      {
+        number: 8,
+        korean: "한국 사람들은 삼신할머니가 아기가 태어나도록 북돋기 위해 아기의 엉덩이를 때렸다고 믿어 왔다.",
+        type: 'translation',
+      },
+      {
+        number: 9,
+        korean: "포획되어 있는 몇몇 원숭이들과 유인원들은 그들이 다양한 음식을 얻기 위해 교환할 상징물들을 사용하는 것을 배워 왔다.",
+        type: 'translation',
+      },
+      {
+        number: 10,
+        korean: "무언가를 하는 것처럼 보이지 않는 사람들은 어떠한 것을 할 충분히 좋은 이유를 찾지 못했다.",
+        type: 'translation',
+      },
+      {
+        number: 11,
+        korean: "가장 최근의 설명 중의 하나는 언어 기술의 부족이었다.",
+        hints: ["a lack of", "explanation", "language skills", "be", "one", "recent"],
+        wordCount: 13,
+        instructions: "현재완료 시제를 사용할 것, 필요시 어형 변화할 것",
+        type: 'arrangement',
+      },
+      {
+        number: 12,
+        korean: "과학자들은 유용한 어떤 일도 할 것 같아 보이지 않는 신체 기관에 대해 궁금해 했다.",
+        hints: ["that", "body organs", "wonder about", "useful", "do", "anything", "seem"],
+        wordCount: 13,
+        instructions: "현재완료 시제를 사용할 것, 「seem to-V」를 사용할 것",
+        type: 'arrangement',
+      },
+      {
+        number: 13,
+        korean: "Napoleon은 그의 고통스런 질병 때문에 Waterloo 전투에서 패배했다고 알려져 있다.",
+        hints: ["painful disease", "the battle of", "because of", "lost", "know"],
+        wordCount: 15,
+        instructions: "「to have p.p.」를 사용할 것, 필요시 어형 변화할 것",
+        type: 'arrangement',
+      },
+      {
+        number: 14,
+        korean: "당신이 당신의 머릿속에 아이디어들을 가지고만 있다면 당신의 어떤 아이디어도 세상을 바꾸지 않을 것이다.",
+        hints: ["ideas", "the world", "inside of", "keep them", "will", "head", "change"],
+        wordCount: 16,
+        instructions: "None of 포함",
+        type: 'arrangement',
+      },
+      {
+        number: 15,
+        korean: "몸의 나머지 부분은 추위를 막아 주었을 훨씬 더 짧은 깃털들로 덮여 있었던 것처럼 보인다.",
+        hints: ["feathers", "the rest of", "keep out", "cover in", "that", "the cold", "would", "much"],
+        wordCount: 21,
+        instructions: "「seem to have been p.p.」를 사용할 것, 필요시 어형 변화할 것",
+        type: 'arrangement',
+      },
+    ],
+  },
+  {
+    number: 7,
+    title: "조동사가 포함된 문장 쓰기",
+    subtitle: "should/could/would have p.p. 등",
+    problems: [
+      {
+        number: 1,
+        korean: "우리의 조상들은 날 음식을 씹고 갈 때 사랑니로부터 혜택을 받았을지도 모른다.",
+        hints: ["when chewing", "our ancestors", "grinding raw food", "from wisdom teeth", "might have benefited", "and"],
+        type: 'arrangement',
+      },
+      {
+        number: 2,
+        korean: "컴퓨터 앞에서 너무 많은 시간을 보냄으로써 야기된 건강 문제를 운동이 해결할 수 없다.",
+        hints: ["too much time", "the health problem", "in front of the computer", "exercise cannot fix", "caused by spending"],
+        type: 'arrangement',
+      },
+      {
+        number: 3,
+        korean: "Jane은 그녀의 아들이 당부했던 것을 그녀가 잊지 말았어야 했다고 혼잣말을 하면서 대화를 끝냈다.",
+        hints: ["what her son", "the conversation", "Jane ended", "had asked", "have forgotten", "that she shouldn't", "telling herself"],
+        type: 'arrangement',
+      },
+      {
+        number: 4,
+        korean: "가장 성공한 전문가들 중의 몇몇은 그들이 오늘날 실제로 하고 있는 것을 절대 예측하지 못했을 것이다.",
+        hints: ["have predicted", "the most successful professionals", "do today", "could never ever", "some of", "what they actually"],
+        type: 'arrangement',
+      },
+      {
+        number: 5,
+        korean: "여러분은 스스로에게 무엇이 작가의 주된 생각인지와 그것에 대한 여러분 자신의 의견은 무엇인지를 계속해서 질문해야 한다.",
+        hints: ["what your own opinion", "what the author's main idea is", "about that is", "and", "keep asking yourself", "you should"],
+        type: 'arrangement',
+      },
+      {
+        number: 6,
+        korean: "한 편의 글을 시작하는 당신의 첫 번째 목표는 어수선하게 만드는 것이어야 한다.",
+        type: 'translation',
+      },
+      {
+        number: 7,
+        korean: "당신은 얼마나 많은 사람들이 이런 단계의 중요성을 이해하지 못하는지에 대해 놀라게 될 것이다.",
+        type: 'translation',
+      },
+      {
+        number: 8,
+        korean: "당신의 추천서가 장학금 위원회로 하여금 나에게 운을 맡겨 보도록 설득했었음이 틀림없다.",
+        type: 'translation',
+      },
+      {
+        number: 9,
+        korean: "농부는 주어진 양의 토지는 어느 정도의 노동력에 의해서 작업되어야만 한다는 것을 인식하고 있다.",
+        type: 'translation',
+      },
+      {
+        number: 10,
+        korean: "직원들이 자신들의 업무 공간을 개인화하도록 허용하는 회사들은 성실한 직원으로 보상받아야 한다.",
+        type: 'translation',
+      },
+      {
+        number: 11,
+        korean: "편지는 사람들이 메시지를 보낼 때 쓰는 보통의 방법이었다.",
+        hints: ["letter", "the usual way", "to send messages", "used to"],
+        wordCount: 12,
+        instructions: "의미상의 주어 「for + 목적격」을 사용할 것",
+        type: 'arrangement',
+      },
+      {
+        number: 12,
+        korean: "당신은 신에게 그가 어느 제국을 말했는지 질문했어야 했다.",
+        hints: ["he", "ask", "which empire", "the god", "speak of"],
+        wordCount: 11,
+        instructions: "「should have p.p.」를 사용할 것, 필요시 어형 변화할 것",
+        type: 'arrangement',
+      },
+      {
+        number: 13,
+        korean: "이것은 당신의 독자들이 희생자들을 돕기 위해 그들이 할 수 있는 것이 무엇인지 확인하도록 독려할 것이다.",
+        hints: ["encourage", "the victims", "they", "to help", "check out"],
+        wordCount: 16,
+        instructions: "조동사 will, can을 사용할 것",
+        type: 'arrangement',
+      },
+      {
+        number: 14,
+        korean: "그들은 문화의 규칙들이 다르다는 상황들을 식별할 수 있어야 한다.",
+        hints: ["identify", "in which", "should", "the cultures", "situations", "the rules"],
+        wordCount: 16,
+        type: 'arrangement',
+      },
+      {
+        number: 15,
+        korean: "당신이 얼마만큼의 수면이 필요한지에 대한 최고의 지표는 당신이 어떻게 느끼느냐에 근거를 두어야 한다.",
+        hints: ["sleep", "indicator of", "should be", "how much", "based on"],
+        wordCount: 16,
+        type: 'arrangement',
+      },
+    ],
+  },
+  {
+    number: 8,
+    title: "수동태 문장 쓰기",
+    subtitle: "다양한 수동태 구문",
+    problems: [
+      {
+        number: 1,
+        korean: "시골에 사는 것보다 질병과 전염병에 노출될 더 높은 가능성이 있었다.",
+        hints: ["in the country", "to diseases and infections", "of being exposed", "than living", "there was", "a higher chance"],
+        type: 'arrangement',
+      },
+      {
+        number: 2,
+        korean: "수학 성취 평가를 보기 전에 행복하다고 느끼게 된 학생들은 그들의 중립적인 (기분의) 또래들보다 훨씬 더 잘한다.",
+        hints: ["perform much better", "before taking", "than their neutral peers", "students who", "are made to feel happy", "math achievement tests"],
+        type: 'arrangement',
+      },
+      {
+        number: 3,
+        korean: "GE 관리자들은 먼지투성이의 낡은 책에서 그것들(해결책)을 찾기보다는 그들 자신의 해결책을 찾도록 배운다.",
+        hints: ["rather than look them up", "are taught", "to find", "in a dusty old book", "GE managers", "their own solutions"],
+        type: 'arrangement',
+      },
+      {
+        number: 4,
+        korean: "그가 근무 중에 잠들었다고 추정되었던 바로 그날 밤 자정에 그 시계가 13번 울렸다는 것이 밝혀졌다.",
+        hints: ["he was supposed", "it was discovered", "on duty", "had struck thirteen times", "to have fallen asleep", "that the clock", "at midnight on the very night"],
+        type: 'arrangement',
+      },
+      {
+        number: 5,
+        korean: "이 방법은 약 4백만 명의 사람들에게 식수를 공급하기 위해 전 세계적으로 현재 사용되고 있다.",
+        hints: ["all over the world", "this method", "for some four million people", "to provide", "drinking water", "is now being used"],
+        type: 'arrangement',
+      },
+      {
+        number: 6,
+        korean: "그 체육관은 수년 동안 경쟁을 해 오던 역도 선수들로 가득했다.",
+        type: 'translation',
+      },
+      {
+        number: 7,
+        korean: "그들의 내부 장기가 격렬하게 변형되는 경험은 흥미 있다고 여겨진다.",
+        type: 'translation',
+      },
+      {
+        number: 8,
+        korean: "이 관용적 표현은 사회적 금기를 포함하는 문제를 설명하기 위해 종종 사용된다.",
+        type: 'translation',
+      },
+      {
+        number: 9,
+        korean: "그런 속임수들은 \"placebo buttons\"라고 불리며 그것들은 모든 종류의 상황에서 강요되고 있다.",
+        type: 'translation',
+      },
+      {
+        number: 10,
+        korean: "이런 유인책들은 희귀병을 지닌 개인들의 그 작은 시장들을 위한 약품을 개발하도록 회사들을 장려하기로 되어있다.",
+        type: 'translation',
+      },
+      {
+        number: 11,
+        korean: "아기들은 그들이 배우려고 기대하는 언어에 몰입한다.",
+        hints: ["the language", "babies", "to", "expect", "immerse in", "that"],
+        wordCount: 12,
+        instructions: "필요시 어형 변화할 것",
+        type: 'arrangement',
+      },
+      {
+        number: 12,
+        korean: "몇몇 고래들은 멸종 위기 종 목록에서 삭제되었다.",
+        hints: ["from", "remove", "some", "endanger", "whales", "species lists"],
+        wordCount: 9,
+        instructions: "현재완료 수동태를 사용할 것, 필요시 어형 변화할 것",
+        type: 'arrangement',
+      },
+      {
+        number: 13,
+        korean: "그 아이들은 세 가지 다른 방식으로 가르침을 받았다.",
+        wordCount: 10,
+        type: 'writing',
+      },
+      {
+        number: 14,
+        korean: "우리의 생각들은 우리가 직면하는 상황에 의해 영향을 받는다.",
+        wordCount: 12,
+        type: 'writing',
+      },
+      {
+        number: 15,
+        korean: "그 다리는 1950년에 세워졌고 2010년에 보수되었다.",
+        wordCount: 12,
+        type: 'writing',
+      },
+    ],
+  },
+];

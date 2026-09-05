@@ -1,0 +1,1 @@
+ALTER TABLE public.level_test_results ADD COLUMN IF NOT EXISTS grade_overrides jsonb DEFAULT '{}'::jsonb;

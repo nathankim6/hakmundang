@@ -1,0 +1,1 @@
+ALTER TABLE public.homework ALTER COLUMN due_date DROP NOT NULL;

@@ -1,0 +1,12 @@
+project_id = "bbminchelzjqfnndtfwo"
+
+[functions.send-kakao-notification]
+verify_jwt = false
+
+[functions.convert-recording-to-wav]
+verify_jwt = false
+
+[functions.cleanup-old-daily-word-photos]
+verify_jwt = false
+[functions.cleanup-old-recordings]
+verify_jwt = false

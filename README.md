@@ -1,69 +1,29 @@
-# Welcome to your Lovable project
+# 학문당 · Lovable 프로젝트 모음
 
-## Project info
+Lovable에서 만든 프로젝트들을 GitHub으로 옮겨 Claude Code에서 유지보수하기 위한 레포입니다.
 
-**URL**: https://lovable.dev/projects/c60294e3-a62d-42bd-84ae-21018406f785
+## 구성
 
-## How can I edit this code?
+| 위치 | 내용 |
+|---|---|
+| `projects/` | Lovable에서 코드 그대로 옮겨 온 프로젝트들. 목록과 상태는 [`projects/README.md`](./projects/README.md) |
+| 루트(`src/`, `public/` 등) | **orunquiz 프로젝트의 2025년 1월 옛 사본**입니다. 최신 코드는 [nathankim6/orunquiz](https://github.com/nathankim6/orunquiz)에 있으니 참고용으로만 두세요. |
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/c60294e3-a62d-42bd-84ae-21018406f785) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+## 프로젝트 하나 실행해 보기
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+cd projects/oruntestreport   # 원하는 프로젝트 폴더로
+npm install                  # 필요한 부품(패키지) 내려받기
+npm run dev                  # 브라우저에서 http://localhost:8080 열기
 ```
 
-**Edit a file directly in GitHub**
+`bun`을 쓰는 새 형식 프로젝트(mini-book-style, school-data-lover, orunmiddle, weekend-clinic-buddy, glassmorphism-gem, olpumta)는 `npm install` 대신 `bun install`, `bun run dev`로 실행합니다.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 알아 둘 것
 
-**Use GitHub Codespaces**
+- 41개 폴더를 모두 실제로 설치·빌드해 본 결과 36개가 통과했고, 5개(orunvoca, omr-quiz-scan, orunrecord, orunsyntax, scan-score-quick)는 코드가 쓰는 그림 파일이 빠져 있어 실패합니다. 자세한 표는 `projects/README.md`에 있습니다.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/c60294e3-a62d-42bd-84ae-21018406f785) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+- `projects/` 아래 사본들은 Lovable과 **자동으로 동기화되지 않습니다.** 앞으로 고치는 일은 이 레포에서 하세요.
+- 각 프로젝트 폴더의 `LOVABLE.md`에 Lovable 편집기 주소, 배포 주소, 데이터베이스 종류, 가져오지 못한 파일이 적혀 있습니다.
+- 데이터베이스가 "내 Supabase"인 앱은 그대로 동작합니다. "Lovable Cloud"인 앱은 Lovable 구독이 있는 동안 동작합니다.
+- 초보자용 전체 안내서: https://claude.ai/code/artifact/50c503f6-aac2-4228-ac5f-de1b98662c47

@@ -1,0 +1,1 @@
+ALTER TABLE public.schools ADD COLUMN exam_date date DEFAULT NULL;

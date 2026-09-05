@@ -1,0 +1,34 @@
+project_id = "ekvomjrjptcrsyjvoyqb"
+
+[functions.verify-access-code]
+verify_jwt = false
+
+[functions.analyze-test-progress]
+verify_jwt = false
+
+[functions.deduplicate-test-results]
+verify_jwt = false
+
+[functions.explain-writing-errors]
+verify_jwt = false
+
+[functions.extract-answers-from-image]
+verify_jwt = false
+
+[functions.fix-test-scores]
+verify_jwt = false
+
+[functions.generate-study-solution]
+verify_jwt = false
+
+[functions.generate-vocabulary-distractors]
+verify_jwt = false
+
+[functions.generate-writing-chunks]
+verify_jwt = false
+
+[functions.migrate-prep-answers]
+verify_jwt = false
+
+[functions.migrate-q31-answers]
+verify_jwt = false

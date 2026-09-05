@@ -1,0 +1,438 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animation for subtle glowing accent orbs */
+@layer utilities {
+  @keyframes pulse-glow {
+    0%, 100% {
+      opacity: 0.6;
+      filter: blur(32px) brightness(1.05);
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      filter: blur(20px) brightness(1.17);
+      transform: scale(1.08);
+    }
+  }
+  .animate-pulse-glow {
+    animation: pulse-glow 4s ease-in-out infinite;
+  }
+  
+  @keyframes gradient-text {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .animate-gradient-text {
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: gradient-text 4s linear infinite;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-gradient-to-br from-blue-50 to-indigo-50 text-foreground font-noto;
+    background-attachment: fixed;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight;
+  }
+
+  input, textarea, select, button {
+    @apply font-noto;
+  }
+}
+
+@layer components {
+  .report-container {
+    @apply bg-gradient-to-br from-white/95 to-white/85 backdrop-blur-xl;
+    @apply shadow-[0_8px_30px_rgb(0,0,0,0.12)] rounded-2xl border border-white/20;
+    @apply p-6 transition-all duration-500;
+    @apply hover:shadow-[0_8px_40px_rgb(0,0,0,0.16)];
+    @apply print:shadow-none print:p-0 print:max-w-none print:border-none;
+    @apply relative overflow-hidden isolate;
+    @apply w-full max-w-5xl; /* Make report container as wide as allowed in the page, up to 80rem */
+    @apply font-noto; /* Apply Noto Sans to the entire report container */
+  }
+  
+  .a4-container {
+    /* A4 size styles for better printing */
+    @apply w-full max-w-[210mm]; /* A4 width */
+    @apply min-h-[297mm]; /* A4 height */
+    @apply print:w-[210mm] print:min-h-[297mm] print:max-h-[297mm];
+    @apply print:mx-0 print:my-0 print:overflow-hidden;
+    @apply print:bg-white;
+  }
+
+  @media print {
+    @page {
+      size: A4;
+      margin: 10mm;
+    }
+  }
+  
+  .report-container::before {
+    @apply content-[''] absolute inset-0 -z-10;
+    @apply bg-gradient-to-br from-blue-50/30 via-indigo-50/30 to-violet-50/30;
+    @apply animate-gradient-slow;
+  }
+  
+  .report-section {
+    @apply mb-8 animate-fade-in-up bg-white/60 rounded-xl p-6;
+    @apply border border-white/60 shadow-sm backdrop-blur-sm;
+    @apply hover:shadow-md hover:bg-white/70 transition-all duration-300;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    @apply font-noto; /* Apply Noto Sans to all report sections */
+  }
+  
+  .report-title {
+    @apply text-4xl font-bold mb-4 tracking-tight;
+    @apply bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-blue-700 via-indigo-600 to-violet-700;
+    @apply animate-gradient-text;
+    @apply font-noto; /* Apply Noto Sans to report titles */
+  }
+  
+  .report-subtitle {
+    @apply text-2xl font-semibold mb-3;
+    @apply bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-gray-800 to-gray-600;
+    @apply font-noto; /* Apply Noto Sans to report subtitles */
+  }
+
+  .stat-card {
+    @apply bg-white/80 rounded-xl p-6;
+    @apply border border-white/60 shadow-sm backdrop-blur-sm;
+    @apply hover:shadow-lg hover:bg-white/90 transition-all duration-300;
+    @apply font-noto; /* Apply Noto Sans to stat cards */
+  }
+
+  .stat-value {
+    @apply text-3xl font-bold bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600;
+    @apply animate-gradient-text;
+    @apply font-noto; /* Apply Noto Sans to stat values */
+  }
+
+  .stat-label {
+    @apply text-sm font-medium text-gray-600;
+    @apply tracking-wide uppercase;
+    @apply font-noto; /* Apply Noto Sans to stat labels */
+  }
+  
+  .chart-container {
+    @apply bg-white/70 p-6 rounded-xl;
+    @apply border border-white/60 shadow-sm backdrop-blur-sm;
+    @apply hover:shadow-lg hover:bg-white/80 transition-all duration-300;
+    @apply font-noto; /* Apply Noto Sans to chart containers */
+  }
+  
+  .metallic-title {
+    background: linear-gradient(90deg, #22262a 0%, #53565a 22%, #96999d 44%, #E1E4EB 67%, #9F9EA1 80%, #222222 98%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 2px 6px rgba(178,220,255,.22));
+    letter-spacing: 0.025em;
+    font-family: 'Orbitron', 'Russo One', 'Saira Extra Condensed', 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase;
+  }
+  
+  .metallic-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent);
+    transform: translateX(-100%);
+    animation: shine 3s infinite;
+  }
+  
+  @keyframes shine {
+    0% {
+      transform: translateX(-100%);
+    }
+    20% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .metallic-h1 {
+    /* 깨끗하고 또렷한 고대비 다크실버-차콜 메탈 그라데이션 */
+    background: linear-gradient(90deg, #22262a 0%, #53565a 22%, #96999d 44%, #E1E4EB 67%, #9F9EA1 80%, #222222 98%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    text-fill-color: transparent;
+
+    font-family: 'Orbitron', 'Russo One', 'Saira Extra Condensed', 'Noto Sans KR', sans-serif;
+    font-weight: 900 !important;
+    letter-spacing: 0.015em;
+    /* 그림자 개선 - blur 없이 투명도+2색 그림자 조합, glow + 입체 */
+    text-shadow:
+      0 2px 8px rgba(220,220,230, 0.12),   /* 옅은 실버 글로우 */
+      0 1px 0 #62646a,                     /* 어두운 테두리로 리얼감 */
+      0 6px 18px rgba(88,88,99,0.11),      /* 아래쪽 입체감 */
+      0 0.2px 0 #eef0f3;
+    filter: none !important;
+    position: static;
+  }
+  .metallic-h1::before,
+  .metallic-h1::after {
+    display: none !important;
+    content: none !important;
+  }
+
+  .clean-title {
+    color: #222222;
+    font-family: 'Noto Sans KR', 'Orbitron', 'Russo One', 'Saira Extra Condensed', sans-serif;
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase;
+  }
+
+  .text-glow {
+    position: relative;
+    font-family: 'Noto Sans KR', 'Russo One', 'Orbitron', 'Saira Extra Condensed', sans-serif;
+    letter-spacing: 0.06em;
+    font-weight: 900;
+    cursor: default;
+    z-index: 1;
+
+    /* 메탈릭 차콜 ~ 실버 그라데이션 */
+    background: linear-gradient(100deg, #221F26 5%, #393B40 25%, #8E9196 50%, #E1E4EB 67%, #9F9EA1 80%, #222222 98%);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: #222222;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+
+    /* 은은한 메탈릭/유리광 반사효과 & 반짝임 */
+    text-shadow:
+      0 1px 14px #7f859666,     /* 실버 블루 라이트 글로우 */
+      0 3px 22px #dbeafe55,     /* 파란빛 광택 */
+      0 2px 2px #222f,          /* 하단 입체감 */
+      0 0 0.5px #fff,           /* 경계 강조 */
+      0 0 24px #e5e9efcc;       /* 퍼지는 실버광 */
+
+    animation:
+      gradient-text-metal 4.7s linear infinite alternate,
+      glitter-metal 1.3s linear infinite alternate;
+  }
+
+  /* 움직이는 메탈 표면 유동 애니메이션 */
+  @keyframes gradient-text-metal {
+    0% { background-position: 10% 50%; }
+    50% { background-position: 90% 50%; }
+    100% { background-position: 10% 50%; }
+  }
+
+  /* 글리터 유리잔 반짝임 애니메이션 (배경 패턴으로 살짝씩) */
+  @keyframes glitter-metal {
+    0% { 
+      filter: drop-shadow(0 3px 12px #b7d3f933) brightness(1.10) hue-rotate(0deg);
+      text-shadow:
+        0 1px 14px #7f859666,
+        0 3px 22px #dbeafe55,
+        0 2.5px 2.5px #292d2f78,
+        0 0 1px #f7fafaff,
+        0 0 38px #cdd6e9cc;
+    }
+    40% {
+      filter: drop-shadow(0 4px 20px #b2caf977) brightness(1.14) hue-rotate(-6deg);
+      text-shadow:
+        0 2px 18px #9ae6fadd,
+        0 3px 28px #dbeafe77,
+        0 2.5px 2.5px #292d2f78,
+        0 0 1px #f7fafaff,
+        0 0 38px #cdd6e9cc;
+    }
+    70% {
+      filter: drop-shadow(0 6px 18px #dce6fb99) brightness(1.18) hue-rotate(8deg);
+      text-shadow:
+        0 3.5px 28px #f1f5f978,
+        0 0 48px #bbeefd66,
+        0 1.5px 2px #111d1f88,
+        0 0 2px #fbfaffcc,
+        0 0 50px #fdf6fb77;
+    }
+    100% {
+      filter: drop-shadow(0 2px 13px #a8bde7cc) brightness(1.12) hue-rotate(-3deg);
+      text-shadow:
+        0 1px 14px #7f859666,
+        0 3px 22px #dbeafe55,
+        0 2px 2px #222f,
+        0 0 0.5px #fff,
+        0 0 24px #e5e9efcc;
+    }
+  }
+  .text-glow {
+    color: #222; /* 훨씬 더 어두운 다크그레이 */
+    font-family: 'Noto Sans KR', 'Russo One', 'Orbitron', 'Saira Extra Condensed', sans-serif;
+    letter-spacing: 0.06em;
+    font-weight: 900;
+    position: relative;
+    /* 입체 유리효과: 두꺼운 화이트&실버 글로우 + 유동적 반짝임 */
+    text-shadow:
+      0 0 2px #fff,
+      0 0 8px #bfc9df,
+      0 0 16px #c7d7f0cc,
+      0 4px 18px #deedff99,
+      0 3px 20px #c4dbf766,
+      0 0 34px #c7d7f0,
+      0 0 44px #93bdff77;
+    /* Glass highlight (애니메이션) */
+    background: linear-gradient(120deg,rgba(255,255,255,0.50) 10%,rgba(220,230,250,0.09) 40%,rgba(88,140,190,0.05) 60%,rgba(255,255,255,0.20) 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #222; /* 시인성 위한 내부 텍스트도 어둡게 */
+    text-fill-color: #222;
+    z-index: 1;
+    cursor: default;
+    /* 유리같은 반짝임 애니메이션 */
+    animation: glass-glow 3s linear infinite alternate, gradient-text 8s ease-in-out infinite;
+    background-size: 300% 300%;
+  }
+
+  @keyframes glass-glow {
+    0% {
+      filter: drop-shadow(0 0 12px #fff) drop-shadow(0 0 20px #deedff) brightness(1.10);
+      background-position: 35% 50%;
+    }
+    50% {
+      filter: drop-shadow(0 0 20px #d4e5fa) drop-shadow(0 0 28px #84b8ff77) brightness(1.19);
+      background-position: 60% 55%;
+    }
+    80% {
+      filter: drop-shadow(0 0 16px #f8fbff) drop-shadow(0 0 38px #aac7e7bb) brightness(1.22);
+      background-position: 80% 65%;
+    }
+    100% {
+      filter: drop-shadow(0 0 10px #e3e9fa) drop-shadow(0 0 22px #b0d1f6aa) brightness(1.13);
+      background-position: 45% 55%;
+    }
+  }
+  
+  @keyframes gradient-text {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  @keyframes gradient-slow {
+    0%, 100% {
+      background-size: 200% 200%;
+      background-position: 0% 50%;
+    }
+    50% {
+      background-size: 200% 200%;
+      background-position: 100% 50%;
+    }
+  }
+
+  .animate-gradient-slow {
+    animation: gradient-slow 15s ease infinite;
+  }
+}
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+  
+  @keyframes gradient-slow {
+    0%, 100% {
+      background-size: 200% 200%;
+      background-position: 0% 50%;
+    }
+    50% {
+      background-size: 200% 200%;
+      background-position: 100% 50%;
+    }
+  }
+
+  .animate-gradient-slow {
+    animation: gradient-slow 15s ease infinite;
+  }
+}
+
+@layer keyframes {
+  @keyframes fade-in-up {
+    0% { 
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% { 
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

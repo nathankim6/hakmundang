@@ -1,0 +1,10 @@
+project_id = "mpzvtfoeofifsclhortd"
+
+[functions.extract-vocabulary]
+verify_jwt = false
+
+[functions.extract-exam-questions]
+verify_jwt = false
+
+[functions.manage-exam-questions]
+verify_jwt = false

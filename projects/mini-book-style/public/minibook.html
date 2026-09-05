@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>옳은영어 · 단어의 앞·뒤를 알면 품사가 보인다</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>@page{size:A4;margin:0}
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#1A1F2C; --ink2:#3A4250; --muted:#7A8493; --faint:#B7BFCB;
+  --paper:#FFFFFF; --paper2:#FAFAFA; --cream:#F5F5F0; --line:#E5E5E0;
+  --rule:#D0D0C8;
+
+  --accent:#B8410E;        /* burnt vermilion */
+  --accent2:#7A2B08;
+  --gold:#9B7A2A;
+  --navy:#0F2A44;
+  --latin:#0F2A44;
+  --greek:#7A2B08;
+  --ok:#2F5D3A;
+}
+html{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+body{
+  font-family:'Noto Sans KR','Noto Sans',system-ui,sans-serif;
+  color:var(--ink); background:#EAEAEA; line-height:1.55;
+  font-feature-settings:"kern" 1,"liga" 1,"calt" 1;
+  font-weight:400;
+  counter-reset: pg;
+}
+
+.en,.serif{ font-family:'Noto Sans KR','Noto Sans',sans-serif; letter-spacing:-0.01em; }
+
+/* ───── page : pocket-book leaf ───── */
+.page{
+  position:relative; width:210mm; height:297mm;
+  margin:24px auto; background:var(--paper);
+  background-image:
+    radial-gradient(circle at 20% 8%, rgba(184,65,14,0.025), transparent 40%),
+    radial-gradient(circle at 80% 92%, rgba(15,42,68,0.03), transparent 45%);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,.35) inset,
+    0 0 0 1px #c0c0c0,
+    0 24px 50px rgba(0,0,0,.45);
+  border-radius:2px;
+  padding:17mm 13mm 12mm 17mm;
+  overflow:hidden;
+}
+.page.cover{
+  padding:0 !important;
+}
+.page.cover::before{
+  display:none !important;
+}
+.page + .page{ margin-top:24px; }
+.page::before{ /* gutter binding line */
+  content:""; position:absolute; left:8mm; top:0; bottom:0; width:1px;
+  background:linear-gradient(180deg,transparent,var(--rule) 12%,var(--rule) 88%,transparent);
+}
+@media print{
+  @page{ size:A4; margin:0; }
+  html, body{ background:#fff !important; margin:0 !important; padding:0 !important; }
+  body > *:not(.page):not(script){ display:none !important; }
+  .page{
+    margin:0 !important;
+    padding:17mm 13mm 12mm 17mm !important;
+    box-shadow:none !important;
+    border-radius:0 !important;
+    width:210mm !important;
+    height:297mm !important;
+    min-height:297mm !important;
+    max-height:297mm !important;
+    overflow:hidden !important;
+    background-color:var(--paper) !important;
+    background-image: radial-gradient(circle at 20% 8%, rgba(184,65,14,0.025), transparent 40%), radial-gradient(circle at 80% 92%, rgba(15,42,68,0.03), transparent 45%) !important;
+    page-break-after:always;
+    break-after:page;
+    page-break-inside:avoid;
+    break-inside:avoid;
+  }
+  .page.cover{
+    padding:0 !important;
+    background-image:none !important;
+  }
+  .page.cover::before{
+    display:none !important;
+  }
+  .page:last-of-type{ page-break-after:auto !important; break-after:auto !important; }
+  .page::before{ display:none !important; }
+  .pdf-btn{ display:none !important; }
+}
+
+.pdf-btn{
+  position:fixed; top:16px; right:16px; z-index:9999;
+  background:#111; color:#fff; border:none; border-radius:999px;
+  padding:12px 20px; font-size:14px; font-weight:700; cursor:pointer;
+  box-shadow:0 6px 20px rgba(0,0,0,.25); letter-spacing:.04em;
+  font-family:inherit;
+}
+.pdf-btn:hover{ background:#000; transform:translateY(-1px); }
+
+
+/* ───── header band : ribbon ───── */
+.hb{
+  position:absolute; top:7mm; left:17mm; right:13mm; height:auto;
+  background:transparent;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:0 0 4px 0; border-bottom:1px solid var(--rule);
+}
+.hb .l{ font-weight:700; letter-spacing:.32em; font-size:9px; color:var(--ink); text-transform:uppercase; display:inline-flex; align-items:center; gap:8px; }
+.hb .l::before{
+  content:""; width:14px; height:14px; display:inline-block;
+  background:
+    linear-gradient(var(--accent),var(--accent)) left/3px 100% no-repeat,
+    linear-gradient(var(--ink),var(--ink)) right/9px 100% no-repeat;
+  border:1px solid var(--ink); box-sizing:border-box;
+}
+.hb .l b{ color:var(--accent); font-weight:800; }
+.hb .r{ font-size:9px; color:var(--muted); letter-spacing:.18em; text-transform:uppercase; font-weight:500; display:inline-flex; align-items:center; gap:8px; }
+.hb .r::after{
+  content:""; width:8px; height:8px; display:inline-block;
+  background:var(--accent); transform:rotate(45deg);
+}
+
+
+.pn{ display:none; }
+/* auto page numbers via CSS counter */
+.page:not(.cover){ counter-increment: pg; }
+.page:not(.cover) .ft{
+  position:absolute; bottom:5mm; left:17mm; right:13mm;
+  display:flex; align-items:center; justify-content:space-between;
+  font-size:8px; color:var(--muted); letter-spacing:.28em; text-transform:uppercase; font-weight:500;
+}
+.page:not(.cover) .ft::before{
+  content:""; flex:0 0 14px; height:1px; background:var(--accent); margin-right:10px;
+}
+.page:not(.cover) .ft::after{
+  content: counter(pg, decimal-leading-zero);
+  font-family:'Noto Sans KR',sans-serif;
+  font-weight:800; font-size:11px; letter-spacing:.05em;
+  color:var(--ink); background:var(--paper2);
+  border:1px solid var(--rule); border-top:2px solid var(--accent);
+  padding:3px 8px 2px; min-width:30px; text-align:center;
+}
+.ft{
+  position:absolute; bottom:7mm; left:18mm;
+  font-size:8px; color:var(--muted); letter-spacing:.28em; text-transform:uppercase; font-weight:500;
+}
+
+/* ───── decorative ornament for sparse pages ───── */
+.ornament{
+  position:absolute; left:0; right:0;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:10px; pointer-events:none; user-select:none;
+  color:var(--accent); opacity:.55;
+}
+.ornament .o-rule{
+  display:flex; align-items:center; gap:10px;
+  color:var(--rule);
+}
+.ornament .o-rule::before,
+.ornament .o-rule::after{
+  content:""; display:block; width:54px; height:1px; background:currentColor;
+}
+.ornament .o-diamond{
+  width:6px; height:6px; background:var(--accent); transform:rotate(45deg);
+  box-shadow: -14px 0 0 var(--rule), 14px 0 0 var(--rule);
+}
+.ornament .o-mark{
+  font-family:'Noto Sans KR','Noto Sans',sans-serif;
+  font-size:16px; font-weight:600; letter-spacing:.28em;
+  color:var(--muted); text-transform:uppercase;
+}
+.ornament .o-sub{
+  font-size:8px; letter-spacing:.42em; text-transform:uppercase;
+  color:var(--muted); font-weight:600;
+}
+.ornament svg{ display:block; }
+.ornament .o-glyph path,
+.ornament .o-glyph line,
+.ornament .o-glyph circle{ stroke:var(--accent); fill:none; stroke-width:1.1; }
+.ornament .o-glyph .fillmk{ fill:var(--accent); stroke:none; }
+
+/* cover ornament */
+.cover .cv-right{ position:relative; }
+.cv-ornament{
+  display:flex; align-items:center; justify-content:center; gap:14px;
+  margin: 14px 0 4px; color:var(--rule);
+}
+.cv-ornament::before, .cv-ornament::after{
+  content:""; flex:1; height:1px; background:currentColor; max-width:120px;
+}
+.cv-ornament .cv-o-mk{
+  width:10px; height:10px; background:var(--accent); transform:rotate(45deg);
+  box-shadow: -18px 0 0 var(--rule), 18px 0 0 var(--rule);
+}
+
+
+/* allow content space below ribbon */
+.page > .eyebrow:first-of-type,
+.page > .hb + .eyebrow{ margin-top:8mm; }
+
+/* ───── section heading ───── */
+.eyebrow{
+  font-weight:700; letter-spacing:.42em; text-transform:uppercase;
+  font-size:9.5px; color:var(--accent);
+  display:inline-flex; align-items:center; gap:10px;
+}
+.eyebrow::before{ content:""; width:22px; height:1px; background:var(--accent); display:inline-block; }
+.h2{
+  font-weight:800; font-size:24px; color:var(--ink);
+  margin-top:4px; letter-spacing:-0.02em; line-height:1.08;
+  display:flex; align-items:flex-end; gap:12px;
+}
+.h2::before{
+  content:""; flex:0 0 5px; width:5px; height:25px;
+  background:linear-gradient(180deg,var(--accent) 0%,var(--accent) 50%,var(--ink) 50%,var(--ink) 100%);
+  margin-bottom:3px;
+}
+.h2 .en{ display:block; font-size:11px; font-weight:500; color:var(--muted); letter-spacing:.08em; margin-top:4px; text-transform:uppercase; }
+
+.rule{
+  height:0; border:0; margin:6px 0 8px;
+  border-top:1px solid var(--ink);
+  position:relative;
+}
+.rule::after{
+  content:""; position:absolute; left:0; top:3px; width:40px; height:2px; background:var(--accent);
+}
+.lede{
+  font-size:12.5px; color:var(--ink2); line-height:1.85; font-weight:400;
+  max-width:165mm;
+}
+.lede b{ color:var(--ink); font-weight:700; background:linear-gradient(transparent 60%, rgba(184,65,14,.18) 60%); }
+
+/* ───── root grid : entry cards ───── */
+.rgrid{ display:grid; grid-template-columns:1fr 1fr; gap:9px 12px; }
+.rcard{
+  position:relative; border:none; border-radius:0;
+  padding:10px 12px 10px 14px; background:var(--paper2);
+  border-left:3px solid var(--latin);
+  box-shadow:0 1px 0 var(--line), 1px 1px 0 var(--line);
+  break-inside:avoid; page-break-inside:avoid;
+}
+.rcard.g{ border-left-color:var(--greek); }
+.rtop{ display:flex; align-items:baseline; justify-content:space-between; gap:6px; }
+.rform{
+  font-weight:800; font-size:18px; color:var(--ink);
+  letter-spacing:-0.02em; font-feature-settings:"ss01" 1;
+}
+.rcard.g .rform{ color:var(--greek); }
+.rcard .rform::before{
+  content:"§"; color:var(--accent); font-weight:600; margin-right:5px; font-size:14px; opacity:.7;
+}
+.rmean{ font-size:12px; color:var(--ink2); font-weight:600; margin-top:2px; line-height:1.45; }
+.rmean .e{ color:var(--muted); font-size:10px; font-weight:400; font-style:italic; margin-left:4px; }
+.lgbadge{
+  font-weight:800; font-size:9px; color:var(--paper);
+  background:var(--latin); padding:2px 7px; border-radius:0;
+  letter-spacing:.16em;
+}
+.rcard.g .lgbadge{ background:var(--greek); }
+.rwords{
+  margin-top:7px; padding-top:6px;
+  border-top:1px dotted var(--rule);
+  display:grid; grid-template-columns:1fr; gap:5px 0;
+}
+.w{ font-size:11px; line-height:1.5; display:block; }
+.w .we{ font-weight:700; color:var(--ink); }
+.w .wk{ color:var(--muted); font-size:11px; font-weight:500; margin-left:4px; }
+.w .st{ color:var(--accent); font-size:10px; vertical-align:1px; margin-right:1px; }
+.w .wb{
+  display:block; margin-top:1px; padding-left:9px;
+  font-size:9.2px; line-height:1.5; color:var(--ink2);
+  font-weight:400; letter-spacing:-0.005em;
+  border-left:1.5px solid var(--rule);
+  font-feature-settings:"tnum" 1;
+}
+.w .wb .wbp{ color:var(--accent); font-weight:700; }
+.w .wb .wbm{ color:var(--muted); }
+.w .wb .wba{ color:var(--accent2); font-weight:700; margin:0 2px; }
+
+
+/* ───── intro / how-to ───── */
+.cards3{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; margin-top:18px; }
+.icard{
+  position:relative;
+  border:1px solid var(--line); border-radius:0;
+  padding:16px 16px 14px; background:var(--paper2);
+}
+.icard::before{
+  content:""; position:absolute; top:-1px; left:-1px; right:-1px; height:3px;
+  background:var(--accent);
+}
+.icard .n{
+  font-weight:800; color:var(--accent); font-size:10px;
+  letter-spacing:.3em;
+  display:inline-flex; align-items:center; gap:6px;
+}
+.icard .n::before{
+  content:"▸"; color:var(--accent); font-size:11px; line-height:1;
+}
+.icard h4{ font-weight:800; color:var(--ink); font-size:15px; margin:6px 0 6px; letter-spacing:-0.01em; }
+.icard p{ font-size:11.5px; color:var(--ink2); line-height:1.7; }
+.icard p b{ color:var(--accent2); font-weight:700; }
+
+.box{
+  margin-top:18px; background:var(--cream);
+  border:none; border-left:4px solid var(--accent);
+  border-radius:0; padding:14px 18px 14px 46px;
+  position:relative;
+}
+.box::before{
+  content:"!"; position:absolute; left:14px; top:14px;
+  width:22px; height:22px; line-height:20px; text-align:center;
+  background:var(--accent); color:var(--paper);
+  font-weight:900; font-size:14px;
+  border-radius:50%;
+}
+.box h4{
+  font-weight:800; color:var(--ink); font-size:13px; margin-bottom:6px;
+  letter-spacing:.02em;
+}
+
+.box p{ font-size:11.5px; color:var(--ink2); line-height:1.75; }
+.box b{ color:var(--accent2); font-weight:700; }
+
+.decode{
+  margin-top:18px; display:flex; align-items:center; gap:10px; flex-wrap:wrap; justify-content:center;
+  background:var(--paper2); border:1px dashed var(--rule); border-radius:0; padding:18px;
+}
+.chip{
+  text-align:center; padding:8px 14px; border-radius:0;
+  background:var(--ink); color:var(--paper);
+  min-width:78px;
+}
+.chip .ce{ font-weight:800; font-size:15px; letter-spacing:-0.01em; }
+.chip .ck{ font-size:9.5px; color:var(--cream); letter-spacing:.12em; text-transform:uppercase; margin-top:2px; }
+.chip.gold{ background:var(--cream); }
+.chip.gold .ce{ color:var(--ink); }
+.chip.gold .ck{ color:var(--accent); }
+.plus{ font-weight:300; color:var(--accent); font-size:24px; line-height:1; }
+.eqr{
+  text-align:center; padding:10px 18px; border-radius:0;
+  background:var(--accent); color:var(--paper);
+  min-width:120px;
+}
+.eqr .ee{ font-weight:800; font-size:18px; letter-spacing:-0.015em; }
+.eqr .ek{ font-size:10px; color:var(--cream); letter-spacing:.08em; margin-top:2px; }
+
+/* ───── prefix / suffix ───── */
+.pgrid{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:5px 8px; }
+.catlabel{
+  grid-column:1/-1; font-weight:800; color:var(--ink); font-size:12px;
+  margin-top:5px; padding:0 0 3px 0; border-bottom:1px solid var(--ink);
+  display:flex; align-items:center; gap:8px;
+  letter-spacing:.02em;
+}
+.catlabel:before{ content:""; width:0; height:0; border-left:6px solid var(--accent); border-top:4px solid transparent; border-bottom:4px solid transparent; }
+.pfx{
+  border:none; border-radius:0; padding:5px 8px 5px 10px; background:var(--paper2);
+  border-left:2px solid var(--gold);
+}
+.pfx .pt{ display:flex; align-items:baseline; gap:6px; }
+.pfx .pf{ font-weight:800; font-size:13px; color:var(--ink); letter-spacing:-0.01em; }
+.pfx .pm{ font-size:9.5px; color:var(--accent); font-weight:700; letter-spacing:.04em; }
+.pfx .pw{ margin-top:2px; font-size:9px; color:var(--muted); line-height:1.3; }
+.pfx .pw b{ color:var(--ink); font-weight:700; font-size:9.5px; }
+.pwlist,.swlist{ display:grid; grid-template-columns:1fr; gap:2px 0; }
+.pwi,.swi{ display:block; padding:1px 0; }
+.pwi .ki,.swi .ki{ color:var(--muted); font-size:9px; margin-left:3px; }
+.pwi .wb,.swi .wb{
+  display:block; margin-top:1px; padding-left:6px;
+  font-size:7px; line-height:1.25; color:var(--ink2);
+  font-weight:400; border-left:1.5px solid var(--rule);
+}
+
+
+.sufblock{ margin-bottom:6px; }
+.sufhead{ display:inline-flex; align-items:center; gap:8px; margin-bottom:5px; }
+.posbadge{
+  font-weight:800; font-size:10px; color:var(--paper);
+  padding:2px 10px; border-radius:0; letter-spacing:.06em;
+}
+.sufrow{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:5px 8px; }
+.suf{
+  border:none; border-left:3px solid; border-radius:0;
+  padding:5px 7px; background:var(--paper2);
+  box-shadow:0 1px 0 var(--line);
+}
+.suf .sf{ font-weight:800; font-size:12.5px; letter-spacing:-0.01em; }
+.suf .sm{ font-size:9px; color:var(--muted); margin-left:4px; font-weight:500; }
+.suf .sw{ margin-top:2px; font-size:9px; color:var(--muted); line-height:1.3; }
+.suf .sw b{ color:var(--ink); font-weight:700; font-size:9.5px; }
+
+
+/* ───── demo table ───── */
+.demo{
+  margin-top:8px; border:none; border-radius:0;
+  border-top:2px solid var(--ink); border-bottom:2px solid var(--ink);
+  overflow:hidden; background:var(--paper2);
+}
+.demo table{ width:100%; border-collapse:collapse; }
+.demo th{
+  background:transparent; color:var(--ink);
+  font-weight:800; font-size:11.5px; padding:9px 6px;
+  border-bottom:1px solid var(--ink); letter-spacing:.02em;
+}
+.demo th .en{ display:block; font-size:8.5px; color:var(--accent); font-weight:600; letter-spacing:.18em; text-transform:uppercase; margin-top:2px; }
+.demo td{ border-top:1px solid var(--line); padding:8px 6px; text-align:center; font-size:12px; }
+.demo td .de{ font-weight:700; letter-spacing:-0.01em; }
+.demo td .dk{ font-size:9.5px; color:var(--muted); display:block; margin-top:1px; font-weight:500; }
+.demo tr:nth-child(even) td{ background:rgba(231,222,196,.25); }
+.demo td.c0{ color:var(--ink); } .demo td.c1{ color:var(--accent); }
+.demo td.c2{ color:var(--ok); } .demo td.c3{ color:#5A3E7A; }
+
+/* ───── quiz ───── */
+.qcard{
+  border:none; border-radius:0; padding:13px 16px 13px 18px;
+  margin-bottom:10px; background:var(--paper2);
+  border-left:3px solid var(--ink);
+  box-shadow:0 1px 0 var(--line);
+}
+.qn{
+  font-weight:800; color:var(--paper); background:var(--accent);
+  width:26px; height:26px; line-height:26px;
+  text-align:center; border-radius:0; display:inline-block;
+  margin-right:10px; font-size:12px;
+}
+.qt{ font-weight:800; color:var(--ink); font-size:15px; letter-spacing:-0.01em; }
+.qbody{ margin-top:9px; font-size:11.5px; line-height:1.75; color:var(--ink2); }
+.blank{
+  display:inline-block; min-width:84px;
+  border-bottom:1.5px solid var(--accent); text-align:center;
+  font-weight:700; color:var(--accent2); padding:0 4px;
+}
+.ans{
+  margin-top:6px; background:transparent; color:var(--ink2);
+  border-radius:0; padding:6px 0 2px;
+  border-top:1px solid var(--rule);
+}
+.ans h4{ color:var(--accent); font-size:8px; margin-bottom:3px; letter-spacing:.28em; text-transform:uppercase; font-weight:800; }
+.ans p{ font-size:9px; color:var(--muted); line-height:1.4; }
+
+/* ───── cover : split-screen professional textbook ───── */
+.cover{
+  padding:0; background:#fff; color:#1a202c;
+  font-family:'Noto Sans KR','Noto Sans',sans-serif;
+  overflow:hidden;
+}
+.cover *, .cover *::before, .cover *::after{ box-sizing:border-box; }
+.cover::before,.cover::after{ display:none; }
+.cover-in{
+  position:relative; width:100%; height:297mm; min-height:297mm;
+  display:grid; grid-template-columns: 78mm 1fr;
+  margin:0; padding:0; border:none;
+}
+/* LEFT — deep slate panel */
+.cv-left{
+  background:linear-gradient(180deg,#2d3748 0%, #1f2937 100%);
+  color:#fff; padding:10mm 8mm 10mm;
+  display:flex; flex-direction:column; justify-content:space-between;
+  position:relative; min-width:0; overflow:hidden;
+}
+.cv-mark{ display:flex; align-items:center; gap:8px; min-width:0; }
+.cv-mark img{ height:30px; width:auto; background:#fff; padding:3px 5px; border-radius:3px; flex-shrink:0; }
+.cv-mark .wm{ font-weight:700; font-size:9px; letter-spacing:.22em; color:#cbd5e0; text-transform:uppercase; line-height:1.3; min-width:0; }
+.cv-mark .wm b{ color:#fff; font-weight:800; display:block; font-size:10px; letter-spacing:.26em; }
+
+.cv-vstack{ display:flex; flex-direction:column; gap:14px; }
+.cv-edition{
+  font-size:8.5px; font-weight:700; letter-spacing:.36em; color:#a0aec0; text-transform:uppercase;
+  padding-bottom:10px; border-bottom:1px solid rgba(160,174,192,.25);
+}
+.cv-vol{
+  font-weight:300; font-size:12px; color:#cbd5e0; letter-spacing:.02em; line-height:1.6;
+}
+.cv-vol b{ font-weight:700; color:#fff; }
+.cv-isbn{
+  font-family:'Noto Sans KR',monospace;
+  font-size:8px; color:#718096; letter-spacing:.16em;
+  padding-top:12px; border-top:1px solid rgba(160,174,192,.18);
+}
+.cv-isbn span{ display:block; margin-top:3px; color:#a0aec0; }
+
+/* RIGHT — paper panel */
+.cv-right{
+  background:#f7f8fa;
+  padding:14mm 12mm 12mm;
+  display:flex; flex-direction:column; gap:14px; position:relative;
+  background-image:
+    linear-gradient(180deg, #ffffff 0%, #f3f4f7 100%);
+  min-width:0; overflow:hidden;
+}
+.cv-cat{
+  font-size:9px; font-weight:800; letter-spacing:.38em; color:#2d3748; text-transform:uppercase;
+}
+.cv-cat::before{ content:"— "; color:#718096; }
+.cv-eng{
+  margin-top:20px; font-size:10px; font-weight:600; letter-spacing:.28em; color:#718096;
+  text-transform:uppercase;
+}
+.cv-title{
+  font-weight:900; font-size:34px; line-height:1.2; margin-top:12px;
+  letter-spacing:-0.04em; color:#1a202c; word-break:keep-all;
+}
+.cv-title .g{
+  display:block; color:#2d3748; font-weight:800;
+  padding-left:0; margin-top:8px;
+}
+
+.cv-sub{
+  font-size:11px; color:#4a5568; margin-top:16px; line-height:1.8;
+  max-width:100%; font-weight:400; word-break:keep-all;
+}
+.cv-sub b{ color:#1a202c; font-weight:700; border-bottom:1px solid #2d3748; padding-bottom:1px; }
+
+.cv-roots-pro{ margin-top:auto; padding-top:18px; }
+.cv-roots-pro-label{
+  font-size:8px; font-weight:800; letter-spacing:.28em; color:#718096; text-transform:uppercase;
+  margin-bottom:9px;
+}
+.cv-roots-pro-list{
+  display:flex; flex-wrap:wrap; gap:4px;
+}
+.cv-rt-pro{
+  font-size:9px; font-weight:600; color:#4a5568;
+  border:1px solid #cbd5e0; background:#fff;
+  padding:4px 7px; letter-spacing:-0.005em; white-space:nowrap;
+}
+.cv-rt-pro b{ color:#2d3748; font-weight:700; }
+
+.cv-foot-pro{
+  margin-top:18px; padding-top:12px; border-top:1px solid #e2e8f0;
+  display:flex; justify-content:space-between; align-items:center; gap:8px;
+  font-size:8px; color:#718096; letter-spacing:.14em; text-transform:uppercase; font-weight:600;
+  flex-wrap:wrap;
+}
+.cv-foot-pro b{ color:#2d3748; font-weight:800; letter-spacing:.18em; }
+
+</style>
+</head><body>
+<button class="pdf-btn" onclick="window.print()">📄 PDF로 저장</button>
+
+
+<section class="page cover">
+ <div class="cover-in">
+   <aside class="cv-left">
+     <div class="cv-mark">
+       <img src="/__l5e/assets-v1/5023a5c5-87af-4c42-8904-249cd6b0b3d3/orun-academy-logo.png" alt="ORUN ACADEMY">
+       <div class="wm"><b>ORUN ENGLISH</b>옳은영어</div>
+     </div>
+     <div class="cv-vstack">
+       <div class="cv-edition">2026 Edition</div>
+       <div class="cv-vol">고등 영어 어원·접사 학습서<br><b>Roots &amp; Affixes</b> Workbook</div>
+       <div class="cv-isbn">2026 Edition</div>
+     </div>
+   </aside>
+
+   <main class="cv-right">
+     <div class="cv-cat">Vocabulary by Roots</div>
+
+     <div>
+       <div class="cv-eng">Prefix · Root · Suffix</div>
+      <h1 class="cv-title"><span>단어의 앞·뒤를 알면</span><span class="g">품사가 보인다</span></h1>
+       <div class="cv-rule"></div>
+       <p class="cv-sub">단어를 외우지 말고 <b>분해</b>하라.<br>단어의 앞과 뒤를 보면 처음 보는 단어도 뜻을 <b>추론</b>할 수 있다.</p>
+     </div>
+
+     <div class="cv-roots-pro">
+       <div class="cv-roots-pro-label">Core Roots in this Volume</div>
+       <div class="cv-roots-pro-list">
+         <span class="cv-rt-pro">spec·spect·spic<b> · 보다</b></span>
+         <span class="cv-rt-pro">port<b> · 나르다</b></span>
+         <span class="cv-rt-pro">dic·dict<b> · 말하다</b></span>
+         <span class="cv-rt-pro">jac·ject<b> · 던지다</b></span>
+         <span class="cv-rt-pro">duc·duct<b> · 이끌다</b></span>
+         <span class="cv-rt-pro">bio<b> · 생명</b></span>
+         <span class="cv-rt-pro">geo<b> · 땅</b></span>
+         <span class="cv-rt-pro">graph·gram<b> · 쓰다·그림</b></span>
+         <span class="cv-rt-pro">log·logy<b> · 말·학문</b></span>
+       </div>
+     </div>
+
+
+      <div class="cv-ornament" aria-hidden="true"><span class="cv-o-mk"></span></div>
+
+      <div class="cv-foot-pro">
+        <span><b>옳은영어</b> · ORUN ENGLISH</span>
+        <span>Published by ORUN ACADEMY</span>
+      </div>
+   </main>
+ </div>
+</section>
+
+<section class="page"><div class="hb"><div class="l">ORUN <b>ENGLISH</b></div><div class="r">학습 안내 · HOW TO USE</div></div>
+  <div class="eyebrow">Introduction</div>
+  <div class="h2">왜 어근인가? <span class="en">The Power of Roots</span></div>
+  <div class="rule"></div>
+  <div class="lede">수능·내신 지문의 고난도 어휘 대부분은 <b>라틴어·그리스어 어근</b>과 <b>접두사·접미사</b>의
+  조합으로 의미를 추측할 수 있다. 어근의 뜻 하나만 알아도 수십 개의 파생어를 추론할 수 있고, 접미사를 보면 그 단어의 <b>품사</b>까지
+  바로 판별된다. 무작정 암기 대신 <b>분해해서 이해</b>하는 전략을 익히자.</div>
+
+  <div class="cards3">
+    <div class="icard"><div class="n">STEP 1</div><h4>어근 = 뜻</h4>
+      <p>단어의 핵심 의미를 담은 뿌리. <b>ven</b>=오다, <b>spect</b>=보다처럼 의미의 중심을 잡는다.</p></div>
+    <div class="icard"><div class="n">STEP 2</div><h4>접두사 = 방향</h4>
+      <p>어근 앞에 붙어 의미를 바꾼다. <b>inter-</b>(사이), <b>pre-</b>(미리), <b>sub-</b>(아래) 등.</p></div>
+    <div class="icard"><div class="n">STEP 3</div><h4>접미사 = 품사</h4>
+      <p>단어 끝에서 역할을 결정. <b>-tion</b>(명사), <b>-ive</b>(형용사), <b>-ly</b>(부사).</p></div>
+  </div>
+
+  <div class="decode">
+    <div class="chip"><div class="ce">inter-</div><div class="ck">사이</div></div>
+    <div class="plus">+</div>
+    <div class="chip"><div class="ce">ven</div><div class="ck">오다</div></div>
+    <div class="plus">=</div>
+    <div class="eqr"><div class="ee">intervene</div><div class="ek">개입하다</div></div></div>
+
+  <div class="box"><h4>★ 표시는 수능·내신 빈출 어휘</h4>
+  <p>각 어근 아래 예시 단어 중 <b>★</b>가 붙은 것은 기출 빈도가 높은 핵심 단어다. 별표 단어부터 확실히
+  익히고, 같은 어근의 파생어로 확장하라. 단어를 만나면 <b>접두사 + 어근 + 접미사</b>로 끊어 읽는 습관을 들이자.</p></div>
+  <div class="pn">02</div>
+  <div class="ft">ORUN ENGLISH · Roots & Affixes Workbook</div>
+</section>
+        <section class="page"><div class="hb"><div class="l">ORUN <b>ENGLISH</b></div><div class="r">Part 1 · 라틴어 어근</div></div>
+          
+        <div class="eyebrow">Part 1 (1/3)</div>
+        <div class="h2">라틴어 핵심 어근 <span class="en">Latin Roots</span></div>
+        <div class="rule"></div>
+          <div class="rgrid"><div class="rcard "><div class="rtop"><span class="rform">spec·spect·spic</span><span class="lgbadge">L</span></div><div class="rmean">보다 <span class="e">(look)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">respect</span> <span class="wk">존경하다</span><span class="wb"><span class="wbp">re</span><span class="wbm">(다시)</span>+<span class="wbp">spect</span><span class="wbm">(보다)</span><span class="wba">→</span>다시 보다<span class="wba">→</span>존경하다</span></span><span class="w"><span class="we">inspect</span> <span class="wk">점검하다</span><span class="wb"><span class="wbp">in</span><span class="wbm">(안을)</span>+<span class="wbp">spect</span><span class="wbm">(보다)</span><span class="wba">→</span>안을 들여다보다<span class="wba">→</span>점검하다</span></span><span class="w"><span class="st">★</span><span class="we">prospect</span> <span class="wk">전망</span><span class="wb"><span class="wbp">pro</span><span class="wbm">(앞을)</span>+<span class="wbp">spect</span><span class="wbm">(보다)</span><span class="wba">→</span>앞을 내다보다<span class="wba">→</span>전망</span></span><span class="w"><span class="st">★</span><span class="we">perspective</span> <span class="wk">관점</span><span class="wb"><span class="wbp">per</span><span class="wbm">(통해)</span>+<span class="wbp">spect</span><span class="wbm">(보다)</span>+<span class="wbp">ive</span><span class="wbm">(형)</span><span class="wba">→</span>통해 보는 시각<span class="wba">→</span>관점</span></span><span class="w"><span class="we">conspicuous</span> <span class="wk">눈에 띄는</span><span class="wb"><span class="wbp">con</span><span class="wbm">(함께)</span>+<span class="wbp">spic</span><span class="wbm">(보다)</span>+<span class="wbp">uous</span><span class="wbm">(형)</span><span class="wba">→</span>모두 보이는<span class="wba">→</span>눈에 띄는</span></span><span class="w"><span class="we">speculate</span> <span class="wk">추측하다</span><span class="wb"><span class="wbp">spec</span><span class="wbm">(보다)</span>+<span class="wbp">ulate</span><span class="wbm">(동)</span><span class="wba">→</span>살펴 생각하다<span class="wba">→</span>추측하다</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">port</span><span class="lgbadge">L</span></div><div class="rmean">나르다 <span class="e">(carry)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">export</span> <span class="wk">수출하다</span><span class="wb"><span class="wbp">ex</span><span class="wbm">(밖으로)</span>+<span class="wbp">port</span><span class="wbm">(나르다)</span><span class="wba">→</span>밖으로 나르다<span class="wba">→</span>수출하다</span></span><span class="w"><span class="st">★</span><span class="we">transport</span> <span class="wk">수송하다</span><span class="wb"><span class="wbp">trans</span><span class="wbm">(가로질러)</span>+<span class="wbp">port</span><span class="wbm">(나르다)</span><span class="wba">→</span>가로질러 나르다<span class="wba">→</span>수송하다</span></span><span class="w"><span class="we">portable</span> <span class="wk">휴대용의</span><span class="wb"><span class="wbp">port</span><span class="wbm">(나르다)</span>+<span class="wbp">able</span><span class="wbm">(할 수 있는)</span><span class="wba">→</span>나를 수 있는<span class="wba">→</span>휴대용의</span></span><span class="w"><span class="we">deport</span> <span class="wk">추방하다</span><span class="wb"><span class="wbp">de</span><span class="wbm">(멀리)</span>+<span class="wbp">port</span><span class="wbm">(나르다)</span><span class="wba">→</span>멀리 보내다<span class="wba">→</span>추방하다</span></span><span class="w"><span class="we">comportment</span> <span class="wk">처신</span><span class="wb"><span class="wbp">com</span><span class="wbm">(함께)</span>+<span class="wbp">port</span><span class="wbm">(나르다)</span>+<span class="wbp">ment</span><span class="wbm">(명)</span><span class="wba">→</span>자신을 함께 운반함<span class="wba">→</span>처신</span></span><span class="w"><span class="we">purport</span> <span class="wk">의미하다</span><span class="wb"><span class="wbp">pur</span><span class="wbm">(앞으로)</span>+<span class="wbp">port</span><span class="wbm">(나르다)</span><span class="wba">→</span>뜻을 앞으로 내보이다<span class="wba">→</span>의미하다</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">dic·dict</span><span class="lgbadge">L</span></div><div class="rmean">말하다 <span class="e">(say)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">predict</span> <span class="wk">예측하다</span><span class="wb"><span class="wbp">pre</span><span class="wbm">(미리)</span>+<span class="wbp">dict</span><span class="wbm">(말하다)</span><span class="wba">→</span>미리 말하다<span class="wba">→</span>예측하다</span></span><span class="w"><span class="st">★</span><span class="we">contradict</span> <span class="wk">반박하다</span><span class="wb"><span class="wbp">contra</span><span class="wbm">(반대로)</span>+<span class="wbp">dict</span><span class="wbm">(말하다)</span><span class="wba">→</span>반대로 말하다<span class="wba">→</span>반박하다</span></span><span class="w"><span class="we">dictate</span> <span class="wk">받아쓰게 하다</span><span class="wb"><span class="wbp">dict</span><span class="wbm">(말하다)</span>+<span class="wbp">ate</span><span class="wbm">(동)</span><span class="wba">→</span>말해 받아쓰게 하다<span class="wba">→</span>받아쓰게 하다</span></span><span class="w"><span class="we">dictator</span> <span class="wk">독재자</span><span class="wb"><span class="wbp">dict</span><span class="wbm">(말하다)</span>+<span class="wbp">ator</span><span class="wbm">(사람)</span><span class="wba">→</span>명령만 내리는 사람<span class="wba">→</span>독재자</span></span><span class="w"><span class="st">★</span><span class="we">verdict</span> <span class="wk">평결</span><span class="wb"><span class="wbp">ver</span><span class="wbm">(진실)</span>+<span class="wbp">dict</span><span class="wbm">(말하다)</span><span class="wba">→</span>진실을 말함<span class="wba">→</span>평결</span></span><span class="w"><span class="we">edict</span> <span class="wk">칙령</span><span class="wb"><span class="wbp">e</span><span class="wbm">(밖으로)</span>+<span class="wbp">dict</span><span class="wbm">(말하다)</span><span class="wba">→</span>밖으로 선포한 말<span class="wba">→</span>칙령</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">jac·ject</span><span class="lgbadge">L</span></div><div class="rmean">던지다 <span class="e">(throw)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">reject</span> <span class="wk">거부하다</span><span class="wb"><span class="wbp">re</span><span class="wbm">(뒤로)</span>+<span class="wbp">ject</span><span class="wbm">(던지다)</span><span class="wba">→</span>뒤로 던지다<span class="wba">→</span>거부하다</span></span><span class="w"><span class="we">inject</span> <span class="wk">주입하다</span><span class="wb"><span class="wbp">in</span><span class="wbm">(안으로)</span>+<span class="wbp">ject</span><span class="wbm">(던지다)</span><span class="wba">→</span>안으로 던져 넣다<span class="wba">→</span>주입하다</span></span><span class="w"><span class="st">★</span><span class="we">project</span> <span class="wk">계획하다</span><span class="wb"><span class="wbp">pro</span><span class="wbm">(앞으로)</span>+<span class="wbp">ject</span><span class="wbm">(던지다)</span><span class="wba">→</span>앞으로 던지다<span class="wba">→</span>계획하다</span></span><span class="w"><span class="st">★</span><span class="we">subject</span> <span class="wk">대상·지배하다</span><span class="wb"><span class="wbp">sub</span><span class="wbm">(아래)</span>+<span class="wbp">ject</span><span class="wbm">(던지다)</span><span class="wba">→</span>아래에 던져진<span class="wba">→</span>대상·지배하다</span></span><span class="w"><span class="we">conjecture</span> <span class="wk">추측</span><span class="wb"><span class="wbp">con</span><span class="wbm">(함께)</span>+<span class="wbp">ject</span><span class="wbm">(던지다)</span>+<span class="wbp">ure</span><span class="wbm">(명)</span><span class="wba">→</span>생각을 모아 던짐<span class="wba">→</span>추측</span></span><span class="w"><span class="we">eject</span> <span class="wk">내쫓다</span><span class="wb"><span class="wbp">e</span><span class="wbm">(밖으로)</span>+<span class="wbp">ject</span><span class="wbm">(던지다)</span><span class="wba">→</span>밖으로 던지다<span class="wba">→</span>내쫓다</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">duc·duct</span><span class="lgbadge">L</span></div><div class="rmean">이끌다 <span class="e">(lead)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">produce</span> <span class="wk">생산하다</span><span class="wb"><span class="wbp">pro</span><span class="wbm">(앞으로)</span>+<span class="wbp">duce</span><span class="wbm">(이끌다)</span><span class="wba">→</span>앞으로 끌어내다<span class="wba">→</span>생산하다</span></span><span class="w"><span class="st">★</span><span class="we">reduce</span> <span class="wk">줄이다</span><span class="wb"><span class="wbp">re</span><span class="wbm">(뒤로)</span>+<span class="wbp">duce</span><span class="wbm">(이끌다)</span><span class="wba">→</span>뒤로 끌어당기다<span class="wba">→</span>줄이다</span></span><span class="w"><span class="st">★</span><span class="we">induce</span> <span class="wk">유도하다</span><span class="wb"><span class="wbp">in</span><span class="wbm">(안으로)</span>+<span class="wbp">duce</span><span class="wbm">(이끌다)</span><span class="wba">→</span>안으로 이끌다<span class="wba">→</span>유도하다</span></span><span class="w"><span class="st">★</span><span class="we">deduce</span> <span class="wk">추론하다</span><span class="wb"><span class="wbp">de</span><span class="wbm">(아래로)</span>+<span class="wbp">duce</span><span class="wbm">(이끌다)</span><span class="wba">→</span>결론으로 이끌다<span class="wba">→</span>추론하다</span></span><span class="w"><span class="st">★</span><span class="we">conduct</span> <span class="wk">수행하다</span><span class="wb"><span class="wbp">con</span><span class="wbm">(함께)</span>+<span class="wbp">duct</span><span class="wbm">(이끌다)</span><span class="wba">→</span>함께 이끌다<span class="wba">→</span>수행하다</span></span><span class="w"><span class="we">seduce</span> <span class="wk">유혹하다</span><span class="wb"><span class="wbp">se</span><span class="wbm">(따로)</span>+<span class="wbp">duce</span><span class="wbm">(이끌다)</span><span class="wba">→</span>옆길로 이끌다<span class="wba">→</span>유혹하다</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">cap·cept·cip</span><span class="lgbadge">L</span></div><div class="rmean">잡다 <span class="e">(take)</span></div><div class="rwords"><span class="w"><span class="we">capture</span> <span class="wk">포획하다</span><span class="wb"><span class="wbp">cap</span><span class="wbm">(잡다)</span>+<span class="wbp">ture</span><span class="wbm">(명)</span><span class="wba">→</span>잡음<span class="wba">→</span>포획하다</span></span><span class="w"><span class="st">★</span><span class="we">accept</span> <span class="wk">받아들이다</span><span class="wb"><span class="wbp">ac</span><span class="wbm">(~로)</span>+<span class="wbp">cept</span><span class="wbm">(잡다)</span><span class="wba">→</span>자기 쪽으로 잡다<span class="wba">→</span>받아들이다</span></span><span class="w"><span class="st">★</span><span class="we">except</span> <span class="wk">제외하다</span><span class="wb"><span class="wbp">ex</span><span class="wbm">(밖으로)</span>+<span class="wbp">cept</span><span class="wbm">(잡다)</span><span class="wba">→</span>밖으로 빼내다<span class="wba">→</span>제외하다</span></span><span class="w"><span class="we">intercept</span> <span class="wk">가로채다</span><span class="wb"><span class="wbp">inter</span><span class="wbm">(사이에서)</span>+<span class="wbp">cept</span><span class="wbm">(잡다)</span><span class="wba">→</span>사이에서 잡다<span class="wba">→</span>가로채다</span></span><span class="w"><span class="we">recipient</span> <span class="wk">수령인</span><span class="wb"><span class="wbp">re</span><span class="wbm">(다시)</span>+<span class="wbp">cip</span><span class="wbm">(잡다)</span>+<span class="wbp">ent</span><span class="wbm">(사람)</span><span class="wba">→</span>받아 가지는 사람<span class="wba">→</span>수령인</span></span><span class="w"><span class="st">★</span><span class="we">susceptible</span> <span class="wk">영향받기 쉬운</span><span class="wb"><span class="wbp">sus</span><span class="wbm">(아래에서)</span>+<span class="wbp">cept</span><span class="wbm">(잡다)</span>+<span class="wbp">ible</span><span class="wbm">(쉬운)</span><span class="wba">→</span>아래로 받기 쉬운<span class="wba">→</span>영향받기 쉬운</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">tract</span><span class="lgbadge">L</span></div><div class="rmean">끌다 <span class="e">(pull)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">attract</span> <span class="wk">끌다</span><span class="wb"><span class="wbp">at</span><span class="wbm">(~쪽으로)</span>+<span class="wbp">tract</span><span class="wbm">(끌다)</span><span class="wba">→</span>자기 쪽으로 끌다<span class="wba">→</span>끌다</span></span><span class="w"><span class="st">★</span><span class="we">extract</span> <span class="wk">추출하다</span><span class="wb"><span class="wbp">ex</span><span class="wbm">(밖으로)</span>+<span class="wbp">tract</span><span class="wbm">(끌다)</span><span class="wba">→</span>밖으로 끌어내다<span class="wba">→</span>추출하다</span></span><span class="w"><span class="st">★</span><span class="we">distract</span> <span class="wk">산만하게 하다</span><span class="wb"><span class="wbp">dis</span><span class="wbm">(따로)</span>+<span class="wbp">tract</span><span class="wbm">(끌다)</span><span class="wba">→</span>주의를 따로 끌다<span class="wba">→</span>산만하게 하다</span></span><span class="w"><span class="st">★</span><span class="we">contract</span> <span class="wk">계약·수축하다</span><span class="wb"><span class="wbp">con</span><span class="wbm">(함께)</span>+<span class="wbp">tract</span><span class="wbm">(끌다)</span><span class="wba">→</span>함께 끌어모으다<span class="wba">→</span>계약·수축하다</span></span><span class="w"><span class="we">subtract</span> <span class="wk">빼다</span><span class="wb"><span class="wbp">sub</span><span class="wbm">(아래로)</span>+<span class="wbp">tract</span><span class="wbm">(끌다)</span><span class="wba">→</span>아래로 빼내다<span class="wba">→</span>빼다</span></span><span class="w"><span class="st">★</span><span class="we">abstract</span> <span class="wk">추상적인</span><span class="wb"><span class="wbp">abs</span><span class="wbm">(떨어져)</span>+<span class="wbp">tract</span><span class="wbm">(끌다)</span>→ 떼어내어 본질만<span class="wba">→</span>추상적인</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">ced·cess</span><span class="lgbadge">L</span></div><div class="rmean">가다·양보 <span class="e">(go/yield)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">proceed</span> <span class="wk">진행하다</span><span class="wb"><span class="wbp">pro</span><span class="wbm">(앞으로)</span>+<span class="wbp">ceed</span><span class="wbm">(가다)</span><span class="wba">→</span>앞으로 나아가다<span class="wba">→</span>진행하다</span></span><span class="w"><span class="st">★</span><span class="we">precede</span> <span class="wk">앞서다</span><span class="wb"><span class="wbp">pre</span><span class="wbm">(미리)</span>+<span class="wbp">cede</span><span class="wbm">(가다)</span><span class="wba">→</span>앞서 가다<span class="wba">→</span>앞서다</span></span><span class="w"><span class="we">recede</span> <span class="wk">물러나다</span><span class="wb"><span class="wbp">re</span><span class="wbm">(뒤로)</span>+<span class="wbp">cede</span><span class="wbm">(가다)</span><span class="wba">→</span>뒤로 가다<span class="wba">→</span>물러나다</span></span><span class="w"><span class="st">★</span><span class="we">concede</span> <span class="wk">인정하다</span><span class="wb"><span class="wbp">con</span><span class="wbm">(함께)</span>+<span class="wbp">cede</span><span class="wbm">(양보)</span><span class="wba">→</span>함께 양보하다<span class="wba">→</span>인정하다</span></span><span class="w"><span class="st">★</span><span class="we">exceed</span> <span class="wk">초과하다</span><span class="wb"><span class="wbp">ex</span><span class="wbm">(밖으로)</span>+<span class="wbp">ceed</span><span class="wbm">(가다)</span><span class="wba">→</span>한도 밖으로 가다<span class="wba">→</span>초과하다</span></span><span class="w"><span class="st">★</span><span class="we">predecessor</span> <span class="wk">전임자</span><span class="wb"><span class="wbp">pre</span><span class="wbm">(먼저)</span>+<span class="wbp">de</span><span class="wbm">(떨어져)</span>+<span class="wbp">cess</span><span class="wbm">(가다)</span>+<span class="wbp">or</span><span class="wbm">(사람)</span><span class="wba">→</span>먼저 떠난 사람<span class="wba">→</span>전임자</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">fer</span><span class="lgbadge">L</span></div><div class="rmean">나르다·견디다 <span class="e">(bear)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">transfer</span> <span class="wk">옮기다</span><span class="wb"><span class="wbp">trans</span><span class="wbm">(가로질러)</span>+<span class="wbp">fer</span><span class="wbm">(나르다)</span><span class="wba">→</span>가로질러 옮기다<span class="wba">→</span>옮기다</span></span><span class="w"><span class="st">★</span><span class="we">refer</span> <span class="wk">언급하다</span><span class="wb"><span class="wbp">re</span><span class="wbm">(다시)</span>+<span class="wbp">fer</span><span class="wbm">(나르다)</span><span class="wba">→</span>다시 거론하다<span class="wba">→</span>언급하다</span></span><span class="w"><span class="st">★</span><span class="we">prefer</span> <span class="wk">선호하다</span><span class="wb"><span class="wbp">pre</span><span class="wbm">(앞에)</span>+<span class="wbp">fer</span><span class="wbm">(나르다)</span><span class="wba">→</span>앞에 놓다<span class="wba">→</span>선호하다</span></span><span class="w"><span class="st">★</span><span class="we">infer</span> <span class="wk">추론하다</span><span class="wb"><span class="wbp">in</span><span class="wbm">(안으로)</span>+<span class="wbp">fer</span><span class="wbm">(나르다)</span><span class="wba">→</span>안으로 끌어 들이다<span class="wba">→</span>추론하다</span></span><span class="w"><span class="we">confer</span> <span class="wk">수여하다</span><span class="wb"><span class="wbp">con</span><span class="wbm">(함께)</span>+<span class="wbp">fer</span><span class="wbm">(나르다)</span><span class="wba">→</span>함께 가져다 주다<span class="wba">→</span>수여하다</span></span><span class="w"><span class="st">★</span><span class="we">fertile</span> <span class="wk">비옥한</span><span class="wb"><span class="wbp">fer</span><span class="wbm">(낳다)</span>+<span class="wbp">tile</span><span class="wbm">(형)</span><span class="wba">→</span>잘 낳는<span class="wba">→</span>비옥한</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">mit·miss</span><span class="lgbadge">L</span></div><div class="rmean">보내다 <span class="e">(send)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">admit</span> <span class="wk">인정하다</span><span class="wb"><span class="wbp">ad</span><span class="wbm">(~로)</span>+<span class="wbp">mit</span><span class="wbm">(보내다)</span><span class="wba">→</span>안으로 들여보내다<span class="wba">→</span>인정하다</span></span><span class="w"><span class="st">★</span><span class="we">submit</span> <span class="wk">제출하다</span><span class="wb"><span class="wbp">sub</span><span class="wbm">(아래로)</span>+<span class="wbp">mit</span><span class="wbm">(보내다)</span><span class="wba">→</span>아래로 보내다<span class="wba">→</span>제출하다</span></span><span class="w"><span class="st">★</span><span class="we">transmit</span> <span class="wk">전송하다</span><span class="wb"><span class="wbp">trans</span><span class="wbm">(가로질러)</span>+<span class="wbp">mit</span><span class="wbm">(보내다)</span><span class="wba">→</span>가로질러 보내다<span class="wba">→</span>전송하다</span></span><span class="w"><span class="st">★</span><span class="we">omit</span> <span class="wk">생략하다</span><span class="wb"><span class="wbp">o</span><span class="wbm">(없애)</span>+<span class="wbp">mit</span><span class="wbm">(보내다)</span><span class="wba">→</span>없는 쪽으로 보내다<span class="wba">→</span>생략하다</span></span><span class="w"><span class="st">★</span><span class="we">dismiss</span> <span class="wk">해고하다</span><span class="wb"><span class="wbp">dis</span><span class="wbm">(떨어져)</span>+<span class="wbp">miss</span><span class="wbm">(보내다)</span><span class="wba">→</span>떨어뜨려 보내다<span class="wba">→</span>해고하다</span></span><span class="w"><span class="st">★</span><span class="we">mission</span> <span class="wk">임무</span><span class="wb"><span class="wbp">miss</span><span class="wbm">(보내다)</span>+<span class="wbp">ion</span><span class="wbm">(명)</span><span class="wba">→</span>보내짐<span class="wba">→</span>임무</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">scrib·script</span><span class="lgbadge">L</span></div><div class="rmean">쓰다 <span class="e">(write)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">describe</span> <span class="wk">묘사하다</span><span class="wb"><span class="wbp">de</span><span class="wbm">(아래로)</span>+<span class="wbp">scribe</span><span class="wbm">(쓰다)</span><span class="wba">→</span>아래에 풀어 쓰다<span class="wba">→</span>묘사하다</span></span><span class="w"><span class="st">★</span><span class="we">prescribe</span> <span class="wk">처방하다</span><span class="wb"><span class="wbp">pre</span><span class="wbm">(미리)</span>+<span class="wbp">scribe</span><span class="wbm">(쓰다)</span><span class="wba">→</span>미리 적어주다<span class="wba">→</span>처방하다</span></span><span class="w"><span class="st">★</span><span class="we">subscribe</span> <span class="wk">구독하다</span><span class="wb"><span class="wbp">sub</span><span class="wbm">(아래)</span>+<span class="wbp">scribe</span><span class="wbm">(쓰다)</span><span class="wba">→</span>아래에 서명하다<span class="wba">→</span>구독하다</span></span><span class="w"><span class="we">manuscript</span> <span class="wk">원고</span><span class="wb"><span class="wbp">manu</span><span class="wbm">(손)</span>+<span class="wbp">script</span><span class="wbm">(쓰다)</span><span class="wba">→</span>손으로 쓴 것<span class="wba">→</span>원고</span></span><span class="w"><span class="we">inscribe</span> <span class="wk">새기다</span><span class="wb"><span class="wbp">in</span><span class="wbm">(안에)</span>+<span class="wbp">scribe</span><span class="wbm">(쓰다)</span><span class="wba">→</span>안에 새겨 쓰다<span class="wba">→</span>새기다</span></span><span class="w"><span class="we">transcript</span> <span class="wk">사본</span><span class="wb"><span class="wbp">trans</span><span class="wbm">(가로질러)</span>+<span class="wbp">script</span><span class="wbm">(쓰다)</span><span class="wba">→</span>옮겨 적은 것<span class="wba">→</span>사본</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">pos·pon</span><span class="lgbadge">L</span></div><div class="rmean">놓다 <span class="e">(put)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">propose</span> <span class="wk">제안하다</span><span class="wb"><span class="wbp">pro</span><span class="wbm">(앞에)</span>+<span class="wbp">pose</span><span class="wbm">(놓다)</span><span class="wba">→</span>앞에 내놓다<span class="wba">→</span>제안하다</span></span><span class="w"><span class="st">★</span><span class="we">compose</span> <span class="wk">구성하다</span><span class="wb"><span class="wbp">com</span><span class="wbm">(함께)</span>+<span class="wbp">pose</span><span class="wbm">(놓다)</span><span class="wba">→</span>함께 놓다<span class="wba">→</span>구성하다</span></span><span class="w"><span class="st">★</span><span class="we">expose</span> <span class="wk">노출시키다</span><span class="wb"><span class="wbp">ex</span><span class="wbm">(밖으로)</span>+<span class="wbp">pose</span><span class="wbm">(놓다)</span><span class="wba">→</span>밖에 내놓다<span class="wba">→</span>노출시키다</span></span><span class="w"><span class="st">★</span><span class="we">impose</span> <span class="wk">부과하다</span><span class="wb"><span class="wbp">im</span><span class="wbm">(위에)</span>+<span class="wbp">pose</span><span class="wbm">(놓다)</span><span class="wba">→</span>위에 얹다<span class="wba">→</span>부과하다</span></span><span class="w"><span class="st">★</span><span class="we">component</span> <span class="wk">구성요소</span><span class="wb"><span class="wbp">com</span><span class="wbm">(함께)</span>+<span class="wbp">pon</span><span class="wbm">(놓다)</span>+<span class="wbp">ent</span><span class="wbm">(명)</span><span class="wba">→</span>함께 놓이는 것<span class="wba">→</span>구성요소</span></span><span class="w"><span class="st">★</span><span class="we">postpone</span> <span class="wk">연기하다</span><span class="wb"><span class="wbp">post</span><span class="wbm">(뒤로)</span>+<span class="wbp">pone</span><span class="wbm">(놓다)</span><span class="wba">→</span>뒤로 미루어 두다<span class="wba">→</span>연기하다</span></span></div></div></div>
+          <div class="ft">ORUN ENGLISH · Roots & Affixes Workbook</div>
+        </section>
+        <section class="page"><div class="hb"><div class="l">ORUN <b>ENGLISH</b></div><div class="r">Part 1 · 라틴어 어근</div></div>
+          
+        <div class="eyebrow">Part 1</div>
+        <div class="h2">라틴어 핵심 어근 <span class="en">Latin Roots</span></div>
+        <div class="rule"></div>
+          <div class="rgrid"><div class="rcard "><div class="rtop"><span class="rform">ten·tain·tin</span><span class="lgbadge">L</span></div><div class="rmean">잡다·유지 <span class="e">(hold)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">maintain</span> <span class="wk">유지하다</span><span class="wb"><span class="wbp">main</span><span class="wbm">(손)</span>+<span class="wbp">tain</span><span class="wbm">(잡다)</span><span class="wba">→</span>손에 쥐고 있다<span class="wba">→</span>유지하다</span></span><span class="w"><span class="st">★</span><span class="we">obtain</span> <span class="wk">얻다</span><span class="wb"><span class="wbp">ob</span><span class="wbm">(맞서)</span>+<span class="wbp">tain</span><span class="wbm">(잡다)</span><span class="wba">→</span>맞서 잡아내다<span class="wba">→</span>얻다</span></span><span class="w"><span class="st">★</span><span class="we">contain</span> <span class="wk">담다</span><span class="wb"><span class="wbp">con</span><span class="wbm">(함께)</span>+<span class="wbp">tain</span><span class="wbm">(잡다)</span><span class="wba">→</span>함께 담아 잡다<span class="wba">→</span>담다</span></span><span class="w"><span class="st">★</span><span class="we">retain</span> <span class="wk">보유하다</span><span class="wb"><span class="wbp">re</span><span class="wbm">(다시)</span>+<span class="wbp">tain</span><span class="wbm">(잡다)</span><span class="wba">→</span>계속 잡고 있다<span class="wba">→</span>보유하다</span></span><span class="w"><span class="st">★</span><span class="we">sustain</span> <span class="wk">지탱하다</span><span class="wb"><span class="wbp">sus</span><span class="wbm">(아래에서)</span>+<span class="wbp">tain</span><span class="wbm">(잡다)</span><span class="wba">→</span>밑에서 받쳐 잡다<span class="wba">→</span>지탱하다</span></span><span class="w"><span class="we">detain</span> <span class="wk">구금하다</span><span class="wb"><span class="wbp">de</span><span class="wbm">(떨어져)</span>+<span class="wbp">tain</span><span class="wbm">(잡다)</span><span class="wba">→</span>떼어 가둬두다<span class="wba">→</span>구금하다</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">vert·vers</span><span class="lgbadge">L</span></div><div class="rmean">돌다 <span class="e">(turn)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">convert</span> <span class="wk">전환하다</span><span class="wb"><span class="wbp">con</span><span class="wbm">(완전히)</span>+<span class="wbp">vert</span><span class="wbm">(돌리다)</span><span class="wba">→</span>완전히 돌려놓다<span class="wba">→</span>전환하다</span></span><span class="w"><span class="st">★</span><span class="we">reverse</span> <span class="wk">뒤집다</span><span class="wb"><span class="wbp">re</span><span class="wbm">(뒤로)</span>+<span class="wbp">verse</span><span class="wbm">(돌리다)</span><span class="wba">→</span>뒤로 돌리다<span class="wba">→</span>뒤집다</span></span><span class="w"><span class="st">★</span><span class="we">diverse</span> <span class="wk">다양한</span><span class="wb"><span class="wbp">di</span><span class="wbm">(따로)</span>+<span class="wbp">verse</span><span class="wbm">(돌리다)</span><span class="wba">→</span>따로 돌아간<span class="wba">→</span>다양한</span></span><span class="w"><span class="st">★</span><span class="we">controversy</span> <span class="wk">논쟁</span><span class="wb"><span class="wbp">contro</span><span class="wbm">(반대로)</span>+<span class="wbp">vers</span><span class="wbm">(돌리다)</span>+<span class="wbp">y</span><span class="wbm">(명)</span><span class="wba">→</span>반대로 도는 것<span class="wba">→</span>논쟁</span></span><span class="w"><span class="st">★</span><span class="we">adverse</span> <span class="wk">불리한</span><span class="wb"><span class="wbp">ad</span><span class="wbm">(맞서)</span>+<span class="wbp">verse</span><span class="wbm">(돌리다)</span><span class="wba">→</span>맞서 돌려놓은<span class="wba">→</span>불리한</span></span><span class="w"><span class="st">★</span><span class="we">versatile</span> <span class="wk">다재다능한</span><span class="wb"><span class="wbp">vers</span><span class="wbm">(돌리다)</span>+<span class="wbp">atile</span><span class="wbm">(잘 ~하는)</span><span class="wba">→</span>잘 돌아가는<span class="wba">→</span>다재다능한</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">vid·vis</span><span class="lgbadge">L</span></div><div class="rmean">보다 <span class="e">(see)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">evident</span> <span class="wk">명백한</span><span class="wb"><span class="wbp">e</span><span class="wbm">(밖으로)</span>+<span class="wbp">vid</span><span class="wbm">(보다)</span>+<span class="wbp">ent</span><span class="wbm">(형)</span><span class="wba">→</span>밖으로 잘 보이는<span class="wba">→</span>명백한</span></span><span class="w"><span class="st">★</span><span class="we">supervise</span> <span class="wk">감독하다</span><span class="wb"><span class="wbp">super</span><span class="wbm">(위에서)</span>+<span class="wbp">vise</span><span class="wbm">(보다)</span><span class="wba">→</span>위에서 내려다보다<span class="wba">→</span>감독하다</span></span><span class="w"><span class="st">★</span><span class="we">revise</span> <span class="wk">수정하다</span><span class="wb"><span class="wbp">re</span><span class="wbm">(다시)</span>+<span class="wbp">vise</span><span class="wbm">(보다)</span><span class="wba">→</span>다시 보다<span class="wba">→</span>수정하다</span></span><span class="w"><span class="st">★</span><span class="we">visible</span> <span class="wk">보이는</span><span class="wb"><span class="wbp">vis</span><span class="wbm">(보다)</span>+<span class="wbp">ible</span><span class="wbm">(할 수 있는)</span><span class="wba">→</span>볼 수 있는<span class="wba">→</span>보이는</span></span><span class="w"><span class="we">envision</span> <span class="wk">마음에 그리다</span><span class="wb"><span class="wbp">en</span><span class="wbm">(안에)</span>+<span class="wbp">vision</span><span class="wbm">(보다)</span><span class="wba">→</span>마음 속에 그리다<span class="wba">→</span>마음에 그리다</span></span><span class="w"><span class="st">★</span><span class="we">provide</span> <span class="wk">제공하다</span><span class="wb"><span class="wbp">pro</span><span class="wbm">(미리)</span>+<span class="wbp">vide</span><span class="wbm">(보다)</span><span class="wba">→</span>미리 내다보고 갖추다<span class="wba">→</span>제공하다</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">voc·vok</span><span class="lgbadge">L</span></div><div class="rmean">부르다 <span class="e">(call/voice)</span></div><div class="rwords"><span class="w"><span class="we">vocal</span> <span class="wk">목소리의</span><span class="wb"><span class="wbp">voc</span><span class="wbm">(소리)</span>+<span class="wbp">al</span><span class="wbm">(형)</span><span class="wba">→</span>소리의<span class="wba">→</span>목소리의</span></span><span class="w"><span class="st">★</span><span class="we">advocate</span> <span class="wk">옹호하다</span><span class="wb"><span class="wbp">ad</span><span class="wbm">(~쪽으로)</span>+<span class="wbp">voc</span><span class="wbm">(부르다)</span>+<span class="wbp">ate</span><span class="wbm">(동)</span><span class="wba">→</span>~쪽으로 부르짖다<span class="wba">→</span>옹호하다</span></span><span class="w"><span class="st">★</span><span class="we">provoke</span> <span class="wk">유발하다</span><span class="wb"><span class="wbp">pro</span><span class="wbm">(앞으로)</span>+<span class="wbp">voke</span><span class="wbm">(부르다)</span><span class="wba">→</span>앞으로 불러내다<span class="wba">→</span>유발하다</span></span><span class="w"><span class="st">★</span><span class="we">evoke</span> <span class="wk">불러일으키다</span><span class="wb"><span class="wbp">e</span><span class="wbm">(밖으로)</span>+<span class="wbp">voke</span><span class="wbm">(부르다)</span><span class="wba">→</span>밖으로 불러내다<span class="wba">→</span>불러일으키다</span></span><span class="w"><span class="we">vocation</span> <span class="wk">천직</span><span class="wb"><span class="wbp">voc</span><span class="wbm">(부르다)</span>+<span class="wbp">ation</span><span class="wbm">(명)</span><span class="wba">→</span>(신의) 부름<span class="wba">→</span>천직</span></span><span class="w"><span class="we">revoke</span> <span class="wk">철회하다</span><span class="wb"><span class="wbp">re</span><span class="wbm">(뒤로)</span>+<span class="wbp">voke</span><span class="wbm">(부르다)</span><span class="wba">→</span>도로 불러들이다<span class="wba">→</span>철회하다</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">sent·sens</span><span class="lgbadge">L</span></div><div class="rmean">느끼다 <span class="e">(feel)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">consent</span> <span class="wk">동의하다</span><span class="wb"><span class="wbp">con</span><span class="wbm">(함께)</span>+<span class="wbp">sent</span><span class="wbm">(느끼다)</span><span class="wba">→</span>함께 느끼다<span class="wba">→</span>동의하다</span></span><span class="w"><span class="we">dissent</span> <span class="wk">반대하다</span><span class="wb"><span class="wbp">dis</span><span class="wbm">(따로)</span>+<span class="wbp">sent</span><span class="wbm">(느끼다)</span><span class="wba">→</span>다르게 느끼다<span class="wba">→</span>반대하다</span></span><span class="w"><span class="st">★</span><span class="we">resent</span> <span class="wk">분개하다</span><span class="wb"><span class="wbp">re</span><span class="wbm">(다시)</span>+<span class="wbp">sent</span><span class="wbm">(느끼다)</span><span class="wba">→</span>계속 곱씹어 느끼다<span class="wba">→</span>분개하다</span></span><span class="w"><span class="st">★</span><span class="we">sentiment</span> <span class="wk">정서</span><span class="wb"><span class="wbp">sent</span><span class="wbm">(느끼다)</span>+<span class="wbp">iment</span><span class="wbm">(명)</span><span class="wba">→</span>느낌<span class="wba">→</span>정서</span></span><span class="w"><span class="st">★</span><span class="we">sensible</span> <span class="wk">분별 있는</span><span class="wb"><span class="wbp">sens</span><span class="wbm">(느끼다)</span>+<span class="wbp">ible</span><span class="wbm">(할 수 있는)</span><span class="wba">→</span>잘 느끼는<span class="wba">→</span>분별 있는</span></span><span class="w"><span class="st">★</span><span class="we">consensus</span> <span class="wk">합의</span><span class="wb"><span class="wbp">con</span><span class="wbm">(함께)</span>+<span class="wbp">sens</span><span class="wbm">(느끼다)</span>+<span class="wbp">us</span><span class="wbm">(명)</span><span class="wba">→</span>함께 느낌<span class="wba">→</span>합의</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">struct</span><span class="lgbadge">L</span></div><div class="rmean">세우다 <span class="e">(build)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">construct</span> <span class="wk">건설하다</span><span class="wb"><span class="wbp">con</span><span class="wbm">(함께)</span>+<span class="wbp">struct</span><span class="wbm">(세우다)</span><span class="wba">→</span>함께 쌓아 세우다<span class="wba">→</span>건설하다</span></span><span class="w"><span class="st">★</span><span class="we">instruct</span> <span class="wk">지시하다</span><span class="wb"><span class="wbp">in</span><span class="wbm">(안에)</span>+<span class="wbp">struct</span><span class="wbm">(세우다)</span><span class="wba">→</span>안에 지식을 세워주다<span class="wba">→</span>지시하다</span></span><span class="w"><span class="st">★</span><span class="we">destruction</span> <span class="wk">파괴</span><span class="wb"><span class="wbp">de</span><span class="wbm">(아래로)</span>+<span class="wbp">struct</span><span class="wbm">(세우다)</span>+<span class="wbp">ion</span><span class="wbm">(명)</span><span class="wba">→</span>무너뜨림<span class="wba">→</span>파괴</span></span><span class="w"><span class="we">obstruct</span> <span class="wk">방해하다</span><span class="wb"><span class="wbp">ob</span><span class="wbm">(맞서)</span>+<span class="wbp">struct</span><span class="wbm">(세우다)</span><span class="wba">→</span>앞에 세워 막다<span class="wba">→</span>방해하다</span></span><span class="w"><span class="st">★</span><span class="we">infrastructure</span> <span class="wk">사회기반시설</span><span class="wb"><span class="wbp">infra</span><span class="wbm">(아래)</span>+<span class="wbp">structure</span><span class="wbm">(구조)</span><span class="wba">→</span>아래 깔린 구조<span class="wba">→</span>사회기반시설</span></span><span class="w"><span class="st">★</span><span class="we">structure</span> <span class="wk">구조</span><span class="wb"><span class="wbp">struct</span><span class="wbm">(세우다)</span>+<span class="wbp">ure</span><span class="wbm">(명)</span><span class="wba">→</span>세워진 것<span class="wba">→</span>구조</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">form</span><span class="lgbadge">L</span></div><div class="rmean">모양 <span class="e">(shape)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">reform</span> <span class="wk">개혁하다</span><span class="wb"><span class="wbp">re</span><span class="wbm">(다시)</span>+<span class="wbp">form</span><span class="wbm">(모양)</span><span class="wba">→</span>다시 모양을 만들다<span class="wba">→</span>개혁하다</span></span><span class="w"><span class="st">★</span><span class="we">inform</span> <span class="wk">알리다</span><span class="wb"><span class="wbp">in</span><span class="wbm">(안에)</span>+<span class="wbp">form</span><span class="wbm">(모양)</span><span class="wba">→</span>머릿속에 모양을 만들어 주다<span class="wba">→</span>알리다</span></span><span class="w"><span class="st">★</span><span class="we">perform</span> <span class="wk">수행하다</span><span class="wb"><span class="wbp">per</span><span class="wbm">(완전히)</span>+<span class="wbp">form</span><span class="wbm">(모양)</span><span class="wba">→</span>완전한 형태로 해내다<span class="wba">→</span>수행하다</span></span><span class="w"><span class="st">★</span><span class="we">conform</span> <span class="wk">따르다</span><span class="wb"><span class="wbp">con</span><span class="wbm">(함께)</span>+<span class="wbp">form</span><span class="wbm">(모양)</span><span class="wba">→</span>같은 모양으로 맞추다<span class="wba">→</span>따르다</span></span><span class="w"><span class="st">★</span><span class="we">transform</span> <span class="wk">변형시키다</span><span class="wb"><span class="wbp">trans</span><span class="wbm">(가로질러)</span>+<span class="wbp">form</span><span class="wbm">(모양)</span><span class="wba">→</span>모양을 바꿔 옮기다<span class="wba">→</span>변형시키다</span></span><span class="w"><span class="st">★</span><span class="we">formula</span> <span class="wk">공식</span><span class="wb"><span class="wbp">form</span><span class="wbm">(모양)</span>+<span class="wbp">ula</span><span class="wbm">(작은 것)</span><span class="wba">→</span>정해진 작은 틀<span class="wba">→</span>공식</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">fac·fic·fect</span><span class="lgbadge">L</span></div><div class="rmean">만들다 <span class="e">(make/do)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">affect</span> <span class="wk">영향을 주다</span><span class="wb"><span class="wbp">af</span><span class="wbm">(~에)</span>+<span class="wbp">fect</span><span class="wbm">(하다)</span><span class="wba">→</span>작용해 영향을 미치다<span class="wba">→</span>영향을 주다</span></span><span class="w"><span class="st">★</span><span class="we">effect</span> <span class="wk">효과</span><span class="wb"><span class="wbp">ef</span><span class="wbm">(밖으로)</span>+<span class="wbp">fect</span><span class="wbm">(하다)</span><span class="wba">→</span>만들어 낸 결과<span class="wba">→</span>효과</span></span><span class="w"><span class="st">★</span><span class="we">efficient</span> <span class="wk">효율적인</span><span class="wb"><span class="wbp">ef</span><span class="wbm">(밖으로)</span>+<span class="wbp">fic</span><span class="wbm">(하다)</span>+<span class="wbp">ient</span><span class="wbm">(형)</span><span class="wba">→</span>잘 만들어내는<span class="wba">→</span>효율적인</span></span><span class="w"><span class="st">★</span><span class="we">sufficient</span> <span class="wk">충분한</span><span class="wb"><span class="wbp">suf</span><span class="wbm">(아래에서)</span>+<span class="wbp">fic</span><span class="wbm">(하다)</span>+<span class="wbp">ient</span><span class="wbm">(형)</span><span class="wba">→</span>받쳐줄 만큼 만드는<span class="wba">→</span>충분한</span></span><span class="w"><span class="st">★</span><span class="we">manufacture</span> <span class="wk">제조하다</span><span class="wb"><span class="wbp">manu</span><span class="wbm">(손)</span>+<span class="wbp">fact</span><span class="wbm">(만들다)</span>+<span class="wbp">ure</span><span class="wbm">(명)</span><span class="wba">→</span>손으로 만듦<span class="wba">→</span>제조하다</span></span><span class="w"><span class="st">★</span><span class="we">beneficial</span> <span class="wk">유익한</span><span class="wb"><span class="wbp">bene</span><span class="wbm">(좋은)</span>+<span class="wbp">fic</span><span class="wbm">(하다)</span>+<span class="wbp">ial</span><span class="wbm">(형)</span><span class="wba">→</span>좋게 작용하는<span class="wba">→</span>유익한</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">grad·gress</span><span class="lgbadge">L</span></div><div class="rmean">걷다·단계 <span class="e">(step)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">progress</span> <span class="wk">진보</span><span class="wb"><span class="wbp">pro</span><span class="wbm">(앞으로)</span>+<span class="wbp">gress</span><span class="wbm">(가다)</span><span class="wba">→</span>앞으로 나아감<span class="wba">→</span>진보</span></span><span class="w"><span class="st">★</span><span class="we">gradual</span> <span class="wk">점진적인</span><span class="wb"><span class="wbp">grad</span><span class="wbm">(걷다)</span>+<span class="wbp">ual</span><span class="wbm">(형)</span><span class="wba">→</span>한 걸음씩 가는<span class="wba">→</span>점진적인</span></span><span class="w"><span class="st">★</span><span class="we">aggressive</span> <span class="wk">공격적인</span><span class="wb"><span class="wbp">ag</span><span class="wbm">(~쪽으로)</span>+<span class="wbp">gress</span><span class="wbm">(가다)</span>+<span class="wbp">ive</span><span class="wbm">(형)</span><span class="wba">→</span>다가가는<span class="wba">→</span>공격적인</span></span><span class="w"><span class="st">★</span><span class="we">degrade</span> <span class="wk">저하시키다</span><span class="wb"><span class="wbp">de</span><span class="wbm">(아래로)</span>+<span class="wbp">grade</span><span class="wbm">(걷다)</span><span class="wba">→</span>아래로 내려가다<span class="wba">→</span>저하시키다</span></span><span class="w"><span class="st">★</span><span class="we">ingredient</span> <span class="wk">재료</span><span class="wb"><span class="wbp">in</span><span class="wbm">(안으로)</span>+<span class="wbp">gred</span><span class="wbm">(가다)</span>+<span class="wbp">ient</span><span class="wbm">(명)</span><span class="wba">→</span>안에 들어간 것<span class="wba">→</span>재료</span></span><span class="w"><span class="we">regress</span> <span class="wk">퇴보하다</span><span class="wb"><span class="wbp">re</span><span class="wbm">(뒤로)</span>+<span class="wbp">gress</span><span class="wbm">(가다)</span><span class="wba">→</span>뒤로 가다<span class="wba">→</span>퇴보하다</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">pel·puls</span><span class="lgbadge">L</span></div><div class="rmean">밀다 <span class="e">(drive)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">compel</span> <span class="wk">강요하다</span><span class="wb"><span class="wbp">com</span><span class="wbm">(완전히)</span>+<span class="wbp">pel</span><span class="wbm">(밀다)</span><span class="wba">→</span>완전히 밀어붙이다<span class="wba">→</span>강요하다</span></span><span class="w"><span class="st">★</span><span class="we">expel</span> <span class="wk">추방하다</span><span class="wb"><span class="wbp">ex</span><span class="wbm">(밖으로)</span>+<span class="wbp">pel</span><span class="wbm">(밀다)</span><span class="wba">→</span>밖으로 밀어내다<span class="wba">→</span>추방하다</span></span><span class="w"><span class="st">★</span><span class="we">impulse</span> <span class="wk">충동</span><span class="wb"><span class="wbp">im</span><span class="wbm">(안으로)</span>+<span class="wbp">pulse</span><span class="wbm">(밀다)</span><span class="wba">→</span>안에서 밀고 나오는 힘<span class="wba">→</span>충동</span></span><span class="w"><span class="we">repel</span> <span class="wk">격퇴하다</span><span class="wb"><span class="wbp">re</span><span class="wbm">(뒤로)</span>+<span class="wbp">pel</span><span class="wbm">(밀다)</span><span class="wba">→</span>뒤로 밀어내다<span class="wba">→</span>격퇴하다</span></span><span class="w"><span class="st">★</span><span class="we">propel</span> <span class="wk">추진하다</span><span class="wb"><span class="wbp">pro</span><span class="wbm">(앞으로)</span>+<span class="wbp">pel</span><span class="wbm">(밀다)</span><span class="wba">→</span>앞으로 밀다<span class="wba">→</span>추진하다</span></span><span class="w"><span class="st">★</span><span class="we">compulsory</span> <span class="wk">의무적인</span><span class="wb"><span class="wbp">com</span><span class="wbm">(완전히)</span>+<span class="wbp">puls</span><span class="wbm">(밀다)</span>+<span class="wbp">ory</span><span class="wbm">(형)</span><span class="wba">→</span>밀어붙이는<span class="wba">→</span>의무적인</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">rupt</span><span class="lgbadge">L</span></div><div class="rmean">깨다 <span class="e">(break)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">erupt</span> <span class="wk">분출하다</span><span class="wb"><span class="wbp">e</span><span class="wbm">(밖으로)</span>+<span class="wbp">rupt</span><span class="wbm">(깨다)</span><span class="wba">→</span>깨고 밖으로 터지다<span class="wba">→</span>분출하다</span></span><span class="w"><span class="st">★</span><span class="we">interrupt</span> <span class="wk">방해하다</span><span class="wb"><span class="wbp">inter</span><span class="wbm">(사이에서)</span>+<span class="wbp">rupt</span><span class="wbm">(깨다)</span><span class="wba">→</span>사이를 깨다<span class="wba">→</span>방해하다</span></span><span class="w"><span class="st">★</span><span class="we">corrupt</span> <span class="wk">부패한</span><span class="wb"><span class="wbp">cor</span><span class="wbm">(완전히)</span>+<span class="wbp">rupt</span><span class="wbm">(깨다)</span><span class="wba">→</span>완전히 깨진<span class="wba">→</span>부패한</span></span><span class="w"><span class="st">★</span><span class="we">disrupt</span> <span class="wk">붕괴시키다</span><span class="wb"><span class="wbp">dis</span><span class="wbm">(흩어져)</span>+<span class="wbp">rupt</span><span class="wbm">(깨다)</span><span class="wba">→</span>깨뜨려 흩다<span class="wba">→</span>붕괴시키다</span></span><span class="w"><span class="st">★</span><span class="we">abrupt</span> <span class="wk">갑작스러운</span><span class="wb"><span class="wbp">ab</span><span class="wbm">(떨어져)</span>+<span class="wbp">rupt</span><span class="wbm">(깨다)</span><span class="wba">→</span>갑자기 끊긴<span class="wba">→</span>갑작스러운</span></span><span class="w"><span class="st">★</span><span class="we">bankrupt</span> <span class="wk">파산한</span><span class="wb"><span class="wbp">bank</span><span class="wbm">(은행)</span>+<span class="wbp">rupt</span><span class="wbm">(깨다)</span><span class="wba">→</span>은행이 깨진<span class="wba">→</span>파산한</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">scend·scens</span><span class="lgbadge">L</span></div><div class="rmean">오르다 <span class="e">(climb)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">ascend</span> <span class="wk">오르다</span><span class="wb"><span class="wbp">a</span><span class="wbm">(~로)</span>+<span class="wbp">scend</span><span class="wbm">(오르다)</span><span class="wba">→</span>위로 오르다<span class="wba">→</span>오르다</span></span><span class="w"><span class="st">★</span><span class="we">descend</span> <span class="wk">내려가다</span><span class="wb"><span class="wbp">de</span><span class="wbm">(아래로)</span>+<span class="wbp">scend</span><span class="wbm">(오르다)</span><span class="wba">→</span>아래로 내려가다<span class="wba">→</span>내려가다</span></span><span class="w"><span class="st">★</span><span class="we">transcend</span> <span class="wk">초월하다</span><span class="wb"><span class="wbp">trans</span><span class="wbm">(넘어)</span>+<span class="wbp">scend</span><span class="wbm">(오르다)</span><span class="wba">→</span>넘어 오르다<span class="wba">→</span>초월하다</span></span><span class="w"><span class="we">condescend</span> <span class="wk">잘난 체하다</span><span class="wb"><span class="wbp">con</span><span class="wbm">(함께)</span>+<span class="wbp">de</span><span class="wbm">(아래로)</span>+<span class="wbp">scend</span><span class="wbm">(오르다)</span><span class="wba">→</span>아래로 내려가 주다<span class="wba">→</span>잘난 체하다</span></span><span class="w"><span class="st">★</span><span class="we">descent</span> <span class="wk">하강·혈통</span><span class="wb"><span class="wbp">de</span><span class="wbm">(아래로)</span>+<span class="wbp">scent</span><span class="wbm">(오르다)</span><span class="wba">→</span>내려감<span class="wba">→</span>하강·혈통</span></span><span class="w"><span class="we">ascent</span> <span class="wk">상승</span><span class="wb"><span class="wbp">a</span><span class="wbm">(~로)</span>+<span class="wbp">scent</span><span class="wbm">(오르다)</span><span class="wba">→</span>올라감<span class="wba">→</span>상승</span></span></div></div></div>
+          <div class="ft">ORUN ENGLISH · Roots & Affixes Workbook</div>
+        </section>
+        <section class="page"><div class="hb"><div class="l">ORUN <b>ENGLISH</b></div><div class="r">Part 1 · 라틴어 어근</div></div>
+          
+        <div class="eyebrow">Part 1</div>
+        <div class="h2">라틴어 핵심 어근 <span class="en">Latin Roots</span></div>
+        <div class="rule"></div>
+          <div class="rgrid"><div class="rcard "><div class="rtop"><span class="rform">sequ·secu</span><span class="lgbadge">L</span></div><div class="rmean">따르다 <span class="e">(follow)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">consequence</span> <span class="wk">결과</span><span class="wb"><span class="wbp">con</span><span class="wbm">(함께)</span>+<span class="wbp">sequ</span><span class="wbm">(따르다)</span>+<span class="wbp">ence</span><span class="wbm">(명)</span><span class="wba">→</span>함께 뒤따라 옴<span class="wba">→</span>결과</span></span><span class="w"><span class="st">★</span><span class="we">sequence</span> <span class="wk">순서</span><span class="wb"><span class="wbp">sequ</span><span class="wbm">(따르다)</span>+<span class="wbp">ence</span><span class="wbm">(명)</span><span class="wba">→</span>뒤따르는 순서<span class="wba">→</span>순서</span></span><span class="w"><span class="st">★</span><span class="we">subsequent</span> <span class="wk">다음의</span><span class="wb"><span class="wbp">sub</span><span class="wbm">(아래에)</span>+<span class="wbp">sequ</span><span class="wbm">(따르다)</span>+<span class="wbp">ent</span><span class="wbm">(형)</span><span class="wba">→</span>뒤따르는<span class="wba">→</span>다음의</span></span><span class="w"><span class="st">★</span><span class="we">pursue</span> <span class="wk">추구하다</span><span class="wb"><span class="wbp">pur</span><span class="wbm">(앞으로)</span>+<span class="wbp">sue</span><span class="wbm">(따르다)</span><span class="wba">→</span>앞에 두고 따라가다<span class="wba">→</span>추구하다</span></span><span class="w"><span class="we">prosecute</span> <span class="wk">기소하다</span><span class="wb"><span class="wbp">pro</span><span class="wbm">(앞으로)</span>+<span class="wbp">secute</span><span class="wbm">(따르다)</span><span class="wba">→</span>끝까지 따라가다<span class="wba">→</span>기소하다</span></span><span class="w"><span class="st">★</span><span class="we">consecutive</span> <span class="wk">연속적인</span><span class="wb"><span class="wbp">con</span><span class="wbm">(함께)</span>+<span class="wbp">secut</span><span class="wbm">(따르다)</span>+<span class="wbp">ive</span><span class="wbm">(형)</span><span class="wba">→</span>줄줄이 따르는<span class="wba">→</span>연속적인</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">solv·solu</span><span class="lgbadge">L</span></div><div class="rmean">풀다 <span class="e">(loosen)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">solve</span> <span class="wk">풀다</span><span class="wb"><span class="wbp">solv</span><span class="wbm">(풀다)</span>+e<span class="wba">→</span>풀다<span class="wba">→</span>풀다</span></span><span class="w"><span class="st">★</span><span class="we">solution</span> <span class="wk">해결책</span><span class="wb"><span class="wbp">solu</span><span class="wbm">(풀다)</span>+<span class="wbp">tion</span><span class="wbm">(명)</span><span class="wba">→</span>풀어 낸 것<span class="wba">→</span>해결책</span></span><span class="w"><span class="st">★</span><span class="we">dissolve</span> <span class="wk">녹이다</span><span class="wb"><span class="wbp">dis</span><span class="wbm">(따로)</span>+<span class="wbp">solve</span><span class="wbm">(풀다)</span><span class="wba">→</span>흩어 풀다<span class="wba">→</span>녹이다</span></span><span class="w"><span class="st">★</span><span class="we">resolve</span> <span class="wk">결심하다</span><span class="wb"><span class="wbp">re</span><span class="wbm">(완전히)</span>+<span class="wbp">solve</span><span class="wbm">(풀다)</span><span class="wba">→</span>완전히 풀어 내다<span class="wba">→</span>결심하다</span></span><span class="w"><span class="st">★</span><span class="we">absolute</span> <span class="wk">절대적인</span><span class="wb"><span class="wbp">ab</span><span class="wbm">(떨어져)</span>+<span class="wbp">solu</span><span class="wbm">(풀다)</span>+<span class="wbp">te</span><span class="wbm">(형)</span><span class="wba">→</span>매여 있지 않은<span class="wba">→</span>절대적인</span></span><span class="w"><span class="we">soluble</span> <span class="wk">녹는</span><span class="wb"><span class="wbp">solu</span><span class="wbm">(풀다)</span>+<span class="wbp">ble</span><span class="wbm">(할 수 있는)</span><span class="wba">→</span>풀릴 수 있는<span class="wba">→</span>녹는</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">spir</span><span class="lgbadge">L</span></div><div class="rmean">숨쉬다 <span class="e">(breathe)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">inspire</span> <span class="wk">영감을 주다</span><span class="wb"><span class="wbp">in</span><span class="wbm">(안으로)</span>+<span class="wbp">spire</span><span class="wbm">(숨쉬다)</span><span class="wba">→</span>숨을 불어넣다<span class="wba">→</span>영감을 주다</span></span><span class="w"><span class="st">★</span><span class="we">aspire</span> <span class="wk">열망하다</span><span class="wb"><span class="wbp">a</span><span class="wbm">(~로)</span>+<span class="wbp">spire</span><span class="wbm">(숨쉬다)</span><span class="wba">→</span>숨이 가도록 바라다<span class="wba">→</span>열망하다</span></span><span class="w"><span class="we">conspire</span> <span class="wk">음모를 꾸미다</span><span class="wb"><span class="wbp">con</span><span class="wbm">(함께)</span>+<span class="wbp">spire</span><span class="wbm">(숨쉬다)</span><span class="wba">→</span>같은 숨으로 모이다<span class="wba">→</span>음모를 꾸미다</span></span><span class="w"><span class="st">★</span><span class="we">expire</span> <span class="wk">만료되다</span><span class="wb"><span class="wbp">ex</span><span class="wbm">(밖으로)</span>+<span class="wbp">spire</span><span class="wbm">(숨쉬다)</span><span class="wba">→</span>마지막 숨을 내쉬다<span class="wba">→</span>만료되다</span></span><span class="w"><span class="we">respiration</span> <span class="wk">호흡</span><span class="wb"><span class="wbp">re</span><span class="wbm">(다시)</span>+<span class="wbp">spir</span><span class="wbm">(숨쉬다)</span>+<span class="wbp">ation</span><span class="wbm">(명)</span><span class="wba">→</span>들숨날숨<span class="wba">→</span>호흡</span></span><span class="w"><span class="we">perspire</span> <span class="wk">땀 흘리다</span><span class="wb"><span class="wbp">per</span><span class="wbm">(통과해)</span>+<span class="wbp">spire</span><span class="wbm">(숨쉬다)</span><span class="wba">→</span>피부로 숨을 내쉬다<span class="wba">→</span>땀 흘리다</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">tend·tens</span><span class="lgbadge">L</span></div><div class="rmean">뻗다 <span class="e">(stretch)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">extend</span> <span class="wk">확장하다</span><span class="wb"><span class="wbp">ex</span><span class="wbm">(밖으로)</span>+<span class="wbp">tend</span><span class="wbm">(뻗다)</span><span class="wba">→</span>밖으로 뻗다<span class="wba">→</span>확장하다</span></span><span class="w"><span class="st">★</span><span class="we">intend</span> <span class="wk">의도하다</span><span class="wb"><span class="wbp">in</span><span class="wbm">(안으로)</span>+<span class="wbp">tend</span><span class="wbm">(뻗다)</span><span class="wba">→</span>마음을 뻗다<span class="wba">→</span>의도하다</span></span><span class="w"><span class="st">★</span><span class="we">tension</span> <span class="wk">긴장</span><span class="wb"><span class="wbp">tens</span><span class="wbm">(당기다)</span>+<span class="wbp">ion</span><span class="wbm">(명)</span><span class="wba">→</span>팽팽함<span class="wba">→</span>긴장</span></span><span class="w"><span class="st">★</span><span class="we">contend</span> <span class="wk">주장하다</span><span class="wb"><span class="wbp">con</span><span class="wbm">(함께)</span>+<span class="wbp">tend</span><span class="wbm">(뻗다)</span><span class="wba">→</span>서로 맞서 뻗다<span class="wba">→</span>주장하다</span></span><span class="w"><span class="st">★</span><span class="we">intense</span> <span class="wk">강렬한</span><span class="wb"><span class="wbp">in</span><span class="wbm">(안으로)</span>+<span class="wbp">tens</span><span class="wbm">(당기다)</span>+e<span class="wba">→</span>안으로 팽팽한<span class="wba">→</span>강렬한</span></span><span class="w"><span class="st">★</span><span class="we">tendency</span> <span class="wk">경향</span><span class="wb"><span class="wbp">tend</span><span class="wbm">(뻗다)</span>+<span class="wbp">ency</span><span class="wbm">(명)</span><span class="wba">→</span>뻗어 가는 성향<span class="wba">→</span>경향</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">ven·vent</span><span class="lgbadge">L</span></div><div class="rmean">오다 <span class="e">(come)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">prevent</span> <span class="wk">막다</span><span class="wb"><span class="wbp">pre</span><span class="wbm">(미리)</span>+<span class="wbp">vent</span><span class="wbm">(오다)</span><span class="wba">→</span>미리 와서 막다<span class="wba">→</span>막다</span></span><span class="w"><span class="st">★</span><span class="we">invent</span> <span class="wk">발명하다</span><span class="wb"><span class="wbp">in</span><span class="wbm">(안으로)</span>+<span class="wbp">vent</span><span class="wbm">(오다)</span><span class="wba">→</span>머리에 와닿다<span class="wba">→</span>발명하다</span></span><span class="w"><span class="st">★</span><span class="we">convention</span> <span class="wk">관습·대회</span><span class="wb"><span class="wbp">con</span><span class="wbm">(함께)</span>+<span class="wbp">vent</span><span class="wbm">(오다)</span>+<span class="wbp">ion</span><span class="wbm">(명)</span><span class="wba">→</span>함께 모임<span class="wba">→</span>관습·대회</span></span><span class="w"><span class="st">★</span><span class="we">intervene</span> <span class="wk">개입하다</span><span class="wb"><span class="wbp">inter</span><span class="wbm">(사이에)</span>+<span class="wbp">vene</span><span class="wbm">(오다)</span><span class="wba">→</span>사이에 들어오다<span class="wba">→</span>개입하다</span></span><span class="w"><span class="st">★</span><span class="we">revenue</span> <span class="wk">수입</span><span class="wb"><span class="wbp">re</span><span class="wbm">(다시)</span>+<span class="wbp">venue</span><span class="wbm">(오다)</span><span class="wba">→</span>다시 돌아오는 것<span class="wba">→</span>수입</span></span><span class="w"><span class="we">souvenir</span> <span class="wk">기념품</span><span class="wb"><span class="wbp">sou</span><span class="wbm">(아래)</span>+<span class="wbp">venir</span><span class="wbm">(오다)</span><span class="wba">→</span>마음 밑에서 떠오르는 것<span class="wba">→</span>기념품</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">cred</span><span class="lgbadge">L</span></div><div class="rmean">믿다 <span class="e">(believe)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">credit</span> <span class="wk">신용</span><span class="wb"><span class="wbp">cred</span><span class="wbm">(믿다)</span>+it<span class="wba">→</span>믿음<span class="wba">→</span>신용</span></span><span class="w"><span class="st">★</span><span class="we">incredible</span> <span class="wk">믿기 힘든</span><span class="wb"><span class="wbp">in</span><span class="wbm">(아닌)</span>+<span class="wbp">cred</span><span class="wbm">(믿다)</span>+<span class="wbp">ible</span><span class="wbm">(쉬운)</span><span class="wba">→</span>믿기 어려운<span class="wba">→</span>믿기 힘든</span></span><span class="w"><span class="st">★</span><span class="we">credible</span> <span class="wk">믿을 만한</span><span class="wb"><span class="wbp">cred</span><span class="wbm">(믿다)</span>+<span class="wbp">ible</span><span class="wbm">(쉬운)</span><span class="wba">→</span>믿을 만한<span class="wba">→</span>믿을 만한</span></span><span class="w"><span class="we">credential</span> <span class="wk">자격증명</span><span class="wb"><span class="wbp">cred</span><span class="wbm">(믿다)</span>+<span class="wbp">ential</span><span class="wbm">(형)</span><span class="wba">→</span>믿게 해 주는 것<span class="wba">→</span>자격증명</span></span><span class="w"><span class="we">credulous</span> <span class="wk">잘 믿는</span><span class="wb"><span class="wbp">cred</span><span class="wbm">(믿다)</span>+<span class="wbp">ulous</span><span class="wbm">(잘 ~하는)</span><span class="wba">→</span>잘 믿는<span class="wba">→</span>잘 믿는</span></span><span class="w"><span class="we">discredit</span> <span class="wk">불신하다</span><span class="wb"><span class="wbp">dis</span><span class="wbm">(반대)</span>+<span class="wbp">credit</span><span class="wbm">(믿다)</span><span class="wba">→</span>믿음을 깎다<span class="wba">→</span>불신하다</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">flu</span><span class="lgbadge">L</span></div><div class="rmean">흐르다 <span class="e">(flow)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">fluent</span> <span class="wk">유창한</span><span class="wb"><span class="wbp">flu</span><span class="wbm">(흐르다)</span>+<span class="wbp">ent</span><span class="wbm">(형)</span><span class="wba">→</span>술술 흐르는<span class="wba">→</span>유창한</span></span><span class="w"><span class="st">★</span><span class="we">influence</span> <span class="wk">영향</span><span class="wb"><span class="wbp">in</span><span class="wbm">(안으로)</span>+<span class="wbp">flu</span><span class="wbm">(흐르다)</span>+<span class="wbp">ence</span><span class="wbm">(명)</span><span class="wba">→</span>안으로 흘러듦<span class="wba">→</span>영향</span></span><span class="w"><span class="st">★</span><span class="we">fluid</span> <span class="wk">유체·유동적인</span><span class="wb"><span class="wbp">flu</span><span class="wbm">(흐르다)</span>+<span class="wbp">id</span><span class="wbm">(형)</span><span class="wba">→</span>흐르는 것<span class="wba">→</span>유체·유동적인</span></span><span class="w"><span class="st">★</span><span class="we">affluent</span> <span class="wk">부유한</span><span class="wb"><span class="wbp">af</span><span class="wbm">(~로)</span>+<span class="wbp">flu</span><span class="wbm">(흐르다)</span>+<span class="wbp">ent</span><span class="wbm">(형)</span><span class="wba">→</span>풍성히 흘러드는<span class="wba">→</span>부유한</span></span><span class="w"><span class="st">★</span><span class="we">fluctuate</span> <span class="wk">변동하다</span><span class="wb"><span class="wbp">fluct</span><span class="wbm">(흐르다)</span>+<span class="wbp">uate</span><span class="wbm">(동)</span><span class="wba">→</span>흐르듯 오르내리다<span class="wba">→</span>변동하다</span></span><span class="w"><span class="we">superfluous</span> <span class="wk">불필요한</span><span class="wb"><span class="wbp">super</span><span class="wbm">(위로)</span>+<span class="wbp">flu</span><span class="wbm">(흐르다)</span>+<span class="wbp">ous</span><span class="wbm">(형)</span><span class="wba">→</span>넘쳐 흐르는<span class="wba">→</span>불필요한</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">press</span><span class="lgbadge">L</span></div><div class="rmean">누르다 <span class="e">(press)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">express</span> <span class="wk">표현하다</span><span class="wb"><span class="wbp">ex</span><span class="wbm">(밖으로)</span>+<span class="wbp">press</span><span class="wbm">(누르다)</span><span class="wba">→</span>안의 것을 눌러 짜내다<span class="wba">→</span>표현하다</span></span><span class="w"><span class="st">★</span><span class="we">impress</span> <span class="wk">인상을 주다</span><span class="wb"><span class="wbp">im</span><span class="wbm">(위에)</span>+<span class="wbp">press</span><span class="wbm">(누르다)</span><span class="wba">→</span>마음에 눌러 새기다<span class="wba">→</span>인상을 주다</span></span><span class="w"><span class="st">★</span><span class="we">depress</span> <span class="wk">우울하게 하다</span><span class="wb"><span class="wbp">de</span><span class="wbm">(아래로)</span>+<span class="wbp">press</span><span class="wbm">(누르다)</span><span class="wba">→</span>아래로 누르다<span class="wba">→</span>우울하게 하다</span></span><span class="w"><span class="st">★</span><span class="we">suppress</span> <span class="wk">억압하다</span><span class="wb"><span class="wbp">sup</span><span class="wbm">(아래로)</span>+<span class="wbp">press</span><span class="wbm">(누르다)</span><span class="wba">→</span>짓눌러 막다<span class="wba">→</span>억압하다</span></span><span class="w"><span class="we">oppress</span> <span class="wk">억압하다</span><span class="wb"><span class="wbp">op</span><span class="wbm">(맞서)</span>+<span class="wbp">press</span><span class="wbm">(누르다)</span><span class="wba">→</span>맞눌러 짓밟다<span class="wba">→</span>억압하다</span></span><span class="w"><span class="we">compress</span> <span class="wk">압축하다</span><span class="wb"><span class="wbp">com</span><span class="wbm">(함께)</span>+<span class="wbp">press</span><span class="wbm">(누르다)</span><span class="wba">→</span>함께 눌러 모으다<span class="wba">→</span>압축하다</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">val</span><span class="lgbadge">L</span></div><div class="rmean">가치·힘 <span class="e">(worth)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">value</span> <span class="wk">가치</span><span class="wb"><span class="wbp">val</span><span class="wbm">(가치)</span>+ue<span class="wba">→</span>가치<span class="wba">→</span>가치</span></span><span class="w"><span class="st">★</span><span class="we">valid</span> <span class="wk">유효한</span><span class="wb"><span class="wbp">val</span><span class="wbm">(강한)</span>+<span class="wbp">id</span><span class="wbm">(형)</span><span class="wba">→</span>힘 있는<span class="wba">→</span>유효한</span></span><span class="w"><span class="st">★</span><span class="we">evaluate</span> <span class="wk">평가하다</span><span class="wb"><span class="wbp">e</span><span class="wbm">(밖으로)</span>+<span class="wbp">valu</span><span class="wbm">(가치)</span>+<span class="wbp">ate</span><span class="wbm">(동)</span><span class="wba">→</span>가치를 끌어내다<span class="wba">→</span>평가하다</span></span><span class="w"><span class="st">★</span><span class="we">prevail</span> <span class="wk">우세하다</span><span class="wb"><span class="wbp">pre</span><span class="wbm">(앞서)</span>+<span class="wbp">vail</span><span class="wbm">(강한)</span><span class="wba">→</span>앞서 강해지다<span class="wba">→</span>우세하다</span></span><span class="w"><span class="st">★</span><span class="we">equivalent</span> <span class="wk">동등한</span><span class="wb"><span class="wbp">equi</span><span class="wbm">(같은)</span>+<span class="wbp">val</span><span class="wbm">(가치)</span>+<span class="wbp">ent</span><span class="wbm">(형)</span><span class="wba">→</span>같은 가치의<span class="wba">→</span>동등한</span></span><span class="w"><span class="we">ambivalent</span> <span class="wk">양면적인</span><span class="wb"><span class="wbp">ambi</span><span class="wbm">(양쪽)</span>+<span class="wbp">val</span><span class="wbm">(가치)</span>+<span class="wbp">ent</span><span class="wbm">(형)</span><span class="wba">→</span>양쪽 가치를 가진<span class="wba">→</span>양면적인</span></span></div></div><div class="rcard "><div class="rtop"><span class="rform">lev</span><span class="lgbadge">L</span></div><div class="rmean">들다·가볍다 <span class="e">(lift)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">elevate</span> <span class="wk">높이다</span><span class="wb"><span class="wbp">e</span><span class="wbm">(밖/위로)</span>+<span class="wbp">lev</span><span class="wbm">(들다)</span>+<span class="wbp">ate</span><span class="wbm">(동)</span><span class="wba">→</span>위로 올리다<span class="wba">→</span>높이다</span></span><span class="w"><span class="st">★</span><span class="we">relieve</span> <span class="wk">완화하다</span><span class="wb"><span class="wbp">re</span><span class="wbm">(다시)</span>+<span class="wbp">lieve</span><span class="wbm">(가볍게)</span><span class="wba">→</span>다시 가볍게 하다<span class="wba">→</span>완화하다</span></span><span class="w"><span class="st">★</span><span class="we">alleviate</span> <span class="wk">경감하다</span><span class="wb"><span class="wbp">al</span><span class="wbm">(~쪽으로)</span>+<span class="wbp">lev</span><span class="wbm">(가볍게)</span>+<span class="wbp">iate</span><span class="wbm">(동)</span><span class="wba">→</span>가볍게 만들다<span class="wba">→</span>경감하다</span></span><span class="w"><span class="st">★</span><span class="we">relevant</span> <span class="wk">관련 있는</span><span class="wb"><span class="wbp">re</span><span class="wbm">(다시)</span>+<span class="wbp">lev</span><span class="wbm">(들다)</span>+<span class="wbp">ant</span><span class="wbm">(형)</span><span class="wba">→</span>들어 올려 연관된<span class="wba">→</span>관련 있는</span></span><span class="w"><span class="we">levitate</span> <span class="wk">공중부양하다</span><span class="wb"><span class="wbp">lev</span><span class="wbm">(가볍게)</span>+<span class="wbp">itate</span><span class="wbm">(동)</span><span class="wba">→</span>가볍게 떠오르다<span class="wba">→</span>공중부양하다</span></span><span class="w"><span class="we">levity</span> <span class="wk">경솔함</span><span class="wb"><span class="wbp">lev</span><span class="wbm">(가벼운)</span>+<span class="wbp">ity</span><span class="wbm">(명)</span><span class="wba">→</span>가벼움<span class="wba">→</span>경솔함</span></span></div></div></div>
+          <div class="ft">ORUN ENGLISH · Roots & Affixes Workbook</div>
+        </section>
+        <section class="page"><div class="hb"><div class="l">ORUN <b>ENGLISH</b></div><div class="r">Part 2 · 그리스어 어근</div></div>
+          
+        <div class="eyebrow">Part 2 (1/2)</div>
+        <div class="h2">그리스어 핵심 어근 <span class="en">Greek Roots</span></div>
+        <div class="rule"></div>
+          <div class="rgrid"><div class="rcard g"><div class="rtop"><span class="rform">bio</span><span class="lgbadge">G</span></div><div class="rmean">생명 <span class="e">(life)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">biology</span> <span class="wk">생물학</span><span class="wb"><span class="wbp">bio</span><span class="wbm">(생명)</span>+<span class="wbp">logy</span><span class="wbm">(학문)</span><span class="wba">→</span>생명의 학문<span class="wba">→</span>생물학</span></span><span class="w"><span class="st">★</span><span class="we">biography</span> <span class="wk">전기</span><span class="wb"><span class="wbp">bio</span><span class="wbm">(생명/삶)</span>+<span class="wbp">graphy</span><span class="wbm">(쓰기)</span><span class="wba">→</span>삶을 쓴 글<span class="wba">→</span>전기</span></span><span class="w"><span class="st">★</span><span class="we">antibiotic</span> <span class="wk">항생제</span><span class="wb"><span class="wbp">anti</span><span class="wbm">(맞서)</span>+<span class="wbp">bio</span><span class="wbm">(생명)</span>+<span class="wbp">tic</span><span class="wbm">(형)</span><span class="wba">→</span>균에 맞서는<span class="wba">→</span>항생제</span></span><span class="w"><span class="we">symbiosis</span> <span class="wk">공생</span><span class="wb"><span class="wbp">sym</span><span class="wbm">(함께)</span>+<span class="wbp">bio</span><span class="wbm">(생명)</span>+<span class="wbp">sis</span><span class="wbm">(명)</span><span class="wba">→</span>함께 사는 것<span class="wba">→</span>공생</span></span><span class="w"><span class="we">biome</span> <span class="wk">생물군계</span><span class="wb"><span class="wbp">bio</span><span class="wbm">(생명)</span>+<span class="wbp">me</span><span class="wbm">(영역)</span><span class="wba">→</span>생명이 사는 영역<span class="wba">→</span>생물군계</span></span><span class="w"><span class="we">biotech</span> <span class="wk">생명공학</span><span class="wb"><span class="wbp">bio</span><span class="wbm">(생명)</span>+<span class="wbp">tech</span><span class="wbm">(기술)</span><span class="wba">→</span>생명 기술<span class="wba">→</span>생명공학</span></span></div></div><div class="rcard g"><div class="rtop"><span class="rform">geo</span><span class="lgbadge">G</span></div><div class="rmean">땅 <span class="e">(earth)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">geography</span> <span class="wk">지리학</span><span class="wb"><span class="wbp">geo</span><span class="wbm">(땅)</span>+<span class="wbp">graphy</span><span class="wbm">(쓰기)</span><span class="wba">→</span>땅을 그려 쓴 글<span class="wba">→</span>지리학</span></span><span class="w"><span class="st">★</span><span class="we">geology</span> <span class="wk">지질학</span><span class="wb"><span class="wbp">geo</span><span class="wbm">(땅)</span>+<span class="wbp">logy</span><span class="wbm">(학문)</span><span class="wba">→</span>땅의 학문<span class="wba">→</span>지질학</span></span><span class="w"><span class="st">★</span><span class="we">geometry</span> <span class="wk">기하학</span><span class="wb"><span class="wbp">geo</span><span class="wbm">(땅)</span>+<span class="wbp">metry</span><span class="wbm">(재기)</span><span class="wba">→</span>땅을 재는 학문<span class="wba">→</span>기하학</span></span><span class="w"><span class="we">geothermal</span> <span class="wk">지열의</span><span class="wb"><span class="wbp">geo</span><span class="wbm">(땅)</span>+<span class="wbp">thermal</span><span class="wbm">(열의)</span><span class="wba">→</span>땅의 열<span class="wba">→</span>지열의</span></span><span class="w"><span class="we">geopolitics</span> <span class="wk">지정학</span><span class="wb"><span class="wbp">geo</span><span class="wbm">(땅)</span>+<span class="wbp">politics</span><span class="wbm">(정치)</span><span class="wba">→</span>땅을 두고 벌이는 정치<span class="wba">→</span>지정학</span></span><span class="w"><span class="we">geode</span> <span class="wk">정동석</span><span class="wb"><span class="wbp">geo</span><span class="wbm">(땅)</span>+<span class="wbp">de</span><span class="wbm">(모양)</span><span class="wba">→</span>땅 속의 둥근 돌<span class="wba">→</span>정동석</span></span></div></div><div class="rcard g"><div class="rtop"><span class="rform">graph·gram</span><span class="lgbadge">G</span></div><div class="rmean">쓰다·그림 <span class="e">(write)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">autograph</span> <span class="wk">사인</span><span class="wb"><span class="wbp">auto</span><span class="wbm">(스스로)</span>+<span class="wbp">graph</span><span class="wbm">(쓰다)</span><span class="wba">→</span>스스로 쓴 글씨<span class="wba">→</span>사인</span></span><span class="w"><span class="st">★</span><span class="we">paragraph</span> <span class="wk">단락</span><span class="wb"><span class="wbp">para</span><span class="wbm">(옆에)</span>+<span class="wbp">graph</span><span class="wbm">(쓰다)</span><span class="wba">→</span>옆에 따로 쓴 단락<span class="wba">→</span>단락</span></span><span class="w"><span class="st">★</span><span class="we">diagram</span> <span class="wk">도표</span><span class="wb"><span class="wbp">dia</span><span class="wbm">(가로질러)</span>+<span class="wbp">gram</span><span class="wbm">(그림)</span><span class="wba">→</span>가로질러 그린 그림<span class="wba">→</span>도표</span></span><span class="w"><span class="we">telegram</span> <span class="wk">전보</span><span class="wb"><span class="wbp">tele</span><span class="wbm">(멀리)</span>+<span class="wbp">gram</span><span class="wbm">(쓰다)</span><span class="wba">→</span>멀리 보낸 글<span class="wba">→</span>전보</span></span><span class="w"><span class="st">★</span><span class="we">graphic</span> <span class="wk">그래픽의</span><span class="wb"><span class="wbp">graph</span><span class="wbm">(그림)</span>+<span class="wbp">ic</span><span class="wbm">(형)</span><span class="wba">→</span>그림의<span class="wba">→</span>그래픽의</span></span><span class="w"><span class="st">★</span><span class="we">biography</span> <span class="wk">전기</span><span class="wb"><span class="wbp">bio</span><span class="wbm">(생명/삶)</span>+<span class="wbp">graphy</span><span class="wbm">(쓰기)</span><span class="wba">→</span>삶을 쓴 글<span class="wba">→</span>전기</span></span></div></div><div class="rcard g"><div class="rtop"><span class="rform">log·logy</span><span class="lgbadge">G</span></div><div class="rmean">말·학문 <span class="e">(word)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">dialogue</span> <span class="wk">대화</span><span class="wb"><span class="wbp">dia</span><span class="wbm">(사이에)</span>+<span class="wbp">logue</span><span class="wbm">(말)</span><span class="wba">→</span>둘 사이의 말<span class="wba">→</span>대화</span></span><span class="w"><span class="st">★</span><span class="we">logic</span> <span class="wk">논리</span><span class="wb"><span class="wbp">log</span><span class="wbm">(말·이치)</span>+<span class="wbp">ic</span><span class="wbm">(형)</span><span class="wba">→</span>말의 이치<span class="wba">→</span>논리</span></span><span class="w"><span class="st">★</span><span class="we">apology</span> <span class="wk">사과</span><span class="wb"><span class="wbp">apo</span><span class="wbm">(멀리)</span>+<span class="wbp">logy</span><span class="wbm">(말)</span><span class="wba">→</span>변명의 말<span class="wba">→</span>사과</span></span><span class="w"><span class="st">★</span><span class="we">analogy</span> <span class="wk">유추</span><span class="wb"><span class="wbp">ana</span><span class="wbm">(~따라)</span>+<span class="wbp">logy</span><span class="wbm">(말)</span><span class="wba">→</span>같은 식으로 따져 말함<span class="wba">→</span>유추</span></span><span class="w"><span class="st">★</span><span class="we">ecology</span> <span class="wk">생태학</span><span class="wb"><span class="wbp">eco</span><span class="wbm">(집·환경)</span>+<span class="wbp">logy</span><span class="wbm">(학문)</span><span class="wba">→</span>환경의 학문<span class="wba">→</span>생태학</span></span><span class="w"><span class="st">★</span><span class="we">psychology</span> <span class="wk">심리학</span><span class="wb"><span class="wbp">psycho</span><span class="wbm">(정신)</span>+<span class="wbp">logy</span><span class="wbm">(학문)</span><span class="wba">→</span>정신의 학문<span class="wba">→</span>심리학</span></span></div></div><div class="rcard g"><div class="rtop"><span class="rform">phon</span><span class="lgbadge">G</span></div><div class="rmean">소리 <span class="e">(sound)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">telephone</span> <span class="wk">전화</span><span class="wb"><span class="wbp">tele</span><span class="wbm">(멀리)</span>+<span class="wbp">phone</span><span class="wbm">(소리)</span><span class="wba">→</span>멀리 보내는 소리<span class="wba">→</span>전화</span></span><span class="w"><span class="st">★</span><span class="we">symphony</span> <span class="wk">교향곡</span><span class="wb"><span class="wbp">sym</span><span class="wbm">(함께)</span>+<span class="wbp">phony</span><span class="wbm">(소리)</span><span class="wba">→</span>함께 어울리는 소리<span class="wba">→</span>교향곡</span></span><span class="w"><span class="we">microphone</span> <span class="wk">마이크</span><span class="wb"><span class="wbp">micro</span><span class="wbm">(작은)</span>+<span class="wbp">phone</span><span class="wbm">(소리)</span><span class="wba">→</span>작은 소리도 잡는 것<span class="wba">→</span>마이크</span></span><span class="w"><span class="we">euphony</span> <span class="wk">듣기 좋은 소리</span><span class="wb"><span class="wbp">eu</span><span class="wbm">(좋은)</span>+<span class="wbp">phony</span><span class="wbm">(소리)</span><span class="wba">→</span>좋은 소리<span class="wba">→</span>듣기 좋은 소리</span></span><span class="w"><span class="we">cacophony</span> <span class="wk">불협화음</span><span class="wb"><span class="wbp">caco</span><span class="wbm">(나쁜)</span>+<span class="wbp">phony</span><span class="wbm">(소리)</span><span class="wba">→</span>거슬리는 소리<span class="wba">→</span>불협화음</span></span><span class="w"><span class="we">homophone</span> <span class="wk">동음이의어</span><span class="wb"><span class="wbp">homo</span><span class="wbm">(같은)</span>+<span class="wbp">phone</span><span class="wbm">(소리)</span><span class="wba">→</span>같은 소리<span class="wba">→</span>동음이의어</span></span></div></div><div class="rcard g"><div class="rtop"><span class="rform">phot·photo</span><span class="lgbadge">G</span></div><div class="rmean">빛 <span class="e">(light)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">photograph</span> <span class="wk">사진</span><span class="wb"><span class="wbp">photo</span><span class="wbm">(빛)</span>+<span class="wbp">graph</span><span class="wbm">(그림)</span><span class="wba">→</span>빛으로 그린 것<span class="wba">→</span>사진</span></span><span class="w"><span class="st">★</span><span class="we">photosynthesis</span> <span class="wk">광합성</span><span class="wb"><span class="wbp">photo</span><span class="wbm">(빛)</span>+<span class="wbp">synthesis</span><span class="wbm">(합성)</span><span class="wba">→</span>빛으로 합성<span class="wba">→</span>광합성</span></span><span class="w"><span class="we">photogenic</span> <span class="wk">사진이 잘 받는</span><span class="wb"><span class="wbp">photo</span><span class="wbm">(빛)</span>+<span class="wbp">genic</span><span class="wbm">(낳는)</span><span class="wba">→</span>빛이 잘 받는<span class="wba">→</span>사진이 잘 받는</span></span><span class="w"><span class="we">photoelectric</span> <span class="wk">광전의</span><span class="wb"><span class="wbp">photo</span><span class="wbm">(빛)</span>+<span class="wbp">electric</span><span class="wbm">(전기의)</span><span class="wba">→</span>빛으로 생기는 전기의<span class="wba">→</span>광전의</span></span><span class="w"><span class="we">photon</span> <span class="wk">광자</span><span class="wb"><span class="wbp">phot</span><span class="wbm">(빛)</span>+<span class="wbp">on</span><span class="wbm">(입자)</span><span class="wba">→</span>빛 입자<span class="wba">→</span>광자</span></span><span class="w"><span class="we">telephoto</span> <span class="wk">망원의</span><span class="wb"><span class="wbp">tele</span><span class="wbm">(멀리)</span>+<span class="wbp">photo</span><span class="wbm">(빛/사진)</span><span class="wba">→</span>멀리의 빛을 잡는<span class="wba">→</span>망원의</span></span></div></div><div class="rcard g"><div class="rtop"><span class="rform">scop·scope</span><span class="lgbadge">G</span></div><div class="rmean">보다 <span class="e">(observe)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">microscope</span> <span class="wk">현미경</span><span class="wb"><span class="wbp">micro</span><span class="wbm">(작은)</span>+<span class="wbp">scope</span><span class="wbm">(보다)</span><span class="wba">→</span>작은 것을 보는 기구<span class="wba">→</span>현미경</span></span><span class="w"><span class="st">★</span><span class="we">telescope</span> <span class="wk">망원경</span><span class="wb"><span class="wbp">tele</span><span class="wbm">(멀리)</span>+<span class="wbp">scope</span><span class="wbm">(보다)</span><span class="wba">→</span>멀리 보는 기구<span class="wba">→</span>망원경</span></span><span class="w"><span class="we">periscope</span> <span class="wk">잠망경</span><span class="wb"><span class="wbp">peri</span><span class="wbm">(둘레)</span>+<span class="wbp">scope</span><span class="wbm">(보다)</span><span class="wba">→</span>둘레를 보는 기구<span class="wba">→</span>잠망경</span></span><span class="w"><span class="we">kaleidoscope</span> <span class="wk">만화경</span><span class="wb"><span class="wbp">kaleido</span><span class="wbm">(아름다움)</span>+<span class="wbp">scope</span><span class="wbm">(보다)</span><span class="wba">→</span>아름다운 무늬를 보는 기구<span class="wba">→</span>만화경</span></span><span class="w"><span class="st">★</span><span class="we">skeptic</span> <span class="wk">회의론자</span><span class="wb"><span class="wbp">skep</span><span class="wbm">(보다·살피다)</span>+<span class="wbp">tic</span><span class="wbm">(사람)</span><span class="wba">→</span>의심하며 살피는 사람<span class="wba">→</span>회의론자</span></span><span class="w"><span class="st">★</span><span class="we">scope</span> <span class="wk">범위</span><span class="wb"><span class="wbp">scop</span><span class="wbm">(보다)</span>+e<span class="wba">→</span>보는 범위<span class="wba">→</span>범위</span></span></div></div><div class="rcard g"><div class="rtop"><span class="rform">tele</span><span class="lgbadge">G</span></div><div class="rmean">멀리 <span class="e">(far)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">telephone</span> <span class="wk">전화</span><span class="wb"><span class="wbp">tele</span><span class="wbm">(멀리)</span>+<span class="wbp">phone</span><span class="wbm">(소리)</span><span class="wba">→</span>멀리 보내는 소리<span class="wba">→</span>전화</span></span><span class="w"><span class="st">★</span><span class="we">television</span> <span class="wk">텔레비전</span><span class="wb"><span class="wbp">tele</span><span class="wbm">(멀리)</span>+<span class="wbp">vision</span><span class="wbm">(보다)</span><span class="wba">→</span>멀리 보는 것<span class="wba">→</span>텔레비전</span></span><span class="w"><span class="st">★</span><span class="we">telescope</span> <span class="wk">망원경</span><span class="wb"><span class="wbp">tele</span><span class="wbm">(멀리)</span>+<span class="wbp">scope</span><span class="wbm">(보다)</span><span class="wba">→</span>멀리 보는 기구<span class="wba">→</span>망원경</span></span><span class="w"><span class="we">telepathy</span> <span class="wk">텔레파시</span><span class="wb"><span class="wbp">tele</span><span class="wbm">(멀리)</span>+<span class="wbp">pathy</span><span class="wbm">(느낌)</span><span class="wba">→</span>멀리 느낌을 주고받음<span class="wba">→</span>텔레파시</span></span><span class="w"><span class="we">telegram</span> <span class="wk">전보</span><span class="wb"><span class="wbp">tele</span><span class="wbm">(멀리)</span>+<span class="wbp">gram</span><span class="wbm">(쓰다)</span><span class="wba">→</span>멀리 보낸 글<span class="wba">→</span>전보</span></span><span class="w"><span class="we">telemetry</span> <span class="wk">원격 측정</span><span class="wb"><span class="wbp">tele</span><span class="wbm">(멀리)</span>+<span class="wbp">metry</span><span class="wbm">(재기)</span><span class="wba">→</span>멀리서 재기<span class="wba">→</span>원격 측정</span></span></div></div><div class="rcard g"><div class="rtop"><span class="rform">therm</span><span class="lgbadge">G</span></div><div class="rmean">열 <span class="e">(heat)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">thermometer</span> <span class="wk">온도계</span><span class="wb"><span class="wbp">thermo</span><span class="wbm">(열)</span>+<span class="wbp">meter</span><span class="wbm">(재기)</span><span class="wba">→</span>열을 재는 기구<span class="wba">→</span>온도계</span></span><span class="w"><span class="st">★</span><span class="we">thermal</span> <span class="wk">열의</span><span class="wb"><span class="wbp">therm</span><span class="wbm">(열)</span>+<span class="wbp">al</span><span class="wbm">(형)</span><span class="wba">→</span>열의<span class="wba">→</span>열의</span></span><span class="w"><span class="we">hypothermia</span> <span class="wk">저체온증</span><span class="wb"><span class="wbp">hypo</span><span class="wbm">(아래)</span>+<span class="wbp">therm</span><span class="wbm">(열)</span>+<span class="wbp">ia</span><span class="wbm">(상태)</span><span class="wba">→</span>열이 낮음<span class="wba">→</span>저체온증</span></span><span class="w"><span class="we">thermostat</span> <span class="wk">온도조절기</span><span class="wb"><span class="wbp">thermo</span><span class="wbm">(열)</span>+<span class="wbp">stat</span><span class="wbm">(세움)</span><span class="wba">→</span>열을 일정하게 세우는 것<span class="wba">→</span>온도조절기</span></span><span class="w"><span class="we">thermodynamics</span> <span class="wk">열역학</span><span class="wb"><span class="wbp">thermo</span><span class="wbm">(열)</span>+<span class="wbp">dynamics</span><span class="wbm">(역학)</span><span class="wba">→</span>열의 역학<span class="wba">→</span>열역학</span></span><span class="w"><span class="we">isotherm</span> <span class="wk">등온선</span><span class="wb"><span class="wbp">iso</span><span class="wbm">(같은)</span>+<span class="wbp">therm</span><span class="wbm">(열)</span><span class="wba">→</span>같은 열의 선<span class="wba">→</span>등온선</span></span></div></div><div class="rcard g"><div class="rtop"><span class="rform">chron</span><span class="lgbadge">G</span></div><div class="rmean">시간 <span class="e">(time)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">chronic</span> <span class="wk">만성의</span><span class="wb"><span class="wbp">chron</span><span class="wbm">(시간)</span>+<span class="wbp">ic</span><span class="wbm">(형)</span><span class="wba">→</span>오랜 시간의<span class="wba">→</span>만성의</span></span><span class="w"><span class="st">★</span><span class="we">chronology</span> <span class="wk">연대기</span><span class="wb"><span class="wbp">chrono</span><span class="wbm">(시간)</span>+<span class="wbp">logy</span><span class="wbm">(학문)</span><span class="wba">→</span>시간 순으로 적음<span class="wba">→</span>연대기</span></span><span class="w"><span class="st">★</span><span class="we">synchronize</span> <span class="wk">동기화하다</span><span class="wb"><span class="wbp">syn</span><span class="wbm">(함께)</span>+<span class="wbp">chron</span><span class="wbm">(시간)</span>+<span class="wbp">ize</span><span class="wbm">(동)</span><span class="wba">→</span>같은 시간에 맞추다<span class="wba">→</span>동기화하다</span></span><span class="w"><span class="we">anachronism</span> <span class="wk">시대착오</span><span class="wb"><span class="wbp">ana</span><span class="wbm">(반대로)</span>+<span class="wbp">chron</span><span class="wbm">(시간)</span>+<span class="wbp">ism</span><span class="wbm">(명)</span><span class="wba">→</span>시간이 어긋남<span class="wba">→</span>시대착오</span></span><span class="w"><span class="we">chronicle</span> <span class="wk">연대기</span><span class="wb"><span class="wbp">chron</span><span class="wbm">(시간)</span>+<span class="wbp">icle</span><span class="wbm">(작은)</span><span class="wba">→</span>시간을 적은 작은 기록<span class="wba">→</span>연대기</span></span><span class="w"><span class="we">chronometer</span> <span class="wk">정밀시계</span><span class="wb"><span class="wbp">chrono</span><span class="wbm">(시간)</span>+<span class="wbp">meter</span><span class="wbm">(재기)</span><span class="wba">→</span>시간을 재는 기구<span class="wba">→</span>정밀시계</span></span></div></div></div>
+          <div class="ft">ORUN ENGLISH · Roots & Affixes Workbook</div>
+        </section>
+        <section class="page"><div class="hb"><div class="l">ORUN <b>ENGLISH</b></div><div class="r">Part 2 · 그리스어 어근</div></div>
+          
+        <div class="eyebrow">Part 2</div>
+        <div class="h2">그리스어 핵심 어근 <span class="en">Greek Roots</span></div>
+        <div class="rule"></div>
+          <div class="rgrid"><div class="rcard g"><div class="rtop"><span class="rform">path</span><span class="lgbadge">G</span></div><div class="rmean">감정·병 <span class="e">(feeling)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">sympathy</span> <span class="wk">동정</span><span class="wb"><span class="wbp">sym</span><span class="wbm">(함께)</span>+<span class="wbp">pathy</span><span class="wbm">(느낌)</span><span class="wba">→</span>함께 느낌<span class="wba">→</span>동정</span></span><span class="w"><span class="st">★</span><span class="we">empathy</span> <span class="wk">공감</span><span class="wb"><span class="wbp">em</span><span class="wbm">(안에)</span>+<span class="wbp">pathy</span><span class="wbm">(느낌)</span><span class="wba">→</span>안으로 느낌<span class="wba">→</span>공감</span></span><span class="w"><span class="st">★</span><span class="we">apathy</span> <span class="wk">무관심</span><span class="wb"><span class="wbp">a</span><span class="wbm">(없는)</span>+<span class="wbp">pathy</span><span class="wbm">(느낌)</span><span class="wba">→</span>느낌이 없음<span class="wba">→</span>무관심</span></span><span class="w"><span class="we">antipathy</span> <span class="wk">반감</span><span class="wb"><span class="wbp">anti</span><span class="wbm">(맞서)</span>+<span class="wbp">pathy</span><span class="wbm">(느낌)</span><span class="wba">→</span>맞서는 느낌<span class="wba">→</span>반감</span></span><span class="w"><span class="we">pathology</span> <span class="wk">병리학</span><span class="wb"><span class="wbp">patho</span><span class="wbm">(고통)</span>+<span class="wbp">logy</span><span class="wbm">(학문)</span><span class="wba">→</span>병의 학문<span class="wba">→</span>병리학</span></span><span class="w"><span class="st">★</span><span class="we">pathetic</span> <span class="wk">가련한</span><span class="wb"><span class="wbp">path</span><span class="wbm">(느낌)</span>+<span class="wbp">etic</span><span class="wbm">(형)</span><span class="wba">→</span>가슴을 울리는<span class="wba">→</span>가련한</span></span></div></div><div class="rcard g"><div class="rtop"><span class="rform">psych</span><span class="lgbadge">G</span></div><div class="rmean">마음 <span class="e">(mind)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">psychology</span> <span class="wk">심리학</span><span class="wb"><span class="wbp">psycho</span><span class="wbm">(정신)</span>+<span class="wbp">logy</span><span class="wbm">(학문)</span><span class="wba">→</span>정신의 학문<span class="wba">→</span>심리학</span></span><span class="w"><span class="we">psychic</span> <span class="wk">초능력의</span><span class="wb"><span class="wbp">psych</span><span class="wbm">(정신)</span>+<span class="wbp">ic</span><span class="wbm">(형)</span><span class="wba">→</span>정신의<span class="wba">→</span>초능력의</span></span><span class="w"><span class="st">★</span><span class="we">psychiatry</span> <span class="wk">정신의학</span><span class="wb"><span class="wbp">psych</span><span class="wbm">(정신)</span>+<span class="wbp">iatry</span><span class="wbm">(치료)</span><span class="wba">→</span>정신 치료<span class="wba">→</span>정신의학</span></span><span class="w"><span class="we">psychoanalysis</span> <span class="wk">정신분석</span><span class="wb"><span class="wbp">psycho</span><span class="wbm">(정신)</span>+<span class="wbp">analysis</span><span class="wbm">(분석)</span><span class="wba">→</span>정신을 분석함<span class="wba">→</span>정신분석</span></span><span class="w"><span class="we">psyche</span> <span class="wk">정신</span><span class="wb"><span class="wbp">psych</span><span class="wbm">(정신)</span>+e<span class="wba">→</span>정신<span class="wba">→</span>정신</span></span><span class="w"><span class="we">psychotherapy</span> <span class="wk">심리치료</span><span class="wb"><span class="wbp">psycho</span><span class="wbm">(정신)</span>+<span class="wbp">therapy</span><span class="wbm">(치료)</span><span class="wba">→</span>정신을 치료<span class="wba">→</span>심리치료</span></span></div></div><div class="rcard g"><div class="rtop"><span class="rform">phil</span><span class="lgbadge">G</span></div><div class="rmean">사랑 <span class="e">(love)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">philosophy</span> <span class="wk">철학</span><span class="wb"><span class="wbp">philo</span><span class="wbm">(사랑)</span>+<span class="wbp">sophy</span><span class="wbm">(지혜)</span><span class="wba">→</span>지혜를 사랑<span class="wba">→</span>철학</span></span><span class="w"><span class="st">★</span><span class="we">philanthropy</span> <span class="wk">자선</span><span class="wb"><span class="wbp">phil</span><span class="wbm">(사랑)</span>+<span class="wbp">anthropy</span><span class="wbm">(인간)</span><span class="wba">→</span>인간을 사랑<span class="wba">→</span>자선</span></span><span class="w"><span class="we">bibliophile</span> <span class="wk">애서가</span><span class="wb"><span class="wbp">biblio</span><span class="wbm">(책)</span>+<span class="wbp">phile</span><span class="wbm">(사랑)</span><span class="wba">→</span>책 사랑하는 사람<span class="wba">→</span>애서가</span></span><span class="w"><span class="we">philharmonic</span> <span class="wk">교향악단의</span><span class="wb"><span class="wbp">phil</span><span class="wbm">(사랑)</span>+<span class="wbp">harmonic</span><span class="wbm">(화음)</span><span class="wba">→</span>화음을 사랑<span class="wba">→</span>교향악단의</span></span><span class="w"><span class="we">anglophile</span> <span class="wk">영국 애호가</span><span class="wb"><span class="wbp">anglo</span><span class="wbm">(영국)</span>+<span class="wbp">phile</span><span class="wbm">(사랑)</span><span class="wba">→</span>영국을 사랑<span class="wba">→</span>영국 애호가</span></span><span class="w"><span class="we">philology</span> <span class="wk">문헌학</span><span class="wb"><span class="wbp">philo</span><span class="wbm">(사랑)</span>+<span class="wbp">logy</span><span class="wbm">(말)</span><span class="wba">→</span>말을 사랑함<span class="wba">→</span>문헌학</span></span></div></div><div class="rcard g"><div class="rtop"><span class="rform">morph</span><span class="lgbadge">G</span></div><div class="rmean">형태 <span class="e">(form)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">metamorphosis</span> <span class="wk">변형</span><span class="wb"><span class="wbp">meta</span><span class="wbm">(변화)</span>+<span class="wbp">morph</span><span class="wbm">(모양)</span>+<span class="wbp">osis</span><span class="wbm">(과정)</span><span class="wba">→</span>모양이 변함<span class="wba">→</span>변형</span></span><span class="w"><span class="we">amorphous</span> <span class="wk">무정형의</span><span class="wb"><span class="wbp">a</span><span class="wbm">(없는)</span>+<span class="wbp">morph</span><span class="wbm">(모양)</span>+<span class="wbp">ous</span><span class="wbm">(형)</span><span class="wba">→</span>모양이 없는<span class="wba">→</span>무정형의</span></span><span class="w"><span class="we">morphology</span> <span class="wk">형태학</span><span class="wb"><span class="wbp">morph</span><span class="wbm">(모양)</span>+<span class="wbp">ology</span><span class="wbm">(학문)</span><span class="wba">→</span>모양의 학문<span class="wba">→</span>형태학</span></span><span class="w"><span class="we">anthropomorphic</span> <span class="wk">의인화된</span><span class="wb"><span class="wbp">anthropo</span><span class="wbm">(인간)</span>+<span class="wbp">morph</span><span class="wbm">(모양)</span>+<span class="wbp">ic</span><span class="wbm">(형)</span><span class="wba">→</span>인간의 모양을 한<span class="wba">→</span>의인화된</span></span><span class="w"><span class="we">polymorphism</span> <span class="wk">다형성</span><span class="wb"><span class="wbp">poly</span><span class="wbm">(여러)</span>+<span class="wbp">morph</span><span class="wbm">(모양)</span>+<span class="wbp">ism</span><span class="wbm">(명)</span><span class="wba">→</span>여러 모양<span class="wba">→</span>다형성</span></span><span class="w"><span class="we">morpheme</span> <span class="wk">형태소</span><span class="wb"><span class="wbp">morph</span><span class="wbm">(모양)</span>+<span class="wbp">eme</span><span class="wbm">(단위)</span><span class="wba">→</span>의미의 최소 단위<span class="wba">→</span>형태소</span></span></div></div><div class="rcard g"><div class="rtop"><span class="rform">aut·auto</span><span class="lgbadge">G</span></div><div class="rmean">스스로 <span class="e">(self)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">automatic</span> <span class="wk">자동의</span><span class="wb"><span class="wbp">auto</span><span class="wbm">(스스로)</span>+<span class="wbp">matic</span><span class="wbm">(움직이는)</span><span class="wba">→</span>스스로 움직이는<span class="wba">→</span>자동의</span></span><span class="w"><span class="st">★</span><span class="we">autonomy</span> <span class="wk">자율</span><span class="wb"><span class="wbp">auto</span><span class="wbm">(스스로)</span>+<span class="wbp">nomy</span><span class="wbm">(규칙)</span><span class="wba">→</span>스스로 다스림<span class="wba">→</span>자율</span></span><span class="w"><span class="st">★</span><span class="we">autograph</span> <span class="wk">사인</span><span class="wb"><span class="wbp">auto</span><span class="wbm">(스스로)</span>+<span class="wbp">graph</span><span class="wbm">(쓰다)</span><span class="wba">→</span>스스로 쓴 글씨<span class="wba">→</span>사인</span></span><span class="w"><span class="st">★</span><span class="we">autobiography</span> <span class="wk">자서전</span><span class="wb"><span class="wbp">auto</span><span class="wbm">(스스로)</span>+<span class="wbp">biography</span><span class="wbm">(전기)</span><span class="wba">→</span>스스로 쓴 전기<span class="wba">→</span>자서전</span></span><span class="w"><span class="we">autocracy</span> <span class="wk">독재</span><span class="wb"><span class="wbp">auto</span><span class="wbm">(혼자)</span>+<span class="wbp">cracy</span><span class="wbm">(통치)</span><span class="wba">→</span>혼자 다스림<span class="wba">→</span>독재</span></span><span class="w"><span class="st">★</span><span class="we">authentic</span> <span class="wk">진짜의</span><span class="wb"><span class="wbp">auth</span><span class="wbm">(스스로)</span>+<span class="wbp">entic</span><span class="wbm">(형)</span><span class="wba">→</span>자기로부터 나온<span class="wba">→</span>진짜의</span></span></div></div><div class="rcard g"><div class="rtop"><span class="rform">hydr·hydro</span><span class="lgbadge">G</span></div><div class="rmean">물 <span class="e">(water)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">hydrogen</span> <span class="wk">수소</span><span class="wb"><span class="wbp">hydro</span><span class="wbm">(물)</span>+<span class="wbp">gen</span><span class="wbm">(낳다)</span><span class="wba">→</span>물을 낳는 것<span class="wba">→</span>수소</span></span><span class="w"><span class="st">★</span><span class="we">dehydrate</span> <span class="wk">탈수시키다</span><span class="wb"><span class="wbp">de</span><span class="wbm">(없애)</span>+<span class="wbp">hydr</span><span class="wbm">(물)</span>+<span class="wbp">ate</span><span class="wbm">(동)</span><span class="wba">→</span>물을 빼다<span class="wba">→</span>탈수시키다</span></span><span class="w"><span class="we">hydraulic</span> <span class="wk">수압의</span><span class="wb"><span class="wbp">hydr</span><span class="wbm">(물)</span>+<span class="wbp">aulic</span><span class="wbm">(관)</span><span class="wba">→</span>물의 힘으로 움직이는<span class="wba">→</span>수압의</span></span><span class="w"><span class="we">hydroelectric</span> <span class="wk">수력의</span><span class="wb"><span class="wbp">hydro</span><span class="wbm">(물)</span>+<span class="wbp">electric</span><span class="wbm">(전기)</span><span class="wba">→</span>물로 만드는 전기의<span class="wba">→</span>수력의</span></span><span class="w"><span class="we">hydrophobia</span> <span class="wk">공수병</span><span class="wb"><span class="wbp">hydro</span><span class="wbm">(물)</span>+<span class="wbp">phobia</span><span class="wbm">(공포)</span><span class="wba">→</span>물 공포<span class="wba">→</span>공수병</span></span><span class="w"><span class="we">hydrate</span> <span class="wk">수분을 공급하다</span><span class="wb"><span class="wbp">hydr</span><span class="wbm">(물)</span>+<span class="wbp">ate</span><span class="wbm">(동)</span><span class="wba">→</span>물을 주다<span class="wba">→</span>수분을 공급하다</span></span></div></div><div class="rcard g"><div class="rtop"><span class="rform">gen</span><span class="lgbadge">G</span></div><div class="rmean">출생·종류 <span class="e">(birth)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">generate</span> <span class="wk">생성하다</span><span class="wb"><span class="wbp">gen</span><span class="wbm">(낳다)</span>+<span class="wbp">erate</span><span class="wbm">(동)</span><span class="wba">→</span>만들어 내다<span class="wba">→</span>생성하다</span></span><span class="w"><span class="st">★</span><span class="we">genetic</span> <span class="wk">유전의</span><span class="wb"><span class="wbp">gen</span><span class="wbm">(낳다)</span>+<span class="wbp">etic</span><span class="wbm">(형)</span><span class="wba">→</span>태어날 때부터의<span class="wba">→</span>유전의</span></span><span class="w"><span class="st">★</span><span class="we">genuine</span> <span class="wk">진짜의</span><span class="wb"><span class="wbp">gen</span><span class="wbm">(낳다)</span>+<span class="wbp">uine</span><span class="wbm">(형)</span><span class="wba">→</span>본디 그렇게 태어난<span class="wba">→</span>진짜의</span></span><span class="w"><span class="st">★</span><span class="we">genre</span> <span class="wk">장르</span><span class="wb"><span class="wbp">gen</span><span class="wbm">(낳다)</span>+re<span class="wba">→</span>같이 태어난 종류<span class="wba">→</span>장르</span></span><span class="w"><span class="we">homogeneous</span> <span class="wk">균질의</span><span class="wb"><span class="wbp">homo</span><span class="wbm">(같은)</span>+<span class="wbp">gen</span><span class="wbm">(낳다)</span>+<span class="wbp">eous</span><span class="wbm">(형)</span><span class="wba">→</span>같이 태어난<span class="wba">→</span>균질의</span></span><span class="w"><span class="we">pathogen</span> <span class="wk">병원체</span><span class="wb"><span class="wbp">patho</span><span class="wbm">(병)</span>+<span class="wbp">gen</span><span class="wbm">(낳다)</span><span class="wba">→</span>병을 낳는 것<span class="wba">→</span>병원체</span></span></div></div><div class="rcard g"><div class="rtop"><span class="rform">anthrop</span><span class="lgbadge">G</span></div><div class="rmean">인간 <span class="e">(human)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">anthropology</span> <span class="wk">인류학</span><span class="wb"><span class="wbp">anthropo</span><span class="wbm">(인간)</span>+<span class="wbp">logy</span><span class="wbm">(학문)</span><span class="wba">→</span>인간의 학문<span class="wba">→</span>인류학</span></span><span class="w"><span class="st">★</span><span class="we">philanthropy</span> <span class="wk">자선</span><span class="wb"><span class="wbp">phil</span><span class="wbm">(사랑)</span>+<span class="wbp">anthropy</span><span class="wbm">(인간)</span><span class="wba">→</span>인간을 사랑<span class="wba">→</span>자선</span></span><span class="w"><span class="we">misanthrope</span> <span class="wk">인간혐오자</span><span class="wb"><span class="wbp">mis</span><span class="wbm">(싫어)</span>+<span class="wbp">anthrope</span><span class="wbm">(인간)</span><span class="wba">→</span>인간을 싫어하는 사람<span class="wba">→</span>인간혐오자</span></span><span class="w"><span class="we">anthropomorphic</span> <span class="wk">의인화된</span><span class="wb"><span class="wbp">anthropo</span><span class="wbm">(인간)</span>+<span class="wbp">morph</span><span class="wbm">(모양)</span>+<span class="wbp">ic</span><span class="wbm">(형)</span><span class="wba">→</span>인간의 모양을 한<span class="wba">→</span>의인화된</span></span><span class="w"><span class="we">anthropocentric</span> <span class="wk">인간중심적인</span><span class="wb"><span class="wbp">anthropo</span><span class="wbm">(인간)</span>+<span class="wbp">centric</span><span class="wbm">(중심)</span><span class="wba">→</span>인간 중심의<span class="wba">→</span>인간중심적인</span></span><span class="w"><span class="we">anthropoid</span> <span class="wk">유인원의</span><span class="wb"><span class="wbp">anthrop</span><span class="wbm">(인간)</span>+<span class="wbp">oid</span><span class="wbm">(닮은)</span><span class="wba">→</span>인간을 닮은<span class="wba">→</span>유인원의</span></span></div></div><div class="rcard g"><div class="rtop"><span class="rform">crat·cracy</span><span class="lgbadge">G</span></div><div class="rmean">지배 <span class="e">(rule)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">democracy</span> <span class="wk">민주주의</span><span class="wb"><span class="wbp">demo</span><span class="wbm">(국민)</span>+<span class="wbp">cracy</span><span class="wbm">(통치)</span><span class="wba">→</span>국민의 통치<span class="wba">→</span>민주주의</span></span><span class="w"><span class="we">aristocracy</span> <span class="wk">귀족정치</span><span class="wb"><span class="wbp">aristo</span><span class="wbm">(최고)</span>+<span class="wbp">cracy</span><span class="wbm">(통치)</span><span class="wba">→</span>귀족의 통치<span class="wba">→</span>귀족정치</span></span><span class="w"><span class="st">★</span><span class="we">bureaucracy</span> <span class="wk">관료제</span><span class="wb"><span class="wbp">bureau</span><span class="wbm">(사무)</span>+<span class="wbp">cracy</span><span class="wbm">(통치)</span><span class="wba">→</span>관료의 통치<span class="wba">→</span>관료제</span></span><span class="w"><span class="we">autocrat</span> <span class="wk">독재자</span><span class="wb"><span class="wbp">auto</span><span class="wbm">(혼자)</span>+<span class="wbp">crat</span><span class="wbm">(통치자)</span><span class="wba">→</span>혼자 다스리는 자<span class="wba">→</span>독재자</span></span><span class="w"><span class="we">technocracy</span> <span class="wk">기술관료제</span><span class="wb"><span class="wbp">techno</span><span class="wbm">(기술)</span>+<span class="wbp">cracy</span><span class="wbm">(통치)</span><span class="wba">→</span>기술자의 통치<span class="wba">→</span>기술관료제</span></span><span class="w"><span class="we">plutocracy</span> <span class="wk">금권정치</span><span class="wb"><span class="wbp">pluto</span><span class="wbm">(부)</span>+<span class="wbp">cracy</span><span class="wbm">(통치)</span><span class="wba">→</span>부자의 통치<span class="wba">→</span>금권정치</span></span></div></div><div class="rcard g"><div class="rtop"><span class="rform">onym</span><span class="lgbadge">G</span></div><div class="rmean">이름 <span class="e">(name)</span></div><div class="rwords"><span class="w"><span class="st">★</span><span class="we">synonym</span> <span class="wk">동의어</span><span class="wb"><span class="wbp">syn</span><span class="wbm">(같이)</span>+<span class="wbp">nym</span><span class="wbm">(이름)</span><span class="wba">→</span>같은 이름<span class="wba">→</span>동의어</span></span><span class="w"><span class="st">★</span><span class="we">antonym</span> <span class="wk">반의어</span><span class="wb"><span class="wbp">ant</span><span class="wbm">(반대)</span>+<span class="wbp">nym</span><span class="wbm">(이름)</span><span class="wba">→</span>반대 이름<span class="wba">→</span>반의어</span></span><span class="w"><span class="st">★</span><span class="we">anonymous</span> <span class="wk">익명의</span><span class="wb"><span class="wbp">an</span><span class="wbm">(없는)</span>+<span class="wbp">onym</span><span class="wbm">(이름)</span>+<span class="wbp">ous</span><span class="wbm">(형)</span><span class="wba">→</span>이름이 없는<span class="wba">→</span>익명의</span></span><span class="w"><span class="we">pseudonym</span> <span class="wk">가명</span><span class="wb"><span class="wbp">pseudo</span><span class="wbm">(가짜)</span>+<span class="wbp">nym</span><span class="wbm">(이름)</span><span class="wba">→</span>가짜 이름<span class="wba">→</span>가명</span></span><span class="w"><span class="st">★</span><span class="we">acronym</span> <span class="wk">약어</span><span class="wb"><span class="wbp">acro</span><span class="wbm">(끝/꼭대기)</span>+<span class="wbp">nym</span><span class="wbm">(이름)</span><span class="wba">→</span>머리글자만 모은 이름<span class="wba">→</span>약어</span></span><span class="w"><span class="we">homonym</span> <span class="wk">동음이의어</span><span class="wb"><span class="wbp">homo</span><span class="wbm">(같은)</span>+<span class="wbp">nym</span><span class="wbm">(이름)</span><span class="wba">→</span>같은 소리의 이름<span class="wba">→</span>동음이의어</span></span></div></div></div>
+          <div class="ft">ORUN ENGLISH · Roots & Affixes Workbook</div>
+        </section>
+<section class="page"><div class="hb"><div class="l">ORUN <b>ENGLISH</b></div><div class="r">Part 3 · 접두사 PREFIXES</div></div>
+  <div class="eyebrow">Part 3</div>
+  <div class="h2">접두사 — 부정과 수 <span class="en">Negative &amp; Number</span></div>
+  <div class="rule"></div>
+  <div class="lede">접두사는 어근 앞에 붙어 <b>의미의 방향</b>을 바꾼다. 특히 <b>부정·반대</b> 접두사는 반의어를
+  만드는 핵심이므로 수능 어휘·빈칸에서 자주 출제된다.</div>
+  <div style="margin-top:12px"><div class="pgrid"><div class="catlabel">부정·반대 — Negative / Opposite</div><div class="pfx"><div class="pt"><span class="pf">in·im·il·ir-</span><span class="pm">~이 아닌 (not)</span></div><div class="pw"><div class="pwlist"><div class="pwi"><b>invalid</b> <span class="ki">무효한</span><span class="wb"><span class="wbp">in</span><span class="wbm">(~아닌)</span>+<span class="wbp">valid</span><span class="wbm">(유효한)</span><span class="wba">→</span>무효한</span></div><div class="pwi"><b>impossible</b> <span class="ki">불가능한</span><span class="wb"><span class="wbp">im</span><span class="wbm">(~아닌)</span>+<span class="wbp">possible</span><span class="wbm">(가능한)</span><span class="wba">→</span>불가능한</span></div><div class="pwi"><b>illegal</b> <span class="ki">불법의</span><span class="wb"><span class="wbp">il</span><span class="wbm">(~아닌)</span>+<span class="wbp">legal</span><span class="wbm">(합법의)</span><span class="wba">→</span>불법의</span></div><div class="pwi"><b>irregular</b> <span class="ki">불규칙한</span><span class="wb"><span class="wbp">ir</span><span class="wbm">(~아닌)</span>+<span class="wbp">regular</span><span class="wbm">(규칙적인)</span><span class="wba">→</span>불규칙한</span></div></div></div></div><div class="pfx"><div class="pt"><span class="pf">un-</span><span class="pm">~이 아닌 (not)</span></div><div class="pw"><div class="pwlist"><div class="pwi"><b>unable</b> <span class="ki">할 수 없는</span><span class="wb"><span class="wbp">un</span><span class="wbm">(~아닌)</span>+<span class="wbp">able</span><span class="wbm">(할 수 있는)</span><span class="wba">→</span>할 수 없는</span></div><div class="pwi"><b>unfair</b> <span class="ki">불공정한</span><span class="wb"><span class="wbp">un</span><span class="wbm">(~아닌)</span>+<span class="wbp">fair</span><span class="wbm">(공정한)</span><span class="wba">→</span>불공정한</span></div><div class="pwi"><b>unknown</b> <span class="ki">알려지지 않은</span><span class="wb"><span class="wbp">un</span><span class="wbm">(~아닌)</span>+<span class="wbp">known</span><span class="wbm">(알려진)</span><span class="wba">→</span>알려지지 않은</span></div><div class="pwi"><b>unlikely</b> <span class="ki">가능성 없는</span><span class="wb"><span class="wbp">un</span><span class="wbm">(~아닌)</span>+<span class="wbp">likely</span><span class="wbm">(가능성 있는)</span><span class="wba">→</span>가능성 없는</span></div></div></div></div><div class="pfx"><div class="pt"><span class="pf">dis-</span><span class="pm">아닌·반대 (apart)</span></div><div class="pw"><div class="pwlist"><div class="pwi"><b>disagree</b> <span class="ki">동의하지 않다</span><span class="wb"><span class="wbp">dis</span><span class="wbm">(반대)</span>+<span class="wbp">agree</span><span class="wbm">(동의)</span><span class="wba">→</span>동의하지 않다</span></div><div class="pwi"><b>disappear</b> <span class="ki">사라지다</span><span class="wb"><span class="wbp">dis</span><span class="wbm">(반대)</span>+<span class="wbp">appear</span><span class="wbm">(나타나다)</span><span class="wba">→</span>사라지다</span></div><div class="pwi"><b>dishonest</b> <span class="ki">부정직한</span><span class="wb"><span class="wbp">dis</span><span class="wbm">(반대)</span>+<span class="wbp">honest</span><span class="wbm">(정직한)</span><span class="wba">→</span>부정직한</span></div><div class="pwi"><b>disorder</b> <span class="ki">무질서</span><span class="wb"><span class="wbp">dis</span><span class="wbm">(반대)</span>+<span class="wbp">order</span><span class="wbm">(질서)</span><span class="wba">→</span>무질서</span></div></div></div></div><div class="pfx"><div class="pt"><span class="pf">mis-</span><span class="pm">잘못 (wrong)</span></div><div class="pw"><div class="pwlist"><div class="pwi"><b>mistake</b> <span class="ki">실수</span><span class="wb"><span class="wbp">mis</span><span class="wbm">(잘못)</span>+<span class="wbp">take</span><span class="wbm">(취하다)</span><span class="wba">→</span>잘못 취함 → 실수</span></div><div class="pwi"><b>misunderstand</b> <span class="ki">오해하다</span><span class="wb"><span class="wbp">mis</span><span class="wbm">(잘못)</span>+<span class="wbp">understand</span><span class="wbm">(이해)</span><span class="wba">→</span>오해하다</span></div><div class="pwi"><b>misuse</b> <span class="ki">오용하다</span><span class="wb"><span class="wbp">mis</span><span class="wbm">(잘못)</span>+<span class="wbp">use</span><span class="wbm">(사용)</span><span class="wba">→</span>오용하다</span></div><div class="pwi"><b>mislead</b> <span class="ki">오도하다</span><span class="wb"><span class="wbp">mis</span><span class="wbm">(잘못)</span>+<span class="wbp">lead</span><span class="wbm">(이끌다)</span><span class="wba">→</span>오도하다</span></div></div></div></div><div class="pfx"><div class="pt"><span class="pf">anti-</span><span class="pm">반대·대항 (against)</span></div><div class="pw"><div class="pwlist"><div class="pwi"><b>antibiotic</b> <span class="ki">항생제</span><span class="wb"><span class="wbp">anti</span><span class="wbm">(맞서)</span>+<span class="wbp">bio</span><span class="wbm">(생명)</span>+<span class="wbp">tic</span><span class="wbm">(형)</span><span class="wba">→</span>균을 죽이는 → 항생제</span></div><div class="pwi"><b>antisocial</b> <span class="ki">반사회적인</span><span class="wb"><span class="wbp">anti</span><span class="wbm">(맞서)</span>+<span class="wbp">social</span><span class="wbm">(사회의)</span><span class="wba">→</span>반사회적인</span></div><div class="pwi"><b>antibody</b> <span class="ki">항체</span><span class="wb"><span class="wbp">anti</span><span class="wbm">(맞서)</span>+<span class="wbp">body</span><span class="wbm">(몸)</span><span class="wba">→</span>몸을 지키는 것 → 항체</span></div><div class="pwi"><b>antipathy</b> <span class="ki">반감</span><span class="wb"><span class="wbp">anti</span><span class="wbm">(맞서)</span>+<span class="wbp">pathy</span><span class="wbm">(느낌)</span><span class="wba">→</span>반감</span></div></div></div></div><div class="pfx"><div class="pt"><span class="pf">contra·counter-</span><span class="pm">반대 (against)</span></div><div class="pw"><div class="pwlist"><div class="pwi"><b>contradict</b> <span class="ki">반박하다</span><span class="wb"><span class="wbp">contra</span><span class="wbm">(반대로)</span>+<span class="wbp">dict</span><span class="wbm">(말하다)</span><span class="wba">→</span>반박하다</span></div><div class="pwi"><b>counterpart</b> <span class="ki">상대방</span><span class="wb"><span class="wbp">counter</span><span class="wbm">(반대)</span>+<span class="wbp">part</span><span class="wbm">(부분)</span><span class="wba">→</span>짝이 되는 상대 → 상대방</span></div><div class="pwi"><b>counteract</b> <span class="ki">대응하다</span><span class="wb"><span class="wbp">counter</span><span class="wbm">(반대)</span>+<span class="wbp">act</span><span class="wbm">(작용)</span><span class="wba">→</span>반대로 작용 → 대응하다</span></div><div class="pwi"><b>contrast</b> <span class="ki">대조</span><span class="wb"><span class="wbp">contra</span><span class="wbm">(반대)</span>+<span class="wbp">st</span><span class="wbm">(서다)</span><span class="wba">→</span>반대로 세움 → 대조</span></div></div></div></div><div class="catlabel">수·양 — Number / Quantity</div><div class="pfx"><div class="pt"><span class="pf">mono·uni-</span><span class="pm">하나 (one)</span></div><div class="pw"><div class="pwlist"><div class="pwi"><b>monologue</b> <span class="ki">독백</span><span class="wb"><span class="wbp">mono</span><span class="wbm">(하나)</span>+<span class="wbp">logue</span><span class="wbm">(말)</span><span class="wba">→</span>혼잣말 → 독백</span></div><div class="pwi"><b>monopoly</b> <span class="ki">독점</span><span class="wb"><span class="wbp">mono</span><span class="wbm">(하나)</span>+<span class="wbp">poly</span><span class="wbm">(팔다)</span><span class="wba">→</span>혼자 팔다 → 독점</span></div><div class="pwi"><b>unique</b> <span class="ki">독특한</span><span class="wb"><span class="wbp">uni</span><span class="wbm">(하나)</span>+<span class="wbp">que</span><span class="wbm">(형)</span><span class="wba">→</span>단 하나의 → 독특한</span></div><div class="pwi"><b>unify</b> <span class="ki">통합하다</span><span class="wb"><span class="wbp">uni</span><span class="wbm">(하나)</span>+<span class="wbp">fy</span><span class="wbm">(만들다)</span><span class="wba">→</span>하나로 만들다 → 통합하다</span></div></div></div></div><div class="pfx"><div class="pt"><span class="pf">bi·du-</span><span class="pm">둘 (two)</span></div><div class="pw"><div class="pwlist"><div class="pwi"><b>bilingual</b> <span class="ki">2개 국어의</span><span class="wb"><span class="wbp">bi</span><span class="wbm">(둘)</span>+<span class="wbp">lingual</span><span class="wbm">(혀의)</span><span class="wba">→</span>두 언어를 쓰는 → 2개 국어의</span></div><div class="pwi"><b>bisect</b> <span class="ki">이등분하다</span><span class="wb"><span class="wbp">bi</span><span class="wbm">(둘)</span>+<span class="wbp">sect</span><span class="wbm">(자르다)</span><span class="wba">→</span>둘로 자르다 → 이등분하다</span></div><div class="pwi"><b>dual</b> <span class="ki">이중의</span><span class="wb"><span class="wbp">du</span><span class="wbm">(둘)</span>+<span class="wbp">al</span><span class="wbm">(형)</span><span class="wba">→</span>둘의 → 이중의</span></div><div class="pwi"><b>duplicate</b> <span class="ki">복제하다</span><span class="wb"><span class="wbp">du</span><span class="wbm">(둘)</span>+<span class="wbp">plicate</span><span class="wbm">(접다)</span><span class="wba">→</span>둘로 접다 → 복제하다</span></div></div></div></div><div class="pfx"><div class="pt"><span class="pf">multi·poly-</span><span class="pm">많은 (many)</span></div><div class="pw"><div class="pwlist"><div class="pwi"><b>multiple</b> <span class="ki">다수의</span><span class="wb"><span class="wbp">multi</span><span class="wbm">(많은)</span>+<span class="wbp">ple</span><span class="wbm">(겹)</span><span class="wba">→</span>여러 겹의 → 다수의</span></div><div class="pwi"><b>multitude</b> <span class="ki">다수</span><span class="wb"><span class="wbp">multi</span><span class="wbm">(많은)</span>+<span class="wbp">tude</span><span class="wbm">(상태)</span><span class="wba">→</span>많음 → 다수</span></div><div class="pwi"><b>polygon</b> <span class="ki">다각형</span><span class="wb"><span class="wbp">poly</span><span class="wbm">(많은)</span>+<span class="wbp">gon</span><span class="wbm">(각)</span><span class="wba">→</span>여러 각의 도형 → 다각형</span></div><div class="pwi"><b>polyglot</b> <span class="ki">다국어 사용자</span><span class="wb"><span class="wbp">poly</span><span class="wbm">(많은)</span>+<span class="wbp">glot</span><span class="wbm">(혀)</span><span class="wba">→</span>여러 언어를 쓰는 사람 → 다국어 사용자</span></div></div></div></div><div class="pfx"><div class="pt"><span class="pf">semi-</span><span class="pm">절반 (half)</span></div><div class="pw"><div class="pwlist"><div class="pwi"><b>semicircle</b> <span class="ki">반원</span><span class="wb"><span class="wbp">semi</span><span class="wbm">(절반)</span>+<span class="wbp">circle</span><span class="wbm">(원)</span><span class="wba">→</span>반원</span></div><div class="pwi"><b>semifinal</b> <span class="ki">준결승</span><span class="wb"><span class="wbp">semi</span><span class="wbm">(절반)</span>+<span class="wbp">final</span><span class="wbm">(결승)</span><span class="wba">→</span>결승 직전 → 준결승</span></div><div class="pwi"><b>semiconductor</b> <span class="ki">반도체</span><span class="wb"><span class="wbp">semi</span><span class="wbm">(절반)</span>+<span class="wbp">conductor</span><span class="wbm">(도체)</span><span class="wba">→</span>반쯤 통하는 것 → 반도체</span></div><div class="pwi"><b>semiannual</b> <span class="ki">반년마다의</span><span class="wb"><span class="wbp">semi</span><span class="wbm">(절반)</span>+<span class="wbp">annual</span><span class="wbm">(연간)</span><span class="wba">→</span>반년마다의</span></div></div></div></div><div class="pfx"><div class="pt"><span class="pf">omni-</span><span class="pm">모든 (all)</span></div><div class="pw"><div class="pwlist"><div class="pwi"><b>omnipotent</b> <span class="ki">전능한</span><span class="wb"><span class="wbp">omni</span><span class="wbm">(모든)</span>+<span class="wbp">potent</span><span class="wbm">(힘)</span><span class="wba">→</span>모든 힘을 가진 → 전능한</span></div><div class="pwi"><b>omnipresent</b> <span class="ki">어디에나 있는</span><span class="wb"><span class="wbp">omni</span><span class="wbm">(모든)</span>+<span class="wbp">present</span><span class="wbm">(있는)</span><span class="wba">→</span>모든 곳에 있는 → 어디에나 있는</span></div><div class="pwi"><b>omnivore</b> <span class="ki">잡식동물</span><span class="wb"><span class="wbp">omni</span><span class="wbm">(모든)</span>+<span class="wbp">vore</span><span class="wbm">(먹다)</span><span class="wba">→</span>다 먹는 것 → 잡식동물</span></div><div class="pwi"><b>omniscient</b> <span class="ki">전지의</span><span class="wb"><span class="wbp">omni</span><span class="wbm">(모든)</span>+<span class="wbp">scient</span><span class="wbm">(아는)</span><span class="wba">→</span>모두 아는 → 전지의</span></div></div></div></div></div></div>
+  <div class="ft">ORUN ENGLISH · Roots & Affixes Workbook</div>
+</section>
+<section class="page"><div class="hb"><div class="l">ORUN <b>ENGLISH</b></div><div class="r">Part 3 · 접두사 PREFIXES</div></div>
+  <div class="eyebrow">Part 3</div>
+  <div style="margin-top:12px"><div class="pgrid"><div class="catlabel">위치·방향 — Position / Direction</div><div class="pfx"><div class="pt"><span class="pf">pre-</span><span class="pm">앞·미리 (before)</span></div><div class="pw"><div class="pwlist"><div class="pwi"><b>preview</b> <span class="ki">미리보기</span><span class="wb"><span class="wbp">pre</span><span class="wbm">(미리)</span>+<span class="wbp">view</span><span class="wbm">(보다)</span><span class="wba">→</span>미리보기</span></div><div class="pwi"><b>predict</b> <span class="ki">예측하다</span><span class="wb"><span class="wbp">pre</span><span class="wbm">(미리)</span>+<span class="wbp">dict</span><span class="wbm">(말하다)</span><span class="wba">→</span>예측하다</span></div><div class="pwi"><b>prevent</b> <span class="ki">막다</span><span class="wb"><span class="wbp">pre</span><span class="wbm">(미리)</span>+<span class="wbp">vent</span><span class="wbm">(오다)</span><span class="wba">→</span>미리 와 막다 → 막다</span></div><div class="pwi"><b>precede</b> <span class="ki">앞서다</span><span class="wb"><span class="wbp">pre</span><span class="wbm">(앞서)</span>+<span class="wbp">cede</span><span class="wbm">(가다)</span><span class="wba">→</span>앞서 가다 → 앞서다</span></div></div></div></div><div class="pfx"><div class="pt"><span class="pf">post-</span><span class="pm">뒤·후 (after)</span></div><div class="pw"><div class="pwlist"><div class="pwi"><b>postpone</b> <span class="ki">연기하다</span><span class="wb"><span class="wbp">post</span><span class="wbm">(뒤)</span>+<span class="wbp">pone</span><span class="wbm">(놓다)</span><span class="wba">→</span>뒤로 놓다 → 연기하다</span></div><div class="pwi"><b>postwar</b> <span class="ki">전후의</span><span class="wb"><span class="wbp">post</span><span class="wbm">(뒤)</span>+<span class="wbp">war</span><span class="wbm">(전쟁)</span><span class="wba">→</span>전쟁 뒤의 → 전후의</span></div><div class="pwi"><b>postscript</b> <span class="ki">추신</span><span class="wb"><span class="wbp">post</span><span class="wbm">(뒤)</span>+<span class="wbp">script</span><span class="wbm">(쓴 것)</span><span class="wba">→</span>뒤에 적은 것 → 추신</span></div><div class="pwi"><b>posterior</b> <span class="ki">뒤쪽의</span><span class="wb"><span class="wbp">post</span><span class="wbm">(뒤)</span>+<span class="wbp">erior</span><span class="wbm">(쪽)</span><span class="wba">→</span>뒤쪽의</span></div></div></div></div><div class="pfx"><div class="pt"><span class="pf">pro-</span><span class="pm">앞으로 (forward)</span></div><div class="pw"><div class="pwlist"><div class="pwi"><b>progress</b> <span class="ki">진보</span><span class="wb"><span class="wbp">pro</span><span class="wbm">(앞으로)</span>+<span class="wbp">gress</span><span class="wbm">(가다)</span><span class="wba">→</span>진보</span></div><div class="pwi"><b>promote</b> <span class="ki">촉진하다</span><span class="wb"><span class="wbp">pro</span><span class="wbm">(앞으로)</span>+<span class="wbp">mote</span><span class="wbm">(움직이다)</span><span class="wba">→</span>앞으로 밀다 → 촉진하다</span></div><div class="pwi"><b>propose</b> <span class="ki">제안하다</span><span class="wb"><span class="wbp">pro</span><span class="wbm">(앞으로)</span>+<span class="wbp">pose</span><span class="wbm">(놓다)</span><span class="wba">→</span>제안하다</span></div><div class="pwi"><b>project</b> <span class="ki">계획하다</span><span class="wb"><span class="wbp">pro</span><span class="wbm">(앞으로)</span>+<span class="wbp">ject</span><span class="wbm">(던지다)</span><span class="wba">→</span>계획하다</span></div></div></div></div><div class="pfx"><div class="pt"><span class="pf">re-</span><span class="pm">다시·뒤로 (again/back)</span></div><div class="pw"><div class="pwlist"><div class="pwi"><b>review</b> <span class="ki">검토하다</span><span class="wb"><span class="wbp">re</span><span class="wbm">(다시)</span>+<span class="wbp">view</span><span class="wbm">(보다)</span><span class="wba">→</span>다시 보다 → 검토하다</span></div><div class="pwi"><b>recover</b> <span class="ki">회복하다</span><span class="wb"><span class="wbp">re</span><span class="wbm">(다시)</span>+<span class="wbp">cover</span><span class="wbm">(덮다)</span><span class="wba">→</span>다시 덮어 회복 → 회복하다</span></div><div class="pwi"><b>reverse</b> <span class="ki">뒤집다</span><span class="wb"><span class="wbp">re</span><span class="wbm">(뒤로)</span>+<span class="wbp">verse</span><span class="wbm">(돌리다)</span><span class="wba">→</span>뒤집다</span></div><div class="pwi"><b>retreat</b> <span class="ki">후퇴하다</span><span class="wb"><span class="wbp">re</span><span class="wbm">(뒤로)</span>+<span class="wbp">treat</span><span class="wbm">(끌다)</span><span class="wba">→</span>뒤로 물러나다 → 후퇴하다</span></div></div></div></div><div class="pfx"><div class="pt"><span class="pf">sub-</span><span class="pm">아래 (under)</span></div><div class="pw"><div class="pwlist"><div class="pwi"><b>submarine</b> <span class="ki">잠수함</span><span class="wb"><span class="wbp">sub</span><span class="wbm">(아래)</span>+<span class="wbp">marine</span><span class="wbm">(바다)</span><span class="wba">→</span>바다 아래의 배 → 잠수함</span></div><div class="pwi"><b>subordinate</b> <span class="ki">부하의</span><span class="wb"><span class="wbp">sub</span><span class="wbm">(아래)</span>+<span class="wbp">ordin</span><span class="wbm">(차례)</span>+<span class="wbp">ate</span><span class="wbm">(형)</span><span class="wba">→</span>아래 차례의 → 부하의</span></div><div class="pwi"><b>subtract</b> <span class="ki">빼다</span><span class="wb"><span class="wbp">sub</span><span class="wbm">(아래로)</span>+<span class="wbp">tract</span><span class="wbm">(끌다)</span><span class="wba">→</span>빼다</span></div><div class="pwi"><b>submit</b> <span class="ki">제출하다</span><span class="wb"><span class="wbp">sub</span><span class="wbm">(아래로)</span>+<span class="wbp">mit</span><span class="wbm">(보내다)</span><span class="wba">→</span>제출하다</span></div></div></div></div><div class="pfx"><div class="pt"><span class="pf">super·sur-</span><span class="pm">위·초과 (over)</span></div><div class="pw"><div class="pwlist"><div class="pwi"><b>supervise</b> <span class="ki">감독하다</span><span class="wb"><span class="wbp">super</span><span class="wbm">(위에서)</span>+<span class="wbp">vise</span><span class="wbm">(보다)</span><span class="wba">→</span>감독하다</span></div><div class="pwi"><b>superior</b> <span class="ki">우월한</span><span class="wb"><span class="wbp">super</span><span class="wbm">(위)</span>+<span class="wbp">ior</span><span class="wbm">(더)</span><span class="wba">→</span>위쪽의 → 우월한</span></div><div class="pwi"><b>surface</b> <span class="ki">표면</span><span class="wb"><span class="wbp">sur</span><span class="wbm">(위)</span>+<span class="wbp">face</span><span class="wbm">(면)</span><span class="wba">→</span>위쪽 면 → 표면</span></div><div class="pwi"><b>surplus</b> <span class="ki">잉여</span><span class="wb"><span class="wbp">sur</span><span class="wbm">(위/넘는)</span>+<span class="wbp">plus</span><span class="wbm">(더한)</span><span class="wba">→</span>남는 양 → 잉여</span></div></div></div></div><div class="pfx"><div class="pt"><span class="pf">inter-</span><span class="pm">사이 (between)</span></div><div class="pw"><div class="pwlist"><div class="pwi"><b>interact</b> <span class="ki">상호작용하다</span><span class="wb"><span class="wbp">inter</span><span class="wbm">(사이)</span>+<span class="wbp">act</span><span class="wbm">(행위)</span><span class="wba">→</span>사이에서 행함 → 상호작용하다</span></div><div class="pwi"><b>international</b> <span class="ki">국제적인</span><span class="wb"><span class="wbp">inter</span><span class="wbm">(사이)</span>+<span class="wbp">national</span><span class="wbm">(국가의)</span><span class="wba">→</span>국가들 사이의 → 국제적인</span></div><div class="pwi"><b>interrupt</b> <span class="ki">방해하다</span><span class="wb"><span class="wbp">inter</span><span class="wbm">(사이)</span>+<span class="wbp">rupt</span><span class="wbm">(깨다)</span><span class="wba">→</span>방해하다</span></div><div class="pwi"><b>intervene</b> <span class="ki">개입하다</span><span class="wb"><span class="wbp">inter</span><span class="wbm">(사이)</span>+<span class="wbp">vene</span><span class="wbm">(오다)</span><span class="wba">→</span>개입하다</span></div></div></div></div><div class="pfx"><div class="pt"><span class="pf">trans-</span><span class="pm">가로질러 (across)</span></div><div class="pw"><div class="pwlist"><div class="pwi"><b>transport</b> <span class="ki">수송하다</span><span class="wb"><span class="wbp">trans</span><span class="wbm">(가로질러)</span>+<span class="wbp">port</span><span class="wbm">(나르다)</span><span class="wba">→</span>수송하다</span></div><div class="pwi"><b>translate</b> <span class="ki">번역하다</span><span class="wb"><span class="wbp">trans</span><span class="wbm">(건너)</span>+<span class="wbp">late</span><span class="wbm">(나르다)</span><span class="wba">→</span>옮겨 전하다 → 번역하다</span></div><div class="pwi"><b>transform</b> <span class="ki">변형시키다</span><span class="wb"><span class="wbp">trans</span><span class="wbm">(가로질러)</span>+<span class="wbp">form</span><span class="wbm">(모양)</span><span class="wba">→</span>변형시키다</span></div><div class="pwi"><b>transfer</b> <span class="ki">옮기다</span><span class="wb"><span class="wbp">trans</span><span class="wbm">(가로질러)</span>+<span class="wbp">fer</span><span class="wbm">(나르다)</span><span class="wba">→</span>옮기다</span></div></div></div></div><div class="pfx"><div class="pt"><span class="pf">ex·e-</span><span class="pm">밖으로 (out)</span></div><div class="pw"><div class="pwlist"><div class="pwi"><b>export</b> <span class="ki">수출하다</span><span class="wb"><span class="wbp">ex</span><span class="wbm">(밖으로)</span>+<span class="wbp">port</span><span class="wbm">(나르다)</span><span class="wba">→</span>수출하다</span></div><div class="pwi"><b>exclude</b> <span class="ki">제외하다</span><span class="wb"><span class="wbp">ex</span><span class="wbm">(밖으로)</span>+<span class="wbp">clude</span><span class="wbm">(닫다)</span><span class="wba">→</span>밖에 두고 닫다 → 제외하다</span></div><div class="pwi"><b>emit</b> <span class="ki">방출하다</span><span class="wb"><span class="wbp">e</span><span class="wbm">(밖으로)</span>+<span class="wbp">mit</span><span class="wbm">(보내다)</span><span class="wba">→</span>밖으로 내보내다 → 방출하다</span></div><div class="pwi"><b>eliminate</b> <span class="ki">제거하다</span><span class="wb"><span class="wbp">e</span><span class="wbm">(밖으로)</span>+<span class="wbp">limin</span><span class="wbm">(문턱)</span>+<span class="wbp">ate</span><span class="wbm">(동)</span><span class="wba">→</span>문 밖으로 내보내다 → 제거하다</span></div></div></div></div><div class="pfx"><div class="pt"><span class="pf">circum-</span><span class="pm">둘레 (around)</span></div><div class="pw"><div class="pwlist"><div class="pwi"><b>circumstance</b> <span class="ki">상황</span><span class="wb"><span class="wbp">circum</span><span class="wbm">(둘레)</span>+<span class="wbp">stance</span><span class="wbm">(서 있음)</span><span class="wba">→</span>주변 상황 → 상황</span></div><div class="pwi"><b>circumference</b> <span class="ki">둘레</span><span class="wb"><span class="wbp">circum</span><span class="wbm">(둘레)</span>+<span class="wbp">ference</span><span class="wbm">(나르다)</span><span class="wba">→</span>둘레 길이 → 둘레</span></div><div class="pwi"><b>circumvent</b> <span class="ki">우회하다</span><span class="wb"><span class="wbp">circum</span><span class="wbm">(둘레로)</span>+<span class="wbp">vent</span><span class="wbm">(오다)</span><span class="wba">→</span>돌아서 오다 → 우회하다</span></div><div class="pwi"><b>circulate</b> <span class="ki">순환하다</span><span class="wb"><span class="wbp">circul</span><span class="wbm">(원)</span>+<span class="wbp">ate</span><span class="wbm">(동)</span><span class="wba">→</span>원을 그리며 돌다 → 순환하다</span></div></div></div></div></div></div>
+  <div class="ft">ORUN ENGLISH · Roots & Affixes Workbook</div>
+</section>
+<section class="page"><div class="hb"><div class="l">ORUN <b>ENGLISH</b></div><div class="r">Part 4 · 접미사와 품사 SUFFIXES</div></div>
+  <div class="eyebrow">Part 4</div>
+  <div class="h2">접미사로 품사 판별 ① <span class="en">Noun &amp; Verb</span></div>
+  <div class="rule"></div>
+  <div class="lede">접미사는 단어의 <b>품사(역할)</b>를 결정한다. 어법 문제에서 빈칸이 <b>주어·목적어</b> 자리면
+  명사형(-tion), <b>술어</b> 자리면 동사형(-ize, -ate)을 골라야 한다.</div>
+  <div style="margin-top:14px"><div class="sufblock"><div class="sufhead"><span class="posbadge" style="background:#2C5578">명사 만들기</span></div><div class="sufrow"><div class="suf" style="border-left-color:#2C5578"><span class="sf" style="color:#2C5578">-tion·-sion</span><span class="sm">행위·상태</span><div class="sw"><div class="swlist"><div class="swi"><b>decision</b> <span class="ki">결정</span><span class="wb"><span class="wbp">decid</span><span class="wbm">(결정)</span>+<span class="wbp">sion</span><span class="wbm">(명)</span><span class="wba">→</span>결정</span></div><div class="swi"><b>conclusion</b> <span class="ki">결론</span><span class="wb"><span class="wbp">con</span><span class="wbm">(함께)</span>+<span class="wbp">clud</span><span class="wbm">(닫다)</span>+<span class="wbp">sion</span><span class="wbm">(명)</span><span class="wba">→</span>끝맺음 → 결론</span></div><div class="swi"><b>education</b> <span class="ki">교육</span><span class="wb"><span class="wbp">educ</span><span class="wbm">(이끌다)</span>+<span class="wbp">ation</span><span class="wbm">(명)</span><span class="wba">→</span>가르쳐 이끔 → 교육</span></div><div class="swi"><b>application</b> <span class="ki">지원</span><span class="wb"><span class="wbp">applic</span><span class="wbm">(적용)</span>+<span class="wbp">ation</span><span class="wbm">(명)</span><span class="wba">→</span>적용/지원</span></div></div></div></div><div class="suf" style="border-left-color:#2C5578"><span class="sf" style="color:#2C5578">-ment</span><span class="sm">결과·상태</span><div class="sw"><div class="swlist"><div class="swi"><b>development</b> <span class="ki">발전</span><span class="wb"><span class="wbp">develop</span><span class="wbm">(발전)</span>+<span class="wbp">ment</span><span class="wbm">(명)</span><span class="wba">→</span>발전</span></div><div class="swi"><b>government</b> <span class="ki">정부</span><span class="wb"><span class="wbp">govern</span><span class="wbm">(다스리다)</span>+<span class="wbp">ment</span><span class="wbm">(명)</span><span class="wba">→</span>다스림 → 정부</span></div><div class="swi"><b>agreement</b> <span class="ki">합의</span><span class="wb"><span class="wbp">agree</span><span class="wbm">(동의)</span>+<span class="wbp">ment</span><span class="wbm">(명)</span><span class="wba">→</span>합의</span></div><div class="swi"><b>achievement</b> <span class="ki">성취</span><span class="wb"><span class="wbp">achieve</span><span class="wbm">(이루다)</span>+<span class="wbp">ment</span><span class="wbm">(명)</span><span class="wba">→</span>성취</span></div></div></div></div><div class="suf" style="border-left-color:#2C5578"><span class="sf" style="color:#2C5578">-ity·-ty</span><span class="sm">성질·상태</span><div class="sw"><div class="swlist"><div class="swi"><b>ability</b> <span class="ki">능력</span><span class="wb"><span class="wbp">able</span><span class="wbm">(할 수 있는)</span>+<span class="wbp">ity</span><span class="wbm">(명)</span><span class="wba">→</span>능력</span></div><div class="swi"><b>reality</b> <span class="ki">현실</span><span class="wb"><span class="wbp">real</span><span class="wbm">(실제의)</span>+<span class="wbp">ity</span><span class="wbm">(명)</span><span class="wba">→</span>현실</span></div><div class="swi"><b>security</b> <span class="ki">안전</span><span class="wb"><span class="wbp">secur</span><span class="wbm">(안전한)</span>+<span class="wbp">ity</span><span class="wbm">(명)</span><span class="wba">→</span>안전</span></div><div class="swi"><b>diversity</b> <span class="ki">다양성</span><span class="wb"><span class="wbp">diverse</span><span class="wbm">(다양한)</span>+<span class="wbp">ity</span><span class="wbm">(명)</span><span class="wba">→</span>다양성</span></div></div></div></div><div class="suf" style="border-left-color:#2C5578"><span class="sf" style="color:#2C5578">-ance·-ence</span><span class="sm">상태·성질</span><div class="sw"><div class="swlist"><div class="swi"><b>importance</b> <span class="ki">중요성</span><span class="wb"><span class="wbp">import</span><span class="wbm">(중요)</span>+<span class="wbp">ance</span><span class="wbm">(명)</span><span class="wba">→</span>중요성</span></div><div class="swi"><b>difference</b> <span class="ki">차이</span><span class="wb"><span class="wbp">differ</span><span class="wbm">(다르다)</span>+<span class="wbp">ence</span><span class="wbm">(명)</span><span class="wba">→</span>차이</span></div><div class="swi"><b>existence</b> <span class="ki">존재</span><span class="wb"><span class="wbp">exist</span><span class="wbm">(존재하다)</span>+<span class="wbp">ence</span><span class="wbm">(명)</span><span class="wba">→</span>존재</span></div><div class="swi"><b>performance</b> <span class="ki">수행</span><span class="wb"><span class="wbp">perform</span><span class="wbm">(수행)</span>+<span class="wbp">ance</span><span class="wbm">(명)</span><span class="wba">→</span>수행</span></div></div></div></div><div class="suf" style="border-left-color:#2C5578"><span class="sf" style="color:#2C5578">-ness</span><span class="sm">성질</span><div class="sw"><div class="swlist"><div class="swi"><b>happiness</b> <span class="ki">행복</span><span class="wb"><span class="wbp">happy</span><span class="wbm">(행복한)</span>+<span class="wbp">ness</span><span class="wbm">(명)</span><span class="wba">→</span>행복</span></div><div class="swi"><b>awareness</b> <span class="ki">인식</span><span class="wb"><span class="wbp">aware</span><span class="wbm">(아는)</span>+<span class="wbp">ness</span><span class="wbm">(명)</span><span class="wba">→</span>인식</span></div><div class="swi"><b>weakness</b> <span class="ki">약점</span><span class="wb"><span class="wbp">weak</span><span class="wbm">(약한)</span>+<span class="wbp">ness</span><span class="wbm">(명)</span><span class="wba">→</span>약점</span></div><div class="swi"><b>illness</b> <span class="ki">질병</span><span class="wb"><span class="wbp">ill</span><span class="wbm">(아픈)</span>+<span class="wbp">ness</span><span class="wbm">(명)</span><span class="wba">→</span>질병</span></div></div></div></div><div class="suf" style="border-left-color:#2C5578"><span class="sf" style="color:#2C5578">-ism / -ist</span><span class="sm">주의 / 사람</span><div class="sw"><div class="swlist"><div class="swi"><b>capitalism</b> <span class="ki">자본주의</span><span class="wb"><span class="wbp">capital</span><span class="wbm">(자본)</span>+<span class="wbp">ism</span><span class="wbm">(주의)</span><span class="wba">→</span>자본주의</span></div><div class="swi"><b>optimism</b> <span class="ki">낙관주의</span><span class="wb"><span class="wbp">optim</span><span class="wbm">(최선)</span>+<span class="wbp">ism</span><span class="wbm">(주의)</span><span class="wba">→</span>낙관주의</span></div><div class="swi"><b>scientist</b> <span class="ki">과학자</span><span class="wb"><span class="wbp">scien</span><span class="wbm">(과학)</span>+<span class="wbp">tist</span><span class="wbm">(사람)</span><span class="wba">→</span>과학자</span></div><div class="swi"><b>artist</b> <span class="ki">예술가</span><span class="wb"><span class="wbp">art</span><span class="wbm">(예술)</span>+<span class="wbp">ist</span><span class="wbm">(사람)</span><span class="wba">→</span>예술가</span></div></div></div></div></div></div><div class="sufblock"><div class="sufhead"><span class="posbadge" style="background:#9A6A2F">동사 만들기</span></div><div class="sufrow"><div class="suf" style="border-left-color:#9A6A2F"><span class="sf" style="color:#9A6A2F">-ize·-ise</span><span class="sm">~화하다</span><div class="sw"><div class="swlist"><div class="swi"><b>realize</b> <span class="ki">깨닫다</span><span class="wb"><span class="wbp">real</span><span class="wbm">(실제)</span>+<span class="wbp">ize</span><span class="wbm">(만들다)</span><span class="wba">→</span>실제로 알다 → 깨닫다</span></div><div class="swi"><b>organize</b> <span class="ki">조직하다</span><span class="wb"><span class="wbp">organ</span><span class="wbm">(기관)</span>+<span class="wbp">ize</span><span class="wbm">(만들다)</span><span class="wba">→</span>조직하다</span></div><div class="swi"><b>modernize</b> <span class="ki">현대화하다</span><span class="wb"><span class="wbp">modern</span><span class="wbm">(현대)</span>+<span class="wbp">ize</span><span class="wbm">(만들다)</span><span class="wba">→</span>현대화하다</span></div><div class="swi"><b>criticize</b> <span class="ki">비판하다</span><span class="wb"><span class="wbp">critic</span><span class="wbm">(비평)</span>+<span class="wbp">ize</span><span class="wbm">(하다)</span><span class="wba">→</span>비판하다</span></div></div></div></div><div class="suf" style="border-left-color:#9A6A2F"><span class="sf" style="color:#9A6A2F">-ify</span><span class="sm">~화하다·~하게 하다</span><div class="sw"><div class="swlist"><div class="swi"><b>clarify</b> <span class="ki">명확히 하다</span><span class="wb"><span class="wbp">clar</span><span class="wbm">(맑은)</span>+<span class="wbp">ify</span><span class="wbm">(만들다)</span><span class="wba">→</span>맑게 하다 → 명확히 하다</span></div><div class="swi"><b>identify</b> <span class="ki">식별하다</span><span class="wb"><span class="wbp">ident</span><span class="wbm">(같은)</span>+<span class="wbp">ify</span><span class="wbm">(만들다)</span><span class="wba">→</span>같음을 알아내다 → 식별하다</span></div><div class="swi"><b>justify</b> <span class="ki">정당화하다</span><span class="wb"><span class="wbp">just</span><span class="wbm">(옳은)</span>+<span class="wbp">ify</span><span class="wbm">(만들다)</span><span class="wba">→</span>옳게 만들다 → 정당화하다</span></div><div class="swi"><b>simplify</b> <span class="ki">단순화하다</span><span class="wb"><span class="wbp">simpl</span><span class="wbm">(단순한)</span>+<span class="wbp">ify</span><span class="wbm">(만들다)</span><span class="wba">→</span>단순화하다</span></div></div></div></div><div class="suf" style="border-left-color:#9A6A2F"><span class="sf" style="color:#9A6A2F">-ate</span><span class="sm">~하게 하다</span><div class="sw"><div class="swlist"><div class="swi"><b>activate</b> <span class="ki">활성화하다</span><span class="wb"><span class="wbp">activ</span><span class="wbm">(활동)</span>+<span class="wbp">ate</span><span class="wbm">(동)</span><span class="wba">→</span>활성화하다</span></div><div class="swi"><b>generate</b> <span class="ki">생성하다</span><span class="wb"><span class="wbp">gener</span><span class="wbm">(낳다)</span>+<span class="wbp">ate</span><span class="wbm">(동)</span><span class="wba">→</span>생성하다</span></div><div class="swi"><b>indicate</b> <span class="ki">나타내다</span><span class="wb"><span class="wbp">indic</span><span class="wbm">(가리키다)</span>+<span class="wbp">ate</span><span class="wbm">(동)</span><span class="wba">→</span>나타내다</span></div><div class="swi"><b>originate</b> <span class="ki">유래하다</span><span class="wb"><span class="wbp">origin</span><span class="wbm">(기원)</span>+<span class="wbp">ate</span><span class="wbm">(동)</span><span class="wba">→</span>유래하다</span></div></div></div></div><div class="suf" style="border-left-color:#9A6A2F"><span class="sf" style="color:#9A6A2F">-en</span><span class="sm">~하게 하다</span><div class="sw"><div class="swlist"><div class="swi"><b>strengthen</b> <span class="ki">강화하다</span><span class="wb"><span class="wbp">strength</span><span class="wbm">(힘)</span>+<span class="wbp">en</span><span class="wbm">(만들다)</span><span class="wba">→</span>강화하다</span></div><div class="swi"><b>widen</b> <span class="ki">넓히다</span><span class="wb"><span class="wbp">wide</span><span class="wbm">(넓은)</span>+<span class="wbp">en</span><span class="wbm">(만들다)</span><span class="wba">→</span>넓히다</span></div><div class="swi"><b>sharpen</b> <span class="ki">날카롭게 하다</span><span class="wb"><span class="wbp">sharp</span><span class="wbm">(날카로운)</span>+<span class="wbp">en</span><span class="wbm">(만들다)</span><span class="wba">→</span>날카롭게 하다</span></div><div class="swi"><b>broaden</b> <span class="ki">넓히다</span><span class="wb"><span class="wbp">broad</span><span class="wbm">(넓은)</span>+<span class="wbp">en</span><span class="wbm">(만들다)</span><span class="wba">→</span>넓히다</span></div></div></div></div></div></div></div>
+
+  <div class="box" style="margin-top:8px"><h4>★ 같은 어근은 접미사로 품사를 변신한다</h4>
+  <p>하나의 어근이 접미사에 따라 <b>동사 → 명사 → 형용사 → 부사</b>로 변한다. 문장에서 빈칸의 <b>자리(역할)</b>를
+  보고 알맞은 형태를 골라야 한다.</p></div>
+  <div class="demo">
+    <table>
+      <tr><th>동사<span class="en">Verb</span></th><th>명사<span class="en">Noun · -tion</span></th>
+          <th>형용사<span class="en">Adjective · -ive</span></th><th>부사<span class="en">Adverb · -ly</span></th></tr>
+      <tr><td class="c0"><span class="de">decide</span><span class="dk">결정하다</span></td><td class="c1"><span class="de">decision</span><span class="dk">결정</span></td><td class="c2"><span class="de">decisive</span><span class="dk">결정적인</span></td><td class="c3"><span class="de">decisively</span><span class="dk">결정적으로</span></td></tr><tr><td class="c0"><span class="de">create</span><span class="dk">창조하다</span></td><td class="c1"><span class="de">creation</span><span class="dk">창조</span></td><td class="c2"><span class="de">creative</span><span class="dk">창의적인</span></td><td class="c3"><span class="de">creatively</span><span class="dk">창의적으로</span></td></tr><tr><td class="c0"><span class="de">analyze</span><span class="dk">분석하다</span></td><td class="c1"><span class="de">analysis</span><span class="dk">분석</span></td><td class="c2"><span class="de">analytical</span><span class="dk">분석적인</span></td><td class="c3"><span class="de">analytically</span><span class="dk">분석적으로</span></td></tr><tr><td class="c0"><span class="de">depend</span><span class="dk">의존하다</span></td><td class="c1"><span class="de">dependence</span><span class="dk">의존</span></td><td class="c2"><span class="de">dependent</span><span class="dk">의존적인</span></td><td class="c3"><span class="de">dependently</span><span class="dk">의존적으로</span></td></tr>
+    </table>
+  </div>
+  <div class="pn">·</div>
+  <div class="ft">ORUN ENGLISH · Roots & Affixes Workbook</div>
+</section>
+<!-- ============ TEST 1 : 라틴어 어근 ============ -->
+<section class="page"><div class="hb"><div class="l">ORUN <b>ENGLISH</b></div><div class="r">TEST 1 · 라틴어 어근</div></div>
+  <div class="eyebrow">Test 01 / 05</div>
+  <div class="h2">라틴어 어근 점검 <span class="en">Latin Roots Drill</span></div>
+  <div class="rule"></div>
+
+  <div class="qcard"><span class="qn">1</span><span class="qt">어근의 뜻을 우리말로 쓰시오.</span>
+    <div class="qbody">
+      ① spect/spic = <span class="blank">&nbsp;</span> &nbsp; ② duc/duct = <span class="blank">&nbsp;</span> &nbsp;
+      ③ mit/miss = <span class="blank">&nbsp;</span> &nbsp; ④ ced/cess = <span class="blank">&nbsp;</span><br>
+      ⑤ port = <span class="blank">&nbsp;</span> &nbsp; ⑥ ten/tain = <span class="blank">&nbsp;</span> &nbsp;
+      ⑦ vert/vers = <span class="blank">&nbsp;</span> &nbsp; ⑧ struct = <span class="blank">&nbsp;</span>
+    </div>
+  </div>
+
+  <div class="qcard"><span class="qn">2</span><span class="qt">단어를 어근으로 분해하고 뜻을 추론하시오.</span>
+    <div class="qbody">
+      ① <b class="en">transmit</b> = trans(<span class="blank">&nbsp;</span>) + mit(보내다) → <span class="blank">&nbsp;</span><br>
+      ② <b class="en">prospect</b> = pro(앞) + spect(<span class="blank">&nbsp;</span>) → <span class="blank">&nbsp;</span><br>
+      ③ <b class="en">introduce</b> = intro(안) + duc(<span class="blank">&nbsp;</span>) → <span class="blank">&nbsp;</span><br>
+      ④ <b class="en">construct</b> = con(함께) + struct(<span class="blank">&nbsp;</span>) → <span class="blank">&nbsp;</span><br>
+      ⑤ <b class="en">reverse</b> = re(다시) + vers(<span class="blank">&nbsp;</span>) → <span class="blank">&nbsp;</span>
+    </div>
+  </div>
+
+  <div class="qcard"><span class="qn">3</span><span class="qt">밑줄 친 부분과 가장 가까운 의미의 단어를 〈보기〉에서 고르시오.</span>
+    <div class="qbody">
+      〈보기〉 obtain · maintain · sustain · detain · retain<br>
+      ① The library will <u>keep</u> the rare book in storage. → <span class="blank">&nbsp;</span><br>
+      ② She tried to <u>get</u> a scholarship abroad. → <span class="blank">&nbsp;</span><br>
+      ③ Police may <u>hold</u> the suspect for 48 hours. → <span class="blank">&nbsp;</span>
+    </div>
+  </div>
+
+  <div class="qcard"><span class="qn">4</span><span class="qt">빈칸에 알맞은 단어를 쓰시오.</span>
+    <div class="qbody">
+      ① 그 회의는 30분간 <b>중단되었다</b>. → was <span class="blank">&nbsp;</span> for 30 minutes.<br>
+      ② 그는 자신의 신념을 <b>옹호했다</b>. → He <span class="blank">&nbsp;</span>d his beliefs.
+    </div>
+  </div>
+
+  <div class="ans"><h4>🔑 정답 · ANSWER</h4>
+    <p>1. ①보다 ②이끌다 ③보내다 ④가다·양보 ⑤나르다 ⑥잡다·유지 ⑦돌다 ⑧세우다 &nbsp;|&nbsp;
+       2. ①가로질러/전송하다 ②보다/전망·기대 ③이끌다/소개하다 ④세우다/건설하다 ⑤돌다/뒤집다 &nbsp;|&nbsp;
+       3. ①retain ②obtain ③detain &nbsp;|&nbsp; 4. ①interrupted ②advocate</p>
+  </div>
+  <div class="ft">ORUN ENGLISH · Roots & Affixes Workbook</div>
+</section>
+
+<!-- ============ TEST 2 : 그리스어 어근 ============ -->
+<section class="page"><div class="hb"><div class="l">ORUN <b>ENGLISH</b></div><div class="r">TEST 2 · 그리스어 어근</div></div>
+  <div class="eyebrow">Test 02 / 05</div>
+  <div class="h2">그리스어 어근 점검 <span class="en">Greek Roots Drill</span></div>
+  <div class="rule"></div>
+
+  <div class="qcard"><span class="qn">1</span><span class="qt">어근의 뜻을 우리말로 쓰시오.</span>
+    <div class="qbody">
+      ① bio = <span class="blank">&nbsp;</span> &nbsp; ② geo = <span class="blank">&nbsp;</span> &nbsp;
+      ③ chron = <span class="blank">&nbsp;</span> &nbsp; ④ phon = <span class="blank">&nbsp;</span><br>
+      ⑤ path = <span class="blank">&nbsp;</span> &nbsp; ⑥ psych = <span class="blank">&nbsp;</span> &nbsp;
+      ⑦ tele = <span class="blank">&nbsp;</span> &nbsp; ⑧ graph = <span class="blank">&nbsp;</span>
+    </div>
+  </div>
+
+  <div class="qcard"><span class="qn">2</span><span class="qt">단어를 분해하고 뜻을 추론하시오.</span>
+    <div class="qbody">
+      ① <b class="en">biography</b> = bio(<span class="blank">&nbsp;</span>) + graph(쓰다) → <span class="blank">&nbsp;</span><br>
+      ② <b class="en">telescope</b> = tele(멀리) + scop(<span class="blank">&nbsp;</span>) → <span class="blank">&nbsp;</span><br>
+      ③ <b class="en">democracy</b> = demo(민중) + crat(<span class="blank">&nbsp;</span>) → <span class="blank">&nbsp;</span><br>
+      ④ <b class="en">sympathy</b> = sym(함께) + path(<span class="blank">&nbsp;</span>) → <span class="blank">&nbsp;</span><br>
+      ⑤ <b class="en">geology</b> = geo(<span class="blank">&nbsp;</span>) + logy(학문) → <span class="blank">&nbsp;</span>
+    </div>
+  </div>
+
+  <div class="qcard"><span class="qn">3</span><span class="qt">짝지어진 단어와 어근이 같은 것을 고르시오.</span>
+    <div class="qbody">
+      ① <b class="en">phonetics</b> : ( symphony / sympathy / synchronize )<br>
+      ② <b class="en">psychology</b> : ( logic / psychiatry / geology )<br>
+      ③ <b class="en">chronicle</b> : ( synchronize / cycle / cyclone )
+    </div>
+  </div>
+
+  <div class="qcard"><span class="qn">4</span><span class="qt">문장에 알맞은 단어를 〈보기〉에서 골라 쓰시오.</span>
+    <div class="qbody">
+      〈보기〉 antibiotic · pathology · democracy · geography<br>
+      ① He studies the ___ of East Asia. → <span class="blank">&nbsp;</span><br>
+      ② The doctor prescribed an ___. → <span class="blank">&nbsp;</span><br>
+      ③ ___ is government by the people. → <span class="blank">&nbsp;</span>
+    </div>
+  </div>
+
+  <div class="ans"><h4>🔑 정답 · ANSWER</h4>
+    <p>1. ①생명 ②땅 ③시간 ④소리 ⑤감정·병 ⑥영혼·마음 ⑦멀리 ⑧쓰다 &nbsp;|&nbsp;
+       2. ①생명/전기·일대기 ②보다/망원경 ③지배·통치/민주주의 ④감정/공감·동정 ⑤땅/지질학 &nbsp;|&nbsp;
+       3. ①symphony ②psychiatry ③synchronize &nbsp;|&nbsp; 4. ①geography ②antibiotic ③Democracy</p>
+  </div>
+  <div class="ft">ORUN ENGLISH · Roots & Affixes Workbook</div>
+</section>
+
+<!-- ============ TEST 3 : 접두사 ============ -->
+<section class="page"><div class="hb"><div class="l">ORUN <b>ENGLISH</b></div><div class="r">TEST 3 · 접두사 PREFIXES</div></div>
+  <div class="eyebrow">Test 03 / 05</div>
+  <div class="h2">접두사 점검 <span class="en">Prefix Drill</span></div>
+  <div class="rule"></div>
+
+  <div class="qcard"><span class="qn">1</span><span class="qt">접두사의 뜻을 쓰시오.</span>
+    <div class="qbody">
+      ① re- = <span class="blank">&nbsp;</span> &nbsp; ② pre- = <span class="blank">&nbsp;</span> &nbsp;
+      ③ sub- = <span class="blank">&nbsp;</span> &nbsp; ④ trans- = <span class="blank">&nbsp;</span><br>
+      ⑤ in-/im- = <span class="blank">&nbsp;</span> &nbsp; ⑥ dis- = <span class="blank">&nbsp;</span> &nbsp;
+      ⑦ con-/com- = <span class="blank">&nbsp;</span> &nbsp; ⑧ ex- = <span class="blank">&nbsp;</span>
+    </div>
+  </div>
+
+  <div class="qcard"><span class="qn">2</span><span class="qt">알맞은 접두사를 붙여 단어를 완성하시오.</span>
+    <div class="qbody">
+      ① 미리 보다: <span class="blank">&nbsp;</span>view &nbsp; ② 수출하다: <span class="blank">&nbsp;</span>port<br>
+      ③ 함께 일하다: <span class="blank">&nbsp;</span>operate &nbsp; ④ 잠수함: <span class="blank">&nbsp;</span>marine<br>
+      ⑤ 동의하지 않다: <span class="blank">&nbsp;</span>agree &nbsp; ⑥ 옮기다·이송하다: <span class="blank">&nbsp;</span>fer
+    </div>
+  </div>
+
+  <div class="qcard"><span class="qn">3</span><span class="qt">밑줄 친 접두사의 뜻으로 알맞은 것을 고르시오.</span>
+    <div class="qbody">
+      ① <u>inter</u>national → ( 안 / 사이 / 위 )<br>
+      ② <u>auto</u>biography → ( 스스로 / 멀리 / 함께 )<br>
+      ③ <u>anti</u>-virus → ( 찬성 / 반대 / 다음 )<br>
+      ④ <u>mis</u>understand → ( 작은 / 잘못된 / 큰 )
+    </div>
+  </div>
+
+  <div class="qcard"><span class="qn">4</span><span class="qt">반의어가 되도록 접두사를 붙이시오.</span>
+    <div class="qbody">
+      ① possible ↔ <span class="blank">&nbsp;</span>possible &nbsp; ② legal ↔ <span class="blank">&nbsp;</span>legal<br>
+      ③ honest ↔ <span class="blank">&nbsp;</span>honest &nbsp; ④ regular ↔ <span class="blank">&nbsp;</span>regular
+    </div>
+  </div>
+
+  <div class="ans"><h4>🔑 정답 · ANSWER</h4>
+    <p>1. ①다시 ②미리·앞 ③아래 ④가로질러 ⑤안·부정 ⑥분리·반대 ⑦함께 ⑧밖 &nbsp;|&nbsp;
+       2. ①pre ②ex ③co ④sub ⑤dis ⑥trans &nbsp;|&nbsp;
+       3. ①사이 ②스스로 ③반대 ④잘못된 &nbsp;|&nbsp;
+       4. ①im ②il ③dis ④ir</p>
+  </div>
+  <div class="ft">ORUN ENGLISH · Roots & Affixes Workbook</div>
+</section>
+
+<!-- ============ TEST 4 : 접미사 · 품사 ============ -->
+<section class="page"><div class="hb"><div class="l">ORUN <b>ENGLISH</b></div><div class="r">TEST 4 · 접미사 · 품사</div></div>
+  <div class="eyebrow">Test 04 / 05</div>
+  <div class="h2">접미사·품사 변환 <span class="en">Suffix &amp; POS Drill</span></div>
+  <div class="rule"></div>
+
+  <div class="qcard"><span class="qn">1</span><span class="qt">괄호 안 동사를 알맞은 품사로 바꾸시오.</span>
+    <div class="qbody">
+      ① make a (decide) → <span class="blank">&nbsp;</span> (명사)<br>
+      ② a (create) idea → <span class="blank">&nbsp;</span> (형용사)<br>
+      ③ explain it (clear) → <span class="blank">&nbsp;</span> (부사)<br>
+      ④ a key (differ) → <span class="blank">&nbsp;</span> (명사)<br>
+      ⑤ (depend) on others → <span class="blank">&nbsp;</span> (형용사)
+    </div>
+  </div>
+
+  <div class="qcard"><span class="qn">2</span><span class="qt">접미사의 품사를 〈보기〉에서 고르시오.</span>
+    <div class="qbody">
+      〈보기〉 명사(N) · 형용사(Adj) · 동사(V) · 부사(Adv)<br>
+      ① -tion / -ment → <span class="blank">&nbsp;</span> &nbsp; ② -able / -ous → <span class="blank">&nbsp;</span><br>
+      ③ -ize / -ify → <span class="blank">&nbsp;</span> &nbsp; ④ -ly → <span class="blank">&nbsp;</span><br>
+      ⑤ -er / -ist → <span class="blank">&nbsp;</span> &nbsp; ⑥ -ive / -ful → <span class="blank">&nbsp;</span>
+    </div>
+  </div>
+
+  <div class="qcard"><span class="qn">3</span><span class="qt">밑줄 친 단어의 품사를 바꿔 빈칸에 쓰시오.</span>
+    <div class="qbody">
+      ① He acted <u>brave</u>. → He acted <span class="blank">&nbsp;</span>.<br>
+      ② This is a <u>nation</u> issue. → a <span class="blank">&nbsp;</span> issue.<br>
+      ③ They <u>simple</u> the rule. → They <span class="blank">&nbsp;</span> the rule.<br>
+      ④ Her <u>kind</u> moved me. → Her <span class="blank">&nbsp;</span> moved me.
+    </div>
+  </div>
+
+  <div class="qcard"><span class="qn">4</span><span class="qt">밑줄 친 단어를 어법에 맞게 고치시오.</span>
+    <div class="qbody">
+      ① The result was <u>surprise</u>. → <span class="blank">&nbsp;</span><br>
+      ② He spoke <u>confident</u>. → <span class="blank">&nbsp;</span><br>
+      ③ Our team made <u>improve</u>. → <span class="blank">&nbsp;</span>
+    </div>
+  </div>
+
+  <div class="ans"><h4>🔑 정답 · ANSWER</h4>
+    <p>1. ①decision ②creative ③clearly ④difference ⑤dependent &nbsp;|&nbsp;
+       2. ①명사 ②형용사 ③동사 ④부사 ⑤명사 ⑥형용사 &nbsp;|&nbsp;
+       3. ①bravely ②national ③simplify ④kindness &nbsp;|&nbsp;
+       4. ①surprising ②confidently ③improvement(s)</p>
+  </div>
+  <div class="ft">ORUN ENGLISH · Roots & Affixes Workbook</div>
+</section>
+
+<!-- ============ TEST 5 : 종합 (수능형) ============ -->
+<section class="page"><div class="hb"><div class="l">ORUN <b>ENGLISH</b></div><div class="r">TEST 5 · 종합 실전</div></div>
+  <div class="eyebrow">Test 05 / 05</div>
+  <div class="h2">종합 실전 테스트 <span class="en">Comprehensive Test</span></div>
+  <div class="rule"></div>
+
+  <div class="qcard"><span class="qn">1</span><span class="qt">처음 보는 단어의 뜻을 어원으로 추론하시오.</span>
+    <div class="qbody">
+      ① <b class="en">retrospect</b> = retro(뒤로) + spect(보다) → <span class="blank">&nbsp;</span><br>
+      ② <b class="en">malediction</b> = mal(나쁜) + dict(말하다) → <span class="blank">&nbsp;</span><br>
+      ③ <b class="en">circumvent</b> = circum(둘레) + vent(오다) → <span class="blank">&nbsp;</span><br>
+      ④ <b class="en">benefactor</b> = bene(좋은) + fact(하다) + or → <span class="blank">&nbsp;</span>
+    </div>
+  </div>
+
+  <div class="qcard"><span class="qn">2</span><span class="qt">밑줄 친 단어와 의미가 가장 가까운 것을 고르시오.</span>
+    <div class="qbody">
+      ① The evidence is <u>conclusive</u>. → ( decisive / doubtful / partial )<br>
+      ② She gave a <u>concise</u> answer. → ( brief / lengthy / vague )<br>
+      ③ The plan is <u>feasible</u>. → ( impossible / workable / risky )<br>
+      ④ He showed <u>indifference</u>. → ( apathy / interest / sympathy )
+    </div>
+  </div>
+
+  <div class="qcard"><span class="qn">3</span><span class="qt">빈칸에 어울리는 단어를 〈보기〉에서 골라 쓰시오.</span>
+    <div class="qbody">
+      〈보기〉 sustainable · transparent · innovative · controversial<br>
+      ① We need ___ energy sources for the future. → <span class="blank">&nbsp;</span><br>
+      ② The startup launched an ___ product. → <span class="blank">&nbsp;</span><br>
+      ③ The decision was highly ___ among voters. → <span class="blank">&nbsp;</span><br>
+      ④ The company keeps a ___ pricing policy. → <span class="blank">&nbsp;</span>
+    </div>
+  </div>
+
+  <div class="qcard"><span class="qn">4</span><span class="qt">우리말과 같도록 영작하시오. (어근·접사 활용)</span>
+    <div class="qbody">
+      ① 그의 연설은 청중을 감동시켰다. (in + spire) → His speech <span class="blank">&nbsp;</span> the audience.<br>
+      ② 그 정책은 큰 영향을 끼쳤다. (af + fect) → The policy had a big <span class="blank">&nbsp;</span>.<br>
+      ③ 우리는 결론에 도달했다. (con + clud) → We reached a <span class="blank">&nbsp;</span>.
+    </div>
+  </div>
+
+  <div class="qcard"><span class="qn">5</span><span class="qt">다음 단어의 반의어를 쓰시오.</span>
+    <div class="qbody">
+      ① include ↔ <span class="blank">&nbsp;</span> &nbsp; ② import ↔ <span class="blank">&nbsp;</span> &nbsp;
+      ③ progress ↔ <span class="blank">&nbsp;</span> &nbsp; ④ ascend ↔ <span class="blank">&nbsp;</span>
+    </div>
+  </div>
+
+  <div class="ans"><h4>🔑 정답 · ANSWER</h4>
+    <p>1. ①회상·회고 ②저주 ③우회하다 ④후원자·은인 &nbsp;|&nbsp;
+       2. ①decisive ②brief ③workable ④apathy &nbsp;|&nbsp;
+       3. ①sustainable ②innovative ③controversial ④transparent &nbsp;|&nbsp;
+       4. ①inspired ②effect ③conclusion &nbsp;|&nbsp;
+       5. ①exclude ②export ③regress ④descend</p>
+  </div>
+  <div class="ft">ORUN ENGLISH · Roots & Affixes Workbook · END</div>
+</section>
+
+<script>
+/* ───── Auto-pagination : split overflowing pages ───── */
+(function(){
+  const GRID_CLASSES = ['rgrid','pgrid','sufrow','cards3'];
+  const SKIP = el => el.classList.contains('hb') || el.classList.contains('ft') || el.classList.contains('pn');
+  const SAFE_GAP = 8; // px breathing room above footer
+
+  function gridClass(el){
+    if (!el.classList) return null;
+    return [...el.classList].find(c => GRID_CLASSES.includes(c));
+  }
+
+  // Unwrap class-less wrapper divs so inner grids become direct children
+  function unwrapStyleWrappers(page){
+    let changed = true;
+    while (changed) {
+      changed = false;
+      [...page.children].forEach(child => {
+        if (SKIP(child)) return;
+        if (child.tagName === 'DIV' && child.className === '') {
+          // move its children up, preserving order
+          while (child.firstChild) page.insertBefore(child.firstChild, child);
+          child.remove();
+          changed = true;
+        }
+      });
+    }
+  }
+
+  function collectBlocks(page){
+    const blocks = [];
+    [...page.children].forEach(child => {
+      if (SKIP(child)) return;
+      const gc = gridClass(child);
+      if (gc) {
+        [...child.children].forEach(c => blocks.push({ el:c, wrap:gc }));
+      } else {
+        blocks.push({ el:child, wrap:null });
+      }
+    });
+    return blocks;
+  }
+
+  function cleanEmptyGrids(page){
+    [...page.children].forEach(c => {
+      if (gridClass(c) && c.children.length === 0) c.remove();
+    });
+  }
+
+  function bottomLimit(page){
+    const ft = page.querySelector(':scope > .ft');
+    if (ft) return ft.getBoundingClientRect().top - SAFE_GAP;
+    return page.getBoundingClientRect().bottom - 28;
+  }
+
+  function createContinuationPage(srcPage){
+    const np = document.createElement('section');
+    np.className = 'page';
+    // Continuation pages show ONLY the footer — no repeated part header,
+    // so cards visually stack from the previous page without a break.
+    const ft = srcPage.querySelector(':scope > .ft');
+    if (ft) np.appendChild(ft.cloneNode(true));
+    return np;
+  }
+
+
+  function appendBlocks(page, blocks){
+    const anchor = page.querySelector(':scope > .ft') || null;
+    let lastWrap = null, currentGrid = null;
+    blocks.forEach(b => {
+      if (b.wrap) {
+        if (b.wrap !== lastWrap) {
+          currentGrid = document.createElement('div');
+          currentGrid.className = b.wrap;
+          page.insertBefore(currentGrid, anchor);
+          lastWrap = b.wrap;
+        }
+        currentGrid.appendChild(b.el);
+      } else {
+        page.insertBefore(b.el, anchor);
+        lastWrap = null; currentGrid = null;
+      }
+    });
+  }
+
+  function findOverflowIndex(page){
+    const blocks = collectBlocks(page);
+    const limit = bottomLimit(page);
+    for (let i = 0; i < blocks.length; i++) {
+      if (blocks[i].el.getBoundingClientRect().bottom > limit) {
+        return { i, blocks };
+      }
+    }
+    return { i: -1, blocks };
+  }
+
+  function processPage(page){
+    unwrapStyleWrappers(page);
+    let guard = 0;
+    while (guard++ < 30) {
+      const { i, blocks } = findOverflowIndex(page);
+      if (i < 0) return;
+      // Force at least one block to stay (prevents infinite loop on oversized atomic blocks)
+      const cut = Math.max(1, i);
+      if (cut >= blocks.length) return;
+      const moving = blocks.slice(cut);
+      moving.forEach(b => b.el.remove());
+      cleanEmptyGrids(page);
+
+      const np = createContinuationPage(page);
+      page.after(np);
+      appendBlocks(np, moving);
+      page = np;
+    }
+  }
+
+  function fillPage(page){
+    const items = [...page.children].filter(c => !SKIP(c));
+    if (items.length < 2) return;
+    const limit = bottomLimit(page);
+    // find the lowest bounding bottom among items
+    let lastBottom = 0;
+    items.forEach(el => {
+      const b = el.getBoundingClientRect().bottom;
+      if (b > lastBottom) lastBottom = b;
+    });
+    const free = limit - lastBottom;
+    if (free <= 24) return; // already comfortably full
+    const gaps = items.length - 1;
+    const add = Math.floor(free / gaps);
+    if (add < 4) return;
+    for (let i = 1; i < items.length; i++) {
+      const cur = parseFloat(getComputedStyle(items[i]).marginTop) || 0;
+      items[i].style.marginTop = (cur + add) + 'px';
+    }
+  }
+
+  function fillOrnament(page){
+    if (page.classList.contains('cover')) return;
+    if (page.querySelector(':scope > .ornament')) return;
+    const limit = bottomLimit(page);
+    const items = [...page.children].filter(c => !SKIP(c) && !c.classList.contains('ornament'));
+    if (!items.length) return;
+    let lastBottom = 0;
+    items.forEach(el => {
+      const b = el.getBoundingClientRect().bottom;
+      if (b > lastBottom) lastBottom = b;
+    });
+    const pageTop = page.getBoundingClientRect().top;
+    const free = limit - lastBottom;
+    if (free < 90) return; // page is comfortably full
+    const orn = document.createElement('div');
+    orn.className = 'ornament';
+    orn.setAttribute('aria-hidden','true');
+    orn.innerHTML = `
+      <svg class="o-glyph" width="120" height="34" viewBox="0 0 120 34">
+        <line x1="2" y1="17" x2="38" y2="17"/>
+        <line x1="82" y1="17" x2="118" y2="17"/>
+        <path d="M44 17 Q52 4 60 17 Q68 30 76 17"/>
+        <circle cx="60" cy="17" r="2.6" class="fillmk"/>
+      </svg>
+      <div class="o-mark">Orun · English</div>
+      <div class="o-rule"><span></span></div>
+      <div class="o-sub">Roots &middot; Affixes &middot; Workbook</div>
+    `;
+    page.appendChild(orn);
+    // vertically center ornament in the free area
+    const ornH = orn.getBoundingClientRect().height;
+    const centerY = lastBottom + (free - ornH) / 2;
+    const topPx = centerY - pageTop;
+    orn.style.top = topPx + 'px';
+  }
+
+  function paginate(){
+    const pages = [...document.querySelectorAll('section.page:not(.cover)')];
+    pages.forEach(processPage);
+    // Add a decorative ornament to pages that have meaningful empty space
+    [...document.querySelectorAll('section.page')].forEach(fillOrnament);
+  }
+
+
+
+  function run(){
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(paginate);
+    } else {
+      paginate();
+    }
+  }
+
+  if (document.readyState === 'complete') run();
+  else window.addEventListener('load', run);
+})();
+</script>
+</body></html>

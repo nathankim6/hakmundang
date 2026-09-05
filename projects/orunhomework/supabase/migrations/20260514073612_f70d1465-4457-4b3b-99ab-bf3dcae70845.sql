@@ -1,0 +1,1 @@
+ALTER TABLE public.passages ADD COLUMN IF NOT EXISTS exam_label text;

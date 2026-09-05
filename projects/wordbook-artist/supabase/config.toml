@@ -1,0 +1,29 @@
+project_id = "xquvuwckxspnflxeodlu"
+
+[functions.generate-vocabulary]
+verify_jwt = false
+
+[functions.add-missing-words]
+verify_jwt = false
+
+[functions.append-words]
+verify_jwt = false
+
+[functions.organize-vocabulary]
+verify_jwt = false
+
+[functions.update-word-definitions]
+verify_jwt = false
+
+[functions.regenerate-synonyms]
+verify_jwt = false
+
+[functions.generate-missing-examples]
+verify_jwt = false
+
+[functions.generate-word-image]
+verify_jwt = false
+
+[functions.tag-part-of-speech]
+verify_jwt = false
+
