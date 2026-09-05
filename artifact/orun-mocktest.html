@@ -188,6 +188,9 @@ button, input, textarea, select { font-family: inherit; }
 .paste-alt .paste-body { display: none; }
 .paste-alt.open .paste-body { display: block; margin-top: 4px; width: 100%; }
 .paste-hint { display: block; margin-top: 7px; font-size: 13px; color: var(--tx-3); }
+.scan-help { margin-top: 12px; padding: 14px 16px; background: var(--bg); border: 1px solid var(--line-soft); border-radius: var(--r-sm); font-size: 13.5px; line-height: 1.6; color: var(--tx-2); }
+.scan-help b { color: var(--ink); }
+.scan-help .btn { display: block; margin-top: 10px; padding: 11px 16px; font-size: 14px; }
 
 /* ══════════ 입력 ══════════ */
 label { display: block; font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
@@ -526,7 +529,7 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
     <span class="step" data-step="2"></span><span class="step-rule"></span>
     <span class="step" data-step="3"></span>
   </div>
-  <div class="state"><span class="build" id="buildTag">2026-09-06 00:17</span><span class="lamp" id="consoleLamp"></span><span id="consoleState">대기</span></div>
+  <div class="state"><span class="build" id="buildTag">2026-09-06 00:30</span><span class="lamp" id="consoleLamp"></span><span id="consoleState">대기</span></div>
 </div>
 
 <!-- 화면 0 · 시작 -->
@@ -600,6 +603,10 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
     <div class="paste-body">
       <textarea id="examPaste" placeholder="시험지 본문을 문항 번호까지 그대로 붙여넣으세요.&#10;파일을 올렸다면 비워두셔도 돼요 — 여기에 넣으면 이 내용으로 분석해요."></textarea>
       <span class="paste-hint" id="examPasteHint"></span>
+      <div class="scan-help" id="scanHelp" hidden>
+        <b>스캔한 사진 PDF라면</b> Claude 대화창에 그 PDF를 올리고 아래 요청문을 붙여넣으세요. 답으로 나온 글을 이 칸에 붙여넣으면 돼요.
+        <button type="button" class="btn ghost" id="ocrPromptBtn">Claude에 보낼 요청문 복사</button>
+      </div>
     </div>
   </div>
 
@@ -793,6 +800,19 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
     const btn = $("examOcrBtn");
     if (!btn) return;
     btn.hidden = !(examFileRef && extOf(examFileRef.name) === "pdf" && ocrAvailable());
+    const help = $("scanHelp");
+    if (help) help.hidden = ocrAvailable();     // 이 화면이 스캔본을 못 읽을 때만 우회로를 보여준다
+  }
+  // Claude 대화창에서 스캔본을 대신 읽게 하는 요청문 — 앱의 OCR 규칙과 같다
+  function ocrChatPrompt() {
+    return "첨부한 PDF는 스캔한 시험지야. 아래 규칙대로 글자를 그대로 옮겨 적어 줘.\n\n" +
+      OCR_RULES.replace(/^너는 .*\n/, "") +
+      "\n8. 각 쪽의 시작에 [p.쪽번호] 를 한 줄로 넣는다.\n9. 2단 편집이면 왼쪽 단을 끝까지 적은 뒤 오른쪽 단을 적는다.";
+  }
+  async function copyOcrPrompt() {
+    const text = ocrChatPrompt();
+    try { await navigator.clipboard.writeText(text); toast("요청문을 복사했어요 — Claude 대화창에 PDF와 함께 붙여넣으세요"); }
+    catch (e) { window.prompt("아래 요청문을 복사하세요", text); }
   }
   async function reReadAsScan() {
     if (!examFileRef) return;
@@ -822,6 +842,7 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
     const wrap = $("examPasteWrap"), el = $("examPaste"), hint = $("examPasteHint");
     if (!wrap || !el) return;
     $("examPasteToggle").addEventListener("click", () => wrap.classList.toggle("open"));
+    const ob = $("ocrPromptBtn"); if (ob) ob.addEventListener("click", copyOcrPrompt);
     el.addEventListener("input", () => {
       const n = el.value.replace(/\s/g, "").length;
       hint.textContent = n ? n.toLocaleString() + "자 — 문항 번호와 지문을 그대로 두면 분석이 정확해집니다" : "";
@@ -2156,7 +2177,7 @@ body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45
     const c = window.claude;
     return [
       "ORUN 동형 모의고사 진단",
-      "build: 2026-09-06 00:17",
+      "build: 2026-09-06 00:30",
       "url: " + location.href,
       "runtime: " + RUNTIME + (c ? "" : " (window.claude 없음)"),
       "claude.use: " + (c && typeof c.use === "function" ? "있음" : "없음"),
