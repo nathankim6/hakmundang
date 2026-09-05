@@ -4,7 +4,9 @@ import { allSchools } from "@/lib/schools/data";
 import { parseAchievementFile } from "@/lib/schools/achievementParse";
 import { addAchievement, downloadAchievements, importAchievementsJson, removeAchievement, useAchievements } from "@/lib/schools/achievementStore";
 import { ACHIEVE_IMPORT as T } from "@/lib/schools/copy";
-import { Icon } from "@/components/schools/Art";
+import { Icon, Logo } from "@/components/schools/Art";
+import { schoolinfoUrl } from "@/lib/schools/schoolinfo";
+import type { SchoolFact } from "@/types/school";
 
 /**
  * 학교알리미 학업성취 엑셀 불러오기.
@@ -14,8 +16,10 @@ import { Icon } from "@/components/schools/Art";
 type Pending = ParsedAchievement & { id: number; code: string; year: number };
 
 const YEARS = [2027, 2026, 2025, 2024, 2023, 2022];
+/** 3개년 비교에 필요한 공시연도 — 체크리스트가 이 세 해를 기준으로 셈한다 */
+const NEED_YEARS = [2026, 2025, 2024];
 
-export function AchievementImport() {
+export function AchievementImport({ selected = [] }: { selected?: string[] }) {
   const store = useAchievements();
   const schools = useMemo(() => [...allSchools()].sort((a, b) => a.name.localeCompare(b.name, "ko")), []);
   const [pending, setPending] = useState<Pending[]>([]);
@@ -86,6 +90,8 @@ export function AchievementImport() {
       <p className="orun-small" style={{ margin: "0 0 14px", maxWidth: "70ch" }}>
         {T.lede}
       </p>
+
+      <Checklist selected={selected} schools={schools} store={store} />
 
       <div
         onDragOver={(e) => {
@@ -280,5 +286,80 @@ export function AchievementImport() {
         </div>
       </div>
     </section>
+  );
+}
+
+/* ── 받을 파일 체크리스트 ─────────────────── */
+
+/**
+ * 고른 학교마다 학교알리미 페이지로 가는 링크와 연도별 파일 상태를 보여 준다.
+ * 성취도 화면은 보안문자 뒤에 있어 사람이 받아야 하므로, 프로그램은
+ * 파일을 대신 받지 않고 거기까지 가는 길과 남은 일만 정리한다.
+ */
+function Checklist({ selected, schools, store }: { selected: string[]; schools: SchoolFact[]; store: ReturnType<typeof useAchievements> }) {
+  const C = T.checklist;
+  const rows = selected.map((code) => schools.find((s) => s.code === code)).filter((s): s is SchoolFact => Boolean(s));
+  const has = (code: string, year: number) => Boolean(store[code]?.files.some((f) => f.year === year));
+  const total = rows.length * NEED_YEARS.length;
+  const have = rows.reduce((n, s) => n + NEED_YEARS.filter((y) => has(s.code, y)).length, 0);
+  const allDone = total > 0 && have === total;
+
+  return (
+    <div className="orun-card orun-card--paper" style={{ marginBottom: 16, display: "grid", gap: 12 }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
+        <Icon name="checks" size={18} style={{ color: "var(--ink)" }} />
+        <strong style={{ color: "var(--ink)", fontSize: 14.5 }}>{C.title}</strong>
+        {total > 0 && (
+          <span className={`orun-chip ${allDone ? "orun-chip--mint" : "orun-chip--yellow"}`} style={{ marginLeft: "auto" }}>
+            {allDone ? C.done : C.progress(have, total)}
+          </span>
+        )}
+      </div>
+      <p className="orun-small" style={{ margin: 0, maxWidth: "70ch" }}>
+        {C.lede}
+      </p>
+      <ol className="orun-small" style={{ margin: 0, paddingLeft: 20, display: "grid", gap: 4, listStyle: "decimal" }}>
+        {C.steps.map((t, i) => (
+          <li key={i}>{t}</li>
+        ))}
+      </ol>
+      {rows.length === 0 ? (
+        <p className="orun-small" style={{ margin: 0 }}>
+          {C.noneSelected}
+        </p>
+      ) : (
+        <div className="orun-grid-hair" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))" }}>
+          {rows.map((s) => {
+            const url = schoolinfoUrl(s.code);
+            return (
+              <div key={s.code} style={{ padding: "12px 14px", display: "grid", gap: 8, alignContent: "start" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                  <Logo code={s.code} name={s.name} size="sm" />
+                  <strong style={{ color: "var(--ink)", fontSize: 13.5 }}>{s.name}</strong>
+                </div>
+                <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+                  {NEED_YEARS.map((y) => {
+                    const ok = has(s.code, y);
+                    return (
+                      <span key={y} className={`orun-chip ${ok ? "orun-chip--mint" : "orun-chip--fill"}`}>
+                        {ok ? C.yearDone(y) : C.yearTodo(y)}
+                      </span>
+                    );
+                  })}
+                </div>
+                {url ? (
+                  <a className="orun-btn orun-btn--sm" href={url} target="_blank" rel="noopener noreferrer" style={{ justifySelf: "start", textDecoration: "none" }}>
+                    <Icon name="school" size={13} />
+                    {C.open}
+                  </a>
+                ) : (
+                  <span className="orun-small">{C.noLink}</span>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      )}
+    </div>
   );
 }

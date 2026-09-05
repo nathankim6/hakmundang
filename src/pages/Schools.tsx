@@ -97,7 +97,7 @@ const Schools = () => {
         {tab === "edit" && (
           <section className="orun-rise" style={{ paddingTop: 30 }}>
             <ObservationEditor />
-            <AchievementImport />
+            <AchievementImport selected={selected} />
             <BackupPanel />
           </section>
         )}
