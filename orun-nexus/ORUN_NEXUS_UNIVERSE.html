@@ -968,7 +968,7 @@ function orbit(dt){
   /* 파고든 화면에서는 이름표를 읽으라고 커서가 노드에 얹히면 멈춘다.
      Galaxy는 노드가 611개라 커서가 거의 항상 뭔가에 걸리고, 그러면 판이
      통째로 얼어붙는다 — 여기서는 끌고 있을 때만 멈춘다. */
-  const calm = expandAll ? !drag : (focus.length<=1 && !hover && !drag);
+  const calm = expandAll ? (!drag && !hoverLabel) : (focus.length<=1 && !hover && !drag);
   /* prefers-reduced-motion 에 묶어 두었더니, OS 에서 '동작 줄이기'를 켠
      기계에서는 판이 통째로 멈춘 채 이유도 보이지 않았다. 접근성 설정이
      끄고 싶은 것은 반짝임·떨림이지 이 느린 회전이 아니다. 회전은 눈에
@@ -4437,13 +4437,15 @@ function drawLabel(n,x,y,R,st,A,k){
 /* ============================================================
    8. INTERACTION — drag orbits the lattice, wheel dollies in
    ============================================================ */
+let hitViaLabel=false;
 function hit(mx,my){
   /* 이름표 글씨가 맨 위에 그려지므로 먼저 본다 — 이 프레임에 그려진 라벨만 */
+  hitViaLabel=false;
   const labs=(ACTIVE&&ACTIVE._labels)||[];
   for(let i=labs.length-1;i>=0;i--){
     const n=labs[i][0], lb=n._lb;
     if(!lb||lb.f<frameNo-2||n.vis<.4) continue;
-    if(mx>=lb.x0&&mx<=lb.x1&&my>=lb.y0&&my<=lb.y1) return n;
+    if(mx>=lb.x0&&mx<=lb.x1&&my>=lb.y0-2&&my<=lb.y1+2){ hitViaLabel=true; return n; }
   }
   /* Covers are the biggest thing on screen and the obvious thing to aim at,
      so they are hit-tested next — and nearest-centre wins where two overlap. */
@@ -4500,6 +4502,7 @@ function towerAt(mx,my){
   towerUpright=true; const lp=pt(0,-LANTERN/2,0); towerUpright=false;
   return Math.hypot(mx-lp[0],my-lp[1])<92*lp[2]*cam.zoom;
 }
+let hoverLabel=false;                 /* 커서가 이름표 글씨 위에 있다 — 전개 화면에서도 판을 멈춘다 */
 let drag=null;
 cv.addEventListener('pointerdown',e=>{
   cv.setPointerCapture(e.pointerId);
@@ -4528,12 +4531,13 @@ cv.addEventListener('pointermove',e=>{
   if(gp!==plateHover){ plateHover=gp; }
   const h=(universeMode||gp)?null:hit(mx,my);
   if(h!==hover){ hover=h; }
+  hoverLabel=!!(h&&hitViaLabel);
   const ug=universeMode&&!gp ? galaxyAt(mx,my) : null;
   const tw=!h&&!gp&&!ug&&towerAt(mx,my);
   if(ACTIVE) ACTIVE.towerHovT=tw?1:0;
   cv.style.cursor=(h||gp||ug||tw)?'pointer':'grab';
 });
-cv.addEventListener('pointerleave',()=>{ if(ACTIVE) ACTIVE.towerHovT=0; labelMouse=[0,0]; });
+cv.addEventListener('pointerleave',()=>{ if(ACTIVE) ACTIVE.towerHovT=0; labelMouse=[0,0]; hoverLabel=false; });
 cv.addEventListener('pointerup',e=>{
   cv.classList.remove('drag');
   const moved=drag&&drag.moved>5; drag=null;
