@@ -324,7 +324,7 @@ ul.pts li::before{content:'';position:absolute;left:2px;top:11px;width:5px;heigh
 #gl{position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none;opacity:0;transition:opacity .6s var(--ease-out)}
 #gl.live{opacity:1;filter:saturate(1.08) contrast(1.08)}
 /* 필름 그레인 — 잡음 타일이 overlay 로 겹치고 스텝으로 튄다 */
-#grain{position:absolute;inset:-200px;z-index:4;pointer-events:none;opacity:.07;mix-blend-mode:overlay;background-repeat:repeat;background-size:192px 192px}
+#grain{position:absolute;inset:-200px;z-index:4;pointer-events:none;opacity:.07;mix-blend-mode:overlay;background-repeat:repeat;background-size:128px 128px}
 @media(prefers-reduced-motion:no-preference){#grain{animation:grain .7s steps(6) infinite}}
 @keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-44px,32px)}40%{transform:translate(30px,-54px)}60%{transform:translate(-62px,-18px)}80%{transform:translate(52px,58px)}100%{transform:translate(0,0)}}
 @media print{#grain{display:none}}
@@ -1117,14 +1117,16 @@ function modePose(){
     cam.tyaw = universeMode? YAW_UNIVERSE : YAW_FOCUS;
 }
 
+let SS=true;                                   /* DPR 1 화면의 1.5× 슈퍼샘플 — 선과 글자가 곱다 */
 function resize(){
   const r=cv.getBoundingClientRect();
-  DPR=Math.min(window.devicePixelRatio||1,2);
+  DPR=Math.min(2,Math.max(window.devicePixelRatio||1,SS?1.5:1));
   W=r.width; H=r.height;
   cv.width=Math.max(1,Math.round(W*DPR));
   cv.height=Math.max(1,Math.round(H*DPR));
   if(glcv){ glcv.width=cv.width; glcv.height=cv.height; }
   if(GL) GL.gl.viewport(0,0,glcv.width,glcv.height);
+  try{ ctx.imageSmoothingQuality='high'; }catch(e){}
 }
 
 /* ── WebGL 바닥층 ────────────────────────────────────────────
@@ -1146,7 +1148,7 @@ float fbm(vec2 p){ float v=0.0, a=0.5; mat2 m=mat2(1.6,1.2,-1.2,1.6);
   for(int i=0;i<6;i++){ v+=a*vnoise(p); p=m*p+11.3; a*=0.5; } return v; }`;
 /* 심우주 하늘 — 다섯 Galaxy 색의 fBm 성운, 별 3층, 회절 스파이크가 선 밝은 별, 은하수 띠와 먼지 골, 먼 은하 */
 const GLSL_SKY=`precision highp float;varying vec2 v_uv;
-uniform vec2 u_res;uniform float u_seed;uniform vec3 u_ac0,u_ac1,u_ac2,u_ac3,u_ac4;uniform vec2 u_np0,u_np1,u_np2,u_np3,u_np4;`+GLSL_NOISE+`
+uniform vec2 u_res;uniform float u_seed,u_dpr;uniform vec3 u_ac0,u_ac1,u_ac2,u_ac3,u_ac4;uniform vec2 u_np0,u_np1,u_np2,u_np3,u_np4;`+GLSL_NOISE+`
 vec3 starLayer(vec2 px,float S,float dens,float sig,float amp,float so){
   vec3 acc=vec3(0.0); vec2 c=floor(px/S);
   for(int y=-1;y<=1;y++) for(int x=-1;x<=1;x++){
@@ -1183,27 +1185,27 @@ void main(){
   /* 다섯 성운 */
   col+=cloud(p,u_np0,u_ac0,0.0)+cloud(p,u_np1,u_ac1,1.0)+cloud(p,u_np2,u_ac2,2.0)+cloud(p,u_np3,u_ac3,3.0)+cloud(p,u_np4,u_ac4,4.0);
   /* 별 3층 */
-  col+=starLayer(px,9.0,0.16,0.55,0.42,u_seed);
-  col+=starLayer(px,26.0,0.30,0.85,0.72,u_seed+3.0);
-  col+=starLayer(px,70.0,0.30,1.30,1.00,u_seed+9.0);
+  col+=starLayer(px,9.0*u_dpr,0.16,0.55*u_dpr,0.42,u_seed);
+  col+=starLayer(px,26.0*u_dpr,0.30,0.85*u_dpr,0.72,u_seed+3.0);
+  col+=starLayer(px,70.0*u_dpr,0.30,1.30*u_dpr,1.00,u_seed+9.0);
   /* 회절 스파이크가 선 밝은 별 */
   for(int i=0;i<9;i++){
     float fi=float(i);
     vec2 sp=vec2(hash21(vec2(fi,1.7)+u_seed),hash21(vec2(fi,4.3)+u_seed))*u_res;
     vec2 d=px-sp; float dd=dot(d,d);
-    float sz=1.3+1.6*hash21(vec2(fi,8.1));
+    float sz=(1.3+1.6*hash21(vec2(fi,8.1)))*u_dpr;
     float w=hash21(vec2(fi,2.9));
     vec3 sc=w<0.3?vec3(1.0,0.82,0.62):(w<0.7?vec3(0.95,0.97,1.0):vec3(0.70,0.80,1.0));
     float core=exp(-dd/(2.0*sz*sz));
     float halo=exp(-sqrt(dd)/(9.0*sz))*0.10;
-    float spike=(exp(-abs(d.x)/(15.0*sz))*exp(-abs(d.y)*1.6)+exp(-abs(d.y)/(15.0*sz))*exp(-abs(d.x)*1.6))*0.26;
+    float spike=(exp(-abs(d.x)/(15.0*sz))*exp(-abs(d.y)*1.6/u_dpr)+exp(-abs(d.y)/(15.0*sz))*exp(-abs(d.x)*1.6/u_dpr))*0.26;
     col+=sc*(core*1.1+halo+spike);
   }
   /* 먼 은하 — 기울어진 타원 얼룩 */
   for(int i=0;i<7;i++){
     float fi=float(i)+20.0;
     vec2 gp=vec2(hash21(vec2(fi,1.1)+u_seed),hash21(vec2(fi,2.2)+u_seed))*u_res;
-    float rot=hash21(vec2(fi,3.3))*3.14159, ax=8.0+14.0*hash21(vec2(fi,4.4)), ay=ax*(0.28+0.5*hash21(vec2(fi,5.5)));
+    float rot=hash21(vec2(fi,3.3))*3.14159, ax=(8.0+14.0*hash21(vec2(fi,4.4)))*u_dpr, ay=ax*(0.28+0.5*hash21(vec2(fi,5.5)));
     vec2 d=px-gp; vec2 e=vec2(d.x*cos(rot)-d.y*sin(rot),d.x*sin(rot)+d.y*cos(rot));
     float g=exp(-(e.x*e.x/(ax*ax)+e.y*e.y/(ay*ay))*1.6);
     col+=vec3(0.95,0.88,0.80)*g*0.16+vec3(0.8,0.85,1.0)*exp(-(e.x*e.x/(ax*ax)+e.y*e.y/(ay*ay))*0.4)*0.05;
@@ -1239,8 +1241,14 @@ void main(){
 }`;
 function initGL(){
   if(!glcv) return;
-  let gl=null;
-  try{ gl=glcv.getContext('webgl',{alpha:true,premultipliedAlpha:true,antialias:false,depth:false,stencil:false,preserveDrawingBuffer:false}); }catch(e){ gl=null; }
+  /* 소프트웨어 WebGL(SwiftShader 등)은 2048² 마감 패스에 수 초가 걸린다 — 먼저 '진짜 GPU 만' 으로
+     열어 보고, 안 열리면 소프트 모드로 연다: 텍스처 1024, 마감 패스 생략, 하늘 반해상도, 슈퍼샘플 없음.
+     ?gpu=1 은 이 판별을 건너뛴다(검증용). */
+  let gl=null, soft=false;
+  const A={alpha:true,premultipliedAlpha:true,antialias:false,depth:false,stencil:false,preserveDrawingBuffer:false};
+  const force=/[?&]gpu=1/.test(location.search||'');
+  try{ gl=glcv.getContext('webgl',force?A:Object.assign({failIfMajorPerformanceCaveat:true},A)); }catch(e){ gl=null; }
+  if(!gl){ try{ gl=glcv.getContext('webgl',A); soft=true; }catch(e){ gl=null; } }
   if(!gl) return;
   const sh=(t,src)=>{ const o=gl.createShader(t); gl.shaderSource(o,src); gl.compileShader(o); if(!gl.getShaderParameter(o,gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(o)); return o; };
   const mk=fs=>{
@@ -1262,7 +1270,12 @@ function initGL(){
   gl.vertexAttribPointer(1,2,gl.FLOAT,false,24,16);
   gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL,true);
   gl.enable(gl.BLEND);
-  GL={gl,prog:P0.prog,uAlpha:P0.u.u_alpha,uTex:P0.u.u_tex,buf,verts:new Float32Array(24),sky:PSKY,fin:PFIN,neb:null,nebKey:''};
+  const an=gl.getExtension('EXT_texture_filter_anisotropic')||gl.getExtension('WEBKIT_EXT_texture_filter_anisotropic')||gl.getExtension('MOZ_EXT_texture_filter_anisotropic');
+  const mt=gl.getParameter(gl.MAX_TEXTURE_SIZE)||2048;
+  if(mt<TEX){ TEX=1024; TEXR=470; }
+  if(soft){ TEX=1024; TEXR=470; PFIN=null; if(SS){ SS=false; resize(); } }
+  GL={gl,prog:P0.prog,uAlpha:P0.u.u_alpha,uTex:P0.u.u_tex,buf,verts:new Float32Array(24),sky:PSKY,fin:PFIN,neb:null,nebKey:'',soft:soft,
+      aniso:an?{ext:an,max:gl.getParameter(an.MAX_TEXTURE_MAX_ANISOTROPY_EXT)||1}:null};
   gl.useProgram(P0.prog); gl.uniform1i(P0.u.u_tex,0);
   glcv.addEventListener('webglcontextlost',e=>{ e.preventDefault(); GL=null; glcv.style.display='none'; },false);
   gl.viewport(0,0,glcv.width,glcv.height);
@@ -1288,8 +1301,13 @@ function glBake(w,h,P,setup,mip){
   gl.enable(gl.BLEND); gl.viewport(0,0,glcv.width,glcv.height);
   gl.useProgram(GL.prog);
   if(!ok){ gl.deleteTexture(tex); return null; }
-  if(mip){ gl.bindTexture(gl.TEXTURE_2D,tex); gl.generateMipmap(gl.TEXTURE_2D); gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR_MIPMAP_LINEAR); }
+  if(mip){ gl.bindTexture(gl.TEXTURE_2D,tex); gl.generateMipmap(gl.TEXTURE_2D); gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR_MIPMAP_LINEAR); glAniso(); }
   return tex;
+}
+/* 기울어진 원반은 비등방 필터가 있어야 선명하다 — 없으면 압축된 축이 흐려진다 */
+function glAniso(){
+  if(!GL||!GL.aniso) return;
+  try{ GL.gl.texParameterf(GL.gl.TEXTURE_2D,GL.aniso.ext.TEXTURE_MAX_ANISOTROPY_EXT,Math.min(8,GL.aniso.max)); }catch(e){}
 }
 /* 하늘 — 화면 크기마다 한 번 */
 const NEB_POS={vocab:[.22,.70],grammar:[.50,.72],syntax:[.36,.34],usage:[.64,.34],reading:[.78,.70]};
@@ -1298,9 +1316,9 @@ function glSky(){
   if(GL.neb&&GL.nebKey===key) return GL.neb;
   if(!GL.sky) return null;
   if(GL.neb) GL.gl.deleteTexture(GL.neb);
-  const w=glcv.width, h=glcv.height;
+  const w=GL.soft?Math.round(glcv.width/2):glcv.width, h=GL.soft?Math.round(glcv.height/2):glcv.height;
   GL.neb=glBake(w,h,GL.sky,(gl,u)=>{
-    gl.uniform2f(u.u_res,w,h); gl.uniform1f(u.u_seed,3.7);
+    gl.uniform2f(u.u_res,w,h); gl.uniform1f(u.u_seed,3.7); gl.uniform1f(u.u_dpr,GL.soft?DPR/2:DPR);
     GALAXIES.forEach((g,i)=>{
       const c=g.accent, p=NEB_POS[g.id]||[.5,.5];
       gl.uniform3f(u['u_ac'+i],c[0]/255,c[1]/255,c[2]/255);
@@ -1331,7 +1349,7 @@ function glTexture(src,mip){
   gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);
   gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);
   gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);
-  if(mip){ gl.generateMipmap(gl.TEXTURE_2D); gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR_MIPMAP_LINEAR); }
+  if(mip){ gl.generateMipmap(gl.TEXTURE_2D); gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR_MIPMAP_LINEAR); glAniso(); }
   else gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);
   src.__gltex=t; src.__glver=(src.__ver||0);
   return t;
@@ -1531,6 +1549,7 @@ function cached(name,render){
   if(!L.c || L.c.width!==wpx || L.c.height!==hpx){
     L.c=document.createElement('canvas'); L.c.width=wpx; L.c.height=hpx;
     L.x=L.c.getContext('2d'); L.key='';
+    try{ L.x.imageSmoothingQuality='high'; }catch(e){}
   }
   if(L.key!==k){
     L.key=k;
@@ -1557,7 +1576,10 @@ function governor(now){
     ftAvg=ftAvg*0.90+dt*0.10;
   }
   ftLast=now;
-  if(ftAvg>27 && QUALITY>0){ QUALITY--; ftAvg=16; STAGE_EL.classList.toggle('lowq',QUALITY===0); }
+  if(ftAvg>27 && QUALITY>0){
+    QUALITY--; ftAvg=16; STAGE_EL.classList.toggle('lowq',QUALITY===0);
+    if(QUALITY===0&&SS){ SS=false; resize(); buildBackdrop(); }    /* 슈퍼샘플부터 내려놓는다 */
+  }
   else if(ftAvg<15.5 && QUALITY<2){ QUALITY++; ftAvg=16; STAGE_EL.classList.remove('lowq'); }
 }
 let SC=null,SCx=null,bloomTick=0;
@@ -2887,7 +2909,9 @@ try{ const v=localStorage.getItem('orun.linkfx'); if(v&&LINKFX.some(f=>f.id===v)
    따뜻한 벌지·코어. 시드가 고정이라 열 때마다 같은 은하다.
    원반 평면에는 깊이 방향 띠 36개로 나눠 얹는다 — 띠마다 affine 이라
    원근이 맞고, 프레임 비용은 drawImage 36번뿐이다. */
-const GAL_R=596*1.4, TEX=1024, TEXR=470;
+const GAL_R=596*1.4;
+let TEX=2048, TEXR=940;                 /* 2048² — GPU 상한이 낮으면 initGL 이 1024 로 내린다 */
+try{ const q=/[?&]tex=(\d+)/.exec(location.search); if(q){ TEX=+q[1]; TEXR=Math.round(TEX*470/1024); } }catch(e){}
 const GAL_TYPES={
   vocab:  {arms:2,pitch:.27,bar:0,  bulge:.10,dust:1.0,hii:1.0,scatter:.10,ring:0,  spread:1.0},
   grammar:{arms:2,pitch:.23,bar:.24,bulge:.13,dust:1.1,hii:.8, scatter:.12,ring:0,  spread:1.0},
@@ -2921,7 +2945,7 @@ function buildGalaxyTexture(gal){
   const hiiC=[255,128,176], obC=[170,205,255], dustTint=[70,42,28];
   const cv2=document.createElement('canvas'); cv2.width=cv2.height=TEX;
   const g=cv2.getContext('2d');
-  const C=TEX/2, b=Math.tan(P.pitch), r0=TEXR*0.06;
+  const C=TEX/2, b=Math.tan(P.pitch), r0=TEXR*0.06, SC=TEX/1024, SP=Math.max(1,SC*.65);   /* SC 스프라이트 배율 · SP 점별 배율(더 곱게) */
   const armAngle=(r,m)=>Math.log(Math.max(r,r0)/r0)/b + m*2*Math.PI/P.arms;
   const place=(r,m,scat)=>{ const th=armAngle(r,m)+gauss()*scat; return [C+Math.cos(th)*r, C+Math.sin(th)*r]; };
   const rDisc=()=>{ let r; do{ r=-Math.log(1-rnd())*TEXR*0.33*P.spread; }while(r>TEXR*0.98); return r; };
@@ -2935,43 +2959,47 @@ function buildGalaxyTexture(gal){
   g.fillStyle=gr; g.fillRect(0,0,TEX,TEX);
   /* 2. 팔의 퍼진 빛 */
   g.globalCompositeOperation='lighter';
-  for(let i=0;i<6400;i++){
+  const nDiff=Math.round(6400*SC);
+  for(let i=0;i<nDiff;i++){
     const r=rArm(), m=i%P.arms, t=r/TEXR;
     const wide=i%3===0;                                   /* 셋에 하나는 팔 사이로 번진다 */
     const [x,y]=place(r,m,P.scatter*(wide?3.4:2.0));
     const col=t<.25?mxc3(warm2,armC,t*4):armC;
-    const sz=(wide?26:14)+rnd()*30, a=(wide?.018:.032+rnd()*.045)*(1-t*.5);
-    g.globalAlpha=a; g.drawImage(sprite(col,32),x-sz/2,y-sz/2,sz,sz);
+    const sz=((wide?26:14)+rnd()*30)*SC, a=(wide?.018:.032+rnd()*.045)*(1-t*.5)/SC;
+    g.globalAlpha=a; g.drawImage(sprite(col,64),x-sz/2,y-sz/2,sz,sz);
   }
   /* 팔 사이의 늙은 별 원반 — 지수 분포, 아주 옅게 */
-  for(let i=0;i<2600;i++){
+  const nOld=Math.round(2600*SC*1.5);
+  for(let i=0;i<nOld;i++){
     const r=rDisc(), th=rnd()*Math.PI*2, t=r/TEXR;
     const x=C+Math.cos(th)*r, y=C+Math.sin(th)*r;
-    const sz=rnd()<.9?1+rnd():2+rnd(), a=(.10+rnd()*.25)*(1-t*.4);
+    const sz=(rnd()<.9?1+rnd():2+rnd())*SP, a=(.09+rnd()*.22)*(1-t*.4);
     g.globalAlpha=a; g.fillStyle=RGBA(t<.3?warm2:armC2,1); g.fillRect(x-sz/2,y-sz/2,sz,sz);
   }
   /* 고리 은하의 안쪽 원반 — 고리만 있으면 만화가 된다 */
   if(P.ring){
-    for(let i=0;i<1400;i++){
-      const r=rDisc()*.55, th=rnd()*Math.PI*2, sz=12+rnd()*24, a=.02+rnd()*.03;
+    const nIn=Math.round(1400*SC);
+    for(let i=0;i<nIn;i++){
+      const r=rDisc()*.55, th=rnd()*Math.PI*2, sz=(12+rnd()*24)*SC, a=(.02+rnd()*.03)/SC;
       g.globalAlpha=a; g.drawImage(sprite(armC2,32),C+Math.cos(th)*r-sz/2,C+Math.sin(th)*r-sz/2,sz,sz);
     }
   }
   /* 막대 */
   if(P.bar){
-    for(let i=0;i<1800;i++){
+    const nBar=Math.round(1800*SC);
+    for(let i=0;i<nBar;i++){
       const u=(rnd()*2-1)*P.bar*TEXR, v=gauss()*TEXR*.045*(1-Math.abs(u)/(P.bar*TEXR)*.5);
-      const sz=6+rnd()*14, a=.06+rnd()*.08;
+      const sz=(6+rnd()*14)*SC, a=(.06+rnd()*.08)/SC;
       g.globalAlpha=a; g.drawImage(sprite(warm2,32),C+u-sz/2,C+v-sz/2,sz,sz);
     }
   }
   /* 3. 먼지 띠 — 팔 안쪽 가장자리에서 빛을 지운다, 살짝 갈색으로 붉어진다 */
-  const nd=Math.round(1400*P.dust);
+  const nd=Math.round(1400*P.dust*SC);
   for(let i=0;i<nd;i++){
     const r=P.ring?rRing():TEXR*0.12+rnd()*TEXR*.7, m=i%P.arms;
     const th=armAngle(r,m)-0.10-rnd()*.08+gauss()*.04;
     const x=C+Math.cos(th)*r, y=C+Math.sin(th)*r;
-    const sz=10+rnd()*22;
+    const sz=(10+rnd()*22)*SC;
     g.globalCompositeOperation='destination-out'; g.globalAlpha=.22+rnd()*.28;
     g.drawImage(sprite(WH,32),x-sz/2,y-sz/2,sz,sz);
     g.globalCompositeOperation='lighter'; g.globalAlpha=.05;
@@ -2979,9 +3007,10 @@ function buildGalaxyTexture(gal){
   }
   /* 4. 별 9천 — 벌지는 따뜻하고 둥글게, 팔은 청백으로 촘촘하게 */
   g.globalCompositeOperation='lighter';
-  for(let i=0;i<14000;i++){
+  const nStar=Math.round(14000*SC*1.5), nBul=Math.round(3600*SC*1.5);
+  for(let i=0;i<nStar;i++){
     let x,y,col;
-    if(i<3600){
+    if(i<nBul){
       const r=Math.abs(gauss())*TEXR*P.bulge*1.7, th=rnd()*Math.PI*2;
       x=C+Math.cos(th)*r; y=C+Math.sin(th)*r*.85; col=warm;
     } else {
@@ -2989,25 +3018,26 @@ function buildGalaxyTexture(gal){
       [x,y]=place(r,m,P.scatter*1.1);
       col= rnd()<.25? warm2 : (rnd()<.5?armC:armC2);
     }
-    const sz=rnd()<.85?1+rnd()*1.2:2+rnd()*1.6, a=.25+rnd()*.6;
+    const sz=(rnd()<.85?1+rnd()*1.2:2+rnd()*1.6)*SP, a=.22+rnd()*.5;
     g.globalAlpha=a; g.fillStyle=RGBA(col,1); g.fillRect(x-sz/2,y-sz/2,sz,sz);
   }
   /* 5. HII 영역(분홍)과 OB 성협(푸른) — 팔의 앞자락 */
   /* 젊은 성단 — 팔 위의 푸른 매듭 */
-  for(let i=0;i<70;i++){
+  const nCl=Math.round(70*SC);
+  for(let i=0;i<nCl;i++){
     const r=P.ring?rRing():TEXR*.18+rnd()*TEXR*.62, m=i%P.arms;
     const [x,y]=place(r,m,P.scatter*.5);
-    const sz=5+rnd()*8;
+    const sz=(5+rnd()*8)*SC, dd=1.6*SP;
     g.globalAlpha=.45+rnd()*.35; g.drawImage(sprite([215,232,255],32),x-sz/2,y-sz/2,sz,sz);
-    g.globalAlpha=.9; g.fillStyle='rgba(255,255,255,1)'; g.fillRect(x-.8,y-.8,1.6,1.6);
+    g.globalAlpha=.9; g.fillStyle='rgba(255,255,255,1)'; g.fillRect(x-dd/2,y-dd/2,dd,dd);
   }
-  const nh=Math.round(170*P.hii);
+  const nh=Math.round(170*P.hii*SC);
   for(let i=0;i<nh;i++){
     const r=P.ring?rRing():TEXR*.15+rnd()*TEXR*.7, m=i%P.arms;
     const [x,y]=place(r,m,P.scatter*.6);
-    const sz=8+rnd()*14;
-    g.globalAlpha=.22+rnd()*.28; g.drawImage(sprite(hiiC,32),x-sz/2,y-sz/2,sz,sz);
-    if(rnd()<.6){ const s2=5+rnd()*9; g.globalAlpha=.3; g.drawImage(sprite(obC,32),x+gauss()*6-s2/2,y+gauss()*6-s2/2,s2,s2); }
+    const sz=(8+rnd()*14)*SC;
+    g.globalAlpha=(.22+rnd()*.28)/Math.sqrt(SC); g.drawImage(sprite(hiiC,32),x-sz/2,y-sz/2,sz,sz);
+    if(rnd()<.6){ const s2=(5+rnd()*9)*SC; g.globalAlpha=.3/Math.sqrt(SC); g.drawImage(sprite(obC,32),x+gauss()*6*SC-s2/2,y+gauss()*6*SC-s2/2,s2,s2); }
   }
   /* 6. 코어 */
   g.globalAlpha=1;
@@ -3561,7 +3591,7 @@ function drawNodes(){
    its series shares. Painted once into an offscreen canvas at 2x and blitted
    thereafter, so ten plates cost ten drawImage calls a frame.
    ============================================================ */
-const PLATE={}, COVIMG={}, PW=132, PH=180, PSS=2;
+const PLATE={}, COVIMG={}, PW=132, PH=180, PSS=3;
 /* Real cover scans ride in DATA as data URIs. Until one decodes the drawn
    plate stands in, then the cache is dropped so the photo takes over. */
 function coverImg(b){
@@ -7077,8 +7107,8 @@ async function boot(){
   initGL();
   /* 필름 그레인 — 작은 잡음 타일 하나를 구워 CSS 가 겹친다 */
   try{
-    const gc=document.createElement('canvas'); gc.width=gc.height=192;
-    const gx=gc.getContext('2d'), im=gx.createImageData(192,192), d=im.data;
+    const gc=document.createElement('canvas'); gc.width=gc.height=256;
+    const gx=gc.getContext('2d'), im=gx.createImageData(256,256), d=im.data;
     for(let i=0;i<d.length;i+=4){ const v=110+Math.random()*90|0; d[i]=d[i+1]=d[i+2]=v; d[i+3]=255; }
     gx.putImageData(im,0,0);
     const ge=document.getElementById('grain'); if(ge) ge.style.backgroundImage='url('+gc.toDataURL()+')';
