@@ -73,7 +73,7 @@ table.bank .k{color:var(--sub)}
 .tip .bulb{display:inline-block;width:15px;height:15px;border-radius:50%;background:var(--yel);margin-right:5px;vertical-align:-3px}
 /* ── 삽화 ── */
 figure{margin-top:auto;margin-bottom:2mm;flex:0 0 auto}
-figure .art{height:46mm;border-radius:14px;background:var(--tint);display:flex;align-items:center;justify-content:center;padding:7px 12px}
+figure .art{height:54mm;border-radius:14px;background:var(--tint);display:flex;align-items:center;justify-content:center;padding:7px 12px}
 figure .art svg{height:100%;width:100%}
 
 figcaption{font-size:7.9pt;color:var(--sub);margin-top:6px}
@@ -307,7 +307,7 @@ table.slot.bone td.lab{background:var(--tint);border-color:var(--hair);box-shado
 .kb .bd{padding:11px 14px 12px}
 .kb .row{display:flex;gap:13px;align-items:center}
 .kb .bd .txt{flex:1;min-width:0}
-.kb .vig{flex:0 0 43mm;background:#fff;border-radius:10px;padding:9px 8px 6px}
+.kb .vig{flex:0 0 45mm;background:#fff;border-radius:10px;padding:8px 8px 6px}
 .kb .vig svg{width:100%;display:block}
 .kb .vig .cap{font-size:7pt;font-weight:800;letter-spacing:.13em;color:var(--ac);text-align:center;margin-top:5px}
 /* ═══ 책 색인 탭 ═══ */

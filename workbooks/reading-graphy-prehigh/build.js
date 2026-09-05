@@ -213,7 +213,7 @@ T.forEach(t=>{
       ${t.kb.items.map((it,i)=>`<div class="it"><div class="num">${i+1}</div>
         <div><h5>${it[0]}</h5><p>${it[1]}</p></div></div>`).join("")}
      </div>
-     <div class="vig"><svg viewBox="0 0 240 140" fill="none">${VIG[t.no](t.accent,t.tint,t.deep)}</svg>
+     <div class="vig">${VIG[t.no](t.accent,t.tint,t.deep)}
       <div class="cap">${t.kb.title}</div></div>
     </div>
     <div class="ask"><span>생각해 볼 것</span>${t.kb.ask}</div>

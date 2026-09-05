@@ -1,182 +1,154 @@
-/* Unit 1 삽화 — 레슨 아이콘 · 배너 장면 · Knowledge Bank 비네트 */
-/* 원본 플랫 벡터 삽화 — 테마별 장면 + 아이콘 */
-const ink="#2B2A28", line="#3A3936";
+/* Unit 1 삽화 — 만화 + 인포그래픽 (kit.js 사용)
+   장면 viewBox 640×280 · 비네트 240×150 · 아이콘 64×64 */
+const K = require("../kit.js");
+const { person, bubble, thought, panel, arrow, step, callout, stat, tag, label, ground, bar, prop, ink } = K;
 
-/* 레슨 원형 아이콘 */
 const icons = {
  translation:(c)=>`<svg viewBox="0 0 64 64" fill="none">
-  <rect x="8" y="14" width="21" height="34" rx="3" fill="${c}"/>
-  <rect x="35" y="14" width="21" height="34" rx="3" fill="${c}" opacity=".28"/>
-  <path d="M29 31h6" stroke="${c}" stroke-width="2.6" stroke-linecap="round"/>
-  <path d="M32.5 27.5 36 31l-3.5 3.5" stroke="${c}" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M13 22h11M13 27h8" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg>`,
+  <rect x="7" y="14" width="22" height="34" rx="4" fill="${c}"/>
+  <rect x="35" y="14" width="22" height="34" rx="4" fill="${c}" opacity=".3"/>
+  <path d="M13 22h10M13 28h7" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M41 22h10M41 28h7" stroke="${c}" stroke-width="2.4" stroke-linecap="round" opacity=".7"/>
+  <path d="M29 31h6M32.5 27.5 36 31l-3.5 3.5" stroke="${c}" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
  image:(c)=>`<svg viewBox="0 0 64 64" fill="none">
-  <rect x="9" y="13" width="46" height="34" rx="3.5" stroke="${c}" stroke-width="3"/>
-  <path d="M20 38c4-8 9-9 13-4 2 2.6 4 2 6-1" stroke="${c}" stroke-width="2.8" stroke-linecap="round"/>
-  <circle cx="24" cy="24" r="3.4" fill="${c}"/>
-  <path d="M22 53h20" stroke="${c}" stroke-width="3" stroke-linecap="round" opacity=".45"/></svg>`,
+  <rect x="8" y="13" width="48" height="34" rx="4" stroke="${c}" stroke-width="3"/>
+  <path d="M14 40c6-11 12-12 17-5 3 4 6 3 8-2l11 12z" fill="${c}" opacity=".45"/>
+  <circle cx="21" cy="23" r="4" fill="${c}"/>
+  <path d="M22 55h20" stroke="${c}" stroke-width="3" stroke-linecap="round"/></svg>`,
  practice:(c)=>`<svg viewBox="0 0 64 64" fill="none">
-  <rect x="7" y="24" width="50" height="20" rx="2.5" fill="${c}" opacity=".18"/>
-  <rect x="7" y="24" width="50" height="20" rx="2.5" stroke="${c}" stroke-width="2.6"/>
-  <path d="M17 24v13M27 24v13M37 24v13M47 24v13" stroke="${c}" stroke-width="2.4"/>
-  <path d="M32 8l5 9h-10l5-9z" fill="${c}"/></svg>`,
+  <rect x="6" y="26" width="52" height="20" rx="4" stroke="${c}" stroke-width="3"/>
+  <path d="M14 26v20M22 26v20M30 26v20M38 26v20M46 26v20" stroke="${c}" stroke-width="2.4"/>
+  <rect x="10" y="26" width="5" height="12" rx="2" fill="${c}"/>
+  <rect x="26" y="26" width="5" height="12" rx="2" fill="${c}"/>
+  <rect x="42" y="26" width="5" height="12" rx="2" fill="${c}"/>
+  <path d="M32 8v12M26 14l6-6 6 6" stroke="${c}" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
  shelter:(c)=>`<svg viewBox="0 0 64 64" fill="none">
-  <path d="M12 46a20 20 0 0 1 40 0" stroke="${c}" stroke-width="3" stroke-linecap="round"/>
-  <path d="M8 46h48" stroke="${c}" stroke-width="3" stroke-linecap="round"/>
-  <path d="M24 46V32h4v-5l4 4 4-4v5h4v14" fill="${c}" opacity=".3"/>
-  <path d="M24 46V32h4v-5l4 4 4-4v5h4v14" stroke="${c}" stroke-width="2.4" stroke-linejoin="round"/></svg>`,
+  <path d="M10 26h44v28H10z" stroke="${c}" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M10 26v-8h6v5h7v-5h6v5h7v-5h6v5h6v8" stroke="${c}" stroke-width="3" fill="none" stroke-linejoin="round"/>
+  <path d="M26 54V40a6 6 0 0 1 12 0v14z" fill="${c}"/>
+  <circle cx="34" cy="46" r="1.8" fill="#fff"/>
+  <path d="M6 54h52" stroke="${c}" stroke-width="3" stroke-linecap="round"/></svg>`,
  talk:(c)=>`<svg viewBox="0 0 64 64" fill="none">
-  <rect x="8" y="12" width="26" height="19" rx="4" fill="${c}"/>
-  <path d="M15 31v6l7-6z" fill="${c}"/>
-  <rect x="30" y="27" width="26" height="19" rx="4" fill="${c}" opacity=".3"/>
-  <path d="M49 46v6l-7-6z" fill="${c}" opacity=".3"/>
-  <path d="M14 19h14M14 24h9" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg>`,
+  <path d="M8 12h30a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H20l-8 7v-7H8a4 4 0 0 1-4-4V16a4 4 0 0 1 4-4z" fill="${c}"/>
+  <path d="M14 20h18M14 27h11" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M26 30h30a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4h-4v6l-7-6H26a4 4 0 0 1-4-4V34a4 4 0 0 1 4-4z" fill="${c}" opacity=".35" stroke="${c}" stroke-width="2.6" stroke-linejoin="round"/></svg>`,
 };
 
-/* 본문 삽화 (가로 배너, viewBox 640×230) */
 const scenes = {
-translation:(c,t,d)=>`<svg viewBox="0 0 640 230" fill="none">
- <!-- 원작 -->
- <g><rect x="58" y="52" width="112" height="140" rx="6" fill="${c}"/>
- <rect x="58" y="52" width="16" height="140" rx="4" fill="${d}"/>
- <path d="M92 84h58M92 100h46M92 116h58M92 132h38" stroke="#fff" stroke-width="4.5" stroke-linecap="round" opacity=".9"/>
- <text x="114" y="212" font-size="14" font-weight="700" fill="${d}" text-anchor="middle">THE ORIGINAL</text></g>
- <!-- 번역본 -->
- <g><rect x="470" y="52" width="112" height="140" rx="6" fill="${c}" opacity=".3"/>
- <rect x="470" y="52" width="16" height="140" rx="4" fill="${d}" opacity=".38"/>
- <path d="M504 84h58M504 100h46M504 116h58M504 132h38" stroke="#fff" stroke-width="4.5" stroke-linecap="round" opacity=".95"/>
- <text x="526" y="212" font-size="14" font-weight="700" fill="${d}" opacity=".6" text-anchor="middle">THE TRANSLATION</text></g>
- <!-- 흐르는 입자 : 점점 옅어짐 -->
- <path d="M186 122c46-46 106-46 152 0s106 46 138 0" stroke="${c}" stroke-width="2.5" stroke-dasharray="7 8" opacity=".55"/>
- ${[0,1,2,3,4,5,6].map(i=>{const x=196+i*44,o=(1-i*0.13).toFixed(2),r=(11-i*0.9).toFixed(1),y=[96,84,92,110,128,136,124][i];
-   return `<circle cx="${x}" cy="${y}" r="${r}" fill="${c}" opacity="${o}"/>`}).join("")}
- <path d="M330 168h-1" stroke="${c}"/>
- <text x="320" y="196" font-size="13" fill="${d}" opacity=".75" text-anchor="middle">the moment · the local colour · the flow</text>
-</svg>`,
-
-image:(c,t,d)=>`<svg viewBox="0 0 640 230" fill="none">
- <!-- 액자 -->
- <rect x="150" y="30" width="340" height="150" rx="6" fill="#FFFDF8" stroke="${d}" stroke-width="7"/>
- <!-- 파이프 -->
- <path d="M250 108h84c0 24-18 34-34 34s-34-12-34-34z" fill="${c}"/>
- <path d="M250 108c0-9-9-13-16-8" stroke="${c}" stroke-width="9" stroke-linecap="round"/>
- <path d="M334 108h44c9 0 13 6 13 13" stroke="${c}" stroke-width="9" stroke-linecap="round"/>
- <text x="320" y="164" font-size="16" font-style="italic" fill="${d}" text-anchor="middle">Ceci n'est pas une pipe.</text>
- <!-- 액자 밖 : 실제 파이프의 그림자 -->
- <g opacity=".22">
-  <path d="M60 176h46c0 13-10 19-19 19s-19-7-19-19z" fill="${d}"/>
-  <path d="M60 176c0-5-5-7-9-4" stroke="${d}" stroke-width="5" stroke-linecap="round"/>
-  <path d="M106 176h24c5 0 7 3 7 7" stroke="${d}" stroke-width="5" stroke-linecap="round"/></g>
- <text x="98" y="216" font-size="12" font-weight="700" fill="${d}" opacity=".55" text-anchor="middle">THE THING</text>
- <text x="530" y="216" font-size="12" font-weight="700" fill="${d}" opacity=".55" text-anchor="middle">A VERSION OF IT</text>
- <path d="M150 205h330" stroke="${d}" stroke-width="1.5" stroke-dasharray="5 6" opacity=".3"/>
-</svg>`,
-
-practice:(c,t,d)=>`<svg viewBox="0 0 640 230" fill="none">
- <!-- 건반 -->
- <g><rect x="40" y="120" width="240" height="72" rx="5" fill="#FFFDF8" stroke="${d}" stroke-width="3"/>
- ${[0,1,2,3,4,5,6].map(i=>`<path d="M${40+34.3*(i+1)} 120v72" stroke="${d}" stroke-width="2"/>`).join("")}
- ${[0,1,3,4,5].map(i=>`<rect x="${40+34.3*(i+1)-9}" y="120" width="18" height="42" rx="2.5" fill="${d}"/>`).join("")}
- <text x="160" y="212" font-size="13" font-weight="700" fill="${d}" text-anchor="middle">OFFSTAGE · the engineer</text></g>
- <!-- 볼트 -->
- <g fill="${c}">${[0,1,2].map(i=>`<g transform="translate(${64+i*46},74)"><path d="M0 -13 11.3 -6.5 11.3 6.5 0 13 -11.3 6.5 -11.3 -6.5z"/><circle r="5" fill="${t}"/></g>`).join("")}</g>
- <!-- 화살표 -->
- <path d="M300 130c40-8 62-30 74-58" stroke="${c}" stroke-width="3" stroke-dasharray="8 7" stroke-linecap="round"/>
- <path d="M372 70l4 14-14-3" fill="none" stroke="${c}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
- <!-- 종이비행기 -->
- <g transform="translate(470,58) rotate(-14)">
-  <path d="M0 0 96 30 44 42 30 78z" fill="${c}"/>
-  <path d="M0 0 44 42 30 78z" fill="${d}" opacity=".55"/></g>
- <path d="M406 122c46 12 92 4 128-24" stroke="${c}" stroke-width="2.4" stroke-dasharray="6 8" opacity=".5"/>
- <text x="500" y="196" font-size="13" font-weight="700" fill="${d}" text-anchor="middle">ONSTAGE · the pilot</text>
-</svg>`,
-
-shelter:(c,t,d)=>`<svg viewBox="0 0 640 230" fill="none">
- <!-- 유리 돔 -->
- <path d="M180 186a140 140 0 0 1 280 0z" fill="#FFFFFF" opacity=".62"/>
- <path d="M180 186a140 140 0 0 1 280 0" stroke="${c}" stroke-width="3.5"/>
- <path d="M150 186h340" stroke="${d}" stroke-width="5" stroke-linecap="round"/>
- <!-- 성 -->
- <g fill="${c}">
-  <rect x="262" y="112" width="30" height="74" rx="2"/><rect x="348" y="112" width="30" height="74" rx="2"/>
-  <rect x="292" y="132" width="56" height="54" rx="2" opacity=".8"/>
-  <path d="M262 112h30l-15-24zM348 112h30l-15-24z"/>
-  <path d="M292 132h56l-28-22z" opacity=".8"/></g>
- <rect x="312" y="156" width="16" height="30" rx="7" fill="${t}"/>
- <circle cx="277" cy="140" r="5" fill="${t}"/><circle cx="363" cy="140" r="5" fill="${t}"/>
- <!-- 반짝임 -->
- <path d="M226 118l3 9 9 3-9 3-3 9-3-9-9-3 9-3z" fill="#fff" opacity=".85"/>
- <!-- 돔 밖의 물레 -->
- <g transform="translate(546,150)"><circle r="30" fill="none" stroke="${d}" stroke-width="3.5" opacity=".75"/>
-  ${[0,1,2,3,4,5].map(i=>`<path d="M0 0 L${(30*Math.cos(i*Math.PI/3)).toFixed(1)} ${(30*Math.sin(i*Math.PI/3)).toFixed(1)}" stroke="${d}" stroke-width="2.6" opacity=".7"/>`).join("")}
-  <circle r="5" fill="${d}" opacity=".8"/><path d="M0 30v14" stroke="${d}" stroke-width="3.5" opacity=".7"/></g>
- <text x="546" y="214" font-size="12" font-weight="700" fill="${d}" opacity=".6" text-anchor="middle">RISK, LEFT OUTSIDE</text>
- <text x="320" y="214" font-size="12" font-weight="700" fill="${d}" opacity=".6" text-anchor="middle">A WORLD WITH NOTHING DANGEROUS IN IT</text>
-</svg>`,
-
-talk:(c,t,d)=>`<svg viewBox="0 0 640 230" fill="none">
- <!-- 책 -->
- <g transform="translate(320,168)">
-  <path d="M-92 0c30-20 62-20 92-6 30-14 62-14 92 6-30 16-62 16-92 4-30 12-62 12-92-4z" fill="#FFFDF8" stroke="${d}" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M0 -6v10" stroke="${d}" stroke-width="3"/></g>
- <!-- 말풍선 3 -->
- <g><rect x="52" y="36" width="188" height="66" rx="16" fill="${c}"/>
-  <path d="M92 102v18l20-18z" fill="${c}"/>
-  <path d="M76 60h124M76 78h84" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".92"/></g>
- <g><rect x="272" y="20" width="146" height="56" rx="16" fill="${c}" opacity=".42"/>
-  <path d="M304 76v16l18-16z" fill="${c}" opacity=".42"/>
-  <path d="M294 42h102M294 58h64" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/></g>
- <g><rect x="424" y="52" width="164" height="60" rx="16" fill="${c}" opacity=".72"/>
-  <path d="M456 112v16l18-16z" fill="${c}" opacity=".72"/>
-  <path d="M446 76h114M446 92h72" stroke="#fff" stroke-width="4.5" stroke-linecap="round"/></g>
- <path d="M150 128c34 26 96 34 150 22M470 122c-34 22-88 30-140 26" stroke="${c}" stroke-width="2.4" stroke-dasharray="6 8" opacity=".5"/>
- <text x="320" y="212" font-size="13" font-weight="700" fill="${d}" opacity=".7" text-anchor="middle">one book · one long conversation</text>
-</svg>`,
+ /* 01 — 번역: 같은 시를 읽는 두 독자 */
+ translation:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
+  ${panel({x:24,y:26,w:266,h:196,c:d,fill:"#fff",n:1,label:"원작을 읽는 사람"})}
+  ${person({x:92,y:198,s:1.4,c,face:"glad",arms:"hold",hair:"short"})}
+  ${prop.book(92,173,1.5,d)}
+  ${bubble({x:148,y:52,w:128,h:56,lines:["이 한 줄이","환하게 들려!"],c:d,tail:"bl",size:13})}
+  ${panel({x:350,y:26,w:266,h:196,c:d,fill:"#fff",n:2,label:"번역본을 읽는 사람"})}
+  ${person({x:418,y:198,s:1.4,c,face:"flat",arms:"hold",hair:"bun"})}
+  ${prop.book(418,173,1.5,d)}
+  ${bubble({x:474,y:52,w:128,h:56,lines:["뜻은 알겠는데…","뭔가 밋밋해."],c:d,tail:"bl",size:13})}
+  ${arrow({x1:296,y1:120,x2:344,y2:120,c:d,w:5})}
+  ${tag({x:320,y:158,text:"번역",c})}
+  ${label({x:320,y:262,text:"옮겨진 것 옆에, 남겨진 것이 있다",c,size:12.5})}</svg>`,
+ /* 02 — 이미지: 누군가 고른 각도 */
+ image:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
+  ${person({x:112,y:212,s:1.35,c,face:"smile",arms:"hold",hair:"cap"})}
+  ${prop.screen(112,188,1.15,d)}
+  ${label({x:112,y:242,text:"찍는 사람",c:d,size:12})}
+  ${arrow({x1:172,y1:140,x2:250,y2:140,c:d,w:5,dash:"11 8"})}
+  ${panel({x:262,y:60,w:190,h:132,c:d,fill:"#fff",label:"화면에 남은 것"})}
+  <path d="M282 168c22-38 40-42 56-16 10 16 22 12 30-4l32 44z" fill="${c}" opacity=".45"/>
+  <circle cx="300" cy="96" r="12" fill="${c}"/>
+  ${callout({x:300,y:96,tx:300,ty:44,text:"고른 빛",c:d})}
+  ${callout({x:410,y:170,tx:432,ty:214,text:"고른 순간",c:d,anchor:"middle"})}
+  <g opacity=".32">
+   <path d="M470 92h150v100H470z" stroke="${d}" stroke-width="3" stroke-dasharray="8 7" fill="none"/>
+   ${label({x:545,y:148,text:"잘려 나간 바깥",c:d,size:12})}</g>
+  ${arrow({x1:462,y1:130,x2:504,y2:130,c:d,w:4,dash:"7 6"})}
+  ${label({x:320,y:268,text:"이미지는 누군가가 고른 한 조각이다",c,size:12.5})}</svg>`,
+ /* 03 — 연습: 무대 뒤와 무대 위 */
+ practice:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
+  ${panel({x:22,y:24,w:280,h:184,c:d,fill:"#fff",n:1,label:"연습실 — 엔지니어처럼"})}
+  ${person({x:86,y:186,s:1.3,c,face:"flat",arms:"hold",hair:"short"})}
+  <rect x="140" y="140" width="130" height="14" rx="3" fill="${d}" opacity=".25"/>
+  ${[146,160,174,188,202,216,230,244,258].map(x=>`<rect x="${x}" y="140" width="7" height="14" rx="2" fill="${d}"/>`).join("")}
+  ${thought({x:132,y:52,w:150,h:52,lines:["여기 한 마디만","스무 번 더"],c:d,size:12,side:"l"})}
+  ${panel({x:338,y:24,w:280,h:184,c:d,fill:"#fff",n:2,label:"무대 — 조종사처럼"})}
+  ${person({x:402,y:186,s:1.3,c,face:"glad",arms:"up",hair:"short"})}
+  <rect x="456" y="140" width="130" height="14" rx="3" fill="${c}" opacity=".35"/>
+  ${bubble({x:448,y:52,w:150,h:52,lines:["지금 눈앞의","이 소리로"],c:d,tail:"bl",size:12})}
+  ${arrow({x1:308,y1:116,x2:332,y2:116,c:d,w:5})}
+  ${label({x:320,y:246,text:"볼트를 조이는 시간이 있어야 날아오를 수 있다",c,size:12.5})}
+  ${label({x:320,y:266,text:"PRACTICE  →  PERFORMANCE",c:d,size:10.5,op:.6})}</svg>`,
+ /* 04 — 위험 없는 세계: 치워 준 물레와 시험받지 못한 아이 */
+ shelter:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
+  ${panel({x:22,y:26,w:272,h:190,c:d,fill:"#fff",n:1,label:"모든 위험을 치운 성"})}
+  ${person({x:80,y:192,s:1.25,c,face:"worry",arms:"open",hair:"long"})}
+  <g opacity=".3">${[162,208,254].map(x=>`<g transform="translate(${x} 150)"><circle r="15" fill="none" stroke="${d}" stroke-width="3.4" stroke-dasharray="5 5"/><path d="M-11-11 11 11" stroke="${d}" stroke-width="3.4"/></g>`).join("")}</g>
+  ${label({x:208,y:186,text:"치워진 물레들",c:d,size:11,op:.65})}
+  ${panel({x:346,y:26,w:272,h:190,c:d,fill:"#fff",n:2,label:"성 밖으로 나온 뒤"})}
+  ${person({x:406,y:192,s:1.25,c,face:"glad",arms:"point",hair:"long"})}
+  ${bubble({x:468,y:52,w:132,h:50,lines:["내가 정한다"],c:d,tail:"bl",size:13})}
+  ${[492,522,552].map(x=>`<path d="M${x} 176l10-20 10 20z" fill="${c}" opacity=".45"/>`).join("")}
+  ${label({x:522,y:192,text:"실제 위험",c:d,size:11,op:.65})}
+  ${arrow({x1:300,y1:120,x2:340,y2:120,c:d,w:5})}
+  ${label({x:320,y:256,text:"시험받지 못한 안전은 사람을 자라게 하지 못한다",c,size:12.5})}</svg>`,
+ /* 05 — 읽기는 대화: 혼자 읽기 → 말하기 */
+ talk:(c,t,d)=>`<svg viewBox="0 0 640 280" fill="none">
+  ${step({x:96,y:44,n:1,c,label:"혼자 읽는다"})}
+  ${person({x:96,y:214,s:1.35,c,face:"flat",arms:"hold",hair:"short"})}
+  ${prop.book(96,190,1.45,d)}
+  ${step({x:320,y:44,n:2,c,label:"말로 꺼낸다"})}
+  ${person({x:272,y:214,s:1.3,c,face:"oh",arms:"open",hair:"bun",look:3})}
+  ${person({x:376,y:214,s:1.3,c,face:"smile",arms:"open",hair:"curly",look:-4})}
+  ${bubble({x:244,y:92,w:158,h:44,lines:["나는 이렇게 읽었어"],c:d,tail:"bl",size:11.5})}
+  ${step({x:546,y:44,n:3,c,label:"이해가 자란다"})}
+  ${person({x:546,y:214,s:1.35,c,face:"glad",arms:"up",hair:"short"})}
+  ${prop.bulb(546,88,1.7,c)}
+  ${arrow({x1:150,y1:150,x2:214,y2:150,c:d,w:4.5,dash:"10 8"})}
+  ${arrow({x1:428,y1:150,x2:492,y2:150,c:d,w:4.5,dash:"10 8"})}
+  ${label({x:320,y:268,text:"문학은 하나의 긴 대화이고, 말할 때 비로소 참여하게 된다",c,size:12.5})}</svg>`,
 };
-
 
 const STRIP = {
  "01":["globe","swap","hourglass","palette","handshake"],
  "02":["eye","letters","frame","camera","pipe"],
  "03":["heartbeat","hourglass","quote","wrench","takeoff"],
  "04":["wand","fire","dome","wilt","sunrise"],
- "05":["books","map","openbook","chat","loop"],
+ "05":["books","map","openbook","chat","loop"]
 };
+
 const VIG = {
-"01":(c,l,d)=>`<circle cx="72" cy="70" r="42" fill="${l}"/><circle cx="72" cy="70" r="42" stroke="${c}" stroke-width="4.3" fill="none"/>
- <path d="M34 54h76M30 70h84M34 86h76" stroke="${c}" stroke-width="3.5" opacity=".55"/>
- <path d="M48 44c18 14 32 34 40 56M96 44C80 60 68 82 62 100" stroke="${d}" stroke-width="3.8" opacity=".8" fill="none"/>
- <circle cx="60" cy="62" r="5" fill="${d}" opacity=".5"/><circle cx="88" cy="84" r="7" fill="${d}" opacity=".4"/>
- <g transform="translate(150,44) rotate(24)"><rect width="72" height="15" rx="7.5" fill="${c}"/><rect x="62" y="-4" width="16" height="23" rx="5" fill="${d}"/></g>
- <path d="M158 92l10 26M186 84l-6 34" stroke="${c}" stroke-width="4.3" stroke-linecap="round"/><path d="M150 122h48" stroke="${c}" stroke-width="4.9" stroke-linecap="round"/>`,
-"02":(c,l,d)=>`<rect x="18" y="30" width="96" height="76" rx="7" fill="${l}" stroke="${c}" stroke-width="4.3"/>
- <path d="M46 30l7-11h24l7 11" fill="none" stroke="${c}" stroke-width="4.3" stroke-linejoin="round"/>
- <circle cx="66" cy="68" r="24" fill="${c}"/><circle cx="66" cy="68" r="11" fill="${l}"/><circle cx="97" cy="43" r="4" fill="${d}"/>
- <rect x="134" y="26" width="88" height="66" rx="4" fill="#FFFDF8" stroke="${d}" stroke-width="7.2"/>
- <path d="M150 74c10-18 20-20 28-9 5 5 9 4 11-3" stroke="${c}" stroke-width="4.3" fill="none" stroke-linecap="round"/>
- <circle cx="158" cy="48" r="6" fill="${c}"/><path d="M140 104h76" stroke="${d}" stroke-width="4.3" stroke-linecap="round" stroke-dasharray="5 6" opacity=".6"/>`,
-"03":(c,l,d)=>`<rect x="16" y="34" width="120" height="72" rx="10" fill="${l}" stroke="${c}" stroke-width="4.3"/>
- <circle cx="52" cy="66" r="17" fill="#FFFDF8" stroke="${c}" stroke-width="3.8"/><path d="M52 54v12l8 5" stroke="${c}" stroke-width="4.1" stroke-linecap="round" fill="none"/>
- <circle cx="100" cy="66" r="17" fill="#FFFDF8" stroke="${c}" stroke-width="3.8"/><path d="M92 66h16M100 58v16" stroke="${d}" stroke-width="4.1" stroke-linecap="round"/>
- <rect x="34" y="90" width="84" height="8" rx="4" fill="${c}" opacity=".35"/>
- <g transform="translate(196,42) rotate(-16)"><path d="M0 0 44 14 20 20 14 38z" fill="${c}"/><path d="M0 0 20 20 14 38z" fill="${d}" opacity=".6"/></g>
- <path d="M148 92c22 6 40 0 56-16" stroke="${c}" stroke-width="3.8" stroke-dasharray="5 7" fill="none"/>
- <g fill="${d}">${[0,1,2].map(i=>`<g transform="translate(${160+i*24},112)"><path d="M0 -8 7 -4 7 4 0 8 -7 4 -7 -4z"/><circle r="3" fill="${l}"/></g>`).join("")}</g>`,
-"04":(c,l,d)=>`<g transform="translate(66,74)"><circle r="40" fill="none" stroke="${c}" stroke-width="4.9"/>
- ${[0,1,2,3,4,5,6,7].map(i=>`<path d="M0 0 L${(40*Math.cos(i*Math.PI/4)).toFixed(1)} ${(40*Math.sin(i*Math.PI/4)).toFixed(1)}" stroke="${c}" stroke-width="3.5"/>`).join("")}
- <circle r="7" fill="${c}"/></g>
- <path d="M66 114v14M50 128h32" stroke="${c}" stroke-width="4.9" stroke-linecap="round"/>
- <path d="M132 104a34 34 0 0 1 68 0z" fill="#FFFFFF" opacity=".7"/><path d="M132 104a34 34 0 0 1 68 0" stroke="${c}" stroke-width="4.3" fill="none"/>
- <path d="M124 104h84" stroke="${d}" stroke-width="4.9" stroke-linecap="round"/>
- <g fill="${c}"><rect x="150" y="66" width="12" height="38" rx="2"/><rect x="170" y="66" width="12" height="38" rx="2"/><rect x="162" y="78" width="8" height="26" opacity=".7"/>
- <path d="M150 66h12l-6-11zM170 66h12l-6-11z"/></g>
- <path d="M112 44l2.6 7.4 7.4 2.6-7.4 2.6L112 64l-2.6-7.4-7.4-2.6 7.4-2.6z" fill="${d}"/>`,
-"05":(c,l,d)=>`<g transform="translate(120,86)">${[0,1,2,3,4,5].map(i=>{const a=i*Math.PI/3-Math.PI/2;const x=(66*Math.cos(a)).toFixed(1),y=(30*Math.sin(a)).toFixed(1);
- return `<g transform="translate(${x},${y})"><rect x="-11" y="-8" width="22" height="16" rx="4" fill="${i%2?l:c}" stroke="${c}" stroke-width="2.9"/><rect x="-8" y="8" width="16" height="10" rx="3" fill="${c}" opacity=".45"/></g>`}).join("")}</g>
- <ellipse cx="120" cy="86" rx="40" ry="18" fill="${l}" stroke="${c}" stroke-width="3.8"/>
- <path d="M96 86c8-6 16-6 24-2 8-4 16-4 24 2-8 5-16 5-24 1-8 4-16 4-24-1z" fill="#FFFDF8" stroke="${c}" stroke-width="3.2" stroke-linejoin="round"/>
- <g><rect x="24" y="14" width="72" height="30" rx="9" fill="${c}"/><path d="M40 44v10l11-10z" fill="${c}"/><path d="M36 26h48M36 35h30" stroke="#fff" stroke-width="4.9" stroke-linecap="round"/></g>
- <g><rect x="146" y="18" width="66" height="27" rx="9" fill="${d}" opacity=".5"/><path d="M196 45v9l-10-9z" fill="${d}" opacity=".5"/><path d="M158 29h42M158 37h24" stroke="#fff" stroke-width="4.6" stroke-linecap="round"/></g>`,
+ "01":(c,t,d)=>`<svg viewBox="0 0 240 150" fill="none">
+  ${person({x:56,y:112,s:.95,c,face:"oh",arms:"point",hair:"short"})}
+  <g opacity=".9">${prop.book(150,74,1.7,c)}</g>
+  ${bubble({x:96,y:16,w:130,h:38,lines:["canali → canals"],c:d,tail:"bl",size:12})}
+  ${label({x:120,y:140,text:"낱말 하나가 만든 오해",c:d,size:11,op:.75})}</svg>`,
+ "02":(c,t,d)=>`<svg viewBox="0 0 240 150" fill="none">
+  ${panel({x:14,y:20,w:96,h:74,c:d,fill:"#fff"})}
+  <path d="M28 82c14-24 26-26 36-10l22 22z" fill="${c}" opacity=".45"/>
+  <circle cx="42" cy="44" r="8" fill="${c}"/>
+  ${person({x:176,y:120,s:.9,c,face:"think",arms:"think",hair:"cap"})}
+  ${thought({x:104,y:100,w:126,h:34,lines:["이건 파이프가 아니다"],c:d,size:10.5,side:"l"})}</svg>`,
+ "03":(c,t,d)=>`<svg viewBox="0 0 240 150" fill="none">
+  ${person({x:60,y:118,s:.95,c,face:"flat",arms:"hold",hair:"short"})}
+  ${person({x:180,y:118,s:.95,c,face:"glad",arms:"up",hair:"short"})}
+  ${arrow({x1:104,y1:74,x2:136,y2:74,c:d,w:4})}
+  ${label({x:60,y:140,text:"엔지니어",c:d,size:11})}
+  ${label({x:180,y:140,text:"조종사",c:d,size:11})}
+  ${prop.clock(120,34,.9,c)}</svg>`,
+ "04":(c,t,d)=>`<svg viewBox="0 0 240 150" fill="none">
+  ${person({x:64,y:116,s:.95,c,face:"worry",arms:"down",hair:"long"})}
+  ${person({x:176,y:116,s:.95,c,face:"glad",arms:"point",hair:"long"})}
+  ${arrow({x1:106,y1:70,x2:138,y2:70,c:d,w:4})}
+  <g opacity=".35"><circle cx="64" cy="40" r="13" fill="none" stroke="${d}" stroke-width="3" stroke-dasharray="4 4"/>
+   <path d="M55 31l18 18" stroke="${d}" stroke-width="3"/></g>
+  ${prop.leaf(176,40,.9,c)}
+  ${label({x:120,y:142,text:"보호에서 성장으로",c:d,size:11,op:.75})}</svg>`,
+ "05":(c,t,d)=>`<svg viewBox="0 0 240 150" fill="none">
+  ${person({x:52,y:116,s:.9,c,face:"smile",arms:"open",hair:"bun"})}
+  ${person({x:120,y:116,s:.9,c,face:"oh",arms:"point",hair:"short",look:-3})}
+  ${person({x:188,y:116,s:.9,c,face:"glad",arms:"open",hair:"curly"})}
+  ${bubble({x:56,y:14,w:128,h:34,lines:["소리 내어 설명하기"],c:d,tail:"bl",size:10.5})}
+  ${label({x:120,y:142,text:"think aloud",c:d,size:11,op:.75})}</svg>`,
 };
 
 module.exports = { icons, scenes, STRIP, VIG };
