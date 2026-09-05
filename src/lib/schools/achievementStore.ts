@@ -71,14 +71,22 @@ export function useAchievements(): Store {
 }
 
 /** 같은 학교·같은 공시연도 자료는 새 파일이 이긴다. 다른 연도는 쌓인다. */
+/**
+ * 같은 공시연도 파일이 두 개일 수 있다. 학교알리미는 4월(1차)에 전년도 2학기,
+ * 9월(2차)에 당해년도 1학기를 올리므로 한 해에 두 번 받는 경우가 있다.
+ * 그래서 연도 단위로 갈아엎지 않고, 같은 (연도·학년도·학기·학년·과목) 행만 새 값으로 바꾼다.
+ */
+const rowKey = (r: AchievementRow) => [r.year, r.schoolYear, r.term ?? "", r.grade, r.subject].join("|");
+
 export function addAchievement(code: string, schoolName: string, rows: AchievementRow[], fileName: string) {
   const years = new Set(rows.map((r) => r.year));
+  const incoming = new Set(rows.map(rowKey));
   const prev = read()[code];
-  const kept = (prev?.rows ?? []).filter((r) => !years.has(r.year));
+  const kept = (prev?.rows ?? []).filter((r) => !incoming.has(rowKey(r)));
   const files = [
-    ...(prev?.files ?? []).filter((f) => !years.has(f.year)),
+    ...(prev?.files ?? []).filter((f) => !(years.has(f.year) && f.name === fileName)),
     ...[...years].map((year) => ({ name: fileName, year, importedAt: new Date().toISOString(), rows: rows.filter((r) => r.year === year).length })),
-  ].sort((a, b) => a.year - b.year);
+  ].sort((a, b) => a.year - b.year || a.name.localeCompare(b.name, "ko"));
   write({
     ...read(),
     [code]: { code, schoolName, rows: [...kept, ...rows].sort((a, b) => a.year - b.year || a.grade - b.grade || a.subject.localeCompare(b.subject, "ko")), files },
