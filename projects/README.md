@@ -28,7 +28,7 @@ Lovable에서 만든 프로젝트들을 코드 그대로 이 폴더 아래에 �
 | [orunvoca](./orunvoca/) | 2026-08-30 | 내 Supabase jpanp… | [orunvoca.lovable.app](https://orunvoca.lovable.app) | 옮김 | 파일 215개, 그림 34개 못 찾음 |
 | [orunsyntax](./orunsyntax/) | 2026-08-30 | Lovable Cloud mpzvt… | [orunsyntax.lovable.app](https://orunsyntax.lovable.app) | 옮김 | 파일 155개, 그림 14개 못 찾음 |
 | [wordbook-artist](./wordbook-artist/) | 2026-08-25 | Lovable Cloud xquvu… | [wordbook-artist.lovable.app](https://wordbook-artist.lovable.app) | 옮김 | 파일 152개, 그림 10개 못 찾음 |
-| [scan-score-quick](./scan-score-quick/) | 2026-08-04 | Lovable Cloud ekvom… | [scan-score-quick.lovable.app](https://scan-score-quick.lovable.app) | 일부 누락(2) | 파일 241개, 그림 8개 못 찾음 |
+| [scan-score-quick](./scan-score-quick/) | 2026-08-04 | Lovable Cloud ekvom… | [scan-score-quick.lovable.app](https://scan-score-quick.lovable.app) | 옮김 | 파일 243개, 그림 8개 못 찾음 |
 | [mini-book-style](./mini-book-style/) | 2026-06-21 | 없음 | [mini-book-style.lovable.app](https://mini-book-style.lovable.app) | 옮김 | 파일 71개 |
 | [achieve-sparkle-viz](./achieve-sparkle-viz/) | 2026-06-18 | Lovable Cloud wiren… | [achieve-sparkle-viz.lovable.app](https://achieve-sparkle-viz.lovable.app) | 옮김 | 파일 107개 |
 | [school-data-lover](./school-data-lover/) | 2026-06-15 | 없음 | [school-data-lover.lovable.app](https://school-data-lover.lovable.app) | 옮김 | 파일 83개 |
@@ -57,6 +57,6 @@ Lovable에서 만든 프로젝트들을 코드 그대로 이 폴더 아래에 �
 | [mentorsreport](./mentorsreport/) | 2025-05-13 | 내 Supabase offvl… | [mentorsreport.lovable.app](https://mentorsreport.lovable.app) | 옮김 | 파일 113개 |
 | [orungrade](./orungrade/) | 2025-05-10 | 없음 | [orungrade.lovable.app](https://orungrade.lovable.app) | 옮김 | 파일 75개 |
 | [block-vocab-mastery-web](./block-vocab-mastery-web/) | 2025-04-28 | 없음 | [block-vocab-mastery-web.lovable.app](https://block-vocab-mastery-web.lovable.app) | 옮김 | 파일 73개 |
-| [blankify-choice-tool-87](./blankify-choice-tool-87/) | 2025-03-23 | 없음 | 미배포 | 아직 |  |
+| [blankify-choice-tool-87](./blankify-choice-tool-87/) | 2025-03-23 | 없음 | 미배포 | 옮김 | 파일 172개, 그림 34개 못 찾음 |
 | [hakmundang](./hakmundang/) | 2025-03-17 | 내 Supabase wxjaz… | [hakmundang.lovable.app](https://hakmundang.lovable.app) | 아직 |  |
 | [vocabbook](./vocabbook/) | 2025-01-07 | 내 Supabase jpanp… | [vocabbook.lovable.app](https://vocabbook.lovable.app) | 옮김 | 파일 92개 |
