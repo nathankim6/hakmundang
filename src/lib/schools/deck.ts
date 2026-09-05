@@ -965,8 +965,8 @@ export async function buildDeck(records: SchoolRecord[], year = "2027학년도",
   if (detailed.length) {
     const seen = detailed.filter((r) => r.observation || r.sourced?.exams.length).length;
     const summary = seen
-      ? `저희가 직접 시험지를 본 ${seen}곳을 포함해 ${detailed.length}곳이에요. 공시로는 안 보이는 부분입니다.`
-      : `${detailed.length}곳을 학교 밖 공개 자료로 봅니다. 홈페이지, 언론, 공시 문서에서 옮겼어요.`;
+      ? `${detailed.length}곳을 한 학교씩 들여다봐요. 그중 ${seen}곳은 시험지까지 펴 봤습니다.`
+      : `${detailed.length}곳을 한 학교씩 들여다봐요. 분위기, 시험, 소식까지 한 페이지에 모았습니다.`;
     sectionSlide(pptx, nextNo(), S.school.title, summary, "zoom");
     page++;
     detailed.forEach((r) => {

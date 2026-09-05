@@ -25,7 +25,7 @@ export const APP = {
     pick: "학교 고르기",
     report: "분석지",
     calc: "1등급 계산기",
-    edit: "우리가 본 기록",
+    edit: "학교 기록",
   },
   calc: {
     en: "SEATS, LIVE",
@@ -37,17 +37,17 @@ export const APP = {
     cta: "학교 고르러 가기",
   },
   edit: {
-    en: "WHAT WE SAW",
-    title: "우리가 본 것, 여기 적어 둬요",
-    lede: "공시엔 없는 얘기예요. 올해 적어 두면 내년 설명회 준비가 반으로 줄어요.",
+    en: "OUR NOTES",
+    title: "학교 기록, 여기 적어 둬요",
+    lede: "숫자로는 안 보이는 얘기예요. 올해 적어 두면 내년 설명회 준비가 반으로 줄어요.",
   },
   stats: {
-    fact: (n: number) => `학교알리미 공시 ${n}곳`,
+    fact: (n: number) => `동작구 안팎 학교 ${n}곳`,
     seen: (n: number) => `시험지를 직접 본 ${n}곳`,
     news: (n: number) => `학교 소식 ${n}곳`,
   },
   steps: [
-    { icon: "school", title: "학교 고르기", text: "동네 학교를 고르면 공시 숫자는 알아서 채워져요." },
+    { icon: "school", title: "학교 고르기", text: "동네 학교를 고르면 기본 숫자는 알아서 채워져요." },
     { icon: "paper", title: "분석지 읽기", text: "그 위에 올해 시험지와 학교 소식을 얹어 한 권으로 묶어요." },
     { icon: "slides", title: "PPT로 내보내기", text: "설명회 슬라이드가 그대로 나와요. 글자도 그림도 다 고칠 수 있어요." },
   ] as { icon: IconName; title: string; text: string }[],
@@ -112,7 +112,7 @@ export const SECTION = {
     howTo: "이 표 읽는 법",
     howToText:
       "1등급 자리는 1학년 인원의 상위 10%, 소수점은 버려요. 중학교는 석차등급이 없어 이 칸이 없습니다. 전출은 1학년 중 다른 학교로 옮긴 비율이고, 맨 오른쪽 진학 수치는 직전 졸업생 기준이라 지금 1학년과는 3년 시차가 있어요.",
-    anomaly: "공시값 한 번 더 확인",
+    anomaly: "숫자 한 번 더 확인",
     anomalyText:
       "표에 * 가 붙은 학교예요. 전년과 차이가 커서 학교 입력 오류일 수 있습니다. 발표 자료에 쓰기 전에 학교알리미 원문을 열어 보세요.",
   },
@@ -138,12 +138,12 @@ export const SECTION = {
     cautionTitle: "이건 알고 가세요",
     empty: {
       title: "아직 성취도 자료가 없어요",
-      text: "학교알리미는 이 항목을 API로 주지 않고, 화면은 자동수집을 막아 둬서 사람이 받아야 해요. 받은 엑셀을 '우리가 본 기록' 탭에서 불러오면 이 자리가 채워집니다.",
+      text: "학교알리미는 이 항목을 API로 주지 않고, 화면은 자동수집을 막아 둬서 사람이 받아야 해요. 받은 엑셀을 '학교 기록' 탭에서 불러오면 이 자리가 채워집니다.",
       steps: [
         "학교알리미(schoolinfo.go.kr)에서 학교를 검색해 들어가요.",
         "공시항목 중 '4-나. 교과별 학업성취 사항'을 열고 숫자(보안문자)를 입력해요.",
         "연도를 2026, 2025, 2024로 바꾸며 '엑셀다운로드'를 세 번 받아요.",
-        "'우리가 본 기록' 탭의 성취도 불러오기에 파일을 한 번에 끌어다 놓아요.",
+        "'학교 기록' 탭의 성취도 불러오기에 파일을 한 번에 끌어다 놓아요.",
       ],
     },
     partial: (names: string) => `${names}는 아직 성취도 자료가 없어요. 엑셀을 불러오면 함께 비교됩니다.`,
@@ -154,7 +154,7 @@ export const SECTION = {
     lede: "옳은영어 강사진이 시험지를 펴 놓고 쓴 학교별 리포트예요. 중간과 기말이 어떻게 달랐는지까지 담았어요.",
     subHigh: "고1 기준",
     subMid: "중3 기준, 없으면 중2",
-    foot: "학교별 상세는 아래 학교 페이지에 중간·기말 카드로 실었어요. 출처는 카드마다 붙어 있습니다.",
+    foot: "학교별 상세는 아래 학교 페이지에 중간·기말 카드로 실었어요.",
     cols: { school: "학교", mid: "중간고사", fin: "기말고사", cut: "1등급 컷", oneLiner: "한 줄로" },
   },
   seats: {
@@ -172,7 +172,7 @@ export const SECTION = {
     en: "WHERE THEY WENT",
     ko: "이 중학교 졸업생은 어디로 갔을까",
     lede: "중학교 성적은 대입에 들어가지 않아요. 대신 어느 고등학교로 가느냐가 그 다음 3년을 바꿉니다.",
-    grads: (n: number, year: string) => `졸업생 ${n}명, ${year}년 공시`,
+    grads: (n: number, year: string) => `졸업생 ${n}명, ${year}년 기준`,
     specialDetail: "특목고 안을 열어 보면",
     callout: "이 숫자 읽는 법",
     calloutA:
@@ -232,13 +232,6 @@ export const BLOCK = {
   stats: { g1: "1학년", classes: "1학년 학급", perClass: "학급당", seats: "1등급 자리", coed: "남 : 여", aRatio: "영어 성취도 A", ratio: "지필 : 수행", textbook: "교과서" },
 };
 
-export const TAG = {
-  fact: "공시 자료",
-  obs: "우리가 본 것",
-  view: "우리 생각",
-  sourced: "출처 있는 자료",
-};
-
 export const NUMBERS = {
   cards: "2026년 1학기, 숫자로",
   posterCaptions: [
@@ -264,14 +257,14 @@ export const DECK = {
     subMid: (year: string) => `${year} 예비중1을 위한 학교별 리포트`,
     footer: "옳은영어 ORUN ENGLISH, 정확한 분석 옳은 방향",
     note: (n: number) =>
-      `[템플릿 사용법] 표지. 학교 목록은 담은 순서 그대로 들어가요.\n\n[발표 스크립트] 오늘은 ${n}개 학교를 함께 봅니다. 공시가 말해 주는 것과 저희가 시험지에서 본 것을 나눠서 말씀드릴게요.`,
+      `[템플릿 사용법] 표지. 학교 목록은 담은 순서 그대로 들어가요.\n\n[발표 스크립트] 오늘은 ${n}개 학교를 함께 봅니다. 숫자가 말해 주는 것과 저희가 시험지에서 본 것을 나눠서 말씀드릴게요.`,
   },
   title: (year: string) => `${year} 옳은영어 학교 분석지`,
   sectionNote: (heading: string, summary: string) => `[템플릿 사용법] 섹션 표지. 큰 숫자는 순번이에요. 그림은 벡터라 색과 크기를 바꿀 수 있어요.\n\n[발표 스크립트] ${heading}. ${summary}`,
   toc: { en: "TODAY", title: "오늘 볼 학교", count: (n: number) => `${n}곳`, note: "[발표 스크립트] 순서대로 한 학교씩 봅니다." },
   sections: {
     numbers: { title: "1등급 몇 명? 그 전에 분모부터", summary: "같은 숫자도 어떤 분모 위에 올리느냐에 따라 전혀 다른 얘기가 돼요." },
-    compare: { title: "한 표로 보는 학교 스펙", summary: "학교알리미 공시를 그대로 옮긴 표예요. 저희 해석은 아직 안 들어갔습니다." },
+    compare: { title: "한 표로 보는 학교 스펙", summary: "인원, 학급, 1등급 자리, 진학까지 학교별 숫자를 한 표에 나란히 놓았어요." },
     exam2026: { title: "올해 시험지, 이렇게 나왔다", summary: "강사진이 시험지를 펴 놓고 쓴 학교별 리포트. 중간과 기말이 어떻게 달랐는지까지." },
     seats: { title: "1등급은 딱 몇 자리인가", summary: "상위 10%가 몇 명인지부터 세어 봅니다. 분모가 무엇인지가 전부예요." },
     paths: { title: "이 중학교 졸업생은 어디로 갔을까", summary: "서울 중학교는 학교군 추첨. 순위표가 아니라 지도로 보셔야 해요." },
@@ -293,11 +286,11 @@ export const DECK = {
     en: "SIDE BY SIDE",
     title: "한 표로 보는 학교 스펙",
     part: (i: number, n: number) => `한 표로 보는 학교 스펙 (${i}/${n})`,
-    subHigh: "전부 공시 자료 그대로, 저희가 손대지 않았어요",
+    subHigh: "고1 인원부터 1등급 자리, 진학까지 한 표에",
     subMid: "중학교는 석차등급이 없어 1등급 자리 칸이 없어요",
     foot: "1등급 자리는 1학년 인원의 상위 10%, 소수점은 버려요. 진학 수치는 작년 졸업생 기준",
     footNoGrad: (names: string) => `${names}는 아직 졸업생이 없어 진학·전출 자료가 없어요`,
-    note: "[발표 스크립트] 먼저 숫자만 나란히 놓고 봅니다. 전부 학교알리미 공시 그대로예요.",
+    note: "[발표 스크립트] 먼저 숫자만 나란히 놓고 봅니다. 해석은 잠시 뒤에 붙일게요.",
     cols: { school: "학교", g1: "1학년", classes: "반", perClass: "반당", seats: "1등급 자리", moved: (l: string) => `${l}1 전출`, headHigh: "4년제", headMid: "특목·자율고" },
   },
   seats: {
@@ -311,7 +304,7 @@ export const DECK = {
   paths: {
     en: "WHERE THEY WENT",
     title: (name: string) => `${name} 졸업생은 어디로 갔을까`,
-    sub: (n: number, year: string) => `졸업생 ${n}명, ${year}년 공시`,
+    sub: (n: number, year: string) => `졸업생 ${n}명, ${year}년 기준`,
     special: (items: string) => `특목고 안을 열어 보면 ${items}`,
     note: "[발표 스크립트] 이 학교를 나온 선배들이 실제로 어디로 갔는지 봅니다. 서울 중학교는 학교군 안에서 추첨이라, 이건 순위표가 아니라 지도예요.",
   },
@@ -325,7 +318,7 @@ export const DECK = {
     above: "90점 위",
     below: "90점 아래",
     foot: "A 인원 = 수강자 × A 비율. 1등급 자리 = 수강자 × 10%(5등급제) 또는 4%(9등급제), 소수점 버림. A 인원이 자리보다 많으면 컷이 90점 위",
-    note: "[발표 스크립트] 학교알리미 공시 숫자만으로 1등급 컷이 어디쯤인지 읽어 봅니다. 90점 이상이 몇 명인지와 1등급 자리가 몇 개인지를 맞대 보면 돼요.",
+    note: "[발표 스크립트] 성취도 숫자만으로 1등급 컷이 어디쯤인지 읽어 봅니다. 90점 이상이 몇 명인지와 1등급 자리가 몇 개인지를 맞대 보면 돼요.",
     schoolTitle: (name: string) => `${name}, 성취도로 읽은 학교`,
     schoolSub: (type: string) => type,
     fit: "이런 학생이 가면 좋아요",
@@ -333,7 +326,7 @@ export const DECK = {
     seatLine: "1등급 자리",
     noteSchool: (name: string, summary: string) => `[발표 스크립트] ${name}입니다. ${summary}`,
     sectionTitle: "국영수 성취도, 3년을 겹쳐 보면",
-    sectionSummary: "학교알리미 공시 그대로예요. A 인원과 1등급 자리를 맞대 보면 컷이 어디 있는지 보입니다.",
+    sectionSummary: "A 인원과 1등급 자리를 맞대 보면 컷이 어디 있는지 보입니다.",
   },
   exam2026Table: {
     en: "THIS YEAR'S PAPER",
@@ -421,7 +414,7 @@ export const EDITOR = {
   saveFailed: "저장이 안 됐어요. 브라우저 저장공간을 확인해 주세요.",
   reset: "기록 지우기",
   resetConfirm: (name: string) => `${name}에 적어 둔 걸 지워요. 계속할까요?`,
-  fact: { en: "FROM DISCLOSURE", ko: "공시 자료", hint: "학교알리미에서 알아서 채워져요. 손댈 수 없습니다.", tag: "공시, 읽기만" },
+  fact: { en: "AUTO FILLED", ko: "학교 기본 정보", hint: "학교알리미에서 알아서 채워져요. 손댈 수 없습니다.", tag: "읽기만" },
   character: {
     phHigh: "이 학교를 한 문단으로 설명한다면? 설명회 첫 장에 그대로 실려요.",
     phMid: "이 중학교를 한 문단으로 설명한다면? 분위기, 진학 성향, 영어 수업 특징.",
@@ -448,7 +441,7 @@ export const EDITOR = {
   },
   features: { add: "한 줄 더", ph: "시험지를 받아 본 사람만 아는 것" },
   signature: { hint: "문항 유형을 걸어 두면 설명회 자리에서 바로 문제를 뽑을 수 있어요.", add: "문항 하나 더", title: "문제 발문이나 유형 이름", note: "왜 이 문제가 등급을 가르는지", noType: "문항 유형 안 걸기" },
-  fit: { hint: "이건 사실이 아니라 우리 생각으로 표시돼요.", add: "하나 더", phHigh: "어떤 학생에게 맞는 학교인가", phMid: "어떤 학생에게 맞는 중학교인가" },
+  fit: { hint: "어떤 학생에게 맞는지 적어 두면 학교 페이지 끝에 실려요.", add: "하나 더", phHigh: "어떤 학생에게 맞는 학교인가", phMid: "어떤 학생에게 맞는 중학교인가" },
   rows: { up: "위로", down: "아래로", remove: "지우기" },
   stats: { g1: "1학년", classes: "학급", perClass: "학급당", male: "남", female: "여" },
 };
@@ -513,7 +506,7 @@ export const ACHIEVE_IMPORT = {
   hint: "xlsx, xls 여러 개 가능",
   parsed: (rows: number) => `${rows}행 읽음`,
   school: "학교",
-  year: "공시연도",
+  year: "학년도",
   pickSchool: "학교를 골라 주세요",
   save: "저장",
   saveAll: (n: number) => `${n}개 파일 저장`,
