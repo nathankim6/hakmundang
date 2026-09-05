@@ -319,10 +319,16 @@ ul.pts li::before{content:'';position:absolute;left:2px;top:11px;width:5px;heigh
 #stage{position:relative;min-width:0;overflow:hidden;
   background:radial-gradient(ellipse 70% 55% at 50% 44%,var(--void-3) 0%,var(--void-2) 45%,transparent 75%),var(--void)}
 #stage::after{content:'';position:absolute;inset:0;pointer-events:none;z-index:3;
-  background:radial-gradient(ellipse 130% 100% at 50% 48%,transparent 52%,rgba(4,11,23,.5) 100%),
+  background:radial-gradient(ellipse 125% 96% at 50% 48%,transparent 48%,rgba(3,8,18,.66) 100%),
              linear-gradient(180deg,rgba(92,188,255,.05),transparent 18%)}
 #gl{position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none;opacity:0;transition:opacity .6s var(--ease-out)}
-#gl.live{opacity:1}
+#gl.live{opacity:1;filter:saturate(1.08) contrast(1.08)}
+/* 필름 그레인 — 잡음 타일이 overlay 로 겹치고 스텝으로 튄다 */
+#grain{position:absolute;inset:-200px;z-index:4;pointer-events:none;opacity:.07;mix-blend-mode:overlay;background-repeat:repeat;background-size:192px 192px}
+@media(prefers-reduced-motion:no-preference){#grain{animation:grain .7s steps(6) infinite}}
+@keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-44px,32px)}40%{transform:translate(30px,-54px)}60%{transform:translate(-62px,-18px)}80%{transform:translate(52px,58px)}100%{transform:translate(0,0)}}
+@media print{#grain{display:none}}
+#stage.lowq #grain{display:none} #stage.lowq #gl.live{filter:none}   /* 프레임이 모자란 기계는 장식부터 내려놓는다 */
 #map{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:grab;touch-action:none;opacity:0;transition:opacity .6s var(--ease-out)}
 #map.live{opacity:1}
 #map.drag{cursor:grabbing}
