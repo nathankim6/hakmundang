@@ -517,6 +517,106 @@ textarea:focus-visible, input:focus-visible { outline: 1px solid var(--beam); ou
 .seq-mini .mpct { font-family: var(--mono); color: var(--beam); font-variant-numeric: tabular-nums; }
 .seq-mini .mbar { position: absolute; left: 0; bottom: -1px; height: 2px; background: var(--beam); transition: width .4s; }
 
+/* ══════════ 분석 요약 (계기판) ══════════ */
+.statbox {
+  display: grid; grid-template-columns: minmax(0, 1.4fr) repeat(4, minmax(90px, 1fr)) auto;
+  gap: 1px; background: var(--edge-soft); border: 1px solid var(--edge); border-radius: var(--r); overflow: hidden;
+}
+.statbox > * { background: var(--stage-up); padding: 18px 20px; }
+.sb-head { display: flex; flex-direction: column; gap: 5px; }
+.sb-label { font-family: var(--mono); font-size: 9.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--tx-faint); }
+.sb-name { font-size: 15px; font-weight: 700; color: var(--tx-strong); line-height: 1.4; }
+.sb-div { display: none; }
+.sb-nums { display: contents; }
+.sb-item { display: flex; flex-direction: column; gap: 4px; justify-content: center; }
+.sb-num { font-family: var(--mono); font-size: 22px; font-weight: 700; color: var(--beam); line-height: 1; font-variant-numeric: tabular-nums; }
+.sb-cap { font-family: var(--mono); font-size: 9.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--tx-faint); }
+.sb-badge { display: flex; align-items: center; gap: 9px; font-size: 12.5px; font-weight: 700; color: var(--tx-strong); white-space: nowrap; }
+.sb-badge::before { content: ""; width: 6px; height: 6px; background: var(--ok); flex: none; }
+.sb-summary { margin: 14px 2px 0; font-size: 13px; color: var(--tx-dim); line-height: 1.75; max-width: 78ch; }
+@media (max-width: 900px) { .statbox { grid-template-columns: 1fr 1fr; } .statbox .sb-head { grid-column: 1 / -1; } }
+
+/* 표 안의 난이도·지문 선택 */
+table.plan td.diff-hi { color: #eb9384; font-weight: 700; }
+table.plan td.diff-mid { color: var(--beam); font-weight: 700; }
+table.plan td.diff-lo { color: var(--ok); }
+table.plan .dot { display: none; }
+table.plan select.psel {
+  width: 100%; max-width: 380px; background: var(--stage); color: var(--tx);
+  border: 1px solid var(--edge); border-radius: 2px; padding: 7px 9px; font-size: 12px; font-family: inherit;
+}
+table.plan select.psel:focus { border-color: var(--beam); outline: none; }
+table.plan .peek {
+  display: block; margin-top: 6px; font-size: 11.5px; color: var(--tx-faint); line-height: 1.6;
+  max-height: 3.2em; overflow: hidden; text-overflow: ellipsis;
+}
+table.plan tbody tr { animation: seqIn .35s cubic-bezier(.2,.8,.3,1) backwards; animation-delay: calc(var(--i, 0) * 40ms); }
+
+/* 복구 배너 보조문, 작업 중 잠금, 등장 */
+.banner .b-sub { display: block; font-size: 11.5px; color: var(--tx-faint); margin-top: 3px; }
+body.busy .drop, body.busy .filelist button { pointer-events: none; opacity: .45; }
+.reveal { animation: seqIn .45s cubic-bezier(.2, .8, .3, 1); }
+
+/* ══════════ 출제 옵션 ══════════ */
+.opts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 22px; }
+.opt-card { border: 1px solid var(--edge); border-radius: var(--r); background: var(--stage); padding: 12px 14px; }
+.opt-card .k { font-family: var(--mono); font-size: 9.5px; letter-spacing: .13em; text-transform: uppercase; color: var(--tx-faint); margin-bottom: 8px; }
+.seg { display: flex; gap: 2px; background: var(--stage-hi); border: 1px solid var(--edge); border-radius: 2px; padding: 2px; }
+.seg button {
+  flex: 1; background: none; border: 0; color: var(--tx-dim); font-size: 12px; padding: 7px 4px; cursor: pointer;
+  border-radius: 1px; font-family: inherit;
+}
+.seg button.on { background: var(--beam); color: #17150a; font-weight: 700; }
+.seg button:hover:not(.on) { color: var(--tx-strong); }
+.opt-card input[type="number"] {
+  width: 100%; margin-top: 8px; background: var(--stage-hi); border: 1px solid var(--edge); color: var(--tx-strong);
+  padding: 7px 9px; font-family: var(--mono); font-size: 13px; border-radius: 2px;
+}
+.opt-card input[type="number"]:disabled { opacity: .35; }
+@media (max-width: 900px) { .opts { grid-template-columns: 1fr; } }
+
+/* ══════════ 결과 편집실 ══════════ */
+.desk { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+.desk .slug { margin-right: 6px; }
+.desk .gap { flex: 1; }
+.exam-output .question { position: relative; padding-right: 4px; }
+.exam-output .qbar {
+  position: absolute; right: -8px; top: -8px; display: flex; gap: 2px;
+  opacity: 0; transition: opacity .15s; z-index: 2;
+}
+.exam-output .question:hover .qbar, .exam-output .question:focus-within .qbar { opacity: 1; }
+.exam-output .qbar button {
+  background: #1c1c1c; color: #fff; border: 0; font-size: 11px; padding: 5px 9px; cursor: pointer; font-family: inherit;
+  border-radius: 2px;
+}
+.exam-output .qbar button:hover { background: var(--beam); color: #1c1c1c; }
+.exam-output .qbar button.del:hover { background: var(--alert); color: #fff; }
+.exam-output .question.redoing { opacity: .45; pointer-events: none; }
+.exam-output .question.redoing::after {
+  content: "다시 출제 중…"; position: absolute; inset: 0; display: grid; place-items: center;
+  font-weight: 700; color: #1c1c1c; background: rgba(255, 212, 0, .35); border-radius: 3px;
+}
+.exam-output.editing [contenteditable="true"] { outline: 1px dashed #b5b5b5; outline-offset: 3px; border-radius: 2px; }
+.exam-output.editing [contenteditable="true"]:focus { outline: 2px solid var(--beam); }
+.exam-output .live { color: #8a8a8a; border-left: 2px solid var(--beam); padding-left: 10px; margin: 8px 0; font-size: 12.5px; white-space: pre-wrap; max-height: 5.4em; overflow: hidden; }
+
+.redo-box { display: none; margin: 8px 0 14px; padding: 12px 14px; border: 1px solid var(--edge); background: var(--stage-hi); border-radius: var(--r); }
+.redo-box.show { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.redo-box input { flex: 1; min-width: 220px; background: var(--stage); border: 1px solid var(--edge); color: var(--tx); padding: 9px 12px; font-size: 13px; border-radius: 2px; }
+.redo-box select { background: var(--stage); border: 1px solid var(--edge); color: var(--tx); padding: 9px 10px; font-size: 12.5px; border-radius: 2px; max-width: 320px; }
+
+/* 최근 작업 */
+.history { margin: 18px 0 0; border: 1px solid var(--edge); border-radius: var(--r); background: var(--stage-up); overflow: hidden; }
+.history summary { cursor: pointer; padding: 12px 16px; font-size: 12.5px; color: var(--tx-dim); list-style: none; display: flex; align-items: center; gap: 10px; }
+.history summary::before { content: "▸"; font-size: 10px; color: var(--tx-faint); }
+.history[open] summary::before { content: "▾"; }
+.history ul { list-style: none; margin: 0; padding: 0 8px 8px; }
+.history li { display: flex; align-items: center; gap: 12px; padding: 10px 10px; border-top: 1px solid var(--edge-soft); font-size: 12.5px; }
+.history li .t { color: var(--tx-strong); font-weight: 700; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.history li .d { font-family: var(--mono); font-size: 10.5px; color: var(--tx-faint); }
+.history li button { background: none; border: 1px solid var(--edge); color: var(--tx-dim); font-size: 11.5px; padding: 5px 10px; cursor: pointer; border-radius: 2px; font-family: inherit; }
+.history li button:hover { border-color: var(--beam); color: var(--tx-strong); }
+
 /* ══════════ 결과 섹션 제목 ══════════ */
 .act-title { padding: 52px 0 26px; }
 .act-title .eyebrow { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
@@ -539,6 +639,11 @@ table.plan th {
   padding: 0 14px 11px; border-bottom: 1px solid var(--edge);
 }
 table.plan td { padding: 13px 14px; border-bottom: 1px solid var(--edge-soft); color: var(--tx); vertical-align: top; }
+table.plan th { white-space: nowrap; }
+table.plan td:nth-child(2) { min-width: 96px; }
+table.plan td:nth-child(3), table.plan td:nth-child(4) { white-space: nowrap; }
+table.plan td:nth-child(5) { min-width: 300px; }
+table.plan td:nth-child(6) { min-width: 200px; }
 table.plan tr:last-child td { border-bottom: 0; }
 table.plan tr:hover td { background: rgba(255, 255, 255, .018); }
 table.plan .num { font-family: var(--mono); color: var(--tx-strong); font-weight: 700; width: 44px; }
@@ -662,7 +767,7 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
     <span class="ko">동형 모의고사 생성기</span>
   </div>
   <span class="gap"></span>
-  <div class="state"><span class="build" id="buildTag">2026-09-04-032f513</span><span class="lamp" id="consoleLamp"></span><span id="consoleState">대기</span></div>
+  <div class="state"><span class="build" id="buildTag">2026-09-05 09:46</span><span class="lamp" id="consoleLamp"></span><span id="consoleState">대기</span></div>
 </div>
 
 <div class="shell">
@@ -673,6 +778,10 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
     <button type="button" class="primary" id="restoreBtn">이어서 보기</button>
     <button type="button" id="discardBtn">지우기</button>
   </div>
+  <details class="history" id="history" hidden>
+    <summary>최근 작업 <span class="chip" id="historyCount">0</span></summary>
+    <ul id="historyList"></ul>
+  </details>
 
   <!-- 브리핑 -->
   <div class="brief">
@@ -768,6 +877,22 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
         <textarea id="extraReq" placeholder="예) 서술형은 조건영작으로, 난이도는 원본보다 약간 상향, 어법 문항 비중 유지"></textarea>
       </div>
     </div>
+
+    <div class="opts" id="opts">
+      <div class="opt-card">
+        <div class="k">문항 수</div>
+        <div class="seg" data-opt="count"><button type="button" class="on" data-v="same">원본과 동일</button><button type="button" data-v="n">직접 지정</button></div>
+        <input type="number" id="optCount" min="1" max="45" placeholder="예) 20" disabled>
+      </div>
+      <div class="opt-card">
+        <div class="k">난이도</div>
+        <div class="seg" data-opt="level"><button type="button" data-v="down">하향</button><button type="button" class="on" data-v="same">동일</button><button type="button" data-v="up">상향</button></div>
+      </div>
+      <div class="opt-card">
+        <div class="k">서술형</div>
+        <div class="seg" data-opt="subj"><button type="button" class="on" data-v="same">원본과 동일</button><button type="button" data-v="none">객관식만</button><button type="button" data-v="more">서술형 늘림</button></div>
+      </div>
+    </div>
   </section>
 
   <div class="cta">
@@ -813,6 +938,24 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
       <p>미리보기로 검토하고, 원하는 형식으로 저장하세요</p>
     </div>
 
+    <div class="desk">
+      <span class="slug">Editor's desk</span>
+      <button type="button" class="btn ghost" id="editToggle">직접 수정</button>
+      <span class="gap"></span>
+      <span class="slug">Export</span>
+      <div class="seg" id="exportMode" style="min-width:250px">
+        <button type="button" class="on" data-v="all">문제 + 정답</button>
+        <button type="button" data-v="q">문제지만</button>
+        <button type="button" data-v="a">정답지만</button>
+      </div>
+    </div>
+    <div class="redo-box" id="redoBox">
+      <span class="slug" id="redoLabel">1번 다시 출제</span>
+      <select id="redoPassage"></select>
+      <input type="text" id="redoNote" placeholder="원하는 방향 (선택) — 예) 빈칸을 앞 문장으로, 오답 더 매력적으로">
+      <button type="button" class="btn" id="redoGo">출제</button>
+      <button type="button" class="btn link" id="redoCancel">취소</button>
+    </div>
     <div class="sheet-stage">
       <div id="printArea"><div class="exam-output" id="examOutput"></div></div>
     </div>
@@ -1656,13 +1799,8 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
     box.append(head, div, nums);
     if (plan.length) {
       const badge = document.createElement("div");
-      badge.style.cssText = "margin-left:auto;display:flex;align-items:center;gap:8px";
-      const d = document.createElement("span");
-      d.className = "dot";
-      const t = document.createElement("span");
-      t.style.cssText = "font-size:13px;font-weight:700;color:#fff";
-      t.textContent = "범위 매칭 " + plan.length + " / " + (info.total_questions ?? plan.length);
-      badge.append(d, t);
+      badge.className = "sb-badge";
+      badge.textContent = "범위 매칭 " + plan.length + " / " + (info.total_questions ?? plan.length);
       box.appendChild(badge);
     }
 
@@ -1696,12 +1834,16 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
       [[m.type || q.type || "", true, ""],
        [(q.format || "") + (q.points != null ? " · " + q.points + "점" : ""), false, ""],
        [diff, false, diff === "상" ? "diff-hi" : diff === "중" ? "diff-mid" : diff ? "diff-lo" : ""],
-       [m.selected_passage || "", true, ""],
+       [m.passage_id || "", "select", ""],
        [m.direction || "", true, ""],
       ].forEach(([val, editable, cls]) => {
         const td = document.createElement("td");
-        td.textContent = val;
         if (cls) td.className = cls;
+        if (editable === "select") {                      // 범위 내 지문을 고르는 드롭다운
+          td.appendChild(passageSelect(val));
+          return tr.appendChild(td);
+        }
+        td.textContent = val;
         if (editable) {
           td.setAttribute("contenteditable", "true");
           td.setAttribute("spellcheck", "false");
@@ -1719,11 +1861,50 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
     });
     tbl.appendChild(tbody);
   }
+  // 지문 드롭다운: 값은 지문 id, 아래에 첫 문장을 미리 보여준다
+  function passageLabel(c) {
+    return c.id + " · " + (c.src || "").slice(0, 34) + ' · "' + String(c.first || "").split(/\s+/).slice(0, 6).join(" ") + '…"';
+  }
+  function passageSelect(selectedId) {
+    const wrap = document.createElement("div");
+    const sel = document.createElement("select");
+    sel.className = "psel";
+    const cat = (pipe && pipe.catalog) || [];
+    const none = document.createElement("option");
+    none.value = ""; none.textContent = "(지문 없이 출제 방향만)";
+    sel.appendChild(none);
+    cat.forEach(c => {
+      const o = document.createElement("option");
+      o.value = c.id; o.textContent = passageLabel(c);
+      if (c.id === selectedId) o.selected = true;
+      sel.appendChild(o);
+    });
+    const peek = document.createElement("span");
+    peek.className = "peek";
+    const paint = () => {
+      const c = cat.find(x => x.id === sel.value);
+      peek.textContent = c ? ((pipe.passages || {})[c.id] || c.gist || "").slice(0, 160) : "";
+    };
+    sel.addEventListener("change", paint);
+    paint();
+    wrap.append(sel, peek);
+    return wrap;
+  }
   function planFromTable() {
     const rows = [...$("planTable").querySelectorAll("tbody tr")];
+    const byId = Object.fromEntries(((pipe && pipe.catalog) || []).map(c => [c.id, c]));
     return rows.map(tr => {
-      const t = [...tr.children].map(td => td.textContent.trim());
-      return { number: t[0], type: t[1], format_points: t[2], difficulty: t[3], selected_passage: t[4], direction: t[5] };
+      const td = [...tr.children];
+      const sel = td[4].querySelector("select");
+      const pid = sel ? sel.value : "";
+      const c = byId[pid];
+      return {
+        number: td[0].textContent.trim(), type: td[1].textContent.trim(), format_points: td[2].textContent.trim(),
+        difficulty: td[3].textContent.trim(),
+        selected_passage: c ? passageLabel(c) : (pid || ""),
+        passage_id: pid,
+        direction: td[5].textContent.trim(),
+      };
     });
   }
   function setStep(n) {
@@ -1828,7 +2009,9 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
   }
   function htmlToBlocks() {
     const blocks = [];
-    walkBlocks($("examOutput"), blocks, { box: false, center: false });
+    const root = document.createElement("div");
+    root.innerHTML = outputHtml();
+    walkBlocks(root, blocks, { box: false, center: false });
     return blocks.filter(b => b.runs.length && b.runs.some(r => (r.t || "").trim()));
   }
   function blocksToText(blocks) {
@@ -1984,7 +2167,7 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
     const c = window.claude;
     return [
       "ORUN 동형 모의고사 진단",
-      "build: 2026-09-04-032f513",
+      "build: 2026-09-05 09:46",
       "url: " + location.href,
       "runtime: " + RUNTIME + (c ? "" : " (window.claude 없음)"),
       "claude.use: " + (c && typeof c.use === "function" ? "있음" : "없음"),
@@ -2380,6 +2563,7 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
     let done = 0;
     const pct = () => 4 + 92 * done / totalCalls;
 
+    sessionId = String(Date.now());
     analyzeProg.start("시험지 " + examChunks.length + "부분 · 범위 자료 " + scopeChunks.length + "부분 준비 (총 " + totalCalls + "회 호출 예정)");
     try {
       // (1) 시험지 분석
@@ -2443,6 +2627,7 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
       $("step2").scrollIntoView({ behavior: "smooth" });
       renderUsage();
       saveSession({ analysis, pipe, calls, output: null, title: info.title || "" });
+      pushHistory();
       toast("분석이 끝났습니다 — 매칭 계획을 확인해 주세요 (Claude " + calls + "회 호출)");
     } catch (e) {
       analyzeProg.stop();
@@ -2455,6 +2640,46 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
   }
 
   // ---------- 2단계: 출제 파이프라인 ----------
+  // ---------- 출제 옵션 ----------
+  const OPT = { count: "same", level: "same", subj: "same" };
+  function bindOptions() {
+    document.querySelectorAll("#opts .seg").forEach(seg => {
+      const key = seg.dataset.opt;
+      seg.querySelectorAll("button").forEach(btn => btn.addEventListener("click", () => {
+        seg.querySelectorAll("button").forEach(b => b.classList.toggle("on", b === btn));
+        OPT[key] = btn.dataset.v;
+        if (key === "count") { $("optCount").disabled = OPT.count !== "n"; if (OPT.count === "n") $("optCount").focus(); }
+      }));
+    });
+  }
+  function buildExtra() {
+    const parts = [];
+    const free = $("extraReq").value.trim();
+    if (free) parts.push(free);
+    if (OPT.level === "up") parts.push("난이도를 원본보다 한 단계 상향한다(선지 변별력·지문 가공 난도 상승).");
+    if (OPT.level === "down") parts.push("난이도를 원본보다 한 단계 하향한다(발문·선지를 더 직접적으로).");
+    if (OPT.subj === "none") parts.push("서술형 문항은 모두 5지선다 객관식으로 바꿔 출제한다.");
+    if (OPT.subj === "more") parts.push("서술형 비중을 늘려(전체의 약 30%) 조건영작·요지 서술을 포함한다.");
+    return parts.join(" ");
+  }
+  // 문항 수를 직접 지정하면 원본 유형을 순환하며 늘리거나 앞에서부터 자른다.
+  function fitItemsToCount(items, count) {
+    if (!count || count === items.length || !items.length) return items;
+    if (count < items.length) return items.slice(0, count);
+    const cat = (pipe.catalog || []);
+    const used = new Set(items.map(i => i.passage_id).filter(Boolean));
+    const spare = cat.filter(c => !used.has(c.id));
+    const out = items.slice();
+    let k = 0;
+    while (out.length < count) {
+      const base = items[k % items.length]; k++;
+      const c = spare.length ? spare[(out.length - items.length) % spare.length] : cat[(out.length) % Math.max(1, cat.length)];
+      out.push({ ...base, number: String(out.length + 1), passage_id: c ? c.id : "", src: c ? c.src : "",
+                 text: c ? (pipe.passages || {})[c.id] || "" : "", userNote: "" });
+    }
+    return out;
+  }
+
   async function generate() {
     clearError("genError");
     if (!analysis) return;
@@ -2468,15 +2693,15 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
     cancelRequested = false;
     newAbort();
     running = { abort() { cancelRequested = true; if (abortCtl) abortCtl.abort(); } };
-    const extra = $("extraReq").value.trim();
+    const extra = buildExtra();
     const qMap = Object.fromEntries((analysis.questions || []).map(q => [String(q.number), q]));
     const byId = Object.fromEntries((pipe.catalog || []).map(c => [c.id, c]));
     const rows = planFromTable();
     const items = rows.map((r, i) => {
       const q = qMap[r.number] || {};
       const orig = (analysis.matching_plan || [])[i] || {};
-      const idInCell = (r.selected_passage.match(/^([A-Za-z]\d+(?:\.\d+)?-\d+)/) || [])[1];
-      const pid = idInCell || orig.passage_id || "";
+      const pid = r.passage_id !== undefined ? r.passage_id : (orig.passage_id || "");
+      const idInCell = pid;
       const c = byId[pid];
       return {
         number: r.number, type: r.type || q.type || "", format: q.format || "", points: q.points ?? "", difficulty: q.difficulty || "",
@@ -2486,46 +2711,78 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
       };
     });
 
+    let itemsFinal = items;
+    if (OPT.count === "n") itemsFinal = fitItemsToCount(items, Math.max(1, Math.min(45, Number($("optCount").value) || 0)));
+    if (OPT.subj === "none") itemsFinal = itemsFinal.map(it => /서술형/.test(it.format + it.type) ? { ...it, format: "5지선다", type: it.type.replace(/^서술형-?/, "") || "주제" } : it);
+
     // 묶음 만들기 (예산 안에서 최대 6문항)
     const styleSample = pipe.examText.slice(0, 2200);
     const base = bytesOf(promptGen(analysis.exam_info || {}, [], styleSample, extra));
     const batches = [];
     let cur = [], curBytes = base;
-    items.forEach(it => {
+    itemsFinal.forEach(it => {
       const sz = bytesOf(promptGen({}, [it], "", "")) - bytesOf(promptGen({}, [], "", ""));
       if (cur.length && (curBytes + sz > BUDGET || cur.length >= 6)) { batches.push(cur); cur = []; curBytes = base; }
       cur.push(it); curBytes += sz;
     });
     if (cur.length) batches.push(cur);
 
-    genProg.start("확정된 출제 계획 " + items.length + "문항 · " + batches.length + "묶음으로 출제 예정");
-    genProg.plan(items.length);
+    genProg.start("확정된 출제 계획 " + itemsFinal.length + "문항 · " + batches.length + "묶음 · 2묶음씩 동시에 출제");
+    genProg.plan(itemsFinal.length);
+    lastItems = itemsFinal;
     setStep(3);
     reveal("step3");
-    $("examOutput").innerHTML = "";
-    const qParts = [], aParts = [];
+    exitEditMode();
+    const out = $("examOutput");
+    out.innerHTML = assembleExam([], [], true);
+    // 묶음마다 자리를 미리 잡아 두고, 각 묶음이 써지는 대로 그 자리에 채운다
+    const slots = batches.map(() => { const d = document.createElement("div"); d.className = "slot"; out.appendChild(d); return d; });
+    const results = new Array(batches.length);
+    let doneCount = 0, writtenTotal = 0;
+    const perBatchSeen = new Array(batches.length).fill(0);
+
+    const runBatch = async (b) => {
+      const nums = batches[b].map(x => x.number);
+      const label = nums[0] + (nums.length > 1 ? "~" + nums[nums.length - 1] : "") + "번";
+      genProg.set(8 + 82 * doneCount / batches.length, 1, label + " 출제 시작");
+      const html = await callClaude(promptGen(analysis.exam_info || {}, batches[b], styleSample, extra), {
+        tier: "complex",
+        onText: ({ text }) => {
+          // 완성된 문항은 바로 그리고, 쓰는 중인 꼬리는 살짝 보여준다
+          const done = extractCompleteQuestions(text);
+          if (done.length > perBatchSeen[b]) {
+            perBatchSeen[b] = done.length;
+            writtenTotal = perBatchSeen.reduce((a, c) => a + c, 0);
+            genProg.mark(writtenTotal);
+            genProg.set(8 + 82 * (doneCount + perBatchSeen[b] / batches[b].length) / batches.length, 2,
+              label + " · " + done.length + "/" + batches[b].length + "문항 작성됨");
+          }
+          slots[b].innerHTML = done.map(h => sanitizeAndFold(h)).join("") +
+            '<p class="live">' + escapeText(liveTail(text)) + '</p>';
+        },
+      });
+      const doc = new DOMParser().parseFromString("<div>" + sanitizeAndFold(stripFences(html)) + "</div>", "text/html");
+      results[b] = { q: [...doc.querySelectorAll(".question")].map(q => q.outerHTML), a: [...doc.querySelectorAll(".answer-key")].map(a => a.innerHTML) };
+      slots[b].innerHTML = results[b].q.join("");
+      doneCount++;
+      perBatchSeen[b] = results[b].q.length;
+      genProg.mark(perBatchSeen.reduce((a, c) => a + c, 0));
+    };
+
     try {
-      for (let b = 0; b < batches.length; b++) {
-        const nums = batches[b].map(x => x.number);
-        genProg.set(10 + 80 * b / batches.length, b === 0 ? 1 : 2,
-          "문항 출제 " + (b + 1) + "/" + batches.length + " 묶음 · " + nums[0] + "~" + nums[nums.length - 1] + "번");
-        const html = await ask(promptGen(analysis.exam_info || {}, batches[b], styleSample, extra), "complex");
-        const doc = new DOMParser().parseFromString("<div>" + sanitizeAndFold(stripFences(html)) + "</div>", "text/html");
-        doc.querySelectorAll(".question").forEach(q => qParts.push(q.outerHTML));
-        doc.querySelectorAll(".answer-key").forEach(a => aParts.push(a.innerHTML));
-        // 진행 중 미리보기
-        genProg.mark(qParts.length);
-        $("examOutput").innerHTML = assembleExam(qParts, aParts, true);
-      }
+      await runPool(batches.map((_, b) => () => runBatch(b)), 2);
       genProg.set(94, 3, "정답 · 해설 정리 중");
+      const qParts = results.flatMap(r => r.q), aParts = results.flatMap(r => r.a);
       const final = assembleExam(qParts, aParts, false);
-      $("examOutput").innerHTML = final;
-      stagger($("examOutput"), ".exam-header, .question, h2, .answer-key");
+      out.innerHTML = final;
+      decorateQuestions();
+      stagger(out, ".exam-header, .question, h2, .answer-key");
       genProg.finish("출제 완료");
       renderUsage();
-      saveSession({ output: final, calls });
+      saveSession({ output: cleanOutputHtml(), calls });
+      pushHistory();
       $("step3").scrollIntoView({ behavior: "smooth" });
-      toast("시험지가 완성되었습니다 — 검수 후 저장하세요");
+      toast("시험지가 완성되었습니다 — 문항 위에 마우스를 올리면 다시 출제·삭제할 수 있습니다");
     } catch (e) {
       genProg.stop();
       if (e.message === "__aborted__") { toast("출제를 중단했습니다"); $("step3").classList.remove("show"); }
@@ -2535,6 +2792,34 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
       setBusy(false);
     }
   }
+  // 스트리밍 중인 HTML 에서 '닫힌' 문항 블록만 골라낸다 (정답표 앞까지)
+  function extractCompleteQuestions(text) {
+    const cut = text.indexOf('<div class="answer-key"');
+    const body = cut >= 0 ? text.slice(0, cut) : text;
+    const parts = body.split(/(?=<div class="question")/);
+    const done = [];
+    for (let i = 1; i < parts.length; i++) {
+      const seg = parts[i];
+      const opens = (seg.match(/<div\b/g) || []).length, closes = (seg.match(/<\/div>/g) || []).length;
+      if (i < parts.length - 1 || (opens > 0 && opens === closes)) done.push(seg);
+    }
+    return done;
+  }
+  async function runPool(tasks, limit) {
+    let i = 0;
+    const workers = Array.from({ length: Math.min(limit, tasks.length) }, async () => {
+      while (i < tasks.length) { const t = tasks[i++]; await t(); }
+    });
+    await Promise.all(workers);
+  }
+  function escapeText(t) { return String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;"); }
+  // 지금 써지고 있는 문항의 꼬리 220자만 글자로
+  function liveTail(text) {
+    const at = text.lastIndexOf('<div class="question"');
+    const seg = at >= 0 ? text.slice(at) : text;
+    return seg.replace(/<[^>]*>/g, "").slice(-220).trim();
+  }
+
   // <ol>의 항목이 모두 기호뿐이면(①②③④⑤ 같은) 한 줄짜리 <p>로 접는다.
   function foldSymbolChoices(root) {
     root.querySelectorAll("ol, ul").forEach(list => {
@@ -2564,6 +2849,128 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
     if (!partial || aParts.length) out += "<h2>정답 및 해설</h2><div class=\"answer-key\">" + aParts.join("") + "</div>";
     return out;
   }
+
+  // ---------- 편집실 ----------
+  let lastItems = [];                 // 마지막 출제에 쓴 문항 명세 (다시 출제에 재사용)
+  let exportMode = "all";             // all | q | a
+  let editing = false;
+
+  // 내보내기·저장에 쓰는 깨끗한 HTML: 툴바·편집 표시·스트리밍 꼬리를 뺀다
+  function cleanOutputHtml(mode) {
+    const root = $("examOutput").cloneNode(true);
+    root.querySelectorAll(".qbar, .live, .slot:empty").forEach(n => n.remove());
+    root.querySelectorAll("[contenteditable]").forEach(n => n.removeAttribute("contenteditable"));
+    root.querySelectorAll(".slot").forEach(sl => sl.replaceWith(...sl.childNodes));
+    root.querySelectorAll(".redoing").forEach(n => n.classList.remove("redoing"));
+    const m = mode || "all";
+    if (m === "q") root.querySelectorAll("h2, .answer-key").forEach(n => n.remove());
+    if (m === "a") root.querySelectorAll(".question").forEach(n => n.remove());
+    return root.innerHTML;
+  }
+  function renumberQuestions() {
+    const qs = [...$("examOutput").querySelectorAll(".question")];
+    const keys = $("examOutput").querySelectorAll(".answer-key p[data-no]");
+    const map = {};
+    qs.forEach((q, i) => {
+      const oldNo = q.dataset.no; const newNo = String(i + 1);
+      map[oldNo] = newNo; q.dataset.no = newNo;
+      const b = q.querySelector("p b");
+      if (b && /^\d+\.$/.test(b.textContent.trim())) b.textContent = newNo + ".";
+    });
+    keys.forEach(pk => {
+      const n = map[pk.dataset.no];
+      if (!n) return pk.remove();
+      pk.dataset.no = n;
+      const b = pk.querySelector("b");
+      if (b && /^\d+\.$/.test(b.textContent.trim())) b.textContent = n + ".";
+    });
+    const cnt = $("examOutput").querySelector(".exam-header p");
+    if (cnt) cnt.textContent = cnt.textContent.replace(/총 \d+문항/, "총 " + qs.length + "문항");
+  }
+  function decorateQuestions() {
+    $("examOutput").querySelectorAll(".question").forEach(q => {
+      if (q.querySelector(".qbar")) return;
+      const bar = document.createElement("div");
+      bar.className = "qbar";
+      const redo = document.createElement("button"); redo.type = "button"; redo.textContent = "다시 출제";
+      redo.addEventListener("click", () => openRedo(q.dataset.no));
+      const del = document.createElement("button"); del.type = "button"; del.className = "del"; del.textContent = "삭제";
+      del.addEventListener("click", () => {
+        if (!confirm(q.dataset.no + "번 문항을 지울까요?")) return;
+        q.remove(); renumberQuestions(); saveSession({ output: cleanOutputHtml() }); toast("문항을 지웠습니다");
+      });
+      bar.append(redo, del);
+      q.prepend(bar);
+    });
+  }
+  function enterEditMode() {
+    editing = true;
+    $("examOutput").classList.add("editing");
+    $("examOutput").querySelectorAll(".question > p, .passage p, .question li, .choices-inline, .answer-key p").forEach(n => n.setAttribute("contenteditable", "true"));
+    $("editToggle").textContent = "수정 끝내기";
+    $("editToggle").classList.remove("ghost");
+    toast("문항 본문을 클릭해 바로 고칠 수 있습니다");
+  }
+  function exitEditMode() {
+    if (!editing) return;
+    editing = false;
+    $("examOutput").classList.remove("editing");
+    $("examOutput").querySelectorAll("[contenteditable]").forEach(n => n.removeAttribute("contenteditable"));
+    $("editToggle").textContent = "직접 수정";
+    $("editToggle").classList.add("ghost");
+    saveSession({ output: cleanOutputHtml() });
+  }
+  function openRedo(no) {
+    const it = lastItems.find(x => String(x.number) === String(no));
+    if (!it) return toast("이 문항의 출제 정보를 찾지 못했습니다", "err");
+    $("redoLabel").textContent = no + "번 다시 출제 · " + it.type;
+    const sel = $("redoPassage"); sel.innerHTML = "";
+    ((pipe && pipe.catalog) || []).forEach(c => {
+      const o = document.createElement("option"); o.value = c.id; o.textContent = passageLabel(c);
+      if (c.id === it.passage_id) o.selected = true; sel.appendChild(o);
+    });
+    $("redoNote").value = "";
+    $("redoBox").dataset.no = no;
+    $("redoBox").classList.add("show");
+    $("redoBox").scrollIntoView({ behavior: "smooth", block: "center" });
+    $("redoNote").focus();
+  }
+  async function redoQuestion() {
+    const no = $("redoBox").dataset.no;
+    const it = lastItems.find(x => String(x.number) === String(no));
+    const q = $("examOutput").querySelector('.question[data-no="' + no + '"]');
+    if (!it || !q) return;
+    await runtimeReady;
+    if (!samplingAvailable()) return toast("claude.ai 아티팩트 안에서만 실행할 수 있습니다", "err");
+    const pid = $("redoPassage").value;
+    const c = ((pipe && pipe.catalog) || []).find(x => x.id === pid);
+    const note = $("redoNote").value.trim();
+    const item = { ...it, passage_id: pid, src: c ? c.src : it.src, text: c ? (pipe.passages || {})[pid] || "" : it.text,
+                   direction: [it.direction, note].filter(Boolean).join(" · "), userNote: "" };
+    $("redoBox").classList.remove("show");
+    q.classList.add("redoing");
+    newAbort();
+    try {
+      const html = await callClaude(promptGen(analysis.exam_info || {}, [item], pipe.examText.slice(0, 1400), buildExtra()), { tier: "complex" });
+      const doc = new DOMParser().parseFromString("<div>" + sanitizeAndFold(stripFences(html)) + "</div>", "text/html");
+      const nq = doc.querySelector(".question"), na = doc.querySelector('.answer-key p[data-no]');
+      if (!nq) throw new Error("새 문항을 받지 못했습니다. 다시 시도해 주세요.");
+      nq.dataset.no = no;
+      q.replaceWith(nq);
+      const oldA = $("examOutput").querySelector('.answer-key p[data-no="' + no + '"]');
+      if (na) { na.dataset.no = no; if (oldA) oldA.replaceWith(na); else { const ak = $("examOutput").querySelector(".answer-key"); if (ak) ak.appendChild(na); } }
+      decorateQuestions();
+      if (editing) { editing = false; enterEditMode(); }
+      Object.assign(it, { passage_id: pid, src: item.src, text: item.text, direction: item.direction });
+      renderUsage();
+      saveSession({ output: cleanOutputHtml(), calls });
+      toast(no + "번을 다시 출제했습니다");
+    } catch (e) {
+      q.classList.remove("redoing");
+      if (e.message !== "__aborted__") toast(e.message, "err");
+    }
+  }
+  function outputHtml() { return cleanOutputHtml(exportMode); }
 
   // ---------- 저장 (downloads 기능 · 미지원 확장자 폴백) ----------
   async function saveFile(data, filename) {
@@ -2597,14 +3004,14 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
       "p{margin:0 0 3pt}ol,ul{list-style:none;margin:2pt 0;padding-left:2pt}li{margin:0 0 1pt}u{text-underline-offset:2pt}" +
       "@media screen{body{max-width:210mm;margin:12mm auto;padding:0 8mm}}";
     return "<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'><title>동형모의고사</title>" +
-      "<style>" + printCss + "</style></head><body>" + $("examOutput").innerHTML + "</body></html>";
+      "<style>" + printCss + "</style></head><body>" + outputHtml() + "</body></html>";
   }
   async function exportHtml() {
     if (!requireOutput()) return;
     const r = await saveFile(printDocument(), "동형모의고사.html");
     if (r === "saved") toast("HTML을 저장했습니다 — 브라우저에서 열고 인쇄(Ctrl+P)하면 2단 PDF가 됩니다");
     else if (r === "unsupported") {
-      const r2 = await saveFile($("examOutput").innerText, "동형모의고사.txt");
+      const r2 = await saveFile(new DOMParser().parseFromString(outputHtml(), "text/html").body.innerText, "동형모의고사.txt");
       if (r2 === "saved") toast("이 계정은 HTML 저장이 꺼져 있어 텍스트(.txt)로 저장했습니다");
     }
   }
@@ -2640,12 +3047,13 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
     } catch (e) { toast("DOCX 저장 실패: " + e.message, "err"); }
   });
   $("copyBtn").addEventListener("click", async () => {
-    try { await navigator.clipboard.writeText($("examOutput").innerText); toast("본문을 복사했습니다 — 한글·워드에 붙여넣을 수 있습니다"); }
+    try { await navigator.clipboard.writeText(new DOMParser().parseFromString(outputHtml(), "text/html").body.innerText); toast("본문을 복사했습니다 — 한글·워드에 붙여넣을 수 있습니다"); }
     catch (_) { toast("복사에 실패했습니다 — 브라우저 권한을 확인해 주세요", "err"); }
   });
   $("editInputsBtn").addEventListener("click", () => { $("step1").scrollIntoView({ behavior: "smooth" }); });
   $("resetBtn").addEventListener("click", () => {
     if (!confirm("올린 자료와 분석·출제 결과를 모두 지우고 처음부터 시작할까요?")) return;
+    exitEditMode(); $("redoBox").classList.remove("show"); lastItems = [];
     examPdf = null; scopeItems = []; analysis = null; resultsStale = false; calls = 0;
     pipe = { examChunks: null, catalog: [], passages: {} };
     renderExamList(); renderScopeList();
@@ -2661,6 +3069,60 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
     toast("처음부터 다시 시작합니다");
   });
   window.addEventListener("beforeunload", (e) => { if (running) { e.preventDefault(); e.returnValue = ""; } });
+
+  // ---------- 최근 작업 이력 (최대 5개) ----------
+  const HISTORY_KEY = "orun_mock_history";
+  function readHistory() { try { return JSON.parse(localStorage.getItem(HISTORY_KEY) || "[]"); } catch (_) { return []; } }
+  function pushHistory() {
+    if (!analysis) return;
+    try {
+      const list = readHistory().filter(h => h.id !== sessionId);
+      list.unshift({ id: sessionId, title: (analysis.exam_info || {}).title || "이름 없는 시험", savedAt: Date.now(),
+                     n: (analysis.questions || []).length, analysis, pipe, output: cleanOutputHtml(), calls });
+      while (list.length > 5) list.pop();
+      localStorage.setItem(HISTORY_KEY, JSON.stringify(list));
+    } catch (_) { /* 용량 초과면 조용히 건너뛴다 */ }
+    renderHistory();
+  }
+  function renderHistory() {
+    const list = readHistory();
+    const box = $("history"), ul = $("historyList");
+    box.hidden = !list.length;
+    $("historyCount").textContent = String(list.length);
+    ul.innerHTML = "";
+    list.forEach(h => {
+      const li = document.createElement("li");
+      const t = document.createElement("span"); t.className = "t"; t.textContent = h.title + (h.n ? " · " + h.n + "문항" : "");
+      const d = document.createElement("span"); d.className = "d";
+      const w = new Date(h.savedAt);
+      d.textContent = (w.getMonth() + 1) + "/" + w.getDate() + " " + String(w.getHours()).padStart(2, "0") + ":" + String(w.getMinutes()).padStart(2, "0");
+      const open = document.createElement("button"); open.type = "button"; open.textContent = "열기";
+      open.addEventListener("click", () => { applySession(h); toast("이전 작업을 불러왔습니다"); });
+      li.append(t, d, open);
+      ul.appendChild(li);
+    });
+  }
+  let sessionId = String(Date.now());
+  function applySession(sess) {
+    exitEditMode();
+    analysis = sess.analysis;
+    if (sess.pipe) pipe = sess.pipe;
+    calls = sess.calls || 0;
+    if (sess.id) sessionId = sess.id;
+    renderPlan(analysis);
+    setStep(sess.output ? 3 : 2);
+    reveal("step2");
+    if (sess.output) {
+      $("examOutput").innerHTML = sanitize(sess.output);
+      decorateQuestions();
+      renderUsage();
+      reveal("step3");
+    } else {
+      $("step3").classList.remove("show");
+    }
+    $("restoreBanner").classList.remove("show");
+    $(sess.output ? "step3" : "step2").scrollIntoView({ behavior: "smooth" });
+  }
 
   // ---------- 이전 작업 복구 ----------
   (function offerRestore() {
@@ -2681,25 +3143,20 @@ table.plan [contenteditable]:focus { outline: none; border-bottom-color: var(--b
     t.appendChild(sub);
     $("restoreBanner").classList.add("show");
     $("discardBtn").addEventListener("click", () => { clearSession(); $("restoreBanner").classList.remove("show"); });
-    $("restoreBtn").addEventListener("click", () => {
-      analysis = sess.analysis;
-      if (sess.pipe) pipe = sess.pipe;
-      calls = sess.calls || 0;
-      renderPlan(analysis);
-      setStep(sess.output ? 3 : 2);
-      reveal("step2");
-      if (sess.output) {
-        $("examOutput").innerHTML = sanitize(sess.output);
-        renderUsage();
-        reveal("step3");
-      }
-      $("restoreBanner").classList.remove("show");
-      $(sess.output ? "step3" : "step2").scrollIntoView({ behavior: "smooth" });
-      toast("이전 작업을 불러왔습니다");
-    });
+    $("restoreBtn").addEventListener("click", () => { applySession(sess); toast("이전 작업을 불러왔습니다"); });
   })();
 
   bindExamPaste();
+  bindOptions();
+  renderHistory();
+  $("editToggle").addEventListener("click", () => { if (!requireOutput()) return; editing ? exitEditMode() : enterEditMode(); });
+  $("exportMode").querySelectorAll("button").forEach(btn => btn.addEventListener("click", () => {
+    $("exportMode").querySelectorAll("button").forEach(b => b.classList.toggle("on", b === btn));
+    exportMode = btn.dataset.v;
+    toast(exportMode === "q" ? "문제지만 저장·인쇄합니다" : exportMode === "a" ? "정답지만 저장·인쇄합니다" : "문제와 정답을 함께 저장합니다");
+  }));
+  $("redoGo").addEventListener("click", () => { redoQuestion().catch(e => toast(e.message, "err")); });
+  $("redoCancel").addEventListener("click", () => $("redoBox").classList.remove("show"));
   $("examOcrBtn").addEventListener("click", reReadAsScan);
   $("diagBtn").addEventListener("click", async () => {
     const text = diagnostics();
