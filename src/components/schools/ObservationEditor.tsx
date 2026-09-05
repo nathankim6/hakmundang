@@ -20,6 +20,7 @@ import {
   useObservations,
 } from "@/lib/schools/store";
 import { allSchools } from "@/lib/schools/data";
+import { APP } from "@/lib/schools/copy";
 
 const LEVELS: DifficultyLevel[] = ["기초", "보통", "상", "최상"];
 
@@ -40,7 +41,7 @@ export function ObservationEditor() {
   return (
     <div className="orun" style={{ background: "transparent" }}>
       <div className="orun-eyebrow" style={{ marginBottom: 12 }}>
-        What we saw · 공시에 없는 것
+        {APP.edit.en}
       </div>
       <h2
         style={{
@@ -51,11 +52,10 @@ export function ObservationEditor() {
           letterSpacing: "-.015em",
         }}
       >
-        우리가 본 것을 적어 둡니다
+        {APP.edit.title}
       </h2>
       <p style={{ color: "var(--muted)", fontSize: 15, maxWidth: "64ch", margin: "0 0 24px" }}>
-        공시 자료에 없는 내용입니다. 한 번 넣어두면 내년 설명회에서 그대로 다시 씁니다. 학교가
-        쌓일수록 준비가 짧아집니다.
+        {APP.edit.lede}
       </p>
 
       <SchoolSelect
@@ -69,7 +69,7 @@ export function ObservationEditor() {
         <EditorForm key={school.code} school={school} />
       ) : (
         <p style={{ color: "var(--muted)", fontSize: 14, padding: "34px 0" }}>
-          적어 둘 학교를 위에서 골라 주세요.
+          적어 둘 학교를 위에서 골라 주세요. 한 학교에 10분이면 충분해요.
         </p>
       )}
     </div>
@@ -106,7 +106,7 @@ function SchoolSelect({
           outline: "none",
         }}
       >
-        <option value="">— 학교 선택 —</option>
+        <option value="">학교를 골라 주세요</option>
         {schools.map((s) => {
           const pct = Math.round(completeness(observations[s.code]) * 100);
           return (

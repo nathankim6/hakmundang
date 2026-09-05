@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { gradeSeats, seatsForGrade1, smallClassWarning } from "@/lib/schools/metrics";
+import { CALC } from "@/lib/schools/copy";
+import { Icon } from "@/components/schools/Art";
 
 /**
  * 1등급 자리 계산기.
@@ -14,55 +16,33 @@ export function GradeCalculator({ defaultCommon }: { defaultCommon?: number }) {
 
   return (
     <div className="orun" style={{ background: "transparent" }}>
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))",
-          gap: 1,
-          background: "var(--hair)",
-          border: "1px solid var(--hair)",
-        }}
-      >
-        <Pane
-          eyebrow="Common · 다 같이 듣는 과목"
-          title="공통과목"
-          hint="1학년 공통과목은 학년 전체가 듣습니다. 분모가 학년 정원이에요."
-          placeholder="학년 정원"
-          value={common}
-          onChange={setCommon}
-        />
-        <Pane
-          eyebrow="Elective · 골라 듣는 과목"
-          title="선택과목"
-          hint="2·3학년 선택과목은 그 과목을 고른 학생끼리만 겨룹니다. 분모가 수강자 수예요."
-          placeholder="예상 수강자 수"
-          value={elective}
-          onChange={setElective}
-          accent
-        />
+      <div className="orun-grid-hair" style={{ gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))" }}>
+        <Pane {...CALC.common} icon="family" value={common} onChange={setCommon} />
+        <Pane {...CALC.elective} icon="divide" value={elective} onChange={setElective} accent />
       </div>
 
-      <p style={{ fontSize: 12.5, color: "var(--muted)", marginTop: 14 }}>
-        2025학년도 고1부터 5등급제입니다. 1등급 10% · 2등급 누적 34% · 3등급 66% · 4등급 90%.
-        상위 10% 이내여야 하므로 소수점은 버립니다.
+      <p className="orun-small" style={{ marginTop: 14 }}>
+        {CALC.foot}
       </p>
     </div>
   );
 }
 
 function Pane({
-  eyebrow,
+  en,
   title,
   hint,
   placeholder,
+  icon,
   value,
   onChange,
   accent,
 }: {
-  eyebrow: string;
+  en: string;
   title: string;
   hint: string;
   placeholder: string;
+  icon: "family" | "divide";
   value: string;
   onChange: (v: string) => void;
   accent?: boolean;
@@ -73,14 +53,13 @@ function Pane({
   const bands = gradeSeats(n);
 
   return (
-    <div style={{ background: "var(--ground)", padding: "22px 22px 20px" }}>
-      <div className="orun-eyebrow" style={{ marginBottom: 10 }}>
-        {eyebrow}
+    <div style={{ padding: "22px 22px 20px" }}>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 10, marginBottom: 10 }}>
+        <div className="orun-eyebrow">{en}</div>
+        <Icon name={icon} size={20} style={{ color: accent ? "var(--blue)" : "var(--ink)" }} />
       </div>
-      <div style={{ fontSize: 17, fontWeight: 700, color: "var(--ink)", marginBottom: 4 }}>
-        {title}
-      </div>
-      <p style={{ fontSize: 12.5, color: "var(--muted)", margin: "0 0 14px", lineHeight: 1.55 }}>
+      <div style={{ fontSize: 17, fontWeight: 700, color: "var(--ink)", marginBottom: 4 }}>{title}</div>
+      <p className="orun-small" style={{ margin: "0 0 14px", lineHeight: 1.55 }}>
         {hint}
       </p>
 
@@ -91,41 +70,22 @@ function Pane({
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
-        style={{
-          width: "100%",
-          padding: "10px 12px",
-          border: `1px solid ${accent ? "var(--blue)" : "var(--hair)"}`,
-          background: "var(--ground)",
-          color: "var(--ink)",
-          fontSize: 15,
-          fontFamily: "'IBM Plex Mono', monospace",
-          outline: "none",
-        }}
+        className="orun-input orun-mono"
+        style={{ paddingLeft: 12, fontSize: 16, borderColor: accent ? "var(--blue)" : undefined }}
       />
 
       <div style={{ display: "flex", alignItems: "baseline", gap: 7, margin: "18px 0 4px" }}>
-        <span style={{ fontSize: 13, color: "var(--muted)" }}>1등급</span>
-        <span
-          className="orun-stat"
-          style={{ fontSize: 38, fontWeight: 700, color: "var(--ink)", lineHeight: 1 }}
-        >
+        <span style={{ fontSize: 13, color: "var(--muted)" }}>{CALC.seatsLabel}</span>
+        <span className="orun-stat" style={{ fontSize: 40, fontWeight: 700, lineHeight: 1 }}>
           {n ? seats : "—"}
         </span>
-        <span style={{ fontSize: 14, color: "var(--ink)", fontWeight: 700 }}>명</span>
+        <span style={{ fontSize: 14, color: "var(--ink)", fontWeight: 700 }}>{CALC.unit}</span>
       </div>
 
       {warn && (
-        <div
-          style={{
-            background: "var(--brick-soft)",
-            borderLeft: "2px solid var(--brick)",
-            padding: "9px 12px",
-            fontSize: 12.5,
-            color: "var(--brick)",
-            marginTop: 10,
-          }}
-        >
-          {warn}
+        <div className="orun-callout orun-callout--warn" style={{ margin: "10px 0 0", padding: "10px 12px", fontSize: 12.5 }}>
+          <Icon name="alert" size={16} style={{ color: "var(--brick)", marginTop: 2 }} />
+          <div style={{ color: "var(--brick)" }}>{warn}</div>
         </div>
       )}
 
@@ -133,18 +93,16 @@ function Pane({
         <table className="orun-table" style={{ marginTop: 16, fontSize: 12.5 }}>
           <thead>
             <tr>
-              <th>등급</th>
-              <th className="num">인원</th>
-              <th className="num">누적</th>
+              <th>{CALC.cols.grade}</th>
+              <th className="num">{CALC.cols.seats}</th>
+              <th className="num">{CALC.cols.cum}</th>
             </tr>
           </thead>
           <tbody>
             {bands.map((b) => (
               <tr key={b.grade}>
-                <td style={{ color: b.grade === 1 ? "var(--ink)" : "var(--body)", fontWeight: b.grade === 1 ? 700 : 400 }}>
-                  {b.grade}등급
-                </td>
-                <td className="num" style={{ fontWeight: b.grade === 1 ? 700 : 400 }}>
+                <td style={{ color: b.grade === 1 ? "var(--ink)" : "var(--body)", fontWeight: b.grade === 1 ? 700 : 400 }}>{b.grade}등급</td>
+                <td className="num" style={{ fontWeight: b.grade === 1 ? 700 : 400, color: b.grade === 1 ? "var(--ink)" : undefined }}>
                   {b.seats}
                 </td>
                 <td className="num" style={{ color: "var(--muted)" }}>

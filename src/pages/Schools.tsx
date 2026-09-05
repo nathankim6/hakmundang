@@ -1,20 +1,34 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import "@/styles/orun.css";
+import { Art, Icon } from "@/components/schools/Art";
 import { SchoolPicker } from "@/components/schools/SchoolPicker";
 import { AnalysisReport } from "@/components/schools/AnalysisReport";
 import { GradeCalculator } from "@/components/schools/GradeCalculator";
 import { ObservationEditor } from "@/components/schools/ObservationEditor";
 import { BackupPanel } from "@/components/schools/BackupPanel";
-import { getRecords } from "@/lib/schools/data";
+import { allSchools, getRecords } from "@/lib/schools/data";
 import { useObservations } from "@/lib/schools/store";
+import { NEWS } from "@/data/news";
+import { SOURCED } from "@/data/sourced";
+import { APP } from "@/lib/schools/copy";
+import type { IconName } from "@/assets/art";
 
 type Tab = "pick" | "report" | "calc" | "edit";
+type Theme = "light" | "dark";
 
 const STORAGE_KEY = "orun.schools.selected";
+const THEME_KEY = "orun.theme";
 
 const Schools = () => {
   const [tab, setTab] = useState<Tab>("pick");
+  const [theme, setTheme] = useState<Theme>(() => {
+    try {
+      return localStorage.getItem(THEME_KEY) === "dark" ? "dark" : "light";
+    } catch {
+      return "light";
+    }
+  });
   const [selected, setSelected] = useState<string[]>(() => {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
@@ -23,6 +37,14 @@ const Schools = () => {
       return [];
     }
   });
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(THEME_KEY, theme);
+    } catch {
+      /* 저장 실패는 무시 */
+    }
+  }, [theme]);
 
   const setAndStore = (codes: string[]) => {
     setSelected(codes);
@@ -35,58 +57,61 @@ const Schools = () => {
 
   // 관측 입력이 바뀌면 분석지도 같이 갱신된다
   const observations = useObservations();
+  // observations 는 store 가 바뀔 때만 새 객체가 온다. 그때 분석지를 다시 만든다.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const records = useMemo(() => getRecords(selected), [selected, observations]);
 
+  const go = (t: Tab) => {
+    setTab(t);
+    window.scrollTo({ top: 0 });
+  };
+
   return (
-    <div
-      className="orun"
-      style={{ minHeight: "100vh", background: "var(--ground)", color: "var(--body)" }}
-    >
-      <div style={{ maxWidth: 1000, margin: "0 auto", padding: "0 24px 90px" }}>
-        <Header tab={tab} setTab={setTab} disabled={selected.length === 0} />
+    <div className="orun" data-theme={theme} style={{ minHeight: "100vh", background: "var(--ground)", color: "var(--body)" }}>
+      <div style={{ maxWidth: 1080, margin: "0 auto", padding: "0 24px 90px" }}>
+        <TopBar
+          tab={tab}
+          setTab={go}
+          count={selected.length}
+          theme={theme}
+          onTheme={() => setTheme(theme === "dark" ? "light" : "dark")}
+        />
 
         {tab === "pick" && (
-          <SchoolPicker
-            selected={selected}
-            onChange={setAndStore}
-            onBuild={() => setTab("report")}
-          />
+          <>
+            <Hero />
+            <SchoolPicker selected={selected} onChange={setAndStore} onBuild={() => go("report")} />
+          </>
         )}
 
         {tab === "report" &&
           (records.length ? (
-            <AnalysisReport records={records} onBack={() => setTab("pick")} />
+            <AnalysisReport records={records} onBack={() => go("pick")} />
           ) : (
-            <Empty onBack={() => setTab("pick")} />
+            <Empty onBack={() => go("pick")} />
           ))}
 
         {tab === "edit" && (
-          <section style={{ paddingTop: 8 }}>
+          <section className="orun-rise" style={{ paddingTop: 30 }}>
             <ObservationEditor />
             <BackupPanel />
           </section>
         )}
 
         {tab === "calc" && (
-          <section style={{ paddingTop: 8 }}>
-            <div className="orun-eyebrow" style={{ marginBottom: 12 }}>
-              How many seats · 라이브로 보여주는 화면
+          <section className="orun-rise" style={{ paddingTop: 30 }}>
+            <div className="orun-hero" style={{ padding: "0 0 26px" }}>
+              <div>
+                <div className="orun-eyebrow" style={{ marginBottom: 12 }}>
+                  {APP.calc.en}
+                </div>
+                <h2 className="orun-display" style={{ fontSize: 32, marginBottom: 10 }}>
+                  {APP.calc.title}
+                </h2>
+                <p className="orun-lede">{APP.calc.lede}</p>
+              </div>
+              <Art name="fraction" className="orun-hero__art" style={{ maxWidth: 280 }} />
             </div>
-            <h2
-              style={{
-                fontSize: 26,
-                fontWeight: 700,
-                color: "var(--ink)",
-                margin: "0 0 8px",
-                letterSpacing: "-.015em",
-              }}
-            >
-              1등급, 몇 자리나 있을까
-            </h2>
-            <p style={{ color: "var(--muted)", fontSize: 15, maxWidth: "62ch", margin: "0 0 26px" }}>
-              설명회 중에 학부모님 앞에서 직접 숫자를 넣어 보여주는 화면입니다. 공통과목과 선택과목의
-              분모가 다르다는 걸 눈으로 보여주는 게 목적입니다.
-            </p>
             <GradeCalculator />
           </section>
         )}
@@ -95,129 +120,127 @@ const Schools = () => {
   );
 };
 
-function Header({
+/* ── 상단 바 ─────────────────────────────── */
+
+function TopBar({
   tab,
   setTab,
-  disabled,
+  count,
+  theme,
+  onTheme,
 }: {
   tab: Tab;
   setTab: (t: Tab) => void;
-  disabled: boolean;
+  count: number;
+  theme: Theme;
+  onTheme: () => void;
 }) {
-  const tabs: { id: Tab; label: string; needsSelection?: boolean }[] = [
-    { id: "pick", label: "학교 담기" },
-    { id: "report", label: "뜯어보기", needsSelection: true },
-    { id: "calc", label: "1등급 자리" },
-    { id: "edit", label: "우리가 본 것" },
+  const tabs: { id: Tab; label: string; icon: IconName; needsSelection?: boolean }[] = [
+    { id: "pick", label: APP.tabs.pick, icon: "school" },
+    { id: "report", label: APP.tabs.report, icon: "paper", needsSelection: true },
+    { id: "calc", label: APP.tabs.calc, icon: "calc" },
+    { id: "edit", label: APP.tabs.edit, icon: "edit" },
   ];
 
   return (
-    <header className="orun-no-print" style={{ padding: "40px 0 26px" }}>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: 10,
-          marginBottom: 22,
-        }}
-      >
-        <span style={{ width: 8, height: 8, background: "var(--yellow-hi)" }} />
-        <span
-          style={{
-            fontFamily: "'IBM Plex Mono', monospace",
-            fontSize: 10.5,
-            letterSpacing: ".22em",
-            textTransform: "uppercase",
-            color: "var(--muted)",
-          }}
-        >
-          ORUN ENGLISH · 학교 분석지
-        </span>
-        <Link
-          to="/"
-          style={{
-            marginLeft: "auto",
-            fontSize: 12.5,
-            color: "var(--muted)",
-            textDecoration: "none",
-          }}
-        >
-          문항 생성기 →
-        </Link>
-      </div>
+    <header className="orun-topbar orun-no-print">
+      <span className="orun-brand">{APP.brand}</span>
 
-      <h1
-        style={{
-          fontSize: 34,
-          fontWeight: 700,
-          color: "var(--ink)",
-          margin: "0 0 10px",
-          letterSpacing: "-.025em",
-          lineHeight: 1.25,
-        }}
-      >
-        고교 선택이 입시의 시작입니다
-      </h1>
-      <p style={{ color: "var(--muted)", fontSize: 15, maxWidth: "60ch", margin: "0 0 26px" }}>
-        담은 학교로 분석지가 만들어집니다. 공시 자료는 알아서 채워지고, 우리가 직접 본 것이 그 위에
-        얹힙니다.
-      </p>
-
-      <nav
-        style={{
-          display: "flex",
-          gap: 0,
-          borderBottom: "1.5px solid var(--ink)",
-        }}
-      >
+      <nav className="orun-seg" aria-label="화면" style={{ marginLeft: 8 }}>
         {tabs.map((t) => {
           const on = tab === t.id;
-          const off = t.needsSelection && disabled;
+          const off = t.needsSelection && count === 0;
           return (
             <button
               key={t.id}
-              onClick={() => !off && setTab(t.id)}
+              className="orun-seg__btn"
+              aria-pressed={on}
               disabled={off}
-              style={{
-                padding: "10px 20px",
-                border: "none",
-                borderBottom: on ? "2px solid var(--ink)" : "2px solid transparent",
-                marginBottom: -1.5,
-                background: "transparent",
-                color: off ? "var(--hair)" : on ? "var(--ink)" : "var(--muted)",
-                fontSize: 14,
-                fontWeight: on ? 700 : 400,
-                cursor: off ? "not-allowed" : "pointer",
-              }}
+              onClick={() => !off && setTab(t.id)}
+              title={off ? APP.empty.text : undefined}
             >
+              <Icon name={t.icon} size={15} />
               {t.label}
+              {t.id === "report" && count > 0 && <span className="orun-seg__n">{count}</span>}
             </button>
           );
         })}
       </nav>
+
+      <div style={{ marginLeft: "auto", display: "flex", alignItems: "center", gap: 6 }}>
+        <button
+          className="orun-btn orun-btn--sm orun-btn--icon"
+          onClick={onTheme}
+          aria-label={theme === "dark" ? APP.theme.toLight : APP.theme.toDark}
+          title={theme === "dark" ? APP.theme.toLight : APP.theme.toDark}
+        >
+          <Icon name={theme === "dark" ? "lamp" : "moon"} size={16} />
+        </button>
+        <Link to="/" className="orun-btn orun-btn--sm" style={{ textDecoration: "none" }}>
+          {APP.generatorLink}
+          <Icon name="arrowRight" size={14} />
+        </Link>
+      </div>
     </header>
+  );
+}
+
+/* ── 첫 화면 ─────────────────────────────── */
+
+function Hero() {
+  const total = allSchools().length;
+  const seen = Object.keys(SOURCED).length;
+  const news = Object.keys(NEWS).length;
+  return (
+    <>
+      <section className="orun-hero orun-rise">
+        <div>
+          <div className="orun-eyebrow" style={{ marginBottom: 14 }}>
+            {APP.eyebrow}
+          </div>
+          <h1 className="orun-display" style={{ fontSize: "clamp(30px, 4.2vw, 44px)", marginBottom: 14 }}>
+            {APP.title}
+          </h1>
+          <p className="orun-lede">{APP.lede}</p>
+          <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginTop: 20 }}>
+            <span className="orun-chip orun-chip--ink orun-chip--dot">{APP.stats.fact(total)}</span>
+            <span className="orun-chip orun-chip--ink">{APP.stats.seen(seen)}</span>
+            <span className="orun-chip">{APP.stats.news(news)}</span>
+          </div>
+        </div>
+        <Art name="lighthouseTown" className="orun-hero__art" />
+      </section>
+
+      <div className="orun-steps orun-rise" data-delay="1">
+        {APP.steps.map((s, i) => (
+          <div key={s.title}>
+            <Icon name={s.icon} size={22} style={{ color: "var(--ink)", marginTop: 2 }} />
+            <div>
+              <b>
+                <span className="orun-mono" style={{ color: "var(--yellow)", fontSize: 11, marginRight: 8 }}>
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                {s.title}
+              </b>
+              <span>{s.text}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </>
   );
 }
 
 function Empty({ onBack }: { onBack: () => void }) {
   return (
-    <div style={{ padding: "60px 0", textAlign: "center" }}>
-      <p style={{ color: "var(--muted)", fontSize: 15, marginBottom: 18 }}>
-        아직 담은 학교가 없습니다.
+    <div className="orun-rise" style={{ padding: "70px 0", textAlign: "center" }}>
+      <Art name="zoom" width={220} style={{ margin: "0 auto 18px", color: "var(--muted)" }} />
+      <p className="orun-lede" style={{ margin: "0 auto 18px" }}>
+        {APP.empty.text}
       </p>
-      <button
-        onClick={onBack}
-        style={{
-          padding: "11px 24px",
-          border: "none",
-          background: "var(--ink)",
-          color: "#fff",
-          fontSize: 14,
-          fontWeight: 700,
-          cursor: "pointer",
-        }}
-      >
-        학교 담으러 가기
+      <button className="orun-btn orun-btn--primary" onClick={onBack}>
+        {APP.empty.cta}
+        <Icon name="arrowRight" size={15} />
       </button>
     </div>
   );

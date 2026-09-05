@@ -1,11 +1,14 @@
 /**
- * 옳은영어 v2 에디토리얼 디자인 토큰
+ * 옳은영어 에디토리얼 디자인 토큰 · v3
  *
  * 원칙
- *  - 옐로우는 점·숫자 액센트로만. 옐로우 면·색 띠 금지.
- *  - 박스 대신 헤어라인. 표는 세로선 없음.
- *  - 영문 아이브로우 + 넓은 자간.
+ *  - 옐로우는 점·숫자·밑줄 액센트로만. 옐로우 면·색 띠 금지.
+ *  - 박스 대신 헤어라인. 표는 세로선 없음. 모서리는 각지게.
+ *  - 영문 아이브로우 + 넓은 자간. 큰 숫자는 모노.
+ *  - 움직임은 짧고 한 방향(위로 살짝). 줄이기 설정을 켜면 멈춘다.
  */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap");
 
 .orun {
   --ink: #1c1c1c;
@@ -14,30 +17,79 @@
   --hair: #e4e2dd;
   --paper: #f7f6f2;
   --ground: #ffffff;
+  --shade: #f1efe9;
   --yellow: #d9b300;
   --yellow-hi: #ffd400;
   --blue: #1a7fbf;
   --blue-soft: #eaf4fa;
   --brick: #a8432f;
   --brick-soft: #fbefec;
-  --shade: #f1efe9;
+  --on-ink: #ffffff;
+  --shadow: 0 1px 0 rgba(28, 28, 28, 0.04), 0 10px 30px -18px rgba(28, 28, 28, 0.35);
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --sans: "Noto Sans KR", system-ui, -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
 
   color: var(--body);
   background: var(--ground);
-  font-family: "Noto Sans KR", system-ui, -apple-system, "Malgun Gothic", sans-serif;
+  font-family: var(--sans);
   line-height: 1.7;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-/* ── 아이브로우 ─────────────────────────── */
+/* 자식 .orun 루트가 라이트 토큰으로 되돌리지 못하게 후손까지 덮는다 */
+.orun[data-theme="dark"],
+.orun[data-theme="dark"] .orun {
+  --ink: #f4f3ef;
+  --body: #d2d0ca;
+  --muted: #8f8d87;
+  --hair: #2e2e2e;
+  --paper: #1f1f1f;
+  --ground: #141414;
+  --shade: #242424;
+  --yellow: #e6c200;
+  --yellow-hi: #ffd400;
+  --blue: #6fb7e6;
+  --blue-soft: #17222b;
+  --brick: #e0785f;
+  --brick-soft: #2b1d19;
+  --on-ink: #141414;
+  --shadow: 0 1px 0 rgba(0, 0, 0, 0.3), 0 12px 30px -18px rgba(0, 0, 0, 0.8);
+  color-scheme: dark;
+}
+
+.orun *,
+.orun *::before,
+.orun *::after {
+  box-sizing: border-box;
+}
+/* 리셋은 특이도 0으로. 그래야 .orun-btn--primary 같은 클래스가 이긴다. */
+:where(.orun) :where(button, input, select, textarea) {
+  font: inherit;
+  color: inherit;
+}
+.orun :focus-visible {
+  outline: 2px solid var(--yellow-hi);
+  outline-offset: 2px;
+}
+.orun a {
+  color: inherit;
+}
+
+/* ── 글 ─────────────────────────────────── */
 .orun-eyebrow {
   display: flex;
   align-items: center;
   gap: 9px;
+  font-family: var(--mono);
   font-size: 10.5px;
   letter-spacing: 0.24em;
   text-transform: uppercase;
   color: var(--muted);
   font-weight: 500;
+  line-height: 1.4;
 }
 .orun-eyebrow::before {
   content: "";
@@ -46,15 +98,468 @@
   background: var(--yellow-hi);
   flex: none;
 }
+.orun-eyebrow--plain::before {
+  display: none;
+}
+.orun-mono {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+}
+.orun-display {
+  font-weight: 900;
+  color: var(--ink);
+  letter-spacing: -0.035em;
+  line-height: 1.12;
+  text-wrap: balance;
+  margin: 0;
+}
+.orun-h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  margin: 0;
+  text-wrap: balance;
+}
+.orun-lede {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.75;
+  max-width: 62ch;
+  margin: 0;
+}
+.orun-small {
+  font-size: 12.5px;
+  color: var(--muted);
+}
 
 /* ── 헤어라인 ───────────────────────────── */
 .orun-hair {
   border: 0;
   border-top: 1px solid var(--hair);
+  margin: 0;
 }
 .orun-rule {
   border: 0;
   border-top: 1.5px solid var(--ink);
+  margin: 0;
+}
+
+/* ── 상단 바 ────────────────────────────── */
+.orun-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  padding: 12px 0;
+  background: color-mix(in srgb, var(--ground) 86%, transparent);
+  -webkit-backdrop-filter: saturate(140%) blur(12px);
+  backdrop-filter: saturate(140%) blur(12px);
+  border-bottom: 1px solid var(--hair);
+}
+.orun-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.orun-brand::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: var(--yellow-hi);
+}
+
+/* ── 세그먼트 탭 ────────────────────────── */
+.orun-seg {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  max-width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+  border: 1px solid var(--hair);
+  background: var(--paper);
+}
+.orun-seg__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 13px;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s;
+}
+.orun-seg__btn:hover:not(:disabled) {
+  color: var(--ink);
+}
+.orun-seg__btn[aria-pressed="true"] {
+  background: var(--ground);
+  color: var(--ink);
+  font-weight: 700;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+}
+.orun-seg__btn:disabled {
+  color: var(--hair);
+  cursor: not-allowed;
+}
+.orun-seg__n {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--yellow);
+}
+
+/* ── 버튼 ───────────────────────────────── */
+.orun-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border: 1px solid var(--hair);
+  background: transparent;
+  color: var(--body);
+  font-size: 13.5px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform 0.12s, border-color 0.15s, background 0.15s, color 0.15s;
+}
+.orun-btn:hover:not(:disabled) {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+.orun-btn:active:not(:disabled) {
+  transform: translateY(1px);
+}
+.orun-btn:disabled {
+  color: var(--muted);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.orun-btn--primary {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--on-ink);
+  font-weight: 700;
+}
+.orun-btn--primary:hover:not(:disabled) {
+  color: var(--on-ink);
+  background: color-mix(in srgb, var(--ink) 88%, var(--yellow-hi));
+}
+.orun-btn--primary:disabled {
+  background: var(--hair);
+  border-color: var(--hair);
+  color: var(--muted);
+  opacity: 1;
+}
+.orun-btn--outline {
+  border-color: var(--ink);
+  color: var(--ink);
+  font-weight: 700;
+}
+.orun-btn--sm {
+  padding: 7px 12px;
+  font-size: 12.5px;
+}
+.orun-btn--icon {
+  padding: 8px;
+}
+
+/* ── 칩 ─────────────────────────────────── */
+.orun-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 4px 7px;
+  border: 1px solid currentColor;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.orun-chip--ink {
+  color: var(--ink);
+}
+.orun-chip--yellow {
+  color: var(--yellow);
+}
+.orun-chip--blue {
+  color: var(--blue);
+}
+.orun-chip--fill {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--on-ink);
+}
+.orun-chip--dot::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: var(--yellow-hi);
+}
+
+/* ── 카드 ───────────────────────────────── */
+.orun-card {
+  background: var(--paper);
+  padding: 18px 20px;
+  min-width: 0;
+}
+.orun-card--ground {
+  background: var(--ground);
+}
+.orun-grid-hair {
+  display: grid;
+  gap: 1px;
+  background: var(--ground);
+  border: 1px solid var(--hair);
+}
+.orun-grid-hair > * {
+  background: var(--ground);
+  box-shadow: 0 0 0 1px var(--hair);
+}
+
+/* 학교 고르기 카드 */
+.orun-pick {
+  position: relative;
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 16px 16px 14px;
+  border: 1px solid var(--hair);
+  background: var(--ground);
+  cursor: pointer;
+  text-align: left;
+  transition: transform 0.16s ease, border-color 0.16s, box-shadow 0.16s, background 0.16s;
+}
+.orun-pick:hover {
+  border-color: var(--ink);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+.orun-pick[aria-pressed="true"] {
+  border-color: var(--ink);
+  background: var(--paper);
+}
+.orun-pick__box {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  border: 1.5px solid var(--muted);
+  display: grid;
+  place-items: center;
+  color: var(--on-ink);
+  transition: background 0.15s, border-color 0.15s;
+}
+.orun-pick[aria-pressed="true"] .orun-pick__box {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+.orun-pick__box svg {
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+.orun-pick[aria-pressed="true"] .orun-pick__box svg {
+  opacity: 1;
+}
+.orun-pick__name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.orun-pick__meta {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.orun-pick__foot {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.orun-pick__num {
+  margin-left: auto;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* ── 입력 ───────────────────────────────── */
+.orun-input {
+  width: 100%;
+  padding: 10px 12px 10px 38px;
+  border: 1px solid var(--hair);
+  background: var(--ground);
+  color: var(--ink);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.orun-input:focus {
+  border-color: var(--ink);
+}
+.orun-input-wrap {
+  position: relative;
+  flex: 1 1 220px;
+}
+.orun-input-wrap > .orun-ic {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted);
+  pointer-events: none;
+}
+.orun-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--body);
+  cursor: pointer;
+  user-select: none;
+}
+.orun-toggle input {
+  appearance: none;
+  width: 30px;
+  height: 18px;
+  border: 1.5px solid var(--muted);
+  position: relative;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+.orun-toggle input::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 11px;
+  height: 11px;
+  background: var(--muted);
+  transition: transform 0.15s, background 0.15s;
+}
+.orun-toggle input:checked {
+  border-color: var(--ink);
+  background: var(--ink);
+}
+.orun-toggle input:checked::after {
+  transform: translateX(12px);
+  background: var(--yellow-hi);
+}
+
+/* ── 히어로 ─────────────────────────────── */
+.orun-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(220px, 0.85fr);
+  gap: 32px;
+  align-items: end;
+  padding: 44px 0 30px;
+}
+.orun-hero__art {
+  color: var(--ink);
+  max-width: 420px;
+  justify-self: end;
+}
+@media (max-width: 760px) {
+  .orun-hero {
+    grid-template-columns: 1fr;
+    padding-top: 28px;
+  }
+  .orun-hero__art {
+    max-width: 300px;
+    justify-self: start;
+    order: -1;
+  }
+}
+
+/* ── 챕터(섹션) 머리 ────────────────────── */
+.orun-chapter {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: end;
+  padding-top: 26px;
+  margin-bottom: 22px;
+  border-top: 1.5px solid var(--ink);
+}
+.orun-chapter__no {
+  font-family: var(--mono);
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--yellow-hi);
+  letter-spacing: -0.04em;
+  margin-bottom: 8px;
+}
+.orun-chapter__art {
+  width: 170px;
+  color: var(--ink);
+  opacity: 0.95;
+}
+@media (max-width: 640px) {
+  .orun-chapter {
+    grid-template-columns: 1fr;
+  }
+  .orun-chapter__art {
+    width: 130px;
+  }
+}
+
+/* ── 챕터 레일(목차) ────────────────────── */
+.orun-rail {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 10px 0;
+  margin: 0 0 8px;
+}
+.orun-rail::-webkit-scrollbar {
+  display: none;
+}
+.orun-rail__a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 11px;
+  border: 1px solid var(--hair);
+  font-size: 12.5px;
+  color: var(--body);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: border-color 0.15s, color 0.15s;
+}
+.orun-rail__a:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+.orun-rail__a b {
+  font-family: var(--mono);
+  font-weight: 500;
+  font-size: 10.5px;
+  color: var(--yellow);
 }
 
 /* ── 표 ─────────────────────────────────── */
@@ -64,31 +569,42 @@
   font-size: 13px;
 }
 .orun-table th {
-  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  font-family: var(--mono);
   font-weight: 500;
   font-size: 10.5px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--muted);
   text-align: left;
-  padding: 0 14px 7px 0;
+  padding: 0 14px 8px 0;
   border-bottom: 1.5px solid var(--ink);
   white-space: nowrap;
 }
 .orun-table td {
-  padding: 9px 14px 9px 0;
+  padding: 10px 14px 10px 0;
   border-bottom: 1px solid var(--hair);
   vertical-align: top;
+}
+.orun-table tbody tr {
+  transition: background 0.12s;
+}
+.orun-table tbody tr:hover {
+  background: var(--paper);
 }
 .orun-table .num {
   text-align: right;
   padding-right: 18px;
   font-variant-numeric: tabular-nums;
-  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  font-family: var(--mono);
 }
 .orun-table th.num {
   text-align: right;
   padding-right: 18px;
+}
+.orun-table .name {
+  color: var(--ink);
+  font-weight: 700;
+  white-space: nowrap;
 }
 
 /* ── 난이도 칩 ──────────────────────────── */
@@ -118,13 +634,105 @@
   background: var(--brick-soft);
 }
 
-/* ── 숫자 강조 ──────────────────────────── */
+/* ── 숫자 ───────────────────────────────── */
 .orun-stat {
-  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  font-family: var(--mono);
   font-variant-numeric: tabular-nums;
   color: var(--ink);
   font-weight: 500;
   letter-spacing: -0.02em;
+}
+
+/* ── 콜아웃 ─────────────────────────────── */
+.orun-callout {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 14px;
+  background: var(--paper);
+  border-left: 2px solid var(--yellow-hi);
+  padding: 18px 22px 18px 18px;
+  margin: 22px 0;
+  font-size: 13.5px;
+}
+.orun-callout--blue {
+  background: var(--blue-soft);
+  border-left-color: var(--blue);
+}
+.orun-callout--warn {
+  background: var(--brick-soft);
+  border-left-color: var(--brick);
+}
+.orun-callout__label {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 7px;
+}
+.orun-callout--blue .orun-callout__label {
+  color: var(--blue);
+}
+.orun-callout--warn .orun-callout__label {
+  color: var(--brick);
+}
+.orun-callout p {
+  margin: 0;
+}
+.orun-callout p + p {
+  margin-top: 10px;
+}
+.orun-callout strong {
+  color: var(--ink);
+}
+
+/* ── 다크 패널(표지 등) ─────────────────── */
+.orun-dark {
+  --ink: #f4f3ef;
+  --body: #d2d0ca;
+  --muted: #9a9892;
+  --hair: #3a3a3a;
+  --paper: #262626;
+  --ground: #1c1c1c;
+  --on-ink: #1c1c1c;
+  background: var(--ground);
+  color: var(--body);
+}
+.orun[data-theme="dark"] .orun-dark {
+  --ground: #0e0e0e;
+  --paper: #1a1a1a;
+}
+
+/* ── 움직임 ─────────────────────────────── */
+@keyframes orun-rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.orun-rise {
+  animation: orun-rise 0.45s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.orun-rise[data-delay="1"] {
+  animation-delay: 0.06s;
+}
+.orun-rise[data-delay="2"] {
+  animation-delay: 0.12s;
+}
+.orun-rise[data-delay="3"] {
+  animation-delay: 0.18s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .orun *,
+  .orun *::before,
+  .orun *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
 }
 
 /* ── 인쇄 ───────────────────────────────── */
@@ -137,5 +745,113 @@
   }
   .orun {
     --ground: #ffffff;
+    --ink: #1c1c1c;
+    --body: #3a3a3a;
+    --muted: #8a8a8a;
+    --hair: #e4e2dd;
+    --paper: #f7f6f2;
+    color-scheme: light;
   }
+  .orun-pick,
+  .orun-table tbody tr:hover {
+    box-shadow: none;
+    transform: none;
+    background: transparent;
+  }
+}
+
+/* ── 표지 ───────────────────────────────── */
+.orun-cover {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(200px, 300px);
+  gap: 32px;
+  align-items: end;
+  padding: 52px 44px 44px;
+  margin-bottom: 40px;
+}
+@media (max-width: 700px) {
+  .orun-cover {
+    grid-template-columns: 1fr;
+    padding: 36px 26px 32px;
+  }
+  .orun-cover > .orun-cover__art {
+    max-width: 240px;
+  }
+}
+.orun-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1px;
+  background: var(--hair);
+  border: 1px solid var(--hair);
+  margin: 6px 0 34px;
+}
+.orun-steps > div {
+  background: var(--ground);
+  padding: 16px 18px 14px;
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  gap: 12px;
+  align-items: start;
+}
+.orun-steps b {
+  display: block;
+  color: var(--ink);
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.orun-steps span {
+  font-size: 12.5px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.orun-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.orun-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 14px;
+  border: 1px solid var(--hair);
+  background: transparent;
+  color: var(--body);
+  font-size: 13.5px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s, color 0.15s, transform 0.12s;
+}
+.orun-pill:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+.orun-pill[aria-pressed="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--on-ink);
+  font-weight: 700;
+}
+.orun-pill__n {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+.orun-pill[aria-pressed="true"] .orun-pill__n {
+  color: var(--yellow-hi);
+}
+.orun-sticky-foot {
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 14px 0;
+  border-top: 1.5px solid var(--ink);
+  background: color-mix(in srgb, var(--ground) 92%, transparent);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }

@@ -1,6 +1,10 @@
 import { useMemo, useState } from "react";
 import { GROUP_LABEL, type SchoolFact, type SchoolGroup } from "@/types/school";
-import { groupsWithCounts, hasObservation, hasSourced, schoolsInGroups } from "@/lib/schools/data";
+import { groupsWithCounts, hasObservation, schoolsInGroups } from "@/lib/schools/data";
+import { SOURCED } from "@/data/sourced";
+import { getNews } from "@/data/news";
+import { PICKER } from "@/lib/schools/copy";
+import { Icon } from "@/components/schools/Art";
 
 interface Props {
   selected: string[];
@@ -8,24 +12,40 @@ interface Props {
   onBuild: () => void;
 }
 
+/** 이 학교에 대해 우리가 가진 것 */
+function layers(code: string) {
+  return {
+    obs: hasObservation(code),
+    deep: Boolean(SOURCED[code]),
+    news: Boolean(getNews(code)),
+  };
+}
+const hasAny = (code: string) => {
+  const l = layers(code);
+  return l.obs || l.deep || l.news;
+};
+
 export function SchoolPicker({ selected, onChange, onBuild }: Props) {
   const groups = useMemo(() => groupsWithCounts(), []);
   const [active, setActive] = useState<SchoolGroup[]>(["동작구_고", "관악구_고"]);
   const [query, setQuery] = useState("");
-  const [observedOnly, setObservedOnly] = useState(false);
+  const [richOnly, setRichOnly] = useState(false);
 
   const visible = useMemo(() => {
     let list = schoolsInGroups(active);
-    if (observedOnly) list = list.filter((s) => hasObservation(s.code) || hasSourced(s.code));
+    if (richOnly) list = list.filter((s) => hasAny(s.code));
     if (query.trim()) {
       const q = query.trim();
       list = list.filter((s) => s.name.includes(q) || (s.district ?? "").includes(q));
     }
     return list.sort((a, b) => a.name.localeCompare(b.name, "ko"));
-  }, [active, query, observedOnly]);
+  }, [active, query, richOnly]);
 
   const selectedSet = new Set(selected);
-  const observedSelected = selected.filter((c) => hasObservation(c) || hasSourced(c)).length;
+  const deepSelected = selected.filter((c) => {
+    const l = layers(c);
+    return l.obs || l.deep;
+  }).length;
 
   const toggleGroup = (g: SchoolGroup) =>
     setActive((prev) => (prev.includes(g) ? prev.filter((x) => x !== g) : [...prev, g]));
@@ -33,8 +53,7 @@ export function SchoolPicker({ selected, onChange, onBuild }: Props) {
   const toggleSchool = (code: string) =>
     onChange(selectedSet.has(code) ? selected.filter((c) => c !== code) : [...selected, code]);
 
-  const allVisibleSelected =
-    visible.length > 0 && visible.every((s) => selectedSet.has(s.code));
+  const allVisibleSelected = visible.length > 0 && visible.every((s) => selectedSet.has(s.code));
 
   const toggleAllVisible = () => {
     if (allVisibleSelected) {
@@ -46,240 +65,96 @@ export function SchoolPicker({ selected, onChange, onBuild }: Props) {
   };
 
   return (
-    <div className="orun" style={{ background: "transparent" }}>
-      {/* 카테고리 */}
-      <div style={{ marginBottom: 30 }}>
-        <div className="orun-eyebrow" style={{ marginBottom: 14 }}>
-          Pick your schools · 오늘 다룰 학교
-        </div>
-        <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-          {groups.map(({ group, count }) => {
-            const on = active.includes(group);
-            return (
-              <button
-                key={group}
-                onClick={() => toggleGroup(group)}
-                aria-pressed={on}
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 9,
-                  padding: "9px 15px",
-                  border: `1px solid ${on ? "var(--ink)" : "var(--hair)"}`,
-                  background: on ? "var(--ink)" : "transparent",
-                  color: on ? "#fff" : "var(--body)",
-                  fontSize: 13.5,
-                  fontWeight: on ? 700 : 400,
-                  cursor: "pointer",
-                  transition: "all .15s",
-                }}
-              >
-                {GROUP_LABEL[group]}
-                <span
-                  style={{
-                    fontFamily: "'IBM Plex Mono', monospace",
-                    fontSize: 11,
-                    color: on ? "var(--yellow-hi)" : "var(--muted)",
-                  }}
-                >
-                  {count}
-                </span>
-              </button>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* 검색 · 필터 */}
-      <div
-        style={{
-          display: "flex",
-          gap: 12,
-          alignItems: "center",
-          flexWrap: "wrap",
-          paddingBottom: 12,
-          borderBottom: "1.5px solid var(--ink)",
-        }}
-      >
-        <input
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="학교 찾기"
-          style={{
-            flex: "1 1 200px",
-            padding: "8px 12px",
-            border: "1px solid var(--hair)",
-            background: "var(--ground)",
-            color: "var(--ink)",
-            fontSize: 14,
-            outline: "none",
-          }}
-        />
-        <label
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: 7,
-            fontSize: 13,
-            cursor: "pointer",
-            color: "var(--body)",
-          }}
-        >
-          <input
-            type="checkbox"
-            checked={observedOnly}
-            onChange={(e) => setObservedOnly(e.target.checked)}
-          />
-          자료 있는 학교만
-        </label>
-        <button
-          onClick={toggleAllVisible}
-          style={{
-            padding: "8px 14px",
-            border: "1px solid var(--hair)",
-            background: "transparent",
-            color: "var(--body)",
-            fontSize: 13,
-            cursor: "pointer",
-          }}
-        >
-          {allVisibleSelected ? "담은 것 다 빼기" : "보이는 학교 다 담기"}
-        </button>
-      </div>
-
-      {/* 학교 목록 */}
-      <div style={{ margin: "4px 0 28px" }}>
-        {visible.length === 0 && (
-          <p style={{ color: "var(--muted)", fontSize: 14, padding: "22px 0" }}>
-            이 범위엔 학교가 없습니다. 위에서 범위를 하나 더 켜 보세요.
+    <div className="orun orun-rise" data-delay="2" style={{ background: "transparent" }}>
+      {/* 머리 */}
+      <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: 16, flexWrap: "wrap", marginBottom: 18 }}>
+        <div>
+          <div className="orun-eyebrow" style={{ marginBottom: 10 }}>
+            {PICKER.en}
+          </div>
+          <h2 className="orun-h2">{PICKER.title}</h2>
+          <p className="orun-lede" style={{ fontSize: 14, marginTop: 6 }}>
+            {PICKER.hint}
           </p>
-        )}
-        {visible.map((s) => (
-          <SchoolRow
-            key={s.code}
-            school={s}
-            checked={selectedSet.has(s.code)}
-            onToggle={() => toggleSchool(s.code)}
-          />
+        </div>
+      </div>
+
+      {/* 범위 */}
+      <div className="orun-pills" style={{ marginBottom: 18 }}>
+        {groups.map(({ group, count }) => (
+          <button key={group} className="orun-pill" aria-pressed={active.includes(group)} onClick={() => toggleGroup(group)}>
+            {GROUP_LABEL[group]}
+            <span className="orun-pill__n">{count}</span>
+          </button>
         ))}
       </div>
 
+      {/* 검색 · 필터 */}
+      <div style={{ display: "flex", gap: 12, alignItems: "center", flexWrap: "wrap", paddingBottom: 14, marginBottom: 14, borderBottom: "1.5px solid var(--ink)" }}>
+        <div className="orun-input-wrap">
+          <Icon name="search" size={16} />
+          <input className="orun-input" value={query} onChange={(e) => setQuery(e.target.value)} placeholder={PICKER.search} aria-label={PICKER.search} />
+        </div>
+        <label className="orun-toggle">
+          <input type="checkbox" checked={richOnly} onChange={(e) => setRichOnly(e.target.checked)} />
+          {PICKER.filterSourced}
+        </label>
+        <button className="orun-btn orun-btn--sm" onClick={toggleAllVisible} disabled={visible.length === 0}>
+          <Icon name={allVisibleSelected ? "x" : "checks"} size={14} />
+          {allVisibleSelected ? PICKER.clearVisible : PICKER.selectAll}
+        </button>
+      </div>
+
+      {/* 학교 카드 */}
+      {visible.length === 0 ? (
+        <p className="orun-lede" style={{ fontSize: 14, padding: "26px 0" }}>
+          {PICKER.emptyGroup}
+        </p>
+      ) : (
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(232px, 1fr))", gap: 10, margin: "0 0 26px" }}>
+          {visible.map((s) => (
+            <SchoolCard key={s.code} school={s} checked={selectedSet.has(s.code)} onToggle={() => toggleSchool(s.code)} />
+          ))}
+        </div>
+      )}
+
       {/* 하단 액션 */}
-      <div
-        style={{
-          position: "sticky",
-          bottom: 0,
-          background: "var(--ground)",
-          borderTop: "1.5px solid var(--ink)",
-          padding: "16px 0",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          gap: 16,
-          flexWrap: "wrap",
-        }}
-      >
-        <div style={{ fontSize: 13.5 }}>
-          <strong style={{ color: "var(--ink)" }}>오늘 다룰 학교 {selected.length}곳</strong>
+      <div className="orun-sticky-foot">
+        <div style={{ fontSize: 13.5, display: "flex", alignItems: "baseline", gap: 10, flexWrap: "wrap" }}>
+          <strong style={{ color: "var(--ink)", fontSize: 15 }}>{PICKER.footer(selected.length)}</strong>
           {selected.length > 0 && (
-            <span style={{ color: "var(--muted)" }}>
-              {" · "}자세히 {observedSelected}곳 · 요약 {selected.length - observedSelected}곳
-            </span>
+            <span className="orun-small">{PICKER.footerDetail(deepSelected, selected.length - deepSelected)}</span>
           )}
         </div>
-        <button
-          onClick={onBuild}
-          disabled={selected.length === 0}
-          style={{
-            padding: "12px 26px",
-            border: "none",
-            background: selected.length ? "var(--ink)" : "var(--hair)",
-            color: selected.length ? "#fff" : "var(--muted)",
-            fontSize: 14,
-            fontWeight: 700,
-            cursor: selected.length ? "pointer" : "not-allowed",
-            letterSpacing: "-.01em",
-          }}
-        >
-          이대로 만들기 →
+        <button className="orun-btn orun-btn--primary" onClick={onBuild} disabled={selected.length === 0}>
+          {PICKER.cta}
+          <Icon name="arrowRight" size={15} />
         </button>
       </div>
     </div>
   );
 }
 
-function SchoolRow({
-  school,
-  checked,
-  onToggle,
-}: {
-  school: SchoolFact;
-  checked: boolean;
-  onToggle: () => void;
-}) {
-  const observed = hasObservation(school.code);
-  const sourced = hasSourced(school.code);
+function SchoolCard({ school, checked, onToggle }: { school: SchoolFact; checked: boolean; onToggle: () => void }) {
+  const l = layers(school.code);
+  const meta = [school.district, school.foundation, school.coed].filter(Boolean).join(" · ");
   return (
-    <label
-      style={{
-        display: "grid",
-        gridTemplateColumns: "26px 1fr auto",
-        gap: 12,
-        alignItems: "center",
-        padding: "11px 0",
-        borderBottom: "1px solid var(--hair)",
-        cursor: "pointer",
-      }}
-    >
-      <input type="checkbox" checked={checked} onChange={onToggle} />
-      <div>
-        <div style={{ display: "flex", alignItems: "center", gap: 9, flexWrap: "wrap" }}>
-          <span style={{ fontWeight: 700, color: "var(--ink)", fontSize: 14.5 }}>
-            {school.name}
-          </span>
-          {observed && (
-            <span
-              style={{
-                fontFamily: "'IBM Plex Mono', monospace",
-                fontSize: 9.5,
-                letterSpacing: ".12em",
-                textTransform: "uppercase",
-                color: "var(--yellow)",
-                border: "1px solid currentColor",
-                padding: "1px 6px",
-              }}
-            >
-              우리 기록
-            </span>
-          )}
-          {sourced && (
-            <span
-              style={{
-                fontFamily: "'IBM Plex Mono', monospace",
-                fontSize: 9.5,
-                letterSpacing: ".12em",
-                textTransform: "uppercase",
-                color: "var(--ink)",
-                border: "1px solid currentColor",
-                padding: "1px 6px",
-              }}
-            >
-              2026 분석
-            </span>
-          )}
-        </div>
-        <div style={{ fontSize: 12.5, color: "var(--muted)", marginTop: 2 }}>
-          {[school.district, school.foundation, school.kind, school.coed]
-            .filter(Boolean)
-            .join(" · ")}
-        </div>
-      </div>
-      <div
-        className="orun-stat"
-        style={{ fontSize: 12.5, color: "var(--muted)", textAlign: "right" }}
-      >
-        {school.g1Total ? `1학년 ${school.g1Total}명` : "—"}
-      </div>
-    </label>
+    <button type="button" className="orun-pick" aria-pressed={checked} onClick={onToggle}>
+      <span className="orun-pick__box" aria-hidden="true">
+        <Icon name="check" size={13} stroke={2.6} />
+      </span>
+      <span style={{ minWidth: 0 }}>
+        <span className="orun-pick__name">{school.name}</span>
+        <span className="orun-pick__meta" style={{ display: "block" }}>
+          {meta}
+        </span>
+        <span className="orun-pick__foot">
+          {l.obs && <span className="orun-chip orun-chip--yellow">{PICKER.badgeObs}</span>}
+          {l.deep && <span className="orun-chip orun-chip--ink">{PICKER.badgeSourced}</span>}
+          {l.news && !l.deep && <span className="orun-chip">{PICKER.badgeNews}</span>}
+          <span className="orun-pick__num">{school.g1Total ? PICKER.g1(school.g1Total) : "—"}</span>
+        </span>
+      </span>
+    </button>
   );
 }
