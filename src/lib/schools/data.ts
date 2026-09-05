@@ -2,6 +2,7 @@ import raw from "@/data/schools.json";
 import { ACADEMY_RESULTS } from "@/data/results";
 import { getSourced, hasAnySourced } from "@/data/sourced";
 import { getObservation, getObservations } from "@/lib/schools/store";
+import { getAchievement, hasAchievement as hasAch } from "@/lib/schools/achievementStore";
 import type { SchoolFact, SchoolGroup, SchoolRecord } from "@/types/school";
 
 const FACTS = raw as unknown as SchoolFact[];
@@ -43,6 +44,7 @@ export function getRecord(code: string): SchoolRecord | undefined {
     observation: getObservation(code),
     results: ACADEMY_RESULTS.filter((r) => r.schoolCode === code),
     sourced: getSourced(code),
+    achievement: getAchievement(code),
   };
 }
 
@@ -55,6 +57,11 @@ export function getRecords(codes: string[]): SchoolRecord[] {
   return codes
     .map((c) => getRecord(c))
     .filter((r): r is SchoolRecord => Boolean(r));
+}
+
+/** 학업성취 공시(불러온 엑셀)가 있는 학교 */
+export function hasAchievement(code: string): boolean {
+  return hasAch(code);
 }
 
 /** 관측 자료가 있는 학교 — 분석지에서 상세 페이지를 만들 수 있는 학교 */

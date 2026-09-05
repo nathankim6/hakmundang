@@ -66,6 +66,7 @@ export const PICKER = {
   badgeObs: "우리 기록",
   badgeSourced: "2026 분석",
   badgeNews: "학교 소식",
+  badgeAchieve: "성취도 3년",
   footer: (n: number) => `고른 학교 ${n}곳`,
   footerDetail: (deep: number, light: number) => `자세히 ${deep}곳, 요약 ${light}곳`,
   cta: "분석지 만들기",
@@ -114,6 +115,40 @@ export const SECTION = {
     anomaly: "공시값 한 번 더 확인",
     anomalyText:
       "표에 * 가 붙은 학교예요. 전년과 차이가 커서 학교 입력 오류일 수 있습니다. 발표 자료에 쓰기 전에 학교알리미 원문을 열어 보세요.",
+  },
+  achieve: {
+    en: "GRADES ON PAPER",
+    ko: "국영수 성취도, 3년을 겹쳐 보면",
+    lede: "학교알리미가 공시한 과목별 성취도 분포예요. A(90점 이상) 인원과 1등급 자리를 맞대 보면 이 학교 1등급 컷이 90점 위인지 아래인지가 보입니다.",
+    ledeMid: "중학교는 등급이 없어 성취도 A~E만 남아요. A 비율과 평균으로 시험의 성격을 읽습니다.",
+    subHigh: (g: number, y: number) => `고${g}, ${y}학년도 기준`,
+    subMid: (g: number, y: number) => `중${g}, ${y}학년도 기준`,
+    cols: { school: "학교", n: "수강자", seats: "1등급 자리", a: (s: string) => `${s} A 비율`, avg: "평균(국/영/수)", verdict: "1등급 컷" },
+    above: "90점 위",
+    below: "90점 아래",
+    aCount: (n: number) => `${n}명`,
+    legend: "A 인원이 1등급 자리보다 많으면 90점을 넘겨도 1등급이 아닐 수 있어요. 노란 선이 1등급 자리(5등급제 10%, 9등급제 4%)입니다.",
+    dist: "성취도 분포",
+    years: "학년도",
+    trendUp: (a: number, b: number) => `3년 사이 A 비율이 ${a.toFixed(1)}%에서 ${b.toFixed(1)}%로 올랐어요. 상위권이 두꺼워지는 추세예요.`,
+    trendDown: (a: number, b: number) => `3년 사이 A 비율이 ${a.toFixed(1)}%에서 ${b.toFixed(1)}%로 내려왔어요. 시험이 어려워지거나 상위권이 얇아진 거예요.`,
+    trendFlat: (a: number) => `3년 동안 A 비율이 ${a.toFixed(1)}% 안팎으로 안정적이에요.`,
+    keySubject: (s: string, a: number) => `국영수 중 ${s} A 비율이 가장 낮아요(${a.toFixed(1)}%). 이 학교에선 ${s}가 등급을 가릅니다.`,
+    fitTitle: "이런 학생이 가면 좋아요",
+    cautionTitle: "이건 알고 가세요",
+    fitNote: "공시 숫자에서 읽어낸 옳은영어의 생각이에요. 학교가 발표한 해석이 아닙니다.",
+    source: (years: string) => `출처: 학교알리미 교과별 학업성취 사항, ${years} 공시`,
+    empty: {
+      title: "아직 성취도 자료가 없어요",
+      text: "학교알리미는 이 항목을 API로 주지 않고, 화면은 자동수집을 막아 둬서 사람이 받아야 해요. 받은 엑셀을 '우리가 본 기록' 탭에서 불러오면 이 자리가 채워집니다.",
+      steps: [
+        "학교알리미(schoolinfo.go.kr)에서 학교를 검색해 들어가요.",
+        "공시항목 중 '4-나. 교과별 학업성취 사항'을 열고 숫자(보안문자)를 입력해요.",
+        "연도를 2026, 2025, 2024로 바꾸며 '엑셀다운로드'를 세 번 받아요.",
+        "'우리가 본 기록' 탭의 성취도 불러오기에 파일을 한 번에 끌어다 놓아요.",
+      ],
+    },
+    partial: (names: string) => `${names}는 아직 성취도 자료가 없어요. 엑셀을 불러오면 함께 비교됩니다.`,
   },
   exam2026: {
     en: "THIS YEAR'S PAPER",
@@ -291,6 +326,27 @@ export const DECK = {
     special: (items: string) => `특목고 안을 열어 보면 ${items}`,
     note: "[발표 스크립트] 이 학교를 나온 선배들이 실제로 어디로 갔는지 봅니다. 서울 중학교는 학교군 안에서 추첨이라, 이건 순위표가 아니라 지도예요.",
   },
+  achieve: {
+    en: "GRADES ON PAPER",
+    title: "국영수 성취도, 3년을 겹쳐 보면",
+    part: (i: number, n: number) => `국영수 성취도, 3년을 겹쳐 보면 (${i}/${n})`,
+    sub: (g: number, y: number) => `고${g} ${y}학년도. 학교알리미 교과별 학업성취 사항 공시`,
+    subMid: (g: number, y: number) => `중${g} ${y}학년도. 학교알리미 교과별 학업성취 사항 공시`,
+    cols: ["학교", "수강자", "1등급 자리", "국어 A", "영어 A", "수학 A", "평균 국/영/수", "1등급 컷, 90점 기준"],
+    above: "90점 위",
+    below: "90점 아래",
+    foot: "A 인원 = 수강자 × A 비율. 1등급 자리 = 수강자 × 10%(5등급제) 또는 4%(9등급제), 소수점 버림. A 인원이 자리보다 많으면 컷이 90점 위",
+    note: "[발표 스크립트] 학교알리미 공시 숫자만으로 1등급 컷이 어디쯤인지 읽어 봅니다. 90점 이상이 몇 명인지와 1등급 자리가 몇 개인지를 맞대 보면 돼요.",
+    schoolTitle: (name: string) => `${name}, 성취도로 읽은 학교`,
+    schoolSub: (type: string) => type,
+    fit: "이런 학생이 가면 좋아요",
+    caution: "이건 알고 가세요",
+    seatLine: "1등급 자리",
+    noteSchool: (name: string, summary: string) => `[발표 스크립트] ${name}입니다. ${summary}`,
+    fitNote: "공시 숫자에서 읽어낸 옳은영어의 생각이에요. 학교가 발표한 해석이 아닙니다",
+    sectionTitle: "국영수 성취도, 3년을 겹쳐 보면",
+    sectionSummary: "학교알리미 공시 그대로예요. A 인원과 1등급 자리를 맞대 보면 컷이 어디 있는지 보입니다.",
+  },
   exam2026Table: {
     en: "THIS YEAR'S PAPER",
     title: "올해 시험지, 이렇게 나왔다",
@@ -419,4 +475,68 @@ export const BACKUP = {
   export: "파일로 내보내기",
   import: "파일 불러오기",
   imported: (n: number) => `${n}곳을 불러왔어요.`,
+};
+
+/* ── 학업성취 프로필(우리 생각) ───────────── */
+
+type Fit = { name: string; en: string; summary: (p: { seats: number; aCount: number; avg: string; sd: string; aMean: string }) => string; fit: string[]; caution: string[] };
+
+export const ACHIEVE_PROFILE: Record<"thick" | "steep" | "flat" | "standard", Fit> = {
+  thick: {
+    name: "상위권이 두꺼운 학교",
+    en: "DEEP TOP",
+    summary: ({ seats, aCount }) => `1등급 자리 ${seats}명보다 90점 이상(A) 인원 ${aCount}명이 많아요. 90점을 넘겨도 1등급이 아닐 수 있는 학교예요.`,
+    fit: ["실수 없이 만점 가까이 마무리하는 습관이 있는 최상위권", "내신 경쟁이 세더라도 학생부·비교과로 같이 버틸 수 있는 학생", "친구들 수준이 높을 때 자극을 받는 유형"],
+    caution: ["90점대 초반은 2등급을 각오해야 해요.", "한 문제 차이가 등급을 바꿔요. 서답형 감점 관리가 핵심입니다."],
+  },
+  steep: {
+    name: "어렵게 내고 크게 벌리는 학교",
+    en: "STEEP TEST",
+    summary: ({ avg, sd }) => `평균 ${avg}점, 표준편차 ${sd}. 시험을 어렵게 내서 점수가 넓게 퍼져요. 1등급 컷이 90점 아래로 내려옵니다.`,
+    fit: ["응용·심화 문제에 강하고 어려운 시험에 흔들리지 않는 학생", "상위권을 노린다면 경쟁자가 적어 유리해요.", "점수보다 등급을 보고 스스로를 평가할 수 있는 학생"],
+    caution: ["중위권은 점수 자체가 낮아 성취도 C·D가 나올 수 있어요. 자신감 관리가 필요합니다.", "학교 유형에 맞춘 고난도 훈련 없이는 상위권 진입이 어려워요."],
+  },
+  flat: {
+    name: "완만하게 내는 학교",
+    en: "GENTLE SLOPE",
+    summary: ({ avg, sd }) => `평균 ${avg}점, 표준편차 ${sd}. 시험이 완만해서 점수가 몰려 있어요. 한 문제가 등급을 바꿉니다.`,
+    fit: ["꼼꼼하고 정확한 학생, 실수를 잘 안 하는 유형", "수업 내용을 충실히 따라가는 성실형", "심화보다 기본을 완벽하게 하는 쪽이 강한 학생"],
+    caution: ["변별이 약해 1등급 컷이 매우 높아요. 95점 안팎까지 올라갈 수 있습니다.", "쉬운 시험이라고 방심하면 등급이 한 번에 내려가요."],
+  },
+  standard: {
+    name: "표준형 학교",
+    en: "STANDARD",
+    summary: ({ aMean }) => `국영수 A 비율 평균 ${aMean}%. 평균과 분포가 서울 일반고의 표준에 가까워요.`,
+    fit: ["꾸준히 하는 만큼 등급이 따라오는 구조라 성실한 학생에게 맞아요.", "특정 과목 쏠림 없이 국영수를 고르게 하는 학생"],
+    caution: ["표준형일수록 과목별 편차를 봐야 해요. 아래 '등급을 가르는 과목'을 확인하세요."],
+  },
+};
+
+/** 중학교용 — 등급이 없으니 A 비율과 평균으로만 말한다 */
+export const ACHIEVE_MID = {
+  high: { name: "A가 많은 학교", summary: (a: string) => `A 비율 ${a}%. 성취도 A가 흔해서 학교 시험만으로는 상위권이 갈리지 않아요.`, fit: ["특목·자사고를 생각하면 학교 시험 밖에서 실력을 확인해야 해요.", "내신 부담이 덜해 영어 원서·심화에 시간을 쓸 수 있는 학생"], caution: ["고교 첫 시험에서 성적표 충격을 받기 쉬워요. 중3 겨울이 중요합니다."] },
+  low: { name: "A가 귀한 학교", summary: (a: string) => `A 비율 ${a}%. 시험이 까다로워 A가 귀해요.`, fit: ["학교 시험으로 실력을 검증받고 싶은 학생", "고교 내신 방식(서답형·범위 넓은 시험)을 미리 겪어 보려는 학생"], caution: ["성취도 B·C가 실력 부족이 아닐 수 있어요. 점수보다 위치를 보세요."] },
+  mid: { name: "표준형 학교", summary: (a: string) => `A 비율 ${a}%. 서울 중학교 표준에 가까워요.`, fit: ["꾸준한 학생이 노력만큼 결과를 받는 구조예요."], caution: ["자유학기가 있는 학년은 지필 성취가 없어요. 비교할 때 학년을 확인하세요."] },
+};
+
+export const ACHIEVE_IMPORT = {
+  en: "GRADES FROM SCHOOLINFO",
+  title: "학교알리미 성취도 엑셀 불러오기",
+  lede: "학교알리미 '교과별 학업성취 사항'에서 받은 엑셀을 여기 놓으면 국영수 성취도 분석이 켜져요. 학교마다 2026·2025·2024년 세 파일을 받아 한 번에 놓으세요.",
+  drop: "여기에 파일을 끌어다 놓거나 눌러서 고르기",
+  hint: "xlsx, xls 여러 개 가능",
+  parsed: (rows: number) => `${rows}행 읽음`,
+  school: "학교",
+  year: "공시연도",
+  pickSchool: "학교를 골라 주세요",
+  save: "저장",
+  saveAll: (n: number) => `${n}개 파일 저장`,
+  saved: (n: number) => `${n}곳 저장했어요.`,
+  remove: "지우기",
+  loaded: "불러온 학교",
+  export: "JSON으로 내보내기",
+  importJson: "JSON 불러오기",
+  fileNote: (name: string, rows: number) => `${name}, ${rows}행`,
+  none: "아직 불러온 성취도 자료가 없어요.",
+  preview: "미리보기",
 };

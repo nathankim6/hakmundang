@@ -13,6 +13,7 @@ import {
   type Chapter,
   type HeadProps,
 } from "@/components/schools/Sourced";
+import { AchievementEmpty, AchievementSection, hasAchievementData } from "@/components/schools/Achievement";
 import { RESULT_BASIS_LABEL } from "@/data/results";
 import { BLOCK, COVER, FOOTER, SECTION, TAG, TOOLBAR, YEAR } from "@/lib/schools/copy";
 import {
@@ -32,7 +33,7 @@ interface Props {
 
 const short = (n: string) => n.replace(/(고등학교|중학교)$/, "");
 
-type ChapterKey = "numbers" | "compare" | "exam2026" | "seats" | "paths" | "midEnglish" | "results" | "school";
+type ChapterKey = "numbers" | "compare" | "achieve" | "exam2026" | "seats" | "paths" | "midEnglish" | "results" | "school";
 interface ChapterEntry extends Chapter {
   kind: ChapterKey;
   label: string;
@@ -46,12 +47,14 @@ export function AnalysisReport({ records, onBack }: Props) {
   const withPaths = mids.filter((r) => r.fact.grad);
   const hasExam = records.some((r) => r.sourced?.exams.length);
   const hasResults = records.some((r) => r.results?.length);
+  const hasAchieve = hasAchievementData(records);
 
   // 실제로 만들어지는 섹션에만 번호를 붙인다. 레일과 본문이 같은 목록을 쓴다.
   const chapters = useMemo(() => {
     const keys: { key: ChapterKey; label: string; on: boolean }[] = [
       { key: "numbers", label: SECTION.numbers.ko, on: true },
       { key: "compare", label: SECTION.compare.ko, on: true },
+      { key: "achieve", label: SECTION.achieve.ko, on: hasAchieve },
       { key: "exam2026", label: SECTION.exam2026.ko, on: hasExam },
       { key: "seats", label: SECTION.seats.ko, on: highs.length > 0 },
       { key: "paths", label: SECTION.paths.ko, on: withPaths.length > 0 },
@@ -83,6 +86,7 @@ export function AnalysisReport({ records, onBack }: Props) {
 
       <OrunSection chapter={ch("numbers")!} head={SectionHead} />
       <CompareSection records={records} chapter={ch("compare")!} />
+      {ch("achieve") ? <AchievementSection records={records} chapter={ch("achieve")!} head={SectionHead} /> : <AchievementEmpty />}
       <Exam2026Table records={records} chapter={ch("exam2026")} head={SectionHead} />
 
       {/* 고등학교는 등급이 핵심, 중학교는 어느 고교로 가는가가 핵심 */}

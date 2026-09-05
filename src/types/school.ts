@@ -163,4 +163,9 @@ export interface SchoolRecord {
    * 정의는 src/data/sourced.ts. 모든 항목에 url·날짜가 붙는다.
    */
   sourced?: import("@/data/sourced").SourcedSchool;
+  /**
+   * 학업성취층 — 학교알리미 「교과별 학업성취 사항」. 사람이 받은 엑셀을 불러온 것.
+   * 정의는 src/types/achievement.ts. 숫자는 공시 원문 그대로다.
+   */
+  achievement?: import("@/types/achievement").SchoolAchievement;
 }

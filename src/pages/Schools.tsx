@@ -9,6 +9,8 @@ import { ObservationEditor } from "@/components/schools/ObservationEditor";
 import { BackupPanel } from "@/components/schools/BackupPanel";
 import { allSchools, getRecords } from "@/lib/schools/data";
 import { useObservations } from "@/lib/schools/store";
+import { useAchievements } from "@/lib/schools/achievementStore";
+import { AchievementImport } from "@/components/schools/AchievementImport";
 import { NEWS } from "@/data/news";
 import { SOURCED } from "@/data/sourced";
 import { APP } from "@/lib/schools/copy";
@@ -57,9 +59,10 @@ const Schools = () => {
 
   // 관측 입력이 바뀌면 분석지도 같이 갱신된다
   const observations = useObservations();
+  const achievements = useAchievements();
   // observations 는 store 가 바뀔 때만 새 객체가 온다. 그때 분석지를 다시 만든다.
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  const records = useMemo(() => getRecords(selected), [selected, observations]);
+  const records = useMemo(() => getRecords(selected), [selected, observations, achievements]);
 
   const go = (t: Tab) => {
     setTab(t);
@@ -94,6 +97,7 @@ const Schools = () => {
         {tab === "edit" && (
           <section className="orun-rise" style={{ paddingTop: 30 }}>
             <ObservationEditor />
+            <AchievementImport />
             <BackupPanel />
           </section>
         )}

@@ -6,6 +6,8 @@ import { RESULT_BASIS_LABEL } from "@/data/results";
 import { NEWS_KIND_LABEL, type SchoolNews } from "@/data/news";
 import { ORUN_MESSAGES, ORUN_RESULTS, type ExamReport, type SourcedSchool } from "@/data/sourced";
 import { COVER, DECK } from "@/lib/schools/copy";
+import { profileText, repPoint } from "@/lib/schools/achievementText";
+import { LETTERS, SUBJECTS3, fix, pct, profileOf, type AchievementProfile } from "@/lib/schools/achievement";
 import { NEWS_KIND_ICON, NEWS_KIND_ORDER, tmiIcon } from "@/lib/schools/icons";
 import { dropoutRate, headlinePath, pathBreakdown, seatsForGrade1, specialHighDetail } from "@/lib/schools/metrics";
 
@@ -485,6 +487,158 @@ function schoolSlides(pptx: PptxGenJS, record: SchoolRecord, startPage: number):
 
 /* ── 출처층(SOURCED) 슬라이드 ─────────── */
 
+/* ── 국영수 성취도 3개년(학교알리미 공시) ─ */
+
+const SEG = [INK, GREY, "C9C6BF", HAIR, "F1EFE9"];
+
+/** 비교 표 — 한 장에 6개 학교 */
+function achieveTableSlides(pptx: PptxGenJS, records: SchoolRecord[], level: "고" | "중", page: number): number {
+  const list = records
+    .filter((r) => r.fact.level === level && r.achievement)
+    .map((r) => ({ r, p: profileOf(r.achievement!) }))
+    .filter((x): x is { r: SchoolRecord; p: AchievementProfile } => Boolean(x.p));
+  if (!list.length) return page;
+  const C = DECK.achieve;
+  const isHigh = level === "고";
+  const chunks = balancedChunks(list, 6);
+  chunks.forEach((chunk, ci) => {
+    const s = pptx.addSlide();
+    eyebrow(s, C.en);
+    const grade = chunk[0].p.grade;
+    const year = Math.max(...chunk.map((x) => x.p.latestYear));
+    title(s, chunks.length > 1 ? C.part(ci + 1, chunks.length) : C.title, isHigh ? C.sub(grade, year) : C.subMid(grade, year));
+    const head = isHigh ? C.cols : [C.cols[0], C.cols[1], C.cols[3], C.cols[4], C.cols[5], C.cols[6]];
+    const rows: PptxGenJS.TableRow[] = [
+      head.map((h, i) => ({ text: h, options: { fontFace: FONT, fontSize: 9.5, color: GREY, bold: false, align: (i === 0 ? "left" : "right") as PptxGenJS.HAlign, border: border(INK, 1.25), valign: "bottom" as PptxGenJS.VAlign } })),
+    ];
+    chunk.forEach(({ r, p }) => {
+      const rep = repPoint(p);
+      const aCell = (sub: "국어" | "영어" | "수학") => {
+        const pt = p.latest[sub];
+        if (!pt) return { text: "—", options: {} };
+        if (!isHigh) return { text: pct(pt.dist.A), options: {} };
+        return {
+          text: [
+            { text: pct(pt.dist.A), options: { bold: true, color: INK } },
+            { text: `  ${pt.aCount}명`, options: { color: pt.gap > 0 ? "A8432F" : BLUE, fontSize: 9 } },
+          ] as unknown as string,
+          options: {},
+        };
+      };
+      const verdict = SUBJECTS3.filter((sub) => p.latest[sub]).map((sub) => `${sub} ${p.latest[sub]!.gap > 0 ? "위" : "아래"}`).join(" · ");
+      const cells: { text: unknown; options: Record<string, unknown> }[] = [
+        { text: `■ ${short(r.fact.name)}`, options: { bold: true, color: INK, align: "left" } },
+        { text: String(rep?.n ?? "—"), options: {} },
+        ...(isHigh ? [{ text: String(rep?.seats ?? "—"), options: { bold: true, color: INK } }] : []),
+        aCell("국어"),
+        aCell("영어"),
+        aCell("수학"),
+        { text: SUBJECTS3.map((sub) => fix(p.latest[sub]?.avg, 0)).join(" / "), options: {} },
+        ...(isHigh ? [{ text: verdict, options: { fontSize: 9, color: BODY } }] : []),
+      ];
+      rows.push(
+        cells.map((c, i) => ({
+          text: c.text as string,
+          options: { fontFace: FONT, fontSize: 10.5, color: BODY, align: (i === 0 ? "left" : "right") as PptxGenJS.HAlign, border: border(HAIR, 0.75), valign: "middle" as PptxGenJS.VAlign, ...c.options },
+        })),
+      );
+    });
+    const colW = isHigh ? [1.9, 0.9, 1.0, 1.55, 1.55, 1.55, 1.5, 1.98] : [2.6, 1.3, 1.6, 1.6, 1.6, 3.23];
+    s.addTable(rows, { x: M, y: 2.4, w: W - M * 2, colW, rowH: 0.42, valign: "middle" });
+    foot(s, C.foot);
+    footer(s, page++);
+    s.addNotes(C.note);
+  });
+  return page;
+}
+
+/** 학교 한 장 — 과목별 3개년 막대(도형) + 이런 학생 */
+function achieveSchoolSlide(pptx: PptxGenJS, r: SchoolRecord, p: AchievementProfile, page: number) {
+  const s = pptx.addSlide();
+  const C = DECK.achieve;
+  const isHigh = r.fact.level === "고";
+  const t = profileText(p, isHigh);
+  eyebrow(s, C.en);
+  title(s, C.schoolTitle(short(r.fact.name)), t.name);
+
+  // 왼쪽: 막대
+  const left = M;
+  const barW = 5.2;
+  let y = 2.35;
+  SUBJECTS3.forEach((sub) => {
+    const pts = p.series[sub];
+    if (!pts.length) return;
+    const last = pts[pts.length - 1];
+    s.addText(`${sub}  ${last.subject}`, T({ x: left, y, w: 3.4, h: 0.26, fontSize: 11, bold: true, color: INK }));
+    s.addText(`A ${pct(last.dist.A)}`, T({ x: left + barW + 0.6, y, w: 1.6, h: 0.26, align: "right", fontSize: 10, color: GREY }));
+    y += 0.3;
+    pts.forEach((pt) => {
+      s.addText(String(pt.schoolYear), T({ x: left, y: y + 0.01, w: 0.55, h: 0.2, fontSize: 8.5, color: GREY }));
+      let x = left + 0.6;
+      LETTERS.forEach((L, i) => {
+        const w = (barW * pt.dist[L]) / 100;
+        if (w > 0.005) {
+          s.addShape("rect", { x, y, w, h: 0.2, fill: { color: SEG[i] }, line: { color: "FFFFFF", width: 0.25 } });
+          x += w;
+        }
+      });
+      if (isHigh && pt.n > 0) {
+        const tx = left + 0.6 + (barW * pt.seats) / pt.n;
+        s.addShape("line", { x: tx, y: y - 0.04, w: 0, h: 0.28, line: { color: YELLOW, width: 2 } });
+      }
+      s.addText(`${fix(pt.avg, 0)}점 · ${pt.n}명`, T({ x: left + barW + 0.7, y: y + 0.01, w: 1.5, h: 0.2, align: "right", fontSize: 8.5, color: BODY }));
+      y += 0.27;
+    });
+    y += 0.16;
+  });
+  // 범례
+  let lx = left + 0.6;
+  LETTERS.forEach((L, i) => {
+    s.addShape("rect", { x: lx, y: y + 0.03, w: 0.14, h: 0.14, fill: { color: SEG[i] }, line: { color: HAIR, width: 0.25 } });
+    s.addText(L, T({ x: lx + 0.18, y, w: 0.3, h: 0.2, fontSize: 8.5, color: GREY }));
+    lx += 0.55;
+  });
+  if (isHigh) {
+    s.addShape("line", { x: lx + 0.1, y: y - 0.02, w: 0, h: 0.24, line: { color: YELLOW, width: 2 } });
+    s.addText(C.seatLine, T({ x: lx + 0.2, y, w: 1.4, h: 0.2, fontSize: 8.5, color: GREY }));
+  }
+
+  // 오른쪽: 요약 + 이런 학생 + 주의
+  const rx = M + 7.9;
+  const rw = W - M - rx;
+  let ry = 2.35;
+  s.addText(t.summary, T({ x: rx, y: ry, w: rw, h: 0.9, fontSize: 12, bold: true, color: INK, lineSpacing: 17, valign: "top" }));
+  ry += 1.0;
+  subhead(s, "family", C.fit, ry, rx, rw - 0.4);
+  ry += 0.36;
+  t.fit.slice(0, 3).forEach((f) => {
+    s.addShape("rect", { x: rx, y: ry + 0.08, w: 0.1, h: 0.1, fill: { color: YELLOW } });
+    s.addText(f, T({ x: rx + 0.22, y: ry, w: rw - 0.22, h: 0.42, fontSize: 10.5, color: BODY, lineSpacing: 14, valign: "top" }));
+    ry += 0.46;
+  });
+  ry += 0.1;
+  subhead(s, "alert", C.caution, ry, rx, rw - 0.4);
+  ry += 0.36;
+  t.caution.slice(0, 2).forEach((f) => {
+    s.addShape("rect", { x: rx, y: ry + 0.08, w: 0.1, h: 0.1, fill: { color: HAIR } });
+    s.addText(f, T({ x: rx + 0.22, y: ry, w: rw - 0.22, h: 0.42, fontSize: 10.5, color: GREY, lineSpacing: 14, valign: "top" }));
+    ry += 0.46;
+  });
+  foot(s, C.fitNote);
+  footer(s, page);
+  s.addNotes(C.noteSchool(short(r.fact.name), t.summary));
+}
+
+function achieveSlides(pptx: PptxGenJS, records: SchoolRecord[], page: number): number {
+  page = achieveTableSlides(pptx, records, "고", page);
+  page = achieveTableSlides(pptx, records, "중", page);
+  records.forEach((r) => {
+    const p = r.achievement ? profileOf(r.achievement) : null;
+    if (p) achieveSchoolSlide(pptx, r, p, page++);
+  });
+  return page;
+}
+
 /** 올해 시험지 한눈에 — 표 */
 function exam2026TableSlides(pptx: PptxGenJS, records: SchoolRecord[], level: "고" | "중", page: number): number {
   const list = records.filter((r) => r.fact.level === level && r.sourced?.exams.length);
@@ -771,6 +925,12 @@ export async function buildDeck(records: SchoolRecord[], year = "2027학년도",
   page++;
   if (highs.length) page = compareSlides(pptx, highs, "고", page);
   if (mids.length) page = compareSlides(pptx, mids, "중", page);
+
+  if (records.some((r) => r.achievement && profileOf(r.achievement))) {
+    sectionSlide(pptx, nextNo(), DECK.achieve.sectionTitle, DECK.achieve.sectionSummary, "fraction");
+    page++;
+    page = achieveSlides(pptx, records, page);
+  }
 
   if (records.some((r) => r.sourced?.exams.length)) {
     sectionSlide(pptx, nextNo(), S.exam2026.title, S.exam2026.summary, "examPaper");
