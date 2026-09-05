@@ -35,9 +35,9 @@ Lovable에서 만든 프로젝트들을 코드 그대로 이 폴더 아래에 �
 | [orunmiddle](./orunmiddle/) | 2026-06-15 | 없음 | [orunmiddle.lovable.app](https://orunmiddle.lovable.app) | 옮김 | 파일 69개 |
 | [weekend-clinic-buddy](./weekend-clinic-buddy/) | 2026-06-12 | 없음 | [weekend-clinic-buddy.lovable.app](https://weekend-clinic-buddy.lovable.app) | 옮김 | 파일 74개 |
 | [olpumta](./olpumta/) | 2026-06-09 | Lovable Cloud okjtq… | [olpumta.lovable.app](https://olpumta.lovable.app) | 아직 |  |
-| [orunaistudio](./orunaistudio/) | 2026-05-16 | 없음 | [orunaistudio.lovable.app](https://orunaistudio.lovable.app) | 아직 |  |
+| [orunaistudio](./orunaistudio/) | 2026-05-16 | 없음 | [orunaistudio.lovable.app](https://orunaistudio.lovable.app) | 일부 누락(1) | 파일 79개, 그림 8개 못 찾음 |
 | [my-grades](./my-grades/) | 2026-05-15 | 없음 | [my-grades.lovable.app](https://my-grades.lovable.app) | 아직 |  |
-| [orunrecord](./orunrecord/) | 2026-05-01 | 없음 | [orunrecord.lovable.app](https://orunrecord.lovable.app) | 아직 |  |
+| [orunrecord](./orunrecord/) | 2026-05-01 | 없음 | [orunrecord.lovable.app](https://orunrecord.lovable.app) | 옮김 | 파일 86개, 그림 3개 못 찾음 |
 | [pcubeanalysis](./pcubeanalysis/) | 2026-04-23 | Lovable Cloud azigk… | [pcubeanalysis.lovable.app](https://pcubeanalysis.lovable.app) | 아직 |  |
 | [orunwriting](./orunwriting/) | 2026-02-19 | Lovable Cloud jytyl… | [orunwriting.lovable.app](https://orunwriting.lovable.app) | 아직 |  |
 | [oruncare](./oruncare/) | 2026-01-14 | 내 Supabase jpanp… | [oruncare.lovable.app](https://oruncare.lovable.app) | 아직 |  |
