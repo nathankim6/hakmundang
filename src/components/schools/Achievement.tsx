@@ -42,9 +42,6 @@ export function AchievementEmpty() {
   );
 }
 
-export function hasAchievementData(records: SchoolRecord[]): boolean {
-  return records.some((r) => r.achievement && profileOf(r.achievement));
-}
 
 function LevelBlock({ level, list }: { level: "고" | "중"; list: SchoolRecord[] }) {
   const C = SECTION.achieve;

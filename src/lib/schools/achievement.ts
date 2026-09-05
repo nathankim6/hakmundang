@@ -1,4 +1,5 @@
 import type { AchievementRow, Letter, SchoolAchievement } from "@/types/achievement";
+import type { SchoolRecord } from "@/types/school";
 
 /**
  * 학업성취 지표.
@@ -159,3 +160,8 @@ export function profileOf(sa: SchoolAchievement, grade?: number): AchievementPro
 /** 표에 쓰는 한 줄 — "18.2% · 41명" 처럼 */
 export const pct = (v: number | null | undefined, d = 1) => (v == null ? "—" : `${v.toFixed(d)}%`);
 export const fix = (v: number | null | undefined, d = 1) => (v == null ? "—" : v.toFixed(d));
+
+/** 고른 학교 중 성취도 자료가 하나라도 있는가 — 챕터 번호를 붙일지 정한다 */
+export function hasAchievementData(records: SchoolRecord[]): boolean {
+  return records.some((r) => r.achievement && profileOf(r.achievement));
+}

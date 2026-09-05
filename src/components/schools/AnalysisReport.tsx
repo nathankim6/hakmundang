@@ -13,7 +13,8 @@ import {
   type Chapter,
   type HeadProps,
 } from "@/components/schools/Sourced";
-import { AchievementEmpty, AchievementSection, hasAchievementData } from "@/components/schools/Achievement";
+import { AchievementEmpty, AchievementSection } from "@/components/schools/Achievement";
+import { hasAchievementData } from "@/lib/schools/achievement";
 import { RESULT_BASIS_LABEL } from "@/data/results";
 import { BLOCK, COVER, FOOTER, SECTION, TAG, TOOLBAR, YEAR } from "@/lib/schools/copy";
 import {
