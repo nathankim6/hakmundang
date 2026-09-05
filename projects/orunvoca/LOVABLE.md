@@ -57,3 +57,7 @@ npm run dev
 - `src/assets/vocathon-exam-icon.png`
 - `src/assets/vocathon-logo.png` (코드에서 사용)
 - `src/assets/word-cards-icon.png`
+
+## npm 설치 설정
+
+npm이 date-fns와 react-day-picker의 버전 호환을 이유로 설치를 거부해서, `legacy-peer-deps=true`를 담은 `.npmrc` 파일을 추가했습니다. Lovable이 쓰는 bun에서는 원래 문제없이 설치되던 조합입니다. 이 파일 덕분에 `npm install`이 그대로 동작합니다.

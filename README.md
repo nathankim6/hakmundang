@@ -21,6 +21,8 @@ npm run dev                  # 브라우저에서 http://localhost:8080 열기
 
 ## 알아 둘 것
 
+- 41개 폴더를 모두 실제로 설치·빌드해 본 결과 36개가 통과했고, 5개(orunvoca, omr-quiz-scan, orunrecord, orunsyntax, scan-score-quick)는 코드가 쓰는 그림 파일이 빠져 있어 실패합니다. 자세한 표는 `projects/README.md`에 있습니다.
+
 - `projects/` 아래 사본들은 Lovable과 **자동으로 동기화되지 않습니다.** 앞으로 고치는 일은 이 레포에서 하세요.
 - 각 프로젝트 폴더의 `LOVABLE.md`에 Lovable 편집기 주소, 배포 주소, 데이터베이스 종류, 가져오지 못한 파일이 적혀 있습니다.
 - 데이터베이스가 "내 Supabase"인 앱은 그대로 동작합니다. "Lovable Cloud"인 앱은 Lovable 구독이 있는 동안 동작합니다.
